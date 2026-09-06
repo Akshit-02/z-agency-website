@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+:root {
+  /* White is the default room. Everything else is a deliberate departure from it. */
+  --color-white: #ffffff;
+  /* A neutral micro-surface for small UI chrome (inputs, filter bars) — kept
+     out of the four mood tints below, which are reserved for whole rooms. */
+  --color-mist: #f5f6f8;
+
+  /* Ink — the other pole. Used for full-bleed high-contrast rooms and body text. */
+  --color-ink: #111827;
+  --color-ink-soft: #4b5165;
+  --color-ink-faint: #8a8fa3;
+
+  /* The four identity colors — each used as a room's accent, never all at once. */
+  --color-blue: #2563eb;
+  --color-purple: #7c3aed;
+  --color-coral: #ff6b5e;
+  --color-yellow: #f4b740;
+
+  /* Room backgrounds — soft tints, one per mood */
+  --color-lavender: #f3efff;
+  --color-sky: #e8f4ff;
+  --color-peach: #fff0e8;
+  --color-mint: #e6f7f1;
+  --color-mint-line: #bfe9d9;
+
+  /* Structure */
+  --color-line: rgba(17, 24, 39, 0.12);
+  --color-line-soft: rgba(17, 24, 39, 0.07);
+  --color-line-strong: rgba(17, 24, 39, 0.26);
+  --color-grid: rgba(17, 24, 39, 0.06);
+  --color-grid-on-ink: rgba(255, 255, 255, 0.08);
+
+  --font-display: var(--font-bricolage);
+  --font-body: var(--font-manrope);
+  --font-mono: var(--font-jetbrains);
+}
+
+@theme inline {
+  --color-white: var(--color-white);
+  --color-mist: var(--color-mist);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-ink-faint: var(--color-ink-faint);
+
+  --color-blue: var(--color-blue);
+  --color-purple: var(--color-purple);
+  --color-coral: var(--color-coral);
+  --color-yellow: var(--color-yellow);
+
+  --color-lavender: var(--color-lavender);
+  --color-sky: var(--color-sky);
+  --color-peach: var(--color-peach);
+  --color-mint: var(--color-mint);
+  --color-mint-line: var(--color-mint-line);
+
+  --color-line: var(--color-line);
+  --color-line-soft: var(--color-line-soft);
+  --color-line-strong: var(--color-line-strong);
+  --color-grid: var(--color-grid);
+  --color-grid-on-ink: var(--color-grid-on-ink);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+
+  --animate-float: float 9s ease-in-out infinite;
+  --animate-drift: drift 26s linear infinite;
+  --animate-spin-slow: spin 24s linear infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-14px);
+    }
+  }
+  @keyframes drift {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(-40px, 30px);
+    }
+  }
+}
+
+* {
+  border-color: var(--color-line);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-white);
+  color: var(--color-ink);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: "ss01" 1, "cv01" 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: var(--color-coral);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 3px;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+.font-mono-label {
+  font-family: var(--font-mono), ui-monospace, monospace;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+.text-pretty {
+  text-wrap: pretty;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.container-page {
+  width: 100%;
+  max-width: 84rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+@media (min-width: 640px) {
+  .container-page {
+    padding-inline: 2.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .container-page {
+    padding-inline: 3.5rem;
+  }
+}
+
+/* The recurring structural texture — a faint coordinate field standing in for
+   "systems" wherever a room needs it. Works on both white/tint and ink rooms. */
+.grid-field {
+  background-image: linear-gradient(to right, var(--color-grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-grid) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+.grid-field-ink {
+  background-image: linear-gradient(to right, var(--color-grid-on-ink) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-grid-on-ink) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+.link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.link-underline:hover {
+  background-size: 100% 1px;
+}
