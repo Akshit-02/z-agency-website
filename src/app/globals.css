@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+:root {
+  --color-paper: #faf9f6;
+  --color-ink: #0b0c0e;
+  --color-ink-soft: #4a4d52;
+  --color-line: #e5e3dd;
+  --color-line-strong: #d3d0c8;
+  --color-white: #ffffff;
+
+  /* Orange — energy, creativity, primary action. Tuned for AA text contrast
+     on light backgrounds (~5.2:1) rather than the brief's neon starting point. */
+  --color-orange: #c2410c;
+  --color-orange-deep: #9a3412;
+  --color-orange-bright: #ff6b35;
+  --color-orange-tint: #fdeee7;
+
+  /* Blue — technology, trust, precision. */
+  --color-blue: #2563eb;
+  --color-blue-deep: #1d4ed8;
+  --color-blue-bright: #3b82f6;
+  --color-blue-tint: #eaf1ff;
+
+  --font-display: var(--font-space-grotesk);
+  --font-body: var(--font-inter);
+
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-in-out-circ: cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+@theme inline {
+  --color-paper: var(--color-paper);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-line: var(--color-line);
+  --color-line-strong: var(--color-line-strong);
+  --color-orange: var(--color-orange);
+  --color-orange-deep: var(--color-orange-deep);
+  --color-orange-bright: var(--color-orange-bright);
+  --color-orange-tint: var(--color-orange-tint);
+  --color-blue: var(--color-blue);
+  --color-blue-deep: var(--color-blue-deep);
+  --color-blue-bright: var(--color-blue-bright);
+  --color-blue-tint: var(--color-blue-tint);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-blue-tint);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
