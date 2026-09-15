@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { StructuredData } from "@/components/StructuredData";
 import { site } from "@/lib/site";
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -54,7 +56,12 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true },
   },
+  verification: {
+    google: "g1CFVm17mGpVIJmAf6vaq1pViTaQBbso8Xf4rI3--qI",
+  },
 };
+
+const GA_MEASUREMENT_ID = "G-00464BTJH5";
 
 export default function RootLayout({
   children,
@@ -64,6 +71,18 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <body className="font-body antialiased">
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
         <StructuredData
           data={{
             "@context": "https://schema.org",
