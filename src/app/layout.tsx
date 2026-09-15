@@ -5,7 +5,6 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { StructuredData } from "@/components/StructuredData";
 import { site } from "@/lib/site";
-
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
