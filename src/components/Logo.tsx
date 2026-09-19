@@ -36,9 +36,14 @@ export function LogoMark({
   );
 }
 
-export function Logo({ variant = "full", theme = "dark", className, href = "/" }: LogoProps) {
+export function Logo({
+  variant = "full",
+  theme = "dark",
+  className,
+  href = "/",
+}: LogoProps) {
   const content = (
-    <span className={clsx("inline-flex items-center gap-2.5 group", className)}>
+    <span className={clsx("inline-flex items-end gap-1.5 group", className)}>
       <LogoMark
         theme={theme}
         className="h-8 w-8 shrink-0 transition-transform duration-300 ease-out group-hover:-rotate-6"
@@ -47,7 +52,7 @@ export function Logo({ variant = "full", theme = "dark", className, href = "/" }
         <span
           className={clsx(
             "font-display text-[1.15rem] font-medium tracking-tight",
-            theme === "dark" ? "text-ink" : "text-paper"
+            theme === "dark" ? "text-ink" : "text-paper",
           )}
         >
           Space
