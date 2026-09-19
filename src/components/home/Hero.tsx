@@ -1,97 +1,117 @@
 "use client";
 
-import { motion } from "motion/react";
+import { useRef } from "react";
+import { motion, useReducedMotion } from "motion/react";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { Container } from "../Container";
-import { HeroGraphic } from "../HeroGraphic";
+import { AnimatedHeroWord } from "./AnimatedHeroWord";
+import { HeroOrbit } from "./HeroOrbit";
+import { HeroServiceStrip } from "./HeroServiceStrip";
 
 const EASE = [0.25, 1, 0.5, 1] as const;
 
-const container = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.09, delayChildren: 0.1 } },
-};
+const phrases = [
+  "your website builder",
+  "your app builder",
+  "your automation builder",
+  "your store builder",
+  "your problem solver",
+  "your growth partner",
+  "your digital sidekick",
+];
 
-const item = {
-  hidden: { opacity: 0, y: 22 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: EASE } },
-};
+function rise(reduced: boolean | null, delay: number) {
+  return reduced
+    ? { initial: false as const }
+    : {
+        initial: { opacity: 0, y: 22 },
+        animate: { opacity: 1, y: 0 },
+        transition: { duration: 0.8, ease: EASE, delay },
+      };
+}
+
+/** small corner details: registration marks + hairlines */
+function Frame() {
+  return (
+    <div
+      aria-hidden
+      className="pointer-events-none absolute inset-x-8 inset-y-0 hidden lg:block"
+    >
+      <span className="absolute left-0 top-6 text-lg leading-none text-ink/70">
+        +
+      </span>
+      <span className="absolute right-0 top-6 text-lg leading-none text-ink/70">
+        +
+      </span>
+      <span className="absolute bottom-6 left-0 top-16 w-px bg-ink/10" />
+      <span className="absolute bottom-6 right-0 top-16 w-px bg-ink/10" />
+      <span className="absolute left-[-4px] top-[36%] h-px w-[9px] bg-orange" />
+      <span className="absolute right-[-4px] top-[36%] h-px w-[9px] bg-blue" />
+    </div>
+  );
+}
 
 export function Hero() {
-  return (
-    <section className="relative overflow-hidden pt-[130px] pb-20 sm:pt-[150px] sm:pb-28">
-      <Container className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-8">
-        <motion.div initial="hidden" animate="show" variants={container}>
-          {/* <motion.div variants={item} className="mb-6 inline-flex items-center gap-2 rounded-full border border-line-strong px-4 py-1.5 text-[0.82rem] font-medium text-ink-soft">
-            <span className="h-1.5 w-1.5 rounded-full bg-blue" />
-            Design &amp; engineering, one team
-          </motion.div> */}
+  const reduced = useReducedMotion();
+  const r = !!reduced;
+  const ctaRef = useRef<HTMLAnchorElement>(null);
 
+  return (
+    <section className="relative flex min-h-[100svh] flex-col overflow-hidden bg-[#fdfdfc] pt-[100px]">
+      <div className="relative flex flex-1 items-center justify-center px-5 pb-14 pt-[clamp(4.5rem,15vh,9rem)] sm:pb-16">
+        <Frame />
+        <HeroOrbit reduced={r} anchorRef={ctaRef} />
+
+        <div className="relative z-10 mx-auto flex max-w-[900px] flex-col items-center text-center">
           <motion.h1
-            variants={item}
-            className="text-balance font-display text-[2.6rem] font-medium leading-[1.05] tracking-tight sm:text-[3.4rem] lg:text-[3.8rem]"
+            aria-label="Meet ZSpace, your website builder."
+            className="text-[2.35rem] leading-[1.1] tracking-[-0.03em] text-ink min-[420px]:text-[2.7rem] sm:text-[4rem] lg:text-[5rem]"
+            style={{ fontFamily: "var(--font-newsreader), Georgia, serif" }}
+            {...rise(reduced, 0.5)}
           >
-            We build <span className="text-blue">digital products</span> that
-            move businesses <span className="text-orange">forward</span>.
+            <span className="block">Meet ZSpace,</span>
+            <AnimatedHeroWord phrases={phrases} paused={r} />
           </motion.h1>
 
           <motion.p
-            variants={item}
-            className="mt-6 max-w-[52ch] text-pretty text-[1.1rem] leading-relaxed text-ink-soft"
+            className="mt-6 max-w-[40rem] text-pretty text-[1rem] leading-relaxed text-ink/55 sm:text-[1.12rem]"
+            {...rise(reduced, 0.7)}
           >
-            ZSpace is a technology studio for websites, mobile apps, AI
-            automation and Shopify commerce. We design and build the product,
-            then keep tuning it for conversion — under one roof, without the
-            handoffs.
+            We turn good ideas into digital things people actually enjoy using.{" "}
+            <br className="hidden sm:block" />
+            Websites, apps, Shopify stores and smart automations,{" "}
+            <br className="hidden sm:block" />
+            all thoughtfully built around your business.
           </motion.p>
 
           <motion.div
-            variants={item}
-            className="mt-9 flex flex-col gap-3 sm:flex-row"
+            className="mt-8 flex flex-col items-center gap-4"
+            {...rise(reduced, 0.9)}
           >
             <Link
+              ref={ctaRef}
               href="/contact"
-              className="group inline-flex items-center justify-center gap-2 rounded-full bg-orange px-7 py-4 text-[0.95rem] font-medium text-white transition-colors duration-300 hover:bg-orange-deep"
+              className="group inline-flex items-center justify-center gap-2 rounded-full bg-ink px-8 py-4 text-[0.95rem] font-medium text-white transition-colors duration-300 hover:bg-ink/85"
             >
               Start a Project
-              <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </Link>
-            <Link
-              href="/services"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-line-strong px-7 py-4 text-[0.95rem] font-medium text-ink transition-colors duration-300 hover:border-ink"
-            >
-              Explore our Services
-            </Link>
+            <p className="text-[0.88rem] text-ink-soft">
+              or{" "}
+              <Link
+                href="/services"
+                className="text-ink underline decoration-ink/30 underline-offset-4 hover:decoration-ink"
+              >
+                explore our work
+              </Link>
+            </p>
           </motion.div>
+        </div>
+      </div>
 
-          <motion.div
-            variants={item}
-            className="mt-14 flex flex-wrap gap-x-8 gap-y-3 text-[0.85rem] text-ink-soft"
-          >
-            <span>Websites &amp; Web Apps</span>
-            <span className="text-line-strong">/</span>
-            <span>Mobile Apps</span>
-            <span className="text-line-strong">/</span>
-            <span>AI Automation</span>
-            <span className="text-line-strong">/</span>
-            <span>UI/UX</span>
-            <span className="text-line-strong">/</span>
-            <span>Shopify</span>
-            <span className="text-line-strong">/</span>
-            <span>CRO</span>
-          </motion.div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.94 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.9, delay: 0.3, ease: EASE }}
-          className="relative mx-auto aspect-square w-full max-w-[460px]"
-        >
-          <HeroGraphic />
-        </motion.div>
-      </Container>
+      {/* <motion.div className="pb-8 pt-2 sm:pb-10" {...rise(reduced, 1.1)}>
+        <HeroServiceStrip />
+      </motion.div> */}
     </section>
   );
 }
