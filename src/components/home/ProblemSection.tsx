@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { motion, useInView, useReducedMotion } from "motion/react";
+import { motion, useInView, useReducedMotion, useScroll, useTransform } from "motion/react";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -498,6 +498,12 @@ export function ProblemSection() {
   const reduced = useReducedMotion();
   const still = !!reduced;
 
+  // depth: the two sides drift in opposite directions as the section scrolls past
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
+  const leftY = useTransform(scrollYProgress, [0, 1], still ? [0, 0] : [90, -90]);
+  const rightY = useTransform(scrollYProgress, [0, 1], still ? [0, 0] : [-70, 90]);
+  const centerY = useTransform(scrollYProgress, [0, 1], still ? [0, 0] : [30, -30]);
+
   const fade = (delay: number) =>
     still
       ? { initial: false as const }
@@ -514,15 +520,19 @@ export function ProblemSection() {
     >
       <div className="mx-auto grid max-w-[1560px] items-center xl:grid-cols-[minmax(0,1fr)_minmax(0,640px)_minmax(0,1fr)]">
         {/* left: the problems */}
-        <div
+        <motion.div
           className="relative hidden h-[430px] w-[312px] xl:block min-[1400px]:h-[520px] min-[1400px]:w-[380px]"
+          style={{ y: leftY }}
           aria-hidden
         >
           <ProblemCards on={on} still={still} />
-        </div>
+        </motion.div>
 
         {/* centre: the message */}
-        <div className="mx-auto flex max-w-[640px] flex-col items-center text-center">
+        <motion.div
+          className="mx-auto flex max-w-[640px] flex-col items-center text-center"
+          style={{ y: centerY }}
+        >
           <motion.p
             className="flex items-center gap-3 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-ink"
             {...fade(0)}
@@ -585,12 +595,15 @@ export function ProblemSection() {
               </Link>
             </p>
           </motion.div> */}
-        </div>
+        </motion.div>
 
         {/* right: the way through */}
-        <div className="relative hidden h-[460px] w-[328px] justify-self-end xl:block min-[1400px]:h-[560px] min-[1400px]:w-[400px]">
+        <motion.div
+          className="relative hidden h-[460px] w-[328px] justify-self-end xl:block min-[1400px]:h-[560px] min-[1400px]:w-[400px]"
+          style={{ y: rightY }}
+        >
           <SolutionCards on={on} still={still} />
-        </div>
+        </motion.div>
       </div>
 
       {/* below xl the side art gives way to a simple list */}
