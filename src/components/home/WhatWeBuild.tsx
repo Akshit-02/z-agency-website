@@ -114,10 +114,16 @@ function Eyebrow({ children, on, still }: { children: ReactNode; on: boolean; st
 }
 
 function Row({ item, index, still }: { item: (typeof items)[number]; index: number; still: boolean }) {
-  const ref = useRef<HTMLAnchorElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
   const on = useInView(ref, { once: true, amount: 0.35 });
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
   const artY = useTransform(scrollYProgress, [0, 1], still ? [0, 0] : [26, -26]);
+  // scroll choreography: the row in focus is sharp, neighbours recede; art tilts in 3D; icon turns
+  const focusOpacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], still ? [1, 1, 1, 1] : [0.2, 1, 1, 0.2]);
+  const focusScale = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], still ? [1, 1, 1, 1] : [0.95, 1, 1, 0.95]);
+  const artRotX = useTransform(scrollYProgress, [0, 1], still ? [0, 0] : [16, -16]);
+  const artRotY = useTransform(scrollYProgress, [0, 1], still ? [0, 0] : [-12, 12]);
+  const iconRotate = useTransform(scrollYProgress, [0, 1], still ? [0, 0] : [-140, 140]);
   const Icon = item.icon;
 
   const rise = (delay: number) =>
@@ -130,7 +136,7 @@ function Row({ item, index, still }: { item: (typeof items)[number]; index: numb
         };
 
   return (
-    <div className="relative">
+    <motion.div ref={ref} className="relative" style={{ opacity: focusOpacity, scale: focusScale }}>
       <motion.span
         aria-hidden
         className="absolute inset-x-0 top-0 h-px origin-left bg-ink/10"
@@ -139,7 +145,6 @@ function Row({ item, index, still }: { item: (typeof items)[number]; index: numb
         transition={{ duration: 1.1, ease: EASE }}
       />
       <Link
-        ref={ref}
         href={item.href}
         className="group grid gap-x-6 gap-y-6 py-9 lg:grid-cols-[3rem_5.5rem_minmax(0,1fr)_2rem_368px] lg:items-center lg:py-7"
       >
@@ -153,7 +158,9 @@ function Row({ item, index, still }: { item: (typeof items)[number]; index: numb
           animate={on ? { opacity: 1, scale: 1 } : {}}
           transition={{ type: "spring", stiffness: 160, damping: 14, delay: 0.1 }}
         >
-          <Icon className="h-[22px] w-[22px]" style={{ color: item.color }} strokeWidth={1.6} />
+          <motion.span style={{ rotate: iconRotate }} className="flex">
+            <Icon className="h-[22px] w-[22px]" style={{ color: item.color }} strokeWidth={1.6} />
+          </motion.span>
         </motion.span>
 
         <div>
@@ -197,7 +204,7 @@ function Row({ item, index, still }: { item: (typeof items)[number]; index: numb
 
         <motion.div
           className="transition-transform duration-500 ease-out group-hover:scale-[1.025]"
-          style={{ y: artY }}
+          style={{ y: artY, rotateX: artRotX, rotateY: artRotY, transformPerspective: 900 }}
           initial={still ? false : { opacity: 0, x: 40 }}
           animate={on ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.95, ease: EASE, delay: 0.2 + (index % 2) * 0.05 }}
@@ -205,7 +212,7 @@ function Row({ item, index, still }: { item: (typeof items)[number]; index: numb
           <item.Art on={on} still={still} />
         </motion.div>
       </Link>
-    </div>
+    </motion.div>
   );
 }
 
@@ -216,6 +223,18 @@ export function WhatWeBuild() {
   const headOn = useInView(headRef, { once: true, amount: 0.3 });
   const footRef = useRef<HTMLDivElement>(null);
   const footOn = useInView(footRef, { once: true, amount: 0.4 });
+
+  // header art drifts and tilts; closing orbit turns; a progress rail follows the list
+  const { scrollYProgress: headP } = useScroll({ target: headRef, offset: ["start end", "end start"] });
+  const headArtY = useTransform(headP, [0, 1], still ? [0, 0] : [60, -60]);
+  const headArtRot = useTransform(headP, [0, 1], still ? [0, 0] : [-5, 5]);
+  const headArtScale = useTransform(headP, [0, 0.5, 1], still ? [1, 1, 1] : [0.9, 1, 1.06]);
+  const { scrollYProgress: footP } = useScroll({ target: footRef, offset: ["start end", "end end"] });
+  const orbitRot = useTransform(footP, [0, 1], still ? [0, 0] : [-30, 12]);
+  const orbitScale = useTransform(footP, [0, 1], still ? [1, 1] : [0.75, 1]);
+  const listRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress: railP } = useScroll({ target: listRef, offset: ["start 0.6", "end 0.6"] });
+  const railDot = useTransform(railP, (v) => `${v * 100}%`);
 
   const rise = (on: boolean, delay: number) =>
     still
@@ -253,13 +272,20 @@ export function WhatWeBuild() {
               Digital products, experiences and systems that make businesses easier to run and customers happier to use.
             </motion.p>
           </div>
-          <div className="hidden lg:block">
+          <motion.div className="hidden lg:block" style={{ y: headArtY, rotate: headArtRot, scale: headArtScale }}>
             <HeaderArt on={headOn} still={still} />
-          </div>
+          </motion.div>
         </div>
 
         {/* rows */}
-        <div>
+        <div ref={listRef} className="relative">
+          <div aria-hidden className="absolute -left-8 bottom-0 top-0 hidden w-px bg-ink/10 xl:block">
+            <motion.span className="absolute inset-0 origin-top bg-gradient-to-b from-orange-600 to-blue" style={{ scaleY: railP }} />
+            <motion.span
+              className="absolute -left-[3px] h-[7px] w-[7px] rounded-full bg-orange-600 shadow-[0_0_14px_3px_rgba(234,88,12,0.45)]"
+              style={{ top: railDot }}
+            />
+          </div>
           {items.map((item, i) => (
             <Row key={item.n} item={item} index={i} still={still} />
           ))}
@@ -288,9 +314,9 @@ export function WhatWeBuild() {
                 </Link>
               </motion.div>
             </div>
-            <div className="hidden justify-self-end lg:block">
+            <motion.div className="hidden justify-self-end lg:block" style={{ rotate: orbitRot, scale: orbitScale }}>
               <ClosingOrbit on={footOn} still={still} />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

@@ -1,8 +1,16 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
-import { motion, useInView, useReducedMotion, useScroll, useTransform } from "motion/react";
+import {
+  motion,
+  useInView,
+  useMotionValueEvent,
+  useReducedMotion,
+  useScroll,
+  useTransform,
+  type MotionValue,
+} from "motion/react";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -167,7 +175,34 @@ function Dot({
   );
 }
 
-function ProblemCards({ on, still }: { on: boolean; still: boolean }) {
+const PARAGRAPH =
+  "Your website feels outdated. Your store isn\u2019t converting. Your team is still doing things manually. Or maybe you simply know there\u2019s a better way to do it.";
+
+/** words light up one by one as the paragraph scrolls into focus */
+function ScrollWord({ word, i, n, progress, still }: { word: string; i: number; n: number; progress: MotionValue<number>; still: boolean }) {
+  const start = (i / n) * 0.75;
+  const opacity = useTransform(progress, [start, start + 0.25], [0.16, 1]);
+  const y = useTransform(progress, [start, start + 0.25], [6, 0]);
+  return (
+    <motion.span className="mr-[0.28em] inline-block" style={still ? undefined : { opacity, y }}>
+      {word}
+    </motion.span>
+  );
+}
+
+/** each problem card drifts and turns on its own as the section scrolls */
+function Drift({ i, progress, still, children }: { i: number; progress: MotionValue<number>; still: boolean; children: React.ReactNode }) {
+  const dir = i % 2 ? -1 : 1;
+  const x = useTransform(progress, [0.15, 0.85], still ? [0, 0] : [dir * -34 * (1 + i * 0.25), dir * 34 * (1 + i * 0.25)]);
+  const rotate = useTransform(progress, [0.15, 0.85], still ? [0, 0] : [dir * -5, dir * 5]);
+  return (
+    <motion.div className="absolute inset-0" style={{ x, rotate }}>
+      {children}
+    </motion.div>
+  );
+}
+
+function ProblemCards({ on, still, progress }: { on: boolean; still: boolean; progress: MotionValue<number> }) {
   return (
     <div className="absolute left-0 top-0 h-[520px] w-[380px] origin-top-left scale-[0.82] min-[1400px]:scale-100">
       <svg
@@ -222,8 +257,8 @@ function ProblemCards({ on, still }: { on: boolean; still: boolean }) {
       {problems.map((p, i) => {
         const Icon = p.icon;
         return (
+          <Drift key={p.text} i={i} progress={progress} still={still}>
           <motion.div
-            key={p.text}
             className="absolute"
             style={{ left: p.x, top: p.y, width: p.w }}
             initial={
@@ -264,6 +299,7 @@ function ProblemCards({ on, still }: { on: boolean; still: boolean }) {
               <span className="max-w-[7.5rem]">{p.text}</span>
             </motion.div>
           </motion.div>
+          </Drift>
         );
       })}
     </div>
@@ -297,16 +333,15 @@ const FULL_ARC =
   `M${seg1[0]} ${seg1[1]} C ${seg1.slice(2).join(" ")} ` +
   `C ${seg2.slice(2).join(" ")} C ${seg3.slice(2).join(" ")}`;
 
-function SolutionCards({ on, still }: { on: boolean; still: boolean }) {
+function SolutionCards({ on, still, progress }: { on: boolean; still: boolean; progress: MotionValue<number> }) {
   const [active, setActive] = useState(0);
   const [hovered, setHovered] = useState(false);
 
-  // walk through the solutions one by one, like a problem getting solved
-  useEffect(() => {
-    if (!on || still || hovered) return;
-    const t = setInterval(() => setActive((a) => (a + 1) % solutions.length), 2800);
-    return () => clearInterval(t);
-  }, [on, still, hovered]);
+  // scrolling through the section "solves" the four problems one by one
+  useMotionValueEvent(progress, "change", (v) => {
+    if (hovered || still) return;
+    setActive(v < 0.4 ? 0 : v < 0.47 ? 1 : v < 0.54 ? 2 : 3);
+  });
 
   return (
     <div className="absolute right-0 top-0 h-[560px] w-[400px] origin-top-right scale-[0.82] min-[1400px]:scale-100">
@@ -381,7 +416,7 @@ function SolutionCards({ on, still }: { on: boolean; still: boolean }) {
               setActive(i);
             }}
           >
-            <SolutionCard s={s} still={still} active={on && active === i} cycling={!hovered} />
+            <SolutionCard s={s} still={still} active={on && active === i} cycling={false} />
           </motion.div>
         ))}
 
@@ -504,6 +539,9 @@ export function ProblemSection() {
   const rightY = useTransform(scrollYProgress, [0, 1], still ? [0, 0] : [-70, 90]);
   const centerY = useTransform(scrollYProgress, [0, 1], still ? [0, 0] : [30, -30]);
 
+  const paraRef = useRef<HTMLParagraphElement>(null);
+  const { scrollYProgress: paraProgress } = useScroll({ target: paraRef, offset: ["start 0.88", "end 0.5"] });
+
   const fade = (delay: number) =>
     still
       ? { initial: false as const }
@@ -525,7 +563,7 @@ export function ProblemSection() {
           style={{ y: leftY }}
           aria-hidden
         >
-          <ProblemCards on={on} still={still} />
+          <ProblemCards on={on} still={still} progress={scrollYProgress} />
         </motion.div>
 
         {/* centre: the message */}
@@ -559,12 +597,13 @@ export function ProblemSection() {
           </h2>
 
           <motion.p
-            className="mt-8 max-w-128 text-pretty text-[1.05rem] leading-[1.7] text-ink/60"
+            ref={paraRef}
+            className="mt-8 max-w-128 text-pretty text-[1.05rem] leading-[1.7] text-ink"
             {...fade(0.55)}
           >
-            Your website feels outdated. Your store isn&rsquo;t converting. Your team
-            is still doing things manually. Or maybe you simply know there&rsquo;s a
-            better way to do it.
+            {PARAGRAPH.split(" ").map((w, i, all) => (
+              <ScrollWord key={i} word={w} i={i} n={all.length} progress={paraProgress} still={still} />
+            ))}
           </motion.p>
 
           <motion.p
@@ -602,7 +641,7 @@ export function ProblemSection() {
           className="relative hidden h-[460px] w-[328px] justify-self-end xl:block min-[1400px]:h-[560px] min-[1400px]:w-[400px]"
           style={{ y: rightY }}
         >
-          <SolutionCards on={on} still={still} />
+          <SolutionCards on={on} still={still} progress={scrollYProgress} />
         </motion.div>
       </div>
 

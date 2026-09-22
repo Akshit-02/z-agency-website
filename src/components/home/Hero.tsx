@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useReducedMotion } from "motion/react";
+import { motion, useMotionTemplate, useReducedMotion, useScroll, useTransform } from "motion/react";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { AnimatedHeroWord } from "./AnimatedHeroWord";
@@ -56,13 +56,27 @@ export function Hero() {
   const r = !!reduced;
   const ctaRef = useRef<HTMLAnchorElement>(null);
 
+  // scroll choreography: content lifts, softens and recedes while the orbit expands
+  const { scrollY } = useScroll();
+  const span = [0, 800];
+  const contentY = useTransform(scrollY, span, r ? [0, 0] : [0, -110]);
+  const contentScale = useTransform(scrollY, span, r ? [1, 1] : [1, 0.92]);
+  const contentOpacity = useTransform(scrollY, [0, 520], r ? [1, 1] : [1, 0.2]);
+  const blur = useTransform(scrollY, [0, 620], r ? [0, 0] : [0, 8]);
+  const contentFilter = useMotionTemplate`blur(${blur}px)`;
+  const orbitScale = useTransform(scrollY, span, r ? [1, 1] : [1, 1.45]);
+  const orbitRotate = useTransform(scrollY, span, r ? [0, 0] : [0, 7]);
+
   return (
     <section className="relative flex min-h-[100svh] flex-col overflow-hidden bg-[#fdfdfc] pt-[100px]">
       <div className="relative flex flex-1 items-center justify-center px-5 pb-14 pt-[clamp(4.5rem,15vh,9rem)] sm:pb-16">
         <Frame />
-        <HeroOrbit reduced={r} anchorRef={ctaRef} />
+        <HeroOrbit reduced={r} anchorRef={ctaRef} scale={orbitScale} rotate={orbitRotate} />
 
-        <div className="relative z-10 mx-auto flex max-w-[900px] flex-col items-center text-center">
+        <motion.div
+          className="relative z-10 mx-auto flex max-w-[900px] flex-col items-center text-center"
+          style={{ y: contentY, scale: contentScale, opacity: contentOpacity, filter: contentFilter }}
+        >
           <motion.h1
             aria-label="Meet ZSpace, your website builder."
             className="text-[2.35rem] leading-[1.1] tracking-[-0.03em] text-ink min-[420px]:text-[2.7rem] sm:text-[4rem] lg:text-[5rem]"
@@ -106,7 +120,7 @@ export function Hero() {
               </Link>
             </p>
           </motion.div>
-        </div>
+        </motion.div>
       </div>
 
       {/* <motion.div className="pb-8 pt-2 sm:pb-10" {...rise(reduced, 1.1)}>

@@ -7,6 +7,7 @@ import {
   useMotionValue,
   useSpring,
   useTransform,
+  type MotionValue,
 } from "motion/react";
 import { Globe, Settings, ShoppingBag, Smartphone, Sparkles, type LucideIcon } from "lucide-react";
 
@@ -120,9 +121,13 @@ function useMeasure<T extends HTMLElement>() {
 export function HeroOrbit({
   reduced,
   anchorRef,
+  scale,
+  rotate,
 }: {
   reduced: boolean;
   anchorRef: RefObject<HTMLElement | null>;
+  scale?: MotionValue<number>;
+  rotate?: MotionValue<number>;
 }) {
   const [ref, { w, h }] = useMeasure<HTMLDivElement>();
   const pillEls = useRef<(HTMLDivElement | null)[]>([]);
@@ -264,7 +269,7 @@ export function HeroOrbit({
   );
 
   return (
-    <div ref={ref} aria-hidden className="pointer-events-none absolute inset-0 hidden overflow-hidden md:block">
+    <motion.div ref={ref} aria-hidden className="pointer-events-none absolute inset-0 hidden overflow-hidden md:block" style={{ scale, rotate }}>
       {ready && (
         <>
           <motion.svg width={w} height={h} viewBox={`0 0 ${w} ${h}`} className="absolute inset-0" style={{ x: lineX, y: lineY }}>
@@ -315,6 +320,6 @@ export function HeroOrbit({
           </motion.div>
         </>
       )}
-    </div>
+    </motion.div>
   );
 }
