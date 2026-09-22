@@ -3,7 +3,7 @@ import { HomeIntro } from "@/components/home/HomeIntro";
 import { WhatWeBuild } from "@/components/home/WhatWeBuild";
 import { Principles } from "@/components/home/Principles";
 import { ServicesShowcase } from "@/components/home/ServicesShowcase";
-import { IndustriesSection } from "@/components/home/IndustriesSection";
+import { IndustriesGrid } from "@/components/home/IndustriesGrid";
 import { ProcessSection } from "@/components/home/ProcessSection";
 import { WhyZspace } from "@/components/home/WhyZspace";
 import { TechStack } from "@/components/home/TechStack";
@@ -23,7 +23,7 @@ export default function HomePage() {
       <WhatWeBuild />
       <Principles />
       <ServicesShowcase />
-      <IndustriesSection />
+      <IndustriesGrid />
       <ProcessSection />
       <WhyZspace />
       <TechStack />
