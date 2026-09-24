@@ -79,7 +79,11 @@ export type BlogBannerVariant =
   | "securitylock"
   | "a11ycheck"
   | "navmap"
-  | "bounceviz";
+  | "bounceviz"
+  | "headlesscms"
+  | "restgraphql"
+  | "renderflow"
+  | "archstack";
 
 const INK = "#0b0c0e";
 const LINE = "#d3d0c8";
@@ -1222,6 +1226,95 @@ export function BlogBanner({ variant }: { variant: BlogBannerVariant }) {
             </g>
           );
         })}
+      </Canvas>
+    );
+  }
+
+  if (variant === "headlesscms") {
+    const heads = [
+      { y: 100, label: "Website" },
+      { y: 195, label: "Mobile app" },
+      { y: 290, label: "Other channel" },
+    ];
+    return (
+      <Canvas>
+        <rect x="110" y="165" width="170" height="110" rx="12" fill={INK} />
+        <text x="195" y="215" textAnchor="middle" fontFamily="monospace" fontSize="14" fill="#faf9f6">Content</text>
+        <text x="195" y="236" textAnchor="middle" fontFamily="monospace" fontSize="11" fill="#faf9f6" opacity="0.6">headless CMS</text>
+        <rect x="345" y="195" width="90" height="50" rx="25" fill="none" stroke={ORANGE} strokeWidth="2.2" />
+        <text x="390" y="225" textAnchor="middle" fontFamily="monospace" fontSize="13" fill={ORANGE}>API</text>
+        <line x1="280" y1="220" x2="345" y2="220" stroke={LINE} strokeWidth="2" />
+        {heads.map((h, i) => (
+          <g key={i}>
+            <path d={`M435,220 C470,220 470,${h.y + 22} 505,${h.y + 22}`} stroke={LINE} strokeWidth="2" fill="none" />
+            <rect x="505" y={h.y} width="180" height="44" rx="8" fill="#ffffff" stroke={i === 0 ? BLUE : INK} strokeWidth="1.8" strokeOpacity={i === 0 ? 1 : 0.4} />
+            <text x="595" y={h.y + 27} textAnchor="middle" fontFamily="monospace" fontSize="12" fill={INK}>{h.label}</text>
+          </g>
+        ))}
+      </Canvas>
+    );
+  }
+
+  if (variant === "restgraphql") {
+    return (
+      <Canvas>
+        <text x="200" y="80" textAnchor="middle" fontFamily="monospace" fontSize="13" fill={INK}>REST</text>
+        <text x="600" y="80" textAnchor="middle" fontFamily="monospace" fontSize="13" fill={INK}>GraphQL</text>
+        <line x1="400" y1="70" x2="400" y2="380" stroke={LINE} strokeWidth="1.5" strokeDasharray="4 5" />
+        <rect x="80" y="200" width="70" height="50" rx="8" fill={INK} />
+        {[0, 1, 2].map((i) => (
+          <g key={i}>
+            <line x1="150" y1="225" x2="235" y2={140 + i * 85} stroke={BLUE} strokeWidth="2" />
+            <rect x="235" y={120 + i * 85} width="110" height="40" rx="6" fill="#ffffff" stroke={BLUE} strokeWidth="1.8" />
+            <rect x="250" y={136 + i * 85} width="70" height="8" rx="3" fill={LINE} />
+          </g>
+        ))}
+        <rect x="455" y="200" width="70" height="50" rx="8" fill={INK} />
+        <line x1="525" y1="225" x2="600" y2="225" stroke={ORANGE} strokeWidth="2.4" />
+        <rect x="600" y="165" width="130" height="120" rx="8" fill="#ffffff" stroke={ORANGE} strokeWidth="2" />
+        {[0, 1, 2, 3].map((i) => (
+          <rect key={i} x="618" y={185 + i * 24} width={i % 2 ? 60 : 90} height="8" rx="3" fill={i === 1 ? ORANGE : LINE} />
+        ))}
+      </Canvas>
+    );
+  }
+
+  if (variant === "renderflow") {
+    return (
+      <Canvas>
+        <rect x="90" y="150" width="170" height="150" rx="12" fill={INK} />
+        <text x="175" y="232" textAnchor="middle" fontFamily="monospace" fontSize="14" fill="#faf9f6">Server</text>
+        <rect x="540" y="150" width="170" height="150" rx="12" fill="#ffffff" stroke={INK} strokeWidth="2" />
+        <rect x="540" y="150" width="170" height="28" rx="12" fill={SOFT} />
+        <text x="625" y="245" textAnchor="middle" fontFamily="monospace" fontSize="14" fill={INK}>Browser</text>
+        <path d="M260,195 L540,195" stroke={ORANGE} strokeWidth="2.4" />
+        <path d="M526,187 L540,195 L526,203" stroke={ORANGE} strokeWidth="2.4" fill="none" />
+        <text x="400" y="182" textAnchor="middle" fontFamily="monospace" fontSize="11" fill={ORANGE}>rendered HTML</text>
+        <path d="M260,260 L540,260" stroke={BLUE} strokeWidth="2.4" strokeDasharray="6 5" />
+        <path d="M526,252 L540,260 L526,268" stroke={BLUE} strokeWidth="2.4" fill="none" />
+        <text x="400" y="288" textAnchor="middle" fontFamily="monospace" fontSize="11" fill={BLUE}>JavaScript + data</text>
+      </Canvas>
+    );
+  }
+
+  if (variant === "archstack") {
+    const layers = [
+      { label: "CDN / edge cache", c: ORANGE },
+      { label: "Frontend + rendering", c: INK },
+      { label: "APIs + services", c: BLUE },
+      { label: "Database + storage", c: INK },
+    ];
+    return (
+      <Canvas>
+        {layers.map((l, i) => (
+          <g key={i}>
+            <rect x="200" y={70 + i * 80} width="400" height="56" rx="10" fill={i === 1 ? INK : "#ffffff"} stroke={l.c} strokeWidth="2" strokeOpacity={l.c === INK && i !== 1 ? 0.5 : 1} />
+            <text x="400" y={104 + i * 80} textAnchor="middle" fontFamily="monospace" fontSize="13" fill={i === 1 ? "#faf9f6" : INK}>{l.label}</text>
+            {i < layers.length - 1 && <line x1="400" y1={126 + i * 80} x2="400" y2={150 + i * 80} stroke={LINE} strokeWidth="2" />}
+          </g>
+        ))}
+        <rect x="630" y="70" width="60" height="296" rx="10" fill="none" stroke={INK} strokeOpacity="0.35" strokeWidth="1.6" strokeDasharray="5 5" />
+        <text x="660" y="222" textAnchor="middle" fontFamily="monospace" fontSize="10" fill={INK} opacity="0.6" transform="rotate(-90 660 222)">monitoring</text>
       </Canvas>
     );
   }

@@ -162,6 +162,34 @@ Practical implementation guides:
 - How to make a business website mobile-friendly — https://zspace.in/blogs/how-to-make-a-website-mobile-friendly
 - How to improve website trust and credibility — https://zspace.in/blogs/website-trust-and-credibility
 
+CMS and platform choices:
+- WordPress vs Next.js — https://zspace.in/blogs/wordpress-vs-nextjs
+- WordPress vs custom development: long-term cost and ownership — https://zspace.in/blogs/wordpress-vs-custom-development-cost-of-ownership
+- Headless CMS vs traditional CMS — https://zspace.in/blogs/headless-cms-vs-traditional-cms
+- What is a headless CMS and how does it work? — https://zspace.in/blogs/what-is-a-headless-cms
+- How to choose the right CMS — https://zspace.in/blogs/how-to-choose-a-cms
+- Custom CMS vs WordPress — https://zspace.in/blogs/custom-cms-vs-wordpress
+
+Architecture and rendering:
+- Server-side rendering vs client-side rendering — https://zspace.in/blogs/server-side-rendering-vs-client-side-rendering
+- Static site generation vs server-side rendering — https://zspace.in/blogs/static-site-generation-vs-server-side-rendering
+- Monolithic vs headless website architecture — https://zspace.in/blogs/monolithic-vs-headless-architecture
+- How to build a scalable website architecture — https://zspace.in/blogs/scalable-website-architecture
+- How to build a secure business website (secure development) — https://zspace.in/blogs/secure-business-website-development
+- Progressive web app development — https://zspace.in/blogs/progressive-web-app-development
+- PWA vs native app — https://zspace.in/blogs/pwa-vs-native-app
+
+APIs and integrations:
+- API-first website development — https://zspace.in/blogs/api-first-website-development
+- REST API vs GraphQL — https://zspace.in/blogs/rest-api-vs-graphql
+- 15 common website API integrations — https://zspace.in/blogs/website-api-integrations-list
+- How to integrate a CRM with your website — https://zspace.in/blogs/crm-website-integration
+- How to integrate payment gateways into a website — https://zspace.in/blogs/payment-gateway-integration
+
+Migration and replatforming:
+- Website migration guide: moving platforms without losing SEO — https://zspace.in/blogs/website-migration-guide
+- Website replatforming: when to move to a new technology stack — https://zspace.in/blogs/website-replatforming
+
 This cluster connects conceptually to UI/UX (design and development are treated as parallel disciplines, not a one-way handoff), CRO (performance and UX both affect conversion), Mobile App Development (shared API and integration patterns), Shopify Development (a specific platform within the broader website development discipline, with its own parallel CRO cluster for landing pages, trust and mobile), and AI Agents/AI Automation (API integration extends to AI services).
 
 Shopify & Ecommerce cluster (Shopify store setup, cost, development and growth, in order):

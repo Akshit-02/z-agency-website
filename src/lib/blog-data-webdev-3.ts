@@ -125,7 +125,7 @@ export const webDevPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Headless architecture is a genuine, deliberate trade-off — more front-end freedom and multi-channel flexibility in exchange for more upfront work and ongoing complexity. It earns that complexity for businesses with real multi-channel or design-freedom needs, and it's worth avoiding for a straightforward site that doesn't have them.",
+          "Headless architecture is a genuine, deliberate trade-off — more front-end freedom and multi-channel flexibility in exchange for more upfront work and ongoing complexity. It earns that complexity for businesses with real multi-channel or design-freedom needs, and it's worth avoiding for a straightforward site that doesn't have them. For the content-system side specifically, see [[/blogs/what-is-a-headless-cms|what a headless CMS is]] and [[/blogs/headless-cms-vs-traditional-cms|headless vs traditional CMS]].",
         ],
       },
     ],
@@ -244,7 +244,7 @@ export const webDevPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "API integrations are what let a website function as part of a connected business system rather than an isolated brochure — but they need to be built with real attention to authentication, error handling, rate limits and ongoing monitoring to be reliable in production, not just in an initial demo.",
+          "API integrations are what let a website function as part of a connected business system rather than an isolated brochure — but they need to be built with real attention to authentication, error handling, rate limits and ongoing monitoring to be reliable in production, not just in an initial demo. For a reference list of the integrations businesses most often need, see [[/blogs/website-api-integrations-list|15 common website integrations]], with dedicated guides for [[/blogs/crm-website-integration|CRM]] and [[/blogs/payment-gateway-integration|payment gateway]] integration.",
         ],
       },
     ],
@@ -511,7 +511,7 @@ export const webDevPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Website security is a defensive discipline built from many individually manageable practices — HTTPS, validation, authentication, dependency hygiene, backups and monitoring — rather than one single fix. Treat it as an ongoing responsibility that continues well past launch, not a checkbox to clear once before going live.",
+          "Website security is a defensive discipline built from many individually manageable practices — HTTPS, validation, authentication, dependency hygiene, backups and monitoring — rather than one single fix. Treat it as an ongoing responsibility that continues well past launch, not a checkbox to clear once before going live. For how to design these protections in during development, see [[/blogs/secure-business-website-development|building a secure business website]].",
         ],
       },
     ],

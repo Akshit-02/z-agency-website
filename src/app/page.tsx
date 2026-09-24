@@ -22,12 +22,12 @@ export default function HomePage() {
     <>
       <HomeIntro />
       <WhatWeBuild />
-      <Principles />
-      <ServicesShowcase />
+      {/* <Principles /> */}
+      {/* <ServicesShowcase /> */}
       <IndustriesGrid />
       <WhyZspace />
-      <ProcessSection />
-      <TechStack />
+      {/* <ProcessSection /> */}
+      {/* <TechStack /> */}
       <FaqSection />
       <BuildCTA />
     </>

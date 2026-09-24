@@ -1,7 +1,12 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useReducedMotion, useScroll, useTransform } from "motion/react";
+import {
+  motion,
+  useReducedMotion,
+  useScroll,
+  useTransform,
+} from "motion/react";
 import { Hero } from "./Hero";
 import { ProblemSection } from "./ProblemSection";
 
@@ -25,12 +30,18 @@ export function HomeIntro() {
   return (
     <div className="relative">
       <motion.div
-        className={reduced ? "relative" : "sticky top-0 origin-center overflow-hidden"}
+        className={
+          reduced ? "relative" : "sticky top-0 origin-center overflow-hidden"
+        }
         style={reduced ? undefined : { scale, borderRadius: radius, y }}
       >
         <Hero />
         {!reduced && (
-          <motion.div aria-hidden className="pointer-events-none absolute inset-0 bg-ink" style={{ opacity: dim }} />
+          <motion.div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 bg-ink"
+            style={{ opacity: dim }}
+          />
         )}
       </motion.div>
 

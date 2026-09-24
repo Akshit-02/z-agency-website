@@ -786,7 +786,7 @@ export const webDevPosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "WordPress and custom development each have genuine strengths — WordPress's content-editing ecosystem, custom development's flexibility and control — and neither deserves the reflexive stereotypes often attached to it. The right choice depends on how content-driven versus functionality-driven the project actually is, and how well the team executing it understands the platform they're building on.",
+          "WordPress and custom development each have genuine strengths — WordPress's content-editing ecosystem, custom development's flexibility and control — and neither deserves the reflexive stereotypes often attached to it. The right choice depends on how content-driven versus functionality-driven the project actually is, and how well the team executing it understands the platform they're building on. For the multi-year cost and ownership side of the same decision, see [[/blogs/wordpress-vs-custom-development-cost-of-ownership|WordPress vs custom development: long-term cost and ownership]].",
         ],
       },
     ],

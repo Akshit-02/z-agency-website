@@ -147,7 +147,7 @@ export default async function BlogPostPage({
               <TableOfContents items={tocItems} />
             </div>
 
-            <div>
+            <div className="min-w-0">
               {post.content.map((section, i) => {
                 const id = slugifyHeading(section.heading);
                 return (

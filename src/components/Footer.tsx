@@ -28,7 +28,7 @@ export function Footer() {
       {/* notch cut into the top edge, mirroring the navbar shape */}
       <div
         aria-hidden
-        className="absolute left-1/2 top-0 z-10 h-9 w-[calc(100%-2.5rem)] max-w-[1240px] -translate-x-1/2 rounded-b-3xl bg-paper sm:w-[calc(100%-4rem)]"
+        className="absolute left-1/2 top-0 z-10 h-9 w-[calc(100%-2.5rem)] max-w-[1240px] -translate-x-1/2 rounded-b-3xl bg-white sm:w-[calc(100%-4rem)]"
       >
         <span
           className="absolute -left-3 top-0 h-3 w-[13px]"

@@ -1,7 +1,13 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useMotionTemplate, useReducedMotion, useScroll, useTransform } from "motion/react";
+import {
+  motion,
+  useMotionTemplate,
+  useReducedMotion,
+  useScroll,
+  useTransform,
+} from "motion/react";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { AnimatedHeroWord } from "./AnimatedHeroWord";
@@ -71,11 +77,21 @@ export function Hero() {
     <section className="relative flex min-h-[100svh] flex-col overflow-hidden bg-[#fdfdfc] pt-[100px]">
       <div className="relative flex flex-1 items-center justify-center px-5 pb-14 pt-[clamp(4.5rem,15vh,9rem)] sm:pb-16">
         <Frame />
-        <HeroOrbit reduced={r} anchorRef={ctaRef} scale={orbitScale} rotate={orbitRotate} />
+        <HeroOrbit
+          reduced={r}
+          anchorRef={ctaRef}
+          scale={orbitScale}
+          rotate={orbitRotate}
+        />
 
         <motion.div
           className="relative z-10 mx-auto flex max-w-[900px] flex-col items-center text-center"
-          style={{ y: contentY, scale: contentScale, opacity: contentOpacity, filter: contentFilter }}
+          style={{
+            y: contentY,
+            scale: contentScale,
+            opacity: contentOpacity,
+            filter: contentFilter,
+          }}
         >
           <motion.h1
             aria-label="Meet ZSpace, your website builder."

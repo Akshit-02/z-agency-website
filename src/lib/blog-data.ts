@@ -14,6 +14,9 @@ import { webDevPosts3 } from "./blog-data-webdev-3";
 import { webDevPosts4 } from "./blog-data-webdev-4";
 import { webDevPosts5 } from "./blog-data-webdev-5";
 import { webDevPosts6 } from "./blog-data-webdev-6";
+import { webDevPosts7 } from "./blog-data-webdev-7";
+import { webDevPosts8 } from "./blog-data-webdev-8";
+import { webDevPosts9 } from "./blog-data-webdev-9";
 
 export type BlogSection = {
   heading: string;
@@ -2180,7 +2183,7 @@ export const posts: BlogPost[] = [
 // The "AI agents in [industry]" cluster lives in its own module — merged in
 // here so every existing consumer of `posts` (listing, sitemap, related
 // posts, category filter) picks it up automatically.
-posts.push(...aiAgentPosts, ...aiAgentPosts2, ...aiAgentPosts3, ...shopifyCroPosts, ...shopifyCroPosts2, ...shopifyCroPosts3, ...shopifyCroPosts4, ...webDevPosts, ...webDevPosts2, ...webDevPosts3, ...webDevPosts4, ...webDevPosts5, ...webDevPosts6);
+posts.push(...aiAgentPosts, ...aiAgentPosts2, ...aiAgentPosts3, ...shopifyCroPosts, ...shopifyCroPosts2, ...shopifyCroPosts3, ...shopifyCroPosts4, ...webDevPosts, ...webDevPosts2, ...webDevPosts3, ...webDevPosts4, ...webDevPosts5, ...webDevPosts6, ...webDevPosts7, ...webDevPosts8, ...webDevPosts9);
 
 export function getPostBySlug(slug: string) {
   return posts.find((post) => post.slug === slug);

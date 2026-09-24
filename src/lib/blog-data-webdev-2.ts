@@ -532,7 +532,7 @@ export const webDevPosts2: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Redesign, rebuild and incremental improvement solve different problems — being precise about which one your site actually needs, based on whether the constraint is visual, technical, or isolated, is what keeps the project scoped correctly instead of over- or under-investing relative to the real problem.",
+          "Redesign, rebuild and incremental improvement solve different problems — being precise about which one your site actually needs, based on whether the constraint is visual, technical, or isolated, is what keeps the project scoped correctly instead of over- or under-investing relative to the real problem. If the constraint turns out to be the platform itself, the [[/blogs/website-replatforming|website replatforming guide]] and the [[/blogs/website-migration-guide|SEO-safe migration guide]] cover the next steps.",
         ],
       },
     ],
@@ -773,7 +773,7 @@ export const webDevPosts2: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Next.js earns its complexity once a site needs both content-driven performance and real application capability — SaaS products, ecommerce storefronts, and marketing sites that need to do more than serve static pages. For a genuinely simple, low-growth site, a simpler tool can be entirely appropriate. Match the technology to what the site actually needs to do, not to which framework is currently popular.",
+          "Next.js earns its complexity once a site needs both content-driven performance and real application capability — SaaS products, ecommerce storefronts, and marketing sites that need to do more than serve static pages. For a genuinely simple, low-growth site, a simpler tool can be entirely appropriate. Match the technology to what the site actually needs to do, not to which framework is currently popular. If you're weighing it against a CMS-led build, see [[/blogs/wordpress-vs-nextjs|WordPress vs Next.js]], and for the rendering concepts behind it, [[/blogs/server-side-rendering-vs-client-side-rendering|server-side vs client-side rendering]].",
         ],
       },
     ],
