@@ -1,6 +1,19 @@
 import type { BlogBannerVariant } from "@/components/BlogBanner";
 import type { IndustryVisual, IndustryAccent } from "@/lib/industries-data";
 import type { CalloutType } from "@/components/Callout";
+import { aiAgentPosts } from "./blog-data-ai-agents";
+import { aiAgentPosts2 } from "./blog-data-ai-agents-2";
+import { aiAgentPosts3 } from "./blog-data-ai-agents-3";
+import { shopifyCroPosts } from "./blog-data-shopify-cro";
+import { shopifyCroPosts2 } from "./blog-data-shopify-cro-2";
+import { shopifyCroPosts3 } from "./blog-data-shopify-cro-3";
+import { shopifyCroPosts4 } from "./blog-data-shopify-cro-4";
+import { webDevPosts } from "./blog-data-webdev";
+import { webDevPosts2 } from "./blog-data-webdev-2";
+import { webDevPosts3 } from "./blog-data-webdev-3";
+import { webDevPosts4 } from "./blog-data-webdev-4";
+import { webDevPosts5 } from "./blog-data-webdev-5";
+import { webDevPosts6 } from "./blog-data-webdev-6";
 
 export type BlogSection = {
   heading: string;
@@ -86,7 +99,7 @@ export const posts: BlogPost[] = [
         heading: "What we prioritize on every build",
         body: [
           "We treat {{b:Core Web Vitals}} as a requirement decided during planning: what renders on the server, what loads lazily, and what never ships to the client at all.",
-          "The result is a site that feels fast because it was built to be fast, not patched afterward — the same standard behind every [[/services/website-development|website we build]].",
+          "The result is a site that feels fast because it was built to be fast, not patched afterward — the same standard behind every [[/services/website-development|website we build]]. See the [[/blogs/website-performance-optimization|full website performance optimization guide]] for the complete technical breakdown.",
         ],
         callout: {
           type: "tip",
@@ -265,7 +278,7 @@ export const posts: BlogPost[] = [
       {
         heading: "Consistency compounds",
         body: [
-          "Every screen built on a shared system takes less time than the one before it. Every screen built without one adds a small inconsistency that eventually has to be cleaned up.",
+          "Every screen built on a shared system takes less time than the one before it. Every screen built without one adds a small inconsistency that eventually has to be cleaned up. This is exactly the design-and-development coordination covered in the [[/blogs/website-development-process|website development process guide]].",
         ],
       },
     ],
@@ -1035,7 +1048,7 @@ export const posts: BlogPost[] = [
       {
         heading: "Performance is a maintenance habit, not a one-time fix",
         body: [
-          "Because performance tends to degrade gradually as apps and content are added over time, a single optimization pass doesn't hold indefinitely — it needs to be part of an ongoing [[/blogs/shopify-store-maintenance-checklist|maintenance routine]], not a project you complete once and move on from.",
+          "Because performance tends to degrade gradually as apps and content are added over time, a single optimization pass doesn't hold indefinitely — it needs to be part of an ongoing [[/blogs/shopify-store-maintenance-checklist|maintenance routine]], not a project you complete once and move on from. Performance matters most, and shows up most clearly, on mobile — see our [[/blogs/shopify-mobile-cro|Shopify mobile CRO guide]] for how it connects to conversion specifically on that segment.",
         ],
         cta: {
           title: "Want a straight answer on what's actually slowing your store down?",
@@ -1942,6 +1955,13 @@ export const posts: BlogPost[] = [
         },
       },
       {
+        heading: "Going deeper on each stage",
+        body: [
+          "Each stage above is covered in far more depth elsewhere: [[/blogs/shopify-product-page-optimization|product page optimization]], [[/blogs/shopify-cart-optimization|cart optimization]], [[/blogs/shopify-checkout-optimization|checkout optimization]], [[/blogs/shopify-mobile-cro|mobile CRO]], and how to actually [[/blogs/shopify-conversion-funnel-optimization|find where your funnel is leaking]] in the first place.",
+          "Once you know what to test, [[/blogs/shopify-ab-testing|our A/B testing guide]] covers how to structure an experiment properly, and [[/blogs/shopify-cro-audit|our full CRO audit checklist]] covers everything a structured audit reviews, end to end. For a complete, stage-by-stage system tying all of this together — including homepage, search, recommendations, bundles, personalization and trust signals — see [[/blogs/shopify-dtc-cro|our full Shopify DTC CRO framework]].",
+        ],
+      },
+      {
         heading: "The ZSpace Shopify Growth Framework",
         body: [
           "CRO doesn't operate in isolation — it compounds with the other pieces of a store's technical health. We frame this as Performance, UX, SEO, CRO, and Analytics together producing ecommerce growth: performance and SEO bring and retain visitors, UX and CRO determine what share of them convert, and analytics is what tells you which of the other four actually needs attention right now.",
@@ -2034,7 +2054,7 @@ export const posts: BlogPost[] = [
         heading: "The limits of attribution",
         body: [
           "No analytics setup gives you a perfectly accurate picture of what caused each sale — cross-device behavior, ad blockers, and privacy-driven limits on cross-site tracking all introduce gaps that no tool fully closes. Treat attribution data as a strong directional signal for where to invest, not a precise accounting you can defend to the decimal point.",
-          "This is also why analytics works best paired with the other parts of a store's growth picture — feeding directly into [[/blogs/shopify-cro-guide|CRO work]] that identifies exactly where in the funnel to act on what the numbers show. It's also usually the evidence base behind a legitimate case for a [[/blogs/shopify-store-redesign-guide|store redesign]], rather than redesigning on instinct alone.",
+          "This is also why analytics works best paired with the other parts of a store's growth picture — feeding directly into [[/blogs/shopify-cro-guide|CRO work]] that identifies exactly where in the funnel to act on what the numbers show. For the specific metrics worth tracking once your setup is clean, see [[/blogs/shopify-conversion-rate-optimization-metrics|which Shopify CRO metrics actually matter]]. It's also usually the evidence base behind a legitimate case for a [[/blogs/shopify-store-redesign-guide|store redesign]], rather than redesigning on instinct alone.",
         ],
         callout: {
           type: "note",
@@ -2146,7 +2166,7 @@ export const posts: BlogPost[] = [
         ],
         callout: {
           type: "takeaway",
-          text: "A redesign is successful when it's measured against the specific evidence that triggered it — not when it simply looks newer. If it's a bigger undertaking than your team has capacity for, that's a fair reason to bring in outside help — see our [[/blogs/how-to-choose-a-shopify-development-agency|guide to choosing a Shopify development agency]].",
+          text: "A redesign is successful when it's measured against the specific evidence that triggered it — not when it simply looks newer. If it's a bigger undertaking than your team has capacity for, that's a fair reason to bring in outside help — see our [[/blogs/how-to-choose-a-shopify-development-agency|guide to choosing a Shopify development agency]]. For how to tie every redesign decision back to shopper behavior rather than preference, see our [[/blogs/shopify-ux-optimization|Shopify UX optimization guide]].",
         },
         cta: {
           title: "Is your Shopify store due for a redesign?",
@@ -2156,6 +2176,11 @@ export const posts: BlogPost[] = [
     ],
   },
 ];
+
+// The "AI agents in [industry]" cluster lives in its own module — merged in
+// here so every existing consumer of `posts` (listing, sitemap, related
+// posts, category filter) picks it up automatically.
+posts.push(...aiAgentPosts, ...aiAgentPosts2, ...aiAgentPosts3, ...shopifyCroPosts, ...shopifyCroPosts2, ...shopifyCroPosts3, ...shopifyCroPosts4, ...webDevPosts, ...webDevPosts2, ...webDevPosts3, ...webDevPosts4, ...webDevPosts5, ...webDevPosts6);
 
 export function getPostBySlug(slug: string) {
   return posts.find((post) => post.slug === slug);

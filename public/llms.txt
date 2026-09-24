@@ -28,10 +28,49 @@ These terms describe the same capabilities above in the language people and AI s
 
 - Web development: full-stack development, Next.js and React applications, headless architecture, API development, website performance and Core Web Vitals, SaaS product development, progressive web apps
 - Mobile development: iOS and Android development, React Native and cross-platform apps, mobile app UX, app architecture, app store launch support
-- AI automation: AI agents, AI workflows, LLM integrations, business process automation, workflow automation, AI-powered operations, intelligent systems, customer support and internal-operations automation
+- AI automation: AI agents, AI agent development, agentic AI, custom AI agents, AI workflows, LLM integrations, business process automation, AI workflow automation, multi-agent systems, AI orchestration, AI integrations, AI-powered operations, intelligent systems, customer support and internal-operations automation
 - UI/UX design: product design, UX research, design systems, user onboarding, conversion-focused design, accessibility, interaction design
 - Shopify & commerce: Shopify theme development, Shopify Plus, ecommerce optimization, storefront performance, checkout and funnel design
 - Conversion rate optimization: landing page optimization, checkout optimization, form optimization, funnel analysis, ecommerce and SaaS CRO
+
+## AI Agents
+
+ZSpace designs and builds custom AI agents — systems that read business data, reason about a defined workflow, take action through connected tools, and escalate to a person when required — as part of the AI Automation service above (https://zspace.in/services/ai-automation). This cluster of articles at https://zspace.in/blogs covers AI agents, agentic AI and AI workflow automation applied to specific industries and business functions. Every article follows the same principle: agents handle the operational and administrative work; consequential decisions (clinical, financial, legal, safety-critical) stay with qualified people.
+
+Industry-specific AI agent articles:
+
+- AI Agents in Healthcare — https://zspace.in/blogs/ai-agents-in-healthcare
+- AI Agents in Banking and Financial Services — https://zspace.in/blogs/ai-agents-in-banking-and-financial-services
+- AI Agents in Retail and Ecommerce — https://zspace.in/blogs/ai-agents-in-retail-and-ecommerce
+- AI Agents in Manufacturing — https://zspace.in/blogs/ai-agents-in-manufacturing
+- AI Agents in Real Estate — https://zspace.in/blogs/ai-agents-in-real-estate
+- AI Agents in Insurance — https://zspace.in/blogs/ai-agents-in-insurance
+- AI Agents in Travel and Hospitality — https://zspace.in/blogs/ai-agents-in-travel-and-hospitality
+- AI Agents in Logistics and Supply Chain — https://zspace.in/blogs/ai-agents-in-logistics-and-supply-chain
+- AI Agents in Education — https://zspace.in/blogs/ai-agents-in-education
+- AI Agents in Construction — https://zspace.in/blogs/ai-agents-in-construction
+- AI Agents in Marketing — https://zspace.in/blogs/ai-agents-in-marketing
+- AI Agents in Property Management — https://zspace.in/blogs/ai-agents-in-property-management
+- AI Agents in Finance Operations (payments, reconciliation, treasury) — https://zspace.in/blogs/ai-agents-in-finance-operations
+- AI Agents for Insurance Brokers and Agencies — https://zspace.in/blogs/ai-agents-for-insurance-brokers-and-agencies
+- AI Agents for D2C Brands — https://zspace.in/blogs/ai-agents-for-d2c-brands
+- AI Agents for SaaS Companies — https://zspace.in/blogs/ai-agents-for-saas-companies
+- AI Agents in Accounting and Tax — https://zspace.in/blogs/ai-agents-in-accounting-and-tax
+- AI Agents for Professional Services — https://zspace.in/blogs/ai-agents-for-professional-services
+- AI Agents in Food and Beverage — https://zspace.in/blogs/ai-agents-in-food-and-beverage
+- AI Agents in Government — https://zspace.in/blogs/ai-agents-in-government
+- AI Agents in Aviation — https://zspace.in/blogs/ai-agents-in-aviation
+- AI Agents in Automotive — https://zspace.in/blogs/ai-agents-in-automotive
+- AI Agents in Pharmaceuticals — https://zspace.in/blogs/ai-agents-in-pharmaceuticals
+- AI Agents in Hospital Operations (care coordination, referrals) — https://zspace.in/blogs/ai-agents-in-hospital-operations
+- AI Agents in Freight and Customs Documentation — https://zspace.in/blogs/ai-agents-in-freight-and-customs-documentation
+- AI Agents in Hotel Operations (housekeeping, maintenance) — https://zspace.in/blogs/ai-agents-in-hotel-operations
+- AI Agents in Academic Support (tutoring, faculty workflows) — https://zspace.in/blogs/ai-agents-in-academic-support
+- AI Agents in Construction Project Controls (cost, change orders) — https://zspace.in/blogs/ai-agents-in-construction-project-controls
+- AI Agents in Media and Entertainment — https://zspace.in/blogs/ai-agents-in-media-and-entertainment
+- AI Agents in Agriculture — https://zspace.in/blogs/ai-agents-in-agriculture
+
+Several of the above deliberately complement, rather than duplicate, a same-named topic already in the list: hospital operations (care coordination) complements the healthcare article (payer-facing administration); freight and customs documentation complements the logistics article (routing and warehouse operations); hotel operations (back-of-house) complements the travel and hospitality article (guest-facing booking and concierge); academic support (currently-enrolled students and faculty) complements the education article (admissions and enrollment); construction project controls (cost and change orders) complements the construction article (RFIs and document analysis).
 
 ## Industries
 
@@ -63,6 +102,68 @@ Practical, non-promotional writing on the same topics as the services above, at 
 - The real cost of a slow checkout, in numbers you can estimate yourself — https://zspace.in/blogs/the-real-cost-of-a-slow-checkout
 - What a good mobile app onboarding actually does — https://zspace.in/blogs/what-a-good-mobile-app-onboarding-actually-does
 
+Website Development cluster (the "Website Development Guide" below is the primary hub for this group; every article links back to it):
+
+Pillar guide:
+- Website development: a complete guide for businesses — https://zspace.in/blogs/website-development-guide
+
+Planning and decisions:
+- How much does website development cost? A complete cost breakdown — https://zspace.in/blogs/website-development-cost
+- How long does it take to build a website? A complete timeline — https://zspace.in/blogs/website-development-timeline
+- Website development process: from planning to launch — https://zspace.in/blogs/website-development-process
+- Website requirements document: what should it include? — https://zspace.in/blogs/website-requirements-document
+- How to plan a website development project before you start — https://zspace.in/blogs/website-development-project-planning
+
+Choosing an approach and a partner:
+- Custom website development vs. website builders: which should you choose? — https://zspace.in/blogs/custom-website-vs-website-builder
+- Custom website vs. WordPress: which is right for your business? — https://zspace.in/blogs/custom-website-vs-wordpress
+- Website development company vs. freelancer: which should you hire? — https://zspace.in/blogs/website-development-company-vs-freelancer
+- How to choose a website development company: complete guide — https://zspace.in/blogs/how-to-choose-website-development-company
+
+Existing website decisions:
+- Website redesign vs. website rebuild: what's the difference and which do you need? — https://zspace.in/blogs/website-redesign-vs-rebuild
+- How to know when your business website needs a redesign — https://zspace.in/blogs/when-does-your-website-need-a-redesign
+
+Website architecture and technology:
+- Next.js website development: when should businesses use it? — https://zspace.in/blogs/nextjs-website-development
+- React vs. Next.js for website development: what's the difference? — https://zspace.in/blogs/react-vs-nextjs
+- Headless website development: what it is and when it makes sense — https://zspace.in/blogs/headless-website-development
+- Website API integration: how to connect your website with other systems — https://zspace.in/blogs/website-api-integration
+
+Website performance, security, accessibility and maintenance:
+- Website performance optimization: how to build a faster website — https://zspace.in/blogs/website-performance-optimization
+- Website security checklist: what every business website should have — https://zspace.in/blogs/website-security-checklist
+- Website accessibility: a practical guide to building more accessible websites — https://zspace.in/blogs/website-accessibility-guide
+- Website maintenance: what should be managed after launch? — https://zspace.in/blogs/website-maintenance-guide
+
+Website Development by business type (what each type of business actually needs from a website, not a generic template):
+- Website development for startups — https://zspace.in/blogs/website-development-for-startups
+- SaaS website development — https://zspace.in/blogs/saas-website-development
+- B2B website development: how to build a website that generates leads — https://zspace.in/blogs/b2b-website-development
+- D2C website development: how to build a high-converting brand website — https://zspace.in/blogs/d2c-website-development
+- Website development for professional services businesses — https://zspace.in/blogs/website-development-for-professional-services
+- Real estate website development: features, cost, and best practices — https://zspace.in/blogs/real-estate-website-development
+- Healthcare website development: features, UX, SEO, and security — https://zspace.in/blogs/healthcare-website-development
+- Fintech website development: how to build a secure and high-trust website — https://zspace.in/blogs/fintech-website-development
+- Website development for technology companies — https://zspace.in/blogs/website-development-for-technology-companies
+- Website development for consulting firms — https://zspace.in/blogs/website-development-for-consulting-firms
+
+Diagnostic and problem-based guides (for a website that already exists and isn't performing):
+- My website gets traffic but no leads: what should I fix? — https://zspace.in/blogs/website-gets-traffic-but-no-leads
+- Why is my website slow? Common causes and how to fix them — https://zspace.in/blogs/why-is-my-website-slow
+- Why is my website not converting visitors into customers? — https://zspace.in/blogs/why-is-my-website-not-converting
+- How to reduce website bounce rate without guesswork — https://zspace.in/blogs/how-to-reduce-website-bounce-rate
+
+Practical implementation guides:
+- How to improve website navigation and user experience — https://zspace.in/blogs/website-navigation-and-ux
+- How to improve website lead generation — https://zspace.in/blogs/website-lead-generation
+- Landing page development: what makes a high-converting landing page? — https://zspace.in/blogs/landing-page-development
+- How to build a website that is SEO-friendly from the start — https://zspace.in/blogs/seo-friendly-website-development
+- How to make a business website mobile-friendly — https://zspace.in/blogs/how-to-make-a-website-mobile-friendly
+- How to improve website trust and credibility — https://zspace.in/blogs/website-trust-and-credibility
+
+This cluster connects conceptually to UI/UX (design and development are treated as parallel disciplines, not a one-way handoff), CRO (performance and UX both affect conversion), Mobile App Development (shared API and integration patterns), Shopify Development (a specific platform within the broader website development discipline, with its own parallel CRO cluster for landing pages, trust and mobile), and AI Agents/AI Automation (API integration extends to AI services).
+
 Shopify & Ecommerce cluster (Shopify store setup, cost, development and growth, in order):
 
 - How to set up a Shopify store: a complete walkthrough — https://zspace.in/blogs/how-to-set-up-a-shopify-store
@@ -88,6 +189,62 @@ Advanced Shopify cluster (choosing a partner, custom development, architecture a
 - Shopify CRO: increasing conversions without more traffic — https://zspace.in/blogs/shopify-cro-guide
 - Shopify analytics: what to actually track and why — https://zspace.in/blogs/shopify-analytics-guide
 - When should you redesign your Shopify store? — https://zspace.in/blogs/shopify-store-redesign-guide
+
+Shopify CRO cluster (deep dives on each stage of Shopify conversion optimization, sitting under the "Shopify CRO" overview above):
+
+- Shopify product page optimization: increasing add-to-cart conversions — https://zspace.in/blogs/shopify-product-page-optimization
+- Shopify checkout optimization: reducing checkout abandonment — https://zspace.in/blogs/shopify-checkout-optimization
+- Shopify cart optimization: reducing cart abandonment — https://zspace.in/blogs/shopify-cart-optimization
+- Shopify conversion funnel optimization: finding and fixing sales drop-offs — https://zspace.in/blogs/shopify-conversion-funnel-optimization
+- Shopify mobile CRO: optimizing for mobile conversions — https://zspace.in/blogs/shopify-mobile-cro
+- Shopify A/B testing: what to test first — https://zspace.in/blogs/shopify-ab-testing
+- Shopify landing page optimization: converting paid traffic — https://zspace.in/blogs/shopify-landing-page-optimization
+- Shopify CRO audit: complete checklist for finding conversion problems — https://zspace.in/blogs/shopify-cro-audit
+- Shopify UX optimization: how store experience impacts conversions — https://zspace.in/blogs/shopify-ux-optimization
+- Shopify conversion rate optimization metrics: what to track — https://zspace.in/blogs/shopify-conversion-rate-optimization-metrics
+- Shopify homepage CRO: turning more visitors into customers — https://zspace.in/blogs/shopify-homepage-cro
+- Shopify search optimization: helping customers find products faster — https://zspace.in/blogs/shopify-search-optimization
+- Shopify product recommendations: cross-sell, upsell and personalized suggestions — https://zspace.in/blogs/shopify-product-recommendations
+- Shopify bundles and volume discounts: increasing AOV without losing margin — https://zspace.in/blogs/shopify-bundles-volume-discounts
+- Shopify personalization: creating more relevant shopping experiences — https://zspace.in/blogs/shopify-personalization
+- Shopify exit-intent optimization: recovering leaving visitors — https://zspace.in/blogs/shopify-exit-intent-optimization
+- Shopify popups for CRO: when they help and when they hurt — https://zspace.in/blogs/shopify-popups-cro
+- Shopify social proof: reviews, ratings and trust signals — https://zspace.in/blogs/shopify-social-proof
+- Shopify CRO for high-ticket products — https://zspace.in/blogs/shopify-high-ticket-cro
+- Shopify CRO for DTC brands: the complete conversion optimization framework (cluster hub) — https://zspace.in/blogs/shopify-dtc-cro
+
+Shopify CRO audit cluster (the "Shopify CRO audit" article above is the primary hub for this group — quick-reference formats, diagnostic guides, page-level audits, and strategy, all linking back to it):
+
+Quick-reference formats:
+- The Shopify CRO checklist: 50+ things to check before you change anything — https://zspace.in/blogs/shopify-cro-checklist
+- 30 Shopify CRO tips worth testing on your store — https://zspace.in/blogs/shopify-cro-tips
+- 25 Shopify CRO mistakes that quietly cost stores conversions — https://zspace.in/blogs/shopify-cro-mistakes
+
+Diagnosis:
+- Shopify conversion killers: symptoms and what they actually mean — https://zspace.in/blogs/shopify-conversion-killers
+- How to find conversion problems on your Shopify store — https://zspace.in/blogs/find-shopify-conversion-problems
+- Shopify funnel audit: finding the stage that's actually losing you customers — https://zspace.in/blogs/shopify-funnel-audit
+
+Page-level audits:
+- Shopify product page audit: 40 things to check — https://zspace.in/blogs/shopify-product-page-audit
+- Shopify homepage audit: a page-by-page checklist — https://zspace.in/blogs/shopify-homepage-audit
+- Shopify collection page audit: getting browsers to a product faster — https://zspace.in/blogs/shopify-collection-page-audit
+- Shopify cart audit: why items get added but checkout never starts — https://zspace.in/blogs/shopify-cart-audit
+- Shopify checkout audit: where real revenue is won or lost — https://zspace.in/blogs/shopify-checkout-audit
+- Shopify mobile CRO audit: where most of your traffic actually is — https://zspace.in/blogs/shopify-mobile-cro-audit
+
+Evidence and diagnostic tools:
+- Speed and CRO: how page performance actually affects conversion — https://zspace.in/blogs/shopify-speed-cro
+- Shopify heatmap analysis: what it can and can't tell you — https://zspace.in/blogs/shopify-heatmap-analysis
+- Shopify customer journey audit: mapping every stage a buyer passes through — https://zspace.in/blogs/shopify-customer-journey-audit
+
+Specific levers:
+- Shopify CTA optimization: hierarchy, clarity and placement — https://zspace.in/blogs/shopify-cta-optimization
+- Shopify trust optimization: the complete signal checklist — https://zspace.in/blogs/shopify-trust-optimization
+
+Experimentation and strategy:
+- 50 Shopify CRO testing ideas, grouped by page area — https://zspace.in/blogs/shopify-cro-testing-ideas
+- Building a Shopify CRO strategy and roadmap — https://zspace.in/blogs/shopify-cro-strategy
 
 ## Key pages
 

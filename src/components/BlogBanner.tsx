@@ -24,13 +24,124 @@ export type BlogBannerVariant =
   | "layers"
   | "salesfunnel"
   | "dashboard"
-  | "cycle";
+  | "cycle"
+  | "agenthealth"
+  | "agentbanking"
+  | "agentcommerce"
+  | "agentmanufacturing"
+  | "agentrealestate"
+  | "agentinsurance"
+  | "agenttravel"
+  | "agentlogistics"
+  | "agenteducation"
+  | "agentconstruction"
+  | "agentmarketing"
+  | "agentproperty"
+  | "agentfinance"
+  | "agentbrokerage"
+  | "agentd2c"
+  | "agentsaas"
+  | "agentaccounting"
+  | "agentprofessional"
+  | "agentfood"
+  | "agentgov"
+  | "agentaviation"
+  | "agentautomotive"
+  | "agentpharma"
+  | "agenthospital"
+  | "agentfreight"
+  | "agenthotel"
+  | "agentacademic"
+  | "agentprojectcontrols"
+  | "agentmedia"
+  | "agentagriculture"
+  | "pdphotspots"
+  | "checkoutflow"
+  | "cartdrawer"
+  | "mobileframe"
+  | "splittest"
+  | "auditgrid"
+  | "journeymap"
+  | "homepageanatomy"
+  | "recommap"
+  | "segmentsplit"
+  | "exitcapture"
+  | "trustmap"
+  | "considerationfunnel"
+  | "dtcframework"
+  | "tipsrows"
+  | "mistakeslist"
+  | "heatmapviz"
+  | "ctahierarchy"
+  | "testmatrix"
+  | "costbreakdown"
+  | "reqchecklist"
+  | "securitylock"
+  | "a11ycheck"
+  | "navmap"
+  | "bounceviz";
 
 const INK = "#0b0c0e";
 const LINE = "#d3d0c8";
 const SOFT = "#eceae4";
 const BLUE = "#2563eb";
 const ORANGE = "#c2410c";
+
+/**
+ * Shared "AI agent" hero graphic: a central agent node reading and acting on
+ * four connected systems, plus a small mark that gives each industry its own
+ * silhouette. Used by the ai-agents-in-[industry] article set.
+ */
+function AgentHub({
+  industry,
+  systems,
+  mark,
+}: {
+  industry: string;
+  systems: [string, string, string, string];
+  mark: React.ReactNode;
+}) {
+  const spokes = [
+    { x: 220, y: 110 },
+    { x: 580, y: 110 },
+    { x: 220, y: 340 },
+    { x: 580, y: 340 },
+  ];
+  return (
+    <Canvas>
+      <g stroke={LINE} strokeWidth="1.5">
+        {Array.from({ length: 5 }).map((_, r) =>
+          Array.from({ length: 12 }).map((_, c) => (
+            <circle key={`${r}-${c}`} cx={40 + c * 65} cy={40 + r * 90} r="1.6" fill={LINE} />
+          ))
+        )}
+      </g>
+      <rect x="36" y="34" width="150" height="34" rx="17" fill="none" stroke={INK} strokeWidth="1.5" />
+      <text x="111" y="56" textAnchor="middle" fontFamily="monospace" fontSize="13" fill={INK} letterSpacing="0.5">
+        {industry}
+      </text>
+
+      {spokes.map((s, i) => (
+        <line key={i} x1="400" y1="225" x2={s.x} y2={s.y} stroke={i % 2 === 0 ? BLUE : ORANGE} strokeWidth="2" opacity="0.55" />
+      ))}
+      {spokes.map((s, i) => (
+        <g key={i}>
+          <rect x={s.x - 78} y={s.y - 26} width="156" height="52" rx="10" fill="#ffffff" stroke={i % 2 === 0 ? BLUE : ORANGE} strokeWidth="2" />
+          <text x={s.x} y={s.y + 5} textAnchor="middle" fontFamily="monospace" fontSize="13" fill={INK}>
+            {systems[i]}
+          </text>
+        </g>
+      ))}
+
+      <circle cx="400" cy="225" r="58" fill={INK} />
+      <circle cx="400" cy="225" r="58" fill="none" stroke={SOFT} strokeWidth="1" opacity="0.4" />
+      <text x="400" y="219" textAnchor="middle" fontFamily="monospace" fontSize="12" fill="#faf9f6">
+        AI AGENT
+      </text>
+      <g transform="translate(384,228)">{mark}</g>
+    </Canvas>
+  );
+}
 
 function Canvas({ children }: { children: React.ReactNode }) {
   return (
@@ -47,6 +158,1132 @@ function Canvas({ children }: { children: React.ReactNode }) {
 }
 
 export function BlogBanner({ variant }: { variant: BlogBannerVariant }) {
+  if (variant === "agenthealth") {
+    return (
+      <AgentHub
+        industry="Healthcare"
+        systems={["Scheduling", "Records / EHR", "Prior Auth", "Care Team"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="3" strokeLinecap="round">
+            <line x1="-9" y1="0" x2="9" y2="0" />
+            <line x1="0" y1="-9" x2="0" y2="9" />
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agentbanking") {
+    return (
+      <AgentHub
+        industry="Banking"
+        systems={["KYC / Onboarding", "AML / Fraud", "Compliance", "Core Banking"]}
+        mark={
+          <text x="0" y="7" textAnchor="middle" fontFamily="monospace" fontSize="18" fontWeight="bold" fill="#faf9f6">
+            $
+          </text>
+        }
+      />
+    );
+  }
+
+  if (variant === "agentcommerce") {
+    return (
+      <AgentHub
+        industry="Retail & Ecommerce"
+        systems={["Catalog", "Inventory", "Checkout", "Customer Data"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="2.5" fill="none" strokeLinejoin="round">
+            <path d="M-10,-6 h20 l-3,13 h-14 z" />
+            <line x1="-10" y1="-6" x2="-13" y2="-12" strokeLinecap="round" />
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agentmanufacturing") {
+    return (
+      <AgentHub
+        industry="Manufacturing"
+        systems={["Sensors / IoT", "Maintenance", "Production Schedule", "Quality Control"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="2.5" fill="none">
+            <rect x="-9" y="-9" width="18" height="18" transform="rotate(45)" />
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agentrealestate") {
+    return (
+      <AgentHub
+        industry="Real Estate"
+        systems={["Leads", "Listings", "CRM", "Calendar"]}
+        mark={
+          <path d="M-10,2 L0,-9 L10,2 V11 H-10 Z" fill="none" stroke="#faf9f6" strokeWidth="2.5" strokeLinejoin="round" />
+        }
+      />
+    );
+  }
+
+  if (variant === "agentinsurance") {
+    return (
+      <AgentHub
+        industry="Insurance"
+        systems={["Claims Intake", "Documents", "Underwriting", "Fraud Signals"]}
+        mark={
+          <path d="M0,-10 L10,-5 V4 C10,10 5,13 0,15 C-5,13 -10,10 -10,4 V-5 Z" fill="none" stroke="#faf9f6" strokeWidth="2.2" strokeLinejoin="round" />
+        }
+      />
+    );
+  }
+
+  if (variant === "agenttravel") {
+    return (
+      <AgentHub
+        industry="Travel & Hospitality"
+        systems={["Preferences", "Inventory", "Booking Engine", "Concierge"]}
+        mark={
+          <path d="M-11,4 L11,-8 L4,5 L6,11 L1,8 L-4,11 L-3,3 Z" fill="#faf9f6" />
+        }
+      />
+    );
+  }
+
+  if (variant === "agentlogistics") {
+    return (
+      <AgentHub
+        industry="Logistics & Supply Chain"
+        systems={["Fleet", "Warehouse / WMS", "Routes", "Deliveries"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="2.3" fill="none" strokeLinejoin="round">
+            <rect x="-11" y="-6" width="14" height="10" />
+            <path d="M3,-2 h7 l4,5 v3 h-11 z" />
+            <circle cx="-6" cy="8" r="2.6" fill="#faf9f6" stroke="none" />
+            <circle cx="7" cy="8" r="2.6" fill="#faf9f6" stroke="none" />
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agenteducation") {
+    return (
+      <AgentHub
+        industry="Education"
+        systems={["Admissions", "Students", "LMS", "Campus Ops"]}
+        mark={
+          <path d="M-11,-3 L0,-9 L11,-3 L0,3 Z M-6,0 v7 c3,3 9,3 12,0 v-7" fill="none" stroke="#faf9f6" strokeWidth="2.2" strokeLinejoin="round" />
+        }
+      />
+    );
+  }
+
+  if (variant === "agentconstruction") {
+    return (
+      <AgentHub
+        industry="Construction & AEC"
+        systems={["Drawings", "Schedule", "Procurement", "Site Reports"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="2.3" fill="none" strokeLinejoin="round">
+            <path d="M-10,10 L-10,-4 L6,-10 L6,10" />
+            <line x1="-10" y1="2" x2="6" y2="2" />
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agentmarketing") {
+    return (
+      <AgentHub
+        industry="Marketing"
+        systems={["Campaigns", "Audience Segments", "Ad Platforms", "Attribution / CRM"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="2.3" fill="none">
+            <circle r="9" />
+            <circle r="5" />
+            <circle r="1.4" fill="#faf9f6" stroke="none" />
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agentproperty") {
+    return (
+      <AgentHub
+        industry="Property Management"
+        systems={["Tenants", "Maintenance", "Rent & Payments", "Leases"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="2.4" fill="none" strokeLinejoin="round">
+            <circle cx="-4" cy="-6" r="3.2" />
+            <path d="M-2,-3.5 L7,7 M4,4 L1,7 M7,4 L4,7" strokeLinecap="round" />
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agentfinance") {
+    return (
+      <AgentHub
+        industry="Finance Operations"
+        systems={["Invoices / AP-AR", "Bank Feeds", "Ledger / ERP", "Treasury"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="2.2" fill="none">
+            <rect x="-8" y="-10" width="16" height="20" rx="1.5" />
+            <line x1="-4.5" y1="-4" x2="4.5" y2="-4" />
+            <line x1="-4.5" y1="0" x2="4.5" y2="0" />
+            <line x1="-4.5" y1="4" x2="1.5" y2="4" />
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agentbrokerage") {
+    return (
+      <AgentHub
+        industry="Insurance Brokerage"
+        systems={["Carrier Quotes", "Policies", "Clients", "Renewals"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="2.3" fill="none">
+            <line x1="-9" y1="6" x2="-9" y2="-6" />
+            <line x1="-9" y1="-6" x2="-2" y2="-2" />
+            <line x1="9" y1="6" x2="9" y2="-6" />
+            <line x1="9" y1="-6" x2="2" y2="-2" />
+            <line x1="-9" y1="-6" x2="9" y2="-6" strokeDasharray="1.5 2.5" />
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agentd2c") {
+    return (
+      <AgentHub
+        industry="D2C Brands"
+        systems={["Orders", "Support & Returns", "Lifecycle Marketing", "Reviews / UGC"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="2.3" fill="none" strokeLinejoin="round">
+            <rect x="-8" y="-3" width="16" height="13" rx="1.5" />
+            <path d="M-8,-3 L0,3 L8,-3" />
+            <path d="M-4,-3 C-4,-9 4,-9 4,-3" />
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agentsaas") {
+    return (
+      <AgentHub
+        industry="SaaS"
+        systems={["Product Usage", "Support Tickets", "CRM / Renewals", "Billing"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="2.3" fill="none" strokeLinejoin="round" strokeLinecap="round">
+            <path d="M-4,-8 L-10,0 L-4,8" />
+            <path d="M4,-8 L10,0 L4,8" />
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agentaccounting") {
+    return (
+      <AgentHub
+        industry="Accounting & Tax"
+        systems={["Invoices", "Bank Reconciliation", "Ledger", "Tax Documents"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="2.1" fill="none">
+            <rect x="-7" y="-10" width="14" height="20" rx="1.5" />
+            {[-6, -2, 2, 6].map((y) => (
+              <line key={y} x1="-4" y1={y} x2="4" y2={y} />
+            ))}
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agentprofessional") {
+    return (
+      <AgentHub
+        industry="Professional Services"
+        systems={["Research", "Proposals", "Client Documents", "Knowledge Base"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="2.3" fill="none">
+            <circle cx="-2" cy="-2" r="6" />
+            <line x1="2.5" y1="2.5" x2="9" y2="9" strokeLinecap="round" />
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agentfood") {
+    return (
+      <AgentHub
+        industry="Food & Beverage"
+        systems={["Orders", "Reservations", "Inventory", "Delivery"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="2.2" strokeLinecap="round" fill="none">
+            <line x1="-7" y1="-9" x2="-7" y2="9" />
+            <line x1="-9" y1="-9" x2="-9" y2="-3" />
+            <line x1="-5" y1="-9" x2="-5" y2="-3" />
+            <path d="M6,-9 C2,-9 2,-2 6,-2 L6,9" />
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agentgov") {
+    return (
+      <AgentHub
+        industry="Government"
+        systems={["Citizen Requests", "Case Management", "Departments", "Documents"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="2.2" fill="none" strokeLinecap="round">
+            <line x1="-10" y1="8" x2="10" y2="8" />
+            <line x1="-8" y1="8" x2="-8" y2="-2" />
+            <line x1="-3" y1="8" x2="-3" y2="-2" />
+            <line x1="3" y1="8" x2="3" y2="-2" />
+            <line x1="8" y1="8" x2="8" y2="-2" />
+            <path d="M-10,-2 L0,-9 L10,-2 Z" />
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agentaviation") {
+    return (
+      <AgentHub
+        industry="Aviation"
+        systems={["Flight Status", "Bookings / Rebooking", "Baggage", "Crew & Ops"]}
+        mark={
+          <path
+            d="M0,-11 L2,-4 L11,-1 L11,2 L2,0 L1,7 L5,10 L5,12 L0,10.5 L-5,12 L-5,10 L-1,7 L-2,0 L-11,2 L-11,-1 L-2,-4 Z"
+            fill="#faf9f6"
+          />
+        }
+      />
+    );
+  }
+
+  if (variant === "agentautomotive") {
+    return (
+      <AgentHub
+        industry="Automotive"
+        systems={["Leads / CRM", "Inventory", "Service Scheduling", "Parts"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="2.2" fill="none" strokeLinejoin="round">
+            <path d="M-11,3 L-8,-3 L8,-3 L11,3 Z" />
+            <line x1="-11" y1="3" x2="11" y2="3" />
+            <circle cx="-6" cy="5" r="2" fill="#faf9f6" stroke="none" />
+            <circle cx="6" cy="5" r="2" fill="#faf9f6" stroke="none" />
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agentpharma") {
+    return (
+      <AgentHub
+        industry="Pharmaceuticals"
+        systems={["Scientific Literature", "Trials / EHR", "LIMS", "Regulatory Docs"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="2.2" fill="none" strokeLinejoin="round">
+            <path d="M-3,-10 L-3,-2 L-8,9 H8 L3,-2 L3,-10" />
+            <line x1="-5" y1="-10" x2="5" y2="-10" />
+            <line x1="-5.5" y1="3" x2="5.5" y2="3" />
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agenthospital") {
+    return (
+      <AgentHub
+        industry="Hospital Operations"
+        systems={["Referrals", "Bed & Appointments", "Care Teams", "Clinical Docs"]}
+        mark={
+          <path
+            d="M-11,0 L-6,0 L-4,-6 L-1,6 L1,-3 L3,0 L11,0"
+            fill="none"
+            stroke="#faf9f6"
+            strokeWidth="2.2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        }
+      />
+    );
+  }
+
+  if (variant === "agentfreight") {
+    return (
+      <AgentHub
+        industry="Freight & Customs"
+        systems={["Shipment Docs", "Customs Filing", "Carrier Booking", "Compliance Checks"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="2.1" fill="none" strokeLinejoin="round">
+            <rect x="-7" y="-10" width="14" height="20" rx="1.5" />
+            <path d="M-3.5,0 L-1,3 L4,-4" strokeLinecap="round" />
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agenthotel") {
+    return (
+      <AgentHub
+        industry="Hotel Operations"
+        systems={["Housekeeping", "Maintenance", "Room Status", "Multi-Property"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="2.2" fill="none" strokeLinejoin="round" strokeLinecap="round">
+            <circle cx="-6" cy="-6" r="2.2" fill="#faf9f6" stroke="none" />
+            <line x1="-4.5" y1="-4.5" x2="7" y2="7" />
+            <line x1="1" y1="1" x2="7" y2="-5" />
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agentacademic") {
+    return (
+      <AgentHub
+        industry="Academic Support"
+        systems={["Tutoring", "Faculty Support", "Course Materials", "Alumni & Career"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="2.1" fill="none" strokeLinejoin="round">
+            <path d="M0,-7 C-4,-9 -10,-9 -10,-7 L-10,6 C-10,4 -4,4 0,6 Z" />
+            <path d="M0,-7 C4,-9 10,-9 10,-7 L10,6 C10,4 4,4 0,6 Z" />
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agentprojectcontrols") {
+    return (
+      <AgentHub
+        industry="Construction Project Controls"
+        systems={["Cost Tracking", "Change Orders", "Risk Flags", "Budget / ERP"]}
+        mark={
+          <g stroke="#faf9f6" strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M-10,8 L-3,-2 L2,3 L10,-9" />
+            <path d="M4,-9 L10,-9 L10,-3" />
+          </g>
+        }
+      />
+    );
+  }
+
+  if (variant === "agentmedia") {
+    return (
+      <AgentHub
+        industry="Media & Entertainment"
+        systems={["Content Library", "Localization", "Rights & Licensing", "Distribution"]}
+        mark={<path d="M-6,-9 L8,0 L-6,9 Z" fill="#faf9f6" />}
+      />
+    );
+  }
+
+  if (variant === "agentagriculture") {
+    return (
+      <AgentHub
+        industry="Agriculture"
+        systems={["Sensors / IoT", "Weather", "Crop Health", "Supply Chain"]}
+        mark={
+          <path
+            d="M0,10 C0,10 -9,4 -9,-4 C-9,-10 -2,-11 0,-6 C2,-11 9,-10 9,-4 C9,4 0,10 0,10 Z M0,10 L0,-4"
+            fill="none"
+            stroke="#faf9f6"
+            strokeWidth="2.1"
+            strokeLinejoin="round"
+          />
+        }
+      />
+    );
+  }
+
+  if (variant === "pdphotspots") {
+    return (
+      <Canvas>
+        <rect x="230" y="70" width="340" height="310" rx="14" fill="#ffffff" stroke={INK} strokeWidth="2" />
+        <rect x="254" y="94" width="292" height="170" rx="8" fill="#f3f2ee" />
+        <rect x="254" y="278" width="180" height="16" rx="4" fill={INK} />
+        <rect x="254" y="302" width="120" height="12" rx="4" fill={LINE} />
+        <rect x="254" y="326" width="292" height="34" rx="17" fill={ORANGE} />
+        {[
+          { x: 254, y: 94, lx: 130, ly: 70 },
+          { x: 434, y: 286, lx: 620, ly: 200 },
+          { x: 254, y: 308, lx: 130, ly: 340 },
+          { x: 400, y: 343, lx: 620, ly: 343 },
+        ].map((p, i) => (
+          <g key={i}>
+            <line x1={p.x} y1={p.y} x2={p.lx} y2={p.ly} stroke={BLUE} strokeWidth="1.5" strokeDasharray="3 4" />
+            <circle cx={p.x} cy={p.y} r="6" fill={BLUE} />
+            <circle cx={p.lx} cy={p.ly} r="16" fill="none" stroke={BLUE} strokeWidth="1.5" />
+            <text x={p.lx} y={p.ly + 5} textAnchor="middle" fontFamily="monospace" fontSize="13" fill={BLUE}>
+              {i + 1}
+            </text>
+          </g>
+        ))}
+      </Canvas>
+    );
+  }
+
+  if (variant === "checkoutflow") {
+    const steps = ["Cart", "Info", "Shipping", "Payment"];
+    return (
+      <Canvas>
+        <line x1="120" y1="225" x2="680" y2="225" stroke={LINE} strokeWidth="3" />
+        {steps.map((label, i) => {
+          const x = 120 + i * 187;
+          const friction = i === 2;
+          return (
+            <g key={label}>
+              <circle cx={x} cy="225" r="24" fill={friction ? ORANGE : "#ffffff"} stroke={INK} strokeWidth="2.5" />
+              {friction ? (
+                <path d={`M${x - 7},${218} L${x + 7},${232} M${x + 7},${218} L${x - 7},${232}`} stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" />
+              ) : (
+                <circle cx={x} cy="225" r="6" fill={BLUE} />
+              )}
+              <rect x={x - 50} y="266" width="100" height="10" rx="4" fill={LINE} />
+              <text x={x} y="300" textAnchor="middle" fontFamily="monospace" fontSize="11" fill={INK}>
+                {label}
+              </text>
+            </g>
+          );
+        })}
+      </Canvas>
+    );
+  }
+
+  if (variant === "cartdrawer") {
+    return (
+      <Canvas>
+        <rect x="0" y="0" width="800" height="450" fill="#f3f2ee" opacity="0.5" />
+        <rect x="470" y="40" width="290" height="370" rx="0" fill="#ffffff" stroke={INK} strokeWidth="2" />
+        <rect x="498" y="66" width="90" height="16" rx="4" fill={INK} />
+        {[0, 1].map((i) => (
+          <g key={i}>
+            <rect x="498" y={110 + i * 84} width="64" height="64" rx="8" fill="#f3f2ee" />
+            <rect x="574" y={116 + i * 84} width="150" height="12" rx="4" fill={LINE} />
+            <rect x="574" y={136 + i * 84} width="70" height="10" rx="4" fill={LINE} />
+            <rect x="574" y={156 + i * 84} width="56" height="18" rx="4" fill="none" stroke={INK} strokeWidth="1.5" />
+          </g>
+        ))}
+        <line x1="498" y1="290" x2="732" y2="290" stroke={LINE} strokeWidth="2" />
+        <rect x="498" y="306" width="140" height="12" rx="4" fill={LINE} />
+        <rect x="498" y="330" width="234" height="8" rx="4" fill={ORANGE} opacity="0.3" />
+        <rect x="498" y="330" width="150" height="8" rx="4" fill={ORANGE} />
+        <text x="498" y="356" fontFamily="monospace" fontSize="10" fill={ORANGE}>
+          Free shipping at $75
+        </text>
+        <rect x="498" y="370" width="234" height="34" rx="17" fill={INK} />
+      </Canvas>
+    );
+  }
+
+  if (variant === "mobileframe") {
+    return (
+      <Canvas>
+        <rect x="300" y="40" width="200" height="370" rx="28" fill="#ffffff" stroke={INK} strokeWidth="2.5" />
+        <rect x="320" y="70" width="160" height="120" rx="8" fill="#f3f2ee" />
+        <rect x="320" y="200" width="100" height="14" rx="4" fill={LINE} />
+        <rect x="320" y="222" width="140" height="10" rx="4" fill={LINE} />
+        <rect x="320" y="242" width="70" height="10" rx="4" fill={LINE} />
+        <rect x="320" y="336" width="160" height="34" rx="17" fill={ORANGE} />
+        <circle cx="540" cy="120" r="26" fill="none" stroke={BLUE} strokeWidth="2.5" />
+        <text x="540" y="126" textAnchor="middle" fontFamily="monospace" fontSize="14" fill={BLUE}>
+          44
+        </text>
+        <line x1="504" y1="120" x2="478" y2="120" stroke={BLUE} strokeWidth="1.5" strokeDasharray="3 4" />
+        <circle cx="260" cy="353" r="16" fill="none" stroke={ORANGE} strokeWidth="2" />
+        <line x1="276" y1="353" x2="300" y2="353" stroke={ORANGE} strokeWidth="1.5" strokeDasharray="3 4" />
+      </Canvas>
+    );
+  }
+
+  if (variant === "splittest") {
+    return (
+      <Canvas>
+        <line x1="400" y1="70" x2="400" y2="380" stroke={LINE} strokeWidth="2" strokeDasharray="5 6" />
+        <rect x="130" y="90" width="230" height="270" rx="12" fill="#ffffff" stroke={INK} strokeWidth="2" />
+        <rect x="156" y="114" width="60" height="18" rx="9" fill={SOFT} />
+        <text x="186" y="127" textAnchor="middle" fontFamily="monospace" fontSize="11" fill={INK}>
+          A
+        </text>
+        <rect x="156" y="150" width="178" height="100" rx="6" fill="#f3f2ee" />
+        <rect x="156" y="264" width="178" height="28" rx="14" fill="none" stroke={INK} strokeWidth="2" />
+        <rect x="410" y="90" width="230" height="270" rx="12" fill="#ffffff" stroke={BLUE} strokeWidth="2.5" />
+        <rect x="436" y="114" width="60" height="18" rx="9" fill={BLUE} opacity="0.15" />
+        <text x="466" y="127" textAnchor="middle" fontFamily="monospace" fontSize="11" fill={BLUE}>
+          B
+        </text>
+        <rect x="436" y="150" width="178" height="100" rx="6" fill={BLUE} opacity="0.1" />
+        <rect x="436" y="264" width="178" height="28" rx="14" fill={ORANGE} />
+        <path d="M540,240 L560,256 L600,214" fill="none" stroke={ORANGE} strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
+      </Canvas>
+    );
+  }
+
+  if (variant === "auditgrid") {
+    const cats = ["UX", "Product", "Trust", "Cart", "Checkout", "Mobile", "Perf", "Data", "Test"];
+    return (
+      <Canvas>
+        {cats.map((label, i) => {
+          const col = i % 3;
+          const row = Math.floor(i / 3);
+          const flagged = i === 2 || i === 5;
+          const x = 220 + col * 130;
+          const y = 90 + row * 100;
+          return (
+            <g key={label}>
+              <rect x={x} y={y} width="104" height="80" rx="10" fill="#ffffff" stroke={flagged ? ORANGE : INK} strokeWidth={flagged ? 2.5 : 1.5} />
+              {flagged ? (
+                <circle cx={x + 84} cy={y + 16} r="7" fill={ORANGE} />
+              ) : (
+                <circle cx={x + 84} cy={y + 16} r="7" fill="none" stroke={BLUE} strokeWidth="2" />
+              )}
+              <text x={x + 16} y={y + 46} fontFamily="monospace" fontSize="12" fill={INK}>
+                {label}
+              </text>
+            </g>
+          );
+        })}
+      </Canvas>
+    );
+  }
+
+  if (variant === "journeymap") {
+    const points = [
+      { x: 120, y: 300 },
+      { x: 240, y: 190 },
+      { x: 360, y: 260 },
+      { x: 480, y: 150 },
+      { x: 600, y: 210 },
+      { x: 680, y: 130 },
+    ];
+    const path = points.map((p, i) => `${i === 0 ? "M" : "L"}${p.x},${p.y}`).join(" ");
+    return (
+      <Canvas>
+        <path d={path} fill="none" stroke={LINE} strokeWidth="2.5" />
+        {points.map((p, i) => (
+          <g key={i}>
+            <circle cx={p.x} cy={p.y} r={i === 0 || i === points.length - 1 ? 10 : 7} fill={i % 2 === 0 ? BLUE : ORANGE} />
+            {i === points.length - 1 && <circle cx={p.x} cy={p.y} r="16" fill="none" stroke={ORANGE} strokeWidth="1.5" />}
+          </g>
+        ))}
+      </Canvas>
+    );
+  }
+
+  if (variant === "homepageanatomy") {
+    return (
+      <Canvas>
+        <rect x="150" y="70" width="500" height="310" rx="10" fill="#ffffff" stroke={INK} strokeWidth="2" />
+        <rect x="150" y="70" width="500" height="40" rx="10" fill="#ffffff" stroke={INK} strokeWidth="2" />
+        <rect x="172" y="86" width="60" height="10" rx="3" fill={INK} />
+        {[0, 1, 2].map((i) => (
+          <rect key={i} x={410 + i * 70} y="86" width="46" height="10" rx="3" fill={LINE} />
+        ))}
+        <rect x="176" y="130" width="280" height="140" rx="6" fill="#f3f2ee" />
+        <rect x="196" y="156" width="180" height="16" rx="4" fill={INK} />
+        <rect x="196" y="180" width="140" height="10" rx="4" fill={LINE} />
+        <rect x="196" y="222" width="130" height="30" rx="15" fill={ORANGE} />
+        <rect x="472" y="130" width="150" height="140" rx="6" fill="none" stroke={LINE} strokeWidth="1.5" strokeDasharray="4 5" />
+        <rect x="176" y="288" width="140" height="70" rx="6" fill="none" stroke={INK} strokeWidth="1.5" />
+        <rect x="330" y="288" width="140" height="70" rx="6" fill="none" stroke={INK} strokeWidth="1.5" />
+        <rect x="484" y="288" width="140" height="70" rx="6" fill="none" stroke={INK} strokeWidth="1.5" />
+        {[203, 357, 511].map((x, i) => (
+          <g key={i}>
+            <circle cx={x} cy="336" r="14" fill="none" stroke={BLUE} strokeWidth="1.5" />
+            <text x={x} y="341" textAnchor="middle" fontFamily="monospace" fontSize="12" fill={BLUE}>
+              {i + 1}
+            </text>
+          </g>
+        ))}
+      </Canvas>
+    );
+  }
+
+  if (variant === "recommap") {
+    return (
+      <Canvas>
+        <rect x="330" y="130" width="140" height="190" rx="10" fill="#ffffff" stroke={INK} strokeWidth="2.5" />
+        <rect x="350" y="150" width="100" height="90" rx="6" fill="#f3f2ee" />
+        <rect x="350" y="252" width="80" height="12" rx="4" fill={INK} />
+        <rect x="350" y="272" width="100" height="26" rx="13" fill={INK} />
+        <g>
+          <rect x="120" y="90" width="130" height="80" rx="8" fill="#ffffff" stroke={BLUE} strokeWidth="2" />
+          <text x="185" y="118" textAnchor="middle" fontFamily="monospace" fontSize="11" fill={BLUE}>
+            Cross-sell
+          </text>
+          <rect x="140" y="132" width="90" height="8" rx="3" fill={LINE} />
+          <line x1="250" y1="150" x2="320" y2="190" stroke={BLUE} strokeWidth="1.5" strokeDasharray="3 4" />
+        </g>
+        <g>
+          <rect x="550" y="90" width="130" height="80" rx="8" fill="#ffffff" stroke={ORANGE} strokeWidth="2" />
+          <text x="615" y="118" textAnchor="middle" fontFamily="monospace" fontSize="11" fill={ORANGE}>
+            Upsell
+          </text>
+          <rect x="570" y="132" width="90" height="8" rx="3" fill={LINE} />
+          <line x1="550" y1="150" x2="480" y2="190" stroke={ORANGE} strokeWidth="1.5" strokeDasharray="3 4" />
+        </g>
+        <g>
+          <rect x="120" y="280" width="130" height="80" rx="8" fill="#ffffff" stroke={INK} strokeWidth="1.5" />
+          <text x="185" y="308" textAnchor="middle" fontFamily="monospace" fontSize="11" fill={INK}>
+            Alternative
+          </text>
+          <rect x="140" y="322" width="90" height="8" rx="3" fill={LINE} />
+          <line x1="250" y1="300" x2="320" y2="270" stroke={INK} strokeOpacity="0.5" strokeWidth="1.5" strokeDasharray="3 4" />
+        </g>
+        <g>
+          <rect x="550" y="280" width="130" height="80" rx="8" fill="#ffffff" stroke={INK} strokeWidth="1.5" />
+          <text x="615" y="308" textAnchor="middle" fontFamily="monospace" fontSize="11" fill={INK}>
+            Personalized
+          </text>
+          <rect x="570" y="322" width="90" height="8" rx="3" fill={LINE} />
+          <line x1="550" y1="300" x2="480" y2="270" stroke={INK} strokeOpacity="0.5" strokeWidth="1.5" strokeDasharray="3 4" />
+        </g>
+      </Canvas>
+    );
+  }
+
+  if (variant === "segmentsplit") {
+    return (
+      <Canvas>
+        <circle cx="150" cy="225" r="26" fill={INK} />
+        <circle cx="150" cy="216" r="9" fill="#faf9f6" />
+        <path d="M132,240 a18,16 0 0 1 36,0 Z" fill="#faf9f6" />
+        {[
+          { y: 110, label: "New visitor", color: BLUE },
+          { y: 225, label: "Returning", color: ORANGE },
+          { y: 340, label: "By geography", color: INK },
+        ].map((row, i) => (
+          <g key={i}>
+            <path d={`M176,225 C260,225 260,${row.y} 340,${row.y}`} fill="none" stroke={row.color} strokeWidth="1.5" strokeOpacity="0.6" />
+            <rect x="340" y={row.y - 22} width="180" height="44" rx="10" fill="#ffffff" stroke={row.color} strokeWidth="2" />
+            <text x="430" y={row.y + 5} textAnchor="middle" fontFamily="monospace" fontSize="12" fill={INK}>
+              {row.label}
+            </text>
+          </g>
+        ))}
+      </Canvas>
+    );
+  }
+
+  if (variant === "exitcapture") {
+    return (
+      <Canvas>
+        <rect x="0" y="0" width="800" height="450" fill="none" stroke={LINE} strokeWidth="3" />
+        <line x1="0" y1="40" x2="800" y2="40" stroke={ORANGE} strokeWidth="3" strokeDasharray="10 8" />
+        <path d="M420,220 L490,150" stroke={INK} strokeWidth="2" strokeLinecap="round" />
+        <path d="M420,220 L400,190 M420,220 L450,205" stroke={INK} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+        <path d="M420,220 L392,214 L398,242 Z" fill={INK} />
+        <rect x="250" y="190" width="300" height="150" rx="14" fill="#ffffff" stroke={INK} strokeWidth="2.5" />
+        <rect x="278" y="218" width="180" height="16" rx="4" fill={INK} />
+        <rect x="278" y="246" width="240" height="10" rx="4" fill={LINE} />
+        <rect x="278" y="264" width="200" height="10" rx="4" fill={LINE} />
+        <rect x="278" y="300" width="120" height="30" rx="15" fill={ORANGE} />
+      </Canvas>
+    );
+  }
+
+  if (variant === "trustmap") {
+    return (
+      <Canvas>
+        <rect x="230" y="80" width="340" height="290" rx="12" fill="#ffffff" stroke={INK} strokeWidth="2" />
+        <rect x="254" y="104" width="292" height="140" rx="8" fill="#f3f2ee" />
+        <rect x="254" y="260" width="160" height="14" rx="4" fill={INK} />
+        {Array.from({ length: 5 }).map((_, i) => (
+          <path
+            key={i}
+            d={`M${254 + i * 20},288 l3,7 l7,1 l-5,5 l1,7 l-6,-4 l-6,4 l1,-7 l-5,-5 l7,-1 z`}
+            fill={i < 4 ? ORANGE : "none"}
+            stroke={ORANGE}
+            strokeWidth="1"
+          />
+        ))}
+        <text x="360" y="298" fontFamily="monospace" fontSize="11" fill={INK}>
+          4.6 (128)
+        </text>
+        <rect x="254" y="316" width="292" height="34" rx="17" fill={INK} />
+        <g>
+          <circle cx="640" cy="130" r="26" fill="none" stroke={BLUE} strokeWidth="2" />
+          <path d="M628,130 l8,8 l16,-18" fill="none" stroke={BLUE} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+          <text x="640" y="172" textAnchor="middle" fontFamily="monospace" fontSize="9" fill={INK}>
+            Secure
+          </text>
+        </g>
+        <g>
+          <circle cx="640" cy="230" r="26" fill="none" stroke={ORANGE} strokeWidth="2" />
+          <path d="M628,224 h24 M628,236 h16" stroke={ORANGE} strokeWidth="2.5" strokeLinecap="round" />
+          <text x="640" y="272" textAnchor="middle" fontFamily="monospace" fontSize="9" fill={INK}>
+            Returns
+          </text>
+        </g>
+        <g>
+          <circle cx="640" cy="330" r="26" fill="none" stroke={INK} strokeWidth="2" />
+          <circle cx="640" cy="322" r="6" fill={INK} />
+          <path d="M628,340 a12,10 0 0 1 24,0 Z" fill={INK} />
+          <text x="640" y="372" textAnchor="middle" fontFamily="monospace" fontSize="9" fill={INK}>
+            Verified
+          </text>
+        </g>
+      </Canvas>
+    );
+  }
+
+  if (variant === "considerationfunnel") {
+    const stages = ["Discovery", "Education", "Evaluation", "Trust", "Intent", "Conversion"];
+    return (
+      <Canvas>
+        <line x1="90" y1="225" x2="710" y2="225" stroke={LINE} strokeWidth="2" />
+        {stages.map((label, i) => {
+          const x = 90 + i * 124;
+          const last = i === stages.length - 1;
+          return (
+            <g key={label}>
+              <circle cx={x} cy="225" r="18" fill={last ? ORANGE : "#ffffff"} stroke={last ? ORANGE : INK} strokeWidth="2.2" />
+              {last && <circle cx={x} cy="225" r="6" fill="#ffffff" />}
+              <text x={x} y="264" textAnchor="middle" fontFamily="monospace" fontSize="10.5" fill={INK}>
+                {label}
+              </text>
+            </g>
+          );
+        })}
+        <path d="M700,225 L710,225" stroke={ORANGE} strokeWidth="2" markerEnd="url(#cf-arrow)" />
+        <defs>
+          <marker id="cf-arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+            <path d="M0,0 L8,4 L0,8 Z" fill={ORANGE} />
+          </marker>
+        </defs>
+      </Canvas>
+    );
+  }
+
+  if (variant === "dtcframework") {
+    const n = 10;
+    return (
+      <Canvas>
+        <circle cx="400" cy="225" r="150" fill="none" stroke={LINE} strokeWidth="1.5" strokeDasharray="3 6" />
+        {Array.from({ length: n }).map((_, i) => {
+          const angle = (i / n) * Math.PI * 2 - Math.PI / 2;
+          const cx = 400 + Math.cos(angle) * 150;
+          const cy = 225 + Math.sin(angle) * 150;
+          const active = i === 0;
+          return (
+            <g key={i}>
+              <line x1="400" y1="225" x2={cx} y2={cy} stroke={i % 2 === 0 ? BLUE : ORANGE} strokeOpacity="0.25" strokeWidth="1.2" />
+              <circle cx={cx} cy={cy} r={active ? 12 : 8} fill={active ? ORANGE : "#ffffff"} stroke={i % 2 === 0 ? BLUE : ORANGE} strokeWidth="2" />
+            </g>
+          );
+        })}
+        <circle cx="400" cy="225" r="54" fill={INK} />
+        <text x="400" y="220" textAnchor="middle" fontFamily="monospace" fontSize="11" fill="#faf9f6">
+          DTC CRO
+        </text>
+        <text x="400" y="235" textAnchor="middle" fontFamily="monospace" fontSize="11" fill="#faf9f6">
+          FRAMEWORK
+        </text>
+      </Canvas>
+    );
+  }
+
+  if (variant === "tipsrows") {
+    return (
+      <Canvas>
+        {[0, 1, 2, 3].map((i) => (
+          <g key={i}>
+            <circle cx="140" cy={100 + i * 70} r="18" fill="none" stroke={i % 2 === 0 ? BLUE : ORANGE} strokeWidth="2" />
+            <text x="140" y={105 + i * 70} textAnchor="middle" fontFamily="monospace" fontSize="13" fill={INK}>
+              {i + 1}
+            </text>
+            <rect x="184" y={90 + i * 70} width={i === 2 ? 420 : 480} height="20" rx="5" fill={i === 0 ? INK : LINE} opacity={i === 0 ? 1 : 0.7} />
+          </g>
+        ))}
+      </Canvas>
+    );
+  }
+
+  if (variant === "mistakeslist") {
+    return (
+      <Canvas>
+        {[0, 1, 2, 3].map((i) => (
+          <g key={i}>
+            <circle cx="140" cy={100 + i * 70} r="16" fill="none" stroke={ORANGE} strokeWidth="2.2" />
+            <path d={`M133,${93 + i * 70} L147,${107 + i * 70} M147,${93 + i * 70} L133,${107 + i * 70}`} stroke={ORANGE} strokeWidth="2.2" strokeLinecap="round" />
+            <rect x="184" y={90 + i * 70} width={460 - i * 30} height="20" rx="5" fill={LINE} opacity="0.8" />
+          </g>
+        ))}
+      </Canvas>
+    );
+  }
+
+  if (variant === "heatmapviz") {
+    return (
+      <Canvas>
+        <rect x="180" y="70" width="440" height="310" rx="10" fill="#ffffff" stroke={INK} strokeWidth="2" />
+        <rect x="204" y="94" width="392" height="40" rx="6" fill="#f3f2ee" />
+        <rect x="204" y="150" width="180" height="90" rx="6" fill="#f3f2ee" />
+        <rect x="404" y="150" width="192" height="90" rx="6" fill="#f3f2ee" />
+        <rect x="204" y="256" width="392" height="34" rx="17" fill="#f3f2ee" />
+        {[
+          { cx: 260, cy: 275, r: 26, o: 0.55 },
+          { cx: 300, cy: 272, r: 16, o: 0.35 },
+          { cx: 470, cy: 190, r: 20, o: 0.3 },
+          { cx: 250, cy: 112, r: 14, o: 0.25 },
+          { cx: 340, cy: 195, r: 10, o: 0.2 },
+        ].map((p, i) => (
+          <circle key={i} cx={p.cx} cy={p.cy} r={p.r} fill={ORANGE} opacity={p.o} />
+        ))}
+        <circle cx="260" cy="275" r="8" fill={ORANGE} />
+      </Canvas>
+    );
+  }
+
+  if (variant === "ctahierarchy") {
+    return (
+      <Canvas>
+        <rect x="230" y="140" width="230" height="60" rx="30" fill={INK} />
+        <text x="345" y="176" textAnchor="middle" fontFamily="monospace" fontSize="15" fill="#faf9f6">
+          Add to Cart
+        </text>
+        <rect x="490" y="150" width="170" height="42" rx="21" fill="none" stroke={INK} strokeOpacity="0.35" strokeWidth="2" />
+        <text x="575" y="176" textAnchor="middle" fontFamily="monospace" fontSize="12" fill={INK} opacity="0.6">
+          Add to wishlist
+        </text>
+        <path d="M345,220 L345,260" stroke={ORANGE} strokeWidth="1.5" strokeDasharray="3 4" />
+        <text x="345" y="280" textAnchor="middle" fontFamily="monospace" fontSize="11" fill={ORANGE}>
+          primary
+        </text>
+        <path d="M575,210 L575,260" stroke={INK} strokeOpacity="0.4" strokeWidth="1.5" strokeDasharray="3 4" />
+        <text x="575" y="280" textAnchor="middle" fontFamily="monospace" fontSize="11" fill={INK} opacity="0.5">
+          secondary
+        </text>
+      </Canvas>
+    );
+  }
+
+  if (variant === "testmatrix") {
+    return (
+      <Canvas>
+        {[0, 1, 2].map((row) =>
+          [0, 1, 2].map((col) => {
+            const i = row * 3 + col;
+            const active = i === 4;
+            return (
+              <g key={i}>
+                <rect
+                  x={150 + col * 170}
+                  y={80 + row * 100}
+                  width="150"
+                  height="80"
+                  rx="10"
+                  fill="#ffffff"
+                  stroke={active ? ORANGE : INK}
+                  strokeWidth={active ? 2.5 : 1.3}
+                  strokeOpacity={active ? 1 : 0.4}
+                />
+                <rect x={168 + col * 170} y={98 + row * 100} width={active ? 90 : 70} height="8" rx="3" fill={active ? ORANGE : LINE} />
+                <rect x={168 + col * 170} y={116 + row * 100} width="60" height="6" rx="3" fill={LINE} />
+                <rect x={168 + col * 170} y={132 + row * 100} width="40" height="6" rx="3" fill={BLUE} opacity={active ? 1 : 0.4} />
+              </g>
+            );
+          })
+        )}
+      </Canvas>
+    );
+  }
+
+  if (variant === "costbreakdown") {
+    const bars = [
+      { w: 420, c: INK },
+      { w: 340, c: BLUE },
+      { w: 380, c: ORANGE },
+      { w: 260, c: BLUE },
+      { w: 300, c: ORANGE },
+      { w: 180, c: LINE },
+    ];
+    return (
+      <Canvas>
+        <line x1="150" y1="70" x2="150" y2="380" stroke={LINE} strokeWidth="2" />
+        {bars.map((b, i) => (
+          <g key={i}>
+            <rect x="150" y={90 + i * 48} width={b.w} height="22" rx="4" fill={b.c} opacity={b.c === LINE ? 0.8 : 1} />
+          </g>
+        ))}
+      </Canvas>
+    );
+  }
+
+  if (variant === "reqchecklist") {
+    return (
+      <Canvas>
+        <rect x="220" y="65" width="360" height="320" rx="10" fill="#ffffff" stroke={INK} strokeWidth="2" />
+        <rect x="220" y="65" width="360" height="46" rx="10" fill={INK} />
+        <rect x="246" y="85" width="140" height="10" rx="3" fill="#faf9f6" opacity="0.85" />
+        {[0, 1, 2, 3, 4].map((i) => (
+          <g key={i}>
+            <rect x="246" y={135 + i * 48} width="18" height="18" rx="4" fill="none" stroke={i < 3 ? ORANGE : INK} strokeWidth="2" strokeOpacity={i < 3 ? 1 : 0.3} />
+            {i < 3 && <path d={`M250,${144 + i * 48} L258,${152 + i * 48} L266,${136 + i * 48}`} stroke={ORANGE} strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />}
+            <rect x="280" y={139 + i * 48} width={i % 2 === 0 ? 250 : 190} height="10" rx="3" fill={LINE} opacity="0.8" />
+          </g>
+        ))}
+      </Canvas>
+    );
+  }
+
+  if (variant === "securitylock") {
+    const shields = [0, 1, 2, 3, 4, 5];
+    return (
+      <Canvas>
+        {shields.map((i) => {
+          const col = i % 3;
+          const row = Math.floor(i / 3);
+          const cx = 230 + col * 180;
+          const cy = 130 + row * 170;
+          const active = i < 4;
+          return (
+            <g key={i}>
+              <path
+                d={`M${cx},${cy - 46} L${cx + 40},${cy - 30} L${cx + 40},${cy + 6} C${cx + 40},${cy + 42} ${cx + 20},${cy + 62} ${cx},${cy + 70} C${cx - 20},${cy + 62} ${cx - 40},${cy + 42} ${cx - 40},${cy + 6} L${cx - 40},${cy - 30} Z`}
+                fill={active ? "#ffffff" : "none"}
+                stroke={active ? ORANGE : INK}
+                strokeWidth="2.2"
+                strokeOpacity={active ? 1 : 0.3}
+              />
+              <rect x={cx - 11} y={cy - 4} width="22" height="18" rx="3" fill="none" stroke={active ? ORANGE : INK} strokeWidth="2" strokeOpacity={active ? 1 : 0.3} />
+              <path d={`M${cx - 7},${cy - 4} L${cx - 7},${cy - 12} A7,7 0 0 1 ${cx + 7},${cy - 12} L${cx + 7},${cy - 4}`} fill="none" stroke={active ? ORANGE : INK} strokeWidth="2" strokeOpacity={active ? 1 : 0.3} />
+            </g>
+          );
+        })}
+      </Canvas>
+    );
+  }
+
+  if (variant === "a11ycheck") {
+    const cards = [
+      { label: "contrast" },
+      { label: "keyboard" },
+      { label: "structure" },
+      { label: "motion" },
+    ];
+    return (
+      <Canvas>
+        {cards.map((c, i) => {
+          const x = 110 + i * 155;
+          return (
+            <g key={i}>
+              <rect x={x} y="110" width="120" height="140" rx="12" fill="#ffffff" stroke={INK} strokeWidth="1.6" strokeOpacity="0.5" />
+              {c.label === "contrast" && (
+                <>
+                  <circle cx={x + 60} cy="165" r="26" fill={INK} />
+                  <path d={`M${x + 60},139 A26,26 0 0 1 ${x + 60},191 Z`} fill={SOFT} />
+                </>
+              )}
+              {c.label === "keyboard" && (
+                <g>
+                  <rect x={x + 24} y="150" width="72" height="34" rx="5" fill="none" stroke={BLUE} strokeWidth="2" />
+                  {[0, 1, 2, 3].map((k) => (
+                    <rect key={k} x={x + 30 + k * 16} y="158" width="10" height="10" rx="2" fill={BLUE} opacity="0.5" />
+                  ))}
+                </g>
+              )}
+              {c.label === "structure" && (
+                <g stroke={ORANGE} strokeWidth="2.2" fill="none">
+                  <line x1={x + 30} y1="145" x2={x + 90} y2="145" />
+                  <line x1={x + 30} y1="165" x2={x + 75} y2="165" />
+                  <line x1={x + 30} y1="185" x2={x + 90} y2="185" />
+                </g>
+              )}
+              {c.label === "motion" && (
+                <g fill="none" stroke={INK} strokeWidth="1.6" strokeOpacity="0.6">
+                  <path d={`M${x + 24},165 Q${x + 45},140 ${x + 60},165 Q${x + 75},190 ${x + 96},165`} />
+                </g>
+              )}
+              <rect x={x + 30} y="266" width="60" height="8" rx="4" fill={LINE} />
+              <circle cx={x + 60} cy="292" r="9" fill="none" stroke={ORANGE} strokeWidth="2" />
+              <path d={`M${x + 56},292 L${x + 59},296 L${x + 65},288`} stroke={ORANGE} strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+            </g>
+          );
+        })}
+      </Canvas>
+    );
+  }
+
+  if (variant === "navmap") {
+    const children = [
+      { x: 220, label: 0 },
+      { x: 400, label: 1 },
+      { x: 580, label: 2 },
+    ];
+    const grandchildren = [
+      [180, 260],
+      [360, 440],
+      [540, 620],
+    ];
+    return (
+      <Canvas>
+        <rect x="340" y="70" width="120" height="36" rx="8" fill={INK} />
+        {children.map((c, i) => (
+          <g key={i}>
+            <path d={`M400,106 L400,140 L${c.x},140 L${c.x},170`} stroke={LINE} strokeWidth="2" fill="none" />
+            <rect x={c.x - 55} y="170" width="110" height="32" rx="7" fill="none" stroke={i === 1 ? ORANGE : INK} strokeWidth="2" strokeOpacity={i === 1 ? 1 : 0.45} />
+          </g>
+        ))}
+        {grandchildren.map((pair, ci) =>
+          pair.map((gx, gi) => (
+            <g key={`${ci}-${gi}`}>
+              <path d={`M${children[ci].x},202 L${children[ci].x},225 L${gx},225 L${gx},248`} stroke={LINE} strokeWidth="1.6" fill="none" />
+              <rect x={gx - 38} y="248" width="76" height="24" rx="5" fill={SOFT} />
+            </g>
+          ))
+        )}
+      </Canvas>
+    );
+  }
+
+  if (variant === "bounceviz") {
+    return (
+      <Canvas>
+        <rect x="150" y="90" width="260" height="270" rx="12" fill="#ffffff" stroke={INK} strokeWidth="2" />
+        <rect x="150" y="90" width="260" height="40" rx="12" fill={INK} />
+        <rect x="176" y="150" width="200" height="16" rx="4" fill={LINE} />
+        <rect x="176" y="178" width="150" height="16" rx="4" fill={LINE} />
+        <rect x="176" y="206" width="180" height="16" rx="4" fill={LINE} />
+        <path d="M410,150 C460,150 480,150 520,150" stroke={ORANGE} strokeWidth="2.4" strokeDasharray="6 5" fill="none" />
+        <path d="M505,140 L522,150 L505,160" stroke={ORANGE} strokeWidth="2.4" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        {[
+          { cx: 560, cy: 210 },
+          { cx: 630, cy: 250 },
+          { cx: 650, cy: 320 },
+          { cx: 560, cy: 340 },
+        ].map((p, i) => (
+          <g key={i}>
+            <line x1="522" y1="155" x2={p.cx} y2={p.cy} stroke={LINE} strokeWidth="1.6" />
+            <circle cx={p.cx} cy={p.cy} r="9" fill="none" stroke={INK} strokeWidth="2" strokeOpacity="0.5" />
+          </g>
+        ))}
+        <circle cx="522" cy="155" r="6" fill={ORANGE} />
+      </Canvas>
+    );
+  }
+
   if (variant === "speed") {
     return (
       <Canvas>
