@@ -7,7 +7,8 @@ import { IndustriesGrid } from "@/components/home/IndustriesGrid";
 import { ProcessSection } from "@/components/home/ProcessSection";
 import { WhyZspace } from "@/components/home/WhyZspace";
 import { TechStack } from "@/components/home/TechStack";
-import { CTASection } from "@/components/CTASection";
+import { FaqSection } from "@/components/home/FaqSection";
+import { BuildCTA } from "@/components/home/BuildCTA";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -24,19 +25,11 @@ export default function HomePage() {
       <Principles />
       <ServicesShowcase />
       <IndustriesGrid />
-      <ProcessSection />
       <WhyZspace />
+      <ProcessSection />
       <TechStack />
-      <CTASection
-        title={
-          <>
-            Have a <span className="text-orange-bright">project</span> in
-            mind? Let&apos;s figure out the{" "}
-            <span className="text-blue-bright">right approach</span>.
-          </>
-        }
-        description="Tell us what you're building and where it's stuck. We'll respond with a clear read on scope, approach and next steps — no generic sales pitch."
-      />
+      <FaqSection />
+      <BuildCTA />
     </>
   );
 }
