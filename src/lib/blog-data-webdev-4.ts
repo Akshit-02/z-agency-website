@@ -436,7 +436,7 @@ export const webDevPosts4: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A high-converting D2C website holds brand experience and conversion fundamentals together, rather than treating them as competing priorities — genuine identity and storytelling, paired with fast product discovery, honest social proof and a frictionless path to purchase.",
+          "A high-converting D2C website holds brand experience and conversion fundamentals together, rather than treating them as competing priorities — genuine identity and storytelling, paired with fast product discovery, honest social proof and a frictionless path to purchase. For the design detail, see [[/blogs/ecommerce-product-page-design|ecommerce product page design]] and [[/blogs/d2c-repeat-purchase-ux|D2C repeat purchase UX]].",
         ],
       },
     ],

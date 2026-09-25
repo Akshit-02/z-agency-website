@@ -1015,7 +1015,7 @@ export const shopifyCroPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Collection pages don't get the attention product pages and checkout do, but they're where a browsing visitor either finds a relevant product quickly or gives up. Working filters, a deliberate sort order, and consistent presentation are the highest-leverage fixes most stores are missing.",
+          "Collection pages don't get the attention product pages and checkout do, but they're where a browsing visitor either finds a relevant product quickly or gives up. Working filters, a deliberate sort order, and consistent presentation are the highest-leverage fixes most stores are missing. For the design principles behind listing pages on any platform, see [[/blogs/ecommerce-category-page-design|ecommerce category page design]].",
         ],
       },
     ],

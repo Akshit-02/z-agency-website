@@ -15,7 +15,7 @@ import { ReadingProgress } from "@/components/ReadingProgress";
 import { TableOfContents } from "@/components/TableOfContents";
 import { IndustryGlyph } from "@/components/IndustryGlyph";
 import { Faq } from "@/components/Faq";
-import { renderInline, slugifyHeading } from "@/lib/inline-content";
+import { renderInline, slugifyHeading, stripInline } from "@/lib/inline-content";
 import { posts, getPostBySlug, getRelatedPosts } from "@/lib/blog-data";
 import { getServiceBySlug } from "@/lib/services-data";
 import { getIndustryBySlug } from "@/lib/industries-data";
@@ -93,8 +93,8 @@ export default async function BlogPostPage({
             "@type": "FAQPage",
             mainEntity: post.faqs.map((f) => ({
               "@type": "Question",
-              name: f.q,
-              acceptedAnswer: { "@type": "Answer", text: f.a },
+              name: stripInline(f.q),
+              acceptedAnswer: { "@type": "Answer", text: stripInline(f.a) },
             })),
           }}
         />
@@ -172,7 +172,7 @@ export default async function BlogPostPage({
                         {section.checklist.map((item) => (
                           <li key={item} className="flex gap-3 text-[1.02rem] leading-relaxed text-ink-soft">
                             <Check className="mt-1 h-4 w-4 shrink-0 text-blue" />
-                            {item}
+                            <span>{renderInline(item)}</span>
                           </li>
                         ))}
                       </ul>
@@ -233,7 +233,7 @@ export default async function BlogPostPage({
                           </p>
                           {section.cta.description && (
                             <p className="mt-1.5 max-w-[42ch] text-[0.95rem] leading-relaxed text-ink-soft">
-                              {section.cta.description}
+                              {renderInline(section.cta.description)}
                             </p>
                           )}
                         </div>

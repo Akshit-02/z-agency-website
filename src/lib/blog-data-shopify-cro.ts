@@ -241,7 +241,7 @@ export const shopifyCroPosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A product page converts better when it answers real customer questions at the moment they're deciding — clear pricing, credible trust signals, honest shipping information, and a CTA that's easy to find and act on. Start with your Shopify Analytics add-to-cart rate to confirm the product page is actually where you're losing customers, then work through the checklist against your specific store, testing changes where you have the traffic to validate them.",
+          "A product page converts better when it answers real customer questions at the moment they're deciding — clear pricing, credible trust signals, honest shipping information, and a CTA that's easy to find and act on. Start with your Shopify Analytics add-to-cart rate to confirm the product page is actually where you're losing customers, then work through the checklist against your specific store, testing changes where you have the traffic to validate them. For product page structure and design from first principles, see [[/blogs/ecommerce-product-page-design|ecommerce product page design]].",
         ],
       },
     ],
@@ -1473,7 +1473,7 @@ export const shopifyCroPosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Shopify UX and CRO overlap heavily but aren't the same discipline — UX asks whether a store is usable and clear, CRO asks whether a specific change measurably improves a specific outcome. Treat UX decisions with the same behavioral scrutiny as any CRO change, starting with information architecture and navigation, since nothing downstream matters if customers can't find what they came for.",
+          "Shopify UX and CRO overlap heavily but aren't the same discipline — UX asks whether a store is usable and clear, CRO asks whether a specific change measurably improves a specific outcome. Treat UX decisions with the same behavioral scrutiny as any CRO change, starting with information architecture and navigation, since nothing downstream matters if customers can't find what they came for. For the full shopping journey on any platform, see the [[/blogs/ecommerce-website-design|ecommerce website design guide]].",
         ],
       },
     ],

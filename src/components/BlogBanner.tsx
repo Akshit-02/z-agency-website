@@ -83,7 +83,32 @@ export type BlogBannerVariant =
   | "headlesscms"
   | "restgraphql"
   | "renderflow"
-  | "archstack";
+  | "archstack"
+  | "appprocess"
+  | "mobilearch"
+  | "apiflow"
+  | "testpyramid"
+  | "authflow"
+  | "datalifecycle"
+  | "pushflow"
+  | "offlinesync"
+  | "analyticsflow"
+  | "crashflow"
+  | "deeplinkflow"
+  | "searchflow"
+  | "paymentflow"
+  | "productdesignflow"
+  | "uxprocessflow"
+  | "iaflow"
+  | "designsystemflow"
+  | "d2cflow"
+  | "ecomflow"
+  | "pdpflow"
+  | "uxauditflow"
+  | "usabilityflow"
+  | "handoffflow"
+  | "plpflow"
+  | "shopifyflow";
 
 const INK = "#0b0c0e";
 const LINE = "#d3d0c8";
@@ -143,6 +168,84 @@ function AgentHub({
         AI AGENT
       </text>
       <g transform="translate(384,228)">{mark}</g>
+    </Canvas>
+  );
+}
+
+type FlowSpec = {
+  steps: string[];
+  highlight: number;
+  loop?: string;
+  branch?: { from: number; label: string };
+};
+
+const FLOWS: Partial<Record<BlogBannerVariant, FlowSpec>> = {
+  authflow: { steps: ["App", "Auth server", "Access +|refresh token", "Secure|storage", "API"], highlight: 1, loop: "refresh before expiry" },
+  datalifecycle: { steps: ["Collect", "Use", "Store", "Share", "Retain", "Delete"], highlight: 5, loop: "user access + deletion requests" },
+  pushflow: { steps: ["Your|backend", "APNs / FCM", "Device", "Notification", "App screen"], highlight: 1, branch: { from: 3, label: "tap → deep link" } },
+  offlinesync: { steps: ["UI", "Local|database", "Sync queue", "API", "Server data"], highlight: 1, loop: "pull changes + resolve conflicts" },
+  analyticsflow: { steps: ["User|action", "Event", "SDK", "Pipeline", "Dashboard"], highlight: 1, loop: "decisions → product changes" },
+  crashflow: { steps: ["Crash", "Report", "Triage", "Fix", "Release"], highlight: 2, loop: "monitor the new release" },
+  deeplinkflow: { steps: ["Link", "OS verifies|domain", "App", "Destination|screen"], highlight: 1, branch: { from: 1, label: "not installed → web / store" } },
+  searchflow: { steps: ["Query", "Index", "Rank", "Results"], highlight: 2, loop: "search analytics → tuning" },
+  paymentflow: { steps: ["App", "Your server", "Payment|provider", "Webhook", "Order|confirmed"], highlight: 2, branch: { from: 2, label: "failed → retry / recover" } },
+  productdesignflow: { steps: ["Research", "Define", "Ideate", "Prototype", "Test", "Build", "Iterate"], highlight: 4, loop: "measure, learn, repeat" },
+  uxprocessflow: { steps: ["Research", "IA", "Wireframe", "Prototype", "Test", "Refine"], highlight: 4, loop: "iterate until tasks succeed" },
+  iaflow: { steps: ["Content", "Categories", "Navigation", "Search", "User|journey"], highlight: 1 },
+  designsystemflow: { steps: ["Tokens", "Foundations", "Components", "Patterns", "Product UI"], highlight: 2 },
+  d2cflow: { steps: ["Brand", "Discovery", "Product", "Cart", "Checkout", "Retention"], highlight: 5, loop: "repeat purchase" },
+  ecomflow: { steps: ["Homepage", "Category", "Search /|filter", "Product", "Cart", "Checkout"], highlight: 3 },
+  pdpflow: { steps: ["Media", "Value|prop", "Price", "Variants", "Trust", "Details", "Purchase"], highlight: 6 },
+  uxauditflow: { steps: ["Discover", "Heuristic|review", "Analytics", "User|testing", "Prioritize", "Recommend"], highlight: 4 },
+  usabilityflow: { steps: ["Plan", "Recruit", "Tasks", "Observe", "Synthesize", "Fix"], highlight: 3, loop: "test again with 5 users" },
+  handoffflow: { steps: ["Design", "Specs +|tokens", "Review", "Build", "Design QA", "Release"], highlight: 2, loop: "shared components stay in sync" },
+  plpflow: { steps: ["Category", "Filters", "Sort", "Product|cards", "Load more", "Product|page"], highlight: 1 },
+  shopifyflow: { steps: ["Theme", "JSON|templates", "Sections", "Blocks", "App blocks", "Storefront"], highlight: 2 },
+};
+
+function LabeledFlow({ spec }: { spec: FlowSpec }) {
+  const n = spec.steps.length;
+  const gap = 22;
+  const total = 680;
+  const w = (total - gap * (n - 1)) / n;
+  const y = 180;
+  const h = 76;
+  return (
+    <Canvas>
+      {spec.steps.map((label, i) => {
+        const x = 60 + i * (w + gap);
+        const hot = i === spec.highlight;
+        const first = i === 0;
+        const lines = label.split("|");
+        return (
+          <g key={label}>
+            <rect x={x} y={y} width={w} height={h} rx="10" fill={first ? INK : "#ffffff"} stroke={hot ? ORANGE : INK} strokeWidth={hot ? 2.4 : 1.6} strokeOpacity={hot || first ? 1 : 0.45} />
+            {lines.map((ln, j) => (
+              <text key={j} x={x + w / 2} y={y + h / 2 + 5 + (j - (lines.length - 1) / 2) * 16} textAnchor="middle" fontFamily="monospace" fontSize="12" fill={first ? "#faf9f6" : hot ? ORANGE : INK}>
+                {ln}
+              </text>
+            ))}
+            {i < n - 1 && (
+              <g>
+                <line x1={x + w} y1={y + h / 2} x2={x + w + gap} y2={y + h / 2} stroke={LINE} strokeWidth="2" />
+                <path d={`M${x + w + gap - 7},${y + h / 2 - 5} L${x + w + gap},${y + h / 2} L${x + w + gap - 7},${y + h / 2 + 5}`} stroke={LINE} strokeWidth="2" fill="none" />
+              </g>
+            )}
+          </g>
+        );
+      })}
+      {spec.loop && (
+        <g>
+          <path d={`M${60 + total - w / 2},${y + h + 6} C${60 + total - w / 2},${y + h + 80} ${60 + w / 2},${y + h + 80} ${60 + w / 2},${y + h + 6}`} stroke={BLUE} strokeWidth="1.8" strokeDasharray="5 5" fill="none" />
+          <text x="400" y={y + h + 92} textAnchor="middle" fontFamily="monospace" fontSize="11" fill={BLUE}>{spec.loop}</text>
+        </g>
+      )}
+      {spec.branch && (
+        <g>
+          <line x1={60 + spec.branch.from * (w + gap) + w / 2} y1={y + h} x2={60 + spec.branch.from * (w + gap) + w / 2} y2={y + h + 50} stroke={BLUE} strokeWidth="1.8" strokeDasharray="5 5" />
+          <text x={60 + spec.branch.from * (w + gap) + w / 2} y={y + h + 70} textAnchor="middle" fontFamily="monospace" fontSize="11" fill={BLUE}>{spec.branch.label}</text>
+        </g>
+      )}
     </Canvas>
   );
 }
@@ -1226,6 +1329,104 @@ export function BlogBanner({ variant }: { variant: BlogBannerVariant }) {
             </g>
           );
         })}
+      </Canvas>
+    );
+  }
+
+  const flow = FLOWS[variant];
+  if (flow) return <LabeledFlow spec={flow} />;
+
+  if (variant === "appprocess") {
+    const steps = ["Idea", "Discovery", "UX", "Build", "QA", "Launch"];
+    return (
+      <Canvas>
+        <line x1="120" y1="225" x2="680" y2="225" stroke={LINE} strokeWidth="2" />
+        {steps.map((s, i) => {
+          const x = 120 + i * 112;
+          const last = i === steps.length - 1;
+          return (
+            <g key={s}>
+              <circle cx={x} cy="225" r="22" fill={last ? ORANGE : i === 0 ? INK : "#ffffff"} stroke={last ? ORANGE : INK} strokeWidth="2" />
+              <text x={x} y="230" textAnchor="middle" fontFamily="monospace" fontSize="12" fill={last || i === 0 ? "#faf9f6" : INK}>{i + 1}</text>
+              <text x={x} y={i % 2 ? 290 : 175} textAnchor="middle" fontFamily="monospace" fontSize="13" fill={INK}>{s}</text>
+            </g>
+          );
+        })}
+        <path d="M680,310 C680,370 120,370 120,310" stroke={BLUE} strokeWidth="1.8" strokeDasharray="5 5" fill="none" />
+        <text x="400" y="385" textAnchor="middle" fontFamily="monospace" fontSize="11" fill={BLUE}>maintain + iterate</text>
+      </Canvas>
+    );
+  }
+
+  if (variant === "mobilearch") {
+    const layers = ["UI layer", "Domain (optional)", "Data layer"];
+    return (
+      <Canvas>
+        <rect x="110" y="70" width="230" height="310" rx="34" fill="#ffffff" stroke={INK} strokeWidth="2.2" />
+        <rect x="190" y="84" width="70" height="8" rx="4" fill={SOFT} />
+        {layers.map((l, i) => (
+          <g key={l}>
+            <rect x="135" y={120 + i * 82} width="180" height="58" rx="10" fill={i === 0 ? INK : "#ffffff"} stroke={i === 1 ? INK : i === 2 ? BLUE : INK} strokeOpacity={i === 1 ? 0.4 : 1} strokeDasharray={i === 1 ? "5 4" : undefined} strokeWidth="1.8" />
+            <text x="225" y={154 + i * 82} textAnchor="middle" fontFamily="monospace" fontSize="12" fill={i === 0 ? "#faf9f6" : INK}>{l}</text>
+          </g>
+        ))}
+        <line x1="315" y1="313" x2="420" y2="313" stroke={ORANGE} strokeWidth="2.2" />
+        <rect x="420" y="288" width="100" height="50" rx="25" fill="none" stroke={ORANGE} strokeWidth="2.2" />
+        <text x="470" y="318" textAnchor="middle" fontFamily="monospace" fontSize="12" fill={ORANGE}>API</text>
+        <line x1="520" y1="313" x2="570" y2="313" stroke={LINE} strokeWidth="2" />
+        <rect x="570" y="258" width="140" height="50" rx="8" fill={INK} />
+        <text x="640" y="288" textAnchor="middle" fontFamily="monospace" fontSize="12" fill="#faf9f6">Backend</text>
+        <rect x="570" y="318" width="140" height="44" rx="8" fill="#ffffff" stroke={INK} strokeWidth="1.8" />
+        <text x="640" y="345" textAnchor="middle" fontFamily="monospace" fontSize="12" fill={INK}>Database</text>
+      </Canvas>
+    );
+  }
+
+  if (variant === "apiflow") {
+    const nodes = [
+      { x: 90, label: "Mobile app", fill: INK },
+      { x: 330, label: "Your API", fill: "#ffffff" },
+      { x: 570, label: "External service", fill: "#ffffff" },
+    ];
+    return (
+      <Canvas>
+        {nodes.map((n, i) => (
+          <g key={n.label}>
+            <rect x={n.x} y="185" width="150" height="70" rx="12" fill={n.fill} stroke={i === 1 ? ORANGE : INK} strokeWidth="2" strokeOpacity={i === 2 ? 0.5 : 1} />
+            <text x={n.x + 75} y="225" textAnchor="middle" fontFamily="monospace" fontSize="13" fill={i === 0 ? "#faf9f6" : INK}>{n.label}</text>
+          </g>
+        ))}
+        {[240, 480].map((x) => (
+          <g key={x}>
+            <path d={`M${x},205 L${x + 90},205`} stroke={BLUE} strokeWidth="2.2" />
+            <path d={`M${x + 78},198 L${x + 90},205 L${x + 78},212`} stroke={BLUE} strokeWidth="2.2" fill="none" />
+            <path d={`M${x + 90},235 L${x},235`} stroke={ORANGE} strokeWidth="2.2" strokeDasharray="5 4" />
+            <path d={`M${x + 12},228 L${x},235 L${x + 12},242`} stroke={ORANGE} strokeWidth="2.2" fill="none" />
+          </g>
+        ))}
+        <text x="285" y="160" textAnchor="middle" fontFamily="monospace" fontSize="11" fill={BLUE}>request + token</text>
+        <text x="285" y="290" textAnchor="middle" fontFamily="monospace" fontSize="11" fill={ORANGE}>response / error</text>
+        <text x="525" y="290" textAnchor="middle" fontFamily="monospace" fontSize="11" fill={ORANGE}>webhook</text>
+      </Canvas>
+    );
+  }
+
+  if (variant === "testpyramid") {
+    const tiers = [
+      { label: "E2E / device", w: 180, c: ORANGE },
+      { label: "Integration", w: 330, c: BLUE },
+      { label: "Unit tests", w: 480, c: INK },
+    ];
+    return (
+      <Canvas>
+        {tiers.map((t, i) => (
+          <g key={t.label}>
+            <rect x={400 - t.w / 2} y={100 + i * 85} width={t.w} height="68" rx="8" fill={i === 2 ? INK : "#ffffff"} stroke={t.c} strokeWidth="2.2" />
+            <text x="400" y={(i === 2 ? 128 : 139) + i * 85} textAnchor="middle" fontFamily="monospace" fontSize="13" fill={i === 2 ? "#faf9f6" : INK}>{t.label}</text>
+          </g>
+        ))}
+        <text x="520" y="139" fontFamily="monospace" fontSize="11" fill={INK} opacity="0.5">fewer, slower</text>
+        <text x="400" y="322" textAnchor="middle" fontFamily="monospace" fontSize="10" fill="#faf9f6" opacity="0.55">many, fast</text>
       </Canvas>
     );
   }

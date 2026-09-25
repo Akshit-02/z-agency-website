@@ -17,6 +17,14 @@ import { webDevPosts6 } from "./blog-data-webdev-6";
 import { webDevPosts7 } from "./blog-data-webdev-7";
 import { webDevPosts8 } from "./blog-data-webdev-8";
 import { webDevPosts9 } from "./blog-data-webdev-9";
+import { mobilePosts } from "./blog-data-mobile";
+import { mobilePosts2 } from "./blog-data-mobile-2";
+import { mobilePosts3 } from "./blog-data-mobile-3";
+import { mobilePosts4 } from "./blog-data-mobile-4";
+import { mobilePosts5 } from "./blog-data-mobile-5";
+import { designPosts } from "./blog-data-design";
+import { designPosts2 } from "./blog-data-design-2";
+import { designPosts3 } from "./blog-data-design-3";
 
 export type BlogSection = {
   heading: string;
@@ -232,30 +240,60 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "design-systems-for-teams-that-move-fast",
-    title: "Design systems are not for big companies. They are for fast-moving ones",
+    title: "Design Systems: What They Are and Why Products Need Them",
     excerpt:
-      "A design system sounds like corporate overhead, but for a small team shipping quickly, it is what keeps quality from slipping as you grow.",
+      "What a design system includes, from tokens and foundations to components and patterns, why growing products need one, and how to start small and keep it alive.",
     category: "UI/UX",
-    banner: "systems",
+    banner: "designsystemflow",
     date: "2025-12-15",
-    readingTime: "5 min read",
+    readingTime: "13 min read",
     relatedServiceSlugs: ["ui-ux-design", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "fintech"],
     faqs: [
       {
-        q: "Do we need a full design system, or just a style guide?",
-        a: "Most small teams need far less than \"a full design system\" implies — typography, spacing, color and a handful of core components is usually enough to start. Add structure only when you feel the actual pain of not having it.",
+        q: "What is a design system?",
+        a: "A shared set of design decisions, reusable components and guidelines, kept in sync between design and code, that teams use to build consistent interfaces efficiently.",
       },
       {
-        q: "How long does it take to build a design system?",
-        a: "A lightweight, genuinely useful version can come together alongside your first few product screens rather than as a separate project — it's extracted from real screens, not designed in isolation beforehand.",
+        q: "What is the difference between a design system, a style guide and a component library?",
+        a: "A style guide documents visual rules such as color and typography. A component library is a set of reusable UI components. A design system includes both, plus tokens, patterns, guidelines and the process for maintaining them.",
       },
       {
-        q: "Can a design system slow a small team down instead of helping?",
-        a: "Yes, if it's built as governance before it's needed. A system that requires approval to add a button is worse than no system at all. Keep it a shared resource, not a gate.",
+        q: "What are design tokens?",
+        a: "Named values for design decisions, such as colors, font sizes, spacing and radii, shared between design tools and code so a change in one place updates everywhere.",
+      },
+      {
+        q: "Does a small team need a design system?",
+        a: "A lightweight one, yes. Small teams benefit early because there's no time to redesign the same button repeatedly. It doesn't need governance processes or a dedicated team to start.",
+      },
+      {
+        q: "What should a first design system include?",
+        a: "Tokens for color, typography and spacing, plus core components such as buttons, inputs, cards and navigation, with their states documented.",
+      },
+      {
+        q: "How does a design system help developers?",
+        a: "Developers assemble screens from tested components instead of building each from scratch, which speeds up development and reduces inconsistencies and bugs.",
+      },
+      {
+        q: "How does a design system support accessibility?",
+        a: "Accessible color pairs, focus styles, target sizes and form patterns built into components are inherited by every screen that uses them.",
+      },
+      {
+        q: "Who should own a design system?",
+        a: "In small teams, the designers and developers who use it, with a clear owner for decisions. Larger organizations often have a dedicated team.",
+      },
+      {
+        q: "Should we use an existing design system like Material Design?",
+        a: "Existing systems and component libraries can be a good starting point, especially for internal tools. Most products still customize tokens and components to reflect their brand.",
       },
     ],
     content: [
+      {
+        heading: "Quick answer",
+        body: [
+          "A design system is a shared set of design decisions and reusable parts that keeps a product consistent as it grows. It typically has layers: design tokens (named values for color, type, spacing), foundations (grid, typography, iconography), components (buttons, inputs, cards) with all their states, patterns (how components combine for tasks like forms or checkout), and guidelines. Products need one once more than a few people build screens, because it makes design and development faster and the interface more consistent and accessible.",
+        ],
+      },
       {
         heading: "The myth of the design system as overhead",
         body: [
@@ -264,24 +302,94 @@ export const posts: BlogPost[] = [
         ],
       },
       {
+        heading: "The layers of a design system",
+        body: [],
+        visual: {
+          variant: "lines",
+          accent: "blue",
+          caption: "Tokens, foundations, components and patterns: each layer builds on the one below it.",
+        },
+        table: {
+          headers: ["Layer", "What it contains", "Example"],
+          rows: [
+            ["Tokens", "Named values for design decisions", "color-primary, space-4, radius-md"],
+            ["Foundations", "Typography, color, grid, spacing, iconography, motion", "Type scale, 8-point spacing, 12-column grid"],
+            ["Components", "Reusable UI elements with states", "Button, input, select, card, modal, tabs"],
+            ["Patterns", "Combinations of components for common tasks", "Forms, empty states, checkout, filters"],
+            ["Guidelines", "When and how to use each part", "Content tone, accessibility rules, do and don't examples"],
+          ],
+        },
+      },
+      {
+        heading: "Why products need one",
+        body: [
+          "Without a system, every new screen reinvents spacing, buttons and error messages, and small inconsistencies multiply. With one, designers focus on the problem rather than the pixels, developers reuse tested components, and users get a predictable interface. It's the practical application of the consistency principle in [[/blogs/ui-design-principles|UI design principles]].",
+        ],
+      },
+      {
         heading: "What a system needs to include, and what it does not",
         body: [
-          "A useful early design system covers typography, spacing, color and core components: buttons, forms, cards and navigation. It does not need governance processes or a dedicated team — it's the same discipline behind every [[/services/ui-ux-design|design system]] we build for clients.",
+          "A useful early design system covers typography, spacing, color and core components: buttons, forms, cards and navigation. It does not need governance processes or a dedicated team, and it's the same discipline behind every [[/services/ui-ux-design|design system]] we build for clients.",
         ],
         callout: {
           type: "note",
           text: "A design system doesn't need a name, a logo or a dedicated file structure to be useful. It just needs to be used consistently.",
         },
-        visual: {
-          variant: "lines",
-          accent: "blue",
-          caption: "Typography, spacing and component tokens — the smallest version of a system that's still worth having.",
+      },
+      {
+        heading: "Design tokens",
+        body: [
+          "Tokens turn decisions into shared variables. Instead of a hex value repeated across dozens of files, both design and code reference the same named token. Change it once and it changes everywhere, which also makes theming and brand updates far easier. Tokens are the bridge described in [[/blogs/design-handoff|design handoff]].",
+        ],
+      },
+      {
+        heading: "Components and their states",
+        body: [
+          "A component isn't finished until every state is defined: default, hover, focus, pressed, disabled, loading, error and success where relevant. Document the props or variants developers can use and when to use each. Undocumented states are where inconsistencies creep back in.",
+        ],
+        cta: {
+          title: "Is your interface growing inconsistent?",
+          description: "ZSpace designs and documents design systems that designers and developers actually use.",
         },
+      },
+      {
+        heading: "Accessibility built in",
+        body: [
+          "Encode accessibility at the system level: color pairs that meet WCAG contrast, visible focus styles, minimum target sizes, labeled form patterns and error messaging. Every screen built from the system inherits them. See [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]].",
+        ],
+      },
+      {
+        heading: "Starting small",
+        body: [],
+        checklist: [
+          "Audit existing screens for repeated elements and inconsistencies",
+          "Define tokens for color, typography, spacing and radius",
+          "Build the five to ten most-used components with all states",
+          "Mirror them in code as a shared component library",
+          "Document usage briefly, next to the components",
+          "Add components when a pattern repeats, not in advance",
+        ],
+      },
+      {
+        heading: "Keeping it alive",
+        body: [
+          "Systems decay when they're not used or not updated. Name an owner, make contributing easy, review new patterns before they multiply, and keep design and code versions in sync. A system that lives only in the design file isn't a system developers can rely on.",
+        ],
       },
       {
         heading: "Consistency compounds",
         body: [
           "Every screen built on a shared system takes less time than the one before it. Every screen built without one adds a small inconsistency that eventually has to be cleaned up. This is exactly the design-and-development coordination covered in the [[/blogs/website-development-process|website development process guide]].",
+        ],
+        cta: {
+          title: "Want a design system for your product?",
+          description: "Talk to ZSpace about [[/services/ui-ux-design|UI/UX design]] and a component system your team can extend.",
+        },
+      },
+      {
+        heading: "Conclusion",
+        body: [
+          "A design system is the product's shared language: tokens, foundations, components and patterns that make every new screen faster and more consistent. Start small with the most-used pieces, keep design and code in sync, and grow it as patterns repeat. For the wider process, see the [[/blogs/product-design-guide|product design guide]].",
         ],
       },
     ],
@@ -348,44 +456,74 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "what-a-good-mobile-app-onboarding-actually-does",
-    title: "What a good mobile app onboarding actually does",
+    title: "Mobile App Onboarding: How to Design an Onboarding Experience That Converts",
     excerpt:
-      "Onboarding is not a tutorial. It is the shortest path to a user experiencing the core value of your app for the first time.",
+      "Onboarding is not a tutorial. It's the shortest path to a new user experiencing your app's core value. How to reduce signup friction, time permission requests, personalize and measure activation.",
     category: "Mobile Apps",
     banner: "onboarding",
     date: "2025-11-10",
-    readingTime: "5 min read",
-    relatedServiceSlugs: ["mobile-app-development", "ui-ux-design"],
+    readingTime: "12 min read",
+    relatedServiceSlugs: ["mobile-app-development", "ui-ux-design", "cro-audit"],
     relatedIndustrySlugs: ["fintech", "education-edtech"],
     faqs: [
       {
+        q: "Does every app need onboarding?",
+        a: "Every app has a first-use experience, but not every app needs intro screens. If the core action is obvious, the best onboarding may be getting users straight to it with contextual hints along the way.",
+      },
+      {
         q: "How many onboarding screens is too many?",
-        a: "In our experience, the strongest onboarding flows rarely need more than a couple of screens before the user reaches something real. If you're designing a fourth or fifth intro screen, that's usually a sign the app's first action isn't clear enough yet.",
+        a: "Strong onboarding flows rarely need more than a couple of screens before the user reaches something real. If you're designing a fourth or fifth intro screen, that's usually a sign the app's first action isn't clear enough yet.",
       },
       {
         q: "Should onboarding include a tutorial?",
-        a: "Not upfront. Contextual explanations shown at the moment a feature becomes relevant consistently outperform a tutorial users are asked to remember before they've even opened the app.",
+        a: "Not upfront. Contextual explanations shown at the moment a feature becomes relevant tend to work better than a tutorial users are asked to remember before they've used the app.",
       },
       {
-        q: "How do you measure whether onboarding is actually working?",
+        q: "Should users sign up before using the app?",
+        a: "Only if the app can't deliver value without an account. Letting users explore first and asking for an account when it's needed, such as to save progress, usually reduces drop-off.",
+      },
+      {
+        q: "When should an app ask for notification or location permission?",
+        a: "When the user is about to use a feature that needs it, with a short explanation of the benefit. Asking for everything on first launch invites refusals that are hard to reverse.",
+      },
+      {
+        q: "What is progressive profiling?",
+        a: "Collecting user information gradually over time, when it's relevant, instead of asking for everything during signup.",
+      },
+      {
+        q: "Should onboarding be skippable?",
+        a: "Intro and education screens should be. Steps genuinely required for the app to work, such as choosing a language or accepting required terms, may not be.",
+      },
+      {
+        q: "What is activation?",
+        a: "The moment a new user first experiences the app's core value, such as sending a first message or completing a first booking. It's the most useful outcome for onboarding to optimize.",
+      },
+      {
+        q: "How do you measure whether onboarding is working?",
         a: "Track how many new users complete the one action that proves the app's value, not just how many finish the onboarding screens. Finishing an intro flow and experiencing real value are different things.",
       },
     ],
     content: [
       {
+        heading: "Quick answer",
+        body: [
+          "Good mobile app onboarding gets a new user to the app's core value as quickly as possible. Identify the single action that proves the app is worth keeping, remove every step between install and that action that isn't essential, defer signup and permission requests until they're needed, collect profile details gradually, explain features in context rather than upfront, let users skip anything optional, and measure success by activation, not by how many people finish the intro screens.",
+        ],
+      },
+      {
         heading: "Onboarding is not a feature tour",
         body: [
-          "Many onboarding flows try to explain every feature before letting a user do anything. Most users abandon before the explanation finishes.",
+          "Many onboarding flows try to explain every feature before letting a user do anything. Most users abandon before the explanation finishes. Onboarding is the first-use experience as a whole: what happens between opening the app for the first time and getting something real out of it.",
         ],
         callout: {
           type: "tip",
-          text: "If your onboarding needs a tutorial to explain itself, the product experience — not the tutorial — is what needs fixing.",
+          text: "If your onboarding needs a tutorial to explain itself, the product experience, not the tutorial, is what needs fixing.",
         },
       },
       {
         heading: "Design toward the first real moment of value",
         body: [
-          "Good onboarding identifies the single action that proves the app's {{b:core value}}, and removes every step between install and that action that is not strictly necessary.",
+          "Good onboarding identifies the single action that proves the app's {{b:core value}}, such as a first transfer, a first booked appointment or a first saved item, and removes every step between install and that action that is not strictly necessary.",
         ],
         visual: {
           variant: "phone",
@@ -394,9 +532,89 @@ export const posts: BlogPost[] = [
         },
       },
       {
+        heading: "Is onboarding necessary for your app?",
+        body: [
+          "If the core action is obvious, such as a camera or a calculator, intro screens mostly get in the way. Apps with a non-obvious value, setup requirements or regulated signup steps need more guidance. Decide based on what stands between a new user and the first moment of value.",
+        ],
+      },
+      {
+        heading: "Reduce signup friction",
+        body: [
+          "Ask for an account only when the app can't deliver value without one. Where it's needed, offer fast options such as Sign in with Apple, Google sign-in and passkeys, support password managers and autofill, and ask for the minimum. Every extra field is a place people leave.",
+        ],
+      },
+      {
+        heading: "Progressive profiling",
+        body: [
+          "Instead of a long signup form, gather details when they're relevant: preferences when personalizing a feed, an address at first checkout. Users give information more willingly when they can see why it's needed.",
+        ],
+      },
+      {
+        heading: "Ask for permissions in context",
+        body: [
+          "Both iOS and Android show system permission prompts that users often decline if they arrive without context. Ask for notifications, location or camera access when the user is about to use the feature that needs it, and explain the benefit first. A declined permission is much harder to recover than a delayed one.",
+        ],
+        cta: {
+          title: "Designing onboarding for a new app?",
+          description: "ZSpace designs first-use experiences around the moment of value, and builds them with the rest of the app.",
+        },
+      },
+      {
         heading: "Explain later, not first",
         body: [
-          "Contextual explanations, shown at the moment a feature becomes relevant, consistently outperform upfront tutorials that ask users to remember information before they need it. This is the same principle we apply designing [[/services/mobile-app-development|mobile app]] onboarding for clients.",
+          "Contextual explanations, shown at the moment a feature becomes relevant, tend to outperform upfront tutorials that ask users to remember information before they need it. Tooltips, empty states that suggest a first action, and short in-context prompts carry most of the education. This is the same principle we apply designing [[/services/mobile-app-development|mobile app]] onboarding for clients.",
+        ],
+      },
+      {
+        heading: "Personalization",
+        body: [
+          "A question or two about goals or interests can make the first screen relevant, but only if the answers visibly change what the user sees. Asking questions that don't affect the experience adds friction without benefit.",
+        ],
+      },
+      {
+        heading: "Skip options and the first-use experience",
+        body: [
+          "Let users skip intro and education screens. Design the first screen after onboarding carefully: an empty home screen with no suggested next step is where many new users stall. See [[/blogs/mobile-app-ux-design|mobile app UX design]] for designing empty and loading states.",
+        ],
+      },
+      {
+        heading: "Measure activation, not completion",
+        body: [
+          "Define the activation event, the action that proves value, and track the funnel from first open to that event. Look at where users drop off, test changes one at a time, and follow retention of activated users. It's the same measurement discipline behind ZSpace's [[/services/cro-audit|conversion optimization]] work.",
+        ],
+        table: {
+          headers: ["Metric", "What it tells you"],
+          rows: [
+            ["Onboarding step completion", "Which screens cause drop-off"],
+            ["Time to activation", "How long it takes to reach the core value"],
+            ["Activation rate", "Share of new users who reach the core value"],
+            ["Permission acceptance", "Whether prompts are well timed and explained"],
+            ["Early retention", "Whether activated users come back"],
+          ],
+        },
+      },
+      {
+        heading: "Onboarding checklist",
+        body: [],
+        checklist: [
+          "Activation event defined and tracked",
+          "Every step before activation justified or removed",
+          "Signup deferred until needed, with fast sign-in options",
+          "Profile details collected progressively",
+          "Permissions requested in context with a clear benefit",
+          "Education delivered in context, not as an upfront tour",
+          "Optional screens skippable",
+          "First screen after onboarding suggests a clear next action",
+        ],
+        cta: {
+          title: "Want your onboarding reviewed?",
+          description: "Talk to ZSpace about your first-use flow and where new users are dropping off before they reach value.",
+        },
+      },
+      {
+        heading: "Conclusion",
+        body: [
+          "Onboarding succeeds when new users reach real value quickly, not when they finish a tour. Remove friction, ask for accounts and permissions when they're needed, teach in context, and measure activation. For the broader design picture, see [[/blogs/mobile-app-ux-design|mobile app UX design]] and the [[/blogs/mobile-app-development-guide|mobile app development guide]].",
         ],
       },
     ],
@@ -726,7 +944,7 @@ export const posts: BlogPost[] = [
       {
         heading: "A practical way to decide",
         body: [
-          "List your actual requirements — not aspirational ones — and check each against what your shortlisted theme's settings and standard apps can do without workarounds. If everything checks out, customize the theme and move forward; you can always revisit the decision once real usage tells you more. If two or three requirements genuinely can't be met, that's your case for custom development, and it's worth having that conversation before development starts rather than mid-build.",
+          "List your actual requirements — not aspirational ones — and check each against what your shortlisted theme's settings and standard apps can do without workarounds. If everything checks out, customize the theme and move forward; you can always revisit the decision once real usage tells you more. If two or three requirements genuinely can't be met, that's your case for custom development, and it's worth having that conversation before development starts rather than mid-build. For designing within a theme's templates and sections, see [[/blogs/shopify-store-design|Shopify store design]].",
           "Once you know which path fits, the next real decision is which apps and integrations you'll need around it — our guide to [[/blogs/best-shopify-apps-for-new-stores|choosing the right first apps]] and our [[/blogs/shopify-app-integration-guide|integration guide]] both pick up from here.",
         ],
         cta: {
@@ -2183,7 +2401,7 @@ export const posts: BlogPost[] = [
 // The "AI agents in [industry]" cluster lives in its own module — merged in
 // here so every existing consumer of `posts` (listing, sitemap, related
 // posts, category filter) picks it up automatically.
-posts.push(...aiAgentPosts, ...aiAgentPosts2, ...aiAgentPosts3, ...shopifyCroPosts, ...shopifyCroPosts2, ...shopifyCroPosts3, ...shopifyCroPosts4, ...webDevPosts, ...webDevPosts2, ...webDevPosts3, ...webDevPosts4, ...webDevPosts5, ...webDevPosts6, ...webDevPosts7, ...webDevPosts8, ...webDevPosts9);
+posts.push(...aiAgentPosts, ...aiAgentPosts2, ...aiAgentPosts3, ...shopifyCroPosts, ...shopifyCroPosts2, ...shopifyCroPosts3, ...shopifyCroPosts4, ...webDevPosts, ...webDevPosts2, ...webDevPosts3, ...webDevPosts4, ...webDevPosts5, ...webDevPosts6, ...webDevPosts7, ...webDevPosts8, ...webDevPosts9, ...mobilePosts, ...mobilePosts2, ...mobilePosts3, ...mobilePosts4, ...mobilePosts5, ...designPosts, ...designPosts2, ...designPosts3);
 
 export function getPostBySlug(slug: string) {
   return posts.find((post) => post.slug === slug);

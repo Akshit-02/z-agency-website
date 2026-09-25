@@ -650,7 +650,7 @@ export const webDevPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Accessibility is a practical, well-documented discipline — semantic HTML, keyboard navigation, sufficient contrast and clear forms cover most of the real-world impact, and building these in from the start is consistently cheaper than retrofitting them after launch. Treat WCAG's POUR principles as the organizing framework, and verify any legal obligations separately for your specific jurisdiction and sector.",
+          "Accessibility is a practical, well-documented discipline — semantic HTML, keyboard navigation, sufficient contrast and clear forms cover most of the real-world impact, and building these in from the start is consistently cheaper than retrofitting them after launch. Treat WCAG's POUR principles as the organizing framework, and verify any legal obligations separately for your specific jurisdiction and sector. For the design decisions that come before implementation, see [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]].",
         ],
       },
     ],

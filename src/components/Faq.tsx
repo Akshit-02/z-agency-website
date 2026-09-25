@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { Plus } from "lucide-react";
+import { renderInline } from "@/lib/inline-content";
 
 export function Faq({ items }: { items: { q: string; a: string }[] }) {
   const [open, setOpen] = useState<number | null>(0);
@@ -38,7 +39,7 @@ export function Faq({ items }: { items: { q: string; a: string }[] }) {
                   className="overflow-hidden"
                 >
                   <p className="max-w-[64ch] pb-6 text-pretty text-[1rem] leading-relaxed text-ink-soft">
-                    {item.a}
+                    {renderInline(item.a)}
                   </p>
                 </motion.div>
               )}

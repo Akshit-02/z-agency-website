@@ -339,7 +339,7 @@ export const webDevPosts9: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Scalable architecture is mostly disciplined fundamentals: clear structure, reusable components, clean APIs, efficient data access, layered caching and good monitoring. Add complexity when real usage demands it, not in anticipation. For how this fits the wider build, see the [[/blogs/website-development-process|website development process]].",
+          "Scalable architecture is mostly disciplined fundamentals: clear structure, reusable components, clean APIs, efficient data access, layered caching and good monitoring. Add complexity when real usage demands it, not in anticipation. For how this fits the wider build, see the [[/blogs/website-development-process|website development process]]. For the mobile equivalent, see [[/blogs/scalable-mobile-app-development|how to build a mobile app that can scale]].",
         ],
       },
     ],

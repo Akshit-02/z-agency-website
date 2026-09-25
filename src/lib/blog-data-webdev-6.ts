@@ -107,7 +107,7 @@ export const webDevPosts6: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Good navigation starts with information architecture organized around real visitor thinking, expressed through clear menus, working search, and mobile-specific design — then validated against real user flows and accessibility requirements, not just a visual review of the menu bar.",
+          "Good navigation starts with information architecture organized around real visitor thinking, expressed through clear menus, working search, and mobile-specific design — then validated against real user flows and accessibility requirements, not just a visual review of the menu bar. For the structure underneath navigation, see [[/blogs/information-architecture|information architecture]].",
         ],
       },
     ],
@@ -325,7 +325,7 @@ export const webDevPosts6: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A high-converting landing page succeeds by staying deliberately narrow — one traffic source, one clear value proposition, one focused call to action, genuine proof, honest handling of real objections, and a form that respects the visitor's patience at exactly the moment intent is highest.",
+          "A high-converting landing page succeeds by staying deliberately narrow — one traffic source, one clear value proposition, one focused call to action, genuine proof, honest handling of real objections, and a form that respects the visitor's patience at exactly the moment intent is highest. To find what's holding an existing page back, a [[/blogs/ux-audit|UX audit]] is a good starting point.",
         ],
       },
     ],
@@ -669,7 +669,7 @@ export const webDevPosts6: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A genuinely mobile-friendly website goes beyond responsive layout — deliberate mobile navigation, readable typography, generous touch targets, mobile-appropriate forms, careful image and table handling, and performance tested on real devices, not just a technically responsive design that hasn't actually been used on a phone.",
+          "A genuinely mobile-friendly website goes beyond responsive layout — deliberate mobile navigation, readable typography, generous touch targets, mobile-appropriate forms, careful image and table handling, and performance tested on real devices, not just a technically responsive design that hasn't actually been used on a phone. For the design side, including breakpoints and responsive components, see [[/blogs/responsive-ui-design|responsive UI design]].",
         ],
       },
     ],

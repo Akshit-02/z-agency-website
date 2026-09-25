@@ -9,6 +9,7 @@ const TOKEN_RE = /\*\*(.+?)\*\*|\{\{(b|o):(.+?)\}\}|\[\[(.+?)\|(.+?)\]\]/g;
  *  {{b:text}}          -> blue accent
  *  {{o:text}}          -> orange accent
  *  [[/href|text]]      -> internal link
+ *  [[https://..|text]] -> external link, new tab
  */
 export function renderInline(text: string): ReactNode[] {
   const nodes: ReactNode[] = [];
@@ -36,6 +37,18 @@ export function renderInline(text: string): ReactNode[] {
           {accentText}
         </span>
       );
+    } else if (href !== undefined && /^https?:\/\//.test(href)) {
+      nodes.push(
+        <a
+          key={key++}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue underline decoration-line-strong underline-offset-2 transition-colors hover:decoration-blue"
+        >
+          {label}
+        </a>
+      );
     } else if (href !== undefined) {
       nodes.push(
         <Link
@@ -56,6 +69,11 @@ export function renderInline(text: string): ReactNode[] {
   }
 
   return nodes;
+}
+
+/** Plain-text version of inline markup, for metadata and structured data. */
+export function stripInline(text: string): string {
+  return text.replace(TOKEN_RE, (_m, bold, _accent, accentText, _href, label) => bold ?? accentText ?? label ?? "");
 }
 
 export function slugifyHeading(heading: string): string {

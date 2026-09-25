@@ -113,7 +113,7 @@ export const webDevPosts8: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "REST is simpler, cache-friendly and universally understood. GraphQL is more flexible for complex, fast-changing frontend needs, at the cost of caching and security work. Choose based on your clients and your team. For the broader architecture context, see [[/blogs/api-first-website-development|API-first website development]].",
+          "REST is simpler, cache-friendly and universally understood. GraphQL is more flexible for complex, fast-changing frontend needs, at the cost of caching and security work. Choose based on your clients and your team. For the broader architecture context, see [[/blogs/api-first-website-development|API-first website development]]. If you're designing an API for a mobile app, see [[/blogs/rest-api-vs-graphql-mobile-apps|REST vs GraphQL for mobile apps]], which covers network latency, offline use and old app versions.",
         ],
       },
     ],
@@ -478,7 +478,7 @@ export const webDevPosts8: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A dependable payment integration keeps card data with the gateway, sets amounts server-side, treats webhooks as the source of truth, and handles failures and refunds cleanly. If you sell primarily products online, a commerce platform may handle most of this for you; see ZSpace's [[/services/shopify-development|Shopify development]] work.",
+          "A dependable payment integration keeps card data with the gateway, sets amounts server-side, treats webhooks as the source of truth, and handles failures and refunds cleanly. If you sell primarily products online, a commerce platform may handle most of this for you; see ZSpace's [[/services/shopify-development|Shopify development]] work. For payments inside a mobile app, including in-app purchase rules, see [[/blogs/mobile-app-payments|mobile app payments]].",
         ],
       },
     ],
@@ -688,7 +688,7 @@ export const webDevPosts8: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "PWAs are an efficient way to deliver app-like experiences to everyone; native apps are the right tool when capability and store presence matter most. Whichever you choose, design the backend as a shared API, as described in [[/blogs/api-first-website-development|API-first development]], so you can add the other later.",
+          "PWAs are an efficient way to deliver app-like experiences to everyone; native apps are the right tool when capability and store presence matter most. Whichever you choose, design the backend as a shared API, as described in [[/blogs/api-first-website-development|API-first development]], so you can add the other later. If native wins, the [[/blogs/native-vs-cross-platform-app-development|native vs cross-platform guide]] covers the next decision, and the [[/blogs/mobile-app-development-guide|mobile app development guide]] covers the full build.",
         ],
       },
     ],
