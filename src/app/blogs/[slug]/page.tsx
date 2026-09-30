@@ -34,15 +34,24 @@ export async function generateMetadata({
   const post = getPostBySlug(slug);
   if (!post) return {};
 
+  const title = post.seoTitle ?? post.title;
+
   return {
-    title: post.title,
+    title,
     description: post.excerpt,
     alternates: { canonical: `/blogs/${post.slug}` },
     openGraph: {
       type: "article",
-      title: post.title,
+      title,
       description: post.excerpt,
       url: `${site.url}/blogs/${post.slug}`,
+      publishedTime: post.date,
+      modifiedTime: post.updated ?? post.date,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: post.excerpt,
     },
   };
 }
@@ -81,6 +90,8 @@ export default async function BlogPostPage({
           headline: post.title,
           description: post.excerpt,
           datePublished: post.date,
+          dateModified: post.updated ?? post.date,
+          image: `${site.url}/blogs/${post.slug}/opengraph-image`,
           author: { "@type": "Organization", name: site.name },
           publisher: { "@type": "Organization", name: site.name, url: site.url },
           mainEntityOfPage: `${site.url}/blogs/${post.slug}`,
@@ -133,7 +144,7 @@ export default async function BlogPostPage({
           <Reveal delay={0.2}>
             <div
               role="img"
-              aria-label={`Illustration for ${post.title}`}
+              aria-label={post.bannerAlt ?? `Illustration for ${post.title}`}
               className="mt-10 aspect-[16/9] w-full overflow-hidden rounded-2xl border border-line"
             >
               <BlogBanner variant={post.banner} />
@@ -206,6 +217,20 @@ export default async function BlogPostPage({
                           </tbody>
                         </table>
                       </div>
+                    )}
+
+                    {section.code && (
+                      <figure className="mt-6">
+                        <figcaption className="mb-2 text-[0.85rem] font-medium text-ink-soft">
+                          {section.code.label}
+                        </figcaption>
+                        <pre
+                          tabIndex={0}
+                          className="overflow-x-auto rounded-2xl border border-line bg-[#f3f2ee] p-5 text-[0.85rem] leading-relaxed text-ink focus-visible:outline-2 focus-visible:outline-blue"
+                        >
+                          <code>{section.code.text}</code>
+                        </pre>
+                      </figure>
                     )}
 
                     {section.visual && (

@@ -906,6 +906,7 @@ export const designPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Good user research answers specific questions with the right methods, from representative people, and turns findings into decisions the whole team understands. Start small with analytics and a few interviews, then make research a habit. Next, see [[/blogs/usability-testing|usability testing]] and the [[/blogs/product-design-guide|product design guide]].",
+          "For related guides, see [[/blogs/ecommerce-conversion-research|ecommerce conversion research]].",
         ],
       },
     ],

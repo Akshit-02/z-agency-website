@@ -25,6 +25,82 @@ import { mobilePosts5 } from "./blog-data-mobile-5";
 import { designPosts } from "./blog-data-design";
 import { designPosts2 } from "./blog-data-design-2";
 import { designPosts3 } from "./blog-data-design-3";
+import { designPosts4 } from "./blog-data-design-4";
+import { designPosts5 } from "./blog-data-design-5";
+import { designPosts6 } from "./blog-data-design-6";
+import { designPosts7 } from "./blog-data-design-7";
+import { growthPosts } from "./blog-data-growth";
+import { growthPosts2 } from "./blog-data-growth-2";
+import { commercePosts } from "./blog-data-commerce";
+import { commercePosts2 } from "./blog-data-commerce-2";
+import { commercePosts3 } from "./blog-data-commerce-3";
+import { commercePosts4 } from "./blog-data-commerce-4";
+import { commercePosts5 } from "./blog-data-commerce-5";
+import { commercePosts6 } from "./blog-data-commerce-6";
+import { commercePosts7 } from "./blog-data-commerce-7";
+import { commercePosts8 } from "./blog-data-commerce-8";
+import { commercePosts9 } from "./blog-data-commerce-9";
+import { commerceRewrites } from "./blog-data-commerce-rewrites";
+import { commercePosts10 } from "./blog-data-commerce-10";
+import { commercePosts11 } from "./blog-data-commerce-11";
+import { commercePosts12 } from "./blog-data-commerce-12";
+import { commercePosts13 } from "./blog-data-commerce-13";
+import { commercePosts14 } from "./blog-data-commerce-14";
+import { commercePosts15 } from "./blog-data-commerce-15";
+import { commercePosts16 } from "./blog-data-commerce-16";
+import { commercePosts17 } from "./blog-data-commerce-17";
+import { commercePosts18 } from "./blog-data-commerce-18";
+import { commercePosts19 } from "./blog-data-commerce-19";
+import { commercePosts20 } from "./blog-data-commerce-20";
+import { commercePosts21 } from "./blog-data-commerce-21";
+import { commerceRewrites2 } from "./blog-data-commerce-rewrites-2";
+import { commercePosts22 } from "./blog-data-commerce-22";
+import { commercePosts23 } from "./blog-data-commerce-23";
+import { commercePosts24 } from "./blog-data-commerce-24";
+import { commercePosts25 } from "./blog-data-commerce-25";
+import { commercePosts26 } from "./blog-data-commerce-26";
+import { commercePosts27 } from "./blog-data-commerce-27";
+import { commercePosts28 } from "./blog-data-commerce-28";
+import { commercePosts29 } from "./blog-data-commerce-29";
+import { commercePosts30 } from "./blog-data-commerce-30";
+import { commercePosts31 } from "./blog-data-commerce-31";
+import { commercePosts32 } from "./blog-data-commerce-32";
+import { commercePosts33 } from "./blog-data-commerce-33";
+import { commercePosts34 } from "./blog-data-commerce-34";
+import { commercePosts35 } from "./blog-data-commerce-35";
+import { commercePosts36 } from "./blog-data-commerce-36";
+import { commercePosts37 } from "./blog-data-commerce-37";
+import { commercePosts38 } from "./blog-data-commerce-38";
+import { commercePosts39 } from "./blog-data-commerce-39";
+import { commercePosts40 } from "./blog-data-commerce-40";
+import { commercePosts41 } from "./blog-data-commerce-41";
+import { commercePosts42 } from "./blog-data-commerce-42";
+import { commercePosts43 } from "./blog-data-commerce-43";
+import { commercePosts44 } from "./blog-data-commerce-44";
+import { commercePosts45 } from "./blog-data-commerce-45";
+import { commercePosts46 } from "./blog-data-commerce-46";
+import { commercePosts47 } from "./blog-data-commerce-47";
+import { commercePosts48 } from "./blog-data-commerce-48";
+import { commercePosts49 } from "./blog-data-commerce-49";
+import { commercePosts50 } from "./blog-data-commerce-50";
+import { commercePosts51 } from "./blog-data-commerce-51";
+import { commercePosts52 } from "./blog-data-commerce-52";
+import { commercePosts53 } from "./blog-data-commerce-53";
+import { commercePosts54 } from "./blog-data-commerce-54";
+import { commercePosts55 } from "./blog-data-commerce-55";
+import { commercePosts56 } from "./blog-data-commerce-56";
+import { commercePosts57 } from "./blog-data-commerce-57";
+import { commercePosts58 } from "./blog-data-commerce-58";
+import { commercePosts59 } from "./blog-data-commerce-59";
+import { commercePosts60 } from "./blog-data-commerce-60";
+import { commercePosts61 } from "./blog-data-commerce-61";
+import { commercePosts62 } from "./blog-data-commerce-62";
+import { commercePosts63 } from "./blog-data-commerce-63";
+import { commercePosts64 } from "./blog-data-commerce-64";
+import { commercePosts65 } from "./blog-data-commerce-65";
+import { commercePosts66 } from "./blog-data-commerce-66";
+import { commercePosts67 } from "./blog-data-commerce-67";
+import { commercePosts68 } from "./blog-data-commerce-68";
 
 export type BlogSection = {
   heading: string;
@@ -33,16 +109,24 @@ export type BlogSection = {
   callout?: { type: CalloutType; text: string };
   visual?: { variant: IndustryVisual; accent: IndustryAccent; caption: string };
   table?: { headers: string[]; rows: string[][] };
+  /** A short code example, rendered as a scrollable block. */
+  code?: { label: string; text: string };
   cta?: { title: string; description?: string };
 };
 
 export type BlogPost = {
   slug: string;
   title: string;
+  /** Shorter <title> / social title when the H1 is too long for search results. */
+  seoTitle?: string;
   excerpt: string;
   category: string;
   banner: BlogBannerVariant;
+  /** Describes what the banner diagram shows; used as its accessible name. */
+  bannerAlt?: string;
   date: string;
+  /** Set when an existing article is substantially revised. */
+  updated?: string;
   readingTime: string;
   relatedServiceSlugs: string[];
   relatedIndustrySlugs?: string[];
@@ -697,7 +781,7 @@ export const posts: BlogPost[] = [
       {
         heading: "When DIY setup stops being enough",
         body: [
-          "A stock theme, configured well, is genuinely sufficient for most new stores — this isn't a build vs. buy article arguing otherwise. It stops being enough when you need something the theme editor can't do: a non-standard product configurator, a checkout flow built around subscriptions or wholesale pricing, or integrations with inventory or fulfillment systems that don't have a plug-and-play app.",
+          "A stock theme, configured well, is genuinely sufficient for most new stores — this isn't a build vs. buy article arguing otherwise. It stops being enough when you need something the theme editor can't do: a non-standard product configurator, a checkout flow built around subscriptions or wholesale pricing, or integrations with inventory or fulfillment systems that don't have a plug-and-play app. For larger builds with custom design, integrations or migration, see [[/blogs/shopify-store-development|Shopify store development]].",
           "If you're trying to decide whether your store needs custom development or whether a well-configured theme will hold up, [[/blogs/shopify-theme-vs-custom-development|our comparison of theme-based and custom Shopify development]] lays out the actual decision points rather than a generic recommendation.",
         ],
         cta: {
@@ -783,7 +867,7 @@ export const posts: BlogPost[] = [
       {
         heading: "Where it's worth spending more, earlier",
         body: [
-          "The inverse is also true: some spend that feels premature actually pays for itself quickly. A [[/services/cro-audit|conversion audit]] before a major traffic push, or getting checkout and page speed right early, tends to cost less than fixing the same problems after months of lost conversions. Our [[/blogs/shopify-core-web-vitals-performance-guide|Shopify performance guide]] and [[/blogs/shopify-store-maintenance-checklist|maintenance checklist]] both cover costs that are cheaper to plan for than to react to.",
+          "The inverse is also true: some spend that feels premature actually pays for itself quickly. A [[/services/cro-audit|conversion audit]] before a major traffic push, or getting checkout and page speed right early, tends to cost less than fixing the same problems after months of lost conversions. Our [[/blogs/shopify-core-web-vitals-performance-guide|Shopify performance guide]] and [[/blogs/shopify-store-maintenance-checklist|maintenance checklist]] both cover costs that are cheaper to plan for than to react to. For what drives the cost of building a custom store, see [[/blogs/shopify-development-cost|Shopify development cost]].",
           "If you're weighing a migration from another platform, budget for it as its own project rather than folding it into a general redesign estimate — the work involved is different enough that it deserves its own scope.",
         ],
         callout: {
@@ -863,93 +947,11 @@ export const posts: BlogPost[] = [
       {
         heading: "What happens after the store goes live",
         body: [
-          "Launch is a milestone in the build, not the end of it. Real customer traffic finds edge cases that internal testing doesn't — an unusual shipping address format, a discount code combination, a device or browser that renders a section differently. A short stabilization window after launch, followed by a genuine [[/blogs/shopify-store-maintenance-checklist|maintenance routine]], is what keeps a store from needing another full rebuild in a year.",
+          "Launch is a milestone in the build, not the end of it. Real customer traffic finds edge cases that internal testing doesn't — an unusual shipping address format, a discount code combination, a device or browser that renders a section differently. A short stabilization window after launch, followed by a genuine [[/blogs/shopify-store-maintenance-checklist|maintenance routine]], is what keeps a store from needing another full rebuild in a year. For the complete picture, see [[/blogs/shopify-store-development|Shopify store development]].",
         ],
         cta: {
           title: "Planning a Shopify build and want a realistic scope and timeline?",
           description: "We'll walk through your requirements and tell you honestly what stage of build you actually need.",
-        },
-      },
-    ],
-  },
-  {
-    slug: "shopify-theme-vs-custom-development",
-    title: "Shopify theme customization vs. custom development",
-    excerpt:
-      "The theme-versus-custom decision gets framed as a budget question. It's really a requirements question, and getting it wrong is expensive in both directions.",
-    category: "Shopify & Ecommerce",
-    banner: "fork",
-    date: "2026-03-04",
-    readingTime: "8 min read",
-    relatedServiceSlugs: ["shopify-development", "ui-ux-design"],
-    relatedIndustrySlugs: ["fashion-apparel", "beauty-personal-care"],
-    faqs: [
-      {
-        q: "Is a custom Shopify theme always better than a customized existing one?",
-        a: "No. A well-chosen, well-customized existing theme covers the requirements of most stores at a fraction of the cost and timeline of a fully custom build. Custom development is a fit for specific unmet requirements, not a general upgrade.",
-      },
-      {
-        q: "When does a stock theme genuinely stop being enough?",
-        a: "When your requirements go beyond what theme settings and standard apps can achieve — a non-standard product configurator, a checkout experience the theme editor can't produce, or performance needs that a general-purpose theme's codebase can't meet at your scale.",
-      },
-      {
-        q: "What about headless commerce — is that the same as custom development?",
-        a: "Related but distinct. Headless approaches like Shopify's Hydrogen framework separate the storefront frontend from Shopify's backend entirely, which can offer more design and performance flexibility, but usually only for content-heavy or highly custom storefronts, since it removes the built-in benefits of Shopify's own theme rendering and typically costs meaningfully more to build and maintain.",
-      },
-      {
-        q: "Does a custom theme mean higher ongoing maintenance costs?",
-        a: "Generally yes, since app and Shopify platform updates that a popular theme's maintainers handle for you become your team's responsibility on a custom build. That's a real cost to weigh against the flexibility gained, not a reason to avoid custom development outright.",
-      },
-      {
-        q: "Can I start with a customized theme and move to custom development later?",
-        a: "Yes, and it's a common and reasonable path. Product, customer, and order data live independently of the theme, so starting with a customized theme to validate demand and moving to custom development once requirements are clearer is often lower-risk than building custom from day one.",
-      },
-    ],
-    content: [
-      {
-        heading: "This isn't really a budget question",
-        body: [
-          "It's tempting to frame theme customization versus custom development as 'cheap versus expensive.' That framing leads teams to either overspend on custom work they didn't need, or underspend on a theme that can't actually do what the business requires — and then patch the gap with apps that add cost and complexity anyway.",
-          "The more useful question is: does your store have a requirement that a well-chosen theme's built-in settings, sections, and standard app ecosystem genuinely cannot meet? If the honest answer is no, a customized theme is very likely the right call regardless of budget.",
-        ],
-      },
-      {
-        heading: "Where each approach actually wins",
-        body: [
-          "Neither option is universally better — they solve different problems well.",
-        ],
-        table: {
-          headers: ["Factor", "Customized theme", "Custom development"],
-          rows: [
-            ["Typical timeline", "Days to a few weeks", "Several weeks to a few months"],
-            ["Best for", "Standard ecommerce needs, fast validation, most D2C and retail stores", "Non-standard checkout logic, unique product configurators, high-scale performance needs"],
-            ["Ongoing maintenance", "Largely handled by theme and app updates", "Owned by your team or development partner"],
-            ["Design flexibility", "Bounded by the theme's section and settings architecture", "Effectively unlimited, at a proportional cost"],
-            ["Risk if requirements change", "Low — themes can be swapped or reconfigured", "Higher — custom code has to be maintained or migrated"],
-          ],
-        },
-      },
-      {
-        heading: "Where headless and Hydrogen fit in",
-        body: [
-          "Shopify's headless framework, Hydrogen, decouples the storefront from Shopify's backend, which can unlock near-complete design freedom and, in the right hands, excellent performance. It's a meaningfully bigger commitment than either a customized theme or a custom theme built within Shopify's standard rendering — the total cost of ownership is usually significantly higher because it requires ongoing frontend engineering, not just merchandising and content updates.",
-          "Headless is worth considering for content-heavy brands, multi-storefront setups, or businesses whose storefront needs are genuinely closer to a full web application than a product catalog. For most stores, a well-built theme — customized or fully custom within Shopify's own architecture — gets a comparable customer experience at a fraction of the ongoing cost.",
-        ],
-        visual: {
-          variant: "grid",
-          accent: "blue",
-          caption: "More design and architectural freedom generally comes with more ongoing engineering responsibility.",
-        },
-      },
-      {
-        heading: "A practical way to decide",
-        body: [
-          "List your actual requirements — not aspirational ones — and check each against what your shortlisted theme's settings and standard apps can do without workarounds. If everything checks out, customize the theme and move forward; you can always revisit the decision once real usage tells you more. If two or three requirements genuinely can't be met, that's your case for custom development, and it's worth having that conversation before development starts rather than mid-build. For designing within a theme's templates and sections, see [[/blogs/shopify-store-design|Shopify store design]].",
-          "Once you know which path fits, the next real decision is which apps and integrations you'll need around it — our guide to [[/blogs/best-shopify-apps-for-new-stores|choosing the right first apps]] and our [[/blogs/shopify-app-integration-guide|integration guide]] both pick up from here.",
-        ],
-        cta: {
-          title: "Not sure which side of this decision your store falls on?",
-          description: "We'll review your actual requirements and tell you honestly whether you need custom development or a well-built theme.",
         },
       },
     ],
@@ -1279,179 +1281,6 @@ export const posts: BlogPost[] = [
     ],
   },
   {
-    slug: "shopify-seo-guide",
-    title: "Shopify SEO: what actually affects rankings on a Shopify store",
-    excerpt:
-      "Shopify handles some SEO fundamentals automatically. It leaves the parts that matter most — structured data, content, and technical hygiene — to you.",
-    category: "Shopify & Ecommerce",
-    banner: "serp",
-    date: "2026-03-09",
-    readingTime: "9 min read",
-    relatedServiceSlugs: ["shopify-development", "cro-audit"],
-    relatedIndustrySlugs: ["fashion-apparel", "d2c-consumer"],
-    faqs: [
-      {
-        q: "Does Shopify handle SEO automatically?",
-        a: "Partially. Shopify automatically generates a sitemap, handles basic crawlability, and provides fields for titles and meta descriptions. It does not automatically write good product or collection content, ensure your structured data is complete, or prevent duplicate content issues — those remain your responsibility.",
-      },
-      {
-        q: "What's the most common Shopify SEO mistake?",
-        a: "Leaving default or thin product and collection descriptions in place, and assuming Shopify's automatically generated schema markup is complete. Many themes generate incomplete structured data by default, which is worth auditing rather than assuming is correct.",
-      },
-      {
-        q: "Do I need a separate SEO app for a Shopify store?",
-        a: "Not necessarily — Shopify's native fields cover meta titles, descriptions, and basic sitemap generation without an app. A dedicated SEO or schema app becomes more useful when you need bulk editing across a large catalog or need to fill structured data gaps your theme doesn't handle well.",
-      },
-      {
-        q: "How important is page speed for Shopify SEO specifically?",
-        a: "Meaningful — Core Web Vitals are a confirmed ranking factor, though content relevance and structured data typically matter more for whether you rank at all. Speed affects whether visitors stay long enough to convert once they've found you, which is a separate but related concern. Our [[/blogs/shopify-core-web-vitals-performance-guide|Shopify performance guide]] covers that side in depth.",
-      },
-      {
-        q: "What should I check first if my Shopify store isn't ranking?",
-        a: "Confirm your sitemap is submitted and being crawled in Google Search Console, check that your product and collection pages have unique, complete titles and descriptions rather than duplicated or default text, and verify your structured data with a rich results testing tool before assuming the problem is something more complex.",
-      },
-      {
-        q: "Does migrating to Shopify hurt SEO rankings?",
-        a: "It can, specifically if URL structures change without proper 301 redirects in place — this is the single most common cause of ranking loss after a platform migration. Our [[/blogs/migrating-to-shopify-guide|Shopify migration guide]] covers how to protect rankings through that process.",
-      },
-    ],
-    content: [
-      {
-        heading: "Shopify covers the floor, not the ceiling",
-        body: [
-          "Shopify automatically generates a sitemap, gives every page a clean, crawlable URL structure, and provides the fields you need to set titles and meta descriptions. This is a genuinely solid technical floor — it removes a category of problems that used to require a developer on older platforms.",
-          "What it doesn't do is write your product descriptions, guarantee your structured data is complete, or make sure your collection pages have enough real content to rank for anything competitive. Those are content and configuration decisions, and they're where most of the actual ranking difference between Shopify stores comes from.",
-        ],
-      },
-      {
-        heading: "Structured data is the most commonly incomplete piece",
-        body: [
-          "Structured data — schema markup describing your products, prices, availability, and reviews — is what allows search engines and AI-driven shopping experiences to understand your catalog accurately, and it's what powers rich results like star ratings or price ranges directly in search listings. Many Shopify themes generate this automatically, but often incompletely, missing fields like availability or review data that a manual audit would catch.",
-          "It's worth testing your actual product pages against a rich results testing tool rather than assuming your theme handles this correctly by default — auditing and correcting missing schema fields is one of the higher-leverage, lower-effort SEO fixes available on an existing Shopify store.",
-        ],
-        visual: {
-          variant: "grid",
-          accent: "blue",
-          caption: "Complete structured data is what turns a plain search listing into a rich result with ratings and pricing.",
-        },
-      },
-      {
-        heading: "Where content quality actually shows up",
-        body: [
-          "Product pages with only manufacturer copy or a one-line description rarely rank for anything beyond an exact product name search. Collection pages left with no introductory content at all are even more common, and they're one of the easiest places to add genuinely useful text — buying guidance, category context — without resorting to keyword stuffing.",
-          "None of this needs to read like it was written for a search engine. Content that actually helps a visitor decide what to buy tends to perform better on both fronts at once.",
-        ],
-        checklist: [
-          "Unique, complete titles and meta descriptions on every product and collection page — no defaults left in place",
-          "Structured data verified with a rich results testing tool, not assumed correct",
-          "Sitemap submitted and monitored in Google Search Console",
-          "Collection pages have genuine introductory content, not just a product grid",
-          "No orphaned or duplicate URLs left indexable after theme or catalog changes",
-        ],
-      },
-      {
-        heading: "Technical hygiene compounds with everything else",
-        body: [
-          "SEO on Shopify isn't separate from the rest of the store's health — a slow store loses visitors it did rank for, and a poorly planned migration can lose rankings a store spent years earning. Our [[/blogs/shopify-core-web-vitals-performance-guide|performance guide]] and [[/blogs/migrating-to-shopify-guide|migration guide]] both cover adjacent pieces of the same picture.",
-        ],
-        callout: {
-          type: "takeaway",
-          text: "Fix structured data and content gaps before chasing more advanced tactics. Most Shopify stores have more upside in the fundamentals than in anything exotic.",
-        },
-        cta: {
-          title: "Want a real audit of what's holding your Shopify SEO back?",
-          description: "We'll check your structured data, content, and technical setup — and tell you what's actually worth fixing first.",
-        },
-      },
-    ],
-  },
-  {
-    slug: "migrating-to-shopify-guide",
-    title: "Migrating to Shopify without losing your rankings or your data",
-    excerpt:
-      "Most migration problems aren't technical failures — they're missing redirects and untransferred metadata. Here is how to move to Shopify without those mistakes.",
-    category: "Shopify & Ecommerce",
-    banner: "migrate",
-    date: "2026-03-10",
-    readingTime: "9 min read",
-    relatedServiceSlugs: ["shopify-development", "cro-audit"],
-    relatedIndustrySlugs: ["ecommerce", "fashion-apparel"],
-    faqs: [
-      {
-        q: "How long does a migration to Shopify take?",
-        a: "A small store using Shopify's built-in import tools can move in a couple of weeks. A store with significant order history, custom integrations, subscriptions, or meaningful organic search traffic to protect typically needs a longer, more deliberate migration — often measured in weeks to a couple of months depending on complexity.",
-      },
-      {
-        q: "What's the single most common migration mistake?",
-        a: "Skipping or incompletely mapping 301 redirects from old URLs to their new Shopify equivalents. Since URL structures differ between platforms — WooCommerce's /product/ versus Shopify's /products/, for example — every changed URL without a redirect is a dead link that loses both traffic and any ranking it had built up.",
-      },
-      {
-        q: "Will my SEO rankings survive a move to Shopify?",
-        a: "They can, if redirects and metadata are handled properly — but rankings are genuinely at risk if they're not. Meta titles, descriptions, and alt text often need to be manually verified after migration rather than assumed to have transferred correctly, since import tools don't always carry every field over cleanly.",
-      },
-      {
-        q: "Should I migrate everything at once, or in stages?",
-        a: "For most stores, migrating in a single coordinated cutover — with the new store fully tested before the old one goes offline — reduces the window where redirects, tracking, or inventory could be out of sync. Very large or complex catalogs sometimes warrant a phased approach, but that adds its own coordination overhead.",
-      },
-      {
-        q: "What should I test before removing the old store?",
-        a: "Manually check a meaningful sample of your highest-traffic old URLs to confirm they redirect correctly, verify checkout and payment processing end to end on the new store, and confirm your sitemap is submitted in Google Search Console before considering the migration complete.",
-      },
-      {
-        q: "Do I need to monitor anything after the migration is done?",
-        a: "Yes — checking Search Console weekly for the first month after launch is a common and sensible practice, since redirect or indexing issues often surface gradually rather than immediately. A migration isn't finished at cutover; it's finished once that monitoring period confirms nothing was lost.",
-      },
-    ],
-    content: [
-      {
-        heading: "Migrations rarely fail on the technical transfer itself",
-        body: [
-          "Moving products, customers, and order history to Shopify is the well-solved part of a migration — Shopify's own import tools and established migration processes handle this reliably for most stores. Where migrations actually go wrong is in what surrounds that transfer: URL structure changes, metadata that doesn't carry over cleanly, and a lack of verification before the old store is taken offline.",
-          "This matters because the cost of getting it wrong is specific and measurable — a mishandled redirect strategy can cost a meaningful share of organic traffic in the first month after launch, and that traffic doesn't always come back once lost.",
-        ],
-      },
-      {
-        heading: "Redirects: the step that protects everything else",
-        body: [
-          "Every platform structures product and category URLs differently — a WooCommerce store's /product/[slug] doesn't exist on Shopify, where the equivalent lives at /products/[slug]. Every URL that changes as part of the migration needs a 301 redirect mapped to its new equivalent, or it becomes a dead link that loses both the visitor and any ranking value the old URL had built.",
-          "This mapping should be built before cutover, not discovered afterward — export a full list of your existing indexed URLs, map each to its Shopify equivalent, and treat any URL without a clear mapping as a problem to solve before launch, not after.",
-        ],
-        visual: {
-          variant: "funnel",
-          accent: "orange",
-          caption: "Unmapped redirects are the most common and most avoidable cause of post-migration traffic loss.",
-        },
-      },
-      {
-        heading: "What else needs to be manually verified, not assumed",
-        body: [
-          "Meta titles, descriptions, and image alt text are frequently lost or altered during platform migrations, even when the underlying import tool claims full data transfer. It's worth manually checking a representative sample of your highest-traffic pages rather than trusting that everything moved over intact.",
-        ],
-        checklist: [
-          "Full 301 redirect map from old URLs to Shopify equivalents, tested on a sample of high-traffic pages",
-          "Meta titles, descriptions, and image alt text verified — not assumed to have transferred",
-          "New Shopify sitemap submitted to Google Search Console before or immediately after launch",
-          "Checkout and payment processing fully tested on the new store before the old one goes offline",
-          "Structured data checked against a rich results testing tool on key page templates",
-        ],
-      },
-      {
-        heading: "After launch, the work isn't quite done",
-        body: [
-          "Monitoring Search Console weekly for the first month catches redirect gaps or indexing issues that don't always surface immediately. Once the migration has stabilized, the store moves into the same ongoing rhythm as any other Shopify store — our [[/blogs/shopify-store-maintenance-checklist|maintenance checklist]] and [[/blogs/shopify-seo-guide|Shopify SEO guide]] both pick up from exactly this point.",
-        ],
-        callout: {
-          type: "tip",
-          text: "Treat the redirect map as the deliverable that determines whether the migration succeeds — everything else about the new store can be iterated on after launch.",
-        },
-        cta: {
-          title: "Migrating an existing store to Shopify?",
-          description: "We handle Shopify migrations end to end, including redirect mapping and post-launch SEO monitoring, so you don't lose what you've already earned.",
-        },
-      },
-    ],
-  },
-  {
     slug: "how-to-choose-a-shopify-development-agency",
     title: "How to choose a Shopify development agency",
     excerpt:
@@ -1545,196 +1374,12 @@ export const posts: BlogPost[] = [
       {
         heading: "Process maturity predicts outcomes better than portfolio visuals",
         body: [
-          "A polished portfolio proves an agency can design a good-looking store. It doesn't prove they can run a project well — defined discovery, technical scoping, staged reviews, QA checklists, and post-launch monitoring are what actually determine whether a project stays on budget and on timeline.",
+          "A polished portfolio proves an agency can design a good-looking store. It doesn't prove they can run a project well — defined discovery, technical scoping, staged reviews, QA checklists, and post-launch monitoring are what actually determine whether a project stays on budget and on timeline. For other platforms, see [[/blogs/how-to-choose-ecommerce-development-company|how to choose an ecommerce development company]]; for team models, see [[/blogs/shopify-agency-vs-in-house|Shopify agency vs in-house]].",
           "This is worth asking about directly: not \"what have you built\" but \"walk me through how a project with you actually runs, week by week.\" The answer tells you more than any case study will.",
         ],
         cta: {
           title: "Looking for a Shopify development partner?",
           description: "We'll walk you through exactly how our process works — discovery, build, QA, and what happens after launch — before you commit to anything.",
-        },
-      },
-    ],
-  },
-  {
-    slug: "shopify-developer-vs-agency-which-to-hire",
-    title: "Shopify developer vs. agency: which should you hire?",
-    excerpt:
-      "Freelancer, developer, or agency — the right choice depends on what your project actually needs, not on your budget alone.",
-    category: "Shopify & Ecommerce",
-    banner: "compare3",
-    date: "2026-04-02",
-    readingTime: "8 min read",
-    relatedServiceSlugs: ["shopify-development"],
-    relatedIndustrySlugs: ["d2c-consumer", "fashion-apparel"],
-    faqs: [
-      {
-        q: "Is a freelancer always cheaper than an agency?",
-        a: "Usually, for a single well-defined task — but the comparison changes once a project needs design, QA, integrations, and ongoing support together, since a freelancer typically covers one of those well rather than all of them.",
-      },
-      {
-        q: "Can one developer handle an entire Shopify build alone?",
-        a: "For a straightforward store on a customized theme, yes. Once a project needs design work, multiple integrations, and dedicated QA at the same time, a single developer either has to cover all of it personally or bring in others — at which point you're effectively assembling your own small team.",
-      },
-      {
-        q: "When does a growing store outgrow a freelancer?",
-        a: "Typically when the store needs simultaneous work across design, development, and integrations, or when the business needs guaranteed availability rather than whoever happens to be free that week.",
-      },
-      {
-        q: "Does hiring an agency guarantee a better result than a freelancer?",
-        a: "No — an agency with a weak process can underperform a strong freelancer, and vice versa. The structural advantage of an agency is redundancy and range, not an automatic quality guarantee. Our [[/blogs/how-to-choose-a-shopify-development-agency|agency selection guide]] covers how to actually vet that.",
-      },
-      {
-        q: "What's the main risk of relying on a single freelancer long-term?",
-        a: "Continuity — if they become unavailable, get busy with other clients, or move on, your store's institutional knowledge often leaves with them, and there's rarely documentation or a second person who can pick it up quickly.",
-      },
-      {
-        q: "How do I know if my business is ready for an agency instead of a freelancer?",
-        a: "If your roadmap requires ongoing, parallel workstreams — a redesign, new integrations, and CRO work happening around the same time, for example — that's usually the signal an agency's range and structure starts paying for itself.",
-      },
-    ],
-    content: [
-      {
-        heading: "The real question is scope, not size",
-        body: [
-          "\"Freelancer versus agency\" gets framed as a budget decision, but the more useful lens is scope: how many different kinds of work does your project need at once, and does it need them to continue after launch. A single, well-defined task usually doesn't need an agency. A project with overlapping design, development, integration, and ongoing optimization needs usually does.",
-        ],
-      },
-      {
-        heading: "Freelancer, developer, or agency, side by side",
-        body: [
-          "Here's how the three options generally compare across what a Shopify project typically needs:",
-        ],
-        table: {
-          headers: ["Factor", "Freelancer", "Solo developer", "Agency"],
-          rows: [
-            ["Cost", "Lowest, for a single task", "Moderate, scales with hours", "Higher, but bundles more"],
-            ["Design", "Rarely included", "Rarely included", "Typically included"],
-            ["Development", "Task-specific", "Broad, but capacity-limited", "Broad, with specialization"],
-            ["Integrations", "Case by case", "Depends on individual skillset", "Usually covered across the team"],
-            ["QA", "Self-managed", "Self-managed", "Dedicated process"],
-            ["Maintenance", "Ad hoc availability", "Ad hoc availability", "Structured, ongoing"],
-            ["Scalability", "Limited to one person's time", "Limited to one person's time", "Scales with the project"],
-            ["Project management", "None — you manage it", "Minimal", "Dedicated"],
-          ],
-        },
-      },
-      {
-        heading: "When a freelancer makes sense",
-        body: [
-          "A freelancer is a good fit for a scoped, well-defined task — a theme tweak, a specific bug fix, a single app configuration — where you don't need design work or ongoing support bundled in. It's the fastest, cheapest way to get a narrow job done well.",
-        ],
-      },
-      {
-        heading: "When hiring a developer makes sense",
-        body: [
-          "A single developer with broader Shopify experience makes sense for a small store's full build, especially one on a customized existing theme without heavy integration needs. The trade-off is capacity — you're limited to what one person can reasonably take on at a time, and design work is often outside their core skillset.",
-        ],
-      },
-      {
-        heading: "When an agency is the better fit",
-        body: [
-          "An agency earns its higher cost when a project needs design and development together, multiple integrations, dedicated QA, or ongoing support after launch — work that would otherwise require you to personally coordinate several freelancers. It's also the more resilient option for a business that can't afford a single point of failure in who maintains the store.",
-          "Whichever type of partner you choose, it's worth being clear on scope before the engagement starts — including whether the project needs custom development at all. Our [[/blogs/when-do-you-need-custom-shopify-development|framework for deciding when custom Shopify development is actually justified]] is a useful gut check before that conversation.",
-        ],
-        callout: {
-          type: "takeaway",
-          text: "The question isn't which option is objectively best — it's which one matches how much of your project's scope needs to happen at once, and needs to keep happening after launch.",
-        },
-        cta: {
-          title: "Not sure which type of Shopify partner fits your project?",
-          description: "Tell us your scope and timeline and we'll give you a straight recommendation — even if that means suggesting something smaller than us.",
-        },
-      },
-    ],
-  },
-  {
-    slug: "when-do-you-need-custom-shopify-development",
-    title: "Custom Shopify development: when do you actually need it?",
-    excerpt:
-      "Most Shopify requirements are already solved by a native feature, an app, or theme customization. Here is the framework for finding out where yours sits.",
-    category: "Shopify & Ecommerce",
-    banner: "decisiontree",
-    date: "2026-04-03",
-    readingTime: "9 min read",
-    relatedServiceSlugs: ["shopify-development", "ai-automation"],
-    relatedIndustrySlugs: ["manufacturing", "saas-technology"],
-    faqs: [
-      {
-        q: "How do I know if I need custom Shopify development?",
-        a: "Work through it in order: check whether a native Shopify feature already covers it, then whether an existing app does, then whether theme customization can. Custom development is justified only once all three genuinely fall short of the requirement.",
-      },
-      {
-        q: "Is custom development the same as theme customization?",
-        a: "No. Theme customization works within a theme's existing settings, sections, and structure. Custom development builds new functionality — custom Liquid sections, Shopify Functions, custom apps, or API-based logic — that the theme wasn't built to do on its own. Our [[/blogs/shopify-theme-vs-custom-development|theme versus custom development comparison]] covers that distinction in more depth.",
-      },
-      {
-        q: "What is a Shopify Function, in plain terms?",
-        a: "Shopify Functions let developers extend or replace specific pieces of Shopify's backend checkout logic — custom discount combinations, shipping option behavior, or payment method rules — without rebuilding checkout itself. They're a common building block in custom development for stores with non-standard pricing or fulfillment rules.",
-      },
-      {
-        q: "Does custom development always mean higher long-term cost?",
-        a: "Usually yes, in maintenance terms — custom code needs someone to own it as Shopify's platform evolves, in a way that a standard theme or a maintained app doesn't require from you directly. That's a real cost to weigh against the flexibility it buys.",
-      },
-      {
-        q: "Can I add custom development later if I start with a standard setup?",
-        a: "Yes, and it's often the lower-risk path — starting with native features, apps, and theme customization, then adding custom development only once a specific unmet requirement is proven, rather than building custom from day one on assumptions.",
-      },
-      {
-        q: "What's the most common mistake businesses make with this decision?",
-        a: "Jumping straight to custom development for a requirement a well-configured app or theme setting could have solved — which adds cost and long-term maintenance for no real gain.",
-      },
-      {
-        q: "Does custom development include building a custom app?",
-        a: "It can — a custom app is one form custom development takes, specifically when the requirement involves connecting to other systems or automating something Shopify's admin doesn't do natively. Our [[/blogs/shopify-custom-app-development-guide|guide to custom Shopify apps]] covers that case specifically.",
-      },
-    ],
-    content: [
-      {
-        heading: "Most requirements are already solved. The question is where",
-        body: [
-          "\"Do we need custom development\" is usually the wrong first question, because it skips several cheaper, faster options that solve most requirements on their own. The more useful approach is to check your requirement against each layer of what Shopify already offers, in order, and only move to the next layer once the current one genuinely can't do the job.",
-          "We call this the ZSpace Shopify Development Decision Framework, and it's the same sequence we walk through with clients before scoping any custom work.",
-        ],
-      },
-      {
-        heading: "The decision framework, layer by layer",
-        body: [
-          "Work through these in order — most requirements resolve well before reaching the bottom:",
-        ],
-        checklist: [
-          "Native Shopify feature — does Shopify's own admin and checkout settings already do this?",
-          "Existing app — does the Shopify App Store have a maintained app that solves it without workarounds?",
-          "Theme customization — can your theme's sections and settings be configured or lightly modified to achieve it?",
-          "Custom functionality — does this need custom Liquid, a Shopify Function, or a checkout UI extension built specifically for your store?",
-          "Custom app — does this need to connect Shopify to internal tools, other systems, or automate a workflow no app covers?",
-          "API integration — does this require syncing data with an external system on an ongoing basis?",
-          "Headless architecture — does this require a fundamentally different frontend experience than Shopify's own rendering can offer?",
-        ],
-        visual: {
-          variant: "pulse",
-          accent: "orange",
-          caption: "Each layer is more capable and more expensive to maintain than the one before it.",
-        },
-      },
-      {
-        heading: "Walking the framework with a real example",
-        body: [
-          "Take a common request: \"we need tiered pricing based on customer group.\" Native Shopify B2B features now cover company-level pricing and quantity rules on every paid plan, which resolves a large share of these requests without any development at all. If the tiering logic is more specific — say, pricing that changes based on order history or a custom loyalty tier — a Shopify Function handling custom discounts is often the right level, well short of a fully custom app.",
-          "Working through the framework this way, rather than jumping straight to \"we need a developer to build this,\" is usually what separates a proportionate build from an overbuilt one.",
-        ],
-        callout: {
-          type: "tip",
-          text: "Write your requirement down in one sentence before touching any layer of the framework. A vague requirement makes every layer look necessary; a specific one usually resolves in one or two steps.",
-        },
-      },
-      {
-        heading: "What custom development actually costs you beyond the invoice",
-        body: [
-          "Every layer past theme customization shifts more long-term responsibility onto you or your development partner — custom code needs to be maintained as Shopify's platform evolves, in a way a standard app's maintainers handle on your behalf. This isn't a reason to avoid custom development when it's genuinely justified, but it's a real, ongoing cost that belongs in the decision, not just the upfront quote.",
-        ],
-        cta: {
-          title: "Have a Shopify requirement that an existing theme or app can't handle?",
-          description: "We'll walk your specific requirement through this framework with you and tell you honestly which layer it actually needs.",
         },
       },
     ],
@@ -1903,6 +1548,7 @@ export const posts: BlogPost[] = [
         body: [
           "Beyond data mapping, the most common failure points are authentication expiring silently, webhook events arriving out of order or more than once, and one system's edge case (a partial refund, a merged customer record) not having a clear rule in the other. A properly built integration verifies webhook signatures, handles duplicate events gracefully, and reconciles periodically rather than trusting real-time sync alone to stay accurate forever.",
           "Heavier integration needs — several systems, high volume, or multiple linked storefronts — are also one of the more common reasons businesses evaluate [[/blogs/shopify-plus-vs-shopify|Shopify Plus]], since its higher API limits and organizational tools are built with exactly this kind of complexity in mind.",
+          "For related guides, see [[/blogs/ecommerce-erp-integration|ecommerce ERP integration]], [[/blogs/ecommerce-api-integration|ecommerce API integration]] and [[/blogs/ecommerce-inventory-management-integration|inventory integration]].",
         ],
         callout: {
           type: "tip",
@@ -1916,483 +1562,384 @@ export const posts: BlogPost[] = [
     ],
   },
   {
-    slug: "shopify-plus-vs-shopify",
-    title: "Shopify Plus vs. Shopify: which is right for a growing business?",
-    excerpt:
-      "Shopify Plus is not simply \"Shopify for big companies.\" Here is what it actually unlocks, and the operational signals that make it worth the upgrade.",
-    category: "Shopify & Ecommerce",
-    banner: "tiers",
-    date: "2026-04-06",
-    readingTime: "9 min read",
-    relatedServiceSlugs: ["shopify-development"],
-    relatedIndustrySlugs: ["fashion-apparel", "manufacturing"],
-    faqs: [
-      {
-        q: "What does Shopify Plus actually include that standard plans don't?",
-        a: "Unlimited B2B catalogs, checkout extensibility for building fully custom checkout experiences, a dedicated B2B storefront, deposits and partial payments, several included expansion stores, unlimited staff accounts, and priority support — standard plans now include core B2B functionality like company accounts and quantity rules, but with meaningful limits Plus removes.",
-      },
-      {
-        q: "Do I need Shopify Plus for B2B selling?",
-        a: "Not necessarily anymore — B2B features like company accounts, net payment terms, and quick ordering are available on Basic, Grow, and Advanced plans, with a limit of three active B2B catalogs across all markets combined. Plus becomes relevant once you need more than that, or need a fully custom B2B checkout experience.",
-      },
-      {
-        q: "Is Shopify Plus worth it for a single-store, non-B2B business?",
-        a: "Often not on B2B grounds alone — but Plus's other advantages, like checkout extensibility for consumer stores with complex promotions, higher API limits, and priority support, can still justify it for a high-volume DTC business with specific customization needs.",
-      },
-      {
-        q: "What is checkout extensibility, and why does it matter?",
-        a: "It's the ability to customize checkout using checkout UI extensions, Shopify Functions, and the checkout branding API — letting a Plus store build custom fields, discount logic, or a branded checkout experience that standard plans can't fully replicate.",
-      },
-      {
-        q: "How many expansion stores does Shopify Plus include?",
-        a: "Shopify Plus commonly includes several expansion stores for international markets or sub-brands as part of the plan — confirm the current number on Shopify's own pricing page, since exact inclusions can change.",
-      },
-      {
-        q: "When does regular Shopify stop being enough?",
-        a: "Typically when you need more B2B catalogs than the standard plan limit allows, a fully custom checkout experience, multiple linked storefronts under one organization, or support and API limits that match significantly higher order volume.",
-      },
-      {
-        q: "What questions should I ask before upgrading to Shopify Plus?",
-        a: "Which specific Plus-only feature does my business actually need right now — not eventually? What would migrating my current checkout customizations and apps to Plus involve? And is the cost justified by that specific need, or by a general sense that Plus signals more seriousness?",
-      },
-    ],
-    content: [
-      {
-        heading: "\"Shopify for big companies\" is the wrong mental model",
-        body: [
-          "Shopify Plus is often described as the enterprise tier, which makes it sound like a general upgrade for businesses that have simply gotten bigger. In practice, it unlocks a specific set of operational capabilities — B2B scale, checkout customization, multi-store management — and it's worth evaluating against those specific capabilities, not against company size alone.",
-          "This matters because Shopify has moved core B2B functionality onto standard plans over time, which means the gap between Shopify and Shopify Plus is narrower and more specific than it used to be — and worth understanding precisely before paying for the upgrade.",
-        ],
-      },
-      {
-        heading: "Where the two actually differ",
-        body: [
-          "Standard plans now cover meaningful ground on their own:",
-        ],
-        table: {
-          headers: ["Capability", "Standard Shopify (Basic/Grow/Advanced)", "Shopify Plus"],
-          rows: [
-            ["B2B company accounts, quantity rules", "Included", "Included"],
-            ["B2B catalogs", "Up to 3, combined across markets", "Unlimited, assignable per company"],
-            ["Checkout customization", "Standard checkout settings only", "Full checkout extensibility"],
-            ["Dedicated B2B storefront", "Not available", "Available"],
-            ["Deposits and partial payments", "Not available", "Available"],
-            ["Expansion stores", "Not included", "Several included"],
-            ["Staff accounts", "Limited by plan tier", "Unlimited"],
-            ["Support", "Standard support", "Priority support"],
-          ],
-        },
-      },
-      {
-        heading: "When regular Shopify is enough",
-        body: [
-          "If your B2B needs fit within three catalogs, your checkout doesn't need custom logic beyond what native settings and Shopify Functions on your current plan support, and you're running a single storefront, standard Shopify — properly built — covers real operational needs at a fraction of the cost.",
-        ],
-      },
-      {
-        heading: "When Shopify Plus becomes worth considering",
-        body: [
-          "Plus earns its cost when you hit a concrete limit — more than three B2B catalogs, a checkout experience that needs custom fields or logic native settings can't provide, multiple storefronts you need to manage as one organization, or order volume that genuinely benefits from priority support and higher API limits. It's a upgrade justified by specific, current operational needs, not by anticipated future scale.",
-          "Plus is also where a headless storefront most often gets seriously discussed, since the API limits and infrastructure it includes are what a custom frontend tends to need at real scale. That's a separate decision worth its own evaluation — see our [[/blogs/headless-shopify-explained|guide to headless Shopify]] before assuming the two upgrades belong together.",
-        ],
-        callout: {
-          type: "tip",
-          text: "List the specific Plus-only feature your business needs right now before evaluating the upgrade. If you can't name one, you're probably not ready for it yet.",
-        },
-        cta: {
-          title: "Not sure if your store has outgrown standard Shopify?",
-          description: "We'll review your actual requirements against what Plus unlocks and tell you honestly whether the upgrade is justified yet.",
-        },
-      },
-    ],
-  },
-  {
-    slug: "headless-shopify-explained",
-    title: "Headless Shopify: what it is and when it's worth it",
-    excerpt:
-      "Headless commerce can unlock real flexibility. It also adds real complexity. Here is how to tell whether your store actually needs it.",
-    category: "Shopify & Ecommerce",
-    banner: "layers",
-    date: "2026-04-07",
-    readingTime: "9 min read",
-    relatedServiceSlugs: ["shopify-development", "ui-ux-design"],
-    relatedIndustrySlugs: ["saas-technology", "fashion-apparel"],
-    faqs: [
-      {
-        q: "What does headless Shopify actually mean?",
-        a: "It means separating the customer-facing frontend from Shopify's backend — Shopify still handles products, orders, checkout logic, and inventory, but a custom-built frontend, rather than Shopify's own theme rendering, displays the storefront and communicates with Shopify through its APIs.",
-      },
-      {
-        q: "What is Shopify Hydrogen?",
-        a: "Hydrogen is Shopify's own framework for building custom, headless storefronts on React, designed to integrate closely with Shopify's Storefront API and Oxygen hosting. It's one path to headless, though headless storefronts can also be built with other frameworks like Next.js.",
-      },
-      {
-        q: "Is headless Shopify automatically faster than a standard theme?",
-        a: "Not automatically — a well-built headless storefront can achieve excellent performance, but a poorly built one can be just as slow as a bloated theme. A well-configured standard theme can get close to headless-level performance at a much lower cost, which is worth weighing honestly. Our [[/blogs/shopify-core-web-vitals-performance-guide|Shopify performance guide]] covers what actually drives speed regardless of architecture.",
-      },
-      {
-        q: "How much more does headless cost than a standard Shopify build?",
-        a: "Meaningfully more in total cost of ownership — headless requires ongoing frontend engineering for changes a theme-based store could make through settings or an app, which is a recurring cost, not just a higher upfront one.",
-      },
-      {
-        q: "Who should NOT use headless Shopify?",
-        a: "Most stores, honestly — if your requirements fit within what a well-customized theme can do, headless adds cost and engineering dependency without a proportional benefit. It's a poor fit for teams without ongoing frontend development capacity.",
-      },
-      {
-        q: "When is headless Shopify actually worth it?",
-        a: "For content-heavy brands whose storefront is closer to a full web application than a product catalog, businesses running multiple distinct storefronts off one backend, or teams with genuinely unique interaction requirements a theme's rendering model can't support.",
-      },
-    ],
-    content: [
-      {
-        heading: "Headless separates two things that are normally bundled together",
-        body: [
-          "A standard Shopify store bundles the storefront's frontend (what customers see) and Shopify's commerce backend (products, checkout, orders) into one system, rendered through Shopify's own theme engine. Headless architecture separates them — Shopify remains the commerce backend, but a custom-built frontend, using Shopify's Storefront API, handles everything the customer actually sees and interacts with.",
-          "Shopify's own path for this is Hydrogen, a React-based framework built to work closely with the Storefront API and Shopify's Oxygen hosting, though headless storefronts are also commonly built with general-purpose frameworks like Next.js. We touched on this briefly in our [[/blogs/shopify-theme-vs-custom-development|theme versus custom development comparison]] — this is the deeper look at what headless specifically involves.",
-        ],
-      },
-      {
-        heading: "Traditional Shopify vs. headless Shopify",
-        body: [
-          "Neither is universally better. The honest comparison looks like this:",
-        ],
-        table: {
-          headers: ["Factor", "Traditional Shopify", "Headless Shopify"],
-          rows: [
-            ["Development complexity", "Lower — theme settings and Liquid", "Higher — full frontend engineering"],
-            ["Flexibility", "Bounded by theme architecture", "Near-unlimited frontend control"],
-            ["Cost", "Lower upfront and ongoing", "Higher upfront and ongoing"],
-            ["Performance potential", "Strong, when well-optimized", "Very strong, when well-built"],
-            ["Maintenance", "Largely theme and app updates", "Requires ongoing frontend development"],
-            ["Time to launch", "Days to weeks", "Weeks to months"],
-            ["Best for", "Most ecommerce storefronts", "Content-heavy or highly custom storefronts"],
-          ],
-        },
-      },
-      {
-        heading: "Who should NOT use headless Shopify",
-        body: [
-          "If your requirements are well within what theme customization or custom development inside Shopify's standard rendering can achieve, headless is very likely the wrong investment — it trades a meaningful amount of cost and ongoing engineering dependency for flexibility you may never actually use. This is the most important, and most often skipped, part of the headless conversation.",
-          "It's also a poor fit for a team without dedicated frontend development capacity on an ongoing basis, since even small content or layout changes typically require a code change and deployment rather than a theme editor update.",
-        ],
-        callout: {
-          type: "takeaway",
-          text: "Headless should solve a specific, real business or product requirement — a genuinely unique storefront experience, multiple linked storefronts, or content needs beyond what a theme handles — not a general preference for 'more modern architecture.'",
-        },
-      },
-      {
-        heading: "What a headless build actually requires on an ongoing basis",
-        body: [
-          "Beyond the initial build, headless architecture means every future storefront change — a new landing page layout, a merchandising update, a new interaction pattern — typically goes through frontend development rather than a theme setting. Budgeting for that ongoing engineering relationship, not just the launch project, is what makes a headless decision realistic rather than aspirational.",
-        ],
-        cta: {
-          title: "Considering headless commerce for your Shopify store?",
-          description: "We'll assess whether your storefront requirements genuinely need headless architecture, or whether a well-built theme gets you there for less.",
-        },
-      },
-    ],
-  },
-  {
     slug: "shopify-cro-guide",
-    title: "Shopify CRO: increasing conversions without more traffic",
+    title: "Shopify Conversion Rate Optimization: A Practical Guide",
     excerpt:
-      "More traffic doesn't fix a leaking funnel. Here is how to find where customers are actually dropping off, and what to do about each stage.",
+      "A practical Shopify CRO guide: measure the funnel, find where shoppers drop off, improve each stage from homepage to checkout, and prioritize and test changes.",
     category: "Shopify & Ecommerce",
-    banner: "salesfunnel",
+    banner: "shopifycroflow",
     date: "2026-04-08",
-    readingTime: "10 min read",
-    relatedServiceSlugs: ["cro-audit", "ui-ux-design", "shopify-development"],
-    relatedIndustrySlugs: ["d2c-consumer", "fashion-apparel"],
+    readingTime: "16 min read",
+    relatedServiceSlugs: ["cro-audit", "shopify-development", "ui-ux-design"],
+    relatedIndustrySlugs: ["d2c-consumer", "ecommerce", "fashion-apparel"],
     faqs: [
-      {
-        q: "What's considered a good conversion rate for a Shopify store?",
-        a: "As commonly cited working benchmarks, roughly 2 to 3 percent is typical, 3 percent or higher is considered strong, and top-performing stores reach 5 percent or more — though this varies significantly by category, price point, and traffic source, so treat it as a rough reference, not a target that applies identically to every store.",
-      },
-      {
-        q: "Should I focus on more traffic or better conversion first?",
-        a: "If your conversion rate is meaningfully below what's typical for your category, fixing conversion usually has better returns than buying more traffic — you're currently losing a larger share of the visitors you already have, and more traffic just means losing more of them faster.",
-      },
-      {
-        q: "How do I find where customers are dropping off in my funnel?",
-        a: "Use Shopify Analytics or GA4 to look at conversion between each stage specifically — sessions to product views, product views to add-to-cart, add-to-cart to checkout initiation, and checkout initiation to purchase — rather than only the overall conversion rate, which hides where the actual loss is happening.",
-      },
-      {
-        q: "Does page speed really affect Shopify conversion rates?",
-        a: "Yes, particularly Interaction to Next Paint on product pages, which tend to be media-heavy and interaction-dependent. Our [[/blogs/shopify-core-web-vitals-performance-guide|Shopify performance guide]] and [[/blogs/the-real-cost-of-a-slow-checkout|checkout speed article]] both cover this in more depth.",
-      },
-      {
-        q: "Is A/B testing worth it for a smaller Shopify store?",
-        a: "Only once you have enough traffic to reach statistical significance in a reasonable time — for lower-traffic stores, structured qualitative review (session recordings, funnel drop-off analysis) usually surfaces more actionable findings faster than an underpowered test.",
-      },
-      {
-        q: "What's the single highest-leverage place to start a CRO effort?",
-        a: "Wherever your funnel data shows the single biggest percentage drop between two stages — not a generic checklist item. The same fix applied to a low-traffic stage matters far less than the same fix applied to your biggest leak.",
-      },
-      {
-        q: "Do trust signals like reviews actually move conversion?",
-        a: "Generally yes, particularly for newer stores or higher-consideration purchases where customers have less other information to rely on. They matter less once a brand has established recognition on its own.",
-      },
-      {
-        q: "How does CRO relate to Shopify performance and SEO work?",
-        a: "They compound — SEO and performance bring and retain visitors, while CRO determines what share of them convert. Improving one without the others leaves real revenue on the table, which is the basis of the ZSpace Shopify Growth Framework covered later in this article.",
-      },
+      { q: "What is Shopify conversion rate optimization?", a: "The practice of increasing the share of store visitors who complete a purchase, and often the revenue per visitor, by finding where shoppers drop off and improving those stages through research, design changes and testing." },
+      { q: "How is Shopify conversion rate calculated?", a: "Shopify's conversion rate compares sessions that completed checkout with total sessions. Its conversion rate breakdown shows the steps in between: sessions with cart additions and sessions that reached checkout." },
+      { q: "What is a good conversion rate for a Shopify store?", a: "It varies widely by product category, price, traffic mix and device, so a single benchmark is misleading. Compare your own funnel stages over time and across segments, which tells you far more about where to improve." },
+      { q: "How do I increase my Shopify conversion rate?", a: "Measure the funnel, find the stage and segment with the biggest drop, research why shoppers leave there, fix the most likely causes starting with the highest-impact and lowest-effort changes, and test where traffic allows." },
+      { q: "Where should Shopify CRO start?", a: "With analytics you can trust. Check that tracking is correct, then look at the conversion rate breakdown by device and traffic source before touching any page." },
+      { q: "Do I need apps for Shopify CRO?", a: "Not usually to start. Many improvements are theme, content and settings changes. Apps can help with reviews, search, testing and recordings, but each adds cost and often script weight." },
+      { q: "Can I A/B test on Shopify?", a: "Yes, with third-party testing tools, and Shopify's changelog describes Rollouts for testing theme and checkout configurations. Formal testing needs enough traffic and conversions to reach reliable results." },
+      { q: "Is CRO only about conversion rate?", a: "No. Revenue per visitor, average order value, margin and repeat purchase matter too. A change that raises conversion by discounting heavily may reduce profit." },
+      { q: "How long does Shopify CRO take?", a: "Quick fixes can ship in days, but CRO is an ongoing process of research, changes and measurement rather than a one-off project." },
+      { q: "What's the difference between CRO and UX?", a: "UX design shapes how easy and pleasant the store is to use. CRO measures the store's performance and prioritizes and tests changes to improve outcomes. They work best together." },
     ],
     content: [
       {
-        heading: "More traffic doesn't fix a leaking funnel",
+        heading: "Quick answer",
         body: [
-          "It's a common instinct to respond to flat revenue by spending more on acquisition. But if your store converts well below a typical range for your category — roughly 2 to 3 percent is a common working benchmark, with 5 percent or higher considered strong — more traffic mostly means losing a larger number of visitors at the same broken point, faster.",
-          "CRO starts with a different question: at which specific stage of the funnel are visitors actually leaving, and why. That's a data question before it's a design question.",
+          "Shopify conversion rate optimization means finding where shoppers drop off and improving those stages. Start by checking that analytics are correct, then read Shopify's conversion rate breakdown (sessions with cart additions, reached checkout and completed checkout) by device and traffic source. Find the weakest stage and research why shoppers leave there with recordings, heatmaps, reviews and user testing. Then fix the causes on the relevant templates: collections, product pages, cart, checkout settings, mobile, trust and speed. Prioritize by impact, confidence and effort, and test changes where you have the traffic.",
         ],
       },
       {
-        heading: "The Shopify conversion funnel",
+        heading: "What Shopify CRO Is and Isn't",
         body: [
-          "Every Shopify store's funnel follows roughly the same shape, even though the specific pages differ:",
-        ],
-        visual: {
-          variant: "funnel",
-          accent: "blue",
-          caption: "Traffic → Landing → Product discovery → Product page → Cart → Checkout → Purchase.",
-        },
-      },
-      {
-        heading: "Where to look, stage by stage",
-        body: [
-          "Each stage has its own common failure points, and fixing the wrong one wastes effort even when the fix itself is good:",
-        ],
-        checklist: [
-          "Homepage and navigation — can a new visitor find what they came for in two clicks or fewer?",
-          "Product discovery and search — does search return relevant results, and can filters narrow a large catalog effectively?",
-          "Product pages — do images, descriptions, and reviews answer the questions that would otherwise go to customer support?",
-          "Trust signals and pricing clarity — are shipping costs and delivery timelines clear before checkout, not revealed at the last step?",
-          "Cart and checkout — is guest checkout available, and is the form as short as it can genuinely be?",
-          "Mobile experience and speed — does the site feel fast and usable on a phone specifically, not just on the design team's desktop?",
-          "Post-purchase and abandoned carts — is there a clear, non-aggressive recovery flow for carts left behind?",
-        ],
-        callout: {
-          type: "tip",
-          text: "Fix your single largest drop-off point first. A ten percent improvement at your biggest leak usually outweighs small improvements spread across five different pages.",
-        },
-      },
-      {
-        heading: "Going deeper on each stage",
-        body: [
-          "Each stage above is covered in far more depth elsewhere: [[/blogs/shopify-product-page-optimization|product page optimization]], [[/blogs/shopify-cart-optimization|cart optimization]], [[/blogs/shopify-checkout-optimization|checkout optimization]], [[/blogs/shopify-mobile-cro|mobile CRO]], and how to actually [[/blogs/shopify-conversion-funnel-optimization|find where your funnel is leaking]] in the first place.",
-          "Once you know what to test, [[/blogs/shopify-ab-testing|our A/B testing guide]] covers how to structure an experiment properly, and [[/blogs/shopify-cro-audit|our full CRO audit checklist]] covers everything a structured audit reviews, end to end. For a complete, stage-by-stage system tying all of this together — including homepage, search, recommendations, bundles, personalization and trust signals — see [[/blogs/shopify-dtc-cro|our full Shopify DTC CRO framework]].",
+          "CRO is a process, not a list of tactics. The same change, such as a sticky add-to-cart button or a free-shipping bar, can help one store and do nothing for another, because the reasons shoppers leave differ. The process that works everywhere is measure, diagnose, change and verify.",
+          "It also isn't only about conversion rate. Revenue per visitor, average order value, margin and repeat purchase all matter, and a change that lifts conversion by giving away margin may not be a win. See [[/blogs/shopify-conversion-rate-optimization-metrics|Shopify CRO metrics]].",
         ],
       },
       {
-        heading: "The ZSpace Shopify Growth Framework",
+        heading: "The Shopify Conversion Funnel",
         body: [
-          "CRO doesn't operate in isolation — it compounds with the other pieces of a store's technical health. We frame this as Performance, UX, SEO, CRO, and Analytics together producing ecommerce growth: performance and SEO bring and retain visitors, UX and CRO determine what share of them convert, and analytics is what tells you which of the other four actually needs attention right now.",
-          "Treating CRO as a one-time redesign misses this — it's an ongoing discipline that depends on the [[/blogs/shopify-analytics-guide|analytics]] to know where to look next, and it's most effective once [[/blogs/shopify-core-web-vitals-performance-guide|performance]] and [[/blogs/shopify-seo-guide|SEO]] are already solid underneath it.",
-        ],
-        cta: {
-          title: "Getting traffic but not enough sales?",
-          description: "We run structured Shopify CRO audits that identify exactly where your funnel is leaking — not a generic best-practices checklist.",
-        },
-      },
-    ],
-  },
-  {
-    slug: "shopify-analytics-guide",
-    title: "Shopify analytics: what to actually track and why",
-    excerpt:
-      "Tracking every available metric is the same as tracking none of them. Here is how to decide what actually matters for your store.",
-    category: "Shopify & Ecommerce",
-    banner: "dashboard",
-    date: "2026-04-09",
-    readingTime: "8 min read",
-    relatedServiceSlugs: ["cro-audit", "shopify-development"],
-    relatedIndustrySlugs: ["ecommerce", "saas-technology"],
-    faqs: [
-      {
-        q: "What's the difference between Shopify Analytics and Google Analytics (GA4)?",
-        a: "Shopify Analytics is the stronger source for store-specific numbers — sales, average order value, top products, returning customer rate — since it's built directly on your order data. GA4 is better for cross-channel traffic, engagement, and campaign analysis, using standard ecommerce events like view_item, add_to_cart, and purchase.",
-      },
-      {
-        q: "Do I need both Shopify Analytics and GA4?",
-        a: "For most growing stores, yes — they answer different questions. Shopify Analytics tells you what's happening in your store; GA4 tells you where the traffic driving it is coming from and how it behaves before converting.",
-      },
-      {
-        q: "What does Google Search Console add that the other two don't?",
-        a: "Search performance specifically — clicks, impressions, click-through rate, and average position for the queries actually bringing organic visitors to your store, which neither Shopify Analytics nor GA4 tracks natively.",
-      },
-      {
-        q: "Which metrics should a new Shopify store start tracking?",
-        a: "A small set of high-impact metrics first: conversion rate, average order value, and customer acquisition cost. Add more specialized metrics — add-to-cart rate, checkout completion rate, repeat purchase rate — once you have a baseline and a specific question you're trying to answer.",
-      },
-      {
-        q: "Is average order value more important than conversion rate?",
-        a: "Neither is universally more important — they answer different questions, and revenue is a function of both together with traffic. Which one deserves more attention right now depends on which is furthest from what's typical for your category.",
-      },
-      {
-        q: "Can Shopify analytics tell me exactly which marketing channel drove a sale?",
-        a: "Not with full certainty — attribution across channels, devices, and time is inherently imperfect, especially with privacy changes limiting cross-site tracking. Treat attribution data as a strong directional signal, not an exact accounting of what caused each sale.",
-      },
-      {
-        q: "How does analytics connect to CRO work?",
-        a: "Analytics is what tells a CRO effort where to actually look — without funnel-stage data, CRO becomes guesswork. Our [[/blogs/shopify-cro-guide|Shopify CRO guide]] covers how that funnel view is used in practice.",
-      },
-    ],
-    content: [
-      {
-        heading: "Tracking everything is the same as tracking nothing",
-        body: [
-          "Shopify, GA4, and any marketing platform you use can each surface dozens of available metrics, and it's tempting to build a dashboard that shows all of them. In practice, a dashboard with forty metrics gets checked less often and acted on less than one with five metrics that map directly to a business decision.",
-          "The better approach: start with a small set of metrics tied to your current priority, and add more only once you have a specific question the current set can't answer.",
-        ],
-      },
-      {
-        heading: "The metrics worth starting with",
-        body: [
-          "Across categories, these are the ones that tend to earn their place on a first dashboard:",
+          "Shopify's conversion rate breakdown report shows four steps: all sessions, sessions with cart additions, sessions that reached checkout and sessions that completed checkout. The diagram above adds product views, which you can measure with product view reports or GA4's view_item event, because the gap between arriving and viewing a product is often where discovery problems show up.",
         ],
         table: {
-          headers: ["Category", "Core metrics", "What it tells you"],
+          headers: ["Stage", "What a drop here usually points to", "Where to look"],
           rows: [
-            ["Conversion", "Conversion rate, add-to-cart rate, checkout completion rate", "Where visitors are turning into customers, or not"],
-            ["Revenue", "Revenue, average order value", "How much each conversion is actually worth"],
-            ["Traffic", "Sessions, sessions by channel", "How many visitors, and where they're coming from"],
-            ["Customer", "Customer acquisition cost, repeat purchase rate", "Whether growth is efficient and whether customers return"],
+            ["Sessions → product views", "Traffic quality, landing pages, navigation, search", "Homepage, collections, search"],
+            ["Product views → add to cart", "Product page content, price, trust, variants", "Product pages"],
+            ["Add to cart → reached checkout", "Cost surprises, cart friction, distraction", "Cart or cart drawer"],
+            ["Reached checkout → completed", "Costs, payment options, trust, errors", "Checkout settings and apps"],
           ],
         },
       },
       {
-        heading: "Shopify Analytics vs. GA4 vs. Search Console",
+        heading: "Step 1: Make Sure the Data Is Right",
         body: [
-          "Shopify Analytics is the most direct source for store-specific numbers — it's built on your actual order data, so sales, average order value, and returning customer rate are accurate by definition. GA4 is stronger for understanding traffic and behavior across channels and before purchase, using standard events like view_item, add_to_cart, begin_checkout, and purchase. Search Console adds a layer neither of the other two covers: which search queries are actually bringing organic visitors, and how your pages perform in search results specifically.",
-          "Used together, they answer three different questions — what's happening in the store, how visitors behave before converting, and how visible the store is in search — rather than one tool trying to do all three imperfectly.",
+          "Before diagnosing anything, check the measurement. Compare Shopify's orders with your analytics tool, confirm that purchase and add-to-cart events fire once, check that internal traffic and bots aren't inflating sessions, and make sure consent settings aren't silently removing large parts of your data. Many CRO projects waste weeks fixing problems that are really tracking gaps.",
         ],
-        visual: {
-          variant: "bars",
-          accent: "blue",
-          caption: "Each tool is strongest at a different layer of the same customer journey.",
+      },
+      {
+        heading: "Step 2: Find the Leak",
+        body: [
+          "Look at the funnel by device, traffic source, landing page and new versus returning customers. A blended conversion rate hides the real problem: mobile paid social may convert poorly while desktop email converts well. The segment with the largest gap between its traffic and its conversions is usually the best place to start. See [[/blogs/shopify-conversion-funnel-optimization|Shopify conversion funnel optimization]] and the platform-independent [[/blogs/ecommerce-conversion-funnel|ecommerce conversion funnel]] guide.",
+        ],
+      },
+      {
+        heading: "Step 3: Research Why",
+        body: [
+          "Numbers show where; research shows why. Watch session recordings filtered to the drop-off stage, check heatmaps, read reviews, support tickets and returns reasons, run short on-site surveys, and test key tasks with a few real users. Write each finding as a hypothesis: “Mobile shoppers leave the product page because delivery cost isn't visible until checkout.” See [[/blogs/ecommerce-heatmaps|ecommerce heatmaps]].",
+        ],
+      },
+      {
+        heading: "Homepage and Navigation",
+        body: [
+          "The homepage and menus should route visitors to the right products quickly: a clear value proposition, literal category labels, visible search and a few relevant products. See [[/blogs/shopify-homepage-cro|Shopify homepage optimization]] and [[/blogs/ecommerce-navigation-design|ecommerce navigation design]].",
+        ],
+      },
+      {
+        heading: "Search and Collection Pages",
+        body: [
+          "Collections and search are where browsing shoppers narrow down. Shopify's free Search & Discovery app lets you configure filters, synonyms, product boosts and recommendations. Make sure filters match how customers choose, sorting is sensible, product cards show price and key details, and no-results searches lead somewhere. See [[/blogs/shopify-search-optimization|Shopify search optimization]] and [[/blogs/ecommerce-filters|ecommerce filters]].",
+        ],
+      },
+      {
+        heading: "Product Pages",
+        body: [
+          "Product pages decide whether interest becomes an add-to-cart. Answer buying questions near the button: what it is, whether it fits, what it costs to deliver, when it arrives, what happens if it's wrong and what other buyers say. See [[/blogs/shopify-product-page-optimization|Shopify product page optimization]].",
+        ],
+      },
+      {
+        heading: "Pricing, Shipping and Offers",
+        body: [
+          "Unexpected costs are the most common reason shoppers give for abandoning checkout in Baymard's surveys. Show shipping costs or thresholds early, keep prices and discounts easy to understand, and make sure any offer, bundle or subscription is clear on the product page and in the cart. Constant discounting trains customers to wait for the next sale.",
+        ],
+        cta: {
+          title: "Not sure where your Shopify store is losing sales?",
+          description: "ZSpace audits your funnel, finds the stages and segments that leak and prioritizes the fixes worth making first.",
         },
       },
       {
-        heading: "The limits of attribution",
+        heading: "Cart and Checkout",
         body: [
-          "No analytics setup gives you a perfectly accurate picture of what caused each sale — cross-device behavior, ad blockers, and privacy-driven limits on cross-site tracking all introduce gaps that no tool fully closes. Treat attribution data as a strong directional signal for where to invest, not a precise accounting you can defend to the decimal point.",
-          "This is also why analytics works best paired with the other parts of a store's growth picture — feeding directly into [[/blogs/shopify-cro-guide|CRO work]] that identifies exactly where in the funnel to act on what the numbers show. For the specific metrics worth tracking once your setup is clean, see [[/blogs/shopify-conversion-rate-optimization-metrics|which Shopify CRO metrics actually matter]]. It's also usually the evidence base behind a legitimate case for a [[/blogs/shopify-store-redesign-guide|store redesign]], rather than redesigning on instinct alone.",
+          "The cart should confirm choices, show full costs and move shoppers to checkout; see [[/blogs/shopify-cart-optimization|Shopify cart optimization]]. Checkout is hosted by Shopify, so optimization focuses on configuration: guest checkout, accelerated checkouts, payment and delivery options and branding. Customizing the information, shipping and payment steps with UI extensions requires Shopify Plus. See [[/blogs/shopify-checkout-optimization|Shopify checkout optimization]].",
         ],
-        callout: {
-          type: "note",
-          text: "Before changing anything based on analytics, confirm your tracking setup is actually clean — a broken event or duplicated pageview can make a healthy store look like it's underperforming, or the reverse.",
+      },
+      {
+        heading: "Mobile",
+        body: [
+          "For many stores most sessions are on phones, and mobile often converts below desktop. Check navigation, filters, product galleries, sticky add-to-cart, cart and express payments on real devices. See [[/blogs/shopify-mobile-cro|Shopify mobile optimization]].",
+        ],
+      },
+      {
+        heading: "Trust",
+        body: [
+          "Shoppers need to believe the store is legitimate and the risk is low: clear delivery and returns, genuine reviews, visible contact details, recognizable payment options and consistent design. See [[/blogs/shopify-trust-optimization|Shopify trust optimization]].",
+        ],
+      },
+      {
+        heading: "Speed",
+        body: [
+          "Slow pages cost attention before shoppers see anything. Shopify's web performance dashboard reports Core Web Vitals from real visitors, which is the right place to start. See [[/blogs/shopify-speed-cro|Shopify website speed optimization]].",
+        ],
+      },
+      {
+        heading: "Analytics, Heatmaps and Testing",
+        body: [
+          "Use analytics to find where, heatmaps and recordings to form hypotheses about why, and tests to confirm what works. Formal A/B tests need enough conversions to produce reliable results; lower-traffic stores can still improve by fixing clear usability problems and measuring against a baseline. See [[/blogs/ecommerce-ab-testing|ecommerce A/B testing]] and [[/blogs/shopify-ab-testing|Shopify A/B testing]].",
+        ],
+      },
+      {
+        heading: "How to Prioritize CRO Work",
+        body: ["Rank ideas on evidence rather than preference. Four questions keep prioritization honest without inventing scores."],
+        table: {
+          headers: ["Question", "Why it matters"],
+          rows: [
+            ["How many shoppers does it affect?", "A problem on every product page outranks one on a single landing page"],
+            ["How strong is the evidence?", "Analytics plus recordings plus user feedback beats a single opinion"],
+            ["How big could the effect be?", "Fixing a blocker matters more than polishing a working element"],
+            ["How much effort and risk?", "Quick, low-risk fixes ship first; big changes get tested"],
+          ],
         },
+      },
+      {
+        heading: "Common Shopify CRO Mistakes",
+        body: [],
+        checklist: [
+          "Copying tactics from other stores without checking your own data",
+          "Optimizing the blended conversion rate instead of segments",
+          "Adding apps for every idea and slowing the store down",
+          "Declaring test winners too early",
+          "Discounting to lift conversion and losing margin",
+          "Redesigning before diagnosing",
+        ],
         cta: {
-          title: "Not sure which numbers actually matter for your store?",
-          description: "We'll help you set up a lean, accurate analytics view tied to real business decisions — not a dashboard nobody checks.",
+          title: "Want a structured CRO program for your store?",
+          description: "Talk to ZSpace about [[/services/cro-audit|CRO audits]], [[/services/ui-ux-design|UX design]] and [[/services/shopify-development|Shopify development]] to implement the fixes.",
         },
+      },
+      {
+        heading: "Conclusion",
+        body: [
+          "Shopify CRO works when it's systematic: trustworthy data, a segmented funnel, research into why shoppers leave, focused fixes on the weakest stage and honest measurement. Work through the stage guides linked above, and for a full review of the store, see the [[/blogs/ecommerce-cro-audit|ecommerce CRO audit]] and [[/blogs/shopify-cro-audit|Shopify CRO audit]]. If conversion has suddenly dropped, start with [[/blogs/shopify-store-not-converting|what to check first on a Shopify store that isn't converting]].",
+        ],
       },
     ],
   },
   {
     slug: "shopify-store-redesign-guide",
-    title: "When should you redesign your Shopify store?",
+    title: "How to Redesign a Shopify Store: Complete Guide",
     excerpt:
-      "A redesign should be a diagnosis, not a default reaction to a store that feels stale. Here is how to tell the difference, and how to plan one properly.",
+      "How to redesign an existing Shopify store: spot the real problems, set a baseline, choose a theme or custom build, protect SEO, launch safely and measure.",
     category: "Shopify & Ecommerce",
-    banner: "cycle",
+    banner: "shopifyredesignflow",
     date: "2026-04-10",
-    readingTime: "10 min read",
+    readingTime: "16 min read",
     relatedServiceSlugs: ["shopify-development", "ui-ux-design", "cro-audit"],
-    relatedIndustrySlugs: ["fashion-apparel", "ecommerce"],
+    relatedIndustrySlugs: ["d2c-consumer", "ecommerce", "fashion-apparel"],
     faqs: [
-      {
-        q: "How often should a Shopify store be redesigned?",
-        a: "There's no fixed interval worth following blindly — a redesign should be triggered by specific evidence (declining conversion, outdated brand, poor mobile experience) rather than a calendar. Some stores genuinely need a refresh every couple of years; others go much longer without one because the underlying experience still performs.",
-      },
-      {
-        q: "What's the difference between a redesign and ongoing optimization?",
-        a: "Optimization makes incremental, tested improvements to an existing design — a clearer product page layout, a shorter checkout form. A redesign rebuilds the experience more broadly, usually because multiple issues have accumulated at once or the brand itself has changed. Most stores need far more optimization than redesign.",
-      },
-      {
-        q: "Should I redesign my theme or rebuild it completely?",
-        a: "That depends on how much of the current experience is actually working — if navigation, product pages, and checkout perform reasonably well, a targeted redesign within the current theme structure is usually faster and lower-risk than a full rebuild. Our [[/blogs/shopify-theme-vs-custom-development|theme versus custom development guide]] covers that decision in more depth.",
-      },
-      {
-        q: "Is a redesign the same as migrating to a new platform?",
-        a: "No — a redesign changes the experience while staying on Shopify. A migration moves the store to or from a different platform entirely, which is a different project with different risks, particularly around SEO and redirects. Our [[/blogs/migrating-to-shopify-guide|Shopify migration guide]] covers that separately.",
-      },
-      {
-        q: "When is a redesign unnecessary?",
-        a: "When the actual problem is narrower than it feels — a slow checkout, a confusing navigation menu, or weak product photography can often be fixed directly without touching the rest of the site. A full redesign is expensive and risky to reach for before ruling out a targeted fix.",
-      },
-      {
-        q: "What should happen before design work starts on a redesign?",
-        a: "An audit of current performance, analytics, and UX issues — redesigning without this risks solving problems nobody has while leaving the real ones untouched. Our [[/blogs/shopify-analytics-guide|analytics guide]] covers what that review should look at first.",
-      },
-      {
-        q: "Does a redesign guarantee better conversion?",
-        a: "No — a redesign not grounded in real usage data can just as easily hurt conversion as help it, especially if it changes something that was quietly working well. This is why a redesign should be planned like a CRO project with a visual component, not the reverse.",
-      },
+      { q: "When should I redesign my Shopify store?", a: "When evidence shows problems that optimization can't fix: an outdated brand, a theme that can't support what you sell, navigation that no longer fits the catalog, poor mobile usability or performance problems rooted in the theme. If the issues are specific and fixable, optimize instead." },
+      { q: "Will redesigning my Shopify store hurt SEO?", a: "It doesn't have to. Keep product and collection handles where possible, add redirects for anything that changes, preserve titles, descriptions, alt text and useful content, and monitor search performance after launch." },
+      { q: "Should I use a Shopify theme or a custom theme for a redesign?", a: "A well-chosen theme is faster and cheaper and suits many stores. A custom theme makes sense when brand, catalog complexity or features need more than a theme can offer. Many redesigns use a theme as a base with custom sections." },
+      { q: "Can I redesign my Shopify store without taking it offline?", a: "Yes. Build and preview the new design as an unpublished theme while the current theme stays live, then publish it when it's ready. Shopify's Rollouts feature can also schedule theme changes." },
+      { q: "How long does a Shopify redesign take?", a: "It depends on catalog size, custom features, integrations, content and how many decisions need making. A theme-based refresh is much smaller than a custom theme with new templates, apps and content." },
+      { q: "What should I measure before a Shopify redesign?", a: "Conversion rate breakdown by device and traffic source, add-to-cart and checkout rates, top landing pages, search terms, Core Web Vitals from Shopify's web performance dashboard and organic search performance, so you can compare after launch." },
+      { q: "Do I need to rebuild my apps during a redesign?", a: "Review every app. Remove ones you no longer use, check that the rest support Online Store 2.0 app blocks and embeds, and look for leftover code from removed apps in the old theme." },
+      { q: "What's the difference between a redesign and replatforming?", a: "A redesign changes the store's design and theme on Shopify. Replatforming moves the store to or from another platform, which carries more data, URL and integration risk." },
+      { q: "Should I A/B test a Shopify redesign?", a: "Where traffic allows, testing the new theme against the current one reduces risk. Otherwise, launch with a baseline, watch key metrics closely and be ready to fix problems quickly." },
+      { q: "What is the most common redesign mistake?", a: "Redesigning for appearance without diagnosing why the current store underperforms, which often reproduces the same problems in a new style." },
     ],
     content: [
       {
-        heading: "A redesign is a diagnosis, not a default",
+        heading: "Quick answer",
         body: [
-          "\"Our site feels dated\" is a common reason to consider a redesign, but it's rarely the most useful one on its own. The stronger signals are specific and measurable: conversion has been declining without a clear traffic explanation, mobile behavior looks meaningfully worse than desktop, checkout abandonment is high, or the brand itself has changed — a new audience, new product categories, or international expansion the current site wasn't built for.",
-          "Redesigning in response to a vague feeling risks spending a significant budget without knowing what specifically it fixed. Redesigning in response to specific evidence gives you something to measure against afterward.",
+          "To redesign a Shopify store, diagnose before you design. Record a baseline of conversion, funnel, speed and search data, audit what's actually wrong, and decide whether you need a refresh, a new theme or a custom theme. Plan the navigation, collections and templates, then design the key pages and build on an unpublished theme. Protect SEO by keeping handles or adding redirects, and test on real devices, including test orders. Launch deliberately, compare against the baseline and keep optimizing. A redesign should solve identified problems, not just change the look.",
         ],
       },
       {
-        heading: "Redesign vs. optimization, and rebuild vs. refresh",
+        heading: "Redesign, Refresh or Optimize?",
         body: [
-          "Most stores need far more ongoing optimization — the kind covered in our [[/blogs/shopify-cro-guide|Shopify CRO guide]] — than they need a full redesign. Optimization is lower-risk, testable, and compounds over time. A redesign makes sense when problems have accumulated across multiple areas at once, or when the brand has changed enough that incremental fixes to the old design don't make sense anymore.",
-          "Within a redesign, a targeted refresh within your existing theme structure is usually faster and lower-risk than a complete rebuild — reserve a full rebuild for cases where the underlying architecture, not just the visual design, is the actual constraint.",
+          "Not every underperforming store needs a redesign. Choosing the smallest change that solves the real problem saves money and risk.",
         ],
-      },
-      {
-        heading: "When migration is unnecessary",
-        body: [
-          "It's worth being explicit that a redesign and a platform migration are different projects. If the core issue is how the store looks and converts, that's solved on Shopify, without the added risk of a platform move. Migration is a separate, larger decision covered in our [[/blogs/migrating-to-shopify-guide|Shopify migration guide]] — don't fold a redesign into a migration project unless there's an independent reason to leave the current platform.",
-        ],
-      },
-      {
-        heading: "How to plan a Shopify redesign",
-        body: [
-          "A redesign that holds up follows roughly this sequence, each stage feeding the next:",
-        ],
-        checklist: [
-          "Audit the current site — performance, UX, and technical issues",
-          "Review analytics to confirm where the real problems are, not assumed ones",
-          "Conduct UX research specific to your actual customers, not general best practices alone",
-          "Rework information architecture before visual design begins",
-          "Design against that structure, then build",
-          "Migrate and rewrite content deliberately, rather than porting it over unreviewed",
-          "Address SEO — preserve what's working, fix what wasn't",
-          "QA thoroughly, including mobile and edge cases",
-          "Verify performance against Core Web Vitals before launch",
-          "Launch, then monitor closely for the first weeks rather than considering it finished at go-live",
-        ],
-        visual: {
-          variant: "lines",
-          accent: "orange",
-          caption: "Each stage exists to prevent rework in the one after it — skipping ahead usually costs more time than it saves.",
+        table: {
+          headers: ["Option", "When it fits", "Scope"],
+          rows: [
+            ["Optimize", "Specific, fixable problems in otherwise sound templates", "Targeted changes and tests"],
+            ["Refresh", "Brand or visual update on a theme that still works", "Styles, content, some sections"],
+            ["Redesign", "Structure, templates or theme no longer fit the business", "New theme or major rebuild"],
+            ["Replatform", "Shopify itself doesn't fit, or moving to Shopify", "Data, URLs, integrations and design"],
+          ],
         },
       },
       {
-        heading: "Shopify Redesign Checklist",
+        heading: "Signs Your Shopify Store Needs a Redesign",
+        body: [],
+        checklist: [
+          "Usability problems appear across many templates, not one page",
+          "The visual design no longer matches the brand or price point",
+          "Mobile layouts are cramped, slow or hard to use",
+          "Navigation and collections no longer fit the catalog",
+          "Shoppers struggle to find products through menus, filters or search",
+          "Product pages can't show the information your products need",
+          "The cart and the path to checkout add friction",
+          "Performance problems are rooted in the theme itself",
+          "The theme can't support features you need without heavy workarounds",
+          "Content is hard for the team to update without a developer",
+        ],
+      },
+      {
+        heading: "Start With a Baseline",
         body: [
-          "Before calling a redesign complete, confirm:",
+          "Before changing anything, record how the current store performs so you can judge the redesign honestly. Export at least a few months of data, covering seasonal patterns if you can.",
         ],
         checklist: [
-          "Conversion-critical flows (search, product pages, cart, checkout) were tested against real usage, not just reviewed visually",
-          "Mobile experience was designed for, not adapted from desktop as an afterthought",
-          "Core Web Vitals were checked before launch, not after",
-          "Existing SEO equity — rankings, backlinks, indexed URLs — was preserved or deliberately redirected",
-          "A post-launch monitoring period is planned, with clear owners for anything that surfaces",
+          "Shopify conversion rate breakdown: sessions with cart additions, reached checkout, completed checkout",
+          "The same funnel split by device, traffic source and new vs returning customers",
+          "Top landing pages, top products and their add-to-cart rates",
+          "Internal search terms and searches with no results",
+          "Core Web Vitals from Shopify's web performance dashboard",
+          "Organic search performance by page from Search Console",
+          "Support questions and return reasons that point to UX problems",
         ],
-        callout: {
-          type: "takeaway",
-          text: "A redesign is successful when it's measured against the specific evidence that triggered it — not when it simply looks newer. If it's a bigger undertaking than your team has capacity for, that's a fair reason to bring in outside help — see our [[/blogs/how-to-choose-a-shopify-development-agency|guide to choosing a Shopify development agency]]. For how to tie every redesign decision back to shopper behavior rather than preference, see our [[/blogs/shopify-ux-optimization|Shopify UX optimization guide]].",
+      },
+      {
+        heading: "Audit What Exists",
+        body: [
+          "Run a UX and conversion review of the current store: navigation, search, collection pages, product pages, cart, mobile, trust and speed. Inventory the content (pages, collections, templates, metafields) and the apps (what each does, whether it's still needed, what code it adds). The audit tells you what the redesign must fix and what already works and should be kept. See [[/blogs/shopify-cro-audit|Shopify CRO audit]] and [[/blogs/how-to-conduct-a-ux-audit|how to conduct a UX audit]].",
+        ],
+      },
+      {
+        heading: "Theme or Custom Theme?",
+        body: [
+          "Shopify Theme Store themes are built on Online Store 2.0, with sections and blocks merchants can edit, and must meet Shopify's review standards, including a [[https://shopify.dev/docs/storefronts/themes/best-practices/performance|minimum average Lighthouse performance score of 60]] across the home, product and collection pages. A well-chosen theme gets you a solid, maintainable base quickly.",
+          "A custom theme makes sense when the brand needs a distinctive experience, the catalog needs templates a theme can't produce, or performance and features need tighter control. Custom themes should still use sections and blocks so the team can edit content without developers. Many redesigns land in between: a strong theme plus custom sections. See [[/blogs/shopify-theme-vs-custom-development|Shopify theme vs custom development]].",
+        ],
+      },
+      {
+        heading: "Content Structure and Navigation",
+        body: [
+          "Redesign is the right moment to fix structure. Review collections against how customers shop, rewrite menu labels in their language, decide which attributes should be filters (configured with the Search & Discovery app) and move structured product information such as size guides and materials into metafields. Plan alternate templates for product types that need different layouts. See [[/blogs/ecommerce-navigation-design|ecommerce navigation design]].",
+        ],
+      },
+      {
+        heading: "Designing the Key Templates",
+        body: [
+          "Design templates in order of their effect on revenue, usually product, collection, cart and home, each on mobile first. Design every state: sale prices, sold-out variants, long product names, empty collections, no search results and cart errors.",
+        ],
+        table: {
+          headers: ["Template", "Priority questions", "Deeper guide"],
+          rows: [
+            ["Product", "Does it answer buying questions near the button?", "[[/blogs/shopify-product-page-optimization|Product page optimization]]"],
+            ["Collection", "Can shoppers filter, sort and compare quickly?", "[[/blogs/ecommerce-category-page-design|Product listing pages]]"],
+            ["Cart", "Are costs clear and is checkout one step away?", "[[/blogs/shopify-cart-optimization|Cart optimization]]"],
+            ["Home", "Does it orient and route visitors?", "[[/blogs/shopify-homepage-cro|Homepage optimization]]"],
+            ["Search", "Does it understand how customers ask?", "[[/blogs/ecommerce-search-ux|Ecommerce search UX]]"],
+          ],
         },
+      },
+      {
+        heading: "Branding and Design System",
+        body: [
+          "Define typography, colour, spacing, buttons, product cards and imagery rules once, in theme settings and a small design system, rather than styling each section differently. Consistency makes the store feel trustworthy and makes future pages faster to build. See [[/blogs/shopify-store-design|Shopify store design]].",
+        ],
         cta: {
-          title: "Is your Shopify store due for a redesign?",
-          description: "We start every redesign with an audit, not a mood board — so the work is grounded in what your store actually needs to fix.",
+          title: "Planning a Shopify redesign?",
+          description: "ZSpace audits your current store first, then designs and builds the redesign around what the data shows.",
         },
+      },
+      {
+        heading: "Set a Performance Budget",
+        body: [
+          "Redesigns often get slower because every new section, font and app adds weight. Agree limits before design starts: image sizes, number of font families and weights, which apps load on which templates, and target Core Web Vitals. Check them during build, not after launch. See [[/blogs/shopify-speed-cro|Shopify website speed optimization]].",
+        ],
+      },
+      {
+        heading: "Preserve SEO",
+        body: [
+          "Shopify's URL structure for products, collections and pages is fixed, which makes theme redesigns lower-risk than platform migrations, but changes to handles, collections and content still matter.",
+        ],
+        checklist: [
+          "Keep product, collection and page handles unless there's a strong reason to change them",
+          "When a handle changes, create a URL redirect; Shopify offers to do this when you edit a handle",
+          "Redirect removed collections and pages to the closest relevant page",
+          "Keep useful collection descriptions and product copy, restyled rather than deleted",
+          "Preserve title tags, meta descriptions, image alt text and heading structure",
+          "Check that structured data from the old theme or apps is still output",
+          "Keep internal links to important collections and products",
+          "Monitor Search Console for errors and ranking changes after launch",
+        ],
+      },
+      {
+        heading: "Apps and Integrations",
+        body: [
+          "List every app, what it does and where it appears. Remove apps you don't use, replace those that don't support app blocks or embeds, and check for leftover code from previously uninstalled apps in the old theme, which should not be copied into the new one. Confirm integrations such as reviews, subscriptions, loyalty, search and analytics work in the new theme before launch.",
+        ],
+      },
+      {
+        heading: "The Shopify Redesign Process",
+        body: ["The diagram at the top of this article shows the sequence. Each phase has a clear output."],
+        table: {
+          headers: ["Phase", "Output"],
+          rows: [
+            ["Baseline", "Recorded funnel, speed and search data"],
+            ["Audit", "Prioritized problems and what to keep"],
+            ["Plan and IA", "Collections, navigation, templates, metafields, app decisions"],
+            ["Design", "Mobile-first templates with all states"],
+            ["Build and QA", "New theme built unpublished, tested on devices"],
+            ["Launch", "Theme published, redirects live, tracking verified"],
+            ["Measure", "Comparison with the baseline and a backlog of improvements"],
+          ],
+        },
+      },
+      {
+        heading: "Testing Before Launch",
+        body: [],
+        checklist: [
+          "Every template on real iOS and Android phones and on desktop browsers",
+          "Test orders through the full checkout using test payments",
+          "Discounts, gift cards, subscriptions and bundles if you use them",
+          "Search, filters and product recommendations",
+          "Analytics and marketing pixels firing correctly",
+          "Redirects for every changed or removed URL",
+          "Core Web Vitals on key templates in lab tools",
+          "Accessibility: keyboard use, focus, contrast and alt text",
+        ],
+      },
+      {
+        heading: "Launching and Testing After Launch",
+        body: [
+          "Build on an unpublished theme and publish when ready, ideally at a quieter time rather than before a major sale. Where your plan and traffic allow, Shopify's Rollouts can schedule the theme change or split traffic between the old and new theme; otherwise launch with the baseline ready. For the first weeks, watch the funnel by device, errors, search performance, Core Web Vitals and support contacts daily, and fix problems quickly.",
+          "A redesign is the start of optimization, not the end. Use the new design as the base for [[/blogs/shopify-cro-guide|ongoing Shopify CRO]].",
+        ],
+      },
+      {
+        heading: "Migration Risks",
+        body: [
+          "If the redesign includes moving to Shopify from another platform, risks multiply: product and customer data, order history, URL changes across the whole site, integrations and payment setup. Treat it as a migration project with its own plan. See [[/blogs/migrating-to-shopify-guide|migrating to Shopify]].",
+        ],
+      },
+      {
+        heading: "Common Shopify Redesign Mistakes",
+        body: [],
+        checklist: [
+          "Redesigning without diagnosing why the current store underperforms",
+          "No baseline, so success can't be measured",
+          "Choosing a theme for its demo store rather than your catalog",
+          "Copying old app code into the new theme",
+          "Changing handles without redirects",
+          "Designing desktop first",
+          "Launching right before a peak sales period",
+        ],
+        cta: {
+          title: "Want a redesign that fixes the real problems?",
+          description: "Talk to ZSpace about [[/services/shopify-development|Shopify development]], [[/services/ui-ux-design|UX design]] and a [[/services/cro-audit|pre-redesign audit]].",
+        },
+      },
+      {
+        heading: "Conclusion",
+        body: [
+          "A good Shopify redesign starts with evidence and ends with measurement. Record a baseline, audit the store, choose the right theme approach, fix structure, design key templates for mobile, protect SEO, test thoroughly and launch deliberately. For consumer brands weighing whether to redesign at all, see [[/blogs/d2c-website-redesign|D2C website redesign]]. Not sure whether you need a redesign or a rebuild? See [[/blogs/shopify-redesign-vs-rebuild|Shopify redesign vs rebuild]].",
+        ],
       },
     ],
   },
@@ -2401,7 +1948,7 @@ export const posts: BlogPost[] = [
 // The "AI agents in [industry]" cluster lives in its own module — merged in
 // here so every existing consumer of `posts` (listing, sitemap, related
 // posts, category filter) picks it up automatically.
-posts.push(...aiAgentPosts, ...aiAgentPosts2, ...aiAgentPosts3, ...shopifyCroPosts, ...shopifyCroPosts2, ...shopifyCroPosts3, ...shopifyCroPosts4, ...webDevPosts, ...webDevPosts2, ...webDevPosts3, ...webDevPosts4, ...webDevPosts5, ...webDevPosts6, ...webDevPosts7, ...webDevPosts8, ...webDevPosts9, ...mobilePosts, ...mobilePosts2, ...mobilePosts3, ...mobilePosts4, ...mobilePosts5, ...designPosts, ...designPosts2, ...designPosts3);
+posts.push(...aiAgentPosts, ...aiAgentPosts2, ...aiAgentPosts3, ...shopifyCroPosts, ...shopifyCroPosts2, ...shopifyCroPosts3, ...shopifyCroPosts4, ...webDevPosts, ...webDevPosts2, ...webDevPosts3, ...webDevPosts4, ...webDevPosts5, ...webDevPosts6, ...webDevPosts7, ...webDevPosts8, ...webDevPosts9, ...mobilePosts, ...mobilePosts2, ...mobilePosts3, ...mobilePosts4, ...mobilePosts5, ...designPosts, ...designPosts2, ...designPosts3, ...designPosts4, ...designPosts5, ...designPosts6, ...designPosts7, ...growthPosts, ...growthPosts2, ...commercePosts, ...commercePosts2, ...commercePosts3, ...commercePosts4, ...commercePosts5, ...commercePosts6, ...commercePosts7, ...commercePosts8, ...commercePosts9, ...commerceRewrites, ...commercePosts10, ...commercePosts11, ...commercePosts12, ...commercePosts13, ...commercePosts14, ...commercePosts15, ...commercePosts16, ...commercePosts17, ...commercePosts18, ...commercePosts19, ...commercePosts20, ...commercePosts21, ...commerceRewrites2, ...commercePosts22, ...commercePosts23, ...commercePosts24, ...commercePosts25, ...commercePosts26, ...commercePosts27, ...commercePosts28, ...commercePosts29, ...commercePosts30, ...commercePosts31, ...commercePosts32, ...commercePosts33, ...commercePosts34, ...commercePosts35, ...commercePosts36, ...commercePosts37, ...commercePosts38, ...commercePosts39, ...commercePosts40, ...commercePosts41, ...commercePosts42, ...commercePosts43, ...commercePosts44, ...commercePosts45, ...commercePosts46, ...commercePosts47, ...commercePosts48, ...commercePosts49, ...commercePosts50, ...commercePosts51, ...commercePosts52, ...commercePosts53, ...commercePosts54, ...commercePosts55, ...commercePosts56, ...commercePosts57, ...commercePosts58, ...commercePosts59, ...commercePosts60, ...commercePosts61, ...commercePosts62, ...commercePosts63, ...commercePosts64, ...commercePosts65, ...commercePosts66, ...commercePosts67, ...commercePosts68);
 
 export function getPostBySlug(slug: string) {
   return posts.find((post) => post.slug === slug);

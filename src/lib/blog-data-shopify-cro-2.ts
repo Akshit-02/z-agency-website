@@ -13,9 +13,9 @@ export const shopifyCroPosts2: BlogPost[] = [
   // ------------------------------------------------------------- HOMEPAGE
   {
     slug: "shopify-homepage-cro",
-    title: "Shopify Homepage CRO: How to Turn More Visitors Into Customers",
+    title: "Shopify Homepage Optimization: How to Turn More Visitors Into Customers",
     excerpt:
-      "What actually earns its place above the fold on a Shopify homepage, and how to audit the page that carries the most traffic in your entire store.",
+      "How to optimize a Shopify homepage for conversion: value proposition, hero, navigation, collections, bestsellers, trust, promotions, speed and testing.",
     category: "Shopify & Ecommerce",
     banner: "homepageanatomy",
     date: "2026-07-13",
@@ -55,6 +55,8 @@ export const shopifyCroPosts2: BlogPost[] = [
         q: "Should the homepage be different for new visitors vs returning visitors?",
         a: "Where feasible, yes — a returning visitor who already knows your brand doesn't need the same introductory messaging a first-time visitor does, and can be shown more product-forward content instead. This connects to the broader personalization approach covered in the [[/blogs/shopify-personalization|Shopify personalization guide]].",
       },
+      { q: "How do I edit my Shopify homepage?", a: "Open Online Store > Themes > Customize and select the home page template. You can add, remove and reorder sections and blocks, and edit their content, without code on Online Store 2.0 themes." },
+      { q: "Should a Shopify homepage use a slideshow?", a: "Avoid putting essential messages in auto-rotating slides. A single hero with one clear message and route usually communicates better, and moving content must be pausable for accessibility." },
     ],
     content: [
       {
@@ -126,6 +128,28 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
       },
       {
+        heading: "Implementing Homepage Changes on Shopify",
+        body: [
+          "A Shopify homepage is a JSON template built from sections, so most optimization happens in the theme editor: reorder sections, remove ones that don't earn their place, and configure each block's content. Sections such as featured collection, collection list, image with text and rich text cover most homepage needs; anything more specific can be built as a custom section that marketers can still edit.",
+          "Keep homepage performance in mind while doing this. The hero image is usually the largest element, so it shouldn't be lazy-loaded, and every app embed or third-party widget added to the homepage adds script weight. Shopify's web performance dashboard shows Core Web Vitals from real visitors, which lets you check whether homepage changes made things slower.",
+        ],
+        table: {
+          headers: ["Homepage goal", "Shopify building block"],
+          rows: [
+            ["Clear value proposition", "Image banner or hero section with one primary button"],
+            ["Category routes", "Collection list section, or menu links set in Navigation"],
+            ["Bestsellers or new arrivals", "Featured collection section pointing at a curated or automated collection"],
+            ["Search", "Header search, with filters, synonyms and boosts configurable in the Search & Discovery app"],
+            ["Trust", "Rich text or icon-with-text sections for delivery, returns and contact; review app blocks"],
+            ["Promotions", "Announcement bar or a single promotional section rather than a rotating slideshow"],
+          ],
+        },
+        cta: {
+          title: "Want a homepage that routes visitors to the right products?",
+          description: "ZSpace redesigns and rebuilds Shopify homepages around your real traffic, with sections your team can keep editing.",
+        },
+      },
+      {
         heading: "Homepage Audit Checklist",
         body: ["A working checklist for reviewing an existing Shopify homepage."],
         checklist: [
@@ -159,7 +183,7 @@ export const shopifyCroPosts2: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "The homepage carries more traffic than any other single page for most Shopify stores, which makes even modest improvements here compound quickly. Focus the above-the-fold message, curate rather than catalog-dump featured products, and keep trust signals present without clutter — then measure whether visitors are actually moving forward, not just whether the page looks better.",
+          "The homepage carries more traffic than any other single page for most Shopify stores, which makes even modest improvements here compound quickly. Focus the above-the-fold message, curate rather than catalog-dump featured products, and keep trust signals present without clutter — then measure whether visitors are actually moving forward, not just whether the page looks better. For platform-independent homepage design, see [[/blogs/ecommerce-homepage-ux|ecommerce homepage UX]].",
         ],
       },
     ],
@@ -168,16 +192,21 @@ export const shopifyCroPosts2: BlogPost[] = [
   // -------------------------------------------------------------- SEARCH
   {
     slug: "shopify-search-optimization",
-    title: "Shopify Search Optimization: How to Help Customers Find Products Faster",
+    title: "Shopify Search Optimization: How to Improve Store Search",
     excerpt:
-      "Why internal search failures are one of the most overlooked conversion leaks on Shopify stores, and how to fix zero-result searches specifically.",
+      "How to improve Shopify store search: predictive search, Search & Discovery synonyms, boosts and filters, zero-result searches, mobile search and search analytics.",
     category: "Shopify & Ecommerce",
-    banner: "serp",
+    banner: "shopifysearchflow",
+    bannerAlt:
+      "Shopify search flow: search box, predictive search, results page, filters and sort, then product, with synonyms, boosts and zero-result fixes applied to the results.",
     date: "2026-07-20",
+    updated: "2026-09-29",
     readingTime: "11 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
     relatedIndustrySlugs: ["d2c-consumer", "ecommerce"],
     faqs: [
+      { q: "What is Shopify Search & Discovery?", a: "A free app made by Shopify for tuning storefront search and discovery: synonym groups, product boosts, storefront filters, product recommendations and search reports." },
+      { q: "Where can I see what customers search for on Shopify?", a: "In the Search & Discovery app's reports and in Shopify's analytics, and in GA4 if site search tracking is configured. Review searches with no results and no clicks every week." },
       {
         q: "Why does Shopify internal search optimization matter for conversion?",
         a: "A visitor who searches is telling you exactly what they want, with unusually high purchase intent compared to someone browsing passively — Baymard Institute's research on ecommerce search has found roughly a third of on-site searches fail to return relevant results across typical implementations, which means a meaningful share of your highest-intent visitors are being actively let down.",
@@ -222,6 +251,13 @@ export const shopifyCroPosts2: BlogPost[] = [
         heading: "Why Internal Search Is a Hidden Conversion Leak",
         body: [
           "Unlike a visitor casually browsing collections, someone who types a specific search query has already formed intent — they know roughly what they want and are actively trying to find it. When search fails them, either through a zero-result page or a list of irrelevant results, the cost is disproportionate to how rare the failure might seem, because it's happening to exactly the visitors who were closest to buying.",
+        ],
+      },
+      {
+        heading: "How Shopify Store Search Works",
+        body: [
+          "Shopify stores have two search experiences, shown in the diagram above. {{b:Predictive search}} suggests products, collections, pages and queries as shoppers type, in themes that support it. The {{b:search results page}} lists matching products and other content, with filters and sorting. Behind both sits Shopify's storefront search, which you tune with the free Shopify Search & Discovery app: synonyms, product boosts, filters and recommendations ([[https://help.shopify.com/en/manual/online-store/search-and-discovery|Shopify Help Center]]).",
+          "This guide is the Shopify implementation. For platform-independent search strategy, see [[/blogs/ecommerce-site-search|ecommerce site search]]; for interface design, see [[/blogs/ecommerce-search-ux|ecommerce search UX]].",
         ],
       },
       {
@@ -275,6 +311,35 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
       },
       {
+        heading: "Configuring Search & Discovery",
+        body: [
+          "Most Shopify search improvements happen in the Search & Discovery app and in product data, not in code.",
+        ],
+        table: {
+          headers: ["Tool", "What it does", "Use it for"],
+          rows: [
+            ["Synonym groups", "Make different words return the same results", "sofa / couch, trainers / sneakers, SPF / sunscreen"],
+            ["Product boosts", "Rank a product higher for up to 10 assigned search terms", "Main products above accessories for generic terms"],
+            ["Filters", "Refine collection and search results by availability, price, type, vendor, options and metafields", "Size in stock, material, compatibility"],
+            ["Recommendations", "Customize related and complementary products", "Alternatives on no-result pages and product pages"],
+            ["Reports", "Searches by query, searches with no results, searches with no clicks, click and purchase rates", "Weekly review of failing queries"],
+          ],
+        },
+        checklist: [
+          "Make product titles include the product type, not only a collection name",
+          "Store searchable attributes in metafields and use them in filters; see [[/blogs/shopify-collection-page-seo|Shopify collection SEO]] for keeping filter URLs out of search",
+          "Hide products that shouldn't appear in search, such as samples or gift wrap, using searchability settings",
+          "Add synonyms from real zero-result queries, not guesses",
+          "Use complementary and related recommendations on no-result pages; see [[/blogs/shopify-product-recommendations|Shopify product recommendations]]",
+          "Review boosts regularly so stale ones don't distort results",
+          "Treat search as one route in wider [[/blogs/ecommerce-product-discovery|product discovery]]",
+        ],
+        cta: {
+          title: "Want Shopify search that finds what shoppers type?",
+          description: "ZSpace configures Search & Discovery, cleans product data and tunes results from your real search terms.",
+        },
+      },
+      {
         heading: "Mobile Search",
         body: [
           "Search matters even more on mobile, where typing is slower and more error-prone — autocomplete, generous typo tolerance and synonym handling all carry more relative weight here than on desktop. This connects to the broader mobile experience covered in the [[/blogs/shopify-mobile-cro|Shopify mobile CRO guide]].",
@@ -313,6 +378,7 @@ export const shopifyCroPosts2: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Internal search failures cost disproportionately because they happen to your highest-intent visitors — people who told you exactly what they wanted and were let down. Configure synonyms, never let a zero-result page become a dead end, and treat your search analytics as one of the more direct sources of product and content ideas your store already has.",
+          "For related guides, see [[/blogs/ecommerce-search-analytics|search analytics]] and [[/blogs/ecommerce-search-ranking|search ranking]].",
         ],
       },
     ],
@@ -458,7 +524,7 @@ export const shopifyCroPosts2: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Cross-sells, upsells, alternatives and personalized suggestions are different tools for different moments in the shopping decision — using the right one in the right place helps; stacking several generic ones adds noise. Keep placement deliberate, measure both AOV and the primary conversion metric together, and test rather than assume a recommendation module is working just because it's there.",
+          "Cross-sells, upsells, alternatives and personalized suggestions are different tools for different moments in the shopping decision — using the right one in the right place helps; stacking several generic ones adds noise. Keep placement deliberate, measure both AOV and the primary conversion metric together, and test rather than assume a recommendation module is working just because it's there. For platform-independent strategy and measurement, see [[/blogs/ecommerce-product-recommendations|ecommerce product recommendations]].",
         ],
       },
     ],
@@ -731,7 +797,7 @@ export const shopifyCroPosts2: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Personalization genuinely helps where there's real behavioral or purchase data to draw from — returning visitors, clear geographic or cart signals — and adds risk where it's forced from too little data. Build it on first-party data collected transparently, keep a well-chosen generic default for visitors you don't yet know enough about, and test rather than assume it's working.",
+          "Personalization genuinely helps where there's real behavioral or purchase data to draw from — returning visitors, clear geographic or cart signals — and adds risk where it's forced from too little data. Build it on first-party data collected transparently, keep a well-chosen generic default for visitors you don't yet know enough about, and test rather than assume it's working. For the platform-independent view, see [[/blogs/ecommerce-personalization|ecommerce personalization]].",
         ],
       },
     ],
@@ -1472,7 +1538,7 @@ export const shopifyCroPosts2: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "DTC CRO connects traffic quality, on-site experience across every stage of the funnel, and the customer relationship beyond the first purchase — which is why it needs a framework broader than any single page-level fix. Start with measurement, diagnose before you prioritize, test before you implement broadly, and treat the whole cycle as continuous rather than a project you finish once. Every stage-specific guide in this cluster exists to support one part of this larger sequence.",
+          "DTC CRO connects traffic quality, on-site experience across every stage of the funnel, and the customer relationship beyond the first purchase — which is why it needs a framework broader than any single page-level fix. Start with measurement, diagnose before you prioritize, test before you implement broadly, and treat the whole cycle as continuous rather than a project you finish once. Every stage-specific guide in this cluster exists to support one part of this larger sequence. For a platform-independent version of this framework, see [[/blogs/d2c-conversion-rate-optimization|D2C conversion rate optimization]].",
         ],
       },
     ],

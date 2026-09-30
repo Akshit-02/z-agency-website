@@ -397,6 +397,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Most of these mistakes aren't dramatic on their own — they're quiet defaults that accumulate unnoticed until a real audit surfaces them. Reviewing this list against your own store, honestly, is a faster path to real improvement than adding another new feature on top of unresolved friction underneath it.",
+          "For related guides, see [[/blogs/ecommerce-experimentation-mistakes|experimentation mistakes]].",
         ],
       },
     ],
@@ -492,7 +493,7 @@ export const shopifyCroPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Symptoms are a fast way to narrow down where to look, but they're not a diagnosis on their own — two stores with the same weak add-to-cart rate can have entirely different underlying causes. Use this guide to point your investigation in the right direction, then confirm with real evidence before implementing a fix.",
+          "Symptoms are a fast way to narrow down where to look, but they're not a diagnosis on their own — two stores with the same weak add-to-cart rate can have entirely different underlying causes. Use this guide to point your investigation in the right direction, then confirm with real evidence before implementing a fix. For a full diagnostic framework, see [[/blogs/ecommerce-traffic-but-no-sales|ecommerce traffic but no sales]]. For the platform-independent diagnostic, see [[/blogs/ecommerce-website-not-converting|ecommerce website not converting]].",
         ],
       },
     ],
@@ -589,7 +590,7 @@ export const shopifyCroPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Finding a real conversion problem is a sequence, not a single glance at a dashboard — What tells you there's an issue, Where and Who narrow it down, Why explains it, and Evidence and Test confirm it before you commit engineering or design time to a fix.",
+          "Finding a real conversion problem is a sequence, not a single glance at a dashboard — What tells you there's an issue, Where and Who narrow it down, Why explains it, and Evidence and Test confirm it before you commit engineering or design time to a fix. For a quick first pass, see [[/blogs/shopify-store-not-converting|Shopify store not converting: what to check first]].",
         ],
       },
     ],
@@ -1114,7 +1115,7 @@ export const shopifyCroPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "The cart is an easy stage to overlook — it's not the product decision and it's not the purchase itself, but it's exactly where cost surprises and friction quietly convert real intent into an abandoned session. Cost transparency and easy editability are the two highest-leverage fixes most carts are missing.",
+          "The cart is an easy stage to overlook — it's not the product decision and it's not the purchase itself, but it's exactly where cost surprises and friction quietly convert real intent into an abandoned session. Cost transparency and easy editability are the two highest-leverage fixes most carts are missing. For diagnosing the whole gap between add to cart and purchase, see [[/blogs/add-to-cart-but-no-purchase|add to cart but no purchase]].",
         ],
       },
     ],

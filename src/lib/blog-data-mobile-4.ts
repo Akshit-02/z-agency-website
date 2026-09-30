@@ -500,6 +500,7 @@ export const mobilePosts4: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Privacy starts with collecting less, then being transparent, asking at the right time, controlling SDKs and honoring users' rights. Platform rules from Apple and Google set a baseline everywhere; local laws add requirements that vary by jurisdiction. Build the technical foundations, and confirm legal obligations with qualified counsel. For the wider build context, see the [[/blogs/mobile-app-development-guide|mobile app development guide]].",
+          "For related guides, see [[/blogs/ecommerce-privacy-customer-data|ecommerce privacy and customer data]].",
         ],
       },
     ],

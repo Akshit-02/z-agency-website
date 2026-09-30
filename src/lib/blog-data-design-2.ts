@@ -79,7 +79,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Step 4: Design the Structure and Flows",
         body: [
-          "Create a sitemap showing hierarchy, and user flows for key tasks. Balance breadth and depth: too many top-level items overwhelm; too many levels bury content. Check that the most common tasks need the fewest steps.",
+          "Create a sitemap showing hierarchy, and user flows for key tasks. Balance breadth and depth: too many top-level items overwhelm; too many levels bury content. Check that the most common tasks need the fewest steps. See [[/blogs/user-flow-design|user flow design]] for mapping flows, and [[/blogs/information-architecture-vs-user-flow|information architecture vs user flow]] for how the two fit together.",
         ],
         cta: {
           title: "Is your product hard to navigate?",
@@ -479,6 +479,7 @@ export const designPosts2: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Many accessibility barriers are design decisions: contrast, focus, target size, color use, labels and motion. Design them in, annotate them for developers, and encode them in your design system. Then test with assistive technology and real users, as part of [[/blogs/usability-testing|usability testing]].",
+          "For related guides, see [[/blogs/ecommerce-accessibility-checklist|ecommerce accessibility checklist]].",
         ],
       },
     ],
@@ -523,7 +524,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "The Audit Process",
         body: [
-          "A thorough audit moves through discovery, heuristic review, analytics, user testing, prioritization and recommendations.",
+          "A thorough audit moves through discovery, heuristic review, analytics, user testing, prioritization and recommendations. For a detailed walkthrough of each step, see [[/blogs/how-to-conduct-a-ux-audit|how to conduct a UX audit]].",
         ],
         visual: { variant: "rows", accent: "orange", caption: "Discover, heuristic review, analytics, user testing, prioritize, recommend." },
         table: {
@@ -541,7 +542,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Heuristic Evaluation",
         body: [
-          "Evaluators review key flows against [[https://www.nngroup.com/articles/ten-usability-heuristics/|Nielsen's 10 usability heuristics]]: status visibility, match with real-world language, user control, consistency, error prevention, recognition over recall, flexibility, minimalist design, error recovery and help. Each issue gets a severity rating. Heuristic review is fast but relies on expertise, so it's strongest combined with data.",
+          "Evaluators review key flows against [[https://www.nngroup.com/articles/ten-usability-heuristics/|Nielsen's 10 usability heuristics]]: status visibility, match with real-world language, user control, consistency, error prevention, recognition over recall, flexibility, minimalist design, error recovery and help. Each issue gets a severity rating. Heuristic review is fast but relies on expertise, so it's strongest combined with data. See [[/blogs/ux-heuristic-evaluation|UX heuristic evaluation]] for the full method.",
         ],
       },
       {
@@ -631,23 +632,25 @@ export const designPosts2: BlogPost[] = [
   // -------------------------------------------------------- USABILITY TESTING
   {
     slug: "usability-testing",
-    title: "Usability Testing: How to Test Designs With Real Users",
+    title: "Usability Testing: How to Test a Website or Digital Product",
     excerpt:
-      "How to plan, recruit for, run and analyze usability tests, moderated or unmoderated, and turn what you observe into design improvements.",
+      "How to plan, recruit for, script, run and analyze usability tests, moderated or unmoderated, remote or in person, and turn findings into design fixes.",
     category: "UI/UX",
     banner: "usabilityflow",
     date: "2026-10-23",
-    readingTime: "12 min read",
+    readingTime: "16 min read",
     relatedServiceSlugs: ["ui-ux-design", "cro-audit"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
     faqs: [
-      { q: "What is usability testing?", a: "Observing representative users as they attempt realistic tasks with a product or prototype, to find where the design causes confusion, errors or delay." },
-      { q: "How many users do I need for a usability test?", a: "For qualitative testing, Nielsen Norman Group recommends around five users per round for a given user group, and running several small rounds rather than one large one." },
+      { q: "What is usability testing?", a: "Observing representative users as they attempt realistic tasks with a website, app or prototype, to find where the design causes confusion, errors or delay." },
+      { q: "How many users do I need for a usability test?", a: "For qualitative testing, Nielsen Norman Group recommends around five users per round for a given user group, and running several small rounds rather than one large one. For quantitative benchmarks, NN/g suggests around 20 users or more." },
       { q: "What's the difference between moderated and unmoderated testing?", a: "In moderated tests a facilitator guides the session live and can ask follow-up questions. Unmoderated tests are completed by participants alone, usually through a testing platform, and are faster to scale." },
+      { q: "Is remote usability testing as good as in-person testing?", a: "For most websites and apps, remote testing works well and lets you reach participants in their own environment. In-person testing is better for physical products, specialist equipment, complex setups or when you need to see body language and device handling closely." },
       { q: "Can you test a prototype?", a: "Yes. Testing prototypes before development is one of the most valuable uses of usability testing." },
       { q: "What is the think-aloud method?", a: "Asking participants to say what they're thinking as they work through tasks, which reveals their expectations and confusion." },
       { q: "What should a usability test task look like?", a: "A realistic scenario with a goal, such as \"Find a waterproof jacket in your size under a set budget and add it to your cart\", without telling users where to click." },
-      { q: "What metrics come from usability testing?", a: "Task success, time on task, errors, and post-task ratings, alongside qualitative observations. With small samples, focus on the observations." },
+      { q: "What metrics come from usability testing?", a: "Task success, time on task, errors, and post-task and post-test ratings such as the Single Ease Question and System Usability Scale, alongside qualitative observations. With small samples, focus on the observations." },
+      { q: "What is a usability test script?", a: "A written guide for the session: introduction and consent, warm-up questions, task scenarios in order, follow-up questions and a wrap-up, so every participant gets the same experience." },
       { q: "How is usability testing different from A/B testing?", a: "Usability testing explains why users struggle with small samples. A/B testing measures which version performs better with large samples, but not why." },
       { q: "Is usability testing the same as user research?", a: "It's one user research method, focused on evaluating a design rather than discovering needs." },
     ],
@@ -655,20 +658,20 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "Usability testing means watching representative users try to complete realistic tasks with your product or prototype, to find where the design confuses or slows them. Define what you want to learn, write scenario-based tasks, recruit participants who match your users, observe them (moderated or unmoderated) while they think aloud, then synthesize issues by severity and fix them. Small, frequent rounds of about five users each, as Nielsen Norman Group recommends, find most problems efficiently.",
+          "Usability testing means watching representative users try to complete realistic tasks with your website, app or prototype, to find where the design confuses or slows them. Decide what you need to learn and how you'll test, recruit participants who match your users, and write and pilot a script with scenario-based tasks. Run sessions while participants think aloud, capture observations and a few simple metrics, and analyze issues by severity and frequency. Report the findings, fix them and test again. Small, frequent rounds of about five users per user group, as Nielsen Norman Group recommends, find most problems efficiently.",
         ],
       },
       {
-        heading: "Why Usability Testing Works",
+        heading: "What Usability Testing Is and Why It Matters",
         body: [
-          "Teams know their product too well to see it the way new users do. Watching a few people struggle with a flow is often more persuasive than any debate. Testing prototypes, as described in [[/blogs/wireframing-vs-prototyping|wireframing vs prototyping]], finds problems before they're expensive to fix.",
+          "Usability testing evaluates a design by observing people use it. It doesn't ask whether people like a design; it shows whether they can use it to do what they came to do. Teams know their product too well to see it the way new users do, and watching a few people struggle with a flow is often more persuasive than any debate.",
+          "It works at every stage: on sketches and [[/blogs/wireframing-vs-prototyping|prototypes]] before development, on live products before a redesign, and as part of a [[/blogs/how-to-conduct-a-ux-audit|UX audit]]. The earlier you test, the cheaper the problems are to fix.",
         ],
-        visual: { variant: "funnel", accent: "blue", caption: "Plan, recruit, write tasks, observe, synthesize, fix, then test again." },
       },
       {
-        heading: "Step 1: Plan",
+        heading: "Step 1: Plan the Study",
         body: [
-          "Decide what you need to learn and which flows to test, such as signup, checkout or search. Define the participant profile and choose moderated or unmoderated testing, remote or in person.",
+          "Write down what you need to learn, which flows to test (such as signup, checkout or search) and which decisions the results will inform. Define the participant profile, the devices, the method and the success criteria for each task. A one-page test plan keeps the team aligned and stops the study growing into everything at once.",
         ],
       },
       {
@@ -685,15 +688,43 @@ export const designPosts2: BlogPost[] = [
         },
       },
       {
-        heading: "Step 2: Recruit",
+        heading: "Remote vs In-Person",
+        body: [],
+        table: {
+          headers: ["", "Remote", "In-person"],
+          rows: [
+            ["Environment", "Participant's own device and setting", "Lab, office or on location"],
+            ["Reach", "Participants anywhere", "Limited to one location"],
+            ["Observation", "Screen, voice and often face", "Full view of device handling and body language"],
+            ["Best for", "Websites and apps, distributed users", "Physical or specialist products, complex setups"],
+          ],
+        },
+      },
+      {
+        heading: "Step 2: Recruit Participants",
         body: [
-          "Recruit people who match your real users' behaviors and context. [[https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/|Nielsen Norman Group's guidance]] is that about five participants per round, per distinct user group, reveals most usability problems, and that several small rounds beat one large one. Avoid testing with colleagues.",
+          "Recruit people who match your real users' behaviours and context, not just demographics: people who have bought this kind of product online, or who do this kind of work. Use a short screener questionnaire, and recruit from your customer list, a recruiting panel or a testing platform. [[https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/|Nielsen Norman Group's guidance]] is that about five participants per round, per distinct user group, reveals most usability problems, and that several small rounds beat one large one. Avoid testing with colleagues, and offer fair incentives.",
         ],
       },
       {
-        heading: "Step 3: Write Tasks",
+        heading: "Step 3: Write Tasks and the Test Script",
         body: [
-          "Write realistic scenarios with a goal, not instructions. \"You need a gift for a friend under a set budget; find something suitable and add it to your cart\" works; \"Click the Gifts menu\" doesn't. Order tasks naturally, and include a warm-up.",
+          "Write realistic scenarios with a goal, not instructions. “You need a gift for a friend under a set budget; find something suitable and add it to your cart” works; “Click the Gifts menu” doesn't. Avoid words that appear in the interface, which turn tasks into word-matching exercises.",
+          "Put the tasks into a script so every session is consistent:",
+        ],
+        checklist: [
+          "Welcome, purpose and consent to record",
+          "Reassurance: “We're testing the design, not you”",
+          "Warm-up questions about the participant's context",
+          "Task scenarios in a natural order, each with a clear end point",
+          "A post-task question, such as how easy the task was",
+          "Follow-up questions and a wrap-up",
+        ],
+      },
+      {
+        heading: "Pilot the Test",
+        body: [
+          "Run one pilot session with a colleague or friendly participant before the real ones. Pilots catch confusing task wording, broken prototype links, tasks that take far longer than planned and recording problems, and they cost far less than a wasted session.",
         ],
         cta: {
           title: "Want your key flows tested with real users?",
@@ -701,21 +732,62 @@ export const designPosts2: BlogPost[] = [
         },
       },
       {
-        heading: "Step 4: Observe",
+        heading: "Step 4: Run Sessions and Observe",
         body: [
-          "Ask participants to think aloud. Stay neutral, resist helping, and ask open follow-ups (\"What did you expect to happen?\"). Record sessions with consent, and have teammates observe; watching live builds shared understanding.",
+          "Ask participants to think aloud. Stay neutral, resist helping, and answer questions with questions (“What would you expect to happen?”). Let them struggle long enough to understand the problem, then move on. Record sessions with consent, and invite teammates to observe live; watching together builds shared understanding faster than any report.",
+          "Observers should note what participants do, not what they would have done: where they hesitate, what they misread, what they try first, errors and recoveries, and direct quotes.",
         ],
       },
       {
-        heading: "Step 5: Synthesize",
+        heading: "Qualitative Findings",
         body: [
-          "List issues with where they happened, how many participants hit them, and their severity. Distinguish between blocking problems, slowdowns and minor irritations. Note what worked well too, so it isn't lost in the redesign.",
+          "Most of the value of small-sample testing is qualitative: the reasons behind behaviour. Capture each observation with the task, the participant, what happened and, where possible, why. Look for patterns across participants rather than acting on one person's opinion, and note what works well too, so it isn't lost in the redesign.",
         ],
       },
       {
-        heading: "Step 6: Fix and Retest",
+        heading: "Common Usability Metrics",
         body: [
-          "Prioritize by severity and frequency, update the design, and test again. Iteration is where testing pays off. For evaluating a live product more broadly, see [[/blogs/ux-audit|UX audit]].",
+          "Simple measures help compare tasks and track change over time.",
+        ],
+        table: {
+          headers: ["Metric", "What it measures"],
+          rows: [
+            ["Task success", "Whether participants completed the task, fully, partly or not at all"],
+            ["Time on task", "How long successful attempts took"],
+            ["Errors", "Wrong paths, mistakes and recoveries"],
+            ["Single Ease Question (SEQ)", "Perceived difficulty of each task, asked after the task"],
+            ["System Usability Scale (SUS)", "Overall perceived usability, a 10-item questionnaire after the test"],
+          ],
+        },
+      },
+      {
+        heading: "Quantitative Measurements and Sample Size",
+        body: [
+          "Numbers from five participants are not statistics. Report them as observations (“3 of 5 participants didn't find the delivery options”) rather than percentages, and don't use them to claim one design is better than another. When you need reliable benchmarks, [[https://www.nngroup.com/articles/quantitative-studies-how-many-users/|Nielsen Norman Group recommends around 20 users]] or more for quantitative usability studies. NN/g's article on [[https://www.nngroup.com/articles/measuring-perceived-usability/|measuring perceived usability]] explains when to use SEQ and SUS.",
+        ],
+      },
+      {
+        heading: "Step 5: Analyze the Results",
+        body: [
+          "Soon after the sessions, list every issue with where it happened, how many participants hit it and its severity: blocking, slowing or minor. Cluster related observations, separate symptoms from causes and rate each issue on a shared scale, such as the [[https://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/|0 to 4 severity scale]]. Then prioritize by severity, frequency and the importance of the task.",
+        ],
+      },
+      {
+        heading: "Step 6: Report and Share",
+        body: [
+          "Keep reports short and decision-focused: the goals, who took part, the top findings with evidence and severity, short video clips of key moments, what worked well and recommended changes. A 20-minute readout with clips often gets more action than a long document. Keep the full issue list in the team's backlog, not only in a slide deck.",
+        ],
+      },
+      {
+        heading: "Step 7: Iterate and Retest",
+        body: [
+          "Fix the most important problems, update the design and test again, ideally with new participants on the same tasks. Iteration is where testing pays off: each round confirms fixes and uncovers the next layer of problems. Build small, regular rounds into the [[/blogs/ux-design-process|UX design process]] rather than one big study.",
+        ],
+      },
+      {
+        heading: "Testing on Mobile",
+        body: [
+          "Test mobile experiences on phones, not desktop emulators. For remote tests, use tools that record the phone screen; in person, use a device camera or screen mirroring. Include tasks that involve typing, forms and switching apps, where mobile problems concentrate. See [[/blogs/mobile-app-testing|mobile app testing]] and [[/blogs/mobile-ecommerce-ux|mobile ecommerce UX]].",
         ],
       },
       {
@@ -725,13 +797,22 @@ export const designPosts2: BlogPost[] = [
         ],
       },
       {
+        heading: "Usability Testing vs Heuristic Evaluation",
+        body: [
+          "A [[/blogs/ux-heuristic-evaluation|heuristic evaluation]] uses experts to predict problems quickly against usability principles. Usability testing confirms which problems real users actually hit. Running a heuristic review first clears obvious issues so test sessions uncover deeper ones.",
+        ],
+      },
+      {
         heading: "Common Mistakes",
         body: [],
         checklist: [
           "Leading tasks that tell users where to click",
+          "Recruiting people who don't match your users",
+          "Skipping the pilot session",
           "Helping participants when they struggle",
           "Testing only at the end, when changes are expensive",
           "Treating one participant's opinion as a finding",
+          "Reporting percentages from five participants",
           "Reports that sit unread instead of changing the design",
         ],
         cta: {
@@ -742,7 +823,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Usability testing is the fastest way to see a design through users' eyes. Plan clearly, recruit the right people, write realistic tasks, observe without helping, and fix what you find, then test again. It's one of the core methods in [[/blogs/user-research-methods|user research]].",
+          "Usability testing is the fastest way to see a design through users' eyes. Plan clearly, recruit the right people, write realistic tasks, pilot your script, observe without helping, analyze by severity and fix what you find, then test again. It's one of the core methods in [[/blogs/user-research-methods|user research]].",
         ],
       },
     ],
@@ -751,63 +832,104 @@ export const designPosts2: BlogPost[] = [
   // ---------------------------------------------------------- DESIGN HANDOFF
   {
     slug: "design-handoff",
-    title: "Design Handoff: How Designers and Developers Ship Better Products Together",
+    title: "Design Handoff: How Designers and Developers Should Work Together",
     excerpt:
-      "What developers need from design, how tokens, components, annotations and design QA keep the built product faithful to the design, and how to make handoff continuous.",
+      "A practical guide to design handoff: file prep, components, tokens, responsive specs, states, interaction notes, Figma handoff, design QA and versioning.",
     category: "UI/UX",
     banner: "handoffflow",
     date: "2026-10-23",
-    readingTime: "11 min read",
+    readingTime: "15 min read",
     relatedServiceSlugs: ["ui-ux-design", "website-development", "mobile-app-development"],
     relatedIndustrySlugs: ["saas-technology", "fintech", "ecommerce"],
     faqs: [
-      { q: "What is design handoff?", a: "The process of transferring design decisions to developers so they can build the product as intended, including specifications, assets, component details, states and behavior." },
-      { q: "What should a design handoff include?", a: "Final screens with all states, responsive behavior, component specifications, design tokens, interaction and animation notes, accessibility annotations, assets, and edge cases." },
-      { q: "What are design tokens?", a: "Named values for design decisions such as colors, typography, spacing and radii, shared between design and code so both use the same source of truth." },
-      { q: "What is design QA?", a: "Reviewing the implemented product against the design before release, checking layout, states, behavior and accessibility, and logging differences to fix." },
-      { q: "Should designers and developers work together earlier?", a: "Yes. Involving developers during exploration catches feasibility issues early, and makes handoff a continuation rather than a surprise." },
-      { q: "Why do built products look different from designs?", a: "Common causes are missing states, undefined responsive behavior, one-off styles outside the design system, unclear specs, and no design review during development." },
-      { q: "How does a design system help handoff?", a: "When design components map to coded components, developers reuse existing code instead of interpreting every screen from scratch." },
-      { q: "What tools help with handoff?", a: "Design tools with inspect and developer modes, shared component libraries, token pipelines and issue trackers. The practices matter more than the specific tools." },
+      { q: "What is design handoff?", a: "The process of transferring design decisions to developers so they can build the product as intended, including specifications, assets, component details, states and behaviour. It works best as ongoing collaboration rather than a single transfer." },
+      { q: "What should a design handoff include?", a: "Final screens with all states, responsive behaviour, component specifications, design tokens, typography and spacing, interaction and animation notes, accessibility annotations, assets, real content examples and edge cases." },
+      { q: "What are design tokens?", a: "Named values for design decisions such as colours, typography, spacing and radii, shared between design and code so both use the same source of truth." },
+      { q: "What is design QA?", a: "Reviewing the implemented product against the design before release, checking layout, states, behaviour and accessibility, and logging differences to fix." },
+      { q: "How do you hand off Figma designs to developers?", a: "Separate final designs from explorations, mark frames ready for development, build with components and variables that map to code, annotate behaviour, and walk developers through the flows. Figma's Dev Mode supports inspection, annotations and change comparison on paid plans." },
+      { q: "Should designers and developers work together earlier?", a: "Yes. Involving developers during exploration catches feasibility issues early and makes handoff a continuation rather than a surprise." },
+      { q: "Why do built products look different from designs?", a: "Common causes are missing states, undefined responsive behaviour, one-off styles outside the design system, unclear specs, late design changes and no design review during development." },
+      { q: "How should design changes be handled after handoff?", a: "Version approved designs, communicate changes explicitly with what changed and why, update the related tickets, and avoid silently editing frames developers are already building from." },
+      { q: "What questions do developers usually ask at handoff?", a: "What happens on error, with long or missing content, on slow networks, between breakpoints, for users without permission, and which existing components to reuse." },
+      { q: "What tools help with handoff?", a: "Design tools with inspect or developer modes, shared component libraries, token pipelines, component workshops such as Storybook and issue trackers. The practices matter more than the specific tools." },
     ],
     content: [
       {
         heading: "Quick answer",
         body: [
-          "Good design handoff gives developers everything needed to build what was designed: all screen states, responsive behavior, component specifications, design tokens, interaction and accessibility annotations, assets and edge cases. It works best as a continuous collaboration, with developers involved early, design and code components mapped through a shared design system, and design QA before release, rather than a single moment when files are thrown over the wall.",
+          "Good design handoff gives developers everything they need to build what was designed. That means every screen state, responsive behaviour, component specifications mapped to the design system, design tokens for colour, type and spacing, interaction and accessibility notes, exported assets, and real content with edge cases. Prepare files so final designs are unmistakable, walk developers through the flows and answer their questions early. Run design QA during development, and version any change to approved designs. The best handoff is continuous collaboration, not a single moment when files are thrown over the wall.",
+        ],
+      },
+      {
+        heading: "What Design Handoff Means",
+        body: [
+          "Handoff is the point where design intent becomes implementation work. In practice it's a phase, not a moment: developers should see designs while they're forming, handoff packages the approved decisions, and design review continues until release. When it works, the shipped product matches what was designed and tested. When it doesn't, developers fill gaps with guesses and the product drifts.",
         ],
       },
       {
         heading: "Why Handoff Breaks Down",
         body: [
-          "Designs often show the ideal state at one screen size. Developers then fill in gaps: what happens with long names, errors, slow networks or tablets. Each guess drifts from the intent. Most handoff problems are missing information, not bad development.",
+          "Designs often show the ideal state at one screen size. Developers then have to decide what happens with long names, errors, slow networks, empty lists or tablets. Each guess drifts from the intent. Most handoff problems are missing information or late changes, not bad development.",
         ],
-        visual: { variant: "rows", accent: "orange", caption: "Design, specs and tokens, review, build, design QA, release, with shared components keeping design and code in sync." },
       },
       {
-        heading: "What Developers Need",
-        body: [],
+        heading: "Handoff Preparation",
+        body: ["Before a handoff meeting, get the file ready."],
         checklist: [
-          "Every state: default, hover, focus, loading, empty, error, success, disabled",
-          "Responsive behavior between breakpoints, not just three artboards",
-          "Component specs mapped to the design system",
-          "Design tokens for color, type, spacing, radius and elevation",
-          "Interaction and animation details, including timing",
-          "Accessibility annotations: headings, focus order, labels, alt text",
-          "Real content examples and edge cases, such as long text and missing images",
-          "Exported assets in the right formats",
+          "Final designs separated from explorations and old versions",
+          "Frames named after screens and states, in flow order",
+          "Designs marked ready for development only when approved",
+          "User flows linked, including alternative and error paths",
+          "Components used consistently, with no detached one-offs",
+          "Real content and edge cases in place of placeholder text",
+          "Open questions listed rather than hidden",
+          "Links to related tickets, research and prototypes",
         ],
       },
       {
-        heading: "Design Tokens and Components",
+        heading: "Components",
         body: [
-          "Tokens turn design decisions into shared variables, so a color or spacing change updates both design and code. When design components correspond to coded components, developers assemble screens from existing parts rather than reinterpreting pixels. See [[/blogs/design-systems-for-teams-that-move-fast|design systems]].",
+          "When design components correspond to coded components, developers assemble screens from existing parts instead of reinterpreting pixels. Use the same names and properties in design and code where possible, and call out anything new: a new component, a new variant or a change to an existing one. New components need a full spec of their own, not just an appearance in one screen. See [[/blogs/design-systems-for-teams-that-move-fast|design systems]].",
         ],
       },
       {
-        heading: "Involve Developers Early",
+        heading: "Design Tokens",
         body: [
-          "Share concepts and prototypes with engineers during ideation. They'll flag technical constraints, performance costs and existing components that could be reused, before designs are finalized around something expensive.",
+          "Tokens turn design decisions into shared named values: colours, type sizes, spacing, radii, shadows and motion durations. When designs use tokens, developers read “space-4” or “text-muted” rather than measuring pixels and guessing which colour a hex value was meant to be. In Figma, variables are commonly used to implement tokens, including modes for themes such as light and dark.",
+        ],
+      },
+      {
+        heading: "Typography and Spacing",
+        body: [
+          "Specify type as named styles (font, size, weight, line height, letter spacing) rather than per-screen values, and define how headings and body text scale across breakpoints. Build spacing from a consistent scale and use auto layout so padding and gaps are explicit. Inconsistent one-off values are a common source of “it looks slightly off” feedback that's hard to fix later.",
+        ],
+      },
+      {
+        heading: "Responsive Behaviour",
+        body: [
+          "Three artboards don't describe what happens in between. Specify how layouts reflow: which columns stack, what stays fixed and what stretches, how images crop, what hides or moves into menus, maximum content widths and how tables adapt. Designing with constraints and auto layout makes much of this visible in the file. See [[/blogs/responsive-ui-design|responsive UI design]].",
+        ],
+      },
+      {
+        heading: "States",
+        body: [
+          "Every component and screen has more states than the happy path. A simple matrix per component makes gaps obvious.",
+        ],
+        table: {
+          headers: ["State", "Examples to design"],
+          rows: [
+            ["Interactive", "Default, hover, focus, pressed, disabled, selected"],
+            ["Data", "Empty, loading, partial, full, overflowing"],
+            ["Outcome", "Success, warning, error, offline"],
+            ["Content", "Long text, missing image, zero, very large numbers, other languages"],
+            ["Permission", "View-only, no access, upgrade required"],
+          ],
+        },
+      },
+      {
+        heading: "Assets",
+        body: [
+          "Export icons as SVG where possible, images at the sizes and formats needed (or provide source files for a build pipeline), and illustrations with clear naming. Mark which assets are final, confirm licences for any stock or third-party imagery, and keep icons in the design system rather than scattered across files.",
         ],
         cta: {
           title: "Tired of designs and builds not matching?",
@@ -815,15 +937,65 @@ export const designPosts2: BlogPost[] = [
         },
       },
       {
-        heading: "Annotations and Specifications",
+        heading: "Interaction Specifications",
         body: [
-          "Annotate what can't be seen: behavior, validation rules, truncation, loading order, analytics events, accessibility details. Keep annotations next to the relevant component, not in a separate document that goes out of date. See [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]] for what to annotate.",
+          "Annotate what can't be seen in a static frame: what triggers each interaction, validation rules and when they run, transitions with timing and easing, what happens on slow responses, truncation rules, keyboard behaviour and focus order, analytics events and the reduced-motion alternative. A short prototype shows the feel; written notes remove ambiguity. See [[/blogs/microinteractions-ui-design|microinteractions]].",
+        ],
+      },
+      {
+        heading: "Accessibility Annotations",
+        body: [
+          "Annotate heading levels, landmarks, focus order, accessible names for icon buttons, alt text, error messaging and live announcements. These are design decisions, and leaving them to developers means they're often missed. See [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]] for what to annotate.",
+        ],
+      },
+      {
+        heading: "Figma Handoff",
+        body: [
+          "In Figma, keep a dedicated ready-for-dev page or use ready-for-dev status on frames. Figma's [[https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode|Dev Mode]], available on paid plans with a Full or Dev seat, lets developers inspect measurements, styles and variables, read annotations, export assets and compare the current design with earlier versions. Whatever the tooling, keep annotations next to the relevant component rather than in a separate document that goes out of date. See [[/blogs/figma-product-design|Figma for product design]].",
+        ],
+      },
+      {
+        heading: "The Handoff Walkthrough",
+        body: [
+          "Walk developers through the flows before they start: the user goal, the happy path, the branches, the new components and the open questions. Record the session. Developers will spot missing states and technical constraints far faster in conversation than by reading a file alone.",
+        ],
+      },
+      {
+        heading: "Questions Developers Will Ask",
+        body: ["Answer these before they're asked."],
+        checklist: [
+          "What happens when this request fails or is slow?",
+          "What if the text is twice as long, or empty?",
+          "What does this look like between the designed breakpoints?",
+          "What does a user without permission see?",
+          "Which existing component should this use?",
+          "Is this interaction essential, or can it be simplified?",
+          "What's the keyboard and screen reader behaviour?",
+          "Where do these numbers and data come from?",
+        ],
+      },
+      {
+        heading: "Involve Developers Early",
+        body: [
+          "Share concepts and prototypes with engineers during ideation. They'll flag technical constraints, performance costs and existing components that could be reused before designs are finalized around something expensive. Early involvement turns handoff into confirmation rather than discovery.",
         ],
       },
       {
         heading: "Design QA",
         body: [
-          "Review builds on real devices before release: layout, spacing, states, responsive behavior, interactions and accessibility. Log differences as issues with screenshots and the expected result. Small, frequent reviews during development work better than one large review at the end.",
+          "Review builds on real devices against the approved designs: layout, spacing, typography, states, responsive behaviour, interactions and accessibility. Log differences as issues with screenshots, the expected result and a severity, so developers can tell a broken flow from a two-pixel offset. Small, frequent reviews during development work better than one large review before release.",
+        ],
+      },
+      {
+        heading: "Implementation Review",
+        body: [
+          "Beyond visual QA, check that the build behaves as designed: validation, error handling, loading, permissions and analytics events. Test with real data and slow networks. Where the build and design legitimately diverge because of a technical constraint, update the design so the file reflects what shipped.",
+        ],
+      },
+      {
+        heading: "Versioning and Change Control",
+        body: [
+          "Designs change after handoff; the problem is silent change. Name versions at milestones, keep approved designs separate from work in progress, and when something changes, communicate what changed, why and which tickets it affects. Figma's version history and change comparison help, and branching (on Figma's Organization and Enterprise plans) lets designers work on changes without editing the approved file.",
         ],
       },
       {
@@ -833,15 +1005,19 @@ export const designPosts2: BlogPost[] = [
         ],
       },
       {
-        heading: "Common Mistakes",
+        heading: "Common Handoff Problems",
         body: [],
-        checklist: [
-          "Only the happy path designed",
-          "No responsive specification between artboards",
-          "One-off styles outside the design system",
-          "Specs in documents that go out of date",
-          "No designer involvement once development starts",
-        ],
+        table: {
+          headers: ["Problem", "Fix"],
+          rows: [
+            ["Only the happy path designed", "State matrix per component and screen"],
+            ["No responsive specification", "Auto layout, constraints and written reflow rules"],
+            ["One-off styles", "Tokens and design system components only"],
+            ["Specs in documents that go stale", "Annotations beside components in the design file"],
+            ["Late, silent design changes", "Versioning and explicit change notes"],
+            ["No designer involvement during build", "Scheduled design QA and a shared channel"],
+          ],
+        },
         cta: {
           title: "Want a smoother path from design to production?",
           description: "Talk to ZSpace about [[/services/ui-ux-design|design]] and [[/services/website-development|development]] delivered by one team.",
@@ -850,7 +1026,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Handoff quality decides whether the shipped product matches the design. Design every state, share tokens and components, annotate behavior and accessibility, involve developers early and review builds before release. For the broader process, see the [[/blogs/product-design-process|product design process]].",
+          "Handoff quality decides whether the shipped product matches the design. Prepare files carefully, map components and tokens to code, design every state and breakpoint, annotate interactions and accessibility, walk developers through the work, review builds as they happen and version every change. For the broader process, see the [[/blogs/product-design-process|product design process]].",
         ],
       },
     ],

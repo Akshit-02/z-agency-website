@@ -360,6 +360,7 @@ export const webDevPosts8: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "A reliable CRM integration captures every lead with its source, avoids duplicates, keeps credentials secure, and never fails silently. For the technical foundations shared with other integrations, see the [[/blogs/website-api-integration|website API integration guide]].",
+          "For related guides, see [[/blogs/ecommerce-crm-integration|ecommerce CRM integration]] and [[/blogs/b2b-ecommerce-crm-integration|B2B ecommerce CRM integration]].",
         ],
       },
     ],
@@ -479,6 +480,7 @@ export const webDevPosts8: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "A dependable payment integration keeps card data with the gateway, sets amounts server-side, treats webhooks as the source of truth, and handles failures and refunds cleanly. If you sell primarily products online, a commerce platform may handle most of this for you; see ZSpace's [[/services/shopify-development|Shopify development]] work. For payments inside a mobile app, including in-app purchase rules, see [[/blogs/mobile-app-payments|mobile app payments]].",
+          "For related guides, see [[/blogs/ecommerce-payment-gateway-integration|ecommerce payment gateway integration]].",
         ],
       },
     ],

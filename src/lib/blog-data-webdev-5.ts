@@ -677,7 +677,7 @@ export const webDevPosts5: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A website that isn't converting almost always has a specific, findable cause — work through intent mismatch, positioning, UX, CTAs, forms, trust, mobile experience and performance systematically, using your own funnel data to guide the diagnosis rather than applying a generic conversion checklist.",
+          "A website that isn't converting almost always has a specific, findable cause — work through intent mismatch, positioning, UX, CTAs, forms, trust, mobile experience and performance systematically, using your own funnel data to guide the diagnosis rather than applying a generic conversion checklist. For online stores specifically, see [[/blogs/ecommerce-traffic-but-no-sales|ecommerce traffic but no sales]].",
         ],
       },
     ],

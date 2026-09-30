@@ -54,25 +54,25 @@ export const designPosts3: BlogPost[] = [
       {
         heading: "Homepage",
         body: [
-          "The homepage should communicate what the store sells and why to choose it, and send shoppers into relevant categories quickly: clear value proposition, main category entry points, current highlights and a visible search. Avoid auto-rotating carousels carrying essential messages. See [[/blogs/shopify-homepage-cro|homepage CRO]] for conversion-focused detail.",
+          "The homepage should communicate what the store sells and why to choose it, and send shoppers into relevant categories quickly: clear value proposition, main category entry points, current highlights and a visible search. Avoid auto-rotating carousels carrying essential messages. See [[/blogs/ecommerce-homepage-ux|ecommerce homepage UX]] for the full design approach and [[/blogs/shopify-homepage-cro|homepage CRO]] for conversion-focused detail.",
         ],
       },
       {
         heading: "Navigation and Taxonomy",
         body: [
-          "Build categories around how shoppers look for products, by type, use or audience, not internal inventory codes. Keep labels plain, show top categories clearly, and let products appear in several logical categories where shoppers expect them. See [[/blogs/information-architecture|information architecture]].",
+          "Build categories around how shoppers look for products, by type, use or audience, not internal inventory codes. Keep labels plain, show top categories clearly, and let products appear in several logical categories where shoppers expect them. See [[/blogs/ecommerce-navigation-design|ecommerce navigation design]] and [[/blogs/information-architecture|information architecture]].",
         ],
       },
       {
         heading: "Category and Product Listing Pages",
         body: [
-          "Listing pages help shoppers narrow a range to a shortlist. They need relevant filters for the category, sensible sorting, informative product cards and an efficient way to load more products. The [[/blogs/ecommerce-category-page-design|category page design guide]] covers this in depth.",
+          "Listing pages help shoppers narrow a range to a shortlist. They need relevant filters for the category, sensible sorting, informative product cards and an efficient way to load more products. The [[/blogs/ecommerce-category-page-design|product listing page guide]] covers this in depth, and [[/blogs/ecommerce-filters|ecommerce filters]] goes deeper on filtering.",
         ],
       },
       {
         heading: "Search",
         body: [
-          "Many shoppers search first. Search should handle typos, synonyms and product attributes, suggest as users type, and never dead-end with an empty page. See [[/blogs/shopify-search-optimization|search optimization]] for Shopify specifics.",
+          "Many shoppers search first. Search should handle typos, synonyms and product attributes, suggest as users type, and never dead-end with an empty page. See [[/blogs/ecommerce-search-ux|ecommerce search UX]], and [[/blogs/shopify-search-optimization|search optimization]] for Shopify specifics.",
         ],
       },
       {
@@ -88,13 +88,13 @@ export const designPosts3: BlogPost[] = [
       {
         heading: "Cart and Checkout",
         body: [
-          "The cart should confirm what's being bought, show total cost including shipping early, and make editing easy. Checkout should be as short as possible, offer guest checkout, familiar payment options and clear error handling. See [[/blogs/shopify-cart-optimization|cart optimization]] and [[/blogs/shopify-checkout-optimization|checkout optimization]].",
+          "The cart should confirm what's being bought, show total cost including shipping early, and make editing easy. Checkout should be as short as possible, offer guest checkout, familiar payment options and clear error handling. See [[/blogs/ecommerce-cart-ux|cart UX]] and [[/blogs/ecommerce-checkout-ux|checkout UX]] for design, and [[/blogs/shopify-cart-optimization|cart optimization]] and [[/blogs/shopify-checkout-optimization|checkout optimization]] for Shopify.",
         ],
       },
       {
         heading: "Mobile Ecommerce",
         body: [
-          "Design for thumbs and small screens: filters in an easy-to-use panel, swipeable product media with zoom, sticky add-to-cart where helpful, large touch targets and wallet payments. See [[/blogs/responsive-ui-design|responsive UI design]] and [[/blogs/shopify-mobile-cro|mobile CRO]].",
+          "Design for thumbs and small screens: filters in an easy-to-use panel, swipeable product media with zoom, sticky add-to-cart where helpful, large touch targets and wallet payments. See [[/blogs/mobile-ecommerce-ux|mobile ecommerce UX]], [[/blogs/responsive-ui-design|responsive UI design]] and [[/blogs/shopify-mobile-cro|mobile CRO]].",
         ],
       },
       {
@@ -143,7 +143,7 @@ export const designPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Ecommerce design is about removing effort and doubt at every step of the shopping journey. Structure the catalog around shoppers, make listings easy to narrow, answer questions on product pages, keep cart and checkout transparent and short, and design for mobile and speed from the start.",
+          "Ecommerce design is about removing effort and doubt at every step of the shopping journey. Structure the catalog around shoppers, make listings easy to narrow, answer questions on product pages, keep cart and checkout transparent and short, and design for mobile and speed from the start. For category-specific guidance, see our guides to [[/blogs/fashion-ecommerce-website-design|fashion]], [[/blogs/beauty-ecommerce-website-design|beauty]], [[/blogs/jewelry-ecommerce-website-design|jewelry]], [[/blogs/electronics-ecommerce-website-design|electronics]] and [[/blogs/furniture-ecommerce-website-design|furniture]] ecommerce design.",
         ],
       },
     ],
@@ -207,7 +207,7 @@ export const designPosts3: BlogPost[] = [
       {
         heading: "Media",
         body: [
-          "Images do most of the explaining. Show the product from multiple angles, close-ups of materials and details, the product in context or on a person, and something that conveys scale. Support zoom on desktop and pinch or swipe on mobile. Baymard's [[https://baymard.com/research/product-page|product page research]] covers imagery and other product page elements in depth.",
+          "Images do most of the explaining. Show the product from multiple angles, close-ups of materials and details, the product in context or on a person, and something that conveys scale. Support zoom on desktop and pinch or swipe on mobile. Baymard's [[https://baymard.com/research/product-page|product page research]] covers imagery and other product page elements in depth, and ZSpace's [[/blogs/ecommerce-product-image-design|product image design guide]] covers galleries in detail.",
         ],
       },
       {
@@ -241,7 +241,7 @@ export const designPosts3: BlogPost[] = [
       {
         heading: "Reviews",
         body: [
-          "Show the average rating and count near the top, linked to full reviews. Let shoppers sort and filter reviews and see photos where available. Genuine reviews, including critical ones, are more credible than a wall of five stars. See [[/blogs/shopify-social-proof|social proof]].",
+          "Show the average rating and count near the top, linked to full reviews. Let shoppers sort and filter reviews and see photos where available. Genuine reviews, including critical ones, are more credible than a wall of five stars. See [[/blogs/ecommerce-product-reviews-ux|product reviews UX]] and [[/blogs/shopify-social-proof|social proof]].",
         ],
       },
       {
@@ -287,7 +287,8 @@ export const designPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A product page succeeds when shoppers stop having questions. Show the product clearly, make price and variants unambiguous, surface delivery, returns and reviews near the buy button, and structure the detail. For the rest of the journey, see the [[/blogs/ecommerce-website-design|ecommerce website design guide]].",
+          "A product page succeeds when shoppers stop having questions. Show the product clearly, make price and variants unambiguous, surface delivery, returns and reviews near the buy button, and structure the detail. For the rest of the journey, see the [[/blogs/ecommerce-website-design|ecommerce website design guide]]. For D2C-specific merchandising, see [[/blogs/d2c-product-page-optimization|D2C product page optimization]]. For search visibility of the same page, see [[/blogs/shopify-product-seo|Shopify product SEO]] and [[/blogs/product-structured-data-ecommerce|product structured data]].",
+          "For related guides, see [[/blogs/subscription-product-page-design|subscription product page design]].",
         ],
       },
     ],
@@ -296,23 +297,28 @@ export const designPosts3: BlogPost[] = [
   // -------------------------------------------------- CATEGORY PAGE DESIGN
   {
     slug: "ecommerce-category-page-design",
-    title: "Ecommerce Category Page Design: Product Listings, Filters and Sorting",
-    excerpt:
-      "How to design category and product listing pages: product cards, filters and facets, sorting, loading more products, mobile filtering and empty results.",
+    title: "Ecommerce Product Listing Page Design: UX Best Practices",
+    seoTitle: "Ecommerce Product Listing Page Design: UX Best Practices",
+    excerpt: "Product listing page design: anatomy, grid vs list, product cards, images, prices, badges, variants, ratings, sorting, filters, loading and responsive layouts.",
     category: "UI/UX",
-    banner: "plpflow",
+    banner: "plpanatomy",
+    bannerAlt:
+      "Product listing page wireframe: breadcrumb, category title and item count, filter panel, applied filters, sort control, a grid of product cards with image, name, price, rating and swatches, and a load more button.",
     date: "2026-10-24",
-    readingTime: "13 min read",
+    updated: "2026-09-29",
+    readingTime: "16 min read",
     relatedServiceSlugs: ["ui-ux-design", "shopify-development", "cro-audit"],
     relatedIndustrySlugs: ["ecommerce", "fashion-apparel", "d2c-consumer"],
     faqs: [
-      { q: "What is a product listing page?", a: "A page showing a set of products, usually a category or search results, where shoppers browse, filter and sort to find items to view in detail." },
-      { q: "What filters should a category page have?", a: "Filters that match how shoppers choose within that category, such as size, color, price, brand, material or features. Different categories need different filters." },
-      { q: "What is faceted filtering?", a: "Filtering where options are generated from product attributes, often with counts showing how many products match each value, and multiple filters can be combined." },
-      { q: "Is pagination, infinite scroll or load more best?", a: "Baymard Institute's testing has found a \"Load more\" button, often combined with lazy loading, generally performs best, as pagination feels slow and infinite scroll can overwhelm and hide the footer." },
-      { q: "What should a product card show?", a: "A clear image, product name, price, and key differentiators such as available colors, rating or a key attribute, without overcrowding." },
-      { q: "How should filters work on mobile?", a: "Usually in a full-screen or bottom sheet panel, with clear apply and reset controls, visible counts, and applied filters shown on the listing page." },
+      { q: "What is a product listing page?", a: "A page showing a set of products, usually a category, collection or search results, where shoppers browse, filter and sort to find items to view in detail. It's often shortened to PLP." },
+      { q: "What is the difference between a PLP and a PDP?", a: "A product listing page (PLP) shows many products so shoppers can compare and narrow down. A product detail page (PDP) shows one product in depth so shoppers can decide and buy." },
+      { q: "Should a listing page use a grid or a list view?", a: "Grids suit visual products where the image drives the choice. List views suit products compared on specifications. Some stores offer both, defaulting to the one that fits the category." },
+      { q: "What should a product card show?", a: "A clear image, product name, price, and a few key differentiators such as available colours, rating and review count, availability or a defining specification, without overcrowding." },
+      { q: "Is pagination, infinite scroll or load more best?", a: "Baymard Institute's testing has found a \"Load more\" button, combined with lazy loading, generally performs best: pagination feels slow, and infinite scroll can overwhelm shoppers and hide the footer." },
+      { q: "How many products should a listing page load?", a: "Baymard recommends loading around 50 to 100 products by default on desktop for spec-driven products, 100 to 150 for visually driven products, and 15 to 30 on mobile, then offering “Load more”." },
       { q: "What sorting options should be offered?", a: "Relevance or featured, price low to high and high to low, newest, and rating are common. Default to the order most useful for the category." },
+      { q: "Should out-of-stock products appear on listing pages?", a: "It depends on whether they'll return. Clearly label them and consider moving them lower or offering an in-stock filter, so shoppers don't open products they can't buy." },
+      { q: "How should listing pages work on mobile?", a: "Use one or two columns depending on how visual the products are, sticky filter and sort controls, a full-screen filter panel, a smaller initial batch with “Load more”, and keep the shopper's position when they return from a product." },
       { q: "What happens when filters return no results?", a: "Show which filters caused it and offer to remove them, suggest related categories, and avoid dead-end pages." },
       { q: "How is this different from the Shopify collection page audit?", a: "That guide is a checklist for auditing Shopify collection pages. This one covers the design principles behind listing pages on any platform." },
     ],
@@ -320,32 +326,103 @@ export const designPosts3: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "A good category or product listing page helps shoppers narrow a large range down to a shortlist quickly. Design informative product cards, offer filters that match how shoppers choose in each category (with counts and easy removal), provide sensible sorting, load more products efficiently (Baymard's testing generally favors a \"Load more\" button over pagination or infinite scroll), make filtering easy on mobile, and never dead-end shoppers when filters return nothing.",
+          "A good product listing page helps shoppers narrow a range to a shortlist quickly. Give it a clear title, relevant filters with a visible applied-filter summary, and sensible sorting. Use consistent product cards showing image, name, price, rating, available variants and availability. Choose grid or list layout to suit the products, load more with a “Load more” button rather than heavy pagination, and show loading states that don't shift the layout. Design a mobile layout with sticky filter and sort controls, keep the shopper's place when they return from a product, and never dead-end on empty results.",
         ],
       },
       {
-        heading: "The Listing Page's Job",
+        heading: "What Is a Product Listing Page?",
         body: [
-          "Shoppers arrive at category pages with partial intent: they know the type of product, not the exact one. The page should help them compare, narrow and choose what to view. See [[https://baymard.com/blog/product-listing-page-plp-ux|Baymard's overview of product listing page UX]] for research-backed detail; this guide covers design decisions, and the [[/blogs/shopify-collection-page-audit|Shopify collection page audit]] covers auditing a live Shopify store.",
+          "This is the hub for listing-page UX. Deep dives cover [[/blogs/ecommerce-product-cards|product cards]], [[/blogs/ecommerce-product-sorting|sorting]], [[/blogs/ecommerce-filters|filters]], [[/blogs/ecommerce-product-comparison|comparison]], [[/blogs/ecommerce-quick-view|quick view]] and [[/blogs/ecommerce-empty-states|empty states]]. Baymard Institute's benchmark found that 58% of desktop and 78% of mobile ecommerce sites had “poor” to “mediocre” product list UX ([[https://baymard.com/blog/current-state-product-list-and-filtering|Baymard Institute]]).",
+          "A product listing page (PLP) shows a set of products: a category, a collection, a brand, a sale or search results. Shoppers usually arrive with partial intent. They know the type of product, not the exact one, so the page's job is to help them compare, narrow and choose which products to open.",
+          "That makes it different from the [[/blogs/ecommerce-product-page-design|product detail page]], which helps shoppers decide on one item. Baymard Institute's [[https://baymard.com/blog/product-listing-page-plp-ux|product listing research]] is a valuable reference; for auditing a live Shopify store, see the [[/blogs/shopify-collection-page-audit|Shopify collection page audit]].",
         ],
-        visual: { variant: "rows", accent: "orange", caption: "Category, filters, sort, product cards, load more, product page: narrowing a range to a decision." },
+      },
+      {
+        heading: "Anatomy of a Listing Page",
+        body: ["The diagram at the top of this article shows the main parts. Each has a distinct job."],
+        table: {
+          headers: ["Element", "Job"],
+          rows: [
+            ["Breadcrumb", "Show where the category sits and offer a route to broader categories"],
+            ["Title and item count", "Confirm what's shown and how much there is"],
+            ["Short introduction (optional)", "Help with unfamiliar categories; keep it brief so products stay near the top"],
+            ["Filters", "Narrow the set by attributes that matter in this category"],
+            ["Applied filters", "Show what's active and allow quick removal"],
+            ["Sort control", "Reorder the set by relevance, price, newest or rating"],
+            ["Product grid or list", "Let shoppers compare products at a glance"],
+            ["Load more", "Reveal more products without losing position"],
+          ],
+        },
+      },
+      {
+        heading: "Grid vs List View",
+        body: [],
+        table: {
+          headers: ["", "Grid", "List"],
+          rows: [
+            ["Best for", "Visual products: fashion, homeware, beauty", "Spec-driven products: electronics, parts, B2B"],
+            ["Emphasis", "Images", "Details and specifications"],
+            ["Density", "More products per screen", "More information per product"],
+            ["Watch out for", "Too little information to compare", "Weak imagery and slow scanning"],
+          ],
+        },
       },
       {
         heading: "Product Cards",
         body: [
-          "Cards should let shoppers compare without opening every product: a consistent, clear image (ideally with an alternate view on hover or swipe), name, price, and one or two key differentiators such as available colors, rating or a defining attribute. Keep cards consistent so the eye can scan the grid.",
+          "Cards should let shoppers compare without opening every product, and they must be consistent so the eye can scan the grid. A typical card includes:",
+        ],
+        checklist: [
+          "A clear primary image, consistent in background, crop and aspect ratio",
+          "Product name, in full or truncated with care",
+          "Price, including sale and variant pricing where relevant",
+          "Rating and review count, where reviews exist",
+          "Available colours or variants",
+          "Availability or delivery information when it affects the choice",
+          "One or two key attributes for spec-driven categories",
         ],
       },
       {
-        heading: "Filters and Facets",
+        heading: "Product Information on Cards",
         body: [
-          "Filters are the main tool for narrowing. Choose filter types per category: fit and size for apparel, specifications for electronics, skin type for skincare. Show counts, allow combining filters, show applied filters prominently with one-tap removal, and order filter groups by importance. Baymard's [[https://baymard.com/blog/ecommerce-filter-ui|filter UI guidance]] covers these patterns in detail.",
+          "Show the information shoppers use to choose between items in that category, and no more. For clothing, colour options and price may be enough; for laptops, screen size, processor and storage matter. Baymard's research notes that shoppers expect to be able to filter by the information shown on cards, so align card attributes with available filters.",
+          "Avoid badges on every product. When everything is “bestseller” or “new”, nothing is.",
+        ],
+      },
+      {
+        heading: "Images on Cards",
+        body: [
+          "Primary images should identify the product at small sizes. An alternate image on hover (desktop) or a swipe gesture (mobile) can show another angle, but it shouldn't be the only way to see important information. When a shopper clicks a colour swatch on a card, update the card image to that colour. See [[/blogs/ecommerce-product-image-design|ecommerce product image design]].",
+        ],
+      },
+      {
+        heading: "Pricing",
+        body: [
+          "Show prices clearly and consistently. For sale items, show the current price prominently with the original price clearly marked. For products whose price varies by option, show a range or “From” price. Where regulations require unit pricing, such as price per kilo or litre, include it on the card.",
+        ],
+      },
+      {
+        heading: "Ratings",
+        body: [
+          "Show the star rating with the number of reviews, so a single five-star review isn't mistaken for a strong signal. Hide ratings on products without reviews rather than showing empty stars. See [[/blogs/ecommerce-product-reviews-ux|ecommerce product reviews UX]].",
+        ],
+      },
+      {
+        heading: "Variants and Swatches",
+        body: [
+          "Show available colours as small swatches, with a “+3” indicator when there are more than fit. Swatches should be large enough to tap on mobile and should update the card image. If a product comes in many sizes, it's usually better to support size filtering than to list sizes on the card.",
+        ],
+      },
+      {
+        heading: "Availability",
+        body: [
+          "Label out-of-stock and low-stock items on the card. Decide deliberately whether unavailable products appear at all: products that will return can stay, clearly labelled and lower in the list; discontinued ones should go. An in-stock filter and delivery-date filters help shoppers with deadlines.",
         ],
       },
       {
         heading: "Sorting",
         body: [
-          "Offer common sort options (relevance or featured, price both directions, newest, rating) and choose a default that suits the category. Make the current sort visible. Sorting complements filtering; it doesn't replace it.",
+          "Offer common sort options (relevance or featured, price both directions, newest, rating) and choose a default that suits the category. Make the current sort visible, keep it when filters change and when shoppers return from a product. Sort by rating should account for the number of reviews, or a product with one review can outrank one with hundreds.",
         ],
         cta: {
           title: "Are shoppers struggling to find products on your store?",
@@ -353,8 +430,16 @@ export const designPosts3: BlogPost[] = [
         },
       },
       {
-        heading: "Loading More Products",
-        body: [],
+        heading: "Filtering",
+        body: [
+          "Filters are the main tool for narrowing. Choose filter types per category, show counts, allow combining filters, show applied filters prominently with one-tap removal, and order filter groups by importance. Filtering deserves its own guide: see [[/blogs/ecommerce-filters|ecommerce filters and faceted navigation]] for filter types, logic, applied filters, mobile panels and persistence.",
+        ],
+      },
+      {
+        heading: "Pagination, Load More and Infinite Scroll",
+        body: [
+          "Baymard's [[https://baymard.com/blog/external-load-more-vs-pagination-vs-infinite-scrolling|testing of loading methods]] found “Load more” generally performed best: users perceived pagination as slow and were discouraged by many page links, while endless scrolling could overwhelm them and made the footer hard to reach. Baymard also recommends [[https://baymard.com/blog/number-of-items-loaded-by-default|loading larger batches by default]]: around 50 to 100 products on desktop for spec-driven products, 100 to 150 for visually driven ones and 15 to 30 on mobile, combined with lazy loading so performance doesn't suffer.",
+        ],
         table: {
           headers: ["Method", "Strengths", "Weaknesses"],
           rows: [
@@ -365,41 +450,78 @@ export const designPosts3: BlogPost[] = [
         },
       },
       {
-        heading: "What Baymard Found",
+        heading: "Loading States and Performance",
         body: [
-          "Baymard's [[https://baymard.com/blog/external-load-more-vs-pagination-vs-infinite-scrolling|testing of loading methods]] found \"Load more\" generally performed best: users perceived pagination as slow and were discouraged by many page links, while endless scrolling could overwhelm them. Combining a load more button with lazy loading lets pages show larger batches without the performance cost.",
+          "When filters or sorting change, show a loading state on the product area rather than blanking the page, and keep filter controls usable. Reserve space for card images so the grid doesn't jump as they load, load the first rows immediately and lazy-load the rest. Store filters, sort and loaded batches in the URL so the back button returns shoppers to exactly where they were. See [[/blogs/website-performance-optimization|website performance optimization]].",
         ],
       },
       {
-        heading: "Mobile Filtering",
+        heading: "Mobile Listing Layouts",
         body: [
-          "On mobile, filters usually open in a full-screen or bottom sheet. Keep selections visible, show how many products will result, and provide clear apply and reset buttons. Show applied filters as removable chips above the grid. Offer a one- or two-column grid depending on how visual the products are.",
+          "On mobile, choose one column for products that need details on the card and two columns for visual products. Put Filter and Sort controls in a sticky bar at the top of the list, open filters in a full-screen panel with a result count on the apply button, and show applied filters as removable chips. Keep card text readable and tap targets generous. See [[/blogs/mobile-ecommerce-ux|mobile ecommerce UX]].",
+        ],
+      },
+      {
+        heading: "Product Comparison",
+        body: [
+          "For spec-driven categories such as electronics or appliances, let shoppers select products to compare side by side, with differences highlighted. Keep comparison optional and lightweight: a checkbox on the card and a persistent compare tray. For visual categories, a good grid and clear cards usually make formal comparison unnecessary.",
         ],
       },
       {
         heading: "Category Structure and Navigation",
         body: [
-          "Listing pages depend on a sound taxonomy: categories and attributes that match shoppers' language and product data clean enough to filter. See [[/blogs/information-architecture|information architecture]] and the [[/blogs/ecommerce-website-design|ecommerce website design guide]].",
+          "Listing pages depend on a sound taxonomy: categories and attributes that match shoppers' language and product data clean enough to filter. For broad departments, an intermediary page that helps shoppers choose a subcategory can come before the product list. See [[/blogs/ecommerce-navigation-design|ecommerce navigation design]] and [[/blogs/information-architecture|information architecture]].",
         ],
       },
       {
         heading: "Empty and No-Result States",
         body: [
-          "When filters leave no products, say which filters caused it and offer to remove them, suggest related categories, and keep the shopper moving. The same applies to search results pages.",
+          "When filters leave no products, say which filters caused it and offer to remove them, suggest related categories and keep the shopper moving. The same applies to search results pages; see [[/blogs/ecommerce-search-ux|ecommerce search UX]].",
         ],
       },
       {
-        heading: "Category Page Checklist",
+        heading: "Accessible Listing Pages",
+        body: [
+          "Mark up products as a list, give each card one clear link with the product name as its accessible name, and expose price, rating and availability as text. Announce updated result counts when filters change, and keep keyboard focus in a sensible place after loading more products rather than jumping to the top.",
+        ],
+      },
+      {
+        heading: "Building a Listing Page Component System",
+        body: [
+          "Listing pages are built from a small set of components that repeat across every category: product cards, badges, swatches, price displays, rating summaries, filter panels, applied-filter chips, sort controls and loading patterns. Define them in a design system with states (loading, sold out, sale, new, selected) and responsive behaviour, so every category stays consistent and improvements roll out everywhere. See [[/blogs/design-systems-for-teams-that-move-fast|design systems]] and [[/blogs/ecommerce-product-cards|product cards]].",
+        ],
+        table: {
+          headers: ["Component", "States to design"],
+          rows: [
+            ["Product card", "Default, hover/focus, sold out, on sale, new, loading"],
+            ["Badge", "Sale, new, low stock, sustainable (substantiated), exclusive"],
+            ["Swatch", "Default, selected, unavailable"],
+            ["Price", "Single, range, sale with original, member price"],
+            ["Filter panel", "Collapsed, expanded, applied, zero results"],
+            ["Load more / pagination", "Idle, loading, end of results"],
+          ],
+        },
+      },
+      {
+        heading: "Design vs Optimization",
+        body: [
+          "This guide covers the design and UX system for listing pages. For the measured, ongoing process of improving specific categories (diagnosing structure, sorting, filters and SEO with data and tests), see [[/blogs/ecommerce-category-page-optimization|category page optimization]].",
+        ],
+      },
+      {
+        heading: "Listing Page Checklist",
         body: [],
         checklist: [
-          "Product cards show image, name, price and key differentiators",
-          "Filters match how shoppers choose in this category",
-          "Filter counts shown; applied filters visible and removable",
-          "Sensible default sort with common alternatives",
-          "Load more with lazy loading rather than heavy pagination",
-          "Mobile filters in an easy panel with apply and reset",
+          "Clear title, item count and breadcrumb",
+          "Grid or list layout chosen for the category",
+          "Consistent cards: image, name, price, rating, variants, availability",
+          "Filters match how shoppers choose; applied filters visible and removable",
+          "Sensible default sort that persists",
+          "Load more with lazy loading and sensible batch sizes",
+          "Loading states without layout shift; position kept on return",
+          "Mobile layout with sticky filter and sort",
           "Helpful no-results state",
-          "Fast image loading and stable layout",
+          "Accessible cards and announced result updates",
         ],
         cta: {
           title: "Want your product listings reviewed?",
@@ -409,7 +531,7 @@ export const designPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Category pages succeed when shoppers can narrow quickly and confidently: informative cards, relevant filters, useful sorting, efficient loading and mobile-friendly controls. Pair them with strong [[/blogs/ecommerce-product-page-design|product pages]] to complete the path to purchase.",
+          "Product listing pages succeed when shoppers can narrow quickly and confidently: a clear page structure, informative and consistent cards, relevant filters, useful sorting, efficient loading and a mobile layout built for thumbs. Pair them with strong [[/blogs/ecommerce-product-page-design|product pages]] to complete the path to purchase. For the search side of the same pages, see [[/blogs/ecommerce-category-page-seo|ecommerce category page SEO]].",
         ],
       },
     ],
@@ -531,7 +653,7 @@ export const designPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Good Shopify store design combines a clear shopping journey, a theme whose structure fits, consistent styling, disciplined use of apps and mobile-first templates. Customize within the theme where you can, and go custom when the business genuinely needs it.",
+          "Good Shopify store design combines a clear shopping journey, a theme whose structure fits, consistent styling, disciplined use of apps and mobile-first templates. Customize within the theme where you can, and go custom when the business genuinely needs it. For the full build, see [[/blogs/shopify-store-development|Shopify store development]] and [[/blogs/shopify-theme-development|Shopify theme development]].",
         ],
       },
     ],
@@ -655,6 +777,7 @@ export const designPosts3: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "For D2C brands, the experience after checkout is part of the product. Make the first order easy, keep customers informed, make reordering effortless and subscriptions fair and flexible, and measure what brings people back. For the first-purchase journey, see [[/blogs/ecommerce-product-page-design|product page design]] and the [[/blogs/ecommerce-website-design|ecommerce website design guide]].",
+          "For related guides, see [[/blogs/ecommerce-reorder-experience|ecommerce reorder experience]], [[/blogs/ecommerce-customer-account-ux|customer account UX]], [[/blogs/subscription-management-portal|subscription management portal]], [[/blogs/ecommerce-post-purchase-experience|post-purchase experience]] and [[/blogs/ecommerce-replenishment|replenishment]].",
         ],
       },
     ],

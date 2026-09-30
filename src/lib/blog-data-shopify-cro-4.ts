@@ -117,7 +117,7 @@ export const shopifyCroPosts4: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Checkout sits closest to revenue of any funnel stage, which is exactly why disproportionate attention here is justified. Guest checkout, a trimmed form, the right payment options and visible trust signals are the highest-confidence fixes most stores are still missing.",
+          "Checkout sits closest to revenue of any funnel stage, which is exactly why disproportionate attention here is justified. Guest checkout, a trimmed form, the right payment options and visible trust signals are the highest-confidence fixes most stores are still missing. For the research behind checkout abandonment, see [[/blogs/why-customers-abandon-checkout|why customers abandon checkout]].",
         ],
       },
     ],
@@ -226,90 +226,168 @@ export const shopifyCroPosts4: BlogPost[] = [
   // ----------------------------------------------------------- SPEED AND CRO
   {
     slug: "shopify-speed-cro",
-    title: "Speed and CRO: How Page Performance Actually Affects Conversion",
+    title: "Shopify Website Speed Optimization: How Performance Affects Conversions",
     excerpt:
-      "The real relationship between Core Web Vitals and conversion — without promising a specific percentage gain from any single fix.",
+      "How Shopify performance affects conversion, how to measure Core Web Vitals, and how to fix themes, apps, JavaScript, images, fonts, scripts and Liquid.",
     category: "Shopify & Ecommerce",
-    banner: "waterfall",
+    banner: "perfmap",
     date: "2026-08-31",
-    readingTime: "11 min read",
-    relatedServiceSlugs: ["cro-audit", "shopify-development"],
-    relatedIndustrySlugs: ["d2c-consumer", "ecommerce", "fashion-apparel"],
+    readingTime: "15 min read",
+    relatedServiceSlugs: ["shopify-development", "cro-audit"],
+    relatedIndustrySlugs: ["d2c-consumer", "ecommerce"],
     faqs: [
-      { q: "Does page speed really affect conversion rate?", a: "Yes — slower pages consistently correlate with higher bounce and lower conversion across ecommerce data broadly, though the exact size of the effect varies by store, audience and how slow the page actually is." },
-      { q: "What are Core Web Vitals?", a: "Google's set of page-experience metrics — Largest Contentful Paint (LCP), Interaction to Next Paint (INP) and Cumulative Layout Shift (CLS) — with published \"good\" thresholds (LCP under 2.5s, INP under 200ms) used as a working benchmark." },
-      { q: "Will fixing my Core Web Vitals guarantee a conversion lift?", a: "No — treat speed improvements as removing a real barrier, not as a guaranteed percentage gain. Measure the actual effect on your own store's conversion data after the fix." },
-      { q: "What usually causes a slow Shopify store?", a: "Unoptimized images, accumulated apps injecting scripts on every page, and render-blocking resources are the most common causes — see the [[/blogs/shopify-speed-checklist-before-you-add-another-app|app audit checklist]] and [[/blogs/shopify-core-web-vitals-performance-guide|Core Web Vitals guide]]." },
-      { q: "Does speed matter more on some pages than others?", a: "Checkout and the homepage arguably carry the highest stakes — checkout because it's closest to revenue, and the homepage because it's often a new visitor's first impression of the whole brand." },
-      { q: "How do I check my store's current Core Web Vitals?", a: "Use Google PageSpeed Insights or Lighthouse for lab data, and Google Search Console's Core Web Vitals report for real-world field data from actual visitors." },
-      { q: "Is mobile speed more important than desktop speed?", a: "Practically yes for most stores, since mobile devices and connections are typically less forgiving, and mobile usually represents the majority of sessions." },
-      { q: "How does this connect to the broader CRO audit?", a: "Speed and performance form one of the evidence categories in the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]] — a technical foundation that affects every funnel stage at once." },
+      { q: "Does page speed affect Shopify conversions?", a: "Slow pages delay the moment shoppers can see products and act, and slow interactions make the store feel broken, so performance affects conversion. How much depends on your store, traffic and devices; measure your own before and after rather than relying on generic percentages." },
+      { q: "How do I check my Shopify store's speed?", a: "Start with Shopify's web performance dashboard, which reports Core Web Vitals from real visitors over the past 30 days. Use PageSpeed Insights and Chrome DevTools to investigate specific pages." },
+      { q: "What are good Core Web Vitals for Shopify?", a: "The same as for any site: Largest Contentful Paint within 2.5 seconds, Interaction to Next Paint of 200 milliseconds or less, and Cumulative Layout Shift of 0.1 or less, measured at the 75th percentile of visits." },
+      { q: "Do apps slow down Shopify stores?", a: "They can, when they add scripts, styles or content to storefront pages. The effect varies widely by app, so audit what each app loads and remove or replace those that aren't worth their cost." },
+      { q: "Why is my Shopify store slow on mobile?", a: "Mobile devices have less processing power and often slower connections, so heavy images, large JavaScript bundles and third-party scripts hurt more. Check mobile Core Web Vitals separately." },
+      { q: "Is a higher PageSpeed score the goal?", a: "No. Lab scores are useful for debugging, but real-user Core Web Vitals and conversion on key templates are what matter." },
+      { q: "Do uninstalled apps leave code behind?", a: "Some older apps injected code into theme files that remains after uninstalling. Review theme code for leftover snippets and scripts when removing apps." },
+      { q: "Does the Shopify theme affect speed?", a: "Yes. Theme Store themes must meet a minimum average Lighthouse performance score, but how you configure the theme, which sections you add and which apps you install still decide real-world speed." },
+      { q: "Should I use a speed optimization app?", a: "Be cautious. Some add their own scripts or change loading behaviour in ways that break features. Fixing the underlying images, apps and scripts is usually more reliable." },
+      { q: "What should I fix first?", a: "The Core Web Vital that fails on your highest-traffic templates, usually product and collection pages on mobile, starting with the cause that affects the most visits." },
     ],
     content: [
       {
         heading: "Quick answer",
         body: [
-          "Page speed and conversion rate are consistently linked — slower Shopify pages correlate with higher bounce and lower conversion across ecommerce data broadly — but the size of any specific improvement varies by store, so avoid trusting a claimed universal percentage gain. Treat speed work as removing a genuine barrier to conversion, then measure the actual effect on your own funnel data using Core Web Vitals as the diagnostic starting point.",
+          "Shopify speed affects conversion because shoppers can't act on a page they can't see or use. Measure real-user Core Web Vitals in Shopify's web performance dashboard: LCP within 2.5 seconds, INP of 200 milliseconds or less and CLS of 0.1 or less at the 75th percentile. Then fix the causes on your highest-traffic templates. The usual culprits are unused or heavy apps, too much JavaScript, oversized or lazy-loaded hero images, too many font files, third-party tracking scripts and slow Liquid. Remeasure after every change, and treat performance as ongoing maintenance.",
         ],
       },
       {
-        heading: "Why Speed Is a Conversion Factor, Not Just a Technical Metric",
+        heading: "How Performance Affects Conversions",
         body: [
-          "A visitor who abandons before the page finishes loading never sees your product, your trust signals, or your call to action — no amount of on-page optimization matters if the page hasn't rendered yet. Speed sits upstream of every other conversion factor on the page.",
+          "Performance shapes three moments: how quickly shoppers see the product (loading), how quickly the page responds when they tap a size or add to cart (interactivity), and whether the layout jumps under their finger (stability). Each can cost a sale, especially on mobile and on product and checkout-bound pages.",
+          "Be wary of promises that a fix will lift conversion by a set percentage. The effect depends on how slow the store is, where, and for whom. Measure your own store before and after changes instead. For the metrics themselves, see [[/blogs/shopify-core-web-vitals-performance-guide|Shopify Core Web Vitals explained]].",
         ],
       },
       {
-        heading: "Core Web Vitals, Explained Practically",
+        heading: "Measure First: Core Web Vitals",
         body: [
-          "Google's Core Web Vitals give a working, standardized way to measure page experience: Largest Contentful Paint (LCP) measures how quickly the main content becomes visible, Interaction to Next Paint (INP) measures how responsive the page feels once a visitor starts interacting, and Cumulative Layout Shift (CLS) measures how much content unexpectedly moves as the page loads. Google's published \"good\" thresholds are LCP under 2.5 seconds and INP under 200 milliseconds.",
+          "Google's [[https://web.dev/articles/vitals|Core Web Vitals]] define good thresholds at the 75th percentile of page loads: Largest Contentful Paint within 2.5 seconds, Interaction to Next Paint of 200 milliseconds or less and Cumulative Layout Shift of 0.1 or less. Shopify's [[https://help.shopify.com/en/manual/online-store/web-performance/web-performance-dashboard|web performance dashboard]], available from the Themes page and in reports, shows these metrics from real users over the past 30 days, rated good, moderate or poor.",
+          "Use field data to decide what to fix, and lab tools such as PageSpeed Insights, Lighthouse and Chrome DevTools to find out why. A good lab score on a fast office connection doesn't mean mobile shoppers have a fast experience.",
         ],
+      },
+      {
+        heading: "Where Shopify Performance Problems Come From",
+        body: ["The diagram above maps the main sources. Most stores have several at once."],
         table: {
-          headers: ["Metric", "What it measures", "\"Good\" threshold", "Common Shopify cause when weak"],
+          headers: ["Source", "Typical problem", "Metric most affected"],
           rows: [
-            ["LCP", "Time until the main content is visible", "Under 2.5s", "Unoptimized hero or product images, render-blocking scripts"],
-            ["INP", "Responsiveness to actual interaction", "Under 200ms", "Heavy JavaScript from accumulated apps"],
-            ["CLS", "Visual stability as the page loads", "Low, stable score", "Images or embeds without explicit dimensions"],
+            ["Theme code", "Heavy sections, large CSS and JavaScript bundles", "LCP, INP"],
+            ["Apps", "Scripts and styles loaded on every page", "LCP, INP"],
+            ["JavaScript", "Long tasks blocking the main thread", "INP"],
+            ["Images", "Oversized files, lazy-loaded hero, no dimensions", "LCP, CLS"],
+            ["Fonts", "Many families and weights, layout shift on swap", "LCP, CLS"],
+            ["Third-party and tracking scripts", "Chat, reviews, pixels, heatmaps", "INP, LCP"],
+            ["Liquid", "Slow server rendering from heavy loops", "LCP (via time to first byte)"],
           ],
         },
       },
       {
-        heading: "Where Speed Problems Usually Come From on Shopify",
+        heading: "Theme Performance",
         body: [
-          "App accumulation is the most common, avoidable cause — each additional app can inject its own scripts, often on every page regardless of whether it's actually needed there. Unoptimized images and render-blocking resources round out the most frequent culprits. See the [[/blogs/shopify-speed-checklist-before-you-add-another-app|app audit checklist]] for a structured review.",
+          "Shopify requires Theme Store themes to reach a [[https://shopify.dev/docs/storefronts/themes/best-practices/performance|minimum average Lighthouse performance score of 60]] across home, product and collection pages, so most start from a reasonable base. Configuration then decides real speed: autoplaying video heroes, several slideshows, dozens of homepage sections and large collection pages all add weight. Remove sections that don't earn their place, and prefer simpler sections for above-the-fold content.",
         ],
-        visual: { variant: "lines", accent: "blue", caption: "Speed regressions rarely happen in one dramatic change — they accumulate gradually as apps and content are added over time." },
       },
       {
-        heading: "Why a Guaranteed Percentage Gain Is a Red Flag",
+        heading: "Apps",
         body: [
-          "Any source promising a specific, universal conversion lift from a speed fix — without knowing your store, traffic and starting point — is making a claim it can't actually back. The genuinely useful framing is that speed removes a real barrier; the size of the resulting effect depends on how slow the page was, how price-sensitive the audience is, and where in the funnel the fix applies.",
+          "Apps are the most common reason Shopify stores get slower over time. Audit each one: what it loads, on which templates, and whether it's still used. Prefer apps that use theme app blocks and embeds, which can be enabled only where needed, over apps that inject scripts everywhere. Remove unused apps, and check the theme for leftover code from apps that were uninstalled. Before installing a new app, measure a key template, install it, and measure again. See the [[/blogs/shopify-speed-checklist-before-you-add-another-app|app speed checklist]].",
+        ],
+      },
+      {
+        heading: "JavaScript",
+        body: [
+          "Shopify's performance guidance notes that JavaScript, whether theme code or app scripts, runs on the main thread and competes with rendering. Render initial content with Liquid and HTML rather than client-side JavaScript, defer non-critical scripts, and load code for components such as quick view or reviews only when shoppers interact with them. Long tasks show up as poor INP: sluggish variant pickers, add-to-cart buttons and filters.",
+        ],
+      },
+      {
+        heading: "Images",
+        body: [
+          "Images are usually the Largest Contentful Paint element. Shopify recommends using the image_url and image_tag filters to generate optimized, responsive images with srcset and sizes. Never lazy-load the LCP image, such as the homepage hero or the first product image, and mark it with fetchpriority=\"high\". Lazy-load images below the fold, and always set width and height so the layout doesn't shift as images load.",
         ],
         cta: {
-          title: "Want your Core Web Vitals measured against real conversion impact?",
-          description: "ZSpace can audit page performance and correlate it against your actual Shopify Analytics funnel data, not a generic industry estimate.",
+          title: "Is your Shopify store slower than it should be?",
+          description: "ZSpace audits themes, apps and scripts against real-user data and fixes the causes, not just the score.",
         },
       },
       {
-        heading: "Prioritizing Speed Work by Page",
+        heading: "Fonts",
         body: [
-          "Not every page carries equal weight — checkout and the homepage tend to matter most, given how close checkout sits to revenue and how often the homepage is a new visitor's very first impression. Product pages come next, given their direct link to add-to-cart rate. See the [[/blogs/shopify-core-web-vitals-performance-guide|Core Web Vitals guide]] for the deeper technical detail.",
+          "Each font family and weight is another file. Limit families and weights, consider system fonts for body text, and preload only the fonts needed above the fold. Shopify's guidance suggests adjusting fallback font metrics (size-adjust and override descriptors) so the swap from fallback to web font doesn't shift the layout.",
         ],
       },
       {
-        heading: "Measuring the Actual Effect on Your Store",
+        heading: "Third-Party and Tracking Scripts",
         body: [
-          "After a speed fix, compare conversion rate and bounce rate for the affected page before and after, ideally isolating the change through an A/B test where traffic allows. This confirms the fix actually moved a business metric, not just the Core Web Vitals score it was designed to move.",
+          "Chat widgets, review carousels, pop-ups, heatmaps and marketing pixels all compete for the main thread. List every third-party script, what it's for and who owns it, and remove anything that isn't earning its cost. Load non-essential widgets after the page is usable or on interaction. Where possible, add tracking through Shopify's customer events and web pixels rather than pasting scripts into theme files.",
         ],
-        table: croAuditFrameworkTable,
+      },
+      {
+        heading: "Liquid and Server Response",
+        body: [
+          "Shopify renders Liquid on the server for each request, so slow Liquid delays everything. Shopify's guidance calls out nested loops across products, variants or options, which grow quickly with catalog size, as a common cause of slow time to first byte. Use Shopify's theme inspector tools to find expensive templates, and simplify logic in collection and product templates with large catalogs.",
+        ],
+      },
+      {
+        heading: "Performance by Page Type",
+        body: [],
+        table: {
+          headers: ["Template", "Common issue", "First fix"],
+          rows: [
+            ["Home", "Heavy hero video or slideshow", "Single optimized hero image, not lazy-loaded"],
+            ["Collection", "Large product grids, many swatches, filter scripts", "Sensible batch size, lighter cards"],
+            ["Product", "Large galleries, review and upsell widgets", "Prioritize first image, defer widgets"],
+            ["Cart", "Upsell and shipping apps", "Load only what the cart needs"],
+          ],
+        },
+      },
+      {
+        heading: "Mobile Performance",
+        body: [
+          "Most stores' performance problems are worst on phones, where processors are slower and connections vary. Check mobile field data separately, test on a mid-range Android phone, and be strict about JavaScript, which affects mobile INP most. See [[/blogs/shopify-mobile-cro|Shopify mobile optimization]].",
+        ],
+      },
+      {
+        heading: "Monitoring Performance",
+        body: [],
+        checklist: [
+          "Review the web performance dashboard regularly and after every release",
+          "Measure key templates before and after installing any app",
+          "Set a budget for images, fonts and third-party scripts",
+          "Assign an owner for performance, not just for the theme",
+          "Recheck after seasonal campaigns add banners and widgets",
+          "Compare conversion by device alongside Core Web Vitals",
+        ],
+      },
+      {
+        heading: "How to Prioritize Speed Work",
+        body: [
+          "Start with the Core Web Vital that fails on your highest-traffic, highest-value templates, usually product and collection pages on mobile. Within that template, fix the biggest cause first: an app that loads everywhere, a lazy-loaded hero, an oversized script. Quick configuration fixes come before theme rewrites, and a rebuild is justified only when the theme itself is the bottleneck. See [[/blogs/website-performance-optimization|website performance optimization]] for the general techniques.",
+        ],
+      },
+      {
+        heading: "Common Speed Mistakes",
+        body: [],
+        checklist: [
+          "Chasing a lab score instead of real-user metrics",
+          "Lazy-loading the hero or first product image",
+          "Installing apps without measuring their cost",
+          "Leaving code from uninstalled apps in the theme",
+          "Adding a speed app instead of fixing causes",
+          "Autoplaying video in the homepage hero",
+          "Testing only on desktop",
+        ],
         cta: {
-          title: "Ready to fix the technical foundation before testing anything else?",
-          description: "See the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]] for how speed fits alongside every other audit category.",
+          title: "Want a faster store without losing features?",
+          description: "Talk to ZSpace about [[/services/shopify-development|Shopify development]] and performance work tied to [[/services/cro-audit|conversion data]].",
         },
       },
       {
         heading: "Conclusion",
         body: [
-          "Speed is a genuine conversion factor, not just a technical vanity metric — but the size of its effect is store-specific, not a number to borrow from someone else's case study. Fix the technical foundation using Core Web Vitals as your diagnostic guide, then measure the real result on your own funnel.",
+          "Shopify speed is conversion work. Measure real-user Core Web Vitals, find the templates that fail, and fix the causes: apps, JavaScript, images, fonts, third-party scripts and Liquid. Remeasure after every change, and make performance part of how the store is maintained rather than a one-off project.",
         ],
       },
     ],
@@ -408,7 +486,7 @@ export const shopifyCroPosts4: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Heatmaps and session recordings are genuinely useful — but only as a source of hypotheses, not conclusions. The Heatmap → Hypothesis → Test sequence is what keeps a plausible-looking pattern from being mistaken for a confirmed cause.",
+          "Heatmaps and session recordings are genuinely useful — but only as a source of hypotheses, not conclusions. The Heatmap → Hypothesis → Test sequence is what keeps a plausible-looking pattern from being mistaken for a confirmed cause. For using heatmaps page by page, see [[/blogs/ecommerce-heatmaps|ecommerce heatmaps]].",
         ],
       },
     ],
@@ -508,7 +586,7 @@ export const shopifyCroPosts4: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "The on-site funnel is only the middle section of a longer journey — mapping the stages before and after it often explains why a funnel problem exists in the first place, and what's needed to turn a first purchase into a repeat one.",
+          "The on-site funnel is only the middle section of a longer journey — mapping the stages before and after it often explains why a funnel problem exists in the first place, and what's needed to turn a first purchase into a repeat one. For analysing journeys in behavioral data, see [[/blogs/ecommerce-customer-journey-analytics|ecommerce customer journey analytics]].",
         ],
       },
     ],
@@ -827,7 +905,7 @@ export const shopifyCroPosts4: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Every idea on this list is a starting hypothesis, not a guaranteed winner — the value is in testing deliberately against a confirmed problem, tracking both a primary and secondary metric, and letting your own store's data decide the outcome.",
+          "Every idea on this list is a starting hypothesis, not a guaranteed winner — the value is in testing deliberately against a confirmed problem, tracking both a primary and secondary metric, and letting your own store's data decide the outcome. For platform-independent ideas tied to evidence, see [[/blogs/ecommerce-ab-testing-ideas|25 ecommerce A/B testing ideas]].",
         ],
       },
     ],
@@ -931,7 +1009,7 @@ export const shopifyCroPosts4: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A CRO strategy is what keeps individual fixes from becoming a disconnected list of one-off changes — a 30-day foundation, a 90-day diagnostic and testing cycle, and a long-term continuous discipline built on the same measurement and prioritization process running indefinitely.",
+          "A CRO strategy is what keeps individual fixes from becoming a disconnected list of one-off changes — a 30-day foundation, a 90-day diagnostic and testing cycle, and a long-term continuous discipline built on the same measurement and prioritization process running indefinitely. For the process behind a testing program, see the [[/blogs/ecommerce-experimentation-framework|ecommerce experimentation framework]].",
         ],
       },
     ],

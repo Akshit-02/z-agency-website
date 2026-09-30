@@ -207,6 +207,7 @@ export const webDevPosts9: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Monoliths trade flexibility for simplicity; headless trades simplicity for flexibility. Neither is inherently modern or outdated. Choose based on channels, performance needs and the team that will run the system, and see [[/blogs/scalable-website-architecture|scalable website architecture]] for building either well.",
+          "For related guides, see [[/blogs/headless-ecommerce-architecture|headless ecommerce architecture]], [[/blogs/composable-commerce-vs-traditional-ecommerce|composable vs traditional ecommerce]] and [[/blogs/ecommerce-microservices-vs-monolith|ecommerce microservices vs monolith]].",
         ],
       },
     ],
@@ -339,7 +340,8 @@ export const webDevPosts9: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Scalable architecture is mostly disciplined fundamentals: clear structure, reusable components, clean APIs, efficient data access, layered caching and good monitoring. Add complexity when real usage demands it, not in anticipation. For how this fits the wider build, see the [[/blogs/website-development-process|website development process]]. For the mobile equivalent, see [[/blogs/scalable-mobile-app-development|how to build a mobile app that can scale]].",
+          "Scalable architecture is mostly disciplined fundamentals: clear structure, reusable components, clean APIs, efficient data access, layered caching and good monitoring. Add complexity when real usage demands it, not in anticipation. For how this fits the wider build, see the [[/blogs/website-development-process|website development process]]. For the mobile equivalent, see [[/blogs/scalable-mobile-app-development|how to build a mobile app that can scale]]. For online stores, see [[/blogs/ecommerce-website-architecture|ecommerce website architecture]].",
+          "For related guides, see [[/blogs/ecommerce-scalability|ecommerce scalability]].",
         ],
       },
     ],
@@ -473,6 +475,7 @@ export const webDevPosts9: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Secure websites are built, not bolted on. Decide what you're protecting, use proven components for authentication, validate everything on the server, secure APIs and secrets, and keep monitoring after launch. Ongoing upkeep is covered in [[/blogs/website-maintenance-guide|website maintenance]].",
+          "For related guides, see [[/blogs/ecommerce-security|ecommerce security]].",
         ],
       },
     ],
@@ -615,7 +618,8 @@ export const webDevPosts9: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "SEO-safe migration is methodical: inventory, map, redirect, test, launch, monitor. Most lasting losses come from shortcuts in one of those steps. For keeping the new site healthy afterward, see [[/blogs/website-maintenance-guide|website maintenance]] and [[/blogs/seo-friendly-website-development|SEO-friendly development]].",
+          "SEO-safe migration is methodical: inventory, map, redirect, test, launch, monitor. Most lasting losses come from shortcuts in one of those steps. For keeping the new site healthy afterward, see [[/blogs/website-maintenance-guide|website maintenance]] and [[/blogs/seo-friendly-website-development|SEO-friendly development]]. For online stores, see [[/blogs/ecommerce-replatforming|ecommerce replatforming]] and [[/blogs/migrating-to-shopify-guide|Shopify store migration]].",
+          "For related guides, see [[/blogs/ecommerce-platform-migration|ecommerce platform migration]], [[/blogs/ecommerce-seo-migration|ecommerce SEO migration]] and [[/blogs/ecommerce-url-migration|ecommerce URL migration]].",
         ],
       },
     ],
@@ -739,7 +743,8 @@ export const webDevPosts9: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Replatforming is justified when the platform itself limits the business, and it's risky enough to deserve careful diagnosis and planning. Confirm the platform is the real problem, choose the new stack against clear requirements, and treat migration as a project in its own right. For choosing who does the work, see [[/blogs/how-to-choose-website-development-company|how to choose a website development company]].",
+          "Replatforming is justified when the platform itself limits the business, and it's risky enough to deserve careful diagnosis and planning. Confirm the platform is the real problem, choose the new stack against clear requirements, and treat migration as a project in its own right. For choosing who does the work, see [[/blogs/how-to-choose-website-development-company|how to choose a website development company]]. For online stores specifically, see [[/blogs/ecommerce-replatforming|ecommerce replatforming]].",
+          "For related guides, see [[/blogs/legacy-ecommerce-migration|legacy ecommerce migration]] and [[/blogs/ecommerce-platform-migration-checklist|ecommerce migration checklist]].",
         ],
       },
     ],

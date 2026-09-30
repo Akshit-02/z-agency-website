@@ -682,6 +682,7 @@ export const aiAgentPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "AI agents give retail and ecommerce businesses a practical way to handle product discovery, support and operational decisions at the volume modern stores actually run at — and agentic commerce is changing how AI systems discover and buy from brands in the first place. The starting point is the same either way: clean, structured, accurate product data, one well-scoped workflow, and a clear line between what the agent decides and what a person approves.",
+          "For related guides, see [[/blogs/ai-ecommerce|AI in ecommerce]], [[/blogs/agentic-commerce|agentic commerce]], [[/blogs/ai-agents-for-ecommerce|AI agents for ecommerce governance]] and [[/blogs/ai-customer-support-ecommerce|AI customer support]].",
         ],
       },
     ],
