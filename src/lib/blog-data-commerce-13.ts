@@ -238,6 +238,7 @@ export const commercePosts13: BlogPost[] = [
         heading: "Consistency Across Channels",
         body: [
           "Generate your page, structured data and feeds from one source of truth, such as your commerce platform or PIM. When different teams maintain copies, facts drift. Consistent brand names, product names and identifiers across your site, marketplaces and feeds also help systems recognize your products as the same entity.",
+          "The systems that keep data consistent are covered in [[/blogs/ecommerce-product-information-management|the PIM guide]] and [[/blogs/ecommerce-product-data-architecture|ecommerce product data architecture]].",
         ],
       },
       {
@@ -305,6 +306,8 @@ export const commercePosts13: BlogPost[] = [
         heading: "Quick answer",
         body: [
           "A product feed is a structured list of your products and their attributes that you send to shopping channels such as Google Merchant Center, marketplaces, social shops and AI shopping platforms. Include every required attribute (in Google's case id, title, description, link, image_link, availability and price, plus identifiers such as brand and GTIN where they apply), give each variant its own item with a shared group ID, add shipping and returns information, and keep price and availability identical to your pages. Validate before sending, review diagnostics every week, and generate feeds from one source of truth.",
+          "Feeds are only as good as the source data; see [[/blogs/ecommerce-product-information-management|product information management]].",
+          "For selling through social platforms from the same feed, see [[/blogs/social-commerce-development|social commerce development]].",
         ],
       },
       {

@@ -73,6 +73,7 @@ export const commercePosts30: BlogPost[] = [
         heading: "Fast Entry: Quick Order and Upload",
         body: [
           "Buyers who know part numbers want to type or paste them. Quick order should accept SKUs, manufacturer and customer part numbers, validate as they type and show product name, pack size and price for confirmation. CSV and paste upload should validate every line, show errors (unknown SKU, below minimum, wrong increment) and add valid lines, so a few errors don't block the whole order.",
+          "A detailed guide to quick order design and line-level validation is [[/blogs/b2b-quick-order|B2B quick order]].",
         ],
         callout: {
           type: "tip",
@@ -239,6 +240,7 @@ export const commercePosts30: BlogPost[] = [
         heading: "Reorders and Saved Assortments",
         body: [
           "Retailers reorder bestsellers mid-season. Offer reorder from history, saved assortments, quick order by SKU and upload. See [[/blogs/b2b-ecommerce-reordering|B2B reordering]].",
+          "Code-based entry, pasted lines and CSV upload are covered in [[/blogs/b2b-quick-order|B2B quick order]].",
         ],
       },
       {
@@ -483,6 +485,7 @@ export const commercePosts30: BlogPost[] = [
         heading: "Quick answer",
         body: [
           "B2B ecommerce CRM integration connects online buying with account management. Sync companies and contacts with shared identifiers across store, CRM and ERP; send web orders, quote requests, significant carts and new applications to the CRM so reps see account activity; send account owners, segments and agreements back to the store; route quote requests into opportunities; create reorder alerts for slowing accounts; link service cases to orders; and define field ownership to avoid duplicates. Align rep incentives with online ordering.",
+          "For reps ordering and quoting on behalf of customers, see [[/blogs/b2b-sales-rep-portal|B2B sales rep portals]].",
         ],
       },
       {

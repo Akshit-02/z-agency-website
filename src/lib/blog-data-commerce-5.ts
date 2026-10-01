@@ -521,6 +521,7 @@ export const commercePosts5: BlogPost[] = [
         heading: "AI-Driven Personalization",
         body: [
           "Machine learning is most useful for recommendations, ranking and search in large catalogs. Generated content, such as personalized product descriptions or assistant-style shopping help, can help discovery but must stay accurate about price, stock and specifications, and should be reviewed for tone and claims. See [[/blogs/ecommerce-product-recommendations|ecommerce product recommendations]].",
+          "Inside shopping apps, where most sessions are signed in, see [[/blogs/ecommerce-app-personalization|app personalization]]. Vertical examples: [[/blogs/jewelry-ecommerce-personalization|jewelry]] and [[/blogs/sports-ecommerce-personalization|sports]].",
         ],
       },
       {
@@ -548,6 +549,7 @@ export const commercePosts5: BlogPost[] = [
         heading: "Segments as a Starting Point",
         body: [
           "Many stores get most of the value from a handful of segment-based treatments before investing in one-to-one models: new vs returning visitors, lifecycle stage, category affinity and market. They're easier to explain, test and maintain. See [[/blogs/ecommerce-customer-segmentation|ecommerce customer segmentation]]. For industry-specific approaches, see [[/blogs/fashion-ecommerce-personalization|fashion personalization]] and [[/blogs/beauty-ecommerce-personalization|beauty personalization]].",
+          "For D2C brands using zero-party data, see [[/blogs/d2c-ecommerce-personalization|D2C personalization]]; for store associates, [[/blogs/retail-clienteling-technology|clienteling]].",
         ],
       },
       {
@@ -721,6 +723,7 @@ export const commercePosts5: BlogPost[] = [
         heading: "Recommendation Architecture",
         body: [
           "Most recommendation systems follow the same pipeline, whether built in-house or provided by an app. Understanding it helps diagnose poor recommendations: most problems come from data, filtering or placement rather than the algorithm.",
+          "A fuller system design, from event logging to candidate retrieval, ranking and fallbacks, is in [[/blogs/ecommerce-recommendation-engine|recommendation engine architecture]].",
         ],
         code: {
           label: "Recommendation pipeline (outline)",

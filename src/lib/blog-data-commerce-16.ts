@@ -147,6 +147,7 @@ export const commercePosts16: BlogPost[] = [
     bannerAlt:
       "Upsell types compared by when they help and their friction risk: better model, larger size or pack, bundle, protection or warranty, subscription and faster delivery.",
     date: "2026-09-29",
+    updated: "2026-10-01",
     readingTime: "12 min read",
     relatedServiceSlugs: ["cro-audit", "ui-ux-design"],
     relatedIndustrySlugs: ["ecommerce", "consumer-electronics"],
@@ -173,6 +174,29 @@ export const commercePosts16: BlogPost[] = [
         heading: "Upselling vs Cross-Selling",
         body: [
           "Upselling changes what the shopper buys; [[/blogs/ecommerce-cross-selling|cross-selling]] adds to it. Both raise [[/blogs/ecommerce-average-order-value|average order value]], but upsells belong earlier, where the shopper is choosing between options.",
+        ],
+      },
+      {
+        heading: "Upselling, Cross-Selling, Bundles and Recommendations Compared",
+        body: [
+          "These terms overlap in everyday use, which leads teams to place the wrong offer at the wrong moment. The distinction is about what the shopper is being offered and when.",
+        ],
+        table: {
+          headers: ["Tactic", "What it offers", "Best moment", "Watch out for"],
+          rows: [
+            ["Upsell", "A better or larger version of what they are choosing", "During choice on the product page", "Pushing beyond the shopper's need or budget"],
+            ["Cross-sell", "A different product that complements the choice", "Product page, cart, post-purchase", "Irrelevant or incompatible items"],
+            ["Complementary product", "An item that is used with the main one (refill, case, cable)", "Product page and cart", "Required items presented as optional"],
+            ["Bundle", "A predefined set, often with a price benefit", "Product and collection pages", "Bundles that hide individual prices"],
+            ["Recommendation", "Products selected by rules or models for this context", "Across the journey", "Recommendations used as a dumping ground for stock"],
+          ],
+        },
+        checklist: [
+          "Product page: upsells during choice, plus complements and bundles",
+          "Cart: a few relevant complements, never interrupting the path to checkout",
+          "Checkout: little or nothing; keep it focused",
+          "Post-purchase: complements and replenishment, after the order is confirmed",
+          "Never use pre-ticked add-ons, countdowns that reset or misleading 'savings'",
         ],
       },
       {

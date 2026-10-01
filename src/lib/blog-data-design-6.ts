@@ -272,6 +272,7 @@ export const designPosts6: BlogPost[] = [
         body: [
           "On mobile, the menu is usually a panel that drills down one level at a time. Show where the shopper is, provide an obvious back option, and include a “Shop all [category]” link at each level so they can see everything without choosing a subcategory. Keep search visible in the header rather than inside the menu, because many mobile shoppers search first. Native apps often add a bottom tab bar for main sections such as Home, Search, Categories, Wishlist and Account.",
           "Baymard's [[https://baymard.com/blog/mobile-commerce-design|mobile ecommerce research]] identifies disorientation as one of the overarching mobile problems: shoppers lose track of where they are. Clear headings, breadcrumbs or parent links and predictable back behaviour address it. See [[/blogs/mobile-ecommerce-ux|mobile ecommerce UX]].",
+          "Hamburger menus, bottom tabs and preserving filter state on back are compared in [[/blogs/mobile-ecommerce-navigation|navigation patterns for mobile stores]].",
         ],
       },
       {

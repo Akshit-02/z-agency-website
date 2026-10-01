@@ -534,6 +534,7 @@ export const mobilePosts4: BlogPost[] = [
         heading: "Quick answer",
         body: [
           "Push notifications are messages your backend sends through Apple Push Notification service (APNs) or Firebase Cloud Messaging (FCM) to specific app installations, identified by device tokens. Implementing them well means requesting permission in context, storing and refreshing tokens, sending payloads that deep link to the right screen, separating transactional from marketing messages, giving users control over categories and frequency, and measuring delivery, opens and opt-outs. Relevance, not volume, is what keeps notifications enabled.",
+          "For store-specific uses such as restock and price-drop alerts, see [[/blogs/ecommerce-app-personalization|ecommerce app personalization]].",
         ],
       },
       {

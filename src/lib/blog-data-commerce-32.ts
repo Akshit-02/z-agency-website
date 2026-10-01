@@ -256,6 +256,7 @@ export const commercePosts32: BlogPost[] = [
         heading: "APIs, Webhooks and Bulk Operations",
         body: [
           "APIs let you read and write data on demand. Webhooks notify you of changes so you don't poll constantly. Bulk operations handle large exports and imports efficiently. Shopify, for example, provides GraphQL Admin APIs, webhooks and bulk operations, and uses cost-based rate limits on its GraphQL Admin API ([[https://shopify.dev/docs/api/usage/limits|Shopify developer docs]]).",
+          "Receiving webhooks reliably is covered in [[/blogs/ecommerce-webhooks|ecommerce webhooks]].",
         ],
       },
       {
@@ -275,6 +276,7 @@ export const commercePosts32: BlogPost[] = [
         heading: "Reliability Patterns",
         body: [
           "Integrations fail: networks drop, APIs throttle, systems go down, webhooks arrive twice or out of order. Design for it. Shopify's webhook guidance, for example, recommends verifying signatures, deduplicating with the webhook ID, not relying on delivery order and running reconciliation because delivery isn't guaranteed ([[https://shopify.dev/docs/apps/build/webhooks|Shopify developer docs]]).",
+          "See [[/blogs/ecommerce-queue-architecture|queue architecture]] for retries, dead-letter queues and idempotency in practice.",
         ],
         checklist: [
           "Queue incoming events and process asynchronously",
@@ -752,7 +754,9 @@ export const commercePosts32: BlogPost[] = [
       },
       {
         heading: "Stacks by Business Stage",
-        body: [],
+        body: [
+          "For a direct-to-consumer view of the same decisions, see [[/blogs/d2c-ecommerce-technology-stack|the D2C technology stack]].",
+        ],
         table: {
           headers: ["Stage", "Typical stack"],
           rows: [

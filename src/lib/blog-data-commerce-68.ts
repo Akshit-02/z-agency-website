@@ -585,6 +585,7 @@ export const commercePosts68: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "A migration launch goes well when it's rehearsed: quiet timing, freeze, final migration and delta, DNS and redirects, smoke tests, a go/no-go decision with rollback ready, and weeks of monitoring with support prepared. Related: [[/blogs/ecommerce-parallel-run|parallel runs]] and [[/blogs/ecommerce-platform-migration|migration strategy]].",
+          "For recovery planning beyond launch, see [[/blogs/ecommerce-disaster-recovery|ecommerce disaster recovery]].",
         ],
       },
     ],

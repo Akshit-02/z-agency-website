@@ -582,7 +582,9 @@ export const commercePosts15: BlogPost[] = [
       },
       {
         heading: "Presenting Bundles Across the Store",
-        body: [],
+        body: [
+          "For small D2C ranges, bundles often work best alongside sibling comparison; see [[/blogs/d2c-product-discovery|D2C product discovery]].",
+        ],
         table: {
           headers: ["Placement", "Use"],
           rows: [

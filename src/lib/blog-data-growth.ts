@@ -79,6 +79,7 @@ export const growthPosts: BlogPost[] = [
         heading: "Homepage and Product Discovery",
         body: [
           "D2C homepages often serve returning visitors and brand searchers rather than first-time ad traffic. Make it easy to see the range, start with bestsellers or a short quiz where choice is genuinely hard, and route people to product pages quickly. With a small catalog, a clear “shop all” and a few well-named collections beat complex navigation.",
+          "The underlying design patterns are covered in [[/blogs/d2c-ecommerce-ux|D2C ecommerce UX]] and [[/blogs/d2c-product-discovery|D2C product discovery]].",
         ],
       },
       {
@@ -373,6 +374,7 @@ export const growthPosts: BlogPost[] = [
         heading: "Social Traffic and In-App Browsers",
         body: [
           "Links opened from social apps often load in the app's built-in browser rather than the phone's main browser. In practice this can mean shoppers aren't signed in, saved passwords and autofill may not be available, and some payment methods may behave differently. Test your landing pages and checkout in the apps that send your traffic, keep the path to payment short, and make sure there's an easy way to continue in the main browser if something doesn't work.",
+          "See [[/blogs/social-commerce-ux|social commerce UX]] for designing the path from social content to purchase.",
         ],
       },
       {
@@ -413,6 +415,7 @@ export const growthPosts: BlogPost[] = [
         heading: "Cart and Checkout on Mobile",
         body: [
           "Show the order total including delivery in the cart, keep guest checkout available, offer express payment at the top of checkout and use address lookup and autofill where available. Make sure the cart persists if the shopper leaves to check a message and comes back. See [[/blogs/ecommerce-checkout-ux|checkout UX]].",
+          "For a deeper look at phone checkout forms and wallets, see [[/blogs/mobile-ecommerce-checkout|checkout design for phones]].",
         ],
       },
       {

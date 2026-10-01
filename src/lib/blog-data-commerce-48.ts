@@ -231,6 +231,7 @@ export const commercePosts48: BlogPost[] = [
         heading: "Delivery and Returns Clarity",
         body: [
           "Show lead time, delivery cost and service options (room of choice, assembly, packaging removal) on product pages. Explain what happens on delivery day and how damage is handled. State returns eligibility, collection arrangements and costs for bulky items, including exceptions for made-to-order. Clarity here often matters more than lower delivery prices.",
+          "See [[/blogs/furniture-ecommerce-delivery-ux|how to communicate large-item delivery]] for service levels, fees and scheduling.",
         ],
       },
       {

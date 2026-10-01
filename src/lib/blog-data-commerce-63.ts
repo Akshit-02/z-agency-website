@@ -188,6 +188,7 @@ export const commercePosts63: BlogPost[] = [
         heading: "Omnichannel Order Scenarios",
         body: [
           "Omnichannel retail adds order types an OMS must support: buy online pick up in store, ship from store, reserve in store, endless aisle (in-store orders shipped from a warehouse), returns in store for online orders and exchanges across channels. Each needs inventory visibility by location, clear states and staff tools in stores.",
+          "Related: [[/blogs/omnichannel-ecommerce|omnichannel ecommerce]], [[/blogs/bopis-ecommerce|BOPIS]] and [[/blogs/omnichannel-ecommerce-architecture|omnichannel architecture]].",
         ],
         table: {
           headers: ["Scenario", "OMS needs"],
@@ -303,6 +304,7 @@ export const commercePosts63: BlogPost[] = [
         heading: "Labels, Drop-Off and Collection",
         body: [
           "Return shipping options include prepaid labels, QR codes for label-free drop-off at carrier locations, drop-off at your stores, and collection from the customer's address for bulky items. Generate labels through carrier integrations linked to the return authorization, so every inbound parcel can be matched to its return. International returns need customs documentation and clear rules about who pays duties. See [[/blogs/ecommerce-shipping-integration|shipping integration]].",
+          "Store returns of online orders are covered in [[/blogs/boris-ecommerce|BORIS ecommerce]].",
         ],
       },
       {

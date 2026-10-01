@@ -219,6 +219,7 @@ export const commercePosts50: BlogPost[] = [
         heading: "Accurate Imagery and Detail",
         body: [
           "Most jewelry returns come from gaps between expectation and reality: colour, size, sparkle. Invest in colour-accurate imagery, on-body scale and short video before other tactics. See [[/blogs/jewelry-ecommerce-product-visualization|jewelry product visualization]].",
+          "On phones, where most jewelry discovery happens, see [[/blogs/jewelry-ecommerce-mobile-ux|selling fine detail on a small screen]].",
         ],
       },
       {

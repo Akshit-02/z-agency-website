@@ -40,6 +40,7 @@ export const commercePosts51: BlogPost[] = [
         heading: "Quick answer",
         body: [
           "Sports ecommerce development starts with a catalog that reflects how athletes shop: by sport and activity, then product type. Store size systems, technical specs, skill level and equipment compatibility as structured data; support bundles and kits, team and club orders with personalization, seasonal launches and pre-orders; track inventory at size level; handle bulky items; and integrate POS, personalization partners and shipping. These foundations power shop-by-sport navigation, spec filters, comparison and fit guidance on the storefront.",
+          "Related: [[/blogs/sports-ecommerce-personalization|sports personalization]] and [[/blogs/fitness-ecommerce-product-discovery|fitness product discovery]].",
         ],
       },
       {
@@ -221,6 +222,7 @@ export const commercePosts51: BlogPost[] = [
         heading: "Beginners and Experts",
         body: [
           "Beginners need guidance: “what you need to start”, starter kits, skill-level labels and plain explanations of specs. Experts want precise filters, model search, new releases and detailed comparisons. Serve both on the same product pages by combining a short “who it's for” summary with a full spec table. See [[/blogs/sports-ecommerce-search|sports search]].",
+          "Using stated sport, level and fit to tailor the store is covered in [[/blogs/sports-ecommerce-personalization|sports ecommerce personalization]].",
         ],
         cta: {
           title: "Athletes leaving without finding the right gear?",
@@ -488,6 +490,7 @@ export const commercePosts51: BlogPost[] = [
         heading: "Quick answer",
         body: [
           "Sports filters should narrow by activity, fit and specs. Offer sport and activity, size in stock with the right size system, gender or age group, width or fit, skill level, surface or terrain, brand, price, rating and category-specific technical specs and compatibility. Build them from structured attributes, order them by use per category, show counts, keep applied filters visible, give mobile shoppers size and activity chips and index only combinations that match real searches.",
+          "For goal-led discovery in fitness equipment, see [[/blogs/fitness-ecommerce-product-discovery|fitness ecommerce product discovery]].",
         ],
       },
       {

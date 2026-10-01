@@ -399,6 +399,7 @@ export const commercePosts31: BlogPost[] = [
         heading: "Source of Truth and Locations",
         body: [
           "Pick one system that records physical movements as the source of truth and publish available quantities from it. Track by location, and define which locations fulfil online orders for which regions, whether stores fulfil online orders and how pickup works. See [[/blogs/ecommerce-erp-integration|ecommerce ERP integration]].",
+          "For stores and customer-facing availability, see [[/blogs/retail-inventory-visibility|retail inventory visibility]].",
         ],
       },
       {

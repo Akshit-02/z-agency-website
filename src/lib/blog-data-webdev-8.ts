@@ -573,6 +573,7 @@ export const webDevPosts8: BlogPost[] = [
         heading: "Suitable Business Cases",
         body: [
           "PWAs fit content and commerce sites with frequent repeat visitors, internal tools used on mobile in the field, booking and ordering experiences, and markets where users are cautious about app downloads or storage. If your requirements lean heavily on device hardware or background activity, compare the options in [[/blogs/pwa-vs-native-app|PWA vs native app]].",
+          "For online stores specifically, see [[/blogs/ecommerce-pwa-development|ecommerce PWA development]] (caching rules for catalogs, carts and checkout) and [[/blogs/ecommerce-pwa-ux|ecommerce PWA UX]].",
         ],
         cta: {
           title: "Want to turn your website into a PWA?",
@@ -673,7 +674,9 @@ export const webDevPosts8: BlogPost[] = [
       },
       {
         heading: "Decision Guide",
-        body: [],
+        body: [
+          "Running a store? The ecommerce version of this comparison, covering checkout, product SEO and iOS push, is [[/blogs/ecommerce-pwa-vs-native-app|PWA vs native app for ecommerce]].",
+        ],
         checklist: [
           "Core features need hardware or background access: native",
           "Users expect to find you in app stores: native",

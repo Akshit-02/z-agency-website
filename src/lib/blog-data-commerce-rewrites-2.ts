@@ -54,11 +54,14 @@ export const commerceRewrites2: BlogPost[] = [
         body: [
           "D2C visitors often arrive from social media or ads without knowing the brand. The site has to explain who you are, why the product exists and why it's better for a specific customer, then prove it. That means a product-led homepage, product pages that educate (materials, ingredients, how it works, who it's for), genuine reviews and customer photos, and content that answers pre-purchase questions.",
           "Brand expression and usability must work together: an expressive site that's slow or confusing loses sales, and a generic template loses the reason to buy from you rather than a marketplace. See [[/blogs/d2c-product-page-optimization|D2C product page optimization]].",
+          "Design guidance for this layer is in [[/blogs/d2c-ecommerce-ux|D2C ecommerce UX]] and [[/blogs/d2c-brand-website-design|D2C brand website design]]; choosing between similar products is covered in [[/blogs/d2c-product-discovery|D2C product discovery]].",
         ],
       },
       {
         heading: "Layer 2: The Commerce Core",
-        body: [],
+        body: [
+          "For the architecture by growth stage, see [[/blogs/d2c-ecommerce-technology-stack|D2C ecommerce technology stack]].",
+        ],
         table: {
           headers: ["Component", "What scaling requires"],
           rows: [
@@ -85,6 +88,7 @@ export const commerceRewrites2: BlogPost[] = [
         heading: "Layer 3: First-Party Data",
         body: [
           "The direct relationship is D2C's biggest asset. Capture consented first-party data: purchases, preferences, quiz answers, email and SMS subscriptions and on-site behavior where consent allows. Keep customer records clean across store, email platform and support tools, and measure with an analytics setup you trust. See [[/blogs/ecommerce-analytics|ecommerce analytics]].",
+          "How to use that data well is covered in [[/blogs/d2c-ecommerce-personalization|D2C personalization]].",
         ],
       },
       {

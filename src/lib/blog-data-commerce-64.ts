@@ -470,6 +470,7 @@ export const commercePosts64: BlogPost[] = [
         heading: "Pickup and Collection",
         body: [
           "Store pickup and pickup points can reduce costs and suit customers who aren't home. Show availability early, including when items will be ready. Let customers search locations by postcode or current location, show opening hours, and confirm what to bring for collection.",
+          "For the full pickup journey, see [[/blogs/click-and-collect-ux|click and collect UX]].",
         ],
       },
       {
@@ -482,6 +483,7 @@ export const commercePosts64: BlogPost[] = [
         heading: "Restrictions and Special Cases",
         body: [
           "Tell customers early when items can't ship to their location, need age verification, are oversized or require special handling. Showing a restriction at the last checkout step, after the customer has entered everything, is the worst moment. Flag it on the product page when the customer's location is known, or in the cart.",
+          "Large and bulky items need their own treatment; see [[/blogs/furniture-ecommerce-delivery-ux|furniture delivery UX]] for service levels, scheduling and access checks.",
         ],
       },
       {

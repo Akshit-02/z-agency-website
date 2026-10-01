@@ -274,6 +274,7 @@ export const webDevPosts7: BlogPost[] = [
         heading: "Quick answer",
         body: [
           "A traditional CMS manages content and renders the website in one system, so editors get built-in themes, previews and page building with little developer involvement. A headless CMS manages content only and delivers it through an API, so developers build the front end separately. Choose traditional when one website is the only channel and editors need independence. Choose headless when content feeds several channels, the front end needs full design and performance control, and you have developers to support it.",
+          "For ecommerce teams deciding where product data should live, see [[/blogs/pim-vs-cms|PIM vs CMS]].",
         ],
       },
       {

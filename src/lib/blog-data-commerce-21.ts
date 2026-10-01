@@ -428,6 +428,7 @@ export const commercePosts21: BlogPost[] = [
         heading: "Personalization and Privacy",
         body: [
           "Service-like personalization, such as remembering sizes, preferences and past purchases or offering engraving and monograms, fits luxury well. Respect privacy, avoid intrusive tactics and keep data secure.",
+          "For a category-specific example, including gift secrecy, see [[/blogs/jewelry-ecommerce-personalization|jewelry ecommerce personalization]].",
         ],
       },
       {

@@ -352,6 +352,7 @@ export const commercePosts9: BlogPost[] = [
         heading: "Quick answer",
         body: [
           "A scalable ecommerce architecture has two halves. The information architecture defines how the catalog is modeled (products, variants, attributes), how it's organized (a shallow, shopper-centred taxonomy), how pages are addressed (short, stable, canonical URLs) and which templates render them. The technical architecture defines the platform and front end, the systems around it (PIM, ERP, OMS, CRM, search, analytics), which system owns each type of data, and how they exchange it through APIs and events. Design both so the store can add products, categories, markets and channels without restructuring.",
+          "Product data flows across this stack are detailed in [[/blogs/ecommerce-product-data-architecture|product data architecture]].",
         ],
       },
       {
@@ -450,6 +451,7 @@ export const commercePosts9: BlogPost[] = [
         heading: "Events, APIs and Reliability",
         body: [
           "Integrations should use webhooks or events for changes and APIs for queries, with retries, idempotency, logging and alerts. Batch syncs are simpler but create windows where data is stale, such as stock that has already sold. Document every integration and its failure behavior. See [[/blogs/shopify-business-systems-integration-guide|connecting Shopify to business systems]] and [[/blogs/api-first-website-development|API-first development]].",
+          "Deep dives: [[/blogs/ecommerce-event-driven-architecture|event-driven architecture]], [[/blogs/ecommerce-webhooks|webhooks]] and [[/blogs/ecommerce-microservices-architecture|microservices architecture]].",
         ],
       },
       {

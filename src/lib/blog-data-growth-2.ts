@@ -212,6 +212,7 @@ export const growthPosts2: BlogPost[] = [
         heading: "Quick answer",
         body: [
           "Customers abandon checkout mainly because of surprises, effort and doubt. The most common reasons in Baymard's research are extra costs being too high, slow delivery, not trusting the site with card details, forced account creation, a long or complicated checkout and site errors. Returns policies, hidden totals, declined cards and missing payment methods follow. To fix abandonment, first find which causes apply to your store. Use step-by-step drop-off, field errors, payment failures, recordings and test orders, then fix the causes in order of how many shoppers they affect.",
+          "On phones, many of these causes are amplified; see [[/blogs/mobile-ecommerce-checkout|mobile checkout design]].",
         ],
       },
       {

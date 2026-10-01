@@ -366,6 +366,7 @@ export const commercePosts46: BlogPost[] = [
         heading: "Specs Without Horizontal Scrolling",
         body: [
           "Render spec tables as label and value pairs stacked vertically, grouped into collapsible sections (display, performance, connectivity, battery), with the key spec summary always visible above them. Use readable units and short explanations. Tables that scroll sideways hide labels and cause errors.",
+          "The spec hierarchy behind these layouts is in [[/blogs/electronics-product-specifications|electronics product specifications]].",
         ],
         table: {
           headers: ["Desktop pattern", "Mobile pattern"],

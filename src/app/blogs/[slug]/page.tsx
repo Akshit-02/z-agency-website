@@ -244,6 +244,24 @@ export default async function BlogPostPage({
                       </figure>
                     )}
 
+                    {section.diagram && (
+                      <figure className="mt-6">
+                        <div
+                          tabIndex={0}
+                          role="region"
+                          aria-label={`${section.diagram.alt} (scrollable)`}
+                          className="overflow-x-auto rounded-2xl border border-line focus-visible:outline-2 focus-visible:outline-blue"
+                        >
+                          <div role="img" aria-label={section.diagram.alt} className="aspect-[16/9] w-full min-w-[560px]">
+                            <BlogBanner variant={section.diagram.variant} />
+                          </div>
+                        </div>
+                        <figcaption className="mt-3 text-[0.88rem] leading-relaxed text-ink-soft">
+                          {section.diagram.caption}
+                        </figcaption>
+                      </figure>
+                    )}
+
                     {section.callout && (
                       <div className="mt-6">
                         <Callout type={section.callout.type} text={section.callout.text} />

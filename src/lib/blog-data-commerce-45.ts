@@ -53,6 +53,7 @@ export const commercePosts45: BlogPost[] = [
         heading: "Designing the Specification Schema",
         body: [
           "Define an attribute schema for each category: which specs are required, their data types, units and allowed values. Normalize supplier data into it on import. Keep display labels and units separate from stored values so you can show “13.3 in” to one market and “33.8 cm” to another.",
+          "Key-spec selection, normalization rules and spec table presentation are covered in [[/blogs/electronics-product-specifications|electronics product specifications]].",
         ],
         table: {
           headers: ["Category", "Example required specs", "Data type"],
@@ -418,6 +419,7 @@ export const commercePosts45: BlogPost[] = [
         heading: "Zone 2: Specs",
         body: [
           "Group the full spec table by topic, use consistent units and plain labels, and add short explanations for jargon. Use real HTML table markup so it's accessible and readable by assistive technology. Include what's in the box, dimensions and weight, and link to documents (manuals, spec sheets, declarations of conformity where relevant).",
+          "How to choose key specs per product type and structure the full list is explained in [[/blogs/electronics-product-specifications|structuring electronics specifications]].",
         ],
         callout: {
           type: "tip",
@@ -568,6 +570,7 @@ export const commercePosts45: BlogPost[] = [
         heading: "Step 1: Normalize Attributes",
         body: [
           "Comparison exposes bad data instantly. Before designing, make sure every product in a category has the same attributes with the same units and allowed values. Convert supplier values (“0.5TB”, “512 GB”, “512GB SSD”) into a single representation, and mark missing values explicitly rather than leaving blanks that look like “no”.",
+          "Normalization starts upstream in product data: see [[/blogs/electronics-product-specifications|electronics specifications]], [[/blogs/ecommerce-product-information-management|product information management]] and [[/blogs/ecommerce-product-data-architecture|product data architecture]].",
         ],
         table: {
           headers: ["Raw supplier values", "Normalized"],
@@ -716,6 +719,7 @@ export const commercePosts45: BlogPost[] = [
         heading: "Filters Are Built From Data",
         body: [
           "A “16 GB RAM” filter only works if every laptop has memory stored as a number with a unit. Titles and descriptions can't power reliable filters. The diagram above shows a filter taxonomy; each value in it comes from a normalized attribute. See [[/blogs/electronics-ecommerce-website-development|electronics ecommerce development]] for the data model and [[/blogs/ecommerce-filters|ecommerce product filters]] for general filter UX.",
+          "Typed attributes and canonical units are described in [[/blogs/electronics-product-specifications|electronics product specifications]].",
         ],
       },
       {

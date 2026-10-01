@@ -124,7 +124,9 @@ export const commercePosts44: BlogPost[] = [
       },
       {
         heading: "Decision Framework",
-        body: [],
+        body: [
+          "If microservices fit, [[/blogs/ecommerce-microservices-architecture|ecommerce microservices architecture]] covers boundaries and operations, and [[/blogs/ecommerce-api-gateway|API gateways]] cover the entry point.",
+        ],
         table: {
           headers: ["Question", "Suggests monolith / modular monolith", "Suggests microservices"],
           rows: [

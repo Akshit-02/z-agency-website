@@ -331,6 +331,13 @@ B2B Ecommerce (hub: B2B ecommerce website development; B2B ecommerce UX covers w
 - Wholesale ecommerce UX: variant grids, case packs and line sheets — https://zspace.in/blogs/wholesale-ecommerce-ux
 - B2B ecommerce ERP integration: accounts, pricing, credit and invoices — https://zspace.in/blogs/b2b-ecommerce-erp-integration
 - B2B ecommerce CRM integration: connecting sales reps and commerce — https://zspace.in/blogs/b2b-ecommerce-crm-integration
+- B2B ecommerce account management: companies, locations, users, roles and permissions — https://zspace.in/blogs/b2b-ecommerce-account-management
+- B2B customer-specific catalogs: entitlements, contract prices and availability across channels — https://zspace.in/blogs/b2b-customer-specific-catalogs
+- B2B quick order: SKU autocomplete, pasted lines, CSV upload, templates and line-level validation — https://zspace.in/blogs/b2b-quick-order
+- B2B approval workflows: rules, approver roles, escalation, pending orders and audit — https://zspace.in/blogs/b2b-approval-workflows
+- B2B sales rep portal: ordering on behalf, quotes, customer pricing and CRM integration — https://zspace.in/blogs/b2b-sales-rep-portal
+- B2B punchout catalogs: cXML and SAP OCI, cart return, purchase order intake and integration — https://zspace.in/blogs/b2b-punchout-catalogs
+- B2B commerce platform architecture: channels, commerce services, ERP and CRM, identity and APIs — https://zspace.in/blogs/b2b-commerce-platform-architecture
 
 Ecommerce Integrations (hub: ecommerce API integration; general guides, with B2B-specific ERP and CRM guides above):
 - Ecommerce API integration: systems, patterns, reliability and security (hub) — https://zspace.in/blogs/ecommerce-api-integration
@@ -344,6 +351,14 @@ Ecommerce Architecture (hub: ecommerce website architecture):
 - Headless ecommerce architecture: how it works, trade-offs and when to avoid it — https://zspace.in/blogs/headless-ecommerce-architecture
 - Composable commerce vs traditional ecommerce: MACH, cost of ownership and hybrids — https://zspace.in/blogs/composable-commerce-vs-traditional-ecommerce
 - Ecommerce technology stack: choosing tools by layer and business stage — https://zspace.in/blogs/ecommerce-technology-stack
+- Ecommerce event-driven architecture: events, producers, consumers, queues, idempotency and monitoring — https://zspace.in/blogs/ecommerce-event-driven-architecture
+- Ecommerce microservices architecture: service boundaries, data ownership, checkout sagas and operations (the decision itself is in microservices vs monolith) — https://zspace.in/blogs/ecommerce-microservices-architecture
+- Ecommerce API gateway: routing, authentication, rate limiting, caching and versioning — https://zspace.in/blogs/ecommerce-api-gateway
+- Ecommerce webhooks: signature verification, retries, duplicates, ordering and reconciliation — https://zspace.in/blogs/ecommerce-webhooks
+- Ecommerce queue architecture: asynchronous processing, retries, dead-letter queues and backpressure — https://zspace.in/blogs/ecommerce-queue-architecture
+- Ecommerce caching strategy: CDN, page and API caching, invalidation, stale data and personalization — https://zspace.in/blogs/ecommerce-caching-strategy
+- Ecommerce observability: logs, metrics, traces, synthetic checks, business alerts and incident response — https://zspace.in/blogs/ecommerce-observability
+- Ecommerce disaster recovery: RPO and RTO, recovery strategies, backups, payments, rollback and testing — https://zspace.in/blogs/ecommerce-disaster-recovery
 
 Ecommerce: Marketplace Ecommerce (hub: marketplace ecommerce website development; covers the multi-vendor operating model, buyer and seller experiences, orders, commissions and payments):
 - Marketplace product discovery: shared taxonomy, grouped offers, seller signals, merchandising — https://zspace.in/blogs/marketplace-product-discovery
@@ -417,6 +432,7 @@ Ecommerce: Electronics Ecommerce (hubs: electronics ecommerce website developmen
 - Electronics product page design: key specs, spec tables, compatibility and trust — https://zspace.in/blogs/electronics-product-page-design
 - Electronics product comparison: attribute normalization, differences-only views, mobile and accessible tables — https://zspace.in/blogs/electronics-ecommerce-product-comparison
 - Electronics ecommerce filters: spec ranges, compatibility and category-specific filter sets — https://zspace.in/blogs/electronics-ecommerce-filters
+- Electronics product specifications: key spec hierarchy, typed and normalized attributes, units, spec tables and terminology — https://zspace.in/blogs/electronics-product-specifications
 - Consumer electronics search: model numbers, spec queries, accessories and synonyms — https://zspace.in/blogs/consumer-electronics-ecommerce-search
 - Electronics conversion optimization measured on kept orders and returns — https://zspace.in/blogs/electronics-ecommerce-conversion-optimization
 - Electronics mobile UX: readable specs, two-product comparison, sticky controls — https://zspace.in/blogs/electronics-ecommerce-mobile-ux
@@ -433,6 +449,7 @@ Ecommerce: Furniture Ecommerce (hubs: furniture ecommerce website development an
 - Furniture search: rooms, styles, collections, sizes and synonyms — https://zspace.in/blogs/furniture-ecommerce-search
 - Furniture conversion optimization: size, materials, delivery and long decisions — https://zspace.in/blogs/furniture-ecommerce-conversion-optimization
 - Furniture mobile UX: dimensions, swatches, sharing and delivery booking on phones — https://zspace.in/blogs/furniture-ecommerce-mobile-ux
+- Furniture delivery UX: lead times, service levels, scheduling, access checks, assembly, fees and delivery exceptions — https://zspace.in/blogs/furniture-ecommerce-delivery-ux
 - Shopify furniture store: variants and configurators, metafields, 3D media, freight and POS — https://zspace.in/blogs/shopify-furniture-store
 - Furniture ecommerce redesign: data, discovery, product pages and delivery messaging — https://zspace.in/blogs/furniture-ecommerce-redesign
 
@@ -445,6 +462,8 @@ Ecommerce: Jewelry & Luxury Ecommerce (hubs: jewelry ecommerce website developme
 - Jewelry filters: metals, stones, sizes, occasions and gifting — https://zspace.in/blogs/jewelry-ecommerce-filters
 - Jewelry search: materials, stones, collections and gift intent — https://zspace.in/blogs/jewelry-ecommerce-search
 - Jewelry conversion optimization: building buying confidence — https://zspace.in/blogs/jewelry-ecommerce-conversion-optimization
+- Jewelry personalization: style and metal signals, matching pieces, saved sizes, gift secrecy and privacy guardrails — https://zspace.in/blogs/jewelry-ecommerce-personalization
+- Jewelry mobile UX: zoom, scale, layered details, ring sizing, sticky controls and high-value checkout on phones — https://zspace.in/blogs/jewelry-ecommerce-mobile-ux
 - Luxury ecommerce UX: premium visual hierarchy, editorial storytelling, service and restraint — https://zspace.in/blogs/luxury-ecommerce-website-design
 - Shopify jewelry store: variants, certificate metafields, media, filters, gifting and fraud — https://zspace.in/blogs/shopify-jewelry-store
 - Jewelry ecommerce redesign: trust audit, photography and phased rollout — https://zspace.in/blogs/jewelry-ecommerce-redesign
@@ -459,6 +478,8 @@ Ecommerce: Sports & Fitness Ecommerce (hubs: sports ecommerce website developmen
 - Sports search: sports vocabulary, models and generations, sizes and seasons — https://zspace.in/blogs/sports-ecommerce-search
 - Sports conversion optimization: suitability, fit and event timing — https://zspace.in/blogs/sports-ecommerce-conversion-optimization
 - Fitness ecommerce website development: equipment, apparel, programs and bulky delivery — https://zspace.in/blogs/fitness-ecommerce-website-development
+- Fitness product discovery: goal and activity entry points, space and level, filters, quizzes and comparison, without health claims — https://zspace.in/blogs/fitness-ecommerce-product-discovery
+- Sports ecommerce personalization: stated sport, skill level, fit memory, replacements and seasons — https://zspace.in/blogs/sports-ecommerce-personalization
 - Shopify sports store: variants, metafields, collections by sport, filters, B2B for clubs, POS — https://zspace.in/blogs/shopify-sports-store
 - Sports ecommerce redesign: navigation by sport, search, filters and fit — https://zspace.in/blogs/sports-ecommerce-redesign
 
@@ -560,6 +581,53 @@ Ecommerce: Ecommerce Migration (hub: ecommerce migration strategy; general websi
 - Ecommerce migration testing: priorities, data validation, integrations, go-live criteria — https://zspace.in/blogs/ecommerce-migration-testing
 - Ecommerce parallel run: when it's worth it, synchronization, cutover — https://zspace.in/blogs/ecommerce-parallel-run
 - Ecommerce migration launch plan: freeze, DNS, smoke tests, go/no-go, rollback, monitoring — https://zspace.in/blogs/ecommerce-migration-launch-plan
+
+Ecommerce: Mobile Commerce (hub: mobile ecommerce development for the architecture; mobile ecommerce UX in the design cluster below covers page-level design; general app topics are in the Mobile App Development cluster):
+- Mobile ecommerce development: one commerce backend for mobile web, PWA and app, APIs, identity, payments and performance budgets (hub) — https://zspace.in/blogs/mobile-ecommerce-development
+- Ecommerce mobile app vs mobile website: reach, SEO, push, maintenance and a decision framework — https://zspace.in/blogs/ecommerce-mobile-app-vs-mobile-website
+- Ecommerce PWA development: service worker caching rules for catalogs, carts and checkout, install, offline and browser support — https://zspace.in/blogs/ecommerce-pwa-development
+- PWA vs native app for ecommerce: distribution, product SEO, iOS push, device features and maintenance — https://zspace.in/blogs/ecommerce-pwa-vs-native-app
+- Ecommerce PWA UX: install timing, standalone navigation, loading, offline and stale-content states — https://zspace.in/blogs/ecommerce-pwa-ux
+- Ecommerce app performance: startup, product feeds, images, API latency, caching, SDK overhead and monitoring — https://zspace.in/blogs/ecommerce-app-performance
+- Mobile ecommerce navigation: hamburger menus, bottom tabs, visible search, filters and back-navigation state — https://zspace.in/blogs/mobile-ecommerce-navigation
+- Mobile ecommerce checkout: wallets, fewer fields, keyboards and autocomplete, address entry and error handling — https://zspace.in/blogs/mobile-ecommerce-checkout
+- Ecommerce app personalization: home feeds, notifications, account features, holdout measurement and privacy — https://zspace.in/blogs/ecommerce-app-personalization
+
+Ecommerce: D2C Brand Technology (hubs: D2C website development for the build and D2C ecommerce UX for design; D2C CRO and mobile guides are in the growth cluster below):
+- D2C ecommerce UX: story where decisions happen, need-based navigation, specific product pages, trust for new brands (UX hub) — https://zspace.in/blogs/d2c-ecommerce-ux
+- D2C brand website design: brand expression inside a conventional commerce hierarchy, performance budgets — https://zspace.in/blogs/d2c-brand-website-design
+- D2C product discovery: choosing between similar products with collections, quizzes, comparison and relationships — https://zspace.in/blogs/d2c-product-discovery
+- D2C ecommerce personalization: zero-party and first-party data, segments before models, holdout testing — https://zspace.in/blogs/d2c-ecommerce-personalization
+- D2C ecommerce technology stack: layers and stacks by growth stage, systems of record, app governance — https://zspace.in/blogs/d2c-ecommerce-technology-stack
+
+Ecommerce: Omnichannel & Retail Commerce (hub: omnichannel ecommerce; order routing is in the Operations group and inventory sync in Integrations):
+- Omnichannel ecommerce: connected channels, capabilities and a phased roadmap (hub) — https://zspace.in/blogs/omnichannel-ecommerce
+- Omnichannel ecommerce architecture: POS, OMS, ERP, inventory, CRM and the events that keep them in sync — https://zspace.in/blogs/omnichannel-ecommerce-architecture
+- BOPIS: buy online, pick up in store, from availability and reservations to handover — https://zspace.in/blogs/bopis-ecommerce
+- BORIS: returning online orders in store, order lookup, refunds and stock disposition — https://zspace.in/blogs/boris-ecommerce
+- Click and collect UX: store choice, ready times, notifications and pickup handover — https://zspace.in/blogs/click-and-collect-ux
+- Unified commerce vs omnichannel: architecture, data and when each fits (neutral comparison) — https://zspace.in/blogs/unified-commerce-vs-omnichannel
+- Retail ecommerce integration: POS, ERP, OMS, CRM, loyalty and payments with APIs and events — https://zspace.in/blogs/retail-ecommerce-integration
+- Retail inventory visibility: available to promise, safety stock, stock states and caching — https://zspace.in/blogs/retail-inventory-visibility
+- Store locator UX: list-first results, hours, availability, store pages and accessibility — https://zspace.in/blogs/ecommerce-store-locator-ux
+- Retail clienteling technology: associate tools, consented profiles, stock and privacy — https://zspace.in/blogs/retail-clienteling-technology
+
+Ecommerce: Social & Conversational Commerce (hub: social commerce development; platform capabilities vary by market and change often, so claims are phrased to be verified; strategy for chat is in the AI Commerce group):
+- Social commerce development: catalogs and feeds, native vs website checkout, order sync and attribution (hub) — https://zspace.in/blogs/social-commerce-development
+- Social commerce UX: from social discovery to checkout, in-app browsers and trust — https://zspace.in/blogs/social-commerce-ux
+- Shoppable content: product tagging by ID, editorial commerce, live product data and analytics — https://zspace.in/blogs/shoppable-content
+- Shoppable video ecommerce: product moments, cards, add to cart from video, live shopping and page speed — https://zspace.in/blogs/shoppable-video-ecommerce
+- Creator commerce: creator storefronts, links and codes, attribution rules, payouts and disclosure — https://zspace.in/blogs/creator-commerce
+- Ecommerce community UX: product Q&A, discussions, customer content and fair moderation — https://zspace.in/blogs/ecommerce-community-ux
+- Conversational shopping UX: clarifying questions, grounded recommendations, comparison and cart handoff — https://zspace.in/blogs/conversational-shopping-ux
+- Ecommerce chatbot UX: intents, verified order lookup, permitted actions, human escalation and transparency — https://zspace.in/blogs/ecommerce-chatbot-ux
+- Ecommerce voice commerce: what retailers control today, voice search, confirmation and accessibility — https://zspace.in/blogs/ecommerce-voice-commerce
+
+Ecommerce: Product Data & Recommendations (hub: ecommerce product information management; connects to the electronics, furniture, jewelry and sports groups above and to the AI Commerce group):
+- Ecommerce product information management (PIM): data models, attributes, variants, localization, workflows, channels and governance (hub) — https://zspace.in/blogs/ecommerce-product-information-management
+- PIM vs CMS, with the ecommerce platform and DAM: what each system owns and when each is needed — https://zspace.in/blogs/pim-vs-cms
+- Ecommerce product data architecture: entities, SKUs, variants, ownership per field, events and APIs feeding search and recommendations — https://zspace.in/blogs/ecommerce-product-data-architecture
+- Ecommerce recommendation engine: collaborative, content-based and hybrid methods, retrieval and ranking, rules, APIs, testing and cold start — https://zspace.in/blogs/ecommerce-recommendation-engine
 
 Shopify CRO cluster (deep dives on each stage of Shopify conversion optimization, sitting under the "Shopify CRO" overview above):
 

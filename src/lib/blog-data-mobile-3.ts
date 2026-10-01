@@ -336,6 +336,7 @@ export const mobilePosts3: BlogPost[] = [
         heading: "Monitoring in Production",
         body: [
           "Real-user monitoring shows how the app performs on actual devices and networks. Google Play's Android vitals flags apps whose user-perceived crash rate or ANR rate exceeds its bad-behavior thresholds, currently 1.09% and 0.47% of daily active users, which can affect store visibility. Xcode Organizer and MetricKit provide equivalent data on iOS. See [[/blogs/mobile-app-crash-reporting|crash reporting and monitoring]] for turning this data into fixes.",
+          "For shopping apps, where product feeds, images and cart APIs dominate, see [[/blogs/ecommerce-app-performance|ecommerce app performance]].",
         ],
         cta: {
           title: "Want performance monitoring set up properly?",

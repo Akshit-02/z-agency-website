@@ -435,6 +435,7 @@ export const shopifyCroPosts2: BlogPost[] = [
         heading: "Quick answer",
         body: [
           "Shopify product recommendations use cross-sells, upsells, alternatives and personalized suggestions to increase conversion and average order value — but each type serves a different moment in the shopping decision, and using the wrong one in the wrong place can distract from the purchase a shopper is already trying to make rather than help it. Cross-sells and frequently-bought-together suggestions generally work best in the cart; upsells work best earlier on the product page; alternatives help most when an item is unavailable or a shopper is still comparing. Keep any single page to one well-placed, relevant recommendation module rather than several competing ones.",
+          "For how recommendation systems work beneath the apps, see [[/blogs/ecommerce-recommendation-engine|ecommerce recommendation engines]].",
         ],
       },
       {
@@ -1213,6 +1214,7 @@ export const shopifyCroPosts2: BlogPost[] = [
         heading: "Never Fake It",
         body: [
           "Fabricated reviews carry real ethical and, in many places, legal risk, and they're increasingly detectable by both customers and review platforms. If review volume is genuinely low because the store or product is new, that's a real, honest constraint to work within — other forms of trust-building (a clear guarantee, transparent policies, recognizable payment security) can carry more of the weight until genuine reviews accumulate.",
+          "Beyond reviews, customer Q&A and discussions can carry proof too; see [[/blogs/ecommerce-community-ux|ecommerce community UX]] and [[/blogs/social-commerce-ux|social commerce UX]].",
         ],
         cta: {
           title: "Not sure if your trust signals are placed where they'd actually help?",

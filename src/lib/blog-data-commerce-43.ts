@@ -332,6 +332,7 @@ export const commercePosts43: BlogPost[] = [
     bannerAlt:
       "Scalability layers in four columns: edge (CDN, page and API caching, bot management, rate limiting), application (stateless servers, autoscaling, checkout isolation, feature flags), data (read replicas, inventory contention, search index, backups) and async and integrations (queues, webhook buffering, third-party limits, observability, highlighted), noting to load-test the peak you expect, not the average you have.",
     date: "2026-09-29",
+    updated: "2026-10-01",
     readingTime: "20 min read",
     relatedServiceSlugs: ["website-development", "shopify-development"],
     relatedIndustrySlugs: ["ecommerce", "retail"],
@@ -375,6 +376,7 @@ export const commercePosts43: BlogPost[] = [
         heading: "Edge: CDN and Caching",
         body: [
           "Most ecommerce traffic reads pages that are the same for everyone: products, categories, content. Serve them from a CDN or cache with sensible expiry and purge or revalidate on changes to price, stock or content. Keep personalized elements (cart, account, recommendations) out of the cached HTML and fetch them separately. Protect origins with bot management and rate limiting, because scrapers and bots can consume significant capacity during launches.",
+          "Caching layers, keys and invalidation are covered in [[/blogs/ecommerce-caching-strategy|ecommerce caching strategy]].",
         ],
       },
       {
@@ -401,6 +403,7 @@ export const commercePosts43: BlogPost[] = [
         heading: "Asynchronous Processing and Integrations",
         body: [
           "Order spikes become integration spikes: ERP, warehouse, email, CRM and analytics all receive more events. Buffer webhooks in queues, process asynchronously, respect third-party rate limits with backoff, make writes idempotent and monitor queue depth. Shopify, for example, applies API rate limits to apps and custom integrations, so bulk operations and throttling are part of design ([[https://shopify.dev/docs/api/usage/limits|Shopify developer docs]]). See [[/blogs/ecommerce-api-integration|ecommerce API integration]].",
+          "See [[/blogs/ecommerce-event-driven-architecture|event-driven architecture]] and [[/blogs/ecommerce-queue-architecture|queue architecture]].",
         ],
       },
       {
@@ -413,6 +416,7 @@ export const commercePosts43: BlogPost[] = [
         heading: "Observability",
         body: [
           "You can't scale what you can't see. Monitor technical signals (error rates, latency, cache hit ratio, queue depth, third-party response times) and business signals (add to cart, checkout completion, payment success, order ingestion into ERP). Alert on deviations, and during major events have someone watching dashboards with authority to act.",
+          "A fuller guide is [[/blogs/ecommerce-observability|ecommerce observability]]; for recovery planning, see [[/blogs/ecommerce-disaster-recovery|disaster recovery]].",
         ],
         checklist: [
           "Real-user performance by template",
@@ -428,6 +432,24 @@ export const commercePosts43: BlogPost[] = [
         body: [
           "Load-test the components you control at expected peak and beyond, following your platform's and vendors' policies (hosted platforms may restrict load testing against their infrastructure). Before major events: freeze risky changes, warm caches, confirm capacity with vendors (payments, search, apps), prepare feature flags, rehearse incident response and brief support teams.",
         ],
+      },
+      {
+        heading: "Capacity Planning",
+        body: [
+          "Scalability is not only adding servers. Most ecommerce bottlenecks sit in places more servers do not fix: a database hot spot on inventory rows, a third-party API rate limit, an ERP that processes orders slowly, a search index rebuild, or a payment provider's limits. Capacity planning means knowing where those limits are before customers find them.",
+          "Start from the business forecast (peak orders per minute, sessions, catalog size and promotional events), translate it into load per component, compare with measured limits from load tests and provider documentation, and plan headroom. Revisit the plan before every major campaign. Related: [[/blogs/ecommerce-caching-strategy|caching strategy]], [[/blogs/ecommerce-queue-architecture|queues]] and [[/blogs/ecommerce-microservices-architecture|microservices architecture]].",
+        ],
+        table: {
+          headers: ["Component", "What limits it", "Typical response"],
+          rows: [
+            ["Edge and pages", "Cache hit ratio, origin capacity", "Caching, static rendering"],
+            ["Search", "Query volume, index size, rebuild time", "Managed search scaling, incremental indexing"],
+            ["Checkout", "Payment, tax and inventory calls", "Timeouts, fallbacks, provider limits agreed"],
+            ["Database", "Write contention, connections", "Indexing, read replicas, queue writes"],
+            ["Integrations", "Partner rate limits", "Queues, backpressure, batching"],
+            ["Catalog", "Variant and product counts, platform limits", "Data model and pagination"],
+          ],
+        },
       },
       {
         heading: "Operational Scalability",

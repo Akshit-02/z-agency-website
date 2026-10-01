@@ -338,6 +338,7 @@ export const commercePosts52: BlogPost[] = [
     banner: "fitnessstack",
     bannerAlt: "Fitness ecommerce build in four columns: equipment (specs and dimensions, space needed, weight limits, assembly, highlighted), apparel (size guides, fit and fabric, size in stock, exchanges), programs (subscriptions, content and guides, app links, memberships) and operations (freight delivery, installation, warranty and service, returns for bulky items).",
     date: "2026-09-29",
+    updated: "2026-10-01",
     readingTime: "16 min read",
     relatedServiceSlugs: ["website-development", "shopify-development", "ui-ux-design"],
     relatedIndustrySlugs: ["sports-fitness", "ecommerce"],
@@ -398,6 +399,20 @@ export const commercePosts52: BlogPost[] = [
         },
       },
       {
+        heading: "Supplements and Nutrition",
+        body: [
+          "Supplements and sports nutrition bring obligations that equipment and apparel do not. Rules on ingredients, labelling, permitted claims and age restrictions differ by country, and some platforms, payment providers and advertising channels apply extra policies. Treat them as a separate catalog area with its own data and review process.",
+          "Product pages should carry accurate ingredient lists, nutrition information, allergens, usage directions and warnings as required in each market, and should avoid health, medical or performance claims that are not permitted or substantiated. Recommendations and quizzes need the same care. For discovery that stays on the right side of these limits, see [[/blogs/fitness-ecommerce-product-discovery|fitness product discovery]] and [[/blogs/health-wellness-ecommerce-website-design|health and wellness ecommerce]].",
+        ],
+        checklist: [
+          "Market-specific labelling and ingredient data as structured attributes",
+          "Claims reviewed against local rules before publication",
+          "Age restrictions and shipping restrictions configured where they apply",
+          "Platform, payment and advertising policies checked for supplements",
+          "Subscriptions offered only where regular use is normal and cancellation is easy",
+        ],
+      },
+      {
         heading: "Connected Equipment",
         body: [
           "For connected bikes, rowers or smart devices, explain app compatibility, whether a subscription is required for key features, costs and data privacy. Hidden subscription requirements generate complaints and returns.",
@@ -407,6 +422,7 @@ export const commercePosts52: BlogPost[] = [
         heading: "Content and Education",
         body: [
           "Buying guides (choosing a treadmill for a small space), workout content and setup videos help shoppers choose and use equipment. Link content to products and use it in search. See [[/blogs/ecommerce-seo|ecommerce SEO]].",
+          "How goals, space constraints, filters and quizzes combine into a discovery journey is covered in [[/blogs/fitness-ecommerce-product-discovery|fitness product discovery]].",
         ],
       },
       {

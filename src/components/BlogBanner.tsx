@@ -429,7 +429,65 @@ export type BlogBannerVariant =
   | "urlmapflow"
   | "migtestmatrix"
   | "parallelrunflow"
-  | "launchplanflow";
+  | "launchplanflow"
+  | "mcomarch"
+  | "appvsmobileweb"
+  | "ecompwaarch"
+  | "ecompwavsapp"
+  | "pwauxstates"
+  | "appperfjourney"
+  | "mobilenavpatterns"
+  | "mobilecheckoutsteps"
+  | "apppersmap"
+  | "specshierarchy"
+  | "furnituredeliveryflow"
+  | "jewelrypersmap"
+  | "jewelrymobilezones"
+  | "fitnessdiscoveryflow"
+  | "sportspersmap"
+  | "recoenginepipeline"
+  | "pimworkflow"
+  | "pimcmsdam"
+  | "productdataarch"
+  | "d2cuxmap"
+  | "d2cbrandsystem"
+  | "d2cpersdata"
+  | "d2cstacklayers"
+  | "omnichannelmap"
+  | "omniarch"
+  | "clickcollectux"
+  | "unifiedvsomni"
+  | "retailintegration"
+  | "storelocatorux"
+  | "clientelingmap"
+  | "socialuxmap"
+  | "communityux"
+  | "voicecommerce"
+  | "b2baccounthierarchy"
+  | "quickorderux"
+  | "salesrepportal"
+  | "b2bplatformarch"
+  | "eventdrivenarch"
+  | "microservicesmap"
+  | "apigatewaymap"
+  | "cachelayers"
+  | "observabilitymap"
+  | "drstrategies"
+  | "d2cdiscoverypaths"
+  | "bopisflow"
+  | "borisflow"
+  | "inventoryvisibility"
+  | "socialcommerceflow"
+  | "shoppablecontentmodel"
+  | "shoppablevideoflow"
+  | "creatorcommerceflow"
+  | "convshoppingflow"
+  | "chatbotrouting"
+  | "b2bcatalogscope"
+  | "approvalflow"
+  | "punchoutflow"
+  | "webhookflow"
+  | "queuearch";
 
 const INK = "#0b0c0e";
 const LINE = "#d3d0c8";
@@ -643,6 +701,27 @@ const FLOWS: Partial<Record<BlogBannerVariant, FlowSpec>> = {
   urlmapflow: { steps: ["Old URL|inventory", "Match|new URL", "301|rule", "Test: no|chains", "Update|links", "Watch|404s"], highlight: 1 },
   parallelrunflow: { steps: ["Old store|live", "New store|shadow", "Sync|data", "Compare|outputs", "Shift|traffic", "Retire|old"], highlight: 3, loop: "run in parallel only as long as comparison adds confidence" },
   launchplanflow: { steps: ["Freeze", "Final|migration", "DNS +|redirects", "Smoke|tests", "Go / no-go", "Monitor"], highlight: 4, branch: { from: 3, label: "failure → documented rollback" } },
+  appperfjourney: { steps: ["Cold|start", "Home|feed", "Listing|scroll", "Product|page", "Add to|cart", "Checkout"], highlight: 0, loop: "measure each step on mid-range devices, not flagship phones" },
+  mobilecheckoutsteps: { steps: ["Cart", "Express|wallet?", "Contact +|address", "Delivery|option", "Pay +|confirm", "Order|status"], highlight: 1, branch: { from: 2, label: "autofill, right keyboard, inline errors" } },
+  furnituredeliveryflow: { steps: ["Estimate|on PDP", "Service|level", "Schedule|slot", "Prepare|home", "Deliver +|assemble", "Exceptions|+ returns"], highlight: 1, loop: "the delivery promise is part of the product" },
+  fitnessdiscoveryflow: { steps: ["Goal or|activity", "Space +|level", "Category", "Filters", "Compare", "Decide"], highlight: 1, loop: "content answers questions; it does not make health claims" },
+  recoenginepipeline: { steps: ["Events +|catalog", "Features", "Candidate|retrieval", "Ranking", "Business|rules", "Serve +|log"], highlight: 3, loop: "evaluate offline, then test online against a holdout" },
+  pimworkflow: { steps: ["Sources|+ import", "Model +|classify", "Enrich|+ translate", "Validate|+ approve", "Syndicate|to channels", "Monitor|quality"], highlight: 3, loop: "completeness rules gate what reaches each channel" },
+  d2cdiscoverypaths: { steps: ["Entry|page", "Need or|use case", "Collection|or quiz", "Compare|options", "Product|page", "Pairs|with"], highlight: 2, loop: "small catalogs need guidance more than filters" },
+  bopisflow: { steps: ["Store|stock shown", "Choose|store", "Order +|pay", "Store|picks", "Ready|notice", "Collect +|verify"], highlight: 3, branch: { from: 3, label: "item missing → substitute, transfer or refund" } },
+  borisflow: { steps: ["Find|order", "Check|eligibility", "Inspect|item", "Refund or|exchange", "Restock|or route", "Update|systems"], highlight: 1, loop: "the store needs the online order, policy and refund path in one screen" },
+  inventoryvisibility: { steps: ["Sources|by location", "Reserve +|safety", "Available|to promise", "Cache|short TTL", "Show|stock state", "Confirm at|checkout"], highlight: 2, loop: "customer-facing stock is a promise; confirm it before taking payment" },
+  socialcommerceflow: { steps: ["Social|post or ad", "Product|tag", "Product|card", "Native or|site checkout", "Order|sync", "Attribute|+ learn"], highlight: 3, loop: "one product feed and one order flow behind every channel" },
+  shoppablecontentmodel: { steps: ["Content|piece", "Tag|products", "Resolve|live data", "Render|product card", "Add to|cart", "Measure|assist"], highlight: 2, loop: "tags store product IDs; price and stock come from the catalog at render" },
+  shoppablevideoflow: { steps: ["Video|plays", "Product|moments", "Card +|details", "Add without|leaving", "Checkout", "Video-|assisted"], highlight: 3, loop: "lazy-load the player; never block the page on video" },
+  creatorcommerceflow: { steps: ["Creator|link or code", "Creator|storefront", "Product|page", "Checkout", "Attribute|order", "Pay|commission"], highlight: 4, loop: "agree attribution rules before the first campaign" },
+  convshoppingflow: { steps: ["Shopper|need", "Clarify", "Ground in|catalog", "Suggest +|explain", "Compare", "Cart|handoff"], highlight: 2, loop: "answers come from live product data, never invention" },
+  chatbotrouting: { steps: ["Message", "Detect|intent", "Verify|identity", "Answer or|act", "Confirm", "Close +|log"], highlight: 1, branch: { from: 3, label: "low confidence or sensitive → human agent" } },
+  b2bcatalogscope: { steps: ["Company|account", "Assigned|catalogs", "Product|scope", "Price|lists", "Availability|rules", "Buyer|view"], highlight: 1, loop: "resolve entitlements once and reuse them in search, PDP, cart and APIs" },
+  approvalflow: { steps: ["Buyer|builds cart", "Rules|check", "Pending|approval", "Approver|decides", "Order|placed", "Audit|log"], highlight: 1, branch: { from: 3, label: "rejected → reason sent, cart restored" } },
+  punchoutflow: { steps: ["Buyer in|procurement", "Setup|request", "Supplier|site session", "Build|cart", "Cart|returned", "PO via|order request"], highlight: 2, loop: "the purchase order, not the punchout cart, creates the sales order" },
+  webhookflow: { steps: ["Platform|event", "Signed|delivery", "Verify|signature", "Store +|ack fast", "Queue +|process", "Dedupe|by event ID"], highlight: 2, branch: { from: 3, label: "failure → platform retries; reconcile later" } },
+  queuearch: { steps: ["Producer", "Queue", "Worker", "Idempotent|handler", "Success", "Metrics"], highlight: 3, branch: { from: 2, label: "retries exhausted → dead-letter queue + alert" } },
 
 };
 
@@ -3486,6 +3565,294 @@ const ANATOMIES: Partial<Record<BlogBannerVariant, AnatomySpec>> = {
     ],
     { top: "Ecommerce migration checklist", hotCol: 1 }
   ),
+
+  mcomarch: columnsSpec(
+    ["Experience", "Commerce APIs", "Platform", "Measure"],
+    [
+      ["Responsive web", "PWA layer", "Native app", "Shared design"],
+      ["Catalog + search", "Cart + pricing", "Customer + auth", "Checkout"],
+      ["Commerce engine", "PIM + content", "OMS + inventory", "Payments"],
+      ["Events", "Web vitals", "App vitals", "Funnels"],
+    ],
+    { top: "Mobile ecommerce architecture", hotCol: 1, note: "one commerce backend serves every mobile surface" }
+  ),
+
+  appvsmobileweb: compareSpec(
+    ["Mobile website", "Native app"],
+    [
+      ["Reach", "Anyone with a link", "Installed customers"],
+      ["Search + ads", "Indexable pages", "Store listing only"],
+      ["Notifications", "Limited web push", "Full push"],
+      ["Device features", "Growing, uneven", "Full access"],
+      ["Release cycle", "Deploy any time", "Store review"],
+      ["Best for", "Acquisition", "Repeat customers"],
+    ],
+    { note: "most stores need a strong mobile site first; an app is an addition" }
+  ),
+
+  ecompwaarch: {
+    blocks: [
+      { x: 60, y: 30, w: 680, h: 32, label: "Ecommerce PWA architecture", tone: "ink", size: 11.5 },
+      { x: 60, y: 92, w: 190, h: 70, label: "Server-rendered|pages + app shell", size: 10.5 },
+      { x: 60, y: 186, w: 190, h: 70, label: "Web app|manifest", size: 10.5 },
+      { x: 60, y: 280, w: 190, h: 70, label: "Push + install|prompts (opt-in)", size: 10.5 },
+      { x: 305, y: 120, w: 190, h: 200, label: "Service worker|static: cache first|catalog: stale while|revalidate|cart, price, stock:|network only", size: 10.5, hot: true },
+      { x: 550, y: 92, w: 190, h: 70, label: "Catalog + search|APIs", size: 10.5, blue: true },
+      { x: 550, y: 186, w: 190, h: 70, label: "Cart, customer|+ pricing APIs", size: 10.5, blue: true },
+      { x: 550, y: 280, w: 190, h: 70, label: "Platform|checkout", size: 10.5, blue: true },
+    ],
+    paths: [
+      { d: "M250,127 L305,170" },
+      { d: "M250,221 L305,221" },
+      { d: "M250,315 L305,275" },
+      { d: "M495,170 L550,127" },
+      { d: "M495,221 L550,221" },
+      { d: "M495,275 L550,315" },
+    ],
+    notes: [{ x: 400, y: 400, text: "never serve cached prices, stock or checkout pages", anchor: "middle", color: "orange" }],
+  },
+
+  ecompwavsapp: compareSpec(
+    ["Ecommerce PWA", "Native app"],
+    [
+      ["Distribution", "URL + optional install", "App stores"],
+      ["SEO", "Same indexable pages", "Not indexed"],
+      ["iOS push", "Home Screen apps only", "Full APNs"],
+      ["Offline", "Cached browsing", "Deep offline"],
+      ["Device APIs", "Browser-dependent", "Full SDKs"],
+      ["Codebase", "One web codebase", "Separate app code"],
+    ],
+    { note: "a PWA improves the website; an app serves installed loyal customers" }
+  ),
+
+  pwauxstates: columnsSpec(
+    ["Install", "Loading", "Offline", "Re-engage"],
+    [
+      ["Earned moment", "Custom prompt", "iOS instructions", "Easy to dismiss"],
+      ["App shell", "Skeletons", "Cached pages", "No layout jumps"],
+      ["Clear banner", "Saved items", "Disabled checkout", "Retry queue"],
+      ["Opt-in push", "Order updates", "Back in stock", "Frequency caps"],
+    ],
+    { top: "Ecommerce PWA UX states", hotCol: 2, note: "design every state, not only the happy path" }
+  ),
+
+  mobilenavpatterns: compareSpec(
+    ["Hamburger", "Bottom tabs", "Visible chips"],
+    [
+      ["Visibility", "Hidden", "Always visible", "Visible, scrolls"],
+      ["Capacity", "Large catalogs", "4 to 5 items", "Top categories"],
+      ["Typical use", "Mobile web", "Apps + PWAs", "Home + listings"],
+      ["Risk", "Low discovery", "Overcrowding", "Hidden overflow"],
+      ["Pair with", "Visible search", "Search tab", "Full menu"],
+    ],
+    { hotCol: 1, note: "combine patterns: visible search, shallow menus, clear back paths" }
+  ),
+
+  apppersmap: columnsSpec(
+    ["Signals", "Surfaces", "Controls", "Measure"],
+    [
+      ["Browsing", "Purchases", "Stated prefs", "Location*"],
+      ["Home feed", "Search", "Push + inbox", "Account"],
+      ["Consent", "Edit prefs", "Reset", "Frequency"],
+      ["Holdouts", "Retention", "Opt-outs", "Revenue"],
+    ],
+    { top: "Ecommerce app personalization", hotCol: 2, note: "* only with permission and a clear benefit to the customer" }
+  ),
+
+  specshierarchy: columnsSpec(
+    ["Key specs", "Spec groups", "Compatibility", "Data model"],
+    [
+      ["3 to 6 per type", "Decision-led", "In card + PDP", "Plain language"],
+      ["Display", "Performance", "Connectivity", "Power + size"],
+      ["Works with", "Requires", "Not for", "Verified source"],
+      ["Typed values", "Units", "Allowed lists", "Per category"],
+    ],
+    { top: "Electronics specification hierarchy", hotCol: 3, note: "normalized attributes feed filters, comparison, search and feeds" }
+  ),
+
+  jewelrypersmap: columnsSpec(
+    ["Signals", "Experiences", "Guardrails"],
+    [
+      ["Metal + stone", "Style viewed", "Ring size", "Occasion dates*"],
+      ["Similar styles", "Matching sets", "Gift edits", "Saved sizes"],
+      ["Gift privacy", "No price creep", "Consent", "Easy reset"],
+    ],
+    { top: "Jewelry ecommerce personalization", hotCol: 2, note: "* only when the customer chooses to save them" }
+  ),
+
+  jewelrymobilezones: columnsSpec(
+    ["See", "Know", "Size", "Buy"],
+    [
+      ["Macro zoom", "Scale shot", "Video", "Fast loading"],
+      ["Metal + purity", "Stone details", "Reports*", "Dimensions"],
+      ["Size guide", "Size picker", "Resizing", "Gift sizing"],
+      ["Sticky add", "Wallets", "Delivery", "Returns"],
+    ],
+    { top: "Jewelry mobile product page", hotCol: 0, note: "* grading reports only where they exist for that piece" }
+  ),
+
+  sportspersmap: columnsSpec(
+    ["Sport", "Level", "Fit", "Lifecycle"],
+    [
+      ["Stated sports", "Browsed sports", "Club / team", "Season"],
+      ["Beginner", "Regular", "Competitive", "Self-selected"],
+      ["Size memory", "Brand fit", "Hand / stance", "Width"],
+      ["Replacement", "Upgrade path", "Consumables", "Events"],
+    ],
+    { top: "Sports ecommerce personalization", hotCol: 0, note: "let shoppers state their sport and level; do not guess from one visit" }
+  ),
+
+  pimcmsdam: compareSpec(
+    ["PIM", "CMS", "Platform", "DAM"],
+    [
+      ["Owns", "Product data", "Page content", "Orders, offers", "Media files"],
+      ["Core job", "Model + enrich", "Publish pages", "Sell + fulfil", "Store + rights"],
+      ["Users", "Product team", "Marketing", "Ecommerce ops", "Creative team"],
+      ["Strength", "Attributes, locales", "Editorial layout", "Price, stock, cart", "Versions, renditions"],
+      ["Not for", "Landing pages", "Spec governance", "Deep enrichment", "Product attributes"],
+    ],
+    { hotCol: 0, note: "each system owns different data; integration decides the result" }
+  ),
+
+  productdataarch: {
+    blocks: [
+      { x: 60, y: 22, w: 680, h: 30, label: "Ecommerce product data architecture", tone: "ink", size: 11.5 },
+      { x: 60, y: 90, w: 150, h: 50, label: "Supplier|feeds", size: 10 },
+      { x: 60, y: 160, w: 150, h: 50, label: "DAM|images + video", size: 10 },
+      { x: 60, y: 230, w: 150, h: 50, label: "Copy +|enrichment", size: 10 },
+      { x: 60, y: 300, w: 150, h: 50, label: "ERP|cost, price, stock", size: 10 },
+      { x: 300, y: 90, w: 200, h: 100, label: "PIM|products, variants,|attributes, locales", size: 10.5, hot: true },
+      { x: 300, y: 260, w: 200, h: 90, label: "Commerce platform|offers, price lists,|inventory, orders", size: 10.5, blue: true },
+      { x: 590, y: 70, w: 150, h: 46, label: "Storefront|web + app", size: 10 },
+      { x: 590, y: 135, w: 150, h: 46, label: "Search|index", size: 10 },
+      { x: 590, y: 200, w: 150, h: 46, label: "Recommend-|ations", size: 10 },
+      { x: 590, y: 265, w: 150, h: 46, label: "Feeds +|marketplaces", size: 10 },
+      { x: 590, y: 330, w: 150, h: 46, label: "Analytics|events", size: 10 },
+    ],
+    paths: [
+      { d: "M210,115 C255,115 255,120 300,120" },
+      { d: "M210,185 C255,185 255,140 300,140" },
+      { d: "M210,255 C255,255 255,165 300,165" },
+      { d: "M210,325 C255,325 255,305 300,305" },
+      { d: "M400,190 L400,260" },
+      { d: arrow(400, 260, "d") },
+      { d: "M500,290 C545,290 545,93 590,93" },
+      { d: "M500,125 C545,125 545,158 590,158" },
+      { d: "M500,150 C545,150 545,223 590,223" },
+      { d: "M500,175 C550,175 540,288 590,288" },
+      { d: "M500,320 C545,320 545,353 590,353" },
+      { d: "M665,330 L665,246", dashed: true, blue: true },
+    ],
+    notes: [{ x: 400, y: 418, text: "one owner per field; APIs and events keep every channel in sync", anchor: "middle" }],
+  },
+
+  omniarch: {
+    blocks: [
+      { x: 60, y: 22, w: 680, h: 30, label: "Omnichannel commerce architecture", tone: "ink", size: 11.5 },
+      { x: 60, y: 80, w: 150, h: 46, label: "Web store", size: 10 },
+      { x: 60, y: 145, w: 150, h: 46, label: "Mobile app", size: 10 },
+      { x: 60, y: 210, w: 150, h: 46, label: "Store POS", size: 10 },
+      { x: 60, y: 275, w: 150, h: 46, label: "Marketplaces", size: 10 },
+      { x: 300, y: 110, w: 200, h: 150, label: "APIs + event bus|orders, stock,|customers, prices", size: 10.5, hot: true },
+      { x: 590, y: 80, w: 150, h: 46, label: "OMS|routing", size: 10, blue: true },
+      { x: 590, y: 145, w: 150, h: 46, label: "Inventory|by location", size: 10, blue: true },
+      { x: 590, y: 210, w: 150, h: 46, label: "ERP|finance + items", size: 10, blue: true },
+      { x: 590, y: 275, w: 150, h: 46, label: "CRM / CDP|profiles", size: 10, blue: true },
+      { x: 150, y: 330, w: 150, h: 46, label: "Warehouse", size: 10 },
+      { x: 325, y: 330, w: 150, h: 46, label: "Stores ship|+ pickup", size: 10 },
+      { x: 500, y: 330, w: 150, h: 46, label: "3PL|partners", size: 10 },
+    ],
+    paths: [
+      { d: "M210,103 C255,103 255,140 300,140" },
+      { d: "M500,140 C545,140 545,103 590,103" },
+      { d: "M210,168 C255,168 255,165 300,165" },
+      { d: "M500,165 C545,165 545,168 590,168" },
+      { d: "M210,233 C255,233 255,195 300,195" },
+      { d: "M500,195 C545,195 545,233 590,233" },
+      { d: "M210,298 C255,298 255,220 300,220" },
+      { d: "M500,220 C545,220 545,298 590,298" },
+      { d: "M400,260 C400,295 225,295 225,330", dashed: true, blue: true },
+      { d: "M400,260 C400,295 400,295 400,330", dashed: true, blue: true },
+      { d: "M400,260 C400,295 575,295 575,330", dashed: true, blue: true },
+    ],
+    notes: [{ x: 400, y: 418, text: "events keep every channel's view of stock and orders consistent", anchor: "middle" }],
+  },
+
+  eventdrivenarch: {
+    blocks: [
+      { x: 60, y: 22, w: 680, h: 30, label: "Ecommerce event-driven architecture", tone: "ink", size: 11.5 },
+      { x: 60, y: 80, w: 150, h: 46, label: "Checkout|order placed", size: 10 },
+      { x: 60, y: 145, w: 150, h: 46, label: "Inventory|stock changed", size: 10 },
+      { x: 60, y: 210, w: 150, h: 46, label: "Payments|captured", size: 10 },
+      { x: 60, y: 275, w: 150, h: 46, label: "Returns|received", size: 10 },
+      { x: 300, y: 110, w: 200, h: 150, label: "Event bus / broker|durable topics,|ordered per key", size: 10.5, hot: true },
+      { x: 590, y: 80, w: 150, h: 46, label: "Email + SMS", size: 10, blue: true },
+      { x: 590, y: 145, w: 150, h: 46, label: "OMS / ERP|sync", size: 10, blue: true },
+      { x: 590, y: 210, w: 150, h: 46, label: "Search|index", size: 10, blue: true },
+      { x: 590, y: 275, w: 150, h: 46, label: "Analytics", size: 10, blue: true },
+      { x: 150, y: 330, w: 150, h: 46, label: "Retries|+ backoff", size: 10 },
+      { x: 325, y: 330, w: 150, h: 46, label: "Dead-letter|queue", size: 10 },
+      { x: 500, y: 330, w: 150, h: 46, label: "Tracing +|alerts", size: 10 },
+    ],
+    paths: [
+      { d: "M210,103 C255,103 255,140 300,140" },
+      { d: "M500,140 C545,140 545,103 590,103" },
+      { d: "M210,168 C255,168 255,165 300,165" },
+      { d: "M500,165 C545,165 545,168 590,168" },
+      { d: "M210,233 C255,233 255,195 300,195" },
+      { d: "M500,195 C545,195 545,233 590,233" },
+      { d: "M210,298 C255,298 255,220 300,220" },
+      { d: "M500,220 C545,220 545,298 590,298" },
+      { d: "M400,260 C400,295 225,295 225,330", dashed: true, blue: true },
+      { d: "M400,260 C400,295 400,295 400,330", dashed: true, blue: true },
+      { d: "M400,260 C400,295 575,295 575,330", dashed: true, blue: true },
+    ],
+    notes: [{ x: 400, y: 418, text: "producers do not know consumers; every consumer is idempotent", anchor: "middle" }],
+  },
+
+  d2cuxmap: columnsSpec(["Story", "Discover", "Decide", "After"], [["Brand promise", "Founder POV", "Proof", "Values"], ["Hero products", "Use-case paths", "Quiz", "Search"], ["PDP clarity", "Reviews", "Delivery", "Wallets"], ["Tracking", "How-to", "Reorder", "Community"]], { top: "D2C ecommerce UX", hotCol: 2, note: "story earns attention; clarity earns the order" }),
+
+  d2cbrandsystem: columnsSpec(["Identity", "Hierarchy", "Story", "Speed"], [["Type scale", "Colour roles", "Voice", "Imagery rules"], ["One primary CTA", "Price visible", "Scannable copy", "Contrast"], ["Hero product", "Proof blocks", "Ingredients", "Origin"], ["Image budget", "Font loading", "Video lazy", "No layout shift"]], { top: "D2C brand website design", hotCol: 1, note: "brand expression works inside a clear commerce hierarchy" }),
+
+  d2cpersdata: columnsSpec(["Zero-party", "First-party", "Experiences", "Guardrails"], [["Quiz answers", "Preferences", "Sizes", "Goals"], ["Orders", "Browsing", "Email + SMS", "Returns"], ["Home order", "Product picks", "Content", "Replenish"], ["Consent", "Holdouts", "Edit + reset", "No price games"]], { top: "D2C personalization data", hotCol: 0, note: "ask customers; do not only infer" }),
+
+  d2cstacklayers: columnsSpec(["Storefront", "Commerce", "Data", "Operations"], [["Theme or headless", "CMS", "Search", "Reviews"], ["Platform", "Payments", "Subscriptions", "Tax"], ["Analytics", "Email + SMS", "CDP*", "PIM*"], ["OMS / 3PL", "ERP*", "Support desk", "Returns"]], { top: "D2C ecommerce technology stack", hotCol: 1, note: "* add when scale, channels or teams justify it" }),
+
+  omnichannelmap: columnsSpec(["Channels", "Customer", "Inventory", "Fulfilment"], [["Web", "App", "Stores", "Marketplaces"], ["One profile", "Orders anywhere", "Loyalty", "Consent"], ["By location", "Reservations", "Transfers", "Safety stock"], ["Ship", "Pickup", "Ship from store", "Returns anywhere"]], { top: "Omnichannel ecommerce", hotCol: 2, note: "the experience is only as connected as the data behind it" }),
+
+  clickcollectux: columnsSpec(["Choose", "Confirm", "Arrive", "Collect"], [["Store search", "Stock by store", "Ready time", "Pickup hours"], ["Order number", "Pickup point", "What to bring", "Alt collector"], ["Ready notice", "Directions", "Parking", "I am here"], ["Quick ID check", "Hand over", "Issues fixed", "Receipt"]], { top: "Click and collect UX", hotCol: 1, note: "promise a ready time you can keep" }),
+
+  unifiedvsomni: compareSpec(["Omnichannel", "Unified commerce"], [["Systems", "Connected by integrations", "Shared platform or core"], ["Inventory", "Synced between systems", "One real-time pool"], ["Customer", "Matched profiles", "One identity"], ["Orders", "Routed between systems", "One order record"], ["Change cost", "Lower, incremental", "Higher, structural"], ["Fit", "Most retailers", "Complex multi-channel"]], { note: "unified is an architecture choice, not an upgrade every retailer needs" }),
+
+  retailintegration: columnsSpec(["Store", "Commerce", "Back office", "Customer"], [["POS", "Store stock", "Staff apps", "Payments"], ["Platform", "OMS", "Pricing", "Promotions"], ["ERP", "WMS", "Finance", "Products"], ["CRM", "Loyalty", "Email + SMS", "Support"]], { top: "Retail ecommerce integration", hotCol: 1, note: "define the system of record for each data type before connecting anything" }),
+
+  storelocatorux: columnsSpec(["Find", "Compare", "Decide", "Go"], [["Use location", "Postcode / city", "Recent stores", "Errors handled"], ["List + map", "Distance", "Open now", "Services"], ["Stock here", "Pickup time", "Store page", "Accessibility"], ["Directions", "Call", "Set my store", "Hours today"]], { top: "Store locator UX", hotCol: 1, note: "the list is the primary view; the map supports it" }),
+
+  clientelingmap: columnsSpec(["Customer", "Product", "Actions", "Controls"], [["Profile", "Purchases", "Preferences", "Notes"], ["Full catalog", "Stock nearby", "Specs", "Alternatives"], ["Suggest", "Reserve", "Order online", "Follow up"], ["Consent", "Role access", "Audit", "Data limits"]], { top: "Retail clienteling technology", hotCol: 3, note: "associates see what helps the conversation, nothing more" }),
+
+  socialuxmap: columnsSpec(["Discover", "Evaluate", "Trust", "Buy"], [["Native post", "Creator video", "Product tag", "Shop tab"], ["Price", "Variants", "Size info", "Delivery"], ["Seller name", "Reviews", "Returns", "Real comments"], ["Native checkout*", "Site handoff", "Wallets", "Order updates"]], { top: "Social commerce UX", hotCol: 1, note: "* where the platform supports it in that market" }),
+
+  communityux: columnsSpec(["Ask", "Share", "Discover", "Moderate"], [["Product Q&A", "How-to", "Search first", "Expert answers"], ["Reviews", "Photos", "Setups", "Tips"], ["Linked products", "Top threads", "Guides", "Events"], ["Guidelines", "Reports", "Staff roles", "Disclosure"]], { top: "Ecommerce community UX", hotCol: 3, note: "moderation is part of the product, not an afterthought" }),
+
+  voicecommerce: columnsSpec(["Voice search", "Assistants", "In-app voice", "Limits"], [["Spoken queries", "Long phrasing", "Local intent", "Structured data"], ["Platform-owned", "Own retailer first", "Reorders", "Lists"], ["Search by voice", "Dictation", "Accessibility", "Hands-free"], ["No visual compare", "Confirm totals", "Privacy", "Shared devices"]], { top: "Ecommerce voice commerce", hotCol: 2, note: "the part a retailer controls is voice inside its own site and app" }),
+
+  b2baccounthierarchy: columnsSpec(["Company", "Locations", "Users", "Rules"], [["Legal entity", "Payment terms", "Credit limit", "Tax status"], ["Ship-to", "Bill-to", "Catalog", "Approvers"], ["Admin", "Buyer", "Approver", "Viewer"], ["Spend limits", "Permissions", "Audit", "SSO*"]], { top: "B2B ecommerce account management", hotCol: 2, note: "* where the buyer organization requires it" }),
+
+  quickorderux: columnsSpec(["Enter", "Validate", "Adjust", "Submit"], [["SKU autocomplete", "Paste lines", "CSV upload", "From history"], ["Unknown SKU", "Pack sizes", "Stock", "Price"], ["Substitutes", "Quantities", "Save as list", "Split ship"], ["To cart", "For approval", "Reorder later", "Confirm"]], { top: "B2B quick order", hotCol: 1, note: "validate every line before the cart, and say exactly what is wrong" }),
+
+  salesrepportal: columnsSpec(["Accounts", "Catalog", "Orders", "CRM"], [["My customers", "Account health", "Contacts", "Terms"], ["Customer prices", "Stock", "Specs", "Alternatives"], ["Order for", "Quotes", "Approvals", "History"], ["Activities", "Opportunities", "Sync", "Notes"]], { top: "B2B sales rep portal", hotCol: 2, note: "reps act on behalf of customers; every action is logged as such" }),
+
+  b2bplatformarch: columnsSpec(["Experience", "Commerce services", "Systems", "Platform"], [["Buyer storefront", "Rep portal", "Punchout", "APIs + EDI"], ["Accounts", "Catalogs + pricing", "Quotes + approvals", "Orders"], ["ERP", "CRM", "OMS / WMS", "Payments + credit"], ["Identity + SSO", "Search", "Events", "Monitoring"]], { top: "B2B commerce platform architecture", hotCol: 1, note: "entitlements (who sees what, at what price) are resolved in one place" }),
+
+  microservicesmap: columnsSpec(["Discovery", "Purchase", "Fulfilment", "Platform"], [["Catalog", "Search", "Recommendations", "Content"], ["Cart", "Pricing", "Checkout", "Payments"], ["Orders", "Inventory", "Shipping", "Returns"], ["Identity", "Gateway", "Events", "Observability"]], { top: "Ecommerce microservices architecture", hotCol: 1, note: "each service owns its data; share events, not databases" }),
+
+  apigatewaymap: columnsSpec(["Clients", "Gateway", "Policies", "Services"], [["Web", "Apps", "Partners", "POS"], ["Routing", "Auth", "Rate limits", "Caching"], ["Versioning", "Quotas", "WAF rules", "Logging"], ["Catalog", "Cart", "Orders", "Customer"]], { top: "Ecommerce API gateway", hotCol: 1, note: "keep business logic in services, not in the gateway" }),
+
+  cachelayers: columnsSpec(["Browser", "CDN / edge", "Application", "Data"], [["Static assets", "Images", "Service worker*", "Short HTML"], ["Pages", "Images", "API GETs", "Purge by tag"], ["Fragments", "Computed prices*", "Sessions", "Rate limits"], ["Query cache", "Search index", "Read replicas", "Warm-up"]], { top: "Ecommerce caching layers", hotCol: 1, note: "* only where correctness rules allow; never cache carts or checkout" }),
+
+  observabilitymap: columnsSpec(["Signals", "Technical", "Business", "Response"], [["Logs", "Metrics", "Traces", "Synthetics"], ["Latency", "Errors", "Saturation", "Dependencies"], ["Orders / min", "Checkout rate", "Payment fails", "Sync lag"], ["Alerts", "Dashboards", "On-call", "Postmortems"]], { top: "Ecommerce observability", hotCol: 2, note: "alert on customer impact, not on every metric" }),
+
+  drstrategies: compareSpec(["Backup", "Pilot light", "Warm standby", "Active-active"], [["RPO", "Hours", "Minutes", "Seconds-minutes", "Near zero"], ["RTO", "Hours-day", "Tens of min", "Minutes", "Near zero"], ["Cost", "Lowest", "Low", "Medium", "Highest"], ["Complexity", "Low", "Medium", "Medium-high", "High"]], { hotCol: 1, note: "choose by the cost of downtime and lost orders, not by ambition" }),
 
   migtestmatrix: columnsSpec(
     ["Commerce", "Data", "Discovery", "Quality"],

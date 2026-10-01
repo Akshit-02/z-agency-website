@@ -120,6 +120,7 @@ export const commercePosts14: BlogPost[] = [
         heading: "Where AI Fits in the Personalization Stack",
         body: [
           "Personalization mixes techniques. Rules handle clear cases (show returning customers their recently viewed items; show local delivery information by market). Machine learning ranks and recommends where there are too many products and signals for rules. Generative AI adapts copy or creates assistant responses. Each needs different data, controls and testing. Starting with rules where the logic is clear often delivers much of the value before models are needed.",
+          "The serving pipeline behind model-driven recommendations is described in [[/blogs/ecommerce-recommendation-engine|how a recommendation engine works]].",
         ],
         table: {
           headers: ["Technique", "Personalization use", "Needs"],
@@ -284,6 +285,7 @@ export const commercePosts14: BlogPost[] = [
         heading: "Build vs Buy",
         body: [
           "Platform features and vendors handle most needs, include tooling for rules and reporting, and improve over time. Building makes sense for large catalogs with unusual relationships (compatibility, configuration), strict data requirements or a strong in-house data team, and it means owning pipelines, retraining and monitoring. See [[/blogs/ai-ecommerce|AI ecommerce]].",
+          "Whichever route you choose, the data, retrieval, ranking and monitoring architecture is set out in [[/blogs/ecommerce-recommendation-engine|ecommerce recommendation engine]].",
         ],
       },
       {

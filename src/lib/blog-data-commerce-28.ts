@@ -573,12 +573,14 @@ export const commercePosts28: BlogPost[] = [
         heading: "Access: Account Catalogs and Restrictions",
         body: [
           "Many B2B businesses show different products and prices to different customers: contract ranges, regional availability, restricted products for licensed buyers. Model these as catalogs or rules assigned to companies or segments. Shopify B2B, for example, uses catalogs assigned to company locations to control products and prices ([[https://help.shopify.com/en/manual/b2b|Shopify Help Center]]).",
+          "The entitlement architecture behind account catalogs is covered in [[/blogs/b2b-customer-specific-catalogs|customer-specific catalogs]].",
         ],
       },
       {
         heading: "Sources of Truth: PIM, ERP and Platform",
         body: [
           "Catalog data rarely starts in the ecommerce platform. Decide which system owns each field, sync in one direction per field and avoid editing the same data in two places. A common split is shown below; smaller businesses may keep descriptive data in the platform itself. See [[/blogs/b2b-ecommerce-erp-integration|B2B ERP integration]].",
+          "For PIM in depth, see [[/blogs/ecommerce-product-information-management|ecommerce product information management]]; for system boundaries, [[/blogs/pim-vs-cms|PIM vs CMS]].",
         ],
         table: {
           headers: ["System", "Typically owns"],

@@ -101,6 +101,20 @@ import { commercePosts65 } from "./blog-data-commerce-65";
 import { commercePosts66 } from "./blog-data-commerce-66";
 import { commercePosts67 } from "./blog-data-commerce-67";
 import { commercePosts68 } from "./blog-data-commerce-68";
+import { commercePosts69 } from "./blog-data-commerce-69";
+import { commercePosts70 } from "./blog-data-commerce-70";
+import { commercePosts71 } from "./blog-data-commerce-71";
+import { commercePosts72 } from "./blog-data-commerce-72";
+import { commercePosts73 } from "./blog-data-commerce-73";
+import { commercePosts74 } from "./blog-data-commerce-74";
+import { commercePosts75 } from "./blog-data-commerce-75";
+import { commercePosts76 } from "./blog-data-commerce-76";
+import { commercePosts77 } from "./blog-data-commerce-77";
+import { commercePosts78 } from "./blog-data-commerce-78";
+import { commercePosts79 } from "./blog-data-commerce-79";
+import { commercePosts80 } from "./blog-data-commerce-80";
+import { commercePosts81 } from "./blog-data-commerce-81";
+import { commercePosts82 } from "./blog-data-commerce-82";
 
 export type BlogSection = {
   heading: string;
@@ -112,6 +126,8 @@ export type BlogSection = {
   /** A short code example, rendered as a scrollable block. */
   code?: { label: string; text: string };
   cta?: { title: string; description?: string };
+  /** An explanatory diagram drawn with the banner system, shown inside the section. */
+  diagram?: { variant: BlogBannerVariant; alt: string; caption: string };
 };
 
 export type BlogPost = {
@@ -1948,7 +1964,7 @@ export const posts: BlogPost[] = [
 // The "AI agents in [industry]" cluster lives in its own module — merged in
 // here so every existing consumer of `posts` (listing, sitemap, related
 // posts, category filter) picks it up automatically.
-posts.push(...aiAgentPosts, ...aiAgentPosts2, ...aiAgentPosts3, ...shopifyCroPosts, ...shopifyCroPosts2, ...shopifyCroPosts3, ...shopifyCroPosts4, ...webDevPosts, ...webDevPosts2, ...webDevPosts3, ...webDevPosts4, ...webDevPosts5, ...webDevPosts6, ...webDevPosts7, ...webDevPosts8, ...webDevPosts9, ...mobilePosts, ...mobilePosts2, ...mobilePosts3, ...mobilePosts4, ...mobilePosts5, ...designPosts, ...designPosts2, ...designPosts3, ...designPosts4, ...designPosts5, ...designPosts6, ...designPosts7, ...growthPosts, ...growthPosts2, ...commercePosts, ...commercePosts2, ...commercePosts3, ...commercePosts4, ...commercePosts5, ...commercePosts6, ...commercePosts7, ...commercePosts8, ...commercePosts9, ...commerceRewrites, ...commercePosts10, ...commercePosts11, ...commercePosts12, ...commercePosts13, ...commercePosts14, ...commercePosts15, ...commercePosts16, ...commercePosts17, ...commercePosts18, ...commercePosts19, ...commercePosts20, ...commercePosts21, ...commerceRewrites2, ...commercePosts22, ...commercePosts23, ...commercePosts24, ...commercePosts25, ...commercePosts26, ...commercePosts27, ...commercePosts28, ...commercePosts29, ...commercePosts30, ...commercePosts31, ...commercePosts32, ...commercePosts33, ...commercePosts34, ...commercePosts35, ...commercePosts36, ...commercePosts37, ...commercePosts38, ...commercePosts39, ...commercePosts40, ...commercePosts41, ...commercePosts42, ...commercePosts43, ...commercePosts44, ...commercePosts45, ...commercePosts46, ...commercePosts47, ...commercePosts48, ...commercePosts49, ...commercePosts50, ...commercePosts51, ...commercePosts52, ...commercePosts53, ...commercePosts54, ...commercePosts55, ...commercePosts56, ...commercePosts57, ...commercePosts58, ...commercePosts59, ...commercePosts60, ...commercePosts61, ...commercePosts62, ...commercePosts63, ...commercePosts64, ...commercePosts65, ...commercePosts66, ...commercePosts67, ...commercePosts68);
+posts.push(...aiAgentPosts, ...aiAgentPosts2, ...aiAgentPosts3, ...shopifyCroPosts, ...shopifyCroPosts2, ...shopifyCroPosts3, ...shopifyCroPosts4, ...webDevPosts, ...webDevPosts2, ...webDevPosts3, ...webDevPosts4, ...webDevPosts5, ...webDevPosts6, ...webDevPosts7, ...webDevPosts8, ...webDevPosts9, ...mobilePosts, ...mobilePosts2, ...mobilePosts3, ...mobilePosts4, ...mobilePosts5, ...designPosts, ...designPosts2, ...designPosts3, ...designPosts4, ...designPosts5, ...designPosts6, ...designPosts7, ...growthPosts, ...growthPosts2, ...commercePosts, ...commercePosts2, ...commercePosts3, ...commercePosts4, ...commercePosts5, ...commercePosts6, ...commercePosts7, ...commercePosts8, ...commercePosts9, ...commerceRewrites, ...commercePosts10, ...commercePosts11, ...commercePosts12, ...commercePosts13, ...commercePosts14, ...commercePosts15, ...commercePosts16, ...commercePosts17, ...commercePosts18, ...commercePosts19, ...commercePosts20, ...commercePosts21, ...commerceRewrites2, ...commercePosts22, ...commercePosts23, ...commercePosts24, ...commercePosts25, ...commercePosts26, ...commercePosts27, ...commercePosts28, ...commercePosts29, ...commercePosts30, ...commercePosts31, ...commercePosts32, ...commercePosts33, ...commercePosts34, ...commercePosts35, ...commercePosts36, ...commercePosts37, ...commercePosts38, ...commercePosts39, ...commercePosts40, ...commercePosts41, ...commercePosts42, ...commercePosts43, ...commercePosts44, ...commercePosts45, ...commercePosts46, ...commercePosts47, ...commercePosts48, ...commercePosts49, ...commercePosts50, ...commercePosts51, ...commercePosts52, ...commercePosts53, ...commercePosts54, ...commercePosts55, ...commercePosts56, ...commercePosts57, ...commercePosts58, ...commercePosts59, ...commercePosts60, ...commercePosts61, ...commercePosts62, ...commercePosts63, ...commercePosts64, ...commercePosts65, ...commercePosts66, ...commercePosts67, ...commercePosts68, ...commercePosts69, ...commercePosts70, ...commercePosts71, ...commercePosts72, ...commercePosts73, ...commercePosts74, ...commercePosts75, ...commercePosts76, ...commercePosts77, ...commercePosts78, ...commercePosts79, ...commercePosts80, ...commercePosts81, ...commercePosts82);
 
 export function getPostBySlug(slug: string) {
   return posts.find((post) => post.slug === slug);

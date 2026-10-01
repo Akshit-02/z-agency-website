@@ -267,6 +267,7 @@ export const commercePosts40: BlogPost[] = [
         heading: "Commerce Features: Buy Again, Subscriptions, Wishlists",
         body: [
           "Where the store sells repeat products, “Buy again” turns the account into a shortcut to the next order. Subscriptions need a management area with next order, skip, pause and cancel. Wishlists should show stock and price changes. These features make the account worth visiting between orders. See [[/blogs/subscription-management-portal|subscription management portal]] and [[/blogs/ecommerce-wishlist-ux|ecommerce wishlist UX]].",
+          "Business buyers need a different account model; see [[/blogs/b2b-ecommerce-account-management|B2B account management]].",
         ],
       },
       {

@@ -90,6 +90,7 @@ export const commercePosts47: BlogPost[] = [
         heading: "Delivery: Part of the Product",
         body: [
           "Delivery shapes both conversion and operations. Separate parcel items from freight items, let customers book delivery slots for freight, offer services such as room-of-choice, assembly and packaging removal where you can, show lead times per configuration before purchase, and keep customers updated from production to delivery. Check that delivery promises are realistic for each region.",
+          "Service levels, scheduling, access checks and exceptions are covered in [[/blogs/furniture-ecommerce-delivery-ux|furniture delivery UX]].",
         ],
         table: {
           headers: ["Delivery type", "Typical items", "Needs"],
@@ -258,6 +259,7 @@ export const commercePosts47: BlogPost[] = [
         heading: "Delivery and Assembly Early",
         body: [
           "Delivery is part of the purchase decision. Show lead time, delivery cost and service level (curbside, room of choice, assembly) on product pages and category cards where possible, and explain what happens on delivery day. Uncertainty here causes late abandonment.",
+          "A dedicated guide to large-item delivery communication is [[/blogs/furniture-ecommerce-delivery-ux|furniture delivery UX]].",
         ],
       },
       {
@@ -413,6 +415,7 @@ export const commercePosts47: BlogPost[] = [
         heading: "Get It: Delivery, Assembly and Returns",
         body: [
           "Near the price: lead time, delivery cost, service level options (curbside, room of choice, assembly), whether assembly is required and how long it takes, and a returns summary with exceptions for made-to-order items. Where financing is offered, show it clearly with terms. Delivery surprises at checkout are a common reason for abandonment.",
+          "For the full delivery journey after the product page, see [[/blogs/furniture-ecommerce-delivery-ux|furniture ecommerce delivery UX]].",
         ],
       },
       {

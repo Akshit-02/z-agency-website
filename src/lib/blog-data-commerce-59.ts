@@ -135,6 +135,7 @@ export const commercePosts59: BlogPost[] = [
         heading: "Designing the Conversation",
         body: [
           "Good conversational design starts with the shopper's goal. Offer suggested starting points (\"Help me find a size\", \"Compare products\", \"Track an order\"), keep answers short with product cards and links, ask one clarifying question at a time when needed, and let shoppers move from conversation to product pages and cart easily. The chat widget itself must be accessible: keyboard operable, labelled, announced to screen readers and not covering key content on mobile. See [[/blogs/ecommerce-accessibility|ecommerce accessibility]].",
+          "Interaction patterns are covered in [[/blogs/conversational-shopping-ux|conversational shopping UX]] and [[/blogs/ecommerce-chatbot-ux|ecommerce chatbot UX]]; voice in [[/blogs/ecommerce-voice-commerce|voice commerce]].",
         ],
       },
       {
@@ -322,6 +323,7 @@ export const commercePosts59: BlogPost[] = [
         body: [
           "Make the assistant easy to find but not intrusive: a clear entry point, suggested prompts relevant to the page, short answers with product cards, and links to product pages. Show what it used (\"based on the size chart\") where helpful. Let shoppers continue browsing while the conversation stays available. On mobile, avoid covering the add-to-cart button or content.",
           "Accessibility is essential: keyboard operation, focus management, labels, announcements of new messages to screen readers, contrast and resizable text. See [[/blogs/ecommerce-accessibility|ecommerce accessibility]].",
+          "Detailed patterns for clarifying questions, product cards and cart handoff are in [[/blogs/conversational-shopping-ux|conversational shopping UX]].",
         ],
       },
       {
@@ -480,6 +482,7 @@ export const commercePosts59: BlogPost[] = [
         heading: "Customer-Facing AI",
         body: [
           "Customer-facing assistants answer questions directly: in chat, in email auto-replies or in help centres. They work best for questions with clear answers in help content or order data. They need grounding in current policies, secure tools for order data, clear disclosure that the customer is talking to AI, and an easy route to a person. See [[/blogs/conversational-ecommerce|conversational ecommerce]].",
+          "Chat interaction design, including escalation and failure handling, is covered in [[/blogs/ecommerce-chatbot-ux|ecommerce chatbot UX]].",
         ],
         cta: {
           title: "Support queues full of the same questions?",

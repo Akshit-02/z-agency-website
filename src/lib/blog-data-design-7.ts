@@ -284,6 +284,7 @@ export const designPosts7: BlogPost[] = [
         heading: "Questions and Answers",
         body: [
           "Pre-purchase questions (“Is this dishwasher safe?”) differ from reviews and deserve their own section. Make it searchable, show who answered (the store, a verified owner or another shopper), answer quickly and fold frequent questions back into the product description. Unanswered questions sitting for weeks do more harm than having no Q&A.",
+          "Q&A as part of a wider customer community is covered in [[/blogs/ecommerce-community-ux|community UX]].",
         ],
       },
       {
@@ -668,6 +669,7 @@ export const designPosts7: BlogPost[] = [
         heading: "Mobile Checkout",
         body: [
           "Most checkout problems are amplified on a phone: small screens, on-screen keyboards and interruptions. Put express wallets near the top, use the right keyboards, keep a collapsible order summary, make buttons and fields large, avoid dropdowns for short option lists and keep the primary action within reach. Make sure the session survives a shopper switching apps to find a code or confirm a payment. See [[/blogs/mobile-ecommerce-ux|mobile ecommerce UX]].",
+          "Mobile-specific detail (input types, autocomplete attributes, interruptions and express wallets) is covered in [[/blogs/mobile-ecommerce-checkout|mobile ecommerce checkout]].",
         ],
       },
       {
@@ -782,6 +784,7 @@ export const designPosts7: BlogPost[] = [
         heading: "Mobile Navigation",
         body: [
           "Use a menu that drills down one level at a time, with the current level as a heading, a clear back control and a “Shop all” link at every level. Keep the cart and search in the header rather than hidden in the menu. Show where the shopper is on category and product pages with a parent link or short breadcrumb, which addresses the disorientation Baymard describes. See [[/blogs/ecommerce-navigation-design|ecommerce navigation design]].",
+          "For menu, tab bar and back-navigation patterns in more depth, see [[/blogs/mobile-ecommerce-navigation|mobile ecommerce navigation]].",
         ],
       },
       {
@@ -840,6 +843,7 @@ export const designPosts7: BlogPost[] = [
         heading: "Cart and Checkout",
         body: [
           "Keep cart items compact with large quantity and remove controls, and show the total with a sticky checkout button. In checkout, offer express wallets early, make guest checkout obvious, use address lookup and autofill, keep the order summary collapsible and preserve progress if shoppers leave to check a message or confirm a payment in another app. See [[/blogs/ecommerce-cart-ux|cart UX]] and [[/blogs/ecommerce-checkout-ux|checkout UX]].",
+          "Field-by-field guidance for phones, including keyboards, autofill and wallets, is in [[/blogs/mobile-ecommerce-checkout|mobile ecommerce checkout]].",
         ],
       },
       {
@@ -898,6 +902,7 @@ export const designPosts7: BlogPost[] = [
         heading: "Mobile Web and Apps",
         body: [
           "Most new customers reach a store through the mobile web, so it has to work well regardless of whether you have an app. Apps suit frequent, loyal customers who benefit from saved preferences, notifications and faster reordering. Progressive web apps offer some app-like capabilities on the web; see [[/blogs/pwa-vs-native-app|PWA vs native app]] if you're weighing the options.",
+          "The engineering side is covered in [[/blogs/mobile-ecommerce-development|mobile ecommerce development]]. If you are weighing surfaces, see [[/blogs/ecommerce-mobile-app-vs-mobile-website|ecommerce app vs mobile website]] and [[/blogs/ecommerce-pwa-ux|ecommerce PWA UX]].",
         ],
       },
       {

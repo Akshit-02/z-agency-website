@@ -54,6 +54,7 @@ export const mobilePosts: BlogPost[] = [
         heading: "Quick answer",
         body: [
           "Mobile app development is designing, building, testing, releasing and maintaining software for iOS and Android devices, along with the backend and APIs it relies on. A typical project moves through discovery, requirements, UX and UI design, architecture, development, testing, beta, store launch and ongoing maintenance. The biggest early decisions are whether an app is the right channel at all, which platform approach to use (native, cross-platform or PWA), and how much to include in the first release.",
+          "Building a shopping app? Start with [[/blogs/ecommerce-mobile-app-vs-mobile-website|whether your store needs an app]] and [[/blogs/mobile-ecommerce-development|mobile ecommerce development]].",
         ],
       },
       {

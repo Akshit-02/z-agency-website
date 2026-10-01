@@ -547,6 +547,7 @@ export const commercePosts29: BlogPost[] = [
         heading: "Users, Roles and Locations",
         body: [
           "Let company admins manage users and assign roles and locations. Common roles: buyer (orders), approver (approves over limits), finance (invoices and payments), admin (users and settings). Restrict buyers to locations and spending limits where needed. See [[/blogs/b2b-ecommerce-ux|B2B ecommerce UX]].",
+          "See [[/blogs/b2b-ecommerce-account-management|B2B account management]] for the underlying model.",
         ],
         table: {
           headers: ["Role", "Permissions"],

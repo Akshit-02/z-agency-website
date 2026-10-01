@@ -40,6 +40,7 @@ export const commercePosts49: BlogPost[] = [
         heading: "Quick answer",
         body: [
           "Jewelry ecommerce development centres on precise product data, faithful imagery and security. Store metal, purity, stones, grading, sizes, dimensions, weights and certificates as structured data; build configurators for customizable pieces; plan macro photography and video; tune fraud screening for high-value orders; offer secure payments; ship insured, tracked and discreetly with signatures where appropriate; support engraving, resizing and made-to-order with clear lead times and return rules; and integrate consultations for high-consideration purchases.",
+          "Related deep dives: [[/blogs/jewelry-ecommerce-personalization|jewelry personalization]] and [[/blogs/jewelry-ecommerce-mobile-ux|jewelry mobile UX]].",
         ],
       },
       {
@@ -185,6 +186,7 @@ export const commercePosts49: BlogPost[] = [
     bannerAlt:
       "Jewelry trust architecture in four columns: product truth (accurate imagery, exact materials, dimensions and weight, scale references), authenticity (certificates, hallmarks, sourcing information, brand story, highlighted), service (consultation, sizing help, gift support, aftercare) and protection (secure checkout, insured delivery, returns and exchanges, warranty), noting that trust is built from verifiable details, not from luxury styling.",
     date: "2026-09-29",
+    updated: "2026-10-01",
     readingTime: "16 min read",
     relatedServiceSlugs: ["ui-ux-design", "cro-audit", "shopify-development"],
     relatedIndustrySlugs: ["jewelry-luxury", "ecommerce"],
@@ -295,6 +297,32 @@ export const commercePosts49: BlogPost[] = [
             ["Key UX", "Detail, imagery, materials", "Guides, sizing help, gift services"],
             ["After purchase", "Care, aftercare", "Exchanges, gift receipts"],
           ],
+        },
+      },
+      {
+        heading: "Trust Signal Inventory",
+        body: [
+          "Use this inventory to audit what your store actually shows. Every signal must be true and verifiable for the piece or business it appears on. Leave out anything you cannot substantiate; a missing signal costs less than a false one.",
+        ],
+        table: {
+          headers: ["Signal", "What good looks like", "Show only when"],
+          rows: [
+            ["Materials", "Metal type and purity, plating thickness where plated, weight where relevant", "Always; it must match the piece"],
+            ["Stones", "Type, natural, laboratory-grown or simulated, treatments, key characteristics", "The piece has stones; describe them accurately"],
+            ["Grading reports or certificates", "Issuer, report number and how to verify it", "A report actually exists for that piece"],
+            ["Hallmarks", "What the mark indicates and where it appears", "Pieces are hallmarked, or local law requires it"],
+            ["Sourcing information", "Specific, checkable statements about origin or recycled metals", "You can document the claim"],
+            ["Delivery protection", "Insured or signed-for delivery, discreet packaging", "You offer it in that market"],
+            ["Returns, exchanges and resizing", "Clear windows, conditions and costs, including for engraved or made-to-order pieces", "Always"],
+            ["Warranty and aftercare", "What is covered, for how long, and how to claim", "You offer it"],
+            ["Secure checkout", "Recognizable payment methods, HTTPS, clear authentication steps", "Always"],
+            ["Business information", "Legal name, address, contact options and response times", "Always"],
+            ["Reviews", "Verified-purchase reviews, including critical ones, with photos where allowed", "Reviews are genuine and moderated fairly"],
+          ],
+        },
+        callout: {
+          type: "note",
+          text: "Descriptions of metals and stones are regulated in some markets. In the US, the FTC's Jewelry Guides cover terms such as laboratory-grown and how to qualify claims; other countries have hallmarking rules. Check the rules for each market you sell into.",
         },
       },
       {
@@ -422,6 +450,7 @@ export const commercePosts49: BlogPost[] = [
         heading: "Mobile Layout",
         body: [
           "On mobile: gallery with zoom and video, name and price, materials summary, metal colour and size selectors with size guide link, sticky add to cart, delivery and returns summary, then collapsible sections for full details, certificate, care and reviews.",
+          "Zoom, scale, sizing sheets and sticky controls on phones are covered in [[/blogs/jewelry-ecommerce-mobile-ux|jewelry ecommerce mobile UX]].",
         ],
       },
       {
@@ -581,6 +610,7 @@ export const commercePosts49: BlogPost[] = [
         heading: "Performance and Accessibility",
         body: [
           "Serve responsive images in modern formats, lazy-load below-the-fold media, load video and 3D on interaction and keep the gallery usable without them. Provide alt text that describes materials and appearance, and keep all key information in text, not only in media. See [[/blogs/website-accessibility-guide|website accessibility]].",
+          "How imagery works within a phone layout is covered in [[/blogs/jewelry-ecommerce-mobile-ux|jewelry mobile UX]].",
         ],
       },
       {

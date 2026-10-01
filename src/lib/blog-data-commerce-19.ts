@@ -52,6 +52,7 @@ export const commercePosts19: BlogPost[] = [
         heading: "Accounts, Users and Permissions",
         body: [
           "B2B customers are organizations. Model companies, their locations (ship-to and bill-to), and the people who buy for them. Different users need different rights: some can browse, some can order up to a limit, some approve, some see invoices only. Get this model right early; it affects catalogs, pricing, approvals and reporting.",
+          "The account data model is covered in depth in [[/blogs/b2b-ecommerce-account-management|B2B account management]].",
         ],
         table: {
           headers: ["Entity", "Holds"],
@@ -67,12 +68,14 @@ export const commercePosts19: BlogPost[] = [
         heading: "Catalogs and Pricing",
         body: [
           "B2B pricing is personal. Customers see prices from their price list or contract, with volume breaks and promotions on top. Some customers only see certain products. Decide where pricing lives, usually the ERP, and how it reaches the store. See [[/blogs/b2b-ecommerce-pricing|B2B ecommerce pricing]] and [[/blogs/b2b-ecommerce-product-catalog|B2B product catalogs]].",
+          "See [[/blogs/b2b-customer-specific-catalogs|customer-specific catalogs]] for entitlements across channels.",
         ],
       },
       {
         heading: "Ordering Built for Business Buyers",
         body: [
           "Business buyers often know exactly what they need. Give them fast ways to order: quick order by SKU and quantity, CSV upload, reorder from history, saved lists per location, and search that finds part numbers. Show pack sizes, minimum order quantities and stock by location clearly. See [[/blogs/b2b-ecommerce-reordering|B2B reordering]].",
+          "Deep dives: [[/blogs/b2b-quick-order|quick order]] and [[/blogs/b2b-sales-rep-portal|sales rep portals]].",
         ],
         cta: {
           title: "Planning B2B ecommerce?",
@@ -83,6 +86,7 @@ export const commercePosts19: BlogPost[] = [
         heading: "Quotes and Approvals",
         body: [
           "Not every purchase fits a price list. Quote requests let buyers ask for pricing on large or custom orders; sales responds with a quote that converts to an order when accepted. Approval workflows let companies control spend: orders above a limit, or from certain users, wait for a manager. See [[/blogs/b2b-ecommerce-rfq|B2B RFQ]].",
+          "Approval rules, escalation and audit are covered in [[/blogs/b2b-approval-workflows|B2B approval workflows]].",
         ],
       },
       {
@@ -101,6 +105,7 @@ export const commercePosts19: BlogPost[] = [
         heading: "Platform Options",
         body: [
           "Shopify's B2B features cover companies and locations, catalogs, quantity rules and price breaks, net terms, vaulted cards, draft orders with PO numbers, quick order lists and reorders on all plans, with unlimited catalogs, deposits and contextual customization on Plus ([[https://help.shopify.com/en/manual/b2b/getting-started/plan-features|Shopify Help Center]]). B2B-focused platforms and custom builds suit very large catalogs, complex pricing or unusual workflows.",
+          "For the end-to-end architecture, including punchout and EDI channels, see [[/blogs/b2b-commerce-platform-architecture|B2B commerce platform architecture]] and [[/blogs/b2b-punchout-catalogs|punchout catalogs]].",
         ],
         table: {
           headers: ["Option", "Fits when"],
@@ -200,6 +205,7 @@ export const commercePosts19: BlogPost[] = [
         heading: "Roles Shape the Interface",
         body: [
           "Different users see different things: a buyer sees products, prices and their orders; an approver sees orders waiting for them; finance sees invoices and statements; an admin manages users. Tell users up front what they can do and what needs approval, so they don't discover limits at checkout.",
+          "Roles and permissions are modelled in [[/blogs/b2b-ecommerce-account-management|B2B account management]].",
         ],
       },
       {
@@ -228,6 +234,7 @@ export const commercePosts19: BlogPost[] = [
         heading: "Approvals Without Friction",
         body: [
           "Show before submission whether an order needs approval and who will approve it. After submission, show status and notify both sides. Give approvers a clear queue with order details, budget context and approve or reject with comments. Allow edits and resubmission.",
+          "See [[/blogs/b2b-approval-workflows|approval workflows]] for rules, notifications and escalation, and [[/blogs/b2b-quick-order|quick order]] for fast entry.",
         ],
       },
       {
