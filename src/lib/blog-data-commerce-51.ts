@@ -77,7 +77,7 @@ export const commercePosts51: BlogPost[] = [
         ],
         cta: {
           title: "Building a sports or outdoor store?",
-          description: "ZSpace builds sports ecommerce around sport-led taxonomies, size data, specs and the operations behind them.",
+          description: "ZSpace Labs builds sports ecommerce around sport-led taxonomies, size data, specs and the operations behind them.",
         },
       },
       {
@@ -149,7 +149,7 @@ export const commercePosts51: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build your sports store?",
-          description: "Talk to ZSpace about [[/services/website-development|sports ecommerce development]], [[/services/shopify-development|Shopify sports stores]] and [[/services/ui-ux-design|sports UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|sports ecommerce development]], [[/services/shopify-development|Shopify sports stores]] and [[/services/ui-ux-design|sports UX]].",
         },
       },
       {
@@ -226,7 +226,7 @@ export const commercePosts51: BlogPost[] = [
         ],
         cta: {
           title: "Athletes leaving without finding the right gear?",
-          description: "ZSpace researches sports shoppers and designs activity-led discovery, fit guidance and comparison.",
+          description: "ZSpace Labs researches sports shoppers and designs activity-led discovery, fit guidance and comparison.",
         },
       },
       {
@@ -298,7 +298,7 @@ export const commercePosts51: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve your sports store's UX?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|sports UX]], [[/services/cro-audit|conversion audits]] and [[/services/website-development|sports store development]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|sports UX]], [[/services/cro-audit|conversion audits]] and [[/services/website-development|sports store development]].",
         },
       },
       {
@@ -373,7 +373,7 @@ export const commercePosts51: BlogPost[] = [
         ],
         cta: {
           title: "Sports product pages generating fit returns?",
-          description: "ZSpace redesigns sports product pages around suitability, fit and technical clarity.",
+          description: "ZSpace Labs redesigns sports product pages around suitability, fit and technical clarity.",
         },
       },
       {
@@ -446,7 +446,7 @@ export const commercePosts51: BlogPost[] = [
         ],
         cta: {
           title: "Ready to redesign your sports product pages?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|product page design]], [[/services/cro-audit|sports CRO]] and [[/services/shopify-development|Shopify product templates]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|product page design]], [[/services/cro-audit|sports CRO]] and [[/services/shopify-development|Shopify product templates]].",
         },
       },
       {
@@ -521,7 +521,7 @@ export const commercePosts51: BlogPost[] = [
         ],
         cta: {
           title: "Athletes can't narrow down to the right gear?",
-          description: "ZSpace designs sports filters on structured activity, fit and spec data.",
+          description: "ZSpace Labs designs sports filters on structured activity, fit and spec data.",
         },
       },
       {
@@ -595,7 +595,7 @@ export const commercePosts51: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve sports discovery?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|filter UX]], [[/services/cro-audit|discovery audits]] and [[/services/shopify-development|Shopify filters]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|filter UX]], [[/services/cro-audit|discovery audits]] and [[/services/shopify-development|Shopify filters]].",
         },
       },
       {
@@ -664,7 +664,7 @@ export const commercePosts51: BlogPost[] = [
         ],
         cta: {
           title: "Shoppers unsure which model suits them?",
-          description: "ZSpace designs use-case-led comparison and buying guides for sports and outdoor retailers.",
+          description: "ZSpace Labs designs use-case-led comparison and buying guides for sports and outdoor retailers.",
         },
       },
       {
@@ -731,7 +731,7 @@ export const commercePosts51: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build sports comparison that helps athletes choose?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|comparison UX]] and [[/services/website-development|comparison implementation]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|comparison UX]] and [[/services/website-development|comparison implementation]].",
         },
       },
       {

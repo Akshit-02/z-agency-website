@@ -87,7 +87,7 @@ export const aiAppsPosts6: BlogPost[] = [
         },
         cta: {
           title: "Planning AI for customer or field operations?",
-          description: "ZSpace builds customer assistants, field apps and document workflows for utilities, kept separate from operational systems.",
+          description: "ZSpace Labs builds customer assistants, field apps and document workflows for utilities, kept separate from operational systems.",
         },
       },
       {
@@ -200,7 +200,7 @@ export const aiAppsPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Want AI that helps customers and crews without touching operations?",
-          description: "Talk to ZSpace about [[/services/ai-automation|utility workflow automation]] and [[/services/mobile-app-development|field service apps]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|utility workflow automation]] and [[/services/mobile-app-development|field service apps]].",
         },
       },
       {
@@ -250,7 +250,7 @@ export const aiAppsPosts6: BlogPost[] = [
       {
         heading: "Where This Fits",
         body: [
-          "This is the hub for ZSpace's AI product guides: [[/blogs/generative-ai-application-development|generative AI applications]], [[/blogs/ai-powered-saas-development|AI-powered SaaS]], [[/blogs/multimodal-ai-applications|multimodal AI]], [[/blogs/computer-vision-development|computer vision]], [[/blogs/ai-image-recognition|image recognition]], [[/blogs/ai-recommendation-systems|recommendation systems]], [[/blogs/ai-search-development|AI search]], [[/blogs/ai-copilot-development|AI copilots]] and [[/blogs/ai-powered-mobile-app-development|AI mobile apps]]. Using AI to build software is a different topic: [[/blogs/ai-software-development|AI software development]].",
+          "This is the hub for ZSpace Labs' AI product guides: [[/blogs/generative-ai-application-development|generative AI applications]], [[/blogs/ai-powered-saas-development|AI-powered SaaS]], [[/blogs/multimodal-ai-applications|multimodal AI]], [[/blogs/computer-vision-development|computer vision]], [[/blogs/ai-image-recognition|image recognition]], [[/blogs/ai-recommendation-systems|recommendation systems]], [[/blogs/ai-search-development|AI search]], [[/blogs/ai-copilot-development|AI copilots]] and [[/blogs/ai-powered-mobile-app-development|AI mobile apps]]. Using AI to build software is a different topic: [[/blogs/ai-software-development|AI software development]].",
         ],
       },
       {
@@ -298,7 +298,7 @@ export const aiAppsPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Planning an AI-powered product?",
-          description: "ZSpace takes AI applications from problem framing and prototype through evaluation, product build and operations.",
+          description: "ZSpace Labs takes AI applications from problem framing and prototype through evaluation, product build and operations.",
         },
       },
       {
@@ -406,7 +406,7 @@ export const aiAppsPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build an AI application that works in production?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI development]], [[/services/website-development|web platforms]], [[/services/mobile-app-development|mobile apps]] and [[/services/ui-ux-design|AI product design]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI development]], [[/services/website-development|web platforms]], [[/services/mobile-app-development|mobile apps]] and [[/services/ui-ux-design|AI product design]].",
         },
       },
       {
@@ -499,7 +499,7 @@ export const aiAppsPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Have a generative AI prototype that needs to become a product?",
-          description: "ZSpace hardens generative AI applications with evaluation, guardrails, cost control and production engineering.",
+          description: "ZSpace Labs hardens generative AI applications with evaluation, guardrails, cost control and production engineering.",
         },
       },
       {
@@ -602,7 +602,7 @@ export const aiAppsPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Building a generative AI product?",
-          description: "Talk to ZSpace about [[/services/ai-automation|generative AI development]], [[/services/website-development|backend engineering]] and [[/services/ui-ux-design|AI UX design]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|generative AI development]], [[/services/website-development|backend engineering]] and [[/services/ui-ux-design|AI UX design]].",
         },
       },
       {
@@ -692,7 +692,7 @@ export const aiAppsPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Building or adding AI to a SaaS product?",
-          description: "ZSpace builds AI-native SaaS platforms with tenant isolation, metering, billing integration and AI product UX.",
+          description: "ZSpace Labs builds AI-native SaaS platforms with tenant isolation, metering, billing integration and AI product UX.",
         },
       },
       {
@@ -800,7 +800,7 @@ export const aiAppsPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Planning an AI-native SaaS product?",
-          description: "Talk to ZSpace about [[/services/website-development|SaaS development]], [[/services/ai-automation|AI integration]] and [[/services/ui-ux-design|AI product design]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|SaaS development]], [[/services/ai-automation|AI integration]] and [[/services/ui-ux-design|AI product design]].",
         },
       },
       {

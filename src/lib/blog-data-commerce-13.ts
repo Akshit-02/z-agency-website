@@ -85,7 +85,7 @@ export const commercePosts13: BlogPost[] = [
         ],
         cta: {
           title: "Want your products to show up when shoppers ask AI?",
-          description: "ZSpace audits product data, feeds and pages for AI discovery and fixes the gaps that matter.",
+          description: "ZSpace Labs audits product data, feeds and pages for AI discovery and fixes the gaps that matter.",
         },
       },
       {
@@ -126,7 +126,7 @@ export const commercePosts13: BlogPost[] = [
         ],
         cta: {
           title: "Planning for AI discovery and search together?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI commerce]], [[/services/website-development|product data and feeds]] and [[/services/shopify-development|Shopify channels]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI commerce]], [[/services/website-development|product data and feeds]] and [[/services/shopify-development|Shopify channels]].",
         },
       },
       {
@@ -219,7 +219,7 @@ export const commercePosts13: BlogPost[] = [
         ],
         cta: {
           title: "Product data scattered across spreadsheets and descriptions?",
-          description: "ZSpace designs attribute models, cleans catalogs and connects product data to your store, feeds and AI channels.",
+          description: "ZSpace Labs designs attribute models, cleans catalogs and connects product data to your store, feeds and AI channels.",
         },
       },
       {
@@ -260,7 +260,7 @@ export const commercePosts13: BlogPost[] = [
         ],
         cta: {
           title: "Want product data that works in every channel?",
-          description: "Talk to ZSpace about [[/services/website-development|product data and integrations]], [[/services/shopify-development|Shopify metafields]] and [[/services/ai-automation|AI-assisted enrichment with review]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|product data and integrations]], [[/services/shopify-development|Shopify metafields]] and [[/services/ai-automation|AI-assisted enrichment with review]].",
         },
       },
       {
@@ -352,7 +352,7 @@ export const commercePosts13: BlogPost[] = [
         ],
         cta: {
           title: "Feed errors holding back your products?",
-          description: "ZSpace fixes product data at the source and sets up feeds that stay in sync with your store.",
+          description: "ZSpace Labs fixes product data at the source and sets up feeds that stay in sync with your store.",
         },
       },
       {
@@ -399,7 +399,7 @@ export const commercePosts13: BlogPost[] = [
         ],
         cta: {
           title: "Want feeds you don't have to firefight?",
-          description: "Talk to ZSpace about [[/services/website-development|feed and data integrations]] and [[/services/shopify-development|Shopify channel setup]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|feed and data integrations]] and [[/services/shopify-development|Shopify channel setup]].",
         },
       },
       {
@@ -480,7 +480,7 @@ export const commercePosts13: BlogPost[] = [
         ],
         cta: {
           title: "Is your search understanding what shoppers mean?",
-          description: "ZSpace evaluates search on your real queries and recommends, configures or builds the right approach.",
+          description: "ZSpace Labs evaluates search on your real queries and recommends, configures or builds the right approach.",
         },
       },
       {
@@ -568,7 +568,7 @@ export const commercePosts13: BlogPost[] = [
         },
         cta: {
           title: "Planning an AI search upgrade?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI search]], [[/services/website-development|search integration]] and [[/services/cro-audit|search testing]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI search]], [[/services/website-development|search integration]] and [[/services/cro-audit|search testing]].",
         },
       },
       {

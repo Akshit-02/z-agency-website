@@ -95,7 +95,7 @@ export const aiCorePosts13: BlogPost[] = [
         ],
         cta: {
           title: "Building agents that read emails, documents or the web?",
-          description: "ZSpace designs agent architectures where a manipulated model still cannot leak data or take harmful actions.",
+          description: "ZSpace Labs designs agent architectures where a manipulated model still cannot leak data or take harmful actions.",
         },
       },
       {
@@ -204,7 +204,7 @@ export const aiCorePosts13: BlogPost[] = [
         ],
         cta: {
           title: "Want an injection-focused review of your AI application?",
-          description: "Talk to ZSpace about [[/services/ai-automation|secure AI agent development]] and [[/services/website-development|application security engineering]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|secure AI agent development]] and [[/services/website-development|application security engineering]].",
         },
       },
       {
@@ -254,7 +254,7 @@ export const aiCorePosts13: BlogPost[] = [
       {
         heading: "Where This Fits",
         body: [
-          "This is the commercial entry point to ZSpace's AI guides. Building agents is covered in [[/blogs/ai-agent-development|AI agent development]], automation in [[/blogs/business-process-automation|business process automation]], knowledge assistants in [[/blogs/retrieval-augmented-generation|RAG]] and [[/blogs/ai-knowledge-base|AI knowledge base]], and measurement in [[/blogs/ai-agent-evaluation|AI evaluation]]. Industry-specific opportunities are in guides such as [[/blogs/ai-agents-in-healthcare|AI agents in healthcare]] and [[/blogs/ai-agents-in-manufacturing|AI agents in manufacturing]].",
+          "This is the commercial entry point to ZSpace Labs' AI guides. Building agents is covered in [[/blogs/ai-agent-development|AI agent development]], automation in [[/blogs/business-process-automation|business process automation]], knowledge assistants in [[/blogs/retrieval-augmented-generation|RAG]] and [[/blogs/ai-knowledge-base|AI knowledge base]], and measurement in [[/blogs/ai-agent-evaluation|AI evaluation]]. Industry-specific opportunities are in guides such as [[/blogs/ai-agents-in-healthcare|AI agents in healthcare]] and [[/blogs/ai-agents-in-manufacturing|AI agents in manufacturing]].",
         ],
       },
       {
@@ -304,7 +304,7 @@ export const aiCorePosts13: BlogPost[] = [
         ],
         cta: {
           title: "Need help choosing which AI projects to fund?",
-          description: "ZSpace runs AI opportunity discovery and prioritization, then builds pilots with clear success criteria and evaluation.",
+          description: "ZSpace Labs runs AI opportunity discovery and prioritization, then builds pilots with clear success criteria and evaluation.",
         },
       },
       {
@@ -429,7 +429,7 @@ export const aiCorePosts13: BlogPost[] = [
         ],
         cta: {
           title: "Ready to turn AI ideas into working systems?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI strategy, pilots and implementation]], [[/services/website-development|integration and development]] and [[/services/ui-ux-design|AI product design]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI strategy, pilots and implementation]], [[/services/website-development|integration and development]] and [[/services/ui-ux-design|AI product design]].",
         },
       },
       {

@@ -89,7 +89,7 @@ export const commercePosts36: BlogPost[] = [
         ],
         cta: {
           title: "Subscribers cancelling when they only needed a change?",
-          description: "ZSpace researches why subscribers leave and redesigns portals, messages and offers so they can adjust instead.",
+          description: "ZSpace Labs researches why subscribers leave and redesigns portals, messages and offers so they can adjust instead.",
         },
       },
       {
@@ -179,7 +179,7 @@ export const commercePosts36: BlogPost[] = [
         ],
         cta: {
           title: "Want to understand and reduce subscription churn?",
-          description: "Talk to ZSpace about [[/services/cro-audit|subscription retention audits]], [[/services/ui-ux-design|portal and flow design]] and [[/services/shopify-development|Shopify subscription setup]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|subscription retention audits]], [[/services/ui-ux-design|portal and flow design]] and [[/services/shopify-development|Shopify subscription setup]].",
         },
       },
       {
@@ -283,7 +283,7 @@ export const commercePosts36: BlogPost[] = [
         },
         cta: {
           title: "Unsure whether your subscription pricing is working?",
-          description: "ZSpace audits subscription offers, pricing presentation and portal flows against real subscriber behaviour.",
+          description: "ZSpace Labs audits subscription offers, pricing presentation and portal flows against real subscriber behaviour.",
         },
       },
       {
@@ -344,7 +344,7 @@ export const commercePosts36: BlogPost[] = [
         ],
         cta: {
           title: "Ready to redesign your subscription pricing?",
-          description: "Talk to ZSpace about [[/services/cro-audit|pricing and offer testing]], [[/services/ui-ux-design|plan presentation]] and [[/services/shopify-development|Shopify selling plans]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|pricing and offer testing]], [[/services/ui-ux-design|plan presentation]] and [[/services/shopify-development|Shopify selling plans]].",
         },
       },
       {
@@ -442,7 +442,7 @@ export const commercePosts36: BlogPost[] = [
         ],
         cta: {
           title: "Is your cancellation flow creating complaints?",
-          description: "ZSpace redesigns cancellation flows that are fair to customers and still help the right ones stay.",
+          description: "ZSpace Labs redesigns cancellation flows that are fair to customers and still help the right ones stay.",
         },
       },
       {
@@ -500,7 +500,7 @@ export const commercePosts36: BlogPost[] = [
         },
         cta: {
           title: "Ready to make cancellation fair and informative?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|subscription UX]] and [[/services/cro-audit|retention and churn analysis]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|subscription UX]] and [[/services/cro-audit|retention and churn analysis]].",
         },
       },
       {
@@ -595,7 +595,7 @@ export const commercePosts36: BlogPost[] = [
         ],
         cta: {
           title: "Wondering whether subscriptions suit your range?",
-          description: "ZSpace analyses reorder behaviour and helps brands decide where subscriptions add value and how to present them.",
+          description: "ZSpace Labs analyses reorder behaviour and helps brands decide where subscriptions add value and how to present them.",
         },
       },
       {
@@ -658,7 +658,7 @@ export const commercePosts36: BlogPost[] = [
         ],
         cta: {
           title: "Ready to choose the right model for your products?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify subscriptions]], [[/services/cro-audit|offer testing]] and [[/services/ui-ux-design|subscription UX]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify subscriptions]], [[/services/cro-audit|offer testing]] and [[/services/ui-ux-design|subscription UX]].",
         },
       },
       {

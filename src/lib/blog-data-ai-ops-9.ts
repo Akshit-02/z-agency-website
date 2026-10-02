@@ -75,7 +75,7 @@ export const aiOpsPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Launching an AI feature and worried about adoption?",
-          description: "ZSpace designs onboarding and activation flows for AI features. See [[/services/ui-ux-design|our UI/UX design services]].",
+          description: "ZSpace Labs designs onboarding and activation flows for AI features. See [[/services/ui-ux-design|our UI/UX design services]].",
         },
       },
       {
@@ -166,7 +166,7 @@ export const aiOpsPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Want to improve adoption of your AI features?",
-          description: "Talk to ZSpace about an [[/services/ui-ux-design|AI activation review]] covering entry points, first use and measurement.",
+          description: "Talk to ZSpace Labs about an [[/services/ui-ux-design|AI activation review]] covering entry points, first use and measurement.",
         },
       },
       {
@@ -254,7 +254,7 @@ export const aiOpsPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Need to make your AI features more transparent?",
-          description: "ZSpace designs disclosure, citation and uncertainty patterns that build calibrated trust. See [[/services/ui-ux-design|AI product design services]].",
+          description: "ZSpace Labs designs disclosure, citation and uncertainty patterns that build calibrated trust. See [[/services/ui-ux-design|AI product design services]].",
         },
       },
       {
@@ -331,7 +331,7 @@ export const aiOpsPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Preparing for AI transparency requirements?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|transparency design]] for AI features, from disclosure to provenance.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|transparency design]] for AI features, from disclosure to provenance.",
         },
       },
       {
@@ -418,7 +418,7 @@ export const aiOpsPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Users losing trust after AI mistakes?",
-          description: "ZSpace designs detection, correction and recovery into AI features. See [[/services/ui-ux-design|our UI/UX design services]].",
+          description: "ZSpace Labs designs detection, correction and recovery into AI features. See [[/services/ui-ux-design|our UI/UX design services]].",
         },
       },
       {
@@ -507,7 +507,7 @@ export const aiOpsPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Want your AI error states reviewed?",
-          description: "Talk to ZSpace about an [[/services/ui-ux-design|AI error handling review]] across failures, wrong outputs and actions.",
+          description: "Talk to ZSpace Labs about an [[/services/ui-ux-design|AI error handling review]] across failures, wrong outputs and actions.",
         },
       },
       {
@@ -594,7 +594,7 @@ export const aiOpsPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Collecting feedback but not learning from it?",
-          description: "ZSpace designs feedback capture and connects it to evaluation and improvement workflows. See [[/services/ui-ux-design|product design]] and [[/services/ai-automation|AI development]].",
+          description: "ZSpace Labs designs feedback capture and connects it to evaluation and improvement workflows. See [[/services/ui-ux-design|product design]] and [[/services/ai-automation|AI development]].",
         },
       },
       {
@@ -680,7 +680,7 @@ export const aiOpsPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Want a feedback loop that improves your AI?",
-          description: "Talk to ZSpace about [[/services/ai-automation|feedback and evaluation workflows]] for AI features.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|feedback and evaluation workflows]] for AI features.",
         },
       },
       {

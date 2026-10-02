@@ -52,7 +52,7 @@ export const webDevPosts: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "Website development is the process of building a website's actual functionality — front-end interface, back-end logic, content management, integrations, hosting and security — working alongside design, SEO, performance and accessibility rather than after them. A business website today typically needs a content management approach, at least a few integrations (analytics, forms, sometimes a CRM or payment system), and a technology choice suited to how much the site will grow and change. This guide is the hub for ZSpace's full Website Development content cluster — cost, timeline, process, technology choices and post-launch maintenance are each covered in depth in their own linked guides below.",
+          "Website development is the process of building a website's actual functionality — front-end interface, back-end logic, content management, integrations, hosting and security — working alongside design, SEO, performance and accessibility rather than after them. A business website today typically needs a content management approach, at least a few integrations (analytics, forms, sometimes a CRM or payment system), and a technology choice suited to how much the site will grow and change. This guide is the hub for ZSpace Labs' full Website Development content cluster — cost, timeline, process, technology choices and post-launch maintenance are each covered in depth in their own linked guides below.",
         ],
       },
       {
@@ -110,7 +110,7 @@ export const webDevPosts: BlogPost[] = [
         ],
         cta: {
           title: "Planning a website project and want a second opinion on scope?",
-          description: "ZSpace can review your requirements and technology direction before development starts, so decisions made early don't become expensive to unwind later.",
+          description: "ZSpace Labs can review your requirements and technology direction before development starts, so decisions made early don't become expensive to unwind later.",
         },
       },
       {
@@ -145,13 +145,13 @@ export const webDevPosts: BlogPost[] = [
         ],
         cta: {
           title: "Comparing website development partners?",
-          description: "ZSpace builds custom websites and web applications on modern frameworks, with design and engineering on the same team from day one.",
+          description: "ZSpace Labs builds custom websites and web applications on modern frameworks, with design and engineering on the same team from day one.",
         },
       },
       {
         heading: "The Website Development Cluster",
         body: [
-          "This guide is the hub for ZSpace's full Website Development content — use the map below to go deeper on any specific stage or decision.",
+          "This guide is the hub for ZSpace Labs' full Website Development content — use the map below to go deeper on any specific stage or decision.",
         ],
         checklist: [
           "Planning: [[/blogs/website-development-cost|cost breakdown]], [[/blogs/website-development-timeline|timeline]], [[/blogs/website-requirements-document|requirements document]], [[/blogs/website-development-project-planning|project planning]]",
@@ -166,7 +166,7 @@ export const webDevPosts: BlogPost[] = [
       {
         heading: "How This Connects to UI/UX and Conversion",
         body: [
-          "Website development doesn't happen in isolation from user experience or conversion — a technically well-built site with confusing navigation or a weak checkout flow still underperforms. See ZSpace's [[/services/ui-ux-design|UI/UX design]] work and the [[/blogs/shopify-cro-audit|conversion optimization content]] for how those disciplines connect to a development project.",
+          "Website development doesn't happen in isolation from user experience or conversion — a technically well-built site with confusing navigation or a weak checkout flow still underperforms. See ZSpace Labs' [[/services/ui-ux-design|UI/UX design]] work and the [[/blogs/shopify-cro-audit|conversion optimization content]] for how those disciplines connect to a development project.",
         ],
       },
       {
@@ -258,7 +258,7 @@ export const webDevPosts: BlogPost[] = [
         ],
         cta: {
           title: "Not sure what your specific project actually requires?",
-          description: "ZSpace can review your requirements and give you a scope-based estimate grounded in what your project actually needs, not a generic price list.",
+          description: "ZSpace Labs can review your requirements and give you a scope-based estimate grounded in what your project actually needs, not a generic price list.",
         },
       },
       {
@@ -293,7 +293,7 @@ export const webDevPosts: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Want a clear, scope-based estimate for your project?",
-          description: "ZSpace can walk through your requirements and explain what's actually driving cost on your specific project, before you commit to anything.",
+          description: "ZSpace Labs can walk through your requirements and explain what's actually driving cost on your specific project, before you commit to anything.",
         },
       },
       {
@@ -383,7 +383,7 @@ export const webDevPosts: BlogPost[] = [
         ],
         cta: {
           title: "Trying to plan a realistic launch date for your project?",
-          description: "ZSpace can review your specific scope and give you a timeline grounded in your actual requirements, not a generic estimate.",
+          description: "ZSpace Labs can review your specific scope and give you a timeline grounded in your actual requirements, not a generic estimate.",
         },
       },
       {
@@ -460,7 +460,7 @@ export const webDevPosts: BlogPost[] = [
       { q: "What's the difference between QA and security testing?", a: "QA verifies the site works correctly across devices, browsers and use cases; security testing verifies it can't be exploited or misused. Both matter, and both should happen before launch, not only after an incident." },
       { q: "Does this process apply to a small business website too?", a: "Yes, at a smaller scale — a five-page brochure site still benefits from discovery, a basic design system, and pre-launch QA, even if each stage takes far less time than on a larger project." },
       { q: "What happens after deployment?", a: "Monitoring (uptime, performance, errors) and ongoing maintenance — see the [[/blogs/website-maintenance-guide|website maintenance guide]] for the full post-launch lifecycle." },
-      { q: "How does this process connect to conversion optimization?", a: "UX decisions made during design directly affect conversion — the process should incorporate CRO thinking (clear calls to action, low-friction forms) from the UX stage, not retrofit it after launch. See ZSpace's [[/blogs/shopify-cro-audit|CRO audit framework]] for the broader discipline." },
+      { q: "How does this process connect to conversion optimization?", a: "UX decisions made during design directly affect conversion — the process should incorporate CRO thinking (clear calls to action, low-friction forms) from the UX stage, not retrofit it after launch. See ZSpace Labs' [[/blogs/shopify-cro-audit|CRO audit framework]] for the broader discipline." },
     ],
     content: [
       {
@@ -491,7 +491,7 @@ export const webDevPosts: BlogPost[] = [
       {
         heading: "Wireframes and UI Design",
         body: [
-          "Wireframes work out layout and content hierarchy before visual design is applied, catching structural problems while they're still cheap to fix. UI design then applies the visual language — typography, color, imagery — on top of that structure. This is also where UI/UX and website development most directly intersect; see ZSpace's [[/services/ui-ux-design|UI/UX design]] work for how that discipline connects here.",
+          "Wireframes work out layout and content hierarchy before visual design is applied, catching structural problems while they're still cheap to fix. UI design then applies the visual language — typography, color, imagery — on top of that structure. This is also where UI/UX and website development most directly intersect; see ZSpace Labs' [[/services/ui-ux-design|UI/UX design]] work for how that discipline connects here.",
         ],
       },
       {
@@ -519,7 +519,7 @@ export const webDevPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want a development process built around your specific project?",
-          description: "ZSpace runs design and engineering on the same team from day one, so nothing gets lost in a handoff between stages.",
+          description: "ZSpace Labs runs design and engineering on the same team from day one, so nothing gets lost in a handoff between stages.",
         },
       },
       {
@@ -659,7 +659,7 @@ export const webDevPosts: BlogPost[] = [
         visual: { variant: "funnel", accent: "orange", caption: "The right choice narrows as requirements get more specific — a generic site fits a builder; a specific, growing product usually doesn't." },
         cta: {
           title: "Not sure which fits your project?",
-          description: "ZSpace can review your requirements and give you an honest read on whether custom development is actually justified for your specific site.",
+          description: "ZSpace Labs can review your requirements and give you an honest read on whether custom development is actually justified for your specific site.",
         },
       },
       {
@@ -757,7 +757,7 @@ export const webDevPosts: BlogPost[] = [
         visual: { variant: "grid", accent: "blue", caption: "The right choice depends on how much the project resembles a content site versus a product that needs to evolve as an application." },
         cta: {
           title: "Weighing WordPress against a custom build?",
-          description: "ZSpace can review your specific requirements and give you a grounded recommendation, not a platform-first pitch either way.",
+          description: "ZSpace Labs can review your specific requirements and give you a grounded recommendation, not a platform-first pitch either way.",
         },
       },
       {
@@ -859,7 +859,7 @@ export const webDevPosts: BlogPost[] = [
         visual: { variant: "grid", accent: "orange", caption: "The right model scales with project complexity — a simple, well-defined project doesn't need a full team; a complex, evolving one usually does." },
         cta: {
           title: "Weighing an agency against a freelancer for your project?",
-          description: "ZSpace runs design and engineering on one team, with the project management and continuity that comes with it.",
+          description: "ZSpace Labs runs design and engineering on one team, with the project management and continuity that comes with it.",
         },
       },
       {

@@ -89,7 +89,7 @@ export const commercePosts32: BlogPost[] = [
         ],
         cta: {
           title: "Tax calculation causing checkout or finance headaches?",
-          description: "ZSpace implements platform tax and tax engine integrations across store, ERP and invoicing.",
+          description: "ZSpace Labs implements platform tax and tax engine integrations across store, ERP and invoicing.",
         },
       },
       {
@@ -190,7 +190,7 @@ export const commercePosts32: BlogPost[] = [
         ],
         cta: {
           title: "Ready to get ecommerce tax right technically?",
-          description: "Talk to ZSpace about [[/services/website-development|tax engine integration]] and [[/services/shopify-development|Shopify tax setup]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|tax engine integration]] and [[/services/shopify-development|Shopify tax setup]].",
         },
       },
       {
@@ -289,7 +289,7 @@ export const commercePosts32: BlogPost[] = [
         ],
         cta: {
           title: "Integrations breaking as your store grows?",
-          description: "ZSpace designs ecommerce integration architecture with reliable sync, monitoring and clear ownership.",
+          description: "ZSpace Labs designs ecommerce integration architecture with reliable sync, monitoring and clear ownership.",
         },
       },
       {
@@ -360,7 +360,7 @@ export const commercePosts32: BlogPost[] = [
         },
         cta: {
           title: "Ready to connect your store with your business systems?",
-          description: "Talk to ZSpace about [[/services/website-development|ecommerce integration]], [[/services/shopify-development|Shopify apps and APIs]] and [[/services/ai-automation|workflow automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|ecommerce integration]], [[/services/shopify-development|Shopify apps and APIs]] and [[/services/ai-automation|workflow automation]].",
         },
       },
       {
@@ -448,7 +448,7 @@ export const commercePosts32: BlogPost[] = [
         ],
         cta: {
           title: "Considering headless for your store?",
-          description: "ZSpace assesses whether headless fits your requirements and builds it properly when it does.",
+          description: "ZSpace Labs assesses whether headless fits your requirements and builds it properly when it does.",
         },
       },
       {
@@ -532,7 +532,7 @@ export const commercePosts32: BlogPost[] = [
         ],
         cta: {
           title: "Ready to plan a headless architecture?",
-          description: "Talk to ZSpace about [[/services/website-development|headless ecommerce development]] and [[/services/shopify-development|headless Shopify]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|headless ecommerce development]] and [[/services/shopify-development|headless Shopify]].",
         },
       },
       {
@@ -614,7 +614,7 @@ export const commercePosts32: BlogPost[] = [
         ],
         cta: {
           title: "Weighing composable against your current platform?",
-          description: "ZSpace helps teams decide on architecture from requirements, not trends, and builds the result.",
+          description: "ZSpace Labs helps teams decide on architecture from requirements, not trends, and builds the result.",
         },
       },
       {
@@ -687,7 +687,7 @@ export const commercePosts32: BlogPost[] = [
         ],
         cta: {
           title: "Ready to choose your commerce architecture?",
-          description: "Talk to ZSpace about [[/services/website-development|composable and headless builds]] and [[/services/shopify-development|Shopify-based architectures]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|composable and headless builds]] and [[/services/shopify-development|Shopify-based architectures]].",
         },
       },
       {
@@ -775,7 +775,7 @@ export const commercePosts32: BlogPost[] = [
         ],
         cta: {
           title: "Not sure which tools your store actually needs?",
-          description: "ZSpace audits ecommerce stacks and recommends the simplest set of tools that meets your requirements.",
+          description: "ZSpace Labs audits ecommerce stacks and recommends the simplest set of tools that meets your requirements.",
         },
       },
       {
@@ -844,7 +844,7 @@ export const commercePosts32: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build the right ecommerce stack?",
-          description: "Talk to ZSpace about [[/services/website-development|ecommerce architecture and development]], [[/services/shopify-development|Shopify builds]] and [[/services/ai-automation|operations automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|ecommerce architecture and development]], [[/services/shopify-development|Shopify builds]] and [[/services/ai-automation|operations automation]].",
         },
       },
       {

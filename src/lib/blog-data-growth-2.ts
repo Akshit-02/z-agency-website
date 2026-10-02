@@ -92,7 +92,7 @@ export const growthPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Getting add-to-carts but not orders?",
-          description: "ZSpace maps every step from cart to payment, finds where your shoppers drop and fixes the causes.",
+          description: "ZSpace Labs maps every step from cart to payment, finds where your shoppers drop and fixes the causes.",
         },
       },
       {
@@ -171,7 +171,7 @@ export const growthPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want to know exactly where your orders are lost?",
-          description: "Talk to ZSpace about an [[/services/cro-audit|ecommerce CRO audit]], [[/services/ui-ux-design|cart and checkout redesign]] or [[/services/shopify-development|Shopify development]].",
+          description: "Talk to ZSpace Labs about an [[/services/cro-audit|ecommerce CRO audit]], [[/services/ui-ux-design|cart and checkout redesign]] or [[/services/shopify-development|Shopify development]].",
         },
       },
       {
@@ -267,7 +267,7 @@ export const growthPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want to know why your shoppers leave checkout?",
-          description: "ZSpace analyzes checkout drop-off, errors and payment failures and fixes what's costing you orders.",
+          description: "ZSpace Labs analyzes checkout drop-off, errors and payment failures and fixes what's costing you orders.",
         },
       },
       {
@@ -341,7 +341,7 @@ export const growthPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Ready to reduce checkout abandonment?",
-          description: "Talk to ZSpace about a [[/services/cro-audit|checkout audit]], [[/services/ui-ux-design|checkout UX]] and [[/services/shopify-development|Shopify checkout configuration]].",
+          description: "Talk to ZSpace Labs about a [[/services/cro-audit|checkout audit]], [[/services/ui-ux-design|checkout UX]] and [[/services/shopify-development|Shopify checkout configuration]].",
         },
       },
       {
@@ -376,7 +376,7 @@ export const growthPosts2: BlogPost[] = [
       { q: "How are CRO audit findings prioritized?", a: "By how many shoppers the problem affects, how strong the evidence is, how much impact fixing it could have and how much effort and risk the fix involves." },
       { q: "What should a CRO audit deliver?", a: "A short summary of the most important problems, evidence for each finding, a prioritized list of fixes and tests, quick wins, and a plan for measuring results." },
       { q: "How often should an ecommerce store be audited?", a: "Before a redesign, when conversion drops, after major changes to the store or traffic mix, and periodically for stores that change often." },
-      { q: "Is this guide specific to Shopify?", a: "No, it's platform-independent. For a Shopify-specific version, see ZSpace's Shopify CRO audit." },
+      { q: "Is this guide specific to Shopify?", a: "No, it's platform-independent. For a Shopify-specific version, see ZSpace Labs' Shopify CRO audit." },
     ],
     content: [
       {
@@ -461,7 +461,7 @@ export const growthPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want an expert CRO audit of your store?",
-          description: "ZSpace audits the full journey with analytics, recordings and user testing, and delivers a prioritized plan your team can act on.",
+          description: "ZSpace Labs audits the full journey with analytics, recordings and user testing, and delivers a prioritized plan your team can act on.",
         },
       },
       {
@@ -567,7 +567,7 @@ export const growthPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Ready to find what's holding your store back?",
-          description: "Talk to ZSpace about an [[/services/cro-audit|ecommerce CRO audit]], with [[/services/ui-ux-design|UX design]] and [[/services/shopify-development|Shopify development]] to implement the fixes.",
+          description: "Talk to ZSpace Labs about an [[/services/cro-audit|ecommerce CRO audit]], with [[/services/ui-ux-design|UX design]] and [[/services/shopify-development|Shopify development]] to implement the fixes.",
         },
       },
       {
@@ -680,7 +680,7 @@ export const growthPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want to know which stage is costing you most?",
-          description: "ZSpace builds and analyzes your funnel by segment, then investigates the leaking stage with recordings and testing.",
+          description: "ZSpace Labs builds and analyzes your funnel by segment, then investigates the leaking stage with recordings and testing.",
         },
       },
       {
@@ -775,7 +775,7 @@ export const growthPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Ready to fix where customers drop off?",
-          description: "Talk to ZSpace about an [[/services/cro-audit|ecommerce CRO audit]] and the [[/services/ui-ux-design|UX]] and [[/services/shopify-development|development]] work to fix it.",
+          description: "Talk to ZSpace Labs about an [[/services/cro-audit|ecommerce CRO audit]] and the [[/services/ui-ux-design|UX]] and [[/services/shopify-development|development]] work to fix it.",
         },
       },
       {
@@ -866,7 +866,7 @@ export const growthPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want a testing program built on evidence?",
-          description: "ZSpace researches your funnel, writes testable hypotheses and runs experiments you can trust.",
+          description: "ZSpace Labs researches your funnel, writes testable hypotheses and runs experiments you can trust.",
         },
       },
       {
@@ -932,7 +932,7 @@ export const growthPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Ready to test what matters?",
-          description: "Talk to ZSpace about [[/services/cro-audit|CRO and experimentation]], plus [[/services/ui-ux-design|design]] and [[/services/shopify-development|development]] for test variants.",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|CRO and experimentation]], plus [[/services/ui-ux-design|design]] and [[/services/shopify-development|development]] for test variants.",
         },
       },
       {
@@ -1031,7 +1031,7 @@ export const growthPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Have heatmaps but no clear next steps?",
-          description: "ZSpace combines heatmaps, recordings and analytics into prioritized hypotheses, and tests the ones that matter.",
+          description: "ZSpace Labs combines heatmaps, recordings and analytics into prioritized hypotheses, and tests the ones that matter.",
         },
       },
       {
@@ -1092,7 +1092,7 @@ export const growthPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want to turn behaviour data into better UX?",
-          description: "Talk to ZSpace about a [[/services/cro-audit|CRO audit]] and [[/services/ui-ux-design|UX improvements]] based on heatmaps, recordings and testing.",
+          description: "Talk to ZSpace Labs about a [[/services/cro-audit|CRO audit]] and [[/services/ui-ux-design|UX improvements]] based on heatmaps, recordings and testing.",
         },
       },
       {

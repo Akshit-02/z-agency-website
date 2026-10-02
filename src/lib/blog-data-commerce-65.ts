@@ -101,7 +101,7 @@ export const commercePosts65: BlogPost[] = [
         },
         cta: {
           title: "Tracking data stale or inconsistent?",
-          description: "ZSpace builds tracking pipelines that normalize carrier events and keep customers and support informed.",
+          description: "ZSpace Labs builds tracking pipelines that normalize carrier events and keep customers and support informed.",
         },
       },
       {
@@ -194,7 +194,7 @@ export const commercePosts65: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build reliable delivery visibility?",
-          description: "Talk to ZSpace about [[/services/website-development|carrier and tracking integrations]], [[/services/shopify-development|Shopify fulfilment data]] and [[/services/ai-automation|exception automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|carrier and tracking integrations]], [[/services/shopify-development|Shopify fulfilment data]] and [[/services/ai-automation|exception automation]].",
         },
       },
       {
@@ -290,7 +290,7 @@ export const commercePosts65: BlogPost[] = [
         ],
         cta: {
           title: "Systems disagreeing about orders and stock?",
-          description: "ZSpace designs order integration architectures with clear ownership, events and reconciliation.",
+          description: "ZSpace Labs designs order integration architectures with clear ownership, events and reconciliation.",
         },
       },
       {
@@ -393,7 +393,7 @@ export const commercePosts65: BlogPost[] = [
         ],
         cta: {
           title: "Ready to connect your order systems properly?",
-          description: "Talk to ZSpace about [[/services/website-development|order and ERP integrations]], [[/services/shopify-development|Shopify integrations]] and [[/services/ai-automation|operations automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|order and ERP integrations]], [[/services/shopify-development|Shopify integrations]] and [[/services/ai-automation|operations automation]].",
         },
       },
       {
@@ -490,7 +490,7 @@ export const commercePosts65: BlogPost[] = [
         },
         cta: {
           title: "Fulfilment straining as orders grow?",
-          description: "ZSpace connects stores, OMS, warehouses, 3PLs and carriers into one reliable order flow.",
+          description: "ZSpace Labs connects stores, OMS, warehouses, 3PLs and carriers into one reliable order flow.",
         },
       },
       {
@@ -583,7 +583,7 @@ export const commercePosts65: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build a fulfilment flow that scales?",
-          description: "Talk to ZSpace about [[/services/website-development|fulfilment and WMS integrations]], [[/services/ai-automation|fulfilment automation]] and [[/services/shopify-development|Shopify multi-location setup]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|fulfilment and WMS integrations]], [[/services/ai-automation|fulfilment automation]] and [[/services/shopify-development|Shopify multi-location setup]].",
         },
       },
       {

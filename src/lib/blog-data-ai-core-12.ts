@@ -36,7 +36,7 @@ export const aiCorePosts12: BlogPost[] = [
       { q: "How do you prevent AI from giving wrong answers to customers?", a: "Ground answers in approved content with citations, refuse when the answer is not found, limit actions to narrow tools with policy checks, test against real tickets and review samples continuously." },
       { q: "How do you measure AI support success?", a: "Resolution rate without escalation, repeat contacts, customer satisfaction, time to first response and to resolution, agent handle time, deflection that does not create repeat contacts, and quality review scores." },
       { q: "Will AI replace support teams?", a: "It changes the work. Routine questions are handled faster, and people focus on complex, sensitive and high-value conversations, quality and content." },
-      { q: "How does this differ from ecommerce support automation?", a: "The principles are the same; ecommerce adds store-specific needs such as order status, returns and delivery. ZSpace's ecommerce guide covers those specifics." },
+      { q: "How does this differ from ecommerce support automation?", a: "The principles are the same; ecommerce adds store-specific needs such as order status, returns and delivery. ZSpace Labs' ecommerce guide covers those specifics." },
       { q: "What about privacy?", a: "Support data contains personal information. Minimize what reaches models, verify identity before sharing account details, use providers with suitable data terms and set retention rules." },
     ],
     content: [
@@ -90,7 +90,7 @@ export const aiCorePosts12: BlogPost[] = [
         ],
         cta: {
           title: "Want faster support without losing quality?",
-          description: "ZSpace builds support automation that triages, assists agents and resolves routine requests, integrated with your help desk and systems.",
+          description: "ZSpace Labs builds support automation that triages, assists agents and resolves routine requests, integrated with your help desk and systems.",
         },
       },
       {
@@ -182,7 +182,7 @@ export const aiCorePosts12: BlogPost[] = [
         ],
         cta: {
           title: "Planning AI for your support team?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI customer support automation]] and [[/services/ui-ux-design|support and assistant UX]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI customer support automation]] and [[/services/ui-ux-design|support and assistant UX]].",
         },
       },
       {
@@ -272,7 +272,7 @@ export const aiCorePosts12: BlogPost[] = [
         ],
         cta: {
           title: "Want meeting notes that flow straight into your systems?",
-          description: "ZSpace can integrate meeting assistants with your CRM and task tools, with review steps and retention rules in place.",
+          description: "ZSpace Labs can integrate meeting assistants with your CRM and task tools, with review steps and retention rules in place.",
         },
       },
       {
@@ -344,7 +344,7 @@ export const aiCorePosts12: BlogPost[] = [
         ],
         cta: {
           title: "Planning AI meeting notes across your organization?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI meeting assistant integration and automation]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI meeting assistant integration and automation]].",
         },
       },
       {
@@ -432,7 +432,7 @@ export const aiCorePosts12: BlogPost[] = [
         ],
         cta: {
           title: "Extracting data from documents your systems cannot read?",
-          description: "ZSpace builds extraction pipelines with schemas, validation and review screens, tuned on your own documents.",
+          description: "ZSpace Labs builds extraction pipelines with schemas, validation and review screens, tuned on your own documents.",
         },
       },
       {
@@ -508,7 +508,7 @@ export const aiCorePosts12: BlogPost[] = [
         ],
         cta: {
           title: "Need reliable data from messy documents?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI document extraction]] and [[/services/website-development|integration into your systems]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI document extraction]] and [[/services/website-development|integration into your systems]].",
         },
       },
       {
@@ -594,7 +594,7 @@ export const aiCorePosts12: BlogPost[] = [
         ],
         cta: {
           title: "AI costs growing faster than usage?",
-          description: "ZSpace can trace where your token spend goes and apply routing, caching and batching without lowering quality.",
+          description: "ZSpace Labs can trace where your token spend goes and apply routing, caching and batching without lowering quality.",
         },
       },
       {
@@ -712,7 +712,7 @@ export const aiCorePosts12: BlogPost[] = [
         ],
         cta: {
           title: "Want AI features that stay affordable as they scale?",
-          description: "Talk to ZSpace about [[/services/ai-automation|LLM cost optimization and AI platform work]] and [[/services/website-development|backend efficiency]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|LLM cost optimization and AI platform work]] and [[/services/website-development|backend efficiency]].",
         },
       },
       {

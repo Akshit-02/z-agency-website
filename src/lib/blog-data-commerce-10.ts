@@ -93,7 +93,7 @@ export const commercePosts10: BlogPost[] = [
         ],
         cta: {
           title: "Is your default sort doing your merchandising for you?",
-          description: "ZSpace reviews listing pages, sort logic and product data, and tunes what shoppers see first.",
+          description: "ZSpace Labs reviews listing pages, sort logic and product data, and tunes what shoppers see first.",
         },
       },
       {
@@ -126,7 +126,7 @@ export const commercePosts10: BlogPost[] = [
         ],
         cta: {
           title: "Want listing pages that surface the right products first?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|listing page UX]] and a [[/services/cro-audit|conversion audit]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|listing page UX]] and a [[/services/cro-audit|conversion audit]].",
         },
       },
       {
@@ -214,7 +214,7 @@ export const commercePosts10: BlogPost[] = [
         },
         cta: {
           title: "Shoppers comparing in five open tabs?",
-          description: "ZSpace designs comparison experiences around the attributes your customers actually weigh.",
+          description: "ZSpace Labs designs comparison experiences around the attributes your customers actually weigh.",
         },
       },
       {
@@ -269,7 +269,7 @@ export const commercePosts10: BlogPost[] = [
         ],
         cta: {
           title: "Want comparison that helps shoppers decide?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|ecommerce UX]], [[/services/shopify-development|Shopify implementation]] and [[/services/cro-audit|testing]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|ecommerce UX]], [[/services/shopify-development|Shopify implementation]] and [[/services/cro-audit|testing]].",
         },
       },
       {
@@ -357,7 +357,7 @@ export const commercePosts10: BlogPost[] = [
         ],
         cta: {
           title: "Not sure if quick view helps your shoppers?",
-          description: "ZSpace can test quick view, quick add and direct-to-page journeys on your listing pages.",
+          description: "ZSpace Labs can test quick view, quick add and direct-to-page journeys on your listing pages.",
         },
       },
       {
@@ -399,7 +399,7 @@ export const commercePosts10: BlogPost[] = [
         ],
         cta: {
           title: "Want listing pages that make adding to cart easy?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|ecommerce UX]] and [[/services/cro-audit|A/B testing]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|ecommerce UX]] and [[/services/cro-audit|A/B testing]].",
         },
       },
       {
@@ -499,7 +499,7 @@ export const commercePosts10: BlogPost[] = [
         ],
         cta: {
           title: "Shoppers bouncing between list and product pages?",
-          description: "ZSpace redesigns product cards around the information your shoppers look for before they click.",
+          description: "ZSpace Labs redesigns product cards around the information your shoppers look for before they click.",
         },
       },
       {
@@ -542,7 +542,7 @@ export const commercePosts10: BlogPost[] = [
         ],
         cta: {
           title: "Want product cards that get the right clicks?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|listing page design]] and [[/services/cro-audit|testing card changes]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|listing page design]] and [[/services/cro-audit|testing card changes]].",
         },
       },
       {
@@ -620,7 +620,7 @@ export const commercePosts10: BlogPost[] = [
         ],
         cta: {
           title: "Is your mega menu helping or overwhelming shoppers?",
-          description: "ZSpace tree-tests navigation structures and redesigns menus around how your customers look for products.",
+          description: "ZSpace Labs tree-tests navigation structures and redesigns menus around how your customers look for products.",
         },
       },
       {
@@ -667,7 +667,7 @@ export const commercePosts10: BlogPost[] = [
         },
         cta: {
           title: "Want navigation that leads shoppers to products?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|information architecture and UX]] and [[/services/shopify-development|Shopify menu implementation]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|information architecture and UX]] and [[/services/shopify-development|Shopify menu implementation]].",
         },
       },
       {

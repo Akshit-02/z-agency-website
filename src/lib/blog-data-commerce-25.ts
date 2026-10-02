@@ -69,7 +69,7 @@ export const commercePosts25: BlogPost[] = [
         ],
         cta: {
           title: "Building a skincare brand on Shopify?",
-          description: "ZSpace sets up skincare data models, filters, quizzes and subscriptions on Shopify.",
+          description: "ZSpace Labs sets up skincare data models, filters, quizzes and subscriptions on Shopify.",
         },
       },
       {
@@ -143,7 +143,7 @@ export const commercePosts25: BlogPost[] = [
         ],
         cta: {
           title: "Want a Shopify skincare store that converts?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify development]], [[/services/ui-ux-design|skincare UX]] and [[/services/cro-audit|CRO]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify development]], [[/services/ui-ux-design|skincare UX]] and [[/services/cro-audit|CRO]].",
         },
       },
       {
@@ -208,7 +208,7 @@ export const commercePosts25: BlogPost[] = [
         ],
         cta: {
           title: "Shoppers not finding the right beauty products?",
-          description: "ZSpace redesigns beauty discovery around concerns, ingredients and guided tools.",
+          description: "ZSpace Labs redesigns beauty discovery around concerns, ingredients and guided tools.",
         },
       },
       {
@@ -289,7 +289,7 @@ export const commercePosts25: BlogPost[] = [
         ],
         cta: {
           title: "Want beauty discovery that meets shoppers where they start?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|beauty UX]] and [[/services/cro-audit|discovery audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|beauty UX]] and [[/services/cro-audit|discovery audits]].",
         },
       },
       {
@@ -349,7 +349,7 @@ export const commercePosts25: BlogPost[] = [
         ],
         cta: {
           title: "Planning beauty personalization?",
-          description: "ZSpace designs consented beauty profiles and recommendation logic that customers understand.",
+          description: "ZSpace Labs designs consented beauty profiles and recommendation logic that customers understand.",
         },
       },
       {
@@ -423,7 +423,7 @@ export const commercePosts25: BlogPost[] = [
         ],
         cta: {
           title: "Want personalization customers trust?",
-          description: "Talk to ZSpace about [[/services/cro-audit|personalization testing]], [[/services/ai-automation|recommendation systems]] and [[/services/ui-ux-design|profile UX]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|personalization testing]], [[/services/ai-automation|recommendation systems]] and [[/services/ui-ux-design|profile UX]].",
         },
       },
       {
@@ -482,7 +482,7 @@ export const commercePosts25: BlogPost[] = [
         ],
         cta: {
           title: "Building beauty replenishment?",
-          description: "ZSpace designs subscription offers and portals that keep beauty customers in control.",
+          description: "ZSpace Labs designs subscription offers and portals that keep beauty customers in control.",
         },
       },
       {
@@ -552,7 +552,7 @@ export const commercePosts25: BlogPost[] = [
         ],
         cta: {
           title: "Want subscriptions beauty customers keep?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|subscription UX]], [[/services/shopify-development|Shopify subscriptions]] and [[/services/cro-audit|retention testing]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|subscription UX]], [[/services/shopify-development|Shopify subscriptions]] and [[/services/cro-audit|retention testing]].",
         },
       },
       {
@@ -619,7 +619,7 @@ export const commercePosts25: BlogPost[] = [
         ],
         cta: {
           title: "Planning a beauty website redesign?",
-          description: "ZSpace redesigns beauty stores starting from shopper evidence and a clean product data model.",
+          description: "ZSpace Labs redesigns beauty stores starting from shopper evidence and a clean product data model.",
         },
       },
       {
@@ -700,7 +700,7 @@ export const commercePosts25: BlogPost[] = [
         ],
         cta: {
           title: "Ready to modernize your beauty store?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|beauty redesign]], [[/services/shopify-development|Shopify rebuilds]] and [[/services/cro-audit|baseline audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|beauty redesign]], [[/services/shopify-development|Shopify rebuilds]] and [[/services/cro-audit|baseline audits]].",
         },
       },
       {

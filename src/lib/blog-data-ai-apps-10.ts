@@ -92,7 +92,7 @@ export const aiAppsPosts10: BlogPost[] = [
         ],
         cta: {
           title: "Building AI features that handle personal data?",
-          description: "ZSpace designs privacy-aware AI architecture: minimization, redaction, provider configuration and data flow mapping.",
+          description: "ZSpace Labs designs privacy-aware AI architecture: minimization, redaction, provider configuration and data flow mapping.",
         },
       },
       {
@@ -185,7 +185,7 @@ export const aiAppsPosts10: BlogPost[] = [
         ],
         cta: {
           title: "Want a privacy review of your AI features?",
-          description: "Talk to ZSpace about [[/services/ai-automation|privacy-aware AI development]] and [[/services/website-development|secure data architecture]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|privacy-aware AI development]] and [[/services/website-development|secure data architecture]].",
         },
       },
       {
@@ -268,7 +268,7 @@ export const aiAppsPosts10: BlogPost[] = [
         ],
         cta: {
           title: "Choosing a model or validating an AI feature before launch?",
-          description: "ZSpace builds evaluation datasets and scoring pipelines so model decisions rest on evidence from your own tasks.",
+          description: "ZSpace Labs builds evaluation datasets and scoring pipelines so model decisions rest on evidence from your own tasks.",
         },
       },
       {
@@ -377,7 +377,7 @@ export const aiAppsPosts10: BlogPost[] = [
         ],
         cta: {
           title: "Want evaluation built into your AI delivery?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI evaluation and model selection]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI evaluation and model selection]].",
         },
       },
       {
@@ -460,7 +460,7 @@ export const aiAppsPosts10: BlogPost[] = [
         ],
         cta: {
           title: "AI features in production with no quality visibility?",
-          description: "ZSpace sets up model monitoring with quality sampling, drift detection, cost tracking and alerts tied to business impact.",
+          description: "ZSpace Labs sets up model monitoring with quality sampling, drift detection, cost tracking and alerts tied to business impact.",
         },
       },
       {
@@ -561,7 +561,7 @@ export const aiAppsPosts10: BlogPost[] = [
         ],
         cta: {
           title: "Want to know how your AI is performing today?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI monitoring and operations]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI monitoring and operations]].",
         },
       },
       {
@@ -652,7 +652,7 @@ export const aiAppsPosts10: BlogPost[] = [
         ],
         cta: {
           title: "Stuck between AI pilot and production?",
-          description: "ZSpace takes AI pilots through hardening, integration, security and operations into production systems your teams rely on.",
+          description: "ZSpace Labs takes AI pilots through hardening, integration, security and operations into production systems your teams rely on.",
         },
       },
       {
@@ -763,7 +763,7 @@ export const aiAppsPosts10: BlogPost[] = [
         ],
         cta: {
           title: "Want a clear path from AI experiment to production?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI delivery from POC to production]] and [[/services/website-development|production engineering]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI delivery from POC to production]] and [[/services/website-development|production engineering]].",
         },
       },
       {

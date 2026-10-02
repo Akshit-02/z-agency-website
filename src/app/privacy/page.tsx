@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "How ZSpace collects, uses and protects information submitted through this website.",
+  description: "How ZSpace Labs collects, uses and protects information submitted through this website.",
   alternates: { canonical: "/privacy" },
   robots: { index: true, follow: true },
 };

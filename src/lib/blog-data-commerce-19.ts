@@ -79,7 +79,7 @@ export const commercePosts19: BlogPost[] = [
         ],
         cta: {
           title: "Planning B2B ecommerce?",
-          description: "ZSpace designs B2B ordering around your pricing, approvals and ERP, not a consumer template.",
+          description: "ZSpace Labs designs B2B ordering around your pricing, approvals and ERP, not a consumer template.",
         },
       },
       {
@@ -138,7 +138,7 @@ export const commercePosts19: BlogPost[] = [
         ],
         cta: {
           title: "Ready to move B2B ordering online?",
-          description: "Talk to ZSpace about [[/services/website-development|B2B ecommerce development]], [[/services/shopify-development|Shopify B2B]] and [[/services/ui-ux-design|B2B UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|B2B ecommerce development]], [[/services/shopify-development|Shopify B2B]] and [[/services/ui-ux-design|B2B UX]].",
         },
       },
       {
@@ -215,7 +215,7 @@ export const commercePosts19: BlogPost[] = [
         ],
         cta: {
           title: "B2B customers still ordering by email?",
-          description: "ZSpace researches your buyers' real tasks and designs ordering flows they'll prefer to email.",
+          description: "ZSpace Labs researches your buyers' real tasks and designs ordering flows they'll prefer to email.",
         },
       },
       {
@@ -262,7 +262,7 @@ export const commercePosts19: BlogPost[] = [
         ],
         cta: {
           title: "Want B2B ordering your customers prefer?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|B2B UX]] and [[/services/website-development|B2B ecommerce development]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|B2B UX]] and [[/services/website-development|B2B ecommerce development]].",
         },
       },
       {
@@ -338,7 +338,7 @@ export const commercePosts19: BlogPost[] = [
         ],
         cta: {
           title: "Adding B2B to a consumer brand?",
-          description: "ZSpace helps brands run D2C and wholesale side by side without the two getting in each other's way.",
+          description: "ZSpace Labs helps brands run D2C and wholesale side by side without the two getting in each other's way.",
         },
       },
       {
@@ -366,7 +366,7 @@ export const commercePosts19: BlogPost[] = [
         ],
         cta: {
           title: "Choosing a platform for B2B, B2C or both?",
-          description: "Talk to ZSpace about [[/services/website-development|B2B and B2C commerce]] and [[/services/shopify-development|Shopify B2B]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|B2B and B2C commerce]] and [[/services/shopify-development|Shopify B2B]].",
         },
       },
       {
@@ -431,7 +431,7 @@ export const commercePosts19: BlogPost[] = [
         ],
         cta: {
           title: "Taking wholesale orders by email and spreadsheet?",
-          description: "ZSpace builds wholesale ordering that retailers find faster than your order form.",
+          description: "ZSpace Labs builds wholesale ordering that retailers find faster than your order form.",
         },
       },
       {
@@ -486,7 +486,7 @@ export const commercePosts19: BlogPost[] = [
         ],
         cta: {
           title: "Want a wholesale channel that runs itself?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify B2B and wholesale]] and [[/services/ui-ux-design|wholesale ordering UX]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify B2B and wholesale]] and [[/services/ui-ux-design|wholesale ordering UX]].",
         },
       },
       {

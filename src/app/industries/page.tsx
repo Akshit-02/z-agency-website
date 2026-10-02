@@ -13,7 +13,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Industries We Work With — Technology Built Around Your Business",
   description:
-    "ZSpace designs and builds digital products for real estate, D2C, beauty, fashion, fintech, manufacturing, healthcare, SaaS and more — technology shaped around how each industry actually works.",
+    "ZSpace Labs designs and builds digital products for real estate, D2C, beauty, fashion, fintech, manufacturing, healthcare, SaaS and more — technology shaped around how each industry actually works.",
   alternates: { canonical: "/industries" },
 };
 

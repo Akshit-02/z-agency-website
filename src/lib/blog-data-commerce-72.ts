@@ -108,7 +108,7 @@ export const commercePosts72: BlogPost[] = [
         },
         cta: {
           title: "Are shoppers struggling to find the right equipment?",
-          description: "ZSpace can audit your fitness catalog data and discovery paths and design filters and entry points around how your customers actually shop.",
+          description: "ZSpace Labs can audit your fitness catalog data and discovery paths and design filters and entry points around how your customers actually shop.",
         },
       },
       {
@@ -182,7 +182,7 @@ export const commercePosts72: BlogPost[] = [
         ],
         cta: {
           title: "Want a fitness store that's easier to shop?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|fitness ecommerce UX]], [[/services/shopify-development|Shopify fitness stores]] and [[/services/cro-audit|discovery and conversion audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|fitness ecommerce UX]], [[/services/shopify-development|Shopify fitness stores]] and [[/services/cro-audit|discovery and conversion audits]].",
         },
       },
       {
@@ -268,7 +268,7 @@ export const commercePosts72: BlogPost[] = [
         ],
         cta: {
           title: "Want personalization that understands your athletes?",
-          description: "ZSpace can design sport, level and fit data models and the rules that turn them into useful store experiences.",
+          description: "ZSpace Labs can design sport, level and fit data models and the rules that turn them into useful store experiences.",
         },
       },
       {
@@ -340,7 +340,7 @@ export const commercePosts72: BlogPost[] = [
         ],
         cta: {
           title: "Ready to personalize your sports store?",
-          description: "Talk to ZSpace about [[/services/shopify-development|sports ecommerce on Shopify]], [[/services/ai-automation|recommendations and personalization]] and [[/services/cro-audit|conversion testing]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|sports ecommerce on Shopify]], [[/services/ai-automation|recommendations and personalization]] and [[/services/cro-audit|conversion testing]].",
         },
       },
       {
@@ -482,7 +482,7 @@ export const commercePosts72: BlogPost[] = [
         ],
         cta: {
           title: "Thinking about building your own recommendation engine?",
-          description: "ZSpace can assess your data, compare platform, vendor and custom options, and design an architecture you can measure and maintain.",
+          description: "ZSpace Labs can assess your data, compare platform, vendor and custom options, and design an architecture you can measure and maintain.",
         },
       },
       {
@@ -560,7 +560,7 @@ export const commercePosts72: BlogPost[] = [
         ],
         cta: {
           title: "Ready to make recommendations measurable?",
-          description: "Talk to ZSpace about [[/services/ai-automation|recommendation engines and AI personalization]], [[/services/website-development|event tracking and APIs]] and [[/services/shopify-development|Shopify recommendations]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|recommendation engines and AI personalization]], [[/services/website-development|event tracking and APIs]] and [[/services/shopify-development|Shopify recommendations]].",
         },
       },
       {

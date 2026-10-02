@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "Terms governing the use of the ZSpace website.",
+  description: "Terms governing the use of the ZSpace Labs website.",
   alternates: { canonical: "/terms" },
   robots: { index: true, follow: true },
 };
@@ -21,7 +21,7 @@ export default function TermsPage() {
           <section>
             <h2 className="mb-2 font-display text-[1.2rem] font-medium text-ink">Use of this site</h2>
             <p>
-              This website is provided by ZSpace to share information about
+              This website is provided by ZSpace Labs to share information about
               our services and to allow prospective clients to get in touch.
               Content on this site should not be treated as a binding offer
               or contractual commitment.
@@ -31,7 +31,7 @@ export default function TermsPage() {
           <section>
             <h2 className="mb-2 font-display text-[1.2rem] font-medium text-ink">Project engagements</h2>
             <p>
-              Any actual services provided by ZSpace are governed by a
+              Any actual services provided by ZSpace Labs are governed by a
               separate written agreement or statement of work signed by both
               parties, not by the contents of this website.
             </p>
@@ -41,7 +41,7 @@ export default function TermsPage() {
             <h2 className="mb-2 font-display text-[1.2rem] font-medium text-ink">Intellectual property</h2>
             <p>
               The design, branding and written content of this site are the
-              property of ZSpace and may not be reproduced without
+              property of ZSpace Labs and may not be reproduced without
               permission.
             </p>
           </section>

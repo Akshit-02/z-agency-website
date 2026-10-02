@@ -100,7 +100,7 @@ export const commercePosts8: BlogPost[] = [
         },
         cta: {
           title: "Planning a redesign for a growing store?",
-          description: "ZSpace runs ecommerce redesigns from baseline and research through structure, design and a measured launch.",
+          description: "ZSpace Labs runs ecommerce redesigns from baseline and research through structure, design and a measured launch.",
         },
       },
       {
@@ -185,7 +185,7 @@ export const commercePosts8: BlogPost[] = [
         ],
         cta: {
           title: "Want a redesign measured on results, not looks?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|ecommerce UX and design]], [[/services/website-development|development]] and [[/services/shopify-development|Shopify builds]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|ecommerce UX and design]], [[/services/website-development|development]] and [[/services/shopify-development|Shopify builds]].",
         },
       },
       {
@@ -283,7 +283,7 @@ export const commercePosts8: BlogPost[] = [
         ],
         cta: {
           title: "Evaluating ecommerce partners?",
-          description: "ZSpace is happy to walk you through how we'd approach your requirements, including where we'd recommend native features over custom work.",
+          description: "ZSpace Labs is happy to walk you through how we'd approach your requirements, including where we'd recommend native features over custom work.",
         },
       },
       {
@@ -353,7 +353,7 @@ export const commercePosts8: BlogPost[] = [
         ],
         cta: {
           title: "Looking for an ecommerce development partner?",
-          description: "Talk to ZSpace about [[/services/website-development|ecommerce development]], [[/services/shopify-development|Shopify]] and [[/services/ui-ux-design|ecommerce UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|ecommerce development]], [[/services/shopify-development|Shopify]] and [[/services/ui-ux-design|ecommerce UX]].",
         },
       },
       {
@@ -464,7 +464,7 @@ export const commercePosts8: BlogPost[] = [
         },
         cta: {
           title: "Working out the right model for your store?",
-          description: "ZSpace works as a full partner, as specialist support for in-house teams, or on a project basis.",
+          description: "ZSpace Labs works as a full partner, as specialist support for in-house teams, or on a project basis.",
         },
       },
       {
@@ -520,7 +520,7 @@ export const commercePosts8: BlogPost[] = [
         ],
         cta: {
           title: "Need a partner that fits alongside your team?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify development]], [[/services/ui-ux-design|design]] and [[/services/cro-audit|CRO]] for brands with or without in-house teams.",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify development]], [[/services/ui-ux-design|design]] and [[/services/cro-audit|CRO]] for brands with or without in-house teams.",
         },
       },
       {
@@ -632,7 +632,7 @@ export const commercePosts8: BlogPost[] = [
         },
         cta: {
           title: "Conversion falling and no clear cause?",
-          description: "ZSpace runs structured conversion diagnostics: data checks, segmentation, funnel analysis and research, then a prioritized plan.",
+          description: "ZSpace Labs runs structured conversion diagnostics: data checks, segmentation, funnel analysis and research, then a prioritized plan.",
         },
       },
       {
@@ -679,7 +679,7 @@ export const commercePosts8: BlogPost[] = [
         ],
         cta: {
           title: "Want a clear answer to why your store isn't converting?",
-          description: "Talk to ZSpace about a [[/services/cro-audit|CRO audit]], [[/services/ui-ux-design|UX research]] and [[/services/website-development|technical fixes]].",
+          description: "Talk to ZSpace Labs about a [[/services/cro-audit|CRO audit]], [[/services/ui-ux-design|UX research]] and [[/services/website-development|technical fixes]].",
         },
       },
       {

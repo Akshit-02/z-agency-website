@@ -82,7 +82,7 @@ export const webDevPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Building a fintech website that needs to earn real trust?",
-          description: "ZSpace builds fintech websites with security and clarity treated as core requirements, not an afterthought layered on top of marketing design.",
+          description: "ZSpace Labs builds fintech websites with security and clarity treated as core requirements, not an afterthought layered on top of marketing design.",
         },
       },
       {
@@ -184,7 +184,7 @@ export const webDevPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Building a technology company website that serves technical buyers?",
-          description: "ZSpace builds technology and product websites with accurate architecture explanation and integration detail, not just marketing polish.",
+          description: "ZSpace Labs builds technology and product websites with accurate architecture explanation and integration detail, not just marketing polish.",
         },
       },
       {
@@ -280,7 +280,7 @@ export const webDevPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Building a website that reflects your firm's actual expertise?",
-          description: "ZSpace builds consulting websites structured around genuine credibility — case studies, thought leadership and a low-friction path to conversation.",
+          description: "ZSpace Labs builds consulting websites structured around genuine credibility — case studies, thought leadership and a low-friction path to conversation.",
         },
       },
       {
@@ -378,7 +378,7 @@ export const webDevPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Traffic isn't the problem, but leads still aren't coming?",
-          description: "ZSpace can review your site's funnel and identify exactly where visitors are dropping off before they convert.",
+          description: "ZSpace Labs can review your site's funnel and identify exactly where visitors are dropping off before they convert.",
         },
       },
       {
@@ -418,7 +418,7 @@ export const webDevPosts5: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Want a structured diagnosis instead of guessing at fixes?",
-          description: "See ZSpace's [[/blogs/shopify-cro-audit|CRO audit framework]] for the full evidence-based diagnostic process this connects to.",
+          description: "See ZSpace Labs' [[/blogs/shopify-cro-audit|CRO audit framework]] for the full evidence-based diagnostic process this connects to.",
         },
       },
       {
@@ -504,7 +504,7 @@ export const webDevPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Not sure what's actually causing your site to feel slow?",
-          description: "ZSpace can audit both lab and real-user performance data and identify the specific, prioritized cause — not just apply a generic fix list.",
+          description: "ZSpace Labs can audit both lab and real-user performance data and identify the specific, prioritized cause — not just apply a generic fix list.",
         },
       },
       {
@@ -631,7 +631,7 @@ export const webDevPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Not sure which specific factor is suppressing your conversion rate?",
-          description: "ZSpace can review your funnel data and session behavior to pinpoint the actual cause, not just apply generic conversion tips.",
+          description: "ZSpace Labs can review your funnel data and session behavior to pinpoint the actual cause, not just apply generic conversion tips.",
         },
       },
       {
@@ -660,7 +660,7 @@ export const webDevPosts5: BlogPost[] = [
       {
         heading: "Funnel Analysis",
         body: [
-          "Start with your analytics funnel to find exactly where visitors are dropping off, then investigate that specific stage rather than reviewing the entire site broadly — this is the same structured approach behind ZSpace's [[/blogs/shopify-cro-audit|CRO audit framework]].",
+          "Start with your analytics funnel to find exactly where visitors are dropping off, then investigate that specific stage rather than reviewing the entire site broadly — this is the same structured approach behind ZSpace Labs' [[/blogs/shopify-cro-audit|CRO audit framework]].",
         ],
         table: webDevFrameworkTable,
         cta: {

@@ -83,7 +83,7 @@ export const aiAppsPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Building an app that needs to understand photos, documents or voice?",
-          description: "ZSpace designs and builds multimodal AI applications, from capture UX to model pipelines and evaluation.",
+          description: "ZSpace Labs designs and builds multimodal AI applications, from capture UX to model pipelines and evaluation.",
         },
       },
       {
@@ -195,7 +195,7 @@ export const aiAppsPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Planning a multimodal AI product?",
-          description: "Talk to ZSpace about [[/services/ai-automation|multimodal AI development]], [[/services/mobile-app-development|mobile capture apps]] and [[/services/website-development|web platforms]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|multimodal AI development]], [[/services/mobile-app-development|mobile capture apps]] and [[/services/website-development|web platforms]].",
         },
       },
       {
@@ -276,7 +276,7 @@ export const aiAppsPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Have an inspection, counting or recognition problem?",
-          description: "ZSpace builds computer vision applications from data collection and model selection to edge or cloud deployment.",
+          description: "ZSpace Labs builds computer vision applications from data collection and model selection to edge or cloud deployment.",
         },
       },
       {
@@ -383,7 +383,7 @@ export const aiAppsPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Planning a computer vision project?",
-          description: "Talk to ZSpace about [[/services/ai-automation|computer vision development]] and [[/services/mobile-app-development|on-device AI apps]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|computer vision development]] and [[/services/mobile-app-development|on-device AI apps]].",
         },
       },
       {
@@ -464,7 +464,7 @@ export const aiAppsPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Need a recognition model for your products or processes?",
-          description: "ZSpace builds image classification and detection systems, from annotation guidelines to deployment and retraining.",
+          description: "ZSpace Labs builds image classification and detection systems, from annotation guidelines to deployment and retraining.",
         },
       },
       {
@@ -570,7 +570,7 @@ export const aiAppsPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build a recognition system?",
-          description: "Talk to ZSpace about [[/services/ai-automation|image recognition development]] and [[/services/mobile-app-development|camera-based apps]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|image recognition development]] and [[/services/mobile-app-development|camera-based apps]].",
         },
       },
       {
@@ -661,7 +661,7 @@ export const aiAppsPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want personalization that serves your product's goals?",
-          description: "ZSpace builds recommendation systems for content, learning, SaaS and marketplace products, from event tracking to ranking and experiments.",
+          description: "ZSpace Labs builds recommendation systems for content, learning, SaaS and marketplace products, from event tracking to ranking and experiments.",
         },
       },
       {
@@ -764,7 +764,7 @@ export const aiAppsPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Planning recommendations for your platform?",
-          description: "Talk to ZSpace about [[/services/ai-automation|recommendation system development]], [[/services/website-development|web platforms]] and [[/services/mobile-app-development|mobile apps]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|recommendation system development]], [[/services/website-development|web platforms]] and [[/services/mobile-app-development|mobile apps]].",
         },
       },
       {

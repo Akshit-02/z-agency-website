@@ -101,7 +101,7 @@ export const commercePosts26: BlogPost[] = [
         ],
         cta: {
           title: "Building an online food store?",
-          description: "ZSpace builds food ecommerce around accurate product data, delivery rules and the operations behind them.",
+          description: "ZSpace Labs builds food ecommerce around accurate product data, delivery rules and the operations behind them.",
         },
       },
       {
@@ -199,7 +199,7 @@ export const commercePosts26: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build your food ecommerce platform?",
-          description: "Talk to ZSpace about [[/services/website-development|food ecommerce development]], [[/services/shopify-development|Shopify food stores]] and [[/services/ui-ux-design|food UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|food ecommerce development]], [[/services/shopify-development|Shopify food stores]] and [[/services/ui-ux-design|food UX]].",
         },
       },
       {
@@ -275,7 +275,7 @@ export const commercePosts26: BlogPost[] = [
         ],
         cta: {
           title: "Grocery shoppers abandoning halfway through the basket?",
-          description: "ZSpace researches weekly-shop behavior and redesigns grocery journeys for speed and trust.",
+          description: "ZSpace Labs researches weekly-shop behavior and redesigns grocery journeys for speed and trust.",
         },
       },
       {
@@ -362,7 +362,7 @@ export const commercePosts26: BlogPost[] = [
         ],
         cta: {
           title: "Want a grocery experience shoppers use every week?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|grocery UX]], [[/services/mobile-app-development|grocery apps]] and [[/services/cro-audit|grocery CRO]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|grocery UX]], [[/services/mobile-app-development|grocery apps]] and [[/services/cro-audit|grocery CRO]].",
         },
       },
       {
@@ -427,7 +427,7 @@ export const commercePosts26: BlogPost[] = [
         ],
         cta: {
           title: "Shoppers taking too long to fill a grocery basket?",
-          description: "ZSpace redesigns grocery discovery around lists, aisles and search for faster weekly shops.",
+          description: "ZSpace Labs redesigns grocery discovery around lists, aisles and search for faster weekly shops.",
         },
       },
       {
@@ -514,7 +514,7 @@ export const commercePosts26: BlogPost[] = [
         ],
         cta: {
           title: "Want grocery discovery that saves shoppers time?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|grocery UX]] and [[/services/cro-audit|discovery audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|grocery UX]] and [[/services/cro-audit|discovery audits]].",
         },
       },
       {

@@ -102,7 +102,7 @@ export const aiAppsPosts1: BlogPost[] = [
         ],
         cta: {
           title: "Planning to bring AI into your engineering workflow?",
-          description: "ZSpace helps teams choose tools, set guardrails and pilot AI-assisted development on real projects, alongside our own AI-assisted delivery.",
+          description: "ZSpace Labs helps teams choose tools, set guardrails and pilot AI-assisted development on real projects, alongside our own AI-assisted delivery.",
         },
       },
       {
@@ -217,7 +217,7 @@ export const aiAppsPosts1: BlogPost[] = [
         ],
         cta: {
           title: "Want an AI-assisted engineering setup that stays safe?",
-          description: "Talk to ZSpace about [[/services/website-development|AI-assisted software development]], [[/services/mobile-app-development|mobile engineering]] and [[/services/ai-automation|AI workflow integration]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|AI-assisted software development]], [[/services/mobile-app-development|mobile engineering]] and [[/services/ai-automation|AI workflow integration]].",
         },
       },
       {
@@ -313,7 +313,7 @@ export const aiAppsPosts1: BlogPost[] = [
         },
         cta: {
           title: "Want coding agents working on your backlog safely?",
-          description: "ZSpace can set up agent workflows, repository instructions, CI guardrails and review practices on your codebase.",
+          description: "ZSpace Labs can set up agent workflows, repository instructions, CI guardrails and review practices on your codebase.",
         },
       },
       {
@@ -422,7 +422,7 @@ export const aiAppsPosts1: BlogPost[] = [
         ],
         cta: {
           title: "Planning an agentic development workflow?",
-          description: "Talk to ZSpace about [[/services/website-development|AI-assisted development]] and [[/services/ai-automation|agent workflow design]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|AI-assisted development]] and [[/services/ai-automation|agent workflow design]].",
         },
       },
       {
@@ -516,7 +516,7 @@ export const aiAppsPosts1: BlogPost[] = [
         },
         cta: {
           title: "Deciding how far to go with AI in your team?",
-          description: "ZSpace can help define which tasks to assist, which to delegate to agents, and the guardrails each needs.",
+          description: "ZSpace Labs can help define which tasks to assist, which to delegate to agents, and the guardrails each needs.",
         },
       },
       {
@@ -627,7 +627,7 @@ export const aiAppsPosts1: BlogPost[] = [
         ],
         cta: {
           title: "Want a practical AI coding setup for your team?",
-          description: "Talk to ZSpace about [[/services/website-development|AI-assisted development practices]] and [[/services/ai-automation|agentic workflows]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|AI-assisted development practices]] and [[/services/ai-automation|agentic workflows]].",
         },
       },
       {
@@ -709,7 +709,7 @@ export const aiAppsPosts1: BlogPost[] = [
         ],
         cta: {
           title: "More pull requests than reviewers can handle?",
-          description: "ZSpace can set up AI review alongside your existing checks, tuned to your conventions and measured for usefulness.",
+          description: "ZSpace Labs can set up AI review alongside your existing checks, tuned to your conventions and measured for usefulness.",
         },
       },
       {
@@ -830,7 +830,7 @@ export const aiAppsPosts1: BlogPost[] = [
         ],
         cta: {
           title: "Want review that keeps up with AI-generated code?",
-          description: "Talk to ZSpace about [[/services/website-development|engineering quality practices]] and [[/services/ai-automation|AI tooling in CI]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|engineering quality practices]] and [[/services/ai-automation|AI tooling in CI]].",
         },
       },
       {

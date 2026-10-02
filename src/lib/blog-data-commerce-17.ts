@@ -93,7 +93,7 @@ export const commercePosts17: BlogPost[] = [
         ],
         cta: {
           title: "Planning a subscription offer?",
-          description: "ZSpace designs subscription offers, portals and billing flows that keep customers in control and coming back.",
+          description: "ZSpace Labs designs subscription offers, portals and billing flows that keep customers in control and coming back.",
         },
       },
       {
@@ -209,7 +209,7 @@ export const commercePosts17: BlogPost[] = [
         ],
         cta: {
           title: "Building or improving a subscription store?",
-          description: "Talk to ZSpace about [[/services/website-development|subscription commerce development]], [[/services/shopify-development|Shopify subscriptions]] and [[/services/ui-ux-design|portal UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|subscription commerce development]], [[/services/shopify-development|Shopify subscriptions]] and [[/services/ui-ux-design|portal UX]].",
         },
       },
       {
@@ -294,7 +294,7 @@ export const commercePosts17: BlogPost[] = [
         ],
         cta: {
           title: "Setting up subscriptions on Shopify?",
-          description: "ZSpace configures subscription apps, themes and customer accounts so subscribers can manage everything themselves.",
+          description: "ZSpace Labs configures subscription apps, themes and customer accounts so subscribers can manage everything themselves.",
         },
       },
       {
@@ -391,7 +391,7 @@ export const commercePosts17: BlogPost[] = [
         ],
         cta: {
           title: "Want subscriptions your customers are happy to keep?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify subscriptions]] and [[/services/ui-ux-design|subscription UX]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify subscriptions]] and [[/services/ui-ux-design|subscription UX]].",
         },
       },
       {
@@ -498,7 +498,7 @@ export const commercePosts17: BlogPost[] = [
         },
         cta: {
           title: "Subscribers cancelling when they only needed a break?",
-          description: "ZSpace redesigns subscription portals and flows so customers find the right option themselves.",
+          description: "ZSpace Labs redesigns subscription portals and flows so customers find the right option themselves.",
         },
       },
       {
@@ -546,7 +546,7 @@ export const commercePosts17: BlogPost[] = [
         ],
         cta: {
           title: "Want a subscription experience customers trust?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|subscription UX]], [[/services/shopify-development|Shopify subscriptions]] and [[/services/cro-audit|retention testing]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|subscription UX]], [[/services/shopify-development|Shopify subscriptions]] and [[/services/cro-audit|retention testing]].",
         },
       },
       {

@@ -124,7 +124,7 @@ export const commercePosts57: BlogPost[] = [
         },
         cta: {
           title: "Tests that never reach a clear answer?",
-          description: "ZSpace reviews test design, sample sizes and tracking so experiments produce results you can act on.",
+          description: "ZSpace Labs reviews test design, sample sizes and tracking so experiments produce results you can act on.",
         },
       },
       {
@@ -234,7 +234,7 @@ export const commercePosts57: BlogPost[] = [
         ],
         cta: {
           title: "Ready to standardize how you test?",
-          description: "Talk to ZSpace about [[/services/cro-audit|experimentation audits]], [[/services/website-development|test implementation]] and [[/services/ui-ux-design|variant design]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|experimentation audits]], [[/services/website-development|test implementation]] and [[/services/ui-ux-design|variant design]].",
         },
       },
       {
@@ -333,7 +333,7 @@ export const commercePosts57: BlogPost[] = [
         },
         cta: {
           title: "Unsure how to read your test results?",
-          description: "ZSpace reviews experiment statistics and reporting so decisions reflect what the data can support.",
+          description: "ZSpace Labs reviews experiment statistics and reporting so decisions reflect what the data can support.",
         },
       },
       {
@@ -434,7 +434,7 @@ export const commercePosts57: BlogPost[] = [
         ],
         cta: {
           title: "Ready to make test results trustworthy?",
-          description: "Talk to ZSpace about [[/services/cro-audit|experimentation reviews]], [[/services/ui-ux-design|hypothesis-led design]] and [[/services/website-development|test implementation]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|experimentation reviews]], [[/services/ui-ux-design|hypothesis-led design]] and [[/services/website-development|test implementation]].",
         },
       },
       {
@@ -528,7 +528,7 @@ export const commercePosts57: BlogPost[] = [
         },
         cta: {
           title: "Backlog ordered by opinion?",
-          description: "ZSpace builds evidence-led testing backlogs with scoring your team can apply consistently.",
+          description: "ZSpace Labs builds evidence-led testing backlogs with scoring your team can apply consistently.",
         },
       },
       {
@@ -627,7 +627,7 @@ export const commercePosts57: BlogPost[] = [
         ],
         cta: {
           title: "Ready to decide what to test next?",
-          description: "Talk to ZSpace about [[/services/cro-audit|CRO audits and testing backlogs]], [[/services/ui-ux-design|test design]] and [[/services/website-development|test implementation]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|CRO audits and testing backlogs]], [[/services/ui-ux-design|test design]] and [[/services/website-development|test implementation]].",
         },
       },
       {
@@ -721,7 +721,7 @@ export const commercePosts57: BlogPost[] = [
         },
         cta: {
           title: "Product page tests that don't move anything?",
-          description: "ZSpace designs research-led product page experiments with the right metrics and guardrails.",
+          description: "ZSpace Labs designs research-led product page experiments with the right metrics and guardrails.",
         },
       },
       {
@@ -803,7 +803,7 @@ export const commercePosts57: BlogPost[] = [
         ],
         cta: {
           title: "Ready to test product pages properly?",
-          description: "Talk to ZSpace about [[/services/cro-audit|product page CRO audits]], [[/services/ui-ux-design|variant design]] and [[/services/shopify-development|Shopify test implementation]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|product page CRO audits]], [[/services/ui-ux-design|variant design]] and [[/services/shopify-development|Shopify test implementation]].",
         },
       },
       {

@@ -89,7 +89,7 @@ export const aiOpsPosts5: BlogPost[] = [
         },
         cta: {
           title: "Need to explain where your AI's answers come from?",
-          description: "ZSpace builds lineage and traceability into AI data pipelines and applications. See [[/services/ai-automation|AI development services]].",
+          description: "ZSpace Labs builds lineage and traceability into AI data pipelines and applications. See [[/services/ai-automation|AI development services]].",
         },
       },
       {
@@ -172,7 +172,7 @@ export const aiOpsPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Preparing for AI audits or regulatory questions?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI traceability]]: lineage, versioning and evidence for governance.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI traceability]]: lineage, versioning and evidence for governance.",
         },
       },
       {
@@ -259,7 +259,7 @@ export const aiOpsPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Does your AI need fresher data?",
-          description: "ZSpace designs real-time and batch data flows for AI features based on the freshness each use case truly needs. See [[/services/ai-automation|AI engineering services]].",
+          description: "ZSpace Labs designs real-time and batch data flows for AI features based on the freshness each use case truly needs. See [[/services/ai-automation|AI engineering services]].",
         },
       },
       {
@@ -336,7 +336,7 @@ export const aiOpsPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Weighing streaming against batch for an AI use case?",
-          description: "Talk to ZSpace about [[/services/ai-automation|real-time data architecture]] that keeps complexity proportional to the need.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|real-time data architecture]] that keeps complexity proportional to the need.",
         },
       },
       {
@@ -429,7 +429,7 @@ export const aiOpsPosts5: BlogPost[] = [
         },
         cta: {
           title: "Launching an AI feature with access to real data or tools?",
-          description: "ZSpace runs defensive AI security reviews and red team exercises for AI applications. See [[/services/ai-automation|our AI development services]].",
+          description: "ZSpace Labs runs defensive AI security reviews and red team exercises for AI applications. See [[/services/ai-automation|our AI development services]].",
         },
       },
       {
@@ -508,7 +508,7 @@ export const aiOpsPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Want an independent look at your AI application's security?",
-          description: "Talk to ZSpace about an [[/services/ai-automation|AI security assessment]] covering injection, tools, data exposure and remediation.",
+          description: "Talk to ZSpace Labs about an [[/services/ai-automation|AI security assessment]] covering injection, tools, data exposure and remediation.",
         },
       },
       {
@@ -593,7 +593,7 @@ export const aiOpsPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Building an assistant that reads email, documents or the web?",
-          description: "ZSpace designs AI architectures with trust boundaries and confirmation flows that contain injection risk. See [[/services/ai-automation|AI development services]].",
+          description: "ZSpace Labs designs AI architectures with trust boundaries and confirmation flows that contain injection risk. See [[/services/ai-automation|AI development services]].",
         },
       },
       {
@@ -678,7 +678,7 @@ export const aiOpsPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Want your assistant tested against injected content?",
-          description: "Talk to ZSpace about an [[/services/ai-automation|AI security review]] focused on retrieval, browsing, email and tool risks.",
+          description: "Talk to ZSpace Labs about an [[/services/ai-automation|AI security review]] focused on retrieval, browsing, email and tool risks.",
         },
       },
       {

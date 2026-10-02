@@ -86,7 +86,7 @@ export const mobilePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Integrating your app with backend and third-party systems?",
-          description: "ZSpace builds reliable API integrations with proper authentication, error handling and monitoring.",
+          description: "ZSpace Labs builds reliable API integrations with proper authentication, error handling and monitoring.",
         },
       },
       {
@@ -114,7 +114,7 @@ export const mobilePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want your app's API layer reviewed?",
-          description: "Talk to ZSpace about making your integrations more reliable on real devices and networks.",
+          description: "Talk to ZSpace Labs about making your integrations more reliable on real devices and networks.",
         },
       },
       {
@@ -187,7 +187,7 @@ export const mobilePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Designing or redesigning an app?",
-          description: "ZSpace's UI/UX design team works alongside our developers, so the experience you design is the one that ships.",
+          description: "ZSpace Labs' UI/UX design team works alongside our developers, so the experience you design is the one that ships.",
         },
       },
       {
@@ -224,17 +224,17 @@ export const mobilePosts3: BlogPost[] = [
       {
         heading: "Measuring UX",
         body: [
-          "Instrument key flows, watch where users drop off, and run usability tests on real devices. UX improvements should be measured like any other product change, the same discipline behind ZSpace's [[/services/cro-audit|conversion work]]. Speed is part of UX too; see [[/blogs/mobile-app-performance-optimization|app performance]].",
+          "Instrument key flows, watch where users drop off, and run usability tests on real devices. UX improvements should be measured like any other product change, the same discipline behind ZSpace Labs' [[/services/cro-audit|conversion work]]. Speed is part of UX too; see [[/blogs/mobile-app-performance-optimization|app performance]].",
         ],
         cta: {
           title: "Want your app's UX reviewed?",
-          description: "Talk to ZSpace about a review of your key flows, states and accessibility on real devices.",
+          description: "Talk to ZSpace Labs about a review of your key flows, states and accessibility on real devices.",
         },
       },
       {
         heading: "Conclusion",
         body: [
-          "Mobile UX is the sum of many small decisions: short flows, familiar navigation, generous touch targets, helpful feedback, designed states and real accessibility. Ground them in research and platform guidelines, then measure. For professional support, see ZSpace's [[/services/ui-ux-design|UI/UX design]] service. For how this fits the whole build, see [[/blogs/mobile-app-development-guide|the mobile app development guide]]. For the broader discipline and testing methods, see the [[/blogs/ui-ux-design-guide|UI/UX design guide]] and [[/blogs/usability-testing|usability testing]].",
+          "Mobile UX is the sum of many small decisions: short flows, familiar navigation, generous touch targets, helpful feedback, designed states and real accessibility. Ground them in research and platform guidelines, then measure. For professional support, see ZSpace Labs' [[/services/ui-ux-design|UI/UX design]] service. For how this fits the whole build, see [[/blogs/mobile-app-development-guide|the mobile app development guide]]. For the broader discipline and testing methods, see the [[/blogs/ui-ux-design-guide|UI/UX design guide]] and [[/blogs/usability-testing|usability testing]].",
         ],
       },
     ],
@@ -311,7 +311,7 @@ export const mobilePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Is your app feeling slow?",
-          description: "ZSpace can profile your app on real devices and identify the specific bottlenecks worth fixing first.",
+          description: "ZSpace Labs can profile your app on real devices and identify the specific bottlenecks worth fixing first.",
         },
       },
       {
@@ -340,7 +340,7 @@ export const mobilePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want performance monitoring set up properly?",
-          description: "Talk to ZSpace about the metrics and tooling that show how your app actually performs for users.",
+          description: "Talk to ZSpace Labs about the metrics and tooling that show how your app actually performs for users.",
         },
       },
       {
@@ -428,7 +428,7 @@ export const mobilePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Preparing an app for launch?",
-          description: "ZSpace can plan and run pre-launch QA across devices, performance, security and accessibility.",
+          description: "ZSpace Labs can plan and run pre-launch QA across devices, performance, security and accessibility.",
         },
       },
       {
@@ -466,7 +466,7 @@ export const mobilePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want a second pair of eyes before submission?",
-          description: "Talk to ZSpace about a pre-launch QA review for your app.",
+          description: "Talk to ZSpace Labs about a pre-launch QA review for your app.",
         },
       },
       {
@@ -552,7 +552,7 @@ export const mobilePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Need ongoing support for your app?",
-          description: "ZSpace stays involved after launch to handle updates, OS changes, store requirements and new features.",
+          description: "ZSpace Labs stays involved after launch to handle updates, OS changes, store requirements and new features.",
         },
       },
       {
@@ -589,7 +589,7 @@ export const mobilePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want a maintenance plan for your app?",
-          description: "Talk to ZSpace about [[/services/mobile-app-development|mobile app development]] support that continues well past launch.",
+          description: "Talk to ZSpace Labs about [[/services/mobile-app-development|mobile app development]] support that continues well past launch.",
         },
       },
       {

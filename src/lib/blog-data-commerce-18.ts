@@ -87,7 +87,7 @@ export const commercePosts18: BlogPost[] = [
         ],
         cta: {
           title: "Planning a marketplace?",
-          description: "ZSpace helps founders scope a launchable first version: the model, the must-have seller and buyer tools, and the right platform or build.",
+          description: "ZSpace Labs helps founders scope a launchable first version: the model, the must-have seller and buyer tools, and the right platform or build.",
         },
       },
       {
@@ -250,7 +250,7 @@ export const commercePosts18: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build your marketplace?",
-          description: "Talk to ZSpace about [[/services/website-development|marketplace development]], [[/services/ui-ux-design|buyer and seller UX]] and [[/services/ai-automation|operations automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|marketplace development]], [[/services/ui-ux-design|buyer and seller UX]] and [[/services/ai-automation|operations automation]].",
         },
       },
       {
@@ -366,7 +366,7 @@ export const commercePosts18: BlogPost[] = [
         ],
         cta: {
           title: "Store, marketplace or both?",
-          description: "ZSpace helps businesses choose the model and build the platform that fits it.",
+          description: "ZSpace Labs helps businesses choose the model and build the platform that fits it.",
         },
       },
       {
@@ -454,7 +454,7 @@ export const commercePosts18: BlogPost[] = [
         ],
         cta: {
           title: "Planning your platform?",
-          description: "Talk to ZSpace about [[/services/website-development|marketplace and ecommerce development]] and [[/services/shopify-development|Shopify stores]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|marketplace and ecommerce development]] and [[/services/shopify-development|Shopify stores]].",
         },
       },
       {
@@ -533,7 +533,7 @@ export const commercePosts18: BlogPost[] = [
         ],
         cta: {
           title: "Designing a marketplace?",
-          description: "ZSpace researches and designs buyer, seller and operator experiences as one connected product.",
+          description: "ZSpace Labs researches and designs buyer, seller and operator experiences as one connected product.",
         },
       },
       {
@@ -629,7 +629,7 @@ export const commercePosts18: BlogPost[] = [
         },
         cta: {
           title: "Want a marketplace people on both sides want to use?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|marketplace UX]] and [[/services/website-development|marketplace development]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|marketplace UX]] and [[/services/website-development|marketplace development]].",
         },
       },
       {

@@ -103,7 +103,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want these items checked against your actual store data, not just visually?",
-          description: "ZSpace runs a full evidence-based audit — funnel data, session recordings and page-level checks — and prioritizes findings by impact, confidence and effort.",
+          description: "ZSpace Labs runs a full evidence-based audit — funnel data, session recordings and page-level checks — and prioritizes findings by impact, confidence and effort.",
         },
       },
       {
@@ -255,7 +255,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         },
         cta: {
           title: "Want to know which of these actually apply to your store?",
-          description: "ZSpace can confirm which tips address real, evidenced problems on your store versus which don't apply — through a structured [[/blogs/shopify-cro-audit|CRO audit]].",
+          description: "ZSpace Labs can confirm which tips address real, evidenced problems on your store versus which don't apply — through a structured [[/blogs/shopify-cro-audit|CRO audit]].",
         },
       },
       {
@@ -265,14 +265,14 @@ export const shopifyCroPosts3: BlogPost[] = [
         ],
       },
       {
-        heading: "The ZSpace CRO Audit Framework",
+        heading: "The ZSpace Labs CRO Audit Framework",
         body: [
           "Tips work best applied against a confirmed problem, not speculatively. The [[/blogs/shopify-cro-audit|complete Shopify CRO audit]] walks through measuring, diagnosing and prioritizing before implementing any specific change.",
         ],
         table: croAuditFrameworkTable,
         cta: {
           title: "Want a professional audit before testing these tips?",
-          description: "ZSpace can identify which of these tactics addresses a real, evidenced problem on your specific store, and in what order.",
+          description: "ZSpace Labs can identify which of these tactics addresses a real, evidenced problem on your specific store, and in what order.",
         },
       },
       {
@@ -368,7 +368,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Recognize a few of these on your store?",
-          description: "ZSpace can confirm which of these mistakes are actually costing you conversions — and prioritize the fixes by impact, confidence and effort.",
+          description: "ZSpace Labs can confirm which of these mistakes are actually costing you conversions — and prioritize the fixes by impact, confidence and effort.",
         },
       },
       {
@@ -470,7 +470,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Not sure which symptom actually matches your data?",
-          description: "ZSpace can review your Shopify Analytics funnel and pinpoint where the real drop-off is happening, with evidence — not a generic symptom list.",
+          description: "ZSpace Labs can review your Shopify Analytics funnel and pinpoint where the real drop-off is happening, with evidence — not a generic symptom list.",
         },
       },
       {
@@ -567,7 +567,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want a second set of eyes on what your data is actually showing?",
-          description: "ZSpace can review your funnel data and session evidence together and confirm what's actually causing a specific drop-off.",
+          description: "ZSpace Labs can review your funnel data and session evidence together and confirm what's actually causing a specific drop-off.",
         },
       },
       {
@@ -669,7 +669,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want your funnel segmented and reviewed properly?",
-          description: "ZSpace can break down your Shopify funnel by traffic source and device, and identify exactly which stage deserves attention first.",
+          description: "ZSpace Labs can break down your Shopify funnel by traffic source and device, and identify exactly which stage deserves attention first.",
         },
       },
       {
@@ -769,7 +769,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want your product pages checked against real funnel data?",
-          description: "ZSpace can audit product page performance using actual Shopify Analytics add-to-cart data, not just a visual review.",
+          description: "ZSpace Labs can audit product page performance using actual Shopify Analytics add-to-cart data, not just a visual review.",
         },
       },
       {
@@ -892,7 +892,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want your homepage checked against real visitor behavior?",
-          description: "ZSpace can audit homepage exit rate and downstream engagement using your actual Shopify Analytics data.",
+          description: "ZSpace Labs can audit homepage exit rate and downstream engagement using your actual Shopify Analytics data.",
         },
       },
       {
@@ -993,7 +993,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want your collection pages checked against real browsing behavior?",
-          description: "ZSpace can review filter usage and collection-to-product-view rate using your actual Shopify Analytics and Search & Discovery data.",
+          description: "ZSpace Labs can review filter usage and collection-to-product-view rate using your actual Shopify Analytics and Search & Discovery data.",
         },
       },
       {
@@ -1092,7 +1092,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want to know exactly where your cart is losing momentum?",
-          description: "ZSpace can review your reached-checkout rate alongside real session recordings to pinpoint the cause.",
+          description: "ZSpace Labs can review your reached-checkout rate alongside real session recordings to pinpoint the cause.",
         },
       },
       {

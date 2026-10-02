@@ -96,7 +96,7 @@ export const commercePosts7: BlogPost[] = [
         ],
         cta: {
           title: "Launching or rebuilding a jewelry brand on Shopify?",
-          description: "ZSpace builds jewelry catalogs, product pages and trust features on Shopify, from certificates to consultations.",
+          description: "ZSpace Labs builds jewelry catalogs, product pages and trust features on Shopify, from certificates to consultations.",
         },
       },
       {
@@ -174,7 +174,7 @@ export const commercePosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want a Shopify jewelry store customers trust?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify development]], [[/services/ui-ux-design|luxury UX]] and [[/services/cro-audit|CRO]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify development]], [[/services/ui-ux-design|luxury UX]] and [[/services/cro-audit|CRO]].",
         },
       },
       {
@@ -270,7 +270,7 @@ export const commercePosts7: BlogPost[] = [
         ],
         cta: {
           title: "Electronics shoppers comparing elsewhere?",
-          description: "ZSpace designs spec-driven discovery, comparison and product pages that help shoppers decide on your site.",
+          description: "ZSpace Labs designs spec-driven discovery, comparison and product pages that help shoppers decide on your site.",
         },
       },
       {
@@ -352,7 +352,7 @@ export const commercePosts7: BlogPost[] = [
         ],
         cta: {
           title: "Planning an electronics store build or redesign?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|electronics ecommerce UX]], [[/services/shopify-development|Shopify development]] and [[/services/cro-audit|CRO]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|electronics ecommerce UX]], [[/services/shopify-development|Shopify development]] and [[/services/cro-audit|CRO]].",
         },
       },
       {
@@ -438,7 +438,7 @@ export const commercePosts7: BlogPost[] = [
         ],
         cta: {
           title: "Building an electronics catalog on Shopify?",
-          description: "ZSpace designs spec data models, filters, comparison and compatibility tools for Shopify electronics stores.",
+          description: "ZSpace Labs designs spec data models, filters, comparison and compatibility tools for Shopify electronics stores.",
         },
       },
       {
@@ -537,7 +537,7 @@ export const commercePosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want a Shopify electronics store shoppers trust?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify development]], [[/services/ui-ux-design|spec-driven UX]] and [[/services/website-development|custom integrations]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify development]], [[/services/ui-ux-design|spec-driven UX]] and [[/services/website-development|custom integrations]].",
         },
       },
       {
@@ -638,7 +638,7 @@ export const commercePosts7: BlogPost[] = [
         ],
         cta: {
           title: "High traffic, long decisions, few orders?",
-          description: "ZSpace designs furniture journeys that answer fit, material and delivery questions before shoppers leave to measure.",
+          description: "ZSpace Labs designs furniture journeys that answer fit, material and delivery questions before shoppers leave to measure.",
         },
       },
       {
@@ -719,7 +719,7 @@ export const commercePosts7: BlogPost[] = [
         ],
         cta: {
           title: "Planning a furniture store build or redesign?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|furniture ecommerce UX]], [[/services/shopify-development|Shopify development]] and a [[/services/cro-audit|conversion audit]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|furniture ecommerce UX]], [[/services/shopify-development|Shopify development]] and a [[/services/cro-audit|conversion audit]].",
         },
       },
       {
@@ -809,7 +809,7 @@ export const commercePosts7: BlogPost[] = [
         ],
         cta: {
           title: "Selling furniture on Shopify?",
-          description: "ZSpace sets up configurable products, delivery options and product pages that answer the questions furniture buyers ask.",
+          description: "ZSpace Labs sets up configurable products, delivery options and product pages that answer the questions furniture buyers ask.",
         },
       },
       {
@@ -887,7 +887,7 @@ export const commercePosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want a Shopify furniture store that sells big-ticket items?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify development]], [[/services/ui-ux-design|furniture UX]] and [[/services/cro-audit|CRO]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify development]], [[/services/ui-ux-design|furniture UX]] and [[/services/cro-audit|CRO]].",
         },
       },
       {

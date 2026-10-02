@@ -101,7 +101,7 @@ export const commercePosts42: BlogPost[] = [
         ],
         cta: {
           title: "Planning a platform migration?",
-          description: "ZSpace plans and runs ecommerce migrations with URL mapping, data validation and post-launch monitoring built in.",
+          description: "ZSpace Labs plans and runs ecommerce migrations with URL mapping, data validation and post-launch monitoring built in.",
         },
       },
       {
@@ -194,7 +194,7 @@ export const commercePosts42: BlogPost[] = [
         ],
         cta: {
           title: "Ready to migrate without losing search visibility or customers?",
-          description: "Talk to ZSpace about [[/services/website-development|ecommerce migrations]] and [[/services/shopify-development|migrating to Shopify]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|ecommerce migrations]] and [[/services/shopify-development|migrating to Shopify]].",
         },
       },
       {
@@ -286,7 +286,7 @@ export const commercePosts42: BlogPost[] = [
         ],
         cta: {
           title: "Store feeling outdated, but a full rebuild feels risky?",
-          description: "ZSpace audits ecommerce stacks and plans phased modernization that delivers improvements without a big-bang rebuild.",
+          description: "ZSpace Labs audits ecommerce stacks and plans phased modernization that delivers improvements without a big-bang rebuild.",
         },
       },
       {
@@ -356,7 +356,7 @@ export const commercePosts42: BlogPost[] = [
         ],
         cta: {
           title: "Ready to plan your store's modernization?",
-          description: "Talk to ZSpace about [[/services/website-development|ecommerce modernization]], [[/services/ui-ux-design|UX modernization]] and [[/services/cro-audit|conversion audits]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|ecommerce modernization]], [[/services/ui-ux-design|UX modernization]] and [[/services/cro-audit|conversion audits]].",
         },
       },
       {
@@ -461,7 +461,7 @@ export const commercePosts42: BlogPost[] = [
         },
         cta: {
           title: "Stuck on a legacy commerce stack?",
-          description: "ZSpace plans incremental migrations that move capabilities safely while the business keeps trading.",
+          description: "ZSpace Labs plans incremental migrations that move capabilities safely while the business keeps trading.",
         },
       },
       {
@@ -515,7 +515,7 @@ export const commercePosts42: BlogPost[] = [
         ],
         cta: {
           title: "Ready to plan a legacy migration?",
-          description: "Talk to ZSpace about [[/services/website-development|legacy commerce migration]] and [[/services/ai-automation|integration and process automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|legacy commerce migration]] and [[/services/ai-automation|integration and process automation]].",
         },
       },
       {

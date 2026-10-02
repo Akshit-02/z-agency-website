@@ -123,7 +123,7 @@ export function WhyZspace() {
         <div ref={headRef} className="grid gap-10 pb-16 lg:grid-cols-[280px_repeat(4,1fr)] lg:gap-8">
           <div>
             <Eyebrow on={headOn} still={still}>
-              Why ZSpace
+              Why ZSpace Labs
             </Eyebrow>
             <h2 className="mt-6 text-[2.4rem] leading-[1.04] tracking-[-0.02em] text-ink sm:text-[2.7rem]" style={serif}>
               {["We don’t just build.", "We think."].map((line, i) => (

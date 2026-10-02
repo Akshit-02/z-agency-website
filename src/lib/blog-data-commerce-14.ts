@@ -83,7 +83,7 @@ export const commercePosts14: BlogPost[] = [
         ],
         cta: {
           title: "Wondering if AI personalization would beat your current rules?",
-          description: "ZSpace assesses your data and traffic, and designs tests that show whether models add value.",
+          description: "ZSpace Labs assesses your data and traffic, and designs tests that show whether models add value.",
         },
       },
       {
@@ -178,7 +178,7 @@ export const commercePosts14: BlogPost[] = [
         ],
         cta: {
           title: "Planning AI personalization?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI personalization]], [[/services/cro-audit|testing]] and [[/services/ui-ux-design|personalized experience design]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI personalization]], [[/services/cro-audit|testing]] and [[/services/ui-ux-design|personalized experience design]].",
         },
       },
       {
@@ -260,7 +260,7 @@ export const commercePosts14: BlogPost[] = [
         ],
         cta: {
           title: "Are your recommendations actually adding revenue?",
-          description: "ZSpace evaluates recommendation models against holdouts and tunes them with your merchandising rules.",
+          description: "ZSpace Labs evaluates recommendation models against holdouts and tunes them with your merchandising rules.",
         },
       },
       {
@@ -352,7 +352,7 @@ export const commercePosts14: BlogPost[] = [
         ],
         cta: {
           title: "Planning AI recommendations?",
-          description: "Talk to ZSpace about [[/services/ai-automation|recommendation systems]], [[/services/website-development|data pipelines]] and [[/services/cro-audit|testing]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|recommendation systems]], [[/services/website-development|data pipelines]] and [[/services/cro-audit|testing]].",
         },
       },
       {
@@ -436,7 +436,7 @@ export const commercePosts14: BlogPost[] = [
         ],
         cta: {
           title: "Customers buying once and disappearing?",
-          description: "ZSpace analyses your cohorts and redesigns post-purchase journeys around where customers drop off.",
+          description: "ZSpace Labs analyses your cohorts and redesigns post-purchase journeys around where customers drop off.",
         },
       },
       {
@@ -541,7 +541,7 @@ export const commercePosts14: BlogPost[] = [
         ],
         cta: {
           title: "Want a retention plan built on your data?",
-          description: "Talk to ZSpace about [[/services/cro-audit|retention analysis]], [[/services/ui-ux-design|account and reorder UX]] and [[/services/ai-automation|lifecycle automation]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|retention analysis]], [[/services/ui-ux-design|account and reorder UX]] and [[/services/ai-automation|lifecycle automation]].",
         },
       },
       {
@@ -626,7 +626,7 @@ export const commercePosts14: BlogPost[] = [
         },
         cta: {
           title: "Want more customers coming back for a second order?",
-          description: "ZSpace maps your reorder patterns and designs the post-purchase journey around them.",
+          description: "ZSpace Labs maps your reorder patterns and designs the post-purchase journey around them.",
         },
       },
       {
@@ -689,7 +689,7 @@ export const commercePosts14: BlogPost[] = [
         ],
         cta: {
           title: "Want repeat purchase built into your store?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|reorder and account UX]], [[/services/ai-automation|lifecycle automation]] and [[/services/cro-audit|retention testing]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|reorder and account UX]], [[/services/ai-automation|lifecycle automation]] and [[/services/cro-audit|retention testing]].",
         },
       },
       {

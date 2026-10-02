@@ -70,7 +70,7 @@ export async function sendLeadEmail(input: SendLeadEmailInput): Promise<SendMail
   try {
     const transporter = getTransporter(env);
     await transporter.sendMail({
-      from: `"ZSpace Website" <${env.from}>`,
+      from: `"ZSpace Labs Website" <${env.from}>`,
       to: env.to,
       subject: input.subject,
       html: input.html,

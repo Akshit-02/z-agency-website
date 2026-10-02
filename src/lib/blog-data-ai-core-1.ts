@@ -49,7 +49,7 @@ export const aiCorePosts1: BlogPost[] = [
       {
         heading: "Where This Fits",
         body: [
-          "This is the hub for ZSpace's AI agent engineering guides. Component deep dives: [[/blogs/ai-agent-architecture|AI agent architecture]], [[/blogs/ai-agent-orchestration|orchestration]], [[/blogs/ai-agent-memory|memory]], [[/blogs/ai-agent-evaluation|evaluation]], [[/blogs/ai-agent-guardrails|guardrails]] and [[/blogs/ai-agent-observability|observability]]. For sector examples, see [[/blogs/ai-agents-in-finance-operations|AI agents in finance operations]] and [[/blogs/ai-agents-for-saas-companies|AI agents for SaaS companies]]. For deciding which projects to fund, see [[/blogs/ai-implementation-strategy|AI implementation strategy]].",
+          "This is the hub for ZSpace Labs' AI agent engineering guides. Component deep dives: [[/blogs/ai-agent-architecture|AI agent architecture]], [[/blogs/ai-agent-orchestration|orchestration]], [[/blogs/ai-agent-memory|memory]], [[/blogs/ai-agent-evaluation|evaluation]], [[/blogs/ai-agent-guardrails|guardrails]] and [[/blogs/ai-agent-observability|observability]]. For sector examples, see [[/blogs/ai-agents-in-finance-operations|AI agents in finance operations]] and [[/blogs/ai-agents-for-saas-companies|AI agents for SaaS companies]]. For deciding which projects to fund, see [[/blogs/ai-implementation-strategy|AI implementation strategy]].",
         ],
       },
       {
@@ -122,7 +122,7 @@ export const aiCorePosts1: BlogPost[] = [
         ],
         cta: {
           title: "Planning an AI agent for a real business process?",
-          description: "ZSpace designs and builds agents with narrow tools, approval steps and evaluation from the first pilot, connected to the systems your team already uses.",
+          description: "ZSpace Labs designs and builds agents with narrow tools, approval steps and evaluation from the first pilot, connected to the systems your team already uses.",
         },
       },
       {
@@ -194,7 +194,7 @@ export const aiCorePosts1: BlogPost[] = [
         ],
         cta: {
           title: "Ready to move from AI demo to dependable agent?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI agent development]], [[/services/website-development|integration and backend work]] and [[/services/ui-ux-design|approval and review interfaces]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI agent development]], [[/services/website-development|integration and backend work]] and [[/services/ui-ux-design|approval and review interfaces]].",
         },
       },
       {
@@ -303,7 +303,7 @@ export const aiCorePosts1: BlogPost[] = [
         ],
         cta: {
           title: "Not sure whether you need a chatbot or an agent?",
-          description: "ZSpace can map the task, systems and risk to recommend the simplest design that works, then build it.",
+          description: "ZSpace Labs can map the task, systems and risk to recommend the simplest design that works, then build it.",
         },
       },
       {
@@ -385,7 +385,7 @@ export const aiCorePosts1: BlogPost[] = [
         ],
         cta: {
           title: "Want an assistant that can safely take the next step?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI agents and assistants]] and [[/services/ui-ux-design|conversation and approval UX]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI agents and assistants]] and [[/services/ui-ux-design|conversation and approval UX]].",
         },
       },
       {
@@ -493,7 +493,7 @@ export const aiCorePosts1: BlogPost[] = [
         ],
         cta: {
           title: "Designing an agent that has to work in production, not just in a demo?",
-          description: "ZSpace can define the model-versus-code boundary, tool contracts, state model and evaluation plan before the build starts.",
+          description: "ZSpace Labs can define the model-versus-code boundary, tool contracts, state model and evaluation plan before the build starts.",
         },
       },
       {
@@ -582,7 +582,7 @@ export const aiCorePosts1: BlogPost[] = [
         ],
         cta: {
           title: "Want a second opinion on your agent architecture?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI agent architecture and builds]] and [[/services/website-development|backend, integration and deployment]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI agent architecture and builds]] and [[/services/website-development|backend, integration and deployment]].",
         },
       },
       {
@@ -680,7 +680,7 @@ export const aiCorePosts1: BlogPost[] = [
         ],
         cta: {
           title: "Wondering whether your use case needs more than one agent?",
-          description: "ZSpace can test a single-agent baseline against a multi-agent design on your real cases before you commit to the more complex build.",
+          description: "ZSpace Labs can test a single-agent baseline against a multi-agent design on your real cases before you commit to the more complex build.",
         },
       },
       {
@@ -742,7 +742,7 @@ export const aiCorePosts1: BlogPost[] = [
         ],
         cta: {
           title: "Planning a multi-agent build?",
-          description: "Talk to ZSpace about [[/services/ai-automation|agent system design and development]] and [[/services/website-development|integration and infrastructure]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|agent system design and development]] and [[/services/website-development|integration and infrastructure]].",
         },
       },
       {

@@ -79,7 +79,7 @@ export const commercePosts44: BlogPost[] = [
         ],
         cta: {
           title: "Deciding how to structure your commerce backend?",
-          description: "ZSpace helps teams choose architecture that fits their team size, bottlenecks and roadmap, not the latest trend.",
+          description: "ZSpace Labs helps teams choose architecture that fits their team size, bottlenecks and roadmap, not the latest trend.",
         },
       },
       {
@@ -157,7 +157,7 @@ export const commercePosts44: BlogPost[] = [
         ],
         cta: {
           title: "Ready to choose the right backend architecture?",
-          description: "Talk to ZSpace about [[/services/website-development|commerce architecture and development]] and [[/services/shopify-development|Shopify-based architectures]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|commerce architecture and development]] and [[/services/shopify-development|Shopify-based architectures]].",
         },
       },
       {
@@ -243,7 +243,7 @@ export const commercePosts44: BlogPost[] = [
         ],
         cta: {
           title: "Need a modernization roadmap your team can deliver?",
-          description: "ZSpace turns ecommerce audits into phased roadmaps with clear priorities, architecture decisions and metrics.",
+          description: "ZSpace Labs turns ecommerce audits into phased roadmaps with clear priorities, architecture decisions and metrics.",
         },
       },
       {
@@ -328,7 +328,7 @@ export const commercePosts44: BlogPost[] = [
         ],
         cta: {
           title: "Ready to plan your commerce upgrade?",
-          description: "Talk to ZSpace about [[/services/website-development|ecommerce modernization]], [[/services/ui-ux-design|UX modernization]] and [[/services/cro-audit|conversion optimization after launch]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|ecommerce modernization]], [[/services/ui-ux-design|UX modernization]] and [[/services/cro-audit|conversion optimization after launch]].",
         },
       },
       {

@@ -69,7 +69,7 @@ export const commercePosts16: BlogPost[] = [
         ],
         cta: {
           title: "Are your cross-sells adding revenue or noise?",
-          description: "ZSpace reviews cross-sell logic, placements and measurement, and tests what actually increases margin per order.",
+          description: "ZSpace Labs reviews cross-sell logic, placements and measurement, and tests what actually increases margin per order.",
         },
       },
       {
@@ -122,7 +122,7 @@ export const commercePosts16: BlogPost[] = [
         ],
         cta: {
           title: "Want cross-sells that customers are glad to see?",
-          description: "Talk to ZSpace about [[/services/cro-audit|cross-sell testing]] and [[/services/ui-ux-design|product page and cart UX]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|cross-sell testing]] and [[/services/ui-ux-design|product page and cart UX]].",
         },
       },
       {
@@ -221,7 +221,7 @@ export const commercePosts16: BlogPost[] = [
         },
         cta: {
           title: "Want upsells that don't slow shoppers down?",
-          description: "ZSpace designs option selectors and comparisons that raise order value while keeping decisions easy.",
+          description: "ZSpace Labs designs option selectors and comparisons that raise order value while keeping decisions easy.",
         },
       },
       {
@@ -265,7 +265,7 @@ export const commercePosts16: BlogPost[] = [
         ],
         cta: {
           title: "Want higher order value without the friction?",
-          description: "Talk to ZSpace about [[/services/cro-audit|offer testing]] and [[/services/ui-ux-design|product page design]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|offer testing]] and [[/services/ui-ux-design|product page design]].",
         },
       },
       {
@@ -351,7 +351,7 @@ export const commercePosts16: BlogPost[] = [
         },
         cta: {
           title: "Want to raise order value without losing conversions?",
-          description: "ZSpace analyses your order values and tests the levers that fit your products and margins.",
+          description: "ZSpace Labs analyses your order values and tests the levers that fit your products and margins.",
         },
       },
       {
@@ -385,7 +385,7 @@ export const commercePosts16: BlogPost[] = [
         ],
         cta: {
           title: "Planning AOV experiments?",
-          description: "Talk to ZSpace about [[/services/cro-audit|AOV testing]], [[/services/ui-ux-design|cart and product page UX]] and [[/services/shopify-development|Shopify offer setup]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|AOV testing]], [[/services/ui-ux-design|cart and product page UX]] and [[/services/shopify-development|Shopify offer setup]].",
         },
       },
       {
@@ -449,7 +449,7 @@ export const commercePosts16: BlogPost[] = [
         ],
         cta: {
           title: "Not sure which placements should be personalized?",
-          description: "ZSpace maps your placements to merchandising or personalization and sets up the guardrails between them.",
+          description: "ZSpace Labs maps your placements to merchandising or personalization and sets up the guardrails between them.",
         },
       },
       {
@@ -485,7 +485,7 @@ export const commercePosts16: BlogPost[] = [
         ],
         cta: {
           title: "Want merchandising and personalization working together?",
-          description: "Talk to ZSpace about [[/services/cro-audit|merchandising strategy]], [[/services/ai-automation|personalization]] and [[/services/ui-ux-design|experience design]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|merchandising strategy]], [[/services/ai-automation|personalization]] and [[/services/ui-ux-design|experience design]].",
         },
       },
       {

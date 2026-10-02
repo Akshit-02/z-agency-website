@@ -77,7 +77,7 @@ export function ProcessSection() {
                 }`}
               />
               <p className="mt-6 max-w-[30ch] text-[1rem] leading-relaxed text-ink-soft">
-                Step {Number(steps[active].n)} of {steps.length} in every ZSpace engagement.
+                Step {Number(steps[active].n)} of {steps.length} in every ZSpace Labs engagement.
               </p>
             </div>
           </div>

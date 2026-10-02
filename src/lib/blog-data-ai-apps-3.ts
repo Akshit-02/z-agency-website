@@ -80,7 +80,7 @@ export const aiAppsPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Sitting on a system nobody wants to touch?",
-          description: "ZSpace modernizes legacy applications incrementally, using AI for analysis, tests and refactoring while keeping the business running.",
+          description: "ZSpace Labs modernizes legacy applications incrementally, using AI for analysis, tests and refactoring while keeping the business running.",
         },
       },
       {
@@ -191,7 +191,7 @@ export const aiAppsPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Planning a modernization program?",
-          description: "Talk to ZSpace about [[/services/website-development|legacy application modernization]], [[/services/mobile-app-development|mobile rebuilds]] and [[/services/ai-automation|AI-assisted engineering]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|legacy application modernization]], [[/services/mobile-app-development|mobile rebuilds]] and [[/services/ai-automation|AI-assisted engineering]].",
         },
       },
       {
@@ -273,7 +273,7 @@ export const aiAppsPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want an AI-ready development process, not just AI tools?",
-          description: "ZSpace helps teams adapt requirements, review, testing and release practices for AI-assisted delivery.",
+          description: "ZSpace Labs helps teams adapt requirements, review, testing and release practices for AI-assisted delivery.",
         },
       },
       {
@@ -386,7 +386,7 @@ export const aiAppsPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Planning an AI-assisted delivery model?",
-          description: "Talk to ZSpace about [[/services/website-development|software development]], [[/services/ui-ux-design|product design]] and [[/services/ai-automation|AI workflow integration]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|software development]], [[/services/ui-ux-design|product design]] and [[/services/ai-automation|AI workflow integration]].",
         },
       },
       {
@@ -468,7 +468,7 @@ export const aiAppsPosts3: BlogPost[] = [
         ],
         cta: {
           title: "HR team buried in repetitive requests?",
-          description: "ZSpace builds HR assistants and workflows connected to your HRIS, with privacy controls and clear hand-off to your team.",
+          description: "ZSpace Labs builds HR assistants and workflows connected to your HRIS, with privacy controls and clear hand-off to your team.",
         },
       },
       {
@@ -575,7 +575,7 @@ export const aiAppsPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Planning HR automation?",
-          description: "Talk to ZSpace about [[/services/ai-automation|HR workflow automation]] and [[/services/website-development|employee portals and integrations]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|HR workflow automation]] and [[/services/website-development|employee portals and integrations]].",
         },
       },
       {
@@ -652,7 +652,7 @@ export const aiAppsPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Recruiters spending their days on scheduling and status emails?",
-          description: "ZSpace automates recruitment administration around your ATS while keeping selection decisions with your team.",
+          description: "ZSpace Labs automates recruitment administration around your ATS while keeping selection decisions with your team.",
         },
       },
       {
@@ -778,7 +778,7 @@ export const aiAppsPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want faster hiring without compliance risk?",
-          description: "Talk to ZSpace about [[/services/ai-automation|recruitment workflow automation]] built around human decisions.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|recruitment workflow automation]] built around human decisions.",
         },
       },
       {

@@ -99,7 +99,7 @@ export const commercePosts31: BlogPost[] = [
         },
         cta: {
           title: "Planning an ERP integration?",
-          description: "ZSpace designs ecommerce ERP integrations with clear ownership, reliable sync and monitoring.",
+          description: "ZSpace Labs designs ecommerce ERP integrations with clear ownership, reliable sync and monitoring.",
         },
       },
       {
@@ -176,7 +176,7 @@ export const commercePosts31: BlogPost[] = [
         ],
         cta: {
           title: "Ready to connect your store and ERP?",
-          description: "Talk to ZSpace about [[/services/website-development|ERP integration]], [[/services/shopify-development|Shopify integrations]] and [[/services/ai-automation|operations automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|ERP integration]], [[/services/shopify-development|Shopify integrations]] and [[/services/ai-automation|operations automation]].",
         },
       },
       {
@@ -259,7 +259,7 @@ export const commercePosts31: BlogPost[] = [
         ],
         cta: {
           title: "Customer data scattered across store and CRM?",
-          description: "ZSpace integrates stores and CRMs so customer data is accurate, consented and useful.",
+          description: "ZSpace Labs integrates stores and CRMs so customer data is accurate, consented and useful.",
         },
       },
       {
@@ -329,7 +329,7 @@ export const commercePosts31: BlogPost[] = [
         ],
         cta: {
           title: "Ready to connect your store and CRM?",
-          description: "Talk to ZSpace about [[/services/website-development|CRM integration]], [[/services/ai-automation|lifecycle automation]] and [[/services/shopify-development|Shopify integrations]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|CRM integration]], [[/services/ai-automation|lifecycle automation]] and [[/services/shopify-development|Shopify integrations]].",
         },
       },
       {
@@ -409,7 +409,7 @@ export const commercePosts31: BlogPost[] = [
         ],
         cta: {
           title: "Overselling or hiding stock you actually have?",
-          description: "ZSpace builds inventory integrations that keep every channel showing sellable stock.",
+          description: "ZSpace Labs builds inventory integrations that keep every channel showing sellable stock.",
         },
       },
       {
@@ -472,7 +472,7 @@ export const commercePosts31: BlogPost[] = [
         ],
         cta: {
           title: "Ready to fix inventory sync?",
-          description: "Talk to ZSpace about [[/services/website-development|inventory integration]], [[/services/shopify-development|Shopify multi-location setups]] and [[/services/ai-automation|stock automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|inventory integration]], [[/services/shopify-development|Shopify multi-location setups]] and [[/services/ai-automation|stock automation]].",
         },
       },
       {
@@ -560,7 +560,7 @@ export const commercePosts31: BlogPost[] = [
         },
         cta: {
           title: "Payments not matching orders?",
-          description: "ZSpace integrates payment providers with ecommerce orders and finance so every payment reconciles.",
+          description: "ZSpace Labs integrates payment providers with ecommerce orders and finance so every payment reconciles.",
         },
       },
       {
@@ -644,7 +644,7 @@ export const commercePosts31: BlogPost[] = [
         ],
         cta: {
           title: "Ready to integrate payments properly?",
-          description: "Talk to ZSpace about [[/services/website-development|payment integration]], [[/services/shopify-development|Shopify payments setup]] and [[/services/cro-audit|checkout conversion]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|payment integration]], [[/services/shopify-development|Shopify payments setup]] and [[/services/cro-audit|checkout conversion]].",
         },
       },
       {
@@ -723,7 +723,7 @@ export const commercePosts31: BlogPost[] = [
         ],
         cta: {
           title: "Shipping data breaking between checkout and carrier?",
-          description: "ZSpace integrates stores with carriers, shipping software and 3PLs for reliable fulfilment.",
+          description: "ZSpace Labs integrates stores with carriers, shipping software and 3PLs for reliable fulfilment.",
         },
       },
       {
@@ -791,7 +791,7 @@ export const commercePosts31: BlogPost[] = [
         ],
         cta: {
           title: "Ready to streamline shipping and fulfilment?",
-          description: "Talk to ZSpace about [[/services/website-development|shipping and 3PL integration]], [[/services/shopify-development|Shopify shipping setup]] and [[/services/ai-automation|fulfilment automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|shipping and 3PL integration]], [[/services/shopify-development|Shopify shipping setup]] and [[/services/ai-automation|fulfilment automation]].",
         },
       },
       {

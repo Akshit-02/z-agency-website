@@ -47,7 +47,7 @@ export const commercePosts73: BlogPost[] = [
       {
         heading: "What This Guide Covers",
         body: [
-          "This is the hub for product data on ZSpace. The comparison with other systems is in [[/blogs/pim-vs-cms|PIM vs CMS]], and how product data flows through the whole stack is in [[/blogs/ecommerce-product-data-architecture|ecommerce product data architecture]]. Related deep dives: [[/blogs/ecommerce-product-feeds|product feeds]], [[/blogs/ecommerce-product-data-ai-search|product data for AI search]] and [[/blogs/b2b-ecommerce-product-catalog|B2B product catalogs]].",
+          "This is the hub for product data on ZSpace Labs. The comparison with other systems is in [[/blogs/pim-vs-cms|PIM vs CMS]], and how product data flows through the whole stack is in [[/blogs/ecommerce-product-data-architecture|ecommerce product data architecture]]. Related deep dives: [[/blogs/ecommerce-product-feeds|product feeds]], [[/blogs/ecommerce-product-data-ai-search|product data for AI search]] and [[/blogs/b2b-ecommerce-product-catalog|B2B product catalogs]].",
         ],
       },
       {
@@ -113,7 +113,7 @@ export const commercePosts73: BlogPost[] = [
         ],
         cta: {
           title: "Is product data slowing down your store?",
-          description: "ZSpace can audit your catalog, design a data model and tell you honestly whether you need a PIM or better structure in your current platform.",
+          description: "ZSpace Labs can audit your catalog, design a data model and tell you honestly whether you need a PIM or better structure in your current platform.",
         },
       },
       {
@@ -209,7 +209,7 @@ export const commercePosts73: BlogPost[] = [
         ],
         cta: {
           title: "Ready to get your product data under control?",
-          description: "Talk to ZSpace about [[/services/website-development|PIM integration and data architecture]], [[/services/shopify-development|Shopify catalog setup]] and [[/services/ai-automation|AI-assisted enrichment]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|PIM integration and data architecture]], [[/services/shopify-development|Shopify catalog setup]] and [[/services/ai-automation|AI-assisted enrichment]].",
         },
       },
       {
@@ -300,7 +300,7 @@ export const commercePosts73: BlogPost[] = [
         ],
         cta: {
           title: "Not sure which system your team actually needs?",
-          description: "ZSpace can map where your product data and content live today and recommend the smallest stack that solves the real bottleneck.",
+          description: "ZSpace Labs can map where your product data and content live today and recommend the smallest stack that solves the real bottleneck.",
         },
       },
       {
@@ -362,7 +362,7 @@ export const commercePosts73: BlogPost[] = [
         ],
         cta: {
           title: "Ready to design a cleaner commerce stack?",
-          description: "Talk to ZSpace about [[/services/website-development|PIM, CMS and platform integration]], [[/services/shopify-development|Shopify data setup]] and [[/services/ui-ux-design|content experience design]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|PIM, CMS and platform integration]], [[/services/shopify-development|Shopify data setup]] and [[/services/ui-ux-design|content experience design]].",
         },
       },
       {
@@ -411,7 +411,7 @@ export const commercePosts73: BlogPost[] = [
       {
         heading: "Where This Fits",
         body: [
-          "This article connects the product data topics on ZSpace. Product information management is covered in [[/blogs/ecommerce-product-information-management|the PIM guide]], system boundaries in [[/blogs/pim-vs-cms|PIM vs CMS]] and the wider commerce stack in [[/blogs/ecommerce-website-architecture|ecommerce website architecture]] and [[/blogs/headless-ecommerce-architecture|headless ecommerce architecture]].",
+          "This article connects the product data topics on ZSpace Labs. Product information management is covered in [[/blogs/ecommerce-product-information-management|the PIM guide]], system boundaries in [[/blogs/pim-vs-cms|PIM vs CMS]] and the wider commerce stack in [[/blogs/ecommerce-website-architecture|ecommerce website architecture]] and [[/blogs/headless-ecommerce-architecture|headless ecommerce architecture]].",
         ],
       },
       {
@@ -473,7 +473,7 @@ export const commercePosts73: BlogPost[] = [
         ],
         cta: {
           title: "Is your product data architecture holding you back?",
-          description: "ZSpace can map your current data flows, define ownership per field and design the target architecture for your catalog and channels.",
+          description: "ZSpace Labs can map your current data flows, define ownership per field and design the target architecture for your catalog and channels.",
         },
       },
       {
@@ -581,7 +581,7 @@ export const commercePosts73: BlogPost[] = [
         ],
         cta: {
           title: "Ready to design product data that scales?",
-          description: "Talk to ZSpace about [[/services/website-development|ecommerce data architecture and integrations]], [[/services/shopify-development|Shopify catalog and metafield design]] and [[/services/ai-automation|search and recommendation data pipelines]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|ecommerce data architecture and integrations]], [[/services/shopify-development|Shopify catalog and metafield design]] and [[/services/ai-automation|search and recommendation data pipelines]].",
         },
       },
       {

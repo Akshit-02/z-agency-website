@@ -20,7 +20,7 @@ export default async function IndustryOgImage({ params }: { params: Promise<{ sl
         eyebrow="Industry"
         eyebrowColor={accentColor}
         title={industry?.name ?? "Industries"}
-        description={industry?.shortDescription ?? "Technology solutions from ZSpace, built around your industry."}
+        description={industry?.shortDescription ?? "Technology solutions from ZSpace Labs, built around your industry."}
       />
     ),
     { ...size }

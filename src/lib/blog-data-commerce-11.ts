@@ -84,7 +84,7 @@ export const commercePosts11: BlogPost[] = [
         ],
         cta: {
           title: "Shoppers landing deep and leaving?",
-          description: "ZSpace reviews navigation, breadcrumbs and internal links so every landing page leads somewhere useful.",
+          description: "ZSpace Labs reviews navigation, breadcrumbs and internal links so every landing page leads somewhere useful.",
         },
       },
       {
@@ -118,7 +118,7 @@ export const commercePosts11: BlogPost[] = [
         ],
         cta: {
           title: "Want navigation that works from any landing page?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|navigation UX]] and [[/services/website-development|structured data implementation]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|navigation UX]] and [[/services/website-development|structured data implementation]].",
         },
       },
       {
@@ -199,7 +199,7 @@ export const commercePosts11: BlogPost[] = [
         ],
         cta: {
           title: "How many sessions end on a dead end?",
-          description: "ZSpace audits search, filters and empty states and designs recovery routes that keep shoppers moving.",
+          description: "ZSpace Labs audits search, filters and empty states and designs recovery routes that keep shoppers moving.",
         },
       },
       {
@@ -248,7 +248,7 @@ export const commercePosts11: BlogPost[] = [
         ],
         cta: {
           title: "Want fewer dead ends in your store?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|ecommerce UX]] and a [[/services/cro-audit|search and discovery audit]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|ecommerce UX]] and a [[/services/cro-audit|search and discovery audit]].",
         },
       },
       {
@@ -346,7 +346,7 @@ export const commercePosts11: BlogPost[] = [
         ],
         cta: {
           title: "Losing traffic to broken paths?",
-          description: "ZSpace finds the 404s and redirect gaps that matter and sets up a process so they don't come back.",
+          description: "ZSpace Labs finds the 404s and redirect gaps that matter and sets up a process so they don't come back.",
         },
       },
       {
@@ -373,7 +373,7 @@ export const commercePosts11: BlogPost[] = [
         ],
         cta: {
           title: "Want every broken path to lead back to shopping?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|recovery UX]], [[/services/website-development|technical SEO fixes]] and [[/services/shopify-development|Shopify redirects]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|recovery UX]], [[/services/website-development|technical SEO fixes]] and [[/services/shopify-development|Shopify redirects]].",
         },
       },
       {

@@ -83,7 +83,7 @@ export const aiAppsPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Not sure where to start with AI?",
-          description: "ZSpace runs AI readiness assessments that end in a prioritized, practical roadmap rather than a generic report.",
+          description: "ZSpace Labs runs AI readiness assessments that end in a prioritized, practical roadmap rather than a generic report.",
         },
       },
       {
@@ -202,7 +202,7 @@ export const aiAppsPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Want a clear view of your AI readiness?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI readiness and strategy]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI readiness and strategy]].",
         },
       },
       {
@@ -285,7 +285,7 @@ export const aiAppsPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Is your data holding back AI projects?",
-          description: "ZSpace helps prepare structured and document data for AI, with pipelines, metadata and permission-aware access.",
+          description: "ZSpace Labs helps prepare structured and document data for AI, with pipelines, metadata and permission-aware access.",
         },
       },
       {
@@ -392,7 +392,7 @@ export const aiAppsPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Planning data foundations for AI?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI data preparation]] and [[/services/website-development|data integration]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI data preparation]] and [[/services/website-development|data integration]].",
         },
       },
       {
@@ -477,7 +477,7 @@ export const aiAppsPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Need governance that enables AI rather than blocking it?",
-          description: "ZSpace helps set up AI inventories, risk tiers, assessments and monitoring proportionate to your systems.",
+          description: "ZSpace Labs helps set up AI inventories, risk tiers, assessments and monitoring proportionate to your systems.",
         },
       },
       {
@@ -579,7 +579,7 @@ export const aiAppsPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Setting up AI governance?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI governance and responsible implementation]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI governance and responsible implementation]].",
         },
       },
       {
@@ -655,7 +655,7 @@ export const aiAppsPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Shipping AI features and worried about security?",
-          description: "ZSpace reviews and builds AI applications with threat models, least-privilege tools and runtime controls.",
+          description: "ZSpace Labs reviews and builds AI applications with threat models, least-privilege tools and runtime controls.",
         },
       },
       {
@@ -770,7 +770,7 @@ export const aiAppsPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Want an AI security review?",
-          description: "Talk to ZSpace about [[/services/ai-automation|secure AI development]] and [[/services/website-development|application security engineering]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|secure AI development]] and [[/services/website-development|application security engineering]].",
         },
       },
       {

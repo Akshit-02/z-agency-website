@@ -40,7 +40,7 @@ export const mobilePosts5: BlogPost[] = [
       {
         heading: "Why Analytics Matters",
         body: [
-          "Without analytics, product decisions rely on opinion and anecdotes. With the right events, you can see whether onboarding works, which features matter, what predicts retention and where revenue comes from, then test changes and measure the result. The same evidence-first discipline underpins ZSpace's [[/services/cro-audit|conversion optimization]] work.",
+          "Without analytics, product decisions rely on opinion and anecdotes. With the right events, you can see whether onboarding works, which features matter, what predicts retention and where revenue comes from, then test changes and measure the result. The same evidence-first discipline underpins ZSpace Labs' [[/services/cro-audit|conversion optimization]] work.",
         ],
       },
       {
@@ -91,7 +91,7 @@ export const mobilePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Setting up analytics for your app?",
-          description: "ZSpace can define a tracking plan tied to your product questions and implement it across app and backend.",
+          description: "ZSpace Labs can define a tracking plan tied to your product questions and implement it across app and backend.",
         },
       },
       {
@@ -157,7 +157,7 @@ export const mobilePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Want your app analytics audited?",
-          description: "Talk to ZSpace about cleaning up your tracking plan and turning data into product decisions.",
+          description: "Talk to ZSpace Labs about cleaning up your tracking plan and turning data into product decisions.",
         },
       },
       {
@@ -244,7 +244,7 @@ export const mobilePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Launching an app soon?",
-          description: "ZSpace sets up crash reporting, monitoring and release processes before launch, so production issues are visible from day one.",
+          description: "ZSpace Labs sets up crash reporting, monitoring and release processes before launch, so production issues are visible from day one.",
         },
       },
       {
@@ -301,7 +301,7 @@ export const mobilePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Want visibility into how your app behaves in production?",
-          description: "Talk to ZSpace about crash reporting, monitoring and a release process that catches problems early.",
+          description: "Talk to ZSpace Labs about crash reporting, monitoring and a release process that catches problems early.",
         },
       },
       {
@@ -388,7 +388,7 @@ export const mobilePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Connecting your website and app?",
-          description: "ZSpace designs shared URL structures and deep linking across web and mobile, so every link lands in the right place.",
+          description: "ZSpace Labs designs shared URL structures and deep linking across web and mobile, so every link lands in the right place.",
         },
       },
       {
@@ -412,7 +412,7 @@ export const mobilePosts5: BlogPost[] = [
       {
         heading: "Web-to-App Journeys and Fallbacks",
         body: [
-          "Every deep-linkable path should have a useful web page, since the website is the fallback when the app isn't installed or the user chooses the browser. Where the app offers a better experience, a respectful app banner can invite installation without blocking content. See ZSpace's [[/services/website-development|website development]] work for the web side.",
+          "Every deep-linkable path should have a useful web page, since the website is the fallback when the app isn't installed or the user chooses the browser. Where the app offers a better experience, a respectful app banner can invite installation without blocking content. See ZSpace Labs' [[/services/website-development|website development]] work for the web side.",
         ],
       },
       {
@@ -441,7 +441,7 @@ export const mobilePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Links not opening your app reliably?",
-          description: "Talk to ZSpace about diagnosing and fixing your deep linking setup across iOS, Android and web.",
+          description: "Talk to ZSpace Labs about diagnosing and fixing your deep linking setup across iOS, Android and web.",
         },
       },
       {
@@ -515,7 +515,7 @@ export const mobilePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Is search holding your app back?",
-          description: "ZSpace designs and builds in-app search, from UX to indexing and ranking, around how your users actually look for things.",
+          description: "ZSpace Labs designs and builds in-app search, from UX to indexing and ranking, around how your users actually look for things.",
         },
       },
       {
@@ -578,12 +578,12 @@ export const mobilePosts5: BlogPost[] = [
       {
         heading: "Semantic and AI-Assisted Search",
         body: [
-          "Semantic search using embeddings matches meaning, helping with natural-language queries. It usually works best combined with keyword search, and changes in ranking should be evaluated with real queries. ZSpace's [[/services/ai-automation|AI automation]] work covers these capabilities.",
+          "Semantic search using embeddings matches meaning, helping with natural-language queries. It usually works best combined with keyword search, and changes in ranking should be evaluated with real queries. ZSpace Labs' [[/services/ai-automation|AI automation]] work covers these capabilities.",
           "Query understanding, hybrid retrieval and search analytics are covered in depth in [[/blogs/ai-search-development|AI search development]].",
         ],
         cta: {
           title: "Want your search quality reviewed?",
-          description: "Talk to ZSpace about analyzing failing queries and improving relevance, speed and no-result experiences.",
+          description: "Talk to ZSpace Labs about analyzing failing queries and improving relevance, speed and no-result experiences.",
         },
       },
       {
@@ -664,7 +664,7 @@ export const mobilePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Adding payments to your app?",
-          description: "ZSpace designs payment flows across app, backend and provider, with verification and failure handling built in.",
+          description: "ZSpace Labs designs payment flows across app, backend and provider, with verification and failure handling built in.",
         },
       },
       {
@@ -733,7 +733,7 @@ export const mobilePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Want your payment flow reviewed before launch?",
-          description: "Talk to ZSpace about testing and hardening your app's payments across providers and app stores.",
+          description: "Talk to ZSpace Labs about testing and hardening your app's payments across providers and app stores.",
         },
       },
       {

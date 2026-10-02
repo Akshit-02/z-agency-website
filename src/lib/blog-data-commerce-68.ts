@@ -109,7 +109,7 @@ export const commercePosts68: BlogPost[] = [
         },
         cta: {
           title: "Need an independent test plan before go-live?",
-          description: "ZSpace plans and runs migration testing across checkout, data, integrations, SEO and performance.",
+          description: "ZSpace Labs plans and runs migration testing across checkout, data, integrations, SEO and performance.",
         },
       },
       {
@@ -209,7 +209,7 @@ export const commercePosts68: BlogPost[] = [
         ],
         cta: {
           title: "Ready to test your migration properly?",
-          description: "Talk to ZSpace about [[/services/website-development|migration QA]], [[/services/shopify-development|Shopify launch testing]] and [[/services/cro-audit|conversion checks after launch]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|migration QA]], [[/services/shopify-development|Shopify launch testing]] and [[/services/cro-audit|conversion checks after launch]].",
         },
       },
       {
@@ -309,7 +309,7 @@ export const commercePosts68: BlogPost[] = [
         },
         cta: {
           title: "Weighing a parallel run against a single cutover?",
-          description: "ZSpace helps teams choose the safest launch approach and builds the synchronization it needs.",
+          description: "ZSpace Labs helps teams choose the safest launch approach and builds the synchronization it needs.",
         },
       },
       {
@@ -381,7 +381,7 @@ export const commercePosts68: BlogPost[] = [
         ],
         cta: {
           title: "Ready to plan a lower-risk launch?",
-          description: "Talk to ZSpace about [[/services/website-development|migration and cutover planning]], [[/services/ai-automation|synchronization and monitoring]] and [[/services/shopify-development|Shopify launches]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|migration and cutover planning]], [[/services/ai-automation|synchronization and monitoring]] and [[/services/shopify-development|Shopify launches]].",
         },
       },
       {
@@ -475,7 +475,7 @@ export const commercePosts68: BlogPost[] = [
         ],
         cta: {
           title: "Planning a go-live and want fewer surprises?",
-          description: "ZSpace writes and runs ecommerce launch plans with rehearsals, go/no-go criteria and rollback.",
+          description: "ZSpace Labs writes and runs ecommerce launch plans with rehearsals, go/no-go criteria and rollback.",
         },
       },
       {
@@ -578,7 +578,7 @@ export const commercePosts68: BlogPost[] = [
         ],
         cta: {
           title: "Ready to plan your launch?",
-          description: "Talk to ZSpace about [[/services/website-development|migration launches]], [[/services/shopify-development|Shopify go-lives]] and [[/services/cro-audit|post-launch performance reviews]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|migration launches]], [[/services/shopify-development|Shopify go-lives]] and [[/services/cro-audit|post-launch performance reviews]].",
         },
       },
       {

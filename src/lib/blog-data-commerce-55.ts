@@ -113,7 +113,7 @@ export const commercePosts55: BlogPost[] = [
         ],
         cta: {
           title: "Not sure what your search data is telling you?",
-          description: "ZSpace audits search tracking and query data to find the fixes that matter most for your store.",
+          description: "ZSpace Labs audits search tracking and query data to find the fixes that matter most for your store.",
         },
       },
       {
@@ -197,7 +197,7 @@ export const commercePosts55: BlogPost[] = [
         ],
         cta: {
           title: "Ready to measure search properly?",
-          description: "Talk to ZSpace about [[/services/cro-audit|search and conversion audits]], [[/services/website-development|search tracking and implementation]] and [[/services/ui-ux-design|search UX design]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|search and conversion audits]], [[/services/website-development|search tracking and implementation]] and [[/services/ui-ux-design|search UX design]].",
         },
       },
       {
@@ -301,7 +301,7 @@ export const commercePosts55: BlogPost[] = [
         },
         cta: {
           title: "Too many searches ending with nothing?",
-          description: "ZSpace diagnoses zero-result queries and fixes search configuration and product data at the source.",
+          description: "ZSpace Labs diagnoses zero-result queries and fixes search configuration and product data at the source.",
         },
       },
       {
@@ -388,7 +388,7 @@ export const commercePosts55: BlogPost[] = [
         ],
         cta: {
           title: "Ready to clear your zero-result list?",
-          description: "Talk to ZSpace about [[/services/cro-audit|search audits]], [[/services/website-development|search and product data implementation]] and [[/services/ui-ux-design|empty state and search UX design]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|search audits]], [[/services/website-development|search and product data implementation]] and [[/services/ui-ux-design|empty state and search UX design]].",
         },
       },
       {
@@ -484,7 +484,7 @@ export const commercePosts55: BlogPost[] = [
         ],
         cta: {
           title: "Autocomplete that sends shoppers nowhere?",
-          description: "ZSpace designs and configures search suggestions that lead to results people click.",
+          description: "ZSpace Labs designs and configures search suggestions that lead to results people click.",
         },
       },
       {
@@ -579,7 +579,7 @@ export const commercePosts55: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve your search suggestions?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|search UX design]], [[/services/website-development|search implementation]] and [[/services/cro-audit|search audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|search UX design]], [[/services/website-development|search implementation]] and [[/services/cro-audit|search audits]].",
         },
       },
       {
@@ -675,7 +675,7 @@ export const commercePosts55: BlogPost[] = [
         ],
         cta: {
           title: "Considering semantic search for your store?",
-          description: "ZSpace evaluates search options on your real queries and product data before you commit to a platform.",
+          description: "ZSpace Labs evaluates search options on your real queries and product data before you commit to a platform.",
         },
       },
       {
@@ -767,7 +767,7 @@ export const commercePosts55: BlogPost[] = [
         ],
         cta: {
           title: "Ready to test meaning-based search?",
-          description: "Talk to ZSpace about [[/services/ai-automation|semantic and AI search implementation]], [[/services/website-development|search integration]] and [[/services/cro-audit|search evaluation]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|semantic and AI search implementation]], [[/services/website-development|search integration]] and [[/services/cro-audit|search evaluation]].",
         },
       },
       {

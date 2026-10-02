@@ -28,7 +28,7 @@ export const mobilePosts2: BlogPost[] = [
       { q: "How are Flutter apps structured?", a: "Flutter's architecture guidance recommends separating a UI layer (views and view models) from a data layer (repositories and services), a pattern similar to MVVM." },
       { q: "How is Flutter tested?", a: "Flutter supports unit tests, widget tests for individual UI components, and integration tests that run the full app on a device or emulator." },
       { q: "When is Flutter not the right choice?", a: "When the team is deeply invested in React and TypeScript, when the app relies on native platform components or brand-new OS features, or when a required SDK lacks good Flutter support." },
-      { q: "Does ZSpace build Flutter apps?", a: "ZSpace primarily builds cross-platform apps with React Native. This guide explains Flutter objectively so you can evaluate it on its merits." },
+      { q: "Does ZSpace Labs build Flutter apps?", a: "ZSpace Labs primarily builds cross-platform apps with React Native. This guide explains Flutter objectively so you can evaluate it on its merits." },
     ],
     content: [
       {
@@ -40,7 +40,7 @@ export const mobilePosts2: BlogPost[] = [
       {
         heading: "A Note on Perspective",
         body: [
-          "ZSpace builds cross-platform apps primarily with React Native. This guide is based on Flutter's official documentation and aims to help you judge Flutter fairly. For a side-by-side view, see [[/blogs/flutter-vs-react-native|Flutter vs React Native]].",
+          "ZSpace Labs builds cross-platform apps primarily with React Native. This guide is based on Flutter's official documentation and aims to help you judge Flutter fairly. For a side-by-side view, see [[/blogs/flutter-vs-react-native|Flutter vs React Native]].",
         ],
       },
       {
@@ -75,7 +75,7 @@ export const mobilePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Evaluating Flutter for your app?",
-          description: "ZSpace can review your requirements and help you decide whether Flutter, React Native or native development fits best.",
+          description: "ZSpace Labs can review your requirements and help you decide whether Flutter, React Native or native development fits best.",
         },
       },
       {
@@ -108,7 +108,7 @@ export const mobilePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want an objective framework recommendation?",
-          description: "Talk to ZSpace about your app's requirements before committing to Flutter or any other framework.",
+          description: "Talk to ZSpace Labs about your app's requirements before committing to Flutter or any other framework.",
         },
       },
       {
@@ -141,7 +141,7 @@ export const mobilePosts2: BlogPost[] = [
       { q: "Can React Native use native features?", a: "Yes, through community and Expo libraries for common features, and custom native modules written in Swift or Kotlin for anything else." },
       { q: "Can React Native share code with a website?", a: "It shares the language, React patterns and often business logic, validation and API code with React web apps. UI components usually differ between web and native." },
       { q: "How are React Native apps tested?", a: "Typically Jest for unit tests, React Native Testing Library for components, and tools such as Detox or Maestro for end-to-end tests on devices." },
-      { q: "Does ZSpace use React Native?", a: "Yes. React Native is ZSpace's default for cross-platform apps, with native development where the experience requires it." },
+      { q: "Does ZSpace Labs use React Native?", a: "Yes. React Native is ZSpace Labs' default for cross-platform apps, with native development where the experience requires it." },
     ],
     content: [
       {
@@ -176,7 +176,7 @@ export const mobilePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Building a cross-platform app?",
-          description: "React Native is ZSpace's default cross-platform stack. We can help plan architecture, native integrations and release process for your app.",
+          description: "React Native is ZSpace Labs' default cross-platform stack. We can help plan architecture, native integrations and release process for your app.",
         },
       },
       {
@@ -215,7 +215,7 @@ export const mobilePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Considering React Native for your product?",
-          description: "Talk to ZSpace about whether it fits your app, and where native modules might be needed.",
+          description: "Talk to ZSpace Labs about whether it fits your app, and where native modules might be needed.",
         },
       },
       {
@@ -300,7 +300,7 @@ export const mobilePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Planning native apps for both platforms?",
-          description: "ZSpace builds with Swift and Kotlin where native development is the right call, and can help you plan the sequence and budget.",
+          description: "ZSpace Labs builds with Swift and Kotlin where native development is the right call, and can help you plan the sequence and budget.",
         },
       },
       {
@@ -322,7 +322,7 @@ export const mobilePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Not sure whether to build native on both platforms?",
-          description: "Talk to ZSpace about your users, features and team, and we'll outline the options.",
+          description: "Talk to ZSpace Labs about your users, features and team, and we'll outline the options.",
         },
       },
       {
@@ -408,7 +408,7 @@ export const mobilePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Need help choosing the right app architecture?",
-          description: "Talk to the ZSpace team about structuring your app so it stays reliable and easy to change as features grow.",
+          description: "Talk to the ZSpace Labs team about structuring your app so it stays reliable and easy to change as features grow.",
         },
       },
       {
@@ -442,7 +442,7 @@ export const mobilePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Reviewing an existing app's architecture?",
-          description: "ZSpace can assess where your app's structure is slowing development and what to refactor first.",
+          description: "ZSpace Labs can assess where your app's structure is slowing development and what to refactor first.",
         },
       },
       {
@@ -528,7 +528,7 @@ export const mobilePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Planning the backend for your app?",
-          description: "ZSpace designs and builds app backends and APIs, and connects them to the systems your business already runs.",
+          description: "ZSpace Labs designs and builds app backends and APIs, and connects them to the systems your business already runs.",
         },
       },
       {
@@ -546,7 +546,7 @@ export const mobilePosts2: BlogPost[] = [
       {
         heading: "Integrations and Cloud Infrastructure",
         body: [
-          "Apps often need to connect to CRMs, ERPs, logistics or AI services, handled server-side where credentials stay safe. Host on cloud infrastructure with monitoring and automated deployment. See ZSpace's [[/services/ai-automation|AI automation]] work for AI-powered backend features.",
+          "Apps often need to connect to CRMs, ERPs, logistics or AI services, handled server-side where credentials stay safe. Host on cloud infrastructure with monitoring and automated deployment. See ZSpace Labs' [[/services/ai-automation|AI automation]] work for AI-powered backend features.",
         ],
       },
       {
@@ -571,7 +571,7 @@ export const mobilePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Not sure what your backend needs?",
-          description: "Talk to ZSpace about your app's features and we'll map them to the backend components that actually matter.",
+          description: "Talk to ZSpace Labs about your app's features and we'll map them to the backend components that actually matter.",
         },
       },
       {
@@ -654,7 +654,7 @@ export const mobilePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Designing the API for your app?",
-          description: "ZSpace can help choose an API approach that fits your screens, network conditions and release cycle.",
+          description: "ZSpace Labs can help choose an API approach that fits your screens, network conditions and release cycle.",
         },
       },
       {
@@ -681,7 +681,7 @@ export const mobilePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want a second opinion on your mobile API?",
-          description: "Talk to ZSpace about API design that holds up on real mobile networks and across app versions.",
+          description: "Talk to ZSpace Labs about API design that holds up on real mobile networks and across app versions.",
         },
       },
       {
@@ -763,7 +763,7 @@ export const mobilePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Planning for growth?",
-          description: "ZSpace can review your app and backend and identify where growth will cause problems first.",
+          description: "ZSpace Labs can review your app and backend and identify where growth will cause problems first.",
         },
       },
       {
@@ -791,7 +791,7 @@ export const mobilePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want an outside view of your app's scalability?",
-          description: "Talk to ZSpace about practical steps, not a rebuild, to prepare your app for growth.",
+          description: "Talk to ZSpace Labs about practical steps, not a rebuild, to prepare your app for growth.",
         },
       },
       {

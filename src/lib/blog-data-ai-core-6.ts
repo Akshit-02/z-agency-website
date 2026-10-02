@@ -49,7 +49,7 @@ export const aiCorePosts6: BlogPost[] = [
       {
         heading: "Where This Fits",
         body: [
-          "This is the hub for ZSpace's RAG guides. Deeper topics: [[/blogs/rag-chunking-strategies|chunking]], [[/blogs/vector-embeddings-explained|embeddings]], [[/blogs/vector-databases-for-ai|vector databases]], [[/blogs/hybrid-search-for-rag|hybrid search]], [[/blogs/rag-reranking|reranking]], [[/blogs/enterprise-rag-architecture|enterprise RAG architecture]], [[/blogs/graphrag-explained|GraphRAG]] and [[/blogs/rag-vs-fine-tuning|RAG vs fine-tuning]]. For a product view, see [[/blogs/ai-knowledge-base|AI knowledge base]].",
+          "This is the hub for ZSpace Labs' RAG guides. Deeper topics: [[/blogs/rag-chunking-strategies|chunking]], [[/blogs/vector-embeddings-explained|embeddings]], [[/blogs/vector-databases-for-ai|vector databases]], [[/blogs/hybrid-search-for-rag|hybrid search]], [[/blogs/rag-reranking|reranking]], [[/blogs/enterprise-rag-architecture|enterprise RAG architecture]], [[/blogs/graphrag-explained|GraphRAG]] and [[/blogs/rag-vs-fine-tuning|RAG vs fine-tuning]]. For a product view, see [[/blogs/ai-knowledge-base|AI knowledge base]].",
           "For building complete generative AI products around RAG, see [[/blogs/generative-ai-application-development|generative AI application development]].",
         ],
       },
@@ -99,7 +99,7 @@ export const aiCorePosts6: BlogPost[] = [
         ],
         cta: {
           title: "Building an AI assistant on your company's documents?",
-          description: "ZSpace builds RAG systems with permission-aware retrieval, citations and evaluation, connected to the sources your teams already use.",
+          description: "ZSpace Labs builds RAG systems with permission-aware retrieval, citations and evaluation, connected to the sources your teams already use.",
         },
       },
       {
@@ -223,7 +223,7 @@ export const aiCorePosts6: BlogPost[] = [
         ],
         cta: {
           title: "Want a RAG system your team can trust?",
-          description: "Talk to ZSpace about [[/services/ai-automation|RAG development]] and [[/services/website-development|data integration and deployment]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|RAG development]] and [[/services/website-development|data integration and deployment]].",
         },
       },
       {
@@ -316,7 +316,7 @@ export const aiCorePosts6: BlogPost[] = [
         ],
         cta: {
           title: "Unsure whether your AI problem needs RAG or tuning?",
-          description: "ZSpace diagnoses where your system fails and tests the cheapest fix first, from retrieval improvements to fine-tuned models.",
+          description: "ZSpace Labs diagnoses where your system fails and tests the cheapest fix first, from retrieval improvements to fine-tuned models.",
         },
       },
       {
@@ -393,7 +393,7 @@ export const aiCorePosts6: BlogPost[] = [
         ],
         cta: {
           title: "Need the right approach for your AI application?",
-          description: "Talk to ZSpace about [[/services/ai-automation|RAG, fine-tuning and AI application development]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|RAG, fine-tuning and AI application development]].",
         },
       },
       {
@@ -479,7 +479,7 @@ export const aiCorePosts6: BlogPost[] = [
         ],
         cta: {
           title: "Connecting AI to company data without leaking it?",
-          description: "ZSpace builds enterprise RAG with permission sync, incremental updates and audit logging across your document and business systems.",
+          description: "ZSpace Labs builds enterprise RAG with permission sync, incremental updates and audit logging across your document and business systems.",
         },
       },
       {
@@ -569,7 +569,7 @@ export const aiCorePosts6: BlogPost[] = [
         ],
         cta: {
           title: "Planning AI over your organization's knowledge?",
-          description: "Talk to ZSpace about [[/services/ai-automation|enterprise RAG development]] and [[/services/website-development|connectors, APIs and deployment]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|enterprise RAG development]] and [[/services/website-development|connectors, APIs and deployment]].",
         },
       },
       {
@@ -657,7 +657,7 @@ export const aiCorePosts6: BlogPost[] = [
         ],
         cta: {
           title: "Choosing a vector store for your AI application?",
-          description: "ZSpace can benchmark pgvector, dedicated vector databases and search engines on your own data and queries before you commit.",
+          description: "ZSpace Labs can benchmark pgvector, dedicated vector databases and search engines on your own data and queries before you commit.",
         },
       },
       {
@@ -745,7 +745,7 @@ export const aiCorePosts6: BlogPost[] = [
         ],
         cta: {
           title: "Need retrieval infrastructure that scales sensibly?",
-          description: "Talk to ZSpace about [[/services/ai-automation|RAG and vector search development]] and [[/services/website-development|database and backend architecture]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|RAG and vector search development]] and [[/services/website-development|database and backend architecture]].",
         },
       },
       {

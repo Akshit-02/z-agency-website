@@ -78,7 +78,7 @@ export const commercePosts80: BlogPost[] = [
         ],
         cta: {
           title: "Are your reps still quoting from spreadsheets?",
-          description: "ZSpace can build rep tools on top of your B2B store, using the same catalogs, prices and orders, connected to your CRM.",
+          description: "ZSpace Labs can build rep tools on top of your B2B store, using the same catalogs, prices and orders, connected to your CRM.",
         },
       },
       {
@@ -135,7 +135,7 @@ export const commercePosts80: BlogPost[] = [
         ],
         cta: {
           title: "Ready to connect your sales team to your B2B store?",
-          description: "Talk to ZSpace about [[/services/website-development|sales rep portal development]], [[/services/ai-automation|CRM and quote automation]] and [[/services/ui-ux-design|B2B tool design]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|sales rep portal development]], [[/services/ai-automation|CRM and quote automation]] and [[/services/ui-ux-design|B2B tool design]].",
         },
       },
       {
@@ -225,7 +225,7 @@ export const commercePosts80: BlogPost[] = [
         ],
         cta: {
           title: "A key customer asking for punchout?",
-          description: "ZSpace can build cXML or OCI punchout on your B2B platform, map it to customer catalogs and prices and support testing with each buyer.",
+          description: "ZSpace Labs can build cXML or OCI punchout on your B2B platform, map it to customer catalogs and prices and support testing with each buyer.",
         },
       },
       {
@@ -310,7 +310,7 @@ export const commercePosts80: BlogPost[] = [
         ],
         cta: {
           title: "Ready to support procurement-led customers?",
-          description: "Talk to ZSpace about [[/services/website-development|punchout and B2B integration]], [[/services/ai-automation|order intake automation]] and [[/services/shopify-development|B2B commerce builds]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|punchout and B2B integration]], [[/services/ai-automation|order intake automation]] and [[/services/shopify-development|B2B commerce builds]].",
         },
       },
       {
@@ -412,7 +412,7 @@ export const commercePosts80: BlogPost[] = [
         ],
         cta: {
           title: "Planning or replacing a B2B commerce platform?",
-          description: "ZSpace can map your channels, systems of record and B2B rules and recommend an architecture, without a default platform answer.",
+          description: "ZSpace Labs can map your channels, systems of record and B2B rules and recommend an architecture, without a default platform answer.",
         },
       },
       {
@@ -485,7 +485,7 @@ export const commercePosts80: BlogPost[] = [
         ],
         cta: {
           title: "Ready to architect your B2B platform?",
-          description: "Talk to ZSpace about [[/services/website-development|B2B platform engineering]], [[/services/shopify-development|Shopify B2B]] and [[/services/ai-automation|ERP and workflow automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|B2B platform engineering]], [[/services/shopify-development|Shopify B2B]] and [[/services/ai-automation|ERP and workflow automation]].",
         },
       },
       {

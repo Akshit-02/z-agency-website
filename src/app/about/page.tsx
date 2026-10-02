@@ -8,9 +8,9 @@ import { StructuredData } from "@/components/StructuredData";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About ZSpace — A Technology Studio Built Around One Team",
+  title: { absolute: "About ZSpace Labs — A Technology and Digital Product Studio" },
   description:
-    "ZSpace is a technology studio that designs and builds digital products under one roof. Learn how we think about technology, design and working with clients.",
+    "ZSpace Labs is a technology and digital product studio that brings strategy, design and engineering together. Learn how we think about technology, design and working with clients.",
   alternates: { canonical: "/about" },
 };
 
@@ -55,19 +55,19 @@ export default function AboutPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "AboutPage",
-          name: "About ZSpace",
+          name: "About ZSpace Labs",
           url: `${site.url}/about`,
         }}
       />
       <PageHero
-        eyebrow="About ZSpace"
+        eyebrow="About ZSpace Labs"
         title={
           <>
             A technology studio that thinks like a{" "}
             <span className="text-blue">product team</span>, not a vendor.
           </>
         }
-        description="ZSpace was built on a simple idea: businesses shouldn't have to choose between good design and solid engineering. We do both, together, for every project we take on."
+        description="ZSpace Labs is a technology and digital product studio focused on building useful digital experiences, products and systems. We bring strategy, design and engineering together to turn ideas into practical digital solutions."
       />
 
       <section className="border-b border-line py-20 sm:py-28">
@@ -94,7 +94,7 @@ export default function AboutPage() {
             </Reveal>
             <Reveal delay={0.15}>
               <p className="text-pretty text-[1.05rem] leading-relaxed text-ink-soft">
-                That&apos;s the gap ZSpace works in — between an idea and a
+                That&apos;s the gap ZSpace Labs works in — between an idea and a
                 product that&apos;s genuinely ready for the people who&apos;ll use it.
                 We work across websites, mobile apps, AI automation, design
                 and commerce, but the approach stays the same: understand the
@@ -198,7 +198,7 @@ export default function AboutPage() {
           </>
         }
         description="If you're evaluating who to build with, the easiest next step is a conversation about what you're trying to build."
-        primaryLabel="Talk to ZSpace"
+        primaryLabel="Talk to ZSpace Labs"
       />
     </>
   );

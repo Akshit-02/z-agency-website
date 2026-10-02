@@ -109,7 +109,7 @@ export const commercePosts90: BlogPost[] = [
         ],
         cta: {
           title: "Outgrowing your subscription app's billing logic?",
-          description: "ZSpace can map your subscription states, schedules and invoices, and build or integrate a billing layer that your OMS, payments and finance tools can rely on.",
+          description: "ZSpace Labs can map your subscription states, schedules and invoices, and build or integrate a billing layer that your OMS, payments and finance tools can rely on.",
         },
       },
       {
@@ -189,7 +189,7 @@ export const commercePosts90: BlogPost[] = [
         ],
         cta: {
           title: "Need billing you can trust at every renewal?",
-          description: "Talk to ZSpace about [[/services/website-development|subscription billing architecture]], [[/services/shopify-development|Shopify subscription builds]] and [[/services/ai-automation|billing operations automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|subscription billing architecture]], [[/services/shopify-development|Shopify subscription builds]] and [[/services/ai-automation|billing operations automation]].",
         },
       },
       {
@@ -294,7 +294,7 @@ export const commercePosts90: BlogPost[] = [
         ],
         cta: {
           title: "Building loyalty that works online, in app and in store?",
-          description: "ZSpace can design the ledger, rules and redemption flows and integrate them with your commerce platform, POS and customer apps.",
+          description: "ZSpace Labs can design the ledger, rules and redemption flows and integrate them with your commerce platform, POS and customer apps.",
         },
       },
       {
@@ -390,7 +390,7 @@ export const commercePosts90: BlogPost[] = [
         ],
         cta: {
           title: "Planning a loyalty build or migration?",
-          description: "Talk to ZSpace about [[/services/website-development|loyalty platform development]], [[/services/shopify-development|Shopify loyalty integrations]] and [[/services/mobile-app-development|loyalty in your mobile app]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|loyalty platform development]], [[/services/shopify-development|Shopify loyalty integrations]] and [[/services/mobile-app-development|loyalty in your mobile app]].",
         },
       },
       {
@@ -483,7 +483,7 @@ export const commercePosts90: BlogPost[] = [
         ],
         cta: {
           title: "Planning a referral program that does not leak margin?",
-          description: "ZSpace can build attribution, qualification and fraud checks into your store, connected to your loyalty and email tools.",
+          description: "ZSpace Labs can build attribution, qualification and fraud checks into your store, connected to your loyalty and email tools.",
         },
       },
       {
@@ -576,7 +576,7 @@ export const commercePosts90: BlogPost[] = [
         ],
         cta: {
           title: "Want a referral system you can measure and trust?",
-          description: "Talk to ZSpace about [[/services/website-development|referral system development]], [[/services/shopify-development|Shopify referral app setups]] and a [[/services/cro-audit|post-purchase CRO review]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|referral system development]], [[/services/shopify-development|Shopify referral app setups]] and a [[/services/cro-audit|post-purchase CRO review]].",
         },
       },
       {
@@ -675,7 +675,7 @@ export const commercePosts90: BlogPost[] = [
         ],
         cta: {
           title: "Retention tools that do not share the same customer data?",
-          description: "ZSpace can define your customer data model, identity rules and event flows, then connect the tools you already pay for.",
+          description: "ZSpace Labs can define your customer data model, identity rules and event flows, then connect the tools you already pay for.",
         },
       },
       {
@@ -762,7 +762,7 @@ export const commercePosts90: BlogPost[] = [
         ],
         cta: {
           title: "Planning or consolidating your retention stack?",
-          description: "Talk to ZSpace about [[/services/website-development|customer data and integration architecture]], [[/services/ai-automation|retention automation]] and [[/services/shopify-development|Shopify retention app setups]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|customer data and integration architecture]], [[/services/ai-automation|retention automation]] and [[/services/shopify-development|Shopify retention app setups]].",
         },
       },
       {

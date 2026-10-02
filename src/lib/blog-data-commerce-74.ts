@@ -113,7 +113,7 @@ export const commercePosts74: BlogPost[] = [
         ],
         cta: {
           title: "Not sure where your D2C journey loses people?",
-          description: "ZSpace can review your store by traffic source and device and show which parts of the journey need design work first.",
+          description: "ZSpace Labs can review your store by traffic source and device and show which parts of the journey need design work first.",
         },
       },
       {
@@ -188,7 +188,7 @@ export const commercePosts74: BlogPost[] = [
         ],
         cta: {
           title: "Ready to design a clearer D2C experience?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|D2C UX design]], [[/services/shopify-development|Shopify builds]] and [[/services/cro-audit|conversion audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|D2C UX design]], [[/services/shopify-development|Shopify builds]] and [[/services/cro-audit|conversion audits]].",
         },
       },
       {
@@ -298,7 +298,7 @@ export const commercePosts74: BlogPost[] = [
         },
         cta: {
           title: "Want a brand site that still sells clearly?",
-          description: "ZSpace designs D2C storefronts where brand expression and commerce clarity work together, starting from mobile.",
+          description: "ZSpace Labs designs D2C storefronts where brand expression and commerce clarity work together, starting from mobile.",
         },
       },
       {
@@ -371,7 +371,7 @@ export const commercePosts74: BlogPost[] = [
         ],
         cta: {
           title: "Ready to redesign your brand storefront?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|brand-led ecommerce design]], [[/services/shopify-development|Shopify theme development]] and [[/services/website-development|headless storefronts]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|brand-led ecommerce design]], [[/services/shopify-development|Shopify theme development]] and [[/services/website-development|headless storefronts]].",
         },
       },
       {
@@ -463,7 +463,7 @@ export const commercePosts74: BlogPost[] = [
         ],
         cta: {
           title: "Are shoppers struggling to choose between your products?",
-          description: "ZSpace can map your discovery paths, design comparison and quiz flows and test them with real shoppers.",
+          description: "ZSpace Labs can map your discovery paths, design comparison and quiz flows and test them with real shoppers.",
         },
       },
       {
@@ -537,7 +537,7 @@ export const commercePosts74: BlogPost[] = [
         ],
         cta: {
           title: "Ready to make your range easier to choose from?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|discovery and comparison design]], [[/services/shopify-development|Shopify collections and metafields]] and [[/services/cro-audit|discovery audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|discovery and comparison design]], [[/services/shopify-development|Shopify collections and metafields]] and [[/services/cro-audit|discovery audits]].",
         },
       },
       {
@@ -638,7 +638,7 @@ export const commercePosts74: BlogPost[] = [
         ],
         cta: {
           title: "Planning personalization on a small catalog?",
-          description: "ZSpace can help you choose a few treatments worth testing, connect the data and set up honest measurement.",
+          description: "ZSpace Labs can help you choose a few treatments worth testing, connect the data and set up honest measurement.",
         },
       },
       {
@@ -696,7 +696,7 @@ export const commercePosts74: BlogPost[] = [
         ],
         cta: {
           title: "Ready to personalize with data customers trust you with?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify personalization]], [[/services/ai-automation|recommendations and data integration]] and [[/services/cro-audit|testing programmes]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify personalization]], [[/services/ai-automation|recommendations and data integration]] and [[/services/cro-audit|testing programmes]].",
         },
       },
       {
@@ -806,7 +806,7 @@ export const commercePosts74: BlogPost[] = [
         ],
         cta: {
           title: "Reviewing your D2C stack before the next growth stage?",
-          description: "ZSpace can map your current systems and data flows and recommend what to keep, add or remove, without a default answer.",
+          description: "ZSpace Labs can map your current systems and data flows and recommend what to keep, add or remove, without a default answer.",
         },
       },
       {
@@ -882,7 +882,7 @@ export const commercePosts74: BlogPost[] = [
         ],
         cta: {
           title: "Ready to plan a stack that fits your stage?",
-          description: "Talk to ZSpace about [[/services/website-development|D2C architecture and integrations]], [[/services/shopify-development|Shopify and Hydrogen builds]] and [[/services/ai-automation|data and workflow automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|D2C architecture and integrations]], [[/services/shopify-development|Shopify and Hydrogen builds]] and [[/services/ai-automation|data and workflow automation]].",
         },
       },
       {

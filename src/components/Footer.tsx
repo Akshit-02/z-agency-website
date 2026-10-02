@@ -56,7 +56,7 @@ export function Footer() {
               <span className="text-white/60">Scale anywhere.</span>
             </p>
             <p className="mt-6 text-pretty text-[0.9rem] leading-relaxed text-white/50">
-              {site.tagline}
+              {site.footerDescription}
             </p>
             <Link
               href="/contact"
@@ -64,10 +64,10 @@ export function Footer() {
             >
               Start a Project
             </Link>
-            {/* <p className="mt-10 text-[0.8rem] text-white/40">
-              &copy; {new Date().getFullYear()} {site.domain} - All rights
-              reserved
-            </p> */}
+            <p className="mt-10 text-[0.8rem] text-white/40">
+              &copy; {new Date().getFullYear()} {site.name}. All rights
+              reserved.
+            </p>
           </div>
 
           <div>

@@ -22,7 +22,7 @@ function formatSubmittedAt(): string {
 /**
  * Renders a clean, table-based HTML email (inline styles only, since most
  * email clients strip <style> blocks) with a labeled field list, plus a
- * matching plain-text fallback. Colours follow the ZSpace palette.
+ * matching plain-text fallback. Colours follow the ZSpace Labs palette.
  */
 export function buildLeadEmail(opts: { heading: string; fields: EmailField[]; source: string }) {
   const submittedAt = formatSubmittedAt();
@@ -44,7 +44,7 @@ export function buildLeadEmail(opts: { heading: string; fields: EmailField[]; so
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;background-color:#ffffff;border:1px solid #d3d0c8;border-radius:12px;overflow:hidden;">
       <tr>
         <td style="background-color:#0b0c0e;padding:24px 28px;border-bottom:3px solid #c2410c;">
-          <span style="color:#faf9f6;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;">ZSpace</span>
+          <span style="color:#faf9f6;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;">ZSpace Labs</span>
         </td>
       </tr>
       <tr>

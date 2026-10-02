@@ -93,7 +93,7 @@ export const commercePosts41: BlogPost[] = [
         ],
         cta: {
           title: "Customer data but no clear way to use it?",
-          description: "ZSpace helps teams define segments that map to real UX and messaging changes, and test whether they work.",
+          description: "ZSpace Labs helps teams define segments that map to real UX and messaging changes, and test whether they work.",
         },
       },
       {
@@ -187,7 +187,7 @@ export const commercePosts41: BlogPost[] = [
         ],
         cta: {
           title: "Ready to put segmentation to work?",
-          description: "Talk to ZSpace about [[/services/cro-audit|segmentation and experimentation]], [[/services/ui-ux-design|personalized UX]] and [[/services/ai-automation|predictive models and automation]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|segmentation and experimentation]], [[/services/ui-ux-design|personalized UX]] and [[/services/ai-automation|predictive models and automation]].",
         },
       },
       {
@@ -265,7 +265,7 @@ export const commercePosts41: BlogPost[] = [
         ],
         cta: {
           title: "Unsure whether to invest in loyalty or personalization?",
-          description: "ZSpace analyses your repeat purchase data and customer journeys to show where each would actually help.",
+          description: "ZSpace Labs analyses your repeat purchase data and customer journeys to show where each would actually help.",
         },
       },
       {
@@ -333,7 +333,7 @@ export const commercePosts41: BlogPost[] = [
         ],
         cta: {
           title: "Ready to choose the right retention tools?",
-          description: "Talk to ZSpace about [[/services/cro-audit|retention analysis and testing]] and [[/services/ui-ux-design|loyalty and personalization UX]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|retention analysis and testing]] and [[/services/ui-ux-design|loyalty and personalization UX]].",
         },
       },
       {

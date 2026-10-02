@@ -97,7 +97,7 @@ export const commercePosts60: BlogPost[] = [
         },
         cta: {
           title: "Planning Plus-specific development?",
-          description: "ZSpace builds checkout extensions, Shopify Functions and B2B setups for Shopify Plus stores.",
+          description: "ZSpace Labs builds checkout extensions, Shopify Functions and B2B setups for Shopify Plus stores.",
         },
       },
       {
@@ -211,7 +211,7 @@ export const commercePosts60: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build on Shopify Plus?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify Plus development]], [[/services/website-development|integrations and headless builds]] and [[/services/ai-automation|workflow automation]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify Plus development]], [[/services/website-development|integrations and headless builds]] and [[/services/ai-automation|workflow automation]].",
         },
       },
       {
@@ -296,7 +296,7 @@ export const commercePosts60: BlogPost[] = [
         ],
         cta: {
           title: "Unsure whether headless is worth it?",
-          description: "ZSpace assesses your requirements, team and costs to recommend a theme, Hydrogen or another headless stack.",
+          description: "ZSpace Labs assesses your requirements, team and costs to recommend a theme, Hydrogen or another headless stack.",
         },
       },
       {
@@ -407,7 +407,7 @@ export const commercePosts60: BlogPost[] = [
         ],
         cta: {
           title: "Ready to choose your Shopify frontend?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify themes and Hydrogen]], [[/services/website-development|headless builds]] and [[/services/ui-ux-design|storefront design]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify themes and Hydrogen]], [[/services/website-development|headless builds]] and [[/services/ui-ux-design|storefront design]].",
         },
       },
       {
@@ -503,7 +503,7 @@ export const commercePosts60: BlogPost[] = [
         ],
         cta: {
           title: "Not sure how accessible your store is?",
-          description: "ZSpace audits ecommerce journeys with keyboard and screen reader testing and fixes issues in your theme or code.",
+          description: "ZSpace Labs audits ecommerce journeys with keyboard and screen reader testing and fixes issues in your theme or code.",
         },
       },
       {
@@ -601,7 +601,7 @@ export const commercePosts60: BlogPost[] = [
         ],
         cta: {
           title: "Ready to make your store accessible?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|accessible ecommerce design]], [[/services/website-development|accessibility fixes in code]] and [[/services/shopify-development|Shopify theme accessibility]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|accessible ecommerce design]], [[/services/website-development|accessibility fixes in code]] and [[/services/shopify-development|Shopify theme accessibility]].",
         },
       },
       {
@@ -718,7 +718,7 @@ export const commercePosts60: BlogPost[] = [
         ],
         cta: {
           title: "Want a professional accessibility audit?",
-          description: "ZSpace tests ecommerce journeys against WCAG 2.2 AA and prioritizes fixes by impact on shoppers.",
+          description: "ZSpace Labs tests ecommerce journeys against WCAG 2.2 AA and prioritizes fixes by impact on shoppers.",
         },
       },
       {
@@ -869,7 +869,7 @@ export const commercePosts60: BlogPost[] = [
         ],
         cta: {
           title: "Ready to work through your store?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|accessibility audits and design]], [[/services/website-development|accessible front-end fixes]] and [[/services/shopify-development|Shopify theme remediation]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|accessibility audits and design]], [[/services/website-development|accessible front-end fixes]] and [[/services/shopify-development|Shopify theme remediation]].",
         },
       },
       {

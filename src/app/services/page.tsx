@@ -12,7 +12,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Services — Web, Mobile, AI Automation, Design, Shopify & CRO",
   description:
-    "ZSpace offers full-stack website development, mobile app development, AI automation, UI/UX design, Shopify development and CRO audits for growing businesses.",
+    "ZSpace Labs offers full-stack website development, mobile app development, AI automation, UI/UX design, Shopify development and CRO audits for growing businesses.",
   alternates: { canonical: "/services" },
 };
 

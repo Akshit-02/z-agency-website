@@ -29,11 +29,11 @@ export async function deliverContactMessage(payload: ContactValues): Promise<Sen
       { label: "Project Details", value: payload.details },
       { label: "Source Page", value: payload.sourcePage ?? "" },
     ],
-    source: "ZSpace Website - Contact Form",
+    source: "ZSpace Labs Website - Contact Form",
   });
 
   const result = await sendLeadEmail({
-    subject: `New Enquiry: ${payload.need} | ${payload.name} | ZSpace`,
+    subject: `New Enquiry: ${payload.need} | ${payload.name} | ZSpace Labs`,
     html,
     text,
     replyTo: payload.email,

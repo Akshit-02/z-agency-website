@@ -210,7 +210,7 @@ export const aiAgentPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want to explore what an AI agent could automate in your marketing operations?",
-          description: "ZSpace builds custom AI agents that connect CRM, ad platforms and analytics to automate lead qualification, campaign monitoring and reporting, with approval built in for anything touching budget or brand.",
+          description: "ZSpace Labs builds custom AI agents that connect CRM, ad platforms and analytics to automate lead qualification, campaign monitoring and reporting, with approval built in for anything touching budget or brand.",
         },
       },
       {
@@ -412,7 +412,7 @@ export const aiAgentPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want to explore what an AI agent could automate in your property operations?",
-          description: "ZSpace builds custom AI agents that connect property management, maintenance and payment systems to automate tenant communication and request handling, with clear escalation for anything that needs a person.",
+          description: "ZSpace Labs builds custom AI agents that connect property management, maintenance and payment systems to automate tenant communication and request handling, with clear escalation for anything that needs a person.",
         },
       },
       {
@@ -617,7 +617,7 @@ export const aiAgentPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want to explore what an AI agent could automate in your finance operations?",
-          description: "ZSpace builds custom AI agents that connect accounting, banking and ERP systems to automate reconciliation, AP/AR and reporting, with payment approval always kept with an authorized person.",
+          description: "ZSpace Labs builds custom AI agents that connect accounting, banking and ERP systems to automate reconciliation, AP/AR and reporting, with payment approval always kept with an authorized person.",
         },
       },
       {
@@ -818,7 +818,7 @@ export const aiAgentPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want to explore what an AI agent could automate in your agency's quoting or servicing process?",
-          description: "ZSpace builds custom AI agents that connect agency management systems and carrier portals to automate submission handling, quote comparison and routine servicing, with recommendations always reviewed by a licensed broker.",
+          description: "ZSpace Labs builds custom AI agents that connect agency management systems and carrier portals to automate submission handling, quote comparison and routine servicing, with recommendations always reviewed by a licensed broker.",
         },
       },
       {
@@ -1030,7 +1030,7 @@ export const aiAgentPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want to explore what an AI agent could automate for your brand?",
-          description: "ZSpace builds custom AI agents and Shopify integrations that connect support, order and marketing data to help a lean team handle growth without a proportional increase in headcount.",
+          description: "ZSpace Labs builds custom AI agents and Shopify integrations that connect support, order and marketing data to help a lean team handle growth without a proportional increase in headcount.",
         },
       },
       {
@@ -1231,7 +1231,7 @@ export const aiAgentPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want to explore what an AI agent could automate in your customer lifecycle?",
-          description: "ZSpace builds custom AI agents that connect product usage, CRM and support data to automate triage, onboarding and churn-risk workflows across your customer lifecycle.",
+          description: "ZSpace Labs builds custom AI agents that connect product usage, CRM and support data to automate triage, onboarding and churn-risk workflows across your customer lifecycle.",
         },
       },
       {
@@ -1446,7 +1446,7 @@ export const aiAgentPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want to explore what an AI agent could automate in your practice?",
-          description: "ZSpace builds custom AI agents that connect accounting, document and practice management systems to automate bookkeeping, reconciliation and close preparation, with every output reviewed by your team.",
+          description: "ZSpace Labs builds custom AI agents that connect accounting, document and practice management systems to automate bookkeeping, reconciliation and close preparation, with every output reviewed by your team.",
         },
       },
       {
@@ -1656,7 +1656,7 @@ export const aiAgentPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want to explore what an AI agent could automate in your practice?",
-          description: "ZSpace builds custom AI agents that connect your CRM, document systems and internal knowledge base to automate research, proposal preparation and knowledge retrieval.",
+          description: "ZSpace Labs builds custom AI agents that connect your CRM, document systems and internal knowledge base to automate research, proposal preparation and knowledge retrieval.",
         },
       },
       {
@@ -1854,7 +1854,7 @@ export const aiAgentPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want to explore what an AI agent could automate in your restaurant or F&B operations?",
-          description: "ZSpace builds custom AI agents and apps that connect POS, reservation and inventory systems to automate ordering, customer communication and demand forecasting.",
+          description: "ZSpace Labs builds custom AI agents and apps that connect POS, reservation and inventory systems to automate ordering, customer communication and demand forecasting.",
         },
       },
       {
@@ -2061,7 +2061,7 @@ export const aiAgentPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want to explore what an AI agent could automate in your agency's citizen services?",
-          description: "ZSpace builds custom AI agents that connect case-management and document systems to support citizen service navigation and administrative coordination, with decision authority always kept with accountable staff.",
+          description: "ZSpace Labs builds custom AI agents that connect case-management and document systems to support citizen service navigation and administrative coordination, with decision authority always kept with accountable staff.",
         },
       },
       {

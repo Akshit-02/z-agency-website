@@ -103,7 +103,7 @@ export const commercePosts81: BlogPost[] = [
         ],
         cta: {
           title: "Integrations breaking every time something changes?",
-          description: "ZSpace can design an event model and messaging setup that lets your commerce systems react reliably without tight coupling.",
+          description: "ZSpace Labs can design an event model and messaging setup that lets your commerce systems react reliably without tight coupling.",
         },
       },
       {
@@ -185,7 +185,7 @@ export const commercePosts81: BlogPost[] = [
         ],
         cta: {
           title: "Ready to make your commerce integrations event-driven?",
-          description: "Talk to ZSpace about [[/services/website-development|event-driven commerce architecture]], [[/services/ai-automation|workflow and integration automation]] and [[/services/shopify-development|Shopify webhook integrations]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|event-driven commerce architecture]], [[/services/ai-automation|workflow and integration automation]] and [[/services/shopify-development|Shopify webhook integrations]].",
         },
       },
       {
@@ -285,7 +285,7 @@ export const commercePosts81: BlogPost[] = [
         },
         cta: {
           title: "Considering splitting your commerce stack into services?",
-          description: "ZSpace can assess whether microservices fit your scale and teams, and design boundaries and operations if they do.",
+          description: "ZSpace Labs can assess whether microservices fit your scale and teams, and design boundaries and operations if they do.",
         },
       },
       {
@@ -363,7 +363,7 @@ export const commercePosts81: BlogPost[] = [
         ],
         cta: {
           title: "Ready to design services that teams can own?",
-          description: "Talk to ZSpace about [[/services/website-development|commerce architecture and platform engineering]], [[/services/ai-automation|event and workflow systems]] and [[/services/mobile-app-development|APIs for apps]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|commerce architecture and platform engineering]], [[/services/ai-automation|event and workflow systems]] and [[/services/mobile-app-development|APIs for apps]].",
         },
       },
       {
@@ -444,7 +444,7 @@ export const commercePosts81: BlogPost[] = [
         ],
         cta: {
           title: "Opening APIs to apps or partners?",
-          description: "ZSpace can design your gateway policies (auth, limits, versioning and caching) so APIs stay secure without slowing customers down.",
+          description: "ZSpace Labs can design your gateway policies (auth, limits, versioning and caching) so APIs stay secure without slowing customers down.",
         },
       },
       {
@@ -503,7 +503,7 @@ export const commercePosts81: BlogPost[] = [
         ],
         cta: {
           title: "Ready to put a reliable front door on your APIs?",
-          description: "Talk to ZSpace about [[/services/website-development|API platform engineering]], [[/services/mobile-app-development|app API design]] and [[/services/ai-automation|partner integration]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|API platform engineering]], [[/services/mobile-app-development|app API design]] and [[/services/ai-automation|partner integration]].",
         },
       },
       {
@@ -587,7 +587,7 @@ export const commercePosts81: BlogPost[] = [
         ],
         cta: {
           title: "Losing or duplicating orders from webhooks?",
-          description: "ZSpace can rebuild your webhook handling with verification, queues, idempotency and reconciliation, and add the monitoring to prove it works.",
+          description: "ZSpace Labs can rebuild your webhook handling with verification, queues, idempotency and reconciliation, and add the monitoring to prove it works.",
         },
       },
       {
@@ -682,7 +682,7 @@ export const commercePosts81: BlogPost[] = [
         ],
         cta: {
           title: "Ready to make webhook integrations dependable?",
-          description: "Talk to ZSpace about [[/services/website-development|integration engineering]], [[/services/shopify-development|Shopify app and webhook development]] and [[/services/ai-automation|event-driven automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|integration engineering]], [[/services/shopify-development|Shopify app and webhook development]] and [[/services/ai-automation|event-driven automation]].",
         },
       },
       {

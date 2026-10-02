@@ -87,7 +87,7 @@ export const aiOpsPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want safer releases for your AI features?",
-          description: "ZSpace sets up flags, staged rollouts and monitoring for model and prompt changes. See [[/services/ai-automation|AI development services]].",
+          description: "ZSpace Labs sets up flags, staged rollouts and monitoring for model and prompt changes. See [[/services/ai-automation|AI development services]].",
         },
       },
       {
@@ -185,7 +185,7 @@ export const aiOpsPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Facing a model migration or deprecation deadline?",
-          description: "Talk to ZSpace about a [[/services/ai-automation|planned model migration]] with evaluation, shadow testing and staged rollout.",
+          description: "Talk to ZSpace Labs about a [[/services/ai-automation|planned model migration]] with evaluation, shadow testing and staged rollout.",
         },
       },
       {
@@ -277,7 +277,7 @@ export const aiOpsPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Is your data holding back your AI plans?",
-          description: "ZSpace designs data pipelines, document processing and retrieval infrastructure for AI applications. See [[/services/ai-automation|AI development services]].",
+          description: "ZSpace Labs designs data pipelines, document processing and retrieval infrastructure for AI applications. See [[/services/ai-automation|AI development services]].",
         },
       },
       {
@@ -376,7 +376,7 @@ export const aiOpsPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Planning the data foundation for AI?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI data architecture]] tied to the use cases you want to launch first.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI data architecture]] tied to the use cases you want to launch first.",
         },
       },
       {
@@ -459,7 +459,7 @@ export const aiOpsPosts3: BlogPost[] = [
         },
         cta: {
           title: "Need dependable data flows behind your AI?",
-          description: "ZSpace builds data pipelines, validation and indexing for AI applications. See [[/services/ai-automation|AI engineering services]].",
+          description: "ZSpace Labs builds data pipelines, validation and indexing for AI applications. See [[/services/ai-automation|AI engineering services]].",
         },
       },
       {
@@ -546,7 +546,7 @@ export const aiOpsPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want a review of your AI data pipelines?",
-          description: "Talk to ZSpace about [[/services/ai-automation|pipeline reliability]] for retrieval, features and evaluation data.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|pipeline reliability]] for retrieval, features and evaluation data.",
         },
       },
       {
@@ -634,7 +634,7 @@ export const aiOpsPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Connecting AI to many internal systems?",
-          description: "ZSpace builds permission-aware connectors and ingestion pipelines for AI assistants and agents. See [[/services/ai-automation|AI integration services]].",
+          description: "ZSpace Labs builds permission-aware connectors and ingestion pipelines for AI assistants and agents. See [[/services/ai-automation|AI integration services]].",
         },
       },
       {
@@ -718,7 +718,7 @@ export const aiOpsPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Need help connecting your data to AI safely?",
-          description: "Talk to ZSpace about [[/services/ai-automation|data ingestion for AI assistants]] with permissions, freshness and monitoring built in.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|data ingestion for AI assistants]] with permissions, freshness and monitoring built in.",
         },
       },
       {

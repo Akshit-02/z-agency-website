@@ -99,7 +99,7 @@ export const commercePosts75: BlogPost[] = [
         ],
         cta: {
           title: "Planning to connect your stores and online channels?",
-          description: "ZSpace can map your systems, stock flows and store processes and recommend which omnichannel capability to launch first.",
+          description: "ZSpace Labs can map your systems, stock flows and store processes and recommend which omnichannel capability to launch first.",
         },
       },
       {
@@ -177,7 +177,7 @@ export const commercePosts75: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build an omnichannel roadmap?",
-          description: "Talk to ZSpace about [[/services/website-development|retail commerce integration]], [[/services/shopify-development|Shopify and POS setups]] and [[/services/ui-ux-design|omnichannel customer experience design]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|retail commerce integration]], [[/services/shopify-development|Shopify and POS setups]] and [[/services/ui-ux-design|omnichannel customer experience design]].",
         },
       },
       {
@@ -285,7 +285,7 @@ export const commercePosts75: BlogPost[] = [
         ],
         cta: {
           title: "Untangling systems that don't agree on stock or orders?",
-          description: "ZSpace can map your current data flows, define systems of record and design the integration layer that keeps channels consistent.",
+          description: "ZSpace Labs can map your current data flows, define systems of record and design the integration layer that keeps channels consistent.",
         },
       },
       {
@@ -362,7 +362,7 @@ export const commercePosts75: BlogPost[] = [
         ],
         cta: {
           title: "Ready to design your omnichannel architecture?",
-          description: "Talk to ZSpace about [[/services/website-development|commerce architecture and integrations]], [[/services/ai-automation|event-driven automation]] and [[/services/shopify-development|Shopify and POS integration]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|commerce architecture and integrations]], [[/services/ai-automation|event-driven automation]] and [[/services/shopify-development|Shopify and POS integration]].",
         },
       },
       {
@@ -450,7 +450,7 @@ export const commercePosts75: BlogPost[] = [
         ],
         cta: {
           title: "Planning BOPIS across your stores?",
-          description: "ZSpace can design the inventory, routing and store app flows and help you pilot them before rolling out.",
+          description: "ZSpace Labs can design the inventory, routing and store app flows and help you pilot them before rolling out.",
         },
       },
       {
@@ -528,7 +528,7 @@ export const commercePosts75: BlogPost[] = [
         ],
         cta: {
           title: "Ready to launch store pickup?",
-          description: "Talk to ZSpace about [[/services/website-development|BOPIS integration and store apps]], [[/services/shopify-development|Shopify local pickup setups]] and [[/services/ui-ux-design|pickup experience design]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|BOPIS integration and store apps]], [[/services/shopify-development|Shopify local pickup setups]] and [[/services/ui-ux-design|pickup experience design]].",
         },
       },
       {
@@ -614,7 +614,7 @@ export const commercePosts75: BlogPost[] = [
         ],
         cta: {
           title: "Stores struggling to process online returns?",
-          description: "ZSpace can connect your POS or store app to online orders and refunds and design a return flow staff can complete quickly.",
+          description: "ZSpace Labs can connect your POS or store app to online orders and refunds and design a return flow staff can complete quickly.",
         },
       },
       {
@@ -679,7 +679,7 @@ export const commercePosts75: BlogPost[] = [
         ],
         cta: {
           title: "Ready to connect returns across channels?",
-          description: "Talk to ZSpace about [[/services/website-development|POS and returns integration]], [[/services/shopify-development|Shopify POS setups]] and [[/services/ui-ux-design|store workflow design]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|POS and returns integration]], [[/services/shopify-development|Shopify POS setups]] and [[/services/ui-ux-design|store workflow design]].",
         },
       },
       {
@@ -765,7 +765,7 @@ export const commercePosts75: BlogPost[] = [
         ],
         cta: {
           title: "Want pickup that customers trust?",
-          description: "ZSpace can design and test your click and collect journey from product page to handover, on real devices and in real stores.",
+          description: "ZSpace Labs can design and test your click and collect journey from product page to handover, on real devices and in real stores.",
         },
       },
       {
@@ -835,7 +835,7 @@ export const commercePosts75: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve your pickup experience?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|omnichannel UX design]], [[/services/cro-audit|checkout and fulfilment option audits]] and [[/services/shopify-development|Shopify pickup setups]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|omnichannel UX design]], [[/services/cro-audit|checkout and fulfilment option audits]] and [[/services/shopify-development|Shopify pickup setups]].",
         },
       },
       {

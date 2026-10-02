@@ -110,7 +110,7 @@ export const commercePosts54: BlogPost[] = [
         ],
         cta: {
           title: "Customer data spread across too many tools?",
-          description: "ZSpace builds customer tables, segment models and reports that marketing and merchandising teams can act on.",
+          description: "ZSpace Labs builds customer tables, segment models and reports that marketing and merchandising teams can act on.",
         },
       },
       {
@@ -208,7 +208,7 @@ export const commercePosts54: BlogPost[] = [
         ],
         cta: {
           title: "Want customer analytics your team will use?",
-          description: "Talk to ZSpace about [[/services/cro-audit|analytics and conversion audits]], [[/services/website-development|data and tracking implementation]] and [[/services/ai-automation|reporting automation]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|analytics and conversion audits]], [[/services/website-development|data and tracking implementation]] and [[/services/ai-automation|reporting automation]].",
         },
       },
       {
@@ -312,7 +312,7 @@ export const commercePosts54: BlogPost[] = [
         },
         cta: {
           title: "Not sure whether your retention is improving?",
-          description: "ZSpace sets up cohort retention reporting from your order data, with definitions your team agrees on.",
+          description: "ZSpace Labs sets up cohort retention reporting from your order data, with definitions your team agrees on.",
         },
       },
       {
@@ -394,7 +394,7 @@ export const commercePosts54: BlogPost[] = [
         ],
         cta: {
           title: "Ready to measure retention properly?",
-          description: "Talk to ZSpace about [[/services/cro-audit|retention and analytics audits]], [[/services/website-development|data pipelines]] and [[/services/ai-automation|automated retention reporting]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|retention and analytics audits]], [[/services/website-development|data pipelines]] and [[/services/ai-automation|automated retention reporting]].",
         },
       },
       {
@@ -488,7 +488,7 @@ export const commercePosts54: BlogPost[] = [
         },
         cta: {
           title: "Want to know why customers stop buying?",
-          description: "ZSpace combines order, returns and support data to find churn drivers and design tests around them.",
+          description: "ZSpace Labs combines order, returns and support data to find churn drivers and design tests around them.",
         },
       },
       {
@@ -559,7 +559,7 @@ export const commercePosts54: BlogPost[] = [
         ],
         cta: {
           title: "Ready to reduce churn with evidence?",
-          description: "Talk to ZSpace about [[/services/cro-audit|churn and retention analysis]], [[/services/ai-automation|risk scoring and lifecycle automation]] and [[/services/website-development|data pipelines]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|churn and retention analysis]], [[/services/ai-automation|risk scoring and lifecycle automation]] and [[/services/website-development|data pipelines]].",
         },
       },
       {
@@ -650,7 +650,7 @@ export const commercePosts54: BlogPost[] = [
         ],
         cta: {
           title: "Channel reports that don't add up?",
-          description: "ZSpace audits tracking and attribution setups so budget decisions rest on reconciled numbers.",
+          description: "ZSpace Labs audits tracking and attribution setups so budget decisions rest on reconciled numbers.",
         },
       },
       {
@@ -734,7 +734,7 @@ export const commercePosts54: BlogPost[] = [
         ],
         cta: {
           title: "Want attribution you can base budgets on?",
-          description: "Talk to ZSpace about [[/services/cro-audit|tracking and attribution audits]], [[/services/website-development|analytics implementation]] and [[/services/ai-automation|automated reporting]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|tracking and attribution audits]], [[/services/website-development|analytics implementation]] and [[/services/ai-automation|automated reporting]].",
         },
       },
       {
@@ -825,7 +825,7 @@ export const commercePosts54: BlogPost[] = [
         ],
         cta: {
           title: "Unsure which attribution view to trust?",
-          description: "ZSpace reviews tracking, models and reporting so channel decisions rest on consistent numbers.",
+          description: "ZSpace Labs reviews tracking, models and reporting so channel decisions rest on consistent numbers.",
         },
       },
       {
@@ -913,7 +913,7 @@ export const commercePosts54: BlogPost[] = [
         ],
         cta: {
           title: "Ready to align attribution and budget decisions?",
-          description: "Talk to ZSpace about [[/services/cro-audit|attribution audits]], [[/services/website-development|tracking implementation]] and [[/services/ai-automation|reporting automation]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|attribution audits]], [[/services/website-development|tracking implementation]] and [[/services/ai-automation|reporting automation]].",
         },
       },
       {
@@ -1013,7 +1013,7 @@ export const commercePosts54: BlogPost[] = [
         },
         cta: {
           title: "Planning a warehouse for your store?",
-          description: "ZSpace designs ecommerce data pipelines and models with tested definitions for revenue, margin and customers.",
+          description: "ZSpace Labs designs ecommerce data pipelines and models with tested definitions for revenue, margin and customers.",
         },
       },
       {
@@ -1091,7 +1091,7 @@ export const commercePosts54: BlogPost[] = [
         ],
         cta: {
           title: "Ready to decide whether a warehouse fits?",
-          description: "Talk to ZSpace about [[/services/website-development|data pipelines and warehouse builds]], [[/services/ai-automation|reporting and model automation]] and [[/services/cro-audit|analytics audits]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|data pipelines and warehouse builds]], [[/services/ai-automation|reporting and model automation]] and [[/services/cro-audit|analytics audits]].",
         },
       },
       {

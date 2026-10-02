@@ -82,7 +82,7 @@ export const commercePosts40: BlogPost[] = [
         ],
         cta: {
           title: "Members not using their rewards?",
-          description: "ZSpace designs loyalty experiences that make earning and redeeming obvious across the store.",
+          description: "ZSpace Labs designs loyalty experiences that make earning and redeeming obvious across the store.",
         },
       },
       {
@@ -162,7 +162,7 @@ export const commercePosts40: BlogPost[] = [
         ],
         cta: {
           title: "Ready to redesign your loyalty experience?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|loyalty UX]], [[/services/cro-audit|retention testing]] and [[/services/shopify-development|Shopify loyalty integration]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|loyalty UX]], [[/services/cro-audit|retention testing]] and [[/services/shopify-development|Shopify loyalty integration]].",
         },
       },
       {
@@ -254,7 +254,7 @@ export const commercePosts40: BlogPost[] = [
         ],
         cta: {
           title: "Customers contacting support for things they could do themselves?",
-          description: "ZSpace designs customer accounts around the post-purchase tasks that generate the most contacts.",
+          description: "ZSpace Labs designs customer accounts around the post-purchase tasks that generate the most contacts.",
         },
       },
       {
@@ -319,7 +319,7 @@ export const commercePosts40: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve your customer account?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|account UX]], [[/services/shopify-development|Shopify customer accounts]] and [[/services/cro-audit|retention audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|account UX]], [[/services/shopify-development|Shopify customer accounts]] and [[/services/cro-audit|retention audits]].",
         },
       },
       {
@@ -398,7 +398,7 @@ export const commercePosts40: BlogPost[] = [
         ],
         cta: {
           title: "Repeat customers still reordering the long way?",
-          description: "ZSpace designs reorder features that turn repeat purchases into a few taps.",
+          description: "ZSpace Labs designs reorder features that turn repeat purchases into a few taps.",
         },
       },
       {
@@ -467,7 +467,7 @@ export const commercePosts40: BlogPost[] = [
         ],
         cta: {
           title: "Ready to make reordering effortless?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|account and reorder UX]], [[/services/cro-audit|repeat purchase optimization]] and [[/services/shopify-development|Shopify reorder features]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|account and reorder UX]], [[/services/cro-audit|repeat purchase optimization]] and [[/services/shopify-development|Shopify reorder features]].",
         },
       },
       {
@@ -548,7 +548,7 @@ export const commercePosts40: BlogPost[] = [
         ],
         cta: {
           title: "Wishlists saved but never revisited?",
-          description: "ZSpace designs wishlists with the price, stock and alert features that bring shoppers back.",
+          description: "ZSpace Labs designs wishlists with the price, stock and alert features that bring shoppers back.",
         },
       },
       {
@@ -606,7 +606,7 @@ export const commercePosts40: BlogPost[] = [
         ],
         cta: {
           title: "Ready to design wishlists that drive return visits?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|wishlist and account UX]], [[/services/cro-audit|retention testing]] and [[/services/shopify-development|Shopify wishlist setup]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|wishlist and account UX]], [[/services/cro-audit|retention testing]] and [[/services/shopify-development|Shopify wishlist setup]].",
         },
       },
       {

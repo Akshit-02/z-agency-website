@@ -84,7 +84,7 @@ export const shopifyCroPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want your checkout reviewed against real completion data?",
-          description: "ZSpace can audit completed-checkout rate by device and traffic source, and identify exactly where checkout friction is costing you revenue.",
+          description: "ZSpace Labs can audit completed-checkout rate by device and traffic source, and identify exactly where checkout friction is costing you revenue.",
         },
       },
       {
@@ -190,7 +190,7 @@ export const shopifyCroPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want your mobile funnel checked against real device behavior?",
-          description: "ZSpace can audit mobile-specific conversion data and session recordings to pinpoint exactly where mobile visitors are struggling.",
+          description: "ZSpace Labs can audit mobile-specific conversion data and session recordings to pinpoint exactly where mobile visitors are struggling.",
         },
       },
       {
@@ -309,7 +309,7 @@ export const shopifyCroPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Is your Shopify store slower than it should be?",
-          description: "ZSpace audits themes, apps and scripts against real-user data and fixes the causes, not just the score.",
+          description: "ZSpace Labs audits themes, apps and scripts against real-user data and fixes the causes, not just the score.",
         },
       },
       {
@@ -381,7 +381,7 @@ export const shopifyCroPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want a faster store without losing features?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify development]] and performance work tied to [[/services/cro-audit|conversion data]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify development]] and performance work tied to [[/services/cro-audit|conversion data]].",
         },
       },
       {
@@ -413,7 +413,7 @@ export const shopifyCroPosts4: BlogPost[] = [
       { q: "How many session recordings should I watch before drawing a conclusion?", a: "Enough to see a consistent, repeated pattern — a single recording is an anecdote, not evidence of a widespread issue." },
       { q: "Is rage-clicking always a sign of a problem?", a: "Usually, but not always — confirm it's happening on an element that should be interactive and isn't responding, rather than assuming every rage click reflects the same underlying issue." },
       { q: "Should I act on a heatmap finding without further evidence?", a: "No — treat a heatmap pattern as a hypothesis worth testing, not a confirmed cause. Pairing it with funnel data or a direct test avoids acting on a misread pattern." },
-      { q: "How does this connect to the broader CRO audit?", a: "Heatmap and session-recording evidence feeds the Observe step of the [[/blogs/shopify-cro-audit|ZSpace CRO Audit Framework]], alongside quantitative funnel data." },
+      { q: "How does this connect to the broader CRO audit?", a: "Heatmap and session-recording evidence feeds the Observe step of the [[/blogs/shopify-cro-audit|ZSpace Labs CRO Audit Framework]], alongside quantitative funnel data." },
     ],
     content: [
       {
@@ -455,7 +455,7 @@ export const shopifyCroPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want your heatmap and recording data interpreted correctly?",
-          description: "ZSpace can review session evidence alongside your funnel data to separate a real pattern from noise, correlation or bot contamination.",
+          description: "ZSpace Labs can review session evidence alongside your funnel data to separate a real pattern from noise, correlation or bot contamination.",
         },
       },
       {
@@ -475,7 +475,7 @@ export const shopifyCroPosts4: BlogPost[] = [
       {
         heading: "Where This Fits in a Full Audit",
         body: [
-          "Heatmap and session-recording evidence is exactly what the Observe step of the [[/blogs/shopify-cro-audit|ZSpace CRO Audit Framework]] is built around — behavioral evidence sitting alongside, not replacing, the quantitative funnel data from the Measure step.",
+          "Heatmap and session-recording evidence is exactly what the Observe step of the [[/blogs/shopify-cro-audit|ZSpace Labs CRO Audit Framework]] is built around — behavioral evidence sitting alongside, not replacing, the quantitative funnel data from the Measure step.",
         ],
         table: croAuditFrameworkTable,
         cta: {
@@ -563,7 +563,7 @@ export const shopifyCroPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want your full customer journey mapped and evidenced?",
-          description: "ZSpace can map your specific journey stages against real data and identify where the biggest gaps actually are.",
+          description: "ZSpace Labs can map your specific journey stages against real data and identify where the biggest gaps actually are.",
         },
       },
       {
@@ -654,7 +654,7 @@ export const shopifyCroPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want your CTA hierarchy reviewed page by page?",
-          description: "ZSpace can audit CTA clarity and placement across your key pages against real click and conversion data.",
+          description: "ZSpace Labs can audit CTA clarity and placement across your key pages against real click and conversion data.",
         },
       },
       {
@@ -749,7 +749,7 @@ export const shopifyCroPosts4: BlogPost[] = [
         visual: { variant: "grid", accent: "blue", caption: "Trust signals work best distributed at the specific moments hesitation naturally occurs, not concentrated on a single dedicated page." },
         cta: {
           title: "Want your trust signals reviewed against real conversion data?",
-          description: "ZSpace can audit trust-signal placement and effectiveness across your funnel, not just check for their presence.",
+          description: "ZSpace Labs can audit trust-signal placement and effectiveness across your funnel, not just check for their presence.",
         },
       },
       {
@@ -807,7 +807,7 @@ export const shopifyCroPosts4: BlogPost[] = [
       { q: "How long should a Shopify A/B test run?", a: "Long enough to reach a reasonable sample size and cover a full purchase cycle (including at least one full week) — see the [[/blogs/shopify-ab-testing|Shopify A/B testing guide]] for the detail on structuring test duration." },
       { q: "Should I test multiple ideas from this list at once?", a: "Generally no — testing too many changes simultaneously makes it hard to know what actually caused a result. Prioritize and test in sequence, or use a proper multivariate setup if you have the traffic for it." },
       { q: "What's the risk column in each test idea for?", a: "It flags a plausible unintended side effect worth watching for — like a checkout simplification test also risking higher return rate if less information is collected upfront." },
-      { q: "How does this connect to the broader CRO audit?", a: "Testing is the Test step of the [[/blogs/shopify-cro-audit|ZSpace CRO Audit Framework]] — these ideas are hypotheses to validate, not conclusions from an audit already completed." },
+      { q: "How does this connect to the broader CRO audit?", a: "Testing is the Test step of the [[/blogs/shopify-cro-audit|ZSpace Labs CRO Audit Framework]] — these ideas are hypotheses to validate, not conclusions from an audit already completed." },
     ],
     content: [
       {
@@ -862,7 +862,7 @@ export const shopifyCroPosts4: BlogPost[] = [
         },
         cta: {
           title: "Want help structuring and validating these tests properly?",
-          description: "ZSpace can help design a proper test — sample size, duration and metric tracking — rather than a subjective before/after comparison.",
+          description: "ZSpace Labs can help design a proper test — sample size, duration and metric tracking — rather than a subjective before/after comparison.",
         },
       },
       {
@@ -973,7 +973,7 @@ export const shopifyCroPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want a structured 90-day roadmap built for your store specifically?",
-          description: "ZSpace can build a prioritized CRO roadmap based on your actual funnel data, not a generic template.",
+          description: "ZSpace Labs can build a prioritized CRO roadmap based on your actual funnel data, not a generic template.",
         },
       },
       {
@@ -1002,7 +1002,7 @@ export const shopifyCroPosts4: BlogPost[] = [
           "A CRO strategy is where every other guide in this cluster comes together — the [[/blogs/shopify-cro-audit|audit]] and page-specific audits for diagnosis, [[/blogs/shopify-cro-testing-ideas|testing ideas]] for validation, and this roadmap for sequencing it all into a sustained program rather than a series of disconnected fixes.",
         ],
         cta: {
-          title: "Want ZSpace to run this roadmap end to end?",
+          title: "Want ZSpace Labs to run this roadmap end to end?",
           description: "See the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]] as the starting point for a full, ongoing CRO program.",
         },
       },

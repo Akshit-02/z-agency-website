@@ -87,7 +87,7 @@ export const commercePosts39: BlogPost[] = [
         ],
         cta: {
           title: "Deciding between one store and several?",
-          description: "ZSpace helps brands map their markets and choose a store model they can actually operate.",
+          description: "ZSpace Labs helps brands map their markets and choose a store model they can actually operate.",
         },
       },
       {
@@ -159,7 +159,7 @@ export const commercePosts39: BlogPost[] = [
         ],
         cta: {
           title: "Ready to structure your international stores?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify Markets and expansion stores]] and [[/services/website-development|multi-store architecture]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify Markets and expansion stores]] and [[/services/website-development|multi-store architecture]].",
         },
       },
       {
@@ -244,7 +244,7 @@ export const commercePosts39: BlogPost[] = [
         ],
         cta: {
           title: "Store translated but not converting abroad?",
-          description: "ZSpace identifies the localization gaps that matter in each market and fixes them in the storefront and checkout.",
+          description: "ZSpace Labs identifies the localization gaps that matter in each market and fixes them in the storefront and checkout.",
         },
       },
       {
@@ -336,7 +336,7 @@ export const commercePosts39: BlogPost[] = [
         ],
         cta: {
           title: "Ready to localize, not just translate?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|localized UX]] and [[/services/shopify-development|Shopify localization and Markets]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|localized UX]] and [[/services/shopify-development|Shopify localization and Markets]].",
         },
       },
       {
@@ -432,7 +432,7 @@ export const commercePosts39: BlogPost[] = [
         ],
         cta: {
           title: "International customers abandoning at checkout?",
-          description: "ZSpace audits global checkouts for the payment, address and duty issues that stop international orders.",
+          description: "ZSpace Labs audits global checkouts for the payment, address and duty issues that stop international orders.",
         },
       },
       {
@@ -498,7 +498,7 @@ export const commercePosts39: BlogPost[] = [
         ],
         cta: {
           title: "Ready to make checkout work globally?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|international checkout UX]], [[/services/cro-audit|checkout audits]] and [[/services/shopify-development|Shopify Markets checkout setup]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|international checkout UX]], [[/services/cro-audit|checkout audits]] and [[/services/shopify-development|Shopify Markets checkout setup]].",
         },
       },
       {
@@ -594,7 +594,7 @@ export const commercePosts39: BlogPost[] = [
         ],
         cta: {
           title: "Setting up Shopify Markets for new countries?",
-          description: "ZSpace configures Markets, pricing, languages and duties so each market feels local without separate stores.",
+          description: "ZSpace Labs configures Markets, pricing, languages and duties so each market feels local without separate stores.",
         },
       },
       {
@@ -661,7 +661,7 @@ export const commercePosts39: BlogPost[] = [
         ],
         cta: {
           title: "Ready to take your Shopify store international?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify Markets setup]], [[/services/website-development|Hydrogen and headless localization]] and [[/services/ui-ux-design|localized storefront UX]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify Markets setup]], [[/services/website-development|Hydrogen and headless localization]] and [[/services/ui-ux-design|localized storefront UX]].",
         },
       },
       {

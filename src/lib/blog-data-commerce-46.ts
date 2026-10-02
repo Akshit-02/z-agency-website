@@ -95,7 +95,7 @@ export const commercePosts46: BlogPost[] = [
         ],
         cta: {
           title: "Model-number searches returning the wrong products?",
-          description: "ZSpace tunes electronics search for identifiers, specs and compatibility using your real query logs.",
+          description: "ZSpace Labs tunes electronics search for identifiers, specs and compatibility using your real query logs.",
         },
       },
       {
@@ -167,7 +167,7 @@ export const commercePosts46: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve electronics search?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|search UX]], [[/services/website-development|search implementation]] and [[/services/cro-audit|search audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|search UX]], [[/services/website-development|search implementation]] and [[/services/cro-audit|search audits]].",
         },
       },
       {
@@ -246,7 +246,7 @@ export const commercePosts46: BlogPost[] = [
         ],
         cta: {
           title: "High traffic but low conversion on your electronics store?",
-          description: "ZSpace audits electronics journeys, from discovery to returns, and prioritizes fixes that improve kept orders.",
+          description: "ZSpace Labs audits electronics journeys, from discovery to returns, and prioritizes fixes that improve kept orders.",
         },
       },
       {
@@ -305,7 +305,7 @@ export const commercePosts46: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve electronics conversion?",
-          description: "Talk to ZSpace about [[/services/cro-audit|electronics CRO audits]] and [[/services/ui-ux-design|product page and comparison design]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|electronics CRO audits]] and [[/services/ui-ux-design|product page and comparison design]].",
         },
       },
       {
@@ -385,7 +385,7 @@ export const commercePosts46: BlogPost[] = [
         ],
         cta: {
           title: "Mobile shoppers struggling with specs and comparison?",
-          description: "ZSpace redesigns electronics mobile journeys so specs and comparisons are usable on small screens.",
+          description: "ZSpace Labs redesigns electronics mobile journeys so specs and comparisons are usable on small screens.",
         },
       },
       {
@@ -454,7 +454,7 @@ export const commercePosts46: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve electronics shopping on phones?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|mobile UX]], [[/services/mobile-app-development|shopping apps]] and [[/services/cro-audit|mobile CRO]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|mobile UX]], [[/services/mobile-app-development|shopping apps]] and [[/services/cro-audit|mobile CRO]].",
         },
       },
       {
@@ -528,7 +528,7 @@ export const commercePosts46: BlogPost[] = [
         ],
         cta: {
           title: "Planning an electronics store redesign?",
-          description: "ZSpace redesigns electronics stores from the data model up, with evidence, phasing and SEO protection.",
+          description: "ZSpace Labs redesigns electronics stores from the data model up, with evidence, phasing and SEO protection.",
         },
       },
       {
@@ -600,7 +600,7 @@ export const commercePosts46: BlogPost[] = [
         ],
         cta: {
           title: "Ready to modernize your technology store?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|electronics UX redesign]], [[/services/website-development|electronics store development]] and [[/services/cro-audit|conversion audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|electronics UX redesign]], [[/services/website-development|electronics store development]] and [[/services/cro-audit|conversion audits]].",
         },
       },
       {

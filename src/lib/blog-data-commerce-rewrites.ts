@@ -91,7 +91,7 @@ export const commerceRewrites: BlogPost[] = [
         ],
         cta: {
           title: "Not sure if you've outgrown standard Shopify?",
-          description: "ZSpace reviews your requirements against what Plus actually unlocks and tells you whether the upgrade is justified yet.",
+          description: "ZSpace Labs reviews your requirements against what Plus actually unlocks and tells you whether the upgrade is justified yet.",
         },
       },
       {
@@ -188,7 +188,7 @@ export const commerceRewrites: BlogPost[] = [
         ],
         cta: {
           title: "Planning a move to Plus, or wondering if you need to?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify and Shopify Plus development]], checkout extensions and [[/services/cro-audit|checkout optimization]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify and Shopify Plus development]], checkout extensions and [[/services/cro-audit|checkout optimization]].",
         },
       },
       {
@@ -288,7 +288,7 @@ export const commerceRewrites: BlogPost[] = [
         ],
         cta: {
           title: "Have a requirement an app or theme can't handle?",
-          description: "ZSpace walks your requirement down the ladder with you and builds only the custom layer it genuinely needs.",
+          description: "ZSpace Labs walks your requirement down the ladder with you and builds only the custom layer it genuinely needs.",
         },
       },
       {
@@ -317,7 +317,7 @@ export const commerceRewrites: BlogPost[] = [
         ],
         cta: {
           title: "Planning custom Shopify work?",
-          description: "Talk to ZSpace about [[/services/shopify-development|custom Shopify development]], integrations and [[/services/ai-automation|workflow automation]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|custom Shopify development]], integrations and [[/services/ai-automation|workflow automation]].",
         },
       },
       {
@@ -442,7 +442,7 @@ export const commerceRewrites: BlogPost[] = [
         ],
         cta: {
           title: "Want your theme to do more without losing updates?",
-          description: "ZSpace customizes Shopify themes with isolated, documented code your team can maintain.",
+          description: "ZSpace Labs customizes Shopify themes with isolated, documented code your team can maintain.",
         },
       },
       {
@@ -498,7 +498,7 @@ export const commerceRewrites: BlogPost[] = [
         ],
         cta: {
           title: "Not sure which level your change needs?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify theme customization]] and [[/services/ui-ux-design|store design]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify theme customization]] and [[/services/ui-ux-design|store design]].",
         },
       },
       {
@@ -601,7 +601,7 @@ export const commerceRewrites: BlogPost[] = [
         ],
         cta: {
           title: "Considering headless for your Shopify store?",
-          description: "ZSpace assesses whether your requirements need headless, or whether a well-built theme gets you there for less.",
+          description: "ZSpace Labs assesses whether your requirements need headless, or whether a well-built theme gets you there for less.",
         },
       },
       {
@@ -678,7 +678,7 @@ export const commerceRewrites: BlogPost[] = [
         ],
         cta: {
           title: "Ready to scope a headless storefront?",
-          description: "Talk to ZSpace about [[/services/shopify-development|headless Shopify]] and [[/services/website-development|web application development]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|headless Shopify]] and [[/services/website-development|web application development]].",
         },
       },
       {
@@ -835,7 +835,7 @@ export const commerceRewrites: BlogPost[] = [
         ],
         cta: {
           title: "Moving to Shopify and worried about rankings?",
-          description: "ZSpace handles Shopify migrations end to end, from URL mapping and data import to post-launch monitoring.",
+          description: "ZSpace Labs handles Shopify migrations end to end, from URL mapping and data import to post-launch monitoring.",
         },
       },
       {
@@ -943,7 +943,7 @@ export const commerceRewrites: BlogPost[] = [
         ],
         cta: {
           title: "Want a Shopify migration that keeps what you've earned?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify migration]] and a [[/services/cro-audit|post-launch conversion review]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify migration]] and a [[/services/cro-audit|post-launch conversion review]].",
         },
       },
       {
@@ -1040,7 +1040,7 @@ export const commerceRewrites: BlogPost[] = [
         ],
         cta: {
           title: "Want to know what's holding your Shopify SEO back?",
-          description: "ZSpace audits collection structure, templates, URLs and structured data, and fixes them in the theme.",
+          description: "ZSpace Labs audits collection structure, templates, URLs and structured data, and fixes them in the theme.",
         },
       },
       {
@@ -1125,7 +1125,7 @@ export const commerceRewrites: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve your Shopify rankings?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify SEO implementation]] and [[/services/cro-audit|conversion work]] on the traffic you win.",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify SEO implementation]] and [[/services/cro-audit|conversion work]] on the traffic you win.",
         },
       },
       {
@@ -1222,7 +1222,7 @@ export const commerceRewrites: BlogPost[] = [
         ],
         cta: {
           title: "Not sure which Shopify numbers to trust?",
-          description: "ZSpace sets up a lean, validated analytics view tied to the decisions you actually make.",
+          description: "ZSpace Labs sets up a lean, validated analytics view tied to the decisions you actually make.",
         },
       },
       {
@@ -1294,7 +1294,7 @@ export const commerceRewrites: BlogPost[] = [
         ],
         cta: {
           title: "Want analytics that drive decisions?",
-          description: "Talk to ZSpace about [[/services/cro-audit|analytics and CRO audits]] and [[/services/shopify-development|Shopify tracking setup]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|analytics and CRO audits]] and [[/services/shopify-development|Shopify tracking setup]].",
         },
       },
       {
@@ -1391,7 +1391,7 @@ export const commerceRewrites: BlogPost[] = [
         ],
         cta: {
           title: "Not sure which kind of partner your project needs?",
-          description: "Tell ZSpace your scope and timeline and we'll give you a straight recommendation, even if it's something smaller than us.",
+          description: "Tell ZSpace Labs your scope and timeline and we'll give you a straight recommendation, even if it's something smaller than us.",
         },
       },
       {
@@ -1459,7 +1459,7 @@ export const commerceRewrites: BlogPost[] = [
         ],
         cta: {
           title: "Looking for a Shopify partner?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify development]], from contained tasks to full builds.",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify development]], from contained tasks to full builds.",
         },
       },
       {

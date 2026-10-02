@@ -95,7 +95,7 @@ export const aiCorePosts7: BlogPost[] = [
         ],
         cta: {
           title: "Choosing an embedding model for your data?",
-          description: "ZSpace evaluates embedding models on your own documents and queries, balancing retrieval quality, cost and where data is processed.",
+          description: "ZSpace Labs evaluates embedding models on your own documents and queries, balancing retrieval quality, cost and where data is processed.",
         },
       },
       {
@@ -175,7 +175,7 @@ export const aiCorePosts7: BlogPost[] = [
         ],
         cta: {
           title: "Building semantic search or RAG?",
-          description: "Talk to ZSpace about [[/services/ai-automation|embeddings, retrieval and RAG development]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|embeddings, retrieval and RAG development]].",
         },
       },
       {
@@ -265,7 +265,7 @@ export const aiCorePosts7: BlogPost[] = [
         ],
         cta: {
           title: "RAG answers missing information that is clearly in your documents?",
-          description: "ZSpace can audit parsing and chunking on your corpus and test alternatives against real questions.",
+          description: "ZSpace Labs can audit parsing and chunking on your corpus and test alternatives against real questions.",
         },
       },
       {
@@ -346,7 +346,7 @@ export const aiCorePosts7: BlogPost[] = [
         ],
         cta: {
           title: "Preparing a document corpus for AI retrieval?",
-          description: "Talk to ZSpace about [[/services/ai-automation|RAG development and document pipelines]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|RAG development and document pipelines]].",
         },
       },
       {
@@ -433,7 +433,7 @@ export const aiCorePosts7: BlogPost[] = [
         },
         cta: {
           title: "Right documents retrieved but answers still wrong?",
-          description: "ZSpace can add and tune reranking in your RAG pipeline and measure the improvement on your own questions.",
+          description: "ZSpace Labs can add and tune reranking in your RAG pipeline and measure the improvement on your own questions.",
         },
       },
       {
@@ -509,7 +509,7 @@ export const aiCorePosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want measurably better retrieval?",
-          description: "Talk to ZSpace about [[/services/ai-automation|RAG optimization and development]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|RAG optimization and development]].",
         },
       },
       {
@@ -601,7 +601,7 @@ export const aiCorePosts7: BlogPost[] = [
         ],
         cta: {
           title: "Your RAG system missing exact codes and names?",
-          description: "ZSpace implements hybrid retrieval with fusion, filters and reranking, tuned on your own questions.",
+          description: "ZSpace Labs implements hybrid retrieval with fusion, filters and reranking, tuned on your own questions.",
         },
       },
       {
@@ -690,7 +690,7 @@ export const aiCorePosts7: BlogPost[] = [
         ],
         cta: {
           title: "Need retrieval that handles every kind of question?",
-          description: "Talk to ZSpace about [[/services/ai-automation|hybrid search and RAG development]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|hybrid search and RAG development]].",
         },
       },
       {

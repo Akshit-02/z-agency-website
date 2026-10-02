@@ -141,7 +141,7 @@ export const commercePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Not sure your store's data can be trusted?",
-          description: "ZSpace audits ecommerce tracking against real orders and fixes the gaps before you base decisions on it.",
+          description: "ZSpace Labs audits ecommerce tracking against real orders and fixes the gaps before you base decisions on it.",
         },
       },
       {
@@ -232,7 +232,7 @@ export const commercePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want analytics that lead to decisions?",
-          description: "Talk to ZSpace about [[/services/cro-audit|CRO and analytics audits]] and [[/services/website-development|tracking implementation]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|CRO and analytics audits]] and [[/services/website-development|tracking implementation]].",
         },
       },
       {
@@ -345,7 +345,7 @@ export const commercePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Conversion rate stuck and not sure why?",
-          description: "ZSpace finds the stage and segment where your store loses shoppers, and the evidence for what to fix first.",
+          description: "ZSpace Labs finds the stage and segment where your store loses shoppers, and the evidence for what to fix first.",
         },
       },
       {
@@ -382,7 +382,7 @@ export const commercePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want a measured plan to improve conversion?",
-          description: "Talk to ZSpace about a [[/services/cro-audit|CRO audit]] and [[/services/ui-ux-design|UX improvements]] prioritized by evidence.",
+          description: "Talk to ZSpace Labs about a [[/services/cro-audit|CRO audit]] and [[/services/ui-ux-design|UX improvements]] prioritized by evidence.",
         },
       },
       {
@@ -486,7 +486,7 @@ export const commercePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Need a dashboard your team will use?",
-          description: "ZSpace defines ecommerce KPIs, connects the right sources and builds reporting around the decisions you make.",
+          description: "ZSpace Labs defines ecommerce KPIs, connects the right sources and builds reporting around the decisions you make.",
         },
       },
       {
@@ -554,7 +554,7 @@ export const commercePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want reporting that points to action?",
-          description: "Talk to ZSpace about [[/services/cro-audit|analytics and CRO audits]] and [[/services/website-development|data integrations]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|analytics and CRO audits]] and [[/services/website-development|data integrations]].",
         },
       },
       {
@@ -662,7 +662,7 @@ export const commercePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Know where shoppers leave, but not why?",
-          description: "ZSpace combines journey data, recordings and user research to find the cause behind your store's drop-offs.",
+          description: "ZSpace Labs combines journey data, recordings and user research to find the cause behind your store's drop-offs.",
         },
       },
       {
@@ -734,7 +734,7 @@ export const commercePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want to see how shoppers really move through your store?",
-          description: "Talk to ZSpace about a [[/services/cro-audit|conversion audit]] and [[/services/ui-ux-design|UX research]].",
+          description: "Talk to ZSpace Labs about a [[/services/cro-audit|conversion audit]] and [[/services/ui-ux-design|UX research]].",
         },
       },
       {
@@ -853,7 +853,7 @@ export const commercePosts4: BlogPost[] = [
         },
         cta: {
           title: "Growing sales but not repeat customers?",
-          description: "ZSpace analyses your cohorts and designs the post-purchase and reorder experience around what the data shows.",
+          description: "ZSpace Labs analyses your cohorts and designs the post-purchase and reorder experience around what the data shows.",
         },
       },
       {
@@ -926,7 +926,7 @@ export const commercePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want retention you can measure and improve?",
-          description: "Talk to ZSpace about [[/services/cro-audit|retention and CRO analysis]], [[/services/ui-ux-design|account and reorder UX]] and [[/services/shopify-development|Shopify implementation]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|retention and CRO analysis]], [[/services/ui-ux-design|account and reorder UX]] and [[/services/shopify-development|Shopify implementation]].",
         },
       },
       {

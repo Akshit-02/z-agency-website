@@ -98,7 +98,7 @@ export const commercePosts37: BlogPost[] = [
         ],
         cta: {
           title: "Planning international expansion for your store?",
-          description: "ZSpace helps brands choose markets, architect multi-market stores and localize the experience beyond translation.",
+          description: "ZSpace Labs helps brands choose markets, architect multi-market stores and localize the experience beyond translation.",
         },
       },
       {
@@ -193,7 +193,7 @@ export const commercePosts37: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build an international store?",
-          description: "Talk to ZSpace about [[/services/website-development|international ecommerce development]], [[/services/shopify-development|Shopify Markets setup]] and [[/services/ui-ux-design|localized UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|international ecommerce development]], [[/services/shopify-development|Shopify Markets setup]] and [[/services/ui-ux-design|localized UX]].",
         },
       },
       {
@@ -274,7 +274,7 @@ export const commercePosts37: BlogPost[] = [
         ],
         cta: {
           title: "Store translated but still underperforming abroad?",
-          description: "ZSpace audits international storefronts for the localization gaps that matter most to conversion.",
+          description: "ZSpace Labs audits international storefronts for the localization gaps that matter most to conversion.",
         },
       },
       {
@@ -362,7 +362,7 @@ export const commercePosts37: BlogPost[] = [
         ],
         cta: {
           title: "Ready to localize your store properly?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|localized UX]], [[/services/shopify-development|Shopify Markets and translations]] and [[/services/website-development|multi-market development]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|localized UX]], [[/services/shopify-development|Shopify Markets and translations]] and [[/services/website-development|multi-market development]].",
         },
       },
       {
@@ -453,7 +453,7 @@ export const commercePosts37: BlogPost[] = [
         ],
         cta: {
           title: "Rebuilding a store that was never designed for other markets?",
-          description: "ZSpace architects internationalized storefronts so each new market is configuration rather than a project.",
+          description: "ZSpace Labs architects internationalized storefronts so each new market is configuration rather than a project.",
         },
       },
       {
@@ -542,7 +542,7 @@ export const commercePosts37: BlogPost[] = [
         ],
         cta: {
           title: "Ready to internationalize your commerce stack?",
-          description: "Talk to ZSpace about [[/services/website-development|internationalized storefronts and APIs]] and [[/services/shopify-development|Shopify Markets and headless localization]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|internationalized storefronts and APIs]] and [[/services/shopify-development|Shopify Markets and headless localization]].",
         },
       },
       {

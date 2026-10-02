@@ -106,7 +106,7 @@ export const commercePosts86: BlogPost[] = [
         ],
         cta: {
           title: "Spending too long reviewing orders, or losing too much to fraud?",
-          description: "ZSpace can integrate fraud scoring, build focused review tools and wire outcome data back into your rules.",
+          description: "ZSpace Labs can integrate fraud scoring, build focused review tools and wire outcome data back into your rules.",
         },
       },
       {
@@ -193,7 +193,7 @@ export const commercePosts86: BlogPost[] = [
         ],
         cta: {
           title: "Want fraud controls tuned for revenue, not just risk?",
-          description: "Talk to ZSpace about [[/services/website-development|fraud tool integration]], [[/services/ai-automation|review automation and case summaries]] and [[/services/shopify-development|Shopify fraud workflows]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|fraud tool integration]], [[/services/ai-automation|review automation and case summaries]] and [[/services/shopify-development|Shopify fraud workflows]].",
         },
       },
       {
@@ -294,7 +294,7 @@ export const commercePosts86: BlogPost[] = [
         ],
         cta: {
           title: "Chargebacks handled in spreadsheets and inboxes?",
-          description: "ZSpace can connect dispute webhooks, order and delivery data into one case workflow with evidence assembled automatically.",
+          description: "ZSpace Labs can connect dispute webhooks, order and delivery data into one case workflow with evidence assembled automatically.",
         },
       },
       {
@@ -381,7 +381,7 @@ export const commercePosts86: BlogPost[] = [
         ],
         cta: {
           title: "Want fewer disputes and better outcomes on the rest?",
-          description: "Talk to ZSpace about [[/services/website-development|dispute workflow integration]], [[/services/ai-automation|automated evidence assembly]] and [[/services/shopify-development|Shopify dispute processes]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|dispute workflow integration]], [[/services/ai-automation|automated evidence assembly]] and [[/services/shopify-development|Shopify dispute processes]].",
         },
       },
       {
@@ -471,7 +471,7 @@ export const commercePosts86: BlogPost[] = [
         ],
         cta: {
           title: "Not sure what is running on your checkout pages?",
-          description: "ZSpace can inventory checkout scripts, tighten Content Security Policy and set up change detection without breaking analytics you rely on.",
+          description: "ZSpace Labs can inventory checkout scripts, tighten Content Security Policy and set up change detection without breaking analytics you rely on.",
         },
       },
       {
@@ -551,7 +551,7 @@ export const commercePosts86: BlogPost[] = [
         ],
         cta: {
           title: "Want your payment path reviewed before your next compliance cycle?",
-          description: "Talk to ZSpace about [[/services/website-development|secure payment integration and checkout hardening]] or [[/services/shopify-development|Shopify checkout and app reviews]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|secure payment integration and checkout hardening]] or [[/services/shopify-development|Shopify checkout and app reviews]].",
         },
       },
       {

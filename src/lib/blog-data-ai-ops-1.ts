@@ -93,7 +93,7 @@ export const aiOpsPosts1: BlogPost[] = [
         ],
         cta: {
           title: "Taking an LLM application to production?",
-          description: "ZSpace sets up evaluation, release and monitoring for AI features so changes ship with evidence. See our [[/services/ai-automation|AI development services]].",
+          description: "ZSpace Labs sets up evaluation, release and monitoring for AI features so changes ship with evidence. See our [[/services/ai-automation|AI development services]].",
         },
       },
       {
@@ -194,7 +194,7 @@ export const aiOpsPosts1: BlogPost[] = [
         ],
         cta: {
           title: "Need an LLMOps foundation for your team?",
-          description: "Talk to ZSpace about [[/services/ai-automation|production AI engineering]]: evaluation, tracing, release processes and cost controls sized to your stage.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|production AI engineering]]: evaluation, tracing, release processes and cost controls sized to your stage.",
         },
       },
       {
@@ -288,7 +288,7 @@ export const aiOpsPosts1: BlogPost[] = [
         ],
         cta: {
           title: "Running both classical ML and LLM applications?",
-          description: "ZSpace helps teams design evaluation and operations that fit each kind of system. Explore our [[/services/ai-automation|AI engineering services]].",
+          description: "ZSpace Labs helps teams design evaluation and operations that fit each kind of system. Explore our [[/services/ai-automation|AI engineering services]].",
         },
       },
       {
@@ -373,7 +373,7 @@ export const aiOpsPosts1: BlogPost[] = [
         ],
         cta: {
           title: "Want help shaping your AI operations model?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI platform and operations design]] that fits the systems you actually run.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI platform and operations design]] that fits the systems you actually run.",
         },
       },
       {
@@ -464,7 +464,7 @@ export const aiOpsPosts1: BlogPost[] = [
         },
         cta: {
           title: "Have a prototype that needs to become a product?",
-          description: "ZSpace takes AI prototypes to production with secure architecture, evaluation and monitoring. See [[/services/ai-automation|AI application development]].",
+          description: "ZSpace Labs takes AI prototypes to production with secure architecture, evaluation and monitoring. See [[/services/ai-automation|AI application development]].",
         },
       },
       {
@@ -562,7 +562,7 @@ export const aiOpsPosts1: BlogPost[] = [
         ],
         cta: {
           title: "Want a production review before launch?",
-          description: "Talk to ZSpace about a [[/services/ai-automation|production readiness review]] covering architecture, security, evaluation and operations.",
+          description: "Talk to ZSpace Labs about a [[/services/ai-automation|production readiness review]] covering architecture, security, evaluation and operations.",
         },
       },
       {
@@ -660,7 +660,7 @@ export const aiOpsPosts1: BlogPost[] = [
         ],
         cta: {
           title: "Need an evaluation pipeline for your AI features?",
-          description: "ZSpace builds evaluation datasets, scoring and CI gates for LLM applications. See our [[/services/ai-automation|AI development services]].",
+          description: "ZSpace Labs builds evaluation datasets, scoring and CI gates for LLM applications. See our [[/services/ai-automation|AI development services]].",
         },
       },
       {
@@ -743,7 +743,7 @@ export const aiOpsPosts1: BlogPost[] = [
         ],
         cta: {
           title: "Want a second opinion on your evaluation approach?",
-          description: "Talk to ZSpace about an [[/services/ai-automation|AI quality review]]: datasets, scoring, thresholds and CI integration.",
+          description: "Talk to ZSpace Labs about an [[/services/ai-automation|AI quality review]]: datasets, scoring, thresholds and CI integration.",
         },
       },
       {

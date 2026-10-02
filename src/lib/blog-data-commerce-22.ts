@@ -74,7 +74,7 @@ export const commercePosts22: BlogPost[] = [
         ],
         cta: {
           title: "Building or replatforming a fashion store?",
-          description: "ZSpace plans fashion catalogs, integrations and storefronts so filters, stock and returns work together from day one.",
+          description: "ZSpace Labs plans fashion catalogs, integrations and storefronts so filters, stock and returns work together from day one.",
         },
       },
       {
@@ -180,7 +180,7 @@ export const commercePosts22: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build your fashion ecommerce platform?",
-          description: "Talk to ZSpace about [[/services/website-development|fashion ecommerce development]], [[/services/shopify-development|Shopify builds]] and [[/services/ui-ux-design|fashion UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|fashion ecommerce development]], [[/services/shopify-development|Shopify builds]] and [[/services/ui-ux-design|fashion UX]].",
         },
       },
       {
@@ -256,7 +256,7 @@ export const commercePosts22: BlogPost[] = [
         ],
         cta: {
           title: "Want to know where your fashion shoppers struggle?",
-          description: "ZSpace runs fashion UX research: journey analysis, returns reasons and usability testing on real tasks.",
+          description: "ZSpace Labs runs fashion UX research: journey analysis, returns reasons and usability testing on real tasks.",
         },
       },
       {
@@ -346,7 +346,7 @@ export const commercePosts22: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve your fashion store's experience?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|fashion UX research and design]] and [[/services/cro-audit|conversion audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|fashion UX research and design]] and [[/services/cro-audit|conversion audits]].",
         },
       },
       {
@@ -434,7 +434,7 @@ export const commercePosts22: BlogPost[] = [
         ],
         cta: {
           title: "Size selection losing you sales?",
-          description: "ZSpace redesigns fashion product pages around fit, using your returns and review data.",
+          description: "ZSpace Labs redesigns fashion product pages around fit, using your returns and review data.",
         },
       },
       {
@@ -522,7 +522,7 @@ export const commercePosts22: BlogPost[] = [
         ],
         cta: {
           title: "Want product pages that sell and keep sales?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|fashion PDP design]], [[/services/shopify-development|Shopify implementation]] and [[/services/cro-audit|testing]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|fashion PDP design]], [[/services/shopify-development|Shopify implementation]] and [[/services/cro-audit|testing]].",
         },
       },
       {
@@ -598,7 +598,7 @@ export const commercePosts22: BlogPost[] = [
         ],
         cta: {
           title: "Shoppers filtering and still not finding their size?",
-          description: "ZSpace designs fashion filter taxonomies and the product data behind them.",
+          description: "ZSpace Labs designs fashion filter taxonomies and the product data behind them.",
         },
       },
       {
@@ -669,7 +669,7 @@ export const commercePosts22: BlogPost[] = [
         ],
         cta: {
           title: "Want filters that match how people shop for clothes?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|fashion UX]] and [[/services/shopify-development|Shopify filter setup]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|fashion UX]] and [[/services/shopify-development|Shopify filter setup]].",
         },
       },
       {
@@ -744,7 +744,7 @@ export const commercePosts22: BlogPost[] = [
         ],
         cta: {
           title: "Want a fashion CRO plan that accounts for returns?",
-          description: "ZSpace audits fashion funnels on net revenue, finds fit and discovery problems, and tests fixes.",
+          description: "ZSpace Labs audits fashion funnels on net revenue, finds fit and discovery problems, and tests fixes.",
         },
       },
       {
@@ -834,7 +834,7 @@ export const commercePosts22: BlogPost[] = [
         ],
         cta: {
           title: "Ready to grow fashion sales you keep?",
-          description: "Talk to ZSpace about [[/services/cro-audit|fashion CRO]] and [[/services/ui-ux-design|fashion UX]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|fashion CRO]] and [[/services/ui-ux-design|fashion UX]].",
         },
       },
       {

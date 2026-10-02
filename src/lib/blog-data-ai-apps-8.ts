@@ -80,7 +80,7 @@ export const aiAppsPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Users can't find things in your application?",
-          description: "ZSpace builds AI-powered search with hybrid retrieval, permissions and relevance tuning for SaaS and internal platforms.",
+          description: "ZSpace Labs builds AI-powered search with hybrid retrieval, permissions and relevance tuning for SaaS and internal platforms.",
         },
       },
       {
@@ -199,7 +199,7 @@ export const aiAppsPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Planning search for your product?",
-          description: "Talk to ZSpace about [[/services/website-development|search and platform development]] and [[/services/ai-automation|AI retrieval]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|search and platform development]] and [[/services/ai-automation|AI retrieval]].",
         },
       },
       {
@@ -280,7 +280,7 @@ export const aiAppsPosts8: BlogPost[] = [
         },
         cta: {
           title: "Planning a copilot for your product?",
-          description: "ZSpace designs and builds embedded AI assistants with context, permissions, actions and UX that users trust.",
+          description: "ZSpace Labs designs and builds embedded AI assistants with context, permissions, actions and UX that users trust.",
         },
       },
       {
@@ -392,7 +392,7 @@ export const aiAppsPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Want a copilot users actually rely on?",
-          description: "Talk to ZSpace about [[/services/ai-automation|copilot development]], [[/services/ui-ux-design|AI product design]] and [[/services/website-development|SaaS engineering]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|copilot development]], [[/services/ui-ux-design|AI product design]] and [[/services/website-development|SaaS engineering]].",
         },
       },
       {
@@ -472,7 +472,7 @@ export const aiAppsPosts8: BlogPost[] = [
         },
         cta: {
           title: "Planning AI features for your app?",
-          description: "ZSpace builds AI-powered iOS and Android apps with on-device and cloud AI, backend services and mobile-first UX.",
+          description: "ZSpace Labs builds AI-powered iOS and Android apps with on-device and cloud AI, backend services and mobile-first UX.",
         },
       },
       {
@@ -591,7 +591,7 @@ export const aiAppsPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build a smarter mobile app?",
-          description: "Talk to ZSpace about [[/services/mobile-app-development|AI-powered mobile app development]], [[/services/ai-automation|AI backends]] and [[/services/ui-ux-design|mobile UX]].",
+          description: "Talk to ZSpace Labs about [[/services/mobile-app-development|AI-powered mobile app development]], [[/services/ai-automation|AI backends]] and [[/services/ui-ux-design|mobile UX]].",
         },
       },
       {
@@ -670,7 +670,7 @@ export const aiAppsPosts8: BlogPost[] = [
         },
         cta: {
           title: "Moving from AI pilots to enterprise scale?",
-          description: "ZSpace helps enterprises design shared AI platforms, integration architecture and delivery practices for many use cases.",
+          description: "ZSpace Labs helps enterprises design shared AI platforms, integration architecture and delivery practices for many use cases.",
         },
       },
       {
@@ -782,7 +782,7 @@ export const aiAppsPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Planning enterprise-scale AI?",
-          description: "Talk to ZSpace about [[/services/ai-automation|enterprise AI implementation]] and [[/services/website-development|integration and platform engineering]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|enterprise AI implementation]] and [[/services/website-development|integration and platform engineering]].",
         },
       },
       {

@@ -32,6 +32,7 @@ export async function generateMetadata({
     description: service.summary,
     alternates: { canonical: `/services/${service.slug}` },
     openGraph: {
+      siteName: site.name,
       title: `${service.name} — ${site.name}`,
       description: service.summary,
       url: `${site.url}/services/${service.slug}`,
@@ -208,7 +209,7 @@ export default async function ServiceDetailPage({
             </Reveal>
             <Reveal delay={0.1}>
               <div className="mt-10">
-                <Eyebrow accent={accent}>Why ZSpace</Eyebrow>
+                <Eyebrow accent={accent}>Why ZSpace Labs</Eyebrow>
                 <ul className="mt-5 flex flex-col gap-3">
                   {service.whyZspace.map((reason) => (
                     <li key={reason} className="text-pretty text-[0.98rem] leading-relaxed text-ink-soft">

@@ -84,7 +84,7 @@ export const webDevPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Considering a headless approach for your website or storefront?",
-          description: "ZSpace builds headless architectures on modern frameworks like Next.js — happy to talk through whether the added complexity is genuinely worth it for your project.",
+          description: "ZSpace Labs builds headless architectures on modern frameworks like Next.js — happy to talk through whether the added complexity is genuinely worth it for your project.",
         },
       },
       {
@@ -209,7 +209,7 @@ export const webDevPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Need to connect your website to existing business systems?",
-          description: "ZSpace builds and secures API integrations between websites and CRM, payment, marketing and internal systems.",
+          description: "ZSpace Labs builds and secures API integrations between websites and CRM, payment, marketing and internal systems.",
         },
       },
       {
@@ -238,7 +238,7 @@ export const webDevPosts3: BlogPost[] = [
       {
         heading: "AI Service Integrations",
         body: [
-          "Connecting a website to AI services — for search, recommendations, chat, or automated workflows — generally follows the same API integration patterns, with added considerations around cost per request, response latency, and handling variable-quality outputs gracefully. See ZSpace's [[/services/ai-automation|AI automation work]] for how this connects to broader business automation.",
+          "Connecting a website to AI services — for search, recommendations, chat, or automated workflows — generally follows the same API integration patterns, with added considerations around cost per request, response latency, and handling variable-quality outputs gracefully. See ZSpace Labs' [[/services/ai-automation|AI automation work]] for how this connects to broader business automation.",
         ],
       },
       {
@@ -321,7 +321,7 @@ export const webDevPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want your Core Web Vitals measured and prioritized properly?",
-          description: "ZSpace can audit both lab and field performance data and identify what's actually worth fixing first on your specific site.",
+          description: "ZSpace Labs can audit both lab and field performance data and identify what's actually worth fixing first on your specific site.",
         },
       },
       {
@@ -436,7 +436,7 @@ export const webDevPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want your website's security posture reviewed?",
-          description: "ZSpace can audit your site against this checklist and identify concrete, prioritized gaps to close.",
+          description: "ZSpace Labs can audit your site against this checklist and identify concrete, prioritized gaps to close.",
         },
       },
       {
@@ -593,7 +593,7 @@ export const webDevPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want your website evaluated against real accessibility practice?",
-          description: "ZSpace can review your site's structure, navigation and contrast against WCAG guidance and identify concrete, prioritized fixes.",
+          description: "ZSpace Labs can review your site's structure, navigation and contrast against WCAG guidance and identify concrete, prioritized fixes.",
         },
       },
       {
@@ -739,7 +739,7 @@ export const webDevPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want ongoing maintenance handled by the team that understands your site?",
-          description: "ZSpace offers ongoing maintenance for the sites we build, covering security, performance, monitoring and periodic improvement.",
+          description: "ZSpace Labs offers ongoing maintenance for the sites we build, covering security, performance, monitoring and periodic improvement.",
         },
       },
       {

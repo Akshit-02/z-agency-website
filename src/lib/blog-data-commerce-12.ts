@@ -79,7 +79,7 @@ export const commercePosts12: BlogPost[] = [
         ],
         cta: {
           title: "Not sure where AI would actually help your store?",
-          description: "ZSpace maps AI use cases to your data and bottlenecks, and pilots the ones with a measurable payoff.",
+          description: "ZSpace Labs maps AI use cases to your data and bottlenecks, and pilots the ones with a measurable payoff.",
         },
       },
       {
@@ -163,7 +163,7 @@ export const commercePosts12: BlogPost[] = [
         ],
         cta: {
           title: "Planning an AI project for your store?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI automation and agents]], [[/services/shopify-development|Shopify]] and [[/services/website-development|custom commerce builds]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI automation and agents]], [[/services/shopify-development|Shopify]] and [[/services/website-development|custom commerce builds]].",
         },
       },
       {
@@ -261,7 +261,7 @@ export const commercePosts12: BlogPost[] = [
         ],
         cta: {
           title: "Is your product data ready for AI shopping channels?",
-          description: "ZSpace audits product data, feeds and policies for AI discovery and fixes the gaps at the source.",
+          description: "ZSpace Labs audits product data, feeds and policies for AI discovery and fixes the gaps at the source.",
         },
       },
       {
@@ -307,7 +307,7 @@ export const commercePosts12: BlogPost[] = [
         ],
         cta: {
           title: "Want to sell through AI assistants without guesswork?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI commerce]], [[/services/shopify-development|Shopify Agentic Storefronts]] and [[/services/website-development|feed and data integrations]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI commerce]], [[/services/shopify-development|Shopify Agentic Storefronts]] and [[/services/website-development|feed and data integrations]].",
         },
       },
       {
@@ -408,7 +408,7 @@ export const commercePosts12: BlogPost[] = [
         ],
         cta: {
           title: "Wondering what agentic commerce means for your business?",
-          description: "ZSpace helps brands prioritize the data, checkout and channel work that holds up whichever protocols win.",
+          description: "ZSpace Labs helps brands prioritize the data, checkout and channel work that holds up whichever protocols win.",
         },
       },
       {
@@ -477,7 +477,7 @@ export const commercePosts12: BlogPost[] = [
         },
         cta: {
           title: "Want an agentic commerce readiness review?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI agents and automation]], [[/services/website-development|protocol integrations]] and [[/services/shopify-development|Shopify]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI agents and automation]], [[/services/website-development|protocol integrations]] and [[/services/shopify-development|Shopify]].",
         },
       },
       {
@@ -568,7 +568,7 @@ export const commercePosts12: BlogPost[] = [
         ],
         cta: {
           title: "Getting your Shopify catalog ready for AI channels?",
-          description: "ZSpace cleans product data, maps metafields and sets up channels and attribution for Shopify Agentic Storefronts.",
+          description: "ZSpace Labs cleans product data, maps metafields and sets up channels and attribution for Shopify Agentic Storefronts.",
         },
       },
       {
@@ -621,7 +621,7 @@ export const commercePosts12: BlogPost[] = [
         ],
         cta: {
           title: "Want Shopify's AI channels working for your store?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify development]] and [[/services/ai-automation|AI commerce]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify development]] and [[/services/ai-automation|AI commerce]].",
         },
       },
       {

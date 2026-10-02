@@ -112,7 +112,7 @@ export const commercePosts63: BlogPost[] = [
         ],
         cta: {
           title: "Orders spread across too many systems?",
-          description: "ZSpace designs order management flows and integrations that keep inventory, fulfilment and customers in sync.",
+          description: "ZSpace Labs designs order management flows and integrations that keep inventory, fulfilment and customers in sync.",
         },
       },
       {
@@ -221,7 +221,7 @@ export const commercePosts63: BlogPost[] = [
         ],
         cta: {
           title: "Ready to bring order to order management?",
-          description: "Talk to ZSpace about [[/services/website-development|order management integrations]], [[/services/shopify-development|Shopify fulfilment setup]] and [[/services/ai-automation|operations automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|order management integrations]], [[/services/shopify-development|Shopify fulfilment setup]] and [[/services/ai-automation|operations automation]].",
         },
       },
       {
@@ -316,7 +316,7 @@ export const commercePosts63: BlogPost[] = [
         ],
         cta: {
           title: "Returns eating into margin and support time?",
-          description: "ZSpace builds returns workflows, portals and integrations that automate the routine and surface what matters.",
+          description: "ZSpace Labs builds returns workflows, portals and integrations that automate the routine and surface what matters.",
         },
       },
       {
@@ -412,7 +412,7 @@ export const commercePosts63: BlogPost[] = [
         ],
         cta: {
           title: "Ready to rebuild your returns process?",
-          description: "Talk to ZSpace about [[/services/shopify-development|returns and exchange setup]], [[/services/website-development|returns integrations]] and [[/services/ai-automation|returns automation]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|returns and exchange setup]], [[/services/website-development|returns integrations]] and [[/services/ai-automation|returns automation]].",
         },
       },
       {
@@ -507,7 +507,7 @@ export const commercePosts63: BlogPost[] = [
         ],
         cta: {
           title: "Returns creating more support tickets than they should?",
-          description: "ZSpace designs self-service returns journeys that customers can finish without contacting support.",
+          description: "ZSpace Labs designs self-service returns journeys that customers can finish without contacting support.",
         },
       },
       {
@@ -600,7 +600,7 @@ export const commercePosts63: BlogPost[] = [
         ],
         cta: {
           title: "Ready to make returns easier?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|returns UX design]], [[/services/shopify-development|returns portals on Shopify]] and [[/services/cro-audit|post-purchase audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|returns UX design]], [[/services/shopify-development|returns portals on Shopify]] and [[/services/cro-audit|post-purchase audits]].",
         },
       },
       {
@@ -705,7 +705,7 @@ export const commercePosts63: BlogPost[] = [
         },
         cta: {
           title: "Returned stock piling up unprocessed?",
-          description: "ZSpace connects returns portals, warehouse systems and resale channels so returns move quickly to their next use.",
+          description: "ZSpace Labs connects returns portals, warehouse systems and resale channels so returns move quickly to their next use.",
         },
       },
       {
@@ -786,7 +786,7 @@ export const commercePosts63: BlogPost[] = [
         ],
         cta: {
           title: "Ready to recover more value from returns?",
-          description: "Talk to ZSpace about [[/services/website-development|returns and warehouse integrations]], [[/services/ai-automation|disposition automation]] and [[/services/shopify-development|Shopify returns setup]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|returns and warehouse integrations]], [[/services/ai-automation|disposition automation]] and [[/services/shopify-development|Shopify returns setup]].",
         },
       },
       {

@@ -80,7 +80,7 @@ export const aiOpsPosts11: BlogPost[] = [
         ],
         cta: {
           title: "Paying for GPUs that sit idle?",
-          description: "ZSpace profiles AI workloads and tunes serving, batching and placement for better GPU efficiency. See [[/services/ai-automation|AI infrastructure services]].",
+          description: "ZSpace Labs profiles AI workloads and tunes serving, batching and placement for better GPU efficiency. See [[/services/ai-automation|AI infrastructure services]].",
         },
       },
       {
@@ -176,7 +176,7 @@ export const aiOpsPosts11: BlogPost[] = [
         ],
         cta: {
           title: "Want an efficiency review of your GPU workloads?",
-          description: "Talk to ZSpace about [[/services/ai-automation|GPU and serving optimization]] for inference and fine-tuning.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|GPU and serving optimization]] for inference and fine-tuning.",
         },
       },
       {
@@ -256,7 +256,7 @@ export const aiOpsPosts11: BlogPost[] = [
         ],
         cta: {
           title: "Want to run larger models on smaller hardware?",
-          description: "ZSpace evaluates quantization options against your quality and latency targets. See [[/services/ai-automation|AI infrastructure services]].",
+          description: "ZSpace Labs evaluates quantization options against your quality and latency targets. See [[/services/ai-automation|AI infrastructure services]].",
         },
       },
       {
@@ -357,7 +357,7 @@ export const aiOpsPosts11: BlogPost[] = [
         ],
         cta: {
           title: "Considering quantized models for production?",
-          description: "Talk to ZSpace about a [[/services/ai-automation|quantization evaluation]] on your tasks and hardware.",
+          description: "Talk to ZSpace Labs about a [[/services/ai-automation|quantization evaluation]] on your tasks and hardware.",
         },
       },
       {
@@ -437,7 +437,7 @@ export const aiOpsPosts11: BlogPost[] = [
         ],
         cta: {
           title: "Want faster, cheaper responses without lower quality?",
-          description: "ZSpace restructures prompts, adds caching layers and tunes serving for AI applications. See [[/services/ai-automation|AI engineering services]].",
+          description: "ZSpace Labs restructures prompts, adds caching layers and tunes serving for AI applications. See [[/services/ai-automation|AI engineering services]].",
         },
       },
       {
@@ -520,7 +520,7 @@ export const aiOpsPosts11: BlogPost[] = [
         ],
         cta: {
           title: "Want to check your caching and batching opportunities?",
-          description: "Talk to ZSpace about an [[/services/ai-automation|inference efficiency review]] of your prompts, traffic and serving setup.",
+          description: "Talk to ZSpace Labs about an [[/services/ai-automation|inference efficiency review]] of your prompts, traffic and serving setup.",
         },
       },
       {
@@ -608,7 +608,7 @@ export const aiOpsPosts11: BlogPost[] = [
         ],
         cta: {
           title: "Need AI that works offline or on-site?",
-          description: "ZSpace builds edge and hybrid AI systems for devices, apps and industrial settings. See [[/services/ai-automation|AI development services]].",
+          description: "ZSpace Labs builds edge and hybrid AI systems for devices, apps and industrial settings. See [[/services/ai-automation|AI development services]].",
         },
       },
       {
@@ -703,7 +703,7 @@ export const aiOpsPosts11: BlogPost[] = [
         ],
         cta: {
           title: "Planning an edge or on-device AI rollout?",
-          description: "Talk to ZSpace about [[/services/ai-automation|edge AI architecture]], from model compression to fleet updates.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|edge AI architecture]], from model compression to fleet updates.",
         },
       },
       {

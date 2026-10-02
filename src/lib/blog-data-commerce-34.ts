@@ -102,7 +102,7 @@ export const commercePosts34: BlogPost[] = [
         ],
         cta: {
           title: "Multi-seller orders causing confusion for buyers and sellers?",
-          description: "ZSpace designs marketplace order models, status flows and notifications that keep everyone informed.",
+          description: "ZSpace Labs designs marketplace order models, status flows and notifications that keep everyone informed.",
         },
       },
       {
@@ -186,7 +186,7 @@ export const commercePosts34: BlogPost[] = [
         ],
         cta: {
           title: "Ready to design marketplace order management?",
-          description: "Talk to ZSpace about [[/services/website-development|marketplace order systems]] and [[/services/ui-ux-design|order and returns UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|marketplace order systems]] and [[/services/ui-ux-design|order and returns UX]].",
         },
       },
       {
@@ -306,7 +306,7 @@ export const commercePosts34: BlogPost[] = [
         ],
         cta: {
           title: "Marketplace search results full of duplicates and gaps?",
-          description: "ZSpace improves marketplace search with data normalization, offer grouping and ranking that buyers trust.",
+          description: "ZSpace Labs improves marketplace search with data normalization, offer grouping and ranking that buyers trust.",
         },
       },
       {
@@ -374,7 +374,7 @@ export const commercePosts34: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve marketplace search and filters?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|search and filter UX]], [[/services/website-development|search implementation]] and [[/services/cro-audit|search audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|search and filter UX]], [[/services/website-development|search implementation]] and [[/services/cro-audit|search audits]].",
         },
       },
       {
@@ -479,7 +479,7 @@ export const commercePosts34: BlogPost[] = [
         ],
         cta: {
           title: "Designing payments for a new marketplace?",
-          description: "ZSpace designs marketplace payment flows, ledgers and reconciliation around platform payment providers.",
+          description: "ZSpace Labs designs marketplace payment flows, ledgers and reconciliation around platform payment providers.",
         },
       },
       {
@@ -572,7 +572,7 @@ export const commercePosts34: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build marketplace payments properly?",
-          description: "Talk to ZSpace about [[/services/website-development|marketplace payment integration]] and [[/services/ui-ux-design|seller onboarding and payout UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|marketplace payment integration]] and [[/services/ui-ux-design|seller onboarding and payout UX]].",
         },
       },
       {

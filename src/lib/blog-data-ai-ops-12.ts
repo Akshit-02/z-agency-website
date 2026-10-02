@@ -86,7 +86,7 @@ export const aiOpsPosts12: BlogPost[] = [
         ],
         cta: {
           title: "Weighing self-hosting against APIs?",
-          description: "ZSpace models total cost, evaluates open-weight models on your tasks and builds self-hosted serving when it makes sense. See [[/services/ai-automation|AI infrastructure services]].",
+          description: "ZSpace Labs models total cost, evaluates open-weight models on your tasks and builds self-hosted serving when it makes sense. See [[/services/ai-automation|AI infrastructure services]].",
         },
       },
       {
@@ -185,7 +185,7 @@ export const aiOpsPosts12: BlogPost[] = [
         ],
         cta: {
           title: "Need help running models in your own environment?",
-          description: "Talk to ZSpace about [[/services/ai-automation|self-hosted LLM deployment]], from model selection and licensing to serving and monitoring.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|self-hosted LLM deployment]], from model selection and licensing to serving and monitoring.",
         },
       },
       {
@@ -274,7 +274,7 @@ export const aiOpsPosts12: BlogPost[] = [
         ],
         cta: {
           title: "Several teams building AI separately?",
-          description: "ZSpace designs and builds internal AI platforms: gateways, shared services, templates and governance. See [[/services/ai-automation|AI engineering services]].",
+          description: "ZSpace Labs designs and builds internal AI platforms: gateways, shared services, templates and governance. See [[/services/ai-automation|AI engineering services]].",
         },
       },
       {
@@ -373,7 +373,7 @@ export const aiOpsPosts12: BlogPost[] = [
         ],
         cta: {
           title: "Planning shared AI infrastructure?",
-          description: "Talk to ZSpace about an [[/services/ai-automation|AI platform roadmap]] sized to your teams and use cases.",
+          description: "Talk to ZSpace Labs about an [[/services/ai-automation|AI platform roadmap]] sized to your teams and use cases.",
         },
       },
       {

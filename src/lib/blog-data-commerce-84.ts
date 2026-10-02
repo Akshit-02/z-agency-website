@@ -122,7 +122,7 @@ export const commercePosts84: BlogPost[] = [
         ],
         cta: {
           title: "Running payments across several providers or regions?",
-          description: "ZSpace can design the provider abstraction, state model, webhooks and reconciliation so adding a provider does not mean rewriting checkout.",
+          description: "ZSpace Labs can design the provider abstraction, state model, webhooks and reconciliation so adding a provider does not mean rewriting checkout.",
         },
       },
       {
@@ -199,7 +199,7 @@ export const commercePosts84: BlogPost[] = [
         ],
         cta: {
           title: "Planning a multi-provider payment architecture?",
-          description: "Talk to ZSpace about [[/services/website-development|payment service and integration development]], [[/services/shopify-development|Shopify payment setups]] and [[/services/ai-automation|reconciliation automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|payment service and integration development]], [[/services/shopify-development|Shopify payment setups]] and [[/services/ai-automation|reconciliation automation]].",
         },
       },
       {
@@ -301,7 +301,7 @@ export const commercePosts84: BlogPost[] = [
         ],
         cta: {
           title: "Want routing decisions based on your own payment data?",
-          description: "ZSpace can set up route-level reporting and configurable rules so payment changes are measured rather than guessed.",
+          description: "ZSpace Labs can set up route-level reporting and configurable rules so payment changes are measured rather than guessed.",
         },
       },
       {
@@ -391,7 +391,7 @@ export const commercePosts84: BlogPost[] = [
         ],
         cta: {
           title: "Need routing that is measurable and safe?",
-          description: "Talk to ZSpace about [[/services/website-development|payment routing and orchestration development]] and [[/services/ai-automation|payment analytics automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|payment routing and orchestration development]] and [[/services/ai-automation|payment analytics automation]].",
         },
       },
       {
@@ -484,7 +484,7 @@ export const commercePosts84: BlogPost[] = [
         ],
         cta: {
           title: "Adding express wallets to a custom or headless checkout?",
-          description: "ZSpace builds wallet integrations with correct shipping and tax updates, server-side validation and device testing across browsers.",
+          description: "ZSpace Labs builds wallet integrations with correct shipping and tax updates, server-side validation and device testing across browsers.",
         },
       },
       {
@@ -579,7 +579,7 @@ export const commercePosts84: BlogPost[] = [
         ],
         cta: {
           title: "Want faster checkout without breaking totals or tax?",
-          description: "Talk to ZSpace about [[/services/website-development|wallet and checkout development]], [[/services/shopify-development|Shopify express checkout configuration]] and [[/services/mobile-app-development|in-app payment integration]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|wallet and checkout development]], [[/services/shopify-development|Shopify express checkout configuration]] and [[/services/mobile-app-development|in-app payment integration]].",
         },
       },
       {

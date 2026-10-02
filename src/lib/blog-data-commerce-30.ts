@@ -81,7 +81,7 @@ export const commercePosts30: BlogPost[] = [
         },
         cta: {
           title: "Buyers still emailing their repeat orders?",
-          description: "ZSpace designs reorder tools that make ordering online faster than sending an email.",
+          description: "ZSpace Labs designs reorder tools that make ordering online faster than sending an email.",
         },
       },
       {
@@ -146,7 +146,7 @@ export const commercePosts30: BlogPost[] = [
         ],
         cta: {
           title: "Ready to make B2B reordering effortless?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|reorder UX]], [[/services/shopify-development|Shopify B2B]] and [[/services/website-development|ERP-connected reorder tools]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|reorder UX]], [[/services/shopify-development|Shopify B2B]] and [[/services/website-development|ERP-connected reorder tools]].",
         },
       },
       {
@@ -227,7 +227,7 @@ export const commercePosts30: BlogPost[] = [
         ],
         cta: {
           title: "Wholesale buyers struggling with bulk orders online?",
-          description: "ZSpace designs wholesale ordering with variant grids, case packs and fast reorders.",
+          description: "ZSpace Labs designs wholesale ordering with variant grids, case packs and fast reorders.",
         },
       },
       {
@@ -293,7 +293,7 @@ export const commercePosts30: BlogPost[] = [
         },
         cta: {
           title: "Ready to improve wholesale ordering?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|wholesale UX]] and [[/services/shopify-development|Shopify wholesale builds]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|wholesale UX]] and [[/services/shopify-development|Shopify wholesale builds]].",
         },
       },
       {
@@ -374,7 +374,7 @@ export const commercePosts30: BlogPost[] = [
         ],
         cta: {
           title: "Planning a B2B ERP integration?",
-          description: "ZSpace designs and builds ERP integrations for B2B stores, from data mapping to monitoring.",
+          description: "ZSpace Labs designs and builds ERP integrations for B2B stores, from data mapping to monitoring.",
         },
       },
       {
@@ -441,7 +441,7 @@ export const commercePosts30: BlogPost[] = [
         ],
         cta: {
           title: "Ready to connect your B2B store to your ERP?",
-          description: "Talk to ZSpace about [[/services/website-development|ERP integration]], [[/services/shopify-development|Shopify B2B]] and [[/services/ai-automation|order and data automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|ERP integration]], [[/services/shopify-development|Shopify B2B]] and [[/services/ai-automation|order and data automation]].",
         },
       },
       {
@@ -516,7 +516,7 @@ export const commercePosts30: BlogPost[] = [
         ],
         cta: {
           title: "Sales team blind to what customers do online?",
-          description: "ZSpace connects B2B stores and CRMs so reps and the store work the same accounts together.",
+          description: "ZSpace Labs connects B2B stores and CRMs so reps and the store work the same accounts together.",
         },
       },
       {
@@ -582,7 +582,7 @@ export const commercePosts30: BlogPost[] = [
         ],
         cta: {
           title: "Ready to connect sales and commerce?",
-          description: "Talk to ZSpace about [[/services/website-development|CRM integration]], [[/services/ai-automation|sales workflow automation]] and [[/services/shopify-development|Shopify B2B]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|CRM integration]], [[/services/ai-automation|sales workflow automation]] and [[/services/shopify-development|Shopify B2B]].",
         },
       },
       {

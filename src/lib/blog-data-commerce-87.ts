@@ -101,7 +101,7 @@ export const commercePosts87: BlogPost[] = [
         },
         cta: {
           title: "Unsure which system should own your stock numbers?",
-          description: "ZSpace can map data ownership across your platform, OMS, IMS, ERP and warehouses before integrations are built on the wrong assumptions.",
+          description: "ZSpace Labs can map data ownership across your platform, OMS, IMS, ERP and warehouses before integrations are built on the wrong assumptions.",
         },
       },
       {
@@ -183,7 +183,7 @@ export const commercePosts87: BlogPost[] = [
         ],
         cta: {
           title: "Planning order and inventory systems for multi-channel growth?",
-          description: "Talk to ZSpace about [[/services/website-development|OMS and inventory integration]], [[/services/shopify-development|Shopify multi-location setups]] and [[/services/ai-automation|reconciliation automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|OMS and inventory integration]], [[/services/shopify-development|Shopify multi-location setups]] and [[/services/ai-automation|reconciliation automation]].",
         },
       },
       {
@@ -277,7 +277,7 @@ export const commercePosts87: BlogPost[] = [
         ],
         cta: {
           title: "Routing orders across warehouses, 3PLs and stores?",
-          description: "ZSpace can design sourcing rules, availability feeds and re-sourcing flows that fit your nodes and carriers.",
+          description: "ZSpace Labs can design sourcing rules, availability feeds and re-sourcing flows that fit your nodes and carriers.",
         },
       },
       {
@@ -363,7 +363,7 @@ export const commercePosts87: BlogPost[] = [
         ],
         cta: {
           title: "Want sourcing decisions you can measure and improve?",
-          description: "Talk to ZSpace about [[/services/website-development|OMS and sourcing development]], [[/services/shopify-development|Shopify multi-location fulfilment]] and [[/services/ai-automation|operations automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|OMS and sourcing development]], [[/services/shopify-development|Shopify multi-location fulfilment]] and [[/services/ai-automation|operations automation]].",
         },
       },
       {
@@ -463,7 +463,7 @@ export const commercePosts87: BlogPost[] = [
         ],
         cta: {
           title: "Launching a product before stock lands?",
-          description: "ZSpace can set up pre-order caps, payment timing, mixed-cart rules and delivery messaging so launches do not turn into support queues.",
+          description: "ZSpace Labs can set up pre-order caps, payment timing, mixed-cart rules and delivery messaging so launches do not turn into support queues.",
         },
       },
       {
@@ -543,7 +543,7 @@ export const commercePosts87: BlogPost[] = [
         ],
         cta: {
           title: "Need pre-orders and backorders that work with your OMS and 3PL?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify pre-order setups]], [[/services/website-development|custom inventory and order states]] and [[/services/ui-ux-design|date and status messaging]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify pre-order setups]], [[/services/website-development|custom inventory and order states]] and [[/services/ui-ux-design|date and status messaging]].",
         },
       },
       {

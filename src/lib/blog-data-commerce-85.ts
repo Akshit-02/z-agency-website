@@ -120,7 +120,7 @@ export const commercePosts85: BlogPost[] = [
         },
         cta: {
           title: "Losing orders to unclear payment errors?",
-          description: "ZSpace can audit your checkout's failure states, decline messaging and payment logs to find where paying customers drop out.",
+          description: "ZSpace Labs can audit your checkout's failure states, decline messaging and payment logs to find where paying customers drop out.",
         },
       },
       {
@@ -188,7 +188,7 @@ export const commercePosts85: BlogPost[] = [
         ],
         cta: {
           title: "Want a checkout that handles failure as well as success?",
-          description: "Talk to ZSpace about [[/services/website-development|payment integration hardening]], a [[/services/cro-audit|checkout CRO audit]] or [[/services/shopify-development|Shopify checkout improvements]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|payment integration hardening]], a [[/services/cro-audit|checkout CRO audit]] or [[/services/shopify-development|Shopify checkout improvements]].",
         },
       },
       {
@@ -293,7 +293,7 @@ export const commercePosts85: BlogPost[] = [
         },
         cta: {
           title: "Renewals failing more than they should?",
-          description: "ZSpace can review your stored-credential setup, retry logic and dunning messages, and wire network token and updater support through your provider.",
+          description: "ZSpace Labs can review your stored-credential setup, retry logic and dunning messages, and wire network token and updater support through your provider.",
         },
       },
       {
@@ -373,7 +373,7 @@ export const commercePosts85: BlogPost[] = [
         ],
         cta: {
           title: "Building or fixing recurring billing?",
-          description: "Talk to ZSpace about [[/services/website-development|recurring payment integration]], [[/services/shopify-development|Shopify subscription setups]] and [[/services/ai-automation|dunning automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|recurring payment integration]], [[/services/shopify-development|Shopify subscription setups]] and [[/services/ai-automation|dunning automation]].",
         },
       },
       {
@@ -468,7 +468,7 @@ export const commercePosts85: BlogPost[] = [
         ],
         cta: {
           title: "Balancing 3DS, fraud and conversion?",
-          description: "ZSpace can configure risk-based authentication through your provider and measure challenge rates, approvals and fraud by segment.",
+          description: "ZSpace Labs can configure risk-based authentication through your provider and measure challenge rates, approvals and fraud by segment.",
         },
       },
       {
@@ -556,7 +556,7 @@ export const commercePosts85: BlogPost[] = [
         ],
         cta: {
           title: "Need 3DS that protects revenue without adding friction?",
-          description: "Talk to ZSpace about [[/services/website-development|payment and authentication integration]], [[/services/shopify-development|Shopify payment configuration]] or a [[/services/cro-audit|checkout audit]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|payment and authentication integration]], [[/services/shopify-development|Shopify payment configuration]] or a [[/services/cro-audit|checkout audit]].",
         },
       },
       {

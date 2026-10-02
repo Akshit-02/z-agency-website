@@ -15,7 +15,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Insights — Notes on Web, Mobile, AI Automation & Conversion",
   description:
-    "Practical writing from ZSpace on website performance, mobile app development, AI automation, design systems, Shopify and conversion optimization.",
+    "Practical writing from ZSpace Labs on website performance, mobile app development, AI automation, design systems, Shopify and conversion optimization.",
   alternates: { canonical: "/blogs" },
 };
 
@@ -33,7 +33,7 @@ export default function BlogsPage() {
         }}
       />
       <PageHero
-        eyebrow="ZSpace / Insights"
+        eyebrow="ZSpace Labs / Insights"
         title={
           <>
             Ideas, insights &amp;{" "}

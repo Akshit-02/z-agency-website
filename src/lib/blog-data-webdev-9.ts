@@ -72,7 +72,7 @@ export const webDevPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Choosing a rendering strategy for a new site?",
-          description: "ZSpace maps each type of page to the rendering approach that fits it, rather than forcing one model across the whole site.",
+          description: "ZSpace Labs maps each type of page to the rendering approach that fits it, rather than forcing one model across the whole site.",
         },
       },
       {
@@ -93,7 +93,7 @@ export const webDevPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Want your site both fast and current?",
-          description: "Talk to ZSpace about combining static and dynamic rendering for your content.",
+          description: "Talk to ZSpace Labs about combining static and dynamic rendering for your content.",
         },
       },
       {
@@ -173,7 +173,7 @@ export const webDevPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Weighing a move to headless?",
-          description: "ZSpace can assess whether headless architecture solves a real problem for you, or whether a well-tuned monolith would serve you better.",
+          description: "ZSpace Labs can assess whether headless architecture solves a real problem for you, or whether a well-tuned monolith would serve you better.",
         },
       },
       {
@@ -200,7 +200,7 @@ export const webDevPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Planning your next architecture?",
-          description: "Talk to ZSpace about the architecture that fits your team and roadmap, not the one that's most fashionable.",
+          description: "Talk to ZSpace Labs about the architecture that fits your team and roadmap, not the one that's most fashionable.",
         },
       },
       {
@@ -296,7 +296,7 @@ export const webDevPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Building a site you expect to grow significantly?",
-          description: "ZSpace designs architectures that scale with traffic, content and teams, without adding complexity before you need it.",
+          description: "ZSpace Labs designs architectures that scale with traffic, content and teams, without adding complexity before you need it.",
         },
       },
       {
@@ -334,7 +334,7 @@ export const webDevPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Want an architecture review before you scale?",
-          description: "Talk to ZSpace about where your current setup will strain first, and what to change now versus later.",
+          description: "Talk to ZSpace Labs about where your current setup will strain first, and what to change now versus later.",
         },
       },
       {
@@ -408,7 +408,7 @@ export const webDevPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Building a site that handles sensitive data?",
-          description: "ZSpace builds security into architecture and code from the first sprint, not as a pre-launch audit.",
+          description: "ZSpace Labs builds security into architecture and code from the first sprint, not as a pre-launch audit.",
         },
       },
       {
@@ -468,7 +468,7 @@ export const webDevPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Want a security review of your architecture?",
-          description: "Talk to ZSpace about where your current build is exposed and what to prioritize.",
+          description: "Talk to ZSpace Labs about where your current build is exposed and what to prioritize.",
         },
       },
       {
@@ -560,7 +560,7 @@ export const webDevPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Planning a platform migration?",
-          description: "ZSpace plans and executes migrations with URL mapping, redirect testing and post-launch monitoring built into the process.",
+          description: "ZSpace Labs plans and executes migrations with URL mapping, redirect testing and post-launch monitoring built into the process.",
         },
       },
       {
@@ -612,7 +612,7 @@ export const webDevPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Want your migration reviewed before launch?",
-          description: "Talk to ZSpace about protecting your search visibility through a platform move.",
+          description: "Talk to ZSpace Labs about protecting your search visibility through a platform move.",
         },
       },
       {
@@ -701,7 +701,7 @@ export const webDevPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Not sure whether your platform is the real problem?",
-          description: "ZSpace can assess your current stack and tell you whether to optimize, redesign, rebuild or replatform.",
+          description: "ZSpace Labs can assess your current stack and tell you whether to optimize, redesign, rebuild or replatform.",
         },
       },
       {
@@ -737,7 +737,7 @@ export const webDevPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Planning a replatforming project?",
-          description: "Talk to ZSpace about a phased, lower-risk path to a stack that fits where your business is going.",
+          description: "Talk to ZSpace Labs about a phased, lower-risk path to a stack that fits where your business is going.",
         },
       },
       {

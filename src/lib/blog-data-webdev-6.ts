@@ -78,7 +78,7 @@ export const webDevPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Want your site's navigation reviewed against real user behavior?",
-          description: "ZSpace can review information architecture and navigation against actual visitor data, not just a visual audit.",
+          description: "ZSpace Labs can review information architecture and navigation against actual visitor data, not just a visual audit.",
         },
       },
       {
@@ -95,7 +95,7 @@ export const webDevPosts6: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Ready to connect navigation improvements to the rest of UX?",
-          description: "See ZSpace's [[/services/ui-ux-design|UI/UX design work]] for how navigation fits into the broader user experience discipline.",
+          description: "See ZSpace Labs' [[/services/ui-ux-design|UI/UX design work]] for how navigation fits into the broader user experience discipline.",
         },
       },
       {
@@ -181,7 +181,7 @@ export const webDevPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Want your lead capture flow reviewed for unnecessary friction?",
-          description: "ZSpace can review your forms, landing pages and CRM integration together, not just the form itself in isolation.",
+          description: "ZSpace Labs can review your forms, landing pages and CRM integration together, not just the form itself in isolation.",
         },
       },
       {
@@ -198,7 +198,7 @@ export const webDevPosts6: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Ready to connect lead generation to a broader conversion strategy?",
-          description: "See ZSpace's [[/blogs/shopify-cro-audit|CRO audit framework]] for the structured, evidence-based approach this connects to.",
+          description: "See ZSpace Labs' [[/blogs/shopify-cro-audit|CRO audit framework]] for the structured, evidence-based approach this connects to.",
         },
       },
       {
@@ -284,7 +284,7 @@ export const webDevPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Building a landing page for a specific campaign or offer?",
-          description: "ZSpace builds and tests landing pages designed around a single, focused conversion action, not a diluted general-purpose page.",
+          description: "ZSpace Labs builds and tests landing pages designed around a single, focused conversion action, not a diluted general-purpose page.",
         },
       },
       {
@@ -392,7 +392,7 @@ export const webDevPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Seeing a bounce rate number you're not sure how to interpret?",
-          description: "ZSpace can review bounce behavior alongside session recordings and traffic-source context to find out what it's actually telling you.",
+          description: "ZSpace Labs can review bounce behavior alongside session recordings and traffic-source context to find out what it's actually telling you.",
         },
       },
       {
@@ -495,7 +495,7 @@ export const webDevPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Building a new site and want SEO built in from day one?",
-          description: "ZSpace builds technical SEO fundamentals into development from the start, not as a post-launch retrofit.",
+          description: "ZSpace Labs builds technical SEO fundamentals into development from the start, not as a post-launch retrofit.",
         },
       },
       {
@@ -628,7 +628,7 @@ export const webDevPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Want your site's mobile experience tested on real devices?",
-          description: "ZSpace tests mobile experience directly on real devices, not just a resized desktop browser window.",
+          description: "ZSpace Labs tests mobile experience directly on real devices, not just a resized desktop browser window.",
         },
       },
       {
@@ -743,7 +743,7 @@ export const webDevPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Want your site's trust signals reviewed honestly?",
-          description: "ZSpace can audit your site's credibility signals against what actually reduces visitor hesitation, not generic trust-badge advice.",
+          description: "ZSpace Labs can audit your site's credibility signals against what actually reduces visitor hesitation, not generic trust-badge advice.",
         },
       },
       {

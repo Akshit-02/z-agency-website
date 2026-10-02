@@ -495,7 +495,7 @@ export const posts: BlogPost[] = [
         ],
         cta: {
           title: "Is your interface growing inconsistent?",
-          description: "ZSpace designs and documents design systems that designers and developers actually use.",
+          description: "ZSpace Labs designs and documents design systems that designers and developers actually use.",
         },
       },
       {
@@ -529,7 +529,7 @@ export const posts: BlogPost[] = [
         ],
         cta: {
           title: "Want a design system for your product?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|UI/UX design]] and a component system your team can extend.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] and a component system your team can extend.",
         },
       },
       {
@@ -702,7 +702,7 @@ export const posts: BlogPost[] = [
         ],
         cta: {
           title: "Designing onboarding for a new app?",
-          description: "ZSpace designs first-use experiences around the moment of value, and builds them with the rest of the app.",
+          description: "ZSpace Labs designs first-use experiences around the moment of value, and builds them with the rest of the app.",
         },
       },
       {
@@ -726,7 +726,7 @@ export const posts: BlogPost[] = [
       {
         heading: "Measure activation, not completion",
         body: [
-          "Define the activation event, the action that proves value, and track the funnel from first open to that event. Look at where users drop off, test changes one at a time, and follow retention of activated users. It's the same measurement discipline behind ZSpace's [[/services/cro-audit|conversion optimization]] work.",
+          "Define the activation event, the action that proves value, and track the funnel from first open to that event. Look at where users drop off, test changes one at a time, and follow retention of activated users. It's the same measurement discipline behind ZSpace Labs' [[/services/cro-audit|conversion optimization]] work.",
         ],
         table: {
           headers: ["Metric", "What it tells you"],
@@ -754,7 +754,7 @@ export const posts: BlogPost[] = [
         ],
         cta: {
           title: "Want your onboarding reviewed?",
-          description: "Talk to ZSpace about your first-use flow and where new users are dropping off before they reach value.",
+          description: "Talk to ZSpace Labs about your first-use flow and where new users are dropping off before they reach value.",
         },
       },
       {
@@ -1718,7 +1718,7 @@ export const posts: BlogPost[] = [
         ],
         cta: {
           title: "Not sure where your Shopify store is losing sales?",
-          description: "ZSpace audits your funnel, finds the stages and segments that leak and prioritizes the fixes worth making first.",
+          description: "ZSpace Labs audits your funnel, finds the stages and segments that leak and prioritizes the fixes worth making first.",
         },
       },
       {
@@ -1777,7 +1777,7 @@ export const posts: BlogPost[] = [
         ],
         cta: {
           title: "Want a structured CRO program for your store?",
-          description: "Talk to ZSpace about [[/services/cro-audit|CRO audits]], [[/services/ui-ux-design|UX design]] and [[/services/shopify-development|Shopify development]] to implement the fixes.",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|CRO audits]], [[/services/ui-ux-design|UX design]] and [[/services/shopify-development|Shopify development]] to implement the fixes.",
         },
       },
       {
@@ -1906,7 +1906,7 @@ export const posts: BlogPost[] = [
         ],
         cta: {
           title: "Planning a Shopify redesign?",
-          description: "ZSpace audits your current store first, then designs and builds the redesign around what the data shows.",
+          description: "ZSpace Labs audits your current store first, then designs and builds the redesign around what the data shows.",
         },
       },
       {
@@ -1994,7 +1994,7 @@ export const posts: BlogPost[] = [
         ],
         cta: {
           title: "Want a redesign that fixes the real problems?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify development]], [[/services/ui-ux-design|UX design]] and a [[/services/cro-audit|pre-redesign audit]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify development]], [[/services/ui-ux-design|UX design]] and a [[/services/cro-audit|pre-redesign audit]].",
         },
       },
       {

@@ -1,12 +1,19 @@
 export const site = {
-  name: "ZSpace",
-  legalName: "ZSpace",
+  name: "ZSpace Labs",
+  legalName: "ZSpace Labs",
   domain: "zspace.in",
   url: "https://zspace.in",
   email: "connect@zspace.in",
   tagline: "A technology studio for businesses that refuse to look average.",
   description:
-    "ZSpace is a technology studio that designs and builds websites, mobile apps, AI automation and digital products for businesses that want to move faster and look sharper doing it.",
+    "ZSpace Labs builds websites, mobile apps, Shopify experiences, digital products and AI automations through thoughtful design and technology.",
+  // Default browser/social title for pages without their own title.
+  defaultTitle: "ZSpace Labs | Technology & Digital Product Studio",
+  // How the brand is introduced in long-form copy (about page, llms.txt).
+  intro:
+    "ZSpace Labs is a technology and digital product studio focused on building useful digital experiences, products and systems. We bring strategy, design and engineering together to turn ideas into practical digital solutions.",
+  footerDescription:
+    "An independent technology and digital product studio building websites, apps, commerce experiences and intelligent automations.",
   social: {
     linkedin: "https://www.linkedin.com/company/zspace",
     instagram: "https://www.instagram.com/zspace.in",

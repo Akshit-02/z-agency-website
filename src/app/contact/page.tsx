@@ -10,7 +10,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact — Start a Project",
   description:
-    "Tell ZSpace about your website, app, AI automation or Shopify project. We respond with honest scoping, usually within one business day.",
+    "Tell ZSpace Labs about your website, app, AI automation or Shopify project. We respond with honest scoping, usually within one business day.",
   alternates: { canonical: "/contact" },
 };
 

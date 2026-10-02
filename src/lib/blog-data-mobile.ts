@@ -110,11 +110,11 @@ export const mobilePosts: BlogPost[] = [
       {
         heading: "UX and UI Design",
         body: [
-          "Mobile UX has its own constraints: small screens, touch input, interruptions and platform conventions users already know. Good design maps the core user flows first and designs every state, including empty, loading and error screens. See [[/blogs/mobile-app-ux-design|mobile app UX design]], the [[/blogs/what-a-good-mobile-app-onboarding-actually-does|onboarding guide]] and ZSpace's [[/services/ui-ux-design|UI/UX design]] work.",
+          "Mobile UX has its own constraints: small screens, touch input, interruptions and platform conventions users already know. Good design maps the core user flows first and designs every state, including empty, loading and error screens. See [[/blogs/mobile-app-ux-design|mobile app UX design]], the [[/blogs/what-a-good-mobile-app-onboarding-actually-does|onboarding guide]] and ZSpace Labs' [[/services/ui-ux-design|UI/UX design]] work.",
         ],
         cta: {
           title: "Planning a mobile app?",
-          description: "ZSpace can take it from product strategy and UX through development and launch, with design and engineering on the same team.",
+          description: "ZSpace Labs can take it from product strategy and UX through development and launch, with design and engineering on the same team.",
         },
       },
       {
@@ -155,7 +155,7 @@ export const mobilePosts: BlogPost[] = [
         ],
         cta: {
           title: "Looking for a team to build your app?",
-          description: "See how ZSpace approaches [[/services/mobile-app-development|mobile app development]], from core user flows to store-ready releases.",
+          description: "See how ZSpace Labs approaches [[/services/mobile-app-development|mobile app development]], from core user flows to store-ready releases.",
         },
       },
       {
@@ -248,7 +248,7 @@ export const mobilePosts: BlogPost[] = [
         ],
         cta: {
           title: "Want a scope-based estimate for your app?",
-          description: "ZSpace can review your feature list and explain what's actually driving cost before you commit to a build.",
+          description: "ZSpace Labs can review your feature list and explain what's actually driving cost before you commit to a build.",
         },
       },
       {
@@ -283,7 +283,7 @@ export const mobilePosts: BlogPost[] = [
         ],
         cta: {
           title: "Planning your app budget?",
-          description: "Talk to ZSpace about scoping a first release that fits your budget without cutting what users actually need.",
+          description: "Talk to ZSpace Labs about scoping a first release that fits your budget without cutting what users actually need.",
         },
       },
       {
@@ -365,7 +365,7 @@ export const mobilePosts: BlogPost[] = [
         ],
         cta: {
           title: "Need a realistic launch date?",
-          description: "ZSpace can review your scope and outline a timeline grounded in your actual features and integrations.",
+          description: "ZSpace Labs can review your scope and outline a timeline grounded in your actual features and integrations.",
         },
       },
       {
@@ -482,7 +482,7 @@ export const mobilePosts: BlogPost[] = [
         ],
         cta: {
           title: "Want design and engineering working as one team?",
-          description: "ZSpace runs UX, UI and development together, so the app that ships matches the experience that was designed.",
+          description: "ZSpace Labs runs UX, UI and development together, so the app that ships matches the experience that was designed.",
         },
       },
       {
@@ -522,7 +522,7 @@ export const mobilePosts: BlogPost[] = [
         ],
         cta: {
           title: "Ready to take an idea through this process?",
-          description: "Talk to ZSpace about [[/services/mobile-app-development|mobile app development]], from discovery to a store-ready release.",
+          description: "Talk to ZSpace Labs about [[/services/mobile-app-development|mobile app development]], from discovery to a store-ready release.",
         },
       },
       {
@@ -596,7 +596,7 @@ export const mobilePosts: BlogPost[] = [
         ],
         cta: {
           title: "Comparing app development partners?",
-          description: "ZSpace will walk you through our process, technology choices and what's included at each stage before you commit.",
+          description: "ZSpace Labs will walk you through our process, technology choices and what's included at each stage before you commit.",
         },
       },
       {
@@ -647,7 +647,7 @@ export const mobilePosts: BlogPost[] = [
         ],
         cta: {
           title: "Want to ask these questions of us?",
-          description: "Talk to ZSpace about your app, and hold us to the same standard as anyone else you're considering.",
+          description: "Talk to ZSpace Labs about your app, and hold us to the same standard as anyone else you're considering.",
         },
       },
       {
@@ -680,7 +680,7 @@ export const mobilePosts: BlogPost[] = [
       { q: "When should I choose native development?", a: "When the app depends on cutting-edge platform features, intensive graphics or processing, deep OS integration, or when you have separate iOS and Android teams already." },
       { q: "Can I switch from cross-platform to native later?", a: "Yes, but it's effectively a rebuild of the app layer. A well-designed backend and API can be reused." },
       { q: "What about progressive web apps?", a: "PWAs are a third option when deep device access and store presence aren't required. See the PWA vs native app comparison." },
-      { q: "Which approach does ZSpace use?", a: "ZSpace defaults to cross-platform development with React Native and uses native development where an app's experience demands it." },
+      { q: "Which approach does ZSpace Labs use?", a: "ZSpace Labs defaults to cross-platform development with React Native and uses native development where an app's experience demands it." },
     ],
     content: [
       {
@@ -732,7 +732,7 @@ export const mobilePosts: BlogPost[] = [
         ],
         cta: {
           title: "Not sure which approach fits your app?",
-          description: "ZSpace builds cross-platform with React Native and natively where it matters, so we can recommend based on your requirements.",
+          description: "ZSpace Labs builds cross-platform with React Native and natively where it matters, so we can recommend based on your requirements.",
         },
       },
       {
@@ -761,7 +761,7 @@ export const mobilePosts: BlogPost[] = [
         ],
         cta: {
           title: "Want a recommendation for your specific app?",
-          description: "Talk to ZSpace about your features, users and budget, and we'll explain which approach fits and why.",
+          description: "Talk to ZSpace Labs about your features, users and budget, and we'll explain which approach fits and why.",
         },
       },
       {
@@ -794,7 +794,7 @@ export const mobilePosts: BlogPost[] = [
       { q: "Can both use native device features?", a: "Yes. Both provide plugins or modules for common features and support custom native code for anything else." },
       { q: "Can I share code with my website?", a: "React Native shares language, patterns and often business logic with React web apps. Flutter also targets web, though web is a less common production use." },
       { q: "Which should a startup choose?", a: "Choose based on your team's skills and your UI requirements. A team with React experience will usually move faster with React Native; a team wanting pixel-identical custom UI across platforms may prefer Flutter." },
-      { q: "Which does ZSpace use?", a: "ZSpace builds cross-platform apps primarily with React Native. This comparison aims to be fair to both frameworks." },
+      { q: "Which does ZSpace Labs use?", a: "ZSpace Labs builds cross-platform apps primarily with React Native. This comparison aims to be fair to both frameworks." },
     ],
     content: [
       {
@@ -806,7 +806,7 @@ export const mobilePosts: BlogPost[] = [
       {
         heading: "A Note on Perspective",
         body: [
-          "ZSpace builds cross-platform apps primarily with React Native. We've written this comparison from the official Flutter and React Native documentation and tried to represent both fairly. If you're still deciding between cross-platform and native, start with [[/blogs/native-vs-cross-platform-app-development|native vs cross-platform]].",
+          "ZSpace Labs builds cross-platform apps primarily with React Native. We've written this comparison from the official Flutter and React Native documentation and tried to represent both fairly. If you're still deciding between cross-platform and native, start with [[/blogs/native-vs-cross-platform-app-development|native vs cross-platform]].",
         ],
       },
       {
@@ -847,7 +847,7 @@ export const mobilePosts: BlogPost[] = [
         ],
         cta: {
           title: "Choosing a cross-platform framework?",
-          description: "ZSpace can review your app's requirements and team, and explain which framework fits, including when it isn't the one we use most.",
+          description: "ZSpace Labs can review your app's requirements and team, and explain which framework fits, including when it isn't the one we use most.",
         },
       },
       {
@@ -881,7 +881,7 @@ export const mobilePosts: BlogPost[] = [
         ],
         cta: {
           title: "Want a framework recommendation for your app?",
-          description: "Talk to ZSpace about your product and team before committing to a framework.",
+          description: "Talk to ZSpace Labs about your product and team before committing to a framework.",
         },
       },
       {

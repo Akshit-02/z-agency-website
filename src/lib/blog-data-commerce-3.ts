@@ -126,7 +126,7 @@ export const commercePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Products buried too deep to be found?",
-          description: "ZSpace maps your store's link structure and redesigns templates so important pages are reachable and connected.",
+          description: "ZSpace Labs maps your store's link structure and redesigns templates so important pages are reachable and connected.",
         },
       },
       {
@@ -174,7 +174,7 @@ export const commercePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want a store architecture that search engines and shoppers can follow?",
-          description: "Talk to ZSpace about [[/services/website-development|ecommerce development]], [[/services/shopify-development|Shopify]] and [[/services/ui-ux-design|information architecture]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|ecommerce development]], [[/services/shopify-development|Shopify]] and [[/services/ui-ux-design|information architecture]].",
         },
       },
       {
@@ -300,7 +300,7 @@ export const commercePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Thousands of filter URLs in your index?",
-          description: "ZSpace audits faceted navigation, indexing and crawl data and implements a consistent rule set in your platform.",
+          description: "ZSpace Labs audits faceted navigation, indexing and crawl data and implements a consistent rule set in your platform.",
         },
       },
       {
@@ -341,7 +341,7 @@ export const commercePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want filters that help shoppers without hurting SEO?",
-          description: "Talk to ZSpace about [[/services/website-development|ecommerce development]] and [[/services/shopify-development|Shopify development]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|ecommerce development]] and [[/services/shopify-development|Shopify development]].",
         },
       },
       {
@@ -456,7 +456,7 @@ export const commercePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Shoppers searching and not finding?",
-          description: "ZSpace reviews your search queries, data and relevance, and prioritizes the fixes that recover the most lost sessions.",
+          description: "ZSpace Labs reviews your search queries, data and relevance, and prioritizes the fixes that recover the most lost sessions.",
         },
       },
       {
@@ -559,7 +559,7 @@ export const commercePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want site search that finds what shoppers mean?",
-          description: "Talk to ZSpace about a [[/services/cro-audit|search and discovery audit]], [[/services/website-development|search implementation]] and [[/services/shopify-development|Shopify search setup]].",
+          description: "Talk to ZSpace Labs about a [[/services/cro-audit|search and discovery audit]], [[/services/website-development|search implementation]] and [[/services/shopify-development|Shopify search setup]].",
         },
       },
       {
@@ -691,7 +691,7 @@ export const commercePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Structured data errors in Search Console?",
-          description: "ZSpace fixes product markup at the template level so it stays accurate as prices, stock and reviews change.",
+          description: "ZSpace Labs fixes product markup at the template level so it stays accurate as prices, stock and reviews change.",
         },
       },
       {
@@ -732,7 +732,7 @@ export const commercePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want product data that search engines can trust?",
-          description: "Talk to ZSpace about [[/services/website-development|ecommerce development]] and [[/services/shopify-development|Shopify theme fixes]] for structured data.",
+          description: "Talk to ZSpace Labs about [[/services/website-development|ecommerce development]] and [[/services/shopify-development|Shopify theme fixes]] for structured data.",
         },
       },
       {

@@ -99,7 +99,7 @@ export const aiCorePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Need guardrails that hold when the model gets it wrong?",
-          description: "ZSpace builds agents with least-privilege tools, policy checks and approval gates enforced in code, not just in prompts.",
+          description: "ZSpace Labs builds agents with least-privilege tools, policy checks and approval gates enforced in code, not just in prompts.",
         },
       },
       {
@@ -180,7 +180,7 @@ export const aiCorePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want an independent review of your agent's controls?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI agent guardrails and secure agent development]] and [[/services/website-development|secure backend integration]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI agent guardrails and secure agent development]] and [[/services/website-development|secure backend integration]].",
         },
       },
       {
@@ -278,7 +278,7 @@ export const aiCorePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Agents in production but no idea what they are doing?",
-          description: "ZSpace instruments agents with end-to-end tracing, cost tracking and quality alerts so issues are found before customers report them.",
+          description: "ZSpace Labs instruments agents with end-to-end tracing, cost tracking and quality alerts so issues are found before customers report them.",
         },
       },
       {
@@ -363,7 +363,7 @@ export const aiCorePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want to see exactly why an agent did what it did?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI observability and agent operations]] and [[/services/website-development|telemetry and backend integration]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI observability and agent operations]] and [[/services/website-development|telemetry and backend integration]].",
         },
       },
       {
@@ -412,7 +412,7 @@ export const aiCorePosts3: BlogPost[] = [
       {
         heading: "Where This Fits",
         body: [
-          "This is the hub for ZSpace's automation guides. Implementation details are in [[/blogs/workflow-automation|workflow automation]], AI steps in [[/blogs/ai-workflow-automation|AI workflow automation]], interface choices in [[/blogs/workflow-automation-vs-rpa|workflow automation vs RPA]] and [[/blogs/rpa-vs-ai-automation|RPA vs AI automation]], and documents in [[/blogs/intelligent-document-processing|intelligent document processing]]. A short prioritization checklist is in [[/blogs/when-to-automate-a-business-process|when a process is worth automating]].",
+          "This is the hub for ZSpace Labs' automation guides. Implementation details are in [[/blogs/workflow-automation|workflow automation]], AI steps in [[/blogs/ai-workflow-automation|AI workflow automation]], interface choices in [[/blogs/workflow-automation-vs-rpa|workflow automation vs RPA]] and [[/blogs/rpa-vs-ai-automation|RPA vs AI automation]], and documents in [[/blogs/intelligent-document-processing|intelligent document processing]]. A short prioritization checklist is in [[/blogs/when-to-automate-a-business-process|when a process is worth automating]].",
         ],
       },
       {
@@ -467,7 +467,7 @@ export const aiCorePosts3: BlogPost[] = [
         },
         cta: {
           title: "Not sure which of your processes to automate first?",
-          description: "ZSpace runs process discovery and prioritization, then builds the automations with your systems, approvals and reporting in place.",
+          description: "ZSpace Labs runs process discovery and prioritization, then builds the automations with your systems, approvals and reporting in place.",
         },
       },
       {
@@ -575,7 +575,7 @@ export const aiCorePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Ready to automate a process end to end?",
-          description: "Talk to ZSpace about [[/services/ai-automation|business process and AI automation]] and [[/services/website-development|system integration]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|business process and AI automation]] and [[/services/website-development|system integration]].",
         },
       },
       {
@@ -668,7 +668,7 @@ export const aiCorePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Workflows breaking quietly in the background?",
-          description: "ZSpace builds and repairs workflow automations with proper retries, error paths, monitoring and documentation.",
+          description: "ZSpace Labs builds and repairs workflow automations with proper retries, error paths, monitoring and documentation.",
         },
       },
       {
@@ -751,7 +751,7 @@ export const aiCorePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want dependable automation for your repetitive tasks?",
-          description: "Talk to ZSpace about [[/services/ai-automation|workflow automation]] and [[/services/website-development|custom integrations]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|workflow automation]] and [[/services/website-development|custom integrations]].",
         },
       },
       {

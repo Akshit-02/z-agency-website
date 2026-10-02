@@ -93,7 +93,7 @@ export const commercePosts9: BlogPost[] = [
         ],
         cta: {
           title: "Shopify conversion dropped and you can't see why?",
-          description: "ZSpace checks tracking, settings, apps and funnel data to find what changed, then fixes it.",
+          description: "ZSpace Labs checks tracking, settings, apps and funnel data to find what changed, then fixes it.",
         },
       },
       {
@@ -149,7 +149,7 @@ export const commercePosts9: BlogPost[] = [
         ],
         cta: {
           title: "Want a Shopify store that converts consistently?",
-          description: "Talk to ZSpace about a [[/services/cro-audit|Shopify CRO audit]] and [[/services/shopify-development|Shopify development]] fixes.",
+          description: "Talk to ZSpace Labs about a [[/services/cro-audit|Shopify CRO audit]] and [[/services/shopify-development|Shopify development]] fixes.",
         },
       },
       {
@@ -236,7 +236,7 @@ export const commercePosts9: BlogPost[] = [
         ],
         cta: {
           title: "Shoppers leaving without finding products?",
-          description: "ZSpace diagnoses product discovery across navigation, search, filters and data, and fixes the causes in the right order.",
+          description: "ZSpace Labs diagnoses product discovery across navigation, search, filters and data, and fixes the causes in the right order.",
         },
       },
       {
@@ -307,7 +307,7 @@ export const commercePosts9: BlogPost[] = [
         ],
         cta: {
           title: "Want shoppers to find products faster?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|discovery UX]], [[/services/cro-audit|search and navigation audits]] and [[/services/shopify-development|Shopify implementation]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|discovery UX]], [[/services/cro-audit|search and navigation audits]] and [[/services/shopify-development|Shopify implementation]].",
         },
       },
       {
@@ -414,7 +414,7 @@ export const commercePosts9: BlogPost[] = [
         ],
         cta: {
           title: "Outgrowing your store's structure?",
-          description: "ZSpace designs catalog models, taxonomies and technical architecture for stores that need to scale.",
+          description: "ZSpace Labs designs catalog models, taxonomies and technical architecture for stores that need to scale.",
         },
       },
       {
@@ -479,7 +479,7 @@ export const commercePosts9: BlogPost[] = [
         ],
         cta: {
           title: "Planning a store that needs to scale?",
-          description: "Talk to ZSpace about [[/services/website-development|ecommerce architecture and development]], [[/services/shopify-development|Shopify]] and [[/services/ui-ux-design|information architecture]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|ecommerce architecture and development]], [[/services/shopify-development|Shopify]] and [[/services/ui-ux-design|information architecture]].",
         },
       },
       {
@@ -632,7 +632,7 @@ export const commercePosts9: BlogPost[] = [
         ],
         cta: {
           title: "Considering a replatform?",
-          description: "ZSpace helps you decide whether to replatform, choose the platform on requirements and plan a migration that protects sales and search traffic.",
+          description: "ZSpace Labs helps you decide whether to replatform, choose the platform on requirements and plan a migration that protects sales and search traffic.",
         },
       },
       {
@@ -742,7 +742,7 @@ export const commercePosts9: BlogPost[] = [
         ],
         cta: {
           title: "Want a replatform without the usual losses?",
-          description: "Talk to ZSpace about [[/services/website-development|replatforming and migration]], [[/services/shopify-development|moving to Shopify]] and a [[/services/cro-audit|post-launch conversion review]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|replatforming and migration]], [[/services/shopify-development|moving to Shopify]] and a [[/services/cro-audit|post-launch conversion review]].",
         },
       },
       {

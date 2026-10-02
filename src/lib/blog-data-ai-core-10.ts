@@ -82,7 +82,7 @@ export const aiCorePosts10: BlogPost[] = [
         ],
         cta: {
           title: "Paying top-model prices for simple tasks?",
-          description: "ZSpace evaluates models on your real tasks and sets up routing that cuts cost without lowering quality.",
+          description: "ZSpace Labs evaluates models on your real tasks and sets up routing that cuts cost without lowering quality.",
         },
       },
       {
@@ -167,7 +167,7 @@ export const aiCorePosts10: BlogPost[] = [
         ],
         cta: {
           title: "Want the right model for every task?",
-          description: "Talk to ZSpace about [[/services/ai-automation|LLM routing, evaluation and AI platform work]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|LLM routing, evaluation and AI platform work]].",
         },
       },
       {
@@ -264,7 +264,7 @@ export const aiCorePosts10: BlogPost[] = [
         },
         cta: {
           title: "Turning AI prototypes into reliable applications?",
-          description: "ZSpace designs orchestration layers that connect models, retrieval, tools and business logic with validation and tracing built in.",
+          description: "ZSpace Labs designs orchestration layers that connect models, retrieval, tools and business logic with validation and tracing built in.",
         },
       },
       {
@@ -339,7 +339,7 @@ export const aiCorePosts10: BlogPost[] = [
         ],
         cta: {
           title: "Need an AI application that behaves predictably?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI orchestration and application development]] and [[/services/website-development|backend engineering]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI orchestration and application development]] and [[/services/website-development|backend engineering]].",
         },
       },
       {
@@ -422,7 +422,7 @@ export const aiCorePosts10: BlogPost[] = [
         },
         cta: {
           title: "Building an assistant that should remember customers?",
-          description: "ZSpace designs agent memory with consent, user controls and expiry, so personalization helps without becoming a privacy problem.",
+          description: "ZSpace Labs designs agent memory with consent, user controls and expiry, so personalization helps without becoming a privacy problem.",
         },
       },
       {
@@ -504,7 +504,7 @@ export const aiCorePosts10: BlogPost[] = [
         ],
         cta: {
           title: "Want personalization without privacy risk?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI agent development with memory]] and [[/services/ui-ux-design|memory controls and settings UX]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI agent development with memory]] and [[/services/ui-ux-design|memory controls and settings UX]].",
         },
       },
       {
@@ -594,7 +594,7 @@ export const aiCorePosts10: BlogPost[] = [
         ],
         cta: {
           title: "Connecting your agents to partners' or vendors' agents?",
-          description: "ZSpace can assess whether A2A or a simpler integration fits, and build secure agent-to-agent connections where they add value.",
+          description: "ZSpace Labs can assess whether A2A or a simpler integration fits, and build secure agent-to-agent connections where they add value.",
         },
       },
       {
@@ -683,7 +683,7 @@ export const aiCorePosts10: BlogPost[] = [
         ],
         cta: {
           title: "Exploring agent interoperability?",
-          description: "Talk to ZSpace about [[/services/ai-automation|multi-agent and A2A development]] and [[/services/website-development|secure API infrastructure]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|multi-agent and A2A development]] and [[/services/website-development|secure API infrastructure]].",
         },
       },
       {

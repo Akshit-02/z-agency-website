@@ -151,7 +151,7 @@ export const commercePosts71: BlogPost[] = [
         ],
         cta: {
           title: "Are your specs holding back filters and comparison?",
-          description: "ZSpace can audit your electronics attributes, design a normalized schema per category and plan how to migrate the data.",
+          description: "ZSpace Labs can audit your electronics attributes, design a normalized schema per category and plan how to migrate the data.",
         },
       },
       {
@@ -217,7 +217,7 @@ export const commercePosts71: BlogPost[] = [
         ],
         cta: {
           title: "Ready to fix your product specification data?",
-          description: "Talk to ZSpace about [[/services/website-development|ecommerce data and catalog development]], [[/services/shopify-development|Shopify metafields and catalog setup]] and [[/services/ui-ux-design|spec presentation design]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|ecommerce data and catalog development]], [[/services/shopify-development|Shopify metafields and catalog setup]] and [[/services/ui-ux-design|spec presentation design]].",
         },
       },
       {
@@ -329,7 +329,7 @@ export const commercePosts71: BlogPost[] = [
         ],
         cta: {
           title: "Is delivery confusion costing you furniture orders?",
-          description: "ZSpace can map your delivery promises across product pages, checkout and emails and show where customers lose confidence.",
+          description: "ZSpace Labs can map your delivery promises across product pages, checkout and emails and show where customers lose confidence.",
         },
       },
       {
@@ -422,7 +422,7 @@ export const commercePosts71: BlogPost[] = [
         ],
         cta: {
           title: "Want delivery to sell your furniture, not stall it?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|furniture ecommerce UX]], [[/services/website-development|delivery scheduling integrations]] and [[/services/cro-audit|furniture conversion audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|furniture ecommerce UX]], [[/services/website-development|delivery scheduling integrations]] and [[/services/cro-audit|furniture conversion audits]].",
         },
       },
       {
@@ -530,7 +530,7 @@ export const commercePosts71: BlogPost[] = [
         },
         cta: {
           title: "Planning personalization for a jewelry brand?",
-          description: "ZSpace can design rules, data and guardrails that make recommendations useful without risking gift secrecy or trust.",
+          description: "ZSpace Labs can design rules, data and guardrails that make recommendations useful without risking gift secrecy or trust.",
         },
       },
       {
@@ -598,7 +598,7 @@ export const commercePosts71: BlogPost[] = [
         ],
         cta: {
           title: "Want personalization that fits a high-trust category?",
-          description: "Talk to ZSpace about [[/services/shopify-development|jewelry ecommerce on Shopify]], [[/services/ai-automation|recommendations and personalization]] and [[/services/ui-ux-design|jewelry UX design]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|jewelry ecommerce on Shopify]], [[/services/ai-automation|recommendations and personalization]] and [[/services/ui-ux-design|jewelry UX design]].",
         },
       },
       {
@@ -717,7 +717,7 @@ export const commercePosts71: BlogPost[] = [
         ],
         cta: {
           title: "Is your jewelry store losing shoppers on phones?",
-          description: "ZSpace can test your mobile product pages with real shoppers and show where imagery, sizing or trust break down.",
+          description: "ZSpace Labs can test your mobile product pages with real shoppers and show where imagery, sizing or trust break down.",
         },
       },
       {
@@ -782,7 +782,7 @@ export const commercePosts71: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve your mobile jewelry experience?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|jewelry mobile UX design]], [[/services/shopify-development|Shopify jewelry stores]] and [[/services/cro-audit|mobile conversion audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|jewelry mobile UX design]], [[/services/shopify-development|Shopify jewelry stores]] and [[/services/cro-audit|mobile conversion audits]].",
         },
       },
       {

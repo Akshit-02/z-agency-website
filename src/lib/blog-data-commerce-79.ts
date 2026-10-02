@@ -93,7 +93,7 @@ export const commercePosts79: BlogPost[] = [
         ],
         cta: {
           title: "Is your B2B account model holding back self-service?",
-          description: "ZSpace can design company, location, role and permission models that match how your customers buy, and integrate them with your ERP.",
+          description: "ZSpace Labs can design company, location, role and permission models that match how your customers buy, and integrate them with your ERP.",
         },
       },
       {
@@ -156,7 +156,7 @@ export const commercePosts79: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build B2B accounts customers can manage themselves?",
-          description: "Talk to ZSpace about [[/services/website-development|B2B platform development]], [[/services/shopify-development|Shopify B2B setups]] and [[/services/ui-ux-design|account and portal UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|B2B platform development]], [[/services/shopify-development|Shopify B2B setups]] and [[/services/ui-ux-design|account and portal UX]].",
         },
       },
       {
@@ -242,7 +242,7 @@ export const commercePosts79: BlogPost[] = [
         ],
         cta: {
           title: "Managing contract catalogs by hand?",
-          description: "ZSpace can design an entitlement model and service that applies customer catalogs and prices consistently across every channel.",
+          description: "ZSpace Labs can design an entitlement model and service that applies customer catalogs and prices consistently across every channel.",
         },
       },
       {
@@ -294,7 +294,7 @@ export const commercePosts79: BlogPost[] = [
         ],
         cta: {
           title: "Ready to give every account the right catalog?",
-          description: "Talk to ZSpace about [[/services/website-development|B2B catalog and pricing architecture]], [[/services/shopify-development|Shopify B2B catalogs]] and [[/services/ai-automation|contract data automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|B2B catalog and pricing architecture]], [[/services/shopify-development|Shopify B2B catalogs]] and [[/services/ai-automation|contract data automation]].",
         },
       },
       {
@@ -373,7 +373,7 @@ export const commercePosts79: BlogPost[] = [
         ],
         cta: {
           title: "Do your trade buyers still email spreadsheets to order?",
-          description: "ZSpace can design quick order, paste and upload flows with line-level validation that buyers trust.",
+          description: "ZSpace Labs can design quick order, paste and upload flows with line-level validation that buyers trust.",
         },
       },
       {
@@ -440,7 +440,7 @@ export const commercePosts79: BlogPost[] = [
         ],
         cta: {
           title: "Ready to speed up ordering for trade customers?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|B2B ordering UX]], [[/services/website-development|B2B platform development]] and [[/services/shopify-development|Shopify B2B quick order]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|B2B ordering UX]], [[/services/website-development|B2B platform development]] and [[/services/shopify-development|Shopify B2B quick order]].",
         },
       },
       {
@@ -520,7 +520,7 @@ export const commercePosts79: BlogPost[] = [
         ],
         cta: {
           title: "Are approvals slowing down your customers' orders?",
-          description: "ZSpace can design approval rules, notifications and audit into your B2B store, matched to how your customers control spending.",
+          description: "ZSpace Labs can design approval rules, notifications and audit into your B2B store, matched to how your customers control spending.",
         },
       },
       {
@@ -578,7 +578,7 @@ export const commercePosts79: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build approvals that keep orders moving?",
-          description: "Talk to ZSpace about [[/services/website-development|B2B workflow development]], [[/services/ai-automation|approval automation]] and [[/services/ui-ux-design|B2B portal UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|B2B workflow development]], [[/services/ai-automation|approval automation]] and [[/services/ui-ux-design|B2B portal UX]].",
         },
       },
       {

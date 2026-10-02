@@ -85,7 +85,7 @@ export const webDevPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Designing an API for your website or app?",
-          description: "ZSpace can help choose and design the right API style for your data, channels and team.",
+          description: "ZSpace Labs can help choose and design the right API style for your data, channels and team.",
         },
       },
       {
@@ -107,7 +107,7 @@ export const webDevPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Want a second opinion on your API design?",
-          description: "Talk to ZSpace before committing to an API style that your team will live with for years.",
+          description: "Talk to ZSpace Labs before committing to an API style that your team will live with for years.",
         },
       },
       {
@@ -198,7 +198,7 @@ export const webDevPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Mapping out the integrations your site needs?",
-          description: "ZSpace plans and builds website integrations with logging, error handling and monitoring, not just a working demo.",
+          description: "ZSpace Labs plans and builds website integrations with logging, error handling and monitoring, not just a working demo.",
         },
       },
       {
@@ -210,7 +210,7 @@ export const webDevPosts8: BlogPost[] = [
       {
         heading: "AI Service Integrations",
         body: [
-          "AI integrations follow the same API patterns, with extra considerations: cost per request, response latency, what customer data is sent to the provider, and how outputs are checked before customers see them. ZSpace's [[/services/ai-automation|AI automation]] work covers these in more depth.",
+          "AI integrations follow the same API patterns, with extra considerations: cost per request, response latency, what customer data is sent to the provider, and how outputs are checked before customers see them. ZSpace Labs' [[/services/ai-automation|AI automation]] work covers these in more depth.",
         ],
       },
       {
@@ -234,7 +234,7 @@ export const webDevPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Want your integrations built to be reliable in production?",
-          description: "Talk to ZSpace about connecting your website to the systems your business depends on.",
+          description: "Talk to ZSpace Labs about connecting your website to the systems your business depends on.",
         },
       },
       {
@@ -318,7 +318,7 @@ export const webDevPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Losing leads between your website and CRM?",
-          description: "ZSpace builds CRM integrations with attribution, deduplication and failure handling, so every lead arrives with its context.",
+          description: "ZSpace Labs builds CRM integrations with attribution, deduplication and failure handling, so every lead arrives with its context.",
         },
       },
       {
@@ -353,7 +353,7 @@ export const webDevPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Planning a CRM integration?",
-          description: "Talk to ZSpace about connecting your website and CRM in a way your sales team can rely on.",
+          description: "Talk to ZSpace Labs about connecting your website and CRM in a way your sales team can rely on.",
         },
       },
       {
@@ -431,7 +431,7 @@ export const webDevPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Building a custom checkout or payment flow?",
-          description: "ZSpace implements payment integrations with webhook handling, failure recovery and proper testing, so orders and payments stay in sync.",
+          description: "ZSpace Labs implements payment integrations with webhook handling, failure recovery and proper testing, so orders and payments stay in sync.",
         },
       },
       {
@@ -474,13 +474,13 @@ export const webDevPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Want your payment flow reviewed before launch?",
-          description: "Talk to ZSpace about testing and hardening your payment integration.",
+          description: "Talk to ZSpace Labs about testing and hardening your payment integration.",
         },
       },
       {
         heading: "Conclusion",
         body: [
-          "A dependable payment integration keeps card data with the gateway, sets amounts server-side, treats webhooks as the source of truth, and handles failures and refunds cleanly. If you sell primarily products online, a commerce platform may handle most of this for you; see ZSpace's [[/services/shopify-development|Shopify development]] work. For payments inside a mobile app, including in-app purchase rules, see [[/blogs/mobile-app-payments|mobile app payments]].",
+          "A dependable payment integration keeps card data with the gateway, sets amounts server-side, treats webhooks as the source of truth, and handles failures and refunds cleanly. If you sell primarily products online, a commerce platform may handle most of this for you; see ZSpace Labs' [[/services/shopify-development|Shopify development]] work. For payments inside a mobile app, including in-app purchase rules, see [[/blogs/mobile-app-payments|mobile app payments]].",
           "For related guides, see [[/blogs/ecommerce-payment-gateway-integration|ecommerce payment gateway integration]].",
         ],
       },
@@ -549,7 +549,7 @@ export const webDevPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Considering a PWA instead of native apps?",
-          description: "ZSpace can assess whether a PWA meets your requirements or whether native development is the better investment.",
+          description: "ZSpace Labs can assess whether a PWA meets your requirements or whether native development is the better investment.",
         },
       },
       {
@@ -578,7 +578,7 @@ export const webDevPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Want to turn your website into a PWA?",
-          description: "Talk to ZSpace about installability, offline behavior and notifications that genuinely help your users.",
+          description: "Talk to ZSpace Labs about installability, offline behavior and notifications that genuinely help your users.",
         },
       },
       {
@@ -647,7 +647,7 @@ export const webDevPosts8: BlogPost[] = [
       {
         heading: "Cost and Development",
         body: [
-          "A PWA reuses web skills and one codebase, which usually means lower build and maintenance cost. Native development requires platform-specific skills or a cross-platform framework, plus app store processes. For a detailed view of native builds, see ZSpace's [[/services/mobile-app-development|mobile app development]] service.",
+          "A PWA reuses web skills and one codebase, which usually means lower build and maintenance cost. Native development requires platform-specific skills or a cross-platform framework, plus app store processes. For a detailed view of native builds, see ZSpace Labs' [[/services/mobile-app-development|mobile app development]] service.",
         ],
         visual: { variant: "grid", accent: "orange", caption: "PWAs trade some device capability for reach and lower cost; native apps trade cost for capability and store presence." },
       },
@@ -658,7 +658,7 @@ export const webDevPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Deciding between a PWA and a native app?",
-          description: "ZSpace builds both websites and mobile apps, so we can recommend what your use case actually needs.",
+          description: "ZSpace Labs builds both websites and mobile apps, so we can recommend what your use case actually needs.",
         },
       },
       {
@@ -688,7 +688,7 @@ export const webDevPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Want to scope the right mobile approach?",
-          description: "Talk to ZSpace about your users, features and budget before committing to a platform.",
+          description: "Talk to ZSpace Labs about your users, features and budget before committing to a platform.",
         },
       },
       {
@@ -771,7 +771,7 @@ export const webDevPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Is your site's rendering hurting SEO or speed?",
-          description: "ZSpace can review how your pages are rendered and recommend the right mix for your content and application.",
+          description: "ZSpace Labs can review how your pages are rendered and recommend the right mix for your content and application.",
         },
       },
       {
@@ -798,7 +798,7 @@ export const webDevPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Planning a new build or re-architecture?",
-          description: "Talk to ZSpace about choosing rendering strategies page by page rather than one approach for everything.",
+          description: "Talk to ZSpace Labs about choosing rendering strategies page by page rather than one approach for everything.",
         },
       },
       {

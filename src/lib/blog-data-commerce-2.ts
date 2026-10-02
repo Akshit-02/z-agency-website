@@ -142,7 +142,7 @@ export const commercePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Is your store's structure holding back its rankings?",
-          description: "ZSpace audits ecommerce architecture, indexing and templates, and fixes them in the build rather than with workarounds.",
+          description: "ZSpace Labs audits ecommerce architecture, indexing and templates, and fixes them in the build rather than with workarounds.",
         },
       },
       {
@@ -200,7 +200,7 @@ export const commercePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want ecommerce SEO built into your store?",
-          description: "Talk to ZSpace about [[/services/website-development|ecommerce development]], [[/services/shopify-development|Shopify builds]] and [[/services/cro-audit|conversion audits]] that treat search and UX together.",
+          description: "Talk to ZSpace Labs about [[/services/website-development|ecommerce development]], [[/services/shopify-development|Shopify builds]] and [[/services/cro-audit|conversion audits]] that treat search and UX together.",
         },
       },
       {
@@ -318,7 +318,7 @@ export const commercePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Product pages not showing up for the searches they should?",
-          description: "ZSpace reviews Shopify product templates, data and structured data, and fixes what's holding pages back.",
+          description: "ZSpace Labs reviews Shopify product templates, data and structured data, and fixes what's holding pages back.",
         },
       },
       {
@@ -370,7 +370,7 @@ export const commercePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want product pages that rank and convert?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify development]] and a [[/services/cro-audit|product page audit]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify development]] and a [[/services/cro-audit|product page audit]].",
         },
       },
       {
@@ -480,7 +480,7 @@ export const commercePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Category pages not ranking for your main searches?",
-          description: "ZSpace reviews category structure, content and indexing, and aligns them with how shoppers search.",
+          description: "ZSpace Labs reviews category structure, content and indexing, and aligns them with how shoppers search.",
         },
       },
       {
@@ -533,7 +533,7 @@ export const commercePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want category pages that rank and help shoppers choose?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|ecommerce UX]], [[/services/website-development|development]] and [[/services/shopify-development|Shopify collections]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|ecommerce UX]], [[/services/website-development|development]] and [[/services/shopify-development|Shopify collections]].",
         },
       },
       {
@@ -644,7 +644,7 @@ export const commercePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Collections competing with each other in search?",
-          description: "ZSpace restructures Shopify collections, content and filters so each one targets a clear search and shoppers find products faster.",
+          description: "ZSpace Labs restructures Shopify collections, content and filters so each one targets a clear search and shoppers find products faster.",
         },
       },
       {
@@ -688,7 +688,7 @@ export const commercePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want your collections working harder?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify development]] and a [[/services/cro-audit|collection page review]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify development]] and a [[/services/cro-audit|collection page review]].",
         },
       },
       {

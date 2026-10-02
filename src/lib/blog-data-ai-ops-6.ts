@@ -87,7 +87,7 @@ export const aiOpsPosts6: BlogPost[] = [
         },
         cta: {
           title: "Need confidence your AI stays within its rules?",
-          description: "ZSpace builds safety and policy test suites for AI applications and integrates them into release gates. See [[/services/ai-automation|AI development services]].",
+          description: "ZSpace Labs builds safety and policy test suites for AI applications and integrates them into release gates. See [[/services/ai-automation|AI development services]].",
         },
       },
       {
@@ -172,7 +172,7 @@ export const aiOpsPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Upgrading models for a sensitive AI feature?",
-          description: "Talk to ZSpace about [[/services/ai-automation|safety regression testing]] before and after model changes.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|safety regression testing]] before and after model changes.",
         },
       },
       {
@@ -258,7 +258,7 @@ export const aiOpsPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Worried your AI assistant could show the wrong data to the wrong user?",
-          description: "ZSpace reviews and hardens retrieval, tenancy and output handling in AI applications. See [[/services/ai-automation|AI security services]].",
+          description: "ZSpace Labs reviews and hardens retrieval, tenancy and output handling in AI applications. See [[/services/ai-automation|AI security services]].",
         },
       },
       {
@@ -347,7 +347,7 @@ export const aiOpsPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Want a leakage test before launch?",
-          description: "Talk to ZSpace about an [[/services/ai-automation|AI data exposure review]] with canary testing across users and tenants.",
+          description: "Talk to ZSpace Labs about an [[/services/ai-automation|AI data exposure review]] with canary testing across users and tenants.",
         },
       },
       {
@@ -432,7 +432,7 @@ export const aiOpsPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Connecting agents to business systems?",
-          description: "ZSpace designs agent identity, permissions and approval flows that keep automation within safe bounds. See [[/services/ai-automation|AI agent development]].",
+          description: "ZSpace Labs designs agent identity, permissions and approval flows that keep automation within safe bounds. See [[/services/ai-automation|AI agent development]].",
         },
       },
       {
@@ -512,7 +512,7 @@ export const aiOpsPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Need a permissions review for your agents?",
-          description: "Talk to ZSpace about [[/services/ai-automation|agent access control]]: identities, scopes, approvals and audit.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|agent access control]]: identities, scopes, approvals and audit.",
         },
       },
       {
@@ -589,7 +589,7 @@ export const aiOpsPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Giving an AI assistant real actions to take?",
-          description: "ZSpace builds secure tool layers for AI agents and copilots, with validation, authorization and sandboxing. See [[/services/ai-automation|AI integration services]].",
+          description: "ZSpace Labs builds secure tool layers for AI agents and copilots, with validation, authorization and sandboxing. See [[/services/ai-automation|AI integration services]].",
         },
       },
       {
@@ -687,7 +687,7 @@ export const aiOpsPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Want your agent's tools reviewed?",
-          description: "Talk to ZSpace about an [[/services/ai-automation|AI tool security review]] covering schemas, validation, sandboxing and third-party tools.",
+          description: "Talk to ZSpace Labs about an [[/services/ai-automation|AI tool security review]] covering schemas, validation, sandboxing and third-party tools.",
         },
       },
       {

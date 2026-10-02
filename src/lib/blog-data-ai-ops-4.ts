@@ -78,7 +78,7 @@ export const aiOpsPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Sitting on documents and recordings your AI can't use?",
-          description: "ZSpace builds parsing, transcription and indexing pipelines for AI assistants. See [[/services/ai-automation|AI development services]].",
+          description: "ZSpace Labs builds parsing, transcription and indexing pipelines for AI assistants. See [[/services/ai-automation|AI development services]].",
         },
       },
       {
@@ -178,7 +178,7 @@ export const aiOpsPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want better answers from your documents?",
-          description: "Talk to ZSpace about [[/services/ai-automation|document processing for RAG]] tuned to your file types and quality needs.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|document processing for RAG]] tuned to your file types and quality needs.",
         },
       },
       {
@@ -277,7 +277,7 @@ export const aiOpsPosts4: BlogPost[] = [
         },
         cta: {
           title: "Need test or evaluation data you can safely use?",
-          description: "ZSpace helps teams build evaluation sets and synthetic test data with proper quality and privacy checks. See [[/services/ai-automation|AI development services]].",
+          description: "ZSpace Labs helps teams build evaluation sets and synthetic test data with proper quality and privacy checks. See [[/services/ai-automation|AI development services]].",
         },
       },
       {
@@ -366,7 +366,7 @@ export const aiOpsPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Planning to use synthetic data in your AI project?",
-          description: "Talk to ZSpace about [[/services/ai-automation|dataset design]] that balances coverage, privacy and real-world validity.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|dataset design]] that balances coverage, privacy and real-world validity.",
         },
       },
       {
@@ -448,7 +448,7 @@ export const aiOpsPosts4: BlogPost[] = [
         },
         cta: {
           title: "Need labelled data for an AI project?",
-          description: "ZSpace designs annotation programmes, guidelines and quality checks for AI teams. See [[/services/ai-automation|AI development services]].",
+          description: "ZSpace Labs designs annotation programmes, guidelines and quality checks for AI teams. See [[/services/ai-automation|AI development services]].",
         },
       },
       {
@@ -535,7 +535,7 @@ export const aiOpsPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want a quality review of your training or evaluation data?",
-          description: "Talk to ZSpace about [[/services/ai-automation|annotation and dataset quality]] for your AI systems.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|annotation and dataset quality]] for your AI systems.",
         },
       },
       {
@@ -624,7 +624,7 @@ export const aiOpsPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Not sure your data is good enough for AI?",
-          description: "ZSpace runs data quality audits tied to specific AI use cases. See [[/services/ai-automation|AI development services]].",
+          description: "ZSpace Labs runs data quality audits tied to specific AI use cases. See [[/services/ai-automation|AI development services]].",
         },
       },
       {
@@ -707,7 +707,7 @@ export const aiOpsPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want quality checks built into your AI data flows?",
-          description: "Talk to ZSpace about [[/services/ai-automation|automated data validation]] and audits for AI datasets and document collections.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|automated data validation]] and audits for AI datasets and document collections.",
         },
       },
       {

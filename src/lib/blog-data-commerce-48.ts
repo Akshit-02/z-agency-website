@@ -75,7 +75,7 @@ export const commercePosts48: BlogPost[] = [
         ],
         cta: {
           title: "Search returning random results for room and style queries?",
-          description: "ZSpace tunes furniture search around rooms, styles, collections and sizes using your real query logs.",
+          description: "ZSpace Labs tunes furniture search around rooms, styles, collections and sizes using your real query logs.",
         },
       },
       {
@@ -145,7 +145,7 @@ export const commercePosts48: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve furniture search?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|search UX]], [[/services/website-development|search implementation]] and [[/services/cro-audit|search audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|search UX]], [[/services/website-development|search implementation]] and [[/services/cro-audit|search audits]].",
         },
       },
       {
@@ -224,7 +224,7 @@ export const commercePosts48: BlogPost[] = [
         ],
         cta: {
           title: "Furniture shoppers visiting often but rarely ordering?",
-          description: "ZSpace audits furniture journeys and prioritizes the size, delivery and trust fixes that move long decisions forward.",
+          description: "ZSpace Labs audits furniture journeys and prioritizes the size, delivery and trust fixes that move long decisions forward.",
         },
       },
       {
@@ -302,7 +302,7 @@ export const commercePosts48: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve furniture conversion?",
-          description: "Talk to ZSpace about [[/services/cro-audit|furniture CRO]] and [[/services/ui-ux-design|product page and delivery UX]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|furniture CRO]] and [[/services/ui-ux-design|product page and delivery UX]].",
         },
       },
       {
@@ -366,7 +366,7 @@ export const commercePosts48: BlogPost[] = [
         ],
         cta: {
           title: "Mobile furniture shoppers dropping off before buying?",
-          description: "ZSpace redesigns furniture mobile journeys for evaluation, sharing and simple delivery booking.",
+          description: "ZSpace Labs redesigns furniture mobile journeys for evaluation, sharing and simple delivery booking.",
         },
       },
       {
@@ -443,7 +443,7 @@ export const commercePosts48: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve furniture shopping on phones?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|mobile UX]], [[/services/mobile-app-development|shopping apps]] and [[/services/cro-audit|mobile CRO]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|mobile UX]], [[/services/mobile-app-development|shopping apps]] and [[/services/cro-audit|mobile CRO]].",
         },
       },
       {
@@ -518,7 +518,7 @@ export const commercePosts48: BlogPost[] = [
         ],
         cta: {
           title: "Planning a furniture store redesign?",
-          description: "ZSpace redesigns furniture stores from the data and delivery model up, phased and measured.",
+          description: "ZSpace Labs redesigns furniture stores from the data and delivery model up, phased and measured.",
         },
       },
       {
@@ -596,7 +596,7 @@ export const commercePosts48: BlogPost[] = [
         ],
         cta: {
           title: "Ready to modernize your home store?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|furniture UX redesign]], [[/services/website-development|furniture store development]] and [[/services/cro-audit|conversion audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|furniture UX redesign]], [[/services/website-development|furniture store development]] and [[/services/cro-audit|conversion audits]].",
         },
       },
       {

@@ -57,7 +57,7 @@ export const designPosts: BlogPost[] = [
         heading: "What Product Design Covers",
         body: [
           "Product design sits at the intersection of user needs, business goals and technical feasibility. A product designer asks whether a feature should exist at all before deciding how it looks. That's the main difference from interface-only work: product design is accountable for outcomes, such as users completing tasks, returning and paying, not just for polished screens.",
-          "This guide is the hub for ZSpace's product design and UI/UX content. Each section links to a deeper guide.",
+          "This guide is the hub for ZSpace Labs' product design and UI/UX content. Each section links to a deeper guide.",
         ],
         visual: { variant: "grid", accent: "orange", caption: "Product design balances what users need, what the business needs and what can realistically be built." },
       },
@@ -100,7 +100,7 @@ export const designPosts: BlogPost[] = [
         ],
         cta: {
           title: "Planning a new digital product?",
-          description: "ZSpace's product and UI/UX design work starts with research and flows, so what gets designed is what users actually need.",
+          description: "ZSpace Labs' product and UI/UX design work starts with research and flows, so what gets designed is what users actually need.",
         },
       },
       {
@@ -146,7 +146,7 @@ export const designPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want an experienced product design partner?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|product and UI/UX design]], from discovery and prototypes to design systems and launch.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|product and UI/UX design]], from discovery and prototypes to design systems and launch.",
         },
       },
       {
@@ -225,7 +225,7 @@ export const designPosts: BlogPost[] = [
         ],
         cta: {
           title: "Need help moving from idea to validated design?",
-          description: "ZSpace runs research, prototyping and usability testing so your team builds with confidence.",
+          description: "ZSpace Labs runs research, prototyping and usability testing so your team builds with confidence.",
         },
       },
       {
@@ -280,7 +280,7 @@ export const designPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want to set up a product design process for your team?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|product and UI/UX design]] support that fits your product and pace.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|product and UI/UX design]] support that fits your product and pace.",
         },
       },
       {
@@ -356,7 +356,7 @@ export const designPosts: BlogPost[] = [
         ],
         cta: {
           title: "Not sure what design support your product needs?",
-          description: "ZSpace covers research, UX, UI and design systems, so you get the scope your product actually requires.",
+          description: "ZSpace Labs covers research, UX, UI and design systems, so you get the scope your product actually requires.",
         },
       },
       {
@@ -383,7 +383,7 @@ export const designPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want an outside view of your product's UX?",
-          description: "Talk to ZSpace about a [[/blogs/ux-audit|UX audit]] or ongoing [[/services/ui-ux-design|UI/UX design]] support.",
+          description: "Talk to ZSpace Labs about a [[/blogs/ux-audit|UX audit]] or ongoing [[/services/ui-ux-design|UI/UX design]] support.",
         },
       },
       {
@@ -463,7 +463,7 @@ export const designPosts: BlogPost[] = [
         ],
         cta: {
           title: "Planning a website or product redesign?",
-          description: "ZSpace's UI/UX design team starts with research and structure, then builds a consistent interface your developers can implement.",
+          description: "ZSpace Labs' UI/UX design team starts with research and structure, then builds a consistent interface your developers can implement.",
         },
       },
       {
@@ -518,7 +518,7 @@ export const designPosts: BlogPost[] = [
         ],
         cta: {
           title: "Looking for a UI/UX design partner?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|UI/UX design]] for your website, app or product.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] for your website, app or product.",
         },
       },
       {
@@ -585,7 +585,7 @@ export const designPosts: BlogPost[] = [
         ],
         cta: {
           title: "Need UX research and prototyping for a key flow?",
-          description: "ZSpace can research, prototype and test your most important user journeys before development starts.",
+          description: "ZSpace Labs can research, prototype and test your most important user journeys before development starts.",
         },
       },
       {
@@ -639,7 +639,7 @@ export const designPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want UX support embedded in your product team?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|UI/UX design]] that fits your sprints and roadmap.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] that fits your sprints and roadmap.",
         },
       },
       {
@@ -713,7 +713,7 @@ export const designPosts: BlogPost[] = [
         ],
         cta: {
           title: "Is your interface inconsistent or hard to scan?",
-          description: "ZSpace can audit and redesign your UI around a clear hierarchy and a reusable component system.",
+          description: "ZSpace Labs can audit and redesign your UI around a clear hierarchy and a reusable component system.",
         },
       },
       {
@@ -769,7 +769,7 @@ export const designPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want a UI that's clear, consistent and easy to extend?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|UI/UX design]] and design systems for your product.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] and design systems for your product.",
         },
       },
       {
@@ -867,7 +867,7 @@ export const designPosts: BlogPost[] = [
         ],
         cta: {
           title: "Need research before your next big design decision?",
-          description: "ZSpace plans and runs user research, from interviews to usability tests, and turns findings into design direction.",
+          description: "ZSpace Labs plans and runs user research, from interviews to usability tests, and turns findings into design direction.",
         },
       },
       {
@@ -900,7 +900,7 @@ export const designPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want research built into your product process?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|UI/UX design]] grounded in real user evidence.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] grounded in real user evidence.",
         },
       },
       {

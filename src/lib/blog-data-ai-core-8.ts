@@ -96,7 +96,7 @@ export const aiCorePosts8: BlogPost[] = [
         ],
         cta: {
           title: "Want an assistant your team can actually rely on?",
-          description: "ZSpace builds knowledge assistants with permission-aware retrieval, citations and the feedback tools content owners need.",
+          description: "ZSpace Labs builds knowledge assistants with permission-aware retrieval, citations and the feedback tools content owners need.",
         },
       },
       {
@@ -184,7 +184,7 @@ export const aiCorePosts8: BlogPost[] = [
         ],
         cta: {
           title: "Planning a knowledge assistant for employees or customers?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI knowledge base development]] and [[/services/ui-ux-design|assistant interface design]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI knowledge base development]] and [[/services/ui-ux-design|assistant interface design]].",
         },
       },
       {
@@ -267,7 +267,7 @@ export const aiCorePosts8: BlogPost[] = [
         ],
         cta: {
           title: "Have questions that span hundreds of documents?",
-          description: "ZSpace can test whether a knowledge graph improves answers on your data before you invest in building one.",
+          description: "ZSpace Labs can test whether a knowledge graph improves answers on your data before you invest in building one.",
         },
       },
       {
@@ -354,7 +354,7 @@ export const aiCorePosts8: BlogPost[] = [
         ],
         cta: {
           title: "Exploring knowledge graphs for AI retrieval?",
-          description: "Talk to ZSpace about [[/services/ai-automation|GraphRAG and advanced RAG development]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|GraphRAG and advanced RAG development]].",
         },
       },
       {
@@ -459,7 +459,7 @@ export const aiCorePosts8: BlogPost[] = [
         ],
         cta: {
           title: "Want your product or internal systems available to AI assistants?",
-          description: "ZSpace designs and builds MCP servers with narrow tools, proper authorization and the testing needed for production use.",
+          description: "ZSpace Labs designs and builds MCP servers with narrow tools, proper authorization and the testing needed for production use.",
         },
       },
       {
@@ -571,7 +571,7 @@ export const aiCorePosts8: BlogPost[] = [
         ],
         cta: {
           title: "Planning an MCP integration?",
-          description: "Talk to ZSpace about [[/services/ai-automation|MCP server development]] and [[/services/website-development|API and backend integration]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|MCP server development]] and [[/services/website-development|API and backend integration]].",
         },
       },
       {
@@ -672,7 +672,7 @@ export const aiCorePosts8: BlogPost[] = [
         ],
         cta: {
           title: "Building an MCP server for your product or internal systems?",
-          description: "ZSpace builds MCP servers with narrow tools, validation, authorization and tests, on top of your existing APIs.",
+          description: "ZSpace Labs builds MCP servers with narrow tools, validation, authorization and tests, on top of your existing APIs.",
         },
       },
       {
@@ -748,7 +748,7 @@ export const aiCorePosts8: BlogPost[] = [
         ],
         cta: {
           title: "Need help taking an MCP server to production?",
-          description: "Talk to ZSpace about [[/services/ai-automation|MCP development]] and [[/services/website-development|API, auth and deployment work]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|MCP development]] and [[/services/website-development|API, auth and deployment work]].",
         },
       },
       {

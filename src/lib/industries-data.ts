@@ -84,7 +84,7 @@ export const industries: Industry[] = [
     ],
     faqs: [
       {
-        q: "What technology solutions does ZSpace provide for real estate companies?",
+        q: "What technology solutions does ZSpace Labs provide for real estate companies?",
         a: "We build listing and marketplace platforms, developer and agency websites, lead-generation sites, CRM integrations and the AI automation that routes and follows up on inquiries. Every project starts with your actual sales process, not a template.",
       },
       {
@@ -137,7 +137,7 @@ export const industries: Industry[] = [
     ],
     faqs: [
       {
-        q: "Can ZSpace build a D2C ecommerce website?",
+        q: "Can ZSpace Labs build a D2C ecommerce website?",
         a: "Yes. We build and redesign Shopify stores and custom ecommerce sites for D2C brands, from the storefront through checkout, and can run a conversion audit on an existing store first if that's the more useful starting point.",
       },
       {
@@ -190,7 +190,7 @@ export const industries: Industry[] = [
     ],
     faqs: [
       {
-        q: "What services does ZSpace provide to beauty brands?",
+        q: "What services does ZSpace Labs provide to beauty brands?",
         a: "Shopify store builds and redesigns, product discovery experiences, UI/UX design, conversion optimization and the automation around subscriptions and repeat purchases.",
       },
       {
@@ -339,7 +339,7 @@ export const industries: Industry[] = [
     ],
     faqs: [
       {
-        q: "Does ZSpace develop fintech applications?",
+        q: "Does ZSpace Labs develop fintech applications?",
         a: "Yes, we build the web and mobile applications, dashboards and customer portals FinTech companies need. We provide technology and digital product development — not regulated financial services.",
       },
       {
@@ -441,7 +441,7 @@ export const industries: Industry[] = [
     ],
     faqs: [
       {
-        q: "Can ZSpace build a healthcare booking or patient platform?",
+        q: "Can ZSpace Labs build a healthcare booking or patient platform?",
         a: "Yes, we build patient-facing booking systems, portals and mobile apps, along with the internal dashboards clinics and HealthTech teams use to manage them.",
       },
       {
@@ -492,7 +492,7 @@ export const industries: Industry[] = [
     ],
     faqs: [
       {
-        q: "Can ZSpace automate manufacturing workflows?",
+        q: "Can ZSpace Labs automate manufacturing workflows?",
         a: "Yes, we build automation for the coordination-heavy parts of manufacturing operations — order processing, reporting, status updates — and the dashboards that give visibility into them.",
       },
       {

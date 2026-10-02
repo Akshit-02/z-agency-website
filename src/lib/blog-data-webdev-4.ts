@@ -77,7 +77,7 @@ export const webDevPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Building or rebuilding a startup website?",
-          description: "ZSpace works with early-stage and growing teams on websites built to scale without over-engineering for a stage they haven't reached yet.",
+          description: "ZSpace Labs works with early-stage and growing teams on websites built to scale without over-engineering for a stage they haven't reached yet.",
         },
       },
       {
@@ -184,7 +184,7 @@ export const webDevPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Building or improving a SaaS marketing site?",
-          description: "ZSpace builds SaaS marketing sites and product interfaces on the same modern stack, so positioning, signup flows and the product itself stay connected.",
+          description: "ZSpace Labs builds SaaS marketing sites and product interfaces on the same modern stack, so positioning, signup flows and the product itself stay connected.",
         },
       },
       {
@@ -208,7 +208,7 @@ export const webDevPosts4: BlogPost[] = [
       {
         heading: "Conversion and Analytics",
         body: [
-          "Track the full funnel — visits, signups or demo requests, activation, and eventually paid conversion — not just top-of-funnel traffic. See ZSpace's [[/blogs/shopify-cro-audit|CRO audit framework]] for the broader diagnostic discipline this connects to, adapted to a SaaS funnel.",
+          "Track the full funnel — visits, signups or demo requests, activation, and eventually paid conversion — not just top-of-funnel traffic. See ZSpace Labs' [[/blogs/shopify-cro-audit|CRO audit framework]] for the broader diagnostic discipline this connects to, adapted to a SaaS funnel.",
         ],
       },
       {
@@ -299,7 +299,7 @@ export const webDevPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Building a B2B website meant to generate qualified leads?",
-          description: "ZSpace builds B2B websites with CRM-connected lead capture and the trust signals a longer buying cycle actually depends on.",
+          description: "ZSpace Labs builds B2B websites with CRM-connected lead capture and the trust signals a longer buying cycle actually depends on.",
         },
       },
       {
@@ -404,7 +404,7 @@ export const webDevPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Building a website that reflects real expertise, not generic templates?",
-          description: "ZSpace builds professional services websites focused on credibility, clarity and a low-friction path to a first conversation.",
+          description: "ZSpace Labs builds professional services websites focused on credibility, clarity and a low-friction path to a first conversation.",
         },
       },
       {
@@ -506,7 +506,7 @@ export const webDevPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Building a real estate website with real search and lead capture?",
-          description: "ZSpace builds real estate websites with working search, map browsing and CRM-connected lead capture built in from the start.",
+          description: "ZSpace Labs builds real estate websites with working search, map browsing and CRM-connected lead capture built in from the start.",
         },
       },
       {
@@ -608,7 +608,7 @@ export const webDevPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Building a patient-friendly, accessible healthcare website?",
-          description: "ZSpace builds healthcare websites with accessibility and privacy-conscious data handling treated as core requirements from the start.",
+          description: "ZSpace Labs builds healthcare websites with accessibility and privacy-conscious data handling treated as core requirements from the start.",
         },
       },
       {

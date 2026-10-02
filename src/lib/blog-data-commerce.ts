@@ -48,7 +48,7 @@ export const commercePosts: BlogPost[] = [
         body: [
           "A Shopify store is more than a theme. The storefront customers see sits on a catalog, a set of business rules (prices, discounts, shipping, taxes, markets), a checkout Shopify hosts, apps that add features, and integrations with the systems that run the business. Store development means designing and connecting all of these so the store works for shoppers and for the team running it.",
           "One point of confusion: search results for this topic are full of guides to creating a {{b:Shopify development store}}. That's a free sandbox Shopify Partners use to build and test themes and apps before a store goes live; it can't process real payments. It's a tool used during a build, not the build itself.",
-          "This guide is the overview for ZSpace's Shopify development cluster. Each section links to a deeper guide where one exists. If you're setting up a small store yourself, [[/blogs/how-to-set-up-a-shopify-store|how to set up a Shopify store]] is the better starting point.",
+          "This guide is the overview for ZSpace Labs' Shopify development cluster. Each section links to a deeper guide where one exists. If you're setting up a small store yourself, [[/blogs/how-to-set-up-a-shopify-store|how to set up a Shopify store]] is the better starting point.",
         ],
       },
       {
@@ -123,7 +123,7 @@ export const commercePosts: BlogPost[] = [
         ],
         cta: {
           title: "Planning a Shopify build?",
-          description: "ZSpace scopes Shopify stores from requirements first, so theme, apps and custom work are chosen for your catalog and operations.",
+          description: "ZSpace Labs scopes Shopify stores from requirements first, so theme, apps and custom work are chosen for your catalog and operations.",
         },
       },
       {
@@ -180,7 +180,7 @@ export const commercePosts: BlogPost[] = [
         ],
         cta: {
           title: "Want a Shopify store built around how you sell?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify development]], [[/services/ui-ux-design|ecommerce UX design]] and a [[/services/cro-audit|conversion review]] once you're live.",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify development]], [[/services/ui-ux-design|ecommerce UX design]] and a [[/services/cro-audit|conversion review]] once you're live.",
         },
       },
       {
@@ -328,7 +328,7 @@ export const commercePosts: BlogPost[] = [
         ],
         cta: {
           title: "Deciding between a theme and a custom build?",
-          description: "ZSpace reviews your catalog, brand and team workflow and recommends the least custom approach that fits.",
+          description: "ZSpace Labs reviews your catalog, brand and team workflow and recommends the least custom approach that fits.",
         },
       },
       {
@@ -372,7 +372,7 @@ export const commercePosts: BlogPost[] = [
         ],
         cta: {
           title: "Need a Shopify theme your team can actually run?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify theme development]] and [[/services/ui-ux-design|store design]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify theme development]] and [[/services/ui-ux-design|store design]].",
         },
       },
       {
@@ -493,7 +493,7 @@ export const commercePosts: BlogPost[] = [
         ],
         cta: {
           title: "Wondering whether Hydrogen fits your store?",
-          description: "ZSpace assesses whether a theme, a customized theme or a headless build meets your requirements, before you commit to one.",
+          description: "ZSpace Labs assesses whether a theme, a customized theme or a headless build meets your requirements, before you commit to one.",
         },
       },
       {
@@ -595,7 +595,7 @@ export const commercePosts: BlogPost[] = [
         ],
         cta: {
           title: "Planning a headless Shopify build?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify development]] and [[/services/website-development|web application development]] for Hydrogen and headless storefronts.",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify development]] and [[/services/website-development|web application development]] for Hydrogen and headless storefronts.",
         },
       },
       {
@@ -712,7 +712,7 @@ export const commercePosts: BlogPost[] = [
         ],
         cta: {
           title: "Not sure whether to redesign or rebuild?",
-          description: "ZSpace reviews your theme, catalog and funnel data and tells you which scope the evidence supports, including when neither is needed.",
+          description: "ZSpace Labs reviews your theme, catalog and funnel data and tells you which scope the evidence supports, including when neither is needed.",
         },
       },
       {
@@ -765,7 +765,7 @@ export const commercePosts: BlogPost[] = [
         ],
         cta: {
           title: "Want the right scope, done safely?",
-          description: "Talk to ZSpace about a [[/services/shopify-development|Shopify redesign or rebuild]], [[/services/ui-ux-design|UX design]] and a [[/services/cro-audit|pre-project audit]].",
+          description: "Talk to ZSpace Labs about a [[/services/shopify-development|Shopify redesign or rebuild]], [[/services/ui-ux-design|UX design]] and a [[/services/cro-audit|pre-project audit]].",
         },
       },
       {
@@ -862,7 +862,7 @@ export const commercePosts: BlogPost[] = [
         ],
         cta: {
           title: "Want an estimate you can compare?",
-          description: "ZSpace turns your requirements into a scoped Shopify plan with clear inclusions, so you know what you're paying for.",
+          description: "ZSpace Labs turns your requirements into a scoped Shopify plan with clear inclusions, so you know what you're paying for.",
         },
       },
       {
@@ -939,7 +939,7 @@ export const commercePosts: BlogPost[] = [
         ],
         cta: {
           title: "Planning your Shopify budget?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify development]] scoped to your catalog, systems and markets.",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify development]] scoped to your catalog, systems and markets.",
         },
       },
       {

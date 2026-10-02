@@ -95,7 +95,7 @@ export const aiOpsPosts2: BlogPost[] = [
         },
         cta: {
           title: "Can't tell why your AI feature gives bad answers?",
-          description: "ZSpace instruments LLM applications end to end so every answer can be explained. See [[/services/ai-automation|our AI engineering services]].",
+          description: "ZSpace Labs instruments LLM applications end to end so every answer can be explained. See [[/services/ai-automation|our AI engineering services]].",
         },
       },
       {
@@ -191,7 +191,7 @@ export const aiOpsPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want observability that explains every AI answer?",
-          description: "Talk to ZSpace about [[/services/ai-automation|LLM tracing and monitoring]] built on open standards and your existing stack.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|LLM tracing and monitoring]] built on open standards and your existing stack.",
         },
       },
       {
@@ -290,7 +290,7 @@ export const aiOpsPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Prompts scattered across code and consoles?",
-          description: "ZSpace sets up prompt management, evaluation and release workflows for AI teams. See [[/services/ai-automation|our AI development services]].",
+          description: "ZSpace Labs sets up prompt management, evaluation and release workflows for AI teams. See [[/services/ai-automation|our AI development services]].",
         },
       },
       {
@@ -370,7 +370,7 @@ export const aiOpsPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want a safer prompt release process?",
-          description: "Talk to ZSpace about [[/services/ai-automation|LLMOps setup]]: versioning, evaluation gates and staged rollouts.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|LLMOps setup]]: versioning, evaluation gates and staged rollouts.",
         },
       },
       {
@@ -460,7 +460,7 @@ export const aiOpsPosts2: BlogPost[] = [
         },
         cta: {
           title: "Quality slipping after model or prompt updates?",
-          description: "ZSpace builds regression suites and release gates for LLM applications. See [[/services/ai-automation|AI engineering services]].",
+          description: "ZSpace Labs builds regression suites and release gates for LLM applications. See [[/services/ai-automation|AI engineering services]].",
         },
       },
       {
@@ -538,7 +538,7 @@ export const aiOpsPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Planning a model upgrade?",
-          description: "Talk to ZSpace about an [[/services/ai-automation|upgrade evaluation]]: regression runs, prompt tuning and staged rollout.",
+          description: "Talk to ZSpace Labs about an [[/services/ai-automation|upgrade evaluation]]: regression runs, prompt tuning and staged rollout.",
         },
       },
       {
@@ -624,7 +624,7 @@ export const aiOpsPosts2: BlogPost[] = [
         },
         cta: {
           title: "AI features failing when providers wobble?",
-          description: "ZSpace designs resilient AI architectures with fallbacks, queues and graceful degradation. See [[/services/ai-automation|our AI engineering services]].",
+          description: "ZSpace Labs designs resilient AI architectures with fallbacks, queues and graceful degradation. See [[/services/ai-automation|our AI engineering services]].",
         },
       },
       {
@@ -708,7 +708,7 @@ export const aiOpsPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want to stress-test your AI features?",
-          description: "Talk to ZSpace about a [[/services/ai-automation|reliability review]] with fault injection, fallback evaluation and degraded-mode design.",
+          description: "Talk to ZSpace Labs about a [[/services/ai-automation|reliability review]] with fault injection, fallback evaluation and degraded-mode design.",
         },
       },
       {

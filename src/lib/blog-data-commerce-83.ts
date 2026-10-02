@@ -139,7 +139,7 @@ export const commercePosts83: BlogPost[] = [
         ],
         cta: {
           title: "Planning cross-border checkout for new markets?",
-          description: "ZSpace can connect landed cost calculation, product classification data and checkout messaging so international customers see the full price before they pay.",
+          description: "ZSpace Labs can connect landed cost calculation, product classification data and checkout messaging so international customers see the full price before they pay.",
         },
       },
       {
@@ -232,7 +232,7 @@ export const commercePosts83: BlogPost[] = [
         ],
         cta: {
           title: "Need landed cost and duty data built into your store?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify Markets and duty setup]], [[/services/website-development|custom checkout and integration work]] and a [[/services/cro-audit|checkout audit]] for international customers.",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify Markets and duty setup]], [[/services/website-development|custom checkout and integration work]] and a [[/services/cro-audit|checkout audit]] for international customers.",
         },
       },
       {
@@ -344,7 +344,7 @@ export const commercePosts83: BlogPost[] = [
         ],
         cta: {
           title: "Weighing an MoR against running markets yourself?",
-          description: "ZSpace can map the checkout, data and integration changes either route requires, so the decision is based on your stack rather than a sales deck.",
+          description: "ZSpace Labs can map the checkout, data and integration changes either route requires, so the decision is based on your stack rather than a sales deck.",
         },
       },
       {
@@ -427,7 +427,7 @@ export const commercePosts83: BlogPost[] = [
         ],
         cta: {
           title: "Planning your international operating model?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify Markets and Managed Markets setups]] or [[/services/website-development|custom cross-border checkout and integrations]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify Markets and Managed Markets setups]] or [[/services/website-development|custom cross-border checkout and integrations]].",
         },
       },
       {
@@ -552,7 +552,7 @@ export const commercePosts83: BlogPost[] = [
         ],
         cta: {
           title: "Building a marketplace catalog that scales past the first hundred sellers?",
-          description: "ZSpace designs product and offer data models, matching workflows and seller listing tools for multi-vendor marketplaces.",
+          description: "ZSpace Labs designs product and offer data models, matching workflows and seller listing tools for multi-vendor marketplaces.",
         },
       },
       {
@@ -630,7 +630,7 @@ export const commercePosts83: BlogPost[] = [
         ],
         cta: {
           title: "Need help fixing a fragmented marketplace catalog?",
-          description: "Talk to ZSpace about [[/services/website-development|marketplace platform development]], [[/services/ai-automation|AI-assisted matching and attribute extraction]] and [[/services/ui-ux-design|seller listing UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|marketplace platform development]], [[/services/ai-automation|AI-assisted matching and attribute extraction]] and [[/services/ui-ux-design|seller listing UX]].",
         },
       },
       {
@@ -734,7 +734,7 @@ export const commercePosts83: BlogPost[] = [
         ],
         cta: {
           title: "Building verification and moderation into your marketplace?",
-          description: "ZSpace builds seller verification workflows, moderation queues and operator tools so trust and safety policies can actually be enforced.",
+          description: "ZSpace Labs builds seller verification workflows, moderation queues and operator tools so trust and safety policies can actually be enforced.",
         },
       },
       {
@@ -829,7 +829,7 @@ export const commercePosts83: BlogPost[] = [
         ],
         cta: {
           title: "Planning trust and safety for a new or growing marketplace?",
-          description: "Talk to ZSpace about [[/services/website-development|marketplace platform and operator tools]], [[/services/ai-automation|AI-assisted moderation and triage]] and [[/services/ui-ux-design|seller and buyer protection UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|marketplace platform and operator tools]], [[/services/ai-automation|AI-assisted moderation and triage]] and [[/services/ui-ux-design|seller and buyer protection UX]].",
         },
       },
       {

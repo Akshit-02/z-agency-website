@@ -78,7 +78,7 @@ export const commercePosts49: BlogPost[] = [
         ],
         cta: {
           title: "Building or rebuilding a jewelry store?",
-          description: "ZSpace builds jewelry ecommerce with precise product data, secure operations and imagery that does the craft justice.",
+          description: "ZSpace Labs builds jewelry ecommerce with precise product data, secure operations and imagery that does the craft justice.",
         },
       },
       {
@@ -162,7 +162,7 @@ export const commercePosts49: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build your jewelry store?",
-          description: "Talk to ZSpace about [[/services/website-development|jewelry ecommerce development]], [[/services/shopify-development|Shopify jewelry builds]] and [[/services/ui-ux-design|jewelry UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|jewelry ecommerce development]], [[/services/shopify-development|Shopify jewelry builds]] and [[/services/ui-ux-design|jewelry UX]].",
         },
       },
       {
@@ -234,7 +234,7 @@ export const commercePosts49: BlogPost[] = [
         ],
         cta: {
           title: "Beautiful jewelry site, but shoppers hesitate to buy?",
-          description: "ZSpace designs jewelry experiences where trust comes from clear, verifiable detail as well as brand presentation.",
+          description: "ZSpace Labs designs jewelry experiences where trust comes from clear, verifiable detail as well as brand presentation.",
         },
       },
       {
@@ -344,7 +344,7 @@ export const commercePosts49: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build a high-trust jewelry experience?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|jewelry UX]], [[/services/cro-audit|conversion audits]] and [[/services/shopify-development|Shopify jewelry stores]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|jewelry UX]], [[/services/cro-audit|conversion audits]] and [[/services/shopify-development|Shopify jewelry stores]].",
         },
       },
       {
@@ -431,7 +431,7 @@ export const commercePosts49: BlogPost[] = [
         ],
         cta: {
           title: "Jewelry product pages not answering buyers' questions?",
-          description: "ZSpace designs jewelry product pages with accurate detail, sizing help and trust information where it matters.",
+          description: "ZSpace Labs designs jewelry product pages with accurate detail, sizing help and trust information where it matters.",
         },
       },
       {
@@ -499,7 +499,7 @@ export const commercePosts49: BlogPost[] = [
         ],
         cta: {
           title: "Ready to redesign your jewelry product pages?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|product page design]], [[/services/cro-audit|jewelry CRO]] and [[/services/shopify-development|Shopify jewelry templates]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|product page design]], [[/services/cro-audit|jewelry CRO]] and [[/services/shopify-development|Shopify jewelry templates]].",
         },
       },
       {
@@ -577,7 +577,7 @@ export const commercePosts49: BlogPost[] = [
         ],
         cta: {
           title: "Jewelry imagery not doing your pieces justice?",
-          description: "ZSpace plans jewelry media pipelines and product galleries that show pieces accurately and load fast.",
+          description: "ZSpace Labs plans jewelry media pipelines and product galleries that show pieces accurately and load fast.",
         },
       },
       {
@@ -638,7 +638,7 @@ export const commercePosts49: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve how your jewelry is shown online?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|product media UX]], [[/services/website-development|3D and configurator integration]] and [[/services/shopify-development|Shopify product media]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|product media UX]], [[/services/website-development|3D and configurator integration]] and [[/services/shopify-development|Shopify product media]].",
         },
       },
       {
@@ -711,7 +711,7 @@ export const commercePosts49: BlogPost[] = [
         ],
         cta: {
           title: "Shoppers struggling to narrow down your jewelry range?",
-          description: "ZSpace designs jewelry filters and collections for both expert self-purchasers and gift buyers.",
+          description: "ZSpace Labs designs jewelry filters and collections for both expert self-purchasers and gift buyers.",
         },
       },
       {
@@ -797,7 +797,7 @@ export const commercePosts49: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve jewelry discovery?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|filter and collection UX]], [[/services/cro-audit|discovery audits]] and [[/services/shopify-development|Shopify filters]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|filter and collection UX]], [[/services/cro-audit|discovery audits]] and [[/services/shopify-development|Shopify filters]].",
         },
       },
       {

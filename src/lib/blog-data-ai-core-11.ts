@@ -51,7 +51,7 @@ export const aiCorePosts11: BlogPost[] = [
       {
         heading: "Where This Fits",
         body: [
-          "This is the technical hub for ZSpace's voice AI guides. Use cases are covered in [[/blogs/ai-voice-agents-customer-service|AI voice agents for customer service]], [[/blogs/ai-receptionist|AI receptionists]] and [[/blogs/ai-call-automation|AI call automation]]. Voice shopping is covered in [[/blogs/ecommerce-voice-commerce|ecommerce voice commerce]], and general agent design in [[/blogs/ai-agent-development|AI agent development]].",
+          "This is the technical hub for ZSpace Labs' voice AI guides. Use cases are covered in [[/blogs/ai-voice-agents-customer-service|AI voice agents for customer service]], [[/blogs/ai-receptionist|AI receptionists]] and [[/blogs/ai-call-automation|AI call automation]]. Voice shopping is covered in [[/blogs/ecommerce-voice-commerce|ecommerce voice commerce]], and general agent design in [[/blogs/ai-agent-development|AI agent development]].",
         ],
       },
       {
@@ -95,7 +95,7 @@ export const aiCorePosts11: BlogPost[] = [
         ],
         cta: {
           title: "Planning a voice AI agent for your phone lines or app?",
-          description: "ZSpace builds voice agents with streaming pipelines, fast tools, telephony integration and escalation designed in from the start.",
+          description: "ZSpace Labs builds voice agents with streaming pipelines, fast tools, telephony integration and escalation designed in from the start.",
         },
       },
       {
@@ -214,7 +214,7 @@ export const aiCorePosts11: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build a voice agent callers do not hang up on?",
-          description: "Talk to ZSpace about [[/services/ai-automation|voice AI agent development]] and [[/services/mobile-app-development|in-app voice experiences]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|voice AI agent development]] and [[/services/mobile-app-development|in-app voice experiences]].",
         },
       },
       {
@@ -297,7 +297,7 @@ export const aiCorePosts11: BlogPost[] = [
         },
         cta: {
           title: "Want to take routine calls off your agents' queues?",
-          description: "ZSpace builds customer service voice agents connected to your CRM and contact centre, with warm transfers and QA built in.",
+          description: "ZSpace Labs builds customer service voice agents connected to your CRM and contact centre, with warm transfers and QA built in.",
         },
       },
       {
@@ -379,7 +379,7 @@ export const aiCorePosts11: BlogPost[] = [
         ],
         cta: {
           title: "Planning AI voice for your contact centre?",
-          description: "Talk to ZSpace about [[/services/ai-automation|customer service voice agents]] and contact centre integration.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|customer service voice agents]] and contact centre integration.",
         },
       },
       {
@@ -461,7 +461,7 @@ export const aiCorePosts11: BlogPost[] = [
         ],
         cta: {
           title: "Missing calls and bookings when the front desk is busy?",
-          description: "ZSpace builds AI receptionists connected to your calendar, CRM and phone system, with clear escalation for anything urgent.",
+          description: "ZSpace Labs builds AI receptionists connected to your calendar, CRM and phone system, with clear escalation for anything urgent.",
         },
       },
       {
@@ -552,7 +552,7 @@ export const aiCorePosts11: BlogPost[] = [
         ],
         cta: {
           title: "Want every call answered without adding headcount?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI receptionist development]] and calendar and CRM integration.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI receptionist development]] and calendar and CRM integration.",
         },
       },
       {
@@ -649,7 +649,7 @@ export const aiCorePosts11: BlogPost[] = [
         ],
         cta: {
           title: "Planning automated calls at scale?",
-          description: "ZSpace builds call automation with consent checks, calling windows, opt-out handling and audit logs built into the workflow.",
+          description: "ZSpace Labs builds call automation with consent checks, calling windows, opt-out handling and audit logs built into the workflow.",
         },
       },
       {
@@ -734,7 +734,7 @@ export const aiCorePosts11: BlogPost[] = [
         ],
         cta: {
           title: "Want call automation that customers welcome?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI call automation]] for inbound and consented outbound calls.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI call automation]] for inbound and consented outbound calls.",
         },
       },
       {

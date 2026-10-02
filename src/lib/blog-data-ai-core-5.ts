@@ -88,7 +88,7 @@ export const aiCorePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Want invoices posted without re-keying?",
-          description: "ZSpace builds invoice automation with extraction, matching, approvals and ERP posting, keeping payment authority with your finance team.",
+          description: "ZSpace Labs builds invoice automation with extraction, matching, approvals and ERP posting, keeping payment authority with your finance team.",
         },
       },
       {
@@ -187,7 +187,7 @@ export const aiCorePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Planning AP automation?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI invoice processing]] and [[/services/website-development|ERP and accounting integration]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI invoice processing]] and [[/services/website-development|ERP and accounting integration]].",
         },
       },
       {
@@ -277,7 +277,7 @@ export const aiCorePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Shared inbox overflowing?",
-          description: "ZSpace builds email automations that classify, route and draft replies from your own systems, with people approving what goes out.",
+          description: "ZSpace Labs builds email automations that classify, route and draft replies from your own systems, with people approving what goes out.",
         },
       },
       {
@@ -366,7 +366,7 @@ export const aiCorePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Ready to turn email into structured work?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI email automation]] and integrations with your CRM, help desk and ERP.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI email automation]] and integrations with your CRM, help desk and ERP.",
         },
       },
       {
@@ -454,7 +454,7 @@ export const aiCorePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Leads waiting too long for the right person?",
-          description: "ZSpace builds qualification and routing automation that enriches, scores with reasons and assigns leads in your CRM within seconds.",
+          description: "ZSpace Labs builds qualification and routing automation that enriches, scores with reasons and assigns leads in your CRM within seconds.",
         },
       },
       {
@@ -537,7 +537,7 @@ export const aiCorePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Want qualification your sales team trusts?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI lead qualification and routing]] and [[/services/website-development|CRM and website integration]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI lead qualification and routing]] and [[/services/website-development|CRM and website integration]].",
         },
       },
       {
@@ -619,7 +619,7 @@ export const aiCorePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Reps spending more time on admin than customers?",
-          description: "ZSpace builds sales automations for research, briefs, CRM updates and follow-up drafts that fit your CRM and sales process.",
+          description: "ZSpace Labs builds sales automations for research, briefs, CRM updates and follow-up drafts that fit your CRM and sales process.",
         },
       },
       {
@@ -715,7 +715,7 @@ export const aiCorePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Ready to give your sales team their time back?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI sales automation]] connected to your CRM, email and calendar.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI sales automation]] connected to your CRM, email and calendar.",
         },
       },
       {

@@ -76,7 +76,7 @@ export const aiOpsPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Bringing open models or third-party AI tools into production?",
-          description: "ZSpace assesses AI dependencies and builds controlled deployment pipelines for models and tools. See [[/services/ai-automation|AI engineering services]].",
+          description: "ZSpace Labs assesses AI dependencies and builds controlled deployment pipelines for models and tools. See [[/services/ai-automation|AI engineering services]].",
         },
       },
       {
@@ -173,7 +173,7 @@ export const aiOpsPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Need an AI bill of materials or dependency review?",
-          description: "Talk to ZSpace about an [[/services/ai-automation|AI supply chain assessment]] for models, data, packages and services.",
+          description: "Talk to ZSpace Labs about an [[/services/ai-automation|AI supply chain assessment]] for models, data, packages and services.",
         },
       },
       {
@@ -261,7 +261,7 @@ export const aiOpsPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Designing an AI feature with tools or sensitive data?",
-          description: "ZSpace runs threat modelling workshops for AI applications and turns findings into concrete controls. See [[/services/ai-automation|AI development services]].",
+          description: "ZSpace Labs runs threat modelling workshops for AI applications and turns findings into concrete controls. See [[/services/ai-automation|AI development services]].",
         },
       },
       {
@@ -345,7 +345,7 @@ export const aiOpsPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want a threat model before you build?",
-          description: "Talk to ZSpace about an [[/services/ai-automation|AI threat modelling session]] for your planned AI feature or agent.",
+          description: "Talk to ZSpace Labs about an [[/services/ai-automation|AI threat modelling session]] for your planned AI feature or agent.",
         },
       },
       {
@@ -432,7 +432,7 @@ export const aiOpsPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Need a security test suite for your AI application?",
-          description: "ZSpace builds automated AI security tests and release gates alongside manual reviews. See [[/services/ai-automation|AI development services]].",
+          description: "ZSpace Labs builds automated AI security tests and release gates alongside manual reviews. See [[/services/ai-automation|AI development services]].",
         },
       },
       {
@@ -549,7 +549,7 @@ export const aiOpsPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want an AI security review before launch?",
-          description: "Talk to ZSpace about an [[/services/ai-automation|AI security assessment]] using this checklist, adapted to your system.",
+          description: "Talk to ZSpace Labs about an [[/services/ai-automation|AI security assessment]] using this checklist, adapted to your system.",
         },
       },
       {
@@ -637,7 +637,7 @@ export const aiOpsPosts7: BlogPost[] = [
         },
         cta: {
           title: "Designing an AI feature or product?",
-          description: "ZSpace combines product design and AI engineering to design AI experiences around real model behaviour. See [[/services/ui-ux-design|our product design services]].",
+          description: "ZSpace Labs combines product design and AI engineering to design AI experiences around real model behaviour. See [[/services/ui-ux-design|our product design services]].",
         },
       },
       {
@@ -729,7 +729,7 @@ export const aiOpsPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want help shaping an AI product from idea to launch?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|AI product design]] and [[/services/ai-automation|AI development]] as one team.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|AI product design]] and [[/services/ai-automation|AI development]] as one team.",
         },
       },
       {

@@ -132,7 +132,7 @@ export const commercePosts33: BlogPost[] = [
         ],
         cta: {
           title: "Designing the operating model for a new marketplace?",
-          description: "ZSpace helps teams turn marketplace rules into seller tools, buyer journeys and platform architecture that fit together.",
+          description: "ZSpace Labs helps teams turn marketplace rules into seller tools, buyer journeys and platform architecture that fit together.",
         },
       },
       {
@@ -248,7 +248,7 @@ export const commercePosts33: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build a multi-vendor marketplace?",
-          description: "Talk to ZSpace about [[/services/website-development|marketplace development]], [[/services/ui-ux-design|seller and buyer UX]] and [[/services/mobile-app-development|marketplace apps]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|marketplace development]], [[/services/ui-ux-design|seller and buyer UX]] and [[/services/mobile-app-development|marketplace apps]].",
         },
       },
       {
@@ -351,7 +351,7 @@ export const commercePosts33: BlogPost[] = [
         ],
         cta: {
           title: "Buyers struggling to find the right product among thousands of listings?",
-          description: "ZSpace designs marketplace discovery around normalized seller data, clear offers and ranking buyers can trust.",
+          description: "ZSpace Labs designs marketplace discovery around normalized seller data, clear offers and ranking buyers can trust.",
         },
       },
       {
@@ -413,7 +413,7 @@ export const commercePosts33: BlogPost[] = [
         ],
         cta: {
           title: "Planning marketplace discovery or a catalog clean-up?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|marketplace UX]], [[/services/website-development|catalog and search implementation]] and [[/services/cro-audit|discovery audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|marketplace UX]], [[/services/website-development|catalog and search implementation]] and [[/services/cro-audit|discovery audits]].",
         },
       },
       {
@@ -524,7 +524,7 @@ export const commercePosts33: BlogPost[] = [
         ],
         cta: {
           title: "Sellers contacting support about payouts and orders?",
-          description: "ZSpace designs seller dashboards that make daily work obvious and payouts easy to reconcile.",
+          description: "ZSpace Labs designs seller dashboards that make daily work obvious and payouts easy to reconcile.",
         },
       },
       {
@@ -589,7 +589,7 @@ export const commercePosts33: BlogPost[] = [
         ],
         cta: {
           title: "Ready to design or rebuild your seller dashboard?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|seller dashboard UX]], [[/services/website-development|marketplace development]] and [[/services/mobile-app-development|seller mobile apps]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|seller dashboard UX]], [[/services/website-development|marketplace development]] and [[/services/mobile-app-development|seller mobile apps]].",
         },
       },
       {
@@ -715,7 +715,7 @@ export const commercePosts33: BlogPost[] = [
         ],
         cta: {
           title: "Commission and payout logic getting hard to explain?",
-          description: "ZSpace designs ledger-based commission and payout systems that sellers and finance teams can reconcile.",
+          description: "ZSpace Labs designs ledger-based commission and payout systems that sellers and finance teams can reconcile.",
         },
       },
       {
@@ -817,7 +817,7 @@ export const commercePosts33: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build a commission system that scales?",
-          description: "Talk to ZSpace about [[/services/website-development|marketplace platform development]] and [[/services/ui-ux-design|seller statement and dashboard design]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|marketplace platform development]] and [[/services/ui-ux-design|seller statement and dashboard design]].",
         },
       },
       {

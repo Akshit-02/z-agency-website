@@ -20,7 +20,7 @@ export default async function ServiceOgImage({ params }: { params: Promise<{ slu
         eyebrow={`Service ${service?.index ?? ""}`}
         eyebrowColor={accentColor}
         title={service?.name ?? "Services"}
-        description={service?.summary ?? "Technology and digital product services from ZSpace."}
+        description={service?.summary ?? "Technology and digital product services from ZSpace Labs."}
       />
     ),
     { ...size }

@@ -82,7 +82,7 @@ export const commercePosts20: BlogPost[] = [
         ],
         cta: {
           title: "Building or redesigning a food brand's store?",
-          description: "ZSpace designs food product pages, filters and delivery information around what shoppers need to check before buying.",
+          description: "ZSpace Labs designs food product pages, filters and delivery information around what shoppers need to check before buying.",
         },
       },
       {
@@ -124,7 +124,7 @@ export const commercePosts20: BlogPost[] = [
         ],
         cta: {
           title: "Want a food store customers trust and reorder from?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|food ecommerce UX]], [[/services/shopify-development|Shopify builds]] and [[/services/cro-audit|conversion audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|food ecommerce UX]], [[/services/shopify-development|Shopify builds]] and [[/services/cro-audit|conversion audits]].",
         },
       },
       {
@@ -190,7 +190,7 @@ export const commercePosts20: BlogPost[] = [
         ],
         cta: {
           title: "Planning an online grocery build?",
-          description: "ZSpace scopes grocery platforms around slots, substitutions, store-level inventory and picking.",
+          description: "ZSpace Labs scopes grocery platforms around slots, substitutions, store-level inventory and picking.",
         },
       },
       {
@@ -247,7 +247,7 @@ export const commercePosts20: BlogPost[] = [
         ],
         cta: {
           title: "Want an online grocery store people use every week?",
-          description: "Talk to ZSpace about [[/services/website-development|grocery platform development]], [[/services/mobile-app-development|grocery apps]] and [[/services/ui-ux-design|basket UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|grocery platform development]], [[/services/mobile-app-development|grocery apps]] and [[/services/ui-ux-design|basket UX]].",
         },
       },
       {
@@ -323,7 +323,7 @@ export const commercePosts20: BlogPost[] = [
         ],
         cta: {
           title: "Selling technical sports gear online?",
-          description: "ZSpace designs spec-driven discovery and product pages that help shoppers choose for their sport and level.",
+          description: "ZSpace Labs designs spec-driven discovery and product pages that help shoppers choose for their sport and level.",
         },
       },
       {
@@ -365,7 +365,7 @@ export const commercePosts20: BlogPost[] = [
         ],
         cta: {
           title: "Want a sports store built around how athletes shop?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|sports ecommerce UX]], [[/services/shopify-development|Shopify development]] and [[/services/cro-audit|CRO]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|sports ecommerce UX]], [[/services/shopify-development|Shopify development]] and [[/services/cro-audit|CRO]].",
         },
       },
       {
@@ -444,7 +444,7 @@ export const commercePosts20: BlogPost[] = [
         ],
         cta: {
           title: "Building an online pet store?",
-          description: "ZSpace designs pet stores around pet profiles, suitability and repeat ordering.",
+          description: "ZSpace Labs designs pet stores around pet profiles, suitability and repeat ordering.",
         },
       },
       {
@@ -480,7 +480,7 @@ export const commercePosts20: BlogPost[] = [
         ],
         cta: {
           title: "Want a pet store owners come back to?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|pet ecommerce UX]], [[/services/shopify-development|Shopify builds]] and [[/services/cro-audit|conversion work]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|pet ecommerce UX]], [[/services/shopify-development|Shopify builds]] and [[/services/cro-audit|conversion work]].",
         },
       },
       {
@@ -553,7 +553,7 @@ export const commercePosts20: BlogPost[] = [
         ],
         cta: {
           title: "Building a baby products store?",
-          description: "ZSpace designs stores that give parents the safety, sizing and stage information they look for.",
+          description: "ZSpace Labs designs stores that give parents the safety, sizing and stage information they look for.",
         },
       },
       {
@@ -595,7 +595,7 @@ export const commercePosts20: BlogPost[] = [
         ],
         cta: {
           title: "Want parents to trust your store?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|baby ecommerce UX]], [[/services/shopify-development|Shopify builds]] and [[/services/cro-audit|CRO]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|baby ecommerce UX]], [[/services/shopify-development|Shopify builds]] and [[/services/cro-audit|CRO]].",
         },
       },
       {

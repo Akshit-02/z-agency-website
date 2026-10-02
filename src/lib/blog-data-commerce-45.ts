@@ -99,7 +99,7 @@ export const commercePosts45: BlogPost[] = [
         ],
         cta: {
           title: "Planning an electronics store build?",
-          description: "ZSpace designs electronics catalog models, search and integrations so specs, filters and comparison work from one source of truth.",
+          description: "ZSpace Labs designs electronics catalog models, search and integrations so specs, filters and comparison work from one source of truth.",
         },
       },
       {
@@ -188,7 +188,7 @@ export const commercePosts45: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build your electronics store?",
-          description: "Talk to ZSpace about [[/services/website-development|electronics ecommerce development]], [[/services/shopify-development|Shopify electronics builds]] and [[/services/ui-ux-design|electronics UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|electronics ecommerce development]], [[/services/shopify-development|Shopify electronics builds]] and [[/services/ui-ux-design|electronics UX]].",
         },
       },
       {
@@ -269,7 +269,7 @@ export const commercePosts45: BlogPost[] = [
         ],
         cta: {
           title: "Shoppers comparing elsewhere and buying elsewhere?",
-          description: "ZSpace researches electronics shoppers and designs discovery, spec presentation and comparison around real decisions.",
+          description: "ZSpace Labs researches electronics shoppers and designs discovery, spec presentation and comparison around real decisions.",
         },
       },
       {
@@ -349,7 +349,7 @@ export const commercePosts45: BlogPost[] = [
         ],
         cta: {
           title: "Want an electronics store shoppers trust with big decisions?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|electronics UX research and design]], [[/services/cro-audit|conversion audits]] and [[/services/website-development|electronics store development]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|electronics UX research and design]], [[/services/cro-audit|conversion audits]] and [[/services/website-development|electronics store development]].",
         },
       },
       {
@@ -433,7 +433,7 @@ export const commercePosts45: BlogPost[] = [
         ],
         cta: {
           title: "Product pages generating compatibility returns?",
-          description: "ZSpace redesigns electronics product pages so specs, compatibility and variants are clear before purchase.",
+          description: "ZSpace Labs redesigns electronics product pages so specs, compatibility and variants are clear before purchase.",
         },
       },
       {
@@ -514,7 +514,7 @@ export const commercePosts45: BlogPost[] = [
         ],
         cta: {
           title: "Ready to redesign your electronics product pages?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|product page design]], [[/services/cro-audit|product page CRO]] and [[/services/shopify-development|Shopify product templates]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|product page design]], [[/services/cro-audit|product page CRO]] and [[/services/shopify-development|Shopify product templates]].",
         },
       },
       {
@@ -595,7 +595,7 @@ export const commercePosts45: BlogPost[] = [
         ],
         cta: {
           title: "Shoppers leaving to compare products on other sites?",
-          description: "ZSpace designs electronics comparison experiences built on clean spec data and clear explanations.",
+          description: "ZSpace Labs designs electronics comparison experiences built on clean spec data and clear explanations.",
         },
       },
       {
@@ -669,7 +669,7 @@ export const commercePosts45: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build comparison shoppers actually use?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|comparison UX]] and [[/services/website-development|spec data and comparison implementation]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|comparison UX]] and [[/services/website-development|spec data and comparison implementation]].",
         },
       },
       {
@@ -749,7 +749,7 @@ export const commercePosts45: BlogPost[] = [
         ],
         cta: {
           title: "Filters returning the wrong devices or none at all?",
-          description: "ZSpace builds electronics filters on normalized spec and compatibility data so shoppers reach the right shortlist.",
+          description: "ZSpace Labs builds electronics filters on normalized spec and compatibility data so shoppers reach the right shortlist.",
         },
       },
       {
@@ -828,7 +828,7 @@ export const commercePosts45: BlogPost[] = [
         ],
         cta: {
           title: "Ready to rebuild your electronics filters?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|filter UX]], [[/services/cro-audit|discovery audits]] and [[/services/shopify-development|Shopify Search & Discovery setup]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|filter UX]], [[/services/cro-audit|discovery audits]] and [[/services/shopify-development|Shopify Search & Discovery setup]].",
         },
       },
       {

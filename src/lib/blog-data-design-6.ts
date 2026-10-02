@@ -106,7 +106,7 @@ export const designPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Planning a storefront redesign?",
-          description: "ZSpace designs ecommerce homepages around how your shoppers actually arrive and browse.",
+          description: "ZSpace Labs designs ecommerce homepages around how your shoppers actually arrive and browse.",
         },
       },
       {
@@ -162,7 +162,7 @@ export const designPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Want your homepage reviewed?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|ecommerce UX design]] and [[/services/shopify-development|Shopify development]] for a storefront that routes shoppers faster.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|ecommerce UX design]] and [[/services/shopify-development|Shopify development]] for a storefront that routes shoppers faster.",
         },
       },
       {
@@ -282,7 +282,7 @@ export const designPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Are shoppers struggling to find products?",
-          description: "ZSpace restructures ecommerce taxonomies and navigation using card sorting, tree testing and search data.",
+          description: "ZSpace Labs restructures ecommerce taxonomies and navigation using card sorting, tree testing and search data.",
         },
       },
       {
@@ -348,7 +348,7 @@ export const designPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Want your store's navigation reviewed?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|ecommerce UX]] and [[/services/shopify-development|Shopify development]] that make products easier to find.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|ecommerce UX]] and [[/services/shopify-development|Shopify development]] that make products easier to find.",
         },
       },
       {
@@ -458,7 +458,7 @@ export const designPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Are your filters helping or hindering shoppers?",
-          description: "ZSpace audits filter taxonomy, product data and filter UI together, because fixing only one rarely works.",
+          description: "ZSpace Labs audits filter taxonomy, product data and filter UI together, because fixing only one rarely works.",
         },
       },
       {
@@ -519,7 +519,7 @@ export const designPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Want shoppers to find the right product faster?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|ecommerce UX]], [[/services/shopify-development|Shopify development]] and [[/services/cro-audit|conversion audits]] of your listing pages.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|ecommerce UX]], [[/services/shopify-development|Shopify development]] and [[/services/cro-audit|conversion audits]] of your listing pages.",
         },
       },
       {
@@ -624,7 +624,7 @@ export const designPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Is your store's search losing sales?",
-          description: "ZSpace reviews search logs, relevance and interface together, and designs search that understands your shoppers.",
+          description: "ZSpace Labs reviews search logs, relevance and interface together, and designs search that understands your shoppers.",
         },
       },
       {
@@ -684,7 +684,7 @@ export const designPosts6: BlogPost[] = [
         ],
         cta: {
           title: "Want product search that finds what shoppers mean?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|search UX design]] and [[/services/shopify-development|Shopify development]], from autocomplete to results pages.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|search UX design]] and [[/services/shopify-development|Shopify development]], from autocomplete to results pages.",
         },
       },
       {

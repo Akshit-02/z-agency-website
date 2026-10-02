@@ -98,7 +98,7 @@ export const aiCorePosts9: BlogPost[] = [
         ],
         cta: {
           title: "Wondering whether your product needs an MCP server?",
-          description: "ZSpace can assess how customers and teams would use your system from AI tools and design the right mix of API and MCP.",
+          description: "ZSpace Labs can assess how customers and teams would use your system from AI tools and design the right mix of API and MCP.",
         },
       },
       {
@@ -175,7 +175,7 @@ export const aiCorePosts9: BlogPost[] = [
         ],
         cta: {
           title: "Planning AI access to your platform?",
-          description: "Talk to ZSpace about [[/services/website-development|API development]] and [[/services/ai-automation|MCP server development]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|API development]] and [[/services/ai-automation|MCP server development]].",
         },
       },
       {
@@ -276,7 +276,7 @@ export const aiCorePosts9: BlogPost[] = [
         ],
         cta: {
           title: "Exposing systems to AI clients through MCP?",
-          description: "ZSpace builds and reviews MCP servers against the current specification's authorization and security requirements.",
+          description: "ZSpace Labs builds and reviews MCP servers against the current specification's authorization and security requirements.",
         },
       },
       {
@@ -360,7 +360,7 @@ export const aiCorePosts9: BlogPost[] = [
         ],
         cta: {
           title: "Want an MCP security review?",
-          description: "Talk to ZSpace about [[/services/ai-automation|secure MCP and agent development]] and [[/services/website-development|identity and API security]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|secure MCP and agent development]] and [[/services/website-development|identity and API security]].",
         },
       },
       {
@@ -455,7 +455,7 @@ export const aiCorePosts9: BlogPost[] = [
         },
         cta: {
           title: "Adding AI features to an existing product?",
-          description: "ZSpace builds backend AI services with validation, cost tracking and fallbacks, integrated with your web and mobile apps.",
+          description: "ZSpace Labs builds backend AI services with validation, cost tracking and fallbacks, integrated with your web and mobile apps.",
         },
       },
       {
@@ -539,7 +539,7 @@ export const aiCorePosts9: BlogPost[] = [
         ],
         cta: {
           title: "Need a dependable AI integration layer?",
-          description: "Talk to ZSpace about [[/services/website-development|backend and API development]], [[/services/mobile-app-development|AI features in mobile apps]] and [[/services/ai-automation|AI automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|backend and API development]], [[/services/mobile-app-development|AI features in mobile apps]] and [[/services/ai-automation|AI automation]].",
         },
       },
       {
@@ -629,7 +629,7 @@ export const aiCorePosts9: BlogPost[] = [
         ],
         cta: {
           title: "AI usage spreading across teams without visibility?",
-          description: "ZSpace can set up an LLM gateway with routing, budgets, logging and data policies across your applications and providers.",
+          description: "ZSpace Labs can set up an LLM gateway with routing, budgets, logging and data policies across your applications and providers.",
         },
       },
       {
@@ -714,7 +714,7 @@ export const aiCorePosts9: BlogPost[] = [
         ],
         cta: {
           title: "Ready to centralize how your teams use AI models?",
-          description: "Talk to ZSpace about [[/services/ai-automation|LLM gateway and AI platform setup]] and [[/services/website-development|backend infrastructure]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|LLM gateway and AI platform setup]] and [[/services/website-development|backend infrastructure]].",
         },
       },
       {

@@ -29,7 +29,7 @@ export const growthPosts: BlogPost[] = [
       { q: "How important are reviews for D2C brands?", a: "Very, because shoppers often haven't heard of the brand. Genuine reviews, customer photos and clear answers to objections do much of the work a familiar retailer's reputation would do." },
       { q: "Should D2C brands discount to improve conversion?", a: "Sparingly. Constant discounts train customers to wait for sales and can hide real problems with the product page or offer. Test risk-reducers such as guarantees and easy returns first." },
       { q: "How does retention fit into D2C CRO?", a: "Repeat purchases make acquisition affordable. Measuring repeat purchase and revenue per customer alongside conversion rate stops CRO from optimizing first orders at the expense of lifetime value." },
-      { q: "Is this guide specific to Shopify?", a: "No. It applies on any platform. For the Shopify-specific version, see ZSpace's Shopify CRO for DTC brands framework." },
+      { q: "Is this guide specific to Shopify?", a: "No. It applies on any platform. For the Shopify-specific version, see ZSpace Labs' Shopify CRO for DTC brands framework." },
       { q: "How do I know if my D2C store needs a CRO audit?", a: "If traffic is growing but revenue isn't, if paid traffic converts much worse than other channels, or if many shoppers add to cart without buying, a structured audit will show where to focus." },
     ],
     content: [
@@ -95,7 +95,7 @@ export const growthPosts: BlogPost[] = [
         ],
         cta: {
           title: "Is your D2C store converting the traffic you pay for?",
-          description: "ZSpace finds where D2C shoppers drop off, from ad landing pages to checkout, and prioritizes the fixes worth making.",
+          description: "ZSpace Labs finds where D2C shoppers drop off, from ad landing pages to checkout, and prioritizes the fixes worth making.",
         },
       },
       {
@@ -157,7 +157,7 @@ export const growthPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want a CRO plan built for your brand?",
-          description: "Talk to ZSpace about [[/services/cro-audit|CRO audits]], [[/services/ui-ux-design|UX design]] and [[/services/shopify-development|Shopify development]] for D2C brands.",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|CRO audits]], [[/services/ui-ux-design|UX design]] and [[/services/shopify-development|Shopify development]] for D2C brands.",
         },
       },
       {
@@ -254,7 +254,7 @@ export const growthPosts: BlogPost[] = [
         },
         cta: {
           title: "Want your product pages to answer buyers' objections?",
-          description: "ZSpace reviews D2C product pages against real customer questions and redesigns them around what stops people buying.",
+          description: "ZSpace Labs reviews D2C product pages against real customer questions and redesigns them around what stops people buying.",
         },
       },
       {
@@ -322,7 +322,7 @@ export const growthPosts: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve your product pages?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|product page design]], [[/services/cro-audit|conversion audits]] and [[/services/shopify-development|Shopify implementation]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|product page design]], [[/services/cro-audit|conversion audits]] and [[/services/shopify-development|Shopify implementation]].",
         },
       },
       {
@@ -402,7 +402,7 @@ export const growthPosts: BlogPost[] = [
         ],
         cta: {
           title: "Is your mobile experience losing social traffic?",
-          description: "ZSpace tests D2C journeys from ad to order on real phones and in-app browsers, and fixes what gets in the way.",
+          description: "ZSpace Labs tests D2C journeys from ad to order on real phones and in-app browsers, and fixes what gets in the way.",
         },
       },
       {
@@ -467,7 +467,7 @@ export const growthPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want a mobile store built for social-first shoppers?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|mobile UX design]], [[/services/shopify-development|Shopify development]] and [[/services/cro-audit|mobile conversion audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|mobile UX design]], [[/services/shopify-development|Shopify development]] and [[/services/cro-audit|mobile conversion audits]].",
         },
       },
       {
@@ -554,7 +554,7 @@ export const growthPosts: BlogPost[] = [
         ],
         cta: {
           title: "Not sure whether to redesign or optimize?",
-          description: "ZSpace reviews your store's data and UX first, then recommends the smallest change that solves the real problem.",
+          description: "ZSpace Labs reviews your store's data and UX first, then recommends the smallest change that solves the real problem.",
         },
       },
       {
@@ -623,7 +623,7 @@ export const growthPosts: BlogPost[] = [
         ],
         cta: {
           title: "Planning a store redesign?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|UX and brand design]], [[/services/shopify-development|Shopify development]] and a [[/services/cro-audit|pre-redesign audit]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|UX and brand design]], [[/services/shopify-development|Shopify development]] and a [[/services/cro-audit|pre-redesign audit]].",
         },
       },
       {
@@ -720,7 +720,7 @@ export const growthPosts: BlogPost[] = [
         ],
         cta: {
           title: "Can't find why your traffic isn't buying?",
-          description: "ZSpace audits the full journey, from traffic sources to payment, and shows which stage is actually losing sales.",
+          description: "ZSpace Labs audits the full journey, from traffic sources to payment, and shows which stage is actually losing sales.",
         },
       },
       {
@@ -782,7 +782,7 @@ export const growthPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want a clear diagnosis before you spend more?",
-          description: "Talk to ZSpace about an [[/services/cro-audit|ecommerce CRO audit]], [[/services/ui-ux-design|UX fixes]] or [[/services/shopify-development|Shopify development]].",
+          description: "Talk to ZSpace Labs about an [[/services/cro-audit|ecommerce CRO audit]], [[/services/ui-ux-design|UX fixes]] or [[/services/shopify-development|Shopify development]].",
         },
       },
       {
@@ -811,7 +811,7 @@ export const growthPosts: BlogPost[] = [
       { q: "How do I diagnose a product page with no sales?", a: "Check where its traffic comes from, compare its add-to-cart rate with similar products, watch recordings of visitors who leave, read reviews and questions, test the page on mobile and try to buy it yourself." },
       { q: "What is a good add-to-cart rate?", a: "It varies too much by product, price and traffic to use a single benchmark. Compare the page with your own similar products and with its own history." },
       { q: "Can reviews fix a product page with no sales?", a: "They help if lack of proof is the cause. If the price, delivery cost or product fit is the real problem, reviews won't fix it." },
-      { q: "What if people add to cart but still don't buy?", a: "Then the product page may be working and the problem is later, in the cart, checkout or payment. See ZSpace's guide to add to cart but no purchase." },
+      { q: "What if people add to cart but still don't buy?", a: "Then the product page may be working and the problem is later, in the cart, checkout or payment. See ZSpace Labs' guide to add to cart but no purchase." },
       { q: "Could the problem be the product itself?", a: "Sometimes. If visitors who match the product still don't buy after the page answers their questions, the product, price or market fit may be the issue. Customer conversations and competitor comparisons help." },
       { q: "Should I lower the price?", a: "Only after checking that the page explains the value and that shipping costs aren't the real barrier. Test price changes carefully and measure margin, not just conversions." },
       { q: "How do technical issues affect product pages?", a: "A variant that can't be selected, an add-to-cart button that fails on some devices, or a slow page can stop sales for some visitors without anyone noticing. Test on real devices and review error logs." },
@@ -876,7 +876,7 @@ export const growthPosts: BlogPost[] = [
         ],
         cta: {
           title: "Have a product page that should be selling?",
-          description: "ZSpace diagnoses underperforming product pages with analytics, recordings and user testing, then redesigns what's blocking the sale.",
+          description: "ZSpace Labs diagnoses underperforming product pages with analytics, recordings and user testing, then redesigns what's blocking the sale.",
         },
       },
       {
@@ -950,7 +950,7 @@ export const growthPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want your key product pages reviewed?",
-          description: "Talk to ZSpace about [[/services/cro-audit|product page audits]], [[/services/ui-ux-design|redesign]] and [[/services/shopify-development|Shopify implementation]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|product page audits]], [[/services/ui-ux-design|redesign]] and [[/services/shopify-development|Shopify implementation]].",
         },
       },
       {

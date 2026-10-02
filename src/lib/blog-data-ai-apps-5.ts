@@ -73,7 +73,7 @@ export const aiAppsPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Expense reports eating finance team time?",
-          description: "ZSpace builds expense automation with receipt capture, policy rules and ERP posting, including mobile capture apps.",
+          description: "ZSpace Labs builds expense automation with receipt capture, policy rules and ERP posting, including mobile capture apps.",
         },
       },
       {
@@ -185,7 +185,7 @@ export const aiAppsPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Planning expense automation?",
-          description: "Talk to ZSpace about [[/services/ai-automation|finance workflow automation]] and [[/services/mobile-app-development|mobile capture apps]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|finance workflow automation]] and [[/services/mobile-app-development|mobile capture apps]].",
         },
       },
       {
@@ -271,7 +271,7 @@ export const aiAppsPosts5: BlogPost[] = [
         },
         cta: {
           title: "Audit season taking over your team's calendar?",
-          description: "ZSpace automates evidence collection and control monitoring across your cloud, identity and HR systems.",
+          description: "ZSpace Labs automates evidence collection and control monitoring across your cloud, identity and HR systems.",
         },
       },
       {
@@ -368,7 +368,7 @@ export const aiAppsPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Want continuous audit readiness?",
-          description: "Talk to ZSpace about [[/services/ai-automation|compliance automation]] and system integrations.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|compliance automation]] and system integrations.",
         },
       },
       {
@@ -454,7 +454,7 @@ export const aiAppsPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Exploring AI for your firm or legal team?",
-          description: "ZSpace builds secure knowledge search, intake and document workflows for legal teams, with confidentiality and review built in.",
+          description: "ZSpace Labs builds secure knowledge search, intake and document workflows for legal teams, with confidentiality and review built in.",
         },
       },
       {
@@ -561,7 +561,7 @@ export const aiAppsPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Need secure AI workflows for legal work?",
-          description: "Talk to ZSpace about [[/services/ai-automation|legal workflow automation]] and [[/services/website-development|secure client portals]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|legal workflow automation]] and [[/services/website-development|secure client portals]].",
         },
       },
       {
@@ -630,7 +630,7 @@ export const aiAppsPosts5: BlogPost[] = [
         },
         cta: {
           title: "Operations and care teams overwhelmed by volume?",
-          description: "ZSpace builds AI ticket enrichment, care assistants and field service tools integrated with your BSS, OSS and CRM.",
+          description: "ZSpace Labs builds AI ticket enrichment, care assistants and field service tools integrated with your BSS, OSS and CRM.",
         },
       },
       {
@@ -748,7 +748,7 @@ export const aiAppsPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Planning AI across care and operations?",
-          description: "Talk to ZSpace about [[/services/ai-automation|telecom workflow automation]] and [[/services/mobile-app-development|self-service and field apps]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|telecom workflow automation]] and [[/services/mobile-app-development|self-service and field apps]].",
         },
       },
       {

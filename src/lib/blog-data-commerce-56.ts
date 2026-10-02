@@ -106,7 +106,7 @@ export const commercePosts56: BlogPost[] = [
         ],
         cta: {
           title: "Long queries returning poor results?",
-          description: "ZSpace reviews your search logs and product data to see where query understanding would help.",
+          description: "ZSpace Labs reviews your search logs and product data to see where query understanding would help.",
         },
       },
       {
@@ -201,7 +201,7 @@ export const commercePosts56: BlogPost[] = [
         ],
         cta: {
           title: "Ready to understand longer queries?",
-          description: "Talk to ZSpace about [[/services/ai-automation|query understanding and AI search]], [[/services/website-development|search integration]] and [[/services/ui-ux-design|search interface design]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|query understanding and AI search]], [[/services/website-development|search integration]] and [[/services/ui-ux-design|search interface design]].",
         },
       },
       {
@@ -294,7 +294,7 @@ export const commercePosts56: BlogPost[] = [
         ],
         cta: {
           title: "Search results in the wrong order?",
-          description: "ZSpace reviews relevance settings, signals and rules to fix ranking for your most important queries.",
+          description: "ZSpace Labs reviews relevance settings, signals and rules to fix ranking for your most important queries.",
         },
       },
       {
@@ -384,7 +384,7 @@ export const commercePosts56: BlogPost[] = [
         ],
         cta: {
           title: "Ready to tune search ranking?",
-          description: "Talk to ZSpace about [[/services/cro-audit|search audits]], [[/services/website-development|search configuration]] and [[/services/ai-automation|learning-based ranking]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|search audits]], [[/services/website-development|search configuration]] and [[/services/ai-automation|learning-based ranking]].",
         },
       },
       {
@@ -489,7 +489,7 @@ export const commercePosts56: BlogPost[] = [
         ],
         cta: {
           title: "Wondering whether personalized search would help?",
-          description: "ZSpace analyses your search data to find where personalization would improve relevance and where it wouldn't.",
+          description: "ZSpace Labs analyses your search data to find where personalization would improve relevance and where it wouldn't.",
         },
       },
       {
@@ -566,7 +566,7 @@ export const commercePosts56: BlogPost[] = [
         ],
         cta: {
           title: "Ready to personalize search responsibly?",
-          description: "Talk to ZSpace about [[/services/ai-automation|search personalization]], [[/services/cro-audit|testing and measurement]] and [[/services/website-development|search integration]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|search personalization]], [[/services/cro-audit|testing and measurement]] and [[/services/website-development|search integration]].",
         },
       },
       {
@@ -663,7 +663,7 @@ export const commercePosts56: BlogPost[] = [
         },
         cta: {
           title: "Collections that drift out of date?",
-          description: "ZSpace sets up merchandising rules and automations that keep collections current without constant manual work.",
+          description: "ZSpace Labs sets up merchandising rules and automations that keep collections current without constant manual work.",
         },
       },
       {
@@ -758,7 +758,7 @@ export const commercePosts56: BlogPost[] = [
         ],
         cta: {
           title: "Ready to automate merchandising safely?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify merchandising setup]], [[/services/ai-automation|merchandising automation]] and [[/services/cro-audit|collection performance audits]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify merchandising setup]], [[/services/ai-automation|merchandising automation]] and [[/services/cro-audit|collection performance audits]].",
         },
       },
       {
@@ -858,7 +858,7 @@ export const commercePosts56: BlogPost[] = [
         ],
         cta: {
           title: "Not sure whether search or navigation is failing shoppers?",
-          description: "ZSpace analyses how shoppers find products and where they drop out, then prioritizes fixes.",
+          description: "ZSpace Labs analyses how shoppers find products and where they drop out, then prioritizes fixes.",
         },
       },
       {
@@ -944,7 +944,7 @@ export const commercePosts56: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve how shoppers find products?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|navigation and search UX]], [[/services/cro-audit|discovery audits]] and [[/services/website-development|search and taxonomy implementation]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|navigation and search UX]], [[/services/cro-audit|discovery audits]] and [[/services/website-development|search and taxonomy implementation]].",
         },
       },
       {

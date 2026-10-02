@@ -93,7 +93,7 @@ export const commercePosts5: BlogPost[] = [
         },
         cta: {
           title: "Not sure which tests your evidence supports?",
-          description: "ZSpace builds prioritized test roadmaps from your funnel data, recordings and user research.",
+          description: "ZSpace Labs builds prioritized test roadmaps from your funnel data, recordings and user research.",
         },
       },
       {
@@ -166,7 +166,7 @@ export const commercePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Want tests that teach you something?",
-          description: "Talk to ZSpace about a [[/services/cro-audit|CRO audit and test roadmap]] and [[/services/ui-ux-design|variant design]].",
+          description: "Talk to ZSpace Labs about a [[/services/cro-audit|CRO audit and test roadmap]] and [[/services/ui-ux-design|variant design]].",
         },
       },
       {
@@ -292,7 +292,7 @@ export const commercePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Want a testing program that produces trustworthy results?",
-          description: "ZSpace sets up the process, standards and research pipeline, and runs experiments with your team.",
+          description: "ZSpace Labs sets up the process, standards and research pipeline, and runs experiments with your team.",
         },
       },
       {
@@ -351,7 +351,7 @@ export const commercePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build an experimentation program?",
-          description: "Talk to ZSpace about [[/services/cro-audit|CRO programs]], [[/services/ui-ux-design|research and design]] and [[/services/website-development|server-side testing implementation]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|CRO programs]], [[/services/ui-ux-design|research and design]] and [[/services/website-development|server-side testing implementation]].",
         },
       },
       {
@@ -484,7 +484,7 @@ export const commercePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Is personalization worth it for your store?",
-          description: "ZSpace identifies the few personalization use cases your data and catalog can support, and how to measure them.",
+          description: "ZSpace Labs identifies the few personalization use cases your data and catalog can support, and how to measure them.",
         },
       },
       {
@@ -565,7 +565,7 @@ export const commercePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Want personalization that measurably helps?",
-          description: "Talk to ZSpace about [[/services/cro-audit|CRO strategy]], [[/services/ui-ux-design|experience design]] and [[/services/ai-automation|AI-driven recommendations]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|CRO strategy]], [[/services/ui-ux-design|experience design]] and [[/services/ai-automation|AI-driven recommendations]].",
         },
       },
       {
@@ -678,7 +678,7 @@ export const commercePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Recommendations getting clicks but not sales?",
-          description: "ZSpace reviews recommendation types, placements and measurement, and redesigns modules around shopper intent.",
+          description: "ZSpace Labs reviews recommendation types, placements and measurement, and redesigns modules around shopper intent.",
         },
       },
       {
@@ -716,7 +716,7 @@ export const commercePosts5: BlogPost[] = [
         ],
         cta: {
           title: "Want recommendations that help shoppers find more?",
-          description: "Talk to ZSpace about [[/services/cro-audit|CRO]], [[/services/ui-ux-design|module design]] and [[/services/ai-automation|recommendation systems]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|CRO]], [[/services/ui-ux-design|module design]] and [[/services/ai-automation|recommendation systems]].",
         },
       },
       {

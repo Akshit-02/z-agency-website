@@ -79,7 +79,7 @@ export const commercePosts76: BlogPost[] = [
         ],
         cta: {
           title: "Weighing a unified platform against better integration?",
-          description: "ZSpace can assess your current integrations, error rates and renewal timelines and lay out both paths with their costs and risks.",
+          description: "ZSpace Labs can assess your current integrations, error rates and renewal timelines and lay out both paths with their costs and risks.",
         },
       },
       {
@@ -145,7 +145,7 @@ export const commercePosts76: BlogPost[] = [
         ],
         cta: {
           title: "Ready to choose your retail architecture?",
-          description: "Talk to ZSpace about [[/services/website-development|retail commerce architecture]], [[/services/shopify-development|Shopify and POS implementation]] and [[/services/ui-ux-design|store and online experience design]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|retail commerce architecture]], [[/services/shopify-development|Shopify and POS implementation]] and [[/services/ui-ux-design|store and online experience design]].",
         },
       },
       {
@@ -238,7 +238,7 @@ export const commercePosts76: BlogPost[] = [
         ],
         cta: {
           title: "Systems out of sync across stores and online?",
-          description: "ZSpace can audit your retail integrations, define systems of record and build reliable event-driven connections with monitoring.",
+          description: "ZSpace Labs can audit your retail integrations, define systems of record and build reliable event-driven connections with monitoring.",
         },
       },
       {
@@ -316,7 +316,7 @@ export const commercePosts76: BlogPost[] = [
         ],
         cta: {
           title: "Ready to connect your retail systems properly?",
-          description: "Talk to ZSpace about [[/services/website-development|retail integration engineering]], [[/services/ai-automation|workflow automation]] and [[/services/shopify-development|Shopify POS and ERP integration]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|retail integration engineering]], [[/services/ai-automation|workflow automation]] and [[/services/shopify-development|Shopify POS and ERP integration]].",
         },
       },
       {
@@ -411,7 +411,7 @@ export const commercePosts76: BlogPost[] = [
         ],
         cta: {
           title: "Showing stock you can't actually promise?",
-          description: "ZSpace can design your available-to-promise service, event flows and caching so customer-facing stock stays honest.",
+          description: "ZSpace Labs can design your available-to-promise service, event flows and caching so customer-facing stock stays honest.",
         },
       },
       {
@@ -474,7 +474,7 @@ export const commercePosts76: BlogPost[] = [
         ],
         cta: {
           title: "Ready to make stock visibility trustworthy?",
-          description: "Talk to ZSpace about [[/services/website-development|inventory and OMS integration]], [[/services/ai-automation|stock event automation]] and [[/services/shopify-development|Shopify multi-location inventory]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|inventory and OMS integration]], [[/services/ai-automation|stock event automation]] and [[/services/shopify-development|Shopify multi-location inventory]].",
         },
       },
       {
@@ -559,7 +559,7 @@ export const commercePosts76: BlogPost[] = [
         ],
         cta: {
           title: "Is your store locator helping or hindering visits?",
-          description: "ZSpace can redesign your locator and store pages for mobile, accessibility and pickup, and connect them to live store data.",
+          description: "ZSpace Labs can redesign your locator and store pages for mobile, accessibility and pickup, and connect them to live store data.",
         },
       },
       {
@@ -622,7 +622,7 @@ export const commercePosts76: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve store discovery?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|store locator and store page design]], [[/services/website-development|store data and availability integration]] and [[/services/shopify-development|Shopify location setups]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|store locator and store page design]], [[/services/website-development|store data and availability integration]] and [[/services/shopify-development|Shopify location setups]].",
         },
       },
       {
@@ -703,7 +703,7 @@ export const commercePosts76: BlogPost[] = [
         ],
         cta: {
           title: "Considering a clienteling app for your stores?",
-          description: "ZSpace can design and build associate tools around real store workflows, connected to your CRM, POS and inventory.",
+          description: "ZSpace Labs can design and build associate tools around real store workflows, connected to your CRM, POS and inventory.",
         },
       },
       {
@@ -767,7 +767,7 @@ export const commercePosts76: BlogPost[] = [
         ],
         cta: {
           title: "Ready to support associates with better tools?",
-          description: "Talk to ZSpace about [[/services/mobile-app-development|associate app development]], [[/services/website-development|CRM and POS integration]] and [[/services/ai-automation|recommendation and workflow automation]].",
+          description: "Talk to ZSpace Labs about [[/services/mobile-app-development|associate app development]], [[/services/website-development|CRM and POS integration]] and [[/services/ai-automation|recommendation and workflow automation]].",
         },
       },
       {

@@ -82,7 +82,7 @@ export const designPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Designing or redesigning an online store?",
-          description: "ZSpace designs ecommerce experiences around how your customers shop, from navigation to checkout, and builds them on Shopify or custom stacks.",
+          description: "ZSpace Labs designs ecommerce experiences around how your customers shop, from navigation to checkout, and builds them on Shopify or custom stacks.",
         },
       },
       {
@@ -133,11 +133,11 @@ export const designPosts3: BlogPost[] = [
       {
         heading: "Design, Then Measure",
         body: [
-          "Design decisions should be checked against real behavior. Usability testing finds problems before launch; analytics and experiments measure impact after. See [[/blogs/ux-audit|UX audit]] and ZSpace's [[/services/cro-audit|CRO]] service for the measurement side.",
+          "Design decisions should be checked against real behavior. Usability testing finds problems before launch; analytics and experiments measure impact after. See [[/blogs/ux-audit|UX audit]] and ZSpace Labs' [[/services/cro-audit|CRO]] service for the measurement side.",
         ],
         cta: {
           title: "Want your store's shopping experience reviewed?",
-          description: "Talk to ZSpace about ecommerce [[/services/ui-ux-design|UI/UX design]], [[/services/shopify-development|Shopify builds]] and [[/services/cro-audit|conversion work]].",
+          description: "Talk to ZSpace Labs about ecommerce [[/services/ui-ux-design|UI/UX design]], [[/services/shopify-development|Shopify builds]] and [[/services/cro-audit|conversion work]].",
         },
       },
       {
@@ -207,7 +207,7 @@ export const designPosts3: BlogPost[] = [
       {
         heading: "Media",
         body: [
-          "Images do most of the explaining. Show the product from multiple angles, close-ups of materials and details, the product in context or on a person, and something that conveys scale. Support zoom on desktop and pinch or swipe on mobile. Baymard's [[https://baymard.com/research/product-page|product page research]] covers imagery and other product page elements in depth, and ZSpace's [[/blogs/ecommerce-product-image-design|product image design guide]] covers galleries in detail.",
+          "Images do most of the explaining. Show the product from multiple angles, close-ups of materials and details, the product in context or on a person, and something that conveys scale. Support zoom on desktop and pinch or swipe on mobile. Baymard's [[https://baymard.com/research/product-page|product page research]] covers imagery and other product page elements in depth, and ZSpace Labs' [[/blogs/ecommerce-product-image-design|product image design guide]] covers galleries in detail.",
         ],
       },
       {
@@ -223,7 +223,7 @@ export const designPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Redesigning your product pages?",
-          description: "ZSpace designs product pages around real buying questions, from media and variants to delivery and reviews.",
+          description: "ZSpace Labs designs product pages around real buying questions, from media and variants to delivery and reviews.",
         },
       },
       {
@@ -281,7 +281,7 @@ export const designPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want your product pages reviewed?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|product page design]], [[/services/shopify-development|Shopify implementation]] and [[/services/cro-audit|conversion testing]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|product page design]], [[/services/shopify-development|Shopify implementation]] and [[/services/cro-audit|conversion testing]].",
         },
       },
       {
@@ -426,7 +426,7 @@ export const designPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Are shoppers struggling to find products on your store?",
-          description: "ZSpace designs category pages, filters and taxonomies around how your customers actually shop.",
+          description: "ZSpace Labs designs category pages, filters and taxonomies around how your customers actually shop.",
         },
       },
       {
@@ -525,7 +525,7 @@ export const designPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want your product listings reviewed?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|ecommerce UX]], [[/services/shopify-development|Shopify implementation]] and [[/services/cro-audit|testing]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|ecommerce UX]], [[/services/shopify-development|Shopify implementation]] and [[/services/cro-audit|testing]].",
         },
       },
       {
@@ -613,7 +613,7 @@ export const designPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Designing or redesigning a Shopify store?",
-          description: "ZSpace designs Shopify stores around your customers' shopping journey and builds them with maintainable themes and sections.",
+          description: "ZSpace Labs designs Shopify stores around your customers' shopping journey and builds them with maintainable themes and sections.",
         },
       },
       {
@@ -647,7 +647,7 @@ export const designPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want an expert review of your Shopify store design?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify development]] and [[/services/ui-ux-design|ecommerce UX]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify development]] and [[/services/ui-ux-design|ecommerce UX]].",
         },
       },
       {
@@ -714,7 +714,7 @@ export const designPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Designing the experience after the first order?",
-          description: "ZSpace designs accounts, reorder flows and subscription management for D2C brands on Shopify and custom stacks.",
+          description: "ZSpace Labs designs accounts, reorder flows and subscription management for D2C brands on Shopify and custom stacks.",
         },
       },
       {
@@ -770,7 +770,7 @@ export const designPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want to improve repeat purchases on your store?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|D2C UX design]], [[/services/shopify-development|Shopify builds]] and [[/services/cro-audit|conversion work]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|D2C UX design]], [[/services/shopify-development|Shopify builds]] and [[/services/cro-audit|conversion work]].",
         },
       },
       {

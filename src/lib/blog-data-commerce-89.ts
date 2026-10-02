@@ -95,7 +95,7 @@ export const commercePosts89: BlogPost[] = [
         },
         cta: {
           title: "Refunds still processed by hand in the payment dashboard?",
-          description: "ZSpace can connect returns, OMS and payment provider APIs so routine refunds run on rules and exceptions reach the right person.",
+          description: "ZSpace Labs can connect returns, OMS and payment provider APIs so routine refunds run on rules and exceptions reach the right person.",
         },
       },
       {
@@ -179,7 +179,7 @@ export const commercePosts89: BlogPost[] = [
         ],
         cta: {
           title: "Want refunds that are fast, accurate and reconciled?",
-          description: "Talk to ZSpace about [[/services/ai-automation|refund workflow automation]], [[/services/website-development|payment and OMS integration]] and [[/services/shopify-development|Shopify returns apps and setups]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|refund workflow automation]], [[/services/website-development|payment and OMS integration]] and [[/services/shopify-development|Shopify returns apps and setups]].",
         },
       },
       {
@@ -279,7 +279,7 @@ export const commercePosts89: BlogPost[] = [
         },
         cta: {
           title: "Turning more returns into exchanges?",
-          description: "ZSpace can build exchange flows with live availability, reservations and price-difference payments connected to your OMS and returns tools.",
+          description: "ZSpace Labs can build exchange flows with live availability, reservations and price-difference payments connected to your OMS and returns tools.",
         },
       },
       {
@@ -364,7 +364,7 @@ export const commercePosts89: BlogPost[] = [
         ],
         cta: {
           title: "Planning an exchange-first returns experience?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify returns and exchange setups]], [[/services/website-development|custom exchange workflows]] and [[/services/ui-ux-design|returns portal design]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify returns and exchange setups]], [[/services/website-development|custom exchange workflows]] and [[/services/ui-ux-design|returns portal design]].",
         },
       },
       {

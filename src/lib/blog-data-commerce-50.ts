@@ -84,7 +84,7 @@ export const commercePosts50: BlogPost[] = [
         ],
         cta: {
           title: "Jewelry searches missing what shoppers mean?",
-          description: "ZSpace tunes jewelry search for materials, stones, collections and gift intent using your real query data.",
+          description: "ZSpace Labs tunes jewelry search for materials, stones, collections and gift intent using your real query data.",
         },
       },
       {
@@ -152,7 +152,7 @@ export const commercePosts50: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve jewelry search?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|search UX]], [[/services/website-development|search implementation]] and [[/services/cro-audit|search audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|search UX]], [[/services/website-development|search implementation]] and [[/services/cro-audit|search audits]].",
         },
       },
       {
@@ -229,7 +229,7 @@ export const commercePosts50: BlogPost[] = [
         ],
         cta: {
           title: "High traffic on jewelry pages but few orders?",
-          description: "ZSpace audits jewelry journeys and builds the trust and sizing improvements that give buyers confidence.",
+          description: "ZSpace Labs audits jewelry journeys and builds the trust and sizing improvements that give buyers confidence.",
         },
       },
       {
@@ -307,7 +307,7 @@ export const commercePosts50: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build buying confidence?",
-          description: "Talk to ZSpace about [[/services/cro-audit|jewelry CRO]], [[/services/ui-ux-design|jewelry UX]] and [[/services/shopify-development|Shopify jewelry stores]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|jewelry CRO]], [[/services/ui-ux-design|jewelry UX]] and [[/services/shopify-development|Shopify jewelry stores]].",
         },
       },
       {
@@ -380,7 +380,7 @@ export const commercePosts50: BlogPost[] = [
         ],
         cta: {
           title: "Planning a jewelry website redesign?",
-          description: "ZSpace redesigns jewelry sites that feel premium and answer every trust question buyers have.",
+          description: "ZSpace Labs redesigns jewelry sites that feel premium and answer every trust question buyers have.",
         },
       },
       {
@@ -458,7 +458,7 @@ export const commercePosts50: BlogPost[] = [
         ],
         cta: {
           title: "Ready to modernize your jewelry website?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|jewelry UX redesign]], [[/services/website-development|jewelry store development]] and [[/services/cro-audit|conversion audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|jewelry UX redesign]], [[/services/website-development|jewelry store development]] and [[/services/cro-audit|conversion audits]].",
         },
       },
       {

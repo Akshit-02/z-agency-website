@@ -89,7 +89,7 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Weighing WordPress against a Next.js build?",
-          description: "ZSpace builds on Next.js and works with headless WordPress, so we can recommend what fits your team rather than defaulting to one stack.",
+          description: "ZSpace Labs builds on Next.js and works with headless WordPress, so we can recommend what fits your team rather than defaulting to one stack.",
         },
       },
       {
@@ -117,7 +117,7 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want a recommendation grounded in your actual requirements?",
-          description: "Talk to ZSpace about your content workflow, integrations and growth plans, and we'll map them to the stack that fits.",
+          description: "Talk to ZSpace Labs about your content workflow, integrations and growth plans, and we'll map them to the stack that fits.",
         },
       },
       {
@@ -200,7 +200,7 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Trying to compare real multi-year costs?",
-          description: "ZSpace can look at your current plugin stack, integrations and roadmap and outline what each path would cost to run, not just to build.",
+          description: "ZSpace Labs can look at your current plugin stack, integrations and roadmap and outline what each path would cost to run, not just to build.",
         },
       },
       {
@@ -234,7 +234,7 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want an honest read on which path fits your roadmap?",
-          description: "Talk to ZSpace about where your site needs to be in a few years, and we'll tell you whether custom development is actually justified.",
+          description: "Talk to ZSpace Labs about where your site needs to be in a few years, and we'll tell you whether custom development is actually justified.",
         },
       },
       {
@@ -326,7 +326,7 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Not sure your team is ready for a headless CMS?",
-          description: "ZSpace can review your content workflow and publishing needs and recommend a CMS setup your editors and developers can both work with.",
+          description: "ZSpace Labs can review your content workflow and publishing needs and recommend a CMS setup your editors and developers can both work with.",
         },
       },
       {
@@ -353,7 +353,7 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Planning a CMS change?",
-          description: "Talk to ZSpace before committing. The right CMS depends as much on your editorial team as on the technology.",
+          description: "Talk to ZSpace Labs before committing. The right CMS depends as much on your editorial team as on the technology.",
         },
       },
       {
@@ -434,7 +434,7 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Considering a headless CMS for your next website?",
-          description: "ZSpace designs content models and builds the front end, so your CMS fits how your team actually publishes.",
+          description: "ZSpace Labs designs content models and builds the front end, so your CMS fits how your team actually publishes.",
         },
       },
       {
@@ -456,7 +456,7 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want help deciding whether headless fits?",
-          description: "Talk to ZSpace about your channels, editorial team and roadmap before choosing a CMS model.",
+          description: "Talk to ZSpace Labs about your channels, editorial team and roadmap before choosing a CMS model.",
         },
       },
       {
@@ -542,13 +542,13 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Shortlisting CMS options?",
-          description: "ZSpace can map your team, content and integrations to a shortlist, and explain the trade-offs of each before you commit.",
+          description: "ZSpace Labs can map your team, content and integrations to a shortlist, and explain the trade-offs of each before you commit.",
         },
       },
       {
         heading: "Ecommerce",
         body: [
-          "If selling online is central, start with the commerce platform. Platforms like Shopify include content tools that are sufficient for many brands; others pair commerce with a separate CMS for richer content. See ZSpace's [[/services/shopify-development|Shopify development]] work for the commerce-first path.",
+          "If selling online is central, start with the commerce platform. Platforms like Shopify include content tools that are sufficient for many brands; others pair commerce with a separate CMS for richer content. See ZSpace Labs' [[/services/shopify-development|Shopify development]] work for the commerce-first path.",
         ],
       },
       {
@@ -584,7 +584,7 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Ready to choose, or reconsidering your current CMS?",
-          description: "Talk to ZSpace about a CMS decision grounded in how your business actually publishes.",
+          description: "Talk to ZSpace Labs about a CMS decision grounded in how your business actually publishes.",
         },
       },
       {
@@ -652,7 +652,7 @@ export const webDevPosts7: BlogPost[] = [
       {
         heading: "Admin Experience and Custom Workflows",
         body: [
-          "WordPress's admin serves everyone reasonably well and nobody perfectly. For a marketing team publishing articles, that's fine. For an operations team managing hundreds of structured records with validation rules, approval stages and role-specific views, a custom admin can remove real daily friction. Good admin design is a UX problem as much as a development one, which is why ZSpace treats it as part of [[/services/ui-ux-design|UI/UX design]].",
+          "WordPress's admin serves everyone reasonably well and nobody perfectly. For a marketing team publishing articles, that's fine. For an operations team managing hundreds of structured records with validation rules, approval stages and role-specific views, a custom admin can remove real daily friction. Good admin design is a UX problem as much as a development one, which is why ZSpace Labs treats it as part of [[/services/ui-ux-design|UI/UX design]].",
         ],
         visual: { variant: "rows", accent: "blue", caption: "A general-purpose admin shows everything to everyone; a custom admin shows each role only what its job requires." },
       },
@@ -663,7 +663,7 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Is WordPress straining under your content?",
-          description: "ZSpace can review your content structure and workflows and tell you whether custom fields, a headless CMS or a custom admin is the right fix.",
+          description: "ZSpace Labs can review your content structure and workflows and tell you whether custom fields, a headless CMS or a custom admin is the right fix.",
         },
       },
       {
@@ -696,7 +696,7 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want to scope a custom admin properly?",
-          description: "Talk to ZSpace about your content and workflows before deciding between WordPress, headless or a custom CMS.",
+          description: "Talk to ZSpace Labs about your content and workflows before deciding between WordPress, headless or a custom CMS.",
         },
       },
       {
@@ -766,17 +766,17 @@ export const webDevPosts7: BlogPost[] = [
       {
         heading: "Mobile Applications",
         body: [
-          "Mobile apps are the most common reason businesses adopt API-first. If a website and an app both need accounts, orders or bookings, building the logic once behind an API avoids two diverging implementations. See ZSpace's [[/services/mobile-app-development|mobile app development]] work for how this plays out in app projects.",
+          "Mobile apps are the most common reason businesses adopt API-first. If a website and an app both need accounts, orders or bookings, building the logic once behind an API avoids two diverging implementations. See ZSpace Labs' [[/services/mobile-app-development|mobile app development]] work for how this plays out in app projects.",
         ],
         cta: {
           title: "Planning a website and app on the same platform?",
-          description: "ZSpace designs APIs that serve web and mobile from one backend, so your channels stay consistent as you grow.",
+          description: "ZSpace Labs designs APIs that serve web and mobile from one backend, so your channels stay consistent as you grow.",
         },
       },
       {
         heading: "Third-Party Systems and Partners",
         body: [
-          "An API-first platform can expose selected capabilities to partners, resellers or internal automation, including AI services and workflows through ZSpace's [[/services/ai-automation|AI automation]] work. The same contract and security rules apply, rather than one-off export scripts.",
+          "An API-first platform can expose selected capabilities to partners, resellers or internal automation, including AI services and workflows through ZSpace Labs' [[/services/ai-automation|AI automation]] work. The same contract and security rules apply, rather than one-off export scripts.",
         ],
       },
       {
@@ -803,7 +803,7 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Not sure whether your project needs API-first architecture?",
-          description: "Talk to ZSpace about your channels and roadmap. We'll tell you if a simpler architecture would serve you better.",
+          description: "Talk to ZSpace Labs about your channels and roadmap. We'll tell you if a simpler architecture would serve you better.",
         },
       },
       {

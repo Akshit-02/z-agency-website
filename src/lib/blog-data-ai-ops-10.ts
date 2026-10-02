@@ -86,7 +86,7 @@ export const aiOpsPosts10: BlogPost[] = [
         ],
         cta: {
           title: "Have an AI product idea to test?",
-          description: "ZSpace runs short validation sprints: user research, feasibility prototypes on real data and a clear build, buy or stop recommendation. See [[/services/ui-ux-design|product design]] and [[/services/ai-automation|AI development]].",
+          description: "ZSpace Labs runs short validation sprints: user research, feasibility prototypes on real data and a clear build, buy or stop recommendation. See [[/services/ui-ux-design|product design]] and [[/services/ai-automation|AI development]].",
         },
       },
       {
@@ -176,7 +176,7 @@ export const aiOpsPosts10: BlogPost[] = [
         ],
         cta: {
           title: "Want an outside view before committing to a build?",
-          description: "Talk to ZSpace about an [[/services/ai-automation|AI product validation sprint]] covering users, feasibility, cost and risk.",
+          description: "Talk to ZSpace Labs about an [[/services/ai-automation|AI product validation sprint]] covering users, feasibility, cost and risk.",
         },
       },
       {
@@ -263,7 +263,7 @@ export const aiOpsPosts10: BlogPost[] = [
         },
         cta: {
           title: "AI features too slow or too expensive?",
-          description: "ZSpace profiles AI workloads and applies the right optimizations, from prompts to serving infrastructure. See [[/services/ai-automation|AI engineering services]].",
+          description: "ZSpace Labs profiles AI workloads and applies the right optimizations, from prompts to serving infrastructure. See [[/services/ai-automation|AI engineering services]].",
         },
       },
       {
@@ -361,7 +361,7 @@ export const aiOpsPosts10: BlogPost[] = [
         ],
         cta: {
           title: "Need a performance review of your AI stack?",
-          description: "Talk to ZSpace about [[/services/ai-automation|inference profiling and optimization]] for hosted and self-hosted models.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|inference profiling and optimization]] for hosted and self-hosted models.",
         },
       },
       {
@@ -448,7 +448,7 @@ export const aiOpsPosts10: BlogPost[] = [
         ],
         cta: {
           title: "Planning to serve your own models?",
-          description: "ZSpace designs and operates LLM serving stacks, from engine choice to autoscaling and monitoring. See [[/services/ai-automation|AI infrastructure services]].",
+          description: "ZSpace Labs designs and operates LLM serving stacks, from engine choice to autoscaling and monitoring. See [[/services/ai-automation|AI infrastructure services]].",
         },
       },
       {
@@ -537,7 +537,7 @@ export const aiOpsPosts10: BlogPost[] = [
         ],
         cta: {
           title: "Want a review of your serving setup?",
-          description: "Talk to ZSpace about [[/services/ai-automation|LLM serving architecture]]: engines, capacity, autoscaling and reliability.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|LLM serving architecture]]: engines, capacity, autoscaling and reliability.",
         },
       },
       {
@@ -621,7 +621,7 @@ export const aiOpsPosts10: BlogPost[] = [
         ],
         cta: {
           title: "Deciding between APIs, fine-tuning and self-hosting?",
-          description: "ZSpace helps teams choose and implement the right mix for quality, cost and control. See [[/services/ai-automation|AI development services]].",
+          description: "ZSpace Labs helps teams choose and implement the right mix for quality, cost and control. See [[/services/ai-automation|AI development services]].",
         },
       },
       {
@@ -715,7 +715,7 @@ export const aiOpsPosts10: BlogPost[] = [
         ],
         cta: {
           title: "Unsure whether you need to train anything?",
-          description: "Talk to ZSpace about the [[/services/ai-automation|right AI architecture]] for your use case, from APIs and retrieval to fine-tuning.",
+          description: "Talk to ZSpace Labs about the [[/services/ai-automation|right AI architecture]] for your use case, from APIs and retrieval to fine-tuning.",
         },
       },
       {

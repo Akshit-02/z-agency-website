@@ -74,7 +74,7 @@ export const commercePosts21: BlogPost[] = [
         ],
         cta: {
           title: "Decor shoppers browsing but not buying?",
-          description: "ZSpace designs room-led discovery and product pages that help shoppers picture items at home.",
+          description: "ZSpace Labs designs room-led discovery and product pages that help shoppers picture items at home.",
         },
       },
       {
@@ -103,7 +103,7 @@ export const commercePosts21: BlogPost[] = [
         ],
         cta: {
           title: "Want a decor store that inspires and sells?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|home decor ecommerce UX]], [[/services/shopify-development|Shopify builds]] and [[/services/cro-audit|CRO]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|home decor ecommerce UX]], [[/services/shopify-development|Shopify builds]] and [[/services/cro-audit|CRO]].",
         },
       },
       {
@@ -176,7 +176,7 @@ export const commercePosts21: BlogPost[] = [
         ],
         cta: {
           title: "Wrong-fit returns eating your margin?",
-          description: "ZSpace designs vehicle selectors, fitment UX and data flows that help shoppers buy the right part first time.",
+          description: "ZSpace Labs designs vehicle selectors, fitment UX and data flows that help shoppers buy the right part first time.",
         },
       },
       {
@@ -227,7 +227,7 @@ export const commercePosts21: BlogPost[] = [
         ],
         cta: {
           title: "Planning an automotive parts store?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|automotive ecommerce UX]], [[/services/website-development|fitment data integration]] and [[/services/shopify-development|Shopify builds]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|automotive ecommerce UX]], [[/services/website-development|fitment data integration]] and [[/services/shopify-development|Shopify builds]].",
         },
       },
       {
@@ -308,7 +308,7 @@ export const commercePosts21: BlogPost[] = [
         ],
         cta: {
           title: "Building a wellness store that earns trust?",
-          description: "ZSpace designs product pages and education content structures for regulated, trust-sensitive categories.",
+          description: "ZSpace Labs designs product pages and education content structures for regulated, trust-sensitive categories.",
         },
       },
       {
@@ -338,7 +338,7 @@ export const commercePosts21: BlogPost[] = [
         ],
         cta: {
           title: "Want a wellness store customers can trust?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|wellness ecommerce UX]], [[/services/shopify-development|Shopify builds]] and [[/services/cro-audit|CRO]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|wellness ecommerce UX]], [[/services/shopify-development|Shopify builds]] and [[/services/cro-audit|CRO]].",
         },
       },
       {
@@ -404,7 +404,7 @@ export const commercePosts21: BlogPost[] = [
         ],
         cta: {
           title: "Bringing a luxury brand online?",
-          description: "ZSpace designs premium ecommerce that stays fast, usable and true to the brand's service standards.",
+          description: "ZSpace Labs designs premium ecommerce that stays fast, usable and true to the brand's service standards.",
         },
       },
       {
@@ -515,7 +515,7 @@ export const commercePosts21: BlogPost[] = [
         ],
         cta: {
           title: "Want an online experience worthy of your brand?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|luxury ecommerce design]], [[/services/shopify-development|Shopify Plus builds]] and [[/services/website-development|headless storefronts]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|luxury ecommerce design]], [[/services/shopify-development|Shopify Plus builds]] and [[/services/website-development|headless storefronts]].",
         },
       },
       {

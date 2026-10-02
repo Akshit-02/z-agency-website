@@ -95,7 +95,7 @@ export const commercePosts43: BlogPost[] = [
         },
         cta: {
           title: "Need an independent view of your commerce stack?",
-          description: "ZSpace runs ecommerce architecture audits that end in clear, prioritized recommendations rather than a list of complaints.",
+          description: "ZSpace Labs runs ecommerce architecture audits that end in clear, prioritized recommendations rather than a list of complaints.",
         },
       },
       {
@@ -149,7 +149,7 @@ export const commercePosts43: BlogPost[] = [
         ],
         cta: {
           title: "Ready to audit your ecommerce architecture?",
-          description: "Talk to ZSpace about [[/services/website-development|architecture audits and development]], [[/services/shopify-development|Shopify stack reviews]] and [[/services/ai-automation|removing manual processes]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|architecture audits and development]], [[/services/shopify-development|Shopify stack reviews]] and [[/services/ai-automation|removing manual processes]].",
         },
       },
       {
@@ -253,7 +253,7 @@ export const commercePosts43: BlogPost[] = [
         ],
         cta: {
           title: "Changes to your store taking far longer than they should?",
-          description: "ZSpace identifies the technical debt that slows your team and plans fixes alongside your roadmap.",
+          description: "ZSpace Labs identifies the technical debt that slows your team and plans fixes alongside your roadmap.",
         },
       },
       {
@@ -309,7 +309,7 @@ export const commercePosts43: BlogPost[] = [
         ],
         cta: {
           title: "Ready to reduce technical debt in your store?",
-          description: "Talk to ZSpace about [[/services/website-development|technical debt reduction]], [[/services/shopify-development|Shopify theme and app clean-ups]] and [[/services/ai-automation|automating manual processes]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|technical debt reduction]], [[/services/shopify-development|Shopify theme and app clean-ups]] and [[/services/ai-automation|automating manual processes]].",
         },
       },
       {
@@ -386,7 +386,7 @@ export const commercePosts43: BlogPost[] = [
         ],
         cta: {
           title: "Worried your store won't hold up at the next big launch?",
-          description: "ZSpace reviews ecommerce architectures for scale bottlenecks and plans fixes before peak traffic arrives.",
+          description: "ZSpace Labs reviews ecommerce architectures for scale bottlenecks and plans fixes before peak traffic arrives.",
         },
       },
       {
@@ -477,7 +477,7 @@ export const commercePosts43: BlogPost[] = [
         ],
         cta: {
           title: "Ready to prepare your store for growth?",
-          description: "Talk to ZSpace about [[/services/website-development|scalable ecommerce architecture]] and [[/services/shopify-development|Shopify performance and headless builds]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|scalable ecommerce architecture]] and [[/services/shopify-development|Shopify performance and headless builds]].",
         },
       },
       {

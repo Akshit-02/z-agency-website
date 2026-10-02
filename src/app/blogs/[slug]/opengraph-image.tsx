@@ -18,7 +18,7 @@ export default async function BlogOgImage({ params }: { params: Promise<{ slug: 
       <OgPage
         eyebrow={post?.category ?? "Insights"}
         eyebrowColor="#2563eb"
-        title={post?.title ?? "ZSpace Insights"}
+        title={post?.title ?? "ZSpace Labs Insights"}
         description={post?.excerpt ?? "Practical writing on web, mobile, AI automation and conversion."}
       />
     ),

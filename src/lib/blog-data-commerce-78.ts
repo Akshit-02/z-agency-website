@@ -84,7 +84,7 @@ export const commercePosts78: BlogPost[] = [
         ],
         cta: {
           title: "Thinking about building a customer community?",
-          description: "ZSpace can design community features that connect to your products and accounts, with moderation workflows built in from the start.",
+          description: "ZSpace Labs can design community features that connect to your products and accounts, with moderation workflows built in from the start.",
         },
       },
       {
@@ -157,7 +157,7 @@ export const commercePosts78: BlogPost[] = [
         ],
         cta: {
           title: "Ready to turn customer knowledge into a better store?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|community and Q&A design]], [[/services/website-development|community platform integration]] and [[/services/shopify-development|Shopify account integration]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|community and Q&A design]], [[/services/website-development|community platform integration]] and [[/services/shopify-development|Shopify account integration]].",
         },
       },
       {
@@ -252,7 +252,7 @@ export const commercePosts78: BlogPost[] = [
         ],
         cta: {
           title: "Designing a shopping assistant shoppers will trust?",
-          description: "ZSpace can design the conversation flows, product card patterns and grounding rules, and test them with real shoppers.",
+          description: "ZSpace Labs can design the conversation flows, product card patterns and grounding rules, and test them with real shoppers.",
         },
       },
       {
@@ -335,7 +335,7 @@ export const commercePosts78: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build conversational shopping that helps?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI shopping assistants]], [[/services/ui-ux-design|conversation design]] and [[/services/website-development|catalog and cart integration]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI shopping assistants]], [[/services/ui-ux-design|conversation design]] and [[/services/website-development|catalog and cart integration]].",
         },
       },
       {
@@ -416,7 +416,7 @@ export const commercePosts78: BlogPost[] = [
         ],
         cta: {
           title: "Is your chatbot frustrating more customers than it helps?",
-          description: "ZSpace can review your chat transcripts, redesign intents and escalation, and connect the bot safely to order data.",
+          description: "ZSpace Labs can review your chat transcripts, redesign intents and escalation, and connect the bot safely to order data.",
         },
       },
       {
@@ -498,7 +498,7 @@ export const commercePosts78: BlogPost[] = [
         ],
         cta: {
           title: "Ready to design a chatbot customers don't avoid?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI support agents and chatbots]], [[/services/ui-ux-design|conversation design]] and [[/services/website-development|order system integration]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI support agents and chatbots]], [[/services/ui-ux-design|conversation design]] and [[/services/website-development|order system integration]].",
         },
       },
       {
@@ -583,7 +583,7 @@ export const commercePosts78: BlogPost[] = [
         ],
         cta: {
           title: "Wondering whether voice belongs in your roadmap?",
-          description: "ZSpace can assess where voice input would genuinely help your customers and add it to search and lists without a separate channel.",
+          description: "ZSpace Labs can assess where voice input would genuinely help your customers and add it to search and lists without a separate channel.",
         },
       },
       {
@@ -646,7 +646,7 @@ export const commercePosts78: BlogPost[] = [
         ],
         cta: {
           title: "Ready to make search and lists work by voice?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|voice and conversational UX]], [[/services/mobile-app-development|voice input in shopping apps]] and [[/services/website-development|accessible ecommerce builds]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|voice and conversational UX]], [[/services/mobile-app-development|voice input in shopping apps]] and [[/services/website-development|accessible ecommerce builds]].",
         },
       },
       {

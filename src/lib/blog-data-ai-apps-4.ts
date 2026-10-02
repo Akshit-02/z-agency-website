@@ -83,7 +83,7 @@ export const aiAppsPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Content team stuck in production bottlenecks?",
-          description: "ZSpace designs AI-assisted content workflows around your CMS and review process, keeping experts and editors in control.",
+          description: "ZSpace Labs designs AI-assisted content workflows around your CMS and review process, keeping experts and editors in control.",
         },
       },
       {
@@ -191,7 +191,7 @@ export const aiAppsPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want a faster content workflow that keeps quality?",
-          description: "Talk to ZSpace about [[/services/ai-automation|content workflow automation]] and [[/services/website-development|CMS integration]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|content workflow automation]] and [[/services/website-development|CMS integration]].",
         },
       },
       {
@@ -273,7 +273,7 @@ export const aiAppsPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Purchase requests stuck in email chains?",
-          description: "ZSpace automates procurement intake, approvals and vendor document handling around your ERP.",
+          description: "ZSpace Labs automates procurement intake, approvals and vendor document handling around your ERP.",
         },
       },
       {
@@ -379,7 +379,7 @@ export const aiAppsPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Ready to modernize procure-to-pay?",
-          description: "Talk to ZSpace about [[/services/ai-automation|procurement automation]] and [[/services/website-development|ERP and portal integration]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|procurement automation]] and [[/services/website-development|ERP and portal integration]].",
         },
       },
       {
@@ -452,7 +452,7 @@ export const aiAppsPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Service desk overwhelmed by routine tickets?",
-          description: "ZSpace builds AI triage, self-service and approved automations around your ITSM platform and identity systems.",
+          description: "ZSpace Labs builds AI triage, self-service and approved automations around your ITSM platform and identity systems.",
         },
       },
       {
@@ -561,7 +561,7 @@ export const aiAppsPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Planning AI for your IT service desk?",
-          description: "Talk to ZSpace about [[/services/ai-automation|IT service automation]] and integrations with your ITSM and identity tools.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|IT service automation]] and integrations with your ITSM and identity tools.",
         },
       },
       {
@@ -652,7 +652,7 @@ export const aiAppsPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Teams still copying data between systems by hand?",
-          description: "ZSpace automates data capture, validation and system updates with exception queues your team can work through quickly.",
+          description: "ZSpace Labs automates data capture, validation and system updates with exception queues your team can work through quickly.",
         },
       },
       {
@@ -755,7 +755,7 @@ export const aiAppsPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Ready to stop manual data entry?",
-          description: "Talk to ZSpace about [[/services/ai-automation|data entry automation]] and [[/services/website-development|system integration]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|data entry automation]] and [[/services/website-development|system integration]].",
         },
       },
       {

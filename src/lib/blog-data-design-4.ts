@@ -141,7 +141,7 @@ export const designPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want a second pair of eyes on your product?",
-          description: "ZSpace runs UX audits that combine expert review, analytics and user testing, and ends with a prioritized list of fixes.",
+          description: "ZSpace Labs runs UX audits that combine expert review, analytics and user testing, and ends with a prioritized list of fixes.",
         },
       },
       {
@@ -254,7 +254,7 @@ export const designPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Need a UX audit that ends in a plan, not a list?",
-          description: "Talk to ZSpace about a [[/services/ui-ux-design|UX audit]], paired with [[/services/cro-audit|conversion analysis]] for commercial journeys.",
+          description: "Talk to ZSpace Labs about a [[/services/ui-ux-design|UX audit]], paired with [[/services/cro-audit|conversion analysis]] for commercial journeys.",
         },
       },
       {
@@ -393,7 +393,7 @@ export const designPosts4: BlogPost[] = [
         },
         cta: {
           title: "Want your product reviewed by experienced evaluators?",
-          description: "ZSpace runs heuristic evaluations as part of UX audits, with findings you can reproduce, rate and fix.",
+          description: "ZSpace Labs runs heuristic evaluations as part of UX audits, with findings you can reproduce, rate and fix.",
         },
       },
       {
@@ -477,7 +477,7 @@ export const designPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want an expert review before your next release?",
-          description: "Talk to ZSpace about a heuristic evaluation as part of [[/services/ui-ux-design|UI/UX design]], or a wider [[/services/cro-audit|conversion audit]].",
+          description: "Talk to ZSpace Labs about a heuristic evaluation as part of [[/services/ui-ux-design|UI/UX design]], or a wider [[/services/cro-audit|conversion audit]].",
         },
       },
       {
@@ -604,7 +604,7 @@ export const designPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Mapping a complex flow before you build it?",
-          description: "ZSpace designs user flows, wireflows and prototypes, then tests them with users before development starts.",
+          description: "ZSpace Labs designs user flows, wireflows and prototypes, then tests them with users before development starts.",
         },
       },
       {
@@ -666,7 +666,7 @@ export const designPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want clearer flows across your product?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|UI/UX design]] that starts with flows and ends in tested, buildable screens.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] that starts with flows and ends in tested, buildable screens.",
         },
       },
       {
@@ -781,7 +781,7 @@ export const designPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Is your product hard to navigate or slow to use?",
-          description: "ZSpace untangles structure and flows together, with card sorting, tree testing and prototype testing.",
+          description: "ZSpace Labs untangles structure and flows together, with card sorting, tree testing and prototype testing.",
         },
       },
       {
@@ -825,7 +825,7 @@ export const designPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Planning a new site or product structure?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|UI/UX design]] that gets the structure and the key flows right before the screens.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] that gets the structure and the key flows right before the screens.",
         },
       },
       {
@@ -948,7 +948,7 @@ export const designPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Is your product's copy causing confusion?",
-          description: "ZSpace reviews and rewrites interface copy as part of UX work, from error messages to onboarding.",
+          description: "ZSpace Labs reviews and rewrites interface copy as part of UX work, from error messages to onboarding.",
         },
       },
       {
@@ -1030,7 +1030,7 @@ export const designPosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want interface copy that helps users finish tasks?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|UI/UX design]] with UX writing built in, and [[/services/cro-audit|conversion reviews]] of key journeys.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] with UX writing built in, and [[/services/cro-audit|conversion reviews]] of key journeys.",
         },
       },
       {

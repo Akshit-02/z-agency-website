@@ -97,7 +97,7 @@ export const commercePosts88: BlogPost[] = [
         ],
         cta: {
           title: "Connecting a new 3PL or replacing a fragile integration?",
-          description: "ZSpace can define the message contract, build the connector and set up exception queues and monitoring for your fulfilment partner.",
+          description: "ZSpace Labs can define the message contract, build the connector and set up exception queues and monitoring for your fulfilment partner.",
         },
       },
       {
@@ -189,7 +189,7 @@ export const commercePosts88: BlogPost[] = [
         ],
         cta: {
           title: "Need a 3PL integration that handles the exceptions?",
-          description: "Talk to ZSpace about [[/services/website-development|fulfilment integration development]], [[/services/shopify-development|Shopify fulfillment service setups]] and [[/services/ai-automation|exception handling automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|fulfilment integration development]], [[/services/shopify-development|Shopify fulfillment service setups]] and [[/services/ai-automation|exception handling automation]].",
         },
       },
       {
@@ -282,7 +282,7 @@ export const commercePosts88: BlogPost[] = [
         ],
         cta: {
           title: "Connecting your storefront to a warehouse system?",
-          description: "ZSpace can design the event contract between your platform, OMS and WMS so statuses, stock and tracking stay consistent.",
+          description: "ZSpace Labs can design the event contract between your platform, OMS and WMS so statuses, stock and tracking stay consistent.",
         },
       },
       {
@@ -364,7 +364,7 @@ export const commercePosts88: BlogPost[] = [
         ],
         cta: {
           title: "Want warehouse data your storefront can trust?",
-          description: "Talk to ZSpace about [[/services/website-development|WMS and OMS integration]], [[/services/ai-automation|reconciliation and exception automation]] and [[/services/shopify-development|Shopify fulfilment workflows]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|WMS and OMS integration]], [[/services/ai-automation|reconciliation and exception automation]] and [[/services/shopify-development|Shopify fulfilment workflows]].",
         },
       },
       {

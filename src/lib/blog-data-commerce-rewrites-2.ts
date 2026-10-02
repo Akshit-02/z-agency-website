@@ -81,7 +81,7 @@ export const commerceRewrites2: BlogPost[] = [
         ],
         cta: {
           title: "Building a D2C brand's store?",
-          description: "ZSpace builds D2C stores that express the brand, convert first-time visitors and are designed for the second order.",
+          description: "ZSpace Labs builds D2C stores that express the brand, convert first-time visitors and are designed for the second order.",
         },
       },
       {
@@ -142,7 +142,7 @@ export const commerceRewrites2: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build a D2C store that scales?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify D2C builds]], [[/services/website-development|custom and headless storefronts]] and [[/services/cro-audit|CRO]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify D2C builds]], [[/services/website-development|custom and headless storefronts]] and [[/services/cro-audit|CRO]].",
         },
       },
       {

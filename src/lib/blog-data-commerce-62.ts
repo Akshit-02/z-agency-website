@@ -113,7 +113,7 @@ export const commercePosts62: BlogPost[] = [
         },
         cta: {
           title: "Sellers dropping out before they list?",
-          description: "ZSpace designs marketplace onboarding flows and seller dashboards that get good sellers live faster.",
+          description: "ZSpace Labs designs marketplace onboarding flows and seller dashboards that get good sellers live faster.",
         },
       },
       {
@@ -211,7 +211,7 @@ export const commercePosts62: BlogPost[] = [
         ],
         cta: {
           title: "Planning seller onboarding for a new marketplace?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|marketplace UX]], [[/services/website-development|marketplace development]] and [[/services/ai-automation|onboarding automation]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|marketplace UX]], [[/services/website-development|marketplace development]] and [[/services/ai-automation|onboarding automation]].",
         },
       },
       {
@@ -320,7 +320,7 @@ export const commercePosts62: BlogPost[] = [
         },
         cta: {
           title: "Marketplace slowing down as sellers grow?",
-          description: "ZSpace designs marketplace architectures with queues, isolation and search pipelines built for growth.",
+          description: "ZSpace Labs designs marketplace architectures with queues, isolation and search pipelines built for growth.",
         },
       },
       {
@@ -406,7 +406,7 @@ export const commercePosts62: BlogPost[] = [
         ],
         cta: {
           title: "Ready to plan for your next thousand sellers?",
-          description: "Talk to ZSpace about [[/services/website-development|marketplace architecture]], [[/services/ai-automation|operations automation]] and [[/services/shopify-development|commerce platform integration]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|marketplace architecture]], [[/services/ai-automation|operations automation]] and [[/services/shopify-development|commerce platform integration]].",
         },
       },
       {
@@ -505,7 +505,7 @@ export const commercePosts62: BlogPost[] = [
         ],
         cta: {
           title: "Customers not coming back when they run out?",
-          description: "ZSpace builds replenishment reminders, reorder flows and subscription options timed to real usage.",
+          description: "ZSpace Labs builds replenishment reminders, reorder flows and subscription options timed to real usage.",
         },
       },
       {
@@ -585,7 +585,7 @@ export const commercePosts62: BlogPost[] = [
         ],
         cta: {
           title: "Ready to time reorders to real usage?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify subscriptions and reorders]], [[/services/ai-automation|replenishment automation]] and [[/services/cro-audit|retention measurement]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify subscriptions and reorders]], [[/services/ai-automation|replenishment automation]] and [[/services/cro-audit|retention measurement]].",
         },
       },
       {
@@ -686,7 +686,7 @@ export const commercePosts62: BlogPost[] = [
         },
         cta: {
           title: "Unsure whether a loyalty programme would pay off?",
-          description: "ZSpace models loyalty economics and designs programmes around the repeat behaviour your store needs.",
+          description: "ZSpace Labs models loyalty economics and designs programmes around the repeat behaviour your store needs.",
         },
       },
       {
@@ -783,7 +783,7 @@ export const commercePosts62: BlogPost[] = [
         ],
         cta: {
           title: "Ready to design a loyalty programme that earns its keep?",
-          description: "Talk to ZSpace about [[/services/shopify-development|loyalty integrations]], [[/services/ui-ux-design|rewards UX]] and [[/services/cro-audit|retention measurement]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|loyalty integrations]], [[/services/ui-ux-design|rewards UX]] and [[/services/cro-audit|retention measurement]].",
         },
       },
       {

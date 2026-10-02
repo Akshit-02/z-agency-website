@@ -127,7 +127,7 @@ export const commercePosts70: BlogPost[] = [
         ],
         cta: {
           title: "Designing an app-like mobile store?",
-          description: "ZSpace can map every PWA state for your store (install, offline, stale content, notifications) and test it on real devices.",
+          description: "ZSpace Labs can map every PWA state for your store (install, offline, stale content, notifications) and test it on real devices.",
         },
       },
       {
@@ -187,7 +187,7 @@ export const commercePosts70: BlogPost[] = [
         ],
         cta: {
           title: "Want a PWA that customers actually install?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|PWA and mobile UX design]], [[/services/website-development|PWA development]] and [[/services/cro-audit|mobile conversion audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|PWA and mobile UX design]], [[/services/website-development|PWA development]] and [[/services/cro-audit|mobile conversion audits]].",
         },
       },
       {
@@ -302,7 +302,7 @@ export const commercePosts70: BlogPost[] = [
         ],
         cta: {
           title: "Is your shopping app slower than it should be?",
-          description: "ZSpace can profile your app's key journeys on real mid-range devices and give you a prioritized list of fixes.",
+          description: "ZSpace Labs can profile your app's key journeys on real mid-range devices and give you a prioritized list of fixes.",
         },
       },
       {
@@ -377,7 +377,7 @@ export const commercePosts70: BlogPost[] = [
         ],
         cta: {
           title: "Want a faster shopping app?",
-          description: "Talk to ZSpace about [[/services/mobile-app-development|ecommerce app development and performance work]], [[/services/website-development|PWA performance]] and [[/services/cro-audit|mobile conversion audits]].",
+          description: "Talk to ZSpace Labs about [[/services/mobile-app-development|ecommerce app development and performance work]], [[/services/website-development|PWA performance]] and [[/services/cro-audit|mobile conversion audits]].",
         },
       },
       {
@@ -483,7 +483,7 @@ export const commercePosts70: BlogPost[] = [
         ],
         cta: {
           title: "Are shoppers getting lost on your mobile store?",
-          description: "ZSpace can tree test your categories and run mobile usability sessions to show where navigation breaks down.",
+          description: "ZSpace Labs can tree test your categories and run mobile usability sessions to show where navigation breaks down.",
         },
       },
       {
@@ -548,7 +548,7 @@ export const commercePosts70: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve mobile product discovery?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|mobile navigation design]], [[/services/cro-audit|mobile CRO audits]] and [[/services/shopify-development|Shopify theme work]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|mobile navigation design]], [[/services/cro-audit|mobile CRO audits]] and [[/services/shopify-development|Shopify theme work]].",
         },
       },
       {
@@ -670,7 +670,7 @@ export const commercePosts70: BlogPost[] = [
         ],
         cta: {
           title: "Losing shoppers between cart and payment on mobile?",
-          description: "ZSpace can audit your mobile checkout field by field, on real devices, and show which fixes are worth doing first.",
+          description: "ZSpace Labs can audit your mobile checkout field by field, on real devices, and show which fixes are worth doing first.",
         },
       },
       {
@@ -752,7 +752,7 @@ export const commercePosts70: BlogPost[] = [
         ],
         cta: {
           title: "Want a mobile checkout that's easier to finish?",
-          description: "Talk to ZSpace about [[/services/cro-audit|checkout CRO audits]], [[/services/ui-ux-design|checkout UX design]] and [[/services/shopify-development|Shopify checkout setup]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|checkout CRO audits]], [[/services/ui-ux-design|checkout UX design]] and [[/services/shopify-development|Shopify checkout setup]].",
         },
       },
       {
@@ -853,7 +853,7 @@ export const commercePosts70: BlogPost[] = [
         ],
         cta: {
           title: "Planning personalization for your shopping app?",
-          description: "ZSpace can help you choose a small set of personalization treatments, wire up the data and measure them honestly against a holdout.",
+          description: "ZSpace Labs can help you choose a small set of personalization treatments, wire up the data and measure them honestly against a holdout.",
         },
       },
       {
@@ -923,7 +923,7 @@ export const commercePosts70: BlogPost[] = [
         ],
         cta: {
           title: "Want personalization customers actually appreciate?",
-          description: "Talk to ZSpace about [[/services/mobile-app-development|shopping app development]], [[/services/ai-automation|AI personalization and recommendations]] and [[/services/ui-ux-design|app UX design]].",
+          description: "Talk to ZSpace Labs about [[/services/mobile-app-development|shopping app development]], [[/services/ai-automation|AI personalization and recommendations]] and [[/services/ui-ux-design|app UX design]].",
         },
       },
       {

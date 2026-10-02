@@ -101,7 +101,7 @@ export const aiCorePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Running agents that need to recover gracefully?",
-          description: "ZSpace builds orchestration with durable state, budgets, retries and human escalation, so failures end in a clear outcome instead of a silent stall.",
+          description: "ZSpace Labs builds orchestration with durable state, budgets, retries and human escalation, so failures end in a clear outcome instead of a silent stall.",
         },
       },
       {
@@ -178,7 +178,7 @@ export const aiCorePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Need agent workflows that survive real-world failures?",
-          description: "Talk to ZSpace about [[/services/ai-automation|agent orchestration and automation]] and [[/services/website-development|durable backends and integrations]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|agent orchestration and automation]] and [[/services/website-development|durable backends and integrations]].",
         },
       },
       {
@@ -276,7 +276,7 @@ export const aiCorePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Considering agentic automation for a messy process?",
-          description: "ZSpace can identify which parts of your workflow need an agent and which should stay deterministic, then build both with proper checks.",
+          description: "ZSpace Labs can identify which parts of your workflow need an agent and which should stay deterministic, then build both with proper checks.",
         },
       },
       {
@@ -357,7 +357,7 @@ export const aiCorePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Ready to automate the exceptions your rules cannot handle?",
-          description: "Talk to ZSpace about [[/services/ai-automation|agentic workflow automation]] and [[/services/website-development|integration with your systems]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|agentic workflow automation]] and [[/services/website-development|integration with your systems]].",
         },
       },
       {
@@ -452,7 +452,7 @@ export const aiCorePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Building review screens your team will actually use?",
-          description: "ZSpace designs approval queues and review interfaces that make checking AI work fast, with evidence and audit trails built in.",
+          description: "ZSpace Labs designs approval queues and review interfaces that make checking AI work fast, with evidence and audit trails built in.",
         },
       },
       {
@@ -538,7 +538,7 @@ export const aiCorePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want automation with the right amount of human control?",
-          description: "Talk to ZSpace about [[/services/ai-automation|human-in-the-loop automation]] and [[/services/ui-ux-design|review and approval interface design]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|human-in-the-loop automation]] and [[/services/ui-ux-design|review and approval interface design]].",
         },
       },
       {
@@ -639,7 +639,7 @@ export const aiCorePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Shipping agent changes without knowing what they break?",
-          description: "ZSpace sets up evaluation datasets, scoring and release gates so every prompt, model or tool change is tested against real cases.",
+          description: "ZSpace Labs sets up evaluation datasets, scoring and release gates so every prompt, model or tool change is tested against real cases.",
         },
       },
       {
@@ -729,7 +729,7 @@ export const aiCorePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want evidence that your agent is ready for production?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI evaluation and agent development]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI evaluation and agent development]].",
         },
       },
       {

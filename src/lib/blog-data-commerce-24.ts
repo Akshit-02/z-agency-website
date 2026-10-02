@@ -69,7 +69,7 @@ export const commercePosts24: BlogPost[] = [
         ],
         cta: {
           title: "Building a beauty brand's store?",
-          description: "ZSpace structures beauty catalogs and builds shade finders, routines and subscriptions on clean data.",
+          description: "ZSpace Labs structures beauty catalogs and builds shade finders, routines and subscriptions on clean data.",
         },
       },
       {
@@ -147,7 +147,7 @@ export const commercePosts24: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build your beauty store?",
-          description: "Talk to ZSpace about [[/services/website-development|beauty ecommerce development]], [[/services/shopify-development|Shopify builds]] and [[/services/ui-ux-design|beauty UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|beauty ecommerce development]], [[/services/shopify-development|Shopify builds]] and [[/services/ui-ux-design|beauty UX]].",
         },
       },
       {
@@ -223,7 +223,7 @@ export const commercePosts24: BlogPost[] = [
         ],
         cta: {
           title: "Want to know where your beauty shoppers hesitate?",
-          description: "ZSpace researches beauty journeys, from concern to replenishment, and redesigns the moments that lose customers.",
+          description: "ZSpace Labs researches beauty journeys, from concern to replenishment, and redesigns the moments that lose customers.",
         },
       },
       {
@@ -304,7 +304,7 @@ export const commercePosts24: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve your beauty store's experience?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|beauty UX]] and [[/services/cro-audit|beauty CRO]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|beauty UX]] and [[/services/cro-audit|beauty CRO]].",
         },
       },
       {
@@ -369,7 +369,7 @@ export const commercePosts24: BlogPost[] = [
         ],
         cta: {
           title: "Building or redesigning a skincare store?",
-          description: "ZSpace designs skincare stores around skin profiles, regimens and transparent ingredients.",
+          description: "ZSpace Labs designs skincare stores around skin profiles, regimens and transparent ingredients.",
         },
       },
       {
@@ -448,7 +448,7 @@ export const commercePosts24: BlogPost[] = [
         ],
         cta: {
           title: "Want a skincare store customers trust?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|skincare UX]], [[/services/shopify-development|Shopify skincare builds]] and [[/services/cro-audit|CRO]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|skincare UX]], [[/services/shopify-development|Shopify skincare builds]] and [[/services/cro-audit|CRO]].",
         },
       },
       {
@@ -513,7 +513,7 @@ export const commercePosts24: BlogPost[] = [
         ],
         cta: {
           title: "Beauty product pages not converting?",
-          description: "ZSpace redesigns beauty PDPs around suitability, shade matching and ingredient clarity.",
+          description: "ZSpace Labs redesigns beauty PDPs around suitability, shade matching and ingredient clarity.",
         },
       },
       {
@@ -592,7 +592,7 @@ export const commercePosts24: BlogPost[] = [
         ],
         cta: {
           title: "Want beauty product pages that answer every question?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|beauty PDP design]] and [[/services/cro-audit|beauty CRO testing]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|beauty PDP design]] and [[/services/cro-audit|beauty CRO testing]].",
         },
       },
       {
@@ -663,7 +663,7 @@ export const commercePosts24: BlogPost[] = [
         ],
         cta: {
           title: "Beauty traffic growing but sales flat?",
-          description: "ZSpace audits beauty funnels from social landing pages to reorder and prioritizes the fixes.",
+          description: "ZSpace Labs audits beauty funnels from social landing pages to reorder and prioritizes the fixes.",
         },
       },
       {
@@ -753,7 +753,7 @@ export const commercePosts24: BlogPost[] = [
         ],
         cta: {
           title: "Ready to grow beauty sales?",
-          description: "Talk to ZSpace about [[/services/cro-audit|beauty CRO]] and [[/services/ui-ux-design|beauty UX]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|beauty CRO]] and [[/services/ui-ux-design|beauty UX]].",
         },
       },
       {

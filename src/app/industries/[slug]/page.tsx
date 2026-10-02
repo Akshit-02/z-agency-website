@@ -32,13 +32,14 @@ export async function generateMetadata({
   const industry = getIndustryBySlug(slug);
   if (!industry || !industry.hasDetailPage) return {};
 
-  const metaDescription = `${industry.shortDescription} ZSpace designs and builds the websites, apps and automation these businesses need.`;
+  const metaDescription = `${industry.shortDescription} ZSpace Labs designs and builds the websites, apps and automation these businesses need.`;
 
   return {
     title: `${industry.name} — Industries`,
     description: metaDescription,
     alternates: { canonical: `/industries/${industry.slug}` },
     openGraph: {
+      siteName: site.name,
       title: `${industry.name} — ${site.name}`,
       description: metaDescription,
       url: `${site.url}/industries/${industry.slug}`,

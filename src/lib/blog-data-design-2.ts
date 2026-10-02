@@ -83,7 +83,7 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Is your product hard to navigate?",
-          description: "ZSpace can research how your users think and restructure your product or site around it.",
+          description: "ZSpace Labs can research how your users think and restructure your product or site around it.",
         },
       },
       {
@@ -125,7 +125,7 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Planning a new site or product structure?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|UX and information architecture]] validated with real users.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|UX and information architecture]] validated with real users.",
         },
       },
       {
@@ -201,7 +201,7 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want to test a flow before you build it?",
-          description: "ZSpace builds prototypes of your key journeys and tests them with real users before development starts.",
+          description: "ZSpace Labs builds prototypes of your key journeys and tests them with real users before development starts.",
         },
       },
       {
@@ -222,7 +222,7 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Need wireframes and prototypes for your product?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|UI/UX design]] from first sketches to tested prototypes.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] from first sketches to tested prototypes.",
         },
       },
       {
@@ -310,7 +310,7 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Does your interface fall apart on smaller screens?",
-          description: "ZSpace designs responsive component systems that hold up on every screen size.",
+          description: "ZSpace Labs designs responsive component systems that hold up on every screen size.",
         },
       },
       {
@@ -338,7 +338,7 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want a responsive design review?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|UI/UX design]] that works across devices.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] that works across devices.",
         },
       },
       {
@@ -425,7 +425,7 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want your designs reviewed for accessibility?",
-          description: "ZSpace reviews interfaces against WCAG and designs accessible components that meet the standard from the start.",
+          description: "ZSpace Labs reviews interfaces against WCAG and designs accessible components that meet the standard from the start.",
         },
       },
       {
@@ -472,7 +472,7 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Building an accessible product from scratch?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|UI/UX design]] with accessibility built into every component.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] with accessibility built into every component.",
         },
       },
       {
@@ -558,7 +558,7 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want an independent UX audit of your product or site?",
-          description: "ZSpace combines heuristic review, analytics and user testing, and delivers findings prioritized by impact and effort.",
+          description: "ZSpace Labs combines heuristic review, analytics and user testing, and delivers findings prioritized by impact and effort.",
         },
       },
       {
@@ -602,7 +602,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "UX Audit vs CRO Audit",
         body: [
-          "A UX audit evaluates usability across the product. A CRO audit focuses on conversion funnels and test opportunities. On commercial sites they overlap and work best together; see ZSpace's [[/blogs/shopify-cro-audit|CRO audit framework]] for the conversion-focused version.",
+          "A UX audit evaluates usability across the product. A CRO audit focuses on conversion funnels and test opportunities. On commercial sites they overlap and work best together; see ZSpace Labs' [[/blogs/shopify-cro-audit|CRO audit framework]] for the conversion-focused version.",
         ],
       },
       {
@@ -617,7 +617,7 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Ready to find out what's holding your product back?",
-          description: "Talk to ZSpace about a [[/services/ui-ux-design|UX audit]] paired with [[/services/cro-audit|conversion analysis]].",
+          description: "Talk to ZSpace Labs about a [[/services/ui-ux-design|UX audit]] paired with [[/services/cro-audit|conversion analysis]].",
         },
       },
       {
@@ -728,7 +728,7 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want your key flows tested with real users?",
-          description: "ZSpace plans, runs and analyzes usability tests, and turns findings into concrete design changes.",
+          description: "ZSpace Labs plans, runs and analyzes usability tests, and turns findings into concrete design changes.",
         },
       },
       {
@@ -817,7 +817,7 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want usability testing built into your process?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|UI/UX design]] with regular testing, not one-off studies.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] with regular testing, not one-off studies.",
         },
       },
       {
@@ -933,7 +933,7 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Tired of designs and builds not matching?",
-          description: "ZSpace runs design and engineering as one team, so handoff is continuous rather than a hand-over.",
+          description: "ZSpace Labs runs design and engineering as one team, so handoff is continuous rather than a hand-over.",
         },
       },
       {
@@ -1020,7 +1020,7 @@ export const designPosts2: BlogPost[] = [
         },
         cta: {
           title: "Want a smoother path from design to production?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|design]] and [[/services/website-development|development]] delivered by one team.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|design]] and [[/services/website-development|development]] delivered by one team.",
         },
       },
       {

@@ -146,7 +146,7 @@ export const shopifyCroPosts2: BlogPost[] = [
         },
         cta: {
           title: "Want a homepage that routes visitors to the right products?",
-          description: "ZSpace redesigns and rebuilds Shopify homepages around your real traffic, with sections your team can keep editing.",
+          description: "ZSpace Labs redesigns and rebuilds Shopify homepages around your real traffic, with sections your team can keep editing.",
         },
       },
       {
@@ -170,11 +170,11 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Is your homepage actually converting the traffic it receives?",
-          description: "ZSpace can audit your homepage against real visitor behavior — exit rate, downstream engagement, and where attention actually goes — not a generic design opinion.",
+          description: "ZSpace Labs can audit your homepage against real visitor behavior — exit rate, downstream engagement, and where attention actually goes — not a generic design opinion.",
         },
       },
       {
-        heading: "The ZSpace Shopify CRO Framework",
+        heading: "The ZSpace Labs Shopify CRO Framework",
         body: [
           "Homepage changes benefit from the same structured, measured approach as any other page in this cluster — especially given how much traffic typically passes through it.",
         ],
@@ -336,7 +336,7 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want Shopify search that finds what shoppers type?",
-          description: "ZSpace configures Search & Discovery, cleans product data and tunes results from your real search terms.",
+          description: "ZSpace Labs configures Search & Discovery, cleans product data and tunes results from your real search terms.",
         },
       },
       {
@@ -364,14 +364,14 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
       },
       {
-        heading: "The ZSpace Shopify CRO Framework",
+        heading: "The ZSpace Labs Shopify CRO Framework",
         body: [
           "Search improvements are measurable and testable like any other CRO change — the same framework applies here.",
         ],
         table: croFrameworkTable,
         cta: {
           title: "Not sure how much revenue your store is losing to failed searches?",
-          description: "ZSpace can audit your Shopify search configuration and zero-result rate, and connect it back to the specific products and content your customers are already telling you they want.",
+          description: "ZSpace Labs can audit your Shopify search configuration and zero-result rate, and connect it back to the specific products and content your customers are already telling you they want.",
         },
       },
       {
@@ -512,11 +512,11 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Are your product recommendations actually helping, or just adding noise?",
-          description: "ZSpace can audit where and how recommendations are shown across your store, and connect them to a real measurable effect on conversion and AOV together.",
+          description: "ZSpace Labs can audit where and how recommendations are shown across your store, and connect them to a real measurable effect on conversion and AOV together.",
         },
       },
       {
-        heading: "The ZSpace Shopify CRO Framework",
+        heading: "The ZSpace Labs Shopify CRO Framework",
         body: [
           "Recommendation strategy benefits from the same measured approach as any other CRO change — a module added on instinct is just as likely to hurt as help without validation.",
         ],
@@ -650,11 +650,11 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want to increase AOV without quietly giving away margin?",
-          description: "ZSpace can help design and price Shopify bundles and volume discounts that are modeled against real product margins, not just a round discount number.",
+          description: "ZSpace Labs can help design and price Shopify bundles and volume discounts that are modeled against real product margins, not just a round discount number.",
         },
       },
       {
-        heading: "The ZSpace Shopify CRO Framework",
+        heading: "The ZSpace Labs Shopify CRO Framework",
         body: [
           "Bundle and pricing decisions deserve the same structured, measured approach as any other CRO change in this cluster.",
         ],
@@ -785,11 +785,11 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Wondering whether personalization would actually help your store?",
-          description: "ZSpace can help identify where you have enough real data to personalize meaningfully, and where a well-designed generic experience is honestly the better choice.",
+          description: "ZSpace Labs can help identify where you have enough real data to personalize meaningfully, and where a well-designed generic experience is honestly the better choice.",
         },
       },
       {
-        heading: "The ZSpace Shopify CRO Framework",
+        heading: "The ZSpace Labs Shopify CRO Framework",
         body: [
           "Personalization decisions should go through the same structured evaluation as any other CRO investment, given the real complexity and data requirements involved.",
         ],
@@ -915,11 +915,11 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Is your exit-intent strategy recovering visitors, or just discounting ones who'd have converted anyway?",
-          description: "ZSpace can help design exit-intent offers matched to actual visitor behavior, and measure whether they're a net win once margin is accounted for.",
+          description: "ZSpace Labs can help design exit-intent offers matched to actual visitor behavior, and measure whether they're a net win once margin is accounted for.",
         },
       },
       {
-        heading: "The ZSpace Shopify CRO Framework",
+        heading: "The ZSpace Labs Shopify CRO Framework",
         body: [
           "Exit-intent strategy benefits from the same structured, measured approach as every other CRO decision in this cluster — particularly given how easy it is to assume an offer is working without a real control comparison.",
         ],
@@ -1064,14 +1064,14 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
       },
       {
-        heading: "The ZSpace Shopify CRO Framework",
+        heading: "The ZSpace Labs Shopify CRO Framework",
         body: [
           "Popup strategy should go through the same measured process as any other CRO decision — it's one of the easier tactics to implement without validation, and one of the easier ones to get quietly wrong as a result.",
         ],
         table: croFrameworkTable,
         cta: {
           title: "Not sure if your popups are helping or quietly hurting conversion?",
-          description: "ZSpace can audit your popup strategy against real visitor behavior — including the mobile-specific and SEO considerations — not just capture rate in isolation.",
+          description: "ZSpace Labs can audit your popup strategy against real visitor behavior — including the mobile-specific and SEO considerations — not just capture rate in isolation.",
         },
       },
       {
@@ -1218,11 +1218,11 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Not sure if your trust signals are placed where they'd actually help?",
-          description: "ZSpace can audit where social proof appears across your store, and where a genuine gap in trust signals is quietly costing conversions.",
+          description: "ZSpace Labs can audit where social proof appears across your store, and where a genuine gap in trust signals is quietly costing conversions.",
         },
       },
       {
-        heading: "The ZSpace Shopify CRO Framework",
+        heading: "The ZSpace Labs Shopify CRO Framework",
         body: [
           "Social proof placement, like every other change in this cluster, benefits from being measured rather than assumed to help.",
         ],
@@ -1360,11 +1360,11 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Selling a considered, higher-priced product on Shopify?",
-          description: "ZSpace can help design a buying journey built for how high-consideration customers actually decide — not a playbook borrowed from impulse-purchase ecommerce.",
+          description: "ZSpace Labs can help design a buying journey built for how high-consideration customers actually decide — not a playbook borrowed from impulse-purchase ecommerce.",
         },
       },
       {
-        heading: "The ZSpace Shopify CRO Framework",
+        heading: "The ZSpace Labs Shopify CRO Framework",
         body: [
           "The measurement and testing discipline still applies to high-ticket CRO, though sample sizes and test durations often need to be longer given lower purchase volume and longer decision cycles.",
         ],
@@ -1394,7 +1394,7 @@ export const shopifyCroPosts2: BlogPost[] = [
     faqs: [
       {
         q: "What is the Shopify DTC CRO Framework?",
-        a: "It's ZSpace's ten-stage approach to conversion optimization built specifically for direct-to-consumer Shopify brands — Measurement, Research, Funnel Diagnosis, Friction Identification, Opportunity Prioritization, Experiment Design, Implementation, Validation, Scaling and Continuous Optimization. It's a practical sequence for running CRO as an ongoing discipline, not a one-time project, and it's a ZSpace framework rather than an industry-wide standard.",
+        a: "It's ZSpace Labs' ten-stage approach to conversion optimization built specifically for direct-to-consumer Shopify brands — Measurement, Research, Funnel Diagnosis, Friction Identification, Opportunity Prioritization, Experiment Design, Implementation, Validation, Scaling and Continuous Optimization. It's a practical sequence for running CRO as an ongoing discipline, not a one-time project, and it's a ZSpace Labs framework rather than an industry-wide standard.",
       },
       {
         q: "How is DTC CRO different from general Shopify CRO?",
@@ -1429,7 +1429,7 @@ export const shopifyCroPosts2: BlogPost[] = [
         a: "Yes — the sequence still applies, but lower-traffic stages (particularly experiment design and validation) should lean more heavily on qualitative methods, since formal A/B testing needs traffic volume many smaller brands don't yet have.",
       },
       {
-        q: "How does this framework relate to the general ZSpace Shopify CRO Framework used elsewhere in this cluster?",
+        q: "How does this framework relate to the general ZSpace Labs Shopify CRO Framework used elsewhere in this cluster?",
         a: "It's the same underlying discipline — measure, diagnose, prioritize, test, validate, iterate — expanded into ten stages specifically for the breadth of what a DTC brand's CRO program needs to cover, from initial measurement through to ongoing scaling.",
       },
     ],
@@ -1437,7 +1437,7 @@ export const shopifyCroPosts2: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "The Shopify DTC CRO Framework is ZSpace's comprehensive, ten-stage approach to conversion optimization for direct-to-consumer brands — Measurement, Research, Funnel Diagnosis, Friction Identification, Opportunity Prioritization, Experiment Design, Implementation, Validation, Scaling and Continuous Optimization. It treats CRO as an ongoing discipline connecting traffic quality, on-site experience, and retention, rather than a one-time redesign. This article is the hub for the full Shopify CRO cluster, connecting homepage, search, product page, cart, checkout, mobile, testing and trust-signal work into one coherent, sequential approach.",
+          "The Shopify DTC CRO Framework is ZSpace Labs' comprehensive, ten-stage approach to conversion optimization for direct-to-consumer brands — Measurement, Research, Funnel Diagnosis, Friction Identification, Opportunity Prioritization, Experiment Design, Implementation, Validation, Scaling and Continuous Optimization. It treats CRO as an ongoing discipline connecting traffic quality, on-site experience, and retention, rather than a one-time redesign. This article is the hub for the full Shopify CRO cluster, connecting homepage, search, product page, cart, checkout, mobile, testing and trust-signal work into one coherent, sequential approach.",
         ],
       },
       {
@@ -1528,7 +1528,7 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want a complete, prioritized Shopify CRO roadmap for your DTC brand?",
-          description: "ZSpace runs full-funnel Shopify CRO audits and builds the ongoing testing program that follows — measurement through implementation, validation and scaling.",
+          description: "ZSpace Labs runs full-funnel Shopify CRO audits and builds the ongoing testing program that follows — measurement through implementation, validation and scaling.",
         },
       },
       {

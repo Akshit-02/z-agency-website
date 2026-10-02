@@ -90,7 +90,7 @@ export const commercePosts64: BlogPost[] = [
         ],
         cta: {
           title: "\"Where is my order?\" filling your support inbox?",
-          description: "ZSpace designs tracking pages and notification flows that answer delivery questions before customers ask.",
+          description: "ZSpace Labs designs tracking pages and notification flows that answer delivery questions before customers ask.",
         },
       },
       {
@@ -183,7 +183,7 @@ export const commercePosts64: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve order tracking?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|tracking page design]], [[/services/shopify-development|Shopify tracking setup]] and [[/services/website-development|carrier integrations]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|tracking page design]], [[/services/shopify-development|Shopify tracking setup]] and [[/services/website-development|carrier integrations]].",
         },
       },
       {
@@ -278,7 +278,7 @@ export const commercePosts64: BlogPost[] = [
         ],
         cta: {
           title: "Losing customers after the first order?",
-          description: "ZSpace maps and redesigns post-purchase journeys from confirmation to reorder.",
+          description: "ZSpace Labs maps and redesigns post-purchase journeys from confirmation to reorder.",
         },
       },
       {
@@ -366,7 +366,7 @@ export const commercePosts64: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve what happens after checkout?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|post-purchase UX]], [[/services/cro-audit|retention audits]] and [[/services/shopify-development|Shopify post-purchase setup]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|post-purchase UX]], [[/services/cro-audit|retention audits]] and [[/services/shopify-development|Shopify post-purchase setup]].",
         },
       },
       {
@@ -449,7 +449,7 @@ export const commercePosts64: BlogPost[] = [
         ],
         cta: {
           title: "Shoppers leaving when shipping costs appear?",
-          description: "ZSpace designs delivery information and checkout options that remove surprises before payment.",
+          description: "ZSpace Labs designs delivery information and checkout options that remove surprises before payment.",
         },
       },
       {
@@ -543,7 +543,7 @@ export const commercePosts64: BlogPost[] = [
         ],
         cta: {
           title: "Ready to make delivery information clear?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|shipping and checkout UX]], [[/services/cro-audit|checkout audits]] and [[/services/shopify-development|Shopify shipping setup]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|shipping and checkout UX]], [[/services/cro-audit|checkout audits]] and [[/services/shopify-development|Shopify shipping setup]].",
         },
       },
       {

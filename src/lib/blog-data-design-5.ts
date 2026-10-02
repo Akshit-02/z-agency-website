@@ -109,7 +109,7 @@ export const designPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Does your interface feel unresponsive or unclear?",
-          description: "ZSpace designs component states, feedback and motion that make products feel fast and predictable.",
+          description: "ZSpace Labs designs component states, feedback and motion that make products feel fast and predictable.",
         },
       },
       {
@@ -178,7 +178,7 @@ export const designPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Want interactions that feel fast and consistent?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|UI/UX design]] and design systems that specify every state, then help [[/services/website-development|build them]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] and design systems that specify every state, then help [[/services/website-development|build them]].",
         },
       },
       {
@@ -286,7 +286,7 @@ export const designPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Is your Figma setup slowing the team down?",
-          description: "ZSpace structures Figma files, libraries and variables so design and development stay in sync.",
+          description: "ZSpace Labs structures Figma files, libraries and variables so design and development stay in sync.",
         },
       },
       {
@@ -353,7 +353,7 @@ export const designPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Want a product design partner fluent in Figma and code?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|product and UI/UX design]] that hands off cleanly to [[/services/website-development|development]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|product and UI/UX design]] that hands off cleanly to [[/services/website-development|development]].",
         },
       },
       {
@@ -478,7 +478,7 @@ export const designPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Building or redesigning a SaaS product?",
-          description: "ZSpace designs SaaS onboarding, dashboards, tables and permissions around how your users actually work.",
+          description: "ZSpace Labs designs SaaS onboarding, dashboards, tables and permissions around how your users actually work.",
         },
       },
       {
@@ -551,7 +551,7 @@ export const designPosts5: BlogPost[] = [
         ],
         cta: {
           title: "Want a SaaS product your users keep coming back to?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|product and UX design]] and [[/services/website-development|web application development]] for SaaS.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|product and UX design]] and [[/services/website-development|web application development]] for SaaS.",
         },
       },
       {

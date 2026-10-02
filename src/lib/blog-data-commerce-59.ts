@@ -102,7 +102,7 @@ export const commercePosts59: BlogPost[] = [
         },
         cta: {
           title: "Considering chat for your store?",
-          description: "ZSpace designs conversational experiences grounded in your catalog and policies, with clear handoff to your team.",
+          description: "ZSpace Labs designs conversational experiences grounded in your catalog and policies, with clear handoff to your team.",
         },
       },
       {
@@ -194,7 +194,7 @@ export const commercePosts59: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build conversational commerce that helps?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI assistants and agent development]], [[/services/website-development|chat and data integration]] and [[/services/ui-ux-design|conversation design]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI assistants and agent development]], [[/services/website-development|chat and data integration]] and [[/services/ui-ux-design|conversation design]].",
         },
       },
       {
@@ -292,7 +292,7 @@ export const commercePosts59: BlogPost[] = [
         ],
         cta: {
           title: "Planning an AI shopping assistant?",
-          description: "ZSpace builds on-site assistants grounded in your catalog, with guardrails, handoff and measurement from day one.",
+          description: "ZSpace Labs builds on-site assistants grounded in your catalog, with guardrails, handoff and measurement from day one.",
         },
       },
       {
@@ -403,7 +403,7 @@ export const commercePosts59: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build a shopping assistant?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI assistant and agent development]], [[/services/website-development|catalog and cart integration]] and [[/services/ui-ux-design|assistant UX]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI assistant and agent development]], [[/services/website-development|catalog and cart integration]] and [[/services/ui-ux-design|assistant UX]].",
         },
       },
       {
@@ -490,7 +490,7 @@ export const commercePosts59: BlogPost[] = [
         ],
         cta: {
           title: "Support queues full of the same questions?",
-          description: "ZSpace builds AI support workflows that answer routine questions safely and route the rest to your team.",
+          description: "ZSpace Labs builds AI support workflows that answer routine questions safely and route the rest to your team.",
         },
       },
       {
@@ -584,7 +584,7 @@ export const commercePosts59: BlogPost[] = [
         ],
         cta: {
           title: "Ready to add AI to your support safely?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI support and agent development]], [[/services/website-development|order system integration]] and [[/services/cro-audit|support and CX analysis]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI support and agent development]], [[/services/website-development|order system integration]] and [[/services/cro-audit|support and CX analysis]].",
         },
       },
       {
@@ -667,7 +667,7 @@ export const commercePosts59: BlogPost[] = [
         ],
         cta: {
           title: "Too many products to merchandise by hand?",
-          description: "ZSpace helps retailers apply ranking, recommendation and forecasting models with merchandisers in control.",
+          description: "ZSpace Labs helps retailers apply ranking, recommendation and forecasting models with merchandisers in control.",
         },
       },
       {
@@ -766,7 +766,7 @@ export const commercePosts59: BlogPost[] = [
         ],
         cta: {
           title: "Ready to bring AI into merchandising?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI merchandising and forecasting]], [[/services/shopify-development|Shopify merchandising setup]] and [[/services/cro-audit|collection performance audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI merchandising and forecasting]], [[/services/shopify-development|Shopify merchandising setup]] and [[/services/cro-audit|collection performance audits]].",
         },
       },
       {
@@ -873,7 +873,7 @@ export const commercePosts59: BlogPost[] = [
         },
         cta: {
           title: "Considering AI agents for your team?",
-          description: "ZSpace designs and builds ecommerce agents with narrow permissions, approvals and logs from the start.",
+          description: "ZSpace Labs designs and builds ecommerce agents with narrow permissions, approvals and logs from the start.",
         },
       },
       {
@@ -975,7 +975,7 @@ export const commercePosts59: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build your first ecommerce agent?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI agent development]], [[/services/shopify-development|Shopify and platform integration]] and [[/services/website-development|tool and data access]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI agent development]], [[/services/shopify-development|Shopify and platform integration]] and [[/services/website-development|tool and data access]].",
         },
       },
       {

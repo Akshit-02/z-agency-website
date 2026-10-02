@@ -97,7 +97,7 @@ export const commercePosts35: BlogPost[] = [
         ],
         cta: {
           title: "Subscription option not getting chosen, or getting chosen by accident?",
-          description: "ZSpace designs subscription product pages that make the recurring choice clear and honest.",
+          description: "ZSpace Labs designs subscription product pages that make the recurring choice clear and honest.",
         },
       },
       {
@@ -171,7 +171,7 @@ export const commercePosts35: BlogPost[] = [
         ],
         cta: {
           title: "Ready to redesign your subscription product pages?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|subscription UX]], [[/services/cro-audit|subscription CRO]] and [[/services/shopify-development|Shopify subscription setup]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|subscription UX]], [[/services/cro-audit|subscription CRO]] and [[/services/shopify-development|Shopify subscription setup]].",
         },
       },
       {
@@ -267,7 +267,7 @@ export const commercePosts35: BlogPost[] = [
         ],
         cta: {
           title: "Subscribers dropping out at checkout?",
-          description: "ZSpace redesigns subscription checkouts to be short, clear about recurring terms and reliable on payments.",
+          description: "ZSpace Labs redesigns subscription checkouts to be short, clear about recurring terms and reliable on payments.",
         },
       },
       {
@@ -340,7 +340,7 @@ export const commercePosts35: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve your subscription checkout?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|checkout UX]], [[/services/cro-audit|checkout conversion audits]] and [[/services/shopify-development|Shopify subscription checkout]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|checkout UX]], [[/services/cro-audit|checkout conversion audits]] and [[/services/shopify-development|Shopify subscription checkout]].",
         },
       },
       {
@@ -436,7 +436,7 @@ export const commercePosts35: BlogPost[] = [
         ],
         cta: {
           title: "Subscribers contacting support to make simple changes?",
-          description: "ZSpace designs subscription portals where customers can make every common change themselves.",
+          description: "ZSpace Labs designs subscription portals where customers can make every common change themselves.",
         },
       },
       {
@@ -524,7 +524,7 @@ export const commercePosts35: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build a better subscription portal?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|portal UX]], [[/services/shopify-development|Shopify subscription apps]] and [[/services/website-development|custom subscription portals]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|portal UX]], [[/services/shopify-development|Shopify subscription apps]] and [[/services/website-development|custom subscription portals]].",
         },
       },
       {

@@ -84,7 +84,7 @@ export const commercePosts15: BlogPost[] = [
         ],
         cta: {
           title: "Not sure what a customer is really worth to you?",
-          description: "ZSpace builds margin-based CLV from your order data and shows which channels and products create lasting value.",
+          description: "ZSpace Labs builds margin-based CLV from your order data and shows which channels and products create lasting value.",
         },
       },
       {
@@ -160,7 +160,7 @@ export const commercePosts15: BlogPost[] = [
         ],
         cta: {
           title: "Want CLV to guide your marketing budget?",
-          description: "Talk to ZSpace about [[/services/cro-audit|retention and CLV analysis]] and [[/services/ai-automation|predictive models and automation]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|retention and CLV analysis]] and [[/services/ai-automation|predictive models and automation]].",
         },
       },
       {
@@ -242,7 +242,7 @@ export const commercePosts15: BlogPost[] = [
         ],
         cta: {
           title: "Is your category order working for you or against you?",
-          description: "ZSpace reviews sorting, pinning and presentation on your key categories and tunes them against real data.",
+          description: "ZSpace Labs reviews sorting, pinning and presentation on your key categories and tunes them against real data.",
         },
       },
       {
@@ -328,7 +328,7 @@ export const commercePosts15: BlogPost[] = [
         ],
         cta: {
           title: "Want merchandising that sells without guesswork?",
-          description: "Talk to ZSpace about [[/services/cro-audit|merchandising and CRO]], [[/services/ui-ux-design|listing design]] and [[/services/shopify-development|Shopify implementation]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|merchandising and CRO]], [[/services/ui-ux-design|listing design]] and [[/services/shopify-development|Shopify implementation]].",
         },
       },
       {
@@ -409,7 +409,7 @@ export const commercePosts15: BlogPost[] = [
         ],
         cta: {
           title: "Want a merchandising plan your team can run?",
-          description: "ZSpace helps brands set assortment roles, calendars and placement plans grounded in sales and stock data.",
+          description: "ZSpace Labs helps brands set assortment roles, calendars and placement plans grounded in sales and stock data.",
         },
       },
       {
@@ -498,7 +498,7 @@ export const commercePosts15: BlogPost[] = [
         ],
         cta: {
           title: "Want your best products to get the attention they deserve?",
-          description: "Talk to ZSpace about [[/services/cro-audit|merchandising strategy and CRO]] and [[/services/ui-ux-design|placement design]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|merchandising strategy and CRO]] and [[/services/ui-ux-design|placement design]].",
         },
       },
       {
@@ -571,7 +571,7 @@ export const commercePosts15: BlogPost[] = [
         ],
         cta: {
           title: "Want bundles that customers actually choose?",
-          description: "ZSpace designs and tests bundle offers and pages around how your customers use your products.",
+          description: "ZSpace Labs designs and tests bundle offers and pages around how your customers use your products.",
         },
       },
       {
@@ -626,7 +626,7 @@ export const commercePosts15: BlogPost[] = [
         ],
         cta: {
           title: "Want to raise order value without adding friction?",
-          description: "Talk to ZSpace about [[/services/cro-audit|offer testing]], [[/services/ui-ux-design|bundle UX]] and [[/services/shopify-development|Shopify bundle setup]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|offer testing]], [[/services/ui-ux-design|bundle UX]] and [[/services/shopify-development|Shopify bundle setup]].",
         },
       },
       {

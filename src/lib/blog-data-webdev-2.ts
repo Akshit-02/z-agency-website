@@ -78,7 +78,7 @@ export const webDevPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Evaluating development companies for an upcoming project?",
-          description: "ZSpace can walk you through our process, technology approach and what's included at each stage before you commit to anything.",
+          description: "ZSpace Labs can walk you through our process, technology approach and what's included at each stage before you commit to anything.",
         },
       },
       {
@@ -214,7 +214,7 @@ export const webDevPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Need help defining requirements before you approach vendors?",
-          description: "ZSpace can help translate business goals into a clear, technically grounded requirements document before development starts.",
+          description: "ZSpace Labs can help translate business goals into a clear, technically grounded requirements document before development starts.",
         },
       },
       {
@@ -351,7 +351,7 @@ export const webDevPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Need help thinking through the planning phase for your project?",
-          description: "ZSpace can help translate business goals into a concrete sitemap, technology direction and project plan before development starts.",
+          description: "ZSpace Labs can help translate business goals into a concrete sitemap, technology direction and project plan before development starts.",
         },
       },
       {
@@ -503,7 +503,7 @@ export const webDevPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Not sure which category your website actually falls into?",
-          description: "ZSpace can assess your current site and give you an honest read on whether you need a redesign, a rebuild, or targeted improvements.",
+          description: "ZSpace Labs can assess your current site and give you an honest read on whether you need a redesign, a rebuild, or targeted improvements.",
         },
       },
       {
@@ -605,7 +605,7 @@ export const webDevPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Seeing some of these symptoms but not sure how serious they are?",
-          description: "ZSpace can assess your current site against these specific signals and give you an honest read on what's actually needed.",
+          description: "ZSpace Labs can assess your current site against these specific signals and give you an honest read on what's actually needed.",
         },
       },
       {
@@ -732,7 +732,7 @@ export const webDevPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Considering Next.js for an upcoming project?",
-          description: "ZSpace builds on Next.js and React as a primary stack — happy to talk through whether it's genuinely the right fit for your specific requirements.",
+          description: "ZSpace Labs builds on Next.js and React as a primary stack — happy to talk through whether it's genuinely the right fit for your specific requirements.",
         },
       },
       {
@@ -851,7 +851,7 @@ export const webDevPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Deciding between React and a framework like Next.js for your project?",
-          description: "ZSpace builds on Next.js and React as a primary stack, and can walk through whether the added structure genuinely benefits your specific project.",
+          description: "ZSpace Labs builds on Next.js and React as a primary stack, and can walk through whether the added structure genuinely benefits your specific project.",
         },
       },
       {

@@ -91,7 +91,7 @@ export const commercePosts38: BlogPost[] = [
         ],
         cta: {
           title: "Prices changing between product page and checkout?",
-          description: "ZSpace sets up multi-currency pricing, rounding and checkout so international customers see one consistent price.",
+          description: "ZSpace Labs sets up multi-currency pricing, rounding and checkout so international customers see one consistent price.",
         },
       },
       {
@@ -156,7 +156,7 @@ export const commercePosts38: BlogPost[] = [
         ],
         cta: {
           title: "Ready to set up global pricing?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify Markets and multi-currency]], [[/services/website-development|multi-currency storefronts]] and [[/services/ui-ux-design|pricing UX]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify Markets and multi-currency]], [[/services/website-development|multi-currency storefronts]] and [[/services/ui-ux-design|pricing UX]].",
         },
       },
       {
@@ -256,7 +256,7 @@ export const commercePosts38: BlogPost[] = [
         ],
         cta: {
           title: "Launching your store in more languages?",
-          description: "ZSpace builds multi-language storefronts with clean URL structures, hreflang and translation workflows that scale.",
+          description: "ZSpace Labs builds multi-language storefronts with clean URL structures, hreflang and translation workflows that scale.",
         },
       },
       {
@@ -317,7 +317,7 @@ export const commercePosts38: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build a multi-language store?",
-          description: "Talk to ZSpace about [[/services/website-development|multi-language development]], [[/services/shopify-development|Shopify languages and markets]] and [[/services/ui-ux-design|localized UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|multi-language development]], [[/services/shopify-development|Shopify languages and markets]] and [[/services/ui-ux-design|localized UX]].",
         },
       },
       {
@@ -407,7 +407,7 @@ export const commercePosts38: BlogPost[] = [
         ],
         cta: {
           title: "International versions not ranking where they should?",
-          description: "ZSpace audits international store structures, hreflang and localization for search visibility in each market.",
+          description: "ZSpace Labs audits international store structures, hreflang and localization for search visibility in each market.",
         },
       },
       {
@@ -474,7 +474,7 @@ export const commercePosts38: BlogPost[] = [
         ],
         cta: {
           title: "Ready to structure your store for global search?",
-          description: "Talk to ZSpace about [[/services/website-development|international SEO architecture]] and [[/services/shopify-development|Shopify Markets SEO]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|international SEO architecture]] and [[/services/shopify-development|Shopify Markets SEO]].",
         },
       },
       {

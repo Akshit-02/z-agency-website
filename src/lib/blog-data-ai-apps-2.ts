@@ -87,7 +87,7 @@ export const aiAppsPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want test suites that keep pace with AI-generated code?",
-          description: "ZSpace helps teams build testing strategies where AI drafts tests and engineers keep control of what correct means.",
+          description: "ZSpace Labs helps teams build testing strategies where AI drafts tests and engineers keep control of what correct means.",
         },
       },
       {
@@ -187,7 +187,7 @@ export const aiAppsPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Planning to automate more of your testing?",
-          description: "Talk to ZSpace about [[/services/website-development|test automation for web products]] and [[/services/mobile-app-development|mobile app QA]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|test automation for web products]] and [[/services/mobile-app-development|mobile app QA]].",
         },
       },
       {
@@ -267,7 +267,7 @@ export const aiAppsPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Spending too long chasing production bugs?",
-          description: "ZSpace can improve your logging, tracing and AI-assisted triage so issues are found and fixed faster.",
+          description: "ZSpace Labs can improve your logging, tracing and AI-assisted triage so issues are found and fixed faster.",
         },
       },
       {
@@ -357,7 +357,7 @@ export const aiAppsPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want faster, safer debugging across your systems?",
-          description: "Talk to ZSpace about [[/services/website-development|observability and engineering practices]] and [[/services/mobile-app-development|mobile app stability]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|observability and engineering practices]] and [[/services/mobile-app-development|mobile app stability]].",
         },
       },
       {
@@ -440,7 +440,7 @@ export const aiAppsPosts2: BlogPost[] = [
         },
         cta: {
           title: "Want stronger tests without slowing delivery?",
-          description: "ZSpace can set up AI-assisted test generation with strength checks and review practices in your CI.",
+          description: "ZSpace Labs can set up AI-assisted test generation with strength checks and review practices in your CI.",
         },
       },
       {
@@ -539,7 +539,7 @@ export const aiAppsPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Planning to raise test quality with AI?",
-          description: "Talk to ZSpace about [[/services/website-development|test automation and engineering quality]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|test automation and engineering quality]].",
         },
       },
       {
@@ -621,7 +621,7 @@ export const aiAppsPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Documentation that nobody trusts?",
-          description: "ZSpace can set up docs-as-code workflows with AI-assisted drafting and drift checks for your repositories.",
+          description: "ZSpace Labs can set up docs-as-code workflows with AI-assisted drafting and drift checks for your repositories.",
         },
       },
       {
@@ -717,7 +717,7 @@ export const aiAppsPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want documentation your team and AI tools can rely on?",
-          description: "Talk to ZSpace about [[/services/website-development|engineering documentation practices]] and [[/services/ai-automation|internal AI assistants over your docs]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|engineering documentation practices]] and [[/services/ai-automation|internal AI assistants over your docs]].",
         },
       },
       {

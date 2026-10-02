@@ -121,7 +121,7 @@ export const designPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Are your product galleries answering shoppers' questions?",
-          description: "ZSpace designs product galleries, image guidelines and fast-loading media for ecommerce stores.",
+          description: "ZSpace Labs designs product galleries, image guidelines and fast-loading media for ecommerce stores.",
         },
       },
       {
@@ -176,7 +176,7 @@ export const designPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want your product pages to show products properly?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|ecommerce UX design]] and [[/services/shopify-development|Shopify development]] for galleries that load fast and sell honestly.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|ecommerce UX design]] and [[/services/shopify-development|Shopify development]] for galleries that load fast and sell honestly.",
         },
       },
       {
@@ -271,7 +271,7 @@ export const designPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Are your reviews helping shoppers decide?",
-          description: "ZSpace designs review modules, Q&A and submission flows that make genuine customer feedback easy to use.",
+          description: "ZSpace Labs designs review modules, Q&A and submission flows that make genuine customer feedback easy to use.",
         },
       },
       {
@@ -343,7 +343,7 @@ export const designPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want reviews that build real confidence?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|ecommerce UX]] and [[/services/shopify-development|Shopify development]] for review experiences shoppers trust.",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|ecommerce UX]] and [[/services/shopify-development|Shopify development]] for review experiences shoppers trust.",
         },
       },
       {
@@ -452,7 +452,7 @@ export const designPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Are shoppers adding to cart but not checking out?",
-          description: "ZSpace reviews cart design, cost transparency and the path to checkout, and designs the fixes.",
+          description: "ZSpace Labs reviews cart design, cost transparency and the path to checkout, and designs the fixes.",
         },
       },
       {
@@ -512,7 +512,7 @@ export const designPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want a cart that moves shoppers forward?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|ecommerce UX design]], [[/services/shopify-development|Shopify development]] and [[/services/cro-audit|cart and checkout audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|ecommerce UX design]], [[/services/shopify-development|Shopify development]] and [[/services/cro-audit|cart and checkout audits]].",
         },
       },
       {
@@ -547,7 +547,7 @@ export const designPosts7: BlogPost[] = [
       { q: "What should a checkout confirmation page include?", a: "The order number, a summary of items and costs, delivery address and expected date, confirmation that an email was sent, what happens next, how to get help and an optional way to create an account." },
       { q: "How should checkout errors be handled?", a: "Show errors next to the field in plain language, explain how to fix them, keep everything the shopper entered and, after a failed submit, summarize errors at the top with links to each field." },
       { q: "What is a typical cart abandonment rate?", a: "Baymard's compilation of 50 studies puts the documented average online cart abandonment rate at around 70%. Many of those shoppers were only browsing, so not all abandonment is a checkout design problem." },
-      { q: "Can I change the design of Shopify's checkout?", a: "Only within the limits Shopify allows, which differ by plan. See ZSpace's Shopify checkout optimization guide for what can and can't be customized." },
+      { q: "Can I change the design of Shopify's checkout?", a: "Only within the limits Shopify allows, which differ by plan. See ZSpace Labs' Shopify checkout optimization guide for what can and can't be customized." },
     ],
     content: [
       {
@@ -631,7 +631,7 @@ export const designPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Losing shoppers at checkout?",
-          description: "ZSpace audits checkout flows field by field and designs the fixes, on Shopify and custom platforms.",
+          description: "ZSpace Labs audits checkout flows field by field and designs the fixes, on Shopify and custom platforms.",
         },
       },
       {
@@ -729,7 +729,7 @@ export const designPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want a faster, clearer checkout?",
-          description: "Talk to ZSpace about [[/services/cro-audit|checkout audits]] and [[/services/shopify-development|Shopify development]] that remove friction where it costs most.",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|checkout audits]] and [[/services/shopify-development|Shopify development]] that remove friction where it costs most.",
         },
       },
       {
@@ -824,7 +824,7 @@ export const designPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Is your store built for mobile shoppers?",
-          description: "ZSpace designs mobile-first shopping journeys and tests them on real devices before launch.",
+          description: "ZSpace Labs designs mobile-first shopping journeys and tests them on real devices before launch.",
         },
       },
       {
@@ -918,7 +918,7 @@ export const designPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want a mobile store shoppers can use one-handed?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|mobile ecommerce UX]], [[/services/shopify-development|Shopify development]] and [[/services/cro-audit|mobile conversion audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|mobile ecommerce UX]], [[/services/shopify-development|Shopify development]] and [[/services/cro-audit|mobile conversion audits]].",
         },
       },
       {

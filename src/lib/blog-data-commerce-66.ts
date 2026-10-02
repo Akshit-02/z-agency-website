@@ -92,7 +92,7 @@ export const commercePosts66: BlogPost[] = [
         ],
         cta: {
           title: "Deciding between one global store and several?",
-          description: "ZSpace helps brands choose and build multi-region ecommerce structures that fit their markets and teams.",
+          description: "ZSpace Labs helps brands choose and build multi-region ecommerce structures that fit their markets and teams.",
         },
       },
       {
@@ -181,7 +181,7 @@ export const commercePosts66: BlogPost[] = [
         ],
         cta: {
           title: "Ready to plan your multi-region store?",
-          description: "Talk to ZSpace about [[/services/website-development|international architecture]], [[/services/shopify-development|Shopify Markets and expansion stores]] and [[/services/ui-ux-design|regional UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|international architecture]], [[/services/shopify-development|Shopify Markets and expansion stores]] and [[/services/ui-ux-design|regional UX]].",
         },
       },
       {
@@ -275,7 +275,7 @@ export const commercePosts66: BlogPost[] = [
         },
         cta: {
           title: "Payments limiting international growth?",
-          description: "ZSpace integrates payment methods, currencies and providers across markets with clean reconciliation.",
+          description: "ZSpace Labs integrates payment methods, currencies and providers across markets with clean reconciliation.",
         },
       },
       {
@@ -366,7 +366,7 @@ export const commercePosts66: BlogPost[] = [
         ],
         cta: {
           title: "Ready to accept payments the way each market prefers?",
-          description: "Talk to ZSpace about [[/services/website-development|payment integrations]], [[/services/shopify-development|Shopify Payments and Markets]] and [[/services/cro-audit|checkout performance audits]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|payment integrations]], [[/services/shopify-development|Shopify Payments and Markets]] and [[/services/cro-audit|checkout performance audits]].",
         },
       },
       {
@@ -450,7 +450,7 @@ export const commercePosts66: BlogPost[] = [
         },
         cta: {
           title: "International parcels refused or returned?",
-          description: "ZSpace builds landed cost, customs data and cross-border shipping flows so customers aren't surprised on delivery.",
+          description: "ZSpace Labs builds landed cost, customs data and cross-border shipping flows so customers aren't surprised on delivery.",
         },
       },
       {
@@ -552,7 +552,7 @@ export const commercePosts66: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve delivery for international customers?",
-          description: "Talk to ZSpace about [[/services/website-development|cross-border shipping integrations]], [[/services/shopify-development|Shopify Markets shipping and duties]] and [[/services/ui-ux-design|international checkout UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|cross-border shipping integrations]], [[/services/shopify-development|Shopify Markets shipping and duties]] and [[/services/ui-ux-design|international checkout UX]].",
         },
       },
       {
@@ -636,7 +636,7 @@ export const commercePosts66: BlogPost[] = [
         ],
         cta: {
           title: "A market converting far below the others?",
-          description: "ZSpace researches and redesigns market-specific experiences based on evidence, not assumptions.",
+          description: "ZSpace Labs researches and redesigns market-specific experiences based on evidence, not assumptions.",
         },
       },
       {
@@ -734,7 +734,7 @@ export const commercePosts66: BlogPost[] = [
         ],
         cta: {
           title: "Ready to design for customers in every market?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|global UX design]], [[/services/cro-audit|market-by-market conversion audits]] and [[/services/website-development|localization-ready builds]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|global UX design]], [[/services/cro-audit|market-by-market conversion audits]] and [[/services/website-development|localization-ready builds]].",
         },
       },
       {

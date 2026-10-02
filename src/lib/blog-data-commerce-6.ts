@@ -110,7 +110,7 @@ export const commercePosts6: BlogPost[] = [
         },
         cta: {
           title: "Losing fashion shoppers at the size selector?",
-          description: "ZSpace redesigns fashion product and category pages around fit, stock and imagery, based on how your shoppers browse.",
+          description: "ZSpace Labs redesigns fashion product and category pages around fit, stock and imagery, based on how your shoppers browse.",
         },
       },
       {
@@ -186,7 +186,7 @@ export const commercePosts6: BlogPost[] = [
         ],
         cta: {
           title: "Planning a fashion store redesign?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|fashion ecommerce UX]], [[/services/shopify-development|Shopify builds]] and a [[/services/cro-audit|conversion audit]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|fashion ecommerce UX]], [[/services/shopify-development|Shopify builds]] and a [[/services/cro-audit|conversion audit]].",
         },
       },
       {
@@ -302,7 +302,7 @@ export const commercePosts6: BlogPost[] = [
         ],
         cta: {
           title: "Building or rebuilding a fashion store on Shopify?",
-          description: "ZSpace models fashion catalogs, themes and apps so fit, stock and imagery work together from collection page to checkout.",
+          description: "ZSpace Labs models fashion catalogs, themes and apps so fit, stock and imagery work together from collection page to checkout.",
         },
       },
       {
@@ -364,7 +364,7 @@ export const commercePosts6: BlogPost[] = [
         ],
         cta: {
           title: "Want a Shopify fashion store that sells?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify development]], [[/services/ui-ux-design|fashion UX]] and [[/services/cro-audit|CRO]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify development]], [[/services/ui-ux-design|fashion UX]] and [[/services/cro-audit|CRO]].",
         },
       },
       {
@@ -471,7 +471,7 @@ export const commercePosts6: BlogPost[] = [
         },
         cta: {
           title: "Beauty shoppers researching but not buying?",
-          description: "ZSpace designs beauty product pages and discovery around concerns, shades and ingredients, based on real shopper questions.",
+          description: "ZSpace Labs designs beauty product pages and discovery around concerns, shades and ingredients, based on real shopper questions.",
         },
       },
       {
@@ -547,7 +547,7 @@ export const commercePosts6: BlogPost[] = [
         ],
         cta: {
           title: "Planning a beauty store build or redesign?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|beauty ecommerce UX]], [[/services/shopify-development|Shopify development]] and [[/services/cro-audit|conversion audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|beauty ecommerce UX]], [[/services/shopify-development|Shopify development]] and [[/services/cro-audit|conversion audits]].",
         },
       },
       {
@@ -640,7 +640,7 @@ export const commercePosts6: BlogPost[] = [
         ],
         cta: {
           title: "Building a beauty brand on Shopify?",
-          description: "ZSpace structures beauty catalogs, filters and product templates so shoppers can find what suits them.",
+          description: "ZSpace Labs structures beauty catalogs, filters and product templates so shoppers can find what suits them.",
         },
       },
       {
@@ -701,7 +701,7 @@ export const commercePosts6: BlogPost[] = [
         ],
         cta: {
           title: "Want a Shopify beauty store built around your customers?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify development]], [[/services/ui-ux-design|beauty UX]] and [[/services/cro-audit|CRO]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify development]], [[/services/ui-ux-design|beauty UX]] and [[/services/cro-audit|CRO]].",
         },
       },
       {
@@ -801,7 +801,7 @@ export const commercePosts6: BlogPost[] = [
         ],
         cta: {
           title: "Shoppers browsing your jewelry but not buying?",
-          description: "ZSpace designs jewelry product pages and journeys around trust, detail and gifting, based on how your customers decide.",
+          description: "ZSpace Labs designs jewelry product pages and journeys around trust, detail and gifting, based on how your customers decide.",
         },
       },
       {
@@ -876,7 +876,7 @@ export const commercePosts6: BlogPost[] = [
         ],
         cta: {
           title: "Planning a jewelry store build or redesign?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|luxury ecommerce UX]], [[/services/shopify-development|Shopify development]] and [[/services/cro-audit|CRO]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|luxury ecommerce UX]], [[/services/shopify-development|Shopify development]] and [[/services/cro-audit|CRO]].",
         },
       },
       {

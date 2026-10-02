@@ -82,7 +82,7 @@ export const commercePosts52: BlogPost[] = [
         ],
         cta: {
           title: "Sports searches returning the wrong products?",
-          description: "ZSpace tunes sports search for vocabulary, models, sizes and seasons using your query logs.",
+          description: "ZSpace Labs tunes sports search for vocabulary, models, sizes and seasons using your query logs.",
         },
       },
       {
@@ -157,7 +157,7 @@ export const commercePosts52: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve sports search?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|search UX]], [[/services/website-development|search implementation]] and [[/services/cro-audit|search audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|search UX]], [[/services/website-development|search implementation]] and [[/services/cro-audit|search audits]].",
         },
       },
       {
@@ -229,7 +229,7 @@ export const commercePosts52: BlogPost[] = [
         ],
         cta: {
           title: "Sports shoppers hesitating over fit and suitability?",
-          description: "ZSpace audits sports journeys and prioritizes the fit and suitability fixes that increase kept orders.",
+          description: "ZSpace Labs audits sports journeys and prioritizes the fit and suitability fixes that increase kept orders.",
         },
       },
       {
@@ -315,7 +315,7 @@ export const commercePosts52: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve sports conversion?",
-          description: "Talk to ZSpace about [[/services/cro-audit|sports CRO]] and [[/services/ui-ux-design|sports UX]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|sports CRO]] and [[/services/ui-ux-design|sports UX]].",
         },
       },
       {
@@ -395,7 +395,7 @@ export const commercePosts52: BlogPost[] = [
         ],
         cta: {
           title: "Building a fitness store with equipment, apparel and programs?",
-          description: "ZSpace builds fitness ecommerce that handles bulky equipment, apparel sizing and recurring programs in one store.",
+          description: "ZSpace Labs builds fitness ecommerce that handles bulky equipment, apparel sizing and recurring programs in one store.",
         },
       },
       {
@@ -486,7 +486,7 @@ export const commercePosts52: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build your fitness store?",
-          description: "Talk to ZSpace about [[/services/website-development|fitness ecommerce development]], [[/services/shopify-development|Shopify fitness stores]] and [[/services/ui-ux-design|fitness UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|fitness ecommerce development]], [[/services/shopify-development|Shopify fitness stores]] and [[/services/ui-ux-design|fitness UX]].",
         },
       },
       {
@@ -558,7 +558,7 @@ export const commercePosts52: BlogPost[] = [
         ],
         cta: {
           title: "Launching or rebuilding a sports store on Shopify?",
-          description: "ZSpace builds Shopify sports stores with sport-led catalogs, filters and store integrations.",
+          description: "ZSpace Labs builds Shopify sports stores with sport-led catalogs, filters and store integrations.",
         },
       },
       {
@@ -638,7 +638,7 @@ export const commercePosts52: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build your Shopify sports store?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify sports builds]], [[/services/ui-ux-design|sports UX]] and [[/services/cro-audit|conversion audits]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify sports builds]], [[/services/ui-ux-design|sports UX]] and [[/services/cro-audit|conversion audits]].",
         },
       },
       {
@@ -710,7 +710,7 @@ export const commercePosts52: BlogPost[] = [
         ],
         cta: {
           title: "Planning a sports store redesign?",
-          description: "ZSpace redesigns sporting goods stores around sports, fit and specs, phased and measured.",
+          description: "ZSpace Labs redesigns sporting goods stores around sports, fit and specs, phased and measured.",
         },
       },
       {
@@ -788,7 +788,7 @@ export const commercePosts52: BlogPost[] = [
         ],
         cta: {
           title: "Ready to modernize your sporting goods store?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|sports UX redesign]], [[/services/website-development|sports store development]] and [[/services/cro-audit|conversion audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|sports UX redesign]], [[/services/website-development|sports store development]] and [[/services/cro-audit|conversion audits]].",
         },
       },
       {

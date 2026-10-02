@@ -118,7 +118,7 @@ export const commercePosts77: BlogPost[] = [
         ],
         cta: {
           title: "Planning to sell through social platforms?",
-          description: "ZSpace can audit your product feed, set up platform integrations and design the order and tracking flow behind each channel.",
+          description: "ZSpace Labs can audit your product feed, set up platform integrations and design the order and tracking flow behind each channel.",
         },
       },
       {
@@ -189,7 +189,7 @@ export const commercePosts77: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build social commerce on solid foundations?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify social sales channels]], [[/services/website-development|catalog and order integrations]] and [[/services/cro-audit|social landing page optimization]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify social sales channels]], [[/services/website-development|catalog and order integrations]] and [[/services/cro-audit|social landing page optimization]].",
         },
       },
       {
@@ -274,7 +274,7 @@ export const commercePosts77: BlogPost[] = [
         ],
         cta: {
           title: "Losing social shoppers between the post and checkout?",
-          description: "ZSpace can test your social journeys inside each platform's in-app browser and show where shoppers drop off.",
+          description: "ZSpace Labs can test your social journeys inside each platform's in-app browser and show where shoppers drop off.",
         },
       },
       {
@@ -338,7 +338,7 @@ export const commercePosts77: BlogPost[] = [
         ],
         cta: {
           title: "Ready to design better social shopping journeys?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|social commerce UX]], [[/services/cro-audit|social traffic conversion audits]] and [[/services/shopify-development|Shopify social channels]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|social commerce UX]], [[/services/cro-audit|social traffic conversion audits]] and [[/services/shopify-development|Shopify social channels]].",
         },
       },
       {
@@ -424,7 +424,7 @@ export const commercePosts77: BlogPost[] = [
         ],
         cta: {
           title: "Want content your shoppers can buy from?",
-          description: "ZSpace can connect your CMS to live product data and design shoppable templates that stay fast and accurate.",
+          description: "ZSpace Labs can connect your CMS to live product data and design shoppable templates that stay fast and accurate.",
         },
       },
       {
@@ -481,7 +481,7 @@ export const commercePosts77: BlogPost[] = [
         ],
         cta: {
           title: "Ready to make your content shoppable?",
-          description: "Talk to ZSpace about [[/services/website-development|headless CMS and commerce integration]], [[/services/shopify-development|Shopify content and metaobjects]] and [[/services/ui-ux-design|editorial commerce design]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|headless CMS and commerce integration]], [[/services/shopify-development|Shopify content and metaobjects]] and [[/services/ui-ux-design|editorial commerce design]].",
         },
       },
       {
@@ -572,7 +572,7 @@ export const commercePosts77: BlogPost[] = [
         ],
         cta: {
           title: "Thinking about adding shoppable video to your store?",
-          description: "ZSpace can design a fast, accessible video and product card experience and connect it to your catalog and cart.",
+          description: "ZSpace Labs can design a fast, accessible video and product card experience and connect it to your catalog and cart.",
         },
       },
       {
@@ -629,7 +629,7 @@ export const commercePosts77: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build shoppable video that stays fast?",
-          description: "Talk to ZSpace about [[/services/website-development|video commerce development]], [[/services/ui-ux-design|video shopping UX]] and [[/services/shopify-development|Shopify integrations]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|video commerce development]], [[/services/ui-ux-design|video shopping UX]] and [[/services/shopify-development|Shopify integrations]].",
         },
       },
       {
@@ -702,7 +702,7 @@ export const commercePosts77: BlogPost[] = [
         ],
         cta: {
           title: "Planning a creator programme that you can measure?",
-          description: "ZSpace can build creator storefronts, tracking and commission flows on your existing commerce stack.",
+          description: "ZSpace Labs can build creator storefronts, tracking and commission flows on your existing commerce stack.",
         },
       },
       {
@@ -768,7 +768,7 @@ export const commercePosts77: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build creator commerce properly?",
-          description: "Talk to ZSpace about [[/services/shopify-development|creator storefronts on Shopify]], [[/services/website-development|attribution and tracking]] and [[/services/ai-automation|commission and payout automation]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|creator storefronts on Shopify]], [[/services/website-development|attribution and tracking]] and [[/services/ai-automation|commission and payout automation]].",
         },
       },
       {

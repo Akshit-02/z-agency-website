@@ -98,7 +98,7 @@ export const mobilePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Designing sign-in for a new app?",
-          description: "ZSpace plans authentication across UX, app and backend, so login is both easy to complete and safe to run.",
+          description: "ZSpace Labs plans authentication across UX, app and backend, so login is both easy to complete and safe to run.",
         },
       },
       {
@@ -157,7 +157,7 @@ export const mobilePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want your authentication flow reviewed?",
-          description: "Talk to ZSpace about a review of your sign-in UX, token handling and backend checks.",
+          description: "Talk to ZSpace Labs about a review of your sign-in UX, token handling and backend checks.",
         },
       },
       {
@@ -262,7 +262,7 @@ export const mobilePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Building an app that handles sensitive data?",
-          description: "ZSpace designs mobile apps with security in the architecture, from token storage to API authorization.",
+          description: "ZSpace Labs designs mobile apps with security in the architecture, from token storage to API authorization.",
         },
       },
       {
@@ -338,7 +338,7 @@ export const mobilePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want a security review of your app?",
-          description: "Talk to ZSpace about assessing your app and API against MASVS and prioritizing fixes.",
+          description: "Talk to ZSpace Labs about assessing your app and API against MASVS and prioritizing fixes.",
         },
       },
       {
@@ -435,7 +435,7 @@ export const mobilePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Building privacy into a new app?",
-          description: "ZSpace designs data flows, permissions and consent UX with privacy considered from the start, alongside your legal advisers.",
+          description: "ZSpace Labs designs data flows, permissions and consent UX with privacy considered from the start, alongside your legal advisers.",
         },
       },
       {
@@ -494,7 +494,7 @@ export const mobilePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want an app privacy review?",
-          description: "Talk to ZSpace about auditing your app's data flows, SDKs and store declarations.",
+          description: "Talk to ZSpace Labs about auditing your app's data flows, SDKs and store declarations.",
         },
       },
       {
@@ -584,7 +584,7 @@ export const mobilePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Planning notifications for your app?",
-          description: "ZSpace designs and builds notification systems end to end: permission UX, backend sending, deep links and analytics.",
+          description: "ZSpace Labs designs and builds notification systems end to end: permission UX, backend sending, deep links and analytics.",
         },
       },
       {
@@ -631,7 +631,7 @@ export const mobilePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want your notification strategy reviewed?",
-          description: "Talk to ZSpace about notifications users keep enabled, with the analytics to prove they're working.",
+          description: "Talk to ZSpace Labs about notifications users keep enabled, with the analytics to prove they're working.",
         },
       },
       {
@@ -721,7 +721,7 @@ export const mobilePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Building an app for unreliable connectivity?",
-          description: "ZSpace designs offline-first data models and sync so field teams keep working when the network doesn't.",
+          description: "ZSpace Labs designs offline-first data models and sync so field teams keep working when the network doesn't.",
         },
       },
       {
@@ -788,7 +788,7 @@ export const mobilePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Not sure whether your app needs offline-first?",
-          description: "Talk to ZSpace about your users' connectivity and workflows before committing to the added complexity.",
+          description: "Talk to ZSpace Labs about your users' connectivity and workflows before committing to the added complexity.",
         },
       },
       {

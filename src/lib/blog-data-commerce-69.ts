@@ -147,7 +147,7 @@ export const commercePosts69: BlogPost[] = [
         ],
         cta: {
           title: "Planning a mobile store rebuild?",
-          description: "ZSpace can review your current architecture and show which mobile problems are design issues and which sit deeper in data, APIs or rendering.",
+          description: "ZSpace Labs can review your current architecture and show which mobile problems are design issues and which sit deeper in data, APIs or rendering.",
         },
       },
       {
@@ -228,7 +228,7 @@ export const commercePosts69: BlogPost[] = [
         ],
         cta: {
           title: "Want one mobile commerce foundation for web and app?",
-          description: "Talk to ZSpace about [[/services/website-development|ecommerce development]], [[/services/mobile-app-development|mobile app development]] and [[/services/shopify-development|Shopify builds]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|ecommerce development]], [[/services/mobile-app-development|mobile app development]] and [[/services/shopify-development|Shopify builds]].",
         },
       },
       {
@@ -339,7 +339,7 @@ export const commercePosts69: BlogPost[] = [
         ],
         cta: {
           title: "Not sure an app is worth it yet?",
-          description: "ZSpace can review your repeat-purchase data and mobile funnel and tell you plainly whether an app, a PWA or mobile web improvements would do more.",
+          description: "ZSpace Labs can review your repeat-purchase data and mobile funnel and tell you plainly whether an app, a PWA or mobile web improvements would do more.",
         },
       },
       {
@@ -416,7 +416,7 @@ export const commercePosts69: BlogPost[] = [
         ],
         cta: {
           title: "Ready to plan your mobile channel mix?",
-          description: "Talk to ZSpace about [[/services/mobile-app-development|ecommerce app development]], [[/services/website-development|mobile web builds]] and [[/services/cro-audit|mobile conversion audits]].",
+          description: "Talk to ZSpace Labs about [[/services/mobile-app-development|ecommerce app development]], [[/services/website-development|mobile web builds]] and [[/services/cro-audit|mobile conversion audits]].",
         },
       },
       {
@@ -555,7 +555,7 @@ export const commercePosts69: BlogPost[] = [
         ],
         cta: {
           title: "Thinking about a PWA storefront?",
-          description: "ZSpace can assess whether PWA features would help your store and design a caching plan that keeps prices, stock and checkout accurate.",
+          description: "ZSpace Labs can assess whether PWA features would help your store and design a caching plan that keeps prices, stock and checkout accurate.",
         },
       },
       {
@@ -645,7 +645,7 @@ export const commercePosts69: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build a faster mobile store?",
-          description: "Talk to ZSpace about [[/services/website-development|PWA and headless storefront development]], [[/services/shopify-development|Shopify headless builds]] and [[/services/ui-ux-design|app-like UX design]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|PWA and headless storefront development]], [[/services/shopify-development|Shopify headless builds]] and [[/services/ui-ux-design|app-like UX design]].",
         },
       },
       {
@@ -748,7 +748,7 @@ export const commercePosts69: BlogPost[] = [
         ],
         cta: {
           title: "Weighing a PWA against an app?",
-          description: "ZSpace can map your required features against what each approach supports today and estimate the build and running effort for both.",
+          description: "ZSpace Labs can map your required features against what each approach supports today and estimate the build and running effort for both.",
         },
       },
       {
@@ -824,7 +824,7 @@ export const commercePosts69: BlogPost[] = [
         ],
         cta: {
           title: "Want help choosing your mobile approach?",
-          description: "Talk to ZSpace about [[/services/mobile-app-development|native and cross-platform ecommerce apps]], [[/services/website-development|PWA storefronts]] and [[/services/ui-ux-design|mobile UX design]].",
+          description: "Talk to ZSpace Labs about [[/services/mobile-app-development|native and cross-platform ecommerce apps]], [[/services/website-development|PWA storefronts]] and [[/services/ui-ux-design|mobile UX design]].",
         },
       },
       {

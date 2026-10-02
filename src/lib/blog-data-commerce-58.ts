@@ -101,7 +101,7 @@ export const commercePosts58: BlogPost[] = [
         ],
         cta: {
           title: "Checkout drop-off without a clear cause?",
-          description: "ZSpace audits checkout funnels and designs tests within your platform's limits.",
+          description: "ZSpace Labs audits checkout funnels and designs tests within your platform's limits.",
         },
       },
       {
@@ -191,7 +191,7 @@ export const commercePosts58: BlogPost[] = [
         ],
         cta: {
           title: "Ready to test checkout safely?",
-          description: "Talk to ZSpace about [[/services/cro-audit|checkout audits]], [[/services/shopify-development|Shopify checkout extensibility]] and [[/services/ui-ux-design|checkout UX design]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|checkout audits]], [[/services/shopify-development|Shopify checkout extensibility]] and [[/services/ui-ux-design|checkout UX design]].",
         },
       },
       {
@@ -277,7 +277,7 @@ export const commercePosts58: BlogPost[] = [
         },
         cta: {
           title: "Wins that never show up in revenue?",
-          description: "ZSpace reviews experimentation programs to find the design and analysis issues behind misleading results.",
+          description: "ZSpace Labs reviews experimentation programs to find the design and analysis issues behind misleading results.",
         },
       },
       {
@@ -377,7 +377,7 @@ export const commercePosts58: BlogPost[] = [
         ],
         cta: {
           title: "Ready to trust your test results?",
-          description: "Talk to ZSpace about [[/services/cro-audit|experimentation audits]], [[/services/website-development|test implementation and QA]] and [[/services/ui-ux-design|research-led variant design]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|experimentation audits]], [[/services/website-development|test implementation and QA]] and [[/services/ui-ux-design|research-led variant design]].",
         },
       },
       {
@@ -464,7 +464,7 @@ export const commercePosts58: BlogPost[] = [
         },
         cta: {
           title: "Personalization results that look too good?",
-          description: "ZSpace designs holdout tests that show what personalization really adds.",
+          description: "ZSpace Labs designs holdout tests that show what personalization really adds.",
         },
       },
       {
@@ -548,7 +548,7 @@ export const commercePosts58: BlogPost[] = [
         ],
         cta: {
           title: "Ready to measure personalization properly?",
-          description: "Talk to ZSpace about [[/services/cro-audit|personalization testing]], [[/services/ai-automation|personalization and recommendation systems]] and [[/services/website-development|experiment implementation]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|personalization testing]], [[/services/ai-automation|personalization and recommendation systems]] and [[/services/website-development|experiment implementation]].",
         },
       },
       {
@@ -628,7 +628,7 @@ export const commercePosts58: BlogPost[] = [
         ],
         cta: {
           title: "Testing without a plan for the next six months?",
-          description: "ZSpace builds CRO roadmaps with test slots, research cycles and review rituals matched to your traffic.",
+          description: "ZSpace Labs builds CRO roadmaps with test slots, research cycles and review rituals matched to your traffic.",
         },
       },
       {
@@ -731,7 +731,7 @@ export const commercePosts58: BlogPost[] = [
         ],
         cta: {
           title: "Ready to plan your testing roadmap?",
-          description: "Talk to ZSpace about [[/services/cro-audit|CRO audits and roadmaps]], [[/services/ui-ux-design|test design]] and [[/services/website-development|test development]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|CRO audits and roadmaps]], [[/services/ui-ux-design|test design]] and [[/services/website-development|test development]].",
         },
       },
       {
@@ -812,7 +812,7 @@ export const commercePosts58: BlogPost[] = [
         ],
         cta: {
           title: "Know where shoppers drop but not why?",
-          description: "ZSpace runs conversion research that combines analytics, usability testing and customer feedback into clear hypotheses.",
+          description: "ZSpace Labs runs conversion research that combines analytics, usability testing and customer feedback into clear hypotheses.",
         },
       },
       {
@@ -925,7 +925,7 @@ export const commercePosts58: BlogPost[] = [
         ],
         cta: {
           title: "Ready to understand why shoppers don't buy?",
-          description: "Talk to ZSpace about [[/services/cro-audit|conversion research and CRO audits]], [[/services/ui-ux-design|usability testing]] and [[/services/website-development|technical fixes]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|conversion research and CRO audits]], [[/services/ui-ux-design|usability testing]] and [[/services/website-development|technical fixes]].",
         },
       },
       {

@@ -94,12 +94,12 @@ export function Hero() {
           }}
         >
           <motion.h1
-            aria-label="Meet ZSpace, your website builder."
+            aria-label="Meet ZSpace Labs, your website builder."
             className="text-[2.35rem] leading-[1.1] tracking-[-0.03em] text-ink min-[420px]:text-[2.7rem] sm:text-[4rem] lg:text-[5rem]"
             style={{ fontFamily: "var(--font-newsreader), Georgia, serif" }}
             {...rise(reduced, 0.5)}
           >
-            <span className="block">Meet ZSpace,</span>
+            <span className="block">Meet ZSpace Labs,</span>
             <AnimatedHeroWord phrases={phrases} paused={r} />
           </motion.h1>
 

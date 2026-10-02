@@ -79,7 +79,7 @@ export const commercePosts29: BlogPost[] = [
         ],
         cta: {
           title: "Buyers calling sales because search can't find parts?",
-          description: "ZSpace audits B2B search against real order data and fixes identifiers, specs and relevance.",
+          description: "ZSpace Labs audits B2B search against real order data and fixes identifiers, specs and relevance.",
         },
       },
       {
@@ -157,7 +157,7 @@ export const commercePosts29: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve B2B search?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|B2B search UX]], [[/services/website-development|search implementation]] and [[/services/cro-audit|search audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|B2B search UX]], [[/services/website-development|search implementation]] and [[/services/cro-audit|search audits]].",
         },
       },
       {
@@ -244,7 +244,7 @@ export const commercePosts29: BlogPost[] = [
         ],
         cta: {
           title: "Web prices not matching invoices?",
-          description: "ZSpace connects B2B stores to ERP pricing so every buyer sees the price they'll be invoiced.",
+          description: "ZSpace Labs connects B2B stores to ERP pricing so every buyer sees the price they'll be invoiced.",
         },
       },
       {
@@ -296,7 +296,7 @@ export const commercePosts29: BlogPost[] = [
         ],
         cta: {
           title: "Ready to get B2B pricing right online?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify B2B pricing]], [[/services/website-development|ERP pricing integration]] and [[/services/ui-ux-design|pricing UX]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify B2B pricing]], [[/services/website-development|ERP pricing integration]] and [[/services/ui-ux-design|pricing UX]].",
         },
       },
       {
@@ -380,7 +380,7 @@ export const commercePosts29: BlogPost[] = [
         ],
         cta: {
           title: "Quote requests getting lost in email?",
-          description: "ZSpace designs and builds RFQ workflows that connect buyers, sales teams and your order systems.",
+          description: "ZSpace Labs designs and builds RFQ workflows that connect buyers, sales teams and your order systems.",
         },
       },
       {
@@ -453,7 +453,7 @@ export const commercePosts29: BlogPost[] = [
         },
         cta: {
           title: "Ready to build a quoting workflow buyers use?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|RFQ UX]], [[/services/website-development|quote and CRM integration]] and [[/services/shopify-development|Shopify B2B quoting]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|RFQ UX]], [[/services/website-development|quote and CRM integration]] and [[/services/shopify-development|Shopify B2B quoting]].",
         },
       },
       {
@@ -534,7 +534,7 @@ export const commercePosts29: BlogPost[] = [
         ],
         cta: {
           title: "Customers still calling for invoices and order status?",
-          description: "ZSpace designs and builds B2B portals that connect your ERP, platform and support tools.",
+          description: "ZSpace Labs designs and builds B2B portals that connect your ERP, platform and support tools.",
         },
       },
       {
@@ -610,7 +610,7 @@ export const commercePosts29: BlogPost[] = [
         },
         cta: {
           title: "Ready to build a B2B portal customers rely on?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|portal UX]], [[/services/website-development|portal and ERP integration]] and [[/services/shopify-development|Shopify B2B accounts]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|portal UX]], [[/services/website-development|portal and ERP integration]] and [[/services/shopify-development|Shopify B2B accounts]].",
         },
       },
       {

@@ -88,7 +88,7 @@ export const aiOpsPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Designing an AI feature users will actually trust?",
-          description: "ZSpace designs AI experiences around real model behaviour, from patterns to error states. See [[/services/ui-ux-design|our UI/UX design services]].",
+          description: "ZSpace Labs designs AI experiences around real model behaviour, from patterns to error states. See [[/services/ui-ux-design|our UI/UX design services]].",
         },
       },
       {
@@ -171,7 +171,7 @@ export const aiOpsPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Want a UX review of your AI features?",
-          description: "Talk to ZSpace about an [[/services/ui-ux-design|AI UX audit]] covering patterns, states, trust and accessibility.",
+          description: "Talk to ZSpace Labs about an [[/services/ui-ux-design|AI UX audit]] covering patterns, states, trust and accessibility.",
         },
       },
       {
@@ -259,7 +259,7 @@ export const aiOpsPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Want AI features that people rely on appropriately?",
-          description: "ZSpace applies human-AI interaction research to product design and AI implementation. See [[/services/ui-ux-design|AI product design services]].",
+          description: "ZSpace Labs applies human-AI interaction research to product design and AI implementation. See [[/services/ui-ux-design|AI product design services]].",
         },
       },
       {
@@ -342,7 +342,7 @@ export const aiOpsPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Want a human-AI interaction review?",
-          description: "Talk to ZSpace about evaluating your AI features against [[/services/ui-ux-design|research-based interaction guidelines]].",
+          description: "Talk to ZSpace Labs about evaluating your AI features against [[/services/ui-ux-design|research-based interaction guidelines]].",
         },
       },
       {
@@ -431,7 +431,7 @@ export const aiOpsPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Building a chat assistant into your product?",
-          description: "ZSpace designs and builds AI chat experiences with sources, tool steps and handoff. See [[/services/ui-ux-design|our product design services]].",
+          description: "ZSpace Labs designs and builds AI chat experiences with sources, tool steps and handoff. See [[/services/ui-ux-design|our product design services]].",
         },
       },
       {
@@ -513,7 +513,7 @@ export const aiOpsPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Want a review of your AI chat experience?",
-          description: "Talk to ZSpace about a [[/services/ui-ux-design|chat UX review]] covering scope, sources, states and accessibility.",
+          description: "Talk to ZSpace Labs about a [[/services/ui-ux-design|chat UX review]] covering scope, sources, states and accessibility.",
         },
       },
       {
@@ -600,7 +600,7 @@ export const aiOpsPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Adding a copilot to your product?",
-          description: "ZSpace designs and builds copilots that fit existing workflows, from inline suggestions to confirmed actions. See [[/services/ui-ux-design|product design]] and [[/services/ai-automation|AI development]].",
+          description: "ZSpace Labs designs and builds copilots that fit existing workflows, from inline suggestions to confirmed actions. See [[/services/ui-ux-design|product design]] and [[/services/ai-automation|AI development]].",
         },
       },
       {
@@ -685,7 +685,7 @@ export const aiOpsPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Want feedback on your copilot design?",
-          description: "Talk to ZSpace about a [[/services/ui-ux-design|copilot UX review]] grounded in your users' workflows.",
+          description: "Talk to ZSpace Labs about a [[/services/ui-ux-design|copilot UX review]] grounded in your users' workflows.",
         },
       },
       {

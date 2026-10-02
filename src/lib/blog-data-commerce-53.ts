@@ -88,7 +88,7 @@ export const commercePosts53: BlogPost[] = [
         },
         cta: {
           title: "Analytics numbers that nobody trusts?",
-          description: "ZSpace designs ecommerce analytics architectures with clear sources of truth, tracking plans and quality checks.",
+          description: "ZSpace Labs designs ecommerce analytics architectures with clear sources of truth, tracking plans and quality checks.",
         },
       },
       {
@@ -156,7 +156,7 @@ export const commercePosts53: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build analytics you can rely on?",
-          description: "Talk to ZSpace about [[/services/website-development|analytics architecture and implementation]], [[/services/cro-audit|analytics audits]] and [[/services/ai-automation|reporting automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|analytics architecture and implementation]], [[/services/cro-audit|analytics audits]] and [[/services/ai-automation|reporting automation]].",
         },
       },
       {
@@ -263,7 +263,7 @@ export const commercePosts53: BlogPost[] = [
         ],
         cta: {
           title: "Not sure your tracking tells you anything useful?",
-          description: "ZSpace writes ecommerce tracking plans, implements events and validates them against your order data.",
+          description: "ZSpace Labs writes ecommerce tracking plans, implements events and validates them against your order data.",
         },
       },
       {
@@ -315,7 +315,7 @@ export const commercePosts53: BlogPost[] = [
         ],
         cta: {
           title: "Ready to fix your ecommerce tracking?",
-          description: "Talk to ZSpace about [[/services/cro-audit|analytics and tracking audits]], [[/services/website-development|event implementation]] and [[/services/ui-ux-design|UX measurement]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|analytics and tracking audits]], [[/services/website-development|event implementation]] and [[/services/ui-ux-design|UX measurement]].",
         },
       },
       {
@@ -400,7 +400,7 @@ export const commercePosts53: BlogPost[] = [
         ],
         cta: {
           title: "Not sure which products are really performing?",
-          description: "ZSpace builds product analytics that combine behaviour, returns and margin into decisions merchandisers can act on.",
+          description: "ZSpace Labs builds product analytics that combine behaviour, returns and margin into decisions merchandisers can act on.",
         },
       },
       {
@@ -466,7 +466,7 @@ export const commercePosts53: BlogPost[] = [
         ],
         cta: {
           title: "Ready to understand product performance properly?",
-          description: "Talk to ZSpace about [[/services/cro-audit|product and merchandising analytics]], [[/services/ui-ux-design|product page improvements]] and [[/services/website-development|analytics implementation]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|product and merchandising analytics]], [[/services/ui-ux-design|product page improvements]] and [[/services/website-development|analytics implementation]].",
         },
       },
       {
@@ -547,7 +547,7 @@ export const commercePosts53: BlogPost[] = [
         ],
         cta: {
           title: "Category pages getting traffic but few product clicks?",
-          description: "ZSpace audits categories with analytics and research, then fixes structure, sorting, cards and filters.",
+          description: "ZSpace Labs audits categories with analytics and research, then fixes structure, sorting, cards and filters.",
         },
       },
       {
@@ -612,7 +612,7 @@ export const commercePosts53: BlogPost[] = [
         ],
         cta: {
           title: "Ready to optimize your category pages?",
-          description: "Talk to ZSpace about [[/services/cro-audit|category page audits]], [[/services/ui-ux-design|listing page UX]] and [[/services/shopify-development|Shopify collection pages]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|category page audits]], [[/services/ui-ux-design|listing page UX]] and [[/services/shopify-development|Shopify collection pages]].",
         },
       },
       {
@@ -696,7 +696,7 @@ export const commercePosts53: BlogPost[] = [
         ],
         cta: {
           title: "Dashboards nobody opens?",
-          description: "ZSpace designs ecommerce dashboards around the questions each team asks, with clear hierarchy and drill-downs.",
+          description: "ZSpace Labs designs ecommerce dashboards around the questions each team asks, with clear hierarchy and drill-downs.",
         },
       },
       {
@@ -777,7 +777,7 @@ export const commercePosts53: BlogPost[] = [
         ],
         cta: {
           title: "Ready to design dashboards your team uses?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|dashboard UX and information architecture]], [[/services/cro-audit|analytics audits]] and [[/services/ai-automation|automated reporting]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|dashboard UX and information architecture]], [[/services/cro-audit|analytics audits]] and [[/services/ai-automation|automated reporting]].",
         },
       },
       {

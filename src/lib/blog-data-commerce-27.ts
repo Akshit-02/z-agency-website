@@ -95,7 +95,7 @@ export const commercePosts27: BlogPost[] = [
         ],
         cta: {
           title: "Grocery search returning the wrong products?",
-          description: "ZSpace audits grocery search against real query logs and tunes relevance, synonyms and result design.",
+          description: "ZSpace Labs audits grocery search against real query logs and tunes relevance, synonyms and result design.",
         },
       },
       {
@@ -142,7 +142,7 @@ export const commercePosts27: BlogPost[] = [
         ],
         cta: {
           title: "Want grocery search that fills baskets faster?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|grocery search UX]], [[/services/cro-audit|search audits]] and [[/services/website-development|search implementation]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|grocery search UX]], [[/services/cro-audit|search audits]] and [[/services/website-development|search implementation]].",
         },
       },
       {
@@ -217,7 +217,7 @@ export const commercePosts27: BlogPost[] = [
         ],
         cta: {
           title: "First-time grocery shoppers not completing orders?",
-          description: "ZSpace audits grocery journeys from postcode check to delivery and prioritizes fixes by impact.",
+          description: "ZSpace Labs audits grocery journeys from postcode check to delivery and prioritizes fixes by impact.",
         },
       },
       {
@@ -286,7 +286,7 @@ export const commercePosts27: BlogPost[] = [
         ],
         cta: {
           title: "Want more first orders to become weekly customers?",
-          description: "Talk to ZSpace about [[/services/cro-audit|grocery CRO audits]] and [[/services/ui-ux-design|grocery UX redesign]].",
+          description: "Talk to ZSpace Labs about [[/services/cro-audit|grocery CRO audits]] and [[/services/ui-ux-design|grocery UX redesign]].",
         },
       },
       {
@@ -368,7 +368,7 @@ export const commercePosts27: BlogPost[] = [
         ],
         cta: {
           title: "Setting up a food store on Shopify?",
-          description: "ZSpace builds Shopify food stores with structured product information, delivery rules and subscriptions that fit your operations.",
+          description: "ZSpace Labs builds Shopify food stores with structured product information, delivery rules and subscriptions that fit your operations.",
         },
       },
       {
@@ -427,7 +427,7 @@ export const commercePosts27: BlogPost[] = [
         ],
         cta: {
           title: "Ready to launch your Shopify food store?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify food store builds]], [[/services/ui-ux-design|food UX]] and [[/services/cro-audit|conversion audits]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify food store builds]], [[/services/ui-ux-design|food UX]] and [[/services/cro-audit|conversion audits]].",
         },
       },
       {
@@ -509,7 +509,7 @@ export const commercePosts27: BlogPost[] = [
         ],
         cta: {
           title: "Building a food subscription?",
-          description: "ZSpace designs and builds subscription journeys aligned with production cut-offs and delivery days.",
+          description: "ZSpace Labs designs and builds subscription journeys aligned with production cut-offs and delivery days.",
         },
       },
       {
@@ -570,7 +570,7 @@ export const commercePosts27: BlogPost[] = [
         },
         cta: {
           title: "Want a food subscription customers keep?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify subscription builds]], [[/services/ui-ux-design|subscription UX]] and [[/services/website-development|custom subscription platforms]].",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify subscription builds]], [[/services/ui-ux-design|subscription UX]] and [[/services/website-development|custom subscription platforms]].",
         },
       },
       {
@@ -647,7 +647,7 @@ export const commercePosts27: BlogPost[] = [
         ],
         cta: {
           title: "Grocery app or mobile site slowing shoppers down?",
-          description: "ZSpace designs mobile grocery journeys built around fast adding, lists and slots.",
+          description: "ZSpace Labs designs mobile grocery journeys built around fast adding, lists and slots.",
         },
       },
       {
@@ -709,7 +709,7 @@ export const commercePosts27: BlogPost[] = [
         ],
         cta: {
           title: "Planning a grocery app or mobile redesign?",
-          description: "Talk to ZSpace about [[/services/mobile-app-development|grocery app development]] and [[/services/ui-ux-design|mobile grocery UX]].",
+          description: "Talk to ZSpace Labs about [[/services/mobile-app-development|grocery app development]] and [[/services/ui-ux-design|mobile grocery UX]].",
         },
       },
       {

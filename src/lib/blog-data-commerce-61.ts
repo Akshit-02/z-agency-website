@@ -91,7 +91,7 @@ export const commercePosts61: BlogPost[] = [
         ],
         cta: {
           title: "Unsure how exposed your store is?",
-          description: "ZSpace reviews ecommerce setups, apps, scripts and integrations and helps prepare for professional security testing.",
+          description: "ZSpace Labs reviews ecommerce setups, apps, scripts and integrations and helps prepare for professional security testing.",
         },
       },
       {
@@ -201,7 +201,7 @@ export const commercePosts61: BlogPost[] = [
         ],
         cta: {
           title: "Ready to strengthen your store's security?",
-          description: "Talk to ZSpace about [[/services/website-development|secure ecommerce development]], [[/services/shopify-development|Shopify app and access reviews]] and [[/services/ai-automation|security monitoring automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|secure ecommerce development]], [[/services/shopify-development|Shopify app and access reviews]] and [[/services/ai-automation|security monitoring automation]].",
         },
       },
       {
@@ -297,7 +297,7 @@ export const commercePosts61: BlogPost[] = [
         ],
         cta: {
           title: "Need help preparing for a security assessment?",
-          description: "ZSpace helps ecommerce teams inventory systems, fix access and app issues and scope professional testing.",
+          description: "ZSpace Labs helps ecommerce teams inventory systems, fix access and app issues and scope professional testing.",
         },
       },
       {
@@ -410,7 +410,7 @@ export const commercePosts61: BlogPost[] = [
         ],
         cta: {
           title: "Ready to review your store's security?",
-          description: "Talk to ZSpace about [[/services/website-development|security-focused development reviews]], [[/services/shopify-development|Shopify access and app reviews]] and [[/services/cro-audit|platform audits]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|security-focused development reviews]], [[/services/shopify-development|Shopify access and app reviews]] and [[/services/cro-audit|platform audits]].",
         },
       },
       {
@@ -501,7 +501,7 @@ export const commercePosts61: BlogPost[] = [
         ],
         cta: {
           title: "Not sure where your customer data goes?",
-          description: "ZSpace maps ecommerce data flows, configures consent across tools and cleans up tracking you don't need.",
+          description: "ZSpace Labs maps ecommerce data flows, configures consent across tools and cleans up tracking you don't need.",
         },
       },
       {
@@ -599,7 +599,7 @@ export const commercePosts61: BlogPost[] = [
         ],
         cta: {
           title: "Ready to get customer data under control?",
-          description: "Talk to ZSpace about [[/services/website-development|privacy-aware tracking and data flows]], [[/services/shopify-development|Shopify consent configuration]] and [[/services/cro-audit|analytics audits]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|privacy-aware tracking and data flows]], [[/services/shopify-development|Shopify consent configuration]] and [[/services/cro-audit|analytics audits]].",
         },
       },
       {
@@ -671,7 +671,7 @@ export const commercePosts61: BlogPost[] = [
         ],
         cta: {
           title: "Want compliance built into your storefront?",
-          description: "ZSpace builds checkout, subscription, consent and accessibility features designed with your legal advisers' requirements.",
+          description: "ZSpace Labs builds checkout, subscription, consent and accessibility features designed with your legal advisers' requirements.",
         },
       },
       {
@@ -776,7 +776,7 @@ export const commercePosts61: BlogPost[] = [
         ],
         cta: {
           title: "Ready to align your store with its obligations?",
-          description: "Talk to ZSpace about [[/services/website-development|compliant checkout and consent builds]], [[/services/shopify-development|Shopify configuration]] and [[/services/ui-ux-design|accessible, honest UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|compliant checkout and consent builds]], [[/services/shopify-development|Shopify configuration]] and [[/services/ui-ux-design|accessible, honest UX]].",
         },
       },
       {

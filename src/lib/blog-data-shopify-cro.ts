@@ -105,7 +105,7 @@ export const shopifyCroPosts: BlogPost[] = [
       },
       { q: "How do I customize a Shopify product page?", a: "On Online Store 2.0 themes, open the product template in the theme editor to reorder sections and blocks, add collapsible content and connect metafields as dynamic sources. For layouts the theme can't produce, a developer can build custom sections or an alternate template." },
       { q: "Should different products use different product page templates?", a: "When products need different information, yes. Shopify lets you create alternate product templates and assign them per product, for example for bundles, subscriptions or configurable items." },
-      { q: "How is this different from general product page design?", a: "This guide focuses on optimizing and implementing product pages on Shopify. For platform-independent product page design principles, see ZSpace's ecommerce product page design guide." },
+      { q: "How is this different from general product page design?", a: "This guide focuses on optimizing and implementing product pages on Shopify. For platform-independent product page design principles, see ZSpace Labs' ecommerce product page design guide." },
     ],
     content: [
       {
@@ -212,7 +212,7 @@ export const shopifyCroPosts: BlogPost[] = [
         },
         cta: {
           title: "Want your product pages rebuilt around what customers need?",
-          description: "ZSpace designs and builds Shopify product templates, metafield structures and buy boxes that answer buying questions without slowing the page.",
+          description: "ZSpace Labs designs and builds Shopify product templates, metafield structures and buy boxes that answer buying questions without slowing the page.",
         },
       },
       {
@@ -254,11 +254,11 @@ export const shopifyCroPosts: BlogPost[] = [
         ],
         cta: {
           title: "Not sure which product page changes are actually worth making?",
-          description: "ZSpace can audit your product pages against real funnel data — not a generic best-practices checklist — and prioritize the changes most likely to move add-to-cart rate.",
+          description: "ZSpace Labs can audit your product pages against real funnel data — not a generic best-practices checklist — and prioritize the changes most likely to move add-to-cart rate.",
         },
       },
       {
-        heading: "The ZSpace Shopify CRO Framework",
+        heading: "The ZSpace Labs Shopify CRO Framework",
         body: [
           "Product page changes are most effective when they follow a structured process rather than a redesign based on preference. This is the framework we use across every stage of Shopify CRO, not specific to product pages alone — it's worth understanding once and applying everywhere.",
         ],
@@ -363,7 +363,7 @@ export const shopifyCroPosts: BlogPost[] = [
         ],
         cta: {
           title: "Not sure what your Shopify plan lets you change?",
-          description: "ZSpace reviews your checkout setup, apps and plan limits, and builds the customizations that are worth making.",
+          description: "ZSpace Labs reviews your checkout setup, apps and plan limits, and builds the customizations that are worth making.",
         },
       },
       {
@@ -418,12 +418,12 @@ export const shopifyCroPosts: BlogPost[] = [
         },
       },
       {
-        heading: "The ZSpace Shopify CRO Framework",
+        heading: "The ZSpace Labs Shopify CRO Framework",
         body: ["Checkout changes carry real risk if shipped without validation. The same structured process applies here as everywhere else in Shopify CRO."],
         table: croFrameworkTable,
         cta: {
           title: "Want a faster, clearer Shopify checkout?",
-          description: "Talk to ZSpace about [[/services/shopify-development|Shopify development]] and [[/services/cro-audit|checkout audits]], including checkout extensibility on Shopify Plus.",
+          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify development]] and [[/services/cro-audit|checkout audits]], including checkout extensibility on Shopify Plus.",
         },
       },
       {
@@ -486,7 +486,7 @@ export const shopifyCroPosts: BlogPost[] = [
         a: "Yes — a cart drawer needs to work well with limited screen space and touch input specifically, and a sticky checkout button matters more on mobile, where scrolling to find a cart CTA is a bigger relative cost.",
       },
       { q: "Can I show shipping costs in the Shopify cart?", a: "Yes. Shopify's Cart AJAX API includes endpoints for estimating shipping rates, which themes or apps can use to show an estimate before checkout." },
-      { q: "How is this different from general cart UX?", a: "This guide focuses on Shopify-specific cart optimization and implementation. For platform-independent cart design principles, see ZSpace's ecommerce cart UX guide." },
+      { q: "How is this different from general cart UX?", a: "This guide focuses on Shopify-specific cart optimization and implementation. For platform-independent cart design principles, see ZSpace Labs' ecommerce cart UX guide." },
     ],
     content: [
       {
@@ -565,7 +565,7 @@ export const shopifyCroPosts: BlogPost[] = [
         },
         cta: {
           title: "Is your cart where shoppers stall?",
-          description: "ZSpace audits and rebuilds Shopify carts and cart drawers so costs are clear and checkout is one step away.",
+          description: "ZSpace Labs audits and rebuilds Shopify carts and cart drawers so costs are clear and checkout is one step away.",
         },
       },
       {
@@ -589,11 +589,11 @@ export const shopifyCroPosts: BlogPost[] = [
         ],
         cta: {
           title: "Getting adds to cart but not enough checkouts?",
-          description: "ZSpace can pinpoint whether your cart or your checkout is actually causing the drop-off, and fix the specific friction rather than guessing.",
+          description: "ZSpace Labs can pinpoint whether your cart or your checkout is actually causing the drop-off, and fix the specific friction rather than guessing.",
         },
       },
       {
-        heading: "The ZSpace Shopify CRO Framework",
+        heading: "The ZSpace Labs Shopify CRO Framework",
         body: [
           "The same structured process applies to cart changes as everywhere else in this cluster — measure the actual drop-off, diagnose the likely cause, then test rather than assume.",
         ],
@@ -726,14 +726,14 @@ export const shopifyCroPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "The ZSpace Shopify CRO Framework",
+        heading: "The ZSpace Labs Shopify CRO Framework",
         body: [
           "Funnel diagnosis is the \"Measure\" and \"Diagnose\" steps of a broader, repeatable process — the same one that applies to every stage-specific article in this cluster.",
         ],
         table: croFrameworkTable,
         cta: {
           title: "Not sure which stage of your funnel actually needs attention?",
-          description: "ZSpace runs structured Shopify CRO audits that diagnose funnel drop-off stage by stage, so effort goes toward your actual biggest leak — see the full [[/blogs/shopify-cro-audit|Shopify CRO audit checklist]] for what that process covers.",
+          description: "ZSpace Labs runs structured Shopify CRO audits that diagnose funnel drop-off stage by stage, so effort goes toward your actual biggest leak — see the full [[/blogs/shopify-cro-audit|Shopify CRO audit checklist]] for what that process covers.",
         },
       },
       {
@@ -791,7 +791,7 @@ export const shopifyCroPosts: BlogPost[] = [
         a: "Sticky add-to-cart placement, checkout form length and express payment visibility, image loading behavior, and touch target sizing on variant selectors tend to be high-leverage, commonly tested starting points — though as with any test, results depend on your specific store and traffic.",
       },
       { q: "How do I preview my Shopify store on mobile?", a: "Use the mobile preview in the theme editor for layout, then test on real phones for speed, keyboards, gestures and in-app browsers, which the preview can't reproduce." },
-      { q: "How is this different from general mobile ecommerce UX?", a: "This guide covers Shopify-specific mobile optimization. For platform-independent mobile shopping design, see ZSpace's mobile ecommerce UX guide." },
+      { q: "How is this different from general mobile ecommerce UX?", a: "This guide covers Shopify-specific mobile optimization. For platform-independent mobile shopping design, see ZSpace Labs' mobile ecommerce UX guide." },
     ],
     content: [
       {
@@ -867,7 +867,7 @@ export const shopifyCroPosts: BlogPost[] = [
         ],
         cta: {
           title: "Is mobile converting well below desktop?",
-          description: "ZSpace finds where your Shopify store loses mobile shoppers and fixes it in the theme.",
+          description: "ZSpace Labs finds where your Shopify store loses mobile shoppers and fixes it in the theme.",
         },
       },
       {
@@ -897,14 +897,14 @@ export const shopifyCroPosts: BlogPost[] = [
         },
       },
       {
-        heading: "The ZSpace Shopify CRO Framework",
+        heading: "The ZSpace Labs Shopify CRO Framework",
         body: [
           "Mobile-specific changes benefit from the same measured, tested approach as any other CRO work — the risk of a mobile-only regression is real if a change is shipped without checking its effect on the mobile segment specifically.",
         ],
         table: croFrameworkTable,
         cta: {
           title: "Is your mobile conversion rate lagging behind desktop?",
-          description: "ZSpace can diagnose whether the gap is speed, layout or checkout-specific, and prioritize fixes for the segment that likely drives most of your traffic.",
+          description: "ZSpace Labs can diagnose whether the gap is speed, layout or checkout-specific, and prioritize fixes for the segment that likely drives most of your traffic.",
         },
       },
       {
@@ -1047,14 +1047,14 @@ export const shopifyCroPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "The ZSpace Shopify CRO Framework",
+        heading: "The ZSpace Labs Shopify CRO Framework",
         body: [
           "A/B testing is the \"Test\" and \"Validate\" steps of a larger, repeatable process — the same framework that applies across every article in this cluster.",
         ],
         table: croFrameworkTable,
         cta: {
           title: "Not sure what's actually worth testing on your store?",
-          description: "ZSpace can help prioritize experiments by impact, confidence and effort based on your actual funnel data, and implement tests correctly within Shopify.",
+          description: "ZSpace Labs can help prioritize experiments by impact, confidence and effort based on your actual funnel data, and implement tests correctly within Shopify.",
         },
       },
       {
@@ -1185,14 +1185,14 @@ export const shopifyCroPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "The ZSpace Shopify CRO Framework",
+        heading: "The ZSpace Labs Shopify CRO Framework",
         body: [
           "Landing pages benefit from the same structured process as the rest of this cluster — and given the direct cost of paid traffic, the \"Validate\" step matters more here than almost anywhere else, since a landing page change has an immediate, measurable effect on acquisition cost.",
         ],
         table: croFrameworkTable,
         cta: {
           title: "Getting clicks on your Shopify ads but not enough sales?",
-          description: "ZSpace can build and optimize campaign landing pages that carry your ad's promise through to checkout, and audit the ones you already have.",
+          description: "ZSpace Labs can build and optimize campaign landing pages that carry your ad's promise through to checkout, and audit the ones you already have.",
         },
       },
       {
@@ -1345,9 +1345,9 @@ export const shopifyCroPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "The ZSpace CRO Audit Framework",
+        heading: "The ZSpace Labs CRO Audit Framework",
         body: [
-          "A structured audit follows a consistent sequence rather than jumping straight to recommendations. This is the process we use, from opening the store's analytics to handing over a prioritized roadmap — a ZSpace framework, not an external or industry-wide standard.",
+          "A structured audit follows a consistent sequence rather than jumping straight to recommendations. This is the process we use, from opening the store's analytics to handing over a prioritized roadmap — a ZSpace Labs framework, not an external or industry-wide standard.",
         ],
         table: croAuditFrameworkTable,
       },
@@ -1399,7 +1399,7 @@ export const shopifyCroPosts: BlogPost[] = [
         table: croFrameworkTable,
         cta: {
           title: "Want a professional Shopify CRO audit on your store?",
-          description: "ZSpace runs structured audits across discovery, product, trust, cart, checkout, mobile, performance and analytics — with findings prioritized by impact, confidence and effort, not a generic checklist.",
+          description: "ZSpace Labs runs structured audits across discovery, product, trust, cart, checkout, mobile, performance and analytics — with findings prioritized by impact, confidence and effort, not a generic checklist.",
         },
       },
       {
@@ -1528,7 +1528,7 @@ export const shopifyCroPosts: BlogPost[] = [
         table: croFrameworkTable,
         cta: {
           title: "Is your store's UX working against your conversion goals?",
-          description: "ZSpace designs and audits Shopify stores with both usability and conversion in mind — not just visual polish, but navigation, hierarchy and error handling tied to real shopper behavior.",
+          description: "ZSpace Labs designs and audits Shopify stores with both usability and conversion in mind — not just visual polish, but navigation, hierarchy and error handling tied to real shopper behavior.",
         },
       },
       {
@@ -1679,14 +1679,14 @@ export const shopifyCroPosts: BlogPost[] = [
         },
       },
       {
-        heading: "The ZSpace Shopify CRO Framework",
+        heading: "The ZSpace Labs Shopify CRO Framework",
         body: [
           "Metrics are the foundation of the \"Measure\" step in this framework — every other stage-specific article in this cluster assumes you're tracking the right numbers to know where to look next.",
         ],
         table: croFrameworkTable,
         cta: {
           title: "Not sure which metrics actually matter for your store?",
-          description: "ZSpace can help set up the right Shopify Analytics and tracking configuration, and interpret what your numbers are actually telling you — see the [[/blogs/shopify-analytics-guide|Shopify analytics guide]] for the setup detail.",
+          description: "ZSpace Labs can help set up the right Shopify Analytics and tracking configuration, and interpret what your numbers are actually telling you — see the [[/blogs/shopify-analytics-guide|Shopify analytics guide]] for the setup detail.",
         },
       },
       {

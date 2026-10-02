@@ -106,7 +106,7 @@ export const commercePosts67: BlogPost[] = [
         ],
         cta: {
           title: "Planning a platform migration?",
-          description: "ZSpace runs ecommerce migrations with data rehearsals, redirect mapping and launch plans that protect revenue and search visibility.",
+          description: "ZSpace Labs runs ecommerce migrations with data rehearsals, redirect mapping and launch plans that protect revenue and search visibility.",
         },
       },
       {
@@ -234,7 +234,7 @@ export const commercePosts67: BlogPost[] = [
         ],
         cta: {
           title: "Want a second pair of eyes on your migration plan?",
-          description: "Talk to ZSpace about [[/services/website-development|migration planning]], [[/services/shopify-development|Shopify migrations]] and [[/services/cro-audit|post-launch conversion checks]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|migration planning]], [[/services/shopify-development|Shopify migrations]] and [[/services/cro-audit|post-launch conversion checks]].",
         },
       },
       {
@@ -328,7 +328,7 @@ export const commercePosts67: BlogPost[] = [
         },
         cta: {
           title: "Worried about losing data in a migration?",
-          description: "ZSpace maps, transforms and validates ecommerce data with repeatable migration scripts and rehearsals.",
+          description: "ZSpace Labs maps, transforms and validates ecommerce data with repeatable migration scripts and rehearsals.",
         },
       },
       {
@@ -426,7 +426,7 @@ export const commercePosts67: BlogPost[] = [
         ],
         cta: {
           title: "Ready to plan your data migration?",
-          description: "Talk to ZSpace about [[/services/website-development|data migration and integrations]], [[/services/shopify-development|Shopify imports]] and [[/services/ai-automation|data validation automation]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|data migration and integrations]], [[/services/shopify-development|Shopify imports]] and [[/services/ai-automation|data validation automation]].",
         },
       },
       {
@@ -505,7 +505,7 @@ export const commercePosts67: BlogPost[] = [
         ],
         cta: {
           title: "Worried about organic traffic during a replatform?",
-          description: "ZSpace plans and executes ecommerce SEO migrations with URL mapping, staging crawls and post-launch monitoring.",
+          description: "ZSpace Labs plans and executes ecommerce SEO migrations with URL mapping, staging crawls and post-launch monitoring.",
         },
       },
       {
@@ -612,7 +612,7 @@ export const commercePosts67: BlogPost[] = [
         ],
         cta: {
           title: "Ready to protect your organic traffic?",
-          description: "Talk to ZSpace about [[/services/website-development|SEO-safe migrations]], [[/services/shopify-development|Shopify migrations]] and [[/services/cro-audit|post-launch audits]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|SEO-safe migrations]], [[/services/shopify-development|Shopify migrations]] and [[/services/cro-audit|post-launch audits]].",
         },
       },
       {
@@ -700,7 +700,7 @@ export const commercePosts67: BlogPost[] = [
         },
         cta: {
           title: "Thousands of URLs to redirect?",
-          description: "ZSpace builds URL inventories, automated mappings and tested redirect rules for ecommerce migrations.",
+          description: "ZSpace Labs builds URL inventories, automated mappings and tested redirect rules for ecommerce migrations.",
         },
       },
       {
@@ -792,7 +792,7 @@ export const commercePosts67: BlogPost[] = [
         ],
         cta: {
           title: "Ready to migrate URLs without losing visibility?",
-          description: "Talk to ZSpace about [[/services/website-development|redirect mapping and implementation]], [[/services/shopify-development|Shopify URL migrations]] and [[/services/cro-audit|post-launch monitoring]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|redirect mapping and implementation]], [[/services/shopify-development|Shopify URL migrations]] and [[/services/cro-audit|post-launch monitoring]].",
         },
       },
       {

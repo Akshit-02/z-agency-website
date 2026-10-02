@@ -378,7 +378,7 @@ export const services: Service[] = [
       },
       {
         title: "Hand over a real plan",
-        body: "You receive a clear, prioritized report your team can act on immediately, with or without ZSpace implementing it.",
+        body: "You receive a clear, prioritized report your team can act on immediately, with or without ZSpace Labs implementing it.",
       },
     ],
     deliverables: [

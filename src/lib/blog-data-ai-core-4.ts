@@ -89,7 +89,7 @@ export const aiCorePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want AI in your workflows without losing control?",
-          description: "ZSpace designs AI workflow automations where models handle messy inputs and validated code handles every decision that must be right.",
+          description: "ZSpace Labs designs AI workflow automations where models handle messy inputs and validated code handles every decision that must be right.",
         },
       },
       {
@@ -170,7 +170,7 @@ export const aiCorePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Ready to add AI to a real business workflow?",
-          description: "Talk to ZSpace about [[/services/ai-automation|AI workflow automation]] and [[/services/website-development|integration and backend development]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|AI workflow automation]] and [[/services/website-development|integration and backend development]].",
         },
       },
       {
@@ -266,7 +266,7 @@ export const aiCorePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Maintaining bots that keep breaking?",
-          description: "ZSpace can review your automations, replace fragile screen steps with API integrations where possible and orchestrate what remains.",
+          description: "ZSpace Labs can review your automations, replace fragile screen steps with API integrations where possible and orchestrate what remains.",
         },
       },
       {
@@ -341,7 +341,7 @@ export const aiCorePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Planning automation across modern and legacy systems?",
-          description: "Talk to ZSpace about [[/services/ai-automation|workflow automation]] and [[/services/website-development|API integration]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|workflow automation]] and [[/services/website-development|API integration]].",
         },
       },
       {
@@ -426,7 +426,7 @@ export const aiCorePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Trying to decide between RPA, AI or both?",
-          description: "ZSpace maps each step of your process to the simplest reliable technique and builds the combined automation with validation and monitoring.",
+          description: "ZSpace Labs maps each step of your process to the simplest reliable technique and builds the combined automation with validation and monitoring.",
         },
       },
       {
@@ -506,7 +506,7 @@ export const aiCorePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Modernizing an RPA program with AI?",
-          description: "Talk to ZSpace about [[/services/ai-automation|intelligent automation]] combining AI, workflows and existing bots.",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|intelligent automation]] combining AI, workflows and existing bots.",
         },
       },
       {
@@ -601,7 +601,7 @@ export const aiCorePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Drowning in documents your team re-types by hand?",
-          description: "ZSpace builds document pipelines with extraction, validation and review screens that post clean data into your systems.",
+          description: "ZSpace Labs builds document pipelines with extraction, validation and review screens that post clean data into your systems.",
         },
       },
       {
@@ -702,7 +702,7 @@ export const aiCorePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Planning a document automation project?",
-          description: "Talk to ZSpace about [[/services/ai-automation|intelligent document processing]] and [[/services/website-development|integration with ERP, CRM and case systems]].",
+          description: "Talk to ZSpace Labs about [[/services/ai-automation|intelligent document processing]] and [[/services/website-development|integration with ERP, CRM and case systems]].",
         },
       },
       {

@@ -87,7 +87,7 @@ export const commercePosts28: BlogPost[] = [
         ],
         cta: {
           title: "Food product pages not converting?",
-          description: "ZSpace designs food product pages that balance appetite with the facts shoppers need before they buy.",
+          description: "ZSpace Labs designs food product pages that balance appetite with the facts shoppers need before they buy.",
         },
       },
       {
@@ -154,7 +154,7 @@ export const commercePosts28: BlogPost[] = [
         ],
         cta: {
           title: "Ready to redesign your food product pages?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|food product page design]], [[/services/shopify-development|Shopify food builds]] and [[/services/cro-audit|conversion audits]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|food product page design]], [[/services/shopify-development|Shopify food builds]] and [[/services/cro-audit|conversion audits]].",
         },
       },
       {
@@ -235,7 +235,7 @@ export const commercePosts28: BlogPost[] = [
         ],
         cta: {
           title: "Planning a grocery redesign?",
-          description: "ZSpace redesigns grocery journeys from evidence and tests them with the shoppers who order every week.",
+          description: "ZSpace Labs redesigns grocery journeys from evidence and tests them with the shoppers who order every week.",
         },
       },
       {
@@ -296,7 +296,7 @@ export const commercePosts28: BlogPost[] = [
         },
         cta: {
           title: "Ready to improve your online grocery store?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|grocery UX redesign]], [[/services/cro-audit|grocery CRO audits]] and [[/services/website-development|grocery platform development]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|grocery UX redesign]], [[/services/cro-audit|grocery CRO audits]] and [[/services/website-development|grocery platform development]].",
         },
       },
       {
@@ -396,7 +396,7 @@ export const commercePosts28: BlogPost[] = [
         ],
         cta: {
           title: "Designing a B2B store buyers will actually use?",
-          description: "ZSpace designs B2B ecommerce around real buyer roles, account pricing and fast ordering.",
+          description: "ZSpace Labs designs B2B ecommerce around real buyer roles, account pricing and fast ordering.",
         },
       },
       {
@@ -462,7 +462,7 @@ export const commercePosts28: BlogPost[] = [
         ],
         cta: {
           title: "Ready to design your B2B ecommerce site?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|B2B UX and design]], [[/services/website-development|B2B platform development]] and [[/services/shopify-development|Shopify B2B]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|B2B UX and design]], [[/services/website-development|B2B platform development]] and [[/services/shopify-development|Shopify B2B]].",
         },
       },
       {
@@ -566,7 +566,7 @@ export const commercePosts28: BlogPost[] = [
         ],
         cta: {
           title: "Catalog data holding back your B2B store?",
-          description: "ZSpace structures B2B catalogs, attributes and integrations so buyers can find and order the right parts.",
+          description: "ZSpace Labs structures B2B catalogs, attributes and integrations so buyers can find and order the right parts.",
         },
       },
       {
@@ -629,7 +629,7 @@ export const commercePosts28: BlogPost[] = [
         ],
         cta: {
           title: "Ready to organize your B2B catalog?",
-          description: "Talk to ZSpace about [[/services/website-development|B2B catalog and integration builds]], [[/services/ui-ux-design|B2B catalog UX]] and [[/services/shopify-development|Shopify B2B]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|B2B catalog and integration builds]], [[/services/ui-ux-design|B2B catalog UX]] and [[/services/shopify-development|Shopify B2B]].",
         },
       },
       {

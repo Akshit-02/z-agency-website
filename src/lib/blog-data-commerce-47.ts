@@ -83,7 +83,7 @@ export const commercePosts47: BlogPost[] = [
         ],
         cta: {
           title: "Planning a furniture store build?",
-          description: "ZSpace builds furniture ecommerce around structured dimensions, configurations and delivery operations.",
+          description: "ZSpace Labs builds furniture ecommerce around structured dimensions, configurations and delivery operations.",
         },
       },
       {
@@ -166,7 +166,7 @@ export const commercePosts47: BlogPost[] = [
         ],
         cta: {
           title: "Ready to build your furniture store?",
-          description: "Talk to ZSpace about [[/services/website-development|furniture ecommerce development]], [[/services/shopify-development|Shopify furniture builds]] and [[/services/ui-ux-design|furniture UX]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|furniture ecommerce development]], [[/services/shopify-development|Shopify furniture builds]] and [[/services/ui-ux-design|furniture UX]].",
         },
       },
       {
@@ -252,7 +252,7 @@ export const commercePosts47: BlogPost[] = [
         ],
         cta: {
           title: "Furniture shoppers browsing for weeks and not buying?",
-          description: "ZSpace researches furniture decision journeys and designs experiences that support long, shared decisions.",
+          description: "ZSpace Labs researches furniture decision journeys and designs experiences that support long, shared decisions.",
         },
       },
       {
@@ -319,7 +319,7 @@ export const commercePosts47: BlogPost[] = [
         ],
         cta: {
           title: "Ready to improve your furniture store's UX?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|furniture UX]], [[/services/cro-audit|conversion audits]] and [[/services/website-development|furniture store development]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|furniture UX]], [[/services/cro-audit|conversion audits]] and [[/services/website-development|furniture store development]].",
         },
       },
       {
@@ -408,7 +408,7 @@ export const commercePosts47: BlogPost[] = [
         ],
         cta: {
           title: "Furniture product pages leaving shoppers unsure?",
-          description: "ZSpace designs furniture product pages around size, materials and delivery, the questions that decide purchases.",
+          description: "ZSpace Labs designs furniture product pages around size, materials and delivery, the questions that decide purchases.",
         },
       },
       {
@@ -470,7 +470,7 @@ export const commercePosts47: BlogPost[] = [
         ],
         cta: {
           title: "Ready to redesign your furniture product pages?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|product page design]], [[/services/cro-audit|furniture CRO]] and [[/services/shopify-development|Shopify furniture templates]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|product page design]], [[/services/cro-audit|furniture CRO]] and [[/services/shopify-development|Shopify furniture templates]].",
         },
       },
       {
@@ -547,7 +547,7 @@ export const commercePosts47: BlogPost[] = [
         ],
         cta: {
           title: "Unsure whether 3D or AR is worth it for your range?",
-          description: "ZSpace helps furniture brands choose visualization investments from returns and research, then builds them properly.",
+          description: "ZSpace Labs helps furniture brands choose visualization investments from returns and research, then builds them properly.",
         },
       },
       {
@@ -613,7 +613,7 @@ export const commercePosts47: BlogPost[] = [
         ],
         cta: {
           title: "Ready to help shoppers see furniture at home?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|visualization UX]], [[/services/website-development|3D and AR integration]] and [[/services/shopify-development|Shopify product media]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|visualization UX]], [[/services/website-development|3D and AR integration]] and [[/services/shopify-development|Shopify product media]].",
         },
       },
       {
@@ -686,7 +686,7 @@ export const commercePosts47: BlogPost[] = [
         ],
         cta: {
           title: "Shoppers can't filter by the size they actually have?",
-          description: "ZSpace builds furniture filters on clean dimension and material data so shoppers find what fits.",
+          description: "ZSpace Labs builds furniture filters on clean dimension and material data so shoppers find what fits.",
         },
       },
       {
@@ -761,7 +761,7 @@ export const commercePosts47: BlogPost[] = [
         ],
         cta: {
           title: "Ready to rebuild your furniture filters?",
-          description: "Talk to ZSpace about [[/services/ui-ux-design|filter UX]], [[/services/cro-audit|discovery audits]] and [[/services/shopify-development|Shopify Search & Discovery]].",
+          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|filter UX]], [[/services/cro-audit|discovery audits]] and [[/services/shopify-development|Shopify Search & Discovery]].",
         },
       },
       {

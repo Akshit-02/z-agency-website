@@ -96,7 +96,7 @@ export const commercePosts82: BlogPost[] = [
         ],
         cta: {
           title: "Integrations falling over during sales peaks?",
-          description: "ZSpace can design queue-based processing with retries, dead-letter handling and backpressure so peaks slow sync down rather than break it.",
+          description: "ZSpace Labs can design queue-based processing with retries, dead-letter handling and backpressure so peaks slow sync down rather than break it.",
         },
       },
       {
@@ -163,7 +163,7 @@ export const commercePosts82: BlogPost[] = [
         ],
         cta: {
           title: "Ready to make background processing dependable?",
-          description: "Talk to ZSpace about [[/services/website-development|queue and integration architecture]], [[/services/ai-automation|workflow automation]] and [[/services/shopify-development|Shopify integration back ends]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|queue and integration architecture]], [[/services/ai-automation|workflow automation]] and [[/services/shopify-development|Shopify integration back ends]].",
         },
       },
       {
@@ -257,7 +257,7 @@ export const commercePosts82: BlogPost[] = [
         ],
         cta: {
           title: "Pages fast, but prices sometimes wrong?",
-          description: "ZSpace can audit your caching layers and design keys, lifetimes and invalidation that keep pages fast and data correct.",
+          description: "ZSpace Labs can audit your caching layers and design keys, lifetimes and invalidation that keep pages fast and data correct.",
         },
       },
       {
@@ -332,7 +332,7 @@ export const commercePosts82: BlogPost[] = [
         ],
         cta: {
           title: "Ready to tune caching for speed and accuracy?",
-          description: "Talk to ZSpace about [[/services/website-development|performance and caching architecture]], [[/services/shopify-development|Shopify and Hydrogen performance]] and [[/services/cro-audit|speed-focused CRO]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|performance and caching architecture]], [[/services/shopify-development|Shopify and Hydrogen performance]] and [[/services/cro-audit|speed-focused CRO]].",
         },
       },
       {
@@ -412,7 +412,7 @@ export const commercePosts82: BlogPost[] = [
         ],
         cta: {
           title: "Finding out about checkout problems from customers?",
-          description: "ZSpace can set up monitoring, synthetic checks and business alerts around the journeys that make you money.",
+          description: "ZSpace Labs can set up monitoring, synthetic checks and business alerts around the journeys that make you money.",
         },
       },
       {
@@ -507,7 +507,7 @@ export const commercePosts82: BlogPost[] = [
         ],
         cta: {
           title: "Ready to see problems before customers do?",
-          description: "Talk to ZSpace about [[/services/website-development|observability and reliability engineering]], [[/services/ai-automation|alerting and incident automation]] and [[/services/shopify-development|Shopify monitoring]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|observability and reliability engineering]], [[/services/ai-automation|alerting and incident automation]] and [[/services/shopify-development|Shopify monitoring]].",
         },
       },
       {
@@ -611,7 +611,7 @@ export const commercePosts82: BlogPost[] = [
         },
         cta: {
           title: "Not sure how long your store would be down after a major failure?",
-          description: "ZSpace can set RPO and RTO with you, map current gaps and design a recovery plan proportionate to what downtime costs you.",
+          description: "ZSpace Labs can set RPO and RTO with you, map current gaps and design a recovery plan proportionate to what downtime costs you.",
         },
       },
       {
@@ -706,7 +706,7 @@ export const commercePosts82: BlogPost[] = [
         ],
         cta: {
           title: "Ready to make recovery a tested capability?",
-          description: "Talk to ZSpace about [[/services/website-development|resilience and recovery engineering]], [[/services/ai-automation|backup and reconciliation automation]] and [[/services/shopify-development|Shopify data protection]].",
+          description: "Talk to ZSpace Labs about [[/services/website-development|resilience and recovery engineering]], [[/services/ai-automation|backup and reconciliation automation]] and [[/services/shopify-development|Shopify data protection]].",
         },
       },
       {
