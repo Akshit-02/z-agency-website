@@ -442,6 +442,7 @@ export const mobilePosts4: BlogPost[] = [
         heading: "Third-Party SDKs",
         body: [
           "Analytics, advertising, attribution and support SDKs often collect data themselves. You're responsible for disclosing it in store privacy declarations. Audit every SDK: what it collects, where it sends data, whether it tracks, and whether you can configure it to collect less. Apple requires privacy manifests, and signatures for commonly used SDKs, which describe their data use and required-reason API usage.",
+          "AI SDKs and model providers raise similar questions; see [[/blogs/ai-data-privacy|AI data privacy]].",
         ],
       },
       {

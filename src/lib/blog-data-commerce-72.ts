@@ -390,6 +390,7 @@ export const commercePosts72: BlogPost[] = [
         heading: "How This Article Differs",
         body: [
           "This is the system design article: how a recommendation engine is put together. Recommendation placements and module design are in [[/blogs/ecommerce-product-recommendations|recommendation UX]]. Model families, build-versus-buy and LLM-assisted recommendations are discussed in [[/blogs/ai-product-recommendations|AI product recommendations]]. Personalization strategy is in [[/blogs/ai-personalization-ecommerce|AI ecommerce personalization]], and merchandising use of models in [[/blogs/ai-ecommerce-merchandising|AI merchandising]].",
+          "Recommendation systems for media, education, marketplaces and B2B products are covered in [[/blogs/ai-recommendation-systems|AI recommendation systems]].",
         ],
       },
       {

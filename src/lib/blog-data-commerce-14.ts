@@ -455,6 +455,7 @@ export const commercePosts14: BlogPost[] = [
         heading: "Loyalty Programs",
         body: [
           "Loyalty works when the value is clear and reachable: early access, free delivery, meaningful rewards. Complex points schemes rarely change behavior. Test whether a program increases repeat purchase and margin, not just sign-ups.",
+          "The systems that connect loyalty, messaging, subscriptions and service data are covered in [[/blogs/ecommerce-customer-retention-technology|customer retention technology]].",
         ],
       },
       {

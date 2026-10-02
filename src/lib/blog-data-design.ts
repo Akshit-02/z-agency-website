@@ -72,6 +72,7 @@ export const designPosts: BlogPost[] = [
         heading: "Product Discovery",
         body: [
           "Discovery decides what's worth building. It combines business context (goals, constraints, competitors) with evidence about users (what they're trying to do and what gets in their way). The output is a clear problem statement and a small set of prioritized opportunities, not a feature list.",
+          "For AI-powered products specifically, see [[/blogs/ai-product-design|AI product design]] and [[/blogs/ai-product-idea-validation|how to validate an AI product idea]].",
         ],
       },
       {

@@ -78,6 +78,7 @@ export const commercePosts62: BlogPost[] = [
         body: [
           "Before sellers receive money, marketplaces usually need to verify who they are. Requirements come from payment providers, card networks and law, and vary by country and business type. Many marketplaces use their payment provider's hosted or embedded onboarding, which collects and verifies the required information and keeps the requirements current. Stripe Connect, for example, offers hosted and embedded onboarding for connected accounts ([[https://docs.stripe.com/connect/onboarding|Stripe documentation]]).",
           "Design around verification rather than hiding it. Explain why information is needed, show which items are pending, and when verification fails, say what's wrong and how to fix it. Verification should not be treated as legal advice to sellers; point them to the provider's guidance and your support team.",
+          "How verification fits into ongoing risk tiers, moderation and enforcement is covered in [[/blogs/marketplace-trust-and-safety|marketplace trust and safety]].",
         ],
         checklist: [
           "Explain why each piece of information is required",
@@ -693,6 +694,7 @@ export const commercePosts62: BlogPost[] = [
         body: [
           "A loyalty programme touches many systems. The loyalty engine keeps a points ledger (every earn, redeem, expiry and adjustment as a record), evaluates rules and exposes balances. The ecommerce platform shows balances in accounts and applies rewards at checkout, often as discounts. Email and CRM send balance updates and reminders. POS integration lets customers earn and redeem in stores. Analytics joins loyalty data with orders for measurement.",
           "Use webhooks or events for order creation, fulfilment and refunds so points are awarded and reversed correctly. Keep one source of truth for balances. See [[/blogs/ecommerce-crm-integration|CRM integration]].",
+          "Points ledgers, rules engines, redemption and build-versus-buy are covered in [[/blogs/ecommerce-loyalty-program-development|loyalty program development]].",
         ],
         table: {
           headers: ["System", "Loyalty role"],
@@ -716,6 +718,7 @@ export const commercePosts62: BlogPost[] = [
         heading: "Referrals",
         body: [
           "Referral programmes reward customers for introducing new customers, typically with a reward for both sides. Protect against abuse: self-referrals, fake accounts and coupon sharing sites. Reward on the referred customer's first qualifying order, not on sign-up. Measure referred customers' retention, not only the number of referrals.",
+          "Attribution, qualification and fraud controls are covered in [[/blogs/ecommerce-referral-program-development|referral program development]].",
         ],
       },
       {

@@ -819,6 +819,7 @@ export const commercePosts74: BlogPost[] = [
         heading: "Analytics and Customer Data",
         body: [
           "Start with platform analytics and a well-defined event tracking plan in your analytics tool. As channels multiply, a data warehouse and a CDP may help unify customers and reporting. Decide early which system is the source of truth for revenue and orders. See [[/blogs/ecommerce-event-tracking|event tracking]] and [[/blogs/ecommerce-analytics|ecommerce analytics]].",
+          "Identity, consent and retention tooling are covered in [[/blogs/ecommerce-customer-retention-technology|customer retention technology]].",
         ],
       },
       {

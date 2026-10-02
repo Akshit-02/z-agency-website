@@ -111,6 +111,7 @@ export const aiAgentPosts2: BlogPost[] = [
         heading: "Lead Generation, Qualification and Enrichment",
         body: [
           "An agent can continuously score inbound leads against your ideal-customer criteria, enrich a lead record with information gathered from connected data sources, and update the CRM in real time as new signals arrive — rather than scoring once at capture and leaving the record static while a lead's actual intent evolves.",
+          "Explainable scoring and CRM routing are covered in [[/blogs/ai-lead-qualification|AI lead qualification]].",
         ],
         visual: { variant: "funnel", accent: "blue", caption: "A lead-qualification agent continuously re-scores prospects as new behavioral signals arrive, not just once at capture." },
       },
@@ -521,6 +522,8 @@ export const aiAgentPosts2: BlogPost[] = [
         heading: "Invoice Processing and Accounts Payable",
         body: [
           "An agent can extract data from incoming invoices (vendor, amount, line items, due date), match it against a purchase order or contract, suggest the correct GL coding based on vendor history, and prepare it for payment — flagging anything that doesn't match cleanly (a price discrepancy, a missing PO) for a finance team member rather than processing it blind.",
+          "A step-by-step treatment of extraction, matching and approvals is in [[/blogs/ai-invoice-processing|AI invoice processing]].",
+          "Employee spend, receipts and card reconciliation are covered in [[/blogs/ai-expense-management|AI expense management]], and purchasing upstream of AP in [[/blogs/ai-procurement-automation|AI procurement automation]].",
         ],
         visual: { variant: "rows", accent: "blue", caption: "An AP agent matches incoming invoices against purchase orders and historical coding, surfacing only what doesn't match cleanly." },
       },
@@ -558,6 +561,7 @@ export const aiAgentPosts2: BlogPost[] = [
         heading: "How to Secure an AI Agent Connected to Financial Systems",
         body: [
           "Financial data and payment systems warrant the same security posture as any sensitive system integration, with a few points specific to agents: scope access narrowly to the accounts and data a given workflow actually needs, never grant standing payment-release authority to the agent itself, require multi-party approval for anything that moves money, and log every read and action for audit — including the reasoning that led to a recommendation, not just the final output.",
+          "Permission boundaries, policy checks and approvals are covered in [[/blogs/ai-agent-guardrails|AI agent guardrails]].",
         ],
         checklist: [
           "The agent never holds independent authority to release a payment",
@@ -1105,6 +1109,8 @@ export const aiAgentPosts2: BlogPost[] = [
         heading: "AI Assistant vs AI Workflow vs AI Agent vs Multi-Agent System",
         body: [
           "These terms get used loosely, and the distinction matters for scoping a project correctly. An AI assistant answers a request within a single conversation and doesn't act on its own initiative. An AI workflow executes a fixed sequence when a trigger fires — reliable, but brittle if the situation doesn't match what was anticipated. An AI agent can interpret a less structured situation, decide across multiple steps what to do, and adjust as new information arrives. A multi-agent system coordinates several specialized agents — one for support, one for success, one for product feedback — each reading from shared account data but focused on a distinct function.",
+          "These distinctions are explored further in [[/blogs/ai-agent-vs-ai-chatbot|AI agent vs AI chatbot]] and [[/blogs/single-agent-vs-multi-agent-systems|single-agent vs multi-agent systems]].",
+          "Building in-product assistants is covered in [[/blogs/ai-copilot-development|AI copilot development]], and tenancy, pricing and cost per tenant in [[/blogs/ai-powered-saas-development|AI-powered SaaS development]].",
         ],
         table: {
           headers: ["", "AI assistant", "AI workflow", "AI agent", "Multi-agent system"],
@@ -1132,6 +1138,7 @@ export const aiAgentPosts2: BlogPost[] = [
         heading: "Sales: Lead Qualification, Research and Meeting Prep",
         body: [
           "An agent can qualify and enrich inbound leads against your ideal-customer profile, research an account before a first call using CRM and public data, and prepare a briefing so a rep walks into a conversation already informed — reducing the manual research time that typically eats into a rep's selling time.",
+          "Cross-industry designs are in [[/blogs/ai-lead-qualification|AI lead qualification]] and [[/blogs/ai-sales-automation|AI sales automation]].",
         ],
       },
       {
@@ -1334,6 +1341,7 @@ export const aiAgentPosts2: BlogPost[] = [
         heading: "Invoice and Receipt Processing",
         body: [
           "An agent can extract vendor, amount, date and line-item detail from invoices and receipts, suggest the correct GL coding based on vendor history and past classification patterns, and flag anything ambiguous for a bookkeeper to confirm — reducing the manual entry that consumes a large share of routine bookkeeping time.",
+          "Extraction methods, schemas and validation are covered in [[/blogs/ai-document-extraction|AI document extraction]].",
         ],
         visual: { variant: "rows", accent: "blue", caption: "A document-processing agent extracts and classifies invoices, flagging only what doesn't match a known pattern." },
       },

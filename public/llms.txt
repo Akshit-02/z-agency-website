@@ -28,7 +28,7 @@ These terms describe the same capabilities above in the language people and AI s
 
 - Web development: full-stack development, Next.js and React applications, headless architecture, API development, website performance and Core Web Vitals, SaaS product development, progressive web apps
 - Mobile development: iOS and Android development, React Native and cross-platform apps, mobile app UX, app architecture, app store launch support
-- AI automation: AI agents, AI agent development, agentic AI, custom AI agents, AI workflows, LLM integrations, business process automation, AI workflow automation, multi-agent systems, AI orchestration, AI integrations, AI-powered operations, intelligent systems, customer support and internal-operations automation
+- AI automation: AI agents, AI agent development, agentic AI, custom AI agents, AI workflows, LLM integrations, business process automation, AI workflow automation, multi-agent systems, AI orchestration, AI integrations, AI-powered operations, intelligent systems, customer support and internal-operations automation, retrieval-augmented generation (RAG) and enterprise knowledge assistants, Model Context Protocol (MCP) servers and AI integrations, intelligent document processing, voice AI agents, AI coding agents and AI-assisted software development, AI application and generative AI product development, AI copilots, AI search and recommendation systems, computer vision and multimodal AI, AI governance, AI security, AI data privacy, model evaluation and monitoring, AI readiness assessments, HR, recruitment, procurement, ITSM, expense and compliance automation, LLMOps, LLM evaluation and observability, prompt versioning, AI data engineering and pipelines, AI red teaming and AI security testing, AI product and UX design, AI inference optimization, LLM serving, quantization and self-hosting, AI platform engineering
 - UI/UX design: product design, UX research, design systems, user onboarding, conversion-focused design, accessibility, interaction design
 - Shopify & commerce: Shopify theme development, Shopify Plus, ecommerce optimization, storefront performance, checkout and funnel design
 - Conversion rate optimization: landing page optimization, checkout optimization, form optimization, funnel analysis, ecommerce and SaaS CRO
@@ -71,6 +71,178 @@ Industry-specific AI agent articles:
 - AI Agents in Agriculture — https://zspace.in/blogs/ai-agents-in-agriculture
 
 Several of the above deliberately complement, rather than duplicate, a same-named topic already in the list: hospital operations (care coordination) complements the healthcare article (payer-facing administration); freight and customs documentation complements the logistics article (routing and warehouse operations); hotel operations (back-of-house) complements the travel and hospitality article (guest-facing booking and concierge); academic support (currently-enrolled students and faculty) complements the education article (admissions and enrollment); construction project controls (cost and change orders) complements the construction article (RFIs and document analysis).
+
+## AI Engineering and Automation Guides
+
+Platform-neutral guides behind ZSpace's AI Automation service (https://zspace.in/services/ai-automation), complementing the industry articles above. Each group lists its hub first. Protocol and API details were verified against official documentation in October 2026 (MCP specification 2026-07-28) and are dated where they change quickly; regulatory notes are general summaries, not legal advice.
+
+AI agents and agentic systems:
+- AI agent development: what agents are, tools, state, controls, costs and deployment (hub) — https://zspace.in/blogs/ai-agent-development
+- AI agent vs AI chatbot: tools, planning, state, autonomy and risk compared — https://zspace.in/blogs/ai-agent-vs-ai-chatbot
+- AI agent architecture: model vs application responsibilities, tools, state, identity, observability — https://zspace.in/blogs/ai-agent-architecture
+- Single-agent vs multi-agent systems: when more agents are justified — https://zspace.in/blogs/single-agent-vs-multi-agent-systems
+- AI agent orchestration: routing, run state, budgets, retries, compensation, escalation — https://zspace.in/blogs/ai-agent-orchestration
+- Agentic workflow automation vs deterministic automation, and how to combine them — https://zspace.in/blogs/agentic-workflow-automation
+- Human-in-the-loop AI: approval modes, routing signals, review interfaces, audit — https://zspace.in/blogs/human-in-the-loop-ai
+- AI agent evaluation: datasets, trajectory scoring, LLM-as-judge calibration, release gates — https://zspace.in/blogs/ai-agent-evaluation
+- AI agent guardrails: permissions, policy checks, validation, budgets, kill switches — https://zspace.in/blogs/ai-agent-guardrails
+- AI agent observability: traces, OpenTelemetry GenAI conventions, cost, alerts, privacy — https://zspace.in/blogs/ai-agent-observability
+- AI agent memory: working, session and long-term memory with consent and expiry — https://zspace.in/blogs/ai-agent-memory
+- Prompt injection: direct and indirect attacks and defence in depth — https://zspace.in/blogs/prompt-injection-prevention
+
+Business process and workflow automation:
+- Business process automation: discovery, prioritization, approaches, governance (hub) — https://zspace.in/blogs/business-process-automation
+- Workflow automation: triggers, actions, error handling, n8n, Make, Zapier or custom code — https://zspace.in/blogs/workflow-automation
+- AI workflow automation: LLM steps with structured outputs inside deterministic workflows — https://zspace.in/blogs/ai-workflow-automation
+- Workflow automation vs RPA: APIs vs user-interface automation — https://zspace.in/blogs/workflow-automation-vs-rpa
+- RPA vs AI automation: rules vs model reasoning, and combined designs — https://zspace.in/blogs/rpa-vs-ai-automation
+- Intelligent document processing: ingestion, extraction, validation, review, integration — https://zspace.in/blogs/intelligent-document-processing
+- AI document extraction: OCR, schemas, structured outputs and field validation — https://zspace.in/blogs/ai-document-extraction
+- AI invoice processing: extraction, two- and three-way matching, approvals, fraud controls — https://zspace.in/blogs/ai-invoice-processing
+- AI email automation: classification, extraction, routing and drafted replies — https://zspace.in/blogs/ai-email-automation
+- AI lead qualification: enrichment, explainable scoring and CRM routing — https://zspace.in/blogs/ai-lead-qualification
+- AI sales automation: research, meeting prep, CRM updates and follow-up drafts — https://zspace.in/blogs/ai-sales-automation
+- AI customer support automation: triage, self-service, agent assist, QA — https://zspace.in/blogs/ai-customer-support-automation
+- AI meeting assistants: transcription, summaries, action items, consent and retention — https://zspace.in/blogs/ai-meeting-assistants
+
+RAG, enterprise knowledge and retrieval:
+- Retrieval-augmented generation: indexing, hybrid retrieval, reranking, citations, evaluation (hub) — https://zspace.in/blogs/retrieval-augmented-generation
+- RAG vs fine-tuning: knowledge vs behaviour, costs and a decision process — https://zspace.in/blogs/rag-vs-fine-tuning
+- Enterprise RAG architecture: connectors, permission-aware retrieval, freshness, governance — https://zspace.in/blogs/enterprise-rag-architecture
+- AI knowledge base: an assistant over company documents with citations and content ownership — https://zspace.in/blogs/ai-knowledge-base
+- Vector databases: ANN indexes, filtering, pgvector vs dedicated databases vs search engines — https://zspace.in/blogs/vector-databases-for-ai
+- Vector embeddings: models, dimensions, similarity, limitations and versioning — https://zspace.in/blogs/vector-embeddings-explained
+- RAG chunking: fixed, recursive, structure-aware and semantic chunking, metadata — https://zspace.in/blogs/rag-chunking-strategies
+- RAG reranking: two-stage retrieval, cross-encoders, candidate sets and thresholds — https://zspace.in/blogs/rag-reranking
+- Hybrid search: BM25 plus vectors with reciprocal rank fusion — https://zspace.in/blogs/hybrid-search-for-rag
+- GraphRAG: knowledge graphs, community summaries, local and global search, when it is not needed — https://zspace.in/blogs/graphrag-explained
+
+MCP, AI integrations and infrastructure:
+- Model Context Protocol: hosts, clients, servers, transports and the 2026-07-28 stateless specification (hub) — https://zspace.in/blogs/model-context-protocol
+- How to build an MCP server: SDKs, tool schemas, transports, authorization, testing — https://zspace.in/blogs/how-to-build-an-mcp-server
+- MCP vs API: why MCP servers wrap APIs rather than replace them — https://zspace.in/blogs/mcp-vs-api
+- MCP security: audience-bound tokens, no token passthrough, tool poisoning, local server risks — https://zspace.in/blogs/mcp-security
+- AI API integration: backend patterns, structured outputs, streaming, retries, cost tracking — https://zspace.in/blogs/ai-api-integration
+- LLM gateway: one interface for many models with routing, budgets and data policies — https://zspace.in/blogs/llm-gateway
+- LLM routing (model routing): static, classifier and cascade strategies, fallbacks, routing vs orchestration, cost governance — https://zspace.in/blogs/llm-routing
+- LLM cost optimization: tokens, routing, prompt caching, batching, budgets and self-hosted infrastructure sizing — https://zspace.in/blogs/llm-cost-optimization
+- AI orchestration: connecting models, retrieval, tools and state in applications — https://zspace.in/blogs/ai-orchestration
+- Agent-to-agent communication: internal hand-offs and the A2A protocol, compared with MCP — https://zspace.in/blogs/agent-to-agent-communication
+
+Voice AI:
+- Voice AI agent development: STT, LLM and TTS vs speech-to-speech, latency, telephony (hub) — https://zspace.in/blogs/voice-ai-agent-development
+- AI voice agents for customer service: verification, warm transfers, QA metrics — https://zspace.in/blogs/ai-voice-agents-customer-service
+- AI receptionist: call answering, booking, lead capture and escalation — https://zspace.in/blogs/ai-receptionist
+- AI call automation: inbound routing and consented outbound calls (TCPA and EU AI Act context) — https://zspace.in/blogs/ai-call-automation
+
+AI implementation:
+- AI implementation strategy: opportunity discovery, prioritization, pilots, governance, rollout — https://zspace.in/blogs/ai-implementation-strategy
+
+Enterprise AI: readiness, governance, security and operations:
+- Enterprise AI implementation: shared platform, operating model, portfolio, RACI and funding (hub) — https://zspace.in/blogs/enterprise-ai-implementation
+- POC vs pilot vs production: stage questions, gates, success and stop criteria, budgets — https://zspace.in/blogs/ai-poc-vs-pilot-vs-production
+- AI readiness assessment: five dimensions, scoring rubric, gaps and roadmap — https://zspace.in/blogs/ai-readiness-assessment
+- AI data readiness: documents, structured data, ownership, ground truth — https://zspace.in/blogs/ai-data-readiness
+- AI governance framework: roles, risk tiers, inventory, NIST AI RMF, ISO/IEC 42001, EU AI Act timeline — https://zspace.in/blogs/ai-governance-framework
+- AI security for business applications: threat model, tool permissions, leakage, OWASP LLM Top 10 — https://zspace.in/blogs/ai-security-business-applications
+- AI data privacy: data flows, redaction, provider terms, DPIAs, retention — https://zspace.in/blogs/ai-data-privacy
+- AI model evaluation: datasets, metrics by task, faithfulness, LLM judges, CI gates — https://zspace.in/blogs/ai-model-evaluation
+- AI model monitoring: quality, drift, cost, feedback loops, incident response — https://zspace.in/blogs/ai-model-monitoring
+
+AI software development and coding agents:
+- AI in software development: tools, verification, policies, roles and where to start (hub) — https://zspace.in/blogs/ai-software-development
+- AI coding agents: how they work, writing agent-ready tasks, permissions, CI use, failures — https://zspace.in/blogs/ai-coding-agents
+- AI-assisted development vs agentic coding: autonomy ladder, policies, cost per merged change — https://zspace.in/blogs/ai-assisted-development-vs-agentic-coding
+- AI code review: what it checks, review guides, noise control, reviewing AI-generated PRs — https://zspace.in/blogs/ai-code-review
+- AI in software testing: pipeline, triage and flaky tests, test data, testing AI features — https://zspace.in/blogs/ai-software-testing
+- AI test generation: strong vs weak tests, characterization, contract and property-based tests — https://zspace.in/blogs/ai-test-generation
+- AI debugging: hypothesis-driven workflow, logs and traces, incidents, hard bugs — https://zspace.in/blogs/ai-debugging
+- AI code documentation: keeping docs in sync, API docs, decision records, onboarding — https://zspace.in/blogs/ai-code-documentation
+- AI legacy code modernization: assessment, behaviour pinning, slice migration, upgrades — https://zspace.in/blogs/ai-legacy-code-modernization
+- AI across the SDLC: stage by stage roles, requirements template, lifecycle metrics — https://zspace.in/blogs/ai-software-development-lifecycle
+
+AI for business functions:
+- AI HR automation: employee requests, policy assistants, onboarding, privacy and fairness — https://zspace.in/blogs/ai-hr-automation
+- AI recruitment automation: what to automate, bias audits (e.g. NYC Local Law 144), candidate experience — https://zspace.in/blogs/ai-recruitment-automation
+- AI content operations: briefs, expert-led drafting, review, localization, search guidance — https://zspace.in/blogs/ai-content-operations
+- AI procurement automation: intake, quote comparison, spend classification, controls — https://zspace.in/blogs/ai-procurement-automation
+- AI IT service management: triage, self-service, approved automations, knowledge, metrics — https://zspace.in/blogs/ai-it-service-management
+- AI data entry automation: field mapping, validation, duplicates, reliable write-back — https://zspace.in/blogs/ai-data-entry-automation
+- AI expense management: receipt capture, card matching, policy checks, fraud signals — https://zspace.in/blogs/ai-expense-management
+- AI compliance automation: obligations to controls, evidence collection, questionnaires — https://zspace.in/blogs/ai-compliance-automation
+
+AI by industry (administrative and operational automation, not regulated decisions):
+- AI automation for legal teams: research verification, contract playbooks, confidentiality, ABA Opinion 512 — https://zspace.in/blogs/ai-automation-legal
+- AI automation in telecommunications: care, network operations, field service, SIM swap safeguards — https://zspace.in/blogs/ai-automation-telecommunications
+- AI automation in energy and utilities: outage communication, field work, vulnerable customers, OT separation — https://zspace.in/blogs/ai-automation-energy-utilities
+
+AI application and product development:
+- AI application development: types, problem to product, model choice, architecture, team (hub) — https://zspace.in/blogs/ai-application-development
+- Generative AI application development: use cases, prompts, structured outputs, guardrails, operations — https://zspace.in/blogs/generative-ai-application-development
+- AI-powered SaaS development: multi-tenancy, metering and pricing, cost per tenant, admin controls — https://zspace.in/blogs/ai-powered-saas-development
+- AI copilot development: context, confirmed actions, tool definitions, UX and metrics — https://zspace.in/blogs/ai-copilot-development
+- AI search development: query understanding, hybrid retrieval, ranking, search analytics — https://zspace.in/blogs/ai-search-development
+- AI recommendation systems beyond retail: pipeline, cold start, embeddings, experiments, fairness — https://zspace.in/blogs/ai-recommendation-systems
+- Multimodal AI applications: text, images, audio, video and documents; architecture and evaluation — https://zspace.in/blogs/multimodal-ai-applications
+- Computer vision development: task choice, data, edge vs cloud, licensing, people in images — https://zspace.in/blogs/computer-vision-development
+- AI image recognition: classification vs detection, annotation, transfer learning, thresholds — https://zspace.in/blogs/ai-image-recognition
+- AI-powered mobile apps: on-device vs cloud, Apple Foundation Models, ML Kit GenAI, privacy, cost controls — https://zspace.in/blogs/ai-powered-mobile-app-development
+
+LLMOps and production AI systems:
+- LLMOps: versioning, evaluation, deployment, tracing, cost, security and governance for LLM apps (hub) — https://zspace.in/blogs/llmops
+- LLMOps vs MLOps: lifecycles, evaluation, monitoring, costs and team responsibilities compared — https://zspace.in/blogs/llmops-vs-mlops
+- LLM application deployment: environments, secrets, gateways, streaming, scaling, readiness checklist — https://zspace.in/blogs/llm-application-deployment
+- LLM evaluation pipeline: datasets, deterministic checks, calibrated judges, human review, release gates — https://zspace.in/blogs/llm-evaluation-pipeline
+- LLM observability and tracing: spans, OpenTelemetry GenAI conventions, cost, quality signals, debugging — https://zspace.in/blogs/llm-observability
+- Prompt versioning: templates, registries, environment promotion, prompt-model pairing, rollback — https://zspace.in/blogs/prompt-versioning
+- LLM regression testing: baselines, non-deterministic checks, model upgrades, retrieval regressions — https://zspace.in/blogs/llm-regression-testing
+- LLM reliability: timeouts, retries, circuit breakers, fallback models, degraded modes, escalation — https://zspace.in/blogs/llm-application-reliability
+- AI release management: shadow tests, canaries, flags, rollout thresholds, rollback, release notes — https://zspace.in/blogs/ai-application-release-management
+
+AI data engineering:
+- AI data engineering: sources, pipelines, AI-ready stores, permissions, lineage and quality (hub) — https://zspace.in/blogs/ai-data-engineering
+- Data pipelines for AI: validation, data contracts, idempotent transforms, index sync, backfills — https://zspace.in/blogs/data-pipelines-for-ai
+- AI data ingestion: connectors, change data capture, incremental sync, permission capture, deletions — https://zspace.in/blogs/ai-data-ingestion
+- Unstructured data processing: parsing, OCR, tables, transcription, source-linked chunks — https://zspace.in/blogs/unstructured-data-processing-ai
+- Synthetic data generation and synthetic vs real data: methods, quality and privacy checks, hybrid datasets — https://zspace.in/blogs/synthetic-data-generation
+- AI data annotation: taxonomies, guidelines, agreement, model-assisted labelling, LLM output rating — https://zspace.in/blogs/ai-data-annotation
+- Data quality for AI: dimensions, audit framework, validation, duplicates, representativeness — https://zspace.in/blogs/data-quality-for-ai
+- AI data lineage: chunk-level provenance, OpenLineage, reproducibility, impact analysis, deletion — https://zspace.in/blogs/ai-data-lineage
+- Real-time data for AI: when streaming is needed, Kafka and Flink patterns, idempotency, lag — https://zspace.in/blogs/real-time-data-for-ai
+
+AI security and red teaming (defensive guidance):
+- AI red teaming: scoping, scenario categories, PyRIT and garak, rating and remediation — https://zspace.in/blogs/ai-red-teaming
+- Indirect prompt injection: retrieval, browsing, email and tool-output risks; isolation and confirmation — https://zspace.in/blogs/indirect-prompt-injection
+- AI jailbreak testing: policy test sets, attack success vs over-refusal, layered remediation — https://zspace.in/blogs/ai-jailbreak-testing
+- AI data leakage: retrieval permissions, tenant isolation, system prompts, logs, exfiltration channels — https://zspace.in/blogs/ai-data-leakage
+- AI agent access control: agent identities, delegated vs service access, scoped tokens, approvals — https://zspace.in/blogs/ai-agent-access-control
+- AI tool security: narrow tools, strict schemas, validation, sandboxing, safe errors — https://zspace.in/blogs/ai-tool-security
+- AI supply chain security: model provenance, safetensors, licences, poisoning, AI bill of materials — https://zspace.in/blogs/ai-supply-chain-security
+- AI threat modeling: trust boundaries, abuse cases, OWASP LLM Top 10, residual risk — https://zspace.in/blogs/ai-application-threat-modeling
+- AI security testing checklist: access, injection, leakage, tools, output handling, operations — https://zspace.in/blogs/ai-security-testing
+
+AI product design and human-AI experience:
+- AI product design: problem fit, real-model prototypes, automation levels, designing for errors (hub) — https://zspace.in/blogs/ai-product-design
+- AI UX design: interaction patterns, states, uncertainty, control, accessibility — https://zspace.in/blogs/ai-ux-design
+- Human-AI interaction principles from Microsoft HAX and Google PAIR, calibrated trust — https://zspace.in/blogs/human-ai-interaction-design
+- AI chat interface design: context, sources, tool steps, message states, handoff, mobile — https://zspace.in/blogs/ai-chat-interface-design
+- AI copilot UX: inline suggestions, previews, approval, undo, proactivity — https://zspace.in/blogs/ai-copilot-ux
+- AI onboarding UX: first-use tasks, limits, privacy explanations, activation metrics — https://zspace.in/blogs/ai-onboarding-ux
+- AI transparency in UX: disclosure, sources, uncertainty, human review, EU AI Act Article 50 context — https://zspace.in/blogs/ai-transparency-ux
+- AI error handling UX: detectability, clarification, retry, recovery from wrong actions — https://zspace.in/blogs/ai-error-handling-ux
+- AI feedback UX: ratings, corrections, implicit signals, privacy, feeding evaluation sets — https://zspace.in/blogs/ai-feedback-ux
+- How to validate an AI product idea: desirability, feasibility on real examples, viability, risk — https://zspace.in/blogs/ai-product-idea-validation
+
+AI infrastructure, inference and platforms:
+- AI inference optimization: prefill and decode, workload levers, routing, serving optimizations (hub) — https://zspace.in/blogs/ai-inference-optimization
+- LLM model serving: vLLM, SGLang, TensorRT-LLM, gateways, autoscaling, capacity planning — https://zspace.in/blogs/llm-model-serving
+- LLM inference vs training: pretraining, fine-tuning and inference compared — https://zspace.in/blogs/llm-inference-vs-training
+- GPU optimization for AI: bottlenecks, batching, precision, parallelism, sharing, profiling — https://zspace.in/blogs/gpu-optimization-for-ai
+- LLM quantization: FP8, INT8, 4-bit formats, GPTQ, AWQ, GGUF, evaluation and hardware support — https://zspace.in/blogs/llm-quantization
+- LLM batching and caching: continuous batching, KV and prefix caching, provider prompt caching, invalidation — https://zspace.in/blogs/llm-batching-and-caching
+- AI edge deployment: devices, runtimes, compression, offline sync, signed fleet updates — https://zspace.in/blogs/ai-edge-deployment
+- LLM self-hosting: open-weight vs open-source, licences, hardware, serving, total cost of ownership — https://zspace.in/blogs/llm-self-hosting
+- AI platform engineering: model gateway, shared services, golden paths, built-in governance — https://zspace.in/blogs/ai-platform-engineering
 
 ## Industries
 
@@ -373,6 +545,8 @@ Ecommerce: Marketplace Ecommerce (hub: marketplace ecommerce website development
 - Marketplace payments: charge patterns, payment states, payout schedules, reconciliation — https://zspace.in/blogs/marketplace-payment-architecture
 - Marketplace scalability: seller isolation, queues, asynchronous indexing, multi-tenant data — https://zspace.in/blogs/ecommerce-marketplace-scalability
 - Marketplace vs traditional ecommerce: business model, revenue, support and technology compared — https://zspace.in/blogs/ecommerce-marketplace-vs-online-store
+- Marketplace product catalog management: product vs offer model, content ownership, GTIN matching, variants, attributes and the default offer — https://zspace.in/blogs/marketplace-product-catalog-management
+- Marketplace trust and safety: seller verification (EU DSA, US INFORM Act context, not legal advice), risk tiers, listing moderation, payout controls, buyer protection, appeals — https://zspace.in/blogs/marketplace-trust-and-safety
 
 Ecommerce: Subscription Ecommerce (hub: subscription ecommerce website development; category-specific guides for beauty and food subscriptions are in the vertical groups above):
 - Subscription product page design: one-time vs subscribe, frequency, price clarity, CTA — https://zspace.in/blogs/subscription-product-page-design
@@ -386,6 +560,7 @@ Ecommerce: Subscription Ecommerce (hub: subscription ecommerce website developme
 - Subscription management: self-service capability matrix, renewals and reminders — https://zspace.in/blogs/subscription-management-portal
 - Subscription retention: voluntary vs involuntary churn, feedback loops, retention analytics — https://zspace.in/blogs/subscription-ecommerce-retention
 - Ecommerce replenishment: usage estimates, reminders, subscriptions, predictive timing, inventory — https://zspace.in/blogs/ecommerce-replenishment
+- Subscription billing architecture: plans and prices, state machine, schedules, invoices, proration, tax, events and testing with simulated time — https://zspace.in/blogs/subscription-billing-architecture
 
 Ecommerce: International Ecommerce (hub: international ecommerce website development; tax, legal and payment requirements vary by jurisdiction):
 - Multi-language ecommerce website: URLs, hreflang, translated content, search and QA — https://zspace.in/blogs/multi-language-ecommerce-website
@@ -403,6 +578,8 @@ Ecommerce: International Ecommerce (hub: international ecommerce website develop
 - Ecommerce tax integration and international tax architecture (not tax advice) — https://zspace.in/blogs/ecommerce-tax-integration
 - Translation vs localization vs transcreation, with practical examples — https://zspace.in/blogs/ecommerce-localization-vs-translation
 - Global ecommerce UX: practical market differences, researched without stereotypes — https://zspace.in/blogs/global-ecommerce-ux
+- Ecommerce duties and import taxes: landed cost, HS codes, DDP vs DAP, low-value import rule changes (US, EU, UK, Australia, as of October 2026), checkout messaging (not tax advice) — https://zspace.in/blogs/ecommerce-duties-import-taxes
+- Merchant of record for ecommerce: what an MoR does, MoR vs own entity, Shopify Managed Markets, evaluation and when to move markets in-house — https://zspace.in/blogs/ecommerce-merchant-of-record
 
 Ecommerce: Ecommerce Retention (hub: ecommerce customer retention; covers repeat purchase, accounts, loyalty, recommendations, personalization and segmentation):
 - Ecommerce reorder experience: buy again, order history, reminders, saved carts (consumer, not B2B) — https://zspace.in/blogs/ecommerce-reorder-experience
@@ -415,6 +592,9 @@ Ecommerce: Ecommerce Retention (hub: ecommerce customer retention; covers repeat
 - Repeat purchase optimization: mechanisms compared and the account experience — https://zspace.in/blogs/ecommerce-repeat-purchases
 - Ecommerce loyalty programmes: goals, structures, economics, integrations and honest measurement — https://zspace.in/blogs/ecommerce-loyalty-programs
 - Ecommerce rewards UX: earning, balances, redemption, progress and transparency — https://zspace.in/blogs/ecommerce-loyalty-program-ux
+- Ecommerce loyalty program development: event intake, rules engine, append-only points ledger, tiers, redemption, expiry, fraud and finance reporting — https://zspace.in/blogs/ecommerce-loyalty-program-development
+- Ecommerce referral program development: links and codes, attribution, qualification after returns, two-sided rewards, fraud controls, disclosure — https://zspace.in/blogs/ecommerce-referral-program-development
+- Ecommerce customer retention technology: data and identity, CRM vs CDP vs warehouse, engagement tools, programs, service systems, holdout measurement — https://zspace.in/blogs/ecommerce-customer-retention-technology
 
 Ecommerce: Ecommerce Modernization (hub: ecommerce technology modernization roadmap; connects to the integrations and architecture groups above):
 - Ecommerce technology modernization roadmap: 10 steps from audit to continuous optimization (hub) — https://zspace.in/blogs/ecommerce-technology-modernization-roadmap
@@ -558,6 +738,17 @@ Ecommerce: Trust & Quality (Accessibility, Security, Privacy, Compliance; genera
 - Ecommerce privacy: data mapping, consent, notices, rights requests, vendors and retention — https://zspace.in/blogs/ecommerce-privacy-customer-data
 - Ecommerce compliance areas: consumer, subscriptions, reviews, privacy, accessibility, payments, product safety, tax — https://zspace.in/blogs/ecommerce-compliance
 
+Ecommerce: Payments & Fraud (single-provider basics are in ecommerce payment gateway integration, listed under Ecommerce Integrations; card network rules and PCI obligations are summarized as general guidance, confirm with your acquirer):
+- Payment orchestration: provider abstraction, token vaults and network tokens, unified states, failover, reconciliation, build vs buy — https://zspace.in/blogs/ecommerce-payment-orchestration
+- Payment routing: routing inputs, ordered rules, local acquiring, cost vs approval, cascading only soft declines, measurement with holdouts — https://zspace.in/blogs/ecommerce-payment-routing
+- Digital wallet integration: Apple Pay, Google Pay and PayPal, eligibility, domain verification, payment sheet updates, testing — https://zspace.in/blogs/ecommerce-digital-wallet-integration
+- Payment failure handling: soft vs hard declines, unknown outcomes, idempotency keys, retry rules, shopper messages, monitoring — https://zspace.in/blogs/ecommerce-payment-failure-handling
+- Recurring payments: CIT vs MIT, stored credentials, network tokens, account updater, SCA, dunning — https://zspace.in/blogs/ecommerce-recurring-payments
+- 3D Secure: EMV 3DS frictionless and challenge flows, SCA exemptions, liability shift, checkout UX — https://zspace.in/blogs/3d-secure-ecommerce
+- Fraud detection: fraud types, signals, risk scoring, manual review, false positives — https://zspace.in/blogs/ecommerce-fraud-detection
+- Chargeback management: dispute lifecycle, evidence by reason, Visa CE 3.0 and VAMP context, prevention — https://zspace.in/blogs/ecommerce-chargeback-management
+- Payment security: PCI scope by architecture, 2025 SAQ A change, payment page scripts (6.4.3, 11.6.1), keys, webhooks (not a PCI assessment) — https://zspace.in/blogs/ecommerce-payment-security
+
 Ecommerce: Ecommerce Operations (hub: ecommerce order management system; orders, returns, tracking and fulfilment):
 - Ecommerce order management system: lifecycle, routing, inventory, platform vs dedicated OMS (hub) — https://zspace.in/blogs/ecommerce-order-management-system
 - Order management integration: data ownership, events vs APIs, idempotency, reconciliation — https://zspace.in/blogs/ecommerce-order-management-integration
@@ -569,6 +760,13 @@ Ecommerce: Ecommerce Operations (hub: ecommerce order management system; orders,
 - Delivery tracking pipeline: carrier APIs, webhooks vs polling, normalized events, missing-scan detection — https://zspace.in/blogs/ecommerce-delivery-tracking
 - Shipping UX: delivery dates and costs before checkout, options, pickup, restrictions — https://zspace.in/blogs/ecommerce-shipping-ux
 - Post-purchase experience: confirmation to reorder — https://zspace.in/blogs/ecommerce-post-purchase-experience
+- OMS vs IMS: order management vs inventory management responsibilities, availability ownership and integration — https://zspace.in/blogs/oms-vs-ims
+- Distributed order management: fulfilment nodes, sourcing rules, split shipments, ship-from-store and re-sourcing — https://zspace.in/blogs/distributed-order-management
+- Ecommerce fulfilment (3PL) integration: message contract, release holds, acknowledgements, tracking per package, inventory sync, ASNs, exceptions — https://zspace.in/blogs/ecommerce-fulfilment-integration
+- Ecommerce WMS integration: data ownership, waves, short picks, stock movement events, reconciliation and peaks — https://zspace.in/blogs/ecommerce-warehouse-management-integration
+- Ecommerce pre-orders and backorders: payment timing, caps, mixed carts, allocation, delays and cancellations — https://zspace.in/blogs/ecommerce-preorders-backorders
+- Ecommerce refund automation: triggers, amount calculation, approval rules, provider refund APIs, failures, disputes and reconciliation — https://zspace.in/blogs/ecommerce-refund-automation
+- Ecommerce exchange management: eligibility, stock reservation, price differences, instant exchanges and linked records — https://zspace.in/blogs/ecommerce-exchange-management
 
 Ecommerce: Ecommerce Migration (hub: ecommerce migration strategy; general website moves are in 'Migration and replatforming' above):
 - Ecommerce migration strategy: goals, scope and workstreams (hub) — https://zspace.in/blogs/ecommerce-platform-migration

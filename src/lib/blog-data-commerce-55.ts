@@ -654,6 +654,7 @@ export const commercePosts55: BlogPost[] = [
         body: [
           "Vector search is good at meaning and weaker at exactness. A query for a specific model number, SKU, size or brand should return that exact item first, and embeddings may place similar-looking codes or brands near each other. Keyword search is precise for these cases.",
           "Hybrid search runs both and combines the results, for example by merging ranked lists or blending scores. Exact matches keep their precision; descriptive queries benefit from meaning. Most ecommerce stores with varied queries (some precise, some descriptive) are better served by hybrid than by either approach alone.",
+          "Fusion methods such as reciprocal rank fusion are covered in [[/blogs/hybrid-search-for-rag|hybrid search for RAG]].",
         ],
         table: {
           headers: ["Query type", "Keyword", "Vector", "Hybrid"],
@@ -728,6 +729,7 @@ export const commercePosts55: BlogPost[] = [
         heading: "Choosing an Embedding Approach",
         body: [
           "General-purpose embedding models work reasonably well for many catalogs because product language overlaps with everyday language. Specialized catalogs (industrial parts, cosmetics ingredients, technical electronics) may need domain tuning, richer attribute text or more weight on keyword matching. Whatever model you use, record which one produced the vectors, because changing models requires re-embedding the whole catalog and re-evaluating results.",
+          "Embedding models, dimensions and limitations are explained in [[/blogs/vector-embeddings-explained|vector embeddings explained]].",
         ],
         table: {
           headers: ["Decision", "Consider"],

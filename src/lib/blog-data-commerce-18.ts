@@ -77,6 +77,7 @@ export const commercePosts18: BlogPost[] = [
         heading: "Catalog and Listings",
         body: [
           "If every seller creates their own listing, you'll get duplicates, inconsistent titles and missing attributes, which makes search and comparison harder. Many marketplaces use a shared catalog: one product record, with several sellers attaching offers (price, condition, stock, delivery). Whichever model you choose, define required attributes per category, provide listing templates and bulk upload, and moderate listings for quality and policy before or after publishing. See [[/blogs/ecommerce-website-architecture|ecommerce architecture]] for catalog modeling.",
+          "For product and offer models, matching and listing quality, see [[/blogs/marketplace-product-catalog-management|marketplace product catalog management]].",
         ],
       },
       {

@@ -115,6 +115,49 @@ import { commercePosts79 } from "./blog-data-commerce-79";
 import { commercePosts80 } from "./blog-data-commerce-80";
 import { commercePosts81 } from "./blog-data-commerce-81";
 import { commercePosts82 } from "./blog-data-commerce-82";
+import { commercePosts83 } from "./blog-data-commerce-83";
+import { commercePosts84 } from "./blog-data-commerce-84";
+import { commercePosts85 } from "./blog-data-commerce-85";
+import { commercePosts86 } from "./blog-data-commerce-86";
+import { commercePosts87 } from "./blog-data-commerce-87";
+import { commercePosts88 } from "./blog-data-commerce-88";
+import { commercePosts89 } from "./blog-data-commerce-89";
+import { commercePosts90 } from "./blog-data-commerce-90";
+import { aiCorePosts1 } from "./blog-data-ai-core-1";
+import { aiCorePosts2 } from "./blog-data-ai-core-2";
+import { aiCorePosts3 } from "./blog-data-ai-core-3";
+import { aiCorePosts4 } from "./blog-data-ai-core-4";
+import { aiCorePosts5 } from "./blog-data-ai-core-5";
+import { aiCorePosts6 } from "./blog-data-ai-core-6";
+import { aiCorePosts7 } from "./blog-data-ai-core-7";
+import { aiCorePosts8 } from "./blog-data-ai-core-8";
+import { aiCorePosts9 } from "./blog-data-ai-core-9";
+import { aiCorePosts10 } from "./blog-data-ai-core-10";
+import { aiCorePosts11 } from "./blog-data-ai-core-11";
+import { aiCorePosts12 } from "./blog-data-ai-core-12";
+import { aiCorePosts13 } from "./blog-data-ai-core-13";
+import { aiAppsPosts1 } from "./blog-data-ai-apps-1";
+import { aiAppsPosts2 } from "./blog-data-ai-apps-2";
+import { aiAppsPosts3 } from "./blog-data-ai-apps-3";
+import { aiAppsPosts4 } from "./blog-data-ai-apps-4";
+import { aiAppsPosts5 } from "./blog-data-ai-apps-5";
+import { aiAppsPosts6 } from "./blog-data-ai-apps-6";
+import { aiAppsPosts7 } from "./blog-data-ai-apps-7";
+import { aiAppsPosts8 } from "./blog-data-ai-apps-8";
+import { aiAppsPosts9 } from "./blog-data-ai-apps-9";
+import { aiAppsPosts10 } from "./blog-data-ai-apps-10";
+import { aiOpsPosts1 } from "./blog-data-ai-ops-1";
+import { aiOpsPosts2 } from "./blog-data-ai-ops-2";
+import { aiOpsPosts3 } from "./blog-data-ai-ops-3";
+import { aiOpsPosts4 } from "./blog-data-ai-ops-4";
+import { aiOpsPosts5 } from "./blog-data-ai-ops-5";
+import { aiOpsPosts6 } from "./blog-data-ai-ops-6";
+import { aiOpsPosts7 } from "./blog-data-ai-ops-7";
+import { aiOpsPosts8 } from "./blog-data-ai-ops-8";
+import { aiOpsPosts9 } from "./blog-data-ai-ops-9";
+import { aiOpsPosts10 } from "./blog-data-ai-ops-10";
+import { aiOpsPosts11 } from "./blog-data-ai-ops-11";
+import { aiOpsPosts12 } from "./blog-data-ai-ops-12";
 
 export type BlogSection = {
   heading: string;
@@ -146,6 +189,8 @@ export type BlogPost = {
   readingTime: string;
   relatedServiceSlugs: string[];
   relatedIndustrySlugs?: string[];
+  /** Hand-picked "Keep exploring" articles, shown before the automatic picks. */
+  relatedSlugs?: string[];
   faqs?: { q: string; a: string }[];
   content: BlogSection[];
 };
@@ -276,6 +321,7 @@ export const posts: BlogPost[] = [
         heading: "Start narrow, expand later",
         body: [
           "The automations that last are the ones that start by solving one specific, well-understood workflow, with clear fallbacks when something goes wrong, rather than trying to automate an entire department at once — the same scoping process we use for every [[/services/ai-automation|automation project]] we take on.",
+          "For the full method from discovery to measurement, see [[/blogs/business-process-automation|business process automation]].",
         ],
       },
     ],
@@ -1964,7 +2010,7 @@ export const posts: BlogPost[] = [
 // The "AI agents in [industry]" cluster lives in its own module — merged in
 // here so every existing consumer of `posts` (listing, sitemap, related
 // posts, category filter) picks it up automatically.
-posts.push(...aiAgentPosts, ...aiAgentPosts2, ...aiAgentPosts3, ...shopifyCroPosts, ...shopifyCroPosts2, ...shopifyCroPosts3, ...shopifyCroPosts4, ...webDevPosts, ...webDevPosts2, ...webDevPosts3, ...webDevPosts4, ...webDevPosts5, ...webDevPosts6, ...webDevPosts7, ...webDevPosts8, ...webDevPosts9, ...mobilePosts, ...mobilePosts2, ...mobilePosts3, ...mobilePosts4, ...mobilePosts5, ...designPosts, ...designPosts2, ...designPosts3, ...designPosts4, ...designPosts5, ...designPosts6, ...designPosts7, ...growthPosts, ...growthPosts2, ...commercePosts, ...commercePosts2, ...commercePosts3, ...commercePosts4, ...commercePosts5, ...commercePosts6, ...commercePosts7, ...commercePosts8, ...commercePosts9, ...commerceRewrites, ...commercePosts10, ...commercePosts11, ...commercePosts12, ...commercePosts13, ...commercePosts14, ...commercePosts15, ...commercePosts16, ...commercePosts17, ...commercePosts18, ...commercePosts19, ...commercePosts20, ...commercePosts21, ...commerceRewrites2, ...commercePosts22, ...commercePosts23, ...commercePosts24, ...commercePosts25, ...commercePosts26, ...commercePosts27, ...commercePosts28, ...commercePosts29, ...commercePosts30, ...commercePosts31, ...commercePosts32, ...commercePosts33, ...commercePosts34, ...commercePosts35, ...commercePosts36, ...commercePosts37, ...commercePosts38, ...commercePosts39, ...commercePosts40, ...commercePosts41, ...commercePosts42, ...commercePosts43, ...commercePosts44, ...commercePosts45, ...commercePosts46, ...commercePosts47, ...commercePosts48, ...commercePosts49, ...commercePosts50, ...commercePosts51, ...commercePosts52, ...commercePosts53, ...commercePosts54, ...commercePosts55, ...commercePosts56, ...commercePosts57, ...commercePosts58, ...commercePosts59, ...commercePosts60, ...commercePosts61, ...commercePosts62, ...commercePosts63, ...commercePosts64, ...commercePosts65, ...commercePosts66, ...commercePosts67, ...commercePosts68, ...commercePosts69, ...commercePosts70, ...commercePosts71, ...commercePosts72, ...commercePosts73, ...commercePosts74, ...commercePosts75, ...commercePosts76, ...commercePosts77, ...commercePosts78, ...commercePosts79, ...commercePosts80, ...commercePosts81, ...commercePosts82);
+posts.push(...aiAgentPosts, ...aiAgentPosts2, ...aiAgentPosts3, ...shopifyCroPosts, ...shopifyCroPosts2, ...shopifyCroPosts3, ...shopifyCroPosts4, ...webDevPosts, ...webDevPosts2, ...webDevPosts3, ...webDevPosts4, ...webDevPosts5, ...webDevPosts6, ...webDevPosts7, ...webDevPosts8, ...webDevPosts9, ...mobilePosts, ...mobilePosts2, ...mobilePosts3, ...mobilePosts4, ...mobilePosts5, ...designPosts, ...designPosts2, ...designPosts3, ...designPosts4, ...designPosts5, ...designPosts6, ...designPosts7, ...growthPosts, ...growthPosts2, ...commercePosts, ...commercePosts2, ...commercePosts3, ...commercePosts4, ...commercePosts5, ...commercePosts6, ...commercePosts7, ...commercePosts8, ...commercePosts9, ...commerceRewrites, ...commercePosts10, ...commercePosts11, ...commercePosts12, ...commercePosts13, ...commercePosts14, ...commercePosts15, ...commercePosts16, ...commercePosts17, ...commercePosts18, ...commercePosts19, ...commercePosts20, ...commercePosts21, ...commerceRewrites2, ...commercePosts22, ...commercePosts23, ...commercePosts24, ...commercePosts25, ...commercePosts26, ...commercePosts27, ...commercePosts28, ...commercePosts29, ...commercePosts30, ...commercePosts31, ...commercePosts32, ...commercePosts33, ...commercePosts34, ...commercePosts35, ...commercePosts36, ...commercePosts37, ...commercePosts38, ...commercePosts39, ...commercePosts40, ...commercePosts41, ...commercePosts42, ...commercePosts43, ...commercePosts44, ...commercePosts45, ...commercePosts46, ...commercePosts47, ...commercePosts48, ...commercePosts49, ...commercePosts50, ...commercePosts51, ...commercePosts52, ...commercePosts53, ...commercePosts54, ...commercePosts55, ...commercePosts56, ...commercePosts57, ...commercePosts58, ...commercePosts59, ...commercePosts60, ...commercePosts61, ...commercePosts62, ...commercePosts63, ...commercePosts64, ...commercePosts65, ...commercePosts66, ...commercePosts67, ...commercePosts68, ...commercePosts69, ...commercePosts70, ...commercePosts71, ...commercePosts72, ...commercePosts73, ...commercePosts74, ...commercePosts75, ...commercePosts76, ...commercePosts77, ...commercePosts78, ...commercePosts79, ...commercePosts80, ...commercePosts81, ...commercePosts82, ...commercePosts83, ...commercePosts84, ...commercePosts85, ...commercePosts86, ...commercePosts87, ...commercePosts88, ...commercePosts89, ...commercePosts90, ...aiCorePosts1, ...aiCorePosts2, ...aiCorePosts3, ...aiCorePosts4, ...aiCorePosts5, ...aiCorePosts6, ...aiCorePosts7, ...aiCorePosts8, ...aiCorePosts9, ...aiCorePosts10, ...aiCorePosts11, ...aiCorePosts12, ...aiCorePosts13, ...aiAppsPosts1, ...aiAppsPosts2, ...aiAppsPosts3, ...aiAppsPosts4, ...aiAppsPosts5, ...aiAppsPosts6, ...aiAppsPosts7, ...aiAppsPosts8, ...aiAppsPosts9, ...aiAppsPosts10, ...aiOpsPosts1, ...aiOpsPosts2, ...aiOpsPosts3, ...aiOpsPosts4, ...aiOpsPosts5, ...aiOpsPosts6, ...aiOpsPosts7, ...aiOpsPosts8, ...aiOpsPosts9, ...aiOpsPosts10, ...aiOpsPosts11, ...aiOpsPosts12);
 
 export function getPostBySlug(slug: string) {
   return posts.find((post) => post.slug === slug);
@@ -1972,6 +2018,11 @@ export function getPostBySlug(slug: string) {
 
 export function getRelatedPosts(post: BlogPost, count = 3): BlogPost[] {
   const pool = posts.filter((p) => p.slug !== post.slug);
+
+  const curated = (post.relatedSlugs ?? [])
+    .map((slug) => pool.find((p) => p.slug === slug))
+    .filter((p): p is BlogPost => Boolean(p));
+  if (curated.length >= count) return curated.slice(0, count);
 
   const sameCategory = pool.filter((p) => p.category === post.category);
   const sharedService = pool.filter(
@@ -1981,5 +2032,6 @@ export function getRelatedPosts(post: BlogPost, count = 3): BlogPost[] {
   );
   const rest = pool.filter((p) => !sameCategory.includes(p) && !sharedService.includes(p));
 
-  return [...sameCategory, ...sharedService, ...rest].slice(0, count);
+  const automatic = [...sameCategory, ...sharedService, ...rest].filter((p) => !curated.includes(p));
+  return [...curated, ...automatic].slice(0, count);
 }

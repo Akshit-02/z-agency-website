@@ -106,6 +106,7 @@ export const commercePosts39: BlogPost[] = [
         heading: "Payments and Entities",
         body: [
           "Businesses with legal entities in several regions may need separate payment accounts, tax registrations and invoicing per entity, which pushes toward separate stores or advanced platform features. Single-entity brands can often sell to many markets from one store, subject to tax and duty obligations in each. Take tax and legal advice early.",
+          "A third route, selling through a provider that acts as the legal seller, is explained in [[/blogs/ecommerce-merchant-of-record|merchant of record for ecommerce]].",
         ],
       },
       {

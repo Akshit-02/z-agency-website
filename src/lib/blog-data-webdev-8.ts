@@ -438,6 +438,7 @@ export const webDevPosts8: BlogPost[] = [
         heading: "Failed Payments",
         body: [
           "Declines, authentication failures and network errors are normal. Show a clear, non-technical message, keep the order recoverable, let the customer retry or choose another method, and never fulfill an unpaid order. Track failure rates, since a spike can signal an integration problem.",
+          "Decline classification, idempotency and retry rules are covered in [[/blogs/ecommerce-payment-failure-handling|ecommerce payment failure handling]].",
         ],
       },
       {

@@ -1756,6 +1756,7 @@ export const aiAgentPosts3: BlogPost[] = [
         heading: "Metadata Generation and Content Classification",
         body: [
           "Agents can automatically generate metadata — keywords, scene descriptions, content summaries, classifications — directly from the content itself, improving searchability and discoverability across platforms and increasingly mattering for how AI-mediated content discovery surfaces a title in the first place.",
+          "Editorial workflows for AI-assisted writing and publishing are covered in [[/blogs/ai-content-operations|AI content operations]].",
         ],
         visual: { variant: "grid", accent: "blue", caption: "A metadata agent generates structured, searchable tags directly from the content itself, across a full library." },
       },

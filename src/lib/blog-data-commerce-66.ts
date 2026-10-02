@@ -282,6 +282,7 @@ export const commercePosts66: BlogPost[] = [
         heading: "Choosing Payment Providers",
         body: [
           "Global providers cover many countries and methods through one integration; regional providers may offer specific local methods or local acquiring. Evaluate coverage of your markets' methods, local acquiring options, supported currencies and settlement options, fraud tools, authentication handling, fees, reporting and how well they integrate with your platform.",
+          "Using several providers across regions is covered in [[/blogs/ecommerce-payment-orchestration|payment orchestration]].",
         ],
         checklist: [
           "Methods customers expect in each target market",
@@ -298,6 +299,7 @@ export const commercePosts66: BlogPost[] = [
         heading: "Strong Authentication",
         body: [
           "In the European Economic Area and the UK, strong customer authentication rules generally apply to many online card payments, typically handled by 3-D Secure through your provider, with exemptions for certain transactions. Other markets have their own authentication practices. Let your provider manage authentication flows and exemptions, and make sure the checkout handles authentication challenges smoothly on mobile.",
+          "Frictionless and challenge flows, exemptions and liability shift are explained in [[/blogs/3d-secure-ecommerce|3D Secure in ecommerce]].",
         ],
       },
       {
@@ -436,6 +438,7 @@ export const commercePosts66: BlogPost[] = [
         body: [
           "Duties and import taxes depend on the destination, product classification, origin and value. Customers dislike paying unexpected amounts on delivery. There are two common approaches: collect duties and taxes at checkout and ship delivered duty paid (DDP), so there are no fees on delivery; or show an estimate and ship delivered at place (DAP), so the customer pays on arrival. DDP usually gives a better experience but requires accurate calculation and a carrier or service that supports it.",
           "Some jurisdictions have special regimes for low-value imports. In the EU, for example, the Import One-Stop Shop (IOSS) lets sellers collect VAT at checkout on consignments up to a set value ([[https://vat-one-stop-shop.ec.europa.eu/index_en|European Commission]]). Rules and thresholds differ by market and change over time; confirm them with advisers.",
+          "DDP versus DAP, low-value import rule changes and how to show import charges at checkout are covered in [[/blogs/ecommerce-duties-import-taxes|ecommerce duties and import taxes]].",
         ],
         table: {
           headers: ["Approach", "Customer experience", "Seller responsibility"],

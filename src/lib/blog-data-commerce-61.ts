@@ -87,6 +87,7 @@ export const commercePosts61: BlogPost[] = [
         body: [
           "The safest approach is to keep card data off your systems entirely: use a hosted checkout or payment fields provided by your payment provider, and tokenization for stored payment methods. This reduces your PCI DSS scope but doesn't remove responsibility. PCI DSS v4.0.1 is the current version, and requirements that became mandatory on 31 March 2025 include managing scripts on payment pages and detecting unauthorized changes. The PCI Security Standards Council has clarified how these apply to merchants using embedded payment pages under SAQ A ([[https://blog.pcisecuritystandards.org/faq-clarifies-new-saq-a-eligibility-criteria-for-e-commerce-merchants|PCI Security Standards Council]]). Confirm your obligations with your payment provider or a qualified assessor.",
           "Beyond compliance, control scripts across the store: keep an inventory of third-party scripts, remove unused ones, load them only where needed, use a content security policy where practical, and monitor for unexpected changes.",
+          "PCI scope, payment page script controls, keys and webhooks are covered in [[/blogs/ecommerce-payment-security|ecommerce payment security]].",
         ],
         cta: {
           title: "Unsure how exposed your store is?",
@@ -120,6 +121,7 @@ export const commercePosts61: BlogPost[] = [
         heading: "Layer 6: Fraud and Bots",
         body: [
           "Fraud tools provided by payment providers and platforms score orders for risk. Configure them, review flagged orders and use velocity limits to reduce card testing. Bot management helps with credential stuffing, scraping, inventory hoarding during launches and fake account creation. Monitor chargeback rates, which card networks and payment providers track.",
+          "Signals, risk scoring and manual review are covered in [[/blogs/ecommerce-fraud-detection|ecommerce fraud detection]].",
         ],
       },
       {

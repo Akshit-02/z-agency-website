@@ -443,6 +443,7 @@ export const commercePosts35: BlogPost[] = [
         heading: "Billing and Failed Payments",
         body: [
           "Show upcoming charges and past billing history with downloadable receipts or invoices. When a renewal payment fails, show a banner at the top of the portal and in the subscription, explain the next retry or what will happen, and let the customer update their payment method in one step. Failed payments are a major source of involuntary churn, so the fix must be effortless. See [[/blogs/subscription-ecommerce-retention|subscription ecommerce retention]].",
+          "Retry schedules, account updater and update links are covered in [[/blogs/ecommerce-recurring-payments|ecommerce recurring payments]].",
         ],
       },
       {

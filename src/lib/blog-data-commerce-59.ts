@@ -110,6 +110,7 @@ export const commercePosts59: BlogPost[] = [
         body: [
           "The biggest risk in generative chat is a confident wrong answer: a product feature that doesn't exist, a delivery promise you can't meet, a returns policy that isn't yours. Grounding reduces this. The assistant retrieves current product data, stock, prices and policies, and is instructed to answer only from them and to say when it doesn't know. Answers about price and availability should come from live data, not the model's memory.",
           "Grounding is only as good as the data. Incomplete product attributes, outdated help articles and inconsistent policies lead to poor answers. Often the first step in a conversational project is cleaning product data and help content. See [[/blogs/ecommerce-product-data-ai-search|product data for AI search]].",
+          "How grounding works technically is explained in [[/blogs/retrieval-augmented-generation|retrieval-augmented generation]].",
         ],
       },
       {
@@ -287,6 +288,7 @@ export const commercePosts59: BlogPost[] = [
         body: [
           "The assistant should answer from your data, not from the model's general knowledge. Product questions need structured attributes (materials, dimensions, compatibility, care), not just marketing copy. Sizing help needs size charts and fit notes. Policy questions need current, consistent policy text. Prices and stock should be fetched live through tools rather than stored in an index that can go stale.",
           "Poor data is the most common reason assistants disappoint. Audit product data and help content before building, and plan to keep them current. See [[/blogs/ecommerce-product-data-ai-search|product data for AI search]].",
+          "Retrieval design in depth is covered in [[/blogs/retrieval-augmented-generation|the RAG guide]].",
         ],
         cta: {
           title: "Planning an AI shopping assistant?",
@@ -307,6 +309,7 @@ export const commercePosts59: BlogPost[] = [
         heading: "Guardrails",
         body: [
           "Guardrails keep the assistant useful and safe. Scope limits keep it on shopping topics. Instructions and checks prevent invented facts: if information isn't in retrieved data, it says so and offers alternatives. Output checks catch prices or claims that don't match data. Input handling addresses prompt injection and abuse. Sensitive topics (medical claims, safety issues, complaints) route to people. The OWASP Top 10 for LLM Applications is a useful checklist of risks to design against ([[https://genai.owasp.org/llm-top-10/|OWASP GenAI Security Project]]).",
+          "General controls for agents that act are covered in [[/blogs/ai-agent-guardrails|AI agent guardrails]] and [[/blogs/prompt-injection-prevention|prompt injection prevention]].",
         ],
         checklist: [
           "Stays on shopping and store topics",
@@ -468,6 +471,7 @@ export const commercePosts59: BlogPost[] = [
         heading: "Behind-the-Scenes AI",
         body: [
           "Some of the most reliable gains come from AI that helps agents rather than talks to customers. Classification routes tickets to the right queue and flags urgency. Summaries give agents context from long threads. Drafted replies based on help content and order data let agents review, edit and send faster. Suggested help articles speed up answers. Because a person checks the output before it reaches the customer, errors are caught.",
+          "A cross-industry version of this system, with agent assist and QA, is in [[/blogs/ai-customer-support-automation|AI customer support automation]].",
         ],
         checklist: [
           "Ticket classification and routing",
@@ -835,6 +839,7 @@ export const commercePosts59: BlogPost[] = [
         heading: "Anatomy of an Agent",
         body: [
           "An agent combines a goal, a model that plans, tools it can call, memory or context, and controls. The goal must be specific (\"check new products for missing required attributes and draft fixes\") with a clear success condition and a stop condition. Tools are functions with defined inputs and outputs. Controls include permissions, limits, approvals and logs.",
+          "Platform-neutral component design is covered in [[/blogs/ai-agent-architecture|AI agent architecture]].",
         ],
         table: {
           headers: ["Component", "Design question"],
@@ -898,6 +903,7 @@ export const commercePosts59: BlogPost[] = [
         heading: "Evaluation",
         body: [
           "Evaluate agents on realistic tasks with known correct outcomes. Measure task success rate, error types, time and cost per task, and how often it escalates appropriately. Review full logs of a sample of runs, including tool calls, not only final outputs. Re-evaluate after changes to prompts, models, tools or data. Agents that perform well on demos often struggle on messy real cases.",
+          "Datasets, trajectory scoring and release gates are covered in [[/blogs/ai-agent-evaluation|AI agent evaluation]].",
         ],
         checklist: [
           "Test set of real tasks with correct outcomes",
@@ -952,6 +958,7 @@ export const commercePosts59: BlogPost[] = [
         heading: "Emerging Standards",
         body: [
           "Standards for how agents connect to tools and to each other are developing, such as protocols for giving models structured access to tools and data, and commerce protocols for consumer agents. They can simplify integration but are still maturing, and support varies across platforms and vendors. Build on stable, well-documented interfaces, keep permissions in your own systems, and avoid designs that depend on one emerging standard being universally adopted.",
+          "The current state of the tool protocol is explained in [[/blogs/model-context-protocol|the Model Context Protocol guide]], and agent-to-agent protocols in [[/blogs/agent-to-agent-communication|agent-to-agent communication]].",
         ],
       },
       {

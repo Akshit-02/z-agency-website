@@ -428,6 +428,7 @@ export const commercePosts31: BlogPost[] = [
         heading: "Back-in-Stock and Pre-Order",
         body: [
           "Incoming stock from purchase orders can power back-in-stock dates and pre-orders. Only promise dates you can meet and update customers when they change.",
+          "Payment timing, caps, mixed carts and allocation are covered in [[/blogs/ecommerce-preorders-backorders|pre-orders and backorders]].",
         ],
       },
       {
@@ -526,7 +527,9 @@ export const commercePosts31: BlogPost[] = [
       },
       {
         heading: "Choosing Providers",
-        body: [],
+        body: [
+          "When one provider is not enough, see [[/blogs/ecommerce-payment-orchestration|payment orchestration]] and [[/blogs/ecommerce-payment-routing|payment routing]].",
+        ],
         table: {
           headers: ["Criterion", "Questions"],
           rows: [
@@ -570,6 +573,7 @@ export const commercePosts31: BlogPost[] = [
         heading: "Refunds and Disputes",
         body: [
           "Refunds should start from the order or returns system, not directly in the gateway dashboard, so order, inventory and finance stay consistent. Disputes need evidence (order details, tracking, communications) gathered quickly. Sync refunds and dispute outcomes to the ERP and CRM.",
+          "Automated refund workflows are covered in [[/blogs/ecommerce-refund-automation|refund automation]] and dispute handling in [[/blogs/ecommerce-chargeback-management|chargeback management]].",
         ],
       },
       {

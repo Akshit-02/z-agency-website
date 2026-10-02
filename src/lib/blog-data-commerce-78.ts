@@ -385,6 +385,7 @@ export const commercePosts78: BlogPost[] = [
         heading: "Where This Fits",
         body: [
           "What to automate in support is covered in [[/blogs/ai-customer-support-ecommerce|AI customer support]]. Shopping-focused conversation design is in [[/blogs/conversational-shopping-ux|conversational shopping UX]], and strategy in [[/blogs/conversational-ecommerce|conversational ecommerce]]. This article focuses on the chat experience itself.",
+          "Chat interface principles beyond ecommerce, including sources, tool steps and message states, are in [[/blogs/ai-chat-interface-design|AI chat interface design]].",
         ],
       },
       {
@@ -422,6 +423,7 @@ export const commercePosts78: BlogPost[] = [
         heading: "Actions and Permissions",
         body: [
           "Limit actions to what policy allows without judgement: starting an eligible return, cancelling an unshipped order, updating an address before dispatch, resending a confirmation. Confirm before acting, show the result and log it. Anything involving exceptions, refunds outside policy or disputes goes to a person.",
+          "When a chat assistant starts taking actions it becomes an agent; see [[/blogs/ai-agent-vs-ai-chatbot|AI agent vs AI chatbot]].",
         ],
       },
       {
@@ -577,6 +579,7 @@ export const commercePosts78: BlogPost[] = [
         heading: "Voice in Your Own Site and App",
         body: [
           "The most controllable form of voice commerce is a voice input option in your own search and lists. It suits hands-busy situations (cooking, grocery lists, workshops) and people who prefer speaking to typing. Use platform speech recognition, show the transcribed text so users can correct it, and feed it into the same search and cart flows.",
+          "The underlying speech pipeline, latency and interruption handling are covered in [[/blogs/voice-ai-agent-development|voice AI agent development]].",
         ],
         cta: {
           title: "Wondering whether voice belongs in your roadmap?",

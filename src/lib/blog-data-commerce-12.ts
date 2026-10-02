@@ -365,6 +365,7 @@ export const commercePosts12: BlogPost[] = [
         heading: "The Protocols",
         body: [
           "Several standards emerged between 2025 and 2026. They overlap and are evolving, so treat this as a map, not a final picture.",
+          "MCP itself, including the 2026-07-28 specification changes, is covered in [[/blogs/model-context-protocol|the Model Context Protocol guide]].",
         ],
         table: {
           headers: ["Protocol", "Who", "What it covers", "Status (Sept 2026)"],

@@ -25,6 +25,7 @@ export const commercePosts37: BlogPost[] = [
     relatedIndustrySlugs: ["ecommerce", "retail", "d2c-consumer"],
     faqs: [
       { q: "What is international ecommerce website development?", a: "Building an online store that sells to customers in several countries, with market-specific currencies, languages, prices, payment methods, shipping, duties and taxes, URLs and content, usually from one shared catalog and platform." },
+      { q: "What is cross-border ecommerce?", a: "Selling online to customers in another country, so the order crosses a border: payment is often in a foreign currency, the parcel goes through customs, and duties, import taxes and local consumer rules may apply. International ecommerce website development is how a store is built to handle those differences market by market." },
       { q: "Do I need a separate website for each country?", a: "Not usually. Many brands run one store with market-specific settings and URLs. Separate stores make sense when markets need very different catalogs, legal entities, teams or operations." },
       { q: "Which markets should I launch first?", a: "Those where you already see demand (traffic, enquiries, marketplace sales), where you can deliver competitively, and where payments, duties, taxes and regulations are manageable. Start with a few and add more once operations are proven." },
       { q: "Is translation enough to sell internationally?", a: "No. Customers also expect local currency, familiar payment methods, clear delivery times and costs including duties, local returns, sizing and units, and support in their language and hours." },
@@ -110,6 +111,7 @@ export const commercePosts37: BlogPost[] = [
         heading: "Step 6: Payments, Shipping, Duties and Taxes",
         body: [
           "Offer the payment methods customers in each market expect, not just cards. Show delivery estimates and costs per market before checkout. Decide whether customers pay duties and import taxes at checkout (landed cost) or on delivery; collecting upfront avoids surprise charges and refused deliveries. Tax registration and collection obligations vary by country and can depend on thresholds; take advice. See [[/blogs/ecommerce-tax-integration|ecommerce tax integration]] and [[/blogs/ecommerce-shipping-integration|shipping integration]].",
+          "For how import charges reach the customer, see [[/blogs/ecommerce-duties-import-taxes|ecommerce duties and import taxes]]; to hand tax and duty obligations to a third party, see [[/blogs/ecommerce-merchant-of-record|merchant of record for ecommerce]].",
         ],
       },
       {

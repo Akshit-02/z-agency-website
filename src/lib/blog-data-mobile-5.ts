@@ -579,6 +579,7 @@ export const mobilePosts5: BlogPost[] = [
         heading: "Semantic and AI-Assisted Search",
         body: [
           "Semantic search using embeddings matches meaning, helping with natural-language queries. It usually works best combined with keyword search, and changes in ranking should be evaluated with real queries. ZSpace's [[/services/ai-automation|AI automation]] work covers these capabilities.",
+          "Query understanding, hybrid retrieval and search analytics are covered in depth in [[/blogs/ai-search-development|AI search development]].",
         ],
         cta: {
           title: "Want your search quality reviewed?",

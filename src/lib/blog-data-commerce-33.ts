@@ -87,6 +87,7 @@ export const commercePosts33: BlogPost[] = [
         heading: "Catalog Ownership: The Decision That Shapes Everything",
         body: [
           "Who owns the product record is the most consequential decision in a multi-vendor build. It determines how search works, how buyers compare prices, how much data cleaning the operator does and how easily sellers can list.",
+          "Product and offer data models, matching and duplicate handling are covered in depth in [[/blogs/marketplace-product-catalog-management|marketplace product catalog management]].",
         ],
         table: {
           headers: ["Model", "How it works", "Suits", "Watch out for"],
@@ -154,7 +155,9 @@ export const commercePosts33: BlogPost[] = [
       },
       {
         heading: "Governance: Policies the Software Must Enforce",
-        body: [],
+        body: [
+          "Verification duties, moderation, payout controls and appeals are covered in [[/blogs/marketplace-trust-and-safety|marketplace trust and safety]].",
+        ],
         table: {
           headers: ["Policy", "How the platform enforces it"],
           rows: [

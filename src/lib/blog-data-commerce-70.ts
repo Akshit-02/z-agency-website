@@ -625,6 +625,7 @@ export const commercePosts70: BlogPost[] = [
         heading: "Express Wallets",
         body: [
           "Wallets remove most typing on mobile. Show express options such as Apple Pay, Google Pay, PayPal and Shop Pay at the top of checkout, and consider them in the cart drawer or cart page too. Show only wallets available on the device and in the market, and make sure shipping options and totals update correctly inside wallet sheets. See [[/blogs/mobile-app-payments|mobile payments]] and [[/blogs/international-ecommerce-payments|international payments]].",
+          "Eligibility checks, domain verification, payment sheet updates and testing are covered in [[/blogs/ecommerce-digital-wallet-integration|digital wallet integration]].",
         ],
       },
       {

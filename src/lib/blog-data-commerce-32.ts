@@ -108,6 +108,7 @@ export const commercePosts32: BlogPost[] = [
         heading: "International Orders and Duties",
         body: [
           "Cross-border sales raise import VAT, GST and duties. Decide whether to collect at checkout (landed cost) or leave them for the customer to pay on delivery. Collecting upfront needs HS codes, country of origin and accurate values. See [[/blogs/ecommerce-shipping-integration|shipping integration]].",
+          "Landed cost calculation and customer-facing duty messaging are covered in [[/blogs/ecommerce-duties-import-taxes|ecommerce duties and import taxes]].",
         ],
       },
       {

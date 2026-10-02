@@ -89,6 +89,7 @@ export const commercePosts17: BlogPost[] = [
         heading: "Recurring Billing and Payments",
         body: [
           "Subscriptions need a payment system that stores payment methods securely and charges them on schedule. Most stores use their commerce platform's subscription tooling or a subscription app with a payment provider that supports tokenized recurring charges. Check support for the payment methods your customers use, strong customer authentication rules in your markets, and how card updates are handled.",
+          "The engine behind renewals is covered in [[/blogs/subscription-billing-architecture|subscription billing architecture]], and stored credentials and dunning in [[/blogs/ecommerce-recurring-payments|recurring payments]].",
         ],
         cta: {
           title: "Planning a subscription offer?",

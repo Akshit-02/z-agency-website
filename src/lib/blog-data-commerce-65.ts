@@ -477,6 +477,7 @@ export const commercePosts65: BlogPost[] = [
         heading: "Warehouse Management",
         body: [
           "A WMS manages what happens inside the warehouse: receiving and putaway, storage locations, picking lists, packing, shipping and cycle counts. Barcode scanning at each step keeps inventory accurate and reduces picking errors. Smaller operations may use the ecommerce platform or a shipping app for picking lists; larger ones need a WMS or a 3PL that runs one.",
+          "Connecting a store or OMS to a WMS is covered in [[/blogs/ecommerce-warehouse-management-integration|warehouse management integration]].",
         ],
         table: {
           headers: ["Picking method", "How", "Suits"],
@@ -502,6 +503,7 @@ export const commercePosts65: BlogPost[] = [
         heading: "Working With 3PLs",
         body: [
           "3PL success depends on integration and operations as much as price. Confirm how orders, inventory, tracking and returns flow between systems, how quickly stock updates arrive, how exceptions are communicated, and what service levels (cut-off times, accuracy, dispatch times) are contracted. Test integration with real scenarios before moving volume. Keep your own visibility of inventory and order status rather than relying only on the 3PL's portal.",
+          "The integration itself (messages, acknowledgements, tracking, inventory and exceptions) is covered in [[/blogs/ecommerce-fulfilment-integration|ecommerce fulfilment integration]].",
         ],
         checklist: [
           "Order, inventory, tracking and returns integration tested",

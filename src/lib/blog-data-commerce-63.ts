@@ -87,12 +87,14 @@ export const commercePosts63: BlogPost[] = [
         heading: "Inventory and Availability",
         body: [
           "The OMS needs an accurate view of available-to-sell stock: on hand minus reserved, damaged and safety stock, per location. Reserve stock when an order is placed so two orders can't claim the same unit, release it on cancellation, and reconcile regularly with warehouse counts. Expose availability to storefronts and marketplaces so they don't oversell. See [[/blogs/ecommerce-inventory-management-integration|inventory integration]].",
+          "How an OMS and an inventory system divide responsibilities is explained in [[/blogs/oms-vs-ims|OMS vs IMS]].",
         ],
       },
       {
         heading: "Order Routing",
         body: [
           "Routing decides where each line ships from. Simple stores ship everything from one warehouse. Larger operations weigh stock availability, distance to the customer, shipping cost, delivery promise, location capacity and whether splitting an order is acceptable. Routing rules should be configurable and explainable, since operations teams need to understand why an order went where it did.",
+          "Sourcing rules, split shipments and re-sourcing are covered in [[/blogs/distributed-order-management|distributed order management]].",
         ],
         checklist: [
           "Stock available at location",
@@ -322,6 +324,7 @@ export const commercePosts63: BlogPost[] = [
         body: [
           "Refund timing is a trade-off. Refunding on receipt or inspection limits risk; refunding on carrier scan or instantly for trusted customers improves experience and reduces \"where's my refund\" contacts. Legal rules on refund deadlines vary by market. Exchanges and store credit keep revenue; many stores make them the easiest option, sometimes with a bonus for choosing credit, while keeping refunds available as required.",
           "Advanced exchanges (shipping the replacement before the return arrives) work for trusted customers with a payment authorization held as security.",
+          "The systems behind each outcome are covered in [[/blogs/ecommerce-refund-automation|refund automation]] and [[/blogs/ecommerce-exchange-management|exchange management]].",
         ],
         table: {
           headers: ["Outcome", "Customer benefit", "Business benefit", "Risk"],
@@ -500,6 +503,7 @@ export const commercePosts63: BlogPost[] = [
         heading: "Exchange, Credit or Refund",
         body: [
           "Present outcomes clearly with what each means: exchange for another size or colour (with stock shown), store credit (and any bonus), or refund to the original payment method (with timing). If return shipping costs apply to some options, show them before confirmation. Don't make refunds hard to find where customers are entitled to them; that creates frustration and, in some markets, legal risk.",
+          "Stock reservation, price differences and instant exchanges are covered in [[/blogs/ecommerce-exchange-management|exchange management]].",
         ],
         cta: {
           title: "Returns creating more support tickets than they should?",

@@ -139,6 +139,7 @@ export const mobilePosts: BlogPost[] = [
         heading: "Capabilities Most Apps Need",
         body: [
           "Beyond screens and APIs, most business apps need a common set of capabilities, each with its own design and implementation decisions: [[/blogs/mobile-app-authentication|authentication]], [[/blogs/mobile-app-security|security]] and [[/blogs/mobile-app-data-privacy|data privacy]]; [[/blogs/mobile-app-push-notifications|push notifications]] and [[/blogs/mobile-app-deep-linking|deep linking]]; [[/blogs/mobile-app-search|in-app search]] and [[/blogs/mobile-app-payments|payments]]; [[/blogs/offline-first-mobile-app-development|offline support]] where connectivity is unreliable; and [[/blogs/mobile-app-analytics|analytics]] and [[/blogs/mobile-app-crash-reporting|crash monitoring]] to see how the app performs once it's live.",
+          "On-device and cloud AI features for apps are covered in [[/blogs/ai-powered-mobile-app-development|AI-powered mobile app development]].",
         ],
       },
       {

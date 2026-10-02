@@ -129,6 +129,7 @@ export const aiAgentPosts: BlogPost[] = [
         body: [
           "A scheduling agent can handle appointment requests across channels, check provider availability, confirm insurance is on file, send reminders, and rebook when a patient cancels — reducing the back-and-forth that usually falls on front-desk staff. Intake agents can review what a patient submitted before the visit, cross-check it against existing records, and flag gaps so staff only handle what actually needs a human decision.",
           "Follow-up agents can handle post-visit check-ins, medication-adherence reminders and appointment recalls on a schedule, then route any response that sounds clinically relevant to a nurse or care coordinator rather than trying to interpret it.",
+          "For phone-based scheduling and front-desk calls, see [[/blogs/ai-receptionist|AI receptionist]].",
         ],
       },
       {
@@ -144,6 +145,7 @@ export const aiAgentPosts: BlogPost[] = [
         body: [
           "On the billing side, agents can check claims for completeness before submission, monitor for denials, categorize the denial reason, and prepare the correction or appeal for a biller to approve. Deloitte's research on healthcare automation suggests administrative cost reductions of up to roughly 20% are achievable through AI-driven automation of this kind of operational work — a meaningful number for large health systems, though the actual result depends heavily on which workflows are automated and how well the agent is integrated.",
           "Documentation agents can also help summarize visit notes into structured formats for coding and billing, while leaving the clinical note itself under the clinician's control.",
+          "The document pipeline behind intake forms and referrals is covered in [[/blogs/intelligent-document-processing|intelligent document processing]].",
         ],
       },
       {
@@ -170,6 +172,7 @@ export const aiAgentPosts: BlogPost[] = [
         body: [
           "Every healthcare AI-agent workflow needs a clear line between what the agent can do on its own and what requires a person to approve. As a working principle: agents can gather, organize, prepare and monitor; a licensed professional or authorized staff member approves anything that's clinical, financial, or leaves the organization as a formal communication or decision.",
           "That means an agent should not independently diagnose, recommend treatment, approve or deny a claim, submit an appeal, or make a final determination on coverage or care. It can prepare the information a person needs to make that decision faster and with less manual effort.",
+          "Approval modes, routing thresholds and review interface design are covered in [[/blogs/human-in-the-loop-ai|human-in-the-loop AI]].",
         ],
         checklist: [
           "Clinical judgment and diagnosis stay with licensed clinicians — always",
@@ -364,6 +367,7 @@ export const aiAgentPosts: BlogPost[] = [
         heading: "Compliance Monitoring, Reporting and Reconciliation",
         body: [
           "Agents can also support ongoing compliance work — monitoring for regulatory reporting deadlines, assembling the required data from source systems, and flagging discrepancies during reconciliation between internal ledgers and external statements — tasks that are procedural but require pulling from several systems correctly and consistently.",
+          "Control mapping, evidence collection and questionnaire workflows are covered in [[/blogs/ai-compliance-automation|AI compliance automation]].",
         ],
       },
       {
@@ -793,6 +797,7 @@ export const aiAgentPosts: BlogPost[] = [
         heading: "Quality Inspection and Anomaly Detection",
         body: [
           "Quality-focused agents can monitor inline inspection data — visual, dimensional or process sensors — flag products or batches that fall outside expected tolerances, and, for recurring issues, help trace the anomaly back to a likely root cause in the process rather than just flagging the defective output.",
+          "Building and deploying the vision models behind inspection is covered in [[/blogs/computer-vision-development|computer vision development]] and [[/blogs/ai-image-recognition|AI image recognition]].",
         ],
       },
       {
@@ -805,6 +810,7 @@ export const aiAgentPosts: BlogPost[] = [
         heading: "Procurement, Inventory and Supplier Management",
         body: [
           "Agents can also monitor inventory levels against production forecasts, flag components approaching a stockout, and prepare purchase orders for approval — or, for routine, low-risk reordering, place them automatically within limits a procurement team sets.",
+          "The procure-to-pay process outside the plant is covered in [[/blogs/ai-procurement-automation|AI procurement automation]].",
         ],
       },
       {
@@ -1010,12 +1016,14 @@ export const aiAgentPosts: BlogPost[] = [
         heading: "Property Matching and Recommendations",
         body: [
           "Once an agent understands what a lead is looking for, it can search current listing inventory and recommend genuinely relevant properties — not a generic list, but options that match the stated constraints, with the agent able to explain why each one fits and answer follow-up questions about any of them using real listing data.",
+          "Recommendation techniques beyond property listings are covered in [[/blogs/ai-recommendation-systems|AI recommendation systems]].",
         ],
       },
       {
         heading: "Website, WhatsApp and Voice Agents",
         body: [
           "The same underlying agent logic can run across a website chat widget, WhatsApp (a primary channel for real estate inquiries in many markets), SMS, and voice for phone calls — so a lead gets the same quality of response regardless of which channel they use to reach out.",
+          "Voice-specific architecture and call handling are covered in [[/blogs/voice-ai-agent-development|voice AI agent development]].",
         ],
       },
       {
@@ -1212,6 +1220,8 @@ export const aiAgentPosts: BlogPost[] = [
         heading: "Claims Intake, Document Processing and Triage",
         body: [
           "An agent can collect claim details and supporting documents from a policyholder, verify completeness against policy requirements, extract structured data from submitted documents (photos, repair estimates, medical bills, police reports), and route the claim to the appropriate adjuster or team — shrinking the gap between first notice of loss and substantive review.",
+          "The extraction and validation pipeline is covered in [[/blogs/intelligent-document-processing|intelligent document processing]].",
+          "Combining photos, documents and text in one intake flow is covered in [[/blogs/multimodal-ai-applications|multimodal AI applications]].",
         ],
         visual: { variant: "funnel", accent: "blue", caption: "A claims-intake agent narrows a wide inbound queue down to a smaller set of complete, correctly routed cases ready for adjuster review." },
       },
@@ -2094,6 +2104,7 @@ export const aiAgentPosts: BlogPost[] = [
         heading: "Site Reporting, Progress Tracking and Field Data",
         body: [
           "On the field side, agents can process daily site reports, photos and progress updates, summarize them for project managers, and flag recurring issues (repeated safety near-misses, consistent delays on a specific task type) for attention — connecting field data to the broader project record faster than manual report compilation.",
+          "Vision-based progress and safety checks, including privacy safeguards, are covered in [[/blogs/computer-vision-development|computer vision development]].",
         ],
       },
       {

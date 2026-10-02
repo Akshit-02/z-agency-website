@@ -487,7 +487,327 @@ export type BlogBannerVariant =
   | "approvalflow"
   | "punchoutflow"
   | "webhookflow"
-  | "queuearch";
+  | "queuearch"
+  | "ddpdapflow"
+  | "morflow"
+  | "listingingest"
+  | "moderationflow"
+  | "orchestrationflow"
+  | "routingflow"
+  | "walletflow"
+  | "failureflow"
+  | "dunningflow"
+  | "threedsflow"
+  | "fraudflow"
+  | "chargebackflow"
+  | "omsimsflow"
+  | "domflow"
+  | "preorderflow"
+  | "threeplflow"
+  | "wmsflow"
+  | "refundflow"
+  | "exchangeflow"
+  | "billingcycle"
+  | "pointsledger"
+  | "referralflow"
+  | "retentiondataflow"
+  | "dutieslandedcost"
+  | "morcompare"
+  | "marketplacecatalog"
+  | "trustsafety"
+  | "paymentorchestration"
+  | "routinginputs"
+  | "walletcheckout"
+  | "paymentfailures"
+  | "recurringpayments"
+  | "threedscompare"
+  | "frauddetection"
+  | "chargebackevidence"
+  | "paymentsecurity"
+  | "pciscope"
+  | "omsvsims"
+  | "domrules"
+  | "preordercompare"
+  | "threepldata"
+  | "wmsevents"
+  | "refundcalc"
+  | "exchangetypes"
+  | "billingarch"
+  | "loyaltyplatform"
+  | "referralcontrols"
+  | "retentionstack"
+  | "agentloopflow"
+  | "agentrequestflow"
+  | "orchestrationrun"
+  | "agenticworkflowflow"
+  | "hitlflow"
+  | "evallifecycle"
+  | "guardrailflow"
+  | "agentobsflow"
+  | "bpalifecycle"
+  | "workflowrunflow"
+  | "aiworkflowflow"
+  | "rpaaihybrid"
+  | "idppipeline"
+  | "invoiceflow"
+  | "emailflow"
+  | "leadflow"
+  | "salesflow"
+  | "ragpipeline"
+  | "ragftflow"
+  | "permissionflow"
+  | "embeddingflow"
+  | "chunkflow"
+  | "rerankflow"
+  | "hybridflow"
+  | "kbflow"
+  | "graphragflow"
+  | "mcpflow"
+  | "mcpserverbuild"
+  | "mcpauthflow"
+  | "aiapiflow"
+  | "gatewayflow"
+  | "llmrouteflow"
+  | "aiorchflow"
+  | "memoryflow"
+  | "a2aflow"
+  | "voicepipeline"
+  | "voicecsflow"
+  | "receptionistflow"
+  | "outboundflow"
+  | "supportflow"
+  | "meetingflow"
+  | "extractionflow"
+  | "costflow"
+  | "injectiondefense"
+  | "aiimplroadmap"
+  | "agentdevstack"
+  | "agentvschatbot"
+  | "assistantspectrum"
+  | "agentarchlayers"
+  | "singlevsmulti"
+  | "multiagentpatterns"
+  | "agentorchestrator"
+  | "agenticvsdeterministic"
+  | "hitlmodes"
+  | "agentevalmetrics"
+  | "guardraillayers"
+  | "agentobsmap"
+  | "bpaopportunity"
+  | "workflowanatomy"
+  | "aiworkflowsteps"
+  | "wfvsrpa"
+  | "integrationladder"
+  | "rpavsai"
+  | "idpcomponents"
+  | "invoicematch"
+  | "emailtriage"
+  | "leadqual"
+  | "salesauto"
+  | "ragtwophase"
+  | "ragvsft"
+  | "enterpriserag"
+  | "vectordbmap"
+  | "vectordbcompare"
+  | "embeddingtradeoffs"
+  | "chunkingmethods"
+  | "rerankcompare"
+  | "hybridsearch"
+  | "kbassistant"
+  | "graphragcompare"
+  | "mcparch"
+  | "mcpservercomponents"
+  | "mcpvsapi"
+  | "mcplayers"
+  | "mcpthreats"
+  | "aiapiintegration"
+  | "llmgateway"
+  | "routingstrategies"
+  | "aiorchestrationlayer"
+  | "agentmemorytypes"
+  | "mcpvsa2a"
+  | "voicearchcompare"
+  | "voicecsmetrics"
+  | "receptionist"
+  | "callautomation"
+  | "supportsystem"
+  | "meetingdata"
+  | "extractionmethods"
+  | "llmcostlevers"
+  | "promptinjection"
+  | "aiprioritymatrix"
+  | "aisdadoption"
+  | "codingagentflow"
+  | "codingautonomy"
+  | "aireviewflow"
+  | "aitestpipeline"
+  | "aidebugflow"
+  | "testgenflow"
+  | "docsflow"
+  | "legacyflow"
+  | "aisdlcflow"
+  | "hrflow"
+  | "recruitflow"
+  | "contentopsflow"
+  | "procureflow"
+  | "itsmflow"
+  | "dataentryflow"
+  | "expenseflow"
+  | "complianceflow"
+  | "legalflow"
+  | "telecomflow"
+  | "outageflow"
+  | "aiappflow"
+  | "genaiflow"
+  | "meteringflow"
+  | "multimodalpipe"
+  | "cvpipeline"
+  | "imgrecflow"
+  | "recsysflow"
+  | "bizsearchflow"
+  | "copilotflow"
+  | "mobileaiflow"
+  | "scalingflow"
+  | "readinessflow"
+  | "dataprepflow"
+  | "aigovlifecycle"
+  | "aisecincident"
+  | "aiprivacyflow"
+  | "modelevalflow"
+  | "monitorflow"
+  | "poctoprod"
+  | "aisdhub"
+  | "codingagentperms"
+  | "assistvsagentic"
+  | "reviewchecks"
+  | "testlayers"
+  | "debugsources"
+  | "testquality"
+  | "doctypes"
+  | "modernstrategies"
+  | "sdlcresponsibility"
+  | "hrautomation"
+  | "recruitguard"
+  | "contentroles"
+  | "vendordocs"
+  | "itsmlayers"
+  | "dataentrychecks"
+  | "expensepolicy"
+  | "compliancescope"
+  | "legalai"
+  | "telecomai"
+  | "energyai"
+  | "aiappstack"
+  | "genaiarch"
+  | "aisaas"
+  | "modalities"
+  | "cvtasks"
+  | "imgmetrics"
+  | "recsysarch"
+  | "searchvsrag"
+  | "copilotarch"
+  | "mobileai"
+  | "enterpriseai"
+  | "readiness"
+  | "datareadiness"
+  | "aigovroles"
+  | "aisecuritylayers"
+  | "aiprivacy"
+  | "modeleval"
+  | "modelmonitor"
+  | "pocpilotprod"
+  | "llmopsloop"
+  | "mlopsllmopsflow"
+  | "llmdeployflow"
+  | "evalpipeflow"
+  | "llmtraceflow"
+  | "promptworkflow"
+  | "regressionflow"
+  | "fallbackflow"
+  | "releaseflow"
+  | "aidataflow"
+  | "aipipeflow"
+  | "ingestflow"
+  | "unstructflow"
+  | "synthflow"
+  | "annotateflow"
+  | "dqauditflow"
+  | "lineageflow"
+  | "streamflow"
+  | "redteamflow"
+  | "injectpathflow"
+  | "jailbreakflow"
+  | "leakpreventflow"
+  | "agentauthflow"
+  | "toolcallflow"
+  | "supplychainflow"
+  | "threatflow"
+  | "sectestflow"
+  | "aipdflow"
+  | "aiuxstates"
+  | "haiphases"
+  | "chatstates"
+  | "copilotuxflow"
+  | "aionboardflow"
+  | "transparencylayers"
+  | "aierrorflow"
+  | "feedbackloop"
+  | "ideavalidflow"
+  | "inferoptflow"
+  | "servingflow"
+  | "trainvsinferflow"
+  | "gpuoptflow"
+  | "quantflow"
+  | "batchcacheflow"
+  | "edgeflow"
+  | "selfhostflow"
+  | "aiplatformflow"
+  | "llmopshub"
+  | "llmopsvsmlops"
+  | "llmdeployarch"
+  | "evalpipeline"
+  | "llmobshub"
+  | "promptversions"
+  | "llmregression"
+  | "llmfailures"
+  | "airelease"
+  | "aidatahub"
+  | "aipipelines"
+  | "ingestsources"
+  | "unstructprep"
+  | "synthvsreal"
+  | "annotationqa"
+  | "dataqualitydims"
+  | "lineagemap"
+  | "streamvsbatch"
+  | "redteamscope"
+  | "indirectinjection"
+  | "jailbreakeval"
+  | "leakchannels"
+  | "agentaccess"
+  | "toolsecurity"
+  | "aisupplychain"
+  | "threatmodelai"
+  | "aisectestmap"
+  | "aiproductdesign"
+  | "aiuxpatterns"
+  | "haiprinciples"
+  | "chatuianatomy"
+  | "copilotuxpatterns"
+  | "aionboarding"
+  | "aitransparency"
+  | "aierrortypes"
+  | "aifeedbacktypes"
+  | "aiideavalidation"
+  | "inferencelevers"
+  | "servingstack"
+  | "infervstrain"
+  | "gpuoptmap"
+  | "quantformats"
+  | "batchcachemap"
+  | "edgevscloud"
+  | "selfhostvsapi"
+  | "aiplatformmap";
 
 const INK = "#0b0c0e";
 const LINE = "#d3d0c8";
@@ -515,6 +835,8 @@ function AgentHub({
     { x: 220, y: 340 },
     { x: 580, y: 340 },
   ];
+  // Monospace 13px at 0.5 letter-spacing is about 8.3px per character.
+  const pillW = Math.max(150, Math.ceil(industry.length * 8.3) + 28);
   return (
     <Canvas>
       <g stroke={LINE} strokeWidth="1.5">
@@ -524,8 +846,8 @@ function AgentHub({
           ))
         )}
       </g>
-      <rect x="36" y="34" width="150" height="34" rx="17" fill="none" stroke={INK} strokeWidth="1.5" />
-      <text x="111" y="56" textAnchor="middle" fontFamily="monospace" fontSize="13" fill={INK} letterSpacing="0.5">
+      <rect x="36" y="34" width={pillW} height="34" rx="17" fill="none" stroke={INK} strokeWidth="1.5" />
+      <text x={36 + pillW / 2} y="56" textAnchor="middle" fontFamily="monospace" fontSize="13" fill={INK} letterSpacing="0.5">
         {industry}
       </text>
 
@@ -722,7 +1044,161 @@ const FLOWS: Partial<Record<BlogBannerVariant, FlowSpec>> = {
   punchoutflow: { steps: ["Buyer in|procurement", "Setup|request", "Supplier|site session", "Build|cart", "Cart|returned", "PO via|order request"], highlight: 2, loop: "the purchase order, not the punchout cart, creates the sales order" },
   webhookflow: { steps: ["Platform|event", "Signed|delivery", "Verify|signature", "Store +|ack fast", "Queue +|process", "Dedupe|by event ID"], highlight: 2, branch: { from: 3, label: "failure → platform retries; reconcile later" } },
   queuearch: { steps: ["Producer", "Queue", "Worker", "Idempotent|handler", "Success", "Metrics"], highlight: 3, branch: { from: 2, label: "retries exhausted → dead-letter queue + alert" } },
+  ddpdapflow: { steps: ["Classify|HS code", "Origin +|value", "Destination|rules", "Quote|landed cost", "DDP: collect|at checkout", "Clear +|deliver"], highlight: 3, branch: { from: 4, label: "DAP: the buyer pays import charges on delivery" } },
+  morflow: { steps: ["Shopper|checkout", "MoR sells|to shopper", "Collect tax|+ duties", "Merchant|fulfils", "MoR pays|merchant", "MoR files|+ remits"], highlight: 1, loop: "the merchant of record carries the legal sale, tax and payment liability" },
+  listingingest: { steps: ["Seller|submits", "Validate|attributes", "Match|existing?", "Attach offer|or create", "Review|by risk", "Publish|+ index"], highlight: 2, loop: "matching decides whether buyers see one product or five copies" },
+  moderationflow: { steps: ["Signal|or report", "Triage by|severity", "Review|+ evidence", "Action", "Notify|with reason", "Appeal|+ audit"], highlight: 1, loop: "every decision is recorded so it can be explained and reviewed" },
+  orchestrationflow: { steps: ["Payment|request", "Tokenize|once", "Risk|check", "Route", "Provider|response", "Normalize|+ record"], highlight: 3, branch: { from: 4, label: "soft decline → retry on another route where rules allow" } },
+  routingflow: { steps: ["Payment|attributes", "Eligible|routes", "Rank by|rules", "Send to|primary", "Decline|type?", "Cascade|or stop"], highlight: 2, loop: "measure approval and cost per route, then adjust the rules" },
+  walletflow: { steps: ["Button|shown", "Payment|sheet", "Shipping|recalc", "Shopper|approves", "Token to|server", "Authorize|+ order"], highlight: 2, loop: "totals in the wallet sheet must match the order you create" },
+  failureflow: { steps: ["Attempt +|idem. key", "Response", "Classify|outcome", "Message|shopper", "Retry or|fallback", "Reconcile|by webhook"], highlight: 2, loop: "an unknown outcome is checked, never blindly retried" },
+  dunningflow: { steps: ["Renewal|due", "Charge|(MIT)", "Declined", "Retry|schedule", "Notify +|update link", "Recover or|pause"], highlight: 3, loop: "retry timing and customer messages recover more than repeated charges" },
+  threedsflow: { steps: ["Checkout|data", "Device|data", "Auth|request", "Issuer|risk check", "Frictionless|or challenge", "Authorize|with result"], highlight: 4, loop: "liability shift depends on outcome, card network and region" },
+  fraudflow: { steps: ["Collect|signals", "Score", "Rules +|thresholds", "Approve,|review or|decline", "Outcome|labels", "Tune"], highlight: 2, loop: "chargebacks and false declines both feed back into the rules" },
+  chargebackflow: { steps: ["Dispute|raised", "Alert +|deadline", "Evidence|gathered", "Respond|or accept", "Issuer|decides", "Learn +|prevent"], highlight: 2, loop: "network deadlines are fixed; your provider's internal deadline is shorter" },
+  omsimsflow: { steps: ["IMS: stock|by location", "Available|to sell", "Order|placed (OMS)", "Reserve|stock", "Route +|fulfil", "Decrement|+ sync"], highlight: 1, loop: "availability is where the two systems meet; one must own it" },
+  domflow: { steps: ["Order|lines", "Eligible|nodes", "Score by|rules", "Split or|single?", "Allocate|+ reserve", "Release|to node"], highlight: 2, branch: { from: 5, label: "node rejects → re-source" } },
+  preorderflow: { steps: ["Set cap|+ date", "Pre-order|placed", "Payment|policy", "Stock|arrives", "Allocate|in order", "Ship +|notify"], highlight: 4, branch: { from: 3, label: "delay → notify, offer cancel" } },
+  threeplflow: { steps: ["Order|ready", "Send to|3PL", "3PL|acknowledges", "Pick +|pack", "Ship confirm|+ tracking", "Inventory|sync"], highlight: 2, branch: { from: 2, label: "rejected → exception queue" } },
+  wmsflow: { steps: ["Order|released", "Wave|planned", "Pick", "Pack +|verify", "Ship|confirm", "Stock +|status sync"], highlight: 2, branch: { from: 2, label: "short pick → re-source or notify" } },
+  refundflow: { steps: ["Refund|trigger", "Eligibility|+ amount", "Approve|by rule", "Provider|refund API", "Confirm via|webhook", "Ledger +|notify"], highlight: 1, branch: { from: 3, label: "failed → retry, alternate method, alert" } },
+  exchangeflow: { steps: ["Choose|items", "Pick new|variant", "Check +|reserve", "Price|difference", "Ship new|item", "Receive|+ close"], highlight: 3, loop: "the exchange is one record linking the return and the replacement" },
+  billingcycle: { steps: ["Schedule|due", "Generate|invoice", "Tax +|credits", "Charge|payment", "Update|state", "Create|order"], highlight: 1, branch: { from: 3, label: "failed → dunning, state past due" } },
+  pointsledger: { steps: ["Order|paid", "Pending|points", "Return|window ends", "Points|available", "Redeem at|checkout", "Expire|or reverse"], highlight: 1, loop: "every change is a ledger entry; the balance is derived" },
+  referralflow: { steps: ["Advocate|shares link", "Friend|visits", "Attribute|+ store", "First|order", "Qualify|(window)", "Reward"], highlight: 2, branch: { from: 4, label: "checks: self-referral, duplicates, returns" } },
+  retentiondataflow: { steps: ["Events", "Unify|profile", "Segment", "Trigger|journey", "Measure vs|holdout", "Refine"], highlight: 1, loop: "tools change; the customer data model should not" },
 
+  agentloopflow: { steps: ["Goal", "Plan|next step", "Call|a tool", "Observe|result", "Validate", "Done or|continue"], highlight: 4, branch: { from: 2, label: "risky action → human approval" } },
+  agentrequestflow: { steps: ["Request", "Context +|retrieval", "Model|decides", "Policy|check", "Execute|tool", "Log +|evaluate"], highlight: 3, branch: { from: 3, label: "denied → explain or escalate" } },
+  orchestrationrun: { steps: ["Task in", "Route to|agent", "Run step", "Persist|state", "Validate|output", "Next or|finish"], highlight: 3, branch: { from: 2, label: "failure → retry, fallback, escalate" } },
+  agenticworkflowflow: { steps: ["Trigger", "Plan", "Act with|tools", "Check|result", "Approval|gate", "Complete"], highlight: 3, loop: "replan when a check fails, within a fixed step budget" },
+  hitlflow: { steps: ["AI|proposes", "Confidence|+ risk", "Auto or|queue", "Human|reviews", "Approve,|edit or|reject", "Record|decision"], highlight: 1, loop: "reviewer decisions become evaluation data" },
+  evallifecycle: { steps: ["Collect|cases", "Build|dataset", "Run|offline", "Score", "Gate|release", "Monitor|live"], highlight: 4, loop: "production failures become new test cases" },
+  guardrailflow: { steps: ["Input", "Validate +|classify", "Model|proposes", "Policy|engine", "Allow,|approve|or deny", "Validate|output"], highlight: 3 },
+  agentobsflow: { steps: ["Request", "Agent|span", "Model|spans", "Tool|spans", "Eval|scores", "Alerts +|dashboards"], highlight: 3, loop: "one trace per run: every step, token and tool call" },
+  bpalifecycle: { steps: ["Discover", "Map", "Prioritize", "Design", "Build +|test", "Measure"], highlight: 1, loop: "measure against the baseline, then pick the next process" },
+  workflowrunflow: { steps: ["Trigger", "Fetch|data", "Condition", "Action", "Verify", "Log +|notify"], highlight: 2, branch: { from: 3, label: "error → retry, then alert owner" } },
+  aiworkflowflow: { steps: ["Input", "AI step:|extract", "Schema|validate", "Business|rules", "Approve|if needed", "Write to|system"], highlight: 2, branch: { from: 2, label: "invalid → retry or review queue" } },
+  rpaaihybrid: { steps: ["Document|arrives", "AI reads|+ extracts", "Validate", "RPA enters|in old UI", "Confirm", "Exceptions|to people"], highlight: 2 },
+  idppipeline: { steps: ["Ingest", "OCR +|parse", "Classify", "Extract", "Validate", "Review +|store"], highlight: 4, branch: { from: 4, label: "low confidence → human review" } },
+  invoiceflow: { steps: ["Receive", "Identify|supplier", "Extract|fields", "Match PO|+ receipt", "Approve", "Post to|ERP"], highlight: 3, branch: { from: 3, label: "mismatch → exception queue" } },
+  emailflow: { steps: ["Email|arrives", "Classify|intent", "Extract|fields", "Route +|update CRM", "Draft|reply", "Review|+ send"], highlight: 1 },
+  leadflow: { steps: ["Lead|captured", "Enrich", "Score fit|+ intent", "Explain|score", "Route to|owner", "CRM +|SLA timer"], highlight: 2 },
+  salesflow: { steps: ["Meeting|booked", "Account|research", "Brief", "Meeting", "Notes to|CRM", "Draft|follow-up"], highlight: 2, loop: "a rep reviews anything a customer will read" },
+  ragpipeline: { steps: ["Ingest", "Chunk", "Embed +|index", "Retrieve", "Generate|+ cite", "Evaluate"], highlight: 3, loop: "most answer failures are retrieval failures" },
+  ragftflow: { steps: ["Define|failure", "Knowledge|gap?", "Use RAG", "Behaviour|gap?", "Prompt,|then tune", "Evaluate|both"], highlight: 1 },
+  permissionflow: { steps: ["User|query", "Resolve|identity", "Filtered|retrieval", "Rerank", "Answer +|citations", "Audit|log"], highlight: 2, loop: "permissions are enforced before retrieval, not after" },
+  embeddingflow: { steps: ["Text", "Embedding|model", "Vector", "Store +|index", "Query|vector", "Nearest|neighbours"], highlight: 1, loop: "similar meaning → nearby vectors, if the model fits your data" },
+  chunkflow: { steps: ["Parse|document", "Keep|structure", "Split by|section", "Size +|overlap", "Add|metadata", "Test|retrieval"], highlight: 1 },
+  rerankflow: { steps: ["Query", "Retrieve|top 50", "Rerank|model", "Keep|top 5-10", "Generate", "Measure"], highlight: 2, loop: "fast recall first, precise ordering second" },
+  hybridflow: { steps: ["Query", "Keyword|results", "Vector|results", "Fuse|(RRF)", "Rerank", "Answer"], highlight: 3 },
+  kbflow: { steps: ["Question", "Check|access", "Retrieve", "Answer +|citations", "Feedback", "Fix|content"], highlight: 1, loop: "bad answers usually point to missing or stale documents" },
+  graphragflow: { steps: ["Documents", "Extract|entities", "Build|graph", "Detect|communities", "Summarize", "Query local|or global"], highlight: 2 },
+  mcpflow: { steps: ["Host app", "MCP|client", "server/|discover", "tools/|list", "tools/|call", "Result to|model"], highlight: 4 },
+  mcpserverbuild: { steps: ["Pick SDK", "Define|tools", "Implement|handlers", "Choose|transport", "Add|auth", "Test +|deploy"], highlight: 1 },
+  mcpauthflow: { steps: ["Client|calls", "401 +|metadata", "Find auth|server", "OAuth +|PKCE", "Token for|this server", "Validate|audience"], highlight: 5 },
+  aiapiflow: { steps: ["App|request", "Prompt +|context", "Model call|(stream)", "Validate|schema", "Store +|respond", "Log|usage"], highlight: 3, branch: { from: 2, label: "429 / 5xx → backoff or fallback" } },
+  gatewayflow: { steps: ["App call", "Auth +|quota", "Route", "Provider|call", "Log +|cost", "Response"], highlight: 2, branch: { from: 3, label: "provider down → fallback" } },
+  llmrouteflow: { steps: ["Request", "Classify|task", "Pick|model tier", "Call", "Quality|check", "Escalate|if needed"], highlight: 2, loop: "routing rules are judged by evaluations, not by price alone" },
+  aiorchflow: { steps: ["Request", "Retrieve|context", "Model|call", "Run|tools", "Validate", "Persist +|respond"], highlight: 4 },
+  memoryflow: { steps: ["Conversation", "Extract|candidates", "Validate|+ consent", "Store with|expiry", "Retrieve|if relevant", "Update or|forget"], highlight: 2 },
+  a2aflow: { steps: ["Client|agent", "Fetch|Agent Card", "Check skills|+ auth", "Send|message", "Remote|agent works", "Artifacts|returned"], highlight: 1 },
+  voicepipeline: { steps: ["Caller|audio", "Speech|to text", "LLM +|tools", "Text to|speech", "Caller|hears", "Turn|detection"], highlight: 2, loop: "every step spends part of one latency budget" },
+  voicecsflow: { steps: ["Call in", "Identify|caller", "Understand|intent", "Answer|or act", "Resolve or|hand off", "Summary|to CRM"], highlight: 4, branch: { from: 4, label: "complex → human, with context" } },
+  receptionistflow: { steps: ["Call", "Greet +|disclose AI", "Identify|need", "Answer,|book or note", "Confirm|by SMS", "Log to|CRM"], highlight: 1 },
+  outboundflow: { steps: ["Consent|check", "Allowed|hours", "Call +|disclose", "Conver-|sation", "Outcome +|opt-out", "Record|+ audit"], highlight: 0 },
+  supportflow: { steps: ["Ticket", "Classify +|prioritize", "Retrieve|answer", "Resolve|or draft", "Agent|review", "Close +|learn"], highlight: 1 },
+  meetingflow: { steps: ["Consent|+ join", "Record", "Transcribe|+ speakers", "Summary +|actions", "Review", "Sync to|CRM/tasks"], highlight: 0 },
+  extractionflow: { steps: ["Document", "Parse /|OCR", "Schema|prompt", "Structured|output", "Validate|fields", "Confidence|+ review"], highlight: 4 },
+  costflow: { steps: ["Cost per|task", "Trim|context", "Cache|prompts", "Smaller|model", "Batch|offline", "Re-check|quality"], highlight: 0, loop: "every saving is checked against the evaluation set" },
+  injectiondefense: { steps: ["Untrusted|content", "Mark as|data", "Model|proposes", "Policy +|permission", "Approval|if risky", "Least|privilege"], highlight: 3, loop: "assume injection will sometimes succeed; limit what it can do" },
+  aiimplroadmap: { steps: ["Discover", "Prioritize", "Data|readiness", "Pilot", "Evaluate", "Scale +|govern"], highlight: 4, loop: "a pilot without success criteria is a demo" },
+  aisdadoption: { steps: ["Usage|policy", "Pilot|team", "Measure", "Guardrails", "Scale|tools", "Review"], highlight: 2, loop: "measure delivery outcomes, not lines of code generated" },
+  codingagentflow: { steps: ["Issue or|task", "Explore|repo", "Plan", "Edit|code", "Run|tests", "Pull|request"], highlight: 4, branch: { from: 4, label: "tests fail → iterate within budget" } },
+  codingautonomy: { steps: ["Completion", "Chat|edits", "Agent|in IDE", "Background|agent", "PR|review", "Human|merges"], highlight: 4, loop: "autonomy grows; human review of the merge does not go away" },
+  aireviewflow: { steps: ["PR|opened", "Diff +|context", "AI|review", "Comments|by severity", "Human|reviewer", "Merge|or fix"], highlight: 4 },
+  aitestpipeline: { steps: ["Require-|ments", "Test|plan", "Generate|tests", "Run|in CI", "Triage|failures", "Maintain"], highlight: 4, loop: "a generated test is only useful if it can fail for the right reason" },
+  aidebugflow: { steps: ["Error|signal", "Gather|context", "Reproduce", "Hypothe-|size", "Fix +|test", "Verify|regression"], highlight: 2 },
+  testgenflow: { steps: ["Select|target", "Read code|+ spec", "Generate|cases", "Run +|check", "Assess|strength", "Review|+ commit"], highlight: 4 },
+  docsflow: { steps: ["Code|change", "Detect|doc impact", "Draft|update", "Human|review", "Publish", "Check|drift"], highlight: 3 },
+  legacyflow: { steps: ["Inventory", "Map|depend-|encies", "Add|tests", "Refactor|in slices", "Migrate", "Retire|old"], highlight: 2, loop: "tests first: they are what make AI-assisted changes safe" },
+  aisdlcflow: { steps: ["Require-|ments", "Design", "Build", "Test", "Release", "Maintain"], highlight: 3, loop: "AI assists every stage; people own every decision" },
+  hrflow: { steps: ["Request", "Verify|employee", "Policy|lookup", "Answer or|start task", "Approval", "Update|HRIS"], highlight: 1 },
+  recruitflow: { steps: ["Applic-|ation", "Parse +|dedupe", "Knockout|rules", "Recruiter|review", "Schedule", "Commun-|icate"], highlight: 3, loop: "people make every selection decision" },
+  contentopsflow: { steps: ["Research", "Brief", "Draft|(assisted)", "Expert|review", "Approve", "Publish|+ measure"], highlight: 3 },
+  procureflow: { steps: ["Request", "Classify|+ policy", "Source|vendor", "Approve", "Create|PO", "Receive|+ match"], highlight: 1 },
+  itsmflow: { steps: ["Ticket", "Classify|+ priority", "Suggest|fix", "Automate|approved", "Escalate", "Learn"], highlight: 1 },
+  dataentryflow: { steps: ["Source", "Extract", "Map|fields", "Validate|+ dedupe", "Write to|system", "Exceptions"], highlight: 3 },
+  expenseflow: { steps: ["Receipt", "Extract", "Policy|check", "Approve", "Reimburse", "Post to|ERP"], highlight: 2, branch: { from: 2, label: "out of policy → reason + approver" } },
+  complianceflow: { steps: ["Obliga-|tions", "Map to|controls", "Collect|evidence", "Test|controls", "Report", "Remediate"], highlight: 2, loop: "AI gathers and drafts; accountable people sign off" },
+  legalflow: { steps: ["Matter|intake", "Conflict|check", "Research|(cited)", "Draft", "Lawyer|review", "File +|record"], highlight: 4 },
+  telecomflow: { steps: ["Alarm or|ticket", "Correlate", "Diagnose", "Suggest|fix", "Approve", "Resolve|+ notify"], highlight: 1 },
+  outageflow: { steps: ["Outage|reports", "Group by|area", "Update|ETR", "Notify|customers", "Crew|coordination", "Close|+ report"], highlight: 3 },
+  aiappflow: { steps: ["Problem", "Data", "Prototype", "Evaluate", "Build|product", "Operate"], highlight: 3, loop: "evaluation decides whether a prototype becomes a product" },
+  genaiflow: { steps: ["Idea", "Prompt|prototype", "Eval set", "RAG +|tools", "Harden", "Launch +|monitor"], highlight: 2 },
+  meteringflow: { steps: ["Request", "Tenant +|plan check", "Model|call", "Meter|usage", "Bill or|cap", "Report"], highlight: 3 },
+  multimodalpipe: { steps: ["Upload", "Validate|+ store", "Pre-|process", "Model", "Validate|output", "Show +|log"], highlight: 2, loop: "each modality has its own preprocessing, limits and failure modes" },
+  cvpipeline: { steps: ["Images|or video", "Label", "Train or|choose", "Evaluate", "Deploy|cloud / edge", "Monitor|drift"], highlight: 3 },
+  imgrecflow: { steps: ["Define|classes", "Collect|images", "Annotate", "Train", "Measure|per class", "Integrate"], highlight: 2, loop: "most accuracy problems are data problems" },
+  recsysflow: { steps: ["Events", "Features", "Candi-|dates", "Rank", "Rules +|diversity", "Measure"], highlight: 3 },
+  bizsearchflow: { steps: ["Query", "Understand|query", "Retrieve|(hybrid)", "Rank", "Results|+ facets", "Learn from|clicks"], highlight: 1 },
+  copilotflow: { steps: ["User in|a screen", "Gather|context", "Suggest", "User|confirms", "Execute|as user", "Log"], highlight: 3 },
+  mobileaiflow: { steps: ["Input", "On-device|first pass", "Need|cloud?", "Backend|AI service", "Stream|result", "Cache|+ offline"], highlight: 2 },
+  scalingflow: { steps: ["First use|cases", "Shared|platform", "Operating|model", "Portfolio|governance", "Scale|adoption", "Measure"], highlight: 1 },
+  readinessflow: { steps: ["Scope", "Interviews", "Score|dimensions", "Gaps", "Priorities", "Roadmap"], highlight: 2 },
+  dataprepflow: { steps: ["Inventory", "Profile|quality", "Fix +|enrich", "Permis-|sions", "Pipelines", "Monitor"], highlight: 3 },
+  aigovlifecycle: { steps: ["Register", "Classify|risk", "Assess", "Approve", "Monitor", "Review or|retire"], highlight: 1, loop: "governance is a lifecycle, not a one-time approval" },
+  aisecincident: { steps: ["Detect", "Contain", "Investigate|traces", "Fix", "Test +|deploy", "Learn"], highlight: 1 },
+  aiprivacyflow: { steps: ["Input", "Classify|data", "Redact|or mask", "Approved|model", "Store|with TTL", "Delete on|request"], highlight: 2 },
+  modelevalflow: { steps: ["Define|criteria", "Build|dataset", "Candidate|models", "Score", "Human|review", "Decide"], highlight: 1 },
+  monitorflow: { steps: ["Log|requests", "Compute|metrics", "Detect|drift", "Alert", "Investigate", "Adjust or|retrain"], highlight: 2 },
+  poctoprod: { steps: ["Idea", "POC:|feasible?", "Pilot:|valuable?", "Harden", "Launch", "Operate"], highlight: 2, loop: "each stage answers a different question" },
+  llmopsloop: { steps: ["Design", "Prompts +|retrieval", "Evaluate", "Staged|release", "Observe", "Learn from|failures"], highlight: 2, loop: "production failures become new test cases" },
+  mlopsllmopsflow: { steps: ["Task|design", "Prompts +|retrieval", "Evaluate", "Staged|release", "Trace", "Feedback"], highlight: 2, loop: "MLOps iterates on training; LLMOps on everything around the model" },
+  llmdeployflow: { steps: ["Client", "Auth'd|API", "Orches-|tration", "Gateway", "Model|provider", "Validate|+ stream"], highlight: 3 },
+  evalpipeflow: { steps: ["Change|submitted", "Load|dataset", "Run app", "Determin-|istic checks", "Auto|scoring", "Gate vs|baseline"], highlight: 4 },
+  llmtraceflow: { steps: ["API|request", "Retrieval|span", "Prompt|build", "Model|call", "Validate", "Response"], highlight: 3, loop: "every span carries versions, tokens, latency and status" },
+  promptworkflow: { steps: ["Edit on|branch", "Eval|subset", "Review", "Staging +|full eval", "Staged|rollout", "Monitor"], highlight: 3, branch: { from: 3, label: "quality drops → roll back version" } },
+  regressionflow: { steps: ["Change or|schedule", "Run|candidate", "Run|baseline", "Case-level|diff", "Human|review", "Decide"], highlight: 3, loop: "new failures join the regression set" },
+  fallbackflow: { steps: ["Request", "Primary|+ timeout", "Validate", "Retry|backoff", "Fallback|model", "Degrade or|escalate"], highlight: 4 },
+  releaseflow: { steps: ["Change", "Eval|gate", "Approval", "Shadow|test", "Canary", "Full|rollout"], highlight: 4, loop: "rollback stays one step away at every stage" },
+  aidataflow: { steps: ["Sources", "Ingest", "Validate", "Transform|+ enrich", "AI-ready|stores", "AI apps"], highlight: 3, loop: "feedback and corrections flow back to sources" },
+  aipipeflow: { steps: ["Extract|changes", "Validate|contract", "Quaran-|tine", "Transform", "Chunk +|embed", "Load +|monitor"], highlight: 1 },
+  ingestflow: { steps: ["Connect", "Detect|changes", "Content +|permissions", "Validate", "Dedupe +|metadata", "Raw store"], highlight: 2 },
+  unstructflow: { steps: ["Detect|format", "Parse or|transcribe", "Recover|structure", "Clean +|dedupe", "Metadata", "Chunk +|source"], highlight: 2 },
+  synthflow: { steps: ["Purpose|+ gaps", "Choose|method", "Generate", "Check|quality", "Expert|review", "Validate|on real"], highlight: 3 },
+  annotateflow: { steps: ["Sample", "Pre-label", "Annotate", "Review", "Adjudicate", "Export|version"], highlight: 3, loop: "decisions feed back into the guidelines" },
+  dqauditflow: { steps: ["Use case|+ thresholds", "Profile", "Validate|rules", "Sample|review", "Trace|errors", "Fix +|monitor"], highlight: 3 },
+  lineageflow: { steps: ["Source", "Ingest|run", "Dataset|version", "Chunks +|embeddings", "Index", "Answer|trace"], highlight: 3 },
+  streamflow: { steps: ["Source|change", "CDC", "Event|stream", "Stateful|processor", "Features|or index", "AI app"], highlight: 3, loop: "monitor end-to-end lag against the freshness target" },
+  redteamflow: { steps: ["Threat|model", "Design|scenarios", "Automated|probes", "Manual|testing", "Rate +|fix", "Regression|tests"], highlight: 3, loop: "re-test after every significant change" },
+  injectpathflow: { steps: ["Attacker|plants text", "Indexed or|fetched", "Innocent|request", "Model reads|content", "Tries tool|or leak", "Controls|block"], highlight: 3 },
+  jailbreakflow: { steps: ["Define|policies", "Build|test set", "Run", "Score both|directions", "Analyse|failures", "Remediate"], highlight: 3, loop: "re-run on every model or prompt change" },
+  leakpreventflow: { steps: ["User +|tenant", "Permission|context", "Filtered|retrieval", "Minimal|context", "Output|checks", "Redacted|logs"], highlight: 2 },
+  agentauthflow: { steps: ["User|signs in", "Scoped|token", "Agent|proposes", "Policy|check", "Approval|if needed", "Act +|audit"], highlight: 3 },
+  toolcallflow: { steps: ["Model|proposes", "Schema|check", "Authorize|as user", "Sandbox|execute", "Sanitize|output", "Log"], highlight: 2 },
+  supplychainflow: { steps: ["Select", "Verify|source", "Licence +|data rights", "Scan", "Record|in AI-BOM", "Registry|+ deploy"], highlight: 2 },
+  threatflow: { steps: ["Describe|system", "Assets +|actors", "Trust|boundaries", "Abuse|cases", "Mitigate", "Verify"], highlight: 2 },
+  sectestflow: { steps: ["Threat|model", "Tests per|threat", "CI suite", "Manual|review", "Release|gate", "Monitor"], highlight: 2, loop: "red team findings become new automated tests" },
+  aipdflow: { steps: ["Discover|problem", "Assess|AI fit", "Real-model|prototype", "Evaluate", "Design for|errors", "Launch|narrowly"], highlight: 2, loop: "learn from use and iterate" },
+  aiuxstates: { steps: ["Idle +|suggestions", "Input", "Working|steps", "Streaming", "Result +|sources", "Recover"], highlight: 3 },
+  haiphases: { steps: ["Before|use", "Set|expectations", "During|use", "When|wrong", "Over time", "Notify|changes"], highlight: 3 },
+  chatstates: { steps: ["Sent", "Thinking|steps", "Streaming", "Complete", "Sources +|actions", "Feedback"], highlight: 2, branch: { from: 2, label: "error → retry  ·  stop → edit" } },
+  copilotuxflow: { steps: ["Work in|context", "Suggest or|invoke", "Draft +|preview", "User|edits", "Apply or|dismiss", "Undo"], highlight: 2 },
+  aionboardflow: { steps: ["Entry|point", "Value|example", "Guided|first task", "Result +|limits", "Next task", "Advanced|tips"], highlight: 2 },
+  transparencylayers: { steps: ["AI label", "Key limits", "Sources +|uncertainty", "Details on|request", "Policies", "Docs"], highlight: 2 },
+  aierrorflow: { steps: ["Error", "Keep|input", "Clarify|or retry", "User|corrects", "Fallback|or escalate", "Record as|feedback"], highlight: 3 },
+  feedbackloop: { steps: ["Output", "Feedback|+ trace ID", "Triage", "Fix", "Add to|eval set", "Release +|measure"], highlight: 2, loop: "measure whether the fix worked" },
+  ideavalidflow: { steps: ["Problem|interviews", "Map|workflow", "Real|examples", "Feasibility|prototype", "User|test", "Build, buy|or stop"], highlight: 3 },
+  inferoptflow: { steps: ["Measure|by step", "Trim|prompts", "Cache", "Route to|smaller", "Optimize|serving", "Re-check|quality"], highlight: 3 },
+  servingflow: { steps: ["App", "Gateway", "Router", "Queue", "Engine|batching", "GPUs"], highlight: 4, loop: "stream tokens back and record metrics" },
+  trainvsinferflow: { steps: ["Prompt", "Prefill", "KV cache", "Decode|tokens", "Output", "Weights|unchanged"], highlight: 1, loop: "training instead updates weights every step" },
+  gpuoptflow: { steps: ["Measure", "Profile", "Find|bottleneck", "Targeted|change", "Validate|quality", "Measure|again"], highlight: 2 },
+  quantflow: { steps: ["Target|format", "Method", "Calibrate", "Quantize", "Evaluate|on tasks", "Benchmark|+ deploy"], highlight: 4 },
+  batchcacheflow: { steps: ["Response|cache?", "Stable|prefix first", "Prefix|cache", "Continuous|batching", "Generate", "Store +|TTL"], highlight: 2 },
+  edgeflow: { steps: ["Input", "On-device|inference", "Local|action", "Queue if|offline", "Sync to|cloud", "Signed|updates"], highlight: 1 },
+  selfhostflow: { steps: ["Model +|licence", "Verify|weights", "Hardware", "Inference|engine", "Gateway", "Monitor +|update"], highlight: 3 },
+  aiplatformflow: { steps: ["Team app", "Platform|SDK", "Model|gateway", "Models", "Shared|services", "Tracing +|cost"], highlight: 2 },
 };
 
 function LabeledFlow({ spec }: { spec: FlowSpec }) {
@@ -3865,6 +4341,336 @@ const ANATOMIES: Partial<Record<BlogBannerVariant, AnatomySpec>> = {
     { top: "Migration test matrix", hotCol: 0, note: "test the flows that make money first" }
   ),
 
+  dutieslandedcost: columnsSpec(["Product", "Shipping", "Import charges", "Fees"], [["Item price", "Currency", "Discounts", "Tax-incl. price*"], ["Carrier rate", "Service level", "Insurance", "Surcharges"], ["Customs duty", "Import VAT / GST", "Low-value rules", "Excise*"], ["Brokerage", "Clearance", "Currency FX", "Collection fee"]], { top: "Landed cost at checkout", hotCol: 2, note: "* where applicable; rules vary by destination and change often" }),
+
+  morcompare: compareSpec(["Own entity", "MoR: goods", "MoR: digital"], [["Legal seller", "Your business", "MoR provider", "MoR provider"], ["Tax registration", "You, per market", "Provider", "Provider"], ["Checkout control", "Full", "Shared", "Provider-hosted"], ["Fees", "Lower", "Higher %", "Higher %"], ["Customer data", "Yours", "Shared", "Shared"], ["Speed to market", "Slower", "Faster", "Faster"]], { hotCol: 1, note: "an MoR trades margin and control for speed and outsourced compliance" }),
+
+  marketplacecatalog: columnsSpec(["Product", "Offer", "Seller", "Quality"], [["Canonical record", "GTIN / MPN", "Attributes", "Content owner"], ["Price", "Stock", "Condition", "Delivery promise"], ["Seller SKU", "Seller terms", "Rating", "Fulfilment"], ["Match rules", "Duplicate checks", "Completeness", "Moderation"]], { top: "Marketplace catalog: one product, many offers", hotCol: 1, note: "content belongs to the product; price and terms belong to the offer" }),
+
+  trustsafety: columnsSpec(["Sellers", "Listings", "Transactions", "Buyers"], [["Verification", "Risk tiers", "Performance", "Enforcement"], ["Prohibited items", "Counterfeits", "Claims", "Reports"], ["Fraud signals", "Payout holds", "Disputes", "Off-platform pay"], ["Review integrity", "Protection", "Messaging", "Appeals"]], { top: "Marketplace trust and safety", hotCol: 0, note: "policies only work when the software can detect, act and record" }),
+
+  paymentorchestration: columnsSpec(["Checkout", "Orchestration", "Providers", "Back office"], [["Cards", "Wallets", "Local methods", "Saved methods"], ["Token vault", "Routing rules", "Retries", "Unified events"], ["Processor A", "Processor B", "Local acquirer", "Fraud tools"], ["Reconciliation", "Reporting", "Disputes", "Ledger"]], { top: "Payment orchestration layer", hotCol: 1, note: "one integration in the checkout, several providers behind it" }),
+
+  routinginputs: columnsSpec(["Card", "Transaction", "Provider", "Outcome"], [["Issuer country", "Card brand", "Debit or credit", "Network token?"], ["Currency", "Amount", "Market", "CIT or MIT"], ["Fees", "Approval rate", "Health", "Capabilities"], ["Approved", "Soft decline", "Hard decline", "Timeout"]], { top: "Payment routing inputs", hotCol: 2, note: "route on evidence from your own transaction data" }),
+
+  walletcheckout: columnsSpec(["Eligibility", "Payment sheet", "Token", "Order"], [["Device + browser", "Domain verified", "Market", "Show button"], ["Address", "Shipping options", "Totals update", "Contact"], ["Encrypted token", "Provider decrypts", "Authorize", "3DS if needed"], ["Create order", "Confirm", "Webhook", "Receipt"]], { top: "Digital wallet integration", hotCol: 1, note: "express checkout skips your forms, so the sheet must carry everything" }),
+
+  paymentfailures: compareSpec(["Soft decline", "Hard decline", "Timeout"], [["Example", "Insufficient funds", "Stolen card", "No response"], ["Retry?", "Limited, later", "Never", "Check status first"], ["Shopper message", "Try another way", "Use another card", "We are checking"], ["Main risk", "Retry abuse", "Fraud flags", "Double charge"]], { hotCol: 2, note: "never retry an unknown outcome without an idempotency key" }),
+
+  recurringpayments: columnsSpec(["Setup (CIT)", "Storage", "Renewals (MIT)", "Recovery"], [["Consent + terms", "Authenticate", "Network txn ID", "Agreement record"], ["Provider token", "Network token", "Account updater", "Expiry tracking"], ["Scheduled charge", "MIT flags", "Idempotency", "Webhooks"], ["Smart retries", "Customer email", "Update method", "Grace period"]], { top: "Recurring card payments", hotCol: 2, note: "the first, customer-present payment sets up every renewal" }),
+
+  threedscompare: compareSpec(["Frictionless", "Challenge", "Exemption"], [["Shopper sees", "Nothing extra", "OTP or bank app", "Nothing extra"], ["Decided by", "Issuer", "Issuer", "Requested, issuer may refuse"], ["Data needed", "Rich device data", "Same + response", "Risk data"], ["Liability", "Usually issuer*", "Usually issuer*", "Usually merchant*"]], { hotCol: 0, note: "* depends on network rules and region; confirm with your acquirer" }),
+
+  frauddetection: columnsSpec(["Identity", "Device", "Behaviour", "Order"], [["Email + phone", "Account age", "Order history", "Name match"], ["Fingerprint", "IP + proxy", "Geolocation", "Velocity"], ["Card attempts", "Paste + speed", "Session path", "Login changes"], ["Basket value", "Ship vs bill", "Rush shipping", "Resale risk"]], { top: "Fraud detection signals", hotCol: 3, note: "no single signal decides; combine signals and measure false positives" }),
+
+  chargebackevidence: columnsSpec(["Fraud", "Not received", "Not as described", "Cancelled / credit"], [["AVS + CVV", "3DS result", "Device + IP", "Prior orders"], ["Tracking", "Delivery proof", "Address match", "Messages"], ["Product page", "Photos", "Policy shown", "Return status"], ["Terms accepted", "Cancel log", "Refund record", "Messages"]], { top: "Chargeback evidence by dispute type", hotCol: 0, note: "evidence must answer the reason code, not tell the whole story" }),
+
+  paymentsecurity: columnsSpec(["Card data", "Payment page", "Access", "Monitoring"], [["Hosted fields", "Tokenization", "No PAN storage", "Encryption"], ["Script inventory", "CSP + SRI", "Change detection", "Tag governance"], ["MFA", "Least privilege", "Key rotation", "Admin audit"], ["Logs", "Alerts", "Webhook checks", "Incident plan"]], { top: "Payment security layers", hotCol: 1, note: "architecture decides PCI scope; confirm your SAQ with your acquirer" }),
+
+  pciscope: compareSpec(["Redirect / iframe", "Merchant JS form", "Server handles PAN"], [["Indicative SAQ", "A*", "A-EP*", "D*"], ["Card data touches", "Provider only", "Your page", "Your servers"], ["Script controls", "Eligibility check", "Required", "Required"], ["Effort", "Lowest", "Medium", "Highest"]], { hotCol: 0, note: "* indicative only; your acquirer or QSA confirms the right SAQ" }),
+
+  omsvsims: compareSpec(["OMS", "IMS"], [["Core question", "What happens to this order?", "What stock is where?"], ["Owns", "Orders, routing, status", "Quantities and movements"], ["Time focus", "The order lifecycle", "Now and replenishment"], ["Key output", "Fulfilment requests", "Available to sell"], ["Main users", "Service + operations", "Buying + warehouse"], ["Connects to", "Store, 3PL, payments", "WMS, ERP, suppliers"]], { note: "they overlap at availability; decide which system owns it" }),
+
+  domrules: columnsSpec(["Availability", "Cost", "Speed", "Capacity"], [["Stock by node", "Safety stock", "Full-order fill", "Reservations"], ["Shipping zone", "Split cost", "Handling cost", "Markdown risk"], ["Distance", "Cut-off times", "Carrier SLA", "Promise date"], ["Daily limits", "Store staffing", "Backlog", "Blackouts"]], { top: "Distributed order management: sourcing inputs", hotCol: 0, note: "rules are weighted trade-offs, not a single cheapest-wins sort" }),
+
+  preordercompare: compareSpec(["Pre-order", "Backorder", "Sold out"], [["Stock", "Not yet arrived", "Sold out, more due", "None, no date"], ["Button", "Pre-order + date", "Order + est. date", "Notify me"], ["Payment", "Deposit, full or later", "Full or auth", "None"], ["Promise", "Release date", "Restock date", "None"], ["Main risk", "Delays", "Cancellations", "Lost sale"]], { hotCol: 0, note: "show the date before payment and update it when it moves" }),
+
+  threepldata: columnsSpec(["Outbound", "Inbound", "Inventory", "Exceptions"], [["Fulfilment request", "Cancellation", "Address change", "Product master"], ["ASN + receipts", "Ship confirm", "Tracking", "Returns received"], ["Snapshots", "Adjustments", "Reserved", "Damaged"], ["Rejections", "Short picks", "Holds", "Delays"]], { top: "3PL integration messages", hotCol: 3, note: "the happy path is the easy part; exceptions decide the design" }),
+
+  wmsevents: columnsSpec(["Receive", "Store", "Pick + pack", "Ship"], [["PO / ASN", "Receipt", "Quality check", "Putaway"], ["Locations", "Cycle counts", "Adjustments", "Transfers"], ["Waves", "Short pick", "Substitution*", "Pack verify"], ["Label", "Manifest", "Ship confirm", "Tracking"]], { top: "WMS integration events", hotCol: 2, note: "* only under rules the customer agreed to" }),
+
+  refundcalc: columnsSpec(["Items", "Shipping", "Adjustments", "Method"], [["Price paid", "Discount share", "Tax share", "Quantity"], ["Original shipping", "Return label", "Policy rules", "Restocking fee*"], ["Partial refund", "Goodwill", "Store credit", "Gift cards"], ["Original method", "Split tenders", "Expired card", "Currency"]], { top: "Calculating a refund", hotCol: 0, note: "* where lawful and disclosed before purchase" }),
+
+  exchangetypes: compareSpec(["Like-for-like", "Different item", "Instant exchange"], [["Example", "Size swap", "Other style", "Ships before return"], ["Price difference", "None", "Charge or refund", "Charge or refund"], ["Stock check", "Same product", "Any product", "Reserve now"], ["Main risk", "Low", "Pricing errors", "Item not returned"]], { hotCol: 2, note: "instant exchanges usually need a card authorization or deposit" }),
+
+  billingarch: columnsSpec(["Catalog", "Subscriptions", "Billing engine", "Payments"], [["Plans", "Prices", "Intervals", "Add-ons"], ["State machine", "Schedules", "Changes", "Pauses"], ["Invoices", "Proration", "Tax", "Credits"], ["Charge", "Retries", "Webhooks", "Ledger"]], { top: "Subscription billing architecture", hotCol: 2, note: "the invoice is the record; the charge only settles it" }),
+
+  loyaltyplatform: columnsSpec(["Events", "Rules", "Ledger", "Channels"], [["Orders", "Returns", "Reviews", "Sign-ups"], ["Earn rules", "Tiers", "Expiry", "Campaigns"], ["Accruals", "Redemptions", "Reversals", "Balances"], ["Account page", "Checkout", "POS", "Email + app"]], { top: "Loyalty program architecture", hotCol: 2, note: "the ledger is append-only; balances are derived from it" }),
+
+  referralcontrols: columnsSpec(["Attribution", "Eligibility", "Fraud", "Reward"], [["Link + code", "Cookie window", "Last-touch rule", "Cross-device"], ["New customers", "Minimum order", "Markets", "Exclusions"], ["Self-referral", "Device match", "Address match", "Velocity"], ["Credit or cash", "Delay to returns", "Caps", "Terms"]], { top: "Referral program controls", hotCol: 2, note: "reward after the return window, not at checkout" }),
+
+  retentionstack: columnsSpec(["Data", "Engagement", "Programs", "Service"], [["Commerce data", "CDP / warehouse", "Identity", "Consent"], ["Email + SMS", "Push", "Onsite", "Ad audiences"], ["Loyalty", "Subscriptions", "Referrals", "Reviews"], ["Accounts", "Helpdesk", "Returns", "Tracking"]], { top: "Retention technology stack", hotCol: 0, note: "data and identity first; channels and tools second" }),
+
+  agentdevstack: columnsSpec(["Model", "Tools", "State + memory", "Controls"], [["Reasoning model", "Instructions", "Structured output", "Fallback model"], ["Business APIs", "Retrieval", "MCP servers", "Code execution*"], ["Task state", "Conversation", "Long-term memory", "Checkpoints"], ["Permissions", "Approvals", "Evaluations", "Tracing"]], { top: "AI agent development: the four parts", hotCol: 3, note: "* only in sandboxes; the controls column decides whether an agent is safe to ship" }),
+
+  agentvschatbot: compareSpec(["AI chatbot", "AI agent"], [["Main job", "Answer in conversation", "Complete a task"], ["Tools", "Few or none", "Calls APIs and systems"], ["Planning", "Single reply", "Multi-step plan"], ["State", "Conversation history", "Task state + memory"], ["Autonomy", "Responds to user", "Acts within permissions"], ["Failure mode", "Wrong answer", "Wrong action"]], { hotCol: 1, note: "the risk moves from what it says to what it does" }),
+
+  assistantspectrum: columnsSpec(["Scripted bot", "LLM chatbot", "Assistant + tools", "Agent"], [["Decision trees", "Fixed answers", "Buttons", "Predictable"], ["Free text", "Grounded answers", "No actions", "Handoff"], ["Looks things up", "Drafts actions", "User confirms", "Narrow scope"], ["Plans steps", "Acts via tools", "Approvals", "Evaluated"]], { top: "From chatbot to agent", hotCol: 2, note: "most business value starts in the third column" }),
+
+  agentarchlayers: columnsSpec(["Interface", "Agent runtime", "Capabilities", "Platform"], [["Chat / voice", "API + events", "Approval UI", "Notifications"], ["Model calls", "Planner / loop", "State store", "Policy checks"], ["Tools + APIs", "Retrieval", "Memory", "Sub-agents"], ["Identity", "Secrets", "Tracing", "Evaluation"]], { top: "AI agent architecture", hotCol: 1, note: "the model decides; application code enforces" }),
+
+  singlevsmulti: compareSpec(["Single agent", "Multi-agent"], [["Structure", "One loop, many tools", "Several specialised agents"], ["Debugging", "One trace to read", "Many hand-offs"], ["Cost + latency", "Lower", "Higher"], ["Context", "Can overload", "Split by specialist"], ["Best for", "Most business tasks", "Separable, parallel work"], ["Start with", "Yes", "Only when proven"]], { hotCol: 0, note: "add agents when one agent measurably fails, not by default" }),
+
+  multiagentpatterns: columnsSpec(["Supervisor", "Pipeline", "Router", "Hand-off"], [["One coordinator", "Delegates tasks", "Merges results", "Central control"], ["Fixed order", "Each stage owns", "Easy to test", "Least flexible"], ["Classify request", "Send to specialist", "One agent works", "Cheap + clear"], ["Agent passes on", "Shared context", "Peer to peer", "Hardest to trace"]], { top: "Multi-agent patterns", hotCol: 2 }),
+
+  agentorchestrator: columnsSpec(["Routing", "Task state", "Execution", "Recovery"], [["Intent", "Skills", "Load", "Priority"], ["Inputs", "Progress", "Outputs", "Checkpoints"], ["Timeouts", "Parallel steps", "Budgets", "Idempotency"], ["Retries", "Fallbacks", "Escalation", "Compensation"]], { top: "AI agent orchestration", hotCol: 1, note: "state lives outside the model so runs can pause, resume and be audited" }),
+
+  agenticvsdeterministic: compareSpec(["Deterministic workflow", "Agentic workflow"], [["Path", "Fixed in advance", "Chosen at run time"], ["Inputs", "Structured, predictable", "Messy, varied"], ["Testing", "Exact expected output", "Evaluations + ranges"], ["Cost", "Low, predictable", "Higher, variable"], ["Failure", "Stops with error", "Can drift or loop"], ["Use when", "Rules are known", "Judgement is needed"]], { note: "most good systems combine both: fixed rails, AI inside steps" }),
+
+  hitlmodes: columnsSpec(["Before action", "Approve action", "After action", "On doubt"], [["Review draft", "Edit freely", "Nothing sent", "Training data"], ["Show the plan", "One-click approve", "Then execute", "Audit trail"], ["Sample review", "Spot checks", "Undo window", "Quality score"], ["Low confidence", "High value", "Policy match", "Escalate"]], { top: "Human-in-the-loop modes", hotCol: 1, note: "match the mode to the cost of a mistake" }),
+
+  agentevalmetrics: columnsSpec(["Outcome", "Steps", "Quality", "Operations"], [["Task success", "Correct end state", "Human acceptance", "Escalation rate"], ["Tool choice", "Arguments valid", "Step count", "Loops avoided"], ["Groundedness", "Policy compliance", "Tone", "Safety"], ["Latency", "Cost per task", "Error rate", "Regression"]], { top: "AI agent evaluation metrics", hotCol: 1, note: "judge the trajectory, not only the final answer" }),
+
+  guardraillayers: columnsSpec(["Input", "Context", "Action", "Output"], [["Size limits", "Injection checks", "PII detection", "Topic scope"], ["Trusted vs untrusted", "Least data", "Tenant isolation", "Clear roles"], ["Tool allow-list", "Argument checks", "Rate limits", "Approvals"], ["Schema validation", "Policy filters", "Citations", "Redaction"]], { top: "AI agent guardrails", hotCol: 2, note: "the action column matters most: limit what the agent can do" }),
+
+  agentobsmap: columnsSpec(["Traces", "Spans", "Metrics", "Evaluations"], [["One per run", "Correlation IDs", "User + tenant", "Version"], ["Model calls", "Tool calls", "Retrieval", "Approvals"], ["Tokens + cost", "Latency", "Errors", "Escalations"], ["Online scores", "Feedback", "Sampled review", "Drift"]], { top: "AI agent observability", hotCol: 1, note: "log prompts and outputs with care: they contain customer data" }),
+
+  bpaopportunity: compareSpec(["Strong candidate", "Weak candidate"], [["Volume", "Frequent and steady", "Rare or seasonal"], ["Rules", "Mostly clear", "Constantly changing"], ["Inputs", "Digital, consistent", "Paper, ad hoc"], ["Systems", "APIs available", "Locked or legacy only"], ["Errors cost", "Measurable", "Unknown"], ["Owner", "Named person", "Nobody"]], { hotCol: 0, note: "automate a fixed process; do not automate a broken one" }),
+
+  workflowanatomy: columnsSpec(["Trigger", "Conditions", "Actions", "Handling"], [["Event / webhook", "Schedule", "Form or email", "Manual start"], ["Field checks", "Branches", "Lookups", "Filters"], ["Create / update", "Notify", "Generate file", "Call API"], ["Retries", "Dead letters", "Alerts", "Run history"]], { top: "Workflow automation anatomy", hotCol: 3, note: "the handling column is what separates a demo from a dependable workflow" }),
+
+  aiworkflowsteps: columnsSpec(["Deterministic", "AI steps", "Validation", "Human gates"], [["Triggers", "Lookups", "Calculations", "System writes"], ["Classify", "Extract", "Summarize", "Draft"], ["JSON schema", "Business rules", "Cross-checks", "Confidence"], ["Approve", "Edit", "Escalate", "Sample review"]], { top: "AI workflow automation", hotCol: 2, note: "AI suggests inside fixed rails; code decides what happens next" }),
+
+  wfvsrpa: compareSpec(["Workflow automation", "RPA"], [["Connects via", "APIs, webhooks, events", "The user interface"], ["Stability", "High when APIs are stable", "Breaks on UI change"], ["Speed", "Fast", "Slower, screen-bound"], ["Best for", "Modern SaaS and data", "Legacy apps without APIs"], ["Maintenance", "Schema changes", "Selectors and screens"]], { hotCol: 0, note: "use RPA where no better interface exists" }),
+
+  integrationladder: columnsSpec(["API", "Events", "Files / EDI", "UI automation"], [["Documented", "Versioned", "Authenticated", "Most stable"], ["Webhooks", "Queues", "Near real time", "Push-based"], ["Batch", "SFTP", "Partner formats", "Scheduled"], ["Screen steps", "Selectors", "Fragile", "Last resort"]], { top: "Choose the most stable interface", hotCol: 0 }),
+
+  rpavsai: compareSpec(["RPA", "AI automation", "Combined"], [["Handles", "Fixed screens, rules", "Unstructured inputs", "Both"], ["Decides", "Nothing new", "Within limits", "AI reads, rules act"], ["Output", "Same every time", "Varies, needs checks", "Validated"], ["Breaks on", "UI changes", "Odd inputs", "Either, less often"], ["Cost", "Licences + upkeep", "Usage-based", "Both"]], { hotCol: 2, note: "AI understands the input; deterministic automation performs the action" }),
+
+  idpcomponents: columnsSpec(["Capture", "Understand", "Verify", "Integrate"], [["Email / upload", "Scans + photos", "PDFs", "Portals"], ["OCR / layout", "Classification", "Extraction", "Tables"], ["Rules", "Cross-checks", "Confidence", "Human review"], ["ERP / CRM", "Document store", "Audit trail", "Analytics"]], { top: "Intelligent document processing", hotCol: 2 }),
+
+  invoicematch: compareSpec(["Two-way match", "Three-way match"], [["Compares", "Invoice vs PO", "Invoice vs PO vs receipt"], ["Catches", "Price, quantity ordered", "Also goods not received"], ["Needs", "PO data", "PO + goods receipt data"], ["Fits", "Services, low risk", "Physical goods"]], { hotCol: 1, note: "tolerances decide how many invoices become exceptions" }),
+
+  emailtriage: columnsSpec(["Classify", "Extract", "Act", "Respond"], [["Intent", "Urgency", "Customer", "Language"], ["Order numbers", "Dates", "Amounts", "Attachments"], ["Route to team", "Create ticket", "Update CRM", "Start workflow"], ["Draft reply", "Templates", "Human sends", "Auto for simple"]], { top: "AI email automation", hotCol: 0, note: "start by drafting replies; automate sending only where accuracy is proven" }),
+
+  leadqual: columnsSpec(["Enrich", "Fit", "Intent", "Route"], [["Company data", "Role", "Tech stack", "Source"], ["Size", "Industry", "Region", "ICP rules"], ["Pages viewed", "Form answers", "Email reply", "Timing"], ["Owner", "Priority", "SLA", "Nurture"]], { top: "AI lead qualification", hotCol: 2, note: "scores need reasons a salesperson can read" }),
+
+  salesauto: columnsSpec(["Research", "Prep", "CRM", "Follow-up"], [["Account news", "Contacts", "Past deals", "Public info"], ["Meeting brief", "Questions", "Objections", "Agenda"], ["Notes", "Next steps", "Fields", "Stage hints"], ["Draft email", "Tasks", "Reminders", "Sequences"]], { top: "AI sales automation", hotCol: 2, note: "automate admin around selling, not the relationship" }),
+
+  ragtwophase: columnsSpec(["Indexing", "Query time", "Generation", "Evaluation"], [["Connectors", "Parse + chunk", "Embed", "Metadata"], ["Rewrite query", "Hybrid search", "Filter", "Rerank"], ["Prompt + sources", "Answer", "Citations", "Refuse if unsure"], ["Retrieval recall", "Faithfulness", "Answer quality", "Feedback"]], { top: "Retrieval-augmented generation", hotCol: 1 }),
+
+  ragvsft: compareSpec(["RAG", "Fine-tuning", "Both"], [["Changes", "What model sees", "How model behaves", "Both"], ["Fresh data", "Yes, re-index", "No, retrain", "Yes"], ["Citations", "Natural", "Hard", "Via RAG"], ["Data needed", "Documents", "Labelled examples", "Both"], ["Best for", "Knowledge", "Format, style, skill", "Specialised + current"]], { hotCol: 0, note: "knowledge problems → RAG; behaviour problems → prompts first, then tuning" }),
+
+  enterpriserag: columnsSpec(["Sources", "Ingestion", "Retrieval", "Serving"], [["SharePoint / Drive", "Wikis", "Ticketing", "Databases"], ["Connectors", "Parsing", "ACL sync", "Re-index jobs"], ["Hybrid search", "Permission filter", "Rerank", "Freshness"], ["Assistant UI", "APIs", "Audit logs", "Evaluations"]], { top: "Enterprise RAG architecture", hotCol: 2, note: "copy permissions with the content, or the assistant leaks it" }),
+
+  vectordbmap: columnsSpec(["Store", "Index", "Query", "Operate"], [["Vectors", "Metadata", "Source IDs", "Tenants"], ["HNSW", "IVF", "Quantization", "Rebuilds"], ["k-NN", "Filters", "Hybrid", "Thresholds"], ["Backups", "Scaling", "Cost", "Monitoring"]], { top: "Vector databases", hotCol: 1 }),
+
+  vectordbcompare: compareSpec(["Postgres + pgvector", "Dedicated vector DB", "Search engine"], [["Good when", "Already on Postgres", "Vectors are core", "Keyword search matters"], ["Strength", "Joins, transactions", "Scale, vector features", "BM25 + hybrid"], ["Watch for", "Tuning at scale", "Another system", "Operational weight"], ["Filtering", "SQL", "Payload filters", "Rich queries"]], { note: "pick by your data, scale and team, not by benchmarks alone" }),
+
+  embeddingtradeoffs: columnsSpec(["Captures", "Misses", "Choices", "Costs"], [["Meaning", "Paraphrases", "Topics", "Cross-language*"], ["Exact codes", "Rare names", "Negation", "Numbers"], ["Model", "Dimensions", "Distance metric", "Chunk size"], ["Embedding calls", "Storage", "Re-embedding", "Index memory"]], { top: "What embeddings do and do not capture", hotCol: 1, note: "* with multilingual models; the misses column is why hybrid search exists" }),
+
+  chunkingmethods: compareSpec(["Fixed size", "Recursive", "Structure-aware", "Semantic"], [["Splits by", "Token count", "Separators", "Headings, sections", "Meaning shifts"], ["Best for", "Uniform text", "General default", "Manuals, policies", "Long narrative"], ["Risk", "Cuts mid-idea", "Uneven sizes", "Needs parsing", "Cost, variance"]], { hotCol: 2 }),
+
+  rerankcompare: compareSpec(["Bi-encoder retrieval", "Cross-encoder rerank", "LLM rerank"], [["Reads", "Query, doc apart", "Query + doc together", "Query + many docs"], ["Speed", "Very fast", "Slower", "Slowest"], ["Precision", "Good recall", "Higher precision", "High, costly"], ["Use for", "Thousands of docs", "Top 20-100", "Small sets"]], { hotCol: 1 }),
+
+  hybridsearch: columnsSpec(["Keyword (BM25)", "Vector", "Fusion", "Filters"], [["Exact terms", "Codes + SKUs", "Names", "Rare words"], ["Meaning", "Paraphrase", "Synonyms", "Questions"], ["RRF by rank", "Weighted scores", "Tuned on eval", "Then rerank"], ["Permissions", "Dates", "Source", "Language"]], { top: "Hybrid search for RAG", hotCol: 2 }),
+
+  kbassistant: columnsSpec(["Sources", "Pipeline", "Assistant", "Feedback"], [["Policies", "Manuals", "Tickets", "Wikis"], ["Sync", "Parse + chunk", "Permissions", "Index"], ["Answers", "Citations", "Refusals", "Hand-off"], ["Thumbs + notes", "Gap reports", "Owner fixes", "Re-test"]], { top: "AI knowledge base", hotCol: 3, note: "the content owners are part of the system" }),
+
+  graphragcompare: compareSpec(["Vector RAG", "GraphRAG"], [["Best questions", "Specific facts", "Themes, relationships"], ["Index cost", "Low", "High (LLM extraction)"], ["Freshness", "Easy to update", "Graph rebuilds"], ["Explainability", "Source chunks", "Entities + paths"], ["Start with", "Most projects", "Proven need"]], { hotCol: 0, note: "GraphRAG answers corpus-wide questions vector RAG struggles with" }),
+
+  mcparch: columnsSpec(["Host", "Client", "Server", "Capabilities"], [["AI app / IDE", "User consent", "Model access", "Many clients"], ["One per server", "Protocol", "Capabilities", "Auth"], ["Your system", "stdio or HTTP", "Validation", "Scoped access"], ["Tools", "Resources", "Prompts", "Extensions"]], { top: "Model Context Protocol architecture", hotCol: 2 }),
+
+  mcpservercomponents: columnsSpec(["Capabilities", "Validation", "Transport", "Operations"], [["Tools", "Resources", "Prompts", "Descriptions"], ["Input schema", "Output schema", "Auth checks", "Rate limits"], ["stdio (local)", "Streamable HTTP", "TLS", "Headers"], ["Logging", "Tracing", "Versioning", "Tests"]], { top: "Inside an MCP server", hotCol: 1 }),
+
+  mcpvsapi: compareSpec(["Traditional API", "MCP server"], [["Audience", "Developers' code", "AI applications"], ["Discovery", "Docs, OpenAPI", "Protocol lists tools"], ["Descriptions", "For humans", "For models + humans"], ["Auth", "Your scheme", "OAuth-based (remote)"], ["Replaces the other?", "No", "No: usually wraps APIs"]], { note: "MCP is an adapter for AI clients, built on top of your APIs" }),
+
+  mcplayers: columnsSpec(["AI host", "MCP server", "Your API", "Systems"], [["Model", "Tool picker", "User approval", "Client"], ["Tool schemas", "Auth", "Validation", "Mapping"], ["Business logic", "Permissions", "Rate limits", "Audit"], ["Database", "SaaS apps", "Files", "Queues"]], { top: "Where MCP sits", hotCol: 1, note: "keep business rules in the API, not in tool descriptions" }),
+
+  mcpthreats: columnsSpec(["Identity", "Tools", "Data", "Supply chain"], [["Audience checks", "No passthrough", "Scopes", "Short tokens"], ["Poisoned descriptions", "Over-broad tools", "Approvals", "Arg validation"], ["Injection in results", "Least data", "Tenant isolation", "Redaction"], ["Untrusted servers", "Pinned versions", "Local exec risk", "Review"]], { top: "MCP security", hotCol: 0 }),
+
+  aiapiintegration: columnsSpec(["Request", "Model call", "Response", "Operations"], [["Auth user", "Build context", "Trim tokens", "Idempotency"], ["Server-side key", "Streaming", "Timeouts", "Retries"], ["Schema check", "Business rules", "Store", "Show user"], ["Usage + cost", "Rate limits", "Fallbacks", "Evals"]], { top: "AI API integration", hotCol: 2, note: "never call model APIs with secret keys from the browser or app" }),
+
+  llmgateway: columnsSpec(["Apps", "Gateway", "Policies", "Providers"], [["Web", "Internal tools", "Agents", "Batch jobs"], ["One API", "Auth", "Routing", "Logging"], ["Budgets", "Rate limits", "PII rules", "Model allow-list"], ["Provider A", "Provider B", "Self-hosted", "Fallbacks"]], { top: "LLM gateway", hotCol: 1 }),
+
+  routingstrategies: compareSpec(["Static by task", "Classifier router", "Cascade"], [["How", "Config per task", "Model picks tier", "Cheap first, escalate"], ["Pros", "Simple, predictable", "Adapts per request", "Saves on easy cases"], ["Cons", "Coarse", "Router can err", "Extra latency"], ["Needs", "Task labels", "Training/eval data", "Quality check"]], { hotCol: 0 }),
+
+  aiorchestrationlayer: columnsSpec(["Inputs", "Orchestration", "Capabilities", "Controls"], [["User request", "Events", "Schedules", "Documents"], ["Flow / graph", "State", "Retries", "Branching"], ["Models", "Retrieval", "Tools", "Agents"], ["Validation", "Approvals", "Tracing", "Budgets"]], { top: "AI orchestration", hotCol: 1 }),
+
+  agentmemorytypes: columnsSpec(["Working", "Session", "Long-term", "Shared"], [["Current step", "Scratchpad", "Tool results", "Discarded"], ["Conversation", "Summaries", "Task state", "Expires"], ["User prefs", "Facts", "Consent", "Editable"], ["Knowledge base", "Policies", "Org data", "Permissioned"]], { top: "AI agent memory", hotCol: 2, note: "long-term memory needs consent, expiry and a way to forget" }),
+
+  mcpvsa2a: compareSpec(["MCP", "A2A"], [["Connects", "Model app to tools/data", "Agent to agent"], ["Unit of work", "Tool call, resource", "Task, message, artifact"], ["Discovery", "Server lists tools", "Agent Card"], ["Typical use", "Give an agent abilities", "Delegate to another agent"], ["Relation", "Complementary", "Complementary"]], { note: "an agent can use MCP for its tools and A2A to talk to peers" }),
+
+  voicearchcompare: compareSpec(["Cascaded STT → LLM → TTS", "Speech-to-speech model"], [["Parts", "Three swappable models", "One audio model"], ["Control", "Text at every step", "Less visibility"], ["Latency", "Sum of steps", "Often lower"], ["Voice choice", "Any TTS", "Model's voices"], ["Fits", "Compliance-heavy flows", "Natural conversation"]], { note: "both need turn detection, interruption handling and tool calls" }),
+
+  voicecsmetrics: columnsSpec(["Containment", "Quality", "Speed", "Safety"], [["Resolved by AI", "Hand-off rate", "Repeat calls", "Reasons"], ["Accuracy", "CSAT", "QA review", "Tone"], ["Answer time", "Latency", "Call length", "Queue time"], ["Disclosure", "Consent", "Escalations", "Data access"]], { top: "Measuring AI voice agents in customer service", hotCol: 1 }),
+
+  receptionist: columnsSpec(["Answer", "Book", "Capture", "Hand off"], [["Greeting", "Hours", "FAQs", "Directions"], ["Availability", "Book / change", "Confirm SMS", "Reminders"], ["Caller details", "Reason", "Urgency", "To CRM"], ["Transfer", "Message", "Callback", "Emergencies"]], { top: "AI receptionist", hotCol: 3, note: "urgent or sensitive calls go to people, always" }),
+
+  callautomation: compareSpec(["Inbound", "Outbound"], [["Starts with", "Customer calls", "Business calls"], ["Typical jobs", "Answer, route, book", "Reminders, follow-ups"], ["Consent", "Disclosure, recording", "Prior consent rules"], ["Main risk", "Misrouting", "Regulatory exposure"], ["Measure", "Resolution, hand-off", "Reach, opt-outs"]], { hotCol: 1, note: "outbound AI calls carry consent obligations in many markets" }),
+
+  supportsystem: columnsSpec(["Intake", "Understand", "Resolve", "Learn"], [["Email", "Chat", "Forms", "Voice"], ["Classify", "Priority", "Sentiment", "Customer data"], ["Self-service", "Agent assist", "Actions", "Escalation"], ["Gap reports", "QA", "Help content", "Metrics"]], { top: "AI customer support automation", hotCol: 2 }),
+
+  meetingdata: columnsSpec(["Capture", "Understand", "Act", "Govern"], [["Consent", "Recording", "Transcript", "Speakers"], ["Summary", "Decisions", "Action items", "Risks"], ["CRM update", "Tasks", "Follow-up draft", "Search"], ["Retention", "Access", "Exclusions", "Deletion"]], { top: "AI meeting assistants", hotCol: 3 }),
+
+  extractionmethods: compareSpec(["Templates + OCR rules", "Trained ML models", "LLM / vision schema"], [["Setup", "Per layout", "Labelled data", "Schema + prompt"], ["New layouts", "Break", "Need retraining", "Usually adapt"], ["Consistency", "High", "High", "Needs validation"], ["Cost", "Low per page", "Medium", "Usage-based"]], { hotCol: 2, note: "validate every field whatever the method" }),
+
+  llmcostlevers: columnsSpec(["Tokens", "Model choice", "Reuse", "Workload"], [["Shorter prompts", "Less context", "Output limits", "Summaries"], ["Smaller models", "Routing", "Cascades", "Fine-tunes*"], ["Prompt caching", "Response cache", "Embeddings once", "Dedup"], ["Batch APIs", "Off-peak jobs", "Fewer calls", "Budgets"]], { top: "LLM cost optimization levers", hotCol: 2, note: "* only when volume justifies training and upkeep" }),
+
+  promptinjection: columnsSpec(["Direct", "Indirect", "Impact", "Defenses"], [["User instructions", "Jailbreaks", "Role play", "Encoding tricks"], ["Web pages", "Documents", "Emails", "Tool results"], ["Data leaks", "Wrong actions", "Policy bypass", "Fraud"], ["Least privilege", "Approvals", "Validation", "Monitoring"]], { top: "Prompt injection", hotCol: 1, note: "no prompt fully stops injection; limit what a fooled model can do" }),
+
+  aiprioritymatrix: compareSpec(["Start now", "Plan carefully", "Avoid for now"], [["Value", "Clear, measurable", "High but uncertain", "Unclear"], ["Data", "Available", "Needs work", "Missing"], ["Risk of error", "Low or reviewable", "Material", "Severe, unreviewable"], ["Example", "Drafting, triage", "Customer-facing agents", "Autonomous approvals"]], { hotCol: 0 }),
+  aisdhub: columnsSpec(["Plan", "Build", "Verify", "Operate"], [["Requirements", "Specs", "Estimates", "Design notes"], ["Completion", "Coding agents", "Refactoring", "Migrations"], ["Code review", "Test generation", "Security scans", "Debugging"], ["Docs", "Incident triage", "Upgrades", "Maintenance"]], { top: "AI in software development", hotCol: 2, note: "speed gains only count if verification keeps up" }),
+
+  codingagentperms: columnsSpec(["Read", "Write", "Execute", "Never"], [["Repository", "Issues", "Docs", "CI logs"], ["Branch only", "Draft PR", "Tests", "Comments"], ["Tests", "Linters", "Builds", "Sandboxed"], ["Push to main", "Prod secrets", "Merge alone", "Deploy prod"]], { top: "Coding agent permissions", hotCol: 3, note: "agents work on branches; people review and merge" }),
+
+  assistvsagentic: compareSpec(["Completion", "Chat assist", "Agentic coding"], [["Unit of work", "Line or block", "Snippet or file", "Task across files"], ["Who drives", "Developer", "Developer", "Agent, supervised"], ["Runs code", "No", "Sometimes", "Tests, builds"], ["Review", "As you type", "Before paste", "PR review"], ["Best for", "Flow typing", "Explaining, drafting", "Well-scoped tasks"]], { hotCol: 2 }),
+
+  reviewchecks: columnsSpec(["Correctness", "Security", "Maintainability", "Process"], [["Logic errors", "Edge cases", "Null handling", "Tests present"], ["Injection", "Secrets", "Auth checks", "Dependencies"], ["Naming", "Duplication", "Complexity", "Conventions"], ["Severity labels", "Human approval", "False-positive log", "Metrics"]], { top: "What AI code review checks", hotCol: 1 }),
+
+  testlayers: columnsSpec(["Unit", "Integration", "End-to-end", "Non-functional"], [["Functions", "Edge cases", "Fast", "Many"], ["APIs", "Databases", "Contracts", "Fewer"], ["User journeys", "UI flows", "Slow", "Few, critical"], ["Performance", "Accessibility", "Security", "Load"]], { top: "Where AI helps across test layers", hotCol: 0 }),
+
+  debugsources: columnsSpec(["Signals", "Context", "Tools", "Outputs"], [["Stack traces", "Logs", "Alerts", "User reports"], ["Recent commits", "Code paths", "Config", "Traces"], ["Run tests", "Reproduce", "Query logs", "Bisect"], ["Root cause", "Fix + test", "PR", "Postmortem notes"]], { top: "AI-assisted debugging", hotCol: 1 }),
+
+  testquality: compareSpec(["Weak generated test", "Strong test"], [["Asserts", "That code runs", "Specific behaviour"], ["Edge cases", "Happy path only", "Boundaries, errors"], ["Mocks", "Everything mocked", "Only real boundaries"], ["Fails when", "Rarely, if ever", "Behaviour breaks"], ["Source of truth", "Current code", "Spec or requirement"]], { hotCol: 1, note: "tests copied from current behaviour also copy current bugs" }),
+
+  doctypes: columnsSpec(["Inline", "API", "Guides", "Architecture"], [["Docstrings", "Comments", "Types", "Examples"], ["Endpoints", "Schemas", "Errors", "Changelog"], ["README", "Setup", "How-to", "Runbooks"], ["Diagrams", "Decisions (ADRs)", "Data flows", "Dependencies"]], { top: "Documentation AI can help maintain", hotCol: 3 }),
+
+  modernstrategies: compareSpec(["Rehost", "Refactor", "Rewrite", "Replace"], [["Change", "Infrastructure", "Code structure", "Everything", "Buy a product"], ["Risk", "Low", "Medium", "High", "Medium"], ["AI helps", "Little", "A lot", "Partly", "Data migration"], ["Fits", "Urgent moves", "Most systems", "Small, clear scope", "Commodity needs"]], { hotCol: 1 }),
+
+  sdlcresponsibility: columnsSpec(["AI does", "People do", "Controls", "Evidence"], [["Drafts", "Suggests", "Generates tests", "Summarizes"], ["Decide scope", "Approve design", "Review code", "Own releases"], ["Branch rules", "CI gates", "Permissions", "Secret scanning"], ["PR history", "Test results", "Review records", "Audit logs"]], { top: "Responsibilities in an AI-assisted SDLC", hotCol: 1 }),
+
+  hrautomation: columnsSpec(["Onboarding", "Employee help", "Documents", "Leave + changes"], [["Checklists", "Accounts", "Equipment", "Training"], ["Policy answers", "Payslip queries", "Benefits", "Routing"], ["Letters", "Contracts*", "Forms", "Records"], ["Requests", "Balances", "Approvals", "HRIS updates"]], { top: "AI HR automation", hotCol: 1, note: "* drafted for HR review, never sent automatically" }),
+
+  recruitguard: columnsSpec(["Automate", "Assist", "Human only", "Govern"], [["Acknowledge", "Scheduling", "Reminders", "Status updates"], ["Parse CVs", "Summaries", "Interview notes", "Job ads"], ["Shortlisting", "Rejections", "Offers", "Assessments"], ["Bias audits*", "Notices", "Records", "Appeals"]], { top: "AI recruitment automation", hotCol: 2, note: "* required in some jurisdictions, such as NYC Local Law 144" }),
+
+  contentroles: columnsSpec(["AI helps", "People own", "Checks", "Systems"], [["Research notes", "Outlines", "First drafts", "Repurposing"], ["Strategy", "Expertise", "Final edits", "Approval"], ["Fact-check", "Sources", "Brand voice", "Legal review*"], ["CMS", "DAM", "Calendar", "Analytics"]], { top: "AI content operations", hotCol: 1, note: "* for regulated claims" }),
+
+  vendordocs: columnsSpec(["Onboarding", "Contracts", "Quotes", "Risk"], [["Registration", "Tax forms", "Bank details*", "Certificates"], ["Key terms", "Renewals", "Obligations", "Deviations"], ["Compare", "Normalize", "Clarify", "Recommend"], ["Expiries", "Sanctions", "News", "Performance"]], { top: "Vendor documents and AI", hotCol: 2, note: "* verified out of band, never from email alone" }),
+
+  itsmlayers: columnsSpec(["Intake", "Knowledge", "Automation", "Governance"], [["Portal", "Email", "Chat", "Monitoring"], ["KB articles", "Past tickets", "Runbooks", "CMDB"], ["Resets", "Access requests", "Diagnostics", "Approved fixes"], ["Approvals", "Change control", "Audit", "SLAs"]], { top: "AI IT service management", hotCol: 2 }),
+
+  dataentrychecks: columnsSpec(["Sources", "Checks", "Targets", "Exceptions"], [["Emails", "PDFs", "Spreadsheets", "Web forms"], ["Formats", "Lookups", "Duplicates", "Totals"], ["CRM", "ERP", "Databases", "Sheets"], ["Review queue", "Reason", "Fix + retry", "Learn"]], { top: "AI data entry automation", hotCol: 1 }),
+
+  expensepolicy: columnsSpec(["Receipts", "Policy", "Fraud", "Integration"], [["Photo capture", "Email forward", "Card feeds", "Extraction"], ["Limits", "Categories", "Per diems", "Approvers"], ["Duplicates", "Altered receipts", "Split claims", "Weekend spend"], ["Payroll", "ERP", "Cards", "Tax"]], { top: "AI expense management", hotCol: 1 }),
+
+  compliancescope: columnsSpec(["AI helps", "People decide", "Evidence", "Systems"], [["Map obligations", "Collect evidence", "Draft reports", "Flag gaps"], ["Interpretation", "Risk acceptance", "Sign-off", "Disclosure"], ["Screenshots", "Logs", "Policies", "Tickets"], ["GRC tools", "Cloud APIs", "HRIS", "Ticketing"]], { top: "AI compliance automation", hotCol: 1 }),
+
+  legalai: columnsSpec(["Intake", "Research", "Documents", "Matters"], [["Enquiries", "Conflicts*", "Engagement", "Routing"], ["Case law", "Statutes", "Cited answers", "Verification"], ["Review", "Drafting", "Clause libraries", "Comparison"], ["Deadlines", "Billing notes", "Status", "Knowledge"]], { top: "AI for law firms and legal teams", hotCol: 1, note: "* conflict decisions stay with the firm; every citation is checked" }),
+
+  telecomai: columnsSpec(["Customer care", "Network ops", "Field service", "Back office"], [["Billing queries", "Plan changes", "Fault reports", "Retention*"], ["Alarm grouping", "Ticket enrichment", "Runbooks", "Change risk"], ["Job prep", "Parts", "Notes", "Scheduling"], ["Orders", "Porting", "Disputes", "Reporting"]], { top: "AI automation in telecommunications", hotCol: 1, note: "* with consent and clear disclosure" }),
+
+  energyai: columnsSpec(["Customers", "Field ops", "Assets", "Compliance"], [["Billing queries", "Move in / out", "Outage updates", "Payment plans"], ["Work orders", "Job packs", "Inspections", "Reports"], ["Maintenance docs", "Inspection data", "Defect triage", "History"], ["Filings", "Evidence", "Audits", "Safety records"]], { top: "AI automation for energy and utilities", hotCol: 0, note: "business workflows only; grid and plant control stay in OT systems" }),
+
+  aiappstack: columnsSpec(["Experience", "Application", "AI layer", "Data + ops"], [["Web / mobile", "Copilot UI", "Feedback", "Fallbacks"], ["Business logic", "Auth", "Workflows", "APIs"], ["Models", "Retrieval", "Tools", "Evaluation"], ["Data pipelines", "Monitoring", "Cost", "Governance"]], { top: "AI application architecture", hotCol: 2 }),
+
+  genaiarch: columnsSpec(["Inputs", "Orchestration", "Models", "Guardrails"], [["User text", "Files", "Context", "History"], ["Prompts", "RAG", "Tools", "State"], ["Provider APIs", "Routing", "Structured output", "Fallbacks"], ["Validation", "Policies", "Evaluations", "Monitoring"]], { top: "Generative AI application architecture", hotCol: 1 }),
+
+  aisaas: columnsSpec(["Tenancy", "AI services", "Metering", "Product UX"], [["Data isolation", "Per-tenant config", "Keys + regions", "Admin controls"], ["Gateway", "Retrieval", "Prompts", "Evaluations"], ["Tokens / tasks", "Plans + limits", "Billing", "Cost per tenant"], ["Suggestions", "Undo", "Explain", "Feedback"]], { top: "AI-native SaaS architecture", hotCol: 0 }),
+
+  modalities: columnsSpec(["Text", "Images", "Audio", "Video"], [["Chat", "Documents", "Forms", "Code"], ["Photos", "Screenshots", "Scans", "Diagrams"], ["Speech", "Calls", "Voice notes", "Sounds"], ["Frames", "Clips", "Transcripts", "Events"]], { top: "Inputs a multimodal application handles", hotCol: 1 }),
+
+  cvtasks: columnsSpec(["Classification", "Detection", "Segmentation", "OCR + other"], [["What is it?", "One label", "Quality grades", "Fast"], ["Where is it?", "Boxes", "Counting", "Tracking"], ["Exact pixels", "Masks", "Measurements", "Defects"], ["Read text", "Pose", "Similarity", "Captioning"]], { top: "Computer vision tasks", hotCol: 1 }),
+
+  imgmetrics: compareSpec(["Classification", "Object detection"], [["Output", "Label per image", "Boxes + labels"], ["Main metrics", "Precision, recall, F1", "mAP, IoU, precision, recall"], ["Labels needed", "Image-level", "Box per object"], ["Typical use", "Sort, grade, route", "Count, locate, inspect"]], { hotCol: 1 }),
+
+  recsysarch: columnsSpec(["Signals", "Candidates", "Ranking", "Serving"], [["Views", "Ratings", "Search", "Context"], ["Similar items", "Popular", "Embeddings", "Rules"], ["Models", "Features", "Business goals", "Diversity"], ["API", "Cache", "Logging", "Experiments"]], { top: "Recommendation system architecture", hotCol: 2 }),
+
+  searchvsrag: compareSpec(["AI search", "RAG answers"], [["Output", "Ranked results", "Generated answer"], ["User does", "Scans, filters, opens", "Reads, verifies sources"], ["Strength", "Choice and browsing", "Direct answers"], ["Risk", "Poor ranking", "Wrong synthesis"], ["Often", "Comes first", "Built on top"]], { hotCol: 0 }),
+
+  copilotarch: columnsSpec(["Context", "Assistant", "Actions", "Controls"], [["Current screen", "Record data", "User role", "History"], ["Model", "Retrieval", "Prompts", "Memory"], ["Suggest", "Fill forms", "Draft", "Run tasks*"], ["Permissions", "Confirmation", "Audit", "Undo"]], { top: "AI copilot architecture", hotCol: 3, note: "* only with user confirmation and the user's own permissions" }),
+
+  mobileai: compareSpec(["On-device", "Cloud", "Hybrid"], [["Latency", "Lowest", "Network-bound", "Mixed"], ["Privacy", "Data stays local", "Sent to backend", "Choose per task"], ["Offline", "Works", "No", "Degrades"], ["Model size", "Small", "Any", "Both"], ["Cost", "Device compute", "Per request", "Balanced"]], { hotCol: 2 }),
+
+  enterpriseai: columnsSpec(["Portfolio", "Platform", "People", "Governance"], [["Use case intake", "Prioritization", "Value tracking", "Retirement"], ["Model gateway", "Retrieval", "Evaluation", "Observability"], ["CoE / owners", "Training", "Change mgmt", "Support"], ["Policies", "Risk tiers", "Inventory", "Audits"]], { top: "Enterprise AI at scale", hotCol: 1 }),
+
+  readiness: columnsSpec(["Process", "Data", "Technology", "People + risk"], [["Documented", "Measured", "Owned", "Stable"], ["Available", "Accurate", "Accessible", "Permitted"], ["APIs", "Identity", "Cloud", "Monitoring"], ["Skills", "Sponsors", "Policies", "Risk appetite"]], { top: "AI readiness assessment", hotCol: 1 }),
+
+  datareadiness: columnsSpec(["Quality", "Access", "Context", "Governance"], [["Accuracy", "Completeness", "Freshness", "Duplicates"], ["APIs", "Exports", "Latency", "Volume"], ["Metadata", "Definitions", "Lineage", "Examples"], ["Owners", "Permissions", "Consent", "Retention"]], { top: "AI data readiness", hotCol: 2 }),
+
+  aigovroles: columnsSpec(["Leadership", "AI council", "System owner", "Teams"], [["Risk appetite", "Policy", "Resourcing", "Reporting"], ["Standards", "Reviews", "Exceptions", "Inventory"], ["Assessment", "Monitoring", "Incidents", "Changes"], ["Training", "Feedback", "Escalation", "Use rules"]], { top: "AI governance roles", hotCol: 2 }),
+
+  aisecuritylayers: columnsSpec(["Inputs", "Models + prompts", "Tools + data", "Runtime"], [["Injection", "Untrusted files", "Abuse", "Rate limits"], ["Prompt leakage", "Supply chain", "Versions", "Provider risk"], ["Least privilege", "Secrets", "Data access", "Approvals"], ["Logging", "Anomalies", "Kill switch", "Incident plan"]], { top: "AI security layers", hotCol: 2 }),
+
+  aiprivacy: columnsSpec(["Collect less", "Protect", "Provider terms", "Rights"], [["Minimize", "Purpose", "Redact", "Pseudonymize"], ["Encrypt", "Access control", "Isolation", "Logging"], ["Retention", "Training use", "Region", "Subprocessors"], ["Notice", "Access", "Deletion", "Objection"]], { top: "AI data privacy", hotCol: 2 }),
+
+  modeleval: columnsSpec(["Task quality", "Robustness", "Safety", "Operations"], [["Accuracy", "Completeness", "Faithfulness", "Format"], ["Paraphrases", "Noise", "Edge cases", "Languages"], ["Harmful output", "Bias checks", "Leakage", "Refusals"], ["Latency", "Cost", "Rate limits", "Stability"]], { top: "AI model evaluation", hotCol: 0 }),
+
+  modelmonitor: columnsSpec(["Inputs", "Outputs", "Performance", "Operations"], [["Volume", "Distribution", "Language", "New topics"], ["Validation fails", "Refusals", "Length", "Flags"], ["Sampled quality", "Feedback", "Labels", "Outcomes"], ["Latency", "Errors", "Cost", "Versions"]], { top: "AI model monitoring", hotCol: 1 }),
+
+  pocpilotprod: compareSpec(["Proof of concept", "Pilot", "Production"], [["Question", "Can it work?", "Is it worth it?", "Can we run it?"], ["Users", "Builders", "Real, limited", "All intended"], ["Data", "Sample", "Real", "Real, governed"], ["Duration", "Days to weeks", "Weeks", "Ongoing"], ["Exit", "Feasible or not", "Scale or stop", "Operate + improve"]], { hotCol: 1 }),
+  llmopshub: columnsSpec(["Build", "Evaluate", "Operate", "Govern"], [["Prompts", "Retrieval", "Tools", "Datasets"], ["Test sets", "Judges", "Human review", "Release gates"], ["Deploy", "Trace", "Cost", "Incidents"], ["Access", "Data rules", "Audit", "Reviews"]], { top: "LLMOps", hotCol: 1, note: "evaluation is the gate between change and release" }),
+
+  llmopsvsmlops: compareSpec(["MLOps", "LLMOps"], [["Main lever", "Trained model", "Prompts, RAG"], ["Data", "Labelled sets", "Docs, eval sets"], ["Evaluation", "Held-out metrics", "Rubrics, judges"], ["Serving", "Own endpoint", "API or self-host"], ["Main cost", "Training", "Inference"]], { hotCol: 1 }),
+
+  llmdeployarch: columnsSpec(["Client", "Application", "AI layer", "Operations"], [["Web", "Mobile", "Streaming UI", "Auth"], ["API", "Orchestration", "Validation", "Queues"], ["Gateway", "Prompts", "Retrieval", "Tools"], ["Secrets", "Tracing", "Flags", "Rollback"]], { top: "LLM app deployment", hotCol: 2 }),
+
+  evalpipeline: columnsSpec(["Datasets", "Checks", "Scoring", "Gates"], [["Real cases", "Edge cases", "Adversarial", "Versioned"], ["Schema", "Citations", "Rules", "Safety"], ["Rubrics", "LLM judges", "References", "Segments"], ["Thresholds", "vs baseline", "Sign-off", "Report"]], { top: "LLM evaluation pipeline", hotCol: 2 }),
+
+  llmobshub: columnsSpec(["Traces", "Performance", "Cost", "Quality"], [["Spans", "Inputs/outputs", "Versions", "Trace IDs"], ["Latency", "Errors", "Rate limits", "Throughput"], ["Tokens", "Per feature", "Budgets", "Cache hits"], ["Eval scores", "Feedback", "Retrieval", "Policy flags"]], { top: "LLM observability", hotCol: 0 }),
+
+  promptversions: compareSpec(["In repo", "Registry", "Hybrid"], [["Edits by", "Engineers", "Anyone allowed", "Both"], ["Review", "Pull request", "Built-in flow", "PR + approval"], ["Rollback", "Config or deploy", "Instant", "Instant"], ["Testing", "CI", "Tool or CI", "CI"], ["Audit trail", "Git history", "Tool log", "Both"]], { hotCol: 2 }),
+
+  llmregression: columnsSpec(["Prompts", "Models", "Retrieval", "Code"], [["Wording", "Examples", "Variables", "Tools"], ["Upgrades", "Provider updates", "Settings", "Routing"], ["Re-index", "Chunking", "Embeddings", "New docs"], ["Parsers", "Validation", "Integrations", "Dependencies"]], { top: "Where LLM regressions come from", hotCol: 1, note: "behaviour can change without a code change" }),
+
+  llmfailures: compareSpec(["Detect", "Respond"], [["Outage", "Error rate", "Fallback"], ["Timeout", "Deadline hit", "Retry or queue"], ["Rate limit", "429 + header", "Backoff"], ["Bad output", "Schema check", "Repair once"], ["Weak answer", "Validation", "Escalate"]], { hotCol: 1 }),
+
+  airelease: compareSpec(["Shadow", "Canary", "Rollout", "A/B"], [["Users see", "Nothing", "Small %", "Growing %", "Split"], ["Learn", "Behaviour", "Errors", "Scale", "Outcomes"], ["Risk", "None", "Low", "Medium", "Medium"], ["Use for", "Models", "Prompts", "Expansion", "Metrics"]], { hotCol: 1 }),
+
+  aidatahub: columnsSpec(["Sources", "Pipelines", "Stores", "Controls"], [["Databases", "SaaS apps", "Documents", "Events"], ["Ingest", "Clean", "Transform", "Embed"], ["Warehouse", "Lakehouse", "Vector index", "Feature store"], ["Permissions", "Lineage", "Quality", "Retention"]], { top: "AI data engineering", hotCol: 1, note: "permissions must travel with the data" }),
+
+  aipipelines: columnsSpec(["Extract", "Validate", "Transform", "Deliver"], [["Connectors", "CDC", "Files", "APIs"], ["Schema", "Contracts", "Quality rules", "Quarantine"], ["Clean", "Enrich", "Chunk", "Embed"], ["Indexes", "Features", "Datasets", "Alerts"]], { top: "Data pipelines for AI", hotCol: 1 }),
+
+  ingestsources: compareSpec(["Access", "Changes"], [["Databases", "Replica, CDC", "CDC logs"], ["SaaS apps", "APIs", "Webhooks"], ["File shares", "Drive APIs", "Change feeds"], ["Email, chat", "Scoped APIs", "Incremental"], ["Streams", "Consumers", "Native"]], { hotCol: 0, note: "capture permissions alongside content" }),
+
+  unstructprep: columnsSpec(["Documents", "Audio/video", "Images", "Outputs"], [["PDF parsing", "Layout", "Tables", "OCR"], ["Transcribe", "Speakers", "Timestamps", "Segments"], ["Captions", "OCR", "Objects", "Metadata"], ["Clean text", "Structure", "Chunks", "Source links"]], { top: "Unstructured data for AI", hotCol: 3 }),
+
+  synthvsreal: compareSpec(["Real", "Synthetic", "Hybrid"], [["Realism", "Authoritative", "Generator-bound", "Real core"], ["Rare cases", "Scarce", "On demand", "Filled"], ["Cost", "Slow", "Fast", "Balanced"], ["Privacy", "Protect", "Lower risk", "Mixed"], ["Final eval", "Required", "Supplementary", "Report both"]], { hotCol: 2 }),
+
+  annotationqa: columnsSpec(["Taxonomy", "Workflow", "Quality", "Outputs"], [["Classes", "Definitions", "Examples", "Edge cases"], ["Pre-label", "Annotate", "Review", "Adjudicate"], ["Agreement", "Gold sets", "Audits", "Feedback"], ["Versions", "Datasheet", "Splits", "Lineage"]], { top: "AI data annotation", hotCol: 2 }),
+
+  dataqualitydims: columnsSpec(["Correctness", "Completeness", "Consistency", "Fitness"], [["Accuracy", "Validity", "Labels", "Units"], ["Missing values", "Coverage", "Fields", "Sources"], ["Duplicates", "Definitions", "Formats", "Versions"], ["Freshness", "Coverage mix", "Balance", "Bias"]], { top: "Data quality for AI", hotCol: 2 }),
+
+  lineagemap: columnsSpec(["Sources", "Jobs", "Artefacts", "Consumers"], [["Systems", "Documents", "Owners", "Licences"], ["Pipelines", "Code versions", "Parameters", "Runs"], ["Datasets", "Chunks", "Embeddings", "Features"], ["Models", "Prompts", "Answers", "Reports"]], { top: "AI data lineage", hotCol: 2 }),
+
+  streamvsbatch: compareSpec(["Streaming", "Batch"], [["Freshness", "Seconds", "Hours to days"], ["Complexity", "High", "Low"], ["Cost", "Higher", "Lower"], ["Failures", "Replay, DLQ", "Rerun job"], ["AI uses", "Fraud, stock", "Docs, training"]], { hotCol: 0 }),
+
+  redteamscope: columnsSpec(["Inputs", "Behaviour", "Actions", "Data"], [["Direct prompts", "Documents", "Web content", "Files"], ["Policy", "Refusals", "Harmful output", "Bias"], ["Tool misuse", "Excess rights", "Exfiltration", "Loops"], ["Leakage", "Cross-user", "System prompt", "Secrets"]], { top: "AI red teaming scope", hotCol: 2 }),
+
+  indirectinjection: columnsSpec(["Retrieval", "Browsing", "Messages", "Tool outputs"], [["Knowledge base", "Shared drives", "Tickets", "Reviews"], ["Web pages", "Search results", "Hidden text", "Links"], ["Emails", "Chats", "Calendar", "Attachments"], ["APIs", "MCP servers", "Plugins", "Files"]], { top: "Indirect injection entry points", hotCol: 3, note: "treat everything the model reads as untrusted" }),
+
+  jailbreakeval: compareSpec(["Measures", "Goal"], [["Attack success", "Violations", "Low"], ["Over-refusal", "Wrong refusals", "Low"], ["Consistency", "Across phrasing", "High"], ["Severity", "Harm level", "Low"], ["Multi-turn", "Long chats", "Stable"]], { hotCol: 1, note: "fixes must not just refuse everything" }),
+
+  leakchannels: columnsSpec(["Retrieval", "Context", "Outputs", "Storage"], [["No ACLs", "Cross-tenant", "Stale ACLs", "Over-sharing"], ["Secrets", "System prompt", "Memory", "History"], ["Answers", "Links", "Images", "Tool calls"], ["Logs", "Traces", "Caches", "Training sets"]], { top: "AI data leakage channels", hotCol: 0 }),
+
+  agentaccess: compareSpec(["Delegated", "Service ID", "Hybrid"], [["Permissions", "User + scope", "Own role", "Prepare only"], ["Audit", "User + agent", "Agent", "Both + approver"], ["Risk", "Bounded", "Scope creep", "Lowest"], ["Use for", "Assistants", "Background", "Sensitive"]], { hotCol: 2 }),
+
+  toolsecurity: columnsSpec(["Definition", "Input", "Execution", "Output"], [["Narrow", "Strict schema", "Clear docs", "Versioned"], ["Validate", "Allow-lists", "Authorize", "Limits"], ["Sandbox", "Egress rules", "Timeouts", "Idempotent"], ["Sanitize", "Untrusted", "Size limits", "Safe errors"]], { top: "AI tool security", hotCol: 1 }),
+
+  aisupplychain: columnsSpec(["Models", "Data", "Software", "Services"], [["Provenance", "Licence", "Format", "Signature"], ["Sources", "Rights", "Poisoning", "Versions"], ["Packages", "Containers", "SDKs", "Frameworks"], ["Model APIs", "Tools", "MCP servers", "Vendors"]], { top: "AI supply chain", hotCol: 0 }),
+
+  threatmodelai: columnsSpec(["Describe", "Boundaries", "Threats", "Respond"], [["Components", "Data flows", "Assets", "Actors"], ["User input", "Retrieved", "Tools", "Providers"], ["Injection", "Leakage", "Misuse", "Abuse cases"], ["Mitigations", "Owners", "Residual risk", "Tests"]], { top: "AI threat modeling", hotCol: 1 }),
+
+  aisectestmap: columnsSpec(["Access", "Model inputs", "Actions", "Operations"], [["AuthN", "AuthZ", "Tenancy", "Sessions"], ["Direct inj.", "Indirect inj.", "Jailbreaks", "Uploads"], ["Tool calls", "Output use", "Exfiltration", "Limits"], ["Logging", "Privacy", "Dependencies", "Incidents"]], { top: "AI security testing", hotCol: 1 }),
+
+  aiproductdesign: columnsSpec(["Problem", "Feasibility", "Experience", "Learning"], [["User needs", "Workflows", "Value", "Risk"], ["Data", "Model fit", "Accuracy", "Cost"], ["Pattern", "Control", "Transparency", "Recovery"], ["Evaluation", "Feedback", "Metrics", "Iteration"]], { top: "AI product design", hotCol: 2 }),
+
+  aiuxpatterns: columnsSpec(["Input", "Progress", "Output", "Control"], [["Prompts", "Suggestions", "Context", "Attachments"], ["Streaming", "Steps", "Cancel", "Estimates"], ["Sources", "Uncertainty", "Editing", "Formats"], ["Undo", "Confirm", "Feedback", "Settings"]], { top: "AI UX design", hotCol: 2 }),
+
+  haiprinciples: columnsSpec(["Initially", "During", "When wrong", "Over time"], [["Can do", "How well", "Examples", "Scope"], ["Timing", "Context", "Norms", "Bias"], ["Invoke", "Dismiss", "Correct", "Explain"], ["Remember", "Learn", "Adapt", "Notify"]], { top: "Human-AI interaction", hotCol: 2, note: "based on Microsoft's Guidelines for Human-AI Interaction" }),
+
+  chatuianatomy: columnsSpec(["Header", "Conversation", "Composer", "Around it"], [["Context", "Mode", "New chat", "Settings"], ["Messages", "Sources", "Tool steps", "States"], ["Input", "Attachments", "Suggestions", "Stop"], ["History", "Feedback", "Handoff", "Privacy"]], { top: "AI chat interface", hotCol: 1 }),
+
+  copilotuxpatterns: compareSpec(["Inline", "Action", "Panel", "Draft"], [["Interrupts", "Low", "None", "None", "Low"], ["Effort", "Accept", "One click", "Ask", "Review"], ["Best for", "Small tasks", "One object", "Questions", "Recurring"], ["Control", "Partial", "Preview", "Confirm", "Approve"]], { hotCol: 1 }),
+
+  aionboarding: columnsSpec(["Discover", "First use", "Understand", "Adopt"], [["Entry points", "In context", "Examples", "Value"], ["Sample task", "Own data", "Quick win", "Guidance"], ["Limits", "Privacy", "Control", "Feedback"], ["Habits", "Advanced tips", "Activation", "Nudges"]], { top: "AI onboarding", hotCol: 1 }),
+
+  aitransparency: compareSpec(["Shown", "Contents"], [["Always", "On screen", "AI label, limits"], ["On use", "With output", "Sources, cues"], ["On request", "Info panel", "How it works"], ["Policies", "Docs", "Data, review"]], { hotCol: 1, note: "layer it so the interface stays usable" }),
+
+  aierrortypes: columnsSpec(["System", "Wrong output", "Incomplete", "Wrong action"], [["Timeouts", "Outages", "Limits", "Failed tools"], ["Factual error", "Misread intent", "Wrong data", "Hallucination"], ["Missing info", "Truncated", "Partial", "Refusals"], ["Wrong change", "Wrong person", "Bulk error", "Side effects"]], { top: "AI error types", hotCol: 1 }),
+
+  aifeedbacktypes: compareSpec(["Effort", "Signal"], [["Ratings", "Very low", "Low-medium"], ["Reasons", "Low", "High"], ["Corrections", "In task", "High"], ["Implicit", "None", "Noisy"], ["Reports", "Medium", "High, safety"]], { hotCol: 1 }),
+
+  aiideavalidation: columnsSpec(["Desirable", "Feasible", "Viable", "Responsible"], [["Real problem", "Frequency", "Willing to pay", "Workflow fit"], ["Model quality", "Data access", "Latency", "Edge cases"], ["Unit cost", "Pricing", "Competition", "Build vs buy"], ["Risk", "Regulation", "Privacy", "Trust"]], { top: "Validating an AI idea", hotCol: 1 }),
+
+  inferencelevers: columnsSpec(["Workload", "Model", "Serving", "Hardware"], [["Prompt size", "Output size", "Routing", "Caching"], ["Smaller", "Distillation", "Quantization", "Specialized"], ["Batching", "KV cache", "Speculative", "Parallelism"], ["GPU choice", "Utilization", "Placement", "Autoscaling"]], { top: "AI inference optimization", hotCol: 2, note: "start with the workload; it is the cheapest lever" }),
+
+  servingstack: columnsSpec(["Access", "Engine", "Infra", "Operations"], [["Gateway", "Auth", "Rate limits", "Routing"], ["vLLM", "SGLang", "TensorRT-LLM", "Batching"], ["GPUs", "Kubernetes", "Autoscaling", "Model store"], ["Metrics", "Health", "Rollouts", "Capacity"]], { top: "LLM serving stack", hotCol: 1 }),
+
+  infervstrain: compareSpec(["Pretrain", "Fine-tune", "Inference"], [["Purpose", "General", "Adapt", "Answer"], ["Data", "Huge", "Curated", "Input+context"], ["Compute", "Clusters", "1-few GPUs", "Per request"], ["Duration", "Months", "Hours-days", "Seconds"], ["Who", "Labs", "Some teams", "Everyone"]], { hotCol: 2 }),
+
+  gpuoptmap: columnsSpec(["Memory", "Compute", "Placement", "Operations"], [["Weights", "KV cache", "Activations", "Fragmentation"], ["Batching", "Kernels", "Precision", "Utilization"], ["Right-size", "Parallelism", "Sharing", "Regions"], ["Profiling", "Scheduling", "Autoscaling", "Cost"]], { top: "GPU optimization for AI", hotCol: 0 }),
+
+  quantformats: compareSpec(["16-bit", "8-bit", "4-bit"], [["Memory", "Baseline", "About 1/2", "About 1/4"], ["Quality", "Reference", "Small loss", "Evaluate"], ["Formats", "BF16, FP16", "FP8, INT8", "INT4, NVFP4"], ["Hardware", "All GPUs", "Newer GPUs", "Varies"]], { hotCol: 1, note: "always evaluate on your own tasks" }),
+
+  batchcachemap: columnsSpec(["Batching", "Model caches", "App caches", "Controls"], [["Static", "Continuous", "Chunked prefill", "Batch APIs"], ["KV cache", "Prefix cache", "Prompt cache", "Paged memory"], ["Exact", "Semantic", "Retrieval", "Embeddings"], ["Keys", "TTLs", "Invalidation", "Privacy"]], { top: "LLM batching and caching", hotCol: 1 }),
+
+  edgevscloud: compareSpec(["Edge", "Cloud", "Hybrid"], [["Latency", "Lowest", "Network", "Local first"], ["Offline", "Yes", "No", "Degrades"], ["Privacy", "Data local", "Data leaves", "Summaries"], ["Model size", "Small", "Largest", "Both"], ["Updates", "Fleet", "Central", "Both"]], { hotCol: 2 }),
+
+  selfhostvsapi: compareSpec(["Self-hosted", "Hosted API"], [["Data", "Stays inside", "Provider terms"], ["Models", "Open-weight", "Incl. frontier"], ["Low volume", "Costly", "Cheaper"], ["High volume", "Can be lower", "Linear"], ["Operations", "Your team", "Provider"]], { hotCol: 0 }),
+
+  aiplatformmap: columnsSpec(["Access", "Shared services", "Delivery", "Governance"], [["Gateway", "Keys, quotas", "Routing", "Fallbacks"], ["Retrieval", "Evaluation", "Tracing", "Prompt registry"], ["Templates", "CI gates", "Deploy", "Environments"], ["Policies", "Inventory", "Cost reports", "Audit"]], { top: "AI platform", hotCol: 1 }),
+
 };
 
 /* A narrowing ecommerce funnel. Bar widths are illustrative, not data. */
@@ -4507,7 +5313,7 @@ export function BlogBanner({ variant }: { variant: BlogBannerVariant }) {
     return (
       <AgentHub
         industry="Aviation"
-        systems={["Flight Status", "Bookings / Rebooking", "Baggage", "Crew & Ops"]}
+        systems={["Flight Status", "Rebooking", "Baggage", "Crew & Ops"]}
         mark={
           <path
             d="M0,-11 L2,-4 L11,-1 L11,2 L2,0 L1,7 L5,10 L5,12 L0,10.5 L-5,12 L-5,10 L-1,7 L-2,0 L-11,2 L-11,-1 L-2,-4 Z"
@@ -4539,7 +5345,7 @@ export function BlogBanner({ variant }: { variant: BlogBannerVariant }) {
     return (
       <AgentHub
         industry="Pharmaceuticals"
-        systems={["Scientific Literature", "Trials / EHR", "LIMS", "Regulatory Docs"]}
+        systems={["Literature", "Trials / EHR", "LIMS", "Regulatory Docs"]}
         mark={
           <g stroke="#faf9f6" strokeWidth="2.2" fill="none" strokeLinejoin="round">
             <path d="M-3,-10 L-3,-2 L-8,9 H8 L3,-2 L3,-10" />
