@@ -305,6 +305,7 @@ export default async function ServiceDetailPage({
       )}
 
       <CTASection
+        primaryHref={`/contact?src=${encodeURIComponent(`/services/${service.slug}`)}`}
         title={`Ready to talk about ${service.name.toLowerCase()}?`}
         description="Tell us about your project and we'll respond with honest scoping, not a generic pitch."
       />

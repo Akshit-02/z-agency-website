@@ -281,7 +281,7 @@ export default async function BlogPostPage({
                           )}
                         </div>
                         <Link
-                          href="/contact"
+                          href={`/contact?src=${encodeURIComponent(`/blogs/${post.slug}`)}`}
                           className="group inline-flex shrink-0 items-center gap-2 rounded-full bg-orange px-6 py-3.5 text-[0.9rem] font-medium text-white transition-colors hover:bg-orange-deep"
                         >
                           Start a Project
@@ -351,6 +351,7 @@ export default async function BlogPostPage({
       </div>
 
       <CTASection
+        primaryHref={`/contact?src=${encodeURIComponent(`/blogs/${post.slug}`)}`}
         title={
           <>
             Have a <span className="text-orange-bright">project</span> in

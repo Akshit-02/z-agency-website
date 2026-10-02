@@ -285,6 +285,7 @@ export default async function IndustryDetailPage({
       )}
 
       <CTASection
+        primaryHref={`/contact?src=${encodeURIComponent(`/industries/${industry.slug}`)}`}
         title={industry.ctaTitle ?? `Talk to us about ${industry.name.toLowerCase()}`}
         description={industry.ctaDescription}
         primaryLabel="Discuss your project"

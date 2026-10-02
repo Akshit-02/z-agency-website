@@ -1,64 +1,98 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type ReactNode } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowUpRight, CheckCircle2, AlertCircle } from "lucide-react";
 import { site } from "@/lib/site";
+import { contactSchema, contactNeeds, contactBudgets, type ContactValues } from "@/lib/validations";
 
-const needs = [
-  "Website Development",
-  "Mobile App Development",
-  "AI Automation",
-  "UI/UX Design",
-  "Shopify Setup & Optimization",
-  "CRO Audit",
-  "Not sure yet",
-];
+const inputBase =
+  "w-full rounded-xl border bg-transparent px-4 py-3.5 text-[0.98rem] text-ink outline-none transition-colors placeholder:text-ink-soft/60 focus:border-blue";
 
-const budgets = ["Under $5k", "$5k – $15k", "$15k – $40k", "$40k+", "Let's discuss"];
+function inputClass(hasError: boolean) {
+  return `${inputBase} ${hasError ? "border-red-400" : "border-line-strong"}`;
+}
 
-const inputClass =
-  "w-full rounded-xl border border-line-strong bg-transparent px-4 py-3.5 text-[0.98rem] text-ink outline-none transition-colors placeholder:text-ink-soft/60 focus:border-blue";
-
-type Status = "idle" | "loading" | "success" | "error";
+function Field({
+  label,
+  htmlFor,
+  required,
+  error,
+  className = "",
+  children,
+}: {
+  label: string;
+  htmlFor: string;
+  required?: boolean;
+  error?: string;
+  className?: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className={`flex flex-col gap-2 ${className}`}>
+      <label htmlFor={htmlFor} className="text-[0.85rem] font-medium text-ink-soft">
+        {label}
+        {required && "*"}
+      </label>
+      {children}
+      {error && (
+        <p id={`${htmlFor}-error`} role="alert" className="text-[0.85rem] text-red-700">
+          {error}
+        </p>
+      )}
+    </div>
+  );
+}
 
 export function ContactForm() {
-  const [status, setStatus] = useState<Status>("idle");
-  const [errorMessage, setErrorMessage] = useState("");
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    setValue,
+    formState: { errors, isSubmitting, isSubmitSuccessful },
+  } = useForm<ContactValues>({
+    resolver: zodResolver(contactSchema),
+    defaultValues: { need: contactNeeds[0], budget: contactBudgets[contactBudgets.length - 1] },
+  });
 
-  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setStatus("loading");
-    setErrorMessage("");
+  // Capture where the visitor came from (?src=/blogs/...) without showing it.
+  useEffect(() => {
+    const src = new URLSearchParams(window.location.search).get("src");
+    if (src) setValue("sourcePage", src.slice(0, 200));
+  }, [setValue]);
 
-    const form = event.currentTarget;
-    const data = Object.fromEntries(new FormData(form).entries());
-
+  async function onSubmit(values: ContactValues) {
+    setSubmitError(null);
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify(values),
       });
-
-      if (!res.ok) {
-        const body = await res.json().catch(() => ({}));
-        throw new Error(body.error || "Something went wrong. Please try again.");
+      const data = await res.json().catch(() => null);
+      if (!res.ok || !data?.success) {
+        throw new Error(data?.message || "Submission failed");
       }
-
-      setStatus("success");
-      form.reset();
-    } catch (err) {
-      setStatus("error");
-      setErrorMessage(err instanceof Error ? err.message : "Something went wrong.");
+      reset(values);
+    } catch (error) {
+      setSubmitError(
+        error instanceof Error && error.message !== "Submission failed"
+          ? error.message
+          : `Something went wrong on our end. Please try again, or email us at ${site.email}.`
+      );
     }
   }
 
-  if (status === "success") {
+  if (isSubmitSuccessful && !submitError) {
     return (
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
+        role="status"
         className="flex flex-col items-start gap-4 rounded-2xl border border-line-strong bg-[#f3f2ee] p-10"
       >
         <CheckCircle2 className="h-9 w-9 text-blue" />
@@ -75,7 +109,7 @@ export function ContactForm() {
         </p>
         <button
           type="button"
-          onClick={() => setStatus("idle")}
+          onClick={() => reset({ need: contactNeeds[0], budget: contactBudgets[contactBudgets.length - 1] })}
           className="mt-2 text-[0.9rem] font-medium text-ink underline underline-offset-4"
         >
           Send another message
@@ -85,83 +119,117 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+    <form onSubmit={handleSubmit(onSubmit)} noValidate className="relative flex flex-col gap-6">
+      <input
+        type="text"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className="absolute left-[-9999px] top-auto h-px w-px overflow-hidden"
+        {...register("honeypot")}
+      />
+      <input type="hidden" {...register("sourcePage")} />
+
       <div className="grid gap-6 sm:grid-cols-2">
-        <label className="flex flex-col gap-2">
-          <span className="text-[0.85rem] font-medium text-ink-soft">Name*</span>
-          <input name="name" type="text" required className={inputClass} placeholder="Jordan Lee" />
-        </label>
-        <label className="flex flex-col gap-2">
-          <span className="text-[0.85rem] font-medium text-ink-soft">Work email*</span>
+        <Field label="Name" htmlFor="name" required error={errors.name?.message}>
           <input
-            name="email"
-            type="email"
-            required
-            className={inputClass}
-            placeholder="jordan@company.com"
+            id="name"
+            type="text"
+            autoComplete="name"
+            aria-invalid={!!errors.name}
+            aria-describedby={errors.name ? "name-error" : undefined}
+            className={inputClass(!!errors.name)}
+            placeholder="Jordan Lee"
+            {...register("name")}
           />
-        </label>
-        <label className="flex flex-col gap-2">
-          <span className="text-[0.85rem] font-medium text-ink-soft">Company</span>
-          <input name="company" type="text" className={inputClass} placeholder="Company name" />
-        </label>
-        <label className="flex flex-col gap-2">
-          <span className="text-[0.85rem] font-medium text-ink-soft">Phone</span>
-          <input name="phone" type="tel" className={inputClass} placeholder="Optional" />
-        </label>
-        <label className="flex flex-col gap-2">
-          <span className="text-[0.85rem] font-medium text-ink-soft">What do you need?</span>
-          <select name="need" className={inputClass} defaultValue={needs[0]}>
-            {needs.map((n) => (
+        </Field>
+        <Field label="Work email" htmlFor="email" required error={errors.email?.message}>
+          <input
+            id="email"
+            type="email"
+            autoComplete="email"
+            aria-invalid={!!errors.email}
+            aria-describedby={errors.email ? "email-error" : undefined}
+            className={inputClass(!!errors.email)}
+            placeholder="jordan@company.com"
+            {...register("email")}
+          />
+        </Field>
+        <Field label="Company" htmlFor="company" error={errors.company?.message}>
+          <input
+            id="company"
+            type="text"
+            autoComplete="organization"
+            className={inputClass(!!errors.company)}
+            placeholder="Company name"
+            {...register("company")}
+          />
+        </Field>
+        <Field label="Phone" htmlFor="phone" error={errors.phone?.message}>
+          <input
+            id="phone"
+            type="tel"
+            autoComplete="tel"
+            aria-invalid={!!errors.phone}
+            aria-describedby={errors.phone ? "phone-error" : undefined}
+            className={inputClass(!!errors.phone)}
+            placeholder="Optional"
+            {...register("phone")}
+          />
+        </Field>
+        <Field label="What do you need?" htmlFor="need" error={errors.need?.message}>
+          <select id="need" className={inputClass(!!errors.need)} {...register("need")}>
+            {contactNeeds.map((n) => (
               <option key={n} value={n}>
                 {n}
               </option>
             ))}
           </select>
-        </label>
-        <label className="flex flex-col gap-2">
-          <span className="text-[0.85rem] font-medium text-ink-soft">Budget range</span>
-          <select name="budget" className={inputClass} defaultValue={budgets[budgets.length - 1]}>
-            {budgets.map((b) => (
+        </Field>
+        <Field label="Budget range" htmlFor="budget" error={errors.budget?.message}>
+          <select id="budget" className={inputClass(!!errors.budget)} {...register("budget")}>
+            {contactBudgets.map((b) => (
               <option key={b} value={b}>
                 {b}
               </option>
             ))}
           </select>
-        </label>
+        </Field>
       </div>
 
-      <label className="flex flex-col gap-2">
-        <span className="text-[0.85rem] font-medium text-ink-soft">Project details*</span>
+      <Field label="Project details" htmlFor="details" required error={errors.details?.message}>
         <textarea
-          name="details"
-          required
+          id="details"
           rows={5}
-          className={inputClass}
+          aria-invalid={!!errors.details}
+          aria-describedby={errors.details ? "details-error" : undefined}
+          className={inputClass(!!errors.details)}
           placeholder="What are you building, and what's the timeline?"
+          {...register("details")}
         />
-      </label>
+      </Field>
 
       <AnimatePresence>
-        {status === "error" && (
+        {submitError && (
           <motion.div
             initial={{ opacity: 0, y: -6 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -6 }}
+            role="alert"
             className="flex items-start gap-2.5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-[0.92rem] text-red-800"
           >
             <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
-            {errorMessage}
+            {submitError}
           </motion.div>
         )}
       </AnimatePresence>
 
       <button
         type="submit"
-        disabled={status === "loading"}
+        disabled={isSubmitting}
         className="group inline-flex w-fit items-center justify-center gap-2 rounded-full bg-orange px-7 py-4 text-[0.95rem] font-medium text-white transition-colors duration-300 hover:bg-orange-deep disabled:opacity-60"
       >
-        {status === "loading" ? "Sending…" : "Start the conversation"}
+        {isSubmitting ? "Sending…" : "Start the conversation"}
         <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
       </button>
     </form>
