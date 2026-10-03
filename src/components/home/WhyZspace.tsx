@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { motion, useInView, useReducedMotion } from "motion/react";
 import {
@@ -67,6 +67,39 @@ function Eyebrow({ children, on, still }: { children: React.ReactNode; on: boole
   );
 }
 
+/* The illustrations are drawn on a fixed 220×150 canvas (absolute-positioned
+   labels over an SVG). Render them at that size and scale the whole canvas to
+   the column width, so labels stay where they were designed. */
+const ART_W = 220;
+const ART_H = 150;
+
+function ScaledArt({ children }: { children: React.ReactNode }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [scale, setScale] = useState(1);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const update = () => setScale(Math.min(1, el.clientWidth / ART_W));
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
+  return (
+    <div ref={ref} className="relative w-full min-w-0 max-w-[220px]" style={{ height: ART_H * scale }}>
+      {/* absolutely positioned so the fixed-size canvas never widens the grid column */}
+      <div
+        className="absolute left-0 top-0"
+        style={{ width: ART_W, height: ART_H, transform: `scale(${scale})`, transformOrigin: "top left" }}
+      >
+        {children}
+      </div>
+    </div>
+  );
+}
+
 function Column({ col, i, still }: { col: (typeof columns)[number]; i: number; still: boolean }) {
   const ref = useRef<HTMLDivElement>(null);
   const on = useInView(ref, { once: true, amount: 0.4 });
@@ -82,7 +115,7 @@ function Column({ col, i, still }: { col: (typeof columns)[number]; i: number; s
         };
 
   return (
-    <div ref={ref} className={`relative pt-8 lg:pl-8 lg:pt-0 ${i > 0 ? "lg:border-l lg:border-ink/10" : ""}`}>
+    <div ref={ref} className={`relative min-w-0 pt-8 lg:flex lg:flex-col lg:pl-8 lg:pt-0 ${i > 0 ? "lg:border-l lg:border-ink/10" : ""}`}>
       <motion.span className="text-[0.85rem] text-ink/40" {...rise(0)}>
         {col.n}
       </motion.span>
@@ -92,8 +125,10 @@ function Column({ col, i, still }: { col: (typeof columns)[number]; i: number; s
       <motion.p className="mt-3 max-w-[15rem] text-[0.85rem] leading-relaxed text-ink/55" {...rise(0.12)}>
         {col.body}
       </motion.p>
-      <motion.div className="mt-7" {...rise(0.2)}>
-        <Art on={on} still={still} />
+      <motion.div className="mt-7 lg:mt-auto lg:pt-7" {...rise(0.2)}>
+        <ScaledArt>
+          <Art on={on} still={still} />
+        </ScaledArt>
       </motion.div>
     </div>
   );

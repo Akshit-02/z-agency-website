@@ -3,7 +3,7 @@
 import { useRef, type ReactNode } from "react";
 import Link from "next/link";
 import { motion, useInView, useReducedMotion, useScroll, useTransform } from "motion/react";
-import { ArrowRight, ArrowUpRight, ChartColumn, Globe, PenLine, ShoppingBag, Smartphone, Sparkles, type LucideIcon } from "lucide-react";
+import { ArrowRight, ArrowUpRight, ChartColumn, Gauge, Globe, Inbox, Lightbulb, Palette, PenLine, Repeat, ShoppingBag, ShoppingCart, Smartphone, Sparkles, type LucideIcon } from "lucide-react";
 import {
   AppsArt,
   AutomationArt,
@@ -19,6 +19,16 @@ const EASE = [0.25, 1, 0.5, 1] as const;
 const serif = { fontFamily: "var(--font-newsreader), Georgia, serif" } as const;
 
 type Art = (props: { on: boolean; still: boolean }) => ReactNode;
+
+/* Common starting points for people who aren't sure what they need. */
+const problems: { label: string; slug: string; icon: LucideIcon }[] = [
+  { label: "Our website is slow or outdated", slug: "website", icon: Gauge },
+  { label: "Visitors come, but don’t convert", slug: "conversion", icon: ShoppingCart },
+  { label: "Too much manual, repetitive work", slug: "automation", icon: Repeat },
+  { label: "Leads and enquiries slip through", slug: "leads", icon: Inbox },
+  { label: "We have an app idea, but no plan", slug: "app", icon: Lightbulb },
+  { label: "Our product feels hard to use", slug: "ux", icon: Palette },
+];
 
 const items: {
   n: string;
@@ -292,32 +302,118 @@ export function WhatWeBuild() {
         </div>
 
         {/* closing */}
-        <div ref={footRef} className="relative border-t border-ink/10 pt-10">
-          <div className="grid items-center gap-8 lg:grid-cols-[1fr_360px]">
-            <div>
-              <Eyebrow on={footOn} still={still}>
-                Not sure what you need yet?
-              </Eyebrow>
-              <motion.h3 className="mt-5 text-[2.4rem] leading-none tracking-[-0.02em] text-ink" style={serif} {...rise(footOn, 0.1)}>
-                That&rsquo;s okay.
-              </motion.h3>
-              <motion.p className="mt-4 max-w-[20rem] text-[0.95rem] leading-relaxed text-ink/55" {...rise(footOn, 0.2)}>
-                Tell us what&rsquo;s not working. We&rsquo;ll help figure out what to build.
-              </motion.p>
-              <motion.div {...rise(footOn, 0.3)}>
-                <Link
-                  href="/contact"
-                  className="group mt-7 inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3.5 text-[0.85rem] font-medium text-white transition-colors duration-300 hover:bg-ink/85"
-                >
-                  Start a Conversation
-                  <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-                </Link>
-              </motion.div>
-            </div>
-            <motion.div className="hidden justify-self-end lg:block" style={{ rotate: orbitRot, scale: orbitScale }}>
+        <div ref={footRef} className="relative mt-6">
+          <motion.div
+            className="relative overflow-hidden rounded-[28px] bg-ink px-6 py-10 text-white sm:px-10 sm:py-12 lg:px-14 lg:py-14"
+            initial={still ? false : { opacity: 0, y: 32, scale: 0.98 }}
+            animate={footOn ? { opacity: 1, y: 0, scale: 1 } : {}}
+            transition={{ duration: 0.9, ease: EASE }}
+          >
+            {/* atmosphere: soft brand glows, a faint dot grid and the turning orbit */}
+            <div aria-hidden className="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-full bg-orange-600/25 blur-[90px]" />
+            <div aria-hidden className="pointer-events-none absolute -bottom-28 right-[-60px] h-80 w-80 rounded-full bg-blue/30 blur-[100px]" />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0 opacity-[0.07]"
+              style={{ backgroundImage: "radial-gradient(#ffffff 1px, transparent 1px)", backgroundSize: "22px 22px" }}
+            />
+            <motion.div
+              aria-hidden
+              className="pointer-events-none absolute -right-24 -top-20 hidden opacity-30 lg:block"
+              style={{ rotate: orbitRot, scale: orbitScale }}
+            >
               <ClosingOrbit on={footOn} still={still} />
             </motion.div>
-          </div>
+
+            <div className="relative grid gap-12 lg:grid-cols-[1fr_1.05fr] lg:items-center lg:gap-16">
+              <div>
+                <p className="flex items-center gap-3 text-[0.7rem] font-medium uppercase tracking-[0.16em] text-white/70">
+                  <motion.span
+                    className="h-px w-6 origin-left bg-orange-500"
+                    initial={still ? false : { scaleX: 0 }}
+                    animate={footOn ? { scaleX: 1 } : {}}
+                    transition={{ duration: 0.8, ease: EASE, delay: 0.2 }}
+                  />
+                  Not sure what you need yet?
+                </p>
+                <h3 className="mt-5 text-[2.8rem] leading-[0.95] tracking-[-0.02em] sm:text-[3.6rem]" style={serif}>
+                  <span className="block overflow-hidden pb-[0.08em]">
+                    <motion.span
+                      className="block"
+                      initial={still ? false : { y: "105%" }}
+                      animate={footOn ? { y: 0 } : {}}
+                      transition={{ duration: 1, ease: EASE, delay: 0.25 }}
+                    >
+                      That&rsquo;s <span className="italic text-orange-bright">okay.</span>
+                    </motion.span>
+                  </span>
+                </h3>
+                <motion.p className="mt-5 max-w-[26rem] text-[1rem] leading-relaxed text-white/65" {...rise(footOn, 0.35)}>
+                  Tell us what&rsquo;s not working. We&rsquo;ll help figure out what to build, and just as
+                  importantly, what not to.
+                </motion.p>
+                <motion.div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4" {...rise(footOn, 0.45)}>
+                  <Link
+                    href="/contact?src=%2F%23not-sure"
+                    className="group inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-[0.85rem] font-medium text-ink transition-colors duration-300 hover:bg-white/90"
+                  >
+                    Start a Conversation
+                    <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                  </Link>
+                  <a
+                    href="mailto:connect@zspace.in"
+                    className="text-[0.85rem] text-white/55 underline decoration-white/20 underline-offset-4 transition-colors duration-300 hover:text-white hover:decoration-white/60"
+                  >
+                    or email connect@zspace.in
+                  </a>
+                </motion.div>
+              </div>
+
+              <div>
+                <motion.p className="text-[0.78rem] font-medium uppercase tracking-[0.14em] text-white/45" {...rise(footOn, 0.3)}>
+                  Sound familiar?
+                </motion.p>
+                <ul className="mt-4 grid gap-2.5 sm:grid-cols-2">
+                  {problems.map((p, i) => {
+                    const Icon = p.icon;
+                    return (
+                      <motion.li
+                        key={p.label}
+                        initial={still ? false : { opacity: 0, y: 14 }}
+                        animate={footOn ? { opacity: 1, y: 0 } : {}}
+                        transition={{ duration: 0.55, ease: EASE, delay: 0.35 + i * 0.06 }}
+                      >
+                        <Link
+                          href={`/contact?src=${encodeURIComponent(`/#not-sure-${p.slug}`)}`}
+                          className="group flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3.5 transition-colors duration-300 hover:border-orange-500/60 hover:bg-white/[0.08]"
+                        >
+                          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/[0.08] text-white/80 transition-colors duration-300 group-hover:bg-orange-600 group-hover:text-white">
+                            <Icon className="h-4 w-4" strokeWidth={1.8} />
+                          </span>
+                          <span className="text-[0.9rem] leading-snug text-white/85">{p.label}</span>
+                          <ArrowRight className="ml-auto h-3.5 w-3.5 shrink-0 text-white/30 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-orange-bright" />
+                        </Link>
+                      </motion.li>
+                    );
+                  })}
+                </ul>
+
+                <motion.ol
+                  className="mt-7 grid grid-cols-3 gap-3 border-t border-white/10 pt-6"
+                  {...rise(footOn, 0.75)}
+                >
+                  {["You describe the problem", "We map the options", "You get a clear plan"].map((step, i) => (
+                    <li key={step} className="relative">
+                      <span className={`flex h-6 w-6 items-center justify-center rounded-full text-[0.7rem] font-semibold ${i === 2 ? "bg-blue text-white" : "bg-white/10 text-white/80"}`}>
+                        {i + 1}
+                      </span>
+                      <p className="mt-2.5 text-[0.8rem] leading-snug text-white/60">{step}</p>
+                    </li>
+                  ))}
+                </motion.ol>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
