@@ -54,11 +54,14 @@ export function HeroScreen({
   chips = [],
   badge,
   url = "zspace.in",
+  bare = false,
 }: {
   children: ReactNode;
   chips?: string[];
   badge?: ReactNode;
   url?: string;
+  /** Skip the browser chrome when the content draws its own interface. */
+  bare?: boolean;
 }) {
   const still = !!useReducedMotion();
   const mx = useMotionValue(0.5);
@@ -94,6 +97,12 @@ export function HeroScreen({
         transition={{ duration: 1.1, ease: EASE, delay: 0.3 }}
       >
         <div className="overflow-hidden rounded-2xl border border-white bg-white/85 shadow-[0_50px_100px_-40px_rgba(11,12,14,0.45),0_0_0_1px_rgba(11,12,14,0.06)] backdrop-blur">
+          {bare ? (
+            <div className="p-1.5">
+              <div className="overflow-hidden rounded-[12px]">{children}</div>
+            </div>
+          ) : (
+          <>
           <div className="flex items-center gap-1.5 border-b border-ink/[0.06] px-3.5 py-2.5">
             <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]/80" />
             <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]/80" />
@@ -103,6 +112,8 @@ export function HeroScreen({
             </span>
           </div>
           <div className="p-2.5">{children}</div>
+          </>
+          )}
         </div>
 
         {badge && (

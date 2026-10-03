@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, type ReactNode } from "react";
+import { useRef } from "react";
 import Link from "next/link";
 import { motion, useInView, useReducedMotion } from "motion/react";
 import {
@@ -16,8 +16,7 @@ import {
   Users,
 } from "lucide-react";
 import { Atmosphere, Eyebrow, MaskLines, TiltCard, riseProps, serif } from "@/components/ui/Aesthetic";
-import { ScaledArt } from "@/components/home/WhatWeBuild";
-import { AppsArt, AutomationArt, CroArt, ShopifyArt, UiUxArt, WebsitesArt } from "@/components/home/BuildIllustrations";
+import { ServiceScene } from "@/components/services/ServiceScene";
 import {
   CardGrid,
   DetailHero,
@@ -31,16 +30,6 @@ import {
   accentTitle,
 } from "./DetailKit";
 
-type Art = (props: { on: boolean; still: boolean }) => ReactNode;
-
-const artBySlug: Record<string, Art> = {
-  "website-development": WebsitesArt,
-  "mobile-app-development": AppsArt,
-  "shopify-development": ShopifyArt,
-  "ui-ux-design": UiUxArt,
-  "ai-automation": AutomationArt,
-  "cro-audit": CroArt,
-};
 
 export type ServiceDetailData = {
   slug: string;
@@ -269,8 +258,6 @@ function Toolkit({ data }: { data: ServiceDetailData }) {
 }
 
 export function ServiceDetail({ data }: { data: ServiceDetailData }) {
-  const still = !!useReducedMotion();
-  const Art = artBySlug[data.slug] ?? WebsitesArt;
   const contactHref = `/contact?src=${encodeURIComponent(`/services/${data.slug}`)}`;
 
   return (
@@ -286,12 +273,8 @@ export function ServiceDetail({ data }: { data: ServiceDetailData }) {
         primary={{ label: "Start a Project", href: contactHref }}
         secondary={{ label: "How we work", href: "#process" }}
         visual={
-          <HeroScreen chips={data.technology} badge={<Badge slug={data.slug} />} url={`zspace.in/services/${data.slug}`}>
-            <div className="rounded-xl bg-gradient-to-br from-[#f3f3f1] to-[#fafaf8]">
-              <ScaledArt max={1.6}>
-                <Art on still={still} />
-              </ScaledArt>
-            </div>
+          <HeroScreen bare chips={data.technology} badge={<Badge slug={data.slug} />}>
+            <ServiceScene slug={data.slug} label={`Example interface for ${data.name}`} />
           </HeroScreen>
         }
       />
@@ -301,7 +284,13 @@ export function ServiceDetail({ data }: { data: ServiceDetailData }) {
         title={[accentTitle(data.definition.question)]}
         paragraphs={data.definition.answer}
         aside={
-          data.industries.length > 0 && (
+          <div className="space-y-8">
+          <div className="overflow-hidden rounded-[20px] bg-ink/[0.03] p-1.5 ring-1 ring-ink/[0.06]">
+            <div className="overflow-hidden rounded-[14px]">
+              <ServiceScene slug={data.slug} which="secondary" />
+            </div>
+          </div>
+          {data.industries.length > 0 && (
             <div>
               <p className="text-[0.72rem] font-medium uppercase tracking-[0.16em] text-ink/45">Popular with</p>
               <div className="mt-4 flex flex-wrap gap-2">
@@ -317,7 +306,8 @@ export function ServiceDetail({ data }: { data: ServiceDetailData }) {
                 ))}
               </div>
             </div>
-          )
+          )}
+          </div>
         }
       />
 
@@ -367,19 +357,12 @@ export function ServiceDetail({ data }: { data: ServiceDetailData }) {
         eyebrow="Other services"
         title={[<>Often paired</>, <span key="w" className="italic text-orange-bright">with this.</span>]}
         items={data.others.map((o) => {
-          const OArt = artBySlug[o.slug] ?? WebsitesArt;
           return {
             href: `/services/${o.slug}`,
             title: o.name,
             body: o.summary,
             glow: o.accent === "blue" ? "#3b82f6" : "#ff6b35",
-            visual: (
-              <div className="bg-gradient-to-br from-[#f3f3f1] to-[#fafaf8]">
-                <ScaledArt>
-                  <OArt on still={still} />
-                </ScaledArt>
-              </div>
-            ),
+            visual: <ServiceScene slug={o.slug} />,
           };
         })}
       />

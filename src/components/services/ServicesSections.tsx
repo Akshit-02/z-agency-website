@@ -22,16 +22,9 @@ import {
   riseProps,
   serif,
 } from "@/components/ui/Aesthetic";
-import { ScaledArt } from "@/components/home/WhatWeBuild";
-import {
-  AppsArt,
-  AutomationArt,
-  CroArt,
-  ShopifyArt,
-  UiUxArt,
-  WebsitesArt,
-} from "@/components/home/BuildIllustrations";
-import { AboutOrbit } from "@/components/about/AboutSections";
+import { BlogScene } from "@/components/blog/BlogScene";
+import type { BlogSceneData } from "@/lib/blog-scenes";
+import { ServiceScene } from "./ServiceScene";
 
 export type ServiceSummary = {
   slug: string;
@@ -42,16 +35,6 @@ export type ServiceSummary = {
   accent: "blue" | "orange";
 };
 
-type Art = (props: { on: boolean; still: boolean }) => ReactNode;
-
-const artBySlug: Record<string, Art> = {
-  "website-development": WebsitesArt,
-  "mobile-app-development": AppsArt,
-  "shopify-development": ShopifyArt,
-  "ui-ux-design": UiUxArt,
-  "ai-automation": AutomationArt,
-  "cro-audit": CroArt,
-};
 
 /* ------------------------------------------------------------------ hero */
 
@@ -100,20 +83,18 @@ function StackedScreens({ on, still }: { on: boolean; still: boolean }) {
       >
         {/* back: a website */}
         <motion.div className="absolute left-[2%] top-[4%] w-[78%]" style={{ z: zBack }} {...layer(0.3)}>
-          <Window>
-            <ScaledArt>
-              <WebsitesArt on={on} still={still} />
-            </ScaledArt>
-          </Window>
+          <Screen>
+            <ServiceScene slug="website-development" />
+          </Screen>
         </motion.div>
 
         {/* middle: analytics */}
         <motion.div className="absolute left-[14%] top-[30%] w-[78%]" {...layer(0.45)}>
-          <Window>
-            <ScaledArt>
-              <CroArt on={on} still={still} />
-            </ScaledArt>
-          </Window>
+          <Screen>
+            <div className="relative aspect-[16/10] w-full">
+              <BlogScene scene={GROWTH} />
+            </div>
+          </Screen>
         </motion.div>
 
         {/* front: a project brief */}
@@ -143,19 +124,27 @@ function StackedScreens({ on, still }: { on: boolean; still: boolean }) {
   );
 }
 
-function Window({ children }: { children: ReactNode }) {
+function Screen({ children }: { children: ReactNode }) {
   return (
-    <div className="overflow-hidden rounded-2xl border border-white bg-white/80 shadow-[0_30px_70px_-30px_rgba(11,12,14,0.3),0_0_0_1px_rgba(11,12,14,0.05)] backdrop-blur">
-      <div className="flex items-center gap-1.5 border-b border-ink/[0.05] px-3 py-2">
-        <span className="h-2 w-2 rounded-full bg-[#ff5f57]/70" />
-        <span className="h-2 w-2 rounded-full bg-[#febc2e]/70" />
-        <span className="h-2 w-2 rounded-full bg-[#28c840]/70" />
-        <span className="ml-2 h-2.5 w-24 rounded-full bg-ink/[0.05]" />
-      </div>
-      <div className="p-2">{children}</div>
+    <div className="overflow-hidden rounded-2xl border border-white bg-white p-1 shadow-[0_30px_70px_-30px_rgba(11,12,14,0.35),0_0_0_1px_rgba(11,12,14,0.05)]">
+      <div className="overflow-hidden rounded-[12px]">{children}</div>
     </div>
   );
 }
+
+const GROWTH: BlogSceneData = {
+  kind: "analytics",
+  label: "Growth overview",
+  items: ["Organic search", "Paid social", "Email", "Referral"],
+  seed: 4,
+};
+
+const ADVICE: BlogSceneData = {
+  kind: "chat",
+  label: "Which service fits what we're trying to fix?",
+  items: ["Tell us what isn't working", "We map the options", "You get a clear, honest plan"],
+  seed: 2,
+};
 
 export function ServicesHero() {
   const still = !!useReducedMotion();
@@ -299,7 +288,6 @@ function ServiceRow({ svc, i, still }: { svc: ServiceSummary; i: number; still: 
   const artY = useTransform(scrollYProgress, [0, 1], still ? [0, 0] : [40, -40]);
   const flip = i % 2 === 1;
   const glow = svc.accent === "blue" ? "#3b82f6" : "#ff6b35";
-  const Art = artBySlug[svc.slug] ?? WebsitesArt;
 
   return (
     <motion.div
@@ -324,9 +312,9 @@ function ServiceRow({ svc, i, still }: { svc: ServiceSummary; i: number; still: 
             transition={{ duration: 1.1, ease: EASE, delay: 0.15 }}
           >
             <div className="rounded-[20px] bg-white/[0.06] p-2 ring-1 ring-white/10 transition-transform duration-700 ease-out group-hover:-translate-y-1.5 group-hover:scale-[1.02]">
-              <ScaledArt max={1.5}>
-                <Art on={on} still={still} />
-              </ScaledArt>
+              <div className="overflow-hidden rounded-[14px]">
+                <ServiceScene slug={svc.slug} />
+              </div>
             </div>
           </motion.div>
 
@@ -439,8 +427,12 @@ export function ServicesClosing() {
               </Link>
             </motion.div>
           </div>
-          <div className="mx-auto w-full max-w-[400px]">
-            <AboutOrbit on={on} still={still} />
+          <div className="mx-auto w-full max-w-[460px]">
+            <div className="overflow-hidden rounded-[22px] bg-white p-1.5 shadow-[0_40px_80px_-40px_rgba(11,12,14,0.45),0_0_0_1px_rgba(11,12,14,0.06)] transition-transform duration-700 hover:-translate-y-1">
+              <div className="relative aspect-[16/11] overflow-hidden rounded-[16px]">
+                <BlogScene scene={ADVICE} />
+              </div>
+            </div>
           </div>
         </div>
       </motion.div>

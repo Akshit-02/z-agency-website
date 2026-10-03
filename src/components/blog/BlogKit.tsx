@@ -27,8 +27,7 @@ import { Breadcrumbs, type Crumb } from "@/components/Breadcrumbs";
 import type { BlogBannerVariant } from "@/components/BlogBanner";
 import { BlogScene } from "./BlogScene";
 import type { BlogSceneData } from "@/lib/blog-scenes";
-import { ScaledArt } from "@/components/home/WhatWeBuild";
-import { AppsArt, AutomationArt, CroArt, ShopifyArt, UiUxArt, WebsitesArt } from "@/components/home/BuildIllustrations";
+import { ServiceScene } from "@/components/services/ServiceScene";
 import { SceneFrame, sceneBackdrop, scenes } from "@/components/industries/IndustryScenes";
 
 export type PostLite = {
@@ -59,15 +58,6 @@ const topicIcons: Record<string, LucideIcon> = {
   cro: ChartColumn,
 };
 
-type Art = (props: { on: boolean; still: boolean }) => ReactNode;
-export const serviceArt: Record<string, Art> = {
-  "website-development": WebsitesArt,
-  "mobile-app-development": AppsArt,
-  "shopify-development": ShopifyArt,
-  "ui-ux-design": UiUxArt,
-  "ai-automation": AutomationArt,
-  "cro-audit": CroArt,
-};
 
 function useOn<T extends Element>(amount = 0.3) {
   const ref = useRef<T>(null);
@@ -285,7 +275,6 @@ export function TopicGrid({ topics }: { topics: TopicLite[] }) {
         <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {topics.map((t, i) => {
             const Icon = topicIcons[t.slug] ?? Globe;
-            const Art = serviceArt[t.serviceSlug] ?? WebsitesArt;
             return (
               <motion.div
                 key={t.slug}
@@ -298,10 +287,8 @@ export function TopicGrid({ topics }: { topics: TopicLite[] }) {
                 <TiltCard glow={i % 2 ? "#2563eb" : "#ea580c"} max={7}>
                   <Link href={`/blogs/category/${t.slug}`} className="group flex h-full flex-col p-4">
                     <div className="rounded-[16px] bg-ink/[0.03] p-1.5 ring-1 ring-ink/[0.06] transition-transform duration-700 ease-out group-hover:-translate-y-1">
-                      <div className="rounded-[12px] bg-gradient-to-br from-[#f3f3f1] to-[#fafaf8]">
-                        <ScaledArt>
-                          <Art on still={still} />
-                        </ScaledArt>
+                      <div className="overflow-hidden rounded-[12px]">
+                        <ServiceScene slug={t.serviceSlug} />
                       </div>
                     </div>
                     <div className="mt-5 flex items-center justify-between px-1">
@@ -374,7 +361,6 @@ export function HubIntro({
 }) {
   const still = !!useReducedMotion();
   const [ref, on] = useOn<HTMLDivElement>(0.3);
-  const Art = service ? serviceArt[service.slug] ?? WebsitesArt : null;
   return (
     <section className="relative bg-white px-5 py-16 sm:px-8 lg:py-20">
       <div ref={ref} className="mx-auto grid max-w-[1180px] items-start gap-12 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
@@ -385,7 +371,7 @@ export function HubIntro({
             </motion.p>
           ))}
         </div>
-        {service && Art && (
+        {service && (
           <motion.div {...riseProps(on, still, 0.2, 40)}>
             <Link
               href={`/services/${service.slug}`}
@@ -393,10 +379,8 @@ export function HubIntro({
             >
               <div aria-hidden className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-orange-600/25 blur-[70px]" />
               <div className="relative rounded-[16px] bg-white/[0.06] p-1.5 ring-1 ring-white/10 transition-transform duration-700 group-hover:-translate-y-1">
-                <div className="rounded-[12px] bg-gradient-to-br from-[#f3f3f1] to-[#fafaf8]">
-                  <ScaledArt max={1.4}>
-                    <Art on={on} still={still} />
-                  </ScaledArt>
+                <div className="overflow-hidden rounded-[12px]">
+                  <ServiceScene slug={service.slug} />
                 </div>
               </div>
               <p className="relative mt-5 text-[0.7rem] font-medium uppercase tracking-[0.16em] text-white/50">Related service</p>
@@ -486,16 +470,7 @@ export function ArticleRelated({
       kind: "Service",
       title: s.name,
       body: s.summary,
-      visual: (() => {
-        const Art = serviceArt[s.slug] ?? WebsitesArt;
-        return (
-          <div className="bg-gradient-to-br from-[#f3f3f1] to-[#fafaf8]">
-            <ScaledArt>
-              <Art on still={still} />
-            </ScaledArt>
-          </div>
-        );
-      })(),
+      visual: <ServiceScene slug={s.slug} />,
     })),
     ...industries.map((i) => ({
       href: `/industries/${i.slug}`,

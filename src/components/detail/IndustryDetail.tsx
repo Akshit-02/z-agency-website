@@ -1,12 +1,11 @@
 "use client";
 
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { motion, useInView, useReducedMotion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import { Atmosphere, EASE, TiltCard, serif } from "@/components/ui/Aesthetic";
-import { ScaledArt } from "@/components/home/WhatWeBuild";
-import { AppsArt, AutomationArt, CroArt, ShopifyArt, UiUxArt, WebsitesArt } from "@/components/home/BuildIllustrations";
+import { ServiceScene } from "@/components/services/ServiceScene";
 import { SceneFrame, sceneBackdrop, scenes } from "@/components/industries/IndustryScenes";
 import {
   CardGrid,
@@ -20,16 +19,6 @@ import {
   SplitIntro,
 } from "./DetailKit";
 
-type Art = (props: { on: boolean; still: boolean }) => ReactNode;
-
-const serviceArt: Record<string, Art> = {
-  "website-development": WebsitesArt,
-  "mobile-app-development": AppsArt,
-  "shopify-development": ShopifyArt,
-  "ui-ux-design": UiUxArt,
-  "ai-automation": AutomationArt,
-  "cro-audit": CroArt,
-};
 
 export type IndustryDetailData = {
   slug: string;
@@ -192,19 +181,12 @@ export function IndustryDetail({ data }: { data: IndustryDetailData }) {
             eyebrow="Recommended services"
             title={[<>Where we</>, <span key="u" className="italic text-orange-bright">usually start.</span>]}
             items={data.services.map((s) => {
-              const SArt = serviceArt[s.slug] ?? WebsitesArt;
               return {
                 href: `/services/${s.slug}`,
                 title: s.name,
                 body: s.summary,
                 glow: s.accent === "blue" ? "#3b82f6" : "#ff6b35",
-                visual: (
-                  <div className="bg-gradient-to-br from-[#f3f3f1] to-[#fafaf8]">
-                    <ScaledArt>
-                      <SArt on still={still} />
-                    </ScaledArt>
-                  </div>
-                ),
+                visual: <ServiceScene slug={s.slug} />,
               };
             })}
           />
