@@ -1,12 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowUpRight } from "lucide-react";
-import { PageHero } from "@/components/PageHero";
-import { Container } from "@/components/Container";
-import { Reveal } from "@/components/ScrollReveal";
-import { Eyebrow } from "@/components/SectionHeading";
 import { BlogCard } from "@/components/BlogCard";
+import { ArticleIndex, BlogHero, BlogSection, HubIntro } from "@/components/blog/BlogKit";
 import { StructuredData } from "@/components/StructuredData";
 import { CTASection } from "@/components/CTASection";
 import { posts, toSummary } from "@/lib/blog-data";
@@ -39,6 +34,18 @@ export async function generateMetadata({
       url: `${site.url}/blogs/category/${category.slug}`,
     },
   };
+}
+
+/** "Website Development Guides" -> ["Website Development", <i>Guides.</i>] */
+function titleLines(title: string) {
+  const words = title.split(" ");
+  const last = words.pop();
+  return [
+    <>{words.join(" ")}</>,
+    <span key="l" className="italic text-orange">
+      {last}.
+    </span>,
+  ];
 }
 
 export default async function BlogCategoryPage({
@@ -84,75 +91,48 @@ export default async function BlogCategoryPage({
           },
         }}
       />
-      <PageHero
-        eyebrow={`Insights / ${category.name}`}
-        title={category.title}
-        description={category.description}
-        breadcrumbs={[
+      <BlogHero
+        crumbs={[
           { name: "Blogs", href: "/blogs" },
           { name: category.name, href: `/blogs/category/${category.slug}` },
         ]}
+        eyebrow={`Insights / ${category.name}`}
+        title={titleLines(category.title)}
+        description={category.description}
+        stack={(startHere.length >= 3 ? startHere : inCategory).slice(0, 3).map((p) => ({
+          slug: p.slug,
+          title: p.title,
+          category: p.category,
+          banner: p.banner,
+        }))}
+        stats={[{ value: String(inCategory.length), label: "Articles in this hub" }]}
       />
 
-      <section className="border-b border-line py-16 sm:py-20">
-        <Container className="grid gap-10 lg:grid-cols-2 lg:gap-16">
-          <div className="flex flex-col gap-5">
-            {category.intro.map((para, i) => (
-              <Reveal key={i} delay={0.05 * i}>
-                <p className="text-pretty text-[1.05rem] leading-relaxed text-ink-soft">{para}</p>
-              </Reveal>
-            ))}
-          </div>
-          {service && (
-            <Reveal delay={0.1}>
-              <div className="rounded-2xl border border-line-strong bg-[#f3f2ee] p-7">
-                <Eyebrow accent="blue">Related service</Eyebrow>
-                <p className="mt-3 font-display text-[1.2rem] font-medium tracking-tight">{service.name}</p>
-                <p className="mt-2 text-pretty text-[0.96rem] leading-relaxed text-ink-soft">{service.summary}</p>
-                <Link
-                  href={`/services/${service.slug}`}
-                  className="group mt-4 inline-flex items-center gap-2 text-[0.95rem] font-medium text-blue transition-colors duration-300 hover:text-blue-deep"
-                >
-                  {category.serviceLabel}
-                  <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                </Link>
-              </div>
-            </Reveal>
-          )}
-        </Container>
-      </section>
+      <HubIntro
+        intro={category.intro}
+        service={
+          service
+            ? { slug: service.slug, name: service.name, summary: service.summary, label: category.serviceLabel }
+            : undefined
+        }
+      />
 
       {startHere.length > 0 && (
-        <section className="border-b border-line py-16 sm:py-20">
-          <Container>
-            <Eyebrow accent="blue">Start here</Eyebrow>
-            <div className="mt-8 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
-              {startHere.map((post) => (
-                <BlogCard key={post.slug} post={post} />
-              ))}
-            </div>
-          </Container>
-        </section>
+        <BlogSection eyebrow="Start here" title={[<>The guides</>, <span key="s" className="italic text-orange">to read first.</span>]}>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {startHere.map((post) => (
+              <BlogCard key={post.slug} post={post} />
+            ))}
+          </div>
+        </BlogSection>
       )}
 
-      <section className="py-16 sm:py-20">
-        <Container>
-          <Eyebrow accent="blue">{`All ${category.name} articles (${inCategory.length})`}</Eyebrow>
-          <ul className="mt-8 grid gap-x-10 sm:grid-cols-2">
-            {inCategory.map((post) => (
-              <li key={post.slug} className="border-t border-line">
-                <Link
-                  href={`/blogs/${post.slug}`}
-                  className="group flex items-start justify-between gap-4 py-3.5 text-[0.98rem] text-ink transition-colors duration-300 hover:text-blue"
-                >
-                  <span className="text-pretty">{post.title}</span>
-                  <ArrowUpRight className="mt-1 h-4 w-4 shrink-0 text-ink-soft transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </Container>
-      </section>
+      <BlogSection
+        eyebrow={`All ${category.name} articles (${inCategory.length})`}
+        title={[<>The full</>, <span key="l" className="italic text-orange">library.</span>]}
+      >
+        <ArticleIndex posts={inCategory.map((p) => ({ slug: p.slug, title: p.title }))} />
+      </BlogSection>
 
       <CTASection
         primaryHref={`/contact?src=${encodeURIComponent(`/blogs/category/${category.slug}`)}`}

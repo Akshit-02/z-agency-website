@@ -15,11 +15,11 @@ export default function PrivacyPage() {
     <>
       <PageHero eyebrow="Legal" title="Privacy Policy" accent="blue" />
       <Container className="max-w-[720px] py-16 sm:py-20">
-        <div className="flex flex-col gap-8 text-[1rem] leading-relaxed text-ink-soft">
-          <p>Last updated: January 2026</p>
+        <div className="flex max-w-[760px] flex-col gap-10 text-[1rem] leading-relaxed text-ink/65 [counter-reset:legal] [&>section]:border-t [&>section]:border-ink/10 [&>section]:pt-8 [&>section>h2]:before:mr-3 [&>section>h2]:before:align-middle [&>section>h2]:before:font-mono [&>section>h2]:before:text-[0.75rem] [&>section>h2]:before:text-orange [&>section>h2]:before:content-[counter(legal,decimal-leading-zero)] [&>section]:[counter-increment:legal]">
+          <p className="w-fit rounded-full border border-ink/10 px-4 py-1.5 font-mono text-[0.72rem] uppercase tracking-[0.12em] text-ink/50">Last updated: January 2026</p>
 
           <section>
-            <h2 className="mb-2 font-display text-[1.2rem] font-medium text-ink">Information we collect</h2>
+            <h2 className="mb-3 font-serif-display text-[1.7rem] leading-tight text-ink">Information we collect</h2>
             <p>
               When you submit our contact form, we collect the information you
               provide directly — such as your name, email address, company and
@@ -28,7 +28,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="mb-2 font-display text-[1.2rem] font-medium text-ink">How we use it</h2>
+            <h2 className="mb-3 font-serif-display text-[1.7rem] leading-tight text-ink">How we use it</h2>
             <p>
               Information submitted through this site is used only to evaluate
               and respond to project inquiries. We do not sell or share your
@@ -37,7 +37,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="mb-2 font-display text-[1.2rem] font-medium text-ink">Cookies and analytics</h2>
+            <h2 className="mb-3 font-serif-display text-[1.7rem] leading-tight text-ink">Cookies and analytics</h2>
             <p>
               This site may use privacy-respecting analytics to understand
               aggregate traffic patterns and improve the site. No personally
@@ -46,7 +46,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="mb-2 font-display text-[1.2rem] font-medium text-ink">Contact</h2>
+            <h2 className="mb-3 font-serif-display text-[1.7rem] leading-tight text-ink">Contact</h2>
             <p>
               Questions about this policy can be sent to{" "}
               <a href={`mailto:${site.email}`} className="font-medium text-blue underline">

@@ -49,24 +49,34 @@ export function BlogExplorer({ posts }: { posts: BlogSummary[] }) {
     <div>
       <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex flex-wrap gap-2">
-          {categories.map((c) => (
-            <button
-              key={c}
-              type="button"
-              onClick={() => {
-                setCategory(c);
-                setVisible(PAGE_SIZE);
-              }}
-              aria-pressed={category === c}
-              className={`rounded-full border px-4 py-2 text-[0.88rem] font-medium transition-colors duration-300 ${
-                category === c
-                  ? "border-blue bg-blue text-white"
-                  : "border-line-strong text-ink-soft hover:border-blue hover:text-blue"
-              }`}
-            >
-              {c}
-            </button>
-          ))}
+          {categories.map((c) => {
+            const active = category === c;
+            return (
+              <button
+                key={c}
+                type="button"
+                onClick={() => {
+                  setCategory(c);
+                  setVisible(PAGE_SIZE);
+                }}
+                aria-pressed={active}
+                className={`relative rounded-full px-4 py-2 text-[0.85rem] transition-colors duration-300 ${
+                  active ? "text-white" : "text-ink/60 hover:text-ink"
+                }`}
+              >
+                {active ? (
+                  <motion.span
+                    layoutId="blog-filter"
+                    className="absolute inset-0 rounded-full bg-ink"
+                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                  />
+                ) : (
+                  <span className="absolute inset-0 rounded-full border border-ink/10" />
+                )}
+                <span className="relative">{c}</span>
+              </button>
+            );
+          })}
         </div>
 
         <label className="relative w-full sm:w-64">
@@ -77,7 +87,7 @@ export function BlogExplorer({ posts }: { posts: BlogSummary[] }) {
             value={query}
             onChange={(e) => handleQueryChange(e.target.value)}
             placeholder="Search articles"
-            className="w-full rounded-full border border-line-strong bg-transparent py-2.5 pl-10 pr-4 text-[0.92rem] outline-none transition-colors focus:border-blue"
+            className="w-full rounded-full border border-ink/10 bg-white py-3 pl-10 pr-4 text-[0.92rem] shadow-[0_1px_2px_rgba(11,12,14,0.03)] outline-none transition-all focus:border-ink/40 focus:shadow-[0_10px_30px_-18px_rgba(11,12,14,0.35)]"
           />
         </label>
       </div>
@@ -91,14 +101,15 @@ export function BlogExplorer({ posts }: { posts: BlogSummary[] }) {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.25, ease: EASE }}
-              className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3"
+              className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
             >
               {filtered.slice(0, visible).map((post, i) => (
                 <motion.div
                   key={post.slug}
-                  initial={{ opacity: 0, y: 14 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: Math.min(i % PAGE_SIZE, 8) * 0.05, ease: EASE }}
+                  initial={{ opacity: 0, y: 30, rotateX: 18 }}
+                  animate={{ opacity: 1, y: 0, rotateX: 0 }}
+                  transition={{ duration: 0.6, delay: Math.min(i % PAGE_SIZE, 8) * 0.05, ease: EASE }}
+                  style={{ transformPerspective: 1000, transformOrigin: "50% 100%" }}
                 >
                   <BlogCard post={post} />
                 </motion.div>
@@ -111,7 +122,7 @@ export function BlogExplorer({ posts }: { posts: BlogSummary[] }) {
             <button
               type="button"
               onClick={() => setVisible((v) => v + PAGE_SIZE)}
-              className="rounded-full border border-line-strong px-6 py-3 text-[0.92rem] font-medium text-ink transition-colors duration-300 hover:border-blue hover:text-blue"
+              className="rounded-full bg-ink px-7 py-3.5 text-[0.9rem] font-medium text-white transition-colors duration-300 hover:bg-ink/85"
             >
               Load more articles
             </button>
@@ -121,7 +132,7 @@ export function BlogExplorer({ posts }: { posts: BlogSummary[] }) {
           </div>
         )}
         {filtered.length === 0 && (
-          <p className="border-t border-line py-16 text-center text-[1rem] text-ink-soft">
+          <p className="rounded-2xl border border-dashed border-ink/15 py-16 text-center text-[1rem] text-ink-soft">
             No articles match that search yet.
           </p>
         )}

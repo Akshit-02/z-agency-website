@@ -10,6 +10,8 @@ import { CTASection } from "@/components/CTASection";
 import { StructuredData } from "@/components/StructuredData";
 import { BlogBanner } from "@/components/BlogBanner";
 import { BlogCard } from "@/components/BlogCard";
+import { ArticleCover, ArticleRelated } from "@/components/blog/BlogKit";
+import { Atmosphere } from "@/components/ui/Aesthetic";
 import { Callout } from "@/components/Callout";
 import { ReadingProgress } from "@/components/ReadingProgress";
 import { TableOfContents } from "@/components/TableOfContents";
@@ -126,46 +128,54 @@ export default async function BlogPostPage({
       )}
       <ReadingProgress targetId="article-body" />
 
-      <div id="article-body" className="pt-[150px] sm:pt-[170px]">
-        <Container className="max-w-[860px]">
-          <Reveal>
-            <Breadcrumbs
-              items={[
-                { name: "Blogs", href: "/blogs" },
-                ...(category ? [{ name: category.name, href: `/blogs/category/${category.slug}` }] : []),
-                { name: post.title, href: `/blogs/${post.slug}` },
-              ]}
-            />
-          </Reveal>
+      <div id="article-body">
+        <section className="relative overflow-hidden bg-white pb-16 pt-[120px] sm:pt-[140px]">
+          <Atmosphere tone="light" />
+          <Container className="relative max-w-[960px]">
+            <Reveal>
+              <Breadcrumbs
+                items={[
+                  { name: "Blogs", href: "/blogs" },
+                  ...(category ? [{ name: category.name, href: `/blogs/category/${category.slug}` }] : []),
+                  { name: post.title, href: `/blogs/${post.slug}` },
+                ]}
+              />
+            </Reveal>
 
-          <Reveal delay={0.05}>
-            <span className="mt-8 inline-block text-[0.85rem] font-medium uppercase tracking-[0.08em] text-blue">
-              {post.category}
-            </span>
-          </Reveal>
+            <Reveal delay={0.05}>
+              <div className="mt-8 flex flex-wrap items-center gap-3 text-[0.8rem]">
+                <Link
+                  href={category ? `/blogs/category/${category.slug}` : "/blogs"}
+                  className="flex items-center gap-2 rounded-full bg-ink px-3.5 py-1.5 font-medium text-white transition-colors hover:bg-ink/85"
+                >
+                  <span className="h-1.5 w-1.5 rounded-full bg-orange-bright" />
+                  {post.category}
+                </Link>
+                <span className="font-mono text-[0.72rem] uppercase tracking-[0.12em] text-ink/45">{post.readingTime}</span>
+                <span className="h-1 w-1 rounded-full bg-ink/20" />
+                <time dateTime={post.updated ?? post.date} className="font-mono text-[0.72rem] uppercase tracking-[0.12em] text-ink/45">
+                  {new Date(post.updated ?? post.date).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}
+                </time>
+              </div>
+            </Reveal>
 
-          <Reveal delay={0.1}>
-            <h1 className="mt-4 text-balance font-serif-display text-[2.1rem] leading-[1.14] tracking-tight sm:text-[2.8rem]">
-              {post.title}
-            </h1>
-          </Reveal>
+            <Reveal delay={0.1} y={30}>
+              <h1 className="mt-6 text-balance font-serif-display text-[2.4rem] leading-[1.05] sm:text-[3.4rem] lg:text-[3.8rem]">
+                {post.title}
+              </h1>
+            </Reveal>
 
-          <Reveal delay={0.15}>
-            <p className="mt-6 max-w-[68ch] text-pretty text-[1.15rem] leading-relaxed text-ink-soft">
-              {post.excerpt}
-            </p>
-          </Reveal>
+            <Reveal delay={0.15}>
+              <p className="mt-6 max-w-[64ch] text-pretty text-[1.15rem] leading-relaxed text-ink/60">{post.excerpt}</p>
+            </Reveal>
 
-          <Reveal delay={0.2}>
-            <div
-              role="img"
-              aria-label={post.bannerAlt ?? `Illustration for ${post.title}`}
-              className="mt-10 aspect-[16/9] w-full overflow-hidden rounded-2xl border border-line"
-            >
-              <BlogBanner variant={post.banner} />
+            <div className="mt-12">
+              <ArticleCover label={post.bannerAlt ?? `Illustration for ${post.title}`}>
+                <BlogBanner variant={post.banner} />
+              </ArticleCover>
             </div>
-          </Reveal>
-        </Container>
+          </Container>
+        </section>
 
         <Container className="max-w-[1240px] py-14">
           <div className="grid gap-12 lg:grid-cols-[220px_minmax(0,720px)] lg:gap-16">
@@ -178,9 +188,10 @@ export default async function BlogPostPage({
                 const id = slugifyHeading(section.heading);
                 return (
                   <Reveal key={id} delay={0.03 * i} className="mb-12 last:mb-0">
+                    <span className="font-mono text-[0.72rem] text-orange">{String(i + 1).padStart(2, "0")}</span>
                     <h2
                       id={id}
-                      className="scroll-mt-28 font-display text-[1.4rem] font-medium tracking-tight sm:text-[1.6rem]"
+                      className="mt-1.5 scroll-mt-28 text-balance font-serif-display text-[1.75rem] leading-[1.15] sm:text-[2.1rem]"
                     >
                       {section.heading}
                     </h2>
@@ -197,7 +208,7 @@ export default async function BlogPostPage({
                       <ul className="mt-5 flex flex-col gap-3">
                         {section.checklist.map((item) => (
                           <li key={item} className="flex gap-3 text-[1.02rem] leading-relaxed text-ink-soft">
-                            <Check className="mt-1 h-4 w-4 shrink-0 text-blue" />
+                            <span className="mt-1 flex h-[18px] w-[18px] shrink-0 items-center justify-center rounded-full bg-blue text-white"><Check className="h-3 w-3" strokeWidth={3} /></span>
                             <span>{renderInline(item)}</span>
                           </li>
                         ))}
@@ -205,14 +216,14 @@ export default async function BlogPostPage({
                     )}
 
                     {section.table && (
-                      <div className="mt-6 overflow-x-auto rounded-2xl border border-line">
+                      <div className="mt-6 overflow-x-auto rounded-2xl border border-ink/10 shadow-[0_20px_50px_-40px_rgba(11,12,14,0.4)]">
                         <table className="w-full min-w-[520px] border-collapse text-left text-[0.95rem]">
                           <thead>
-                            <tr className="bg-[#f3f2ee]">
+                            <tr className="bg-ink">
                               {section.table.headers.map((h) => (
                                 <th
                                   key={h}
-                                  className="border-b border-line px-5 py-3 font-display text-[0.85rem] font-medium tracking-tight text-ink"
+                                  className="px-5 py-3.5 font-display text-[0.85rem] font-medium tracking-tight text-white"
                                 >
                                   {h}
                                 </th>
@@ -241,7 +252,7 @@ export default async function BlogPostPage({
                         </figcaption>
                         <pre
                           tabIndex={0}
-                          className="overflow-x-auto rounded-2xl border border-line bg-[#f3f2ee] p-5 text-[0.85rem] leading-relaxed text-ink focus-visible:outline-2 focus-visible:outline-blue"
+                          className="overflow-x-auto rounded-2xl bg-ink p-5 font-mono text-[0.85rem] leading-relaxed text-white/85 shadow-[0_30px_60px_-40px_rgba(11,12,14,0.6)] focus-visible:outline-2 focus-visible:outline-blue"
                         >
                           <code>{section.code.text}</code>
                         </pre>
@@ -265,9 +276,9 @@ export default async function BlogPostPage({
                           tabIndex={0}
                           role="region"
                           aria-label={`${section.diagram.alt} (scrollable)`}
-                          className="overflow-x-auto rounded-2xl border border-line focus-visible:outline-2 focus-visible:outline-blue"
+                          className="overflow-x-auto rounded-2xl bg-white p-1.5 shadow-[0_30px_70px_-45px_rgba(11,12,14,0.45)] ring-1 ring-ink/[0.06] focus-visible:outline-2 focus-visible:outline-blue"
                         >
-                          <div role="img" aria-label={section.diagram.alt} className="aspect-[16/9] w-full min-w-[560px]">
+                          <div role="img" aria-label={section.diagram.alt} className="aspect-[16/9] w-full min-w-[560px] overflow-hidden rounded-xl">
                             <BlogBanner variant={section.diagram.variant} />
                           </div>
                         </div>
@@ -284,20 +295,21 @@ export default async function BlogPostPage({
                     )}
 
                     {section.cta && (
-                      <div className="mt-8 flex flex-col items-start gap-4 rounded-2xl border border-line-strong bg-[#f3f2ee] p-7 sm:flex-row sm:items-center sm:justify-between">
-                        <div>
-                          <p className="font-display text-[1.1rem] font-medium tracking-tight">
+                      <div className="relative mt-8 flex flex-col items-start gap-5 overflow-hidden rounded-[24px] bg-ink p-7 text-white sm:flex-row sm:items-center sm:justify-between">
+                        <div aria-hidden className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-orange-600/30 blur-[70px]" />
+                        <div className="relative">
+                          <p className="font-serif-display text-[1.45rem] leading-tight">
                             {section.cta.title}
                           </p>
                           {section.cta.description && (
-                            <p className="mt-1.5 max-w-[42ch] text-[0.95rem] leading-relaxed text-ink-soft">
+                            <p className="mt-2 max-w-[42ch] text-[0.95rem] leading-relaxed text-white/60 [&_a]:text-white [&_a]:underline [&_a]:decoration-white/30">
                               {renderInline(section.cta.description)}
                             </p>
                           )}
                         </div>
                         <Link
                           href={`/contact?src=${encodeURIComponent(`/blogs/${post.slug}`)}`}
-                          className="group inline-flex shrink-0 items-center gap-2 rounded-full bg-orange px-6 py-3.5 text-[0.9rem] font-medium text-white transition-colors hover:bg-orange-deep"
+                          className="group relative inline-flex shrink-0 items-center gap-2 rounded-full bg-white px-6 py-3.5 text-[0.9rem] font-medium text-ink transition-colors hover:bg-white/90"
                         >
                           Start a Project
                           <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -309,10 +321,10 @@ export default async function BlogPostPage({
               })}
 
               {post.faqs && post.faqs.length > 0 && (
-                <Reveal delay={0.1} className="mt-14 border-t border-line pt-10">
+                <Reveal delay={0.1} className="mt-16 border-t border-ink/10 pt-12">
                   <Eyebrow accent="orange">FAQ</Eyebrow>
-                  <h2 className="mt-4 text-balance font-serif-display text-[1.5rem] tracking-tight sm:text-[1.7rem]">
-                    Common questions
+                  <h2 className="mt-4 text-balance font-serif-display text-[2rem] leading-tight sm:text-[2.4rem]">
+                    Common <span className="text-orange">questions.</span>
                   </h2>
                   <div className="mt-6">
                     <Faq items={post.faqs} />
@@ -321,43 +333,17 @@ export default async function BlogPostPage({
               )}
 
               {(relatedServices.length > 0 || relatedIndustries.length > 0) && (
-                <Reveal delay={0.1} className="mt-14 grid gap-10 border-t border-line pt-10 sm:grid-cols-2">
-                  {relatedServices.length > 0 && (
-                    <div>
-                      <Eyebrow accent="blue">Related services</Eyebrow>
-                      <ul className="mt-5 flex flex-col gap-4">
-                        {relatedServices.map((service) => (
-                          <li key={service.slug}>
-                            <Link
-                              href={`/services/${service.slug}`}
-                              className="group flex items-center justify-between gap-4 text-[1.05rem] font-medium text-blue transition-colors duration-300 hover:text-blue-deep"
-                            >
-                              <span>{service.name}</span>
-                              <ArrowUpRight className="h-4 w-4 shrink-0 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                  {relatedIndustries.length > 0 && (
-                    <div>
-                      <Eyebrow accent="orange">Relevant industries</Eyebrow>
-                      <ul className="mt-5 flex flex-col gap-4">
-                        {relatedIndustries.map((industry) => (
-                          <li key={industry.slug}>
-                            <Link
-                              href={`/industries/${industry.slug}`}
-                              className="group flex items-center justify-between gap-4 text-[1.05rem] font-medium text-orange transition-colors duration-300 hover:text-orange-deep"
-                            >
-                              <span>{industry.name}</span>
-                              <ArrowUpRight className="h-4 w-4 shrink-0 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
+                <Reveal delay={0.1} className="mt-16 border-t border-ink/10 pt-12">
+                  <Eyebrow accent="blue">Where this applies</Eyebrow>
+                  <h2 className="mt-4 text-balance font-serif-display text-[2rem] leading-tight sm:text-[2.4rem]">
+                    Related services <span className="text-orange">&amp; industries.</span>
+                  </h2>
+                  <div className="mt-8">
+                    <ArticleRelated
+                      services={relatedServices.map((s) => ({ slug: s.slug, name: s.name, summary: s.summary }))}
+                      industries={relatedIndustries.map((i) => ({ slug: i.slug, name: i.name, shortDescription: i.shortDescription }))}
+                    />
+                  </div>
                 </Reveal>
               )}
             </div>
@@ -377,10 +363,13 @@ export default async function BlogPostPage({
       />
 
       {relatedPosts.length > 0 && (
-        <section className="py-16 sm:py-20">
+        <section className="bg-white py-16 sm:py-24">
           <Container>
             <Eyebrow accent="orange">Keep exploring</Eyebrow>
-            <div className="mt-8 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+            <h2 className="mt-4 text-balance font-serif-display text-[2.3rem] leading-tight sm:text-[3rem]">
+              More from <span className="text-orange">{post.category}.</span>
+            </h2>
+            <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {relatedPosts.map((p) => (
                 <BlogCard key={p.slug} post={p} />
               ))}

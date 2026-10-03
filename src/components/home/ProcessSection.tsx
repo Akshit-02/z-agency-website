@@ -43,7 +43,7 @@ export function ProcessSection() {
   const [active, setActive] = useState(0);
 
   return (
-    <section className="border-t border-line bg-[#f3f2ee] py-24 sm:py-32">
+    <section className="border-t border-line bg-white py-24 sm:py-32">
       <Container>
         <div className="mb-14 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>

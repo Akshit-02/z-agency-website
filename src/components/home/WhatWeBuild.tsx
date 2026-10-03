@@ -186,7 +186,7 @@ const items: Item[] = [
 const ART_W = 368;
 const ART_H = 150;
 
-function ScaledArt({
+export function ScaledArt({
   children,
   max = 1.15,
 }: {

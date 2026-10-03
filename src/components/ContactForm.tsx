@@ -9,10 +9,10 @@ import { site } from "@/lib/site";
 import { contactSchema, contactNeeds, contactBudgets, type ContactValues } from "@/lib/validations";
 
 const inputBase =
-  "w-full rounded-xl border bg-transparent px-4 py-3.5 text-[0.98rem] text-ink outline-none transition-colors placeholder:text-ink-soft/60 focus:border-blue";
+  "w-full rounded-xl border bg-white px-4 py-3.5 text-[0.96rem] text-ink outline-none transition-all duration-300 placeholder:text-ink/30 focus:border-ink/50 focus:shadow-[0_0_0_4px_rgba(37,99,235,0.08)]";
 
 function inputClass(hasError: boolean) {
-  return `${inputBase} ${hasError ? "border-red-400" : "border-line-strong"}`;
+  return `${inputBase} ${hasError ? "border-red-400" : "border-ink/10 hover:border-ink/25"}`;
 }
 
 function Field({
@@ -32,7 +32,7 @@ function Field({
 }) {
   return (
     <div className={`flex flex-col gap-2 ${className}`}>
-      <label htmlFor={htmlFor} className="text-[0.85rem] font-medium text-ink-soft">
+      <label htmlFor={htmlFor} className="text-[0.78rem] font-medium uppercase tracking-[0.1em] text-ink/50">
         {label}
         {required && "*"}
       </label>
@@ -93,16 +93,17 @@ export function ContactForm() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         role="status"
-        className="flex flex-col items-start gap-4 rounded-2xl border border-line-strong bg-[#f3f2ee] p-10"
+        className="relative flex flex-col items-start gap-4 overflow-hidden rounded-[24px] bg-ink p-10 text-white"
       >
-        <CheckCircle2 className="h-9 w-9 text-blue" />
-        <h3 className="font-display text-[1.4rem] font-medium tracking-tight">
+        <div aria-hidden className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-orange-600/30 blur-[70px]" />
+        <CheckCircle2 className="relative h-10 w-10 text-[#4ade80]" />
+        <h3 className="relative font-serif-display text-[2rem] leading-tight">
           Thanks — we&apos;ve got it.
         </h3>
-        <p className="max-w-[45ch] text-pretty text-[1rem] leading-relaxed text-ink-soft">
+        <p className="relative max-w-[45ch] text-pretty text-[1rem] leading-relaxed text-white/65">
           We typically reply within one business day. If it&apos;s urgent, email us
           directly at{" "}
-          <a href={`mailto:${site.email}`} className="font-medium text-blue underline">
+          <a href={`mailto:${site.email}`} className="font-medium text-white underline decoration-white/40 underline-offset-4">
             {site.email}
           </a>
           .
@@ -110,7 +111,7 @@ export function ContactForm() {
         <button
           type="button"
           onClick={() => reset({ need: contactNeeds[0], budget: contactBudgets[contactBudgets.length - 1] })}
-          className="mt-2 text-[0.9rem] font-medium text-ink underline underline-offset-4"
+          className="relative mt-2 rounded-full bg-white px-5 py-2.5 text-[0.85rem] font-medium text-ink"
         >
           Send another message
         </button>
@@ -227,7 +228,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="group inline-flex w-fit items-center justify-center gap-2 rounded-full bg-orange px-7 py-4 text-[0.95rem] font-medium text-white transition-colors duration-300 hover:bg-orange-deep disabled:opacity-60"
+        className="group relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-ink px-7 py-4 text-[0.95rem] font-medium text-white transition-colors duration-300 hover:bg-ink/85 disabled:opacity-60 sm:w-fit"
       >
         {isSubmitting ? "Sending…" : "Start the conversation"}
         <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

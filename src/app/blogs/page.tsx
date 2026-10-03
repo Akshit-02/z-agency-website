@@ -1,15 +1,9 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
-import { PageHero } from "@/components/PageHero";
-import { Container } from "@/components/Container";
-import { Reveal } from "@/components/ScrollReveal";
-import { Eyebrow } from "@/components/SectionHeading";
 import { BlogExplorer } from "@/components/BlogExplorer";
-import { BlogBanner } from "@/components/BlogBanner";
+import { BlogHero, BlogSection, FeaturedPost, TopicGrid, type PostLite } from "@/components/blog/BlogKit";
 import { StructuredData } from "@/components/StructuredData";
-import { posts, toSummary } from "@/lib/blog-data";
+import { posts, toSummary, type BlogPost } from "@/lib/blog-data";
 import { blogCategories } from "@/lib/blog-categories";
 import { WEBSITE_ID, ORG_ID } from "@/lib/seo";
 import { site } from "@/lib/site";
@@ -20,6 +14,15 @@ export const metadata: Metadata = {
     "Practical writing from ZSpace Labs on website performance, mobile app development, AI automation, design systems, Shopify and conversion optimization.",
   alternates: { canonical: "/blogs" },
 };
+
+const lite = (p: BlogPost): PostLite => ({
+  slug: p.slug,
+  title: p.title,
+  excerpt: p.excerpt,
+  category: p.category,
+  readingTime: p.readingTime,
+  banner: p.banner,
+});
 
 export default function BlogsPage() {
   const [featured, ...rest] = posts;
@@ -36,86 +39,35 @@ export default function BlogsPage() {
           publisher: { "@id": ORG_ID },
         }}
       />
-      <PageHero
+      <BlogHero
         eyebrow="ZSpace Labs / Insights"
-        title={
-          <>
-            Ideas, insights &amp;{" "}
-            <span className="text-blue">technology</span> that ships.
-          </>
-        }
+        title={[<>Ideas, insights &amp;</>, <span key="t" className="italic text-orange">technology that ships.</span>]}
         description="Practical writing on web development, AI automation, design systems, commerce and conversion — grounded in how we actually build, not trend chasing."
+        stack={posts.slice(0, 3).map(lite)}
+        stats={[
+          { value: String(posts.length), label: "Articles" },
+          { value: String(blogCategories.length), label: "Topic hubs" },
+        ]}
       />
 
-      <section className="border-b border-line py-16 sm:py-20">
-        <Container>
-          <Reveal>
-            <Link
-              href={`/blogs/${featured.slug}`}
-              className="group grid gap-8 lg:grid-cols-[1.1fr_1fr] lg:items-center lg:gap-16"
-            >
-              <div className="order-2 aspect-[4/3] w-full overflow-hidden rounded-2xl border border-line lg:order-1 lg:aspect-[16/12]">
-                <div className="h-full w-full transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.03]">
-                  <BlogBanner variant={featured.banner} />
-                </div>
-              </div>
-              <div className="order-1 lg:order-2">
-                <span className="text-[0.8rem] font-medium uppercase tracking-[0.14em] text-orange">
-                  Featured insight
-                </span>
-                <div className="mt-4 text-[0.85rem]">
-                  <span className="text-blue">{featured.category}</span>
-                  <span className="mx-2 text-line-strong">/</span>
-                  <span className="text-ink-soft">{featured.readingTime}</span>
-                </div>
-                <h2 className="mt-4 text-balance font-serif-display text-[1.7rem] leading-[1.15] tracking-tight sm:text-[2.2rem]">
-                  {featured.title}
-                </h2>
-                <p className="mt-4 max-w-2xl text-pretty text-[1.05rem] leading-relaxed text-ink-soft">
-                  {featured.excerpt}
-                </p>
-                <span className="mt-5 inline-flex items-center gap-2 text-[0.95rem] font-medium text-blue transition-colors duration-300 group-hover:text-blue-deep">
-                  Read the article
-                  <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                </span>
-              </div>
-            </Link>
-          </Reveal>
-        </Container>
-      </section>
+      <FeaturedPost post={lite(featured)} />
 
-      <section className="border-b border-line py-16 sm:py-20">
-        <Container>
-          <Eyebrow accent="blue">Browse by topic</Eyebrow>
-          <ul className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
-            {blogCategories.map((category) => (
-              <li key={category.slug} className="border-t border-line-strong pt-4">
-                <Link
-                  href={`/blogs/category/${category.slug}`}
-                  className="group flex items-center justify-between gap-4 font-display text-[1.15rem] font-medium tracking-tight transition-colors duration-300 hover:text-blue"
-                >
-                  <span>{category.title}</span>
-                  <ArrowUpRight className="h-4 w-4 shrink-0 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                </Link>
-                <p className="mt-1.5 text-[0.9rem] text-ink-soft">
-                  {posts.filter((post) => post.category === category.name).length} articles
-                </p>
-              </li>
-            ))}
-          </ul>
-        </Container>
-      </section>
+      <TopicGrid
+        topics={blogCategories.map((c) => ({
+          slug: c.slug,
+          name: c.name,
+          title: c.title,
+          description: c.description,
+          count: posts.filter((post) => post.category === c.name).length,
+          serviceSlug: c.serviceSlug,
+        }))}
+      />
 
-      <section className="py-16 sm:py-20">
-        <Container>
-          <Eyebrow accent="blue">All articles</Eyebrow>
-          <div className="mt-8">
-            <Suspense fallback={null}>
-              <BlogExplorer posts={rest.map(toSummary)} />
-            </Suspense>
-          </div>
-        </Container>
-      </section>
+      <BlogSection id="all-articles" eyebrow="All articles" title={[<>Everything</>, <span key="w" className="italic text-orange">we&rsquo;ve written.</span>]}>
+        <Suspense fallback={null}>
+          <BlogExplorer posts={rest.map(toSummary)} />
+        </Suspense>
+      </BlogSection>
     </>
   );
 }

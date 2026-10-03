@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
-import { PageHero } from "@/components/PageHero";
-import { Container } from "@/components/Container";
-import { Reveal } from "@/components/ScrollReveal";
-import { Eyebrow } from "@/components/SectionHeading";
+import {
+  IndustriesHero,
+  IndustryGrid,
+  IndustryLens,
+  IndustryRibbon,
+  type IndustryCardData,
+  type IndustryChip,
+} from "@/components/industries/IndustriesSections";
 import { CTASection } from "@/components/CTASection";
 import { StructuredData } from "@/components/StructuredData";
-import { industries, categoryOrder, categoryCopy } from "@/lib/industries-data";
+import { industries, categoryOrder } from "@/lib/industries-data";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -16,6 +18,27 @@ export const metadata: Metadata = {
     "How ZSpace Labs builds websites, apps, Shopify stores and AI automation for real estate, D2C, fintech, healthcare, SaaS, manufacturing and more.",
   alternates: { canonical: "/industries" },
 };
+
+const featured: IndustryCardData[] = categoryOrder.flatMap((category) =>
+  industries
+    .filter((i) => i.category === category && i.hasDetailPage)
+    .map((i) => ({
+      slug: i.slug,
+      name: i.name,
+      category: i.category,
+      shortDescription: i.shortDescription,
+      accent: i.accent,
+      visual: i.visual,
+      challenges: i.challenges ?? [],
+      solutions: i.solutions ?? [],
+    }))
+);
+
+const others: IndustryChip[] = industries
+  .filter((i) => !i.hasDetailPage)
+  .map((i) => ({ slug: i.slug, name: i.name, category: i.category }));
+
+const categories = categoryOrder.filter((c) => featured.some((i) => i.category === c));
 
 export default function IndustriesPage() {
   return (
@@ -30,96 +53,10 @@ export default function IndustriesPage() {
           ],
         }}
       />
-      <PageHero
-        eyebrow="Industries"
-        title={
-          <>
-            Technology for every kind of{" "}
-            <span className="text-blue">ambitious business</span>.
-          </>
-        }
-        description="Whatever industry you're in, the underlying question is the same: what does this business actually need to move forward? Here's how we've answered it across the markets we work in most."
-      />
-
-      {categoryOrder.map((category, categoryIndex) => {
-        const withPages = industries.filter(
-          (industry) => industry.category === category && industry.hasDetailPage
-        );
-        const withoutPages = industries.filter(
-          (industry) => industry.category === category && !industry.hasDetailPage
-        );
-
-        return (
-          <section
-            key={category}
-            className="border-b border-line py-16 sm:py-20"
-          >
-            <Container>
-              <Reveal>
-                <Eyebrow accent={categoryIndex % 2 === 0 ? "blue" : "orange"}>
-                  {category}
-                </Eyebrow>
-              </Reveal>
-              <Reveal delay={0.05}>
-                <p className="mt-3 max-w-[60ch] text-pretty text-[1rem] leading-relaxed text-ink-soft">
-                  {categoryCopy[category]}
-                </p>
-              </Reveal>
-
-              {withPages.length > 0 && (
-                <ul className="mt-10 flex flex-col">
-                  {withPages.map((industry, i) => (
-                    <Reveal key={industry.slug} delay={0.04 * i}>
-                      <li className="group border-t border-line last:border-b">
-                        <Link
-                          href={`/industries/${industry.slug}`}
-                          className="grid gap-3 py-7 transition-colors sm:grid-cols-[1.1fr_1.6fr_auto] sm:items-center sm:gap-8"
-                        >
-                          <h2 className="font-display text-[1.3rem] font-medium tracking-tight sm:text-[1.5rem]">
-                            {industry.name}
-                          </h2>
-                          <p className="max-w-[46ch] text-pretty text-[0.96rem] leading-relaxed text-ink-soft">
-                            {industry.shortDescription}
-                          </p>
-                          <span
-                            className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-line-strong text-ink transition-all duration-300 group-hover:text-white ${
-                              industry.accent === "blue"
-                                ? "group-hover:border-blue group-hover:bg-blue"
-                                : "group-hover:border-orange group-hover:bg-orange"
-                            }`}
-                          >
-                            <ArrowUpRight className="h-4 w-4" />
-                          </span>
-                        </Link>
-                      </li>
-                    </Reveal>
-                  ))}
-                </ul>
-              )}
-
-              {withoutPages.length > 0 && (
-                <Reveal delay={0.1} className="mt-8">
-                  <p className="text-[0.85rem] font-medium uppercase tracking-[0.08em] text-ink-soft">
-                    Also active in
-                  </p>
-                  <div className="mt-3 flex flex-wrap gap-x-2 gap-y-2">
-                    {withoutPages.map((industry) => (
-                      <span
-                        key={industry.slug}
-                        className="rounded-full border border-line px-3.5 py-1.5 text-[0.85rem] text-ink-soft"
-                        title={industry.shortDescription}
-                      >
-                        {industry.name}
-                      </span>
-                    ))}
-                  </div>
-                </Reveal>
-              )}
-            </Container>
-          </section>
-        );
-      })}
-
+      <IndustriesHero />
+      <IndustryRibbon names={industries.map((i) => i.name)} />
+      <IndustryGrid industries={featured} others={others} categories={categories} />
+      <IndustryLens industries={featured.filter((i) => i.challenges.length && i.solutions.length)} />
       <CTASection
         title={
           <>

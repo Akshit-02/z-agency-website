@@ -58,7 +58,7 @@ const traits = [
 const ART_W = 220;
 const ART_H = 150;
 
-function ScaledArt({ children }: { children: React.ReactNode }) {
+export function ScaledArt({ children }: { children: React.ReactNode }) {
   const ref = useRef<HTMLDivElement>(null);
   const [scale, setScale] = useState(1);
 
