@@ -23,8 +23,8 @@ import {
   riseProps,
   serif,
 } from "@/components/ui/Aesthetic";
-import { ScaledArt } from "@/components/home/WhyZspace";
-import { CycleArt, LayersArt, SimpleArt, ThinkArt } from "@/components/home/WhyZspaceArt";
+import { BlogScene } from "@/components/blog/BlogScene";
+import type { BlogSceneData } from "@/lib/blog-scenes";
 
 /* ------------------------------------------------------------------ hero */
 
@@ -225,7 +225,7 @@ export function AboutHero() {
           </motion.div>
         </div>
 
-        <AboutOrbit on={on} still={still} />
+        <AboutStack on={on} still={still} />
       </div>
     </section>
   );
@@ -311,33 +311,20 @@ export function IdeaToReal() {
             path and building something that actually works.
           </motion.p>
 
-          {/* a path from scribble to straight line */}
-          <svg viewBox="0 0 420 200" className="mt-10 hidden w-full max-w-[420px] overflow-visible lg:mt-auto lg:block" fill="none" aria-hidden>
-            <motion.path
-              id="idea-path"
-              d="M10 170 C 60 120, 40 60, 110 80 S 170 180, 220 110 S 300 40, 410 30"
-              stroke="url(#idea-grad)"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              initial={still ? false : { pathLength: 0 }}
-              animate={headOn ? { pathLength: 1 } : {}}
-              transition={{ duration: 2.2, ease: EASE, delay: 0.6 }}
-            />
-            <defs>
-              <linearGradient id="idea-grad" x1="0" x2="1">
-                <stop offset="0" stopColor="#ff6b35" stopOpacity="0.2" />
-                <stop offset="1" stopColor="#3b82f6" />
-              </linearGradient>
-            </defs>
-            {!still && (
-              <circle r="4.5" fill="#3b82f6" style={{ filter: "drop-shadow(0 0 6px #3b82f6)" }}>
-                <animateMotion dur="6s" repeatCount="indefinite" begin="2.6s">
-                  <mpath href="#idea-path" />
-                </animateMotion>
-              </circle>
-            )}
-            <circle cx="410" cy="30" r="5" fill="#3b82f6" />
-          </svg>
+          {/* the real plan, not a scribble */}
+          <motion.div
+            className="mt-10 hidden max-w-[460px] lg:mt-auto lg:block"
+            initial={still ? false : { opacity: 0, y: 40, rotateX: 25 }}
+            animate={headOn ? { opacity: 1, y: 0, rotateX: 0 } : {}}
+            transition={{ duration: 1, ease: EASE, delay: 0.5 }}
+            style={{ transformPerspective: 1000 }}
+          >
+            <div className="overflow-hidden rounded-[18px] bg-white/[0.06] p-1.5 ring-1 ring-white/10">
+              <div className="relative aspect-[16/10] overflow-hidden rounded-[13px]">
+                <BlogScene scene={ROADMAP} />
+              </div>
+            </div>
+          </motion.div>
         </div>
 
         <div ref={listRef} className="relative pl-10">
@@ -460,25 +447,21 @@ const beliefs = [
   {
     title: "Think before building",
     body: "We don’t rush into development just because there’s a deadline. Every decision traces back to a problem worth solving.",
-    Art: ThinkArt,
     glow: "#ff6b35",
   },
   {
     title: "Make complexity feel simple",
     body: "Technology can be complicated. It shouldn’t feel complicated for the person using it.",
-    Art: SimpleArt,
     glow: "#3b82f6",
   },
   {
     title: "Build for what’s next",
     body: "A first version should solve today’s problem without creating tomorrow’s.",
-    Art: LayersArt,
     glow: "#ff6b35",
   },
   {
     title: "Keep improving",
     body: "Launch isn’t the end. Real users reveal things that planning can’t.",
-    Art: CycleArt,
     glow: "#3b82f6",
   },
 ];
@@ -486,7 +469,6 @@ const beliefs = [
 function BeliefCard({ b, i, still }: { b: (typeof beliefs)[number]; i: number; still: boolean }) {
   const ref = useRef<HTMLDivElement>(null);
   const on = useInView(ref, { once: true, amount: 0.3 });
-  const Art = b.Art;
 
   return (
     <motion.div
@@ -508,10 +490,8 @@ function BeliefCard({ b, i, still }: { b: (typeof beliefs)[number]; i: number; s
           <p className="mt-3 text-[0.86rem] leading-relaxed text-ink/55">{b.body}</p>
           <div className="mt-auto pt-6">
             <div className="rounded-[16px] bg-ink/[0.03] p-1.5 ring-1 ring-ink/[0.06] transition-transform duration-700 ease-out group-hover/tilt:-translate-y-1">
-              <div className="flex justify-center rounded-[12px] bg-gradient-to-br from-[#f5f5f3] to-white py-2">
-                <ScaledArt>
-                  <Art on={on} still={still} />
-                </ScaledArt>
+              <div className="relative aspect-[16/10] overflow-hidden rounded-[12px]">
+                <BlogScene scene={BELIEF_SCENES[i]} />
               </div>
             </div>
           </div>
@@ -565,110 +545,6 @@ export function Beliefs() {
 
 /* ------------------------------------------------------------ capabilities */
 
-const skills = ["Strategy", "UX", "Design", "Development", "Automation", "CRO", "Optimisation"];
-const SPIN = 90;
-
-function SkillMap({ on, still }: { on: boolean; still: boolean }) {
-  const R = 38;
-  const nodes = skills.map((label, i) => {
-    const a = (i / skills.length) * Math.PI * 2 - Math.PI / 2;
-    return { label, x: 50 + R * Math.cos(a), y: 50 + R * Math.sin(a), i };
-  });
-
-  return (
-    <div aria-hidden className="relative mx-auto aspect-square w-full max-w-[500px]" style={{ perspective: 1200 }}>
-      <motion.div
-        className="absolute inset-0"
-        initial={still ? false : { opacity: 0, rotateX: 50, scale: 0.85 }}
-        animate={on ? { opacity: 1, rotateX: 0, scale: 1 } : {}}
-        transition={{ duration: 1.3, ease: EASE }}
-      >
-        <div className="absolute left-1/2 top-1/2 h-[55%] w-[55%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue/20 blur-[70px]" />
-
-        <motion.div
-          className="absolute inset-0"
-          animate={still ? undefined : { rotate: 360 }}
-          transition={{ duration: SPIN, repeat: Infinity, ease: "linear" }}
-        >
-          <svg viewBox="0 0 100 100" className="absolute inset-0 h-full w-full" fill="none">
-            <circle cx="50" cy="50" r={R} stroke="#ffffff" strokeOpacity="0.08" strokeWidth="0.3" strokeDasharray="1 1.5" />
-            <circle cx="50" cy="50" r={R * 0.62} stroke="#ffffff" strokeOpacity="0.06" strokeWidth="0.3" />
-            {nodes.map((n) => (
-              <motion.line
-                key={n.label}
-                x1="50"
-                y1="50"
-                x2={n.x}
-                y2={n.y}
-                stroke={n.i % 2 ? "#3b82f6" : "#ff6b35"}
-                strokeOpacity="0.35"
-                strokeWidth="0.3"
-                initial={still ? false : { pathLength: 0 }}
-                animate={on ? { pathLength: 1 } : {}}
-                transition={{ duration: 0.9, ease: EASE, delay: 0.5 + n.i * 0.08 }}
-              />
-            ))}
-            {!still &&
-              nodes.map((n) => (
-                <motion.circle
-                  key={`p-${n.label}`}
-                  r="0.8"
-                  fill={n.i % 2 ? "#3b82f6" : "#ff6b35"}
-                  initial={{ cx: 50, cy: 50, opacity: 0 }}
-                  animate={on ? { cx: [50, n.x], cy: [50, n.y], opacity: [0, 1, 0] } : {}}
-                  transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut", delay: 1.4 + n.i * 0.45, repeatDelay: 1.2 }}
-                />
-              ))}
-          </svg>
-
-          {nodes.map((n) => (
-            <div
-              key={n.label}
-              className="absolute -translate-x-1/2 -translate-y-1/2"
-              style={{ left: `${n.x}%`, top: `${n.y}%` }}
-            >
-              <motion.div
-                animate={still ? undefined : { rotate: -360 }}
-                transition={{ duration: SPIN, repeat: Infinity, ease: "linear" }}
-              >
-                <motion.span
-                  className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-white/12 bg-[#16181c]/90 px-3 py-1.5 text-[0.72rem] text-white/90 shadow-[0_14px_30px_-12px_rgba(0,0,0,0.7)] backdrop-blur sm:px-4 sm:py-2 sm:text-[0.82rem]"
-                  initial={still ? false : { opacity: 0, scale: 0.6 }}
-                  animate={on ? { opacity: 1, scale: 1 } : {}}
-                  transition={{ type: "spring", stiffness: 200, damping: 16, delay: 0.8 + n.i * 0.08 }}
-                >
-                  <span className={`h-1.5 w-1.5 rounded-full ${n.i % 2 ? "bg-blue-bright" : "bg-orange-bright"}`} />
-                  {n.label}
-                </motion.span>
-              </motion.div>
-            </div>
-          ))}
-        </motion.div>
-
-        {/* the problem at the centre */}
-        <div className="absolute left-1/2 top-1/2 flex h-[30%] w-[30%] -translate-x-1/2 -translate-y-1/2 items-center justify-center">
-          {!still &&
-            [0, 1.5].map((delay) => (
-              <motion.span
-                key={delay}
-                className="absolute inset-0 rounded-full border border-white/20"
-                animate={{ scale: [1, 1.6], opacity: [0.5, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeOut", delay }}
-              />
-            ))}
-          <span className="relative flex h-full w-full items-center justify-center rounded-full border border-white/15 bg-white/[0.06] text-center shadow-[inset_0_1px_0_rgba(255,255,255,0.1)] backdrop-blur-md">
-            <span className="text-[1rem] italic leading-tight text-white sm:text-[1.25rem]" style={serif}>
-              The
-              <br />
-              problem
-            </span>
-          </span>
-        </div>
-      </motion.div>
-    </div>
-  );
-}
-
 export function Capabilities() {
   const still = !!useReducedMotion();
   const ref = useRef<HTMLDivElement>(null);
@@ -706,7 +582,7 @@ export function Capabilities() {
           </motion.div>
         </div>
 
-        <SkillMap on={on} still={still} />
+        <ProjectBoard on={on} still={still} />
       </div>
     </DarkPanel>
   );
@@ -788,5 +664,253 @@ export function FeelsObvious() {
         </div>
       </div>
     </section>
+  );
+}
+
+/* ---------------------------------------------------- realistic graphics */
+
+const HERO_SCENES: BlogSceneData[] = [
+  { kind: "design", label: "Checkout redesign", items: ["Cart", "Shipping step", "Payment"], seed: 2 },
+  { kind: "landing", label: "Things worth using", items: ["Clear in seconds", "Fast on every device", "Built to grow"], seed: 4 },
+  { kind: "mobile", label: "Your week, sorted", items: ["Book in two taps", "Reminders that help", "Pay inside the app"], seed: 1 },
+];
+
+/** Real product screens fanned out in 3D; they lean toward the cursor and spread on scroll. */
+function AboutStack({ on, still }: { on: boolean; still: boolean }) {
+  const mx = useMotionValue(0.5);
+  const my = useMotionValue(0.5);
+  const spring = { stiffness: 80, damping: 16 };
+  const rotateX = useSpring(useTransform(my, [0, 1], still ? [8, 8] : [16, 0]), spring);
+  const rotateY = useSpring(useTransform(mx, [0, 1], still ? [-14, -14] : [-24, -4]), spring);
+  const { scrollY } = useScroll();
+  const spread = useTransform(scrollY, [0, 500], still ? [1, 1] : [1, 1.6]);
+  const zBack = useTransform(spread, (s) => -80 * s);
+  const zFront = useTransform(spread, (s) => 80 * s);
+
+  function onMove(e: MouseEvent<HTMLDivElement>) {
+    const r = e.currentTarget.getBoundingClientRect();
+    mx.set((e.clientX - r.left) / r.width);
+    my.set((e.clientY - r.top) / r.height);
+  }
+
+  const layers = [
+    { cls: "left-0 top-[2%] w-[72%]", z: zBack, delay: 0.3 },
+    { cls: "left-[16%] top-[24%] w-[72%]", z: undefined, delay: 0.45 },
+    { cls: "right-0 bottom-[2%] w-[56%]", z: zFront, delay: 0.6 },
+  ];
+
+  return (
+    <div
+      aria-hidden
+      className="relative mx-auto h-[360px] w-full max-w-[540px] sm:h-[440px]"
+      onMouseMove={onMove}
+      onMouseLeave={() => {
+        mx.set(0.5);
+        my.set(0.5);
+      }}
+    >
+      <div className="absolute left-1/2 top-1/2 h-[70%] w-[70%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue/15 blur-[80px]" />
+      <motion.div className="absolute inset-0" style={{ rotateX, rotateY, transformPerspective: 1300, transformStyle: "preserve-3d" }}>
+        {layers.map((l, i) => (
+          <motion.div
+            key={i}
+            className={`absolute ${l.cls}`}
+            style={l.z ? { z: l.z } : undefined}
+            initial={still ? false : { opacity: 0, y: 60 }}
+            animate={on ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 1.1, ease: EASE, delay: l.delay }}
+          >
+            <div className="overflow-hidden rounded-2xl border border-white bg-white p-1 shadow-[0_40px_80px_-35px_rgba(11,12,14,0.45),0_0_0_1px_rgba(11,12,14,0.05)]">
+              <div className="relative aspect-[16/10] overflow-hidden rounded-[12px]">
+                <BlogScene scene={HERO_SCENES[i]} />
+              </div>
+            </div>
+          </motion.div>
+        ))}
+        {heroChips.map((c) => (
+          <motion.div
+            key={c.label}
+            className={`absolute ${c.className}`}
+            style={{ z: 110 }}
+            initial={still ? false : { opacity: 0, y: 14, scale: 0.9 }}
+            animate={on ? { opacity: 1, y: 0, scale: 1 } : {}}
+            transition={{ duration: 0.6, ease: EASE, delay: c.delay }}
+          >
+            <motion.span
+              className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-white px-4 py-2.5 text-[0.82rem] font-medium text-ink shadow-[0_18px_36px_-16px_rgba(11,12,14,0.3),0_0_0_1px_rgba(11,12,14,0.04)]"
+              animate={still ? undefined : { y: [0, -6, 0] }}
+              transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: c.delay }}
+            >
+              <span className="h-1.5 w-1.5 rounded-full bg-orange" />
+              {c.label}
+            </motion.span>
+          </motion.div>
+        ))}
+      </motion.div>
+    </div>
+  );
+}
+
+const ROADMAP: BlogSceneData = {
+  kind: "roadmap",
+  label: "From idea to launch",
+  items: ["Discovery and questions", "Design and prototype", "Build and test", "Launch and measure"],
+  seed: 3,
+};
+
+const BELIEF_SCENES: BlogSceneData[] = [
+  {
+    kind: "heatmap",
+    label: "Discovery: what's really going wrong",
+    items: ["Pricing is hard to find", "Form asks for too much", "Key pages hidden on mobile", "Product images load slowly"],
+    seed: 1,
+  },
+  { kind: "design", label: "Simplify account settings", items: ["Profile", "Notifications", "Billing"], seed: 6 },
+  { kind: "code", label: "Built to grow with you", items: ["Typed API routes", "Cached product data", "Tests on every change"], seed: 3 },
+  {
+    kind: "analytics",
+    label: "After launch: what changed",
+    items: ["Checkout completion", "Mobile sessions", "Support tickets", "Page speed"],
+    seed: 4,
+  },
+];
+
+type Task = { t: string; skill: string; who: string; p: number; live?: boolean };
+
+const BOARD: { col: string; tasks: Task[] }[] = [
+  {
+    col: "Strategy",
+    tasks: [
+      { t: "Define what success looks like", skill: "Strategy", who: "AK", p: 100 },
+      { t: "Map the customer journey", skill: "UX", who: "SR", p: 100 },
+    ],
+  },
+  {
+    col: "Design",
+    tasks: [
+      { t: "Wireframe the new checkout", skill: "UX", who: "SR", p: 100 },
+      { t: "Design system tokens", skill: "Design", who: "MJ", p: 70, live: true },
+    ],
+  },
+  {
+    col: "Engineering",
+    tasks: [
+      { t: "Payment integration", skill: "Development", who: "DV", p: 55, live: true },
+      { t: "Order sync to the ERP", skill: "Automation", who: "PN", p: 30 },
+    ],
+  },
+  {
+    col: "Growth",
+    tasks: [
+      { t: "Analytics and events", skill: "CRO", who: "AK", p: 20 },
+      { t: "A/B test the new flow", skill: "Optimisation", who: "MJ", p: 0 },
+    ],
+  },
+];
+
+const skillColor: Record<string, string> = {
+  Strategy: "#ea580c",
+  UX: "#2563eb",
+  Design: "#7c3aed",
+  Development: "#0f766e",
+  Automation: "#0284c7",
+  CRO: "#db2777",
+  Optimisation: "#ca8a04",
+};
+
+/** A realistic project board: one problem, every skill on it. */
+function ProjectBoard({ on, still }: { on: boolean; still: boolean }) {
+  return (
+    <motion.div
+      aria-hidden
+      className="relative"
+      initial={still ? false : { opacity: 0, rotateX: 40, y: 40, scale: 0.92 }}
+      animate={on ? { opacity: 1, rotateX: 0, y: 0, scale: 1 } : {}}
+      transition={{ duration: 1.2, ease: EASE }}
+      style={{ transformPerspective: 1200 }}
+    >
+      <div className="overflow-hidden rounded-2xl bg-white text-ink shadow-[0_50px_100px_-40px_rgba(0,0,0,0.8)]">
+        <div className="flex items-center justify-between border-b border-ink/[0.06] px-4 py-3">
+          <div>
+            <p className="text-[0.62rem] uppercase tracking-[0.14em] text-ink/40">Project</p>
+            <p className="text-[0.95rem] leading-tight" style={serif}>
+              Checkout that converts
+            </p>
+          </div>
+          <div className="flex items-center gap-3">
+            <div className="hidden items-center gap-2 sm:flex">
+              <div className="h-1.5 w-20 overflow-hidden rounded-full bg-ink/[0.07]">
+                <motion.div
+                  className="h-full rounded-full bg-[#16a34a]"
+                  initial={still ? false : { width: 0 }}
+                  animate={on ? { width: "58%" } : {}}
+                  transition={{ duration: 1.2, delay: 0.6 }}
+                />
+              </div>
+              <span className="text-[0.62rem] text-ink/50">58%</span>
+            </div>
+            <div className="flex -space-x-1.5">
+              {["AK", "SR", "MJ", "DV"].map((w, i) => (
+                <span
+                  key={w}
+                  className="flex h-6 w-6 items-center justify-center rounded-full border-2 border-white text-[0.5rem] font-bold text-white"
+                  style={{ background: ["#ea580c", "#2563eb", "#7c3aed", "#0f766e"][i] }}
+                >
+                  {w}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="mx-4 mt-3 flex items-center gap-2 rounded-lg bg-[#fef2f2] px-3 py-2 text-[0.68rem] text-[#b91c1c]">
+          <span className="h-1.5 w-1.5 rounded-full bg-[#ef4444]" />
+          <span className="font-semibold">The problem:</span> customers drop off at checkout
+        </div>
+
+        <div className="grid grid-cols-2 gap-2 p-4 sm:grid-cols-4">
+          {BOARD.map((c, ci) => (
+            <div key={c.col} className="rounded-xl bg-ink/[0.03] p-2">
+              <p className="flex items-center justify-between px-1 text-[0.62rem] font-semibold text-ink/60">
+                {c.col}
+                <span className="rounded-full bg-white px-1.5 text-ink/40">{c.tasks.length}</span>
+              </p>
+              {c.tasks.map((t, ti) => (
+                <motion.div
+                  key={t.t}
+                  className="mt-2 rounded-lg bg-white p-2 shadow-[0_1px_2px_rgba(0,0,0,0.06)]"
+                  initial={still ? false : { opacity: 0, y: 12 }}
+                  animate={on ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.5, ease: EASE, delay: 0.4 + ci * 0.12 + ti * 0.08 }}
+                >
+                  <span
+                    className="inline-block rounded px-1.5 py-0.5 text-[0.52rem] font-semibold text-white"
+                    style={{ background: skillColor[t.skill] }}
+                  >
+                    {t.skill}
+                  </span>
+                  <p className="mt-1.5 text-[0.66rem] font-medium leading-snug text-ink">{t.t}</p>
+                  <div className="mt-2 flex items-center justify-between">
+                    <div className="h-1 w-12 overflow-hidden rounded-full bg-ink/[0.07]">
+                      <div className={`h-full rounded-full ${t.p === 100 ? "bg-[#16a34a]" : "bg-ink/40"}`} style={{ width: `${t.p}%` }} />
+                    </div>
+                    <span className="relative flex h-4 w-4 items-center justify-center rounded-full bg-ink/80 text-[0.42rem] font-bold text-white">
+                      {t.who}
+                      {t.live && !still && (
+                        <motion.span
+                          className="absolute -right-0.5 -top-0.5 h-1.5 w-1.5 rounded-full bg-[#22c55e]"
+                          animate={{ scale: [1, 1.7, 1] }}
+                          transition={{ duration: 1.4, repeat: Infinity }}
+                        />
+                      )}
+                    </span>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+    </motion.div>
   );
 }
