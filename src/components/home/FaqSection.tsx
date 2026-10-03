@@ -5,7 +5,15 @@ import Link from "next/link";
 import { AnimatePresence, motion, useInView, useReducedMotion } from "motion/react";
 import { Plus } from "lucide-react";
 import { Atmosphere } from "@/components/ui/Aesthetic";
-import { FaqIllustration } from "./FaqIllustration";
+import { BlogScene } from "@/components/blog/BlogScene";
+import type { BlogSceneData } from "@/lib/blog-scenes";
+
+const FAQ_CHAT: BlogSceneData = {
+  kind: "chat",
+  label: "How much does a project cost, and how long does it take?",
+  items: ["Tell us the scope you have in mind", "We share an honest range", "You decide, with no pressure"],
+  seed: 3,
+};
 import { homeFaqs } from "@/lib/home-faqs";
 
 const EASE = [0.25, 1, 0.5, 1] as const;
@@ -149,9 +157,13 @@ export function FaqSection() {
             A few useful answers before we start building.
           </motion.p>
 
-          <div className="hidden lg:block">
-            <FaqIllustration on={headOn} still={still} />
-          </div>
+          <motion.div className="mt-10 hidden max-w-[420px] lg:block" {...rise(0.5)}>
+            <div className="overflow-hidden rounded-[20px] bg-white p-1.5 shadow-[0_40px_80px_-40px_rgba(11,12,14,0.4),0_0_0_1px_rgba(11,12,14,0.06)]">
+              <div className="relative aspect-[16/11] overflow-hidden rounded-[15px]">
+                <BlogScene scene={FAQ_CHAT} />
+              </div>
+            </div>
+          </motion.div>
         </div>
 
         <div ref={listRef} className="flex flex-col gap-2.5">

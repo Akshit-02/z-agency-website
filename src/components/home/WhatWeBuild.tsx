@@ -28,6 +28,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { DarkPanel, TiltCard } from "@/components/ui/Aesthetic";
+import { ServiceScene } from "@/components/services/ServiceScene";
 import {
   AppsArt,
   AutomationArt,
@@ -446,9 +447,9 @@ function ServiceCard({
             {/* illustration, shown as a light "screen" inside the dark card */}
             <div className={`relative ${item.wide ? "lg:order-2" : "order-1"}`}>
               <div className="rounded-[18px] bg-white/[0.06] p-1.5 ring-1 ring-white/10 transition-transform duration-700 ease-out group-hover:-translate-y-1.5 group-hover:scale-[1.02]">
-                <ScaledArt max={item.wide ? 1.6 : 1.15}>
-                  <item.Art on={on} still={still} />
-                </ScaledArt>
+                <div className="overflow-hidden rounded-[13px]">
+                  <ServiceScene slug={item.href.split("/").pop() ?? ""} />
+                </div>
               </div>
             </div>
           </div>

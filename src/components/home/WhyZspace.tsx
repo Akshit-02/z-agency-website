@@ -13,7 +13,25 @@ import {
   TrendingUp,
 } from "lucide-react";
 import { DarkPanel, EASE, Eyebrow, MaskLines, TiltCard, riseProps, serif } from "@/components/ui/Aesthetic";
-import { CycleArt, LayersArt, SimpleArt, ThinkArt } from "./WhyZspaceArt";
+import { BlogScene } from "@/components/blog/BlogScene";
+import type { BlogSceneData } from "@/lib/blog-scenes";
+
+const WHY_SCENES: BlogSceneData[] = [
+  {
+    kind: "heatmap",
+    label: "Discovery: where it breaks",
+    items: ["Visitors miss the main offer", "Checkout asks for too much", "Slow on mobile data", "Enquiries go unanswered"],
+    seed: 5,
+  },
+  { kind: "design", label: "Simplify the booking flow", items: ["Search", "Choose a slot", "Confirm"], seed: 2 },
+  { kind: "code", label: "Ready for what comes next", items: ["Typed data models", "Reusable components", "Automated tests"], seed: 7 },
+  {
+    kind: "analytics",
+    label: "Month three: still improving",
+    items: ["Conversion rate", "Page speed", "Repeat customers", "Support tickets"],
+    seed: 9,
+  },
+];
 
 
 const columns = [
@@ -21,25 +39,21 @@ const columns = [
     n: "01",
     title: "Think before we build.",
     body: "We start with the business problem, not a technology checklist.",
-    Art: ThinkArt,
   },
   {
     n: "02",
     title: "Make complexity feel simple.",
     body: "From UX to automation, we turn complicated requirements into clear experiences.",
-    Art: SimpleArt,
   },
   {
     n: "03",
     title: "Build with tomorrow in mind.",
     body: "The first version matters. So does what happens when your business grows.",
-    Art: LayersArt,
   },
   {
     n: "04",
     title: "Stay beyond launch.",
     body: "We can keep improving, optimising and building as your needs change.",
-    Art: CycleArt,
   },
 ];
 
@@ -88,7 +102,6 @@ export function ScaledArt({ children }: { children: React.ReactNode }) {
 function Column({ col, i, still }: { col: (typeof columns)[number]; i: number; still: boolean }) {
   const ref = useRef<HTMLDivElement>(null);
   const on = useInView(ref, { once: true, amount: 0.3 });
-  const Art = col.Art;
 
   return (
     <motion.div
@@ -111,10 +124,8 @@ function Column({ col, i, still }: { col: (typeof columns)[number]; i: number; s
           <p className="mt-3 text-[0.85rem] leading-relaxed text-white/55">{col.body}</p>
           <div className="mt-auto pt-6">
             <div className="rounded-[16px] bg-white/[0.06] p-1.5 ring-1 ring-white/10 transition-transform duration-700 ease-out group-hover/tilt:-translate-y-1">
-              <div className="flex justify-center rounded-[12px] bg-gradient-to-br from-[#f3f3f1] to-[#fafaf8] py-2">
-                <ScaledArt>
-                  <Art on={on} still={still} />
-                </ScaledArt>
+              <div className="relative aspect-[16/10] overflow-hidden rounded-[12px]">
+                <BlogScene scene={WHY_SCENES[i]} />
               </div>
             </div>
           </div>

@@ -4,9 +4,11 @@ import { useRef, useState } from "react";
 import Link from "next/link";
 import { motion, useInView, useReducedMotion } from "motion/react";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
-import { ClosingOrbit } from "./BuildIllustrations";
 import { Atmosphere, TiltCard } from "@/components/ui/Aesthetic";
-import { IndustryArt, industryIcons, cardSerif, type IndustryVisualKey } from "./IndustryCardArt";
+import { industryIcons, cardSerif, type IndustryVisualKey } from "./IndustryCardArt";
+import { SceneFrame, sceneBackdrop, scenes } from "@/components/industries/IndustryScenes";
+import { BlogScene } from "@/components/blog/BlogScene";
+import type { BlogSceneData } from "@/lib/blog-scenes";
 
 const EASE = [0.25, 1, 0.5, 1] as const;
 
@@ -98,63 +100,88 @@ function Eyebrow({ children, on, still }: { children: React.ReactNode; on: boole
   );
 }
 
+// the realistic industry scenes, matched to each card
+const sceneSlug: Partial<Record<IndustryVisualKey, string>> = {
+  d2c: "d2c-consumer",
+  "real-estate": "real-estate",
+  beauty: "beauty-personal-care",
+  fashion: "fashion-apparel",
+  fintech: "fintech",
+  saas: "saas-technology",
+  manufacturing: "manufacturing",
+};
+
+const SERVICES_SCENE: BlogSceneData = {
+  kind: "crm",
+  label: "New enquiries this week",
+  items: ["Proposal follow-up sent"],
+  seed: 6,
+};
+
 function Card({ item, index, still }: { item: (typeof items)[number]; index: number; still: boolean }) {
   const ref = useRef<HTMLAnchorElement>(null);
   const on = useInView(ref, { once: true, amount: 0.3 });
   const [hover, setHover] = useState(false);
   const Icon = industryIcons[item.key];
+  const slug = sceneSlug[item.key];
+  const Scene = slug ? scenes[slug] : undefined;
 
   return (
     <motion.div
+      className="h-full"
       initial={still ? false : { opacity: 0, y: 50, rotateX: 22, filter: "blur(6px)" }}
       animate={on ? { opacity: 1, y: 0, rotateX: 0, filter: "blur(0px)" } : {}}
       transition={{ duration: 0.9, ease: EASE, delay: (index % 3) * 0.1 }}
       style={{ transformPerspective: 1000, transformOrigin: "50% 100%" }}
     >
-      <TiltCard glow={item.glow} max={8} className="rounded-2xl">
-      <Link
-        ref={ref}
-        href={item.href}
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
-        className="group relative block h-[178px] overflow-hidden p-6"
-      >
-        {/* background glow wash */}
-        <motion.span
-          aria-hidden
-          className="pointer-events-none absolute -inset-16 rounded-full blur-2xl"
-          style={{ background: `radial-gradient(circle, ${item.glow}2e, transparent 65%)` }}
-          initial={{ opacity: 0, scale: 0.7 }}
-          animate={hover ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.7 }}
-          transition={{ duration: 0.5, ease: EASE }}
-        />
-
-        <div className="relative z-10 flex items-start justify-between">
-          <span
-            className="flex h-10 w-10 items-center justify-center rounded-full transition-transform duration-500 group-hover:scale-110"
-            style={{ background: item.tint }}
-          >
-            <Icon className="h-[18px] w-[18px]" style={{ color: item.glow }} strokeWidth={1.7} />
-          </span>
-          <ArrowRight
-            className="h-4 w-4 -translate-x-1 text-ink/40 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:text-ink group-hover:opacity-100"
-          />
-        </div>
-
-        <h3
-          className="relative z-10 mt-6 text-[1.05rem] font-medium tracking-tight transition-colors duration-300"
-          style={{ color: hover ? item.glow : "#0b0c0e" }}
+      <TiltCard glow={item.glow} max={7} className="rounded-2xl">
+        <Link
+          ref={ref}
+          href={item.href}
+          onMouseEnter={() => setHover(true)}
+          onMouseLeave={() => setHover(false)}
+          className="group relative flex h-full flex-col p-3"
         >
-          {item.name}
-        </h3>
-        <p className="relative z-10 mt-1.5 max-w-[80%] text-[0.82rem] leading-relaxed text-ink/55">{item.tagline}</p>
+          {/* a realistic screen from the industry */}
+          <div className="overflow-hidden rounded-[14px] ring-1 ring-ink/[0.06] transition-transform duration-700 ease-out group-hover:-translate-y-1">
+            {Scene && slug ? (
+              <div className={`bg-gradient-to-br ${sceneBackdrop[slug] ?? "from-[#f5f5f3] to-white"}`}>
+                <SceneFrame>
+                  <Scene on={on} hover={hover} still={still} />
+                </SceneFrame>
+              </div>
+            ) : (
+              <div className="relative aspect-[2/1]">
+                <BlogScene scene={SERVICES_SCENE} />
+              </div>
+            )}
+          </div>
 
-        {!still && <IndustryArt kind={item.key} hover={hover} />}
-      </Link>
+          <div className="flex items-start gap-3 px-2 pb-2 pt-4">
+            <span
+              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-transform duration-500 group-hover:scale-110"
+              style={{ background: item.tint }}
+            >
+              <Icon className="h-4 w-4" style={{ color: item.glow }} strokeWidth={1.7} />
+            </span>
+            <div className="min-w-0 flex-1">
+              <h3
+                className="text-[1.02rem] font-medium tracking-tight transition-colors duration-300"
+                style={{ color: hover ? item.glow : "#0b0c0e" }}
+              >
+                {item.name}
+              </h3>
+              <p className="mt-1 text-[0.82rem] leading-relaxed text-ink/55">{item.tagline}</p>
+            </div>
+            <ArrowRight className="mt-1 h-4 w-4 shrink-0 -translate-x-1 text-ink/30 transition-all duration-300 group-hover:translate-x-0 group-hover:text-ink" />
+          </div>
+        </Link>
       </TiltCard>
     </motion.div>
   );
 }
+
+const MORE = ["Healthcare & HealthTech", "Travel & Hospitality", "Automotive & Mobility", "Education & EdTech", "Ecommerce", "Logistics"];
 
 export function IndustriesGrid() {
   const reduced = useReducedMotion();
@@ -247,15 +274,43 @@ export function IndustriesGrid() {
             <Card key={item.key} item={item} index={i} still={still} />
           ))}
 
-          {/* decorative closing cell, matching the grid's rhythm */}
-          <div className="relative hidden h-[178px] items-center justify-center overflow-hidden rounded-2xl lg:flex">
-            <div className="absolute inset-0 scale-125">
-              <ClosingOrbit on={headOn} still={still} />
+          {/* closing cell: more industries */}
+          <motion.div
+            className="relative overflow-hidden rounded-2xl bg-ink p-6 text-white"
+            initial={still ? false : { opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.9, ease: EASE, delay: 0.2 }}
+          >
+            <div aria-hidden className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-orange-600/30 blur-[70px]" />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0 opacity-[0.07]"
+              style={{ backgroundImage: "radial-gradient(#ffffff 1px, transparent 1px)", backgroundSize: "18px 18px" }}
+            />
+            <div className="relative flex h-full flex-col">
+              <p className="text-[0.7rem] font-medium uppercase tracking-[0.16em] text-white/50">And more</p>
+              <p className="mt-2 text-[1.5rem] leading-tight" style={cardSerif}>
+                Different industries. <span className="italic text-orange-bright">Same obsession.</span>
+              </p>
+              <div className="mt-4 flex flex-wrap gap-1.5">
+                {MORE.map((m) => (
+                  <span key={m} className="rounded-full border border-white/15 px-2.5 py-1 text-[0.72rem] text-white/70">
+                    {m}
+                  </span>
+                ))}
+              </div>
+              <Link
+                href="/industries"
+                className="group mt-auto inline-flex w-fit items-center gap-2 pt-5 text-[0.85rem] font-medium text-white"
+              >
+                See all industries
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 transition-all duration-500 group-hover:-rotate-45 group-hover:bg-white group-hover:text-ink">
+                  <ArrowRight className="h-3.5 w-3.5" />
+                </span>
+              </Link>
             </div>
-            <p className="relative z-10 mt-16 max-w-[8.5rem] text-right text-[0.8rem] leading-snug text-ink/45">
-              Different industries. Same obsession.
-            </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
