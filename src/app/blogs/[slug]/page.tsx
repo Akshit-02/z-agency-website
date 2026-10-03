@@ -145,7 +145,7 @@ export default async function BlogPostPage({
           </Reveal>
 
           <Reveal delay={0.1}>
-            <h1 className="mt-4 text-balance font-display text-[2.1rem] font-medium leading-[1.14] tracking-tight sm:text-[2.8rem]">
+            <h1 className="mt-4 text-balance font-serif-display text-[2.1rem] leading-[1.14] tracking-tight sm:text-[2.8rem]">
               {post.title}
             </h1>
           </Reveal>
@@ -311,7 +311,7 @@ export default async function BlogPostPage({
               {post.faqs && post.faqs.length > 0 && (
                 <Reveal delay={0.1} className="mt-14 border-t border-line pt-10">
                   <Eyebrow accent="orange">FAQ</Eyebrow>
-                  <h2 className="mt-4 text-balance font-display text-[1.5rem] font-medium tracking-tight sm:text-[1.7rem]">
+                  <h2 className="mt-4 text-balance font-serif-display text-[1.5rem] tracking-tight sm:text-[1.7rem]">
                     Common questions
                   </h2>
                   <div className="mt-6">

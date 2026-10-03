@@ -34,14 +34,14 @@ export function Footer() {
           className="absolute -left-3 top-0 h-3 w-[13px]"
           style={{
             background:
-              "radial-gradient(circle at 0 100%, #0b0c0e 11.5px, #faf9f6 12px)",
+              "radial-gradient(circle at 0 100%, #0b0c0e 11.5px, #ffffff 12px)",
           }}
         />
         <span
           className="absolute -right-3 top-0 h-3 w-[13px]"
           style={{
             background:
-              "radial-gradient(circle at 100% 100%, #0b0c0e 11.5px, #faf9f6 12px)",
+              "radial-gradient(circle at 100% 100%, #0b0c0e 11.5px, #ffffff 12px)",
           }}
         />
       </div>
@@ -50,17 +50,17 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-[1.7fr_1fr_1fr_1.2fr]">
           <div className="max-w-md">
             <Logo theme="light" className="[&_span]:!text-white" />
-            <p className="mt-8 font-display text-3xl font-medium leading-[1.05] tracking-tight">
+            <p className="mt-8 font-serif-display text-[2.6rem] leading-[1]">
               Build once.
               <br />
-              <span className="text-white/60">Scale anywhere.</span>
+              <span className="text-orange-bright">Scale anywhere.</span>
             </p>
             <p className="mt-6 text-pretty text-[0.9rem] leading-relaxed text-white/50">
               {site.footerDescription}
             </p>
             <Link
               href="/contact"
-              className="mt-7 inline-block rounded-xl bg-white px-5 py-2.5 text-[0.85rem] font-semibold text-ink transition-colors hover:bg-white/90"
+              className="mt-7 inline-block rounded-full bg-white px-6 py-3 text-[0.85rem] font-semibold text-ink transition-colors hover:bg-white/90"
             >
               Start a Project
             </Link>

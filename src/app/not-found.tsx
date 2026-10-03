@@ -25,7 +25,7 @@ export default function NotFound() {
     <section className="pb-24 pt-[150px] sm:pt-[170px]">
       <Container className="max-w-[720px]">
         <Eyebrow accent="orange">404</Eyebrow>
-        <h1 className="mt-4 text-balance font-display text-[2.2rem] font-medium leading-[1.15] tracking-tight sm:text-[2.8rem]">
+        <h1 className="mt-4 text-balance font-serif-display text-[2.2rem] leading-[1.15] tracking-tight sm:text-[2.8rem]">
           This page took a wrong turn.
         </h1>
         <p className="mt-5 max-w-[54ch] text-pretty text-[1.05rem] leading-relaxed text-ink-soft">

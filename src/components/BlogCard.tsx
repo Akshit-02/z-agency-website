@@ -18,7 +18,7 @@ export function BlogCard({ post }: { post: BlogSummary }) {
       <div className="mt-5 flex items-center gap-3 text-[0.82rem] font-medium uppercase tracking-[0.08em]">
         <span className="text-blue">{post.readingTime}</span>
       </div>
-      <h3 className="mt-3 max-w-2xl text-balance font-display text-[1.3rem] font-medium leading-[1.25] tracking-tight transition-colors duration-300 group-hover:text-orange sm:text-[1.4rem]">
+      <h3 className="mt-3 max-w-2xl text-balance font-serif-display text-[1.3rem] leading-[1.25] tracking-tight transition-colors duration-300 group-hover:text-orange sm:text-[1.4rem]">
         {post.title}
       </h3>
       <p className="mt-3 max-w-2xl text-pretty text-[0.96rem] leading-relaxed text-ink-soft">

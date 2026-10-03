@@ -13,6 +13,7 @@ import { ArrowUpRight } from "lucide-react";
 import { AnimatedHeroWord } from "./AnimatedHeroWord";
 import { HeroOrbit } from "./HeroOrbit";
 import { HeroServiceStrip } from "./HeroServiceStrip";
+import { Atmosphere } from "@/components/ui/Aesthetic";
 
 const EASE = [0.25, 1, 0.5, 1] as const;
 
@@ -74,7 +75,8 @@ export function Hero() {
   const orbitRotate = useTransform(scrollY, span, r ? [0, 0] : [0, 7]);
 
   return (
-    <section className="relative flex min-h-[100svh] flex-col overflow-hidden bg-[#fdfdfc] pt-[100px]">
+    <section className="relative flex min-h-[100svh] flex-col overflow-hidden bg-white pt-[100px]">
+      <Atmosphere tone="light" still={r} />
       <div className="relative flex flex-1 items-center justify-center px-5 pb-14 pt-[clamp(4.5rem,15vh,9rem)] sm:pb-16">
         <Frame />
         <HeroOrbit

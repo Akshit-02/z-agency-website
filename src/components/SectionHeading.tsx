@@ -14,13 +14,13 @@ export function Eyebrow({
   return (
     <span
       className={clsx(
-        "inline-flex items-center gap-2 text-[0.8rem] font-medium uppercase tracking-[0.14em] text-ink-soft",
+        "inline-flex items-center gap-3 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-ink",
         className
       )}
     >
       <span
         className={clsx(
-          "h-1.5 w-1.5 rounded-full",
+          "h-px w-6",
           accent === "orange" ? "bg-orange" : "bg-blue"
         )}
         aria-hidden="true"
@@ -61,7 +61,7 @@ export function SectionHeading({
       <Reveal delay={0.05}>
         <h2
           className={clsx(
-            "text-balance font-display text-[2rem] font-medium leading-[1.1] tracking-tight sm:text-[2.6rem]",
+            "text-balance font-serif-display text-[2.3rem] leading-[1.05] sm:text-[3rem]",
             titleClassName
           )}
         >

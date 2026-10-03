@@ -26,7 +26,7 @@ export function IndustriesSection() {
               <Eyebrow accent="blue">Who we work with</Eyebrow>
             </Reveal>
             <Reveal delay={0.05}>
-              <h2 className="mt-4 max-w-xl text-balance font-display text-[2rem] font-medium leading-[1.1] tracking-tight sm:text-[2.6rem]">
+              <h2 className="mt-4 max-w-xl text-balance font-serif-display text-[2rem] leading-[1.1] tracking-tight sm:text-[2.6rem]">
                 Built for businesses across{" "}
                 <span className="text-blue">every industry</span> we&apos;ve
                 touched.

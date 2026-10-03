@@ -136,14 +136,14 @@ export default async function IndustryDetailPage({
       </section>
 
       {industry.challenges && industry.challenges.length > 0 && (
-        <section className="border-b border-line bg-[#f3f2ee] py-16 sm:py-24">
+        <section className="border-b border-line bg-white py-16 sm:py-24">
           <Container className="grid gap-10 lg:grid-cols-2 lg:gap-16">
             <div>
               <Reveal>
                 <Eyebrow accent={accent}>Common challenges</Eyebrow>
               </Reveal>
               <Reveal delay={0.05}>
-                <h2 className="mt-4 text-balance font-display text-[1.9rem] font-medium leading-[1.15] tracking-tight sm:text-[2.2rem]">
+                <h2 className="mt-4 text-balance font-serif-display text-[1.9rem] leading-[1.15] tracking-tight sm:text-[2.2rem]">
                   Sound familiar?
                 </h2>
               </Reveal>
@@ -235,7 +235,7 @@ export default async function IndustryDetailPage({
                 <Eyebrow accent={accent}>FAQ</Eyebrow>
               </Reveal>
               <Reveal delay={0.05}>
-                <h2 className="mt-4 text-balance font-display text-[1.9rem] font-medium leading-[1.15] tracking-tight sm:text-[2.2rem]">
+                <h2 className="mt-4 text-balance font-serif-display text-[1.9rem] leading-[1.15] tracking-tight sm:text-[2.2rem]">
                   Common questions
                 </h2>
               </Reveal>

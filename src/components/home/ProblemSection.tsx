@@ -554,7 +554,7 @@ export function ProblemSection() {
   return (
     <section
       ref={ref}
-      className="relative overflow-hidden bg-[#fdfdfc] px-5 py-24 sm:px-8 lg:py-32"
+      className="relative overflow-hidden bg-white px-5 py-24 sm:px-8 lg:py-32"
     >
       <div className="mx-auto grid max-w-[1560px] items-center xl:grid-cols-[minmax(0,1fr)_minmax(0,640px)_minmax(0,1fr)]">
         {/* left: the problems */}
@@ -592,7 +592,7 @@ export function ProblemSection() {
               Good ideas
             </Reveal>
             <Reveal on={on} delay={0.3} still={still}>
-              <span className="italic">shouldn&rsquo;t get stuck.</span>
+              <span className="italic text-orange">shouldn&rsquo;t get stuck.</span>
             </Reveal>
           </h2>
 

@@ -31,7 +31,7 @@ export function Principles() {
               <Eyebrow accent="blue">How we operate</Eyebrow>
             </Reveal>
             <Reveal delay={0.05}>
-              <h2 className="mt-4 text-balance font-display text-[2rem] font-medium leading-[1.15] tracking-tight sm:text-[2.5rem]">
+              <h2 className="mt-4 text-balance font-serif-display text-[2rem] leading-[1.15] tracking-tight sm:text-[2.5rem]">
                 A technology partner your team can actually{" "}
                 <span className="text-blue">rely on</span>.
               </h2>

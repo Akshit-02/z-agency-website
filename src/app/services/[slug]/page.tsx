@@ -115,7 +115,7 @@ export default async function ServiceDetailPage({
               <Eyebrow accent={accent}>Overview</Eyebrow>
             </Reveal>
             <Reveal delay={0.05}>
-              <h2 className="mt-4 text-balance font-display text-[1.9rem] font-medium leading-[1.15] tracking-tight sm:text-[2.2rem]">
+              <h2 className="mt-4 text-balance font-serif-display text-[1.9rem] leading-[1.15] tracking-tight sm:text-[2.2rem]">
                 {service.definition.question}
               </h2>
             </Reveal>
@@ -150,14 +150,14 @@ export default async function ServiceDetailPage({
         </Container>
       </section>
 
-      <section className="border-b border-line bg-[#f3f2ee] py-16 sm:py-24">
+      <section className="border-b border-line bg-white py-16 sm:py-24">
         <Container className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           <div>
             <Reveal>
               <Eyebrow accent={accent}>Problems we solve</Eyebrow>
             </Reveal>
             <Reveal delay={0.05}>
-              <h2 className="mt-4 text-balance font-display text-[1.9rem] font-medium leading-[1.15] tracking-tight sm:text-[2.2rem]">
+              <h2 className="mt-4 text-balance font-serif-display text-[1.9rem] leading-[1.15] tracking-tight sm:text-[2.2rem]">
                 Sound familiar?
               </h2>
             </Reveal>
@@ -181,7 +181,7 @@ export default async function ServiceDetailPage({
               <Eyebrow accent={accent}>Who it&apos;s for</Eyebrow>
             </Reveal>
             <Reveal delay={0.05}>
-              <h2 className="mt-4 text-balance font-display text-[1.9rem] font-medium leading-[1.15] tracking-tight sm:text-[2.2rem]">
+              <h2 className="mt-4 text-balance font-serif-display text-[1.9rem] leading-[1.15] tracking-tight sm:text-[2.2rem]">
                 Who this service is for
               </h2>
             </Reveal>
@@ -199,14 +199,14 @@ export default async function ServiceDetailPage({
         </Container>
       </section>
 
-      <section className="border-b border-line bg-[#f3f2ee] py-16 sm:py-24">
+      <section className="border-b border-line bg-white py-16 sm:py-24">
         <Container>
           <div className="max-w-xl">
             <Reveal>
               <Eyebrow accent={accent}>Use cases</Eyebrow>
             </Reveal>
             <Reveal delay={0.05}>
-              <h2 className="mt-4 text-balance font-display text-[1.9rem] font-medium leading-[1.15] tracking-tight sm:text-[2.2rem]">
+              <h2 className="mt-4 text-balance font-serif-display text-[1.9rem] leading-[1.15] tracking-tight sm:text-[2.2rem]">
                 What we typically build
               </h2>
             </Reveal>
@@ -231,7 +231,7 @@ export default async function ServiceDetailPage({
               <Eyebrow accent={accent}>Our approach</Eyebrow>
             </Reveal>
             <Reveal delay={0.05}>
-              <h2 className="mt-4 text-balance font-display text-[1.9rem] font-medium leading-[1.15] tracking-tight sm:text-[2.2rem]">
+              <h2 className="mt-4 text-balance font-serif-display text-[1.9rem] leading-[1.15] tracking-tight sm:text-[2.2rem]">
                 How we work
               </h2>
             </Reveal>
@@ -263,7 +263,7 @@ export default async function ServiceDetailPage({
               <Eyebrow accent={accent}>What you receive</Eyebrow>
             </Reveal>
             <Reveal delay={0.05}>
-              <h2 className="mt-4 text-balance font-display text-[1.9rem] font-medium leading-[1.15] tracking-tight sm:text-[2.2rem]">
+              <h2 className="mt-4 text-balance font-serif-display text-[1.9rem] leading-[1.15] tracking-tight sm:text-[2.2rem]">
                 Deliverables
               </h2>
             </Reveal>
@@ -340,7 +340,7 @@ export default async function ServiceDetailPage({
               <Eyebrow accent={accent}>FAQ</Eyebrow>
             </Reveal>
             <Reveal delay={0.05}>
-              <h2 className="mt-4 text-balance font-display text-[1.9rem] font-medium leading-[1.15] tracking-tight sm:text-[2.2rem]">
+              <h2 className="mt-4 text-balance font-serif-display text-[1.9rem] leading-[1.15] tracking-tight sm:text-[2.2rem]">
                 Common questions
               </h2>
             </Reveal>

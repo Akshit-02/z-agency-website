@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, useInView, useReducedMotion } from "motion/react";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { ClosingOrbit } from "./BuildIllustrations";
+import { Atmosphere, TiltCard } from "@/components/ui/Aesthetic";
 import { IndustryArt, industryIcons, cardSerif, type IndustryVisualKey } from "./IndustryCardArt";
 
 const EASE = [0.25, 1, 0.5, 1] as const;
@@ -105,22 +106,18 @@ function Card({ item, index, still }: { item: (typeof items)[number]; index: num
 
   return (
     <motion.div
-      initial={still ? false : { opacity: 0, y: 22 }}
-      animate={on ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.7, ease: EASE, delay: (index % 3) * 0.08 }}
+      initial={still ? false : { opacity: 0, y: 50, rotateX: 22, filter: "blur(6px)" }}
+      animate={on ? { opacity: 1, y: 0, rotateX: 0, filter: "blur(0px)" } : {}}
+      transition={{ duration: 0.9, ease: EASE, delay: (index % 3) * 0.1 }}
+      style={{ transformPerspective: 1000, transformOrigin: "50% 100%" }}
     >
+      <TiltCard glow={item.glow} max={8} className="rounded-2xl">
       <Link
         ref={ref}
         href={item.href}
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
-        className="group relative block h-[178px] overflow-hidden rounded-2xl border bg-white p-6 transition-all duration-500 ease-out"
-        style={{
-          borderColor: hover ? `${item.glow}55` : "rgba(11,12,14,0.08)",
-          boxShadow: hover
-            ? `0 0 0 1px ${item.glow}22, 0 0 46px 6px ${item.glow}26, 0 24px 48px -20px ${item.glow}40`
-            : "0 1px 2px rgba(11,12,14,0.02)",
-        }}
+        className="group relative block h-[178px] overflow-hidden p-6"
       >
         {/* background glow wash */}
         <motion.span
@@ -154,6 +151,7 @@ function Card({ item, index, still }: { item: (typeof items)[number]; index: num
 
         {!still && <IndustryArt kind={item.key} hover={hover} />}
       </Link>
+      </TiltCard>
     </motion.div>
   );
 }
@@ -176,15 +174,16 @@ export function IndustriesGrid() {
         };
 
   return (
-    <section className="relative overflow-hidden bg-[#fdfdfc] px-5 py-20 sm:px-8 lg:py-28">
-      <div className="mx-auto max-w-[1180px]">
+    <section className="relative overflow-hidden bg-white px-5 py-20 sm:px-8 lg:py-28">
+      <Atmosphere tone="light" still={still} />
+      <div className="relative mx-auto max-w-[1180px]">
         <div ref={headRef} className="grid gap-10 border-b border-ink/10 pb-14 lg:grid-cols-[1fr_auto]">
           <div>
             <Eyebrow on={headOn} still={still}>
               Who we build for
             </Eyebrow>
             <h2
-              className="mt-6 max-w-[26rem] text-[2.5rem] leading-[1.05] tracking-[-0.02em] text-ink sm:text-[3.1rem]"
+              className="mt-6 max-w-[34rem] text-[2.8rem] leading-[1] tracking-[-0.025em] text-ink sm:text-[3.8rem]"
               style={cardSerif}
             >
               {["Different industries.", "Different problems."].map((line, i) => (
@@ -197,7 +196,7 @@ export function IndustriesGrid() {
                   >
                     {i === 1 ? (
                       <>
-                        Different <span className="text-blue italic">problems.</span>
+                        Different <span className="italic text-orange">problems.</span>
                       </>
                     ) : (
                       line
@@ -212,26 +211,35 @@ export function IndustriesGrid() {
             </motion.p>
           </div>
 
-          <div ref={sideRef} className="flex flex-col items-start gap-1 lg:items-end lg:border-l lg:border-ink/10 lg:pl-10 lg:text-right">
-            <motion.p className="text-[0.85rem] text-ink/50" {...rise(sideOn, 0.05)}>
-              Not seeing your industry?
-            </motion.p>
-            <motion.h3 className="text-[1.6rem] tracking-tight text-ink" style={cardSerif} {...rise(sideOn, 0.12)}>
-              That&rsquo;s okay.
-            </motion.h3>
-            <motion.p className="text-[0.85rem] text-ink/50" {...rise(sideOn, 0.18)}>
-              Tell us what you&rsquo;re building.
-            </motion.p>
-            <motion.div {...rise(sideOn, 0.26)}>
+          <motion.div
+            ref={sideRef}
+            className="relative self-end overflow-hidden rounded-[24px] bg-ink p-7 text-white lg:w-[300px]"
+            initial={still ? false : { opacity: 0, y: 30, rotateY: -20 }}
+            animate={sideOn ? { opacity: 1, y: 0, rotateY: 0 } : {}}
+            transition={{ duration: 1, ease: EASE }}
+            style={{ transformPerspective: 1000 }}
+          >
+            <div aria-hidden className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full bg-orange-600/30 blur-[60px]" />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0 opacity-[0.07]"
+              style={{ backgroundImage: "radial-gradient(#ffffff 1px, transparent 1px)", backgroundSize: "18px 18px" }}
+            />
+            <div className="relative">
+              <p className="text-[0.82rem] text-white/55">Not seeing your industry?</p>
+              <h3 className="mt-1 text-[2rem] leading-tight tracking-tight" style={cardSerif}>
+                That&rsquo;s <span className="italic text-orange-bright">okay.</span>
+              </h3>
+              <p className="mt-1 text-[0.85rem] text-white/55">Tell us what you&rsquo;re building.</p>
               <Link
                 href="/contact"
-                className="group mt-3 inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3.5 text-[0.85rem] font-medium text-white transition-colors duration-300 hover:bg-ink/85"
+                className="group mt-5 inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-[0.85rem] font-medium text-ink transition-colors duration-300 hover:bg-white/90"
               >
                 Start a Project
                 <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
               </Link>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
         </div>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

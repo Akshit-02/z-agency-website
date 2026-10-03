@@ -1,15 +1,38 @@
 "use client";
 
-import { useRef, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import Link from "next/link";
-import { motion, useInView, useReducedMotion, useScroll, useTransform } from "motion/react";
-import { ArrowRight, ArrowUpRight, ChartColumn, Gauge, Globe, Inbox, Lightbulb, Palette, PenLine, Repeat, ShoppingBag, ShoppingCart, Smartphone, Sparkles, type LucideIcon } from "lucide-react";
+import {
+  motion,
+  useInView,
+  useReducedMotion,
+  useScroll,
+  useTransform,
+} from "motion/react";
+import {
+  ArrowRight,
+  ArrowUpRight,
+  ChartColumn,
+  Check,
+  Gauge,
+  Globe,
+  Inbox,
+  Lightbulb,
+  Palette,
+  PenLine,
+  Repeat,
+  ShoppingBag,
+  ShoppingCart,
+  Smartphone,
+  Sparkles,
+  type LucideIcon,
+} from "lucide-react";
+import { DarkPanel, TiltCard } from "@/components/ui/Aesthetic";
 import {
   AppsArt,
   AutomationArt,
   ClosingOrbit,
   CroArt,
-  HeaderArt,
   ShopifyArt,
   UiUxArt,
   WebsitesArt,
@@ -23,14 +46,50 @@ type Art = (props: { on: boolean; still: boolean }) => ReactNode;
 /* Common starting points for people who aren't sure what they need. */
 const problems: { label: string; slug: string; icon: LucideIcon }[] = [
   { label: "Our website is slow or outdated", slug: "website", icon: Gauge },
-  { label: "Visitors come, but don’t convert", slug: "conversion", icon: ShoppingCart },
-  { label: "Too much manual, repetitive work", slug: "automation", icon: Repeat },
+  {
+    label: "Visitors come, but don’t convert",
+    slug: "conversion",
+    icon: ShoppingCart,
+  },
+  {
+    label: "Too much manual, repetitive work",
+    slug: "automation",
+    icon: Repeat,
+  },
   { label: "Leads and enquiries slip through", slug: "leads", icon: Inbox },
   { label: "We have an app idea, but no plan", slug: "app", icon: Lightbulb },
   { label: "Our product feels hard to use", slug: "ux", icon: Palette },
 ];
 
-const items: {
+/* Technologies named on the service pages (no unverified claims). */
+const stack = [
+  "Next.js",
+  "React",
+  "TypeScript",
+  "Node.js",
+  "PostgreSQL",
+  "Tailwind CSS",
+  "React Native",
+  "Swift",
+  "Kotlin",
+  "Shopify Liquid",
+  "Shopify Hydrogen",
+  "OpenAI & Anthropic APIs",
+  "Python",
+  "Figma",
+];
+
+/* What the header "terminal" cycles through while it builds. */
+const builds = [
+  "websites",
+  "apps",
+  "stores",
+  "automations",
+  "interfaces",
+  "funnels",
+];
+
+type Item = {
   n: string;
   title: string;
   tagline: string;
@@ -40,7 +99,12 @@ const items: {
   color: string;
   href: string;
   Art: Art;
-}[] = [
+  span: string;
+  wide?: boolean;
+};
+
+// Bento layout on large screens: 4+2 / 2+4 / 3+3 columns of a 6-column grid.
+const items: Item[] = [
   {
     n: "01",
     title: "Websites",
@@ -48,9 +112,11 @@ const items: {
     body: "Websites designed to communicate clearly, load quickly and give your business somewhere useful to go.",
     tags: ["Strategy", "UX/UI", "Next.js", "SEO"],
     icon: Globe,
-    color: "#2563eb",
+    color: "#3b82f6",
     href: "/services/website-development",
     Art: WebsitesArt,
+    span: "md:col-span-2 lg:col-span-4",
+    wide: true,
   },
   {
     n: "02",
@@ -59,9 +125,10 @@ const items: {
     body: "From product thinking to polished interfaces and development, we turn app ideas into experiences people actually want to use.",
     tags: ["Product", "UX/UI", "React Native", "iOS", "Android"],
     icon: Smartphone,
-    color: "#1d3fbf",
+    color: "#60a5fa",
     href: "/services/mobile-app-development",
     Art: AppsArt,
+    span: "lg:col-span-2",
   },
   {
     n: "03",
@@ -70,9 +137,10 @@ const items: {
     body: "Shopify stores, custom features and optimisation designed around the people who actually buy from you.",
     tags: ["Shopify", "Theme Dev", "CRO", "Apps"],
     icon: ShoppingBag,
-    color: "#0b0c0e",
+    color: "#ff6b35",
     href: "/services/shopify-development",
     Art: ShopifyArt,
+    span: "lg:col-span-2",
   },
   {
     n: "04",
@@ -81,9 +149,11 @@ const items: {
     body: "Connect your tools, automate repetitive workflows and put AI to work where it actually saves time.",
     tags: ["Automation", "APIs", "Integrations"],
     icon: Sparkles,
-    color: "#7c3aed",
+    color: "#a78bfa",
     href: "/services/ai-automation",
     Art: AutomationArt,
+    span: "md:col-span-2 lg:col-span-4",
+    wide: true,
   },
   {
     n: "05",
@@ -92,9 +162,10 @@ const items: {
     body: "Interfaces, product experiences and design systems that make digital products easier to understand and use.",
     tags: ["Research", "Wireframes", "Design Systems"],
     icon: PenLine,
-    color: "#2563eb",
+    color: "#3b82f6",
     href: "/services/ui-ux-design",
     Art: UiUxArt,
+    span: "lg:col-span-3",
   },
   {
     n: "06",
@@ -103,125 +174,286 @@ const items: {
     body: "Find the friction, test what changes it and turn more of your existing traffic into meaningful actions.",
     tags: ["UX Audit", "Analytics", "A/B Testing", "Conversion"],
     icon: ChartColumn,
-    color: "#2563eb",
+    color: "#ff6b35",
     href: "/services/cro-audit",
     Art: CroArt,
+    span: "lg:col-span-3",
   },
 ];
 
-function Eyebrow({ children, on, still }: { children: ReactNode; on: boolean; still: boolean }) {
+/* Illustrations are drawn on a fixed 368×150 canvas; scale the whole canvas
+   to the available width so their absolutely positioned parts stay aligned. */
+const ART_W = 368;
+const ART_H = 150;
+
+function ScaledArt({
+  children,
+  max = 1.15,
+}: {
+  children: ReactNode;
+  max?: number;
+}) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [scale, setScale] = useState(1);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const update = () => setScale(Math.min(max, el.clientWidth / ART_W));
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [max]);
+
   return (
-    <p className="flex items-center gap-3 text-[0.7rem] font-medium uppercase tracking-[0.16em] text-ink">
+    <div
+      ref={ref}
+      className="relative w-full min-w-0"
+      style={{ height: ART_H * scale }}
+    >
+      <div
+        className="absolute left-0 top-0"
+        style={{
+          width: ART_W,
+          height: ART_H,
+          transform: `scale(${scale})`,
+          transformOrigin: "top left",
+        }}
+      >
+        {children}
+      </div>
+    </div>
+  );
+}
+
+function Eyebrow({
+  children,
+  on,
+  still,
+  delay = 0,
+}: {
+  children: ReactNode;
+  on: boolean;
+  still: boolean;
+  delay?: number;
+}) {
+  return (
+    <p className="flex items-center gap-3 text-[0.7rem] font-medium uppercase tracking-[0.16em] text-white/70">
       <motion.span
-        className="h-px w-6 origin-left bg-orange-600"
+        className="h-px w-6 origin-left bg-orange-500"
         initial={still ? false : { scaleX: 0 }}
         animate={on ? { scaleX: 1 } : {}}
-        transition={{ duration: 0.8, ease: EASE }}
+        transition={{ duration: 0.8, ease: EASE, delay }}
       />
       {children}
     </p>
   );
 }
 
-function Row({ item, index, still }: { item: (typeof items)[number]; index: number; still: boolean }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const on = useInView(ref, { once: true, amount: 0.35 });
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
-  const artY = useTransform(scrollYProgress, [0, 1], still ? [0, 0] : [26, -26]);
-  // scroll choreography: the row in focus is sharp, neighbours recede; art tilts in 3D; icon turns
-  const focusOpacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], still ? [1, 1, 1, 1] : [0.2, 1, 1, 0.2]);
-  const focusScale = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], still ? [1, 1, 1, 1] : [0.95, 1, 1, 0.95]);
-  const artRotX = useTransform(scrollYProgress, [0, 1], still ? [0, 0] : [16, -16]);
-  const artRotY = useTransform(scrollYProgress, [0, 1], still ? [0, 0] : [-12, 12]);
-  const iconRotate = useTransform(scrollYProgress, [0, 1], still ? [0, 0] : [-140, 140]);
-  const Icon = item.icon;
+/* A small "build terminal": cycles through what we build with a typing
+   effect and a progress bar, then ticks off the stages. */
+function BuildTerminal({ on, still }: { on: boolean; still: boolean }) {
+  const [index, setIndex] = useState(0);
+  const [typed, setTyped] = useState(still ? builds[0] : "");
 
-  const rise = (delay: number) =>
-    still
-      ? { initial: false as const }
-      : {
-          initial: { opacity: 0, y: 26 },
-          animate: on ? { opacity: 1, y: 0 } : {},
-          transition: { duration: 0.85, ease: EASE, delay },
-        };
+  useEffect(() => {
+    if (!on || still) return;
+    const word = builds[index];
+    if (typed.length < word.length) {
+      const t = setTimeout(() => setTyped(word.slice(0, typed.length + 1)), 70);
+      return () => clearTimeout(t);
+    }
+    const t = setTimeout(() => {
+      setTyped("");
+      setIndex((i) => (i + 1) % builds.length);
+    }, 2200);
+    return () => clearTimeout(t);
+  }, [on, still, typed, index]);
+
+  const stages = ["design", "engineering", "launch"];
 
   return (
-    <motion.div ref={ref} className="relative" style={{ opacity: focusOpacity, scale: focusScale }}>
-      <motion.span
-        aria-hidden
-        className="absolute inset-x-0 top-0 h-px origin-left bg-ink/10"
-        initial={still ? false : { scaleX: 0 }}
-        animate={on ? { scaleX: 1 } : {}}
-        transition={{ duration: 1.1, ease: EASE }}
-      />
-      <Link
-        href={item.href}
-        className="group grid gap-x-6 gap-y-6 py-9 lg:grid-cols-[3rem_5.5rem_minmax(0,1fr)_2rem_368px] lg:items-center lg:py-7"
-      >
-        <motion.span className="hidden text-[0.95rem] text-ink/45 lg:block" {...rise(0)}>
-          {item.n}
-        </motion.span>
-
-        <motion.span
-          className="hidden h-[58px] w-[58px] items-center justify-center rounded-full bg-white shadow-[0_10px_28px_-10px_rgba(11,12,14,0.22),0_0_0_1px_rgba(11,12,14,0.03)] transition-transform duration-500 group-hover:scale-110 lg:flex"
-          initial={still ? false : { opacity: 0, scale: 0.6 }}
-          animate={on ? { opacity: 1, scale: 1 } : {}}
-          transition={{ type: "spring", stiffness: 160, damping: 14, delay: 0.1 }}
-        >
-          <motion.span style={{ rotate: iconRotate }} className="flex">
-            <Icon className="h-[22px] w-[22px]" style={{ color: item.color }} strokeWidth={1.6} />
-          </motion.span>
-        </motion.span>
-
-        <div>
-          <motion.div className="mb-3 flex items-center gap-3 lg:hidden" {...rise(0)}>
-            <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-[0_10px_28px_-10px_rgba(11,12,14,0.22)]">
-              <Icon className="h-5 w-5" style={{ color: item.color }} strokeWidth={1.6} />
-            </span>
-            <span className="text-[0.85rem] text-ink/45">{item.n}</span>
-          </motion.div>
-          <motion.h3
-            className="text-[2rem] leading-none tracking-[-0.01em] text-ink"
-            style={serif}
-            {...rise(0.05)}
-          >
-            <span className="bg-gradient-to-r from-ink to-ink bg-[length:0%_1px] bg-left-bottom bg-no-repeat pb-1 transition-[background-size] duration-500 group-hover:bg-[length:100%_1px]">
-              {item.title}
-            </span>
-          </motion.h3>
-          <motion.p className="mt-2.5 text-[0.9rem] font-medium text-ink" {...rise(0.12)}>
-            {item.tagline}
-          </motion.p>
-          <motion.p className="mt-2.5 max-w-[30rem] text-[0.85rem] leading-relaxed text-ink/55" {...rise(0.18)}>
-            {item.body}
-          </motion.p>
-          <ul className="mt-4 flex flex-wrap gap-2">
-            {item.tags.map((t, i) => (
-              <motion.li
-                key={t}
-                className="rounded-full border border-ink/10 px-3 py-1 text-[0.7rem] text-ink/55 transition-colors duration-300 group-hover:border-ink/20"
-                initial={still ? false : { opacity: 0, y: 10, scale: 0.9 }}
-                animate={on ? { opacity: 1, y: 0, scale: 1 } : {}}
-                transition={{ duration: 0.5, ease: EASE, delay: 0.3 + i * 0.07 }}
-              >
-                {t}
-              </motion.li>
-            ))}
-          </ul>
-        </div>
-
-        <ArrowRight className="hidden h-4 w-4 text-ink/60 transition-transform duration-300 group-hover:translate-x-1.5 group-hover:text-ink lg:block" />
-
+    <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-5 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.8)] backdrop-blur-sm sm:p-6">
+      <div className="flex items-center gap-1.5">
+        <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]/80" />
+        <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]/80" />
+        <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]/80" />
+        <span className="ml-3 font-mono text-[0.7rem] text-white/35">
+          zspace-labs — build
+        </span>
+      </div>
+      <p className="mt-5 font-mono text-[0.95rem] text-white/80 sm:text-[1.05rem]">
+        <span className="text-orange-bright">$</span> build{" "}
+        <span className="text-white">{typed}</span>
+        <span className="ml-0.5 inline-block h-[1.05em] w-[0.5em] translate-y-[0.15em] animate-pulse bg-blue-bright" />
+      </p>
+      <div className="mt-5 h-1.5 overflow-hidden rounded-full bg-white/10">
         <motion.div
-          className="transition-transform duration-500 ease-out group-hover:scale-[1.025]"
-          style={{ y: artY, rotateX: artRotX, rotateY: artRotY, transformPerspective: 900 }}
-          initial={still ? false : { opacity: 0, x: 40 }}
-          animate={on ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.95, ease: EASE, delay: 0.2 + (index % 2) * 0.05 }}
+          key={index}
+          className="h-full rounded-full bg-gradient-to-r from-orange-500 via-orange-bright to-blue-bright"
+          initial={{ width: still ? "100%" : "0%" }}
+          animate={on ? { width: "100%" } : {}}
+          transition={{ duration: 2.4, ease: "easeInOut" }}
+        />
+      </div>
+      <ul className="mt-5 grid grid-cols-3 gap-2">
+        {stages.map((stage, i) => (
+          <motion.li
+            key={stage}
+            className="flex items-center gap-1.5 font-mono text-[0.72rem] text-white/55"
+            initial={still ? false : { opacity: 0, y: 6 }}
+            animate={on ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, ease: EASE, delay: 0.6 + i * 0.25 }}
+          >
+            <span className="flex h-4 w-4 items-center justify-center rounded-full bg-blue/80">
+              <Check className="h-2.5 w-2.5 text-white" strokeWidth={3} />
+            </span>
+            {stage}
+          </motion.li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function Marquee({ still }: { still: boolean }) {
+  const row = [...stack, ...stack];
+  return (
+    <div
+      className="relative overflow-hidden py-1"
+      style={{
+        maskImage:
+          "linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent)",
+      }}
+    >
+      <motion.ul
+        className="flex w-max gap-3"
+        animate={still ? undefined : { x: ["0%", "-50%"] }}
+        transition={{ duration: 38, ease: "linear", repeat: Infinity }}
+      >
+        {row.map((tech, i) => (
+          <li
+            key={`${tech}-${i}`}
+            className="whitespace-nowrap rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 font-mono text-[0.75rem] text-white/60"
+          >
+            {tech}
+          </li>
+        ))}
+      </motion.ul>
+    </div>
+  );
+}
+
+function ServiceCard({
+  item,
+  index,
+  still,
+}: {
+  item: Item;
+  index: number;
+  still: boolean;
+}) {
+  const ref = useRef<HTMLDivElement>(null);
+  const on = useInView(ref, { once: true, amount: 0.25 });
+  const Icon = item.icon;
+
+  return (
+    <motion.div
+      ref={ref}
+      className={`relative ${item.span}`}
+      initial={
+        still ? false : { opacity: 0, y: 60, rotateX: 18, filter: "blur(8px)" }
+      }
+      animate={on ? { opacity: 1, y: 0, rotateX: 0, filter: "blur(0px)" } : {}}
+      transition={{ duration: 1, ease: EASE, delay: (index % 2) * 0.12 }}
+      style={{ transformPerspective: 1200, transformOrigin: "50% 100%" }}
+    >
+      <TiltCard tone="dark" glow={item.color} max={5}>
+        <Link
+          href={item.href}
+          className="group relative flex h-full flex-col p-5 sm:p-6"
         >
-          <item.Art on={on} still={still} />
-        </motion.div>
-      </Link>
+          <span
+            aria-hidden
+            className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full opacity-25 blur-[60px] transition-opacity duration-700 group-hover:opacity-60"
+            style={{ backgroundColor: item.color }}
+          />
+
+          <div
+            className={`relative flex h-full flex-col gap-6 ${item.wide ? "lg:grid lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.2fr)] lg:items-center lg:gap-8" : ""}`}
+          >
+            {/* text */}
+            <div
+              className={`flex flex-col ${item.wide ? "lg:order-1" : "order-2"}`}
+            >
+              <div className="flex items-center justify-between">
+                <motion.span
+                  className="flex h-11 w-11 items-center justify-center rounded-full bg-white/[0.06] ring-1 ring-white/10 transition-transform duration-500 group-hover:rotate-[-8deg] group-hover:scale-110"
+                  initial={still ? false : { scale: 0.5, opacity: 0 }}
+                  animate={on ? { scale: 1, opacity: 1 } : {}}
+                  transition={{
+                    type: "spring",
+                    stiffness: 180,
+                    damping: 14,
+                    delay: 0.15,
+                  }}
+                >
+                  <Icon
+                    className="h-5 w-5"
+                    style={{ color: item.color }}
+                    strokeWidth={1.7}
+                  />
+                </motion.span>
+                <span className="font-mono text-[0.75rem] text-white/30">
+                  {item.n}
+                </span>
+              </div>
+              <h3
+                className="mt-5 text-[1.9rem] leading-none tracking-[-0.01em] text-white sm:text-[2.1rem]"
+                style={serif}
+              >
+                {item.title}
+              </h3>
+              <p className="mt-3 text-[0.92rem] font-medium text-white/85">
+                {item.tagline}
+              </p>
+              <p className="mt-2 max-w-[30rem] text-[0.85rem] leading-relaxed text-white/50">
+                {item.body}
+              </p>
+              <div className="mt-5 flex flex-wrap items-center gap-2">
+                {item.tags.map((t, i) => (
+                  <motion.span
+                    key={t}
+                    className="rounded-full border border-white/10 px-3 py-1 text-[0.7rem] text-white/55 transition-colors duration-300 group-hover:border-white/20"
+                    initial={still ? false : { opacity: 0, y: 8 }}
+                    animate={on ? { opacity: 1, y: 0 } : {}}
+                    transition={{
+                      duration: 0.45,
+                      ease: EASE,
+                      delay: 0.35 + i * 0.06,
+                    }}
+                  >
+                    {t}
+                  </motion.span>
+                ))}
+                <span className="ml-auto flex h-9 w-9 items-center justify-center rounded-full bg-white/[0.06] text-white/60 transition-all duration-500 group-hover:-rotate-45 group-hover:bg-white group-hover:text-ink">
+                  <ArrowRight className="h-4 w-4" />
+                </span>
+              </div>
+            </div>
+
+            {/* illustration, shown as a light "screen" inside the dark card */}
+            <div className={`relative ${item.wide ? "lg:order-2" : "order-1"}`}>
+              <div className="rounded-[18px] bg-white/[0.06] p-1.5 ring-1 ring-white/10 transition-transform duration-700 ease-out group-hover:-translate-y-1.5 group-hover:scale-[1.02]">
+                <ScaledArt max={item.wide ? 1.6 : 1.15}>
+                  <item.Art on={on} still={still} />
+                </ScaledArt>
+              </div>
+            </div>
+          </div>
+        </Link>
+      </TiltCard>
     </motion.div>
   );
 }
@@ -234,17 +466,12 @@ export function WhatWeBuild() {
   const footRef = useRef<HTMLDivElement>(null);
   const footOn = useInView(footRef, { once: true, amount: 0.4 });
 
-  // header art drifts and tilts; closing orbit turns; a progress rail follows the list
-  const { scrollYProgress: headP } = useScroll({ target: headRef, offset: ["start end", "end start"] });
-  const headArtY = useTransform(headP, [0, 1], still ? [0, 0] : [60, -60]);
-  const headArtRot = useTransform(headP, [0, 1], still ? [0, 0] : [-5, 5]);
-  const headArtScale = useTransform(headP, [0, 0.5, 1], still ? [1, 1, 1] : [0.9, 1, 1.06]);
-  const { scrollYProgress: footP } = useScroll({ target: footRef, offset: ["start end", "end end"] });
+  const { scrollYProgress: footP } = useScroll({
+    target: footRef,
+    offset: ["start end", "end end"],
+  });
   const orbitRot = useTransform(footP, [0, 1], still ? [0, 0] : [-30, 12]);
   const orbitScale = useTransform(footP, [0, 1], still ? [1, 1] : [0.75, 1]);
-  const listRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress: railP } = useScroll({ target: listRef, offset: ["start 0.6", "end 0.6"] });
-  const railDot = useTransform(railP, (v) => `${v * 100}%`);
 
   const rise = (on: boolean, delay: number) =>
     still
@@ -256,66 +483,79 @@ export function WhatWeBuild() {
         };
 
   return (
-    <section className="relative overflow-hidden bg-[#f8f8f6] px-5 pb-16 pt-20 sm:px-8 lg:pb-20 lg:pt-28">
-      <div className="mx-auto max-w-[1180px]">
+    <DarkPanel>
+      <div className="relative">
         {/* header */}
-        <div ref={headRef} className="grid items-center gap-10 pb-14 lg:grid-cols-[1fr_540px]">
+        <div
+          ref={headRef}
+          className="grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:items-end lg:gap-16"
+        >
           <div>
             <Eyebrow on={headOn} still={still}>
               What we build
             </Eyebrow>
-            <h2 className="mt-6 text-[3rem] leading-[1.03] tracking-[-0.025em] text-ink sm:text-[3.8rem]" style={serif}>
-              {["Things we like", "building."].map((line, i) => (
-                <span key={line} className="block overflow-hidden pb-[0.1em]">
+            <h2
+              className="mt-6 text-[3rem] leading-[0.95] tracking-[-0.025em] sm:text-[4.2rem] lg:text-[4.8rem]"
+              style={serif}
+            >
+              {[
+                <>Things we like</>,
+                <>
+                  <span className="italic text-orange-bright">building.</span>
+                </>,
+              ].map((line, i) => (
+                <span key={i} className="block overflow-hidden pb-[0.08em]">
                   <motion.span
                     className="block"
                     initial={still ? false : { y: "105%", rotate: 2 }}
                     animate={headOn ? { y: 0, rotate: 0 } : {}}
-                    transition={{ duration: 1, ease: EASE, delay: 0.1 + i * 0.14 }}
+                    transition={{
+                      duration: 1,
+                      ease: EASE,
+                      delay: 0.1 + i * 0.14,
+                    }}
                   >
                     {line}
                   </motion.span>
                 </span>
               ))}
             </h2>
-            <motion.p className="mt-6 max-w-[22rem] text-[1rem] leading-relaxed text-ink/55" {...rise(headOn, 0.4)}>
-              Digital products, experiences and systems that make businesses easier to run and customers happier to use.
+            <motion.p
+              className="mt-6 max-w-[28rem] text-[1.02rem] leading-relaxed text-white/60"
+              {...rise(headOn, 0.4)}
+            >
+              Digital products, experiences and systems that make businesses
+              easier to run and customers happier to use.
             </motion.p>
           </div>
-          <motion.div className="hidden lg:block" style={{ y: headArtY, rotate: headArtRot, scale: headArtScale }}>
-            <HeaderArt on={headOn} still={still} />
+          <motion.div {...rise(headOn, 0.3)}>
+            <BuildTerminal on={headOn} still={still} />
           </motion.div>
         </div>
 
-        {/* rows */}
-        <div ref={listRef} className="relative">
-          <div aria-hidden className="absolute -left-8 bottom-0 top-0 hidden w-px bg-ink/10 xl:block">
-            <motion.span className="absolute inset-0 origin-top bg-gradient-to-b from-orange-600 to-blue" style={{ scaleY: railP }} />
-            <motion.span
-              className="absolute -left-[3px] h-[7px] w-[7px] rounded-full bg-orange-600 shadow-[0_0_14px_3px_rgba(234,88,12,0.45)]"
-              style={{ top: railDot }}
-            />
-          </div>
+        {/* stack marquee */}
+        <motion.div className="mt-14" {...rise(headOn, 0.6)}>
+          <Marquee still={still} />
+        </motion.div>
+
+        {/* bento grid */}
+        <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-6">
           {items.map((item, i) => (
-            <Row key={item.n} item={item} index={i} still={still} />
+            <ServiceCard key={item.n} item={item} index={i} still={still} />
           ))}
         </div>
 
         {/* closing */}
-        <div ref={footRef} className="relative mt-6">
+        <div ref={footRef} className="relative mt-4">
           <motion.div
-            className="relative overflow-hidden rounded-[28px] bg-ink px-6 py-10 text-white sm:px-10 sm:py-12 lg:px-14 lg:py-14"
+            className="relative overflow-hidden rounded-[24px] border border-white/10 bg-white/[0.03] px-6 py-10 sm:px-10 sm:py-12 lg:px-12 lg:py-12"
             initial={still ? false : { opacity: 0, y: 32, scale: 0.98 }}
             animate={footOn ? { opacity: 1, y: 0, scale: 1 } : {}}
             transition={{ duration: 0.9, ease: EASE }}
           >
-            {/* atmosphere: soft brand glows, a faint dot grid and the turning orbit */}
-            <div aria-hidden className="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-full bg-orange-600/25 blur-[90px]" />
-            <div aria-hidden className="pointer-events-none absolute -bottom-28 right-[-60px] h-80 w-80 rounded-full bg-blue/30 blur-[100px]" />
             <div
               aria-hidden
-              className="pointer-events-none absolute inset-0 opacity-[0.07]"
-              style={{ backgroundImage: "radial-gradient(#ffffff 1px, transparent 1px)", backgroundSize: "22px 22px" }}
+              className="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-full bg-orange-600/20 blur-[90px]"
             />
             <motion.div
               aria-hidden
@@ -327,16 +567,13 @@ export function WhatWeBuild() {
 
             <div className="relative grid gap-12 lg:grid-cols-[1fr_1.05fr] lg:items-center lg:gap-16">
               <div>
-                <p className="flex items-center gap-3 text-[0.7rem] font-medium uppercase tracking-[0.16em] text-white/70">
-                  <motion.span
-                    className="h-px w-6 origin-left bg-orange-500"
-                    initial={still ? false : { scaleX: 0 }}
-                    animate={footOn ? { scaleX: 1 } : {}}
-                    transition={{ duration: 0.8, ease: EASE, delay: 0.2 }}
-                  />
+                <Eyebrow on={footOn} still={still} delay={0.2}>
                   Not sure what you need yet?
-                </p>
-                <h3 className="mt-5 text-[2.8rem] leading-[0.95] tracking-[-0.02em] sm:text-[3.6rem]" style={serif}>
+                </Eyebrow>
+                <h3
+                  className="mt-5 text-[2.8rem] leading-[0.95] tracking-[-0.02em] sm:text-[3.6rem]"
+                  style={serif}
+                >
                   <span className="block overflow-hidden pb-[0.08em]">
                     <motion.span
                       className="block"
@@ -344,15 +581,22 @@ export function WhatWeBuild() {
                       animate={footOn ? { y: 0 } : {}}
                       transition={{ duration: 1, ease: EASE, delay: 0.25 }}
                     >
-                      That&rsquo;s <span className="italic text-orange-bright">okay.</span>
+                      That&rsquo;s{" "}
+                      <span className="italic text-orange-bright">okay.</span>
                     </motion.span>
                   </span>
                 </h3>
-                <motion.p className="mt-5 max-w-[26rem] text-[1rem] leading-relaxed text-white/65" {...rise(footOn, 0.35)}>
-                  Tell us what&rsquo;s not working. We&rsquo;ll help figure out what to build, and just as
-                  importantly, what not to.
+                <motion.p
+                  className="mt-5 max-w-[26rem] text-[1rem] leading-relaxed text-white/65"
+                  {...rise(footOn, 0.35)}
+                >
+                  Tell us what&rsquo;s not working. We&rsquo;ll help figure out
+                  what to build, and just as importantly, what not to.
                 </motion.p>
-                <motion.div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4" {...rise(footOn, 0.45)}>
+                <motion.div
+                  className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4"
+                  {...rise(footOn, 0.45)}
+                >
                   <Link
                     href="/contact?src=%2F%23not-sure"
                     className="group inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-[0.85rem] font-medium text-ink transition-colors duration-300 hover:bg-white/90"
@@ -370,7 +614,10 @@ export function WhatWeBuild() {
               </div>
 
               <div>
-                <motion.p className="text-[0.78rem] font-medium uppercase tracking-[0.14em] text-white/45" {...rise(footOn, 0.3)}>
+                <motion.p
+                  className="text-[0.78rem] font-medium uppercase tracking-[0.14em] text-white/45"
+                  {...rise(footOn, 0.3)}
+                >
                   Sound familiar?
                 </motion.p>
                 <ul className="mt-4 grid gap-2.5 sm:grid-cols-2">
@@ -381,7 +628,11 @@ export function WhatWeBuild() {
                         key={p.label}
                         initial={still ? false : { opacity: 0, y: 14 }}
                         animate={footOn ? { opacity: 1, y: 0 } : {}}
-                        transition={{ duration: 0.55, ease: EASE, delay: 0.35 + i * 0.06 }}
+                        transition={{
+                          duration: 0.55,
+                          ease: EASE,
+                          delay: 0.35 + i * 0.06,
+                        }}
                       >
                         <Link
                           href={`/contact?src=${encodeURIComponent(`/#not-sure-${p.slug}`)}`}
@@ -390,7 +641,9 @@ export function WhatWeBuild() {
                           <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/[0.08] text-white/80 transition-colors duration-300 group-hover:bg-orange-600 group-hover:text-white">
                             <Icon className="h-4 w-4" strokeWidth={1.8} />
                           </span>
-                          <span className="text-[0.9rem] leading-snug text-white/85">{p.label}</span>
+                          <span className="text-[0.9rem] leading-snug text-white/85">
+                            {p.label}
+                          </span>
                           <ArrowRight className="ml-auto h-3.5 w-3.5 shrink-0 text-white/30 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-orange-bright" />
                         </Link>
                       </motion.li>
@@ -402,12 +655,20 @@ export function WhatWeBuild() {
                   className="mt-7 grid grid-cols-3 gap-3 border-t border-white/10 pt-6"
                   {...rise(footOn, 0.75)}
                 >
-                  {["You describe the problem", "We map the options", "You get a clear plan"].map((step, i) => (
-                    <li key={step} className="relative">
-                      <span className={`flex h-6 w-6 items-center justify-center rounded-full text-[0.7rem] font-semibold ${i === 2 ? "bg-blue text-white" : "bg-white/10 text-white/80"}`}>
+                  {[
+                    "You describe the problem",
+                    "We map the options",
+                    "You get a clear plan",
+                  ].map((step, i) => (
+                    <li key={step}>
+                      <span
+                        className={`flex h-6 w-6 items-center justify-center rounded-full text-[0.7rem] font-semibold ${i === 2 ? "bg-blue text-white" : "bg-white/10 text-white/80"}`}
+                      >
                         {i + 1}
                       </span>
-                      <p className="mt-2.5 text-[0.8rem] leading-snug text-white/60">{step}</p>
+                      <p className="mt-2.5 text-[0.8rem] leading-snug text-white/60">
+                        {step}
+                      </p>
                     </li>
                   ))}
                 </motion.ol>
@@ -416,6 +677,6 @@ export function WhatWeBuild() {
           </motion.div>
         </div>
       </div>
-    </section>
+    </DarkPanel>
   );
 }

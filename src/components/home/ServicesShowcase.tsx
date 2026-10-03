@@ -37,7 +37,7 @@ export function ServicesShowcase() {
               <Eyebrow accent="orange">What we do</Eyebrow>
             </Reveal>
             <Reveal delay={0.05}>
-              <h2 className="mt-4 text-balance font-display text-[2rem] font-medium leading-[1.1] tracking-tight sm:text-[2.6rem]">
+              <h2 className="mt-4 text-balance font-serif-display text-[2rem] leading-[1.1] tracking-tight sm:text-[2.6rem]">
                 Six ways we help businesses build better{" "}
                 <span className="text-blue">products</span>.
               </h2>

@@ -27,7 +27,7 @@ export function AnimatedHeroWord({
   return (
     <span
       aria-hidden
-      className="relative -mb-[0.15em] flex h-[1.4em] items-center justify-center overflow-hidden px-4 italic"
+      className="relative -mb-[0.15em] flex h-[1.4em] items-center justify-center overflow-hidden px-4 italic text-orange"
     >
       <AnimatePresence mode="wait" initial={false}>
         <motion.span
@@ -54,7 +54,7 @@ export function AnimatedHeroWord({
               }}
             >
               {word}
-              {i === words.length - 1 && <span className="text-orange not-italic">.</span>}
+              {i === words.length - 1 && <span className="text-ink not-italic">.</span>}
             </motion.span>
           ))}
         </motion.span>

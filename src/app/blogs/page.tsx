@@ -68,7 +68,7 @@ export default function BlogsPage() {
                   <span className="mx-2 text-line-strong">/</span>
                   <span className="text-ink-soft">{featured.readingTime}</span>
                 </div>
-                <h2 className="mt-4 text-balance font-display text-[1.7rem] font-medium leading-[1.15] tracking-tight sm:text-[2.2rem]">
+                <h2 className="mt-4 text-balance font-serif-display text-[1.7rem] leading-[1.15] tracking-tight sm:text-[2.2rem]">
                   {featured.title}
                 </h2>
                 <p className="mt-4 max-w-2xl text-pretty text-[1.05rem] leading-relaxed text-ink-soft">

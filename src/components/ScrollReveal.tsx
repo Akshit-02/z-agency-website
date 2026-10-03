@@ -21,10 +21,10 @@ export function Reveal({
   const Component = motion[as];
   return (
     <Component
-      initial={{ opacity: 0, y }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y, filter: "blur(6px)" }}
+      whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
       viewport={{ once: true, margin: "-10% 0px -10% 0px" }}
-      transition={{ duration: 0.7, delay, ease: EASE }}
+      transition={{ duration: 0.8, delay, ease: EASE }}
       className={className}
     >
       {children}
@@ -42,8 +42,14 @@ const staggerContainer: Variants = {
 };
 
 const staggerItem: Variants = {
-  hidden: { opacity: 0, y: 18 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: EASE } },
+  hidden: { opacity: 0, y: 30, rotateX: 18, filter: "blur(6px)" },
+  visible: {
+    opacity: 1,
+    y: 0,
+    rotateX: 0,
+    filter: "blur(0px)",
+    transition: { duration: 0.8, ease: EASE },
+  },
 };
 
 export function StaggerGroup({
@@ -74,7 +80,11 @@ export function StaggerItem({
   className?: string;
 }) {
   return (
-    <motion.div variants={staggerItem} className={className}>
+    <motion.div
+      variants={staggerItem}
+      className={className}
+      style={{ transformPerspective: 1000, transformOrigin: "50% 100%" }}
+    >
       {children}
     </motion.div>
   );

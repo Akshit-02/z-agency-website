@@ -3,7 +3,8 @@
 import { useRef, useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion, useInView, useReducedMotion } from "motion/react";
-import { Minus, Plus } from "lucide-react";
+import { Plus } from "lucide-react";
+import { Atmosphere } from "@/components/ui/Aesthetic";
 import { FaqIllustration } from "./FaqIllustration";
 import { homeFaqs } from "@/lib/home-faqs";
 
@@ -43,29 +44,33 @@ function Row({
 }) {
   return (
     <motion.div
-      className="border-t border-ink/10 last:border-b"
-      initial={still ? false : { opacity: 0, y: 14 }}
-      animate={on ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.6, ease: EASE, delay: 0.04 * index }}
+      className={`relative overflow-hidden rounded-2xl border transition-colors duration-500 ${
+        open ? "border-ink bg-ink text-white" : "border-ink/10 bg-white hover:border-ink/25"
+      }`}
+      initial={still ? false : { opacity: 0, y: 24, rotateX: 30 }}
+      animate={on ? { opacity: 1, y: 0, rotateX: 0 } : {}}
+      transition={{ duration: 0.7, ease: EASE, delay: 0.05 * index }}
+      style={{ transformPerspective: 900, transformOrigin: "50% 0%" }}
     >
+      {open && (
+        <div aria-hidden className="pointer-events-none absolute -right-20 -top-20 h-52 w-52 rounded-full bg-orange-600/25 blur-[70px]" />
+      )}
       <button
         type="button"
         onClick={onToggle}
         aria-expanded={open}
-        className="group flex w-full items-start gap-4 py-5 text-left sm:gap-6 sm:py-6"
+        className="group relative flex w-full items-center gap-4 px-5 py-4 text-left sm:gap-5 sm:px-6 sm:py-5"
       >
-        <span className="pt-0.5 text-[0.85rem] tabular-nums text-ink/35">
+        <span className={`font-mono text-[0.78rem] tabular-nums ${open ? "text-orange-bright" : "text-ink/35"}`}>
           {String(index + 1).padStart(2, "0")}
         </span>
+        <span className="flex-1 text-[1rem] font-medium leading-snug tracking-tight sm:text-[1.05rem]">{item.q}</span>
         <span
-          className={`flex-1 text-[1.02rem] font-medium leading-snug tracking-tight transition-colors duration-300 sm:text-[1.1rem] ${
-            open ? "text-ink" : "text-ink group-hover:text-ink/70"
+          className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full transition-all duration-500 ${
+            open ? "rotate-45 bg-white text-ink" : "bg-ink/[0.05] text-ink/60 group-hover:bg-ink group-hover:text-white"
           }`}
         >
-          {item.q}
-        </span>
-        <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center text-ink/50">
-          {open ? <Minus className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
+          <Plus className="h-4 w-4" />
         </span>
       </button>
       <AnimatePresence initial={false}>
@@ -74,17 +79,17 @@ function Row({
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.35, ease: EASE }}
-            className="overflow-hidden"
+            transition={{ duration: 0.4, ease: EASE }}
+            className="relative overflow-hidden"
           >
-            <p className="max-w-[62ch] pb-6 pl-[2.1rem] text-[0.92rem] leading-relaxed text-ink/60 sm:pl-[2.6rem] sm:text-[0.95rem]">
+            <p className="max-w-[62ch] px-5 pb-6 pl-[3.1rem] text-[0.92rem] leading-relaxed text-white/65 sm:px-6 sm:pl-[3.6rem] sm:text-[0.95rem]">
               {item.a}
               {index === 0 && (
                 <>
                   {" "}
                   If you have an idea but aren&rsquo;t sure what you need yet, that&rsquo;s completely fine. Start
                   with the problem and we&rsquo;ll{" "}
-                  <Link href="/contact" className="text-ink underline decoration-ink/30 underline-offset-4 hover:decoration-ink">
+                  <Link href="/contact" className="text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">
                     help figure out the right approach
                   </Link>
                   .
@@ -118,15 +123,17 @@ export function FaqSection() {
         };
 
   return (
-    <section className="relative overflow-hidden bg-[#fdfdfc] px-5 py-20 sm:px-8 lg:py-28">
-      <div className="mx-auto grid max-w-[1180px] gap-14 lg:grid-cols-[400px_1fr] lg:gap-16">
-        <div ref={headRef}>
+    <section className="relative overflow-hidden bg-white px-5 py-20 sm:px-8 lg:py-28">
+      <Atmosphere tone="light" still={still} />
+      <div className="relative mx-auto grid max-w-[1180px] gap-14 lg:grid-cols-[400px_1fr] lg:gap-16">
+        <div ref={headRef} className="lg:sticky lg:top-28 lg:self-start">
           <Eyebrow on={headOn} still={still}>
             FAQ
           </Eyebrow>
-          <h2 className="mt-6 text-[2.6rem] leading-[1.03] tracking-[-0.02em] text-ink sm:text-[3rem]" style={serif}>
-            {["Things you’re probably", "wondering."].map((line, i) => (
-              <span key={line} className="block overflow-hidden pb-[0.08em]">
+          <h2 className="mt-6 text-[2.8rem] leading-[1] tracking-[-0.025em] text-ink sm:text-[3.6rem]" style={serif}>
+            {["Things you’re probably", <span key="w" className="italic text-orange">wondering.</span>].map((line, i) => (
+
+              <span key={i} className="block overflow-hidden pb-[0.08em]">
                 <motion.span
                   className="block"
                   initial={still ? false : { y: "105%", rotate: 2 }}
@@ -147,7 +154,7 @@ export function FaqSection() {
           </div>
         </div>
 
-        <div ref={listRef}>
+        <div ref={listRef} className="flex flex-col gap-2.5">
           {faqs.map((item, i) => (
             <Row
               key={item.q}

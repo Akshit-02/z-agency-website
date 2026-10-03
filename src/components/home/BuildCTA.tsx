@@ -1,10 +1,11 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, type MouseEvent } from "react";
 import Link from "next/link";
-import { motion, useInView, useReducedMotion } from "motion/react";
+import { motion, useInView, useMotionValue, useReducedMotion, useSpring, useTransform, type MotionValue } from "motion/react";
 import { ArrowRight, ArrowUpRight, Asterisk } from "lucide-react";
 import { site } from "@/lib/site";
+import { DarkPanel, Eyebrow, MaskLines, riseProps } from "@/components/ui/Aesthetic";
 
 const EASE = [0.25, 1, 0.5, 1] as const;
 const serif = { fontFamily: "var(--font-newsreader), Georgia, serif" } as const;
@@ -18,23 +19,12 @@ const pills: Pill[] = [
   { label: "Automation", className: "right-0 bottom-[24%] rotate-2", delay: 0.86 },
 ];
 
-function Eyebrow({ on, still }: { on: boolean; still: boolean }) {
+function Orbit({ on, still, rotateX, rotateY }: { on: boolean; still: boolean; rotateX: MotionValue<number>; rotateY: MotionValue<number> }) {
   return (
-    <p className="flex items-center gap-3 text-[0.7rem] font-medium uppercase tracking-[0.16em] text-ink">
-      <motion.span
-        className="h-px w-6 origin-left bg-orange-600"
-        initial={still ? false : { scaleX: 0 }}
-        animate={on ? { scaleX: 1 } : {}}
-        transition={{ duration: 0.8, ease: EASE }}
-      />
-      Let&rsquo;s build
-    </p>
-  );
-}
-
-function Orbit({ on, still }: { on: boolean; still: boolean }) {
-  return (
-    <div className="relative mx-auto h-[280px] w-full max-w-[620px] sm:h-[320px]">
+    <motion.div
+      className="relative mx-auto h-[280px] w-full max-w-[620px] sm:h-[320px]"
+      style={{ rotateX, rotateY, transformPerspective: 1100, transformStyle: "preserve-3d" }}
+    >
       <svg viewBox="0 0 620 320" className="absolute inset-0 h-full w-full overflow-visible" fill="none">
         <g transform="rotate(-6 310 160)">
           <motion.ellipse
@@ -43,7 +33,7 @@ function Orbit({ on, still }: { on: boolean; still: boolean }) {
             rx="248"
             ry="128"
             stroke="#8b93d6"
-            strokeOpacity="0.5"
+            strokeOpacity="0.6"
             strokeWidth="1"
             initial={{ pathLength: still ? 1 : 0, opacity: still ? 1 : 0 }}
             animate={on ? { pathLength: 1, opacity: 1 } : {}}
@@ -89,7 +79,7 @@ function Orbit({ on, still }: { on: boolean; still: boolean }) {
       />
       <motion.div
         className="absolute left-1/2 top-1/2 flex h-[132px] w-[122px] -translate-x-1/2 -translate-y-1/2 flex-col justify-center gap-2.5 rounded-xl bg-white px-4 py-4"
-        style={{ boxShadow: "0 24px 48px -16px rgba(11,12,14,0.28)" }}
+        style={{ boxShadow: "0 30px 60px -16px rgba(0,0,0,0.6)", z: 40 }}
         initial={still ? false : { opacity: 0, scale: 0.85, rotate: -6, y: 10 }}
         animate={
           on && !still
@@ -116,18 +106,19 @@ function Orbit({ on, still }: { on: boolean; still: boolean }) {
         <motion.div
           key={p.label}
           className={`absolute ${p.className}`}
+          style={{ z: 70 }}
           initial={still ? false : { opacity: 0, y: 14, scale: 0.9 }}
           animate={on ? { opacity: 1, y: 0, scale: 1 } : {}}
           transition={{ duration: 0.6, ease: EASE, delay: p.delay }}
         >
           <Float still={still} delay={p.delay}>
-            <span className="inline-block whitespace-nowrap rounded-full bg-white px-4 py-2.5 text-[0.85rem] font-medium text-ink shadow-[0_14px_30px_-14px_rgba(11,12,14,0.25),0_0_0_1px_rgba(11,12,14,0.04)]">
+            <span className="inline-block whitespace-nowrap rounded-full bg-white px-4 py-2.5 text-[0.85rem] font-medium text-ink shadow-[0_18px_36px_-12px_rgba(0,0,0,0.6)]">
               {p.label}
             </span>
           </Float>
         </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 }
 
@@ -143,65 +134,72 @@ function Float({ children, still, delay }: { children: React.ReactNode; still: b
 }
 
 export function BuildCTA() {
-  const reduced = useReducedMotion();
-  const still = !!reduced;
+  const still = !!useReducedMotion();
 
   const ref = useRef<HTMLDivElement>(null);
   const on = useInView(ref, { once: true, amount: 0.35 });
 
-  const rise = (delay: number) =>
-    still
-      ? { initial: false as const }
-      : {
-          initial: { opacity: 0, y: 18 },
-          animate: on ? { opacity: 1, y: 0 } : {},
-          transition: { duration: 0.8, ease: EASE, delay },
-        };
+  // the orbit leans toward the cursor; pills float at a different depth
+  const mx = useMotionValue(0.5);
+  const my = useMotionValue(0.5);
+  const spring = { stiffness: 90, damping: 16 };
+  const rotateX = useSpring(useTransform(my, [0, 1], still ? [0, 0] : [14, -14]), spring);
+  const rotateY = useSpring(useTransform(mx, [0, 1], still ? [0, 0] : [-18, 18]), spring);
+
+  function onMove(e: MouseEvent<HTMLDivElement>) {
+    const r = e.currentTarget.getBoundingClientRect();
+    mx.set((e.clientX - r.left) / r.width);
+    my.set((e.clientY - r.top) / r.height);
+  }
 
   return (
-    <section ref={ref} className="relative overflow-hidden bg-[#fdfdfc] px-5 py-20 sm:px-8 lg:py-24">
-      <div className="mx-auto grid max-w-[1400px] items-center gap-14 lg:grid-cols-[1fr_1.15fr] lg:gap-8">
+    <DarkPanel innerClassName="px-5 py-16 sm:px-10 sm:py-20 lg:px-14 lg:py-20">
+      <div
+        ref={ref}
+        onMouseMove={onMove}
+        onMouseLeave={() => {
+          mx.set(0.5);
+          my.set(0.5);
+        }}
+        className="grid items-center gap-14 lg:grid-cols-[1fr_1.15fr] lg:gap-8"
+      >
         <div>
-          <Eyebrow on={on} still={still} />
-          <h2 className="mt-6 text-[2.6rem] leading-[1.05] tracking-[-0.02em] text-ink sm:text-[3.2rem]" style={serif}>
-            {["Got something", "in mind?"].map((line, i) => (
-              <span key={line} className="block overflow-hidden pb-[0.08em]">
-                <motion.span
-                  className="block"
-                  initial={still ? false : { y: "105%", rotate: 2 }}
-                  animate={on ? { y: 0, rotate: 0 } : {}}
-                  transition={{ duration: 1, ease: EASE, delay: 0.1 + i * 0.12 }}
-                >
-                  {line}
-                </motion.span>
-              </span>
-            ))}
+          <Eyebrow on={on} still={still} tone="dark">
+            Let&rsquo;s build
+          </Eyebrow>
+          <h2 className="mt-6 text-[3rem] leading-[0.98] tracking-[-0.025em] sm:text-[4rem] lg:text-[4.6rem]" style={serif}>
+            <MaskLines
+              on={on}
+              still={still}
+              lines={[<>Got something</>, <span key="m" className="italic text-orange-bright">in mind?</span>]}
+            />
           </h2>
-          <motion.p className="mt-5 max-w-[28rem] text-[1.02rem] leading-relaxed text-ink/55" {...rise(0.4)}>
+          <motion.p className="mt-6 max-w-[28rem] text-[1.02rem] leading-relaxed text-white/60" {...riseProps(on, still, 0.4)}>
             Whether you have a clear plan or just an idea, we&rsquo;re here to help you figure out the next step.
           </motion.p>
 
-          <motion.div className="mt-8 flex flex-wrap items-center gap-5" {...rise(0.5)}>
+          <motion.div className="mt-8 flex flex-wrap items-center gap-5" {...riseProps(on, still, 0.5)}>
             <Link
               href="/contact"
-              className="group inline-flex items-center justify-center gap-2 rounded-full bg-ink px-7 py-4 text-[0.92rem] font-medium text-white transition-colors duration-300 hover:bg-ink/85"
+              className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-white px-7 py-4 text-[0.92rem] font-medium text-ink"
             >
+              <span
+                aria-hidden
+                className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-orange-500/25 to-transparent transition-transform duration-700 group-hover:translate-x-full"
+              />
               Start a Project
               <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </Link>
-            <span className="h-6 w-px bg-ink/15" />
-            <a
-              href={`mailto:${site.email}`}
-              className="group inline-flex items-center gap-1.5 text-[0.92rem] font-medium text-ink"
-            >
+            <span className="h-6 w-px bg-white/15" />
+            <a href={`mailto:${site.email}`} className="group inline-flex items-center gap-1.5 text-[0.92rem] font-medium text-white/80 hover:text-white">
               Or just say hello
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
           </motion.div>
         </div>
 
-        <Orbit on={on} still={still} />
+        <Orbit on={on} still={still} rotateX={rotateX} rotateY={rotateY} />
       </div>
-    </section>
+    </DarkPanel>
   );
 }

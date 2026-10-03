@@ -47,7 +47,7 @@ export function HomeIntro() {
 
       <div
         ref={coverRef}
-        className="relative z-10 -mt-10 overflow-hidden rounded-t-[40px] bg-[#fdfdfc] shadow-[0_-30px_70px_-30px_rgba(11,12,14,0.22)]"
+        className="relative z-10 -mt-10 overflow-hidden rounded-t-[40px] bg-white shadow-[0_-30px_70px_-30px_rgba(11,12,14,0.22)]"
       >
         <ProblemSection />
       </div>

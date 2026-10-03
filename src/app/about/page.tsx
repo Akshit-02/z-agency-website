@@ -81,7 +81,7 @@ export default function AboutPage() {
               <Eyebrow accent="blue">Philosophy</Eyebrow>
             </Reveal>
             <Reveal delay={0.05}>
-              <h2 className="mt-4 text-balance font-display text-[1.9rem] font-medium leading-[1.15] tracking-tight sm:text-[2.3rem]">
+              <h2 className="mt-4 text-balance font-serif-display text-[1.9rem] leading-[1.15] tracking-tight sm:text-[2.3rem]">
                 Technology should make a business faster, clearer and easier
                 to <span className="text-blue">trust</span> — never more
                 complicated.
@@ -139,7 +139,7 @@ export default function AboutPage() {
               <Eyebrow accent="orange">Capabilities</Eyebrow>
             </Reveal>
             <Reveal delay={0.05}>
-              <h2 className="mt-4 text-balance font-display text-[2rem] font-medium leading-[1.1] tracking-tight sm:text-[2.4rem]">
+              <h2 className="mt-4 text-balance font-serif-display text-[2rem] leading-[1.1] tracking-tight sm:text-[2.4rem]">
                 Design, engineering and strategy,{" "}
                 <span className="text-orange">under one roof</span>.
               </h2>
@@ -169,7 +169,7 @@ export default function AboutPage() {
               <Eyebrow accent="blue">Working style</Eyebrow>
             </Reveal>
             <Reveal delay={0.05}>
-              <h2 className="mt-4 text-balance font-display text-[2rem] font-medium leading-[1.1] tracking-tight sm:text-[2.4rem]">
+              <h2 className="mt-4 text-balance font-serif-display text-[2rem] leading-[1.1] tracking-tight sm:text-[2.4rem]">
                 Clear communication, from kickoff to launch.
               </h2>
             </Reveal>
