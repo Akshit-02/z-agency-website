@@ -559,7 +559,7 @@ export const commercePosts47: BlogPost[] = [
       {
         heading: "3D Viewers",
         body: [
-          "3D models let shoppers rotate and inspect products and can render configurations that would be impractical to photograph. They require accurate models for each product (and sometimes each material), optimized files and maintenance as ranges change. Shopify product media, for example, supports 3D models in GLB or USDZ format up to 500 MB, automatically optimizing larger files ([[https://help.shopify.com/en/manual/products/product-media/product-media-types|Shopify Help Center]]).",
+          "3D models let shoppers rotate and inspect products and can render configurations that would be impractical to photograph. They require accurate models for each product (and sometimes each material), optimized files and maintenance as ranges change. Shopify product media, for example, supports 3D models in GLB or USDZ format up to 500 MB, automatically optimizing larger files (Shopify Help Center).",
         ],
       },
       {
@@ -722,7 +722,7 @@ export const commercePosts47: BlogPost[] = [
       {
         heading: "Platform Notes",
         body: [
-          "On Shopify, Search & Discovery supports standard filters and custom filters based on product options, metafields and metaobjects, with up to 1,000 values per filter ([[https://help.shopify.com/en/manual/online-store/storefront-search/search-and-discovery-filters|Shopify Help Center]]). Dimension ranges and capacity filters depend on how those metafields are structured and how the theme displays them. See [[/blogs/shopify-furniture-store|Shopify furniture store]].",
+          "On Shopify, Search & Discovery supports standard filters and custom filters based on product options, metafields and metaobjects, with up to 1,000 values per filter (Shopify Help Center). Dimension ranges and capacity filters depend on how those metafields are structured and how the theme displays them. See [[/blogs/shopify-furniture-store|Shopify furniture store]].",
         ],
       },
       {

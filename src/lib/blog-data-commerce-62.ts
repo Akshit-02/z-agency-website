@@ -76,7 +76,7 @@ export const commercePosts62: BlogPost[] = [
       {
         heading: "Verification and KYC",
         body: [
-          "Before sellers receive money, marketplaces usually need to verify who they are. Requirements come from payment providers, card networks and law, and vary by country and business type. Many marketplaces use their payment provider's hosted or embedded onboarding, which collects and verifies the required information and keeps the requirements current. Stripe Connect, for example, offers hosted and embedded onboarding for connected accounts ([[https://docs.stripe.com/connect/onboarding|Stripe documentation]]).",
+          "Before sellers receive money, marketplaces usually need to verify who they are. Requirements come from payment providers, card networks and law, and vary by country and business type. Many marketplaces use their payment provider's hosted or embedded onboarding, which collects and verifies the required information and keeps the requirements current. Stripe Connect, for example, offers hosted and embedded onboarding for connected accounts (Stripe documentation).",
           "Design around verification rather than hiding it. Explain why information is needed, show which items are pending, and when verification fails, say what's wrong and how to fix it. Verification should not be treated as legal advice to sellers; point them to the provider's guidance and your support team.",
           "How verification fits into ongoing risk tiers, moderation and enforcement is covered in [[/blogs/marketplace-trust-and-safety|marketplace trust and safety]].",
         ],

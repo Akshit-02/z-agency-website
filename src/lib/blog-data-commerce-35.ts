@@ -247,7 +247,7 @@ export const commercePosts35: BlogPost[] = [
       {
         heading: "Payment Methods for Renewals",
         body: [
-          "Not every payment method supports recurring charges. Cards generally do, with the card stored as a token by the payment provider. Some wallets and local methods support recurring payments; others don't or have restrictions. Only show methods that work for the subscription in the cart, and explain if a method is unavailable. On Shopify, for example, selling subscriptions requires a supported gateway such as Shopify Payments, and some wallets are limited with certain gateways ([[https://help.shopify.com/en/manual/products/purchase-options/subscriptions/considerations|Shopify Help Center]]).",
+          "Not every payment method supports recurring charges. Cards generally do, with the card stored as a token by the payment provider. Some wallets and local methods support recurring payments; others don't or have restrictions. Only show methods that work for the subscription in the cart, and explain if a method is unavailable. On Shopify, for example, selling subscriptions requires a supported gateway such as Shopify Payments, and some wallets are limited with certain gateways (Shopify Help Center).",
         ],
         callout: {
           type: "note",
@@ -306,7 +306,7 @@ export const commercePosts35: BlogPost[] = [
       {
         heading: "Platform Notes",
         body: [
-          "On hosted checkouts such as Shopify's, much of the payment handling is built in, and subscription apps add the recurring terms and account links. With headless storefronts, the cart must carry the selling plan or subscription plan so checkout processes it as recurring; Shopify's Storefront API, for example, accepts a selling plan ID on cart lines ([[https://shopify.dev/docs/storefronts/headless/building-with-the-storefront-api/products-collections/subscriptions|Shopify developer docs]]). With custom builds, the payment provider's subscription or stored-credential APIs handle tokenization and renewals. See [[/blogs/shopify-subscription-store|Shopify subscription store]].",
+          "On hosted checkouts such as Shopify's, much of the payment handling is built in, and subscription apps add the recurring terms and account links. With headless storefronts, the cart must carry the selling plan or subscription plan so checkout processes it as recurring; Shopify's Storefront API, for example, accepts a selling plan ID on cart lines (Shopify developer docs). With custom builds, the payment provider's subscription or stored-credential APIs handle tokenization and renewals. See [[/blogs/shopify-subscription-store|Shopify subscription store]].",
         ],
       },
       {

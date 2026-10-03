@@ -197,7 +197,7 @@ export const designPosts: BlogPost[] = [
       {
         heading: "Frameworks Behind the Process",
         body: [
-          "Two frameworks shape most modern practice. Design thinking frames the work around empathy, definition, ideation, prototyping and testing. The UK Design Council's [[https://www.designcouncil.org.uk/our-resources/the-double-diamond/|Double Diamond]] describes exploring widely then converging, twice: once on the problem, once on the solution. The stages below apply both to real product delivery.",
+          "Two frameworks shape most modern practice. Design thinking frames the work around empathy, definition, ideation, prototyping and testing. The UK Design Council's Double Diamond describes exploring widely then converging, twice: once on the problem, once on the solution. The stages below apply both to real product delivery.",
         ],
       },
       {
@@ -435,7 +435,7 @@ export const designPosts: BlogPost[] = [
       {
         heading: "Usability Principles",
         body: [
-          "Jakob Nielsen's [[https://www.nngroup.com/articles/ten-usability-heuristics/|10 usability heuristics]], first published in 1994 and still widely used, remain a practical checklist: keep users informed about system status, speak their language, give them control and easy undo, stay consistent, prevent errors, favor recognition over recall, support both new and expert users, keep designs focused, help users recover from errors, and provide help when needed.",
+          "Jakob Nielsen's 10 usability heuristics, first published in 1994 and still widely used, remain a practical checklist: keep users informed about system status, speak their language, give them control and easy undo, stay consistent, prevent errors, favor recognition over recall, support both new and expert users, keep designs focused, help users recover from errors, and provide help when needed.",
         ],
       },
       {
@@ -591,7 +591,7 @@ export const designPosts: BlogPost[] = [
       {
         heading: "Step 5: Usability Testing",
         body: [
-          "Ask representative users to complete realistic tasks with the prototype while thinking aloud, and watch where they hesitate or fail. According to [[https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/|Nielsen Norman Group]], small tests of around five users per round, repeated, uncover most usability problems more efficiently than one large study. See [[/blogs/usability-testing|usability testing]].",
+          "Ask representative users to complete realistic tasks with the prototype while thinking aloud, and watch where they hesitate or fail. According to Nielsen Norman Group, small tests of around five users per round, repeated, uncover most usability problems more efficiently than one large study. See [[/blogs/usability-testing|usability testing]].",
         ],
       },
       {
@@ -753,7 +753,7 @@ export const designPosts: BlogPost[] = [
       {
         heading: "10. Follow Platform Conventions",
         body: [
-          "Users bring expectations from every other product they use. For apps, Apple's [[https://developer.apple.com/design/human-interface-guidelines/|Human Interface Guidelines]] and Google's [[https://m3.material.io/|Material Design]] describe the conventions to respect. For websites, familiar patterns such as a top-right cart or a clickable logo returning home reduce effort.",
+          "Users bring expectations from every other product they use. For apps, Apple's Human Interface Guidelines and Google's Material Design describe the conventions to respect. For websites, familiar patterns such as a top-right cart or a clickable logo returning home reduce effort.",
         ],
       },
       {
@@ -820,7 +820,7 @@ export const designPosts: BlogPost[] = [
       {
         heading: "Types of Research",
         body: [
-          "Two dimensions help choose methods: attitudinal (what people say) vs behavioral (what they do), and qualitative (why and how) vs quantitative (how many and how much). Nielsen Norman Group's [[https://www.nngroup.com/articles/which-ux-research-methods/|guide to choosing UX research methods]] maps many methods on these dimensions.",
+          "Two dimensions help choose methods: attitudinal (what people say) vs behavioral (what they do), and qualitative (why and how) vs quantitative (how many and how much). Nielsen Norman Group's guide to choosing UX research methods maps many methods on these dimensions.",
         ],
         visual: { variant: "grid", accent: "blue", caption: "Match the method to the question: what people say vs do, and why vs how many." },
       },
@@ -879,7 +879,7 @@ export const designPosts: BlogPost[] = [
       {
         heading: "Synthesis: From Notes to Insights",
         body: [
-          "Group observations into themes (affinity mapping), look for patterns across participants, and write insights that link a behavior to its cause and a design implication. Personas and [[https://www.nngroup.com/articles/journey-mapping-101/|journey maps]] are useful ways to share these findings, as long as they're grounded in the research.",
+          "Group observations into themes (affinity mapping), look for patterns across participants, and write insights that link a behavior to its cause and a design implication. Personas and journey maps are useful ways to share these findings, as long as they're grounded in the research.",
         ],
       },
       {

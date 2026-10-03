@@ -91,7 +91,7 @@ export const commercePosts31: BlogPost[] = [
       {
         heading: "Events, Webhooks and Reliability",
         body: [
-          "Platforms notify integrations of changes through webhooks. Treat them as signals, not guarantees. Shopify's documentation, for example, recommends verifying webhook HMAC signatures, using the webhook ID header to detect duplicates, not relying on delivery order (using timestamps or the resource's updated time instead) and running reconciliation jobs because delivery isn't guaranteed ([[https://shopify.dev/docs/apps/build/webhooks|Shopify developer docs]]). Respond quickly and process asynchronously through a queue.",
+          "Platforms notify integrations of changes through webhooks. Treat them as signals, not guarantees. Shopify's documentation, for example, recommends verifying webhook HMAC signatures, using the webhook ID header to detect duplicates, not relying on delivery order (using timestamps or the resource's updated time instead) and running reconciliation jobs because delivery isn't guaranteed (Shopify developer docs). Respond quickly and process asynchronously through a queue.",
         ],
         code: {
           label: "Webhook handling pattern (pseudocode)",
@@ -105,7 +105,7 @@ export const commercePosts31: BlogPost[] = [
       {
         heading: "API Limits and Bulk Operations",
         body: [
-          "Both the platform and the ERP limit how fast you can call their APIs. Shopify's GraphQL Admin API uses cost-based rate limits that vary by plan, and the REST Admin API uses a leaky-bucket model ([[https://shopify.dev/docs/api/usage/limits|Shopify developer docs]]). Use bulk operations for large catalog updates, batch writes, back off on throttling and spread scheduled jobs.",
+          "Both the platform and the ERP limit how fast you can call their APIs. Shopify's GraphQL Admin API uses cost-based rate limits that vary by plan, and the REST Admin API uses a leaky-bucket model (Shopify developer docs). Use bulk operations for large catalog updates, batch writes, back off on throttling and spread scheduled jobs.",
         ],
       },
       {
@@ -552,7 +552,7 @@ export const commercePosts31: BlogPost[] = [
       {
         heading: "Webhooks and Asynchronous Outcomes",
         body: [
-          "Redirect-based and delayed payment methods, disputes and refunds are reported asynchronously. Stripe's documentation, for example, notes that webhook events can be retried for up to three days in live mode, may arrive out of order and may be duplicated, so handlers should verify signatures against the raw request body, deduplicate by event ID, return a 2xx quickly and process asynchronously ([[https://docs.stripe.com/webhooks|Stripe docs]]). Other providers have similar guidance.",
+          "Redirect-based and delayed payment methods, disputes and refunds are reported asynchronously. Stripe's documentation, for example, notes that webhook events can be retried for up to three days in live mode, may arrive out of order and may be duplicated, so handlers should verify signatures against the raw request body, deduplicate by event ID, return a 2xx quickly and process asynchronously (Stripe docs). Other providers have similar guidance.",
         ],
         code: {
           label: "Idempotent payment event handling (pseudocode)",

@@ -554,7 +554,7 @@ export const commercePosts52: BlogPost[] = [
       {
         heading: "Discovery: Collections, Filters and Search",
         body: [
-          "Build collections by sport and activity using metafield-based rules, and use the Search & Discovery app for filters: standard ones (availability, category, price, product type, tags, vendor) plus custom filters from options (size, colour) and metafields (sport, surface, level, specs), with up to 1,000 values per filter ([[https://help.shopify.com/en/manual/online-store/storefront-search/search-and-discovery-filters|Shopify Help Center]]). Add synonyms for sports vocabulary. See [[/blogs/sports-ecommerce-filters|sports filters]] and [[/blogs/sports-ecommerce-search|sports search]].",
+          "Build collections by sport and activity using metafield-based rules, and use the Search & Discovery app for filters: standard ones (availability, category, price, product type, tags, vendor) plus custom filters from options (size, colour) and metafields (sport, surface, level, specs), with up to 1,000 values per filter (Shopify Help Center). Add synonyms for sports vocabulary. See [[/blogs/sports-ecommerce-filters|sports filters]] and [[/blogs/sports-ecommerce-search|sports search]].",
         ],
         cta: {
           title: "Launching or rebuilding a sports store on Shopify?",
@@ -564,7 +564,7 @@ export const commercePosts52: BlogPost[] = [
       {
         heading: "Product Pages",
         body: [
-          "Use theme sections and metafields to show who-it's-for summaries, spec tables, size guides beside the size selector, fit notes and reviews with activity data. Media can include images, video and 3D models, with up to 250 items per product ([[https://help.shopify.com/en/manual/products/product-media/product-media-types|Shopify Help Center]]). See [[/blogs/sports-product-page-design|sports product page design]].",
+          "Use theme sections and metafields to show who-it's-for summaries, spec tables, size guides beside the size selector, fit notes and reviews with activity data. Media can include images, video and 3D models, with up to 250 items per product (Shopify Help Center). See [[/blogs/sports-product-page-design|sports product page design]].",
         ],
       },
       {
@@ -582,7 +582,7 @@ export const commercePosts52: BlogPost[] = [
       {
         heading: "Analytics",
         body: [
-          "Use Shopify analytics for sales and conversion, and customer events (such as product_viewed, search_submitted, product_added_to_cart and checkout_completed) through pixels for deeper tracking ([[https://shopify.dev/docs/api/web-pixels-api/standard-events|Shopify developer docs]]). Add custom events for filter use and size guide opens, and analyse returns for fit. See [[/blogs/ecommerce-event-tracking|ecommerce event tracking]].",
+          "Use Shopify analytics for sales and conversion, and customer events (such as product_viewed, search_submitted, product_added_to_cart and checkout_completed) through pixels for deeper tracking (Shopify developer docs). Add custom events for filter use and size guide opens, and analyse returns for fit. See [[/blogs/ecommerce-event-tracking|ecommerce event tracking]].",
         ],
       },
       {

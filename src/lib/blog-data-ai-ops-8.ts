@@ -112,7 +112,7 @@ export const aiOpsPosts8: BlogPost[] = [
       {
         heading: "Accessibility",
         body: [
-          "Streaming and dynamic content can overwhelm screen readers. Use polite live region announcements for completed responses rather than every token, keep focus stable when content updates, support full keyboard operation, provide text alternatives to voice and image input and meet contrast requirements in [[https://www.w3.org/TR/WCAG22/|WCAG 2.2]]. Test generated content too: AI-written alt text and summaries need checking. More in our [[/blogs/accessible-ui-ux-design|accessible UI/UX design]] guide.",
+          "Streaming and dynamic content can overwhelm screen readers. Use polite live region announcements for completed responses rather than every token, keep focus stable when content updates, support full keyboard operation, provide text alternatives to voice and image input and meet contrast requirements in WCAG 2.2. Test generated content too: AI-written alt text and summaries need checking. More in our [[/blogs/accessible-ui-ux-design|accessible UI/UX design]] guide.",
         ],
       },
       {
@@ -225,7 +225,7 @@ export const aiOpsPosts8: BlogPost[] = [
       {
         heading: "Two Research-Based References",
         body: [
-          "Microsoft's [[https://www.microsoft.com/en-us/haxtoolkit/ai-guidelines/|Guidelines for Human-AI Interaction]] are 18 evidence-based guidelines grouped by when they apply: initially, during interaction, when the system is wrong and over time. The [[https://www.microsoft.com/en-us/haxtoolkit/|HAX Toolkit]] adds a design library and workbook. Google's [[https://pair.withgoogle.com/guidebook/|People + AI Guidebook]] covers user needs, mental models, explainability and trust, feedback and control, and errors and graceful failure. Both are free and worth using as checklists during design reviews.",
+          "Microsoft's Guidelines for Human-AI Interaction are 18 evidence-based guidelines grouped by when they apply: initially, during interaction, when the system is wrong and over time. The HAX Toolkit adds a design library and workbook. Google's People + AI Guidebook covers user needs, mental models, explainability and trust, feedback and control, and errors and graceful failure. Both are free and worth using as checklists during design reviews.",
         ],
       },
       {
@@ -321,7 +321,7 @@ export const aiOpsPosts8: BlogPost[] = [
         heading: "Using the Guidelines in Design Reviews",
         body: [
           "Guidelines are most useful as a structured review. For each AI feature, walk through the four phases and ask concrete questions: Does onboarding state what the feature can and cannot do? Does the feature act at sensible moments? When it is wrong, can users dismiss, correct and understand why? Does it adapt visibly and notify users of changes? Record which guidelines apply, how the design addresses them and which gaps are accepted and why.",
-          "Pair the review with evidence: usability sessions with real model outputs, especially failure cases, and metrics such as acceptance and correction rates after launch. The HAX Toolkit includes a workbook designed for this kind of review, and the [[https://pair.withgoogle.com/guidebook/|People + AI Guidebook]] offers worksheets for user needs, mental models and feedback.",
+          "Pair the review with evidence: usability sessions with real model outputs, especially failure cases, and metrics such as acceptance and correction rates after launch. The HAX Toolkit includes a workbook designed for this kind of review, and the People + AI Guidebook offers worksheets for user needs, mental models and feedback.",
         ],
       },
       {
@@ -455,7 +455,7 @@ export const aiOpsPosts8: BlogPost[] = [
       {
         heading: "Responsive and Accessible Design",
         body: [
-          "On mobile, keep the composer visible above the keyboard, use full-width messages, collapse sources and tool steps, and make tables scroll horizontally within the message rather than breaking the layout. For accessibility, announce completed messages through live regions rather than every streamed token, keep focus predictable, label icon buttons and ensure contrast meets [[https://www.w3.org/TR/WCAG22/|WCAG 2.2]].",
+          "On mobile, keep the composer visible above the keyboard, use full-width messages, collapse sources and tool steps, and make tables scroll horizontally within the message rather than breaking the layout. For accessibility, announce completed messages through live regions rather than every streamed token, keep focus predictable, label icon buttons and ensure contrast meets WCAG 2.2.",
         ],
       },
       {

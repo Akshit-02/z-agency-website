@@ -402,7 +402,7 @@ export const commercePosts43: BlogPost[] = [
       {
         heading: "Asynchronous Processing and Integrations",
         body: [
-          "Order spikes become integration spikes: ERP, warehouse, email, CRM and analytics all receive more events. Buffer webhooks in queues, process asynchronously, respect third-party rate limits with backoff, make writes idempotent and monitor queue depth. Shopify, for example, applies API rate limits to apps and custom integrations, so bulk operations and throttling are part of design ([[https://shopify.dev/docs/api/usage/limits|Shopify developer docs]]). See [[/blogs/ecommerce-api-integration|ecommerce API integration]].",
+          "Order spikes become integration spikes: ERP, warehouse, email, CRM and analytics all receive more events. Buffer webhooks in queues, process asynchronously, respect third-party rate limits with backoff, make writes idempotent and monitor queue depth. Shopify, for example, applies API rate limits to apps and custom integrations, so bulk operations and throttling are part of design (Shopify developer docs). See [[/blogs/ecommerce-api-integration|ecommerce API integration]].",
           "See [[/blogs/ecommerce-event-driven-architecture|event-driven architecture]] and [[/blogs/ecommerce-queue-architecture|queue architecture]].",
         ],
       },

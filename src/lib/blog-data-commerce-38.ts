@@ -50,7 +50,7 @@ export const commercePosts38: BlogPost[] = [
       {
         heading: "Detecting and Choosing Currency",
         body: [
-          "Most stores suggest a market (and so a currency) based on location, then let the visitor change it through a clearly visible selector, usually in the header and footer. Remember the choice. Avoid forcing redirects based on location: Google advises against automatically redirecting users between versions, and forced redirects frustrate travellers and people buying for others ([[https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites|Google Search Central]]).",
+          "Most stores suggest a market (and so a currency) based on location, then let the visitor change it through a clearly visible selector, usually in the header and footer. Remember the choice. Avoid forcing redirects based on location: Google advises against automatically redirecting users between versions, and forced redirects frustrate travellers and people buying for others (Google Search Central).",
         ],
         table: {
           headers: ["Pattern", "Good practice"],
@@ -81,13 +81,13 @@ export const commercePosts38: BlogPost[] = [
       {
         heading: "Rounding and Price Endings",
         body: [
-          "Converted prices produce awkward numbers. Rounding rules adjust them to natural endings per currency (for example whole numbers in some currencies, .95 or .99 in others). Apply rounding consistently to products and, where appropriate, shipping rates. Shopify, for example, lets merchants turn on rounding per currency when selling in markets ([[https://help.shopify.com/en/manual/international/pricing/rounding|Shopify Help Center]]).",
+          "Converted prices produce awkward numbers. Rounding rules adjust them to natural endings per currency (for example whole numbers in some currencies, .95 or .99 in others). Apply rounding consistently to products and, where appropriate, shipping rates. Shopify, for example, lets merchants turn on rounding per currency when selling in markets (Shopify Help Center).",
         ],
       },
       {
         heading: "Checkout and Payment Currency",
         body: [
-          "The currency shown in the cart should be the currency charged. Check that your payment provider supports charging (presentment) in each currency you display and settling to your payout currency, and whether conversion fees apply. On Shopify, selling in multiple currencies requires Shopify Payments, and a currency conversion fee applies when customers pay in a currency different from your payout currency; Shopify describes converted prices as the product price times the conversion rate, adjusted for the conversion fee and then rounded ([[https://help.shopify.com/en/manual/payments/shopify-payments/multi-currency/conversions|Shopify Help Center]]).",
+          "The currency shown in the cart should be the currency charged. Check that your payment provider supports charging (presentment) in each currency you display and settling to your payout currency, and whether conversion fees apply. On Shopify, selling in multiple currencies requires Shopify Payments, and a currency conversion fee applies when customers pay in a currency different from your payout currency; Shopify describes converted prices as the product price times the conversion rate, adjusted for the conversion fee and then rounded (Shopify Help Center).",
         ],
         cta: {
           title: "Prices changing between product page and checkout?",
@@ -115,7 +115,7 @@ export const commercePosts38: BlogPost[] = [
       {
         heading: "Tax Display by Market",
         body: [
-          "Currency and tax are separate concerns. Markets differ in whether consumer prices include tax: many VAT and GST markets show tax-inclusive prices, while US prices usually exclude sales tax. Configure display per market, and remember that changing tax inclusion changes the displayed number. Some markets also have rules about how price reductions are advertised; Shopify's documentation, for example, notes the EU requirement to show the lowest price in the previous 30 days when advertising reductions to customers in the EEA ([[https://help.shopify.com/en/manual/international/markets|Shopify Help Center]]).",
+          "Currency and tax are separate concerns. Markets differ in whether consumer prices include tax: many VAT and GST markets show tax-inclusive prices, while US prices usually exclude sales tax. Configure display per market, and remember that changing tax inclusion changes the displayed number. Some markets also have rules about how price reductions are advertised; Shopify's documentation, for example, notes the EU requirement to show the lowest price in the previous 30 days when advertising reductions to customers in the EEA (Shopify Help Center).",
         ],
       },
       {
@@ -210,7 +210,7 @@ export const commercePosts38: BlogPost[] = [
       {
         heading: "URL Structure for Languages",
         body: [
-          "Google recommends using different URLs for each language version rather than cookies or browser settings, and compares country domains, subdomains and subdirectories as options; it doesn't recommend URL parameters ([[https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites|Google Search Central]]). For most stores, language subdirectories are the simplest to run. Keep the structure consistent so every page has an equivalent in each language.",
+          "Google recommends using different URLs for each language version rather than cookies or browser settings, and compares country domains, subdomains and subdirectories as options; it doesn't recommend URL parameters (Google Search Central). For most stores, language subdirectories are the simplest to run. Keep the structure consistent so every page has an equivalent in each language.",
         ],
         table: {
           headers: ["Structure", "Example", "Notes"],
@@ -225,7 +225,7 @@ export const commercePosts38: BlogPost[] = [
       {
         heading: "Hreflang and Canonicals",
         body: [
-          "Hreflang annotations tell search engines which URLs are language or regional alternates of each other. Each version lists itself and all alternates, the annotations must be reciprocal, language codes follow ISO 639-1 with optional ISO 3166-1 region codes (for example fr, fr-CA), and x-default can point to a language selector or default version. Annotations can be placed in HTML head, HTTP headers or sitemaps ([[https://developers.google.com/search/docs/specialty/international/localized-versions|Google Search Central]]). Each version should normally have a self-referencing canonical.",
+          "Hreflang annotations tell search engines which URLs are language or regional alternates of each other. Each version lists itself and all alternates, the annotations must be reciprocal, language codes follow ISO 639-1 with optional ISO 3166-1 region codes (for example fr, fr-CA), and x-default can point to a language selector or default version. Annotations can be placed in HTML head, HTTP headers or sitemaps (Google Search Central). Each version should normally have a self-referencing canonical.",
         ],
         code: {
           label: "Hreflang in the HTML head of the English product page",
@@ -280,7 +280,7 @@ export const commercePosts38: BlogPost[] = [
       {
         heading: "Platform Notes: Shopify",
         body: [
-          "Shopify stores can publish additional languages, assign domains and languages to markets using subfolders, subdomains or top-level domains, and translate content with the Translate & Adapt app (machine and manual translation, CSV import). Shopify's documentation states that hreflang tags are created automatically for configured international domains and subfolders, with self-referencing canonical URLs and sitemaps that include market URLs ([[https://help.shopify.com/en/manual/markets/seo|Shopify Help Center]]). See [[/blogs/shopify-markets|Shopify Markets]].",
+          "Shopify stores can publish additional languages, assign domains and languages to markets using subfolders, subdomains or top-level domains, and translate content with the Translate & Adapt app (machine and manual translation, CSV import). Shopify's documentation states that hreflang tags are created automatically for configured international domains and subfolders, with self-referencing canonical URLs and sitemaps that include market URLs (Shopify Help Center). See [[/blogs/shopify-markets|Shopify Markets]].",
         ],
       },
       {
@@ -365,7 +365,7 @@ export const commercePosts38: BlogPost[] = [
       {
         heading: "What Search Engines Need",
         body: [
-          "Search engines need to crawl every version, understand which language and region each serves, see that versions are alternates rather than accidental duplicates, and choose the best one for each searcher. Google's guidance on multi-regional and multilingual sites sets out the building blocks: separate URLs per language or region, hreflang or equivalent annotations, and avoiding automatic redirects that stop users and crawlers seeing other versions ([[https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites|Google Search Central]]).",
+          "Search engines need to crawl every version, understand which language and region each serves, see that versions are alternates rather than accidental duplicates, and choose the best one for each searcher. Google's guidance on multi-regional and multilingual sites sets out the building blocks: separate URLs per language or region, hreflang or equivalent annotations, and avoiding automatic redirects that stop users and crawlers seeing other versions (Google Search Central).",
           "The comparison above summarizes URL structure options. For implementation of languages specifically, see [[/blogs/multi-language-ecommerce-website|multi-language ecommerce website]].",
         ],
       },
@@ -378,7 +378,7 @@ export const commercePosts38: BlogPost[] = [
       {
         heading: "Hreflang Implementation",
         body: [
-          "Hreflang tells search engines which URLs are alternates for different languages or regions. Rules to follow: each page lists itself and all alternates; annotations are reciprocal; language codes use ISO 639-1 with optional ISO 3166-1 alpha-2 region codes (en-GB, en-US); x-default marks the fallback; and annotations can go in HTML, HTTP headers or XML sitemaps ([[https://developers.google.com/search/docs/specialty/international/localized-versions|Google Search Central]]). Errors such as missing return links or wrong codes are common, so validate with crawls.",
+          "Hreflang tells search engines which URLs are alternates for different languages or regions. Rules to follow: each page lists itself and all alternates; annotations are reciprocal; language codes use ISO 639-1 with optional ISO 3166-1 alpha-2 region codes (en-GB, en-US); x-default marks the fallback; and annotations can go in HTML, HTTP headers or XML sitemaps (Google Search Central). Errors such as missing return links or wrong codes are common, so validate with crawls.",
         ],
         table: {
           headers: ["Scenario", "Hreflang values"],
@@ -437,7 +437,7 @@ export const commercePosts38: BlogPost[] = [
       {
         heading: "Platform Notes",
         body: [
-          "On Shopify, assigning subfolders, subdomains or domains to markets generates hreflang tags, self-referencing canonicals and sitemaps with market URLs automatically, and crawlers bypass the customer redirection Shopify applies ([[https://help.shopify.com/en/manual/markets/seo|Shopify Help Center]]). Headless and custom builds need to implement these explicitly. Either way, verify the output with a crawler. See [[/blogs/shopify-markets|Shopify Markets]].",
+          "On Shopify, assigning subfolders, subdomains or domains to markets generates hreflang tags, self-referencing canonicals and sitemaps with market URLs automatically, and crawlers bypass the customer redirection Shopify applies (Shopify Help Center). Headless and custom builds need to implement these explicitly. Either way, verify the output with a crawler. See [[/blogs/shopify-markets|Shopify Markets]].",
         ],
       },
       {

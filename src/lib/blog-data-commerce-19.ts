@@ -104,7 +104,7 @@ export const commercePosts19: BlogPost[] = [
       {
         heading: "Platform Options",
         body: [
-          "Shopify's B2B features cover companies and locations, catalogs, quantity rules and price breaks, net terms, vaulted cards, draft orders with PO numbers, quick order lists and reorders on all plans, with unlimited catalogs, deposits and contextual customization on Plus ([[https://help.shopify.com/en/manual/b2b/getting-started/plan-features|Shopify Help Center]]). B2B-focused platforms and custom builds suit very large catalogs, complex pricing or unusual workflows.",
+          "Shopify's B2B features cover companies and locations, catalogs, quantity rules and price breaks, net terms, vaulted cards, draft orders with PO numbers, quick order lists and reorders on all plans, with unlimited catalogs, deposits and contextual customization on Plus (Shopify Help Center). B2B-focused platforms and custom builds suit very large catalogs, complex pricing or unusual workflows.",
           "For the end-to-end architecture, including punchout and EDI channels, see [[/blogs/b2b-commerce-platform-architecture|B2B commerce platform architecture]] and [[/blogs/b2b-punchout-catalogs|punchout catalogs]].",
         ],
         table: {
@@ -468,7 +468,7 @@ export const commercePosts19: BlogPost[] = [
       {
         heading: "Platform Choices",
         body: [
-          "Shopify's B2B features support companies, catalogs, quantity rules, price breaks, net terms and quick order lists on all plans, with unlimited catalogs, deposits and more customization on Plus ([[https://help.shopify.com/en/manual/b2b/getting-started/plan-features|Shopify Help Center]]). Some brands run wholesale on the same store; others use a separate storefront. Apps add features such as grid ordering and line sheets.",
+          "Shopify's B2B features support companies, catalogs, quantity rules, price breaks, net terms and quick order lists on all plans, with unlimited catalogs, deposits and more customization on Plus (Shopify Help Center). Some brands run wholesale on the same store; others use a separate storefront. Apps add features such as grid ordering and line sheets.",
         ],
       },
       {

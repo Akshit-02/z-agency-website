@@ -136,7 +136,7 @@ export const commercePosts89: BlogPost[] = [
       {
         heading: "Platform Notes",
         body: [
-          "On Shopify, [[https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps/build-return-management|return management APIs]] let apps create and process returns and issue refunds, and returns apps automate refunds by rules and carrier or warehouse events. On custom stacks, put refunds behind one service that owns calculation, provider calls and records, so every channel and support tool uses the same logic.",
+          "On Shopify, return management APIs let apps create and process returns and issue refunds, and returns apps automate refunds by rules and carrier or warehouse events. On custom stacks, put refunds behind one service that owns calculation, provider calls and records, so every channel and support tool uses the same logic.",
         ],
       },
       {
@@ -297,7 +297,7 @@ export const commercePosts89: BlogPost[] = [
       {
         heading: "System Design",
         body: [
-          "Model the exchange explicitly: one exchange record with return lines, replacement lines, price adjustments, reservations and statuses. The replacement should be fulfilled as an order or fulfilment linked to the original order, not as a disconnected new order, so revenue, inventory and customer history stay correct. On Shopify, [[https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps/manage-exchanges|exchanges are part of returns]]: exchange line items sit on the return, and processing the return creates fulfilment for the exchange items.",
+          "Model the exchange explicitly: one exchange record with return lines, replacement lines, price adjustments, reservations and statuses. The replacement should be fulfilled as an order or fulfilment linked to the original order, not as a disconnected new order, so revenue, inventory and customer history stay correct. On Shopify, exchanges are part of returns: exchange line items sit on the return, and processing the return creates fulfilment for the exchange items.",
         ],
       },
       {

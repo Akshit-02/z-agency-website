@@ -100,7 +100,7 @@ export const commercePosts55: BlogPost[] = [
       {
         heading: "Setting Up Tracking",
         body: [
-          "Search analytics needs events for the search itself, the results shown and what happens next. In GA4, enhanced measurement records a view_search_results event when the search term appears in a URL query parameter ([[https://support.google.com/analytics/answer/9216061|Google Analytics Help]]). On Shopify, the search_submitted customer event fires when a search is performed ([[https://shopify.dev/docs/api/web-pixels-api/standard-events/search_submitted|Shopify developer docs]]). Many search apps and services record queries, clicks and zero results in their own dashboards.",
+          "Search analytics needs events for the search itself, the results shown and what happens next. In GA4, enhanced measurement records a view_search_results event when the search term appears in a URL query parameter (Google Analytics Help). On Shopify, the search_submitted customer event fires when a search is performed (Shopify developer docs). Many search apps and services record queries, clicks and zero results in their own dashboards.",
           "Add what the defaults miss: the number of results returned, result clicks with position, filters used within search results and autocomplete selections. Without results count, zero-result searches can't be identified; without click position, ranking can't be judged. See [[/blogs/ecommerce-event-tracking|ecommerce event tracking]].",
         ],
         checklist: [
@@ -490,7 +490,7 @@ export const commercePosts55: BlogPost[] = [
       {
         heading: "Accessibility",
         body: [
-          "Autocomplete is a common source of accessibility failures. The WAI-ARIA Authoring Practices describe the combobox pattern, in which a labelled input controls a popup listbox of options ([[https://www.w3.org/WAI/ARIA/apg/patterns/combobox/|W3C WAI-ARIA Authoring Practices]]). Keyboard users should be able to move through suggestions with the arrow keys, select with Enter and close with Escape. Screen reader users need to hear how many suggestions are available and which one is active. Focus must stay in the input while suggestions update.",
+          "Autocomplete is a common source of accessibility failures. The WAI-ARIA Authoring Practices describe the combobox pattern, in which a labelled input controls a popup listbox of options (W3C WAI-ARIA Authoring Practices). Keyboard users should be able to move through suggestions with the arrow keys, select with Enter and close with Escape. Screen reader users need to hear how many suggestions are available and which one is active. Focus must stay in the input while suggestions update.",
           "Check contrast of suggestion text and the highlighted state, make touch targets large enough on mobile, and avoid moving focus unexpectedly. Test with a keyboard and at least one screen reader. See [[/blogs/ecommerce-accessibility|ecommerce accessibility]].",
         ],
         checklist: [
@@ -521,7 +521,7 @@ export const commercePosts55: BlogPost[] = [
       {
         heading: "Autocomplete on Shopify",
         body: [
-          "Shopify's Predictive Search API returns suggested products, collections, pages, articles and queries for a partial search term, and many themes use it to power their search dropdown ([[https://shopify.dev/docs/api/ajax/reference/predictive-search|Shopify developer docs]]). The Search & Discovery app's synonyms also influence results. Search apps add configurable ranking, merchandising and analytics for autocomplete. Check your theme's implementation against the accessibility checklist above, since themes vary.",
+          "Shopify's Predictive Search API returns suggested products, collections, pages, articles and queries for a partial search term, and many themes use it to power their search dropdown (Shopify developer docs). The Search & Discovery app's synonyms also influence results. Search apps add configurable ranking, merchandising and analytics for autocomplete. Check your theme's implementation against the accessibility checklist above, since themes vary.",
         ],
       },
       {

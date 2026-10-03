@@ -275,7 +275,7 @@ export const aiOpsPosts10: BlogPost[] = [
       {
         heading: "Serving Optimizations for Self-Hosted Models",
         body: [
-          "Modern inference engines implement many optimizations for you. [[https://docs.vllm.ai/en/latest/|vLLM]], for example, documents PagedAttention for efficient KV cache memory, continuous batching with chunked prefill, prefix caching, speculative decoding and support for many quantization formats. Alternatives include SGLang and NVIDIA TensorRT-LLM. Benchmark engines on your models, prompt lengths and concurrency, since results depend heavily on workload.",
+          "Modern inference engines implement many optimizations for you. vLLM, for example, documents PagedAttention for efficient KV cache memory, continuous batching with chunked prefill, prefix caching, speculative decoding and support for many quantization formats. Alternatives include SGLang and NVIDIA TensorRT-LLM. Benchmark engines on your models, prompt lengths and concurrency, since results depend heavily on workload.",
           "Batching and caching are covered in [[/blogs/llm-batching-and-caching|LLM batching and caching]], quantization in [[/blogs/llm-quantization|LLM quantization]] and GPU tuning in [[/blogs/gpu-optimization-for-ai|GPU optimization for AI]].",
         ],
       },
@@ -438,13 +438,13 @@ export const aiOpsPosts10: BlogPost[] = [
       {
         heading: "A Note on Engine Status",
         body: [
-          "The serving ecosystem moves quickly. For example, Hugging Face's [[https://huggingface.co/docs/text-generation-inference/index|Text Generation Inference]] documentation now states that TGI is in maintenance mode and recommends vLLM, SGLang and local engines such as llama.cpp going forward. Check project status and release cadence before standardizing on an engine, and keep your application decoupled through a stable API so you can switch.",
+          "The serving ecosystem moves quickly. For example, Hugging Face's Text Generation Inference documentation now states that TGI is in maintenance mode and recommends vLLM, SGLang and local engines such as llama.cpp going forward. Check project status and release cadence before standardizing on an engine, and keep your application decoupled through a stable API so you can switch.",
         ],
       },
       {
         heading: "Gateways and APIs",
         body: [
-          "Most engines expose an OpenAI-compatible HTTP API, and [[https://docs.vllm.ai/en/latest/|vLLM]] also documents Anthropic Messages API and gRPC support. Put a gateway in front for authentication, per-team quotas, routing between model pools, logging and failover to hosted providers. On Kubernetes, the [[https://gateway-api-inference-extension.sigs.k8s.io/|Gateway API Inference Extension]] adds model-aware routing that considers serving load. Application-level concerns are in [[/blogs/llm-gateway|LLM gateway]].",
+          "Most engines expose an OpenAI-compatible HTTP API, and vLLM also documents Anthropic Messages API and gRPC support. Put a gateway in front for authentication, per-team quotas, routing between model pools, logging and failover to hosted providers. On Kubernetes, the Gateway API Inference Extension adds model-aware routing that considers serving load. Application-level concerns are in [[/blogs/llm-gateway|LLM gateway]].",
         ],
         cta: {
           title: "Planning to serve your own models?",
@@ -460,7 +460,7 @@ export const aiOpsPosts10: BlogPost[] = [
       {
         heading: "Autoscaling and Concurrency",
         body: [
-          "CPU utilization says little about LLM load. Scale on queue depth, concurrent requests, KV cache utilization or token throughput, with limits on concurrency per replica to protect latency. Because new replicas take minutes to load, keep headroom for interactive traffic, scale ahead of known peaks and use queues or shedding for bursts. Kubernetes users typically combine GPU scheduling, documented in [[https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/|Kubernetes GPU scheduling]], with custom-metric autoscaling or serving platforms such as [[https://kserve.github.io/website/|KServe]].",
+          "CPU utilization says little about LLM load. Scale on queue depth, concurrent requests, KV cache utilization or token throughput, with limits on concurrency per replica to protect latency. Because new replicas take minutes to load, keep headroom for interactive traffic, scale ahead of known peaks and use queues or shedding for bursts. Kubernetes users typically combine GPU scheduling, documented in Kubernetes GPU scheduling, with custom-metric autoscaling or serving platforms such as KServe.",
         ],
       },
       {
@@ -627,7 +627,7 @@ export const aiOpsPosts10: BlogPost[] = [
       {
         heading: "Fine-Tuning in Between",
         body: [
-          "Fine-tuning is training on a smaller scale. Full fine-tuning updates all parameters and needs substantial memory; parameter-efficient methods such as LoRA and QLoRA ([[https://arxiv.org/abs/2305.14314|Dettmers et al.]]) train small additional parameters, often on a single GPU. Fine-tuning suits consistent formats, styles or narrow tasks. It is a poor way to add frequently changing knowledge, which retrieval handles better.",
+          "Fine-tuning is training on a smaller scale. Full fine-tuning updates all parameters and needs substantial memory; parameter-efficient methods such as LoRA and QLoRA (Dettmers et al.) train small additional parameters, often on a single GPU. Fine-tuning suits consistent formats, styles or narrow tasks. It is a poor way to add frequently changing knowledge, which retrieval handles better.",
         ],
       },
       {

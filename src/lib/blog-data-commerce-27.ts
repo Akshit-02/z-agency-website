@@ -521,7 +521,7 @@ export const commercePosts27: BlogPost[] = [
       {
         heading: "Failed Payments",
         body: [
-          "Payment retries must fit the production schedule. Shopify Subscriptions, for example, lets merchants configure retry attempts and a final action (such as skipping, pausing or cancelling) after the last failure ([[https://help.shopify.com/en/manual/products/purchase-options/shopify-subscriptions|Shopify Help Center]]). Ensure the final decision happens before ingredients are committed, and notify the customer with an easy way to update payment.",
+          "Payment retries must fit the production schedule. Shopify Subscriptions, for example, lets merchants configure retry attempts and a final action (such as skipping, pausing or cancelling) after the last failure (Shopify Help Center). Ensure the final decision happens before ingredients are committed, and notify the customer with an easy way to update payment.",
         ],
       },
       {

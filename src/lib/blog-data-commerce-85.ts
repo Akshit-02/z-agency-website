@@ -70,7 +70,7 @@ export const commercePosts85: BlogPost[] = [
       {
         heading: "Idempotency: The Foundation",
         body: [
-          "Networks fail between your server and the provider. If a request times out, the payment may or may not have gone through. Retrying without protection can charge the customer twice. Idempotency keys solve this: you generate a unique key per payment attempt and send it with the request, and the provider returns the original result for repeated requests with the same key. [[https://docs.stripe.com/api/idempotent_requests|Stripe's documentation]], for example, describes keeping keys for at least 24 hours and replaying the first result.",
+          "Networks fail between your server and the provider. If a request times out, the payment may or may not have gone through. Retrying without protection can charge the customer twice. Idempotency keys solve this: you generate a unique key per payment attempt and send it with the request, and the provider returns the original result for repeated requests with the same key. Stripe's documentation, for example, describes keeping keys for at least 24 hours and replaying the first result.",
           "Generate the key from your own payment attempt record (for example, the order ID plus attempt number), store it before calling the provider, and reuse it for any retry of the same attempt. Use a new key only when you intend a genuinely new attempt, such as after the shopper changes card.",
         ],
         code: {
@@ -260,7 +260,7 @@ export const commercePosts85: BlogPost[] = [
       {
         heading: "Setting Up the Agreement",
         body: [
-          "The first payment matters most. Show the recurring terms clearly before payment: amount or how it is calculated, frequency, start date, how to cancel and any trial conversion. Capture explicit consent, store the terms version and timestamp, and tell your provider the credential is being saved for recurring use. In regions with strong customer authentication, authenticate this payment; Stripe's [[https://stripe.com/guides/strong-customer-authentication|SCA guide]] explains how merchant-initiated renewals relate to the first authenticated payment.",
+          "The first payment matters most. Show the recurring terms clearly before payment: amount or how it is calculated, frequency, start date, how to cancel and any trial conversion. Capture explicit consent, store the terms version and timestamp, and tell your provider the credential is being saved for recurring use. In regions with strong customer authentication, authenticate this payment; Stripe's SCA guide explains how merchant-initiated renewals relate to the first authenticated payment.",
           "If the first payment is a free trial, you still need a setup flow that stores the credential with authentication, because there is no charge to authenticate later without the customer present.",
         ],
       },
@@ -283,7 +283,7 @@ export const commercePosts85: BlogPost[] = [
       {
         heading: "Retries and Dunning",
         body: [
-          "Renewals fail more often than checkout payments because the customer is not there to fix things. Classify the decline first: hard declines need a new card, soft declines may succeed later. Spread retries over days, not minutes, and stay within card network retry limits. Providers such as Stripe offer [[https://docs.stripe.com/billing/revenue-recovery/smart-retries|automated retry scheduling]] based on their transaction data.",
+          "Renewals fail more often than checkout payments because the customer is not there to fix things. Classify the decline first: hard declines need a new card, soft declines may succeed later. Spread retries over days, not minutes, and stay within card network retry limits. Providers such as Stripe offer automated retry scheduling based on their transaction data.",
           "Pair retries with communication: an email or SMS explaining the payment did not go through, with a secure link to update the payment method without logging in through several screens. Give a grace period during which the subscription stays active or paused rather than cancelled, and say exactly what happens and when.",
         ],
         diagram: {
@@ -430,7 +430,7 @@ export const commercePosts85: BlogPost[] = [
         heading: "How 3D Secure Works",
         body: [
           "Three parties take part. The merchant side (your provider's 3DS server) gathers transaction and device data. The card network's directory server routes the request to the right issuer. The issuer's access control server assesses risk and decides whether to approve or challenge. The result, including a cryptographic authentication value, is then sent with the authorization request.",
-          "[[https://www.emvco.com/emv-technologies/3-d-secure/|EMVCo maintains the EMV 3-D Secure specification]], which supports browser and in-app flows and much richer data than the original protocol.",
+          "EMVCo maintains the EMV 3-D Secure specification, which supports browser and in-app flows and much richer data than the original protocol.",
         ],
         diagram: {
           variant: "threedscompare",
@@ -447,7 +447,7 @@ export const commercePosts85: BlogPost[] = [
       {
         heading: "Strong Customer Authentication and Exemptions",
         body: [
-          "Under PSD2 in the EEA and the equivalent UK rules, most customer-initiated electronic payments require strong customer authentication, which 3DS provides for cards. Some transactions can be exempted or are out of scope, as summarized in [[https://stripe.com/guides/strong-customer-authentication|Stripe's SCA guide]]:",
+          "Under PSD2 in the EEA and the equivalent UK rules, most customer-initiated electronic payments require strong customer authentication, which 3DS provides for cards. Some transactions can be exempted or are out of scope, as summarized in Stripe's SCA guide:",
         ],
         checklist: [
           "**Low-value payments:** under €30, with cumulative limits after which authentication is required",
@@ -474,7 +474,7 @@ export const commercePosts85: BlogPost[] = [
       {
         heading: "Integrating 3DS Through Your Provider",
         body: [
-          "Most merchants use their payment provider's 3DS support rather than certifying their own 3DS server. Modern provider APIs handle it inside the payment flow: if authentication is needed, the payment moves to a state such as 'requires action', your front end displays the challenge using the provider's SDK, and the payment continues once the shopper completes it. [[https://docs.adyen.com/online-payments/3d-secure|Adyen's 3D Secure documentation]] and Stripe's payment lifecycle documentation describe these flows.",
+          "Most merchants use their payment provider's 3DS support rather than certifying their own 3DS server. Modern provider APIs handle it inside the payment flow: if authentication is needed, the payment moves to a state such as 'requires action', your front end displays the challenge using the provider's SDK, and the payment continues once the shopper completes it. Adyen's 3D Secure documentation and Stripe's payment lifecycle documentation describe these flows.",
         ],
         checklist: [
           "Send complete data: billing and shipping address, email, phone, account age where supported",

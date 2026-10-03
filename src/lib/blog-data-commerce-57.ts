@@ -746,7 +746,7 @@ export const commercePosts57: BlogPost[] = [
       {
         heading: "SEO-Safe Testing",
         body: [
-          "Product pages are often important search landing pages. Google's guidance on website testing says not to cloak (show search engines different content than users), to use rel=canonical on alternate URLs in split-URL tests, to use temporary (302) redirects rather than permanent ones, and to run tests only as long as necessary ([[https://developers.google.com/search/docs/crawling-indexing/website-testing|Google Search Central]]). Most on-page A/B tests that change content for a share of visitors fit within this guidance.",
+          "Product pages are often important search landing pages. Google's guidance on website testing says not to cloak (show search engines different content than users), to use rel=canonical on alternate URLs in split-URL tests, to use temporary (302) redirects rather than permanent ones, and to run tests only as long as necessary (Google Search Central). Most on-page A/B tests that change content for a share of visitors fit within this guidance.",
         ],
       },
       {

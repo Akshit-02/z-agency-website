@@ -67,7 +67,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Step 2: Understand How Users Think",
         body: [
-          "Structure should reflect users' mental models, not your org chart. Interviews and [[https://www.nngroup.com/articles/card-sorting-definition/|card sorting]] show how users naturally group and name content. Open card sorts reveal users' own categories; closed sorts test predefined ones.",
+          "Structure should reflect users' mental models, not your org chart. Interviews and card sorting show how users naturally group and name content. Open card sorts reveal users' own categories; closed sorts test predefined ones.",
         ],
       },
       {
@@ -89,7 +89,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Step 5: Validate With Tree Testing",
         body: [
-          "[[https://www.nngroup.com/articles/tree-testing/|Tree testing]] asks participants to find items in a text-only version of the structure. Because there's no visual design, results show whether the structure and labels work on their own. Revise and retest problem areas.",
+          "Tree testing asks participants to find items in a text-only version of the structure. Because there's no visual design, results show whether the structure and labels work on their own. Revise and retest problem areas.",
         ],
       },
       {
@@ -316,7 +316,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Touch and Input",
         body: [
-          "On touch screens, targets need to be larger and further apart than on desktop. WCAG 2.2 sets a [[https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html|minimum target size]] of 24 by 24 CSS pixels (with exceptions); Apple and Google recommend larger targets for apps. Don't hide essential information behind hover, which touch devices don't have.",
+          "On touch screens, targets need to be larger and further apart than on desktop. WCAG 2.2 sets a minimum target size of 24 by 24 CSS pixels (with exceptions); Apple and Google recommend larger targets for apps. Don't hide essential information behind hover, which touch devices don't have.",
         ],
       },
       {
@@ -390,7 +390,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "WCAG in Brief",
         body: [
-          "The W3C's [[https://www.w3.org/TR/WCAG22/|WCAG 2.2]] organizes requirements under four principles: perceivable, operable, understandable and robust. Level AA is the common target for business products. The design-relevant criteria are summarized below.",
+          "The W3C's WCAG 2.2 organizes requirements under four principles: perceivable, operable, understandable and robust. Level AA is the common target for business products. The design-relevant criteria are summarized below.",
         ],
         table: {
           headers: ["Design area", "WCAG guidance (level AA unless noted)"],
@@ -409,7 +409,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Color and Contrast",
         body: [
-          "Check text and interface contrast as you pick the palette, not after. Pay special attention to placeholder text, disabled-looking elements that are actually active, text over images, and thin fonts. [[https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html|Non-text contrast]] applies to input borders, icons and focus indicators too. Pair color with text or icons for errors, statuses and charts.",
+          "Check text and interface contrast as you pick the palette, not after. Pay special attention to placeholder text, disabled-looking elements that are actually active, text over images, and thin fonts. Non-text contrast applies to input borders, icons and focus indicators too. Pair color with text or icons for errors, statuses and charts.",
         ],
       },
       {
@@ -431,7 +431,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Touch Targets and Interaction",
         body: [
-          "Meet WCAG 2.2's [[https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html|24 by 24 CSS pixel minimum]] and aim higher on mobile, where Apple and Google recommend around 44 points and 48 dp. Provide alternatives to complex gestures such as dragging or multi-finger swipes, and avoid time limits users can't extend.",
+          "Meet WCAG 2.2's 24 by 24 CSS pixel minimum and aim higher on mobile, where Apple and Google recommend around 44 points and 48 dp. Provide alternatives to complex gestures such as dragging or multi-finger swipes, and avoid time limits users can't extend.",
         ],
       },
       {
@@ -542,7 +542,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Heuristic Evaluation",
         body: [
-          "Evaluators review key flows against [[https://www.nngroup.com/articles/ten-usability-heuristics/|Nielsen's 10 usability heuristics]]: status visibility, match with real-world language, user control, consistency, error prevention, recognition over recall, flexibility, minimalist design, error recovery and help. Each issue gets a severity rating. Heuristic review is fast but relies on expertise, so it's strongest combined with data. See [[/blogs/ux-heuristic-evaluation|UX heuristic evaluation]] for the full method.",
+          "Evaluators review key flows against Nielsen's 10 usability heuristics: status visibility, match with real-world language, user control, consistency, error prevention, recognition over recall, flexibility, minimalist design, error recovery and help. Each issue gets a severity rating. Heuristic review is fast but relies on expertise, so it's strongest combined with data. See [[/blogs/ux-heuristic-evaluation|UX heuristic evaluation]] for the full method.",
         ],
       },
       {
@@ -703,7 +703,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Step 2: Recruit Participants",
         body: [
-          "Recruit people who match your real users' behaviours and context, not just demographics: people who have bought this kind of product online, or who do this kind of work. Use a short screener questionnaire, and recruit from your customer list, a recruiting panel or a testing platform. [[https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/|Nielsen Norman Group's guidance]] is that about five participants per round, per distinct user group, reveals most usability problems, and that several small rounds beat one large one. Avoid testing with colleagues, and offer fair incentives.",
+          "Recruit people who match your real users' behaviours and context, not just demographics: people who have bought this kind of product online, or who do this kind of work. Use a short screener questionnaire, and recruit from your customer list, a recruiting panel or a testing platform. Nielsen Norman Group's guidance is that about five participants per round, per distinct user group, reveals most usability problems, and that several small rounds beat one large one. Avoid testing with colleagues, and offer fair incentives.",
         ],
       },
       {
@@ -763,13 +763,13 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Quantitative Measurements and Sample Size",
         body: [
-          "Numbers from five participants are not statistics. Report them as observations (“3 of 5 participants didn't find the delivery options”) rather than percentages, and don't use them to claim one design is better than another. When you need reliable benchmarks, [[https://www.nngroup.com/articles/quantitative-studies-how-many-users/|Nielsen Norman Group recommends around 20 users]] or more for quantitative usability studies. NN/g's article on [[https://www.nngroup.com/articles/measuring-perceived-usability/|measuring perceived usability]] explains when to use SEQ and SUS.",
+          "Numbers from five participants are not statistics. Report them as observations (“3 of 5 participants didn't find the delivery options”) rather than percentages, and don't use them to claim one design is better than another. When you need reliable benchmarks, Nielsen Norman Group recommends around 20 users or more for quantitative usability studies. NN/g's article on measuring perceived usability explains when to use SEQ and SUS.",
         ],
       },
       {
         heading: "Step 5: Analyze the Results",
         body: [
-          "Soon after the sessions, list every issue with where it happened, how many participants hit it and its severity: blocking, slowing or minor. Cluster related observations, separate symptoms from causes and rate each issue on a shared scale, such as the [[https://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/|0 to 4 severity scale]]. Then prioritize by severity, frequency and the importance of the task.",
+          "Soon after the sessions, list every issue with where it happened, how many participants hit it and its severity: blocking, slowing or minor. Cluster related observations, separate symptoms from causes and rate each issue on a shared scale, such as the 0 to 4 severity scale. Then prioritize by severity, frequency and the importance of the task.",
         ],
       },
       {
@@ -951,7 +951,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Figma Handoff",
         body: [
-          "In Figma, keep a dedicated ready-for-dev page or use ready-for-dev status on frames. Figma's [[https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode|Dev Mode]], available on paid plans with a Full or Dev seat, lets developers inspect measurements, styles and variables, read annotations, export assets and compare the current design with earlier versions. Whatever the tooling, keep annotations next to the relevant component rather than in a separate document that goes out of date. See [[/blogs/figma-product-design|Figma for product design]].",
+          "In Figma, keep a dedicated ready-for-dev page or use ready-for-dev status on frames. Figma's Dev Mode, available on paid plans with a Full or Dev seat, lets developers inspect measurements, styles and variables, read annotations, export assets and compare the current design with earlier versions. Whatever the tooling, keep annotations next to the relevant component rather than in a separate document that goes out of date. See [[/blogs/figma-product-design|Figma for product design]].",
         ],
       },
       {

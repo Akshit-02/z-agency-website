@@ -104,7 +104,7 @@ export const commercePosts37: BlogPost[] = [
       {
         heading: "Step 5: Currencies and Pricing",
         body: [
-          "Show prices in local currency with consistent rounding, decide between converted prices and fixed local price lists for important markets, and make sure checkout, refunds and emails use the same currency. On Shopify, selling in multiple currencies requires Shopify Payments, and currency conversion fees apply when customers pay in a currency other than your payout currency ([[https://help.shopify.com/en/manual/payments/shopify-payments/multi-currency/conversions|Shopify Help Center]]). See [[/blogs/multi-currency-ecommerce|multi-currency ecommerce]].",
+          "Show prices in local currency with consistent rounding, decide between converted prices and fixed local price lists for important markets, and make sure checkout, refunds and emails use the same currency. On Shopify, selling in multiple currencies requires Shopify Payments, and currency conversion fees apply when customers pay in a currency other than your payout currency (Shopify Help Center). See [[/blogs/multi-currency-ecommerce|multi-currency ecommerce]].",
         ],
       },
       {
@@ -117,7 +117,7 @@ export const commercePosts37: BlogPost[] = [
       {
         heading: "Step 7: International SEO",
         body: [
-          "Each market or language version needs its own crawlable URL, localized metadata and content, hreflang annotations linking versions together, and sitemaps that include them. Google recommends separate URLs for each language version and advises against automatically redirecting users between language versions without letting them choose ([[https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites|Google Search Central]]). See [[/blogs/international-ecommerce-seo|international ecommerce SEO]].",
+          "Each market or language version needs its own crawlable URL, localized metadata and content, hreflang annotations linking versions together, and sitemaps that include them. Google recommends separate URLs for each language version and advises against automatically redirecting users between language versions without letting them choose (Google Search Central). See [[/blogs/international-ecommerce-seo|international ecommerce SEO]].",
         ],
       },
       {
@@ -417,7 +417,7 @@ export const commercePosts37: BlogPost[] = [
       {
         heading: "The Locale and Market Model",
         body: [
-          "Most ecommerce stores need two related concepts. A locale defines language and formatting (en-GB, fr-CA). A market defines commercial rules: which countries it covers, currency, price list or catalog, tax and duty settings, shipping and payment methods. A market can have several languages; a language can serve several markets. Shopify Markets, for example, uses markets with conditions (countries and regions) and customizations such as currency, catalogs, domains and languages ([[https://help.shopify.com/en/manual/markets/getting-started/overview|Shopify Help Center]]).",
+          "Most ecommerce stores need two related concepts. A locale defines language and formatting (en-GB, fr-CA). A market defines commercial rules: which countries it covers, currency, price list or catalog, tax and duty settings, shipping and payment methods. A market can have several languages; a language can serve several markets. Shopify Markets, for example, uses markets with conditions (countries and regions) and customizations such as currency, catalogs, domains and languages (Shopify Help Center).",
         ],
         table: {
           headers: ["Concept", "Determines", "Example"],
@@ -449,7 +449,7 @@ export const commercePosts37: BlogPost[] = [
       {
         heading: "Routing and URLs",
         body: [
-          "Give each indexable language or market version its own URL, using subdirectories, subdomains or country domains, and connect versions with hreflang. Google recommends different URLs for each language version rather than cookies or browser settings, and advises against automatically redirecting users between language versions ([[https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites|Google Search Central]]). Provide a visible market and language switcher, remember the visitor's choice, and suggest (rather than force) a version based on location. See [[/blogs/international-ecommerce-seo|international ecommerce SEO]].",
+          "Give each indexable language or market version its own URL, using subdirectories, subdomains or country domains, and connect versions with hreflang. Google recommends different URLs for each language version rather than cookies or browser settings, and advises against automatically redirecting users between language versions (Google Search Central). Provide a visible market and language switcher, remember the visitor's choice, and suggest (rather than force) a version based on location. See [[/blogs/international-ecommerce-seo|international ecommerce SEO]].",
         ],
         cta: {
           title: "Rebuilding a store that was never designed for other markets?",

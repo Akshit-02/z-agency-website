@@ -126,7 +126,7 @@ export const commercePosts7: BlogPost[] = [
       {
         heading: "Current Shopify Capabilities to Plan Around",
         body: [
-          "Jewelry product data maps well to Shopify when structured deliberately. Metal, size and stone options fit within Shopify's three options and 2,048 variants per product for most pieces; engraving and made-to-order options usually need line item properties or apps. Certificates, stone grades, weights and dimensions belong in metafields, and filters for metal, stone and style can be built from product options and metafields in the Search & Discovery app ([[https://help.shopify.com/en/manual/online-store/storefront-search/search-and-discovery-filters|Shopify Help Center]]). Product media supports up to 250 images, videos and 3D models per product, which covers macro photography, video and 360 or 3D views ([[https://help.shopify.com/en/manual/products/product-media/product-media-types|Shopify Help Center]]).",
+          "Jewelry product data maps well to Shopify when structured deliberately. Metal, size and stone options fit within Shopify's three options and 2,048 variants per product for most pieces; engraving and made-to-order options usually need line item properties or apps. Certificates, stone grades, weights and dimensions belong in metafields, and filters for metal, stone and style can be built from product options and metafields in the Search & Discovery app (Shopify Help Center). Product media supports up to 250 images, videos and 3D models per product, which covers macro photography, video and 360 or 3D views (Shopify Help Center).",
         ],
         table: {
           headers: ["Need", "Shopify approach"],
@@ -482,7 +482,7 @@ export const commercePosts7: BlogPost[] = [
       {
         heading: "Current Shopify Capabilities to Plan Around",
         body: [
-          "Several Shopify capabilities shape how an electronics catalog is built. Products support up to three options and 2,048 variants, which covers most storage and colour combinations but not every configurable product. Specs belong in metafields (and reusable structures such as compatibility lists in metaobjects). The Search & Discovery app offers standard filters (availability, category, price, product type, tags, vendor) plus custom filters from product options, metafields and metaobjects, with up to 1,000 values per filter ([[https://help.shopify.com/en/manual/online-store/storefront-search/search-and-discovery-filters|Shopify Help Center]]). Products can carry up to 250 media items including images, video and 3D models ([[https://help.shopify.com/en/manual/products/product-media/product-media-types|Shopify Help Center]]).",
+          "Several Shopify capabilities shape how an electronics catalog is built. Products support up to three options and 2,048 variants, which covers most storage and colour combinations but not every configurable product. Specs belong in metafields (and reusable structures such as compatibility lists in metaobjects). The Search & Discovery app offers standard filters (availability, category, price, product type, tags, vendor) plus custom filters from product options, metafields and metaobjects, with up to 1,000 values per filter (Shopify Help Center). Products can carry up to 250 media items including images, video and 3D models (Shopify Help Center).",
         ],
         table: {
           headers: ["Need", "Shopify approach"],
@@ -500,7 +500,7 @@ export const commercePosts7: BlogPost[] = [
       {
         heading: "Analytics and Integrations",
         body: [
-          "Track the decisions that matter for electronics (filter use, comparison, compatibility checks, add to cart) alongside Shopify's standard customer events, such as product_viewed, search_submitted, product_added_to_cart and checkout_completed, which apps and custom pixels can subscribe to ([[https://shopify.dev/docs/api/web-pixels-api/standard-events|Shopify developer docs]]). Integrate supplier feeds or a PIM for specs, an ERP or inventory system for stock, and shopping feeds for channels. See [[/blogs/ecommerce-event-tracking|ecommerce event tracking]] and [[/blogs/electronics-ecommerce-website-development|electronics ecommerce development]].",
+          "Track the decisions that matter for electronics (filter use, comparison, compatibility checks, add to cart) alongside Shopify's standard customer events, such as product_viewed, search_submitted, product_added_to_cart and checkout_completed, which apps and custom pixels can subscribe to (Shopify developer docs). Integrate supplier feeds or a PIM for specs, an ERP or inventory system for stock, and shopping feeds for channels. See [[/blogs/ecommerce-event-tracking|ecommerce event tracking]] and [[/blogs/electronics-ecommerce-website-development|electronics ecommerce development]].",
         ],
       },
       {
@@ -656,7 +656,7 @@ export const commercePosts7: BlogPost[] = [
       {
         heading: "Delivery and Assembly",
         body: [
-          "Delivery is part of the product. Show lead time or delivery date on the product page, explain service levels (to the door, to the room of choice, with assembly, with packaging and old-item removal) and their prices, state access requirements, and let shoppers choose delivery slots where possible. Hidden delivery costs are especially damaging on large items; Baymard's research lists extra costs as the most common reason for checkout abandonment ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]).",
+          "Delivery is part of the product. Show lead time or delivery date on the product page, explain service levels (to the door, to the room of choice, with assembly, with packaging and old-item removal) and their prices, state access requirements, and let shoppers choose delivery slots where possible. Hidden delivery costs are especially damaging on large items; Baymard's research lists extra costs as the most common reason for checkout abandonment (Baymard Institute).",
         ],
       },
       {
@@ -839,7 +839,7 @@ export const commercePosts7: BlogPost[] = [
       {
         heading: "Current Shopify Capabilities to Plan Around",
         body: [
-          "Furniture catalogs push several Shopify limits. Products support up to three options and 2,048 variants, which covers many fabric, size and finish combinations; highly configurable pieces may need apps or custom configurators. Product media can include up to 250 images, videos and 3D models per product; 3D models can be GLB or USDZ files up to 500 MB and can be viewed in AR from the product page on supported devices ([[https://help.shopify.com/en/manual/products/product-media/product-media-types|Shopify Help Center]]). Dimensions, materials and care belong in metafields so they can power filters through the Search & Discovery app ([[https://help.shopify.com/en/manual/online-store/storefront-search/search-and-discovery-filters|Shopify Help Center]]).",
+          "Furniture catalogs push several Shopify limits. Products support up to three options and 2,048 variants, which covers many fabric, size and finish combinations; highly configurable pieces may need apps or custom configurators. Product media can include up to 250 images, videos and 3D models per product; 3D models can be GLB or USDZ files up to 500 MB and can be viewed in AR from the product page on supported devices (Shopify Help Center). Dimensions, materials and care belong in metafields so they can power filters through the Search & Discovery app (Shopify Help Center).",
         ],
         table: {
           headers: ["Need", "Shopify approach"],

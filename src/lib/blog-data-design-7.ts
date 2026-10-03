@@ -41,7 +41,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Why Product Images Carry So Much Weight",
         body: [
-          "Online, shoppers can't pick up a product, feel the fabric or hold it against themselves. Images fill that gap, and they're often the first thing shoppers engage with on a product page. Baymard Institute's [[https://baymard.com/research/product-page|product page research]] treats product images, image gallery UI and product video and 360 views as separate topics, which reflects how much detail matters here.",
+          "Online, shoppers can't pick up a product, feel the fabric or hold it against themselves. Images fill that gap, and they're often the first thing shoppers engage with on a product page. Baymard Institute's product page research treats product images, image gallery UI and product video and 360 views as separate topics, which reflects how much detail matters here.",
           "This guide goes deep on imagery. For the rest of the page, including price, variants and the buy section, see [[/blogs/ecommerce-product-page-design|ecommerce product page design]].",
         ],
       },
@@ -105,13 +105,13 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Lifestyle Images",
         body: [
-          "Lifestyle images show products in context and help shoppers picture ownership. They supplement product shots rather than replace them. When a lifestyle image shows several products, link to all of them; Baymard's research on [[https://baymard.com/blog/inspirational-product-images|inspirational images]] recommends linking every depicted product, because shoppers often want the item next to the one they came for.",
+          "Lifestyle images show products in context and help shoppers picture ownership. They supplement product shots rather than replace them. When a lifestyle image shows several products, link to all of them; Baymard's research on inspirational images recommends linking every depicted product, because shoppers often want the item next to the one they came for.",
         ],
       },
       {
         heading: "Product Video",
         body: [
-          "Video is worth producing when movement, fit, sound, texture or how something works is hard to show in stills. Keep clips short and focused, show them within the gallery with a clear play indicator, give users control, don't autoplay with sound and provide captions for any speech ([[https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html|WCAG 1.2.2]]). Load video only when requested so it doesn't slow the page for everyone.",
+          "Video is worth producing when movement, fit, sound, texture or how something works is hard to show in stills. Keep clips short and focused, show them within the gallery with a clear play indicator, give users control, don't autoplay with sound and provide captions for any speech (WCAG 1.2.2). Load video only when requested so it doesn't slow the page for everyone.",
         ],
       },
       {
@@ -151,7 +151,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Accessibility and Captions",
         body: [
-          "Each informative image needs alt text that describes what it shows ([[https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html|WCAG 1.1.1]]): colour, view and the detail it highlights, not the product name repeated for every image. Gallery controls must be keyboard operable with visible focus and accessible names. Don't put essential text such as sizes or offers inside images. Captions help everyone when they add information the image can't, such as the model's height and size, the colour name or “shown with matching trousers”.",
+          "Each informative image needs alt text that describes what it shows (WCAG 1.1.1): colour, view and the detail it highlights, not the product name repeated for every image. Gallery controls must be keyboard operable with visible focus and accessible names. Don't put essential text such as sizes or offers inside images. Captions help everyone when they add information the image can't, such as the model's height and size, the colour name or “shown with matching trousers”.",
         ],
       },
       {
@@ -224,7 +224,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Why Review Design Matters",
         body: [
-          "Reviews answer the questions product copy can't: does it run small, does it last, is it as described, what goes wrong? Shoppers read them to reduce risk, which is why they look for the bad news. Baymard Institute found that [[https://baymard.com/research-articles/respond-to-negative-user-reviews|53% of users specifically seek out negative reviews]]. A review section that makes this hard to do doesn't just frustrate shoppers; it makes the product look like it has something to hide.",
+          "Reviews answer the questions product copy can't: does it run small, does it last, is it as described, what goes wrong? Shoppers read them to reduce risk, which is why they look for the bad news. Baymard Institute found that 53% of users specifically seek out negative reviews. A review section that makes this hard to do doesn't just frustrate shoppers; it makes the product look like it has something to hide.",
           "This guide covers the design of the reviews module. For how social proof fits into conversion strategy across a Shopify store, see [[/blogs/shopify-social-proof|Shopify social proof]].",
         ],
       },
@@ -237,7 +237,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Ratings Summary and Distribution",
         body: [
-          "An average alone hides a lot: 4.2 stars can mean consistent satisfaction or a split between delight and disappointment. A distribution chart shows which. Baymard's research sets out [[https://baymard.com/blog/user-ratings-distribution-summary|five requirements for the ratings distribution summary]]:",
+          "An average alone hides a lot: 4.2 stars can mean consistent satisfaction or a split between delight and disappointment. A distribution chart shows which. Baymard's research sets out five requirements for the ratings distribution summary:",
         ],
         checklist: [
           "Include a graphical breakdown of how many reviews gave each rating",
@@ -436,7 +436,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Costs: Subtotal, Delivery, Taxes and Total",
         body: [
-          "Cost surprises are the biggest checkout problem. In Baymard Institute's [[https://baymard.com/lists/cart-abandonment-rate|survey of US online shoppers who abandoned during checkout]], excluding those who were just browsing, 40% said extra costs such as shipping, tax and fees were too high, and 12% said they couldn't see or calculate the total order cost up front.",
+          "Cost surprises are the biggest checkout problem. In Baymard Institute's survey of US online shoppers who abandoned during checkout, excluding those who were just browsing, 40% said extra costs such as shipping, tax and fees were too high, and 12% said they couldn't see or calculate the total order cost up front.",
           "Show an estimated delivery cost in the cart, using the shopper's location or a quick postcode or country input, along with expected delivery dates. Show taxes where they're known; in markets where prices include VAT, say so, and where tax is calculated later, say when. If you use a free-delivery threshold, state it honestly and show how far the cart is from it.",
         ],
       },
@@ -495,7 +495,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Accessible Cart Design",
         body: [
-          "Announce cart updates, such as items added, quantities changed and items removed, as status messages ([[https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html|WCAG 4.1.3]]). Give every control an accessible name that includes the product, manage focus sensibly after an item is removed, and make sure a cart drawer traps focus while open and returns it when closed.",
+          "Announce cart updates, such as items added, quantities changed and items removed, as status messages (WCAG 4.1.3). Give every control an accessible name that includes the product, manage focus sensibly after an item is removed, and make sure a cart drawer traps focus while open and returns it when closed.",
         ],
       },
       {
@@ -560,7 +560,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Why Shoppers Abandon Checkout",
         body: [
-          "Baymard Institute's [[https://baymard.com/lists/cart-abandonment-rate|compilation of 50 studies]] puts the documented average cart abandonment rate at around 70%, but many of those shoppers were browsing, comparing or saving items, not trying to buy. The more useful data is why buyers leave. In Baymard's survey of US online shoppers who abandoned during checkout, excluding those just browsing:",
+          "Baymard Institute's compilation of 50 studies puts the documented average cart abandonment rate at around 70%, but many of those shoppers were browsing, comparing or saving items, not trying to buy. The more useful data is why buyers leave. In Baymard's survey of US online shoppers who abandoned during checkout, excluding those just browsing:",
         ],
         table: {
           headers: ["Reason", "Share of respondents"],
@@ -602,13 +602,13 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Guest Checkout and Account Creation",
         body: [
-          "Being asked to create an account is one of the most common reasons buyers give for abandoning. Make guest checkout the most obvious option, offer sign-in for returning customers, and ask for an email address early so you can send confirmations. Baymard recommends [[https://baymard.com/blog/delayed-account-creation|saving account creation for the confirmation step]]: after the order, offer to create an account with a single password field, since you already have the rest of their details.",
+          "Being asked to create an account is one of the most common reasons buyers give for abandoning. Make guest checkout the most obvious option, offer sign-in for returning customers, and ask for an email address early so you can send confirmations. Baymard recommends saving account creation for the confirmation step: after the order, offer to create an account with a single password field, since you already have the rest of their details.",
         ],
       },
       {
         heading: "Forms: Fewer, Clearer Fields",
         body: [
-          "Baymard's [[https://baymard.com/blog/checkout-flow-average-form-fields|checkout benchmark]] found an average of 11.3 form fields, while most sites need only 8. Remove fields you don't need, such as a separate “confirm email” or a phone number you never use. Make optional fields clearly optional, and explain why you ask for anything sensitive.",
+          "Baymard's checkout benchmark found an average of 11.3 form fields, while most sites need only 8. Remove fields you don't need, such as a separate “confirm email” or a phone number you never use. Make optional fields clearly optional, and explain why you ask for anything sensitive.",
         ],
         checklist: [
           "Single-column layout with labels above fields",
@@ -616,7 +616,7 @@ export const designPosts7: BlogPost[] = [
           "Autocomplete attributes so browsers can fill details",
           "Billing address defaults to the delivery address",
           "Field widths that hint at the expected length",
-          "No information requested twice ([[https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html|WCAG 3.3.7]])",
+          "No information requested twice (WCAG 3.3.7)",
         ],
       },
       {
@@ -651,7 +651,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Validation and Error Handling",
         body: [
-          "Validate each field when the shopper leaves it, not while they're still typing, and confirm when a problem is fixed. Error messages should appear next to the field, say what's wrong and how to fix it in plain language ([[https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion.html|WCAG 3.3.3]]), and never clear what was entered. If submission fails, show a summary at the top that links to each problem field. Test server errors, timeouts and lost connections as well as typing mistakes. See [[/blogs/ux-writing|UX writing]] for message examples.",
+          "Validate each field when the shopper leaves it, not while they're still typing, and confirm when a problem is fixed. Error messages should appear next to the field, say what's wrong and how to fix it in plain language (WCAG 3.3.3), and never clear what was entered. If submission fails, show a summary at the top that links to each problem field. Test server errors, timeouts and lost connections as well as typing mistakes. See [[/blogs/ux-writing|UX writing]] for message examples.",
         ],
       },
       {
@@ -676,7 +676,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Autofill",
         body: [
-          "Browsers and password managers can fill most checkout fields if the form tells them what each field is. Use the standard [[https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/autocomplete|HTML autocomplete attribute]] values such as name, email, tel, street-address, postal-code, cc-number and cc-exp. Identifying input purpose this way is also a [[https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose.html|WCAG 1.3.5]] requirement. Avoid splitting fields in ways autofill can't handle.",
+          "Browsers and password managers can fill most checkout fields if the form tells them what each field is. Use the standard HTML autocomplete attribute values such as name, email, tel, street-address, postal-code, cc-number and cc-exp. Identifying input purpose this way is also a WCAG 1.3.5 requirement. Avoid splitting fields in ways autofill can't handle.",
         ],
       },
       {
@@ -694,7 +694,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Accessible Checkout",
         body: [
-          "Checkout must work with a keyboard and screen reader: labelled fields, errors identified in text ([[https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html|WCAG 3.3.1]]), no information requested twice, sign-in that doesn't rely on memorizing or transcribing codes where alternatives exist (3.3.8), and enough time to finish, with warnings before any session timeout. See [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]].",
+          "Checkout must work with a keyboard and screen reader: labelled fields, errors identified in text (WCAG 3.3.1), no information requested twice, sign-in that doesn't rely on memorizing or transcribing codes where alternatives exist (3.3.8), and enough time to finish, with warnings before any session timeout. See [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]].",
         ],
       },
       {
@@ -777,7 +777,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "What Makes Mobile Shopping Different",
         body: [
-          "Baymard Institute's [[https://baymard.com/blog/mobile-commerce-design|mobile ecommerce research]] identifies five overarching problems: shoppers lack an overview of the page because they see it in fragments, they become disoriented about where they are, technical glitches get in the way, taps are missed or land on the wrong element, and they're interrupted often, on average once every 20 minutes during testing. Baymard reports that 63% of mobile users in testing abandoned a product or site at least once solely because of preventable mobile usability issues.",
+          "Baymard Institute's mobile ecommerce research identifies five overarching problems: shoppers lack an overview of the page because they see it in fragments, they become disoriented about where they are, technical glitches get in the way, taps are missed or land on the wrong element, and they're interrupted often, on average once every 20 minutes during testing. Baymard reports that 63% of mobile users in testing abandoned a product or site at least once solely because of preventable mobile usability issues.",
           "Responsive layout is the starting point, covered in [[/blogs/responsive-ui-design|responsive UI design]]. This guide covers the shopping-specific decisions on top of it, following the journey in the diagram above. For Shopify-specific mobile optimization, see [[/blogs/shopify-mobile-cro|Shopify mobile CRO]].",
         ],
       },
@@ -809,7 +809,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Product Listings",
         body: [
-          "Two-column grids suit visual products where the image carries the decision; one column suits products where shoppers compare details on the card. Keep card information to what helps choosing: image, name, price, rating and key variant or availability information. Baymard recommends [[https://baymard.com/blog/number-of-items-loaded-by-default|loading around 15 to 30 products]] by default on mobile, with a “Load more” button, and keeping the shopper's position and filters when they return from a product page.",
+          "Two-column grids suit visual products where the image carries the decision; one column suits products where shoppers compare details on the card. Keep card information to what helps choosing: image, name, price, rating and key variant or availability information. Baymard recommends loading around 15 to 30 products by default on mobile, with a “Load more” button, and keeping the shopper's position and filters when they return from a product page.",
         ],
       },
       {
@@ -831,7 +831,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Sticky Actions",
         body: [
-          "A sticky add-to-cart bar or checkout button keeps the main action in reach on long pages. Keep it compact, reflect the selected variant and price, and hide it when the original button is visible. Sticky headers and bars must not cover focused elements or form fields; WCAG 2.2 requires that focused elements aren't entirely hidden by author-created content ([[https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html|2.4.11]]). Stacking several sticky bars leaves little room for the page itself.",
+          "A sticky add-to-cart bar or checkout button keeps the main action in reach on long pages. Keep it compact, reflect the selected variant and price, and hide it when the original button is visible. Sticky headers and bars must not cover focused elements or form fields; WCAG 2.2 requires that focused elements aren't entirely hidden by author-created content (2.4.11). Stacking several sticky bars leaves little room for the page itself.",
         ],
       },
       {
@@ -850,7 +850,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Touch Targets",
         body: [
-          "Accidental and missed taps are one of Baymard's five core mobile problems. [[https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html|WCAG 2.5.8]] (level AA) requires targets of at least 24 by 24 CSS pixels or adequate spacing. Platform guidance is more generous: Apple recommends around 44 by 44 points and Material Design 48 by 48 density-independent pixels. Use those larger sizes for primary actions, variant buttons, quantity controls and filter options, and leave space between adjacent targets.",
+          "Accidental and missed taps are one of Baymard's five core mobile problems. WCAG 2.5.8 (level AA) requires targets of at least 24 by 24 CSS pixels or adequate spacing. Platform guidance is more generous: Apple recommends around 44 by 44 points and Material Design 48 by 48 density-independent pixels. Use those larger sizes for primary actions, variant buttons, quantity controls and filter options, and leave space between adjacent targets.",
         ],
       },
       {
@@ -874,7 +874,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Accessibility on Mobile",
         body: [
-          "Mobile users include people using screen readers, switch control, magnification and large text. Don't disable pinch zoom, support both orientations ([[https://www.w3.org/WAI/WCAG22/Understanding/orientation.html|WCAG 1.3.4]]), make content reflow at narrow widths without horizontal scrolling (1.4.10), give gestures a visible alternative and label every icon button. See [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]].",
+          "Mobile users include people using screen readers, switch control, magnification and large text. Don't disable pinch zoom, support both orientations (WCAG 1.3.4), make content reflow at narrow widths without horizontal scrolling (1.4.10), give gestures a visible alternative and label every icon button. See [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]].",
         ],
       },
       {

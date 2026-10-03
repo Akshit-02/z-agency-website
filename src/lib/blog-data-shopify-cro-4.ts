@@ -265,7 +265,7 @@ export const shopifyCroPosts4: BlogPost[] = [
       {
         heading: "Measure First: Core Web Vitals",
         body: [
-          "Google's [[https://web.dev/articles/vitals|Core Web Vitals]] define good thresholds at the 75th percentile of page loads: Largest Contentful Paint within 2.5 seconds, Interaction to Next Paint of 200 milliseconds or less and Cumulative Layout Shift of 0.1 or less. Shopify's [[https://help.shopify.com/en/manual/online-store/web-performance/web-performance-dashboard|web performance dashboard]], available from the Themes page and in reports, shows these metrics from real users over the past 30 days, rated good, moderate or poor.",
+          "Google's Core Web Vitals define good thresholds at the 75th percentile of page loads: Largest Contentful Paint within 2.5 seconds, Interaction to Next Paint of 200 milliseconds or less and Cumulative Layout Shift of 0.1 or less. Shopify's web performance dashboard, available from the Themes page and in reports, shows these metrics from real users over the past 30 days, rated good, moderate or poor.",
           "Use field data to decide what to fix, and lab tools such as PageSpeed Insights, Lighthouse and Chrome DevTools to find out why. A good lab score on a fast office connection doesn't mean mobile shoppers have a fast experience.",
         ],
       },
@@ -288,7 +288,7 @@ export const shopifyCroPosts4: BlogPost[] = [
       {
         heading: "Theme Performance",
         body: [
-          "Shopify requires Theme Store themes to reach a [[https://shopify.dev/docs/storefronts/themes/best-practices/performance|minimum average Lighthouse performance score of 60]] across home, product and collection pages, so most start from a reasonable base. Configuration then decides real speed: autoplaying video heroes, several slideshows, dozens of homepage sections and large collection pages all add weight. Remove sections that don't earn their place, and prefer simpler sections for above-the-fold content.",
+          "Shopify requires Theme Store themes to reach a minimum average Lighthouse performance score of 60 across home, product and collection pages, so most start from a reasonable base. Configuration then decides real speed: autoplaying video heroes, several slideshows, dozens of homepage sections and large collection pages all add weight. Remove sections that don't earn their place, and prefer simpler sections for above-the-fold content.",
         ],
       },
       {

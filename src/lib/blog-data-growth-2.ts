@@ -41,13 +41,13 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "Some Abandonment Is Normal",
         body: [
-          "Shoppers use carts to save items, compare prices and check totals. Baymard Institute's [[https://baymard.com/lists/cart-abandonment-rate|compilation of 50 studies]] documents an average online cart abandonment rate of around 70%, and many of those shoppers weren't ready to buy. The aim is to find and reduce avoidable abandonment: shoppers who wanted to buy and were stopped by something you can change.",
+          "Shoppers use carts to save items, compare prices and check totals. Baymard Institute's compilation of 50 studies documents an average online cart abandonment rate of around 70%, and many of those shoppers weren't ready to buy. The aim is to find and reduce avoidable abandonment: shoppers who wanted to buy and were stopped by something you can change.",
         ],
       },
       {
         heading: "Measure the Gap Step by Step",
         body: [
-          "“Add to cart but no purchase” covers several steps, each with different causes. The diagram above uses GA4's [[https://developers.google.com/analytics/devguides/collection/ga4/ecommerce|recommended ecommerce events]] to name them. Shopify's conversion rate breakdown shows a simpler version: sessions with cart additions, sessions that reached checkout and sessions that completed checkout.",
+          "“Add to cart but no purchase” covers several steps, each with different causes. The diagram above uses GA4's recommended ecommerce events to name them. Shopify's conversion rate breakdown shows a simpler version: sessions with cart additions, sessions that reached checkout and sessions that completed checkout.",
         ],
         table: {
           headers: ["Step", "GA4 event", "A large drop here suggests"],
@@ -218,7 +218,7 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "What the Research Says",
         body: [
-          "Baymard Institute's [[https://baymard.com/lists/cart-abandonment-rate|abandonment research]] asked US online shoppers who had abandoned an order during checkout why they left. Excluding shoppers who were just browsing, the reasons were:",
+          "Baymard Institute's abandonment research asked US online shoppers who had abandoned an order during checkout why they left. Excluding shoppers who were just browsing, the reasons were:",
         ],
         table: {
           headers: ["Reason", "Share of respondents"],
@@ -257,13 +257,13 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "Forced Account Creation",
         body: [
-          "Make guest checkout the easy default and offer an account after the order, on the confirmation page. Baymard recommends [[https://baymard.com/blog/delayed-account-creation|saving account creation for the confirmation step]]; returning customers can still sign in or use saved wallet details.",
+          "Make guest checkout the easy default and offer an account after the order, on the confirmation page. Baymard recommends saving account creation for the confirmation step; returning customers can still sign in or use saved wallet details.",
         ],
       },
       {
         heading: "Long Forms",
         body: [
-          "Baymard's [[https://baymard.com/blog/checkout-flow-average-form-fields|checkout benchmark]] found an average of 11.3 form fields, while most sites need only 8. Remove fields you don't use, default billing to the delivery address, use address lookup and support autofill with correct autocomplete attributes.",
+          "Baymard's checkout benchmark found an average of 11.3 form fields, while most sites need only 8. Remove fields you don't use, default billing to the delivery address, use address lookup and support autofill with correct autocomplete attributes.",
         ],
         cta: {
           title: "Want to know why your shoppers leave checkout?",
@@ -473,7 +473,7 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "11. Performance",
         body: [
-          "Check real-user Core Web Vitals for key templates, especially on mobile: LCP within 2.5 seconds, INP of 200 milliseconds or less and CLS of 0.1 or less at the 75th percentile, as defined on [[https://web.dev/articles/vitals|web.dev]]. Identify the heaviest apps and scripts.",
+          "Check real-user Core Web Vitals for key templates, especially on mobile: LCP within 2.5 seconds, INP of 200 milliseconds or less and CLS of 0.1 or less at the 75th percentile, as defined on web.dev. Identify the heaviest apps and scripts.",
         ],
       },
       {
@@ -635,7 +635,7 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "Setting Up Measurement",
         body: [
-          "GA4's [[https://developers.google.com/analytics/devguides/collection/ga4/ecommerce|recommended ecommerce events]] cover the journey from view_item_list to purchase and refund. Many platforms and integrations send them automatically, but check that each fires once, with the right items and values. Shopify's own conversion rate breakdown shows a four-step version: sessions, sessions with cart additions, sessions that reached checkout and sessions that completed checkout.",
+          "GA4's recommended ecommerce events cover the journey from view_item_list to purchase and refund. Many platforms and integrations send them automatically, but check that each fires once, with the right items and values. Shopify's own conversion rate breakdown shows a four-step version: sessions, sessions with cart additions, sessions that reached checkout and sessions that completed checkout.",
           "In GA4, funnel explorations let you build the funnel from these events. A closed funnel counts only users who start at the first step; an open funnel lets users enter at any step, which suits stores where many shoppers land directly on product pages.",
         ],
       },
@@ -884,7 +884,7 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "False Positives and Peeking",
         body: [
-          "Checking results repeatedly and stopping as soon as they look significant greatly increases the chance of declaring a winner that isn't real. Evan Miller's classic explanation, [[https://www.evanmiller.org/how-not-to-run-an-ab-test.html|How Not to Run an A/B Test]], shows how peeking distorts significance. Fix the sample size in advance, or use a testing method designed for continuous monitoring.",
+          "Checking results repeatedly and stopping as soon as they look significant greatly increases the chance of declaring a winner that isn't real. Evan Miller's classic explanation, How Not to Run an A/B Test, shows how peeking distorts significance. Fix the sample size in advance, or use a testing method designed for continuous monitoring.",
         ],
       },
       {
@@ -1027,7 +1027,7 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "Rage Clicks and Dead Clicks",
         body: [
-          "Some tools flag frustration signals automatically. Microsoft Clarity's [[https://learn.microsoft.com/en-us/clarity/insights/semantic-metrics|documentation]] defines rage clicks as multiple rapid clicks in a clustered area and dead clicks as clicks with no visible response; it also flags excessive scrolling and quick backs. These are useful for finding broken buttons, slow responses and elements that look clickable but aren't. Filter recordings to these events to see what happened.",
+          "Some tools flag frustration signals automatically. Microsoft Clarity's documentation defines rage clicks as multiple rapid clicks in a clustered area and dead clicks as clicks with no visible response; it also flags excessive scrolling and quick backs. These are useful for finding broken buttons, slow responses and elements that look clickable but aren't. Filter recordings to these events to see what happened.",
         ],
         cta: {
           title: "Have heatmaps but no clear next steps?",
@@ -1062,7 +1062,7 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "Privacy Considerations",
         body: [
-          "Collect behavioural data only with the consent your markets require, and configure masking so personal data and form inputs aren't captured. Clarity, for example, [[https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-masking|masks sensitive content by default]] and always masks input boxes. Review which pages you record, avoid account and payment pages where possible and document the setup in your privacy policy.",
+          "Collect behavioural data only with the consent your markets require, and configure masking so personal data and form inputs aren't captured. Clarity, for example, masks sensitive content by default and always masks input boxes. Review which pages you record, avoid account and payment pages where possible and document the setup in your privacy policy.",
         ],
       },
       {

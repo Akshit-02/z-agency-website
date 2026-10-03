@@ -250,7 +250,7 @@ export const commercePosts29: BlogPost[] = [
       {
         heading: "Quantity Rules",
         body: [
-          "Minimum order quantities and increments are part of pricing. Enforce them in the quantity input (stepping in increments, blocking values below the minimum) with clear messages explaining why. Shopify B2B supports quantity rules and volume pricing within catalogs ([[https://help.shopify.com/en/manual/b2b|Shopify Help Center]]).",
+          "Minimum order quantities and increments are part of pricing. Enforce them in the quantity input (stepping in increments, blocking values below the minimum) with clear messages explaining why. Shopify B2B supports quantity rules and volume pricing within catalogs (Shopify Help Center).",
         ],
       },
       {
@@ -411,7 +411,7 @@ export const commercePosts29: BlogPost[] = [
       {
         heading: "Converting Quotes to Orders",
         body: [
-          "Acceptance should create an order or a checkout with prices locked, respecting approval rules and payment terms. If the buyer's organization requires internal approval, route it before conversion. Avoid making buyers rebuild the cart. On Shopify, draft orders are one way to prepare a quoted order for a B2B customer ([[https://help.shopify.com/en/manual/b2b|Shopify Help Center]]).",
+          "Acceptance should create an order or a checkout with prices locked, respecting approval rules and payment terms. If the buyer's organization requires internal approval, route it before conversion. Avoid making buyers rebuild the cart. On Shopify, draft orders are one way to prepare a quoted order for a B2B customer (Shopify Help Center).",
         ],
       },
       {
@@ -540,7 +540,7 @@ export const commercePosts29: BlogPost[] = [
       {
         heading: "Finance: Invoices, Statements and Payments",
         body: [
-          "Finance users want open and overdue invoices, statements, credit limits and a way to pay. Present invoices as a filterable table with status and due dates, downloadable PDFs and online payment where you support it. Shopify B2B, for example, supports payment terms and lets buyers pay orders on terms ([[https://help.shopify.com/en/manual/b2b|Shopify Help Center]]); statements and credit data usually come from the ERP.",
+          "Finance users want open and overdue invoices, statements, credit limits and a way to pay. Present invoices as a filterable table with status and due dates, downloadable PDFs and online payment where you support it. Shopify B2B, for example, supports payment terms and lets buyers pay orders on terms (Shopify Help Center); statements and credit data usually come from the ERP.",
         ],
       },
       {

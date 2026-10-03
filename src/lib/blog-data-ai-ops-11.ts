@@ -106,13 +106,13 @@ export const aiOpsPosts11: BlogPost[] = [
       {
         heading: "Sharing and Scheduling",
         body: [
-          "Small models rarely need a whole high-end GPU. NVIDIA's [[https://docs.nvidia.com/datacenter/tesla/mig-user-guide/|Multi-Instance GPU]] partitions supported GPUs into isolated instances; time-slicing shares a GPU without isolation guarantees; some engines serve several models or adapters in one process. On Kubernetes, [[https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/|GPU scheduling]] with node pools and priorities lets batch jobs use capacity that interactive services leave idle.",
+          "Small models rarely need a whole high-end GPU. NVIDIA's Multi-Instance GPU partitions supported GPUs into isolated instances; time-slicing shares a GPU without isolation guarantees; some engines serve several models or adapters in one process. On Kubernetes, GPU scheduling with node pools and priorities lets batch jobs use capacity that interactive services leave idle.",
         ],
       },
       {
         heading: "Profiling",
         body: [
-          "Profilers show where time goes. [[https://developer.nvidia.com/nsight-systems|NVIDIA Nsight Systems]] gives a timeline across CPU and GPU, revealing idle gaps and data loading stalls; framework profilers show which operations dominate; serving engines expose batch sizes, queue times and cache usage. Profile under realistic load, change one thing at a time and record results.",
+          "Profilers show where time goes. NVIDIA Nsight Systems gives a timeline across CPU and GPU, revealing idle gaps and data loading stalls; framework profilers show which operations dominate; serving engines expose batch sizes, queue times and cache usage. Profile under realistic load, change one thing at a time and record results.",
         ],
       },
       {
@@ -251,8 +251,8 @@ export const aiOpsPosts11: BlogPost[] = [
       {
         heading: "Methods",
         body: [
-          "**Post-training quantization** converts a trained model without retraining, using a small calibration dataset. [[https://arxiv.org/abs/2210.17323|GPTQ]] quantizes weights layer by layer to minimize output error; [[https://arxiv.org/abs/2306.00978|AWQ]] scales weights to protect those most important to activations. **Quantization-aware training** simulates low precision during training or fine-tuning for better quality at low bit widths, at higher cost. **QLoRA** fine-tunes adapters on top of a 4-bit base model, reducing fine-tuning memory.",
-          "Serving engines support many formats; [[https://docs.vllm.ai/en/latest/|vLLM]], for example, lists FP8, MXFP8/MXFP4, NVFP4, INT8, INT4, GPTQ/AWQ, GGUF and others. Check that your engine accelerates, rather than merely loads, the format you choose.",
+          "**Post-training quantization** converts a trained model without retraining, using a small calibration dataset. GPTQ quantizes weights layer by layer to minimize output error; AWQ scales weights to protect those most important to activations. **Quantization-aware training** simulates low precision during training or fine-tuning for better quality at low bit widths, at higher cost. **QLoRA** fine-tunes adapters on top of a 4-bit base model, reducing fine-tuning memory.",
+          "Serving engines support many formats; vLLM, for example, lists FP8, MXFP8/MXFP4, NVFP4, INT8, INT4, GPTQ/AWQ, GGUF and others. Check that your engine accelerates, rather than merely loads, the format you choose.",
         ],
         cta: {
           title: "Want to run larger models on smaller hardware?",
@@ -279,7 +279,7 @@ export const aiOpsPosts11: BlogPost[] = [
       {
         heading: "Hardware Compatibility",
         body: [
-          "Speed gains require hardware and kernel support. FP8 compute is available on recent data-centre GPU generations; 4-bit floating-point formats need the newest architectures; integer formats have broad support through optimized kernels. On CPUs and Apple silicon, [[https://github.com/ggml-org/llama.cpp|llama.cpp]] and GGUF are common. On phones and embedded devices, mobile runtimes have their own supported formats; see [[/blogs/ai-edge-deployment|AI edge deployment]].",
+          "Speed gains require hardware and kernel support. FP8 compute is available on recent data-centre GPU generations; 4-bit floating-point formats need the newest architectures; integer formats have broad support through optimized kernels. On CPUs and Apple silicon, llama.cpp and GGUF are common. On phones and embedded devices, mobile runtimes have their own supported formats; see [[/blogs/ai-edge-deployment|AI edge deployment]].",
         ],
       },
       {
@@ -316,7 +316,7 @@ export const aiOpsPosts11: BlogPost[] = [
       {
         heading: "Quantization for Fine-Tuning",
         body: [
-          "Quantization also changes fine-tuning economics. QLoRA, described in [[https://arxiv.org/abs/2305.14314|Dettmers et al.]], fine-tunes low-rank adapters on top of a 4-bit quantized base model, making it possible to adapt larger models on a single GPU. Quality of the resulting model should be evaluated against your tasks like any fine-tune. When deploying, you can serve the adapter on a quantized or full-precision base, and results can differ slightly, so evaluate the exact serving configuration.",
+          "Quantization also changes fine-tuning economics. QLoRA, described in Dettmers et al., fine-tunes low-rank adapters on top of a 4-bit quantized base model, making it possible to adapt larger models on a single GPU. Quality of the resulting model should be evaluated against your tasks like any fine-tune. When deploying, you can serve the adapter on a quantized or full-precision base, and results can differ slightly, so evaluate the exact serving configuration.",
         ],
       },
       {
@@ -420,7 +420,7 @@ export const aiOpsPosts11: BlogPost[] = [
       {
         heading: "Batching: From Static to Continuous",
         body: [
-          "Static batching waits to collect a group of requests, processes them together and returns all results when the longest finishes, so short requests wait for long ones. Continuous batching, also called in-flight batching, schedules at the level of each generation step: finished requests leave and new ones join immediately. Combined with chunked prefill, which splits long prompt processing into pieces interleaved with decoding, it keeps GPUs busy and reduces latency spikes. Engines such as [[https://docs.vllm.ai/en/latest/|vLLM]] implement these by default; the original [[https://arxiv.org/abs/2309.06180|PagedAttention paper]] explains the memory management that makes large batches practical.",
+          "Static batching waits to collect a group of requests, processes them together and returns all results when the longest finishes, so short requests wait for long ones. Continuous batching, also called in-flight batching, schedules at the level of each generation step: finished requests leave and new ones join immediately. Combined with chunked prefill, which splits long prompt processing into pieces interleaved with decoding, it keeps GPUs busy and reduces latency spikes. Engines such as vLLM implement these by default; the original PagedAttention paper explains the memory management that makes large batches practical.",
         ],
       },
       {
@@ -432,7 +432,7 @@ export const aiOpsPosts11: BlogPost[] = [
       {
         heading: "Prefix and Prompt Caching",
         body: [
-          "Many requests share the same beginning: system instructions, tool definitions, a long document being discussed. Self-hosted engines can reuse cached KV data for identical prefixes. Hosted providers offer prompt caching with lower prices and latency for cached tokens: OpenAI documents [[https://developers.openai.com/api/docs/guides/prompt-caching|automatic prompt caching]] for supported models, while Anthropic documents [[https://platform.claude.com/docs/en/build-with-claude/prompt-caching|prompt caching]] that you control by marking cacheable sections. Minimum lengths, retention and pricing differ by provider and model, so check current documentation.",
+          "Many requests share the same beginning: system instructions, tool definitions, a long document being discussed. Self-hosted engines can reuse cached KV data for identical prefixes. Hosted providers offer prompt caching with lower prices and latency for cached tokens: OpenAI documents automatic prompt caching for supported models, while Anthropic documents prompt caching that you control by marking cacheable sections. Minimum lengths, retention and pricing differ by provider and model, so check current documentation.",
           "Design prompts for caching: stable content first, variable content last, and avoid inserting timestamps or request IDs early in the prompt, which break prefix matches.",
         ],
         cta: {
@@ -598,7 +598,7 @@ export const aiOpsPosts11: BlogPost[] = [
       {
         heading: "Hardware and Runtimes",
         body: [
-          "Edge hardware ranges from phones and laptops with neural processing units to embedded modules with GPUs, industrial PCs, smart cameras and small on-premises servers. Pick a runtime supported on your target: [[https://developers.google.com/edge/litert/overview|LiteRT]] for Android, embedded and cross-platform use, [[https://onnxruntime.ai/|ONNX Runtime]] across many hardware backends, Core ML and the Apple Foundation Models framework on Apple devices, [[https://github.com/ggml-org/llama.cpp|llama.cpp]] for language models on CPUs and consumer hardware, and vendor SDKs for specific accelerators. Prototype on the actual device early; emulators hide thermal and memory limits.",
+          "Edge hardware ranges from phones and laptops with neural processing units to embedded modules with GPUs, industrial PCs, smart cameras and small on-premises servers. Pick a runtime supported on your target: LiteRT for Android, embedded and cross-platform use, ONNX Runtime across many hardware backends, Core ML and the Apple Foundation Models framework on Apple devices, llama.cpp for language models on CPUs and consumer hardware, and vendor SDKs for specific accelerators. Prototype on the actual device early; emulators hide thermal and memory limits.",
         ],
       },
       {

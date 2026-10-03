@@ -65,14 +65,14 @@ export const aiOpsPosts7: BlogPost[] = [
       {
         heading: "Models: Provenance, Formats and Licences",
         body: [
-          "Download models from official publisher accounts, verify hashes where published and record the exact revision. Prefer the [[https://huggingface.co/docs/safetensors/index|safetensors]] format, which stores weights without executable code, over pickle-based formats that can run code when loaded; never load untrusted pickle files on systems with access to secrets. Emerging model signing, such as the OpenSSF [[https://github.com/sigstore/model-transparency|model transparency]] project built on Sigstore, lets you verify that a model came from its claimed publisher.",
+          "Download models from official publisher accounts, verify hashes where published and record the exact revision. Prefer the safetensors format, which stores weights without executable code, over pickle-based formats that can run code when loaded; never load untrusted pickle files on systems with access to secrets. Emerging model signing, such as the OpenSSF model transparency project built on Sigstore, lets you verify that a model came from its claimed publisher.",
           "Read licences carefully. Many popular models are open-weight but not open-source, with use restrictions, attribution requirements or thresholds; see [[/blogs/llm-self-hosting|LLM self-hosting]] for the distinction.",
         ],
       },
       {
         heading: "Data: Rights and Poisoning",
         body: [
-          "For datasets used in training, fine-tuning, evaluation or retrieval, record source, licence or legal basis, collection date and processing. Poisoning risk applies wherever outsiders can influence data: public web data, user-generated content, shared documents indexed for retrieval. Restrict who can write to sources that feed AI systems, monitor changes, validate datasets before training and keep provenance so suspicious data can be traced and removed. CISA and partner agencies have published [[https://www.cisa.gov/resources-tools/resources/ai-data-security-best-practices-securing-data-used-train-operate-ai-systems|AI data security best practices]] covering these risks.",
+          "For datasets used in training, fine-tuning, evaluation or retrieval, record source, licence or legal basis, collection date and processing. Poisoning risk applies wherever outsiders can influence data: public web data, user-generated content, shared documents indexed for retrieval. Restrict who can write to sources that feed AI systems, monitor changes, validate datasets before training and keep provenance so suspicious data can be traced and removed. CISA and partner agencies have published AI data security best practices covering these risks.",
         ],
         cta: {
           title: "Bringing open models or third-party AI tools into production?",
@@ -82,7 +82,7 @@ export const aiOpsPosts7: BlogPost[] = [
       {
         heading: "Software Dependencies",
         body: [
-          "AI projects pull in large dependency trees: ML frameworks, tokenizers, inference servers, vector database clients and agent frameworks, many moving fast. Apply normal software supply chain controls: pin versions, use lockfiles, scan for known vulnerabilities, verify package names to avoid typosquatting (AI coding assistants sometimes suggest non-existent packages), build containers from trusted bases and generate provenance for builds using frameworks such as [[https://slsa.dev/|SLSA]].",
+          "AI projects pull in large dependency trees: ML frameworks, tokenizers, inference servers, vector database clients and agent frameworks, many moving fast. Apply normal software supply chain controls: pin versions, use lockfiles, scan for known vulnerabilities, verify package names to avoid typosquatting (AI coding assistants sometimes suggest non-existent packages), build containers from trusted bases and generate provenance for builds using frameworks such as SLSA.",
         ],
       },
       {
@@ -94,7 +94,7 @@ export const aiOpsPosts7: BlogPost[] = [
       {
         heading: "AI Bill of Materials",
         body: [
-          "An AI bill of materials lists models, datasets, software components and services with versions, sources and licences for each AI system. It speeds up response when a vulnerability or licence issue appears in a component, and it supports governance and customer questionnaires. The [[https://cyclonedx.org/capabilities/mlbom/|CycloneDX ML-BOM]] format is one standard way to express it; link it to your AI inventory in [[/blogs/ai-governance-framework|AI governance]].",
+          "An AI bill of materials lists models, datasets, software components and services with versions, sources and licences for each AI system. It speeds up response when a vulnerability or licence issue appears in a component, and it supports governance and customer questionnaires. The CycloneDX ML-BOM format is one standard way to express it; link it to your AI inventory in [[/blogs/ai-governance-framework|AI governance]].",
         ],
         diagram: {
           variant: "supplychainflow",
@@ -267,7 +267,7 @@ export const aiOpsPosts7: BlogPost[] = [
       {
         heading: "Step 4: Threats and Abuse Cases",
         body: [
-          "Use STRIDE (spoofing, tampering, repudiation, information disclosure, denial of service, elevation of privilege) for the conventional view, then walk through AI-specific risks from the [[https://genai.owasp.org/llm-top-10/|OWASP Top 10 for LLM Applications]] and tactics in [[https://atlas.mitre.org/|MITRE ATLAS]]. Turn them into concrete abuse cases written from the attacker's perspective, such as: 'As a customer, I paste instructions into the chat so the assistant approves a refund above policy' or 'As an outsider, I email instructions that make the inbox assistant forward a summary to me.'",
+          "Use STRIDE (spoofing, tampering, repudiation, information disclosure, denial of service, elevation of privilege) for the conventional view, then walk through AI-specific risks from the OWASP Top 10 for LLM Applications and tactics in MITRE ATLAS. Turn them into concrete abuse cases written from the attacker's perspective, such as: 'As a customer, I paste instructions into the chat so the assistant approves a refund above policy' or 'As an outsider, I email instructions that make the inbox assistant forward a summary to me.'",
         ],
       },
       {
@@ -460,7 +460,7 @@ export const aiOpsPosts7: BlogPost[] = [
       {
         heading: "5. Output Handling",
         body: [
-          "Model output must be treated as untrusted. Test that HTML and Markdown are sanitized before rendering, external images and links are restricted, output is never executed as code or inserted into queries or shell commands without validation, and structured outputs are validated against schemas before use. The OWASP Top 10 for LLM Applications lists [[https://genai.owasp.org/llm-top-10/|improper output handling]] as a distinct risk.",
+          "Model output must be treated as untrusted. Test that HTML and Markdown are sanitized before rendering, external images and links are restricted, output is never executed as code or inserted into queries or shell commands without validation, and structured outputs are validated against schemas before use. The OWASP Top 10 for LLM Applications lists improper output handling as a distinct risk.",
         ],
       },
       {
@@ -649,7 +649,7 @@ export const aiOpsPosts7: BlogPost[] = [
       {
         heading: "Designing for Errors and Trust",
         body: [
-          "Trust should be calibrated, not maximized: users should rely on AI where it is reliable and check it where it is not. Design supports this through sources and evidence users can inspect, clear signals of uncertainty, editable outputs, confirmation before consequential actions, easy undo and visible paths to a person. Research-based guidance such as Microsoft's [[https://www.microsoft.com/en-us/haxtoolkit/ai-guidelines/|Guidelines for Human-AI Interaction]] and Google's [[https://pair.withgoogle.com/guidebook/|People + AI Guidebook]] offer tested principles; see [[/blogs/human-ai-interaction-design|human-AI interaction design]].",
+          "Trust should be calibrated, not maximized: users should rely on AI where it is reliable and check it where it is not. Design supports this through sources and evidence users can inspect, clear signals of uncertainty, editable outputs, confirmation before consequential actions, easy undo and visible paths to a person. Research-based guidance such as Microsoft's Guidelines for Human-AI Interaction and Google's People + AI Guidebook offer tested principles; see [[/blogs/human-ai-interaction-design|human-AI interaction design]].",
         ],
       },
       {

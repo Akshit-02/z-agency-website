@@ -49,7 +49,7 @@ export const commercePosts9: BlogPost[] = [
       {
         heading: "Check 1: Tracking and Traffic Quality",
         body: [
-          "Shopify Analytics defines each step's conversion rate as sessions reaching that step divided by total sessions ([[https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports|Shopify Help Center]]). Before trusting a low number, check it.",
+          "Shopify Analytics defines each step's conversion rate as sessions reaching that step divided by total sessions (Shopify Help Center). Before trusting a low number, check it.",
         ],
         checklist: [
           "Do orders in Shopify match what your other tools report?",
@@ -112,7 +112,7 @@ export const commercePosts9: BlogPost[] = [
       {
         heading: "Check 6: Cart and Checkout",
         body: [
-          "Place test orders on a phone and a desktop, following Shopify's test order guidance, with each payment method and a few shipping destinations. Watch for unexpected costs, errors and slow steps. Review abandoned checkouts in the Orders section to see where and on which products shoppers stop, and confirm abandoned checkout emails are sending. Baymard's research lists extra costs as the most common reason for abandoning checkout, cited by 40% of US shoppers who abandoned ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]], updated September 2025). See [[/blogs/shopify-cart-optimization|Shopify cart optimization]] and [[/blogs/shopify-checkout-optimization|Shopify checkout optimization]].",
+          "Place test orders on a phone and a desktop, following Shopify's test order guidance, with each payment method and a few shipping destinations. Watch for unexpected costs, errors and slow steps. Review abandoned checkouts in the Orders section to see where and on which products shoppers stop, and confirm abandoned checkout emails are sending. Baymard's research lists extra costs as the most common reason for abandoning checkout, cited by 40% of US shoppers who abandoned (Baymard Institute, updated September 2025). See [[/blogs/shopify-cart-optimization|Shopify cart optimization]] and [[/blogs/shopify-checkout-optimization|Shopify checkout optimization]].",
         ],
       },
       {

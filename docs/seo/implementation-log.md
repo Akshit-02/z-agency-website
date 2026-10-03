@@ -57,7 +57,11 @@ docs/seo/: site-audit.md, keyword-map.md, competitor-research.md, blog-audit.md,
 - `npm run build`: pass (all static pages generated)
 - Local production crawl: 760/760 sitemap URLs 200, 0 broken internal links, 0 canonical mismatches, 1 H1 per page, 0 invalid JSON-LD, 0 titles >70, 0 descriptions >160, 0 duplicate titles/descriptions
 - `/blog` and `/blog/:slug` return 308 to `/blogs`
-- External references: 323 unique URLs checked; all resolve (403/202 responses verified manually)
+- External references: 323 unique URLs checked; all resolved (403/202 responses verified manually)
+
+## Later change: outbound links removed (2026-10-03)
+
+At the owner's request, all 524 external links in article content (102 data files) were converted to plain text. Source names remain as citations, e.g. "(Baymard Institute, 2021)", but are no longer clickable. The site now has no outbound links; code samples that contain example URLs are unaffected.
 - Mobile: no horizontal overflow at 360/390/768 px on 10 key templates and an 80-article random sample at 390 px
 - Browser: service page new sections, blog "Load more" (24 → 48 of 727) and category hubs checked visually
 - Logo files (`Logo.tsx`, `icon.tsx`, `apple-icon.tsx`, `opengraph-image.tsx`, `og-shared.tsx`) unchanged (`git diff` empty)

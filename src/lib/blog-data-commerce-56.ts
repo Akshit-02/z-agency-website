@@ -334,7 +334,7 @@ export const commercePosts56: BlogPost[] = [
       {
         heading: "Ranking on Shopify",
         body: [
-          "For native Shopify storefront search, the Search & Discovery app lets merchants add synonyms and set product boosts for search queries, alongside filters and recommendations ([[https://help.shopify.com/en/manual/online-store/search-and-discovery|Shopify Help Center]]). Third-party search apps typically offer field weighting, behavioural ranking and rule management. Headless stores can connect any search service. Whichever you use, apply the same layered approach. See [[/blogs/shopify-search-optimization|Shopify search optimization]].",
+          "For native Shopify storefront search, the Search & Discovery app lets merchants add synonyms and set product boosts for search queries, alongside filters and recommendations (Shopify Help Center). Third-party search apps typically offer field weighting, behavioural ranking and rule management. Headless stores can connect any search service. Whichever you use, apply the same layered approach. See [[/blogs/shopify-search-optimization|Shopify search optimization]].",
         ],
       },
       {
@@ -675,7 +675,7 @@ export const commercePosts56: BlogPost[] = [
       {
         heading: "Merchandising Automation on Shopify",
         body: [
-          "Shopify's automated collections include products that match conditions such as product type, tag, vendor, price or metafield values, and collections can be sorted by criteria such as best selling, newest or manual order ([[https://help.shopify.com/en/manual/products/collections/automated-collections|Shopify Help Center]]). Shopify Flow can automate tasks triggered by events such as inventory changes, for example tagging or hiding products ([[https://help.shopify.com/en/manual/shopify-flow|Shopify Help Center]]). Merchandising apps add rules for pushing sold-out items down, pinning and scheduling. Search & Discovery handles search boosts, filters and recommendations. See [[/blogs/shopify-search-optimization|Shopify search optimization]].",
+          "Shopify's automated collections include products that match conditions such as product type, tag, vendor, price or metafield values, and collections can be sorted by criteria such as best selling, newest or manual order (Shopify Help Center). Shopify Flow can automate tasks triggered by events such as inventory changes, for example tagging or hiding products (Shopify Help Center). Merchandising apps add rules for pushing sold-out items down, pinning and scheduling. Search & Discovery handles search boosts, filters and recommendations. See [[/blogs/shopify-search-optimization|Shopify search optimization]].",
         ],
       },
       {

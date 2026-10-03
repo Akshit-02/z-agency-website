@@ -68,7 +68,7 @@ export const commercePosts20: BlogPost[] = [
       {
         heading: "Ingredients, Allergens and Nutrition",
         body: [
-          "Show the full ingredient list with allergens emphasized, may-contain statements, nutrition information and any certifications you can document. Requirements vary by market: in the EU, the Food Information to Consumers regulation requires mandatory food information for prepacked food sold at a distance to be available before the purchase is concluded, with the date mark available at delivery ([[https://food.ec.europa.eu/food-safety/labelling-and-nutrition/food-information-consumers-legislation/distance-selling_en|European Commission]]). Check the rules in each market you sell to.",
+          "Show the full ingredient list with allergens emphasized, may-contain statements, nutrition information and any certifications you can document. Requirements vary by market: in the EU, the Food Information to Consumers regulation requires mandatory food information for prepacked food sold at a distance to be available before the purchase is concluded, with the date mark available at delivery (European Commission). Check the rules in each market you sell to.",
         ],
         callout: {
           type: "note",

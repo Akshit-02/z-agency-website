@@ -50,14 +50,14 @@ export const commercePosts10: BlogPost[] = [
       {
         heading: "The Default Sort Matters Most",
         body: [
-          "Most shoppers never change the sort, so the default decides what they see. Baymard Institute recommends a diversity-based relevance default, where the first rows represent the main product types in the category rather than many near-identical bestsellers; their benchmark found 24% of desktop sites didn't do this ([[https://baymard.com/blog/default-sort-type|Baymard Institute, 2021]]). Their suggested approach is to make sure every major subtype appears within roughly the first 20 results on desktop and 10 on mobile.",
+          "Most shoppers never change the sort, so the default decides what they see. Baymard Institute recommends a diversity-based relevance default, where the first rows represent the main product types in the category rather than many near-identical bestsellers; their benchmark found 24% of desktop sites didn't do this (Baymard Institute, 2021). Their suggested approach is to make sure every major subtype appears within roughly the first 20 results on desktop and 10 on mobile.",
           "Name it “Featured” or “Recommended” rather than “Popular”, which shoppers read as best-selling.",
         ],
       },
       {
         heading: "The Essential Sort Options",
         body: [
-          "Baymard's research identifies four sort types that users expect on most ecommerce sites ([[https://baymard.com/blog/essential-sort-types|Baymard Institute, 2021]]).",
+          "Baymard's research identifies four sort types that users expect on most ecommerce sites (Baymard Institute, 2021).",
         ],
         table: {
           headers: ["Sort", "Direction", "Why shoppers use it", "Share of benchmarked sites missing it (Baymard, 2021)"],
@@ -181,7 +181,7 @@ export const commercePosts10: BlogPost[] = [
       {
         heading: "What the Research Says",
         body: [
-          "Baymard Institute found that 38% of the top 60 ecommerce sites they reviewed had a dedicated comparison tool, but that users had severe difficulties using them, both when selecting items from the product list and when reading the comparison page ([[https://baymard.com/ecommerce-design-examples/39-comparison-tool|Baymard Institute]]). A comparison tool can help shoppers decide; a poorly implemented one adds effort.",
+          "Baymard Institute found that 38% of the top 60 ecommerce sites they reviewed had a dedicated comparison tool, but that users had severe difficulties using them, both when selecting items from the product list and when reading the comparison page (Baymard Institute). A comparison tool can help shoppers decide; a poorly implemented one adds effort.",
         ],
       },
       {
@@ -363,7 +363,7 @@ export const commercePosts10: BlogPost[] = [
       {
         heading: "Accessibility",
         body: [
-          "A quick view is a modal dialog, so it needs dialog semantics and an accessible name, focus moved into it on open and trapped while open, focus returned to the triggering control on close, and Escape to close. Baymard's product list research also stresses keyboard access to quick view and consolidating links so each card isn't a series of separate focus stops ([[https://baymard.com/research/ecommerce-product-lists|Baymard Institute]]). See [[/blogs/accessible-ui-ux-design|accessible UI/UX design]].",
+          "A quick view is a modal dialog, so it needs dialog semantics and an accessible name, focus moved into it on open and trapped while open, focus returned to the triggering control on close, and Escape to close. Baymard's product list research also stresses keyboard access to quick view and consolidating links so each card isn't a series of separate focus stops (Baymard Institute). See [[/blogs/accessible-ui-ux-design|accessible UI/UX design]].",
         ],
       },
       {
@@ -597,7 +597,7 @@ export const commercePosts10: BlogPost[] = [
       {
         heading: "When a Mega Menu Is Worth It",
         body: [
-          "Nielsen Norman Group describes mega menus as a good choice for accommodating many options and revealing lower-level pages at a glance ([[https://www.nngroup.com/articles/mega-menus-work-well/|NN/g]]). For a store with a handful of categories, a simple dropdown or no dropdown is clearer. Mega menus pay off when shoppers benefit from seeing subcategories, such as Men › Jackets, before clicking.",
+          "Nielsen Norman Group describes mega menus as a good choice for accommodating many options and revealing lower-level pages at a glance (NN/g). For a store with a handful of categories, a simple dropdown or no dropdown is clearer. Mega menus pay off when shoppers benefit from seeing subcategories, such as Men › Jackets, before clicking.",
         ],
       },
       {
@@ -616,7 +616,7 @@ export const commercePosts10: BlogPost[] = [
       {
         heading: "Hover, Click and Timing",
         body: [
-          "Hover-opened menus can flash open as the pointer crosses the navigation bar. NN/g recommends waiting about 0.5 seconds of stationary hover before opening, then displaying the menu within 0.1 seconds, and not letting the open menu take over the whole screen ([[https://www.nngroup.com/articles/mega-menus-work-well/|NN/g]]). Click-to-open avoids accidental opening and works for touch and keyboard. Whichever you choose, keep the panel open while the pointer moves diagonally toward it.",
+          "Hover-opened menus can flash open as the pointer crosses the navigation bar. NN/g recommends waiting about 0.5 seconds of stationary hover before opening, then displaying the menu within 0.1 seconds, and not letting the open menu take over the whole screen (NN/g). Click-to-open avoids accidental opening and works for touch and keyboard. Whichever you choose, keep the panel open while the pointer moves diagonally toward it.",
         ],
         cta: {
           title: "Is your mega menu helping or overwhelming shoppers?",

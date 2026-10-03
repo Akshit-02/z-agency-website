@@ -441,7 +441,7 @@ export const commercePosts86: BlogPost[] = [
       {
         heading: "How Architecture Decides PCI Scope",
         body: [
-          "The [[https://www.pcisecuritystandards.org/document_library/|PCI Data Security Standard]] applies to every business that accepts cards, but the work varies enormously with how card data flows.",
+          "The PCI Data Security Standard applies to every business that accepts cards, but the work varies enormously with how card data flows.",
         ],
         diagram: {
           variant: "pciscope",
@@ -459,12 +459,12 @@ export const commercePosts86: BlogPost[] = [
         heading: "Payment Page Scripts and Web Skimming",
         body: [
           "Web skimming attacks inject JavaScript into checkout pages, often through a compromised third-party script, to copy card data as shoppers type. PCI DSS v4 added two requirements aimed at this: **6.4.3**, managing scripts on payment pages (authorizing each script, assuring its integrity and keeping an inventory with business justification), and **11.6.1**, detecting unauthorized changes to payment page content and security-relevant HTTP headers. Both became mandatory on 31 March 2025 where they apply.",
-          "In January 2025 the PCI SSC [[https://blog.pcisecuritystandards.org/important-updates-announced-for-merchants-validating-to-self-assessment-questionnaire-a|updated SAQ A]]: those two requirements were removed from the questionnaire and replaced with an eligibility criterion that the merchant confirms its site is not susceptible to attacks from scripts that could affect its ecommerce systems. In practice, even merchants using iframes or redirects need to control the scripts on the page that hosts or links to payment.",
+          "In January 2025 the PCI SSC updated SAQ A: those two requirements were removed from the questionnaire and replaced with an eligibility criterion that the merchant confirms its site is not susceptible to attacks from scripts that could affect its ecommerce systems. In practice, even merchants using iframes or redirects need to control the scripts on the page that hosts or links to payment.",
         ],
         checklist: [
           "An inventory of every script on checkout and payment pages, with an owner and a reason",
-          "A [[https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP|Content Security Policy]] restricting where scripts can load from",
-          "[[https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity|Subresource Integrity]] for static third-party scripts where possible",
+          "A Content Security Policy restricting where scripts can load from",
+          "Subresource Integrity for static third-party scripts where possible",
           "Tag manager access restricted, with no ad-hoc tags on payment pages",
           "Change and tamper detection on payment pages and headers, with alerts",
           "Fewer scripts on checkout: remove what does not need to be there",

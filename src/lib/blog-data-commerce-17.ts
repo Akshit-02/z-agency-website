@@ -122,7 +122,7 @@ export const commercePosts17: BlogPost[] = [
       {
         heading: "Payment Architecture for Renewals",
         body: [
-          "Renewals are merchant-initiated charges on a stored payment method, so the first payment has to set that up properly. The payment provider tokenizes the card or method at checkout; in markets with strong customer authentication the first payment may need the customer to authenticate, after which renewals can usually be charged without the customer present under the applicable rules. Build for the realities of stored payments: card updater services where available, retries for soft declines, a clear flow for customers to update methods, and webhook-driven status updates. On platforms such as Shopify, the subscription app schedules billing attempts and retries; Shopify's developer documentation notes that apps are responsible for creating billing attempts and re-billing failed ones ([[https://shopify.dev/docs/apps/build/purchase-options/subscriptions/contracts/build-a-subscription-contract|Shopify developer docs]]).",
+          "Renewals are merchant-initiated charges on a stored payment method, so the first payment has to set that up properly. The payment provider tokenizes the card or method at checkout; in markets with strong customer authentication the first payment may need the customer to authenticate, after which renewals can usually be charged without the customer present under the applicable rules. Build for the realities of stored payments: card updater services where available, retries for soft declines, a clear flow for customers to update methods, and webhook-driven status updates. On platforms such as Shopify, the subscription app schedules billing attempts and retries; Shopify's developer documentation notes that apps are responsible for creating billing attempts and re-billing failed ones (Shopify developer docs).",
         ],
       },
       {
@@ -272,7 +272,7 @@ export const commercePosts17: BlogPost[] = [
       {
         heading: "Shopify Subscriptions App Capabilities",
         body: [
-          "According to Shopify's Help Center, the app supports the following ([[https://help.shopify.com/en/manual/products/purchase-options/subscriptions/shopify-subscriptions|Shopify Help Center]]):",
+          "According to Shopify's Help Center, the app supports the following (Shopify Help Center):",
         ],
         table: {
           headers: ["Area", "Capability"],
@@ -290,7 +290,7 @@ export const commercePosts17: BlogPost[] = [
       {
         heading: "Failed Payment Settings",
         body: [
-          "In the app's settings you choose the number of retry attempts, the days between retries and the action when all retries fail: skip the order, pause the subscription or cancel it ([[https://help.shopify.com/en/manual/products/purchase-options/subscriptions/shopify-subscriptions/manage-subscriptions/manage-app-settings|Shopify Help Center]]). The same settings apply to insufficient inventory. Skip or pause are usually kinder defaults than cancelling, because customers who simply had an expired card can recover without re-subscribing.",
+          "In the app's settings you choose the number of retry attempts, the days between retries and the action when all retries fail: skip the order, pause the subscription or cancel it (Shopify Help Center). The same settings apply to insufficient inventory. Skip or pause are usually kinder defaults than cancelling, because customers who simply had an expired card can recover without re-subscribing.",
         ],
         cta: {
           title: "Setting up subscriptions on Shopify?",
@@ -300,7 +300,7 @@ export const commercePosts17: BlogPost[] = [
       {
         heading: "Selling Plans in More Detail",
         body: [
-          "Selling plans are grouped into selling plan groups attached to products or variants. Each plan combines a billing policy (how often the customer is charged), a delivery policy (how often orders are delivered) and pricing policies (such as a percentage or fixed discount, possibly changing after a number of cycles). Subscription apps create and manage these through Shopify's Selling Plan APIs; when a customer checks out with a selling plan, a subscription contract is created and the app schedules billing attempts from it ([[https://shopify.dev/docs/apps/build/purchase-options/subscriptions|Shopify developer docs]]).",
+          "Selling plans are grouped into selling plan groups attached to products or variants. Each plan combines a billing policy (how often the customer is charged), a delivery policy (how often orders are delivered) and pricing policies (such as a percentage or fixed discount, possibly changing after a number of cycles). Subscription apps create and manage these through Shopify's Selling Plan APIs; when a customer checks out with a selling plan, a subscription contract is created and the app schedules billing attempts from it (Shopify developer docs).",
         ],
         table: {
           headers: ["Object", "Holds"],
@@ -316,7 +316,7 @@ export const commercePosts17: BlogPost[] = [
       {
         heading: "Payment Gateway Requirements",
         body: [
-          "Subscriptions on Shopify need a supported payment gateway. Shopify's Help Center lists Shopify Payments, PayPal Express (with reference transactions approved) and Authorize.net as supported gateways for subscription products, and notes wallet limitations with some gateways, such as Apple Pay and Google Pay not being supported with Authorize.net in the Shopify Subscriptions app ([[https://help.shopify.com/en/manual/products/purchase-options/subscriptions/considerations|Shopify Help Center]]). Check current requirements before launch, as eligibility can change.",
+          "Subscriptions on Shopify need a supported payment gateway. Shopify's Help Center lists Shopify Payments, PayPal Express (with reference transactions approved) and Authorize.net as supported gateways for subscription products, and notes wallet limitations with some gateways, such as Apple Pay and Google Pay not being supported with Authorize.net in the Shopify Subscriptions app (Shopify Help Center). Check current requirements before launch, as eligibility can change.",
         ],
       },
       {
@@ -340,7 +340,7 @@ export const commercePosts17: BlogPost[] = [
       {
         heading: "Headless and Hydrogen Storefronts",
         body: [
-          "Headless storefronts, including Hydrogen, can sell subscriptions through the Storefront API. Shopify's documentation describes querying a product's sellingPlanGroups to show plans and frequencies, and adding a subscription to the cart by passing the variant ID, quantity and selling plan ID to the cart mutation; selling plan allocations provide the adjusted prices to display ([[https://shopify.dev/docs/storefronts/headless/building-with-the-storefront-api/products-collections/subscriptions|Shopify developer docs]]). The storefront needs the unauthenticated_read_selling_plans scope. Checkout and subscription management still rely on Shopify checkout, customer accounts and the subscription app, so plan the portal experience rather than rebuilding it. See [[/blogs/shopify-hydrogen|Shopify Hydrogen]].",
+          "Headless storefronts, including Hydrogen, can sell subscriptions through the Storefront API. Shopify's documentation describes querying a product's sellingPlanGroups to show plans and frequencies, and adding a subscription to the cart by passing the variant ID, quantity and selling plan ID to the cart mutation; selling plan allocations provide the adjusted prices to display (Shopify developer docs). The storefront needs the unauthenticated_read_selling_plans scope. Checkout and subscription management still rely on Shopify checkout, customer accounts and the subscription app, so plan the portal experience rather than rebuilding it. See [[/blogs/shopify-hydrogen|Shopify Hydrogen]].",
         ],
       },
       {

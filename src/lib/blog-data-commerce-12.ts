@@ -69,7 +69,7 @@ export const commercePosts12: BlogPost[] = [
       {
         heading: "Selling Through AI Assistants",
         body: [
-          "The newest change is that shoppers ask AI assistants for product advice, and those assistants show products and, on some surfaces, complete checkout. Shopify lists ChatGPT, Microsoft Copilot, AI Mode in Google Search, the Gemini app and Meta as channels for its Agentic Storefronts ([[https://www.shopify.com/blog/agentic-commerce|Shopify]]). Standards such as the Universal Commerce Protocol (UCP), co-developed by Google and Shopify, and the Agentic Commerce Protocol (ACP), from OpenAI and Stripe, define how assistants and merchants exchange product, cart and checkout information. See [[/blogs/agentic-commerce|agentic commerce]] and [[/blogs/ai-shopping-agents|AI shopping agents]].",
+          "The newest change is that shoppers ask AI assistants for product advice, and those assistants show products and, on some surfaces, complete checkout. Shopify lists ChatGPT, Microsoft Copilot, AI Mode in Google Search, the Gemini app and Meta as channels for its Agentic Storefronts (Shopify). Standards such as the Universal Commerce Protocol (UCP), co-developed by Google and Shopify, and the Agentic Commerce Protocol (ACP), from OpenAI and Stripe, define how assistants and merchants exchange product, cart and checkout information. See [[/blogs/agentic-commerce|agentic commerce]] and [[/blogs/ai-shopping-agents|AI shopping agents]].",
         ],
       },
       {
@@ -232,7 +232,7 @@ export const commercePosts12: BlogPost[] = [
         },
         callout: {
           type: "note",
-          text: "OpenAI launched Instant Checkout in ChatGPT with the Agentic Commerce Protocol in September 2025. In March 2026, OpenAI said Instant Checkout was moving to ChatGPT apps, with ACP remaining the infrastructure ([[https://www.digitalcommerce360.com/2026/03/06/openai-shifts-checkout-plans-agentic-commerce-strategy/|Digital Commerce 360]]). Check each channel's current terms before planning around a feature.",
+          text: "OpenAI launched Instant Checkout in ChatGPT with the Agentic Commerce Protocol in September 2025. In March 2026, OpenAI said Instant Checkout was moving to ChatGPT apps, with ACP remaining the infrastructure (Digital Commerce 360). Check each channel's current terms before planning around a feature.",
         },
       },
       {
@@ -267,13 +267,13 @@ export const commercePosts12: BlogPost[] = [
       {
         heading: "Checkout and Payments",
         body: [
-          "When an agent completes a purchase, the checkout still runs on the merchant's systems. OpenAI's ACP documentation states that OpenAI is not the merchant of record and that checkout state and payment processing occur on the merchant's systems ([[https://developers.openai.com/commerce/guides/key-concepts|OpenAI]]). Google's UCP-powered checkout keeps the merchant as seller of record and currently uses payment methods saved in Google Wallet ([[https://support.google.com/merchants/answer/16837055?hl=en|Google Merchant Center Help]]). Your checkout rules, taxes, shipping and fraud checks still apply.",
+          "When an agent completes a purchase, the checkout still runs on the merchant's systems. OpenAI's ACP documentation states that OpenAI is not the merchant of record and that checkout state and payment processing occur on the merchant's systems (OpenAI). Google's UCP-powered checkout keeps the merchant as seller of record and currently uses payment methods saved in Google Wallet (Google Merchant Center Help). Your checkout rules, taxes, shipping and fraud checks still apply.",
         ],
       },
       {
         heading: "Trust, Authorization and Risk",
         body: [
-          "Agent purchases raise questions: did the shopper authorize this, is the request genuine, and who is accountable if something goes wrong? Google's Agent Payments Protocol (AP2), announced in September 2025, addresses this with verifiable user authorization ([[https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol|Google Cloud]]). For merchants, practical steps are clear policies, fraud screening that treats agent traffic appropriately, and service processes that work for orders placed through assistants.",
+          "Agent purchases raise questions: did the shopper authorize this, is the request genuine, and who is accountable if something goes wrong? Google's Agent Payments Protocol (AP2), announced in September 2025, addresses this with verifiable user authorization (Google Cloud). For merchants, practical steps are clear policies, fraud screening that treats agent traffic appropriately, and service processes that work for orders placed through assistants.",
         ],
       },
       {
@@ -378,7 +378,7 @@ export const commercePosts12: BlogPost[] = [
         },
         callout: {
           type: "note",
-          text: "Sources: [[https://www.digitalcommerce360.com/2026/01/12/shopify-universal-commerce-protocol-open-standard-agentic-ai/|Digital Commerce 360 on UCP]], [[https://support.google.com/merchants/answer/16837055?hl=en|Google Merchant Center Help]], [[https://developers.openai.com/commerce/guides/key-concepts|OpenAI commerce docs]], [[https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol|Google Cloud on AP2]], [[https://shopify.dev/docs/agents|Shopify agent docs]].",
+          text: "Sources: Digital Commerce 360 on UCP, Google Merchant Center Help, OpenAI commerce docs, Google Cloud on AP2, Shopify agent docs.",
         },
       },
       {
@@ -433,7 +433,7 @@ export const commercePosts12: BlogPost[] = [
       {
         heading: "What's Hype",
         body: [
-          "Claims that agents will soon handle most shopping autonomously, that stores need special “AI files” to be seen, or that one protocol has already won aren't supported by current evidence. Google states no special markup or files are needed for AI Overviews or AI Mode ([[https://developers.google.com/search/docs/appearance/ai-features|Google Search Central]]). Build for what's documented and measurable.",
+          "Claims that agents will soon handle most shopping autonomously, that stores need special “AI files” to be seen, or that one protocol has already won aren't supported by current evidence. Google states no special markup or files are needed for AI Overviews or AI Mode (Google Search Central). Build for what's documented and measurable.",
         ],
       },
       {
@@ -542,7 +542,7 @@ export const commercePosts12: BlogPost[] = [
       {
         heading: "Channels and Availability",
         body: [
-          "Shopify's documentation describes different reach per channel: ChatGPT and Copilot are available to merchants selling to US buyers regardless of where the store is based, while AI Mode and Gemini were open to US-based stores selling to US customers, with a broader rollout underway. Products reach Google's surfaces through Shopify Catalog or the Google & YouTube channel and Merchant Center ([[https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts|Shopify Help Center]], [[https://www.shopify.com/blog/agentic-commerce|Shopify]]).",
+          "Shopify's documentation describes different reach per channel: ChatGPT and Copilot are available to merchants selling to US buyers regardless of where the store is based, while AI Mode and Gemini were open to US-based stores selling to US customers, with a broader rollout underway. Products reach Google's surfaces through Shopify Catalog or the Google & YouTube channel and Merchant Center (Shopify Help Center, Shopify).",
         ],
       },
       {
@@ -574,7 +574,7 @@ export const commercePosts12: BlogPost[] = [
       {
         heading: "Product Data Is the Lever",
         body: [
-          "Shopify lists products in AI channels with their title, description, options, images, price, availability and other key attributes. If important information lives in metafields or metaobjects, such as materials, dimensions or compatibility, use Shopify Catalog Mapping so it reaches the Catalog ([[https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts/products|Shopify Help Center]]).",
+          "Shopify lists products in AI channels with their title, description, options, images, price, availability and other key attributes. If important information lives in metafields or metaobjects, such as materials, dimensions or compatibility, use Shopify Catalog Mapping so it reaches the Catalog (Shopify Help Center).",
         ],
         table: {
           headers: ["Field", "Improve by"],
@@ -603,7 +603,7 @@ export const commercePosts12: BlogPost[] = [
       {
         heading: "For Developers: Building Agents on Shopify",
         body: [
-          "Shopify's developer documentation describes how agents can authenticate, search the Global Catalog or a single storefront, build carts and checkouts, hand off to the merchant for payment and monitor orders using UCP and UCP-compliant MCP servers, with trust tiers controlling capabilities; some APIs are in early access ([[https://shopify.dev/docs/agents|Shopify developer docs]]). This matters if you're building your own shopping assistant, not for enabling Agentic Storefronts. See [[/blogs/shopify-custom-app-development-guide|Shopify custom app development]].",
+          "Shopify's developer documentation describes how agents can authenticate, search the Global Catalog or a single storefront, build carts and checkouts, hand off to the merchant for payment and monitor orders using UCP and UCP-compliant MCP servers, with trust tiers controlling capabilities; some APIs are in early access (Shopify developer docs). This matters if you're building your own shopping assistant, not for enabling Agentic Storefronts. See [[/blogs/shopify-custom-app-development-guide|Shopify custom app development]].",
         ],
       },
       {

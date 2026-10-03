@@ -462,7 +462,7 @@ export const commercePosts84: BlogPost[] = [
         heading: "How Wallet Payments Work",
         body: [
           "For device wallets, the browser or operating system shows a payment sheet with the shopper's stored cards and address. When the shopper approves, the wallet returns an encrypted payment token rather than the card number. Your front end sends it to your server, your server passes it to the payment provider, and the provider decrypts and authorizes it. Card data never touches your servers, which keeps PCI scope small.",
-          "On the web, wallets can be invoked through provider SDKs, through Apple's [[https://developer.apple.com/documentation/apple_pay_on_the_web|Apple Pay on the Web]] JavaScript, the [[https://developers.google.com/pay/api/web/overview|Google Pay API for web]], or the W3C [[https://www.w3.org/TR/payment-request/|Payment Request API]] where supported. Provider SDKs are usually the simplest route because they handle tokens, domain registration and fallbacks.",
+          "On the web, wallets can be invoked through provider SDKs, through Apple's Apple Pay on the Web JavaScript, the Google Pay API for web, or the W3C Payment Request API where supported. Provider SDKs are usually the simplest route because they handle tokens, domain registration and fallbacks.",
         ],
         diagram: {
           variant: "walletflow",

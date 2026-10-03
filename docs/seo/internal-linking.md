@@ -11,7 +11,7 @@ Measured from the article data before (git HEAD) and after this project on 2026-
 | Articles with no contextual service link | 144 | 0 |
 | Articles with no inbound contextual link from another article | 40 | 0 |
 | Median inbound contextual links per article | 6 | 6 |
-| External reference links in articles | 515 | 523 |
+| External reference links in articles | 515 | 523 (later removed: 0) |
 | Broken internal links (crawl) | 0 | 0 |
 
 Contextual service links after the project: website development 343, UI/UX 324, AI automation 308, Shopify 304, CRO 254, mobile app development 62. Mobile is lowest because its cluster is the smallest (34 articles); new mobile content in the roadmap will raise it.

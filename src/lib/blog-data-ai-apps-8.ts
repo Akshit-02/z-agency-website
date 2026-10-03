@@ -158,7 +158,7 @@ export const aiAppsPosts8: BlogPost[] = [
         body: [
           "Keyword search excels at exact terms: product codes, names, error messages. Semantic search excels at meaning: queries phrased differently from documents. Hybrid search runs both and combines results, often with reciprocal rank fusion, then reranks the top candidates with a cross-encoder or language model for precision.",
           "Tune with real queries. Collect a set of queries with judged relevant results, measure metrics such as recall at 10 and normalized discounted cumulative gain, and compare configurations. Small changes to tokenization, synonyms or chunking often matter more than the embedding model. Vector storage options are compared in [[/blogs/vector-databases-for-ai|vector databases]].",
-          "Reciprocal rank fusion was introduced in [[https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf|Cormack, Clarke and Buettcher (2009)]].",
+          "Reciprocal rank fusion was introduced in Cormack, Clarke and Buettcher (2009).",
         ],
       },
       {
@@ -331,7 +331,7 @@ export const aiAppsPosts8: BlogPost[] = [
         heading: "Defining Copilot Tools",
         body: [
           "Each copilot action maps to an existing product API, executed as the user. Tool definitions describe when to use them and constrain arguments.",
-          "Tool definitions follow each provider's format, for example OpenAI's [[https://platform.openai.com/docs/guides/function-calling|function calling]] and Anthropic's [[https://docs.claude.com/en/docs/agents-and-tools/tool-use/overview|tool use]] documentation.",
+          "Tool definitions follow each provider's format, for example OpenAI's function calling and Anthropic's tool use documentation.",
         ],
         code: {
           label: "Example: a copilot tool mapped to a product API (illustrative)",
@@ -458,7 +458,7 @@ export const aiAppsPosts8: BlogPost[] = [
       {
         heading: "Platform Options",
         body: [
-          "Official documentation: Apple's [[https://developer.apple.com/documentation/foundationmodels|Foundation Models framework]] and Google's [[https://developers.google.com/ml-kit/genai|ML Kit GenAI APIs]].",
+          "Official documentation: Apple's Foundation Models framework and Google's ML Kit GenAI APIs.",
         ],
         table: {
           headers: ["Platform", "Option", "Use for"],
@@ -527,7 +527,7 @@ export const aiAppsPosts8: BlogPost[] = [
       {
         heading: "Cost and Abuse Controls",
         body: [
-          "Platform attestation services include Apple's [[https://developer.apple.com/documentation/devicecheck|DeviceCheck and App Attest]] and Google's [[https://developer.android.com/google/play/integrity/overview|Play Integrity API]].",
+          "Platform attestation services include Apple's DeviceCheck and App Attest and Google's Play Integrity API.",
         ],
         checklist: [
           "Authenticate every AI request through your backend",
@@ -754,7 +754,7 @@ export const aiAppsPosts8: BlogPost[] = [
         body: [
           "Scaling AI depends on people across the organization knowing what AI can do, how to use approved tools safely and when to involve specialists. Effective programmes are role-based: general literacy and policy for everyone, practical workflow training for heavy users, product and evaluation skills for teams building AI features, and risk training for reviewers and approvers.",
           "The EU AI Act includes an AI literacy obligation for providers and deployers, which applies from February 2025, so documented training is also a compliance matter for organizations in scope. Communities of practice, internal showcases and shared prompt libraries spread good practice faster than formal courses alone. Governance roles are described in [[/blogs/ai-governance-framework|AI governance framework]].",
-          "The Commission's [[https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers|AI literacy Q&A]] explains what the obligation covers.",
+          "The Commission's AI literacy Q&A explains what the obligation covers.",
         ],
       },
       {

@@ -244,13 +244,13 @@ export const aiOpsPosts9: BlogPost[] = [
       {
         heading: "Disclosing AI Involvement",
         body: [
-          "People should know when they are interacting with AI rather than a person, and when content they see was generated. Disclose at the start of conversations, label AI-generated drafts and summaries, and use consistent visual language across the product. Regulation increasingly requires this: the EU AI Act's [[https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai|transparency obligations]] apply from 2 August 2026 and cover informing people about AI interactions and marking certain synthetic content. Requirements vary by role and context, so confirm with legal advice.",
+          "People should know when they are interacting with AI rather than a person, and when content they see was generated. Disclose at the start of conversations, label AI-generated drafts and summaries, and use consistent visual language across the product. Regulation increasingly requires this: the EU AI Act's transparency obligations apply from 2 August 2026 and cover informing people about AI interactions and marking certain synthetic content. Requirements vary by role and context, so confirm with legal advice.",
         ],
       },
       {
         heading: "Sources and Provenance",
         body: [
-          "Sources are the most useful transparency feature for factual outputs. Place citations next to the claims they support, link to the exact passage, show previews and state clearly when an answer is not supported by available sources. For generated media, provenance standards such as [[https://c2pa.org/|C2PA]] attach verifiable information about how content was created.",
+          "Sources are the most useful transparency feature for factual outputs. Place citations next to the claims they support, link to the exact passage, show previews and state clearly when an answer is not supported by available sources. For generated media, provenance standards such as C2PA attach verifiable information about how content was created.",
         ],
         cta: {
           title: "Need to make your AI features more transparent?",

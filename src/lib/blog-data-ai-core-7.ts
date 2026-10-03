@@ -70,7 +70,7 @@ export const aiCorePosts7: BlogPost[] = [
       {
         heading: "Dimensions, Storage and Cost",
         body: [
-          "Embedding models output vectors of a fixed size, often hundreds to a few thousand dimensions. More dimensions can capture more detail but increase storage, memory and search cost. Some models are trained so vectors can be shortened: OpenAI's [[https://developers.openai.com/api/docs/guides/embeddings|text-embedding-3 models]] accept a dimensions parameter, letting you trade some quality for smaller vectors. Storage types such as half-precision vectors and quantization reduce cost further.",
+          "Embedding models output vectors of a fixed size, often hundreds to a few thousand dimensions. More dimensions can capture more detail but increase storage, memory and search cost. Some models are trained so vectors can be shortened: OpenAI's text-embedding-3 models accept a dimensions parameter, letting you trade some quality for smaller vectors. Storage types such as half-precision vectors and quantization reduce cost further.",
         ],
         table: {
           headers: ["Decision", "Options", "Trade-off"],
@@ -586,8 +586,8 @@ export const aiCorePosts7: BlogPost[] = [
       {
         heading: "Fusion Methods",
         body: [
-          "**Reciprocal rank fusion (RRF)** gives each document a score based on its rank in each list, roughly the sum of 1 divided by (constant plus rank), and orders by that. Because it ignores raw scores, it combines very different scoring systems robustly; [[https://www.elastic.co/docs/reference/elasticsearch/rest-apis/reciprocal-rank-fusion|Elasticsearch's RRF]] uses a rank constant that defaults to 60, and Qdrant supports RRF in hybrid queries.",
-          "**Weighted score fusion** normalizes scores from each method and combines them with weights. [[https://docs.weaviate.io/weaviate/concepts/search/hybrid-search|Weaviate's hybrid search]] exposes this through an alpha parameter, where 0 is pure keyword and 1 pure vector. It can outperform RRF when tuned, but tuning must be done on evaluation data.",
+          "**Reciprocal rank fusion (RRF)** gives each document a score based on its rank in each list, roughly the sum of 1 divided by (constant plus rank), and orders by that. Because it ignores raw scores, it combines very different scoring systems robustly; Elasticsearch's RRF uses a rank constant that defaults to 60, and Qdrant supports RRF in hybrid queries.",
+          "**Weighted score fusion** normalizes scores from each method and combines them with weights. Weaviate's hybrid search exposes this through an alpha parameter, where 0 is pure keyword and 1 pure vector. It can outperform RRF when tuned, but tuning must be done on evaluation data.",
         ],
         code: {
           label: "Example: reciprocal rank fusion (pseudocode)",

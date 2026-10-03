@@ -73,7 +73,7 @@ export const commercePosts45: BlogPost[] = [
       {
         heading: "Identifiers and Product Matching",
         body: [
-          "Store your SKU, the manufacturer part number and the GTIN where one exists. Identifiers let search find exact models, prevent duplicate products from different suppliers and support shopping feeds and marketplaces. Google's Merchant Center product data specification strongly recommends GTINs and uses brand and manufacturer part number where GTINs don't exist ([[https://support.google.com/merchants/answer/7052112|Google Merchant Center Help]]). See [[/blogs/ecommerce-product-feeds|ecommerce product feeds]].",
+          "Store your SKU, the manufacturer part number and the GTIN where one exists. Identifiers let search find exact models, prevent duplicate products from different suppliers and support shopping feeds and marketplaces. Google's Merchant Center product data specification strongly recommends GTINs and uses brand and manufacturer part number where GTINs don't exist (Google Merchant Center Help). See [[/blogs/ecommerce-product-feeds|ecommerce product feeds]].",
         ],
       },
       {
@@ -755,7 +755,7 @@ export const commercePosts45: BlogPost[] = [
       {
         heading: "Ordering and Grouping",
         body: [
-          "Order filters by how often shoppers use them in each category (check analytics), not alphabetically. Show the top filters expanded and group the rest (display, performance, connectivity). Baymard's research identifies price, user rating, colour, size and brand as essential filter types across ecommerce and found many sites don't offer all of them ([[https://baymard.com/blog/essential-filters|Baymard Institute]]); electronics stores need those plus technical filters.",
+          "Order filters by how often shoppers use them in each category (check analytics), not alphabetically. Show the top filters expanded and group the rest (display, performance, connectivity). Baymard's research identifies price, user rating, colour, size and brand as essential filter types across ecommerce and found many sites don't offer all of them (Baymard Institute); electronics stores need those plus technical filters.",
         ],
       },
       {
@@ -785,7 +785,7 @@ export const commercePosts45: BlogPost[] = [
       {
         heading: "Platform Notes",
         body: [
-          "On Shopify, the Search & Discovery app supports standard filters (availability, category, price, product type, tags, vendor) and custom filters based on product options, metafields and metaobjects, with a maximum of 1,000 values per filter ([[https://help.shopify.com/en/manual/online-store/storefront-search/search-and-discovery-filters|Shopify Help Center]]). Spec filters therefore depend on well-structured metafields. See [[/blogs/shopify-electronics-store|Shopify electronics store]].",
+          "On Shopify, the Search & Discovery app supports standard filters (availability, category, price, product type, tags, vendor) and custom filters based on product options, metafields and metaobjects, with a maximum of 1,000 values per filter (Shopify Help Center). Spec filters therefore depend on well-structured metafields. See [[/blogs/shopify-electronics-store|Shopify electronics store]].",
         ],
       },
       {

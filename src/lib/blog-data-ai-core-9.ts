@@ -246,7 +246,7 @@ export const aiCorePosts9: BlogPost[] = [
       {
         heading: "Authorization Done Right",
         body: [
-          "The [[https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization/security-considerations|MCP authorization security considerations]] set clear requirements. Clients must use PKCE (with S256 where possible) and include the resource parameter defined in RFC 8707, so tokens are bound to the intended MCP server. Servers must validate that every token was issued specifically for them and reject others. Servers that call upstream APIs act as their own OAuth clients and must not pass through the token they received. Authorization servers should issue short-lived tokens and rotate refresh tokens for public clients, and clients must validate the issuer parameter to prevent mix-up attacks.",
+          "The MCP authorization security considerations set clear requirements. Clients must use PKCE (with S256 where possible) and include the resource parameter defined in RFC 8707, so tokens are bound to the intended MCP server. Servers must validate that every token was issued specifically for them and reject others. Servers that call upstream APIs act as their own OAuth clients and must not pass through the token they received. Authorization servers should issue short-lived tokens and rotate refresh tokens for public clients, and clients must validate the issuer parameter to prevent mix-up attacks.",
         ],
         diagram: {
           variant: "mcpauthflow",
@@ -435,7 +435,7 @@ export const aiCorePosts9: BlogPost[] = [
       {
         heading: "Choosing the Right Provider API",
         body: [
-          "Use each provider's current recommended interface: OpenAI recommends the [[https://developers.openai.com/api/docs/assistants/migration|Responses API]] (the Assistants API was retired on 26 August 2026); Anthropic offers the Messages API with tool use and structured outputs; Google offers the Gemini API. Wrap provider SDKs behind your own interface so switching or adding providers does not touch business code.",
+          "Use each provider's current recommended interface: OpenAI recommends the Responses API (the Assistants API was retired on 26 August 2026); Anthropic offers the Messages API with tool use and structured outputs; Google offers the Gemini API. Wrap provider SDKs behind your own interface so switching or adding providers does not touch business code.",
         ],
       },
       {

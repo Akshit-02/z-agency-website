@@ -95,7 +95,7 @@ export const commercePosts36: BlogPost[] = [
       {
         heading: "Recovery: Failed Payments",
         body: [
-          "Failed renewals are a routine part of subscriptions: cards expire, get replaced or hit limits. A recovery process has four parts: retry on a schedule suited to your provider (spreading attempts over days rather than hours), use account updater services where your provider offers them, notify the customer immediately with a one-step update link, and choose a final action (such as pausing or skipping) rather than silently cancelling. Shopify Subscriptions, for example, lets merchants configure retry attempts, days between retries and a final action of skip, pause or cancel ([[https://help.shopify.com/en/manual/products/purchase-options/subscriptions/shopify-subscriptions|Shopify Help Center]]).",
+          "Failed renewals are a routine part of subscriptions: cards expire, get replaced or hit limits. A recovery process has four parts: retry on a schedule suited to your provider (spreading attempts over days rather than hours), use account updater services where your provider offers them, notify the customer immediately with a one-step update link, and choose a final action (such as pausing or skipping) rather than silently cancelling. Shopify Subscriptions, for example, lets merchants configure retry attempts, days between retries and a final action of skip, pause or cancel (Shopify Help Center).",
         ],
         table: {
           headers: ["Step", "Good practice"],
@@ -454,7 +454,7 @@ export const commercePosts36: BlogPost[] = [
       {
         heading: "Legal Context",
         body: [
-          "Subscription cancellation rules differ across markets and continue to change. In the United States, the Restore Online Shoppers' Confidence Act governs online negative option offers and requires simple mechanisms to stop recurring charges, several states have their own automatic renewal laws, and the FTC's rulemaking on cancellation has been in flux ([[https://www.ftc.gov/legal-library/browse/rules/negative-option-rule|FTC]]). The UK, EU and other markets have their own consumer protection requirements. Design to a high standard of clarity and take legal advice for each market.",
+          "Subscription cancellation rules differ across markets and continue to change. In the United States, the Restore Online Shoppers' Confidence Act governs online negative option offers and requires simple mechanisms to stop recurring charges, several states have their own automatic renewal laws, and the FTC's rulemaking on cancellation has been in flux (FTC). The UK, EU and other markets have their own consumer protection requirements. Design to a high standard of clarity and take legal advice for each market.",
         ],
         callout: {
           type: "note",

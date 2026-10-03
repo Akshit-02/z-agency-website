@@ -78,8 +78,8 @@ export const aiAppsPosts4: BlogPost[] = [
       {
         heading: "Quality and Search Considerations",
         body: [
-          "Search engines reward content that helps people. [[https://developers.google.com/search/docs/fundamentals/using-gen-ai-content|Google Search Central's guidance on generative AI content]] focuses on helpfulness and warns that generating many pages primarily to manipulate rankings is spam regardless of method. Content built on real expertise, original examples and checked facts holds up; generic summaries of what already ranks do not.",
-          "Google's guidance on [[https://developers.google.com/search/docs/fundamentals/creating-helpful-content|creating helpful, people-first content]] describes what its systems reward.",
+          "Search engines reward content that helps people. Google Search Central's guidance on generative AI content focuses on helpfulness and warns that generating many pages primarily to manipulate rankings is spam regardless of method. Content built on real expertise, original examples and checked facts holds up; generic summaries of what already ranks do not.",
+          "Google's guidance on creating helpful, people-first content describes what its systems reward.",
         ],
         cta: {
           title: "Content team stuck in production bottlenecks?",
@@ -330,7 +330,7 @@ export const aiAppsPosts4: BlogPost[] = [
         body: [
           "Before purchase orders are issued, AI can check that a supplier has a valid contract, that pricing matches agreed rates, that required documents such as insurance certificates and tax forms are current, and that the purchase falls within delegated authority. Missing or expired items become tasks for buyers rather than surprises at audit.",
           "For new suppliers, AI can extract information from onboarding documents and compare it against sanctions and adverse-media screening results provided by specialist services. Decisions to onboard high-risk suppliers stay with procurement and compliance. The control framework is described in [[/blogs/ai-compliance-automation|AI compliance automation]].",
-          "Official lists such as the US Treasury's [[https://sanctionssearch.ofac.treas.gov/|OFAC sanctions search]] remain the authoritative source; AI summarizes, it does not replace screening.",
+          "Official lists such as the US Treasury's OFAC sanctions search remain the authoritative source; AI summarizes, it does not replace screening.",
         ],
       },
       {
@@ -527,7 +527,7 @@ export const aiAppsPosts4: BlogPost[] = [
         body: [
           "IT automation operates with powerful permissions: password resets, group membership, device management and software deployment. Each automated action needs identity verification proportional to risk, approval rules matching your policies and full audit logs. Password and multi-factor resets are common targets for social engineering, so require strong verification before they run.",
           "Run automations through orchestration tools with narrowly scoped service accounts rather than giving an AI assistant broad administrative credentials. The assistant chooses from approved runbooks; the orchestration layer enforces permissions. Wider guidance is in [[/blogs/ai-security-business-applications|AI security for business applications]].",
-          "NIST [[https://pages.nist.gov/800-63-4/sp800-63b.html|SP 800-63B]] covers authentication and account recovery requirements relevant to automated resets.",
+          "NIST SP 800-63B covers authentication and account recovery requirements relevant to automated resets.",
         ],
       },
       {
@@ -640,7 +640,7 @@ export const aiAppsPosts4: BlogPost[] = [
       {
         heading: "Validation and Duplicate Detection",
         body: [
-          "The [[https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html|OWASP input validation cheat sheet]] applies to extracted values just as it does to form input.",
+          "The OWASP input validation cheat sheet applies to extracted values just as it does to form input.",
         ],
         checklist: [
           "Formats: dates, emails, phone numbers, tax IDs, postcodes",

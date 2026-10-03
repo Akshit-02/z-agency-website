@@ -74,7 +74,7 @@ export const commercePosts26: BlogPost[] = [
       {
         heading: "Compliance: Information Before Purchase",
         body: [
-          "Food information rules apply online. In the EU, the Food Information to Consumers rules require mandatory food information for prepacked food sold at a distance to be available before the purchase is concluded, except the date mark, which must be available at delivery ([[https://food.ec.europa.eu/food-safety/labelling-and-nutrition/food-information-consumers-legislation/distance-selling_en|European Commission]]). Other markets have their own rules on allergens, nutrition and claims. Build product templates that display required information consistently, and have a qualified adviser review the approach for each market.",
+          "Food information rules apply online. In the EU, the Food Information to Consumers rules require mandatory food information for prepacked food sold at a distance to be available before the purchase is concluded, except the date mark, which must be available at delivery (European Commission). Other markets have their own rules on allergens, nutrition and claims. Build product templates that display required information consistently, and have a qualified adviser review the approach for each market.",
           "Claims such as “high protein” or “sugar-free” are often regulated too. Store approved claim wording separately from marketing copy so it can be reviewed and varied by market.",
         ],
       },

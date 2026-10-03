@@ -572,7 +572,7 @@ export const aiCorePosts10: BlogPost[] = [
       {
         heading: "How A2A Works",
         body: [
-          "A2A is an open protocol introduced by Google in 2025 and hosted by the Linux Foundation since June 2025. In outline, as described in the [[https://a2a-protocol.org/latest/specification/|A2A specification]]:",
+          "A2A is an open protocol introduced by Google in 2025 and hosted by the Linux Foundation since June 2025. In outline, as described in the A2A specification:",
         ],
         checklist: [
           "**Discovery:** each agent publishes an Agent Card describing its identity, skills, endpoint, interaction modes and authentication requirements",

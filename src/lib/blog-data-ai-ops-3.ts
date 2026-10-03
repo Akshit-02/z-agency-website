@@ -289,7 +289,7 @@ export const aiOpsPosts3: BlogPost[] = [
       {
         heading: "Quality, Lineage and Governance",
         body: [
-          "Automated quality checks catch problems before they reach models: schema changes, missing values, duplicates, stale sources and distribution shifts. Lineage records where each dataset, chunk or feature came from and how it was transformed, so you can explain an answer, reproduce a training run or find every copy of data that must be deleted. Open standards such as [[https://openlineage.io/|OpenLineage]] help capture lineage across tools. Details are in [[/blogs/data-quality-for-ai|data quality for AI]] and [[/blogs/ai-data-lineage|AI data lineage]].",
+          "Automated quality checks catch problems before they reach models: schema changes, missing values, duplicates, stale sources and distribution shifts. Lineage records where each dataset, chunk or feature came from and how it was transformed, so you can explain an answer, reproduce a training run or find every copy of data that must be deleted. Open standards such as OpenLineage help capture lineage across tools. Details are in [[/blogs/data-quality-for-ai|data quality for AI]] and [[/blogs/ai-data-lineage|AI data lineage]].",
         ],
       },
       {
@@ -440,7 +440,7 @@ export const aiOpsPosts3: BlogPost[] = [
         heading: "Validation and Data Contracts",
         body: [
           "Upstream systems change without warning: a column is renamed, a field starts arriving empty, a SaaS export adds a new format. For AI applications these changes are dangerous because they rarely cause errors; they quietly degrade answers. Validate every batch or event against expectations: schema, required fields, value ranges, uniqueness, volume compared with recent runs and freshness.",
-          "Data contracts formalize those expectations between producers and consumers: what the data means, what quality it guarantees and how changes are announced. Tools such as [[https://docs.greatexpectations.io/docs/home/|Great Expectations]] and dbt tests implement checks; specifications such as the [[https://datacontract.com/|Data Contract Specification]] describe contracts in a machine-readable way.",
+          "Data contracts formalize those expectations between producers and consumers: what the data means, what quality it guarantees and how changes are announced. Tools such as Great Expectations and dbt tests implement checks; specifications such as the Data Contract Specification describe contracts in a machine-readable way.",
         ],
       },
       {
@@ -465,7 +465,7 @@ export const aiOpsPosts3: BlogPost[] = [
       {
         heading: "Orchestration, Retries and Idempotency",
         body: [
-          "Orchestrators such as [[https://airflow.apache.org/docs/|Apache Airflow]] schedule steps, manage dependencies, retry failures and record run history. Whatever tool you choose, design steps to be idempotent: running a step twice should produce the same result, which makes retries and backfills safe. Use upserts keyed on stable identifiers rather than blind inserts, write outputs atomically and keep run metadata so partial failures can resume.",
+          "Orchestrators such as Apache Airflow schedule steps, manage dependencies, retry failures and record run history. Whatever tool you choose, design steps to be idempotent: running a step twice should produce the same result, which makes retries and backfills safe. Use upserts keyed on stable identifiers rather than blind inserts, write outputs atomically and keep run metadata so partial failures can resume.",
           "Embedding steps call external models, so they inherit rate limits and transient failures. Batch requests, respect limits, cache embeddings for unchanged content and retry with backoff.",
         ],
       },
@@ -623,7 +623,7 @@ export const aiOpsPosts3: BlogPost[] = [
       {
         heading: "Incremental Updates and Change Data Capture",
         body: [
-          "Full reloads are simple but expensive and slow, and they make AI stores stale between runs. Incremental ingestion loads only changes. For databases, [[https://debezium.io/documentation/|change data capture]] reads the transaction log and emits inserts, updates and deletes. For SaaS APIs, use incremental endpoints or webhooks where offered, with periodic full reconciliation to catch missed events. For files, track modification times and content hashes.",
+          "Full reloads are simple but expensive and slow, and they make AI stores stale between runs. Incremental ingestion loads only changes. For databases, change data capture reads the transaction log and emits inserts, updates and deletes. For SaaS APIs, use incremental endpoints or webhooks where offered, with periodic full reconciliation to catch missed events. For files, track modification times and content hashes.",
           "Store a watermark per source (the last change processed) so runs can resume after failures, and make loads idempotent so re-processing the same change does no harm.",
         ],
       },

@@ -91,7 +91,7 @@ export const commercePosts: BlogPost[] = [
         heading: "Catalog and Product Data",
         body: [
           "The catalog shapes everything downstream: navigation, filters, product pages, search and SEO. Decide early how products, variants and attributes are modeled.",
-          "Shopify products can have up to three options (for example size, colour and material) and, since Shopify raised the limit, up to 2,048 variants per product ([[https://shopify.dev/changelog/the-product-variant-limit-is-now-2048-for-all-merchants|Shopify developer changelog]]). Attributes that aren't options, such as fabric, dimensions, ingredients or compatibility, belong in {{b:metafields}}; reusable structured content, such as size charts or designer profiles, fits {{b:metaobjects}}. Clean, structured attributes are what make filters, comparisons and structured data possible later.",
+          "Shopify products can have up to three options (for example size, colour and material) and, since Shopify raised the limit, up to 2,048 variants per product (Shopify developer changelog). Attributes that aren't options, such as fabric, dimensions, ingredients or compatibility, belong in {{b:metafields}}; reusable structured content, such as size charts or designer profiles, fits {{b:metaobjects}}. Clean, structured attributes are what make filters, comparisons and structured data possible later.",
           "Plan collections as the store's category structure, not as a pile of tags. Automated collections built on rules reduce manual work but depend on consistent data. See [[/blogs/ecommerce-website-architecture|ecommerce website architecture]] for how catalog, URLs and navigation fit together.",
         ],
       },
@@ -130,13 +130,13 @@ export const commercePosts: BlogPost[] = [
         heading: "Checkout, Payments, Shipping and Taxes",
         body: [
           "Shopify hosts checkout, which means security and core checkout behavior are handled for you. On all plans you configure payment methods, accelerated checkouts, shipping profiles and rates, taxes, and checkout branding; thank-you and order status pages can be extended with apps. Customizing the information, shipping and payment steps with checkout UI extensions requires Shopify Plus. See [[/blogs/shopify-checkout-optimization|Shopify checkout optimization]].",
-          "Shipping rules deserve real testing. Unexpected extra costs are the most common reason shoppers give for abandoning checkout in Baymard's research, cited by 40% of US adults who abandoned an order ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]], updated September 2025). Show delivery costs early and make sure the rates you configure match what the product page promises.",
+          "Shipping rules deserve real testing. Unexpected extra costs are the most common reason shoppers give for abandoning checkout in Baymard's research, cited by 40% of US adults who abandoned an order (Baymard Institute, updated September 2025). Show delivery costs early and make sure the rates you configure match what the product page promises.",
         ],
       },
       {
         heading: "Performance and Accessibility",
         body: [
-          "Speed and accessibility are easier to build in than to retrofit. Shopify requires themes in its Theme Store to reach a minimum average Lighthouse performance score of 60 across home, product and collection pages on desktop and mobile ([[https://shopify.dev/docs/storefronts/themes/store/requirements|Shopify theme store requirements]]). Treat that as a floor. Agree a performance budget for images, fonts and app scripts before design starts, and check it during the build.",
+          "Speed and accessibility are easier to build in than to retrofit. Shopify requires themes in its Theme Store to reach a minimum average Lighthouse performance score of 60 across home, product and collection pages on desktop and mobile (Shopify theme store requirements). Treat that as a floor. Agree a performance budget for images, fonts and app scripts before design starts, and check it during the build.",
           "Build to WCAG: keyboard access, visible focus, sufficient contrast, labelled form fields and meaningful alt text. See [[/blogs/shopify-core-web-vitals-performance-guide|Shopify performance and Core Web Vitals]] and [[/blogs/website-accessibility-guide|website accessibility]].",
         ],
       },
@@ -248,7 +248,7 @@ export const commercePosts: BlogPost[] = [
       {
         heading: "How Shopify Themes Are Built",
         body: [
-          "A theme is a set of files in fixed folders. The diagram above shows them alongside how a product page is composed ([[https://shopify.dev/docs/storefronts/themes/architecture|Shopify theme architecture]]).",
+          "A theme is a set of files in fixed folders. The diagram above shows them alongside how a product page is composed (Shopify theme architecture).",
         ],
         table: {
           headers: ["Part", "What it does"],
@@ -334,7 +334,7 @@ export const commercePosts: BlogPost[] = [
       {
         heading: "Performance and Accessibility Standards",
         body: [
-          "Set measurable targets. Shopify's Theme Store requires a minimum average Lighthouse performance score of 60 across home, product and collection pages on desktop and mobile ([[https://shopify.dev/docs/storefronts/themes/store/requirements|theme store requirements]]); custom themes should aim well above that and be checked against real-user Core Web Vitals after launch. Build to WCAG from the start: semantic HTML, keyboard support for menus, drawers and variant pickers, visible focus and sufficient contrast. See [[/blogs/shopify-core-web-vitals-performance-guide|Shopify Core Web Vitals]] and [[/blogs/accessible-ui-ux-design|accessible UI/UX design]].",
+          "Set measurable targets. Shopify's Theme Store requires a minimum average Lighthouse performance score of 60 across home, product and collection pages on desktop and mobile (theme store requirements); custom themes should aim well above that and be checked against real-user Core Web Vitals after launch. Build to WCAG from the start: semantic HTML, keyboard support for menus, drawers and variant pickers, visible focus and sufficient contrast. See [[/blogs/shopify-core-web-vitals-performance-guide|Shopify Core Web Vitals]] and [[/blogs/accessible-ui-ux-design|accessible UI/UX design]].",
         ],
       },
       {
@@ -434,7 +434,7 @@ export const commercePosts: BlogPost[] = [
         heading: "Hydrogen, Oxygen and Headless Shopify",
         body: [
           "{{b:Headless commerce}} means separating the storefront from the commerce back end. Shopify still manages products, inventory, pricing, orders, payments and checkout; your own front end handles the pages shoppers see. Hydrogen is one way to build that front end. For the broader decision, see [[/blogs/headless-shopify-explained|Shopify headless commerce]].",
-          "According to Shopify's documentation, Hydrogen projects are React Router apps preconfigured with Shopify-specific features, and Oxygen is Shopify's global deployment platform for hosting Hydrogen storefronts at the edge, with multiple environments for previewing changes ([[https://shopify.dev/docs/storefronts/headless/hydrogen/fundamentals|Hydrogen fundamentals]]).",
+          "According to Shopify's documentation, Hydrogen projects are React Router apps preconfigured with Shopify-specific features, and Oxygen is Shopify's global deployment platform for hosting Hydrogen storefronts at the edge, with multiple environments for previewing changes (Hydrogen fundamentals).",
         ],
         callout: {
           type: "note",
@@ -483,7 +483,7 @@ export const commercePosts: BlogPost[] = [
       {
         heading: "SEO With Hydrogen",
         body: [
-          "Hydrogen renders on the server, so pages are crawlable, but the SEO defaults a theme provides become your responsibility: title and meta tags, canonical URLs, sitemaps, robots rules, redirects and product structured data. Shopify documents SEO patterns for Hydrogen ([[https://shopify.dev/docs/storefronts/headless/hydrogen/seo|SEO for Hydrogen]]). If you're moving from a theme, treat it as a migration with URL mapping and redirects. See [[/blogs/product-structured-data-ecommerce|product structured data]].",
+          "Hydrogen renders on the server, so pages are crawlable, but the SEO defaults a theme provides become your responsibility: title and meta tags, canonical URLs, sitemaps, robots rules, redirects and product structured data. Shopify documents SEO patterns for Hydrogen (SEO for Hydrogen). If you're moving from a theme, treat it as a migration with URL mapping and redirects. See [[/blogs/product-structured-data-ecommerce|product structured data]].",
         ],
       },
       {
@@ -563,7 +563,7 @@ export const commercePosts: BlogPost[] = [
       {
         heading: "Hydrogen Development Workflow",
         body: [
-          "Hydrogen projects follow a modern web development workflow. Developers scaffold a project with Shopify's CLI, build routes and components on React Router with the Storefront API, connect a CMS or Shopify metaobjects for content, and deploy to Oxygen through a GitHub integration that creates preview deployments for branches, or to another host if self-hosting ([[https://shopify.dev/docs/storefronts/headless/hydrogen/fundamentals|Shopify developer docs]]). Customer accounts use the Customer Account API. Analytics, consent and SEO need explicit implementation.",
+          "Hydrogen projects follow a modern web development workflow. Developers scaffold a project with Shopify's CLI, build routes and components on React Router with the Storefront API, connect a CMS or Shopify metaobjects for content, and deploy to Oxygen through a GitHub integration that creates preview deployments for branches, or to another host if self-hosting (Shopify developer docs). Customer accounts use the Customer Account API. Analytics, consent and SEO need explicit implementation.",
         ],
         checklist: [
           "Project scaffolded with Shopify CLI",

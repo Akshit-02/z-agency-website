@@ -53,7 +53,7 @@ export const aiAppsPosts3: BlogPost[] = [
       {
         heading: "Modernization Strategies",
         body: [
-          "The incremental replacement approach is often called the [[https://martinfowler.com/bliki/StranglerFigApplication.html|strangler fig pattern]]. Deterministic refactoring tools such as [[https://docs.openrewrite.org/|OpenRewrite]] complement AI for large mechanical changes.",
+          "The incremental replacement approach is often called the strangler fig pattern. Deterministic refactoring tools such as OpenRewrite complement AI for large mechanical changes.",
         ],
         diagram: {
           variant: "modernstrategies",
@@ -332,7 +332,7 @@ export const aiAppsPosts3: BlogPost[] = [
       {
         heading: "Metrics Across the Lifecycle",
         body: [
-          "Several of these follow the [[https://dora.dev/guides/dora-metrics-four-keys/|DORA metrics]].",
+          "Several of these follow the DORA metrics.",
         ],
         table: {
           headers: ["Stage", "Metric", "Signal"],
@@ -365,7 +365,7 @@ export const aiAppsPosts3: BlogPost[] = [
         body: [
           "AI changes security work at every stage. Requirements should include abuse cases. Design reviews should consider AI tools' access to code and secrets. Build stages need secret scanning and dependency checks for AI-suggested packages. Review should check generated code for injection, authorization gaps and unsafe defaults. Release and operations need monitoring that catches unexpected behaviour quickly.",
           "Agents add a new class of actor to secure: they need identities, scoped permissions, audit trails and limits like any service account. Apply secure development practices to them as you would to a new team member with commit access. AI-specific threats are described in [[/blogs/ai-security-business-applications|AI security for business applications]].",
-          "NIST's [[https://csrc.nist.gov/projects/ssdf|Secure Software Development Framework]] maps well onto these stages.",
+          "NIST's Secure Software Development Framework maps well onto these stages.",
         ],
       },
       {
@@ -541,7 +541,7 @@ export const aiAppsPosts3: BlogPost[] = [
         body: [
           "Employees reasonably worry about how AI uses their data and whether it influences decisions about them. Explain plainly which processes use AI, what data is used, what decisions remain with people and how to reach a person. Involve employee representatives or works councils where they exist; in some jurisdictions consultation is required before introducing such systems.",
           "Avoid using HR assistant conversations for performance or conduct monitoring. If employees believe questions about leave, health or grievances will be reported, they will stop using the assistant and may avoid seeking help. Clear retention limits and access controls on conversation logs support that trust. Privacy design is covered in [[/blogs/ai-data-privacy|AI data privacy]].",
-          "The UK ICO's guidance on [[https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/employment/monitoring-workers/|monitoring workers]] sets out expectations that are useful well beyond the UK.",
+          "The UK ICO's guidance on monitoring workers sets out expectations that are useful well beyond the UK.",
         ],
       },
       {
@@ -664,7 +664,7 @@ export const aiAppsPosts3: BlogPost[] = [
       {
         heading: "Fairness, Audits and Legal Obligations",
         body: [
-          "See New York City's official page on [[https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page|automated employment decision tools]] and the European Commission's [[https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai|AI Act overview]].",
+          "See New York City's official page on automated employment decision tools and the European Commission's AI Act overview.",
         ],
         checklist: [
           "Inventory where any tool screens, scores or ranks candidates",

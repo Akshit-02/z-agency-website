@@ -119,7 +119,7 @@ export const aiCorePosts6: BlogPost[] = [
       {
         heading: "Security and Permissions",
         body: [
-          "A RAG system must not show people documents they cannot open in the source system. Copy access controls with content and filter at retrieval time by the user's identity and groups. Treat retrieved text as untrusted: a document could contain instructions aimed at the model, so retrieval-only assistants should not have powerful tools. The [[https://genai.owasp.org/llm-top-10/|OWASP Top 10 for LLM Applications]] lists vector and embedding weaknesses among its risks. See [[/blogs/enterprise-rag-architecture|enterprise RAG architecture]].",
+          "A RAG system must not show people documents they cannot open in the source system. Copy access controls with content and filter at retrieval time by the user's identity and groups. Treat retrieved text as untrusted: a document could contain instructions aimed at the model, so retrieval-only assistants should not have powerful tools. The OWASP Top 10 for LLM Applications lists vector and embedding weaknesses among its risks. See [[/blogs/enterprise-rag-architecture|enterprise RAG architecture]].",
         ],
       },
       {
@@ -638,7 +638,7 @@ export const aiCorePosts6: BlogPost[] = [
       {
         heading: "Filtering and Multi-Tenancy",
         body: [
-          "Real queries filter: this customer's documents, this product line, content the user may see. With approximate indexes, filters applied after the index scan can return too few results. Systems handle this differently: pre-filtering, filtered index traversal or scanning further. pgvector added [[https://github.com/pgvector/pgvector|iterative index scans]] in version 0.8.0 for this reason. For multi-tenant products, decide between shared indexes with tenant filters and separate indexes per tenant based on isolation needs and scale.",
+          "Real queries filter: this customer's documents, this product line, content the user may see. With approximate indexes, filters applied after the index scan can return too few results. Systems handle this differently: pre-filtering, filtered index traversal or scanning further. pgvector added iterative index scans in version 0.8.0 for this reason. For multi-tenant products, decide between shared indexes with tenant filters and separate indexes per tenant based on isolation needs and scale.",
         ],
       },
       {

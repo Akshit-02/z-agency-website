@@ -81,7 +81,7 @@ export const commercePosts88: BlogPost[] = [
       {
         heading: "Acknowledgements and Rejections",
         body: [
-          "Treat a sent order as unconfirmed until the 3PL acknowledges it. Rejections (unknown SKU, invalid address, insufficient stock) must arrive back with reasons and create an exception for someone to resolve. On Shopify, [[https://shopify.dev/docs/apps/build/orders-fulfillment/fulfillment-service-apps/build-for-fulfillment-services|fulfillment service apps]] receive fulfilment requests and must accept or reject them, using the [[https://shopify.dev/docs/api/admin-graphql/latest/objects/FulfillmentOrder|FulfillmentOrder]] model to track the state of each request.",
+          "Treat a sent order as unconfirmed until the 3PL acknowledges it. Rejections (unknown SKU, invalid address, insufficient stock) must arrive back with reasons and create an exception for someone to resolve. On Shopify, fulfillment service apps receive fulfilment requests and must accept or reject them, using the FulfillmentOrder model to track the state of each request.",
         ],
       },
       {

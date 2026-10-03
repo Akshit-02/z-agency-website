@@ -99,7 +99,7 @@ export const aiAppsPosts6: BlogPost[] = [
       {
         heading: "Security and Separation",
         body: [
-          "CISA's [[https://www.cisa.gov/topics/industrial-control-systems|industrial control systems resources]] cover the operational technology side.",
+          "CISA's industrial control systems resources cover the operational technology side.",
         ],
         checklist: [
           "No control access from business AI systems to OT networks",
@@ -317,7 +317,7 @@ export const aiAppsPosts6: BlogPost[] = [
         heading: "Security, Privacy and Governance",
         body: [
           "AI applications add new risks: prompt injection, data leakage through outputs, model supply chain risks and privacy issues with training and logging. Plan controls from the start; see [[/blogs/ai-security-business-applications|AI security]], [[/blogs/ai-data-privacy|AI data privacy]] and [[/blogs/ai-governance-framework|AI governance]]. Check whether regulations such as the EU AI Act apply to your use case.",
-          "The [[https://www.nist.gov/itl/ai-risk-management-framework|NIST AI Risk Management Framework]] and [[https://genai.owasp.org/llm-top-10/|OWASP Top 10 for LLM Applications]] are practical references.",
+          "The NIST AI Risk Management Framework and OWASP Top 10 for LLM Applications are practical references.",
         ],
       },
       {
@@ -495,7 +495,7 @@ export const aiAppsPosts6: BlogPost[] = [
         heading: "Prompts, Context and Structured Outputs",
         body: [
           "Treat prompts as versioned configuration: separate system instructions, examples, retrieved context and user input; mark untrusted content as data; and keep instructions short and specific. Where code consumes outputs, use schema-constrained structured outputs offered by major providers, then validate values. Record the prompt version, model and parameters on every request.",
-          "Provider documentation, such as OpenAI's [[https://platform.openai.com/docs/guides/structured-outputs|structured outputs guide]] and Anthropic's [[https://docs.claude.com/en/docs/agents-and-tools/tool-use/overview|tool use documentation]], describes current capabilities.",
+          "Provider documentation, such as OpenAI's structured outputs guide and Anthropic's tool use documentation, describes current capabilities.",
         ],
         cta: {
           title: "Have a generative AI prototype that needs to become a product?",
@@ -668,7 +668,7 @@ export const aiAppsPosts6: BlogPost[] = [
       {
         heading: "Metering, Pricing and Billing",
         body: [
-          "Billing platforms support this directly; see Stripe's [[https://docs.stripe.com/billing/subscriptions/usage-based|usage-based billing]] documentation for one example.",
+          "Billing platforms support this directly; see Stripe's usage-based billing documentation for one example.",
         ],
         diagram: {
           variant: "meteringflow",

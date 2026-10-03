@@ -138,7 +138,7 @@ export const commercePosts3: BlogPost[] = [
       {
         heading: "Links to Filters, Sorts and Parameters",
         body: [
-          "Every link to a filtered or sorted URL invites crawlers to request it. Google notes that rel=nofollow only works if every link to a URL carries it, and that robots.txt is more effective for keeping faceted URLs out of crawling ([[https://developers.google.com/search/docs/crawling-indexing/crawling-managing-faceted-navigation|Google Search Central]]). The cleanest approach is to link to category and subcategory URLs, and to generate filter states without crawlable links where possible. See [[/blogs/ecommerce-faceted-navigation-seo|faceted navigation SEO]].",
+          "Every link to a filtered or sorted URL invites crawlers to request it. Google notes that rel=nofollow only works if every link to a URL carries it, and that robots.txt is more effective for keeping faceted URLs out of crawling (Google Search Central). The cleanest approach is to link to category and subcategory URLs, and to generate filter states without crawlable links where possible. See [[/blogs/ecommerce-faceted-navigation-seo|faceted navigation SEO]].",
         ],
       },
       {
@@ -242,7 +242,7 @@ export const commercePosts3: BlogPost[] = [
       {
         heading: "Google's Guidance in Brief",
         body: [
-          "Google's documentation on faceted navigation ([[https://developers.google.com/search/docs/crawling-indexing/crawling-managing-faceted-navigation|Google Search Central]]) makes several practical points:",
+          "Google's documentation on faceted navigation (Google Search Central) makes several practical points:",
         ],
         checklist: [
           "If you don't need faceted URLs in search, prevent crawling; robots.txt is the most effective long-term method",
@@ -320,7 +320,7 @@ export const commercePosts3: BlogPost[] = [
       {
         heading: "Shopify Notes",
         body: [
-          "Shopify's default robots.txt disallows sorted collection URLs (*sort_by*) and combined tag URLs (/collections/*+*) ([[https://help.shopify.com/en/manual/promoting-marketing/seo/editing-robots-txt|Shopify Help Center]]). Storefront filters use parameters such as filter.v.option.color; check how your store's robots.txt and theme treat them. For filter views worth ranking, create a dedicated collection. Editing robots.txt.liquid is possible but Shopify calls it an unsupported customization that can cause loss of all traffic if done wrong. See [[/blogs/shopify-collection-page-seo|Shopify collection page SEO]].",
+          "Shopify's default robots.txt disallows sorted collection URLs (*sort_by*) and combined tag URLs (/collections/*+*) (Shopify Help Center). Storefront filters use parameters such as filter.v.option.color; check how your store's robots.txt and theme treat them. For filter views worth ranking, create a dedicated collection. Editing robots.txt.liquid is possible but Shopify calls it an unsupported customization that can cause loss of all traffic if done wrong. See [[/blogs/shopify-collection-page-seo|Shopify collection page SEO]].",
         ],
       },
       {
@@ -616,7 +616,7 @@ export const commercePosts3: BlogPost[] = [
       {
         heading: "Product Snippets vs Merchant Listings",
         body: [
-          "Google describes two kinds of product results ([[https://developers.google.com/search/docs/appearance/structured-data/product|Google Search Central]]).",
+          "Google describes two kinds of product results (Google Search Central).",
         ],
         table: {
           headers: ["Type", "For", "Emphasis"],
@@ -633,7 +633,7 @@ export const commercePosts3: BlogPost[] = [
       {
         heading: "Required and Recommended Properties",
         body: [
-          "From Google's merchant listing documentation ([[https://developers.google.com/search/docs/appearance/structured-data/merchant-listing|Google Search Central]]):",
+          "From Google's merchant listing documentation (Google Search Central):",
         ],
         table: {
           headers: ["Property", "Status", "Notes"],
@@ -663,7 +663,7 @@ export const commercePosts3: BlogPost[] = [
       {
         heading: "Variants and ProductGroup",
         body: [
-          "For products sold in several sizes, colours or materials, Google supports ProductGroup with productGroupID (the parent SKU), variesBy (the dimensions that differ) and hasVariant (the individual Product variants) ([[https://developers.google.com/search/docs/appearance/structured-data/product-variants|Google Search Central]]). Two patterns exist:",
+          "For products sold in several sizes, colours or materials, Google supports ProductGroup with productGroupID (the parent SKU), variesBy (the dimensions that differ) and hasVariant (the individual Product variants) (Google Search Central). Two patterns exist:",
         ],
         table: {
           headers: ["Pattern", "Requirements"],
@@ -687,7 +687,7 @@ export const commercePosts3: BlogPost[] = [
       {
         heading: "Reviews and Ratings",
         body: [
-          "Google's review snippet guidelines require that marked-up reviews be readily available to users on the page and prohibit fake or undisclosed incentivized reviews ([[https://developers.google.com/search/docs/appearance/structured-data/review-snippet|Google Search Central]]). Pages using Organization or LocalBusiness markup for reviews the business controls about itself aren't eligible for star review features. For product pages, mark up only genuine reviews shown on that page, and never invent ratings. See [[/blogs/ecommerce-product-reviews-ux|product reviews UX]] for how to display them.",
+          "Google's review snippet guidelines require that marked-up reviews be readily available to users on the page and prohibit fake or undisclosed incentivized reviews (Google Search Central). Pages using Organization or LocalBusiness markup for reviews the business controls about itself aren't eligible for star review features. For product pages, mark up only genuine reviews shown on that page, and never invent ratings. See [[/blogs/ecommerce-product-reviews-ux|product reviews UX]] for how to display them.",
         ],
         cta: {
           title: "Structured data errors in Search Console?",

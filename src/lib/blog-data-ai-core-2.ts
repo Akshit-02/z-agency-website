@@ -73,7 +73,7 @@ export const aiCorePosts2: BlogPost[] = [
       {
         heading: "Managing State",
         body: [
-          "Shared state is the backbone of orchestration. Store a run record with the task, structured inputs, each agent's outputs, current step, pending approvals and errors. Pass agents the parts they need as structured data rather than entire transcripts. Checkpoint after each step so a run can pause for a human or resume after a failure. Durable execution frameworks and [[https://docs.langchain.com/oss/python/langgraph/interrupts|LangGraph checkpointers]] provide this; a database plus a queue works for simpler systems.",
+          "Shared state is the backbone of orchestration. Store a run record with the task, structured inputs, each agent's outputs, current step, pending approvals and errors. Pass agents the parts they need as structured data rather than entire transcripts. Checkpoint after each step so a run can pause for a human or resume after a failure. Durable execution frameworks and LangGraph checkpointers provide this; a database plus a queue works for simpler systems.",
         ],
         diagram: {
           variant: "orchestrationrun",
@@ -288,7 +288,7 @@ export const aiCorePosts2: BlogPost[] = [
       {
         heading: "Combining Agentic and Deterministic Steps",
         body: [
-          "A practical pattern: a deterministic workflow receives the trigger, fetches known data and validates inputs; an agent investigates the variable part; the workflow validates the agent's output, applies business rules, asks for approval if needed and performs the system writes. Workflow platforms such as [[https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.agent/tools-agent|n8n]], Make and Zapier now include agent steps, and code frameworks support the same split.",
+          "A practical pattern: a deterministic workflow receives the trigger, fetches known data and validates inputs; an agent investigates the variable part; the workflow validates the agent's output, applies business rules, asks for approval if needed and performs the system writes. Workflow platforms such as n8n, Make and Zapier now include agent steps, and code frameworks support the same split.",
         ],
       },
       {

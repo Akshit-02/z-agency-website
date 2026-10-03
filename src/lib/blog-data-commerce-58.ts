@@ -51,7 +51,7 @@ export const commercePosts58: BlogPost[] = [
       {
         heading: "Know Your Platform Limits",
         body: [
-          "What you can test depends on who controls checkout. Custom-built checkouts can test almost anything, with engineering effort. Hosted checkouts limit changes to what the platform exposes. On Shopify, checkout is customized through checkout extensibility: branding settings, checkout UI extensions, Shopify Functions for discounts, delivery and payment logic, and pixels for tracking. Checkout UI extensions on the information, shipping and payment steps are available to Shopify Plus stores ([[https://shopify.dev/docs/api/checkout-ui-extensions|Shopify developer docs]]).",
+          "What you can test depends on who controls checkout. Custom-built checkouts can test almost anything, with engineering effort. Hosted checkouts limit changes to what the platform exposes. On Shopify, checkout is customized through checkout extensibility: branding settings, checkout UI extensions, Shopify Functions for discounts, delivery and payment logic, and pixels for tracking. Checkout UI extensions on the information, shipping and payment steps are available to Shopify Plus stores (Shopify developer docs).",
           "Testing tools vary in how they support these extension points. Before planning checkout tests, list what your platform and tool allow, then design tests within that. See [[/blogs/shopify-checkout-optimization|Shopify checkout optimization]].",
         ],
         table: {

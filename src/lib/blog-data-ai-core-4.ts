@@ -70,7 +70,7 @@ export const aiCorePosts4: BlogPost[] = [
       {
         heading: "Structured Outputs and Validation",
         body: [
-          "Use the model provider's structured output feature so AI steps return JSON that matches your schema; OpenAI and [[https://platform.claude.com/docs/en/build-with-claude/structured-outputs|Anthropic]] both support schema-constrained outputs. Then validate the values: is the order number in the right format and does it exist? Does the extracted total equal the sum of line items? Is the category one you support? Failed validation can trigger one repair attempt with the error message, then a review queue.",
+          "Use the model provider's structured output feature so AI steps return JSON that matches your schema; OpenAI and Anthropic both support schema-constrained outputs. Then validate the values: is the order number in the right format and does it exist? Does the extracted total equal the sum of line items? Is the category one you support? Failed validation can trigger one repair attempt with the error message, then a review queue.",
         ],
         diagram: {
           variant: "aiworkflowflow",

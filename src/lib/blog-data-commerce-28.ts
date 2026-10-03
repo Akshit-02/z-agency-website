@@ -67,7 +67,7 @@ export const commercePosts28: BlogPost[] = [
       {
         heading: "Zone 2: Ingredients, Allergens and Nutrition",
         body: [
-          "Display full ingredients as text, with allergens emphasized within the list, and a summary of allergens and may-contain statements near the top. Show nutrition in a readable table with consistent units. Provide label images as a supplement if useful, never as the only source. In the EU, mandatory food information for prepacked food sold at a distance must be available before purchase, except the date mark, which must be available at delivery ([[https://food.ec.europa.eu/food-safety/labelling-and-nutrition/food-information-consumers-legislation/distance-selling_en|European Commission]]). Other markets have their own rules.",
+          "Display full ingredients as text, with allergens emphasized within the list, and a summary of allergens and may-contain statements near the top. Show nutrition in a readable table with consistent units. Provide label images as a supplement if useful, never as the only source. In the EU, mandatory food information for prepacked food sold at a distance must be available before purchase, except the date mark, which must be available at delivery (European Commission). Other markets have their own rules.",
         ],
         callout: {
           type: "note",
@@ -432,7 +432,7 @@ export const commercePosts28: BlogPost[] = [
       {
         heading: "Platform Considerations",
         body: [
-          "Shopify's B2B features include companies and locations, catalogs, price breaks, quantity rules, net terms, vaulted payment methods and quick order lists on all plans, with some capabilities such as unlimited catalogs, deposits and checkout customization limited to Shopify Plus ([[https://help.shopify.com/en/manual/b2b|Shopify Help Center]]). Complex quoting, configuration or ERP-driven pricing may need apps, custom development or a specialized B2B platform.",
+          "Shopify's B2B features include companies and locations, catalogs, price breaks, quantity rules, net terms, vaulted payment methods and quick order lists on all plans, with some capabilities such as unlimited catalogs, deposits and checkout customization limited to Shopify Plus (Shopify Help Center). Complex quoting, configuration or ERP-driven pricing may need apps, custom development or a specialized B2B platform.",
         ],
       },
       {
@@ -572,7 +572,7 @@ export const commercePosts28: BlogPost[] = [
       {
         heading: "Access: Account Catalogs and Restrictions",
         body: [
-          "Many B2B businesses show different products and prices to different customers: contract ranges, regional availability, restricted products for licensed buyers. Model these as catalogs or rules assigned to companies or segments. Shopify B2B, for example, uses catalogs assigned to company locations to control products and prices ([[https://help.shopify.com/en/manual/b2b|Shopify Help Center]]).",
+          "Many B2B businesses show different products and prices to different customers: contract ranges, regional availability, restricted products for licensed buyers. Model these as catalogs or rules assigned to companies or segments. Shopify B2B, for example, uses catalogs assigned to company locations to control products and prices (Shopify Help Center).",
           "The entitlement architecture behind account catalogs is covered in [[/blogs/b2b-customer-specific-catalogs|customer-specific catalogs]].",
         ],
       },
@@ -595,7 +595,7 @@ export const commercePosts28: BlogPost[] = [
       {
         heading: "Scale and Platform Limits",
         body: [
-          "Large catalogs test platform limits and integrations. Shopify documents limits such as a maximum of 2,048 variants per product and restrictions on how quickly stores above a large variant count can add new variants on non-Plus plans; API calls are rate-limited, and pagination has limits ([[https://shopify.dev/docs/api/usage/limits|Shopify developer docs]]). Plan bulk imports, sync jobs and catalog structure against current limits.",
+          "Large catalogs test platform limits and integrations. Shopify documents limits such as a maximum of 2,048 variants per product and restrictions on how quickly stores above a large variant count can add new variants on non-Plus plans; API calls are rate-limited, and pagination has limits (Shopify developer docs). Plan bulk imports, sync jobs and catalog structure against current limits.",
         ],
       },
       {

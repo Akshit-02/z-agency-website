@@ -142,7 +142,7 @@ export const commercePosts59: BlogPost[] = [
       {
         heading: "Privacy and Security",
         body: [
-          "Conversations often contain personal data: names, addresses, order numbers, sometimes health or body information for sizing. Collect only what's needed, verify identity before sharing order details, avoid sending unnecessary personal data to third-party model providers, set retention periods for transcripts and document processing in your privacy notice. Protect against prompt injection, where messages try to make the assistant ignore instructions or reveal data; the OWASP Top 10 for LLM Applications lists it as a leading risk ([[https://genai.owasp.org/llm-top-10/|OWASP GenAI Security Project]]).",
+          "Conversations often contain personal data: names, addresses, order numbers, sometimes health or body information for sizing. Collect only what's needed, verify identity before sharing order details, avoid sending unnecessary personal data to third-party model providers, set retention periods for transcripts and document processing in your privacy notice. Protect against prompt injection, where messages try to make the assistant ignore instructions or reveal data; the OWASP Top 10 for LLM Applications lists it as a leading risk (OWASP GenAI Security Project).",
         ],
       },
       {
@@ -308,7 +308,7 @@ export const commercePosts59: BlogPost[] = [
       {
         heading: "Guardrails",
         body: [
-          "Guardrails keep the assistant useful and safe. Scope limits keep it on shopping topics. Instructions and checks prevent invented facts: if information isn't in retrieved data, it says so and offers alternatives. Output checks catch prices or claims that don't match data. Input handling addresses prompt injection and abuse. Sensitive topics (medical claims, safety issues, complaints) route to people. The OWASP Top 10 for LLM Applications is a useful checklist of risks to design against ([[https://genai.owasp.org/llm-top-10/|OWASP GenAI Security Project]]).",
+          "Guardrails keep the assistant useful and safe. Scope limits keep it on shopping topics. Instructions and checks prevent invented facts: if information isn't in retrieved data, it says so and offers alternatives. Output checks catch prices or claims that don't match data. Input handling addresses prompt injection and abuse. Sensitive topics (medical claims, safety issues, complaints) route to people. The OWASP Top 10 for LLM Applications is a useful checklist of risks to design against (OWASP GenAI Security Project).",
           "General controls for agents that act are covered in [[/blogs/ai-agent-guardrails|AI agent guardrails]] and [[/blogs/prompt-injection-prevention|prompt injection prevention]].",
         ],
         checklist: [
@@ -917,7 +917,7 @@ export const commercePosts59: BlogPost[] = [
       {
         heading: "Security",
         body: [
-          "Agents read content that may contain hostile instructions: product reviews, supplier emails, web pages. Prompt injection can try to make an agent ignore its instructions, leak data or take unwanted actions. Mitigations include least privilege, treating retrieved content as data rather than instructions, validating tool inputs, requiring approvals for impactful actions, output filtering and monitoring. The OWASP GenAI Security Project publishes guidance on LLM and agentic application risks ([[https://genai.owasp.org/|OWASP GenAI Security Project]]). Agent security doesn't replace professional security review of the systems they connect to. See [[/blogs/ecommerce-security|ecommerce security]].",
+          "Agents read content that may contain hostile instructions: product reviews, supplier emails, web pages. Prompt injection can try to make an agent ignore its instructions, leak data or take unwanted actions. Mitigations include least privilege, treating retrieved content as data rather than instructions, validating tool inputs, requiring approvals for impactful actions, output filtering and monitoring. The OWASP GenAI Security Project publishes guidance on LLM and agentic application risks (OWASP GenAI Security Project). Agent security doesn't replace professional security review of the systems they connect to. See [[/blogs/ecommerce-security|ecommerce security]].",
         ],
       },
       {

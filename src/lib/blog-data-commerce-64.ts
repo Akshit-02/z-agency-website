@@ -414,7 +414,7 @@ export const commercePosts64: BlogPost[] = [
       {
         heading: "Why Shipping Information Belongs Early",
         body: [
-          "Shoppers want to know two things before committing: what delivery will cost and when it will arrive. When the answer only appears at the end of checkout, surprised shoppers leave. Research on checkout abandonment, such as Baymard Institute's, consistently lists extra costs like shipping among the top reasons ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). Bringing shipping information forward is one of the most reliable ways to reduce that surprise.",
+          "Shoppers want to know two things before committing: what delivery will cost and when it will arrive. When the answer only appears at the end of checkout, surprised shoppers leave. Research on checkout abandonment, such as Baymard Institute's, consistently lists extra costs like shipping among the top reasons (Baymard Institute). Bringing shipping information forward is one of the most reliable ways to reduce that surprise.",
           "This article covers the customer-facing presentation of shipping. For the integrations behind it, see [[/blogs/ecommerce-shipping-integration|shipping integration]]; for checkout design generally, see [[/blogs/ecommerce-checkout-ux|checkout UX]].",
         ],
       },

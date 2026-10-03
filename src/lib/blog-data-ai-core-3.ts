@@ -54,7 +54,7 @@ export const aiCorePosts3: BlogPost[] = [
       {
         heading: "Why Prompts Are Not Guardrails",
         body: [
-          "Telling a model 'never refund more than $100' is useful guidance, but the model can misread the situation, be manipulated by text in an email it is processing, or simply err. The [[https://genai.owasp.org/llm-top-10/|OWASP Top 10 for LLM Applications]] lists prompt injection and excessive agency among the core risks for exactly this reason. Enforce the $100 limit inside the refund tool, and the prompt becomes a helpful hint rather than the only line of defence.",
+          "Telling a model 'never refund more than $100' is useful guidance, but the model can misread the situation, be manipulated by text in an email it is processing, or simply err. The OWASP Top 10 for LLM Applications lists prompt injection and excessive agency among the core risks for exactly this reason. Enforce the $100 limit inside the refund tool, and the prompt becomes a helpful hint rather than the only line of defence.",
         ],
       },
       {
@@ -261,7 +261,7 @@ export const aiCorePosts3: BlogPost[] = [
       {
         heading: "OpenTelemetry GenAI Conventions",
         body: [
-          "The [[https://opentelemetry.io/docs/specs/semconv/gen-ai/|OpenTelemetry semantic conventions for generative AI]] define standard operation names (such as chat, invoke_agent and execute_tool) and attributes for providers, models and token usage. They are still evolving, but adopting them keeps telemetry portable between tools and lets traces from model SDKs, frameworks and MCP servers line up. The latest MCP specification also documents trace context propagation through its metadata fields.",
+          "The OpenTelemetry semantic conventions for generative AI define standard operation names (such as chat, invoke_agent and execute_tool) and attributes for providers, models and token usage. They are still evolving, but adopting them keeps telemetry portable between tools and lets traces from model SDKs, frameworks and MCP servers line up. The latest MCP specification also documents trace context propagation through its metadata fields.",
         ],
       },
       {

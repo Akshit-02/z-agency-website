@@ -131,7 +131,7 @@ export const commercePosts30: BlogPost[] = [
       {
         heading: "Reordering on Shopify B2B",
         body: [
-          "Shopify B2B includes reorders from customer accounts and quick order lists on product pages, and supports quantity rules and volume pricing ([[https://help.shopify.com/en/manual/b2b|Shopify Help Center]]). CSV upload, shared lists, par levels and scheduled orders usually need apps or custom development. See [[/blogs/shopify-custom-app-development-guide|Shopify custom app development]].",
+          "Shopify B2B includes reorders from customer accounts and quick order lists on product pages, and supports quantity rules and volume pricing (Shopify Help Center). CSV upload, shared lists, par levels and scheduled orders usually need apps or custom development. See [[/blogs/shopify-custom-app-development-guide|Shopify custom app development]].",
         ],
       },
       {
@@ -257,7 +257,7 @@ export const commercePosts30: BlogPost[] = [
       {
         heading: "Platform Notes",
         body: [
-          "Shopify B2B offers company accounts, catalogs, volume pricing, quantity rules and payment terms, with some capabilities on Shopify Plus ([[https://help.shopify.com/en/manual/b2b|Shopify Help Center]]). Variant grids, line sheets and pre-order management often come from apps or custom development. See [[/blogs/shopify-plus-vs-shopify|Shopify Plus vs Shopify]].",
+          "Shopify B2B offers company accounts, catalogs, volume pricing, quantity rules and payment terms, with some capabilities on Shopify Plus (Shopify Help Center). Variant grids, line sheets and pre-order management often come from apps or custom development. See [[/blogs/shopify-plus-vs-shopify|Shopify Plus vs Shopify]].",
         ],
       },
       {
@@ -364,7 +364,7 @@ export const commercePosts30: BlogPost[] = [
       {
         heading: "Accounts, Locations and Contacts",
         body: [
-          "Map ERP customer records to the platform's company model. Shopify B2B, for example, models companies with locations and contacts, and assigns catalogs and payment terms to locations ([[https://help.shopify.com/en/manual/b2b|Shopify Help Center]]). Decide how new web applications become ERP customers (manual approval, automated creation) and how contacts and roles map. Avoid duplicates with stable identifiers.",
+          "Map ERP customer records to the platform's company model. Shopify B2B, for example, models companies with locations and contacts, and assigns catalogs and payment terms to locations (Shopify Help Center). Decide how new web applications become ERP customers (manual approval, automated creation) and how contacts and roles map. Avoid duplicates with stable identifiers.",
         ],
       },
       {

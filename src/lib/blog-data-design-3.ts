@@ -48,7 +48,7 @@ export const designPosts3: BlogPost[] = [
       {
         heading: "Research to Lean On",
         body: [
-          "Baymard Institute's [[https://baymard.com/research|ecommerce UX research]] documents large-scale usability testing of product lists, search, product pages, cart and checkout, and is a valuable reference alongside your own analytics and testing. Recommendations in this guide are general; validate them against your customers.",
+          "Baymard Institute's ecommerce UX research documents large-scale usability testing of product lists, search, product pages, cart and checkout, and is a valuable reference alongside your own analytics and testing. Recommendations in this guide are general; validate them against your customers.",
         ],
       },
       {
@@ -230,7 +230,7 @@ export const designPosts3: BlogPost[] = [
       {
         heading: "Media",
         body: [
-          "Images do most of the explaining. Show the product from multiple angles, close-ups of materials and details, the product in context or on a person, and something that conveys scale. Support zoom on desktop and pinch or swipe on mobile. Baymard's [[https://baymard.com/research/product-page|product page research]] covers imagery and other product page elements in depth, and ZSpace Labs' [[/blogs/ecommerce-product-image-design|product image design guide]] covers galleries in detail.",
+          "Images do most of the explaining. Show the product from multiple angles, close-ups of materials and details, the product in context or on a person, and something that conveys scale. Support zoom on desktop and pinch or swipe on mobile. Baymard's product page research covers imagery and other product page elements in depth, and ZSpace Labs' [[/blogs/ecommerce-product-image-design|product image design guide]] covers galleries in detail.",
         ],
       },
       {
@@ -355,9 +355,9 @@ export const designPosts3: BlogPost[] = [
       {
         heading: "What Is a Product Listing Page?",
         body: [
-          "This is the hub for listing-page UX. Deep dives cover [[/blogs/ecommerce-product-cards|product cards]], [[/blogs/ecommerce-product-sorting|sorting]], [[/blogs/ecommerce-filters|filters]], [[/blogs/ecommerce-product-comparison|comparison]], [[/blogs/ecommerce-quick-view|quick view]] and [[/blogs/ecommerce-empty-states|empty states]]. Baymard Institute's benchmark found that 58% of desktop and 78% of mobile ecommerce sites had “poor” to “mediocre” product list UX ([[https://baymard.com/blog/current-state-product-list-and-filtering|Baymard Institute]]).",
+          "This is the hub for listing-page UX. Deep dives cover [[/blogs/ecommerce-product-cards|product cards]], [[/blogs/ecommerce-product-sorting|sorting]], [[/blogs/ecommerce-filters|filters]], [[/blogs/ecommerce-product-comparison|comparison]], [[/blogs/ecommerce-quick-view|quick view]] and [[/blogs/ecommerce-empty-states|empty states]]. Baymard Institute's benchmark found that 58% of desktop and 78% of mobile ecommerce sites had “poor” to “mediocre” product list UX (Baymard Institute).",
           "A product listing page (PLP) shows a set of products: a category, a collection, a brand, a sale or search results. Shoppers usually arrive with partial intent. They know the type of product, not the exact one, so the page's job is to help them compare, narrow and choose which products to open.",
-          "That makes it different from the [[/blogs/ecommerce-product-page-design|product detail page]], which helps shoppers decide on one item. Baymard Institute's [[https://baymard.com/blog/product-listing-page-plp-ux|product listing research]] is a valuable reference; for auditing a live Shopify store, see the [[/blogs/shopify-collection-page-audit|Shopify collection page audit]].",
+          "That makes it different from the [[/blogs/ecommerce-product-page-design|product detail page]], which helps shoppers decide on one item. Baymard Institute's product listing research is a valuable reference; for auditing a live Shopify store, see the [[/blogs/shopify-collection-page-audit|Shopify collection page audit]].",
         ],
       },
       {
@@ -461,7 +461,7 @@ export const designPosts3: BlogPost[] = [
       {
         heading: "Pagination, Load More and Infinite Scroll",
         body: [
-          "Baymard's [[https://baymard.com/blog/external-load-more-vs-pagination-vs-infinite-scrolling|testing of loading methods]] found “Load more” generally performed best: users perceived pagination as slow and were discouraged by many page links, while endless scrolling could overwhelm them and made the footer hard to reach. Baymard also recommends [[https://baymard.com/blog/number-of-items-loaded-by-default|loading larger batches by default]]: around 50 to 100 products on desktop for spec-driven products, 100 to 150 for visually driven ones and 15 to 30 on mobile, combined with lazy loading so performance doesn't suffer.",
+          "Baymard's testing of loading methods found “Load more” generally performed best: users perceived pagination as slow and were discouraged by many page links, while endless scrolling could overwhelm them and made the footer hard to reach. Baymard also recommends loading larger batches by default: around 50 to 100 products on desktop for spec-driven products, 100 to 150 for visually driven ones and 15 to 30 on mobile, combined with lazy loading so performance doesn't suffer.",
         ],
         table: {
           headers: ["Method", "Strengths", "Weaknesses"],
@@ -592,7 +592,7 @@ export const designPosts3: BlogPost[] = [
       {
         heading: "How Shopify Themes Are Structured",
         body: [
-          "Shopify's [[https://shopify.dev/docs/storefronts/themes/architecture|theme architecture]] is built around templates, sections and blocks. With Online Store 2.0, [[https://shopify.dev/docs/storefronts/themes/architecture/templates/json-templates|JSON templates]] define which sections appear on a page, and merchants can add, remove and reorder sections in the theme editor. Blocks are configurable elements within sections, and app blocks let apps add content without editing theme code.",
+          "Shopify's theme architecture is built around templates, sections and blocks. With Online Store 2.0, JSON templates define which sections appear on a page, and merchants can add, remove and reorder sections in the theme editor. Blocks are configurable elements within sections, and app blocks let apps add content without editing theme code.",
         ],
         visual: { variant: "rows", accent: "orange", caption: "Theme, JSON templates, sections, blocks and app blocks combine into the storefront." },
       },

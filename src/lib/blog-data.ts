@@ -275,7 +275,7 @@ export const posts: BlogPost[] = [
       {
         "heading": "What to measure: Core Web Vitals in plain terms",
         "body": [
-          "Google's [[https://web.dev/articles/vitals|Core Web Vitals]] describe three parts of the experience. **Largest Contentful Paint (LCP)** is how long the main content takes to appear. **Interaction to Next Paint (INP)** is how quickly the page responds when someone taps or clicks. **Cumulative Layout Shift (CLS)** is how much the layout jumps while loading.",
+          "Google's Core Web Vitals describe three parts of the experience. **Largest Contentful Paint (LCP)** is how long the main content takes to appear. **Interaction to Next Paint (INP)** is how quickly the page responds when someone taps or clicks. **Cumulative Layout Shift (CLS)** is how much the layout jumps while loading.",
           "Measure them with field data from real visitors, available in PageSpeed Insights and Search Console, rather than relying only on a lab score from your own fast laptop. Field data shows what customers on average phones and networks actually experience."
         ],
         "table": {
@@ -565,7 +565,7 @@ export const posts: BlogPost[] = [
         "heading": "Apps are the easiest thing to add and the hardest to remove",
         "body": [
           "Every Shopify app that touches the storefront adds its own scripts, styles or widgets, and most stores never go back to remove the ones they stopped needing. Over time this quietly compounds into a {{o:slow storefront}} and a monthly bill nobody can fully explain.",
-          "Shopify's own guidance on [[https://shopify.dev/docs/storefronts/themes/best-practices/performance|theme performance]] stresses minimising JavaScript and third-party code, which is exactly what unmanaged app stacks add."
+          "Shopify's own guidance on theme performance stresses minimising JavaScript and third-party code, which is exactly what unmanaged app stacks add."
         ]
       },
       {
@@ -895,7 +895,7 @@ export const posts: BlogPost[] = [
       {
         "heading": "Where friction usually hides",
         "body": [
-          "Baymard Institute's long-running [[https://baymard.com/lists/cart-abandonment-rate|checkout usability research]] repeatedly finds the same categories of problems. Check your checkout for each:"
+          "Baymard Institute's long-running checkout usability research repeatedly finds the same categories of problems. Check your checkout for each:"
         ],
         "checklist": [
           "**Late costs:** shipping, taxes or fees revealed only at the final step",
@@ -1311,7 +1311,7 @@ export const posts: BlogPost[] = [
       {
         "heading": "Typical cost scenarios",
         "body": [
-          "Rather than quoting prices that change, it helps to think in scenarios. Check current figures on Shopify's [[https://www.shopify.com/pricing|pricing page]] and app listings."
+          "Rather than quoting prices that change, it helps to think in scenarios. Check current figures on Shopify's pricing page and app listings."
         ],
         "table": {
           "headers": [
@@ -1559,7 +1559,7 @@ export const posts: BlogPost[] = [
       {
         "heading": "Native Shopify features to check first",
         "body": [
-          "Shopify includes features that new stores often buy apps for: basic email marketing through Shopify Email, discounts, gift cards, customer accounts, analytics and reports, and product search and filtering in many themes. Check the [[https://help.shopify.com/en/manual|Shopify Help Center]] for what your plan includes before adding an app for the same job.",
+          "Shopify includes features that new stores often buy apps for: basic email marketing through Shopify Email, discounts, gift cards, customer accounts, analytics and reports, and product search and filtering in many themes. Check the Shopify Help Center for what your plan includes before adding an app for the same job.",
           "For help choosing and configuring the right stack, see our [[/services/shopify-development|Shopify development services]]."
         ]
       },
@@ -1657,7 +1657,7 @@ export const posts: BlogPost[] = [
         "heading": "Authentication and access scopes",
         "body": [
           "Every integration needs credentials with the right access scopes, such as reading orders or writing products. Request only the scopes the integration needs, store tokens securely on the server and plan how they are rotated. Over-broad scopes are a common security problem in custom integrations.",
-          "Shopify's [[https://shopify.dev/docs/api/admin-graphql|GraphQL Admin API documentation]] lists available objects and the scopes each requires."
+          "Shopify's GraphQL Admin API documentation lists available objects and the scopes each requires."
         ]
       },
       {
@@ -1862,7 +1862,7 @@ export const posts: BlogPost[] = [
       {
         "heading": "How to measure on Shopify",
         "body": [
-          "Use field data first: PageSpeed Insights shows Chrome User Experience Report data for pages with enough traffic, and Search Console's Core Web Vitals report groups URLs by status. Test product, collection and home templates separately, since each loads different apps and sections. Google's [[https://web.dev/articles/vitals|Core Web Vitals overview]] defines the thresholds.",
+          "Use field data first: PageSpeed Insights shows Chrome User Experience Report data for pages with enough traffic, and Search Console's Core Web Vitals report groups URLs by status. Test product, collection and home templates separately, since each loads different apps and sections. Google's Core Web Vitals overview defines the thresholds.",
           "Lab tools such as Lighthouse help find causes, but use them on a duplicate theme and compare changes against the same templates."
         ]
       },
@@ -2116,7 +2116,7 @@ export const posts: BlogPost[] = [
       {
         "heading": "Shopify Functions and checkout extensions",
         "body": [
-          "Some customisations that once needed custom apps or theme code now use platform extension points. [[https://shopify.dev/docs/apps/build/functions|Shopify Functions]] customise backend logic such as discounts, payment and delivery options, and checkout UI extensions add content to checkout. Availability varies by plan and feature, so confirm against current documentation during scoping.",
+          "Some customisations that once needed custom apps or theme code now use platform extension points. Shopify Functions customise backend logic such as discounts, payment and delivery options, and checkout UI extensions add content to checkout. Availability varies by plan and feature, so confirm against current documentation during scoping.",
           "Our [[/services/shopify-development|Shopify development services]] cover custom apps, Functions and integrations."
         ]
       },
@@ -2527,7 +2527,7 @@ export const posts: BlogPost[] = [
       {
         heading: "Theme or Custom Theme?",
         body: [
-          "Shopify Theme Store themes are built on Online Store 2.0, with sections and blocks merchants can edit, and must meet Shopify's review standards, including a [[https://shopify.dev/docs/storefronts/themes/best-practices/performance|minimum average Lighthouse performance score of 60]] across the home, product and collection pages. A well-chosen theme gets you a solid, maintainable base quickly.",
+          "Shopify Theme Store themes are built on Online Store 2.0, with sections and blocks merchants can edit, and must meet Shopify's review standards, including a minimum average Lighthouse performance score of 60 across the home, product and collection pages. A well-chosen theme gets you a solid, maintainable base quickly.",
           "A custom theme makes sense when the brand needs a distinctive experience, the catalog needs templates a theme can't produce, or performance and features need tighter control. Custom themes should still use sections and blocks so the team can edit content without developers. Many redesigns land in between: a strong theme plus custom sections. See [[/blogs/shopify-theme-vs-custom-development|Shopify theme vs custom development]].",
         ],
       },

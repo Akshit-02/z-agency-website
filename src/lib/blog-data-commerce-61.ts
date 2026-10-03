@@ -65,7 +65,7 @@ export const commercePosts61: BlogPost[] = [
       {
         heading: "Layer 1: Staff and Admin Accounts",
         body: [
-          "Most store compromises start with an account. Enforce multi-factor authentication for every staff account on the ecommerce platform and on connected systems: email, domain registrar, DNS, hosting, code repositories, payment provider and analytics. Give each person their own account with only the permissions they need, remove access promptly when people leave or agencies finish work, and review access regularly. Broken access control has ranked first in the OWASP Top 10 web application risks ([[https://owasp.org/Top10/|OWASP Top 10]]), and many real incidents come from over-privileged or forgotten accounts.",
+          "Most store compromises start with an account. Enforce multi-factor authentication for every staff account on the ecommerce platform and on connected systems: email, domain registrar, DNS, hosting, code repositories, payment provider and analytics. Give each person their own account with only the permissions they need, remove access promptly when people leave or agencies finish work, and review access regularly. Broken access control has ranked first in the OWASP Top 10 web application risks (OWASP Top 10), and many real incidents come from over-privileged or forgotten accounts.",
         ],
         checklist: [
           "MFA on platform, email, domain, DNS, hosting, repositories, payments",
@@ -85,7 +85,7 @@ export const commercePosts61: BlogPost[] = [
       {
         heading: "Layer 3: Payments and Scripts",
         body: [
-          "The safest approach is to keep card data off your systems entirely: use a hosted checkout or payment fields provided by your payment provider, and tokenization for stored payment methods. This reduces your PCI DSS scope but doesn't remove responsibility. PCI DSS v4.0.1 is the current version, and requirements that became mandatory on 31 March 2025 include managing scripts on payment pages and detecting unauthorized changes. The PCI Security Standards Council has clarified how these apply to merchants using embedded payment pages under SAQ A ([[https://blog.pcisecuritystandards.org/faq-clarifies-new-saq-a-eligibility-criteria-for-e-commerce-merchants|PCI Security Standards Council]]). Confirm your obligations with your payment provider or a qualified assessor.",
+          "The safest approach is to keep card data off your systems entirely: use a hosted checkout or payment fields provided by your payment provider, and tokenization for stored payment methods. This reduces your PCI DSS scope but doesn't remove responsibility. PCI DSS v4.0.1 is the current version, and requirements that became mandatory on 31 March 2025 include managing scripts on payment pages and detecting unauthorized changes. The PCI Security Standards Council has clarified how these apply to merchants using embedded payment pages under SAQ A (PCI Security Standards Council). Confirm your obligations with your payment provider or a qualified assessor.",
           "Beyond compliance, control scripts across the store: keep an inventory of third-party scripts, remove unused ones, load them only where needed, use a content security policy where practical, and monitor for unexpected changes.",
           "PCI scope, payment page script controls, keys and webhooks are covered in [[/blogs/ecommerce-payment-security|ecommerce payment security]].",
         ],
@@ -303,7 +303,7 @@ export const commercePosts61: BlogPost[] = [
       {
         heading: "Step 5: Review Payments",
         body: [
-          "Confirm how card data flows: hosted checkout, embedded payment fields or direct handling. Check which PCI DSS validation applies with your payment provider, and whether you meet current requirements, including script management on payment pages where relevant ([[https://www.pcisecuritystandards.org/|PCI Security Standards Council]]). Review fraud tool settings, chargeback rates and who can issue refunds or change payout details.",
+          "Confirm how card data flows: hosted checkout, embedded payment fields or direct handling. Check which PCI DSS validation applies with your payment provider, and whether you meet current requirements, including script management on payment pages where relevant (PCI Security Standards Council). Review fraud tool settings, chargeback rates and who can issue refunds or change payout details.",
         ],
       },
       {
@@ -489,7 +489,7 @@ export const commercePosts61: BlogPost[] = [
         heading: "Step 3: Consent and Cookies",
         body: [
           "Several laws regulate cookies and similar tracking, and some require consent for non-essential uses such as analytics and advertising. In the EU and UK, for example, consent is generally required before setting non-essential cookies. In some US states, laws give consumers rights to opt out of the sale or sharing of personal data and of targeted advertising, and some require honouring browser opt-out signals. Configure your consent tool to your markets, block tags until consent where required, record consent, and make it as easy to withdraw as to give.",
-          "On Shopify, the Customer Privacy API lets themes and apps read a visitor's consent choices, and Shopify offers cookie banner and privacy settings ([[https://shopify.dev/docs/api/customer-privacy|Shopify developer docs]]). Advertising platforms have their own consent mechanisms, such as Google's consent mode. Server-side tracking doesn't remove consent obligations.",
+          "On Shopify, the Customer Privacy API lets themes and apps read a visitor's consent choices, and Shopify offers cookie banner and privacy settings (Shopify developer docs). Advertising platforms have their own consent mechanisms, such as Google's consent mode. Server-side tracking doesn't remove consent obligations.",
         ],
         checklist: [
           "Consent banner configured per market",
@@ -677,7 +677,7 @@ export const commercePosts61: BlogPost[] = [
       {
         heading: "Reviews, Endorsements and Advertising",
         body: [
-          "Reviews and endorsements are regulated in many places. The US FTC has a final rule banning fake reviews and testimonials and certain review practices, such as buying positive reviews or suppressing negative ones ([[https://www.ftc.gov/news-events/news/press-releases/2024/08/federal-trade-commission-announces-final-rule-banning-fake-reviews-testimonials|FTC]]). EU and UK consumer law also address fake or misleading reviews and require information about how reviews are verified in some cases. Disclose incentivized reviews and material connections with influencers, and don't filter out negative reviews.",
+          "Reviews and endorsements are regulated in many places. The US FTC has a final rule banning fake reviews and testimonials and certain review practices, such as buying positive reviews or suppressing negative ones (FTC). EU and UK consumer law also address fake or misleading reviews and require information about how reviews are verified in some cases. Disclose incentivized reviews and material connections with influencers, and don't filter out negative reviews.",
         ],
       },
       {

@@ -257,7 +257,7 @@ export const shopifyCroPosts2: BlogPost[] = [
       {
         heading: "How Shopify Store Search Works",
         body: [
-          "Shopify stores have two search experiences, shown in the diagram above. {{b:Predictive search}} suggests products, collections, pages and queries as shoppers type, in themes that support it. The {{b:search results page}} lists matching products and other content, with filters and sorting. Behind both sits Shopify's storefront search, which you tune with the free Shopify Search & Discovery app: synonyms, product boosts, filters and recommendations ([[https://help.shopify.com/en/manual/online-store/search-and-discovery|Shopify Help Center]]).",
+          "Shopify stores have two search experiences, shown in the diagram above. {{b:Predictive search}} suggests products, collections, pages and queries as shoppers type, in themes that support it. The {{b:search results page}} lists matching products and other content, with filters and sorting. Behind both sits Shopify's storefront search, which you tune with the free Shopify Search & Discovery app: synonyms, product boosts, filters and recommendations (Shopify Help Center).",
           "This guide is the Shopify implementation. For platform-independent search strategy, see [[/blogs/ecommerce-site-search|ecommerce site search]]; for interface design, see [[/blogs/ecommerce-search-ux|ecommerce search UX]].",
         ],
       },

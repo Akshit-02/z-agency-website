@@ -583,7 +583,7 @@ export const commercePosts49: BlogPost[] = [
       {
         heading: "360, 3D and Configurators",
         body: [
-          "360 spins and 3D viewers let shoppers inspect every angle. They're most valuable for configurable pieces (engagement rings with different settings, stones and metals), where photographing every combination is impractical. Renders must be accurate in colour, finish and proportion. Shopify product media, for example, supports 3D models in GLB and USDZ formats and up to 250 media items per product ([[https://help.shopify.com/en/manual/products/product-media/product-media-types|Shopify Help Center]]).",
+          "360 spins and 3D viewers let shoppers inspect every angle. They're most valuable for configurable pieces (engagement rings with different settings, stones and metals), where photographing every combination is impractical. Renders must be accurate in colour, finish and proportion. Shopify product media, for example, supports 3D models in GLB and USDZ formats and up to 250 media items per product (Shopify Help Center).",
         ],
       },
       {
@@ -740,7 +740,7 @@ export const commercePosts49: BlogPost[] = [
       {
         heading: "Platform Notes",
         body: [
-          "On Shopify, Search & Discovery supports standard filters plus custom filters built from product options (such as metal colour and ring size) and metafields or metaobjects (such as gemstone and style), with up to 1,000 values per filter ([[https://help.shopify.com/en/manual/online-store/storefront-search/search-and-discovery-filters|Shopify Help Center]]). See [[/blogs/shopify-jewelry-store|Shopify jewelry store]].",
+          "On Shopify, Search & Discovery supports standard filters plus custom filters built from product options (such as metal colour and ring size) and metafields or metaobjects (such as gemstone and style), with up to 1,000 values per filter (Shopify Help Center). See [[/blogs/shopify-jewelry-store|Shopify jewelry store]].",
         ],
       },
       {

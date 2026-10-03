@@ -428,7 +428,7 @@ export const aiCorePosts12: BlogPost[] = [
       {
         heading: "Step 4: Use Structured Outputs",
         body: [
-          "Major model providers can constrain output to a JSON schema (OpenAI's structured outputs and [[https://platform.claude.com/docs/en/build-with-claude/structured-outputs|Anthropic's structured outputs]], for example), which eliminates parsing failures. It does not guarantee correct values, so the next step matters more.",
+          "Major model providers can constrain output to a JSON schema (OpenAI's structured outputs and Anthropic's structured outputs, for example), which eliminates parsing failures. It does not guarantee correct values, so the next step matters more.",
         ],
         cta: {
           title: "Extracting data from documents your systems cannot read?",

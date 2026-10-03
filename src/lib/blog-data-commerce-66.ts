@@ -104,7 +104,7 @@ export const commercePosts66: BlogPost[] = [
       {
         heading: "URLs and SEO",
         body: [
-          "Each language or regional version needs its own URL, whether in subdirectories, subdomains or country-code domains. Google's guidance recommends separate URLs per language version, hreflang annotations to connect equivalent pages, and avoiding automatic redirects based on perceived language or location ([[https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites|Google Search Central]]). Offer a visible selector so customers can switch. See [[/blogs/international-ecommerce-seo|international ecommerce SEO]].",
+          "Each language or regional version needs its own URL, whether in subdirectories, subdomains or country-code domains. Google's guidance recommends separate URLs per language version, hreflang annotations to connect equivalent pages, and avoiding automatic redirects based on perceived language or location (Google Search Central). Offer a visible selector so customers can switch. See [[/blogs/international-ecommerce-seo|international ecommerce SEO]].",
         ],
       },
       {
@@ -124,7 +124,7 @@ export const commercePosts66: BlogPost[] = [
       {
         heading: "Multi-Region on Shopify",
         body: [
-          "Shopify Markets lets one store serve multiple countries and regions with local currencies, languages, domains or subfolders, market-specific pricing and product availability ([[https://help.shopify.com/en/manual/international|Shopify Help Center]]). Shopify Plus adds expansion stores for cases that need separate stores, such as a different catalog, legal entity or B2B operation. See [[/blogs/shopify-markets|Shopify Markets]] and [[/blogs/shopify-plus-development|Shopify Plus development]].",
+          "Shopify Markets lets one store serve multiple countries and regions with local currencies, languages, domains or subfolders, market-specific pricing and product availability (Shopify Help Center). Shopify Plus adds expansion stores for cases that need separate stores, such as a different catalog, legal entity or B2B operation. See [[/blogs/shopify-markets|Shopify Markets]] and [[/blogs/shopify-plus-development|Shopify Plus development]].",
         ],
       },
       {
@@ -236,7 +236,7 @@ export const commercePosts66: BlogPost[] = [
       {
         heading: "Payment Methods by Market",
         body: [
-          "Payment preferences vary widely. Cards are common in many markets, but digital wallets, bank transfer and account-to-account methods, instalment services and local schemes are preferred in others. Research each target market's expectations using your payment provider's guidance and local data, rather than assumptions. Payment providers publish which methods they support by country ([[https://docs.stripe.com/payments/payment-methods/overview|Stripe documentation]]).",
+          "Payment preferences vary widely. Cards are common in many markets, but digital wallets, bank transfer and account-to-account methods, instalment services and local schemes are preferred in others. Research each target market's expectations using your payment provider's guidance and local data, rather than assumptions. Payment providers publish which methods they support by country (Stripe documentation).",
         ],
         table: {
           headers: ["Method type", "How it works", "Considerations"],
@@ -437,7 +437,7 @@ export const commercePosts66: BlogPost[] = [
         heading: "Duties, Taxes and Landed Cost",
         body: [
           "Duties and import taxes depend on the destination, product classification, origin and value. Customers dislike paying unexpected amounts on delivery. There are two common approaches: collect duties and taxes at checkout and ship delivered duty paid (DDP), so there are no fees on delivery; or show an estimate and ship delivered at place (DAP), so the customer pays on arrival. DDP usually gives a better experience but requires accurate calculation and a carrier or service that supports it.",
-          "Some jurisdictions have special regimes for low-value imports. In the EU, for example, the Import One-Stop Shop (IOSS) lets sellers collect VAT at checkout on consignments up to a set value ([[https://vat-one-stop-shop.ec.europa.eu/index_en|European Commission]]). Rules and thresholds differ by market and change over time; confirm them with advisers.",
+          "Some jurisdictions have special regimes for low-value imports. In the EU, for example, the Import One-Stop Shop (IOSS) lets sellers collect VAT at checkout on consignments up to a set value (European Commission). Rules and thresholds differ by market and change over time; confirm them with advisers.",
           "DDP versus DAP, low-value import rule changes and how to show import charges at checkout are covered in [[/blogs/ecommerce-duties-import-taxes|ecommerce duties and import taxes]].",
         ],
         table: {
@@ -626,7 +626,7 @@ export const commercePosts66: BlogPost[] = [
       {
         heading: "Formats and Conventions",
         body: [
-          "Currency symbols and placement, decimal separators, date order, measurement units and clothing sizes all vary. Use locale-aware formatting libraries rather than hand-built formats, and provide size conversion where sizes differ. For right-to-left languages, mirror layouts, alignment and directional icons, and test carefully, since mirroring touches many components. The W3C Internationalization Activity publishes guidance on these topics ([[https://www.w3.org/International/|W3C Internationalization]]).",
+          "Currency symbols and placement, decimal separators, date order, measurement units and clothing sizes all vary. Use locale-aware formatting libraries rather than hand-built formats, and provide size conversion where sizes differ. For right-to-left languages, mirror layouts, alignment and directional icons, and test carefully, since mirroring touches many components. The W3C Internationalization Activity publishes guidance on these topics (W3C Internationalization).",
         ],
       },
       {

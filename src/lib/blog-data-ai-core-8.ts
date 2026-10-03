@@ -263,7 +263,7 @@ export const aiCorePosts8: BlogPost[] = [
       {
         heading: "Local, Global and Combined Search",
         body: [
-          "[[https://microsoft.github.io/graphrag/|Microsoft's GraphRAG]] describes local search for questions about specific entities (it gathers an entity's neighbours, relationships and source text) and global search for broad questions (it uses community reports across the dataset). Microsoft Research has also described DRIFT search, which combines the two, and LazyGraphRAG, which defers summarization to query time to cut indexing cost. These are evolving research-led tools, so test them on your own corpus.",
+          "Microsoft's GraphRAG describes local search for questions about specific entities (it gathers an entity's neighbours, relationships and source text) and global search for broad questions (it uses community reports across the dataset). Microsoft Research has also described DRIFT search, which combines the two, and LazyGraphRAG, which defers summarization to query time to cut indexing cost. These are evolving research-led tools, so test them on your own corpus.",
         ],
         cta: {
           title: "Have questions that span hundreds of documents?",
@@ -411,7 +411,7 @@ export const aiCorePosts8: BlogPost[] = [
         heading: "Why MCP Exists",
         body: [
           "Before MCP, every AI application integrated every tool its own way: one connector for each pair of app and system. MCP turns that many-to-many problem into a standard interface. A company can expose its order system once as an MCP server, and any compatible assistant, IDE or agent framework can use it, with consistent discovery, schemas and authorization.",
-          "Anthropic introduced MCP in November 2024; in December 2025 it was [[https://blog.modelcontextprotocol.io/posts/2025-12-09-mcp-joins-agentic-ai-foundation/|contributed to the Agentic AI Foundation]] under the Linux Foundation, with support from several major AI and cloud companies.",
+          "Anthropic introduced MCP in November 2024; in December 2025 it was contributed to the Agentic AI Foundation under the Linux Foundation, with support from several major AI and cloud companies.",
         ],
       },
       {
@@ -440,7 +440,7 @@ export const aiCorePosts8: BlogPost[] = [
       {
         heading: "What Changed in the 2026-07-28 Specification",
         body: [
-          "The [[https://modelcontextprotocol.io/specification/2026-07-28/changelog|2026-07-28 revision]] is the largest change since launch, so older tutorials may be out of date:",
+          "The 2026-07-28 revision is the largest change since launch, so older tutorials may be out of date:",
         ],
         checklist: [
           "**Stateless core:** the initialize handshake and protocol-level sessions (the Mcp-Session-Id header) are removed; each request carries its protocol version and client capabilities in metadata",
@@ -640,7 +640,7 @@ export const aiCorePosts8: BlogPost[] = [
       {
         heading: "Step 2: Choose an SDK and Transport",
         body: [
-          "Use an official SDK so protocol details (discovery, message formats, the stateless request metadata introduced in 2026-07-28) are handled for you. The [[https://modelcontextprotocol.io/docs/develop/build-server|official server tutorial]] covers TypeScript, Python, Java, Kotlin and C#. For transport, stdio suits local desktop and IDE use; Streamable HTTP suits remote servers. The older HTTP+SSE transport is deprecated.",
+          "Use an official SDK so protocol details (discovery, message formats, the stateless request metadata introduced in 2026-07-28) are handled for you. The official server tutorial covers TypeScript, Python, Java, Kotlin and C#. For transport, stdio suits local desktop and IDE use; Streamable HTTP suits remote servers. The older HTTP+SSE transport is deprecated.",
         ],
         diagram: {
           variant: "mcpservercomponents",

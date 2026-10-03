@@ -9,7 +9,7 @@ const TOKEN_RE = /\*\*(.+?)\*\*|\{\{(b|o):(.+?)\}\}|\[\[(.+?)\|(.+?)\]\]/g;
  *  {{b:text}}          -> blue accent
  *  {{o:text}}          -> orange accent
  *  [[/href|text]]      -> internal link
- *  [[https://..|text]] -> external link, new tab
+ *  text -> external link, new tab
  */
 export function renderInline(text: string): ReactNode[] {
   const nodes: ReactNode[] = [];

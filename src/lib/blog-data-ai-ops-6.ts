@@ -99,7 +99,7 @@ export const aiOpsPosts6: BlogPost[] = [
       {
         heading: "Tools",
         body: [
-          "Open-source tools such as [[https://github.com/NVIDIA/garak|garak]] and [[https://github.com/Azure/PyRIT|PyRIT]] automate probing with libraries of adversarial techniques and scorers. They provide breadth and keep up with known patterns. Application-specific cases, built around your policies, system prompt and tools, provide relevance. Run both, and store test sets in access-controlled repositories.",
+          "Open-source tools such as garak and PyRIT automate probing with libraries of adversarial techniques and scorers. They provide breadth and keep up with known patterns. Application-specific cases, built around your policies, system prompt and tools, provide relevance. Run both, and store test sets in access-controlled repositories.",
         ],
       },
       {
@@ -254,7 +254,7 @@ export const aiOpsPosts6: BlogPost[] = [
       {
         heading: "Secrets and System Prompts",
         body: [
-          "Treat system prompts as potentially visible. Do not include API keys, credentials, internal URLs that grant access, or confidential logic whose disclosure would cause harm. The OWASP Top 10 for LLM Applications lists [[https://genai.owasp.org/llm-top-10/|system prompt leakage]] as its own risk for this reason. Enforce business rules such as discounts, limits and permissions in server-side code, where users cannot argue with them.",
+          "Treat system prompts as potentially visible. Do not include API keys, credentials, internal URLs that grant access, or confidential logic whose disclosure would cause harm. The OWASP Top 10 for LLM Applications lists system prompt leakage as its own risk for this reason. Enforce business rules such as discounts, limits and permissions in server-side code, where users cannot argue with them.",
         ],
         cta: {
           title: "Worried your AI assistant could show the wrong data to the wrong user?",
@@ -428,7 +428,7 @@ export const aiOpsPosts6: BlogPost[] = [
       {
         heading: "Scoped, Short-Lived Credentials",
         body: [
-          "Prefer tokens issued per session or task, limited to specific resources and operations, and expiring quickly. OAuth flows support delegated access with scopes; cloud providers support short-lived role credentials. Avoid long-lived API keys stored in agent configuration. Where an agent calls several systems, use token exchange or per-system tokens rather than one master credential, and bind tokens to their intended audience so they cannot be replayed elsewhere. The [[https://modelcontextprotocol.io/specification/latest|MCP specification]] adopts OAuth-based authorization for remote servers along these lines.",
+          "Prefer tokens issued per session or task, limited to specific resources and operations, and expiring quickly. OAuth flows support delegated access with scopes; cloud providers support short-lived role credentials. Avoid long-lived API keys stored in agent configuration. Where an agent calls several systems, use token exchange or per-system tokens rather than one master credential, and bind tokens to their intended audience so they cannot be replayed elsewhere. The MCP specification adopts OAuth-based authorization for remote servers along these lines.",
         ],
         cta: {
           title: "Connecting agents to business systems?",
@@ -444,7 +444,7 @@ export const aiOpsPosts6: BlogPost[] = [
       {
         heading: "Approval Boundaries and Separation of Duties",
         body: [
-          "Define which actions an agent may take alone, which need user confirmation and which need a separate approver. Typical approval triggers: irreversible actions, payments and refunds above thresholds, external communications, bulk changes, permission changes and access to highly sensitive data. Apply separation of duties as you would for people: an agent that creates a supplier record should not also be able to approve payments to it. Microsoft's [[https://learn.microsoft.com/en-us/agent-framework/agents/safety|agent safety guidance]] similarly recommends gating side-effecting, sensitive, irreversible and broad-impact tools behind approval.",
+          "Define which actions an agent may take alone, which need user confirmation and which need a separate approver. Typical approval triggers: irreversible actions, payments and refunds above thresholds, external communications, bulk changes, permission changes and access to highly sensitive data. Apply separation of duties as you would for people: an agent that creates a supplier record should not also be able to approve payments to it. Microsoft's agent safety guidance similarly recommends gating side-effecting, sensitive, irreversible and broad-impact tools behind approval.",
         ],
       },
       {
@@ -585,7 +585,7 @@ export const aiOpsPosts6: BlogPost[] = [
       {
         heading: "Validating Inputs",
         body: [
-          "Treat arguments as you would untrusted input to a public API. Validate types, formats, lengths and ranges against the schema; check identifiers against what the user may access; resolve file paths and confirm they stay inside allowed directories; use parameterized queries and never build SQL or shell commands by string concatenation; and re-check business rules such as refund limits in code. Microsoft's [[https://learn.microsoft.com/en-us/agent-framework/agents/safety|agent safety guidance]] makes the same recommendations, favouring allow-lists over trying to filter known-bad patterns.",
+          "Treat arguments as you would untrusted input to a public API. Validate types, formats, lengths and ranges against the schema; check identifiers against what the user may access; resolve file paths and confirm they stay inside allowed directories; use parameterized queries and never build SQL or shell commands by string concatenation; and re-check business rules such as refund limits in code. Microsoft's agent safety guidance makes the same recommendations, favouring allow-lists over trying to filter known-bad patterns.",
         ],
         cta: {
           title: "Giving an AI assistant real actions to take?",

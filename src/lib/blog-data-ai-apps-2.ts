@@ -100,7 +100,7 @@ export const aiAppsPosts2: BlogPost[] = [
         heading: "Tools and Integration",
         body: [
           "AI testing capabilities appear in IDE assistants and coding agents (drafting tests), test platforms (generating and maintaining UI tests), CI tools (failure analysis) and observability tools. Keep tests in your normal frameworks (for example Jest, Vitest, pytest, JUnit, Playwright, XCTest or Espresso) so they remain maintainable without the AI tool.",
-          "For browser tests, the [[https://playwright.dev/docs/best-practices|Playwright best practices]] on resilient locators apply equally to generated tests.",
+          "For browser tests, the Playwright best practices on resilient locators apply equally to generated tests.",
         ],
       },
       {
@@ -146,7 +146,7 @@ export const aiAppsPosts2: BlogPost[] = [
         body: [
           "Visual regression tools compare screenshots between builds, and AI-based comparison can ignore insignificant rendering differences while flagging layout breaks, overlapping elements and missing content. This reduces the false alarms that make pixel-diff testing painful. Review visual diffs before approving baselines, because an AI that learns to ignore differences can also ignore real regressions.",
           "Automated accessibility scanners find a portion of issues such as missing labels, low contrast and invalid ARIA. AI can extend this by describing likely screen reader experiences, suggesting alternative text and reviewing focus order in flows. It does not replace testing with assistive technology and people who use it. Treat AI findings as a triage list for accessibility specialists, not a compliance certificate.",
-          "The current reference standard is [[https://www.w3.org/TR/WCAG22/|WCAG 2.2]].",
+          "The current reference standard is WCAG 2.2.",
         ],
       },
       {
@@ -315,7 +315,7 @@ export const aiAppsPosts2: BlogPost[] = [
         heading: "Bisecting and Instrumentation",
         body: [
           "When a regression appeared at an unknown point, bisecting commits (for example with git bisect and a reproduction script) finds the change mechanically, and AI can write the script and interpret results. When there is no clear error, add targeted logging or tracing around the suspected path, gather data from several occurrences, then ask AI to compare successful and failing traces. Coding agents can run these loops for you in a sandbox; see [[/blogs/ai-coding-agents|AI coding agents]].",
-          "See the [[https://git-scm.com/docs/git-bisect|git bisect documentation]], including its run mode for automated bisection.",
+          "See the git bisect documentation, including its run mode for automated bisection.",
         ],
       },
       {
@@ -453,7 +453,7 @@ export const aiAppsPosts2: BlogPost[] = [
         heading: "Judging Test Strength",
         body: [
           "Line coverage says code ran, not that it was checked. Mutation testing tools change operators, constants and conditions and report which changes tests fail to catch; a low mutation score signals weak assertions. A cheaper check is to break the function deliberately and confirm tests fail. Use these on critical modules rather than everywhere.",
-          "Mutation testing tools such as [[https://stryker-mutator.io/|Stryker]] automate this check for JavaScript, C# and Scala.",
+          "Mutation testing tools such as Stryker automate this check for JavaScript, C# and Scala.",
         ],
       },
       {
@@ -498,7 +498,7 @@ export const aiAppsPosts2: BlogPost[] = [
         body: [
           "Example-based tests check specific inputs. Property-based tests check rules that should hold for many inputs, such as 'sorting twice gives the same result as sorting once' or 'a refund never exceeds the original payment'. AI is good at proposing properties from code and requirements, and property testing libraries then generate hundreds of inputs automatically.",
           "AI can also enumerate edge cases people forget: empty collections, maximum lengths, time zone boundaries, leap years, Unicode, concurrency and permissions. Ask for a list of edge cases first, review it, then generate tests for the ones that matter. This keeps you in control of what is tested rather than accepting whatever the model chose.",
-          "Libraries such as [[https://hypothesis.readthedocs.io/|Hypothesis]] for Python implement this approach.",
+          "Libraries such as Hypothesis for Python implement this approach.",
         ],
       },
       {
@@ -628,7 +628,7 @@ export const aiAppsPosts2: BlogPost[] = [
         heading: "API Documentation",
         body: [
           "Start from a machine-readable specification such as OpenAPI where possible; it drives reference docs, client generation and contract tests. AI can draft descriptions, examples and error explanations, and can help write a specification for an undocumented API by reading routes and handlers, but validate examples against real responses. See [[/blogs/rest-api-vs-graphql|REST vs GraphQL]] for API design context.",
-          "Generating reference docs from an [[https://spec.openapis.org/oas/latest.html|OpenAPI specification]] keeps them tied to the actual contract.",
+          "Generating reference docs from an OpenAPI specification keeps them tied to the actual contract.",
         ],
       },
       {
@@ -659,7 +659,7 @@ export const aiAppsPosts2: BlogPost[] = [
         heading: "An Example Decision Record",
         body: [
           "Decision records capture why, which code cannot. AI can draft them from discussion threads; the people who made the decision confirm them.",
-          "The format follows common [[https://adr.github.io/|architecture decision record]] practice.",
+          "The format follows common architecture decision record practice.",
         ],
         code: {
           label: "Example: architecture decision record (illustrative)",

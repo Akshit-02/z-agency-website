@@ -69,7 +69,7 @@ export const commercePosts53: BlogPost[] = [
       {
         heading: "Platform Events as a Foundation",
         body: [
-          "Many platforms expose standard storefront events. Shopify's customer events, for example, include page_viewed, collection_viewed, product_viewed, search_submitted, product_added_to_cart, cart_viewed, checkout_started, payment_info_submitted and checkout_completed, which pixels and apps can subscribe to ([[https://shopify.dev/docs/api/web-pixels-api/standard-events|Shopify developer docs]]). Google Analytics 4 defines recommended ecommerce events such as view_item, add_to_cart, begin_checkout, purchase and refund ([[https://developers.google.com/analytics/devguides/collection/ga4/ecommerce|Google Analytics documentation]]). Map platform events to your tracking plan rather than inventing names. See [[/blogs/ecommerce-event-tracking|ecommerce event tracking]].",
+          "Many platforms expose standard storefront events. Shopify's customer events, for example, include page_viewed, collection_viewed, product_viewed, search_submitted, product_added_to_cart, cart_viewed, checkout_started, payment_info_submitted and checkout_completed, which pixels and apps can subscribe to (Shopify developer docs). Google Analytics 4 defines recommended ecommerce events such as view_item, add_to_cart, begin_checkout, purchase and refund (Google Analytics documentation). Map platform events to your tracking plan rather than inventing names. See [[/blogs/ecommerce-event-tracking|ecommerce event tracking]].",
         ],
       },
       {
@@ -211,7 +211,7 @@ export const commercePosts53: BlogPost[] = [
       {
         heading: "Core Ecommerce Events",
         body: [
-          "Google Analytics 4 documents a set of recommended ecommerce events that many teams use as a naming standard even outside GA4 ([[https://developers.google.com/analytics/devguides/collection/ga4/ecommerce|Google Analytics documentation]]):",
+          "Google Analytics 4 documents a set of recommended ecommerce events that many teams use as a naming standard even outside GA4 (Google Analytics documentation):",
         ],
         table: {
           headers: ["Event", "When it fires", "Answers"],
@@ -269,7 +269,7 @@ export const commercePosts53: BlogPost[] = [
       {
         heading: "Platform Implementations",
         body: [
-          "Platforms provide event foundations. Shopify's customer events include page_viewed, product_viewed, collection_viewed, search_submitted, product_added_to_cart, product_removed_from_cart, cart_viewed, checkout_started, checkout_contact_info_submitted, checkout_address_info_submitted, checkout_shipping_info_submitted, payment_info_submitted and checkout_completed, available to apps and custom pixels ([[https://shopify.dev/docs/api/web-pixels-api/standard-events|Shopify developer docs]]). Map these to your analytics tool's names in your tracking plan and add custom events for discovery behaviour. See [[/blogs/shopify-analytics-guide|Shopify analytics]].",
+          "Platforms provide event foundations. Shopify's customer events include page_viewed, product_viewed, collection_viewed, search_submitted, product_added_to_cart, product_removed_from_cart, cart_viewed, checkout_started, checkout_contact_info_submitted, checkout_address_info_submitted, checkout_shipping_info_submitted, payment_info_submitted and checkout_completed, available to apps and custom pixels (Shopify developer docs). Map these to your analytics tool's names in your tracking plan and add custom events for discovery behaviour. See [[/blogs/shopify-analytics-guide|Shopify analytics]].",
         ],
       },
       {

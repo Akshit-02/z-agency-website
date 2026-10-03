@@ -348,7 +348,7 @@ export const commercePosts67: BlogPost[] = [
       {
         heading: "Step 4: Load in the Right Order",
         body: [
-          "Load into a staging or development store first. Order matters because records reference each other: products first, then customers, then orders. Shopify's migration guidance, for example, recommends importing products, then customers, then historical orders ([[https://help.shopify.com/en/manual/migrating-to-shopify|Shopify Help Center]]). Record old-to-new ID mappings as you load; you'll need them for orders, redirects and integrations.",
+          "Load into a staging or development store first. Order matters because records reference each other: products first, then customers, then orders. Shopify's migration guidance, for example, recommends importing products, then customers, then historical orders (Shopify Help Center). Record old-to-new ID mappings as you load; you'll need them for orders, redirects and integrations.",
         ],
       },
       {
@@ -495,7 +495,7 @@ export const commercePosts67: BlogPost[] = [
       {
         heading: "URL Mapping and Redirects",
         body: [
-          "Map old URLs to new ones one to one where possible: each product to its new product URL, each category to its new collection, each content page to its new page. For discontinued products, redirect to the closest alternative or category; don't send everything to the homepage. Google recommends permanent server-side redirects such as 301 and 308, avoiding redirect chains, and keeping redirects for as long as possible, generally at least one year ([[https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes|Google Search Central]]).",
+          "Map old URLs to new ones one to one where possible: each product to its new product URL, each category to its new collection, each content page to its new page. For discontinued products, redirect to the closest alternative or category; don't send everything to the homepage. Google recommends permanent server-side redirects such as 301 and 308, avoiding redirect chains, and keeping redirects for as long as possible, generally at least one year (Google Search Central).",
         ],
       },
       {
@@ -716,7 +716,7 @@ export const commercePosts67: BlogPost[] = [
       {
         heading: "Step 4: Remove Chains and Loops",
         body: [
-          "Stores that have migrated before often have old redirects. When new redirects are added on top, chains appear: A redirects to B, which now redirects to C. Flatten them so every old URL redirects directly to its final destination. Test for loops (A to B to A). Google recommends avoiding chains; they slow users and waste crawling ([[https://developers.google.com/search/docs/crawling-indexing/301-redirects|Google Search Central]]).",
+          "Stores that have migrated before often have old redirects. When new redirects are added on top, chains appear: A redirects to B, which now redirects to C. Flatten them so every old URL redirects directly to its final destination. Test for loops (A to B to A). Google recommends avoiding chains; they slow users and waste crawling (Google Search Central).",
         ],
         checklist: [
           "Import historical redirects into the mapping",

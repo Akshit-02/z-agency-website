@@ -99,7 +99,7 @@ export const commercePosts2: BlogPost[] = [
       {
         heading: "Pagination",
         body: [
-          "Google's guidance for paginated categories is to link each page to the next with normal links, give each page its own URL (such as ?page=2) and its own canonical, and not canonicalize every page to page one. Google no longer uses rel=next and rel=prev, and it doesn't follow URL fragments or “load more” buttons that only work with JavaScript, so infinite scroll needs crawlable page links behind it ([[https://developers.google.com/search/docs/specialty/ecommerce/pagination-and-incremental-page-loading|Google Search Central]]).",
+          "Google's guidance for paginated categories is to link each page to the next with normal links, give each page its own URL (such as ?page=2) and its own canonical, and not canonicalize every page to page one. Google no longer uses rel=next and rel=prev, and it doesn't follow URL fragments or “load more” buttons that only work with JavaScript, so infinite scroll needs crawlable page links behind it (Google Search Central).",
         ],
       },
       {
@@ -123,7 +123,7 @@ export const commercePosts2: BlogPost[] = [
       {
         heading: "Out-of-Stock and Discontinued Products",
         body: [
-          "Inventory changes are where stores lose rankings unnecessarily. Google recommends keeping temporarily unavailable products live, clearly marked as out of stock, with structured data updated to match, rather than returning an error or adding noindex ([[https://developers.google.com/search/docs/crawling-indexing/pause-online-business|Google Search Central]]).",
+          "Inventory changes are where stores lose rankings unnecessarily. Google recommends keeping temporarily unavailable products live, clearly marked as out of stock, with structured data updated to match, rather than returning an error or adding noindex (Google Search Central).",
         ],
         table: {
           headers: ["Situation", "Recommended handling"],
@@ -138,7 +138,7 @@ export const commercePosts2: BlogPost[] = [
       {
         heading: "Structured Data and Merchant Listings",
         body: [
-          "Product structured data tells Google a page's product name, images, price, currency, availability, reviews, shipping and returns. Merchant listing experiences are only for pages where shoppers can buy the product. Google notes that providing both structured data and a Merchant Center feed maximizes eligibility ([[https://developers.google.com/search/docs/appearance/structured-data/product|Google Search Central]]). Mark up only what the page visibly shows. See [[/blogs/product-structured-data-ecommerce|product structured data]].",
+          "Product structured data tells Google a page's product name, images, price, currency, availability, reviews, shipping and returns. Merchant listing experiences are only for pages where shoppers can buy the product. Google notes that providing both structured data and a Merchant Center feed maximizes eligibility (Google Search Central). Mark up only what the page visibly shows. See [[/blogs/product-structured-data-ecommerce|product structured data]].",
         ],
         cta: {
           title: "Is your store's structure holding back its rankings?",
@@ -172,7 +172,7 @@ export const commercePosts2: BlogPost[] = [
       {
         heading: "AI Search and Answer Engines",
         body: [
-          "Google states there are no additional requirements, special optimizations, AI text files or special schema needed to appear in AI Overviews or AI Mode; standard SEO fundamentals apply ([[https://developers.google.com/search/docs/appearance/ai-features|Google Search Central]]). For stores, that means crawlable pages, accurate and specific product information, clear answers to shopping questions, and consistent data across the site and product feeds. Other AI assistants also rely on content they can crawl and understand.",
+          "Google states there are no additional requirements, special optimizations, AI text files or special schema needed to appear in AI Overviews or AI Mode; standard SEO fundamentals apply (Google Search Central). For stores, that means crawlable pages, accurate and specific product information, clear answers to shopping questions, and consistent data across the site and product feeds. Other AI assistants also rely on content they can crawl and understand.",
         ],
       },
       {
@@ -274,7 +274,7 @@ export const commercePosts2: BlogPost[] = [
       {
         heading: "Search Engine Listing: Title Tag, Meta Description and Handle",
         body: [
-          "Each product has a search engine listing section in the admin where you can set the page title, meta description and URL handle. Shopify's field accepts titles up to 70 characters and recommends about 160 characters for descriptions ([[https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords|Shopify Help Center]]).",
+          "Each product has a search engine listing section in the admin where you can set the page title, meta description and URL handle. Shopify's field accepts titles up to 70 characters and recommends about 160 characters for descriptions (Shopify Help Center).",
         ],
         checklist: [
           "Title tag: product type, key attribute, brand; unique per product",
@@ -294,7 +294,7 @@ export const commercePosts2: BlogPost[] = [
         heading: "Variants and URLs",
         body: [
           "Shopify variants share the product URL; selecting one usually adds a ?variant= parameter, and the canonical points to the main product URL. That's the right default: one strong page instead of many weak ones.",
-          "Split variants into separate products only when a variant has its own search demand and meaningfully different content, such as a colour people search by name. On Shopify Plus, the Combined Listings app can present separate products as one listing, with each child keeping its own title, description, URL and images ([[https://help.shopify.com/en/manual/products/combined-listings-app|Shopify Help Center]]). Without it, separate products need clear cross-links so shoppers can move between colours.",
+          "Split variants into separate products only when a variant has its own search demand and meaningfully different content, such as a colour people search by name. On Shopify Plus, the Combined Listings app can present separate products as one listing, with each child keeping its own title, description, URL and images (Shopify Help Center). Without it, separate products need clear cross-links so shoppers can move between colours.",
         ],
         table: {
           headers: ["Approach", "Use when", "SEO effect"],
@@ -314,7 +314,7 @@ export const commercePosts2: BlogPost[] = [
       {
         heading: "Structured Data",
         body: [
-          "Shopify states that its themes automatically include schema markup for products ([[https://help.shopify.com/en/manual/promoting-marketing/seo/seo-overview|Shopify Help Center]]). What's output varies by theme, so check a product page with Google's Rich Results Test. Common issues are missing brand, GTIN or shipping and return details, and duplicate Product blocks when a reviews or SEO app adds its own. Keep one complete block that matches what the page shows. See [[/blogs/product-structured-data-ecommerce|product structured data for ecommerce]].",
+          "Shopify states that its themes automatically include schema markup for products (Shopify Help Center). What's output varies by theme, so check a product page with Google's Rich Results Test. Common issues are missing brand, GTIN or shipping and return details, and duplicate Product blocks when a reviews or SEO app adds its own. Keep one complete block that matches what the page shows. See [[/blogs/product-structured-data-ecommerce|product structured data for ecommerce]].",
         ],
         cta: {
           title: "Product pages not showing up for the searches they should?",
@@ -470,7 +470,7 @@ export const commercePosts2: BlogPost[] = [
       {
         heading: "Pagination",
         body: [
-          "Large categories need pagination, “load more” or infinite scroll for shoppers. For search engines, Google recommends linking each page to the next with <a href> links, giving each page a unique URL such as ?page=2 and its own canonical, and not canonicalizing all pages to the first. Infinite scroll and “load more” need crawlable paginated URLs behind them ([[https://developers.google.com/search/docs/specialty/ecommerce/pagination-and-incremental-page-loading|Google Search Central]]).",
+          "Large categories need pagination, “load more” or infinite scroll for shoppers. For search engines, Google recommends linking each page to the next with <a href> links, giving each page a unique URL such as ?page=2 and its own canonical, and not canonicalizing all pages to the first. Infinite scroll and “load more” need crawlable paginated URLs behind them (Google Search Central).",
         ],
       },
       {
@@ -619,7 +619,7 @@ export const commercePosts2: BlogPost[] = [
       {
         heading: "Shopify URL Patterns and What Gets Crawled",
         body: [
-          "Collections produce several URL patterns. Shopify's default robots.txt handles some of them ([[https://help.shopify.com/en/manual/promoting-marketing/seo/editing-robots-txt|Shopify Help Center]]). The diagram above summarizes them.",
+          "Collections produce several URL patterns. Shopify's default robots.txt handles some of them (Shopify Help Center). The diagram above summarizes them.",
         ],
         table: {
           headers: ["URL", "Default treatment", "What to do"],

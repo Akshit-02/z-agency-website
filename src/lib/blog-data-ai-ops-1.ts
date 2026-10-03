@@ -106,21 +106,21 @@ export const aiOpsPosts1: BlogPost[] = [
       {
         heading: "Observability, Cost and Reliability",
         body: [
-          "Production visibility needs traces that show each step of a request (retrieval, model calls, tool calls, validation) with inputs, outputs, tokens, latency and versions. Metrics track error rates, latency percentiles, cost per request and per feature, and quality signals such as sampled evaluation scores and user feedback. The OpenTelemetry [[https://opentelemetry.io/docs/specs/semconv/gen-ai/|generative AI semantic conventions]] give these attributes a standard shape.",
+          "Production visibility needs traces that show each step of a request (retrieval, model calls, tool calls, validation) with inputs, outputs, tokens, latency and versions. Metrics track error rates, latency percentiles, cost per request and per feature, and quality signals such as sampled evaluation scores and user feedback. The OpenTelemetry generative AI semantic conventions give these attributes a standard shape.",
           "Reliability work handles provider outages, rate limits, timeouts and malformed outputs with retries, fallbacks and graceful degradation; see [[/blogs/llm-application-reliability|LLM application reliability]]. Cost controls such as routing, caching and budgets are in [[/blogs/llm-cost-optimization|LLM cost optimization]].",
         ],
       },
       {
         heading: "Security and Governance",
         body: [
-          "LLMOps includes security controls that ordinary applications lack: defences against prompt injection, permission checks outside the model, output validation before rendering or execution, redaction of sensitive data in logs, and limits on tool use. The [[https://genai.owasp.org/llm-top-10/|OWASP Top 10 for LLM Applications]] is a practical checklist.",
+          "LLMOps includes security controls that ordinary applications lack: defences against prompt injection, permission checks outside the model, output validation before rendering or execution, redaction of sensitive data in logs, and limits on tool use. The OWASP Top 10 for LLM Applications is a practical checklist.",
           "Governance connects operations to accountability: an inventory of AI features, owners, risk tiers, approval for high-risk changes and records of evaluation results. See [[/blogs/ai-governance-framework|AI governance framework]] and [[/blogs/ai-security-business-applications|AI security for business applications]].",
         ],
       },
       {
         heading: "Who Owns What",
         body: [
-          "A useful split: product teams own their prompts, evaluation sets and quality targets; a platform team owns shared infrastructure such as the model gateway, tracing, evaluation runners and deployment pipelines; security and governance teams set policy and review high-risk systems. The CNCF discusses this ownership question in [[https://www.cncf.io/blog/2026/08/13/llmops-and-platform-engineering-who-should-own-the-ai-pipeline/|LLMOps and platform engineering]], arguing that clarity about who owns each layer matters more than which team name is used. Platform design is covered in [[/blogs/ai-platform-engineering|AI platform engineering]].",
+          "A useful split: product teams own their prompts, evaluation sets and quality targets; a platform team owns shared infrastructure such as the model gateway, tracing, evaluation runners and deployment pipelines; security and governance teams set policy and review high-risk systems. The CNCF discusses this ownership question in LLMOps and platform engineering, arguing that clarity about who owns each layer matters more than which team name is used. Platform design is covered in [[/blogs/ai-platform-engineering|AI platform engineering]].",
         ],
       },
       {
@@ -173,7 +173,7 @@ export const aiOpsPosts1: BlogPost[] = [
         heading: "Choosing LLMOps Tooling",
         body: [
           "The LLMOps tooling market changes quickly, so choose by capability and fit rather than brand. Most teams need five capabilities: versioned configuration for prompts and model settings, an evaluation runner that works in CI, tracing with token and cost data, a gateway for model access and limits, and a place to review production samples and feedback. Some platforms bundle several of these; others do one thing well.",
-          "Evaluate candidates on your own application: how easily they instrument your stack, whether they support OpenTelemetry so data stays portable, where trace data is stored and whether self-hosting is possible for sensitive content, how they handle evaluation datasets and judges, and pricing at your expected trace volume. Prefer tools that let you export data, because you may change tools as needs grow. Microsoft's [[https://learn.microsoft.com/en-us/ai/playbook/technology-guidance/generative-ai/mlops-in-openai/|LLMOps guidance]] is a useful vendor-neutral checklist of lifecycle stages to cover.",
+          "Evaluate candidates on your own application: how easily they instrument your stack, whether they support OpenTelemetry so data stays portable, where trace data is stored and whether self-hosting is possible for sensitive content, how they handle evaluation datasets and judges, and pricing at your expected trace volume. Prefer tools that let you export data, because you may change tools as needs grow. Microsoft's LLMOps guidance is a useful vendor-neutral checklist of lifecycle stages to cover.",
         ],
       },
       {
@@ -266,7 +266,7 @@ export const aiOpsPosts1: BlogPost[] = [
         heading: "Where They Overlap",
         body: [
           "Both disciplines rest on the same engineering principles: everything that affects behaviour is versioned, every change is tested automatically before release, deployment is staged and reversible, and production behaviour is measured. Both need reproducibility, meaning that you can tell exactly which data, code and configuration produced a result. Both need governance for higher-risk uses.",
-          "Many tools now span both. MLflow, for example, has added [[https://mlflow.org/docs/latest/genai/|generative AI features]] such as tracing and evaluation alongside its classical experiment tracking and model registry. Kubernetes-based serving platforms such as [[https://kserve.github.io/website/|KServe]] host both traditional models and language models.",
+          "Many tools now span both. MLflow, for example, has added generative AI features such as tracing and evaluation alongside its classical experiment tracking and model registry. Kubernetes-based serving platforms such as KServe host both traditional models and language models.",
         ],
       },
       {
@@ -345,7 +345,7 @@ export const aiOpsPosts1: BlogPost[] = [
         heading: "Tooling Overlap and Choices",
         body: [
           "Tool categories map partially across the two practices. Experiment tracking and model registries are central to MLOps and matter in LLMOps mainly when you fine-tune. Prompt management, LLM gateways and LLM-specific tracing are new categories. Evaluation tooling exists in both but looks different: metric computation on labelled data versus rubric scoring and judge calibration. Orchestration, CI/CD, infrastructure as code and general observability are shared.",
-          "Rather than buying separate stacks, look for a common platform layer (CI, deployment, observability, secrets, governance) with specialized components on top. The CNCF's discussion of [[https://www.cncf.io/blog/2026/08/13/llmops-and-platform-engineering-who-should-own-the-ai-pipeline/|LLMOps and platform engineering]] makes the case for clarifying which team owns each layer; see also [[/blogs/ai-platform-engineering|AI platform engineering]].",
+          "Rather than buying separate stacks, look for a common platform layer (CI, deployment, observability, secrets, governance) with specialized components on top. The CNCF's discussion of LLMOps and platform engineering makes the case for clarifying which team owns each layer; see also [[/blogs/ai-platform-engineering|AI platform engineering]].",
         ],
       },
       {
@@ -655,7 +655,7 @@ export const aiOpsPosts1: BlogPost[] = [
       {
         heading: "Automated Judges and Human Review",
         body: [
-          "LLM judges make open-ended scoring scalable, but they need explicit rubrics, examples of each score level and validation against human labels on a sample before you trust them. Research such as [[https://arxiv.org/abs/2306.05685|Judging LLM-as-a-Judge]] documents biases toward position and length, so randomize order in comparisons and check calibration when you change the judge model.",
+          "LLM judges make open-ended scoring scalable, but they need explicit rubrics, examples of each score level and validation against human labels on a sample before you trust them. Research such as Judging LLM-as-a-Judge documents biases toward position and length, so randomize order in comparisons and check calibration when you change the judge model.",
           "Human review remains the reference. Use domain experts with clear rubrics, blind them to which version produced each output and measure their agreement. Reserve human time for threshold setting, judge calibration, high-risk changes and failures the automated checks flag.",
         ],
         cta: {
@@ -667,7 +667,7 @@ export const aiOpsPosts1: BlogPost[] = [
         heading: "Integrating With CI and Releases",
         body: [
           "Run a fast, representative subset on every pull request that changes prompts, retrieval, tools or model settings, and fail the build when critical checks fail. Run the full suite before releases, on model or provider version changes and on a schedule to detect silent changes in hosted models.",
-          "Store every run's results with the dataset version, application version and configuration, so you can see trends and explain decisions later. Cloud providers document similar approaches, for example Microsoft's guidance on [[https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-approach-gen-ai|evaluating generative AI applications]].",
+          "Store every run's results with the dataset version, application version and configuration, so you can see trends and explain decisions later. Cloud providers document similar approaches, for example Microsoft's guidance on evaluating generative AI applications.",
         ],
       },
       {

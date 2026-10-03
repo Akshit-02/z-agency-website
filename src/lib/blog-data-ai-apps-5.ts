@@ -151,7 +151,7 @@ export const aiAppsPosts5: BlogPost[] = [
         body: [
           "Travel creates many claim types beyond receipts: mileage, per diems, foreign currency and booking platform charges. AI can calculate mileage from trip details using approved rates, apply per diems by location and dates, convert currencies at the policy rate and match bookings to claims, so employees are not asked for information the company already holds.",
           "Rates and tax treatment differ by country and change periodically, so keep them in configuration maintained by finance rather than relying on a model's knowledge. Accounting integration and tax data handling sit alongside [[/blogs/ai-agents-in-finance-operations|AI in finance operations]].",
-          "For example, the US IRS publishes [[https://www.irs.gov/tax-professionals/standard-mileage-rates|standard mileage rates]] that change periodically.",
+          "For example, the US IRS publishes standard mileage rates that change periodically.",
         ],
       },
       {
@@ -253,7 +253,7 @@ export const aiAppsPosts5: BlogPost[] = [
         heading: "Mapping Obligations to Controls",
         body: [
           "Organizations often face overlapping requirements from several frameworks and regulations. AI can extract requirements from source documents, suggest mappings to existing controls, identify overlaps (one control satisfying several requirements) and highlight requirements with no control. Compliance professionals confirm each mapping; the confirmed map becomes the backbone for evidence collection.",
-          "Frameworks such as the [[https://www.nist.gov/cyberframework|NIST Cybersecurity Framework]] are common starting points for control libraries.",
+          "Frameworks such as the NIST Cybersecurity Framework are common starting points for control libraries.",
         ],
       },
       {
@@ -473,7 +473,7 @@ export const aiAppsPosts5: BlogPost[] = [
         heading: "Firm Policy and Supervision",
         body: [
           "A written AI policy should cover approved tools, permitted uses, prohibited uses, verification requirements, confidentiality, client communication, billing and training. Supervising lawyers remain responsible for AI-assisted work by their teams, as they would for work delegated to junior staff. Revisit the policy as regulators update guidance.",
-          "See the ABA's announcement of [[https://www.americanbar.org/news/abanews/aba-news-archives/2024/07/aba-issues-first-ethics-guidance-ai-tools/|Formal Opinion 512]] on lawyers' use of generative AI tools.",
+          "See the ABA's announcement of Formal Opinion 512 on lawyers' use of generative AI tools.",
         ],
       },
       {
@@ -707,7 +707,7 @@ export const aiAppsPosts5: BlogPost[] = [
         body: [
           "SIM swaps and fraudulent number ports give attackers access to one-time passcodes and accounts. Any AI involvement in these processes, from customer care assistants to back-office automation, must not weaken verification. Assistants should never complete SIM swaps or ports based on conversational verification alone.",
           "Use AI on the defensive side: flagging unusual patterns such as port requests shortly after account changes, or swaps requested from new channels, and routing them for enhanced checks. Follow your regulator's requirements for authentication and customer notification. Security principles are in [[/blogs/ai-security-business-applications|AI security for business applications]].",
-          "NIST [[https://pages.nist.gov/800-63-4/sp800-63b.html|SP 800-63B]] explains why SMS-based authentication is treated as a restricted authenticator.",
+          "NIST SP 800-63B explains why SMS-based authentication is treated as a restricted authenticator.",
         ],
       },
       {

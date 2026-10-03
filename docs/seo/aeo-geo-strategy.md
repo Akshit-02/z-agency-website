@@ -31,7 +31,7 @@ A single, consistent description is now used in the Organization schema, About p
 ## GEO practices in place
 
 - Consistent naming and descriptions across pages, schema and llms.txt.
-- Claims backed by citations to official documentation (323 unique external references across articles, all checked); illustrative examples labelled as such; no invented statistics, testimonials or case studies.
+- Claims attributed to named sources (official documentation and research, cited by name in plain text; outbound links were removed site-wide on 2026-10-03 at the owner's request); illustrative examples labelled as such; no invented statistics, testimonials or case studies.
 - Topical depth organised as hubs → pillars → supporting articles, so models retrieving one page find connected context.
 - Dates are now truthful (publication dates corrected; `updated` set when content changes), which matters for freshness signals.
 - `llms.txt` updated: www URLs, entity block, refined service descriptions, topic hubs, previous name noted. It is a convenience for AI systems, not a ranking factor, and does not replace crawlable HTML.

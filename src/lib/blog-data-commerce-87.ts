@@ -433,7 +433,7 @@ export const commercePosts87: BlogPost[] = [
         heading: "Payment Options",
         body: [
           "Payment timing is the biggest design decision. Full payment upfront is simplest and secures commitment, but it means holding customer money for a period and refunding if plans change. A deposit with balance later suits high-value or long-lead items. Saving the payment method with consent and charging at shipment is customer-friendly but risks failed payments when you finally charge.",
-          "Card authorizations are not a good fit for long waits: [[https://docs.stripe.com/payments/place-a-hold-on-a-payment-method|holds on online card payments]] typically expire within days, varying by network and transaction type. Shopify supports deferred payment through [[https://shopify.dev/docs/apps/build/purchase-options/deferred|deferred purchase options]] used by pre-order apps.",
+          "Card authorizations are not a good fit for long waits: holds on online card payments typically expire within days, varying by network and transaction type. Shopify supports deferred payment through deferred purchase options used by pre-order apps.",
         ],
         table: {
           headers: ["Option", "Pros", "Cons"],

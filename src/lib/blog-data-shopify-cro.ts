@@ -317,7 +317,7 @@ export const shopifyCroPosts: BlogPost[] = [
       {
         heading: "What You Can Customize on Each Plan",
         body: [
-          "Plan limits decide what's realistic, so check them before planning checkout work. The table summarizes Shopify's documentation on [[https://help.shopify.com/en/manual/checkout-settings/customize-checkout-configurations/checkout-apps|checkout apps]] and [[https://shopify.dev/docs/apps/build/functions|Shopify Functions]]; plan features change, so confirm current details for your store.",
+          "Plan limits decide what's realistic, so check them before planning checkout work. The table summarizes Shopify's documentation on checkout apps and Shopify Functions; plan features change, so confirm current details for your store.",
         ],
         table: {
           headers: ["Capability", "Basic and higher", "Shopify Plus"],
@@ -336,13 +336,13 @@ export const shopifyCroPosts: BlogPost[] = [
       {
         heading: "Where Shopify Checkout Loses Shoppers",
         body: [
-          "Baymard Institute's [[https://baymard.com/lists/cart-abandonment-rate|abandonment research]] asked US online shoppers who abandoned during checkout why they left, excluding those just browsing. Extra costs being too high was the most common reason (40%), followed by slow delivery (20%), not trusting the site with card details (19%), being required to create an account (18%), a long or complicated checkout (17%) and site errors (17%). Most of these are decided before or around checkout rather than by its layout, which is why so much checkout optimization happens on the product page and in the cart.",
+          "Baymard Institute's abandonment research asked US online shoppers who abandoned during checkout why they left, excluding those just browsing. Extra costs being too high was the most common reason (40%), followed by slow delivery (20%), not trusting the site with card details (19%), being required to create an account (18%), a long or complicated checkout (17%) and site errors (17%). Most of these are decided before or around checkout rather than by its layout, which is why so much checkout optimization happens on the product page and in the cart.",
         ],
       },
       {
         heading: "Payment Methods and Accelerated Checkout",
         body: [
-          "Offer the payment methods your customers actually use in each market. Shopify's [[https://help.shopify.com/en/manual/payments/accelerated-checkouts|accelerated checkouts]] include Shop Pay, Apple Pay, Google Pay, Amazon Pay and PayPal, using saved details so returning customers can pay quickly. Their buttons can appear on product pages, where they let customers go straight to checkout, and in an express section at the start of checkout. Shopify's own documentation notes that hiding accelerated options may hurt conversion.",
+          "Offer the payment methods your customers actually use in each market. Shopify's accelerated checkouts include Shop Pay, Apple Pay, Google Pay, Amazon Pay and PayPal, using saved details so returning customers can pay quickly. Their buttons can appear on product pages, where they let customers go straight to checkout, and in an express section at the start of checkout. Shopify's own documentation notes that hiding accelerated options may hurt conversion.",
           "Check which methods are enabled for each market, whether local methods matter to your customers, and how wallet buttons appear on mobile, where they save the most typing.",
         ],
       },
@@ -401,7 +401,7 @@ export const shopifyCroPosts: BlogPost[] = [
       {
         heading: "Testing Checkout Changes",
         body: [
-          "Checkout changes affect revenue immediately, so validate them. Shopify's changelog describes [[https://changelog.shopify.com/posts/schedule-publish-and-a-b-test-new-themes-and-checkout-and-customer-account-configurations|Rollouts]], which can schedule configuration changes and A/B test theme or checkout configurations from Markets > Rollouts in the admin; check your plan's availability in the Shopify Help Center. Without a formal test, compare against a stable baseline and watch errors and support contacts closely after release. See [[/blogs/ecommerce-ab-testing|ecommerce A/B testing]].",
+          "Checkout changes affect revenue immediately, so validate them. Shopify's changelog describes Rollouts, which can schedule configuration changes and A/B test theme or checkout configurations from Markets > Rollouts in the admin; check your plan's availability in the Shopify Help Center. Without a formal test, compare against a stable baseline and watch errors and support contacts closely after release. See [[/blogs/ecommerce-ab-testing|ecommerce A/B testing]].",
         ],
       },
       {

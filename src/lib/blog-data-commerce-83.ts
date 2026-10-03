@@ -73,7 +73,7 @@ export const commercePosts83: BlogPost[] = [
       {
         heading: "What Determines the Amount?",
         body: [
-          "Import charges depend on product data most stores do not hold by default. Classification uses the [[https://www.wcoomd.org/en/topics/nomenclature/overview/what-is-the-harmonized-system.aspx|Harmonized System]], where the first six digits are shared internationally and each country extends the code for its own tariff schedule.",
+          "Import charges depend on product data most stores do not hold by default. Classification uses the Harmonized System, where the first six digits are shared internationally and each country extends the code for its own tariff schedule.",
         ],
         table: {
           headers: ["Input", "What it means", "Where the data lives"],
@@ -90,7 +90,7 @@ export const commercePosts83: BlogPost[] = [
       {
         heading: "DDP vs DAP: Who Pays and When?",
         body: [
-          "The terms come from the [[https://iccwbo.org/business-solutions/incoterms-rules/|ICC Incoterms rules]], which define delivery responsibilities in trade contracts. Consumer ecommerce borrows them as shorthand. DDU, still common in carrier conversations, was retired from Incoterms in 2010 and replaced by DAP.",
+          "The terms come from the ICC Incoterms rules, which define delivery responsibilities in trade contracts. Consumer ecommerce borrows them as shorthand. DDU, still common in carrier conversations, was retired from Incoterms in 2010 and replaced by DAP.",
           "**DDP (delivered duty paid):** the seller, or a service acting for the seller, pays import charges. The customer sees one total at checkout and nothing at the door. The store needs a reliable landed cost quote and a carrier or broker set up to bill duties to the shipper.",
           "**DAP (delivered at place):** the customer pays import charges on arrival, usually to the carrier before release. Checkout is simpler for the store, but the customer meets an unexpected bill plus a carrier fee, and some refuse the parcel. Refused parcels mean return shipping, write-offs and support time.",
         ],
@@ -106,10 +106,10 @@ export const commercePosts83: BlogPost[] = [
           "Many cross-border stores were built around low-value exemptions that let small parcels enter without duty. Those exemptions are being removed or reshaped, which is why a duty strategy that worked two years ago may now produce surprise charges. As of October 2026:",
         ],
         checklist: [
-          "**United States:** [[https://www.cbp.gov/trade/basic-import-export/e-commerce|CBP]] suspended duty-free de minimis treatment for low-value shipments from all countries from 29 August 2025, and the exemption is eliminated by statute from 1 July 2027. Low-value parcels now need formal or informal entry and duty payment.",
-          "**European Union:** the €150 customs duty exemption ended on 1 July 2026, replaced by a transitional flat duty per item on low-value consignments. Import VAT on consignments up to €150 can be collected at checkout through the [[https://vat-one-stop-shop.ec.europa.eu/|Import One-Stop Shop (IOSS)]].",
-          "**United Kingdom:** for consignments of £135 or less, the seller or marketplace charges [[https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk|UK VAT at the point of sale]]. The government has announced that customs duty relief on low-value imports will end, so expect changes here too.",
-          "**Australia:** registered overseas sellers and marketplaces collect [[https://www.ato.gov.au/businesses-and-organisations/international-tax-for-business/gst-for-non-resident-businesses/gst-on-low-value-imported-goods|GST on low-value imported goods]] of A$1,000 or less at checkout; higher-value consignments are taxed at the border.",
+          "**United States:** CBP suspended duty-free de minimis treatment for low-value shipments from all countries from 29 August 2025, and the exemption is eliminated by statute from 1 July 2027. Low-value parcels now need formal or informal entry and duty payment.",
+          "**European Union:** the €150 customs duty exemption ended on 1 July 2026, replaced by a transitional flat duty per item on low-value consignments. Import VAT on consignments up to €150 can be collected at checkout through the Import One-Stop Shop (IOSS).",
+          "**United Kingdom:** for consignments of £135 or less, the seller or marketplace charges UK VAT at the point of sale. The government has announced that customs duty relief on low-value imports will end, so expect changes here too.",
+          "**Australia:** registered overseas sellers and marketplaces collect GST on low-value imported goods of A$1,000 or less at checkout; higher-value consignments are taxed at the border.",
         ],
         callout: {
           type: "note",
@@ -127,7 +127,7 @@ export const commercePosts83: BlogPost[] = [
       {
         heading: "How Should a Store Explain Import Charges to Shoppers?",
         body: [
-          "[[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute's checkout research]] consistently finds that extra costs revealed late are a leading reason shoppers abandon checkout. Import charges are the most surprising extra cost of all, because many shoppers do not know they exist. Explain them early and in plain words.",
+          "Baymard Institute's checkout research consistently finds that extra costs revealed late are a leading reason shoppers abandon checkout. Import charges are the most surprising extra cost of all, because many shoppers do not know they exist. Explain them early and in plain words.",
         ],
         checklist: [
           "**Product page:** a short line such as 'Duties and taxes included for delivery to Canada' or 'Import charges may apply on delivery', driven by the shopper's market",
@@ -350,7 +350,7 @@ export const commercePosts83: BlogPost[] = [
       {
         heading: "Merchant of Record on Shopify",
         body: [
-          "[[https://help.shopify.com/en/manual/international/managed-markets/overview|Shopify Managed Markets]] uses Global-e as the merchant of record for eligible cross-border orders, handling duties, tax remittance, commercial invoices and local payment methods. According to Shopify's documentation it requires Shopify Payments and is available to eligible businesses in a limited set of countries, so check current eligibility before planning around it. Brands can also integrate third-party MoR or cross-border providers directly. For the non-MoR route, see [[/blogs/shopify-markets|Shopify Markets]].",
+          "Shopify Managed Markets uses Global-e as the merchant of record for eligible cross-border orders, handling duties, tax remittance, commercial invoices and local payment methods. According to Shopify's documentation it requires Shopify Payments and is available to eligible businesses in a limited set of countries, so check current eligibility before planning around it. Brands can also integrate third-party MoR or cross-border providers directly. For the non-MoR route, see [[/blogs/shopify-markets|Shopify Markets]].",
         ],
       },
       {
@@ -517,7 +517,7 @@ export const commercePosts83: BlogPost[] = [
           "Matching decides whether a new submission is an existing product or a new one. Get it wrong one way and buyers see five copies of the same item; get it wrong the other way and two different products merge, with one seller's offer attached to the wrong item.",
         ],
         checklist: [
-          "**Global identifiers first:** [[https://www.gs1.org/standards/id-keys/gtin|GTINs]] (UPC, EAN, ISBN) are the strongest signal, after validating check digits and checking they belong to the stated brand",
+          "**Global identifiers first:** GTINs (UPC, EAN, ISBN) are the strongest signal, after validating check digits and checking they belong to the stated brand",
           "**Brand plus manufacturer part number:** strong for goods without GTINs, after normalizing formatting",
           "**Normalized title and key attributes:** useful as a supporting signal, weak on its own",
           "**Image and text similarity:** helpful for catching duplicates without identifiers",
@@ -705,8 +705,8 @@ export const commercePosts83: BlogPost[] = [
       {
         heading: "Seller Verification and Regulatory Duties",
         body: [
-          "Verification is both a safety control and, increasingly, a legal requirement. Under [[https://eur-lex.europa.eu/eli/reg/2022/2065/oj|Article 30 of the EU Digital Services Act]], online marketplaces must obtain traders' contact details, identification, payment account details, trade register details where applicable, and a self-certification that they will only offer compliant products, and make best efforts to assess whether the information is reliable before the trader can sell. The DSA's obligations for platforms have applied since 17 February 2024.",
-          "In the US, the [[https://www.ftc.gov/business-guidance/resources/what-third-party-sellers-need-know-about-inform-consumers-act|INFORM Consumers Act]] requires online marketplaces to collect and verify bank account, tax ID and contact information from high-volume third-party sellers (200 or more sales and $5,000 or more in revenue in a 12-month period), to recertify it annually and, for larger sellers, to disclose certain information to buyers.",
+          "Verification is both a safety control and, increasingly, a legal requirement. Under Article 30 of the EU Digital Services Act, online marketplaces must obtain traders' contact details, identification, payment account details, trade register details where applicable, and a self-certification that they will only offer compliant products, and make best efforts to assess whether the information is reliable before the trader can sell. The DSA's obligations for platforms have applied since 17 February 2024.",
+          "In the US, the INFORM Consumers Act requires online marketplaces to collect and verify bank account, tax ID and contact information from high-volume third-party sellers (200 or more sales and $5,000 or more in revenue in a 12-month period), to recertify it annually and, for larger sellers, to disclose certain information to buyers.",
           "Build verification as a workflow with states (submitted, verifying, verified, needs information, rejected) rather than a one-time form, because both regimes require keeping information current. Identity and business verification providers can automate much of this, with manual review for exceptions.",
         ],
       },

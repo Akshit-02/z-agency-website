@@ -95,7 +95,7 @@ export const aiOpsPosts5: BlogPost[] = [
       {
         heading: "Capturing Lineage Automatically",
         body: [
-          "Manual lineage documentation goes stale quickly. Capture it from the systems that move data. [[https://openlineage.io/|OpenLineage]] defines a standard event format for jobs, runs and datasets, with integrations for common orchestrators and processing engines; lineage services and data catalogs store and visualize the graph. For AI-specific artefacts, write source IDs and versions into chunk metadata, record embedding model versions and log retrieved chunk IDs on every answer trace.",
+          "Manual lineage documentation goes stale quickly. Capture it from the systems that move data. OpenLineage defines a standard event format for jobs, runs and datasets, with integrations for common orchestrators and processing engines; lineage services and data catalogs store and visualize the graph. For AI-specific artefacts, write source IDs and versions into chunk metadata, record embedding model versions and log retrieved chunk IDs on every answer trace.",
         ],
       },
       {
@@ -249,13 +249,13 @@ export const aiOpsPosts5: BlogPost[] = [
       {
         heading: "Event Streams and Ingestion",
         body: [
-          "Event streaming platforms such as [[https://kafka.apache.org/documentation/|Apache Kafka]] store ordered, replayable logs of events partitioned by key. Sources publish events directly, or change data capture tools publish database changes. Define event schemas, register them and evolve them compatibly so consumers do not break. Key events by entity, such as customer or document ID, to keep per-entity ordering.",
+          "Event streaming platforms such as Apache Kafka store ordered, replayable logs of events partitioned by key. Sources publish events directly, or change data capture tools publish database changes. Define event schemas, register them and evolve them compatibly so consumers do not break. Key events by entity, such as customer or document ID, to keep per-entity ordering.",
         ],
       },
       {
         heading: "Processing, State and Windows",
         body: [
-          "Stream processors such as [[https://flink.apache.org/|Apache Flink]] compute results continuously: filtering, enrichment, joins and aggregations over time windows. Stateful processing lets you maintain counts, averages or sessions per key, which is how real-time features like transactions in the last ten minutes are produced. Use event time rather than processing time where order matters, and decide how long to wait for late events.",
+          "Stream processors such as Apache Flink compute results continuously: filtering, enrichment, joins and aggregations over time windows. Stateful processing lets you maintain counts, averages or sessions per key, which is how real-time features like transactions in the last ten minutes are produced. Use event time rather than processing time where order matters, and decide how long to wait for late events.",
         ],
         cta: {
           title: "Does your AI need fresher data?",
@@ -435,14 +435,14 @@ export const aiOpsPosts5: BlogPost[] = [
       {
         heading: "Automated and Manual Testing",
         body: [
-          "Automated tools generate and run large numbers of adversarial prompts, mutate them and score responses. Open-source examples include [[https://github.com/Azure/PyRIT|PyRIT]] from Microsoft and [[https://github.com/NVIDIA/garak|garak]] from NVIDIA. They provide breadth and repeatability and work well in CI.",
+          "Automated tools generate and run large numbers of adversarial prompts, mutate them and score responses. Open-source examples include PyRIT from Microsoft and garak from NVIDIA. They provide breadth and repeatability and work well in CI.",
           "Manual testing provides depth. Testers who understand the application chain steps together, such as planting content in a shared document, waiting for the assistant to retrieve it and observing whether a tool is called. These application-specific chains are where the most serious findings usually come from, and they then become automated regression cases.",
         ],
       },
       {
         heading: "Using Frameworks",
         body: [
-          "Frameworks keep coverage systematic and reports understandable. The [[https://genai.owasp.org/llm-top-10/|OWASP Top 10 for LLM Applications]] lists major risk classes such as prompt injection, sensitive information disclosure, excessive agency and unbounded consumption. [[https://atlas.mitre.org/|MITRE ATLAS]] catalogues adversary tactics against AI systems, and NIST's [[https://csrc.nist.gov/pubs/ai/100/2/e2025/final|adversarial machine learning taxonomy]] defines attack and mitigation terms. Map scenarios and findings to these references.",
+          "Frameworks keep coverage systematic and reports understandable. The OWASP Top 10 for LLM Applications lists major risk classes such as prompt injection, sensitive information disclosure, excessive agency and unbounded consumption. MITRE ATLAS catalogues adversary tactics against AI systems, and NIST's adversarial machine learning taxonomy defines attack and mitigation terms. Map scenarios and findings to these references.",
         ],
       },
       {
@@ -474,7 +474,7 @@ export const aiOpsPosts5: BlogPost[] = [
       {
         heading: "Red Teaming Agents",
         body: [
-          "Agents widen the scope of red teaming because they chain actions. Test whether planted content in one step can steer later tool calls, whether the agent can be led to exceed its budget or loop, whether it asks for confirmation before consequential actions under pressure, and whether permission checks hold when the agent combines tools in unexpected orders. Run agent tests in sandboxes with mocked side effects, and review full trajectories rather than final answers. The OWASP [[https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/|Top 10 for Agentic Applications]] is a useful reference for agent-specific risk categories.",
+          "Agents widen the scope of red teaming because they chain actions. Test whether planted content in one step can steer later tool calls, whether the agent can be led to exceed its budget or loop, whether it asks for confirmation before consequential actions under pressure, and whether permission checks hold when the agent combines tools in unexpected orders. Run agent tests in sandboxes with mocked side effects, and review full trajectories rather than final answers. The OWASP Top 10 for Agentic Applications is a useful reference for agent-specific risk categories.",
         ],
       },
       {
@@ -589,7 +589,7 @@ export const aiOpsPosts5: BlogPost[] = [
       {
         heading: "Why Exfiltration Is the Main Danger",
         body: [
-          "The most damaging pattern combines three ingredients: access to private data, exposure to untrusted content and a channel to send data out. If an assistant can read your inbox, process an attacker's email and render images or links, planted instructions might encode private data into a URL that the attacker's server receives when loaded. Removing any one ingredient breaks the chain. OpenAI's guidance on [[https://openai.com/index/designing-agents-to-resist-prompt-injection/|designing agents to resist prompt injection]] describes analysing where data flows to (sinks) and asking users to confirm or blocking steps that would send conversation data to third parties.",
+          "The most damaging pattern combines three ingredients: access to private data, exposure to untrusted content and a channel to send data out. If an assistant can read your inbox, process an attacker's email and render images or links, planted instructions might encode private data into a URL that the attacker's server receives when loaded. Removing any one ingredient breaks the chain. OpenAI's guidance on designing agents to resist prompt injection describes analysing where data flows to (sinks) and asking users to confirm or blocking steps that would send conversation data to third parties.",
         ],
         cta: {
           title: "Building an assistant that reads email, documents or the web?",
@@ -599,8 +599,8 @@ export const aiOpsPosts5: BlogPost[] = [
       {
         heading: "Trust Boundaries and Content Isolation",
         body: [
-          "Draw trust boundaries explicitly. Developer-authored system instructions are trusted. User input, retrieved documents, web content, emails and tool outputs are not. Microsoft's [[https://learn.microsoft.com/en-us/agent-framework/agents/safety|agent safety guidance]] makes the same point: only developer-controlled content belongs in system messages, and tool and retrieved content must be treated as untrusted.",
-          "Isolation patterns reduce exposure. A quarantined model can process untrusted content and return only constrained, structured results, such as a classification or extracted fields, to a privileged component that holds tools. Research on [[https://arxiv.org/abs/2506.08837|design patterns for securing LLM agents]] describes several such patterns, all based on preventing untrusted input from triggering consequential actions.",
+          "Draw trust boundaries explicitly. Developer-authored system instructions are trusted. User input, retrieved documents, web content, emails and tool outputs are not. Microsoft's agent safety guidance makes the same point: only developer-controlled content belongs in system messages, and tool and retrieved content must be treated as untrusted.",
+          "Isolation patterns reduce exposure. A quarantined model can process untrusted content and return only constrained, structured results, such as a classification or extracted fields, to a privileged component that holds tools. Research on design patterns for securing LLM agents describes several such patterns, all based on preventing untrusted input from triggering consequential actions.",
         ],
       },
       {

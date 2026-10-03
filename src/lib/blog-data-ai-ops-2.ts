@@ -75,7 +75,7 @@ export const aiOpsPosts2: BlogPost[] = [
       {
         heading: "Standardizing With OpenTelemetry",
         body: [
-          "The OpenTelemetry [[https://opentelemetry.io/docs/specs/semconv/gen-ai/|semantic conventions for generative AI]] define standard attribute names for model calls, such as the provider, requested and response model, token usage and operation type. Instrumenting against these conventions lets you send the same data to different backends and combine AI spans with the rest of your distributed tracing.",
+          "The OpenTelemetry semantic conventions for generative AI define standard attribute names for model calls, such as the provider, requested and response model, token usage and operation type. Instrumenting against these conventions lets you send the same data to different backends and combine AI spans with the rest of your distributed tracing.",
           "The conventions are still evolving, so pin library versions and expect some attribute changes over time. Many frameworks and SDKs offer automatic instrumentation, but check what content they capture by default before enabling them in production.",
         ],
       },
@@ -120,7 +120,7 @@ export const aiOpsPosts2: BlogPost[] = [
       {
         heading: "Choosing Tooling",
         body: [
-          "Teams typically choose between dedicated LLM observability platforms, which provide trace views of prompts and outputs, evaluation and feedback features, and general observability backends that receive OpenTelemetry data alongside the rest of the system. Examples of LLM-focused tools include [[https://langfuse.com/docs|Langfuse]], [[https://docs.langchain.com/langsmith/observability|LangSmith]] and [[https://mlflow.org/docs/latest/genai/|MLflow tracing]]. Consider data residency and self-hosting options, cost at your trace volume and how well the tool fits your evaluation workflow.",
+          "Teams typically choose between dedicated LLM observability platforms, which provide trace views of prompts and outputs, evaluation and feedback features, and general observability backends that receive OpenTelemetry data alongside the rest of the system. Examples of LLM-focused tools include Langfuse, LangSmith and MLflow tracing. Consider data residency and self-hosting options, cost at your trace volume and how well the tool fits your evaluation workflow.",
         ],
       },
       {

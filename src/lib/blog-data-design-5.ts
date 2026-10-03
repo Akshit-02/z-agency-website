@@ -82,7 +82,7 @@ export const designPosts5: BlogPost[] = [
         heading: "Buttons and Loading States",
         body: [
           "Buttons need distinct states: default, hover, focus, pressed, disabled and loading. When an action takes time, show that it's in progress on the button itself, prevent repeat submissions and confirm the result. A payment button that looks unchanged for several seconds invites a second click and a duplicate charge.",
-          "Nielsen's classic response-time limits are a useful guide: around 0.1 seconds feels instantaneous, around 1 second keeps the user's flow of thought, and around 10 seconds is about the limit of attention before users need progress information. See [[https://www.nngroup.com/articles/response-times-3-important-limits/|response times: the 3 important limits]].",
+          "Nielsen's classic response-time limits are a useful guide: around 0.1 seconds feels instantaneous, around 1 second keeps the user's flow of thought, and around 10 seconds is about the limit of attention before users need progress information. See response times: the 3 important limits.",
         ],
       },
       {
@@ -100,7 +100,7 @@ export const designPosts5: BlogPost[] = [
       {
         heading: "Notifications and Toasts",
         body: [
-          "Toasts suit low-stakes confirmations such as “Link copied”. Don't put essential information or the only undo option in a message that disappears quickly, and leave enough time to read it. Status messages should be announced to assistive technology without moving focus, which [[https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html|WCAG success criterion 4.1.3]] requires. Errors that need action belong next to the problem, not in a floating toast.",
+          "Toasts suit low-stakes confirmations such as “Link copied”. Don't put essential information or the only undo option in a message that disappears quickly, and leave enough time to read it. Status messages should be announced to assistive technology without moving focus, which WCAG success criterion 4.1.3 requires. Errors that need action belong next to the problem, not in a floating toast.",
         ],
       },
       {
@@ -134,7 +134,7 @@ export const designPosts5: BlogPost[] = [
       {
         heading: "Microinteractions and Accessibility",
         body: [
-          "Motion can cause discomfort or nausea for people with vestibular disorders. Respect the operating system's reduced-motion setting, exposed on the web through the prefers-reduced-motion media query, by replacing movement with fades or instant changes. [[https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions|WCAG 2.3.3]] (level AAA) asks that motion triggered by interaction can be disabled unless essential, and 2.2.2 (level A) requires a way to pause, stop or hide content that moves automatically. Never flash content more than three times per second (2.3.1).",
+          "Motion can cause discomfort or nausea for people with vestibular disorders. Respect the operating system's reduced-motion setting, exposed on the web through the prefers-reduced-motion media query, by replacing movement with fades or instant changes. WCAG 2.3.3 (level AAA) asks that motion triggered by interaction can be disabled unless essential, and 2.2.2 (level A) requires a way to pause, stop or hide content that moves automatically. Never flash content more than three times per second (2.3.1).",
           "Also make sure every state change that motion communicates is available in text and to screen readers. See [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]].",
         ],
       },
@@ -226,7 +226,7 @@ export const designPosts5: BlogPost[] = [
         heading: "What Is Figma?",
         body: [
           "Figma is a browser-based, collaborative interface design tool with desktop apps. Several people can work in the same file at once, comment and share links, which is why it has become a common hub for product teams. The Figma platform includes Figma Design for interface design and prototyping, FigJam for whiteboarding and Dev Mode for developer inspection and handoff.",
-          "This guide looks at how teams use these together from research to handoff. It reflects Figma's documentation at the time of writing; features and plan availability change, so check the [[https://help.figma.com/hc/en-us|Figma Help Center]] for current details.",
+          "This guide looks at how teams use these together from research to handoff. It reflects Figma's documentation at the time of writing; features and plan availability change, so check the Figma Help Center for current details.",
         ],
       },
       {
@@ -283,7 +283,7 @@ export const designPosts5: BlogPost[] = [
       {
         heading: "Design Systems: Libraries, Styles and Variables",
         body: [
-          "Publishing components and styles from library files shares them across a team's files and lets updates flow to every file that uses them. [[https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma|Variables]] store values such as colours, spacing and text, and can have modes, for example light and dark themes or compact and comfortable density. Teams commonly use variables to implement design tokens, which keeps design and code aligned. See [[/blogs/design-systems-for-teams-that-move-fast|design systems]].",
+          "Publishing components and styles from library files shares them across a team's files and lets updates flow to every file that uses them. Variables store values such as colours, spacing and text, and can have modes, for example light and dark themes or compact and comfortable density. Teams commonly use variables to implement design tokens, which keeps design and code aligned. See [[/blogs/design-systems-for-teams-that-move-fast|design systems]].",
         ],
         cta: {
           title: "Is your Figma setup slowing the team down?",
@@ -305,7 +305,7 @@ export const designPosts5: BlogPost[] = [
       {
         heading: "Developer Handoff With Dev Mode",
         body: [
-          "[[https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode|Dev Mode]] is Figma's workspace for developers. According to Figma's documentation, designers can mark frames, components and sections as ready for dev; developers can inspect measurements, styles and variables, read annotations, view code snippets, download assets and compare the current version with previous ones. Code Connect, available on Organization and Enterprise plans, can show actual design-system component code instead of generated snippets. There's also an extension for VS Code. Dev Mode is available on paid plans with a Full or Dev seat.",
+          "Dev Mode is Figma's workspace for developers. According to Figma's documentation, designers can mark frames, components and sections as ready for dev; developers can inspect measurements, styles and variables, read annotations, view code snippets, download assets and compare the current version with previous ones. Code Connect, available on Organization and Enterprise plans, can show actual design-system component code instead of generated snippets. There's also an extension for VS Code. Dev Mode is available on paid plans with a Full or Dev seat.",
           "Tools don't replace a conversation. Walk developers through flows, states and edge cases before they start. The [[/blogs/design-handoff|design handoff guide]] covers what to include.",
         ],
       },
@@ -318,7 +318,7 @@ export const designPosts5: BlogPost[] = [
       {
         heading: "Versioning and Change Control",
         body: [
-          "Every Figma file keeps a version history, and naming versions at milestones such as “Ready for sprint 12” makes it easy to return to them. For larger teams, [[https://help.figma.com/hc/en-us/articles/360063144053-Guide-to-branching|branching and merging]], which Figma lists for Organization and Enterprise plans, lets designers explore changes to a file or library without editing the main version, then submit them for review and merge.",
+          "Every Figma file keeps a version history, and naming versions at milestones such as “Ready for sprint 12” makes it easy to return to them. For larger teams, branching and merging, which Figma lists for Organization and Enterprise plans, lets designers explore changes to a file or library without editing the main version, then submit them for review and merge.",
           "Without branching, conventions do the job: explorations on separate pages, a single ready-for-dev page, and changes to approved designs announced in the team channel and ticket.",
         ],
       },
@@ -516,7 +516,7 @@ export const designPosts5: BlogPost[] = [
       {
         heading: "Accessibility",
         body: [
-          "Business software is used for hours a day, often by people who rely on keyboards, screen readers or magnification, and accessibility is increasingly part of enterprise procurement. Design to [[https://www.w3.org/TR/WCAG22/|WCAG 2.2]] AA: full keyboard access, visible focus, semantic tables and forms, sufficient contrast in charts and status colours, and status messages announced to assistive technology. See [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]].",
+          "Business software is used for hours a day, often by people who rely on keyboards, screen readers or magnification, and accessibility is increasingly part of enterprise procurement. Design to WCAG 2.2 AA: full keyboard access, visible focus, semantic tables and forms, sufficient contrast in charts and status colours, and status messages announced to assistive technology. See [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]].",
         ],
       },
       {

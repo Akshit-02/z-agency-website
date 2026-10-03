@@ -159,7 +159,7 @@ export const aiAppsPosts7: BlogPost[] = [
         body: [
           "Multimodal applications often generate as well as understand: product images, illustrations, synthetic voices and video. Check licence terms for commercial use, avoid generating likenesses of real people without consent and keep records of what was generated and how.",
           "Disclosure obligations are increasing. The EU AI Act's Article 50 transparency rules, applying from 2 August 2026, include marking synthetic content and disclosing deepfakes, with details depending on the role and context. Content provenance standards such as C2PA can help label generated media. Treat disclosure as a product requirement; see [[/blogs/ai-governance-framework|AI governance framework]].",
-          "See the [[https://c2pa.org/|C2PA]] specification and the Commission's [[https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai|AI Act overview]].",
+          "See the C2PA specification and the Commission's AI Act overview.",
         ],
       },
       {
@@ -289,7 +289,7 @@ export const aiAppsPosts7: BlogPost[] = [
       {
         heading: "Licensing and Compliance",
         body: [
-          "For example, Ultralytics publishes its [[https://www.ultralytics.com/license|licensing options]] for YOLO models.",
+          "For example, Ultralytics publishes its licensing options for YOLO models.",
         ],
         checklist: [
           "Check model licences: some popular detection libraries, such as Ultralytics YOLO, use AGPL-3.0 with a separate enterprise licence for proprietary use",
@@ -347,7 +347,7 @@ export const aiAppsPosts7: BlogPost[] = [
         body: [
           "Vision systems that capture people raise privacy, consent and discrimination issues. Biometric identification is heavily restricted in many jurisdictions, and the EU AI Act prohibits some uses, such as untargeted scraping of facial images to build recognition databases and emotion recognition in workplaces and education, with limited exceptions.",
           "Where people appear incidentally, minimize: blur faces, avoid storing raw footage, process on the edge and keep only events or counts. Run a privacy impact assessment before deployment and inform people where required. More on privacy design in [[/blogs/ai-data-privacy|AI data privacy]].",
-          "The Commission has published [[https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act|guidelines on prohibited AI practices]].",
+          "The Commission has published guidelines on prohibited AI practices.",
         ],
       },
       {
@@ -542,7 +542,7 @@ export const aiAppsPosts7: BlogPost[] = [
         body: [
           "Recognition models can run in the cloud, on servers near cameras or on devices such as phones and embedded boards. Edge inference reduces latency, bandwidth and privacy exposure; cloud inference simplifies updates and allows larger models.",
           "For edge deployment, optimize models through quantization and export to runtimes supported by the target hardware, such as LiteRT on mobile or vendor toolkits on accelerators. Test accuracy after optimization, because compression can degrade rare-class performance. Mobile deployment specifics are in [[/blogs/ai-powered-mobile-app-development|AI-powered mobile app development]].",
-          "See Google's [[https://developers.google.com/edge/litert/overview|LiteRT overview]] for on-device deployment.",
+          "See Google's LiteRT overview for on-device deployment.",
         ],
       },
       {
@@ -638,7 +638,7 @@ export const aiAppsPosts7: BlogPost[] = [
       {
         heading: "The Pipeline",
         body: [
-          "Google's [[https://developers.google.com/machine-learning/recommendation|recommendation systems course]] explains the candidate generation, scoring and re-ranking stages in more depth.",
+          "Google's recommendation systems course explains the candidate generation, scoring and re-ranking stages in more depth.",
         ],
         diagram: {
           variant: "recsysflow",
@@ -743,7 +743,7 @@ export const aiAppsPosts7: BlogPost[] = [
         body: [
           "Recommendations shape what users see, which shapes what they interact with, which shapes future recommendations. This loop can concentrate attention on already popular items, under-expose new providers and narrow users' choices. In marketplaces and job platforms, exposure has financial consequences for the people listed.",
           "Measure exposure distribution, add exploration so new items get a chance, and set guardrails for fairness where it matters. The EU Digital Services Act requires online platforms to explain the main parameters of their recommender systems, and very large platforms to offer at least one option not based on profiling. Make preference controls easy to find in any case.",
-          "See the Commission's [[https://digital-strategy.ec.europa.eu/en/policies/digital-services-act|Digital Services Act overview]].",
+          "See the Commission's Digital Services Act overview.",
         ],
       },
       {

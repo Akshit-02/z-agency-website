@@ -545,7 +545,7 @@ export const commercePosts51: BlogPost[] = [
       {
         heading: "Platform Notes",
         body: [
-          "On Shopify, Search & Discovery supports standard filters and custom filters based on product options (sizes, colours) and metafields or metaobjects (sport, activity, surface, specs), with up to 1,000 values per filter ([[https://help.shopify.com/en/manual/online-store/storefront-search/search-and-discovery-filters|Shopify Help Center]]). See [[/blogs/shopify-sports-store|Shopify sports store]].",
+          "On Shopify, Search & Discovery supports standard filters and custom filters based on product options (sizes, colours) and metafields or metaobjects (sport, activity, surface, specs), with up to 1,000 values per filter (Shopify Help Center). See [[/blogs/shopify-sports-store|Shopify sports store]].",
         ],
       },
       {

@@ -61,7 +61,7 @@ export const aiOpsPosts4: BlogPost[] = [
       {
         heading: "Documents: Parsing, Layout and Tables",
         body: [
-          "Simple text extraction from PDFs loses headings, reading order, columns and tables, and mixes in headers, footers and page numbers. Layout-aware parsers recover the document's structure: sections, lists, tables, figures and captions. Open-source options such as [[https://docling-project.github.io/docling/|Docling]] convert many formats into structured output; cloud document services and multimodal models handle harder layouts at higher cost.",
+          "Simple text extraction from PDFs loses headings, reading order, columns and tables, and mixes in headers, footers and page numbers. Layout-aware parsers recover the document's structure: sections, lists, tables, figures and captions. Open-source options such as Docling convert many formats into structured output; cloud document services and multimodal models handle harder layouts at higher cost.",
           "Tables deserve special care, because many business answers live in them. Extract them as structured tables with headers, keep captions and units, and keep each table intact in one chunk where possible. Test on your hardest documents, such as scanned forms, multi-column reports and spreadsheets saved as PDF, before choosing a parser.",
         ],
       },
@@ -74,7 +74,7 @@ export const aiOpsPosts4: BlogPost[] = [
       {
         heading: "Audio and Video",
         body: [
-          "Meetings, calls, training videos and podcasts become searchable through transcription. Speech-to-text models such as [[https://github.com/openai/whisper|Whisper]] and cloud speech services produce transcripts; add speaker labels (diarization), timestamps and corrections for product names and jargon. Segment by topic or fixed windows for retrieval and keep timestamps so answers can link to the moment in the recording. Recordings often contain personal data, so check consent and retention before processing.",
+          "Meetings, calls, training videos and podcasts become searchable through transcription. Speech-to-text models such as Whisper and cloud speech services produce transcripts; add speaker labels (diarization), timestamps and corrections for product names and jargon. Segment by topic or fixed windows for retrieval and keep timestamps so answers can link to the moment in the recording. Recordings often contain personal data, so check consent and retention before processing.",
         ],
         cta: {
           title: "Sitting on documents and recordings your AI can't use?",
@@ -301,7 +301,7 @@ export const aiOpsPosts4: BlogPost[] = [
       {
         heading: "Privacy Considerations",
         body: [
-          "Generators trained on real personal data can memorize and reproduce records, especially rare ones. Check for near-duplicates of real records, assess re-identification risk and consider formal techniques such as differential privacy for sensitive releases. LLM-generated data based on prompts that include real records carries the same risk. Document how each synthetic dataset was produced and from what. Libraries such as the [[https://docs.sdv.dev/sdv|Synthetic Data Vault]] include quality and privacy evaluation tools for tabular data.",
+          "Generators trained on real personal data can memorize and reproduce records, especially rare ones. Check for near-duplicates of real records, assess re-identification risk and consider formal techniques such as differential privacy for sensitive releases. LLM-generated data based on prompts that include real records carries the same risk. Document how each synthetic dataset was produced and from what. Libraries such as the Synthetic Data Vault include quality and privacy evaluation tools for tabular data.",
         ],
       },
       {
@@ -467,13 +467,13 @@ export const aiOpsPosts4: BlogPost[] = [
       {
         heading: "Tooling and Data Security",
         body: [
-          "Tools such as [[https://labelstud.io/|Label Studio]] and CVAT support many data types, workflows and exports; commercial platforms add workforce management and analytics. Evaluate data security carefully, especially when using external annotators or vendors: access controls, where data is stored, whether annotators can download data and how personal information is handled. Redact or pseudonymize where the task allows.",
+          "Tools such as Label Studio and CVAT support many data types, workflows and exports; commercial platforms add workforce management and analytics. Evaluate data security carefully, especially when using external annotators or vendors: access controls, where data is stored, whether annotators can download data and how personal information is handled. Redact or pseudonymize where the task allows.",
         ],
       },
       {
         heading: "Documentation and Versioning",
         body: [
-          "Document each dataset with its purpose, sources, collection period, taxonomy and guideline versions, annotator profile, agreement scores, known gaps and splits. The [[https://arxiv.org/abs/1803.09010|datasheets for datasets]] proposal is a practical template. Version datasets so each model or prompt evaluation can be tied to the exact data used; see [[/blogs/ai-data-lineage|AI data lineage]].",
+          "Document each dataset with its purpose, sources, collection period, taxonomy and guideline versions, annotator profile, agreement scores, known gaps and splits. The datasheets for datasets proposal is a practical template. Version datasets so each model or prompt evaluation can be tied to the exact data used; see [[/blogs/ai-data-lineage|AI data lineage]].",
         ],
       },
       {
@@ -630,7 +630,7 @@ export const aiOpsPosts4: BlogPost[] = [
       {
         heading: "Automated Validation",
         body: [
-          "Encode expectations as checks that run in pipelines: schemas, required fields, allowed values, ranges, uniqueness, referential integrity and volume compared with recent runs. Frameworks such as [[https://docs.greatexpectations.io/docs/home/|Great Expectations]] and dbt tests make checks declarative and reportable. For document collections, check for empty or garbled parses, duplicate content, missing metadata and documents past their review date.",
+          "Encode expectations as checks that run in pipelines: schemas, required fields, allowed values, ranges, uniqueness, referential integrity and volume compared with recent runs. Frameworks such as Great Expectations and dbt tests make checks declarative and reportable. For document collections, check for empty or garbled parses, duplicate content, missing metadata and documents past their review date.",
         ],
       },
       {

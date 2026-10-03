@@ -73,7 +73,7 @@ export const aiAppsPosts1: BlogPost[] = [
       {
         heading: "The Main Categories of Tools",
         body: [
-          "**Editor assistants** offer inline completion and chat inside IDEs. **Agentic coding tools** in the IDE or terminal can read the repository, edit multiple files and run commands with the developer watching; examples include agent modes in IDE assistants, Claude Code and the Codex CLI. **Background coding agents** take an issue and work asynchronously in a cloud or CI environment, then open a pull request: GitHub Copilot coding agent, OpenAI Codex's cloud agent and Claude Code run through [[https://code.claude.com/docs/en/github-actions|GitHub Actions]] work this way. **Review and testing tools** add AI to pull requests, test suites and security scanning.",
+          "**Editor assistants** offer inline completion and chat inside IDEs. **Agentic coding tools** in the IDE or terminal can read the repository, edit multiple files and run commands with the developer watching; examples include agent modes in IDE assistants, Claude Code and the Codex CLI. **Background coding agents** take an issue and work asynchronously in a cloud or CI environment, then open a pull request: GitHub Copilot coding agent, OpenAI Codex's cloud agent and Claude Code run through GitHub Actions work this way. **Review and testing tools** add AI to pull requests, test suites and security scanning.",
           "These products change quickly, so evaluate them on your own repositories and check current data handling terms before rollout. The comparison of supervision levels is in [[/blogs/ai-assisted-development-vs-agentic-coding|AI-assisted vs agentic coding]].",
         ],
       },
@@ -115,7 +115,7 @@ export const aiAppsPosts1: BlogPost[] = [
         heading: "Measuring Impact",
         body: [
           "Self-reported speed is unreliable. Track delivery metrics before and after adoption: lead time for changes, deployment frequency, change failure rate and time to restore (the DORA measures), plus review time, escaped defects and developer satisfaction. Segment by task type; AI often helps more with boilerplate, tests and unfamiliar code than with complex design work.",
-          "The [[https://dora.dev/guides/dora-metrics-four-keys/|DORA delivery metrics]] are a widely used, tool-neutral starting point.",
+          "The DORA delivery metrics are a widely used, tool-neutral starting point.",
         ],
       },
       {
@@ -195,7 +195,7 @@ export const aiAppsPosts1: BlogPost[] = [
         body: [
           "AI tools are trained on public code and can occasionally produce output closely matching existing code. Some tools offer filters that block suggestions matching public code, or references showing where matches came from. Enable these where available, particularly for code you distribute.",
           "Dependencies suggested by AI need the same scrutiny as any other dependency: confirm the package exists under that exact name, check maintenance, licence and security history, and pin versions. Attackers register packages with names that models commonly hallucinate, so a non-existent package suggestion is a supply chain risk, not just an error. Your existing software composition analysis tools remain essential.",
-          "GitHub documents how its [[https://docs.github.com/en/copilot/concepts/completions/code-referencing|code referencing feature]] flags suggestions that match public code, and NIST's [[https://csrc.nist.gov/projects/ssdf|Secure Software Development Framework]] provides a baseline for supply chain practices.",
+          "GitHub documents how its code referencing feature flags suggestions that match public code, and NIST's Secure Software Development Framework provides a baseline for supply chain practices.",
         ],
       },
       {
@@ -387,7 +387,7 @@ export const aiAppsPosts1: BlogPost[] = [
         body: [
           "The main options in 2026 include GitHub Copilot's coding agent, which works from assigned issues and opens pull requests; Claude Code, which runs in the terminal, IDEs and GitHub Actions; and OpenAI Codex, available as a cloud agent and a CLI. Several IDEs also include agent modes. Capabilities change quickly, so evaluate on your own repositories rather than on published comparisons.",
           "Practical selection questions: Where does the agent run, and can you control its network access and secrets? Does it work with your repository host and CI? Can administrators set policies, view audit logs and limit which repositories it can touch? How is usage priced, and how predictable is cost when agents run long tasks? What happens to your code and prompts under the provider's data terms? Teams often end up with more than one tool: an interactive agent for developers and a background agent for well-specified issues.",
-          "Official documentation: [[https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent|GitHub Copilot coding agent]] and [[https://developers.openai.com/codex|OpenAI Codex]].",
+          "Official documentation: GitHub Copilot coding agent and OpenAI Codex.",
         ],
       },
       {
@@ -573,7 +573,7 @@ export const aiAppsPosts1: BlogPost[] = [
         heading: "Measuring the Difference",
         body: [
           "To decide how far to move along the ladder, compare task types rather than tools. For a sample of similar tasks, measure time to merge, review rounds, rework within a month and escaped defects with assisted versus agentic approaches. Expect agents to win on routine, well-tested work and lose on ambiguous work, and shape your task routing accordingly. The lifecycle view is in [[/blogs/ai-software-development-lifecycle|the AI SDLC]].",
-          "The [[https://dora.dev/guides/dora-metrics-four-keys/|DORA metrics]] (lead time, deployment frequency, change failure rate, recovery time) provide a consistent baseline for these comparisons.",
+          "The DORA metrics (lead time, deployment frequency, change failure rate, recovery time) provide a consistent baseline for these comparisons.",
         ],
       },
       {
@@ -734,7 +734,7 @@ export const aiAppsPosts1: BlogPost[] = [
         heading: "Tools and Setup",
         body: [
           "Options include AI review built into repository platforms (for example Copilot code review on GitHub), AI review apps and bots, and running a general coding agent in CI with a review prompt (for example Claude Code through GitHub Actions). Check data handling terms, where code is processed, and whether the tool can be limited to specific repositories. Configure it to post as a reviewer that cannot approve.",
-          "Examples include [[https://docs.github.com/en/copilot/concepts/agents/code-review|GitHub Copilot code review]]; the [[https://owasp.org/www-project-code-review-guide/|OWASP Code Review Guide]] is a useful source for security review priorities.",
+          "Examples include GitHub Copilot code review; the OWASP Code Review Guide is a useful source for security review priorities.",
         ],
       },
       {

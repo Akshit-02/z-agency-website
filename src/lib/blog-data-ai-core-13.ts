@@ -49,7 +49,7 @@ export const aiCorePosts13: BlogPost[] = [
       {
         heading: "Where This Fits",
         body: [
-          "Prompt injection is the top risk in the [[https://genai.owasp.org/llm-top-10/|OWASP Top 10 for LLM Applications]]. The broader control layer is in [[/blogs/ai-agent-guardrails|AI agent guardrails]], protocol-specific risks in [[/blogs/mcp-security|MCP security]], and testing in [[/blogs/ai-agent-evaluation|AI agent evaluation]].",
+          "Prompt injection is the top risk in the OWASP Top 10 for LLM Applications. The broader control layer is in [[/blogs/ai-agent-guardrails|AI agent guardrails]], protocol-specific risks in [[/blogs/mcp-security|MCP security]], and testing in [[/blogs/ai-agent-evaluation|AI agent evaluation]].",
           "The broader threat model for AI applications, including vendor risk and data leakage, is covered in [[/blogs/ai-security-business-applications|AI security for business applications]].",
         ],
       },
@@ -182,7 +182,7 @@ export const aiCorePosts13: BlogPost[] = [
       {
         heading: "What Recent Provider Guidance Emphasizes",
         body: [
-          "Guidance from model providers increasingly treats injection as a design problem rather than a filtering problem. OpenAI's March 2026 guidance on [[https://openai.com/index/designing-agents-to-resist-prompt-injection/|designing agents to resist prompt injection]] notes that effective real-world attacks increasingly resemble social engineering and describes analysing where data could flow to, then asking users to confirm or blocking steps that would send conversation data to third parties. Microsoft's [[https://learn.microsoft.com/en-us/agent-framework/agents/safety|agent safety guidance]] stresses that only developer-controlled content belongs in system messages and that tool and retrieved content must be treated as untrusted.",
+          "Guidance from model providers increasingly treats injection as a design problem rather than a filtering problem. OpenAI's March 2026 guidance on designing agents to resist prompt injection notes that effective real-world attacks increasingly resemble social engineering and describes analysing where data could flow to, then asking users to confirm or blocking steps that would send conversation data to third parties. Microsoft's agent safety guidance stresses that only developer-controlled content belongs in system messages and that tool and retrieved content must be treated as untrusted.",
           "Deep dives on related topics: [[/blogs/indirect-prompt-injection|indirect prompt injection]] for retrieval, browsing and email risks, [[/blogs/ai-tool-security|AI tool security]] for function calling, [[/blogs/ai-red-teaming|AI red teaming]] for testing and [[/blogs/ai-data-leakage|AI data leakage]] for exfiltration channels.",
         ],
       },

@@ -53,7 +53,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "What Differs, Plan by Plan",
         body: [
-          "The table below reflects Shopify's pricing and Plus plan pages as checked in September 2026 ([[https://www.shopify.com/pricing|Shopify pricing]], [[https://help.shopify.com/en/manual/intro-to-shopify/pricing-plans/plans-features/shopify-plus-plan|Shopify Plus plan]]). Plan details change, so confirm current terms before deciding.",
+          "The table below reflects Shopify's pricing and Plus plan pages as checked in September 2026 (Shopify pricing, Shopify Plus plan). Plan details change, so confirm current terms before deciding.",
         ],
         table: {
           headers: ["Capability", "Basic · Grow · Advanced", "Shopify Plus"],
@@ -144,7 +144,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Beyond Checkout: Other Plus Capabilities",
         body: [
-          "Checkout drives many upgrades, but Shopify's Plus plan page lists other capabilities worth weighing: Launchpad for scheduling sales and launches, advanced B2B options such as direct catalog assignment, deposits, partial payments and payment requests per fulfilment, 24/7 priority support, Shopify Functions in custom apps, and expansion stores including B2B wholesale stores ([[https://help.shopify.com/en/manual/intro-to-shopify/pricing-plans/plans-features/shopify-plus-plan|Shopify Plus plan]]). Plan details change, so confirm current terms. For the development side, see [[/blogs/shopify-plus-development|Shopify Plus development]].",
+          "Checkout drives many upgrades, but Shopify's Plus plan page lists other capabilities worth weighing: Launchpad for scheduling sales and launches, advanced B2B options such as direct catalog assignment, deposits, partial payments and payment requests per fulfilment, 24/7 priority support, Shopify Functions in custom apps, and expansion stores including B2B wholesale stores (Shopify Plus plan). Plan details change, so confirm current terms. For the development side, see [[/blogs/shopify-plus-development|Shopify Plus development]].",
         ],
       },
       {
@@ -383,7 +383,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Level 1: The Theme Editor",
         body: [
-          "Online Store 2.0 themes use JSON templates made of sections and blocks, which is what makes so much editable without code ([[https://shopify.dev/docs/storefronts/themes/architecture|Shopify theme architecture]]).",
+          "Online Store 2.0 themes use JSON templates made of sections and blocks, which is what makes so much editable without code (Shopify theme architecture).",
         ],
         table: {
           headers: ["You can", "Notes"],
@@ -772,7 +772,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Step 3: Import",
         body: [
-          "Shopify documents several ways to bring data across ([[https://help.shopify.com/en/manual/migrating-to-shopify|Shopify Help Center]]).",
+          "Shopify documents several ways to bring data across (Shopify Help Center).",
         ],
         table: {
           headers: ["Data", "Methods"],
@@ -792,7 +792,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Import Order and Tools",
         body: [
-          "Shopify's migration guidance is to import products first, then customers, then historical orders, so orders can link to the products and customers they belong to ([[https://help.shopify.com/en/manual/migrating-to-shopify|Shopify Help Center]]). Shopify's first-party Store Migration app can import data from some platforms, such as products from WooCommerce and products and customers from Wix or Square, but Shopify describes it as early access and only available for certain stores; historical orders typically need third-party migration apps or the APIs. Large or complex catalogs often use CSV-based bulk tools or custom scripts against the Admin API.",
+          "Shopify's migration guidance is to import products first, then customers, then historical orders, so orders can link to the products and customers they belong to (Shopify Help Center). Shopify's first-party Store Migration app can import data from some platforms, such as products from WooCommerce and products and customers from Wix or Square, but Shopify describes it as early access and only available for certain stores; historical orders typically need third-party migration apps or the APIs. Large or complex catalogs often use CSV-based bulk tools or custom scripts against the Admin API.",
         ],
         table: {
           headers: ["Order", "Data", "Why this order"],
@@ -998,7 +998,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "What Shopify Handles",
         body: [
-          "According to Shopify's SEO documentation, canonical tags are added automatically, sitemap.xml and robots.txt are generated automatically, themes generate title tags and include product schema markup, and SSL is on by default ([[https://help.shopify.com/en/manual/promoting-marketing/seo/seo-overview|Shopify Help Center]]). The sitemap covers products, primary product images, pages, collections and blog posts, and updates when you add content.",
+          "According to Shopify's SEO documentation, canonical tags are added automatically, sitemap.xml and robots.txt are generated automatically, themes generate title tags and include product schema markup, and SSL is on by default (Shopify Help Center). The sitemap covers products, primary product images, pages, collections and blog posts, and updates when you add content.",
         ],
         table: {
           headers: ["Default robots.txt rule", "Purpose"],
@@ -1030,7 +1030,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Tags, Filters and Variant URLs",
         body: [
-          "Shopify creates several URL types that can duplicate content: single tag pages under collections, filter parameters, sort parameters and ?variant= URLs. The defaults block combined tags and sort orders. Avoid linking to tag pages, check how your theme outputs filter URLs, and create dedicated collections for filtered views worth ranking. Edit robots.txt.liquid only with expertise; Shopify warns incorrect use can lose all traffic ([[https://help.shopify.com/en/manual/promoting-marketing/seo/editing-robots-txt|Shopify Help Center]]).",
+          "Shopify creates several URL types that can duplicate content: single tag pages under collections, filter parameters, sort parameters and ?variant= URLs. The defaults block combined tags and sort orders. Avoid linking to tag pages, check how your theme outputs filter URLs, and create dedicated collections for filtered views worth ranking. Edit robots.txt.liquid only with expertise; Shopify warns incorrect use can lose all traffic (Shopify Help Center).",
         ],
       },
       {
@@ -1052,7 +1052,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "International SEO With Markets",
         body: [
-          "Shopify Markets supports subfolders, subdomains or domains per market, generates hreflang tags automatically, includes market URLs in the sitemap, and excludes search engine crawlers from automatic redirection so every version can be indexed ([[https://help.shopify.com/en/manual/markets/seo|Shopify Help Center]]). Translate content properly and localize titles and descriptions.",
+          "Shopify Markets supports subfolders, subdomains or domains per market, generates hreflang tags automatically, includes market URLs in the sitemap, and excludes search engine crawlers from automatic redirection so every version can be indexed (Shopify Help Center). Translate content properly and localize titles and descriptions.",
         ],
       },
       {
@@ -1076,7 +1076,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "AI Search",
         body: [
-          "Google says there are no additional requirements or special markup to appear in AI Overviews or AI Mode ([[https://developers.google.com/search/docs/appearance/ai-features|Google Search Central]]). For Shopify stores, the same fundamentals apply: crawlable pages, accurate product data and helpful content.",
+          "Google says there are no additional requirements or special markup to appear in AI Overviews or AI Mode (Google Search Central). For Shopify stores, the same fundamentals apply: crawlable pages, accurate product data and helpful content.",
         ],
       },
       {
@@ -1180,7 +1180,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "What Shopify Analytics Includes",
         body: [
-          "Shopify says its main analytics features are available on every plan: a customizable Analytics overview of metric cards, a reports library, and Live View for real-time activity ([[https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports|Shopify Help Center]]).",
+          "Shopify says its main analytics features are available on every plan: a customizable Analytics overview of metric cards, a reports library, and Live View for real-time activity (Shopify Help Center).",
         ],
         table: {
           headers: ["Report area", "Use it for"],
@@ -1212,13 +1212,13 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Understanding Shopify's Conversion Rate",
         body: [
-          "Shopify defines each funnel step's conversion rate as sessions reaching that step divided by total sessions, with sessions based on continued activity ([[https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports|Shopify Help Center]]). Compare rates by device and channel rather than relying on the store-wide number. See [[/blogs/ecommerce-conversion-rate|ecommerce conversion rate]].",
+          "Shopify defines each funnel step's conversion rate as sessions reaching that step divided by total sessions, with sessions based on continued activity (Shopify Help Center). Compare rates by device and channel rather than relying on the store-wide number. See [[/blogs/ecommerce-conversion-rate|ecommerce conversion rate]].",
         ],
       },
       {
         heading: "Customer Reports: Cohorts and RFM",
         body: [
-          "The customer cohort analysis report groups customers by first order date and can show customers, retention rate, gross sales, net sales or AOV. RFM reports group customers by recency, frequency and monetary value ([[https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/customers-reports|Shopify Help Center]]). Use them to see whether newer customers return as often as older ones and which groups to target. See [[/blogs/ecommerce-cohort-analysis|ecommerce cohort analysis]].",
+          "The customer cohort analysis report groups customers by first order date and can show customers, retention rate, gross sales, net sales or AOV. RFM reports group customers by recency, frequency and monetary value (Shopify Help Center). Use them to see whether newer customers return as often as older ones and which groups to target. See [[/blogs/ecommerce-cohort-analysis|ecommerce cohort analysis]].",
         ],
         cta: {
           title: "Not sure which Shopify numbers to trust?",

@@ -145,7 +145,7 @@ export const aiAppsPosts10: BlogPost[] = [
         body: [
           "Under GDPR, a data protection impact assessment is required where processing is likely to result in high risk, which often applies to new technologies, large-scale processing of sensitive data and systematic evaluation of people. Many AI uses meet those criteria, and similar assessments are expected in other jurisdictions.",
           "A useful AI assessment describes the purpose and lawful basis, data sources and flows including providers, necessity and minimization, risks to individuals such as inaccuracy, discrimination and loss of control, and mitigations. Involve the data protection officer early, and update the assessment when models, data or purposes change.",
-          "The UK ICO's [[https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/|guidance on AI and data protection]] and its [[https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/data-protection-impact-assessments-dpias/|DPIA guidance]] are practical references.",
+          "The UK ICO's guidance on AI and data protection and its DPIA guidance are practical references.",
         ],
       },
       {
@@ -327,7 +327,7 @@ export const aiAppsPosts10: BlogPost[] = [
       {
         heading: "Using LLM Judges Carefully",
         body: [
-          "Known judge biases are discussed in [[https://arxiv.org/abs/2306.05685|Zheng et al., Judging LLM-as-a-Judge]]; broad benchmark suites such as [[https://crfm.stanford.edu/helm/|Stanford HELM]] show multi-metric evaluation, though your own tasks matter more.",
+          "Known judge biases are discussed in Zheng et al., Judging LLM-as-a-Judge; broad benchmark suites such as Stanford HELM show multi-metric evaluation, though your own tasks matter more.",
         ],
         checklist: [
           "Write explicit rubrics with examples of each score",
@@ -540,7 +540,7 @@ export const aiAppsPosts10: BlogPost[] = [
         body: [
           "Teams can build monitoring from general observability tools (logs, metrics, traces with OpenTelemetry) plus a store for sampled outputs and evaluation scores, or adopt specialised LLM observability platforms that provide tracing, evaluation and feedback views. Classical ML monitoring tools cover drift and performance for predictive models.",
           "Choose based on data handling, since traces contain prompts and outputs, as well as integration with your stack and cost at your volume. Agent-level tracing is covered in [[/blogs/ai-agent-observability|AI agent observability]].",
-          "The OpenTelemetry [[https://opentelemetry.io/docs/specs/semconv/gen-ai/|generative AI semantic conventions]] standardize attributes for model calls.",
+          "The OpenTelemetry generative AI semantic conventions standardize attributes for model calls.",
         ],
       },
       {
@@ -658,7 +658,7 @@ export const aiAppsPosts10: BlogPost[] = [
       {
         heading: "Production Readiness Checklist",
         body: [
-          "Google's [[https://developers.google.com/machine-learning/guides/rules-of-ml|Rules of Machine Learning]] remain a useful companion for taking models to production.",
+          "Google's Rules of Machine Learning remain a useful companion for taking models to production.",
         ],
         checklist: [
           "Integration into the systems and workflows people use daily",

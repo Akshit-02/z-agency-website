@@ -71,7 +71,7 @@ export const commercePosts32: BlogPost[] = [
       {
         heading: "Platform Tax vs Tax Engines",
         body: [
-          "Ecommerce platforms calculate taxes natively for many cases. Shopify Tax, for example, offers automated tax calculation with product categorization in supported regions, including the US, and is free up to a sales threshold before per-transaction fees apply; US stores can also use automated filing features ([[https://help.shopify.com/en/manual/taxes/shopify-tax|Shopify Help Center]]). Dedicated tax engines suit businesses with complex taxability, many jurisdictions, multiple channels or invoicing from an ERP, where the same engine should calculate tax everywhere.",
+          "Ecommerce platforms calculate taxes natively for many cases. Shopify Tax, for example, offers automated tax calculation with product categorization in supported regions, including the US, and is free up to a sales threshold before per-transaction fees apply; US stores can also use automated filing features (Shopify Help Center). Dedicated tax engines suit businesses with complex taxability, many jurisdictions, multiple channels or invoicing from an ERP, where the same engine should calculate tax everywhere.",
         ],
         table: {
           headers: ["Option", "Fits when"],
@@ -256,7 +256,7 @@ export const commercePosts32: BlogPost[] = [
       {
         heading: "APIs, Webhooks and Bulk Operations",
         body: [
-          "APIs let you read and write data on demand. Webhooks notify you of changes so you don't poll constantly. Bulk operations handle large exports and imports efficiently. Shopify, for example, provides GraphQL Admin APIs, webhooks and bulk operations, and uses cost-based rate limits on its GraphQL Admin API ([[https://shopify.dev/docs/api/usage/limits|Shopify developer docs]]).",
+          "APIs let you read and write data on demand. Webhooks notify you of changes so you don't poll constantly. Bulk operations handle large exports and imports efficiently. Shopify, for example, provides GraphQL Admin APIs, webhooks and bulk operations, and uses cost-based rate limits on its GraphQL Admin API (Shopify developer docs).",
           "Receiving webhooks reliably is covered in [[/blogs/ecommerce-webhooks|ecommerce webhooks]].",
         ],
       },
@@ -276,7 +276,7 @@ export const commercePosts32: BlogPost[] = [
       {
         heading: "Reliability Patterns",
         body: [
-          "Integrations fail: networks drop, APIs throttle, systems go down, webhooks arrive twice or out of order. Design for it. Shopify's webhook guidance, for example, recommends verifying signatures, deduplicating with the webhook ID, not relying on delivery order and running reconciliation because delivery isn't guaranteed ([[https://shopify.dev/docs/apps/build/webhooks|Shopify developer docs]]).",
+          "Integrations fail: networks drop, APIs throttle, systems go down, webhooks arrive twice or out of order. Design for it. Shopify's webhook guidance, for example, recommends verifying signatures, deduplicating with the webhook ID, not relying on delivery order and running reconciliation because delivery isn't guaranteed (Shopify developer docs).",
           "See [[/blogs/ecommerce-queue-architecture|queue architecture]] for retries, dead-letter queues and idempotency in practice.",
         ],
         checklist: [
@@ -587,7 +587,7 @@ export const commercePosts32: BlogPost[] = [
       {
         heading: "MACH in Brief",
         body: [
-          "Composable commerce is often described with MACH: Microservices, API-first, Cloud-native SaaS and Headless. The MACH Alliance, a non-profit industry group, promotes these principles ([[https://machalliance.org|MACH Alliance]]). MACH describes how services are built and connected; it doesn't mean every business needs every component to be separate.",
+          "Composable commerce is often described with MACH: Microservices, API-first, Cloud-native SaaS and Headless. The MACH Alliance, a non-profit industry group, promotes these principles (MACH Alliance). MACH describes how services are built and connected; it doesn't mean every business needs every component to be separate.",
         ],
       },
       {

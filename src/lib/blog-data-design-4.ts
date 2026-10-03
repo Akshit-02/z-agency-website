@@ -120,7 +120,7 @@ export const designPosts4: BlogPost[] = [
             ["Interaction", "Obvious controls, feedback after every action, predictable behaviour, undo for mistakes"],
             ["Forms", "Visible labels, only necessary fields, helpful inline validation, input preserved after errors"],
             ["Error and empty states", "Specific error messages with a fix, designed empty states, no dead ends"],
-            ["Accessibility", "Contrast, keyboard access, focus visibility, labels, alt text, target size against [[https://www.w3.org/TR/WCAG22/|WCAG 2.2]]"],
+            ["Accessibility", "Contrast, keyboard access, focus visibility, labels, alt text, target size against WCAG 2.2"],
             ["Mobile", "Layout, touch targets, sticky actions, keyboard types, performance on a mid-range phone"],
             ["Conversion paths", "Friction, surprises and missing reassurance between entry and goal"],
           ],
@@ -168,7 +168,7 @@ export const designPosts4: BlogPost[] = [
       {
         heading: "Step 8: Rate Severity",
         body: [
-          "Rate every issue on one scale so that problems found by different methods can be compared. A widely used option is Jakob Nielsen's 0 to 4 [[https://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/|severity scale]], which combines how often a problem occurs, how badly it affects users when it does, and whether it persists once users know about it.",
+          "Rate every issue on one scale so that problems found by different methods can be compared. A widely used option is Jakob Nielsen's 0 to 4 severity scale, which combines how often a problem occurs, how badly it affects users when it does, and whether it persists once users know about it.",
           "Rate after the review sessions, not during them, and have evaluators rate independently before agreeing a final score. Nielsen Norman Group notes that evaluators give weaker ratings while they're focused on finding problems.",
         ],
         table: {
@@ -329,7 +329,7 @@ export const designPosts4: BlogPost[] = [
       {
         heading: "Nielsen's 10 Usability Heuristics, With Examples",
         body: [
-          "The most widely used set is [[https://www.nngroup.com/articles/ten-usability-heuristics/|Nielsen's 10 usability heuristics]]. The examples below are typical violations to look for.",
+          "The most widely used set is Nielsen's 10 usability heuristics. The examples below are typical violations to look for.",
         ],
         table: {
           headers: ["Heuristic", "What it means", "Typical violation"],
@@ -350,7 +350,7 @@ export const designPosts4: BlogPost[] = [
       {
         heading: "Choosing Heuristics for Your Product",
         body: [
-          "Nielsen's list is general by design. For specialist products, supplement it rather than replace it: platform guidelines such as Apple's Human Interface Guidelines and Google's Material Design for apps, [[https://baymard.com/research|Baymard Institute's ecommerce guidelines]] for online stores, and your own design system rules for consistency. Accessibility should be reviewed against [[https://www.w3.org/TR/WCAG22/|WCAG]] as a separate pass; it's a conformance standard, not a set of heuristics, and deserves its own checklist.",
+          "Nielsen's list is general by design. For specialist products, supplement it rather than replace it: platform guidelines such as Apple's Human Interface Guidelines and Google's Material Design for apps, Baymard Institute's ecommerce guidelines for online stores, and your own design system rules for consistency. Accessibility should be reviewed against WCAG as a separate pass; it's a conformance standard, not a set of heuristics, and deserves its own checklist.",
           "Whatever you choose, give every evaluator the same list and make sure they understand it before starting. Nielsen Norman Group suggests a short practice round on a simple design to calibrate the team.",
         ],
       },
@@ -370,7 +370,7 @@ export const designPosts4: BlogPost[] = [
       {
         heading: "The Evaluator Process",
         body: [
-          "Each evaluator works alone. [[https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/|Nielsen Norman Group's process]] has evaluators go through the interface at least twice. The first pass is for learning the product's flow and scope without judging it. The second pass is for inspecting each screen and interaction against the heuristics and recording every violation. Sessions of one to two hours per evaluator are typical for a focused scope.",
+          "Each evaluator works alone. Nielsen Norman Group's process has evaluators go through the interface at least twice. The first pass is for learning the product's flow and scope without judging it. The second pass is for inspecting each screen and interaction against the heuristics and recording every violation. Sessions of one to two hours per evaluator are typical for a focused scope.",
           "Evaluators should record the problem, where it occurs, which heuristic it violates and a screenshot, without discussing findings with others until everyone has finished. Independence is what makes several evaluators more valuable than one.",
         ],
         callout: {
@@ -405,7 +405,7 @@ export const designPosts4: BlogPost[] = [
       {
         heading: "Rating Severity",
         body: [
-          "Send the consolidated list to each evaluator and ask them to rate every problem independently, then average or agree the scores. Nielsen's [[https://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/|severity ratings]] combine frequency, impact and persistence, and also consider market impact.",
+          "Send the consolidated list to each evaluator and ask them to rate every problem independently, then average or agree the scores. Nielsen's severity ratings combine frequency, impact and persistence, and also consider market impact.",
         ],
         table: {
           headers: ["Rating", "Label"],
@@ -523,7 +523,7 @@ export const designPosts4: BlogPost[] = [
       {
         heading: "What Is a User Flow?",
         body: [
-          "A user flow is a diagram of how someone completes a specific task inside a product: signing up, finding a product, inviting a teammate, booking an appointment. [[https://www.nngroup.com/articles/user-journeys-vs-user-flows/|Nielsen Norman Group]] describes flows as the typical or ideal steps for a common task within a product, usually completed in minutes, drawn as flowcharts or wireflows.",
+          "A user flow is a diagram of how someone completes a specific task inside a product: signing up, finding a product, inviting a teammate, booking an appointment. Nielsen Norman Group describes flows as the typical or ideal steps for a common task within a product, usually completed in minutes, drawn as flowcharts or wireflows.",
           "Flows sit between research and screens. They turn what you learned about users into a sequence you can design, and they make gaps obvious before anyone draws a detailed interface. In the [[/blogs/ux-design-process|UX design process]], they usually come after information architecture and before wireframes.",
         ],
       },
@@ -714,7 +714,7 @@ export const designPosts4: BlogPost[] = [
         body: [
           "**Information architecture** is the organization, labelling, navigation and search systems of a product. It decides which categories exist, what they're called, how deep the hierarchy goes and how items relate. The [[/blogs/information-architecture|information architecture guide]] covers how to create one.",
           "**A user flow** is a diagram of the steps, screens, decisions and outcomes involved in completing a specific task. The [[/blogs/user-flow-design|user flow design guide]] covers how to map one.",
-          "**A sitemap** is a hierarchical diagram of pages or screens. [[https://www.nngroup.com/articles/information-architecture-sitemaps/|Nielsen Norman Group]] draws the distinction clearly: the IA is the conceptual structure, and the sitemap is one artifact that documents it.",
+          "**A sitemap** is a hierarchical diagram of pages or screens. Nielsen Norman Group draws the distinction clearly: the IA is the conceptual structure, and the sitemap is one artifact that documents it.",
         ],
       },
       {
@@ -922,7 +922,7 @@ export const designPosts4: BlogPost[] = [
       {
         heading: "Error Messages",
         body: [
-          "[[https://www.nngroup.com/articles/error-message-guidelines/|Nielsen Norman Group's error-message guidelines]] come down to three things: make the error visible next to where it happened, explain the problem in plain language without blame, and help users fix it efficiently, including by keeping what they already entered.",
+          "Nielsen Norman Group's error-message guidelines come down to three things: make the error visible next to where it happened, explain the problem in plain language without blame, and help users fix it efficiently, including by keeping what they already entered.",
         ],
         table: {
           headers: ["Poor", "Better"],
@@ -937,7 +937,7 @@ export const designPosts4: BlogPost[] = [
       {
         heading: "Empty States",
         body: [
-          "Empty screens appear when there's nothing to show yet, after a search or filter returns nothing, or after a user clears everything. [[https://www.nngroup.com/articles/empty-state-interface-design/|Nielsen Norman Group's empty state guidelines]] recommend using them to communicate system status, help users learn the product and offer a direct path to the next task. An empty dashboard should say what will appear there and offer the one action that gets it started, not just show a blank area.",
+          "Empty screens appear when there's nothing to show yet, after a search or filter returns nothing, or after a user clears everything. Nielsen Norman Group's empty state guidelines recommend using them to communicate system status, help users learn the product and offer a direct path to the next task. An empty dashboard should say what will appear there and offer the one action that gets it started, not just show a blank area.",
         ],
       },
       {
@@ -972,7 +972,7 @@ export const designPosts4: BlogPost[] = [
       {
         heading: "Microcopy and Accessibility",
         body: [
-          "Many [[https://www.w3.org/TR/WCAG22/|WCAG 2.2]] success criteria depend on words. Forms need labels or instructions (3.3.2) and errors must be identified in text (3.3.1), with suggestions for fixing them where known (3.3.3). The purpose of each link should be clear from its text or context (2.4.4), so avoid “click here”. Status messages such as “Item added to cart” should be announced to assistive technology without moving focus (4.1.3). Images that convey information need text alternatives (1.1.1).",
+          "Many WCAG 2.2 success criteria depend on words. Forms need labels or instructions (3.3.2) and errors must be identified in text (3.3.1), with suggestions for fixing them where known (3.3.3). The purpose of each link should be clear from its text or context (2.4.4), so avoid “click here”. Status messages such as “Item added to cart” should be announced to assistive technology without moving focus (4.1.3). Images that convey information need text alternatives (1.1.1).",
           "Plain language helps everyone: people using screen readers, people with cognitive disabilities, people reading in a second language and anyone in a hurry. See [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]].",
         ],
       },

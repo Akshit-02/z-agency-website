@@ -99,7 +99,7 @@ export const commercePosts90: BlogPost[] = [
       {
         heading: "Changes and Proration",
         body: [
-          "Customers change plans, quantities, frequency and addresses. Decide for each change whether it applies now with proration, at the next renewal, or to the next shipment. Software-style subscriptions usually prorate; physical product subscriptions usually apply changes to the next shipment, because goods already shipped cannot be partly reversed. Billing platforms document their proration behaviour, for example [[https://docs.stripe.com/billing/subscriptions/prorations|Stripe's proration options]], and your choice should be explained in plain language wherever the customer makes the change.",
+          "Customers change plans, quantities, frequency and addresses. Decide for each change whether it applies now with proration, at the next renewal, or to the next shipment. Software-style subscriptions usually prorate; physical product subscriptions usually apply changes to the next shipment, because goods already shipped cannot be partly reversed. Billing platforms document their proration behaviour, for example Stripe's proration options, and your choice should be explained in plain language wherever the customer makes the change.",
         ],
       },
       {
@@ -324,7 +324,7 @@ export const commercePosts90: BlogPost[] = [
       {
         heading: "Finance and Reporting",
         body: [
-          "Outstanding points have a value. Finance teams often need reports of points issued, redeemed, expired and outstanding, and an estimate of how many will never be redeemed (breakage). Under revenue standards such as [[https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/|IFRS 15]] and ASC 606, part of the revenue from a sale that earns points may need to be deferred. Provide the ledger data and let your accountants decide the treatment.",
+          "Outstanding points have a value. Finance teams often need reports of points issued, redeemed, expired and outstanding, and an estimate of how many will never be redeemed (breakage). Under revenue standards such as IFRS 15 and ASC 606, part of the revenue from a sale that earns points may need to be deferred. Provide the ledger data and let your accountants decide the treatment.",
         ],
       },
       {
@@ -507,7 +507,7 @@ export const commercePosts90: BlogPost[] = [
       {
         heading: "Disclosure and Terms",
         body: [
-          "When advocates are rewarded for recommending products publicly, rules in many markets expect that relationship to be disclosed. In the US, the [[https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides|FTC's Endorsement Guides]] cover incentivized endorsements. Give advocates short disclosure wording, and publish terms covering eligibility, rewards, timing, caps and your right to withhold rewards for abuse. Check privacy rules for any feature that asks customers to enter friends' contact details.",
+          "When advocates are rewarded for recommending products publicly, rules in many markets expect that relationship to be disclosed. In the US, the FTC's Endorsement Guides cover incentivized endorsements. Give advocates short disclosure wording, and publish terms covering eligibility, rewards, timing, caps and your right to withhold rewards for abuse. Check privacy rules for any feature that asks customers to enter friends' contact details.",
         ],
       },
       {

@@ -43,7 +43,7 @@ export const commercePosts11: BlogPost[] = [
       {
         heading: "Why Breadcrumbs Matter in Stores",
         body: [
-          "Shoppers often land deep in a store, on a product page from search or an ad. Breadcrumbs answer “where am I?” and offer a route to similar products one level up. NN/g describes breadcrumbs as an important wayfinding aid that shows the current page and its ancestors, typically back to the homepage ([[https://www.nngroup.com/articles/breadcrumbs/|NN/g]]). They're part of [[/blogs/ecommerce-navigation-design|ecommerce navigation]] and the store's [[/blogs/ecommerce-internal-linking|internal linking]].",
+          "Shoppers often land deep in a store, on a product page from search or an ad. Breadcrumbs answer “where am I?” and offer a route to similar products one level up. NN/g describes breadcrumbs as an important wayfinding aid that shows the current page and its ancestors, typically back to the homepage (NN/g). They're part of [[/blogs/ecommerce-navigation-design|ecommerce navigation]] and the store's [[/blogs/ecommerce-internal-linking|internal linking]].",
         ],
       },
       {
@@ -231,7 +231,7 @@ export const commercePosts11: BlogPost[] = [
       {
         heading: "SEO and Technical Notes",
         body: [
-          "Empty search result pages and filter combinations with no products shouldn't be indexable. Google's faceted navigation guidance is to return a 404 for filter combinations with no results ([[https://developers.google.com/search/docs/crawling-indexing/crawling-managing-faceted-navigation|Google Search Central]]). Make sure empty states announce themselves to screen readers when results update dynamically.",
+          "Empty search result pages and filter combinations with no products shouldn't be indexable. Google's faceted navigation guidance is to return a 404 for filter combinations with no results (Google Search Central). Make sure empty states announce themselves to screen readers when results update dynamically.",
         ],
       },
       {
@@ -317,7 +317,7 @@ export const commercePosts11: BlogPost[] = [
       {
         heading: "Status Codes Matter",
         body: [
-          "The page must return an HTTP 404 (or 410 for deliberately removed content). A “not found” page that returns 200 is a soft 404: search engines may index it as thin content and keep recrawling it. Google's documentation explains how status codes affect crawling and how Search Console reports soft 404s ([[https://developers.google.com/search/docs/advanced/crawling/soft-404-errors|Google Search Central]]).",
+          "The page must return an HTTP 404 (or 410 for deliberately removed content). A “not found” page that returns 200 is a soft 404: search engines may index it as thin content and keep recrawling it. Google's documentation explains how status codes affect crawling and how Search Console reports soft 404s (Google Search Central).",
         ],
       },
       {

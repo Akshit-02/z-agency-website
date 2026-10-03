@@ -63,7 +63,7 @@ export const aiAppsPosts9: BlogPost[] = [
       {
         heading: "The Five Dimensions",
         body: [
-          "The [[https://airc.nist.gov/airmf-resources/playbook/|NIST AI RMF Playbook]] offers suggested actions that can inform the governance dimension.",
+          "The NIST AI RMF Playbook offers suggested actions that can inform the governance dimension.",
         ],
         table: {
           headers: ["Dimension", "Questions to answer", "Common gaps"],
@@ -291,7 +291,7 @@ export const aiAppsPosts9: BlogPost[] = [
       {
         heading: "Context, Metadata and Definitions",
         body: [
-          "The [[https://arxiv.org/abs/1803.09010|Datasheets for Datasets]] proposal is a useful template for documenting datasets.",
+          "The Datasheets for Datasets proposal is a useful template for documenting datasets.",
         ],
         checklist: [
           "Business definitions for key fields and metrics",
@@ -472,8 +472,8 @@ export const aiAppsPosts9: BlogPost[] = [
       {
         heading: "Frameworks and Standards",
         body: [
-          "The [[https://www.nist.gov/itl/ai-risk-management-framework|NIST AI Risk Management Framework]] organizes work into govern, map, measure and manage functions, and its Generative AI Profile (NIST AI 600-1, July 2024) lists generative AI risks such as confabulation, data privacy and information security. ISO/IEC 42001 defines a certifiable AI management system. The EU AI Act sets legal obligations by risk category, with transparency duties applying from 2 August 2026 and stand-alone high-risk obligations deferred to 2 December 2027 by the 2026 Digital Omnibus agreement. Use these as references rather than building from scratch.",
-          "See [[https://www.iso.org/standard/42001|ISO/IEC 42001]] and NIST's [[https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence|Generative AI Profile (NIST AI 600-1)]].",
+          "The NIST AI Risk Management Framework organizes work into govern, map, measure and manage functions, and its Generative AI Profile (NIST AI 600-1, July 2024) lists generative AI risks such as confabulation, data privacy and information security. ISO/IEC 42001 defines a certifiable AI management system. The EU AI Act sets legal obligations by risk category, with transparency duties applying from 2 August 2026 and stand-alone high-risk obligations deferred to 2 December 2027 by the 2026 Digital Omnibus agreement. Use these as references rather than building from scratch.",
+          "See ISO/IEC 42001 and NIST's Generative AI Profile (NIST AI 600-1).",
         ],
         cta: {
           title: "Need governance that enables AI rather than blocking it?",
@@ -730,7 +730,7 @@ export const aiAppsPosts9: BlogPost[] = [
         body: [
           "Several resources help structure AI security work. The OWASP Top 10 for LLM Applications lists common vulnerability classes such as prompt injection, sensitive information disclosure and excessive agency. MITRE ATLAS catalogues adversary tactics against AI systems. NIST's AI Risk Management Framework and its Generative AI Profile (NIST AI 600-1) cover security alongside broader risks.",
           "Use these as checklists and shared vocabulary within existing security programmes rather than as separate processes. Map controls to your threat model, test them and record results. Governance links are covered in [[/blogs/ai-governance-framework|AI governance framework]].",
-          "Sources: [[https://genai.owasp.org/llm-top-10/|OWASP Top 10 for LLM Applications]], [[https://atlas.mitre.org/|MITRE ATLAS]] and [[https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence|NIST AI 600-1]].",
+          "Sources: OWASP Top 10 for LLM Applications, MITRE ATLAS and NIST AI 600-1.",
         ],
       },
       {

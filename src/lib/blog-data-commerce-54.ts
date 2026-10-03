@@ -645,7 +645,7 @@ export const commercePosts54: BlogPost[] = [
       {
         heading: "Choosing a Primary View",
         body: [
-          "Pick one tool and model as your primary attribution view and use it consistently. For many stores, that's the web analytics tool rather than individual ad platforms, because it applies one set of rules across channels. In GA4, the available models are data-driven attribution and last-click variants; Google has retired first-click, linear, time-decay and position-based models ([[https://support.google.com/analytics/answer/10596866|Google Analytics Help]]).",
+          "Pick one tool and model as your primary attribution view and use it consistently. For many stores, that's the web analytics tool rather than individual ad platforms, because it applies one set of rules across channels. In GA4, the available models are data-driven attribution and last-click variants; Google has retired first-click, linear, time-decay and position-based models (Google Analytics Help).",
           "Use ad platform reporting for optimization within each platform (which campaign or creative performs better), and your primary view for comparisons across channels. Don't add up platform-reported conversions.",
         ],
         cta: {
@@ -806,7 +806,7 @@ export const commercePosts54: BlogPost[] = [
       {
         heading: "What GA4 Offers Now",
         body: [
-          "Google Analytics 4 changed its attribution options. According to Google's documentation, the available reporting attribution models are data-driven attribution, paid and organic last click, and Google paid channels last click. First-click, linear, time-decay and position-based models were deprecated and removed ([[https://support.google.com/analytics/answer/10597962|Google Analytics Help]]). Google recommends data-driven attribution as the default ([[https://support.google.com/analytics/answer/10596866|Google Analytics Help]]).",
+          "Google Analytics 4 changed its attribution options. According to Google's documentation, the available reporting attribution models are data-driven attribution, paid and organic last click, and Google paid channels last click. First-click, linear, time-decay and position-based models were deprecated and removed (Google Analytics Help). Google recommends data-driven attribution as the default (Google Analytics Help).",
           "Rule-based multi-touch models still appear in some other analytics and marketing tools, and they can be built in a warehouse from path data. Check your own tool's current documentation, as these options change.",
         ],
       },
@@ -997,7 +997,7 @@ export const commercePosts54: BlogPost[] = [
       {
         heading: "Loading Data",
         body: [
-          "Most teams use managed connectors for common sources and build custom pipelines only where needed. For Shopify, the Admin GraphQL API and its bulk operations support large exports, and webhooks notify you of changes such as new orders or refunds ([[https://shopify.dev/docs/api/usage/bulk-operations/queries|Shopify developer docs]]). Whichever method you use, land raw data unchanged in its own tables and keep history, so you can rebuild models when definitions change.",
+          "Most teams use managed connectors for common sources and build custom pipelines only where needed. For Shopify, the Admin GraphQL API and its bulk operations support large exports, and webhooks notify you of changes such as new orders or refunds (Shopify developer docs). Whichever method you use, land raw data unchanged in its own tables and keep history, so you can rebuild models when definitions change.",
           "Watch for rate limits, backfills after outages, deleted records and time zones. A connector that silently misses refunds will make every revenue figure wrong.",
         ],
       },

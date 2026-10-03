@@ -83,7 +83,7 @@ export const aiCorePosts1: BlogPost[] = [
       {
         heading: "When Not to Build an Agent",
         body: [
-          "If the steps are always the same, a deterministic workflow is cheaper, faster and easier to test; see [[/blogs/workflow-automation|workflow automation]]. If the task needs one model call (classify this email, summarize this document), use a single structured call inside a workflow; see [[/blogs/ai-workflow-automation|AI workflow automation]]. Agents are for tasks where the path genuinely varies. Anthropic's guidance on [[https://www.anthropic.com/engineering/building-effective-agents|building effective agents]] makes the same point: start with the simplest pattern that works.",
+          "If the steps are always the same, a deterministic workflow is cheaper, faster and easier to test; see [[/blogs/workflow-automation|workflow automation]]. If the task needs one model call (classify this email, summarize this document), use a single structured call inside a workflow; see [[/blogs/ai-workflow-automation|AI workflow automation]]. Agents are for tasks where the path genuinely varies. Anthropic's guidance on building effective agents makes the same point: start with the simplest pattern that works.",
         ],
       },
       {
@@ -117,7 +117,7 @@ export const aiCorePosts1: BlogPost[] = [
       {
         heading: "State, Memory and Orchestration",
         body: [
-          "Agents that run for more than one request need state stored outside the model: the task, steps taken, tool results, pending approvals and outputs. Durable state lets an agent pause for a human, survive a crash and be audited afterwards. Frameworks such as LangGraph provide [[https://docs.langchain.com/oss/python/langgraph/interrupts|interrupts and checkpointers]] for this; you can also build it on your own database and queue.",
+          "Agents that run for more than one request need state stored outside the model: the task, steps taken, tool results, pending approvals and outputs. Durable state lets an agent pause for a human, survive a crash and be audited afterwards. Frameworks such as LangGraph provide interrupts and checkpointers for this; you can also build it on your own database and queue.",
           "Memory is different from state. State is about the current task; memory is what carries across tasks, such as a customer's preferences. Treat long-term memory as personal data with consent and expiry; see [[/blogs/ai-agent-memory|AI agent memory]]. When several agents or steps must be coordinated, see [[/blogs/ai-agent-orchestration|AI agent orchestration]] and [[/blogs/single-agent-vs-multi-agent-systems|single-agent vs multi-agent systems]].",
         ],
         cta: {
@@ -145,13 +145,13 @@ export const aiCorePosts1: BlogPost[] = [
         heading: "Choosing Models, Frameworks and Platforms",
         body: [
           "Model choice should come from evaluation, not reputation. Test two or three candidate models on your example set and compare success rate, latency and cost per task. Many agents mix models: a stronger one for planning, cheaper ones for classification or extraction; see [[/blogs/llm-routing|LLM routing]].",
-          "For the runtime, the options range from direct API calls with your own loop, to provider SDKs (the OpenAI Agents SDK, the Claude Agent SDK), to graph frameworks such as LangGraph, to low-code platforms such as n8n, Make and Zapier, which now include agent steps. Low-code suits internal, low-risk workflows; custom code suits customer-facing agents, complex permissions and strict testing. On OpenAI, note that the Assistants API was retired on 26 August 2026 in favour of the [[https://developers.openai.com/api/docs/assistants/migration|Responses API]].",
+          "For the runtime, the options range from direct API calls with your own loop, to provider SDKs (the OpenAI Agents SDK, the Claude Agent SDK), to graph frameworks such as LangGraph, to low-code platforms such as n8n, Make and Zapier, which now include agent steps. Low-code suits internal, low-risk workflows; custom code suits customer-facing agents, complex permissions and strict testing. On OpenAI, note that the Assistants API was retired on 26 August 2026 in favour of the Responses API.",
         ],
       },
       {
         heading: "Security, Privacy and Guardrails",
         body: [
-          "Agents combine untrusted input (emails, web pages, documents) with the ability to act, which is exactly the situation prompt injection exploits. The [[https://genai.owasp.org/llm-top-10/|OWASP Top 10 for LLM Applications]] lists prompt injection, sensitive information disclosure and excessive agency among the main risks. Practical controls: least-privilege tools, separate read and write permissions, argument validation, approval for consequential actions, output validation, tenant isolation and audit logs. See [[/blogs/ai-agent-guardrails|AI agent guardrails]] and [[/blogs/prompt-injection-prevention|prompt injection prevention]].",
+          "Agents combine untrusted input (emails, web pages, documents) with the ability to act, which is exactly the situation prompt injection exploits. The OWASP Top 10 for LLM Applications lists prompt injection, sensitive information disclosure and excessive agency among the main risks. Practical controls: least-privilege tools, separate read and write permissions, argument validation, approval for consequential actions, output validation, tenant isolation and audit logs. See [[/blogs/ai-agent-guardrails|AI agent guardrails]] and [[/blogs/prompt-injection-prevention|prompt injection prevention]].",
         ],
       },
       {
@@ -506,7 +506,7 @@ export const aiCorePosts1: BlogPost[] = [
       {
         heading: "Models and Structured Outputs",
         body: [
-          "Use structured outputs wherever the agent's output feeds code. OpenAI's structured outputs and Anthropic's [[https://platform.claude.com/docs/en/build-with-claude/structured-outputs|structured outputs and strict tool use]] constrain responses to a JSON schema, which removes a whole class of parsing failures. Validate anyway: a well-formed object can still contain a wrong value. Choose models per step from evaluation results; a planning step may need a stronger model than a classification step. Put model access behind your own interface or an [[/blogs/llm-gateway|LLM gateway]] so providers can change without rewriting the agent.",
+          "Use structured outputs wherever the agent's output feeds code. OpenAI's structured outputs and Anthropic's structured outputs and strict tool use constrain responses to a JSON schema, which removes a whole class of parsing failures. Validate anyway: a well-formed object can still contain a wrong value. Choose models per step from evaluation results; a planning step may need a stronger model than a classification step. Put model access behind your own interface or an [[/blogs/llm-gateway|LLM gateway]] so providers can change without rewriting the agent.",
         ],
       },
       {
@@ -525,7 +525,7 @@ export const aiCorePosts1: BlogPost[] = [
       {
         heading: "State, Checkpoints and Resumability",
         body: [
-          "Store a run record with the goal, inputs, each step's decision and tool result, pending approvals and the outcome. Checkpoint after each step so a run can resume after a crash or a human decision. LangGraph's [[https://docs.langchain.com/oss/python/langgraph/interrupts|interrupts and checkpointers]] implement this pattern; workflow engines and your own database plus a queue can too. Make every write action idempotent, because resumed runs will sometimes repeat a step.",
+          "Store a run record with the goal, inputs, each step's decision and tool result, pending approvals and the outcome. Checkpoint after each step so a run can resume after a crash or a human decision. LangGraph's interrupts and checkpointers implement this pattern; workflow engines and your own database plus a queue can too. Make every write action idempotent, because resumed runs will sometimes repeat a step.",
         ],
       },
       {
@@ -547,7 +547,7 @@ export const aiCorePosts1: BlogPost[] = [
       {
         heading: "Observability and Evaluation",
         body: [
-          "Trace every run: model calls with inputs, outputs, tokens and latency; tool calls with arguments and results; approvals; and the final outcome. The [[https://opentelemetry.io/docs/specs/semconv/gen-ai/|OpenTelemetry GenAI semantic conventions]] define standard names for these spans. Feed traces into evaluation: offline test sets before release and sampled scoring in production. See [[/blogs/ai-agent-observability|observability]] and [[/blogs/ai-agent-evaluation|evaluation]].",
+          "Trace every run: model calls with inputs, outputs, tokens and latency; tool calls with arguments and results; approvals; and the final outcome. The OpenTelemetry GenAI semantic conventions define standard names for these spans. Feed traces into evaluation: offline test sets before release and sampled scoring in production. See [[/blogs/ai-agent-observability|observability]] and [[/blogs/ai-agent-evaluation|evaluation]].",
         ],
       },
       {
@@ -602,7 +602,7 @@ export const aiCorePosts1: BlogPost[] = [
       {
         heading: "Security Architecture",
         body: [
-          "Treat the agent as a new kind of privileged user. Give it its own identity per environment, scope credentials to the specific resources it needs, and when it acts for a person, use that person's delegated permissions. Separate trusted instructions from untrusted inputs (emails, documents, web content, tool results), because any of them can carry prompt injection. Enforce limits inside tools, require approvals for consequential actions, keep secrets out of prompts and logs, and log every action with the identity it used. These controls map onto the [[https://genai.owasp.org/llm-top-10/|OWASP Top 10 for LLM Applications]] risks of prompt injection, sensitive information disclosure and excessive agency; see [[/blogs/prompt-injection-prevention|prompt injection prevention]] and [[/blogs/ecommerce-security|security practices]] for the wider application.",
+          "Treat the agent as a new kind of privileged user. Give it its own identity per environment, scope credentials to the specific resources it needs, and when it acts for a person, use that person's delegated permissions. Separate trusted instructions from untrusted inputs (emails, documents, web content, tool results), because any of them can carry prompt injection. Enforce limits inside tools, require approvals for consequential actions, keep secrets out of prompts and logs, and log every action with the identity it used. These controls map onto the OWASP Top 10 for LLM Applications risks of prompt injection, sensitive information disclosure and excessive agency; see [[/blogs/prompt-injection-prevention|prompt injection prevention]] and [[/blogs/ecommerce-security|security practices]] for the wider application.",
         ],
       },
       {

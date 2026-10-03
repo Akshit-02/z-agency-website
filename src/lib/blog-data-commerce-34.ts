@@ -284,7 +284,7 @@ export const commercePosts34: BlogPost[] = [
       {
         heading: "Marketplace-Specific Filters",
         body: [
-          "On top of category attributes, price and rating, marketplace buyers filter by things that vary by seller. Baymard's research on filtering identifies price, user rating, colour, size and brand as essential filter types for ecommerce, and found many sites don't offer all of them; marketplaces need those plus their own ([[https://baymard.com/blog/essential-filters|Baymard Institute]]).",
+          "On top of category attributes, price and rating, marketplace buyers filter by things that vary by seller. Baymard's research on filtering identifies price, user rating, colour, size and brand as essential filter types for ecommerce, and found many sites don't offer all of them; marketplaces need those plus their own (Baymard Institute).",
         ],
         table: {
           headers: ["Filter", "Why buyers use it"],
@@ -312,7 +312,7 @@ export const commercePosts34: BlogPost[] = [
       {
         heading: "Sorting",
         body: [
-          "Default to relevance, and offer price (both directions), rating, newest and, for many marketplaces, fastest delivery. Baymard identifies price, user rating, best-selling and newest as essential sort types and recommends avoiding sorts shoppers rarely need ([[https://baymard.com/blog/essential-sort-types|Baymard Institute]]). When sorting by price, use the price of the offer that would actually be bought, including delivery where possible, so a low item price with high shipping doesn't mislead.",
+          "Default to relevance, and offer price (both directions), rating, newest and, for many marketplaces, fastest delivery. Baymard identifies price, user rating, best-selling and newest as essential sort types and recommends avoiding sorts shoppers rarely need (Baymard Institute). When sorting by price, use the price of the offer that would actually be bought, including delivery where possible, so a low item price with high shipping doesn't mislead.",
         ],
       },
       {
@@ -430,7 +430,7 @@ export const commercePosts34: BlogPost[] = [
       {
         heading: "Charge Patterns",
         body: [
-          "Providers name them differently, but the patterns are similar. Stripe Connect's documentation describes three charge types and when to use each ([[https://docs.stripe.com/connect/charges|Stripe docs]]):",
+          "Providers name them differently, but the patterns are similar. Stripe Connect's documentation describes three charge types and when to use each (Stripe docs):",
         ],
         table: {
           headers: ["Pattern (Stripe name)", "How funds move", "Suits", "Refunds and disputes"],
@@ -485,7 +485,7 @@ export const commercePosts34: BlogPost[] = [
       {
         heading: "Refunds",
         body: [
-          "Refunds are per order line. With platform charges, the refund comes from the platform balance and the platform reverses all or part of the related transfer to recover funds from the seller, along with any commission reversal your terms specify. Stripe's documentation notes that if a transfer reversal is attempted and the connected account has an insufficient balance, the refund request can fail rather than go pending, so design for that case ([[https://docs.stripe.com/connect/charges|Stripe docs]]). Record refunds and reversals in your ledger.",
+          "Refunds are per order line. With platform charges, the refund comes from the platform balance and the platform reverses all or part of the related transfer to recover funds from the seller, along with any commission reversal your terms specify. Stripe's documentation notes that if a transfer reversal is attempted and the connected account has an insufficient balance, the refund request can fail rather than go pending, so design for that case (Stripe docs). Record refunds and reversals in your ledger.",
         ],
       },
       {
@@ -504,7 +504,7 @@ export const commercePosts34: BlogPost[] = [
       {
         heading: "Webhooks and Failure Handling",
         body: [
-          "Charges, refunds, disputes, transfers, payouts and seller account changes are all reported asynchronously. Treat webhooks as the source of truth for payment state: verify signatures, deduplicate by event ID, return success quickly and process asynchronously, and don't rely on arrival order. Stripe documents that undelivered events are retried for up to three days in live mode and recommends these practices ([[https://docs.stripe.com/webhooks|Stripe docs]]).",
+          "Charges, refunds, disputes, transfers, payouts and seller account changes are all reported asynchronously. Treat webhooks as the source of truth for payment state: verify signatures, deduplicate by event ID, return success quickly and process asynchronously, and don't rely on arrival order. Stripe documents that undelivered events are retried for up to three days in live mode and recommends these practices (Stripe docs).",
         ],
         code: {
           label: "Marketplace payment event handling (pseudocode)",
@@ -555,7 +555,7 @@ export const commercePosts34: BlogPost[] = [
       {
         heading: "Payment Orchestration and Payout Schedules",
         body: [
-          "Some marketplaces use more than one payment provider for coverage or resilience, with an orchestration layer routing payments. This adds flexibility but complicates split payments and reconciliation, so do it only when needed. Payout schedules (daily, weekly, after delivery plus a holding period) balance seller cash flow against refund and fraud risk; newer sellers often start with longer holds. Providers such as Stripe Connect document several charge types for splitting funds, including direct charges, destination charges and separate charges and transfers ([[https://docs.stripe.com/connect/charges|Stripe documentation]]).",
+          "Some marketplaces use more than one payment provider for coverage or resilience, with an orchestration layer routing payments. This adds flexibility but complicates split payments and reconciliation, so do it only when needed. Payout schedules (daily, weekly, after delivery plus a holding period) balance seller cash flow against refund and fraud risk; newer sellers often start with longer holds. Providers such as Stripe Connect document several charge types for splitting funds, including direct charges, destination charges and separate charges and transfers (Stripe documentation).",
         ],
       },
       {

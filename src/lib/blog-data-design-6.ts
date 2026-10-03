@@ -95,7 +95,7 @@ export const designPosts6: BlogPost[] = [
       {
         heading: "Promotions Without Clutter",
         body: [
-          "Promotions belong on the homepage when they're relevant to most visitors, but they shouldn't crowd out orientation. Avoid auto-rotating carousels for essential messages: later slides are easy to miss, rotation competes with reading, and [[https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html|WCAG 2.2.2]] requires that automatically moving content can be paused, stopped or hidden. A single hero, or a static row of two or three offers, usually communicates more.",
+          "Promotions belong on the homepage when they're relevant to most visitors, but they shouldn't crowd out orientation. Avoid auto-rotating carousels for essential messages: later slides are easy to miss, rotation competes with reading, and WCAG 2.2.2 requires that automatically moving content can be paused, stopped or hidden. A single hero, or a static row of two or three offers, usually communicates more.",
           "Pop-ups that appear the moment a visitor lands interrupt the very orientation the homepage is meant to provide. If you use them, delay them and make them easy to dismiss.",
         ],
       },
@@ -243,7 +243,7 @@ export const designPosts6: BlogPost[] = [
         heading: "Depth and Breadth",
         body: [
           "Every extra level adds a click and a decision; every extra option at one level adds scanning time. Aim for a hierarchy where each level is a meaningful choice. If a level contains only one or two subcategories, merge it. If one category contains dozens of subcategories, consider an intermediary category page that groups them, or move some distinctions into filters.",
-          "Baymard Institute's [[https://baymard.com/research/homepage-and-category-usability|homepage and category navigation research]] covers taxonomy, main navigation and intermediary category pages in detail, and reports that most benchmarked sites perform at a mediocre level or worse in this area, so it's an area where careful design stands out.",
+          "Baymard Institute's homepage and category navigation research covers taxonomy, main navigation and intermediary category pages in detail, and reports that most benchmarked sites perform at a mediocre level or worse in this area, so it's an area where careful design stands out.",
         ],
       },
       {
@@ -255,7 +255,7 @@ export const designPosts6: BlogPost[] = [
       {
         heading: "Mega Menus",
         body: [
-          "For stores with several levels, [[https://www.nngroup.com/articles/mega-menus-work-well/|Nielsen Norman Group found that mega menus work well]]: large panels that show many options at once, grouped into sections. Guidelines that make them work:",
+          "For stores with several levels, Nielsen Norman Group found that mega menus work well: large panels that show many options at once, grouped into sections. Guidelines that make them work:",
         ],
         checklist: [
           "Group options into clear sections with headings that are themselves clickable links",
@@ -271,7 +271,7 @@ export const designPosts6: BlogPost[] = [
         heading: "Mobile Navigation",
         body: [
           "On mobile, the menu is usually a panel that drills down one level at a time. Show where the shopper is, provide an obvious back option, and include a “Shop all [category]” link at each level so they can see everything without choosing a subcategory. Keep search visible in the header rather than inside the menu, because many mobile shoppers search first. Native apps often add a bottom tab bar for main sections such as Home, Search, Categories, Wishlist and Account.",
-          "Baymard's [[https://baymard.com/blog/mobile-commerce-design|mobile ecommerce research]] identifies disorientation as one of the overarching mobile problems: shoppers lose track of where they are. Clear headings, breadcrumbs or parent links and predictable back behaviour address it. See [[/blogs/mobile-ecommerce-ux|mobile ecommerce UX]].",
+          "Baymard's mobile ecommerce research identifies disorientation as one of the overarching mobile problems: shoppers lose track of where they are. Clear headings, breadcrumbs or parent links and predictable back behaviour address it. See [[/blogs/mobile-ecommerce-ux|mobile ecommerce UX]].",
           "Hamburger menus, bottom tabs and preserving filter state on back are compared in [[/blogs/mobile-ecommerce-navigation|navigation patterns for mobile stores]].",
         ],
       },
@@ -406,8 +406,8 @@ export const designPosts6: BlogPost[] = [
       {
         heading: "Which Filters to Offer",
         body: [
-          "Baymard Institute identifies five filter types users expect across most ecommerce sites: price, user rating, colour, size and brand. Its benchmark found only 43% of sites offered all five, and 80% of mobile test users applied price filters regardless of product type ([[https://baymard.com/blog/5-essential-filters|Baymard Institute, 2020]]). Add category-specific filters on top; see [[/blogs/fashion-ecommerce-filters|fashion filters]] for a worked vertical example and [[/blogs/ecommerce-product-sorting|product sorting]] for the complementary control.",
-          "Baymard Institute identifies [[https://baymard.com/blog/5-essential-filters|five essential filter types]] for most stores and reports how many sites still don't offer each: price (12% don't), user rating (53% don't), colour (10% don't), size (15% don't) and brand (27% don't). On top of these, each category needs filters for the attributes shoppers actually use to decide: fit and material for clothing, screen size and storage for electronics, dimensions for furniture, compatibility for parts and accessories.",
+          "Baymard Institute identifies five filter types users expect across most ecommerce sites: price, user rating, colour, size and brand. Its benchmark found only 43% of sites offered all five, and 80% of mobile test users applied price filters regardless of product type (Baymard Institute, 2020). Add category-specific filters on top; see [[/blogs/fashion-ecommerce-filters|fashion filters]] for a worked vertical example and [[/blogs/ecommerce-product-sorting|product sorting]] for the complementary control.",
+          "Baymard Institute identifies five essential filter types for most stores and reports how many sites still don't offer each: price (12% don't), user rating (53% don't), colour (10% don't), size (15% don't) and brand (27% don't). On top of these, each category needs filters for the attributes shoppers actually use to decide: fit and material for clothing, screen size and storage for electronics, dimensions for furniture, compatibility for parts and accessories.",
           "Find those attributes in search logs, customer questions, reviews, support tickets and competitor stores, then check that your product data can support them.",
         ],
       },
@@ -436,7 +436,7 @@ export const designPosts6: BlogPost[] = [
       {
         heading: "Explain Unfamiliar Filters",
         body: [
-          "Specialist attributes such as fabric weight, lens mount or thread count need explanation for many shoppers. Baymard's research on [[https://baymard.com/blog/explain-industry-specific-filters|industry-specific filters]] found that most sites don't explain them. A short tooltip or inline hint next to the filter heading, or a link to a buying guide, lets shoppers use filters they would otherwise ignore or misuse.",
+          "Specialist attributes such as fabric weight, lens mount or thread count need explanation for many shoppers. Baymard's research on industry-specific filters found that most sites don't explain them. A short tooltip or inline hint next to the filter heading, or a link to a buying guide, lets shoppers use filters they would otherwise ignore or misuse.",
         ],
       },
       {
@@ -448,7 +448,7 @@ export const designPosts6: BlogPost[] = [
       {
         heading: "Applied Filters",
         body: [
-          "Shoppers need to see which filters are active, especially after scrolling or returning to the list. Baymard reports that [[https://baymard.com/research-articles/how-to-design-applied-filters|28% of sites don't display an overview of applied filters at all]]. Show the selected values, not just a count, typically above the product list, with a remove control on each and a “Clear all” option. On mobile, a horizontally scrolling row of chips above the list works well as long as it's clear there are more.",
+          "Shoppers need to see which filters are active, especially after scrolling or returning to the list. Baymard reports that 28% of sites don't display an overview of applied filters at all. Show the selected values, not just a count, typically above the product list, with a remove control on each and a “Clear all” option. On mobile, a horizontally scrolling row of chips above the list works well as long as it's clear there are more.",
         ],
       },
       {
@@ -566,7 +566,7 @@ export const designPosts6: BlogPost[] = [
       {
         heading: "Why Search Deserves Its Own Design",
         body: [
-          "Search users tell you exactly what they want, in their own words. When search misunderstands them, they often assume the store doesn't sell the product and leave. Baymard Institute's [[https://baymard.com/research/ecommerce-search|ecommerce search research]] splits the problem into query types, the search form and logic, autocomplete, results logic and guidance, and results layout and filtering, and notes that a poor search experience can look just as polished as a good one. You only find out by testing it.",
+          "Search users tell you exactly what they want, in their own words. When search misunderstands them, they often assume the store doesn't sell the product and leave. Baymard Institute's ecommerce search research splits the problem into query types, the search form and logic, autocomplete, results logic and guidance, and results layout and filtering, and notes that a poor search experience can look just as polished as a good one. You only find out by testing it.",
           "This guide covers search design on any platform. For Shopify-specific fixes, including zero-result queries, see [[/blogs/shopify-search-optimization|Shopify search optimization]]. For in-app search architecture, see [[/blogs/mobile-app-search|mobile app search]].",
         ],
       },
@@ -579,7 +579,7 @@ export const designPosts6: BlogPost[] = [
       {
         heading: "Understand the Query Types Shoppers Use",
         body: [
-          "Shoppers don't all search the same way. Baymard's [[https://baymard.com/blog/ecommerce-search-query-types|analysis of search query types]] lists the most common types and how many benchmarked sites have issues handling each.",
+          "Shoppers don't all search the same way. Baymard's analysis of search query types lists the most common types and how many benchmarked sites have issues handling each.",
         ],
         table: {
           headers: ["Query type", "Example", "Sites with issues (Baymard)"],
@@ -598,7 +598,7 @@ export const designPosts6: BlogPost[] = [
       {
         heading: "Autocomplete",
         body: [
-          "Autocomplete helps shoppers form better queries, avoid typos and learn the store's terminology. Baymard's [[https://baymard.com/blog/autocomplete-design|autocomplete research]] reports that around 80% of sites offer it but only 19% get all the implementation details right.",
+          "Autocomplete helps shoppers form better queries, avoid typos and learn the store's terminology. Baymard's autocomplete research reports that around 80% of sites offer it but only 19% get all the implementation details right.",
         ],
         checklist: [
           "Show no more than about 10 suggestions on desktop and around 4 to 8 on mobile",
@@ -661,7 +661,7 @@ export const designPosts6: BlogPost[] = [
       {
         heading: "Accessible Search",
         body: [
-          "Give the search field a proper label, not just placeholder text. Autocomplete should follow the [[https://www.w3.org/WAI/ARIA/apg/patterns/combobox/|WAI-ARIA combobox pattern]] so screen reader users hear that suggestions are available and can move through them with the keyboard. Announce result counts when results load or update, and make sure focus lands sensibly on the results page.",
+          "Give the search field a proper label, not just placeholder text. Autocomplete should follow the WAI-ARIA combobox pattern so screen reader users hear that suggestions are available and can move through them with the keyboard. Announce result counts when results load or update, and make sure focus lands sensibly on the results page.",
         ],
       },
       {

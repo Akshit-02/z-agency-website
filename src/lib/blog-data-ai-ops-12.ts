@@ -67,7 +67,7 @@ export const aiOpsPosts12: BlogPost[] = [
       {
         heading: "Open-Weight vs Open-Source",
         body: [
-          "Many models described as open are open-weight: you can download and run the weights, but the licence may restrict certain uses, require attribution or impose conditions above user thresholds, and training data is often undisclosed. The Open Source Initiative's [[https://opensource.org/ai/open-source-ai-definition|Open Source AI Definition]] expects detailed data information, complete training and inference code and the parameters, under terms that permit use, study, modification and sharing. Read each model's licence (for example, the [[https://www.llama.com/llama3/license/|Llama 3 licence]] has its own conditions) and record it in your AI inventory.",
+          "Many models described as open are open-weight: you can download and run the weights, but the licence may restrict certain uses, require attribution or impose conditions above user thresholds, and training data is often undisclosed. The Open Source Initiative's Open Source AI Definition expects detailed data information, complete training and inference code and the parameters, under terms that permit use, study, modification and sharing. Read each model's licence (for example, the Llama 3 licence has its own conditions) and record it in your AI inventory.",
         ],
       },
       {
@@ -92,7 +92,7 @@ export const aiOpsPosts12: BlogPost[] = [
       {
         heading: "Serving Software",
         body: [
-          "Use a purpose-built inference engine rather than a generic web server. [[https://docs.vllm.ai/en/latest/|vLLM]] and [[https://docs.sglang.ai/|SGLang]] are widely used open-source engines for GPUs; [[https://nvidia.github.io/TensorRT-LLM/|TensorRT-LLM]] targets NVIDIA hardware; [[https://github.com/ggml-org/llama.cpp|llama.cpp]] serves quantized models on CPUs and small machines. Most expose OpenAI-compatible APIs, which lets applications switch between self-hosted and hosted models through a gateway. See [[/blogs/llm-model-serving|LLM model serving]] for engine trade-offs.",
+          "Use a purpose-built inference engine rather than a generic web server. vLLM and SGLang are widely used open-source engines for GPUs; TensorRT-LLM targets NVIDIA hardware; llama.cpp serves quantized models on CPUs and small machines. Most expose OpenAI-compatible APIs, which lets applications switch between self-hosted and hosted models through a gateway. See [[/blogs/llm-model-serving|LLM model serving]] for engine trade-offs.",
         ],
       },
       {
@@ -239,7 +239,7 @@ export const aiOpsPosts12: BlogPost[] = [
       {
         heading: "Why Build an AI Platform",
         body: [
-          "Without a platform, each team solves the same problems separately: obtaining model access, handling keys, building retrieval pipelines, logging prompts, estimating cost and satisfying security reviews. The results are duplicated effort, inconsistent security, unknown spend and governance gaps. The CNCF describes the risk of teams building [[https://www.cncf.io/blog/2026/08/13/llmops-and-platform-engineering-who-should-own-the-ai-pipeline/|unsanctioned pipelines outside the platform]] and argues for exposing LLMOps as a governed, self-service capability.",
+          "Without a platform, each team solves the same problems separately: obtaining model access, handling keys, building retrieval pipelines, logging prompts, estimating cost and satisfying security reviews. The results are duplicated effort, inconsistent security, unknown spend and governance gaps. The CNCF describes the risk of teams building unsanctioned pipelines outside the platform and argues for exposing LLMOps as a governed, self-service capability.",
         ],
       },
       {
