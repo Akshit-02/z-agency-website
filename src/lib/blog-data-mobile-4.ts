@@ -11,11 +11,12 @@ export const mobilePosts4: BlogPost[] = [
   {
     slug: "mobile-app-authentication",
     title: "Mobile App Authentication: Login, Signup, OTP, Social Login and Security",
+    seoTitle: "Mobile App Authentication: Login, OTP, Social Login and Security",
     excerpt:
       "How mobile app authentication works: choosing between passwords, OTP, passkeys, social login and biometrics, handling tokens and sessions safely, and designing login flows users complete.",
     category: "Mobile Apps",
     banner: "authflow",
-    date: "2026-10-14",
+    date: "2026-09-25",
     readingTime: "14 min read",
     relatedServiceSlugs: ["mobile-app-development", "ui-ux-design"],
     relatedIndustrySlugs: ["fintech", "healthcare-healthtech", "ecommerce"],
@@ -157,7 +158,7 @@ export const mobilePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want your authentication flow reviewed?",
-          description: "Talk to ZSpace Labs about a review of your sign-in UX, token handling and backend checks.",
+          description: "Talk to ZSpace Labs about a review of your sign-in UX, token handling and backend checks. Learn more about our [[/services/mobile-app-development|React Native app development]].",
         },
       },
       {
@@ -183,7 +184,7 @@ export const mobilePosts4: BlogPost[] = [
       "A practical security guide for mobile apps: threat modeling, storage, networking, API security, secrets, dependencies, tampering, logging and testing, aligned with OWASP guidance.",
     category: "Mobile Apps",
     banner: "securitylock",
-    date: "2026-10-14",
+    date: "2026-09-25",
     readingTime: "15 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["fintech", "healthcare-healthtech", "ecommerce"],
@@ -338,7 +339,7 @@ export const mobilePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want a security review of your app?",
-          description: "Talk to ZSpace Labs about assessing your app and API against MASVS and prioritizing fixes.",
+          description: "Talk to ZSpace Labs about assessing your app and API against MASVS and prioritizing fixes. See how we approach [[/services/mobile-app-development|mobile app development]].",
         },
       },
       {
@@ -358,7 +359,7 @@ export const mobilePosts4: BlogPost[] = [
       "What privacy means in practice for mobile apps: data minimization, permissions, consent, third-party SDKs, retention, deletion requests, and Apple and Google disclosure requirements.",
     category: "Mobile Apps",
     banner: "datalifecycle",
-    date: "2026-10-15",
+    date: "2026-09-25",
     readingTime: "14 min read",
     relatedServiceSlugs: ["mobile-app-development", "ui-ux-design"],
     relatedIndustrySlugs: ["healthcare-healthtech", "fintech", "education-edtech"],
@@ -494,7 +495,7 @@ export const mobilePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want an app privacy review?",
-          description: "Talk to ZSpace Labs about auditing your app's data flows, SDKs and store declarations.",
+          description: "Talk to ZSpace Labs about auditing your app's data flows, SDKs and store declarations. Explore our [[/services/mobile-app-development|iOS and Android app development services]].",
         },
       },
       {
@@ -515,7 +516,7 @@ export const mobilePosts4: BlogPost[] = [
       "How push notifications work through APNs and FCM, how to handle tokens, permissions and payloads, and how to design notifications users value instead of disabling.",
     category: "Mobile Apps",
     banner: "pushflow",
-    date: "2026-10-15",
+    date: "2026-09-25",
     readingTime: "14 min read",
     relatedServiceSlugs: ["mobile-app-development", "ui-ux-design", "cro-audit"],
     relatedIndustrySlugs: ["ecommerce", "media-entertainment", "fintech"],
@@ -631,7 +632,7 @@ export const mobilePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Want your notification strategy reviewed?",
-          description: "Talk to ZSpace Labs about notifications users keep enabled, with the analytics to prove they're working.",
+          description: "Talk to ZSpace Labs about notifications users keep enabled, with the analytics to prove they're working. Learn more about our [[/services/mobile-app-development|React Native app development]].",
         },
       },
       {
@@ -647,11 +648,12 @@ export const mobilePosts4: BlogPost[] = [
   {
     slug: "offline-first-mobile-app-development",
     title: "Offline-First Mobile App Development: When and How to Build Offline Apps",
+    seoTitle: "Offline-First Mobile App Development: When and How",
     excerpt:
       "What offline-first means, when it's worth building, and how local databases, sync queues, conflict resolution and offline UX fit together.",
     category: "Mobile Apps",
     banner: "offlinesync",
-    date: "2026-10-15",
+    date: "2026-09-25",
     readingTime: "13 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["logistics-supply-chain", "healthcare-healthtech", "construction-infrastructure"],
@@ -788,7 +790,7 @@ export const mobilePosts4: BlogPost[] = [
         ],
         cta: {
           title: "Not sure whether your app needs offline-first?",
-          description: "Talk to ZSpace Labs about your users' connectivity and workflows before committing to the added complexity.",
+          description: "Talk to ZSpace Labs about your users' connectivity and workflows before committing to the added complexity. See how we approach [[/services/mobile-app-development|mobile app development]].",
         },
       },
       {

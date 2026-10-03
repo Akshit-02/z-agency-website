@@ -11,9 +11,9 @@ import { industries, categoryOrder, categoryCopy } from "@/lib/industries-data";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Industries We Work With — Technology Built Around Your Business",
+  title: "Industries: Websites, Apps and Automation by Sector",
   description:
-    "ZSpace Labs designs and builds digital products for real estate, D2C, beauty, fashion, fintech, manufacturing, healthcare, SaaS and more — technology shaped around how each industry actually works.",
+    "How ZSpace Labs builds websites, apps, Shopify stores and AI automation for real estate, D2C, fintech, healthcare, SaaS, manufacturing and more.",
   alternates: { canonical: "/industries" },
 };
 

@@ -15,6 +15,7 @@ export const shopifyCroPosts3: BlogPost[] = [
   {
     slug: "shopify-cro-checklist",
     title: "The Shopify CRO Checklist: 50+ Things to Check Before You Change Anything",
+    seoTitle: "Shopify CRO Checklist: 50+ Things to Check Before Changing Anything",
     excerpt:
       "A fast, practical checklist across discovery, product pages, cart, checkout, trust, mobile, speed and analytics — for a quick pass before a deeper audit.",
     category: "Shopify & Ecommerce",
@@ -130,7 +131,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Ready to go deeper than a checklist?",
-          description: "See the full [[/blogs/shopify-cro-audit|Shopify CRO audit framework]] for the evidence-gathering and prioritization process this checklist feeds into.",
+          description: "See the full [[/blogs/shopify-cro-audit|Shopify CRO audit framework]] for the evidence-gathering and prioritization process this checklist feeds into. See how we approach [[/services/cro-audit|conversion rate optimisation]].",
         },
       },
       {
@@ -272,7 +273,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         table: croAuditFrameworkTable,
         cta: {
           title: "Want a professional audit before testing these tips?",
-          description: "ZSpace Labs can identify which of these tactics addresses a real, evidenced problem on your specific store, and in what order.",
+          description: "ZSpace Labs can identify which of these tactics addresses a real, evidenced problem on your specific store, and in what order. Explore our [[/services/cro-audit|CRO audit services]].",
         },
       },
       {
@@ -390,7 +391,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         table: croPrioritizationTable,
         cta: {
           title: "Want an outside review of what's actually costing you conversions?",
-          description: "See the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]] for the structured, evidence-based version of this process.",
+          description: "See the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]] for the structured, evidence-based version of this process. Learn more about our [[/services/cro-audit|conversion audits]].",
         },
       },
       {
@@ -487,7 +488,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         table: croAuditFrameworkTable,
         cta: {
           title: "Want the real cause confirmed, not just the likely one?",
-          description: "See the [[/blogs/shopify-cro-audit|Shopify CRO audit framework]] for how to move from symptom to confirmed cause.",
+          description: "See the [[/blogs/shopify-cro-audit|Shopify CRO audit framework]] for how to move from symptom to confirmed cause. See how we approach [[/services/cro-audit|conversion rate optimisation]].",
         },
       },
       {
@@ -584,7 +585,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         table: croAuditFrameworkTable,
         cta: {
           title: "Want this investigation run on your store, end to end?",
-          description: "See the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]] for the full, structured version of this process.",
+          description: "See the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]] for the full, structured version of this process. Explore our [[/services/cro-audit|CRO audit services]].",
         },
       },
       {
@@ -600,6 +601,7 @@ export const shopifyCroPosts3: BlogPost[] = [
   {
     slug: "shopify-funnel-audit",
     title: "Shopify Funnel Audit: Finding the Stage That's Actually Losing You Customers",
+    seoTitle: "Shopify Funnel Audit: Find the Stage Losing You Customers",
     excerpt:
       "A funnel-level audit table across sessions, product views, add-to-cart, reached checkout and completed checkout — segmented by traffic source.",
     category: "Shopify & Ecommerce",
@@ -680,7 +682,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         table: croAuditFrameworkTable,
         cta: {
           title: "Ready for the full audit process?",
-          description: "See the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]] for how funnel findings connect into a prioritized roadmap.",
+          description: "See the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]] for how funnel findings connect into a prioritized roadmap. Learn more about our [[/services/cro-audit|conversion audits]].",
         },
       },
       {
@@ -810,7 +812,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         table: croAuditFrameworkTable,
         cta: {
           title: "Want the full audit process applied to your product pages?",
-          description: "See the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]] for how page-level findings feed into a prioritized roadmap.",
+          description: "See the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]] for how page-level findings feed into a prioritized roadmap. See how we approach [[/services/cro-audit|conversion rate optimisation]].",
         },
       },
       {
@@ -913,7 +915,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         table: croAuditFrameworkTable,
         cta: {
           title: "Ready for the full store audit?",
-          description: "See the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]] for how homepage findings fit into the full prioritized roadmap.",
+          description: "See the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]] for how homepage findings fit into the full prioritized roadmap. Explore our [[/services/cro-audit|CRO audit services]].",
         },
       },
       {
@@ -1010,7 +1012,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         table: croAuditFrameworkTable,
         cta: {
           title: "Ready to go deeper across the whole store?",
-          description: "See the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]] for how collection-page findings fit into a full prioritized roadmap.",
+          description: "See the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]] for how collection-page findings fit into a full prioritized roadmap. Learn more about our [[/services/cro-audit|conversion audits]].",
         },
       },
       {
@@ -1109,7 +1111,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         table: croAuditFrameworkTable,
         cta: {
           title: "Ready to audit the rest of the funnel?",
-          description: "See the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]] and the related [[/blogs/shopify-checkout-audit|checkout audit]] for the next stage.",
+          description: "See the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]] and the related [[/blogs/shopify-checkout-audit|checkout audit]] for the next stage. See how we approach [[/services/cro-audit|conversion rate optimisation]].",
         },
       },
       {

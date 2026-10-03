@@ -6,6 +6,7 @@ import { Reveal } from "@/components/ScrollReveal";
 import { ContactForm } from "@/components/ContactForm";
 import { StructuredData } from "@/components/StructuredData";
 import { site } from "@/lib/site";
+import { ORG_ID, WEBSITE_ID } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Contact — Start a Project",
@@ -27,7 +28,10 @@ export default function ContactPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "ContactPage",
+          name: "Contact ZSpace Labs",
           url: `${site.url}/contact`,
+          isPartOf: { "@id": WEBSITE_ID },
+          about: { "@id": ORG_ID },
         }}
       />
       <PageHero

@@ -5,19 +5,23 @@ import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { Search } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { BlogCard } from "./BlogCard";
-import { categories, type BlogPost } from "@/lib/blog-data";
+import { categories, type BlogSummary } from "@/lib/blog-data";
+
+const PAGE_SIZE = 24;
 
 const EASE = [0.25, 1, 0.5, 1] as const;
 
-export function BlogExplorer({ posts }: { posts: BlogPost[] }) {
+export function BlogExplorer({ posts }: { posts: BlogSummary[] }) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
   const [category, setCategory] = useState<string>("All");
   const [query, setQuery] = useState(searchParams.get("q") ?? "");
+  const [visible, setVisible] = useState(PAGE_SIZE);
 
   function handleQueryChange(value: string) {
+    setVisible(PAGE_SIZE);
     setQuery(value);
     const params = new URLSearchParams(searchParams.toString());
     if (value.trim()) {
@@ -49,7 +53,10 @@ export function BlogExplorer({ posts }: { posts: BlogPost[] }) {
             <button
               key={c}
               type="button"
-              onClick={() => setCategory(c)}
+              onClick={() => {
+                setCategory(c);
+                setVisible(PAGE_SIZE);
+              }}
               aria-pressed={category === c}
               className={`rounded-full border px-4 py-2 text-[0.88rem] font-medium transition-colors duration-300 ${
                 category === c
@@ -86,19 +93,34 @@ export function BlogExplorer({ posts }: { posts: BlogPost[] }) {
               transition={{ duration: 0.25, ease: EASE }}
               className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3"
             >
-              {filtered.map((post, i) => (
+              {filtered.slice(0, visible).map((post, i) => (
                 <motion.div
                   key={post.slug}
                   initial={{ opacity: 0, y: 14 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: i * 0.05, ease: EASE }}
+                  transition={{ duration: 0.4, delay: Math.min(i % PAGE_SIZE, 8) * 0.05, ease: EASE }}
                 >
                   <BlogCard post={post} />
                 </motion.div>
               ))}
             </motion.div>
           </AnimatePresence>
-        ) : (
+        ) : null}
+        {filtered.length > visible && (
+          <div className="mt-14 flex flex-col items-center gap-3">
+            <button
+              type="button"
+              onClick={() => setVisible((v) => v + PAGE_SIZE)}
+              className="rounded-full border border-line-strong px-6 py-3 text-[0.92rem] font-medium text-ink transition-colors duration-300 hover:border-blue hover:text-blue"
+            >
+              Load more articles
+            </button>
+            <p className="text-[0.85rem] text-ink-soft">
+              Showing {Math.min(visible, filtered.length)} of {filtered.length}
+            </p>
+          </div>
+        )}
+        {filtered.length === 0 && (
           <p className="border-t border-line py-16 text-center text-[1rem] text-ink-soft">
             No articles match that search yet.
           </p>

@@ -24,7 +24,7 @@ export const aiCorePosts12: BlogPost[] = [
     banner: "supportsystem",
     bannerAlt:
       "AI customer support automation in four columns: intake (email, chat, forms, voice), understand (classify, priority, sentiment, customer data), resolve highlighted (self-service, agent assist, actions, escalation) and learn (gap reports, QA, help content, metrics).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "fintech", "telecommunications"],
@@ -205,7 +205,7 @@ export const aiCorePosts12: BlogPost[] = [
     banner: "meetingflow",
     bannerAlt:
       "Meeting assistant flow: consent and join (highlighted), record, transcribe with speakers, summary and action items, review, sync to CRM and tasks.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "5 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["professional-services", "saas-technology"],
@@ -367,7 +367,7 @@ export const aiCorePosts12: BlogPost[] = [
     banner: "extractionmethods",
     bannerAlt:
       "Comparison of extraction methods: templates with OCR rules, trained ML models and LLM or vision schema extraction (highlighted), by setup, handling of new layouts, consistency and cost; the note says validate every field whatever the method.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["fintech", "logistics-supply-chain", "insurtech"],
@@ -531,7 +531,7 @@ export const aiCorePosts12: BlogPost[] = [
     banner: "llmcostlevers",
     bannerAlt:
       "LLM cost optimization levers in four columns: tokens (shorter prompts, less context, output limits, summaries), model choice (smaller models, routing, cascades, fine-tunes where volume justifies), reuse highlighted (prompt caching, response cache, embed once, deduplication) and workload (batch APIs, off-peak jobs, fewer calls, budgets).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],

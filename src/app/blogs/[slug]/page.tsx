@@ -20,6 +20,8 @@ import { posts, getPostBySlug, getRelatedPosts } from "@/lib/blog-data";
 import { getServiceBySlug } from "@/lib/services-data";
 import { getIndustryBySlug } from "@/lib/industries-data";
 import { site } from "@/lib/site";
+import { getCategoryByName } from "@/lib/blog-categories";
+import { metaDescription, pageTitle, ORG_ID, WEBSITE_ID } from "@/lib/seo";
 
 export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
@@ -35,16 +37,17 @@ export async function generateMetadata({
   if (!post) return {};
 
   const title = post.seoTitle ?? post.title;
+  const description = metaDescription(post.excerpt);
 
   return {
-    title,
-    description: post.excerpt,
+    title: pageTitle(title),
+    description,
     alternates: { canonical: `/blogs/${post.slug}` },
     openGraph: {
       siteName: site.name,
       type: "article",
       title,
-      description: post.excerpt,
+      description,
       url: `${site.url}/blogs/${post.slug}`,
       publishedTime: post.date,
       modifiedTime: post.updated ?? post.date,
@@ -52,7 +55,7 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title,
-      description: post.excerpt,
+      description,
     },
   };
 }
@@ -81,20 +84,30 @@ export default async function BlogPostPage({
     .filter((i) => i.hasDetailPage);
 
   const relatedPosts = getRelatedPosts(post, 3);
+  const category = getCategoryByName(post.category);
 
   return (
     <>
       <StructuredData
         data={{
           "@context": "https://schema.org",
-          "@type": "Article",
+          "@type": "BlogPosting",
+          "@id": `${site.url}/blogs/${post.slug}#article`,
           headline: post.title,
-          description: post.excerpt,
+          description: metaDescription(post.excerpt),
           datePublished: post.date,
           dateModified: post.updated ?? post.date,
           image: `${site.url}/blogs/${post.slug}/opengraph-image`,
-          author: { "@type": "Organization", name: site.name },
-          publisher: { "@type": "Organization", name: site.name, url: site.url },
+          articleSection: post.category,
+          inLanguage: "en",
+          author: { "@id": ORG_ID },
+          publisher: { "@id": ORG_ID },
+          isPartOf: { "@id": WEBSITE_ID },
+          about: relatedServices.map((service) => ({
+            "@type": "Service",
+            name: service.name,
+            url: `${site.url}/services/${service.slug}`,
+          })),
           mainEntityOfPage: `${site.url}/blogs/${post.slug}`,
         }}
       />
@@ -119,6 +132,7 @@ export default async function BlogPostPage({
             <Breadcrumbs
               items={[
                 { name: "Blogs", href: "/blogs" },
+                ...(category ? [{ name: category.name, href: `/blogs/category/${category.slug}` }] : []),
                 { name: post.title, href: `/blogs/${post.slug}` },
               ]}
             />

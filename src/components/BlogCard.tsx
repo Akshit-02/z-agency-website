@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import type { BlogPost } from "@/lib/blog-data";
+import type { BlogSummary } from "@/lib/blog-data";
 import { BlogBanner } from "./BlogBanner";
 
-export function BlogCard({ post }: { post: BlogPost }) {
+export function BlogCard({ post }: { post: BlogSummary }) {
   return (
     <Link href={`/blogs/${post.slug}`} className="group flex flex-col">
       <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-line">

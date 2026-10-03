@@ -22,7 +22,7 @@ export const aiAppsPosts10: BlogPost[] = [
     banner: "aiprivacy",
     bannerAlt:
       "AI data privacy in four columns: collect less (minimize, purpose, redact, pseudonymize), protect (encrypt, access control, isolation, logging), provider terms highlighted (retention, training use, region, subprocessors) and rights (notice, access, deletion, objection).",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["healthcare-healthtech", "fintech", "b2b-enterprise"],
@@ -208,7 +208,7 @@ export const aiAppsPosts10: BlogPost[] = [
     banner: "modeleval",
     bannerAlt:
       "AI model evaluation in four columns: task quality highlighted (accuracy, completeness, faithfulness, format), robustness (paraphrases, noise, edge cases, languages), safety (harmful output, bias checks, leakage, refusals) and operations (latency, cost, rate limits, stability).",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "fintech", "healthcare-healthtech"],
@@ -400,7 +400,7 @@ export const aiAppsPosts10: BlogPost[] = [
     banner: "modelmonitor",
     bannerAlt:
       "AI model monitoring in four columns: inputs (volume, distribution, language, new topics), outputs highlighted (validation failures, refusals, length, flags), performance (sampled quality, feedback, labels, outcomes) and operations (latency, errors, cost, versions).",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "fintech"],
@@ -584,7 +584,7 @@ export const aiAppsPosts10: BlogPost[] = [
     banner: "pocpilotprod",
     bannerAlt:
       "Comparison of proof of concept, pilot (highlighted) and production by the question each answers, users, data, duration and exit outcome.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["b2b-enterprise", "startups", "saas-technology"],

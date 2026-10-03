@@ -16,7 +16,7 @@ export const designPosts3: BlogPost[] = [
       "How to design an online store that's easy to shop: homepage, navigation, category pages, search and filters, product pages, cart, checkout, mobile and trust.",
     category: "UI/UX",
     banner: "ecomflow",
-    date: "2026-10-23",
+    date: "2026-09-25",
     readingTime: "16 min read",
     relatedServiceSlugs: ["ui-ux-design", "shopify-development", "cro-audit"],
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer", "fashion-apparel"],
@@ -141,6 +141,29 @@ export const designPosts3: BlogPost[] = [
         },
       },
       {
+        "heading": "Ecommerce Design by Product Category",
+        "body": [
+          "Store design varies with what you sell. These guides cover category-specific layouts, product pages and trust signals:"
+        ],
+        "checklist": [
+          "[[/blogs/fashion-ecommerce-website-design|Fashion Ecommerce Website Design]]",
+          "[[/blogs/beauty-ecommerce-website-design|Beauty Ecommerce Website Design]]",
+          "[[/blogs/jewelry-ecommerce-website-design|Jewelry Ecommerce Website Design]]",
+          "[[/blogs/electronics-ecommerce-website-design|Electronics Ecommerce Website Design]]",
+          "[[/blogs/furniture-ecommerce-website-design|Furniture Ecommerce Website Design]]",
+          "[[/blogs/food-ecommerce-website-design|Food Ecommerce Website Design]]",
+          "[[/blogs/sports-ecommerce-website-design|Sports Ecommerce Website Design]]",
+          "[[/blogs/pet-ecommerce-website-design|Pet Ecommerce Website Design]]",
+          "[[/blogs/baby-products-ecommerce-website-design|Baby Products Ecommerce Website Design]]",
+          "[[/blogs/home-decor-ecommerce-website-design|Home Decor Ecommerce Website Design]]",
+          "[[/blogs/automotive-ecommerce-website-design|Automotive Ecommerce Website Design]]",
+          "[[/blogs/health-wellness-ecommerce-website-design|Health & Wellness Ecommerce Website Design]]",
+          "[[/blogs/luxury-ecommerce-website-design|Luxury Ecommerce UX]]",
+          "[[/blogs/skincare-ecommerce-website-design|Skincare Ecommerce Website Design]]",
+          "[[/blogs/b2b-ecommerce-website-design|B2B Ecommerce Website Design]]"
+        ]
+      },
+      {
         heading: "Conclusion",
         body: [
           "Ecommerce design is about removing effort and doubt at every step of the shopping journey. Structure the catalog around shoppers, make listings easy to narrow, answer questions on product pages, keep cart and checkout transparent and short, and design for mobile and speed from the start. For category-specific guidance, see our guides to [[/blogs/fashion-ecommerce-website-design|fashion]], [[/blogs/beauty-ecommerce-website-design|beauty]], [[/blogs/jewelry-ecommerce-website-design|jewelry]], [[/blogs/electronics-ecommerce-website-design|electronics]] and [[/blogs/furniture-ecommerce-website-design|furniture]] ecommerce design.",
@@ -157,7 +180,7 @@ export const designPosts3: BlogPost[] = [
       "How to design product pages that answer buying questions: media, value proposition, price, variants, delivery and returns, reviews, details and the purchase area, including D2C considerations.",
     category: "UI/UX",
     banner: "pdpflow",
-    date: "2026-10-24",
+    date: "2026-09-25",
     readingTime: "15 min read",
     relatedServiceSlugs: ["ui-ux-design", "shopify-development", "cro-audit"],
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer", "beauty-personal-care"],
@@ -304,7 +327,7 @@ export const designPosts3: BlogPost[] = [
     banner: "plpanatomy",
     bannerAlt:
       "Product listing page wireframe: breadcrumb, category title and item count, filter panel, applied filters, sort control, a grid of product cards with image, name, price, rating and swatches, and a load more button.",
-    date: "2026-10-24",
+    date: "2026-09-25",
     updated: "2026-09-29",
     readingTime: "16 min read",
     relatedServiceSlugs: ["ui-ux-design", "shopify-development", "cro-audit"],
@@ -545,7 +568,7 @@ export const designPosts3: BlogPost[] = [
       "How to design a Shopify store: choosing a theme, working with Online Store 2.0 templates, sections and blocks, designing key templates, and knowing when custom design is needed.",
     category: "Shopify & Ecommerce",
     banner: "shopifyflow",
-    date: "2026-10-24",
+    date: "2026-09-25",
     readingTime: "13 min read",
     relatedServiceSlugs: ["shopify-development", "ui-ux-design", "cro-audit"],
     relatedIndustrySlugs: ["d2c-consumer", "fashion-apparel", "beauty-personal-care"],
@@ -667,7 +690,7 @@ export const designPosts3: BlogPost[] = [
       "How D2C brands can design the experience after the first order: accounts, order tracking, quick reorders, subscriptions, replenishment reminders and loyalty.",
     category: "UI/UX",
     banner: "d2cflow",
-    date: "2026-10-25",
+    date: "2026-09-25",
     readingTime: "12 min read",
     relatedServiceSlugs: ["ui-ux-design", "shopify-development", "cro-audit"],
     relatedIndustrySlugs: ["d2c-consumer", "beauty-personal-care", "food-beverage"],

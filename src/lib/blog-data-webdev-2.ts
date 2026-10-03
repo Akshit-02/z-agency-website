@@ -123,7 +123,7 @@ export const webDevPosts2: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Ready to talk through your specific project requirements?",
-          description: "See the [[/blogs/website-development-guide|complete website development guide]] for the full picture before your first vendor conversation.",
+          description: "See the [[/blogs/website-development-guide|complete website development guide]] for the full picture before your first vendor conversation. Learn more about our [[/services/website-development|Next.js and React development work]].",
         },
       },
       {
@@ -266,7 +266,7 @@ export const webDevPosts2: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Ready to move from requirements to a full project plan?",
-          description: "See the [[/blogs/website-development-project-planning|website project planning guide]] for the next step after requirements are defined.",
+          description: "See the [[/blogs/website-development-project-planning|website project planning guide]] for the next step after requirements are defined. See how we approach [[/services/website-development|website development]].",
         },
       },
       {
@@ -398,7 +398,7 @@ export const webDevPosts2: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Ready to move from planning into active development?",
-          description: "See the [[/blogs/website-development-process|complete website development process]] for what happens after planning is finished.",
+          description: "See the [[/blogs/website-development-process|complete website development process]] for what happens after planning is finished. Explore our [[/services/website-development|website and web app development services]].",
         },
       },
       {
@@ -430,6 +430,7 @@ export const webDevPosts2: BlogPost[] = [
   {
     slug: "website-redesign-vs-rebuild",
     title: "Website Redesign vs. Website Rebuild: What's the Difference and Which Do You Need?",
+    seoTitle: "Website Redesign vs Rebuild: Which Do You Need?",
     excerpt:
       "Distinguishing redesign, rebuild and incremental improvement — and a practical framework for deciding which approach actually fits your situation.",
     category: "Web Development",
@@ -526,7 +527,7 @@ export const webDevPosts2: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Planning a redesign or rebuild and want it scoped properly?",
-          description: "See the [[/blogs/when-does-your-website-need-a-redesign|signs your website needs a redesign guide]] for a deeper look at the specific symptoms worth diagnosing first.",
+          description: "See the [[/blogs/when-does-your-website-need-a-redesign|signs your website needs a redesign guide]] for a deeper look at the specific symptoms worth diagnosing first. Learn more about our [[/services/website-development|Next.js and React development work]].",
         },
       },
       {
@@ -652,7 +653,7 @@ export const webDevPosts2: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Ready to figure out whether you need a redesign or a rebuild?",
-          description: "See the [[/blogs/website-redesign-vs-rebuild|redesign vs. rebuild guide]] for how to translate these symptoms into the right scope of project.",
+          description: "See the [[/blogs/website-redesign-vs-rebuild|redesign vs. rebuild guide]] for how to translate these symptoms into the right scope of project. See how we approach [[/services/website-development|website development]].",
         },
       },
       {
@@ -767,7 +768,7 @@ export const webDevPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Not sure if Next.js is the right fit or overkill for your project?",
-          description: "See the [[/blogs/custom-website-vs-website-builder|custom development vs. website builder guide]] for the broader decision this technology choice sits inside.",
+          description: "See the [[/blogs/custom-website-vs-website-builder|custom development vs. website builder guide]] for the broader decision this technology choice sits inside. Explore our [[/services/website-development|website and web app development services]].",
         },
       },
       {
@@ -880,7 +881,7 @@ export const webDevPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want to see how this choice affects your specific project?",
-          description: "See the [[/blogs/website-development-guide|complete website development guide]] for how technology choice fits into the broader development picture.",
+          description: "See the [[/blogs/website-development-guide|complete website development guide]] for how technology choice fits into the broader development picture. Learn more about our [[/services/website-development|Next.js and React development work]].",
         },
       },
       {

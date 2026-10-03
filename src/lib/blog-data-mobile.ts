@@ -33,7 +33,7 @@ export const mobilePosts: BlogPost[] = [
       "What mobile app development involves, the types of apps and platform approaches, the full build lifecycle, what drives cost, and how to choose a partner.",
     category: "Mobile Apps",
     banner: "hub",
-    date: "2026-10-07",
+    date: "2026-09-25",
     readingTime: "16 min read",
     relatedServiceSlugs: ["mobile-app-development", "ui-ux-design"],
     relatedIndustrySlugs: ["fintech", "healthcare-healthtech", "education-edtech"],
@@ -175,7 +175,7 @@ export const mobilePosts: BlogPost[] = [
       "The variables that actually determine what an app costs to build and run: platforms, features, design, backend, integrations, testing and maintenance.",
     category: "Mobile Apps",
     banner: "tiers",
-    date: "2026-10-07",
+    date: "2026-09-25",
     readingTime: "12 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["fintech", "healthcare-healthtech", "startups"],
@@ -283,7 +283,7 @@ export const mobilePosts: BlogPost[] = [
         ],
         cta: {
           title: "Planning your app budget?",
-          description: "Talk to ZSpace Labs about scoping a first release that fits your budget without cutting what users actually need.",
+          description: "Talk to ZSpace Labs about scoping a first release that fits your budget without cutting what users actually need. See how we approach [[/services/mobile-app-development|mobile app development]].",
         },
       },
       {
@@ -303,7 +303,7 @@ export const mobilePosts: BlogPost[] = [
       "A stage-by-stage view of an app project, from discovery to store launch, and the factors that realistically lengthen or shorten it.",
     category: "Mobile Apps",
     banner: "roadmap",
-    date: "2026-10-07",
+    date: "2026-09-25",
     readingTime: "11 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["startups", "fintech", "education-edtech"],
@@ -404,7 +404,7 @@ export const mobilePosts: BlogPost[] = [
         ],
         cta: {
           title: "Planning your app project?",
-          description: "See the [[/blogs/mobile-app-development-process|app development process]] for how these stages fit together from idea to launch.",
+          description: "See the [[/blogs/mobile-app-development-process|app development process]] for how these stages fit together from idea to launch. Explore our [[/services/mobile-app-development|iOS and Android app development services]].",
         },
       },
       {
@@ -424,7 +424,7 @@ export const mobilePosts: BlogPost[] = [
       "A practical framework for taking an app from idea through discovery, UX, UI, architecture, development, testing, beta, launch and maintenance.",
     category: "Mobile Apps",
     banner: "appprocess",
-    date: "2026-10-08",
+    date: "2026-09-25",
     readingTime: "13 min read",
     relatedServiceSlugs: ["mobile-app-development", "ui-ux-design"],
     relatedIndustrySlugs: ["startups", "fintech", "healthcare-healthtech"],
@@ -542,7 +542,7 @@ export const mobilePosts: BlogPost[] = [
       "What to evaluate in an app development partner, from portfolio and platform experience to QA, source code ownership and contracts, plus the questions to ask.",
     category: "Mobile Apps",
     banner: "framework",
-    date: "2026-10-08",
+    date: "2026-09-25",
     readingTime: "12 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["startups", "fintech", "healthcare-healthtech"],
@@ -647,7 +647,7 @@ export const mobilePosts: BlogPost[] = [
         ],
         cta: {
           title: "Want to ask these questions of us?",
-          description: "Talk to ZSpace Labs about your app, and hold us to the same standard as anyone else you're considering.",
+          description: "Talk to ZSpace Labs about your app, and hold us to the same standard as anyone else you're considering. Learn more about our [[/services/mobile-app-development|React Native app development]].",
         },
       },
       {
@@ -667,7 +667,7 @@ export const mobilePosts: BlogPost[] = [
       "How native and cross-platform approaches compare on performance, speed, cost, code sharing, native APIs, UX and maintenance, with a decision framework.",
     category: "Mobile Apps",
     banner: "fork",
-    date: "2026-10-08",
+    date: "2026-09-25",
     readingTime: "12 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["startups", "fintech", "ecommerce"],
@@ -761,7 +761,7 @@ export const mobilePosts: BlogPost[] = [
         ],
         cta: {
           title: "Want a recommendation for your specific app?",
-          description: "Talk to ZSpace Labs about your features, users and budget, and we'll explain which approach fits and why.",
+          description: "Talk to ZSpace Labs about your features, users and budget, and we'll explain which approach fits and why. See how we approach [[/services/mobile-app-development|mobile app development]].",
         },
       },
       {
@@ -781,7 +781,7 @@ export const mobilePosts: BlogPost[] = [
       "How the two leading cross-platform frameworks differ in architecture, rendering, performance, UI, native integration, ecosystem, testing and team fit.",
     category: "Mobile Apps",
     banner: "compare3",
-    date: "2026-10-09",
+    date: "2026-09-25",
     readingTime: "13 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["startups", "fintech", "ecommerce"],
@@ -881,7 +881,7 @@ export const mobilePosts: BlogPost[] = [
         ],
         cta: {
           title: "Want a framework recommendation for your app?",
-          description: "Talk to ZSpace Labs about your product and team before committing to a framework.",
+          description: "Talk to ZSpace Labs about your product and team before committing to a framework. Explore our [[/services/mobile-app-development|iOS and Android app development services]].",
         },
       },
       {

@@ -3,6 +3,7 @@ import { site } from "@/lib/site";
 import { services } from "@/lib/services-data";
 import { posts } from "@/lib/blog-data";
 import { industriesWithDetailPages } from "@/lib/industries-data";
+import { blogCategories } from "@/lib/blog-categories";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
@@ -35,6 +36,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const categoryRoutes = blogCategories.map((category) => ({
+    url: `${site.url}/blogs/category/${category.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
+
   const postRoutes = posts.map((post) => ({
     url: `${site.url}/blogs/${post.slug}`,
     lastModified: new Date(post.updated ?? post.date),
@@ -42,5 +50,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...serviceRoutes, ...industryRoutes, ...postRoutes];
+  return [...staticRoutes, ...serviceRoutes, ...industryRoutes, ...categoryRoutes, ...postRoutes];
 }

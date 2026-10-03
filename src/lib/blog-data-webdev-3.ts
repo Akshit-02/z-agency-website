@@ -119,7 +119,7 @@ export const webDevPosts3: BlogPost[] = [
         ],
         cta: {
           title: "Not sure if headless is the right architecture for your project?",
-          description: "See the [[/blogs/nextjs-website-development|Next.js website development guide]] for how a modern framework front end pairs with a headless backend.",
+          description: "See the [[/blogs/nextjs-website-development|Next.js website development guide]] for how a modern framework front end pairs with a headless backend. See how we approach [[/services/website-development|website development]].",
         },
       },
       {
@@ -135,6 +135,7 @@ export const webDevPosts3: BlogPost[] = [
   {
     slug: "website-api-integration",
     title: "Website API Integration: How to Connect Your Website With Other Systems",
+    seoTitle: "Website API Integration: Connect Your Website to Other Systems",
     excerpt:
       "How websites connect to CRM, payment, marketing and internal systems — REST, GraphQL, webhooks, authentication and the practical realities of error handling and monitoring.",
     category: "Web Development",
@@ -350,7 +351,7 @@ export const webDevPosts3: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Ready to fix the technical foundation of your site's speed?",
-          description: "See the [[/blogs/website-development-guide|complete website development guide]] for how performance fits alongside the rest of the development process.",
+          description: "See the [[/blogs/website-development-guide|complete website development guide]] for how performance fits alongside the rest of the development process. Explore our [[/services/website-development|website and web app development services]].",
         },
       },
       {
@@ -471,7 +472,7 @@ export const webDevPosts3: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Ready to build security into your development process from the start?",
-          description: "See the [[/blogs/website-development-process|website development process guide]] for how security fits alongside design, development and QA.",
+          description: "See the [[/blogs/website-development-process|website development process guide]] for how security fits alongside design, development and QA. Learn more about our [[/services/website-development|Next.js and React development work]].",
         },
       },
       {
@@ -523,6 +524,7 @@ export const webDevPosts3: BlogPost[] = [
   {
     slug: "website-accessibility-guide",
     title: "Website Accessibility: A Practical Guide to Building More Accessible Websites",
+    seoTitle: "Website Accessibility: A Practical Guide for Business Websites",
     excerpt:
       "Semantic HTML, keyboard navigation, contrast, forms and screen reader support — grounded in W3C/WAI guidance, with best practice clearly separated from legal requirements.",
     category: "Web Development",
@@ -634,7 +636,7 @@ export const webDevPosts3: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Building accessibility into a new project from the start?",
-          description: "See the [[/blogs/website-development-process|website development process guide]] for how accessibility fits alongside design and development, not as a separate audit after launch.",
+          description: "See the [[/blogs/website-development-process|website development process guide]] for how accessibility fits alongside design and development, not as a separate audit after launch. See how we approach [[/services/website-development|website development]].",
         },
       },
       {
@@ -774,7 +776,7 @@ export const webDevPosts3: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Ready to put a real maintenance plan in place?",
-          description: "See the [[/blogs/website-development-guide|complete website development guide]] for how maintenance connects to the rest of the site's lifecycle.",
+          description: "See the [[/blogs/website-development-guide|complete website development guide]] for how maintenance connects to the rest of the site's lifecycle. Explore our [[/services/website-development|website and web app development services]].",
         },
       },
       {

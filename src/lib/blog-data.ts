@@ -195,6 +195,18 @@ export type BlogPost = {
   content: BlogSection[];
 };
 
+/** Fields needed to list an article (cards, hubs). Keeps listing pages from
+ * shipping every article body to the browser. */
+export type BlogSummary = Pick<
+  BlogPost,
+  "slug" | "title" | "excerpt" | "category" | "readingTime" | "banner" | "bannerAlt" | "date"
+>;
+
+export function toSummary(post: BlogPost): BlogSummary {
+  const { slug, title, excerpt, category, readingTime, banner, bannerAlt, date } = post;
+  return { slug, title, excerpt, category, readingTime, banner, bannerAlt, date };
+}
+
 export const categories = [
   "All",
   "Web Development",
@@ -209,178 +221,425 @@ export const posts: BlogPost[] = [
   {
     slug: "why-page-speed-still-decides-conversion",
     title: "Why page speed still decides more conversions than your design does",
+    seoTitle: "Page Speed and Conversions: Why Speed Beats Design",
     excerpt:
-      "A beautiful website that loads slowly loses to a plain one that loads fast. Here is what actually moves the needle on speed, and why most speed fixes are applied in the wrong order.",
+      
+      "Why page speed affects conversions more than most design changes, how to measure what real visitors experience, and which speed fixes to make first.",
     category: "Web Development",
     banner: "speed",
     date: "2026-02-18",
+    updated: "2026-10-03",
     readingTime: "6 min read",
     relatedServiceSlugs: ["website-development", "cro-audit"],
     relatedIndustrySlugs: ["ecommerce", "real-estate"],
     faqs: [
       {
-        q: "How fast should a website actually load?",
-        a: "As a working target, aim for your main pages to become visually complete and interactive within a couple of seconds on a typical mobile connection. The exact number matters less than the trend — every extra second before the page is usable costs you a share of visitors who won't wait.",
+        "q": "How fast should a website load?",
+        "a": "Use Google's Core Web Vitals as the benchmark: Largest Contentful Paint within 2.5 seconds, Interaction to Next Paint under 200 milliseconds and Cumulative Layout Shift below 0.1, measured at the 75th percentile of real visits."
       },
       {
-        q: "Does page speed really affect SEO rankings?",
-        a: "Yes, Core Web Vitals are a confirmed ranking signal, but the bigger effect is usually on conversion, not rank. A slow page that ranks well still loses the visitor before they see anything worth converting on.",
+        "q": "Does page speed affect SEO rankings?",
+        "a": "Core Web Vitals are part of Google's page experience signals, but relevance and content quality matter more. Speed rarely lifts a weak page to the top; it can hold back an otherwise strong one and it directly affects whether visitors stay."
       },
       {
-        q: "What's the fastest way to find out why my site is slow?",
-        a: "Run your key pages through Lighthouse or PageSpeed Insights and look at what's blocking the main thread on first load — that's almost always where the real fix is, rather than in image sizes alone.",
+        "q": "What is the fastest way to find out why my site is slow?",
+        "a": "Run the page through PageSpeed Insights, check the field data first, then look at the largest contentful element and the scripts loading before it. The biggest problem is usually visible within minutes."
+      },
+      {
+        "q": "Is a faster host enough to fix a slow website?",
+        "a": "Usually not on its own. Hosting affects server response time, but most slow pages are held back by heavy JavaScript, unoptimised images and third-party scripts that hosting cannot fix."
+      },
+      {
+        "q": "Should speed be fixed before or after a redesign?",
+        "a": "Decide speed requirements before the redesign starts. Retrofitting performance onto a finished design costs more than designing within a performance budget from the beginning."
+      },
+      {
+        "q": "Do lab scores like Lighthouse matter?",
+        "a": "They are useful for debugging, but field data from real users is what Google uses and what reflects customer experience. Use lab tools to find causes and field data to confirm results."
       },
     ],
     content: [
       {
-        heading: "Speed is a conversion feature, not a technical afterthought",
-        body: [
-          "Most teams treat page speed as something to fix after launch, once a developer has time. In practice, speed behaves like any other conversion element on the page: it sits between a visitor and the action you want them to take.",
-          "A visitor who leaves before your hero section renders never sees your value proposition, your pricing, or your call to action. No amount of copywriting or design fixes a page that never finishes loading in the visitor's mind.",
-        ],
+        "heading": "Quick answer",
+        "body": [
+          "Page speed decides conversions because visitors who wait leave before they see your offer, pricing or call to action. Measure real-user Core Web Vitals, find what delays your main content and makes interactions sluggish, and fix the biggest causes first: heavy JavaScript and third-party scripts, oversized images and client-side rendering of content that never changes. Treat speed as a requirement set during planning, not a report produced after launch."
+        ]
       },
       {
-        heading: "Where most speed budgets go wrong",
-        body: [
-          "Teams often start by compressing images or switching hosting providers. Those help, but they rarely address the actual bottleneck, which is usually unnecessary JavaScript shipped on first load.",
-          "Third-party scripts, oversized component libraries and client-side rendering for content that never changes are the most common causes of slow first paint. Fixing these requires architectural decisions made early, not a plugin added later.",
+        "heading": "Speed is a conversion feature, not a technical afterthought",
+        "body": [
+          "Most teams treat page speed as something to fix after launch, once a developer has time. In practice, speed behaves like any other conversion element on the page: it sits between a visitor and the action you want them to take.",
+          "A visitor who leaves before your hero section renders never sees your value proposition, your pricing or your call to action. No amount of copywriting or design fixes a page that never finishes loading in the visitor's mind. That is why a plain page that loads quickly often outperforms a beautiful one that does not."
+        ]
+      },
+      {
+        "heading": "What to measure: Core Web Vitals in plain terms",
+        "body": [
+          "Google's [[https://web.dev/articles/vitals|Core Web Vitals]] describe three parts of the experience. **Largest Contentful Paint (LCP)** is how long the main content takes to appear. **Interaction to Next Paint (INP)** is how quickly the page responds when someone taps or clicks. **Cumulative Layout Shift (CLS)** is how much the layout jumps while loading.",
+          "Measure them with field data from real visitors, available in PageSpeed Insights and Search Console, rather than relying only on a lab score from your own fast laptop. Field data shows what customers on average phones and networks actually experience."
         ],
-        visual: {
+        "table": {
+          "headers": [
+            "Metric",
+            "Good threshold",
+            "What usually breaks it"
+          ],
+          "rows": [
+            [
+              "LCP",
+              "2.5 s or less",
+              "Large hero images, render-blocking scripts, slow server response"
+            ],
+            [
+              "INP",
+              "200 ms or less",
+              "Heavy JavaScript, many third-party scripts, long tasks on the main thread"
+            ],
+            [
+              "CLS",
+              "0.1 or less",
+              "Images without dimensions, late-loading banners, web fonts swapping"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Where most speed budgets go wrong",
+        "body": [
+          "Teams often start by compressing images or switching hosting providers. Those help, but they rarely address the actual bottleneck, which is usually unnecessary JavaScript shipped on first load.",
+          "Third-party scripts such as chat widgets, tag managers, A/B testing tools and marketing pixels, oversized component libraries and client-side rendering for content that never changes are the most common causes of slow first paint and sluggish interaction. Fixing these requires architectural decisions made early, not a plugin added later."
+        ],
+        "cta": {
+          "title": "Is your website slower than it should be?",
+          "description": "ZSpace Labs builds fast, search-friendly sites on Next.js and fixes performance problems in existing ones. See our [[/services/website-development|website development services]]."
+        },
+        "visual": {
           variant: "bars",
           accent: "blue",
           caption: "First-load JavaScript, by source — most of it never needed to ship on page one.",
-        },
+        }
       },
       {
-        heading: "What we prioritize on every build",
-        body: [
-          "We treat {{b:Core Web Vitals}} as a requirement decided during planning: what renders on the server, what loads lazily, and what never ships to the client at all.",
-          "The result is a site that feels fast because it was built to be fast, not patched afterward — the same standard behind every [[/services/website-development|website we build]]. See the [[/blogs/website-performance-optimization|full website performance optimization guide]] for the complete technical breakdown.",
+        "heading": "Which fixes to make first",
+        "body": [
+          "Work from the largest real-user problem down. A practical order for most business websites:"
         ],
-        callout: {
-          type: "tip",
-          text: "Run a Lighthouse or PageSpeed check before design even starts. Treat the number as a requirement, not a report card handed in after the fact.",
-        },
+        "checklist": [
+          "**Remove or defer third-party scripts** that do not earn their cost, and load the rest after the main content",
+          "**Make the LCP element fast:** correctly sized, compressed image or text, preloaded, not hidden behind a slider or animation",
+          "**Ship less JavaScript:** render static content on the server and hydrate only interactive parts",
+          "**Reserve space** for images, embeds and banners so the layout does not jump",
+          "**Fix server response time** with caching and a CDN where field data shows slow first bytes",
+          "**Re-measure field data** after each change rather than chasing a perfect lab score"
+        ]
+      },
+      {
+        "heading": "How speed connects to conversion work",
+        "body": [
+          "Speed problems often hide inside conversion data. A product or landing page with healthy traffic but poor engagement on mobile is frequently a performance problem before it is a design or copy problem. Check speed by page template and device before rewriting headlines or redesigning layouts.",
+          "For ecommerce stores, our [[/blogs/shopify-speed-cro|Shopify speed and conversion guide]] covers store-specific causes, and the [[/blogs/website-performance-optimization|website performance optimization guide]] covers the full technical breakdown for custom websites."
+        ]
+      },
+      {
+        "heading": "What we prioritise on every build",
+        "body": [
+          "We treat {{b:Core Web Vitals}} as a requirement decided during planning: what renders on the server, what loads lazily and what never ships to the client at all. Performance budgets are agreed with the team before design starts, and every release is checked against them.",
+          "The result is a site that feels fast because it was built to be fast, not patched afterwards."
+        ],
+        "callout": {
+          "type": "tip",
+          "text": "Run a PageSpeed Insights check before design even starts. Treat the result as a requirement, not a report card handed in after the fact."
+        }
+      },
+      {
+        "heading": "Conclusion",
+        "body": [
+          "Speed is part of the offer: it decides whether visitors stay long enough to be persuaded. Measure what real users experience, fix the largest causes first and make performance a requirement of every change."
+        ],
+        "cta": {
+          "title": "Want a speed and conversion review?",
+          "description": "Our [[/services/cro-audit|CRO audit]] checks speed alongside the rest of the funnel, so fixes are prioritised by their effect on conversions."
+        }
       },
     ],
   },
   {
     slug: "when-to-automate-a-business-process",
-    title: "When a process is actually worth automating",
+    title: "When Is a Business Process Worth Automating?",
+    seoTitle: "When to Automate a Business Process: A Practical Framework",
     excerpt:
-      "Not every repetitive task deserves an automation. A simple framework for deciding what to automate first, and what to leave alone.",
+      
+      "A practical framework for deciding which business processes to automate first: frequency, time cost, stability, error impact and data, with a simple scoring method.",
     category: "AI & Automation",
     banner: "automation",
     date: "2026-01-27",
+    updated: "2026-10-03",
     readingTime: "5 min read",
     relatedServiceSlugs: ["ai-automation", "cro-audit"],
     relatedIndustrySlugs: ["manufacturing", "healthcare-healthtech"],
     faqs: [
       {
-        q: "What's the difference between AI automation and traditional automation (RPA)?",
-        a: "Traditional automation (RPA) follows fixed, rule-based steps and breaks when the input changes shape. AI automation can interpret messier input — an email, a support ticket, a scanned document — and still route it correctly. Most real workflows end up using both: rules for the predictable parts, AI for the parts that vary.",
+        "q": "What's the difference between AI automation and traditional automation (RPA)?",
+        "a": "Traditional automation and RPA follow fixed rules on structured data. AI automation adds models that can read unstructured content such as emails and documents and make judgement calls, which makes it useful where rules alone break down but adds evaluation and oversight needs."
       },
       {
-        q: "How much of a process should we automate on the first attempt?",
-        a: "As little as you can while still proving real value. Automating one well-understood step end to end teaches you more than a half-automated version of an entire department, and it's far easier to fix when something goes wrong.",
+        "q": "How much of a process should we automate on the first attempt?",
+        "a": "Start with one well-understood path through the process, usually the most common case, with a clear handoff to a person for everything else. Expand coverage once the first version runs reliably."
       },
       {
-        q: "Is AI automation secure for sensitive business data?",
-        a: "It can be, but it depends entirely on how the workflow is built — what data reaches which model, what's logged, and what a human reviews before anything irreversible happens. Security is a design decision in the automation, not a property of AI in general.",
+        "q": "Is AI automation secure for sensitive business data?",
+        "a": "It can be, if data is minimised, providers and settings match your data rules, permissions are enforced in your own systems and logs are protected. Sensitive processes also benefit from human approval on consequential steps."
+      },
+      {
+        "q": "Which processes are usually the best first candidates?",
+        "a": "High-volume, repetitive tasks with clear inputs and outputs: routing enquiries, extracting data from standard documents, updating records between systems and preparing routine reports."
+      },
+      {
+        "q": "When should a process not be automated yet?",
+        "a": "When it changes frequently, happens rarely, depends on undocumented judgement, or would cause serious harm if done wrong without anyone noticing. Standardise or simplify it first."
+      },
+      {
+        "q": "How do we measure whether an automation was worth it?",
+        "a": "Record a baseline before building: time per task, volume, error rate and turnaround. Compare the same measures after launch, including the time spent reviewing exceptions and maintaining the automation."
       },
     ],
     content: [
       {
-        heading: "Automation is not free",
-        body: [
-          "Every automation you build has to be maintained, monitored and updated as your business changes. Automating a process that changes every month costs more than it saves.",
-          "The right question is not 'can this be automated' but 'will this process still look the same in six months, and is it costing us enough right now to justify building it.'",
-        ],
-        callout: {
-          type: "takeaway",
-          text: "If a process changes shape every few weeks, it's usually a candidate for a lighter tool, not a custom automation.",
-        },
+        "heading": "Quick answer",
+        "body": [
+          "A process is worth automating when it happens often, takes meaningful time each run, follows a stable pattern, has clear inputs and outputs and fails in ways that can be caught. Score candidates on frequency, time cost, stability, error impact and data availability, start with the highest-scoring workflow and automate its most common path first, with a human handoff for exceptions. Rarely run or constantly changing processes usually are not worth automating yet."
+        ]
       },
       {
-        heading: "A simple way to prioritize",
-        body: [
-          "We look at three things: how often the task happens, how long it takes a person to do it, and how stable the process is. High frequency, high time cost and high stability together make a strong {{o:automation candidate}}.",
-          "Tasks that are infrequent, quick, or constantly changing usually are not worth the engineering investment yet.",
+        "heading": "Automation is not free",
+        "body": [
+          "Every automation you build has to be maintained, monitored and updated as your business changes. Automating a process that changes every month costs more than it saves.",
+          "The right question is not 'can this be automated' but 'will this process still look the same in six months, and is it costing us enough right now to justify building it'."
         ],
-        visual: {
+        "callout": {
+          "type": "tip",
+          "text": "If a process changes shape every few weeks, it's usually a candidate for a lighter tool, not a custom automation."
+        }
+      },
+      {
+        "heading": "Five questions that decide whether to automate",
+        "body": [
+          "Assess each candidate process against the same questions so decisions are comparable rather than driven by whoever asks loudest."
+        ],
+        "table": {
+          "headers": [
+            "Question",
+            "Strong candidate",
+            "Weak candidate"
+          ],
+          "rows": [
+            [
+              "How often does it happen?",
+              "Daily or many times a day",
+              "A few times a year"
+            ],
+            [
+              "How long does each run take?",
+              "Minutes to hours of manual work",
+              "Seconds"
+            ],
+            [
+              "How stable is it?",
+              "Same steps for months",
+              "Changes every few weeks"
+            ],
+            [
+              "What happens if it goes wrong?",
+              "Errors are visible and reversible",
+              "Errors are costly or silent"
+            ],
+            [
+              "Is the data available?",
+              "Inputs are accessible via systems or documents",
+              "Information lives in people's heads"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "A simple scoring method",
+        "body": [
+          "Score each process from 1 to 3 on frequency, time cost, stability and data availability, and from 1 to 3 on how safely errors can be caught. Multiply frequency by time cost to estimate the size of the opportunity, then use stability, data and error safety to judge how hard and risky it will be.",
+          "Processes with a large opportunity and low risk go first. Large opportunities with high risk are still candidates, but usually with human approval on each consequential step. Small opportunities rarely justify custom work, whatever their risk."
+        ],
+        "cta": {
+          "title": "Not sure if a process is worth automating?",
+          "description": "Tell us the process and we'll give you a straight answer, even if that answer is 'not yet'. See our [[/services/ai-automation|AI automation services]]."
+        },
+        "visual": {
           variant: "phone",
           accent: "orange",
           caption: "A narrow, well-scoped automation beats a broad, brittle one.",
-        },
-        cta: {
-          title: "Not sure if this is worth automating?",
-          description: "Tell us the process and we'll give you a straight answer — even if that answer is \"not yet.\"",
-        },
+        }
       },
       {
-        heading: "Start narrow, expand later",
-        body: [
-          "The automations that last are the ones that start by solving one specific, well-understood workflow, with clear fallbacks when something goes wrong, rather than trying to automate an entire department at once — the same scoping process we use for every [[/services/ai-automation|automation project]] we take on.",
-          "For the full method from discovery to measurement, see [[/blogs/business-process-automation|business process automation]].",
+        "heading": "When AI is needed and when it is not",
+        "body": [
+          "Many automations need no AI at all: moving data between systems on a schedule, sending notifications or applying fixed rules. These are cheaper and more predictable. AI earns its place when inputs are unstructured or varied, such as emails, documents and free-text requests, or when a step needs judgement that rules cannot express.",
+          "The comparison is covered in detail in [[/blogs/rpa-vs-ai-automation|RPA vs AI automation]] and [[/blogs/workflow-automation-vs-rpa|workflow automation vs RPA]]. Where AI is used, plan for evaluation and human review from the start; see [[/blogs/human-in-the-loop-ai|human-in-the-loop AI]]."
+        ]
+      },
+      {
+        "heading": "Start narrow, expand later",
+        "body": [
+          "The automations that last solve one specific, well-understood workflow, with clear fallbacks when something goes wrong, rather than trying to automate an entire department at once.",
+          "Automate the most common path first and route everything unusual to a person with the context they need. Measure, then extend coverage to the next most common cases. For the full method from discovery to measurement, see [[/blogs/business-process-automation|business process automation]] and [[/blogs/ai-workflow-automation|AI workflow automation]]."
+        ]
+      },
+      {
+        "heading": "Common mistakes",
+        "body": [],
+        "checklist": [
+          "Automating a broken process instead of fixing it first",
+          "Building for edge cases before the common case works",
+          "No baseline, so nobody can show the automation helped",
+          "No owner for the automation after launch",
+          "Silent failures that nobody notices for weeks"
+        ]
+      },
+      {
+        "heading": "Conclusion",
+        "body": [
+          "Automate where volume, time cost and stability line up and errors can be caught. Start with one workflow, measure it against a baseline and expand only when it runs reliably."
         ],
+        "cta": {
+          "title": "Want help choosing your first automation?",
+          "description": "We map processes, score the candidates and build the ones worth building. Talk to us about [[/services/ai-automation|AI and workflow automation]]."
+        }
       },
     ],
   },
   {
     slug: "shopify-speed-checklist-before-you-add-another-app",
-    title: "Before you install another Shopify app, check these five things",
+    title: "Before You Install Another Shopify App, Check These Things",
+    seoTitle: "Shopify App Checklist: Check These Before Installing Another App",
     excerpt:
-      "App bloat is the most common reason Shopify stores slow down. A practical checklist to run before adding the next tool to your stack.",
+      
+      "A practical Shopify app checklist: how to evaluate a new app before installing it, audit your current app stack and remove apps safely without hurting speed or data.",
     category: "Shopify & Ecommerce",
     banner: "commerce",
     date: "2026-01-08",
+    updated: "2026-10-03",
     readingTime: "4 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
     relatedIndustrySlugs: ["d2c-consumer", "ecommerce"],
     faqs: [
       {
-        q: "How many apps is too many for a Shopify store?",
-        a: "There's no fixed number — a store with ten well-chosen, lightweight apps can be faster than one with three bloated ones. The question isn't how many, it's whether each one is still earning its place.",
+        "q": "How many apps is too many for a Shopify store?",
+        "a": "There is no fixed number. A store with many lightweight, well-built apps can be faster than one with a few heavy ones. What matters is what each app loads, where it loads and whether it still earns its cost."
       },
       {
-        q: "Do Shopify apps really affect page speed that much?",
-        a: "Yes. Each app typically adds its own script, and scripts load cumulatively. A store that's added apps steadily for a year or two without ever removing one is almost always carrying more script weight than it needs.",
+        "q": "Do Shopify apps really affect page speed that much?",
+        "a": "Apps that inject scripts, styles or widgets into the storefront can affect load time and responsiveness, especially when they load on every page. Apps that only work in the admin or through APIs usually have little storefront impact."
       },
       {
-        q: "Should we audit our app stack before a redesign, or after?",
-        a: "Before. A theme redesign built on top of an unaudited app stack just gives the same bloat a nicer coat of paint. Auditing first usually changes what the redesign even needs to solve for.",
+        "q": "Should we audit our app stack before a redesign, or after?",
+        "a": "Before. A redesign is the best moment to remove unused apps and leftover code, and knowing which apps stay changes what the new theme needs to support."
+      },
+      {
+        "q": "Does uninstalling an app remove all its code?",
+        "a": "Not always. Apps built on theme app extensions are removed cleanly, but older apps may have added code snippets to theme files that remain after uninstalling. Check the theme for leftover code."
+      },
+      {
+        "q": "How do I see which apps slow my store down?",
+        "a": "Compare page performance with apps' scripts present and removed on a duplicate theme, review network requests in browser developer tools and check which scripts load before the main content."
+      },
+      {
+        "q": "Are theme app extensions better than script-based apps?",
+        "a": "Generally yes for maintainability: they integrate through blocks and embeds the merchant controls in the theme editor and are removed cleanly. Performance still depends on what the app actually loads."
       },
     ],
     content: [
       {
-        heading: "Apps are the easiest thing to add and the hardest thing to remove",
-        body: [
-          "Every Shopify app adds its own scripts, and most stores never go back to remove the ones they stopped needing. Over time, this quietly compounds into a {{o:slow storefront}}.",
-        ],
+        "heading": "Quick answer",
+        "body": [
+          "Before installing another Shopify app, check whether an existing app or your theme already does the job, where the app loads (every page or only where needed), whether it uses theme app extensions that uninstall cleanly, whether a native Shopify feature covers it and which metric it should move. Audit your current apps quarterly: list each app's purpose, cost and storefront impact, remove what no longer earns its place and clean up leftover theme code."
+        ]
       },
       {
-        heading: "The checklist",
-        body: [
-          "Run through these before installing anything new:",
+        "heading": "Apps are the easiest thing to add and the hardest to remove",
+        "body": [
+          "Every Shopify app that touches the storefront adds its own scripts, styles or widgets, and most stores never go back to remove the ones they stopped needing. Over time this quietly compounds into a {{o:slow storefront}} and a monthly bill nobody can fully explain.",
+          "Shopify's own guidance on [[https://shopify.dev/docs/storefronts/themes/best-practices/performance|theme performance]] stresses minimising JavaScript and third-party code, which is exactly what unmanaged app stacks add."
+        ]
+      },
+      {
+        "heading": "The pre-install checklist",
+        "body": [
+          "Run through these before installing anything new:"
         ],
-        checklist: [
-          "Does this app duplicate something a current app or your theme already does?",
-          "Does it load on every page, or only where it is needed?",
-          "Is there a lightweight or native alternative?",
-          "Will removing it later be simple, or will it leave code behind?",
-          "Is the value it adds measurable, or assumed?",
+        "checklist": [
+          "Does this duplicate something a current app, Shopify feature or your theme already does?",
+          "Does it load on every page, or only on the pages where it is needed?",
+          "Does it use theme app extensions, so it can be enabled per template and uninstalled cleanly?",
+          "Is there a native Shopify feature or lighter alternative?",
+          "Which metric should it move, and how will you know if it did?",
+          "What happens to your data and theme if you remove it later?",
+          "Is the app maintained, with recent updates and responsive support?"
         ],
-        visual: {
+        "cta": {
+          "title": "Want your app stack reviewed?",
+          "description": "We audit Shopify stores for app bloat, leftover code and performance issues as part of our [[/services/shopify-development|Shopify development services]]."
+        },
+        "visual": {
           variant: "grid",
           accent: "orange",
           caption: "Every app on the storefront is another script the browser has to load first.",
-        },
+        }
       },
       {
-        heading: "Audit before you add",
-        body: [
-          "Before adding a new app, it is worth spending twenty minutes [[/services/cro-audit|auditing]] what is currently installed. Most stores we review are running two or three apps doing overlapping jobs.",
+        "heading": "How to audit the apps you already have",
+        "body": [
+          "List every installed app with its purpose, monthly cost, who asked for it and whether it touches the storefront. For storefront apps, note which templates it loads on. Then ask the owner of each app whether it is still used and what it achieved.",
+          "Group apps by job. Two review apps, two popup tools or overlapping upsell apps are common. Pick one per job and plan the migration of any data, such as reviews or subscribers, before removing the other."
         ],
+        "table": {
+          "headers": [
+            "Keep",
+            "Review",
+            "Remove"
+          ],
+          "rows": [
+            [
+              "Used weekly, clear metric, light footprint",
+              "Useful but heavy, or overlaps another app",
+              "Unused, duplicated, or no measurable value"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Removing apps safely",
+        "body": [],
+        "checklist": [
+          "Duplicate the live theme and test removal there first",
+          "Export any data the app holds, such as reviews, subscribers or bundles",
+          "Disable app embeds and blocks in the theme editor before uninstalling",
+          "Uninstall, then search theme files for leftover snippets and scripts",
+          "Re-test key journeys: product page, cart, checkout and account pages",
+          "Measure speed before and after on the same templates"
+        ]
+      },
+      {
+        "heading": "Make the review a routine",
+        "body": [
+          "App audits work best as part of a regular routine rather than a one-off clean-up. Our [[/blogs/shopify-store-maintenance-checklist|Shopify maintenance checklist]] puts the review on a quarterly schedule, and the [[/blogs/shopify-core-web-vitals-performance-guide|Shopify Core Web Vitals guide]] explains how to measure the speed impact. For choosing a first stack on a new store, see [[/blogs/best-shopify-apps-for-new-stores|the apps worth installing when you're starting out]]."
+        ]
+      },
+      {
+        "heading": "Conclusion",
+        "body": [
+          "Treat every app as a decision you will revisit. Check overlap, footprint and purpose before installing, audit regularly and remove apps carefully so speed and data stay intact."
+        ],
+        "cta": {
+          "title": "Store slowing down after years of apps?",
+          "description": "A focused clean-up often recovers speed without a redesign. Talk to us about [[/services/shopify-development|Shopify speed and development work]]."
+        }
       },
     ],
   },
@@ -542,67 +801,151 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "the-real-cost-of-a-slow-checkout",
-    title: "The real cost of a slow checkout, in numbers you can estimate yourself",
+    title: "The Real Cost of a Slow Checkout, in Numbers You Can Estimate Yourself",
+    seoTitle: "The Cost of Checkout Friction: How to Estimate Lost Revenue",
     excerpt:
-      "You do not need a case study to know checkout friction costs money. Here is how to estimate what it is costing your store right now.",
+      
+      "How to estimate what checkout friction costs your store using your own analytics, where checkout drop-off usually comes from and which fixes to prioritise.",
     category: "CRO",
     banner: "funnel",
     date: "2025-11-30",
+    updated: "2026-10-03",
     readingTime: "6 min read",
     relatedServiceSlugs: ["cro-audit", "shopify-development"],
     relatedIndustrySlugs: ["d2c-consumer", "ecommerce"],
     faqs: [
       {
-        q: "What's the single biggest cause of checkout drop-off?",
-        a: "Costs that show up late — shipping fees or taxes revealed only at the final step — are consistently one of the most common reasons a customer abandons a cart they were ready to complete.",
+        "q": "What's the single biggest cause of checkout drop-off?",
+        "a": "Unexpected costs revealed late, such as shipping fees or taxes shown only at the final step, are consistently among the most common reasons shoppers abandon a cart they intended to complete."
       },
       {
-        q: "Does forcing account creation really hurt conversion?",
-        a: "Generally, yes. Guest checkout tends to complete noticeably better than a flow that requires an account first. If you want the account, offer it after the purchase, not as a condition of it.",
+        "q": "Does forcing account creation really hurt conversion?",
+        "a": "Generally, yes. Requiring an account before purchase adds effort and is a commonly reported reason for abandonment. Offer account creation after the purchase instead."
       },
       {
-        q: "How do I know if checkout is the problem and not my traffic?",
-        a: "Look at completion rate at each step of the funnel, not just the overall conversion rate. If a large share of visitors reach checkout and then leave, the problem is in the checkout, not in who you're attracting.",
+        "q": "How do I know if checkout is the problem and not my traffic?",
+        "a": "Look at completion rate at each funnel step, not just overall conversion. If many visitors reach checkout and then leave, the problem is in checkout rather than in who you attract."
+      },
+      {
+        "q": "What checkout completion rate should we aim for?",
+        "a": "Benchmarks vary by industry, device and price point, so compare against your own history and by device. A large gap between desktop and mobile completion is often the most useful signal."
+      },
+      {
+        "q": "Can we change Shopify's checkout?",
+        "a": "Shopify's checkout is standardised for security and reliability, with customisation through settings, checkout extensibility and, on some plans, more options. Many improvements happen before checkout, in cart, shipping information and payment options."
+      },
+      {
+        "q": "Should we run A/B tests on checkout?",
+        "a": "Where traffic supports reliable results, yes. Otherwise fix clear usability problems first, such as late costs and confusing errors, and measure before and after."
       },
     ],
     content: [
       {
-        heading: "Checkout is where attention is most expensive",
-        body: [
-          "By the time a customer reaches checkout, you have already spent money and effort earning their attention. Losing them here is the {{o:most expensive place}} in the funnel to lose a customer.",
+        "heading": "Quick answer",
+        "body": [
+          "Estimate checkout friction with your own data: multiply monthly checkout starts by average order value, then by the improvement in checkout completion you think is achievable. That gives a rough monthly revenue figure tied to friction. The usual causes are costs revealed late, forced account creation, long forms, limited payment options, unclear errors and slow pages on mobile. Fix the issues affecting the most shoppers first, then measure completion by step and device."
+        ]
+      },
+      {
+        "heading": "Checkout is where attention is most expensive",
+        "body": [
+          "By the time a customer reaches checkout, you have already spent money and effort earning their attention through ads, content and product pages. Losing them here is the {{o:most expensive place}} in the funnel to lose a customer, because all the acquisition cost has already been paid."
         ],
-        visual: {
+        "visual": {
           variant: "funnel",
           accent: "orange",
           caption: "The same five percentage points of drop-off cost far more at the bottom of the funnel than at the top.",
-        },
-        cta: {
-          title: "Want a second pair of eyes on your funnel?",
-          description: "A short audit usually finds more than a full redesign would.",
-        },
+        }
       },
       {
-        heading: "A rough estimate you can run today",
-        body: [
-          "Take your current checkout completion rate, your average order value and your monthly checkout starts. A five percentage point improvement in completion rate, applied to those numbers, gives a realistic estimate of what friction is currently costing you.",
-          "This is exactly the kind of gap a [[/services/cro-audit|CRO audit]] is designed to catch early.",
+        "heading": "A rough estimate you can run today",
+        "body": [
+          "You do not need a case study to put a number on checkout friction. Use three figures from your own analytics for the last month: checkout starts, checkout completion rate and average order value.",
+          "Then choose a realistic improvement, for example a few percentage points of completion. Revenue at stake per month is roughly: checkout starts × improvement in completion rate × average order value. Treat the result as a sizing exercise to decide how much effort checkout deserves, not as a forecast."
         ],
+        "table": {
+          "headers": [
+            "Input",
+            "Where to find it"
+          ],
+          "rows": [
+            [
+              "Checkout starts",
+              "Analytics funnel or Shopify reports (sessions reaching checkout)"
+            ],
+            [
+              "Checkout completion rate",
+              "Orders divided by checkout starts"
+            ],
+            [
+              "Average order value",
+              "Shopify or analytics revenue reports"
+            ],
+            [
+              "Improvement to test",
+              "A conservative assumption, revisited after fixes"
+            ]
+          ]
+        },
+        "cta": {
+          "title": "Want a second pair of eyes on your funnel?",
+          "description": "A focused [[/services/cro-audit|CRO audit]] usually finds more than a full redesign would."
+        }
       },
       {
-        heading: "Where friction usually hides",
-        body: [
-          "Unexpected shipping costs shown late, forced account creation, too many form fields and unclear error messages are the most common, and most fixable, sources of checkout drop-off.",
+        "heading": "Where friction usually hides",
+        "body": [
+          "Baymard Institute's long-running [[https://baymard.com/lists/cart-abandonment-rate|checkout usability research]] repeatedly finds the same categories of problems. Check your checkout for each:"
         ],
-        callout: {
-          type: "tip",
-          text: "Start with the three highest-traffic steps in your checkout — shipping cost, payment method and form length — before touching anything else.",
-        },
+        "checklist": [
+          "**Late costs:** shipping, taxes or fees revealed only at the final step",
+          "**Forced account creation** before purchase",
+          "**Long or confusing forms**, including unnecessary fields",
+          "**Limited payment options** for your audience and region",
+          "**Unclear errors** that do not explain how to fix the input",
+          "**Slow or unstable pages** on mobile",
+          "**Trust gaps:** unclear returns, delivery times or security cues"
+        ]
+      },
+      {
+        "heading": "Measure by step and device",
+        "body": [
+          "An overall conversion rate hides where people leave. Measure each step separately, from cart to information, shipping, payment and confirmation, and split by device. A step where mobile completion falls far below desktop usually points to a usability or performance issue rather than a pricing one.",
+          "Review session recordings or usability tests on the weakest step before changing anything, so fixes address the actual cause. Our [[/blogs/ecommerce-checkout-ux|ecommerce checkout UX guide]] covers design patterns, and [[/blogs/shopify-checkout-optimization|Shopify checkout optimization]] covers platform-specific options."
+        ]
+      },
+      {
+        "heading": "What to fix first",
+        "body": [],
+        "checklist": [
+          "Show shipping costs and delivery estimates before checkout",
+          "Offer guest checkout and make account creation optional",
+          "Remove fields you do not need and enable address autocomplete",
+          "Add the payment methods your customers expect, including wallets",
+          "Rewrite error messages to say exactly what to fix",
+          "Check checkout speed and stability on mid-range phones"
+        ],
+        "callout": {
+          "type": "tip",
+          "text": "Start with the three highest-traffic steps, usually shipping costs, payment options and form length, before touching anything else."
+        }
+      },
+      {
+        "heading": "Conclusion",
+        "body": [
+          "Checkout friction has a cost you can estimate from your own numbers. Size it, find the step where people leave, fix the issues that affect the most shoppers and measure completion by step and device."
+        ],
+        "cta": {
+          "title": "Want help prioritising checkout fixes?",
+          "description": "We review checkout and cart journeys as part of our [[/services/cro-audit|CRO audits]] and [[/services/shopify-development|Shopify development work]]."
+        }
       },
     ],
   },
   {
     slug: "what-a-good-mobile-app-onboarding-actually-does",
     title: "Mobile App Onboarding: How to Design an Onboarding Experience That Converts",
+    seoTitle: "Mobile App Onboarding: How to Design Onboarding That Converts",
     excerpt:
       "Onboarding is not a tutorial. It's the shortest path to a new user experiencing your app's core value. How to reduce signup friction, time permission requests, personalize and measure activation.",
     category: "Mobile Apps",
@@ -768,11 +1111,13 @@ export const posts: BlogPost[] = [
   {
     slug: "how-to-set-up-a-shopify-store",
     title: "How to set up a Shopify store: a complete walkthrough",
+    seoTitle: "How to Set Up a Shopify Store: Step-by-Step Setup Order",
     excerpt:
       "Setting up a Shopify store is mostly sequencing, not difficulty. Here is the order that avoids the rework most first-time founders end up doing twice.",
     category: "Shopify & Ecommerce",
     banner: "storefront",
     date: "2026-03-01",
+    updated: "2026-10-03",
     readingTime: "8 min read",
     relatedServiceSlugs: ["shopify-development", "ui-ux-design"],
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer"],
@@ -803,6 +1148,12 @@ export const posts: BlogPost[] = [
       },
     ],
     content: [
+      {
+        "heading": "Quick answer",
+        "body": [
+          "Set up a Shopify store in this order: create the account and pick a plan for your current volume, configure payments, shipping and taxes, choose a theme and build navigation and core pages, add complete product data and collections, connect your domain and email sender details, then place a full test order before removing the password page. Launch with a working baseline theme and improve it using real customer behaviour."
+        ]
+      },
       {
         heading: "Store setup is a sequence, not a checklist you can do in any order",
         body: [
@@ -841,6 +1192,29 @@ export const posts: BlogPost[] = [
         },
       },
       {
+        "heading": "Pre-launch checklist",
+        "body": [
+          "Before removing the storefront password, check each of these:"
+        ],
+        "checklist": [
+          "Payment providers live and tested with a real transaction in test mode",
+          "Shipping rates and zones match what you promise on product pages",
+          "Taxes configured for the regions you sell to, with advice from an accountant where needed",
+          "Refund, privacy, terms and shipping policies published and linked in the footer",
+          "Product titles, descriptions, images, prices and variants complete",
+          "Navigation, search and collections tested on mobile",
+          "Domain connected, SSL active and transactional emails branded",
+          "Analytics and conversion tracking installed and tested"
+        ]
+      },
+      {
+        "heading": "After launch: the first 30 days",
+        "body": [
+          "The first month shows how real customers use the store. Watch where visitors drop off between product page, cart and checkout, read support questions for gaps in product information and fix anything that blocks a purchase before adding new apps or features.",
+          "Keep the app stack small until you have data to justify additions; our [[/blogs/best-shopify-apps-for-new-stores|guide to first apps]] covers what to add when. If the store needs features the theme cannot handle, our [[/services/shopify-development|Shopify development services]] cover custom sections, integrations and full builds."
+        ]
+      },
+      {
         heading: "When DIY setup stops being enough",
         body: [
           "A stock theme, configured well, is genuinely sufficient for most new stores — this isn't a build vs. buy article arguing otherwise. It stops being enough when you need something the theme editor can't do: a non-standard product configurator, a checkout flow built around subscriptions or wholesale pricing, or integrations with inventory or fulfillment systems that don't have a plug-and-play app. For larger builds with custom design, integrations or migration, see [[/blogs/shopify-store-development|Shopify store development]].",
@@ -856,11 +1230,13 @@ export const posts: BlogPost[] = [
   {
     slug: "how-much-does-a-shopify-store-cost",
     title: "How much does a Shopify store actually cost?",
+    seoTitle: "How Much Does a Shopify Store Cost? Real Cost Breakdown",
     excerpt:
       "Shopify's plan pricing is the smallest line item in most real store budgets. Here is what the total cost actually includes, and where it goes.",
     category: "Shopify & Ecommerce",
     banner: "ledger",
     date: "2026-03-02",
+    updated: "2026-10-03",
     readingTime: "9 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
     relatedIndustrySlugs: ["d2c-consumer", "fashion-apparel"],
@@ -891,6 +1267,12 @@ export const posts: BlogPost[] = [
       },
     ],
     content: [
+      {
+        "heading": "Quick answer",
+        "body": [
+          "A Shopify store costs more than its plan fee. Total cost combines the Shopify subscription, payment processing fees, paid apps, a theme (free or premium), design and development work, content and photography, and ongoing maintenance and marketing. The plan is usually the smallest line. Budget for apps, development and maintenance as recurring costs, and spend early on the things that are expensive to fix later: speed, checkout and product data."
+        ]
+      },
       {
         heading: "The plan fee is the smallest number in most store budgets",
         body: [
@@ -927,6 +1309,48 @@ export const posts: BlogPost[] = [
         },
       },
       {
+        "heading": "Typical cost scenarios",
+        "body": [
+          "Rather than quoting prices that change, it helps to think in scenarios. Check current figures on Shopify's [[https://www.shopify.com/pricing|pricing page]] and app listings."
+        ],
+        "table": {
+          "headers": [
+            "Scenario",
+            "What it usually includes",
+            "Main cost drivers"
+          ],
+          "rows": [
+            [
+              "DIY launch",
+              "Plan, free or premium theme, a few essential apps",
+              "Your time, apps, payment fees"
+            ],
+            [
+              "Professionally configured theme",
+              "Theme setup, custom sections, content, integrations",
+              "Design and development time, apps"
+            ],
+            [
+              "Custom theme or headless build",
+              "Custom design, theme or Hydrogen storefront, integrations",
+              "Development scope, maintenance"
+            ],
+            [
+              "Migration from another platform",
+              "Data migration, redirects, theme work",
+              "Data complexity, SEO protection"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "How to estimate your own budget",
+        "body": [
+          "List what your store needs at launch, separating must-haves from later improvements. Price the plan and the apps you actually need, decide between theme configuration and custom work, then add a monthly allowance for maintenance and app costs.",
+          "For a scoped estimate of design and development work, see our [[/services/shopify-development|Shopify development services]] and the more detailed [[/blogs/shopify-development-cost|Shopify development cost guide]]."
+        ]
+      },
+      {
         heading: "Where it's worth spending more, earlier",
         body: [
           "The inverse is also true: some spend that feels premature actually pays for itself quickly. A [[/services/cro-audit|conversion audit]] before a major traffic push, or getting checkout and page speed right early, tends to cost less than fixing the same problems after months of lost conversions. Our [[/blogs/shopify-core-web-vitals-performance-guide|Shopify performance guide]] and [[/blogs/shopify-store-maintenance-checklist|maintenance checklist]] both cover costs that are cheaper to plan for than to react to. For what drives the cost of building a custom store, see [[/blogs/shopify-development-cost|Shopify development cost]].",
@@ -946,11 +1370,13 @@ export const posts: BlogPost[] = [
   {
     slug: "shopify-development-process-what-to-expect",
     title: "What a real Shopify development process looks like",
+    seoTitle: "Shopify Development Process: Stages, Timeline and What to Expect",
     excerpt:
       "Beyond picking a theme, a proper Shopify build follows a fairly consistent set of stages. Here is what each one actually involves.",
     category: "Shopify & Ecommerce",
     banner: "roadmap",
     date: "2026-03-03",
+    updated: "2026-10-03",
     readingTime: "7 min read",
     relatedServiceSlugs: ["shopify-development", "ui-ux-design"],
     relatedIndustrySlugs: ["ecommerce", "beauty-personal-care"],
@@ -977,6 +1403,12 @@ export const posts: BlogPost[] = [
       },
     ],
     content: [
+      {
+        "heading": "Quick answer",
+        "body": [
+          "A professional Shopify build runs through discovery, structure, design and build, integrations, testing and launch, followed by a stabilisation period. Discovery defines products, integrations and data; structure plans navigation, collections and templates; build customises or creates the theme; integrations connect payments, email, inventory and other systems; testing covers checkout, mobile and edge cases. Skipping a stage usually moves its work later, when it costs more."
+        ]
+      },
       {
         heading: "A build has stages, even when it feels like 'just set up a store'",
         body: [
@@ -1007,6 +1439,25 @@ export const posts: BlogPost[] = [
         },
       },
       {
+        "heading": "What you need to prepare",
+        "body": [],
+        "checklist": [
+          "Product data: titles, descriptions, variants, prices, images",
+          "Brand assets and any existing design direction",
+          "Access to current systems: payments, email, inventory, fulfilment",
+          "Policies: shipping, returns, privacy, terms",
+          "A list of must-have features and integrations, with priorities",
+          "A decision-maker available for reviews at each stage"
+        ]
+      },
+      {
+        "heading": "Timeline and approvals",
+        "body": [
+          "Timelines depend mostly on scope and how quickly content and decisions arrive. Configuring an existing theme with custom sections moves faster than a custom theme or headless build, and integrations with ERP or fulfilment systems add their own testing time.",
+          "Agree review points up front, usually after structure, after key templates are designed and before launch, so feedback arrives when it is cheapest to act on. Our [[/services/shopify-development|Shopify development services]] follow this staged process."
+        ]
+      },
+      {
         heading: "What happens after the store goes live",
         body: [
           "Launch is a milestone in the build, not the end of it. Real customer traffic finds edge cases that internal testing doesn't — an unusual shipping address format, a discount code combination, a device or browser that renders a section differently. A short stabilization window after launch, followed by a genuine [[/blogs/shopify-store-maintenance-checklist|maintenance routine]], is what keeps a store from needing another full rebuild in a year. For the complete picture, see [[/blogs/shopify-store-development|Shopify store development]].",
@@ -1021,11 +1472,13 @@ export const posts: BlogPost[] = [
   {
     slug: "best-shopify-apps-for-new-stores",
     title: "The Shopify apps worth installing when you're starting out",
+    seoTitle: "Best Shopify Apps for New Stores: What to Install First",
     excerpt:
       "Most new stores install too many apps too early. Here is how to think about the first app stack by category, not by \"best of\" lists.",
     category: "Shopify & Ecommerce",
     banner: "appshelf",
     date: "2026-03-05",
+    updated: "2026-10-03",
     readingTime: "7 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
     relatedIndustrySlugs: ["d2c-consumer", "beauty-personal-care"],
@@ -1057,6 +1510,12 @@ export const posts: BlogPost[] = [
     ],
     content: [
       {
+        "heading": "Quick answer",
+        "body": [
+          "New Shopify stores should start with very few apps: email and SMS marketing, reviews and social proof, and analytics you will actually use, plus anything required for payments, shipping or legal compliance in your market. Use Shopify's built-in features before adding third-party apps, and only install an app when you can name the metric it should move. Subscriptions, loyalty and advanced upsells can wait until there is order volume to optimise."
+        ]
+      },
+      {
         heading: "Skip the \"best apps\" list, start with categories",
         body: [
           "Ranked lists of the \"best\" Shopify apps go stale quickly and tend to reward whichever app markets itself best, not whichever fits your store. A more durable approach is to think in categories: what job needs doing, what a good app in that category looks like, and whether you actually need it yet.",
@@ -1086,6 +1545,25 @@ export const posts: BlogPost[] = [
         },
       },
       {
+        "heading": "How to evaluate any app",
+        "body": [],
+        "checklist": [
+          "Recent updates and responsive support",
+          "Uses theme app extensions rather than editing theme code",
+          "Loads only on the pages where it is needed",
+          "Clear pricing as your order volume grows",
+          "Data export if you switch apps later",
+          "Reviews that mention performance and support, not just features"
+        ]
+      },
+      {
+        "heading": "Native Shopify features to check first",
+        "body": [
+          "Shopify includes features that new stores often buy apps for: basic email marketing through Shopify Email, discounts, gift cards, customer accounts, analytics and reports, and product search and filtering in many themes. Check the [[https://help.shopify.com/en/manual|Shopify Help Center]] for what your plan includes before adding an app for the same job.",
+          "For help choosing and configuring the right stack, see our [[/services/shopify-development|Shopify development services]]."
+        ]
+      },
+      {
         heading: "Every app you install is a decision you'll eventually revisit",
         body: [
           "Apps are easy to add and, in practice, rarely removed — which is exactly how stores end up with overlapping tools and unnecessary script weight a year in. Before installing anything new, it's worth checking what's already running against our [[/blogs/shopify-speed-checklist-before-you-add-another-app|Shopify app audit checklist]], and understanding how integrations actually connect to your store in our [[/blogs/shopify-app-integration-guide|app and API integration guide]].",
@@ -1100,11 +1578,13 @@ export const posts: BlogPost[] = [
   {
     slug: "shopify-app-integration-guide",
     title: "How Shopify app and API integrations actually work",
+    seoTitle: "Shopify App and API Integrations: How They Work",
     excerpt:
       "Every Shopify integration is built on the same handful of building blocks. Understanding them makes it much easier to scope integration work correctly.",
     category: "Shopify & Ecommerce",
     banner: "integration",
     date: "2026-03-06",
+    updated: "2026-10-03",
     readingTime: "8 min read",
     relatedServiceSlugs: ["shopify-development", "ai-automation"],
     relatedIndustrySlugs: ["manufacturing", "ecommerce"],
@@ -1135,6 +1615,12 @@ export const posts: BlogPost[] = [
       },
     ],
     content: [
+      {
+        "heading": "Quick answer",
+        "body": [
+          "Shopify integrations are built from a few components: the GraphQL Admin API to read and write store data, webhooks to react to events such as new orders or inventory changes, and the Storefront API for custom storefronts. Robust integrations verify webhook signatures, respond quickly and process work asynchronously, handle duplicate or out-of-order events and reconcile periodically against the API. Check for an existing app before building custom."
+        ]
+      },
       {
         heading: "Almost every integration is built from the same few pieces",
         body: [
@@ -1168,6 +1654,20 @@ export const posts: BlogPost[] = [
         ],
       },
       {
+        "heading": "Authentication and access scopes",
+        "body": [
+          "Every integration needs credentials with the right access scopes, such as reading orders or writing products. Request only the scopes the integration needs, store tokens securely on the server and plan how they are rotated. Over-broad scopes are a common security problem in custom integrations.",
+          "Shopify's [[https://shopify.dev/docs/api/admin-graphql|GraphQL Admin API documentation]] lists available objects and the scopes each requires."
+        ]
+      },
+      {
+        "heading": "Rate limits and bulk operations",
+        "body": [
+          "The GraphQL Admin API uses cost-based rate limiting, so integrations should request only the fields they need and back off when limits are reached. For large data exports or imports, such as full catalogue syncs, bulk operations avoid hitting limits with thousands of individual calls.",
+          "Design for limits from the start: queue work, retry with backoff and log failures for review. Our [[/services/shopify-development|Shopify development team]] builds integrations this way, and [[/blogs/shopify-business-systems-integration-guide|connecting Shopify to your business systems]] covers the project side."
+        ]
+      },
+      {
         heading: "When to build custom vs. use an existing app",
         body: [
           "Before scoping custom integration work, check whether an existing app already solves the problem — accounting, fulfillment, and marketing integrations are well-covered categories on the Shopify App Store, and a maintained app is usually cheaper to adopt than to replicate. Custom integration work earns its cost when your workflow, data model, or systems are specific enough that no existing app fits without significant compromise.",
@@ -1183,11 +1683,13 @@ export const posts: BlogPost[] = [
   {
     slug: "shopify-store-maintenance-checklist",
     title: "The Shopify maintenance checklist most stores skip",
+    seoTitle: "Shopify Maintenance Checklist: Weekly, Monthly and Quarterly",
     excerpt:
       "A Shopify store isn't a one-time build. Here is the ongoing maintenance rhythm that keeps a store fast, secure, and free of quiet cost creep.",
     category: "Shopify & Ecommerce",
     banner: "gauge",
     date: "2026-03-07",
+    updated: "2026-10-03",
     readingTime: "6 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
     relatedIndustrySlugs: ["ecommerce", "fashion-apparel"],
@@ -1214,6 +1716,12 @@ export const posts: BlogPost[] = [
       },
     ],
     content: [
+      {
+        "heading": "Quick answer",
+        "body": [
+          "Maintain a Shopify store on a routine: weekly, check orders, payments, broken links and support themes; monthly, apply theme and app updates on a duplicate theme, run a speed check and review analytics; quarterly, audit the app stack, review SEO for products and collections and test key journeys on mobile. Most stores decline gradually through small issues, so the routine matters more than any single fix."
+        ]
+      },
       {
         heading: "A store doesn't stay in the state you launched it in",
         body: [
@@ -1243,6 +1751,19 @@ export const posts: BlogPost[] = [
         },
       },
       {
+        "heading": "Updating themes safely",
+        "body": [
+          "Theme updates bring fixes and features but can overwrite customisations. Duplicate the live theme, apply the update to the copy, compare key templates and test checkout journeys before publishing. Keep a changelog of customisations so they can be re-applied if needed."
+        ]
+      },
+      {
+        "heading": "Who should own maintenance",
+        "body": [
+          "Assign an owner, whether an internal team member or an external partner, with a written routine and access to the tools needed. Maintenance that belongs to everyone tends to be done by no one.",
+          "If you would rather hand it off, our [[/services/shopify-development|Shopify development services]] include ongoing support for updates, performance and fixes."
+        ]
+      },
+      {
         heading: "The two checks most stores skip",
         body: [
           "The quarterly app audit is the maintenance task most consistently skipped, mostly because nothing forces it — apps keep running and billing quietly whether or not they're still useful. Our [[/blogs/shopify-speed-checklist-before-you-add-another-app|app audit checklist]] gives that review a concrete structure instead of leaving it to memory.",
@@ -1258,11 +1779,13 @@ export const posts: BlogPost[] = [
   {
     slug: "shopify-core-web-vitals-performance-guide",
     title: "Shopify performance and Core Web Vitals, explained",
+    seoTitle: "Shopify Core Web Vitals: How to Improve LCP, INP and CLS",
     excerpt:
       "LCP, INP, and CLS aren't abstract scores — each one maps to a specific, fixable cause on a Shopify store. Here is what to fix, and in what order.",
     category: "Shopify & Ecommerce",
     banner: "waterfall",
     date: "2026-03-08",
+    updated: "2026-10-03",
     readingTime: "8 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
     relatedIndustrySlugs: ["d2c-consumer", "ecommerce"],
@@ -1293,6 +1816,12 @@ export const posts: BlogPost[] = [
       },
     ],
     content: [
+      {
+        "heading": "Quick answer",
+        "body": [
+          "Improve Shopify Core Web Vitals in order: fix Largest Contentful Paint by sizing and compressing the hero image and removing render-blocking scripts; fix Interaction to Next Paint by auditing and deferring app and theme JavaScript; fix Cumulative Layout Shift by reserving space for images, banners and app widgets. Measure with real-user field data in PageSpeed Insights or Search Console, and re-check after every app or theme change."
+        ]
+      },
       {
         heading: "Speed scores are a symptom, not the actual problem",
         body: [
@@ -1331,13 +1860,32 @@ export const posts: BlogPost[] = [
         },
       },
       {
+        "heading": "How to measure on Shopify",
+        "body": [
+          "Use field data first: PageSpeed Insights shows Chrome User Experience Report data for pages with enough traffic, and Search Console's Core Web Vitals report groups URLs by status. Test product, collection and home templates separately, since each loads different apps and sections. Google's [[https://web.dev/articles/vitals|Core Web Vitals overview]] defines the thresholds.",
+          "Lab tools such as Lighthouse help find causes, but use them on a duplicate theme and compare changes against the same templates."
+        ]
+      },
+      {
+        "heading": "Theme and app fixes that usually help",
+        "body": [],
+        "checklist": [
+          "Serve hero images at the size they display, using Shopify's image URL parameters",
+          "Avoid sliders and video as the main above-the-fold element where possible",
+          "Load app widgets only on templates that need them",
+          "Remove leftover code from uninstalled apps",
+          "Set width and height on images and reserve space for banners",
+          "Limit web fonts and use font-display swap"
+        ]
+      },
+      {
         heading: "Performance is a maintenance habit, not a one-time fix",
         body: [
           "Because performance tends to degrade gradually as apps and content are added over time, a single optimization pass doesn't hold indefinitely — it needs to be part of an ongoing [[/blogs/shopify-store-maintenance-checklist|maintenance routine]], not a project you complete once and move on from. Performance matters most, and shows up most clearly, on mobile — see our [[/blogs/shopify-mobile-cro|Shopify mobile CRO guide]] for how it connects to conversion specifically on that segment.",
         ],
         cta: {
           title: "Want a straight answer on what's actually slowing your store down?",
-          description: "We run a focused performance audit against real Core Web Vitals data — not just a generic speed test score.",
+          description: "We run a focused performance audit against real Core Web Vitals data — not just a generic speed test score. See how we approach [[/services/shopify-development|Shopify development]].",
         },
       },
     ],
@@ -1345,11 +1893,13 @@ export const posts: BlogPost[] = [
   {
     slug: "how-to-choose-a-shopify-development-agency",
     title: "How to choose a Shopify development agency",
+    seoTitle: "How to Choose a Shopify Development Agency: Checklist",
     excerpt:
       "The lowest quote and the best portfolio are both misleading filters. Here is what actually predicts whether a Shopify agency will deliver.",
     category: "Shopify & Ecommerce",
     banner: "framework",
     date: "2026-04-01",
+    updated: "2026-10-03",
     readingTime: "9 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
     relatedIndustrySlugs: ["ecommerce", "saas-technology"],
@@ -1384,6 +1934,12 @@ export const posts: BlogPost[] = [
       },
     ],
     content: [
+      {
+        "heading": "Quick answer",
+        "body": [
+          "Choose a Shopify development agency by capability match first and price second: confirm they have done recent work like yours, ask who will do the work, how they handle speed, QA and post-launch support, and what is excluded from the quote. Ask for references and a week-by-week walkthrough of their process. Compare quotes only for equivalent scope, and treat a strong process as a better predictor than a polished portfolio."
+        ]
+      },
       {
         heading: "Price is the wrong first filter",
         body: [
@@ -1434,6 +1990,25 @@ export const posts: BlogPost[] = [
         },
       },
       {
+        "heading": "Red flags in proposals",
+        "body": [],
+        "checklist": [
+          "No discovery phase before a fixed price for complex work",
+          "Vague deliverables such as 'theme customisation' without templates listed",
+          "No mention of QA, testing devices or launch checklist",
+          "Unclear ownership of code, accounts and data",
+          "No plan for redirects and SEO during migrations",
+          "Support after launch undefined or limited to days"
+        ]
+      },
+      {
+        "heading": "Agency, freelancer or in-house?",
+        "body": [
+          "Agencies bring a team across design, development and QA and suit projects with several disciplines. Freelancers can be efficient for focused work with a clear brief. In-house teams suit stores with continuous development needs. Many brands combine them, for example an agency for the build and an in-house owner afterwards. The trade-offs are covered in [[/blogs/shopify-agency-vs-in-house|Shopify agency vs in-house]] and [[/blogs/shopify-developer-vs-agency-which-to-hire|Shopify developer vs agency]].",
+          "If you are evaluating partners now, our [[/services/shopify-development|Shopify development services]] page explains how we scope and run projects."
+        ]
+      },
+      {
         heading: "Process maturity predicts outcomes better than portfolio visuals",
         body: [
           "A polished portfolio proves an agency can design a good-looking store. It doesn't prove they can run a project well — defined discovery, technical scoping, staged reviews, QA checklists, and post-launch monitoring are what actually determine whether a project stays on budget and on timeline. For other platforms, see [[/blogs/how-to-choose-ecommerce-development-company|how to choose an ecommerce development company]]; for team models, see [[/blogs/shopify-agency-vs-in-house|Shopify agency vs in-house]].",
@@ -1449,11 +2024,13 @@ export const posts: BlogPost[] = [
   {
     slug: "shopify-custom-app-development-guide",
     title: "Shopify custom app development: when a custom app makes sense",
+    seoTitle: "Shopify Custom App Development: When to Build One",
     excerpt:
       "A custom Shopify app is infrastructure, not a feature. Here is when building one is justified, and when a third-party app still wins.",
     category: "Shopify & Ecommerce",
     banner: "appblocks",
     date: "2026-04-04",
+    updated: "2026-10-03",
     readingTime: "8 min read",
     relatedServiceSlugs: ["shopify-development", "ai-automation"],
     relatedIndustrySlugs: ["manufacturing", "saas-technology"],
@@ -1484,6 +2061,12 @@ export const posts: BlogPost[] = [
       },
     ],
     content: [
+      {
+        "heading": "Quick answer",
+        "body": [
+          "Build a custom Shopify app when your workflow, data or systems are specific enough that no maintained app fits, for example syncing orders with an internal ERP, applying business-specific pricing rules or giving staff an admin tool. Custom apps are built with Shopify's CLI on the GraphQL Admin API, often with App Bridge and Polaris for admin interfaces. If an existing app covers most of the need, it is usually cheaper to adopt."
+        ]
+      },
       {
         heading: "A custom app is infrastructure, not a feature",
         body: [
@@ -1520,6 +2103,24 @@ export const posts: BlogPost[] = [
         },
       },
       {
+        "heading": "Scoping questions before building",
+        "body": [],
+        "checklist": [
+          "Which data does the app read and write, and which access scopes does it need?",
+          "Which events trigger it: webhooks, schedules or staff actions?",
+          "Does it need an interface in the Shopify admin, a storefront component or neither?",
+          "Which systems outside Shopify does it connect to?",
+          "Who maintains it, monitors errors and updates it as APIs change?"
+        ]
+      },
+      {
+        "heading": "Shopify Functions and checkout extensions",
+        "body": [
+          "Some customisations that once needed custom apps or theme code now use platform extension points. [[https://shopify.dev/docs/apps/build/functions|Shopify Functions]] customise backend logic such as discounts, payment and delivery options, and checkout UI extensions add content to checkout. Availability varies by plan and feature, so confirm against current documentation during scoping.",
+          "Our [[/services/shopify-development|Shopify development services]] cover custom apps, Functions and integrations."
+        ]
+      },
+      {
         heading: "What a custom Shopify app build actually involves",
         body: [
           "Modern custom app development runs through Shopify's Dev Dashboard and CLI, built on the GraphQL Admin API — the current standard, since the REST Admin API is now legacy. If the app needs its own interface inside the Shopify admin, App Bridge handles the communication between that interface and Shopify's dashboard, covering things like navigation and in-context notifications.",
@@ -1535,11 +2136,13 @@ export const posts: BlogPost[] = [
   {
     slug: "shopify-business-systems-integration-guide",
     title: "Connecting Shopify to your other business systems",
+    seoTitle: "Shopify ERP, CRM and Accounting Integration Guide",
     excerpt:
       "ERP, CRM, accounting, shipping — most of what a growing Shopify store needs to connect to already has a well-trodden path. Here is what that project involves.",
     category: "Shopify & Ecommerce",
     banner: "hub",
     date: "2026-04-05",
+    updated: "2026-10-03",
     readingTime: "9 min read",
     relatedServiceSlugs: ["shopify-development", "ai-automation"],
     relatedIndustrySlugs: ["manufacturing", "saas-technology"],
@@ -1575,6 +2178,12 @@ export const posts: BlogPost[] = [
     ],
     content: [
       {
+        "heading": "Quick answer",
+        "body": [
+          "Connecting Shopify to ERP, CRM, accounting, shipping or inventory systems starts with mapping: how each system defines customers, orders and stock, and which system is the source of truth for each. Then connect through an existing connector where one fits, or custom API work where it does not, test against real data including returns and partial fulfilments, and monitor closely after launch, when volume reveals issues testing missed."
+        ]
+      },
+      {
         heading: "Integration is a business problem before it's a technical one",
         body: [
           "The hardest part of most Shopify integration projects isn't the API call — it's agreeing on what data means the same thing across two systems that were built independently. A CRM's definition of \"customer\" and Shopify's definition rarely match exactly, and that mismatch, not the connection itself, is usually where a project's real time goes.",
@@ -1604,6 +2213,51 @@ export const posts: BlogPost[] = [
           "Test against real data, including edge cases like returns, partial fulfillments, and cancellations",
           "Monitor closely for the first weeks — integration issues often surface under real volume, not in testing",
         ],
+      },
+      {
+        "heading": "Connector app or custom integration?",
+        "body": [],
+        "table": {
+          "headers": [
+            "Factor",
+            "Connector app",
+            "Custom integration"
+          ],
+          "rows": [
+            [
+              "Fit",
+              "Standard workflows",
+              "Business-specific rules and data"
+            ],
+            [
+              "Speed to launch",
+              "Faster",
+              "Slower"
+            ],
+            [
+              "Ongoing cost",
+              "Subscription",
+              "Maintenance and hosting"
+            ],
+            [
+              "Control",
+              "Limited to app settings",
+              "Full control over logic"
+            ],
+            [
+              "Risk",
+              "Vendor changes",
+              "Your team owns fixes"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Data ownership rules to agree early",
+        "body": [
+          "Decide which system owns each data type: product information, prices, stock levels, customer records, orders and refunds. Write the rules down, including what happens when records conflict. Most integration bugs trace back to two systems both believing they own the same field.",
+          "Our [[/services/shopify-development|Shopify development services]] and [[/services/ai-automation|automation work]] cover integration projects end to end."
+        ]
       },
       {
         heading: "Where integrations commonly break",

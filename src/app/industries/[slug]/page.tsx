@@ -18,6 +18,7 @@ import {
 import { getServiceBySlug } from "@/lib/services-data";
 import { posts } from "@/lib/blog-data";
 import { site } from "@/lib/site";
+import { metaDescription as metaDescriptionFor } from "@/lib/seo";
 
 export function generateStaticParams() {
   return industriesWithDetailPages.map((industry) => ({ slug: industry.slug }));
@@ -32,7 +33,11 @@ export async function generateMetadata({
   const industry = getIndustryBySlug(slug);
   if (!industry || !industry.hasDetailPage) return {};
 
-  const metaDescription = `${industry.shortDescription} ZSpace Labs designs and builds the websites, apps and automation these businesses need.`;
+  const fullDescription = `${industry.shortDescription} ZSpace Labs designs and builds the websites, apps and automation these businesses need.`;
+  const metaDescription =
+    fullDescription.length <= 160
+      ? fullDescription
+      : metaDescriptionFor(`${industry.shortDescription} ZSpace Labs builds websites, apps and automation for them.`);
 
   return {
     title: `${industry.name} — Industries`,

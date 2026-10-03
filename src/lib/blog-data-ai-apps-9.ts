@@ -23,7 +23,7 @@ export const aiAppsPosts9: BlogPost[] = [
     banner: "readiness",
     bannerAlt:
       "AI readiness assessment in four columns: process (documented, measured, owned, stable), data highlighted (available, accurate, accessible, permitted), technology (APIs, identity, cloud, monitoring) and people and risk (skills, sponsors, policies, risk appetite).",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["b2b-enterprise", "professional-services", "manufacturing"],
@@ -225,7 +225,7 @@ export const aiAppsPosts9: BlogPost[] = [
     banner: "datareadiness",
     bannerAlt:
       "AI data readiness in four columns: quality (accuracy, completeness, freshness, duplicates), access (APIs, exports, latency, volume), context highlighted (metadata, definitions, lineage, examples) and governance (owners, permissions, consent, retention).",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["b2b-enterprise", "fintech", "healthcare-healthtech"],
@@ -415,7 +415,7 @@ export const aiAppsPosts9: BlogPost[] = [
     banner: "aigovlifecycle",
     bannerAlt:
       "AI governance lifecycle: register, classify risk (highlighted), assess, approve, monitor, review or retire; the note says governance is a lifecycle, not a one-time approval.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["b2b-enterprise", "fintech", "healthcare-healthtech"],
@@ -602,7 +602,7 @@ export const aiAppsPosts9: BlogPost[] = [
     banner: "aisecuritylayers",
     bannerAlt:
       "AI security layers in four columns: inputs (injection, untrusted files, abuse, rate limits), models and prompts (prompt leakage, supply chain, versions, provider risk), tools and data highlighted (least privilege, secrets, data access, approvals) and runtime (logging, anomalies, kill switch, incident plan).",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["cybersecurity", "fintech", "saas-technology"],

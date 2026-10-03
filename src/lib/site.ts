@@ -2,7 +2,9 @@ export const site = {
   name: "ZSpace Labs",
   legalName: "ZSpace Labs",
   domain: "zspace.in",
-  url: "https://zspace.in",
+  // Production serves from www (apex redirects to www), so canonical URLs,
+  // sitemap entries and structured data must use the www host.
+  url: "https://www.zspace.in",
   email: "connect@zspace.in",
   tagline: "A technology studio for businesses that refuse to look average.",
   description:
@@ -14,11 +16,10 @@ export const site = {
     "ZSpace Labs is a technology and digital product studio focused on building useful digital experiences, products and systems. We bring strategy, design and engineering together to turn ideas into practical digital solutions.",
   footerDescription:
     "An independent technology and digital product studio building websites, apps, commerce experiences and intelligent automations.",
-  social: {
-    linkedin: "https://www.linkedin.com/company/zspace",
-    instagram: "https://www.instagram.com/zspace.in",
-    twitter: "https://twitter.com/zspace_in",
-  },
+  // Official social profiles, used as schema.org sameAs. Only add profiles
+  // that are verified to belong to ZSpace Labs: the previous entries pointed
+  // to an unrelated company's LinkedIn page and a non-existent X account.
+  social: {} as Record<string, string>,
 } as const;
 
 export type NavLink = {

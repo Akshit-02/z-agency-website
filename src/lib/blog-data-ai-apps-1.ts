@@ -24,7 +24,7 @@ export const aiAppsPosts1: BlogPost[] = [
     banner: "aisdhub",
     bannerAlt:
       "AI in software development in four columns: plan (requirements, specs, estimates, design notes), build (completion, coding agents, refactoring, migrations), verify highlighted (code review, test generation, security scans, debugging) and operate (docs, incident triage, upgrades, maintenance); the note says speed gains only count if verification keeps up.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "10 min read",
     relatedServiceSlugs: ["website-development", "ai-automation", "mobile-app-development"],
     relatedIndustrySlugs: ["saas-technology", "startups", "b2b-enterprise"],
@@ -240,7 +240,7 @@ export const aiAppsPosts1: BlogPost[] = [
     banner: "codingagentflow",
     bannerAlt:
       "Coding agent flow: issue or task, explore repository, plan, edit code, run tests (highlighted), pull request; a branch shows failing tests leading to iteration within a budget.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "9 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "startups"],
@@ -445,7 +445,7 @@ export const aiAppsPosts1: BlogPost[] = [
     banner: "assistvsagentic",
     bannerAlt:
       "Comparison of code completion, chat assistance and agentic coding (highlighted) by unit of work, who drives, whether code is run, when review happens and best use.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "8 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "startups"],
@@ -650,7 +650,7 @@ export const aiAppsPosts1: BlogPost[] = [
     banner: "aireviewflow",
     bannerAlt:
       "AI code review flow: pull request opened, diff and context, AI review, comments by severity, human reviewer (highlighted), merge or fix.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "8 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "fintech"],

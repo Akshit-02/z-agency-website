@@ -23,7 +23,7 @@ export const aiAppsPosts7: BlogPost[] = [
     banner: "multimodalpipe",
     bannerAlt:
       "Multimodal pipeline: upload, validate and store, preprocess (highlighted), model, validate output, show and log; the note says each modality has its own preprocessing, limits and failure modes.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "mobile-app-development", "website-development"],
     relatedIndustrySlugs: ["insurtech", "healthcare-healthtech", "ecommerce"],
@@ -218,7 +218,7 @@ export const aiAppsPosts7: BlogPost[] = [
     banner: "cvpipeline",
     bannerAlt:
       "Computer vision pipeline: images or video, label, train or choose model, evaluate (highlighted), deploy to cloud or edge, monitor drift.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "mobile-app-development"],
     relatedIndustrySlugs: ["manufacturing", "retail", "agritech"],
@@ -406,7 +406,7 @@ export const aiAppsPosts7: BlogPost[] = [
     banner: "imgrecflow",
     bannerAlt:
       "Image recognition flow: define classes, collect images, annotate (highlighted), train, measure per class, integrate; the note says most accuracy problems are data problems.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "mobile-app-development"],
     relatedIndustrySlugs: ["manufacturing", "retail", "agritech"],
@@ -593,7 +593,7 @@ export const aiAppsPosts7: BlogPost[] = [
     banner: "recsysarch",
     bannerAlt:
       "Recommendation system architecture in four columns: signals (views, ratings, search, context), candidates (similar items, popular, embeddings, rules), ranking highlighted (models, features, business goals, diversity) and serving (API, cache, logging, experiments).",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development", "mobile-app-development"],
     relatedIndustrySlugs: ["media-entertainment", "education-edtech", "saas-technology"],

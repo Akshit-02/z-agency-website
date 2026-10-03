@@ -11,6 +11,7 @@ export const designPosts5: BlogPost[] = [
   {
     slug: "microinteractions-ui-design",
     title: "Microinteractions in UI Design: Examples, Principles and Best Practices",
+    seoTitle: "Microinteractions in UI Design: Examples and Best Practices",
     excerpt:
       "What microinteractions are, their trigger, rules, feedback and loops, examples for buttons, forms and loading, and how to keep motion accessible.",
     category: "UI/UX",

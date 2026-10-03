@@ -9,11 +9,13 @@ import { Eyebrow } from "@/components/SectionHeading";
 import { BlogExplorer } from "@/components/BlogExplorer";
 import { BlogBanner } from "@/components/BlogBanner";
 import { StructuredData } from "@/components/StructuredData";
-import { posts } from "@/lib/blog-data";
+import { posts, toSummary } from "@/lib/blog-data";
+import { blogCategories } from "@/lib/blog-categories";
+import { WEBSITE_ID, ORG_ID } from "@/lib/seo";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Insights — Notes on Web, Mobile, AI Automation & Conversion",
+  title: "Blog: Web, App, Shopify, UX, AI and CRO Guides",
   description:
     "Practical writing from ZSpace Labs on website performance, mobile app development, AI automation, design systems, Shopify and conversion optimization.",
   alternates: { canonical: "/blogs" },
@@ -30,6 +32,8 @@ export default function BlogsPage() {
           "@type": "Blog",
           name: `${site.name} Insights`,
           url: `${site.url}/blogs`,
+          isPartOf: { "@id": WEBSITE_ID },
+          publisher: { "@id": ORG_ID },
         }}
       />
       <PageHero
@@ -80,12 +84,34 @@ export default function BlogsPage() {
         </Container>
       </section>
 
+      <section className="border-b border-line py-16 sm:py-20">
+        <Container>
+          <Eyebrow accent="blue">Browse by topic</Eyebrow>
+          <ul className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+            {blogCategories.map((category) => (
+              <li key={category.slug} className="border-t border-line-strong pt-4">
+                <Link
+                  href={`/blogs/category/${category.slug}`}
+                  className="group flex items-center justify-between gap-4 font-display text-[1.15rem] font-medium tracking-tight transition-colors duration-300 hover:text-blue"
+                >
+                  <span>{category.title}</span>
+                  <ArrowUpRight className="h-4 w-4 shrink-0 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </Link>
+                <p className="mt-1.5 text-[0.9rem] text-ink-soft">
+                  {posts.filter((post) => post.category === category.name).length} articles
+                </p>
+              </li>
+            ))}
+          </ul>
+        </Container>
+      </section>
+
       <section className="py-16 sm:py-20">
         <Container>
           <Eyebrow accent="blue">All articles</Eyebrow>
           <div className="mt-8">
             <Suspense fallback={null}>
-              <BlogExplorer posts={rest} />
+              <BlogExplorer posts={rest.map(toSummary)} />
             </Suspense>
           </div>
         </Container>

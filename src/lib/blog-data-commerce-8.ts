@@ -189,6 +189,21 @@ export const commercePosts8: BlogPost[] = [
         },
       },
       {
+        "heading": "Redesign Guides by Vertical",
+        "body": [
+          "Each product category has its own redesign priorities, from sizing in fashion to trust in jewellery:"
+        ],
+        "checklist": [
+          "[[/blogs/fashion-ecommerce-redesign|Fashion Ecommerce Redesign]]",
+          "[[/blogs/beauty-ecommerce-redesign|Beauty Ecommerce Redesign]]",
+          "[[/blogs/grocery-ecommerce-redesign|Grocery Ecommerce Redesign]]",
+          "[[/blogs/electronics-ecommerce-redesign|Electronics Ecommerce Redesign]]",
+          "[[/blogs/furniture-ecommerce-redesign|Furniture Ecommerce Redesign]]",
+          "[[/blogs/jewelry-ecommerce-redesign|Jewelry Ecommerce Redesign]]",
+          "[[/blogs/sports-ecommerce-redesign|Sports Ecommerce Redesign]]"
+        ]
+      },
+      {
         heading: "Conclusion",
         body: [
           "An ecommerce redesign works when it's evidence-led and structure-first: baseline, research, catalog and navigation, revenue templates, standards, protected search traffic, thorough QA and a deliberate launch, followed by continuous improvement. For Shopify-specific steps, see [[/blogs/shopify-store-redesign-guide|how to redesign a Shopify store]].",

@@ -21,7 +21,7 @@ export const aiCorePosts7: BlogPost[] = [
     banner: "embeddingflow",
     bannerAlt:
       "Embedding flow: text, embedding model (highlighted), vector, store and index, query vector, nearest neighbours; the note says similar meaning produces nearby vectors if the model fits your data.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce"],
@@ -198,7 +198,7 @@ export const aiCorePosts7: BlogPost[] = [
     banner: "chunkingmethods",
     bannerAlt:
       "Comparison of fixed-size, recursive, structure-aware (highlighted) and semantic chunking by how each splits, what it is best for and its main risk.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["professional-services", "saas-technology"],
@@ -369,7 +369,7 @@ export const aiCorePosts7: BlogPost[] = [
     banner: "rerankflow",
     bannerAlt:
       "Reranking flow: query, retrieve top 50, rerank model (highlighted), keep top 5 to 10, generate, measure; the note says fast recall comes first and precise ordering second.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "professional-services"],
@@ -532,7 +532,7 @@ export const aiCorePosts7: BlogPost[] = [
     banner: "hybridsearch",
     bannerAlt:
       "Hybrid search in four columns: keyword BM25 (exact terms, codes and SKUs, names, rare words), vector (meaning, paraphrase, synonyms, questions), fusion highlighted (RRF by rank, weighted scores, tuned on evaluation, then rerank) and filters (permissions, dates, source, language).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce"],

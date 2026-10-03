@@ -170,6 +170,25 @@ export const webDevPosts: BlogPost[] = [
         ],
       },
       {
+        "heading": "Website Development by Business Type",
+        "body": [
+          "Requirements change with the business model. These guides cover what different types of businesses need from a website:"
+        ],
+        "checklist": [
+          "[[/blogs/website-development-for-startups|Website Development for Startups]]",
+          "[[/blogs/website-development-for-professional-services|Website Development for Professional Services Businesses]]",
+          "[[/blogs/website-development-for-technology-companies|Website Development for Technology Companies]]",
+          "[[/blogs/website-development-for-consulting-firms|Website Development for Consulting Firms]]",
+          "[[/blogs/saas-website-development|Website Development for SaaS Companies]]",
+          "[[/blogs/b2b-website-development|B2B Website Development]]",
+          "[[/blogs/real-estate-website-development|Real Estate Website Development]]",
+          "[[/blogs/healthcare-website-development|Healthcare Website Development]]",
+          "[[/blogs/fintech-website-development|Fintech Website Development]]",
+          "[[/blogs/marketplace-website-development|Ecommerce Marketplace Development]]",
+          "Once a site is live, [[/blogs/how-to-reduce-website-bounce-rate|reducing bounce rate]] is often the first optimisation worth doing."
+        ]
+      },
+      {
         heading: "Conclusion",
         body: [
           "Website development is broader than writing code — it spans technology choice, content strategy, integrations, performance, security and accessibility, all working together rather than bolted on at the end. Use this guide as the starting map, and the linked articles throughout for the depth on each specific decision.",
@@ -293,7 +312,7 @@ export const webDevPosts: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Want a clear, scope-based estimate for your project?",
-          description: "ZSpace Labs can walk through your requirements and explain what's actually driving cost on your specific project, before you commit to anything.",
+          description: "ZSpace Labs can walk through your requirements and explain what's actually driving cost on your specific project, before you commit to anything. See how we approach [[/services/website-development|website development]].",
         },
       },
       {
@@ -406,7 +425,7 @@ export const webDevPosts: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Ready to plan your project timeline in detail?",
-          description: "See the [[/blogs/website-development-process|complete website development process]] for the full stage-by-stage breakdown.",
+          description: "See the [[/blogs/website-development-process|complete website development process]] for the full stage-by-stage breakdown. Explore our [[/services/website-development|website and web app development services]].",
         },
       },
       {
@@ -594,6 +613,7 @@ export const webDevPosts: BlogPost[] = [
   {
     slug: "custom-website-vs-website-builder",
     title: "Custom Website Development vs. Website Builders: Which Should You Choose?",
+    seoTitle: "Custom Website vs Website Builder: Which Should You Choose?",
     excerpt:
       "A structured comparison of flexibility, cost, speed, scalability and ownership — and which type of business each option actually fits.",
     category: "Web Development",
@@ -676,7 +696,7 @@ export const webDevPosts: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Want an honest assessment before you commit either way?",
-          description: "See the [[/blogs/website-development-guide|complete website development guide]] for the full picture of what custom development actually involves.",
+          description: "See the [[/blogs/website-development-guide|complete website development guide]] for the full picture of what custom development actually involves. Learn more about our [[/services/website-development|Next.js and React development work]].",
         },
       },
       {
@@ -780,7 +800,7 @@ export const webDevPosts: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Considering a move off WordPress, or onto it?",
-          description: "See the [[/blogs/website-redesign-vs-rebuild|redesign vs. rebuild guide]] for how to think through a platform change on an existing site.",
+          description: "See the [[/blogs/website-redesign-vs-rebuild|redesign vs. rebuild guide]] for how to think through a platform change on an existing site. See how we approach [[/services/website-development|website development]].",
         },
       },
       {
@@ -876,7 +896,7 @@ export const webDevPosts: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Ready to evaluate specific options?",
-          description: "See the [[/blogs/how-to-choose-website-development-company|how to choose a website development company guide]] for the questions worth asking either option before you commit.",
+          description: "See the [[/blogs/how-to-choose-website-development-company|how to choose a website development company guide]] for the questions worth asking either option before you commit. Explore our [[/services/website-development|website and web app development services]].",
         },
       },
       {

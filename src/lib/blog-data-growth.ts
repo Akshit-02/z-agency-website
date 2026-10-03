@@ -338,6 +338,7 @@ export const growthPosts: BlogPost[] = [
   {
     slug: "d2c-mobile-ecommerce",
     title: "D2C Mobile Ecommerce: How to Design a Better Mobile Shopping Experience",
+    seoTitle: "D2C Mobile Ecommerce: Designing a Better Mobile Shopping Experience",
     excerpt:
       "How D2C brands can design mobile shopping for social-first traffic: in-app browsers, ad landing pages, product pages, sticky actions, wallets and trust.",
     category: "UI/UX",

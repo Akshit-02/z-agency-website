@@ -25,7 +25,7 @@ export const aiCorePosts8: BlogPost[] = [
     banner: "kbassistant",
     bannerAlt:
       "AI knowledge base in four columns: sources (policies, manuals, tickets, wikis), pipeline (sync, parse and chunk, permissions, index), assistant (answers, citations, refusals, hand-off) and feedback highlighted (thumbs and notes, gap reports, owner fixes, re-test).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "ui-ux-design"],
     relatedIndustrySlugs: ["professional-services", "saas-technology", "b2b-enterprise"],
@@ -207,7 +207,7 @@ export const aiCorePosts8: BlogPost[] = [
     banner: "graphragflow",
     bannerAlt:
       "GraphRAG flow: documents, extract entities, build graph (highlighted), detect communities, summarize, query locally or globally.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["professional-services", "pharmaceuticals", "b2b-enterprise"],
@@ -377,7 +377,7 @@ export const aiCorePosts8: BlogPost[] = [
     banner: "mcparch",
     bannerAlt:
       "Model Context Protocol architecture in four columns: host (AI app or IDE, user consent, model access, many clients), client (one per server, protocol, capabilities, auth), server highlighted (your system, stdio or HTTP, validation, scoped access) and capabilities (tools, resources, prompts, extensions).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "9 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],
@@ -594,7 +594,7 @@ export const aiCorePosts8: BlogPost[] = [
     banner: "mcpserverbuild",
     bannerAlt:
       "MCP server build steps: pick SDK, define tools (highlighted), implement handlers, choose transport, add authorization, test and deploy.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],

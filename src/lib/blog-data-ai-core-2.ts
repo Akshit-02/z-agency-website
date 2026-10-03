@@ -21,7 +21,7 @@ export const aiCorePosts2: BlogPost[] = [
     banner: "agentorchestrator",
     bannerAlt:
       "AI agent orchestration in four columns: routing (intent, skills, load, priority), task state highlighted (inputs, progress, outputs, checkpoints), execution (timeouts, parallel steps, budgets, idempotency) and recovery (retries, fallbacks, escalation, compensation).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],
@@ -201,7 +201,7 @@ export const aiCorePosts2: BlogPost[] = [
     banner: "agenticvsdeterministic",
     bannerAlt:
       "Comparison of deterministic and agentic workflows by path, inputs, testing, cost, failure and when to use each; the note says good systems combine fixed rails with AI inside steps.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["b2b-enterprise", "logistics-supply-chain"],
@@ -380,7 +380,7 @@ export const aiCorePosts2: BlogPost[] = [
     banner: "hitlmodes",
     bannerAlt:
       "Human-in-the-loop modes in four columns: before action (review draft, edit freely, nothing sent, training data), approve action highlighted (show the plan, one-click approve, then execute, audit trail), after action (sample review, spot checks, undo window, quality score) and on doubt (low confidence, high value, policy match, escalate).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "ui-ux-design"],
     relatedIndustrySlugs: ["fintech", "healthcare-healthtech", "b2b-enterprise"],
@@ -561,7 +561,7 @@ export const aiCorePosts2: BlogPost[] = [
     banner: "agentevalmetrics",
     bannerAlt:
       "AI agent evaluation metrics in four columns: outcome (task success, correct end state, human acceptance, escalation rate), steps highlighted (tool choice, valid arguments, step count, loops avoided), quality (groundedness, policy compliance, tone, safety) and operations (latency, cost per task, error rate, regression).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "fintech"],

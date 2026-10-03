@@ -23,7 +23,7 @@ export const aiCorePosts13: BlogPost[] = [
     banner: "promptinjection",
     bannerAlt:
       "Prompt injection in four columns: direct (user instructions, jailbreaks, role play, encoding tricks), indirect highlighted (web pages, documents, emails, tool results), impact (data leaks, wrong actions, policy bypass, fraud) and defences (least privilege, approvals, validation, monitoring).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["cybersecurity", "fintech", "saas-technology"],
@@ -227,7 +227,7 @@ export const aiCorePosts13: BlogPost[] = [
     banner: "aiimplroadmap",
     bannerAlt:
       "AI implementation roadmap: discover, prioritize, data readiness, pilot, evaluate (highlighted), scale and govern; the note says a pilot without success criteria is a demo.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "8 min read",
     relatedServiceSlugs: ["ai-automation", "website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["b2b-enterprise", "startups", "professional-services"],

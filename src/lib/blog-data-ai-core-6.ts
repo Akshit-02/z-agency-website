@@ -22,7 +22,7 @@ export const aiCorePosts6: BlogPost[] = [
     banner: "ragpipeline",
     bannerAlt:
       "RAG pipeline: ingest, chunk, embed and index, retrieve (highlighted), generate with citations, evaluate; the note says most answer failures are retrieval failures.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "9 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["professional-services", "saas-technology", "healthcare-healthtech"],
@@ -246,7 +246,7 @@ export const aiCorePosts6: BlogPost[] = [
     banner: "ragvsft",
     bannerAlt:
       "Comparison of RAG (highlighted), fine-tuning and both combined by what changes, fresh data, citations, data needed and best fit; the note says knowledge problems call for RAG and behaviour problems for prompts first, then tuning.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "professional-services"],
@@ -416,7 +416,7 @@ export const aiCorePosts6: BlogPost[] = [
     banner: "enterpriserag",
     bannerAlt:
       "Enterprise RAG architecture in four columns: sources (SharePoint or Drive, wikis, ticketing, databases), ingestion (connectors, parsing, access control sync, re-index jobs), retrieval highlighted (hybrid search, permission filter, rerank, freshness) and serving (assistant UI, APIs, audit logs, evaluations).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["b2b-enterprise", "professional-services", "fintech"],
@@ -592,7 +592,7 @@ export const aiCorePosts6: BlogPost[] = [
     banner: "vectordbmap",
     bannerAlt:
       "Vector databases in four columns: store (vectors, metadata, source IDs, tenants), index highlighted (HNSW, IVF, quantization, rebuilds), query (k-nearest neighbours, filters, hybrid, thresholds) and operate (backups, scaling, cost, monitoring).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce"],

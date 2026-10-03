@@ -23,7 +23,7 @@ export const aiCorePosts3: BlogPost[] = [
     banner: "guardraillayers",
     bannerAlt:
       "AI agent guardrails in four columns: input (size limits, injection checks, PII detection, topic scope), context (trusted versus untrusted, least data, tenant isolation, clear roles), action highlighted (tool allow-list, argument checks, rate limits, approvals) and output (schema validation, policy filters, citations, redaction).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["fintech", "saas-technology", "healthcare-healthtech"],
@@ -203,7 +203,7 @@ export const aiCorePosts3: BlogPost[] = [
     banner: "agentobsmap",
     bannerAlt:
       "AI agent observability in four columns: traces (one per run, correlation IDs, user and tenant, version), spans highlighted (model calls, tool calls, retrieval, approvals), metrics (tokens and cost, latency, errors, escalations) and evaluations (online scores, feedback, sampled review, drift).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],
@@ -386,7 +386,7 @@ export const aiCorePosts3: BlogPost[] = [
     banner: "bpalifecycle",
     bannerAlt:
       "Business process automation lifecycle: discover, map (highlighted), prioritize, design, build and test, measure; the loop notes measuring against the baseline before picking the next process.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "8 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["b2b-enterprise", "professional-services", "manufacturing"],
@@ -598,7 +598,7 @@ export const aiCorePosts3: BlogPost[] = [
     banner: "workflowanatomy",
     bannerAlt:
       "Workflow automation anatomy in four columns: trigger (event or webhook, schedule, form or email, manual start), conditions (field checks, branches, lookups, filters), actions (create or update, notify, generate file, call API) and handling highlighted (retries, dead letters, alerts, run history).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["b2b-enterprise", "professional-services"],

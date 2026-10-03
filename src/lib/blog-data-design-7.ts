@@ -193,6 +193,7 @@ export const designPosts7: BlogPost[] = [
   {
     slug: "ecommerce-product-reviews-ux",
     title: "Ecommerce Product Reviews UX: How to Design Reviews That Help Customers Decide",
+    seoTitle: "Ecommerce Product Reviews UX: Reviews That Help Customers Decide",
     excerpt:
       "How to design product reviews that help shoppers decide: rating summaries, distribution filters, sorting, review search, photos, Q&A and moderation.",
     category: "UI/UX",

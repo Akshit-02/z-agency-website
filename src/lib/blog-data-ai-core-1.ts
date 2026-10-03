@@ -22,7 +22,7 @@ export const aiCorePosts1: BlogPost[] = [
     banner: "agentdevstack",
     bannerAlt:
       "AI agent development in four parts: model (reasoning model, instructions, structured output, fallback model), tools (business APIs, retrieval, MCP servers, sandboxed code execution), state and memory (task state, conversation, long-term memory, checkpoints) and controls highlighted (permissions, approvals, evaluations, tracing).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "10 min read",
     relatedServiceSlugs: ["ai-automation", "website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
@@ -198,6 +198,48 @@ export const aiCorePosts1: BlogPost[] = [
         },
       },
       {
+        "heading": "AI Agents by Industry",
+        "body": [
+          "The same agent building blocks apply differently in each sector, because data, regulation and risk differ. These guides cover industry-specific use cases, integrations and safeguards:"
+        ],
+        "checklist": [
+          "[[/blogs/ai-agents-in-healthcare|AI Agents in Healthcare]]",
+          "[[/blogs/ai-agents-in-banking-and-financial-services|AI Agents in Banking and Financial Services]]",
+          "[[/blogs/ai-agents-in-retail-and-ecommerce|AI Agents in Retail and Ecommerce]]",
+          "[[/blogs/ai-agents-in-manufacturing|AI Agents in Manufacturing]]",
+          "[[/blogs/ai-agents-in-real-estate|AI Agents in Real Estate]]",
+          "[[/blogs/ai-agents-in-insurance|AI Agents in Insurance]]",
+          "[[/blogs/ai-agents-in-travel-and-hospitality|AI Agents in Travel and Hospitality]]",
+          "[[/blogs/ai-agents-in-logistics-and-supply-chain|AI Agents in Logistics and Supply Chain]]",
+          "[[/blogs/ai-agents-in-education|AI Agents in Education]]",
+          "[[/blogs/ai-agents-in-construction|AI Agents in Construction]]",
+          "[[/blogs/ai-agents-in-marketing|AI Agents in Marketing]]",
+          "[[/blogs/ai-agents-in-property-management|AI Agents in Property Management]]",
+          "[[/blogs/ai-agents-in-finance-operations|AI Agents in Finance Operations]]",
+          "[[/blogs/ai-agents-for-insurance-brokers-and-agencies|AI Agents for Insurance Brokers and Agencies]]",
+          "[[/blogs/ai-agents-for-d2c-brands|AI Agents for D2C Brands]]",
+          "[[/blogs/ai-agents-for-saas-companies|AI Agents for SaaS Companies]]",
+          "[[/blogs/ai-agents-in-accounting-and-tax|AI Agents in Accounting and Tax]]",
+          "[[/blogs/ai-agents-for-professional-services|AI Agents for Professional Services]]",
+          "[[/blogs/ai-agents-in-food-and-beverage|AI Agents in Food and Beverage]]",
+          "[[/blogs/ai-agents-in-government|AI Agents in Government]]",
+          "[[/blogs/ai-agents-in-aviation|AI Agents in Aviation]]",
+          "[[/blogs/ai-agents-in-automotive|AI Agents in Automotive]]",
+          "[[/blogs/ai-agents-in-pharmaceuticals|AI Agents in Pharmaceuticals]]",
+          "[[/blogs/ai-agents-in-hospital-operations|AI Agents in Hospital Operations]]",
+          "[[/blogs/ai-agents-in-freight-and-customs-documentation|AI Agents in Freight and Customs Documentation]]",
+          "[[/blogs/ai-agents-in-hotel-operations|AI Agents in Hotel Operations]]",
+          "[[/blogs/ai-agents-in-academic-support|AI Agents in Academic Support]]",
+          "[[/blogs/ai-agents-in-construction-project-controls|AI Agents in Construction Project Controls]]",
+          "[[/blogs/ai-agents-in-media-and-entertainment|AI Agents in Media and Entertainment]]",
+          "[[/blogs/ai-agents-in-agriculture|AI Agents in Agriculture]]",
+          "[[/blogs/ai-agents-for-ecommerce|AI Agents for Ecommerce]]",
+          "[[/blogs/ai-automation-legal|AI Automation for Law Firms and Legal Teams]]",
+          "[[/blogs/ai-automation-telecommunications|AI Automation for Telecommunications]]",
+          "[[/blogs/ai-automation-energy-utilities|AI Automation for Energy and Utilities]]"
+        ]
+      },
+      {
         heading: "Conclusion",
         body: [
           "Useful agents are narrow, well-tooled, evaluated and controlled. Start with one task, keep consequential decisions behind approvals, measure success on real cases and grow autonomy with evidence. Next: [[/blogs/ai-agent-architecture|architecture]], [[/blogs/ai-agent-evaluation|evaluation]] and [[/blogs/human-in-the-loop-ai|human-in-the-loop design]].",
@@ -217,7 +259,7 @@ export const aiCorePosts1: BlogPost[] = [
     banner: "agentvschatbot",
     bannerAlt:
       "Comparison of an AI chatbot and an AI agent (highlighted) by main job, tools, planning, state, autonomy and failure mode; the note says the risk moves from what it says to what it does.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "8 min read",
     relatedServiceSlugs: ["ai-automation", "ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "professional-services"],
@@ -408,7 +450,7 @@ export const aiCorePosts1: BlogPost[] = [
     banner: "agentarchlayers",
     bannerAlt:
       "AI agent architecture in four layers: interface (chat or voice, API and events, approval UI, notifications), agent runtime highlighted (model calls, planner loop, state store, policy checks), capabilities (tools and APIs, retrieval, memory, sub-agents) and platform (identity, secrets, tracing, evaluation).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "8 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "fintech", "b2b-enterprise"],
@@ -605,7 +647,7 @@ export const aiCorePosts1: BlogPost[] = [
     banner: "singlevsmulti",
     bannerAlt:
       "Comparison of single-agent (highlighted) and multi-agent systems by structure, debugging, cost and latency, context, best fit and whether to start with it; the note says add agents only when one agent measurably fails.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "professional-services"],

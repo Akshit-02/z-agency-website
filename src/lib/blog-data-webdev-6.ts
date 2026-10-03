@@ -18,7 +18,7 @@ export const webDevPosts6: BlogPost[] = [
       "A practical guide to information architecture, menus, search, breadcrumbs, mobile navigation and accessible user flows.",
     category: "Web Development",
     banner: "navmap",
-    date: "2026-09-28",
+    date: "2026-09-24",
     readingTime: "11 min read",
     relatedServiceSlugs: ["website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "b2b-enterprise"],
@@ -121,7 +121,7 @@ export const webDevPosts6: BlogPost[] = [
       "A practical framework covering CTA strategy, forms, landing pages, service pages, demo flows, CRM integration and attribution.",
     category: "Web Development",
     banner: "gauge",
-    date: "2026-09-28",
+    date: "2026-09-24",
     readingTime: "12 min read",
     relatedServiceSlugs: ["website-development", "cro-audit"],
     relatedIndustrySlugs: ["b2b-enterprise", "saas-technology", "professional-services"],
@@ -198,7 +198,7 @@ export const webDevPosts6: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Ready to connect lead generation to a broader conversion strategy?",
-          description: "See ZSpace Labs' [[/blogs/shopify-cro-audit|CRO audit framework]] for the structured, evidence-based approach this connects to.",
+          description: "See ZSpace Labs' [[/blogs/shopify-cro-audit|CRO audit framework]] for the structured, evidence-based approach this connects to. Learn more about our [[/services/website-development|Next.js and React development work]].",
         },
       },
       {
@@ -224,7 +224,7 @@ export const webDevPosts6: BlogPost[] = [
       "The anatomy of a landing page that actually converts — above-the-fold, value proposition, proof, objections, forms and performance.",
     category: "Web Development",
     banner: "homepageanatomy",
-    date: "2026-09-29",
+    date: "2026-09-24",
     readingTime: "11 min read",
     relatedServiceSlugs: ["website-development", "cro-audit", "ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "b2b-enterprise"],
@@ -307,7 +307,7 @@ export const webDevPosts6: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Want your landing pages reviewed for conversion friction?",
-          description: "See the [[/blogs/website-lead-generation|website lead generation guide]] for how landing pages fit into the broader lead-generation system.",
+          description: "See the [[/blogs/website-lead-generation|website lead generation guide]] for how landing pages fit into the broader lead-generation system. See how we approach [[/services/website-development|website development]].",
         },
       },
       {
@@ -339,7 +339,7 @@ export const webDevPosts6: BlogPost[] = [
       "Why bounce rate needs context before you act on it, and what underlying user behavior is actually worth investigating.",
     category: "Web Development",
     banner: "bounceviz",
-    date: "2026-09-29",
+    date: "2026-09-24",
     readingTime: "10 min read",
     relatedServiceSlugs: ["website-development", "cro-audit"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce"],
@@ -409,7 +409,7 @@ export const webDevPosts6: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Want bounce rate reviewed as part of a broader diagnostic?",
-          description: "See the [[/blogs/why-is-my-website-not-converting|why is my website not converting guide]] for the fuller diagnostic framework this connects to.",
+          description: "See the [[/blogs/why-is-my-website-not-converting|why is my website not converting guide]] for the fuller diagnostic framework this connects to. Explore our [[/services/website-development|website and web app development services]].",
         },
       },
       {
@@ -435,7 +435,7 @@ export const webDevPosts6: BlogPost[] = [
       "The technical SEO foundation — architecture, URLs, metadata, headings, internal links, rendering, structured data and performance — built in during development, not retrofitted.",
     category: "Web Development",
     banner: "serp",
-    date: "2026-09-29",
+    date: "2026-09-24",
     readingTime: "13 min read",
     relatedServiceSlugs: ["website-development"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "b2b-enterprise"],
@@ -524,7 +524,7 @@ export const webDevPosts6: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Want your site's technical SEO foundation audited?",
-          description: "See the [[/blogs/website-development-guide|complete website development guide]] for how SEO fits into the broader development process.",
+          description: "See the [[/blogs/website-development-guide|complete website development guide]] for how SEO fits into the broader development process. Learn more about our [[/services/website-development|Next.js and React development work]].",
         },
       },
       {
@@ -568,7 +568,7 @@ export const webDevPosts6: BlogPost[] = [
       "A practical checklist covering responsive layout, mobile navigation, typography, touch targets, forms, images and performance.",
     category: "Web Development",
     banner: "mobileframe",
-    date: "2026-09-30",
+    date: "2026-09-24",
     readingTime: "10 min read",
     relatedServiceSlugs: ["website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["ecommerce", "saas-technology"],
@@ -651,7 +651,7 @@ export const webDevPosts6: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Ready to test your mobile experience against real usage?",
-          description: "See the [[/blogs/website-performance-optimization|performance optimization guide]] for how mobile speed connects to the broader performance discipline.",
+          description: "See the [[/blogs/website-performance-optimization|performance optimization guide]] for how mobile speed connects to the broader performance discipline. See how we approach [[/services/website-development|website development]].",
         },
       },
       {
@@ -683,7 +683,7 @@ export const webDevPosts6: BlogPost[] = [
       "A practical checklist covering positioning, design quality, contact information, genuine testimonials, security, policies and brand consistency.",
     category: "Web Development",
     banner: "trustmap",
-    date: "2026-09-30",
+    date: "2026-09-24",
     readingTime: "11 min read",
     relatedServiceSlugs: ["website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["b2b-enterprise", "fintech", "professional-services"],
@@ -766,7 +766,7 @@ export const webDevPosts6: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Ready to connect trust signals to your broader conversion strategy?",
-          description: "See the [[/blogs/why-is-my-website-not-converting|why is my website not converting guide]] for how trust fits into the fuller diagnostic picture.",
+          description: "See the [[/blogs/why-is-my-website-not-converting|why is my website not converting guide]] for how trust fits into the fuller diagnostic picture. Explore our [[/services/website-development|website and web app development services]].",
         },
       },
       {

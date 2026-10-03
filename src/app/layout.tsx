@@ -6,6 +6,8 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { StructuredData } from "@/components/StructuredData";
 import { site } from "@/lib/site";
+import { services } from "@/lib/services-data";
+import { ORG_ID, WEBSITE_ID } from "@/lib/seo";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -95,19 +97,33 @@ export default function RootLayout({
           data={{
             "@context": "https://schema.org",
             "@type": "Organization",
+            "@id": ORG_ID,
             name: site.name,
+            alternateName: "ZSpace",
             url: site.url,
+            logo: { "@type": "ImageObject", url: `${site.url}/apple-icon`, width: 180, height: 180 },
             email: site.email,
-            description: site.description,
-            sameAs: Object.values(site.social),
+            description: site.intro,
+            contactPoint: {
+              "@type": "ContactPoint",
+              contactType: "sales",
+              email: site.email,
+              url: `${site.url}/contact`,
+              availableLanguage: ["English"],
+            },
+            knowsAbout: services.map((service) => service.name),
+            ...(Object.keys(site.social).length > 0 ? { sameAs: Object.values(site.social) } : {}),
           }}
         />
         <StructuredData
           data={{
             "@context": "https://schema.org",
             "@type": "WebSite",
+            "@id": WEBSITE_ID,
             name: site.name,
             url: site.url,
+            publisher: { "@id": ORG_ID },
+            inLanguage: "en",
             potentialAction: {
               "@type": "SearchAction",
               target: `${site.url}/blogs?q={search_term_string}`,

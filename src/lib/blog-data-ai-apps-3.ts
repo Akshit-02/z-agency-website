@@ -22,7 +22,7 @@ export const aiAppsPosts3: BlogPost[] = [
     banner: "legacyflow",
     bannerAlt:
       "Legacy modernization flow: inventory, map dependencies, add tests (highlighted), refactor in slices, migrate, retire old; the note says tests come first because they make AI-assisted changes safe.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["website-development", "mobile-app-development", "ai-automation"],
     relatedIndustrySlugs: ["b2b-enterprise", "manufacturing", "fintech"],
@@ -214,7 +214,7 @@ export const aiAppsPosts3: BlogPost[] = [
     banner: "aisdlcflow",
     bannerAlt:
       "AI software development lifecycle: requirements, design, build, test (highlighted), release, maintain; the note says AI assists every stage while people own every decision.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["website-development", "ui-ux-design", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],
@@ -409,7 +409,7 @@ export const aiAppsPosts3: BlogPost[] = [
     banner: "hrautomation",
     bannerAlt:
       "AI HR automation in four columns: onboarding (checklists, accounts, equipment, training), employee help highlighted (policy answers, payslip queries, benefits, routing), documents (letters, contracts drafted for HR review, forms, records) and leave and changes (requests, balances, approvals, HRIS updates).",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["hrtech", "b2b-enterprise", "professional-services"],
@@ -598,7 +598,7 @@ export const aiAppsPosts3: BlogPost[] = [
     banner: "recruitflow",
     bannerAlt:
       "Recruitment flow: application, parse and deduplicate, knockout rules, recruiter review (highlighted), schedule, communicate; the note says people make every selection decision.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "8 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["hrtech", "professional-services"],

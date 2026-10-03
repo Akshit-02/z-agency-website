@@ -11,11 +11,12 @@ export const webDevPosts9: BlogPost[] = [
   {
     slug: "static-site-generation-vs-server-side-rendering",
     title: "Static Site Generation vs Server-Side Rendering: Which Should You Choose?",
+    seoTitle: "Static Site Generation vs Server-Side Rendering: Which to Choose?",
     excerpt:
       "Building pages ahead of time versus on each request: how the choice affects speed, freshness, hosting, scalability and cost.",
     category: "Web Development",
     banner: "tiers",
-    date: "2026-10-05",
+    date: "2026-09-24",
     readingTime: "10 min read",
     relatedServiceSlugs: ["website-development"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "media-entertainment"],
@@ -93,7 +94,7 @@ export const webDevPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Want your site both fast and current?",
-          description: "Talk to ZSpace Labs about combining static and dynamic rendering for your content.",
+          description: "Talk to ZSpace Labs about combining static and dynamic rendering for your content. See how we approach [[/services/website-development|website development]].",
         },
       },
       {
@@ -113,7 +114,7 @@ export const webDevPosts9: BlogPost[] = [
       "One application doing everything versus separate, API-connected systems: trade-offs in development, flexibility, performance, security, cost and team needs.",
     category: "Web Development",
     banner: "layers",
-    date: "2026-10-05",
+    date: "2026-09-24",
     readingTime: "11 min read",
     relatedServiceSlugs: ["website-development", "shopify-development"],
     relatedIndustrySlugs: ["ecommerce", "saas-technology", "b2b-enterprise"],
@@ -200,7 +201,7 @@ export const webDevPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Planning your next architecture?",
-          description: "Talk to ZSpace Labs about the architecture that fits your team and roadmap, not the one that's most fashionable.",
+          description: "Talk to ZSpace Labs about the architecture that fits your team and roadmap, not the one that's most fashionable. Explore our [[/services/website-development|website and web app development services]].",
         },
       },
       {
@@ -221,7 +222,7 @@ export const webDevPosts9: BlogPost[] = [
       "A practical architecture guide covering information architecture, components, routing, APIs, databases, caching, CDNs, rendering, authentication, monitoring and deployment.",
     category: "Web Development",
     banner: "archstack",
-    date: "2026-10-05",
+    date: "2026-09-24",
     readingTime: "14 min read",
     relatedServiceSlugs: ["website-development"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
@@ -334,7 +335,7 @@ export const webDevPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Want an architecture review before you scale?",
-          description: "Talk to ZSpace Labs about where your current setup will strain first, and what to change now versus later.",
+          description: "Talk to ZSpace Labs about where your current setup will strain first, and what to change now versus later. Learn more about our [[/services/website-development|Next.js and React development work]].",
         },
       },
       {
@@ -355,7 +356,7 @@ export const webDevPosts9: BlogPost[] = [
       "Security decisions made during architecture and development: authentication, authorization, validation, APIs, secrets, dependencies, headers, data protection and secure deployment.",
     category: "Web Development",
     banner: "securitylock",
-    date: "2026-10-06",
+    date: "2026-09-24",
     readingTime: "13 min read",
     relatedServiceSlugs: ["website-development"],
     relatedIndustrySlugs: ["fintech", "healthcare-healthtech", "saas-technology"],
@@ -468,7 +469,7 @@ export const webDevPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Want a security review of your architecture?",
-          description: "Talk to ZSpace Labs about where your current build is exposed and what to prioritize.",
+          description: "Talk to ZSpace Labs about where your current build is exposed and what to prioritize. See how we approach [[/services/website-development|website development]].",
         },
       },
       {
@@ -485,11 +486,12 @@ export const webDevPosts9: BlogPost[] = [
   {
     slug: "website-migration-guide",
     title: "Website Migration Guide: How to Move to a New Platform Without Losing SEO",
+    seoTitle: "Website Migration Guide: Change Platforms Without Losing SEO",
     excerpt:
       "A complete before, during and after migration framework: URL inventory, mapping, redirects, metadata, staging QA, launch, and post-launch crawl and index monitoring.",
     category: "Web Development",
     banner: "migrate",
-    date: "2026-10-06",
+    date: "2026-09-24",
     readingTime: "15 min read",
     relatedServiceSlugs: ["website-development"],
     relatedIndustrySlugs: ["ecommerce", "b2b-enterprise", "media-entertainment"],
@@ -612,7 +614,7 @@ export const webDevPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Want your migration reviewed before launch?",
-          description: "Talk to ZSpace Labs about protecting your search visibility through a platform move.",
+          description: "Talk to ZSpace Labs about protecting your search visibility through a platform move. Explore our [[/services/website-development|website and web app development services]].",
         },
       },
       {
@@ -633,7 +635,7 @@ export const webDevPosts9: BlogPost[] = [
       "What replatforming means, the signs it's needed, the risks and costs involved, and how it differs from a redesign or rebuild.",
     category: "Web Development",
     banner: "roadmap",
-    date: "2026-10-06",
+    date: "2026-09-24",
     readingTime: "12 min read",
     relatedServiceSlugs: ["website-development", "shopify-development"],
     relatedIndustrySlugs: ["ecommerce", "b2b-enterprise", "saas-technology"],
@@ -737,7 +739,7 @@ export const webDevPosts9: BlogPost[] = [
         ],
         cta: {
           title: "Planning a replatforming project?",
-          description: "Talk to ZSpace Labs about a phased, lower-risk path to a stack that fits where your business is going.",
+          description: "Talk to ZSpace Labs about a phased, lower-risk path to a stack that fits where your business is going. Learn more about our [[/services/website-development|Next.js and React development work]].",
         },
       },
       {

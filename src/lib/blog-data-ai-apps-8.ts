@@ -24,7 +24,7 @@ export const aiAppsPosts8: BlogPost[] = [
     banner: "bizsearchflow",
     bannerAlt:
       "AI search flow: query, understand query (highlighted), retrieve with hybrid search, rank, results with facets, learn from clicks.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],
@@ -222,7 +222,7 @@ export const aiAppsPosts8: BlogPost[] = [
     banner: "copilotarch",
     bannerAlt:
       "AI copilot architecture in four columns: context (current screen, record data, user role, history), assistant (model, retrieval, prompts, memory), actions (suggest, fill forms, draft, run tasks only with confirmation and the user's permissions) and controls highlighted (permissions, confirmation, audit, undo).",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "ui-ux-design", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],
@@ -415,7 +415,7 @@ export const aiAppsPosts8: BlogPost[] = [
     banner: "mobileai",
     bannerAlt:
       "Comparison of on-device, cloud and hybrid (highlighted) mobile AI by latency, privacy, offline behaviour, model size and cost.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["mobile-app-development", "ai-automation", "ui-ux-design"],
     relatedIndustrySlugs: ["d2c-consumer", "healthcare-healthtech", "education-edtech"],
@@ -614,7 +614,7 @@ export const aiAppsPosts8: BlogPost[] = [
     banner: "enterpriseai",
     bannerAlt:
       "Enterprise AI at scale in four columns: portfolio (use case intake, prioritization, value tracking, retirement), platform highlighted (model gateway, retrieval, evaluation, observability), people (centre of excellence and owners, training, change management, support) and governance (policies, risk tiers, inventory, audits).",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["b2b-enterprise", "fintech", "manufacturing"],

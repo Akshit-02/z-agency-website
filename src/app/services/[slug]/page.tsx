@@ -13,6 +13,7 @@ import { services, getServiceBySlug } from "@/lib/services-data";
 import { posts } from "@/lib/blog-data";
 import { getIndustryBySlug } from "@/lib/industries-data";
 import { site } from "@/lib/site";
+import { pageTitle, ORG_ID } from "@/lib/seo";
 
 export function generateStaticParams() {
   return services.map((service) => ({ slug: service.slug }));
@@ -28,13 +29,13 @@ export async function generateMetadata({
   if (!service) return {};
 
   return {
-    title: `${service.name} — Services`,
-    description: service.summary,
+    title: pageTitle(service.seoTitle),
+    description: service.metaDescription,
     alternates: { canonical: `/services/${service.slug}` },
     openGraph: {
       siteName: site.name,
-      title: `${service.name} — ${site.name}`,
-      description: service.summary,
+      title: `${service.seoTitle} — ${site.name}`,
+      description: service.metaDescription,
       url: `${site.url}/services/${service.slug}`,
     },
   };
@@ -49,7 +50,13 @@ export default async function ServiceDetailPage({
   const service = getServiceBySlug(slug);
   if (!service) notFound();
 
-  const related = posts.filter((post) => post.relatedServiceSlugs.includes(service.slug)).slice(0, 3);
+  // Curated hub guides first; fall back to any article tagged with this service.
+  const guidePosts = service.guides
+    .map((slug) => posts.find((post) => post.slug === slug))
+    .filter((post): post is NonNullable<typeof post> => Boolean(post));
+  const related = guidePosts.length > 0
+    ? guidePosts
+    : posts.filter((post) => post.relatedServiceSlugs.includes(service.slug)).slice(0, 6);
   const otherServices = services.filter((s) => s.slug !== service.slug).slice(0, 3);
   const relatedIndustries = (service.industrySlugs ?? [])
     .map(getIndustryBySlug)
@@ -68,11 +75,14 @@ export default async function ServiceDetailPage({
         data={{
           "@context": "https://schema.org",
           "@type": "Service",
+          "@id": `${site.url}/services/${service.slug}#service`,
+          url: `${site.url}/services/${service.slug}`,
           serviceType: service.name,
           name: service.name,
-          description: service.summary,
-          provider: { "@type": "Organization", name: site.name, url: site.url },
+          description: service.metaDescription,
+          provider: { "@id": ORG_ID },
           areaServed: "Worldwide",
+          audience: { "@type": "BusinessAudience", audienceType: service.audience.join("; ") },
         }}
       />
       <StructuredData
@@ -97,6 +107,28 @@ export default async function ServiceDetailPage({
           { name: service.name, href: `/services/${service.slug}` },
         ]}
       />
+
+      <section className="border-b border-line py-16 sm:py-24">
+        <Container className="grid gap-10 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <Reveal>
+              <Eyebrow accent={accent}>Overview</Eyebrow>
+            </Reveal>
+            <Reveal delay={0.05}>
+              <h2 className="mt-4 text-balance font-display text-[1.9rem] font-medium leading-[1.15] tracking-tight sm:text-[2.2rem]">
+                {service.definition.question}
+              </h2>
+            </Reveal>
+          </div>
+          <div className="flex flex-col gap-5">
+            {service.definition.answer.map((para, i) => (
+              <Reveal key={i} delay={0.05 * i}>
+                <p className="text-pretty text-[1.05rem] leading-relaxed text-ink-soft">{para}</p>
+              </Reveal>
+            ))}
+          </div>
+        </Container>
+      </section>
 
       <section className="border-b border-line py-16 sm:py-24">
         <Container className="grid gap-10 lg:grid-cols-2 lg:gap-16">
@@ -143,10 +175,65 @@ export default async function ServiceDetailPage({
       </section>
 
       <section className="border-b border-line py-16 sm:py-24">
+        <Container className="grid gap-10 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <Reveal>
+              <Eyebrow accent={accent}>Who it&apos;s for</Eyebrow>
+            </Reveal>
+            <Reveal delay={0.05}>
+              <h2 className="mt-4 text-balance font-display text-[1.9rem] font-medium leading-[1.15] tracking-tight sm:text-[2.2rem]">
+                Who this service is for
+              </h2>
+            </Reveal>
+          </div>
+          <div className="flex flex-col gap-5">
+            {service.audience.map((line, i) => (
+              <Reveal key={line} delay={0.05 * i}>
+                <div className="flex gap-3">
+                  <Check className={`mt-1 h-4 w-4 shrink-0 ${textAccent}`} />
+                  <p className="text-pretty text-[1.02rem] leading-relaxed text-ink-soft">{line}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-b border-line bg-[#f3f2ee] py-16 sm:py-24">
+        <Container>
+          <div className="max-w-xl">
+            <Reveal>
+              <Eyebrow accent={accent}>Use cases</Eyebrow>
+            </Reveal>
+            <Reveal delay={0.05}>
+              <h2 className="mt-4 text-balance font-display text-[1.9rem] font-medium leading-[1.15] tracking-tight sm:text-[2.2rem]">
+                What we typically build
+              </h2>
+            </Reveal>
+          </div>
+          <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {service.useCases.map((useCase, i) => (
+              <Reveal key={useCase.title} delay={0.05 * i}>
+                <div className="border-t border-line-strong pt-5">
+                  <h3 className="font-display text-[1.15rem] font-medium tracking-tight">{useCase.title}</h3>
+                  <p className="mt-2.5 text-pretty text-[0.96rem] leading-relaxed text-ink-soft">{useCase.body}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-b border-line py-16 sm:py-24">
         <Container>
           <div className="max-w-xl">
             <Reveal>
               <Eyebrow accent={accent}>Our approach</Eyebrow>
+            </Reveal>
+            <Reveal delay={0.05}>
+              <h2 className="mt-4 text-balance font-display text-[1.9rem] font-medium leading-[1.15] tracking-tight sm:text-[2.2rem]">
+                How we work
+              </h2>
             </Reveal>
           </div>
           <div className="mt-10 grid gap-8 sm:grid-cols-3">
@@ -269,7 +356,7 @@ export default async function ServiceDetailPage({
           <Container className="grid gap-12 lg:grid-cols-2">
             {related.length > 0 && (
               <div>
-                <Eyebrow accent={accent}>Related reading</Eyebrow>
+                <Eyebrow accent={accent}>Guides</Eyebrow>
                 <ul className="mt-5 flex flex-col gap-4">
                   {related.map((post) => (
                     <li key={post.slug}>

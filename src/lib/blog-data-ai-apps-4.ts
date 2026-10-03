@@ -22,7 +22,7 @@ export const aiAppsPosts4: BlogPost[] = [
     banner: "contentopsflow",
     bannerAlt:
       "Content operations flow: research, brief, assisted draft, expert review (highlighted), approve, publish and measure.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["media-entertainment", "saas-technology", "martech"],
@@ -214,7 +214,7 @@ export const aiAppsPosts4: BlogPost[] = [
     banner: "procureflow",
     bannerAlt:
       "Procurement flow: request, classify and apply policy (highlighted), source vendor, approve, create purchase order, receive and match.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["manufacturing", "b2b-enterprise"],
@@ -402,7 +402,7 @@ export const aiAppsPosts4: BlogPost[] = [
     banner: "itsmflow",
     bannerAlt:
       "IT service management flow: ticket, classify and prioritize (highlighted), suggest fix, automate approved actions, escalate, learn.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["b2b-enterprise", "saas-technology"],
@@ -584,7 +584,7 @@ export const aiAppsPosts4: BlogPost[] = [
     banner: "dataentryflow",
     bannerAlt:
       "Data entry automation flow: source, extract, map fields, validate and deduplicate (highlighted), write to system, exceptions.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["b2b-enterprise", "logistics-supply-chain"],

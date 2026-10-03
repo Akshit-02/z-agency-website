@@ -28,6 +28,7 @@ export const aiAgentPosts: BlogPost[] = [
   {
     slug: "ai-agents-in-healthcare",
     title: "AI Agents in Healthcare: Use Cases, Benefits, Challenges and Implementation Guide",
+    seoTitle: "AI Agents in Healthcare: Use Cases, Risks and Implementation",
     excerpt:
       "How AI agents automate healthcare administration — scheduling, intake, prior authorization and revenue cycle work — without making clinical decisions, and how to implement one responsibly.",
     category: "AI & Automation",
@@ -239,7 +240,7 @@ export const aiAgentPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want to explore what an AI agent could automate in your practice or health system?",
-          description: "ZSpace Labs builds custom AI agents that connect healthcare business systems, data and workflows to automate the administrative work around care — while keeping clinical and coverage decisions with your team.",
+          description: "ZSpace Labs builds custom AI agents that connect healthcare business systems, data and workflows to automate the administrative work around care — while keeping clinical and coverage decisions with your team. See how we approach [[/services/ai-automation|AI automation]].",
         },
       },
       {
@@ -255,6 +256,7 @@ export const aiAgentPosts: BlogPost[] = [
   {
     slug: "ai-agents-in-banking-and-financial-services",
     title: "AI Agents in Banking and Financial Services: Use Cases, Benefits and Implementation Guide",
+    seoTitle: "AI Agents in Banking: Use Cases and Implementation Guide",
     excerpt:
       "How banks and financial institutions use AI agents for onboarding, KYC/AML, fraud investigation and compliance — and where human approval has to remain in the loop.",
     category: "AI & Automation",
@@ -461,7 +463,7 @@ export const aiAgentPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want to explore what an AI agent could automate in your compliance or operations workflow?",
-          description: "ZSpace Labs builds custom AI agents that connect banking and financial-services systems, data and tools to automate multi-step onboarding, compliance and operational processes, with human approval built into every consequential step.",
+          description: "ZSpace Labs builds custom AI agents that connect banking and financial-services systems, data and tools to automate multi-step onboarding, compliance and operational processes, with human approval built into every consequential step. Explore our [[/services/ai-automation|AI workflow and agent development services]].",
         },
       },
       {
@@ -477,6 +479,7 @@ export const aiAgentPosts: BlogPost[] = [
   {
     slug: "ai-agents-in-retail-and-ecommerce",
     title: "AI Agents in Retail and Ecommerce: Use Cases, Agentic Commerce and Implementation Guide",
+    seoTitle: "AI Agents in Retail and Ecommerce: Use Cases and Implementation",
     excerpt:
       "How retail and ecommerce brands use AI agents for product discovery, inventory, merchandising and support — and what agentic commerce means for how AI systems shop on a customer's behalf.",
     category: "AI & Automation",
@@ -679,7 +682,7 @@ export const aiAgentPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want to explore what an AI agent could automate in your store?",
-          description: "ZSpace Labs builds custom AI agents and Shopify integrations that connect your catalog, inventory and support systems to automate discovery, service and operational workflows.",
+          description: "ZSpace Labs builds custom AI agents and Shopify integrations that connect your catalog, inventory and support systems to automate discovery, service and operational workflows. Learn more about our [[/services/ai-automation|AI integration and automation work]].",
         },
       },
       {
@@ -696,6 +699,7 @@ export const aiAgentPosts: BlogPost[] = [
   {
     slug: "ai-agents-in-manufacturing",
     title: "AI Agents in Manufacturing: Predictive Maintenance, Quality Control and Smart Factory Automation",
+    seoTitle: "AI Agents in Manufacturing: Maintenance, Quality and Planning",
     excerpt:
       "How manufacturers use AI agents alongside existing industrial automation for predictive maintenance, quality inspection, production scheduling and supply planning.",
     category: "AI & Automation",
@@ -899,7 +903,7 @@ export const aiAgentPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want to explore what an AI agent could automate on your production floor?",
-          description: "ZSpace Labs builds custom AI agents that connect manufacturing data — sensors, MES, ERP and maintenance systems — into automated monitoring and planning workflows, with human approval on anything that touches physical operations.",
+          description: "ZSpace Labs builds custom AI agents that connect manufacturing data — sensors, MES, ERP and maintenance systems — into automated monitoring and planning workflows, with human approval on anything that touches physical operations. See how we approach [[/services/ai-automation|AI automation]].",
         },
       },
       {
@@ -915,6 +919,7 @@ export const aiAgentPosts: BlogPost[] = [
   {
     slug: "ai-agents-in-real-estate",
     title: "AI Agents in Real Estate: Lead Qualification, Property Search, Follow-Ups and Automation",
+    seoTitle: "AI Agents in Real Estate: Leads, Property Search and Follow-Ups",
     excerpt:
       "How real estate teams use AI agents to qualify leads, match properties, schedule showings and keep follow-up consistent — with high-intent leads still handed to a human agent.",
     category: "AI & Automation",
@@ -1111,7 +1116,7 @@ export const aiAgentPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want to explore what an AI agent could automate in your lead pipeline?",
-          description: "ZSpace Labs builds custom AI agents that connect your website, CRM, listing data and calendar to qualify, match and follow up with leads automatically, handing off every high-intent lead to your team with full context.",
+          description: "ZSpace Labs builds custom AI agents that connect your website, CRM, listing data and calendar to qualify, match and follow up with leads automatically, handing off every high-intent lead to your team with full context. Explore our [[/services/ai-automation|AI workflow and agent development services]].",
         },
       },
       {
@@ -1127,6 +1132,7 @@ export const aiAgentPosts: BlogPost[] = [
   {
     slug: "ai-agents-in-insurance",
     title: "AI Agents in Insurance: Claims, Underwriting, Fraud Detection and Customer Service",
+    seoTitle: "AI Agents in Insurance: Claims, Underwriting and Fraud",
     excerpt:
       "How insurers use AI agents to speed up claims intake, underwriting support and fraud detection — while keeping coverage and claims decisions with human underwriters and adjusters.",
     category: "AI & Automation",
@@ -1328,7 +1334,7 @@ export const aiAgentPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want to explore what an AI agent could automate in your claims or underwriting process?",
-          description: "ZSpace Labs builds custom AI agents that connect claims, policy and document systems to speed up intake, underwriting support and fraud triage, with auditable human approval built into every determination.",
+          description: "ZSpace Labs builds custom AI agents that connect claims, policy and document systems to speed up intake, underwriting support and fraud triage, with auditable human approval built into every determination. Learn more about our [[/services/ai-automation|AI integration and automation work]].",
         },
       },
       {
@@ -1344,6 +1350,7 @@ export const aiAgentPosts: BlogPost[] = [
   {
     slug: "ai-agents-in-travel-and-hospitality",
     title: "AI Agents in Travel and Hospitality: Booking, Guest Service, Personalization and Operations",
+    seoTitle: "AI Agents in Travel and Hospitality: Booking and Guest Service",
     excerpt:
       "How hotels, travel agencies and hospitality brands use AI agents for trip planning, guest communication, concierge service and revenue operations — and how AI-mediated travel discovery is changing search.",
     category: "AI & Automation",
@@ -1544,7 +1551,7 @@ export const aiAgentPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want to explore what an AI agent could automate in your booking or guest-service flow?",
-          description: "ZSpace Labs builds custom AI agents and website integrations that connect your booking systems, guest data and communication channels to automate planning, service and operational workflows.",
+          description: "ZSpace Labs builds custom AI agents and website integrations that connect your booking systems, guest data and communication channels to automate planning, service and operational workflows. See how we approach [[/services/ai-automation|AI automation]].",
         },
       },
       {
@@ -1560,6 +1567,7 @@ export const aiAgentPosts: BlogPost[] = [
   {
     slug: "ai-agents-in-logistics-and-supply-chain",
     title: "AI Agents in Logistics and Supply Chain: Route Optimization, Planning and Autonomous Operations",
+    seoTitle: "AI Agents in Logistics and Supply Chain: Use Cases and Planning",
     excerpt:
       "How logistics and supply chain teams use AI agents for dynamic routing, warehouse operations, demand forecasting and exception handling — responding to changing conditions, not just generating reports.",
     category: "AI & Automation",
@@ -1760,7 +1768,7 @@ export const aiAgentPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want to explore what an AI agent could automate in your logistics operations?",
-          description: "ZSpace Labs builds custom AI agents that connect TMS, WMS and ERP systems to automate routing, exception handling and planning workflows, with human approval on high-impact decisions.",
+          description: "ZSpace Labs builds custom AI agents that connect TMS, WMS and ERP systems to automate routing, exception handling and planning workflows, with human approval on high-impact decisions. Explore our [[/services/ai-automation|AI workflow and agent development services]].",
         },
       },
       {
@@ -1776,6 +1784,7 @@ export const aiAgentPosts: BlogPost[] = [
   {
     slug: "ai-agents-in-education",
     title: "AI Agents in Education: Admissions, Student Support, Learning and Campus Automation",
+    seoTitle: "AI Agents in Education: Admissions, Student Support and Learning",
     excerpt:
       "How schools, colleges and edtech platforms use AI agents for admissions, enrollment and student support — as administrative assistance alongside teachers and counselors, not a replacement for them.",
     category: "AI & Automation",
@@ -1970,7 +1979,7 @@ export const aiAgentPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want to explore what an AI agent could automate in your admissions or student support process?",
-          description: "ZSpace Labs builds custom AI agents that connect CRM, SIS and LMS systems to automate admissions follow-up, student inquiries and administrative workflows, with clear escalation to staff for anything that needs a person.",
+          description: "ZSpace Labs builds custom AI agents that connect CRM, SIS and LMS systems to automate admissions follow-up, student inquiries and administrative workflows, with clear escalation to staff for anything that needs a person. Learn more about our [[/services/ai-automation|AI integration and automation work]].",
         },
       },
       {
@@ -1986,6 +1995,7 @@ export const aiAgentPosts: BlogPost[] = [
   {
     slug: "ai-agents-in-construction",
     title: "AI Agents in Construction: Project Management, Estimating, Site Operations and Automation",
+    seoTitle: "AI Agents in Construction: Estimating, Projects and Site Operations",
     excerpt:
       "How construction and AEC teams use AI agents to manage RFIs, drawings, procurement and site reporting across fragmented project information — with safety and professional sign-off staying with people.",
     category: "AI & Automation",
@@ -2181,7 +2191,7 @@ export const aiAgentPosts: BlogPost[] = [
         ],
         cta: {
           title: "Want to explore what an AI agent could automate in your project coordination?",
-          description: "ZSpace Labs builds custom AI agents that connect project management, BIM and procurement systems to automate RFI handling, document cross-checking and project-controls reporting.",
+          description: "ZSpace Labs builds custom AI agents that connect project management, BIM and procurement systems to automate RFI handling, document cross-checking and project-controls reporting. See how we approach [[/services/ai-automation|AI automation]].",
         },
       },
       {

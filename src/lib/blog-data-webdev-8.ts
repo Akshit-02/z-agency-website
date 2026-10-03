@@ -15,7 +15,7 @@ export const webDevPosts8: BlogPost[] = [
       "A plain-language comparison of data fetching, flexibility, caching, performance, security and team requirements, with guidance on when each fits.",
     category: "Web Development",
     banner: "restgraphql",
-    date: "2026-10-02",
+    date: "2026-09-24",
     readingTime: "11 min read",
     relatedServiceSlugs: ["website-development", "mobile-app-development"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
@@ -107,7 +107,7 @@ export const webDevPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Want a second opinion on your API design?",
-          description: "Talk to ZSpace Labs before committing to an API style that your team will live with for years.",
+          description: "Talk to ZSpace Labs before committing to an API style that your team will live with for years. Learn more about our [[/services/website-development|Next.js and React development work]].",
         },
       },
       {
@@ -127,7 +127,7 @@ export const webDevPosts8: BlogPost[] = [
       "A reference guide to the integrations business websites most often need, what each one does, and what to plan for when implementing it.",
     category: "Web Development",
     banner: "integration",
-    date: "2026-10-03",
+    date: "2026-09-24",
     readingTime: "13 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["ecommerce", "b2b-enterprise", "saas-technology"],
@@ -254,7 +254,7 @@ export const webDevPosts8: BlogPost[] = [
       "A practical implementation guide covering lead capture, APIs and webhooks, attribution, duplicate prevention, validation, security and testing.",
     category: "Web Development",
     banner: "systems",
-    date: "2026-10-03",
+    date: "2026-09-24",
     readingTime: "12 min read",
     relatedServiceSlugs: ["website-development", "cro-audit", "ai-automation"],
     relatedIndustrySlugs: ["b2b-enterprise", "professional-services", "real-estate"],
@@ -353,7 +353,7 @@ export const webDevPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Planning a CRM integration?",
-          description: "Talk to ZSpace Labs about connecting your website and CRM in a way your sales team can rely on.",
+          description: "Talk to ZSpace Labs about connecting your website and CRM in a way your sales team can rely on. See how we approach [[/services/website-development|website development]].",
         },
       },
       {
@@ -374,7 +374,7 @@ export const webDevPosts8: BlogPost[] = [
       "How payment flows work, why webhooks matter, how to handle failed payments and refunds, and what security and testing a payment integration needs.",
     category: "Web Development",
     banner: "checkoutflow",
-    date: "2026-10-03",
+    date: "2026-09-24",
     readingTime: "12 min read",
     relatedServiceSlugs: ["website-development", "shopify-development", "cro-audit"],
     relatedIndustrySlugs: ["ecommerce", "fintech", "saas-technology"],
@@ -495,7 +495,7 @@ export const webDevPosts8: BlogPost[] = [
       "What PWAs are, how service workers, caching, installability and push notifications work, where PWAs fall short, and which businesses they suit.",
     category: "Web Development",
     banner: "mobileframe",
-    date: "2026-10-04",
+    date: "2026-09-24",
     readingTime: "12 min read",
     relatedServiceSlugs: ["website-development", "mobile-app-development"],
     relatedIndustrySlugs: ["ecommerce", "media-entertainment", "travel-hospitality"],
@@ -578,7 +578,7 @@ export const webDevPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Want to turn your website into a PWA?",
-          description: "Talk to ZSpace Labs about installability, offline behavior and notifications that genuinely help your users.",
+          description: "Talk to ZSpace Labs about installability, offline behavior and notifications that genuinely help your users. Explore our [[/services/website-development|website and web app development services]].",
         },
       },
       {
@@ -598,7 +598,7 @@ export const webDevPosts8: BlogPost[] = [
       "Comparing development, cost, performance, device access, distribution, offline support, notifications and maintenance, with a practical decision guide.",
     category: "Web Development",
     banner: "segmentsplit",
-    date: "2026-10-04",
+    date: "2026-09-24",
     readingTime: "11 min read",
     relatedServiceSlugs: ["mobile-app-development", "website-development"],
     relatedIndustrySlugs: ["ecommerce", "fintech", "travel-hospitality"],
@@ -708,7 +708,7 @@ export const webDevPosts8: BlogPost[] = [
       "Where a page's HTML gets built, in the browser or on the server, and how that choice affects SEO, performance, user experience and complexity.",
     category: "Web Development",
     banner: "renderflow",
-    date: "2026-10-04",
+    date: "2026-09-24",
     readingTime: "11 min read",
     relatedServiceSlugs: ["website-development"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "media-entertainment"],
@@ -798,7 +798,7 @@ export const webDevPosts8: BlogPost[] = [
         ],
         cta: {
           title: "Planning a new build or re-architecture?",
-          description: "Talk to ZSpace Labs about choosing rendering strategies page by page rather than one approach for everything.",
+          description: "Talk to ZSpace Labs about choosing rendering strategies page by page rather than one approach for everything. Learn more about our [[/services/website-development|Next.js and React development work]].",
         },
       },
       {

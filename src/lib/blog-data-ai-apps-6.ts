@@ -23,7 +23,7 @@ export const aiAppsPosts6: BlogPost[] = [
     banner: "energyai",
     bannerAlt:
       "AI automation for energy and utilities in four columns: customers highlighted (billing queries, move in or out, outage updates, payment plans), field operations (work orders, job packs, inspections, reports), assets (maintenance documents, inspection data, defect triage, history) and compliance (filings, evidence, audits, safety records); the note says business workflows only, with grid and plant control staying in operational technology systems.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "mobile-app-development"],
     relatedIndustrySlugs: ["energy-cleantech"],
@@ -223,7 +223,7 @@ export const aiAppsPosts6: BlogPost[] = [
     banner: "aiappstack",
     bannerAlt:
       "AI application architecture in four columns: experience (web or mobile, copilot UI, feedback, fallbacks), application (business logic, authentication, workflows, APIs), AI layer highlighted (models, retrieval, tools, evaluation) and data and operations (data pipelines, monitoring, cost, governance).",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "8 min read",
     relatedServiceSlugs: ["ai-automation", "website-development", "mobile-app-development"],
     relatedIndustrySlugs: ["saas-technology", "startups", "b2b-enterprise"],
@@ -429,7 +429,7 @@ export const aiAppsPosts6: BlogPost[] = [
     banner: "genaiarch",
     bannerAlt:
       "Generative AI application architecture in four columns: inputs (user text, files, context, history), orchestration highlighted (prompts, RAG, tools, state), models (provider APIs, routing, structured output, fallbacks) and guardrails (validation, policies, evaluations, monitoring).",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "startups"],
@@ -625,7 +625,7 @@ export const aiAppsPosts6: BlogPost[] = [
     banner: "aisaas",
     bannerAlt:
       "AI-native SaaS architecture in four columns: tenancy highlighted (data isolation, per-tenant configuration, keys and regions, admin controls), AI services (gateway, retrieval, prompts, evaluations), metering (tokens or tasks, plans and limits, billing, cost per tenant) and product UX (suggestions, undo, explain, feedback).",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["website-development", "ai-automation", "ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "startups"],

@@ -25,11 +25,12 @@ export const webDevPosts5: BlogPost[] = [
   {
     slug: "fintech-website-development",
     title: "Fintech Website Development: How to Build a Secure and High-Trust Website",
+    seoTitle: "Fintech Website Development: Secure, High-Trust Websites",
     excerpt:
       "What financial technology companies need from a website — trust, security, clear product explanation, calculators and honest disclosures.",
     category: "Web Development",
     banner: "ledger",
-    date: "2026-09-26",
+    date: "2026-09-24",
     readingTime: "12 min read",
     relatedServiceSlugs: ["website-development"],
     relatedIndustrySlugs: ["fintech"],
@@ -105,7 +106,7 @@ export const webDevPosts5: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Planning a fintech website or product marketing site?",
-          description: "See the [[/blogs/website-development-guide|complete website development guide]] for how security, clarity and conversion fit together in the planning process.",
+          description: "See the [[/blogs/website-development-guide|complete website development guide]] for how security, clarity and conversion fit together in the planning process. Learn more about our [[/services/website-development|Next.js and React development work]].",
         },
       },
       {
@@ -131,7 +132,7 @@ export const webDevPosts5: BlogPost[] = [
       "What a technology company's website needs to serve technical buyers — architecture explanations, integrations, documentation and credible demo or signup paths.",
     category: "Web Development",
     banner: "systems",
-    date: "2026-09-27",
+    date: "2026-09-24",
     readingTime: "11 min read",
     relatedServiceSlugs: ["website-development"],
     relatedIndustrySlugs: ["saas-technology", "martech", "cybersecurity"],
@@ -201,7 +202,7 @@ export const webDevPosts5: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Want your product site reviewed for technical clarity and accuracy?",
-          description: "See the [[/blogs/website-development-guide|complete website development guide]] for how technical credibility fits into the broader development process.",
+          description: "See the [[/blogs/website-development-guide|complete website development guide]] for how technical credibility fits into the broader development process. See how we approach [[/services/website-development|website development]].",
         },
       },
       {
@@ -223,11 +224,12 @@ export const webDevPosts5: BlogPost[] = [
   {
     slug: "website-development-for-consulting-firms",
     title: "Website Development for Consulting Firms: How to Turn Expertise Into Leads",
+    seoTitle: "Website Development for Consulting Firms: Turn Expertise Into Leads",
     excerpt:
       "How consulting firms should structure a website around genuine expertise, credible case studies and a clear path from insight to inquiry.",
     category: "Web Development",
     banner: "hub",
-    date: "2026-09-27",
+    date: "2026-09-24",
     readingTime: "11 min read",
     relatedServiceSlugs: ["website-development"],
     relatedIndustrySlugs: ["professional-services", "b2b-enterprise"],
@@ -297,7 +299,7 @@ export const webDevPosts5: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Want your firm's positioning and case studies reviewed for impact?",
-          description: "See the [[/blogs/website-trust-and-credibility|website trust and credibility guide]] for the broader checklist this connects to.",
+          description: "See the [[/blogs/website-trust-and-credibility|website trust and credibility guide]] for the broader checklist this connects to. Explore our [[/services/website-development|website and web app development services]].",
         },
       },
       {
@@ -317,7 +319,7 @@ export const webDevPosts5: BlogPost[] = [
       "A diagnostic framework covering traffic quality, messaging, UX, CTAs, trust, forms and follow-up — for a site that gets visitors but not inquiries.",
     category: "Web Development",
     banner: "decisiontree",
-    date: "2026-09-27",
+    date: "2026-09-24",
     readingTime: "12 min read",
     relatedServiceSlugs: ["website-development", "cro-audit"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise", "professional-services"],
@@ -418,7 +420,7 @@ export const webDevPosts5: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Want a structured diagnosis instead of guessing at fixes?",
-          description: "See ZSpace Labs' [[/blogs/shopify-cro-audit|CRO audit framework]] for the full evidence-based diagnostic process this connects to.",
+          description: "See ZSpace Labs' [[/blogs/shopify-cro-audit|CRO audit framework]] for the full evidence-based diagnostic process this connects to. Learn more about our [[/services/website-development|Next.js and React development work]].",
         },
       },
       {
@@ -444,7 +446,7 @@ export const webDevPosts5: BlogPost[] = [
       "The real, common causes of slow websites — images, JavaScript, fonts, third-party scripts, hosting and rendering — and how to actually diagnose which one applies to you.",
     category: "Web Development",
     banner: "waterfall",
-    date: "2026-09-27",
+    date: "2026-09-24",
     readingTime: "12 min read",
     relatedServiceSlugs: ["website-development"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce"],
@@ -533,7 +535,7 @@ export const webDevPosts5: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Ready to fix the actual bottleneck, not just guess at one?",
-          description: "See the [[/blogs/website-performance-optimization|complete website performance optimization guide]] for the full technical breakdown.",
+          description: "See the [[/blogs/website-performance-optimization|complete website performance optimization guide]] for the full technical breakdown. See how we approach [[/services/website-development|website development]].",
         },
       },
       {
@@ -571,7 +573,7 @@ export const webDevPosts5: BlogPost[] = [
       "A diagnostic framework covering intent mismatch, positioning, UX, CTAs, forms, trust, mobile, performance and testing — for a site that isn't converting.",
     category: "Web Development",
     banner: "funnel",
-    date: "2026-09-28",
+    date: "2026-09-24",
     readingTime: "12 min read",
     relatedServiceSlugs: ["website-development", "cro-audit"],
     relatedIndustrySlugs: ["ecommerce", "saas-technology", "d2c-consumer"],
@@ -665,7 +667,7 @@ export const webDevPosts5: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Want a structured audit instead of trial-and-error fixes?",
-          description: "See the [[/blogs/shopify-cro-audit|complete CRO audit framework]] for the full evidence-based diagnostic and prioritization process.",
+          description: "See the [[/blogs/shopify-cro-audit|complete CRO audit framework]] for the full evidence-based diagnostic and prioritization process. Explore our [[/services/website-development|website and web app development services]].",
         },
       },
       {

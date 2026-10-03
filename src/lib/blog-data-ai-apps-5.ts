@@ -23,7 +23,7 @@ export const aiAppsPosts5: BlogPost[] = [
     banner: "expenseflow",
     bannerAlt:
       "Expense flow: receipt, extract, policy check (highlighted), approve, reimburse, post to ERP; a branch shows out-of-policy claims requiring a reason and approver.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "mobile-app-development"],
     relatedIndustrySlugs: ["fintech", "professional-services", "b2b-enterprise"],
@@ -208,7 +208,7 @@ export const aiAppsPosts5: BlogPost[] = [
     banner: "complianceflow",
     bannerAlt:
       "Compliance flow: obligations, map to controls, collect evidence (highlighted), test controls, report, remediate; the note says AI gathers and drafts while accountable people sign off.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["fintech", "saas-technology", "healthcare-healthtech"],
@@ -391,7 +391,7 @@ export const aiAppsPosts5: BlogPost[] = [
     banner: "legalai",
     bannerAlt:
       "AI for law firms in four columns: intake (enquiries, conflicts with decisions kept by the firm, engagement, routing), research highlighted (case law, statutes, cited answers, verification), documents (review, drafting, clause libraries, comparison) and matters (deadlines, billing notes, status, knowledge).",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["legaltech", "professional-services"],
@@ -584,7 +584,7 @@ export const aiAppsPosts5: BlogPost[] = [
     banner: "telecomai",
     bannerAlt:
       "AI automation in telecommunications in four columns: customer care (billing queries, plan changes, fault reports, retention with consent), network operations highlighted (alarm grouping, ticket enrichment, runbooks, change risk), field service (job preparation, parts, notes, scheduling) and back office (orders, porting, disputes, reporting).",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "mobile-app-development"],
     relatedIndustrySlugs: ["telecommunications"],

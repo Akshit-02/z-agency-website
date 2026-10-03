@@ -17,7 +17,7 @@ export const webDevPosts4: BlogPost[] = [
       "What an early-stage website actually needs — validation, credibility and scalability — and what it can reasonably wait on.",
     category: "Web Development",
     banner: "roadmap",
-    date: "2026-09-25",
+    date: "2026-09-24",
     readingTime: "12 min read",
     relatedServiceSlugs: ["website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["startups", "saas-technology"],
@@ -104,7 +104,7 @@ export const webDevPosts4: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Not sure what your startup's website actually needs right now?",
-          description: "See the [[/blogs/website-development-guide|complete website development guide]] for the full picture of what to prioritize and what can wait.",
+          description: "See the [[/blogs/website-development-guide|complete website development guide]] for the full picture of what to prioritize and what can wait. Learn more about our [[/services/website-development|Next.js and React development work]].",
         },
       },
       {
@@ -130,7 +130,7 @@ export const webDevPosts4: BlogPost[] = [
       "What a SaaS website actually needs to do — clear positioning, working signup and demo flows, credible pricing, and documentation that supports the product, not just the marketing.",
     category: "Web Development",
     banner: "dashboard",
-    date: "2026-09-25",
+    date: "2026-09-24",
     readingTime: "13 min read",
     relatedServiceSlugs: ["website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology"],
@@ -219,7 +219,7 @@ export const webDevPosts4: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Want your SaaS site's conversion flow reviewed?",
-          description: "See the [[/blogs/website-development-guide|complete website development guide]] for how positioning, UX and technical foundation come together.",
+          description: "See the [[/blogs/website-development-guide|complete website development guide]] for how positioning, UX and technical foundation come together. See how we approach [[/services/website-development|website development]].",
         },
       },
       {
@@ -239,7 +239,7 @@ export const webDevPosts4: BlogPost[] = [
       "What a B2B website needs to support long buying cycles and multiple stakeholders — trust, case studies, clear demo paths and CRM-connected lead capture.",
     category: "Web Development",
     banner: "salesfunnel",
-    date: "2026-09-25",
+    date: "2026-09-24",
     readingTime: "12 min read",
     relatedServiceSlugs: ["website-development", "cro-audit"],
     relatedIndustrySlugs: ["b2b-enterprise", "professional-services"],
@@ -322,7 +322,7 @@ export const webDevPosts4: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Want your B2B site's lead flow reviewed end to end?",
-          description: "See the [[/blogs/website-lead-generation|website lead generation guide]] for how CTA strategy, forms and CRM integration fit together.",
+          description: "See the [[/blogs/website-lead-generation|website lead generation guide]] for how CTA strategy, forms and CRM integration fit together. Explore our [[/services/website-development|website and web app development services]].",
         },
       },
       {
@@ -351,7 +351,7 @@ export const webDevPosts4: BlogPost[] = [
       "What consulting firms, agencies, legal and financial practices need from a website to convert expertise into qualified inquiries.",
     category: "Web Development",
     banner: "layers",
-    date: "2026-09-26",
+    date: "2026-09-24",
     readingTime: "11 min read",
     relatedServiceSlugs: ["website-development", "cro-audit"],
     relatedIndustrySlugs: ["professional-services", "b2b-enterprise"],
@@ -427,7 +427,7 @@ export const webDevPosts4: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Want your inquiry flow reviewed for unnecessary friction?",
-          description: "See the [[/blogs/website-lead-generation|website lead generation guide]] for how to structure a contact flow that converts without over-asking.",
+          description: "See the [[/blogs/website-lead-generation|website lead generation guide]] for how to structure a contact flow that converts without over-asking. Learn more about our [[/services/website-development|Next.js and React development work]].",
         },
       },
       {
@@ -453,7 +453,7 @@ export const webDevPosts4: BlogPost[] = [
       "What a real estate website needs — property listings, search and filters, maps, agent profiles and CRM-connected lead capture.",
     category: "Web Development",
     banner: "appshelf",
-    date: "2026-09-26",
+    date: "2026-09-24",
     readingTime: "12 min read",
     relatedServiceSlugs: ["website-development", "cro-audit"],
     relatedIndustrySlugs: ["real-estate"],
@@ -529,7 +529,7 @@ export const webDevPosts4: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Planning a real estate website project?",
-          description: "See the [[/blogs/website-development-cost|website development cost guide]] for the real cost drivers behind MLS integration, custom search and CRM connections.",
+          description: "See the [[/blogs/website-development-cost|website development cost guide]] for the real cost drivers behind MLS integration, custom search and CRM connections. See how we approach [[/services/website-development|website development]].",
         },
       },
       {
@@ -555,7 +555,7 @@ export const webDevPosts4: BlogPost[] = [
       "What healthcare organizations need from a website — clear services and provider information, accessible and patient-friendly UX, appointment flows, and privacy-conscious security.",
     category: "Web Development",
     banner: "considerationfunnel",
-    date: "2026-09-26",
+    date: "2026-09-24",
     readingTime: "12 min read",
     relatedServiceSlugs: ["website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["healthcare-healthtech"],
@@ -631,7 +631,7 @@ export const webDevPosts4: BlogPost[] = [
         table: webDevFrameworkTable,
         cta: {
           title: "Planning a healthcare website project?",
-          description: "See the [[/blogs/website-development-guide|complete website development guide]] for the broader planning process this connects to.",
+          description: "See the [[/blogs/website-development-guide|complete website development guide]] for the broader planning process this connects to. Explore our [[/services/website-development|website and web app development services]].",
         },
       },
       {

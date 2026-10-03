@@ -21,7 +21,7 @@ export const aiAppsPosts2: BlogPost[] = [
     banner: "aitestpipeline",
     bannerAlt:
       "AI testing pipeline: requirements, test plan, generate tests, run in CI, triage failures (highlighted), maintain; the note says a generated test is only useful if it can fail for the right reason.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "8 min read",
     relatedServiceSlugs: ["website-development", "mobile-app-development"],
     relatedIndustrySlugs: ["saas-technology", "fintech"],
@@ -210,7 +210,7 @@ export const aiAppsPosts2: BlogPost[] = [
     banner: "aidebugflow",
     bannerAlt:
       "AI debugging flow: error signal, gather context, reproduce (highlighted), hypothesize, fix and test, verify regression.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["website-development", "mobile-app-development"],
     relatedIndustrySlugs: ["saas-technology"],
@@ -380,7 +380,7 @@ export const aiAppsPosts2: BlogPost[] = [
     banner: "testgenflow",
     bannerAlt:
       "Test generation flow: select target, read code and specification, generate cases, run and check, assess strength (highlighted), review and commit.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["website-development"],
     relatedIndustrySlugs: ["saas-technology"],
@@ -562,7 +562,7 @@ export const aiAppsPosts2: BlogPost[] = [
     banner: "docsflow",
     bannerAlt:
       "Documentation flow: code change, detect documentation impact, draft update, human review (highlighted), publish, check drift.",
-    date: "2026-10-04",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],

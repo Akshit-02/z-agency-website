@@ -15,6 +15,13 @@ export type Service = {
   technology: string[];
   whyZspace: string[];
   faq: { q: string; a: string }[];
+  seoTitle: string;
+  metaDescription: string;
+  definition: { question: string; answer: string[] };
+  audience: string[];
+  useCases: { title: string; body: string }[];
+  /** Hand-picked hub articles shown as "Guides" on the service page. */
+  guides: string[];
   industrySlugs?: string[];
 };
 
@@ -69,6 +76,47 @@ export const services: Service[] = [
       "We build on frameworks used by teams shipping at scale, not locked-in page builders.",
       "Every project ships with a component system your internal team can extend later.",
     ],
+    seoTitle: "Website Development Services | Next.js & React Websites",
+    metaDescription: "Website and web application development with Next.js, React and TypeScript: fast, SEO-ready sites, custom web apps, CMS setup, integrations and redesigns.",
+    definition: {
+          "question": "What is website development?",
+          "answer": [
+                "Website development is the work of planning, building and maintaining a website or web application: information architecture, front-end code that renders pages in the browser, back-end services and databases, content management, integrations with other systems, hosting and ongoing performance and security work.",
+                "For most businesses the website is the main sales and trust channel, so development decisions affect search visibility, speed, how easily marketing can publish, and how well the site connects to CRM, payments and analytics. We build on Next.js and React with TypeScript, which gives fast, search-friendly pages and room to grow into a full web application."
+          ]
+    },
+    audience: [
+          "Businesses replacing a slow page-builder or legacy CMS site",
+          "Startups and SaaS companies that need a marketing site and a web app on one stack",
+          "Teams whose marketing needs to publish without waiting on developers",
+          "Companies that need integrations with CRM, payments, booking or internal systems"
+    ],
+    useCases: [
+          {
+                "title": "Marketing and lead-generation sites",
+                "body": "Fast, structured sites with a CMS, analytics and forms that route enquiries to the right place."
+          },
+          {
+                "title": "Custom web applications",
+                "body": "Portals, dashboards and internal tools with authentication, roles, APIs and databases."
+          },
+          {
+                "title": "Website redesign and replatforming",
+                "body": "Rebuilding an existing site on a faster stack while protecting URLs, content and search equity."
+          },
+          {
+                "title": "Headless and content-heavy sites",
+                "body": "Large content libraries, documentation and multi-team publishing on a headless CMS."
+          }
+    ],
+    guides: [
+          "website-development-guide",
+          "website-development-cost",
+          "website-development-process",
+          "nextjs-website-development",
+          "website-redesign-vs-rebuild",
+          "website-performance-optimization"
+    ],
     faq: [
       {
         q: "How long does a website project take?",
@@ -81,6 +129,22 @@ export const services: Service[] = [
       {
         q: "Can our team edit content after launch?",
         a: "We set up a content workflow, usually a headless CMS, so your team can update copy, images and pages without needing a developer for routine changes.",
+      },
+      {
+        q: "How much does website development cost?",
+        a: "It depends on scope: the number of templates, content migration, integrations, CMS needs and whether the project includes a web application. We scope each project after a short discovery call and give a fixed estimate per phase. Our website development cost guide explains the main cost drivers.",
+      },
+      {
+        q: "Why do you build with Next.js and React?",
+        a: "Next.js supports server rendering and static generation, which helps page speed and search visibility, and React lets marketing pages and application features share one component system. We still recommend simpler tools when a project does not need them.",
+      },
+      {
+        q: "Will our new website be SEO-ready?",
+        a: "Yes. Every build includes clean URLs, metadata, structured data, sitemaps, redirects from old URLs, image optimisation and Core Web Vitals checks. Rankings still depend on content and authority, which we can advise on.",
+      },
+      {
+        q: "Do you provide website maintenance after launch?",
+        a: "Yes. We offer ongoing support for updates, dependency and security patches, performance monitoring and new features, or we hand over documentation so your team can maintain it.",
       },
     ],
   },
@@ -134,6 +198,47 @@ export const services: Service[] = [
       "Cross-platform expertise means one investment reaches both iOS and Android.",
       "We stay involved past launch to handle updates, OS changes and store requirements.",
     ],
+    seoTitle: "Mobile App Development Services | iOS & Android Apps",
+    metaDescription: "iOS and Android app development with React Native and native code: product scoping, mobile UX, backends and APIs, App Store launch and post-launch support.",
+    definition: {
+          "question": "What is mobile app development?",
+          "answer": [
+                "Mobile app development covers designing, building, testing and releasing applications for iOS and Android: defining the core user flows, designing the interface for small screens, writing the app, building or connecting the backend, integrating payments, notifications and analytics, and handling App Store and Google Play submission and updates.",
+                "Most products we build use React Native, which shares one codebase across both platforms, with native Swift or Kotlin modules where a feature needs deeper device access. The right choice depends on the features, performance needs and the team that will maintain the app."
+          ]
+    },
+    audience: [
+          "Founders turning a validated idea into a first app release",
+          "Businesses adding an app alongside an existing website or platform",
+          "Teams with an ageing or expensive-to-maintain app on two codebases",
+          "Products that need offline use, notifications, payments or device features"
+    ],
+    useCases: [
+          {
+                "title": "Consumer apps",
+                "body": "Onboarding, accounts, content, purchases and notifications designed around a few core flows."
+          },
+          {
+                "title": "Commerce and booking apps",
+                "body": "Catalogues, carts, payments, bookings and order tracking connected to your existing systems."
+          },
+          {
+                "title": "Internal and field apps",
+                "body": "Apps for staff and field teams with offline support, forms, photos and sync."
+          },
+          {
+                "title": "App modernisation",
+                "body": "Moving an older native or hybrid app onto a maintainable cross-platform codebase."
+          }
+    ],
+    guides: [
+          "mobile-app-development-guide",
+          "mobile-app-development-cost",
+          "native-vs-cross-platform-app-development",
+          "react-native-app-development",
+          "mobile-app-development-process",
+          "mobile-app-architecture"
+    ],
     faq: [
       {
         q: "Should we build native or cross-platform?",
@@ -146,6 +251,22 @@ export const services: Service[] = [
       {
         q: "What happens after the app is live?",
         a: "We offer ongoing support for updates, OS compatibility and new features, structured around what your product needs after launch.",
+      },
+      {
+        q: "How much does it cost to build a mobile app?",
+        a: "Cost depends on the number of screens and user roles, backend complexity, integrations, offline needs and whether both platforms launch together. We estimate after scoping the core flows. Our mobile app development cost guide covers the main drivers.",
+      },
+      {
+        q: "How long does it take to build an app?",
+        a: "A focused first version usually takes a few months from discovery to store release, longer for apps with complex backends or many roles. We plan releases so a useful version reaches users early.",
+      },
+      {
+        q: "Can you build the backend and admin panel too?",
+        a: "Yes. We build APIs, databases, authentication and admin tools, or integrate with your existing backend and third-party services.",
+      },
+      {
+        q: "Do you design the app as well as build it?",
+        a: "Yes. Mobile UX and interface design are part of the process, so flows are tested before development and the shipped app matches the design.",
       },
     ],
   },
@@ -199,6 +320,47 @@ export const services: Service[] = [
       "Automations are engineered like software, with monitoring and fallbacks, not fragile scripts.",
       "We are honest about where AI helps and where it does not.",
     ],
+    seoTitle: "AI Automation Services | AI Workflows, Agents & Integrations",
+    metaDescription: "AI automation services for business workflows: document processing, lead routing, support automation and AI agents connected to your CRM, APIs and tools.",
+    definition: {
+          "question": "What is AI automation?",
+          "answer": [
+                "AI automation uses language models and other AI components inside business workflows to handle work that rules alone cannot: reading emails and documents, classifying requests, drafting replies, extracting data and deciding the next step. It is combined with conventional automation, APIs and human approval so each step is reliable and auditable.",
+                "We start by mapping a process and deciding which steps should stay deterministic, which benefit from AI and where a person should approve. Then we build the integrations, evaluation and monitoring that keep the workflow accurate after launch."
+          ]
+    },
+    audience: [
+          "Teams spending hours on repetitive email, document or data-entry work",
+          "Sales and support teams that need faster routing and responses",
+          "Businesses with processes spread across CRM, spreadsheets and inboxes",
+          "Companies exploring AI agents but needing guardrails and measurable results"
+    ],
+    useCases: [
+          {
+                "title": "Document and email processing",
+                "body": "Extracting data from invoices, forms and emails, validating it and writing it to your systems."
+          },
+          {
+                "title": "Lead qualification and routing",
+                "body": "Enriching and scoring enquiries, routing them to the right person and drafting first responses."
+          },
+          {
+                "title": "Customer support automation",
+                "body": "Triage, suggested replies and self-service answers grounded in your own documentation."
+          },
+          {
+                "title": "AI agents with approvals",
+                "body": "Multi-step agents that use your tools within defined permissions, budgets and approval rules."
+          }
+    ],
+    guides: [
+          "ai-workflow-automation",
+          "business-process-automation",
+          "ai-agent-development",
+          "when-to-automate-a-business-process",
+          "intelligent-document-processing",
+          "ai-customer-support-automation"
+    ],
     faq: [
       {
         q: "What kind of processes are worth automating?",
@@ -211,6 +373,22 @@ export const services: Service[] = [
       {
         q: "How is this different from using off-the-shelf automation tools alone?",
         a: "Off-the-shelf tools handle simple cases well. We step in where workflows are more complex, need custom logic, or need to connect systems that do not talk to each other natively.",
+      },
+      {
+        q: "How do we know if a process is worth automating with AI?",
+        a: "Good candidates are frequent, time-consuming, reasonably stable and tolerant of a review step. We assess volume, error cost and data availability before building, and sometimes recommend simpler non-AI automation.",
+      },
+      {
+        q: "Is our data safe when using AI models?",
+        a: "We use providers and settings that match your data rules, minimise what is sent to models, keep permissions enforced in your systems and avoid storing sensitive data in prompts or logs.",
+      },
+      {
+        q: "How do you measure whether automation is working?",
+        a: "We define success metrics before building, such as time saved, accuracy and escalation rates, test against real examples and monitor quality and cost after launch.",
+      },
+      {
+        q: "Can AI automation work with our existing tools?",
+        a: "Usually yes. We connect to CRMs, help desks, email, spreadsheets and internal systems through APIs, webhooks or integration platforms.",
       },
     ],
   },
@@ -264,6 +442,47 @@ export const services: Service[] = [
       "Our design decisions are grounded in usability, not just visual trend.",
       "We can carry the design directly into development under one roof.",
     ],
+    seoTitle: "UI/UX Design Services | Product Design & Design Systems",
+    metaDescription: "UI/UX and product design services: user research, flows, wireframes, prototypes, interface design, design systems and UX audits for websites, apps and SaaS.",
+    definition: {
+          "question": "What is UI/UX design?",
+          "answer": [
+                "UX (user experience) design shapes how a product works: understanding users, structuring information, designing user flows and testing whether people can complete their tasks. UI (user interface) design shapes how it looks and feels: layout, typography, colour, components and interaction details.",
+                "Good product design combines both and connects them to business goals and engineering. We design in Figma with a component system that maps to code, so designs ship as intended and new screens stay consistent."
+          ]
+    },
+    audience: [
+          "SaaS and product teams planning a new product or major feature",
+          "Businesses whose website or app is hard to use or inconsistent",
+          "Teams without in-house designers who need design and development together",
+          "Companies preparing a redesign who want evidence before changing everything"
+    ],
+    useCases: [
+          {
+                "title": "Product and SaaS design",
+                "body": "Research, flows, prototypes and interfaces for dashboards, onboarding and core product journeys."
+          },
+          {
+                "title": "Website and app redesigns",
+                "body": "Clearer structure and interface for existing products, based on audits and user evidence."
+          },
+          {
+                "title": "Design systems",
+                "body": "Tokens, components and documentation shared by design and development."
+          },
+          {
+                "title": "UX audits",
+                "body": "Heuristic reviews and usability findings prioritised by impact and effort."
+          }
+    ],
+    guides: [
+          "ui-ux-design-guide",
+          "product-design-process",
+          "ux-audit",
+          "design-systems-for-teams-that-move-fast",
+          "saas-product-design",
+          "accessible-ui-ux-design"
+    ],
     faq: [
       {
         q: "Do you only design, or do you also build the product?",
@@ -276,6 +495,22 @@ export const services: Service[] = [
       {
         q: "How do you measure whether a design is working?",
         a: "Through usability testing, flow completion rates and, post-launch, real behavioural data rather than opinion alone.",
+      },
+      {
+        q: "What is the difference between UI and UX design?",
+        a: "UX covers how a product works and whether people can achieve their goals; UI covers the visual and interactive layer. We handle both, because a clear flow still fails with a confusing interface and vice versa.",
+      },
+      {
+        q: "Do you do user research?",
+        a: "Yes, scaled to the project: stakeholder interviews, user interviews, analytics review, usability testing of prototypes and reviewing support feedback.",
+      },
+      {
+        q: "What do we receive at the end of a design project?",
+        a: "Figma files with organised components, prototypes of key flows, a design system or style guide and documentation for development, or a built product if we also develop it.",
+      },
+      {
+        q: "Can you run a UX audit of our existing product?",
+        a: "Yes. A UX audit reviews key journeys against usability heuristics, accessibility and analytics, and produces prioritised recommendations.",
       },
     ],
   },
@@ -329,6 +564,47 @@ export const services: Service[] = [
       "Design and development are handled together, so the store looks as good as it performs.",
       "We focus on the metrics that affect revenue, not surface-level polish alone.",
     ],
+    seoTitle: "Shopify Development Services | Store Builds, Themes & CRO",
+    metaDescription: "Shopify development services: store builds, custom themes and sections, redesigns, app integrations, speed and conversion improvements for growing brands.",
+    definition: {
+          "question": "What does Shopify development involve?",
+          "answer": [
+                "Shopify development is building and improving stores on Shopify: theme development and customisation in Liquid, custom sections merchants can edit, product and collection templates, app and system integrations, performance work and, for some brands, headless storefronts with Hydrogen.",
+                "Shopify handles hosting, checkout and core commerce, so development focuses on the shopping experience, speed, merchandising flexibility and how the store connects to marketing, inventory and fulfilment systems."
+          ]
+    },
+    audience: [
+          "Brands launching on Shopify or migrating from another platform",
+          "Growing stores whose theme has become slow or hard to change",
+          "Teams that want custom sections without depending on developers for every page",
+          "D2C brands focused on product pages, conversion and repeat purchase"
+    ],
+    useCases: [
+          {
+                "title": "New store builds",
+                "body": "Theme selection or custom theme, product structure, collections, apps and launch checklist."
+          },
+          {
+                "title": "Theme customisation and custom sections",
+                "body": "Flexible sections and templates so merchandisers can build pages themselves."
+          },
+          {
+                "title": "Store redesigns",
+                "body": "Improving navigation, product pages and mobile experience without losing SEO or data."
+          },
+          {
+                "title": "Speed and conversion work",
+                "body": "Reducing app and script bloat and improving product, cart and checkout journeys."
+          }
+    ],
+    guides: [
+          "shopify-store-development",
+          "shopify-theme-development",
+          "shopify-development-cost",
+          "shopify-store-redesign-guide",
+          "shopify-core-web-vitals-performance-guide",
+          "shopify-cro-guide"
+    ],
     faq: [
       {
         q: "Can you work with our existing Shopify theme?",
@@ -341,6 +617,22 @@ export const services: Service[] = [
       {
         q: "Can you help after the store is live?",
         a: "Yes, ongoing optimization is often where the biggest conversion gains happen, well after initial launch.",
+      },
+      {
+        q: "How much does Shopify development cost?",
+        a: "Cost depends on whether you use and customise an existing theme or build a custom one, the number of templates, integrations and migration work. Our Shopify development cost guide explains the drivers; we estimate after a short scoping call.",
+      },
+      {
+        q: "Should we use a theme or a custom Shopify theme?",
+        a: "A well-chosen theme with custom sections suits many stores. A custom theme makes sense when the brand experience, performance goals or merchandising needs outgrow what themes support.",
+      },
+      {
+        q: "Can you speed up our Shopify store?",
+        a: "Usually. We audit apps, scripts, images and theme code, remove what is unused and fix the heaviest issues, then measure Core Web Vitals before and after.",
+      },
+      {
+        q: "Do you work with Shopify Plus?",
+        a: "Yes, including stores using Shopify Plus features. Platform features change, so we confirm current capabilities against Shopify's documentation during scoping.",
       },
     ],
   },
@@ -394,6 +686,47 @@ export const services: Service[] = [
       "We prioritize by impact, so your team knows exactly what to fix first.",
       "We can implement the recommendations directly if you want a single team handling both.",
     ],
+    seoTitle: "CRO Audit & Conversion Rate Optimisation Services",
+    metaDescription: "Conversion rate optimisation services: CRO audits of websites and Shopify stores, funnel and checkout analysis, UX fixes and a prioritised testing roadmap.",
+    definition: {
+          "question": "What is a CRO audit?",
+          "answer": [
+                "Conversion rate optimisation (CRO) is the practice of finding and removing the friction that stops visitors from taking action: enquiring, signing up or buying. A CRO audit is a structured review of your funnel, analytics, page experience and checkout that identifies where and why people drop off.",
+                "Our audits combine analytics review, heuristic UX evaluation, mobile and speed checks and, where data allows, session and heatmap evidence. The output is a prioritised list of fixes and test ideas ranked by expected impact and effort."
+          ]
+    },
+    audience: [
+          "Stores and websites with steady traffic but disappointing conversion",
+          "Shopify brands preparing a redesign who want evidence first",
+          "Teams running ads who need landing pages that convert",
+          "Businesses without in-house CRO or analytics specialists"
+    ],
+    useCases: [
+          {
+                "title": "Ecommerce and Shopify audits",
+                "body": "Product pages, collections, cart, checkout, mobile and trust signals reviewed end to end."
+          },
+          {
+                "title": "Lead-generation website audits",
+                "body": "Forms, calls to action, page structure and enquiry routing for service businesses."
+          },
+          {
+                "title": "Landing page optimisation",
+                "body": "Message match, structure and form design for paid and campaign traffic."
+          },
+          {
+                "title": "Testing roadmaps",
+                "body": "Hypotheses, test design and measurement plans your team can run."
+          }
+    ],
+    guides: [
+          "shopify-cro-guide",
+          "ecommerce-cro-audit",
+          "shopify-cro-audit",
+          "ux-audit",
+          "shopify-checkout-optimization",
+          "ecommerce-cro-testing-roadmap"
+    ],
     faq: [
       {
         q: "What do you need from us to run the audit?",
@@ -406,6 +739,22 @@ export const services: Service[] = [
       {
         q: "Do you also implement the fixes?",
         a: "Yes, implementation is available as a follow-on engagement, but the audit stands alone as a usable deliverable either way.",
+      },
+      {
+        q: "What is a good conversion rate?",
+        a: "It varies widely by industry, traffic source, price point and device, so averages are a weak target. We focus on your own funnel: where people drop off, and how each step compares over time.",
+      },
+      {
+        q: "Do we need lots of traffic for CRO?",
+        a: "A/B testing needs enough traffic for reliable results, but audits, usability fixes and analytics improvements help sites of any size. We recommend testing only where traffic supports it.",
+      },
+      {
+        q: "What is the difference between a CRO audit and a UX audit?",
+        a: "A UX audit focuses on usability and experience; a CRO audit connects those findings to funnel data and business outcomes and prioritises fixes by likely conversion impact.",
+      },
+      {
+        q: "Can you also run A/B tests?",
+        a: "Yes. We can design and run tests, or provide a roadmap and specifications for your team.",
       },
     ],
   },

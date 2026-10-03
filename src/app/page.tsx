@@ -10,9 +10,12 @@ import { TechStack } from "@/components/home/TechStack";
 import { FaqSection } from "@/components/home/FaqSection";
 import { BuildCTA } from "@/components/home/BuildCTA";
 import { site } from "@/lib/site";
+import { homeFaqs } from "@/lib/home-faqs";
+import { StructuredData } from "@/components/StructuredData";
+import { ORG_ID, WEBSITE_ID } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: `${site.name} — Website, App & AI Automation Studio`,
+  title: { absolute: `${site.name} — Website, App, Shopify & AI Automation Studio` },
   description: site.description,
   alternates: { canonical: "/" },
 };
@@ -20,6 +23,29 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
+      <StructuredData
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": `${site.url}/#webpage`,
+          url: site.url,
+          name: `${site.name} — Website, App, Shopify & AI Automation Studio`,
+          description: site.description,
+          isPartOf: { "@id": WEBSITE_ID },
+          about: { "@id": ORG_ID },
+        }}
+      />
+      <StructuredData
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: homeFaqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }}
+      />
       <HomeIntro />
       <WhatWeBuild />
       {/* <Principles /> */}

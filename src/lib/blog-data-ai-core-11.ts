@@ -24,7 +24,7 @@ export const aiCorePosts11: BlogPost[] = [
     banner: "voicepipeline",
     bannerAlt:
       "Voice AI pipeline: caller audio, speech to text, language model with tools (highlighted), text to speech, caller hears, turn detection; the note says every step spends part of one latency budget.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "9 min read",
     relatedServiceSlugs: ["ai-automation", "mobile-app-development"],
     relatedIndustrySlugs: ["healthcare-healthtech", "travel-hospitality", "real-estate"],
@@ -237,7 +237,7 @@ export const aiCorePosts11: BlogPost[] = [
     banner: "voicecsflow",
     bannerAlt:
       "Customer service voice flow: call in, identify caller, understand intent, answer or act, resolve or hand off (highlighted), summary to CRM; a branch shows complex calls going to a human with context.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["fintech", "travel-hospitality", "telecommunications"],
@@ -402,7 +402,7 @@ export const aiCorePosts11: BlogPost[] = [
     banner: "receptionist",
     bannerAlt:
       "AI receptionist in four columns: answer (greeting, hours, FAQs, directions), book (availability, book or change, confirm by SMS, reminders), capture (caller details, reason, urgency, to CRM) and hand off highlighted (transfer, message, callback, emergencies).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["real-estate", "professional-services", "healthcare-healthtech"],
@@ -575,7 +575,7 @@ export const aiCorePosts11: BlogPost[] = [
     banner: "callautomation",
     bannerAlt:
       "Comparison of inbound and outbound (highlighted) AI call automation by how calls start, typical jobs, consent, main risk and measures; the note says outbound AI calls carry consent obligations in many markets.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["healthcare-healthtech", "fintech", "logistics-supply-chain"],

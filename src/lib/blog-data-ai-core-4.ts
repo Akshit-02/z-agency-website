@@ -21,7 +21,7 @@ export const aiCorePosts4: BlogPost[] = [
     banner: "aiworkflowsteps",
     bannerAlt:
       "AI workflow automation in four columns: deterministic steps (triggers, lookups, calculations, system writes), AI steps (classify, extract, summarize, draft), validation highlighted (JSON schema, business rules, cross-checks, confidence) and human gates (approve, edit, escalate, sample review).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["b2b-enterprise", "professional-services", "fintech"],
@@ -193,7 +193,7 @@ export const aiCorePosts4: BlogPost[] = [
     banner: "wfvsrpa",
     bannerAlt:
       "Comparison of workflow automation (highlighted) and RPA by how they connect, stability, speed, best fit and maintenance; the note says use RPA where no better interface exists.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["b2b-enterprise", "manufacturing", "fintech"],
@@ -364,7 +364,7 @@ export const aiCorePosts4: BlogPost[] = [
     banner: "rpavsai",
     bannerAlt:
       "Comparison of RPA, AI automation and a combined approach (highlighted) by what each handles, what decides, output consistency, what breaks it and cost; the note says AI understands the input and deterministic automation performs the action.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["fintech", "b2b-enterprise", "manufacturing"],
@@ -529,7 +529,7 @@ export const aiCorePosts4: BlogPost[] = [
     banner: "idppipeline",
     bannerAlt:
       "Intelligent document processing pipeline: ingest, OCR and parse, classify, extract, validate (highlighted), review and store; a branch shows low-confidence fields going to human review.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["fintech", "logistics-supply-chain", "healthcare-healthtech"],

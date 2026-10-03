@@ -15,7 +15,7 @@ export const mobilePosts2: BlogPost[] = [
       "What Flutter is, how Dart, widgets and its rendering engine work, how Flutter apps are structured, and when Flutter is the right choice for a business app.",
     category: "Mobile Apps",
     banner: "layers",
-    date: "2026-10-09",
+    date: "2026-09-25",
     readingTime: "12 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["startups", "fintech", "ecommerce"],
@@ -108,7 +108,7 @@ export const mobilePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want an objective framework recommendation?",
-          description: "Talk to ZSpace Labs about your app's requirements before committing to Flutter or any other framework.",
+          description: "Talk to ZSpace Labs about your app's requirements before committing to Flutter or any other framework. Learn more about our [[/services/mobile-app-development|React Native app development]].",
         },
       },
       {
@@ -128,7 +128,7 @@ export const mobilePosts2: BlogPost[] = [
       "How React Native works, its New Architecture, native integration, performance, testing and maintenance, and which projects it suits.",
     category: "Mobile Apps",
     banner: "systems",
-    date: "2026-10-09",
+    date: "2026-09-25",
     readingTime: "12 min read",
     relatedServiceSlugs: ["mobile-app-development", "website-development"],
     relatedIndustrySlugs: ["startups", "ecommerce", "saas-technology"],
@@ -215,7 +215,7 @@ export const mobilePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Considering React Native for your product?",
-          description: "Talk to ZSpace Labs about whether it fits your app, and where native modules might be needed.",
+          description: "Talk to ZSpace Labs about whether it fits your app, and where native modules might be needed. See how we approach [[/services/mobile-app-development|mobile app development]].",
         },
       },
       {
@@ -235,7 +235,7 @@ export const mobilePosts2: BlogPost[] = [
       "How building natively for iOS and Android differs in languages, tools, platform APIs, design conventions, testing, distribution and team requirements.",
     category: "Mobile Apps",
     banner: "segmentsplit",
-    date: "2026-10-10",
+    date: "2026-09-25",
     readingTime: "11 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["fintech", "healthcare-healthtech", "ecommerce"],
@@ -322,7 +322,7 @@ export const mobilePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Not sure whether to build native on both platforms?",
-          description: "Talk to ZSpace Labs about your users, features and team, and we'll outline the options.",
+          description: "Talk to ZSpace Labs about your users, features and team, and we'll outline the options. Explore our [[/services/mobile-app-development|iOS and Android app development services]].",
         },
       },
       {
@@ -342,7 +342,7 @@ export const mobilePosts2: BlogPost[] = [
       "How to structure a mobile app into presentation, business logic and data layers, handle state, caching and errors, and connect cleanly to APIs and the backend.",
     category: "Mobile Apps",
     banner: "mobilearch",
-    date: "2026-10-10",
+    date: "2026-09-25",
     readingTime: "13 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["fintech", "saas-technology", "ecommerce"],
@@ -442,7 +442,7 @@ export const mobilePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Reviewing an existing app's architecture?",
-          description: "ZSpace Labs can assess where your app's structure is slowing development and what to refactor first.",
+          description: "ZSpace Labs can assess where your app's structure is slowing development and what to refactor first. Learn more about our [[/services/mobile-app-development|React Native app development]].",
         },
       },
       {
@@ -462,7 +462,7 @@ export const mobilePosts2: BlogPost[] = [
       "The server-side components behind most apps, from APIs, databases and authentication to notifications, payments and admin tools, and which ones different apps need.",
     category: "Mobile Apps",
     banner: "appblocks",
-    date: "2026-10-10",
+    date: "2026-09-25",
     readingTime: "12 min read",
     relatedServiceSlugs: ["mobile-app-development", "website-development"],
     relatedIndustrySlugs: ["fintech", "ecommerce", "healthcare-healthtech"],
@@ -591,7 +591,7 @@ export const mobilePosts2: BlogPost[] = [
       "How REST and GraphQL compare specifically for mobile: payload size, round trips on slow networks, caching and offline use, and supporting old app versions.",
     category: "Mobile Apps",
     banner: "restgraphql",
-    date: "2026-10-11",
+    date: "2026-09-25",
     readingTime: "10 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["ecommerce", "fintech", "saas-technology"],
@@ -681,7 +681,7 @@ export const mobilePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want a second opinion on your mobile API?",
-          description: "Talk to ZSpace Labs about API design that holds up on real mobile networks and across app versions.",
+          description: "Talk to ZSpace Labs about API design that holds up on real mobile networks and across app versions. See how we approach [[/services/mobile-app-development|mobile app development]].",
         },
       },
       {
@@ -701,7 +701,7 @@ export const mobilePosts2: BlogPost[] = [
       "Practical scalability for mobile products: modular code, API and database design, caching, infrastructure, monitoring, testing and managing technical debt.",
     category: "Mobile Apps",
     banner: "gauge",
-    date: "2026-10-11",
+    date: "2026-09-25",
     readingTime: "12 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["startups", "fintech", "ecommerce"],
@@ -791,7 +791,7 @@ export const mobilePosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want an outside view of your app's scalability?",
-          description: "Talk to ZSpace Labs about practical steps, not a rebuild, to prepare your app for growth.",
+          description: "Talk to ZSpace Labs about practical steps, not a rebuild, to prepare your app for growth. Explore our [[/services/mobile-app-development|iOS and Android app development services]].",
         },
       },
       {

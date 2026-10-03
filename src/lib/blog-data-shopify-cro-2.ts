@@ -14,6 +14,7 @@ export const shopifyCroPosts2: BlogPost[] = [
   {
     slug: "shopify-homepage-cro",
     title: "Shopify Homepage Optimization: How to Turn More Visitors Into Customers",
+    seoTitle: "Shopify Homepage Optimization: Turn Visitors Into Customers",
     excerpt:
       "How to optimize a Shopify homepage for conversion: value proposition, hero, navigation, collections, bestsellers, trust, promotions, speed and testing.",
     category: "Shopify & Ecommerce",
@@ -170,7 +171,7 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Is your homepage actually converting the traffic it receives?",
-          description: "ZSpace Labs can audit your homepage against real visitor behavior — exit rate, downstream engagement, and where attention actually goes — not a generic design opinion.",
+          description: "ZSpace Labs can audit your homepage against real visitor behavior — exit rate, downstream engagement, and where attention actually goes — not a generic design opinion. Learn more about our [[/services/shopify-development|Shopify builds and redesigns]].",
         },
       },
       {
@@ -371,7 +372,7 @@ export const shopifyCroPosts2: BlogPost[] = [
         table: croFrameworkTable,
         cta: {
           title: "Not sure how much revenue your store is losing to failed searches?",
-          description: "ZSpace Labs can audit your Shopify search configuration and zero-result rate, and connect it back to the specific products and content your customers are already telling you they want.",
+          description: "ZSpace Labs can audit your Shopify search configuration and zero-result rate, and connect it back to the specific products and content your customers are already telling you they want. See how we approach [[/services/shopify-development|Shopify development]].",
         },
       },
       {
@@ -512,7 +513,7 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Are your product recommendations actually helping, or just adding noise?",
-          description: "ZSpace Labs can audit where and how recommendations are shown across your store, and connect them to a real measurable effect on conversion and AOV together.",
+          description: "ZSpace Labs can audit where and how recommendations are shown across your store, and connect them to a real measurable effect on conversion and AOV together. Explore our [[/services/shopify-development|Shopify store and theme development services]].",
         },
       },
       {
@@ -535,6 +536,7 @@ export const shopifyCroPosts2: BlogPost[] = [
   {
     slug: "shopify-bundles-volume-discounts",
     title: "Shopify Bundles and Volume Discounts: How to Increase Average Order Value",
+    seoTitle: "Shopify Bundles and Volume Discounts to Raise Order Value",
     excerpt:
       "Why a higher AOV doesn't automatically mean higher profit, and how to price bundles and volume discounts without quietly giving away margin.",
     category: "Shopify & Ecommerce",
@@ -650,7 +652,7 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want to increase AOV without quietly giving away margin?",
-          description: "ZSpace Labs can help design and price Shopify bundles and volume discounts that are modeled against real product margins, not just a round discount number.",
+          description: "ZSpace Labs can help design and price Shopify bundles and volume discounts that are modeled against real product margins, not just a round discount number. Learn more about our [[/services/shopify-development|Shopify builds and redesigns]].",
         },
       },
       {
@@ -673,6 +675,7 @@ export const shopifyCroPosts2: BlogPost[] = [
   {
     slug: "shopify-personalization",
     title: "Shopify Personalization: How to Create More Relevant Shopping Experiences",
+    seoTitle: "Shopify Personalization: More Relevant Shopping Experiences",
     excerpt:
       "Where personalization genuinely earns its complexity on a Shopify store, where it doesn't, and how to do it on first-party data without overreaching on privacy.",
     category: "Shopify & Ecommerce",
@@ -785,7 +788,7 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Wondering whether personalization would actually help your store?",
-          description: "ZSpace Labs can help identify where you have enough real data to personalize meaningfully, and where a well-designed generic experience is honestly the better choice.",
+          description: "ZSpace Labs can help identify where you have enough real data to personalize meaningfully, and where a well-designed generic experience is honestly the better choice. See how we approach [[/services/shopify-development|Shopify development]].",
         },
       },
       {
@@ -915,7 +918,7 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Is your exit-intent strategy recovering visitors, or just discounting ones who'd have converted anyway?",
-          description: "ZSpace Labs can help design exit-intent offers matched to actual visitor behavior, and measure whether they're a net win once margin is accounted for.",
+          description: "ZSpace Labs can help design exit-intent offers matched to actual visitor behavior, and measure whether they're a net win once margin is accounted for. Explore our [[/services/shopify-development|Shopify store and theme development services]].",
         },
       },
       {
@@ -1071,7 +1074,7 @@ export const shopifyCroPosts2: BlogPost[] = [
         table: croFrameworkTable,
         cta: {
           title: "Not sure if your popups are helping or quietly hurting conversion?",
-          description: "ZSpace Labs can audit your popup strategy against real visitor behavior — including the mobile-specific and SEO considerations — not just capture rate in isolation.",
+          description: "ZSpace Labs can audit your popup strategy against real visitor behavior — including the mobile-specific and SEO considerations — not just capture rate in isolation. Learn more about our [[/services/shopify-development|Shopify builds and redesigns]].",
         },
       },
       {
@@ -1087,6 +1090,7 @@ export const shopifyCroPosts2: BlogPost[] = [
   {
     slug: "shopify-social-proof",
     title: "Shopify Social Proof: How Reviews, Ratings and Trust Signals Affect Conversions",
+    seoTitle: "Shopify Social Proof: Reviews, Ratings and Trust Signals",
     excerpt:
       "Why near-perfect ratings can convert worse than honest ones, and how to use genuine customer evidence responsibly across a Shopify store.",
     category: "Shopify & Ecommerce",
@@ -1218,7 +1222,7 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Not sure if your trust signals are placed where they'd actually help?",
-          description: "ZSpace Labs can audit where social proof appears across your store, and where a genuine gap in trust signals is quietly costing conversions.",
+          description: "ZSpace Labs can audit where social proof appears across your store, and where a genuine gap in trust signals is quietly costing conversions. Explore our [[/services/cro-audit|CRO audit services]].",
         },
       },
       {
@@ -1360,7 +1364,7 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Selling a considered, higher-priced product on Shopify?",
-          description: "ZSpace Labs can help design a buying journey built for how high-consideration customers actually decide — not a playbook borrowed from impulse-purchase ecommerce.",
+          description: "ZSpace Labs can help design a buying journey built for how high-consideration customers actually decide — not a playbook borrowed from impulse-purchase ecommerce. See how we approach [[/services/shopify-development|Shopify development]].",
         },
       },
       {
@@ -1383,6 +1387,7 @@ export const shopifyCroPosts2: BlogPost[] = [
   {
     slug: "shopify-dtc-cro",
     title: "Shopify CRO for DTC Brands: A Complete Conversion Optimization Framework",
+    seoTitle: "Shopify CRO for DTC Brands: A Conversion Optimization Framework",
     excerpt:
       "A comprehensive, stage-by-stage Shopify CRO framework built for direct-to-consumer brands — and the hub connecting every article in this conversion optimization cluster.",
     category: "Shopify & Ecommerce",
@@ -1528,7 +1533,7 @@ export const shopifyCroPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want a complete, prioritized Shopify CRO roadmap for your DTC brand?",
-          description: "ZSpace Labs runs full-funnel Shopify CRO audits and builds the ongoing testing program that follows — measurement through implementation, validation and scaling.",
+          description: "ZSpace Labs runs full-funnel Shopify CRO audits and builds the ongoing testing program that follows — measurement through implementation, validation and scaling. Learn more about our [[/services/cro-audit|conversion audits]].",
         },
       },
       {

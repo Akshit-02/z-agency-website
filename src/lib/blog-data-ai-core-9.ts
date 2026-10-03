@@ -22,7 +22,7 @@ export const aiCorePosts9: BlogPost[] = [
     banner: "mcpvsapi",
     bannerAlt:
       "Comparison of traditional APIs and MCP servers by audience, discovery, descriptions, authorization and whether one replaces the other; the note says MCP is an adapter for AI clients built on top of APIs.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],
@@ -198,7 +198,7 @@ export const aiCorePosts9: BlogPost[] = [
     banner: "mcpthreats",
     bannerAlt:
       "MCP security in four columns: identity highlighted (audience checks, no passthrough, scopes, short-lived tokens), tools (poisoned descriptions, over-broad tools, approvals, argument validation), data (injection in results, least data, tenant isolation, redaction) and supply chain (untrusted servers, pinned versions, local execution risk, review).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "8 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "fintech", "cybersecurity"],
@@ -383,7 +383,7 @@ export const aiCorePosts9: BlogPost[] = [
     banner: "aiapiintegration",
     bannerAlt:
       "AI API integration in four columns: request (authenticate user, build context, trim tokens, idempotency), model call (server-side key, streaming, timeouts, retries), response highlighted (schema check, business rules, store, show user) and operations (usage and cost, rate limits, fallbacks, evaluations).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development", "mobile-app-development"],
     relatedIndustrySlugs: ["saas-technology", "fintech", "ecommerce"],
@@ -562,7 +562,7 @@ export const aiCorePosts9: BlogPost[] = [
     banner: "llmgateway",
     bannerAlt:
       "LLM gateway in four columns: apps (web, internal tools, agents, batch jobs), gateway highlighted (one API, authentication, routing, logging), policies (budgets, rate limits, PII rules, model allow-list) and providers (provider A, provider B, self-hosted, fallbacks).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise", "fintech"],

@@ -21,7 +21,7 @@ export const aiCorePosts5: BlogPost[] = [
     banner: "invoiceflow",
     bannerAlt:
       "AI invoice processing flow: receive, identify supplier, extract fields, match purchase order and receipt (highlighted), approve, post to ERP; a branch shows mismatches going to an exception queue.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["fintech", "manufacturing", "b2b-enterprise"],
@@ -210,7 +210,7 @@ export const aiCorePosts5: BlogPost[] = [
     banner: "emailtriage",
     bannerAlt:
       "AI email automation in four columns: classify highlighted (intent, urgency, customer, language), extract (order numbers, dates, amounts, attachments), act (route to team, create ticket, update CRM, start workflow) and respond (draft reply, templates, human sends, automatic for simple cases).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["b2b-enterprise", "professional-services", "ecommerce"],
@@ -389,7 +389,7 @@ export const aiCorePosts5: BlogPost[] = [
     banner: "leadqual",
     bannerAlt:
       "AI lead qualification in four columns: enrich (company data, role, tech stack, source), fit (size, industry, region, ideal customer rules), intent highlighted (pages viewed, form answers, email reply, timing) and route (owner, priority, SLA, nurture).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise", "professional-services"],
@@ -560,7 +560,7 @@ export const aiCorePosts5: BlogPost[] = [
     banner: "salesauto",
     bannerAlt:
       "AI sales automation in four columns: research (account news, contacts, past deals, public information), prep (meeting brief, questions, objections, agenda), CRM highlighted (notes, next steps, fields, stage hints) and follow-up (draft email, tasks, reminders, sequences).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise", "professional-services"],

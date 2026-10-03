@@ -16,7 +16,7 @@ export const mobilePosts3: BlogPost[] = [
       "How mobile apps consume APIs reliably: authentication and tokens, requests, errors, retries, rate limits, webhooks, third-party services, security, testing and versioning.",
     category: "Mobile Apps",
     banner: "apiflow",
-    date: "2026-10-11",
+    date: "2026-09-25",
     readingTime: "13 min read",
     relatedServiceSlugs: ["mobile-app-development", "ai-automation"],
     relatedIndustrySlugs: ["fintech", "ecommerce", "saas-technology"],
@@ -114,7 +114,7 @@ export const mobilePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want your app's API layer reviewed?",
-          description: "Talk to ZSpace Labs about making your integrations more reliable on real devices and networks.",
+          description: "Talk to ZSpace Labs about making your integrations more reliable on real devices and networks. Learn more about our [[/services/mobile-app-development|React Native app development]].",
         },
       },
       {
@@ -134,7 +134,7 @@ export const mobilePosts3: BlogPost[] = [
       "Practical mobile UX: research, user flows, navigation, touch interaction, forms, feedback, empty, loading and error states, accessibility and platform conventions.",
     category: "Mobile Apps",
     banner: "journeymap",
-    date: "2026-10-12",
+    date: "2026-09-25",
     readingTime: "13 min read",
     relatedServiceSlugs: ["ui-ux-design", "mobile-app-development", "cro-audit"],
     relatedIndustrySlugs: ["fintech", "healthcare-healthtech", "ecommerce"],
@@ -248,7 +248,7 @@ export const mobilePosts3: BlogPost[] = [
       "How to diagnose and improve startup time, rendering, images, network requests, memory, battery, lists and app size, with monitoring that shows real-world performance.",
     category: "Mobile Apps",
     banner: "waterfall",
-    date: "2026-10-12",
+    date: "2026-09-25",
     readingTime: "13 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["ecommerce", "fintech", "media-entertainment"],
@@ -340,7 +340,7 @@ export const mobilePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want performance monitoring set up properly?",
-          description: "Talk to ZSpace Labs about the metrics and tooling that show how your app actually performs for users.",
+          description: "Talk to ZSpace Labs about the metrics and tooling that show how your app actually performs for users. See how we approach [[/services/mobile-app-development|mobile app development]].",
         },
       },
       {
@@ -360,7 +360,7 @@ export const mobilePosts3: BlogPost[] = [
       "The types of testing a mobile app needs, from unit and UI tests to device, performance, security and accessibility testing, plus beta, store submission and a pre-launch checklist.",
     category: "Mobile Apps",
     banner: "testpyramid",
-    date: "2026-10-12",
+    date: "2026-09-25",
     readingTime: "13 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["fintech", "healthcare-healthtech", "ecommerce"],
@@ -466,7 +466,7 @@ export const mobilePosts3: BlogPost[] = [
         ],
         cta: {
           title: "Want a second pair of eyes before submission?",
-          description: "Talk to ZSpace Labs about a pre-launch QA review for your app.",
+          description: "Talk to ZSpace Labs about a pre-launch QA review for your app. Explore our [[/services/mobile-app-development|iOS and Android app development services]].",
         },
       },
       {
@@ -486,7 +486,7 @@ export const mobilePosts3: BlogPost[] = [
       "Why app development doesn't end at launch: bug fixes, OS and dependency updates, security, monitoring, analytics, crash reporting, API changes and store requirements.",
     category: "Mobile Apps",
     banner: "cycle",
-    date: "2026-10-13",
+    date: "2026-09-25",
     readingTime: "12 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["fintech", "ecommerce", "healthcare-healthtech"],

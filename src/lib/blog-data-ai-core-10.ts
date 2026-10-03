@@ -21,7 +21,7 @@ export const aiCorePosts10: BlogPost[] = [
     banner: "routingstrategies",
     bannerAlt:
       "Comparison of three LLM routing strategies (static by task highlighted, classifier router, cascade) by how they work, pros, cons and what they need.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "5 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],
@@ -190,7 +190,7 @@ export const aiCorePosts10: BlogPost[] = [
     banner: "aiorchestrationlayer",
     bannerAlt:
       "AI orchestration in four columns: inputs (user request, events, schedules, documents), orchestration highlighted (flow or graph, state, retries, branching), capabilities (models, retrieval, tools, agents) and controls (validation, approvals, tracing, budgets).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "5 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],
@@ -362,7 +362,7 @@ export const aiCorePosts10: BlogPost[] = [
     banner: "agentmemorytypes",
     bannerAlt:
       "AI agent memory in four columns: working (current step, scratchpad, tool results, discarded), session (conversation, summaries, task state, expires), long-term highlighted (user preferences, facts, consent, editable) and shared (knowledge base, policies, organization data, permissioned).",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce"],
@@ -527,7 +527,7 @@ export const aiCorePosts10: BlogPost[] = [
     banner: "a2aflow",
     bannerAlt:
       "A2A flow: client agent, fetch Agent Card (highlighted), check skills and authentication, send message, remote agent works, artifacts returned.",
-    date: "2026-10-03",
+    date: "2026-10-02",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],

@@ -6,11 +6,12 @@ import { Eyebrow } from "@/components/SectionHeading";
 import { CTASection } from "@/components/CTASection";
 import { StructuredData } from "@/components/StructuredData";
 import { site } from "@/lib/site";
+import { ORG_ID, WEBSITE_ID } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: { absolute: "About ZSpace Labs — A Technology and Digital Product Studio" },
   description:
-    "ZSpace Labs is a technology and digital product studio that brings strategy, design and engineering together. Learn how we think about technology, design and working with clients.",
+    "ZSpace Labs is a technology and digital product studio bringing strategy, design and engineering together. How we think, work and partner with clients.",
   alternates: { canonical: "/about" },
 };
 
@@ -57,6 +58,9 @@ export default function AboutPage() {
           "@type": "AboutPage",
           name: "About ZSpace Labs",
           url: `${site.url}/about`,
+          description: site.intro,
+          isPartOf: { "@id": WEBSITE_ID },
+          mainEntity: { "@id": ORG_ID },
         }}
       />
       <PageHero
