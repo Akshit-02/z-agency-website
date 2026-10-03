@@ -46,7 +46,7 @@ export const commercePosts51: BlogPost[] = [
       {
         heading: "Why Sports Catalogs Are Complex",
         body: [
-          "A sports retailer may sell running shoes, football boots, tennis rackets, cycling parts and gym equipment. Each category has its own attributes: drop and cushioning for running shoes, stud type for football boots, head size and grip for rackets, frame size and wheel standards for bikes. Apparel adds size systems and fit. The diagram above shows the four areas of the build. For page-level design, see [[/blogs/sports-ecommerce-website-design|sports ecommerce website design]].",
+          "A sports retailer may sell running shoes, football boots, tennis rackets, cycling parts and gym equipment. Each category has its own attributes: drop and cushioning for running shoes, stud type for football boots, head size and grip for rackets, frame size and wheel standards for bikes. Apparel adds size systems and fit. For page-level design, see [[/blogs/sports-ecommerce-website-design|sports ecommerce website design]].",
         ],
       },
       {
@@ -347,7 +347,7 @@ export const commercePosts51: BlogPost[] = [
       {
         heading: "Four Zones",
         body: [
-          "The diagram above groups the page into choose, specs, fit and confidence. Fit is highlighted because size and suitability drive most sports returns. For the journey around the page, see [[/blogs/sports-ecommerce-ux|sports ecommerce UX]].",
+          "Fit is highlighted because size and suitability drive most sports returns. For the journey around the page, see [[/blogs/sports-ecommerce-ux|sports ecommerce UX]].",
         ],
       },
       {
@@ -496,7 +496,7 @@ export const commercePosts51: BlogPost[] = [
       {
         heading: "Filters Follow the Activity",
         body: [
-          "Sports shoppers narrow by activity first, then size, then technical needs. The diagram above shows a taxonomy. Filter sets should change by category: a running shoe category needs different filters from a tennis racket category. For general filter UX, see [[/blogs/ecommerce-filters|ecommerce product filters]].",
+          "Sports shoppers narrow by activity first, then size, then technical needs. Filter sets should change by category: a running shoe category needs different filters from a tennis racket category. For general filter UX, see [[/blogs/ecommerce-filters|ecommerce product filters]].",
         ],
       },
       {

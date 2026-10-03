@@ -44,7 +44,7 @@ export const commercePosts28: BlogPost[] = [
       {
         heading: "Two Jobs: Appetite and Assurance",
         body: [
-          "Food product pages persuade and inform at the same time. Appetite comes from photography, taste descriptions, serving ideas and reviews. Assurance comes from ingredients, allergens, nutrition, freshness and delivery facts. Shoppers with allergies or dietary needs will not buy without assurance, however good the photos. The diagram above groups the essential information into four zones: basics, ingredients and allergens, nutrition and diet, and storage and delivery. Below, the page is organized as a shopper reads it: decide, facts, delivery and proof.",
+          "Food product pages persuade and inform at the same time. Appetite comes from photography, taste descriptions, serving ideas and reviews. Assurance comes from ingredients, allergens, nutrition, freshness and delivery facts. Shoppers with allergies or dietary needs will not buy without assurance, however good the photos. In short, the approach groups the essential information into four zones: basics, ingredients and allergens, nutrition and diet, and storage and delivery. Below, the page is organized as a shopper reads it: decide, facts, delivery and proof.",
           "For general product page structure, see [[/blogs/ecommerce-product-page-design|ecommerce product page design]]. For food store design more broadly, see [[/blogs/food-ecommerce-website-design|food ecommerce website design]].",
         ],
       },
@@ -344,7 +344,7 @@ export const commercePosts28: BlogPost[] = [
       {
         heading: "Who You're Designing For",
         body: [
-          "B2B sites serve several people inside one customer: purchasing staff placing routine orders, engineers or specifiers researching products, approvers controlling spend and finance teams handling invoices. Each has different tasks. The diagram above maps the page types they use. For workflow-level UX, see [[/blogs/b2b-ecommerce-ux|B2B ecommerce UX]]; for the build, see [[/blogs/b2b-ecommerce-website-development|B2B ecommerce website development]].",
+          "B2B sites serve several people inside one customer: purchasing staff placing routine orders, engineers or specifiers researching products, approvers controlling spend and finance teams handling invoices. Each has different tasks. For workflow-level UX, see [[/blogs/b2b-ecommerce-ux|B2B ecommerce UX]]; for the build, see [[/blogs/b2b-ecommerce-website-development|B2B ecommerce website development]].",
         ],
         table: {
           headers: ["Role", "Main tasks", "Design priority"],
@@ -511,7 +511,7 @@ export const commercePosts28: BlogPost[] = [
       {
         heading: "Why B2B Catalogs Are Hard",
         body: [
-          "B2B catalogs often contain thousands to hundreds of thousands of SKUs, with technical attributes that differ by category, supplier data in inconsistent formats, multiple identifiers per product and rules about who can buy what. Catalog quality directly affects search, filters, product pages, feeds and order accuracy. The diagram above shows the four areas to structure: taxonomy, product data, catalog access and documents.",
+          "B2B catalogs often contain thousands to hundreds of thousands of SKUs, with technical attributes that differ by category, supplier data in inconsistent formats, multiple identifiers per product and rules about who can buy what. Catalog quality directly affects search, filters, product pages, feeds and order accuracy. In short, think of the four areas to structure: taxonomy, product data, catalog access and documents.",
         ],
       },
       {

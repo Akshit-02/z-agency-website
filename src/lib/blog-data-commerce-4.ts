@@ -46,7 +46,7 @@ export const commercePosts4: BlogPost[] = [
       {
         heading: "Start With Questions, Not Reports",
         body: [
-          "Stores drown in dashboards because tracking starts with tools rather than questions. List the decisions you make regularly and what you'd need to know to make them better. The diagram above shows the cycle: questions shape the event plan, collected data is validated, reported and used to decide, and decisions raise new questions.",
+          "Stores drown in dashboards because tracking starts with tools rather than questions. List the decisions you make regularly and what you'd need to know to make them better. In short, think of the cycle: questions shape the event plan, collected data is validated, reported and used to decide, and decisions raise new questions.",
         ],
         table: {
           headers: ["Question", "Metric", "Source"],
@@ -470,7 +470,7 @@ export const commercePosts4: BlogPost[] = [
       {
         heading: "Organize by Question, Not by Tool",
         body: [
-          "The diagram above groups metrics into rows by question: revenue, acquisition and retention, with a trend panel and a data health panel. This keeps related numbers together, so a drop in revenue can be read next to the sessions, conversion and order value that explain it.",
+          "In short, the approach groups metrics into rows by question: revenue, acquisition and retention, with a trend panel and a data health panel. This keeps related numbers together, so a drop in revenue can be read next to the sessions, conversion and order value that explain it.",
         ],
       },
       {
@@ -512,7 +512,7 @@ export const commercePosts4: BlogPost[] = [
       {
         heading: "Example Layout for a Weekly Dashboard",
         body: [
-          "One page, read top to bottom, as in the diagram above. This is a structure, not a set of targets; fill it with your own definitions and data.",
+          "One page, read top to bottom. This is a structure, not a set of targets; fill it with your own definitions and data.",
         ],
         table: {
           headers: ["Row", "Tiles", "Comparison"],
@@ -605,7 +605,7 @@ export const commercePosts4: BlogPost[] = [
       {
         heading: "Why Funnels Aren't Enough",
         body: [
-          "Funnels are essential for measuring drop-off between fixed steps; see [[/blogs/ecommerce-conversion-funnel|ecommerce conversion funnel]]. But shoppers don't move in straight lines. They land on a product from an ad, go back to a category, search, check returns, leave and come back through email two days later. The diagram above shows how varied entry points and routes are, and where exits cluster.",
+          "Funnels are essential for measuring drop-off between fixed steps; see [[/blogs/ecommerce-conversion-funnel|ecommerce conversion funnel]]. But shoppers don't move in straight lines. They land on a product from an ad, go back to a category, search, check returns, leave and come back through email two days later. In short, think of how varied entry points and routes are, and where exits cluster.",
           "Journey analytics complements two other methods: qualitative journey mapping, covered in the [[/blogs/shopify-customer-journey-audit|Shopify customer journey audit]], and the platform-level funnel.",
         ],
       },
@@ -790,7 +790,7 @@ export const commercePosts4: BlogPost[] = [
       {
         heading: "How to Read a Cohort Table",
         body: [
-          "The diagram above shows the standard layout. Each row is a cohort, such as customers whose first order was in a given month. Each column is time since that first order. Month 0 is 100% by definition. The table forms a triangle because recent cohorts haven't reached later months yet.",
+          "Each row is a cohort, such as customers whose first order was in a given month. Each column is time since that first order. Month 0 is 100% by definition. The table forms a triangle because recent cohorts haven't reached later months yet.",
         ],
         table: {
           headers: ["Direction", "What it shows"],

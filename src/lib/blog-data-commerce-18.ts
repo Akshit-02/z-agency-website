@@ -46,7 +46,7 @@ export const commercePosts18: BlogPost[] = [
       {
         heading: "Marketplace vs Store: Why the Architecture Differs",
         body: [
-          "An online store has one seller: you. Every product, price, stock level, delivery promise and return is yours. A marketplace has many sellers, each with their own products, stock, shipping and service, and you sit between them and buyers. That changes almost every part of the system, from how products are created to how money moves. The diagram above shows the three sides and the platform functions between them. For a side-by-side comparison of the business models, see [[/blogs/ecommerce-marketplace-vs-online-store|marketplace vs online store]].",
+          "An online store has one seller: you. Every product, price, stock level, delivery promise and return is yours. A marketplace has many sellers, each with their own products, stock, shipping and service, and you sit between them and buyers. That changes almost every part of the system, from how products are created to how money moves. In short, think of the three sides and the platform functions between them. For a side-by-side comparison of the business models, see [[/blogs/ecommerce-marketplace-vs-online-store|marketplace vs online store]].",
         ],
       },
       {
@@ -299,7 +299,7 @@ export const commercePosts18: BlogPost[] = [
       {
         heading: "Two Different Businesses",
         body: [
-          "The comparison looks technical, but it's mainly about the business model. A store is one-sided: you serve customers. A marketplace is two-sided: you serve buyers and sellers, and your success depends on both. The diagram above compares them on six dimensions.",
+          "The comparison looks technical, but it's mainly about the business model. A store is one-sided: you serve customers. A marketplace is two-sided: you serve buyers and sellers, and your success depends on both.",
         ],
       },
       {
@@ -504,7 +504,7 @@ export const commercePosts18: BlogPost[] = [
       {
         heading: "Three Users, Three Products",
         body: [
-          "The diagram above lists what each group needs. Treat them as separate products with their own research, journeys and metrics. A marketplace with a polished buyer experience but frustrating seller tools loses supply; one with weak operator tools can't keep quality up as it grows. For the architecture behind them, see [[/blogs/marketplace-website-development|marketplace website development]].",
+          "Treat them as separate products with their own research, journeys and metrics. A marketplace with a polished buyer experience but frustrating seller tools loses supply; one with weak operator tools can't keep quality up as it grows. For the architecture behind them, see [[/blogs/marketplace-website-development|marketplace website development]].",
         ],
       },
       {

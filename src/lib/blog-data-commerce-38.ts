@@ -204,7 +204,7 @@ export const commercePosts38: BlogPost[] = [
         heading: "Languages vs Markets",
         body: [
           "A language version is not the same as a market. A market sets currency, prices and delivery; a language sets text. Some markets need several languages (Canada, Switzerland, Belgium); some languages serve several markets (English, Spanish). Decide both dimensions before designing URLs. For the full international architecture, see [[/blogs/ecommerce-internationalization|ecommerce internationalization]].",
-          "The diagram above covers the four areas to get right: URLs, content, discovery and QA.",
+          "This guide covers the four areas to get right: URLs, content, discovery and QA.",
         ],
       },
       {

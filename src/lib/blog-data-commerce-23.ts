@@ -215,7 +215,7 @@ export const commercePosts23: BlogPost[] = [
       {
         heading: "How Fashion Shoppers Search",
         body: [
-          "The diagram above groups fashion query types. Unlike electronics shoppers typing model numbers, fashion shoppers describe what they want: “black wide leg trousers”, “linen shirt men”, “wedding guest dress”. Search must understand product types, attributes, colours and occasions together. For search programs in general, see [[/blogs/ecommerce-site-search|ecommerce site search]].",
+          "Unlike electronics shoppers typing model numbers, fashion shoppers describe what they want: “black wide leg trousers”, “linen shirt men”, “wedding guest dress”. Search must understand product types, attributes, colours and occasions together. For search programs in general, see [[/blogs/ecommerce-site-search|ecommerce site search]].",
         ],
       },
       {
@@ -355,7 +355,7 @@ export const commercePosts23: BlogPost[] = [
       {
         heading: "Designing for the Thumb",
         body: [
-          "The diagram above organizes mobile fashion shopping into four stages. Each needs one-handed, small-screen design. For mobile ecommerce principles, see [[/blogs/mobile-ecommerce-ux|mobile ecommerce UX]] and [[/blogs/d2c-mobile-ecommerce|D2C mobile ecommerce]].",
+          "Each needs one-handed, small-screen design. For mobile ecommerce principles, see [[/blogs/mobile-ecommerce-ux|mobile ecommerce UX]] and [[/blogs/d2c-mobile-ecommerce|D2C mobile ecommerce]].",
         ],
       },
       {
@@ -495,7 +495,7 @@ export const commercePosts23: BlogPost[] = [
       {
         heading: "What Fashion Signals Tell You",
         body: [
-          "The diagram above lists useful signals. Sizes bought and kept are the most valuable because they relate directly to the fit decision. Styles, colours and categories viewed show taste. Stated preferences (for example from a quiz) are explicit. For general strategy, see [[/blogs/ecommerce-personalization|ecommerce personalization]].",
+          "Sizes bought and kept are the most valuable because they relate directly to the fit decision. Styles, colours and categories viewed show taste. Stated preferences (for example from a quiz) are explicit. For general strategy, see [[/blogs/ecommerce-personalization|ecommerce personalization]].",
         ],
       },
       {
@@ -647,7 +647,7 @@ export const commercePosts23: BlogPost[] = [
       {
         heading: "Gather Fashion-Specific Evidence",
         body: [
-          "The diagram above starts with returns and fit data for a reason. Returns reasons by product and size show where the site misleads; size-guide and filter analytics show where shoppers hesitate; conversion by device shows where the experience fails. Add usability tests on tasks like “find black trousers in your size”.",
+          "Returns reasons by product and size show where the site misleads; size-guide and filter analytics show where shoppers hesitate; conversion by device shows where the experience fails. Add usability tests on tasks like “find black trousers in your size”.",
         ],
         cta: {
           title: "Planning a fashion store redesign?",

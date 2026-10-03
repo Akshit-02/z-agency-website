@@ -47,7 +47,7 @@ export const commercePosts37: BlogPost[] = [
         heading: "What Changes When You Sell Across Borders",
         body: [
           "A domestic store has one currency, one language, one tax regime, one set of carriers and one set of customer expectations. Each new market can change all of them. International development is about deciding which of those should vary by market and building the store so that variation is configuration, not a separate project each time.",
-          "The diagram above organizes the work into market rules, storefront, commerce and operations. For the individual topics, see [[/blogs/ecommerce-localization|ecommerce localization]], [[/blogs/ecommerce-internationalization|ecommerce internationalization]], [[/blogs/multi-currency-ecommerce|multi-currency ecommerce]], [[/blogs/international-ecommerce-seo|international ecommerce SEO]] and [[/blogs/global-ecommerce-checkout|global ecommerce checkout]].",
+          "In short, the approach organizes the work into market rules, storefront, commerce and operations. For the individual topics, see [[/blogs/ecommerce-localization|ecommerce localization]], [[/blogs/ecommerce-internationalization|ecommerce internationalization]], [[/blogs/multi-currency-ecommerce|multi-currency ecommerce]], [[/blogs/international-ecommerce-seo|international ecommerce SEO]] and [[/blogs/global-ecommerce-checkout|global ecommerce checkout]].",
         ],
       },
       {
@@ -242,7 +242,7 @@ export const commercePosts37: BlogPost[] = [
       {
         heading: "Four Dimensions of Localization",
         body: [
-          "The diagram above groups localization into language, money, delivery and context. Translation sits in only one of them. Stores that translate perfectly but show foreign currency, unfamiliar payment methods and vague delivery costs still feel foreign, and customers hesitate. For the difference in detail, see [[/blogs/ecommerce-localization-vs-translation|ecommerce localization vs translation]]; for the technical foundations, see [[/blogs/ecommerce-internationalization|ecommerce internationalization]].",
+          "In short, the approach groups localization into language, money, delivery and context. Translation sits in only one of them. Stores that translate perfectly but show foreign currency, unfamiliar payment methods and vague delivery costs still feel foreign, and customers hesitate. For the difference in detail, see [[/blogs/ecommerce-localization-vs-translation|ecommerce localization vs translation]]; for the technical foundations, see [[/blogs/ecommerce-internationalization|ecommerce internationalization]].",
         ],
       },
       {
@@ -411,7 +411,7 @@ export const commercePosts37: BlogPost[] = [
       {
         heading: "Internationalization vs Localization",
         body: [
-          "Internationalization (often abbreviated i18n) is an engineering concern: can the system represent many languages, currencies and formats? Localization (l10n) is a market concern: what should this market see? A store built without internationalization makes every new market expensive, because strings are hard-coded, prices assume one currency and URLs can't represent languages. The diagram above shows the four layers to get right. For the market-facing work, see [[/blogs/ecommerce-localization|ecommerce localization]].",
+          "Internationalization (often abbreviated i18n) is an engineering concern: can the system represent many languages, currencies and formats? Localization (l10n) is a market concern: what should this market see? A store built without internationalization makes every new market expensive, because strings are hard-coded, prices assume one currency and URLs can't represent languages. For the market-facing work, see [[/blogs/ecommerce-localization|ecommerce localization]].",
         ],
       },
       {

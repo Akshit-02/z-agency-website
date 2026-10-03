@@ -44,7 +44,7 @@ export const commercePosts30: BlogPost[] = [
       {
         heading: "Why Reordering Matters",
         body: [
-          "B2B buyers typically reorder the same products regularly: consumables, spare parts, stock for resale. If reordering online is slower than emailing a sales rep, they'll keep emailing. Fast reordering is the feature most likely to move routine orders online. The diagram above groups the four routes: history, lists, fast entry and automation.",
+          "B2B buyers typically reorder the same products regularly: consumables, spare parts, stock for resale. If reordering online is slower than emailing a sales rep, they'll keep emailing. Fast reordering is the feature most likely to move routine orders online. In short, the approach groups the four routes: history, lists, fast entry and automation.",
         ],
       },
       {
@@ -341,7 +341,7 @@ export const commercePosts30: BlogPost[] = [
       {
         heading: "Why ERP Integration Is Central to B2B",
         body: [
-          "In B2B, the ERP usually holds the commercial truth: who the customer is, what they pay, what they can order on credit and what they owe. A B2B store that doesn't reflect that truth shows wrong prices, accepts orders the business can't fulfil and generates manual work. The diagram above groups the data into what flows from the ERP, what flows to it and the B2B-specific structures both must share. For general ERP integration concepts, see [[/blogs/ecommerce-erp-integration|ecommerce ERP integration]].",
+          "In B2B, the ERP usually holds the commercial truth: who the customer is, what they pay, what they can order on credit and what they owe. A B2B store that doesn't reflect that truth shows wrong prices, accepts orders the business can't fulfil and generates manual work. In short, the approach groups the data into what flows from the ERP, what flows to it and the B2B-specific structures both must share. For general ERP integration concepts, see [[/blogs/ecommerce-erp-integration|ecommerce ERP integration]].",
         ],
       },
       {
@@ -491,7 +491,7 @@ export const commercePosts30: BlogPost[] = [
       {
         heading: "Why Sales and Commerce Must Connect",
         body: [
-          "In B2B, the online store and the sales team serve the same accounts. If reps can't see online activity, they chase customers who've already ordered, miss accounts that have gone quiet and treat the store as a competitor. The diagram above shows what sales should see, what buyers should see and what both systems must share. For general ecommerce CRM integration, see [[/blogs/ecommerce-crm-integration|ecommerce CRM integration]].",
+          "In B2B, the online store and the sales team serve the same accounts. If reps can't see online activity, they chase customers who've already ordered, miss accounts that have gone quiet and treat the store as a competitor. In short, think of what sales should see, what buyers should see and what both systems must share. For general ecommerce CRM integration, see [[/blogs/ecommerce-crm-integration|ecommerce CRM integration]].",
         ],
       },
       {

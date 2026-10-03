@@ -229,7 +229,7 @@ export const commercePosts22: BlogPost[] = [
       {
         heading: "The Fashion Journey",
         body: [
-          "The diagram above shows the journey as a loop: what shoppers learn from fit, returns and reviews improves the next decision, for them and for other shoppers. This guide covers the journey and research approach; page-level design is in [[/blogs/fashion-ecommerce-website-design|fashion ecommerce website design]], and the build in [[/blogs/fashion-ecommerce-website-development|fashion ecommerce development]].",
+          "In short, think of the journey as a loop: what shoppers learn from fit, returns and reviews improves the next decision, for them and for other shoppers. This guide covers the journey and research approach; page-level design is in [[/blogs/fashion-ecommerce-website-design|fashion ecommerce website design]], and the build in [[/blogs/fashion-ecommerce-website-development|fashion ecommerce development]].",
         ],
         table: {
           headers: ["Stage", "Shopper's worry", "UX response"],
@@ -395,7 +395,7 @@ export const commercePosts22: BlogPost[] = [
       {
         heading: "Most Fashion PDP Decisions Are Fit Decisions",
         body: [
-          "Style gets shoppers to the page; fit decides whether they buy and keep the item. The diagram above organizes the page into four zones: above the fold, fit and size, details, and confidence. For product pages in general, see [[/blogs/ecommerce-product-page-design|ecommerce product page design]]; for the broader fashion journey, see [[/blogs/fashion-ecommerce-ux|fashion ecommerce UX]].",
+          "Style gets shoppers to the page; fit decides whether they buy and keep the item. In short, the approach organizes the page into four zones: above the fold, fit and size, details, and confidence. For product pages in general, see [[/blogs/ecommerce-product-page-design|ecommerce product page design]]; for the broader fashion journey, see [[/blogs/fashion-ecommerce-ux|fashion ecommerce UX]].",
         ],
       },
       {
@@ -577,7 +577,7 @@ export const commercePosts22: BlogPost[] = [
       {
         heading: "A Fashion Filter Taxonomy",
         body: [
-          "The diagram above groups filters into four families. Use the ones relevant to each category.",
+          "Use the ones relevant to each category.",
         ],
         table: {
           headers: ["Category", "Key filters beyond size, colour and price"],
@@ -718,7 +718,7 @@ export const commercePosts22: BlogPost[] = [
       {
         heading: "Measure Kept Sales",
         body: [
-          "The diagram above ends at “kept”, not “purchased”. In fashion, a change that increases orders but also increases returns may not help. Track net sales after returns, return rate by product and size, and reasons, alongside funnel metrics. General CRO methods are covered in [[/blogs/ecommerce-cro-audit|ecommerce CRO audit]] and [[/blogs/ecommerce-ab-testing|A/B testing]].",
+          "In fashion, a change that increases orders but also increases returns may not help. Track net sales after returns, return rate by product and size, and reasons, alongside funnel metrics. General CRO methods are covered in [[/blogs/ecommerce-cro-audit|ecommerce CRO audit]] and [[/blogs/ecommerce-ab-testing|A/B testing]].",
         ],
         table: {
           headers: ["Metric", "Why it matters in fashion"],

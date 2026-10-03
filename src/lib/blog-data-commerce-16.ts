@@ -65,7 +65,7 @@ export const commercePosts16: BlogPost[] = [
       {
         heading: "Placement by Moment",
         body: [
-          "The diagram above maps cross-sells to four moments. On the product page, shoppers are still deciding, so cross-sells belong below the buy area. In the cart, the decision is made, so small, relevant add-ons and required accessories fit. After purchase, the order page and emails can suggest complements and refills without risking the sale.",
+          "On the product page, shoppers are still deciding, so cross-sells belong below the buy area. In the cart, the decision is made, so small, relevant add-ons and required accessories fit. After purchase, the order page and emails can suggest complements and refills without risking the sale.",
         ],
         cta: {
           title: "Are your cross-sells adding revenue or noise?",
@@ -202,7 +202,7 @@ export const commercePosts16: BlogPost[] = [
       {
         heading: "Upsell Types",
         body: [
-          "The diagram above compares six types. Each helps in some situations and adds friction in others.",
+          "Each helps in some situations and adds friction in others.",
         ],
       },
       {
@@ -314,7 +314,7 @@ export const commercePosts16: BlogPost[] = [
       {
         heading: "The AOV Driver Tree",
         body: [
-          "The diagram above breaks AOV into items per order and price per item, with levers under each and guardrails at the bottom. Knowing which driver is weak tells you which levers to try.",
+          "In short, the approach breaks AOV into items per order and price per item, with levers under each and guardrails at the bottom. Knowing which driver is weak tells you which levers to try.",
         ],
       },
       {
@@ -434,7 +434,7 @@ export const commercePosts16: BlogPost[] = [
       },
       {
         heading: "Side by Side",
-        body: ["The diagram above summarizes the comparison."],
+        body: [""],
       },
       {
         heading: "What Merchandising Does Best",

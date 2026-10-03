@@ -45,7 +45,7 @@ export const commercePosts31: BlogPost[] = [
       {
         heading: "What an ERP Does for Ecommerce",
         body: [
-          "The ERP is usually the operational and financial system of record: items, costs, stock across locations, purchasing, orders from all channels, invoicing and accounting. The store is where customers browse and buy. Without integration, staff re-key orders, stock drifts out of sync and finance reconciles by hand. The diagram above shows the data flows and the integration layer between the systems. For B2B-specific data such as contract pricing and credit, see [[/blogs/b2b-ecommerce-erp-integration|B2B ERP integration]].",
+          "The ERP is usually the operational and financial system of record: items, costs, stock across locations, purchasing, orders from all channels, invoicing and accounting. The store is where customers browse and buy. Without integration, staff re-key orders, stock drifts out of sync and finance reconciles by hand. In short, think of the data flows and the integration layer between the systems. For B2B-specific data such as contract pricing and credit, see [[/blogs/b2b-ecommerce-erp-integration|B2B ERP integration]].",
         ],
       },
       {
@@ -227,7 +227,7 @@ export const commercePosts31: BlogPost[] = [
       {
         heading: "What CRM Integration Is For",
         body: [
-          "For ecommerce, a CRM (or an ecommerce-focused marketing platform) turns purchase data into relationships: welcome and post-purchase messages, replenishment reminders, win-back campaigns, VIP recognition and informed support. The diagram above shows what flows from store to CRM, what flows back and the rules both sides share. For lead-capture integrations on non-commerce websites, see [[/blogs/crm-website-integration|CRM website integration]]; for B2B sales teams, see [[/blogs/b2b-ecommerce-crm-integration|B2B CRM integration]].",
+          "For ecommerce, a CRM (or an ecommerce-focused marketing platform) turns purchase data into relationships: welcome and post-purchase messages, replenishment reminders, win-back campaigns, VIP recognition and informed support. In short, think of what flows from store to CRM, what flows back and the rules both sides share. For lead-capture integrations on non-commerce websites, see [[/blogs/crm-website-integration|CRM website integration]]; for B2B sales teams, see [[/blogs/b2b-ecommerce-crm-integration|B2B CRM integration]].",
         ],
       },
       {
@@ -378,7 +378,7 @@ export const commercePosts31: BlogPost[] = [
       {
         heading: "Why Inventory Sync Goes Wrong",
         body: [
-          "Stock changes in many places: warehouse receipts, picks, returns, store sales, marketplace orders, damage write-offs. If channels learn about changes late, they sell stock that no longer exists or hide stock that does. The diagram above shows sources feeding a single inventory source of truth that calculates available to sell for every channel.",
+          "Stock changes in many places: warehouse receipts, picks, returns, store sales, marketplace orders, damage write-offs. If channels learn about changes late, they sell stock that no longer exists or hide stock that does. In short, think of sources feeding a single inventory source of truth that calculates available to sell for every channel.",
         ],
       },
       {

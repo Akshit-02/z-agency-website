@@ -8,7 +8,6 @@ import { Reveal } from "@/components/ScrollReveal";
 import { Eyebrow } from "@/components/SectionHeading";
 import { CTASection } from "@/components/CTASection";
 import { StructuredData } from "@/components/StructuredData";
-import { BlogBanner } from "@/components/BlogBanner";
 import { BlogCard } from "@/components/BlogCard";
 import { ArticleCover, ArticleRelated } from "@/components/blog/BlogKit";
 import { BlogScene } from "@/components/blog/BlogScene";
@@ -17,7 +16,6 @@ import { Atmosphere } from "@/components/ui/Aesthetic";
 import { Callout } from "@/components/Callout";
 import { ReadingProgress } from "@/components/ReadingProgress";
 import { TableOfContents } from "@/components/TableOfContents";
-import { IndustryGlyph } from "@/components/IndustryGlyph";
 import { Faq } from "@/components/Faq";
 import { renderInline, slugifyHeading, stripInline } from "@/lib/inline-content";
 import { posts, getPostBySlug, getRelatedPosts, toSummary } from "@/lib/blog-data";
@@ -154,10 +152,6 @@ export default async function BlogPostPage({
                   {post.category}
                 </Link>
                 <span className="font-mono text-[0.72rem] uppercase tracking-[0.12em] text-ink/45">{post.readingTime}</span>
-                <span className="h-1 w-1 rounded-full bg-ink/20" />
-                <time dateTime={post.updated ?? post.date} className="font-mono text-[0.72rem] uppercase tracking-[0.12em] text-ink/45">
-                  {new Date(post.updated ?? post.date).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}
-                </time>
               </div>
             </Reveal>
 
@@ -258,35 +252,6 @@ export default async function BlogPostPage({
                         >
                           <code>{section.code.text}</code>
                         </pre>
-                      </figure>
-                    )}
-
-                    {section.visual && (
-                      <figure className="mt-6">
-                        <div className="aspect-[11/8] w-full max-w-sm overflow-hidden rounded-2xl">
-                          <IndustryGlyph visual={section.visual.variant} accent={section.visual.accent} />
-                        </div>
-                        <figcaption className="mt-3 max-w-sm text-[0.88rem] leading-relaxed text-ink-soft">
-                          {section.visual.caption}
-                        </figcaption>
-                      </figure>
-                    )}
-
-                    {section.diagram && (
-                      <figure className="mt-6">
-                        <div
-                          tabIndex={0}
-                          role="region"
-                          aria-label={`${section.diagram.alt} (scrollable)`}
-                          className="overflow-x-auto rounded-2xl bg-white p-1.5 shadow-[0_30px_70px_-45px_rgba(11,12,14,0.45)] ring-1 ring-ink/[0.06] focus-visible:outline-2 focus-visible:outline-blue"
-                        >
-                          <div role="img" aria-label={section.diagram.alt} className="aspect-[16/9] w-full min-w-[560px] overflow-hidden rounded-xl">
-                            <BlogBanner variant={section.diagram.variant} />
-                          </div>
-                        </div>
-                        <figcaption className="mt-3 text-[0.88rem] leading-relaxed text-ink-soft">
-                          {section.diagram.caption}
-                        </figcaption>
                       </figure>
                     )}
 

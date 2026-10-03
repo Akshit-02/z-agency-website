@@ -191,7 +191,7 @@ export const commercePosts27: BlogPost[] = [
       {
         heading: "Grocery Conversion Is a Repeat Game",
         body: [
-          "Grocery shoppers who become weekly customers generate most of the value, so the first order is an audition for the next fifty. Optimize the first order to remove fear and effort, then optimize the repeat journey to make next week faster. The diagram above groups the levers into basket building, slots and fees, checkout and repeat. For the UX foundations, see [[/blogs/grocery-ecommerce-ux|grocery ecommerce UX]].",
+          "Grocery shoppers who become weekly customers generate most of the value, so the first order is an audition for the next fifty. Optimize the first order to remove fear and effort, then optimize the repeat journey to make next week faster. In short, the approach groups the levers into basket building, slots and fees, checkout and repeat. For the UX foundations, see [[/blogs/grocery-ecommerce-ux|grocery ecommerce UX]].",
         ],
       },
       {

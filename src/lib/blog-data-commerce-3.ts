@@ -87,7 +87,7 @@ export const commercePosts3: BlogPost[] = [
       {
         heading: "Build the Hierarchy First",
         body: [
-          "The diagram above shows the backbone: home links to main categories, categories to subcategories and subcategories to products, with breadcrumbs linking back up. Keep important pages within a few clicks of the homepage through normal links. Every product should belong to at least one category that's linked from navigation.",
+          "In short, think of the backbone: home links to main categories, categories to subcategories and subcategories to products, with breadcrumbs linking back up. Keep important pages within a few clicks of the homepage through normal links. Every product should belong to at least one category that's linked from navigation.",
         ],
       },
       {
@@ -276,7 +276,7 @@ export const commercePosts3: BlogPost[] = [
       {
         heading: "Decide Per Facet Type",
         body: [
-          "The diagram above summarizes a practical default. Adjust it to your catalog and search demand.",
+          "Adjust it to your catalog and search demand.",
         ],
         table: {
           headers: ["Facet or URL type", "Default treatment"],
@@ -409,7 +409,7 @@ export const commercePosts3: BlogPost[] = [
       {
         heading: "How Site Search Works",
         body: [
-          "The diagram above shows the pipeline. A query is normalized (spelling, plurals, synonyms), the engine retrieves candidate products from its index, ranks them using relevance signals and business rules, and returns results. Analytics on what shoppers searched and did next feed back into tuning.",
+          "A query is normalized (spelling, plurals, synonyms), the engine retrieves candidate products from its index, ranks them using relevance signals and business rules, and returns results. Analytics on what shoppers searched and did next feed back into tuning.",
         ],
         table: {
           headers: ["Stage", "What can go wrong"],

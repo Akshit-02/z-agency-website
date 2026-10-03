@@ -266,7 +266,7 @@ export const commercePosts7: BlogPost[] = [
       {
         heading: "Product Pages",
         body: [
-          "The diagram above shows an electronics product page. Near the top: model name, price, stock and delivery date, variant selectors with prices, a compatibility check where relevant, and the handful of specs that decide the purchase, explained in plain language (“Up to 30 hours of battery”). Below: the full spec table, what's in the box, manuals and downloads, reviews and Q&A. See [[/blogs/ecommerce-product-page-design|ecommerce product page design]].",
+          "Near the top: model name, price, stock and delivery date, variant selectors with prices, a compatibility check where relevant, and the handful of specs that decide the purchase, explained in plain language (“Up to 30 hours of battery”). Below: the full spec table, what's in the box, manuals and downloads, reviews and Q&A. See [[/blogs/ecommerce-product-page-design|ecommerce product page design]].",
         ],
         cta: {
           title: "Electronics shoppers comparing elsewhere?",
@@ -628,7 +628,7 @@ export const commercePosts7: BlogPost[] = [
       {
         heading: "Dimensions and Fit",
         body: [
-          "The diagram above puts dimensions in the middle of the buy area, where they belong. Show a labelled line drawing with overall width, depth and height plus the measurements that decide comfort and fit (seat height and depth, arm height, clearance under the frame). Give packaging dimensions and guidance on doorways, stairs and lifts. Offer both metric and imperial where your audience uses both.",
+          "In short, the approach puts dimensions in the middle of the buy area, where they belong. Show a labelled line drawing with overall width, depth and height plus the measurements that decide comfort and fit (seat height and depth, arm height, clearance under the frame). Give packaging dimensions and guidance on doorways, stairs and lifts. Offer both metric and imperial where your audience uses both.",
         ],
       },
       {

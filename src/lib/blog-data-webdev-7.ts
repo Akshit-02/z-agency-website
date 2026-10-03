@@ -18,17 +18,48 @@ export const webDevPosts7: BlogPost[] = [
     date: "2026-09-24",
     readingTime: "13 min read",
     relatedServiceSlugs: ["website-development"],
-    relatedIndustrySlugs: ["saas-technology", "b2b-enterprise", "professional-services"],
+    relatedIndustrySlugs: [
+      "saas-technology",
+      "b2b-enterprise",
+      "professional-services",
+    ],
     faqs: [
-      { q: "Is Next.js better than WordPress?", a: "Neither is better in general. WordPress is stronger when a non-technical team needs a familiar editor and a large plugin ecosystem with minimal engineering. Next.js is stronger when the site needs custom functionality, tight performance control, or application-like features. The right answer depends on your team and requirements." },
-      { q: "Can you use WordPress and Next.js together?", a: "Yes. A common pattern is headless WordPress: editors keep the WordPress admin, while content is delivered through the WordPress REST API or a GraphQL plugin to a Next.js front end. You get the familiar editor and a custom front end, at the cost of running two systems." },
-      { q: "Is WordPress or Next.js better for SEO?", a: "Both can produce excellent technical SEO. WordPress relies on theme quality and plugins for metadata and performance; Next.js gives developers direct control over rendering, metadata and structured data. Implementation quality matters more than the tool." },
-      { q: "Is Next.js harder to maintain than WordPress?", a: "It requires developer involvement for most changes beyond content editing, but it avoids plugin sprawl and the update cycle that comes with it. WordPress is easier for non-developers but needs consistent core, theme and plugin updates." },
-      { q: "Does Next.js have a CMS?", a: "No. Next.js is a framework, so content usually comes from a headless CMS, markdown files, a database, or headless WordPress. Choosing that content source is a separate decision." },
-      { q: "Which is cheaper, WordPress or Next.js?", a: "WordPress is usually cheaper to launch for a standard content site. Next.js usually costs more upfront because the front end and content integration are custom-built. Over several years the gap depends on how much custom functionality and maintenance each approach requires." },
-      { q: "Should I migrate my WordPress site to Next.js?", a: "Only if WordPress is genuinely limiting you, for example performance you can't fix, functionality that fights the platform, or plugin maintenance that has become a burden. See the website replatforming guide for how to judge that." },
-      { q: "Is WordPress faster or slower than Next.js?", a: "A well-built Next.js site generally has more performance headroom because it controls exactly what ships to the browser. A well-hosted WordPress site with a lean theme can also be fast. Plugin-heavy WordPress sites are where performance problems usually appear." },
-      { q: "Which is more secure?", a: "WordPress's risk comes mostly from outdated plugins and themes. A Next.js site has a smaller default attack surface but still needs secure APIs, dependencies and hosting. Either can be secure with consistent maintenance." },
+      {
+        q: "Is Next.js better than WordPress?",
+        a: "Neither is better in general. WordPress is stronger when a non-technical team needs a familiar editor and a large plugin ecosystem with minimal engineering. Next.js is stronger when the site needs custom functionality, tight performance control, or application-like features. The right answer depends on your team and requirements.",
+      },
+      {
+        q: "Can you use WordPress and Next.js together?",
+        a: "Yes. A common pattern is headless WordPress: editors keep the WordPress admin, while content is delivered through the WordPress REST API or a GraphQL plugin to a Next.js front end. You get the familiar editor and a custom front end, at the cost of running two systems.",
+      },
+      {
+        q: "Is WordPress or Next.js better for SEO?",
+        a: "Both can produce excellent technical SEO. WordPress relies on theme quality and plugins for metadata and performance; Next.js gives developers direct control over rendering, metadata and structured data. Implementation quality matters more than the tool.",
+      },
+      {
+        q: "Is Next.js harder to maintain than WordPress?",
+        a: "It requires developer involvement for most changes beyond content editing, but it avoids plugin sprawl and the update cycle that comes with it. WordPress is easier for non-developers but needs consistent core, theme and plugin updates.",
+      },
+      {
+        q: "Does Next.js have a CMS?",
+        a: "No. Next.js is a framework, so content usually comes from a headless CMS, markdown files, a database, or headless WordPress. Choosing that content source is a separate decision.",
+      },
+      {
+        q: "Which is cheaper, WordPress or Next.js?",
+        a: "WordPress is usually cheaper to launch for a standard content site. Next.js usually costs more upfront because the front end and content integration are custom-built. Over several years the gap depends on how much custom functionality and maintenance each approach requires.",
+      },
+      {
+        q: "Should I migrate my WordPress site to Next.js?",
+        a: "Only if WordPress is genuinely limiting you, for example performance you can't fix, functionality that fights the platform, or plugin maintenance that has become a burden. See the website replatforming guide for how to judge that.",
+      },
+      {
+        q: "Is WordPress faster or slower than Next.js?",
+        a: "A well-built Next.js site generally has more performance headroom because it controls exactly what ships to the browser. A well-hosted WordPress site with a lean theme can also be fast. Plugin-heavy WordPress sites are where performance problems usually appear.",
+      },
+      {
+        q: "Which is more secure?",
+        a: "WordPress's risk comes mostly from outdated plugins and themes. A Next.js site has a smaller default attack surface but still needs secure APIs, dependencies and hosting. Either can be secure with consistent maintenance.",
+      },
     ],
     content: [
       {
@@ -40,7 +71,7 @@ export const webDevPosts7: BlogPost[] = [
       {
         heading: "Why This Comparison Is Often Framed Wrongly",
         body: [
-          "WordPress and Next.js solve different problems. WordPress bundles content storage, an editing interface and page rendering into one system. Next.js handles routing and rendering but expects content to come from somewhere else. So the practical question is not \"which tool wins\" but \"do we want an all-in-one CMS, or a custom front end with a separate content source?\"",
+          'WordPress and Next.js solve different problems. WordPress bundles content storage, an editing interface and page rendering into one system. Next.js handles routing and rendering but expects content to come from somewhere else. So the practical question is not "which tool wins" but "do we want an all-in-one CMS, or a custom front end with a separate content source?"',
           "That framing matters because it changes what you are actually buying: an editing experience and ecosystem in one case, flexibility and engineering control in the other.",
         ],
       },
@@ -49,7 +80,7 @@ export const webDevPosts7: BlogPost[] = [
         body: [
           "A traditional WordPress site is monolithic: PHP renders pages from a MySQL database using a theme, and plugins extend behavior inside the same application. A Next.js site renders pages in a Node.js environment and pulls content from APIs, files or a database. Modern Next.js can mix static and dynamic content on the same page, which the [[/blogs/nextjs-website-development|Next.js website development guide]] explains in more detail.",
         ],
-        visual: { variant: "grid", accent: "blue", caption: "WordPress bundles storage, editing and rendering in one application; Next.js handles rendering and expects content from a separate source." },
+        // visual: { variant: "grid", accent: "blue", caption: "WordPress bundles storage, editing and rendering in one application; Next.js handles rendering and expects content from a separate source." },
       },
       {
         heading: "Side-by-Side Comparison",
@@ -57,16 +88,56 @@ export const webDevPosts7: BlogPost[] = [
         table: {
           headers: ["Factor", "WordPress", "Next.js"],
           rows: [
-            ["What it is", "CMS with themes and plugins", "React framework, no built-in CMS"],
-            ["Content editing", "Built-in admin most editors already know", "Depends on the chosen CMS or content source"],
-            ["Performance", "Depends on hosting, theme and plugin discipline", "High headroom; developers control what ships"],
-            ["SEO control", "Strong via plugins and theme quality", "Direct control of metadata, rendering and schema"],
-            ["Custom functionality", "Plugins or custom PHP development", "Built directly in the application"],
-            ["Integrations", "Plugin ecosystem covers common tools", "Custom API integrations for anything"],
-            ["Security model", "Main risk is outdated plugins and themes", "Smaller default surface; APIs and dependencies need care"],
-            ["Maintenance", "Frequent core, theme and plugin updates", "Dependency updates and developer-led changes"],
-            ["Upfront cost", "Usually lower for standard sites", "Usually higher, custom front end"],
-            ["Best fit", "Content-heavy sites, small teams, fast launches", "Product sites, SaaS, custom experiences"],
+            [
+              "What it is",
+              "CMS with themes and plugins",
+              "React framework, no built-in CMS",
+            ],
+            [
+              "Content editing",
+              "Built-in admin most editors already know",
+              "Depends on the chosen CMS or content source",
+            ],
+            [
+              "Performance",
+              "Depends on hosting, theme and plugin discipline",
+              "High headroom; developers control what ships",
+            ],
+            [
+              "SEO control",
+              "Strong via plugins and theme quality",
+              "Direct control of metadata, rendering and schema",
+            ],
+            [
+              "Custom functionality",
+              "Plugins or custom PHP development",
+              "Built directly in the application",
+            ],
+            [
+              "Integrations",
+              "Plugin ecosystem covers common tools",
+              "Custom API integrations for anything",
+            ],
+            [
+              "Security model",
+              "Main risk is outdated plugins and themes",
+              "Smaller default surface; APIs and dependencies need care",
+            ],
+            [
+              "Maintenance",
+              "Frequent core, theme and plugin updates",
+              "Dependency updates and developer-led changes",
+            ],
+            [
+              "Upfront cost",
+              "Usually lower for standard sites",
+              "Usually higher, custom front end",
+            ],
+            [
+              "Best fit",
+              "Content-heavy sites, small teams, fast launches",
+              "Product sites, SaaS, custom experiences",
+            ],
           ],
         },
       },
@@ -89,7 +160,8 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Weighing WordPress against a Next.js build?",
-          description: "ZSpace Labs builds on Next.js and works with headless WordPress, so we can recommend what fits your team rather than defaulting to one stack.",
+          description:
+            "ZSpace Labs builds on Next.js and works with headless WordPress, so we can recommend what fits your team rather than defaulting to one stack.",
         },
       },
       {
@@ -117,7 +189,8 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want a recommendation grounded in your actual requirements?",
-          description: "Talk to ZSpace Labs about your content workflow, integrations and growth plans, and we'll map them to the stack that fits. Learn more about our [[/services/website-development|Next.js and React development work]].",
+          description:
+            "Talk to ZSpace Labs about your content workflow, integrations and growth plans, and we'll map them to the stack that fits. Learn more about our [[/services/website-development|Next.js and React development work]].",
         },
       },
       {
@@ -132,7 +205,8 @@ export const webDevPosts7: BlogPost[] = [
   // ---------------------------------------- WORDPRESS VS CUSTOM: OWNERSHIP
   {
     slug: "wordpress-vs-custom-development-cost-of-ownership",
-    title: "WordPress vs Custom Development: Long-Term Cost and Ownership Compared",
+    title:
+      "WordPress vs Custom Development: Long-Term Cost and Ownership Compared",
     excerpt:
       "Launch cost is the smallest part of the decision. How plugin dependency, developer dependency, maintenance and growth change the economics of WordPress and custom builds over time.",
     category: "Web Development",
@@ -140,16 +214,44 @@ export const webDevPosts7: BlogPost[] = [
     date: "2026-09-24",
     readingTime: "12 min read",
     relatedServiceSlugs: ["website-development"],
-    relatedIndustrySlugs: ["b2b-enterprise", "saas-technology", "professional-services"],
+    relatedIndustrySlugs: [
+      "b2b-enterprise",
+      "saas-technology",
+      "professional-services",
+    ],
     faqs: [
-      { q: "Is WordPress cheaper than custom development in the long run?", a: "Often, for a standard content site that stays standard. It becomes less clear when a WordPress site accumulates paid plugins, custom workarounds and maintenance effort, or when the business needs functionality the platform resists. Compare multi-year costs, not launch quotes." },
-      { q: "What is total cost of ownership for a website?", a: "Everything the site costs over its useful life: build, hosting, licenses and plugin subscriptions, security updates, content changes, feature work, fixes, and the eventual rebuild or migration." },
-      { q: "Do I own a custom-built website?", a: "You should. Make sure the contract assigns ownership of the code and gives you repository access and documentation. Ownership without documentation still leaves you dependent on the original developer." },
-      { q: "Is plugin dependency a real risk?", a: "Yes. Plugins can be abandoned, change licensing, conflict with each other, or introduce vulnerabilities. Each one is a small external dependency you don't control." },
-      { q: "Is developer dependency a real risk with custom development?", a: "It can be if the code is undocumented or built on an obscure stack. Choosing mainstream technologies and requiring documentation keeps the site maintainable by other teams." },
-      { q: "When does custom development pay for itself?", a: "Typically when the business relies on functionality or integrations that would otherwise require stacking plugins, paying for workarounds, or accepting limits that cost revenue or staff time." },
-      { q: "How long does a website typically last before a rebuild?", a: "There's no fixed lifespan. Sites are usually rebuilt when the platform, design or architecture stops meeting business needs, which depends heavily on how well they were built and maintained." },
-      { q: "How is this different from the custom website vs WordPress comparison?", a: "That guide compares features and capabilities. This one focuses on money and control over several years: ownership, dependencies and maintenance economics." },
+      {
+        q: "Is WordPress cheaper than custom development in the long run?",
+        a: "Often, for a standard content site that stays standard. It becomes less clear when a WordPress site accumulates paid plugins, custom workarounds and maintenance effort, or when the business needs functionality the platform resists. Compare multi-year costs, not launch quotes.",
+      },
+      {
+        q: "What is total cost of ownership for a website?",
+        a: "Everything the site costs over its useful life: build, hosting, licenses and plugin subscriptions, security updates, content changes, feature work, fixes, and the eventual rebuild or migration.",
+      },
+      {
+        q: "Do I own a custom-built website?",
+        a: "You should. Make sure the contract assigns ownership of the code and gives you repository access and documentation. Ownership without documentation still leaves you dependent on the original developer.",
+      },
+      {
+        q: "Is plugin dependency a real risk?",
+        a: "Yes. Plugins can be abandoned, change licensing, conflict with each other, or introduce vulnerabilities. Each one is a small external dependency you don't control.",
+      },
+      {
+        q: "Is developer dependency a real risk with custom development?",
+        a: "It can be if the code is undocumented or built on an obscure stack. Choosing mainstream technologies and requiring documentation keeps the site maintainable by other teams.",
+      },
+      {
+        q: "When does custom development pay for itself?",
+        a: "Typically when the business relies on functionality or integrations that would otherwise require stacking plugins, paying for workarounds, or accepting limits that cost revenue or staff time.",
+      },
+      {
+        q: "How long does a website typically last before a rebuild?",
+        a: "There's no fixed lifespan. Sites are usually rebuilt when the platform, design or architecture stops meeting business needs, which depends heavily on how well they were built and maintained.",
+      },
+      {
+        q: "How is this different from the custom website vs WordPress comparison?",
+        a: "That guide compares features and capabilities. This one focuses on money and control over several years: ownership, dependencies and maintenance economics.",
+      },
     ],
     content: [
       {
@@ -170,13 +272,41 @@ export const webDevPosts7: BlogPost[] = [
         table: {
           headers: ["Cost area", "WordPress", "Custom development"],
           rows: [
-            ["Initial build", "Lower with an existing theme", "Higher, built to specification"],
-            ["Licenses and subscriptions", "Premium plugins and themes often renew annually", "Usually limited to hosting and specific services"],
-            ["Security updates", "Frequent core, theme and plugin updates", "Dependency and framework updates"],
-            ["Feature changes", "Cheap when a plugin exists, expensive when it doesn't", "Consistent cost, built directly"],
-            ["Integrations", "Plugin if available, custom code if not", "Custom API integration"],
-            ["Performance fixes", "Often caching layers and plugin cleanup", "Usually addressed in code"],
-            ["Eventual rebuild", "Triggered when plugins or theme can't stretch further", "Triggered when architecture or design ages"],
+            [
+              "Initial build",
+              "Lower with an existing theme",
+              "Higher, built to specification",
+            ],
+            [
+              "Licenses and subscriptions",
+              "Premium plugins and themes often renew annually",
+              "Usually limited to hosting and specific services",
+            ],
+            [
+              "Security updates",
+              "Frequent core, theme and plugin updates",
+              "Dependency and framework updates",
+            ],
+            [
+              "Feature changes",
+              "Cheap when a plugin exists, expensive when it doesn't",
+              "Consistent cost, built directly",
+            ],
+            [
+              "Integrations",
+              "Plugin if available, custom code if not",
+              "Custom API integration",
+            ],
+            [
+              "Performance fixes",
+              "Often caching layers and plugin cleanup",
+              "Usually addressed in code",
+            ],
+            [
+              "Eventual rebuild",
+              "Triggered when plugins or theme can't stretch further",
+              "Triggered when architecture or design ages",
+            ],
           ],
         },
       },
@@ -191,7 +321,12 @@ export const webDevPosts7: BlogPost[] = [
         body: [
           "Every plugin is software maintained by someone else. Most are fine, but over several years some get abandoned, change pricing, conflict with updates or become security liabilities. A WordPress site with a handful of well-maintained plugins carries little risk; one with dozens carries a lot. Count your plugins and ask how many are business-critical.",
         ],
-        visual: { variant: "bars", accent: "orange", caption: "Maintenance effort on WordPress tends to scale with the number of plugins, not the number of pages." },
+        // visual: {
+        //   variant: "bars",
+        //   accent: "orange",
+        //   caption:
+        //     "Maintenance effort on WordPress tends to scale with the number of plugins, not the number of pages.",
+        // },
       },
       {
         heading: "Developer Dependency",
@@ -200,7 +335,8 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Trying to compare real multi-year costs?",
-          description: "ZSpace Labs can look at your current plugin stack, integrations and roadmap and outline what each path would cost to run, not just to build.",
+          description:
+            "ZSpace Labs can look at your current plugin stack, integrations and roadmap and outline what each path would cost to run, not just to build.",
         },
       },
       {
@@ -234,7 +370,8 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want an honest read on which path fits your roadmap?",
-          description: "Talk to ZSpace Labs about where your site needs to be in a few years, and we'll tell you whether custom development is actually justified. See how we approach [[/services/website-development|website development]].",
+          description:
+            "Talk to ZSpace Labs about where your site needs to be in a few years, and we'll tell you whether custom development is actually justified. See how we approach [[/services/website-development|website development]].",
         },
       },
       {
@@ -257,17 +394,48 @@ export const webDevPosts7: BlogPost[] = [
     date: "2026-09-24",
     readingTime: "12 min read",
     relatedServiceSlugs: ["website-development"],
-    relatedIndustrySlugs: ["saas-technology", "ecommerce", "media-entertainment"],
+    relatedIndustrySlugs: [
+      "saas-technology",
+      "ecommerce",
+      "media-entertainment",
+    ],
     faqs: [
-      { q: "What's the main difference between a headless and a traditional CMS?", a: "A traditional CMS stores content and renders the website pages. A headless CMS only stores and manages content, delivering it through an API to a separately built front end." },
-      { q: "Is a headless CMS harder for editors to use?", a: "The editing interface itself is often excellent. What editors can lose is visual page building and live preview, unless the development team builds those workflows deliberately." },
-      { q: "Do I need developers to use a headless CMS?", a: "You need developers to build and change the front end and content models. Day-to-day content editing does not require developers once that setup is done." },
-      { q: "Is a headless CMS more secure?", a: "It can reduce attack surface because the public site is separate from the content admin, and the front end is often served as static or cached pages. It still needs secure APIs, access control and a secure front end." },
-      { q: "Is headless CMS more expensive?", a: "Usually more upfront, because the front end is custom-built and workflows need setup. Ongoing costs depend on CMS pricing, hosting and how often the front end changes." },
-      { q: "What is omnichannel content?", a: "Publishing the same structured content to multiple places, such as a website, mobile app, in-store screens or partner feeds, from one source. It's the strongest reason to choose a headless CMS." },
-      { q: "Can a traditional CMS work headlessly?", a: "Some can. WordPress and Drupal both expose APIs, so they can be used as a headless backend. This is sometimes called a hybrid or decoupled setup." },
-      { q: "Which CMS type is better for SEO?", a: "Neither inherently. Traditional CMSs rely on themes and plugins; headless setups give developers direct control. Implementation quality decides the outcome." },
-      { q: "When should I stay with a traditional CMS?", a: "When one website is the only channel, editors rely on visual page building, and there's limited developer capacity. That describes many business sites." },
+      {
+        q: "What's the main difference between a headless and a traditional CMS?",
+        a: "A traditional CMS stores content and renders the website pages. A headless CMS only stores and manages content, delivering it through an API to a separately built front end.",
+      },
+      {
+        q: "Is a headless CMS harder for editors to use?",
+        a: "The editing interface itself is often excellent. What editors can lose is visual page building and live preview, unless the development team builds those workflows deliberately.",
+      },
+      {
+        q: "Do I need developers to use a headless CMS?",
+        a: "You need developers to build and change the front end and content models. Day-to-day content editing does not require developers once that setup is done.",
+      },
+      {
+        q: "Is a headless CMS more secure?",
+        a: "It can reduce attack surface because the public site is separate from the content admin, and the front end is often served as static or cached pages. It still needs secure APIs, access control and a secure front end.",
+      },
+      {
+        q: "Is headless CMS more expensive?",
+        a: "Usually more upfront, because the front end is custom-built and workflows need setup. Ongoing costs depend on CMS pricing, hosting and how often the front end changes.",
+      },
+      {
+        q: "What is omnichannel content?",
+        a: "Publishing the same structured content to multiple places, such as a website, mobile app, in-store screens or partner feeds, from one source. It's the strongest reason to choose a headless CMS.",
+      },
+      {
+        q: "Can a traditional CMS work headlessly?",
+        a: "Some can. WordPress and Drupal both expose APIs, so they can be used as a headless backend. This is sometimes called a hybrid or decoupled setup.",
+      },
+      {
+        q: "Which CMS type is better for SEO?",
+        a: "Neither inherently. Traditional CMSs rely on themes and plugins; headless setups give developers direct control. Implementation quality decides the outcome.",
+      },
+      {
+        q: "When should I stay with a traditional CMS?",
+        a: "When one website is the only channel, editors rely on visual page building, and there's limited developer capacity. That describes many business sites.",
+      },
     ],
     content: [
       {
@@ -288,7 +456,12 @@ export const webDevPosts7: BlogPost[] = [
         body: [
           "In a traditional CMS, content, templates and rendering live together. Publishing a post immediately produces a page using the active theme. In a headless CMS, content is stored as structured data. A separate application, often built with a framework like Next.js, requests that content through an API and decides how to present it.",
         ],
-        visual: { variant: "grid", accent: "blue", caption: "Traditional CMS: one system edits and renders. Headless CMS: the content system and the presentation layer are separate." },
+        visual: {
+          variant: "grid",
+          accent: "blue",
+          caption:
+            "Traditional CMS: one system edits and renders. Headless CMS: the content system and the presentation layer are separate.",
+        },
       },
       {
         heading: "Comparison Table",
@@ -296,13 +469,37 @@ export const webDevPosts7: BlogPost[] = [
         table: {
           headers: ["Factor", "Traditional CMS", "Headless CMS"],
           rows: [
-            ["Rendering", "CMS renders pages via themes", "Separate front end renders pages"],
-            ["Editor experience", "Visual editing and preview built in", "Structured forms; preview must be configured"],
+            [
+              "Rendering",
+              "CMS renders pages via themes",
+              "Separate front end renders pages",
+            ],
+            [
+              "Editor experience",
+              "Visual editing and preview built in",
+              "Structured forms; preview must be configured",
+            ],
             ["Frontend freedom", "Limited by theme system", "Complete"],
-            ["Channels", "Mainly one website", "Website, apps and other channels"],
-            ["Developer dependency", "Low for routine changes", "Higher for layout and new page types"],
-            ["Performance", "Depends on theme, plugins, hosting", "High potential with static or cached front ends"],
-            ["Security surface", "Admin and public site share an application", "Admin separated from the public front end"],
+            [
+              "Channels",
+              "Mainly one website",
+              "Website, apps and other channels",
+            ],
+            [
+              "Developer dependency",
+              "Low for routine changes",
+              "Higher for layout and new page types",
+            ],
+            [
+              "Performance",
+              "Depends on theme, plugins, hosting",
+              "High potential with static or cached front ends",
+            ],
+            [
+              "Security surface",
+              "Admin and public site share an application",
+              "Admin separated from the public front end",
+            ],
             ["Upfront cost", "Lower", "Higher"],
           ],
         },
@@ -326,7 +523,8 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Not sure your team is ready for a headless CMS?",
-          description: "ZSpace Labs can review your content workflow and publishing needs and recommend a CMS setup your editors and developers can both work with.",
+          description:
+            "ZSpace Labs can review your content workflow and publishing needs and recommend a CMS setup your editors and developers can both work with.",
         },
       },
       {
@@ -353,7 +551,8 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Planning a CMS change?",
-          description: "Talk to ZSpace Labs before committing. The right CMS depends as much on your editorial team as on the technology. Explore our [[/services/website-development|website and web app development services]].",
+          description:
+            "Talk to ZSpace Labs before committing. The right CMS depends as much on your editorial team as on the technology. Explore our [[/services/website-development|website and web app development services]].",
         },
       },
       {
@@ -376,16 +575,44 @@ export const webDevPosts7: BlogPost[] = [
     date: "2026-09-24",
     readingTime: "11 min read",
     relatedServiceSlugs: ["website-development", "mobile-app-development"],
-    relatedIndustrySlugs: ["saas-technology", "ecommerce", "media-entertainment"],
+    relatedIndustrySlugs: [
+      "saas-technology",
+      "ecommerce",
+      "media-entertainment",
+    ],
     faqs: [
-      { q: "What does headless mean in headless CMS?", a: "The \"head\" is the presentation layer, the website or app people see. A headless CMS has no built-in presentation layer. It stores content and delivers it through an API to whatever front ends request it." },
-      { q: "What is content modeling?", a: "Defining the structure of your content as types with fields, such as an Article with a title, summary, author and body, or a Product with a name, price and images. Good content models make content reusable across channels." },
-      { q: "How does a website get content from a headless CMS?", a: "The front end requests content through the CMS's API, usually REST or GraphQL, either when pages are built, when they're requested, or on a cache schedule." },
-      { q: "Is a headless CMS the same as an API?", a: "No. The API is how content is delivered. The headless CMS also includes the editing interface, content storage, roles, workflows and media management." },
-      { q: "Can a headless CMS power a mobile app?", a: "Yes. That's one of its main uses: the same content can serve a website and native or cross-platform mobile apps." },
-      { q: "What happens when an editor clicks publish?", a: "Content is saved as published, and the front end is told to update, typically by a webhook that triggers a rebuild or cache revalidation." },
-      { q: "Do headless CMSs support previews?", a: "Most support preview APIs, but the front end has to implement preview mode so editors can see drafts rendered in the real design." },
-      { q: "Is WordPress a headless CMS?", a: "Not by default, but it can be used headlessly through its REST API or a GraphQL plugin, with a separate front end rendering the site." },
+      {
+        q: "What does headless mean in headless CMS?",
+        a: 'The "head" is the presentation layer, the website or app people see. A headless CMS has no built-in presentation layer. It stores content and delivers it through an API to whatever front ends request it.',
+      },
+      {
+        q: "What is content modeling?",
+        a: "Defining the structure of your content as types with fields, such as an Article with a title, summary, author and body, or a Product with a name, price and images. Good content models make content reusable across channels.",
+      },
+      {
+        q: "How does a website get content from a headless CMS?",
+        a: "The front end requests content through the CMS's API, usually REST or GraphQL, either when pages are built, when they're requested, or on a cache schedule.",
+      },
+      {
+        q: "Is a headless CMS the same as an API?",
+        a: "No. The API is how content is delivered. The headless CMS also includes the editing interface, content storage, roles, workflows and media management.",
+      },
+      {
+        q: "Can a headless CMS power a mobile app?",
+        a: "Yes. That's one of its main uses: the same content can serve a website and native or cross-platform mobile apps.",
+      },
+      {
+        q: "What happens when an editor clicks publish?",
+        a: "Content is saved as published, and the front end is told to update, typically by a webhook that triggers a rebuild or cache revalidation.",
+      },
+      {
+        q: "Do headless CMSs support previews?",
+        a: "Most support preview APIs, but the front end has to implement preview mode so editors can see drafts rendered in the real design.",
+      },
+      {
+        q: "Is WordPress a headless CMS?",
+        a: "Not by default, but it can be used headlessly through its REST API or a GraphQL plugin, with a separate front end rendering the site.",
+      },
     ],
     content: [
       {
@@ -405,7 +632,12 @@ export const webDevPosts7: BlogPost[] = [
         body: [
           "A headless CMS removes the template layer. It keeps the backend: the editor interface, content storage, media library, user roles and publishing workflow. Instead of rendering pages, it exposes content through an API. Any front end that can make an API request can use it.",
         ],
-        visual: { variant: "rows", accent: "orange", caption: "Content lives in the CMS, travels through an API, and is presented by one or more independent front ends." },
+        visual: {
+          variant: "rows",
+          accent: "orange",
+          caption:
+            "Content lives in the CMS, travels through an API, and is presented by one or more independent front ends.",
+        },
       },
       {
         heading: "The Architecture, Step by Step",
@@ -413,11 +645,31 @@ export const webDevPosts7: BlogPost[] = [
         table: {
           headers: ["Layer", "Role", "Example"],
           rows: [
-            ["Content model", "Defines content types and fields", "Article: title, summary, author, body, tags"],
-            ["Editor interface", "Where people create and review content", "Forms, media library, drafts, approvals"],
-            ["Content API", "Delivers content to front ends", "REST endpoints or a GraphQL schema"],
-            ["Front end", "Fetches content and renders the experience", "A Next.js website, a mobile app"],
-            ["Publishing trigger", "Tells front ends content changed", "Webhook that rebuilds or revalidates pages"],
+            [
+              "Content model",
+              "Defines content types and fields",
+              "Article: title, summary, author, body, tags",
+            ],
+            [
+              "Editor interface",
+              "Where people create and review content",
+              "Forms, media library, drafts, approvals",
+            ],
+            [
+              "Content API",
+              "Delivers content to front ends",
+              "REST endpoints or a GraphQL schema",
+            ],
+            [
+              "Front end",
+              "Fetches content and renders the experience",
+              "A Next.js website, a mobile app",
+            ],
+            [
+              "Publishing trigger",
+              "Tells front ends content changed",
+              "Webhook that rebuilds or revalidates pages",
+            ],
           ],
         },
       },
@@ -434,7 +686,8 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Considering a headless CMS for your next website?",
-          description: "ZSpace Labs designs content models and builds the front end, so your CMS fits how your team actually publishes.",
+          description:
+            "ZSpace Labs designs content models and builds the front end, so your CMS fits how your team actually publishes.",
         },
       },
       {
@@ -456,7 +709,8 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want help deciding whether headless fits?",
-          description: "Talk to ZSpace Labs about your channels, editorial team and roadmap before choosing a CMS model.",
+          description:
+            "Talk to ZSpace Labs about your channels, editorial team and roadmap before choosing a CMS model.",
         },
       },
       {
@@ -479,17 +733,48 @@ export const webDevPosts7: BlogPost[] = [
     date: "2026-09-24",
     readingTime: "12 min read",
     relatedServiceSlugs: ["website-development"],
-    relatedIndustrySlugs: ["b2b-enterprise", "ecommerce", "media-entertainment"],
+    relatedIndustrySlugs: [
+      "b2b-enterprise",
+      "ecommerce",
+      "media-entertainment",
+    ],
     faqs: [
-      { q: "What is the best CMS for a business website?", a: "There isn't one best CMS. The right choice depends on who edits content, how often, what the site must integrate with, how many languages and sites you run, and what developer support you have." },
-      { q: "Should a small business use a headless CMS?", a: "Usually not unless it has multiple channels or specific frontend requirements. A traditional CMS or a well-configured site builder is often simpler and cheaper for a small team." },
-      { q: "What CMS features matter most for editors?", a: "An intuitive editor, reliable preview, media management, drafts and scheduling, and roles and approvals if more than a few people publish." },
-      { q: "How important is CMS SEO support?", a: "Essential. You need control over titles, descriptions, URLs, canonicals, redirects and structured data, either built in or through the front end." },
-      { q: "Do I need a multilingual CMS?", a: "If you publish in more than one language, yes. Check how the CMS handles translated fields, localized URLs and translation workflows before committing." },
-      { q: "Can one CMS manage multiple websites?", a: "Many can, through multi-site or multi-space features. This matters for businesses running several brands or regional sites." },
-      { q: "How do I evaluate CMS cost?", a: "Include licensing or subscription tiers (often priced by users, content volume or API calls), hosting, implementation, and the developer time the CMS will need over time." },
-      { q: "Should ecommerce affect CMS choice?", a: "Yes. If commerce is central, consider a commerce platform first and decide whether its content tools are enough or whether a separate CMS should sit alongside it." },
-      { q: "How hard is it to switch CMS later?", a: "Moderately to very hard, depending on content volume and structure. That's why it's worth choosing carefully and keeping content well structured. See the website migration guide." },
+      {
+        q: "What is the best CMS for a business website?",
+        a: "There isn't one best CMS. The right choice depends on who edits content, how often, what the site must integrate with, how many languages and sites you run, and what developer support you have.",
+      },
+      {
+        q: "Should a small business use a headless CMS?",
+        a: "Usually not unless it has multiple channels or specific frontend requirements. A traditional CMS or a well-configured site builder is often simpler and cheaper for a small team.",
+      },
+      {
+        q: "What CMS features matter most for editors?",
+        a: "An intuitive editor, reliable preview, media management, drafts and scheduling, and roles and approvals if more than a few people publish.",
+      },
+      {
+        q: "How important is CMS SEO support?",
+        a: "Essential. You need control over titles, descriptions, URLs, canonicals, redirects and structured data, either built in or through the front end.",
+      },
+      {
+        q: "Do I need a multilingual CMS?",
+        a: "If you publish in more than one language, yes. Check how the CMS handles translated fields, localized URLs and translation workflows before committing.",
+      },
+      {
+        q: "Can one CMS manage multiple websites?",
+        a: "Many can, through multi-site or multi-space features. This matters for businesses running several brands or regional sites.",
+      },
+      {
+        q: "How do I evaluate CMS cost?",
+        a: "Include licensing or subscription tiers (often priced by users, content volume or API calls), hosting, implementation, and the developer time the CMS will need over time.",
+      },
+      {
+        q: "Should ecommerce affect CMS choice?",
+        a: "Yes. If commerce is central, consider a commerce platform first and decide whether its content tools are enough or whether a separate CMS should sit alongside it.",
+      },
+      {
+        q: "How hard is it to switch CMS later?",
+        a: "Moderately to very hard, depending on content volume and structure. That's why it's worth choosing carefully and keeping content well structured. See the website migration guide.",
+      },
     ],
     content: [
       {
@@ -508,16 +793,40 @@ export const webDevPosts7: BlogPost[] = [
         heading: "The Decision Framework",
         body: ["Score your situation against each factor."],
         table: {
-          headers: ["Factor", "Points toward simpler / traditional", "Points toward headless or enterprise"],
+          headers: [
+            "Factor",
+            "Points toward simpler / traditional",
+            "Points toward headless or enterprise",
+          ],
           rows: [
-            ["Content volume", "Dozens to hundreds of pages", "Thousands of structured items"],
-            ["Editors", "One to a few people", "Many editors, roles and approvals"],
-            ["Publishing frequency", "Occasional updates", "Daily publishing, scheduled releases"],
-            ["Developer resources", "None or occasional", "Dedicated or retained developers"],
+            [
+              "Content volume",
+              "Dozens to hundreds of pages",
+              "Thousands of structured items",
+            ],
+            [
+              "Editors",
+              "One to a few people",
+              "Many editors, roles and approvals",
+            ],
+            [
+              "Publishing frequency",
+              "Occasional updates",
+              "Daily publishing, scheduled releases",
+            ],
+            [
+              "Developer resources",
+              "None or occasional",
+              "Dedicated or retained developers",
+            ],
             ["Channels", "One website", "Website, apps and other surfaces"],
             ["Languages", "One", "Several, with translation workflows"],
             ["Multiple sites", "Single site", "Several brands or regions"],
-            ["Integrations", "Forms, analytics, email", "CRM, commerce, PIM, search, personalization"],
+            [
+              "Integrations",
+              "Forms, analytics, email",
+              "CRM, commerce, PIM, search, personalization",
+            ],
             ["Performance needs", "Standard", "Strict, competitive"],
           ],
         },
@@ -533,7 +842,12 @@ export const webDevPosts7: BlogPost[] = [
         body: [
           "Headless and highly customized CMSs need ongoing developer involvement for new page types and layout changes. If you don't have that capacity, a CMS that lets editors control more of the page is safer, even if it's less flexible.",
         ],
-        visual: { variant: "funnel", accent: "orange", caption: "Narrow the field by team and content first; product features are the last filter, not the first." },
+        visual: {
+          variant: "funnel",
+          accent: "orange",
+          caption:
+            "Narrow the field by team and content first; product features are the last filter, not the first.",
+        },
       },
       {
         heading: "SEO Requirements",
@@ -542,7 +856,8 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Shortlisting CMS options?",
-          description: "ZSpace Labs can map your team, content and integrations to a shortlist, and explain the trade-offs of each before you commit.",
+          description:
+            "ZSpace Labs can map your team, content and integrations to a shortlist, and explain the trade-offs of each before you commit.",
         },
       },
       {
@@ -584,7 +899,8 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Ready to choose, or reconsidering your current CMS?",
-          description: "Talk to ZSpace Labs about a CMS decision grounded in how your business actually publishes.",
+          description:
+            "Talk to ZSpace Labs about a CMS decision grounded in how your business actually publishes.",
         },
       },
       {
@@ -609,14 +925,38 @@ export const webDevPosts7: BlogPost[] = [
     relatedServiceSlugs: ["website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["b2b-enterprise", "real-estate", "education-edtech"],
     faqs: [
-      { q: "What is a custom CMS?", a: "A content management system built specifically for one business, with an admin interface, content structure and workflows designed around its data and processes rather than general-purpose publishing." },
-      { q: "When is a custom CMS worth building?", a: "When content is highly structured and business-specific, such as property listings, course catalogs or product configurations, and workflows don't fit a general CMS without heavy customization." },
-      { q: "Is a custom CMS more secure than WordPress?", a: "It avoids plugin vulnerabilities and is a less common target, but security depends on how well it's built. A custom CMS needs the same care around authentication, validation and updates." },
-      { q: "Is a custom CMS expensive to maintain?", a: "It needs developer maintenance for changes and security. The cost is predictable if the codebase is well built and documented, and grows quickly if it isn't." },
-      { q: "Can WordPress handle custom content types?", a: "Yes, through custom post types and custom fields. For many business needs this is enough. It starts to strain with complex relationships, custom workflows or unusual permissions." },
-      { q: "Is a headless CMS a middle ground?", a: "Often. Headless CMSs let you define custom content models and workflows without building an admin from scratch." },
-      { q: "What about editor training?", a: "WordPress editors are easy to find. A custom CMS needs training, though a well-designed one can be simpler because it only shows what your team needs." },
-      { q: "How is this different from WordPress vs custom website development?", a: "That comparison is about the whole website. This one is specifically about the content management layer: the admin, content models and editorial workflows." },
+      {
+        q: "What is a custom CMS?",
+        a: "A content management system built specifically for one business, with an admin interface, content structure and workflows designed around its data and processes rather than general-purpose publishing.",
+      },
+      {
+        q: "When is a custom CMS worth building?",
+        a: "When content is highly structured and business-specific, such as property listings, course catalogs or product configurations, and workflows don't fit a general CMS without heavy customization.",
+      },
+      {
+        q: "Is a custom CMS more secure than WordPress?",
+        a: "It avoids plugin vulnerabilities and is a less common target, but security depends on how well it's built. A custom CMS needs the same care around authentication, validation and updates.",
+      },
+      {
+        q: "Is a custom CMS expensive to maintain?",
+        a: "It needs developer maintenance for changes and security. The cost is predictable if the codebase is well built and documented, and grows quickly if it isn't.",
+      },
+      {
+        q: "Can WordPress handle custom content types?",
+        a: "Yes, through custom post types and custom fields. For many business needs this is enough. It starts to strain with complex relationships, custom workflows or unusual permissions.",
+      },
+      {
+        q: "Is a headless CMS a middle ground?",
+        a: "Often. Headless CMSs let you define custom content models and workflows without building an admin from scratch.",
+      },
+      {
+        q: "What about editor training?",
+        a: "WordPress editors are easy to find. A custom CMS needs training, though a well-designed one can be simpler because it only shows what your team needs.",
+      },
+      {
+        q: "How is this different from WordPress vs custom website development?",
+        a: "That comparison is about the whole website. This one is specifically about the content management layer: the admin, content models and editorial workflows.",
+      },
     ],
     content: [
       {
@@ -626,7 +966,7 @@ export const webDevPosts7: BlogPost[] = [
         ],
       },
       {
-        heading: "What \"Custom CMS\" Actually Means",
+        heading: 'What "Custom CMS" Actually Means',
         body: [
           "A custom CMS is an admin interface and content structure built for one organization. Instead of generic posts and pages, it might manage properties with agents and viewing slots, courses with modules and instructors, or products with configurable options. The editor sees only what matters to their job. This guide focuses on that admin layer; for the whole-site comparison, see [[/blogs/wordpress-vs-custom-development-cost-of-ownership|WordPress vs custom development]].",
         ],
@@ -637,15 +977,47 @@ export const webDevPosts7: BlogPost[] = [
         table: {
           headers: ["Factor", "WordPress", "Custom CMS"],
           rows: [
-            ["Admin experience", "General-purpose, widely known", "Built around your team's tasks"],
-            ["Content models", "Posts, pages, custom post types and fields", "Any structure and relationship you need"],
+            [
+              "Admin experience",
+              "General-purpose, widely known",
+              "Built around your team's tasks",
+            ],
+            [
+              "Content models",
+              "Posts, pages, custom post types and fields",
+              "Any structure and relationship you need",
+            ],
             ["Custom workflows", "Plugins or custom development", "Built in"],
-            ["Development effort", "Low for standard needs", "Significant upfront"],
-            ["Security", "Plugin updates are the main risk", "Depends entirely on build quality"],
-            ["Plugins and extensions", "Large ecosystem", "Features built as needed"],
-            ["Scalability", "Good for content; strains with complex data", "Designed for your data volume"],
-            ["Maintenance", "Frequent updates, low effort each", "Developer-led, predictable if well built"],
-            ["Team requirements", "Site administrator, occasional developer", "Retained development capacity"],
+            [
+              "Development effort",
+              "Low for standard needs",
+              "Significant upfront",
+            ],
+            [
+              "Security",
+              "Plugin updates are the main risk",
+              "Depends entirely on build quality",
+            ],
+            [
+              "Plugins and extensions",
+              "Large ecosystem",
+              "Features built as needed",
+            ],
+            [
+              "Scalability",
+              "Good for content; strains with complex data",
+              "Designed for your data volume",
+            ],
+            [
+              "Maintenance",
+              "Frequent updates, low effort each",
+              "Developer-led, predictable if well built",
+            ],
+            [
+              "Team requirements",
+              "Site administrator, occasional developer",
+              "Retained development capacity",
+            ],
           ],
         },
       },
@@ -654,7 +1026,12 @@ export const webDevPosts7: BlogPost[] = [
         body: [
           "WordPress's admin serves everyone reasonably well and nobody perfectly. For a marketing team publishing articles, that's fine. For an operations team managing hundreds of structured records with validation rules, approval stages and role-specific views, a custom admin can remove real daily friction. Good admin design is a UX problem as much as a development one, which is why ZSpace Labs treats it as part of [[/services/ui-ux-design|UI/UX design]].",
         ],
-        visual: { variant: "rows", accent: "blue", caption: "A general-purpose admin shows everything to everyone; a custom admin shows each role only what its job requires." },
+        visual: {
+          variant: "rows",
+          accent: "blue",
+          caption:
+            "A general-purpose admin shows everything to everyone; a custom admin shows each role only what its job requires.",
+        },
       },
       {
         heading: "Content Models",
@@ -663,7 +1040,8 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Is WordPress straining under your content?",
-          description: "ZSpace Labs can review your content structure and workflows and tell you whether custom fields, a headless CMS or a custom admin is the right fix.",
+          description:
+            "ZSpace Labs can review your content structure and workflows and tell you whether custom fields, a headless CMS or a custom admin is the right fix.",
         },
       },
       {
@@ -696,7 +1074,8 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Want to scope a custom admin properly?",
-          description: "Talk to ZSpace Labs about your content and workflows before deciding between WordPress, headless or a custom CMS.",
+          description:
+            "Talk to ZSpace Labs about your content and workflows before deciding between WordPress, headless or a custom CMS.",
         },
       },
       {
@@ -718,17 +1097,45 @@ export const webDevPosts7: BlogPost[] = [
     banner: "hub",
     date: "2026-09-24",
     readingTime: "12 min read",
-    relatedServiceSlugs: ["website-development", "mobile-app-development", "ai-automation"],
+    relatedServiceSlugs: [
+      "website-development",
+      "mobile-app-development",
+      "ai-automation",
+    ],
     relatedIndustrySlugs: ["saas-technology", "fintech", "ecommerce"],
     faqs: [
-      { q: "What does API-first mean?", a: "Designing and agreeing on the API, the contract that defines how systems request and exchange data, before building the interfaces that use it. Websites, apps and partners then build against the same contract." },
-      { q: "How is API-first different from API integration?", a: "API integration connects your site to other systems' APIs. API-first is about how you design your own system, so its capabilities are exposed through a well-defined API from the start." },
-      { q: "Does API-first mean headless?", a: "They're related. Headless separates the front end from the backend; API-first is the design approach that makes that separation clean and reusable." },
-      { q: "When is API-first worth it?", a: "When the same data and business logic must serve a website plus a mobile app, partners or internal tools, or when separate teams build frontend and backend in parallel." },
-      { q: "When is API-first unnecessary?", a: "For a content-focused marketing site with one channel and no plans for apps or partner access. The extra design and infrastructure add cost without much benefit." },
-      { q: "Does API-first slow down development?", a: "It front-loads design work, so the first release can take longer. It usually speeds up later work because teams build in parallel against an agreed contract." },
-      { q: "What tools are used to define an API first?", a: "Commonly an OpenAPI specification for REST APIs or a GraphQL schema. Both document endpoints, data shapes and errors before implementation." },
-      { q: "Is API-first more secure?", a: "It makes security more deliberate because every capability is exposed through a defined interface that needs authentication and authorization. It also means the API must be secured carefully." },
+      {
+        q: "What does API-first mean?",
+        a: "Designing and agreeing on the API, the contract that defines how systems request and exchange data, before building the interfaces that use it. Websites, apps and partners then build against the same contract.",
+      },
+      {
+        q: "How is API-first different from API integration?",
+        a: "API integration connects your site to other systems' APIs. API-first is about how you design your own system, so its capabilities are exposed through a well-defined API from the start.",
+      },
+      {
+        q: "Does API-first mean headless?",
+        a: "They're related. Headless separates the front end from the backend; API-first is the design approach that makes that separation clean and reusable.",
+      },
+      {
+        q: "When is API-first worth it?",
+        a: "When the same data and business logic must serve a website plus a mobile app, partners or internal tools, or when separate teams build frontend and backend in parallel.",
+      },
+      {
+        q: "When is API-first unnecessary?",
+        a: "For a content-focused marketing site with one channel and no plans for apps or partner access. The extra design and infrastructure add cost without much benefit.",
+      },
+      {
+        q: "Does API-first slow down development?",
+        a: "It front-loads design work, so the first release can take longer. It usually speeds up later work because teams build in parallel against an agreed contract.",
+      },
+      {
+        q: "What tools are used to define an API first?",
+        a: "Commonly an OpenAPI specification for REST APIs or a GraphQL schema. Both document endpoints, data shapes and errors before implementation.",
+      },
+      {
+        q: "Is API-first more secure?",
+        a: "It makes security more deliberate because every capability is exposed through a defined interface that needs authentication and authorization. It also means the API must be secured carefully.",
+      },
     ],
     content: [
       {
@@ -749,7 +1156,12 @@ export const webDevPosts7: BlogPost[] = [
         body: [
           "The backend holds data and business rules and exposes them through the API. The website, a mobile app and partner systems are all clients of that API. Because none of them owns the logic, they stay consistent: a price, eligibility rule or order status is calculated once and served everywhere.",
         ],
-        visual: { variant: "grid", accent: "orange", caption: "One backend, one contract, many clients: website, app, partners and internal tools." },
+        visual: {
+          variant: "grid",
+          accent: "orange",
+          caption:
+            "One backend, one contract, many clients: website, app, partners and internal tools.",
+        },
       },
       {
         heading: "REST and GraphQL in API-First Design",
@@ -770,7 +1182,8 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Planning a website and app on the same platform?",
-          description: "ZSpace Labs designs APIs that serve web and mobile from one backend, so your channels stay consistent as you grow.",
+          description:
+            "ZSpace Labs designs APIs that serve web and mobile from one backend, so your channels stay consistent as you grow.",
         },
       },
       {
@@ -803,7 +1216,8 @@ export const webDevPosts7: BlogPost[] = [
         ],
         cta: {
           title: "Not sure whether your project needs API-first architecture?",
-          description: "Talk to ZSpace Labs about your channels and roadmap. We'll tell you if a simpler architecture would serve you better.",
+          description:
+            "Talk to ZSpace Labs about your channels and roadmap. We'll tell you if a simpler architecture would serve you better.",
         },
       },
       {

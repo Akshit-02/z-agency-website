@@ -214,7 +214,7 @@ export const designPosts6: BlogPost[] = [
         body: [
           "Menus are one route to products among several; for search, filters, recommendations and guided selling together, see [[/blogs/ecommerce-product-discovery|ecommerce product discovery]]. For how navigation fits the store's URL and catalog structure, see [[/blogs/ecommerce-website-architecture|ecommerce website architecture]].",
           "Three terms often get mixed up. The taxonomy is how products are classified: the category tree plus the attributes recorded for each product. [[/blogs/information-architecture|Information architecture]] is the wider structure of the store, including content such as guides and help. Navigation is the interface that exposes that structure: menus, category pages, breadcrumbs and links.",
-          "Most navigation problems are structure problems in disguise. Redesigning a menu around a confusing taxonomy just presents the confusion more attractively. The diagram above shows the levels this guide covers: main navigation, mega-menu groups and listing pages refined by filters.",
+          "Most navigation problems are structure problems in disguise. Redesigning a menu around a confusing taxonomy just presents the confusion more attractively. In short, think of the levels this guide covers: main navigation, mega-menu groups and listing pages refined by filters.",
         ],
       },
       {
@@ -400,7 +400,7 @@ export const designPosts6: BlogPost[] = [
         heading: "Filters, Facets and Sorting",
         body: [
           "A filter narrows a product list by a criterion. Faceted navigation is a system of filters built from product attributes, called facets, whose values can be combined and which update to reflect the products that remain. Sorting doesn't remove anything; it reorders the list.",
-          "Filters are one part of the listing page. The [[/blogs/ecommerce-category-page-design|product listing page guide]] covers the page as a whole, including product cards, sorting and loading; this guide goes deep on filtering. The diagram above shows the loop: open filters, apply, see the applied summary and updated results, and adjust without starting over.",
+          "Filters are one part of the listing page. The [[/blogs/ecommerce-category-page-design|product listing page guide]] covers the page as a whole, including product cards, sorting and loading; this guide goes deep on filtering. In short, think of the loop: open filters, apply, see the applied summary and updated results, and adjust without starting over.",
         ],
       },
       {

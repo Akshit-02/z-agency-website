@@ -46,7 +46,7 @@ export const commercePosts53: BlogPost[] = [
       {
         heading: "Why Architecture Matters",
         body: [
-          "Most analytics problems in ecommerce aren't about missing dashboards; they're about untrusted numbers. Revenue in the analytics tool doesn't match the platform, events fire twice, definitions differ between teams, and nobody knows which report is right. Architecture fixes this by deciding where each kind of data comes from, where it's combined and who owns definitions. The diagram above shows the four layers. For the broader analytics practice, see [[/blogs/ecommerce-analytics|ecommerce analytics]].",
+          "Most analytics problems in ecommerce aren't about missing dashboards; they're about untrusted numbers. Revenue in the analytics tool doesn't match the platform, events fire twice, definitions differ between teams, and nobody knows which report is right. Architecture fixes this by deciding where each kind of data comes from, where it's combined and who owns definitions. For the broader analytics practice, see [[/blogs/ecommerce-analytics|ecommerce analytics]].",
         ],
       },
       {
@@ -515,7 +515,7 @@ export const commercePosts53: BlogPost[] = [
       {
         heading: "Optimization vs Design",
         body: [
-          "Product listing page design defines the components and patterns (cards, filters, sorting, layouts). Optimization is what happens after: measuring how each category performs, finding what holds it back and improving it. For the design system, see [[/blogs/ecommerce-category-page-design|product listing page design]]; for SEO specifics, see [[/blogs/ecommerce-category-page-seo|category page SEO]]. The diagram above groups the optimization areas.",
+          "Product listing page design defines the components and patterns (cards, filters, sorting, layouts). Optimization is what happens after: measuring how each category performs, finding what holds it back and improving it. For the design system, see [[/blogs/ecommerce-category-page-design|product listing page design]]; for SEO specifics, see [[/blogs/ecommerce-category-page-seo|category page SEO]].",
         ],
       },
       {

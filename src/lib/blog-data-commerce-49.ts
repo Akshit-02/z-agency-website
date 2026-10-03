@@ -46,7 +46,7 @@ export const commercePosts49: BlogPost[] = [
       {
         heading: "Why Jewelry Builds Need Precision",
         body: [
-          "A jewelry buyer is paying for materials and craft they can't inspect in person. Every attribute (14k or 18k, lab-grown or natural, carat weight, chain length) changes value and must be exact. The build also carries more risk than most stores: high values attract fraud, and parcels need secure delivery. The diagram above groups the four areas. For page design and trust, see [[/blogs/jewelry-ecommerce-website-design|jewelry ecommerce website design]] and [[/blogs/jewelry-ecommerce-ux|jewelry ecommerce UX]].",
+          "A jewelry buyer is paying for materials and craft they can't inspect in person. Every attribute (14k or 18k, lab-grown or natural, carat weight, chain length) changes value and must be exact. The build also carries more risk than most stores: high values attract fraud, and parcels need secure delivery. For page design and trust, see [[/blogs/jewelry-ecommerce-website-design|jewelry ecommerce website design]] and [[/blogs/jewelry-ecommerce-ux|jewelry ecommerce UX]].",
         ],
       },
       {
@@ -212,7 +212,7 @@ export const commercePosts49: BlogPost[] = [
       {
         heading: "Trust Is the Product",
         body: [
-          "A jewelry purchase asks the shopper to trust that the gold is the purity stated, the stone is what it claims, the size will fit and the parcel will arrive safely. The diagram above groups trust into product truth, authenticity, service and protection. For page design detail, see [[/blogs/jewelry-ecommerce-website-design|jewelry ecommerce website design]]; for premium experiences generally, see [[/blogs/luxury-ecommerce-website-design|luxury ecommerce UX]].",
+          "A jewelry purchase asks the shopper to trust that the gold is the purity stated, the stone is what it claims, the size will fit and the parcel will arrive safely. In short, the approach groups trust into product truth, authenticity, service and protection. For page design detail, see [[/blogs/jewelry-ecommerce-website-design|jewelry ecommerce website design]]; for premium experiences generally, see [[/blogs/luxury-ecommerce-website-design|luxury ecommerce UX]].",
         ],
       },
       {
@@ -392,7 +392,7 @@ export const commercePosts49: BlogPost[] = [
       {
         heading: "Four Zones",
         body: [
-          "The diagram above groups the page into see it, know it, size it and buy with confidence. The “know it” zone is highlighted because accurate material information is the heart of jewelry trust. For trust across the journey, see [[/blogs/jewelry-ecommerce-ux|jewelry ecommerce UX]].",
+          "In short, the approach groups the page into see it, know it, size it and buy with confidence. The “know it” zone is highlighted because accurate material information is the heart of jewelry trust. For trust across the journey, see [[/blogs/jewelry-ecommerce-ux|jewelry ecommerce UX]].",
         ],
       },
       {
@@ -687,7 +687,7 @@ export const commercePosts49: BlogPost[] = [
       {
         heading: "Two Kinds of Jewelry Shopper",
         body: [
-          "Self-purchasers often filter by material, stone and style they know they like. Gift buyers often start with budget, occasion and recipient and know little about materials. Good filter design serves both: technical filters for the first, occasion and price filters plus curated collections for the second. The diagram above shows a filter taxonomy. For general principles, see [[/blogs/ecommerce-filters|ecommerce product filters]].",
+          "Self-purchasers often filter by material, stone and style they know they like. Gift buyers often start with budget, occasion and recipient and know little about materials. Good filter design serves both: technical filters for the first, occasion and price filters plus curated collections for the second. For general principles, see [[/blogs/ecommerce-filters|ecommerce product filters]].",
         ],
       },
       {

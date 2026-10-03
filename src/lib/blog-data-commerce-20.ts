@@ -62,7 +62,7 @@ export const commercePosts20: BlogPost[] = [
       {
         heading: "Dietary Filters and Navigation",
         body: [
-          "The diagram above groups what food shoppers need. Navigation usually works by product type, occasion (breakfast, snacks, gifts) and diet. Dietary filters such as vegan, gluten-free or dairy-free are powerful but must be based on verified product data; a wrongly tagged product can harm a customer. Show filters only for attributes you've confirmed.",
+          "Navigation usually works by product type, occasion (breakfast, snacks, gifts) and diet. Dietary filters such as vegan, gluten-free or dairy-free are powerful but must be based on verified product data; a wrongly tagged product can harm a customer. Show filters only for attributes you've confirmed.",
         ],
       },
       {
@@ -174,7 +174,7 @@ export const commercePosts20: BlogPost[] = [
       {
         heading: "Why Grocery Is Different",
         body: [
-          "A grocery basket might contain forty items from a range of thousands, with stock that varies by store and hour, perishable products, limited delivery capacity and a picker who may need to substitute. The shopper wants to finish the weekly shop quickly and receive what they ordered. The diagram above groups the features that follow from this. For food brands selling a focused range, see [[/blogs/food-ecommerce-website-design|food ecommerce design]].",
+          "A grocery basket might contain forty items from a range of thousands, with stock that varies by store and hour, perishable products, limited delivery capacity and a picker who may need to substitute. The shopper wants to finish the weekly shop quickly and receive what they ordered. For food brands selling a focused range, see [[/blogs/food-ecommerce-website-design|food ecommerce design]].",
         ],
       },
       {
@@ -297,7 +297,7 @@ export const commercePosts20: BlogPost[] = [
       {
         heading: "How Sports Shoppers Buy",
         body: [
-          "A beginner runner, a club cyclist and a football parent have different questions, but all start from an activity. They want gear that performs for their use, fits properly and works with what they already own. The diagram above groups what the site must provide.",
+          "A beginner runner, a club cyclist and a football parent have different questions, but all start from an activity. They want gear that performs for their use, fits properly and works with what they already own.",
         ],
         table: {
           headers: ["Shopper question", "What the site must provide"],
@@ -416,7 +416,7 @@ export const commercePosts20: BlogPost[] = [
       {
         heading: "How Pet Owners Shop",
         body: [
-          "Owners buy for a particular animal: a senior small-breed dog with a sensitive stomach, a kitten, an aquarium. Suitability matters more than style, and much spending is repeat purchases of food and essentials. The diagram above groups the site's requirements.",
+          "Owners buy for a particular animal: a senior small-breed dog with a sensitive stomach, a kitten, an aquarium. Suitability matters more than style, and much spending is repeat purchases of food and essentials.",
         ],
       },
       {
@@ -530,7 +530,7 @@ export const commercePosts20: BlogPost[] = [
       {
         heading: "How Parents Shop",
         body: [
-          "Parents shop by stage (what do we need for a newborn?), often research heavily for major items like car seats and prams, and rely on safety information and other parents' reviews. Friends and family buy gifts from registries. The diagram above groups what the store needs.",
+          "Parents shop by stage (what do we need for a newborn?), often research heavily for major items like car seats and prams, and rely on safety information and other parents' reviews. Friends and family buy gifts from registries.",
         ],
       },
       {

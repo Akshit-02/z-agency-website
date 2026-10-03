@@ -204,7 +204,7 @@ export const commercePosts44: BlogPost[] = [
       {
         heading: "Why a Roadmap, Not a Project",
         body: [
-          "Large one-off rebuilds often run long, deliver value only at the end and carry concentrated risk at launch. A roadmap sequences smaller changes, each with a goal and metric, so the business sees improvements sooner and can adjust priorities as it learns. The diagram above groups the ten steps into understand, plan, deliver and improve. For the underlying assessments, see [[/blogs/ecommerce-architecture-audit|ecommerce architecture audit]] and [[/blogs/ecommerce-website-modernization|ecommerce website modernization]].",
+          "Large one-off rebuilds often run long, deliver value only at the end and carry concentrated risk at launch. A roadmap sequences smaller changes, each with a goal and metric, so the business sees improvements sooner and can adjust priorities as it learns. In short, the approach groups the ten steps into understand, plan, deliver and improve. For the underlying assessments, see [[/blogs/ecommerce-architecture-audit|ecommerce architecture audit]] and [[/blogs/ecommerce-website-modernization|ecommerce website modernization]].",
         ],
       },
       {

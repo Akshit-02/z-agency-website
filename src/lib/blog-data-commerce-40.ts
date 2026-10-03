@@ -210,7 +210,7 @@ export const commercePosts40: BlogPost[] = [
       {
         heading: "Why Account UX Matters",
         body: [
-          "Accounts are where customers go when something needs doing after a purchase: tracking a parcel, starting a return, changing an address, reordering, managing a subscription. Each task that can't be done in the account becomes a support contact or a frustrated customer. The diagram above groups account features into orders, profile, commerce and loyalty. For B2B needs, see [[/blogs/b2b-ecommerce-customer-portal|B2B customer portal]], which is a different product.",
+          "Accounts are where customers go when something needs doing after a purchase: tracking a parcel, starting a return, changing an address, reordering, managing a subscription. Each task that can't be done in the account becomes a support contact or a frustrated customer. In short, the approach groups account features into orders, profile, commerce and loyalty. For B2B needs, see [[/blogs/b2b-ecommerce-customer-portal|B2B customer portal]], which is a different product.",
         ],
       },
       {

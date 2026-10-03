@@ -248,7 +248,7 @@ export const commercePosts26: BlogPost[] = [
       {
         heading: "The Weekly Shop Is a Task",
         body: [
-          "Grocery shoppers aren't browsing for inspiration most of the time; they're completing a chore. Every extra tap multiplies across forty items. The diagram above shows the journey as a weekly loop: next week begins from last week's order. For the systems behind this, see [[/blogs/grocery-ecommerce-website-development|grocery ecommerce development]].",
+          "Grocery shoppers aren't browsing for inspiration most of the time; they're completing a chore. Every extra tap multiplies across forty items. In short, think of the journey as a weekly loop: next week begins from last week's order. For the systems behind this, see [[/blogs/grocery-ecommerce-website-development|grocery ecommerce development]].",
         ],
         table: {
           headers: ["Stage", "Shopper goal", "UX priority"],
@@ -411,7 +411,7 @@ export const commercePosts26: BlogPost[] = [
       {
         heading: "Four Routes to a Product",
         body: [
-          "The diagram above groups grocery discovery into aisles, lists, offers and inspiration. Search, the fifth route, is covered in [[/blogs/grocery-ecommerce-search|grocery search]]. Most weekly baskets are built mainly from lists and previous orders; discovery design should make that route effortless and let the others fill gaps. For discovery in general, see [[/blogs/ecommerce-product-discovery|ecommerce product discovery]].",
+          "In short, the approach groups grocery discovery into aisles, lists, offers and inspiration. Search, the fifth route, is covered in [[/blogs/grocery-ecommerce-search|grocery search]]. Most weekly baskets are built mainly from lists and previous orders; discovery design should make that route effortless and let the others fill gaps. For discovery in general, see [[/blogs/ecommerce-product-discovery|ecommerce product discovery]].",
         ],
       },
       {

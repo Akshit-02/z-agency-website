@@ -47,7 +47,7 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "Measure the Gap Step by Step",
         body: [
-          "“Add to cart but no purchase” covers several steps, each with different causes. The diagram above uses GA4's recommended ecommerce events to name them. Shopify's conversion rate breakdown shows a simpler version: sessions with cart additions, sessions that reached checkout and sessions that completed checkout.",
+          "“Add to cart but no purchase” covers several steps, each with different causes. Shopify's conversion rate breakdown shows a simpler version: sessions with cart additions, sessions that reached checkout and sessions that completed checkout.",
         ],
         table: {
           headers: ["Step", "GA4 event", "A large drop here suggests"],
@@ -394,7 +394,7 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "The Audit Framework",
         body: [
-          "The diagram above groups the 18 areas into four kinds of work: data (what's happening), the journey (page by page), the experience (cross-cutting quality) and validation (confirming causes and ranking fixes).",
+          "In short, the approach groups the 18 areas into four kinds of work: data (what's happening), the journey (page by page), the experience (cross-cutting quality) and validation (confirming causes and ranking fixes).",
         ],
         table: {
           headers: ["Group", "Areas"],
@@ -615,7 +615,7 @@ export const growthPosts2: BlogPost[] = [
       },
       {
         heading: "The Funnel Stages and How to Measure Them",
-        body: ["The diagram above shows the stages. Each needs a measurable event and a stage-to-stage rate."],
+        body: ["Each needs a measurable event and a stage-to-stage rate."],
         table: {
           headers: ["Stage", "What it means", "How to measure"],
           rows: [
@@ -1068,7 +1068,7 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "From Observation to Hypothesis",
         body: [
-          "The diagram above shows the workflow: heatmap, recordings, analytics, hypothesis, test, analysis. Write each finding in the same shape.",
+          "In short, think of the workflow: heatmap, recordings, analytics, hypothesis, test, analysis. Write each finding in the same shape.",
         ],
         table: {
           headers: ["Observation", "Question", "Hypothesis"],

@@ -82,7 +82,7 @@ export const commercePosts17: BlogPost[] = [
       {
         heading: "The Subscription Lifecycle",
         body: [
-          "The diagram above shows the lifecycle. Each stage needs design and operations: choosing a plan, signing up, renewal notices before charges, charging and shipping, customer management (skip, pause, swap, change frequency or quantity), and continuing or cancelling. Plan emails and portal features for every stage.",
+          "Each stage needs design and operations: choosing a plan, signing up, renewal notices before charges, charging and shipping, customer management (skip, pause, swap, change frequency or quantity), and continuing or cancelling. Plan emails and portal features for every stage.",
         ],
       },
       {
@@ -481,7 +481,7 @@ export const commercePosts17: BlogPost[] = [
       {
         heading: "The Customer Portal",
         body: [
-          "The diagram above shows a portal built around the next order. Put the next order date and total at the top, followed by the most common actions: skip and reschedule. Then frequency, product swaps and quantity, followed by address, payment and pause. Order history and invoices sit below. Cancellation is visible, not buried.",
+          "Put the next order date and total at the top, followed by the most common actions: skip and reschedule. Then frequency, product swaps and quantity, followed by address, payment and pause. Order history and invoices sit below. Cancellation is visible, not buried.",
         ],
         table: {
           headers: ["Action", "Why it matters"],

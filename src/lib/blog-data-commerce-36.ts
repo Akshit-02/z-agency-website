@@ -45,7 +45,7 @@ export const commercePosts36: BlogPost[] = [
         heading: "Two Kinds of Churn",
         body: [
           "Voluntary churn happens when a subscriber decides to cancel. Involuntary churn happens when a subscription ends or stalls because a payment fails and isn't recovered. They need different fixes: voluntary churn is about value, fit and control; involuntary churn is about payment operations and communication. Track them separately, because a store can look like it has a product problem when it mostly has a card expiry problem.",
-          "The diagram above groups retention work into onboarding, value, control and recovery. For retention beyond subscriptions, see [[/blogs/ecommerce-customer-retention|ecommerce customer retention]].",
+          "In short, the approach groups retention work into onboarding, value, control and recovery. For retention beyond subscriptions, see [[/blogs/ecommerce-customer-retention|ecommerce customer retention]].",
         ],
       },
       {

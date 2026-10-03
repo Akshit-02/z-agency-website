@@ -547,7 +547,7 @@ export const commercePosts39: BlogPost[] = [
         heading: "How Markets Work",
         body: [
           "Shopify describes markets as two components: conditions that define who the market applies to, and customizations that shape their experience (Shopify Help Center). When a visitor arrives, Shopify determines which market they belong to; visitors who match no active market fall back to a backup region, set by default to the store's home country. Submarkets inherit their parent market's customizations by default, so you can adjust a subset of countries without rebuilding everything.",
-          "The diagram above groups the pieces into conditions, customizations, storefront and operations. For the platform-agnostic view, see [[/blogs/international-ecommerce-website-development|international ecommerce website development]].",
+          "In short, the approach groups the pieces into conditions, customizations, storefront and operations. For the platform-agnostic view, see [[/blogs/international-ecommerce-website-development|international ecommerce website development]].",
         ],
       },
       {

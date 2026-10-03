@@ -21,14 +21,38 @@ export const designPosts2: BlogPost[] = [
     relatedServiceSlugs: ["ui-ux-design", "website-development"],
     relatedIndustrySlugs: ["ecommerce", "saas-technology", "education-edtech"],
     faqs: [
-      { q: "What is information architecture?", a: "The practice of organizing, structuring and labeling content and features so users can find what they need and understand where they are." },
-      { q: "What's the difference between information architecture and navigation?", a: "Information architecture is the underlying structure and labeling. Navigation is the interface, such as menus, links, search and breadcrumbs, that exposes that structure to users." },
-      { q: "What is card sorting?", a: "A research method where participants group content items into categories. Open card sorts let them name categories; closed card sorts use predefined ones." },
-      { q: "What is tree testing?", a: "A method where participants try to find items in a text-only version of a proposed structure, showing whether labels and groupings work without visual design influencing results." },
-      { q: "What is a sitemap in UX?", a: "A diagram of a product's pages or screens and how they're organized hierarchically. It's a key information architecture deliverable." },
-      { q: "What is a taxonomy?", a: "A controlled system for classifying content, such as product categories and attributes in ecommerce, that supports navigation, filtering and search." },
-      { q: "How do you know if information architecture is failing?", a: "Signals include users searching for things that should be easy to browse, high exit rates from navigation pages, support questions about where to find things, and failed tree tests." },
-      { q: "Does information architecture affect SEO?", a: "Yes. A clear hierarchy, descriptive labels and sensible URLs help search engines understand content relationships, as well as helping users." },
+      {
+        q: "What is information architecture?",
+        a: "The practice of organizing, structuring and labeling content and features so users can find what they need and understand where they are.",
+      },
+      {
+        q: "What's the difference between information architecture and navigation?",
+        a: "Information architecture is the underlying structure and labeling. Navigation is the interface, such as menus, links, search and breadcrumbs, that exposes that structure to users.",
+      },
+      {
+        q: "What is card sorting?",
+        a: "A research method where participants group content items into categories. Open card sorts let them name categories; closed card sorts use predefined ones.",
+      },
+      {
+        q: "What is tree testing?",
+        a: "A method where participants try to find items in a text-only version of a proposed structure, showing whether labels and groupings work without visual design influencing results.",
+      },
+      {
+        q: "What is a sitemap in UX?",
+        a: "A diagram of a product's pages or screens and how they're organized hierarchically. It's a key information architecture deliverable.",
+      },
+      {
+        q: "What is a taxonomy?",
+        a: "A controlled system for classifying content, such as product categories and attributes in ecommerce, that supports navigation, filtering and search.",
+      },
+      {
+        q: "How do you know if information architecture is failing?",
+        a: "Signals include users searching for things that should be easy to browse, high exit rates from navigation pages, support questions about where to find things, and failed tree tests.",
+      },
+      {
+        q: "Does information architecture affect SEO?",
+        a: "Yes. A clear hierarchy, descriptive labels and sensible URLs help search engines understand content relationships, as well as helping users.",
+      },
     ],
     content: [
       {
@@ -42,7 +66,12 @@ export const designPosts2: BlogPost[] = [
         body: [
           "IA is the structure; navigation is the interface that exposes it. A menu redesign won't fix a confusing structure underneath. The [[/blogs/website-navigation-and-ux|website navigation and UX guide]] covers menus, breadcrumbs and mobile navigation; this guide covers the structure they depend on.",
         ],
-        visual: { variant: "grid", accent: "orange", caption: "Content, categories, navigation, search and user journeys: IA connects them into one coherent structure." },
+        visual: {
+          variant: "grid",
+          accent: "orange",
+          caption:
+            "Content, categories, navigation, search and user journeys: IA connects them into one coherent structure.",
+        },
       },
       {
         heading: "The Core Components of IA",
@@ -50,11 +79,31 @@ export const designPosts2: BlogPost[] = [
         table: {
           headers: ["Component", "What it defines", "Example"],
           rows: [
-            ["Organization systems", "How content is grouped", "By topic, task, audience or product type"],
-            ["Labeling systems", "What things are called", "\"Plans\" vs \"Pricing\", \"Help\" vs \"Support\""],
-            ["Navigation systems", "How users move through content", "Global menu, local navigation, breadcrumbs"],
-            ["Search systems", "How users find by query", "Site search, filters, suggestions"],
-            ["Taxonomies and metadata", "How content is classified", "Product categories, attributes, tags"],
+            [
+              "Organization systems",
+              "How content is grouped",
+              "By topic, task, audience or product type",
+            ],
+            [
+              "Labeling systems",
+              "What things are called",
+              '"Plans" vs "Pricing", "Help" vs "Support"',
+            ],
+            [
+              "Navigation systems",
+              "How users move through content",
+              "Global menu, local navigation, breadcrumbs",
+            ],
+            [
+              "Search systems",
+              "How users find by query",
+              "Site search, filters, suggestions",
+            ],
+            [
+              "Taxonomies and metadata",
+              "How content is classified",
+              "Product categories, attributes, tags",
+            ],
           ],
         },
       },
@@ -83,7 +132,8 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Is your product hard to navigate?",
-          description: "ZSpace Labs can research how your users think and restructure your product or site around it.",
+          description:
+            "ZSpace Labs can research how your users think and restructure your product or site around it.",
         },
       },
       {
@@ -104,9 +154,18 @@ export const designPosts2: BlogPost[] = [
         table: {
           headers: ["Product", "IA priority"],
           rows: [
-            ["Marketing website", "Clear service and audience paths, short routes to contact or demo"],
-            ["Ecommerce store", "Category taxonomy, product attributes for filters, search"],
-            ["SaaS product", "Task-based navigation, settings organization, permissions"],
+            [
+              "Marketing website",
+              "Clear service and audience paths, short routes to contact or demo",
+            ],
+            [
+              "Ecommerce store",
+              "Category taxonomy, product attributes for filters, search",
+            ],
+            [
+              "SaaS product",
+              "Task-based navigation, settings organization, permissions",
+            ],
             ["Mobile app", "Few top-level destinations, shallow hierarchy"],
             ["Content library", "Topics, tags, search and related content"],
           ],
@@ -125,7 +184,8 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Planning a new site or product structure?",
-          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|UX and information architecture]] validated with real users.",
+          description:
+            "Talk to ZSpace Labs about [[/services/ui-ux-design|UX and information architecture]] validated with real users.",
         },
       },
       {
@@ -150,20 +210,44 @@ export const designPosts2: BlogPost[] = [
     relatedServiceSlugs: ["ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "startups", "ecommerce"],
     faqs: [
-      { q: "What is a wireframe?", a: "A simplified layout of a screen showing structure, content placement and hierarchy without visual styling, used to agree on what goes where." },
-      { q: "What is a prototype?", a: "An interactive simulation of a product that lets people click or tap through flows, used to test how the experience works before building it." },
-      { q: "What is a mockup?", a: "A static, visually detailed representation of a screen showing final colors, typography and imagery, but without interaction." },
-      { q: "Which comes first, wireframe or prototype?", a: "Usually wireframes first to settle structure, then prototypes to test flows. Low-fidelity prototypes can also be built directly from wireframes." },
-      { q: "What is the difference between low- and high-fidelity?", a: "Low fidelity is rough and quick, focusing on structure and flow. High fidelity looks and behaves close to the final product, useful for detailed interaction and stakeholder sign-off." },
-      { q: "Do I need both wireframes and prototypes?", a: "For most projects, yes. Wireframes are the fastest way to explore layout; prototypes are the fastest way to test whether a flow works." },
-      { q: "Can a prototype be tested with users?", a: "Yes, that's their main purpose. Usability testing with prototypes finds problems before development." },
-      { q: "What tools are used?", a: "Design tools such as Figma support wireframes, mockups and interactive prototypes. Paper sketches are still useful for the earliest ideas." },
+      {
+        q: "What is a wireframe?",
+        a: "A simplified layout of a screen showing structure, content placement and hierarchy without visual styling, used to agree on what goes where.",
+      },
+      {
+        q: "What is a prototype?",
+        a: "An interactive simulation of a product that lets people click or tap through flows, used to test how the experience works before building it.",
+      },
+      {
+        q: "What is a mockup?",
+        a: "A static, visually detailed representation of a screen showing final colors, typography and imagery, but without interaction.",
+      },
+      {
+        q: "Which comes first, wireframe or prototype?",
+        a: "Usually wireframes first to settle structure, then prototypes to test flows. Low-fidelity prototypes can also be built directly from wireframes.",
+      },
+      {
+        q: "What is the difference between low- and high-fidelity?",
+        a: "Low fidelity is rough and quick, focusing on structure and flow. High fidelity looks and behaves close to the final product, useful for detailed interaction and stakeholder sign-off.",
+      },
+      {
+        q: "Do I need both wireframes and prototypes?",
+        a: "For most projects, yes. Wireframes are the fastest way to explore layout; prototypes are the fastest way to test whether a flow works.",
+      },
+      {
+        q: "Can a prototype be tested with users?",
+        a: "Yes, that's their main purpose. Usability testing with prototypes finds problems before development.",
+      },
+      {
+        q: "What tools are used?",
+        a: "Design tools such as Figma support wireframes, mockups and interactive prototypes. Paper sketches are still useful for the earliest ideas.",
+      },
     ],
     content: [
       {
         heading: "Quick answer",
         body: [
-          "A wireframe is a simplified, static layout that shows structure, content placement and hierarchy without visual styling. A prototype is an interactive simulation that lets people click or tap through a flow so it can be tested before it's built. Wireframes answer \"what goes where?\"; prototypes answer \"does this flow work?\". Most projects use both: wireframes to explore and agree on structure quickly, then prototypes, low- or high-fidelity, to test key flows with users.",
+          'A wireframe is a simplified, static layout that shows structure, content placement and hierarchy without visual styling. A prototype is an interactive simulation that lets people click or tap through a flow so it can be tested before it\'s built. Wireframes answer "what goes where?"; prototypes answer "does this flow work?". Most projects use both: wireframes to explore and agree on structure quickly, then prototypes, low- or high-fidelity, to test key flows with users.',
         ],
       },
       {
@@ -172,15 +256,30 @@ export const designPosts2: BlogPost[] = [
         table: {
           headers: ["", "Wireframe", "Mockup", "Prototype"],
           rows: [
-            ["Purpose", "Structure and hierarchy", "Visual design", "Interaction and flow"],
+            [
+              "Purpose",
+              "Structure and hierarchy",
+              "Visual design",
+              "Interaction and flow",
+            ],
             ["Fidelity", "Low to medium", "High", "Low to high"],
             ["Interactive", "No", "No", "Yes"],
             ["Effort", "Low", "Medium", "Low to high"],
-            ["Best for", "Exploring layouts, agreeing content", "Visual direction, brand sign-off", "Usability testing, developer understanding"],
-            ["Feedback focus", "What goes where", "How it looks", "How it works"],
+            [
+              "Best for",
+              "Exploring layouts, agreeing content",
+              "Visual direction, brand sign-off",
+              "Usability testing, developer understanding",
+            ],
+            [
+              "Feedback focus",
+              "What goes where",
+              "How it looks",
+              "How it works",
+            ],
           ],
         },
-        visual: { variant: "grid", accent: "blue", caption: "Wireframes settle structure, mockups settle visuals, prototypes test behavior." },
+        // visual: { variant: "grid", accent: "blue", caption: "Wireframes settle structure, mockups settle visuals, prototypes test behavior." },
       },
       {
         heading: "What Wireframes Are For",
@@ -201,7 +300,8 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want to test a flow before you build it?",
-          description: "ZSpace Labs builds prototypes of your key journeys and tests them with real users before development starts.",
+          description:
+            "ZSpace Labs builds prototypes of your key journeys and tests them with real users before development starts.",
         },
       },
       {
@@ -222,7 +322,8 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Need wireframes and prototypes for your product?",
-          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] from first sketches to tested prototypes.",
+          description:
+            "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] from first sketches to tested prototypes.",
         },
       },
       {
@@ -247,14 +348,38 @@ export const designPosts2: BlogPost[] = [
     relatedServiceSlugs: ["ui-ux-design", "website-development"],
     relatedIndustrySlugs: ["ecommerce", "saas-technology", "d2c-consumer"],
     faqs: [
-      { q: "What is responsive UI design?", a: "Designing interfaces that adapt their layout, content and components to different screen sizes and input methods, rather than creating separate fixed designs for each device." },
-      { q: "What is mobile-first design?", a: "Designing the smallest screen first, then enhancing for larger screens. It forces prioritization of the most important content and actions." },
-      { q: "What breakpoints should I design for?", a: "Choose breakpoints where your content needs to change layout, not around specific devices. Many teams design at a small phone width, a tablet width and a desktop width, and check sizes in between." },
-      { q: "What is the difference between responsive and adaptive design?", a: "Responsive layouts flow continuously with the screen size. Adaptive designs switch between a few fixed layouts. Most modern sites are responsive, sometimes with adaptive elements." },
-      { q: "How should tables work on mobile?", a: "Consider horizontal scrolling within a container, stacking rows into cards, or showing fewer columns by default. Never let a table break the page width." },
-      { q: "How big should touch targets be?", a: "WCAG 2.2 sets a minimum of 24 by 24 CSS pixels with spacing exceptions; platform guidelines recommend larger targets, around 44 points on iOS and 48 dp on Android." },
-      { q: "Does responsive design affect SEO?", a: "Yes. Google uses mobile-first indexing, so the mobile version of your content is what's primarily evaluated." },
-      { q: "How is this different from making a website mobile-friendly?", a: "This guide covers design decisions: layout systems, component behavior and content priority. The mobile-friendly website guide is a practical checklist for implementing and testing a mobile-friendly site." },
+      {
+        q: "What is responsive UI design?",
+        a: "Designing interfaces that adapt their layout, content and components to different screen sizes and input methods, rather than creating separate fixed designs for each device.",
+      },
+      {
+        q: "What is mobile-first design?",
+        a: "Designing the smallest screen first, then enhancing for larger screens. It forces prioritization of the most important content and actions.",
+      },
+      {
+        q: "What breakpoints should I design for?",
+        a: "Choose breakpoints where your content needs to change layout, not around specific devices. Many teams design at a small phone width, a tablet width and a desktop width, and check sizes in between.",
+      },
+      {
+        q: "What is the difference between responsive and adaptive design?",
+        a: "Responsive layouts flow continuously with the screen size. Adaptive designs switch between a few fixed layouts. Most modern sites are responsive, sometimes with adaptive elements.",
+      },
+      {
+        q: "How should tables work on mobile?",
+        a: "Consider horizontal scrolling within a container, stacking rows into cards, or showing fewer columns by default. Never let a table break the page width.",
+      },
+      {
+        q: "How big should touch targets be?",
+        a: "WCAG 2.2 sets a minimum of 24 by 24 CSS pixels with spacing exceptions; platform guidelines recommend larger targets, around 44 points on iOS and 48 dp on Android.",
+      },
+      {
+        q: "Does responsive design affect SEO?",
+        a: "Yes. Google uses mobile-first indexing, so the mobile version of your content is what's primarily evaluated.",
+      },
+      {
+        q: "How is this different from making a website mobile-friendly?",
+        a: "This guide covers design decisions: layout systems, component behavior and content priority. The mobile-friendly website guide is a practical checklist for implementing and testing a mobile-friendly site.",
+      },
     ],
     content: [
       {
@@ -274,7 +399,12 @@ export const designPosts2: BlogPost[] = [
         body: [
           "Designing the smallest screen first forces the key question: what matters most? Once the essential content and actions work on a phone, larger screens can add space, secondary content and richer layouts. Starting from desktop tends to produce cramped, compromised mobile layouts.",
         ],
-        visual: { variant: "phone", accent: "orange", caption: "Mobile-first design decides what matters most, then larger screens add room and detail." },
+        visual: {
+          variant: "phone",
+          accent: "orange",
+          caption:
+            "Mobile-first design decides what matters most, then larger screens add room and detail.",
+        },
       },
       {
         heading: "Fluid Grids and Layout",
@@ -294,11 +424,31 @@ export const designPosts2: BlogPost[] = [
         table: {
           headers: ["Component", "Small screens", "Large screens"],
           rows: [
-            ["Navigation", "Menu button or bottom bar, few top items", "Full horizontal navigation"],
-            ["Product or card grid", "One or two columns", "Three or more columns"],
-            ["Tables", "Scroll within container or stacked cards", "Full table"],
-            ["Sidebars and filters", "Collapsible panel or sheet", "Persistent sidebar"],
-            ["Forms", "Single column, full-width inputs", "Grouped fields where logical"],
+            [
+              "Navigation",
+              "Menu button or bottom bar, few top items",
+              "Full horizontal navigation",
+            ],
+            [
+              "Product or card grid",
+              "One or two columns",
+              "Three or more columns",
+            ],
+            [
+              "Tables",
+              "Scroll within container or stacked cards",
+              "Full table",
+            ],
+            [
+              "Sidebars and filters",
+              "Collapsible panel or sheet",
+              "Persistent sidebar",
+            ],
+            [
+              "Forms",
+              "Single column, full-width inputs",
+              "Grouped fields where logical",
+            ],
             ["Media", "Cropped or reordered for focus", "Wider compositions"],
           ],
         },
@@ -310,7 +460,8 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Does your interface fall apart on smaller screens?",
-          description: "ZSpace Labs designs responsive component systems that hold up on every screen size.",
+          description:
+            "ZSpace Labs designs responsive component systems that hold up on every screen size.",
         },
       },
       {
@@ -338,7 +489,8 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want a responsive design review?",
-          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] that works across devices.",
+          description:
+            "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] that works across devices.",
         },
       },
       {
@@ -361,17 +513,48 @@ export const designPosts2: BlogPost[] = [
     date: "2026-09-25",
     readingTime: "13 min read",
     relatedServiceSlugs: ["ui-ux-design", "website-development"],
-    relatedIndustrySlugs: ["healthcare-healthtech", "education-edtech", "fintech"],
+    relatedIndustrySlugs: [
+      "healthcare-healthtech",
+      "education-edtech",
+      "fintech",
+    ],
     faqs: [
-      { q: "What is accessible design?", a: "Designing products that people with a wide range of abilities, including visual, motor, auditory and cognitive differences, can perceive, understand and use." },
-      { q: "What is WCAG?", a: "The Web Content Accessibility Guidelines published by the W3C. WCAG 2.2 is the current version, organized around being perceivable, operable, understandable and robust, with conformance levels A, AA and AAA." },
-      { q: "What contrast ratio does WCAG require?", a: "At level AA, 4.5:1 for normal text, 3:1 for large text, and 3:1 for user interface components and meaningful graphics." },
-      { q: "What is the WCAG 2.2 target size requirement?", a: "Success criterion 2.5.8 (level AA) requires pointer targets of at least 24 by 24 CSS pixels, with exceptions such as sufficient spacing, inline links and equivalent controls." },
-      { q: "Is accessibility a design or development responsibility?", a: "Both. Designers own decisions such as contrast, focus visibility, target size, reading order and error messaging; developers implement semantics and behavior. Many issues start in design." },
-      { q: "Does accessible design look worse?", a: "No. Clear contrast, readable type and obvious controls improve usability for everyone. Accessibility constrains some choices but rarely limits good visual design." },
-      { q: "How do designers annotate accessibility for developers?", a: "By specifying heading levels, reading and focus order, labels for icons and inputs, alternative text, error messages and states directly in design files." },
-      { q: "Is accessibility legally required?", a: "In many jurisdictions and sectors it is, but requirements vary. Confirm your obligations with qualified legal advice; this guide covers design practice." },
-      { q: "How is this different from the website accessibility guide?", a: "That guide covers implementation: semantic HTML, keyboard support and screen readers. This one covers the design decisions that come before code." },
+      {
+        q: "What is accessible design?",
+        a: "Designing products that people with a wide range of abilities, including visual, motor, auditory and cognitive differences, can perceive, understand and use.",
+      },
+      {
+        q: "What is WCAG?",
+        a: "The Web Content Accessibility Guidelines published by the W3C. WCAG 2.2 is the current version, organized around being perceivable, operable, understandable and robust, with conformance levels A, AA and AAA.",
+      },
+      {
+        q: "What contrast ratio does WCAG require?",
+        a: "At level AA, 4.5:1 for normal text, 3:1 for large text, and 3:1 for user interface components and meaningful graphics.",
+      },
+      {
+        q: "What is the WCAG 2.2 target size requirement?",
+        a: "Success criterion 2.5.8 (level AA) requires pointer targets of at least 24 by 24 CSS pixels, with exceptions such as sufficient spacing, inline links and equivalent controls.",
+      },
+      {
+        q: "Is accessibility a design or development responsibility?",
+        a: "Both. Designers own decisions such as contrast, focus visibility, target size, reading order and error messaging; developers implement semantics and behavior. Many issues start in design.",
+      },
+      {
+        q: "Does accessible design look worse?",
+        a: "No. Clear contrast, readable type and obvious controls improve usability for everyone. Accessibility constrains some choices but rarely limits good visual design.",
+      },
+      {
+        q: "How do designers annotate accessibility for developers?",
+        a: "By specifying heading levels, reading and focus order, labels for icons and inputs, alternative text, error messages and states directly in design files.",
+      },
+      {
+        q: "Is accessibility legally required?",
+        a: "In many jurisdictions and sectors it is, but requirements vary. Confirm your obligations with qualified legal advice; this guide covers design practice.",
+      },
+      {
+        q: "How is this different from the website accessibility guide?",
+        a: "That guide covers implementation: semantic HTML, keyboard support and screen readers. This one covers the design decisions that come before code.",
+      },
     ],
     content: [
       {
@@ -385,7 +568,12 @@ export const designPosts2: BlogPost[] = [
         body: [
           "Developers implement accessibility, but many barriers are designed in: low-contrast text, invisible focus, tiny tap targets, color-only status indicators, placeholder-only labels. This guide covers the design decisions; the [[/blogs/website-accessibility-guide|website accessibility guide]] covers implementation such as semantic HTML, keyboard support and screen readers.",
         ],
-        visual: { variant: "grid", accent: "blue", caption: "Contrast, keyboard focus, structure and motion: design decisions that determine accessibility before any code is written." },
+        visual: {
+          variant: "grid",
+          accent: "blue",
+          caption:
+            "Contrast, keyboard focus, structure and motion: design decisions that determine accessibility before any code is written.",
+        },
       },
       {
         heading: "WCAG in Brief",
@@ -396,13 +584,34 @@ export const designPosts2: BlogPost[] = [
           headers: ["Design area", "WCAG guidance (level AA unless noted)"],
           rows: [
             ["Text contrast", "4.5:1 for normal text; 3:1 for large text"],
-            ["UI and graphics contrast", "3:1 for component boundaries, states and meaningful graphics (1.4.11)"],
-            ["Use of color", "Color isn't the only way information is conveyed (1.4.1, level A)"],
-            ["Text resize and reflow", "Content works when text is enlarged and at narrow widths"],
-            ["Focus visible", "Keyboard focus is visible, and not entirely hidden by sticky elements (2.4.11)"],
-            ["Target size", "At least 24 by 24 CSS pixels, with exceptions (2.5.8)"],
-            ["Labels and instructions", "Inputs have visible labels or instructions"],
-            ["Error identification", "Errors are identified and described in text"],
+            [
+              "UI and graphics contrast",
+              "3:1 for component boundaries, states and meaningful graphics (1.4.11)",
+            ],
+            [
+              "Use of color",
+              "Color isn't the only way information is conveyed (1.4.1, level A)",
+            ],
+            [
+              "Text resize and reflow",
+              "Content works when text is enlarged and at narrow widths",
+            ],
+            [
+              "Focus visible",
+              "Keyboard focus is visible, and not entirely hidden by sticky elements (2.4.11)",
+            ],
+            [
+              "Target size",
+              "At least 24 by 24 CSS pixels, with exceptions (2.5.8)",
+            ],
+            [
+              "Labels and instructions",
+              "Inputs have visible labels or instructions",
+            ],
+            [
+              "Error identification",
+              "Errors are identified and described in text",
+            ],
           ],
         },
       },
@@ -425,7 +634,8 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want your designs reviewed for accessibility?",
-          description: "ZSpace Labs reviews interfaces against WCAG and designs accessible components that meet the standard from the start.",
+          description:
+            "ZSpace Labs reviews interfaces against WCAG and designs accessible components that meet the standard from the start.",
         },
       },
       {
@@ -472,7 +682,8 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Building an accessible product from scratch?",
-          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] with accessibility built into every component.",
+          description:
+            "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] with accessibility built into every component.",
         },
       },
       {
@@ -498,15 +709,42 @@ export const designPosts2: BlogPost[] = [
     relatedServiceSlugs: ["ui-ux-design", "cro-audit"],
     relatedIndustrySlugs: ["ecommerce", "saas-technology", "d2c-consumer"],
     faqs: [
-      { q: "What is a UX audit?", a: "A structured evaluation of a website or product's user experience that identifies usability problems and opportunities, using heuristic review, analytics, user testing and accessibility checks, and ends with prioritized recommendations." },
-      { q: "What does a UX audit include?", a: "Typically goal and context review, heuristic evaluation, analytics and funnel analysis, user testing or session analysis, accessibility and performance checks, and a prioritized findings report." },
-      { q: "How long does a UX audit take?", a: "It depends on the product's size and whether new user testing is included. A focused audit of key flows is faster than a full product audit." },
-      { q: "What is a heuristic evaluation?", a: "An expert review of an interface against established usability principles, commonly Nielsen's 10 usability heuristics." },
-      { q: "What is the difference between a UX audit and a CRO audit?", a: "A UX audit evaluates usability and experience across the product. A CRO audit focuses on conversion funnels and testing opportunities. They overlap and often run together on commercial sites." },
-      { q: "When should a business do a UX audit?", a: "Before a redesign, when conversion or engagement drops, when support tickets rise, after major feature growth, or when entering a new market." },
-      { q: "What does a UX audit deliver?", a: "A report of issues with evidence and severity, prioritized recommendations, and often annotated screenshots or quick wins that can be implemented immediately." },
-      { q: "Can I do a UX audit myself?", a: "You can run a useful self-audit with a checklist and your analytics, but an external review brings fresh eyes and experience of common patterns." },
-      { q: "How are UX audit findings prioritized?", a: "By severity, the number of users affected, business impact and effort to fix." },
+      {
+        q: "What is a UX audit?",
+        a: "A structured evaluation of a website or product's user experience that identifies usability problems and opportunities, using heuristic review, analytics, user testing and accessibility checks, and ends with prioritized recommendations.",
+      },
+      {
+        q: "What does a UX audit include?",
+        a: "Typically goal and context review, heuristic evaluation, analytics and funnel analysis, user testing or session analysis, accessibility and performance checks, and a prioritized findings report.",
+      },
+      {
+        q: "How long does a UX audit take?",
+        a: "It depends on the product's size and whether new user testing is included. A focused audit of key flows is faster than a full product audit.",
+      },
+      {
+        q: "What is a heuristic evaluation?",
+        a: "An expert review of an interface against established usability principles, commonly Nielsen's 10 usability heuristics.",
+      },
+      {
+        q: "What is the difference between a UX audit and a CRO audit?",
+        a: "A UX audit evaluates usability and experience across the product. A CRO audit focuses on conversion funnels and testing opportunities. They overlap and often run together on commercial sites.",
+      },
+      {
+        q: "When should a business do a UX audit?",
+        a: "Before a redesign, when conversion or engagement drops, when support tickets rise, after major feature growth, or when entering a new market.",
+      },
+      {
+        q: "What does a UX audit deliver?",
+        a: "A report of issues with evidence and severity, prioritized recommendations, and often annotated screenshots or quick wins that can be implemented immediately.",
+      },
+      {
+        q: "Can I do a UX audit myself?",
+        a: "You can run a useful self-audit with a checklist and your analytics, but an external review brings fresh eyes and experience of common patterns.",
+      },
+      {
+        q: "How are UX audit findings prioritized?",
+        a: "By severity, the number of users affected, business impact and effort to fix.",
+      },
     ],
     content: [
       {
@@ -526,16 +764,45 @@ export const designPosts2: BlogPost[] = [
         body: [
           "A thorough audit moves through discovery, heuristic review, analytics, user testing, prioritization and recommendations. For a detailed walkthrough of each step, see [[/blogs/how-to-conduct-a-ux-audit|how to conduct a UX audit]].",
         ],
-        visual: { variant: "rows", accent: "orange", caption: "Discover, heuristic review, analytics, user testing, prioritize, recommend." },
+        visual: {
+          variant: "rows",
+          accent: "orange",
+          caption:
+            "Discover, heuristic review, analytics, user testing, prioritize, recommend.",
+        },
         table: {
           headers: ["Step", "What happens", "Evidence produced"],
           rows: [
-            ["Discover", "Goals, audiences, key tasks and metrics agreed", "Scope and success criteria"],
-            ["Heuristic review", "Expert evaluation against usability principles", "Issues with severity ratings"],
-            ["Analytics", "Funnels, drop-offs, search, device splits", "Where problems occur"],
-            ["User testing", "Real users attempt key tasks, or session review", "Why problems occur"],
-            ["Accessibility and performance", "WCAG checks, Core Web Vitals", "Barriers and slow pages"],
-            ["Prioritize and recommend", "Rank by severity, reach, impact, effort", "Action plan"],
+            [
+              "Discover",
+              "Goals, audiences, key tasks and metrics agreed",
+              "Scope and success criteria",
+            ],
+            [
+              "Heuristic review",
+              "Expert evaluation against usability principles",
+              "Issues with severity ratings",
+            ],
+            [
+              "Analytics",
+              "Funnels, drop-offs, search, device splits",
+              "Where problems occur",
+            ],
+            [
+              "User testing",
+              "Real users attempt key tasks, or session review",
+              "Why problems occur",
+            ],
+            [
+              "Accessibility and performance",
+              "WCAG checks, Core Web Vitals",
+              "Barriers and slow pages",
+            ],
+            [
+              "Prioritize and recommend",
+              "Rank by severity, reach, impact, effort",
+              "Action plan",
+            ],
           ],
         },
       },
@@ -558,12 +825,15 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want an independent UX audit of your product or site?",
-          description: "ZSpace Labs combines heuristic review, analytics and user testing, and delivers findings prioritized by impact and effort.",
+          description:
+            "ZSpace Labs combines heuristic review, analytics and user testing, and delivers findings prioritized by impact and effort.",
         },
       },
       {
         heading: "Website UX Audit Checklist",
-        body: ["A practical checklist for reviewing a website or product. Use it to structure a self-audit or brief an external one."],
+        body: [
+          "A practical checklist for reviewing a website or product. Use it to structure a self-audit or brief an external one.",
+        ],
         checklist: [
           "Value proposition clear within the first screen",
           "Navigation labels in users' language; key pages reachable in few steps",
@@ -593,7 +863,10 @@ export const designPosts2: BlogPost[] = [
           rows: [
             ["Severity", "Does it block the task, slow it, or just irritate?"],
             ["Reach", "How many users or sessions encounter it?"],
-            ["Business impact", "Does it affect conversion, retention or support cost?"],
+            [
+              "Business impact",
+              "Does it affect conversion, retention or support cost?",
+            ],
             ["Effort", "How hard is it to fix?"],
             ["Confidence", "How strong is the evidence?"],
           ],
@@ -617,7 +890,8 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Ready to find out what's holding your product back?",
-          description: "Talk to ZSpace Labs about a [[/services/ui-ux-design|UX audit]] paired with [[/services/cro-audit|conversion analysis]].",
+          description:
+            "Talk to ZSpace Labs about a [[/services/ui-ux-design|UX audit]] paired with [[/services/cro-audit|conversion analysis]].",
         },
       },
       {
@@ -642,17 +916,50 @@ export const designPosts2: BlogPost[] = [
     relatedServiceSlugs: ["ui-ux-design", "cro-audit"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
     faqs: [
-      { q: "What is usability testing?", a: "Observing representative users as they attempt realistic tasks with a website, app or prototype, to find where the design causes confusion, errors or delay." },
-      { q: "How many users do I need for a usability test?", a: "For qualitative testing, Nielsen Norman Group recommends around five users per round for a given user group, and running several small rounds rather than one large one. For quantitative benchmarks, NN/g suggests around 20 users or more." },
-      { q: "What's the difference between moderated and unmoderated testing?", a: "In moderated tests a facilitator guides the session live and can ask follow-up questions. Unmoderated tests are completed by participants alone, usually through a testing platform, and are faster to scale." },
-      { q: "Is remote usability testing as good as in-person testing?", a: "For most websites and apps, remote testing works well and lets you reach participants in their own environment. In-person testing is better for physical products, specialist equipment, complex setups or when you need to see body language and device handling closely." },
-      { q: "Can you test a prototype?", a: "Yes. Testing prototypes before development is one of the most valuable uses of usability testing." },
-      { q: "What is the think-aloud method?", a: "Asking participants to say what they're thinking as they work through tasks, which reveals their expectations and confusion." },
-      { q: "What should a usability test task look like?", a: "A realistic scenario with a goal, such as \"Find a waterproof jacket in your size under a set budget and add it to your cart\", without telling users where to click." },
-      { q: "What metrics come from usability testing?", a: "Task success, time on task, errors, and post-task and post-test ratings such as the Single Ease Question and System Usability Scale, alongside qualitative observations. With small samples, focus on the observations." },
-      { q: "What is a usability test script?", a: "A written guide for the session: introduction and consent, warm-up questions, task scenarios in order, follow-up questions and a wrap-up, so every participant gets the same experience." },
-      { q: "How is usability testing different from A/B testing?", a: "Usability testing explains why users struggle with small samples. A/B testing measures which version performs better with large samples, but not why." },
-      { q: "Is usability testing the same as user research?", a: "It's one user research method, focused on evaluating a design rather than discovering needs." },
+      {
+        q: "What is usability testing?",
+        a: "Observing representative users as they attempt realistic tasks with a website, app or prototype, to find where the design causes confusion, errors or delay.",
+      },
+      {
+        q: "How many users do I need for a usability test?",
+        a: "For qualitative testing, Nielsen Norman Group recommends around five users per round for a given user group, and running several small rounds rather than one large one. For quantitative benchmarks, NN/g suggests around 20 users or more.",
+      },
+      {
+        q: "What's the difference between moderated and unmoderated testing?",
+        a: "In moderated tests a facilitator guides the session live and can ask follow-up questions. Unmoderated tests are completed by participants alone, usually through a testing platform, and are faster to scale.",
+      },
+      {
+        q: "Is remote usability testing as good as in-person testing?",
+        a: "For most websites and apps, remote testing works well and lets you reach participants in their own environment. In-person testing is better for physical products, specialist equipment, complex setups or when you need to see body language and device handling closely.",
+      },
+      {
+        q: "Can you test a prototype?",
+        a: "Yes. Testing prototypes before development is one of the most valuable uses of usability testing.",
+      },
+      {
+        q: "What is the think-aloud method?",
+        a: "Asking participants to say what they're thinking as they work through tasks, which reveals their expectations and confusion.",
+      },
+      {
+        q: "What should a usability test task look like?",
+        a: 'A realistic scenario with a goal, such as "Find a waterproof jacket in your size under a set budget and add it to your cart", without telling users where to click.',
+      },
+      {
+        q: "What metrics come from usability testing?",
+        a: "Task success, time on task, errors, and post-task and post-test ratings such as the Single Ease Question and System Usability Scale, alongside qualitative observations. With small samples, focus on the observations.",
+      },
+      {
+        q: "What is a usability test script?",
+        a: "A written guide for the session: introduction and consent, warm-up questions, task scenarios in order, follow-up questions and a wrap-up, so every participant gets the same experience.",
+      },
+      {
+        q: "How is usability testing different from A/B testing?",
+        a: "Usability testing explains why users struggle with small samples. A/B testing measures which version performs better with large samples, but not why.",
+      },
+      {
+        q: "Is usability testing the same as user research?",
+        a: "It's one user research method, focused on evaluating a design rather than discovering needs.",
+      },
     ],
     content: [
       {
@@ -681,9 +988,21 @@ export const designPosts2: BlogPost[] = [
           headers: ["", "Moderated", "Unmoderated"],
           rows: [
             ["Facilitator", "Present live", "None; tasks completed alone"],
-            ["Depth", "Can probe and follow up", "Limited to what participants say"],
-            ["Speed and scale", "Slower, fewer sessions", "Faster, easier to scale"],
-            ["Best for", "Complex flows, early prototypes", "Specific tasks, quick checks"],
+            [
+              "Depth",
+              "Can probe and follow up",
+              "Limited to what participants say",
+            ],
+            [
+              "Speed and scale",
+              "Slower, fewer sessions",
+              "Faster, easier to scale",
+            ],
+            [
+              "Best for",
+              "Complex flows, early prototypes",
+              "Specific tasks, quick checks",
+            ],
           ],
         },
       },
@@ -693,10 +1012,22 @@ export const designPosts2: BlogPost[] = [
         table: {
           headers: ["", "Remote", "In-person"],
           rows: [
-            ["Environment", "Participant's own device and setting", "Lab, office or on location"],
+            [
+              "Environment",
+              "Participant's own device and setting",
+              "Lab, office or on location",
+            ],
             ["Reach", "Participants anywhere", "Limited to one location"],
-            ["Observation", "Screen, voice and often face", "Full view of device handling and body language"],
-            ["Best for", "Websites and apps, distributed users", "Physical or specialist products, complex setups"],
+            [
+              "Observation",
+              "Screen, voice and often face",
+              "Full view of device handling and body language",
+            ],
+            [
+              "Best for",
+              "Websites and apps, distributed users",
+              "Physical or specialist products, complex setups",
+            ],
           ],
         },
       },
@@ -728,7 +1059,8 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want your key flows tested with real users?",
-          description: "ZSpace Labs plans, runs and analyzes usability tests, and turns findings into concrete design changes.",
+          description:
+            "ZSpace Labs plans, runs and analyzes usability tests, and turns findings into concrete design changes.",
         },
       },
       {
@@ -752,11 +1084,20 @@ export const designPosts2: BlogPost[] = [
         table: {
           headers: ["Metric", "What it measures"],
           rows: [
-            ["Task success", "Whether participants completed the task, fully, partly or not at all"],
+            [
+              "Task success",
+              "Whether participants completed the task, fully, partly or not at all",
+            ],
             ["Time on task", "How long successful attempts took"],
             ["Errors", "Wrong paths, mistakes and recoveries"],
-            ["Single Ease Question (SEQ)", "Perceived difficulty of each task, asked after the task"],
-            ["System Usability Scale (SUS)", "Overall perceived usability, a 10-item questionnaire after the test"],
+            [
+              "Single Ease Question (SEQ)",
+              "Perceived difficulty of each task, asked after the task",
+            ],
+            [
+              "System Usability Scale (SUS)",
+              "Overall perceived usability, a 10-item questionnaire after the test",
+            ],
           ],
         },
       },
@@ -817,7 +1158,8 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Want usability testing built into your process?",
-          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] with regular testing, not one-off studies.",
+          description:
+            "Talk to ZSpace Labs about [[/services/ui-ux-design|UI/UX design]] with regular testing, not one-off studies.",
         },
       },
       {
@@ -839,19 +1181,53 @@ export const designPosts2: BlogPost[] = [
     banner: "handoffflow",
     date: "2026-09-25",
     readingTime: "15 min read",
-    relatedServiceSlugs: ["ui-ux-design", "website-development", "mobile-app-development"],
+    relatedServiceSlugs: [
+      "ui-ux-design",
+      "website-development",
+      "mobile-app-development",
+    ],
     relatedIndustrySlugs: ["saas-technology", "fintech", "ecommerce"],
     faqs: [
-      { q: "What is design handoff?", a: "The process of transferring design decisions to developers so they can build the product as intended, including specifications, assets, component details, states and behaviour. It works best as ongoing collaboration rather than a single transfer." },
-      { q: "What should a design handoff include?", a: "Final screens with all states, responsive behaviour, component specifications, design tokens, typography and spacing, interaction and animation notes, accessibility annotations, assets, real content examples and edge cases." },
-      { q: "What are design tokens?", a: "Named values for design decisions such as colours, typography, spacing and radii, shared between design and code so both use the same source of truth." },
-      { q: "What is design QA?", a: "Reviewing the implemented product against the design before release, checking layout, states, behaviour and accessibility, and logging differences to fix." },
-      { q: "How do you hand off Figma designs to developers?", a: "Separate final designs from explorations, mark frames ready for development, build with components and variables that map to code, annotate behaviour, and walk developers through the flows. Figma's Dev Mode supports inspection, annotations and change comparison on paid plans." },
-      { q: "Should designers and developers work together earlier?", a: "Yes. Involving developers during exploration catches feasibility issues early and makes handoff a continuation rather than a surprise." },
-      { q: "Why do built products look different from designs?", a: "Common causes are missing states, undefined responsive behaviour, one-off styles outside the design system, unclear specs, late design changes and no design review during development." },
-      { q: "How should design changes be handled after handoff?", a: "Version approved designs, communicate changes explicitly with what changed and why, update the related tickets, and avoid silently editing frames developers are already building from." },
-      { q: "What questions do developers usually ask at handoff?", a: "What happens on error, with long or missing content, on slow networks, between breakpoints, for users without permission, and which existing components to reuse." },
-      { q: "What tools help with handoff?", a: "Design tools with inspect or developer modes, shared component libraries, token pipelines, component workshops such as Storybook and issue trackers. The practices matter more than the specific tools." },
+      {
+        q: "What is design handoff?",
+        a: "The process of transferring design decisions to developers so they can build the product as intended, including specifications, assets, component details, states and behaviour. It works best as ongoing collaboration rather than a single transfer.",
+      },
+      {
+        q: "What should a design handoff include?",
+        a: "Final screens with all states, responsive behaviour, component specifications, design tokens, typography and spacing, interaction and animation notes, accessibility annotations, assets, real content examples and edge cases.",
+      },
+      {
+        q: "What are design tokens?",
+        a: "Named values for design decisions such as colours, typography, spacing and radii, shared between design and code so both use the same source of truth.",
+      },
+      {
+        q: "What is design QA?",
+        a: "Reviewing the implemented product against the design before release, checking layout, states, behaviour and accessibility, and logging differences to fix.",
+      },
+      {
+        q: "How do you hand off Figma designs to developers?",
+        a: "Separate final designs from explorations, mark frames ready for development, build with components and variables that map to code, annotate behaviour, and walk developers through the flows. Figma's Dev Mode supports inspection, annotations and change comparison on paid plans.",
+      },
+      {
+        q: "Should designers and developers work together earlier?",
+        a: "Yes. Involving developers during exploration catches feasibility issues early and makes handoff a continuation rather than a surprise.",
+      },
+      {
+        q: "Why do built products look different from designs?",
+        a: "Common causes are missing states, undefined responsive behaviour, one-off styles outside the design system, unclear specs, late design changes and no design review during development.",
+      },
+      {
+        q: "How should design changes be handled after handoff?",
+        a: "Version approved designs, communicate changes explicitly with what changed and why, update the related tickets, and avoid silently editing frames developers are already building from.",
+      },
+      {
+        q: "What questions do developers usually ask at handoff?",
+        a: "What happens on error, with long or missing content, on slow networks, between breakpoints, for users without permission, and which existing components to reuse.",
+      },
+      {
+        q: "What tools help with handoff?",
+        a: "Design tools with inspect or developer modes, shared component libraries, token pipelines, component workshops such as Storybook and issue trackers. The practices matter more than the specific tools.",
+      },
     ],
     content: [
       {
@@ -918,10 +1294,16 @@ export const designPosts2: BlogPost[] = [
         table: {
           headers: ["State", "Examples to design"],
           rows: [
-            ["Interactive", "Default, hover, focus, pressed, disabled, selected"],
+            [
+              "Interactive",
+              "Default, hover, focus, pressed, disabled, selected",
+            ],
             ["Data", "Empty, loading, partial, full, overflowing"],
             ["Outcome", "Success, warning, error, offline"],
-            ["Content", "Long text, missing image, zero, very large numbers, other languages"],
+            [
+              "Content",
+              "Long text, missing image, zero, very large numbers, other languages",
+            ],
             ["Permission", "View-only, no access, upgrade required"],
           ],
         },
@@ -933,7 +1315,8 @@ export const designPosts2: BlogPost[] = [
         ],
         cta: {
           title: "Tired of designs and builds not matching?",
-          description: "ZSpace Labs runs design and engineering as one team, so handoff is continuous rather than a hand-over.",
+          description:
+            "ZSpace Labs runs design and engineering as one team, so handoff is continuous rather than a hand-over.",
         },
       },
       {
@@ -1010,17 +1393,33 @@ export const designPosts2: BlogPost[] = [
         table: {
           headers: ["Problem", "Fix"],
           rows: [
-            ["Only the happy path designed", "State matrix per component and screen"],
-            ["No responsive specification", "Auto layout, constraints and written reflow rules"],
+            [
+              "Only the happy path designed",
+              "State matrix per component and screen",
+            ],
+            [
+              "No responsive specification",
+              "Auto layout, constraints and written reflow rules",
+            ],
             ["One-off styles", "Tokens and design system components only"],
-            ["Specs in documents that go stale", "Annotations beside components in the design file"],
-            ["Late, silent design changes", "Versioning and explicit change notes"],
-            ["No designer involvement during build", "Scheduled design QA and a shared channel"],
+            [
+              "Specs in documents that go stale",
+              "Annotations beside components in the design file",
+            ],
+            [
+              "Late, silent design changes",
+              "Versioning and explicit change notes",
+            ],
+            [
+              "No designer involvement during build",
+              "Scheduled design QA and a shared channel",
+            ],
           ],
         },
         cta: {
           title: "Want a smoother path from design to production?",
-          description: "Talk to ZSpace Labs about [[/services/ui-ux-design|design]] and [[/services/website-development|development]] delivered by one team.",
+          description:
+            "Talk to ZSpace Labs about [[/services/ui-ux-design|design]] and [[/services/website-development|development]] delivered by one team.",
         },
       },
       {

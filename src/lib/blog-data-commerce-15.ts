@@ -210,7 +210,7 @@ export const commercePosts15: BlogPost[] = [
       {
         heading: "The Digital Shelf",
         body: [
-          "In a physical store, merchandisers decide what goes at eye level. Online, the equivalent is the first rows of a category, the first results for a search, the homepage and the modules on product pages. Shoppers see only a small window at a time, so these decisions shape sales more directly online. The diagram above groups the levers. For planning which products to push and when, see [[/blogs/ecommerce-product-merchandising|product merchandising strategy]].",
+          "In a physical store, merchandisers decide what goes at eye level. Online, the equivalent is the first rows of a category, the first results for a search, the homepage and the modules on product pages. Shoppers see only a small window at a time, so these decisions shape sales more directly online. For planning which products to push and when, see [[/blogs/ecommerce-product-merchandising|product merchandising strategy]].",
         ],
       },
       {
@@ -405,7 +405,7 @@ export const commercePosts15: BlogPost[] = [
       {
         heading: "Step 3: Plan Placements",
         body: [
-          "For each period, decide what appears on the homepage, which products lead key categories, which search terms get boosts, and what email features. The diagram above shows how placement sits between the calendar and pricing in the cycle.",
+          "For each period, decide what appears on the homepage, which products lead key categories, which search terms get boosts, and what email features. In short, think of how placement sits between the calendar and pricing in the cycle.",
         ],
         cta: {
           title: "Want a merchandising plan your team can run?",
@@ -555,7 +555,7 @@ export const commercePosts15: BlogPost[] = [
       {
         heading: "Bundle Types",
         body: [
-          "The diagram above compares five types. Choose by the shopper problem you're solving, not by which app is easiest to install.",
+          "Choose by the shopper problem you're solving, not by which app is easiest to install.",
         ],
       },
       {

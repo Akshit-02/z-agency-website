@@ -96,7 +96,7 @@ export const commercePosts6: BlogPost[] = [
       {
         heading: "Size Selection and Fit Guidance",
         body: [
-          "The diagram above shows a fashion product page built around sizing. The size selector should show every size with its stock status, flag low stock honestly, and never let a shopper add a size that's unavailable. Put fit guidance next to the selector: a summary such as “runs small, consider sizing up” drawn from reviews, a link to the size chart with garment measurements, and the model's size.",
+          "The size selector should show every size with its stock status, flag low stock honestly, and never let a shopper add a size that's unavailable. Put fit guidance next to the selector: a summary such as “runs small, consider sizing up” drawn from reviews, a link to the size chart with garment measurements, and the model's size.",
         ],
         table: {
           headers: ["Fit aid", "Helps when"],
@@ -456,7 +456,7 @@ export const commercePosts6: BlogPost[] = [
       {
         heading: "Product Pages: Education First",
         body: [
-          "The diagram above shows a beauty product page built for education. Near the top: what the product does, who it suits, key ingredients and size with price per unit. Below: how to use, where it fits in a routine, the full ingredient list, and reviews. Texture images and short application videos show what the product is like to use. See [[/blogs/ecommerce-product-page-design|ecommerce product page design]].",
+          "Near the top: what the product does, who it suits, key ingredients and size with price per unit. Below: how to use, where it fits in a routine, the full ingredient list, and reviews. Texture images and short application videos show what the product is like to use. See [[/blogs/ecommerce-product-page-design|ecommerce product page design]].",
         ],
         table: {
           headers: ["Section", "Content"],
@@ -774,7 +774,7 @@ export const commercePosts6: BlogPost[] = [
       {
         heading: "Materials, Stones and Certification",
         body: [
-          "The diagram above shows where certification sits: next to the imagery, not hidden in a tab. State metal type and purity, plating thickness for plated pieces, stone type and whether natural or lab-grown, and stone characteristics where relevant. For certified stones, show the certifying body and report number, and link to the certificate so shoppers can verify it. Only claim certifications and hallmarks you can document.",
+          "In short, think of where certification sits: next to the imagery, not hidden in a tab. State metal type and purity, plating thickness for plated pieces, stone type and whether natural or lab-grown, and stone characteristics where relevant. For certified stones, show the certifying body and report number, and link to the certificate so shoppers can verify it. Only claim certifications and hallmarks you can document.",
         ],
         table: {
           headers: ["Detail", "Why it matters"],

@@ -48,7 +48,7 @@ export const commercePosts11: BlogPost[] = [
       },
       {
         heading: "Three Types of Breadcrumb",
-        body: ["The diagram above compares them."],
+        body: [""],
         table: {
           headers: ["Type", "Shows", "Use"],
           rows: [
@@ -303,7 +303,7 @@ export const commercePosts11: BlogPost[] = [
       },
       {
         heading: "Designing the 404 Page",
-        body: ["The diagram above shows the essentials."],
+        body: [""],
         checklist: [
           "The site's normal header, navigation and footer",
           "A short, plain message: the page wasn't found or has moved",

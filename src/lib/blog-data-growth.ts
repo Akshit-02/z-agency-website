@@ -49,7 +49,7 @@ export const growthPosts: BlogPost[] = [
       {
         heading: "The D2C Conversion Funnel",
         body: [
-          "The diagram above shows a typical D2C path: an ad or social post, a landing or product page, proof and offer, cart, checkout and then a repeat order. Measure each step separately, because a blended conversion rate hides where the problem is.",
+          "In short, think of a typical D2C path: an ad or social post, a landing or product page, proof and offer, cart, checkout and then a repeat order. Measure each step separately, because a blended conversion rate hides where the problem is.",
         ],
         table: {
           headers: ["Stage", "Question to answer", "Evidence"],
@@ -209,7 +209,7 @@ export const growthPosts: BlogPost[] = [
       {
         heading: "Product Positioning",
         body: [
-          "Visitors should understand within seconds what the product is, who it's for and why it's different. Write the headline around the outcome or benefit, support it with one line on who it suits, and state the difference concretely: an ingredient, a material, a design decision or a use case competitors don't serve. The diagram above shows this at the top of the buy area, before price and options.",
+          "Visitors should understand within seconds what the product is, who it's for and why it's different. Write the headline around the outcome or benefit, support it with one line on who it suits, and state the difference concretely: an ingredient, a material, a design decision or a use case competitors don't serve. In short, think of this at the top of the buy area, before price and options.",
         ],
       },
       {
@@ -368,7 +368,7 @@ export const growthPosts: BlogPost[] = [
       {
         heading: "Why D2C Mobile Is Its Own Problem",
         body: [
-          "General mobile ecommerce advice, covered in [[/blogs/mobile-ecommerce-ux|mobile ecommerce UX]], applies to D2C brands too. What's different is the entry point. Many D2C visitors don't search or browse a catalog; they tap an ad or a creator's link, meet the brand for the first time and decide within a few screens. The diagram above shows that path, including the moment when an in-app browser can get in the way.",
+          "General mobile ecommerce advice, covered in [[/blogs/mobile-ecommerce-ux|mobile ecommerce UX]], applies to D2C brands too. What's different is the entry point. Many D2C visitors don't search or browse a catalog; they tap an ad or a creator's link, meet the brand for the first time and decide within a few screens. In short, think of that path, including the moment when an in-app browser can get in the way.",
         ],
       },
       {
@@ -579,7 +579,7 @@ export const growthPosts: BlogPost[] = [
       },
       {
         heading: "The Redesign Process",
-        body: ["The diagram above shows the sequence: signals, diagnosis, the redesign-or-replatform decision, design and build, migration and redirects, then optimization."],
+        body: ["In short, think of the sequence: signals, diagnosis, the redesign-or-replatform decision, design and build, migration and redirects, then optimization."],
         table: {
           headers: ["Phase", "Key output"],
           rows: [
@@ -670,7 +670,7 @@ export const growthPosts: BlogPost[] = [
       {
         heading: "Diagnose Before You Redesign",
         body: [
-          "“No sales” is a symptom with many possible causes, and the most expensive response, a redesign, fixes only some of them. A store can be well designed and still fail because the traffic is wrong, a payment method is broken on one device or delivery costs appear only at the end. The framework below, shown in the diagram above, works through the journey in order and uses evidence at each stage.",
+          "“No sales” is a symptom with many possible causes, and the most expensive response, a redesign, fixes only some of them. A store can be well designed and still fail because the traffic is wrong, a payment method is broken on one device or delivery costs appear only at the end. The framework below works through the journey in order and uses evidence at each stage.",
         ],
       },
       {
@@ -833,7 +833,7 @@ export const growthPosts: BlogPost[] = [
       },
       {
         heading: "The Product Page Diagnostic",
-        body: ["The diagram above shows the six questions in order. Each maps to specific causes and evidence."],
+        body: ["Each maps to specific causes and evidence."],
         table: {
           headers: ["Question", "Causes to look for", "Evidence"],
           rows: [

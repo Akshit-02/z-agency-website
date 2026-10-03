@@ -47,7 +47,7 @@ export const commercePosts33: BlogPost[] = [
         heading: "What Makes a Marketplace Multi-Vendor",
         body: [
           "In a single-brand store, one business owns the stock, the prices and the customer relationship. In a multi-vendor marketplace, the operator owns the platform and the rules, while each seller owns their inventory and usually their fulfilment. The operator earns commissions or fees rather than product margin. That shift changes almost every system: product data comes from many sources, orders contain items from several sellers, money must be split, and trust depends on how well the operator governs sellers.",
-          "The diagram above groups the model into four areas: the seller lifecycle, catalog ownership, day-to-day operations and governance. Each area is a set of decisions that the software then encodes. For the full technical build, see [[/blogs/marketplace-website-development|marketplace ecommerce website development]].",
+          "In short, the approach groups the model into four areas: the seller lifecycle, catalog ownership, day-to-day operations and governance. Each area is a set of decisions that the software then encodes. For the full technical build, see [[/blogs/marketplace-website-development|marketplace ecommerce website development]].",
         ],
       },
       {
@@ -298,7 +298,7 @@ export const commercePosts33: BlogPost[] = [
         heading: "Why Marketplace Discovery Is Different",
         body: [
           "A single-brand store controls every product title, image and attribute. A marketplace receives product data from hundreds or thousands of sellers, each with their own habits. One seller calls it “Wireless Earbuds Black”, another “BT headphones in-ear, blk”. Some fill in every attribute; others leave half blank. The same item may be listed twenty times. Discovery design on a marketplace is therefore as much about data as about interface.",
-          "The diagram above groups discovery into structure, offers, signals and merchandising. For the general principles of discovery, see [[/blogs/ecommerce-product-discovery|ecommerce product discovery]]; for how marketplaces fit together overall, see [[/blogs/multi-vendor-ecommerce-marketplace|multi-vendor ecommerce marketplace]].",
+          "In short, the approach groups discovery into structure, offers, signals and merchandising. For the general principles of discovery, see [[/blogs/ecommerce-product-discovery|ecommerce product discovery]]; for how marketplaces fit together overall, see [[/blogs/multi-vendor-ecommerce-marketplace|multi-vendor ecommerce marketplace]].",
         ],
       },
       {

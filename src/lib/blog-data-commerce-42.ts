@@ -242,7 +242,7 @@ export const commercePosts42: BlogPost[] = [
       {
         heading: "What “Outdated” Actually Means",
         body: [
-          "A store can look fine and still be outdated underneath, or look dated while running on a perfectly capable platform. Separate the symptoms: customer-facing problems (slow, awkward on mobile, inaccessible, hard to search), team-facing problems (changes take weeks, deployments are risky, manual workarounds everywhere) and risk problems (unsupported versions, unpatched dependencies, fragile integrations). The diagram above maps modernization across UX, frontend, backend and operations. For deciding between redesign and rebuild, see [[/blogs/website-redesign-vs-rebuild|redesign vs rebuild]].",
+          "A store can look fine and still be outdated underneath, or look dated while running on a perfectly capable platform. Separate the symptoms: customer-facing problems (slow, awkward on mobile, inaccessible, hard to search), team-facing problems (changes take weeks, deployments are risky, manual workarounds everywhere) and risk problems (unsupported versions, unpatched dependencies, fragile integrations). This guide maps modernization across UX, frontend, backend and operations. For deciding between redesign and rebuild, see [[/blogs/website-redesign-vs-rebuild|redesign vs rebuild]].",
         ],
       },
       {

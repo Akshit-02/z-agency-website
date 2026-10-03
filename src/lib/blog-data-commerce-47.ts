@@ -44,7 +44,7 @@ export const commercePosts47: BlogPost[] = [
       {
         heading: "Why Furniture Is Hard to Sell Online",
         body: [
-          "Shoppers can't sit on a sofa or feel a fabric online, and mistakes are expensive to return. They need exact dimensions, accurate materials, realistic imagery and certainty about delivery and assembly. Operationally, furniture involves configurations, made-to-order production and freight logistics that parcel-based ecommerce setups don't handle well. The diagram above shows the four areas of the build. For the page-level UX, see [[/blogs/furniture-ecommerce-website-design|furniture ecommerce website design]].",
+          "Shoppers can't sit on a sofa or feel a fabric online, and mistakes are expensive to return. They need exact dimensions, accurate materials, realistic imagery and certainty about delivery and assembly. Operationally, furniture involves configurations, made-to-order production and freight logistics that parcel-based ecommerce setups don't handle well. For the page-level UX, see [[/blogs/furniture-ecommerce-website-design|furniture ecommerce website design]].",
         ],
       },
       {
@@ -369,7 +369,7 @@ export const commercePosts47: BlogPost[] = [
       {
         heading: "Four Zones",
         body: [
-          "The diagram above groups the page into see it, size it, choose it and get it. Size is highlighted because size mistakes drive the costliest returns. For the shopper journey around the page, see [[/blogs/furniture-ecommerce-ux|furniture ecommerce UX]].",
+          "In short, the approach groups the page into see it, size it, choose it and get it. Size is highlighted because size mistakes drive the costliest returns. For the shopper journey around the page, see [[/blogs/furniture-ecommerce-ux|furniture ecommerce UX]].",
         ],
       },
       {
@@ -662,7 +662,7 @@ export const commercePosts47: BlogPost[] = [
       {
         heading: "Why Furniture Filters Are Different",
         body: [
-          "Furniture shoppers filter by constraints: the space they have, the number of people to seat, the style of their home, the date they need it. Those constraints map to data that general stores rarely have, such as dimensions, capacity and lead times. The diagram above shows a filter taxonomy for furniture. For general filter UX, see [[/blogs/ecommerce-filters|ecommerce product filters]].",
+          "Furniture shoppers filter by constraints: the space they have, the number of people to seat, the style of their home, the date they need it. Those constraints map to data that general stores rarely have, such as dimensions, capacity and lead times. For general filter UX, see [[/blogs/ecommerce-filters|ecommerce product filters]].",
         ],
       },
       {

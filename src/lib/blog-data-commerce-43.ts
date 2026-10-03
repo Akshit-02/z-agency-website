@@ -43,7 +43,7 @@ export const commercePosts43: BlogPost[] = [
       {
         heading: "Why Audit",
         body: [
-          "Commerce stacks grow by accumulation: an app here, an integration there, a customization to solve a one-off problem. Over time, nobody has the full picture, changes slow down and incidents repeat. An audit restores the picture and turns vague frustration (“the site is a mess”) into specific, prioritized decisions. The diagram above shows the four areas and the scoring approach. For the architecture concepts behind the audit, see [[/blogs/ecommerce-website-architecture|ecommerce website architecture]] and [[/blogs/ecommerce-technology-stack|ecommerce technology stack]].",
+          "Commerce stacks grow by accumulation: an app here, an integration there, a customization to solve a one-off problem. Over time, nobody has the full picture, changes slow down and incidents repeat. An audit restores the picture and turns vague frustration (“the site is a mess”) into specific, prioritized decisions. For the architecture concepts behind the audit, see [[/blogs/ecommerce-website-architecture|ecommerce website architecture]] and [[/blogs/ecommerce-technology-stack|ecommerce technology stack]].",
         ],
       },
       {
@@ -358,7 +358,7 @@ export const commercePosts43: BlogPost[] = [
       {
         heading: "Dimensions of Scale",
         body: [
-          "Ecommerce grows along more dimensions than traffic. More products stress catalog management, search indexing and feeds; more orders stress fulfilment, integrations and finance; more markets add pricing, content and tax rules; more channels add inventory synchronization; peaks such as launches and sales compress load into minutes. The diagram above groups the technical levers into edge, application, data and asynchronous integrations. For general web architecture, see [[/blogs/scalable-website-architecture|scalable website architecture]].",
+          "Ecommerce grows along more dimensions than traffic. More products stress catalog management, search indexing and feeds; more orders stress fulfilment, integrations and finance; more markets add pricing, content and tax rules; more channels add inventory synchronization; peaks such as launches and sales compress load into minutes. In short, the approach groups the technical levers into edge, application, data and asynchronous integrations. For general web architecture, see [[/blogs/scalable-website-architecture|scalable website architecture]].",
         ],
         table: {
           headers: ["Dimension", "What it stresses"],

@@ -45,7 +45,7 @@ export const commercePosts14: BlogPost[] = [
       {
         heading: "What AI Adds to Personalization",
         body: [
-          "Personalization strategy, from signals to placements to measurement, is covered in [[/blogs/ecommerce-personalization|ecommerce personalization]]. AI changes the decision layer: instead of people writing rules for each segment, models learn which products and content each shopper is likely to want. The diagram above shows the system: data, models, surfaces and guardrails.",
+          "Personalization strategy, from signals to placements to measurement, is covered in [[/blogs/ecommerce-personalization|ecommerce personalization]]. AI changes the decision layer: instead of people writing rules for each segment, models learn which products and content each shopper is likely to want. In short, think of the system: data, models, surfaces and guardrails.",
         ],
       },
       {
@@ -235,7 +235,7 @@ export const commercePosts14: BlogPost[] = [
       {
         heading: "Model Families",
         body: [
-          "The diagram above compares the main families. In practice, systems combine several: for example, embeddings for similar items, co-purchase for complements and a ranking model on top.",
+          "In practice, systems combine several: for example, embeddings for similar items, co-purchase for complements and a ranking model on top.",
         ],
       },
       {
@@ -421,7 +421,7 @@ export const commercePosts14: BlogPost[] = [
       {
         heading: "The Retention Loop",
         body: [
-          "The diagram above shows the loop: first order, delivery and onboarding, the customer getting value from the product, a timely reminder, the second order and loyalty. A break anywhere, such as a late delivery, a confusing product or a mistimed email, stops the loop.",
+          "In short, think of the loop: first order, delivery and onboarding, the customer getting value from the product, a timely reminder, the second order and loyalty. A break anywhere, such as a late delivery, a confusing product or a mistimed email, stops the loop.",
         ],
       },
       {
@@ -611,7 +611,7 @@ export const commercePosts14: BlogPost[] = [
       {
         heading: "The Post-Purchase Journey",
         body: [
-          "The diagram above shows the path from order to second order. Each step builds confidence: accurate shipping updates, a product that arrives as described, guidance on using it, and a reminder when the customer is likely to need more.",
+          "Each step builds confidence: accurate shipping updates, a product that arrives as described, guidance on using it, and a reminder when the customer is likely to need more.",
         ],
         table: {
           headers: ["Moment", "Helpful touchpoint"],

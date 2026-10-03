@@ -199,7 +199,7 @@ export const commercePosts10: BlogPost[] = [
       {
         heading: "Designing the Comparison Table",
         body: [
-          "The diagram above shows the essentials: products as columns with image, name, price and add-to-cart; attributes as rows, grouped and in consistent units; and a toggle to show only differences. Keep product headers sticky while scrolling, put the attributes that decide the purchase first, and explain technical terms inline.",
+          "In short, think of the essentials: products as columns with image, name, price and add-to-cart; attributes as rows, grouped and in consistent units; and a toggle to show only differences. Keep product headers sticky while scrolling, put the attributes that decide the purchase first, and explain technical terms inline.",
         ],
         table: {
           headers: ["Element", "Guidance"],
@@ -344,7 +344,6 @@ export const commercePosts10: BlogPost[] = [
       {
         heading: "Design Rules",
         body: [
-          "The diagram above shows a well-formed quick view.",
         ],
         checklist: [
           "Open it with a labelled button, not only on hover",
@@ -452,7 +451,7 @@ export const commercePosts10: BlogPost[] = [
       },
       {
         heading: "Card Anatomy",
-        body: ["The diagram above annotates a card. Each element earns its place differently."],
+        body: ["Each element earns its place differently."],
         table: {
           headers: ["Element", "Guidance"],
           rows: [
@@ -603,7 +602,7 @@ export const commercePosts10: BlogPost[] = [
       {
         heading: "Structure and Grouping",
         body: [
-          "The diagram above shows a typical panel: columns for product-type groups, a column for “shop by” routes such as new in and edits, a small promo and a shop-all link. Put the most important or most used group top left, keep group labels short, and order links by importance or by an inherent order such as size.",
+          "In short, think of a typical panel: columns for product-type groups, a column for “shop by” routes such as new in and edits, a small promo and a shop-all link. Put the most important or most used group top left, keep group labels short, and order links by importance or by an inherent order such as size.",
         ],
         checklist: [
           "Three to five columns of related links",

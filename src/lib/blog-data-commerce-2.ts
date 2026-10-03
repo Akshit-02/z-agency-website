@@ -619,7 +619,7 @@ export const commercePosts2: BlogPost[] = [
       {
         heading: "Shopify URL Patterns and What Gets Crawled",
         body: [
-          "Collections produce several URL patterns. Shopify's default robots.txt handles some of them (Shopify Help Center). The diagram above summarizes them.",
+          "Collections produce several URL patterns. Shopify's default robots.txt handles some of them (Shopify Help Center).",
         ],
         table: {
           headers: ["URL", "Default treatment", "What to do"],

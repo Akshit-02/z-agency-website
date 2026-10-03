@@ -205,7 +205,7 @@ export const commercePosts29: BlogPost[] = [
       {
         heading: "Why B2B Pricing Is Different",
         body: [
-          "In B2C, most shoppers see the same price. In B2B, two buyers looking at the same product can see different prices because of contracts, price lists, volume, pack size and currency. A price mismatch between website and invoice erodes trust and creates disputes. The diagram above compares the common pricing models, how each works and what to watch out for.",
+          "In B2C, most shoppers see the same price. In B2B, two buyers looking at the same product can see different prices because of contracts, price lists, volume, pack size and currency. A price mismatch between website and invoice erodes trust and creates disputes. This guide compares the common pricing models, how each works and what to watch out for.",
         ],
       },
       {

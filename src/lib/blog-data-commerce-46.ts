@@ -353,7 +353,7 @@ export const commercePosts46: BlogPost[] = [
       {
         heading: "Why Mobile Is Different for Electronics",
         body: [
-          "Electronics decisions depend on dense information designed for large screens: spec tables, comparison grids, compatibility lists. On a phone, that information must be restructured, not just shrunk. The diagram above groups mobile patterns into browsing, specs, comparison and buying. For general mobile guidance, see [[/blogs/mobile-ecommerce-ux|mobile ecommerce UX]].",
+          "Electronics decisions depend on dense information designed for large screens: spec tables, comparison grids, compatibility lists. On a phone, that information must be restructured, not just shrunk. In short, the approach groups mobile patterns into browsing, specs, comparison and buying. For general mobile guidance, see [[/blogs/mobile-ecommerce-ux|mobile ecommerce UX]].",
         ],
       },
       {

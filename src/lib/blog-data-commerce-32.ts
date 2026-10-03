@@ -241,7 +241,7 @@ export const commercePosts32: BlogPost[] = [
       {
         heading: "The Integration Landscape",
         body: [
-          "The diagram above groups the systems a store connects to into core commerce, operations, customer and growth. Each connection has its own data, timing and failure modes. For general website integrations, see [[/blogs/website-api-integration|website API integration]]; for Shopify specifically, see [[/blogs/shopify-business-systems-integration-guide|Shopify business systems integration]].",
+          "In short, the approach groups the systems a store connects to into core commerce, operations, customer and growth. Each connection has its own data, timing and failure modes. For general website integrations, see [[/blogs/website-api-integration|website API integration]]; for Shopify specifically, see [[/blogs/shopify-business-systems-integration-guide|Shopify business systems integration]].",
         ],
         table: {
           headers: ["Group", "Systems", "Guide"],
@@ -410,7 +410,7 @@ export const commercePosts32: BlogPost[] = [
       {
         heading: "How Headless Works",
         body: [
-          "The diagram above shows the layers. Touchpoints (web storefront, mobile app, kiosk) sit on a front-end framework and CDN. An edge, backend-for-frontend or API gateway calls the services: the commerce engine (catalog, cart, checkout), CMS, search and recommendations, and payments. An integration layer of middleware, events and webhooks connects back-office systems such as ERP, OMS, WMS, CRM and analytics. In a traditional theme, the platform renders the storefront; in headless, you own the front end, its hosting and the layer that calls the services.",
+          "Touchpoints (web storefront, mobile app, kiosk) sit on a front-end framework and CDN. An edge, backend-for-frontend or API gateway calls the services: the commerce engine (catalog, cart, checkout), CMS, search and recommendations, and payments. An integration layer of middleware, events and webhooks connects back-office systems such as ERP, OMS, WMS, CRM and analytics. In a traditional theme, the platform renders the storefront; in headless, you own the front end, its hosting and the layer that calls the services.",
           "For general concepts, see [[/blogs/headless-website-development|headless website development]] and [[/blogs/monolithic-vs-headless-architecture|monolithic vs headless architecture]].",
         ],
       },
@@ -735,7 +735,7 @@ export const commercePosts32: BlogPost[] = [
       {
         heading: "The Layers of an Ecommerce Stack",
         body: [
-          "The diagram above groups the stack into platform, experience, operations, and data and growth. Not every business needs a separate tool in every box; an all-in-one platform covers many of them. For architectural patterns, see [[/blogs/ecommerce-website-architecture|ecommerce website architecture]].",
+          "In short, the approach groups the stack into platform, experience, operations, and data and growth. Not every business needs a separate tool in every box; an all-in-one platform covers many of them. For architectural patterns, see [[/blogs/ecommerce-website-architecture|ecommerce website architecture]].",
         ],
         table: {
           headers: ["Layer", "Components", "Often provided by platform?"],

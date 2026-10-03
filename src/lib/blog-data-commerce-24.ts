@@ -196,7 +196,7 @@ export const commercePosts24: BlogPost[] = [
       {
         heading: "The Beauty Journey",
         body: [
-          "The diagram above shows the journey as a loop: results and reviews feed the next recommendation. Page-level design is in [[/blogs/beauty-ecommerce-website-design|beauty ecommerce website design]]; the build in [[/blogs/beauty-ecommerce-website-development|beauty ecommerce development]].",
+          "In short, think of the journey as a loop: results and reviews feed the next recommendation. Page-level design is in [[/blogs/beauty-ecommerce-website-design|beauty ecommerce website design]]; the build in [[/blogs/beauty-ecommerce-website-development|beauty ecommerce development]].",
         ],
         table: {
           headers: ["Stage", "Shopper's question", "UX response"],
@@ -353,7 +353,7 @@ export const commercePosts24: BlogPost[] = [
       {
         heading: "How Skincare Shoppers Decide",
         body: [
-          "Skincare shoppers ask: is this right for my skin, will it work with what I already use, is it safe for me, and how long before I see results? The diagram above groups the store's answers. For beauty broadly, see [[/blogs/beauty-ecommerce-website-design|beauty ecommerce design]].",
+          "Skincare shoppers ask: is this right for my skin, will it work with what I already use, is it safe for me, and how long before I see results? For beauty broadly, see [[/blogs/beauty-ecommerce-website-design|beauty ecommerce design]].",
         ],
       },
       {
@@ -497,7 +497,7 @@ export const commercePosts24: BlogPost[] = [
       {
         heading: "Four Zones",
         body: [
-          "The diagram above divides the page into suitability, ingredients, use and proof. Near the top: name, price, rating, shade or size selection, suitability summary and add to bag. Below: ingredients, how to use, routine pairing and reviews. For beauty design broadly, see [[/blogs/beauty-ecommerce-website-design|beauty ecommerce design]].",
+          "In short, the approach divides the page into suitability, ingredients, use and proof. Near the top: name, price, rating, shade or size selection, suitability summary and add to bag. Below: ingredients, how to use, routine pairing and reviews. For beauty design broadly, see [[/blogs/beauty-ecommerce-website-design|beauty ecommerce design]].",
         ],
       },
       {
@@ -642,7 +642,7 @@ export const commercePosts24: BlogPost[] = [
       {
         heading: "The Beauty Conversion Path",
         body: [
-          "The diagram above shows the path from a concern-led landing page to reorder. Each step addresses a specific doubt. For D2C CRO in general, see [[/blogs/d2c-conversion-rate-optimization|D2C conversion rate optimization]].",
+          "In short, think of the path from a concern-led landing page to reorder. Each step addresses a specific doubt. For D2C CRO in general, see [[/blogs/d2c-conversion-rate-optimization|D2C conversion rate optimization]].",
         ],
         table: {
           headers: ["Step", "Doubt", "Fix"],

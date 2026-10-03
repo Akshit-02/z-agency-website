@@ -198,7 +198,7 @@ export const commercePosts9: BlogPost[] = [
       {
         heading: "Discovery Is More Than Navigation",
         body: [
-          "The diagram above shows the routes shoppers use to reach the right product. Menus are one; search, filters, recommendations, merchandising, quizzes and content are others. All of them depend on the same thing: product data. This guide looks at discovery as a system. For menus specifically, see [[/blogs/ecommerce-navigation-design|ecommerce navigation]]; for the search engine behind the box, see [[/blogs/ecommerce-site-search|ecommerce site search]].",
+          "Menus are one; search, filters, recommendations, merchandising, quizzes and content are others. All of them depend on the same thing: product data. This guide looks at discovery as a system. For menus specifically, see [[/blogs/ecommerce-navigation-design|ecommerce navigation]]; for the search engine behind the box, see [[/blogs/ecommerce-site-search|ecommerce site search]].",
         ],
       },
       {
@@ -358,7 +358,7 @@ export const commercePosts9: BlogPost[] = [
       {
         heading: "Two Meanings of Architecture",
         body: [
-          "The diagram above stacks the layers. Shoppers meet the storefront and its information architecture; behind it sit the commerce platform, the integration layer and the data. Around them sit the business systems. Problems in either half surface as the same symptoms: slow change, inconsistent data, poor discovery and SEO issues. For general web application architecture, see [[/blogs/scalable-website-architecture|scalable website architecture]].",
+          "Shoppers meet the storefront and its information architecture; behind it sit the commerce platform, the integration layer and the data. Around them sit the business systems. Problems in either half surface as the same symptoms: slow change, inconsistent data, poor discovery and SEO issues. For general web application architecture, see [[/blogs/scalable-website-architecture|scalable website architecture]].",
         ],
       },
       {

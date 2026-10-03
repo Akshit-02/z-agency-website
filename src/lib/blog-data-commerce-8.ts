@@ -416,7 +416,7 @@ export const commercePosts8: BlogPost[] = [
       {
         heading: "The Options",
         body: [
-          "The diagram above compares an agency, an in-house team and a hybrid across six factors. For the freelancer option, see [[/blogs/shopify-developer-vs-agency-which-to-hire|Shopify agency vs freelancer]].",
+          "This guide compares an agency, an in-house team and a hybrid across six factors. For the freelancer option, see [[/blogs/shopify-developer-vs-agency-which-to-hire|Shopify agency vs freelancer]].",
         ],
       },
       {
@@ -589,7 +589,7 @@ export const commercePosts8: BlogPost[] = [
       {
         heading: "Step 1: Confirm the Problem Is Real",
         body: [
-          "The diagram above starts with measurement for a reason: many apparent conversion problems are tracking problems.",
+          "In short, the approach starts with measurement for a reason: many apparent conversion problems are tracking problems.",
         ],
         checklist: [
           "Do analytics orders roughly match platform orders, and has the gap changed?",

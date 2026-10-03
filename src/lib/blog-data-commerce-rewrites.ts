@@ -245,7 +245,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "The Decision Ladder",
         body: [
-          "The diagram above shows the layers. Most requirements resolve well before the end.",
+          "Most requirements resolve well before the end.",
         ],
         table: {
           headers: ["Layer", "What it covers", "Example"],
@@ -547,7 +547,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "What Headless Separates",
         body: [
-          "A theme-based store bundles the storefront and the commerce back end: Shopify renders the theme. The diagram above shows the headless alternative: a custom front end calls the Storefront API, content may come from a CMS, and checkout and core commerce stay with Shopify. For the platform-independent concept, see [[/blogs/headless-website-development|headless website development]].",
+          "A theme-based store bundles the storefront and the commerce back end: Shopify renders the theme. In short, think of the headless alternative: a custom front end calls the Storefront API, content may come from a CMS, and checkout and core commerce stay with Shopify. For the platform-independent concept, see [[/blogs/headless-website-development|headless website development]].",
         ],
       },
       {
@@ -1012,7 +1012,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "What You Control",
         body: [
-          "The diagram above splits the work. The right-hand column is where rankings are won: structure, content, links, URLs and speed.",
+          "The right-hand column is where rankings are won: structure, content, links, URLs and speed.",
         ],
       },
       {
@@ -1228,7 +1228,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Shopify Analytics, GA4 and Search Console",
         body: [
-          "The diagram above shows what each tool is best at. Shopify is built on your order data, so sales and customer numbers are accurate by definition. GA4, connected through the Google & YouTube sales channel, adds event-based journeys, landing page and campaign detail, site search terms and explorations. Search Console shows organic queries, indexing, Core Web Vitals and rich result status.",
+          "Shopify is built on your order data, so sales and customer numbers are accurate by definition. GA4, connected through the Google & YouTube sales channel, adds event-based journeys, landing page and campaign detail, site search terms and explorations. Search Console shows organic queries, indexing, Core Web Vitals and rich result status.",
         ],
       },
       {
@@ -1351,7 +1351,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Side by Side",
         body: [
-          "The diagram above summarizes the comparison. In more detail:",
+          "In more detail:",
         ],
         table: {
           headers: ["Factor", "Freelancer", "Agency"],

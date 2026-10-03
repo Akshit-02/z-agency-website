@@ -390,7 +390,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "What the Cart Is For",
         body: [
-          "The cart has several jobs: confirm the right products and options were chosen, let shoppers change their mind, show what the order will really cost, and move them smoothly into checkout. For many shoppers it's also a holding area for comparing or saving items for later. The diagram above shows the path from add-to-cart through the cart to checkout, with saving for later as an alternative.",
+          "The cart has several jobs: confirm the right products and options were chosen, let shoppers change their mind, show what the order will really cost, and move them smoothly into checkout. For many shoppers it's also a holding area for comparing or saving items for later. In short, think of the path from add-to-cart through the cart to checkout, with saving for later as an alternative.",
           "This guide covers cart design on any platform. For Shopify-specific cart tactics such as drawers, free-shipping thresholds and upsell apps, see [[/blogs/shopify-cart-optimization|Shopify cart optimization]].",
         ],
       },
@@ -596,7 +596,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "A Focused, Linear Flow",
         body: [
-          "Checkout should feel like one path: account choice, contact and delivery, delivery method, payment, review, confirmation. The diagram above shows it, with a declined card handled as a recoverable error rather than a restart. Reduce distractions such as the full site navigation, but keep the logo, a link back to the cart and help or contact information. Keep an order summary visible or one tap away throughout.",
+          "Checkout should feel like one path: account choice, contact and delivery, delivery method, payment, review, confirmation. In short, think of it, with a declined card handled as a recoverable error rather than a restart. Reduce distractions such as the full site navigation, but keep the logo, a link back to the cart and help or contact information. Keep an order summary visible or one tap away throughout.",
         ],
       },
       {
@@ -778,7 +778,7 @@ export const designPosts7: BlogPost[] = [
         heading: "What Makes Mobile Shopping Different",
         body: [
           "Baymard Institute's mobile ecommerce research identifies five overarching problems: shoppers lack an overview of the page because they see it in fragments, they become disoriented about where they are, technical glitches get in the way, taps are missed or land on the wrong element, and they're interrupted often, on average once every 20 minutes during testing. Baymard reports that 63% of mobile users in testing abandoned a product or site at least once solely because of preventable mobile usability issues.",
-          "Responsive layout is the starting point, covered in [[/blogs/responsive-ui-design|responsive UI design]]. This guide covers the shopping-specific decisions on top of it, following the journey in the diagram above. For Shopify-specific mobile optimization, see [[/blogs/shopify-mobile-cro|Shopify mobile CRO]].",
+          "Responsive layout is the starting point, covered in [[/blogs/responsive-ui-design|responsive UI design]]. This guide covers the shopping-specific decisions on top of it, following the shopping journey. For Shopify-specific mobile optimization, see [[/blogs/shopify-mobile-cro|Shopify mobile CRO]].",
         ],
       },
       {

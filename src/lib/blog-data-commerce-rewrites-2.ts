@@ -45,7 +45,7 @@ export const commerceRewrites2: BlogPost[] = [
       {
         heading: "What Makes D2C Different",
         body: [
-          "D2C brands sell their own products directly, which means they own the customer relationship, the presentation, the pricing and the data. They also carry the cost of acquiring every customer. Profitable D2C growth therefore depends on converting first-time visitors who don't yet know the brand and on bringing them back. The diagram above shows the four layers a store needs to do both.",
+          "D2C brands sell their own products directly, which means they own the customer relationship, the presentation, the pricing and the data. They also carry the cost of acquiring every customer. Profitable D2C growth therefore depends on converting first-time visitors who don't yet know the brand and on bringing them back.",
           "If you're redesigning an existing store, start with [[/blogs/d2c-website-redesign|D2C website redesign]]. For conversion work on a live store, see [[/blogs/d2c-conversion-rate-optimization|D2C conversion rate optimization]].",
         ],
       },

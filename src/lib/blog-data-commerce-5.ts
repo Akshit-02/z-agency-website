@@ -459,7 +459,7 @@ export const commercePosts5: BlogPost[] = [
       {
         heading: "Rules, Models and Holdouts",
         body: [
-          "The diagram above shows the decision layer. {{b:Rules}} are explicit: if the shopper is in Germany, show delivery times and payment methods for Germany. They're predictable and easy to explain. {{b:Models}} learn patterns from data, such as which products are bought together or which items a shopper is likely to view next; they scale to large catalogs but need data and monitoring. A {{b:holdout group}} that doesn't receive personalization is how you know either works.",
+          "{{b:Rules}} are explicit: if the shopper is in Germany, show delivery times and payment methods for Germany. They're predictable and easy to explain. {{b:Models}} learn patterns from data, such as which products are bought together or which items a shopper is likely to view next; they scale to large catalogs but need data and monitoring. A {{b:holdout group}} that doesn't receive personalization is how you know either works.",
         ],
       },
       {
@@ -661,7 +661,7 @@ export const commercePosts5: BlogPost[] = [
       {
         heading: "Placements Across the Journey",
         body: [
-          "The diagram above maps recommendation types to pages. The principle: recommend alternatives to shoppers who are deciding and complements to shoppers who have decided. On the product page, place them where they support the decision rather than compete with the buy area; see [[/blogs/ecommerce-product-page-design|product page design]]. Putting upsells between a shopper and the checkout button often costs more than it adds.",
+          "The principle: recommend alternatives to shoppers who are deciding and complements to shoppers who have decided. On the product page, place them where they support the decision rather than compete with the buy area; see [[/blogs/ecommerce-product-page-design|product page design]]. Putting upsells between a shopper and the checkout button often costs more than it adds.",
         ],
       },
       {

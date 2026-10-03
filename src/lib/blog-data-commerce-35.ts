@@ -44,7 +44,7 @@ export const commercePosts35: BlogPost[] = [
       {
         heading: "What Shoppers Need to Decide",
         body: [
-          "A subscription is a bigger commitment than a single purchase. Shoppers weigh four questions: is this product worth receiving repeatedly, how much will it cost each time, how often will it arrive, and can I change my mind. A product page that answers all four near the purchase buttons converts subscription intent into subscriptions without surprises later. The diagram above groups the elements into the purchase choice, plan details, reassurance and the action itself.",
+          "A subscription is a bigger commitment than a single purchase. Shoppers weigh four questions: is this product worth receiving repeatedly, how much will it cost each time, how often will it arrive, and can I change my mind. A product page that answers all four near the purchase buttons converts subscription intent into subscriptions without surprises later. In short, the approach groups the elements into the purchase choice, plan details, reassurance and the action itself.",
           "For the full subscription experience beyond the product page, see [[/blogs/ecommerce-subscription-ux|subscription ecommerce UX]].",
         ],
       },

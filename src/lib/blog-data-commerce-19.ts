@@ -45,7 +45,7 @@ export const commercePosts19: BlogPost[] = [
       {
         heading: "B2B Ecommerce Is a Different Problem",
         body: [
-          "A consumer store serves individuals buying on impulse or after research, paying by card. A B2B store serves companies: a buyer orders, a manager approves, finance pays on terms against an invoice, and the price was negotiated months ago by a sales rep. The diagram above shows a typical ordering workflow. For a structured comparison, see [[/blogs/b2b-vs-b2c-ecommerce|B2B vs B2C ecommerce]]. If you're building a lead-generation site rather than online ordering, see [[/blogs/b2b-website-development|B2B website development]].",
+          "A consumer store serves individuals buying on impulse or after research, paying by card. A B2B store serves companies: a buyer orders, a manager approves, finance pays on terms against an invoice, and the price was negotiated months ago by a sales rep. For a structured comparison, see [[/blogs/b2b-vs-b2c-ecommerce|B2B vs B2C ecommerce]]. If you're building a lead-generation site rather than online ordering, see [[/blogs/b2b-website-development|B2B website development]].",
         ],
       },
       {
@@ -310,7 +310,7 @@ export const commercePosts19: BlogPost[] = [
       },
       {
         heading: "Side by Side",
-        body: ["The diagram above compares the six biggest differences. In more detail:"],
+        body: ["In more detail:"],
         table: {
           headers: ["Area", "B2C", "B2B"],
           rows: [
@@ -421,7 +421,7 @@ export const commercePosts19: BlogPost[] = [
       {
         heading: "Applications and Approval",
         body: [
-          "Most wholesale programs vet buyers. Offer an application form asking for business details, tax or resale information required in your markets, and expected volumes. Review and approve accounts, assign price tiers and terms, and welcome new accounts with a clear guide to ordering. The diagram above shows the flow from application to reorder.",
+          "Most wholesale programs vet buyers. Offer an application form asking for business details, tax or resale information required in your markets, and expected volumes. Review and approve accounts, assign price tiers and terms, and welcome new accounts with a clear guide to ordering.",
         ],
       },
       {

@@ -193,7 +193,7 @@ export const commercePosts48: BlogPost[] = [
       {
         heading: "Why Furniture Conversion Is a Long Game",
         body: [
-          "Many furniture shoppers visit several times, involve others and wait for the right moment. Judging changes on single-session conversion misses how furniture is bought. Track returning visitor conversion, time to purchase and sample-to-order conversion, and treat saved lists and reminders as conversion tools. The diagram above groups the levers. See [[/blogs/furniture-ecommerce-ux|furniture ecommerce UX]].",
+          "Many furniture shoppers visit several times, involve others and wait for the right moment. Judging changes on single-session conversion misses how furniture is bought. Track returning visitor conversion, time to purchase and sample-to-order conversion, and treat saved lists and reminders as conversion tools. See [[/blogs/furniture-ecommerce-ux|furniture ecommerce UX]].",
         ],
       },
       {
@@ -350,7 +350,7 @@ export const commercePosts48: BlogPost[] = [
       {
         heading: "Mobile Research, Many Sessions",
         body: [
-          "Furniture shoppers often browse on phones in short moments, save ideas, share with partners and return later. The diagram above groups mobile patterns into browsing, evaluating, deciding and buying. For the overall journey, see [[/blogs/furniture-ecommerce-ux|furniture ecommerce UX]].",
+          "Furniture shoppers often browse on phones in short moments, save ideas, share with partners and return later. In short, the approach groups mobile patterns into browsing, evaluating, deciding and buying. For the overall journey, see [[/blogs/furniture-ecommerce-ux|furniture ecommerce UX]].",
         ],
       },
       {

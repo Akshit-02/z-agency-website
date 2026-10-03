@@ -46,7 +46,7 @@ export const commercePosts45: BlogPost[] = [
         heading: "Why Electronics Builds Are Data Projects",
         body: [
           "Electronics shoppers decide on details: screen size, storage, ports, battery life, compatibility with devices they already own. Every one of those details has to exist as clean, structured data before the storefront can filter by it, compare it, search for it or send it to shopping channels. Stores that treat specs as copy in descriptions end up with filters that miss products, comparisons that can't line up attributes and search that can't find model numbers.",
-          "The diagram above shows the four areas of an electronics build. For the page-level UX features, see [[/blogs/electronics-ecommerce-website-design|electronics ecommerce website design]]; for the Shopify implementation, see [[/blogs/shopify-electronics-store|Shopify electronics store]].",
+          "For the page-level UX features, see [[/blogs/electronics-ecommerce-website-design|electronics ecommerce website design]]; for the Shopify implementation, see [[/blogs/shopify-electronics-store|Shopify electronics store]].",
         ],
       },
       {
@@ -397,7 +397,7 @@ export const commercePosts45: BlogPost[] = [
       {
         heading: "The Four Zones",
         body: [
-          "The diagram above groups page content into decide, specs, fit and compatibility, and confidence. The decide zone must be answerable in a few seconds; the specs and compatibility zones need depth for shoppers who want it. For page features in the broader store, see [[/blogs/electronics-ecommerce-website-design|electronics ecommerce website design]].",
+          "In short, the approach groups page content into decide, specs, fit and compatibility, and confidence. The decide zone must be answerable in a few seconds; the specs and compatibility zones need depth for shoppers who want it. For page features in the broader store, see [[/blogs/electronics-ecommerce-website-design|electronics ecommerce website design]].",
         ],
       },
       {
@@ -718,7 +718,7 @@ export const commercePosts45: BlogPost[] = [
       {
         heading: "Filters Are Built From Data",
         body: [
-          "A “16 GB RAM” filter only works if every laptop has memory stored as a number with a unit. Titles and descriptions can't power reliable filters. The diagram above shows a filter taxonomy; each value in it comes from a normalized attribute. See [[/blogs/electronics-ecommerce-website-development|electronics ecommerce development]] for the data model and [[/blogs/ecommerce-filters|ecommerce product filters]] for general filter UX.",
+          "A “16 GB RAM” filter only works if every laptop has memory stored as a number with a unit. Titles and descriptions can't power reliable filters. In short, think of a filter taxonomy; each value in it comes from a normalized attribute. See [[/blogs/electronics-ecommerce-website-development|electronics ecommerce development]] for the data model and [[/blogs/ecommerce-filters|ecommerce product filters]] for general filter UX.",
           "Typed attributes and canonical units are described in [[/blogs/electronics-product-specifications|electronics product specifications]].",
         ],
       },

@@ -212,7 +212,7 @@ export const commercePosts12: BlogPost[] = [
       {
         heading: "How an AI Shopping Agent Works",
         body: [
-          "The diagram above shows a typical flow. A shopper describes what they want; the agent searches product catalogs and feeds, asks clarifying questions, compares options and presents a shortlist. If the shopper chooses to buy, the agent either hands off to the merchant's checkout or, on supported surfaces, completes checkout through a protocol with the shopper's confirmation. The merchant fulfils the order and handles service.",
+          "A shopper describes what they want; the agent searches product catalogs and feeds, asks clarifying questions, compares options and presents a shortlist. If the shopper chooses to buy, the agent either hands off to the merchant's checkout or, on supported surfaces, completes checkout through a protocol with the shopper's confirmation. The merchant fulfils the order and handles service.",
           "This is different from AI agents a retailer runs internally for operations, covered in [[/blogs/ai-agents-in-retail-and-ecommerce|AI agents in retail and ecommerce]].",
         ],
       },
@@ -358,7 +358,7 @@ export const commercePosts12: BlogPost[] = [
       {
         heading: "From Search to Delegation",
         body: [
-          "Ecommerce has moved from browsing catalogs, to searching, to asking assistants for recommendations. Agentic commerce adds delegation: the assistant doesn't only suggest a product, it can act, such as checking stock, building a cart and completing checkout within limits the shopper sets. The diagram above shows the layers: assistant surfaces on top, protocols in the middle, merchant systems underneath.",
+          "Ecommerce has moved from browsing catalogs, to searching, to asking assistants for recommendations. Agentic commerce adds delegation: the assistant doesn't only suggest a product, it can act, such as checking stock, building a cart and completing checkout within limits the shopper sets. In short, think of the layers: assistant surfaces on top, protocols in the middle, merchant systems underneath.",
         ],
       },
       {

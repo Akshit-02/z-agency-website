@@ -248,7 +248,7 @@ export const commercePosts: BlogPost[] = [
       {
         heading: "How Shopify Themes Are Built",
         body: [
-          "A theme is a set of files in fixed folders. The diagram above shows them alongside how a product page is composed (Shopify theme architecture).",
+          "A theme is a set of files in fixed folders. In short, think of them alongside how a product page is composed (Shopify theme architecture).",
         ],
         table: {
           headers: ["Part", "What it does"],
@@ -443,7 +443,7 @@ export const commercePosts: BlogPost[] = [
       },
       {
         heading: "How a Hydrogen Storefront Works",
-        body: ["The diagram above shows the layers. In practice:"],
+        body: ["In practice:"],
         checklist: [
           "Routes and components are your code, in React",
           "Product, collection, search and cart data come from the Storefront API",
@@ -657,7 +657,7 @@ export const commercePosts: BlogPost[] = [
       {
         heading: "What Changes in Each",
         body: [
-          "The diagram above compares a redesign and a rebuild across six parts of the store. The more rows that move into the right-hand column, the more the project is a rebuild, whatever it's called.",
+          "This guide compares a redesign and a rebuild across six parts of the store. The more rows that move into the right-hand column, the more the project is a rebuild, whatever it's called.",
         ],
       },
       {
@@ -824,7 +824,7 @@ export const commercePosts: BlogPost[] = [
       {
         heading: "Driver 1: Build Approach",
         body: [
-          "The biggest single factor. The diagram above shows the staircase: each step adds design and engineering, and usually adds ongoing maintenance.",
+          "The biggest single factor. In short, think of the staircase: each step adds design and engineering, and usually adds ongoing maintenance.",
         ],
         table: {
           headers: ["Approach", "What you're paying for", "Ongoing cost"],

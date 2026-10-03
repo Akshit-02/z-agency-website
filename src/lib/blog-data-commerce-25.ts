@@ -192,7 +192,7 @@ export const commercePosts25: BlogPost[] = [
       {
         heading: "Four Starting Points",
         body: [
-          "The diagram above shows the four routes. A store that only offers product-type navigation serves shoppers who already know what they want, and misses those who start from a problem. For discovery in general, see [[/blogs/ecommerce-product-discovery|ecommerce product discovery]].",
+          "A store that only offers product-type navigation serves shoppers who already know what they want, and misses those who start from a problem. For discovery in general, see [[/blogs/ecommerce-product-discovery|ecommerce product discovery]].",
         ],
       },
       {
@@ -339,7 +339,7 @@ export const commercePosts25: BlogPost[] = [
       {
         heading: "The Personalization Flow",
         body: [
-          "The diagram above shows the flow from consented profile to feedback. For personalization strategy generally, see [[/blogs/ecommerce-personalization|ecommerce personalization]]; for AI methods, [[/blogs/ai-personalization-ecommerce|AI personalization]].",
+          "For personalization strategy generally, see [[/blogs/ecommerce-personalization|ecommerce personalization]]; for AI methods, [[/blogs/ai-personalization-ecommerce|AI personalization]].",
         ],
       },
       {
@@ -472,7 +472,7 @@ export const commercePosts25: BlogPost[] = [
       {
         heading: "Replenishment Is Part of the Product",
         body: [
-          "Many beauty products are used daily and run out predictably. The diagram above groups what a replenishment experience needs. For subscription commerce generally, see [[/blogs/subscription-ecommerce-website|subscription ecommerce website]]; for portal design, [[/blogs/ecommerce-subscription-ux|subscription UX]].",
+          "Many beauty products are used daily and run out predictably. For subscription commerce generally, see [[/blogs/subscription-ecommerce-website|subscription ecommerce website]]; for portal design, [[/blogs/ecommerce-subscription-ux|subscription UX]].",
         ],
       },
       {
@@ -615,7 +615,7 @@ export const commercePosts25: BlogPost[] = [
       {
         heading: "Evidence and Claims Audit",
         body: [
-          "The diagram above puts evidence and a claims audit first. Review search terms, quiz data, reviews and support questions, and audit every claim with regulatory advisers: keep what's substantiated and permitted, rewrite or remove the rest, and set up a process for future claims.",
+          "Review search terms, quiz data, reviews and support questions, and audit every claim with regulatory advisers: keep what's substantiated and permitted, rewrite or remove the rest, and set up a process for future claims.",
         ],
         cta: {
           title: "Planning a beauty website redesign?",

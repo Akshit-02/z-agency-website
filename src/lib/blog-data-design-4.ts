@@ -771,7 +771,7 @@ export const designPosts4: BlogPost[] = [
       {
         heading: "Ecommerce Example",
         body: [
-          "The diagram above shows both. On the left, an ecommerce IA: Store, then departments such as Women, Men and Sale, then categories such as Jackets. On the right, a flow: search for “rain jacket”, refine results with filters, open a product, add it to the cart and check out. The dashed line shows where the two meet: search results and filters depend on how the IA classifies products and which attributes it records. A flow can only filter by waterproof rating if the catalog structure captures it. See [[/blogs/ecommerce-navigation-design|ecommerce navigation design]] and [[/blogs/ecommerce-filters|ecommerce filters]] for the design of each side.",
+          "On the left, an ecommerce IA: Store, then departments such as Women, Men and Sale, then categories such as Jackets. On the right, a flow: search for “rain jacket”, refine results with filters, open a product, add it to the cart and check out. The dashed line shows where the two meet: search results and filters depend on how the IA classifies products and which attributes it records. A flow can only filter by waterproof rating if the catalog structure captures it. See [[/blogs/ecommerce-navigation-design|ecommerce navigation design]] and [[/blogs/ecommerce-filters|ecommerce filters]] for the design of each side.",
         ],
       },
       {

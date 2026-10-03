@@ -271,7 +271,7 @@ export const shopifyCroPosts4: BlogPost[] = [
       },
       {
         heading: "Where Shopify Performance Problems Come From",
-        body: ["The diagram above maps the main sources. Most stores have several at once."],
+        body: ["Most stores have several at once."],
         table: {
           headers: ["Source", "Typical problem", "Metric most affected"],
           rows: [

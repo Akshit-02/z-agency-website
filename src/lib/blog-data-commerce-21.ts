@@ -44,7 +44,7 @@ export const commercePosts21: BlogPost[] = [
       {
         heading: "How Decor Shoppers Browse",
         body: [
-          "Many decor shoppers start without a specific product: a room to refresh, a style they like, a colour scheme. They browse visually, save ideas and buy several items that work together. The diagram above groups what the store must provide. For large, high-consideration items, see [[/blogs/furniture-ecommerce-website-design|furniture ecommerce design]].",
+          "Many decor shoppers start without a specific product: a room to refresh, a style they like, a colour scheme. They browse visually, save ideas and buy several items that work together. For large, high-consideration items, see [[/blogs/furniture-ecommerce-website-design|furniture ecommerce design]].",
         ],
       },
       {
@@ -154,7 +154,7 @@ export const commercePosts21: BlogPost[] = [
       {
         heading: "Fitment Comes First",
         body: [
-          "A car part is only useful if it fits the shopper's vehicle. Everything in the store, from navigation to search to product pages, should reflect the selected vehicle. The diagram above shows the four areas to design. In North America, the Auto Care Association's ACES (fitment) and PIES (product information) standards are widely used to exchange this data between suppliers and retailers.",
+          "A car part is only useful if it fits the shopper's vehicle. Everything in the store, from navigation to search to product pages, should reflect the selected vehicle. In North America, the Auto Care Association's ACES (fitment) and PIES (product information) standards are widely used to exchange this data between suppliers and retailers.",
         ],
       },
       {
@@ -277,7 +277,7 @@ export const commercePosts21: BlogPost[] = [
       {
         heading: "Why Trust Is the Product",
         body: [
-          "Wellness shoppers have seen exaggerated promises. They look for transparency: what's in it, how much, how to take it, and whether it's safe for them. Regulators in many markets restrict what health claims can be made. The diagram above groups the store's requirements around education, information, trust and repeat.",
+          "Wellness shoppers have seen exaggerated promises. They look for transparency: what's in it, how much, how to take it, and whether it's safe for them. Regulators in many markets restrict what health claims can be made. In short, the approach groups the store's requirements around education, information, trust and repeat.",
         ],
       },
       {
@@ -388,7 +388,7 @@ export const commercePosts21: BlogPost[] = [
       {
         heading: "What Luxury Shoppers Expect",
         body: [
-          "Luxury buyers pay for craft, heritage, exclusivity and service. Online, they expect the same attentiveness: accurate detail, confidence in authenticity, a person to talk to and a delivery experience that feels like a gift. The diagram above groups these expectations.",
+          "Luxury buyers pay for craft, heritage, exclusivity and service. Online, they expect the same attentiveness: accurate detail, confidence in authenticity, a person to talk to and a delivery experience that feels like a gift.",
         ],
       },
       {

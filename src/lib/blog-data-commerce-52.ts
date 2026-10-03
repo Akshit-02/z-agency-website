@@ -364,7 +364,7 @@ export const commercePosts52: BlogPost[] = [
       {
         heading: "What Fitness Stores Sell",
         body: [
-          "Fitness stores often combine very different product types: treadmills and racks that need freight delivery, apparel with size needs, small accessories and sometimes supplements, programs or memberships. The diagram above groups the build into equipment, apparel, programs and operations. For multi-sport catalogs, see [[/blogs/sports-ecommerce-website-development|sports ecommerce development]].",
+          "Fitness stores often combine very different product types: treadmills and racks that need freight delivery, apparel with size needs, small accessories and sometimes supplements, programs or memberships. In short, the approach groups the build into equipment, apparel, programs and operations. For multi-sport catalogs, see [[/blogs/sports-ecommerce-website-development|sports ecommerce development]].",
         ],
       },
       {
@@ -533,7 +533,7 @@ export const commercePosts52: BlogPost[] = [
       {
         heading: "What This Guide Covers",
         body: [
-          "This is the Shopify implementation of a sports store. For platform-agnostic planning, see [[/blogs/sports-ecommerce-website-development|sports ecommerce development]]; for the shopper's journey, see [[/blogs/sports-ecommerce-ux|sports ecommerce UX]]. The diagram above maps Shopify capabilities to catalog, discovery, commerce and operations.",
+          "This is the Shopify implementation of a sports store. For platform-agnostic planning, see [[/blogs/sports-ecommerce-website-development|sports ecommerce development]]; for the shopper's journey, see [[/blogs/sports-ecommerce-ux|sports ecommerce UX]]. This guide maps Shopify capabilities to catalog, discovery, commerce and operations.",
         ],
       },
       {

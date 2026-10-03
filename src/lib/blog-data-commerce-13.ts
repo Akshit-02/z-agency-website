@@ -67,7 +67,7 @@ export const commercePosts13: BlogPost[] = [
       {
         heading: "What AI Systems Read",
         body: [
-          "The diagram above groups the inputs. AI systems rely on product feeds and catalogs for structured facts (price, availability, identifiers, attributes), on crawlable pages for descriptions, specifications and reviews, and on policies for shipping and returns. Google states there are no additional requirements, special files or special schema needed to appear in AI Overviews or AI Mode (Google Search Central).",
+          "AI systems rely on product feeds and catalogs for structured facts (price, availability, identifiers, attributes), on crawlable pages for descriptions, specifications and reviews, and on policies for shipping and returns. Google states there are no additional requirements, special files or special schema needed to appear in AI Overviews or AI Mode (Google Search Central).",
         ],
       },
       {
@@ -202,7 +202,7 @@ export const commercePosts13: BlogPost[] = [
       {
         heading: "Structured Attributes",
         body: [
-          "The diagram above groups the data. Attributes are where products become comparable. Define the attributes each category needs, store them in structured fields (metafields, PIM attributes, feed attributes), and standardize values and units.",
+          "Attributes are where products become comparable. Define the attributes each category needs, store them in structured fields (metafields, PIM attributes, feed attributes), and standardize values and units.",
         ],
         checklist: [
           "An attribute list per category, agreed with merchandising",
@@ -455,7 +455,7 @@ export const commercePosts13: BlogPost[] = [
       },
       {
         heading: "How AI Search Works",
-        body: ["The diagram above shows a typical pipeline."],
+        body: [""],
         table: {
           headers: ["Stage", "What happens", "AI technique"],
           rows: [
