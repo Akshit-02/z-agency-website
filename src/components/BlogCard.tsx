@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { BlogSummary } from "@/lib/blog-data";
-import { BlogBanner } from "./BlogBanner";
+import { BlogScene } from "./blog/BlogScene";
 import { TiltCard } from "./ui/Aesthetic";
 
 export function BlogCard({ post }: { post: BlogSummary }) {
@@ -11,9 +11,9 @@ export function BlogCard({ post }: { post: BlogSummary }) {
         <div className="rounded-[16px] bg-ink/[0.03] p-1.5 ring-1 ring-ink/[0.06]">
           <div className="relative aspect-[16/10] w-full overflow-hidden rounded-[12px] bg-white">
             <div className="h-full w-full transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.04]">
-              <BlogBanner variant={post.banner} />
+              <BlogScene scene={post.scene} />
             </div>
-            <span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-[0.7rem] font-medium text-ink shadow-sm backdrop-blur-sm">
+            <span className="absolute bottom-2.5 left-2.5 rounded-full bg-white/95 px-2.5 py-1 text-[0.66rem] font-medium text-ink shadow-sm backdrop-blur-sm">
               {post.category}
             </span>
           </div>

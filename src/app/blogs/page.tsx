@@ -4,6 +4,7 @@ import { BlogExplorer } from "@/components/BlogExplorer";
 import { BlogHero, BlogSection, FeaturedPost, TopicGrid, type PostLite } from "@/components/blog/BlogKit";
 import { StructuredData } from "@/components/StructuredData";
 import { posts, toSummary, type BlogPost } from "@/lib/blog-data";
+import { sceneFor } from "@/lib/blog-scenes";
 import { blogCategories } from "@/lib/blog-categories";
 import { WEBSITE_ID, ORG_ID } from "@/lib/seo";
 import { site } from "@/lib/site";
@@ -22,6 +23,7 @@ const lite = (p: BlogPost): PostLite => ({
   category: p.category,
   readingTime: p.readingTime,
   banner: p.banner,
+  scene: sceneFor(p),
 });
 
 export default function BlogsPage() {

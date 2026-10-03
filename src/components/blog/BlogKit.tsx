@@ -24,7 +24,9 @@ import {
 } from "lucide-react";
 import { Atmosphere, DarkPanel, EASE, Eyebrow, MaskLines, TiltCard, riseProps, serif } from "@/components/ui/Aesthetic";
 import { Breadcrumbs, type Crumb } from "@/components/Breadcrumbs";
-import { BlogBanner, type BlogBannerVariant } from "@/components/BlogBanner";
+import type { BlogBannerVariant } from "@/components/BlogBanner";
+import { BlogScene } from "./BlogScene";
+import type { BlogSceneData } from "@/lib/blog-scenes";
 import { ScaledArt } from "@/components/home/WhatWeBuild";
 import { AppsArt, AutomationArt, CroArt, ShopifyArt, UiUxArt, WebsitesArt } from "@/components/home/BuildIllustrations";
 import { SceneFrame, sceneBackdrop, scenes } from "@/components/industries/IndustryScenes";
@@ -36,6 +38,7 @@ export type PostLite = {
   category: string;
   readingTime?: string;
   banner: BlogBannerVariant;
+  scene: BlogSceneData;
 };
 
 export type TopicLite = {
@@ -143,7 +146,7 @@ function Layer({
     >
       <div className="overflow-hidden rounded-2xl border border-white bg-white shadow-[0_40px_80px_-30px_rgba(11,12,14,0.45),0_0_0_1px_rgba(11,12,14,0.05)]">
         <div className="aspect-[16/10] overflow-hidden">
-          <BlogBanner variant={post.banner} />
+          <BlogScene scene={post.scene} />
         </div>
         <div className="flex items-center justify-between gap-3 px-3.5 py-2.5">
           <span className="truncate text-[0.72rem] font-medium text-ink">{post.title}</span>
@@ -227,7 +230,7 @@ export function FeaturedPost({ post }: { post: PostLite }) {
         >
           <div className="rounded-[22px] bg-white/[0.06] p-2 ring-1 ring-white/10 transition-transform duration-700 ease-out group-hover:-translate-y-1.5 group-hover:scale-[1.01]">
             <div className="aspect-[16/11] overflow-hidden rounded-[16px] bg-white">
-              <BlogBanner variant={post.banner} />
+              <BlogScene scene={post.scene} />
             </div>
           </div>
         </motion.div>

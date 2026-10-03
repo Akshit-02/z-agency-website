@@ -11,6 +11,8 @@ import { StructuredData } from "@/components/StructuredData";
 import { BlogBanner } from "@/components/BlogBanner";
 import { BlogCard } from "@/components/BlogCard";
 import { ArticleCover, ArticleRelated } from "@/components/blog/BlogKit";
+import { BlogScene } from "@/components/blog/BlogScene";
+import { sceneFor } from "@/lib/blog-scenes";
 import { Atmosphere } from "@/components/ui/Aesthetic";
 import { Callout } from "@/components/Callout";
 import { ReadingProgress } from "@/components/ReadingProgress";
@@ -18,7 +20,7 @@ import { TableOfContents } from "@/components/TableOfContents";
 import { IndustryGlyph } from "@/components/IndustryGlyph";
 import { Faq } from "@/components/Faq";
 import { renderInline, slugifyHeading, stripInline } from "@/lib/inline-content";
-import { posts, getPostBySlug, getRelatedPosts } from "@/lib/blog-data";
+import { posts, getPostBySlug, getRelatedPosts, toSummary } from "@/lib/blog-data";
 import { getServiceBySlug } from "@/lib/services-data";
 import { getIndustryBySlug } from "@/lib/industries-data";
 import { site } from "@/lib/site";
@@ -171,7 +173,7 @@ export default async function BlogPostPage({
 
             <div className="mt-12">
               <ArticleCover label={post.bannerAlt ?? `Illustration for ${post.title}`}>
-                <BlogBanner variant={post.banner} />
+                <BlogScene scene={sceneFor(post)} />
               </ArticleCover>
             </div>
           </Container>
@@ -371,7 +373,7 @@ export default async function BlogPostPage({
             </h2>
             <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {relatedPosts.map((p) => (
-                <BlogCard key={p.slug} post={p} />
+                <BlogCard key={p.slug} post={toSummary(p)} />
               ))}
             </div>
           </Container>

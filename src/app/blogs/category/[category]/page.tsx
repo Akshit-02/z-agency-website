@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BlogCard } from "@/components/BlogCard";
 import { ArticleIndex, BlogHero, BlogSection, HubIntro } from "@/components/blog/BlogKit";
+import { sceneFor } from "@/lib/blog-scenes";
 import { StructuredData } from "@/components/StructuredData";
 import { CTASection } from "@/components/CTASection";
 import { posts, toSummary } from "@/lib/blog-data";
@@ -104,6 +105,7 @@ export default async function BlogCategoryPage({
           title: p.title,
           category: p.category,
           banner: p.banner,
+          scene: "scene" in p ? p.scene : sceneFor(p),
         }))}
         stats={[{ value: String(inCategory.length), label: "Articles in this hub" }]}
       />

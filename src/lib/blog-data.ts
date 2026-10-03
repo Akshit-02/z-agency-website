@@ -1,4 +1,5 @@
 import type { BlogBannerVariant } from "@/components/BlogBanner";
+import { sceneFor, type BlogSceneData } from "./blog-scenes";
 import type { IndustryVisual, IndustryAccent } from "@/lib/industries-data";
 import type { CalloutType } from "@/components/Callout";
 import { aiAgentPosts } from "./blog-data-ai-agents";
@@ -200,11 +201,11 @@ export type BlogPost = {
 export type BlogSummary = Pick<
   BlogPost,
   "slug" | "title" | "excerpt" | "category" | "readingTime" | "banner" | "bannerAlt" | "date"
->;
+> & { scene: BlogSceneData };
 
 export function toSummary(post: BlogPost): BlogSummary {
   const { slug, title, excerpt, category, readingTime, banner, bannerAlt, date } = post;
-  return { slug, title, excerpt, category, readingTime, banner, bannerAlt, date };
+  return { slug, title, excerpt, category, readingTime, banner, bannerAlt, date, scene: sceneFor(post) };
 }
 
 export const categories = [
