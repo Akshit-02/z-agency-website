@@ -112,6 +112,7 @@ export default function RootLayout({
               availableLanguage: ["English"],
             },
             knowsAbout: services.map((service) => service.name),
+            areaServed: [{ "@type": "Country", name: "India" }, "Worldwide"],
             ...(Object.keys(site.social).length > 0 ? { sameAs: Object.values(site.social) } : {}),
           }}
         />

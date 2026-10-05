@@ -172,7 +172,7 @@ export function ServicesHero() {
             />
           </h1>
           <motion.p className="mt-7 max-w-[32rem] text-pretty text-[1.05rem] leading-relaxed text-ink/60" {...riseProps(on, still, 0.45)}>
-            Websites, apps, commerce, design, automation and optimisation. We bring the right combination of
+            Websites, apps, commerce, design, automation and optimisation for businesses across India. We bring the right combination of
             skills to help your business move forward.
           </motion.p>
           <motion.div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4" {...riseProps(on, still, 0.6)}>

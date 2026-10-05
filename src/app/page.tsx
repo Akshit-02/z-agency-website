@@ -15,8 +15,9 @@ import { StructuredData } from "@/components/StructuredData";
 import { ORG_ID, WEBSITE_ID } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: { absolute: `${site.name} — Website, App, Shopify & AI Automation Studio` },
-  description: site.description,
+  title: { absolute: `${site.name} | Web, App, Shopify & AI Automation Studio in India` },
+  description:
+    "ZSpace Labs is a technology and digital product studio serving businesses across India: websites, mobile apps, Shopify, UI/UX, AI automation and CRO.",
   alternates: { canonical: "/" },
 };
 

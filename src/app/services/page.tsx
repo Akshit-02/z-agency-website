@@ -11,9 +11,9 @@ import { services } from "@/lib/services-data";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Services: Web, Mobile, Shopify, UI/UX, AI & CRO",
+  title: "Services in India: Web, App, Shopify, UI/UX, AI & CRO",
   description:
-    "Website development, mobile apps, Shopify development, UI/UX design, AI automation and CRO audits from ZSpace Labs, one team for design and engineering.",
+    "Web development, mobile apps, Shopify, UI/UX design, AI automation and CRO for businesses across India, from one ZSpace Labs team for design and engineering.",
   alternates: { canonical: "/services" },
 };
 

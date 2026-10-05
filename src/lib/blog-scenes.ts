@@ -48,6 +48,8 @@ type PostLike = {
   title: string;
   category: string;
   banner?: string;
+  /** Pin a cover type instead of matching it from the topic. */
+  sceneKind?: SceneKind;
   content?: { heading: string; checklist?: string[] }[];
 };
 
@@ -146,8 +148,9 @@ function pickItems(post: PostLike) {
 export function sceneFor(post: PostLike): BlogSceneData {
   const text = `${post.slug} ${post.title} ${post.banner ?? ""}`.toLowerCase();
   let kind: SceneKind | undefined;
+  if (post.sceneKind) kind = post.sceneKind;
   // AI agent articles get the agent scene unless they're about securing agents
-  if (/agent/.test(text) && !/secur|threat|permission/.test(text)) kind = "agent";
+  else if (/agent/.test(text) && !/secur|threat|permission/.test(text)) kind = "agent";
   for (const [k, re] of kind ? [] : rules) {
     if (!re.test(text)) continue;
     // a bare "app" in a Shopify article means a Shopify app, not a phone app

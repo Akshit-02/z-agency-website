@@ -37,6 +37,7 @@ export type ServiceDetailData = {
   name: string;
   accent: "blue" | "orange";
   heroCopy: string;
+  india: { eyebrow: string; h1: string; heading: string; intro: string[]; points: { title: string; body: string }[] };
   definition: { question: string; answer: string[] };
   whatWeDo: string[];
   problems: string[];
@@ -257,6 +258,60 @@ function Toolkit({ data }: { data: ServiceDetailData }) {
   );
 }
 
+/** India-wide positioning: how this service is shaped for Indian businesses. */
+function IndiaSection({ data }: { data: ServiceDetailData }) {
+  const still = !!useReducedMotion();
+  const ref = useRef<HTMLDivElement>(null);
+  const on = useInView(ref, { once: true, amount: 0.25 });
+  const { india } = data;
+
+  return (
+    <section className="relative overflow-hidden bg-white px-5 py-20 sm:px-8 lg:py-28">
+      <Atmosphere tone="light" still={still} />
+      <div ref={ref} className="relative mx-auto grid max-w-[1180px] gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-16">
+        <div>
+          <Eyebrow on={on} still={still}>
+            Across India
+          </Eyebrow>
+          <h2 className="mt-6 text-balance text-[2.3rem] leading-[1.05] tracking-[-0.02em] text-ink sm:text-[3rem]" style={serif}>
+            <MaskLines on={on} still={still} lines={[accentTitle(india.heading, 2)]} />
+          </h2>
+          {india.intro.map((p, i) => (
+            <motion.p
+              key={i}
+              className={`mt-5 text-pretty leading-relaxed ${i === 0 ? "text-[1.08rem] text-ink" : "text-[1rem] text-ink/60"}`}
+              {...riseProps(on, still, 0.25 + i * 0.1)}
+            >
+              {p}
+            </motion.p>
+          ))}
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2">
+          {india.points.map((pt, i) => (
+            <motion.div
+              key={pt.title}
+              initial={still ? false : { opacity: 0, y: 40, rotateX: 20 }}
+              animate={on ? { opacity: 1, y: 0, rotateX: 0 } : {}}
+              transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1], delay: 0.2 + i * 0.1 }}
+              style={{ transformPerspective: 1000 }}
+            >
+              <TiltCard glow={i % 2 ? "#2563eb" : "#ea580c"} max={6}>
+                <div className="flex h-full flex-col p-5">
+                  <span className={`font-mono text-[0.72rem] ${i % 2 ? "text-blue" : "text-orange"}`}>{String(i + 1).padStart(2, "0")}</span>
+                  <h3 className="mt-3 text-[1.25rem] leading-tight text-ink" style={serif}>
+                    {pt.title}
+                  </h3>
+                  <p className="mt-2 text-[0.9rem] leading-relaxed text-ink/60">{pt.body}</p>
+                </div>
+              </TiltCard>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function ServiceDetail({ data }: { data: ServiceDetailData }) {
   const contactHref = `/contact?src=${encodeURIComponent(`/services/${data.slug}`)}`;
 
@@ -267,8 +322,8 @@ export function ServiceDetail({ data }: { data: ServiceDetailData }) {
           { name: "Services", href: "/services" },
           { name: data.name, href: `/services/${data.slug}` },
         ]}
-        eyebrow={`Service ${data.index}`}
-        title={accentTitle(data.name)}
+        eyebrow={data.india.eyebrow}
+        title={accentTitle(data.india.h1)}
         description={data.heroCopy}
         primary={{ label: "Start a Project", href: contactHref }}
         secondary={{ label: "How we work", href: "#process" }}
@@ -310,6 +365,8 @@ export function ServiceDetail({ data }: { data: ServiceDetailData }) {
           </div>
         }
       />
+
+      <IndiaSection data={data} />
 
       <ProblemSolution
         eyebrow="Problems we solve"

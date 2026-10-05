@@ -914,3 +914,77 @@ function ProjectBoard({ on, still }: { on: boolean; still: boolean }) {
     </motion.div>
   );
 }
+
+/* ------------------------------------------------------------ company facts */
+
+const facts = [
+  { label: "What we are", value: "An independent technology and digital product studio. One team handles design and engineering." },
+  { label: "Where we work", value: "Remote-first. We serve businesses across India and work with clients globally." },
+  { label: "What we build", value: "Websites and web apps, mobile apps, Shopify stores, UI/UX, AI automation and CRO." },
+  { label: "Contact", value: "connect@zspace.in, or the project form on our contact page." },
+];
+
+const publishing = [
+  "We don't publish invented statistics, testimonials, client logos or awards.",
+  "Our agency comparisons say clearly that we published them and list ourselves first.",
+  "Other companies are described only from their own official websites, without scores or paid placement.",
+  "Where we're not the right fit for a project, our articles say so.",
+];
+
+export function CompanyFacts() {
+  const still = !!useReducedMotion();
+  const ref = useRef<HTMLDivElement>(null);
+  const on = useInView(ref, { once: true, amount: 0.3 });
+
+  return (
+    <section className="relative overflow-hidden bg-white px-5 py-20 sm:px-8 lg:py-28">
+      <Atmosphere tone="light" still={still} />
+      <div ref={ref} className="relative mx-auto max-w-[1180px]">
+        <Eyebrow on={on} still={still}>
+          Company facts
+        </Eyebrow>
+        <h2 className="mt-6 text-[2.8rem] leading-[1] tracking-[-0.025em] text-ink sm:text-[3.8rem]" style={serif}>
+          <MaskLines
+            on={on}
+            still={still}
+            lines={[<>The short version,</>, <span key="h" className="italic text-orange">stated plainly.</span>]}
+          />
+        </h2>
+
+        <div className="mt-14 grid gap-4 lg:grid-cols-[1.1fr_1fr]">
+          <TiltCard className="rounded-[1.75rem] border border-ink/10 bg-white p-7 sm:p-9">
+            <dl className="divide-y divide-ink/10">
+              {facts.map((f) => (
+                <div key={f.label} className="grid gap-1 py-4 first:pt-0 last:pb-0 sm:grid-cols-[9rem_1fr] sm:gap-6">
+                  <dt className="text-[0.72rem] font-medium uppercase tracking-[0.14em] text-ink/45">{f.label}</dt>
+                  <dd className="text-[0.98rem] leading-relaxed text-ink/80">{f.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </TiltCard>
+
+          <TiltCard className="rounded-[1.75rem] border border-ink/10 bg-[#faf8f5] p-7 sm:p-9">
+            <p className="text-[1.5rem] leading-tight text-ink" style={serif}>
+              How we <span className="italic text-orange">publish</span>
+            </p>
+            <ul className="mt-5 space-y-3">
+              {publishing.map((p) => (
+                <li key={p} className="flex gap-3 text-[0.95rem] leading-relaxed text-ink/70">
+                  <span className="mt-[0.6rem] h-1.5 w-1.5 shrink-0 rounded-full bg-orange" aria-hidden />
+                  {p}
+                </li>
+              ))}
+            </ul>
+            <Link
+              href="/blogs"
+              className="group mt-7 inline-flex items-center gap-2 text-[0.88rem] font-medium text-ink"
+            >
+              Read the knowledge base
+              <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
+            </Link>
+          </TiltCard>
+        </div>
+      </div>
+    </section>
+  );
+}

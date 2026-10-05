@@ -1,5 +1,5 @@
 import type { BlogBannerVariant } from "@/components/BlogBanner";
-import { sceneFor, type BlogSceneData } from "./blog-scenes";
+import { sceneFor, type BlogSceneData, type SceneKind } from "./blog-scenes";
 import type { IndustryVisual, IndustryAccent } from "@/lib/industries-data";
 import type { CalloutType } from "@/components/Callout";
 import { aiAgentPosts } from "./blog-data-ai-agents";
@@ -159,6 +159,8 @@ import { aiOpsPosts9 } from "./blog-data-ai-ops-9";
 import { aiOpsPosts10 } from "./blog-data-ai-ops-10";
 import { aiOpsPosts11 } from "./blog-data-ai-ops-11";
 import { aiOpsPosts12 } from "./blog-data-ai-ops-12";
+import { indiaListicles, indiaSupportPosts } from "./blog-data-india";
+import { indiaLocalPosts } from "./blog-data-india-local";
 
 export type BlogSection = {
   heading: string;
@@ -182,6 +184,8 @@ export type BlogPost = {
   excerpt: string;
   category: string;
   banner: BlogBannerVariant;
+  /** Pins the cover's interface scene; otherwise it is matched from the topic. */
+  sceneKind?: SceneKind;
   /** Describes what the banner diagram shows; used as its accessible name. */
   bannerAlt?: string;
   date: string;
@@ -2037,11 +2041,12 @@ export const posts: BlogPost[] = [
         a: "A capable agency should be explicit about post-launch support before you sign anything — what's included, what counts as a bug fix versus a new request, and whether ongoing maintenance is a separate arrangement. Vague answers here are a warning sign.",
       },
     ],
+    relatedSlugs: ["best-shopify-development-agencies-in-india"],
     content: [
       {
         heading: "Quick answer",
         body: [
-          "Choose a Shopify development agency by capability match first and price second: confirm they have done recent work like yours, ask who will do the work, how they handle speed, QA and post-launch support, and what is excluded from the quote. Ask for references and a week-by-week walkthrough of their process. Compare quotes only for equivalent scope, and treat a strong process as a better predictor than a polished portfolio.",
+          "Choose a Shopify development agency by capability match first and price second: confirm they have done recent work like yours, ask who will do the work, how they handle speed, QA and post-launch support, and what is excluded from the quote. Ask for references and a week-by-week walkthrough of their process. Compare quotes only for equivalent scope, and treat a strong process as a better predictor than a polished portfolio. For a disclosed comparison of providers, see our shortlist of [[/blogs/best-shopify-development-agencies-in-india|Shopify development agencies in India]].",
         ],
       },
       {
@@ -3075,6 +3080,9 @@ posts.push(
   ...aiOpsPosts10,
   ...aiOpsPosts11,
   ...aiOpsPosts12,
+  ...indiaListicles,
+  ...indiaSupportPosts,
+  ...indiaLocalPosts,
 );
 
 export function getPostBySlug(slug: string) {

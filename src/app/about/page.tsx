@@ -3,6 +3,7 @@ import {
   AboutHero,
   Beliefs,
   Capabilities,
+  CompanyFacts,
   FeelsObvious,
   HowWeThink,
   IdeaToReal,
@@ -15,7 +16,7 @@ import { ORG_ID, WEBSITE_ID } from "@/lib/seo";
 export const metadata: Metadata = {
   title: { absolute: "About ZSpace Labs — A Technology and Digital Product Studio" },
   description:
-    "ZSpace Labs is a technology and digital product studio bringing strategy, design and engineering together. How we think, work and partner with clients.",
+    "ZSpace Labs is a technology and digital product studio serving businesses across India and globally, with strategy, design and engineering in one team.",
   alternates: { canonical: "/about" },
 };
 
@@ -39,6 +40,7 @@ export default function AboutPage() {
       <Beliefs />
       <Capabilities />
       <FeelsObvious />
+      <CompanyFacts />
       <CTASection
         title={
           <>
@@ -46,7 +48,7 @@ export default function AboutPage() {
             <span className="text-orange-bright">worth talking about</span>.
           </>
         }
-        description="We work with founders, marketing teams and product teams anywhere in the world. The easiest next step is a conversation about what you're trying to build."
+        description="We work with founders, marketing teams and product teams across India and around the world. The easiest next step is a conversation about what you're trying to build."
         primaryLabel="Talk to ZSpace Labs"
       />
     </>

@@ -70,7 +70,7 @@ export default async function ServiceDetailPage({
           name: service.name,
           description: service.metaDescription,
           provider: { "@id": ORG_ID },
-          areaServed: "Worldwide",
+          areaServed: [{ "@type": "Country", name: "India" }, "Worldwide"],
           audience: { "@type": "BusinessAudience", audienceType: service.audience.join("; ") },
         }}
       />
@@ -93,6 +93,7 @@ export default async function ServiceDetailPage({
           name: service.name,
           accent: service.accent,
           heroCopy: service.heroCopy,
+          india: service.india,
           definition: service.definition,
           whatWeDo: service.whatWeDo,
           problems: service.problems,

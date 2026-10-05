@@ -23,6 +23,14 @@ export type Service = {
   /** Hand-picked hub articles shown as "Guides" on the service page. */
   guides: string[];
   industrySlugs?: string[];
+  /** India-wide positioning: commercial keyword, H1 and a service-specific section. */
+  india: {
+    eyebrow: string;
+    h1: string;
+    heading: string;
+    intro: string[];
+    points: { title: string; body: string }[];
+  };
 };
 
 export const services: Service[] = [
@@ -76,8 +84,35 @@ export const services: Service[] = [
       "We build on frameworks used by teams shipping at scale, not locked-in page builders.",
       "Every project ships with a component system your internal team can extend later.",
     ],
-    seoTitle: "Website Development Services | Next.js & React Websites",
-    metaDescription: "Website and web application development with Next.js, React and TypeScript: fast, SEO-ready sites, custom web apps, CMS setup, integrations and redesigns.",
+    seoTitle: "Web Development Company in India | Next.js & React",
+    metaDescription: "Web development company serving businesses across India: fast Next.js and React websites, custom web apps, ecommerce builds, redesigns and integrations.",
+    india: {
+      "eyebrow": "Web development company in India",
+      "h1": "A web development partner for businesses ready to build better.",
+      "heading": "Websites for how India actually browses and buys",
+      "intro": [
+            "We work with businesses across India, remotely, from first-time founders to established companies replacing an older site. Most of the work is the same anywhere: clear structure, fast pages, a CMS your team can use and clean integrations. What changes in India is the context the site has to perform in.",
+            "That context shapes decisions early. Pages are tested on mid-range Android phones and slower connections, not only on a fast laptop. Enquiry flows account for how people here prefer to get in touch, and the site is built so adding a regional-language version later doesn't mean a rebuild."
+      ],
+      "points": [
+            {
+                  "title": "Mobile-first, for real devices",
+                  "body": "Most visits arrive on phones, many of them mid-range Android devices on variable networks. We set performance budgets for those conditions and check Core Web Vitals on mobile before launch."
+            },
+            {
+                  "title": "Enquiries that reach the right person",
+                  "body": "Forms, click-to-call and WhatsApp links routed into your inbox or CRM, so leads from Delhi, Mumbai, Bengaluru or a tier-2 city don't get lost in a shared mailbox."
+            },
+            {
+                  "title": "Ready for more than one language",
+                  "body": "Content models and URL structures that can take Hindi or another regional language later, with the right hreflang and metadata, instead of a duplicated site."
+            },
+            {
+                  "title": "Payments and integrations",
+                  "body": "When a site sells or takes bookings, we integrate the payment gateway you use, including UPI checkout flows, plus CRM, ERP or booking systems through their APIs."
+            }
+      ]
+},
     definition: {
           "question": "What is website development?",
           "answer": [
@@ -114,8 +149,8 @@ export const services: Service[] = [
           "website-development-cost",
           "website-development-process",
           "nextjs-website-development",
-          "website-redesign-vs-rebuild",
-          "website-performance-optimization"
+          "best-web-development-agencies-in-india",
+          "how-to-choose-website-development-company"
     ],
     faq: [
       {
@@ -145,6 +180,14 @@ export const services: Service[] = [
       {
         q: "Do you provide website maintenance after launch?",
         a: "Yes. We offer ongoing support for updates, dependency and security patches, performance monitoring and new features, or we hand over documentation so your team can maintain it.",
+      },
+      {
+        q: "Do you work with businesses across India?",
+        a: "Yes. We are remote-first and work with businesses in any Indian city through video calls, shared project boards and regular demos. We don't operate local branch offices, so we don't claim a presence in cities where we don't have one.",
+      },
+      {
+        q: "What does a web development company in India typically charge?",
+        a: "Pricing varies widely across Indian agencies and depends on scope: number of page templates, custom features, integrations, content migration and whether a web application is involved. We give a fixed estimate per phase after a short discovery call rather than a one-size price. Our website development cost guide explains the main cost drivers.",
       },
     ],
   },
@@ -198,8 +241,35 @@ export const services: Service[] = [
       "Cross-platform expertise means one investment reaches both iOS and Android.",
       "We stay involved past launch to handle updates, OS changes and store requirements.",
     ],
-    seoTitle: "Mobile App Development Services | iOS & Android Apps",
-    metaDescription: "iOS and Android app development with React Native and native code: product scoping, mobile UX, backends and APIs, App Store launch and post-launch support.",
+    seoTitle: "Mobile App Development Company in India | iOS & Android",
+    metaDescription: "Mobile app development company serving businesses across India: iOS and Android apps with React Native, native where needed, from scoping to store launch.",
+    india: {
+      "eyebrow": "Mobile app development company in India",
+      "h1": "Mobile apps built around the people who use them.",
+      "heading": "Building apps for India's mobile-first users",
+      "intro": [
+            "India is one of the largest smartphone markets in the world, and most of it runs on Android. We plan apps for that reality, working with startups and businesses across India, remotely, from first product scoping through Play Store and App Store launch.",
+            "The right technical approach depends on the product. Cross-platform React Native suits most business apps because one codebase reaches Android and iOS. Native Swift or Kotlin is the better choice when an app leans heavily on device hardware, complex animation or platform-specific features."
+      ],
+      "points": [
+            {
+                  "title": "Android-first testing",
+                  "body": "We test on a range of Android devices and OS versions, not just flagship phones, because that is where most of your users are."
+            },
+            {
+                  "title": "Small downloads, low data use",
+                  "body": "App size, image delivery and offline behaviour are planned up front, so the app works on patchy connections and doesn't eat into data plans."
+            },
+            {
+                  "title": "Payments and sign-in people expect",
+                  "body": "Phone-number login with OTP, UPI and wallet payments through your payment provider, and notifications that respect users rather than spam them."
+            },
+            {
+                  "title": "Cross-platform or native, decided early",
+                  "body": "We recommend React Native or native development based on your features, team and budget, and explain the trade-off before any code is written."
+            }
+      ]
+},
     definition: {
           "question": "What is mobile app development?",
           "answer": [
@@ -236,8 +306,8 @@ export const services: Service[] = [
           "mobile-app-development-cost",
           "native-vs-cross-platform-app-development",
           "react-native-app-development",
-          "mobile-app-development-process",
-          "mobile-app-architecture"
+          "best-mobile-app-development-companies-in-india",
+          "how-to-choose-a-mobile-app-development-company"
     ],
     faq: [
       {
@@ -267,6 +337,14 @@ export const services: Service[] = [
       {
         q: "Do you design the app as well as build it?",
         a: "Yes. Mobile UX and interface design are part of the process, so flows are tested before development and the shipped app matches the design.",
+      },
+      {
+        q: "Do you build apps for startups across India?",
+        a: "Yes. We work remotely with founders and product teams in any Indian city, from first-version scoping to launch and post-launch improvements. Many projects start as a focused first version that we extend once real usage data comes in.",
+      },
+      {
+        q: "Should we build for Android first in India?",
+        a: "Often, yes, because Android has most of the market. With React Native we can usually ship Android and iOS together at little extra cost. If budget is tight, launching on Android first and adding iOS later is a reasonable path we can plan for.",
       },
     ],
   },
@@ -320,8 +398,35 @@ export const services: Service[] = [
       "Automations are engineered like software, with monitoring and fallbacks, not fragile scripts.",
       "We are honest about where AI helps and where it does not.",
     ],
-    seoTitle: "AI Automation Services | AI Workflows, Agents & Integrations",
-    metaDescription: "AI automation services for business workflows: document processing, lead routing, support automation and AI agents connected to your CRM, APIs and tools.",
+    seoTitle: "AI Automation Agency in India | Workflows & AI Agents",
+    metaDescription: "AI automation agency serving businesses across India: workflow automation, AI agents, CRM automation, document processing and integrations with your tools.",
+    india: {
+      "eyebrow": "AI automation agency in India",
+      "h1": "Less repetitive work. More room to move.",
+      "heading": "Automation that fits how Indian teams already work",
+      "intro": [
+            "Many Indian businesses run on a mix of spreadsheets, WhatsApp groups, email and a CRM or ERP that nobody fully trusts. We work with teams across India, remotely, to find the repetitive steps in that mix and automate them, sometimes with AI and often without it.",
+            "AI is the right tool when a step involves reading unstructured input like emails, documents, chats or forms and deciding what to do next. Plain workflow automation is better, cheaper and more predictable when the rules are already clear. We say which one a process needs before building anything."
+      ],
+      "points": [
+            {
+                  "title": "Lead capture and qualification",
+                  "body": "Enquiries from your website, ads and WhatsApp collected in one place, enriched, scored and routed to the right person, with follow-ups that go out on time."
+            },
+            {
+                  "title": "Documents and data entry",
+                  "body": "Invoices, purchase orders, KYC documents and forms read and extracted into your systems, with a person reviewing anything the system isn't confident about."
+            },
+            {
+                  "title": "Support and operations",
+                  "body": "Ticket triage, order-status answers and internal requests handled automatically, escalating to your team with full context when needed."
+            },
+            {
+                  "title": "Human approval where it matters",
+                  "body": "Consequential actions such as payments, refunds or customer-facing messages can require a person's approval. Every run is logged so you can see what happened."
+            }
+      ]
+},
     definition: {
           "question": "What is AI automation?",
           "answer": [
@@ -358,8 +463,8 @@ export const services: Service[] = [
           "business-process-automation",
           "ai-agent-development",
           "when-to-automate-a-business-process",
-          "intelligent-document-processing",
-          "ai-customer-support-automation"
+          "best-ai-automation-agencies-in-india",
+          "how-to-choose-an-ai-automation-agency"
     ],
     faq: [
       {
@@ -389,6 +494,14 @@ export const services: Service[] = [
       {
         q: "Can AI automation work with our existing tools?",
         a: "Usually yes. We connect to CRMs, help desks, email, spreadsheets and internal systems through APIs, webhooks or integration platforms.",
+      },
+      {
+        q: "Do you build AI automations for businesses across India?",
+        a: "Yes. We work remotely with businesses in any Indian city, starting with a review of the workflows that take the most time, then building and monitoring the automations that are worth it.",
+      },
+      {
+        q: "Is our data safe if we use AI automation?",
+        a: "We design automations so only the data a step needs is sent to an AI model, use providers and settings that don't train on your data where available, keep access scoped and log every run. We also discuss obligations under India's data protection law with you before handling personal data.",
       },
     ],
   },
@@ -442,8 +555,35 @@ export const services: Service[] = [
       "Our design decisions are grounded in usability, not just visual trend.",
       "We can carry the design directly into development under one roof.",
     ],
-    seoTitle: "UI/UX Design Services | Product Design & Design Systems",
-    metaDescription: "UI/UX and product design services: user research, flows, wireframes, prototypes, interface design, design systems and UX audits for websites, apps and SaaS.",
+    seoTitle: "UI/UX Design Agency in India | Product Design",
+    metaDescription: "UI/UX design agency serving businesses across India: user research, flows, wireframes, prototypes, interface design, design systems and UX audits.",
+    india: {
+      "eyebrow": "UI/UX design agency in India",
+      "h1": "Digital products should feel as good as they work.",
+      "heading": "Design for the full range of people who use your product",
+      "intro": [
+            "Good UX connects what users are trying to do with what the business needs them to do. Design that only looks good tends to fail on both. We work with startups, SaaS teams and established businesses across India, remotely, on research, flows, interfaces and design systems.",
+            "Designing for Indian users means designing for range: first-time internet users and power users, English and regional languages, small screens and slow networks. We design and test for that range, not just for the team building the product."
+      ],
+      "points": [
+            {
+                  "title": "Research with real users",
+                  "body": "Interviews, usability tests and analytics reviews, so design decisions rest on what people actually do rather than internal opinion."
+            },
+            {
+                  "title": "Clear flows before polish",
+                  "body": "User flows and wireframes agreed before visual design, which is where most usability problems are cheapest to fix."
+            },
+            {
+                  "title": "Language and literacy aware",
+                  "body": "Layouts that hold up when text is translated, plain-language copy and icons that don't rely on English to make sense."
+            },
+            {
+                  "title": "Design systems that scale",
+                  "body": "Components, tokens and documentation your developers can build from directly, so the product stays consistent as it grows."
+            }
+      ]
+},
     definition: {
           "question": "What is UI/UX design?",
           "answer": [
@@ -480,8 +620,8 @@ export const services: Service[] = [
           "product-design-process",
           "ux-audit",
           "design-systems-for-teams-that-move-fast",
-          "saas-product-design",
-          "accessible-ui-ux-design"
+          "best-ui-ux-design-agencies-in-india",
+          "how-to-choose-a-ui-ux-design-agency"
     ],
     faq: [
       {
@@ -511,6 +651,14 @@ export const services: Service[] = [
       {
         q: "Can you run a UX audit of our existing product?",
         a: "Yes. A UX audit reviews key journeys against usability heuristics, accessibility and analytics, and produces prioritised recommendations.",
+      },
+      {
+        q: "Do you work with product teams across India?",
+        a: "Yes. We work remotely with startups, SaaS companies and businesses in any Indian city, from a single UX audit to ongoing product design alongside your developers.",
+      },
+      {
+        q: "Do you design for regional languages?",
+        a: "Yes. We design layouts and components that handle longer or differently structured text, and plan content so a regional-language version can be added without redesigning screens.",
       },
     ],
   },
@@ -564,8 +712,35 @@ export const services: Service[] = [
       "Design and development are handled together, so the store looks as good as it performs.",
       "We focus on the metrics that affect revenue, not surface-level polish alone.",
     ],
-    seoTitle: "Shopify Development Services | Store Builds, Themes & CRO",
-    metaDescription: "Shopify development services: store builds, custom themes and sections, redesigns, app integrations, speed and conversion improvements for growing brands.",
+    seoTitle: "Shopify Development Company in India | Stores & Themes",
+    metaDescription: "Shopify development company serving brands across India: store builds, custom themes and sections, redesigns, app integrations, speed and conversion work.",
+    india: {
+      "eyebrow": "Shopify development company in India",
+      "h1": "Shopify experiences built to make buying easier.",
+      "heading": "Shopify stores for Indian D2C and retail brands",
+      "intro": [
+            "A good Shopify store is more than a nice theme. It is fast on mobile, makes products easy to find and compare, answers delivery and returns questions before they become doubts, and gets out of the way at checkout. We build and improve Shopify stores for brands across India, remotely.",
+            "Selling in India brings specific requirements: cash on delivery and UPI expectations, pin-code-level delivery promises, GST-ready invoicing and a shopping journey that often starts on Instagram or WhatsApp. We plan the store around those from the start instead of bolting on apps later."
+      ],
+      "points": [
+            {
+                  "title": "Payments and COD, configured properly",
+                  "body": "UPI, cards, wallets and cash on delivery set up through your payment provider and Shopify's settings, with clear rules so COD doesn't quietly erode margins."
+            },
+            {
+                  "title": "Delivery promises customers trust",
+                  "body": "Pin-code checks, delivery estimates and shipping integrations so buyers know when an order will arrive before they pay."
+            },
+            {
+                  "title": "Fewer apps, faster pages",
+                  "body": "We audit the app stack and build custom sections where an app would slow the theme, because speed on mobile is what most Indian shoppers notice first."
+            },
+            {
+                  "title": "Built for social-led traffic",
+                  "body": "Landing pages, collections and product pages designed for visitors arriving from Instagram, WhatsApp and marketplaces, not only from the homepage."
+            }
+      ]
+},
     definition: {
           "question": "What does Shopify development involve?",
           "answer": [
@@ -602,8 +777,8 @@ export const services: Service[] = [
           "shopify-theme-development",
           "shopify-development-cost",
           "shopify-store-redesign-guide",
-          "shopify-core-web-vitals-performance-guide",
-          "shopify-cro-guide"
+          "best-shopify-development-agencies-in-india",
+          "how-to-choose-a-shopify-development-agency"
     ],
     faq: [
       {
@@ -633,6 +808,14 @@ export const services: Service[] = [
       {
         q: "Do you work with Shopify Plus?",
         a: "Yes, including stores using Shopify Plus features. Platform features change, so we confirm current capabilities against Shopify's documentation during scoping.",
+      },
+      {
+        q: "Do you work with Shopify brands across India?",
+        a: "Yes. We work remotely with D2C and retail brands in any Indian city on new stores, redesigns, theme development, integrations and conversion improvements.",
+      },
+      {
+        q: "Can you set up COD, UPI and GST invoicing on Shopify?",
+        a: "Yes. These are configured through Shopify's settings, your payment provider and invoicing apps or integrations. We set them up, test the flows end to end and document how they work for your team.",
       },
     ],
   },
@@ -686,8 +869,35 @@ export const services: Service[] = [
       "We prioritize by impact, so your team knows exactly what to fix first.",
       "We can implement the recommendations directly if you want a single team handling both.",
     ],
-    seoTitle: "CRO Audit & Conversion Rate Optimisation Services",
-    metaDescription: "Conversion rate optimisation services: CRO audits of websites and Shopify stores, funnel and checkout analysis, UX fixes and a prioritised testing roadmap.",
+    seoTitle: "CRO Agency in India | Conversion Rate Optimisation",
+    metaDescription: "CRO agency serving businesses across India: conversion audits, funnel and checkout analysis, landing page and product page optimisation and A/B testing.",
+    india: {
+      "eyebrow": "CRO agency in India",
+      "h1": "Make more of the traffic you already have.",
+      "heading": "Conversion work grounded in your own data",
+      "intro": [
+            "Most sites lose buyers to a handful of avoidable problems: slow mobile pages, unclear offers, missing delivery or returns information, and checkouts that ask for too much. We find those problems in your own analytics and recordings, then fix the ones that matter most. We work with stores and businesses across India, remotely.",
+            "We don't promise percentage lifts before seeing your data. A good CRO engagement starts with measurement, because many apparent conversion problems turn out to be tracking problems. Then it moves to clear hypotheses and, where traffic allows, controlled tests."
+      ],
+      "points": [
+            {
+                  "title": "Mobile checkout first",
+                  "body": "For most Indian stores, mobile is where the money is lost: payment options, COD rules, OTP steps and form fields are reviewed on real phones."
+            },
+            {
+                  "title": "Trust and delivery clarity",
+                  "body": "Delivery estimates, return policies and payment security made visible where hesitation happens, not hidden in the footer."
+            },
+            {
+                  "title": "Measurement you can rely on",
+                  "body": "GA4 events, funnel definitions and data quality checked before any recommendations, so decisions rest on numbers that are right."
+            },
+            {
+                  "title": "Tests sized to your traffic",
+                  "body": "A/B tests where you have the traffic to reach a result. Where you don't, we use prioritised fixes and before-and-after measurement instead."
+            }
+      ]
+},
     definition: {
           "question": "What is a CRO audit?",
           "answer": [
@@ -724,8 +934,8 @@ export const services: Service[] = [
           "ecommerce-cro-audit",
           "shopify-cro-audit",
           "ux-audit",
-          "shopify-checkout-optimization",
-          "ecommerce-cro-testing-roadmap"
+          "best-cro-agencies-in-india",
+          "how-to-choose-a-cro-agency"
     ],
     faq: [
       {
@@ -755,6 +965,14 @@ export const services: Service[] = [
       {
         q: "Can you also run A/B tests?",
         a: "Yes. We can design and run tests, or provide a roadmap and specifications for your team.",
+      },
+      {
+        q: "Do you run CRO for businesses across India?",
+        a: "Yes. We work remotely with ecommerce brands, SaaS companies and lead-generation businesses in any Indian city, starting with an audit and moving to implementation and testing.",
+      },
+      {
+        q: "How much traffic do we need for A/B testing?",
+        a: "It depends on your current conversion rate and the size of change you want to detect. Lower-traffic sites usually can't reach reliable test results in a reasonable time. For them we prioritise high-confidence fixes and measure before and after instead of running underpowered tests.",
       },
     ],
   },
