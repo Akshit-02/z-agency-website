@@ -381,6 +381,7 @@ export const aiCorePosts2: BlogPost[] = [
     bannerAlt:
       "Human-in-the-loop modes in four columns: before action (review draft, edit freely, nothing sent, training data), approve action highlighted (show the plan, one-click approve, then execute, audit trail), after action (sample review, spot checks, undo window, quality score) and on doubt (low confidence, high value, policy match, escalate).",
     date: "2026-10-02",
+    updated: "2026-10-07",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "ui-ux-design"],
     relatedIndustrySlugs: ["fintech", "healthcare-healthtech", "b2b-enterprise"],
@@ -459,6 +460,7 @@ export const aiCorePosts2: BlogPost[] = [
         heading: "Accountability and Audit Trails",
         body: [
           "Record who approved what, when, with which evidence and AI version. When something goes wrong, you need to know whether the AI proposed it, a person approved it or a policy allowed it automatically. Clear ownership also matters: each automated process should have a named owner responsible for its review rules and outcomes.",
+          "Approval design is one part of accountability for agents. Who owns an agent, how responsibility toward customers works and what evidence to keep are covered in [[/blogs/ai-agent-accountability|who is responsible when an AI agent makes a mistake]], and what to do when an approved action still goes wrong is in [[/blogs/ai-agent-incident-response|AI agent incident response]].",
         ],
       },
       {
@@ -562,6 +564,7 @@ export const aiCorePosts2: BlogPost[] = [
     bannerAlt:
       "AI agent evaluation metrics in four columns: outcome (task success, correct end state, human acceptance, escalation rate), steps highlighted (tool choice, valid arguments, step count, loops avoided), quality (groundedness, policy compliance, tone, safety) and operations (latency, cost per task, error rate, regression).",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "fintech"],
@@ -733,9 +736,34 @@ export const aiCorePosts2: BlogPost[] = [
         },
       },
       {
+        heading: "Production Sign-Off: What Must Pass Before Go-Live",
+        body: [
+          "Before an agent handles real cases unsupervised, agree pass thresholds across every dimension, not just answer quality. A practical sign-off covers:",
+        ],
+        table: {
+          headers: ["Dimension", "What to check", "Example threshold"],
+          rows: [
+            ["Task success", "Share of test cases completed correctly end to end", "Agreed target per case type"],
+            ["Factual accuracy", "Answers grounded in approved sources", "No unsupported claims on policy or price"],
+            ["Tool-call accuracy", "Right tool, right arguments, no unnecessary calls", "Wrong-tool rate below target"],
+            ["Reliability", "Same input gives acceptable output across repeated runs", "Consistent on repeated runs"],
+            ["Latency and cost", "Time and cost per completed task", "Within budget at expected volume"],
+            ["Security and permissions", "Injection attempts, out-of-scope requests, permission boundaries", "No unauthorized actions"],
+            ["Failure recovery", "Behaviour when tools fail or data is missing", "Escalates with context; no loops"],
+            ["Escalation", "Hands off the right cases to people", "No high-risk case handled alone"],
+            ["Regression", "Full test set re-run on every model, prompt or tool change", "No drop beyond agreed tolerance"],
+          ],
+        },
+        callout: {
+          type: "tip",
+          text: "Pair this sign-off with the autonomy level you plan to grant: stricter thresholds for higher autonomy. See [[/blogs/ai-agent-autonomy-levels|how much autonomy to give an AI agent]] and [[/blogs/runaway-ai-agents|how to stop agents looping and overspending]].",
+        },
+      },
+      {
         heading: "Conclusion",
         body: [
           "Agent evaluation is how you earn the right to automate. Build datasets from real cases, score outcomes and trajectories, gate releases and keep learning from production. Related: [[/blogs/ai-agent-observability|observability]], [[/blogs/ai-agent-guardrails|guardrails]] and [[/blogs/ai-agent-development|agent development]].",
+          "Run these evaluations in an isolated environment with mock tools before production access ([[/blogs/ai-agent-sandbox|AI agent sandbox]]), and include unsupported-claim checks from [[/blogs/reduce-ai-agent-hallucinations|reducing AI agent hallucinations]].",
         ],
       },
     ],

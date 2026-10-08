@@ -24,6 +24,7 @@ export const aiAppsPosts9: BlogPost[] = [
     bannerAlt:
       "AI readiness assessment in four columns: process (documented, measured, owned, stable), data highlighted (available, accurate, accessible, permitted), technology (APIs, identity, cloud, monitoring) and people and risk (skills, sponsors, policies, risk appetite).",
     date: "2026-10-02",
+    updated: "2026-10-07",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["b2b-enterprise", "professional-services", "manufacturing"],
@@ -88,7 +89,9 @@ export const aiAppsPosts9: BlogPost[] = [
       },
       {
         heading: "From Gaps to Roadmap",
-        body: [],
+        body: [
+          "Many gaps found in assessments are systems gaps rather than AI gaps: data without a clear system of record, core systems without APIs, shared credentials and no audit trail. [[/blogs/ai-ready-business-stack|The AI-ready business stack]] organizes those into seven layers you can use to structure the roadmap.",
+        ],
         checklist: [
           "Use cases ready now: start with a pilot",
           "Use cases blocked by data: plan data work with owners",
@@ -226,6 +229,7 @@ export const aiAppsPosts9: BlogPost[] = [
     bannerAlt:
       "AI data readiness in four columns: quality (accuracy, completeness, freshness, duplicates), access (APIs, exports, latency, volume), context highlighted (metadata, definitions, lineage, examples) and governance (owners, permissions, consent, retention).",
     date: "2026-10-02",
+    updated: "2026-10-07",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["b2b-enterprise", "fintech", "healthcare-healthtech"],
@@ -252,6 +256,7 @@ export const aiAppsPosts9: BlogPost[] = [
         body: [
           "Data is one dimension of an [[/blogs/ai-readiness-assessment|AI readiness assessment]]. Document data for retrieval is covered in [[/blogs/enterprise-rag-architecture|enterprise RAG architecture]] and [[/blogs/rag-chunking-strategies|chunking]], privacy in [[/blogs/ai-data-privacy|AI data privacy]] and analytics foundations in [[/blogs/ecommerce-data-warehouse|data warehouses]].",
           "The engineering side, including pipelines, ingestion, quality checks and lineage, is covered in [[/blogs/ai-data-engineering|AI data engineering]] and [[/blogs/data-quality-for-ai|data quality for AI]].",
+          "Preparing data is half the job; the other half is getting the right facts to a model at the right moment. For agents, see [[/blogs/context-engineering-ai-agents|context engineering]], which covers retrieval, tools, history and the unwritten rules people apply.",
         ],
       },
       {
@@ -416,6 +421,7 @@ export const aiAppsPosts9: BlogPost[] = [
     bannerAlt:
       "AI governance lifecycle: register, classify risk (highlighted), assess, approve, monitor, review or retire; the note says governance is a lifecycle, not a one-time approval.",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["b2b-enterprise", "fintech", "healthcare-healthtech"],
@@ -538,6 +544,7 @@ export const aiAppsPosts9: BlogPost[] = [
         heading: "Third-Party and Shadow AI",
         body: [
           "Much AI use arrives through vendors' products and employees' own tools. Include AI features in vendor due diligence, require disclosure of AI use and data handling in contracts, provide approved alternatives so people are less tempted by unapproved tools, and use discovery (expense reports, network and identity logs, surveys) to find shadow AI. Bring discovered tools into the inventory rather than banning them blindly. Security considerations are in [[/blogs/ai-security-business-applications|AI security]].",
+          "For agents and automations specifically, see [[/blogs/shadow-ai-agents|how to discover and govern shadow AI agents]] and [[/blogs/ai-agent-vendor-assessment|how to assess an AI agent vendor]].",
         ],
       },
       {
@@ -586,6 +593,7 @@ export const aiAppsPosts9: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "AI governance is a lifecycle with clear owners, proportional controls and continuous monitoring. Related: [[/blogs/ai-security-business-applications|AI security]] and [[/blogs/ai-data-privacy|AI data privacy]].",
+          "For governance of AI agents that act, including runtime enforcement, see [[/blogs/ai-agent-governance|AI agent governance]]; for the certifiable management system standard, see [[/blogs/iso-42001-ai-management-system|ISO/IEC 42001]].",
         ],
       },
     ],

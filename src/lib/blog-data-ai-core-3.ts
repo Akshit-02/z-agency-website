@@ -204,6 +204,7 @@ export const aiCorePosts3: BlogPost[] = [
     bannerAlt:
       "AI agent observability in four columns: traces (one per run, correlation IDs, user and tenant, version), spans highlighted (model calls, tool calls, retrieval, approvals), metrics (tokens and cost, latency, errors, escalations) and evaluations (online scores, feedback, sampled review, drift).",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],
@@ -370,6 +371,7 @@ export const aiCorePosts3: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "You cannot run agents responsibly without seeing inside them. Trace every step, track cost and quality, alert on what matters and protect the data. Related: [[/blogs/ai-agent-evaluation|evaluation]], [[/blogs/llm-cost-optimization|LLM cost optimization]] and [[/blogs/ai-agent-guardrails|guardrails]].",
+          "Observability tells you when something is wrong; limits stop it getting worse. Pair tracing with step limits, budgets and circuit breakers ([[/blogs/runaway-ai-agents|runaway AI agents]]), and use durable workflow history as an audit trail for long-running agents ([[/blogs/durable-ai-agents|durable execution]]).",
         ],
       },
     ],

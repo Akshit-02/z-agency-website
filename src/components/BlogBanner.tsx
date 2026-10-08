@@ -807,7 +807,67 @@ export type BlogBannerVariant =
   | "batchcachemap"
   | "edgevscloud"
   | "selfhostvsapi"
-  | "aiplatformmap";
+  | "aiplatformmap"
+  | "aivisibilityflow"
+  | "aitrafficflow"
+  | "agentwebflow"
+  | "agentverifyflow"
+  | "tooldesignflow"
+  | "vibehardenflow"
+  | "aicodesecflow"
+  | "codingagentsecflow"
+  | "ondeviceflow"
+  | "assistantintentflow"
+  | "geovsseo"
+  | "aicrawlers"
+  | "llmstxtcompare"
+  | "owaspagentic"
+  | "vibevsprod"
+  | "aidevcost"
+  | "codingtoolscompare"
+  | "agentroiflow"
+  | "contextflow"
+  | "agentidflow"
+  | "agentgovflow"
+  | "agentincidentflow"
+  | "aicommerceflow"
+  | "agentfitcompare"
+  | "agentfailmap"
+  | "aireadystack"
+  | "agentinterfaces"
+  | "buildvsbuyagents"
+  | "aicommercemetrics"
+  | "autonomylevels"
+  | "runawaycontrols"
+  | "durableagentflow"
+  | "specdrivenflow"
+  | "ainativeteam"
+  | "mcpgovflow"
+  | "hybridaiflow"
+  | "agentorderflow"
+  | "interfacelayers"
+  | "computerusecompare"
+  | "aicodingpolicy"
+  | "aicodingmetrics"
+  | "slmvsllm"
+  | "agentauditflow"
+  | "rollbacktree"
+  | "toolselectflow"
+  | "hallucinationlayers"
+  | "structuredoutputflow"
+  | "aiautomationarch"
+  | "sandboxcompare"
+  | "integrationcompare"
+  | "shadowaiflow"
+  | "agentlifecycleflow"
+  | "iso42001cycle"
+  | "agentgovlayers"
+  | "controlplanemap"
+  | "vendorassessmap"
+  | "ainativecompare"
+  | "saasainativeflow"
+  | "aidebtmap"
+  | "aicoemodels";
 
 const INK = "#0b0c0e";
 const LINE = "#d3d0c8";
@@ -1199,6 +1259,40 @@ const FLOWS: Partial<Record<BlogBannerVariant, FlowSpec>> = {
   edgeflow: { steps: ["Input", "On-device|inference", "Local|action", "Queue if|offline", "Sync to|cloud", "Signed|updates"], highlight: 1 },
   selfhostflow: { steps: ["Model +|licence", "Verify|weights", "Hardware", "Inference|engine", "Gateway", "Monitor +|update"], highlight: 3 },
   aiplatformflow: { steps: ["Team app", "Platform|SDK", "Model|gateway", "Models", "Shared|services", "Tracing +|cost"], highlight: 2 },
+  aivisibilityflow: { steps: ["Your pages", "Crawl|access", "Index", "Retrieval", "AI answer", "Citation|+ click"], highlight: 2 },
+  aitrafficflow: { steps: ["AI answer", "Impressions|(GSC)", "Referral|visit", "GA4|channel", "Conversion", "Monthly|review"], highlight: 3 },
+  agentwebflow: { steps: ["User goal", "Agent|plans", "Reads|page", "Acts", "Confirms|with user", "Task done"], highlight: 2, branch: { from: 2, label: "screenshot · HTML · accessibility tree" } },
+  agentverifyflow: { steps: ["Request", "Read sig|headers", "Fetch key|directory", "Verify|signature", "Apply|policy", "Allow /|limit"], highlight: 3, branch: { from: 3, label: "unsigned → rate-limit or challenge" } },
+  tooldesignflow: { steps: ["Pick the|task", "Name +|describe", "Input|schema", "Execute|safely", "Useful|output", "Evaluate"], highlight: 3, loop: "refine from real transcripts" },
+  vibehardenflow: { steps: ["Audit", "Auth +|data access", "Secrets", "Data|model", "Tests", "Monitor +|deploy"], highlight: 1 },
+  aicodesecflow: { steps: ["Generate", "Static|scan", "Dependency|check", "Human|review", "Security|tests", "Ship"], highlight: 3 },
+  codingagentsecflow: { steps: ["Agent", "Permission|rules", "Sandbox", "Scoped|credentials", "Branch +|PR review", "Protected|main"], highlight: 2 },
+  ondeviceflow: { steps: ["User input", "Device|capable?", "On-device|model", "Structured|output", "Response"], highlight: 2, branch: { from: 1, label: "not supported → cloud fallback" } },
+  assistantintentflow: { steps: ["User asks", "Assistant", "Finds app|action", "App runs|it", "Confirm|if needed", "Result|shown"], highlight: 2 },
+  agentroiflow: { steps: ["Business|process", "Current|cost", "Automation|potential", "Agent cost", "Risk +|review", "Expected|value"], highlight: 3 },
+  contextflow: { steps: ["Instructions", "Task +|user", "Retrieved|facts", "Tool|results", "Compacted|history", "Model call"], highlight: 3 },
+  agentidflow: { steps: ["User|signs in", "Consent to|scopes", "Agent|identity", "Delegated|token", "API checks|scopes", "Audit log"], highlight: 3 },
+  agentgovflow: { steps: ["Agent", "Identity", "Permissions", "Tool|access", "Approval", "Execution", "Audit log"], highlight: 4 },
+  agentincidentflow: { steps: ["Detect", "Contain", "Assess|impact", "Reverse +|remediate", "Root cause", "Fix +|re-evaluate"], highlight: 1, loop: "update the runbook" },
+  aicommerceflow: { steps: ["AI query", "Product|discovery", "Comparison", "Recommend-|ation", "Checkout", "Attribution"], highlight: 3 },
+  autonomylevels: { steps: ["Suggest", "Draft", "Execute|w/ approval", "Execute in|boundaries", "Autonomous"], highlight: 3, loop: "raise or lower the level based on evidence" },
+  runawaycontrols: { steps: ["Step limit", "Token +|cost budget", "Timeouts", "Retry|budget", "Circuit|breaker", "Escalate to|a person"], highlight: 4 },
+  durableagentflow: { steps: ["Start", "Step +|checkpoint", "Tool call", "Crash or|rate limit", "Resume from|checkpoint", "Complete"], highlight: 1, branch: { from: 2, label: "wait for human approval" } },
+  specdrivenflow: { steps: ["Requirement", "Spec", "Plan", "Tasks", "Implement|+ test", "Review|+ CI", "Deploy +|monitor"], highlight: 1, loop: "human approval after spec, plan and review" },
+  ainativeteam: { steps: ["Product|decisions", "Architecture", "Specs", "Agents|implement", "Review +|validation", "Operate +|measure"], highlight: 3 },
+  mcpgovflow: { steps: ["Request a|server", "Security|review", "Add to|registry", "Allowlist|in clients", "Gateway|+ auth", "Monitor +|review"], highlight: 3 },
+  hybridaiflow: { steps: ["User", "Application", "Local model", "Router", "Cloud model", "Business|APIs"], highlight: 3, branch: { from: 2, label: "fallback when local cannot answer" } },
+  agentorderflow: { steps: ["Agent order", "Identify|channel", "Fraud|screen", "Confirm with|customer", "Fulfil", "Returns +|service"], highlight: 2 },
+  interfacelayers: { steps: ["Web", "App", "API", "AI|interface", "AI agent"], highlight: 4, loop: "the website and its data sit underneath every layer" },
+  agentauditflow: { steps: ["Request|(who + task)", "Agent run|(trace ID)", "Tool calls", "Approvals", "Resulting|changes", "Append-only|store"], highlight: 2 },
+  rollbacktree: { steps: ["Wrong action|found", "Still|pending?", "Reversible|operation?", "Compensating|action", "Correct +|notify", "Record in|audit"], highlight: 3 },
+  toolselectflow: { steps: ["Task", "Scope by|permission", "Route to|toolset", "Tool search", "Choose +|validate", "Call tool"], highlight: 3 },
+  hallucinationlayers: { steps: ["Ground in|sources", "Verify with|tools", "Structured|output", "Business|rules", "Confidence|threshold", "Post-action|check"], highlight: 3 },
+  structuredoutputflow: { steps: ["Define|schema", "Model|generates", "Schema|enforced", "Business|validation", "Use in|system", "Log +|monitor"], highlight: 2 },
+  aiautomationarch: { steps: ["User", "Interface", "Agent layer", "Workflow|layer", "APIs +|events", "Business|systems"], highlight: 3, loop: "human approval and monitoring across the flow" },
+  shadowaiflow: { steps: ["Discover", "Classify|by risk", "Decide", "Secure", "Register", "Review"], highlight: 1 },
+  agentlifecycleflow: { steps: ["Discover", "Design", "Build +|test", "Approve +|deploy", "Monitor +|update", "Retire"], highlight: 4, loop: "every change returns to testing" },
+  iso42001cycle: { steps: ["Context +|scope", "Leadership|+ policy", "Risk +|impact", "Controls", "Operate +|monitor", "Audit +|improve"], highlight: 2, loop: "continual improvement" },
 };
 
 function LabeledFlow({ spec }: { spec: FlowSpec }) {
@@ -4670,6 +4764,32 @@ const ANATOMIES: Partial<Record<BlogBannerVariant, AnatomySpec>> = {
   selfhostvsapi: compareSpec(["Self-hosted", "Hosted API"], [["Data", "Stays inside", "Provider terms"], ["Models", "Open-weight", "Incl. frontier"], ["Low volume", "Costly", "Cheaper"], ["High volume", "Can be lower", "Linear"], ["Operations", "Your team", "Provider"]], { hotCol: 0 }),
 
   aiplatformmap: columnsSpec(["Access", "Shared services", "Delivery", "Governance"], [["Gateway", "Keys, quotas", "Routing", "Fallbacks"], ["Retrieval", "Evaluation", "Tracing", "Prompt registry"], ["Templates", "CI gates", "Deploy", "Environments"], ["Policies", "Inventory", "Cost reports", "Audit"]], { top: "AI platform", hotCol: 1 }),
+  geovsseo: compareSpec(["SEO", "GEO"], [["Goal", "Rank a page", "Be cited in answers"], ["Unit", "Whole page", "Passages and facts"], ["Result", "List of links", "Answer + sources"], ["Measurement", "Rankings, clicks", "AI impressions, referrals"], ["Foundation", "Crawl, index, quality", "The same"]], { hotCol: 1 }),
+  aicrawlers: columnsSpec(["Training", "Search", "User-triggered"], [["GPTBot", "ClaudeBot", "Google-Extended", "CCBot"], ["OAI-SearchBot", "Claude-SearchBot", "PerplexityBot", "Googlebot"], ["ChatGPT-User", "Claude-User", "Perplexity-User"]], { hotCol: 1, note: "three groups, three separate decisions" }),
+  llmstxtcompare: compareSpec(["llms.txt", "robots.txt", "sitemap.xml"], [["Purpose", "Reading guide", "Access rules", "URL list"], ["Audience", "LLM tools", "Crawlers", "Search engines"], ["Format", "Markdown", "Plain text", "XML"], ["Used by", "Dev tools", "Major crawlers", "Google, Bing"], ["Google Search", "Ignored", "Respected", "Used"]], { hotCol: 0 }),
+  owaspagentic: columnsSpec(["Inputs", "Actions", "System", "People"], [["Goal hijack", "Memory poisoning"], ["Tool misuse", "Identity abuse", "Code execution"], ["Supply chain", "Agent messages", "Cascades"], ["Trust exploits", "Rogue agents"]], { top: "OWASP Top 10 for Agentic Applications", hotCol: 1 }),
+  vibevsprod: compareSpec(["Vibe coding", "Production"], [["Goal", "Works now", "Keeps working"], ["Code review", "None", "Human + CI"], ["Security", "Generated defaults", "Designed"], ["Testing", "Clicking around", "Automated"], ["When it breaks", "Prompt again", "Monitor, roll back"]], { hotCol: 1 }),
+  aidevcost: compareSpec(["Effect of AI tools"], [["Discovery + design", "Small"], ["Implementation", "Large"], ["Automated tests", "Large"], ["Integration", "Small to moderate"], ["Review + QA", "Can increase"], ["Operations", "Small"]], { hotCol: 0 }),
+  codingtoolscompare: compareSpec(["Claude Code", "Codex", "Cursor"], [["Home", "Agent, any surface", "Agent, any surface", "AI-native editor"], ["Also runs in", "Terminal, IDE, web", "CLI, IDE, cloud", "Cloud agents"], ["Cloud agents", "Yes", "Yes", "Yes (VMs)"], ["Repo rules", "CLAUDE.md, AGENTS.md", "AGENTS.md", "Rules, AGENTS.md"], ["Code review", "GitHub, GitLab CI", "GitHub", "In product"]]),
+  agentfitcompare: compareSpec(["Rules", "AI workflow", "AI agent"], [["Inputs", "Structured", "Messy steps", "Varied"], ["Path", "Fixed", "Fixed", "Decided per case"], ["Decisions", "Rules", "Model per step", "Model plans"], ["Cost per run", "Lowest", "Low", "Highest"], ["Best for", "Sync, approvals", "Triage, capture", "Investigations"]], { hotCol: 2 }),
+  agentfailmap: columnsSpec(["Data + context", "Integration", "Operations", "Organization"], [["Stale data", "Missing context", "Permissions"], ["Brittle tools", "Rate limits", "Side effects"], ["No evaluation", "No monitoring", "Cost drift"], ["No owner", "Unclear scope", "Low adoption"]], { hotCol: 1 }),
+  aireadystack: columnsSpec(["Foundation", "Control", "Operations"], [["Data + records", "Access: APIs", "Actions: tools"], ["Identity", "Permissions", "Approvals"], ["Workflow", "Observability", "Governance"]], { top: "Models and interfaces sit on top", hotCol: 1 }),
+  agentinterfaces: columnsSpec(["Human path", "Agent path"], [["Human", "Website", "Business systems"], ["AI agent", "Structured data", "API / MCP server", "Business systems"]], { hotCol: 1 }),
+  buildvsbuyagents: compareSpec(["Platform", "Custom", "Hybrid"], [["Time to start", "Fast", "Slower", "Fast for core"], ["Process fit", "Standard", "Exact", "Both"], ["Integrations", "In ecosystem", "Any system", "Via APIs + MCP"], ["Control", "Vendor rules", "Full", "Where needed"], ["Cost model", "Seats, credits", "Build + usage", "Mixed"]], { hotCol: 2 }),
+  aicommercemetrics: columnsSpec(["AI referrals", "Google AI", "Agent orders", "Survey"], [["GA4 AI channel", "utm chatgpt.com"], ["Search Console", "Organic Search"], ["Platform channel", "Order source"], ["Post-purchase", "Influence"]], { top: "Revenue, conversion and cohorts in one report", hotCol: 2 }),
+  computerusecompare: compareSpec(["API", "RPA", "Computer use"], [["Setup", "Engineering", "Script", "Instructions"], ["Handles change", "Not affected", "Often breaks", "Usually adapts"], ["Speed", "Fastest", "Fast", "Slow"], ["Cost per task", "Lowest", "Low", "Highest"], ["Best for", "Systems with APIs", "Stable screens", "No-API systems"]], { hotCol: 2 }),
+  aicodingpolicy: columnsSpec(["Tools + data", "Agent access", "Delivery", "Accountability"], [["Approved tools", "Data rules", "Licensing"], ["Repo permissions", "Secrets", "MCP servers"], ["Branch protection", "Review", "CI"], ["Audit logs", "Prod access", "Ownership"]], { hotCol: 1 }),
+  aicodingmetrics: columnsSpec(["Delivery", "Stability", "Review + flow", "Cost + experience"], [["Lead time", "Deploy frequency"], ["Change failures", "Recovery time", "Rework"], ["PR size", "Review time"], ["Tool spend", "Dev survey"]], { hotCol: 1 }),
+  slmvsllm: compareSpec(["Small model", "Large model"], [["Cost per task", "Low", "Higher"], ["Latency", "Fast", "Slower"], ["Deployment", "Device, 1 GPU", "API, GPU cluster"], ["Best tasks", "Classify, extract", "Reason, plan"], ["Weak spots", "Breadth, long context", "Cost at volume"]], { hotCol: 0 }),
+  sandboxcompare: compareSpec(["Sandbox", "Staging", "Production"], [["Data", "Synthetic", "Masked", "Real"], ["Tools", "Mocks, test modes", "Real, test mode", "Real"], ["Network", "Allowlist", "Restricted", "Production"], ["Secrets", "Test keys", "Staging keys", "Scoped prod keys"], ["Purpose", "Explore + test", "Validate release", "Serve users"]], { hotCol: 0 }),
+  integrationcompare: compareSpec(["API", "Webhook", "MCP", "RPA"], [["Best for", "Actions", "Events", "AI tool access", "No-API systems"], ["Direction", "You call", "They call", "AI calls", "Screens"], ["Reliability", "High", "High*", "Varies", "Low–medium"], ["Typical use", "Update record", "Order created", "Agent tools", "Legacy portal"]], { hotCol: 2, note: "* with idempotency and reconciliation" }),
+  agentgovlayers: columnsSpec(["Who + what", "Rules", "Watch", "Respond"], [["Identity", "Access"], ["Policy", "Runtime controls"], ["Observability", "Evaluation"], ["Audit", "Incident response"]], { top: "AI agent governance", hotCol: 1 }),
+  controlplanemap: columnsSpec(["Control plane", "Data plane"], [["Registry", "Identity", "Policy", "Cost + budgets", "Lifecycle"], ["Agents", "Model gateway", "Tool gateway", "Business systems"]], { hotCol: 0, note: "configuration flows down, telemetry flows up" }),
+  vendorassessmap: columnsSpec(["Data", "Security", "Controls", "Quality", "Exit"], [["Training use", "Residency", "Retention"], ["Identity", "Permissions", "Injection"], ["Approvals", "Limits", "Audit"], ["Evaluation", "Model changes", "Incidents"], ["Export", "Standards"]], { hotCol: 1 }),
+  ainativecompare: compareSpec(["AI-enabled", "AI-native"], [["Architecture", "AI at a few points", "AI layer designed in"], ["UX", "Panel or button", "Goals, plans, approvals"], ["Data", "Existing model", "Built for retrieval + action"], ["Evaluation", "Spot checks", "Every release"], ["Permissions", "User only", "Agent + delegated"]], { hotCol: 1 }),
+  saasainativeflow: columnsSpec(["Discover", "Design", "Build", "Prove"], [["Opportunities", "Workflows"], ["Assist points", "Action points"], ["Tools", "Controls", "Evaluation"], ["Pilot", "Measure", "Scale"]], { hotCol: 2 }),
+  aidebtmap: columnsSpec(["Knowledge", "Integration", "Quality", "Dependencies"], [["Prompts", "Workflows", "Ownership"], ["Hard-coded APIs", "Stale tools", "Credentials"], ["No evaluation", "No monitoring"], ["Model lock-in", "Vendor lock-in", "Data drift"]], { hotCol: 1 }),
+  aicoemodels: compareSpec(["Startup", "Mid-market", "Enterprise"], [["Team", "Named owner", "Small hub", "Hub + spokes"], ["Standards", "Checklist", "Reference arch.", "Formal"], ["Platform", "1–2 tools", "Shared gateway", "Control plane"], ["Delivery", "Builders", "Hub + teams", "Spokes"], ["Governance", "Monthly review", "Risk tiers", "Board + audit"]], { hotCol: 1 }),
 
 };
 

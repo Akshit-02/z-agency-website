@@ -22,6 +22,7 @@ export const aiCorePosts10: BlogPost[] = [
     bannerAlt:
       "Comparison of three LLM routing strategies (static by task highlighted, classifier router, cascade) by how they work, pros, cons and what they need.",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "5 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],
@@ -174,6 +175,7 @@ export const aiCorePosts10: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Routing matches models to tasks using evidence. Start static, evaluate per task, add smarter routing only where it pays and re-test as models evolve. Related: [[/blogs/llm-gateway|LLM gateway]] and [[/blogs/llm-cost-optimization|LLM cost optimization]].",
+          "Routing works best when the cheaper option is genuinely good enough; see [[/blogs/small-language-models|small language models for business]] for how to test that, and [[/blogs/hybrid-ai-architecture|hybrid AI architecture]] for routing between local and cloud models.",
         ],
       },
     ],
@@ -191,6 +193,7 @@ export const aiCorePosts10: BlogPost[] = [
     bannerAlt:
       "AI orchestration in four columns: inputs (user request, events, schedules, documents), orchestration highlighted (flow or graph, state, retries, branching), capabilities (models, retrieval, tools, agents) and controls (validation, approvals, tracing, budgets).",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "5 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],
@@ -346,6 +349,7 @@ export const aiCorePosts10: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "AI orchestration is ordinary software engineering applied to probabilistic components: explicit flows, validated hand-offs, durable state and full visibility. Related: [[/blogs/ai-agent-orchestration|agent orchestration]], [[/blogs/ai-workflow-automation|AI workflow automation]] and [[/blogs/llm-routing|LLM routing]].",
+          "For a full reference architecture that places orchestration alongside interfaces, integrations, approvals and monitoring, see [[/blogs/ai-automation-architecture|AI automation architecture]].",
         ],
       },
     ],
@@ -363,6 +367,7 @@ export const aiCorePosts10: BlogPost[] = [
     bannerAlt:
       "AI agent memory in four columns: working (current step, scratchpad, tool results, discarded), session (conversation, summaries, task state, expires), long-term highlighted (user preferences, facts, consent, editable) and shared (knowledge base, policies, organization data, permissioned).",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce"],
@@ -506,6 +511,21 @@ export const aiCorePosts10: BlogPost[] = [
           title: "Want personalization without privacy risk?",
           description: "Talk to ZSpace Labs about [[/services/ai-automation|AI agent development with memory]] and [[/services/ui-ux-design|memory controls and settings UX]].",
         },
+      },
+      {
+        heading: "Memory Governance: What to Keep, What to Forget",
+        body: [
+          "Long-term memory is personal data and a security surface, so govern it deliberately. Decide which kinds of information may be stored (preferences and task facts, yes; passwords, payment details and special-category data, no), scope every memory to a user or tenant, and record where each memory came from. Set retention periods and expire memories that are no longer useful; stale memories mislead agents as much as missing ones.",
+          "Give users visibility and control: the ability to see and delete what an agent remembers supports privacy obligations and trust. Treat memory writes as a risk: content an agent reads can try to plant instructions or false facts that steer later runs (memory and context poisoning in the [[/blogs/owasp-top-10-agentic-applications|OWASP agentic Top 10]]), so validate what gets stored and never let a memory change permissions. For how memory fits with retrieval and tools at run time, see [[/blogs/context-engineering-ai-agents|context engineering]].",
+        ],
+        checklist: [
+          "Allowed and forbidden memory types written down",
+          "Per-user or per-tenant scoping; no cross-customer recall",
+          "Source and timestamp stored with each memory",
+          "Retention periods and automatic expiry",
+          "User-facing view and delete; deletion honoured in backups and indexes",
+          "Validation before writing; memories cannot grant permissions",
+        ],
       },
       {
         heading: "Conclusion",

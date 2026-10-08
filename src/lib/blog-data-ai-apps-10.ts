@@ -585,6 +585,7 @@ export const aiAppsPosts10: BlogPost[] = [
     bannerAlt:
       "Comparison of proof of concept, pilot (highlighted) and production by the question each answers, users, data, duration and exit outcome.",
     date: "2026-10-02",
+    updated: "2026-10-07",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["b2b-enterprise", "startups", "saas-technology"],
@@ -676,6 +677,7 @@ export const aiAppsPosts10: BlogPost[] = [
         heading: "Why Projects Stall in Pilot",
         body: [
           "Pilots stall when nobody owns the business outcome, when success was never defined, when the pilot ran outside real workflows so adoption could not be measured, when security or data questions were deferred, or when production cost and staffing were never budgeted. Each of these is preventable at the start of the pilot rather than discovered at the end.",
+          "AI agents add their own production problems on top of these: missing context people take for granted, brittle tool integrations, permissions that are too broad or too narrow, and costs that grow with multi-step runs. Our guide to [[/blogs/why-ai-agents-fail-in-production|why AI agents fail in production]] lists twelve of them with a readiness gate, and [[/blogs/ai-agent-roi|how to calculate AI agent ROI]] covers setting kill criteria before a pilot starts.",
         ],
       },
       {

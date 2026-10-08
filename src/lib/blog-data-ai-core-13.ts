@@ -228,6 +228,7 @@ export const aiCorePosts13: BlogPost[] = [
     bannerAlt:
       "AI implementation roadmap: discover, prioritize, data readiness, pilot, evaluate (highlighted), scale and govern; the note says a pilot without success criteria is a demo.",
     date: "2026-10-02",
+    updated: "2026-10-07",
     readingTime: "8 min read",
     relatedServiceSlugs: ["ai-automation", "website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["b2b-enterprise", "startups", "professional-services"],
@@ -301,6 +302,7 @@ export const aiCorePosts13: BlogPost[] = [
         heading: "Step 4: Build an Honest Business Case",
         body: [
           "Start from a measured baseline: volume, time per case, error and rework rates, cost and customer impact. State assumptions explicitly: share of cases the AI can handle, accuracy, review time per case, adoption. Include build cost, running cost (model usage, infrastructure, monitoring) and ongoing maintenance. Present a range, not a single number, and plan to replace assumptions with pilot data. Avoid importing headline productivity statistics that have nothing to do with your process.",
+          "For agent projects specifically, our guide to [[/blogs/ai-agent-roi|calculating AI agent ROI]] gives a scenario model that includes review, error and maintenance costs, and [[/blogs/which-processes-suit-ai-agents|which processes suit AI agents]] helps decide whether a process needs an agent at all or simpler workflow automation.",
         ],
         cta: {
           title: "Need help choosing which AI projects to fund?",

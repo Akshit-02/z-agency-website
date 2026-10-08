@@ -23,6 +23,7 @@ export const aiAppsPosts3: BlogPost[] = [
     bannerAlt:
       "Legacy modernization flow: inventory, map dependencies, add tests (highlighted), refactor in slices, migrate, retire old; the note says tests come first because they make AI-assisted changes safe.",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "7 min read",
     relatedServiceSlugs: ["website-development", "mobile-app-development", "ai-automation"],
     relatedIndustrySlugs: ["b2b-enterprise", "manufacturing", "fintech"],
@@ -198,6 +199,7 @@ export const aiAppsPosts3: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "AI turns legacy modernization from archaeology into engineering: understand, pin behaviour with tests, change in slices and verify with parallel runs. Related: [[/blogs/ai-test-generation|AI test generation]] and [[/blogs/ai-code-documentation|AI code documentation]].",
+          "For a repeatable workflow, write a specification of current behaviour before changing it and have agents work from that spec in small, reviewed tasks; see [[/blogs/spec-driven-development|spec-driven development]]. How team roles shift around this work is covered in [[/blogs/ai-native-engineering-team|what an AI-native software team looks like]].",
         ],
       },
     ],
@@ -215,6 +217,7 @@ export const aiAppsPosts3: BlogPost[] = [
     bannerAlt:
       "AI software development lifecycle: requirements, design, build, test (highlighted), release, maintain; the note says AI assists every stage while people own every decision.",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "7 min read",
     relatedServiceSlugs: ["website-development", "ui-ux-design", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],
@@ -393,6 +396,7 @@ export const aiAppsPosts3: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "AI changes every SDLC stage, and the process has to change with it: better specifications, stronger verification and clear human ownership. Related: [[/blogs/ai-software-development|AI software development]] and [[/blogs/ai-coding-agents|AI coding agents]].",
+          "For a concrete production workflow that puts these stages into practice with coding agents, see [[/blogs/spec-driven-development|spec-driven development]]; for the rules that should govern tools and access, see [[/blogs/ai-coding-policy|AI coding policy]]; and to check whether it is working, [[/blogs/measure-ai-coding-impact|how to measure AI coding impact]].",
         ],
       },
     ],

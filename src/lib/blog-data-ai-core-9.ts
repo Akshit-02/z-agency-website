@@ -23,6 +23,7 @@ export const aiCorePosts9: BlogPost[] = [
     bannerAlt:
       "Comparison of traditional APIs and MCP servers by audience, discovery, descriptions, authorization and whether one replaces the other; the note says MCP is an adapter for AI clients built on top of APIs.",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],
@@ -182,6 +183,7 @@ export const aiCorePosts9: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "APIs and MCP are layers, not rivals. Keep the API as the source of truth and add MCP where AI clients need standard access. Related: [[/blogs/model-context-protocol|MCP guide]], [[/blogs/how-to-build-an-mcp-server|build an MCP server]] and [[/blogs/ai-api-integration|AI API integration]].",
+          "For the wider integration decision, including webhooks and RPA, see [[/blogs/ai-automation-integration-options|AI automation integration: APIs, webhooks, MCP or RPA]].",
         ],
       },
     ],
@@ -199,6 +201,7 @@ export const aiCorePosts9: BlogPost[] = [
     bannerAlt:
       "MCP security in four columns: identity highlighted (audience checks, no passthrough, scopes, short-lived tokens), tools (poisoned descriptions, over-broad tools, approvals, argument validation), data (injection in results, least data, tenant isolation, redaction) and supply chain (untrusted servers, pinned versions, local execution risk, review).",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "8 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "fintech", "cybersecurity"],
@@ -367,6 +370,7 @@ export const aiCorePosts9: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "MCP security is standard security applied carefully to a new kind of client: audience-bound tokens, no passthrough, least-privilege tools, untrusted inputs, vetted servers and full audit trails. Related: [[/blogs/model-context-protocol|MCP guide]], [[/blogs/prompt-injection-prevention|prompt injection prevention]] and [[/blogs/ai-agent-guardrails|guardrails]].",
+          "Securing each server is half the job; deciding which servers people and agents may use at all is the other. See [[/blogs/mcp-governance|MCP governance]].",
         ],
       },
     ],

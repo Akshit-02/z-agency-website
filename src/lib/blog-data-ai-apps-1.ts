@@ -241,10 +241,11 @@ export const aiAppsPosts1: BlogPost[] = [
     bannerAlt:
       "Coding agent flow: issue or task, explore repository, plan, edit code, run tests (highlighted), pull request; a branch shows failing tests leading to iteration within a budget.",
     date: "2026-10-02",
+    updated: "2026-10-07",
     readingTime: "9 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "startups"],
-    relatedSlugs: ["ai-assisted-development-vs-agentic-coding", "ai-code-review", "ai-software-development"],
+    relatedSlugs: ["ai-coding-agent-security", "claude-code-vs-codex-vs-cursor", "ai-assisted-development-vs-agentic-coding"],
     faqs: [
       { q: "What is an AI coding agent?", a: "An AI system that takes a software task, explores the repository, plans changes, edits files, runs commands such as tests and builds, iterates on failures and produces a result such as a pull request, with tools and permissions defined by the environment it runs in." },
       { q: "How is a coding agent different from code completion?", a: "Completion suggests the next lines while a developer types. An agent works on a whole task across files, runs code and decides its next steps, usually with the developer supervising or reviewing the outcome." },
@@ -369,7 +370,8 @@ export const aiAppsPosts1: BlogPost[] = [
       {
         heading: "Repository Instructions That Help Agents",
         body: [
-          "Most agent tools read a project instruction file (names vary by tool) before starting work. A short, accurate file saves every agent run from rediscovering the basics and steers it toward your conventions.",
+          "Most agent tools read a project instruction file before starting work. A short, accurate file saves every agent run from rediscovering the basics and steers it toward your conventions.",
+          "AGENTS.md has become the common name. It started as an open format in 2025, is now stewarded by the Agentic AI Foundation under the Linux Foundation, and is read by many agents, including Codex and Cursor; Claude Code uses CLAUDE.md and can read an existing AGENTS.md instead. One shared file keeps instructions consistent if your team uses more than one tool (see [[/blogs/claude-code-vs-codex-vs-cursor|Claude Code vs Codex vs Cursor]]). Include your security rules too: approved libraries for authentication and data access, no hard-coded secrets, and which directories need human-led changes. [[/blogs/ai-generated-code-security|AI-generated code security]] lists what to cover, and [[/blogs/ai-coding-agent-security|securing AI coding agents]] covers sandboxing and permissions.",
         ],
         code: {
           label: "Example: repository instructions for coding agents (illustrative)",
@@ -651,10 +653,11 @@ export const aiAppsPosts1: BlogPost[] = [
     bannerAlt:
       "AI code review flow: pull request opened, diff and context, AI review, comments by severity, human reviewer (highlighted), merge or fix.",
     date: "2026-10-02",
+    updated: "2026-10-07",
     readingTime: "8 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "fintech"],
-    relatedSlugs: ["ai-coding-agents", "ai-software-testing", "ai-security-business-applications"],
+    relatedSlugs: ["ai-generated-code-security", "ai-coding-agents", "ai-software-testing"],
     faqs: [
       { q: "What is AI code review?", a: "Using AI to read pull request changes and comment on likely bugs, security issues, missing tests, readability and convention problems, as a first pass before or alongside human reviewers." },
       { q: "Can AI replace human code reviewers?", a: "No. AI is useful for catching certain issues quickly and consistently, but it misses context about requirements and architecture and produces false positives. A person should approve every merge." },
@@ -789,6 +792,7 @@ export const aiAppsPosts1: BlogPost[] = [
           "Any configuration, CI or permission changes hidden in the diff?",
           "Does the code follow existing patterns rather than inventing new ones?",
           "Is the change small enough to understand? If not, ask for it to be split",
+          "Have the known weak spots of generated code been checked: output encoding, log handling, authorization and secrets? See [[/blogs/ai-generated-code-security|AI-generated code security]]",
         ],
       },
       {

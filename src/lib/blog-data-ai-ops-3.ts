@@ -21,6 +21,7 @@ export const aiOpsPosts3: BlogPost[] = [
     bannerAlt:
       "AI release strategies compared (Shadow, Canary, Rollout and A/B, with Canary highlighted) by users see, learn, risk and use for.",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "8 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "fintech", "b2b-enterprise"],
@@ -57,7 +58,9 @@ export const aiOpsPosts3: BlogPost[] = [
       },
       {
         heading: "Release Units",
-        body: [],
+        body: [
+          "For agents, record all release units together in a version manifest (model, instructions, tools and schemas, workflow, policies, retrieval sources, memory configuration, permissions and evaluation set) so you can say exactly what was running and roll back as a unit; see [[/blogs/ai-agent-lifecycle-management|AI agent lifecycle management]].",
+        ],
         table: {
           headers: ["Change", "Typical risk", "Minimum process"],
           rows: [

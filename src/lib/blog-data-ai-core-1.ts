@@ -23,6 +23,7 @@ export const aiCorePosts1: BlogPost[] = [
     bannerAlt:
       "AI agent development in four parts: model (reasoning model, instructions, structured output, fallback model), tools (business APIs, retrieval, MCP servers, sandboxed code execution), state and memory (task state, conversation, long-term memory, checkpoints) and controls highlighted (permissions, approvals, evaluations, tracing).",
     date: "2026-10-02",
+    updated: "2026-10-07",
     readingTime: "10 min read",
     relatedServiceSlugs: ["ai-automation", "website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
@@ -108,6 +109,7 @@ export const aiCorePosts1: BlogPost[] = [
         body: [
           "Tools are how agents act. Each tool is a function with a name, a description written for the model and a JSON schema for its arguments. Model providers support this natively: the OpenAI Responses API, Anthropic's tool use and Google's function calling all let the model return a structured tool call that your code executes. The [[/blogs/model-context-protocol|Model Context Protocol]] standardizes how tools are exposed to AI applications, so one tool server can serve several clients.",
           "Design tools the way you would design an API for a junior colleague: one clear job each, strict argument validation, safe defaults and helpful errors. 'update_order_address(order_id, address)' with validation is safer than 'run_sql(query)'. Read tools and write tools should be separate, so permissions can differ.",
+          "Before building, decide whether a platform agent would do the job; see [[/blogs/build-vs-buy-ai-agents|build vs buy AI agents]]. What information each step needs is covered in [[/blogs/context-engineering-ai-agents|context engineering for AI agents]].",
         ],
         code: {
           label: "Example: a narrow tool definition (illustrative JSON schema)",
@@ -260,6 +262,7 @@ export const aiCorePosts1: BlogPost[] = [
     bannerAlt:
       "Comparison of an AI chatbot and an AI agent (highlighted) by main job, tools, planning, state, autonomy and failure mode; the note says the risk moves from what it says to what it does.",
     date: "2026-10-02",
+    updated: "2026-10-07",
     readingTime: "8 min read",
     relatedServiceSlugs: ["ai-automation", "ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "professional-services"],
@@ -293,6 +296,7 @@ export const aiCorePosts1: BlogPost[] = [
           "**AI chatbot:** a conversational interface, today usually powered by a language model, that responds to messages. A good business chatbot is grounded in approved content through retrieval and hands off to people when it cannot help.",
           "**AI agent:** a system in which a language model decides which actions to take toward a goal and executes them through tools, observing the results and continuing until done. It may have a chat interface or run in the background.",
           "**AI assistant:** the middle ground most products occupy: a conversational system that can look things up and propose actions, with the user confirming before anything changes.",
+          "The labels blur in practice. Consumer \"assistants\" such as ChatGPT, Gemini and Siri increasingly include agent modes that browse websites or call app actions for the user, so the useful question is not what a product is called but what it is allowed to do: answer, propose, or act. For how agents act on websites and inside apps, see [[/blogs/how-ai-agents-use-websites|how AI agents use websites]] and [[/blogs/mobile-app-ai-assistant-integration|App Intents and AppFunctions]]; for designing the actions themselves, see [[/blogs/ai-agent-tool-design|AI agent tool design]].",
         ],
       },
       {
@@ -648,6 +652,7 @@ export const aiCorePosts1: BlogPost[] = [
     bannerAlt:
       "Comparison of single-agent (highlighted) and multi-agent systems by structure, debugging, cost and latency, context, best fit and whether to start with it; the note says add agents only when one agent measurably fails.",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "professional-services"],
@@ -791,6 +796,7 @@ export const aiCorePosts1: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "More agents is not more intelligence. Start with one, measure, and split only where specialization, permissions or parallelism produce a measurable gain. Related: [[/blogs/ai-agent-orchestration|orchestration]], [[/blogs/agent-to-agent-communication|agent-to-agent communication]] and [[/blogs/ai-agent-evaluation|evaluation]].",
+          "Cost is a real part of this decision. Anthropic reported in 2025 that its agents used about four times the tokens of chat interactions and its multi-agent research system about fifteen times, and that multi-agent designs suit parallel research better than tightly interdependent tasks such as most coding. Budget and loop controls matter even more with several agents; see [[/blogs/runaway-ai-agents|how to stop AI agents looping and running up costs]] and, for long-running coordination, [[/blogs/durable-ai-agents|durable execution for AI agents]].",
         ],
       },
     ],

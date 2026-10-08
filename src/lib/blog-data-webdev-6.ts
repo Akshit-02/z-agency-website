@@ -436,9 +436,11 @@ export const webDevPosts6: BlogPost[] = [
     category: "Web Development",
     banner: "serp",
     date: "2026-09-24",
+    updated: "2026-10-07",
     readingTime: "13 min read",
     relatedServiceSlugs: ["website-development"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "b2b-enterprise"],
+    relatedSlugs: ["ai-search-visibility", "geo-vs-seo", "ai-crawlers-robots-txt"],
     faqs: [
       { q: "What does it mean for a website to be SEO-friendly from the start?", a: "Building technical SEO fundamentals — clean architecture, proper URLs, metadata, heading structure, internal linking, crawlable rendering and fast performance — into the development process itself, rather than treating SEO as a post-launch audit and fix." },
       { q: "Is SEO-friendly development just about keywords?", a: "No — keyword strategy is a content and marketing discipline; SEO-friendly development is about the technical foundation (crawlability, structure, speed, indexability) that content strategy depends on to actually rank." },
@@ -520,6 +522,7 @@ export const webDevPosts6: BlogPost[] = [
         heading: "Robots.txt",
         body: [
           "Robots configuration controls what should and shouldn't be crawled — an incorrect robots.txt can accidentally block search engines from important content, which is worth verifying directly rather than assuming default settings are correct for your specific site.",
+          "Robots.txt now also decides AI search visibility. AI companies run separate bots for model training (such as GPTBot and ClaudeBot) and for search answers (such as OAI-SearchBot and Claude-SearchBot), and blocking the wrong one can remove a site from ChatGPT or Claude answers. See [[/blogs/ai-crawlers-robots-txt|AI crawlers and robots.txt]].",
         ],
         table: webDevFrameworkTable,
         cta: {
@@ -555,6 +558,7 @@ export const webDevPosts6: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "SEO-friendly development is a technical foundation, not a content trick — clean architecture, proper metadata, crawlable rendering, valid structured data and strong performance built in during development are far cheaper and more effective than retrofitting them after launch.",
+          "The same foundation serves AI search: Google's AI Overviews and AI Mode draw on its index, and other assistants run their own crawlers. For what changes and what doesn't, see [[/blogs/geo-vs-seo|GEO vs SEO]] and [[/blogs/ai-search-visibility|how to make your website discoverable in AI search]]. Semantic, accessible markup also helps AI agents that browse sites for users; see [[/blogs/how-ai-agents-use-websites|how AI agents use websites]].",
         ],
       },
     ],

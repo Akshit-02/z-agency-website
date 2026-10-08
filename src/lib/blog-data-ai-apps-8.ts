@@ -416,10 +416,11 @@ export const aiAppsPosts8: BlogPost[] = [
     bannerAlt:
       "Comparison of on-device, cloud and hybrid (highlighted) mobile AI by latency, privacy, offline behaviour, model size and cost.",
     date: "2026-10-02",
+    updated: "2026-10-07",
     readingTime: "7 min read",
     relatedServiceSlugs: ["mobile-app-development", "ai-automation", "ui-ux-design"],
     relatedIndustrySlugs: ["d2c-consumer", "healthcare-healthtech", "education-edtech"],
-    relatedSlugs: ["multimodal-ai-applications", "ai-api-integration", "mobile-app-architecture"],
+    relatedSlugs: ["on-device-ai-mobile-apps", "mobile-app-ai-assistant-integration", "multimodal-ai-applications"],
     faqs: [
       { q: "How do mobile apps use AI?", a: "Through on-device models for fast, private tasks (text tasks, image classification, speech), cloud AI services through a backend for heavier tasks (large language models, complex vision), or a hybrid of both." },
       { q: "What is on-device AI?", a: "Running models on the phone itself, using frameworks such as Apple's Core ML and Foundation Models framework or Google's ML Kit and LiteRT, which works offline and keeps data on the device." },
@@ -447,6 +448,7 @@ export const aiAppsPosts8: BlogPost[] = [
         heading: "On-Device, Cloud or Hybrid",
         body: [
           "On-device models give low latency, offline use and privacy, but are smaller and only available on supported hardware. Cloud models are more capable and consistent across devices but need connectivity and cost per request. Hybrid designs run a first pass on device and escalate to the cloud when needed.",
+          "With iOS 27, Apple's Foundation Models framework can also route to other models, including cloud models, through a common protocol, and Firebase AI Logic offers explicit on-device or cloud preferences on Android, which makes hybrid designs easier to build. Our guide to [[/blogs/on-device-ai-mobile-apps|on-device AI in mobile apps]] covers what to run where; to let Siri and Gemini use your app's features, see [[/blogs/mobile-app-ai-assistant-integration|App Intents and AppFunctions]].",
           "Edge deployment beyond phones, including industrial devices and fleet updates, is covered in [[/blogs/ai-edge-deployment|AI edge deployment]].",
         ],
         diagram: {
@@ -615,6 +617,7 @@ export const aiAppsPosts8: BlogPost[] = [
     bannerAlt:
       "Enterprise AI at scale in four columns: portfolio (use case intake, prioritization, value tracking, retirement), platform highlighted (model gateway, retrieval, evaluation, observability), people (centre of excellence and owners, training, change management, support) and governance (policies, risk tiers, inventory, audits).",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["b2b-enterprise", "fintech", "manufacturing"],
@@ -677,6 +680,7 @@ export const aiAppsPosts8: BlogPost[] = [
         heading: "Operating Model",
         body: [
           "A common model is hub-and-spoke: a central AI team (often called a centre of excellence) runs the platform, sets standards, reviews higher-risk systems and supports delivery; business units own use cases, outcomes and adoption; security, legal, data and risk functions participate through defined review paths. Clear RACI matters more than the label.",
+          "How to set up the central function by organization size is covered in [[/blogs/ai-automation-center-of-excellence|AI automation center of excellence]].",
         ],
       },
       {

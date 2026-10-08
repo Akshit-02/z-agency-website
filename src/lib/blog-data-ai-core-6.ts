@@ -23,6 +23,7 @@ export const aiCorePosts6: BlogPost[] = [
     bannerAlt:
       "RAG pipeline: ingest, chunk, embed and index, retrieve (highlighted), generate with citations, evaluate; the note says most answer failures are retrieval failures.",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "9 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["professional-services", "saas-technology", "healthcare-healthtech"],
@@ -230,6 +231,7 @@ export const aiCorePosts6: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "RAG is a retrieval problem first and a generation problem second. Invest in parsing, chunking, hybrid retrieval, reranking, permissions and evaluation, and keep content owners involved. Next: [[/blogs/enterprise-rag-architecture|enterprise RAG]], [[/blogs/hybrid-search-for-rag|hybrid search]] and [[/blogs/ai-knowledge-base|AI knowledge base]].",
+          "Retrieval is one of several layers that reduce wrong answers; for the others (tool verification, structured outputs, business rules and post-action checks), see [[/blogs/reduce-ai-agent-hallucinations|how to reduce AI agent hallucinations]].",
         ],
       },
     ],

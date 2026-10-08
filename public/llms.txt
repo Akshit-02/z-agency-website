@@ -287,6 +287,82 @@ AI infrastructure, inference and platforms:
 - LLM self-hosting: open-weight vs open-source, licences, hardware, serving, total cost of ownership — https://www.zspace.in/blogs/llm-self-hosting
 - AI platform engineering: model gateway, shared services, golden paths, built-in governance — https://www.zspace.in/blogs/ai-platform-engineering
 
+AI search, GEO and agent-ready websites (verified against Google Search Central, OpenAI, Anthropic and web.dev documentation, October 2026):
+- How to make a website discoverable in ChatGPT, Gemini and AI search: crawl access, indexing, citable content, consistent identity (hub) — https://www.zspace.in/blogs/ai-search-visibility
+- GEO vs SEO: what is shared, what genuinely differs, Google's position — https://www.zspace.in/blogs/geo-vs-seo
+- AI crawlers and robots.txt: training vs search vs user-triggered bots, rules by business type — https://www.zspace.in/blogs/ai-crawlers-robots-txt
+- Measuring AI search traffic: GA4 AI Assistant channel, Search Console generative AI reports, UTM and logs — https://www.zspace.in/blogs/ai-search-traffic-tracking
+- llms.txt: what it is, what Google says, where it is useful — https://www.zspace.in/blogs/llms-txt
+- How AI agents use websites and how to make a site agent-ready (accessibility tree, WebMCP) — https://www.zspace.in/blogs/how-ai-agents-use-websites
+- Verifying AI agent traffic: signed requests, Web Bot Auth, Visa Trusted Agent Protocol — https://www.zspace.in/blogs/ai-agent-traffic-verification
+
+AI agent security and design:
+- OWASP Top 10 for Agentic Applications (ASI01–ASI10) with first controls — https://www.zspace.in/blogs/owasp-top-10-agentic-applications
+- AI agent tool design: granularity, descriptions, schemas, outputs, safe writes, evaluation — https://www.zspace.in/blogs/ai-agent-tool-design
+
+AI-built software (vibe coding, AI coding agents):
+- Vibe coding vs production software development — https://www.zspace.in/blogs/vibe-coding-vs-production-software
+- How to take a vibe-coded app to production: hardening checklist, harden vs rebuild — https://www.zspace.in/blogs/vibe-coded-app-to-production
+- AI-generated code security: research findings and pre-launch checklist — https://www.zspace.in/blogs/ai-generated-code-security
+- Does AI make software development cheaper? Cost and timeline effects by phase — https://www.zspace.in/blogs/ai-software-development-cost
+- Securing AI coding agents: sandboxes, permissions, secrets, prompt injection — https://www.zspace.in/blogs/ai-coding-agent-security
+- Claude Code vs Codex vs Cursor for teams (as of October 2026) — https://www.zspace.in/blogs/claude-code-vs-codex-vs-cursor
+
+Mobile AI:
+- On-device AI in mobile apps: platform models, limits, hybrid patterns — https://www.zspace.in/blogs/on-device-ai-mobile-apps
+- App Intents and AppFunctions: making apps usable by Siri, Gemini and AI assistants — https://www.zspace.in/blogs/mobile-app-ai-assistant-integration
+
+AI agents in production and AI-ready business (October 2026):
+- Which business processes suit AI agents vs workflow or rules automation — https://www.zspace.in/blogs/which-processes-suit-ai-agents
+- How to calculate AI agent ROI before building: baseline, full cost, scenarios, kill criteria — https://www.zspace.in/blogs/ai-agent-roi
+- Why AI agents fail in production: 12 problems and a readiness gate — https://www.zspace.in/blogs/why-ai-agents-fail-in-production
+- Build vs buy AI agents: agent platforms vs custom development — https://www.zspace.in/blogs/build-vs-buy-ai-agents
+- Context engineering: what information an AI agent needs at each step — https://www.zspace.in/blogs/context-engineering-ai-agents
+- The AI-ready business stack: seven systems layers beyond the model — https://www.zspace.in/blogs/ai-ready-business-stack
+- APIs and MCP servers for AI agents: when a business should offer them — https://www.zspace.in/blogs/apis-for-ai-agents
+- AI agent identity and authentication: delegated OAuth, token exchange, MCP authorization — https://www.zspace.in/blogs/ai-agent-authentication
+- AI agent accountability: who is responsible for agent mistakes (not legal advice) — https://www.zspace.in/blogs/ai-agent-accountability
+- AI agent incident response: kill switches, containment, reversal, root cause — https://www.zspace.in/blogs/ai-agent-incident-response
+- How AI agents change the ecommerce funnel and product pages — https://www.zspace.in/blogs/ai-agents-ecommerce-funnel
+- Tracking AI-referred ecommerce sales: GA4, platform AI orders, comparison with organic — https://www.zspace.in/blogs/ai-commerce-analytics
+
+Production AI engineering, AI coding and local AI (October 2026):
+- Will AI agents replace websites? Why the interface layer is expanding (flagship) — https://www.zspace.in/blogs/will-ai-agents-replace-websites
+- How much autonomy to give an AI agent: a five-level framework — https://www.zspace.in/blogs/ai-agent-autonomy-levels
+- How to stop AI agents looping and running up costs: limits, budgets, circuit breakers — https://www.zspace.in/blogs/runaway-ai-agents
+- Durable execution for long-running AI agents — https://www.zspace.in/blogs/durable-ai-agents
+- Computer-use agents: when AI should operate screens vs use APIs — https://www.zspace.in/blogs/computer-use-agents
+- MCP governance: allowlists, registries and gateways — https://www.zspace.in/blogs/mcp-governance
+- Spec-driven development: a production workflow for AI coding agents — https://www.zspace.in/blogs/spec-driven-development
+- AI coding policy: what companies should decide before rolling out coding agents — https://www.zspace.in/blogs/ai-coding-policy
+- What an AI-native software team is and how roles change — https://www.zspace.in/blogs/ai-native-engineering-team
+- How to measure the impact of AI coding tools — https://www.zspace.in/blogs/measure-ai-coding-impact
+- Local AI vs cloud AI: hybrid AI architecture with routing and fallback — https://www.zspace.in/blogs/hybrid-ai-architecture
+- Small language models for business: when smaller is better — https://www.zspace.in/blogs/small-language-models
+- Orders placed by AI agents: fraud, returns and customer service — https://www.zspace.in/blogs/agent-placed-orders
+
+AI agent operations and automation architecture:
+- How to build an audit trail for AI agent actions — https://www.zspace.in/blogs/ai-agent-audit-trail
+- AI agent rollback: reversing and compensating autonomous actions — https://www.zspace.in/blogs/ai-agent-rollback
+- AI agent sandbox: isolating agents before production access — https://www.zspace.in/blogs/ai-agent-sandbox
+- AI agent tool selection: why too many tools make agents worse — https://www.zspace.in/blogs/ai-agent-tool-selection
+- How to reduce hallucinations in AI agents without making them useless — https://www.zspace.in/blogs/reduce-ai-agent-hallucinations
+- Structured outputs: reliable, machine-readable results from AI models — https://www.zspace.in/blogs/llm-structured-outputs
+- AI automation architecture: agents, workflows, APIs and people — https://www.zspace.in/blogs/ai-automation-architecture
+- AI automation integration: APIs, webhooks, MCP or RPA — https://www.zspace.in/blogs/ai-automation-integration-options
+
+AI agent governance, AI-native products and enterprise automation:
+- AI agent governance: eight-layer framework enforced at runtime (hub) — https://www.zspace.in/blogs/ai-agent-governance
+- AI control plane: managing many AI agents (registry, identity, policy, cost, lifecycle) — https://www.zspace.in/blogs/ai-control-plane
+- Shadow AI agents: discovering and governing unapproved AI automation — https://www.zspace.in/blogs/shadow-ai-agents
+- AI agent lifecycle management: from creation to retirement — https://www.zspace.in/blogs/ai-agent-lifecycle-management
+- ISO/IEC 42001: what an AI management system means for a business — https://www.zspace.in/blogs/iso-42001-ai-management-system
+- How to assess an AI agent vendor: security, data and governance questions — https://www.zspace.in/blogs/ai-agent-vendor-assessment
+- AI-native vs AI-enabled software: what changes in the architecture — https://www.zspace.in/blogs/ai-native-vs-ai-enabled-software
+- How to turn an existing SaaS product into an AI-native product — https://www.zspace.in/blogs/turn-saas-product-into-ai-native-product
+- AI automation technical debt: why AI workflows become hard to maintain — https://www.zspace.in/blogs/ai-automation-technical-debt
+- AI automation center of excellence: operating models by organization size — https://www.zspace.in/blogs/ai-automation-center-of-excellence
+
 ## Industries
 
 ZSpace Labs works across a broad range of industries, applying the same core services to the specific problems each industry has. Dedicated industry pages exist for:

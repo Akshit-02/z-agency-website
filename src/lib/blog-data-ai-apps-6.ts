@@ -626,6 +626,7 @@ export const aiAppsPosts6: BlogPost[] = [
     bannerAlt:
       "AI-native SaaS architecture in four columns: tenancy highlighted (data isolation, per-tenant configuration, keys and regions, admin controls), AI services (gateway, retrieval, prompts, evaluations), metering (tokens or tasks, plans and limits, billing, cost per tenant) and product UX (suggestions, undo, explain, feedback).",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "7 min read",
     relatedServiceSlugs: ["website-development", "ai-automation", "ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "startups"],
@@ -807,6 +808,7 @@ export const aiAppsPosts6: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "AI-native SaaS needs tenancy, metering, pricing and UX designed around AI. Related: [[/blogs/ai-application-development|AI application development]], [[/blogs/llm-gateway|LLM gateway]] and [[/blogs/ai-copilot-development|AI copilots]].",
+          "If you are evolving an existing product rather than starting fresh, see [[/blogs/turn-saas-product-into-ai-native-product|how to turn an existing SaaS product into an AI-native product]] and [[/blogs/ai-native-vs-ai-enabled-software|AI-native vs AI-enabled software]].",
         ],
       },
     ],

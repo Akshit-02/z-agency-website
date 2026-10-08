@@ -22,6 +22,7 @@ export const aiOpsPosts12: BlogPost[] = [
     bannerAlt:
       "Self-hosted models vs hosted APIs compared (Self-hosted and Hosted API, with Self-hosted highlighted) by data, models, low volume, high volume and operations.",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "8 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["fintech", "healthcare-healthtech", "b2b-enterprise"],
@@ -192,6 +193,7 @@ export const aiOpsPosts12: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Self-hosting gives control at the price of responsibility. Choose it for clear reasons, check licences, size hardware for real workloads, use a proper inference engine, secure and monitor it, and compare total cost honestly with hosted APIs.",
+          "Self-hosting is often one half of a hybrid design; see [[/blogs/hybrid-ai-architecture|local AI vs cloud AI: hybrid architecture]] for routing and fallback between self-hosted and hosted models.",
         ],
       },
     ],
@@ -209,6 +211,7 @@ export const aiOpsPosts12: BlogPost[] = [
     bannerAlt:
       "AI platform in four columns: access (Gateway, Keys, quotas, Routing, Fallbacks), shared services highlighted (Retrieval, Evaluation, Tracing, Prompt registry), delivery (Templates, CI gates, Deploy, Environments) and governance (Policies, Inventory, Cost reports, Audit).",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["b2b-enterprise", "saas-technology", "fintech"],
@@ -380,6 +383,7 @@ export const aiOpsPosts12: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "AI platform engineering turns scattered AI experiments into a consistent, governed capability. Start with the gateway and observability, add shared services as patterns repeat, build governance into defaults and run the platform as a product for the teams it serves.",
+          "When the platform needs to govern many agents across teams and vendors, see [[/blogs/ai-control-plane|AI control plane]].",
         ],
       },
     ],

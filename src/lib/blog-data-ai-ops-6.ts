@@ -371,6 +371,7 @@ export const aiOpsPosts6: BlogPost[] = [
     bannerAlt:
       "AI agent access models compared (Delegated, Service ID and Hybrid, with Hybrid highlighted) by permissions, audit, risk and use for.",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["fintech", "b2b-enterprise", "saas-technology"],
@@ -406,7 +407,9 @@ export const aiOpsPosts6: BlogPost[] = [
       },
       {
         heading: "Identity Models",
-        body: [],
+        body: [
+          "This article focuses on what an agent may do once its identity is established. For how agents authenticate and act on behalf of users (delegated OAuth tokens, token exchange, MCP authorization and enterprise agent identity platforms such as Microsoft Entra Agent ID), see [[/blogs/ai-agent-authentication|AI agent identity and authentication]].",
+        ],
         table: {
           headers: ["Model", "Whose permissions", "Use for", "Watch for"],
           rows: [
@@ -451,6 +454,7 @@ export const aiOpsPosts6: BlogPost[] = [
         heading: "Audit Logs",
         body: [
           "Log every agent action with the agent identity, the user on whose behalf it acted, the tool and arguments, the authorization decision, any approval and the outcome. Link entries to the agent's trace so investigators can see what content preceded each action. Protect logs from modification and review them, including periodic checks of permissions actually used versus permissions granted.",
+          "For the structure of agent audit records (trace and correlation IDs, approvals, before-and-after changes, tamper resistance), see [[/blogs/ai-agent-audit-trail|how to build an audit trail for AI agent actions]]. When a permitted action still turns out to be wrong, [[/blogs/ai-agent-rollback|AI agent rollback]] covers reversal and compensation.",
         ],
       },
       {

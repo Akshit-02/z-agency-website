@@ -161,6 +161,22 @@ import { aiOpsPosts11 } from "./blog-data-ai-ops-11";
 import { aiOpsPosts12 } from "./blog-data-ai-ops-12";
 import { indiaListicles, indiaSupportPosts } from "./blog-data-india";
 import { indiaLocalPosts } from "./blog-data-india-local";
+import { aiSearchPosts } from "./blog-data-ai-search";
+import { agentWebPosts } from "./blog-data-agent-web";
+import { aiCodingPosts } from "./blog-data-ai-coding";
+import { mobileAiPosts } from "./blog-data-mobile-ai";
+import { aiBusinessPosts1 } from "./blog-data-ai-business-1";
+import { aiBusinessPosts2 } from "./blog-data-ai-business-2";
+import { aiBusinessPosts3 } from "./blog-data-ai-business-3";
+import { aiBusinessPosts4 } from "./blog-data-ai-business-4";
+import { prodAiPosts1 } from "./blog-data-prod-ai-1";
+import { prodAiPosts2 } from "./blog-data-prod-ai-2";
+import { prodAiPosts3 } from "./blog-data-prod-ai-3";
+import { agentOpsPosts1 } from "./blog-data-agent-ops-1";
+import { agentOpsPosts2 } from "./blog-data-agent-ops-2";
+import { aiGovernancePosts1 } from "./blog-data-ai-governance-1";
+import { aiGovernancePosts2 } from "./blog-data-ai-governance-2";
+import { aiGovernancePosts3 } from "./blog-data-ai-governance-3";
 
 export type BlogSection = {
   heading: string;
@@ -3083,6 +3099,22 @@ posts.push(
   ...indiaListicles,
   ...indiaSupportPosts,
   ...indiaLocalPosts,
+  ...aiSearchPosts,
+  ...agentWebPosts,
+  ...aiCodingPosts,
+  ...mobileAiPosts,
+  ...aiBusinessPosts1,
+  ...aiBusinessPosts2,
+  ...aiBusinessPosts3,
+  ...aiBusinessPosts4,
+  ...prodAiPosts1,
+  ...prodAiPosts2,
+  ...prodAiPosts3,
+  ...agentOpsPosts1,
+  ...agentOpsPosts2,
+  ...aiGovernancePosts1,
+  ...aiGovernancePosts2,
+  ...aiGovernancePosts3,
 );
 
 export function getPostBySlug(slug: string) {

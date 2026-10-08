@@ -151,9 +151,11 @@ export const commercePosts13: BlogPost[] = [
     bannerAlt:
       "Product data used by shopping systems and AI assistants, in four groups: identity (title, brand, GTIN, variant grouping, category), offer (price, availability, shipping, returns, condition), attributes (size, colour, material, dimensions, compatibility, ingredients) and context (who it's for, use cases, what's in the box, reviews, comparisons).",
     date: "2026-09-29",
+    updated: "2026-10-07",
     readingTime: "14 min read",
     relatedServiceSlugs: ["website-development", "shopify-development", "ai-automation"],
     relatedIndustrySlugs: ["ecommerce"],
+    relatedSlugs: ["ecommerce-product-feeds", "ai-search-visibility", "agentic-commerce"],
     faqs: [
       { q: "What product data matters for AI search?", a: "The same data that powers shopping search: clear titles, detailed descriptions, structured attributes, variants, identifiers such as brand and GTIN, price, availability, shipping, returns, images and genuine reviews." },
       { q: "How should product titles be written for AI search?", a: "Name the product type, brand and the key attributes that distinguish it, in plain language. Google Merchant Center allows up to 150 characters, but the important information should come first." },
@@ -177,6 +179,7 @@ export const commercePosts13: BlogPost[] = [
         heading: "Why Product Data Decides AI Visibility",
         body: [
           "AI assistants and AI search features answer questions by matching constraints (budget, size, use, compatibility) against product facts. Products with complete, structured facts can match; products described vaguely can't. The same data also powers on-site search, filters, recommendations and shopping feeds, so the work pays off everywhere. See [[/blogs/ai-product-discovery|AI product discovery]].",
+          "Google's guide to optimizing for its generative AI features (May 2026, updated July 2026) confirms the priority: no special files, chunking or schema are required, and Merchant Center feeds are named as a way to make products visible in AI responses and other results. Search Console's generative AI performance reports (June 2026) now show which product and category pages appear in AI Overviews and AI Mode. For the site-wide picture, including crawler access for ChatGPT, Claude and Perplexity, see [[/blogs/ai-search-visibility|how to make your website discoverable in AI search]].",
         ],
       },
       {

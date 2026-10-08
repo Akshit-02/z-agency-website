@@ -368,6 +368,7 @@ export const aiCorePosts12: BlogPost[] = [
     bannerAlt:
       "Comparison of extraction methods: templates with OCR rules, trained ML models and LLM or vision schema extraction (highlighted), by setup, handling of new layouts, consistency and cost; the note says validate every field whatever the method.",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["fintech", "logistics-supply-chain", "insurtech"],
@@ -515,6 +516,7 @@ export const aiCorePosts12: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Good document extraction combines the right text source, a precise schema, structured outputs, rigorous validation and review for uncertain fields, measured on your own documents. Related: [[/blogs/intelligent-document-processing|intelligent document processing]] and [[/blogs/ai-invoice-processing|AI invoice processing]].",
+          "To enforce extraction schemas at the model API level, see [[/blogs/llm-structured-outputs|structured outputs]].",
         ],
       },
     ],

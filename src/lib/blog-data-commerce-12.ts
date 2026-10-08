@@ -187,9 +187,11 @@ export const commercePosts12: BlogPost[] = [
     bannerAlt:
       "AI shopping agent flow: shopper request, the agent searches, catalog and product feeds, compare and shortlist, cart and checkout, merchant fulfils, with the shopper confirming before paying.",
     date: "2026-09-29",
+    updated: "2026-10-07",
     readingTime: "14 min read",
     relatedServiceSlugs: ["ai-automation", "shopify-development", "website-development"],
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer"],
+    relatedSlugs: ["agentic-commerce", "how-ai-agents-use-websites", "ai-agent-traffic-verification"],
     faqs: [
       { q: "What is an AI shopping agent?", a: "An AI assistant that helps a shopper find, compare and sometimes buy products by searching product data, asking clarifying questions and, where supported, building a cart and handing off or completing checkout." },
       { q: "Which AI shopping agents exist today?", a: "As of September 2026, shoppers can discover products in assistants including ChatGPT, Google AI Mode and Gemini, and Microsoft Copilot. Some surfaces support buying inside the assistant; others send shoppers to the merchant's checkout." },
@@ -294,6 +296,13 @@ export const commercePosts12: BlogPost[] = [
         ],
       },
       {
+        heading: "Make Your Store Usable by Agents, Not Just Findable",
+        body: [
+          "Feeds and protocols cover the assistants that integrate with merchants directly. Many agents still reach your store the way a person does: they open product pages in a browser, read them and click through to the cart. Google's web.dev guidance on agent-friendly websites (April 2026) describes how they do it, through screenshots, the HTML and the browser's accessibility tree, and why hover-only menus, unlabelled buttons, shifting layouts and overlays break them. Real product buttons and labelled form fields, prices and delivery costs shown early, stable layouts and a clear review step before payment help agents and customers alike. Our guide to [[/blogs/how-ai-agents-use-websites|how AI agents use websites]] has the full checklist.",
+          "Check your bot protection too. Rules that challenge every automated client also turn away legitimate shopping agents. Operators such as OpenAI now sign their agents' requests, and Visa's Trusted Agent Protocol uses the same approach at checkout, so you can let verified agents in and still block abuse. See [[/blogs/ai-agent-traffic-verification|how to verify AI agent traffic]].",
+        ],
+      },
+      {
         heading: "Preparation Checklist",
         body: [],
         checklist: [
@@ -303,7 +312,9 @@ export const commercePosts12: BlogPost[] = [
           "Clear, published returns and service policies",
           "Genuine reviews visible on product pages",
           "Channel settings reviewed (e.g. Shopify's Agentic sales channel)",
-          "Attribution set up for AI referrals and channels",
+          "Attribution set up for AI referrals and channels (see [[/blogs/ai-search-traffic-tracking|measuring AI search traffic]])",
+          "Key journeys usable by browser agents: semantic buttons, labelled fields, visible fees",
+          "Bot protection reviewed so verified agents are not blocked",
         ],
         cta: {
           title: "Want to sell through AI assistants without guesswork?",
@@ -332,10 +343,11 @@ export const commercePosts12: BlogPost[] = [
     bannerAlt:
       "Agentic commerce stack: shoppers give AI assistants such as ChatGPT, AI Mode and Gemini, Copilot and other agents a goal; protocols such as UCP, ACP, AP2 and MCP connect them to merchant systems for catalog and feeds, pricing and inventory, checkout and payments, and orders and service.",
     date: "2026-09-29",
-    updated: "2026-09-29",
+    updated: "2026-10-08",
     readingTime: "15 min read",
     relatedServiceSlugs: ["ai-automation", "website-development", "shopify-development"],
     relatedIndustrySlugs: ["ecommerce"],
+    relatedSlugs: ["ai-shopping-agents", "shopify-agentic-commerce", "how-ai-agents-use-websites"],
     faqs: [
       { q: "What is agentic commerce?", a: "Commerce in which AI agents act on a shopper's behalf, finding, comparing and sometimes purchasing products by interacting with merchants' catalogs and checkouts through standard protocols and APIs." },
       { q: "What is the Universal Commerce Protocol (UCP)?", a: "An open standard co-developed by Google and Shopify, announced in January 2026, that defines how AI agents discover products and create carts and checkouts with merchants. Google uses it for checkout on AI Mode and Gemini; Shopify supports it for agents built on Shopify Catalog." },
@@ -458,7 +470,7 @@ export const commercePosts12: BlogPost[] = [
       {
         heading: "Measuring AI Channels",
         body: [
-          "Measurement is still immature. Track what's available: orders attributed to AI sales channels in your platform, referrals from AI assistants in analytics, and post-purchase survey answers mentioning AI tools. Compare order value, returns and repeat rates for these customers with other channels over time. Avoid drawing firm conclusions from small early volumes. See [[/blogs/ecommerce-attribution|ecommerce attribution]].",
+          "Measurement is improving but still partial. Track what's available: orders attributed to AI sales channels in your platform, the AI Assistant channel GA4 added to its default channel group in May 2026, Search Console's generative AI performance reports for Google's AI features, and post-purchase survey answers mentioning AI tools. Our guide to [[/blogs/ai-search-traffic-tracking|measuring AI search traffic]] covers the setup. Compare order value, returns and repeat rates for these customers with other channels over time. Avoid drawing firm conclusions from small early volumes. See [[/blogs/ecommerce-attribution|ecommerce attribution]].",
         ],
       },
       {
@@ -473,6 +485,7 @@ export const commercePosts12: BlogPost[] = [
             ["4", "Checkout reliability: fast, stable, with clear policies"],
             ["5", "Channels: enable those your platform supports; for Shopify, the Agentic sales channel"],
             ["6", "Measurement: attribution for AI channels and referrals"],
+            ["7", "Agent access: accessible, agent-friendly journeys and bot rules that let verified agents through; see [[/blogs/how-ai-agents-use-websites|how AI agents use websites]] and [[/blogs/ai-agent-traffic-verification|verifying agent traffic]]"],
           ],
         },
         cta: {
@@ -484,6 +497,8 @@ export const commercePosts12: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Agentic commerce is the shift from assistants that suggest to agents that act, underpinned by emerging protocols in which merchants stay responsible for the sale. It's real but early and changing fast. The durable response is the same whatever happens: accurate data, complete feeds, clear policies and reliable checkout. For merchant preparation, see [[/blogs/ai-shopping-agents|AI shopping agents]]; for Shopify, see [[/blogs/shopify-agentic-commerce|Shopify agentic commerce]].",
+          "Google's guide to its generative AI search features (updated July 2026) points the same way: it names browser agents completing tasks such as reservations and protocols such as UCP as things to prepare for, while stating that AI search visibility itself needs no special files or markup. For that side, see [[/blogs/ai-search-visibility|how to make your website discoverable in AI search]].",
+          "What happens after an agent places an order (fraud screening, confirmations, returns and service) is covered in [[/blogs/agent-placed-orders|orders placed by AI agents]].",
         ],
       },
     ],

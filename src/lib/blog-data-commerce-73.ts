@@ -386,6 +386,7 @@ export const commercePosts73: BlogPost[] = [
     bannerAlt:
       "Ecommerce product data architecture diagram: supplier feeds, DAM, copy and enrichment flow into a highlighted PIM holding products, variants, attributes and locales; an ERP supplies cost, price and stock to the commerce platform holding offers, price lists, inventory and orders; the PIM feeds the platform, and both feed the storefront, search index, recommendations, feeds and marketplaces, and analytics events, which flow back to recommendations.",
     date: "2026-10-01",
+    updated: "2026-10-07",
     readingTime: "17 min read",
     relatedServiceSlugs: ["website-development", "shopify-development", "ai-automation"],
     relatedIndustrySlugs: ["ecommerce", "retail", "b2b-enterprise"],
@@ -583,6 +584,13 @@ export const commercePosts73: BlogPost[] = [
           title: "Ready to design product data that scales?",
           description: "Talk to ZSpace Labs about [[/services/website-development|ecommerce data architecture and integrations]], [[/services/shopify-development|Shopify catalog and metafield design]] and [[/services/ai-automation|search and recommendation data pipelines]].",
         },
+      },
+      {
+        heading: "Making Product Data AI-Ready",
+        body: [
+          "The same architecture now feeds AI assistants and shopping agents, which read product feeds, structured data and page text to match products against a shopper's constraints. That raises the bar on three things the model already supports: complete structured attributes (dimensions, materials, compatibility, certifications) rather than facts embedded in images or PDFs; one source of truth so price, availability and variants match across the store, feeds and channels; and fast propagation of stock and price changes to every channel. Treat attribute completeness per category as a tracked metric.",
+          "For the content side of this work, see [[/blogs/ecommerce-product-data-ai-search|how to optimize product data for AI search]]; for how assistants change the shopping journey, see [[/blogs/ai-agents-ecommerce-funnel|how AI agents change the ecommerce funnel]].",
+        ],
       },
       {
         heading: "Conclusion",

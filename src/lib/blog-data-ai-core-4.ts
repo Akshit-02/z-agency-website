@@ -365,7 +365,8 @@ export const aiCorePosts4: BlogPost[] = [
     bannerAlt:
       "Comparison of RPA, AI automation and a combined approach (highlighted) by what each handles, what decides, output consistency, what breaks it and cost; the note says AI understands the input and deterministic automation performs the action.",
     date: "2026-10-02",
-    readingTime: "6 min read",
+    updated: "2026-10-08",
+    readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["fintech", "b2b-enterprise", "manufacturing"],
     relatedSlugs: ["workflow-automation-vs-rpa", "intelligent-document-processing", "ai-workflow-automation"],
@@ -434,6 +435,24 @@ export const aiCorePosts4: BlogPost[] = [
         body: [
           "RPA programs often carry licence costs per bot or runtime plus significant maintenance. AI costs scale with usage (tokens per document or message) and require evaluation effort up front. A combined design can reduce both: AI replaces brittle rules for messy inputs, and API automation replaces screen steps wherever possible, leaving fewer bots to maintain.",
         ],
+      },
+      {
+        heading: "Where AI Agents Fit: Agent vs RPA",
+        body: [
+          "AI agents are the newest option in this comparison. An agent does more than interpret one input: it plans a sequence of steps toward a goal, chooses which tools to call and adapts when a step fails. That makes agents suited to work whose path varies from case to case, such as resolving a customer issue that may need an order lookup, a refund and a carrier query, or researching and preparing a supplier comparison. RPA suits the opposite: a fixed path, executed identically every time.",
+          "The trade-off is predictability. RPA does exactly what it was scripted to do; an agent decides, so it needs narrow tools, limits on what it can change, approval for consequential actions and full logging. Agents can also operate screens through computer-use models, but that inherits RPA's brittleness at a higher cost per run; where an API or a well-designed tool exists, use it. A practical pattern is an agent that handles the variable reasoning and calls deterministic automations (APIs, workflows or RPA bots) for the actions. See [[/blogs/agentic-workflow-automation|agentic workflow automation]], [[/blogs/ai-agent-tool-design|AI agent tool design]] and [[/blogs/owasp-top-10-agentic-applications|the OWASP agentic risks]] before giving an agent write access.",
+          "When an agent must operate a system that has no API, see [[/blogs/computer-use-agents|computer-use agents]] for when screen automation by AI makes sense and the controls it needs.",
+        ],
+        table: {
+          headers: ["", "RPA", "AI agent"],
+          rows: [
+            ["Path through the work", "Fixed, scripted", "Planned per case"],
+            ["Inputs", "Structured, predictable", "Unstructured, varied"],
+            ["Failure mode", "Stops when a screen changes", "Can take a plausible but wrong action"],
+            ["Controls needed", "Selector maintenance, monitoring", "Scoped tools, approvals, evaluation, audit logs"],
+            ["Best for", "High-volume identical steps", "Variable tasks needing judgement within limits"],
+          ],
+        },
       },
       {
         heading: "Common Combined Use Cases",
@@ -513,6 +532,7 @@ export const aiCorePosts4: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "RPA and AI automation are complementary. AI understands; rules decide; APIs or RPA act; people handle exceptions. Related: [[/blogs/workflow-automation-vs-rpa|workflow automation vs RPA]], [[/blogs/intelligent-document-processing|intelligent document processing]] and [[/blogs/ai-workflow-automation|AI workflow automation]].",
+          "To compare RPA with APIs, webhooks and MCP as integration options, see [[/blogs/ai-automation-integration-options|AI automation integration options]].",
         ],
       },
     ],
