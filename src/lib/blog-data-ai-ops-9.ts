@@ -190,6 +190,7 @@ export const aiOpsPosts9: BlogPost[] = [
     bannerAlt:
       "AI transparency layers compared (Shown and Contents, with Contents highlighted) by always, on use, on request and policies.",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ui-ux-design", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "healthcare-healthtech", "fintech"],
@@ -267,6 +268,7 @@ export const aiOpsPosts9: BlogPost[] = [
         heading: "Indicating Human Review",
         body: [
           "When outputs reach customers or affect decisions, say whether a person reviewed them. A support reply might show 'Drafted with AI, reviewed by our team'; an automated categorization might show 'Automatically categorized; change if wrong'. Internally, show reviewers which parts are AI-generated so they focus attention appropriately.",
+          "When the AI takes actions rather than only producing outputs, transparency extends to plans, activity and receipts; see [[/blogs/ai-agent-trust-ux|AI agent trust UX]].",
         ],
       },
       {
@@ -355,7 +357,8 @@ export const aiOpsPosts9: BlogPost[] = [
     bannerAlt:
       "AI error types in four columns: system (Timeouts, Outages, Limits, Failed tools), wrong output highlighted (Factual error, Misread intent, Wrong data, Hallucination), incomplete (Missing info, Truncated, Partial, Refusals) and wrong action (Wrong change, Wrong person, Bulk error, Side effects).",
     date: "2026-10-02",
-    readingTime: "7 min read",
+    updated: "2026-10-08",
+    readingTime: "8 min read",
     relatedServiceSlugs: ["ui-ux-design", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "fintech", "ecommerce"],
     relatedSlugs: ["llm-application-reliability", "ai-ux-design", "ai-feedback-ux"],
@@ -508,6 +511,70 @@ export const aiOpsPosts9: BlogPost[] = [
         cta: {
           title: "Want your AI error states reviewed?",
           description: "Talk to ZSpace Labs about an [[/services/ui-ux-design|AI error handling review]] across failures, wrong outputs and actions.",
+        },
+      },
+      {
+        heading: "Agent Errors and the Recovery Loop",
+        body: [
+          "When AI agents act rather than only answer, new failure types appear alongside hallucinated and incorrect answers: a **failed tool** call, a **timeout**, a **permission failure**, a decision based on **stale data**, a **partial completion** (8 of 10 steps done) and the **wrong action** taken confidently. Each needs a visible state and a recovery path, not a generic error message.",
+          "A consistent loop helps users and teams: **detect** the problem (validation, monitoring, user report), **explain** it in plain language with what was and was not done, **correct** the input or data, **retry** safely with idempotency, **undo** what can be reversed and **escalate** to a person with full context when the agent cannot fix it. For making agent actions understandable in the first place, see [[/blogs/ai-agent-trust-ux|AI agent trust UX]]; for reversal mechanics, [[/blogs/ai-agent-rollback|AI agent rollback]]; for handing over to people, [[/blogs/ai-agent-handoffs|AI agent handoffs]].",
+        ],
+        table: {
+          headers: [
+            "Error type",
+            "What the user should see",
+            "Recovery",
+          ],
+          rows: [
+            [
+              "Hallucinated answer",
+              "Claim without a source flagged; sources shown where they exist",
+              "Correct; regenerate with grounding; report",
+            ],
+            [
+              "Incorrect answer",
+              "Easy way to dispute or correct",
+              "Correct; feed back into evaluation",
+            ],
+            [
+              "Failed tool",
+              "Which step failed and its effect on the task",
+              "Retry; alternative path; escalate",
+            ],
+            [
+              "Timeout",
+              "Task still pending or unknown, not 'failed'",
+              "Check state before retrying; never blind-retry payments",
+            ],
+            [
+              "Permission failure",
+              "What access is missing and who can grant it",
+              "Request access; hand off",
+            ],
+            [
+              "Stale data",
+              "Data age and what may have changed",
+              "Refresh and re-check before acting",
+            ],
+            [
+              "Partial completion",
+              "What was done, what was not, what is pending",
+              "Resume remaining steps; undo completed ones if needed",
+            ],
+            [
+              "Wrong action",
+              "Receipt of the action and its effect",
+              "Undo or compensate; notify affected people; escalate",
+            ],
+          ],
+        },
+        code: {
+          label: "AI error recovery loop (diagram)",
+          text: `detect ──▶ explain ──▶ correct ──▶ retry
+   ▲                                   │
+   │                          still failing / irreversible?
+   │                                   ▼
+   └────── learn (eval set) ◀── escalate ◀── undo / compensate`,
         },
       },
       {

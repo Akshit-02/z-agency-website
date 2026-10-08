@@ -24,6 +24,7 @@ export const aiAppsPosts7: BlogPost[] = [
     bannerAlt:
       "Multimodal pipeline: upload, validate and store, preprocess (highlighted), model, validate output, show and log; the note says each modality has its own preprocessing, limits and failure modes.",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "mobile-app-development", "website-development"],
     relatedIndustrySlugs: ["insurtech", "healthcare-healthtech", "ecommerce"],
@@ -88,7 +89,9 @@ export const aiAppsPosts7: BlogPost[] = [
       },
       {
         heading: "UX for Multimodal Input",
-        body: [],
+        body: [
+          "For choosing modalities per task from a product design perspective, see [[/blogs/multimodal-ai-product-design|multimodal AI product design]].",
+        ],
         checklist: [
           "Guide capture: framing overlays, lighting hints, minimum resolution",
           "Check quality on device before upload where possible",

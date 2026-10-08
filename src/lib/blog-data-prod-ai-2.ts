@@ -27,6 +27,7 @@ export const prodAiPosts2: BlogPost[] = [
     bannerAlt:
       "Spec-driven development workflow: Requirement, Spec (highlighted), Plan, Tasks, Implement + test, Review + CI, Deploy + monitor, with human approval gates after the spec, the plan and the review.",
     date: "2026-10-08",
+    updated: "2026-10-08",
     readingTime: "5 min read",
     relatedServiceSlugs: ["website-development", "mobile-app-development"],
     relatedIndustrySlugs: ["saas-technology", "fintech"],
@@ -95,6 +96,7 @@ export const prodAiPosts2: BlogPost[] = [
         heading: "Making it work in a team",
         body: [
           "Keep specs in the repository next to the code, versioned and reviewed like code. Size tasks so each pull request is small enough to understand in one review. Make acceptance criteria executable as tests before implementation where possible. Update the spec when requirements change, then regenerate the affected plan and tasks rather than patching code ad hoc. For security-relevant changes, add the checks from [[/blogs/ai-generated-code-security|AI-generated code security]], and for how agents fit into daily work, see [[/blogs/ai-coding-agents|AI coding agents]].",
+          "The spec is task-level context; the always-on and scoped context it sits on is covered in [[/blogs/ai-coding-agent-context|AI coding agent context]].",
         ],
         cta: {
           title: "Want AI-assisted delivery without the vibe-coding risk?",
@@ -137,6 +139,7 @@ export const prodAiPosts2: BlogPost[] = [
     bannerAlt:
       "AI coding policy areas: Tools and data (approved tools, data rules, licensing), Agent access (highlighted: repo permissions, secrets, MCP servers), Delivery (branch protection, review, CI) and Accountability (audit logs, production access, ownership).",
     date: "2026-10-08",
+    updated: "2026-10-08",
     readingTime: "4 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "fintech", "b2b-enterprise"],
@@ -184,6 +187,7 @@ export const prodAiPosts2: BlogPost[] = [
         heading: "Agent identity and audit",
         body: [
           "Agents should act under identities you can attribute: a bot account or app installation for automated agents, and the developer's identity (with agent activity recorded) for interactive use. Logs should answer which agent made a change, on whose instruction, with which permissions. This becomes important when something goes wrong or a client asks how their code was produced. The same principles as business agents apply; see [[/blogs/ai-agent-authentication|AI agent identity and authentication]].",
+          "Commit trailers, pull request metadata and agent session logs are covered in detail in [[/blogs/ai-generated-code-provenance|AI-generated code provenance]].",
         ],
       },
       {
@@ -235,7 +239,8 @@ export const prodAiPosts2: BlogPost[] = [
     bannerAlt:
       "Where human expertise moves in an AI-native team: Product decisions, Architecture, Specs, Agents implement (highlighted), Review + validation, Operate + measure.",
     date: "2026-10-08",
-    readingTime: "4 min read",
+    updated: "2026-10-08",
+    readingTime: "5 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "startups"],
     relatedSlugs: ["spec-driven-development", "measure-ai-coding-impact", "ai-software-development"],
@@ -270,6 +275,9 @@ export const prodAiPosts2: BlogPost[] = [
             ["QA / test engineer", "Manual test scripting", "Test strategy, acceptance criteria, evaluation sets, exploratory testing"],
             ["Product manager", "Long requirement documents nobody reads", "Precise specs with acceptance criteria; prototypes to test ideas"],
             ["Designer", "Static handoff only", "Working prototypes, design systems agents can follow, UX validation"],
+            ["Security engineer", "Reviewing every change by hand", "Policies agents follow, automated checks in CI, reviewing high-risk changes, agent permissions"],
+            ["DevOps / platform", "Hand-built environments", "Sandboxes for agents, CI capacity, deployment gates, agent identities and observability"],
+            ["Engineering manager", "Tracking output volume", "Review capacity, risk policy, skills development, measuring outcomes rather than activity"],
             ["Coding agents", "—", "Implementation, tests, refactors, documentation, migrations under supervision"],
           ],
         },
@@ -321,6 +329,13 @@ export const prodAiPosts2: BlogPost[] = [
         },
       },
       {
+        heading: "Where the value shifts",
+        body: [
+          "Developers do not disappear when agents write more of the code; the work that decides whether software is right becomes a larger share of the job. Five kinds of work grow in value: **defining problems** precisely enough that an agent can act on them, **designing systems** whose boundaries keep agent changes small and safe, **evaluating outputs** against requirements rather than against whether tests pass, **managing risk** by deciding which changes need deep review, and **making architectural decisions** that agents can follow but should not make alone.",
+          "These are judgment skills, and they are learned by doing real engineering. Teams that keep juniors writing, debugging and reviewing code alongside agents build them; teams that reduce juniors to prompt operators do not. For the organizational and pipeline view, see [[/blogs/ai-software-factory|the AI software factory]] and [[/blogs/ai-code-change-risk-scoring|AI code change risk scoring]].",
+        ],
+      },
+      {
         heading: "Conclusion",
         body: [
           "An AI-native team is not a smaller team with a chatbot. It is a team that has moved human expertise to product decisions, architecture, specification, review and operation, and has the practices to keep quality high as output increases. For the broader picture of AI in software delivery, see [[/blogs/ai-software-development|AI software development]].",
@@ -342,7 +357,8 @@ export const prodAiPosts2: BlogPost[] = [
     bannerAlt:
       "AI coding impact metrics in four groups: Delivery (lead time, deployment frequency), Stability (highlighted: change failure rate, recovery time, rework), Review and flow (PR size, review time) and Cost and experience (tool spend, developer survey).",
     date: "2026-10-08",
-    readingTime: "4 min read",
+    updated: "2026-10-08",
+    readingTime: "5 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology"],
     relatedSlugs: ["ai-software-development-cost", "ai-native-engineering-team", "claude-code-vs-codex-vs-cursor"],
@@ -436,6 +452,71 @@ export const prodAiPosts2: BlogPost[] = [
             ["No change in delivery, high tool spend", "Usage without workflow change", "Train on specific workflows; reconsider plan tiers"],
             ["Survey shows frustration with \"almost right\" output", "Context or task design problems", "Better repository instructions and specs; narrower tasks"],
           ],
+        },
+      },
+      {
+        heading: "Agent-specific metrics and a balanced dashboard",
+        body: [
+          "When coding agents (not just assistants) produce pull requests, add a few metrics that describe how much human effort each agent change really needs. **Agent intervention rate** is the share of agent tasks where a person had to step in, redirect or take over. **Human review effort** is reviewer time per agent pull request, ideally split by [[/blogs/ai-code-change-risk-scoring|risk tier]]. **Cost per shipped change** combines tool and model spend with review time for changes that reached production, not changes opened. Tagging agent work consistently (see [[/blogs/ai-generated-code-provenance|AI-generated code provenance]]) is what makes these measurable.",
+          "Read every speed metric next to a quality metric. Cycle time can fall because reviews became shallow; deployment frequency can rise because changes got smaller without delivering more. A balanced dashboard keeps both sides on one screen.",
+        ],
+        table: {
+          headers: [
+            "Area",
+            "Metric",
+            "Can mislead when...",
+          ],
+          rows: [
+            [
+              "Speed",
+              "Lead time and cycle time",
+              "Read without defect and rework rates",
+            ],
+            [
+              "Speed",
+              "Review time (wait and active)",
+              "Falls because reviews got shallower",
+            ],
+            [
+              "Throughput",
+              "Deployment frequency",
+              "Changes get smaller without more value shipped",
+            ],
+            [
+              "Quality",
+              "Defect rate and change failure rate",
+              "Defects are found later than the measurement window",
+            ],
+            [
+              "Quality",
+              "Rework and rollback rate",
+              "Fixes are folded into unrelated changes",
+            ],
+            [
+              "Agent effort",
+              "Agent intervention rate",
+              "Easy tasks are routed to agents and hard ones are not",
+            ],
+            [
+              "Agent effort",
+              "Human review effort per agent PR",
+              "Not split by risk tier",
+            ],
+            [
+              "Cost",
+              "Cost per shipped change",
+              "Review time is left out",
+            ],
+            [
+              "Experience",
+              "Developer satisfaction survey",
+              "Run once instead of tracked over time",
+            ],
+          ],
+        },
+        callout: {
+          type: "note",
+          text: "Lines of AI-generated code and suggestion acceptance rates stay off the dashboard. They measure activity, and they reward the volume that creates review load and technical debt.",
         },
       },
       {

@@ -25,6 +25,7 @@ export const agentWebPosts: BlogPost[] = [
     bannerAlt:
       "How an AI agent completes a task on a website: User goal, Agent plans, Reads page (highlighted; via screenshot, HTML and accessibility tree), Acts, Confirms with user, Task done.",
     date: "2026-10-07",
+    updated: "2026-10-08",
     readingTime: "8 min read",
     relatedServiceSlugs: ["website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["ecommerce", "travel-hospitality", "saas-technology"],
@@ -125,6 +126,7 @@ export const agentWebPosts: BlogPost[] = [
           "**WebMCP** is a proposed web standard for exactly that. A page registers tools (a name, a description, an input schema and a function) through a browser API, and an agent in the browser calls them instead of operating the UI. Chrome shipped a developer trial in May 2026 and runs a public origin trial from Chrome 149 through Chrome 156; Chrome's documentation suggests uses such as filling complex structured forms correctly. The API surface is still changing (Chromium moved the entry point from `navigator.modelContext` to `document.modelContext`), so treat it as an experiment rather than a requirement. web.dev's guide notes that sensitive actions should still require user confirmation.",
           "Outside the browser, the same idea already works through APIs and protocols: the [[/blogs/model-context-protocol|Model Context Protocol]] for connecting AI applications to your services, and commerce protocols such as UCP and ACP for product discovery and checkout, covered in our [[/blogs/agentic-commerce|agentic commerce guide]].",
           "Whether your business should offer such an interface, and what to expose first, is covered in [[/blogs/apis-for-ai-agents|should your business build APIs for AI agents]].",
+          "The broader discipline of designing actions, states and errors for agents across websites, APIs and MCP is covered in [[/blogs/agent-ux-design|agent UX]].",
         ],
         table: {
           headers: ["Approach", "Best for", "Maturity (Oct 2026)"],

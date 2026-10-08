@@ -595,6 +595,7 @@ export const aiCorePosts6: BlogPost[] = [
     bannerAlt:
       "Vector databases in four columns: store (vectors, metadata, source IDs, tenants), index highlighted (HNSW, IVF, quantization, rebuilds), query (k-nearest neighbours, filters, hybrid, thresholds) and operate (backups, scaling, cost, monitoring).",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce"],
@@ -645,7 +646,9 @@ export const aiCorePosts6: BlogPost[] = [
       },
       {
         heading: "Choosing the Type of System",
-        body: [],
+        body: [
+          "If your questions depend on relationships between entities rather than similar passages, compare the options in [[/blogs/knowledge-graph-vs-vector-database|knowledge graph vs vector database]].",
+        ],
         diagram: {
           variant: "vectordbcompare",
           alt: "Comparison of Postgres with pgvector, dedicated vector databases and search engines by when each is good, strengths, what to watch for and filtering; the note says choose by data, scale and team rather than benchmarks alone.",

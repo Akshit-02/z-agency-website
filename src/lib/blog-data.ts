@@ -177,6 +177,17 @@ import { agentOpsPosts2 } from "./blog-data-agent-ops-2";
 import { aiGovernancePosts1 } from "./blog-data-ai-governance-1";
 import { aiGovernancePosts2 } from "./blog-data-ai-governance-2";
 import { aiGovernancePosts3 } from "./blog-data-ai-governance-3";
+import { aiContextPosts1 } from "./blog-data-ai-context-1";
+import { aiContextPosts2 } from "./blog-data-ai-context-2";
+import { aiContextPosts3 } from "./blog-data-ai-context-3";
+import { agenticDevPosts1 } from "./blog-data-agentic-dev-1";
+import { agenticDevPosts2 } from "./blog-data-agentic-dev-2";
+import { agenticDevPosts3 } from "./blog-data-agentic-dev-3";
+import { aiInterfacePosts1 } from "./blog-data-ai-interfaces-1";
+import { aiInterfacePosts2 } from "./blog-data-ai-interfaces-2";
+import { aiInterfacePosts3 } from "./blog-data-ai-interfaces-3";
+import { agenticCommercePosts1 } from "./blog-data-agentic-commerce-1";
+import { agenticCommercePosts2 } from "./blog-data-agentic-commerce-2";
 
 export type BlogSection = {
   heading: string;
@@ -3115,6 +3126,17 @@ posts.push(
   ...aiGovernancePosts1,
   ...aiGovernancePosts2,
   ...aiGovernancePosts3,
+  ...aiContextPosts1,
+  ...aiContextPosts2,
+  ...aiContextPosts3,
+  ...agenticDevPosts1,
+  ...agenticDevPosts2,
+  ...agenticDevPosts3,
+  ...aiInterfacePosts1,
+  ...aiInterfacePosts2,
+  ...aiInterfacePosts3,
+  ...agenticCommercePosts1,
+  ...agenticCommercePosts2,
 );
 
 export function getPostBySlug(slug: string) {

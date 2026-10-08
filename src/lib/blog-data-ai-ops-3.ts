@@ -403,6 +403,7 @@ export const aiOpsPosts3: BlogPost[] = [
     bannerAlt:
       "Data pipelines for AI in four columns: extract (Connectors, CDC, Files, APIs), validate highlighted (Schema, Contracts, Quality rules, Quarantine), transform (Clean, Enrich, Chunk, Embed) and deliver (Indexes, Features, Datasets, Alerts).",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["b2b-enterprise", "saas-technology", "ecommerce"],
@@ -444,6 +445,7 @@ export const aiOpsPosts3: BlogPost[] = [
         body: [
           "Upstream systems change without warning: a column is renamed, a field starts arriving empty, a SaaS export adds a new format. For AI applications these changes are dangerous because they rarely cause errors; they quietly degrade answers. Validate every batch or event against expectations: schema, required fields, value ranges, uniqueness, volume compared with recent runs and freshness.",
           "Data contracts formalize those expectations between producers and consumers: what the data means, what quality it guarantees and how changes are announced. Tools such as Great Expectations and dbt tests implement checks; specifications such as the Data Contract Specification describe contracts in a machine-readable way.",
+          "For what a full contract should cover when AI applications are the consumers, including semantic rules, allowed values, freshness and versioning, see [[/blogs/ai-data-contracts|AI data contracts]].",
         ],
       },
       {

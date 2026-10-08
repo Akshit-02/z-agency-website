@@ -289,6 +289,7 @@ export const commercePosts13: BlogPost[] = [
     bannerAlt:
       "Product feed process: product data, build the feed, validate, send to channels, and diagnose and fix, with a loop noting that feeds must match the page on price, stock and shipping.",
     date: "2026-09-29",
+    updated: "2026-10-08",
     readingTime: "13 min read",
     relatedServiceSlugs: ["website-development", "shopify-development"],
     relatedIndustrySlugs: ["ecommerce"],
@@ -399,6 +400,7 @@ export const commercePosts13: BlogPost[] = [
         heading: "Feeds for Marketplaces, Social and AI Channels",
         body: [
           "Each channel has its own specification and category taxonomy. Map your attributes to each, keep a master record, and avoid maintaining separate copies of product data by hand. For Shopify's AI channels, product data flows through Shopify Catalog; see [[/blogs/shopify-agentic-commerce|Shopify agentic commerce]].",
+          "What AI shopping agents specifically need, including checkout eligibility and IDs that match your checkout API, is covered in [[/blogs/ai-product-feeds|AI product feeds]].",
         ],
         cta: {
           title: "Want feeds you don't have to firefight?",

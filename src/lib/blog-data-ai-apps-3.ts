@@ -283,6 +283,7 @@ export const aiAppsPosts3: BlogPost[] = [
         heading: "Review and Testing Become the Constraint",
         body: [
           "As code production speeds up, review and testing capacity limit throughput. Keep pull requests small, add AI first-pass review, strengthen automated tests and CI, and reserve senior review for high-risk areas. Track review time; if it grows, the process is not keeping up.",
+          "When agents perform several of these stages, the lifecycle starts to look like a pipeline with gates; see [[/blogs/ai-software-factory|the AI software factory]].",
         ],
       },
       {

@@ -26,7 +26,8 @@ export const aiBusinessPosts4: BlogPost[] = [
     bannerAlt:
       "AI-assisted shopping journey: AI query, Product discovery, Comparison, Recommendation (highlighted), Checkout, Attribution.",
     date: "2026-10-07",
-    readingTime: "5 min read",
+    updated: "2026-10-08",
+    readingTime: "7 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer", "fashion-apparel"],
     relatedSlugs: ["ai-commerce-analytics", "agentic-commerce", "ecommerce-product-data-ai-search"],
@@ -127,6 +128,59 @@ export const aiBusinessPosts4: BlogPost[] = [
         ],
       },
       {
+        heading: "Architectural implications for ecommerce businesses",
+        body: [
+          "The traditional path (search, product page, cart, checkout) runs entirely through your website. The agentic path (intent, discovery, comparison, product data, selection, cart, checkout, fulfillment, support) runs partly through someone else's interface and reaches your systems through data and APIs. That shifts investment from page templates towards the systems behind them.",
+          "The layer-by-layer architecture is in [[/blogs/agentic-commerce-stack|the agentic commerce stack]]; the protocols in [[/blogs/acp-vs-ucp-vs-mcp|ACP vs UCP vs MCP]]; product data requirements in [[/blogs/ai-product-feeds|AI product feeds]]; and the checkout flow in [[/blogs/agentic-checkout|agentic checkout]].",
+        ],
+        table: {
+          headers: [
+            "Stage",
+            "Traditional",
+            "Agentic",
+            "What to build",
+          ],
+          rows: [
+            [
+              "Intent and discovery",
+              "Search engine, ads, your site search",
+              "Assistant interprets intent; searches catalogs and feeds",
+              "Complete, factual product data and feeds",
+            ],
+            [
+              "Comparison",
+              "Shopper opens tabs",
+              "Agent compares attributes across merchants",
+              "Structured attributes, policies, shipping facts",
+            ],
+            [
+              "Selection",
+              "Product page",
+              "Agent picks a variant ID",
+              "Stable IDs shared by feed and checkout",
+            ],
+            [
+              "Cart and checkout",
+              "Your checkout pages",
+              "Checkout session via protocol or handoff to your site",
+              "Checkout API with authoritative totals; idempotency",
+            ],
+            [
+              "Payment",
+              "Your payment page",
+              "Scoped credential from the agent platform",
+              "PSP support for delegated or tokenized credentials",
+            ],
+            [
+              "Fulfillment and support",
+              "Emails and account pages",
+              "Agent may also track, cancel, return",
+              "Order APIs, signed webhooks, returns API",
+            ],
+          ],
+        },
+      },
+      {
         heading: "Conclusion",
         body: [
           "AI assistants are taking over discovery and comparison, and the visitors they send are closer to buying. Win the shortlist with complete, consistent product data; win the visit with product pages that confirm the decision quickly for people and agents; and keep checkout reliable wherever it happens. For the data work, see [[/blogs/ecommerce-product-data-ai-search|how to optimize product data for AI search]].",
@@ -149,7 +203,7 @@ export const aiBusinessPosts4: BlogPost[] = [
       "Four AI commerce data sources combined into one revenue, conversion and cohort report: AI referrals (GA4 AI Assistant channel, utm chatgpt.com), Google AI (Search Console, Organic Search), Agent orders (highlighted: platform channel, order source) and Survey (post-purchase influence).",
     date: "2026-10-07",
     updated: "2026-10-08",
-    readingTime: "5 min read",
+    readingTime: "9 min read",
     relatedServiceSlugs: ["cro-audit", "shopify-development"],
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer"],
     relatedSlugs: ["ai-search-traffic-tracking", "ai-agents-ecommerce-funnel", "ecommerce-attribution"],
@@ -262,6 +316,47 @@ export const aiBusinessPosts4: BlogPost[] = [
             ["Measured by", "GA4 AI Assistant channel, utm tags, platform order channel", "Surveys, branded and direct trends, product patterns"],
             ["Confidence", "High", "Directional only"],
             ["How to report", "Exact numbers", "Ranges with method stated"],
+          ],
+        },
+      },
+      {
+        heading: "Attribution When an Agent Is in the Journey",
+        body: [
+          "Attribution gets harder as the agent's role grows. When a user clicks an ad, standard click attribution works. When an AI recommends a product and the user clicks through, you see a referral (if the platform passes one). When an AI agent completes the purchase inside the assistant, the user may never visit your site; the order arrives through a platform channel with its own source. Treat the **agent touchpoint** as its own dimension rather than forcing it into first-touch or last-touch models.",
+          "A practical reporting framework records, per order: the **order-level channel** (web, app, marketplace, AI platform), the **agent platform** if any, whether checkout happened **in the agent or on your site**, any **referral** or UTM data, **affiliate** or partner involvement, and **survey-reported** influence. First-touch and last-touch views remain useful for web journeys; for agent-completed orders, order-level attribution from the platform channel is the reliable record. For the infrastructure behind these orders, see [[/blogs/agentic-commerce-stack|the agentic commerce stack]] and [[/blogs/agentic-checkout|agentic checkout]].",
+        ],
+        table: {
+          headers: [
+            "Journey",
+            "What you can observe",
+            "Attribution approach",
+          ],
+          rows: [
+            [
+              "User clicks an ad",
+              "Click ID, session, conversion",
+              "Standard click attribution",
+            ],
+            [
+              "AI recommends; user visits your site",
+              "Referrer or UTM from the assistant, if passed",
+              "AI referral channel; first/last touch where data exists",
+            ],
+            [
+              "AI recommends; user buys later via search",
+              "Often nothing direct",
+              "Post-purchase survey; brand search trends",
+            ],
+            [
+              "Agent completes purchase in the assistant",
+              "Order with platform channel; no site visit",
+              "Order-level attribution by agent platform",
+            ],
+            [
+              "Agent buys via an affiliate or partner link",
+              "Affiliate ID on order",
+              "Affiliate attribution plus agent dimension",
+            ],
           ],
         },
       },

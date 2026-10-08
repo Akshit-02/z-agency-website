@@ -22,6 +22,7 @@ export const aiAppsPosts2: BlogPost[] = [
     bannerAlt:
       "AI testing pipeline: requirements, test plan, generate tests, run in CI, triage failures (highlighted), maintain; the note says a generated test is only useful if it can fail for the right reason.",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "8 min read",
     relatedServiceSlugs: ["website-development", "mobile-app-development"],
     relatedIndustrySlugs: ["saas-technology", "fintech"],
@@ -94,6 +95,7 @@ export const aiAppsPosts2: BlogPost[] = [
         heading: "Test Maintenance and Its Risks",
         body: [
           "When behaviour changes intentionally, AI can update affected tests quickly. The danger is unintentional weakening: an AI asked to make the build pass may loosen assertions or delete failing tests. Reviewers should treat changes to tests and test configuration with extra care, and CI can flag pull requests that reduce assertion counts or coverage.",
+          "When agents go further and run, diagnose and repair tests themselves, the risk of weakened assertions grows; [[/blogs/agentic-qa|agentic QA]] covers the controls.",
         ],
       },
       {

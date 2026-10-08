@@ -26,6 +26,7 @@ export const prodAiPosts1: BlogPost[] = [
     bannerAlt:
       "Five levels of AI agent autonomy: Suggest, Draft, Execute with approval, Execute within boundaries (highlighted), Autonomous, with a loop to raise or lower the level based on evidence.",
     date: "2026-10-08",
+    updated: "2026-10-08",
     readingTime: "5 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["fintech", "ecommerce", "b2b-enterprise"],
@@ -105,6 +106,7 @@ export const prodAiPosts1: BlogPost[] = [
         heading: "Mixed autonomy inside one agent",
         body: [
           "A customer service agent illustrates why autonomy should be set per action, not per agent (an illustrative design, not a client case):",
+          "The per-action interface decisions (act, notify, approve or hand to a person) are covered in [[/blogs/ai-action-confirmation-ux|AI action confirmation UX]].",
         ],
         checklist: [
           "**Answer order status and delivery questions:** level 5, grounded in order data",
@@ -282,6 +284,7 @@ export const prodAiPosts1: BlogPost[] = [
     bannerAlt:
       "Durable agent run: Start, Step + checkpoint (highlighted), Tool call, Crash or rate limit, Resume from checkpoint, Complete, with a branch to wait for human approval.",
     date: "2026-10-08",
+    updated: "2026-10-08",
     readingTime: "4 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "fintech", "logistics-supply-chain"],
@@ -360,6 +363,7 @@ export const prodAiPosts1: BlogPost[] = [
         heading: "Observability gets easier",
         body: [
           "A side benefit: the recorded history of each run is an audit trail. You can see every step, input, output, retry and approval, replay a failed run in a test environment and answer \"what did the agent do?\" precisely. Connect it to your tracing so model-level detail sits alongside workflow history; see [[/blogs/ai-agent-observability|AI agent observability]].",
+          "How users start, follow and receive long-running agent work is covered in [[/blogs/background-ai-agent-ux|background AI agent UX]].",
         ],
       },
       {

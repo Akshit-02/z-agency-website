@@ -381,7 +381,7 @@ export const aiCorePosts2: BlogPost[] = [
     bannerAlt:
       "Human-in-the-loop modes in four columns: before action (review draft, edit freely, nothing sent, training data), approve action highlighted (show the plan, one-click approve, then execute, audit trail), after action (sample review, spot checks, undo window, quality score) and on doubt (low confidence, high value, policy match, escalate).",
     date: "2026-10-02",
-    updated: "2026-10-07",
+    updated: "2026-10-08",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "ui-ux-design"],
     relatedIndustrySlugs: ["fintech", "healthcare-healthtech", "b2b-enterprise"],
@@ -441,7 +441,9 @@ export const aiCorePosts2: BlogPost[] = [
       },
       {
         heading: "Designing the Review Interface",
-        body: [],
+        body: [
+          "For when an action needs approval at all, and the anatomy of an approval card (summary, impact, risk, evidence, approve, edit, reject, delegate), see [[/blogs/ai-action-confirmation-ux|AI action confirmation UX]].",
+        ],
         checklist: [
           "The original input and the AI's proposed output or action side by side",
           "Evidence: sources, records and tool results the AI used",

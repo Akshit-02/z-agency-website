@@ -164,6 +164,7 @@ export const aiGovernancePosts3: BlogPost[] = [
     bannerAlt:
       "Sources of AI automation technical debt: Knowledge (prompts, workflows, ownership), Integration (highlighted: hard-coded APIs, stale tools, credentials), Quality (no evaluation, no monitoring) and Dependencies (model lock-in, vendor lock-in, data drift).",
     date: "2026-10-08",
+    updated: "2026-10-08",
     readingTime: "5 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["b2b-enterprise", "saas-technology", "ecommerce"],
@@ -187,6 +188,7 @@ export const aiGovernancePosts3: BlogPost[] = [
         body: [
           "Google researchers warned years ago, in *Hidden Technical Debt in Machine Learning Systems*, that the model is a small part of a real ML system and that glue code, configuration and data dependencies create most of the maintenance burden. AI automation repeats the pattern at higher speed. A workflow built in an afternoon with a no-code tool, a prompt and a personal API key can become a process the business depends on within weeks, and nobody planned for its maintenance.",
           "Change pressure comes from everywhere: providers update models, APIs change fields, the business changes policies, data drifts. Without versioning and evaluation, each change is a silent risk.",
+          "This is different from debt in source code written with coding agents, which is covered in [[/blogs/ai-generated-code-technical-debt|AI-generated code technical debt]].",
         ],
       },
       {

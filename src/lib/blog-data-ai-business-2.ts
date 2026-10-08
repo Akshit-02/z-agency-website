@@ -142,7 +142,7 @@ export const aiBusinessPosts2: BlogPost[] = [
       "Assembling an agent's context for one step: Instructions, Task + user, Retrieved facts, Tool results (highlighted), Compacted history, Model call.",
     date: "2026-10-07",
     updated: "2026-10-08",
-    readingTime: "5 min read",
+    readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],
     relatedSlugs: ["ai-agent-memory", "retrieval-augmented-generation", "ai-agent-tool-design"],
@@ -252,6 +252,102 @@ export const aiBusinessPosts2: BlogPost[] = [
         },
       },
       {
+        heading: "A layered context architecture",
+        body: [
+          "For production systems it helps to treat context as architecture rather than prompt craft: twelve layers, each with a source, an owner and a refresh rule. The first nine are kinds of information; the last three are the controls that decide what reaches the model.",
+          "The layers interact in a fixed order. **Permissions** filter what can be retrieved before anything else happens. **Business context** resolves what the user's words mean and which entities they refer to. **Temporal context** fixes the as-of date so retrieval and tool calls use the right versions. **Retrieval** and **tools** then gather facts, **prioritization** ranks them against the task, **compression** fits them into the budget and **freshness** checks drop or re-fetch anything too old. The enterprise-wide source for definitions, rules and entities is a [[/blogs/business-context-layer-for-ai|business context layer]]; staleness controls are covered in [[/blogs/data-freshness-for-ai|data freshness for AI]], and recording what was used is [[/blogs/data-provenance-for-ai|data provenance for AI]].",
+        ],
+        table: {
+          headers: [
+            "Layer",
+            "What it holds",
+            "Typical source",
+          ],
+          rows: [
+            [
+              "1. User context",
+              "Identity, role, locale, preferences",
+              "Identity provider, profile",
+            ],
+            [
+              "2. Conversation context",
+              "Current request and recent turns",
+              "Session state",
+            ],
+            [
+              "3. Application state",
+              "Screen, record or workflow step the user is in",
+              "Application",
+            ],
+            [
+              "4. Business context",
+              "Definitions, rules, entities, org structure",
+              "Context layer, semantic layer",
+            ],
+            [
+              "5. Retrieved knowledge",
+              "Relevant passages and records",
+              "RAG index, search",
+            ],
+            [
+              "6. Tool results",
+              "Live facts and action outcomes",
+              "APIs, MCP tools",
+            ],
+            [
+              "7. Permissions",
+              "What this user or agent may see and do",
+              "Policy engine, entitlements",
+            ],
+            [
+              "8. Temporal context",
+              "Current date, as-of date, effective versions",
+              "Application clock, versioned data",
+            ],
+            [
+              "9. Memory",
+              "Durable facts and preferences across sessions",
+              "Memory store with expiry",
+            ],
+            [
+              "10. Context prioritization",
+              "Ranking by relevance and authority",
+              "Reranker, rules",
+            ],
+            [
+              "11. Context compression",
+              "Summaries, trimming, compaction",
+              "Summarizer, tool output limits",
+            ],
+            [
+              "12. Context freshness",
+              "Age checks and re-fetch",
+              "Timestamps, TTLs",
+            ],
+          ],
+        },
+        code: {
+          label: "Context engineering architecture (diagram)",
+          text: ` request ─▶ [1 user] [2 conversation] [3 app state]
+                    │
+                    ▼
+        [7 permissions]  ── filters everything below
+                    │
+        [4 business context] ── meaning, entities
+        [8 temporal context] ── as-of date, versions
+                    │
+     ┌──────────────┼───────────────┐
+     ▼              ▼               ▼
+ [5 retrieval]  [6 tool results] [9 memory]
+     └──────────────┼───────────────┘
+                    ▼
+   [10 prioritize] ─▶ [11 compress] ─▶ [12 freshness check]
+                    │
+                    ▼
+            context window ─▶ model`,
+        },
+      },
+      {
         heading: "Conclusion",
         body: [
           "Reliable agents are mostly well-fed agents. Decide what each step needs, fetch facts just in time from systems of record, keep instructions short, return compact tool results, compact long histories and capture the rules people never wrote down. For the data preparation underneath, see [[/blogs/ai-data-readiness|AI data readiness]]; for retrieval techniques, [[/blogs/retrieval-augmented-generation|retrieval-augmented generation]].",
@@ -341,6 +437,8 @@ export const aiBusinessPosts2: BlogPost[] = [
         heading: "Design for agents, not just developers",
         body: [
           "An API designed for developers assumes the caller already knows the workflow. Agents do better with task-shaped tools, clear descriptions and compact responses.",
+          "If the data behind your API is used by analytics, applications and agents alike, package it once as an [[/blogs/ai-ready-data-products|AI-ready data product]] with a contract and per-consumer interfaces.",
+          "For ecommerce specifically (products, inventory, cart, checkout, orders and returns), see [[/blogs/agent-ready-ecommerce-api|agent-ready ecommerce API]]; for the interaction design principles behind all agent interfaces, [[/blogs/agent-ux-design|agent UX]].",
         ],
         checklist: [
           "Expose tasks (\"find available rooms for dates\") rather than raw endpoints (\"list inventory with 20 filters\")",

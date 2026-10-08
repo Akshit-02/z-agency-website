@@ -241,7 +241,7 @@ export const aiAppsPosts1: BlogPost[] = [
     bannerAlt:
       "Coding agent flow: issue or task, explore repository, plan, edit code, run tests (highlighted), pull request; a branch shows failing tests leading to iteration within a budget.",
     date: "2026-10-02",
-    updated: "2026-10-07",
+    updated: "2026-10-08",
     readingTime: "9 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "startups"],
@@ -333,6 +333,7 @@ export const aiAppsPosts1: BlogPost[] = [
         heading: "Reviewing Agent Pull Requests",
         body: [
           "Review agent output as you would a new contributor's: check that it solved the stated problem, did not change unrelated code, added or updated tests that actually exercise the change, follows conventions and does not introduce dependencies without reason. Keep pull requests small; ask the agent to split large changes. AI review tools can help triage, but a person approves. See [[/blogs/ai-code-review|AI code review]].",
+          "Branch naming, pull request templates with test evidence and merge gates are covered in [[/blogs/ai-coding-agents-git-workflow|AI coding agents and Git]].",
         ],
       },
       {
@@ -372,6 +373,7 @@ export const aiAppsPosts1: BlogPost[] = [
         body: [
           "Most agent tools read a project instruction file before starting work. A short, accurate file saves every agent run from rediscovering the basics and steers it toward your conventions.",
           "AGENTS.md has become the common name. It started as an open format in 2025, is now stewarded by the Agentic AI Foundation under the Linux Foundation, and is read by many agents, including Codex and Cursor; Claude Code uses CLAUDE.md and can read an existing AGENTS.md instead. One shared file keeps instructions consistent if your team uses more than one tool (see [[/blogs/claude-code-vs-codex-vs-cursor|Claude Code vs Codex vs Cursor]]). Include your security rules too: approved libraries for authentication and data access, no hard-coded secrets, and which directories need human-led changes. [[/blogs/ai-generated-code-security|AI-generated code security]] lists what to cover, and [[/blogs/ai-coding-agent-security|securing AI coding agents]] covers sandboxing and permissions.",
+          "For how to structure root, scoped and task-level context (and why more context is not always better), see [[/blogs/ai-coding-agent-context|AI coding agent context]].",
         ],
         code: {
           label: "Example: repository instructions for coding agents (illustrative)",
@@ -382,6 +384,7 @@ export const aiAppsPosts1: BlogPost[] = [
         heading: "Cost, Throughput and Parallel Work",
         body: [
           "Background agents can work on several issues in parallel, which raises throughput but also review load and usage costs. Track cost per merged pull request and review time per agent change, cap concurrent agent tasks per team to what reviewers can handle and stop runs that exceed step or time budgets. Parallelism is only useful if the review pipeline keeps up; see [[/blogs/ai-code-review|AI code review]] for first-pass help.",
+          "Isolation and task decomposition for several agents are covered in [[/blogs/parallel-ai-coding-agents|parallel AI coding agents]].",
         ],
       },
       {
@@ -448,6 +451,7 @@ export const aiAppsPosts1: BlogPost[] = [
     bannerAlt:
       "Comparison of code completion, chat assistance and agentic coding (highlighted) by unit of work, who drives, whether code is run, when review happens and best use.",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "8 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "startups"],
@@ -633,6 +637,47 @@ export const aiAppsPosts1: BlogPost[] = [
         },
       },
       {
+        heading: "From AI-Assisted to Agentic Software Development",
+        body: [
+          "The modes above describe how one developer works with one tool. **Agentic software development** is the next step at team level: agents carry out whole tasks across the lifecycle (planning, coding, testing, debugging, opening pull requests, preparing releases and triaging alerts) while people define problems, set constraints, review and own outcomes. It is less a new tool than a new division of labour.",
+          "What people should keep owning does not shrink much: the requirement and its acceptance criteria, architecture and data model decisions, approval of plans for non-trivial work, review and merge approval sized to risk, production deployment decisions for sensitive systems, and incident response. For how the pipeline can be organized, see [[/blogs/ai-software-factory|the AI software factory]]; for running several agents at once, [[/blogs/parallel-ai-coding-agents|parallel AI coding agents]]; and for branch and pull request conventions, [[/blogs/ai-coding-agents-git-workflow|AI coding agents and Git]].",
+        ],
+        table: {
+          headers: [
+            "Stage",
+            "Who writes the code",
+            "Human role",
+            "Typical unit of work",
+          ],
+          rows: [
+            [
+              "Traditional development",
+              "Developers",
+              "Everything",
+              "Commits by people",
+            ],
+            [
+              "AI-assisted development",
+              "Developers with suggestions and chat",
+              "Author; accepts or rejects suggestions",
+              "Lines and functions",
+            ],
+            [
+              "Coding agents",
+              "An agent under a developer's direction",
+              "Directs, reviews, integrates",
+              "A task or pull request",
+            ],
+            [
+              "Agentic software development",
+              "Several agents across the lifecycle",
+              "Specifies, approves plans, reviews by risk, owns production",
+              "A pipeline of tasks with gates",
+            ],
+          ],
+        },
+      },
+      {
         heading: "Conclusion",
         body: [
           "Assistance and agents are points on one ladder. Climb it task by task, strengthen review as autonomy grows and keep people responsible for what merges. Related: [[/blogs/ai-coding-agents|AI coding agents]] and [[/blogs/ai-code-review|AI code review]].",
@@ -653,7 +698,7 @@ export const aiAppsPosts1: BlogPost[] = [
     bannerAlt:
       "AI code review flow: pull request opened, diff and context, AI review, comments by severity, human reviewer (highlighted), merge or fix.",
     date: "2026-10-02",
-    updated: "2026-10-07",
+    updated: "2026-10-08",
     readingTime: "8 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "fintech"],
@@ -784,7 +829,9 @@ export const aiAppsPosts1: BlogPost[] = [
       },
       {
         heading: "Reviewing AI-Generated Pull Requests",
-        body: [],
+        body: [
+          "To decide how deep each review should be, use a risk tier based on what the change touches; see [[/blogs/ai-code-change-risk-scoring|AI code change risk scoring]].",
+        ],
         checklist: [
           "Does the change solve the stated problem and only that problem?",
           "Were tests added that exercise the change, and were existing tests weakened?",

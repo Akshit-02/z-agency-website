@@ -26,6 +26,7 @@ export const aiCorePosts8: BlogPost[] = [
     bannerAlt:
       "AI knowledge base in four columns: sources (policies, manuals, tickets, wikis), pipeline (sync, parse and chunk, permissions, index), assistant (answers, citations, refusals, hand-off) and feedback highlighted (thumbs and notes, gap reports, owner fixes, re-test).",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "ui-ux-design"],
     relatedIndustrySlugs: ["professional-services", "saas-technology", "b2b-enterprise"],
@@ -77,6 +78,7 @@ export const aiCorePosts8: BlogPost[] = [
         heading: "Answers, Citations and Refusals",
         body: [
           "Every answer should cite the passages it used, linking to the source document and section, so users can verify. When retrieval finds nothing relevant, the assistant should say so and suggest where to go next, not guess. For policy questions, quote the policy text rather than paraphrasing loosely. Show the document's date when freshness matters.",
+          "Citations are the visible part of a fuller record; [[/blogs/data-provenance-for-ai|data provenance for AI]] covers what to store behind each answer.",
         ],
         diagram: {
           variant: "kbflow",
@@ -208,6 +210,7 @@ export const aiCorePosts8: BlogPost[] = [
     bannerAlt:
       "GraphRAG flow: documents, extract entities, build graph (highlighted), detect communities, summarize, query locally or globally.",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["professional-services", "pharmaceuticals", "b2b-enterprise"],
@@ -334,6 +337,7 @@ export const aiCorePosts8: BlogPost[] = [
         heading: "Combining Graph and Vector Retrieval",
         body: [
           "In practice, graphs and vectors work together. A query can use vector search to find relevant entities or passages, then expand through graph relationships to related entities and their sources, or use community summaries for broad questions and chunk retrieval for specifics. A router or agent can choose the mode per question. Evaluate each combination against your standard RAG baseline, as described in [[/blogs/retrieval-augmented-generation|the RAG guide]].",
+          "For a broader comparison of the two stores, including when vector search alone is enough, see [[/blogs/knowledge-graph-vs-vector-database|knowledge graph vs vector database]].",
         ],
       },
       {
@@ -378,6 +382,7 @@ export const aiCorePosts8: BlogPost[] = [
     bannerAlt:
       "Model Context Protocol architecture in four columns: host (AI app or IDE, user consent, model access, many clients), client (one per server, protocol, capabilities, auth), server highlighted (your system, stdio or HTTP, validation, scoped access) and capabilities (tools, resources, prompts, extensions).",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "9 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],
@@ -470,7 +475,9 @@ export const aiCorePosts8: BlogPost[] = [
       },
       {
         heading: "Practical Use Cases",
-        body: [],
+        body: [
+          "MCP Apps, the official UI extension, lets tools return interactive interfaces inside supporting assistants; see [[/blogs/ai-assistant-app-ux|AI assistant app UX]]. In commerce, MCP is a transport for protocols such as UCP; see [[/blogs/acp-vs-ucp-vs-mcp|ACP vs UCP vs MCP]].",
+        ],
         table: {
           headers: ["Use case", "What the MCP server exposes"],
           rows: [

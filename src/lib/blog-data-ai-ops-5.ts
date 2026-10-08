@@ -23,6 +23,7 @@ export const aiOpsPosts5: BlogPost[] = [
     bannerAlt:
       "AI data lineage in four columns: sources (Systems, Documents, Owners, Licences), jobs (Pipelines, Code versions, Parameters, Runs), artefacts highlighted (Datasets, Chunks, Embeddings, Features) and consumers (Models, Prompts, Answers, Reports).",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["fintech", "healthcare-healthtech", "b2b-enterprise"],
@@ -139,6 +140,7 @@ export const aiOpsPosts5: BlogPost[] = [
         heading: "Lineage for Retrieval-Augmented Generation",
         body: [
           "RAG systems need lineage at chunk level. Each chunk should carry its source document ID and version, the parser and chunking configuration that produced it and the embedding model that encoded it. Each answer trace should record the chunk IDs retrieved and used. With these links, a reviewer can click from an answer to the exact source passage, an incident team can find every answer that used a faulty document, and a deletion request can find every chunk derived from a person's data. See [[/blogs/enterprise-rag-architecture|enterprise RAG architecture]].",
+          "Lineage explains how documents reach the index; recording which chunks, versions and tool outputs produced one specific answer is answer-level provenance, covered in [[/blogs/data-provenance-for-ai|data provenance for AI]].",
         ],
       },
       {
@@ -196,6 +198,7 @@ export const aiOpsPosts5: BlogPost[] = [
     bannerAlt:
       "Streaming vs batch for AI compared (Streaming and Batch, with Streaming highlighted) by freshness, complexity, cost, failures and ai uses.",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["fintech", "ecommerce", "logistics-supply-chain"],
@@ -225,7 +228,9 @@ export const aiOpsPosts5: BlogPost[] = [
       },
       {
         heading: "Do You Need Streaming?",
-        body: [],
+        body: [
+          "Deciding how fresh each kind of data must be comes before choosing streaming; [[/blogs/data-freshness-for-ai|data freshness for AI]] gives a real-time, near-real-time and batch decision framework, plus the TTL and re-check controls that stop agents acting on stale values.",
+        ],
         table: {
           headers: ["Need", "Simplest approach"],
           rows: [

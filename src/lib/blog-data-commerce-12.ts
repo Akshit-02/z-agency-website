@@ -187,7 +187,7 @@ export const commercePosts12: BlogPost[] = [
     bannerAlt:
       "AI shopping agent flow: shopper request, the agent searches, catalog and product feeds, compare and shortlist, cart and checkout, merchant fulfils, with the shopper confirming before paying.",
     date: "2026-09-29",
-    updated: "2026-10-07",
+    updated: "2026-10-08",
     readingTime: "14 min read",
     relatedServiceSlugs: ["ai-automation", "shopify-development", "website-development"],
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer"],
@@ -270,6 +270,7 @@ export const commercePosts12: BlogPost[] = [
         heading: "Checkout and Payments",
         body: [
           "When an agent completes a purchase, the checkout still runs on the merchant's systems. OpenAI's ACP documentation states that OpenAI is not the merchant of record and that checkout state and payment processing occur on the merchant's systems (OpenAI). Google's UCP-powered checkout keeps the merchant as seller of record and currently uses payment methods saved in Google Wallet (Google Merchant Center Help). Your checkout rules, taxes, shipping and fraud checks still apply.",
+          "The step-by-step flow, including idempotency and order webhooks, is in [[/blogs/agentic-checkout|agentic checkout]]; credentials, mandates and limits are in [[/blogs/ai-agent-commerce-payments|AI commerce payments]].",
         ],
       },
       {
@@ -378,13 +379,14 @@ export const commercePosts12: BlogPost[] = [
         body: [
           "Several standards emerged between 2025 and 2026. They overlap and are evolving, so treat this as a map, not a final picture.",
           "MCP itself, including the 2026-07-28 specification changes, is covered in [[/blogs/model-context-protocol|the Model Context Protocol guide]].",
+          "For a detailed, layer-by-layer comparison see [[/blogs/acp-vs-ucp-vs-mcp|ACP vs UCP vs MCP]], and for how protocols map onto catalog, checkout, payments and orders, [[/blogs/agentic-commerce-stack|the agentic commerce stack]].",
         ],
         table: {
           headers: ["Protocol", "Who", "What it covers", "Status (Sept 2026)"],
           rows: [
             ["UCP: Universal Commerce Protocol", "Google, Shopify", "Discovery, carts, checkout, post-purchase between agents and merchants", "Announced Jan 2026; used for checkout on AI Mode and Gemini in early access; supported by Shopify's agent tooling"],
             ["ACP: Agentic Commerce Protocol", "OpenAI, Stripe", "Product feeds, agentic checkout, delegated payment", "Launched Sept 2025; Instant Checkout moved to ChatGPT apps in Mar 2026, ACP continues as infrastructure"],
-            ["AP2: Agent Payments Protocol", "Google, 60+ partners", "Agent-initiated payments with verifiable user authorization", "Announced Sept 2025"],
+            ["AP2: Agent Payments Protocol", "Google; standardization continuing at the FIDO Alliance", "Agent-initiated payments with signed checkout and payment mandates", "Announced Sept 2025; v0.2 released; AP2 mandates extension in UCP"],
             ["MCP: Model Context Protocol", "Open standard", "Connecting AI applications to tools and data", "Widely used; Shopify offers UCP-compliant MCP servers"],
           ],
         },
@@ -516,7 +518,8 @@ export const commercePosts12: BlogPost[] = [
     bannerAlt:
       "Shopify agentic commerce flow: Shopify admin, Shopify Catalog, AI channels, product found, and checkout either directly in the channel or on the store, with orders attributed to the AI channel in the admin.",
     date: "2026-09-29",
-    readingTime: "13 min read",
+    updated: "2026-10-08",
+    readingTime: "7 min read",
     relatedServiceSlugs: ["shopify-development", "ai-automation"],
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer"],
     faqs: [
@@ -637,6 +640,76 @@ export const commercePosts12: BlogPost[] = [
         cta: {
           title: "Want Shopify's AI channels working for your store?",
           description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify development]] and [[/services/ai-automation|AI commerce]].",
+        },
+      },
+      {
+        heading: "Detailed Readiness Checklist",
+        body: [
+          "Beyond turning on Agentic Storefronts, these checks make a Shopify store reliable for AI shopping agents. They reflect what agents need to recommend and buy correctly: see [[/blogs/ai-product-feeds|AI product feeds]] for the reasoning and [[/blogs/agentic-commerce-stack|the agentic commerce stack]] for how Shopify's pieces fit the wider architecture.",
+        ],
+        table: {
+          headers: [
+            "Area",
+            "Check in Shopify",
+          ],
+          rows: [
+            [
+              "Product data",
+              "Titles state product type and key attribute; descriptions factual; product type and category set",
+            ],
+            [
+              "Variants",
+              "Consistent option names and values; every variant has its own image, price, SKU and inventory tracking",
+            ],
+            [
+              "Identifiers",
+              "SKUs unique; barcodes (GTIN/UPC/EAN) filled where products have them; vendor set",
+            ],
+            [
+              "Pricing",
+              "Compare-at prices only for genuine sales; market-specific prices correct in Markets",
+            ],
+            [
+              "Inventory and availability",
+              "Inventory tracked per location; overselling settings deliberate; pre-order products clearly marked",
+            ],
+            [
+              "Product media",
+              "Accurate, variant-specific images with alt text; no images that misrepresent options",
+            ],
+            [
+              "Shipping",
+              "Shipping profiles cover every market you sell to; delivery estimates realistic",
+            ],
+            [
+              "Policies",
+              "Refund, shipping, privacy and terms policies complete in Settings > Policies",
+            ],
+            [
+              "Structured data",
+              "Theme outputs valid Product structured data matching on-page price and availability",
+            ],
+            [
+              "Feeds",
+              "Google & YouTube channel and Merchant Center free of errors; Catalog Mapping covers key metafields",
+            ],
+            [
+              "APIs",
+              "Custom apps or headless storefronts use the same product and variant IDs",
+            ],
+            [
+              "Checkout",
+              "Direct checkout decided per channel; checkout customizations tested for agent-originated orders",
+            ],
+            [
+              "Order status",
+              "Order confirmation, shipping and delivery notifications accurate; tracking numbers added on fulfillment",
+            ],
+          ],
+        },
+        cta: {
+          title: "Getting a Shopify store ready for AI shopping?",
+          description: "ZSpace Labs audits and fixes product data, Catalog Mapping, policies and checkout for Shopify stores. See [[/services/shopify-development|Shopify development]].",
         },
       },
       {

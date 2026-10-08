@@ -288,7 +288,8 @@ export const aiGovernancePosts2: BlogPost[] = [
     bannerAlt:
       "AI-enabled vs AI-native software (AI-native highlighted) compared by architecture, UX, data, evaluation and permissions.",
     date: "2026-10-08",
-    readingTime: "5 min read",
+    updated: "2026-10-08",
+    readingTime: "7 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise"],
     relatedSlugs: ["turn-saas-product-into-ai-native-product", "ai-powered-saas-development", "ai-automation-architecture"],
@@ -422,6 +423,52 @@ UI (conversational + direct manipulation)
           "**You must rebuild.** Most products get there by exposing existing logic as tools",
           "**The model is the product.** Data, tools, controls and UX are what make it reliable and defensible",
         ],
+      },
+      {
+        heading: "What AI-native UX looks like",
+        body: [
+          "The architecture differences above show up directly in the interface. In an AI-enabled product, the interaction model is still screens and forms, with AI behind a button or in a side panel. In an AI-native product, **AI is a primary interface**: users state goals, the product proposes plans or generated workflows, and screens adapt to the task. Five UX properties follow from that. **Human control:** plans can be edited, consequential actions are confirmed and everything can be stopped. **State:** tasks persist and are visible outside the conversation, in task cards and activity timelines. **Memory:** the product remembers preferences and past decisions, visibly and editably. **Permissions:** the interface shows what the AI is allowed to do on the user's behalf. **Evaluation:** quality is measured per release, so interface behaviour does not silently change.",
+          "The practical patterns are collected in [[/blogs/ai-interface-patterns|AI interface patterns]]; for interfaces assembled per request, see [[/blogs/generative-ui|generative UI]], and for deciding when the AI must ask first, [[/blogs/ai-action-confirmation-ux|AI action confirmation UX]].",
+        ],
+        table: {
+          headers: [
+            "UX aspect",
+            "AI-enabled",
+            "AI-native",
+          ],
+          rows: [
+            [
+              "Primary interaction",
+              "Screens and forms; AI on request",
+              "Goals and plans; screens adapt",
+            ],
+            [
+              "Workflows",
+              "Fixed, designed in advance",
+              "Generated or adapted per task, within limits",
+            ],
+            [
+              "Human control",
+              "User does the work",
+              "User directs, reviews and approves",
+            ],
+            [
+              "State",
+              "Lives in records",
+              "Also in tasks, plans and activity history",
+            ],
+            [
+              "Memory",
+              "Per session, if any",
+              "Persistent, visible and editable",
+            ],
+            [
+              "Permissions shown to users",
+              "Rarely needed",
+              "Explicit: what the AI may do for you",
+            ],
+          ],
+        },
       },
       {
         heading: "Conclusion",

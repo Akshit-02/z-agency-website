@@ -363,6 +363,47 @@ AI agent governance, AI-native products and enterprise automation:
 - AI automation technical debt: why AI workflows become hard to maintain — https://www.zspace.in/blogs/ai-automation-technical-debt
 - AI automation center of excellence: operating models by organization size — https://www.zspace.in/blogs/ai-automation-center-of-excellence
 
+AI data and business context (how AI understands enterprise data):
+- Business context layer for AI: definitions, rules, entities, permissions and time (hub) — https://www.zspace.in/blogs/business-context-layer-for-ai
+- Semantic layer for AI: metrics and dimensions vs tables, RAG and knowledge graphs — https://www.zspace.in/blogs/semantic-layer-for-ai
+- Business ontology for AI: entities, relationships and rules; vs taxonomy, knowledge graph and semantic layer — https://www.zspace.in/blogs/business-ontology-for-ai
+- AI data contracts: schema, semantics, quality, freshness and versioning for AI consumers — https://www.zspace.in/blogs/ai-data-contracts
+- AI-ready data products: packaging enterprise data for analytics, applications and AI agents — https://www.zspace.in/blogs/ai-ready-data-products
+- Knowledge graph vs vector database for AI: when to use each and when to combine — https://www.zspace.in/blogs/knowledge-graph-vs-vector-database
+- Entity resolution for AI: one customer, product and company across systems — https://www.zspace.in/blogs/entity-resolution-for-ai
+- Data freshness for AI: real-time vs near-real-time vs batch, TTLs and agent re-checks — https://www.zspace.in/blogs/data-freshness-for-ai
+- Data provenance for AI: where an answer came from; vs lineage and citations — https://www.zspace.in/blogs/data-provenance-for-ai
+- Text-to-SQL for business data: why accuracy depends on context — https://www.zspace.in/blogs/text-to-sql-for-business-data
+
+Agentic software development (coding agents in the delivery pipeline):
+- The AI software factory: agents across the pipeline with gates and human approval — https://www.zspace.in/blogs/ai-software-factory
+- Parallel AI coding agents: worktrees, task decomposition and coordination — https://www.zspace.in/blogs/parallel-ai-coding-agents
+- AI coding agent context: AGENTS.md, scoped rules, specs and skills — https://www.zspace.in/blogs/ai-coding-agent-context
+- AI-generated code provenance: identities, commit trailers, PR metadata, session logs — https://www.zspace.in/blogs/ai-generated-code-provenance
+- AI code change risk scoring: low to critical tiers mapped to review and deployment — https://www.zspace.in/blogs/ai-code-change-risk-scoring
+- AI coding agents and Git: branches, commits, pull requests, merge gates, rollback — https://www.zspace.in/blogs/ai-coding-agents-git-workflow
+- Agentic QA: agents that plan, execute, diagnose and report tests — https://www.zspace.in/blogs/agentic-qa
+- AI-generated code technical debt: keeping agent-written codebases maintainable — https://www.zspace.in/blogs/ai-generated-code-technical-debt
+
+AI interfaces and AI-native product UX:
+- AI interface patterns: 15 interaction patterns for AI products (hub) — https://www.zspace.in/blogs/ai-interface-patterns
+- Generative UI: AI selecting and filling design-system components at runtime — https://www.zspace.in/blogs/generative-ui
+- AI assistant app UX: designing interfaces inside ChatGPT and Claude with MCP Apps — https://www.zspace.in/blogs/ai-assistant-app-ux
+- Agent UX (agent experience): actions, states, errors and fallback for AI agents as users — https://www.zspace.in/blogs/agent-ux-design
+- AI agent handoffs: human to AI, AI to human and AI to AI — https://www.zspace.in/blogs/ai-agent-handoffs
+- AI action confirmation UX: when an AI should ask before acting; approval card anatomy — https://www.zspace.in/blogs/ai-action-confirmation-ux
+- AI agent trust UX: plans, activity, receipts and undo for autonomous actions — https://www.zspace.in/blogs/ai-agent-trust-ux
+- Multimodal AI product design: choosing text, voice, image, video and documents per task — https://www.zspace.in/blogs/multimodal-ai-product-design
+- Background AI agent UX: long-running tasks, status, notifications and results — https://www.zspace.in/blogs/background-ai-agent-ux
+
+Agentic commerce infrastructure (protocol details checked October 2026):
+- The agentic commerce stack: layers from shopping agent to post-purchase, mapped to protocols (hub) — https://www.zspace.in/blogs/agentic-commerce-stack
+- ACP vs UCP vs MCP: agentic commerce protocols compared by layer — https://www.zspace.in/blogs/acp-vs-ucp-vs-mcp
+- AI product feeds: what shopping agents need, checkout eligibility and freshness — https://www.zspace.in/blogs/ai-product-feeds
+- Agentic checkout: checkout sessions, authoritative merchant state, idempotency, webhooks — https://www.zspace.in/blogs/agentic-checkout
+- Agent-ready ecommerce API: products to returns, auth, idempotency, webhooks — https://www.zspace.in/blogs/agent-ready-ecommerce-api
+- AI commerce payments: delegated credentials, mandates, limits, fraud, disputes — https://www.zspace.in/blogs/ai-agent-commerce-payments
+
 ## Industries
 
 ZSpace Labs works across a broad range of industries, applying the same core services to the specific problems each industry has. Dedicated industry pages exist for:

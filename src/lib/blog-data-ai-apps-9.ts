@@ -229,7 +229,7 @@ export const aiAppsPosts9: BlogPost[] = [
     bannerAlt:
       "AI data readiness in four columns: quality (accuracy, completeness, freshness, duplicates), access (APIs, exports, latency, volume), context highlighted (metadata, definitions, lineage, examples) and governance (owners, permissions, consent, retention).",
     date: "2026-10-02",
-    updated: "2026-10-07",
+    updated: "2026-10-08",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["b2b-enterprise", "fintech", "healthcare-healthtech"],
@@ -297,6 +297,7 @@ export const aiAppsPosts9: BlogPost[] = [
         heading: "Context, Metadata and Definitions",
         body: [
           "The Datasheets for Datasets proposal is a useful template for documenting datasets.",
+          "At enterprise scale these definitions, rules and entities become a shared [[/blogs/business-context-layer-for-ai|business context layer]]; governed metrics usually live in a [[/blogs/semantic-layer-for-ai|semantic layer]].",
         ],
         checklist: [
           "Business definitions for key fields and metrics",

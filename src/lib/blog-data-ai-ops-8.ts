@@ -23,6 +23,7 @@ export const aiOpsPosts8: BlogPost[] = [
     bannerAlt:
       "AI UX design in four columns: input (Prompts, Suggestions, Context, Attachments), progress (Streaming, Steps, Cancel, Estimates), output highlighted (Sources, Uncertainty, Editing, Formats) and control (Undo, Confirm, Feedback, Settings).",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ui-ux-design", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise", "martech"],
@@ -52,7 +53,9 @@ export const aiOpsPosts8: BlogPost[] = [
       },
       {
         heading: "Choosing an Interaction Pattern",
-        body: [],
+        body: [
+          "A fuller library of fifteen patterns, with when not to use each, is in [[/blogs/ai-interface-patterns|AI interface patterns]]; for interfaces the model assembles per request, see [[/blogs/generative-ui|generative UI]].",
+        ],
         table: {
           headers: ["Pattern", "Example", "Best for"],
           rows: [
@@ -366,6 +369,7 @@ export const aiOpsPosts8: BlogPost[] = [
     bannerAlt:
       "AI chat interface in four columns: header (Context, Mode, New chat, Settings), conversation highlighted (Messages, Sources, Tool steps, States), composer (Input, Attachments, Suggestions, Stop) and around it (History, Feedback, Handoff, Privacy).",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ui-ux-design", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "b2b-enterprise"],
@@ -487,12 +491,14 @@ export const aiOpsPosts8: BlogPost[] = [
         heading: "Rendering Rich Output Safely",
         body: [
           "Chat interfaces often render Markdown, tables, code, links and images from model output. Sanitize rendered HTML, restrict external images and links to allowed domains or require a click to load them, open links with clear destination previews and render code as text, never executing it. These measures prevent cross-site scripting and data exfiltration through generated content. See [[/blogs/ai-data-leakage|AI data leakage]] for the security reasoning.",
+          "Choosing and rendering components from a design-system catalogue is covered in [[/blogs/generative-ui|generative UI]].",
         ],
       },
       {
         heading: "Handoff to People",
         body: [
           "Where people stand behind an assistant, such as support agents, HR or account managers, the handoff is part of the chat design. Offer it visibly, not only after repeated failures. Pass the full conversation, retrieved context and what the assistant tried, so the person does not start over. Set expectations about response times and channels. When the person replies in the same interface, make it clear who is speaking. After resolution, the conversation becomes valuable feedback for improving the assistant; see [[/blogs/ai-customer-support-automation|AI customer support automation]].",
+          "Handoffs between people and agents, and between agents, are covered in [[/blogs/ai-agent-handoffs|AI agent handoffs]].",
         ],
       },
       {
@@ -537,6 +543,7 @@ export const aiOpsPosts8: BlogPost[] = [
     bannerAlt:
       "AI copilot UX patterns compared (Inline, Action, Panel and Draft, with Action highlighted) by interrupts, effort, best for and control.",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ui-ux-design", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "b2b-enterprise", "martech"],
@@ -597,6 +604,7 @@ export const aiOpsPosts8: BlogPost[] = [
         heading: "Drafts, Previews and Approval",
         body: [
           "Treat every output as a draft. Text suggestions should be easy to accept partially, edit or reject. Changes to data should be shown as a preview with differences highlighted before applying. Actions affecting other people, external systems or many records need explicit confirmation with a clear summary. Approval should require looking at what matters, not just clicking through.",
+          "To decide which actions need approval and which only need undo, use the framework in [[/blogs/ai-action-confirmation-ux|AI action confirmation UX]].",
         ],
         cta: {
           title: "Adding a copilot to your product?",

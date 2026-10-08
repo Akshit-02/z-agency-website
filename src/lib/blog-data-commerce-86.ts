@@ -405,6 +405,7 @@ export const commercePosts86: BlogPost[] = [
     bannerAlt:
       "Payment security layers in four columns: card data (hosted fields, tokenization, no card number storage, encryption), payment page highlighted (script inventory, CSP and SRI, change detection, tag governance), access (MFA, least privilege, key rotation, admin audit) and monitoring (logs, alerts, webhook checks, incident plan).",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "8 min read",
     relatedServiceSlugs: ["website-development", "shopify-development"],
     relatedIndustrySlugs: ["ecommerce", "fintech", "retail"],
@@ -507,6 +508,7 @@ export const commercePosts86: BlogPost[] = [
         heading: "Platform Responsibilities",
         body: [
           "On hosted platforms, the platform secures its checkout, but you remain responsible for your theme, apps, scripts, accounts and processes. On custom and headless builds, more falls to you: hosting, payment page integrity, key management and monitoring. In multi-provider setups the token vault adds scope; see [[/blogs/ecommerce-payment-orchestration|payment orchestration]].",
+          "Purchases made by AI agents add delegated credentials and mandates to this picture; see [[/blogs/ai-agent-commerce-payments|AI commerce payments]].",
         ],
       },
       {

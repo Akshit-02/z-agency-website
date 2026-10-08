@@ -559,6 +559,7 @@ export const aiOpsPosts4: BlogPost[] = [
     bannerAlt:
       "Data quality for AI in four columns: correctness (Accuracy, Validity, Labels, Units), completeness (Missing values, Coverage, Fields, Sources), consistency highlighted (Duplicates, Definitions, Formats, Versions) and fitness (Freshness, Coverage mix, Balance, Bias).",
     date: "2026-10-02",
+    updated: "2026-10-08",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["b2b-enterprise", "fintech", "retail"],
@@ -637,6 +638,7 @@ export const aiOpsPosts4: BlogPost[] = [
         heading: "Duplicates and Leakage",
         body: [
           "Duplicates cause different problems in different places. In training data they over-weight some examples and, if copies land in both training and test sets, inflate test scores. In retrieval they crowd results with copies and surface outdated versions. Detect exact duplicates with hashes and near-duplicates with similarity measures, keep the authoritative version and split datasets so near-duplicates stay on the same side of train and test boundaries.",
+          "Duplicates across systems, such as one customer with different IDs in the CRM, ERP and online store, need [[/blogs/entity-resolution-for-ai|entity resolution]] rather than deletion.",
         ],
       },
       {

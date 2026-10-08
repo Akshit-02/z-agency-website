@@ -265,7 +265,8 @@ Database / systems of record`,
     bannerAlt:
       "After an AI agent places an order: Agent order, Identify channel, Fraud screen (highlighted), Confirm with customer, Fulfil, Returns + service.",
     date: "2026-10-08",
-    readingTime: "4 min read",
+    updated: "2026-10-08",
+    readingTime: "6 min read",
     relatedServiceSlugs: ["shopify-development", "website-development"],
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer"],
     relatedSlugs: ["agentic-commerce", "ai-agent-traffic-verification", "ai-commerce-analytics"],
@@ -349,6 +350,31 @@ Database / systems of record`,
             ["Repeat purchase rate", "Whether agent-acquired customers stay"],
           ],
         },
+      },
+      {
+        heading: "Post-purchase through the agent",
+        body: [
+          "After an agent-placed order, the shopper may keep using the same agent: 'Where is my order?', 'Cancel the second item', 'Return the shoes'. Supporting that requires the agent platform to stay connected to your order systems with the shopper's delegated permission. The commerce protocols plan for it: UCP defines an order capability with post-purchase updates delivered by webhook, and ACP defines order statuses, fulfillment events (shipped, in transit, delivered and others) and adjustments such as refunds, returns, exchanges and cancellations.",
+          "Design the flow so the merchant stays authoritative: the agent asks, your systems decide what is possible (cancellable lines, return eligibility, refund amount), the shopper confirms consequential steps, and anything the agent cannot resolve hands off to your support team with context. See [[/blogs/agent-ready-ecommerce-api|agent-ready ecommerce API]] for the endpoints and [[/blogs/ai-agent-handoffs|AI agent handoffs]] for escalation.",
+        ],
+        code: {
+          label: "Post-purchase agent flow (diagram)",
+          text: `Customer
+   ↕  "where is it?" · "cancel line 2" · "return this"
+AI agent (platform)
+   ↕  order lookup · cancel · return APIs (delegated auth)
+   ↕  ◀── signed webhooks: shipped · delivered · refunded
+Merchant systems (OMS, payments, returns policy) — authoritative
+   ↕
+Fulfillment / carriers · Support team (handoff with context)`,
+        },
+        checklist: [
+          "Order lookup scoped to the shopper's delegated authorization",
+          "Cancellation API that returns what can still be cancelled and the refund before acting",
+          "Returns API that evaluates policy server-side and returns labels and instructions",
+          "Signed webhooks for shipping, delivery, cancellation, return and refund events",
+          "Support handoff that carries the order, the agent conversation summary and the request",
+        ],
       },
       {
         heading: "Conclusion",
