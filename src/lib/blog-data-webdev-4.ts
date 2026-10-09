@@ -334,7 +334,7 @@ export const webDevPosts4: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A B2B website succeeds by supporting a longer, more considered buying process — credible evidence, clear paths for different stakeholders, well-scoped lead capture, and content substantial enough to earn trust across multiple visits, not a single conversion push.",
+          "A B2B website succeeds by supporting a longer, more considered buying process — credible evidence, clear paths for different stakeholders, well-scoped lead capture, and content substantial enough to earn trust across multiple visits, not a single conversion push. For the UAE B2B buying journey and a conversion checklist, see [[/blogs/b2b-lead-generation-website-uae|UAE B2B lead generation websites]].",
           "For related guides, see [[/blogs/b2b-ecommerce-website-development|B2B ecommerce website development]] and [[/blogs/b2b-ecommerce-website-design|B2B ecommerce website design]].",
         ],
       },

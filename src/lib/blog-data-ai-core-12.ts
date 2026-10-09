@@ -188,7 +188,7 @@ export const aiCorePosts12: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Good AI support automation starts behind the scenes with triage and agent assist, earns customer-facing roles with grounded answers and verified actions, and keeps improving through QA and content work. Related: [[/blogs/ai-knowledge-base|AI knowledge base]] and [[/blogs/ai-customer-support-ecommerce|ecommerce AI support]].",
+          "Good AI support automation starts behind the scenes with triage and agent assist, earns customer-facing roles with grounded answers and verified actions, and keeps improving through QA and content work. Related: [[/blogs/ai-knowledge-base|AI knowledge base]] and [[/blogs/ai-customer-support-ecommerce|ecommerce AI support]]. For WhatsApp, voice and Arabic support in the UAE, see [[/blogs/ai-customer-support-uae|AI customer support for UAE businesses]].",
         ],
       },
     ],

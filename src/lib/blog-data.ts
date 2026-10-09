@@ -188,6 +188,16 @@ import { aiInterfacePosts2 } from "./blog-data-ai-interfaces-2";
 import { aiInterfacePosts3 } from "./blog-data-ai-interfaces-3";
 import { agenticCommercePosts1 } from "./blog-data-agentic-commerce-1";
 import { agenticCommercePosts2 } from "./blog-data-agentic-commerce-2";
+import { uaeSmePosts } from "./blog-data-uae-sme";
+import { uaeAiOpsPosts } from "./blog-data-uae-ai-ops";
+import { uaeSalesPosts } from "./blog-data-uae-sales";
+import { uaeSupportPosts } from "./blog-data-uae-support";
+import { uaeSearchPosts } from "./blog-data-uae-search";
+import { uaeArabicPosts } from "./blog-data-uae-arabic";
+import { uaeLeadgenPosts } from "./blog-data-uae-leadgen";
+import { uaeCroPosts } from "./blog-data-uae-cro";
+import { uaeGccExpansionPosts } from "./blog-data-uae-gcc-expansion";
+import { uaeGccPillarPosts } from "./blog-data-uae-gcc-pillar";
 
 export type BlogSection = {
   heading: string;
@@ -3137,6 +3147,16 @@ posts.push(
   ...aiInterfacePosts3,
   ...agenticCommercePosts1,
   ...agenticCommercePosts2,
+  ...uaeSmePosts,
+  ...uaeAiOpsPosts,
+  ...uaeSalesPosts,
+  ...uaeSupportPosts,
+  ...uaeSearchPosts,
+  ...uaeArabicPosts,
+  ...uaeLeadgenPosts,
+  ...uaeCroPosts,
+  ...uaeGccExpansionPosts,
+  ...uaeGccPillarPosts,
 );
 
 export function getPostBySlug(slug: string) {

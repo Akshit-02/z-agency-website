@@ -121,6 +121,7 @@ Platform-neutral guides behind ZSpace Labs' AI Automation service (https://www.z
 
 AI agents and agentic systems:
 - AI agent development: what agents are, tools, state, controls, costs and deployment (hub) — https://www.zspace.in/blogs/ai-agent-development
+- Agentic AI for UAE businesses: definitions (chatbot, copilot, automation, agent, multi-agent), Dubai's 2026 private-sector programme and federal plans, 12 use cases, an eight-dimension readiness framework, cost drivers and a 90-day start — https://www.zspace.in/blogs/agentic-ai-uae
 - AI agent vs AI chatbot: tools, planning, state, autonomy and risk compared — https://www.zspace.in/blogs/ai-agent-vs-ai-chatbot
 - AI agent architecture: model vs application responsibilities, tools, state, identity, observability — https://www.zspace.in/blogs/ai-agent-architecture
 - Single-agent vs multi-agent systems: when more agents are justified — https://www.zspace.in/blogs/single-agent-vs-multi-agent-systems
@@ -135,6 +136,7 @@ AI agents and agentic systems:
 
 Business process and workflow automation:
 - Business process automation: discovery, prioritization, approaches, governance (hub) — https://www.zspace.in/blogs/business-process-automation
+- Digital transformation for UAE SMEs: 2026 roadmap covering websites, ecommerce, CRM, automation, AI, reporting, UAE e-invoicing deadlines, build vs buy, a 90-day plan and ROI in AED — https://www.zspace.in/blogs/digital-transformation-uae-smes
 - Workflow automation: triggers, actions, error handling, n8n, Make, Zapier or custom code — https://www.zspace.in/blogs/workflow-automation
 - AI workflow automation: LLM steps with structured outputs inside deterministic workflows — https://www.zspace.in/blogs/ai-workflow-automation
 - Workflow automation vs RPA: APIs vs user-interface automation — https://www.zspace.in/blogs/workflow-automation-vs-rpa
@@ -449,6 +451,8 @@ Choosing an approach and a partner:
 - Custom website vs. WordPress: which is right for your business? — https://www.zspace.in/blogs/custom-website-vs-wordpress
 - Website development company vs. freelancer: which should you hire? — https://www.zspace.in/blogs/website-development-company-vs-freelancer
 - How to choose a website development company: complete guide — https://www.zspace.in/blogs/how-to-choose-website-development-company
+- Choosing a web development company in Dubai: buyer's guide with a weighted scorecard, UAE hosting, PDPL, Arabic/RTL, payment providers, ownership and red flags (no rankings) — https://www.zspace.in/blogs/web-development-company-dubai
+- Web development in Abu Dhabi: complete 2026 guide covering websites vs web apps, corporate sites, ecommerce, SaaS, portals, UAE PASS, ADHICS, ADGM data protection, Arabic/RTL and technology selection — https://www.zspace.in/blogs/web-development-abu-dhabi
 
 Existing website decisions:
 - Website redesign vs. website rebuild: what's the difference and which do you need? — https://www.zspace.in/blogs/website-redesign-vs-rebuild
@@ -1144,6 +1148,28 @@ Ecommerce, D2C and Shopify design:
 - D2C repeat purchase UX: accounts, reorders and subscriptions — https://www.zspace.in/blogs/d2c-repeat-purchase-ux
 
 This cluster connects to UI/UX Design (service), CRO (UX audits and testing), Shopify Development (store design), Website Development and Mobile App Development (design handoff and platform conventions). Conversion-focused Shopify guides are in the Shopify CRO clusters above.
+
+## UAE and GCC guides
+
+Practical guides for UAE and GCC businesses. ZSpace Labs is an India-based, remote-first studio serving UAE and global businesses; it has no UAE office and is not part of any UAE government programme.
+
+- GCC digital transformation (hub): 12-area framework, centralise vs localise, architecture models and roadmap for UAE businesses expanding across the GCC — https://www.zspace.in/blogs/gcc-digital-transformation
+- UAE agentic AI readiness: 9-dimension, 36-point scorecard (0–4), blocking rules, sector examples and 30/60/90-day plan — https://www.zspace.in/blogs/agentic-ai-readiness-uae
+- AI automation for Dubai SMEs: 15 processes with workflows, approvals, complexity, risks and a priority matrix — https://www.zspace.in/blogs/ai-automation-dubai-smes
+- AI lead qualification for UAE businesses: WhatsApp-first workflow, rule-based vs AI vs agent vs hybrid, industry examples — https://www.zspace.in/blogs/ai-lead-qualification-uae
+- AI sales agents for UAE businesses: use cases, architecture and an ROI method without invented figures — https://www.zspace.in/blogs/ai-sales-agents-uae
+- AI customer support in the UAE: website, WhatsApp, voice and human channels, Arabic/English handoff and escalation — https://www.zspace.in/blogs/ai-customer-support-uae
+- AI knowledge base for UAE businesses: bilingual RAG, chunking, retrieval, citations and access control — https://www.zspace.in/blogs/ai-knowledge-base-uae
+- GEO for UAE businesses (AI search pillar): how ChatGPT, Gemini, Google AI and Copilot find sources, 15-area readiness score, what GEO cannot guarantee — https://www.zspace.in/blogs/geo-uae
+- AI-search-ready website checklist for UAE businesses: technical audit with Critical/High/Medium/Low priorities — https://www.zspace.in/blogs/ai-search-ready-website-uae
+- Arabic SEO for UAE businesses: when Arabic is justified, Arabic keyword research, hreflang, URLs and bilingual content strategy — https://www.zspace.in/blogs/arabic-seo-uae
+- Multilingual website development in the UAE: architecture options, RTL CSS, Arabic typography, forms and QA checklist — https://www.zspace.in/blogs/multilingual-website-development-uae
+- UAE B2B lead generation websites: buying journey, trust, qualification and a conversion checklist — https://www.zspace.in/blogs/b2b-lead-generation-website-uae
+- Landing page design for UAE businesses: section framework, WhatsApp CTAs, page types and CRO checklist — https://www.zspace.in/blogs/landing-page-design-uae
+- Website CRO in the UAE: 20 testable changes with impact/effort/confidence prioritisation and A/B testing guidance — https://www.zspace.in/blogs/website-cro-uae
+- UAE ecommerce checkout optimisation: payments, cash on delivery, addresses, Arabic and a 0–2 checkout scorecard — https://www.zspace.in/blogs/uae-ecommerce-checkout-optimization
+- UAE-to-Saudi ecommerce expansion strategy: UAE vs KSA comparison, five-phase framework and URL choices — https://www.zspace.in/blogs/uae-to-saudi-ecommerce-expansion
+- Saudi website localisation for UAE businesses: must/should/can-share checklist, hreflang, SAR, mada and National Address — https://www.zspace.in/blogs/saudi-website-localization
 
 ## Blog topic hubs
 

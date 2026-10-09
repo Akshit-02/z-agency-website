@@ -323,7 +323,7 @@ export const commercePosts38: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A multi-language store needs clean URLs per language, correct hreflang and canonicals, complete translations across every surface, language-aware search and a disciplined workflow. Get those right and each language version can perform on its own. For the SEO strategy across countries, see [[/blogs/international-ecommerce-seo|international ecommerce SEO]].",
+          "A multi-language store needs clean URLs per language, correct hreflang and canonicals, complete translations across every surface, language-aware search and a disciplined workflow. Get those right and each language version can perform on its own. For the SEO strategy across countries, see [[/blogs/international-ecommerce-seo|international ecommerce SEO]]. For Arabic, English and right-to-left builds in the UAE, see [[/blogs/multilingual-website-development-uae|multilingual website development in the UAE]].",
         ],
       },
     ],

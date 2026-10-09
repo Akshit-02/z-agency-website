@@ -211,7 +211,7 @@ export const aiAppsPosts9: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Readiness assessments are useful when they are specific, evidence-based and lead straight to priorities. Related: [[/blogs/ai-data-readiness|AI data readiness]] and [[/blogs/ai-implementation-strategy|AI implementation strategy]].",
+          "Readiness assessments are useful when they are specific, evidence-based and lead straight to priorities. Related: [[/blogs/ai-data-readiness|AI data readiness]] and [[/blogs/ai-implementation-strategy|AI implementation strategy]]. For a scorecard focused on agentic AI in the UAE, see [[/blogs/agentic-ai-readiness-uae|UAE agentic AI readiness]].",
         ],
       },
     ],

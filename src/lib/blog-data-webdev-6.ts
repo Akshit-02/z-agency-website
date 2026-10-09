@@ -325,7 +325,7 @@ export const webDevPosts6: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A high-converting landing page succeeds by staying deliberately narrow — one traffic source, one clear value proposition, one focused call to action, genuine proof, honest handling of real objections, and a form that respects the visitor's patience at exactly the moment intent is highest. To find what's holding an existing page back, a [[/blogs/ux-audit|UX audit]] is a good starting point.",
+          "A high-converting landing page succeeds by staying deliberately narrow — one traffic source, one clear value proposition, one focused call to action, genuine proof, honest handling of real objections, and a form that respects the visitor's patience at exactly the moment intent is highest. To find what's holding an existing page back, a [[/blogs/ux-audit|UX audit]] is a good starting point. For WhatsApp CTAs, bilingual pages and UAE trust signals, see [[/blogs/landing-page-design-uae|landing page design for UAE businesses]].",
         ],
       },
     ],

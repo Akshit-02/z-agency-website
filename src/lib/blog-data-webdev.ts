@@ -161,6 +161,7 @@ export const webDevPosts: BlogPost[] = [
           "Existing website decisions: [[/blogs/website-redesign-vs-rebuild|redesign vs. rebuild]], [[/blogs/when-does-your-website-need-a-redesign|signs your website needs a redesign]]",
           "Technology: [[/blogs/nextjs-website-development|Next.js website development]], [[/blogs/react-vs-nextjs|React vs. Next.js]], [[/blogs/headless-website-development|headless website development]], [[/blogs/website-api-integration|API integration]]",
           "Post-design disciplines: [[/blogs/website-performance-optimization|performance optimization]], [[/blogs/website-security-checklist|security checklist]], [[/blogs/website-accessibility-guide|accessibility guide]], [[/blogs/website-maintenance-guide|maintenance]]",
+          "UAE: [[/blogs/web-development-abu-dhabi|web development in Abu Dhabi]], [[/blogs/web-development-company-dubai|choosing a web development company in Dubai]]",
         ],
       },
       {

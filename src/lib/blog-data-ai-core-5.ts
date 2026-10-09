@@ -543,7 +543,7 @@ export const aiCorePosts5: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "AI lead qualification is about speed and consistency with explanations. Keep criteria owned by sales, use AI to read what rules cannot, route instantly and measure against conversions. Related: [[/blogs/ai-sales-automation|AI sales automation]] and [[/blogs/website-lead-generation|website lead generation]].",
+          "AI lead qualification is about speed and consistency with explanations. Keep criteria owned by sales, use AI to read what rules cannot, route instantly and measure against conversions. Related: [[/blogs/ai-sales-automation|AI sales automation]] and [[/blogs/website-lead-generation|website lead generation]]. For WhatsApp-first qualification, Arabic and English, and UAE outreach rules, see [[/blogs/ai-lead-qualification-uae|AI lead qualification for UAE businesses]].",
         ],
       },
     ],
@@ -721,7 +721,7 @@ export const aiCorePosts5: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "AI sales automation works best on the admin around selling: research, prep, notes, CRM and drafts, with reps in control of everything customers see. Related: [[/blogs/ai-lead-qualification|AI lead qualification]], [[/blogs/ai-meeting-assistants|AI meeting assistants]] and [[/blogs/ai-email-automation|AI email automation]].",
+          "AI sales automation works best on the admin around selling: research, prep, notes, CRM and drafts, with reps in control of everything customers see. Related: [[/blogs/ai-lead-qualification|AI lead qualification]], [[/blogs/ai-meeting-assistants|AI meeting assistants]] and [[/blogs/ai-email-automation|AI email automation]]. For agent architecture and an ROI method aimed at UAE teams, see [[/blogs/ai-sales-agents-uae|AI sales agents for UAE businesses]].",
         ],
       },
     ],

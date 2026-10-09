@@ -199,7 +199,7 @@ export const commercePosts37: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "International ecommerce succeeds when each market feels local where it matters: prices, payments, delivery, language and support. Build markets into the architecture, launch a few, measure them honestly and expand from there. For Shopify specifics, see [[/blogs/shopify-markets|Shopify Markets]].",
+          "International ecommerce succeeds when each market feels local where it matters: prices, payments, delivery, language and support. Build markets into the architecture, launch a few, measure them honestly and expand from there. For Shopify specifics, see [[/blogs/shopify-markets|Shopify Markets]]. For expanding from the UAE into Saudi Arabia, see [[/blogs/uae-to-saudi-ecommerce-expansion|a UAE-to-Saudi ecommerce expansion strategy]].",
         ],
       },
     ],

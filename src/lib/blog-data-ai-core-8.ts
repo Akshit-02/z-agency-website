@@ -192,7 +192,7 @@ export const aiCorePosts8: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "An AI knowledge base is a content program with an AI interface. Get sources, permissions, citations and ownership right, and the assistant improves over time. Related: [[/blogs/enterprise-rag-architecture|enterprise RAG]], [[/blogs/retrieval-augmented-generation|RAG guide]] and [[/blogs/ai-customer-support-automation|AI customer support automation]].",
+          "An AI knowledge base is a content program with an AI interface. Get sources, permissions, citations and ownership right, and the assistant improves over time. Related: [[/blogs/enterprise-rag-architecture|enterprise RAG]], [[/blogs/retrieval-augmented-generation|RAG guide]] and [[/blogs/ai-customer-support-automation|AI customer support automation]]. For bilingual Arabic and English knowledge bases and UAE data rules, see [[/blogs/ai-knowledge-base-uae|how to build an AI knowledge base for a UAE business]].",
         ],
       },
     ],

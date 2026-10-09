@@ -176,7 +176,7 @@ export const aiSearchPosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Being discoverable in AI search is less about new tricks than about removing the reasons a system would skip your site: blocked crawlers, unreadable pages, generic content and conflicting facts. Fix access and indexing first, publish answers only you can give, keep your identity consistent and measure the channel on its own. That work also improves traditional search, which is where AI search gets most of its sources anyway.",
+          "Being discoverable in AI search is less about new tricks than about removing the reasons a system would skip your site: blocked crawlers, unreadable pages, generic content and conflicting facts. Fix access and indexing first, publish answers only you can give, keep your identity consistent and measure the channel on its own. That work also improves traditional search, which is where AI search gets most of its sources anyway. For UAE businesses, including Arabic and English content and a scored readiness checklist, see [[/blogs/geo-uae|GEO for UAE businesses]].",
           "For where this is heading as agents start acting on websites as well as reading them, see [[/blogs/will-ai-agents-replace-websites|why the website interface layer is expanding]].",
         ],
         cta: {
@@ -320,7 +320,7 @@ export const aiSearchPosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "GEO is best understood as SEO for a new kind of result page. The foundations are shared, Google says so directly, and most of the value comes from doing them properly. The genuine differences (subtopic depth, citable facts, consistent identity, more crawlers and new measurement) are worth adding once the basics are in place. For the practical steps, start with [[/blogs/ai-search-visibility|how to make your website discoverable in AI search]].",
+          "GEO is best understood as SEO for a new kind of result page. The foundations are shared, Google says so directly, and most of the value comes from doing them properly. The genuine differences (subtopic depth, citable facts, consistent identity, more crawlers and new measurement) are worth adding once the basics are in place. For the practical steps, start with [[/blogs/ai-search-visibility|how to make your website discoverable in AI search]]. For a UAE-specific framework with a 0–5 readiness score, see [[/blogs/geo-uae|GEO for UAE businesses]].",
         ],
       },
     ],
