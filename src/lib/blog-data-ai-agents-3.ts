@@ -849,7 +849,7 @@ export const aiAgentPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "AI agents give hospitals a practical way to keep referrals, discharges and care transitions from stalling between departments, complementing the payer-facing administrative agents many providers automate first. Start with referral or discharge-follow-up tracking, keep every clinical decision with the care team, and expand from a proven workflow.",
+          "AI agents give hospitals a practical way to keep referrals, discharges and care transitions from stalling between departments, complementing the payer-facing administrative agents many providers automate first. Start with referral or discharge-follow-up tracking, keep every clinical decision with the care team, and expand from a proven workflow. For UAE-specific administrative workflows and health data rules, see [[/blogs/ai-automation-healthcare-uae|AI automation for UAE healthcare]].",
         ],
       },
     ],
@@ -1047,7 +1047,7 @@ export const aiAgentPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "AI agents give freight forwarders a practical way to handle the volume of shipment paperwork that otherwise consumes a large share of experienced staff's time, catching discrepancies before they cause a customs delay. Start with document extraction and verification on your highest-volume lane, keep classification judgment with trained professionals, and expand from there.",
+          "AI agents give freight forwarders a practical way to handle the volume of shipment paperwork that otherwise consumes a large share of experienced staff's time, catching discrepancies before they cause a customs delay. Start with document extraction and verification on your highest-volume lane, keep classification judgment with trained professionals, and expand from there. For UAE shipment visibility and Arabic and English trade documents, see [[/blogs/ai-logistics-uae|AI for UAE logistics companies]].",
         ],
       },
     ],
@@ -1246,7 +1246,7 @@ export const aiAgentPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "AI agents give hotels a practical way to run housekeeping and maintenance from real-time operational data rather than a static morning plan, catching issues before they affect a guest and scaling that coordination cleanly across a multi-property portfolio. Start with dynamic housekeeping routing, keep guest-sensitive decisions with staff, and expand into maintenance and multi-property coordination from there.",
+          "AI agents give hotels a practical way to run housekeeping and maintenance from real-time operational data rather than a static morning plan, catching issues before they affect a guest and scaling that coordination cleanly across a multi-property portfolio. Start with dynamic housekeeping routing, keep guest-sensitive decisions with staff, and expand into maintenance and multi-property coordination from there. For UAE-specific guest messaging and operations, see [[/blogs/ai-hospitality-uae|AI automation for UAE hospitality]].",
         ],
       },
     ],

@@ -788,7 +788,7 @@ export const uaeAiOpsPosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "AI automation for a Dubai SME is less about AI than about connecting the channels customers already use, WhatsApp above all, to the systems that run the business. Capture every lead, follow up reliably, keep the CRM current, then add AI where inputs are messy: free-text messages, documents and invoices. Score candidates honestly, keep people on prices, complaints and anything binding, respect the telemarketing and WhatsApp rules, and expand only what proves its value.",
+          "AI automation for a Dubai SME is less about AI than about connecting the channels customers already use, WhatsApp above all, to the systems that run the business. Capture every lead, follow up reliably, keep the CRM current, then add AI where inputs are messy: free-text messages, documents and invoices. Score candidates honestly, keep people on prices, complaints and anything binding, respect the telemarketing and WhatsApp rules, and expand only what proves its value. Sector guides: [[/blogs/ai-hospitality-uae|hospitality]], [[/blogs/ai-real-estate-uae|real estate]], [[/blogs/ai-logistics-uae|logistics]] and [[/blogs/ai-automation-healthcare-uae|healthcare administration]].",
         ],
         cta: {
           title: "Working out which processes to automate first?",

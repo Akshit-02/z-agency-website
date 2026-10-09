@@ -459,7 +459,7 @@ export const uaeGccPillarPosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "GCC digital transformation is not a bigger version of UAE transformation. It is a decision about what to share and what to vary. Connectivity is solved across the region; the real differences are in rules, payments, language, hosting and customer expectations. UAE businesses that build one shared core, localise the edge deliberately and move market by market, with evidence at each gate, can grow regionally without rebuilding for every country.",
+          "GCC digital transformation is not a bigger version of UAE transformation. It is a decision about what to share and what to vary. Connectivity is solved across the region; the real differences are in rules, payments, language, hosting and customer expectations. UAE businesses that build one shared core, localise the edge deliberately and move market by market, with evidence at each gate, can grow regionally without rebuilding for every country. For building digital products across the region, see [[/blogs/digital-product-development-gcc|digital product development in the GCC]]; for sector guides, [[/blogs/ai-hospitality-uae|hospitality]], [[/blogs/ai-real-estate-uae|real estate]], [[/blogs/ai-logistics-uae|logistics]] and [[/blogs/ai-automation-healthcare-uae|healthcare]].",
           "Start with the 12-area scorecard, choose your second market from your own data, and fix data, integrations and localisation before you scale. Add AI and agents once those foundations can support them, with governance from day one.",
         ],
         cta: {

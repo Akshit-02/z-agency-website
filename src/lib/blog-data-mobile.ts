@@ -654,7 +654,7 @@ export const mobilePosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "The right partner shows relevant evidence, explains trade-offs honestly, runs a visible process with real QA, and signs a contract that leaves you in control of your code and accounts. Use the questions above to compare vendors fairly. For the wider context, see the [[/blogs/mobile-app-development-guide|mobile app development guide]].",
+          "The right partner shows relevant evidence, explains trade-offs honestly, runs a visible process with real QA, and signs a contract that leaves you in control of your code and accounts. Use the questions above to compare vendors fairly. For the wider context, see the [[/blogs/mobile-app-development-guide|mobile app development guide]]. For startups choosing a software partner, see [[/blogs/software-development-company-uae|how to choose a software development company for a UAE startup]].",
         ],
       },
     ],

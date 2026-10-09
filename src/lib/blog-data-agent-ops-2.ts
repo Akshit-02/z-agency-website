@@ -473,7 +473,7 @@ Monitoring           traces, audit trail, costs, outcomes, alerts`,
       {
         heading: "Conclusion",
         body: [
-          "APIs, webhooks, MCP and RPA solve different problems. APIs act, webhooks notify, MCP makes tools usable by AI, and RPA bridges gaps. Combine them deliberately within a clear architecture; see [[/blogs/ai-automation-architecture|AI automation architecture]].",
+          "APIs, webhooks, MCP and RPA solve different problems. APIs act, webhooks notify, MCP makes tools usable by AI, and RPA bridges gaps. Combine them deliberately within a clear architecture; see [[/blogs/ai-automation-architecture|AI automation architecture]]. For a full guide to connecting AI agents to CRMs, ERPs and ticketing systems, see [[/blogs/enterprise-ai-integration|enterprise AI integration]].",
         ],
       },
     ],

@@ -420,7 +420,7 @@ export const aiAgentPosts2: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "AI agents give property managers a practical way to handle the steady volume of tenant communication and maintenance coordination a portfolio generates, distinct from — and complementary to — the lead-generation agents used earlier in the real estate process. Start with maintenance triage or tenant communication, keep disputes and emergencies with your team, and expand from there.",
+          "AI agents give property managers a practical way to handle the steady volume of tenant communication and maintenance coordination a portfolio generates, distinct from — and complementary to — the lead-generation agents used earlier in the real estate process. Start with maintenance triage or tenant communication, keep disputes and emergencies with your team, and expand from there. For off-plan and developer sales in the UAE, see [[/blogs/ai-real-estate-uae|AI for UAE real estate developers]].",
         ],
       },
     ],

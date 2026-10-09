@@ -712,7 +712,7 @@ export const commercePosts82: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Disaster recovery works when RPO and RTO are agreed per system, the strategy matches them, backups are protected and restorable, integrations and payments are reconciled, rollback is fast and everything is tested. Related: [[/blogs/ecommerce-observability|observability]] and [[/blogs/ecommerce-scalability|scalability]].",
+          "Disaster recovery works when RPO and RTO are agreed per system, the strategy matches them, backups are protected and restorable, integrations and payments are reconciled, rollback is fast and everything is tested. Related: [[/blogs/ecommerce-observability|observability]] and [[/blogs/ecommerce-scalability|scalability]]. For moving workloads to the cloud, including UAE regions, see [[/blogs/cloud-migration-uae|cloud migration for UAE businesses]].",
         ],
       },
     ],

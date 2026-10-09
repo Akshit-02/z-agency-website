@@ -198,7 +198,7 @@ export const aiAppsPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "AI turns legacy modernization from archaeology into engineering: understand, pin behaviour with tests, change in slices and verify with parallel runs. Related: [[/blogs/ai-test-generation|AI test generation]] and [[/blogs/ai-code-documentation|AI code documentation]].",
+          "AI turns legacy modernization from archaeology into engineering: understand, pin behaviour with tests, change in slices and verify with parallel runs. Related: [[/blogs/ai-test-generation|AI test generation]] and [[/blogs/ai-code-documentation|AI code documentation]]. For a full modernisation roadmap, see [[/blogs/software-modernization-uae|legacy software modernisation for UAE companies]].",
           "For a repeatable workflow, write a specification of current behaviour before changing it and have agents work from that spec in small, reviewed tasks; see [[/blogs/spec-driven-development|spec-driven development]]. How team roles shift around this work is covered in [[/blogs/ai-native-engineering-team|what an AI-native software team looks like]].",
         ],
       },

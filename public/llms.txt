@@ -1170,6 +1170,22 @@ Practical guides for UAE and GCC businesses. ZSpace Labs is an India-based, remo
 - UAE ecommerce checkout optimisation: payments, cash on delivery, addresses, Arabic and a 0–2 checkout scorecard — https://www.zspace.in/blogs/uae-ecommerce-checkout-optimization
 - UAE-to-Saudi ecommerce expansion strategy: UAE vs KSA comparison, five-phase framework and URL choices — https://www.zspace.in/blogs/uae-to-saudi-ecommerce-expansion
 - Saudi website localisation for UAE businesses: must/should/can-share checklist, hreflang, SAR, mada and National Address — https://www.zspace.in/blogs/saudi-website-localization
+- Digital product development in the GCC (software hub): problem discovery to scale, stage gates, UAE vs Saudi localisation — https://www.zspace.in/blogs/digital-product-development-gcc
+- AI automation for UAE healthcare (administrative only): booking, enquiries, documents, staff knowledge, UAE health data rules — https://www.zspace.in/blogs/ai-automation-healthcare-uae
+- AI for UAE real estate developers: enquiries, qualification, unit matching, viewings, DLD advertising rules — https://www.zspace.in/blogs/ai-real-estate-uae
+- AI automation for UAE hospitality: guest messaging, reservations from live data, reviews, staff workflows — https://www.zspace.in/blogs/ai-hospitality-uae
+- AI for UAE logistics: shipment updates, trade documents, exceptions and reporting (information workflows, not physical control) — https://www.zspace.in/blogs/ai-logistics-uae
+- AI document processing for UAE businesses: Arabic/English OCR, validation, low-confidence handling, audit trails, e-invoicing — https://www.zspace.in/blogs/ai-document-processing-uae
+- Enterprise AI integration: connecting AI agents to CRMs, ERPs and ticketing with OAuth, least privilege, approvals and audit logs — https://www.zspace.in/blogs/enterprise-ai-integration
+- AI implementation costs in the UAE: budgeting framework and cost drivers, no invented price ranges — https://www.zspace.in/blogs/ai-development-cost-uae
+- How to measure AI automation ROI after launch: baselines, formulas, holdouts, measured vs projected — https://www.zspace.in/blogs/ai-automation-roi
+- Custom software vs SaaS in the UAE: decision matrix and three-year TCO worksheet — https://www.zspace.in/blogs/custom-software-vs-saas-uae
+- MVP development in the UAE: validation, scope, prototypes, Arabic, payments and UAE PASS — https://www.zspace.in/blogs/mvp-development-uae
+- SaaS development for GCC markets: multi-tenancy, billing, VAT and e-invoicing per market, Arabic, data hosting — https://www.zspace.in/blogs/saas-development-gcc
+- API integration for UAE businesses: webhooks, data mapping, retries, middleware choice and a UAE integration catalogue — https://www.zspace.in/blogs/api-integration-uae
+- Legacy software modernisation for UAE companies: options matrix, strangler fig, Arabic data migration, e-invoicing readiness — https://www.zspace.in/blogs/software-modernization-uae
+- Cloud migration for UAE businesses: 7 Rs, UAE cloud regions, sector data rules, DR and cost governance — https://www.zspace.in/blogs/cloud-migration-uae
+- How to choose a software development company for a UAE startup: team models, remote delivery, ownership, scoring matrix — https://www.zspace.in/blogs/software-development-company-uae
 
 ## Blog topic hubs
 

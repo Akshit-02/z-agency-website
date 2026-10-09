@@ -720,7 +720,7 @@ export const aiCorePosts12: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "LLM cost control is measurement plus a handful of levers: fewer tokens, the right model per task, caching, batching and budgets, all checked against quality. Related: [[/blogs/llm-routing|LLM routing]], [[/blogs/llm-gateway|LLM gateway]] and [[/blogs/ai-agent-observability|observability]].",
+          "LLM cost control is measurement plus a handful of levers: fewer tokens, the right model per task, caching, batching and budgets, all checked against quality. Related: [[/blogs/llm-routing|LLM routing]], [[/blogs/llm-gateway|LLM gateway]] and [[/blogs/ai-agent-observability|observability]]. For a full implementation budget beyond model usage, see [[/blogs/ai-development-cost-uae|AI implementation costs in the UAE]].",
         ],
       },
     ],

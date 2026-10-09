@@ -161,7 +161,7 @@ Payback (months)        = one-off build cost ÷ monthly net value`,
       {
         heading: "Conclusion",
         body: [
-          "A credible AI agent ROI estimate is a process baseline, a tested completion rate, a full cost model, three scenarios and a stop rule. It takes a few days to build and saves months of building the wrong thing. If the numbers only work when everything goes right, the answer is usually a smaller scope or simpler automation, not a bigger model.",
+          "A credible AI agent ROI estimate is a process baseline, a tested completion rate, a full cost model, three scenarios and a stop rule. It takes a few days to build and saves months of building the wrong thing. If the numbers only work when everything goes right, the answer is usually a smaller scope or simpler automation, not a bigger model. To measure results after launch, see [[/blogs/ai-automation-roi|how to measure AI automation ROI]]; for budgeting, [[/blogs/ai-development-cost-uae|AI implementation costs in the UAE]].",
         ],
       },
     ],

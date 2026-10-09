@@ -245,7 +245,7 @@ export const webDevPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "API integrations are what let a website function as part of a connected business system rather than an isolated brochure — but they need to be built with real attention to authentication, error handling, rate limits and ongoing monitoring to be reliable in production, not just in an initial demo. For a reference list of the integrations businesses most often need, see [[/blogs/website-api-integrations-list|15 common website integrations]], with dedicated guides for [[/blogs/crm-website-integration|CRM]] and [[/blogs/payment-gateway-integration|payment gateway]] integration.",
+          "API integrations are what let a website function as part of a connected business system rather than an isolated brochure — but they need to be built with real attention to authentication, error handling, rate limits and ongoing monitoring to be reliable in production, not just in an initial demo. For a reference list of the integrations businesses most often need, see [[/blogs/website-api-integrations-list|15 common website integrations]], with dedicated guides for [[/blogs/crm-website-integration|CRM]] and [[/blogs/payment-gateway-integration|payment gateway]] integration. For connecting business systems beyond the website, see [[/blogs/api-integration-uae|API integration for UAE businesses]].",
           "For related guides, see [[/blogs/ecommerce-api-integration|ecommerce API integration]].",
         ],
       },
@@ -378,7 +378,8 @@ export const webDevPosts3: BlogPost[] = [
     category: "Web Development",
     banner: "securitylock",
     date: "2026-09-24",
-    readingTime: "12 min read",
+    updated: "2026-10-09",
+    readingTime: "11 min read",
     relatedServiceSlugs: ["website-development"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
     faqs: [
@@ -391,6 +392,7 @@ export const webDevPosts3: BlogPost[] = [
       { q: "How often should dependencies and software be updated?", a: "Regularly, as part of ongoing [[/blogs/website-maintenance-guide|maintenance]] — not just at launch. Security patches for known vulnerabilities lose their value the longer they go unapplied." },
       { q: "What should backups cover?", a: "Both the site's code and its data (database, uploaded content), stored securely and tested periodically — a backup that's never been tested for successful restoration isn't a reliable one." },
       { q: "Does this checklist cover penetration testing or offensive security?", a: "No — this is a defensive implementation checklist for building and maintaining a secure site. Formal security testing is a separate, specialized practice worth engaging directly for higher-risk applications." },
+      { q: "Which version of the OWASP Top 10 should a business website follow?", a: "Use the current edition, the OWASP Top 10:2025. It keeps broken access control as the top risk and adds software supply chain failures and mishandling of exceptional conditions. Older supplier questionnaires and policies may still refer to the 2021 list, so check which edition a document means and update internal references to the 2025 names." },
     ],
     content: [
       {
@@ -509,6 +511,97 @@ export const webDevPosts3: BlogPost[] = [
           "Backups run regularly and restoration is tested periodically",
           "Access logging and monitoring in place for unusual activity",
         ],
+      },
+      {
+        heading: "How This Checklist Maps to the OWASP Top 10:2025",
+        body: [
+          "The OWASP Top 10 is the most widely used reference list of web application security risks. The current edition is the **OWASP Top 10:2025** ([[https://top10.owasp.org/2025|OWASP]]). It keeps broken access control in first place and adds two categories: software supply chain failures and mishandling of exceptional conditions. If a supplier, auditor or questionnaire refers to 'the OWASP Top 10', check which edition they mean; older documents may still use the 2021 list.",
+          "The right-hand columns are our plain-language summary and our mapping to the sections above, not OWASP's own wording. For APIs, OWASP publishes a separate API Security Top 10 (2023 edition), whose first item is broken object level authorisation.",
+        ],
+        table: {
+          headers: ["OWASP Top 10:2025 category", "In plain terms", "Where it sits in this checklist"],
+          rows: [
+            ["A01 Broken Access Control", "Users reach data or actions they should not", "Authorization and access control; API security"],
+            ["A02 Security Misconfiguration", "Default settings, open admin panels, verbose errors, missing headers", "Deployment security"],
+            ["A03 Software Supply Chain Failures", "Vulnerable or compromised packages, plugins, build tools or services", "Dependency security; third-party services"],
+            ["A04 Cryptographic Failures", "Missing or weak encryption, poor password storage", "HTTPS; authentication"],
+            ["A05 Injection", "Untrusted input treated as code or a query", "Input validation"],
+            ["A06 Insecure Design", "Controls missing by design, such as no limit on password resets", "Rate limiting; design review"],
+            ["A07 Authentication Failures", "Weak login, credential stuffing, session flaws", "Authentication; secure sessions"],
+            ["A08 Software or Data Integrity Failures", "Unverified updates, data or pipeline steps", "Deployment security; updates"],
+            ["A09 Security Logging and Alerting Failures", "Attacks go unnoticed or unanswered", "Monitoring and logging"],
+            ["A10 Mishandling of Exceptional Conditions", "Errors that fail open or leak information", "Input validation; error handling"],
+          ],
+        },
+      },
+      {
+        heading: "Mapping Website Security to NIST CSF 2.0",
+        body: [
+          "If your organisation uses a security framework, the most common general one is the NIST Cybersecurity Framework. Version 2.0 was released on 26 February 2024 and has six functions: Govern, Identify, Protect, Detect, Respond and Recover, with Govern newly added ([[https://www.nist.gov/news-events/news/2024/02/nist-releases-version-20-landmark-cybersecurity-framework|NIST]]). The framework is voluntary. Mapping your website tasks to it shows gaps that a technical checklist alone tends to miss, especially ownership and recovery.",
+        ],
+        table: {
+          headers: ["NIST CSF 2.0 function", "What it asks", "Website practices"],
+          rows: [
+            ["Govern", "Who decides, who owns risk, how suppliers are managed", "A named site owner; security expectations in agency and hosting contracts"],
+            ["Identify", "What you have and what could go wrong", "Inventory of domains, servers, plugins, third-party scripts and the data each form collects"],
+            ["Protect", "Safeguards", "HTTPS, MFA, validation, secrets management, patching, backups"],
+            ["Detect", "Spotting problems quickly", "Logging, uptime and file-change alerts, Search Console security issues"],
+            ["Respond", "Acting on an incident", "A short runbook: who to call, how to take the site offline, which credentials to rotate"],
+            ["Recover", "Getting back to normal", "Tested restores, clean redeploys, customer communication"],
+          ],
+        },
+      },
+      {
+        heading: "Monthly and Quarterly Security Tasks",
+        body: [
+          "Security is mostly routine. The cadence below is our recommendation for a typical business website; raise the frequency for ecommerce, portals and sites holding sensitive data. Many of these tasks overlap with the [[/blogs/website-maintenance-guide|website maintenance checklist]], so run them together.",
+        ],
+        table: {
+          headers: ["Task", "Frequency", "Notes"],
+          rows: [
+            ["Apply CMS, plugin, framework and dependency security updates", "Monthly at minimum; critical patches as soon as practical", "Test on staging first where possible"],
+            ["Review dependency vulnerability alerts", "Monthly", "Remove packages you no longer use"],
+            ["Check the Google Search Console Security Issues report", "Monthly", "Flags hacked content, malware and social engineering that Google detects"],
+            ["Review admin and editor accounts; confirm MFA", "Monthly", "Remove leavers and agency accounts that are no longer needed"],
+            ["Review logs and alerts (failed logins, unusual traffic)", "Monthly, with real-time alerts for critical events", ""],
+            ["Check TLS certificate expiry and HTTPS redirects", "Monthly", "Automate renewal, but verify it worked"],
+            ["Test a restore from backup", "Quarterly", "Restore to a staging environment and check it works"],
+            ["Review third-party scripts, especially on payment pages", "Quarterly", "PCI DSS has its own requirements for payment-page scripts if they apply to you"],
+            ["Check runtime versions (PHP, Node.js) against supported releases", "Quarterly", "Plan upgrades before end of support"],
+            ["Rotate high-value secrets and API keys", "Quarterly, or per your policy", "Immediately if exposed"],
+            ["Run a configuration and security-header scan", "Quarterly", ""],
+            ["Walk through the incident runbook", "Twice a year", "Update contacts and access details"],
+          ],
+        },
+      },
+      {
+        heading: "UAE and GCC Considerations",
+        body: [
+          "**General best practice vs legal obligation.** Everything above is general good practice that applies anywhere. Some organisations in the UAE also have specific legal or contractual security obligations. Which ones apply depends on your sector, your free zone, whether you take card payments and whether you handle health data. The table summarises what we found; it is not legal advice, so confirm your position with the relevant authority or an adviser.",
+          "**UAE facts: threat context.** According to the UAE government's head of cyber security, the country faces more than 200,000 cyberattacks a day ([[https://www.khaleejtimes.com/uae/uae-faces-200000-daily-cyberattacks|Khaleej Times, 16 October 2025]]). The UAE Cyber Security Council has also announced a National Cybersecurity Strategy covering 2025 to 2031; we could not read the official text, so check the Council's own publications for its scope.",
+          "**UAE facts: the IA Regulation is not for everyone.** The UAE Information Assurance Regulation is often mentioned in vendor marketing as if every business must comply. AWS's compliance summary states that 'TDRA requires entities designated as critical to implement the IAR' ([[https://aws.amazon.com/compliance/UAE_IAR/|AWS]]). Government entities and designated critical entities are the core audience. If you supply such an organisation, expect its security requirements to reach you through contracts and audits.",
+        ],
+        table: {
+          headers: ["Regime", "Who it applies to", "What it means for a website"],
+          rows: [
+            ["UAE IA Regulation", "Entities TDRA designates as critical, and government entities", "If in scope, formal controls and audits; if you supply them, contractual flow-down"],
+            ["PDPL (Federal Decree-Law 45/2021)", "Processing of personal data in the UAE, outside free zones with their own data laws", "In force since 2 January 2022; secure handling of form and account data; we could not find published executive regulations as of October 2026, so take advice on breach and handling duties rather than assume them"],
+            ["DIFC and ADGM data protection", "Businesses established in those free zones", "Separate regimes; both treat pre-ticked boxes as not valid consent, and DIFC treats analytics and advertising cookies as behavioural advertising"],
+            ["PCI DSS v4.0.1", "Businesses that accept card payments, depending on how payment pages are built", "Requirements 6.4.3 (payment-page script management) and 11.6.1 (detecting unauthorised payment-page changes) have applied since 31 March 2025 where in scope"],
+            ["Health data rules", "Clinics and other health providers", "Federal Law 2/2019 Art. 13 restricts storing or processing health data outside the UAE; ADHICS V2 in Abu Dhabi requires UAE hosting, including backups and disaster recovery, for in-scope health information"],
+          ],
+        },
+        checklist: [
+          "Write down which regimes apply to you, and which do not, with a date and who confirmed it",
+          "For card payments, confirm your PCI DSS scope with your payment provider; a hosted payment page usually reduces it",
+          "For health or other sensitive data, check hosting location, backup location and supplier access before launch; see [[/blogs/cloud-migration-uae|cloud migration in the UAE]] for UAE hosting regions",
+          "Secure every integration endpoint as its own attack surface; see [[/blogs/api-integration-uae|API integration for UAE businesses]]",
+          "Ask any agency you hire how they handle updates, access and incidents; [[/blogs/web-development-company-dubai|choosing a web development company in Dubai]] lists the questions",
+        ],
+        callout: {
+          type: "note",
+          text: "No checklist guarantees security. Following this one reduces the most common and well-understood risks; it does not replace a risk assessment, security testing for higher-risk sites or legal advice on your obligations.",
+        },
       },
       {
         heading: "Conclusion",
@@ -670,7 +763,8 @@ export const webDevPosts3: BlogPost[] = [
     category: "Web Development",
     banner: "dashboard",
     date: "2026-09-24",
-    readingTime: "12 min read",
+    updated: "2026-10-09",
+    readingTime: "11 min read",
     relatedServiceSlugs: ["website-development", "cro-audit"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
     faqs: [
@@ -683,6 +777,7 @@ export const webDevPosts3: BlogPost[] = [
       { q: "Does website maintenance include ongoing conversion optimization?", a: "It can and arguably should — a maintained site isn't just kept from breaking, it's periodically reviewed for whether it's still serving the business's actual goals. See the [[/blogs/shopify-cro-audit|CRO audit framework]] for the structured version of this discipline." },
       { q: "Who should be responsible for website maintenance after launch?", a: "This should be explicitly assigned — an internal team member, a maintenance retainer with the original development partner, or a dedicated maintenance provider — rather than left ambiguous, which is how maintenance most commonly gets neglected." },
       { q: "Does a static site need less maintenance than a dynamic one?", a: "Generally yes, since there's less surface area (fewer dependencies, no database, no user accounts) — but even a static site still needs uptime monitoring, content updates, and periodic review." },
+      { q: "How much does website maintenance cost in the UAE?", a: "We found no standard or reliable published market price for website maintenance in the UAE. Cost depends on the platform, the number of plugins and integrations, whether the site is bilingual, the support hours and response targets you need, and any compliance scope such as card payments. Compare quotes against a written scope that lists inclusions, exclusions, hours and emergency handling." },
     ],
     content: [
       {
@@ -801,6 +896,85 @@ export const webDevPosts3: BlogPost[] = [
         heading: "Who Should Own Maintenance",
         body: [
           "This needs to be explicitly assigned — an internal team member, a maintenance retainer with the original development partner, or a dedicated provider — rather than left ambiguous. Ambiguous ownership is one of the most common, avoidable reasons a site slides into neglect until a costly [[/blogs/website-redesign-vs-rebuild|redesign or rebuild]] becomes necessary.",
+        ],
+      },
+      {
+        heading: "Maintenance Tiers: Basic, Standard and Advanced",
+        body: [
+          "Most maintenance arrangements fall into three broad tiers. The names vary between providers, so compare what is actually included rather than the label. The response targets column lists what to ask a provider to commit to in writing; agree the actual numbers based on what downtime costs your business.",
+        ],
+        table: {
+          headers: ["Tier", "Typical fit", "What is usually included", "Response targets to ask for"],
+          rows: [
+            ["Basic", "Brochure or small marketing site, few integrations", "Monthly updates, daily backups, uptime and certificate monitoring, a short monthly report", "First response time for 'site down' during business hours; how out-of-hours outages are handled"],
+            ["Standard", "Lead generation or bilingual business site with forms, CRM and analytics", "Basic, plus updates tested on staging, form and integration tests, broken-link and Core Web Vitals checks, monthly security scans, an allowance of small content or design changes", "Separate targets for critical, high and routine issues; who is on call at weekends"],
+            ["Advanced", "Ecommerce store, customer portal or web application", "Standard, plus continuous monitoring with on-call cover, runtime and framework upgrades, quarterly restore tests, payment and integration monitoring, release management and incident reports", "Response and resolution targets for checkout or login failures, including outside business hours; incident report timelines"],
+          ],
+        },
+      },
+      {
+        heading: "What Affects Maintenance Cost",
+        body: [
+          "**UAE facts.** We did not find a standard or reliable published market price for website maintenance in the UAE, so we do not quote one. Prices vary widely because scopes vary widely. Compare quotes on a written scope: what is included, what is excluded, how many hours of changes are covered, what happens to unused hours and how emergencies are billed.",
+          "The drivers below explain most of the difference between two quotes for apparently similar sites.",
+        ],
+        table: {
+          headers: ["Cost driver", "Why it changes the effort"],
+          rows: [
+            ["Platform and number of plugins or packages", "Every extension needs updating, testing and occasional replacement"],
+            ["Integrations", "Payment gateways, CRM, ERP, e-invoicing and messaging connections each break in their own way when the other side changes"],
+            ["Languages", "Arabic and English versions roughly double content and layout checks, and RTL needs its own regression tests"],
+            ["Support hours and response targets", "Weekend and out-of-hours cover costs more than business-hours support"],
+            ["Hosting and traffic", "Managed platforms need less server work; self-hosted or high-traffic sites need more"],
+            ["Compliance scope", "Card payments or health data add security reviews and evidence"],
+            ["Volume of content and design changes", "Frequent changes need a larger hours allowance"],
+            ["Age and technical debt", "Old runtimes and unsupported plugins turn routine updates into upgrade projects"],
+            ["Automated tests", "Good test coverage makes each update faster and safer to apply"],
+          ],
+        },
+      },
+      {
+        heading: "Monthly and Quarterly Maintenance Checklist",
+        body: [
+          "**Runtime support (verified).** According to the PHP project's supported versions page, PHP 8.2 receives security fixes only until 31 December 2026 and 8.3 until 31 December 2027, while 8.4 and 8.5 are in active support until the end of 2028 and 2029; 8.1 and earlier are end of life ([[https://www.php.net/supported-versions.php|PHP]]). For Node.js, v24 and v22 are LTS releases and v20 is end of life, and the project says 'production applications should only use Active LTS or Maintenance LTS releases' ([[https://nodejs.org/en/about/previous-releases|Node.js]]). Both pages change, so check them each quarter.",
+          "**WordPress (verified).** Automatic background updates were introduced in WordPress 3.7. Minor core updates (maintenance and security releases) and translation files update automatically by default, but plugins and themes generally do not unless you enable it ([[https://developer.wordpress.org/advanced-administration/upgrade/upgrading/|WordPress]]). Plugin and theme updates therefore still need a routine.",
+          "**Search Console (verified).** Google's Security Issues report shows when your site 'was hacked or behaves in ways that could harm visitors', covering hacked content, malware and unwanted software, and social engineering ([[https://support.google.com/webmasters/answer/9044101|Google]]). Checking it monthly costs minutes. The cadence in the table is our recommendation for a typical business site; the [[/blogs/website-security-checklist|website security checklist]] has the security-only version.",
+        ],
+        table: {
+          headers: ["Task", "Frequency", "Notes"],
+          rows: [
+            ["CMS, plugin, theme and package updates", "Monthly; security patches promptly", "Test on staging first; keep a rollback"],
+            ["Runtime versions (PHP, Node.js)", "Quarterly", "Plan upgrades before end of support"],
+            ["Backups", "Daily, with a restore test each quarter", "Store copies away from the main host"],
+            ["Uptime and certificate monitoring", "Continuous, reviewed monthly", "Alerts to a named person"],
+            ["Broken links", "Monthly", "Internal links and key outbound links"],
+            ["Security scans and the Search Console Security Issues report", "Monthly", ""],
+            ["Performance and Core Web Vitals", "Monthly", "Google's 'good' thresholds: LCP up to 2.5s, INP up to 200ms, CLS up to 0.1"],
+            ["Forms and integrations, end to end", "Monthly; critical lead or checkout forms weekly", "Submit real test entries and confirm they arrive"],
+            ["Analytics and tracking", "Monthly", "Check conversions still record after site changes"],
+            ["Dependency review (unused or unmaintained packages)", "Quarterly", "Remove what is no longer needed"],
+            ["Content review (prices, policies, team, dates)", "Quarterly", "Assign each page section an owner"],
+            ["Accessibility spot check", "Quarterly", "Especially after design or template changes"],
+          ],
+        },
+      },
+      {
+        heading: "Website Maintenance in the UAE: What to Add",
+        body: [
+          "Everything above applies to any site. For **website maintenance in the UAE**, a few local factors add work, and they are worth writing into a maintenance agreement explicitly.",
+          "**Support hours in Gulf Standard Time.** The UAE uses Gulf Standard Time (UTC+4) with no daylight saving. If your provider works from another time zone, define business hours in GST and say who responds outside them, including Saturdays and Sundays. For example, India is a constant 1 hour 30 minutes ahead of the UAE, which makes overlap straightforward but should still be written down.",
+          "**Arabic content and RTL regression checks.** Theme, plugin and framework updates often break right-to-left layouts quietly: mirrored icons, form alignment, mixed-direction text, fonts and numerals. After each update, check key Arabic templates as well as English ones, and confirm language switching and hreflang tags still work. See [[/blogs/multilingual-website-development-uae|multilingual website development in the UAE]].",
+          "**Payment gateway and 3-D Secure changes.** Gateways update plugins, SDKs and authentication flows, and wallets and buy-now-pay-later widgets change their scripts. After such updates, test a full checkout, including 3-D Secure challenges and failed payments, on mobile. See [[/blogs/uae-ecommerce-checkout-optimization|UAE ecommerce checkout optimisation]] and [[/blogs/3d-secure-ecommerce|3-D Secure for ecommerce]].",
+          "**E-invoicing integration changes (UAE facts).** The Federal Tax Authority's B2B and B2G e-invoicing timeline requires businesses with revenue of AED 50m or more to appoint an accredited service provider by 30 October 2026 and go live on 1 January 2027; businesses below that threshold appoint by 31 March 2027 and go live on 1 July 2027 ([[https://tax.gov.ae/en/media.centre/news/federal.tax.authority.organises.joint.awareness.meeting.for.accredited.service.providers.and.persons.subject.to.the.einvoicing.system.aspx|FTA]]). If your store or order system feeds invoicing, plan for integration changes and retest them after updates. Confirm your own obligations with a tax adviser.",
+          "**WhatsApp Business Platform changes (verified).** Meta moved the platform to per-message pricing on 1 July 2025, requires every message template to be categorised as marketing, utility or authentication, and added AED as a billing currency from 1 April 2026 ([[https://developers.facebook.com/docs/whatsapp/pricing|Meta]]). Policies and template rules change regularly, so review templates, opt-in wording and website click-to-chat links each quarter.",
+          "For related upkeep, see the [[/blogs/shopify-store-maintenance-checklist|Shopify store maintenance checklist]] and [[/blogs/mobile-app-maintenance|mobile app maintenance]]. When choosing a provider, [[/blogs/web-development-company-dubai|choosing a web development company in Dubai]] and [[/blogs/software-development-company-uae|choosing a software development company in the UAE]] cover the questions to ask.",
+        ],
+        checklist: [
+          "Business hours and out-of-hours cover defined in GST (UTC+4)",
+          "Arabic and English templates both checked after every update",
+          "Full checkout tested after any payment plugin, SDK or 3-D Secure change",
+          "E-invoicing and order-to-invoice integrations retested after updates",
+          "WhatsApp templates, opt-in wording and chat links reviewed quarterly",
         ],
       },
       {

@@ -26,8 +26,8 @@ export const aiCorePosts8: BlogPost[] = [
     bannerAlt:
       "AI knowledge base in four columns: sources (policies, manuals, tickets, wikis), pipeline (sync, parse and chunk, permissions, index), assistant (answers, citations, refusals, hand-off) and feedback highlighted (thumbs and notes, gap reports, owner fixes, re-test).",
     date: "2026-10-02",
-    updated: "2026-10-08",
-    readingTime: "6 min read",
+    updated: "2026-10-09",
+    readingTime: "13 min read",
     relatedServiceSlugs: ["ai-automation", "ui-ux-design"],
     relatedIndustrySlugs: ["professional-services", "saas-technology", "b2b-enterprise"],
     relatedSlugs: ["enterprise-rag-architecture", "retrieval-augmented-generation", "ai-customer-support-automation"],
@@ -40,12 +40,15 @@ export const aiCorePosts8: BlogPost[] = [
       { q: "Who maintains an AI knowledge base?", a: "Content owners for each area, supported by reports of unanswered and poorly rated questions. The assistant's quality depends on the documents behind it." },
       { q: "Can it be used for customer-facing support?", a: "Yes, with public content only, strong refusal behaviour, clear hand-off to people and testing for sensitive topics." },
       { q: "How do you measure success?", a: "Answer rate, citation accuracy, user ratings, escalations, time saved for staff, ticket deflection for customer use and the number of content gaps fixed." },
+      { q: "What is an internal AI assistant?", a: "An internal AI assistant is a tool for employees that answers questions from the organisation's own documents and systems, such as policies, wikis, shared drives and tickets. It retrieves relevant passages under the employee's own access rights, writes an answer only from them and cites the sources, so staff can check the answer and open the original document." },
+      { q: "How is an internal AI assistant different from a general chatbot?", a: "A general chatbot answers from its training data and whatever a user pastes in, with no knowledge of your policies or access rules. An internal AI assistant retrieves from your current company content, filters results by the user's permissions, shows citations and says when it cannot find an answer. That makes it suitable for company-specific questions where a general chatbot would guess." },
     ],
     content: [
       {
         heading: "Quick answer",
         body: [
           "An AI knowledge base is a retrieval-augmented assistant over your company's content. Choose authoritative sources, sync them with their permissions, parse and index them for hybrid retrieval, and have the assistant answer only from retrieved sources with citations, saying clearly when it cannot find an answer and handing off to people. The part most teams underestimate is the feedback loop: owners must see unanswered and poorly rated questions and fix the underlying content, or quality decays.",
+          "Used by employees, this is usually called an **internal AI assistant**. The sections below on architecture, permission filtering, retrieval quality, monitoring and rollout cover what it takes to connect one safely to company data.",
         ],
       },
       {
@@ -167,6 +170,105 @@ export const aiCorePosts8: BlogPost[] = [
         body: [
           "Treat the knowledge base as a product with editors. Assign an owner per content area, set review dates on documents, mark one source as authoritative when documents overlap, archive superseded versions so they leave the index, and use the assistant's gap reports in regular content reviews. Track content freshness as a metric alongside answer quality. Without this, even a well-engineered assistant degrades as documents drift out of date.",
         ],
+      },
+      {
+        heading: "Internal AI Assistant vs General Chatbot",
+        body: [
+          "An **internal AI assistant** is an assistant for employees that answers from your organisation's own systems, applies each employee's existing access rights and shows where every answer came from. A general chatbot answers from what its model learned in training, plus whatever a user pastes in. The difference matters most when an answer has to be correct for your company, today.",
+          "A general chatbot is still useful for drafting, summarising and brainstorming. The problem starts when staff use it for questions it cannot see the answer to, such as 'what is our travel policy for contractors?', or paste confidential documents into it to get one.",
+        ],
+        table: {
+          headers: ["Dimension", "Internal AI assistant", "General chatbot"],
+          rows: [
+            ["Grounding", "Answers from retrieved company documents and records", "Answers from training data and pasted text"],
+            ["Permissions", "Filters sources by the signed-in user's access", "No knowledge of your access rules"],
+            ["Citations", "Links each answer to the source passage", "Usually none, or public web links"],
+            ["Data freshness", "As fresh as the last sync of each source", "Fixed at the model's training cut-off unless it browses"],
+            ["Main risks", "Leaking restricted content if permissions are wrong; stale answers if sync lags", "Confident answers that contradict your policies; staff pasting confidential data"],
+            ["Who maintains it", "Content owners plus a platform team", "The vendor; you control only usage policy"],
+          ],
+        },
+      },
+      {
+        heading: "Architecture for an Internal AI Assistant Connected to Company Data",
+        body: [
+          "The architecture has one rule that shapes everything else: identity flows through every step, and retrieval happens before the model sees any text. The model never receives a passage the user could not open in the source system.",
+          "**How the parts fit.** The identity provider (single sign-on) tells the assistant who is asking and which groups they belong to. The retrieval layer runs [[/blogs/hybrid-search-for-rag|hybrid search]] over an index in which every chunk carries the access list copied from its source, filters results to that user, then [[/blogs/rag-reranking|reranks]] the survivors. The model writes an answer only from those passages and cites them. Every interaction is logged for feedback and audit. For the organisation-wide version of this design, see [[/blogs/enterprise-rag-architecture|enterprise RAG architecture]]; for connecting AI to ERP, CRM and other line-of-business systems, see [[/blogs/enterprise-ai-integration|enterprise AI integration]].",
+        ],
+        code: {
+          label: "Reference architecture: internal AI assistant",
+          text: "Employee (intranet, Teams, Slack, browser)\n        |\nIdentity provider (SSO: user ID + groups)\n        |\nAssistant service (session, guardrails, audit log)\n        |\nRetrieval layer\n  - hybrid search (keyword + vector)\n  - permission filter: user ID + groups\n  - rerank top candidates\n        |\nConnected sources, each synced with its ACLs\n  SharePoint | Google Drive | Confluence\n  Ticketing system | CRM (live lookup)\n        |\nLanguage model (answers only from passages)\n        |\nAnswer + citations (links to source sections)\n        |\nFeedback and logging\n  ratings, no-answer events, sources used,\n  permission tests -> content owner dashboards",
+        },
+      },
+      {
+        heading: "Identity and Document Permissions",
+        body: [
+          "**Answer first:** an internal AI assistant must only retrieve what the person asking could open in the source system. This is usually called security trimming or permission filtering, and it has to happen at retrieval time, before any text reaches the model. Instructions in a prompt ('do not reveal HR files') are not a permission system.",
+          "**Verified fact.** Microsoft's Azure AI Search documentation describes four approaches to document-level access: security filters (generally available), POSIX-like ACL and RBAC scopes, Microsoft Purview sensitivity labels and SharePoint ACLs, the last three in preview when we checked. The documentation calls document-level access essential for RAG applications and agentic systems that ground answers in company data, and describes the security-filter pattern as one that 'trims search results based on a string containing a group or user identity' ([[https://learn.microsoft.com/en-us/azure/search/search-document-level-access-overview|Microsoft Learn]]). Other platforms use different mechanisms, but the principle is the same.",
+          "**Our recommendation.** Do not build one shared index with a super-user service account that can read everything and then rely on the application to hide results. A single bug or a cleverly phrased question then exposes everything that account could read. Instead, store access metadata with every chunk, pass the signed-in user's identity and group memberships on every query and filter inside the search engine. If the assistant can also act (create a ticket, update a record), its tools should run with the user's own permissions, not a privileged account; see [[/blogs/ai-agent-access-control|AI agent access control]].",
+        ],
+        checklist: [
+          "Sign-in through your identity provider; no anonymous or shared accounts",
+          "Access lists stored with every chunk, copied from the source system",
+          "Group memberships resolved at query time or synced on a short schedule",
+          "Permission changes and deletions propagated at least as fast as content edits",
+          "Highly sensitive repositories (HR cases, legal matters, board papers) excluded until there is a clear need and owner sign-off",
+          "Automated tests in which users with different roles ask questions they must not get answers to",
+        ],
+      },
+      {
+        heading: "Retrieval Quality and Data Freshness",
+        body: [
+          "Most wrong answers trace back to retrieval rather than the model: the right passage was never found, or an older version ranked higher.",
+          "**Chunking starting points (verified).** OpenAI's file search tool defaults to chunks of 800 tokens with 400 tokens of overlap ([[https://developers.openai.com/api/docs/guides/retrieval|OpenAI]]). Microsoft recommends starting Azure AI Search at 512 tokens with 25% overlap, which is 128 tokens ([[https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-chunk-documents|Microsoft Learn]]). Treat these as starting points to test, not answers: policies with numbered clauses, tables and long manuals usually need structure-aware chunking. See [[/blogs/rag-chunking-strategies|RAG chunking strategies]].",
+          "**Hybrid search and reranking.** Keyword search finds exact terms such as policy numbers, product codes and names; vector search finds paraphrases. Microsoft's hybrid search documentation notes that keyword search is better for 'product codes, highly specialized jargon, dates, and people's names', and merges both result lists with Reciprocal Rank Fusion ([[https://learn.microsoft.com/en-us/azure/search/hybrid-search-overview|Microsoft Learn]]). A reranker then reorders the top candidates before they reach the model.",
+          "**Contextual retrieval.** In Anthropic's published tests, adding a short context prefix to each chunk before indexing (contextual embeddings plus contextual BM25) reduced the top-20 retrieval failure rate by 49%, and by 67% when reranking was added ([[https://www.anthropic.com/news/contextual-retrieval|Anthropic]]). Those results come from Anthropic's own datasets; measure on your own question set before assuming similar gains.",
+          "**Data freshness.** Agree a freshness target for each source with its owner, and treat deletions and permission changes as first-class sync events, not only new content. Show the document date in answers where it matters. The table below gives illustrative starting targets, not standards. More detail is in [[/blogs/data-freshness-for-ai|data freshness for AI]].",
+        ],
+        table: {
+          headers: ["Source", "Illustrative sync target", "Owner", "Watch for"],
+          rows: [
+            ["Policies and handbooks", "On publish, or daily", "Policy or HR owner", "Superseded versions left in the index"],
+            ["Wiki and Confluence pages", "Hourly to daily", "Space owners", "Pages nobody has reviewed in a year"],
+            ["SharePoint and Google Drive", "Change feed, or hourly", "Department leads", "Permissions changing without re-sync"],
+            ["Ticketing system", "Hourly, resolved tickets only", "Support lead", "Personal data in ticket text"],
+            ["CRM records", "Live lookup through the API rather than indexing", "Sales operations", "Record-level access rules"],
+          ],
+        },
+      },
+      {
+        heading: "Monitoring an Internal AI Assistant",
+        body: [
+          "Ratings alone do not tell you whether answers are right; people rarely rate answers they cannot check. Combine user feedback with sampled review and automated tests. For each interaction, log the question, user, sources retrieved, sources cited, model and prompt version and response time. Treat those logs as sensitive, because they contain questions and document excerpts, and set a retention period. Tooling for traces and dashboards is covered in [[/blogs/llm-observability|LLM observability]].",
+        ],
+        table: {
+          headers: ["Signal", "How to measure it", "What it tells you"],
+          rows: [
+            ["Answer quality", "Weekly sample of answers graded against their sources by a reviewer", "Drift that ratings miss"],
+            ["Citation accuracy", "Share of sampled answers whose cited passage supports the claim", "Whether citations can be trusted"],
+            ["No-answer rate", "Share of questions where the assistant declines", "Rising: content gaps. Near zero: it may be guessing"],
+            ["Permission-violation tests", "Scheduled questions from restricted test users; the expected result is zero leaks", "Whether security trimming still works after changes"],
+            ["Usage", "Active and repeat users, questions per team, top topics", "Adoption, and where content matters most"],
+            ["Latency and cost", "Response time and tokens per answer", "Whether retrieval or prompts need tuning"],
+          ],
+        },
+      },
+      {
+        heading: "Rollout Plan for an Internal AI Assistant",
+        body: [
+          "**Our recommendation.** Start narrow, with one domain, one audience and content owners who have agreed to fix what the assistant exposes. Build an evaluation set from real questions with expected answers and sources before the pilot, and expand only when quality and permission tests pass. Phases and exit criteria below are a planning template; set the thresholds with your own stakeholders.",
+          "For a UAE organisation, add bilingual Arabic and English evaluation questions, data residency checks and PDPL questions to phase 0; see [[/blogs/ai-knowledge-base-uae|AI knowledge base for UAE businesses]].",
+        ],
+        table: {
+          headers: ["Phase", "Scope", "Exit criteria"],
+          rows: [
+            ["0. Prepare", "One domain (for example HR or IT help); owners named; sources cleaned; an evaluation set of real questions with expected answers and sources", "Owners sign off sources; evaluation set agreed"],
+            ["1. Pilot", "A small group from the team that asks these questions most", "Evaluation results meet your threshold; zero permission-test failures; feedback loop running"],
+            ["2. Department", "The whole department, same domain", "Stable quality over several weeks; no-answer topics being fixed"],
+            ["3. Expand", "Add domains one at a time, each with owners and its own evaluation questions", "Each new domain passes its tests before launch"],
+            ["4. Operate", "Regular content reviews, sampled grading, permission tests and model or prompt change reviews", "Ongoing: quality and freshness tracked monthly"],
+          ],
+        },
       },
       {
         heading: "Worked Example",
