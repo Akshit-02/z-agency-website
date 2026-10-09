@@ -437,7 +437,7 @@ export const aiCorePosts13: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Successful business AI is chosen carefully, piloted honestly and scaled with integration and governance. Start with processes, prioritize by value and feasibility, measure against baselines and keep people in the loop where it matters. Related: [[/blogs/ai-agent-development|AI agent development]], [[/blogs/business-process-automation|business process automation]] and [[/blogs/retrieval-augmented-generation|RAG]].",
+          "Successful business AI is chosen carefully, piloted honestly and scaled with integration and governance. Start with processes, prioritize by value and feasibility, measure against baselines and keep people in the loop where it matters. Related: [[/blogs/ai-agent-development|AI agent development]], [[/blogs/business-process-automation|business process automation]] and [[/blogs/retrieval-augmented-generation|RAG]]. For a step-by-step plan for Australian small businesses, see [[/blogs/ai-implementation-australia|how to implement AI in an Australian small business]].",
         ],
       },
     ],

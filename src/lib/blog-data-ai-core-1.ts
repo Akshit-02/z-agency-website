@@ -244,7 +244,7 @@ export const aiCorePosts1: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Useful agents are narrow, well-tooled, evaluated and controlled. Start with one task, keep consequential decisions behind approvals, measure success on real cases and grow autonomy with evidence. Next: [[/blogs/ai-agent-architecture|architecture]], [[/blogs/ai-agent-evaluation|evaluation]] and [[/blogs/human-in-the-loop-ai|human-in-the-loop design]].",
+          "Useful agents are narrow, well-tooled, evaluated and controlled. Start with one task, keep consequential decisions behind approvals, measure success on real cases and grow autonomy with evidence. Next: [[/blogs/ai-agent-architecture|architecture]], [[/blogs/ai-agent-evaluation|evaluation]] and [[/blogs/human-in-the-loop-ai|human-in-the-loop design]]. For Australian businesses, including privacy and consumer law context, see [[/blogs/ai-agents-australia|AI agents for Australian businesses]].",
         ],
       },
     ],

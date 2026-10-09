@@ -347,7 +347,7 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Checkout abandonment has well-documented causes, but their mix differs by store. Use the research as a checklist, confirm which causes apply with your own evidence, and fix them in order of impact: costs, delivery, accounts, forms, payments, trust, errors and mobile. For design principles, see [[/blogs/ecommerce-checkout-ux|ecommerce checkout UX]]; on Shopify, see [[/blogs/shopify-checkout-optimization|Shopify checkout optimization]]. For UAE payments, addresses and delivery expectations, see [[/blogs/uae-ecommerce-checkout-optimization|UAE ecommerce checkout optimisation]].",
+          "Checkout abandonment has well-documented causes, but their mix differs by store. Use the research as a checklist, confirm which causes apply with your own evidence, and fix them in order of impact: costs, delivery, accounts, forms, payments, trust, errors and mobile. For design principles, see [[/blogs/ecommerce-checkout-ux|ecommerce checkout UX]]; on Shopify, see [[/blogs/shopify-checkout-optimization|Shopify checkout optimization]]. For UAE payments, addresses and delivery expectations, see [[/blogs/uae-ecommerce-checkout-optimization|UAE ecommerce checkout optimisation]]. For Australian delivery, pricing and surcharging changes, see [[/blogs/ecommerce-conversion-optimization-australia|Australian ecommerce conversion optimisation]].",
           "For related guides, see [[/blogs/ecommerce-shipping-ux|clearer delivery information]].",
         ],
       },

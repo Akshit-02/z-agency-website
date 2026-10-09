@@ -286,7 +286,7 @@ export const designPosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Research, define, ideate, prototype, test, build and iterate: the stages are simple, and their value comes from doing each in proportion to the risk. Keep the loop tight and evidence-driven, and the product improves with every cycle. For the full product lifecycle from problem to scale, see [[/blogs/digital-product-development-gcc|digital product development in the GCC]].",
+          "Research, define, ideate, prototype, test, build and iterate: the stages are simple, and their value comes from doing each in proportion to the risk. Keep the loop tight and evidence-driven, and the product improves with every cycle. For the full product lifecycle from problem to scale, see [[/blogs/digital-product-development-gcc|digital product development in the GCC]]. For Australian founders and product teams, see [[/blogs/digital-product-development-australia|digital product development in Australia]].",
         ],
       },
     ],

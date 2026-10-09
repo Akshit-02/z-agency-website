@@ -1187,6 +1187,29 @@ Practical guides for UAE and GCC businesses. ZSpace Labs is an India-based, remo
 - Cloud migration for UAE businesses: 7 Rs, UAE cloud regions, sector data rules, DR and cost governance — https://www.zspace.in/blogs/cloud-migration-uae
 - How to choose a software development company for a UAE startup: team models, remote delivery, ownership, scoring matrix — https://www.zspace.in/blogs/software-development-company-uae
 
+## Australian guides
+
+Practical guides for Australian businesses. ZSpace Labs is an India-based, remote-first studio working with Australian and international businesses; it has no Australian office. Shopify SEO and AI search guidance for Australia are covered as sections in the global guides (shopify-seo-guide, ai-search-visibility).
+
+- Digital product development in Australia (hub): evidence ladder, stage gates and Australian factors that change product decisions — https://www.zspace.in/blogs/digital-product-development-australia
+- AI automation for Australian small businesses: use cases, first-project prioritisation, privacy rules, costs and ROI — https://www.zspace.in/blogs/ai-automation-australia
+- AI agents for Australian businesses: definitions, five-gate suitability test, controls, Privacy Act ADM transparency from 10 Dec 2026 — https://www.zspace.in/blogs/ai-agents-australia
+- Implementing AI in an Australian small business: ten-step cycle, voluntary government guidance, 30/60/90-day roadmap — https://www.zspace.in/blogs/ai-implementation-australia
+- AI automation costs in Australia: Build, Connect, Run, Own budget model; no invented price benchmarks — https://www.zspace.in/blogs/ai-automation-cost-australia
+- AI governance for Australian businesses: existing law vs commencing reforms vs voluntary guidance, starter kit — https://www.zspace.in/blogs/ai-governance-australia
+- AI customer service in Australia: chatbots, voice agents, handoffs, telemarketing and spam rules — https://www.zspace.in/blogs/ai-customer-service-australia
+- Website development cost in Australia: cost drivers, GST, accessibility and an AUD estimation framework — https://www.zspace.in/blogs/website-development-cost-australia
+- How to choose a web development company in Australia: gates, weighted scorecard, IP assignment, time zones — https://www.zspace.in/blogs/web-development-company-australia
+- Custom software development in Australia: when it is justified, process, Xero/MYOB/Peppol, ownership, TCO — https://www.zspace.in/blogs/custom-software-development-australia
+- MVP development for Australian startups: evidence ladder, assumption mapping, roadmap, R&D Tax Incentive context — https://www.zspace.in/blogs/mvp-development-australia
+- SaaS product development in Australia: multi-tenancy, SSO, billing and GST, integrations, data location — https://www.zspace.in/blogs/saas-development-australia
+- Shopify development in Australia: architecture, payments after the surcharging change, GST, delivery, returns — https://www.zspace.in/blogs/shopify-development-australia
+- Australian ecommerce conversion optimisation: five-zone checkout and trust audit, surcharging, drip pricing, reviews — https://www.zspace.in/blogs/ecommerce-conversion-optimization-australia
+- AI-powered ecommerce in Australia: current capabilities vs announced agentic commerce, readiness checklist — https://www.zspace.in/blogs/ai-ecommerce-australia
+- Website accessibility in Australia: WCAG 2.2, the DDA and AHRC guidance, audit checklist and remediation roadmap — https://www.zspace.in/blogs/website-accessibility-australia
+- Website security for Australian small businesses: Essential Eight mapping, NDB scheme, ransomware reporting — https://www.zspace.in/blogs/website-security-australia
+- API integration for Australian businesses: Xero, MYOB, Australia Post, Peppol, data mapping, reliability — https://www.zspace.in/blogs/api-integration-australia
+
 ## Blog topic hubs
 
 Each hub introduces a topic, links the related service and lists every article in that topic:

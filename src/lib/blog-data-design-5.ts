@@ -558,7 +558,7 @@ export const designPosts5: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Good SaaS product design gets users to value quickly, keeps a clear structure as features grow, and makes everyday work with data fast and understandable. Design every role, state and edge case, keep the product accessible and consistent, and let analytics and research guide what to improve next. For the general discipline, see the [[/blogs/product-design-guide|product design guide]]. For architecture, billing and localisation across Gulf markets, see [[/blogs/saas-development-gcc|SaaS product development for GCC markets]].",
+          "Good SaaS product design gets users to value quickly, keeps a clear structure as features grow, and makes everyday work with data fast and understandable. Design every role, state and edge case, keep the product accessible and consistent, and let analytics and research guide what to improve next. For the general discipline, see the [[/blogs/product-design-guide|product design guide]]. For architecture, billing and localisation across Gulf markets, see [[/blogs/saas-development-gcc|SaaS product development for GCC markets]]. For building a SaaS product for Australian customers, see [[/blogs/saas-development-australia|SaaS product development in Australia]].",
         ],
       },
     ],

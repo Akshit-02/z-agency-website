@@ -136,7 +136,7 @@ export const webDevPosts2: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Choosing a website development company is a due-diligence process, not a gut-feel decision — relevant experience, a documented process, clear communication and explicit ownership terms are what separate a smooth project from a frustrating one. Use the questions above as a starting checklist for any vendor conversation.",
+          "Choosing a website development company is a due-diligence process, not a gut-feel decision — relevant experience, a documented process, clear communication and explicit ownership terms are what separate a smooth project from a frustrating one. Use the questions above as a starting checklist for any vendor conversation. Hiring in Australia? See [[/blogs/web-development-company-australia|how to choose a web development company in Australia]].",
         ],
       },
     ],

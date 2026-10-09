@@ -593,7 +593,7 @@ export const aiAppsPosts9: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "AI governance is a lifecycle with clear owners, proportional controls and continuous monitoring. Related: [[/blogs/ai-security-business-applications|AI security]] and [[/blogs/ai-data-privacy|AI data privacy]].",
+          "AI governance is a lifecycle with clear owners, proportional controls and continuous monitoring. Related: [[/blogs/ai-security-business-applications|AI security]] and [[/blogs/ai-data-privacy|AI data privacy]]. For Australian obligations, reforms and voluntary guidance, see [[/blogs/ai-governance-australia|AI governance for Australian businesses]].",
           "For governance of AI agents that act, including runtime enforcement, see [[/blogs/ai-agent-governance|AI agent governance]]; for the certifiable management system standard, see [[/blogs/iso-42001-ai-management-system|ISO/IEC 42001]].",
         ],
       },

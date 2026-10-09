@@ -24,7 +24,8 @@ export const aiSearchPosts: BlogPost[] = [
     bannerAlt:
       "How a website reaches AI search answers: Your pages, Crawl access, Index (highlighted), Retrieval, AI answer, Citation + click.",
     date: "2026-10-07",
-    readingTime: "10 min read",
+    updated: "2026-10-09",
+    readingTime: "11 min read",
     relatedServiceSlugs: ["website-development", "cro-audit"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "b2b-enterprise"],
     relatedSlugs: ["geo-vs-seo", "ai-crawlers-robots-txt", "ai-search-traffic-tracking"],
@@ -35,6 +36,7 @@ export const aiSearchPosts: BlogPost[] = [
       { q: "How long does it take to appear in AI search answers?", a: "It depends on crawling and indexing like any search channel. OpenAI says robots.txt changes for OAI-SearchBot take about 24 hours to be reflected; Google indexing can take days to weeks. Being eligible is quick; being chosen as a source depends on how useful and trusted the page is for the question." },
       { q: "Can an agency guarantee my business will be recommended by ChatGPT or Gemini?", a: "No. None of the platforms offer a guaranteed organic placement, and Google states that no third-party tool has access to its internal ranking or AI systems. Treat guarantees as a warning sign." },
       { q: "Is AI search visibility only about Google?", a: "No. Google's AI features rely on Google's index; ChatGPT, Claude, Perplexity and Microsoft Copilot use their own crawlers and, in some cases, other search indexes such as Bing. Allowing the right crawlers and being well represented on the open web matters for all of them." },
+      { q: "Is AI search optimisation different in Australia?", a: "The method is the same: Google says there are no special requirements or markup for AI Overviews or AI Mode, which launched in Australia in October 2025. What changes is presentation: consistent business details including ABN where published, Australian English, AUD prices with GST stated, en-AU hreflang if you serve several markets, and Bing set up as well, since it holds about 9% of Australian search." },
       { q: "Does my site need to be rebuilt for AI search?", a: "Usually not. Most problems are fixable: blocked crawlers, content rendered only in the browser, thin service pages, missing facts such as prices or locations, and inconsistent company information. A rebuild only makes sense when the platform itself prevents those fixes." },
     ],
     content: [
@@ -171,6 +173,15 @@ export const aiSearchPosts: BlogPost[] = [
         body: [
           "AI answers vary by user, location, wording and time, so a single screenshot proves little. Many AI answers satisfy the question without a click, which means impressions and brand mentions may rise faster than traffic. And every platform is still changing its products quickly. Build on the things that hold across all of them (accessible content, accurate facts, a consistent identity, useful pages) and treat platform-specific features as additions.",
           "For the strategic comparison with traditional SEO, read [[/blogs/geo-vs-seo|GEO vs SEO]]. If AI agents (not just AI search) are starting to visit your site to complete tasks, read [[/blogs/how-ai-agents-use-websites|how AI agents use websites]].",
+        ],
+      },
+      {
+        heading: "AI search optimisation for Australian businesses",
+        body: [
+          "**Short answer:** the method above applies unchanged in Australia. Google's guidance is global: there are 'no additional requirements to appear in AI Overviews or AI Mode, nor other special optimizations necessary', and 'no special schema.org structured data' to add ([[https://developers.google.com/search/docs/appearance/ai-features|Google Search Central]]). What changes for an Australian business is which platforms matter most and how local facts are presented.",
+          "**Australian facts.** Google rolled out AI Mode in English in Australia on 8 October 2025 ([[https://blog.google/intl/en-au/products/explore-get-answers/ai-mode-in-australia/|Google Australia]]). StatCounter's September 2026 data gives Google 87.9% of Australian search referrals and Bing 9.17% ([[https://gs.statcounter.com/search-engine-market-share/all/australia|StatCounter]]). Google remains the priority, but Bing's share is large enough that Bing Webmaster Tools and IndexNow are worth setting up, since Bing's index also supports Microsoft Copilot answers.",
+          "**What to adapt locally.** Keep your business identity consistent everywhere AI systems may check it: the trading name and legal entity name, ABN where you publish it, address or service areas, and contact details should match across your site, Google Business Profile and directories. Write in Australian English and use the terms Australian customers search with. If you sell into several English-speaking markets, use separate URLs per market with hreflang (en-AU, en-GB, en-US) so the right version is found. State prices in AUD and say whether they include GST. Publish facts only you can give, such as delivery areas, service coverage by state and real response times, because generic copy gives an AI system nothing to cite.",
+          "**What you cannot control.** No agency can guarantee that ChatGPT, Gemini or Google's AI features will mention or cite your business in Australia or anywhere else. Measure visibility over time rather than chasing single answers. Related Australian guides: [[/blogs/website-development-cost-australia|website development cost in Australia]], [[/blogs/web-development-company-australia|choosing a web development company in Australia]] and [[/blogs/digital-product-development-australia|digital product development in Australia]].",
         ],
       },
       {

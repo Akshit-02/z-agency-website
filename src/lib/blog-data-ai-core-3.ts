@@ -583,7 +583,7 @@ export const aiCorePosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Business process automation works when it starts with the real process, simplifies before automating, uses the most stable interfaces, adds AI where inputs are messy, and is measured and owned. Next: [[/blogs/workflow-automation|workflow automation]], [[/blogs/ai-workflow-automation|AI workflow automation]] and [[/blogs/ai-implementation-strategy|AI implementation strategy]].",
+          "Business process automation works when it starts with the real process, simplifies before automating, uses the most stable interfaces, adds AI where inputs are messy, and is measured and owned. Next: [[/blogs/workflow-automation|workflow automation]], [[/blogs/ai-workflow-automation|AI workflow automation]] and [[/blogs/ai-implementation-strategy|AI implementation strategy]]. For Australian small businesses choosing a first AI project, see [[/blogs/ai-automation-australia|AI automation in Australia]].",
         ],
       },
     ],

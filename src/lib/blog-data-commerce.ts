@@ -200,7 +200,7 @@ export const commercePosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Good Shopify store development starts with how the business sells, models the catalog carefully, chooses the least custom approach that meets the requirements, and tests every path to an order. From there the store becomes a base for measured improvement rather than a finished project.",
+          "Good Shopify store development starts with how the business sells, models the catalog carefully, chooses the least custom approach that meets the requirements, and tests every path to an order. From there the store becomes a base for measured improvement rather than a finished project. Building for Australian shoppers? See [[/blogs/shopify-development-australia|Shopify development in Australia]].",
         ],
       },
     ],

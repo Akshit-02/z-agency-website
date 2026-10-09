@@ -966,8 +966,8 @@ export const commerceRewrites: BlogPost[] = [
     bannerAlt:
       "Shopify SEO responsibilities: Shopify handles canonical tags, the automatic sitemap, default robots.txt rules, hreflang for Markets, product schema in themes and SSL; you handle titles and handles, collection and product content, internal links, redirects, filter and variant URLs, apps, speed and schema gaps.",
     date: "2026-03-09",
-    updated: "2026-09-29",
-    readingTime: "16 min read",
+    updated: "2026-10-09",
+    readingTime: "18 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
     relatedIndustrySlugs: ["fashion-apparel", "d2c-consumer", "ecommerce"],
     faqs: [
@@ -1127,6 +1127,18 @@ export const commerceRewrites: BlogPost[] = [
           title: "Ready to improve your Shopify rankings?",
           description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify SEO implementation]] and [[/services/cro-audit|conversion work]] on the traffic you win.",
         },
+      },
+      {
+        heading: "Shopify SEO for Australian stores",
+        body: [
+          "The core mechanics of Shopify SEO are the same worldwide. Collections, product pages, handles, redirects, structured data and speed work the same way for an Australian store as for any other, and the deep dives on [[/blogs/shopify-product-seo|Shopify product SEO]] and [[/blogs/shopify-collection-page-seo|Shopify collection page SEO]] apply unchanged. What changes for Australian stores is a short list of market decisions.",
+          "**Domain and markets.** A store that sells only in Australia can simply use a .com.au domain as its primary domain. If you sell to several English-speaking markets, such as Australia, New Zealand and the UK, Shopify Markets lets you give each market its own subfolder, subdomain or domain, and adds hreflang tags once a market has a language assigned (Shopify Help Center). Google's rules for hreflang still apply: each version must list itself and every other version, tags that do not point to each other are ignored, and only ISO 639-1 language codes with optional ISO 3166-1 Alpha-2 region codes are supported, so en-AU and en-NZ are valid while AU on its own is not ([[https://developers.google.com/search/docs/specialty/international/localized-versions|Google Search Central]]). Our recommendation: create separate market versions only when price, currency, delivery or range genuinely differ, because near-identical English pages depend on correct hreflang to show the right version.",
+          "**Australian spelling and product terms.** Write collection names, product titles and filters in the words Australian shoppers use. Illustrative examples: 'thongs' rather than 'flip-flops', 'doona cover' rather than 'duvet cover', 'jumpers' alongside 'sweaters', and 'colour' as a filter label. Check which term carries demand in your keyword tool; where both are common, use the Australian term in the title and mention the alternative in the description.",
+          "**GST-inclusive prices everywhere.** Google Merchant Center lists Australia among the countries where the product price should include GST, and asks for a price that matches the landing page and checkout ([[https://support.google.com/merchants/answer/6324371|Google Merchant Center Help]]). Keep the price in your Product structured data identical to the visible GST-inclusive price too, because Google expects markup to match the page. A mismatch usually comes from an app or feed that exports prices before tax.",
+          "**Shipping and returns data.** Google's Product structured data documentation says merchant listings can show shipping details and return policies, recommends nesting store-wide shipping and return policy markup under Organization markup, and says using page markup together with a Merchant Center feed gives the best eligibility ([[https://developers.google.com/search/docs/appearance/structured-data/product|Google Search Central]]). For an Australian store, that means describing Australian delivery costs, times and your returns window consistently in markup, Merchant Center and the visible policy pages. See [[/blogs/product-structured-data-ecommerce|product structured data]] for implementation.",
+          "**Google Merchant Center Australia.** Set the feed's target country to Australia, use AUD, and keep shipping settings in Merchant Center aligned with your Shopify shipping rates. Google said in May 2026 that a Merchant Center 'AI performance insights' tool would roll out in Australia 'in the coming months' (Google, Marketing Live 2026), so clean feed data matters for AI shopping surfaces as well as classic results.",
+          "For the store build behind these decisions, see [[/blogs/shopify-development-australia|Shopify development in Australia]]; for turning Australian search traffic into orders, see [[/blogs/ecommerce-conversion-optimization-australia|ecommerce conversion optimisation in Australia]].",
+        ],
       },
       {
         heading: "Conclusion",

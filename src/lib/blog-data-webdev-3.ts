@@ -245,7 +245,7 @@ export const webDevPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "API integrations are what let a website function as part of a connected business system rather than an isolated brochure — but they need to be built with real attention to authentication, error handling, rate limits and ongoing monitoring to be reliable in production, not just in an initial demo. For a reference list of the integrations businesses most often need, see [[/blogs/website-api-integrations-list|15 common website integrations]], with dedicated guides for [[/blogs/crm-website-integration|CRM]] and [[/blogs/payment-gateway-integration|payment gateway]] integration. For connecting business systems beyond the website, see [[/blogs/api-integration-uae|API integration for UAE businesses]].",
+          "API integrations are what let a website function as part of a connected business system rather than an isolated brochure — but they need to be built with real attention to authentication, error handling, rate limits and ongoing monitoring to be reliable in production, not just in an initial demo. For a reference list of the integrations businesses most often need, see [[/blogs/website-api-integrations-list|15 common website integrations]], with dedicated guides for [[/blogs/crm-website-integration|CRM]] and [[/blogs/payment-gateway-integration|payment gateway]] integration. For connecting business systems beyond the website, see [[/blogs/api-integration-uae|API integration for UAE businesses]]. For Australian systems such as Xero, MYOB, Australia Post and Peppol eInvoicing, see [[/blogs/api-integration-australia|API integration for Australian businesses]].",
           "For related guides, see [[/blogs/ecommerce-api-integration|ecommerce API integration]].",
         ],
       },
@@ -606,7 +606,7 @@ export const webDevPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Website security is a defensive discipline built from many individually manageable practices — HTTPS, validation, authentication, dependency hygiene, backups and monitoring — rather than one single fix. Treat it as an ongoing responsibility that continues well past launch, not a checkbox to clear once before going live. For how to design these protections in during development, see [[/blogs/secure-business-website-development|building a secure business website]].",
+          "Website security is a defensive discipline built from many individually manageable practices — HTTPS, validation, authentication, dependency hygiene, backups and monitoring — rather than one single fix. Treat it as an ongoing responsibility that continues well past launch, not a checkbox to clear once before going live. For how to design these protections in during development, see [[/blogs/secure-business-website-development|building a secure business website]]. For Australian small businesses, including the Essential Eight and data breach notification, see [[/blogs/website-security-australia|website security in Australia]].",
           "For related guides, see [[/blogs/ecommerce-security|ecommerce security]] and [[/blogs/ecommerce-security-audit|ecommerce security audit]].",
         ],
       },
@@ -747,7 +747,7 @@ export const webDevPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Accessibility is a practical, well-documented discipline — semantic HTML, keyboard navigation, sufficient contrast and clear forms cover most of the real-world impact, and building these in from the start is consistently cheaper than retrofitting them after launch. Treat WCAG's POUR principles as the organizing framework, and verify any legal obligations separately for your specific jurisdiction and sector. For the design decisions that come before implementation, see [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]].",
+          "Accessibility is a practical, well-documented discipline — semantic HTML, keyboard navigation, sufficient contrast and clear forms cover most of the real-world impact, and building these in from the start is consistently cheaper than retrofitting them after launch. Treat WCAG's POUR principles as the organizing framework, and verify any legal obligations separately for your specific jurisdiction and sector. For the design decisions that come before implementation, see [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]]. For the Australian picture, including the Disability Discrimination Act and AHRC guidance, see [[/blogs/website-accessibility-australia|website accessibility in Australia]].",
           "For related guides, see [[/blogs/ecommerce-accessibility|ecommerce accessibility]] and [[/blogs/ecommerce-accessibility-checklist|ecommerce accessibility checklist]].",
         ],
       },

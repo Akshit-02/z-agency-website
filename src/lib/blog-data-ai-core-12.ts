@@ -188,7 +188,7 @@ export const aiCorePosts12: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Good AI support automation starts behind the scenes with triage and agent assist, earns customer-facing roles with grounded answers and verified actions, and keeps improving through QA and content work. Related: [[/blogs/ai-knowledge-base|AI knowledge base]] and [[/blogs/ai-customer-support-ecommerce|ecommerce AI support]]. For WhatsApp, voice and Arabic support in the UAE, see [[/blogs/ai-customer-support-uae|AI customer support for UAE businesses]].",
+          "Good AI support automation starts behind the scenes with triage and agent assist, earns customer-facing roles with grounded answers and verified actions, and keeps improving through QA and content work. Related: [[/blogs/ai-knowledge-base|AI knowledge base]] and [[/blogs/ai-customer-support-ecommerce|ecommerce AI support]]. For WhatsApp, voice and Arabic support in the UAE, see [[/blogs/ai-customer-support-uae|AI customer support for UAE businesses]]. For Australian support teams, including telemarketing and spam rules, see [[/blogs/ai-customer-service-australia|AI customer service in Australia]].",
         ],
       },
     ],
@@ -720,7 +720,7 @@ export const aiCorePosts12: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "LLM cost control is measurement plus a handful of levers: fewer tokens, the right model per task, caching, batching and budgets, all checked against quality. Related: [[/blogs/llm-routing|LLM routing]], [[/blogs/llm-gateway|LLM gateway]] and [[/blogs/ai-agent-observability|observability]]. For a full implementation budget beyond model usage, see [[/blogs/ai-development-cost-uae|AI implementation costs in the UAE]].",
+          "LLM cost control is measurement plus a handful of levers: fewer tokens, the right model per task, caching, batching and budgets, all checked against quality. Related: [[/blogs/llm-routing|LLM routing]], [[/blogs/llm-gateway|LLM gateway]] and [[/blogs/ai-agent-observability|observability]]. For a full implementation budget beyond model usage, see [[/blogs/ai-development-cost-uae|AI implementation costs in the UAE]]. For a full Australian budget beyond model usage, see [[/blogs/ai-automation-cost-australia|AI automation costs in Australia]].",
         ],
       },
     ],

@@ -325,7 +325,7 @@ export const webDevPosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "What makes a website expensive isn't page count — it's custom functionality, integrations, and the disciplines (security, accessibility, performance, testing) that are easy to under-scope early and expensive to retrofit later. Understanding these cost drivers is what lets you evaluate a quote honestly, whether you're comparing vendors or setting an internal budget.",
+          "What makes a website expensive isn't page count — it's custom functionality, integrations, and the disciplines (security, accessibility, performance, testing) that are easy to under-scope early and expensive to retrofit later. Understanding these cost drivers is what lets you evaluate a quote honestly, whether you're comparing vendors or setting an internal budget. For Australian projects, including GST, accessibility work and an estimation framework in AUD, see [[/blogs/website-development-cost-australia|website development cost in Australia]].",
         ],
       },
     ],
@@ -703,7 +703,7 @@ export const webDevPosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Neither option is a universal winner — a website builder is a reasonable, sensible choice for a straightforward site, and custom development is justified once real complexity, growth or integration needs outgrow what a platform can support. Match the choice to your actual requirements, not to which option sounds more impressive.",
+          "Neither option is a universal winner — a website builder is a reasonable, sensible choice for a straightforward site, and custom development is justified once real complexity, growth or integration needs outgrow what a platform can support. Match the choice to your actual requirements, not to which option sounds more impressive. For bespoke software beyond websites, see [[/blogs/custom-software-development-australia|custom software development in Australia]].",
         ],
       },
     ],

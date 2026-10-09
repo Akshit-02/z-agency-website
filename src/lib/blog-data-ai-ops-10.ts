@@ -182,7 +182,7 @@ export const aiOpsPosts10: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Validate AI ideas on four tracks at once: problem, feasibility, economics and responsibility. Test real models on real examples early, simulate the experience with users and let evidence decide whether to build, buy, reshape or stop. For validating and launching any digital product, see [[/blogs/mvp-development-uae|MVP development in the UAE]].",
+          "Validate AI ideas on four tracks at once: problem, feasibility, economics and responsibility. Test real models on real examples early, simulate the experience with users and let evidence decide whether to build, buy, reshape or stop. For validating and launching any digital product, see [[/blogs/mvp-development-uae|MVP development in the UAE]]. For Australian startups validating any digital product, see [[/blogs/mvp-development-australia|MVP development in Australia]].",
         ],
       },
     ],
