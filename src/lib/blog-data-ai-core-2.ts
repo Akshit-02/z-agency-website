@@ -375,14 +375,14 @@ export const aiCorePosts2: BlogPost[] = [
     title: "Human-in-the-Loop AI: How to Combine AI Automation With Human Approval",
     seoTitle: "Human-in-the-Loop AI: Approvals, Thresholds and Review Design",
     excerpt:
-      "How to design human-in-the-loop AI: when to require approval, confidence and risk thresholds, review interfaces, escalation, accountability, audit trails and how to reduce review load safely over time.",
+      "Designing human-in-the-loop AI: approval rules, confidence thresholds, review interfaces, escalation, audit trails and when autonomy is inappropriate.",
     category: "AI & Automation",
     banner: "hitlmodes",
     bannerAlt:
       "Human-in-the-loop modes in four columns: before action (review draft, edit freely, nothing sent, training data), approve action highlighted (show the plan, one-click approve, then execute, audit trail), after action (sample review, spot checks, undo window, quality score) and on doubt (low confidence, high value, policy match, escalate).",
     date: "2026-10-02",
-    updated: "2026-10-08",
-    readingTime: "7 min read",
+    updated: "2026-10-10",
+    readingTime: "8 min read",
     relatedServiceSlugs: ["ai-automation", "ui-ux-design"],
     relatedIndustrySlugs: ["fintech", "healthcare-healthtech", "b2b-enterprise"],
     relatedSlugs: ["ai-agent-guardrails", "agentic-workflow-automation", "ai-agent-evaluation"],
@@ -395,7 +395,11 @@ export const aiCorePosts2: BlogPost[] = [
       { q: "What is automation bias?", a: "The tendency of reviewers to accept automated suggestions without proper scrutiny. Reduce it by showing evidence, sampling for quality, rotating reviewers and measuring agreement." },
       { q: "How do you reduce review load safely?", a: "Track reviewer decisions, find case types where the AI is consistently approved without edits, and move those to automatic handling with sampled after-the-fact review." },
       { q: "Is human-in-the-loop required by regulation?", a: "Some rules require human oversight for certain decisions, such as high-risk AI systems under the EU AI Act or automated decisions with legal effects under data protection laws. Check obligations for your sector and market." },
-    ],
+          {
+        q: "Which decisions should never be fully automated?",
+        a: "Decisions with significant effects on people or that cannot easily be reversed: hiring rejections, credit and hardship decisions, health advice, large refunds or penalties, and irreversible actions such as payments or deletions. Use AI to assist, keep a person accountable, and log decisions and overrides.",
+      },
+],
     content: [
       {
         heading: "Quick answer",
@@ -544,6 +548,18 @@ export const aiCorePosts2: BlogPost[] = [
           title: "Want automation with the right amount of human control?",
           description: "Talk to ZSpace Labs about [[/services/ai-automation|human-in-the-loop automation]] and [[/services/ui-ux-design|review and approval interface design]].",
         },
+      },
+      {
+        heading: "Where Full Autonomy Is Inappropriate, and Australian Obligations",
+        body: [
+          "Some decisions should always have a person accountable. Examples include rejecting job applicants, approving or declining credit or hardship requests, health triage or clinical advice, refunds or penalties above a threshold, and actions that cannot be undone, such as deleting records or sending payments.",
+        ],
+        checklist: [
+          "Design the review step so people see the evidence, the AI's suggestion and its confidence, and can override easily.",
+          "Log suggestions, decisions, overrides and reasons for audit.",
+          "Monitor override rates; rising overrides signal model or data problems.",
+          "Australia: from 10 December 2026, organisations covered by the Privacy Act must describe in their privacy policies the kinds of decisions made by computer programs that could significantly affect individuals' rights or interests. Meaningful human review is good practice; get advice on how the rule applies to you. See [[/blogs/ai-governance-australia|AI governance for Australian businesses]] and [[/blogs/recruitment-software-development-australia|recruitment software]].",
+        ],
       },
       {
         heading: "Conclusion",

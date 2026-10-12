@@ -557,7 +557,7 @@ export const webDevPosts6: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "SEO-friendly development is a technical foundation, not a content trick — clean architecture, proper metadata, crawlable rendering, valid structured data and strong performance built in during development are far cheaper and more effective than retrofitting them after launch.",
+          "SEO-friendly development is a technical foundation, not a content trick — clean architecture, proper metadata, crawlable rendering, valid structured data and strong performance built in during development are far cheaper and more effective than retrofitting them after launch. For service businesses that depend on local search, see [[/blogs/local-seo-australia|the website side of local SEO]].",
           "The same foundation serves AI search: Google's AI Overviews and AI Mode draw on its index, and other assistants run their own crawlers. For what changes and what doesn't, see [[/blogs/geo-vs-seo|GEO vs SEO]] and [[/blogs/ai-search-visibility|how to make your website discoverable in AI search]]. Semantic, accessible markup also helps AI agents that browse sites for users; see [[/blogs/how-ai-agents-use-websites|how AI agents use websites]].",
         ],
       },

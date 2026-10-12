@@ -170,7 +170,7 @@ export const mobilePosts4: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Good authentication balances friction and risk: fast sign-in options for everyday use, stronger factors where the stakes are high, and careful handling of tokens, sessions, recovery and logout behind the scenes. Pair it with server-side authorization and the broader practices in [[/blogs/mobile-app-security|mobile app security]].",
+          "Good authentication balances friction and risk: fast sign-in options for everyday use, stronger factors where the stakes are high, and careful handling of tokens, sessions, recovery and logout behind the scenes. Pair it with server-side authorization and the broader practices in [[/blogs/mobile-app-security|mobile app security]]. For the protocols behind sign-in, see [[/blogs/oauth-vs-openid-connect|OAuth 2.0 vs OpenID Connect]]. For phishing-resistant sign-in, see [[/blogs/passkeys-implementation|adding passkeys]].",
         ],
       },
     ],
@@ -796,7 +796,7 @@ export const mobilePosts4: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Offline-first is a deliberate architecture: local data as the source of truth, a durable sync queue, clear conflict rules, secure local storage and honest offline UX. It's invaluable for users in unreliable conditions and unnecessary overhead for many others. For the wider build context, see the [[/blogs/mobile-app-development-guide|mobile app development guide]].",
+          "Offline-first is a deliberate architecture: local data as the source of truth, a durable sync queue, clear conflict rules, secure local storage and honest offline UX. It's invaluable for users in unreliable conditions and unnecessary overhead for many others. For the wider build context, see the [[/blogs/mobile-app-development-guide|mobile app development guide]]. For maps and location features in field apps, see [[/blogs/gis-application-development|GIS application development]].",
         ],
       },
     ],

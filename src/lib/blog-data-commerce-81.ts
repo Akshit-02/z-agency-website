@@ -509,7 +509,7 @@ export const commercePosts81: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "An API gateway centralizes routing, authentication, limits, caching, versioning and observability, while services keep business logic. Related: [[/blogs/ecommerce-event-driven-architecture|event-driven architecture]], [[/blogs/ecommerce-webhooks|webhooks]] and [[/blogs/ecommerce-observability|observability]].",
+          "An API gateway centralizes routing, authentication, limits, caching, versioning and observability, while services keep business logic. Related: [[/blogs/ecommerce-event-driven-architecture|event-driven architecture]], [[/blogs/ecommerce-webhooks|webhooks]] and [[/blogs/ecommerce-observability|observability]]. A gateway is one control among several; see [[/blogs/api-security-best-practices|API security best practices]] for object and function authorisation.",
         ],
       },
     ],

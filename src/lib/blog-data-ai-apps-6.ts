@@ -206,7 +206,7 @@ export const aiAppsPosts6: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "For utilities, AI earns its place in customer, field and compliance workflows, kept well away from operational control. Related: [[/blogs/ai-compliance-automation|compliance automation]] and [[/blogs/ai-customer-support-automation|support automation]].",
+          "For utilities, AI earns its place in customer, field and compliance workflows, kept well away from operational control. Related: [[/blogs/ai-compliance-automation|compliance automation]] and [[/blogs/ai-customer-support-automation|support automation]]. For the metering and reporting platform itself, see [[/blogs/energy-management-software-australia|energy management software in Australia]].",
         ],
       },
     ],

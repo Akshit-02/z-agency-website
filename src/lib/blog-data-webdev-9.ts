@@ -475,7 +475,7 @@ export const webDevPosts9: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Secure websites are built, not bolted on. Decide what you're protecting, use proven components for authentication, validate everything on the server, secure APIs and secrets, and keep monitoring after launch. Ongoing upkeep is covered in [[/blogs/website-maintenance-guide|website maintenance]].",
+          "Secure websites are built, not bolted on. Decide what you're protecting, use proven components for authentication, validate everything on the server, secure APIs and secrets, and keep monitoring after launch. Ongoing upkeep is covered in [[/blogs/website-maintenance-guide|website maintenance]]. For applications that hold customer accounts and data, [[/blogs/secure-web-application-development-australia|building a secure customer-facing web application]] adds threat modelling, OWASP ASVS and Australian breach obligations. Before launch, an independent test helps; see [[/blogs/web-application-penetration-testing-australia|web application penetration testing]]. For APIs, see [[/blogs/api-security-best-practices|API security best practices]].",
           "For related guides, see [[/blogs/ecommerce-security|ecommerce security]].",
         ],
       },
@@ -636,7 +636,8 @@ export const webDevPosts9: BlogPost[] = [
     category: "Web Development",
     banner: "roadmap",
     date: "2026-09-24",
-    readingTime: "12 min read",
+    updated: "2026-10-09",
+    readingTime: "13 min read",
     relatedServiceSlugs: ["website-development", "shopify-development"],
     relatedIndustrySlugs: ["ecommerce", "b2b-enterprise", "saas-technology"],
     faqs: [
@@ -648,7 +649,11 @@ export const webDevPosts9: BlogPost[] = [
       { q: "How much does replatforming cost?", a: "It depends on content volume, integrations, custom functionality and whether a redesign is included. Data migration and integration rework are often underestimated." },
       { q: "Can we replatform in phases?", a: "Often yes, for example moving the front end first while keeping the existing backend, or migrating sections of the site in stages." },
       { q: "How do we avoid moving our problems to a new platform?", a: "Diagnose why the current platform is failing first. If the real issue is content, process or design, a new platform alone won't fix it." },
-    ],
+          {
+        q: "How long should redirects stay in place after replatforming?",
+        a: "Google's site move guidance says to keep redirects generally for at least a year, and longer for valuable URLs that still receive links or traffic. Removing them early can lose search visibility and break links customers rely on. Monitor Search Console before retiring any redirect.",
+      },
+],
     content: [
       {
         heading: "Quick answer",
@@ -740,6 +745,27 @@ export const webDevPosts9: BlogPost[] = [
         cta: {
           title: "Planning a replatforming project?",
           description: "Talk to ZSpace Labs about a phased, lower-risk path to a stack that fits where your business is going. Learn more about our [[/services/website-development|Next.js and React development work]].",
+        },
+      },
+      {
+        heading: "A Replatforming Cutover Checklist That Protects Search Visibility",
+        body: [
+          "Replatforming differs from a redesign or a data migration: the technology changes underneath, often with new URLs, templates and integrations at the same time. Most search losses come from avoidable URL and content mistakes. Google's guidance on site moves is the reference point ([[https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes|Google Search Central]]).",
+        ],
+        checklist: [
+          "**Evaluate the platform against requirements:** content model, editor experience, integrations, performance, accessibility, hosting and total cost, before falling for a demo.",
+          "**Inventory URLs:** export every indexable URL with traffic, backlinks and conversions from Search Console and analytics.",
+          "**Keep URLs where possible;** where they must change, map every old URL to its closest new equivalent and implement permanent (301 or 308) redirects. Avoid redirecting everything to the home page.",
+          "**Keep redirects in place long term;** Google says generally at least a year, and longer is safer for valuable URLs.",
+          "**Migrate content and metadata:** titles, meta descriptions, headings, structured data, canonical tags, alt text and internal links.",
+          "**Rebuild integrations** (forms, CRM, analytics, payments) and test them end to end.",
+          "**Test on staging:** crawl it, check redirects, page speed and accessibility, and block it from indexing.",
+          "**Cut over with a rollback plan,** submit the new sitemap, and monitor Search Console, analytics and error logs daily for the first weeks. Some ranking fluctuation after a move is normal.",
+          "**Data:** for moving records rather than pages, see [[/blogs/data-migration-australia|data migration planning]]; for older systems, [[/blogs/legacy-software-modernization-australia|legacy software modernisation]].",
+        ],
+        callout: {
+          type: "note",
+          text: "Australian businesses: also check hosting location and APP 8 if the new platform stores personal information overseas, keep GST-inclusive pricing and legal pages intact, and avoid launching just before peak trading periods.",
         },
       },
       {

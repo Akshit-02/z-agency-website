@@ -1099,7 +1099,7 @@ export const commercePosts54: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A data warehouse pays off when questions cross data sources and teams need shared definitions. Load raw data with history, model it with tested definitions, restrict access, and use it for cohorts, value and profitability analysis. If platform reports still answer your questions, wait. Related: [[/blogs/ecommerce-customer-analytics|customer analytics]] and [[/blogs/ecommerce-kpi-dashboard|KPI dashboards]].",
+          "A data warehouse pays off when questions cross data sources and teams need shared definitions. Load raw data with history, model it with tested definitions, restrict access, and use it for cohorts, value and profitability analysis. If platform reports still answer your questions, wait. Related: [[/blogs/ecommerce-customer-analytics|customer analytics]] and [[/blogs/ecommerce-kpi-dashboard|KPI dashboards]]. For the architecture choice itself, see [[/blogs/data-warehouse-vs-data-lake-vs-lakehouse|data warehouse vs data lake vs lakehouse]].",
         ],
       },
     ],

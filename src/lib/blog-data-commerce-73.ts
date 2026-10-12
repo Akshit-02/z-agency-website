@@ -215,7 +215,7 @@ export const commercePosts73: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A PIM centralizes product information so every channel gets consistent, complete data. Its value comes from the data model, workflows and governance more than the software. Related: [[/blogs/pim-vs-cms|PIM vs CMS]], [[/blogs/ecommerce-product-data-architecture|product data architecture]] and [[/blogs/electronics-product-specifications|electronics product specifications]].",
+          "A PIM centralizes product information so every channel gets consistent, complete data. Its value comes from the data model, workflows and governance more than the software. Related: [[/blogs/pim-vs-cms|PIM vs CMS]], [[/blogs/ecommerce-product-data-architecture|product data architecture]] and [[/blogs/electronics-product-specifications|electronics product specifications]]. For customers, suppliers and other domains as well as products, see [[/blogs/master-data-management|master data management]]. To publish product data to Amazon and eBay, see [[/blogs/amazon-ebay-marketplace-integration|marketplace integration]].",
         ],
       },
     ],

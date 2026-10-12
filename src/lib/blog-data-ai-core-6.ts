@@ -17,14 +17,14 @@ export const aiCorePosts6: BlogPost[] = [
     title: "Retrieval-Augmented Generation (RAG): A Complete Guide for Businesses",
     seoTitle: "Retrieval-Augmented Generation (RAG): A Practical Guide",
     excerpt:
-      "What retrieval-augmented generation is and how to build it: ingestion, chunking, embeddings, hybrid retrieval, reranking, grounded generation with citations, evaluation, costs and common failure modes.",
+      "How retrieval-augmented generation works and how to build it: ingestion, chunking, embeddings, retrieval, reranking, cited answers, evaluation, data location.",
     category: "AI & Automation",
     banner: "ragpipeline",
     bannerAlt:
       "RAG pipeline: ingest, chunk, embed and index, retrieve (highlighted), generate with citations, evaluate; the note says most answer failures are retrieval failures.",
     date: "2026-10-02",
-    updated: "2026-10-08",
-    readingTime: "9 min read",
+    updated: "2026-10-10",
+    readingTime: "10 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["professional-services", "saas-technology", "healthcare-healthtech"],
     relatedSlugs: ["enterprise-rag-architecture", "rag-vs-fine-tuning", "ai-knowledge-base"],
@@ -39,7 +39,11 @@ export const aiCorePosts6: BlogPost[] = [
       { q: "Can RAG prevent hallucinations?", a: "It reduces them but does not eliminate them. Instructions to answer only from sources, citation checks, refusal when evidence is missing and evaluation of faithfulness are still needed." },
       { q: "Is RAG secure for company data?", a: "It can be, if retrieval enforces the same permissions as the source systems, data is processed by approved providers and retrieved content is treated as untrusted input that cannot trigger actions." },
       { q: "When should I use fine-tuning instead of RAG?", a: "When the problem is the model's behaviour, format or specialised skill rather than missing knowledge. For knowledge that changes, RAG is usually the better fit." },
-    ],
+          {
+        q: "Can a RAG system keep data in Australia?",
+        a: "Often, if each component is placed carefully: the vector store and application in an Australian cloud region, and a model available for processing in that region. Some model options route requests to other regions, so check provider documentation. Logs, evaluation tools and embeddings services are frequently overlooked.",
+      },
+],
     content: [
       {
         heading: "Quick answer",
@@ -226,6 +230,18 @@ export const aiCorePosts6: BlogPost[] = [
           title: "Want a RAG system your team can trust?",
           description: "Talk to ZSpace Labs about [[/services/ai-automation|RAG development]] and [[/services/website-development|data integration and deployment]].",
         },
+      },
+      {
+        heading: "RAG for Australian Organizations",
+        body: [
+          "The architecture is the same everywhere; Australian organizations should add a few checks.",
+        ],
+        checklist: [
+          "**Data location:** embeddings, vector stores, model calls and logs may each run in different regions; check all of them. See [[/blogs/private-ai-development-australia|private AI development in Australia]] for model availability in Australian regions.",
+          "**Privacy Act:** if covered, privacy obligations apply to personal information in source documents, prompts and outputs ([[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products|OAIC]]); APP 8 applies to overseas processing.",
+          "**Permissions:** retrieval must respect source-document permissions so users cannot see through the AI what they cannot open directly.",
+          "**Customer-facing answers:** answers are your representations under the Australian Consumer Law; ground them in reviewed content and hand off when unsure; see [[/blogs/ai-customer-service-australia|AI customer service in Australia]].",
+        ],
       },
       {
         heading: "Conclusion",

@@ -379,13 +379,14 @@ export const commercePosts32: BlogPost[] = [
     title: "Headless Ecommerce Architecture: How It Works and When to Use It",
     seoTitle: "Headless Ecommerce Architecture: How It Works, When to Use It",
     excerpt:
-      "How headless ecommerce architecture works: front end, commerce APIs, CMS, search, rendering, caching and integration, plus honest trade-offs and when to avoid it.",
+      "How headless ecommerce works: front end, commerce APIs, CMS, search, rendering, caching and integration, plus honest trade-offs and when to avoid it.",
     category: "Web Development",
     banner: "headlessarch",
     bannerAlt:
       "Headless ecommerce architecture: web storefront, mobile app and kiosk or other touchpoints on a frontend framework and CDN; an edge, BFF or API gateway; commerce engine (catalog, cart, checkout), CMS, search and recommendations, and payments; an integration layer of middleware, events and webhooks connecting ERP, OMS, WMS, CRM and analytics, with more freedom at the front and more for your team to run.",
     date: "2026-09-29",
-    readingTime: "18 min read",
+    updated: "2026-10-09",
+    readingTime: "19 min read",
     relatedServiceSlugs: ["website-development", "shopify-development"],
     relatedIndustrySlugs: ["ecommerce", "retail", "fashion-apparel"],
     faqs: [
@@ -398,6 +399,7 @@ export const commercePosts32: BlogPost[] = [
       { q: "What do I need for a headless build?", a: "A front-end framework and hosting, commerce APIs, a CMS for content, search, analytics and consent, preview and publishing workflows, and a team to maintain it." },
       { q: "How does Shopify support headless?", a: "Through the Storefront API and Hydrogen, Shopify's React-based framework, with Oxygen hosting. Other frameworks can use the Storefront API too." },
       { q: "When should I avoid headless?", a: "When a theme can meet your needs, when you rely heavily on theme apps, or when you don't have the budget and team to maintain a custom front end." },
+      { q: "Is headless commerce worth it for Australian online retailers?", a: "Only when a specific requirement justifies it. Most Australian stores are well served by a fast theme on a SaaS platform. Headless can be worth it for content-led brands, multi-brand or multi-storefront retailers, or businesses serving web, app and in-store screens from one backend, provided they can fund and staff ongoing front-end engineering." },
       { q: "How is this different from headless Shopify?", a: "The headless Shopify guide is platform-specific. This guide covers headless ecommerce architecture on any platform." },
     ],
     content: [
@@ -517,6 +519,24 @@ export const commercePosts32: BlogPost[] = [
         body: [
           "Shopify supports headless builds through the Storefront API and Hydrogen, its React-based framework, with Oxygen hosting; other frameworks can also use the Storefront API, and stores typically keep Shopify's checkout. See [[/blogs/headless-shopify-explained|headless Shopify explained]] and [[/blogs/shopify-hydrogen|Shopify Hydrogen]].",
         ],
+      },
+      {
+        heading: "Is Headless Worth It for Australian Retailers?",
+        body: [
+          "The architecture trade-offs are the same everywhere, but a few local factors shape the decision for stores selling mainly to Australian customers.",
+        ],
+        checklist: [
+          "**Hosting and latency:** whatever you choose, make sure pages are served from a CDN with points of presence in Australia, and that uncached requests do not travel to a distant origin. A theme on a SaaS platform with a global CDN often already does this; a headless front end must be configured to.",
+          "**Regional and mobile shoppers:** measure real-user Core Web Vitals for Australian visitors, including those on slower regional connections, before assuming headless will be faster. See [[/blogs/website-performance-optimization|website performance optimization]].",
+          "**Pricing display:** consumer prices in Australia are normally shown including GST, and Google Merchant Center expects tax-inclusive prices for Australia. A headless front end must reproduce price, GST and delivery-cost display exactly as the platform calculates them.",
+          "**Payments:** card surcharges on eftpos, Visa and Mastercard were removed from 1 October 2026 under the Reserve Bank's decision. Buy now, pay later messaging and wallet buttons that work in a theme may need extra work in a headless front end.",
+          "**Markets:** selling to Australia and New Zealand, or to several regions, adds currency, tax and content variation that the platform may handle more simply in a theme.",
+          "**Team:** headless needs a front-end team for years, not months. Confirm who will own it, onshore or offshore, before committing.",
+        ],
+        callout: {
+          type: "tip",
+          text: "Our recommendation for Australian stores: run a performance and requirements audit on a well-built theme first. If the gaps that remain are about content experience, multiple storefronts or multiple front ends, headless may be justified. If they are about speed, fix speed first. [[/blogs/shopify-development-australia|Shopify development in Australia]] walks through the theme, custom and headless decision for local stores.",
+        },
       },
       {
         heading: "Planning a Headless Build",

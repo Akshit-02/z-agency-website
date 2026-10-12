@@ -459,7 +459,7 @@ export const commercePosts29: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "RFQ is where online and sales-led buying meet. Make requesting easy, responding fast and converting seamless, with clear states and systems integration. For pricing that avoids unnecessary quotes, see [[/blogs/b2b-ecommerce-pricing|B2B ecommerce pricing]].",
+          "RFQ is where online and sales-led buying meet. Make requesting easy, responding fast and converting seamless, with clear states and systems integration. For pricing that avoids unnecessary quotes, see [[/blogs/b2b-ecommerce-pricing|B2B ecommerce pricing]]. For configurable products and pricing approvals, see [[/blogs/product-configurator-cpq-software|product configurator and CPQ software]].",
         ],
       },
     ],
@@ -616,7 +616,7 @@ export const commercePosts29: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A B2B portal pays back through self-service: one order history across channels, finance data customers can act on, account control and fast reordering. Build it on reliable integrations and design it around tasks. For integration details, see [[/blogs/b2b-ecommerce-erp-integration|B2B ERP integration]].",
+          "A B2B portal pays back through self-service: one order history across channels, finance data customers can act on, account control and fast reordering. Build it on reliable integrations and design it around tasks. For integration details, see [[/blogs/b2b-ecommerce-erp-integration|B2B ERP integration]]. If your customers need service self-service (documents, requests and billing) rather than ordering, see [[/blogs/customer-portal-development-australia|customer portal development]]; for Australian wholesale specifics such as GST, tax invoices and Peppol, see [[/blogs/b2b-portal-development-australia|B2B portal development in Australia]].",
           "For related guides, see [[/blogs/ecommerce-customer-account-ux|consumer customer account UX]].",
         ],
       },

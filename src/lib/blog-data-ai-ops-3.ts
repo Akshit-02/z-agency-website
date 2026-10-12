@@ -385,7 +385,7 @@ export const aiOpsPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "AI is built on data systems. Map use cases to data needs, carry permissions and metadata through every pipeline, check quality automatically, track lineage and keep derived stores in sync. Those foundations decide how far and how safely your AI applications can go.",
+          "AI is built on data systems. Map use cases to data needs, carry permissions and metadata through every pipeline, check quality automatically, track lineage and keep derived stores in sync. Those foundations decide how far and how safely your AI applications can go. For business reporting foundations without AI, see [[/blogs/data-engineering-for-growing-businesses|data engineering for growing businesses]].",
         ],
       },
     ],

@@ -9,7 +9,7 @@ import type { BlogPost } from "./blog-data";
  * ecommerce-product-data-ai-search, website-accessibility-guide,
  * accessible-ui-ux-design, ecommerce-accessibility,
  * ecommerce-accessibility-checklist) by Australian shopper data, Australian
- * consumer law and payments changes, announced (not live) agentic checkout
+ * consumer law and payments changes, agentic checkout (limited launch in Australia from June 2026)
  * dates for Australia, and the DDA, AHRC and DTA context for accessibility.
  * Sources checked 2026-10-09: Australia Post eCommerce Report 2026 (18 Mar
  * 2026); ABS Retail Trade (June 2025, final release); ABS Survey of
@@ -29,13 +29,14 @@ export const auCommercePosts2: BlogPost[] = [
     title: "AI-Powered Ecommerce in Australia: Personalisation, Product Discovery and Agentic Commerce",
     seoTitle: "AI Ecommerce in Australia: Discovery, Agents, Trust",
     excerpt:
-      "What AI can do for Australian online stores today, what is only announced, and how to prepare product data, policies and inventory for agentic commerce.",
+      "What AI can do for Australian online stores today, where agentic checkout stands, and how to prepare product data, policies and inventory for agentic commerce.",
     category: "Shopify & Ecommerce",
     banner: "agentcommerce",
     sceneKind: "agent",
     bannerAlt: "An online store's catalogue feeding AI search, recommendations, support and shopping agents, with a readiness layer of product data, policies and inventory underneath",
     date: "2026-10-09",
-    readingTime: "18 min read",
+    updated: "2026-10-10",
+    readingTime: "19 min read",
     relatedServiceSlugs: ["shopify-development", "ai-automation", "cro-audit"],
     relatedIndustrySlugs: ["ecommerce", "retail", "d2c-consumer", "fashion-apparel", "food-beverage"],
     relatedSlugs: ["agentic-commerce", "ai-product-recommendations", "ecommerce-personalization"],
@@ -46,7 +47,7 @@ export const auCommercePosts2: BlogPost[] = [
       },
       {
         q: "Is agentic checkout live in Australia?",
-        a: "Not as far as we could confirm on 9 October 2026. Google said on 20 May 2026 that checkout powered by the Universal Commerce Protocol would roll out across Canada and Australia ‘in the coming months’, with the retailer remaining merchant of record. We found no later confirmation that it is live. Treat it as announced, and use the time to get product data, policies and inventory accurate.",
+        a: "In a limited form. Trade press reported on 19 June 2026 that Australia was the first Asia-Pacific market to go live with Google's Universal Commerce Protocol checkout, allowing single-item purchases in Search, AI Mode and the Gemini app with launch retailers including Kogan, THE ICONIC, Adore Beauty, Bunnings and Petbarn. Google's Merchant Center help says self-serve onboarding is rolling out in the US first, with Australia to follow next year. Most retailers cannot switch it on yet.",
       },
       {
         q: "Do Australian shoppers want AI agents buying for them?",
@@ -85,7 +86,7 @@ export const auCommercePosts2: BlogPost[] = [
           "Most Australian shoppers use AI, but most dislike the idea of an agent buying for them. The Australia Post eCommerce Report 2026 found 61% detractors and 16% advocates.",
           "Retailers are keener than shoppers: the same report found 44% of Australian businesses were advocates of agentic commerce and 85% were taking steps to prepare.",
           "The proven uses today are search, recommendations, support triage, content drafting with human review and operational alerts.",
-          "Agentic checkout in Australia is announced, not confirmed live. Google said in May 2026 that UCP-powered checkout would reach Australia ‘in the coming months’.",
+          "Agentic checkout has reached Australia in a limited form: Google's UCP checkout went live in June 2026 with a handful of launch retailers for single-item purchases, and wider merchant onboarding through Merchant Center is expected next year. Most stores do not need to act immediately, but should get ready.",
           "Agent readiness and ordinary ecommerce hygiene are the same work: complete product data, structured data, clear policies and accurate inventory.",
           "AI-drafted claims are still your claims under the Australian Consumer Law. Keep a person in the loop.",
           "Pricing presentation is changing: card surcharges for eftpos, Visa and Mastercard go from 1 October 2026 under the RBA's decision, and new drip pricing rules commence on 1 July 2027.",
@@ -127,7 +128,7 @@ export const auCommercePosts2: BlogPost[] = [
             ["Semantic and natural-language site search that handles synonyms, misspellings and descriptive queries", "Shoppers asking an AI assistant to find, compare and shortlist products across many stores"],
             ["Recommendations driven by behaviour and catalogue data, with merchandiser rules and holdout tests", "Agents assembling a full basket from a stated need, budget and delivery deadline"],
             ["Support assistants answering order-status, delivery and returns questions, with handover to people", "Agent-to-agent conversations between a shopper's assistant and a store's assistant"],
-            ["Drafting product descriptions, alt text and attribute data for human review", "Checkout completed inside an AI surface, such as Google's announced UCP-powered checkout for Australia"],
+            ["Drafting product descriptions, alt text and attribute data for human review", "Checkout completed inside an AI surface for most retailers: Google's UCP checkout is live in Australia only for launch retailers, with Merchant Center onboarding expected next year"],
             ["Demand, stock and price-anomaly alerts for the operations team", "Delegated payments using mandate-based protocols such as AP2"],
             ["Product feeds and structured data that AI search and shopping surfaces can read", "Share-of-voice reporting on AI surfaces, such as Google's announced Merchant Center AI performance insights"],
           ],
@@ -195,9 +196,9 @@ export const auCommercePosts2: BlogPost[] = [
         ],
       },
       {
-        heading: "Agent-assisted shopping: what is live, announced and unconfirmed",
+        heading: "Agent-assisted shopping: what is live, limited and unconfirmed",
         body: [
-          "Several protocols now compete to define how AI agents find products and pay for them. Our [[/blogs/acp-vs-ucp-vs-mcp|comparison of ACP, UCP and MCP]] explains how they differ. For an Australian store, the question is narrower: which of them reaches Australian shoppers, and when.",
+          "**Correction (9 October 2026):** an earlier version of this article said agentic checkout was not confirmed live in Australia. Trade press reported in June 2026 that Google's UCP checkout went live here with launch retailers; the table has been updated. Several protocols now compete to define how AI agents find products and pay for them. Our [[/blogs/acp-vs-ucp-vs-mcp|comparison of ACP, UCP and MCP]] explains how they differ. For an Australian store, the question is narrower: which of them reaches Australian shoppers, and when.",
         ],
         table: {
           headers: ["Development", "Who", "Date", "Status for Australia"],
@@ -205,7 +206,7 @@ export const auCommercePosts2: BlogPost[] = [
             ["Agentic Commerce Protocol and Instant Checkout in ChatGPT", "OpenAI with Stripe", "29 Sep 2025", "Launched for US users and US Etsy sellers. Reported in March 2026 to have been scaled back towards merchants' own checkouts (secondary reports)."],
             ["Agent Payments Protocol (AP2)", "Google Cloud with payment partners", "Sep 2025", "An open protocol using signed ‘mandates’. No Australian rollout date found."],
             ["Universal Commerce Protocol (UCP)", "Shopify and Google", "11 Jan 2026", "Announced as an open standard. The Shopify announcement did not mention Australia."],
-            ["UCP-powered checkout on Google", "Google", "20 May 2026", "Google said it ‘will roll out across Canada and Australia in the coming months’. Not confirmed live as of 9 Oct 2026."],
+            ["UCP-powered checkout on Google", "Google", "20 May 2026 (announced); June 2026 (Australia)", "Reported live in Australia from June 2026 for single-item purchases in Search, AI Mode and Gemini with launch retailers ([[https://www.ragtrader.com.au/news/the-iconic-kogan-test-google-s-agentic-ai-checkout|Ragtrader]]). Self-serve Merchant Center onboarding: US first, Australia 'next year' ([[https://support.google.com/merchants/answer/16992327|Google Merchant Center Help]])."],
             ["Merchant Center AI performance insights", "Google", "20 May 2026", "Announced as rolling out in Australia ‘in the coming months’."],
           ],
         },
@@ -213,6 +214,22 @@ export const auCommercePosts2: BlogPost[] = [
           type: "note",
           text: "Under Google's announced model, the retailer remains merchant of record. That means your policies, consumer guarantee obligations and customer service still apply to an order placed through an AI surface.",
         },
+      },
+      {
+        heading: "Do you need to act on agentic commerce now?",
+        body: [
+          "Not every Australian retailer needs to adopt agentic commerce immediately. Checkout inside AI surfaces is live only for a small group of launch retailers, self-serve onboarding is expected next year, and Australia Post's research found most shoppers are wary of agents buying for them. What every store can do now is the readiness work, which also improves ordinary search, feeds and conversion.",
+        ],
+        checklist: [
+          "**Product data:** complete titles, attributes, variants, GS1 GTINs, dimensions and images that match the physical product. See [[/blogs/ecommerce-product-feeds|ecommerce product feeds]].",
+          "**Inventory accuracy:** near real-time stock and delivery estimates, so agents do not sell what you cannot ship.",
+          "**Prices and fees:** GST-inclusive prices consistent across site, feed and checkout; no card surcharges on eftpos, Visa or Mastercard since 1 October 2026.",
+          "**Policies:** clear, machine-readable shipping, returns and warranty terms that reflect consumer guarantees.",
+          "**Payments and fraud:** a payment setup that can support new channels; see [[/blogs/payment-gateway-integration-australia|payment gateway integration in Australia]].",
+          "**Customer trust:** order confirmations, tracking and support that work the same whichever surface the order came from.",
+          "**Measurement:** a way to see AI-referred traffic and orders; see [[/blogs/ai-commerce-analytics|tracking AI-referred sales]].",
+          "**Decision point:** when Merchant Center onboarding opens in Australia, review the terms, test with a subset of products and measure before expanding.",
+        ],
       },
       {
         heading: "A five-layer agent-readiness stack",
@@ -256,7 +273,7 @@ export const auCommercePosts2: BlogPost[] = [
         heading: "Pricing and payments changes that affect AI channels",
         body: [
           "Agents and AI search compare prices programmatically, so any gap between the advertised price and the final price becomes more visible, and more likely to be treated as misleading.",
-          "**Card surcharges:** the Reserve Bank announced on 31 March 2026 that it would remove surcharging on eftpos, Mastercard and Visa debit, prepaid and credit cards, with most changes taking effect from 1 October 2026. Amex, buy now pay later and mobile wallets are not covered by that decision and are subject to further review. Stores still showing a card surcharge line for these networks should remove it and build card costs into prices.",
+          "**Card surcharges:** the Reserve Bank announced on 31 March 2026 that it would remove surcharging on eftpos, Mastercard and Visa debit, prepaid and credit cards, with most changes taking effect from 1 October 2026. The RBA reports that American Express and UnionPay also removed surcharging from 1 October 2026, and PayPal from 5 October 2026, by their own decision rather than RBA regulation; buy now pay later and other methods remain under review. Stores still showing a card surcharge line for these networks should remove it and build card costs into prices.",
           "**Drip pricing:** the Unfair Trading Practices reforms passed Parliament in July 2026, and law-firm summaries from Allens and HWL Ebsworth say the new regime commences on **1 July 2027**. It includes a drip pricing provision requiring transaction-based charges to be shown alongside the base price in a legible, prominent and unambiguous way, and subscription rules requiring easy online cancellation. Until then, the ACCC already pursues misleading price displays under existing law. Check the ACCC and your adviser for specifics.",
           "Our [[/blogs/shopify-development-australia|Shopify development in Australia]] guide covers how these changes land in Shopify checkout and theme work.",
         ],
@@ -301,7 +318,7 @@ export const auCommercePosts2: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "**Australian shopper data:** [[https://auspost.com.au/ecomreport|Australia Post eCommerce Report 2026]] (released 18 March 2026); [[https://www.abs.gov.au/about/cessation-retail-business-survey-and-retail-trade-publication|ABS, cessation of the Retail Trade publication]].",
+          "**Australian shopper data:** [[https://auspost.com.au/business/ecommerce/ecommerce-report|Australia Post eCommerce Report 2026]] (released 18 March 2026); [[https://www.abs.gov.au/about/cessation-retail-business-survey-and-retail-trade-publication|ABS, cessation of the Retail Trade publication]].",
           "**Agentic commerce:** [[https://www.shopify.com/news/ai-commerce-at-scale|Shopify, AI commerce at scale (UCP announcement, 11 January 2026)]]; [[https://blog.google/products-and-platforms/products/shopping/shopping-updates-google-marketing-live|Google, shopping updates from Google Marketing Live (20 May 2026)]].",
           "**Structured data:** [[https://developers.google.com/search/docs/appearance/structured-data/product|Google Search Central, product structured data]].",
           "**Consumer law and payments:** [[https://www.accc.gov.au/business/advertising-and-promotions/online-product-and-service-reviews|ACCC, online product and service reviews]]; [[https://www.allens.com.au/insights-news/insights/2026/07/australias-new-unfair-trading-practices-regime-what-businesses-need-to-know/|Allens, unfair trading practices regime (July 2026)]]; [[https://hwlebsworth.com.au/parliament-passes-unfair-trading-practices-reforms-preparing-for-the-new-regime|HWL Ebsworth, unfair trading practices reforms]]; [[https://rba.gov.au/media-releases/2026/mr-26-10.html|RBA media release 2026-10 (31 March 2026)]].",
@@ -620,7 +637,7 @@ export const auCommercePosts2: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Website accessibility in Australia sits at the meeting point of a technical standard, a discrimination law and plain good design. WCAG 2.2 Level AA gives you a testable target, the DDA explains why it matters legally, and the AHRC's guidelines show how the Commission connects the two. None of that replaces testing with real people.",
+          "Website accessibility in Australia sits at the meeting point of a technical standard, a discrimination law and plain good design. WCAG 2.2 Level AA gives you a testable target, the DDA explains why it matters legally, and the AHRC's guidelines show how the Commission connects the two. None of that replaces testing with real people. For a step-by-step testing method, assistive technology matrix and reporting guidance, see [[/blogs/accessibility-testing-australia|digital accessibility testing in Australia]].",
           "Start with the journeys that matter most, fix the shared components that cause the most issues, test with keyboards and screen readers as well as scanners, and build accessibility into how you design and release. The result is a site that more people can use, and fewer surprises later.",
         ],
         cta: {

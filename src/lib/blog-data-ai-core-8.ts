@@ -20,7 +20,7 @@ export const aiCorePosts8: BlogPost[] = [
     title: "AI Knowledge Base: How to Build an AI Assistant That Uses Company Documents",
     seoTitle: "AI Knowledge Base: Build an Assistant on Company Documents",
     excerpt:
-      "How to build an AI knowledge base assistant: choosing sources, ingestion, permissions, retrieval, cited answers, refusals, feedback loops, content ownership, rollout and measurement.",
+      "How to build an AI knowledge base assistant: sources, permissions, retrieval, cited answers, refusals, feedback, ownership, rollout and privacy considerations.",
     category: "AI & Automation",
     banner: "kbassistant",
     bannerAlt:
@@ -42,7 +42,11 @@ export const aiCorePosts8: BlogPost[] = [
       { q: "How do you measure success?", a: "Answer rate, citation accuracy, user ratings, escalations, time saved for staff, ticket deflection for customer use and the number of content gaps fixed." },
       { q: "What is an internal AI assistant?", a: "An internal AI assistant is a tool for employees that answers questions from the organisation's own documents and systems, such as policies, wikis, shared drives and tickets. It retrieves relevant passages under the employee's own access rights, writes an answer only from them and cites the sources, so staff can check the answer and open the original document." },
       { q: "How is an internal AI assistant different from a general chatbot?", a: "A general chatbot answers from its training data and whatever a user pastes in, with no knowledge of your policies or access rules. An internal AI assistant retrieves from your current company content, filters results by the user's permissions, shows citations and says when it cannot find an answer. That makes it suitable for company-specific questions where a general chatbot would guess." },
-    ],
+          {
+        q: "What should Australian organizations check before launching an AI knowledge base?",
+        a: "Whether the Privacy Act covers them and what personal information the assistant can reach, where the model, vector store and logs are hosted (APP 8), whether any answers feed decisions that significantly affect people (automated decision transparency obligations start on 10 December 2026), and, for customer-facing assistants, that answers about consumer rights are accurate. OAIC guidance on commercially available AI products is a useful starting point.",
+      },
+],
     content: [
       {
         heading: "Quick answer",
@@ -290,6 +294,19 @@ export const aiCorePosts8: BlogPost[] = [
           title: "Planning a knowledge assistant for employees or customers?",
           description: "Talk to ZSpace Labs about [[/services/ai-automation|AI knowledge base development]] and [[/services/ui-ux-design|assistant interface design]].",
         },
+      },
+      {
+        heading: "Australian Organizations: Privacy, Automated Decisions and Consumer Law",
+        body: [
+          "The architecture is the same everywhere, but Australian organizations should check a few local points before launch.",
+        ],
+        checklist: [
+          "**Privacy Act:** if your organization is covered, the OAIC says privacy obligations apply to personal information entered into AI systems and to outputs that contain it, and recommends due diligence on AI products ([[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products|OAIC]]). Keep personal information out of the knowledge base unless it is needed and permissioned.",
+          "**Overseas processing:** where the model, vector database or logs are hosted outside Australia, APP 8 may apply. Check vendor hosting and sub-processors, including for embeddings and evaluation tools.",
+          "**Automated decisions:** from 10 December 2026, privacy policies of covered organizations must describe the kinds of decisions made by computer programs that could significantly affect individuals' rights or interests. An internal assistant that only answers questions is unlikely to be such a decision, but one that decides eligibility or outcomes may be. Get advice.",
+          "**Customer-facing answers:** answers given to customers are the business's representations under the Australian Consumer Law, so test answers about refunds, warranties and pricing carefully and hand off to people when unsure. See [[/blogs/ai-customer-service-australia|AI customer service in Australia]].",
+          "**Governance:** see [[/blogs/ai-governance-australia|AI governance for Australian businesses]] for policies, vendor checks and monitoring.",
+        ],
       },
       {
         heading: "Conclusion",

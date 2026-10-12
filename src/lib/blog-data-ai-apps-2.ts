@@ -16,14 +16,14 @@ export const aiAppsPosts2: BlogPost[] = [
     title: "AI Software Testing: How to Automate Test Creation and Execution",
     seoTitle: "AI Software Testing: Planning, Generation, CI and Triage",
     excerpt:
-      "How AI fits into software testing: test planning from requirements, generating unit, integration and end-to-end tests, running them in CI, triaging failures, flaky tests, test maintenance and the limits of AI-written tests.",
+      "How AI fits into software testing: tests from requirements, generated tests, CI triage, flaky tests, AI vs traditional QA and what tests cannot prove.",
     category: "AI & Automation",
     banner: "aitestpipeline",
     bannerAlt:
       "AI testing pipeline: requirements, test plan, generate tests, run in CI, triage failures (highlighted), maintain; the note says a generated test is only useful if it can fail for the right reason.",
     date: "2026-10-02",
-    updated: "2026-10-08",
-    readingTime: "8 min read",
+    updated: "2026-10-09",
+    readingTime: "10 min read",
     relatedServiceSlugs: ["website-development", "mobile-app-development"],
     relatedIndustrySlugs: ["saas-technology", "fintech"],
     relatedSlugs: ["ai-test-generation", "ai-debugging", "ai-code-review"],
@@ -36,7 +36,11 @@ export const aiAppsPosts2: BlogPost[] = [
       { q: "Does AI testing replace QA engineers?", a: "No. QA expertise shifts toward test strategy, exploratory testing, risk analysis, accessibility and reviewing generated tests." },
       { q: "How do you know AI-generated tests are good?", a: "Check that they assert specific behaviour, cover edge and error cases, avoid unnecessary mocks and actually fail when the behaviour breaks, for example using mutation testing." },
       { q: "Is AI testing useful for mobile apps?", a: "Yes, for unit and UI test drafting and failure triage, while device coverage, performance and real-world conditions still need dedicated testing; see the mobile app testing guide." },
-    ],
+          {
+        q: "Can AI-generated tests prove our application has no bugs?",
+        a: "No. Tests, however they are written, only check the behavior and conditions they cover. AI-generated tests can also confirm existing bugs if they are derived from current code. Treat them as drafts that engineers review, check that they can fail, and combine them with exploratory, accessibility, security and user testing.",
+      },
+],
     content: [
       {
         heading: "Quick answer",
@@ -193,9 +197,43 @@ export const aiAppsPosts2: BlogPost[] = [
         },
       },
       {
+        heading: "AI-Assisted Testing vs Traditional QA",
+        body: [
+          "AI-assisted testing changes how tests are written and maintained; it does not replace the purpose of QA, which is to give evidence that software does what it should for the people who use it.",
+        ],
+        table: {
+          headers: ["", "Traditional QA", "AI-assisted testing"],
+          rows: [
+            ["Test design", "People derive cases from requirements and risk", "AI drafts cases; people confirm intended behavior"],
+            ["Implementation", "Engineers write test code", "AI drafts code; engineers review and own it"],
+            ["Exploratory testing", "Testers' curiosity and domain knowledge", "AI suggests charters and inputs; humans judge"],
+            ["Triage", "Engineers read logs and reproduce", "AI summarizes and groups; engineers decide"],
+            ["Accountability", "Team owns quality", "Unchanged: the team owns quality"],
+          ],
+        },
+      },
+      {
+        heading: "What AI-Generated Tests Cannot Prove",
+        body: [
+          "Passing tests show that the checked behavior works in the checked conditions. They cannot show that software is defect-free, that requirements were right, or that untested paths work. AI-generated tests add a specific risk: tests derived from current code tend to confirm what the code does, including its bugs. Use mutation testing or fault injection on critical modules to check that tests can fail, keep human review of test intent, and combine automated suites with exploratory, accessibility, security and user testing. For accessibility, see [[/blogs/accessibility-testing-australia|digital accessibility testing]].",
+        ],
+      },
+      {
+        heading: "Questions to Ask a Testing Partner",
+        body: [],
+        checklist: [
+          "Which parts of testing do you use AI for, and how is every generated test reviewed?",
+          "How do you check that tests can fail (for example, mutation testing)?",
+          "How do you stop tests being weakened to make builds pass?",
+          "What test data do you use, and do you ever use production personal data?",
+          "Which tests stay in our repositories and frameworks if we change supplier?",
+          "How do you report coverage of risks, not just lines of code?",
+        ],
+      },
+      {
         heading: "Conclusion",
         body: [
-          "AI can speed up every stage of testing, but correctness still comes from requirements and human judgement. Generate from specifications, check that tests can fail and protect suites from silent weakening. Related: [[/blogs/ai-test-generation|AI test generation]] and [[/blogs/ai-debugging|AI debugging]].",
+          "AI can speed up every stage of testing, but correctness still comes from requirements and human judgement. Generate from specifications, check that tests can fail and protect suites from silent weakening. Related: [[/blogs/ai-test-generation|AI test generation]] and [[/blogs/ai-debugging|AI debugging]]. For risk-based regression suites, see [[/blogs/automated-regression-testing|automated regression testing]].",
         ],
       },
     ],

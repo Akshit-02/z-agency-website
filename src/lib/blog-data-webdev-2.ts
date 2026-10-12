@@ -136,7 +136,7 @@ export const webDevPosts2: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Choosing a website development company is a due-diligence process, not a gut-feel decision — relevant experience, a documented process, clear communication and explicit ownership terms are what separate a smooth project from a frustrating one. Use the questions above as a starting checklist for any vendor conversation. Hiring in Australia? See [[/blogs/web-development-company-australia|how to choose a web development company in Australia]].",
+          "Choosing a website development company is a due-diligence process, not a gut-feel decision — relevant experience, a documented process, clear communication and explicit ownership terms are what separate a smooth project from a frustrating one. Use the questions above as a starting checklist for any vendor conversation. Hiring in Australia? See [[/blogs/web-development-company-australia|how to choose a web development company in Australia]]. For larger custom builds commissioned from the UK, see [[/blogs/custom-software-development-uk|our UK custom software buyer's guide]].",
         ],
       },
     ],
@@ -273,7 +273,7 @@ export const webDevPosts2: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A requirements document isn't bureaucratic overhead — it's the single artifact most likely to prevent scope disputes, missed features and misaligned expectations later in a project. Even a lightweight version for a small site pays for itself many times over in avoided rework.",
+          "A requirements document isn't bureaucratic overhead — it's the single artifact most likely to prevent scope disputes, missed features and misaligned expectations later in a project. Even a lightweight version for a small site pays for itself many times over in avoided rework. For software products rather than websites, see [[/blogs/product-requirements-document|product requirements documents]].",
         ],
       },
     ],

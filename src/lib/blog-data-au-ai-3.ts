@@ -385,7 +385,8 @@ TOTALS
     sceneKind: "security",
     bannerAlt: "A governance framework for business AI use, showing a register of AI uses, risk assessment, vendor checks, human oversight, monitoring and incident response connected in a review loop",
     date: "2026-10-09",
-    readingTime: "18 min read",
+    updated: "2026-10-09",
+    readingTime: "19 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["professional-services", "healthcare-healthtech", "fintech", "b2b-enterprise", "retail"],
     relatedSlugs: ["ai-governance-framework", "ai-data-privacy", "ai-agent-governance"],
@@ -398,7 +399,11 @@ TOTALS
       { q: "Can staff put customer information into public AI tools?", a: "The OAIC recommends that organisations do not enter personal information, and particularly sensitive information, into publicly available generative AI tools, because of the significant and complex privacy risks. A sensible staff policy names the approved tools, says which data classes each may receive, requires business accounts with appropriate data terms, and gives staff a quick way to ask before using something new." },
       { q: "Who owns content created with AI?", a: "It is not fully settled in Australia. Whether, and when, material generated with AI attracts copyright protection has been under consideration by the Government's Copyright and AI Reference Group, as reported. Do not assume you own exclusive rights in purely AI-generated output, check your AI provider's terms, and get legal advice for material that matters commercially. Code written by contractors needs a written assignment to transfer copyright." },
       { q: "Do we have to report an AI incident?", a: "There is no AI-specific reporting duty, but existing ones apply. If an incident involves personal information and is likely to result in serious harm, the Notifiable Data Breaches scheme requires covered organisations to notify affected individuals and the OAIC. Businesses with turnover over AUD 3 million that make a ransomware or cyber extortion payment must report it to ASD within 72 hours. Contracts and sector rules may add more." },
-    ],
+          {
+        q: "What is the minimum AI governance a small Australian business needs?",
+        a: "A short written policy naming who is accountable, which tools and uses are approved, what data may be entered, how vendors are checked, which outputs a person must review, and when the policy is reviewed. Add Privacy Act obligations if they apply, and the automated decision transparency rule from 10 December 2026 if AI is used in significant decisions about people.",
+      },
+],
     content: [
       {
         heading: "What does AI governance mean for an Australian business?",
@@ -636,6 +641,24 @@ TOTALS
           "**Leaving the 10 December 2026 change until December.** Identifying automated decisions takes time.",
           "**Assuming you own AI output.** Copyright in AI-generated material is unsettled; contractor work needs a written assignment.",
         ],
+      },
+      {
+        heading: "A one-page minimum for small businesses",
+        body: [
+          "If a full governance programme is out of reach, start with one page that answers six questions. They map loosely to the six practices in the National AI Centre's Guidance for AI Adoption (AI6, October 2025), which is voluntary.",
+        ],
+        checklist: [
+          "**Accountability:** who owns AI use in the business, and who approves new tools?",
+          "**Approved uses:** which tools may staff use, for which tasks, and which uses are banned (for example, entering customer personal information into public AI tools)?",
+          "**Data handling:** what data may go into which tools, and where is it processed and stored?",
+          "**Vendor checks:** which questions must a vendor answer before approval (data use for training, location, security, contract terms)?",
+          "**Verification and human oversight:** which outputs must a person check before they reach customers, and who decides when AI is involved in decisions about people?",
+          "**Review:** when will you review incidents, complaints and the tool list, at least every six months?",
+        ],
+        callout: {
+          type: "note",
+          text: "Australian Government agencies are subject to the Digital Transformation Agency's policy for the responsible use of AI in government, which includes mandatory requirements for agencies. It does not apply to private businesses directly, but may flow through to suppliers via contracts.",
+        },
       },
       {
         heading: "Sources",

@@ -192,7 +192,7 @@ export const commercePosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Internal linking is store architecture made visible. Build the hierarchy, decide what each template links to, connect related products and content, keep links crawlable and current, and audit regularly. For the broader SEO system, see [[/blogs/ecommerce-seo|ecommerce SEO]].",
+          "Internal linking is store architecture made visible. Build the hierarchy, decide what each template links to, connect related products and content, keep links crawlable and current, and audit regularly. For the broader SEO system, see [[/blogs/ecommerce-seo|ecommerce SEO]]. When several pages compete for the same query, see [[/blogs/content-cannibalization-audit|content cannibalisation audits]].",
         ],
       },
     ],

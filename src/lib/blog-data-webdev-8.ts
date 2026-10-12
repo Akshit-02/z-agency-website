@@ -359,7 +359,7 @@ export const webDevPosts8: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A reliable CRM integration captures every lead with its source, avoids duplicates, keeps credentials secure, and never fails silently. For the technical foundations shared with other integrations, see the [[/blogs/website-api-integration|website API integration guide]].",
+          "A reliable CRM integration captures every lead with its source, avoids duplicates, keeps credentials secure, and never fails silently. For the technical foundations shared with other integrations, see the [[/blogs/website-api-integration|website API integration guide]]. If you are deciding whether to buy, extend or build a CRM in the first place, see [[/blogs/custom-crm-development-australia|custom CRM vs off-the-shelf CRM]].",
           "For related guides, see [[/blogs/ecommerce-crm-integration|ecommerce CRM integration]] and [[/blogs/b2b-ecommerce-crm-integration|B2B ecommerce CRM integration]].",
         ],
       },
@@ -480,7 +480,7 @@ export const webDevPosts8: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A dependable payment integration keeps card data with the gateway, sets amounts server-side, treats webhooks as the source of truth, and handles failures and refunds cleanly. If you sell primarily products online, a commerce platform may handle most of this for you; see ZSpace Labs' [[/services/shopify-development|Shopify development]] work. For payments inside a mobile app, including in-app purchase rules, see [[/blogs/mobile-app-payments|mobile app payments]].",
+          "A dependable payment integration keeps card data with the gateway, sets amounts server-side, treats webhooks as the source of truth, and handles failures and refunds cleanly. If you sell primarily products online, a commerce platform may handle most of this for you; see ZSpace Labs' [[/services/shopify-development|Shopify development]] work. For payments inside a mobile app, including in-app purchase rules, see [[/blogs/mobile-app-payments|mobile app payments]]. Integrating payments in Australia? See [[/blogs/payment-gateway-integration-australia|payment gateway integration in Australia]] for the October 2026 surcharging change, least-cost routing and PayTo.",
           "For related guides, see [[/blogs/ecommerce-payment-gateway-integration|ecommerce payment gateway integration]].",
         ],
       },
@@ -599,7 +599,8 @@ export const webDevPosts8: BlogPost[] = [
     category: "Web Development",
     banner: "segmentsplit",
     date: "2026-09-24",
-    readingTime: "11 min read",
+    updated: "2026-10-09",
+    readingTime: "12 min read",
     relatedServiceSlugs: ["mobile-app-development", "website-development"],
     relatedIndustrySlugs: ["ecommerce", "fintech", "travel-hospitality"],
     faqs: [
@@ -610,6 +611,8 @@ export const webDevPosts8: BlogPost[] = [
       { q: "Which is better for push notifications?", a: "Native apps. PWAs support push, but on iOS only after the user installs the PWA to the home screen, which limits reach." },
       { q: "Do I need to be in the app stores?", a: "If users expect to find you there, or you need store features like in-app purchases, yes. If most discovery happens through search and your website, a PWA may be enough." },
       { q: "What about cross-platform frameworks?", a: "Frameworks like React Native or Flutter build native apps for iOS and Android from shared code. They sit between PWAs and fully separate native apps on cost and capability." },
+      { q: "Do PWAs work on iPhone now?", a: "Yes, with limits. Since iOS 16.4, web apps added to the Home Screen can receive web push notifications, iOS 18.4 added Declarative Web Push for those apps, and in iOS 26 Safari opens any site added to the Home Screen as a web app by default. Some capabilities available to native apps, such as many background tasks, are still not available to web apps." },
+      { q: "Does a PWA need to be in the App Store or Google Play?", a: "No. A PWA is installed from the browser. Some teams also wrap a PWA for store distribution, but store policies apply to wrapped apps, and Apple's review guidelines expect apps to offer more than a repackaged website. If store presence is essential, plan for a genuine app experience." },
       { q: "Can I start with a PWA and build native later?", a: "Yes. It's a reasonable way to validate demand. Plan the backend as a shared API so a later native app can reuse it." },
     ],
     content: [
@@ -665,6 +668,38 @@ export const webDevPosts8: BlogPost[] = [
         heading: "Device Access and Notifications",
         body: [
           "If your product relies on background location, Bluetooth hardware, advanced camera processing, deep OS integration or dependable push on iPhone, native is usually required. PWAs cover cameras, geolocation and notifications to a degree, with more limits on iOS.",
+          "The iOS position has improved, so check current behavior rather than older articles. Since iOS 16.4, web apps added to the Home Screen can use web push. WebKit added Declarative Web Push for Home Screen web apps in iOS and iPadOS 18.4 ([[https://webkit.org/blog/16574/webkit-features-in-safari-18-4/|WebKit]]). And from iOS 26, Safari opens every site a user adds to the Home Screen as a web app by default, with an option to turn that off ([[https://webkit.org/blog/16993/news-from-wwdc25-web-technology-coming-this-fall-in-safari-26-beta/|WebKit]]). The constraint that remains is reach: push on iPhone still requires the user to add the web app to the Home Screen first, which many users never do.",
+        ],
+      },
+      {
+        heading: "Capability Check: What Each Option Can Do Today",
+        body: [
+          "Use this as a starting point and verify each capability your product depends on against current platform documentation, because browser support changes with each release.",
+        ],
+        table: {
+          headers: ["Capability", "PWA on Android (Chrome)", "PWA on iPhone (Safari)", "Native app"],
+          rows: [
+            ["Install to home screen", "Yes, with install prompt", "Yes, via Share > Add to Home Screen", "Via app store"],
+            ["Push notifications", "Yes", "Yes, after Home Screen install (iOS 16.4+)", "Yes"],
+            ["Offline use", "Yes, via service worker", "Yes, via service worker; storage limits apply", "Yes, full local storage"],
+            ["Camera and geolocation", "Yes, while in use", "Yes, while in use", "Yes, including background location with permission"],
+            ["Background sync and tasks", "Partial", "Limited", "Yes, within OS rules"],
+            ["Bluetooth and NFC hardware", "Some APIs in Chromium browsers", "Generally not available", "Yes"],
+            ["In-app purchases via store billing", "No (web payments instead)", "No (web payments instead)", "Yes"],
+          ],
+        },
+      },
+      {
+        heading: "Total Cost of Ownership",
+        body: [
+          "Compare the full lifecycle, not just the first build. A PWA has one codebase, no store review cycle and instant updates, but you still need good offline handling, performance work and testing on real devices and browsers. A native or cross-platform app adds store accounts and fees, review cycles, yearly SDK and target API deadlines, and support for older app versions in the field. Store service fees on digital goods and subscriptions also apply to native apps but not to web payments, which matters for some business models.",
+          "For maintenance obligations on the native side, see [[/blogs/mobile-app-maintenance|mobile app maintenance]]. Australian businesses budgeting either option can use the lifecycle model in [[/blogs/mobile-app-development-cost-australia|mobile app development cost in Australia]].",
+        ],
+      },
+      {
+        heading: "Accessibility and User Experience",
+        body: [
+          "Both options can be accessible, and both can fail. Native apps inherit platform accessibility features when built with standard components; PWAs inherit the web's accessibility model and must follow WCAG. In both cases, test with screen readers, larger text settings and keyboard or switch access, and avoid custom controls that hide meaning from assistive technology. See [[/blogs/accessible-ui-ux-design|accessible UI/UX design]].",
         ],
       },
       {
@@ -685,6 +720,8 @@ export const webDevPosts8: BlogPost[] = [
           "Limited budget and need for all platforms quickly: PWA",
           "Frequent, reliable push is central to the product: native",
           "Validating demand before a larger investment: start with a PWA",
+          "iPhone users must get notifications without installing anything: native",
+          "You sell digital goods or subscriptions and want to avoid store billing: consider web payments in a PWA, within store rules if you also have an app",
         ],
         cta: {
           title: "Want to scope the right mobile approach?",

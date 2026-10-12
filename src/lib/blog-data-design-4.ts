@@ -483,7 +483,7 @@ export const designPosts4: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Heuristic evaluation is one of the fastest ways to find usability problems: independent evaluators, a shared set of principles, two passes, merged findings and severity ratings. Use it early and often, and pair it with usability testing for the issues that matter most. For how it fits into a complete review, see the [[/blogs/ux-audit|UX audit guide]].",
+          "Heuristic evaluation is one of the fastest ways to find usability problems: independent evaluators, a shared set of principles, two passes, merged findings and severity ratings. Use it early and often, and pair it with usability testing for the issues that matter most. For how it fits into a complete review, see the [[/blogs/ux-audit|UX audit guide]]. To manage findings over time, see [[/blogs/ux-debt|UX debt]].",
         ],
       },
     ],

@@ -385,7 +385,7 @@ export const aiAppsPosts4: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "AI procurement automation structures requests, applies policy consistently and speeds vendor work, while buyers and approvers keep decisions. Related: [[/blogs/ai-invoice-processing|AI invoice processing]] and [[/blogs/ai-expense-management|AI expense management]].",
+          "AI procurement automation structures requests, applies policy consistently and speeds vendor work, while buyers and approvers keep decisions. Related: [[/blogs/ai-invoice-processing|AI invoice processing]] and [[/blogs/ai-expense-management|AI expense management]]. For the portal suppliers use, see [[/blogs/supplier-portal-development|supplier portal development]].",
         ],
       },
     ],

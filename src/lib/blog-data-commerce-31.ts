@@ -478,7 +478,7 @@ export const commercePosts31: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Accurate inventory online depends on one source of truth, fast events, available (not on-hand) quantities, deliberate allocation and constant reconciliation. For the wider integration picture, see [[/blogs/ecommerce-api-integration|ecommerce API integration]].",
+          "Accurate inventory online depends on one source of truth, fast events, available (not on-hand) quantities, deliberate allocation and constant reconciliation. For the wider integration picture, see [[/blogs/ecommerce-api-integration|ecommerce API integration]]. Deciding whether to buy or build the inventory system itself? See [[/blogs/inventory-management-software-australia|inventory management software in Australia]].",
           "Related: [[/blogs/ecommerce-shipping-integration|shipping integration]] and [[/blogs/b2b-ecommerce-erp-integration|B2B ERP integration]].",
           "For related guides, see [[/blogs/ecommerce-order-management-system|order management systems]] and [[/blogs/ecommerce-fulfillment-technology|fulfilment technology]].",
         ],

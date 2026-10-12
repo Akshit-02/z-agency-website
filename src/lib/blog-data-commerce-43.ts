@@ -315,7 +315,7 @@ export const commercePosts43: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Technical debt is manageable when it's visible, described in business terms, prioritized by impact and paid down continuously. Prevent new debt with standards and ownership. For planning the larger changes debt sometimes demands, see [[/blogs/ecommerce-technology-modernization-roadmap|ecommerce technology modernization roadmap]].",
+          "Technical debt is manageable when it's visible, described in business terms, prioritized by impact and paid down continuously. Prevent new debt with standards and ownership. For planning the larger changes debt sometimes demands, see [[/blogs/ecommerce-technology-modernization-roadmap|ecommerce technology modernization roadmap]]. For a full review method beyond stores, see [[/blogs/software-architecture-review|software architecture review and technical debt assessment]].",
         ],
       },
     ],

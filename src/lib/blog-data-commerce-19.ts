@@ -492,7 +492,7 @@ export const commercePosts19: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A good wholesale site makes ordering in volume easy for retailers and saves your team from manual order entry: vetted accounts, clear wholesale pricing, grids and case packs, pre-orders, terms and fast reorders. For workflow design, see [[/blogs/wholesale-ecommerce-ux|wholesale ecommerce UX]].",
+          "A good wholesale site makes ordering in volume easy for retailers and saves your team from manual order entry: vetted accounts, clear wholesale pricing, grids and case packs, pre-orders, terms and fast reorders. For workflow design, see [[/blogs/wholesale-ecommerce-ux|wholesale ecommerce UX]]. Selling to Australian trade customers? [[/blogs/b2b-portal-development-australia|B2B portal development in Australia]] covers GST display, ATO tax invoice rules, Peppol and freight.",
           "Related: [[/blogs/b2b-ecommerce-customer-portal|B2B customer portal]] and [[/blogs/b2b-ecommerce-website-design|B2B website design]].",
         ],
       },

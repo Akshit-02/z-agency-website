@@ -483,11 +483,12 @@ export const mobilePosts3: BlogPost[] = [
     slug: "mobile-app-maintenance",
     title: "Mobile App Maintenance: What Happens After Launch?",
     excerpt:
-      "Why app development doesn't end at launch: bug fixes, OS and dependency updates, security, monitoring, analytics, crash reporting, API changes and store requirements.",
+      "Why app work doesn't end at launch: fixes, OS and store updates, dependencies, security, monitoring, hotfixes, backups and what a maintenance agreement covers.",
     category: "Mobile Apps",
     banner: "cycle",
     date: "2026-09-25",
-    readingTime: "12 min read",
+    updated: "2026-10-09",
+    readingTime: "13 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["fintech", "ecommerce", "healthcare-healthtech"],
     faqs: [
@@ -499,6 +500,8 @@ export const mobilePosts3: BlogPost[] = [
       { q: "How do store requirements affect maintenance?", a: "Google Play requires apps to target a recent Android API level, and Apple periodically raises minimum Xcode and SDK versions for submissions. Meeting these requires ongoing work." },
       { q: "Who should maintain the app?", a: "An internal team, the original development partner or a dedicated provider. What matters is that ownership is explicit and the code is documented." },
       { q: "How should maintenance be budgeted?", a: "As an ongoing cost from the start, covering platform updates, monitoring, fixes and improvements, rather than as an afterthought." },
+      { q: "What should a mobile app maintenance agreement include?", a: "Scope (what counts as maintenance versus new features), response and resolution times by severity, support hours and time zone, how releases and hotfixes are handled, who owns accounts and code, monitoring and reporting, a security patching commitment, pricing (retainer, hours bank or per request) and exit and handover terms." },
+      { q: "What happens when a critical bug reaches production?", a: "A good process confirms impact from monitoring, decides whether to pause a staged rollout, fixes and tests a hotfix, submits it with an expedited review request if needed, and communicates with affected users. Server-side feature flags help by letting teams switch off a broken feature without waiting for a new app release." },
     ],
     content: [
       {
@@ -536,6 +539,7 @@ export const mobilePosts3: BlogPost[] = [
         heading: "OS and Store Requirement Updates",
         body: [
           "When Apple and Google release major OS versions, test the app on them, adopt required changes and fix anything that breaks. Google Play requires new apps and updates to target an API level within a year of the latest major Android release, and restricts visibility of older apps to users on newer Android versions. Apple periodically raises the minimum Xcode and SDK versions required to submit.",
+          "Current examples: apps uploaded to App Store Connect since 28 April 2026 must be built with Xcode 26 and the iOS 26 SDK, and since 9 September 2026 iOS apps must target iOS 13 or later ([[https://developer.apple.com/news/upcoming-requirements/|Apple]]). From 31 August 2026, new Android apps and updates must target Android 16 (API level 36), with an extension to 1 November 2026 available on request ([[https://developer.android.com/google/play/requirements/target-sdk|Android Developers]]). Put these dates in your maintenance calendar each year.",
         ],
         visual: { variant: "pulse", accent: "orange", caption: "OS releases, store policies and dependencies change on their own schedules; maintenance keeps the app in step." },
       },
@@ -568,6 +572,47 @@ export const mobilePosts3: BlogPost[] = [
         ],
       },
       {
+        heading: "Hotfixes and Incident Response",
+        body: [
+          "Production incidents are part of running an app. Prepare before they happen: staged rollouts so a bad release reaches a small share of users first, server-side feature flags to switch off a broken feature without a new release, a documented hotfix path, and a contact list for the store developer accounts. Apple allows developers to request an expedited review for critical fixes, though approval is not guaranteed.",
+          "If an incident involves personal information, follow your data breach process. In Australia, businesses covered by the Privacy Act must assess suspected eligible data breaches and notify the regulator and affected people when serious harm is likely; see [[/blogs/website-security-australia|website security for Australian small businesses]] for the incident sequence.",
+        ],
+      },
+      {
+        heading: "Backend, Backups and Recovery",
+        body: [
+          "The app on the device is only half the system. Maintain the backend as well: patch servers and runtimes, rotate secrets, monitor API error rates and latency, and back up databases and uploaded files. Test backups by restoring them; a backup that has never been restored is an assumption. Agree recovery objectives: how much data the business can afford to lose and how long the service can be down.",
+        ],
+      },
+      {
+        heading: "What to Put in a Maintenance Agreement",
+        body: [
+          "Whether maintenance is done by an internal team or a partner, write it down. A useful agreement covers:",
+        ],
+        table: {
+          headers: ["Item", "What to agree"],
+          rows: [
+            ["Scope", "What is maintenance (fixes, OS and store updates, dependency and security updates) and what is a new feature"],
+            ["Severity levels", "Definitions, for example critical, high, normal, low"],
+            ["Response and resolution times", "Per severity, during and outside support hours"],
+            ["Support hours and time zone", "When the team is reachable, and how out-of-hours emergencies are handled and priced"],
+            ["Release process", "Testing, staged rollout, rollback and who approves releases"],
+            ["Monitoring and reporting", "Which dashboards are watched and how often you receive a summary"],
+            ["Security", "Patching timeframes for critical vulnerabilities; incident cooperation"],
+            ["Ownership", "Code, signing keys, store accounts and cloud accounts belong to the business"],
+            ["Pricing", "Retainer, hours bank or per request, and how unused hours are treated"],
+            ["Exit", "Handover documentation and transition support if the agreement ends"],
+          ],
+        },
+      },
+      {
+        heading: "Planning the Maintenance Budget",
+        body: [
+          "There is no reliable percentage that fits every app, so budget by component: hosting and third-party services, store accounts, monitoring and crash reporting tools, scheduled OS and store updates, dependency and security updates, a bug-fix allowance, support hours and planned improvements. Apps with many integrations, third-party SDKs or sensitive data need more. Ask for a maintenance quote before signing the build contract, so the long-term cost is part of the decision.",
+          "Australian businesses can find a lifecycle budget model, GST and store fee considerations in [[/blogs/mobile-app-development-cost-australia|mobile app development cost in Australia]], and support-hour and contract questions in [[/blogs/mobile-app-development-company-australia|choosing a mobile app development company in Australia]].",
+        ],
+      },
+      {
         heading: "Long-Term Maintenance",
         body: [
           "Make ownership explicit, keep documentation current, track technical debt, and plan periodic reviews of architecture and dependencies. A well-maintained app rarely needs a full rebuild; a neglected one usually does. The [[/blogs/mobile-app-development-process|development process guide]] shows how maintenance feeds back into the product cycle.",
@@ -583,6 +628,9 @@ export const mobilePosts3: BlogPost[] = [
           "Dependencies and SDKs updated on a regular cadence",
           "Security patches applied promptly",
           "Privacy disclosures kept accurate as features change",
+          "Store deadlines (Xcode/SDK minimums, Android target API level) in the calendar",
+          "Staged rollouts, feature flags and a hotfix path ready",
+          "Backend patched, backups restored in a test, secrets rotated",
           "Older app versions monitored and a minimum version policy defined",
           "Analytics reviewed and improvements prioritized",
           "Documentation and ownership kept current",
@@ -595,7 +643,7 @@ export const mobilePosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "An app is a living product on platforms that keep changing. Maintenance keeps it working, secure, compliant and improving. Budget for it from the start and treat launch as the beginning of the product's life, not the end of the project. For how this fits the whole build, see [[/blogs/mobile-app-development-guide|the mobile app development guide]].",
+          "An app is a living product on platforms that keep changing. Maintenance keeps it working, secure, compliant and improving. Budget for it from the start and treat launch as the beginning of the product's life, not the end of the project. For how this fits the whole build, see [[/blogs/mobile-app-development-guide|the mobile app development guide]]. For the contract terms behind a maintenance plan in Australia, see [[/blogs/software-maintenance-contracts-australia|software maintenance contracts]]. When maintenance is no longer enough, see [[/blogs/mobile-app-modernization|mobile app modernisation]]. For shipping updates safely, see [[/blogs/mobile-app-release-management|mobile app release management]].",
         ],
       },
     ],

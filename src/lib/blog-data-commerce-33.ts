@@ -436,7 +436,8 @@ export const commercePosts33: BlogPost[] = [
     bannerAlt:
       "Seller dashboard mock-up: a sidebar with overview, orders, products, inventory, payouts, messages, returns and settings; a header with store status, account health and next payout; tiles for orders to ship, late shipments, low stock and unread messages; a chart of sales, orders and returns; panels for listing issues to fix and payout statement with fees; and a link to policies, help and marketplace support.",
     date: "2026-09-29",
-    readingTime: "17 min read",
+    updated: "2026-10-10",
+    readingTime: "18 min read",
     relatedServiceSlugs: ["ui-ux-design", "website-development", "mobile-app-development"],
     relatedIndustrySlugs: ["ecommerce", "retail"],
     faqs: [
@@ -591,6 +592,19 @@ export const commercePosts33: BlogPost[] = [
           title: "Ready to design or rebuild your seller dashboard?",
           description: "Talk to ZSpace Labs about [[/services/ui-ux-design|seller dashboard UX]], [[/services/website-development|marketplace development]] and [[/services/mobile-app-development|seller mobile apps]].",
         },
+      },
+      {
+        heading: "Seller Data for Australian Marketplaces",
+        body: [
+          "Australian marketplaces often need seller data that generic dashboards omit.",
+        ],
+        checklist: [
+          "ABN and GST registration status for business sellers, with validation.",
+          "Transaction data the platform may need for ATO sharing economy reporting, depending on the model; see [[/blogs/marketplace-development-australia|marketplace development in Australia]].",
+          "Payout reports that reconcile to the payment provider, including fees and refunds.",
+          "Clear display of each seller's returns policy, consistent with consumer guarantees; see [[/blogs/ecommerce-returns-australia|ecommerce returns in Australia]].",
+          "Permissions for seller team members, with MFA.",
+        ],
       },
       {
         heading: "Conclusion",

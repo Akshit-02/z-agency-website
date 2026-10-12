@@ -256,7 +256,7 @@ export const commercePosts18: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A marketplace is a two-sided product plus an operations product. Choose the model, build seller onboarding, catalog rules, split orders, payments and trust systems deliberately, and launch narrow enough to reach liquidity. For the UX of each side, see [[/blogs/multi-vendor-ecommerce-ux|multi-vendor ecommerce UX]].",
+          "A marketplace is a two-sided product plus an operations product. Choose the model, build seller onboarding, catalog rules, split orders, payments and trust systems deliberately, and launch narrow enough to reach liquidity. For the UX of each side, see [[/blogs/multi-vendor-ecommerce-ux|multi-vendor ecommerce UX]]. Launching in Australia? [[/blogs/marketplace-development-australia|Marketplace development in Australia]] covers ATO platform reporting, GST and consumer law.",
         ],
       },
     ],

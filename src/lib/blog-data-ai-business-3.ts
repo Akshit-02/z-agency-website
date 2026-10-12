@@ -358,7 +358,7 @@ export const aiBusinessPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Agents will make mistakes; the difference between a minor incident and a serious one is preparation. Detect outcomes, keep a tested kill switch and degraded modes, log every action so it can be reversed, contain before investigating, and fix the control that failed. Then practise, so the plan works when it matters.",
+          "Agents will make mistakes; the difference between a minor incident and a serious one is preparation. Detect outcomes, keep a tested kill switch and degraded modes, log every action so it can be reversed, contain before investigating, and fix the control that failed. Then practise, so the plan works when it matters. For organisation-wide cyber incidents in Australia, including reporting obligations, see [[/blogs/cyber-incident-response-plan-australia|cyber incident response planning]].",
           "The detail behind two steps of this plan is covered separately: [[/blogs/ai-agent-rollback|how to safely undo autonomous actions]] and [[/blogs/ai-agent-audit-trail|how to build an audit trail for agent actions]].",
         ],
       },

@@ -163,7 +163,7 @@ export const mobilePosts5: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Good app analytics starts with questions and a documented tracking plan, focuses on activation, retention, conversion and quality, analyzes cohorts rather than totals, and respects privacy. For the wider build context, see the [[/blogs/mobile-app-development-guide|mobile app development guide]].",
+          "Good app analytics starts with questions and a documented tracking plan, focuses on activation, retention, conversion and quality, analyzes cohorts rather than totals, and respects privacy. For the wider build context, see the [[/blogs/mobile-app-development-guide|mobile app development guide]]. For web and SaaS products, see [[/blogs/product-analytics-implementation-australia|product analytics implementation]], which also covers Australian privacy guidance on tracking. For measuring the store listing itself, see [[/blogs/app-store-optimization|app store optimisation]].",
         ],
       },
     ],
@@ -178,7 +178,8 @@ export const mobilePosts5: BlogPost[] = [
     category: "Mobile Apps",
     banner: "crashflow",
     date: "2026-09-25",
-    readingTime: "12 min read",
+    updated: "2026-10-10",
+    readingTime: "13 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["fintech", "ecommerce", "media-entertainment"],
     faqs: [
@@ -191,7 +192,11 @@ export const mobilePosts5: BlogPost[] = [
       { q: "How do you prioritize crashes?", a: "By the number of users affected, severity (does it block a core flow or payment?), trend (new or growing), and which app versions and devices are involved." },
       { q: "How do staged rollouts help?", a: "Releasing to a small percentage of users first lets you spot new crashes before everyone is affected, then pause or fix before expanding." },
       { q: "Should crash reports include user data?", a: "Only what's needed to debug, and no sensitive personal data. Review what your crash SDK captures and disclose it in store privacy declarations." },
-    ],
+          {
+        q: "What should we monitor besides crashes?",
+        a: "Start-up time, slow and frozen screens, Android ANRs and iOS hangs, network failures and latency by endpoint, and completion of key journeys such as sign-in and checkout, broken down by app version, OS, device and network. These catch problems users feel that crash reports miss.",
+      },
+],
     content: [
       {
         heading: "Quick answer",
@@ -303,6 +308,22 @@ export const mobilePosts5: BlogPost[] = [
           title: "Want visibility into how your app behaves in production?",
           description: "Talk to ZSpace Labs about crash reporting, monitoring and a release process that catches problems early. Explore our [[/services/mobile-app-development|iOS and Android app development services]].",
         },
+      },
+      {
+        heading: "Beyond Crashes: Performance and Failed User Journeys",
+        body: [
+          "Crash-free rates miss many problems users feel: slow start-up, frozen screens, failed network requests and journeys that never complete. Mobile observability adds performance monitoring and journey tracking so teams see where users actually fail.",
+        ],
+        checklist: [
+          "Track app start time, screen render times and frozen frames on real devices.",
+          "Monitor ANRs (app not responding) on Android and hangs on iOS.",
+          "Record network request failures and latency by endpoint and app version.",
+          "Define key journeys (sign-in, search, checkout, booking) and track completion and failure points.",
+          "Correlate client-side failures with backend traces where possible.",
+          "Break metrics down by app version, OS version, device and network type.",
+          "Keep personal information out of logs and traces.",
+          "See [[/blogs/mobile-app-release-management|mobile app release management]] for using these signals as rollout gates.",
+        ],
       },
       {
         heading: "Conclusion",

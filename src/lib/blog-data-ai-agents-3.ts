@@ -2075,7 +2075,7 @@ export const aiAgentPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "AI agents give farm operations a practical way to combine data from sensors, weather, imagery and equipment into recommendations no person could assemble manually across every field every day, catching developing issues earlier than manual observation alone. Start with crop monitoring, keep every agronomic decision with the farmer or agronomist, and expand as your data sources grow.",
+          "AI agents give farm operations a practical way to combine data from sensors, weather, imagery and equipment into recommendations no person could assemble manually across every field every day, catching developing issues earlier than manual observation alone. Start with crop monitoring, keep every agronomic decision with the farmer or agronomist, and expand as your data sources grow. For the farm software these agents depend on, see [[/blogs/agriculture-software-development-australia|agriculture software development in Australia]].",
         ],
       },
     ],

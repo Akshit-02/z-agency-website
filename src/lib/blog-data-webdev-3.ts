@@ -261,18 +261,21 @@ export const webDevPosts3: BlogPost[] = [
     category: "Web Development",
     banner: "waterfall",
     date: "2026-09-23",
-    readingTime: "12 min read",
+    updated: "2026-10-09",
+    readingTime: "13 min read",
     relatedServiceSlugs: ["website-development", "cro-audit"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
     faqs: [
-      { q: "What are Core Web Vitals?", a: "Google's set of page-experience metrics: Largest Contentful Paint (LCP, how quickly main content becomes visible), Interaction to Next Paint (INP, how responsive the page feels to interaction), and Cumulative Layout Shift (CLS, how visually stable the page is as it loads). Google's published \"good\" thresholds are LCP under 2.5 seconds and INP under 200 milliseconds." },
+      { q: "What are Core Web Vitals?", a: "Google's set of page-experience metrics: Largest Contentful Paint (LCP, how quickly main content becomes visible), Interaction to Next Paint (INP, how responsive the page feels to interaction), and Cumulative Layout Shift (CLS, how visually stable the page is as it loads). Google's published \"good\" thresholds are LCP within 2.5 seconds, INP under 200 milliseconds and CLS under 0.1, assessed at the 75th percentile of page loads." },
       { q: "What's the difference between lab data and field data?", a: "Lab data comes from a controlled test (like Lighthouse) run under fixed conditions; field data comes from real visitors' actual devices and connections, aggregated over time (as in Google's Chrome UX Report). Field data reflects genuine user experience; lab data is useful for diagnosing and debugging in a controlled environment." },
-      { q: "Will improving Core Web Vitals guarantee better search rankings?", a: "Core Web Vitals are a confirmed ranking factor, but not the dominant one — content relevance and quality generally matter more. Treat performance as removing a real barrier to a good user experience, not a guaranteed ranking shortcut." },
+      { q: "Will improving Core Web Vitals guarantee better search rankings?", a: "No. Google says Core Web Vitals are used by its ranking systems, but also that good page experience does not guarantee top rankings and that it always seeks to show the most relevant content, even if the page experience is sub-par. Treat performance as removing a real barrier to a good user experience, not a guaranteed ranking shortcut." },
       { q: "Will faster page speed guarantee more conversions?", a: "It removes a real barrier, and slower pages consistently correlate with worse conversion across broad ecommerce data — but the exact size of any specific gain depends on your store, audience and how slow the page currently is. Avoid trusting a promised universal percentage." },
       { q: "What usually causes a slow website?", a: "Unoptimized images, excessive or render-blocking JavaScript (often from third-party scripts), unoptimized fonts, and slow server response times are the most common, recurring culprits." },
       { q: "Does image optimization really matter that much?", a: "Yes — images are frequently the largest asset on a page and a common cause of poor LCP; using modern formats, proper sizing, and appropriate loading strategies is one of the highest-leverage, most common performance fixes." },
       { q: "What is code splitting?", a: "Breaking JavaScript into smaller chunks so a page only loads the code it actually needs for the current view, rather than one large bundle containing code for the entire site." },
       { q: "Does mobile performance matter more than desktop?", a: "Practically, often yes — mobile devices and connections are typically less forgiving of unoptimized pages, and mobile frequently represents the majority of traffic for many sites." },
+      { q: "How do I improve INP?", a: "Find the slow interactions first, using field data or real-user monitoring, then reduce the JavaScript work they trigger: break up long tasks, yield to the main thread so the browser can paint, defer non-essential work, remove or delay third-party scripts, and keep the DOM size reasonable. Measure again with field data after each change." },
+      { q: "Does hosting location matter for performance?", a: "It can. If uncached requests travel far to reach your origin server, server response time and LCP suffer for distant visitors. A CDN with locations near your audience, sensible caching, and an origin or edge rendering in a nearby region reduce this. Check field data for the countries you serve rather than assuming." },
       { q: "How do I actually measure my website's performance?", a: "Use Google PageSpeed Insights or Lighthouse for lab data, and Google Search Console's Core Web Vitals report (or the Chrome UX Report directly) for real-world field data from actual visitors." },
     ],
     content: [
@@ -285,14 +288,14 @@ export const webDevPosts3: BlogPost[] = [
       {
         heading: "Core Web Vitals, Explained",
         body: [
-          "Google's Core Web Vitals give a standardized way to measure page experience. Largest Contentful Paint (LCP) measures how quickly the main content becomes visible. Interaction to Next Paint (INP) measures how responsive the page feels once a visitor starts interacting with it. Cumulative Layout Shift (CLS) measures how much content unexpectedly shifts as the page loads. Google's published \"good\" thresholds are LCP under 2.5 seconds and INP under 200 milliseconds, with CLS kept low and stable.",
+          "Google's Core Web Vitals give a standardized way to measure page experience. Largest Contentful Paint (LCP) measures how quickly the main content becomes visible. Interaction to Next Paint (INP) measures how responsive the page feels once a visitor starts interacting with it. Cumulative Layout Shift (CLS) measures how much content unexpectedly shifts as the page loads. Google's published \"good\" thresholds are LCP within 2.5 seconds, INP under 200 milliseconds and CLS under 0.1 ([[https://developers.google.com/search/docs/appearance/core-web-vitals|Google Search Central]]). They are assessed at the 75th percentile of page loads, segmented across mobile and desktop, so a page passes only when at least three in four real visits meet each threshold ([[https://web.dev/articles/vitals|web.dev]]). INP replaced First Input Delay as a Core Web Vital in 2024.",
         ],
         table: {
           headers: ["Metric", "What it measures", "\"Good\" threshold", "Common cause when weak"],
           rows: [
             ["LCP", "Time until main content is visible", "Under 2.5s", "Unoptimized hero images, render-blocking resources, slow server response"],
             ["INP", "Responsiveness to real interaction", "Under 200ms", "Heavy or unnecessary JavaScript execution"],
-            ["CLS", "Visual stability while loading", "Low, stable score", "Images or embedded content without explicit dimensions"],
+            ["CLS", "Visual stability while loading", "Under 0.1", "Images or embedded content without explicit dimensions, late-injected banners, font swaps"],
           ],
         },
       },
@@ -302,6 +305,27 @@ export const webDevPosts3: BlogPost[] = [
           "Lab data comes from a controlled test — Lighthouse or PageSpeed Insights run under fixed, simulated conditions — useful for diagnosing specific issues in a repeatable environment. Field data comes from real visitors' actual devices and network conditions, aggregated over time through sources like the Chrome UX Report. Field data is what reflects genuine user experience, and it's what Google's Core Web Vitals ranking signal is actually based on — a good lab score doesn't guarantee good field data if real users are on slower devices or connections than the lab test simulates.",
         ],
         visual: { variant: "bars", accent: "blue", caption: "A controlled lab test and real-world field data can diverge — field data is what reflects what actual visitors experience." },
+      },
+      {
+        heading: "How to Prioritize Fixes",
+        body: [
+          "Performance work goes fastest when it follows the evidence. A practical order:",
+        ],
+        checklist: [
+          "Open the Core Web Vitals report in Search Console and note which metric fails, on which device type, for which group of similar URLs.",
+          "Fix by template, not by page: product pages, article pages and landing pages usually share causes.",
+          "Use PageSpeed Insights field data for key URLs, then lab tools to reproduce and diagnose the failing metric.",
+          "For LCP, identify the LCP element and its delay: server response, resource load, or render delay.",
+          "For INP, find the slow interactions and the scripts they trigger.",
+          "For CLS, record the page loading and find which elements move.",
+          "Ship one change at a time where you can, and confirm in field data, which takes weeks to reflect a change.",
+        ],
+      },
+      {
+        heading: "Improving INP in Practice",
+        body: [
+          "INP measures the delay between a user's interaction and the next visual update, across the visit. Poor INP is almost always main-thread work: long JavaScript tasks that block the browser from responding. Break long tasks into smaller pieces and yield to the main thread, so the browser can paint between them. Do the minimum in event handlers and defer the rest. Avoid re-rendering large parts of the page for small changes, keep the DOM size reasonable, and audit third-party scripts, which often run expensive work on every interaction. Real-user monitoring that records which interactions are slow is more useful here than any lab test.",
+        ],
       },
       {
         heading: "Images",
@@ -332,6 +356,13 @@ export const webDevPosts3: BlogPost[] = [
         ],
       },
       {
+        heading: "Serving Distant Audiences: an Australian Example",
+        body: [
+          "Distance shows up in field data. Many Australian business sites are hosted, or render uncached pages, on servers in other regions, so every uncached request makes a long round trip. Visitors on regional or congested mobile networks feel it most.",
+          "If most of your visitors are in Australia, check that your CDN has Australian locations and that HTML, not just images, is cached where it can be. Consider an origin or edge rendering in a nearby region for dynamic pages (major clouds run Sydney and Melbourne regions). Measure with field data for Australian visitors: the Chrome UX Report publishes country-level datasets in BigQuery, and real-user monitoring can segment by country and connection type. Google's ranking guidance is the same in every country; the point is that your visitors' experience depends on where they are. Australian stores weighing a rebuild can also read [[/blogs/shopify-development-australia|Shopify development in Australia]] and [[/blogs/headless-ecommerce-architecture|headless ecommerce architecture]].",
+        ],
+      },
+      {
         heading: "Server Response Time",
         body: [
           "A slow server response delays everything downstream, including LCP. This is influenced by hosting infrastructure, database query efficiency, and how much work the server does before it can respond — all worth reviewing directly, not just optimizing the front end and assuming the server is fine.",
@@ -357,13 +388,13 @@ export const webDevPosts3: BlogPost[] = [
       {
         heading: "What Performance Improvements Realistically Deliver",
         body: [
-          "Treat performance work as removing a genuine barrier to a good user experience and to search visibility — not as a guaranteed ranking boost or a promised conversion percentage. Core Web Vitals are a confirmed but secondary ranking factor, and the actual conversion impact of a speed fix depends on your specific site and audience. Measure the real effect on your own traffic after the fact, rather than trusting a borrowed industry figure.",
+          "Treat performance work as removing a genuine barrier to a good user experience and to search visibility — not as a guaranteed ranking boost or a promised conversion percentage. Google states that \"Core Web Vitals are used by our ranking systems\", but also that good page experience \"doesn't guarantee that your pages will rank at the top of Google Search results\" and that it \"always seeks to show the most relevant content, even if the page experience is sub-par\" ([[https://developers.google.com/search/docs/appearance/page-experience|Google Search Central]]). The actual conversion impact of a speed fix depends on your specific site and audience. Measure the real effect on your own traffic after the fact, rather than trusting a borrowed industry figure.",
         ],
       },
       {
         heading: "Conclusion",
         body: [
-          "Website performance optimization is a measurable, evidence-based discipline — Core Web Vitals give a concrete target, and images, fonts, JavaScript discipline and caching are where most real gains come from. Ground any claim about impact in your own field data, not a lab score or a borrowed statistic from somewhere else.",
+          "Website performance optimization is a measurable, evidence-based discipline — Core Web Vitals give a concrete target, and images, fonts, JavaScript discipline and caching are where most real gains come from. Ground any claim about impact in your own field data, not a lab score or a borrowed statistic from somewhere else. For the conversion side, see [[/blogs/why-page-speed-still-decides-conversion|why page speed still decides conversions]]; for Shopify stores, [[/blogs/shopify-core-web-vitals-performance-guide|Shopify performance and Core Web Vitals]]; and for local service businesses, [[/blogs/local-seo-australia|the website side of local SEO]].",
         ],
       },
     ],
@@ -619,11 +650,12 @@ export const webDevPosts3: BlogPost[] = [
     title: "Website Accessibility: A Practical Guide to Building More Accessible Websites",
     seoTitle: "Website Accessibility: A Practical Guide for Business Websites",
     excerpt:
-      "Semantic HTML, keyboard navigation, contrast, forms and screen reader support — grounded in W3C/WAI guidance, with best practice clearly separated from legal requirements.",
+      "Semantic HTML, keyboard navigation, contrast, forms and screen readers, grounded in W3C/WAI guidance, with best practice separated from legal requirements.",
     category: "Web Development",
     banner: "a11ycheck",
     date: "2026-09-24",
-    readingTime: "12 min read",
+    updated: "2026-10-10",
+    readingTime: "13 min read",
     relatedServiceSlugs: ["website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
     faqs: [
@@ -742,6 +774,13 @@ export const webDevPosts3: BlogPost[] = [
         heading: "Best Practice vs. Legal Requirements",
         body: [
           "This guide covers accessibility as good practice, grounded in W3C/WAI guidance. Whether specific legal accessibility requirements apply to your business depends on your jurisdiction, sector and the nature of your website — this varies meaningfully by region, and it's worth verifying directly with appropriate legal guidance for your specific situation rather than assuming either way.",
+        ],
+      },
+      {
+        heading: "UK Requirements and Accessibility Audits",
+        body: [
+          "In England, Scotland and Wales, the Equality Act 2010 requires service providers to make reasonable adjustments, which covers websites and business software used by customers and staff; Northern Ireland has equivalent duties under the Disability Discrimination Act 1995. Public sector bodies must also meet WCAG 2.2 AA and publish an accessibility statement under the 2018 accessibility regulations, with GDS monitoring compliance and the EHRC or ECNI enforcing ([[https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps|GOV.UK]]).",
+          "A useful audit moves from barriers to a remediation plan: scope the key journeys (including staff-facing tools), combine automated scans with manual keyboard, zoom and screen reader testing and, ideally, testing with disabled users; record each barrier with the WCAG criterion, who it affects, severity, the fix, an owner and a date; fix blockers in critical journeys first; retest; and update the accessibility statement where one is required. The [[/blogs/accessibility-testing-australia|accessibility testing guide]] covers methods and reporting in more depth.",
         ],
       },
       {
@@ -980,7 +1019,7 @@ export const webDevPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Website maintenance is an ongoing operational lifecycle — security, monitoring, content, performance, accessibility and periodic improvement working together — not a reactive bug list. A site with clearly assigned, consistent maintenance rarely needs a dramatic rebuild; one without it usually does, eventually, at a higher cost than the maintenance would have been.",
+          "Website maintenance is an ongoing operational lifecycle — security, monitoring, content, performance, accessibility and periodic improvement working together — not a reactive bug list. A site with clearly assigned, consistent maintenance rarely needs a dramatic rebuild; one without it usually does, eventually, at a higher cost than the maintenance would have been. For what to put in the agreement itself, see [[/blogs/software-maintenance-contracts-australia|software maintenance contracts in Australia]].",
         ],
       },
     ],

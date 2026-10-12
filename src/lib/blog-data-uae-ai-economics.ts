@@ -343,7 +343,8 @@ export const uaeAiEconomicsPosts: BlogPost[] = [
     sceneKind: "analytics",
     bannerAlt: "A KPI dashboard for an AI automation showing baseline and current cost per case, net hours saved, error rate, throughput, adoption and payback progress",
     date: "2026-10-09",
-    readingTime: "19 min read",
+    updated: "2026-10-10",
+    readingTime: "20 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["b2b-enterprise", "logistics-supply-chain", "professional-services", "ecommerce"],
     relatedSlugs: ["ai-agent-roi", "ai-model-evaluation", "ai-agent-observability"],
@@ -596,6 +597,20 @@ export const uaeAiEconomicsPosts: BlogPost[] = [
           "**Mixing measured and projected numbers.** Label every figure.",
           "**Measuring once.** Value erodes as models, prices and processes change; review quarterly.",
           "**Measuring activity instead of outcomes.** 'Messages handled' and 'documents processed' are not benefits.",
+        ],
+      },
+      {
+        heading: "Measuring ROI for Australian Businesses",
+        body: [
+          "The framework applies everywhere; a few local details keep the numbers honest.",
+        ],
+        checklist: [
+          "Measure baseline effort, error rates and cycle time before changing anything.",
+          "Price costs in AUD, noting that many AI and cloud services are priced in US dollars and move with the exchange rate.",
+          "Compare amounts consistently excluding GST.",
+          "Include human review time, exception handling, monitoring and maintenance, not just model costs.",
+          "Use labelled hypothetical examples for planning, and report your own measured results afterwards.",
+          "For an Australian budget model, see [[/blogs/ai-automation-cost-australia|AI automation costs in Australia]].",
         ],
       },
       {

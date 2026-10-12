@@ -701,11 +701,12 @@ export const designPosts2: BlogPost[] = [
     slug: "ux-audit",
     title: "UX Audit: What It Is, What It Includes and How It Works",
     excerpt:
-      "What a UX audit covers, how heuristic review, analytics, user testing and accessibility checks combine, a practical audit checklist, and how findings are prioritized.",
+      "What a UX audit covers: heuristic review, analytics, user testing and accessibility checks, how it differs from a redesign, and how to prioritize fixes.",
     category: "UI/UX",
     banner: "uxauditflow",
     date: "2026-09-25",
-    readingTime: "14 min read",
+    updated: "2026-10-09",
+    readingTime: "15 min read",
     relatedServiceSlugs: ["ui-ux-design", "cro-audit"],
     relatedIndustrySlugs: ["ecommerce", "saas-technology", "d2c-consumer"],
     faqs: [
@@ -744,6 +745,14 @@ export const designPosts2: BlogPost[] = [
       {
         q: "How are UX audit findings prioritized?",
         a: "By severity, the number of users affected, business impact and effort to fix.",
+      },
+      {
+        q: "Is a UX audit the same as a redesign?",
+        a: "No. A UX audit diagnoses problems and recommends fixes; a redesign rebuilds the experience. Many audits conclude that targeted changes to key flows, content and components will solve most problems without a redesign. When an audit does recommend a redesign, its findings become the brief, so the new design fixes known issues rather than introducing new ones.",
+      },
+      {
+        q: "What should an Australian business add to a UX audit?",
+        a: "Check accessibility against WCAG 2.2, which the Australian Human Rights Commission's guidelines on digital access point to, and review patterns that could raise consumer law issues, such as how prices, fees and subscriptions are presented. New rules on drip pricing and subscription cancellation are reported to commence on 1 July 2027.",
       },
     ],
     content: [
@@ -853,6 +862,7 @@ export const designPosts2: BlogPost[] = [
         heading: "Accessibility and Performance Checks",
         body: [
           "Include a WCAG-based review, covered in [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]], and Core Web Vitals, covered in [[/blogs/website-performance-optimization|website performance optimization]]. Slow or inaccessible pages are UX problems even when the design looks fine.",
+          "Check the WCAG 2.2 criteria that most often affect key journeys: target size for buttons and links, focus that is not hidden behind sticky headers, accessible authentication on sign-in, and not asking users to re-enter information they have already provided ([[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C]]). Pair automated checks with manual keyboard and screen reader testing on the main tasks.",
         ],
       },
       {
@@ -870,6 +880,52 @@ export const designPosts2: BlogPost[] = [
             ["Effort", "How hard is it to fix?"],
             ["Confidence", "How strong is the evidence?"],
           ],
+        },
+      },
+      {
+        heading: "From Findings to an Implementation Plan",
+        body: [
+          "An audit only creates value when fixes ship. Turn the prioritized findings into a plan the team can act on:",
+        ],
+        checklist: [
+          "Group findings by journey and component, so one change fixes several issues.",
+          "Separate quick fixes (copy, labels, error messages, small layout changes) from design work and from engineering work.",
+          "Write each recommendation as a testable change with an owner and a success measure.",
+          "Decide which changes to A/B test and which to ship directly, based on risk and traffic.",
+          "Schedule a re-test of the key tasks after fixes ship.",
+        ],
+      },
+      {
+        heading: "UX Audit vs Full Redesign",
+        body: [
+          "A UX audit is a diagnosis; a redesign is a treatment, and often not the right one. Redesigns are expensive, reset learned behavior, and can introduce new problems while fixing old ones. An audit tells you whether the problems are concentrated in a few flows and components, which targeted fixes can solve, or spread through the structure, navigation and design system, which may justify a redesign.",
+        ],
+        table: {
+          headers: ["", "UX audit", "Full redesign"],
+          rows: [
+            ["Purpose", "Find and rank problems", "Rebuild the experience"],
+            ["Output", "Evidence-based findings and recommendations", "New designs, often new build"],
+            ["Typical scope", "Key journeys and components", "Whole site or product"],
+            ["Risk", "Low; changes can be incremental", "Higher; many changes at once"],
+            ["When it fits", "Most situations, and before any redesign", "Structural problems, rebrand, platform change"],
+          ],
+        },
+      },
+      {
+        heading: "Auditing for Australian Users",
+        body: [
+          "The audit method is the same everywhere, but a few local checks are worth adding for sites serving Australian customers.",
+        ],
+        checklist: [
+          "**Accessibility:** the Australian Human Rights Commission's guidelines on equal access to digital goods and services, issued under the Disability Discrimination Act, point organisations to WCAG. See [[/blogs/website-accessibility-australia|website accessibility in Australia]].",
+          "**Pricing and fees:** check that prices, delivery costs and fees are clear early. Card surcharges on eftpos, Visa and Mastercard were removed from 1 October 2026 under the Reserve Bank's decision, and a drip pricing provision is reported to commence on 1 July 2027.",
+          "**Subscriptions:** check that cancellation is easy to find and complete online; the same reforms reportedly require online cancellation for online sign-ups. See [[/blogs/subscription-ecommerce-australia|subscription ecommerce in Australia]].",
+          "**Reviews and trust signals:** reviews shown on the site should be genuine and fairly selected, in line with ACCC guidance on online reviews.",
+          "**Local details:** delivery estimates for regional areas, time zones in booking flows, and Australian address and phone formats in forms.",
+        ],
+        callout: {
+          type: "note",
+          text: "Consumer law points here are general information, not legal advice. For checkout-specific checks, see [[/blogs/ecommerce-conversion-optimization-australia|ecommerce conversion optimisation in Australia]].",
         },
       },
       {
@@ -897,7 +953,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A good UX audit combines expert review, data and real user evidence, and turns them into a short list of prioritized fixes. It's often the most cost-effective first step before any redesign. For the wider discipline, see the [[/blogs/ui-ux-design-guide|UI/UX design guide]].",
+          "A good UX audit combines expert review, data and real user evidence, and turns them into a short list of prioritized fixes. It's often the most cost-effective first step before any redesign. For the step-by-step method, see [[/blogs/how-to-conduct-a-ux-audit|how to conduct a UX audit]] and [[/blogs/ux-heuristic-evaluation|heuristic evaluation]]; for the wider discipline, see the [[/blogs/ui-ux-design-guide|UI/UX design guide]].",
         ],
       },
     ],

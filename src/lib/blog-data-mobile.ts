@@ -289,7 +289,7 @@ export const mobilePosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "App cost is the sum of specific decisions: platforms, features, design depth, backend, integrations, testing and maintenance. Understand those drivers and you can compare quotes honestly and plan a first release that fits. For the full picture, see the [[/blogs/mobile-app-development-guide|mobile app development guide]].",
+          "App cost is the sum of specific decisions: platforms, features, design depth, backend, integrations, testing and maintenance. Understand those drivers and you can compare quotes honestly and plan a first release that fits. For the full picture, see the [[/blogs/mobile-app-development-guide|mobile app development guide]]. Budgeting for an Australian business? See [[/blogs/mobile-app-development-cost-australia|mobile app development cost in Australia]] for GST, store fees and a lifecycle budget model.",
         ],
       },
     ],
@@ -654,7 +654,7 @@ export const mobilePosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "The right partner shows relevant evidence, explains trade-offs honestly, runs a visible process with real QA, and signs a contract that leaves you in control of your code and accounts. Use the questions above to compare vendors fairly. For the wider context, see the [[/blogs/mobile-app-development-guide|mobile app development guide]]. For startups choosing a software partner, see [[/blogs/software-development-company-uae|how to choose a software development company for a UAE startup]].",
+          "The right partner shows relevant evidence, explains trade-offs honestly, runs a visible process with real QA, and signs a contract that leaves you in control of your code and accounts. Use the questions above to compare vendors fairly. For the wider context, see the [[/blogs/mobile-app-development-guide|mobile app development guide]]. For startups choosing a software partner, see [[/blogs/software-development-company-uae|how to choose a software development company for a UAE startup]]. For Australian businesses, [[/blogs/mobile-app-development-company-australia|choosing a mobile app development company in Australia]] adds account ownership, IP assignment, privacy and a weighted scorecard.",
         ],
       },
     ],
@@ -664,12 +664,14 @@ export const mobilePosts: BlogPost[] = [
   {
     slug: "native-vs-cross-platform-app-development",
     title: "Native vs Cross-Platform App Development: Which Should You Choose?",
+    seoTitle: "Native vs Cross-Platform App Development: How to Choose",
     excerpt:
       "How native and cross-platform approaches compare on performance, speed, cost, code sharing, native APIs, UX and maintenance, with a decision framework.",
     category: "Mobile Apps",
     banner: "fork",
     date: "2026-09-25",
-    readingTime: "12 min read",
+    updated: "2026-10-09",
+    readingTime: "13 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["startups", "fintech", "ecommerce"],
     faqs: [
@@ -681,6 +683,8 @@ export const mobilePosts: BlogPost[] = [
       { q: "When should I choose native development?", a: "When the app depends on cutting-edge platform features, intensive graphics or processing, deep OS integration, or when you have separate iOS and Android teams already." },
       { q: "Can I switch from cross-platform to native later?", a: "Yes, but it's effectively a rebuild of the app layer. A well-designed backend and API can be reused." },
       { q: "What about progressive web apps?", a: "PWAs are a third option when deep device access and store presence aren't required. See the PWA vs native app comparison." },
+      { q: "What is Kotlin Multiplatform, and is it cross-platform?", a: "Kotlin Multiplatform lets teams share business logic written in Kotlin across Android and iOS while keeping native user interfaces, or share UI too with Compose Multiplatform, which JetBrains declared stable for iOS in May 2025. It sits between fully native and fully shared approaches and suits teams with strong Android and Kotlin skills." },
+      { q: "Do App Store and Google Play rules differ by approach?", a: "No. Store requirements apply to every app regardless of how it is built. Apps uploaded to App Store Connect since 28 April 2026 must be built with Xcode 26, and from 31 August 2026 Android apps must target API level 36. Cross-platform teams also need the framework to support each new requirement, which can add a short wait." },
       { q: "Which approach does ZSpace Labs use?", a: "ZSpace Labs defaults to cross-platform development with React Native and uses native development where an app's experience demands it." },
     ],
     content: [
@@ -727,6 +731,22 @@ export const mobilePosts: BlogPost[] = [
         ],
       },
       {
+        heading: "What Is Actually Shared, and What Is Not",
+        body: [
+          "Cross-platform does not mean every task is done once. A realistic estimate separates shared work from platform-specific work, and asking suppliers to split their estimates this way is the quickest way to test a claimed saving.",
+        ],
+        table: {
+          headers: ["Usually shared", "Usually platform-specific"],
+          rows: [
+            ["Screens, navigation and most UI components", "Push notification setup and certificates"],
+            ["Business logic, validation and state management", "Payments and in-app purchase configuration"],
+            ["API calls, caching and data models", "Background tasks, location and Bluetooth behavior"],
+            ["Analytics events and feature flags", "Widgets, watch apps, app extensions and Live Activities"],
+            ["Most unit and component tests", "Signing, store listings, review submissions and device testing"],
+          ],
+        },
+      },
+      {
         heading: "Native APIs and Platform Features",
         body: [
           "Native development gets new OS features first. Cross-platform frameworks support common capabilities, and custom native modules cover the rest, but that work requires native skills and adds maintenance. If your app's core value depends on the latest platform capabilities, weigh this heavily.",
@@ -749,6 +769,42 @@ export const mobilePosts: BlogPost[] = [
         ],
       },
       {
+        heading: "A Third Path: Shared Logic, Native UI",
+        body: [
+          "Between fully native and fully shared sits a middle option. Kotlin Multiplatform lets a team share business logic, networking and data layers in Kotlin while keeping SwiftUI and Jetpack Compose interfaces, and Compose Multiplatform extends sharing to the UI; JetBrains declared Compose Multiplatform for iOS stable in May 2025 ([[https://blog.jetbrains.com/kotlin/2025/05/compose-multiplatform-1-8-0-released-compose-multiplatform-for-ios-is-stable-and-production-ready/|JetBrains]]). It suits teams with strong Android and Kotlin skills who want native UI on both platforms without duplicating logic. The trade-off is a smaller ecosystem than React Native or Flutter and the need for iOS skills on the team.",
+        ],
+      },
+      {
+        heading: "Release Process and Store Requirements",
+        body: [
+          "Store rules apply to every app, however it is built. Apps uploaded to App Store Connect since 28 April 2026 must be built with Xcode 26 and the iOS 26 SDK ([[https://developer.apple.com/news/upcoming-requirements/|Apple]]), and from 31 August 2026 new Android apps and updates must target Android 16, API level 36 ([[https://developer.android.com/google/play/requirements/target-sdk|Android Developers]]).",
+          "Native teams adopt these changes directly. Cross-platform teams also depend on the framework and its plugins supporting each new SDK, which is usually quick for mainstream frameworks but can delay apps that rely on less-maintained plugins. Either way, plan an annual upgrade cycle, run releases through staged rollouts, and keep crash monitoring in place; see [[/blogs/mobile-app-crash-reporting|crash reporting and monitoring]].",
+        ],
+      },
+      {
+        heading: "Long-Term Ownership",
+        body: [
+          "The approach you choose is a multi-year commitment. Before deciding, ask who will own the app in three years. A cross-platform codebase is easier to staff if your company already has web developers using React and TypeScript. Native apps are easier to staff if you have, or can hire, iOS and Android specialists. Whichever you choose, make sure the code, signing keys and developer accounts belong to your business, and that documentation lets a new team build and release the app.",
+        ],
+      },
+      {
+        heading: "Weighted Decision Framework",
+        body: [
+          "Score each factor from 1 to 5 for your product, multiply by the weight, and add up each column. The weights are a starting point; adjust them before scoring, not after.",
+        ],
+        table: {
+          headers: ["Factor", "Weight", "Favors native when…", "Favors cross-platform when…"],
+          rows: [
+            ["Dependence on new or deep platform features", "High", "Core value relies on them at launch", "Standard device features are enough"],
+            ["Graphics, media or computation intensity", "High", "Heavy 3D, AR, real-time media", "Forms, content, commerce, dashboards"],
+            ["Budget and time to two platforms", "Medium", "Budget allows two builds", "Both platforms needed quickly"],
+            ["Team skills now and in three years", "Medium", "iOS and Android specialists available", "React/TypeScript or Dart skills available"],
+            ["Platform-specific UX expectations", "Medium", "Users expect strict platform conventions", "A consistent branded UI is preferred"],
+            ["Maintenance capacity", "Medium", "Two teams can keep pace with OS releases", "One team must maintain both apps"],
+          ],
+        },
+      },
+      {
         heading: "Decision Framework",
         body: [],
         checklist: [
@@ -768,7 +824,7 @@ export const mobilePosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Neither approach wins universally. Cross-platform suits most business apps on cost, speed and consistency; native suits apps where performance ceilings, hardware access or the newest platform features are central. If deep device access isn't needed at all, compare [[/blogs/pwa-vs-native-app|PWA vs native app]] too. For how this fits the whole build, see [[/blogs/mobile-app-development-guide|the complete mobile app development guide]].",
+          "Neither approach wins universally. Cross-platform suits most business apps on cost, speed and consistency; native suits apps where performance ceilings, hardware access or the newest platform features are central. If deep device access isn't needed at all, compare [[/blogs/pwa-vs-native-app|PWA vs native app]] too. Australian businesses budgeting or choosing a supplier can also read [[/blogs/mobile-app-development-cost-australia|mobile app development cost in Australia]] and [[/blogs/mobile-app-development-company-australia|choosing an app development company in Australia]]. For how this fits the whole build, see [[/blogs/mobile-app-development-guide|the complete mobile app development guide]].",
         ],
       },
     ],

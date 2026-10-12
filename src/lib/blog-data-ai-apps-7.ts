@@ -591,13 +591,14 @@ export const aiAppsPosts7: BlogPost[] = [
     title: "AI Recommendation Systems: How to Build Personalized Recommendation Engines",
     seoTitle: "AI Recommendation Systems: Architecture Beyond Ecommerce",
     excerpt:
-      "How to build recommendation systems for content, SaaS, learning and marketplace products: signals, candidate generation, ranking, business rules and diversity, cold start, serving, evaluation and privacy.",
+      "How to build recommendation systems beyond ecommerce: signals, candidates, ranking, business rules, cold start, serving, evaluation, privacy and tracking rules.",
     category: "AI & Automation",
     banner: "recsysarch",
     bannerAlt:
       "Recommendation system architecture in four columns: signals (views, ratings, search, context), candidates (similar items, popular, embeddings, rules), ranking highlighted (models, features, business goals, diversity) and serving (API, cache, logging, experiments).",
     date: "2026-10-02",
-    readingTime: "7 min read",
+    updated: "2026-10-09",
+    readingTime: "9 min read",
     relatedServiceSlugs: ["ai-automation", "website-development", "mobile-app-development"],
     relatedIndustrySlugs: ["media-entertainment", "education-edtech", "saas-technology"],
     relatedSlugs: ["ecommerce-recommendation-engine", "ai-search-development", "vector-embeddings-explained"],
@@ -610,7 +611,11 @@ export const aiAppsPosts7: BlogPost[] = [
       { q: "How do you evaluate recommendations?", a: "Offline with ranking metrics on historical data, then online with A/B tests on outcomes such as engagement, retention or conversions, while watching diversity and fairness." },
       { q: "How is this different from ecommerce recommendations?", a: "The architecture is similar, but goals and signals differ: content platforms optimize engagement and satisfaction, learning platforms progress, SaaS products feature adoption. Ecommerce-specific guidance is in the ecommerce recommendation engine guide." },
       { q: "What privacy considerations apply?", a: "Recommendations use behavioural data. Be transparent, respect consent and preferences, avoid sensitive inferences and give users controls such as resetting or hiding items." },
-    ],
+          {
+        q: "Do recommendations always increase conversion?",
+        a: "No. Recommendations can help when they are relevant and well placed, and they can also distract, repeat what users already know or narrow what they see. Measure against a non-personalized or popularity baseline with a proper experiment, and track longer-term outcomes such as retention and returns, not only clicks.",
+      },
+],
     content: [
       {
         heading: "Quick answer",
@@ -769,6 +774,19 @@ export const aiAppsPosts7: BlogPost[] = [
           title: "Planning recommendations for your platform?",
           description: "Talk to ZSpace Labs about [[/services/ai-automation|recommendation system development]], [[/services/website-development|web platforms]] and [[/services/mobile-app-development|mobile apps]].",
         },
+      },
+      {
+        heading: "Recommendations in Australia: Privacy, Tracking and Consumer Law",
+        body: [
+          "Recommendation mechanics do not change by country, but data use does. For products serving Australian users:",
+        ],
+        checklist: [
+          "**Privacy Act:** if your business is covered, behavioral data linked to a person is personal information. Collect what the recommendations need, explain personalization in your privacy policy, and offer a way to turn it off where it is not essential.",
+          "**Tracking and pixels:** the OAIC's guidance on tracking pixels says the deploying business is responsible for compliance, should minimize what is collected and should generally not pass sensitive information to third parties ([[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/tracking-pixels-and-privacy-obligations|OAIC]]).",
+          "**Sensitive inferences:** avoid recommendations that reveal or infer health, financial hardship or other sensitive information, especially in notifications and emails others may see.",
+          "**Consumer law:** recommendations and 'personalized' prices must not mislead. Be careful with labels such as 'most popular' or 'recommended for you' that imply something untrue, and with personalized pricing that customers would not expect.",
+          "**Evaluation:** personalization does not always improve conversion or revenue; test against a non-personalized baseline. For stores, see [[/blogs/ai-ecommerce-australia|AI ecommerce in Australia]].",
+        ],
       },
       {
         heading: "Conclusion",

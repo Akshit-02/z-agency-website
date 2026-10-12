@@ -18,14 +18,14 @@ export const aiAppsPosts9: BlogPost[] = [
     title: "AI Readiness Assessment: How to Prepare Your Business for AI Adoption",
     seoTitle: "AI Readiness Assessment: Processes, Data, Technology, People, Risk",
     excerpt:
-      "How to assess AI readiness: process maturity, data availability and quality, technology and integration, skills and ownership, risk and governance, scoring, gap analysis and turning results into priorities.",
+      "How to assess AI readiness: processes, data quality, integration, skills, governance, scoring and gap analysis, plus extra checks for Australian businesses.",
     category: "AI & Automation",
     banner: "readiness",
     bannerAlt:
       "AI readiness assessment in four columns: process (documented, measured, owned, stable), data highlighted (available, accurate, accessible, permitted), technology (APIs, identity, cloud, monitoring) and people and risk (skills, sponsors, policies, risk appetite).",
     date: "2026-10-02",
-    updated: "2026-10-07",
-    readingTime: "6 min read",
+    updated: "2026-10-09",
+    readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["b2b-enterprise", "professional-services", "manufacturing"],
     relatedSlugs: ["ai-data-readiness", "ai-implementation-strategy", "enterprise-ai-implementation"],
@@ -38,7 +38,11 @@ export const aiAppsPosts9: BlogPost[] = [
       { q: "What does the output look like?", a: "Scores by dimension, gaps with severity, a list of use cases ready now versus later and a roadmap of foundational work." },
       { q: "Who should be involved?", a: "Business process owners, IT and data teams, security, legal or compliance and an executive sponsor." },
       { q: "Is readiness a one-time exercise?", a: "No. Revisit it as use cases expand and foundations improve." },
-    ],
+          {
+        q: "Is there an Australian framework for AI readiness?",
+        a: "There is no mandatory readiness framework for private businesses. The National AI Centre's Guidance for AI Adoption (October 2025) is voluntary and describes six practices for responsible adoption, which are useful alongside a readiness assessment. Privacy Act obligations, where they apply, are legal requirements rather than readiness criteria.",
+      },
+],
     content: [
       {
         heading: "Quick answer",
@@ -209,9 +213,23 @@ export const aiAppsPosts9: BlogPost[] = [
         },
       },
       {
+        heading: "Australian Businesses: What to Add to the Assessment",
+        body: [
+          "The five dimensions apply everywhere, but Australian businesses should add a few local checks. For the step-by-step implementation that follows an assessment, see [[/blogs/ai-implementation-australia|implementing AI in an Australian small business]].",
+        ],
+        checklist: [
+          "**Guidance for AI Adoption:** the National AI Centre's voluntary guidance (AI6, October 2025) sets out six practices: decide who is accountable, understand impacts and plan accordingly, measure and manage risks, share essential information, test and monitor, and maintain human control. Use them as an extra lens on governance readiness.",
+          "**Privacy Act coverage:** whether the business is covered (many small businesses are exempt, but not all), and what personal information each candidate use case touches.",
+          "**Automated decisions:** whether any planned use case involves decisions that significantly affect people, which brings privacy policy transparency obligations from 10 December 2026.",
+          "**Data location:** whether AI services process data in Australian regions or overseas (APP 8).",
+          "**Consumer-facing use:** whether AI outputs will reach customers, which makes accuracy an Australian Consumer Law issue.",
+          "**Governance basics:** see [[/blogs/ai-governance-australia|AI governance for Australian businesses]].",
+        ],
+      },
+      {
         heading: "Conclusion",
         body: [
-          "Readiness assessments are useful when they are specific, evidence-based and lead straight to priorities. Related: [[/blogs/ai-data-readiness|AI data readiness]] and [[/blogs/ai-implementation-strategy|AI implementation strategy]]. For a scorecard focused on agentic AI in the UAE, see [[/blogs/agentic-ai-readiness-uae|UAE agentic AI readiness]].",
+          "Readiness assessments are useful when they are specific, evidence-based and lead straight to priorities. Related: [[/blogs/ai-data-readiness|AI data readiness]] and [[/blogs/ai-implementation-strategy|AI implementation strategy]]. For a scorecard focused on agentic AI in the UAE, see [[/blogs/agentic-ai-readiness-uae|UAE agentic AI readiness]]. To match a problem to the right kind of AI, see [[/blogs/predictive-analytics-vs-generative-ai|predictive analytics vs generative AI]].",
         ],
       },
     ],
@@ -416,14 +434,14 @@ export const aiAppsPosts9: BlogPost[] = [
     title: "AI Governance Framework: How to Manage AI Risk and Accountability",
     seoTitle: "AI Governance Framework: Roles, Risk Tiers, Policies, Monitoring",
     excerpt:
-      "How to build an AI governance framework: roles and accountability, AI inventory, risk classification, assessments and approvals, policies, documentation, monitoring, incidents, and alignment with NIST AI RMF, ISO/IEC 42001 and the EU AI Act.",
+      "AI governance framework guide: roles, inventory, risk tiers, approvals, policies and monitoring, mapped to NIST AI RMF, ISO/IEC 42001, the EU AI Act and UK law.",
     category: "AI & Automation",
     banner: "aigovlifecycle",
     bannerAlt:
       "AI governance lifecycle: register, classify risk (highlighted), assess, approve, monitor, review or retire; the note says governance is a lifecycle, not a one-time approval.",
     date: "2026-10-02",
-    updated: "2026-10-08",
-    readingTime: "7 min read",
+    updated: "2026-10-10",
+    readingTime: "8 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["b2b-enterprise", "fintech", "healthcare-healthtech"],
     relatedSlugs: ["ai-security-business-applications", "ai-data-privacy", "enterprise-ai-implementation"],
@@ -560,6 +578,14 @@ export const aiAppsPosts9: BlogPost[] = [
         body: [
           "Organizations in scope of the EU AI Act should map each inventoried system to the Act's categories: prohibited practices, high-risk systems, systems with transparency obligations and minimal-risk systems. Roles matter too, because providers and deployers carry different obligations.",
           "Dates have shifted. Prohibitions and AI literacy obligations applied from February 2025 and general-purpose AI model obligations from August 2025. Article 50 transparency obligations apply from 2 August 2026, and the Digital Omnibus deferred obligations for stand-alone high-risk systems to 2 December 2027. Confirm the current position with official sources and legal advice, because the timeline has changed more than once.",
+        ],
+      },
+      {
+        heading: "UK Context: Data Protection Law and Sector Regulators",
+        body: [
+          "The UK has no AI-specific statute as of October 2026. AI is governed through existing law, mainly UK GDPR and the Data Protection Act 2018 as amended by the [[https://www.legislation.gov.uk/ukpga/2025/18/contents|Data (Use and Access) Act 2025]], and through sector regulators such as the FCA, MHRA and Ofcom applying their own rules to AI use.",
+          "The Act's reforms to automated decision-making took effect on 5 February 2026. Significant decisions based solely on automated processing are now permitted on more lawful bases, except where special category data is involved, but safeguards remain: people must be told about such decisions, be able to make representations and contest them, and be able to obtain human intervention. The ICO consulted on updated automated decision-making guidance in spring 2026, and regulations made in April 2026 require it to prepare a statutory code of practice on AI and automated decision-making. Check the ICO's website for the current status of both.",
+          "For a UK inventory, flag systems that make or support significant decisions about people, record the safeguards and human review route for each, and link them to data protection impact assessments. People can also ask what data was used about them; see [[/blogs/subject-access-request-automation-uk|subject access request automation in the UK]].",
         ],
       },
       {

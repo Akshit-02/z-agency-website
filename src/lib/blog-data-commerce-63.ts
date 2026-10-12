@@ -238,13 +238,14 @@ export const commercePosts63: BlogPost[] = [
     slug: "ecommerce-returns-management",
     title: "Ecommerce Returns Management: How to Build a Better Returns Experience",
     seoTitle: "Ecommerce Returns Management: A Better Returns Experience",
-    excerpt: "How to manage ecommerce returns: policy, eligibility rules, approvals, labels, receipt and inspection, refunds and exchanges, inventory, fraud controls and data.",
+    excerpt: "How to manage ecommerce returns: policy, eligibility, approvals, labels, inspection, refunds, exchanges, inventory, fraud controls, data and UK consumer rules.",
     category: "Shopify & Ecommerce",
     banner: "returnsopsflow",
     bannerAlt:
       "Returns operations flow: request, eligibility rules, label and drop-off, receive and inspect (highlighted), disposition and refund or exchange, noting that every return is data about reason, product and cost.",
     date: "2026-09-30",
-    readingTime: "17 min read",
+    updated: "2026-10-10",
+    readingTime: "18 min read",
     relatedServiceSlugs: ["shopify-development", "website-development", "ai-automation"],
     relatedIndustrySlugs: ["ecommerce", "fashion-apparel", "consumer-electronics"],
     faqs: [
@@ -258,7 +259,11 @@ export const commercePosts63: BlogPost[] = [
       { q: "What return data should be captured?", a: "Reason codes, product and variant, condition on receipt, time to return, refund method and cost. Free-text comments add useful detail." },
       { q: "Do returns rules differ by country?", a: "Yes. Some jurisdictions give consumers statutory rights to cancel distance purchases or return faulty goods. Your policy must at least meet legal requirements in each market." },
       { q: "Can returns be automated?", a: "Much of it: eligibility checks, label generation, status updates, refunds on receipt and routing to disposition. Exceptions and inspections still need people." },
-    ],
+          {
+        q: "What UK rules apply to ecommerce returns?",
+        a: "For online sales to consumers, a 14-day cancellation right from delivery with refunds due within 14 days of getting the goods back or proof of return (Consumer Contracts Regulations 2013), and separately a 30-day short-term right to reject faulty goods (Consumer Rights Act 2015). Model them as separate return types.",
+      },
+],
     content: [
       {
         heading: "Quick answer",
@@ -416,9 +421,16 @@ export const commercePosts63: BlogPost[] = [
         },
       },
       {
+        heading: "UK Returns Rules That Change the System",
+        body: [
+          "If you sell to consumers in the UK, two separate rights shape the returns flow. Under the Consumer Contracts Regulations 2013, consumers who buy online can cancel within 14 days of receiving the goods (the last item, for multi-item orders) without giving a reason, and you must refund within 14 days of receiving the goods back or evidence they have been sent, including standard outbound delivery. Under the Consumer Rights Act 2015, faulty, misdescribed or unfit goods carry a 30-day short-term right to reject, then rights to repair, replacement, price reduction or final rejection.",
+          "Build these as distinct return reasons with their own eligibility, timers and refund rules, rather than one generic policy. Record delivery dates per item, distinguish change-of-mind from faulty returns, track the 14-day refund deadline from receipt or proof of return, and handle exclusions such as personalised, perishable or unsealed hygiene items. Who pays return postage depends on what you told the customer before purchase. Business Companion, the government-backed trading standards guidance, explains the detail ([[https://www.businesscompanion.info/en/quick-guides/distance-sales|distance sales guide]]). This is general information, not legal advice.",
+        ],
+      },
+      {
         heading: "Conclusion",
         body: [
-          "Returns management turns a costly process into a predictable one: clear lawful policy, automated eligibility, linked labels, consistent inspection, quick disposition, sensible refund timing, fair fraud controls and return data fed back into products. Related: [[/blogs/ecommerce-post-purchase-experience|post-purchase experience]] and [[/blogs/ecommerce-compliance|ecommerce compliance]].",
+          "Returns management turns a costly process into a predictable one: clear lawful policy, automated eligibility, linked labels, consistent inspection, quick disposition, sensible refund timing, fair fraud controls and return data fed back into products. Related: [[/blogs/ecommerce-post-purchase-experience|post-purchase experience]] and [[/blogs/ecommerce-compliance|ecommerce compliance]]. For Australian consumer law and returns portals, see [[/blogs/ecommerce-returns-australia|ecommerce returns in Australia]].",
         ],
       },
     ],

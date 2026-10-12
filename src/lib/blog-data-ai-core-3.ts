@@ -583,7 +583,7 @@ export const aiCorePosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Business process automation works when it starts with the real process, simplifies before automating, uses the most stable interfaces, adds AI where inputs are messy, and is measured and owned. Next: [[/blogs/workflow-automation|workflow automation]], [[/blogs/ai-workflow-automation|AI workflow automation]] and [[/blogs/ai-implementation-strategy|AI implementation strategy]]. For Australian small businesses choosing a first AI project, see [[/blogs/ai-automation-australia|AI automation in Australia]].",
+          "Business process automation works when it starts with the real process, simplifies before automating, uses the most stable interfaces, adds AI where inputs are messy, and is measured and owned. Next: [[/blogs/workflow-automation|workflow automation]], [[/blogs/ai-workflow-automation|AI workflow automation]] and [[/blogs/ai-implementation-strategy|AI implementation strategy]]. For Australian small businesses choosing a first AI project, see [[/blogs/ai-automation-australia|AI automation in Australia]]. If your processes still run on paper, email and spreadsheets, start with [[/blogs/workflow-digitization-australia|workflow digitisation for Australian SMEs]].",
         ],
       },
     ],
@@ -759,7 +759,7 @@ export const aiCorePosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Good workflow automation is mostly good handling: fresh data, idempotent actions, retries, error paths, alerts and owners. Start simple, document everything and add AI only where rules run out. Related: [[/blogs/business-process-automation|business process automation]], [[/blogs/ai-workflow-automation|AI workflow automation]] and [[/blogs/workflow-automation-vs-rpa|workflow automation vs RPA]].",
+          "Good workflow automation is mostly good handling: fresh data, idempotent actions, retries, error paths, alerts and owners. Start simple, document everything and add AI only where rules run out. Related: [[/blogs/business-process-automation|business process automation]], [[/blogs/ai-workflow-automation|AI workflow automation]] and [[/blogs/workflow-automation-vs-rpa|workflow automation vs RPA]]. If you are deciding between a platform and a build, see [[/blogs/low-code-vs-custom-software|low-code vs custom software]].",
         ],
       },
     ],

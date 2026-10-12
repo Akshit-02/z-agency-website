@@ -341,7 +341,7 @@ including your own monitoring time.`,
       {
         heading: "Conclusion",
         body: [
-          "The most useful AI automation for an Australian small business is rarely the most ambitious. It is a frequent, well-understood task, built mostly on rules with AI at the steps that need it, with a person approving anything that affects money, customers or rights. Score candidates for value, feasibility and risk, start in the top-right square with a risk score that lets you learn safely, and check privacy and marketing rules before personal information or outbound messages are involved.",
+          "The most useful AI automation for an Australian small business is rarely the most ambitious. It is a frequent, well-understood task, built mostly on rules with AI at the steps that need it, with a person approving anything that affects money, customers or rights. Score candidates for value, feasibility and risk, start in the top-right square with a risk score that lets you learn safely, and check privacy and marketing rules before personal information or outbound messages are involved. If the process you want to automate still runs on paper or spreadsheets, [[/blogs/workflow-digitization-australia|workflow digitisation]] is usually the first step.",
           "Once the first workflow has run reliably for a few months, the second is easier: the data is cleaner, staff trust the approach, and you have real numbers rather than projections. When you are ready to plan delivery, [[/blogs/ai-implementation-australia|our implementation guide]] walks through each step, and the [[/blogs/digital-product-development-australia|Australian digital product development guide]] covers the wider picture.",
         ],
         cta: {

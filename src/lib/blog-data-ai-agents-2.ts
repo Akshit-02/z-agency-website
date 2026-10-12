@@ -420,7 +420,7 @@ export const aiAgentPosts2: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "AI agents give property managers a practical way to handle the steady volume of tenant communication and maintenance coordination a portfolio generates, distinct from — and complementary to — the lead-generation agents used earlier in the real estate process. Start with maintenance triage or tenant communication, keep disputes and emergencies with your team, and expand from there. For off-plan and developer sales in the UAE, see [[/blogs/ai-real-estate-uae|AI for UAE real estate developers]].",
+          "AI agents give property managers a practical way to handle the steady volume of tenant communication and maintenance coordination a portfolio generates, distinct from — and complementary to — the lead-generation agents used earlier in the real estate process. Start with maintenance triage or tenant communication, keep disputes and emergencies with your team, and expand from there. For off-plan and developer sales in the UAE, see [[/blogs/ai-real-estate-uae|AI for UAE real estate developers]]. For the underlying platform requirements in Australia, including state-based rules, see [[/blogs/property-management-software-australia|property management software development]].",
         ],
       },
     ],
@@ -1459,7 +1459,7 @@ export const aiAgentPosts2: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "AI agents give accounting and tax practices a practical way to handle the volume of document processing, reconciliation and close preparation work the business runs on, without moving professional judgment or client advice out of an accountant's hands. Start with invoice processing or reconciliation, keep every final output under professional review, and expand from a proven workflow.",
+          "AI agents give accounting and tax practices a practical way to handle the volume of document processing, reconciliation and close preparation work the business runs on, without moving professional judgment or client advice out of an accountant's hands. Start with invoice processing or reconciliation, keep every final output under professional review, and expand from a proven workflow. For UK submission workflows, see [[/blogs/making-tax-digital-software-integration|Making Tax Digital software integration]].",
         ],
       },
     ],

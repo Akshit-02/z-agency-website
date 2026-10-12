@@ -413,8 +413,8 @@ export const commercePosts5: BlogPost[] = [
     bannerAlt:
       "Ecommerce personalization model: signals such as location, campaign, viewed items, purchase history and stated preferences feed rules, models and a holdout group, which drive placements on the homepage, category sort, search, product recommendations and cart or email.",
     date: "2026-09-29",
-    updated: "2026-09-29",
-    readingTime: "18 min read",
+    updated: "2026-10-10",
+    readingTime: "19 min read",
     relatedServiceSlugs: ["cro-audit", "ui-ux-design", "ai-automation"],
     relatedIndustrySlugs: ["ecommerce", "fashion-apparel", "beauty-personal-care"],
     faqs: [
@@ -572,6 +572,20 @@ export const commercePosts5: BlogPost[] = [
         heading: "Worked Example: Starting With Three Treatments",
         body: [
           "An illustrative scenario: a multi-category retailer starts personalization with three treatments rather than a full platform: contextual (local delivery promise and currency by market), segment-based (new visitors see bestsellers and guides; returning customers see “Buy again” and new arrivals in their categories) and behavioural (recently viewed and related items on category pages). Each runs with a 10% holdout. After two months, the team keeps the treatments that improved revenue per visitor and expands only those.",
+        ],
+      },
+      {
+        heading: "Personalization for Australian Stores",
+        body: [
+          "Personalization techniques are global; Australian privacy rules shape how data is collected and used.",
+        ],
+        checklist: [
+          "If covered by the Privacy Act, explain personalization in your privacy policy and collect only what you need.",
+          "The OAIC's guidance on tracking pixels says the business deploying a pixel is responsible for compliance and should minimize data and avoid sending sensitive information to third parties.",
+          "Offer a simple way to opt out of targeted marketing (APP 7).",
+          "Avoid personalization that reveals or infers sensitive information.",
+          "Test against a non-personalized baseline; personalization does not guarantee higher conversion.",
+          "See [[/blogs/ai-ecommerce-australia|AI ecommerce in Australia]].",
         ],
       },
       {

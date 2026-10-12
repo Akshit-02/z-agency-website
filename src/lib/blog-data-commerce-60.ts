@@ -217,7 +217,7 @@ export const commercePosts60: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Shopify Plus development is mostly about checkout extensibility, Functions, B2B, multi-store architecture, automation and governance. Use Plus capabilities deliberately, test anything that touches checkout, and choose headless only when justified. Related: [[/blogs/shopify-plus-vs-shopify|Shopify Plus vs Shopify]] and [[/blogs/headless-shopify-explained|headless Shopify explained]].",
+          "Shopify Plus development is mostly about checkout extensibility, Functions, B2B, multi-store architecture, automation and governance. Use Plus capabilities deliberately, test anything that touches checkout, and choose headless only when justified. Related: [[/blogs/shopify-plus-vs-shopify|Shopify Plus vs Shopify]] and [[/blogs/headless-shopify-explained|headless Shopify explained]]. If you are still choosing between Plus and a bespoke platform, see [[/blogs/shopify-plus-vs-custom-ecommerce|Shopify Plus vs custom ecommerce]].",
         ],
       },
     ],
@@ -430,7 +430,8 @@ export const commercePosts60: BlogPost[] = [
     bannerAlt:
       "Accessible store journey in a browser frame: skip link, visible focus and landmarks; labelled search; filters usable by keyboard and announced; images with alt text; variant buttons with names; add to cart with the status announced (highlighted); checkout with labels, errors in text and no time traps (highlighted); contrast and zoom to 200%; target size and no drag-only controls; and a note to test with keyboard and a screen reader on real journeys.",
     date: "2026-09-29",
-    readingTime: "18 min read",
+    updated: "2026-10-10",
+    readingTime: "19 min read",
     relatedServiceSlugs: ["ui-ux-design", "website-development", "shopify-development"],
     relatedIndustrySlugs: ["ecommerce", "retail", "fashion-apparel"],
     faqs: [
@@ -464,6 +465,13 @@ export const commercePosts60: BlogPost[] = [
         body: [
           "WCAG, published by the W3C, is the most widely used technical reference. WCAG 2.2 is the current Recommendation and adds criteria for focus visibility, target size, dragging, consistent help, redundant entry and accessible authentication (W3C WCAG 2.2). Level AA is the common target in policies and regulations.",
           "Legal obligations depend on where you operate and sell. In the EU, the European Accessibility Act covers ecommerce services and has applied since 28 June 2025, with national laws implementing it and some exemptions, such as for microenterprises providing services (European Commission). Other countries have their own laws, and case law varies. Treat WCAG as a technical guide and get legal advice on your specific obligations. See [[/blogs/ecommerce-compliance|ecommerce compliance]].",
+        ],
+      },
+      {
+        heading: "UK Retailers: Equality Act, EAA and Public Sector Rules",
+        body: [
+          "In England, Scotland and Wales, the Equality Act 2010 requires service providers, including online shops, to make reasonable adjustments so disabled people are not put at a substantial disadvantage. It sets no technical standard, and the duty is anticipatory and ongoing; WCAG 2.2 AA is the usual benchmark for showing what you have done. Northern Ireland has equivalent duties under the Disability Discrimination Act 1995.",
+          "UK retailers that sell to consumers in the EU are within the European Accessibility Act for those services, even though it is not UK law. Separate regulations apply to public sector websites and apps ([[https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps|GOV.UK]]), not to private retailers. In practice, audit the full journey (search, product pages, basket, checkout, account and returns), fix barriers in checkout first because they stop purchases, and keep a record of audits and fixes. Take legal advice on your specific obligations.",
         ],
       },
       {

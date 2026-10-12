@@ -786,7 +786,7 @@ export const aiCorePosts4: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "IDP succeeds when extraction is paired with validation, efficient review and clean integration, and when accuracy is measured on real documents. Related: [[/blogs/ai-document-extraction|AI document extraction]], [[/blogs/ai-invoice-processing|AI invoice processing]] and [[/blogs/rpa-vs-ai-automation|RPA vs AI automation]]. For Arabic and English documents, Emirates ID and UAE e-invoicing, see [[/blogs/ai-document-processing-uae|AI document processing for UAE businesses]].",
+          "IDP succeeds when extraction is paired with validation, efficient review and clean integration, and when accuracy is measured on real documents. Related: [[/blogs/ai-document-extraction|AI document extraction]], [[/blogs/ai-invoice-processing|AI invoice processing]] and [[/blogs/rpa-vs-ai-automation|RPA vs AI automation]]. For Arabic and English documents, Emirates ID and UAE e-invoicing, see [[/blogs/ai-document-processing-uae|AI document processing for UAE businesses]]. For Australian considerations such as Peppol, ABN validation and the December 2026 automated decision transparency rules, see [[/blogs/ai-document-processing-australia|AI document processing in Australia]].",
         ],
       },
     ],

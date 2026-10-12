@@ -172,7 +172,7 @@ export const aiOpsPosts9: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "AI onboarding is about a fast, real win with honest expectations. Introduce features in context, guide a first task, explain limits and data use, grow capability gradually and measure what users actually achieve.",
+          "AI onboarding is about a fast, real win with honest expectations. Introduce features in context, guide a first task, explain limits and data use, grow capability gradually and measure what users actually achieve. For onboarding across a whole SaaS product, including defining activation, see [[/blogs/saas-onboarding-optimization|SaaS onboarding optimisation]].",
         ],
       },
     ],

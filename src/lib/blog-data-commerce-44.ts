@@ -163,7 +163,7 @@ export const commercePosts44: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Monoliths, modular monoliths and microservices are tools for different team sizes and problems. Most ecommerce teams are well served by a SaaS core or a modular monolith, extracting services where there's a clear reason. For migrating from an older stack, see [[/blogs/legacy-ecommerce-migration|legacy ecommerce migration]].",
+          "Monoliths, modular monoliths and microservices are tools for different team sizes and problems. Most ecommerce teams are well served by a SaaS core or a modular monolith, extracting services where there's a clear reason. For migrating from an older stack, see [[/blogs/legacy-ecommerce-migration|legacy ecommerce migration]]. For SaaS and business applications, see [[/blogs/modular-monolith-vs-microservices|modular monolith vs microservices]].",
         ],
       },
     ],

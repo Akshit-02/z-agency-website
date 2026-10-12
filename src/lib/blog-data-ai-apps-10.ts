@@ -191,7 +191,7 @@ export const aiAppsPosts10: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "AI privacy is data flow design: collect less, protect what you keep, choose providers carefully and make rights enforceable. Related: [[/blogs/ai-security-business-applications|AI security]] and [[/blogs/ai-governance-framework|AI governance]].",
+          "AI privacy is data flow design: collect less, protect what you keep, choose providers carefully and make rights enforceable. Related: [[/blogs/ai-security-business-applications|AI security]] and [[/blogs/ai-governance-framework|AI governance]]. For handling access requests that include AI-processed data in the UK, see [[/blogs/subject-access-request-automation-uk|subject access request automation]].",
         ],
       },
     ],
@@ -579,14 +579,14 @@ export const aiAppsPosts10: BlogPost[] = [
     title: "AI Proof of Concept vs Pilot vs Production: How to Move Beyond AI Experiments",
     seoTitle: "AI POC vs Pilot vs Production: Stages, Criteria and Gates",
     excerpt:
-      "The difference between an AI proof of concept, a pilot and production: the question each stage answers, scope, users and data, success criteria, ownership, production readiness checklist and why AI projects stall in pilot.",
+      "AI proof of concept vs pilot vs production: what each stage answers, acceptance criteria, representative test cases, readiness checks and why projects stall.",
     category: "AI & Automation",
     banner: "pocpilotprod",
     bannerAlt:
       "Comparison of proof of concept, pilot (highlighted) and production by the question each answers, users, data, duration and exit outcome.",
     date: "2026-10-02",
-    updated: "2026-10-07",
-    readingTime: "7 min read",
+    updated: "2026-10-10",
+    readingTime: "8 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["b2b-enterprise", "startups", "saas-technology"],
     relatedSlugs: ["ai-implementation-strategy", "enterprise-ai-implementation", "ai-model-evaluation"],
@@ -599,7 +599,11 @@ export const aiAppsPosts10: BlogPost[] = [
       { q: "Should every POC become a pilot?", a: "No. Stopping after a POC that shows something is not feasible is a good outcome. Each stage gate should allow stop, change or continue." },
       { q: "Who should own each stage?", a: "Technical teams often lead POCs; pilots need a business owner accountable for outcomes; production needs both, plus operations and support ownership." },
       { q: "How do you budget for production?", a: "Include integration, hardening, security, monitoring, support and running costs (model usage, infrastructure, human review), not only the build." },
-    ],
+          {
+        q: "What should a successful AI proof of concept prove?",
+        a: "That the approach meets acceptance criteria agreed in advance, on representative real cases including difficult ones, at an acceptable cost and latency, with failure modes you understand and can manage. A demo on hand-picked examples proves little; decide proceed, change or stop based on the evidence.",
+      },
+],
     content: [
       {
         heading: "Quick answer",
@@ -767,6 +771,21 @@ export const aiAppsPosts10: BlogPost[] = [
           title: "Want a clear path from AI experiment to production?",
           description: "Talk to ZSpace Labs about [[/services/ai-automation|AI delivery from POC to production]] and [[/services/website-development|production engineering]].",
         },
+      },
+      {
+        heading: "Designing a Proof of Concept That Answers the Right Question",
+        body: [
+          "A proof of concept should test one business hypothesis with representative data and agreed acceptance criteria, so the decision afterwards is evidence-based.",
+        ],
+        checklist: [
+          "**Hypothesis:** for example, 'AI can extract supplier invoice fields with at least the accuracy of our current manual process'.",
+          "**Representative test cases:** real examples, including the messy and rare ones, with correct answers prepared by people who know the work.",
+          "**Data readiness:** confirm you can legally and practically use the data, including privacy obligations and where processing happens.",
+          "**Acceptance criteria, set in advance:** accuracy, error types that are unacceptable, latency and cost per transaction.",
+          "**Failure modes:** record how and when the system fails, not just its average score; see [[/blogs/ai-model-evaluation|AI model evaluation]].",
+          "**Decision:** proceed to a pilot, change approach, or stop, based on the criteria.",
+          "Australian businesses: see [[/blogs/ai-implementation-australia|implementing AI in an Australian small business]] and [[/blogs/ai-automation-cost-australia|AI automation costs in Australia]].",
+        ],
       },
       {
         heading: "Conclusion",

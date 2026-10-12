@@ -903,7 +903,7 @@ export const webDevPosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Neither model is a categorically better choice — a skilled freelancer can be the right call for a focused, well-scoped project, and an agency's team structure earns its cost on larger, more complex or longer-running work. Match the decision to your project's actual complexity and risk tolerance.",
+          "Neither model is a categorically better choice — a skilled freelancer can be the right call for a focused, well-scoped project, and an agency's team structure earns its cost on larger, more complex or longer-running work. Match the decision to your project's actual complexity and risk tolerance. If you need extra capacity inside your own team, see [[/blogs/software-team-augmentation-australia|software team augmentation]].",
         ],
       },
     ],

@@ -198,7 +198,7 @@ export const aiAppsPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "AI turns legacy modernization from archaeology into engineering: understand, pin behaviour with tests, change in slices and verify with parallel runs. Related: [[/blogs/ai-test-generation|AI test generation]] and [[/blogs/ai-code-documentation|AI code documentation]]. For a full modernisation roadmap, see [[/blogs/software-modernization-uae|legacy software modernisation for UAE companies]].",
+          "AI turns legacy modernization from archaeology into engineering: understand, pin behaviour with tests, change in slices and verify with parallel runs. Related: [[/blogs/ai-test-generation|AI test generation]] and [[/blogs/ai-code-documentation|AI code documentation]]. For a full modernisation roadmap, see [[/blogs/software-modernization-uae|legacy software modernisation for UAE companies]]. For the wider business decision (which systems to retain, rehost, refactor or replace, and how to migrate data safely), see [[/blogs/legacy-software-modernization-australia|legacy software modernisation for Australian businesses]].",
           "For a repeatable workflow, write a specification of current behaviour before changing it and have agents work from that spec in small, reviewed tasks; see [[/blogs/spec-driven-development|spec-driven development]]. How team roles shift around this work is covered in [[/blogs/ai-native-engineering-team|what an AI-native software team looks like]].",
         ],
       },
@@ -789,7 +789,7 @@ export const aiAppsPosts3: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Automate recruitment administration generously and candidate judgement carefully, if at all. Communicate openly, audit where required and keep people deciding. Related: [[/blogs/ai-hr-automation|AI HR automation]] and [[/blogs/ai-governance-framework|AI governance]].",
+          "Automate recruitment administration generously and candidate judgement carefully, if at all. Communicate openly, audit where required and keep people deciding. Related: [[/blogs/ai-hr-automation|AI HR automation]] and [[/blogs/ai-governance-framework|AI governance]]. For the wider recruitment platform and Australian candidate privacy, see [[/blogs/recruitment-software-development-australia|recruitment software development]].",
         ],
       },
     ],

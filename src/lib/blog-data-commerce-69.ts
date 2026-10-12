@@ -252,7 +252,8 @@ export const commercePosts69: BlogPost[] = [
     bannerAlt:
       "Comparison of a mobile website and a native app across reach, search and ads, notifications, device features, release cycle and best use, noting that most stores need a strong mobile site first and an app is an addition.",
     date: "2026-10-01",
-    readingTime: "14 min read",
+    updated: "2026-10-10",
+    readingTime: "15 min read",
     relatedServiceSlugs: ["mobile-app-development", "website-development", "shopify-development"],
     relatedIndustrySlugs: ["ecommerce", "retail", "d2c-consumer"],
     faqs: [
@@ -418,6 +419,19 @@ export const commercePosts69: BlogPost[] = [
           title: "Ready to plan your mobile channel mix?",
           description: "Talk to ZSpace Labs about [[/services/mobile-app-development|ecommerce app development]], [[/services/website-development|mobile web builds]] and [[/services/cro-audit|mobile conversion audits]].",
         },
+      },
+      {
+        heading: "Australian Considerations for Retail Apps",
+        body: [
+          "Before committing to an app, Australian retailers should weigh a few local costs and behaviors.",
+        ],
+        checklist: [
+          "Store costs: Apple's developer program fee and store commissions on digital goods; Google changed Play service fees for Australian users from 30 September 2026. Physical goods are usually paid through your own payment provider.",
+          "Ongoing maintenance: yearly OS and store requirement updates; see [[/blogs/mobile-app-maintenance|mobile app maintenance]].",
+          "Adoption: apps work best for frequent, repeat purchases, loyalty and account features; most first visits will still be on the mobile web.",
+          "Notifications: marketing push and SMS need consent; factual order updates are treated differently.",
+          "Budgeting: see [[/blogs/mobile-app-development-cost-australia|mobile app development cost in Australia]].",
+        ],
       },
       {
         heading: "Conclusion",

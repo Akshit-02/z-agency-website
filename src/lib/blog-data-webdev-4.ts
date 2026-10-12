@@ -643,7 +643,7 @@ export const webDevPosts4: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A healthcare website succeeds by making care genuinely easy to find and access — clear services and provider information, accessible design for a broad patient audience, low-friction appointment paths, and careful, privacy-conscious handling of any personal information the site collects.",
+          "A healthcare website succeeds by making care genuinely easy to find and access — clear services and provider information, accessible design for a broad patient audience, low-friction appointment paths, and careful, privacy-conscious handling of any personal information the site collects. For patient apps and connecting clinical systems in Australia, see [[/blogs/telehealth-app-development-australia|telehealth app development]] and [[/blogs/healthcare-software-integration-australia|healthcare software integration]].",
         ],
       },
     ],

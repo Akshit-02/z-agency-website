@@ -368,7 +368,7 @@ export const commercePosts75: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Omnichannel architecture rests on clear systems of record, events for fast-changing data, central inventory and routing, careful identity matching and continuous monitoring. Related: [[/blogs/retail-ecommerce-integration|retail integration]], [[/blogs/retail-inventory-visibility|inventory visibility]] and [[/blogs/ecommerce-event-driven-architecture|event-driven architecture]].",
+          "Omnichannel architecture rests on clear systems of record, events for fast-changing data, central inventory and routing, careful identity matching and continuous monitoring. Related: [[/blogs/retail-ecommerce-integration|retail integration]], [[/blogs/retail-inventory-visibility|inventory visibility]] and [[/blogs/ecommerce-event-driven-architecture|event-driven architecture]]. For connecting Amazon and eBay specifically, see [[/blogs/amazon-ebay-marketplace-integration|marketplace integration for retailers]].",
         ],
       },
     ],

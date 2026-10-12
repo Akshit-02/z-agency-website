@@ -432,7 +432,7 @@ export const commercePosts67: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Data migration succeeds through mapping, repeatable transformation, ordered loading, thorough validation, rehearsals and a delta run at launch, with the old system kept ready for rollback. Related: [[/blogs/ecommerce-migration-testing|migration testing]] and [[/blogs/legacy-ecommerce-migration|legacy ecommerce migration]].",
+          "Data migration succeeds through mapping, repeatable transformation, ordered loading, thorough validation, rehearsals and a delta run at launch, with the old system kept ready for rollback. Related: [[/blogs/ecommerce-migration-testing|migration testing]] and [[/blogs/legacy-ecommerce-migration|legacy ecommerce migration]]. For migrations between business systems such as CRM, ERP and practice software, see [[/blogs/data-migration-australia|data migration planning]].",
         ],
       },
     ],

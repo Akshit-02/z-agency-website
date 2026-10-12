@@ -350,7 +350,7 @@ export const commercePosts36: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Good subscription pricing is simple, honest and predictable: few plans, clear savings, disclosed intro offers and notice before changes. It attracts subscribers who stay because they understand what they're paying for. For whether subscriptions suit your products at all, see [[/blogs/subscription-ecommerce-vs-one-time-purchase|subscription vs one-time purchase]].",
+          "Good subscription pricing is simple, honest and predictable: few plans, clear savings, disclosed intro offers and notice before changes. It attracts subscribers who stay because they understand what they're paying for. For whether subscriptions suit your products at all, see [[/blogs/subscription-ecommerce-vs-one-time-purchase|subscription vs one-time purchase]]. For B2B software pricing pages, see [[/blogs/saas-pricing-page-optimization|SaaS pricing page optimisation]].",
         ],
       },
     ],

@@ -222,7 +222,7 @@ export const commercePosts17: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A subscription store works when the product earns repeat use, the offer is clear, billing is reliable and subscribers control their plan. Build the portal, failed-payment handling and operations as carefully as the signup, and let customers leave easily. For Shopify, see [[/blogs/shopify-subscription-store|Shopify subscription store]]; for retention overall, see [[/blogs/ecommerce-customer-retention|customer retention]].",
+          "A subscription store works when the product earns repeat use, the offer is clear, billing is reliable and subscribers control their plan. Build the portal, failed-payment handling and operations as carefully as the signup, and let customers leave easily. For Shopify, see [[/blogs/shopify-subscription-store|Shopify subscription store]]; for retention overall, see [[/blogs/ecommerce-customer-retention|customer retention]]. Selling subscriptions in Australia? [[/blogs/subscription-ecommerce-australia|Subscription ecommerce in Australia]] covers the 2027 cancellation and drip pricing rules, surcharging and PayTo.",
           "Related: [[/blogs/beauty-ecommerce-subscription|beauty subscriptions]] and [[/blogs/subscription-food-ecommerce|food subscriptions]].",
         ],
       },

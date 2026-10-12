@@ -192,7 +192,7 @@ export const aiOpsPosts12: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Self-hosting gives control at the price of responsibility. Choose it for clear reasons, check licences, size hardware for real workloads, use a proper inference engine, secure and monitor it, and compare total cost honestly with hosted APIs.",
+          "Self-hosting gives control at the price of responsibility. Choose it for clear reasons, check licences, size hardware for real workloads, use a proper inference engine, secure and monitor it, and compare total cost honestly with hosted APIs. For Australian deployment choices and data residency, see [[/blogs/private-ai-development-australia|private AI development in Australia]].",
           "Self-hosting is often one half of a hybrid design; see [[/blogs/hybrid-ai-architecture|local AI vs cloud AI: hybrid architecture]] for routing and fallback between self-hosted and hosted models.",
         ],
       },

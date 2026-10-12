@@ -169,7 +169,7 @@ export const commercePosts82: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Queues make ecommerce resilient when work is split sensibly, consumers are idempotent, retries are controlled, dead letters are watched and flows are monitored. Related: [[/blogs/ecommerce-event-driven-architecture|event-driven architecture]], [[/blogs/ecommerce-observability|observability]] and [[/blogs/ecommerce-disaster-recovery|disaster recovery]].",
+          "Queues make ecommerce resilient when work is split sensibly, consumers are idempotent, retries are controlled, dead letters are watched and flows are monitored. Related: [[/blogs/ecommerce-event-driven-architecture|event-driven architecture]], [[/blogs/ecommerce-observability|observability]] and [[/blogs/ecommerce-disaster-recovery|disaster recovery]]. For long-running, multi-step processes, see [[/blogs/durable-workflows-vs-message-queues|durable workflows vs message queues]].",
         ],
       },
     ],
@@ -513,7 +513,7 @@ export const commercePosts82: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Ecommerce observability works when technical signals and business metrics are watched together, alerts reflect customer impact, owners and runbooks exist and every incident improves the system. Related: [[/blogs/ecommerce-disaster-recovery|disaster recovery]] and [[/blogs/ecommerce-scalability|scalability]].",
+          "Ecommerce observability works when technical signals and business metrics are watched together, alerts reflect customer impact, owners and runbooks exist and every incident improves the system. Related: [[/blogs/ecommerce-disaster-recovery|disaster recovery]] and [[/blogs/ecommerce-scalability|scalability]]. For applications beyond ecommerce, see [[/blogs/application-monitoring-observability|application monitoring and observability]].",
         ],
       },
     ],
@@ -712,7 +712,7 @@ export const commercePosts82: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Disaster recovery works when RPO and RTO are agreed per system, the strategy matches them, backups are protected and restorable, integrations and payments are reconciled, rollback is fast and everything is tested. Related: [[/blogs/ecommerce-observability|observability]] and [[/blogs/ecommerce-scalability|scalability]]. For moving workloads to the cloud, including UAE regions, see [[/blogs/cloud-migration-uae|cloud migration for UAE businesses]].",
+          "Disaster recovery works when RPO and RTO are agreed per system, the strategy matches them, backups are protected and restorable, integrations and payments are reconciled, rollback is fast and everything is tested. Related: [[/blogs/ecommerce-observability|observability]] and [[/blogs/ecommerce-scalability|scalability]]. For moving workloads to the cloud, including UAE regions, see [[/blogs/cloud-migration-uae|cloud migration for UAE businesses]]. For continuity planning across digital products in Australia, see [[/blogs/business-continuity-digital-products-australia|business continuity for digital products]].",
         ],
       },
     ],

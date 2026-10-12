@@ -790,7 +790,8 @@ export const designPosts: BlogPost[] = [
     category: "UI/UX",
     banner: "journeymap",
     date: "2026-09-25",
-    readingTime: "14 min read",
+    updated: "2026-10-10",
+    readingTime: "15 min read",
     relatedServiceSlugs: ["ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "healthcare-healthtech", "fintech"],
     faqs: [
@@ -803,7 +804,11 @@ export const designPosts: BlogPost[] = [
       { q: "Can research be done on a small budget?", a: "Yes. Analytics review, a handful of remote interviews and quick unmoderated tests can deliver valuable insight at low cost." },
       { q: "What are personas?", a: "Summaries of research about distinct user groups, describing their goals, contexts and pain points. They should be based on research, not invented." },
       { q: "How do you turn research into design decisions?", a: "Synthesize findings into themes, prioritize problems by impact, write clear problem statements, and share them with the whole team so decisions reference evidence." },
-    ],
+          {
+        q: "How is user research different for B2B software?",
+        a: "B2B research has to cover several roles per customer (buyers, administrators, daily users, approvers), complex workflows across systems, and confidentiality constraints. Recruit through account teams with permission, observe real work in context, map workflows across roles, and combine small-sample interviews with analytics and support data.",
+      },
+],
     content: [
       {
         heading: "Quick answer",
@@ -904,9 +909,23 @@ export const designPosts: BlogPost[] = [
         },
       },
       {
+        heading: "Research for B2B and Complex Workflow Software",
+        body: [
+          "B2B products have several roles in one customer: the buyer, administrators, daily users and approvers often want different things. Research needs to cover each role and the workflow between them, not just the person who signed the contract.",
+        ],
+        checklist: [
+          "Recruit through customer success and account managers, with the customer's permission.",
+          "Observe real work in context (contextual inquiry) where possible; workarounds and spreadsheets reveal unmet needs.",
+          "Map the workflow across roles and systems before designing screens.",
+          "Respect confidentiality: agree what you can record, use NDAs where needed, and de-identify notes.",
+          "Expect small samples; combine interviews with product analytics and support data.",
+          "Test with realistic data and permissions, not empty demo accounts.",
+        ],
+      },
+      {
         heading: "Conclusion",
         body: [
-          "Good user research answers specific questions with the right methods, from representative people, and turns findings into decisions the whole team understands. Start small with analytics and a few interviews, then make research a habit. Next, see [[/blogs/usability-testing|usability testing]] and the [[/blogs/product-design-guide|product design guide]].",
+          "Good user research answers specific questions with the right methods, from representative people, and turns findings into decisions the whole team understands. Start small with analytics and a few interviews, then make research a habit. Next, see [[/blogs/usability-testing|usability testing]] and the [[/blogs/product-design-guide|product design guide]]. For a government model of research-led delivery, see [[/blogs/gds-service-standard-for-product-teams|the GDS Service Standard for product teams]].",
           "For related guides, see [[/blogs/ecommerce-conversion-research|ecommerce conversion research]].",
         ],
       },

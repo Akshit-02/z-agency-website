@@ -906,7 +906,7 @@ export const webDevPosts7: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "The right CMS fits your editors, your content and your developer capacity. Work through the framework above, involve the people who'll use it daily, and confirm integrations and SEO control before signing. For the two most common trade-offs, see [[/blogs/headless-cms-vs-traditional-cms|headless vs traditional CMS]] and [[/blogs/custom-cms-vs-wordpress|custom CMS vs WordPress]].",
+          "The right CMS fits your editors, your content and your developer capacity. Work through the framework above, involve the people who'll use it daily, and confirm integrations and SEO control before signing. For the two most common trade-offs, see [[/blogs/headless-cms-vs-traditional-cms|headless vs traditional CMS]] and [[/blogs/custom-cms-vs-wordpress|custom CMS vs WordPress]]. If you run several brands or markets, see [[/blogs/multi-brand-website-architecture|multi-brand website architecture]].",
         ],
       },
     ],

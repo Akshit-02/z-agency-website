@@ -333,7 +333,7 @@ export const auTrustPosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Website security for an Australian small business is not a product you buy once. It is a short set of controls (MFA and passkeys, timely patching, least privilege, isolated and tested backups, monitoring) kept up on a calendar, plus a clear view of which legal duties apply to you and a runbook for when something goes wrong. The Essential Eight gives you a familiar structure for the first part; the OAIC and Home Affairs set the rules for the second.",
+          "Website security for an Australian small business is not a product you buy once. It is a short set of controls (MFA and passkeys, timely patching, least privilege, isolated and tested backups, monitoring) kept up on a calendar, plus a clear view of which legal duties apply to you and a runbook for when something goes wrong. The Essential Eight gives you a familiar structure for the first part; the OAIC and Home Affairs set the rules for the second. If you are commissioning a portal, booking system or other customer-facing application, the build-time checklist in [[/blogs/secure-web-application-development-australia|building a secure customer-facing web application]] complements this one.",
           "Start with the accounts that control your site, check your runtime versions against the dates above, and write the one-page runbook this month. Those three steps close more risk than any single tool.",
         ],
         cta: {
@@ -354,7 +354,8 @@ export const auTrustPosts: BlogPost[] = [
     sceneKind: "workflow",
     bannerAlt: "An online store, a CRM, an accounting system, a payment provider and a shipping service connected through APIs and signed webhooks, with a queue, retries and monitoring in the middle",
     date: "2026-10-09",
-    readingTime: "23 min read",
+    updated: "2026-10-09",
+    readingTime: "24 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["ecommerce", "retail", "professional-services", "logistics-supply-chain", "b2b-enterprise", "saas-technology"],
     relatedSlugs: ["website-api-integration", "ecommerce-erp-integration", "ecommerce-webhooks"],
@@ -391,7 +392,11 @@ export const auTrustPosts: BlogPost[] = [
         q: "Can we pull customers' banking data through the Consumer Data Right?",
         a: "Not simply by calling an API. Access to consumer data under the Consumer Data Right is regulated by the ACCC and OAIC and is limited to accredited data recipients and other arrangements permitted by the rules. The regime covers banking and energy, with non-bank lending being phased in during 2026. If your product depends on CDR data, check cdr.gov.au and take advice before designing it.",
       },
-    ],
+          {
+        q: "When should we use an integration platform instead of custom code?",
+        a: "Use an integration platform when most flows are standard connections between popular SaaS products and you have limited engineering capacity. Use custom integration services when rules are complex, volumes are high, or you need full control over testing, monitoring and data handling. Many organisations combine both, with clear rules for which flows go where.",
+      },
+],
     content: [
       {
         heading: "What is API integration, and what should Australian businesses connect first?",
@@ -659,6 +664,30 @@ export const auTrustPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Enterprise integration architecture: point-to-point, platform or integration service",
+        body: [
+          "As the number of connected systems grows, how integrations are organised matters as much as each individual connection. Larger organisations, and growing ones with several core systems such as an ERP, CRM, ecommerce platform and data warehouse, usually move away from ad hoc point-to-point links.",
+        ],
+        checklist: [
+          "**Ownership:** a named owner for each integration and each data domain, not just for each system.",
+          "**Contracts:** documented APIs and message formats, versioned, with consumers known.",
+          "**Observability:** correlation IDs across systems, dashboards for failures and latency, alerts to owners; see [[/blogs/application-monitoring-observability|application monitoring]].",
+          "**Security:** service accounts with least privilege, secrets in a vault, and authorisation on every API; see [[/blogs/api-security-best-practices|API security best practices]].",
+          "**Phasing:** integrate the highest-value flow first, prove error handling and reconciliation, then add flows one at a time.",
+          "**Compatibility:** confirm each product's actual API capabilities and licence terms before designing; do not assume a vendor supports a flow because a brochure says 'integrates with'.",
+          "**Customer data:** for joining customer records across systems, see [[/blogs/customer-data-integration-australia|customer data integration]].",
+        ],
+        table: {
+          headers: ["Approach", "Fits when", "Watch for"],
+          rows: [
+            ["**Point-to-point**", "A few systems, simple flows", "Sprawl, duplicated logic, nobody can see the whole picture"],
+            ["**Integration platform (iPaaS)**", "Many SaaS connectors, standard flows, limited engineering capacity", "Licence costs, platform limits, logic spread across many flows"],
+            ["**Custom integration service or event bus**", "Complex rules, high volume, need for control and testing", "Engineering ownership, monitoring and documentation"],
+            ["**Hybrid**", "Standard connectors via iPaaS, complex flows custom", "Clear rules for which goes where"],
+          ],
+        },
+      },
+      {
         heading: "Sources",
         body: [
           "**Australian systems and schemes:** [[https://developer.xero.com/documentation/|Xero Developer documentation]]; [[https://developer.myob.com/|MYOB Developer]]; [[https://developers.auspost.com.au/|Australia Post Developer Centre]]; [[https://www.ato.gov.au/businesses-and-organisations/einvoicing/about-peppol/identifying-australian-businesses-on-the-peppol-network|ATO, identifying Australian businesses on the Peppol network]]; [[https://www.finance.gov.au/publications/resource-management-guides/supplier-pay-time-or-pay-interest-policy-rmg-417|Department of Finance, RMG 417]]; [[https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/what-is-stp|ATO, what is STP]]; [[https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst|ATO, GST]]; [[https://www.cdr.gov.au/|Consumer Data Right]].",
@@ -670,7 +699,7 @@ export const auTrustPosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "API integration for an Australian business is less about choosing a clever tool and more about being clear on a few things: which flows matter most, which system owns each record, how ABN, GST, AUD and address data are mapped, and what happens when a message fails. Get those right and the choice between a connector, an integration platform and a custom service becomes straightforward.",
+          "API integration for an Australian business is less about choosing a clever tool and more about being clear on a few things: which flows matter most, which system owns each record, how ABN, GST, AUD and address data are mapped, and what happens when a message fails. Get those right and the choice between a connector, an integration platform and a custom service becomes straightforward. Integration is central to [[/blogs/customer-portal-development-australia|customer portals]], [[/blogs/booking-system-development-australia|booking systems]] and [[/blogs/b2b-portal-development-australia|B2B ordering portals]], which each have their own guide. For the engineering patterns that stop integrations duplicating or losing data, see [[/blogs/api-integration-reliability|API integration reliability]]. For Xero and MYOB specifics, see [[/blogs/accounting-software-integration-australia|accounting software integration in Australia]]. For choosing between APIs, events and queues as integrations grow, see [[/blogs/integration-architecture-patterns|integration architecture patterns]].",
           "Start with order to cash or whichever flow has the highest cost of failure, write its flow card and field ownership table, and build the dead-letter queue and reconciliation from day one rather than after the first missed invoice.",
         ],
         cta: {

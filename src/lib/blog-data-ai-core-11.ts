@@ -19,13 +19,14 @@ export const aiCorePosts11: BlogPost[] = [
     title: "Voice AI Agent Development: A Complete Guide for Businesses",
     seoTitle: "Voice AI Agent Development: Architecture, Latency and Telephony",
     excerpt:
-      "How to build voice AI agents: speech-to-text, language models and tools, text-to-speech, speech-to-speech models, turn-taking and interruptions, latency budgets, telephony, testing, compliance and deployment.",
+      "How to build voice AI agents: speech recognition, models, speech synthesis, turn-taking, latency, telephony, testing, compliance and Australian call rules.",
     category: "AI & Automation",
     banner: "voicepipeline",
     bannerAlt:
       "Voice AI pipeline: caller audio, speech to text, language model with tools (highlighted), text to speech, caller hears, turn detection; the note says every step spends part of one latency budget.",
     date: "2026-10-02",
-    readingTime: "9 min read",
+    updated: "2026-10-10",
+    readingTime: "10 min read",
     relatedServiceSlugs: ["ai-automation", "mobile-app-development"],
     relatedIndustrySlugs: ["healthcare-healthtech", "travel-hospitality", "real-estate"],
     relatedSlugs: ["ai-voice-agents-customer-service", "ai-receptionist", "ai-call-automation"],
@@ -40,7 +41,11 @@ export const aiCorePosts11: BlogPost[] = [
       { q: "How do you test a voice agent?", a: "With scripted and simulated calls covering accents, noise, interruptions, silence, wrong numbers, edge cases and escalation, measuring task success, latency and transcription accuracy, plus reviewed live pilot calls." },
       { q: "What does a voice agent cost to run?", a: "Per-minute telephony, speech recognition and synthesis or realtime model costs, plus language model tokens and tool calls. Measure cost per handled call in a pilot." },
       { q: "Should the voice agent handle every call?", a: "No. Route urgent, sensitive or complex calls to people, and always provide a clear way to reach a human." },
-    ],
+          {
+        q: "Do Australian rules apply to AI voice agents making calls?",
+        a: "Yes. An automated agent making telemarketing calls is subject to the same Do Not Call Register rules and calling hours as a person, and call recording laws differ between states and territories. Tell callers they are speaking with an automated system, offer a human, and get legal advice on consent and recording.",
+      },
+],
     content: [
       {
         heading: "Quick answer",
@@ -216,6 +221,20 @@ export const aiCorePosts11: BlogPost[] = [
           title: "Ready to build a voice agent callers do not hang up on?",
           description: "Talk to ZSpace Labs about [[/services/ai-automation|voice AI agent development]] and [[/services/mobile-app-development|in-app voice experiences]].",
         },
+      },
+      {
+        heading: "Voice Agents in Australia",
+        body: [
+          "Voice agents in Australia face a few specific rules and expectations. For the customer service context, see [[/blogs/ai-customer-service-australia|AI customer service in Australia]].",
+        ],
+        checklist: [
+          "**Outbound calls:** telemarketing calls must follow the Do Not Call Register rules and the industry standard's calling hours (for example 9am to 8pm on weekdays, no calls on Sundays or public holidays), based on the recipient's local time ([[https://www.donotcall.gov.au/industry/industry-overview/industry-standards|Do Not Call Register]]).",
+          "**Call recording:** recording and listening laws differ between states and territories; tell callers if calls are recorded and get legal advice on consent requirements.",
+          "**Disclosure:** tell callers they are speaking with an automated agent, and offer a person.",
+          "**SMS follow-ups:** marketing messages need consent under the Spam Act; factual service messages are treated differently.",
+          "**Accents and languages:** test speech recognition with Australian accents and the languages your callers use; see [[/blogs/multilingual-ai-development-australia|multilingual AI]].",
+          "**Privacy:** recordings and transcripts are personal information; set retention and access rules.",
+        ],
       },
       {
         heading: "Conclusion",

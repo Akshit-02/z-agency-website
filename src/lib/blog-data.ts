@@ -216,6 +216,45 @@ import { auProductPosts } from "./blog-data-au-product";
 import { auCommercePosts } from "./blog-data-au-commerce";
 import { auCommercePosts2 } from "./blog-data-au-commerce-2";
 import { auTrustPosts } from "./blog-data-au-trust";
+import { auMobilePosts } from "./blog-data-au-mobile";
+import { auBusinessSoftwarePosts } from "./blog-data-au-business-software";
+import { auOperationsPosts } from "./blog-data-au-operations";
+import { auPortalPosts } from "./blog-data-au-portals";
+import { auPlatformPosts } from "./blog-data-au-platforms";
+import { auVisibilityPosts } from "./blog-data-au-visibility";
+import { auIndustryPosts1 } from "./blog-data-au-industry-1";
+import { auIndustryPosts2 } from "./blog-data-au-industry-2";
+import { auHealthEducationPosts } from "./blog-data-au-health-education";
+import { auAppliedAiPosts } from "./blog-data-au-applied-ai";
+import { auSaasProductPosts } from "./blog-data-au-saas-product";
+import { auDataPaymentPosts } from "./blog-data-au-data-payments";
+import { auQualityPosts } from "./blog-data-au-quality";
+import { auSecurityOpsPosts } from "./blog-data-au-security-ops";
+import { auEngineeringOpsPosts } from "./blog-data-au-engineering-ops";
+import { auAiEngineeringPosts } from "./blog-data-au-ai-engineering";
+import { auRetailHospitalityPosts } from "./blog-data-au-retail-hospitality";
+import { auSectorPlatformPosts } from "./blog-data-au-sector-platforms";
+import { auSaasEngineeringPosts } from "./blog-data-au-saas-engineering";
+import { auDeliveryGovernancePosts } from "./blog-data-au-delivery-governance";
+import { auIndustryPosts3 } from "./blog-data-au-industry-3";
+import { auSaasGrowthPosts } from "./blog-data-au-saas-growth";
+import { auWebOpsPosts } from "./blog-data-au-web-ops";
+import { auBuildDecisionPosts } from "./blog-data-au-build-decisions";
+import { auDataPlatformPosts } from "./blog-data-au-data-platforms";
+import { auCloudDeliveryPosts } from "./blog-data-au-cloud-delivery";
+import { auBusinessSystemsPosts } from "./blog-data-au-business-systems";
+import { auProductPracticePosts } from "./blog-data-au-product-practice";
+import { auIntegrationArchPosts } from "./blog-data-au-integration-arch";
+import { auFintechSecurityPosts } from "./blog-data-au-fintech-security";
+import { auOpsMobilePosts } from "./blog-data-au-ops-mobile";
+import { auCommerceIdentityPosts } from "./blog-data-au-commerce-identity";
+import { auOpsReliabilityPosts } from "./blog-data-au-ops-reliability";
+import { ukRegulatedPosts } from "./blog-data-uk-regulated";
+import { identityReliabilityPosts } from "./blog-data-identity-reliability";
+import { ukBusinessPosts } from "./blog-data-uk-business";
+import { buildIntegrationPosts } from "./blog-data-build-integration";
+import { ukPublicDigitalPosts } from "./blog-data-uk-public-digital";
+import { deliveryWebPosts } from "./blog-data-delivery-web";
 
 export type BlogSection = {
   heading: string;
@@ -730,7 +769,8 @@ export const posts: BlogPost[] = [
     category: "UI/UX",
     banner: "designsystemflow",
     date: "2025-12-15",
-    readingTime: "13 min read",
+    updated: "2026-10-09",
+    readingTime: "14 min read",
     relatedServiceSlugs: ["ui-ux-design", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "fintech"],
     faqs: [
@@ -770,7 +810,11 @@ export const posts: BlogPost[] = [
         q: "Should we use an existing design system like Material Design?",
         a: "Existing systems and component libraries can be a good starting point, especially for internal tools. Most products still customize tokens and components to reflect their brand.",
       },
-    ],
+          {
+        q: "Do we need a design system or just a component library?",
+        a: "For one product and a small team, a well-built component library with brief documentation is usually enough. A full design system with tokens, patterns, governance and versioning is justified when several products, platforms or teams must stay consistent, or when accessibility and brand requirements are strict. Start small and grow it as reuse increases.",
+      },
+],
     content: [
       {
         heading: "Quick answer",
@@ -894,9 +938,32 @@ export const posts: BlogPost[] = [
         },
       },
       {
+        heading: "When a Design System Is Justified, and When a Component Library Is Enough",
+        body: [
+          "Not every product needs a full design system. A shared component library with a few documented patterns is often enough for one product and a small team. A fuller system earns its cost when several products, platforms or teams must stay consistent, when accessibility and brand requirements are strict, or when design and engineering keep rebuilding the same things.",
+        ],
+        checklist: [
+          "**Governance:** name an owner, define how teams propose and contribute changes, and review regularly.",
+          "**Versioning:** version tokens and components semantically, publish changelogs and deprecate with notice so product teams can upgrade safely.",
+          "**Documentation:** usage guidance, do and do not examples, accessibility notes and code examples for each component.",
+          "**Accessibility:** build WCAG 2.2 requirements into components, including focus visibility, target size and keyboard behavior, so every product inherits them; see [[/blogs/accessibility-testing-australia|accessibility testing]].",
+          "**Developer handover:** tokens exported to code, components in the same repository or package developers use, and design files that match production. See [[/blogs/design-handoff|design handoff]].",
+          "**Measure adoption:** track which products use which version, and where teams build one-off components instead.",
+        ],
+        table: {
+          headers: ["", "Component library", "Design system"],
+          rows: [
+            ["**Contains**", "Reusable coded components", "Tokens, components, patterns, content guidance, documentation and governance"],
+            ["**Fits**", "One product, small team", "Several products, platforms or teams"],
+            ["**Governance**", "Informal", "Named owners, contribution process, versioning"],
+            ["**Cost**", "Low", "Ongoing team time"],
+          ],
+        },
+      },
+      {
         heading: "Conclusion",
         body: [
-          "A design system is the product's shared language: tokens, foundations, components and patterns that make every new screen faster and more consistent. Start small with the most-used pieces, keep design and code in sync, and grow it as patterns repeat. For the wider process, see the [[/blogs/product-design-guide|product design guide]].",
+          "A design system is the product's shared language: tokens, foundations, components and patterns that make every new screen faster and more consistent. Start small with the most-used pieces, keep design and code in sync, and grow it as patterns repeat. For the wider process, see the [[/blogs/product-design-guide|product design guide]]. To theme one system across several brands, see [[/blogs/multi-brand-website-architecture|multi-brand website architecture]].",
         ],
       },
     ],
@@ -3193,6 +3260,45 @@ posts.push(
   ...auCommercePosts,
   ...auCommercePosts2,
   ...auTrustPosts,
+  ...auMobilePosts,
+  ...auBusinessSoftwarePosts,
+  ...auOperationsPosts,
+  ...auPortalPosts,
+  ...auPlatformPosts,
+  ...auVisibilityPosts,
+  ...auIndustryPosts1,
+  ...auIndustryPosts2,
+  ...auHealthEducationPosts,
+  ...auAppliedAiPosts,
+  ...auSaasProductPosts,
+  ...auDataPaymentPosts,
+  ...auQualityPosts,
+  ...auSecurityOpsPosts,
+  ...auEngineeringOpsPosts,
+  ...auAiEngineeringPosts,
+  ...auRetailHospitalityPosts,
+  ...auSectorPlatformPosts,
+  ...auSaasEngineeringPosts,
+  ...auDeliveryGovernancePosts,
+  ...auIndustryPosts3,
+  ...auSaasGrowthPosts,
+  ...auWebOpsPosts,
+  ...auBuildDecisionPosts,
+  ...auDataPlatformPosts,
+  ...auCloudDeliveryPosts,
+  ...auBusinessSystemsPosts,
+  ...auProductPracticePosts,
+  ...auIntegrationArchPosts,
+  ...auFintechSecurityPosts,
+  ...auOpsMobilePosts,
+  ...auCommerceIdentityPosts,
+  ...auOpsReliabilityPosts,
+  ...ukRegulatedPosts,
+  ...identityReliabilityPosts,
+  ...ukBusinessPosts,
+  ...buildIntegrationPosts,
+  ...ukPublicDigitalPosts,
+  ...deliveryWebPosts,
 );
 
 export function getPostBySlug(slug: string) {

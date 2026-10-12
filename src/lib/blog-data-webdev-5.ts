@@ -118,7 +118,7 @@ export const webDevPosts5: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A fintech website succeeds by earning trust deliberately — clear, precise product explanation, visible security practice, transparent pricing, and appropriate regulatory care, rather than relying on generic financial-services design conventions or unverified compliance claims.",
+          "A fintech website succeeds by earning trust deliberately — clear, precise product explanation, visible security practice, transparent pricing, and appropriate regulatory care, rather than relying on generic financial-services design conventions or unverified compliance claims. For using Australia's open banking regime, see [[/blogs/consumer-data-right-integration-australia|Consumer Data Right integration]].",
         ],
       },
     ],

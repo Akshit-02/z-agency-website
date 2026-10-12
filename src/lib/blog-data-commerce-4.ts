@@ -20,8 +20,8 @@ export const commercePosts4: BlogPost[] = [
     bannerAlt:
       "Ecommerce analytics cycle: business questions, event plan, collection, validation, reporting and decisions, looping back to new questions.",
     date: "2026-09-29",
-    updated: "2026-09-29",
-    readingTime: "18 min read",
+    updated: "2026-10-10",
+    readingTime: "19 min read",
     relatedServiceSlugs: ["cro-audit", "website-development", "shopify-development"],
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer"],
     faqs: [
@@ -234,6 +234,20 @@ export const commercePosts4: BlogPost[] = [
           title: "Want analytics that lead to decisions?",
           description: "Talk to ZSpace Labs about [[/services/cro-audit|CRO and analytics audits]] and [[/services/website-development|tracking implementation]].",
         },
+      },
+      {
+        heading: "Ecommerce Analytics in Australia",
+        body: [
+          "Measurement fundamentals are global; a few Australian details affect definitions and consent.",
+        ],
+        checklist: [
+          "Define revenue consistently: excluding GST, net of refunds and cancellations, and in AUD.",
+          "Track refunds and returns as events so revenue and product performance are not overstated.",
+          "Australia has no specific cookie consent law, but the Privacy Act applies to personal information where your business is covered, and the OAIC's tracking pixel guidance applies to advertising pixels.",
+          "Do not send names, emails or free text to analytics tools; use IDs.",
+          "Expect gaps from ad blockers and consent choices; reconcile with order data.",
+          "For product and SaaS analytics, see [[/blogs/product-analytics-implementation-australia|product analytics implementation]].",
+        ],
       },
       {
         heading: "Conclusion",
@@ -560,7 +574,7 @@ export const commercePosts4: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A useful ecommerce KPI dashboard is short, defined, compared and owned. Build it around questions, source each number deliberately, annotate what changes, show whether the data is healthy, and review it in a regular meeting. For the metrics behind it, see [[/blogs/ecommerce-conversion-rate|ecommerce conversion rate]] and [[/blogs/ecommerce-cohort-analysis|cohort analysis]].",
+          "A useful ecommerce KPI dashboard is short, defined, compared and owned. Build it around questions, source each number deliberately, annotate what changes, show whether the data is healthy, and review it in a regular meeting. For the metrics behind it, see [[/blogs/ecommerce-conversion-rate|ecommerce conversion rate]] and [[/blogs/ecommerce-cohort-analysis|cohort analysis]]. For dashboards beyond ecommerce, covering accounting, CRM and operations data, see [[/blogs/business-intelligence-dashboards-australia|business intelligence dashboards]].",
           "For related guides, see [[/blogs/ecommerce-dashboard-design|ecommerce dashboard design]], [[/blogs/ecommerce-analytics-architecture|analytics architecture]] and [[/blogs/ecommerce-customer-analytics|customer analytics]].",
         ],
       },

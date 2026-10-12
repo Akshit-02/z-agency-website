@@ -207,13 +207,14 @@ export const commercePosts90: BlogPost[] = [
     title: "Ecommerce Loyalty Program Development: How to Build a Customer Rewards System",
     seoTitle: "Loyalty Program Development: Points Ledger, Tiers and Integrations",
     excerpt:
-      "How to build an ecommerce loyalty program: architecture, earning rules engine, points ledger, tiers, redemption at checkout, expiry, returns, POS and app integration, fraud controls, and build versus buy.",
+      "Building an ecommerce loyalty program: rules engine, points ledger, tiers, redemption, returns, POS and app integration, fraud controls, privacy, build vs buy.",
     category: "Web Development",
     banner: "loyaltyplatform",
     bannerAlt:
       "Loyalty program architecture in four columns: events (orders, returns, reviews, sign-ups), rules (earn rules, tiers, expiry, campaigns), ledger highlighted (accruals, redemptions, reversals, balances) and channels (account page, checkout, POS, email and app).",
     date: "2026-10-02",
-    readingTime: "8 min read",
+    updated: "2026-10-10",
+    readingTime: "9 min read",
     relatedServiceSlugs: ["website-development", "shopify-development", "mobile-app-development"],
     relatedIndustrySlugs: ["ecommerce", "retail", "beauty-personal-care"],
     relatedSlugs: ["ecommerce-loyalty-programs", "ecommerce-loyalty-program-ux", "ecommerce-referral-program-development"],
@@ -394,9 +395,22 @@ export const commercePosts90: BlogPost[] = [
         },
       },
       {
+        heading: "Loyalty Programs in Australia",
+        body: [
+          "Loyalty programs collect a lot of customer data, and Australian regulators have paid attention to how it is used. The ACCC reviewed customer loyalty schemes' data practices in a 2019 report.",
+        ],
+        checklist: [
+          "Explain clearly what data the program collects and how it is used and shared.",
+          "If covered by the Privacy Act, collect only what the program needs and offer opt-outs from targeted marketing; see the OAIC's guidance on tracking pixels for linked online tracking.",
+          "Marketing emails and SMS need consent under the Spam Act.",
+          "Make terms fair and clear; unfair terms in standard form consumer contracts can attract penalties.",
+          "Buy before building: loyalty apps and platforms suit most stores; build for distinctive mechanics or deep integration. See [[/blogs/shopify-development-australia|Shopify development in Australia]] and [[/blogs/hospitality-software-development-australia|hospitality software]].",
+        ],
+      },
+      {
         heading: "Conclusion",
         body: [
-          "A loyalty program is only as trustworthy as its ledger. Feed it from every channel, apply versioned rules, keep points pending through return windows, reserve redemptions like payments and give finance the data it needs. Related: [[/blogs/ecommerce-loyalty-programs|loyalty strategy]], [[/blogs/ecommerce-loyalty-program-ux|loyalty UX]] and [[/blogs/ecommerce-referral-program-development|referral programs]].",
+          "A loyalty program is only as trustworthy as its ledger. Feed it from every channel, apply versioned rules, keep points pending through return windows, reserve redemptions like payments and give finance the data it needs. Related: [[/blogs/ecommerce-loyalty-programs|loyalty strategy]], [[/blogs/ecommerce-loyalty-program-ux|loyalty UX]] and [[/blogs/ecommerce-referral-program-development|referral programs]]. For stored-value cards and Australian expiry rules, see [[/blogs/gift-card-platform-development-australia|gift card platform development]].",
         ],
       },
     ],

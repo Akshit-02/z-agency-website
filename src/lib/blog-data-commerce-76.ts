@@ -163,13 +163,14 @@ export const commercePosts76: BlogPost[] = [
     title: "Retail Ecommerce Integration: How to Connect POS, ERP, OMS and Online",
     seoTitle: "Retail Ecommerce Integration: POS, ERP, OMS, CRM and APIs",
     excerpt:
-      "How to integrate retail systems with ecommerce: POS, ERP, inventory, OMS, CRM, loyalty and payments, with APIs, webhooks, data ownership, reliability and monitoring.",
+      "Integrating retail systems with ecommerce: POS, ERP, inventory, OMS, CRM, loyalty and payments, data ownership, reliability and Australian omnichannel notes.",
     category: "Web Development",
     banner: "retailintegration",
     bannerAlt:
       "Retail ecommerce integration in four columns: store (POS, store stock, staff apps, payments), commerce (platform, OMS, pricing, promotions, highlighted), back office (ERP, WMS, finance, products) and customer (CRM, loyalty, email and SMS, support), noting to define the system of record for each data type before connecting anything.",
     date: "2026-10-01",
-    readingTime: "14 min read",
+    updated: "2026-10-10",
+    readingTime: "15 min read",
     relatedServiceSlugs: ["website-development", "ai-automation", "shopify-development"],
     relatedIndustrySlugs: ["retail", "ecommerce", "logistics-supply-chain"],
     faqs: [
@@ -183,7 +184,11 @@ export const commercePosts76: BlogPost[] = [
       { q: "How should loyalty integrate?", a: "Customers should earn and redeem in every channel using one identity, with balances updated quickly and consistently, and consent and preferences stored once." },
       { q: "What are the most common integration failures?", a: "Lost messages, duplicate orders or refunds, mismatched identifiers, rate limits, timezone and currency errors, and nobody owning monitoring." },
       { q: "How long does retail integration take?", a: "It depends on the number of systems, data quality and available APIs. Simple POS and ecommerce integration may take weeks; full ERP, OMS and loyalty integration often takes months." },
-    ],
+          {
+        q: "Which system should be the source of truth for stock in an omnichannel retailer?",
+        a: "Usually the system closest to physical stock movements, often the ERP, inventory system or POS, with ecommerce reading availability from it and reporting orders back. Avoid two systems independently adjusting stock. Reserve stock for click and collect per store, and reconcile daily to catch drift.",
+      },
+],
     content: [
       {
         heading: "Quick answer",
@@ -318,6 +323,20 @@ export const commercePosts76: BlogPost[] = [
           title: "Ready to connect your retail systems properly?",
           description: "Talk to ZSpace Labs about [[/services/website-development|retail integration engineering]], [[/services/ai-automation|workflow automation]] and [[/services/shopify-development|Shopify POS and ERP integration]].",
         },
+      },
+      {
+        heading: "Retail and Omnichannel Integration in Australia",
+        body: [
+          "The integration patterns are global; Australian retailers add a few specifics.",
+        ],
+        checklist: [
+          "**System of record:** decide which system owns products, prices, stock and customers (often ERP or POS for stock, ecommerce for online orders) and stick to it.",
+          "**GST and pricing:** consumer prices GST-inclusive and consistent across POS, web and feeds; no card surcharges on eftpos, Visa, Mastercard, Amex or UnionPay from 1 October 2026.",
+          "**Click and collect and Parcel Lockers:** reserve stock per store and integrate collection options; Australia Post offers Parcel Locker delivery and returns.",
+          "**Accounting:** reconcile POS and online sales, refunds and payouts into Xero, MYOB or the ERP daily.",
+          "**Error queues and reconciliation:** failed syncs go to an owned queue; nightly stock and order reconciliation catches drift. See [[/blogs/api-integration-reliability|API integration reliability]].",
+          "**Returns across channels:** online returns to stores need shared order lookup; see [[/blogs/ecommerce-returns-australia|ecommerce returns in Australia]].",
+        ],
       },
       {
         heading: "Conclusion",

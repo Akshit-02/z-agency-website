@@ -34,7 +34,8 @@ export const auSoftwarePosts: BlogPost[] = [
     sceneKind: "code",
     bannerAlt: "A custom software delivery pipeline running from discovery and architecture through build, integration with accounting systems, testing, launch and ongoing support",
     date: "2026-10-09",
-    readingTime: "22 min read",
+    updated: "2026-10-09",
+    readingTime: "23 min read",
     relatedServiceSlugs: ["website-development", "mobile-app-development", "ui-ux-design"],
     relatedIndustrySlugs: ["professional-services", "b2b-enterprise", "logistics-supply-chain", "construction-infrastructure", "healthcare-healthtech"],
     relatedSlugs: ["build-vs-buy-ai-agents", "vibe-coded-app-to-production", "product-design-process"],
@@ -71,7 +72,11 @@ export const auSoftwarePosts: BlogPost[] = [
         q: "Should our software be hosted in Australia?",
         a: "Often it makes sense, and AWS, Microsoft Azure and Google Cloud all run Sydney and Melbourne regions. Hosting location is only part of the picture, though: support access, backups, logging tools and AI services can still send personal information overseas. If you are covered by the Privacy Act, APP 8 requires reasonable steps before disclosing personal information to an overseas recipient. Map every data flow, not just the main database.",
       },
-    ],
+          {
+        q: "How do we compare software development proposals fairly?",
+        a: "Send every supplier the same brief and questions, ask for estimates with stated assumptions, and score proposals against weighted criteria agreed before you read them: understanding of the problem, approach, team, delivery and QA, security, support, ownership and price. Ask for a paid discovery phase from your preferred supplier before committing to a full build.",
+      },
+],
     content: [
       {
         heading: "What does custom software development in Australia actually involve?",
@@ -377,6 +382,29 @@ inclusive prices; keep all options on one basis.`,
         ],
       },
       {
+        heading: "Evaluating proposals and planning handover",
+        body: [
+          "Most partner selection problems show up in proposals that cannot be compared and handovers that were never planned. Use the same brief and scoring for every supplier, and write the handover into the contract. For web and app-specific checks, see [[/blogs/web-development-company-australia|choosing a web development company]] and [[/blogs/mobile-app-development-company-australia|choosing a mobile app development company]].",
+        ],
+        checklist: [
+          "**Handover checklist:** source code in your repositories; build and deployment documentation; infrastructure as code; credentials transferred; architecture and data model documents; runbooks; a recorded walkthrough; and a rehearsal in which another developer builds and deploys from the documentation.",
+        ],
+        table: {
+          headers: ["Proposal element", "What good looks like"],
+          rows: [
+            ["**Understanding of the problem**", "Restates your goals and risks in their own words, with questions"],
+            ["**Discovery**", "Paid, time-boxed, with defined outputs you own; see [[/blogs/software-product-discovery-australia|software product discovery]]"],
+            ["**Approach and architecture**", "Options with trade-offs, integrations named, assumptions listed"],
+            ["**Team**", "Named people, roles and time allocation"],
+            ["**Delivery and QA**", "Iteration cadence, demos, automated testing, release process"],
+            ["**Security and privacy**", "Specific controls, data location, breach cooperation"],
+            ["**Estimate**", "Ranges with assumptions and a change process, GST shown"],
+            ["**Support and maintenance**", "Warranty, maintenance options and response targets; see [[/blogs/software-maintenance-contracts-australia|maintenance contracts]]"],
+            ["**Ownership and exit**", "Written IP assignment, your accounts, handover plan"],
+          ],
+        },
+      },
+      {
         heading: "Sources",
         body: [
           "**Integrations:** [[https://developer.xero.com/documentation/|Xero developer documentation]]; [[https://developer.myob.com/|MYOB developer portal]]; [[https://www.ato.gov.au/businesses-and-organisations/einvoicing/about-peppol/identifying-australian-businesses-on-the-peppol-network|ATO, identifying Australian businesses on the Peppol network]]; [[https://www.finance.gov.au/publications/resource-management-guides/supplier-pay-time-or-pay-interest-policy-rmg-417|Department of Finance, supplier pay on-time or pay interest policy (RMG 417)]]; [[https://developers.auspost.com.au/|Australia Post developer centre]]; [[https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/what-is-stp|ATO, what is Single Touch Payroll]].",
@@ -390,7 +418,7 @@ inclusive prices; keep all options on one basis.`,
       {
         heading: "Conclusion",
         body: [
-          "Custom software development in Australia earns its cost when it supports a workflow that is distinctive, valuable and stable, and when it is planned as a product with an owner, a support budget and clear ownership of the code. Start with a paid discovery, keep commodity functions on SaaS, design integrations around a single source of truth, build to recognised security and privacy baselines, and make sure every repository and account is yours.",
+          "Custom software development in Australia earns its cost when it supports a workflow that is distinctive, valuable and stable, and when it is planned as a product with an owner, a support budget and clear ownership of the code. Start with a paid discovery, keep commodity functions on SaaS, design integrations around a single source of truth, build to recognised security and privacy baselines, and make sure every repository and account is yours. Three common custom projects have their own guides: [[/blogs/custom-crm-development-australia|custom vs off-the-shelf CRM]], [[/blogs/legacy-software-modernization-australia|legacy software modernisation]] and [[/blogs/cloud-migration-australia|cloud migration]]. For UK contracts, VAT and R&D relief rules, see [[/blogs/custom-software-development-uk|custom software development in the UK]].",
           "Equally, be willing to conclude that you should not build. A configured product, a small integration or a process change is often the better investment, and a good partner will tell you so.",
         ],
         cta: {
@@ -719,7 +747,7 @@ Decision metrics (set before launch):
       {
         heading: "Conclusion",
         body: [
-          "MVP development for Australian startups works best as a sequence of increasingly expensive tests: conversations, then prototypes, then a narrow but dependable product launched to a known cohort. Map your assumptions, build only what tests the riskiest one, measure against thresholds you set in advance, and treat funding and tax programs as things to confirm with an adviser rather than assume.",
+          "MVP development for Australian startups works best as a sequence of increasingly expensive tests: conversations, then prototypes, then a narrow but dependable product launched to a known cohort. Map your assumptions, build only what tests the riskiest one, measure against thresholds you set in advance, and treat funding and tax programs as things to confirm with an adviser rather than assume. If you are commissioning the phase before the MVP, see [[/blogs/software-product-discovery-australia|software product discovery]].",
           "The aim is not to launch something small. It is to learn the right thing quickly enough to make your next decision with evidence.",
         ],
         cta: {

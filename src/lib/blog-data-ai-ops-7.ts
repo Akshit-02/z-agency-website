@@ -179,7 +179,7 @@ export const aiOpsPosts7: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "AI systems inherit risk from every model, dataset, package and service they use. Verify sources, prefer safe formats, review licences and data rights, vet vendors and tools, and keep an AI bill of materials so you can respond quickly when something changes.",
+          "AI systems inherit risk from every model, dataset, package and service they use. Verify sources, prefer safe formats, review licences and data rights, vet vendors and tools, and keep an AI bill of materials so you can respond quickly when something changes. For auditing ordinary open-source dependencies, see [[/blogs/open-source-software-audit|open-source software audit]].",
         ],
       },
     ],
@@ -351,7 +351,7 @@ export const aiOpsPosts7: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Threat modelling makes AI risks visible while they are still design decisions. Draw the system, mark trust boundaries, write abuse cases, layer mitigations, accept residual risk explicitly and verify with tests.",
+          "Threat modelling makes AI risks visible while they are still design decisions. Draw the system, mark trust boundaries, write abuse cases, layer mitigations, accept residual risk explicitly and verify with tests. For applications without AI components, see [[/blogs/web-application-threat-modeling|threat modelling for web applications]].",
         ],
       },
     ],

@@ -12,13 +12,14 @@ export const commercePosts13: BlogPost[] = [
     slug: "ai-product-discovery",
     title: "AI Product Discovery: How Customers Find Products Through AI",
     excerpt:
-      "How shoppers discover products through AI assistants and AI search, what those systems read, what merchants can influence, and how to measure AI-driven discovery.",
+      "How shoppers discover products through AI assistants and AI search, what those systems read, what merchants control, and how to evaluate and measure it.",
     category: "AI & Automation",
     banner: "aidiscovery",
     bannerAlt:
       "AI product discovery: where shoppers ask (ChatGPT, Google AI Mode and Gemini, Microsoft Copilot, Perplexity, on-site assistants), what AI reads (feeds, crawlable pages, structured data, reviews, policies) and what merchants control (titles, attributes, price, availability, use cases, consistent identity, channel settings).",
     date: "2026-09-29",
-    readingTime: "13 min read",
+    updated: "2026-10-09",
+    readingTime: "14 min read",
     relatedServiceSlugs: ["ai-automation", "shopify-development", "website-development"],
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer"],
     faqs: [
@@ -32,7 +33,11 @@ export const commercePosts13: BlogPost[] = [
       { q: "Is AI discovery replacing search engines?", a: "It's growing alongside them. Search engines themselves now include AI features. Plan for both rather than switching strategy entirely." },
       { q: "What's the difference between AI product discovery and on-site discovery?", a: "On-site discovery is how shoppers find products within your store. AI product discovery is how they find your products through assistants and AI search before reaching you." },
       { q: "What should I fix first?", a: "Product titles and attributes, feed errors, price and availability accuracy, and missing policies. These affect every channel." },
-    ],
+          {
+        q: "How do we know if AI search is better than our current search?",
+        a: "Run both on the same set of real queries rated by people who know the catalog, then run a holdout test on live traffic measuring conversion and revenue per visitor. Track zero-result rates and customer feedback too. If the AI version is not clearly better on your own data, improve product data first.",
+      },
+],
     content: [
       {
         heading: "Quick answer",
@@ -127,6 +132,24 @@ export const commercePosts13: BlogPost[] = [
         cta: {
           title: "Planning for AI discovery and search together?",
           description: "Talk to ZSpace Labs about [[/services/ai-automation|AI commerce]], [[/services/website-development|product data and feeds]] and [[/services/shopify-development|Shopify channels]].",
+        },
+      },
+      {
+        heading: "Evaluating AI Product Discovery on Your Own Store",
+        body: [
+          "AI discovery features, whether semantic search, conversational shopping or recommendations, should be judged on your catalog and your customers, not on demos. Build a small evaluation set and keep humans in the loop for what the system is allowed to do.",
+        ],
+        checklist: [
+          "**Relevance judgments:** collect a few hundred real queries from search logs (including long, descriptive ones) and have merchandisers rate the top results. Re-run the set after every change.",
+          "**Zero-result and low-engagement queries:** track them weekly; they show gaps in product data or synonyms. See [[/blogs/ecommerce-zero-result-searches|zero-result searches]].",
+          "**Metadata quality:** most relevance problems trace back to missing or inconsistent attributes. Fix product data before tuning models; see [[/blogs/ecommerce-product-feeds|product feeds]].",
+          "**Intent coverage:** check navigational, specific-product, descriptive ('waterproof hiking boots for wide feet') and problem-based queries separately.",
+          "**Business rules and oversight:** let merchandisers pin, boost and exclude products, and review what conversational assistants say about price, stock and policies before launch.",
+          "**Experiments:** compare against your current search with holdout tests and measure conversion, revenue per visitor and returns, not clicks alone. AI discovery does not always win.",
+        ],
+        callout: {
+          type: "note",
+          text: "For Australian stores, the same evaluation applies; [[/blogs/ai-ecommerce-australia|AI ecommerce in Australia]] covers local shopper attitudes, Google's UCP checkout status and consumer law points.",
         },
       },
       {
@@ -283,14 +306,14 @@ export const commercePosts13: BlogPost[] = [
     title: "Ecommerce Product Feeds: How to Prepare Product Data for Search and Shopping",
     seoTitle: "Ecommerce Product Feeds: Prepare Data for Search and Shopping",
     excerpt:
-      "How ecommerce product feeds work: required attributes, variants, identifiers, shipping, feed sources, validation, diagnostics and keeping feeds in sync with pages.",
+      "How ecommerce product feeds work: attributes, variants, identifiers, shipping, validation, diagnostics, sync with pages and notes for Australian stores.",
     category: "Shopify & Ecommerce",
     banner: "feedflow",
     bannerAlt:
       "Product feed process: product data, build the feed, validate, send to channels, and diagnose and fix, with a loop noting that feeds must match the page on price, stock and shipping.",
     date: "2026-09-29",
-    updated: "2026-10-08",
-    readingTime: "13 min read",
+    updated: "2026-10-09",
+    readingTime: "14 min read",
     relatedServiceSlugs: ["website-development", "shopify-development"],
     relatedIndustrySlugs: ["ecommerce"],
     faqs: [
@@ -304,7 +327,11 @@ export const commercePosts13: BlogPost[] = [
       { q: "Should I optimize titles in feeds differently from my site?", a: "Feed titles can add attributes for shopping searches, but they must still describe the same product accurately. Don't make claims in feeds that the page doesn't support." },
       { q: "Do feeds matter for AI shopping?", a: "Yes. AI shopping channels, including Google AI Mode through Merchant Center and assistants using catalogs such as Shopify Catalog, rely on structured product data." },
       { q: "How do I monitor feed health?", a: "Review channel diagnostics for errors and warnings, track the share of products approved, and alert on sudden drops." },
-    ],
+          {
+        q: "Do Australian product feeds need GST-inclusive prices?",
+        a: "For Australian consumers, prices shown in shopping listings should be the GST-inclusive price customers pay, matching the product page and checkout. Google Merchant Center expects tax-inclusive pricing for Australia. Check current Merchant Center documentation and your platform's feed settings when you set up or change your feed.",
+      },
+],
     content: [
       {
         heading: "Quick answer",
@@ -406,6 +433,20 @@ export const commercePosts13: BlogPost[] = [
           title: "Want feeds you don't have to firefight?",
           description: "Talk to ZSpace Labs about [[/services/website-development|feed and data integrations]] and [[/services/shopify-development|Shopify channel setup]].",
         },
+      },
+      {
+        heading: "Product Feeds for Australian Stores",
+        body: [
+          "Feed fundamentals are global, but stores selling to Australian shoppers should check a few local details. None of these guarantees inclusion in shopping results or AI-generated answers; they make your data eligible and accurate.",
+        ],
+        checklist: [
+          "**Prices:** show GST-inclusive prices for Australian consumers, matching the landing page and checkout; Google Merchant Center expects tax-inclusive prices for Australia.",
+          "**Identifiers:** use GS1 GTINs for branded products; GS1 Australia is the authorized source of GS1 barcode numbers. See [[/blogs/inventory-management-software-australia|inventory management software]].",
+          "**Shipping and returns:** configure Australian delivery times and costs (including regional areas) and a returns policy consistent with consumer guarantees.",
+          "**Surcharges:** card surcharges for eftpos, Visa and Mastercard were removed from 1 October 2026; make sure feeds and checkout no longer imply them.",
+          "**Availability:** keep stock status in near real time; agentic checkout makes stale availability more costly.",
+          "**Agentic commerce:** Google's UCP checkout went live in Australia in June 2026 for launch retailers, with Merchant Center onboarding expected next year. See [[/blogs/ai-ecommerce-australia|AI ecommerce in Australia]] and [[/blogs/ai-product-feeds|AI product feeds]].",
+        ],
       },
       {
         heading: "Conclusion",
