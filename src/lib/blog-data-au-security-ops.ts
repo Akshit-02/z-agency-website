@@ -376,7 +376,7 @@ export const auSecurityOpsPosts: BlogPost[] = [
         body: [
           "**ASD:** [[https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/publications/cyber-incident-response-plan|ASD's ACSC, cyber incident response plan guidance]]; [[https://www.cyber.gov.au/about-us/about-asd-acsc/contact-us|ASD's ACSC, contact and reporting]].",
           "**Obligations:** [[https://www.oaic.gov.au/privacy/notifiable-data-breaches/about-the-notifiable-data-breaches-scheme|OAIC, about the NDB scheme]]; [[https://www.homeaffairs.gov.au/cyber-security-subsite/files/factsheet-ransomware-payment-reporting.pdf|Home Affairs, ransomware payment reporting factsheet]]; [[https://www.cisc.gov.au/|Cyber and Infrastructure Security Centre]].",
-          "SOCI timeframes and some ASD details were confirmed via search summaries of official pages. Tables, checklists and scenarios are ours. Nothing here is legal advice or ZSpace client data.",
+          "SOCI timeframes and some ASD details are summarised from official guidance. Tables, checklists and scenarios are ours. Nothing here is legal advice or ZSpace client data.",
         ],
       },
       {

@@ -491,7 +491,7 @@ traffic, keep rollback, then retire`,
           "**Security and platforms:** [[https://www.cyber.gov.au/business-government/asds-cyber-security-frameworks/essential-eight/essential-eight-maturity-model-and-ism-mapping|ASD, Essential Eight maturity model and ISM mapping]]; [[https://support.microsoft.com/en-us/windows/windows-10-support-has-ended-on-october-14-2025-2ca8b313-1946-43d3-b55c-2b95b107f281|Microsoft, Windows 10 end of support]]; [[https://www.oaic.gov.au/news/media-centre/data-breach-notifications-increase-to-all-time-high-in-2025,-new-ndb-stats-show|OAIC, NDB statistics 2025]].",
           "**Tax and invoicing:** [[https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/what-is-stp|ATO, Single Touch Payroll]]; [[https://www.ato.gov.au/businesses-and-organisations/einvoicing/about-peppol/identifying-australian-businesses-on-the-peppol-network|ATO, Peppol]]; [[https://business.gov.au/finance/accounting/record-keeping|business.gov.au, record keeping]].",
           "**Methods:** [[https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html|AWS, migration strategies]]; [[https://martinfowler.com/bliki/StranglerFigApplication.html|Martin Fowler, strangler fig application]].",
-          "The scorecard, roadmap and example are ours. Some ATO facts were confirmed via search summaries because ato.gov.au blocked our fetcher. Nothing here is ZSpace client data or tax advice.",
+          "The scorecard, roadmap and example are ours. Some ATO facts are summarised from official guidance and may change; check the current position before relying on them. Nothing here is ZSpace client data or tax advice.",
         ],
       },
       {

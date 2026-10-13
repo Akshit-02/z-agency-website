@@ -19,6 +19,7 @@ import {
   Eyebrow,
   MaskLines,
   TiltCard,
+  heroRise,
   riseProps,
   serif,
 } from "@/components/ui/Aesthetic";
@@ -176,29 +177,26 @@ export function DetailHero({
     <section className="relative overflow-hidden bg-white px-5 pb-20 pt-[120px] sm:px-8 lg:pb-24 lg:pt-[140px]">
       <Atmosphere tone="light" still={still} />
       <div ref={ref} className="relative mx-auto max-w-[1180px]">
-        <motion.div className="mb-8" {...riseProps(on, still, 0)}>
+        <div {...heroRise(0, "mb-8")}>
           <Breadcrumbs items={crumbs} />
-        </motion.div>
+        </div>
         <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_1fr] lg:gap-10">
           <div>
             <Eyebrow on={on} still={still}>
               {eyebrow}
             </Eyebrow>
-            <motion.h1
-              className="mt-6 text-balance text-[2.9rem] leading-[1] tracking-[-0.03em] text-ink sm:text-[4rem] lg:text-[4.4rem]"
-              style={serif}
-              initial={still ? false : { opacity: 0, y: 40, filter: "blur(10px)" }}
-              animate={on ? { opacity: 1, y: 0, filter: "blur(0px)" } : {}}
-              transition={{ duration: 1, ease: EASE, delay: 0.1 }}
+            <h1
+              className="hero-rise mt-6 text-balance text-[2.9rem] leading-[1] tracking-[-0.03em] text-ink sm:text-[4rem] lg:text-[4.4rem]"
+              style={{ ...serif, animationDelay: "0.1s", ["--hero-y" as string]: "40px" }}
             >
               {title}
-            </motion.h1>
+            </h1>
             {description && (
-              <motion.p className="mt-7 max-w-[34rem] text-pretty text-[1.05rem] leading-relaxed text-ink/60" {...riseProps(on, still, 0.35)}>
+              <p {...heroRise(0.35, "mt-7 max-w-[34rem] text-pretty text-[1.05rem] leading-relaxed text-ink/60")}>
                 {description}
-              </motion.p>
+              </p>
             )}
-            <motion.div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4" {...riseProps(on, still, 0.5)}>
+            <div {...heroRise(0.5, "mt-9 flex flex-wrap items-center gap-x-6 gap-y-4")}>
               <Link
                 href={primary.href}
                 className="group inline-flex items-center gap-2 rounded-full bg-ink px-7 py-4 text-[0.92rem] font-medium text-white transition-colors duration-300 hover:bg-ink/85"
@@ -215,7 +213,7 @@ export function DetailHero({
                   </a>
                 </>
               )}
-            </motion.div>
+            </div>
           </div>
           {visual}
         </div>

@@ -223,7 +223,7 @@ Telematics/EWD -> location and fatigue data`,
         body: [
           "**Transport regulation:** [[https://www.ntc.gov.au/laws-and-regulations/heavy-vehicle-national-law|National Transport Commission, Heavy Vehicle National Law]]; [[https://www.nhvr.gov.au/safety-accreditation-compliance/fatigue-management/electronic-work-diary|NHVR, electronic work diary]]; [[https://www.nhvr.gov.au/safety-accreditation-compliance/chain-of-responsibility|NHVR, chain of responsibility]].",
           "**Carriers:** [[https://developers.auspost.com.au/|Australia Post developer centre]].",
-          "Regulatory points were confirmed via search summaries where fetches were blocked; check current NHVR and state guidance. The architecture, tables and example are ours. Nothing here is legal or compliance advice or ZSpace client data.",
+          "Regulatory points are summarised from official guidance; check current NHVR and state guidance. The architecture, tables and example are ours. Nothing here is legal or compliance advice or ZSpace client data.",
         ],
       },
       {

@@ -225,3 +225,29 @@ export function TiltCard({
     </motion.div>
   );
 }
+
+/**
+ * CSS-driven entrance for above-the-fold hero content. Unlike `riseProps`,
+ * it doesn't wait for hydration, so hero text is visible from first paint.
+ */
+export function heroRise(delay = 0, className = "") {
+  return {
+    className: `hero-rise ${className}`.trim(),
+    style: delay ? { animationDelay: `${delay}s` } : undefined,
+  };
+}
+
+/** `MaskLines` for hero headings, animated in CSS (see `heroRise`). */
+export function HeroLines({ lines, delay = 0.1 }: { lines: ReactNode[]; delay?: number }) {
+  return (
+    <>
+      {lines.map((line, i) => (
+        <span key={i} className="block overflow-hidden pb-[0.08em]">
+          <span className="hero-mask" style={{ animationDelay: `${delay + i * 0.13}s` }}>
+            {line}
+          </span>
+        </span>
+      ))}
+    </>
+  );
+}

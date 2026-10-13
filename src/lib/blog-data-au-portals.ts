@@ -256,7 +256,7 @@ export const auPortalPosts: BlogPost[] = [
           "**Consumer law and payments:** [[https://www.accc.gov.au/media-release/businesses-urged-to-remove-unfair-contract-terms-ahead-of-law-changes|ACCC, businesses urged to remove unfair contract terms]]; [[https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/executive-summary.html|RBA, review of merchant card payment costs and surcharging: conclusions]]; [[https://www.acma.gov.au/avoid-sending-spam|ACMA, avoid sending spam]].",
           "**Privacy and accessibility:** [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/small-business|OAIC, small business]]; [[https://www.oaic.gov.au/news/media-centre/data-breach-notifications-increase-to-all-time-high-in-2025,-new-ndb-stats-show|OAIC, NDB statistics 2025]]; [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C, what's new in WCAG 2.2]].",
           "**Time:** [[https://www.iana.org/time-zones|IANA time zone database]].",
-          "The scenarios, release plan and example are ours. ACCC and ACMA points were confirmed via secondary summaries where those sites blocked our fetcher. Nothing here is legal advice or ZSpace client data.",
+          "The scenarios, release plan and example are ours. ACCC and ACMA points are summarised from official guidance and may change; check the current position before relying on them. Nothing here is legal advice or ZSpace client data.",
         ],
       },
       {
@@ -749,7 +749,7 @@ export const auPortalPosts: BlogPost[] = [
           "**Tax and invoicing:** [[https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/tax-invoices|ATO, tax invoices]]; [[https://www.ato.gov.au/businesses-and-organisations/einvoicing/about-peppol/identifying-australian-businesses-on-the-peppol-network|ATO, Peppol]].",
           "**Consumer law and payments:** [[https://www.accc.gov.au/media-release/businesses-urged-to-remove-unfair-contract-terms-ahead-of-law-changes|ACCC, businesses urged to remove unfair contract terms]]; [[https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/executive-summary.html|RBA, surcharging conclusions]].",
           "**Freight:** [[https://developers.auspost.com.au/|Australia Post developer centre]].",
-          "ATO and ACCC points were confirmed via search summaries where those sites blocked our fetcher. The pricing exercise, release plan and example are ours. Nothing here is tax or legal advice or ZSpace client data.",
+          "ATO and ACCC points are summarised from official guidance and may change; check the current position before relying on them. The pricing exercise, release plan and example are ours. Nothing here is tax or legal advice or ZSpace client data.",
         ],
       },
       {

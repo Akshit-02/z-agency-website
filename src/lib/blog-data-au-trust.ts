@@ -115,7 +115,7 @@ export const auTrustPosts: BlogPost[] = [
         },
         callout: {
           type: "note",
-          text: "Source: ASD's ACSC, Annual Cyber Threat Report 2024–25 factsheet for businesses and organisations (October 2025). We could not open the factsheet directly when checking, so these figures come from ASD's published summaries and consistent secondary coverage. Confirm against the original before quoting them in a board paper.",
+          text: "Source: ASD's ACSC, Annual Cyber Threat Report 2024–25 factsheet for businesses and organisations (October 2025). These figures come from ASD's published summaries and consistent secondary coverage of the factsheet. Confirm against the original before quoting them in a board paper.",
         },
       },
       {

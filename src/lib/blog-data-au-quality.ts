@@ -224,7 +224,7 @@ export const auQualityPosts: BlogPost[] = [
         body: [
           "**Standards:** [[https://www.w3.org/TR/WCAG22/|W3C, WCAG 2.2]]; [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C, what's new in WCAG 2.2]]; [[https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/|W3C, WCAG-EM]].",
           "**Australia:** [[https://humanrights.gov.au/our-work/disability-rights/publications/guidelines-equal-access-digital-goods-and-services|Australian Human Rights Commission, guidelines on equal access to digital goods and services]]; [[https://www.forgov.qld.gov.au/service-design-and-delivery/design-public-services/digital-accessibility/buy-accessible-ict-products-and-services|Queensland Government, buy accessible ICT]]; [[https://www.info.buy.nsw.gov.au/resources/government-accessibility-standards-for-ict|buy.nsw, government accessibility standards for ICT]].",
-          "AS EN 301 549 and AHRC points were confirmed via search summaries and procurement guidance. Tables, checklists and example are ours. Nothing here is legal advice or ZSpace client data.",
+          "AS EN 301 549 and AHRC points are summarised from official guidance and procurement guidance. Tables, checklists and example are ours. Nothing here is legal advice or ZSpace client data.",
         ],
       },
       {

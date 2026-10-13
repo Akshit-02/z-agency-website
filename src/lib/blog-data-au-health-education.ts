@@ -184,7 +184,7 @@ export const auHealthEducationPosts: BlogPost[] = [
         body: [
           "**VET:** [[https://www.asqa.gov.au/|ASQA]]; [[https://www.ncver.edu.au/|NCVER (AVETMISS)]]; [[https://www.usi.gov.au/|Unique Student Identifier]].",
           "**Accessibility:** [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C, what's new in WCAG 2.2]].",
-          "VET points were confirmed via search summaries of ASQA, DEWR and NCVER material; check current requirements. Tables, checklists and example are ours. Nothing here is regulatory advice or ZSpace client data.",
+          "VET points were checked against ASQA, DEWR and NCVER guidance; check current requirements. Tables, checklists and example are ours. Nothing here is regulatory advice or ZSpace client data.",
         ],
       },
       {
@@ -357,7 +357,7 @@ export const auHealthEducationPosts: BlogPost[] = [
           "**Funding and regulation:** [[https://www.mbsonline.gov.au/|MBS Online]]; [[https://www.tga.gov.au/sites/default/files/2024-07/excluded-software.pdf|TGA, excluded software (guidance PDF)]]; [[https://developer.digitalhealth.gov.au/|Australian Digital Health Agency, developer centre]].",
           "**Privacy:** [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/health-service-providers|OAIC, health service providers]]; [[https://www.oaic.gov.au/news/media-centre/data-breach-notifications-increase-to-all-time-high-in-2025,-new-ndb-stats-show|OAIC, NDB statistics 2025]]; [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/tracking-pixels-and-privacy-obligations|OAIC, tracking pixels and privacy obligations]].",
           "**Accessibility:** [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C, what's new in WCAG 2.2]].",
-          "MBS, TGA and ADHA points were confirmed via search summaries of official material; check current requirements. Checklists, tables and example are ours. Nothing here is clinical, legal or regulatory advice or ZSpace client data.",
+          "MBS, TGA and ADHA points are summarised from official guidance; check current requirements. Checklists, tables and example are ours. Nothing here is clinical, legal or regulatory advice or ZSpace client data.",
         ],
       },
       {
@@ -538,7 +538,7 @@ export const auHealthEducationPosts: BlogPost[] = [
           "**National services:** [[https://www.servicesaustralia.gov.au/healthcare-identifier-hi-service-for-software-developers|Services Australia, HI Service for software developers]]; [[https://developer.digitalhealth.gov.au/|Australian Digital Health Agency, developer centre]].",
           "**Standards:** [[https://hl7.org.au/fhir/core|HL7 Australia, AU Core implementation guide]].",
           "**Privacy:** [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/health-service-providers|OAIC, health service providers]].",
-          "Points were confirmed via search summaries of official material; versions and requirements change, so check current documentation. Tables, checklists and example are ours. Nothing here is legal, clinical or regulatory advice or ZSpace client data.",
+          "Points are summarised from official guidance; versions and requirements change, so check current documentation. Tables, checklists and example are ours. Nothing here is legal, clinical or regulatory advice or ZSpace client data.",
         ],
       },
       {

@@ -171,7 +171,7 @@ Track        -> received, inspected, refunded`,
         heading: "Sources",
         body: [
           "[[https://www.accc.gov.au/business/problem-with-a-product-or-service-you-sold/repair-replace-refund-cancel|ACCC, repair, replace, refund, cancel]]; [[https://consumerprotection.wa.gov.au/returns-refunds-repairs-and-replacements|WA Consumer Protection, returns]]; [[https://auspost.com.au/business/ecommerce/ecommerce-report|Australia Post eCommerce Report 2026]]; [[https://www.acma.gov.au/avoid-sending-spam|ACMA, avoid sending spam]].",
-          "Consumer law points were confirmed via search summaries of ACCC and state regulator material. The flow, tables and checklists are ours. Nothing here is legal advice or ZSpace client data.",
+          "Consumer law points were checked against ACCC and state regulator guidance. The flow, tables and checklists are ours. Nothing here is legal advice or ZSpace client data.",
         ],
       },
       {
@@ -324,7 +324,7 @@ Track        -> received, inspected, refunded`,
         heading: "Sources",
         body: [
           "[[https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/executive-summary.html|RBA, surcharging conclusions]]; [[https://www.accc.gov.au/media-release/misleading-menus-invite-infringement-notices|ACCC, misleading menus]]; [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/tracking-pixels-and-privacy-obligations|OAIC, tracking pixels]]; [[https://data.gov.au/data/dataset/927d00f3-e64c-4331-9bae-52b4f64d2fcb|data.gov.au, ATDW API]].",
-          "Restaurant surcharge rules were confirmed via search summaries of ACCC material, including the 2013 change to single-price rules for restaurant surcharges; check current ACCC guidance. Tables and checklists are ours. Nothing here is legal advice or ZSpace client data.",
+          "Restaurant surcharge rules were checked against ACCC guidance, including the 2013 change to single-price rules for restaurant surcharges; check current ACCC guidance. Tables and checklists are ours. Nothing here is legal advice or ZSpace client data.",
         ],
       },
       {

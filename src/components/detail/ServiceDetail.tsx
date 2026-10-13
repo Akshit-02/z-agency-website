@@ -42,6 +42,7 @@ export type ServiceDetailData = {
   whatWeDo: string[];
   problems: string[];
   audience: string[];
+  notFor: { title: string; body: string }[];
   useCases: { title: string; body: string }[];
   approach: { title: string; body: string }[];
   deliverables: string[];
@@ -383,6 +384,14 @@ export function ServiceDetail({ data }: { data: ServiceDetailData }) {
         items={data.audience.map((a) => ({ title: a }))}
         icons={[Rocket, Building2, Store, Briefcase, Users]}
         columns={data.audience.length % 3 === 0 ? 3 : data.audience.length === 2 ? 2 : 4}
+      />
+
+      <CardGrid
+        eyebrow="Honest boundaries"
+        title={[<>Not the right</>, <span key="n" className="italic text-orange">fit if&hellip;</span>]}
+        intro="Better to say so now than halfway through a project. Here's when to choose a different first step."
+        items={data.notFor}
+        columns={data.notFor.length % 3 === 0 ? 3 : 2}
       />
 
       <CardGrid

@@ -36,8 +36,10 @@ import {
   DarkPanel,
   EASE,
   Eyebrow,
+  HeroLines,
   MaskLines,
   TiltCard,
+  heroRise,
   riseProps,
   serif,
 } from "@/components/ui/Aesthetic";
@@ -232,9 +234,7 @@ export function IndustriesHero() {
             Industries
           </Eyebrow>
           <h1 className="mt-7 text-[3.3rem] leading-[0.98] tracking-[-0.03em] text-ink sm:text-[4.6rem] lg:text-[5.2rem]" style={serif}>
-            <MaskLines
-              on={on}
-              still={still}
+            <HeroLines
               lines={[
                 <>Built for how</>,
                 <>your business</>,
@@ -244,12 +244,12 @@ export function IndustriesHero() {
               ]}
             />
           </h1>
-          <motion.p className="mt-7 max-w-[33rem] text-pretty text-[1.05rem] leading-relaxed text-ink/60" {...riseProps(on, still, 0.5)}>
+          <p {...heroRise(0.5, "mt-7 max-w-[33rem] text-pretty text-[1.05rem] leading-relaxed text-ink/60")}>
             Whatever industry you&rsquo;re in, the underlying question is the same: what does this business actually
             need to move forward? A property platform doesn&rsquo;t need the same experience as a D2C brand, so we
             adapt the product, technology and experience to fit.
-          </motion.p>
-          <motion.div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4" {...riseProps(on, still, 0.65)}>
+          </p>
+          <div {...heroRise(0.65, "mt-9 flex flex-wrap items-center gap-x-6 gap-y-4")}>
             <Link
               href="/contact"
               className="group inline-flex items-center gap-2 rounded-full bg-ink px-7 py-4 text-[0.92rem] font-medium text-white transition-colors duration-300 hover:bg-ink/85"
@@ -262,7 +262,7 @@ export function IndustriesHero() {
               Find your industry
               <ArrowDown className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5" />
             </a>
-          </motion.div>
+          </div>
         </div>
 
         <IndustryOrbit on={on} still={still} />

@@ -18,8 +18,10 @@ import {
   DarkPanel,
   EASE,
   Eyebrow,
+  HeroLines,
   MaskLines,
   TiltCard,
+  heroRise,
   riseProps,
   serif,
 } from "@/components/ui/Aesthetic";
@@ -189,9 +191,7 @@ export function AboutHero() {
             className="mt-7 text-[3.3rem] leading-[0.98] tracking-[-0.03em] text-ink sm:text-[4.6rem] lg:text-[5.3rem]"
             style={serif}
           >
-            <MaskLines
-              on={on}
-              still={still}
+            <HeroLines
               lines={[
                 <>We build</>,
                 <>things worth</>,
@@ -201,15 +201,12 @@ export function AboutHero() {
               ]}
             />
           </h1>
-          <motion.p
-            className="mt-7 max-w-[34rem] text-pretty text-[1.05rem] leading-relaxed text-ink/60"
-            {...riseProps(on, still, 0.5)}
-          >
+          <p {...heroRise(0.5, "mt-7 max-w-[34rem] text-pretty text-[1.05rem] leading-relaxed text-ink/60")}>
             ZSpace Labs is a technology and digital product studio for businesses that want better digital
             experiences, products and systems. We bring strategy, design and engineering together to turn ideas,
             problems and opportunities into things people can actually use.
-          </motion.p>
-          <motion.div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4" {...riseProps(on, still, 0.65)}>
+          </p>
+          <div {...heroRise(0.65, "mt-9 flex flex-wrap items-center gap-x-6 gap-y-4")}>
             <Link
               href="/contact"
               className="group inline-flex items-center gap-2 rounded-full bg-ink px-7 py-4 text-[0.92rem] font-medium text-white transition-colors duration-300 hover:bg-ink/85"
@@ -222,7 +219,7 @@ export function AboutHero() {
               See what we build
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
-          </motion.div>
+          </div>
         </div>
 
         <AboutStack on={on} still={still} />

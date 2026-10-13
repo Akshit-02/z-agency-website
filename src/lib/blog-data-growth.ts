@@ -733,7 +733,7 @@ export const growthPosts: BlogPost[] = [
       {
         heading: "Pricing and Shipping",
         body: [
-          "Price is judged against alternatives and against the total cost. In Baymard's survey of US shoppers who abandoned during checkout, 40% cited extra costs such as shipping, tax and fees being too high. Show delivery costs and thresholds early, explain what justifies the price and check whether competitors offer something materially cheaper or faster.",
+          "Price is judged against alternatives and against the total cost. In Baymard's survey of US shoppers who abandoned during checkout, 40% cited extra costs such as shipping, tax and fees being too high ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). Show delivery costs and thresholds early, explain what justifies the price and check whether competitors offer something materially cheaper or faster.",
         ],
       },
       {

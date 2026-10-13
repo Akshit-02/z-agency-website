@@ -826,7 +826,7 @@ export const shopifyCroPosts2: BlogPost[] = [
       },
       {
         q: "Does exit-intent actually work to recover leaving visitors?",
-        a: "Research on well-crafted exit messages has found meaningful recovery rates — commonly cited figures describe saving somewhere in the range of 10 to 15% of visitors who were about to leave, though the specific effect depends heavily on the offer, the audience, and how the message is executed.",
+        a: "There is no reliable public benchmark for how many leaving visitors an exit message recovers. The effect depends heavily on the offer, the audience and how the message is executed, so measure it against a holdout group that never sees the message.",
       },
       {
         q: "Should every exit-intent popup offer a discount?",
@@ -857,7 +857,7 @@ export const shopifyCroPosts2: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "Shopify exit-intent optimization detects when a visitor appears likely to leave — typically their cursor moving toward the browser's top edge on desktop — and shows a relevant, timed message as a last opportunity to keep them engaged. Research on well-crafted exit messages has found they can recover a meaningful share of otherwise-leaving visitors, though the effect depends heavily on execution. A discount is the most common offer but shouldn't be the automatic default for every visitor; alternatives like email capture, free-shipping reminders, or a relevant product nudge can work well without giving away margin unnecessarily.",
+          "Shopify exit-intent optimization detects when a visitor appears likely to leave — typically their cursor moving toward the browser's top edge on desktop — and shows a relevant, timed message as a last opportunity to keep them engaged. Well-targeted exit messages can recover some otherwise-leaving visitors, but the effect depends heavily on execution and should be measured against a holdout group. A discount is the most common offer but shouldn't be the automatic default for every visitor; alternatives like email capture, free-shipping reminders, or a relevant product nudge can work well without giving away margin unnecessarily.",
         ],
       },
       {
@@ -942,7 +942,7 @@ export const shopifyCroPosts2: BlogPost[] = [
     slug: "shopify-popups-cro",
     title: "Shopify Popups for CRO: When They Help and When They Hurt Conversions",
     excerpt:
-      "Google penalizes intrusive mobile popups, and shoppers abandon pages over badly timed ones — the difference between a useful interruption and an unnecessary one.",
+      "Google warns that intrusive popups can lead to poor search performance, and shoppers abandon pages over badly timed ones — the difference between a useful interruption and an unnecessary one.",
     category: "Shopify & Ecommerce",
     banner: "decisiontree",
     date: "2026-08-24",
@@ -952,7 +952,7 @@ export const shopifyCroPosts2: BlogPost[] = [
     faqs: [
       {
         q: "Do popups hurt Shopify SEO?",
-        a: "They can, specifically on mobile — Google's Intrusive Interstitials update targets popups that block content immediately after a visitor lands on a page, and can affect how that page ranks in mobile search results. Popups triggered by genuine user behavior (scroll depth, exit intent) rather than shown immediately on load are generally treated differently.",
+        a: "They can, specifically on mobile — Google's Intrusive Interstitials update targets popups that block content immediately after a visitor lands on a page, and Google says such interstitials may lead to poor search performance ([[https://developers.google.com/search/docs/appearance/avoid-intrusive-interstitials|Google Search Central]]) in mobile search results. Popups triggered by genuine user behavior (scroll depth, exit intent) rather than shown immediately on load are generally treated differently.",
       },
       {
         q: "Are all popups bad for conversion?",
@@ -991,7 +991,7 @@ export const shopifyCroPosts2: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "Shopify popups can help conversion when they're relevant, well-timed and easy to dismiss — but Google's Intrusive Interstitials policy specifically targets popups that block content immediately on mobile page load, and can affect how that page ranks. The distinction that matters is between a useful interruption (triggered by genuine engagement signals, relevant to what the visitor is doing, easy to close) and an unnecessary one (immediate on load, generic, hard to dismiss). Test popups against a control group rather than only tracking their own capture rate, since a popup can look successful while quietly hurting the broader page experience.",
+          "Shopify popups can help conversion when they're relevant, well-timed and easy to dismiss — but Google's Intrusive Interstitials policy specifically targets popups that block content immediately on mobile page load, and Google says they may lead to poor search performance. The distinction that matters is between a useful interruption (triggered by genuine engagement signals, relevant to what the visitor is doing, easy to close) and an unnecessary one (immediate on load, generic, hard to dismiss). Test popups against a control group rather than only tracking their own capture rate, since a popup can look successful while quietly hurting the broader page experience.",
         ],
       },
       {
@@ -1106,7 +1106,7 @@ export const shopifyCroPosts2: BlogPost[] = [
       },
       {
         q: "Do perfect 5-star ratings convert better than slightly lower ones?",
-        a: "Not necessarily — research has found that a mixed but strong rating (commonly cited in the roughly 4.2 to 4.7 range) can convert better than a perfect score, since a flawless rating can read as less authentic to shoppers who've come to expect some variation in honest reviews.",
+        a: "Not necessarily. Northwestern University's Spiegel Research Center found that purchase likelihood typically peaks for ratings between about 4.0 and 4.7 stars and declines as ratings approach 5.0 ([[https://spiegel.medill.northwestern.edu/How-Online-Reviews-Influence-Sales|Spiegel Research Center]]), since a flawless rating can read as less authentic to shoppers who've come to expect some variation in honest reviews.",
       },
       {
         q: "Should I show negative reviews on my Shopify store?",
@@ -1118,7 +1118,7 @@ export const shopifyCroPosts2: BlogPost[] = [
       },
       {
         q: "How many reviews does a product need before they meaningfully help conversion?",
-        a: "There's no universal threshold, but research generally suggests a product needs a reasonable volume — commonly cited guidance points to somewhere in the range of ten or more — before reviews carry meaningful statistical weight in a shopper's mind, with the effect continuing to strengthen as volume grows further.",
+        a: "There's no universal threshold. The Spiegel Research Center reported that a product with five reviews had a purchase likelihood 270% higher than one with no reviews ([[https://spiegel.medill.northwestern.edu/How-Online-Reviews-Influence-Sales|Spiegel Research Center]]), so getting the first few reviews onto products that have none matters most.",
       },
       {
         q: "Where should reviews be placed on a Shopify product page?",
@@ -1153,7 +1153,7 @@ export const shopifyCroPosts2: BlogPost[] = [
       {
         heading: "Product Reviews and Ratings",
         body: [
-          "A visible star rating near the product title, with full written reviews reachable without leaving the page, puts the most persuasive evidence exactly where the buying decision happens. Research suggests a product needs a reasonable review volume before ratings carry real weight in a shopper's mind — a single five-star review reads very differently from a rating backed by dozens of them.",
+          "A visible star rating near the product title, with full written reviews reachable without leaving the page, puts the most persuasive evidence exactly where the buying decision happens. Review volume matters as well as the score: the Spiegel Research Center found the first few reviews lift purchase likelihood substantially compared with none ([[https://spiegel.medill.northwestern.edu/How-Online-Reviews-Influence-Sales|Spiegel Research Center]]) — a single five-star review reads very differently from a rating backed by dozens of them.",
         ],
         visual: { variant: "pulse", accent: "orange", caption: "Reviews work best positioned exactly where the buying decision happens — near the price and CTA, not on a separate page." },
       },
@@ -1198,7 +1198,7 @@ export const shopifyCroPosts2: BlogPost[] = [
       {
         heading: "Negative Reviews: Handle Them Honestly",
         body: [
-          "Rather than suppressing critical feedback, respond to it visibly and constructively where your review platform allows — this demonstrates the brand actually engages with customer concerns, which research suggests builds more trust than an artificially spotless record. A pattern of specific, addressed negative feedback is more credible than the absence of any criticism at all.",
+          "Rather than suppressing critical feedback, respond to it visibly and constructively where your review platform allows — this demonstrates the brand actually engages with customer concerns, which tends to build more trust than an artificially spotless record. A pattern of specific, addressed negative feedback is more credible than the absence of any criticism at all.",
         ],
       },
       {

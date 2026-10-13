@@ -332,15 +332,9 @@ export function toSummary(post: BlogPost): BlogSummary {
   };
 }
 
-export const categories = [
-  "All",
-  "Web Development",
-  "AI & Automation",
-  "UI/UX",
-  "Shopify & Ecommerce",
-  "CRO",
-  "Mobile Apps",
-] as const;
+// Defined in blog-categories (no article data) so client components can
+// import the filter list without bundling every article body.
+export { categories } from "./blog-categories";
 
 export const posts: BlogPost[] = [
   {
@@ -2011,7 +2005,7 @@ export const posts: BlogPost[] = [
       },
       {
         q: "What's a reasonable target for each Core Web Vitals metric?",
-        a: "As commonly cited working targets: Largest Contentful Paint under roughly 2.5 seconds, Interaction to Next Paint under roughly 200 milliseconds, and Cumulative Layout Shift under roughly 0.1 — measured on real visitor traffic rather than a single lab test, and weighted toward mobile since that's where most Shopify traffic and most performance problems concentrate.",
+        a: "Google's thresholds for a good experience are Largest Contentful Paint of 2.5 seconds or less, Interaction to Next Paint of 200 milliseconds or less, and Cumulative Layout Shift of 0.1 or less, at the 75th percentile of page loads ([[https://web.dev/articles/vitals|web.dev]]) — measured on real visitor traffic rather than a single lab test, and weighted toward mobile since that's where most Shopify traffic and most performance problems concentrate.",
       },
       {
         q: "Why is Interaction to Next Paint the hardest metric to fix on Shopify?",

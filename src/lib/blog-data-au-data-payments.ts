@@ -393,7 +393,7 @@ Every event: store event ID, ignore repeats`,
         body: [
           "**Australian payments:** [[https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/executive-summary.html|RBA, surcharging conclusions]]; [[https://www.rba.gov.au/payments-and-infrastructure/debit-cards/least-cost-routing/|RBA, least-cost routing]]; [[https://www.nppa.com.au/the-platform/payto/|NPP Australia, PayTo]]; [[https://asic.gov.au/regulatory-resources/credit/buy-now-pay-later-credit-contracts-credit-licensing/|ASIC, BNPL credit licensing]].",
           "**Security:** [[https://www.pcisecuritystandards.org/|PCI Security Standards Council]].",
-          "Least-cost routing and PayTo points were confirmed via search summaries of official and provider material. Tables, checklists and example are ours. No fees are quoted. Nothing here is financial or legal advice or ZSpace client data.",
+          "Least-cost routing and PayTo points are summarised from official guidance and provider documentation. Tables, checklists and example are ours. No fees are quoted. Nothing here is financial or legal advice or ZSpace client data.",
         ],
       },
       {

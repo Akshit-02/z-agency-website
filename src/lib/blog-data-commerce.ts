@@ -130,7 +130,7 @@ export const commercePosts: BlogPost[] = [
         heading: "Checkout, Payments, Shipping and Taxes",
         body: [
           "Shopify hosts checkout, which means security and core checkout behavior are handled for you. On all plans you configure payment methods, accelerated checkouts, shipping profiles and rates, taxes, and checkout branding; thank-you and order status pages can be extended with apps. Customizing the information, shipping and payment steps with checkout UI extensions requires Shopify Plus. See [[/blogs/shopify-checkout-optimization|Shopify checkout optimization]].",
-          "Shipping rules deserve real testing. Unexpected extra costs are the most common reason shoppers give for abandoning checkout in Baymard's research, cited by 40% of US adults who abandoned an order (Baymard Institute, updated September 2025). Show delivery costs early and make sure the rates you configure match what the product page promises.",
+          "Shipping rules deserve real testing. Unexpected extra costs are the most common reason shoppers give for abandoning checkout in Baymard's research, cited by 40% of US adults who abandoned an order (Baymard Institute, updated September 2025) ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). Show delivery costs early and make sure the rates you configure match what the product page promises.",
         ],
       },
       {

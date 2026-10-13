@@ -155,7 +155,7 @@ export const auAiEngineeringPosts: BlogPost[] = [
         heading: "Sources",
         body: [
           "[[https://cloud.google.com/vertex-ai/generative-ai/docs/learn/data-residency|Google Cloud, Vertex AI data residency]]; [[https://docs.aws.amazon.com/general/latest/gr/bedrock.html|AWS, Amazon Bedrock endpoints]]; [[https://aws.amazon.com/blogs/machine-learning/accessing-openai-gpt-5-6-models-on-amazon-bedrock-from-australia-with-global-cross-region-inference/|AWS, cross-Region inference from Australia]]; [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products|OAIC, AI products guidance]].",
-          "Provider details were confirmed via search summaries and change frequently. Tables, checklists and example are ours. Nothing here is legal advice or ZSpace client data.",
+          "Provider details were checked against provider documentation and change frequently. Tables, checklists and example are ours. Nothing here is legal advice or ZSpace client data.",
         ],
       },
       {

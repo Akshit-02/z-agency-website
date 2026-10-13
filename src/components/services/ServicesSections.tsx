@@ -17,8 +17,10 @@ import {
   DarkPanel,
   EASE,
   Eyebrow,
+  HeroLines,
   MaskLines,
   TiltCard,
+  heroRise,
   riseProps,
   serif,
 } from "@/components/ui/Aesthetic";
@@ -160,9 +162,7 @@ export function ServicesHero() {
             Services
           </Eyebrow>
           <h1 className="mt-7 text-[3.3rem] leading-[0.98] tracking-[-0.03em] text-ink sm:text-[4.6rem] lg:text-[5.3rem]" style={serif}>
-            <MaskLines
-              on={on}
-              still={still}
+            <HeroLines
               lines={[
                 <>Built around</>,
                 <>
@@ -171,11 +171,11 @@ export function ServicesHero() {
               ]}
             />
           </h1>
-          <motion.p className="mt-7 max-w-[32rem] text-pretty text-[1.05rem] leading-relaxed text-ink/60" {...riseProps(on, still, 0.45)}>
+          <p {...heroRise(0.45, "mt-7 max-w-[32rem] text-pretty text-[1.05rem] leading-relaxed text-ink/60")}>
             Websites, apps, commerce, design, automation and optimisation for businesses across India. We bring the right combination of
             skills to help your business move forward.
-          </motion.p>
-          <motion.div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4" {...riseProps(on, still, 0.6)}>
+          </p>
+          <div {...heroRise(0.6, "mt-9 flex flex-wrap items-center gap-x-6 gap-y-4")}>
             <Link
               href="/contact"
               className="group inline-flex items-center gap-2 rounded-full bg-ink px-7 py-4 text-[0.92rem] font-medium text-white transition-colors duration-300 hover:bg-ink/85"
@@ -188,7 +188,7 @@ export function ServicesHero() {
               See our services
               <ArrowDown className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5" />
             </a>
-          </motion.div>
+          </div>
         </div>
 
         <StackedScreens on={on} still={still} />

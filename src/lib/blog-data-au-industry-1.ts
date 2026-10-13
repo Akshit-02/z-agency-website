@@ -619,7 +619,7 @@ export const auIndustryPosts1: BlogPost[] = [
           "**Tax:** [[https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/accounting-for-trading-stock/valuing-trading-stock|ATO, valuing trading stock]]; [[https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/in-detail/simplified-trading-stock-rules|ATO, simplified trading stock rules]].",
           "**Barcodes:** [[https://www.gs1au.org/get-gs1-barcodes|GS1 Australia, get GS1 barcodes]].",
           "**Integrations:** [[https://developer.xero.com/documentation/|Xero developer documentation]]; [[https://developer.myob.com/|MYOB developer portal]].",
-          "ATO points were confirmed via search summaries because ato.gov.au blocked our fetcher. The tables and example are ours. Nothing here is tax advice or ZSpace client data.",
+          "ATO points are summarised from official guidance and may change; check the current position before relying on them. The tables and example are ours. Nothing here is tax advice or ZSpace client data.",
         ],
       },
       {

@@ -7,7 +7,8 @@ import {
   Atmosphere,
   EASE,
   Eyebrow,
-  MaskLines,
+  HeroLines,
+  heroRise,
   riseProps,
   serif,
 } from "@/components/ui/Aesthetic";
@@ -106,9 +107,7 @@ export function ContactHero({ form }: { form: ReactNode }) {
             className="mt-6 text-[2.9rem] leading-[1] tracking-[-0.03em] text-ink sm:text-[4rem] lg:text-[4.4rem]"
             style={serif}
           >
-            <MaskLines
-              on={on}
-              still={still}
+            <HeroLines
               lines={[
                 <>Let&rsquo;s figure out</>,
                 <>what you&rsquo;re</>,
@@ -118,13 +117,10 @@ export function ContactHero({ form }: { form: ReactNode }) {
               ]}
             />
           </h1>
-          <motion.p
-            className="mt-7 max-w-[30rem] text-pretty text-[1.05rem] leading-relaxed text-ink/60"
-            {...riseProps(on, still, 0.4)}
-          >
+          <p {...heroRise(0.4, "mt-7 max-w-[30rem] text-pretty text-[1.05rem] leading-relaxed text-ink/60")}>
             Share a few details about the project and we&rsquo;ll come back with
             a clear read on scope and next steps — no automated sales sequence.
-          </motion.p>
+          </p>
 
           <ul className="mt-9 flex flex-col gap-2.5">
             {facts.map((f, i) => (

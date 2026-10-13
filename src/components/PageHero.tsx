@@ -1,6 +1,5 @@
 import type { ReactNode } from "react";
 import { Container } from "./Container";
-import { Reveal } from "./ScrollReveal";
 import { Eyebrow } from "./SectionHeading";
 import { Breadcrumbs, type Crumb } from "./Breadcrumbs";
 import { Atmosphere } from "./ui/Aesthetic";
@@ -29,20 +28,20 @@ export function PageHero({
             <Breadcrumbs items={breadcrumbs} />
           </div>
         )}
-        <Reveal>
+        <div className="hero-rise">
           <Eyebrow accent={accent}>{eyebrow}</Eyebrow>
-        </Reveal>
-        <Reveal delay={0.08} y={36}>
+        </div>
+        <div className="hero-rise" style={{ animationDelay: "0.08s", ["--hero-y" as string]: "36px" }}>
           <h1 className="mt-5 max-w-4xl text-balance font-serif-display text-[2.8rem] leading-[1.02] sm:text-[4rem] lg:text-[4.6rem]">
             {title}
           </h1>
-        </Reveal>
+        </div>
         {description && (
-          <Reveal delay={0.16}>
+          <div className="hero-rise" style={{ animationDelay: "0.16s" }}>
             <p className="mt-7 max-w-[56ch] text-pretty text-[1.1rem] leading-relaxed text-ink-soft">
               {description}
             </p>
-          </Reveal>
+          </div>
         )}
         {children}
       </Container>

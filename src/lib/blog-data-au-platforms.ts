@@ -236,7 +236,7 @@ Dispute    -> hold funds; evidence from both sides`,
           "**Tax:** [[https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/third-party-reporting/sharing-economy-reporting-regime|ATO, sharing economy reporting regime]]; [[https://www.ato.gov.au/businesses-and-organisations/international-tax-for-business/gst-for-non-resident-businesses/how-australian-gst-works|ATO, how Australian GST works for non-resident businesses]].",
           "**Consumer law and scams:** [[https://www.accc.gov.au/business/advertising-and-promotions/online-product-and-service-reviews|ACCC, online product and service reviews]]; [[https://www.legislation.gov.au/C2025A00015/latest/text|Scams Prevention Framework Act 2025]].",
           "**Market and payments:** [[https://auspost.com.au/business/ecommerce/ecommerce-report|Australia Post eCommerce Report 2026]]; [[https://stripe.com/global|Stripe global availability]]; [[https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/executive-summary.html|RBA, surcharging conclusions]].",
-          "ATO and ACCC points, and the Scams Prevention Framework designation status, were confirmed via search summaries where fetches were blocked; check the current position. The models, release plan and example are ours. Nothing here is legal, tax or financial advice or ZSpace client data.",
+          "ATO and ACCC points, and the Scams Prevention Framework designation status, are summarised from official guidance; check the current position. The models, release plan and example are ours. Nothing here is legal, tax or financial advice or ZSpace client data.",
         ],
       },
       {

@@ -579,7 +579,7 @@ export const uaeCroPosts: BlogPost[] = [
         heading: "Shipping transparency and delivery expectations",
         body: [
           "**UAE research.** In DHL's 2026 E-Commerce Trends Report, as reported by Khaleej Times, 92% of UAE shoppers said they prioritise fast, free delivery and easy returns, 83% would abandon a cart if their preferred delivery option was unavailable and 81% if their preferred returns option was unavailable. The UAE sample size was not given.",
-          "**Research (US).** In Baymard's US survey, extra costs were the most common reason to abandon (40%), and 12% could not see or calculate the total cost up front.",
+          "**Research (US).** In Baymard's US survey, extra costs were the most common reason to abandon (40%), and 12% could not see or calculate the total cost up front ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]).",
           "**Our recommendations.** Show delivery cost and an estimated delivery date on the product page and cart, before checkout, ideally by emirate. State the free-delivery threshold and how far the shopper is from it. Offer the delivery choices your couriers support (standard, express, scheduled slot) and say what happens if nobody is home. If COD carries a fee, show it before the payment step, not at the end. Make sure the delivery promise matches what your courier actually achieves; a broken promise costs more than a modest one.",
         ],
       },
@@ -607,7 +607,7 @@ export const uaeCroPosts: BlogPost[] = [
         heading: "Trust, returns and invoices",
         body: [
           "**UAE facts.** Under Federal Decree-Law 14 of 2023, digital traders must provide detailed digital invoices for online purchases ([[https://u.ae/en/information-and-services/business/important-digital-services/digital-invoicing|u.ae digital invoicing]]). Consumer invoices must be in Arabic (u.ae).",
-          "**Research (US).** In Baymard's US survey, 19% abandoned because they did not trust the site with card details and 13% because the returns policy was unsatisfactory.",
+          "**Research (US).** In Baymard's US survey, 19% abandoned because they did not trust the site with card details and 13% because the returns policy was unsatisfactory ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]).",
           "**Our recommendations.** Show a short returns summary (window, condition, who pays, how collection works) next to the pay button, with a link to the full policy in Arabic and English. Display the legal entity and trade licence details in the footer and on the policy pages. Use recognisable payment marks only for methods you actually accept. Send a detailed bilingual invoice and order confirmation immediately. Given DHL's finding that 73% of UAE shoppers return mainly via home collection, say clearly whether you offer collection.",
         ],
       },

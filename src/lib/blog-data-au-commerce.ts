@@ -345,7 +345,7 @@ export const auCommercePosts: BlogPost[] = [
       },
       {
         q: "Why do Australian shoppers abandon their carts?",
-        a: "Shopify research cited in the Australia Post eCommerce Report 2026 found 52% of Australians had abandoned a cart because checkout was too long or complicated, rising to 67% for higher spenders. Australia Post also found 70% are less likely to buy when delivery communication at checkout is poor. Baymard's US survey adds extra costs, slow delivery and forced account creation as common reasons.",
+        a: "Shopify research cited in the Australia Post eCommerce Report 2026 found 52% of Australians had abandoned a cart because checkout was too long or complicated, rising to 67% for higher spenders. Australia Post also found 70% are less likely to buy when delivery communication at checkout is poor. Baymard's US survey adds extra costs, slow delivery and forced account creation as common reasons ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]).",
       },
       {
         q: "Can I still add a card surcharge at checkout?",
@@ -443,7 +443,7 @@ export const auCommercePosts: BlogPost[] = [
         heading: "Zone 4: returns",
         body: [
           "**Regulation.** Products sold in Australia come with consumer guarantees. For a major failure, 'the consumer can choose a refund or replacement'; for a minor problem, the business can choose to repair, replace or refund; and it is 'illegal for businesses to try to cancel these rights in store policies or terms and conditions', for example with 'no refunds' policies ([[https://consumerprotection.wa.gov.au/returns-refunds-repairs-and-replacements|Consumer Protection WA]]). Change-of-mind returns are a business choice, but any policy you advertise must be honoured.",
-          "**Research.** In the Australia Post report, 57% of Baby Boomers said free returns strongly influence where they shop. In Baymard's US survey, 13% of shoppers abandoned because the returns policy was not satisfactory.",
+          "**Research.** In the Australia Post report, 57% of Baby Boomers said free returns strongly influence where they shop. In Baymard's US survey, 13% of shoppers abandoned because the returns policy was not satisfactory ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]).",
           "**Our recommendation.** Put a two-line returns summary near the add-to-cart button and again in the cart, linking to the full policy. Separate faulty items from change of mind in plain language. Say who pays return postage for change of mind and how long refunds take. Offer a self-service returns start, a label or drop-off option, and status updates. Have the policy reviewed by a lawyer. See [[/blogs/ecommerce-returns-ux|ecommerce returns UX]] for flow design.",
         ],
       },

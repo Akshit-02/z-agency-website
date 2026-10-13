@@ -107,7 +107,7 @@ export const commercePosts83: BlogPost[] = [
         ],
         checklist: [
           "**United States:** CBP suspended duty-free de minimis treatment for low-value shipments from all countries from 29 August 2025, and the exemption is eliminated by statute from 1 July 2027. Low-value parcels now need formal or informal entry and duty payment.",
-          "**European Union:** the €150 customs duty exemption ended on 1 July 2026, replaced by a transitional flat duty per item on low-value consignments. Import VAT on consignments up to €150 can be collected at checkout through the Import One-Stop Shop (IOSS).",
+          "**European Union:** duty-free treatment of consignments up to €150 ended on 1 July 2026, replaced by a temporary €3 customs duty per item ([[https://commission.europa.eu/news-and-media/news/ensuring-fairness-and-safety-eur3-customs-duty-low-value-parcels-2026-06-29_en|European Commission]]); the €150 threshold itself is due to be removed under wider customs reform, expected around 2028. Import VAT on consignments up to €150 can be collected at checkout through the Import One-Stop Shop (IOSS).",
           "**United Kingdom:** for consignments of £135 or less, the seller or marketplace charges UK VAT at the point of sale. The government has announced that customs duty relief on low-value imports will end, so expect changes here too.",
           "**Australia:** registered overseas sellers and marketplaces collect GST on low-value imported goods of A$1,000 or less at checkout; higher-value consignments are taxed at the border.",
         ],

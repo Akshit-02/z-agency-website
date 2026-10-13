@@ -5,6 +5,17 @@
  * the category.
  */
 
+/** Filter labels for the blog explorer, in display order. */
+export const categories = [
+  "All",
+  "Web Development",
+  "AI & Automation",
+  "UI/UX",
+  "Shopify & Ecommerce",
+  "CRO",
+  "Mobile Apps",
+] as const;
+
 export type BlogCategoryMeta = {
   slug: string;
   name: string; // must match BlogPost.category exactly

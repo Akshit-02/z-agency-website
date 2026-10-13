@@ -94,7 +94,7 @@ export const auMobilePosts: BlogPost[] = [
       {
         heading: "The seven cost drivers, in order of impact",
         body: [
-          "Most of the difference between two app quotes comes from a handful of decisions. In our experience, the order below is roughly the order of impact, though every project differs.",
+          "Most of the difference between two app quotes comes from a handful of decisions. In practice, the order below is roughly the order of impact, though every project differs.",
         ],
         table: {
           headers: ["Driver", "What raises cost", "What keeps it contained"],

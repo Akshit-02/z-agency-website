@@ -336,7 +336,7 @@ export const shopifyCroPosts: BlogPost[] = [
       {
         heading: "Where Shopify Checkout Loses Shoppers",
         body: [
-          "Baymard Institute's abandonment research asked US online shoppers who abandoned during checkout why they left, excluding those just browsing. Extra costs being too high was the most common reason (40%), followed by slow delivery (20%), not trusting the site with card details (19%), being required to create an account (18%), a long or complicated checkout (17%) and site errors (17%). Most of these are decided before or around checkout rather than by its layout, which is why so much checkout optimization happens on the product page and in the cart.",
+          "Baymard Institute's abandonment research asked US online shoppers who abandoned during checkout why they left, excluding those just browsing ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). Extra costs being too high was the most common reason (40%), followed by slow delivery (20%), not trusting the site with card details (19%), being required to create an account (18%), a long or complicated checkout (17%) and site errors (17%). Most of these are decided before or around checkout rather than by its layout, which is why so much checkout optimization happens on the product page and in the cart.",
         ],
       },
       {

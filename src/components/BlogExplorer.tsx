@@ -5,7 +5,8 @@ import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { Search } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { BlogCard } from "./BlogCard";
-import { categories, type BlogSummary } from "@/lib/blog-data";
+import type { BlogSummary } from "@/lib/blog-data";
+import { categories } from "@/lib/blog-categories";
 
 const PAGE_SIZE = 24;
 

@@ -21,7 +21,7 @@ export const growthPosts2: BlogPost[] = [
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer"],
     faqs: [
       { q: "Why do customers add to cart but not buy?", a: "Common reasons include extra costs appearing late, slow or unclear delivery, waiting for a discount, lack of trust, friction in the cart or checkout, required account creation, payment failures, mobile problems, technical errors and simply browsing or saving items for later." },
-      { q: "Is some cart abandonment normal?", a: "Yes. Many shoppers use the cart to save items, compare prices or check the total. Baymard's compilation of studies puts the documented average cart abandonment rate at around 70%, so the goal is to reduce avoidable abandonment, not eliminate it." },
+      { q: "Is some cart abandonment normal?", a: "Yes. Many shoppers use the cart to save items, compare prices or check the total. Baymard's compilation of studies puts the documented average cart abandonment rate at around 70%, so the goal is to reduce avoidable abandonment, not eliminate it ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]])." },
       { q: "What's the difference between cart and checkout abandonment?", a: "Cart abandonment is leaving after adding items but before starting checkout. Checkout abandonment is leaving after starting checkout but before paying. Measure them separately because the causes differ." },
       { q: "How do I find where shoppers drop off after adding to cart?", a: "Track each step: add to cart, view cart, begin checkout, add shipping information, add payment information and purchase. GA4's recommended ecommerce events cover these steps; Shopify's conversion breakdown shows cart additions, reached checkout and completed checkout." },
       { q: "Do free shipping thresholds help?", a: "They can, if the threshold is realistic and clearly communicated. The bigger issue is usually surprise: shoppers who only see delivery costs at checkout." },
@@ -41,7 +41,7 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "Some Abandonment Is Normal",
         body: [
-          "Shoppers use carts to save items, compare prices and check totals. Baymard Institute's compilation of 50 studies documents an average online cart abandonment rate of around 70%, and many of those shoppers weren't ready to buy. The aim is to find and reduce avoidable abandonment: shoppers who wanted to buy and were stopped by something you can change.",
+          "Shoppers use carts to save items, compare prices and check totals. Baymard Institute's compilation of 50 studies documents an average online cart abandonment rate of around 70%, and many of those shoppers weren't ready to buy ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). The aim is to find and reduce avoidable abandonment: shoppers who wanted to buy and were stopped by something you can change.",
         ],
       },
       {
@@ -70,13 +70,13 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "Shipping Costs",
         body: [
-          "In Baymard's survey of US shoppers who abandoned during checkout (excluding those just browsing), 40% said extra costs such as shipping, tax and fees were too high, and 12% said they couldn't see or calculate the total up front. If the biggest drop is at checkout start or after shipping details, check whether delivery costs appear before checkout: on product pages, in the cart, or through a quick postcode estimate.",
+          "In Baymard's survey of US shoppers who abandoned during checkout (excluding those just browsing), 40% said extra costs such as shipping, tax and fees were too high, and 12% said they couldn't see or calculate the total up front ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). If the biggest drop is at checkout start or after shipping details, check whether delivery costs appear before checkout: on product pages, in the cart, or through a quick postcode estimate.",
         ],
       },
       {
         heading: "Delivery Uncertainty",
         body: [
-          "Slow delivery was the second most common reason in Baymard's survey (20%). Shoppers buying gifts or time-sensitive products need a delivery date, not just a service name. Show estimated dates in the cart and at the delivery step, and offer faster options with clear prices.",
+          "Slow delivery was the second most common reason in Baymard's survey (20%) ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). Shoppers buying gifts or time-sensitive products need a delivery date, not just a service name. Show estimated dates in the cart and at the delivery step, and offer faster options with clear prices.",
         ],
       },
       {
@@ -104,7 +104,7 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "Checkout UX and Account Creation",
         body: [
-          "Being required to create an account (18%) and a long or complicated checkout (17%) were both common reasons in Baymard's survey. Offer guest checkout, ask for account creation after purchase, remove unnecessary fields and support autofill. See [[/blogs/why-customers-abandon-checkout|why customers abandon checkout]].",
+          "Being required to create an account (18%) and a long or complicated checkout (17%) were both common reasons in Baymard's survey ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). Offer guest checkout, ask for account creation after purchase, remove unnecessary fields and support autofill. See [[/blogs/why-customers-abandon-checkout|why customers abandon checkout]].",
         ],
       },
       {
@@ -197,11 +197,11 @@ export const growthPosts2: BlogPost[] = [
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer", "retail"],
     faqs: [
       { q: "Why do customers abandon checkout?", a: "In Baymard's survey of US shoppers who abandoned during checkout (excluding those just browsing), the most common reasons were extra costs being too high, slow delivery, not trusting the site with card details, being required to create an account, a long or complicated checkout and site errors." },
-      { q: "What is the most common reason for checkout abandonment?", a: "In Baymard's survey, extra costs such as shipping, tax and fees being too high, cited by 40% of those respondents." },
-      { q: "What is the average checkout abandonment rate?", a: "Baymard's compilation of 50 studies puts the documented average online cart abandonment rate at around 70%. That figure includes shoppers who were only browsing, so it isn't the same as avoidable checkout abandonment." },
+      { q: "What is the most common reason for checkout abandonment?", a: "In Baymard's survey, extra costs such as shipping, tax and fees being too high, cited by 40% of those respondents ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]])." },
+      { q: "What is the average checkout abandonment rate?", a: "Baymard's compilation of 50 studies puts the documented average online cart abandonment rate at around 70% ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). That figure includes shoppers who were only browsing, so it isn't the same as avoidable checkout abandonment." },
       { q: "How can I reduce checkout abandonment?", a: "Show full costs early, offer guest checkout, reduce form fields, support autofill and express payments, offer the payment methods your customers use, handle errors without losing data, reassure on security and returns, and make checkout fast on mobile." },
       { q: "How many form fields should checkout have?", a: "As few as possible. Baymard's benchmark found an average of 11.3 form fields in checkout, while most sites need only 8." },
-      { q: "Does offering more payment methods help?", a: "It helps when the missing methods are ones your customers want. 9% of respondents in Baymard's survey said there weren't enough payment methods." },
+      { q: "Does offering more payment methods help?", a: "It helps when the missing methods are ones your customers want. 9% of respondents in Baymard's survey said there weren't enough payment methods ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]])." },
       { q: "How do I find out why my customers abandon?", a: "Look at drop-off by checkout step, device and country, review field errors and payment failures, watch recordings of abandoned checkouts, place test orders and ask abandoning shoppers with a short survey." },
       { q: "Do trust badges reduce checkout abandonment?", a: "Generic badges have limited effect. Consistent branding, recognizable payment options, clear policies, visible contact details and reassurance next to payment fields do more." },
       { q: "Is checkout speed important?", a: "Yes. Slow steps, long payment processing and errors all add friction. 17% of Baymard's respondents said the website had errors or crashed." },
@@ -239,7 +239,7 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "Not All Abandonment Is Fixable",
         body: [
-          "Baymard's documented average cart abandonment rate across 50 studies is around 70%, but that includes people comparing prices, saving items and browsing. Focus on the reasons you can influence, and measure progress against your own baseline rather than a universal target.",
+          "Baymard's documented average cart abandonment rate across 50 studies is around 70%, but that includes people comparing prices, saving items and browsing ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). Focus on the reasons you can influence, and measure progress against your own baseline rather than a universal target.",
         ],
       },
       {

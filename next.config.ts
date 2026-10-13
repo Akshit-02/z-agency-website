@@ -1,6 +1,22 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Baseline security headers. A Content-Security-Policy is deliberately not
+  // set here yet: GA4 and Next.js inline scripts need a nonce-based policy,
+  // which should be rolled out and tested separately.
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
+          { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), browsing-topics=()" },
+        ],
+      },
+    ];
+  },
   async redirects() {
     return [
       // Common mistyped/legacy path: the blog lives at /blogs.

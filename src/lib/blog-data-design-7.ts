@@ -372,7 +372,7 @@ export const designPosts7: BlogPost[] = [
       { q: "What should an ecommerce cart page include?", a: "Each item with image, name, selected options, price, quantity control and line total; options to remove or save items; a summary with subtotal, discounts, estimated delivery cost, taxes where applicable and total; a clear checkout button; and reassurance about delivery and returns." },
       { q: "Should I use a cart drawer or a cart page?", a: "Drawers let shoppers confirm and keep browsing; pages give more room to review and edit. Many stores use a drawer or confirmation for adding items and a full cart page for reviewing. Whichever you choose, it must be easy to edit and show costs clearly." },
       { q: "What should happen after a shopper adds an item to the cart?", a: "Clear confirmation of what was added, an updated cart count, and easy options to continue shopping or go to the cart or checkout, without losing their place on the page." },
-      { q: "Should the cart show shipping costs?", a: "Yes, at least an estimate. Unexpected extra costs are the top reason for checkout abandonment in Baymard's surveys, and 12% of shoppers who abandoned said they couldn't see or calculate the total cost up front." },
+      { q: "Should the cart show shipping costs?", a: "Yes, at least an estimate. Unexpected extra costs are the top reason for checkout abandonment in Baymard's surveys, and 12% of shoppers who abandoned said they couldn't see or calculate the total cost up front ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]])." },
       { q: "Where should the promo code field go?", a: "In the cart or checkout summary, but collapsed behind a link such as “Add a discount code” so shoppers without a code aren't prompted to leave and search for one." },
       { q: "How should quantity controls work?", a: "Use a stepper with an editable number field, update totals immediately, respect stock limits with a clear message, and let shoppers remove items with an undo option." },
       { q: "What should an empty cart show?", a: "A friendly message, routes back into shopping such as main categories or recently viewed items, and for signed-out shoppers, a prompt to sign in to see a saved cart." },
@@ -436,7 +436,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Costs: Subtotal, Delivery, Taxes and Total",
         body: [
-          "Cost surprises are the biggest checkout problem. In Baymard Institute's survey of US online shoppers who abandoned during checkout, excluding those who were just browsing, 40% said extra costs such as shipping, tax and fees were too high, and 12% said they couldn't see or calculate the total order cost up front.",
+          "Cost surprises are the biggest checkout problem. In Baymard Institute's survey of US online shoppers who abandoned during checkout, excluding those who were just browsing, 40% said extra costs such as shipping, tax and fees were too high, and 12% said they couldn't see or calculate the total order cost up front ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]).",
           "Show an estimated delivery cost in the cart, using the shopper's location or a quick postcode or country input, along with expected delivery dates. Show taxes where they're known; in markets where prices include VAT, say so, and where tax is calculated later, say when. If you use a free-delivery threshold, state it honestly and show how far the cart is from it.",
         ],
       },
@@ -547,7 +547,7 @@ export const designPosts7: BlogPost[] = [
       { q: "How can you make address entry easier?", a: "Use address lookup with a manual fallback, support browser autofill with correct autocomplete attributes, default billing to the delivery address, and validate formats for each country." },
       { q: "What should a checkout confirmation page include?", a: "The order number, a summary of items and costs, delivery address and expected date, confirmation that an email was sent, what happens next, how to get help and an optional way to create an account." },
       { q: "How should checkout errors be handled?", a: "Show errors next to the field in plain language, explain how to fix them, keep everything the shopper entered and, after a failed submit, summarize errors at the top with links to each field." },
-      { q: "What is a typical cart abandonment rate?", a: "Baymard's compilation of 50 studies puts the documented average online cart abandonment rate at around 70%. Many of those shoppers were only browsing, so not all abandonment is a checkout design problem." },
+      { q: "What is a typical cart abandonment rate?", a: "Baymard's compilation of 50 studies puts the documented average online cart abandonment rate at around 70% ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). Many of those shoppers were only browsing, so not all abandonment is a checkout design problem." },
       { q: "Can I change the design of Shopify's checkout?", a: "Only within the limits Shopify allows, which differ by plan. See ZSpace Labs' Shopify checkout optimization guide for what can and can't be customized." },
     ],
     content: [
@@ -560,7 +560,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Why Shoppers Abandon Checkout",
         body: [
-          "Baymard Institute's compilation of 50 studies puts the documented average cart abandonment rate at around 70%, but many of those shoppers were browsing, comparing or saving items, not trying to buy. The more useful data is why buyers leave. In Baymard's survey of US online shoppers who abandoned during checkout, excluding those just browsing:",
+          "Baymard Institute's compilation of 50 studies puts the documented average cart abandonment rate at around 70%, but many of those shoppers were browsing, comparing or saving items, not trying to buy ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). The more useful data is why buyers leave. In Baymard's survey of US online shoppers who abandoned during checkout, excluding those just browsing:",
         ],
         table: {
           headers: ["Reason", "Share of respondents"],
@@ -777,7 +777,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "What Makes Mobile Shopping Different",
         body: [
-          "Baymard Institute's mobile ecommerce research identifies five overarching problems: shoppers lack an overview of the page because they see it in fragments, they become disoriented about where they are, technical glitches get in the way, taps are missed or land on the wrong element, and they're interrupted often, on average once every 20 minutes during testing. Baymard reports that 63% of mobile users in testing abandoned a product or site at least once solely because of preventable mobile usability issues.",
+          "Baymard Institute's mobile ecommerce research identifies five overarching problems: shoppers lack an overview of the page because they see it in fragments, they become disoriented about where they are, technical glitches get in the way, taps are missed or land on the wrong element, and they're interrupted often, on average once every 20 minutes during testing ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). Baymard reports that 63% of mobile users in testing abandoned a product or site at least once solely because of preventable mobile usability issues.",
           "Responsive layout is the starting point, covered in [[/blogs/responsive-ui-design|responsive UI design]]. This guide covers the shopping-specific decisions on top of it, following the shopping journey. For Shopify-specific mobile optimization, see [[/blogs/shopify-mobile-cro|Shopify mobile CRO]].",
         ],
       },

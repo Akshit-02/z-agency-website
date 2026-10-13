@@ -1,0 +1,83 @@
+slug	decision	note
+@family:ai-agents-in-	KEEP	Templated industry family (identical H2 skeleton, 0 external sources, 2–5 inlinks each). Text is distinct (cosine 0.17–0.47). Do not add more; include in Search Console tier review (P4-1); consolidation candidate into /blogs/ai-agent-development hub if no impressions after 90 days.
+@family:ai-agents-for-	KEEP	Same templated family as ai-agents-in-*; same handling.
+ai-automation-roi	UPDATE	Remove research-process artefact ("search summaries we could not verify") and replace "as reported" McKinsey/Gartner mentions with primary-source citations.
+ai-agents-in-healthcare	KEEP	Flagged stat references Deloitte without link; verify in fact pass.
+ai-agents-in-academic-support	KEEP	Overlaps ai-agents-in-education (0.47) but intents differ (teaching/faculty vs admissions/student services); both cross-link.
+agentic-ai-uae	KEEP	Well sourced (34 refs); regulatory claims in verification list.
+ai-agents-australia	KEEP	Well sourced (16 refs); Gartner "as reported" phrasing → cite primary in fact pass.
+ai-automation-cost-australia	UPDATE	Gartner "as reported" → cite Gartner press release directly.
+ai-development-cost-uae	UPDATE	Gartner "(as reported)" → cite Gartner press release directly.
+agentic-ai-readiness-uae	UPDATE	Gartner "as reported" → cite Gartner press release directly.
+ai-coding-policy	KEEP	Short (784w) policy explainer; matches intent.
+enterprise-ai-integration	KEEP	Market mismatch: generic slug but title/content are UAE-specific (46 UAE-heavy refs). A global "enterprise AI integration" searcher lands on a UAE page. Option (needs approval): retitle without "UAE" and move UAE rules into a section, or leave as the UAE page and create nothing new. Logged for P3.
+crm-automation-guide	KEEP	Thin (613w) for a page with 16 inlinks, India-flavoured ("Common Indian setups"). Expansion candidate in P4 refresh; no factual defects found.
+b2b-customer-onboarding-automation	KEEP	Global article with Australian and UK sections; acceptable localisation within one URL (LOCALISE decision).
+@family:best-	MERGE	Self-ranked lists: India-wide → reframe (unranked, no self-#1); city/state → merge + 301 into India list. Requires approval (README Q3); not changed.
+claude-code-vs-codex-vs-cursor	KEEP	Explicitly dated "as of October 2026"; re-verify quarterly.
+digital-transformation-uae-smes	KEEP	40 refs; UAE e-invoicing dates checked against KPMG (Phase 1 1 Jan 2027 / Phase 2 1 Jul 2027) in fact pass.
+model-context-protocol	KEEP	Cites "2026-07-28 specification"; verify against modelcontextprotocol.io in fact pass.
+@baymard	UPDATE	Baymard statistics (≈70% abandonment, 40% extra costs, 20% slow delivery, 19% trust, 18% account, 17% long checkout, 12% total cost, 9% payment methods) attributed by name but unlinked; verify against current Baymard pages and add the source link (fact pass).
+ai-search-traffic-tracking	KEEP	Mentions Search Console generative AI reports; consistent with the June 2026 launch.
+gcc-digital-transformation	KEEP	60 refs; country stats attributed to named sources (DataReportal, ministries).
+when-to-automate-a-business-process	KEEP	Short (758w) but focused framework; 62 inlinks (hub). No changes needed.
+saas-pricing-page-optimization	KEEP	Market mismatch: generic slug, Australia-specific content (GST, Australian pricing display). LOCALISE decision logged; retitle option for P3.
+mobile-app-development-cost	KEEP	Commercial guide (38 inlinks) is thin (912w) vs AU twin (3,003w); explains drivers without numbers. P4 refresh with ZSpace's own ranges if approved (README Q/P2-8).
+website-development-cost	KEEP	Same as mobile cost guide: P4 refresh candidate.
+how-to-choose-a-cro-agency	KEEP	Short (491w) commercial page; same intent as best-cro-agencies-in-india → merge destination under F2 option A (approval).
+how-to-choose-a-mobile-app-development-company	KEEP	Same intent as best-mobile-app-* lists → merge destination under F2 option A (approval).
+grocery-ecommerce-conversion-optimization	KEEP	0.53 overlap with grocery-ecommerce-ux; UX vs CRO angles differ. Watch in tier review.
+jewelry-ecommerce-conversion-optimization	KEEP	0.54 overlap with jewelry-ecommerce-ux; same handling.
+flutter-app-development	KEEP	Overlaps flutter-vs-react-native (0.52); distinct intents (guide vs comparison).
+mobile-app-development-cost-australia	UPDATE	Replace "In our experience" (no published projects to back it) with neutral wording.
+mobile-app-development-company-australia	KEEP	"$" values are labelled (US$25 Play fee); fine.
+shopify-cro-tips	MERGE	Proposed: near-same intent as shopify-cro-testing-ideas (0.38); only 2 inlinks. Merge into shopify-cro-testing-ideas with 301 once Search Console shows which URL earns impressions (approval + data).
+shopify-conversion-funnel-optimization	KEEP	Overlaps shopify-funnel-audit (0.45). Merge candidate pending Search Console data.
+shopify-cart-audit	KEEP	Overlaps shopify-cart-optimization (0.27) — audit checklist vs optimisation guide; acceptable; cross-linked.
+how-much-does-a-shopify-store-cost	KEEP	121 inlinks; verify any Shopify plan prices stated against shopify.com/pricing in fact pass.
+ecommerce-duties-import-taxes	KEEP	Has "Low-Value Import Rules Are Changing" section; verify US de minimis / EU status in fact pass.
+shopify-social-proof	UPDATE	Vague "research suggests / commonly cited 4.2–4.7 / ten or more reviews" claims without sources; source or remove.
+shopify-exit-intent-optimization	UPDATE	"commonly cited figures 10 to 15% recovery" has no source; remove figure.
+shopify-core-web-vitals-performance-guide	UPDATE	Calls Google's official CWV thresholds "commonly cited working targets … roughly"; state them as Google's thresholds and cite web.dev.
+shopify-development-australia	KEEP	37 refs; Shopify Scripts / checkout.liquid statements verified in fact pass.
+payment-gateway-integration-australia	KEEP	Surcharging-removal and PayTo claims verified against RBA in fact pass.
+shopify-skincare-store	MERGE	Proposed merge into shopify-beauty-store (0.59 overlap; skincare is a subset of beauty). Pending Search Console data + approval.
+headless-shopify-explained	KEEP	Hydrogen/headless trio (with shopify-hydrogen 0.56, shopify-hydrogen-vs-traditional-shopify 0.53). Consolidation candidate pending data.
+shopify-hydrogen-vs-traditional-shopify	KEEP	See headless-shopify-explained.
+shopify-theme-vs-custom-development	KEEP	Intent mismatch: slug implies "theme vs custom" but title is "Theme Customization: What Can You Actually Change?"; "custom vs existing theme" intent is served by shopify-theme-development. Do not change URL; consider retitling to "Shopify theme customization vs custom development" (P4).
+shopify-popups-cro	UPDATE	Excerpt says "Google penalizes intrusive mobile popups"; soften to match Google's documented guidance (verify current doc).
+@cluster:beauty	KEEP	Beauty cluster over-segmented (~12 URLs: ux, website-design, product-page-design, website-development, redesign, product-discovery, personalization, subscription, conversion-optimization, shopify-beauty-store, shopify-skincare-store) with 0.45–0.59 overlaps. No new beauty URLs; consolidation review with Search Console data.
+subscription-ecommerce-australia	KEEP	"2027 law changes" (unfair trading/subscription traps) — verify in fact pass.
+uae-to-saudi-ecommerce-expansion	KEEP	33 refs; Saudi stats attributed (DataReportal, SAMA, StatCounter).
+@cluster:vertical-matrix	KEEP	Vertical × topic matrix (fashion, furniture, electronics, grocery, jewelry, beauty, food, sports, fitness, home-decor, baby, health, pet, automotive) — ~100 URLs with 8–14 parallel pages per vertical (ux, website-design, product-page-design, filters, search, mobile-ux, redesign, comparison, conversion-optimization, personalization, website-development, delivery-ux, shopify-*-store). Bodies are distinct (8-gram 9–19%, TF-IDF 0.3–0.56) but the pattern matches Google's "many pages for query variations" warning. Freeze; Search Console tier review (P4-1) to consolidate each vertical into 2–3 strong pages. No edits without data.
+ecommerce-accessibility	KEEP	"UK Retailers: Equality Act, EAA" section — confirm it states EAA applies only where UK businesses sell to EU consumers (fact pass).
+design-systems-for-teams-that-move-fast	KEEP	Strongest UI/UX hub (163 inlinks); no defects.
+gds-service-standard-for-product-teams	KEEP	UK article; framed as lessons for commercial teams (does not imply UK public-sector delivery). Appropriate.
+how-to-choose-a-ui-ux-design-agency	KEEP	Short (556w); F2 merge destination for best-ui-ux lists (approval).
+@cluster:b2b	KEEP	B2B commerce cluster (~25 URLs: approvals, catalogs, punchout, rep portal, ERP/CRM integration, quick order, RFQ, reordering). Fine-grained but functionally distinct (cosine ≤0.46). Keep; cross-linking adequate.
+ai-crawlers-robots-txt	KEEP	"AI bots that matter in 2026" — bot names change; re-verify quarterly.
+ai-search-visibility	KEEP	Consistent with Google's July 2026 AI-optimisation guide (no llms.txt/chunking/special schema).
+arabic-seo-uae	KEEP	41 refs; legal-language claims attributed.
+digital-waste-tracking-software-uk	KEEP	UK mandatory digital waste tracking dates/obligations — verify current DEFRA timeline in fact pass.
+custom-software-development-uk	KEEP	UK buyer guide; discusses UK/nearshore/offshore honestly; no UK presence implied.
+b2b-website-development	KEEP	Recommends case studies as B2B trust signal — consistent advice (and a reminder ZSpace itself needs them: P2-4).
+business-continuity-digital-products-australia	KEEP	APRA CPS 230 (in force 1 Jul 2025) — consistent.
+@cluster:ecommerce-migration	KEEP	9 migration URLs (platform-migration, -checklist, launch-plan, testing, data-migration, url-migration, seo-migration, parallel-run, replatforming): distinct stages, cosine ≤0.51 (seo-migration vs website-migration-guide 0.505 — ecommerce vs general; keep, cross-link).
+ecommerce-microservices-vs-monolith	KEEP	0.49 with modular-monolith-vs-microservices (ecommerce vs general); keep, cross-link.
+ecommerce-payment-security	KEEP	PCI DSS v4.0.1 future-dated requirements effective 31 Mar 2025 — consistent if stated so (fact pass).
+electronic-signature-integration-uk	KEEP	England & Wales legal position sourced (Law Commission); appropriate.
+energy-management-software-australia	KEEP	Climate-reporting/NGER claims time-sensitive; verify in fact pass.
+geo-uae	UPDATE	Outdated: says FAQ rich results are limited to gov/health sites (2023 rule). Google retired FAQ rich results (no longer shown from May 2026; docs removed 15 Jun 2026). Correct all 3 mentions.
+product-structured-data-ecommerce	UPDATE	Same outdated FAQ rich-result statement in schema table; correct.
+ai-search-ready-website-uae	UPDATE	Same outdated FAQ rich-result statement; correct.
+arabic-seo-uae	UPDATE	Same outdated FAQ rich-result statement; correct.
+gis-application-development	KEEP	Global slug with Australian spatial-data focus (minor market mismatch); acceptable — LOCALISE.
+llms-txt	KEEP	Consistent with Google's position (neither helps nor harms Google Search); accurate.
+geo-vs-seo	KEEP	Consistent with Google's AI-optimisation guide.
+local-seo-australia	KEEP	Correctly warns against keyword-swap location pages; consistent with site policy.
+making-tax-digital-software-integration	KEEP	MTD for Income Tax scope/thresholds (from Apr 2026) — verify against GOV.UK in fact pass.
+property-compliance-management-software-uk	KEEP	Awaab's Law timescales/phasing — verify against GOV.UK in fact pass.
+open-banking-integration-uk	KEEP	FCA/VRP statements time-sensitive; verify.
+nhs-integration-digital-health-products	KEEP	Correctly scoped to NHS England; DTAC/DCB0129 claims sourced.
+multilingual-website-development-uae	KEEP	Strong UAE page (50 refs, 26 inlinks); no defects.
+payment-gateway-integration	KEEP	Possible duplicate intent with ecommerce-payment-gateway-integration (both global "integrate payment gateway"); checked separately below.

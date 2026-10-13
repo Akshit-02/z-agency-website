@@ -132,7 +132,7 @@ export default async function BlogPostPage({
         <section className="relative overflow-hidden bg-white pb-16 pt-[120px] sm:pt-[140px]">
           <Atmosphere tone="light" />
           <Container className="relative max-w-[960px]">
-            <Reveal>
+            <div className="hero-rise">
               <Breadcrumbs
                 items={[
                   { name: "Blogs", href: "/blogs" },
@@ -140,9 +140,9 @@ export default async function BlogPostPage({
                   { name: post.title, href: `/blogs/${post.slug}` },
                 ]}
               />
-            </Reveal>
+            </div>
 
-            <Reveal delay={0.05}>
+            <div className="hero-rise" style={{ animationDelay: "0.05s" }}>
               <div className="mt-8 flex flex-wrap items-center gap-3 text-[0.8rem]">
                 <Link
                   href={category ? `/blogs/category/${category.slug}` : "/blogs"}
@@ -153,17 +153,17 @@ export default async function BlogPostPage({
                 </Link>
                 <span className="font-mono text-[0.72rem] uppercase tracking-[0.12em] text-ink/45">{post.readingTime}</span>
               </div>
-            </Reveal>
+            </div>
 
-            <Reveal delay={0.1} y={30}>
+            <div className="hero-rise" style={{ animationDelay: "0.1s", ["--hero-y" as string]: "30px" }}>
               <h1 className="mt-6 text-balance font-serif-display text-[2.4rem] leading-[1.05] sm:text-[3.4rem] lg:text-[3.8rem]">
                 {post.title}
               </h1>
-            </Reveal>
+            </div>
 
-            <Reveal delay={0.15}>
+            <div className="hero-rise" style={{ animationDelay: "0.15s" }}>
               <p className="mt-6 max-w-[64ch] text-pretty text-[1.15rem] leading-relaxed text-ink/60">{post.excerpt}</p>
-            </Reveal>
+            </div>
 
             <div className="mt-12">
               <ArticleCover label={post.bannerAlt ?? `Illustration for ${post.title}`}>

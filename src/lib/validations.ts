@@ -27,6 +27,9 @@ export const contactSchema = z.object({
   name: z.string().trim().min(2, "Enter your full name.").max(120),
   email: z.email("Enter a valid email address.").max(200),
   company: z.string().trim().max(120).optional(),
+  // Optional: the site or store the enquiry is about. Free text so visitors
+  // can paste "example.com" without a scheme.
+  website: z.string().trim().max(200, "Keep the website address under 200 characters.").optional(),
   phone: z
     .string()
     .trim()
@@ -47,3 +50,13 @@ export const contactSchema = z.object({
 });
 
 export type ContactValues = z.infer<typeof contactSchema>;
+
+/** Preselects "What do you need?" when the visitor came from a service page CTA. */
+export const needByServiceSlug: Record<string, (typeof contactNeeds)[number]> = {
+  "website-development": "Website Development",
+  "mobile-app-development": "Mobile App Development",
+  "ai-automation": "AI Automation",
+  "ui-ux-design": "UI/UX Design",
+  "shopify-development": "Shopify Setup & Optimization",
+  "cro-audit": "CRO Audit",
+};

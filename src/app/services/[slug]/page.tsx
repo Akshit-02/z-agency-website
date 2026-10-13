@@ -98,6 +98,7 @@ export default async function ServiceDetailPage({
           whatWeDo: service.whatWeDo,
           problems: service.problems,
           audience: service.audience,
+          notFor: service.notFor,
           useCases: service.useCases,
           approach: service.approach,
           deliverables: service.deliverables,
@@ -113,7 +114,7 @@ export default async function ServiceDetailPage({
       <CTASection
         primaryHref={`/contact?src=${encodeURIComponent(`/services/${service.slug}`)}`}
         title={`Ready to talk about ${service.name.toLowerCase()}?`}
-        description="Tell us about your project and we'll respond with honest scoping, not a generic pitch."
+        description="Send a few lines about what you're building or fixing. We reply with an initial view and any questions, then a short call, then a fixed estimate for each phase."
       />
     </>
   );

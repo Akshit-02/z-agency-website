@@ -133,3 +133,35 @@ button {
 .font-serif-display span {
   font-style: italic;
 }
+
+/*
+ * Above-the-fold hero entrances. These run in CSS from the first paint, so
+ * the hero headline and intro (usually the page's LCP element) never wait
+ * for JavaScript to hydrate. Hero text stays readable from the first frame
+ * and only slides into place: fading it in from opacity 0 would hide the
+ * page's main content until the animation runs. Same easing and distance as
+ * the motion-based `riseProps` / `MaskLines` used further down the page.
+ */
+@keyframes hero-rise {
+  from {
+    transform: translateY(var(--hero-y, 22px));
+  }
+}
+@keyframes hero-mask {
+  from {
+    transform: translateY(105%) rotate(2deg);
+  }
+}
+.hero-rise {
+  animation: hero-rise 0.85s cubic-bezier(0.25, 1, 0.5, 1) both;
+}
+.hero-mask {
+  display: block;
+  animation: hero-mask 1s cubic-bezier(0.25, 1, 0.5, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-rise,
+  .hero-mask {
+    animation: none;
+  }
+}

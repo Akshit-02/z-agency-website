@@ -716,7 +716,7 @@ export const commercePosts3: BlogPost[] = [
             ["Organization", "Your business identity, logo and contact details on the homepage or about page"],
             ["WebSite", "Site name"],
             ["Article", "Guides and blog posts"],
-            ["FAQPage", "Visible FAQs; Google currently shows FAQ rich results only for well-known government and health sites"],
+            ["FAQPage", "Visible FAQs; Google no longer shows FAQ rich results (retired in 2026), so expect no visual enhancement"],
           ],
         },
       },

@@ -228,7 +228,7 @@ export const auVisibilityPosts: BlogPost[] = [
         body: [
           "**Google:** [[https://support.google.com/business/answer/3038177|Google Business Profile guidelines]]; [[https://support.google.com/business/answer/7091|Google, how to improve your local ranking]]; [[https://developers.google.com/search/docs/essentials/spam-policies|Google Search spam policies]]; [[https://developers.google.com/search/docs/appearance/structured-data/local-business|Google, LocalBusiness structured data]].",
           "**Reviews and market:** [[https://www.accc.gov.au/business/advertising-and-promotions/online-product-and-service-reviews|ACCC, online product and service reviews]]; [[https://gs.statcounter.com/search-engine-market-share/all/australia|StatCounter, search engine market share Australia]].",
-          "The page types, checklists and example are ours. ACCC points were confirmed via search summaries because accc.gov.au blocked our fetcher. Nothing here is legal advice or ZSpace client data.",
+          "The page types, checklists and example are ours. ACCC points are summarised from official guidance and may change; check the current position before relying on them. Nothing here is legal advice or ZSpace client data.",
         ],
       },
       {
@@ -487,7 +487,7 @@ export const auVisibilityPosts: BlogPost[] = [
         body: [
           "**Application security:** [[https://top10.owasp.org/2025/0x00_2025-Introduction|OWASP Top 10:2025]]; [[https://owasp.org/www-project-application-security-verification-standard/|OWASP ASVS]]; [[https://www.rfc-editor.org/rfc/rfc9700|RFC 9700, OAuth 2.0 security best current practice]]; [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C, what's new in WCAG 2.2]].",
           "**Australian guidance and obligations:** [[https://www.cyber.gov.au/business-government/secure-design/secure-by-design|ASD, Secure by Design]]; [[https://www.cyber.gov.au/business-government/asds-cyber-security-frameworks/essential-eight|ASD, Essential Eight]]; [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-11-app-11-security-of-personal-information|OAIC, APP 11]]; [[https://www.oaic.gov.au/news/media-centre/data-breach-notifications-increase-to-all-time-high-in-2025,-new-ndb-stats-show|OAIC, NDB statistics 2025]]; [[https://www.homeaffairs.gov.au/cyber-security-subsite/files/factsheet-ransomware-payment-reporting.pdf|Home Affairs, ransomware payment reporting factsheet]].",
-          "ASVS 5.0 and ASD Secure by Design details were confirmed via secondary summaries. The checklists and example are ours. This is not a security certification, a substitute for a professional assessment, or legal advice.",
+          "ASVS 5.0 and ASD Secure by Design details are summarised from official guidance and may change; check the current position before relying on them. The checklists and example are ours. This is not a security certification, a substitute for a professional assessment, or legal advice.",
         ],
       },
       {

@@ -252,7 +252,7 @@ export const auOperationsPosts: BlogPost[] = [
         body: [
           "**Data sources:** [[https://developer.xero.com/documentation/|Xero developer documentation]]; [[https://developer.myob.com/|MYOB developer portal]]; [[https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/what-is-stp|ATO, Single Touch Payroll]].",
           "**Benchmarks and privacy:** [[https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/small-business-benchmarks/types-of-benchmarks|ATO, types of small business benchmarks]]; [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-11-app-11-security-of-personal-information|OAIC, APP 11 security of personal information]].",
-          "The KPI method, architecture patterns and example are ours. ATO pages were confirmed via search summaries because ato.gov.au blocked our fetcher. Nothing here is ZSpace client data or financial advice.",
+          "The KPI method, architecture patterns and example are ours. ATO pages are summarised from official guidance and may change; check the current position before relying on them. Nothing here is ZSpace client data or financial advice.",
         ],
       },
       {
@@ -482,7 +482,7 @@ Ongoing     Measure monthly; adjust rules;
         body: [
           "**Law and records:** [[https://www.legislation.gov.au/C2004A00553/latest/text|Electronic Transactions Act 1999 (Federal Register of Legislation)]]; [[https://business.gov.au/finance/accounting/record-keeping|business.gov.au, record keeping]]; [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/small-business|OAIC, small business]].",
           "**Integrations:** [[https://developer.xero.com/documentation/|Xero developer documentation]]; [[https://developer.myob.com/|MYOB developer portal]]; [[https://www.ato.gov.au/businesses-and-organisations/einvoicing/about-peppol/identifying-australian-businesses-on-the-peppol-network|ATO, Peppol]].",
-          "The scoring method, plan and example are ours. Legal and tax points are general information confirmed via secondary summaries where government sites blocked our fetcher; check them for your circumstances. Nothing here is ZSpace client data.",
+          "The scoring method, plan and example are ours. Legal and tax points are general information confirmed via secondary summaries; check them for your circumstances. Nothing here is ZSpace client data.",
         ],
       },
       {

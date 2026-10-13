@@ -19,6 +19,8 @@ export type Service = {
   metaDescription: string;
   definition: { question: string; answer: string[] };
   audience: string[];
+  /** Honest boundaries: situations where this service isn't the right first step, and what to do instead. */
+  notFor: { title: string; body: string }[];
   useCases: { title: string; body: string }[];
   /** Hand-picked hub articles shown as "Guides" on the service page. */
   guides: string[];
@@ -125,6 +127,11 @@ export const services: Service[] = [
           "Startups and SaaS companies that need a marketing site and a web app on one stack",
           "Teams whose marketing needs to publish without waiting on developers",
           "Companies that need integrations with CRM, payments, booking or internal systems"
+    ],
+    notFor: [
+      { title: "A simple site you'll run yourself", body: "If you need a few pages that won't grow and you're happy to edit them in a website builder, Wix, Squarespace or a Shopify theme will cost less than a custom build." },
+      { title: "Live in days, no planning", body: "We start with structure, content and technical decisions. If the deadline leaves no room for that, a template is the safer choice for now." },
+      { title: "Ongoing ad management", body: "Running paid campaigns isn't one of our services. We build and improve the site and its tracking, and work alongside whoever runs your ads." },
     ],
     useCases: [
           {
@@ -283,6 +290,11 @@ export const services: Service[] = [
           "Teams with an ageing or expensive-to-maintain app on two codebases",
           "Products that need offline use, notifications, payments or device features"
     ],
+    notFor: [
+      { title: "An untested idea and one shot at budget", body: "If no users have seen the idea yet, start with discovery and a clickable prototype before paying for a full build. We can help with that step." },
+      { title: "A website in an app wrapper", body: "If the app would only show what your website already does, a fast mobile site or a progressive web app is usually the better investment." },
+      { title: "No plan for after launch", body: "Apps need updates for new OS versions and store rules. If there's no budget or owner for that, factor it in before starting." },
+    ],
     useCases: [
           {
                 "title": "Consumer apps",
@@ -439,6 +451,11 @@ export const services: Service[] = [
           "Sales and support teams that need faster routing and responses",
           "Businesses with processes spread across CRM, spreadsheets and inboxes",
           "Companies exploring AI agents but needing guardrails and measurable results"
+    ],
+    notFor: [
+      { title: "A process that changes every week", body: "Automate after a process has settled and has a clear owner. Automating a moving target mostly automates the confusion." },
+      { title: "Fully hands-off on high-stakes actions", body: "We design approval steps for payments, refunds and customer-facing messages. If you need those to run with no human review at all, we're not the right team." },
+      { title: "A handful of items a week", body: "At low volume, a checklist or a simple no-code tool is usually cheaper than a custom AI workflow." },
     ],
     useCases: [
           {
@@ -597,6 +614,11 @@ export const services: Service[] = [
           "Teams without in-house designers who need design and development together",
           "Companies preparing a redesign who want evidence before changing everything"
     ],
+    notFor: [
+      { title: "Only a visual refresh", body: "New colours, a logo or a brand identity is a branding project. Our work is about how the product works and how people move through it." },
+      { title: "No access to any user evidence", body: "We can work with limited research, but not none: we need at least analytics, support feedback or a few users to test with." },
+      { title: "Designs no one will build soon", body: "If there's no plan or team to build the designs, they go stale quickly. Design and build together, or time the design work for when development starts." },
+    ],
     useCases: [
           {
                 "title": "Product and SaaS design",
@@ -754,6 +776,11 @@ export const services: Service[] = [
           "Teams that want custom sections without depending on developers for every page",
           "D2C brands focused on product pages, conversion and repeat purchase"
     ],
+    notFor: [
+      { title: "A multi-vendor marketplace", body: "Shopify supports marketplaces only through third-party apps. A purpose-built marketplace platform is often a better fit, and we'll say so during scoping." },
+      { title: "Just installing a theme", body: "If all you need is a theme from the Shopify Theme Store set up with your products, Shopify's own documentation makes that a manageable DIY job." },
+      { title: "Fixing a store you don't want to measure", body: "Speed and conversion work depends on before-and-after measurement. If analytics access isn't possible, we can't show whether changes worked." },
+    ],
     useCases: [
           {
                 "title": "New store builds",
@@ -910,6 +937,11 @@ export const services: Service[] = [
           "Shopify brands preparing a redesign who want evidence first",
           "Teams running ads who need landing pages that convert",
           "Businesses without in-house CRO or analytics specialists"
+    ],
+    notFor: [
+      { title: "Very little traffic", body: "With few visitors, the first job is getting traffic. An audit can still fix obvious friction, but A/B tests won't reach reliable results." },
+      { title: "A guaranteed percentage uplift", body: "We don't promise conversion numbers before seeing your data. A figure quoted before anyone has looked at your funnel is a guess." },
+      { title: "No way to change the site", body: "An audit is only useful if someone can act on it. If the site can't be changed for months, schedule the audit closer to when it can." },
     ],
     useCases: [
           {

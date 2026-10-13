@@ -13,9 +13,8 @@ import { ArrowUpRight } from "lucide-react";
 import { AnimatedHeroWord } from "./AnimatedHeroWord";
 import { HeroOrbit } from "./HeroOrbit";
 import { HeroServiceStrip } from "./HeroServiceStrip";
-import { Atmosphere } from "@/components/ui/Aesthetic";
+import { Atmosphere, heroRise } from "@/components/ui/Aesthetic";
 
-const EASE = [0.25, 1, 0.5, 1] as const;
 
 const phrases = [
   "your website builder",
@@ -26,16 +25,6 @@ const phrases = [
   "your growth partner",
   "your digital sidekick",
 ];
-
-function rise(reduced: boolean | null, delay: number) {
-  return reduced
-    ? { initial: false as const }
-    : {
-        initial: { opacity: 0, y: 22 },
-        animate: { opacity: 1, y: 0 },
-        transition: { duration: 0.8, ease: EASE, delay },
-      };
-}
 
 /** small corner details: registration marks + hairlines */
 function Frame() {
@@ -95,31 +84,24 @@ export function Hero() {
             filter: contentFilter,
           }}
         >
-          <motion.h1
+          <h1
             aria-label="Meet ZSpace Labs, your website, app, store and automation builder."
-            className="text-[2.35rem] leading-[1.1] tracking-[-0.03em] text-ink min-[420px]:text-[2.7rem] sm:text-[4rem] lg:text-[5rem]"
-            style={{ fontFamily: "var(--font-newsreader), Georgia, serif" }}
-            {...rise(reduced, 0.5)}
+            className="hero-rise text-[2.35rem] leading-[1.1] tracking-[-0.03em] text-ink min-[420px]:text-[2.7rem] sm:text-[4rem] lg:text-[5rem]"
+            style={{ fontFamily: "var(--font-newsreader), Georgia, serif", animationDelay: "0.5s" }}
           >
             <span className="block">Meet ZSpace Labs,</span>
             <AnimatedHeroWord phrases={phrases} paused={r} />
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            className="mt-6 max-w-[40rem] text-pretty text-[1rem] leading-relaxed text-ink/55 sm:text-[1.12rem]"
-            {...rise(reduced, 0.7)}
-          >
+          <p {...heroRise(0.7, "mt-6 max-w-[40rem] text-pretty text-[1rem] leading-relaxed text-ink/55 sm:text-[1.12rem]")}>
             We turn good ideas into digital things people actually enjoy using.{" "}
             <br className="hidden sm:block" />
             Websites, apps, Shopify stores and smart automations,{" "}
             <br className="hidden sm:block" />
             all thoughtfully built around your business.
-          </motion.p>
+          </p>
 
-          <motion.div
-            className="mt-8 flex flex-col items-center gap-4"
-            {...rise(reduced, 0.9)}
-          >
+          <div {...heroRise(0.9, "mt-8 flex flex-col items-center gap-4")}>
             <Link
               ref={ctaRef}
               href="/contact"
@@ -134,14 +116,14 @@ export function Hero() {
                 href="/services"
                 className="text-ink underline decoration-ink/30 underline-offset-4 hover:decoration-ink"
               >
-                explore our work
+                explore our services
               </Link>
             </p>
-          </motion.div>
+          </div>
         </motion.div>
       </div>
 
-      {/* <motion.div className="pb-8 pt-2 sm:pb-10" {...rise(reduced, 1.1)}>
+      {/* <motion.div className="pb-8 pt-2 sm:pb-10" className="hero-rise" style={{ animationDelay: "1.1s" }}>
         <HeroServiceStrip />
       </motion.div> */}
     </section>

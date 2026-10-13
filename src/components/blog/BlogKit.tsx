@@ -22,7 +22,7 @@ import {
   Sparkles,
   type LucideIcon,
 } from "lucide-react";
-import { Atmosphere, DarkPanel, EASE, Eyebrow, MaskLines, TiltCard, riseProps, serif } from "@/components/ui/Aesthetic";
+import { Atmosphere, DarkPanel, EASE, Eyebrow, HeroLines, MaskLines, TiltCard, heroRise, riseProps, serif } from "@/components/ui/Aesthetic";
 import { Breadcrumbs, type Crumb } from "@/components/Breadcrumbs";
 import type { BlogBannerVariant } from "@/components/BlogBanner";
 import { BlogScene } from "./BlogScene";
@@ -169,9 +169,9 @@ export function BlogHero({
       <Atmosphere tone="light" still={still} />
       <div ref={ref} className="relative mx-auto max-w-[1180px]">
         {crumbs && (
-          <motion.div className="mb-8" {...riseProps(on, still, 0)}>
+          <div {...heroRise(0, "mb-8")}>
             <Breadcrumbs items={crumbs} />
-          </motion.div>
+          </div>
         )}
         <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_1fr] lg:gap-10">
           <div>
@@ -179,13 +179,13 @@ export function BlogHero({
               {eyebrow}
             </Eyebrow>
             <h1 className="mt-6 text-balance text-[2.9rem] leading-[1] tracking-[-0.03em] text-ink sm:text-[4rem] lg:text-[4.6rem]" style={serif}>
-              <MaskLines on={on} still={still} lines={title} />
+              <HeroLines lines={title} />
             </h1>
-            <motion.p className="mt-7 max-w-[34rem] text-pretty text-[1.05rem] leading-relaxed text-ink/60" {...riseProps(on, still, 0.4)}>
+            <p {...heroRise(0.4, "mt-7 max-w-[34rem] text-pretty text-[1.05rem] leading-relaxed text-ink/60")}>
               {description}
-            </motion.p>
+            </p>
             {stats && (
-              <motion.div className="mt-9 flex flex-wrap gap-3" {...riseProps(on, still, 0.55)}>
+              <div {...heroRise(0.55, "mt-9 flex flex-wrap gap-3")}>
                 {stats.map((s) => (
                   <span key={s.label} className="rounded-2xl border border-ink/[0.08] bg-white px-4 py-3 shadow-[0_1px_2px_rgba(11,12,14,0.03)]">
                     <span className="block text-[1.4rem] leading-none text-ink" style={serif}>
@@ -194,7 +194,7 @@ export function BlogHero({
                     <span className="mt-1 block text-[0.72rem] uppercase tracking-[0.12em] text-ink/45">{s.label}</span>
                   </span>
                 ))}
-              </motion.div>
+              </div>
             )}
           </div>
           <BannerStack posts={stack} />

@@ -427,7 +427,7 @@ export const auCommercePosts2: BlogPost[] = [
         },
         callout: {
           type: "note",
-          text: "We could not open the AHRC guidelines directly when preparing this article. Vendor summaries report that they recommend aligning with WCAG 2.2 Level AA, up from WCAG 2.0 in the earlier Advisory Notes. Read the AHRC document itself before quoting it.",
+          text: "Secondary summaries of the AHRC guidelines report that they recommend aligning with WCAG 2.2 Level AA, up from WCAG 2.0 in the earlier Advisory Notes. Read the AHRC document itself before quoting it.",
         },
       },
       {

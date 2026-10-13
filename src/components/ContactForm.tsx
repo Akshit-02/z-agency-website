@@ -1,12 +1,22 @@
 "use client";
 
 import { useEffect, useState, type ReactNode } from "react";
+import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowUpRight, CheckCircle2, AlertCircle } from "lucide-react";
 import { site } from "@/lib/site";
-import { contactSchema, contactNeeds, contactBudgets, type ContactValues } from "@/lib/validations";
+import { contactSchema, contactNeeds, contactBudgets, needByServiceSlug, type ContactValues } from "@/lib/validations";
+
+const DEFAULT_NEED: ContactValues["need"] = "Not sure yet";
+const DEFAULT_BUDGET: ContactValues["budget"] = "Let's discuss";
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
 
 const inputBase =
   "w-full rounded-xl border bg-white px-4 py-3.5 text-[0.96rem] text-ink outline-none transition-all duration-300 placeholder:text-ink/30 focus:border-ink/50 focus:shadow-[0_0_0_4px_rgba(37,99,235,0.08)]";
@@ -56,13 +66,17 @@ export function ContactForm() {
     formState: { errors, isSubmitting, isSubmitSuccessful },
   } = useForm<ContactValues>({
     resolver: zodResolver(contactSchema),
-    defaultValues: { need: contactNeeds[0], budget: contactBudgets[contactBudgets.length - 1] },
+    defaultValues: { need: DEFAULT_NEED, budget: DEFAULT_BUDGET },
   });
 
-  // Capture where the visitor came from (?src=/blogs/...) without showing it.
+  // Capture where the visitor came from (?src=/blogs/...) without showing it,
+  // and preselect the matching service when they came from a service page.
   useEffect(() => {
     const src = new URLSearchParams(window.location.search).get("src");
-    if (src) setValue("sourcePage", src.slice(0, 200));
+    if (!src) return;
+    setValue("sourcePage", src.slice(0, 200));
+    const need = needByServiceSlug[src.match(/^\/services\/([a-z-]+)/)?.[1] ?? ""];
+    if (need) setValue("need", need);
   }, [setValue]);
 
   async function onSubmit(values: ContactValues) {
@@ -78,6 +92,13 @@ export function ContactForm() {
         throw new Error(data?.message || "Submission failed");
       }
       reset(values);
+      // Counted only after the server confirms delivery, never on button click.
+      window.gtag?.("event", "generate_lead", {
+        form_name: "contact",
+        lead_need: values.need,
+        lead_budget: values.budget,
+        source_page: values.sourcePage ?? "",
+      });
     } catch (error) {
       setSubmitError(
         error instanceof Error && error.message !== "Submission failed"
@@ -110,7 +131,7 @@ export function ContactForm() {
         </p>
         <button
           type="button"
-          onClick={() => reset({ need: contactNeeds[0], budget: contactBudgets[contactBudgets.length - 1] })}
+          onClick={() => reset({ need: DEFAULT_NEED, budget: DEFAULT_BUDGET })}
           className="relative mt-2 rounded-full bg-white px-5 py-2.5 text-[0.85rem] font-medium text-ink"
         >
           Send another message
@@ -166,6 +187,17 @@ export function ContactForm() {
             {...register("company")}
           />
         </Field>
+        <Field label="Website" htmlFor="website" error={errors.website?.message}>
+          <input
+            id="website"
+            type="text"
+            inputMode="url"
+            autoComplete="url"
+            className={inputClass(!!errors.website)}
+            placeholder="Optional — yoursite.com"
+            {...register("website")}
+          />
+        </Field>
         <Field label="Phone" htmlFor="phone" error={errors.phone?.message}>
           <input
             id="phone"
@@ -187,7 +219,7 @@ export function ContactForm() {
             ))}
           </select>
         </Field>
-        <Field label="Budget range" htmlFor="budget" error={errors.budget?.message}>
+        <Field label="Budget range (USD)" htmlFor="budget" error={errors.budget?.message}>
           <select id="budget" className={inputClass(!!errors.budget)} {...register("budget")}>
             {contactBudgets.map((b) => (
               <option key={b} value={b}>
@@ -205,7 +237,7 @@ export function ContactForm() {
           aria-invalid={!!errors.details}
           aria-describedby={errors.details ? "details-error" : undefined}
           className={inputClass(!!errors.details)}
-          placeholder="What are you building, and what's the timeline?"
+          placeholder="What are you building or trying to fix, and is there a timeline? Rough ideas are fine."
           {...register("details")}
         />
       </Field>
@@ -233,6 +265,13 @@ export function ContactForm() {
         {isSubmitting ? "Sending…" : "Start the conversation"}
         <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
       </button>
+      <p className="-mt-2 text-[0.82rem] leading-relaxed text-ink/50">
+        We use these details only to reply to your enquiry. See our{" "}
+        <Link href="/privacy" className="underline decoration-ink/30 underline-offset-4 hover:text-ink">
+          privacy policy
+        </Link>
+        .
+      </p>
     </form>
   );
 }
