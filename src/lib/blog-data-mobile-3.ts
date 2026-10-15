@@ -256,7 +256,6 @@ export const mobilePosts3: BlogPost[] = [
       { q: "What makes a mobile app slow?", a: "Common causes include heavy work during startup, unoptimized images, long unvirtualized lists, too many or slow network requests, blocking work on the main thread, memory pressure and excessive re-rendering." },
       { q: "What is app startup time?", a: "How long the app takes to become usable after launch. Android distinguishes cold, warm and hot starts and measures time to initial display and time to full display." },
       { q: "What is jank?", a: "Visible stutter when frames aren't rendered in time, usually because the main thread is busy. Smooth apps render at the display's refresh rate." },
-      { q: "What is an ANR?", a: "Application Not Responding: an Android error shown when the main thread is blocked too long. Google Play tracks ANR rates in Android vitals." },
       { q: "How do I measure app performance?", a: "Use profiling tools during development (Android Studio profilers, Xcode Instruments, framework dev tools) and real-user monitoring in production (Android vitals, Xcode Organizer and MetricKit, or third-party monitoring)." },
       { q: "Does the framework choice determine performance?", a: "Less than most people think. Most performance problems come from app code, data loading and assets, regardless of whether the app is native, Flutter or React Native." },
       { q: "How do I reduce battery usage?", a: "Minimize background work, batch network requests, avoid unnecessary polling and location updates, and use push instead of frequent checks." },
@@ -289,6 +288,7 @@ export const mobilePosts3: BlogPost[] = [
         heading: "How to Diagnose Performance Problems",
         body: [
           "Start with real-user data to find which problems matter most, reproduce them on representative devices (including lower-end ones), profile to find the cause, fix, then verify with the same measurement. Android Studio profilers, Xcode Instruments, Flutter DevTools and React Native's performance tools all support this. Optimizing without measuring usually fixes the wrong thing.",
+          "If you are not yet sure whether the problem is a crash, a freeze or plain slowness, start with [[/blogs/mobile-app-crash-reporting|the founder's diagnostic guide to crashes and slowness]], which maps each symptom to where to look and who should own it. This page covers the fixes once you know the bottleneck.",
         ],
         visual: { variant: "bars", accent: "orange", caption: "Measure, reproduce, profile, fix, verify: the same loop applies to every performance problem." },
       },
@@ -335,7 +335,7 @@ export const mobilePosts3: BlogPost[] = [
       {
         heading: "Monitoring in Production",
         body: [
-          "Real-user monitoring shows how the app performs on actual devices and networks. Google Play's Android vitals flags apps whose user-perceived crash rate or ANR rate exceeds its bad-behavior thresholds, currently 1.09% and 0.47% of daily active users, which can affect store visibility. Xcode Organizer and MetricKit provide equivalent data on iOS. See [[/blogs/mobile-app-crash-reporting|crash reporting and monitoring]] for turning this data into fixes.",
+          "Real-user monitoring shows how the app performs on actual devices and networks. Google Play's Android vitals flags apps whose user-perceived crash rate or ANR rate exceeds its bad-behavior thresholds, currently 1.09% and 0.47% of daily active users, which can affect store visibility. Xcode Organizer and MetricKit provide equivalent data on iOS. An ANR (Application Not Responding) is Android's error when the main thread is blocked too long; the [[/blogs/mobile-app-crash-reporting|diagnostic guide to crashes, ANRs and hangs]] explains which ANRs Play counts, how to read these dashboards and why their numbers disagree.",
           "For shopping apps, where product feeds, images and cart APIs dominate, see [[/blogs/ecommerce-app-performance|ecommerce app performance]].",
         ],
         cta: {
@@ -463,6 +463,7 @@ export const mobilePosts3: BlogPost[] = [
           "Crash reporting and analytics confirmed in the release build",
           "Beta feedback reviewed and critical issues fixed",
           "Store listing, screenshots, privacy disclosures and reviewer notes ready",
+          "Non-testing launch tasks (accounts, listings, review, day-one monitoring) checked against the [[/blogs/mobile-app-launch-checklist|first app launch checklist]]",
         ],
         cta: {
           title: "Want a second pair of eyes before submission?",
@@ -482,32 +483,51 @@ export const mobilePosts3: BlogPost[] = [
   {
     slug: "mobile-app-maintenance",
     title: "Mobile App Maintenance: What Happens After Launch?",
+    seoTitle: "Mobile App Maintenance After Launch: What Recurs",
     excerpt:
-      "Why app work doesn't end at launch: fixes, OS and store updates, dependencies, security, monitoring, hotfixes, backups and what a maintenance agreement covers.",
+      "What recurs after an app launches: a maintenance worksheet with owners and evidence, plus a dated calendar of Apple, Google Play and React Native deadlines.",
     category: "Mobile Apps",
     banner: "cycle",
+    sceneKind: "mobile",
+    bannerAlt: "A yearly maintenance cycle for a live mobile app: store toolchain deadlines, OS testing, SDK and framework upgrades, policy reviews, monitoring and backups",
     date: "2026-09-25",
-    updated: "2026-10-09",
-    readingTime: "13 min read",
+    updated: "2026-10-15",
+    readingTime: "15 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["fintech", "ecommerce", "healthcare-healthtech"],
+    relatedSlugs: ["mobile-app-release-management", "mobile-app-crash-reporting", "mobile-app-development-cost"],
     faqs: [
       { q: "Why do apps need maintenance?", a: "Operating systems, devices, store policies, dependencies and APIs change constantly. Without updates, apps break, fall out of store compliance, become insecure and lose users." },
       { q: "What does app maintenance include?", a: "Bug fixes, OS and dependency updates, security patches, performance and crash monitoring, analytics review, API changes, store requirement updates and feature improvements." },
       { q: "How often should an app be updated?", a: "There's no fixed rule, but most active apps release updates regularly, and every app needs updates when major iOS or Android versions ship or store requirements change." },
-      { q: "What happens if an app isn't maintained?", a: "It can crash on new OS versions, fail store requirements (Google Play limits visibility of apps that don't target recent API levels), accumulate security vulnerabilities and decline in ratings." },
+      { q: "What happens if an app isn't maintained?", a: "It can crash on new OS versions, accumulate security vulnerabilities and decline in ratings. On Google Play, an existing app must target Android 15 (API level 35) or higher to stay available to new users on devices running a newer Android version; an app targeting API 34 or lower is only available on devices running its target version or lower. New apps and updates need API 36 from 31 August 2026, so an unmaintained app also cannot ship a fix until it is upgraded." },
       { q: "What is crash reporting?", a: "Tools that collect details about crashes in production, including device, OS and stack traces, so developers can find and fix causes quickly." },
       { q: "How do store requirements affect maintenance?", a: "Google Play requires apps to target a recent Android API level, and Apple periodically raises minimum Xcode and SDK versions for submissions. Meeting these requires ongoing work." },
       { q: "Who should maintain the app?", a: "An internal team, the original development partner or a dedicated provider. What matters is that ownership is explicit and the code is documented." },
-      { q: "How should maintenance be budgeted?", a: "As an ongoing cost from the start, covering platform updates, monitoring, fixes and improvements, rather than as an afterthought." },
-      { q: "What should a mobile app maintenance agreement include?", a: "Scope (what counts as maintenance versus new features), response and resolution times by severity, support hours and time zone, how releases and hotfixes are handled, who owns accounts and code, monitoring and reporting, a security patching commitment, pricing (retainer, hours bank or per request) and exit and handover terms." },
+      { q: "How should maintenance be budgeted?", a: "By work type rather than by a percentage of the build cost. List the recurring work in the worksheet above, note what makes each item bigger for your app (native modules, the number of SDKs, regulated data, release frequency) and ask for an estimate against that list. The common 'percentage of build cost' rule has no published method behind it." },
+      { q: "What should a mobile app maintenance agreement include?", a: "Scope (what counts as maintenance versus new features), response and resolution times by severity, support hours and time zone, how releases and hotfixes are handled, who owns accounts and code, monitoring and reporting, a security patching commitment, the pricing model (retainer, hours bank or per request) and exit and handover terms." },
       { q: "What happens when a critical bug reaches production?", a: "A good process confirms impact from monitoring, decides whether to pause a staged rollout, fixes and tests a hotfix, submits it with an expedited review request if needed, and communicates with affected users. Server-side feature flags help by letting teams switch off a broken feature without waiting for a new app release." },
+      { q: "What happens if our Apple Developer Program membership expires?", a: "Apple says apps and In-App Purchases become unavailable in all storefronts, although apps already on customers' devices stay installed. You also lose access to TestFlight, Certificates, Identifiers & Profiles, the App Store Connect API and Xcode Cloud. Only the Account Holder can renew, so make sure that person is someone in your business." },
+      { q: "Does Android developer verification affect a Play Store app?", a: "Mostly through Play Console. Google says Play automatically registers 99% of apps; the rest, and apps distributed outside Google Play, are registered manually. Protections began on 30 September 2026 for installs from participating stores in Brazil, Indonesia, Singapore and Thailand, with a global rollout planned for 2027." },
     ],
     content: [
       {
-        heading: "Quick answer",
+        heading: "What does mobile app maintenance involve after launch?",
         body: [
-          "Mobile app development doesn't end at launch. Apps need bug fixes, updates for new iOS and Android versions, dependency and security updates, crash and performance monitoring, analytics review, changes when APIs evolve, compliance with changing store requirements, and feature improvements based on real usage. Google Play and Apple both periodically raise technical requirements, so an unmaintained app eventually breaks or falls out of compliance. Budget for maintenance from the start and make ownership explicit.",
+          "**After launch, an app needs a steady list of recurring work: yearly store toolchain upgrades on both platforms, testing on each new OS, framework and SDK updates with matching privacy declarations, policy reviews, account renewals, crash and performance triage after every release, security patches, backend and API changes, tested backups and product improvements.** Apple and Google set deadlines on their own schedules, and missing them has concrete effects: an Apple membership lapse removes your apps from every storefront, and an Android app that falls behind Google Play's target API level stops reaching new users on newer devices.",
+          "This guide gives you two tools to plan that work: a worksheet of eleven recurring work types with owners and evidence, and a dated compliance calendar built from Apple, Google and React Native's own pages. It does not give prices. Effort depends on what your app contains, and the worksheet shows what drives it.",
+        ],
+      },
+      {
+        heading: "Key takeaways",
+        body: [],
+        checklist: [
+          "Plan maintenance by work type, owner and evidence, not by a percentage of the build cost.",
+          "Diary the fixed dates: Apple's membership anniversary, Apple's Xcode minimum (late April in recent years) and Google Play's target API deadline (31 August in 2026).",
+          "Keep the Apple Account Holder and Play Console owner inside your business. Only the Account Holder can renew Apple membership.",
+          "React Native maintains only its latest three minor series, so a team that skips upgrades for a year falls out of support.",
+          "Each SDK you add brings duties: privacy manifests on iOS and an accurate Data safety form on Google Play.",
+          "Review crash and ANR data after every release. Google Play may reduce the visibility of apps over its thresholds.",
         ],
       },
       {
@@ -517,52 +537,75 @@ export const mobilePosts3: BlogPost[] = [
         ],
       },
       {
-        heading: "What Maintenance Covers",
-        body: [],
+        heading: "The maintenance planning worksheet",
+        body: [
+          "Copy this table into a spreadsheet and fill in the owner column with real names. The 'what makes it bigger' column is how you estimate effort without a price list: the more of those drivers your app has, the more time that row needs. The last column is what you should be able to see when the work is done, which is also what to ask an agency or contractor to show you. Frequencies marked as a pattern are inferences from recent years, not published rules.",
+        ],
         table: {
-          headers: ["Area", "What it involves", "Why it matters"],
+          headers: ["Work type", "Frequency", "Owner", "What makes it bigger", "Evidence it was done"],
           rows: [
-            ["Bug fixes", "Fixing issues found by users and monitoring", "Ratings and retention"],
-            ["OS updates", "Testing and adapting to new iOS and Android versions", "Avoid breakage on new devices"],
-            ["Dependency updates", "Updating frameworks, SDKs and libraries", "Security, compatibility, easier upgrades"],
-            ["Security updates", "Patching vulnerabilities, reviewing data handling", "Protect users and data"],
-            ["Performance monitoring", "Startup, rendering, API latency, ANRs", "User experience and store visibility"],
-            ["Crash reporting", "Tracking and prioritizing crashes", "Stability"],
-            ["Analytics", "Reviewing usage and funnels", "Informs improvements"],
-            ["API changes", "Keeping app and backend in step", "Avoid broken features"],
-            ["Store requirements", "Target API levels, SDK minimums, privacy disclosures", "Keep the app publishable"],
-            ["Feature improvements", "Iterating based on real usage", "Continued value"],
+            ["1. Store toolchain upgrade (Xcode and SDK on iOS, target API level on Android)", "Yearly on each platform, before the deadline", "Lead developer", "Native modules, old dependencies, custom build scripts", "A build on the new toolchain uploaded before the deadline"],
+            ["2. New OS compatibility testing", "Yearly, from the beta to the public release (pattern)", "QA and developers", "Number of devices to test, background tasks, notifications, permissions", "A test report on the new OS version"],
+            ["3. Framework upgrade (React Native or Flutter)", "Each minor release, or at least before support ends", "Lead developer", "How far behind you are, third-party native packages, architecture changes", "The app runs on a supported version"],
+            ["4. Third-party SDK updates and privacy declarations", "When an SDK changes, plus a quarterly review", "Developers with product or legal", "Number of SDKs, especially ads and analytics; how much data is collected", "Privacy manifests, Apple's App Privacy details and Play's Data safety form match the build"],
+            ["5. Store policy review", "Quarterly, and when Google or Apple announces changes", "Product owner", "Regulated category (finance, health, children), payments, user-generated content", "A policy log with the actions taken"],
+            ["6. Accounts and credentials (Apple membership, push keys, signing keys, certificates, domains)", "Yearly, plus expiry alerts", "Account holder", "Number of apps and accounts; accounts held by an agency", "Renewal dates in a shared calendar"],
+            ["7. Crash, ANR and hang triage", "Weekly and after every release", "Developers", "Release frequency, spread of devices", "Android vitals under Google's thresholds; top issues ticketed"],
+            ["8. Security patches (app dependencies and backend)", "Monthly scan; urgent fixes as needed", "Developers or DevOps", "Login, payments, personal data", "Scan report and patched versions"],
+            ["9. Backend and third-party API changes (payments, maps, sign-in providers)", "As each provider announces", "Developers", "Number of integrations", "Deprecation notices tracked with dates"],
+            ["10. Backups and a restore test", "Quarterly (a sensible default, not a rule)", "DevOps", "Data volume, number of regions", "A restore actually carried out and recorded"],
+            ["11. Product improvements from analytics", "Monthly cycle", "Product owner", "Roadmap ambition", "Shipped changes tied to a metric"],
           ],
+        },
+      },
+      {
+        heading: "Annual compliance calendar",
+        body: [
+          "These are the dates that come from the platforms rather than from your roadmap. Check each source once a quarter, because the platforms announce changes during the year and dates can move.",
+        ],
+        table: {
+          headers: ["When", "What", "What happens if you miss it"],
+          rows: [
+            ["Your membership anniversary", "Apple Developer Program renewal. Only the Account Holder can renew.", "Verified: apps and In-App Purchases become unavailable in all storefronts. Installed copies stay on devices, but you lose TestFlight, Certificates, Identifiers & Profiles, the App Store Connect API and Xcode Cloud."],
+            ["Late April (inferred pattern)", "Apple's minimum Xcode and SDK version for uploads. Past minimums took effect on 25 April 2023, 29 April 2024 and 28 April 2026; Apple's page lists none for 2025 and none yet for 2027. The late-April timing is our inference from those dates, not an Apple rule.", "App Store Connect will not accept new builds made with an older Xcode. Since 28 April 2026 that means Xcode 26 with the 26 SDKs."],
+            ["9 September 2026 (one-off)", "iOS and iPadOS apps uploaded to App Store Connect must target iOS 13 or later.", "Builds with an older deployment target are not accepted."],
+            ["31 August (2026; Google sets a yearly deadline)", "Google Play target API level for new apps and updates: Android 16 (API 36) in 2026. An extension to 1 November 2026 can be requested.", "You cannot submit updates until the app targets the new level. Separately, existing apps must target API 35 or higher to stay available to new users on devices running a newer Android version."],
+            ["Several times a year", "Google Play policy announcements. Google published one each July from 2023 to 2026, with others in January, April and from October to December. The July 2026 announcement gave at least 30 days to comply with new requirements.", "Policy enforcement against the app or account; the timescale depends on the policy."],
+            ["About every two months", "React Native minor releases. React Native maintains only the latest three minor series. On 15 October 2026, 0.87 and 0.86 were Active, 0.85 was End of Cycle and 0.84 and older were Unsupported.", "No patch releases for your version, including critical fixes."],
+            ["From 30 September 2026", "Android developer verification: protections for installs from participating stores in Brazil, Indonesia, Singapore and Thailand on certified devices running Android 7 or later; global rollout planned for 2027.", "Matters most for apps distributed outside Google Play. Google says Play automatically registers 99% of apps; check Play Console for any that need manual registration."],
+          ],
+        },
+        callout: {
+          type: "note",
+          text: "Flutter's compatibility policy covers breaking changes and deprecations, but Flutter does not publish a fixed support window in the way React Native does. Treat staying on a recent stable release as part of item 3 in the worksheet.",
         },
       },
       {
         heading: "OS and Store Requirement Updates",
         body: [
-          "When Apple and Google release major OS versions, test the app on them, adopt required changes and fix anything that breaks. Google Play requires new apps and updates to target an API level within a year of the latest major Android release, and restricts visibility of older apps to users on newer Android versions. Apple periodically raises the minimum Xcode and SDK versions required to submit.",
-          "Current examples: apps uploaded to App Store Connect since 28 April 2026 must be built with Xcode 26 and the iOS 26 SDK, and since 9 September 2026 iOS apps must target iOS 13 or later ([[https://developer.apple.com/news/upcoming-requirements/|Apple]]). From 31 August 2026, new Android apps and updates must target Android 16 (API level 36), with an extension to 1 November 2026 available on request ([[https://developer.android.com/google/play/requirements/target-sdk|Android Developers]]). Put these dates in your maintenance calendar each year.",
+          "When Apple and Google release major OS versions, test the app on them, adopt required changes and fix anything that breaks. Google Play requires new apps and updates to target an API level within a year of the latest major Android release. Its rule for existing apps is precise: they must target Android 15 (API level 35) or higher to remain available to new users on devices running a newer Android version, and an app targeting API 34 or lower is only available on devices running that version or lower ([[https://developer.android.com/google/play/requirements/target-sdk|Android Developers: target API level requirements]]).",
+          "Current examples: apps uploaded to App Store Connect since 28 April 2026 must be built with Xcode 26 and the 26 SDKs, and since 9 September 2026 iOS apps must target iOS 13 or later ([[https://developer.apple.com/news/upcoming-requirements/|Apple: upcoming requirements]]). From 31 August 2026, new Android apps and updates must target Android 16 (API level 36), with an extension to 1 November 2026 available on request. All of these dates may change; the calendar above lists them together.",
         ],
         visual: { variant: "pulse", accent: "orange", caption: "OS releases, store policies and dependencies change on their own schedules; maintenance keeps the app in step." },
       },
       {
-        heading: "Dependency and Security Updates",
+        heading: "Dependencies, SDKs and Privacy Declarations",
         body: [
-          "Frameworks like React Native and Flutter, and third-party SDKs, release updates regularly. Falling far behind makes each upgrade harder and riskier. Update on a regular cadence, and apply security patches promptly.",
+          "Frameworks like React Native and Flutter, and third-party SDKs, release updates regularly. Falling far behind makes each upgrade harder and riskier. React Native commits to maintaining only the latest three minor series and ships critical fixes as patch versions of those series ([[https://reactnative.dev/releases/overview|React Native: releases overview]]). Update on a regular cadence, and apply security patches promptly.",
+          "SDKs also carry compliance duties. Apple requires privacy manifests for a listed set of commonly used SDKs (including Firebase, Flutter and OneSignal) and signatures for binary dependencies when you add them in a new app or update, and reminds developers that they are responsible for all the code an SDK includes ([[https://developer.apple.com/support/third-party-SDK-requirements/|Apple: third-party SDK requirements]]). Google's Data safety form must cover data collected by SDKs too, and Google says discrepancies can lead to blocked updates or removal ([[https://support.google.com/googleplay/android-developer/answer/10787469|Google Play Help: Data safety]]). Each time an SDK is added or upgraded, check both declarations. The [[/blogs/mobile-app-data-privacy|mobile app data privacy guide]] covers the wider obligations.",
         ],
       },
       {
         heading: "Monitoring and Crash Reporting",
         body: [
-          "Crash reporting and performance monitoring show what users actually experience. Google Play's Android vitals flags apps whose crash or ANR rates exceed its thresholds, which can reduce store visibility. Review these metrics after every release. See [[/blogs/mobile-app-performance-optimization|app performance optimization]]. The [[/blogs/mobile-app-crash-reporting|crash reporting and monitoring guide]] explains the workflow.",
+          "Crash reporting and performance monitoring show what users actually experience. Google Play's Android vitals sets bad-behaviour thresholds for user-perceived crash rate (1.09% overall, 8% per phone model) and user-perceived ANR rate (0.47% overall, 8% per phone model); Google says that above them Play may reduce the visibility of the app and may show a warning on the store listing ([[https://developer.android.com/topic/performance/vitals|Android Developers: Android vitals]]). Review these numbers after every release.",
+          "When users report crashes or slowness, the [[/blogs/mobile-app-crash-reporting|diagnostic guide to crashes and slow apps]] maps each symptom to where to look and who owns the fix. For the engineering fixes themselves, see [[/blogs/mobile-app-performance-optimization|app performance optimisation]].",
         ],
-        cta: {
-          title: "Need ongoing support for your app?",
-          description: "ZSpace Labs stays involved after launch to handle updates, OS changes, store requirements and new features.",
-        },
       },
       {
         heading: "Analytics and Feature Improvements",
         body: [
-          "Launch is when real learning begins. Review funnels and feature usage, gather feedback, and prioritize improvements that move key metrics. See [[/blogs/mobile-app-analytics|mobile app analytics]] for which events and metrics to track. Each improvement goes through the same design, build and [[/blogs/mobile-app-testing|testing]] discipline as the original release.",
+          "Launch is when real learning begins. Review funnels and feature usage, gather feedback, and prioritise improvements that move key metrics. See [[/blogs/mobile-app-analytics|mobile app analytics]] for which metrics to review each month. Each improvement goes through the same design, build and [[/blogs/mobile-app-testing|testing]] discipline as the original release.",
         ],
       },
       {
@@ -574,7 +617,7 @@ export const mobilePosts3: BlogPost[] = [
       {
         heading: "Hotfixes and Incident Response",
         body: [
-          "Production incidents are part of running an app. Prepare before they happen: staged rollouts so a bad release reaches a small share of users first, server-side feature flags to switch off a broken feature without a new release, a documented hotfix path, and a contact list for the store developer accounts. Apple allows developers to request an expedited review for critical fixes, though approval is not guaranteed.",
+          "Production incidents are part of running an app. Prepare before they happen: staged rollouts so a bad release reaches a small share of users first, server-side feature flags to switch off a broken feature without a new release, a documented hotfix path, and a contact list for the store developer accounts. Apple allows developers to request an expedited review for critical fixes, though approval is not guaranteed. The [[/blogs/mobile-app-release-management|release management guide]] covers rollout gates and rollback in detail.",
           "If an incident involves personal information, follow your data breach process. In Australia, businesses covered by the Privacy Act must assess suspected eligible data breaches and notify the regulator and affected people when serious harm is likely; see [[/blogs/website-security-australia|website security for Australian small businesses]] for the incident sequence.",
         ],
       },
@@ -595,12 +638,12 @@ export const mobilePosts3: BlogPost[] = [
             ["Scope", "What is maintenance (fixes, OS and store updates, dependency and security updates) and what is a new feature"],
             ["Severity levels", "Definitions, for example critical, high, normal, low"],
             ["Response and resolution times", "Per severity, during and outside support hours"],
-            ["Support hours and time zone", "When the team is reachable, and how out-of-hours emergencies are handled and priced"],
+            ["Support hours and time zone", "When the team is reachable, and how out-of-hours emergencies are handled and charged"],
             ["Release process", "Testing, staged rollout, rollback and who approves releases"],
             ["Monitoring and reporting", "Which dashboards are watched and how often you receive a summary"],
             ["Security", "Patching timeframes for critical vulnerabilities; incident cooperation"],
             ["Ownership", "Code, signing keys, store accounts and cloud accounts belong to the business"],
-            ["Pricing", "Retainer, hours bank or per request, and how unused hours are treated"],
+            ["Pricing model", "Retainer, hours bank or per request, and how unused hours are treated"],
             ["Exit", "Handover documentation and transition support if the agreement ends"],
           ],
         },
@@ -608,14 +651,22 @@ export const mobilePosts3: BlogPost[] = [
       {
         heading: "Planning the Maintenance Budget",
         body: [
-          "There is no reliable percentage that fits every app, so budget by component: hosting and third-party services, store accounts, monitoring and crash reporting tools, scheduled OS and store updates, dependency and security updates, a bug-fix allowance, support hours and planned improvements. Apps with many integrations, third-party SDKs or sensitive data need more. Ask for a maintenance quote before signing the build contract, so the long-term cost is part of the decision.",
+          "There is no reliable percentage that fits every app. The '15 to 20% of build cost a year' figure repeated across the web has no published method behind it, so we do not use it. Budget from the worksheet instead: for each of the eleven rows, note how many of the 'what makes it bigger' drivers apply to your app, then ask for an estimate against that list. Add the fixed platform fees, hosting and third-party services, monitoring tools, support hours and a bug-fix allowance. Apps with many integrations, many SDKs, native modules or sensitive data need more.",
+          "Ask for a maintenance estimate before signing the build contract, so the long-term cost is part of the decision. The [[/blogs/mobile-app-development-cost|guide to what drives mobile app development cost]] explains how build decisions carry into running costs. If you want a team to own this work, ZSpace Labs offers [[/services/mobile-app-development|mobile app development and post-launch support]].",
           "Australian businesses can find a lifecycle budget model, GST and store fee considerations in [[/blogs/mobile-app-development-cost-australia|mobile app development cost in Australia]], and support-hour and contract questions in [[/blogs/mobile-app-development-company-australia|choosing a mobile app development company in Australia]].",
         ],
       },
       {
-        heading: "Long-Term Maintenance",
+        heading: "Hypothetical example: a booking app one year after launch",
         body: [
-          "Make ownership explicit, keep documentation current, track technical debt, and plan periodic reviews of architecture and dependencies. A well-maintained app rarely needs a full rebuild; a neglected one usually does. The [[/blogs/mobile-app-development-process|development process guide]] shows how maintenance feeds back into the product cycle.",
+          "Hypothetical example: a two-sided booking app built in React Native, with a payments SDK, an analytics SDK, push notifications and a small backend. Running the worksheet, the founder finds three rows that need the most attention. Row 3: the app shipped on a React Native version that has since dropped to End of Cycle, so an upgrade is due before it becomes unsupported. Row 4: the analytics SDK was upgraded in a hotfix without anyone checking the Data safety form. Row 6: the Apple Developer account was opened by the original contractor, who is still the Account Holder.",
+          "The founder moves the Account Holder role into the business first, because a missed renewal would remove the app from every storefront. Then the team schedules the framework upgrade ahead of Apple's late-April window and Google's August deadline, so one toolchain upgrade covers both. The example is illustrative and does not describe a real client.",
+        ],
+      },
+      {
+        heading: "When This Plan Does Not Fit",
+        body: [
+          "The worksheet assumes an app you intend to keep growing. If the app is a short-lived campaign or a prototype you plan to retire, a lighter plan is reasonable: keep the accounts renewed and the store listing compliant until you remove it, and skip the improvement cycle. If the app is in a regulated sector such as health or finance, the worksheet is a starting point only; your regulator's requirements for security testing, records and incident reporting come first. And if most of the work is now fighting an old codebase, maintenance may not be enough; see [[/blogs/mobile-app-modernization|mobile app modernisation]].",
         ],
       },
       {
@@ -625,25 +676,36 @@ export const mobilePosts3: BlogPost[] = [
           "Crash and performance dashboards reviewed after every release",
           "App tested against each new iOS and Android version",
           "Store target API and SDK requirements tracked",
+          "Apple Account Holder and Play Console owner are people in the business",
           "Dependencies and SDKs updated on a regular cadence",
+          "Privacy manifests, App Privacy details and Data safety form checked whenever an SDK changes",
           "Security patches applied promptly",
-          "Privacy disclosures kept accurate as features change",
-          "Store deadlines (Xcode/SDK minimums, Android target API level) in the calendar",
+          "Store deadlines (Xcode/SDK minimums, Android target API level, membership renewal) in the calendar",
           "Staged rollouts, feature flags and a hotfix path ready",
           "Backend patched, backups restored in a test, secrets rotated",
           "Older app versions monitored and a minimum version policy defined",
-          "Analytics reviewed and improvements prioritized",
+          "Analytics reviewed and improvements prioritised",
           "Documentation and ownership kept current",
         ],
+      },
+      {
+        heading: "Conclusion and Next Steps",
+        body: [
+          "An app is a living product on platforms that keep changing. Maintenance keeps it working, secure, compliant and improving. This week, copy the worksheet, name an owner for each row, and put the calendar dates in a shared diary, starting with your Apple membership renewal. Then check your framework version against React Native's support table and your SDK list against your privacy declarations.",
+          "For how this fits the whole build, see [[/blogs/mobile-app-development-guide|the mobile app development guide]]. For the contract terms behind a maintenance plan in Australia, see [[/blogs/software-maintenance-contracts-australia|software maintenance contracts]].",
+        ],
         cta: {
-          title: "Want a maintenance plan for your app?",
-          description: "Talk to ZSpace Labs about [[/services/mobile-app-development|mobile app development]] support that continues well past launch.",
+          title: "Want a maintenance plan built around your app?",
+          description: "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/mobile-app-development|mobile app development]]. If useful, we can talk through a maintenance plan based on your app's SDKs, framework version and platform deadlines.",
         },
       },
       {
-        heading: "Conclusion",
+        heading: "Sources",
         body: [
-          "An app is a living product on platforms that keep changing. Maintenance keeps it working, secure, compliant and improving. Budget for it from the start and treat launch as the beginning of the product's life, not the end of the project. For how this fits the whole build, see [[/blogs/mobile-app-development-guide|the mobile app development guide]]. For the contract terms behind a maintenance plan in Australia, see [[/blogs/software-maintenance-contracts-australia|software maintenance contracts]]. When maintenance is no longer enough, see [[/blogs/mobile-app-modernization|mobile app modernisation]]. For shipping updates safely, see [[/blogs/mobile-app-release-management|mobile app release management]].",
+          "Apple: [[https://developer.apple.com/news/upcoming-requirements/|Upcoming requirements]]; [[https://developer.apple.com/help/account/access/resolving-access-issues/|Apple Developer: resolving access issues (membership expiry)]]; [[https://developer.apple.com/support/third-party-SDK-requirements/|Third-party SDK requirements]].",
+          "Google: [[https://developer.android.com/google/play/requirements/target-sdk|Target API level requirements for Google Play apps (updated 1 October 2026)]]; [[https://developer.android.com/topic/performance/vitals|Android vitals]]; [[https://developer.android.com/developer-verification|Android developer verification]]; [[https://support.google.com/googleplay/android-developer/announcements/13412212|Google Play policy announcements]]; [[https://support.google.com/googleplay/android-developer/answer/10787469|Google Play Help: Data safety section]].",
+          "Frameworks: [[https://reactnative.dev/releases/overview|React Native: releases overview]]; [[https://reactnative.dev/releases/versioning-policy|React Native: versioning policy]]; [[https://docs.flutter.dev/release/compatibility-policy|Flutter: compatibility policy]].",
+          "Accessed 15 October 2026. Platform deadlines, policies and support windows change; check the source pages before planning around a date.",
         ],
       },
     ],

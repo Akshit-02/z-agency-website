@@ -151,7 +151,11 @@ export const commercePosts57: BlogPost[] = [
       {
         heading: "Analysis",
         body: [
-          "Analyse as the plan says. Report the primary metric's estimated effect with a confidence or credible interval, not only a p-value or \"probability to beat\". Check guardrails. Look at the few segments declared in advance (such as device), and treat any other segment findings as hypotheses for new tests, not conclusions.",
+          "**Trust checks before you read the result.** Run these before you look at the primary metric. If any of them fails, the result is not ready to read, however good it looks.",
+          "**Sample ratio mismatch (SRM).** Compare the number of users assigned to each variant with the planned split using a chi-square goodness-of-fit test. Glancing at the ratio is not enough: at ecommerce volumes, a split that looks close to even can be far outside what chance allows. Microsoft's experimentation team uses a deliberately conservative threshold of p < 0.0005, and in a 2020 article reported that about 6% of its A/B tests had an SRM. Its advice is not to trust a test with an SRM until the root cause is diagnosed ([[https://www.microsoft.com/en-us/research/group/experimentation-platform-exp/articles/diagnosing-sample-ratio-mismatch-in-a-b-testing/|Microsoft Experimentation Platform: diagnosing sample ratio mismatch]]). Hypothetical example: a 50/50 test ends with 10,000 users in control and 10,600 in the variant. That is a 48.5/51.5 split, which looks harmless, but the chi-square test gives p of roughly 0.00003, well below the threshold. Something is dropping or adding users in one arm, so the conversion numbers can't be compared as they stand.",
+          "**Twyman's law.** Experimenters use this name for the rule of thumb that a figure which looks surprisingly interesting or different is more often the product of an error than a genuine finding. Kohavi, Tang and Xu devote a chapter of Trustworthy Online Controlled Experiments (2020) to it. In practice, when a small change shows a large lift, treat it as a likely bug until you have checked it: confirm that key events (add to cart, checkout, purchase) fire at similar rates per user in each variant, that the variant rendered as designed for every device, and that nothing else changed during the test, such as a promotion, a price change or a tracking release.",
+          "**Duration and data completeness.** Confirm that the test ran for its planned full weeks and reached its planned sample, and that internal traffic and bots were excluded as the plan says. A test stopped early or short of its sample should be read as underpowered, whatever the dashboard shows.",
+          "Once the trust checks pass, analyse as the plan says. Report the primary metric's estimated effect with a confidence or credible interval, not only a p-value or \"probability to beat\". Check guardrails. Look at the few segments declared in advance (such as device), and treat any other segment findings as hypotheses for new tests, not conclusions.",
           "For revenue metrics, be aware that a few large orders can swing results. Methods such as capping extreme values or bootstrapping are common; decide which before the test. Where possible, check longer-term outcomes (returns, repeat purchases) for tests that might affect them.",
         ],
       },
@@ -170,6 +174,28 @@ export const commercePosts57: BlogPost[] = [
             ["Primary worsens", "Stop; record the learning"],
             ["Sample ratio mismatch or tracking issue", "Invalidate; fix and rerun"],
           ],
+        },
+      },
+      {
+        heading: "From Result to Next Test",
+        body: [
+          "The decision rules settle whether to ship. They don't say what to test next, and that is where much of a test's value sits. Use the result type to choose the next move, then score that move alongside the rest of your backlog.",
+        ],
+        table: {
+          headers: ["Result", "What it tells you", "Next move"],
+          rows: [
+            ["Clear win, guardrails hold", "The lever matters for this audience", "Ship, then test a bolder version of the same lever or apply it to another template"],
+            ["Clear loss", "This change hurt; the underlying problem may still be real", "Record why you think it lost. Try a different solution to the same problem only if new evidence supports it"],
+            ["Flat, and the test had the planned power", "Any effect is smaller than the minimum worth detecting", "Deprioritize this lever for this audience and move to the next problem"],
+            ["Flat, but underpowered or stopped early", "The test could not answer the question", "Re-scope: a bolder change, a higher-traffic page or a metric closer to the change"],
+            ["A pre-declared segment differs", "Possibly a real difference, possibly chance", "Run a confirmatory test on that segment before acting on it"],
+            ["An unplanned segment looks different", "Most likely noise from slicing", "Log it as a new hypothesis; don't act on it"],
+            ["Failed a trust check (SRM, tracking)", "Nothing reliable was learned", "Fix the cause and rerun; carry no conclusion forward"],
+          ],
+        },
+        callout: {
+          type: "tip",
+          text: "Feed every outcome, including flat and failed tests, back into [[/blogs/ecommerce-experiment-prioritization|your experiment prioritization worksheet]] so the next test is chosen on updated evidence rather than on whichever idea is loudest.",
         },
       },
       {
@@ -236,6 +262,13 @@ export const commercePosts57: BlogPost[] = [
           title: "Ready to standardize how you test?",
           description: "Talk to ZSpace Labs about [[/services/cro-audit|experimentation audits]], [[/services/website-development|test implementation]] and [[/services/ui-ux-design|variant design]].",
         },
+      },
+      {
+        heading: "Sources",
+        body: [
+          "[[https://www.microsoft.com/en-us/research/group/experimentation-platform-exp/articles/diagnosing-sample-ratio-mismatch-in-a-b-testing/|Fabijan et al., Diagnosing Sample Ratio Mismatch in A/B Testing, Microsoft Experimentation Platform (14 September 2020)]]; Kohavi, Tang and Xu, Trustworthy Online Controlled Experiments (Cambridge University Press, 2020), chapter 3, \"Twyman's Law and Experimentation Trustworthiness\".",
+          "Accessed 15 October 2026.",
+        ],
       },
       {
         heading: "Conclusion",
@@ -449,46 +482,109 @@ export const commercePosts57: BlogPost[] = [
   // ---------------------------------------- 334 · PRIORITIZATION
   {
     slug: "ecommerce-experiment-prioritization",
-    title: "Ecommerce Experiment Prioritization: What Should You Test Next?",
-    seoTitle: "Ecommerce Experiment Prioritization: What to Test Next",
-    excerpt: "How to prioritize ecommerce experiments: reach, evidence, impact and effort, scoring models such as PIE, ICE and PXL, traffic limits, portfolio balance and reviews.",
+    title: "How to Prioritise CRO Experiments When You Have More Ideas Than Time",
+    seoTitle: "How to Prioritise CRO Experiments: Scoring Worksheet",
+    excerpt: "How to prioritise CRO and ecommerce experiments: a traffic check before scoring, a copyable scoring worksheet, PIE, ICE and PXL compared, and lead-gen sites.",
     category: "CRO",
     banner: "prioritymatrix",
+    sceneKind: "abtest",
     bannerAlt:
       "Illustrative prioritization matrix scoring five ideas on reach, evidence, effort and score: A (product page delivery info: high reach, strong evidence, low effort, run first, highlighted), B (filter chips: next), C (new hero: weak evidence, research first), D (checkout app: high effort, plan) and E (footer copy: drop), noting to weigh evidence, not opinions.",
     date: "2026-09-29",
-    readingTime: "16 min read",
+    updated: "2026-10-15",
+    readingTime: "11 min read",
     relatedServiceSlugs: ["cro-audit", "ui-ux-design", "website-development"],
     relatedIndustrySlugs: ["ecommerce", "retail", "d2c-consumer"],
+    relatedSlugs: ["cro-strategy-low-traffic-websites", "ecommerce-experimentation-framework", "ecommerce-ab-testing-framework"],
     faqs: [
-      { q: "Why prioritize experiments?", a: "Traffic and team time are limited. Each test occupies a page for weeks, so the order in which you test determines how much you learn and gain over a year." },
-      { q: "What factors should prioritization consider?", a: "Reach (how many visitors the change affects), strength of evidence, expected impact, effort and cost, risk and whether the test can reach a result with available traffic." },
-      { q: "What are PIE, ICE and PXL?", a: "Scoring frameworks. PIE rates potential, importance and ease; ICE rates impact, confidence and ease; PXL uses mostly yes/no questions about evidence and visibility to reduce subjectivity." },
+      { q: "Why prioritise experiments?", a: "Traffic and team time are limited. Each test occupies a page for weeks, so the order in which you test determines how much you learn and gain over a year." },
+      { q: "What factors should prioritisation consider?", a: "Reach (how many visitors the change affects), strength of evidence, expected impact, effort and cost, risk and whether the test can reach a result with available traffic." },
+      { q: "What are PIE, ICE and PXL?", a: "Scoring frameworks. PIE (Potential, Importance, Ease) was described by Chris Goward of WiderFunnel to rank which pages or areas of a site to test first. ICE (Impact, Confidence, Ease) is commonly attributed to Sean Ellis and is used to rank individual growth ideas. PXL, from CXL, uses mostly yes/no questions about visibility and evidence to reduce subjective scoring, and is meant to be customised." },
       { q: "Which framework is best?", a: "The one your team applies consistently. Frameworks with objective criteria (like evidence sources and page traffic) tend to reduce bias compared with pure 1 to 10 opinion scores." },
-      { q: "How do I estimate reach?", a: "Use analytics: the share of sessions or revenue passing through the page or template, on the devices and markets in scope." },
+      { q: "How do I estimate reach?", a: "Use analytics: the share of sessions or revenue passing through the page or template, on the devices and markets in scope. On a lead-generation site, use the share of qualified leads or lead value, not just sessions." },
       { q: "Should quick wins skip testing?", a: "Clear fixes (broken elements, errors, accessibility failures) should usually be fixed without a test. Test changes where the outcome is uncertain." },
-      { q: "How does traffic affect prioritization?", a: "Tests on low-traffic pages may never reach a result. Prioritize ideas that can be tested on high-traffic templates or with metrics close to the change." },
-      { q: "How often should the backlog be reprioritized?", a: "Regularly, such as monthly, and whenever new research or test results arrive." },
-      { q: "Should big redesigns be prioritized?", a: "They carry more risk and effort and are harder to learn from. Break them into testable parts where possible, or test the full redesign against control as a split test." },
+      { q: "How does traffic affect prioritisation?", a: "Tests on low-traffic pages may never reach a result. Check this before scoring: if a test cannot finish within your time limit, make it bolder, move it to a busier template, or treat the idea as a fix or a research question." },
+      { q: "How often should the backlog be reprioritised?", a: "Regularly, such as monthly, and whenever new research or test results arrive." },
+      { q: "Should big redesigns be prioritised?", a: "They carry more risk and effort and are harder to learn from. Break them into testable parts where possible, or test the full redesign against control as a split test." },
       { q: "How do I stop the loudest opinion winning?", a: "Require evidence for every idea, use scoring criteria that reward evidence, and review scores as a group with the data visible." },
+      { q: "Is the PIE score meant to be on a 1 to 10 scale?", a: "Not in Goward's original description, which gives the three criteria but no fixed scale or formula. Scoring each from 1 to 10 is a common team practice. Whatever scale you choose, write it down and keep it." },
     ],
     content: [
       {
-        heading: "Quick answer",
+        heading: "How should you decide which experiment to run next?",
         body: [
-          "Prioritize ecommerce experiments by reach (how many visitors and how much revenue the change touches), strength of evidence behind the idea, expected impact, effort and risk, and whether the test can reach a result with your traffic. Use a scoring framework consistently, favouring objective criteria over opinion scores. Fix obvious problems without testing, break big ideas into testable parts, balance quick tests with bigger bets, and reprioritize monthly as research and results arrive.",
+          "**First remove every idea that cannot finish with your traffic, and send obvious problems straight to a fix list. Then score what is left on evidence, reach, noticeability and effort, using the same worksheet every time, and run the highest-scoring test on each template. Reprioritise monthly as research and results arrive.** The order matters because each test holds a page's traffic for weeks: a weak test now means a stronger one waits.",
+          "This guide is for ecommerce and marketing teams with a long list of ideas from colleagues, agencies and leadership, and no agreed way to rank them. It includes a worksheet you can copy into a spreadsheet and a section for lead-generation sites, where the rules change.",
+        ],
+      },
+      {
+        heading: "Key takeaways",
+        body: [],
+        checklist: [
+          "Check testability before scoring, not after.",
+          "Fix clear problems without testing them; research ideas with no evidence.",
+          "Score evidence with fixed criteria rather than a 1 to 10 confidence guess.",
+          "Measure reach by template and by revenue or lead value, not just sessions.",
+          "On low-traffic lead-generation sites, most ideas become fixes or research.",
+          "Record why ideas were ranked low so they are not reargued without new evidence.",
         ],
       },
       {
         heading: "Why Order Matters",
         body: [
-          "Every test uses a page's traffic for weeks. A store that can run a couple of tests at a time on its product pages might complete a limited number there in a year. Choosing a low-value test means a higher-value one waits. Prioritization is about making those slots count.",
+          "Every test uses a page's traffic for weeks. A store that can run a couple of tests at a time on its product pages might complete a limited number there in a year. Choosing a low-value test means a higher-value one waits. Prioritisation is about making those slots count.",
           "It's also about learning. Tests grounded in evidence produce clearer results, whether they win or lose. For the full experimentation process, see [[/blogs/ecommerce-experimentation-framework|ecommerce experimentation]]; for the per-test standard, see [[/blogs/ecommerce-ab-testing-framework|A/B testing framework]].",
         ],
       },
       {
+        heading: "Step 1: can it finish with your traffic?",
+        body: [
+          "Run this check on every idea before anyone scores it. An idea that cannot reach a result is not a test, however good it sounds.",
+          "You need four numbers: the weekly sessions that reach the page or template, the current conversion rate for the metric the change affects, the smallest improvement worth detecting, and the longest you are willing to run a test (many teams use four to six weeks, to limit seasonal and promotional noise; that is a working rule, not a standard). Put the first three into a sample size calculator such as [[https://www.evanmiller.org/ab-testing/sample-size.html|Evan Miller's]], multiply the answer by the number of variants, and divide by weekly sessions.",
+          "Hypothetical example: a collection template gets 8,000 sessions a week and 3% of those sessions add to cart. Detecting a 10% relative lift (3.0% to 3.3%) at the usual 95% significance and 80% power needs roughly 53,000 sessions per variant, so about 106,000 for an A/B test. That is around 13 weeks. Under a six-week limit, the idea fails the check as written.",
+        ],
+        checklist: [
+          "Passes: score it in the worksheet",
+          "Fails, but the change could be bolder: redesign the test to target a larger effect",
+          "Fails, but a busier template has the same problem: move it there",
+          "Fails, but a metric closer to the change would do (for example clicks on the size guide rather than orders): change the metric, accepting it says less about revenue",
+          "Fails and none of the above apply: treat it as a fix or a research item",
+        ],
+        callout: {
+          type: "note",
+          text: "If most of your ideas fail this check, testing is not your main tool yet. Our guide to [[/blogs/cro-strategy-low-traffic-websites|CRO on low-traffic websites]] covers what to do instead.",
+        },
+      },
+      {
+        heading: "Step 2: sort into fix, test or research",
+        body: [
+          "Not every idea should become a test. Fix: clear problems such as bugs, broken links, errors, slow pages and accessibility failures; testing them wastes traffic. Test: changes with uncertain outcomes that passed the traffic check. Research: ideas with weak evidence, or big questions, that need more understanding before a test is designed. See [[/blogs/ecommerce-conversion-research|conversion research]].",
+        ],
+      },
+      {
+        heading: "Step 3: score with the worksheet",
+        body: [
+          "Copy these columns into a spreadsheet. Evidence is one point for each source that independently shows the problem: analytics, user testing, surveys or support tickets, and session recordings. Reach is 1 (low), 2 (medium) or 3 (high) for the share of sessions, revenue or qualified leads passing through the template. Noticeability is 0 (below the fold or subtle), 1 (visible) or 2 (obvious within seconds). Effort is 1 (small), 2 (medium) or 3 (large), estimated by the people who will build it.",
+          "Score = (evidence + noticeability) × reach ÷ effort. Only ideas in the test stream get a score. The weights are a starting point; adjust them, then keep them fixed so scores stay comparable.",
+        ],
+        table: {
+          headers: ["Idea (hypothetical)", "Template", "Evidence (A / UT / S / R)", "Reach", "Notice", "Effort", "Testable?", "Stream", "Score", "Decision and reason"],
+          rows: [
+            ["Show delivery estimate beside add to cart", "Product page", "1 / 1 / 1 / 0 = 3", "3", "2", "1", "Yes, about 5 weeks", "Test", "15", "Run first: strong evidence, high reach, small build"],
+            ["Filter chips above the grid on mobile", "Collection", "1 / 0 / 0 / 1 = 2", "3", "1", "2", "Yes, about 6 weeks", "Test", "4.5", "Next on this template"],
+            ["Payment icons broken on one mobile browser", "Checkout", "1 / 0 / 0 / 1 = 2", "2", "n/a", "1", "Not needed", "Fix", "n/a", "Fix this week; no test"],
+            ["Cut quote form from 9 fields to 5 (lead-gen)", "Quote page", "1 / 0 / 1 / 1 = 3", "2", "1", "1", "No, about 600 sessions a week", "Fix", "n/a", "Ship it and watch qualified leads for 8 weeks"],
+            ["New homepage headline (lead-gen)", "Homepage", "0 / 0 / 0 / 0 = 0", "2", "2", "2", "No", "Research", "n/a", "Run customer interviews and a five-second test first"],
+          ],
+        },
+        cta: {
+          title: "Backlog ordered by opinion?",
+          description: "ZSpace Labs builds evidence-led testing backlogs with scoring your team can apply consistently.",
+        },
+      },
+      {
         heading: "The Core Factors",
-        body: [],
+        body: ["Whatever worksheet you use, it should capture these factors."],
         table: {
           headers: ["Factor", "Question", "How to estimate"],
           rows: [
@@ -497,38 +593,24 @@ export const commercePosts57: BlogPost[] = [
             ["Impact", "How much could it change the metric?", "Size of the problem, boldness of change"],
             ["Effort", "What does it cost to build and run?", "Design, development, QA time"],
             ["Risk", "What could go wrong?", "Revenue exposure, brand, legal, accessibility"],
-            ["Testability", "Can it reach a result with our traffic?", "Sample size vs traffic"],
+            ["Testability", "Can it reach a result with our traffic?", "Sample size vs traffic (Step 1)"],
           ],
         },
       },
       {
-        heading: "Scoring Frameworks",
+        heading: "PIE, ICE, PXL and RICE compared",
         body: [
-          "Several frameworks turn these factors into a score. All are simplifications; their value is consistency and discussion, not precision.",
+          "Several published frameworks turn these factors into a score. All are simplifications; their value is consistency and discussion, not precision. Two attribution points are often garbled. PIE was described by Chris Goward of WiderFunnel in 2013 as a way to rank the **pages or areas** of a site to test, not individual ideas, and his description gives no fixed scale ([[https://www.practicalecommerce.com/Use-the-PIE-Method-to-Prioritize-Ecommerce-Tests|Practical Ecommerce, 2013]]). ICE is commonly attributed to Sean Ellis, though we could not find an original source to cite.",
         ],
         table: {
-          headers: ["Framework", "Criteria", "Strength", "Weakness"],
+          headers: ["Framework", "Origin", "Criteria", "Best for", "Weakness"],
           rows: [
-            ["PIE", "Potential, importance, ease (1–10 each)", "Simple, quick", "Subjective scores"],
-            ["ICE", "Impact, confidence, ease", "Captures confidence", "Subjective, easy to inflate"],
-            ["PXL", "Mostly yes/no questions: above the fold, noticeable in seconds, backed by research or analytics, and so on", "Reduces opinion bias", "Takes setup to adapt"],
-            ["RICE", "Reach, impact, confidence, effort", "Explicit reach", "Impact still estimated"],
-            ["Custom weighted", "Your factors, your weights", "Fits your context", "Needs calibration"],
+            ["PIE", "Chris Goward, WiderFunnel (2013)", "Potential (how much the page can improve), Importance (value and volume of its traffic), Ease (technical and organisational)", "Choosing which pages or areas to work on", "Scores are subjective; no fixed scale"],
+            ["ICE", "Commonly attributed to Sean Ellis", "Impact, confidence, ease", "Fast ranking of growth ideas", "Subjective and easy to inflate"],
+            ["PXL", "CXL", "Mostly yes/no questions: above the fold, noticeable quickly, adds or removes an element, backed by user testing, analytics or other research, plus ease; some criteria count for more than others", "Reducing opinion in idea-level scoring", "Takes setup to adapt; designed to be customised"],
+            ["RICE", "Product management practice", "Reach, impact, confidence, effort", "Explicit reach", "Impact still estimated"],
+            ["Custom weighted", "Your team", "Your factors, your weights (like the worksheet above)", "Fits your context", "Needs calibration"],
           ],
-        },
-      },
-      {
-        heading: "Make Evidence Count",
-        body: [
-          "The most useful change to any framework is to score evidence objectively. Instead of a 1 to 10 \"confidence\" rating, award points for each evidence source: analytics shows a drop-off, usability testing shows the problem, customers mention it in surveys or support, a similar test won before, a heuristic review flagged it. Ideas with several sources rise; ideas based on opinion or competitor copying sink.",
-        ],
-        code: {
-          label: "Evidence-weighted score (illustrative)",
-          text: "evidence = 2*analytics + 2*user_testing + 1*survey_or_support + 1*past_test + 1*heuristic\nreach    = share_of_sessions_on_template   # 0..1\neffort   = {low: 1, medium: 2, high: 3}[estimate]\ntestable = required_weeks <= 6\nscore = (evidence * reach * impact_band) / effort if testable else 0",
-        },
-        cta: {
-          title: "Backlog ordered by opinion?",
-          description: "ZSpace Labs builds evidence-led testing backlogs with scoring your team can apply consistently.",
         },
       },
       {
@@ -549,35 +631,16 @@ export const commercePosts57: BlogPost[] = [
         },
       },
       {
-        heading: "Fix, Test or Research",
+        heading: "If you run a lead-generation site",
         body: [
-          "Not every idea should become a test. Sort ideas into three streams. Fix: clear problems such as bugs, broken links, errors, slow pages and accessibility failures; testing them wastes traffic. Test: changes with uncertain outcomes and enough traffic. Research: ideas with weak evidence, or big questions, that need more understanding before a test is designed. See [[/blogs/ecommerce-conversion-research|conversion research]].",
+          "The same process works, with three changes. First, measure reach by lead value, not sessions: a page that produces few enquiries but most of your closed deals has more reach than a busy blog post. Second, the outcome is qualified leads, not form submissions. A change that adds form fills but brings in poorer enquiries is a loss; see [[/blogs/improve-website-lead-quality|how to improve website lead quality]] for defining a qualified lead with your sales team.",
+          "Third, expect most ideas to fail the traffic check. Lead-generation sites usually have far fewer conversions than stores, and a qualified lead takes weeks to confirm. That means more of the backlog goes to the fix stream (ship clear improvements and watch qualified leads over a set period) and the research stream (interviews, usability tests, reviewing call notes). Testing is kept for the few pages with enough volume. The [[/blogs/cro-strategy-low-traffic-websites|low-traffic CRO guide]] sets out what to work on first.",
         ],
       },
       {
         heading: "Balancing the Portfolio",
         body: [
           "A backlog of only small, safe tests produces small learnings. A backlog of only big bets risks long periods without results. Balance the two: most tests are well-evidenced, moderate changes on high-reach templates; a few are bolder changes that could shift understanding; some capacity goes to fixes and research. Review the balance quarterly.",
-        ],
-      },
-      {
-        heading: "Traffic and Testability",
-        body: [
-          "Check testability before scoring highly. Estimate the sample size needed for a realistic minimum detectable effect and compare it with available traffic. If a test would take many months, make it bolder, move it to a higher-traffic template, use a metric closer to the change, or treat it as a fix or research item. See [[/blogs/ecommerce-hypothesis-testing|hypothesis testing]].",
-        ],
-      },
-      {
-        heading: "Running the Prioritization Meeting",
-        body: [
-          "Prioritize as a group with data visible. Each idea should arrive with its hypothesis and evidence already written. Score quickly using the agreed framework, discuss disagreements about evidence rather than opinions, and agree the next few tests for each template. Record why ideas were deprioritized so they aren't reargued without new evidence.",
-        ],
-        checklist: [
-          "Every idea has a written hypothesis and evidence",
-          "Reach numbers pulled from analytics before the meeting",
-          "Effort estimated by the people who will build it",
-          "Testability checked against traffic",
-          "Decisions and reasons recorded",
-          "Backlog reprioritized when new research or results arrive",
         ],
       },
       {
@@ -603,15 +666,17 @@ export const commercePosts57: BlogPost[] = [
         ],
       },
       {
-        heading: "Bias in Scoring",
+        heading: "Running the Prioritisation Meeting",
         body: [
-          "Scoring invites bias. Authors overrate their own ideas, senior stakeholders' ideas get generous scores, and recent or vivid problems feel bigger than they are. Reduce bias by scoring evidence with objective criteria, having someone other than the author score, calibrating scores against past results periodically, and keeping the reasons for each score visible. See [[/blogs/ecommerce-experimentation-mistakes|experimentation mistakes]].",
+          "Prioritise as a group with data visible. Each idea should arrive with its hypothesis and evidence already written. Score quickly using the agreed worksheet, discuss disagreements about evidence rather than opinions, and agree the next few tests for each template. Scoring invites bias: authors overrate their own ideas, senior stakeholders' ideas get generous scores, and vivid problems feel bigger than they are. See [[/blogs/ecommerce-experimentation-mistakes|experimentation mistakes]].",
         ],
         checklist: [
-          "Author doesn't score their own idea alone",
-          "Evidence points follow fixed criteria",
+          "Every idea has a written hypothesis and evidence",
+          "Traffic check done before the meeting",
+          "Reach numbers pulled from analytics, effort estimated by the people who will build it",
+          "The author doesn't score their own idea alone",
           "Scores compared with past test outcomes each quarter",
-          "Reasons recorded next to scores",
+          "Decisions and reasons recorded next to scores",
         ],
       },
       {
@@ -620,21 +685,35 @@ export const commercePosts57: BlogPost[] = [
         checklist: [
           "Opinion-based scores that anyone can inflate",
           "Testing obvious fixes",
-          "Ignoring whether a test can reach a result",
-          "Prioritizing pages instead of templates",
+          "Scoring ideas before checking whether they can finish",
+          "Counting form fills instead of qualified leads",
+          "Prioritising pages instead of templates",
           "Only small safe tests, or only big redesigns",
-          "Never reprioritizing after results arrive",
+          "Never reprioritising after results arrive",
         ],
-        cta: {
-          title: "Ready to decide what to test next?",
-          description: "Talk to ZSpace Labs about [[/services/cro-audit|CRO audits and testing backlogs]], [[/services/ui-ux-design|test design]] and [[/services/website-development|test implementation]].",
-        },
+      },
+      {
+        heading: "Limits of any scoring system",
+        body: [
+          "A score is a conversation aid, not a forecast. The worksheet ranks ideas by how well supported and how visible they are; it does not predict effect sizes, and two ideas a point apart are effectively tied. It also cannot rescue a backlog full of weak ideas: if nothing scores well, the next step is research, not more scoring. If you need help building the evidence, our [[/services/cro-audit|CRO audit service]] page describes how we approach it.",
+        ],
+      },
+      {
+        heading: "Sources",
+        body: [
+          "[[https://www.practicalecommerce.com/Use-the-PIE-Method-to-Prioritize-Ecommerce-Tests|Chris Goward, Practical Ecommerce: Use the PIE Method to Prioritize Ecommerce Tests (12 December 2013)]]; [[https://cxl.com/blog/better-way-prioritize-ab-tests/|CXL: the PXL prioritisation framework]] (the original article; check it for the current criteria and weights, which we have not reproduced); [[https://www.evanmiller.org/ab-testing/sample-size.html|Evan Miller: sample size calculator]].",
+          "Accessed 15 October 2026. The sample size in the hypothetical example uses the standard two-proportion calculation at 95% significance and 80% power.",
+        ],
       },
       {
         heading: "Conclusion",
         body: [
-          "Prioritize by reach, evidence, impact, effort, risk and testability, using a consistent framework that rewards evidence. Fix what's broken, research what's unclear, test the rest and reprioritize as you learn. Related: [[/blogs/ecommerce-cro-testing-roadmap|CRO testing roadmap]] and [[/blogs/ecommerce-cro-audit|ecommerce CRO audit]].",
+          "Check whether each idea can finish with your traffic, sort the rest into fix, test and research, and score the tests with one worksheet your team keeps using. On lead-generation sites, weigh lead value and qualified leads, and expect more fixes and research than tests. Start by running your current backlog through Step 1; the list that survives is usually much shorter. Related: [[/blogs/ecommerce-cro-testing-roadmap|CRO testing roadmap]] and [[/blogs/ecommerce-cro-audit|ecommerce CRO audit]].",
         ],
+        cta: {
+          title: "Want your backlog scored against your own data?",
+          description: "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/cro-audit|CRO audits and testing backlogs]]. If useful, we can run your current backlog through the traffic check and worksheet with your analytics and talk through what to test, fix or research first.",
+        },
       },
     ],
   },

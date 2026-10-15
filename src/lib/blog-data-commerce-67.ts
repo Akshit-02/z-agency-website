@@ -47,7 +47,7 @@ export const commercePosts67: BlogPost[] = [
       {
         heading: "How to Use This Checklist",
         body: [
-          "Treat this as a working document: copy it, assign owners and dates, and mark items done only when verified. It complements a migration strategy ([[/blogs/ecommerce-platform-migration|ecommerce migration strategy]]) and a launch plan ([[/blogs/ecommerce-migration-launch-plan|migration launch plan]]). For moves to Shopify specifically, see [[/blogs/migrating-to-shopify-guide|Shopify migration]].",
+          "Treat this as a working document: copy it, assign owners and dates, and mark items done only when verified. It complements a migration strategy ([[/blogs/ecommerce-platform-migration|ecommerce migration strategy]]) and a launch plan ([[/blogs/ecommerce-migration-launch-plan|migration launch plan]]). For moves to Shopify specifically, see [[/blogs/migrating-to-shopify-guide|Shopify migration]]. Moving from WooCommerce specifically? [[/blogs/woocommerce-to-shopify-migration-checklist|This WooCommerce to Shopify checklist]] maps each data type and plugin.",
         ],
       },
       {
@@ -410,7 +410,7 @@ export const commercePosts67: BlogPost[] = [
       {
         heading: "Worked Example",
         body: [
-          "An illustrative scenario, not a client case: a store migrating 8,000 products finds that its export tool omits custom attributes and inactive variants. The team switches to API-based extraction, maps attributes to metafields, writes transformation scripts, loads into a development store twice with validation reports, then runs a final full load and a delta for the last day's orders during a short freeze.",
+          "An illustrative scenario, not a client case: a store migrating 8,000 products finds that its export tool omits custom attributes and inactive variants. The team switches to API-based extraction, maps attributes to metafields, writes transformation scripts, loads into a development store twice with validation reports, then runs a final full load and a delta for the last day's orders during a short freeze. For a platform-specific mapping, see [[/blogs/woocommerce-to-shopify-migration-checklist|the WooCommerce to Shopify migration checklist]].",
         ],
       },
       {

@@ -420,7 +420,7 @@ export const aiCorePosts5: BlogPost[] = [
       {
         heading: "Fit and Intent",
         body: [
-          "Qualification answers two questions. **Fit:** is this the kind of organization and person we can help and sell to? (size, industry, region, role, use case). **Intent:** are they likely to buy soon? (what they asked for, pages viewed, timing, replies). A high-fit, high-intent lead needs fast human contact; high fit and low intent suits nurture; low fit may suit self-serve or a partner.",
+          "Qualification answers two questions. **Fit:** is this the kind of organization and person we can help and sell to? (size, industry, region, role, use case). **Intent:** are they likely to buy soon? (what they asked for, pages viewed, timing, replies). A high-fit, high-intent lead needs fast human contact; high fit and low intent suits nurture; low fit may suit self-serve or a partner. Before automating scoring, agree what a qualified lead is with sales; [[/blogs/improve-website-lead-quality|this lead quality guide]] includes a definition template.",
         ],
         table: {
           headers: ["", "High intent", "Low intent"],

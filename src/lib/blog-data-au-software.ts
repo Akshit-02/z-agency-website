@@ -748,7 +748,7 @@ Decision metrics (set before launch):
         heading: "Conclusion",
         body: [
           "MVP development for Australian startups works best as a sequence of increasingly expensive tests: conversations, then prototypes, then a narrow but dependable product launched to a known cohort. Map your assumptions, build only what tests the riskiest one, measure against thresholds you set in advance, and treat funding and tax programs as things to confirm with an adviser rather than assume. If you are commissioning the phase before the MVP, see [[/blogs/software-product-discovery-australia|software product discovery]].",
-          "The aim is not to launch something small. It is to learn the right thing quickly enough to make your next decision with evidence.",
+          "The aim is not to launch something small. It is to learn the right thing quickly enough to make your next decision with evidence. For a market-neutral walk-through of scoping, see [[/blogs/saas-mvp-feature-prioritisation|what a first SaaS MVP should include]].",
         ],
         cta: {
           title: "Planning an MVP?",

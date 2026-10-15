@@ -18,27 +18,28 @@ import type { BlogPost } from "./blog-data";
 export const auSaasGrowthPosts: BlogPost[] = [
   {
     slug: "saas-pricing-page-optimization",
-    title: "SaaS Pricing Page Optimisation: Clear Plans, Honest Comparisons and Better Decisions",
-    seoTitle: "SaaS Pricing Page Optimisation: A Practical Guide",
+    title: "SaaS Pricing Page Optimisation: Clear Plans, Honest Comparisons and No Dark Patterns",
+    seoTitle: "SaaS Pricing Page Optimisation Without Dark Patterns",
     excerpt:
-      "How to improve a B2B SaaS pricing page: plan structure, value metrics, comparison tables, GST and fee clarity, FAQs and testing without fake urgency.",
+      "Improve a SaaS pricing page honestly: plan structure, value metrics, comparison tables, tax and fee clarity, trials, cancellation and dark patterns to avoid.",
     category: "CRO",
     banner: "tiers",
     sceneKind: "funnel",
     bannerAlt: "A SaaS pricing page with three plans, a clear value metric, a feature comparison table, prices with tax shown clearly, FAQs and a route to talk to sales",
     date: "2026-10-10",
-    readingTime: "5 min read",
+    updated: "2026-10-14",
+    readingTime: "10 min read",
     relatedServiceSlugs: ["cro-audit", "ui-ux-design", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "startups", "fintech", "hrtech"],
-    relatedSlugs: ["saas-onboarding-optimization", "reducing-saas-churn", "saas-product-design"],
+    relatedSlugs: ["saas-onboarding-optimization", "reducing-saas-churn", "subscription-ecommerce-cancellation-flow"],
     faqs: [
       {
         q: "How many plans should a SaaS pricing page show?",
         a: "Usually two to four, each aimed at a recognisable customer type, plus a route for larger customers. Too many plans make comparison hard; too few force very different customers into the same plan. Name plans by who they are for, and make the recommended plan clear without hiding the others.",
       },
       {
-        q: "Should Australian SaaS prices include GST?",
-        a: "Be explicit either way. B2B buyers often compare ex-GST prices, but the page should state clearly whether prices include or exclude GST and show the total at checkout. Consumer-facing prices generally need to show the total price. Rules on displaying additional charges (drip pricing) are being tightened from 1 July 2027. Get advice on your display.",
+        q: "Should SaaS prices include tax?",
+        a: "Be explicit either way. B2B buyers often compare prices before tax, but the page should say clearly whether prices include or exclude tax such as GST or VAT, and show the total before payment. Rules for consumer offers are stricter in several markets: the UK requires the full price in an invitation to purchase, for example. Get advice on your own display.",
       },
       {
         q: "Should we show prices or ask people to contact sales?",
@@ -52,13 +53,21 @@ export const auSaasGrowthPosts: BlogPost[] = [
         q: "How should we test pricing page changes?",
         a: "Test presentation (layout, plan descriptions, comparison table, FAQs) with experiments where traffic allows, and measure plan selection, trial-to-paid conversion and later retention, not just clicks. Changes to actual prices need more care: communicate with existing customers and avoid showing different prices to similar customers without a clear, fair reason.",
       },
+      {
+        q: "Is a countdown timer on a pricing page allowed?",
+        a: "A timer for a real deadline that you honour is different from a fake one that resets or an offer that never actually ends. False urgency is the risk: UK guidance bans falsely claiming a special offer will finish soon, and India's 2023 dark patterns guidelines, as reported, name false urgency. If the deadline is not real, remove the timer.",
+      },
+      {
+        q: "The US click-to-cancel rule was struck down. Do we still need easy cancellation?",
+        a: "Yes, as good practice and because other rules still apply. The FTC's amended negative option rule was vacated by a US court on 8 July 2025, but law firms note that the FTC can still act under ROSCA and its general powers, and UK and Australian subscription rules are on the way. Easy cancellation also reduces chargebacks and complaints.",
+      },
     ],
     content: [
       {
         heading: "What makes a SaaS pricing page work?",
         body: [
-          "**A good pricing page helps the right customers pick the right plan quickly: plans named for recognisable customer types, a value metric people understand, honest comparisons of what each plan includes, clear statements about tax and fees, answers to common objections, and a route to sales for complex needs.** Optimise it by removing confusion, not by adding fake urgency or hidden costs.",
-          "This guide is for SaaS founders, product marketers and designers. It covers plan structure, value metrics, comparison tables, pricing display in Australia, FAQs and testing. For what happens after sign-up, see [[/blogs/saas-onboarding-optimization|SaaS onboarding optimisation]].",
+          "**A good pricing page helps the right customers pick the right plan quickly: plans named for recognisable customer types, a value metric people understand, honest comparisons, clear statements about tax, fees and renewal, answers to common objections, and a route to sales for complex needs.** Optimise it by removing confusion, not by adding fake urgency, hidden costs or hard-to-cancel trials. Those tricks are increasingly named in consumer protection rules, and they tend to come back as chargebacks, complaints and churn.",
+          "This guide is for SaaS founders, product marketers and designers. It covers plan structure, value metrics, comparison tables, the dark patterns to avoid on pricing, trials and cancellation, how rules differ by market, FAQs and testing. For what happens after sign-up, see [[/blogs/saas-onboarding-optimization|SaaS onboarding optimisation]].",
         ],
       },
       {
@@ -68,8 +77,9 @@ export const auSaasGrowthPosts: BlogPost[] = [
           "Two to four plans aimed at recognisable customer types.",
           "A value metric customers can predict.",
           "A comparison table that highlights differences, not every feature.",
-          "Clear tax, billing period and fee information before checkout.",
-          "FAQs that answer real objections.",
+          "Currency, tax, billing period, fees and renewal terms visible before payment.",
+          "Real deadlines only; no pre-ticked add-ons; cancellation as easy as sign-up.",
+          "Check the rules in each market you sell to; several are changing in 2027.",
           "Measure plan selection and retention, not just clicks.",
         ],
       },
@@ -82,9 +92,9 @@ export const auSaasGrowthPosts: BlogPost[] = [
             ["**Plan names**", "Describe who it is for (Starter, Team, Business) rather than abstract tiers"],
             ["**Value metric**", "Seats, projects, usage: predictable and tied to value"],
             ["**Recommended plan**", "Highlighted for the most common customer, without hiding others"],
-            ["**Annual vs monthly**", "Both shown clearly; the saving stated honestly"],
+            ["**Annual vs monthly**", "Both shown clearly; the saving stated honestly; neither silently pre-selected at checkout"],
             ["**Enterprise route**", "Contact sales with what drives price (users, security, support)"],
-            ["**Free trial or plan**", "Limits and what happens at the end stated plainly"],
+            ["**Free trial or plan**", "Limits, whether a card is needed, and what happens at the end stated plainly"],
           ],
         },
       },
@@ -95,27 +105,57 @@ export const auSaasGrowthPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Pricing display in Australia",
-        body: [],
-        checklist: [
-          "State whether prices include or exclude GST, and show the total at checkout.",
-          "Show billing currency; AUD pricing reduces surprises for local buyers.",
-          "Do not add card surcharges for eftpos, Visa, Mastercard, American Express or UnionPay; surcharging on those networks ended from 1 October 2026.",
-          "Disclose any additional fees upfront. The unfair trading practices reforms add specific drip pricing rules from 1 July 2027, and online subscriptions must be cancellable online ([[https://www.allens.com.au/insights-news/insights/2026/07/australias-new-unfair-trading-practices-regime-what-businesses-need-to-know/|Allens]]).",
-          "Make renewal and cancellation terms easy to find.",
-          "Get advice on your specific pricing display; this is general information.",
+        heading: "Dark patterns to avoid on pricing, trials and cancellation",
+        body: [
+          "A dark pattern is a design that pushes people into a decision they would not otherwise make. On SaaS sites they cluster in three places: the pricing page, the trial, and the way out. The table maps common examples to an honest alternative. The last column shows where a pattern is named in rules or official guidance; it is a starting point for your own checks, not legal advice.",
         ],
+        table: {
+          headers: ["Element", "Risky version", "Honest alternative", "Where rules address it"],
+          rows: [
+            ["Countdown or \"offer ends\" banner", "A timer that resets, or an offer that never really ends", "Show a deadline only when it is real and honoured", "UK: falsely claiming an offer will finish soon is banned. India: \"false urgency\" (as reported)"],
+            ["Scarcity claims", "\"Only 3 seats left at this price\" when supply is unlimited", "Remove it; software rarely has genuine scarcity", "India: \"false urgency\" includes overstating limited availability (as reported)"],
+            ["Pre-selected extras", "Add-ons, premium support or annual billing ticked by default at checkout", "Let the buyer opt in; show the effect on the total", "India: \"basket sneaking\" and \"interface interference\" (as reported)"],
+            ["\"From\" prices", "A headline price that excludes mandatory fees shown later", "Show mandatory fees with the price, or an all-in price", "UK: full price in an invitation to purchase; CMA209 on drip pricing. India: \"drip pricing\". Australia: drip pricing rules for consumer offers from 1 July 2027 (as reported)"],
+            ["Free trial that converts", "Card required, silent conversion to paid, renewal terms buried", "State the price, the date it starts and how to cancel before the trial begins; remind before it converts", "India: \"subscription trap\" and \"SaaS billing\" (as reported). UK: subscription rules from January 2027"],
+            ["Auto-renewal", "Annual renewal with no reminder", "Send a reminder before renewal with the amount and a cancellation link", "UK: renewal reminders in the subscription regime from January 2027"],
+            ["Cancellation path", "Cancel only by phone or email, or through many retention screens", "Cancel in the same channel as sign-up, in a few clear steps", "Australia: online cancellation where sign-up is online, from 1 July 2027 (as reported). India: \"subscription trap\" (as reported)"],
+            ["Decline wording", "\"No thanks, I don't want to grow my business\"", "Neutral wording: \"No thanks\"", "India: \"confirm shaming\" (as reported)"],
+          ],
+        },
+        callout: {
+          type: "note",
+          text: "This is general information, not legal advice, and it reflects what we could check on 14 October 2026. Rules change and apply differently to consumer and business customers. Take advice for your own pricing, trials and cancellation flow. For designing the exit itself, see [[/blogs/subscription-ecommerce-cancellation-flow|cancellation flow design]].",
+        },
+      },
+      {
+        heading: "Pricing and subscription rules by market",
+        body: [
+          "Most SaaS products sell across borders, so the safest default is a page that would pass the strictest market you sell to. The rules below are the ones most relevant to pricing pages, trials and cancellation, as of 14 October 2026. Items marked as reported come from law firm summaries because we could not retrieve the official text. Selling services rather than software? See [[/blogs/should-you-show-prices-on-your-website|whether and how a service business should show prices]].",
+        ],
+        table: {
+          headers: ["Market", "What applies to pricing pages and subscriptions", "Status and source"],
+          rows: [
+            ["India", "The Central Consumer Protection Authority's Guidelines for Prevention and Regulation of Dark Patterns, 2023 apply to platforms systematically offering goods or services in India, and to advertisers and sellers. The specified patterns include false urgency, basket sneaking, confirm shaming, subscription trap, drip pricing and SaaS billing.", "Reported as notified on 30 November 2023 ([[https://www.verdictum.in/news/central-consumer-protection-authority-dark-patterns-guidelines-notification-1507072|Verdictum]]; [[https://www.scconline.com/blog/post/2023/12/04/ccpa-notifies-guidelines-for-prevention-and-regulation-of-dark-patterns-2023-legal-news/|SCC Online]]). Summaries differ on whether 12 or 13 patterns are listed; check the official text."],
+            ["UK", "Unfair commercial practices rules under the DMCC Act: an invitation to purchase must give the full price, and falsely claiming an offer will finish soon is banned. The CMA's price transparency guidance covers mandatory fees, drip pricing and partitioned pricing. A separate subscription contracts regime will require key information upfront, reminders before renewal, easier cancellation and a 14-day cooling-off period after a free trial or a long-term renewal.", "Unfair practices rules in force since 6 April 2025 ([[https://www.gov.uk/government/publications/what-businesses-need-to-know-about-unfair-commercial-practices/what-businesses-need-to-know-about-unfair-commercial-practices|GOV.UK]]). CMA209 published 18 November 2025 ([[https://www.gov.uk/government/publications/price-transparency-cma209|GOV.UK]]). Subscription rules due January 2027, per a government release of 9 August 2026 ([[https://www.gov.uk/government/news/pm-starts-roll-out-of-everyday-fixes-on-the-cost-of-living-ending-rip-off-discounts-and-subscription-traps|GOV.UK]])."],
+            ["Australia", "A new unfair trading practices regime adds a general prohibition, drip pricing rules and subscription rules, including online cancellation where sign-up is online. Law firms report that the drip pricing rules cover consumer offers and do not apply to offers made to businesses, which matters for B2B SaaS. Separately, surcharges on eftpos, Mastercard and Visa cards were removed from 1 October 2026.", "Unfair trading practices law reported to commence 1 July 2027 ([[https://www.allens.com.au/insights-news/insights/2026/07/australias-new-unfair-trading-practices-regime-what-businesses-need-to-know/|Allens]]; bill record at [[https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/Bills_Search_Results/Result?bId=r7468|Parliament of Australia]]). Surcharging change from the [[https://www.rba.gov.au/media-releases/2026/mr-26-10.html|Reserve Bank of Australia]]."],
+            ["United States", "The FTC's amended negative option (\"click-to-cancel\") rule was vacated by the Eighth Circuit on 8 July 2025, so it is not in force. The Restore Online Shoppers' Confidence Act (ROSCA) and the FTC's general powers over unfair or deceptive practices still apply, and law firms report the FTC began a new rulemaking process in 2026. State auto-renewal laws may also apply.", "Reported by law firms, e.g. [[https://www.crowell.com/en/insights/client-alerts/clicking-all-the-right-boxes-ftc-moves-to-revive-click-to-cancel-rule-following-eighth-circuit-vacatur|Crowell]]. Check the FTC's site for the current position."],
+          ],
+        },
+        callout: {
+          type: "tip",
+          text: "For every market, state the currency and whether prices include tax (GST in India and Australia, VAT in the UK) beside each price, not only at checkout. That is good practice everywhere, whatever the specific rule.",
+        },
       },
       {
         heading: "FAQs, proof and calls to action",
         body: [
-          "Use the questions sales and support actually hear: what happens if we exceed limits, can we change plans, how does billing work, where is data stored, what support is included. Use genuine customer evidence only; never invent logos, testimonials or numbers. Give each plan a clear call to action, and offer a demo or contact route for buyers who need one.",
+          "Use the questions sales and support actually hear: what happens if we exceed limits, can we change plans, how does billing work, where is data stored, what support is included, how do we cancel. Use genuine customer evidence only; never invent logos, testimonials or numbers. Give each plan a clear call to action, and offer a demo or contact route for buyers who need one.",
         ],
       },
       {
         heading: "Testing and measurement",
         body: [
-          "Measure plan selection, trial starts, trial-to-paid conversion and retention by plan. Test presentation with experiments where traffic allows, and judge by downstream retention as well as sign-ups. Price changes are different: they affect existing customers and revenue, so model them, communicate clearly and grandfather where appropriate. See [[/blogs/product-analytics-implementation-australia|product analytics implementation]] and [[/blogs/ecommerce-ab-testing|A/B testing]].",
+          "Measure plan selection, trial starts, trial-to-paid conversion and retention by plan. Test presentation with experiments where traffic allows, and judge by downstream retention as well as sign-ups. Watch refund requests, chargebacks and cancellation complaints too: a change that lifts sign-ups but raises these is not an improvement. Price changes are different: they affect existing customers and revenue, so model them, communicate clearly and grandfather where appropriate. See [[/blogs/product-analytics-implementation-australia|product analytics implementation]] and [[/blogs/ecommerce-ab-testing|A/B testing]].",
         ],
       },
       {
@@ -125,26 +165,34 @@ export const auSaasGrowthPosts: BlogPost[] = [
           "Too many plans with unclear differences.",
           "A value metric customers cannot predict.",
           "Tax and fees revealed only at checkout.",
-          "Fake countdown timers or invented discounts.",
+          "Fake countdown timers, invented discounts or false scarcity.",
+          "Annual billing or add-ons pre-selected at checkout.",
+          "A trial that converts to paid without a reminder.",
+          "Cancellation that is harder than sign-up.",
           "Judging changes by clicks instead of paid conversion and retention.",
         ],
       },
       {
         heading: "Hypothetical example: a scheduling SaaS",
         body: [
-          "**This example is hypothetical.** A rostering product had five plans priced per location, and support often fielded questions about what counted as a location and whether prices included GST. The team cut to three plans named for small teams, multi-site businesses and enterprises, switched the value metric to active staff, which customers could predict from payroll, and stated 'prices in AUD, excluding GST' beside every price. The comparison table was reduced to eight decision-driving rows with a full list behind a toggle. They tracked plan selection, trial-to-paid conversion and 90-day retention by plan before and after, and reviewed support tickets about billing.",
+          "**This example is hypothetical.** A rostering product sold in several countries had five plans priced per location, and support often fielded questions about what counted as a location and whether prices included tax. The team cut to three plans named for small teams, multi-site businesses and enterprises, switched the value metric to active staff, which customers could predict from payroll, and showed the currency and tax treatment beside every price for each market. The comparison table was reduced to eight decision-driving rows with a full list behind a toggle.",
+          "They also removed a \"launch offer ends Friday\" banner that had run for months, stopped pre-selecting annual billing, added a reminder email three days before trials convert, and made cancellation available from account settings. They tracked plan selection, trial-to-paid conversion, 90-day retention by plan and billing-related tickets before and after. No result is claimed; the example shows the method.",
         ],
       },
       {
         heading: "Pricing page review checklist",
-        body: [
-        ],
+        body: [],
         checklist: [
           "Can a new visitor say which plan fits them within a few seconds?",
           "Is the value metric defined in plain words beside the price?",
-          "Are currency, GST treatment and billing period stated beside each price?",
+          "Are currency, tax treatment and billing period stated beside each price?",
+          "Are mandatory fees included in, or shown with, the headline price?",
           "Do annual savings match the actual price difference?",
-          "Are trial limits and what happens at trial end stated?",
+          "Is every deadline, discount and scarcity claim true?",
+          "Is anything pre-selected that adds cost?",
+          "Are trial limits, card requirements and what happens at trial end stated before sign-up?",
+          "Is there a reminder before a trial converts or a plan renews?",
+          "Can customers cancel in the same channel they signed up in, in a few steps?",
           "Does the comparison table work on mobile and with a keyboard and screen reader?",
           "Do FAQs answer the top billing questions from support?",
           "Is every testimonial, logo and number genuine and approved?",
@@ -152,25 +200,41 @@ export const auSaasGrowthPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Related guides",
+        heading: "When this approach is not enough",
         body: [
+          "A clearer pricing page cannot fix a price that is wrong for the market, a value metric that does not match how customers get value, or a product that does not retain. If plan selection is healthy but trials do not convert, look at onboarding. If customers convert but leave, look at fit and retention. And if most revenue comes through sales-led deals, the pricing page matters less than the proposal and procurement process.",
         ],
+      },
+      {
+        heading: "Related guides",
+        body: [],
         checklist: [
           "[[/blogs/saas-onboarding-optimization|SaaS onboarding optimisation]] for what happens after the plan is chosen.",
           "[[/blogs/reducing-saas-churn|Reducing SaaS churn]] for pricing fit and retention.",
           "[[/blogs/subscription-ecommerce-pricing|Subscription pricing]] for consumer subscription models.",
+          "[[/blogs/subscription-ecommerce-cancellation-flow|Cancellation flow design]] for a fair way out.",
           "[[/blogs/saas-product-design|SaaS product design]] for the in-product upgrade experience.",
-          "[[/blogs/payment-gateway-integration-australia|Payment gateway integration]] for billing and surcharge rules.",
+          "[[/blogs/payment-gateway-integration-australia|Payment gateway integration]] for billing and surcharge rules in Australia.",
+        ],
+      },
+      {
+        heading: "Sources",
+        body: [
+          "UK: [[https://www.gov.uk/government/publications/what-businesses-need-to-know-about-unfair-commercial-practices/what-businesses-need-to-know-about-unfair-commercial-practices|GOV.UK: What businesses need to know about unfair commercial practices]]; [[https://www.gov.uk/government/publications/price-transparency-cma209|CMA: Price transparency (CMA209)]]; [[https://www.gov.uk/government/news/pm-starts-roll-out-of-everyday-fixes-on-the-cost-of-living-ending-rip-off-discounts-and-subscription-traps|GOV.UK press release, 9 August 2026, on subscription contract rules]].",
+          "India (law reports, not the official text): [[https://www.verdictum.in/news/central-consumer-protection-authority-dark-patterns-guidelines-notification-1507072|Verdictum on the CCPA dark patterns guidelines]]; [[https://www.scconline.com/blog/post/2023/12/04/ccpa-notifies-guidelines-for-prevention-and-regulation-of-dark-patterns-2023-legal-news/|SCC Online]].",
+          "Australia: [[https://www.allens.com.au/insights-news/insights/2026/07/australias-new-unfair-trading-practices-regime-what-businesses-need-to-know/|Allens: Australia's new unfair trading practices regime]] (law firm); [[https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/Bills_Search_Results/Result?bId=r7468|Parliament of Australia: Unfair Trading Practices Bill 2026]]; [[https://www.rba.gov.au/media-releases/2026/mr-26-10.html|Reserve Bank of Australia: Review of Merchant Card Payment Costs and Surcharging]].",
+          "United States (law firm): [[https://www.crowell.com/en/insights/client-alerts/clicking-all-the-right-boxes-ftc-moves-to-revive-click-to-cancel-rule-following-eighth-circuit-vacatur|Crowell & Moring on the vacated click-to-cancel rule]].",
+          "Accessed 14 October 2026. These rules are changing; check the current position before relying on any date or requirement.",
         ],
       },
       {
         heading: "Conclusion",
         body: [
-          "A SaaS pricing page converts better when it reduces uncertainty: clear plans, predictable metrics, honest comparisons, transparent tax and fees, and real answers. Test presentation carefully, treat price changes as business decisions, and measure retention as well as sign-ups.",
+          "A SaaS pricing page converts better when it reduces uncertainty: clear plans, predictable metrics, honest comparisons, transparent tax and fees, real deadlines and a fair way out. Start with the review checklist above, fix anything in the dark patterns table, then check the rules for each market you sell to. Test presentation carefully, treat price changes as business decisions, and measure retention as well as sign-ups.",
         ],
         cta: {
           title: "Want a second look at your pricing page?",
-          description: "ZSpace Labs is an India-based, remote-first technology studio working with Australian and international businesses on [[/services/cro-audit|conversion audits]], [[/services/ui-ux-design|SaaS design]] and [[/services/website-development|SaaS websites and billing integration]]. If it would help to review your pricing page, we are happy to talk it through.",
+          description: "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/cro-audit|conversion audits]], [[/services/ui-ux-design|SaaS design]] and [[/services/website-development|SaaS websites and billing integration]]. If useful, we can talk through your pricing page, trial and cancellation flow against the checklist above.",
         },
       },
     ],
@@ -262,6 +326,7 @@ export const auSaasGrowthPosts: BlogPost[] = [
           "**Integrations:** products embedded in daily workflows are harder to leave; see [[/blogs/saas-integration-marketplace|integration marketplaces]].",
           "**Reliability and support:** outages and unresolved tickets push customers away.",
           "**Pricing fit:** offer plans that match how smaller and larger customers use the product; see [[/blogs/saas-pricing-page-optimization|pricing page optimisation]].",
+          "For consumer mobile apps, where accounts are individuals rather than companies, see [[/blogs/improve-mobile-app-retention|how to improve mobile app retention]].",
         ],
       },
       {
@@ -686,7 +751,7 @@ export const auSaasGrowthPosts: BlogPost[] = [
         heading: "How should SaaS teams prioritise the roadmap?",
         body: [
           "**Start from a small set of product outcomes, such as activation, retention or expansion in a target segment; collect problems and evidence from customers, sales, support and usage data; score options consistently on reach, impact, confidence and effort; reserve capacity for reliability and technical debt; say no clearly; and review whether shipped work moved the outcome.** A roadmap is a set of bets on problems, not a list of promised features.",
-          "This guide is for SaaS founders, product managers and leadership teams. For the work before a roadmap, see [[/blogs/software-product-discovery-australia|software product discovery]].",
+          "This guide is for SaaS founders, product managers and leadership teams. For the work before a roadmap, see [[/blogs/software-product-discovery-australia|software product discovery]]. If you have not launched yet, start with [[/blogs/saas-mvp-feature-prioritisation|scoping a first SaaS release]].",
         ],
       },
       {

@@ -13,131 +13,220 @@ export const webDevPosts2: BlogPost[] = [
   // ----------------------------------------------------- CHOOSING AGENCY
   {
     slug: "how-to-choose-website-development-company",
-    title: "How to Choose a Website Development Company: Complete Guide",
+    title: "How to Choose a Website Development Company: Scorecard, Due-Diligence Questions and Red Flags",
+    seoTitle: "How to Choose a Website Development Company",
     excerpt:
-      "A buyer's guide covering portfolio, technical expertise, process, communication and ownership — plus the specific questions worth asking before you sign anything.",
+      "Compare web development agencies on evidence: pass/fail gates, a weighted scorecard, technical due-diligence questions, a reference-call script and red flags.",
     category: "Web Development",
     banner: "framework",
+    sceneKind: "compare",
+    bannerAlt: "An agency evaluation scorecard: pass/fail gates for ownership, named builders, a technical walkthrough, change control and acceptance, followed by weighted criteria",
     date: "2026-09-19",
-    readingTime: "13 min read",
+    updated: "2026-10-15",
+    readingTime: "15 min read",
     relatedServiceSlugs: ["website-development"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
     faqs: [
-      { q: "What's the most important factor when choosing a website development company?", a: "Relevant experience with projects similar in complexity to yours matters more than general reputation — a portfolio full of simple brochure sites doesn't predict success on a complex web application, and vice versa." },
-      { q: "Should I always choose the company with the lowest quote?", a: "No — compare what's actually included in each quote (QA, content migration, post-launch support, documentation) before assuming a lower number is better value." },
-      { q: "Do I own the code after the project is finished?", a: "This should be explicit in the contract — clarify code and IP ownership before starting, not after the project is delivered." },
-      { q: "Should a development company provide references or past work?", a: "Yes — a reputable company should be able to show relevant past work and, ideally, connect you with a past client for a reference, without you having to press hard for it." },
-      { q: "How important is a company's technology expertise?", a: "Very, if your project has specific technical requirements — ask directly about their experience with your chosen (or being-considered) stack, not just general web development experience." },
-      { q: "Should I ask about their QA process before hiring?", a: "Yes — a company with a documented QA process (device/browser testing, accessibility checks, performance verification) is meaningfully less likely to hand off a site with avoidable issues." },
-      { q: "What should a contract with a development company include?", a: "Scope, timeline, payment terms, IP and code ownership, what happens if scope changes, and what post-launch support (if any) is included." },
-      { q: "How do I know if a company will support the site after launch?", a: "Ask directly what post-launch support looks like and what it costs — don't assume it's included by default." },
-      { q: "Should I choose a local company or is remote fine?", a: "Remote work is standard and effective in website development — prioritize relevant expertise, communication quality and process over physical location." },
+      { q: "What's the most important factor when choosing a website development company?", a: "Relevant experience with projects similar in complexity to yours matters more than general reputation. A portfolio full of simple brochure sites doesn't predict success on a complex web application, and vice versa." },
+      { q: "Should I always choose the company with the lowest quote?", a: "No. Compare what's actually included in each quote (QA, content migration, post-launch support, documentation) before assuming a lower number is better value." },
+      { q: "Do I own the code after the project is finished?", a: "Only if the contract says so. Clarify code and IP ownership before starting, not after the project is delivered, and make sure the repository, domain and hosting accounts are in your name or transfer to you on a stated trigger." },
+      { q: "Should a development company provide references or past work?", a: "Yes. A reputable company should be able to show relevant past work and, ideally, connect you with a past client for a reference, without you having to press hard for it." },
+      { q: "How important is a company's technology expertise?", a: "Very, if your project has specific technical requirements. Ask directly about their experience with your chosen (or being-considered) stack, not just general web development experience." },
+      { q: "Should I ask about their QA process before hiring?", a: "Yes. A company with a documented QA process (device and browser testing, accessibility checks, performance verification) is less likely to hand off a site with avoidable issues." },
+      { q: "What should a contract with a development company include?", a: "Scope, timeline, payment terms, IP and code ownership, what happens if scope changes, how the work is accepted, and what post-launch support (if any) is included." },
+      { q: "How do I know if a company will support the site after launch?", a: "Ask directly what post-launch support looks like and what it costs. Don't assume it's included by default." },
+      { q: "Should I choose a local company or is remote fine?", a: "Remote work is standard and effective in website development. Prioritise relevant expertise, communication quality and process over physical location, and check that working hours overlap enough for decisions to happen quickly." },
+      { q: "Can I ask an agency to show me code from another client's project?", a: "You can ask, but a careful agency will protect its clients' confidentiality. Accept a walkthrough of a redacted repository, an internal project or an open-source contribution instead. What matters is that you see real pull requests, review comments and a build pipeline, not slides about them." },
+      { q: "Is software escrow worth it for a website build?", a: "Usually not, if the work lives in a repository you own and can access throughout the project. Escrow, where a third party holds the source code and releases it on events such as insolvency, matters more for licensed or hosted software you cannot hold yourself. Most information about escrow comes from escrow providers, so take legal advice on whether you need it." },
+      { q: "How many agencies should I compare?", a: "Three is usually enough to see the range without making the evaluation a project in itself. Send all of them the same written requirements so their proposals are comparable, and score them with the same scorecard." },
     ],
     relatedSlugs: ["best-web-development-agencies-in-india"],
     content: [
       {
         heading: "Quick answer",
         body: [
-          "Choosing a website development company comes down to relevant experience, technical fit, a documented process, clear communication, and explicit ownership and support terms — not just portfolio polish or the lowest quote. This guide covers what to evaluate across portfolio, expertise, process, QA, accessibility, security, pricing and contracts, plus the specific questions worth asking before signing anything. For a disclosed comparison of providers, see our shortlist of [[/blogs/best-web-development-agencies-in-india|web development companies in India]]. Hiring in the UAE? Our [[/blogs/web-development-company-dubai|guide to choosing a web development company in Dubai]] adds Arabic and RTL, UAE hosting and data protection, local payment providers and a weighted scorecard.",
+          "Choose a website development company on evidence, not on how polished the proposal looks. First apply five pass/fail gates: you will own the code and accounts, the people who will build it are named, the agency will walk you through real work, change control is written down, and so is acceptance. Then score the agencies that pass on weighted criteria: relevant delivery, technical practice, security, process and communication, contract terms, and support and exit. Ask for evidence behind each answer, call a past client, and walk away from the red flags below. For a disclosed comparison of providers, see our shortlist of [[/blogs/best-web-development-agencies-in-india|web development companies in India]].",
+          "This guide is vendor-neutral and works wherever you are hiring. For regional detail, see the guides to choosing a [[/blogs/web-development-company-australia|web development company in Australia]], a [[/blogs/web-development-company-dubai|web development company in Dubai]] or a [[/blogs/software-development-company-uae|software development company in the UAE]].",
         ],
       },
       {
-        heading: "Portfolio and Relevant Experience",
-        body: [
-          "Look past visual polish to relevance — has this company built projects similar in complexity and type to yours? A portfolio full of simple marketing sites doesn't predict success on a project with custom functionality and multiple integrations, and the reverse is also true.",
+        heading: "Key takeaways",
+        body: [],
+        checklist: [
+          "Separate gates (fail one and the agency is out) from weighted criteria (where agencies earn points).",
+          "Every answer an agency gives should come with evidence you can look at: a repository, a pipeline, a test report, a change log.",
+          "Score price separately, on the same written scope, after quality. Cheap and vague usually costs more later.",
+          "Ask the reference client what went wrong after launch, not whether they were happy.",
+          "Keep the domain, repository, hosting and analytics in your name from day one.",
         ],
       },
       {
-        heading: "Technology Expertise",
+        heading: "Before you compare: give every agency the same brief",
         body: [
-          "If your project has specific technical requirements — a particular framework, a headless CMS, a specific integration — ask directly about the team's experience with that stack. See the [[/blogs/nextjs-website-development|Next.js guide]] and [[/blogs/headless-website-development|headless website development guide]] if you're evaluating a modern technical direction.",
+          "Proposals only become comparable when every agency prices the same written scope. A short requirements document with goals, pages, features, integrations and acceptance criteria is enough; see [[/blogs/website-requirements-document|what a website requirements document should include]]. State outcomes and constraints, and let each agency propose the technology. The UK government's Digital, Data and Technology Playbook makes the same point for public buyers: \"Requirements should be drafted to be supplier or technology agnostic\", which reduces lock-in ([[https://www.gov.uk/government/publications/the-digital-data-and-technology-playbook/the-digital-data-and-technology-playbook-html|DDaT Playbook]]).",
+          "Decide early whether you are building a website or a web application. Logins, roles, stored customer data and multi-step workflows change which evidence matters; [[/blogs/custom-website-vs-web-application|this comparison of websites and web applications]] explains the difference. If you are still deciding between an agency and an individual, read [[/blogs/website-development-company-vs-freelancer|agency vs freelancer]] first.",
         ],
       },
       {
-        heading: "UX Capabilities",
+        heading: "Agency evaluation scorecard, part 1: pass/fail gates",
         body: [
-          "Development quality alone doesn't guarantee a site that's easy or effective to use — ask how UX research and design decisions are made, and whether the team has genuine UX capability rather than treating design as an afterthought to development.",
+          "The scorecard has two parts. **Part 1 is a set of gates.** An agency that fails any gate is out, however good its portfolio is, because each gate protects you from a problem that is expensive or impossible to fix after signing. **Part 2 is weighted criteria**, scored only for agencies that pass every gate.",
         ],
-      },
-      {
-        heading: "Development Process",
-        body: [
-          "A company with a clear, documented process (discovery, design, development, QA, launch) is more predictable to work with than one that can't describe how a project actually moves from kickoff to launch. See the [[/blogs/website-development-process|website development process guide]] for what a solid process should look like.",
-        ],
-        visual: { variant: "grid", accent: "blue", caption: "A clearly documented process is a reasonable proxy for how predictable — and how well-managed — a project is likely to be." },
-      },
-      {
-        heading: "SEO, Performance, Accessibility and Security",
-        body: [
-          "Ask specifically how these are handled — not just whether they're mentioned in a pitch. A company that treats them as built-in parts of development, not optional add-ons, is meaningfully less likely to hand off a site with foundational gaps. See the [[/blogs/website-performance-optimization|performance]], [[/blogs/website-accessibility-guide|accessibility]] and [[/blogs/website-security-checklist|security]] guides for what good practice actually looks like.",
-        ],
-      },
-      {
-        heading: "QA Process",
-        body: [
-          "Ask how testing works — across which devices and browsers, whether accessibility is checked, whether performance is verified before launch. A vague answer here is a real warning sign.",
-        ],
-        cta: {
-          title: "Evaluating development companies for an upcoming project?",
-          description: "ZSpace Labs can walk you through our process, technology approach and what's included at each stage before you commit to anything.",
+        table: {
+          headers: ["Gate", "Passes when", "Evidence to ask for"],
+          rows: [
+            ["**Ownership**", "You own the domain, repository, hosting and analytics accounts, or the contract transfers them on a stated trigger, and IP in the work is assigned to you on payment", "The ownership and IP clauses in the draft contract; confirmation of whose name each account will be in"],
+            ["**Named builders**", "The people who will design and build the work are named, with their role and roughly how much of their time goes to your project", "Names, roles and allocation in the proposal; a short call with the lead developer"],
+            ["**Technical walkthrough**", "The agency will show you real work: a repository, pull requests and a build pipeline, live or redacted", "A 30 to 45 minute screen-share, booked before you sign"],
+            ["**Written change control**", "There is a written process for requesting, estimating and approving changes before work starts on them", "The change-request process or template the agency actually uses"],
+            ["**Written acceptance**", "The contract says how finished work is tested and accepted, and how defects are handled", "The acceptance clause, and an example acceptance or UAT checklist"],
+          ],
+        },
+        callout: {
+          type: "tip",
+          text: "Gates are about willingness as much as paperwork. An agency that says \"we can sort ownership out at the end\" or will not show any real work before you sign has already failed.",
         },
       },
       {
-        heading: "Communication and Project Management",
+        heading: "Agency evaluation scorecard, part 2: weighted criteria",
         body: [
-          "Ask who you'll actually communicate with day to day, how often updates happen, and what tools are used for project tracking. Poor communication is one of the most common sources of frustration on website projects, regardless of technical quality.",
+          "Score each agency that passed the gates from 1 (weak) to 5 (strong) on each criterion, multiply by the weight and add up. The weights below are a starting point, not a standard: change them to suit your project, but agree them **before** you read the proposals so the scoring cannot drift towards a favourite. If several people evaluate, score separately, then discuss differences and agree one score per criterion rather than averaging.",
+          "Price is deliberately not a weighted criterion. Compare it separately, on the same scope, once you know which agencies are good enough. The DDaT Playbook says evaluation should \"focus on value over cost in order to avoid a 'race to the bottom'\" and that \"quality will be weighted higher than cost\". That guidance is written for UK central government, but the principle transfers to any buyer.",
         ],
+        table: {
+          headers: ["Criterion", "Suggested weight", "What a 5 looks like"],
+          rows: [
+            ["Relevant delivery evidence", "25%", "Several live projects of similar type and complexity, with the same people who will work on yours, and a reference client willing to talk"],
+            ["Technical practice", "20%", "Code review on every change, automated tests that run in CI, separate staging and production, documented architecture"],
+            ["Security practice", "15%", "Dependencies tracked and patched on a schedule, secrets kept out of the repository, a named approach to secure development"],
+            ["Delivery process and communication", "15%", "A clear plan with milestones, a named day-to-day contact, regular demos of working software, decisions recorded in writing"],
+            ["Commercial and contract terms", "15%", "Clear payment milestones tied to accepted work, a change process with priced impacts, a fair warranty and termination clause"],
+            ["Support and exit", "10%", "A defined support offer, handover documentation, and a credible plan for another team to take over if needed"],
+          ],
+        },
       },
       {
-        heading: "Maintenance and Ownership",
+        heading: "Technical due-diligence questions, and the evidence to ask for",
         body: [
-          "Clarify code and IP ownership explicitly, and ask what post-launch support looks like and what it costs — don't assume either is included by default. See the [[/blogs/website-maintenance-guide|maintenance guide]] for what ongoing support should realistically cover.",
+          "Ask these in the technical walkthrough, not by email. Good agencies answer by showing you something; weak ones answer with adjectives. The questions matter most for web applications, but most apply to any custom build.",
         ],
+        table: {
+          headers: ["Question", "Evidence to ask for", "What a weak answer sounds like"],
+          rows: [
+            ["Can you walk us through a repository from a comparable project?", "Branching, pull requests with review comments, a readable commit history", "\"Our code is confidential\" with no redacted or internal alternative"],
+            ["What runs automatically on every change?", "The CI pipeline configuration, plus a recent failed build and how it was fixed", "\"We test everything before release\" with nothing automated"],
+            ["How do you test?", "A recent test report; which tests are automated and which are manual", "Testing described only as \"QA at the end\""],
+            ["Who on this team has built something like this before?", "Named people, their past projects, and their time allocation to yours", "A team list that changes when you ask who exactly"],
+            ["How do you manage third-party dependencies and vulnerabilities?", "A dependency list or software bill of materials, and how often updates are applied", "\"We update when something breaks\""],
+            ["How do you handle secrets and environments?", "No credentials in the repository; separate staging and production; who has production access", "Shared passwords, or one environment for everything"],
+            ["What happens to our data during development?", "Test data or anonymised copies; production data kept off developer laptops", "\"We'll just copy the live database\""],
+            ["How are changes requested, estimated and approved?", "A redacted change log or change request from another project", "\"We're flexible\" with nothing written down"],
+            ["What do we receive at launch?", "A handover checklist covering accounts, code, documentation and credentials", "Handover described as \"we send you the files\""],
+          ],
+        },
       },
       {
-        heading: "Contracts and Pricing",
+        heading: "Using security frameworks as a question bank",
         body: [
-          "A trustworthy quote should be grounded in your specific requirements, not a generic price list — see the [[/blogs/website-development-cost|cost breakdown guide]] for the real cost drivers to compare quotes against. Review what happens if scope changes mid-project, and get payment terms and milestones in writing.",
+          "You do not need to be a security specialist to ask good security questions. Three public frameworks give you neutral wording to borrow. Use them to ask \"show me how you do this\", not to demand a certificate that most small agencies will not have.",
         ],
-      },
-      {
-        heading: "Technical Documentation",
-        body: [
-          "Ask whether the company provides documentation for the site's architecture and any custom functionality after launch — this matters significantly if you ever need to bring in a different team for future work.",
-        ],
-      },
-      {
-        heading: "Questions to Ask a Website Development Company",
-        body: ["A practical list to bring to any vendor conversation."],
         checklist: [
-          "Can you show relevant work similar in complexity to our project, and connect us with a past client?",
-          "What's your experience with our specific technology requirements?",
-          "What does your development process actually look like, stage by stage?",
-          "How do you handle SEO, performance, accessibility and security during development, not after?",
-          "What does your QA process cover, and across which devices and browsers?",
-          "Who will we communicate with day to day, and how often?",
-          "Do we own the code and IP after the project is delivered?",
-          "What does post-launch support look like, and what does it cost?",
-          "What happens if the project scope changes mid-way?",
-          "Will we receive technical documentation for the finished site?",
+          "**UK Software Security Code of Practice.** A voluntary code from the UK government and NCSC with 14 principles in four themes. Useful questions come straight from it: do you \"follow an established secure development framework\" (1.1), do you \"understand the composition of the software\" you ship (1.2), and do you \"protect the build environment against unauthorised access\" (2.1)? It is written for vendors supplying software to businesses, so treat it as a question bank for a bespoke build rather than a compliance test ([[https://www.gov.uk/government/publications/software-security-code-of-practice/software-security-code-of-practice|GOV.UK]]).",
+          "**OWASP SAMM.** The Software Assurance Maturity Model \"defines five business functions and fifteen security practices\". The most relevant to agency selection are Secure Build, Secure Deployment and Defect Management (under Implementation) and Security Testing (under Verification). Ask the agency which of these it does routinely and how ([[https://owaspsamm.org/model/|OWASP SAMM]]).",
+          "**OWASP ASVS.** The Application Security Verification Standard, currently version 5.0.0, \"provides a basis for testing web application technical security controls\". For a web application with logins or sensitive data, ask whether the agency tests against it or a similar checklist, and which requirements it treats as in scope ([[https://owasp.org/www-project-application-security-verification-standard/|OWASP ASVS]]).",
+        ],
+        callout: {
+          type: "note",
+          text: "If you are hiring in the UK, the government's former Digital Outcomes and Specialists buyer guidance (withdrawn on 31 December 2025) described a similar method: score every supplier against the same criteria using a scoring template, and agree scores as a team rather than averaging them. It is no longer current guidance, but the method still works for private buyers.",
+        },
+      },
+      {
+        heading: "A reference-call script",
+        body: [
+          "Ask the agency for a past client whose project resembled yours, then book 20 minutes. Ask open questions and listen for specifics; \"they were great\" tells you little. Take notes against the same questions for every agency.",
+        ],
+        checklist: [
+          "\"What did they build for you, and how similar was it to what we're planning?\"",
+          "\"Were the people who did the work the same people who pitched to you?\"",
+          "\"When the scope changed, how was it handled and priced? Were there any surprises on the invoice?\"",
+          "\"What broke after launch, and how quickly and willingly did they fix it?\"",
+          "\"Do you have full access to your code, hosting, domain and analytics today, without asking them?\"",
+          "\"How did they deliver bad news, such as a delay or a problem they had caused?\"",
+          "\"Would you hire them again for the same kind of project? What would you do differently?\"",
+        ],
+        callout: {
+          type: "tip",
+          text: "The agency chooses its references, so expect positive answers. The useful signal is in the detail: how changes were priced, what broke and who owns the accounts now.",
+        },
+      },
+      {
+        heading: "Red flags, and what to do about each",
+        body: [
+          "One red flag is not always disqualifying, but each should get a direct question and a written answer before you sign.",
+        ],
+        table: {
+          headers: ["Red flag", "Why it matters", "What to do"],
+          rows: [
+            ["No repository access until final payment", "You cannot check progress or quality, and you depend on the agency to release your own work", "Require access from the first commit; tie IP transfer, not access, to payment"],
+            ["Domain, hosting or analytics registered in the agency's name", "Moving supplier later becomes a negotiation", "Create the accounts yourself and grant access; see the [[/blogs/software-vendor-handover-checklist|vendor handover checklist]]"],
+            ["\"Unlimited revisions\" with no change process", "Changes get absorbed until they don't, then arrive as a dispute or a cut corner", "Ask for the written change process and an example change request"],
+            ["A firm fixed price for a web app after a single call", "The agency cannot know the scope yet, so the risk is priced in or pushed back to you later", "Ask for paid discovery first; see [[/blogs/technical-discovery-software-projects|technical discovery]]"],
+            ["No named developers, or a team that changes after signing", "The pitch team may not be the build team", "Name key people in the contract and agree how replacements are approved"],
+            ["Refuses any technical walkthrough or trial", "You are buying on trust alone", "Treat it as a failed gate"],
+            ["Portfolio links that are dead or cannot be attributed", "You cannot verify what they actually built", "Ask which parts they built and speak to that client"],
+            ["Vague answers on testing, security or acceptance", "These gaps surface after launch, when they cost most", "Ask for evidence from the due-diligence table above"],
+          ],
+        },
+      },
+      {
+        heading: "Contracts, pricing models and scope changes",
+        body: [
+          "The contract model changes who carries which risk. A fixed price suits a well-defined scope; time and materials suits work where you will learn as you go; many projects combine the two, with discovery first. See [[/blogs/fixed-price-vs-time-and-materials|fixed price vs time and materials]] for how to choose and which clauses to insist on. Whatever the model, budgets usually overrun through unmanaged changes rather than bad estimates, so read [[/blogs/scope-creep-software-projects|how to control scope creep]] before kickoff. For what drives quotes up or down, see the [[/blogs/website-development-cost|website development cost guide]].",
+          "At minimum, the contract should cover scope (by reference to your requirements document), milestones and payment tied to accepted work, the change process, IP assignment, account ownership, acceptance and defect handling, warranty, support, confidentiality and data protection, and how either side can exit. Take legal advice in your jurisdiction; IP and data rules differ, which is why the regional guides linked above go into local detail.",
+        ],
+      },
+      {
+        heading: "Hypothetical example: three proposals, one scorecard",
+        body: [
+          "**This example is hypothetical.** A founder needs a customer portal with logins, a CRM integration and an admin area, and sends the same requirements document to three agencies.",
+          "**Agency A** has the most impressive portfolio but registers hosting in its own name and will not show any code before signing. It fails two gates and is out. **Agency B** passes the gates and shows a pipeline with automated tests and reviewed pull requests, but its portfolio is mostly marketing sites; it scores 3 on relevant delivery and 5 on technical practice. **Agency C** passes, has built two similar portals with the named lead developer, and its reference client confirms the same team delivered; it scores 5 and 4 on those criteria.",
+          "With weights agreed in advance, C comes out ahead of B. Only then does the founder compare the two prices on the same scope, and asks B why its estimate for the integration is so much lower before deciding.",
+        ],
+      },
+      {
+        heading: "What else to check",
+        body: [
+          "**Process and QA.** Ask how a project moves from kickoff to launch and how testing works across devices, browsers and accessibility. The [[/blogs/website-development-process|website development process guide]] shows what a solid process looks like, and the [[/blogs/website-performance-optimization|performance]], [[/blogs/website-accessibility-guide|accessibility]] and [[/blogs/website-security-checklist|security]] guides describe good practice to compare answers against.",
+          "**UX capability.** Development quality alone does not make a site easy to use. Ask how design decisions are made and who does the research.",
+          "**Support and documentation.** Ask what post-launch support covers and costs, and whether you will receive documentation good enough for a different team to take over. See the [[/blogs/website-maintenance-guide|maintenance guide]] for what ongoing support should realistically include.",
+          "**Specialist builds.** For an online store, use the [[/blogs/how-to-choose-a-shopify-development-agency|guide to choosing a Shopify agency]]; for an app, see [[/blogs/how-to-choose-a-mobile-app-development-company|how to choose a mobile app development company]].",
         ],
         table: webDevFrameworkTable,
-        cta: {
-          title: "Ready to talk through your specific project requirements?",
-          description: "See the [[/blogs/website-development-guide|complete website development guide]] for the full picture before your first vendor conversation. Learn more about our [[/services/website-development|Next.js and React development work]].",
-        },
       },
       {
-        heading: "Red Flags Worth Taking Seriously",
+        heading: "When this scorecard is overkill",
         body: [
-          "Vague answers about process or QA, reluctance to share past client references, pricing with no connection to your actual requirements, and no clarity on code ownership are all worth treating as real warning signs, not minor details to sort out later.",
+          "For a small brochure site built on a standard CMS theme, a full technical walkthrough and weighted scoring is more effort than the risk justifies. Keep the ownership and acceptance gates, look at two or three comparable live sites and make one reference call. The scorecard earns its time on web applications, integrations, stored personal data, or any project where switching supplier halfway would be painful.",
+          "It also cannot tell you whether your idea is right. If you are unsure what to build, spend on discovery or prototyping before you spend on agency selection.",
+        ],
+      },
+      {
+        heading: "Sources",
+        body: [
+          "UK government: [[https://www.gov.uk/government/publications/software-security-code-of-practice/software-security-code-of-practice|Software Security Code of Practice (DSIT and NCSC, voluntary; updated 15 January 2026)]]; [[https://www.gov.uk/government/publications/the-digital-data-and-technology-playbook/the-digital-data-and-technology-playbook-html|The Digital, Data and Technology Playbook (updated 20 June 2023)]]; [[https://www.gov.uk/guidance/how-to-evaluate-digital-outcomes-and-specialists-suppliers|How to evaluate Digital Outcomes and Specialists suppliers (withdrawn 31 December 2025; cited as historical)]].",
+          "OWASP: [[https://owaspsamm.org/model/|Software Assurance Maturity Model (SAMM)]]; [[https://owasp.org/www-project-application-security-verification-standard/|Application Security Verification Standard (ASVS) 5.0.0]].",
+          "Accessed 15 October 2026. Guidance and frameworks are updated from time to time; check the current versions.",
         ],
       },
       {
         heading: "Conclusion",
         body: [
-          "Choosing a website development company is a due-diligence process, not a gut-feel decision — relevant experience, a documented process, clear communication and explicit ownership terms are what separate a smooth project from a frustrating one. Use the questions above as a starting checklist for any vendor conversation. Hiring in Australia? See [[/blogs/web-development-company-australia|how to choose a web development company in Australia]]. For larger custom builds commissioned from the UK, see [[/blogs/custom-software-development-uk|our UK custom software buyer's guide]].",
+          "Choosing a website development company is due diligence, not a gut-feel decision. Send every agency the same brief, remove anyone who fails a gate, score the rest with weights you set in advance, ask for evidence behind every claim, call a past client and compare price last. Keep the accounts in your name from the start. For the bigger picture before your first vendor conversation, see the [[/blogs/website-development-guide|complete website development guide]], and for larger UK custom builds, [[/blogs/custom-software-development-uk|our UK custom software buyer's guide]].",
         ],
+        cta: {
+          title: "Want a second opinion on a proposal?",
+          description: "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/website-development|website and web application development]]. If useful, we can walk you through a real repository and our delivery process, or talk through a proposal you have received against the scorecard above.",
+        },
       },
     ],
   },
@@ -145,136 +234,260 @@ export const webDevPosts2: BlogPost[] = [
   // ------------------------------------------------------ REQUIREMENTS DOC
   {
     slug: "website-requirements-document",
-    title: "Website Requirements Document: What Should It Include?",
+    title: "Website and Web App Requirements Document: What to Include (With Template)",
+    seoTitle: "Website Requirements Document: What to Include",
     excerpt:
-      "A practical checklist for the document that defines a website project's scope — objectives, pages, features, integrations, content and acceptance criteria.",
+      "What a website or web app requirements document should include: a permissions matrix, integration register, testable requirements and a copyable template.",
     category: "Web Development",
     banner: "reqchecklist",
+    sceneKind: "roadmap",
+    bannerAlt: "A requirements document checklist covering goals, pages, user roles, integrations, non-functional requirements and acceptance criteria before agencies quote",
     date: "2026-09-19",
-    readingTime: "11 min read",
-    relatedServiceSlugs: ["website-development"],
+    updated: "2026-10-14",
+    readingTime: "13 min read",
+    relatedServiceSlugs: ["website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
+    relatedSlugs: ["product-requirements-document", "custom-website-vs-web-application", "technical-discovery-software-projects"],
     faqs: [
-      { q: "What is a website requirements document?", a: "A structured document defining a website project's business objectives, audience, pages, features, integrations, content needs and acceptance criteria — the shared reference both the client and development team work from." },
-      { q: "Who should write the requirements document?", a: "Ideally a collaboration — the business provides goals, audience and content direction; the development team translates that into technical requirements and identifies gaps or open questions." },
-      { q: "Do I need a requirements document for a small website?", a: "Yes, even a lightweight version — a short, clear requirements document for a five-page site still prevents the most common source of scope disputes: misaligned expectations." },
-      { q: "What happens if I skip the requirements document?", a: "Scope tends to drift, feedback cycles get longer, and disagreements about what was actually agreed on become more likely — this is one of the most common, avoidable causes of project delay and cost overrun." },
-      { q: "Should the requirements document include design direction?", a: "It can include high-level direction (brand guidelines, examples of admired sites) but detailed visual design typically comes later, informed by the requirements rather than specified within them." },
-      { q: "How detailed should acceptance criteria be?", a: "Specific enough that both sides can objectively agree whether a feature is \"done\" — vague criteria like \"the site should work well\" lead to disputes; specific criteria like \"the contact form sends a confirmation email within 30 seconds\" don't." },
-      { q: "Should the requirements document be updated during the project?", a: "Yes, if scope genuinely changes — but changes should be deliberate and agreed on, not quietly absorbed without updating the shared reference both sides are working from." },
-      { q: "Does a requirements document replace a project plan or timeline?", a: "No — it defines what's being built; the [[/blogs/website-development-project-planning|project planning guide]] and [[/blogs/website-development-timeline|timeline guide]] cover how and when it gets built." },
+      { q: "What is a website requirements document?", a: "A structured document defining a website project's business objectives, audience, pages, features, user roles, integrations, content needs, non-functional requirements and acceptance criteria. It is the shared reference that both the client and the development team work from, and the document agencies quote against." },
+      { q: "Who should write the requirements document?", a: "Ideally both sides. The business provides goals, audience, content direction, rules and priorities; the development team translates that into technical requirements and identifies gaps or open questions. The founder should own the final version." },
+      { q: "Do I need a requirements document for a small website?", a: "Yes, even a lightweight version. Two or three pages covering goals, a page list, forms and integrations, and how you will accept the work still prevents the most common source of scope disputes: misaligned expectations." },
+      { q: "What happens if I skip the requirements document?", a: "Scope tends to drift, quotes cannot be compared, feedback cycles get longer, and disagreements about what was agreed become more likely. It is one of the most common and most avoidable causes of project delay and cost overrun." },
+      { q: "Should the requirements document include design direction?", a: "It can include high-level direction, such as brand guidelines and examples of sites you admire, but detailed visual design usually comes later, informed by the requirements rather than specified within them." },
+      { q: "How detailed should acceptance criteria be?", a: "Specific enough that both sides can objectively agree whether a feature is done. \"The site should work well\" invites disputes; \"the contact form sends a confirmation email within 30 seconds\" does not." },
+      { q: "Should the requirements document be updated during the project?", a: "Yes, if scope genuinely changes. Changes should be deliberate, agreed and recorded with a version number, not quietly absorbed without updating the reference both sides are working from." },
+      { q: "Does a requirements document replace a project plan or timeline?", a: "No. It defines what is being built; the [[/blogs/website-development-project-planning|project planning guide]] and [[/blogs/website-development-timeline|timeline guide]] cover how and when it gets built." },
+      { q: "Should I specify the framework, CMS or hosting provider?", a: "Only if you have a genuine constraint, such as an existing platform your team already runs, a security policy or a hosting region you must use. Otherwise state the outcome you need and ask each agency to propose and justify its technology. Naming a stack too early can rule out better options or commit you to one you do not need." },
+      { q: "What is a roles and permissions matrix?", a: "A table with user roles down one side and actions across the top (view, create, edit, approve, export, delete), with each cell saying whether that role can do it, and on which records. It turns a vague line such as \"admins can manage everything\" into something a developer can build and a tester can check." },
     ],
     content: [
       {
-        heading: "Quick answer",
+        heading: "What should a website requirements document include?",
         body: [
-          "A website requirements document defines a project's scope in enough detail for both the business and the development team to agree on what's actually being built — business objectives, target audience, pages, features, user roles, integrations, content, SEO, analytics, security, accessibility, performance, supported browsers and devices, and acceptance criteria. Skipping or rushing this document is one of the most common, avoidable causes of scope drift and disputed expectations later in a project.",
+          "**A good requirements document states what the site or app must achieve, for whom, and how you will know each part is done. For a website, that means objectives, audience, a page list, features, forms, integrations, content and CMS needs, analytics events, non-functional requirements (performance, accessibility, security, browsers) and acceptance criteria. A web app adds a roles and permissions matrix, data records, an integration register with direction and timing, notifications, admin tools, data migration, audit logging and environments.** Every requirement should be testable, and the document should say what is out of scope.",
+          "This guide is for founders and managers briefing agencies or freelancers before asking for quotes. It updates our earlier checklist with a permissions matrix, an integration register, measurable non-functional requirements, an untestable-to-testable rewrite table and a copyable two-tier template.",
         ],
       },
       {
-        heading: "Why This Document Matters More Than It Seems",
-        body: [
-          "Most costly website project disputes trace back to a gap between what the client assumed was included and what the development team actually scoped. A clear, shared requirements document closes that gap before development starts, when it's still cheap to resolve — not after, when it's expensive.",
-        ],
-      },
-      {
-        heading: "Business Objectives",
-        body: [
-          "What is this website actually supposed to achieve for the business — leads, sales, brand credibility, a self-service tool for customers? Every other requirement should trace back to this, and it's worth stating explicitly rather than assuming it's obvious.",
-        ],
-      },
-      {
-        heading: "Target Audience",
-        body: [
-          "Who is the site actually built for — their needs, technical comfort, and what they're trying to accomplish. This shapes everything from navigation structure to content tone to which devices matter most for testing.",
-        ],
-      },
-      {
-        heading: "Pages and Sitemap",
-        body: [
-          "A list of the pages the site needs, and how they relate to each other — this becomes the basis for the information architecture and sitemap developed in planning. See the [[/blogs/website-development-project-planning|project planning guide]] for how this connects to the broader planning process.",
-        ],
-        visual: { variant: "grid", accent: "orange", caption: "A clear pages list, even before final design, is what turns a vague site idea into something both sides can actually scope and estimate." },
-      },
-      {
-        heading: "Features and Functionality",
-        body: [
-          "Every piece of custom functionality beyond standard content pages — search, filtering, booking, user accounts, dashboards — should be listed and described specifically enough to estimate. Vague functionality descriptions are a common source of scope disputes later.",
-        ],
-      },
-      {
-        heading: "User Roles",
-        body: [
-          "If the site has different types of users (admin, customer, editor), define what each role can see and do. This directly affects back-end architecture and shouldn't be left as an afterthought discovered mid-development.",
-        ],
-      },
-      {
-        heading: "Integrations",
-        body: [
-          "List every system the site needs to connect to — CRM, payment processor, email platform, analytics, internal tools — and what data needs to flow in which direction. See the [[/blogs/website-api-integration|API integration guide]] for what this actually involves technically.",
-        ],
-        cta: {
-          title: "Need help defining requirements before you approach vendors?",
-          description: "ZSpace Labs can help translate business goals into a clear, technically grounded requirements document before development starts.",
-        },
-      },
-      {
-        heading: "CMS and Content",
-        body: [
-          "Specify who needs to edit content after launch, how often, and what kind of content (text, images, structured data like products) — this determines whether a CMS is needed and, if so, what kind.",
-        ],
-      },
-      {
-        heading: "SEO and Analytics",
-        body: [
-          "Note any existing SEO equity that needs to be preserved (for a redesign or migration), target keywords or topics if known, and what needs to be tracked in analytics — key conversion events, not just page views.",
-        ],
-      },
-      {
-        heading: "Security, Accessibility and Performance Requirements",
-        body: [
-          "State any specific requirements here explicitly — a particular compliance need, an accessibility conformance target, or a performance benchmark — rather than assuming these are handled by default without being scoped.",
-        ],
-      },
-      {
-        heading: "Browsers and Devices",
-        body: [
-          "Specify which browsers and devices genuinely need to be supported, based on your actual audience data where available, rather than testing against an arbitrary, overly broad list that adds unnecessary QA time.",
-        ],
-      },
-      {
-        heading: "Acceptance Criteria",
-        body: [
-          "Define what \"done\" means for each major feature, specifically enough that both sides can objectively agree whether it's met — \"the contact form sends a confirmation email within 30 seconds\" rather than \"the contact form should work well.\"",
-        ],
-      },
-      {
-        heading: "Website Requirements Checklist",
-        body: ["A practical checklist to work through when drafting the document."],
+        heading: "Key takeaways",
+        body: [],
         checklist: [
-          "Business objectives stated explicitly, not assumed",
-          "Target audience and their primary needs defined",
-          "Full page list and how pages relate to each other",
-          "Every custom feature described specifically enough to estimate",
-          "User roles and permissions defined, if applicable",
-          "Every required integration listed, with data direction noted",
-          "CMS and content-editing needs specified",
-          "SEO and analytics requirements noted",
-          "Security, accessibility and performance requirements stated explicitly",
-          "Supported browsers and devices defined based on real audience data",
-          "Acceptance criteria written for every major feature",
+          "Agencies can only give comparable quotes if they price the same written scope.",
+          "Decide the business rules yourself; let the agency propose the technology.",
+          "Write each requirement so a tester could prove it passed or failed.",
+          "Web apps need a permissions matrix and an integration register; brochure sites rarely do.",
+          "Say what is out of scope. Unlisted items are where most change requests come from.",
         ],
-        table: webDevFrameworkTable,
-        cta: {
-          title: "Ready to move from requirements to a full project plan?",
-          description: "See the [[/blogs/website-development-project-planning|website project planning guide]] for the next step after requirements are defined. See how we approach [[/services/website-development|website development]].",
+      },
+      {
+        heading: "Which document is this, and which do you need?",
+        body: [
+          "This is the pre-vendor scope brief: the document you send to agencies so they can estimate and so you can accept the finished work. It is not a feature-level product spec. Once you have a team, individual features are usually specified in more depth; see [[/blogs/product-requirements-document|how to write a product requirements document]] for that later stage, and [[/blogs/technical-discovery-software-projects|technical discovery]] for the work an agency does to firm up estimates.",
+          "If you are not sure whether you are building a website or a web application, settle that first. Logins, stored customer data, roles and multi-step workflows change the size of the document and of the project; [[/blogs/custom-website-vs-web-application|this comparison of custom websites and web applications]] explains the difference.",
+        ],
+      },
+      {
+        heading: "What you decide and what the agency proposes",
+        body: [
+          "Founders often over-specify the technology and under-specify the business rules. The split below keeps you in charge of the decisions only you can make, and leaves agencies room to compete on how they solve them.",
+        ],
+        table: {
+          headers: ["Area", "You decide", "The agency proposes"],
+          rows: [
+            ["Goals and audience", "Business objectives, primary users, priority journeys", "How the structure and UX support them"],
+            ["Scope", "Must-have, should-have and out-of-scope lists", "Phasing, and what to cut if the budget is tight"],
+            ["Business rules", "Who can do what, approval steps, pricing and booking rules", "How the rules are modelled and enforced"],
+            ["Data", "Which records exist, who owns them, retention needs", "Database design and storage"],
+            ["Integrations", "Which systems, what data, which system is the source of record", "Integration method, sync timing, error handling"],
+            ["Quality targets", "The thresholds you need (speed, availability, accessibility level)", "How they will be met and measured"],
+            ["Technology", "Hard constraints only (existing platform, hosting region, security policy)", "Framework, CMS, hosting and tooling, with reasons"],
+            ["Acceptance", "What done means for each requirement", "The test approach and evidence they will provide"],
+          ],
         },
+      },
+      {
+        heading: "The core sections, with what to write",
+        body: [
+          "These are the sections from our original checklist, each with the level of detail that makes it quotable. For a five-page site, a sentence or two per section is enough; for a web app, most will grow into lists.",
+        ],
+        table: {
+          headers: ["Section", "What to write", "Example"],
+          rows: [
+            ["Business objectives", "What the site must achieve, stated explicitly", "Generate qualified demo requests from operations managers"],
+            ["Audience", "Who it is for, what they are trying to do, which devices matter", "Mostly mobile visitors comparing providers"],
+            ["Pages and sitemap", "Every page or template and how they relate", "Home, 4 service pages, case-study template, blog, contact"],
+            ["Features", "Every function beyond content pages, specific enough to estimate", "Search across services and articles, filter by industry"],
+            ["User roles", "Each type of user and what they can see and do", "See the permissions matrix below"],
+            ["Integrations", "Every connected system and the data that flows", "See the integration register below"],
+            ["CMS and content", "Who edits what, how often, and who writes the launch content", "Marketing team edits pages and posts weekly; we supply all copy"],
+            ["SEO and analytics", "Existing URLs to preserve, and the events to track", "Redirect all current URLs; track form submits and booking starts"],
+            ["Non-functional", "Measurable targets for speed, accessibility, security, availability", "See the non-functional table below"],
+            ["Browsers and devices", "The list, based on your own audience data where available", "Latest two versions of the main browsers; iOS and Android phones"],
+            ["Acceptance criteria", "What done means for each major feature", "Contact form sends a confirmation email within 30 seconds"],
+            ["Out of scope", "What is deliberately not included", "No multilingual content in phase 1"],
+          ],
+        },
+      },
+      {
+        heading: "Roles and permissions matrix",
+        body: [
+          "If anyone logs in, write a matrix. List roles down the side and actions across the top, and say which records each permission applies to. \"Own\" and \"team\" matter as much as yes or no, because they decide how data is filtered and are a common source of security bugs. The example below is for a hypothetical client portal.",
+        ],
+        table: {
+          headers: ["Role", "View", "Create", "Edit", "Approve", "Export", "Delete"],
+          rows: [
+            ["Customer", "Own records", "Own requests", "Own requests until submitted", "No", "Own invoices (PDF)", "No"],
+            ["Account manager", "Assigned customers", "Requests for assigned customers", "Assigned customers", "Up to a set value", "Assigned customers (CSV)", "No"],
+            ["Operations admin", "All", "All", "All", "Any value", "All", "Draft requests only"],
+            ["Finance", "Invoices and payments", "Credit notes", "Invoice status", "Refunds", "All finance data", "No"],
+            ["Super admin", "All", "Users and roles", "Users and roles", "No", "Audit log", "Users (deactivate, not delete)"],
+          ],
+        },
+        callout: { type: "tip", text: "Add a row for what happens when someone leaves: who reassigns their records, and whether accounts are deactivated rather than deleted so the history stays intact." },
+      },
+      {
+        heading: "Integration register",
+        body: [
+          "\"Integrates with our CRM\" can mean a one-off export or a two-way live sync with conflict rules, and the effort differs widely. A register forces the questions that drive the estimate. Fill in one row per connection; if you do not know an answer, write \"unknown\" so the agency can flag it rather than assume. For how these factors affect effort, see [[/blogs/api-integration-development-cost|how to estimate API integration cost]], and for the technical basics, [[/blogs/website-api-integration|how website API integrations work]].",
+        ],
+        table: {
+          headers: ["System", "Data", "Direction", "Trigger", "Frequency", "Source of record", "If it fails", "Owner"],
+          rows: [
+            ["CRM", "New enquiries, contact details", "Site to CRM", "Form submitted", "Immediately", "CRM", "Queue and retry; alert sales ops", "Sales ops"],
+            ["Payment provider", "Payments, refunds", "Both ways", "Checkout; provider webhook", "Immediately", "Payment provider", "Show a pending status; reconcile daily", "Finance"],
+            ["Accounting", "Invoices", "App to accounting", "Invoice issued", "Hourly batch", "Accounting system", "Retry; daily mismatch report", "Finance"],
+            ["Email platform", "Marketing consent", "Site to platform", "Consent ticked", "Immediately", "Email platform", "Retry; never send without consent", "Marketing"],
+          ],
+        },
+      },
+      {
+        heading: "Non-functional requirements you can measure",
+        body: [
+          "Non-functional requirements describe how well the system works rather than what it does. \"Fast\", \"secure\" and \"scalable\" cannot be tested. Write each one as a measurable statement with a method of checking it. The numbers below are placeholders: choose them from your own traffic, audience and risk, or ask the agency to propose them with reasons.",
+        ],
+        table: {
+          headers: ["Area", "Testable format", "How it is checked"],
+          rows: [
+            ["Page speed", "Key templates meet [target] for Largest Contentful Paint on a mid-range phone", "Lab tests before launch; field data after launch"],
+            ["Accessibility", "Meets WCAG 2.2 Level AA on the sampled pages and journeys", "Automated scan plus manual keyboard and screen reader testing"],
+            ["Availability", "Available [X]% of each month, excluding announced maintenance", "Uptime monitoring report"],
+            ["Capacity", "Handles [N] concurrent users on the booking flow without errors", "Load test on a staging copy"],
+            ["Security", "No open high-severity findings at launch; reviewed against the OWASP Top 10", "Security scan and review report"],
+            ["Data recovery", "Backups every [period]; restore tested to within [time]", "A documented test restore"],
+            ["Browsers and devices", "Works on the agreed browser and device list", "Test log against the list"],
+            ["Data retention", "Enquiries deleted after [period] unless converted to customers", "Scheduled job and spot check"],
+          ],
+        },
+      },
+      {
+        heading: "Rewriting untestable requirements",
+        body: [
+          "ISO/IEC/IEEE 29148 is the international standard for requirements engineering processes and the documents they produce. Published summaries of it describe the qualities a well-formed requirement should have; among them, each requirement should be unambiguous, singular (one thing per statement), feasible and verifiable. The GOV.UK Service Manual makes the same point in plainer language: acceptance criteria are often written as a list beginning \"it's done when…\", and user stories name who the user is, what they need and why ([[https://www.gov.uk/service-manual/agile-delivery/writing-user-stories|GOV.UK: writing user stories]]).",
+          "Run your draft through this table. If a requirement could not fail a test, rewrite it.",
+        ],
+        table: {
+          headers: ["Untestable", "Testable rewrite"],
+          rows: [
+            ["The site should be fast", "Home and service templates meet the agreed Largest Contentful Paint target on a mid-range phone"],
+            ["Easy to update", "A marketing user can publish a new case study, with images, without developer help; it's done when one is published during acceptance"],
+            ["Users can manage their account", "A customer can change their email, password and billing address; it's done when each change is confirmed by email"],
+            ["Admins can see everything", "Operations admins can view all bookings, filtered by date, status and location (see permissions matrix)"],
+            ["Integrates with our CRM", "Each enquiry creates or updates a CRM contact within 5 minutes; failures retry and alert sales ops"],
+            ["Mobile friendly", "All pages work without horizontal scrolling on the agreed device list"],
+            ["Secure", "Admin accounts require multi-factor authentication; sessions expire after the agreed idle time"],
+            ["Accessible", "Meets WCAG 2.2 AA on the sampled pages and journeys, with an audit report"],
+            ["Good SEO", "Every current URL redirects to its closest new page with a permanent redirect; titles and meta descriptions are editable"],
+            ["Reports for management", "A monthly CSV of bookings by location and status can be downloaded by finance and super admins"],
+          ],
+        },
+      },
+      {
+        heading: "Copyable template: website, plus web app extras",
+        body: [
+          "Copy the sections that apply. **Tier 1** covers a marketing or content website. **Tier 2** adds the sections a web app with logins, records and workflows needs. Number every requirement (for example R-12) so quotes, test notes and change requests can refer to it.",
+          "**Tier 1: website**",
+        ],
+        checklist: [
+          "Document control: version, date, author, approver.",
+          "Background: the business, the problem, why now.",
+          "Objectives: two to five measurable business goals.",
+          "Audience: primary users, their main tasks, key devices.",
+          "Pages and templates: full list with a sitemap.",
+          "Features: numbered, each with acceptance criteria (\"it's done when…\").",
+          "Forms: fields, validation, where submissions go, confirmation messages.",
+          "Content: who writes, supplies and migrates it; CMS editing needs.",
+          "Integrations: the register table.",
+          "SEO and analytics: URLs to preserve, redirect needs, events to track.",
+          "Non-functional requirements: the measurable table.",
+          "Browsers and devices: the supported list.",
+          "Out of scope, assumptions and open questions.",
+          "Priorities: must, should, could, won't.",
+          "Acceptance and handover: how sign-off works; accounts, code and documentation you will receive.",
+        ],
+      },
+      {
+        heading: "Tier 2: extra sections for a web app",
+        body: [
+          "Add these to Tier 1 when people log in, data is stored or work moves through steps. Agencies tend to price these sections very differently, so they matter most for comparable quotes.",
+        ],
+        checklist: [
+          "Roles and permissions matrix, including what happens when a user leaves.",
+          "Data records: the main entities (customer, booking, invoice), key fields, who owns each, retention.",
+          "Workflows and statuses: each step, who moves an item on, and what triggers notifications.",
+          "Notifications: email, SMS or in-app; the trigger, recipient and content for each.",
+          "Admin and back-office tools: what staff manage without a developer.",
+          "Reporting and exports: who needs which figures, how often, in what format.",
+          "Audit log: which actions are recorded, with who and when.",
+          "Data migration: what comes from the old system, how much, and who cleans it.",
+          "Environments: development, staging and production; who can deploy.",
+          "Privacy and legal: personal data collected, consent, where data is hosted, deletion requests.",
+          "Support after launch: response expectations and who owns hosting and monitoring.",
+        ],
+      },
+      {
+        heading: "Hypothetical example: two quotes that finally match",
+        body: [
+          "**Hypothetical example:** a training company sends a one-page brief asking for \"a website with a booking system and CRM integration\". One agency quotes for a booking form that emails staff; another quotes for a booking app with payments, waitlists and a two-way CRM sync. Neither is wrong, and the quotes cannot be compared.",
+          "The company rewrites the brief using the template. The permissions matrix shows three roles (learner, trainer, admin). The integration register shows that bookings go one way to the CRM within minutes and payments come from the payment provider's webhooks. Waitlists move to \"could have\". Re-quoted against the same document, the two agencies now differ mainly on approach and team, which is the comparison the company wanted to make.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        body: [],
+        checklist: [
+          "Describing solutions (\"use a headless CMS\") instead of needs (\"marketing publishes daily without developers\").",
+          "Leaving out admin, reporting and back-office needs, which are often a large share of a web app.",
+          "Writing \"integrates with X\" without direction, timing or source of record.",
+          "No out-of-scope list, so every assumption becomes a dispute.",
+          "Adjectives as requirements: fast, secure, intuitive, scalable.",
+          "Forgetting content: who writes it and who loads it.",
+          "Not versioning the document, so nobody knows which draft was quoted.",
+          "Once the build starts, the baseline only helps if changes go through a process; see [[/blogs/scope-creep-software-projects|how to control scope creep during delivery]].",
+        ],
+      },
+      {
+        heading: "When a long document is the wrong tool",
+        body: [
+          "A detailed specification is not always the best path. If the product is new and the main risk is whether anyone wants it, a short brief plus a paid discovery phase or prototype may teach you more than pages of requirements written in advance; see [[/blogs/saas-mvp-feature-prioritisation|how to prioritise an MVP]]. Detail also goes stale: in an agile build, keep the scope brief stable and let feature detail evolve in the backlog, with acceptance criteria written just before each item is built.",
+          "The document also cannot fix an unclear decision. If two stakeholders disagree about who can approve refunds, writing both versions down is useful, but someone still has to decide before the agency can estimate.",
+        ],
+      },
+      {
+        heading: "Sources",
+        body: [
+          "[[https://www.gov.uk/service-manual/agile-delivery/writing-user-stories|GOV.UK Service Manual: writing user stories]] (last updated 23 May 2016); [[https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs|GOV.UK Service Manual: learning about users and their needs]]; [[https://www.iso.org/standard/72089.html|ISO/IEC/IEEE 29148:2018, Requirements engineering]] (catalogue page; the standard's text is paid, so it is described here only at a high level from published summaries); [[https://www.w3.org/TR/WCAG22/|W3C: Web Content Accessibility Guidelines (WCAG) 2.2]]; [[https://top10.owasp.org/2025|OWASP Top 10:2025]].",
+          "Accessed 14 October 2026.",
+        ],
       },
       {
         heading: "Conclusion",
         body: [
-          "A requirements document isn't bureaucratic overhead — it's the single artifact most likely to prevent scope disputes, missed features and misaligned expectations later in a project. Even a lightweight version for a small site pays for itself many times over in avoided rework. For software products rather than websites, see [[/blogs/product-requirements-document|product requirements documents]].",
+          "A requirements document is the cheapest point in a project to find disagreements. Decide the goals, rules and priorities yourself, write each requirement so it can be tested, add a permissions matrix and an integration register if anyone logs in, and list what is out of scope. Then send the same version to every agency and compare their quotes against it. When you are ready for the next step, the [[/blogs/website-development-project-planning|website project planning guide]] covers sequencing, and our [[/services/website-development|website and web app development]] page explains how we work.",
         ],
+        cta: {
+          title: "Get a scope reviewed",
+          description: "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/website-development|websites and web applications]]. If useful, send us your draft requirements and we can talk through the gaps and open questions before you go to agencies.",
+        },
       },
     ],
   },
@@ -430,112 +643,162 @@ export const webDevPosts2: BlogPost[] = [
   // ------------------------------------------------------ REDESIGN VS REBUILD
   {
     slug: "website-redesign-vs-rebuild",
-    title: "Website Redesign vs. Website Rebuild: What's the Difference and Which Do You Need?",
+    title: "Website Redesign, Rebuild or Staged Modernisation: Which Do You Need?",
     seoTitle: "Website Redesign vs Rebuild: Which Do You Need?",
     excerpt:
-      "Distinguishing redesign, rebuild and incremental improvement — and a practical framework for deciding which approach actually fits your situation.",
+      "Redesign, rebuild or modernise a legacy website in stages? A decision table, a five-stage roadmap and how to handle URLs, PHP end of life and SEO risk.",
     category: "Web Development",
     banner: "decisiontree",
+    sceneKind: "compare",
+    bannerAlt: "A decision tree choosing between a website redesign, a full rebuild and staged modernisation based on whether the problems are visual, technical or isolated",
     date: "2026-09-20",
-    readingTime: "11 min read",
+    updated: "2026-10-14",
+    readingTime: "10 min read",
     relatedServiceSlugs: ["website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
+    relatedSlugs: ["strangler-fig-pattern", "website-migration-guide", "website-replatforming"],
     faqs: [
-      { q: "What's the difference between a redesign and a rebuild?", a: "A redesign changes the visual design and often the UX, typically keeping the underlying technical architecture. A rebuild replaces the underlying technical foundation — sometimes with a visual redesign alongside it, sometimes without." },
-      { q: "Can I redesign without rebuilding?", a: "Yes — if the existing technical architecture is sound and the problems are primarily visual, UX or content-related, a redesign on the existing foundation can be the right, lower-cost choice." },
-      { q: "When is a full rebuild actually necessary?", a: "When the underlying technical architecture itself is the constraint — significant technical debt, an outgrown CMS or platform, fundamental performance or scalability limits that a visual redesign can't fix." },
-      { q: "Is incremental improvement always safer than a full redesign or rebuild?", a: "Not always — incremental changes work well for isolated problems, but a site with many compounding issues can sometimes be more efficiently addressed with a coordinated redesign or rebuild than a long series of small fixes." },
-      { q: "Does a rebuild always require an SEO risk?", a: "There's inherent risk in any URL or architecture change, but it's manageable with proper redirect planning and technical SEO discipline during migration — not a reason to avoid a rebuild when it's genuinely needed." },
-      { q: "How do I know if my problems are design problems or technical problems?", a: "Design and UX problems typically show up as usability complaints, weak conversion, or an outdated look; technical problems show up as slow performance, difficulty adding features, or a CMS the team has outgrown. Often both are present together." },
-      { q: "Should I migrate content during a rebuild?", a: "Yes, deliberately — content migration and redirect mapping should be planned explicitly, not treated as an afterthought once the new site is otherwise ready." },
-      { q: "How does this decision affect existing integrations?", a: "A rebuild often requires re-implementing integrations on the new architecture — this should be scoped explicitly as part of rebuild planning, not discovered mid-project." },
+      { q: "What's the difference between a redesign and a rebuild?", a: "A redesign changes the visual design and often the UX, typically keeping the underlying technical architecture. A rebuild replaces the underlying technical foundation, sometimes with a visual redesign alongside it and sometimes without." },
+      { q: "Can I redesign without rebuilding?", a: "Yes. If the existing technical architecture is sound and the problems are mainly visual, UX or content-related, a redesign on the existing foundation can be the right, lower-cost choice." },
+      { q: "When is a full rebuild actually necessary?", a: "When the underlying technical architecture itself is the constraint: significant technical debt, an outgrown CMS or platform, or performance and scalability limits that a visual redesign cannot fix. It is also worth considering when the site is small enough that staging the work would cost more than replacing it." },
+      { q: "Is incremental improvement always safer than a full redesign or rebuild?", a: "Not always. Incremental changes work well for isolated problems, but a site with many compounding issues can sometimes be addressed more efficiently with a coordinated redesign or rebuild than a long series of small fixes." },
+      { q: "Does a rebuild always carry SEO risk?", a: "Any change of URLs or architecture carries some risk, and Google says to expect temporary ranking fluctuation during a site move. The risk is manageable with a complete redirect map and careful technical SEO during the migration, so it is not a reason to avoid a rebuild that is genuinely needed." },
+      { q: "How do I know if my problems are design problems or technical problems?", a: "Design and UX problems typically show up as usability complaints, weak conversion or an outdated look. Technical problems show up as slow performance, difficulty adding features, or a CMS the team has outgrown. Often both are present." },
+      { q: "Should I migrate content during a rebuild?", a: "Yes, deliberately. Content migration and redirect mapping should be planned explicitly, not treated as an afterthought once the new site is otherwise ready." },
+      { q: "How does this decision affect existing integrations?", a: "A rebuild often requires re-implementing integrations on the new architecture. Scope this explicitly as part of rebuild planning rather than discovering it mid-project." },
+      { q: "Will my site stop working when PHP 8.2 reaches end of life?", a: "No. The site will keep running, but PHP 8.2 stops receiving security fixes from the PHP project after 31 December 2026, according to php.net. Any newly found vulnerability in that version will then go unpatched upstream, so plan an upgrade to a supported version and check that your themes, plugins and custom code are compatible." },
+      { q: "Can we change our URLs one section at a time?", a: "For small and medium sites, Google recommends moving all URLs at the same time rather than section by section. You can still rebuild the back end in stages while keeping the existing URLs, then make any URL changes in one planned cutover." },
     ],
     content: [
       {
         heading: "Quick answer",
         body: [
-          "A redesign changes a website's visual design and UX while generally keeping its underlying technical foundation; a rebuild replaces that technical foundation itself, sometimes alongside a visual redesign and sometimes without one; incremental improvement makes smaller, targeted changes without either. The right approach depends on whether your site's problems are primarily visual and UX-related, or rooted in the underlying architecture, CMS or technical debt itself.",
+          "**A redesign changes a website's visual design and UX while generally keeping its technical foundation; a rebuild replaces that foundation, sometimes with a redesign alongside; incremental improvement makes smaller, targeted changes. For a legacy site whose platform is the problem but which still earns traffic or leads, there is a fourth option: modernise in stages. Stabilise it, upgrade in place, rebuild section by section behind the existing URLs, change URLs once if you must, then switch off the old system.** The right approach depends on whether the problems are visual, architectural or isolated, how large the site is, and whether the current platform can still be kept secure.",
         ],
       },
       {
-        heading: "Three Distinct Approaches",
+        heading: "Key takeaways",
+        body: [],
+        checklist: [
+          "Diagnose first: visual and UX problems point to a redesign; platform and architecture problems point to a rebuild.",
+          "Staged modernisation lowers risk for sites with real traffic and many integrations, but it runs two systems for a while.",
+          "Stage the back end, not the URL change. Google recommends moving all URLs at once for small and medium sites.",
+          "PHP 8.2 reaches end of life on 31 December 2026, which makes this a good time to check your runtime.",
+          "Small, simple sites are often better rebuilt in one go.",
+        ],
+      },
+      {
+        heading: "Three distinct approaches",
         body: [
-          "These terms get used loosely and interchangeably, which causes real confusion when planning a project. Being precise about which one you actually need avoids either overpaying for a full rebuild when a redesign would solve the problem, or underinvesting in a redesign when the real constraint is technical.",
+          "These terms get used loosely, which causes real confusion when planning a project. Being precise avoids overpaying for a full rebuild when a redesign would solve the problem, or underinvesting in a redesign when the real constraint is technical.",
+          "**A redesign** updates visual design, often UX and information architecture, and sometimes content, while the underlying technology, CMS and core architecture stay in place. It fits when the problems are about how the site looks and is used, not what it is built on.",
+          "**A rebuild** replaces the technical foundation: the framework, CMS, hosting architecture or all three. It may include a redesign or keep the existing look. It fits when the current foundation is itself the constraint.",
+          "**Incremental improvement** makes targeted changes, such as improving a specific page, fixing a performance bottleneck or updating one flow. It works when problems are isolated rather than pervasive.",
         ],
+        visual: { variant: "grid", accent: "orange", caption: "A redesign changes what visitors see; a rebuild changes what the site is built on. They are independent decisions, not a single combined choice." },
       },
       {
-        heading: "What a Redesign Actually Changes",
-        body: [
-          "A redesign updates visual design, often UX and information architecture, and sometimes content — while the underlying technology, CMS and core architecture generally stay in place. This is the right scope when the site's problems are primarily about how it looks and how it's used, not fundamentally about what it's built on.",
-        ],
-      },
-      {
-        heading: "What a Rebuild Actually Changes",
-        body: [
-          "A rebuild replaces the underlying technical foundation — the framework, CMS, hosting architecture, or all three — sometimes with a visual redesign included, sometimes preserving the existing visual direction while changing what's underneath it. This is the right scope when the current technical foundation is itself the constraint.",
-        ],
-        visual: { variant: "grid", accent: "orange", caption: "A redesign changes what visitors see; a rebuild changes what the site is actually built on — the two are independent decisions, not a single combined choice." },
-      },
-      {
-        heading: "What Incremental Improvement Looks Like",
-        body: [
-          "Targeted changes — improving a specific page, fixing a specific performance bottleneck, updating a specific flow — without a full redesign or rebuild. This works well when problems are isolated rather than pervasive across the site.",
-        ],
-      },
-      {
-        heading: "The Decision Framework",
+        heading: "The decision framework",
         body: [],
         table: {
           headers: ["Symptom", "Likely need"],
           rows: [
             ["Outdated look, but the site works fine technically", "Redesign"],
             ["Poor UX or navigation, technical foundation is sound", "Redesign"],
-            ["Slow performance rooted in the platform or architecture itself", "Rebuild"],
-            ["CMS the team has clearly outgrown", "Rebuild"],
-            ["Significant technical debt blocking new features", "Rebuild"],
+            ["Slow performance rooted in the platform or architecture itself", "Rebuild, possibly staged"],
+            ["CMS the team has clearly outgrown", "Rebuild, possibly staged"],
+            ["Significant technical debt blocking new features", "Rebuild, possibly staged"],
+            ["Unsupported runtime or CMS that can still be upgraded", "Upgrade in place first, then decide"],
             ["One or two specific pages or flows underperforming", "Incremental improvement"],
             ["Both an outdated look and a limiting technical foundation", "Rebuild, often with a redesign included"],
           ],
         },
       },
       {
-        heading: "Design Problems vs. Technical Problems",
+        heading: "Design problems vs technical problems",
         body: [
-          "Design and UX problems typically show up as usability complaints, weak conversion, or a visually dated feel. Technical problems show up as slow performance the design can't fix, difficulty adding new features, or a CMS that's become a genuine bottleneck for the team. It's common for both to be present at once — a site that's both visually outdated and technically constrained — which usually points toward a rebuild that includes a redesign.",
+          "Design and UX problems typically show up as usability complaints, weak conversion or a visually dated feel. Technical problems show up as slow performance the design cannot fix, difficulty adding features, or a CMS that has become a bottleneck for the team. Both are often present at once, which usually points towards a rebuild that includes a redesign. For the symptoms in more detail, see [[/blogs/when-does-your-website-need-a-redesign|signs your website needs a redesign]].",
+          "Technical debt, the shortcuts and workarounds accumulated over time, is a common reason a site feels hard to maintain even when it does not look broken. If every new feature takes disproportionately long, or the team routinely works around platform limits, that points to a rebuild rather than a surface redesign.",
         ],
-        cta: {
-          title: "Not sure which category your website actually falls into?",
-          description: "ZSpace Labs can assess your current site and give you an honest read on whether you need a redesign, a rebuild, or targeted improvements.",
+      },
+      {
+        heading: "Modernising a legacy website in stages",
+        body: [
+          "Martin Fowler's [[https://martinfowler.com/bliki/StranglerFigApplication.html|strangler fig article]] describes replacing a legacy system gradually: new components take over pieces of the old one until it can be retired. His view is that \"the reduced risk and earlier value from the gradual approach outweigh its costs\". Our [[/blogs/strangler-fig-pattern|guide to the strangler fig pattern]] covers it for software systems; the roadmap below applies it to a business website.",
+          "The key adjustment for websites comes from Google's guidance on site moves. For small and medium sites, Google recommends \"moving all URLs on your site simultaneously instead of moving one section at a time\"; larger sites can move by section ([[https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes|Google Search Central]]). So stage the back end, not the URL change: rebuild piece by piece behind the URLs you already have, and make any URL changes in one planned cutover.",
+        ],
+        table: {
+          headers: ["Stage", "What happens", "Done when"],
+          rows: [
+            ["1. Stabilise", "Take full backups and test a restore. Inventory pages, URLs, forms, plugins, integrations and scheduled jobs. Record a baseline from analytics and Search Console. Check the PHP, CMS and plugin versions against their support dates and apply security updates.", "You can restore the site, you know everything it does, and known vulnerabilities are patched"],
+            ["2. Upgrade in place", "Move to a supported PHP version and current CMS core. Remove dead plugins and replace abandoned ones. If changing hosts, keep URLs identical (a move without URL changes).", "The site runs on supported software with no visible change to visitors"],
+            ["3. Rebuild section by section", "Put a routing layer (a reverse proxy, CDN or edge routing rules) in front of the site. Build one section, such as the blog or pricing pages, on the new stack and route its existing URLs to it. Repeat until the old system serves nothing important.", "Each section is live on the new stack under its existing URLs, with analytics and forms working"],
+            ["4. One URL cutover", "If you must change URL structure or domain, do it once: map every old URL to its new one, use permanent (301 or 308) redirects, update internal links and sitemaps.", "Every old URL returns a permanent redirect to the right page"],
+            ["5. Decommission", "Once the old system receives no traffic, switch it off. Remove its credentials, DNS records, plugins and licences, and archive a final backup.", "Nothing depends on the old system and it is no longer reachable"],
+          ],
         },
       },
       {
-        heading: "Technical Debt and Architecture",
+        heading: "What each stage needs to get right",
         body: [
-          "Technical debt — shortcuts and workarounds accumulated over time — is a common, underlying reason a site feels hard to maintain even when it doesn't look obviously broken. If every new feature takes disproportionately long to build, or the team routinely works around platform limitations, that's a signal pointing toward a rebuild rather than a surface-level redesign.",
+          "**Stabilise.** PHP 8.2 receives security fixes only until 31 December 2026; 8.3 is supported until 31 December 2027, 8.4 until 31 December 2028 and 8.5 until 31 December 2029 ([[https://www.php.net/supported-versions.php|php.net]]). WordPress recommends PHP 8.3 or greater, and says older versions it still runs on \"have reached their official End Of Life and may expose your site to security vulnerabilities\" ([[https://wordpress.org/about/requirements/|WordPress requirements]]). These dates can change, so check both pages when you plan.",
+          "**Upgrade in place.** Test on a staging copy first: older themes, plugins and custom code are the usual cause of breakage after a PHP upgrade. For a hosting move that keeps the same URLs, Google's guidance on [[https://developers.google.com/search/docs/crawling-indexing/site-move-no-url-changes|moving a site without URL changes]] advises lowering DNS TTL in advance, keeping Search Console verification working and shutting down the old host only when its traffic has dropped to zero.",
+          "**Rebuild section by section.** The routing layer is the mechanism that lets two systems share one domain: requests for /blog go to the new stack, everything else to the old one. Keep a shared header, footer, cookie consent and analytics configuration so visitors and reports see one site. Start with a section that is valuable but self-contained, not checkout or login.",
+          "**One URL cutover.** Google says to keep redirects \"for as long as possible, generally at least 1 year\", to \"expect temporary fluctuation in site ranking during the move\", and that a small to medium site \"can take a few weeks for most pages to move\". The [[/blogs/website-migration-guide|SEO-safe website migration guide]] covers the redirect map and launch checks in detail.",
+          "**Decommission.** Old systems left running are easy to forget and hard to secure. Switch them off deliberately and record what was removed.",
         ],
       },
       {
-        heading: "SEO Risk and Migration",
-        body: [
-          "Any URL or architecture change carries SEO risk, but it's manageable with careful redirect mapping and technical SEO discipline during the migration — not a reason to avoid a necessary rebuild. Plan this explicitly as part of the project, not as an afterthought once the new site is otherwise ready.",
-        ],
-      },
-      {
-        heading: "Content and Integration Migration",
-        body: [
-          "A rebuild often requires migrating existing content and re-implementing integrations on the new architecture — both should be scoped explicitly during planning. See the [[/blogs/website-requirements-document|requirements document guide]] for how to capture this scope clearly.",
-        ],
-        table: webDevFrameworkTable,
-        cta: {
-          title: "Planning a redesign or rebuild and want it scoped properly?",
-          description: "See the [[/blogs/when-does-your-website-need-a-redesign|signs your website needs a redesign guide]] for a deeper look at the specific symptoms worth diagnosing first. Learn more about our [[/services/website-development|Next.js and React development work]].",
+        heading: "Stage it or rebuild in one go?",
+        body: [],
+        table: {
+          headers: ["Factor", "Favours staged modernisation", "Favours a single rebuild"],
+          rows: [
+            ["Site size", "Many sections and templates", "A handful of pages"],
+            ["Revenue or leads from the site", "Significant and continuous", "Low, or tolerant of a short disruption"],
+            ["Integrations", "Several, each with its own risk", "Few or none"],
+            ["Current platform", "Can be upgraded and kept secure meanwhile", "Cannot be patched or upgraded safely"],
+            ["Team capacity", "Can run two systems and a routing layer", "Small team, wants one system to look after"],
+            ["Design change", "Mainly technical; the look can change later", "A full brand and UX overhaul anyway"],
+          ],
         },
+        callout: { type: "note", text: "Rebuild now, rather than stage, when the runtime or CMS cannot be upgraded to a supported version, when the CMS cannot model your content without workarounds, or when the team cannot deploy changes safely at all." },
+      },
+      {
+        heading: "When staged modernisation is not the right call",
+        body: [
+          "Staging has real costs. You run and pay for two systems, the routing layer is another component to configure and monitor, and design consistency is harder while old and new sections sit side by side. For a small brochure site, those costs usually outweigh the benefit; a planned rebuild with one cutover is simpler. Staging also does not help if the old platform has an unpatched security problem that cannot wait; contain that first.",
+          "Finally, a staged plan can stall halfway, leaving you maintaining both systems indefinitely. Give each stage an owner and a date, and treat decommissioning as part of the project, not an optional extra.",
+        ],
+      },
+      {
+        heading: "Hypothetical example: a services firm on old WordPress",
+        body: [
+          "**Hypothetical example:** a professional services firm runs a WordPress site on PHP 8.2 with a custom theme, a booking plugin no longer maintained and a blog that brings in most of its enquiries. In stage 1 it backs up, inventories 400 URLs and finds three unused plugins. In stage 2 it upgrades PHP and WordPress on staging, replaces the abandoned booking plugin and goes live with no visible change. In stage 3 it rebuilds the service pages on a new stack behind the existing URLs, then the blog. Because the URL structure stays the same, there is no URL cutover. Once the old WordPress install serves nothing, it is switched off and its accounts removed.",
+        ],
+      },
+      {
+        heading: "Content, integrations and SEO in any rebuild",
+        body: [
+          "Whichever route you choose, a rebuild usually means migrating content and re-implementing integrations on the new architecture. Scope both during planning; the [[/blogs/website-requirements-document|requirements document guide]] shows how to capture integrations and acceptance criteria. Any change of URLs or architecture carries SEO risk, which is manageable with a complete redirect map and careful checks during the migration. If the constraint is the platform itself, the [[/blogs/website-replatforming|website replatforming guide]] covers moving to a new CMS or platform.",
+        ],
+      },
+      {
+        heading: "Sources",
+        body: [
+          "[[https://martinfowler.com/bliki/StranglerFigApplication.html|Martin Fowler: Strangler Fig Application (22 August 2024)]]; [[https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes|Google Search Central: site moves with URL changes (last updated 20 August 2026)]]; [[https://developers.google.com/search/docs/crawling-indexing/site-move-no-url-changes|Google Search Central: moving a site without URL changes]]; [[https://www.php.net/supported-versions.php|PHP: supported versions]]; [[https://wordpress.org/about/requirements/|WordPress: hosting requirements]].",
+          "Accessed 14 October 2026. Support dates and recommendations change; check the current pages before planning.",
+        ],
       },
       {
         heading: "Conclusion",
         body: [
-          "Redesign, rebuild and incremental improvement solve different problems — being precise about which one your site actually needs, based on whether the constraint is visual, technical, or isolated, is what keeps the project scoped correctly instead of over- or under-investing relative to the real problem. If the constraint turns out to be the platform itself, the [[/blogs/website-replatforming|website replatforming guide]] and the [[/blogs/website-migration-guide|SEO-safe migration guide]] cover the next steps.",
+          "Redesign, rebuild, incremental improvement and staged modernisation solve different problems. Diagnose whether your constraint is visual, technical or isolated; check your runtime and CMS against their support dates; and if the platform needs replacing on a site that earns its keep, consider rebuilding in stages behind your existing URLs, with any URL change made once. Next steps: run stage 1 (backups, inventory, version check) whatever you decide, because it informs every option. Our [[/services/website-development|website development]] page explains how we approach rebuilds.",
         ],
+        cta: {
+          title: "Get a staged modernisation plan",
+          description: "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/website-development|website rebuilds and modernisation]]. If useful, we can talk through whether your current site should be redesigned, upgraded in place, rebuilt in stages or replaced.",
+        },
       },
     ],
   },

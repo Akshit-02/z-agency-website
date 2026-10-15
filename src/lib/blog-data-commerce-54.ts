@@ -615,7 +615,7 @@ export const commercePosts54: BlogPost[] = [
       {
         heading: "Why the Numbers Disagree",
         body: [
-          "Marketers often see total attributed conversions across ad platforms exceed actual orders. Each platform counts conversions it touched using its own rules, so the same order can be claimed several times.",
+          "Marketers often see total attributed conversions across ad platforms exceed actual orders. Each platform counts conversions it touched using its own rules, so the same order can be claimed several times. For Shopify stores, [[/blogs/shopify-analytics-tracking-audit|the Shopify tracking audit]] explains why Shopify, GA4 and Meta report different sales and how to test each source.",
         ],
         table: {
           headers: ["Source", "What it sees", "Typical bias"],
@@ -742,7 +742,7 @@ export const commercePosts54: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Ecommerce attribution is a set of views, not one answer. Build clean tracking, choose a primary view, add surveys, and test the largest budgets for incrementality. Use attribution for trends and experiments for causal decisions. Related: [[/blogs/ecommerce-customer-journey-analytics|customer journey analytics]] and [[/blogs/ecommerce-analytics|ecommerce analytics]].",
-          "AI assistants add new routes into the store: referred visits, Google's AI features inside organic search and orders placed through assistants. How to measure each and compare them with organic search is covered in [[/blogs/ai-commerce-analytics|how to track AI-referred ecommerce sales]].",
+          "AI assistants add new routes into the store: referred visits, Google's AI features inside organic search and orders placed through assistants. How to measure each and compare them with organic search is covered in [[/blogs/ai-commerce-analytics|how to track AI-referred ecommerce sales]]. For lead-generation and B2B businesses, where the sale closes offline, see [[/blogs/measure-multi-channel-website-conversions|measuring conversions across channels]].",
         ],
       },
     ],

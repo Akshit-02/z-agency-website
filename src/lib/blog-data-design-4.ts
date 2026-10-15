@@ -24,7 +24,7 @@ export const designPosts4: BlogPost[] = [
       { q: "What are the main steps of a UX audit?", a: "Goals and scope, user and task definition, quantitative evidence, qualitative evidence, expert review, user testing, issue logging, severity rating, prioritization, recommendations, reporting and follow-up testing." },
       { q: "How do you write a UX audit report?", a: "Lead with a short summary of the most important problems and what to do first. Then explain scope and method, present the top findings with evidence, include the full issue log, separate quick wins from larger changes, note what already works well, and propose a sequence of fixes." },
       { q: "Can you do a UX audit without user testing?", a: "Yes. Many audits combine expert review with analytics, session recordings and support data. Without testing you'll know where problems occur and often why, but user testing gives stronger evidence for the most important or disputed issues." },
-      { q: "How many people should run a UX audit?", a: "Heuristic reviews find more problems when several evaluators work independently. Nielsen Norman Group recommends three to five evaluators for a heuristic evaluation. A single reviewer can still run a useful audit, but expect some issues to be missed." },
+      { q: "How many people should run a UX audit?", a: "Heuristic reviews find more problems when several evaluators work independently. Nielsen Norman Group's [[https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/|heuristic evaluation guide]] says that ideally three to five people should evaluate the same interface independently. A single reviewer can still run a useful audit, but expect some issues to be missed." },
       { q: "What tools do you need for a UX audit?", a: "Access to your analytics, a session recording or heatmap tool if you have one, support and feedback data, accessibility checkers such as axe or Lighthouse, PageSpeed Insights for performance data, a spreadsheet or board for the issue log, and a testing platform if you run remote tests." },
       { q: "How do you prioritize UX audit findings?", a: "Rate each issue's severity, estimate how many users it affects and what it costs the business, then weigh that against the effort to fix and your confidence in the evidence. Severe, widespread and cheap fixes go first." },
       { q: "What is the difference between a UX audit and a heuristic evaluation?", a: "A heuristic evaluation is one method: experts inspect an interface against usability principles. A UX audit is broader and usually includes heuristic evaluation alongside analytics, user feedback, testing, accessibility and performance checks." },
@@ -109,7 +109,7 @@ export const designPosts4: BlogPost[] = [
       {
         heading: "Step 5: Run the Expert Review",
         body: [
-          "Start with a [[/blogs/ux-heuristic-evaluation|heuristic evaluation]]: review each key task against an established set of usability principles, usually Nielsen's 10 heuristics, and note every violation. Several evaluators working independently find more problems than one, so combine their findings afterwards.",
+          "Start with a [[/blogs/ux-heuristic-evaluation|heuristic evaluation]]: review each key task against an established set of usability principles, usually [[https://www.nngroup.com/articles/ten-usability-heuristics/|Nielsen's 10 usability heuristics]], and note every violation. Several evaluators working independently find more problems than one, so combine their findings afterwards; Nielsen Norman Group's [[https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/|guide to conducting a heuristic evaluation]] covers the method in detail.",
           "Then make a second pass area by area. Heuristics are broad; this pass makes sure specific parts of the experience get looked at deliberately.",
         ],
         table: {
@@ -168,8 +168,8 @@ export const designPosts4: BlogPost[] = [
       {
         heading: "Step 8: Rate Severity",
         body: [
-          "Rate every issue on one scale so that problems found by different methods can be compared. A widely used option is Jakob Nielsen's 0 to 4 severity scale, which combines how often a problem occurs, how badly it affects users when it does, and whether it persists once users know about it.",
-          "Rate after the review sessions, not during them, and have evaluators rate independently before agreeing a final score. Nielsen Norman Group notes that evaluators give weaker ratings while they're focused on finding problems.",
+          "Rate every issue on one scale so that problems found by different methods can be compared. A widely used option is Jakob Nielsen's 0 to 4 [[https://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/|severity rating scale]], which combines how often a problem occurs, how badly it affects users when it does, and whether it persists once users know about it.",
+          "Rate after the review sessions, not during them, and have evaluators rate independently before agreeing a final score. Nielsen Norman Group notes that evaluators give weaker ratings while they're focused on finding problems, and that one evaluator's ratings alone are too unreliable to trust, while the average of three evaluators' ratings is good enough for many practical purposes.",
         ],
         table: {
           headers: ["Rating", "Meaning", "Typical action"],
@@ -228,6 +228,31 @@ export const designPosts4: BlogPost[] = [
         ],
       },
       {
+        heading: "What You Should Receive",
+        body: [
+          "Whether you run the audit in-house or hire someone, use this table to check the output before signing it off. It turns the steps above into a list of deliverables, what a good version looks like and the warning signs of a weak one.",
+        ],
+        table: {
+          headers: ["Deliverable", "What good looks like", "Red flag"],
+          rows: [
+            ["Audit brief", "One page: the business question, journeys, devices, audiences, evidence used and what is out of scope", "No stated goal, or scope agreed only verbally"],
+            ["Task list", "Ranked key tasks with entry points and devices, used throughout the audit", "Findings organised by page or team rather than by user task"],
+            ["Evidence summary", "Funnel drop-offs, feedback themes and a note on tracking quality", "Analytics quoted without checking the tracking works"],
+            ["Issue log", "One row per issue with location, task, evidence, principle, severity, reach, recommendation and owner", "A slide deck of screenshots with no log behind it"],
+            ["Severity ratings", "One named scale, rated after review and by more than one evaluator where possible", "Everything rated \"high\", or no scale at all"],
+            ["Prioritised plan", "Fix now, plan, validate and monitor buckets, with quick wins listed separately", "An unranked list of every possible improvement"],
+            ["Recommendations", "Specific changes: what, where and how success will be measured", "\"Improve the checkout\" or redesign mock-ups with no link to a finding"],
+            ["What works well", "Strengths to keep, so a redesign does not remove them", "Only problems, so the team cannot tell what to protect"],
+            ["Method and limits", "Which methods were used and which findings rest on expert judgement alone", "No mention of whether users were tested"],
+            ["Readout and retest plan", "A walkthrough with stakeholders, baselines for key tasks and a date to re-measure", "A file sent by email with no follow-up"],
+          ],
+        },
+        callout: {
+          type: "tip",
+          text: "A sample issue-log row, using the step 7 fields: \"UX-014 Delivery cost hidden until payment step | Checkout, mobile | Complete a purchase | Shipping cost first appears on the final step | Session recordings show exits at that step; a test participant said she felt tricked | Visibility of system status | 3 (major) | Every mobile checkout | Show estimated delivery cost in the cart | Small; front-end team\". The content is illustrative.",
+        },
+      },
+      {
         heading: "Step 12: Follow Up and Retest",
         body: [
           "An audit is only finished when the fixes are measured. Record baseline numbers for each key task before changes ship, then compare afterwards. Retest the same tasks with users to confirm the problem is gone and nothing new was introduced. Where traffic allows, measure bigger changes with [[/blogs/shopify-ab-testing|A/B testing]].",
@@ -280,7 +305,7 @@ export const designPosts4: BlogPost[] = [
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
     faqs: [
       { q: "What is a heuristic evaluation in UX?", a: "An inspection method in which usability specialists review an interface against a set of recognized usability principles, called heuristics, and record where the design violates them. It finds likely usability problems without involving users." },
-      { q: "How many evaluators do you need?", a: "Nielsen Norman Group recommends three to five evaluators working independently, because each evaluator misses problems that others find." },
+      { q: "How many evaluators do you need?", a: "Nielsen Norman Group's guide to conducting a heuristic evaluation says that ideally three to five people should evaluate the same interface independently, because each evaluator misses problems that others find." },
       { q: "What are Nielsen's 10 usability heuristics?", a: "Visibility of system status; match between system and the real world; user control and freedom; consistency and standards; error prevention; recognition rather than recall; flexibility and efficiency of use; aesthetic and minimalist design; help users recognize, diagnose and recover from errors; and help and documentation." },
       { q: "What is the difference between heuristic evaluation and usability testing?", a: "Heuristic evaluation is done by experts inspecting the interface against principles. Usability testing observes real users attempting tasks. The first predicts problems quickly and cheaply; the second confirms which problems actually affect users and why." },
       { q: "What is the severity rating scale in heuristic evaluation?", a: "A common scale runs from 0 (not a usability problem) through 1 (cosmetic), 2 (minor), 3 (major) to 4 (usability catastrophe), based on the frequency, impact and persistence of the problem." },
@@ -295,7 +320,7 @@ export const designPosts4: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "A heuristic evaluation is an expert review of an interface against recognized usability principles, most often Jakob Nielsen's 10 usability heuristics. To run one, define the scope and key tasks, then have three to five evaluators review the product independently. Each evaluator makes one pass to learn the product and a second pass to record violations with their location and evidence. Afterwards, merge the findings, rate each problem's severity on a shared scale and report them in priority order. It's fast and inexpensive, but it predicts problems rather than proving them, so confirm the important ones with usability testing.",
+          "A heuristic evaluation is an expert review of an interface against recognized usability principles, most often Jakob Nielsen's 10 usability heuristics ([[https://www.nngroup.com/articles/ten-usability-heuristics/|Nielsen Norman Group]]). To run one, define the scope and key tasks, then have three to five evaluators review the product independently. Each evaluator makes one pass to learn the product and a second pass to record violations with their location and evidence. Afterwards, merge the findings, rate each problem's severity on a shared scale and report them in priority order. It's fast and inexpensive, but it predicts problems rather than proving them, so confirm the important ones with usability testing.",
         ],
       },
       {
@@ -329,7 +354,7 @@ export const designPosts4: BlogPost[] = [
       {
         heading: "Nielsen's 10 Usability Heuristics, With Examples",
         body: [
-          "The most widely used set is Nielsen's 10 usability heuristics. The examples below are typical violations to look for.",
+          "The most widely used set is [[https://www.nngroup.com/articles/ten-usability-heuristics/|Nielsen's 10 usability heuristics]], first published in 1994 and last reviewed by Nielsen Norman Group in 2024. The examples below are typical violations to look for.",
         ],
         table: {
           headers: ["Heuristic", "What it means", "Typical violation"],
@@ -370,7 +395,7 @@ export const designPosts4: BlogPost[] = [
       {
         heading: "The Evaluator Process",
         body: [
-          "Each evaluator works alone. Nielsen Norman Group's process has evaluators go through the interface at least twice. The first pass is for learning the product's flow and scope without judging it. The second pass is for inspecting each screen and interaction against the heuristics and recording every violation. Sessions of one to two hours per evaluator are typical for a focused scope.",
+          "Each evaluator works alone. Nielsen Norman Group's process, set out in its [[https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/|guide to conducting a heuristic evaluation]], has evaluators go through the interface at least twice. The first pass is for learning the product's flow and scope without judging it. The second pass is for inspecting each screen and interaction against the heuristics and recording every violation. Sessions of one to two hours per evaluator are typical for a focused scope.",
           "Evaluators should record the problem, where it occurs, which heuristic it violates and a screenshot, without discussing findings with others until everyone has finished. Independence is what makes several evaluators more valuable than one.",
         ],
         callout: {
@@ -405,7 +430,7 @@ export const designPosts4: BlogPost[] = [
       {
         heading: "Rating Severity",
         body: [
-          "Send the consolidated list to each evaluator and ask them to rate every problem independently, then average or agree the scores. Nielsen's severity ratings combine frequency, impact and persistence, and also consider market impact.",
+          "Send the consolidated list to each evaluator and ask them to rate every problem independently, then average or agree the scores. Nielsen's [[https://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/|severity rating scale]] combines frequency, impact and persistence, and also considers market impact. Nielsen's article notes that one evaluator's ratings are too unreliable to be trusted on their own, which is why independent ratings from several people matter.",
         ],
         table: {
           headers: ["Rating", "Label"],

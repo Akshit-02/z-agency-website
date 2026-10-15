@@ -186,169 +186,196 @@ export const growthPosts2: BlogPost[] = [
   // ------------------------------------------------- CHECKOUT ABANDONMENT
   {
     slug: "why-customers-abandon-checkout",
-    title: "Why Customers Abandon Checkout: Common Causes and How to Fix Them",
+    title: "Why Customers Abandon Checkout: Causes and a Checkout Audit Checklist",
+    seoTitle: "Checkout Abandonment: Causes and an Audit Checklist",
     excerpt:
-      "The common reasons shoppers abandon checkout, from surprise costs and forced accounts to payment failures and errors, and how to diagnose and fix each one.",
+      "Why shoppers abandon checkout, plus a checkout UX audit checklist that pairs each check with how to test it, the evidence to collect and the likely fix.",
     category: "CRO",
     banner: "checkoutdiag",
+    sceneKind: "checkout",
+    bannerAlt: "A checkout flow from cart to confirmation, with each step marked by the evidence used to diagnose where and why shoppers drop out",
     date: "2026-09-28",
-    readingTime: "14 min read",
+    updated: "2026-10-15",
+    readingTime: "12 min read",
     relatedServiceSlugs: ["cro-audit", "shopify-development", "ui-ux-design"],
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer", "retail"],
+    relatedSlugs: ["ecommerce-checkout-ux", "shopify-checkout-audit", "add-to-cart-but-no-purchase"],
     faqs: [
-      { q: "Why do customers abandon checkout?", a: "In Baymard's survey of US shoppers who abandoned during checkout (excluding those just browsing), the most common reasons were extra costs being too high, slow delivery, not trusting the site with card details, being required to create an account, a long or complicated checkout and site errors." },
-      { q: "What is the most common reason for checkout abandonment?", a: "In Baymard's survey, extra costs such as shipping, tax and fees being too high, cited by 40% of those respondents ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]])." },
-      { q: "What is the average checkout abandonment rate?", a: "Baymard's compilation of 50 studies puts the documented average online cart abandonment rate at around 70% ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). That figure includes shoppers who were only browsing, so it isn't the same as avoidable checkout abandonment." },
-      { q: "How can I reduce checkout abandonment?", a: "Show full costs early, offer guest checkout, reduce form fields, support autofill and express payments, offer the payment methods your customers use, handle errors without losing data, reassure on security and returns, and make checkout fast on mobile." },
-      { q: "How many form fields should checkout have?", a: "As few as possible. Baymard's benchmark found an average of 11.3 form fields in checkout, while most sites need only 8." },
-      { q: "Does offering more payment methods help?", a: "It helps when the missing methods are ones your customers want. 9% of respondents in Baymard's survey said there weren't enough payment methods ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]])." },
-      { q: "How do I find out why my customers abandon?", a: "Look at drop-off by checkout step, device and country, review field errors and payment failures, watch recordings of abandoned checkouts, place test orders and ask abandoning shoppers with a short survey." },
-      { q: "Do trust badges reduce checkout abandonment?", a: "Generic badges have limited effect. Consistent branding, recognizable payment options, clear policies, visible contact details and reassurance next to payment fields do more." },
-      { q: "Is checkout speed important?", a: "Yes. Slow steps, long payment processing and errors all add friction. 17% of Baymard's respondents said the website had errors or crashed." },
-      { q: "Should I test checkout changes?", a: "Yes, where traffic allows, because checkout changes affect revenue directly. Otherwise, compare with a stable baseline and monitor errors closely after release." },
+      { q: "What are the top reasons shoppers leave a checkout?", a: "Baymard asked US shoppers who had abandoned during checkout why they left, setting aside people who were only browsing. Extra costs came first at 40%, followed by slow delivery (20%), distrust of the site with card details (19%), a required account (18%), and a checkout that felt too long or complicated or that threw errors (17% each) ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]])." },
+      { q: "Is a 70% abandonment rate normal?", a: "Baymard's average across 50 studies is 70.22% (page last updated 22 September 2025). It counts everyone who adds to cart and doesn't buy, including people saving items or comparing prices, so it is not a target. Track your own rate by checkout step and compare it with your own past performance." },
+      { q: "What is a checkout UX audit?", a: "A structured review of every checkout step, from cart to confirmation, that looks for friction and then confirms or rules out each suspected problem with evidence: funnel data, field and payment errors, session recordings, test orders and customer feedback." },
+      { q: "How is a checkout audit different from checkout UX design?", a: "The audit finds and proves the problems; design work fixes them. Run the audit first, then use a design guide such as [[/blogs/ecommerce-checkout-ux|our checkout UX design guide]] to decide how to change each step." },
+      { q: "What data do I need before auditing checkout?", a: "At minimum, a step-by-step checkout funnel you trust, split by device. Payment failure reports from your payment provider, error logs, session recordings and a sample of support tickets make the audit much stronger. If tracking is unreliable, fix that first." },
+      { q: "Should every audit finding become an A/B test?", a: "No. Clear defects, such as a broken field or a payment method that fails, should simply be fixed. Test changes where the right answer is uncertain and traffic is high enough. Where neither applies, do more research before changing anything." },
+      { q: "How do I audit checkout on Shopify?", a: "The method is the same, but what you can change depends on your plan and checkout extensibility. See the [[/blogs/shopify-checkout-audit|Shopify checkout audit]] for the platform-specific version." },
+      { q: "How often should I audit checkout?", a: "After any significant change to checkout, payment providers, delivery options or tracking, and otherwise on a regular cycle that suits how often your store changes. Re-run test orders whenever a theme, app or payment setting changes." },
+      { q: "Do security badges stop shoppers abandoning?", a: "Rarely on their own. Distrust is usually about the whole experience: a checkout that looks different from the store, unfamiliar payment options, hidden policies or no visible way to get help. Check those first." },
     ],
     content: [
       {
-        heading: "Quick answer",
+        heading: "Why do customers abandon checkout, and how do you find out which reasons apply to you?",
         body: [
-          "Customers abandon checkout mainly because of surprises, effort and doubt. The most common reasons in Baymard's research are extra costs being too high, slow delivery, not trusting the site with card details, forced account creation, a long or complicated checkout and site errors. Returns policies, hidden totals, declined cards and missing payment methods follow. To fix abandonment, first find which causes apply to your store. Use step-by-step drop-off, field errors, payment failures, recordings and test orders, then fix the causes in order of how many shoppers they affect.",
-          "On phones, many of these causes are amplified; see [[/blogs/mobile-ecommerce-checkout|mobile checkout design]].",
+          "**Most checkout abandonment comes from four things: a total that turns out higher than expected, effort (accounts, long forms, awkward steps on a phone), doubt (about the site, delivery or returns) and outright failure (errors and declined payments). Industry surveys tell you which causes are common. Only a checkout audit tells you which ones are costing your store orders.** An audit walks every step from cart to confirmation, notes possible friction, and then confirms or rules out each suspicion with evidence before anyone spends money on fixes.",
+          "This guide covers both halves: what the research says about why shoppers leave, and a checklist for auditing your own checkout, with a column for the evidence that proves each problem. It is written for ecommerce managers and founders who want to diagnose before they redesign. For how to design each checkout step once you know what is wrong, see the [[/blogs/ecommerce-checkout-ux|checkout UX design guide]]. If shoppers are leaving before they reach checkout at all, start with [[/blogs/add-to-cart-but-no-purchase|why shoppers add to cart but don't buy]].",
         ],
       },
       {
-        heading: "What the Research Says",
-        body: [
-          "Baymard Institute's abandonment research asked US online shoppers who had abandoned an order during checkout why they left. Excluding shoppers who were just browsing, the reasons were:",
-        ],
-        table: {
-          headers: ["Reason", "Share of respondents"],
-          rows: [
-            ["Extra costs too high (shipping, tax, fees)", "40%"],
-            ["Delivery was too slow", "20%"],
-            ["Didn't trust the site with card information", "19%"],
-            ["The site wanted me to create an account", "18%"],
-            ["Too long or complicated checkout process", "17%"],
-            ["Website had errors or crashed", "17%"],
-            ["Returns policy wasn't satisfactory", "13%"],
-            ["Couldn't see or calculate total order cost up front", "12%"],
-            ["The credit card was declined", "10%"],
-            ["There weren't enough payment methods", "9%"],
-          ],
-        },
-      },
-      {
-        heading: "Not All Abandonment Is Fixable",
-        body: [
-          "Baymard's documented average cart abandonment rate across 50 studies is around 70%, but that includes people comparing prices, saving items and browsing ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). Focus on the reasons you can influence, and measure progress against your own baseline rather than a universal target.",
-        ],
-      },
-      {
-        heading: "Unexpected Costs",
-        body: [
-          "Costs that appear late break the price shoppers had in mind. Show delivery costs or thresholds on product pages and in the cart, show taxes the way your market expects (for example, tax-inclusive prices where that's the norm), and avoid fees that appear only at the end. If your delivery costs are genuinely high, explain what customers get, or absorb part of the cost into the product price and test the effect on margin.",
-        ],
-      },
-      {
-        heading: "Shipping and Delivery",
-        body: [
-          "Show delivery options with dates and prices, not just service names. Offer faster delivery where you can, and pickup or local delivery where relevant. For gifts and events, a clear “arrives by” date can matter more than price.",
-        ],
-      },
-      {
-        heading: "Forced Account Creation",
-        body: [
-          "Make guest checkout the easy default and offer an account after the order, on the confirmation page. Baymard recommends saving account creation for the confirmation step; returning customers can still sign in or use saved wallet details.",
-        ],
-      },
-      {
-        heading: "Long Forms",
-        body: [
-          "Baymard's checkout benchmark found an average of 11.3 form fields, while most sites need only 8. Remove fields you don't use, default billing to the delivery address, use address lookup and support autofill with correct autocomplete attributes.",
-        ],
-        cta: {
-          title: "Want to know why your shoppers leave checkout?",
-          description: "ZSpace Labs analyzes checkout drop-off, errors and payment failures and fixes what's costing you orders.",
-        },
-      },
-      {
-        heading: "Payment Problems and Limited Options",
-        body: [
-          "Declined cards and missing payment methods each account for a meaningful share of abandonment in Baymard's data. Review failures by method, device and country; offer wallets and the local methods your customers use; and keep the order and entered details when a payment fails, with a clear explanation and a way to try another method.",
-        ],
-      },
-      {
-        heading: "Security Concerns",
-        body: [
-          "Shoppers hesitate to enter card details on sites that look unfamiliar or inconsistent. Keep checkout visually consistent with the store, show recognizable payment options, place reassurance next to the payment fields and keep contact details and policies visible.",
-        ],
-      },
-      {
-        heading: "Errors",
-        body: [
-          "Validation errors that clear the form, server errors at payment and address formats that reject valid addresses all drive shoppers away. Validate inline after each field, explain how to fix errors, preserve input and test international addresses, discount codes and edge cases regularly.",
-        ],
-      },
-      {
-        heading: "Poor Mobile UX",
-        body: [
-          "On phones, typing is slower and interruptions are common. Offer express wallets early, use the right input types and keyboards, keep buttons large and make sure checkout survives switching apps. Test checkout inside social apps' built-in browsers if a lot of your traffic comes from social.",
-        ],
-      },
-      {
-        heading: "Return-Policy Uncertainty",
-        body: [
-          "13% of Baymard's respondents said the returns policy wasn't satisfactory. Summarize returns terms in plain language near the payment step and on product pages, and make the full policy one click away.",
-        ],
-      },
-      {
-        heading: "Checkout Performance",
-        body: [
-          "Slow steps and long payment processing make shoppers wonder whether something is wrong. Keep checkout scripts lean, show progress while payments process and prevent duplicate submissions. Measure real-user performance on checkout-bound pages. See [[/blogs/the-real-cost-of-a-slow-checkout|the real cost of a slow checkout]].",
-        ],
-      },
-      {
-        heading: "A Diagnostic Framework",
-        body: ["Match each possible cause to evidence before fixing it."],
-        table: {
-          headers: ["Cause", "Evidence to check"],
-          rows: [
-            ["Unexpected costs", "Drop-off after delivery cost appears; drop by country and cart value"],
-            ["Slow or unclear delivery", "Drop at delivery step; delivery questions to support"],
-            ["Account creation", "Drop at the first checkout step; clicks on sign-in vs guest"],
-            ["Form effort", "Field-level errors and time per field"],
-            ["Payment", "Declines and failures by method; missing method requests"],
-            ["Trust", "Exit survey answers; new vs returning customer differences"],
-            ["Errors", "Error logs, recordings with rage or dead clicks, test orders"],
-            ["Mobile", "Completion rate by device and browser"],
-          ],
-        },
-      },
-      {
-        heading: "Testing Checkout Fixes",
-        body: [
-          "Because checkout changes affect revenue immediately, validate them. Where traffic allows, A/B test changes; otherwise release one change at a time, compare with a stable baseline and watch errors and support contacts. See [[/blogs/ecommerce-ab-testing|ecommerce A/B testing]].",
-        ],
-      },
-      {
-        heading: "Common Mistakes",
+        heading: "Key takeaways",
         body: [],
         checklist: [
-          "Assuming industry averages describe your store",
-          "Fixing checkout layout when costs are the real issue",
-          "Adding badges instead of fixing trust gaps",
-          "Offering discounts to every abandoner",
-          "Never placing test orders on phones",
+          "Baymard's 70.22% average abandonment rate includes people who were only browsing. Measure your own baseline by step instead.",
+          "Unexpected extra costs are the most common stated reason, ahead of slow delivery, distrust and forced accounts.",
+          "An audit is only as good as its evidence. Pair every suspected problem with data that could prove it wrong.",
+          "Separate findings into fix now, test first and research more. Not every finding needs an A/B test.",
+          "Place real test orders on phones, with each payment method you offer. Many failures only appear there.",
         ],
-        cta: {
-          title: "Ready to reduce checkout abandonment?",
-          description: "Talk to ZSpace Labs about a [[/services/cro-audit|checkout audit]], [[/services/ui-ux-design|checkout UX]] and [[/services/shopify-development|Shopify checkout configuration]].",
+      },
+      {
+        heading: "What the research says",
+        body: [
+          "Baymard Institute keeps a running average of published cart abandonment studies. Across 50 studies it stands at 70.22%, on a page last updated on 22 September 2025; no newer figure had been published when this guide was revised ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). That number includes a large group who were never going to buy that day: in the same research, 42% of US shoppers who abandoned said they were just browsing or not ready to buy.",
+          "Once those browsers are set aside, Baymard's US respondents gave these reasons for leaving during checkout (they could choose more than one):",
+        ],
+        table: {
+          headers: ["Stated reason for leaving", "Respondents"],
+          rows: [
+            ["Delivery, tax or other extra costs were too high", "40%"],
+            ["Delivery would take too long", "20%"],
+            ["Did not trust the site with card details", "19%"],
+            ["Had to create an account", "18%"],
+            ["Checkout felt too long or complicated", "17%"],
+            ["The site showed errors or crashed", "17%"],
+            ["Returns policy was not good enough", "13%"],
+            ["Could not see or work out the total cost in advance", "12%"],
+            ["Card was declined", "10%"],
+            ["Preferred payment method was missing", "9%"],
+          ],
         },
+      },
+      {
+        heading: "How to read those numbers",
+        body: [
+          "Treat the list as a set of hypotheses, not a diagnosis. The survey covers US shoppers; your customers, products and markets may weigh the causes differently. A store with free delivery will not lose many people to delivery costs, while a store selling bulky goods to several countries might lose a great many.",
+          "Baymard also estimates that a large ecommerce site could lift its conversion rate by 35.26% through better checkout design. That is a modelled estimate for large sites, based on usability issues Baymard has documented as fixable. It is not a figure any individual store should expect.",
+          "The useful question is narrower: at which step do your shoppers drop, on which devices and in which markets, and what evidence explains it? That is what the audit below is for.",
+        ],
+      },
+      {
+        heading: "The causes, grouped by what the shopper experiences",
+        body: [
+          "**Cost surprises.** The shopper had a price in mind, and checkout raised it. Delivery charges, taxes, duties or fees that only appear late are the classic trigger. The total should be predictable from the product page and the cart, not revealed at the payment step.",
+          "**Effort.** Every account prompt, extra field and confusing step gives the shopper a reason to stop. Baymard's benchmark of large sites counted 11.3 checkout form fields on average, against the 8 most sites actually require, and it found that the number of fields matters more than the number of steps ([[https://baymard.com/blog/checkout-flow-average-form-fields|Baymard Institute]]). Typing is harder on a phone, so effort problems tend to be worse on mobile.",
+          "**Doubt.** Shoppers hesitate when checkout looks unlike the rest of the store, when the payment options are unfamiliar, when delivery dates are vague, or when returns terms are hard to find. Unexplained requests add to it: Baymard found 39% of benchmarked sites asked for a phone number without saying why, and 14% of shoppers it surveyed said they would never give one ([[https://baymard.com/blog/explain-phone-number-field|Baymard Institute]]).",
+          "**Failure.** Some shoppers want to buy and simply can't: a validation rule rejects a real address, a discount code breaks the page, a card is declined with no explanation, or a wallet button does nothing inside an in-app browser. These are often the cheapest problems to fix and the easiest to miss, because nobody on the team checks out the way customers do.",
+        ],
+      },
+      {
+        heading: "How to run a checkout UX audit",
+        body: [
+          "The method below combines a heuristic walkthrough with data, so every finding ends up with evidence attached. Work through it in order; later steps depend on earlier ones.",
+        ],
+        checklist: [
+          "**Check the measurement.** Confirm that each checkout step is tracked and that the numbers match orders in your back office. An audit built on broken tracking will point at the wrong step. A [[/blogs/shopify-analytics-tracking-audit|tracking audit]] is the place to start if you are unsure.",
+          "**Map the funnel by step.** Record how many sessions reach cart, start checkout, complete each step and pay. Split by device, new versus returning customers, country and traffic source.",
+          "**Find the biggest drop that you can influence.** Compare steps and segments with your own history, not with industry averages.",
+          "**Walk the flow yourself.** Go through checkout as a first-time customer on a phone and on a desktop, and note every moment of hesitation, surprise or extra effort.",
+          "**Place test orders.** Cover each payment method, a guest and a signed-in customer, a discount code, an international address if you ship abroad, and at least one in-app browser such as Instagram's.",
+          "**Watch recordings of real sessions.** Filter for sessions that reached checkout and didn't finish. Look for rage clicks, dead clicks and quick backs, as defined in tools such as [[https://learn.microsoft.com/en-us/clarity/insights/semantic-metrics|Microsoft Clarity]].",
+          "**Collect the customer's voice.** Read recent support tickets and chat logs about checkout, delivery and payment, and if volume allows, run a one-question exit survey on checkout pages.",
+          "**Score and sort the findings.** Use the checklist below to record evidence for each finding, then sort them into fix now, test first or research more.",
+        ],
+      },
+      {
+        heading: "Checkout audit checklist",
+        body: [
+          "Use this as a working sheet. For each row, run the test, collect the evidence and only then decide on the fix. The fixes listed are starting points; the [[/blogs/ecommerce-checkout-ux|checkout design guide]] covers how to design each one properly.",
+        ],
+        table: {
+          headers: ["Check", "How to test", "Evidence to collect", "Likely fix"],
+          rows: [
+            ["Cart shows a realistic total", "Add items as a new visitor in each market you sell to", "Drop from cart to checkout start, by country and cart value", "Show delivery cost or the free-delivery threshold in the cart; show tax the way your market expects"],
+            ["Guest checkout is the obvious path", "Start checkout as a new visitor and note what you are asked first", "Drop at the first checkout screen; clicks on sign-in versus guest", "Make guest the default and offer an account after purchase ([[/blogs/ecommerce-checkout-ux|design options]])"],
+            ["Only necessary fields are requested", "Count fields on each step; ask what each one is used for", "Time per step; field-level error counts; recordings of hesitation", "Remove unused fields, default billing to delivery address, explain any phone request"],
+            ["Address entry accepts real addresses", "Enter addresses from each market, including flats and rural formats", "Validation errors by field and country; support tickets about addresses", "Loosen strict validation; add address lookup where it works well"],
+            ["Delivery options show dates and prices", "Reach the delivery step for different postcodes and cart sizes", "Drop at delivery step; delivery questions to support", "Show expected arrival dates and costs, not just service names"],
+            ["Customers' preferred payment methods are offered", "Compare offered methods with what customers in each market use", "Payment provider reports; requests for missing methods; drop at payment by country", "Add the missing wallets or local methods that the evidence supports"],
+            ["Payment failures are recoverable", "Use your provider's test cards to trigger a decline", "Decline and failure rates by method, device and country", "Explain the failure plainly, keep the order and entered details, offer another method"],
+            ["Errors keep what the shopper typed", "Submit each step with deliberate mistakes", "Recordings of repeated submits; error log entries", "Validate inline, explain how to fix the error, never clear valid fields"],
+            ["Discount codes behave predictably", "Apply valid, expired and invalid codes", "Code error rate; drop after a failed code", "Clear error messages; don't make the code field the most prominent element"],
+            ["Order review shows everything before payment", "Read the final step as a cautious first-time buyer", "Exit survey answers about cost or delivery; back-navigation from review", "Show items, total, delivery date and returns summary together"],
+            ["Checkout looks like the same store", "Compare branding, fonts and tone across store and checkout", "Trust-related exit survey answers; new versus returning customer gap", "Consistent branding; recognisable payment options; visible help and policies"],
+            ["Checkout works on phones and in in-app browsers", "Test orders on iOS and Android, including social app browsers", "Completion rate by device, browser and traffic source", "Fix keyboards, tap targets and wallet behaviour ([[/blogs/mobile-ecommerce-checkout|mobile checkout fixes]])"],
+            ["Steps load quickly for real users", "Check field data for checkout-bound pages; time payment processing", "Core Web Vitals at the 75th percentile; slow payment confirmations", "Remove heavy scripts; show progress during payment; prevent double submission"],
+            ["Confirmation reassures and sets expectations", "Complete a test order and read the confirmation page and email", "Support tickets asking whether an order went through", "State the order number, delivery estimate and next steps clearly"],
+          ],
+        },
+        callout: {
+          type: "tip",
+          text: "Write the evidence down before you decide the fix. A row with no evidence is a hunch, and hunches belong in the research-more pile.",
+        },
+      },
+      {
+        heading: "Fix now, test first or research more",
+        body: [
+          "Not every finding deserves the same treatment. A simple rule of thumb is to weigh three things: how severe the problem is for those who hit it, how many shoppers reach that step, and how confident the evidence makes you. This is a judgement aid, not a formula with a correct answer.",
+        ],
+        table: {
+          headers: ["Bucket", "When it applies", "What to do"],
+          rows: [
+            ["Fix now", "A clear defect with strong evidence: a broken field, a failing payment method, an address format that is rejected", "Fix it, then confirm the drop at that step improves against your baseline"],
+            ["Test first", "A plausible improvement where the best answer is uncertain and the step has enough traffic", "Run a controlled test; see [[/blogs/ecommerce-ab-testing-checkout|what you can safely test in checkout]]"],
+            ["Research more", "A suspicion with weak or conflicting evidence", "Gather more recordings, survey answers or test orders before changing anything"],
+          ],
+        },
+      },
+      {
+        heading: "Hypothetical example",
+        body: [
+          "Hypothetical example: a homeware store sees checkout completion fall on mobile while desktop holds steady. The funnel shows the biggest mobile drop at the delivery step. Recordings show shoppers scrolling the delivery options and leaving. Test orders reveal that, for some postcodes, the cheapest option says only \"Standard\" with no date, and that the free-delivery threshold is mentioned nowhere before this step.",
+          "The audit records two findings. Missing delivery dates are a clear gap with good evidence, so they go in fix now. Whether to show the free-delivery threshold in the cart, and how, is less certain and could affect order value, so it goes in test first. After the fix, the team compares the mobile delivery-step drop with the weeks before it, and plans the threshold test with the [[/blogs/ecommerce-experiment-prioritization|prioritisation worksheet]].",
+        ],
+      },
+      {
+        heading: "Market and platform differences",
+        body: [
+          "Payment expectations and address formats vary by country, so audit each major market separately rather than assuming one checkout suits all. In India, check that the methods customers actually use are offered and tested. In the UAE, payment options and address conventions differ again; see [[/blogs/uae-ecommerce-checkout-optimization|checkout optimisation for UAE shoppers]]. For a wider view of international payment methods, currencies and addresses, see [[/blogs/global-ecommerce-checkout|designing checkout for international customers]].",
+          "On Shopify, what you can change in checkout depends on your plan and on checkout extensibility, so some fixes in the checklist may need an app, a configuration change or a Plus feature. The [[/blogs/shopify-checkout-audit|Shopify checkout audit]] applies this method to Shopify's checkout specifically.",
+        ],
+      },
+      {
+        heading: "When a checkout audit is not the answer",
+        body: [
+          "If most shoppers leave before starting checkout, the problem is upstream: product pages, cart, pricing or the offer itself. Fixing checkout will not help much. If traffic is very low, you may not have enough sessions to see reliable step-level patterns; lean more on test orders, recordings and conversations with customers, and treat conclusions as provisional. And if the real issue is that your prices or delivery costs are uncompetitive, no amount of interface work will close the gap. The audit will usually make that visible, which is useful in itself.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        body: [],
+        checklist: [
+          "Benchmarking against a global average instead of your own step-by-step history",
+          "Redesigning the whole checkout when one step or one payment method is the problem",
+          "Auditing only on a desktop, signed in as an admin",
+          "Acting on recordings or survey answers alone, without checking the funnel data",
+          "Sending every abandoner a discount, which teaches customers to wait",
+          "Treating trust as a badge problem rather than a consistency and clarity problem",
+        ],
       },
       {
         heading: "Conclusion",
         body: [
-          "Checkout abandonment has well-documented causes, but their mix differs by store. Use the research as a checklist, confirm which causes apply with your own evidence, and fix them in order of impact: costs, delivery, accounts, forms, payments, trust, errors and mobile. For design principles, see [[/blogs/ecommerce-checkout-ux|ecommerce checkout UX]]; on Shopify, see [[/blogs/shopify-checkout-optimization|Shopify checkout optimization]]. For UAE payments, addresses and delivery expectations, see [[/blogs/uae-ecommerce-checkout-optimization|UAE ecommerce checkout optimisation]]. For Australian delivery, pricing and surcharging changes, see [[/blogs/ecommerce-conversion-optimization-australia|Australian ecommerce conversion optimisation]].",
-          "For related guides, see [[/blogs/ecommerce-shipping-ux|clearer delivery information]].",
+          "The research tells you where to look: costs, effort, doubt and failure. The audit tells you which of those your own customers are running into, with evidence to back each finding. Check your tracking, find the biggest controllable drop, walk the flow, place real test orders, then sort what you find into fix now, test first and research more. If a slow checkout is part of the picture, [[/blogs/the-real-cost-of-a-slow-checkout|estimate what slow checkout steps cost you]] before deciding how much to invest.",
+        ],
+        cta: {
+          title: "Want your checkout audited with evidence, not opinions?",
+          description: "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/cro-audit|CRO audits]]. If useful, we can talk through your checkout funnel, the evidence you already have and where an audit would add most.",
+        },
+      },
+      {
+        heading: "Sources",
+        body: [
+          "[[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute: cart abandonment rate statistics (last updated 22 September 2025)]]; [[https://baymard.com/blog/checkout-flow-average-form-fields|Baymard Institute: checkout flow average form fields]]; [[https://baymard.com/blog/explain-phone-number-field|Baymard Institute: explain the phone number field]]; [[https://baymard.com/blog/audit-checkout-flow-hidden-friction|Baymard Institute: how to audit your checkout flow for hidden friction (13 May 2026)]]. Baymard is a commercial UX research firm; its figures are industry research, mostly from US shoppers.",
+          "[[https://web.dev/articles/vitals|web.dev: Web Vitals]]; [[https://learn.microsoft.com/en-us/clarity/insights/semantic-metrics|Microsoft Clarity: semantic metrics]] (vendor documentation).",
+          "Accessed 15 October 2026.",
         ],
       },
     ],
@@ -602,7 +629,7 @@ export const growthPosts2: BlogPost[] = [
       { q: "What is funnel drop-off?", a: "The share of shoppers who reach one stage but not the next. The stage with the largest avoidable drop-off is usually where to focus." },
       { q: "Should I use sessions or users for funnel analysis?", a: "Both have uses. Sessions show what happens within a visit; users capture shoppers who add to cart one day and buy another. Be consistent and note which one you're using." },
       { q: "What is the difference between an open and closed funnel?", a: "In GA4 funnel explorations, a closed funnel counts only users who enter at the first step, while an open funnel lets users enter at any step. Open funnels suit stores where many shoppers land directly on product pages." },
-      { q: "How does Shopify show the conversion funnel?", a: "Shopify's conversion rate breakdown shows sessions, sessions with cart additions, sessions that reached checkout and sessions that completed checkout." },
+      { q: "How does Shopify show the conversion funnel?", a: "Shopify's conversion rate breakdown shows sessions, sessions with cart additions, sessions that reached checkout and sessions that completed checkout. It has no product-view step, so use GA4 or another product-level analytics report for product page drop-off." },
       { q: "Why segment the funnel?", a: "Because a blended funnel hides problems. Mobile paid social traffic may leak at the product page while desktop email traffic converts well." },
       { q: "Where does retention fit in the funnel?", a: "After the first purchase. Repeat purchase rate and time to second order show whether the funnel creates lasting customers, which affects how much you can spend on acquisition." },
     ],
@@ -635,8 +662,9 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "Setting Up Measurement",
         body: [
-          "GA4's recommended ecommerce events cover the journey from view_item_list to purchase and refund. Many platforms and integrations send them automatically, but check that each fires once, with the right items and values. Shopify's own conversion rate breakdown shows a four-step version: sessions, sessions with cart additions, sessions that reached checkout and sessions that completed checkout.",
-          "In GA4, funnel explorations let you build the funnel from these events. A closed funnel counts only users who start at the first step; an open funnel lets users enter at any step, which suits stores where many shoppers land directly on product pages.",
+          "GA4's [[https://developers.google.com/analytics/devguides/collection/ga4/reference/events|recommended ecommerce events]] cover the journey from view_item_list to purchase and refund. Many platforms and integrations send them automatically, but check that each fires once, with the right items and values. Shopify's own [[https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports|conversion rate breakdown]] shows a four-step version: sessions, sessions with cart additions, sessions that reached checkout and sessions that completed checkout. It has no product-view step, so product page drop-off has to come from GA4 or another product-level analytics report.",
+          "In GA4, [[https://support.google.com/analytics/answer/9327974|funnel explorations]] let you build the funnel from these events, with up to 10 steps. A closed funnel counts only users who start at the first step; an open funnel lets users enter at any step, which suits stores where many shoppers land directly on product pages.",
+          "For checkout specifically, Google documents a [[https://support.google.com/analytics/answer/12216232|\"Checkout funnel performance\" exploration]], built on the funnel exploration template, with steps for begin_checkout, add_payment_info, add_shipping_info and purchase. Google recommends an open funnel when shoppers often add to cart in one session and buy in another. These checkout sub-steps are a level of detail Shopify's four-step report does not show.",
         ],
       },
       {
@@ -779,6 +807,14 @@ export const growthPosts2: BlogPost[] = [
         },
       },
       {
+        heading: "Sources",
+        body: [
+          "Shopify Help Center: [[https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports|Behaviour reports (conversion rate breakdown)]].",
+          "Google Analytics Help: [[https://support.google.com/analytics/answer/9327974|[GA4] Funnel exploration]]; [[https://support.google.com/analytics/answer/12216232|[GA4] Ecommerce exploration solutions]]. Google for Developers: [[https://developers.google.com/analytics/devguides/collection/ga4/reference/events|GA4 recommended events]].",
+          "Accessed 14 October 2026. Report names and options change; check the current documentation.",
+        ],
+      },
+      {
         heading: "Conclusion",
         body: [
           "A funnel turns “conversion is down” into “mobile shoppers stop between cart and checkout”. Track every stage, calculate stage-to-stage rates, segment them, and investigate the biggest avoidable drop with qualitative evidence. Then fix, measure and repeat.",
@@ -874,6 +910,10 @@ export const growthPosts2: BlogPost[] = [
         body: [
           "Before starting, decide the smallest effect worth detecting and use a sample size calculator with your baseline conversion rate to work out how many visitors each variant needs. Run the test until it reaches that sample, and for full weekly cycles so different days are represented. Small expected effects on low-traffic pages may need more traffic than you have; in that case, test bigger changes or improve the page without a formal test.",
         ],
+        callout: {
+          type: "note",
+          text: "Running a lead-generation site rather than a store? Enquiries usually arrive in much smaller numbers than orders, so most service and B2B sites cannot reach the sample a valid A/B test needs in any sensible time. Research-led changes measured before and after are usually the better route; see [[/blogs/cro-strategy-low-traffic-websites|how to plan CRO when you have limited traffic]].",
+        },
       },
       {
         heading: "Statistical Interpretation",

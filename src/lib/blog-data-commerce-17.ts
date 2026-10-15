@@ -316,8 +316,27 @@ export const commercePosts17: BlogPost[] = [
       {
         heading: "Payment Gateway Requirements",
         body: [
-          "Subscriptions on Shopify need a supported payment gateway. Shopify's Help Center lists Shopify Payments, PayPal Express (with reference transactions approved) and Authorize.net as supported gateways for subscription products, and notes wallet limitations with some gateways, such as Apple Pay and Google Pay not being supported with Authorize.net in the Shopify Subscriptions app (Shopify Help Center). Check current requirements before launch, as eligibility can change.",
+          "Subscriptions on Shopify need a supported payment gateway. For the Shopify Subscriptions app, [[https://help.shopify.com/en/manual/products/purchase-options/shopify-subscriptions/considerations|Shopify's Help Center]] lists Shopify Payments, PayPal Express, Authorize.net, Adyen (only for organisations with an existing Adyen approval) and Stripe (available only to select merchants). It also notes wallet limitations with some gateways, such as Apple Pay and Google Pay not being supported with Authorize.net, and says availability depends on your region and the gateway's terms. Check current requirements before launch, as eligibility can change.",
+          "Shopify Payments is not available in India: it is not on [[https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries|Shopify's list of supported countries]] (checked 15 October 2026), and businesses in unsupported countries need a third-party payment provider. An India-based store using the Shopify Subscriptions app therefore needs one of the other listed gateways that is available to it.",
         ],
+      },
+      {
+        heading: "Subscriptions for India-Based Shopify Stores",
+        body: [
+          "Two things differ for a store based in India. First, the gateway. Shopify Payments isn't offered in India, so the native app's remaining options are PayPal Express, Authorize.net, Adyen and Stripe, each with the restrictions above, and Shopify says availability depends on your region and the gateway's terms. Whether any of them can run Shopify Subscriptions for your India-based business is not something this guide can confirm: ask Shopify support and the gateway in writing before you build, and if the answer is no, use a subscription app whose gateway does support recurring payments for Indian merchants.",
+          "Second, the rules on recurring payments. The Reserve Bank of India's [[https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374|Digital Payments – E-mandate Framework, 2026]] (21 April 2026) covers recurring transactions on cards, prepaid payment instruments and UPI, domestic or cross-border. In plain terms:",
+        ],
+        checklist: [
+          "The customer registers the mandate once, with additional factor authentication (AFA)",
+          "Renewals of up to ₹15,000 per transaction can be charged without AFA; above that, the customer must authenticate the charge",
+          "The customer's issuer sends a pre-debit notification at least 24 hours before each charge",
+          "The customer can change or cancel the mandate, or opt out of a single charge, at any time",
+          "The customer can't be charged for using the e-mandate facility",
+        ],
+        callout: {
+          type: "note",
+          text: "Design for these rules: say on the product page and in the welcome email that a reminder arrives before each renewal, treat renewals above ₹15,000 (large prepaid plans, for example) as needing the customer's approval each time, and confirm with your app and gateway that their card and UPI mandates follow the 2026 framework. RBI directions can be amended, so check the current text.",
+        },
       },
       {
         heading: "Theme and Product Page Setup",
@@ -345,7 +364,9 @@ export const commercePosts17: BlogPost[] = [
       },
       {
         heading: "Choosing Between Shopify Subscriptions and Other Apps",
-        body: [],
+        body: [
+          "Shopify's [[https://help.shopify.com/en/manual/products/purchase-options/shopify-subscriptions/considerations|considerations page for Shopify Subscriptions]] also lists limits that often decide the choice: bundles aren't compatible, subscriptions can't be used with draft orders, the order edits API doesn't support them, and discounts from Shopify Scripts or payment by gift card apply only to the first payment.",
+        ],
         table: {
           headers: ["Need", "Shopify Subscriptions", "Consider a third-party app"],
           rows: [
@@ -355,6 +376,10 @@ export const commercePosts17: BlogPost[] = [
             ["Complex prepaid plans", "", "Check app support"],
             ["Loyalty, referrals, advanced retention flows", "", "Yes"],
             ["Detailed churn analytics", "Basic analytics", "Often more detailed"],
+            ["Bundles", "Not compatible with the app", "Check app support"],
+            ["Draft orders or editing orders after purchase", "Not supported for subscriptions", "Check app support"],
+            ["Script discounts or gift-card payments on renewals", "Apply to the first payment only", "Check app support"],
+            ["Local, manual or non-card payment methods", "Might not be available", "Check app and gateway support"],
           ],
         },
       },

@@ -877,6 +877,7 @@ export const auDeliveryGovernancePosts: BlogPost[] = [
           "**End-to-end tests in sandboxes** before releases; note where sandboxes behave differently from production.",
           "**Synthetic monitoring** in production: a small, safe transaction or read checked regularly with alerts.",
           "See [[/blogs/automated-regression-testing|automated regression testing]] and [[/blogs/api-versioning|API versioning]].",
+          "[[/blogs/api-integration-development-cost|What a third-party API integration costs to build and run]] for scoping reliability work into the budget.",
         ],
       },
       {

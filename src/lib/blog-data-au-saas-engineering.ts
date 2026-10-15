@@ -20,19 +20,20 @@ import type { BlogPost } from "./blog-data";
 export const auSaasEngineeringPosts: BlogPost[] = [
   {
     slug: "multi-tenant-saas-architecture",
-    title: "Multi-Tenant SaaS Architecture: Isolation Models, Data Access and Trade-Offs",
-    seoTitle: "Multi-Tenant SaaS Architecture: Isolation and Trade-Offs",
+    title: "Multi-Tenant SaaS Architecture: Organisations, Roles, Isolation and Data Residency",
+    seoTitle: "Multi-Tenant SaaS Architecture: Orgs, Roles and Isolation",
     excerpt:
-      "Multi-tenant SaaS architecture: pooled, siloed and hybrid models, tenant isolation, permissions, configuration, billing boundaries, testing and operations.",
+      "How to model organisations, users, memberships and roles in a B2B SaaS, choose a tenant isolation model, close cross-tenant risks and handle data residency.",
     category: "Web Development",
     banner: "saasshell",
     sceneKind: "code",
-    bannerAlt: "Several customer tenants sharing an application, with pooled and dedicated databases, tenant-aware access checks, per-tenant configuration and usage metering",
+    bannerAlt: "Several customer organisations sharing one SaaS application, with memberships and roles per organisation, pooled and dedicated databases, tenant-aware access checks and regional deployments",
     date: "2026-10-10",
-    readingTime: "5 min read",
-    relatedServiceSlugs: ["website-development"],
+    updated: "2026-10-15",
+    readingTime: "12 min read",
+    relatedServiceSlugs: ["website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "startups", "fintech", "hrtech"],
-    relatedSlugs: ["saas-development-australia", "scaling-saas-applications", "api-security-best-practices"],
+    relatedSlugs: ["saas-roles-and-permissions", "enterprise-sso-implementation", "api-security-best-practices"],
     faqs: [
       {
         q: "What is a multi-tenant SaaS architecture?",
@@ -54,31 +55,72 @@ export const auSaasEngineeringPosts: BlogPost[] = [
         q: "Can tenants be moved between pooled and dedicated infrastructure?",
         a: "Yes, if you plan for it. Design data models with tenant IDs everywhere, avoid cross-tenant joins, and build tooling to export and import a tenant's data. Moving a large tenant to dedicated infrastructure later is much easier when tenant boundaries are clean from the start.",
       },
+      {
+        q: "How do you handle a user who belongs to two customer organisations?",
+        a: "Keep one global user record and give that user a separate membership in each organisation, with roles attached to the membership rather than the user. The user picks an active organisation after signing in, and the server checks that membership on every request. Roles, permissions and data never carry over from one organisation to the other.",
+      },
+      {
+        q: "Is PostgreSQL row-level security enough on its own?",
+        a: "No. It is a strong second layer, but superusers, roles with BYPASSRLS and, by default, table owners skip it, so a connection with those rights ignores your policies. Keep tenant scoping in the application's data-access layer as well, run ordinary requests through a role that RLS applies to, and test that the policies actually block cross-tenant reads.",
+      },
+      {
+        q: "How should support staff access a customer's account?",
+        a: "Through a separate, time-boxed grant tied to a ticket or reason, approved and logged, ideally visible to the customer's admins. Support staff should not hold standing access to every tenant, and a customer's own admin role should never double as platform-wide access.",
+      },
     ],
     content: [
       {
-        heading: "What is the right multi-tenant architecture?",
+        heading: "How should a SaaS product handle many organisations and roles?",
         body: [
-          "**The right architecture depends on your customers: pooled multi-tenancy (shared infrastructure, tenant-scoped data) suits many small and medium customers; siloed tenants (dedicated databases or stacks) suit customers needing strong isolation, data location or performance guarantees; and many products use a hybrid. Whatever you choose, enforce tenant context on every request, scope all data access, meter usage per tenant and test isolation automatically.** Multi-tenancy is a tool, not a default.",
-          "This guide is for SaaS founders, architects and engineering leads. It covers isolation models, data access, permissions, configuration, billing boundaries, testing and operations. For the wider SaaS build, see [[/blogs/saas-development-australia|SaaS development in Australia]]; for growth, [[/blogs/scaling-saas-applications|scaling SaaS applications]].",
+          "**Separate three questions and design each on purpose. Who is this person? Which organisation are they acting in right now? What may they do there? Model one global user, a membership per organisation, and roles on the membership. Then choose how strongly to isolate each tenant's data: pooled with application scoping, pooled with database row-level security, or dedicated schemas, databases or stacks for tenants that need them. Enforce the tenant boundary on the server for every request, test it automatically, and plan for per-tenant data location, support access and SSO before the first enterprise customer asks.**",
+          "This guide is for founders, CTOs and engineering leads building B2B software. It covers the tenant boundary: how organisations, users and data are separated. Permission design inside a single organisation, such as which roles exist and what each may do, is covered in [[/blogs/saas-roles-and-permissions|designing SaaS roles and permissions]]. Single sign-on mechanics are covered in [[/blogs/enterprise-sso-implementation|enterprise SSO implementation]].",
         ],
       },
       {
         heading: "Key takeaways",
         body: [],
         checklist: [
-          "Choose pooled, siloed or hybrid per customer segment, not dogma.",
-          "Put tenant IDs everywhere and scope every query.",
-          "Add a second layer of isolation where the database supports it.",
-          "Include tenant context in caches, queues, logs and files.",
-          "Meter usage per tenant for billing and capacity.",
-          "Test cross-tenant access in automated tests.",
+          "One user can belong to many organisations; attach roles to the membership, not the user.",
+          "The active organisation comes from the server-verified session and membership, never from a client parameter alone.",
+          "Choose isolation per customer requirement. Most products pool by default and isolate a few tenants.",
+          "Row-level security helps, but privileged database connections bypass it.",
+          "Support access is a separate, time-boxed and audited path, not a standing super-admin role.",
+          "Data residency is a per-tenant setting that covers backups, logs and support access too.",
+        ],
+      },
+      {
+        heading: "A neutral reference data model",
+        body: [
+          "Identity vendors publish organisation models tied to their own products. The model below is vendor-neutral and maps onto most databases and identity providers. Names are illustrative; the relationships are what matter.",
+        ],
+        code: {
+          label: "Organisations, users, memberships and roles (illustrative)",
+          text: `organisations          id, name, home_region, plan, status
+users                  id, email, name, status          -- one global identity
+memberships            id, organisation_id, user_id, status (invited | active | suspended), invited_by
+roles                  id, organisation_id NULL = system role, key, name
+permissions            id, key                           -- e.g. invoices.read, members.invite
+role_permissions       role_id, permission_id
+membership_roles       membership_id, role_id
+resource_grants        organisation_id, resource_type, resource_id, membership_id, access   -- optional per-object sharing
+support_access_grants  staff_user_id, organisation_id, reason, ticket_ref, scope, starts_at, expires_at, approved_by
+identity_connections   organisation_id, protocol (saml | oidc), idp_metadata, verified_domains, scim_token_hash, sso_enforced
+
+Every tenant-owned table (projects, invoices, files ...) carries organisation_id.`,
+        },
+        checklist: [
+          "**Users are global; memberships are local.** A consultant who works with two of your customers has one login and two memberships, each with its own roles and status. Suspending one membership does not touch the other.",
+          "**The active organisation is a server decision.** After sign-in the user chooses an organisation; the server stores it in the session and checks the membership is active on every request. A URL or header can select an organisation, but it proves nothing by itself.",
+          "**Roles hang off memberships.** System roles (owner, admin, member) are shared definitions; custom roles belong to one organisation. Permission design belongs on the [[/blogs/saas-roles-and-permissions|roles and permissions page]].",
+          "**A tenant admin is not a platform admin.** Customer admins manage their own organisation. Your staff get access through time-boxed grants, never through a hidden role inside the customer's role list.",
+          "**SSO settings belong to the organisation.** Each enterprise tenant can have its own identity provider connection, verified domains and a switch that enforces SSO for its members.",
+          "**Home region is data.** Storing each organisation's home region from day one makes later per-tenant data location a routing change rather than a rewrite.",
         ],
       },
       {
         heading: "Isolation models",
         body: [
-          "AWS's SaaS Lens describes silo, pool and bridge (hybrid) models ([[https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/silo-pool-and-bridge-models.html|AWS]]):",
+          "AWS's SaaS Lens describes three models: silo, where \"tenants are provided dedicated resources\"; pool, where \"tenants share resources\"; and bridge, a \"mixed mode where some of the system is implemented in a silo model and some is in a pooled model\". Even a silo \"still relies on a shared identity, onboarding, and operational experience\" ([[https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/silo-pool-and-bridge-models.html|AWS SaaS Lens]]). Microsoft's Azure Architecture Center makes the commercial point directly: \"Selecting a tenancy model isn't only a technical decision. It's also a commercial decision\" ([[https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/considerations/tenancy-models|Azure Architecture Center]]).",
         ],
         table: {
           headers: ["Model", "How it works", "Strengths", "Costs"],
@@ -90,15 +132,76 @@ export const auSaasEngineeringPosts: BlogPost[] = [
         },
       },
       {
-        heading: "Data access and permissions",
-        body: [],
+        heading: "Tenant isolation decision table",
+        body: [
+          "Use this table to match an isolation option to a real customer requirement. Each cell is a trade-off, not a verdict, and you can mix options: most tenants pooled, a few on dedicated databases. This is our own summary of common engineering trade-offs, not a vendor benchmark.",
+        ],
+        table: {
+          headers: ["Requirement", "Pool + app scoping", "Pool + row-level security", "Schema per tenant", "Database per tenant", "Stack per tenant (silo)"],
+          rows: [
+            ["Many small customers", "Cheapest and simplest; all safety rests on code", "Same cost, plus a database safety net", "Many schemas to migrate; tooling needed", "Usually too much overhead per small tenant", "Rarely justified"],
+            ["Enterprise asks for a dedicated database", "Cannot offer it", "Cannot offer it", "Partial: separate namespace, shared server", "Yes", "Yes, with dedicated compute too"],
+            ["Data must stay in a named country", "Only if the whole pool runs there", "Only if the whole pool runs there", "Only if the server is in that region", "Place the database in the tenant's region", "Deploy the stack in the tenant's region"],
+            ["One tenant is a noisy neighbour", "Needs rate limits and per-tenant quotas", "Same", "Still shares server resources", "Isolates storage; compute may still be shared", "Fully isolated"],
+            ["Restore one tenant without touching others", "Needs tenant-scoped export or restore tooling", "Same", "Easier: restore one schema", "Straightforward", "Straightforward"],
+            ["Cost sensitivity", "Lowest", "Low", "Moderate", "Higher per tenant", "Highest per tenant"],
+            ["Operational effort for releases", "One deployment, one migration", "Same, plus policy maintenance", "Migration runs per schema", "Migration runs per database", "Each stack upgraded and monitored"],
+          ],
+        },
+        callout: {
+          type: "note",
+          text: "Azure's guidance says to \"Test your isolation model\" and verify \"that one tenant's data isn't accidentally leaked to another\". Whatever you choose, isolation is only as good as the tests that prove it.",
+        },
+      },
+      {
+        heading: "Cross-tenant risks and how to close them",
+        body: [
+          "A cross-tenant leak is an authorisation failure. OWASP's API Security Top 10 puts broken object level authorisation (BOLA) first: the server must check that the logged-in user \"has permissions to perform the requested action on the requested object\" ([[https://api-security.owasp.org/editions/2023/en/0xa1-broken-object-level-authorization|OWASP API1:2023]]). In a multi-tenant product the object check has two parts: is this record in the active organisation, and may this member act on it? The second part is permission design; the first is the tenant boundary, and it must hold even when the permission logic has a bug.",
+          "OWASP's [[https://cheatsheetseries.owasp.org/cheatsheets/Multi_Tenant_Security_Cheat_Sheet.html|Multi-Tenant Security Cheat Sheet]] is the best checklist for this layer. The table pairs its main warnings with practical controls.",
+        ],
+        table: {
+          headers: ["Risk", "What goes wrong", "Control"],
+          rows: [
+            ["Client-supplied tenant ID", "A request changes an organisation ID in the URL or header and the server trusts it", "OWASP: \"Treat client-supplied tenant identifiers as selectors only.\" Check membership on the server"],
+            ["Object ID without a tenant check", "A record is fetched by ID alone, so guessing or copying an ID exposes another tenant's data", "Scope every query by organisation in a shared data-access layer; random IDs help against enumeration but are not authorisation"],
+            ["Privileged database connection", "RLS policies exist, but the app connects as a role that bypasses them", "OWASP: \"Do not serve ordinary tenant-scoped requests through a privileged connection\""],
+            ["Shared cache", "A cached response for one tenant is served to another", "Include the tenant ID \"in every cache key whose value or authorization varies by tenant\""],
+            ["Shared queues and jobs", "A background job runs without tenant context and writes to the wrong organisation", "OWASP: \"A shared queue or topic is not itself a tenant-isolation boundary.\" Carry and re-check tenant context in every job"],
+            ["Exports and backups", "An export or restore pulls rows from several tenants", "OWASP notes \"A shared backup can contain data from several tenants\"; build tenant-scoped export and restore"],
+            ["Support and admin tools", "Internal tools run unscoped queries with no record of who looked at what", "Make any cross-tenant path \"explicit, separately authorized, and auditable\""],
+          ],
+        },
+      },
+      {
+        heading: "PostgreSQL row-level security, and the connections that skip it",
+        body: [
+          "Row-level security (RLS) lets the database itself filter rows by tenant. PostgreSQL's policies \"restrict, on a per-user basis, which rows can be returned by normal queries or inserted, updated, or deleted\", and if RLS is enabled with no policy, \"a default-deny policy is used\" ([[https://www.postgresql.org/docs/current/ddl-rowsecurity.html|PostgreSQL documentation]]). A common pattern sets the active organisation as a session setting at the start of each request or transaction, and a policy compares each row's organisation_id with it.",
+          "The catch is who RLS applies to. PostgreSQL states that \"Superusers and roles with the BYPASSRLS attribute always bypass the row security system\", and that table owners normally bypass it too unless the table uses FORCE ROW LEVEL SECURITY. Many applications connect as the role that owns the tables, which quietly switches RLS off. Run normal traffic through a separate, non-owner role; keep migrations and admin jobs on a different role; and if you use a connection pooler, make sure the tenant setting is reset per transaction so one request cannot inherit another's tenant.",
+        ],
+      },
+      {
+        heading: "Support and platform staff access",
+        body: [
+          "Support teams need to see what a customer sees. The risk is a standing god-mode account that can read every tenant with no trail. Give staff access through a support grant: one organisation, one reason or ticket reference, a narrow scope (read-only by default), an expiry measured in hours, and an approver. Log every action taken under the grant, and consider showing active grants to the customer's admins. The OWASP cheat sheet's line that \"a tenant-local admin is not implicitly a platform auditor\" works in both directions: neither a customer admin nor a support agent should gain the other's powers by accident. For what to record, see [[/blogs/saas-audit-logging|SaaS audit logging]].",
+        ],
+      },
+      {
+        heading: "SSO and SCIM per organisation",
+        body: [
+          "Enterprise customers usually want their staff to sign in through their own identity provider using SAML 2.0 or OpenID Connect, and to have accounts created and removed automatically through SCIM, defined in [[https://www.rfc-editor.org/rfc/rfc7644|RFC 7644]]. In the data model this is one identity connection per organisation, with verified email domains used to route users to the right provider and an option to enforce SSO for that organisation's members. A user who belongs to two organisations may sign in by SSO for one and by password for the other, which is another reason to keep memberships separate from the global user. The protocol choices, domain routing and just-in-time provisioning are covered in [[/blogs/enterprise-sso-implementation|enterprise SSO implementation]].",
+        ],
+      },
+      {
+        heading: "Data location and regional requirements",
+        body: [
+          "Data residency is easiest to handle per tenant. Give each organisation a home region, deploy a copy of the data tier (or the whole stack) in each region you support, and route each tenant's requests and storage there. Azure's guidance describes mapping tenants to separate deployments, including by geography. Residency covers more than the primary database: backups, logs, search indexes, file storage, analytics exports, email providers and the location of support staff who can access the data all count.",
+          "The major clouds have regions in most markets B2B buyers ask about. AWS lists Mumbai and Hyderabad, the UAE and Bahrain, Sydney and Melbourne, London and Singapore, and regions launched after 20 March 2019, such as the UAE region, must be enabled before use. Azure lists several India regions, UAE North and UAE Central (access restricted), three Australian regions, two UK regions and Singapore. Google Cloud lists Mumbai and Delhi, Sydney and Melbourne, London and Singapore, but no UAE region. Check the current lists before committing; links are in the sources below.",
+        ],
         checklist: [
-          "Resolve tenant from the authenticated session or token, never from client-supplied parameters alone.",
-          "Scope every query by tenant in a shared data-access layer, not ad hoc in each feature.",
-          "Use database row-level security or separate schemas as defence in depth where appropriate.",
-          "Model roles within each tenant, plus platform-level administrator roles with audited access.",
-          "Prefix cache keys, file paths and queue messages with tenant IDs.",
-          "Write automated tests that attempt cross-tenant reads and writes; see [[/blogs/api-security-best-practices|API security best practices]].",
+          "**Every market:** write down where each tenant's data, backups and logs live, and who can access them from where. Customers' security questionnaires ask exactly this.",
+          "**Australia:** if you are covered by the Privacy Act, APP 8 applies before personal information is disclosed overseas. The OAIC says to take \"such steps as are reasonable in the circumstances to ensure that the overseas recipient does not breach the APPs\", and treats overseas cloud storage as a 'use' rather than a disclosure only where a binding contract limits the provider's handling, binds subcontractors and gives you effective control ([[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information|OAIC APP 8 guidelines]]). See [[/blogs/cloud-migration-australia|cloud migration in Australia]] for hosting choices.",
+          "**India, the UAE, the UK and other markets:** cross-border and sector rules differ and change. Check current guidance for the customer's sector (health and financial data are often stricter) and take legal advice before promising a location. For UAE hosting regions, see [[/blogs/cloud-migration-uae|cloud migration in the UAE]].",
+          "**Contracts:** only promise residency you can prove for every copy of the data, including backups and sub-processors.",
         ],
       },
       {
@@ -110,47 +213,56 @@ export const auSaasEngineeringPosts: BlogPost[] = [
       {
         heading: "Testing and operations",
         body: [
-          "Test with several tenants in every environment, including tenants with different configurations. Monitor performance per tenant to spot noisy neighbours, apply rate limits and fair queues, and plan migrations so schema changes work for all tenants. Build tooling to export, import and delete a tenant's data, which supports customer offboarding, data requests and moving large tenants to dedicated resources.",
-        ],
-      },
-      {
-        heading: "Australian considerations",
-        body: [
-          "Australian customers, especially government suppliers, health and finance, may ask where their data is stored and who can access it. A hybrid model lets you offer dedicated data stores in Australian regions for those customers while pooling others. If you are covered by the Privacy Act, APP 8 applies to personal information accessed or stored overseas. See [[/blogs/cloud-migration-australia|cloud migration in Australia]].",
+          "Test with at least two tenants in every environment, including tenants with different configurations and regions. Keep a cross-tenant test suite that signs in as a member of organisation A and tries to read, change and delete organisation B's records through every endpoint and background job; run it in CI so new endpoints are covered automatically. The [[/blogs/api-security-best-practices|API security guide]] covers the wider API checks.",
+          "Monitor performance per tenant to spot noisy neighbours, and apply per-tenant rate limits and fair queues. Plan schema migrations so they work for every tenant and every isolation tier. Build tooling to export, import, restore and delete one tenant's data; OWASP warns against restoring \"a shared snapshot over live data to recover only one tenant\". The same tooling supports offboarding, data requests and moving a large tenant to dedicated resources.",
         ],
       },
       {
         heading: "Hypothetical example",
         body: [
-          "**This example is hypothetical.** A compliance SaaS starts pooled, with tenant IDs on every table and row-level security in the database. Two enterprise customers later require dedicated databases in an Australian region. Because the data layer already routes by tenant and export tooling exists, the team adds a tenant-to-database mapping and moves those tenants without changing application code.",
+          "**This example is hypothetical.** A compliance SaaS starts pooled, with organisation_id on every table, a shared data-access layer and PostgreSQL row-level security as a second layer. An external auditor is a member of three customer organisations, with a read-only role in each; she switches between them from one login, and the cross-tenant test suite proves none of her roles leaks into another organisation.",
+          "A year later an enterprise customer requires a dedicated database in a different region and SSO for its staff. Because each organisation already stores a home region and the data layer routes by tenant, the team provisions a database in that region, moves the tenant with its export tooling, adds an identity connection with the customer's verified domain, and leaves every other tenant untouched. During the move they find that the reporting job connects as the table-owner role and so bypasses RLS; they switch it to a scoped role before cut-over.",
+        ],
+      },
+      {
+        heading: "When this is more than you need",
+        body: [
+          "If you build an internal tool for one company, or software that each customer runs in its own environment, most of this page does not apply; a single-tenant design is simpler and safer. If you have only a handful of large customers with strict contracts, separate deployments per customer may cost less to operate safely than a pooled platform with strong isolation. And row-level security is not worth adding if no one on the team will maintain the policies and the role setup; an unmaintained safety net gives false confidence. The parts that apply to almost every B2B product are memberships separate from users, server-side tenant checks and a cross-tenant test suite.",
         ],
       },
       {
         heading: "Common mistakes",
         body: [],
         checklist: [
-          "Tenant ID taken from a URL parameter without checking the session.",
-          "Caches shared across tenants without tenant-aware keys.",
-          "Customer-specific code branches.",
-          "No per-tenant monitoring, so noisy neighbours go unnoticed.",
-          "No tooling to move or delete a tenant.",
-        ],
-      },
-      {
-        heading: "Related guides",
-        body: [
-          "For related guides, see [[/blogs/database-performance-optimization|database performance optimisation]], [[/blogs/product-analytics-implementation-australia|product analytics]] at account level, [[/blogs/devops-for-growing-businesses|DevOps for growing businesses]] and [[/blogs/privacy-by-design-software-australia|privacy by design]].",
+          "Tenant ID taken from a URL parameter without checking membership.",
+          "Roles stored on the user, so a user in two organisations has the same rights in both.",
+          "The application connecting to the database as the table owner, so RLS is silently skipped.",
+          "Caches, queues and file paths shared across tenants without tenant-aware keys.",
+          "Support staff with permanent access to every tenant and no audit trail.",
+          "Promising data residency while backups and logs live elsewhere.",
+          "No tooling to restore, move or delete one tenant.",
         ],
       },
       {
         heading: "Conclusion",
         body: [
-          "Multi-tenancy works when tenant boundaries are designed in from the start: tenant context on every request, scoped data access, tenant-aware infrastructure, per-tenant metering and automated isolation tests. Choose pooled, siloed or hybrid per customer need, and keep the option to move tenants as requirements change. For access control within each tenant, see [[/blogs/saas-roles-and-permissions|SaaS roles and permissions]]. For tenant-scoped evidence trails, see [[/blogs/saas-audit-logging|SaaS audit logging]].",
+          "Multi-tenancy works when the tenant boundary is designed in from the start: global users with per-organisation memberships, an active organisation verified on the server, scoped data access with a database safety net that privileged connections cannot skip, audited support access, and a home region per tenant. Choose pooled, siloed or hybrid per customer requirement, and keep the tooling to move tenants as those requirements change.",
+          "Next steps: map your current schema against the reference model above, list every database role your application uses, and write the first cross-tenant tests. Then decide permissions inside each organisation with [[/blogs/saas-roles-and-permissions|the SaaS roles and permissions guide]], and read [[/blogs/scaling-saas-applications|scaling SaaS applications]] and [[/blogs/database-performance-optimization|database performance optimisation]] for growth.",
         ],
         cta: {
-          title: "Designing a multi-tenant product?",
-          description: "ZSpace Labs is an India-based, remote-first technology studio working with Australian and international businesses on [[/services/website-development|SaaS architecture and engineering]]. If it would help to review your tenancy model, we are happy to talk it through.",
+          title: "Designing a B2B product for multiple organisations?",
+          description: "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/website-development|SaaS architecture and engineering]] and [[/services/ui-ux-design|role and admin interface design]]. If useful, we can review your tenant model, roles and isolation tests with your team before you scale.",
         },
+      },
+      {
+        heading: "Sources",
+        body: [
+          "Architecture: [[https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/silo-pool-and-bridge-models.html|AWS SaaS Lens: silo, pool and bridge models]] (vendor documentation); [[https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/considerations/tenancy-models|Azure Architecture Center: tenancy models]] (vendor documentation).",
+          "Security: [[https://cheatsheetseries.owasp.org/cheatsheets/Multi_Tenant_Security_Cheat_Sheet.html|OWASP Multi-Tenant Security Cheat Sheet]]; [[https://api-security.owasp.org/editions/2023/en/0xa1-broken-object-level-authorization|OWASP API Security Top 10 2023: API1 Broken Object Level Authorization]]; [[https://www.postgresql.org/docs/current/ddl-rowsecurity.html|PostgreSQL 18 documentation: row security policies]].",
+          "Identity: [[https://www.rfc-editor.org/rfc/rfc7644|RFC 7644: SCIM protocol]]; [[https://openid.net/specs/openid-connect-core-1_0.html|OpenID Connect Core 1.0]]; [[https://docs.oasis-open.org/security/saml/v2.0/saml-core-2.0-os.pdf|OASIS SAML V2.0 core]].",
+          "Regions and data location: [[https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html|AWS regions]]; [[https://learn.microsoft.com/en-us/azure/reliability/regions-list|Azure regions list]]; [[https://docs.cloud.google.com/compute/docs/regions-zones|Google Cloud regions and zones]] (vendor documentation); [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information|OAIC: APP 8 guidelines]].",
+          "Accessed 15 October 2026. Cloud region lists and privacy rules change; check the current pages and take legal advice on data location.",
+        ],
       },
     ],
   },

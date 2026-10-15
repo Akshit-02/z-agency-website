@@ -449,6 +449,14 @@ export const commercePosts40: BlogPost[] = [
         },
       },
       {
+        heading: "Buy Again on Shopify",
+        body: [
+          "If your store runs on Shopify, part of this comes built in. [[https://help.shopify.com/en/manual/customers/customer-accounts/new-customer-accounts|New customer accounts]] let customers sign in to view and manage their orders, and the order actions include “Buy again” alongside starting a return and leaving a review. Customers sign in with a one-time six-digit code sent to their email rather than a password, and sessions can last up to 365 days, which removes much of the friction between a customer and their order history. Check on a development store how the native button handles your own products before designing around it.",
+          "The [[https://help.shopify.com/en/manual/online-sales-channels/shop|Shop channel]] adds a post-purchase touchpoint: with Track with Shop turned on, customers can install the Shop app from the order status page and track packages there, and you can use posts and post-purchase offers to stay in touch. Shop is available only in countries where Shopify Payments is supported. India is not on [[https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries|that list]], so India-based stores should not plan around it.",
+          "For regular buyers, the [[https://help.shopify.com/en/manual/products/purchase-options/shopify-subscriptions|Shopify Subscriptions app]] creates auto-billed subscriptions that renew weekly, monthly or yearly, and customers can resume, skip or cancel them from their customer account. It works only with certain payment gateways; see [[/blogs/shopify-subscription-store|building a Shopify subscription store]] for the details.",
+        ],
+      },
+      {
         heading: "Measuring the Reorder Experience",
         body: [
           "Track the share of repeat orders placed through reorder features (buy again, reminders, order history), time between orders for repeat customers, reminder click-through and conversion, and support contacts about finding past products. Compare customers exposed to new reorder features with a holdout where possible. See [[/blogs/ecommerce-customer-retention|ecommerce customer retention]].",

@@ -869,7 +869,7 @@ export const webDevPosts7: BlogPost[] = [
       {
         heading: "Integrations",
         body: [
-          "List every system the site must connect to: CRM, marketing automation, search, commerce, product information, analytics. Check whether the CMS supports these natively, through an app marketplace, or only through custom API work. See [[/blogs/website-api-integrations-list|common website integrations]] for a reference list.",
+          "List every system the site must connect to: CRM, marketing automation, search, commerce, product information, analytics. Check whether the CMS supports these natively, through an app marketplace, or only through custom API work. See [[/blogs/website-api-integrations-list|common website integrations]] for a reference list. A CMS is built for content; operational back offices are a different choice, covered in [[/blogs/admin-panel-build-vs-buy|admin panel build vs buy]].",
         ],
       },
       {
@@ -1024,7 +1024,7 @@ export const webDevPosts7: BlogPost[] = [
       {
         heading: "Admin Experience and Custom Workflows",
         body: [
-          "WordPress's admin serves everyone reasonably well and nobody perfectly. For a marketing team publishing articles, that's fine. For an operations team managing hundreds of structured records with validation rules, approval stages and role-specific views, a custom admin can remove real daily friction. Good admin design is a UX problem as much as a development one, which is why ZSpace Labs treats it as part of [[/services/ui-ux-design|UI/UX design]].",
+          "WordPress's admin serves everyone reasonably well and nobody perfectly. For a marketing team publishing articles, that's fine. For an operations team managing hundreds of structured records with validation rules, approval stages and role-specific views, a custom admin can remove real daily friction. Good admin design is a UX problem as much as a development one, which is why ZSpace Labs treats it as part of [[/services/ui-ux-design|UI/UX design]]. If the admin you need is mostly for orders, customers or operations rather than content, see [[/blogs/admin-panel-build-vs-buy|how to choose between a CMS, a framework admin, an internal-tool builder or a custom admin panel]].",
         ],
         visual: {
           variant: "rows",

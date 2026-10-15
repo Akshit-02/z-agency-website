@@ -355,7 +355,7 @@ export const uaeSoftwarePosts2: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "A good MVP in the UAE is narrow, trustworthy and measurable. Validate the problem with real users, scope with a written Won't list, test with the cheapest prototype that answers your question, then build the Must haves to production quality on simple, well-supported technology. Make the product Arabic-ready, choose payments and identity deliberately, staff WhatsApp support with people, and handle personal data properly from the first user.",
-          "Set activation and retention thresholds before launch, and let them decide whether you persevere, pivot or stop. That discipline costs less than any feature you will not need.",
+          "Set activation and retention thresholds before launch, and let them decide whether you persevere, pivot or stop. That discipline costs less than any feature you will not need. To decide feature by feature what belongs in the first release, use the worksheet in [[/blogs/saas-mvp-feature-prioritisation|our SaaS MVP feature-prioritisation guide]].",
         ],
         cta: {
           title: "Shaping an MVP for the UAE?",

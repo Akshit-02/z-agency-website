@@ -342,7 +342,7 @@ export const commercePosts4: BlogPost[] = [
       {
         heading: "Read It With Other Metrics",
         body: [
-          "Conversion rate says nothing about how much each order is worth or whether it's profitable. A discount can raise the rate and lower profit. Always read it next to these metrics.",
+          "Conversion rate says nothing about how much each order is worth or whether it's profitable. A discount can raise the rate and lower profit. Always read it next to these metrics. For experience measures such as task success, SEQ and SUS, see [[/blogs/ux-metrics-beyond-conversion-rate|UX metrics beyond conversion rate]].",
         ],
         checklist: [
           "Average order value",

@@ -125,7 +125,7 @@ export const commercePosts87: BlogPost[] = [
       {
         heading: "How to Choose",
         body: [
-          "Start with the problems. Overselling across channels, routing orders across several locations and complex returns point to OMS capability. Stockouts, overstock, inaccurate counts and purchasing pain point to IMS or ERP capability. Many businesses need better data ownership more than new software. When evaluating, check integration patterns, real-time availability, multi-location support and how each system handles reservations.",
+          "Start with the problems. Overselling across channels, routing orders across several locations and complex returns point to OMS capability. Stockouts, overstock, inaccurate counts and purchasing pain point to IMS or ERP capability. Many businesses need better data ownership more than new software. When evaluating, check integration patterns, real-time availability, multi-location support and how each system handles reservations. If you run Shopify, check first what [[/blogs/shopify-multi-location-inventory-management|Shopify's native multi-location inventory]] already covers.",
         ],
       },
       {
@@ -252,7 +252,7 @@ export const commercePosts87: BlogPost[] = [
       {
         heading: "Sourcing Rules",
         body: [
-          "Sourcing rules decide which eligible node fulfils each line. Treat them as weighted trade-offs rather than one sort order. Cheapest shipping may mean a slower promise; nearest store may mean a split. Most teams start with a short sequence: filter to nodes that can ship the item to the destination within the promise, prefer nodes that can fill the whole order, then rank by cost and capacity.",
+          "Sourcing rules decide which eligible node fulfils each line. Treat them as weighted trade-offs rather than one sort order. Cheapest shipping may mean a slower promise; nearest store may mean a split. Most teams start with a short sequence: filter to nodes that can ship the item to the destination within the promise, prefer nodes that can fill the whole order, then rank by cost and capacity. Shopify's built-in order routing rules are covered in [[/blogs/shopify-multi-location-inventory-management|the Shopify multi-location inventory guide]].",
         ],
         diagram: {
           variant: "domrules",

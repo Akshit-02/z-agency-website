@@ -31,9 +31,9 @@ export const commercePosts60: BlogPost[] = [
       { q: "What can developers do on Plus that they can't on other plans?", a: "According to Shopify's plan documentation, Plus includes checkout UI extensions on the information, shipping and payment steps, the Checkout Branding API, Shopify Functions in custom apps, advanced B2B features and expansion stores, among others. Check the current plan page, as features change." },
       { q: "Is checkout.liquid still used?", a: "No. Shopify has moved checkout customization to checkout extensibility (UI extensions, branding, Functions and pixels) and deprecated checkout.liquid." },
       { q: "What are Shopify Functions?", a: "Custom backend logic that runs on Shopify's infrastructure to customize discounts, delivery options, payment options, cart and checkout validation and more. Public apps with Functions are available on all plans; custom apps using Functions require Plus." },
-      { q: "What B2B features does Plus include?", a: "Company accounts with locations, catalogs with specific pricing, payment terms, deposits and partial payments, and B2B on the same store or in a dedicated expansion store, per Shopify's documentation." },
+      { q: "What B2B features does Plus include?", a: "Most B2B features are no longer Plus-only. Since April 2026, companies and locations, payment terms, volume pricing, vaulted cards and up to three B2B catalogs are on Basic, Grow and Advanced, and market-tailored B2B storefront and checkout are on Advanced and Plus. Plus adds unlimited catalogs, direct catalog assignment to companies and locations, deposits and partial payments, plus expansion stores for a dedicated B2B store, per Shopify's documentation." },
       { q: "What are expansion stores?", a: "Additional stores included with Plus, used for international markets, separate brands or B2B wholesale. Shopify's documentation lists up to nine expansion stores." },
-      { q: "Does Plus require headless?", a: "No. Most Plus stores use Liquid themes. Hydrogen and other headless approaches are options where they're justified; Plus includes more Hydrogen storefronts than other plans." },
+      { q: "Does Plus require headless?", a: "No. Most Plus stores use Liquid themes. Hydrogen and other headless approaches are options where they're justified. Oxygen hosting is available on all paid plans; Plus gets 25 public Oxygen environments, against 1 on other paid plans." },
       { q: "What is Launchpad?", a: "A Plus tool for scheduling and automating events such as sales and product launches, including theme changes, discounts and product visibility." },
       { q: "How is development governed on Plus?", a: "With staff permissions, development and staging stores, version control for themes and apps, code review, and change processes for checkout and Functions, which affect every order." },
       { q: "When is Plus worth it?", a: "When your business needs Plus-only capabilities (checkout customization, custom Functions, advanced B2B, expansion stores, higher limits) and the value outweighs the cost. See our Plus vs Shopify comparison." },
@@ -42,7 +42,7 @@ export const commercePosts60: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "Shopify Plus development adds enterprise capabilities to normal theme and app work: checkout customization through checkout extensibility (including UI extensions on the information, shipping and payment steps), Shopify Functions in custom apps for discounts, delivery, payment and validation logic, B2B with company accounts, catalogs and payment terms, expansion stores, Launchpad and automation. Headless with Hydrogen is optional. Because checkout and Functions affect every order, Plus projects need stronger governance: staging stores, version control, code review and careful release management.",
+          "Shopify Plus development adds enterprise capabilities to normal theme and app work: checkout customization through checkout extensibility (including UI extensions on the information, shipping and payment steps), Shopify Functions in custom apps for discounts, delivery, payment and validation logic, advanced B2B (unlimited catalogs, direct catalog assignment, deposits and partial payments, on top of the B2B features every plan now has), expansion stores, Launchpad and automation. Headless with Hydrogen is optional. Because checkout and Functions affect every order, Plus projects need stronger governance: staging stores, version control, code review and careful release management.",
         ],
       },
       {
@@ -56,10 +56,10 @@ export const commercePosts60: BlogPost[] = [
           rows: [
             ["Checkout", "Checkout UI extensions on all steps, Checkout Branding API", "Extensions, branding, pixels"],
             ["Business logic", "Shopify Functions in custom apps", "Discount, delivery, payment, validation Functions"],
-            ["B2B", "Company accounts, catalogs, payment terms, deposits", "B2B storefront, ERP integration"],
+            ["B2B", "Unlimited and directly assigned catalogs, deposits, partial payments (core B2B is on all plans)", "B2B storefront, ERP integration"],
             ["Stores", "Expansion stores (up to nine)", "Multi-store architecture, shared code"],
             ["Automation", "Launchpad, Shopify Flow", "Campaign scheduling, workflows"],
-            ["Headless", "More Hydrogen storefronts", "Optional custom storefronts"],
+            ["Headless", "25 public Oxygen environments (1 on other paid plans)", "Optional custom storefronts"],
             ["Operations", "Unlimited staff, more locations", "Permissions, governance"],
           ],
         },
@@ -101,9 +101,9 @@ export const commercePosts60: BlogPost[] = [
         },
       },
       {
-        heading: "B2B on Plus",
+        heading: "B2B: What Plus Adds",
         body: [
-          "Plus includes B2B features for selling to businesses from Shopify: company accounts with multiple locations and buyers, catalogs with specific products and prices, volume pricing and quantity rules, payment terms, deposits and partial payments, and vaulted payment methods. B2B can run in the same store as direct-to-consumer (blended) or in a dedicated expansion store. Development work typically includes the B2B buyer experience in the theme, quick order and reorder tools, and ERP integration for accounts, pricing and orders. See [[/blogs/b2b-ecommerce-website-development|B2B ecommerce development]].",
+          "Since April 2026, Shopify's core B2B features are on every plan, not only Plus: company accounts with locations, volume pricing and quantity rules, payment terms, vaulted cards and up to three B2B catalogs on Basic, Grow and Advanced. Market-tailored B2B storefront and checkout need Advanced or Plus. What Plus adds is unlimited catalogs, direct catalog assignment to companies and locations, deposits and partial payments (Shopify changelog, 2 April 2026, and Shopify Help Center). On Plus, B2B can run in the same store as direct-to-consumer (blended) or in a dedicated expansion store. Development work typically includes the B2B buyer experience in the theme, quick order and reorder tools, and ERP integration for accounts, pricing and orders. See [[/blogs/b2b-ecommerce-website-development|B2B ecommerce development]], and for which plan a wholesale model actually needs, [[/blogs/shopify-for-b2b-ecommerce|Shopify for B2B ecommerce]].",
         ],
       },
       {
@@ -137,7 +137,7 @@ export const commercePosts60: BlogPost[] = [
       {
         heading: "Headless and Hydrogen on Plus",
         body: [
-          "Plus includes more Hydrogen storefronts than other plans (Shopify's plan documentation lists up to 25), but headless is a choice, not a requirement. Most Plus stores are well served by Liquid themes, which keep theme apps, the theme editor and lower maintenance. Consider Hydrogen or another headless stack when there are clear needs such as highly custom experiences, complex content integration or multiple frontends, and the team to maintain them. See [[/blogs/shopify-hydrogen-vs-traditional-shopify|Hydrogen vs traditional Shopify]].",
+          "Oxygen, Shopify's hosting for Hydrogen, is available on every paid plan, and Plus gets 25 public Oxygen environments against 1 on other paid plans (Shopify's Oxygen environments documentation). But headless is a choice, not a requirement. Most Plus stores are well served by Liquid themes, which keep theme apps, the theme editor and lower maintenance. Consider Hydrogen or another headless stack when there are clear needs such as highly custom experiences, complex content integration or multiple frontends, and the team to maintain them. See [[/blogs/shopify-hydrogen-vs-traditional-shopify|Hydrogen vs traditional Shopify]].",
         ],
       },
       {
@@ -226,118 +226,175 @@ export const commercePosts60: BlogPost[] = [
   // ---------------------------------------- 354 · HYDROGEN VS TRADITIONAL SHOPIFY
   {
     slug: "shopify-hydrogen-vs-traditional-shopify",
-    title: "Shopify Hydrogen vs Traditional Shopify: Liquid, Hydrogen or Other Headless?",
-    seoTitle: "Shopify Hydrogen vs Traditional Shopify: Which to Choose?",
-    excerpt: "Liquid themes, Hydrogen and other headless stacks compared: frontend, hosting, apps, editing, performance, cost, team needs and how to decide for your store.",
+    title: "Shopify Hydrogen vs Traditional Shopify: Is Headless Worth It?",
+    seoTitle: "Hydrogen vs Traditional Shopify: Is Headless Worth It?",
+    excerpt: "Liquid theme, Hydrogen or your own Storefront API build? What Hydrogen 2026-10 changed, Oxygen limits, apps, Markets and a cost worksheet to fill in.",
     category: "Shopify & Ecommerce",
-    banner: "hydrogencompare",
+    banner: "headlessshopify",
+    sceneKind: "compare",
     bannerAlt:
-      "Comparison of Liquid themes (highlighted), Hydrogen and other headless stacks: frontend is theme and Liquid vs React Router vs any framework; hosting is Shopify vs Oxygen or self-hosted vs your choice; apps are theme apps vs API-based vs API-based; control is within theme limits vs full frontend vs full frontend; upkeep is lowest vs engineering team vs engineering team, noting that checkout stays on Shopify in every option.",
+      "A Liquid theme compared with a headless Shopify storefront. On the theme side, Shopify renders every page and the theme editor handles content. On the headless side, your own front end (Hydrogen or Next.js), a CMS, search and hosting sit on the Storefront API. Checkout and Shopify core stay on Shopify in both: one system to run versus more freedom and more to own.",
     date: "2026-09-29",
-    readingTime: "17 min read",
+    updated: "2026-10-15",
+    readingTime: "12 min read",
     relatedServiceSlugs: ["shopify-development", "website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["ecommerce", "retail", "fashion-apparel"],
+    relatedSlugs: ["headless-shopify-explained", "shopify-hydrogen", "headless-ecommerce-architecture"],
     faqs: [
-      { q: "What is traditional Shopify?", a: "A Shopify store using an Online Store theme built with Liquid, hosted and rendered by Shopify, edited in the theme editor and extended with theme app extensions." },
-      { q: "What is Shopify Hydrogen?", a: "Shopify's framework for building custom headless storefronts. It's built on React Router, uses the Storefront API and Customer Account API, and can be deployed to Oxygen (Shopify's hosting) or self-hosted." },
-      { q: "What does 'other headless' mean?", a: "Building a storefront with another framework (such as Next.js or Nuxt) against the Storefront API, often through Shopify's Headless channel, and hosting it yourself or on a platform of your choice." },
-      { q: "Does checkout change with headless?", a: "No. In all three options, checkout runs on Shopify's checkout, customized through checkout extensibility." },
-      { q: "Do Shopify apps work with Hydrogen?", a: "Theme apps that rely on the Online Store theme don't work directly. Apps that offer APIs or headless SDKs can be integrated, usually with development work." },
-      { q: "Is Hydrogen faster than a Liquid theme?", a: "Not automatically. Both can be fast or slow depending on implementation. Headless gives more control over performance but also more ways to get it wrong." },
-      { q: "Is headless more expensive?", a: "Usually, over the life of the store: it needs developers to build and maintain the frontend, hosting and integrations, while themes rely more on Shopify and the app ecosystem." },
-      { q: "When should I choose Hydrogen over other headless frameworks?", a: "When you want a Shopify-optimized stack with built-in Shopify components, Oxygen deployment and order attribution through the Hydrogen channel, and your team is comfortable with React." },
-      { q: "When should I stay on a Liquid theme?", a: "When your needs fit within themes and apps, your team is small or non-technical, and you value the theme editor and lower maintenance. That covers most stores." },
-      { q: "Can I switch later?", a: "Yes. Products, customers and orders stay in Shopify, so the frontend can change. Plan URLs, redirects, tracking and content migration carefully." },
+      { q: "What is traditional Shopify?", a: "A store using an Online Store theme built with Liquid. Shopify hosts and renders it, your team edits it in the theme editor, and apps add features through theme app extensions." },
+      { q: "What is Shopify Hydrogen now?", a: "Since Hydrogen 2026-10, released on 14 October 2026, Shopify describes it as a framework-agnostic JavaScript library for adding Shopify commerce to an existing stack, with starters for React Router and Next.js. Earlier versions were React Router apps. Shopify says existing Hydrogen storefronts keep working as they do now." },
+      { q: "Is Hydrogen still tied to React Router?", a: "Not any more. React Router is one of two starters; Next.js is the other. If your storefront was built on an earlier version, it keeps working, but Shopify recommends migrating older storefronts, so plan for that in your roadmap." },
+      { q: "Is Oxygen hosting free?", a: "Shopify's documentation says Oxygen is available at no extra charge on paid plans, including Starter, and on development stores, Plus Partner Sandbox stores and trial plans. It isn't available on Agentic plans. Plus gets 25 public environments; other paid plans get 1." },
+      { q: "Does checkout change with headless?", a: "No. Shopify's Help Center says customers on a custom storefront check out using the Shopify Checkout. You still customise it through checkout extensibility, with the same plan limits as a theme store." },
+      { q: "Do Shopify apps work on a headless storefront?", a: "Back-office apps usually do. Apps that add storefront features through theme app extensions don't, because Shopify documents those extensions as integrating with Online Store 2.0 themes. You need the app's API or SDK, or a rebuild of the feature." },
+      { q: "Is headless faster than a Liquid theme?", a: "Not automatically. Headless gives you more control over rendering, caching and scripts, and more ways to get them wrong. Compare measured performance of a prototype against your current theme rather than relying on the label." },
+      { q: "Can I use Shopify Markets with a headless storefront?", a: "Yes. The Storefront API returns local prices and filters products by country when you pass a country context, and the cart takes a buyer country. You have to build the routing, such as country subfolders or domains, in your own front end." },
+      { q: "Can I run more than one headless storefront?", a: "Yes. Shopify's Headless channel allows up to 100 active storefronts and access tokens per shop, and each storefront is treated as its own channel for product publishing and order attribution. Public Oxygen environments are a separate limit set by your plan." },
+      { q: "Can I switch back to a theme later?", a: "Yes. Products, customers, orders and checkout stay in Shopify, so only the front end changes. Plan URLs and redirects, tracking, content migration and app replacements as you would for any migration." },
     ],
     content: [
       {
-        heading: "Quick answer",
+        heading: "Should You Go Headless on Shopify?",
         body: [
-          "Most stores should stay on a Liquid theme: Shopify hosts it, the theme editor lets teams make changes, theme apps work, and maintenance is lowest. Hydrogen suits stores that need a highly custom frontend and have a React team, and want a Shopify-optimized framework with Oxygen hosting. Other headless frameworks suit teams with an existing stack or content needs that justify full control. In all three, checkout stays on Shopify. Decide from requirements, team capacity and total cost, not from performance claims alone.",
+          "For most stores, no. A Liquid theme is hosted by Shopify, edited by merchandisers in the theme editor, extended by theme apps and maintained with the least engineering. Headless earns its cost when the storefront itself must do something a theme can't do well, such as a complex configurator, content-led commerce from a separate CMS or several front ends sharing one catalogue, and when you can fund a web team to run it for years.",
+          "The choice also changed on 14 October 2026. Hydrogen 2026-10 turned Hydrogen from a React Router framework into a library you can add to React Router or Next.js. So the realistic options are now a Liquid theme, the Hydrogen library on your chosen framework (hosted on Oxygen or elsewhere), or your own build on the Storefront API without Hydrogen. In every case, checkout, orders and products stay on Shopify.",
         ],
       },
       {
-        heading: "Three Options, Not Two",
-        body: [
-          "\"Hydrogen vs traditional Shopify\" is often framed as a two-way choice, but there are three realistic options. A Liquid theme on Shopify's Online Store. A Hydrogen storefront, Shopify's own headless framework. And headless with another framework, such as Next.js, against Shopify's Storefront API. Shopify's documentation describes these build options, including Hydrogen, Hydrogen React with other React frameworks, and the Headless channel for any stack (Shopify developer docs).",
-          "This article compares all three. For headless concepts, see [[/blogs/headless-shopify-explained|headless Shopify explained]]; for Hydrogen in depth, see [[/blogs/shopify-hydrogen|Shopify Hydrogen development]].",
-        ],
-      },
-      {
-        heading: "Side-by-Side Comparison",
+        heading: "Key Takeaways",
         body: [],
+        checklist: [
+          "Hydrogen 2026-10 is a framework-agnostic library with React Router and Next.js starters; existing Hydrogen storefronts keep working.",
+          "Oxygen is included on every paid plan from Starter upward, but not on Agentic plans. Plus gets 25 public environments; other paid plans get 1.",
+          "Theme app extensions work with Online Store 2.0 themes, so storefront apps need an API, SDK or rebuild when you go headless.",
+          "The Storefront API has no fixed request limit for real buyer traffic, but it throttles checkout creation, and server-side calls should pass the buyer's IP.",
+          "The main cost of headless is the team that keeps it running, not the hosting. Use the worksheet below with your own quotes.",
+        ],
+      },
+      {
+        heading: "What Changed With Hydrogen 2026-10",
+        body: [
+          "Shopify's changelog for 14 October 2026 describes the new Hydrogen as \"a framework-agnostic JavaScript library to add Shopify commerce to your existing stack\". React Router and Next.js have starters ready to deploy, and you \"can host it anywhere, including Oxygen, which is still free\". Existing Hydrogen storefronts \"keep working as they do now\" ([[https://shopify.dev/changelog/blog/hydrogen-2026-10-is-now-available|Shopify changelog]]).",
+          "Two practical consequences follow. First, the old question \"Hydrogen or Next.js?\" mostly disappears: a Next.js team can now use Hydrogen. The real question is whether you use Shopify's library at all or write your own Storefront API layer. Second, much of Shopify's existing Hydrogen documentation, including the Oxygen and analytics pages cited here, is now labelled as covering \"Hydrogen versions 2026-04 and earlier\". Treat the limits below as the current documented position and check the latest docs before you sign a build contract. If an agency proposal still describes Hydrogen as \"React Router only\", ask how it accounts for the new version.",
+        ],
+        callout: {
+          type: "note",
+          text: "Hydrogen 2026-10 was released one day before this update. Expect the documentation, starters and agency advice to keep changing for a while. Ask any partner which Hydrogen version and API version they will build on.",
+        },
+      },
+      {
+        heading: "The Three Options in 2026",
+        body: [
+          "The table compares the three routes. \"Rebuild\" means your team writes the feature; \"integrate\" means connecting a third-party service or an app's API.",
+        ],
         table: {
-          headers: ["", "Liquid theme", "Hydrogen", "Other headless"],
+          headers: ["", "Liquid theme", "Hydrogen library (React Router or Next.js)", "Storefront API without Hydrogen"],
           rows: [
-            ["Frontend technology", "Liquid templates, sections, JS", "React Router-based framework", "Framework of your choice"],
-            ["Hosting", "Shopify", "Oxygen or self-hosted", "Your hosting provider"],
-            ["Data access", "Liquid objects, Ajax APIs", "Storefront API, Customer Account API", "Storefront API, Customer Account API"],
-            ["Editing", "Theme editor", "Custom or CMS-based", "Custom or CMS-based"],
-            ["Apps", "Theme app extensions work", "API-based integration", "API-based integration"],
-            ["Checkout", "Shopify checkout", "Shopify checkout", "Shopify checkout"],
-            ["Team needed", "Theme developers, merchandisers", "React developers", "Framework developers"],
-            ["Maintenance", "Lowest", "Higher", "Higher"],
-            ["Control", "Within theme architecture", "Full frontend", "Full frontend"],
+            ["What you build", "Theme sections and blocks in Liquid, CSS and JavaScript", "A web app on your framework, using Shopify's library for commerce", "A web app plus your own Shopify data layer"],
+            ["Hosting", "Shopify", "Oxygen (included on paid plans) or your own host", "Your own host"],
+            ["Content editing", "Theme editor", "A CMS or custom tooling", "A CMS or custom tooling"],
+            ["Storefront apps", "Theme app extensions work", "API or SDK integration, or rebuild", "API or SDK integration, or rebuild"],
+            ["Checkout", "Shopify Checkout", "Shopify Checkout", "Shopify Checkout"],
+            ["Team", "Theme developer, merchandisers", "Web developers on your framework, plus someone to run deployments", "As Hydrogen, with more Shopify-specific code to own"],
+            ["Ongoing upkeep", "Lowest", "Higher", "Highest"],
           ],
         },
       },
       {
-        heading: "Liquid Themes: The Default for Good Reasons",
+        heading: "What Changes When You Go Headless",
         body: [
-          "Online Store themes are rendered by Shopify, built from Liquid templates and JSON-based sections, and edited visually in the theme editor. Merchants can rearrange sections, add app blocks and change content without developers. Themes benefit from Shopify's hosting and CDN, and theme app extensions let apps add features without code edits.",
-          "Themes have limits: rendering is server-side through Liquid, some complex interactions require substantial JavaScript, and very custom experiences can strain the theme model. But for most stores, a well-built theme meets needs with the lowest total cost. See [[/blogs/shopify-theme-development|Shopify theme development]].",
+          "This is the matrix to take into a scoping call. For each row, ask the agency or your team which of native, rebuild or integrate applies, and who maintains it afterwards.",
+        ],
+        table: {
+          headers: ["Feature", "Liquid theme", "Hydrogen library", "Own Storefront API stack"],
+          rows: [
+            ["Checkout", "Native (Shopify Checkout)", "Native (Shopify Checkout)", "Native (Shopify Checkout)"],
+            ["Storefront apps (reviews, bundles, back-in-stock)", "Native via theme app extensions", "Integrate via app API or SDK, or rebuild", "Integrate via app API or SDK, or rebuild"],
+            ["Content and layout editing", "Native (theme editor)", "Integrate a CMS", "Integrate a CMS"],
+            ["Markets (prices, currencies, availability)", "Native", "Rebuild routing; prices via API context", "Rebuild routing; prices via API context"],
+            ["Customer accounts", "Native", "Rebuild with the Customer Account API", "Rebuild with the Customer Account API"],
+            ["Analytics and consent", "Native via theme and pixels", "Rebuild using Shopify's patterns and the Customer Privacy API", "Rebuild"],
+            ["Search and filters", "Native (theme plus Search & Discovery)", "Rebuild via API or integrate a search service", "Rebuild via API or integrate a search service"],
+            ["SEO basics (rendering, metadata, sitemaps, structured data, redirects)", "Mostly native", "Rebuild", "Rebuild"],
+          ],
+        },
+      },
+      {
+        heading: "Oxygen: Which Plans Get It and How Many Environments",
+        body: [
+          "Oxygen is Shopify's hosting for Hydrogen storefronts. It is available at no extra charge on Starter, Basic, Grow, Advanced, Plus and Pause and build, and on development stores, Plus Partner Sandbox stores and trial plans. Shopify states that \"Oxygen isn't available on Agentic plans\" ([[https://shopify.dev/docs/storefronts/headless/hydrogen/fundamentals|Shopify: Hydrogen fundamentals]]).",
+          "The plan decides how many public environments you get. Environments are private by default, so only people logged in to your store can see them; a public environment is one shoppers can reach ([[https://shopify.dev/docs/storefronts/hydrogen/deploy/oxygen/environments|Shopify: Oxygen environments]]).",
+        ],
+        table: {
+          headers: ["Plan", "Oxygen available", "Public environments"],
+          rows: [
+            ["Starter, Basic, Grow, Advanced", "Yes", "1"],
+            ["Shopify Plus", "Yes", "25"],
+            ["Pause and build", "Yes", "1"],
+            ["Plus Partner Sandbox stores", "Yes", "1"],
+            ["Development stores and trial plans", "Yes", "0 (private only)"],
+            ["Retail, nonprofit and custom plans", "Check with Shopify", "1"],
+            ["Agentic plans", "No", "Not applicable"],
+          ],
+        },
+      },
+      {
+        heading: "Oxygen Runtime Limits",
+        body: [
+          "Shopify documents these limits for Oxygen workers and deployments ([[https://shopify.dev/docs/storefronts/headless/hydrogen/fundamentals|Shopify: Hydrogen fundamentals]]; [[https://shopify.dev/docs/storefronts/headless/hydrogen/deployments|Shopify: Oxygen deployments]]). Oxygen also runs your storefront as a Web Worker, not a Node server, so Node APIs aren't available ([[https://shopify.dev/docs/storefronts/hydrogen/deploy/oxygen/runtime|Shopify: Oxygen runtime]]). That matters if your build relies on Node-only libraries, or if a Next.js team assumes a Node environment.",
+          "One public environment on most plans also means one live storefront on Oxygen. If you want a second public site, such as a separate brand or a campaign microsite, compare Plus with hosting the second site elsewhere.",
+        ],
+        checklist: [
+          "Worker size: 10 MB or less",
+          "Startup time: 400 milliseconds or less",
+          "CPU time: 30 seconds per request",
+          "Memory: 128 MB maximum",
+          "Custom environment variables: 110",
+          "Outbound API requests: must complete within 2 minutes",
+          "Runtime logs: kept for up to one month, so connect a log drain for longer retention",
+          "Deployments: accessible for at least six months, and the 10 most recent per environment are always kept",
         ],
       },
       {
-        heading: "Hydrogen: Shopify's Headless Framework",
+        heading: "Storefront API Limits That Affect Your Build",
         body: [
-          "Hydrogen is built on React Router and provides Shopify-specific components, utilities and caching strategies for building storefronts on the Storefront API. It supports the Customer Account API for accounts, deploys to Oxygen with CI/CD from GitHub, and can be self-hosted (Shopify developer docs). Shopify notes that the Hydrogen channel provides order attribution so headless sales appear in the admin.",
-          "Hydrogen fits when you need custom experiences a theme can't deliver well (complex configurators, app-like interactions, deeply integrated content), you have React developers, and you want to stay close to Shopify's recommended stack.",
+          "Shopify says that \"requests from real buyers aren't subject to a fixed request-per-minute limit\", but it \"limits the amount of checkouts that can be created on the Storefront API per minute\". Over that limit, you get a throttled response, and Shopify suggests queuing with exponential backoff. Tokenless access has a query complexity limit of 1,000 ([[https://shopify.dev/docs/api/storefront|Shopify: Storefront API]]).",
+          "When your server calls the API on behalf of a shopper, it should send the shopper's IP in the Shopify-Storefront-Buyer-IP header. Without it, Shopify says it \"can't differentiate requests from different buyers\", which can lead to throttling and weaker bot protection. Use a private token on the server and a public token only in the browser or app. Shopify releases a new API version every quarter and supports each stable version for at least 12 months ([[https://shopify.dev/docs/api/usage/versioning|Shopify: API versioning]]), so a headless build needs a regular upgrade slot.",
         ],
+      },
+      {
+        heading: "Apps, Markets and the Headless Channel",
+        body: [
+          "**Apps.** Shopify documents that theme app extensions \"can integrate with Online Store 2.0 themes\" ([[https://shopify.dev/docs/apps/build/online-store/theme-app-extensions|Shopify: theme app extensions]]). Headless storefronts aren't mentioned, so any app that adds its feature only through a theme block won't appear on a headless site. Before committing, list every app that touches the storefront and ask each vendor whether it offers an API or headless SDK.",
+          "**Markets.** With the @inContext(country:) directive, the Storefront API returns prices in that country's currency and filters out products not published there. Passing a country in the cart's buyerIdentity sets the cart's estimated cost. Each country's currency must be enabled in payment settings, or prices fall back to the store currency ([[https://shopify.dev/docs/storefronts/headless/building-with-the-storefront-api/markets/international-pricing|Shopify: international pricing]]). The guide doesn't cover domains or subfolders, so expect to build country routing, language switching and hreflang yourself. See [[/blogs/shopify-markets|Shopify Markets]] for how a theme store handles this.",
+          "**Headless channel.** A shop can have up to 100 active storefronts and access tokens, and Storefront and Admin API permissions are shared across them ([[https://shopify.dev/docs/storefronts/headless/building-with-the-storefront-api/manage-headless-channels|Shopify: manage Headless channels]]). Since January 2025, each Headless storefront is a separate channel for product publishing and order attribution ([[https://changelog.shopify.com/posts/each-headless-storefront-supports-unique-resource-publishing-and-order-attribution|Shopify changelog]]), so publish products to every storefront that should sell them.",
+          "**Analytics and consent.** Shopify's Hydrogen analytics guide offers patterns for sending storefront metrics to Shopify analytics, and says you must handle consent before tracking, recommending the Customer Privacy API and Shopify's cookie banner ([[https://shopify.dev/docs/storefronts/headless/hydrogen/analytics|Shopify: Hydrogen analytics]]). On a theme, much of this is wired in. Headless, you test it. The [[/blogs/shopify-analytics-tracking-audit|Shopify tracking audit]] has a test procedure you can reuse after launch.",
+        ],
+      },
+      {
+        heading: "Total Cost of Ownership Worksheet",
+        body: [
+          "Headless moves money from licences and apps to engineering. This worksheet has no prices on purpose: fill it in with your own quotes and salaries for each option, over three years, and compare totals. A blank in the \"Owner\" column is a risk in itself.",
+        ],
+        table: {
+          headers: ["Cost line", "One-off", "Monthly or yearly", "Owner", "What to ask"],
+          rows: [
+            ["Front-end build", "", "", "", "Which Hydrogen and API version? What is out of scope?"],
+            ["CMS licence and set-up", "", "", "", "Per-seat or usage pricing? Who models the content?"],
+            ["Hosting", "", "", "", "Oxygen (included on paid plans) or another host? How many public environments?"],
+            ["Monitoring and logging", "", "", "", "Where do logs go after Oxygen's one-month retention?"],
+            ["App replacements", "", "", "", "Which storefront apps need an API, SDK or rebuild?"],
+            ["Search, reviews and other services", "", "", "", "Do any charge by traffic or catalogue size?"],
+            ["Markets and localisation", "", "", "", "Who builds country routing, languages and hreflang?"],
+            ["Analytics and consent rebuild", "", "", "", "Who tests events and consent after each release?"],
+            ["Quarterly API and framework upgrades", "", "", "", "Is there a standing upgrade slot every quarter?"],
+            ["Feature work and fixes", "", "", "", "In-house hours or retainer? What happens if the lead developer leaves?"],
+          ],
+        },
         cta: {
-          title: "Unsure whether headless is worth it?",
-          description: "ZSpace Labs assesses your requirements, team and costs to recommend a theme, Hydrogen or another headless stack.",
+          title: "Weighing an agency's headless quote?",
+          description: "ZSpace Labs can run a headless readiness review against your apps, markets and team, and tell you plainly if a theme would do the job.",
         },
-      },
-      {
-        heading: "Other Headless Frameworks",
-        body: [
-          "Teams sometimes choose another framework because they already use it across other sites, need a CMS-first architecture, or want features of a specific framework or host. Shopify's Headless channel provides storefront access tokens and features such as product publishing and sales attribution by channel. You take on more integration work: Shopify-specific components, caching, analytics and customer accounts must be implemented with your chosen tools. See [[/blogs/headless-ecommerce-architecture|headless ecommerce architecture]].",
-        ],
-      },
-      {
-        heading: "What Stays the Same",
-        body: [
-          "Whichever frontend you choose, Shopify remains the commerce backend: products, inventory, pricing, customers, orders, discounts, Markets and checkout. Checkout runs on Shopify and is customized through checkout extensibility. Admin workflows, fulfilment and most back-office apps are unaffected. This is why switching frontends later is feasible: the data doesn't move.",
-        ],
-      },
-      {
-        heading: "What Changes With Headless",
-        body: [],
-        table: {
-          headers: ["Area", "Impact of going headless"],
-          rows: [
-            ["Theme apps", "Won't render; need API-based alternatives or custom work"],
-            ["Content editing", "Needs a CMS or custom editing; theme editor not available"],
-            ["Analytics", "Tracking must be implemented in your frontend"],
-            ["SEO", "You own rendering, metadata, sitemaps, structured data"],
-            ["Performance", "You control it, and are responsible for it"],
-            ["Hosting and deployment", "Oxygen or your own; CI/CD and monitoring needed"],
-            ["Maintenance", "Framework upgrades, dependencies, security"],
-          ],
-        },
-      },
-      {
-        heading: "Performance: Control, Not Guarantee",
-        body: [
-          "Headless is often promoted as faster. It can be: you control rendering, caching and scripts. But a headless storefront with heavy client-side JavaScript, poor caching or many third-party scripts can be slower than a lean theme. Conversely, a well-optimized theme can perform very well. Compare real performance data for your requirements rather than relying on the architecture label. See [[/blogs/why-page-speed-still-decides-conversion|page speed and conversion]].",
-        ],
-      },
-      {
-        heading: "Total Cost of Ownership",
-        body: [
-          "Headless moves cost from licences and apps to engineering. Budget for initial build, CMS, hosting (Oxygen or other), integrations that replace theme apps, monitoring, and ongoing development for upgrades and features. Themes cost less to maintain but may need custom development or apps for advanced features. Compare over several years, including the team you'll need to keep.",
-        ],
       },
       {
         heading: "Decision Guide",
@@ -345,75 +402,56 @@ export const commercePosts60: BlogPost[] = [
         table: {
           headers: ["If you...", "Consider"],
           rows: [
-            ["Have a small team and needs fit themes and apps", "Liquid theme"],
-            ["Need custom experiences and have React developers", "Hydrogen"],
-            ["Already run a framework and CMS across sites", "Other headless"],
-            ["Need multiple frontends (web, apps, kiosks) from one backend", "Hydrogen or other headless"],
-            ["Rely heavily on theme apps", "Liquid theme, or plan replacements"],
-            ["Want merchandisers to edit layouts without developers", "Liquid theme, or headless with a strong CMS"],
+            ["Have a small team and your needs fit themes and apps", "Liquid theme"],
+            ["Rely on several storefront apps without headless SDKs", "Liquid theme, or budget for replacements"],
+            ["Want merchandisers to change layouts without developers", "Liquid theme, or headless with a strong CMS"],
+            ["Already run React Router or Next.js across your sites and need custom commerce experiences", "Hydrogen library on that framework"],
+            ["Need several front ends (web, app, in-store screens) from one catalogue", "Hydrogen library or your own Storefront API layer"],
+            ["Have strict requirements Hydrogen doesn't fit, and a team to own the data layer", "Storefront API without Hydrogen"],
           ],
         },
       },
       {
-        heading: "Migrating Between Options",
+        heading: "When Headless Is the Wrong Choice",
         body: [
-          "Moving from a theme to headless, or back, is a frontend migration. Plan URL structures and redirects, rebuild analytics and pixels, replace theme apps, migrate content to a CMS if needed, test SEO rendering and structured data, and run a phased or parallel launch where possible. Measure conversion, speed and SEO before and after. See [[/blogs/ecommerce-replatforming|ecommerce replatforming]].",
+          "Headless is a poor fit when the main motivation is speed alone, when the team is one or two developers or an agency on an ad hoc basis, when daily merchandising depends on the theme editor, or when the store relies on storefront apps with no API. It is also risky during a busy trading period, because you are replacing every customer-facing page at once. A well-built theme with a few custom sections, a configurator embedded in a section, or metaobject-driven content pages often gets most of the benefit at a fraction of the upkeep. See [[/blogs/shopify-theme-development|Shopify theme development]] for that route.",
+          "Hypothetical example: a fashion brand on Advanced uses a reviews app, a back-in-stock app and a size-guide app, all through theme blocks, and two merchandisers update the homepage weekly. An agency proposes Hydrogen on Next.js for speed. Running the matrix shows three app rebuilds, a CMS for the merchandisers and Markets routing for two countries, with no in-house developer to own upgrades. Unless the brand also has a feature a theme can't deliver, a theme performance project is the more proportionate first step.",
         ],
       },
       {
-        heading: "A Middle Path: Theme Plus Custom Components",
+        heading: "Performance and SEO: You Own Both",
         body: [
-          "The choice isn't always all or nothing. Many stores keep a Liquid theme and add custom components where needed: a product configurator built as a JavaScript app within a theme section, a headless content area for editorial pages, or a separate microsite for a campaign. This keeps the theme editor and apps for most of the store while allowing custom experiences where they matter. Consider it before committing to a full headless rebuild.",
-        ],
-        table: {
-          headers: ["Need", "Theme-based option", "Headless option"],
-          rows: [
-            ["Complex product configurator", "Custom app embedded in a section", "Native component in Hydrogen"],
-            ["Rich editorial content", "Metaobjects, sections, blog", "CMS-driven pages"],
-            ["App-like browsing", "Enhanced JavaScript in theme", "Full client-side experience"],
-            ["Multiple frontends", "Limited", "Shared API layer"],
-          ],
-        },
-      },
-      {
-        heading: "Team and Skills",
-        body: [
-          "The decision is as much about people as technology. Liquid themes need theme developers and let merchandisers change layouts in the editor. Hydrogen needs React developers comfortable with React Router, server rendering and caching, plus someone to manage deployments and monitoring. Other headless frameworks need the same, with more integration work. If your team can't maintain a headless frontend for years, the theme is usually the better choice even if headless looks attractive.",
-        ],
-        checklist: [
-          "Who will build new features after launch?",
-          "Who will upgrade dependencies and frameworks?",
-          "Who edits content and layouts day to day?",
-          "Who monitors performance and errors?",
-          "What happens if the lead developer leaves?",
-        ],
-      },
-      {
-        heading: "SEO Considerations",
-        body: [
-          "Themes handle much of technical SEO by default: server-rendered pages, canonical tags, sitemaps and structured data from the theme. Headless storefronts must implement all of this: server-side rendering, metadata, canonical and hreflang tags, sitemaps, structured data, redirects and handling of filtered URLs. Hydrogen provides utilities for some of this, but it still needs deliberate implementation and testing. See [[/blogs/ecommerce-faceted-navigation-seo|faceted navigation SEO]].",
+          "Headless can be faster, because you control rendering, caching and scripts. It can also be slower, with heavy client-side JavaScript or poor caching. Prototype a product page and compare measured results with your current theme. On SEO, a theme gives you server-rendered pages, canonical tags and sitemaps by default; a headless storefront must implement rendering, metadata, canonical and hreflang tags, sitemaps, structured data, redirects and filtered URL handling deliberately. See [[/blogs/why-page-speed-still-decides-conversion|page speed and conversion]] and [[/blogs/ecommerce-faceted-navigation-seo|faceted navigation SEO]].",
         ],
       },
       {
         heading: "Common Mistakes",
         body: [],
         checklist: [
-          "Choosing headless for speed alone",
-          "Underestimating the loss of theme apps and the theme editor",
-          "No CMS plan for content editing",
-          "No budget for ongoing frontend maintenance",
-          "Treating Hydrogen and other headless as identical",
-          "Forgetting that checkout stays on Shopify",
+          "Choosing headless for page speed alone",
+          "Signing a quote that still describes Hydrogen as React Router only, without asking about 2026-10",
+          "Discovering after launch that storefront apps relied on theme app extensions",
+          "No owner for Oxygen logs, monitoring and quarterly API upgrades",
+          "Forgetting to publish products to each Headless storefront channel",
+          "Assuming Markets routing, hreflang and consent come for free",
+        ],
+      },
+      {
+        heading: "Conclusion and Next Steps",
+        body: [
+          "Stay on a Liquid theme unless you can name a storefront requirement a theme can't meet and a team to maintain the alternative. If you do go headless, Hydrogen 2026-10 makes the Shopify library usable on React Router or Next.js, Oxygen hosting is included on paid plans, and checkout stays on Shopify. Next steps: fill in the feature matrix and the cost worksheet with your own quotes, list every storefront app and its headless support, and check the latest Hydrogen docs for any limit you depend on. For background, read [[/blogs/headless-shopify-explained|headless Shopify explained]], [[/blogs/shopify-hydrogen|Shopify Hydrogen development]] and [[/blogs/headless-ecommerce-architecture|headless ecommerce architecture]].",
         ],
         cta: {
-          title: "Ready to choose your Shopify frontend?",
-          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify themes and Hydrogen]], [[/services/website-development|headless builds]] and [[/services/ui-ux-design|storefront design]].",
+          title: "Want a second opinion before you commit?",
+          description: "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/shopify-development|Shopify development]], including themes and headless builds. If useful, we can talk through a headless readiness review of your apps, markets and team.",
         },
       },
       {
-        heading: "Conclusion",
+        heading: "Sources",
         body: [
-          "Liquid themes suit most stores; Hydrogen suits custom experiences with a React team; other headless frameworks suit teams with existing stacks. Checkout stays on Shopify in every case. Choose from requirements, team and total cost. Related: [[/blogs/shopify-plus-development|Shopify Plus development]] and [[/blogs/monolithic-vs-headless-architecture|monolithic vs headless]].",
+          "Hydrogen and Oxygen: [[https://shopify.dev/changelog/blog/hydrogen-2026-10-is-now-available|Shopify changelog: Hydrogen 2026-10 is now available (14 October 2026)]]; [[https://shopify.dev/docs/storefronts/headless/hydrogen/fundamentals|Shopify: Hydrogen fundamentals and Oxygen plans and limits]]; [[https://shopify.dev/docs/storefronts/hydrogen/deploy/oxygen/environments|Shopify: Oxygen environments]]; [[https://shopify.dev/docs/storefronts/headless/hydrogen/deployments|Shopify: Oxygen deployments]]; [[https://shopify.dev/docs/storefronts/hydrogen/deploy/oxygen/runtime|Shopify: Oxygen runtime]]; [[https://shopify.dev/docs/storefronts/headless/hydrogen/analytics|Shopify: Hydrogen analytics]].",
+          "APIs, apps and channels: [[https://shopify.dev/docs/api/storefront|Shopify: Storefront API]]; [[https://shopify.dev/docs/api/usage/versioning|Shopify: API versioning]]; [[https://shopify.dev/docs/apps/build/online-store/theme-app-extensions|Shopify: theme app extensions]]; [[https://shopify.dev/docs/storefronts/headless/building-with-the-storefront-api/markets/international-pricing|Shopify: international pricing with the Storefront API]]; [[https://shopify.dev/docs/storefronts/headless/building-with-the-storefront-api/manage-headless-channels|Shopify: manage Headless channels]]; [[https://changelog.shopify.com/posts/each-headless-storefront-supports-unique-resource-publishing-and-order-attribution|Shopify changelog: unique publishing and order attribution per Headless storefront]]; [[https://help.shopify.com/en/manual/custom-storefronts/headless|Shopify Help Center: headless commerce]].",
+          "Accessed 15 October 2026. Several Hydrogen and Oxygen pages are labelled for Hydrogen 2026-04 and earlier; plans, limits and documentation change, so check the current pages before relying on them.",
         ],
       },
     ],

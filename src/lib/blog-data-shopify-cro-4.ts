@@ -24,7 +24,7 @@ export const shopifyCroPosts4: BlogPost[] = [
     relatedIndustrySlugs: ["d2c-consumer", "ecommerce", "fashion-apparel"],
     faqs: [
       { q: "What's the difference between the checkout audit and the checkout optimization guide?", a: "The [[/blogs/shopify-checkout-optimization|checkout optimization guide]] explains the strategy and reasoning in depth; this audit is the condensed, checklist-format version for a fast structured review." },
-      { q: "Can I still customize Shopify's checkout?", a: "Shopify Plus stores can customize checkout directly; other plans work within Shopify's standard checkout, which still allows meaningful configuration around payment methods, policies and branding without custom checkout.liquid, which Shopify deprecated in 2024." },
+      { q: "Can I still customize Shopify's checkout?", a: "Shopify Plus stores can customize checkout directly; other plans work within Shopify's standard checkout, which still allows meaningful configuration around payment methods, policies and branding without custom checkout.liquid. Shopify retired checkout.liquid in stages: it stopped working for the information, shipping and payment steps on 13 August 2024; checkout.liquid and additional scripts on the Thank you and Order status pages were sunset for Plus stores on 28 August 2025; and script tags on those pages were sunset for non-Plus stores on 26 August 2026. For what each plan can change today, see [[/blogs/shopify-checkout-customisation-guide|Shopify checkout customisation by plan]]." },
       { q: "Is guest checkout really that important?", a: "Yes — forcing account creation before checkout is one of the most consistently cited checkout friction points, and enabling guest checkout as the default is one of the lowest-effort, highest-confidence fixes available." },
       { q: "How many fields should a checkout form have?", a: "Only what's genuinely needed to fulfill the order — every additional field is a small additional chance for a visitor to hesitate or abandon." },
       { q: "Should I always offer multiple payment methods?", a: "Offer the ones your specific audience actually expects — a missing preferred payment method is a hard stop for some buyers, but adding options your audience never asked for adds clutter without benefit." },
@@ -117,7 +117,7 @@ export const shopifyCroPosts4: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Checkout sits closest to revenue of any funnel stage, which is exactly why disproportionate attention here is justified. Guest checkout, a trimmed form, the right payment options and visible trust signals are the highest-confidence fixes most stores are still missing. For the research behind checkout abandonment, see [[/blogs/why-customers-abandon-checkout|why customers abandon checkout]].",
+          "Checkout sits closest to revenue of any funnel stage, which is exactly why disproportionate attention here is justified. Guest checkout, a trimmed form, the right payment options and visible trust signals are the highest-confidence fixes most stores are still missing. For the research behind checkout abandonment, see [[/blogs/why-customers-abandon-checkout|why customers abandon checkout]]. Before planning changes, check what your plan allows in [[/blogs/shopify-checkout-customisation-guide|this guide to Shopify checkout customisation by plan]].",
         ],
       },
     ],
@@ -126,99 +126,182 @@ export const shopifyCroPosts4: BlogPost[] = [
   // ------------------------------------------------------------- MOBILE AUDIT
   {
     slug: "shopify-mobile-cro-audit",
-    title: "Shopify Mobile CRO Audit: Where Most of Your Traffic Actually Is",
+    title: "How to Diagnose Mobile Ecommerce Conversion Problems From Product Page to Checkout",
+    seoTitle: "How to Diagnose Mobile Ecommerce Conversion Problems",
     excerpt:
-      "A mobile-specific audit checklist across speed, tap targets, forms and navigation — for the majority-share device most stores still test last.",
+      "Find where mobile shoppers drop off: device-by-stage numbers from Shopify and GA4, ruling out traffic mix, Core Web Vitals and a device gap table.",
     category: "Shopify & Ecommerce",
     banner: "mobileframe",
+    sceneKind: "funnel",
+    bannerAlt:
+      "A phone showing a store funnel from product page to add to cart, checkout and purchase, with mobile and desktop rates compared at each stage and the stage with the widest gap highlighted",
     date: "2026-08-28",
-    readingTime: "11 min read",
+    updated: "2026-10-15",
+    readingTime: "10 min read",
     relatedServiceSlugs: ["cro-audit", "shopify-development"],
     relatedIndustrySlugs: ["d2c-consumer", "ecommerce", "fashion-apparel"],
+    relatedSlugs: ["shopify-mobile-cro", "mobile-ecommerce-checkout", "shopify-conversion-funnel-optimization"],
     faqs: [
-      { q: "Why does mobile deserve its own dedicated audit?", a: "For most Shopify stores, mobile carries the majority of sessions, yet design and testing often happen desktop-first — a dedicated audit corrects for that imbalance." },
-      { q: "How is this different from the general Shopify mobile CRO guide?", a: "The [[/blogs/shopify-mobile-cro|mobile CRO guide]] explains the strategy in depth; this article is the condensed, checklist-format audit version for a fast structured review." },
-      { q: "What's the most common mobile-specific conversion issue?", a: "There's no single universal answer, but small tap targets, slow image load times, and checkout forms that are harder to complete on a small screen are common, recurring patterns worth checking first." },
-      { q: "How do I measure whether my store has a mobile-specific problem?", a: "Compare conversion rate, add-to-cart rate and completed-checkout rate between mobile and desktop segments in Shopify Analytics — a meaningful, consistent gap points at a mobile-specific issue." },
-      { q: "Should I test on an actual phone or is a browser resize enough?", a: "A real device test catches issues (tap accuracy, keyboard behavior, real-world load times) that a resized desktop browser window often misses." },
-      { q: "Do Core Web Vitals matter more on mobile?", a: "Practically, yes — mobile connections and devices are typically less forgiving of unoptimized pages than desktop, making mobile-specific performance testing important even if desktop Core Web Vitals look fine." },
-      { q: "Should the mobile experience be a scaled-down desktop layout?", a: "No — mobile layout decisions should be made deliberately for the mobile context, not simply assumed to scale down cleanly from desktop design choices." },
-      { q: "How does this connect to the broader CRO audit?", a: "It's one of the page-specific audits feeding into the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]], and worth prioritizing given how much traffic mobile typically represents." },
+      { q: "Why does mobile need its own diagnosis?", a: "For many stores, mobile carries most sessions, yet design and testing often happen on desktop first. A blended conversion rate can also hide a mobile problem, so the only reliable way to see one is to compare mobile and desktop at each funnel stage." },
+      { q: "How is this different from the Shopify mobile CRO guide?", a: "This page finds where and why mobile shoppers drop off. The [[/blogs/shopify-mobile-cro|Shopify mobile CRO guide]] covers what to change once you know: navigation, product pages, cart, forms, checkout and speed." },
+      { q: "Can Shopify Analytics show product views by device?", a: "Not in the default conversion funnel. Shopify's Conversion rate breakdown has four steps (all sessions, sessions with cart additions, sessions that reached checkout and sessions that completed checkout) and no product-view step. To split product views by device, use a ShopifyQL query with the session_viewed_product and session_device_type fields, or a GA4 funnel exploration." },
+      { q: "How do I measure whether my store has a mobile-specific problem?", a: "Compare mobile and desktop at each stage, within the same traffic channel. If mobile is much weaker at one stage across several channels, it points at a mobile experience problem. If the gap disappears when you compare like with like, the cause is the traffic mix." },
+      { q: "Should I test on an actual phone or is a browser resize enough?", a: "Use a real phone. A real device catches tap accuracy, keyboard behaviour, autofill, wallet buttons and real-world load times that a resized desktop window misses. A mid-range Android phone is a more honest test than a recent flagship." },
+      { q: "Do Core Web Vitals matter more on mobile?", a: "They are measured separately. Google Search Console reports Core Web Vitals for mobile and desktop separately, and Shopify's web performance reports can be filtered by device type. Mobile pages often perform worse because of slower devices and networks, so check the mobile figures even if desktop looks fine." },
+      { q: "Does GA4 attribute users who switch devices correctly in funnels?", a: "Only partly. When you break a GA4 funnel exploration down by device category, a user is attributed to the first device value that applies to them. Someone who browses on mobile and buys on desktop appears only under mobile, which can make mobile look stronger at later steps than it really is." },
+      { q: "How does this connect to the broader CRO audit?", a: "It is one of the focused reviews feeding into the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]], and worth doing early given how much traffic mobile usually represents." },
     ],
     content: [
       {
-        heading: "Quick answer",
+        heading: "How do you find where mobile shoppers drop off?",
         body: [
-          "A Shopify mobile CRO audit checks the store specifically on mobile devices — speed, tap-target sizing, form usability and navigation — rather than assuming a desktop-tested experience translates cleanly to a smaller screen. Since mobile typically carries the majority of sessions for most stores, a meaningful mobile/desktop conversion gap is one of the highest-priority signals worth investigating.",
+          "**Compare mobile and desktop at each stage of the funnel (session to product view, product view to add to cart, cart to checkout, checkout to purchase) and divide the mobile rate by the desktop rate. Before trusting the numbers, check that tracking works on mobile and that the gap is not just different traffic. The stage with the worst ratio, confirmed within the same channel, is where to look first; then check mobile page speed for those templates and watch real mobile sessions.**",
+          "This guide is for store owners and marketers, mostly on Shopify, who see weaker mobile conversion and need to know whether it is the product page, the cart, checkout or simply lower-intent traffic. It uses Shopify's own reports and ShopifyQL, with GA4 steps alongside so the method works on other platforms. Once you know the stage, the fixes are in our [[/blogs/shopify-mobile-cro|Shopify mobile CRO guide]].",
         ],
       },
       {
-        heading: "Why Mobile Needs Its Own Dedicated Audit",
+        heading: "Key takeaways",
+        body: [],
+        checklist: [
+          "Check that add-to-cart and purchase events fire on mobile before comparing anything.",
+          "Shopify's default funnel has no product-view step; use ShopifyQL or GA4 for that cut.",
+          "Compare devices within the same channel to separate traffic mix from mobile friction.",
+          "Start with the stage where mobile is weakest relative to desktop.",
+          "Check Core Web Vitals for mobile separately in Search Console and Shopify.",
+          "Do not use other stores' mobile conversion benchmarks; compare your own devices.",
+        ],
+      },
+      {
+        heading: "Step 1: check tracking works on mobile",
         body: [
-          "Design and QA workflows often default to desktop first, with mobile treated as a responsive afterthought — even though mobile usually represents the majority of traffic. A dedicated mobile-specific audit corrects for that imbalance rather than assuming desktop testing is sufficient.",
+          "A mobile gap is sometimes a tracking gap. Mobile themes often use different components from desktop: a sticky add-to-cart bar, a cart drawer, quick-add buttons on collection pages, and wallet buttons that skip the cart. If any of these do not send the same events, mobile will look worse than it is.",
+        ],
+        checklist: [
+          "Add to cart from the sticky bar, the cart drawer and quick-add on a real phone, and confirm each records an add to cart",
+          "Complete a test order with each wallet offered on mobile and confirm the purchase records once",
+          "Check that mobile sessions are not inflated by bots (ShopifyQL has a human_or_bot_session field for this)",
+          "In GA4, compare purchases recorded with Shopify's order count by device for the same period",
         ],
       },
       {
-        heading: "Speed on Mobile",
-        body: ["See the [[/blogs/shopify-speed-cro|speed and CRO guide]] for the full performance-conversion relationship."],
-        checklist: [
-          "Core Web Vitals (LCP, INP, CLS) are measured and reviewed specifically for mobile, not only desktop",
-          "Hero and product images are sized and compressed appropriately for mobile connections",
-          "Apps loading unnecessary scripts on mobile are identified and removed or deferred",
-          "Font and asset loading doesn't block the main thread on lower-powered devices",
+        heading: "Step 2: pull device-by-stage numbers",
+        body: [
+          "**In Shopify.** The Sessions by device report \"displays the type of devices used to access your website\", which gives you the traffic split but not conversion. The Conversion rate breakdown report shows four steps: all sessions, sessions with cart additions, sessions that reached checkout, and sessions that completed checkout. It has no product-view step, and Shopify's help page describes no device split for it ([[https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports|Shopify Help Center]]). Shopify's page does suggest asking Sidekick to \"Show my conversion rate by device type for the last 30 days\"; availability may vary.",
+          "For the full cut, use ShopifyQL, which you can type into the query editor at the top of an analytics report. The sessions schema includes session_device_type (Desktop, Mobile, Tablet or Smart TV), the funnel counts, added_to_cart_rate, conversion_rate, and a session_viewed_product field that marks sessions with at least one product page view ([[https://shopify.dev/docs/api/shopifyql/latest/schemas/sessions_and_behavior/sessions.md|ShopifyQL sessions schema]]). Field names are versioned, so check them against your admin.",
         ],
-      },
-      {
-        heading: "Tap Targets and Interaction",
-        body: ["Small, easy-to-miss controls quietly cost conversions on mobile in ways that don't show up in a desktop review."],
-        checklist: [
-          "Buttons, filters and variant selectors are sized for reliable thumb use",
-          "Adequate spacing exists between adjacent tappable elements",
-          "Sticky elements (Add to Cart bars, navigation) don't obscure key content",
-          "Swipeable galleries or carousels work reliably across common mobile browsers",
-        ],
-        visual: { variant: "phone", accent: "orange", caption: "A control that's easy to click on desktop can be genuinely hard to tap accurately with a thumb — this is invisible in a desktop-only review." },
-      },
-      {
-        heading: "Forms and Checkout",
-        body: ["See the [[/blogs/shopify-checkout-audit|checkout audit]] for the deeper checkout-specific checklist."],
-        checklist: [
-          "Checkout form fields are easy to complete without excessive zooming or scrolling",
-          "Mobile keyboard type matches each field (numeric for card numbers, email keyboard for email)",
-          "Autofill is supported and functions correctly for address and payment fields",
-          "Digital wallet options are available for faster mobile completion",
-        ],
-        cta: {
-          title: "Want your mobile funnel checked against real device behavior?",
-          description: "ZSpace Labs can audit mobile-specific conversion data and session recordings to pinpoint exactly where mobile visitors are struggling.",
+        code: {
+          label: "ShopifyQL (illustrative; check field names and syntax in your admin)",
+          text: "FROM sessions\nSHOW sessions, sessions_with_cart_additions,\n  sessions_that_reached_checkout, sessions_that_completed_checkout\nWHERE human_or_bot_session = 'human'\nGROUP BY session_device_type, session_viewed_product\nSINCE -30d UNTIL today",
         },
       },
       {
-        heading: "Navigation and Layout",
-        body: ["Whether mobile layout was designed deliberately, or just assumed to scale down from desktop."],
-        checklist: [
-          "Navigation is usable one-handed, without requiring precise or awkward reach",
-          "No horizontal scrolling or content cut off on common mobile screen widths",
-          "Search is easy to access and use on mobile",
-          "Filters and sorting on collection pages are usable without excessive scrolling",
+        heading: "The same numbers in GA4",
+        body: [
+          "In GA4, build a funnel exploration with steps for product view, add to cart, begin checkout and purchase, and set the breakdown to Device category. Google's documentation says this shows \"each step broken down by the different device categories\" ([[https://support.google.com/analytics/answer/9327974|GA4 funnel exploration help]]). Use an open funnel if many shoppers return in a later session to buy.",
+          "Know the caveat: in a breakdown, \"users are only attributed to the first instance of the breakdown value that applies to them\". A shopper who browses on a phone and buys on a laptop counts only under mobile. If cross-device buying is common for your products, mobile's later-stage rates in GA4 will look better than the experience deserves, and Shopify's session-based numbers are the safer comparison for those stages.",
         ],
       },
       {
-        heading: "Measuring Mobile-Specific Performance",
+        heading: "The device-by-stage gap table",
         body: [
-          "Segment every key funnel metric by device in Shopify Analytics — product views, add-to-cart rate, reached-checkout rate and completed-checkout rate. A consistent, meaningful gap between mobile and desktop at any stage is the clearest signal of a genuine mobile-specific issue, as opposed to a general funnel problem.",
+          "Fill this in from Shopify or GA4 for the last 30 to 90 days. Each rate is the share of sessions at one stage that reach the next. The ratio is the mobile rate divided by the desktop rate: 1.0 means no gap, and the lowest ratio is your starting point. Ignore stages with too few sessions to compare; small numbers swing widely.",
         ],
-        table: croAuditFrameworkTable,
-        cta: {
-          title: "Ready to audit the rest of the funnel?",
-          description: "See the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]] for how mobile findings fit into a full prioritized roadmap. Learn more about our [[/services/cro-audit|conversion audits]].",
+        table: {
+          headers: ["Stage", "Mobile rate", "Desktop rate", "Ratio (M ÷ D)", "Where to measure", "Likely mobile causes", "Where the fixes are"],
+          rows: [
+            ["Session to product view", "", "", "", "ShopifyQL session_viewed_product; GA4 view_item", "Navigation, search, slow landing pages, intrusive popups", "[[/blogs/shopify-mobile-cro|Mobile navigation and popups]]"],
+            ["Product view to add to cart", "", "", "", "ShopifyQL; GA4 funnel", "Hidden price or delivery info, variant pickers, image gallery, sticky button issues", "[[/blogs/mobile-ecommerce-ux|Mobile product page UX]]"],
+            ["Add to cart to reached checkout", "", "", "", "Shopify Conversion rate breakdown; GA4 begin_checkout", "Cart drawer problems, surprise costs, upsell clutter", "[[/blogs/shopify-mobile-cro|Mobile cart fixes]]"],
+            ["Reached checkout to purchase", "", "", "", "Shopify Conversion rate breakdown; GA4 checkout funnel", "Form entry, keyboards, autofill, missing wallets, delivery options", "[[/blogs/mobile-ecommerce-checkout|Mobile checkout design]]"],
+          ],
         },
+      },
+      {
+        heading: "Step 3: rule out traffic mix",
+        body: [
+          "Mobile traffic often comes from different places. Paid social, for example, tends to send mostly phone visitors who are earlier in their decision than someone who searched for your brand on a laptop. If so, mobile converts worse because of who arrives, not because of the experience. Fixing the theme will not change that.",
+          "Repeat the gap table within one channel at a time, and within one landing page type. In ShopifyQL, add referrer_source and landing_page_type to the grouping; in GA4, add a segment per channel (up to four in one exploration). If the mobile gap largely disappears inside each channel, the issue is mix. If it persists across channels at the same stage, it is the mobile experience.",
+          "Hypothetical example: in one month a store has 10,000 mobile sessions converting at 1.0% and 5,000 desktop sessions at 3.0%, a blended 1.67%. The next month a social campaign doubles mobile sessions to 20,000, still at 1.0%, while desktop is unchanged. The blended rate falls to 1.4% although neither device got worse. Looking only at the blended figure, the team would go hunting for a problem that is not there.",
+        ],
+      },
+      {
+        heading: "Step 4: confirm the worst stage",
+        body: [
+          "Take the stage with the lowest ratio that holds up within channels. Check it over two separate periods so a single promotion or stock problem is not driving it. If two stages are close, start with the one nearer the top of the funnel, since every later stage depends on it, unless checkout is clearly broken. For how the stages connect across the whole store, see [[/blogs/shopify-conversion-funnel-optimization|Shopify conversion funnel optimisation]].",
+        ],
+      },
+      {
+        heading: "Step 5: check mobile field performance",
+        body: [
+          "Speed problems usually show up on mobile first. Google Search Console's Core Web Vitals report \"breaks down the data by the device used to view the URL (Mobile or Desktop)\", using real-user data from the Chrome UX Report over the last 28 days ([[https://support.google.com/webmasters/answer/9205520|Search Console Help]]). It groups similar URLs, so look for the groups that match the templates at your weak stage.",
+          "Shopify's web performance reports also cover desktop and mobile, and the Over Time, Page URL and Page Type reports for LCP, INP and CLS can be filtered by device type. They use real-user data, and Shopify notes data can be delayed by up to 36 hours ([[https://help.shopify.com/en/manual/online-store/web-performance/web-performance-dashboard|Shopify web performance dashboard]]). If the weak stage's templates are slow on mobile, the [[/blogs/shopify-speed-cro|Shopify speed guide]] is the next read.",
+        ],
+      },
+      {
+        heading: "Step 6: watch real mobile sessions",
+        body: [
+          "Numbers show where; people show why. Watch a handful of session recordings of mobile visitors who reached the weak stage and left, then complete the same journey yourself on a real mid-range phone over mobile data. Note anything that hides the next action, needs zooming, opens the wrong keyboard, jumps as it loads or fails silently. Five recordings that show the same problem are more useful than fifty that show different ones.",
+        ],
+      },
+      {
+        heading: "Step 7: map findings to fixes",
+        body: [
+          "This page stops at diagnosis on purpose. Take each confirmed problem to the guide that covers the fix, and prioritise using the same reach and evidence logic as any other change: a problem at a high-traffic stage, seen in both data and recordings, comes first.",
+        ],
+        checklist: [
+          "Navigation, product pages, sticky buttons, cart drawer, forms and popups: [[/blogs/shopify-mobile-cro|Shopify mobile CRO fixes]]",
+          "Checkout form design, keyboards, autofill and wallets: [[/blogs/mobile-ecommerce-checkout|mobile ecommerce checkout]]",
+          "Checkout-specific review: [[/blogs/shopify-checkout-audit|Shopify checkout audit]]",
+          "Page speed on mobile templates: [[/blogs/shopify-speed-cro|speed and conversion]]",
+        ],
+      },
+      {
+        heading: "What the wider research says",
+        body: [
+          "Mobile ecommerce usability is weak across the industry, not just on smaller stores. Baymard Institute's current mobile benchmark of 138 large US and European sites rates 62% \"mediocre\" or worse and 38% \"decent\", with none rated \"good\" overall ([[https://baymard.com/research/mcommerce-usability|Baymard Institute]]; the page is undated). That is a reason to expect problems, not a measure of your store.",
+          "We do not quote mobile versus desktop conversion benchmarks. The figures that circulate mostly come from vendors without a published method, and stores differ too much by category, price and traffic source for an average to tell you anything. Your own device ratio by stage is the benchmark that matters.",
+        ],
+        callout: {
+          type: "takeaway",
+          text: "A mobile gap is only actionable once you know the stage and have ruled out traffic mix. Before that, a redesign is a guess.",
+        },
+      },
+      {
+        heading: "Common mistakes",
+        body: [],
+        checklist: [
+          "Comparing blended conversion rates over months when the device mix has changed",
+          "Assuming Shopify's default funnel can show product views by device",
+          "Trusting GA4 later-stage device rates when shoppers often switch devices",
+          "Comparing mobile and desktop across different channels",
+          "Testing on a recent flagship phone over office Wi-Fi",
+          "Redesigning the whole mobile theme before finding the weak stage",
+        ],
+      },
+      {
+        heading: "Limits of this method",
+        body: [
+          "Device-by-stage analysis needs enough sessions at each stage to compare. A store with a few dozen orders a month will see ratios jump about from period to period; there, rely more on recordings, real-device testing and a heuristic review, and treat the numbers as a rough guide. The method also cannot see what happens after the session, such as shoppers who browse on mobile and order by phone or in store. And some checkout changes depend on your Shopify plan, so check what you can change before planning fixes.",
+          "If you would rather have the diagnosis done for you, our [[/services/cro-audit|CRO audit service]] page explains how we approach it.",
+        ],
+      },
+      {
+        heading: "Sources",
+        body: [
+          "Shopify: [[https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports|Behaviour reports]]; [[https://shopify.dev/docs/api/shopifyql/latest/schemas/sessions_and_behavior/sessions.md|ShopifyQL sessions schema]]; [[https://changelog.shopify.com/posts/query-your-store-s-data-from-any-analytics-report|Changelog: query your store's data from any analytics report (11 June 2025)]]; [[https://help.shopify.com/en/manual/online-store/web-performance/web-performance-dashboard|Web performance dashboard]].",
+          "Google: [[https://support.google.com/analytics/answer/9327974|GA4 funnel exploration]]; [[https://support.google.com/webmasters/answer/9205520|Search Console Core Web Vitals report]]. Research: [[https://baymard.com/research/mcommerce-usability|Baymard Institute: mobile ecommerce UX benchmark]] (undated page).",
+          "Accessed 15 October 2026. Shopify reports and ShopifyQL fields change; check current documentation.",
+        ],
       },
       {
         heading: "Conclusion",
         body: [
-          "Given how much of most stores' traffic is mobile, a dedicated mobile audit deserves the same priority as any other high-traffic funnel stage — not an afterthought layered on top of a desktop-first review.",
+          "Diagnose before you redesign. Confirm mobile tracking works, fill in the device-by-stage gap table from Shopify or GA4, rule out traffic mix by comparing within channels, find the stage with the weakest ratio, check mobile performance for those templates and watch real sessions. Then take that one stage to the fixes in the [[/blogs/shopify-mobile-cro|mobile CRO guide]]. Your next step is to run the ShopifyQL query or GA4 funnel for the last 30 days and fill in the first two columns of the table.",
         ],
+        cta: {
+          title: "Want help reading your device-by-stage numbers?",
+          description: "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/cro-audit|conversion audits]] and [[/services/shopify-development|Shopify development]]. If useful, we can look at your device-by-stage numbers with you and talk through which stage to fix first.",
+        },
       },
     ],
   },
@@ -766,7 +849,7 @@ export const shopifyCroPosts4: BlogPost[] = [
       {
         heading: "What Never Belongs in Trust Optimization",
         body: [
-          "Fabricated reviews, fake urgency, invented testimonials, unearned awards or certifications, and exaggerated claims about results all damage trust once discovered — and increasingly, visitors do notice these patterns. Genuine, even if modest, trust signals consistently outperform fabricated, impressive-looking ones over time.",
+          "Fabricated reviews, fake urgency, invented testimonials, unearned awards or certifications, and exaggerated claims about results all damage trust once discovered — and increasingly, visitors do notice these patterns. Genuine, even if modest, trust signals consistently outperform fabricated, impressive-looking ones over time. Some of these are now illegal to fake in several markets; see [[/blogs/website-trust-and-credibility|what not to fake, by market]].",
         ],
       },
       {

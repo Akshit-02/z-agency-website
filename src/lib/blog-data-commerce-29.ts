@@ -240,7 +240,7 @@ export const commercePosts29: BlogPost[] = [
       {
         heading: "Displaying Prices",
         body: [
-          "After login, show the buyer's price clearly and, where relevant, their saving against list. Show pack and unit price together when products are sold in packs. Show volume breaks as a small table with the current tier highlighted and a note about the next one. For guests, show list prices or explain how to get trade pricing. See [[/blogs/b2b-ecommerce-website-design|B2B website design]].",
+          "After login, show the buyer's price clearly and, where relevant, their saving against list. Show pack and unit price together when products are sold in packs. Show volume breaks as a small table with the current tier highlighted and a note about the next one. For guests, show list prices or explain how to get trade pricing. See [[/blogs/b2b-ecommerce-website-design|B2B website design]]. For service businesses rather than product catalogues, see [[/blogs/should-you-show-prices-on-your-website|should you show prices on your website?]].",
         ],
         cta: {
           title: "Web prices not matching invoices?",

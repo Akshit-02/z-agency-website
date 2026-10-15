@@ -630,16 +630,20 @@ export const webDevPosts9: BlogPost[] = [
   // ---------------------------------------------------------- REPLATFORMING
   {
     slug: "website-replatforming",
-    title: "Website Replatforming: When Should You Move to a New Technology Stack?",
+    title: "Website Replatforming: How to Tell If You've Outgrown Your Platform",
+    seoTitle: "Website Replatforming: Have You Outgrown Your Platform?",
     excerpt:
-      "What replatforming means, the signs it's needed, the risks and costs involved, and how it differs from a redesign or rebuild.",
+      "A 10-point scorecard to tell whether your website has outgrown its platform, dated end-of-life checkpoints, and how to replatform without losing search traffic.",
     category: "Web Development",
     banner: "roadmap",
+    sceneKind: "roadmap",
+    bannerAlt: "A replatforming roadmap: score the current platform, check end-of-life dates, decide between optimising, rebuilding or replatforming, then migrate with redirects",
     date: "2026-09-24",
-    updated: "2026-10-09",
-    readingTime: "13 min read",
+    updated: "2026-10-15",
+    readingTime: "12 min read",
     relatedServiceSlugs: ["website-development", "shopify-development"],
     relatedIndustrySlugs: ["ecommerce", "b2b-enterprise", "saas-technology"],
+    relatedSlugs: ["website-redesign-vs-rebuild", "when-does-your-website-need-a-redesign", "website-migration-guide"],
     faqs: [
       { q: "What is website replatforming?", a: "Moving a website from one technology platform to another, such as a different CMS, commerce platform or framework, usually along with its content, data and integrations." },
       { q: "What's the difference between replatforming and redesign?", a: "A redesign changes how the site looks and works for users, often on the same platform. Replatforming changes the underlying technology, and may or may not include a redesign." },
@@ -649,22 +653,31 @@ export const webDevPosts9: BlogPost[] = [
       { q: "How much does replatforming cost?", a: "It depends on content volume, integrations, custom functionality and whether a redesign is included. Data migration and integration rework are often underestimated." },
       { q: "Can we replatform in phases?", a: "Often yes, for example moving the front end first while keeping the existing backend, or migrating sections of the site in stages." },
       { q: "How do we avoid moving our problems to a new platform?", a: "Diagnose why the current platform is failing first. If the real issue is content, process or design, a new platform alone won't fix it." },
-          {
-        q: "How long should redirects stay in place after replatforming?",
-        a: "Google's site move guidance says to keep redirects generally for at least a year, and longer for valuable URLs that still receive links or traffic. Removing them early can lose search visibility and break links customers rely on. Monitor Search Console before retiring any redirect.",
-      },
-],
+      { q: "How long should redirects stay in place after replatforming?", a: "Google's site move guidance says to keep redirects generally for at least a year, and longer for valuable URLs that still receive links or traffic. Removing them early can lose search visibility and break links customers rely on. Monitor Search Console before retiring any redirect." },
+      { q: "Our CMS is reaching end of life. Do we have to replatform?", a: "Not necessarily. Often the right move is an upgrade to the supported version on the same platform, such as moving from Drupal 10 to Drupal 11. Replatform only if the upgrade is close to a rebuild anyway, or if the platform also scores badly on integrations, content model or editor independence." },
+      { q: "Is it safe to keep running a site after its platform reaches end of life?", a: "It becomes progressively riskier. After end of life the project no longer publishes security fixes, so new vulnerabilities stay open unless you pay for third-party extended support. That can buy time for a planned move, but it is not a long-term answer." },
+    ],
     content: [
       {
         heading: "Quick answer",
         body: [
-          "Replatforming means moving your website to a different technology stack, such as a new CMS, commerce platform or framework, along with its content, data and integrations. It's worth considering when the current platform itself is the constraint: performance you can't fix, security or support risks, integrations it can't handle, editors it blocks, or development that's consistently slow. It carries real risk to SEO, data and operations, so diagnose the actual problem first and plan the migration carefully.",
+          "Replatforming means moving your website to a different technology stack, such as a new CMS, commerce platform or framework, along with its content, data and integrations. You have outgrown your platform when the **platform itself** is the constraint: its version or runtime is out of support with no realistic upgrade path, it cannot connect to the systems you need, it cannot model your content, and editors depend on developers for routine work. Score these with the 10-point diagnostic below. If most of the pain comes from how the site was built rather than what it was built on, a rebuild or upgrade on the same platform is usually cheaper and safer.",
         ],
       },
       {
-        heading: "Replatforming, Redesign and Rebuild",
+        heading: "Key takeaways",
+        body: [],
+        checklist: [
+          "Diagnose the platform, not the design: slow pages and an awkward CMS are often build problems, not platform problems.",
+          "End-of-life dates are deadlines for a decision, not automatically for a replatform. Check whether an in-place upgrade exists.",
+          "Score ten platform-level questions with evidence, then let the total point you to optimise, modernise or replatform.",
+          "Every replatform is also a migration: plan URLs, redirects, data and integrations from the start.",
+        ],
+      },
+      {
+        heading: "Replatforming, redesign and rebuild",
         body: [
-          "These terms get mixed up, which leads to mis-scoped projects.",
+          "These terms get mixed up, which leads to mis-scoped projects. If your concern is mainly how the site looks or how visitors move through it, start with [[/blogs/when-does-your-website-need-a-redesign|the signs your website needs a redesign]]. If the code is the problem but the platform is fine, [[/blogs/website-redesign-vs-rebuild|redesign vs rebuild]] covers rebuilding and staged modernisation. This guide is for the narrower case where the platform underneath is the constraint.",
         ],
         table: {
           headers: ["Approach", "What changes", "Typical trigger"],
@@ -676,61 +689,102 @@ export const webDevPosts9: BlogPost[] = [
         },
       },
       {
-        heading: "How This Relates to Redesign vs Rebuild",
+        heading: "Have you outgrown your platform? A 10-point diagnostic",
         body: [
-          "The [[/blogs/website-redesign-vs-rebuild|redesign vs rebuild guide]] helps decide whether problems are design or technical. Replatforming is the specific case where the technical problem is the platform itself, not just how the site was built on it.",
+          "Score each row 0 (fine), 1 (strained) or 2 (blocking), using evidence rather than opinion. Gather the evidence first: version numbers, a month of content-change requests, Search Console data and a list of integrations you need. Every row is about the platform, not the visual design.",
         ],
-      },
-      {
-        heading: "Signs Replatforming Is Needed",
-        body: [],
-        checklist: [
-          "Performance problems persist after reasonable optimization on the current platform",
-          "The platform or key components are near end of support or have recurring security issues",
-          "Required integrations aren't possible or are fragile workarounds",
-          "Editors depend on developers for routine content changes",
-          "New features take far longer than they should because of platform constraints",
-          "Licensing or hosting costs have grown out of proportion to value",
-          "Hiring developers for the platform has become difficult",
-        ],
-        visual: { variant: "bars", accent: "blue", caption: "One symptom rarely justifies replatforming; several persistent, platform-rooted symptoms usually do." },
-      },
-      {
-        heading: "Legacy Technology Problems",
-        body: [
-          "Older platforms often accumulate outdated dependencies, unsupported extensions and custom patches nobody fully understands. Each update becomes risky, which leads to updates being skipped, which increases security exposure. That cycle is a common reason businesses start considering a move.",
-        ],
-      },
-      {
-        heading: "Performance, Security and CMS Limitations",
-        body: [
-          "Before blaming the platform, rule out fixable causes like heavy scripts, images or hosting, using the [[/blogs/why-is-my-website-slow|slow website guide]]. If problems remain rooted in the platform's architecture, security model or editing limits, that's a genuine replatforming signal.",
-        ],
-        cta: {
-          title: "Not sure whether your platform is the real problem?",
-          description: "ZSpace Labs can assess your current stack and tell you whether to optimize, redesign, rebuild or replatform.",
+        table: {
+          headers: ["#", "Question", "Evidence to collect", "Scores 2 when"],
+          rows: [
+            ["1", "**Support status.** Are the CMS, its runtime (for example PHP or Node.js) and key extensions in security support?", "Your versions, checked against the official lifecycle pages in the table below", "Already past end of life, or ending within six months with no upgrade path"],
+            ["2", "**Upgrade path.** Can you move to the supported version in place?", "A developer's assessment of custom code and extensions that block the upgrade", "The upgrade is effectively a rebuild"],
+            ["3", "**Field performance.** Do real users get good Core Web Vitals after standard fixes?", "Search Console or CrUX data at the 75th percentile, mobile and desktop", "LCP above 2.5 s, INP above 200 ms or CLS above 0.1, and fixes to images, scripts and hosting have not moved it"],
+            ["4", "**Editor independence.** Can editors make routine changes alone?", "Count a month of content requests that needed a developer", "Most routine page, landing-page or content changes need a developer"],
+            ["5", "**Change lead time.** How long does a small template or feature change take?", "Dates from your ticket history over the past year", "Small changes take weeks and are getting slower"],
+            ["6", "**Integration ceiling.** Can the platform connect to the systems you need (CRM, ERP, PIM, SSO, search)?", "A list of required integrations and how each works today", "A needed integration is impossible, or runs only through a fragile workaround"],
+            ["7", "**Content model fit.** Can the CMS model your content?", "Requirements for structured content, languages, multiple sites or personalisation", "You are forcing content into fields and pages that do not fit"],
+            ["8", "**Security and compliance burden.** Can you keep it secure and compliant at reasonable effort?", "Incident history, unpatched extensions, compliance requirements such as accessibility or payment card rules", "Recurring incidents, or a requirement the platform makes very hard to meet"],
+            ["9", "**Cost curve.** Are licence, hosting, extension and maintenance costs rising faster than the value?", "Your own costs and maintenance hours over two or three years", "Costs keep rising while the platform does less of what you need"],
+            ["10", "**Talent pool.** Can you hire or contract developers for it?", "Response to recent hiring or agency enquiries", "Few people still work with it, and they are hard to book"],
+          ],
         },
       },
       {
-        heading: "Integration Limits and Developer Bottlenecks",
+        heading: "What your score means",
         body: [
-          "When the business needs deeper connections to CRM, ERP or other systems than the platform supports, or when every change waits on scarce specialist developers, the platform is costing more than its licenses. See [[/blogs/website-api-integrations-list|common website integrations]] for what modern stacks typically need to support.",
+          "The bands below are a ZSpace Labs heuristic to structure the decision, not an industry standard. Use them to decide what to investigate next, not as a verdict.",
+        ],
+        table: {
+          headers: ["Score (out of 20)", "Likely conclusion", "Next step"],
+          rows: [
+            ["0 to 5", "The platform is not the constraint", "Optimise in place: see [[/blogs/why-is-my-website-slow|why a website is slow]] and the [[/blogs/website-maintenance-guide|website maintenance guide]]"],
+            ["6 to 11", "Strained, but fixable without moving", "Targeted fixes, an in-place upgrade or staged modernisation: see [[/blogs/website-redesign-vs-rebuild|redesign vs rebuild]]"],
+            ["12 or more, or a 2 on row 1 with no upgrade path", "The platform is likely the constraint", "Build a replatforming business case and compare at least two target platforms against written requirements"],
+          ],
+        },
+        callout: {
+          type: "takeaway",
+          text: "Outgrown the platform or outgrown the build? If rows 1, 6, 7 and 10 score low but rows 3, 4 and 5 score high, the platform is probably fine and the implementation is the problem. A rebuild or refactor on the same platform usually fixes that for less risk than a move.",
+        },
+      },
+      {
+        heading: "Dated end-of-life checkpoints",
+        body: [
+          "End of life means the project stops publishing security fixes, so new vulnerabilities stay open. The dates below were checked on the official pages on 15 October 2026. Schedules can change, so confirm on the linked page before you plan around them.",
+        ],
+        table: {
+          headers: ["Platform or runtime", "Status as of 15 October 2026", "Source"],
+          rows: [
+            ["Drupal 7", "End of life on 5 January 2025; no further security or compatibility updates", "[[https://www.drupal.org/about/drupal-7/d7eol/partners|Drupal.org]]"],
+            ["Drupal 10", "Reaches end of life on 9 December 2026. Drupal 12 is scheduled for the week of 7 December 2026, though Drupal says release windows are not guaranteed", "[[https://www.drupal.org/about/core/policies/core-release-cycles/schedule|Drupal.org release schedule]]"],
+            ["PHP 8.2", "Security support ends 31 December 2026. PHP 8.3 has security support until 31 December 2027, 8.4 until 31 December 2028 and 8.5 until 31 December 2029", "[[https://www.php.net/supported-versions.php|PHP.net supported versions]]"],
+            ["Adobe Commerce 2.4.6", "Standard support ended 11 August 2026. 2.4.7 standard support ends 31 May 2027. The page covers Adobe Commerce; check Magento Open Source support separately", "[[https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy|Adobe Experience League]]"],
+            ["WordPress", "Only the latest version is officially supported; the security team backports some fixes to older versions as a courtesy", "[[https://wordpress.org/about/security/|WordPress.org security]]"],
+            ["Magento 1", "Support ended on 30 June 2020 according to Adobe's announcements at the time. Treat any Magento 1 site as unsupported unless you pay a third party for patches", "Adobe developer community post and contemporary coverage (primary announcement not retrieved)"],
+          ],
+        },
+        callout: {
+          type: "note",
+          text: "An end-of-life date often calls for an upgrade, not a move. Drupal 10 sites can move to Drupal 11, and PHP 8.2 sites to a newer PHP branch, if custom code and extensions allow it. Row 2 of the diagnostic is where that question gets answered. If your software comes from a vendor, ask for its support roadmap in writing; the UK's voluntary Software Security Code of Practice suggests vendors give at least a year's notice before support ends.",
+        },
+      },
+      {
+        heading: "Hypothetical example: one site, two readings",
+        body: [
+          "**This example is hypothetical.** A B2B manufacturer runs its site on Drupal 10 with PHP 8.2. Its marketing team scores the diagnostic: row 1 scores 2 (both reach end of life by the end of 2026), row 4 scores 2 (every landing page needs a developer), rows 3 and 5 score 1, and the rest score 0. Total: 6.",
+          "A developer then checks row 2 and finds the custom modules are compatible with Drupal 11 after modest changes, so row 1 has an upgrade path. The editor problem turns out to be a build issue: the original agency hard-coded page layouts instead of giving editors reusable components. The sensible plan is an in-place upgrade plus a rebuild of the page templates, not a replatform. Had the custom modules blocked the upgrade and the CRM integration been impossible, the score would have pointed the other way.",
         ],
       },
       {
-        heading: "SEO and Migration Risk",
+        heading: "Legacy technology problems",
         body: [
-          "Every replatforming is also a migration. URL changes, template changes and content moves can all cost search visibility if handled carelessly. Follow a structured process like the one in the [[/blogs/website-migration-guide|website migration guide]].",
+          "Older platforms often accumulate outdated dependencies, unsupported extensions and custom patches nobody fully understands. Each update becomes risky, which leads to updates being skipped, which increases security exposure. That cycle is a common reason businesses start considering a move, and it is why rows 1 and 2 of the diagnostic carry most weight in practice.",
         ],
       },
       {
-        heading: "Cost Considerations",
+        heading: "Performance, security and CMS limitations",
+        body: [
+          "Before blaming the platform, rule out fixable causes like heavy scripts, images or hosting, using the [[/blogs/why-is-my-website-slow|slow website guide]]. Google's \"good\" Core Web Vitals thresholds are LCP within 2.5 seconds, INP of 200 milliseconds or less and CLS of 0.1 or less, measured at the 75th percentile of page loads ([[https://web.dev/articles/vitals|web.dev]]). If problems remain rooted in the platform's architecture, security model or editing limits after those fixes, that's a genuine replatforming signal.",
+        ],
+        cta: {
+          title: "Not sure whether your platform is the real problem?",
+          description: "ZSpace Labs can look at your scorecard and current stack and tell you whether to optimise, upgrade, rebuild or replatform.",
+        },
+      },
+      {
+        heading: "Integration limits and developer bottlenecks",
+        body: [
+          "When the business needs deeper connections to CRM, ERP or other systems than the platform supports, or when every change waits on scarce specialist developers, the platform is costing more than its licences. See [[/blogs/website-api-integrations-list|common website integrations]] for what modern stacks typically need to support. Online stores have their own constraints; [[/blogs/ecommerce-replatforming|ecommerce replatforming]] covers how to tell whether a commerce platform is the limit.",
+        ],
+      },
+      {
+        heading: "Cost considerations",
         body: [
           "Budget for more than the new build: content and data migration, integration rework, redirects and SEO work, training, parallel running during transition, and post-launch fixes. Data migration and integration rework are the most commonly underestimated items. The [[/blogs/website-development-cost|cost breakdown guide]] explains the broader drivers.",
         ],
       },
       {
-        heading: "Reducing Replatforming Risk",
+        heading: "Reducing replatforming risk",
         body: [],
         checklist: [
           "Diagnose why the current platform fails before choosing a new one",
@@ -769,9 +823,24 @@ export const webDevPosts9: BlogPost[] = [
         },
       },
       {
+        heading: "When replatforming is the wrong answer",
+        body: [
+          "Do not replatform to fix a content problem, an unclear brand or a weak conversion path; those follow you to the new platform. Do not replatform because an agency prefers a different stack, or because one deadline is near when an in-place upgrade is available. And avoid replatforming during your busiest trading period or while the business is changing its offer, because you will be migrating a moving target.",
+        ],
+      },
+      {
+        heading: "Sources",
+        body: [
+          "Lifecycle and support: [[https://www.drupal.org/about/drupal-7/d7eol/partners|Drupal 7 end of life]]; [[https://www.drupal.org/about/core/policies/core-release-cycles/schedule|Drupal core release schedule]]; [[https://www.php.net/supported-versions.php|PHP supported versions]]; [[https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy|Adobe Commerce lifecycle policy (updated 18 September 2026)]]; [[https://wordpress.org/about/security/|WordPress security]]; [[https://community.magento.com/t5/Magento-DevBlog/How-Extension-Developers-Can-Prepare-for-M1-End-of-Life/ba-p/446216|Magento DevBlog: preparing for Magento 1 end of life]].",
+          "Performance and migration: [[https://web.dev/articles/vitals|web.dev: Web Vitals]]; [[https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes|Google Search Central: site moves with URL changes]].",
+          "Vendor support notice: [[https://www.gov.uk/government/publications/software-security-code-of-practice/software-security-code-of-practice|UK Software Security Code of Practice]].",
+          "Accessed 15 October 2026. Support dates and schedules change; check the official pages before planning around them.",
+        ],
+      },
+      {
         heading: "Conclusion",
         body: [
-          "Replatforming is justified when the platform itself limits the business, and it's risky enough to deserve careful diagnosis and planning. Confirm the platform is the real problem, choose the new stack against clear requirements, and treat migration as a project in its own right. For choosing who does the work, see [[/blogs/how-to-choose-website-development-company|how to choose a website development company]]. For online stores specifically, see [[/blogs/ecommerce-replatforming|ecommerce replatforming]].",
+          "Replatforming is justified when the platform itself limits the business, and it's risky enough to deserve careful diagnosis and planning. Score the ten rows with evidence, check the end-of-life dates that apply to you, rule out an in-place upgrade, then choose the new stack against clear requirements and treat migration as a project in its own right. The [[/blogs/website-migration-guide|website migration guide]] covers the move step by step. For choosing who does the work, see [[/blogs/how-to-choose-website-development-company|how to choose a website development company]].",
           "For related guides, see [[/blogs/legacy-ecommerce-migration|legacy ecommerce migration]] and [[/blogs/ecommerce-platform-migration-checklist|ecommerce migration checklist]].",
         ],
       },

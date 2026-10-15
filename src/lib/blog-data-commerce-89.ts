@@ -215,7 +215,7 @@ export const commercePosts89: BlogPost[] = [
       { q: "What if the replacement is out of stock?", a: "Show only variants that are available, reserve the selected one when the exchange is created, and offer a refund, store credit or back-in-stock option if nothing suitable is available." },
       { q: "Should exchanges be free?", a: "Many brands offer free like-for-like exchanges, especially for size, while charging for return shipping on refunds. Whatever you choose, state it before purchase." },
       { q: "How are exchanges recorded in systems?", a: "As one exchange linking the return of the original item and a replacement order or fulfilment, with payment adjustments for price differences. This keeps inventory, revenue and customer history accurate." },
-      { q: "Does Shopify support exchanges?", a: "Shopify supports exchanges within returns through its admin and the GraphQL Admin API, where exchange line items sit on the return and processing the return creates fulfilment for the exchange items. Returns apps add customer-facing exchange flows." },
+      { q: "Does Shopify support exchanges?", a: "Yes. Exchanges for online orders have been available to all Shopify merchants since 28 February 2024. They sit within returns in the admin and the GraphQL Admin API: exchange line items sit on the return, and processing the return creates fulfilment for the exchange items. In Shopify's native self-serve returns, the customer requests a return and the merchant adds the exchange items when approving it. Shopify doesn't reserve exchange stock until the return is processed. Returns apps add customer-facing exchange flows." },
       { q: "How do we measure exchanges?", a: "Track the share of returns converted to exchanges, revenue retained, exchange cycle time, instant exchange items never returned and repeat exchanges for the same product." },
     ],
     content: [
@@ -263,6 +263,7 @@ export const commercePosts89: BlogPost[] = [
         heading: "Stock Reservation",
         body: [
           "Reserve the replacement when the exchange is created, not when the return arrives, or it may sell out while the original is in transit. Release the reservation if the customer abandons the return within a set time. For standard exchanges, the reservation can be held until the return is received; for instant exchanges, allocate and ship immediately.",
+          "This is something to build or get from an app. Shopify's native exchanges don't do it: [[https://help.shopify.com/en/manual/fulfillment/managing-orders/returns/creating-returns|Shopify's Help Center]] says exchange items inventory isn't reserved until you process the return. On Shopify, reserving at request time needs a returns app that supports it or a custom build connected to your inventory.",
         ],
       },
       {

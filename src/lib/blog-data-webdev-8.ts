@@ -231,6 +231,7 @@ export const webDevPosts8: BlogPost[] = [
           "Check performance impact of any client-side scripts",
           "Confirm consent and privacy requirements for data shared",
           "Test integrations again after updates on either side",
+          "To size each integration before you commit, use the [[/blogs/api-integration-development-cost|API integration scoping worksheet]].",
         ],
         cta: {
           title: "Want your integrations built to be reliable in production?",
@@ -595,15 +596,19 @@ export const webDevPosts8: BlogPost[] = [
     slug: "pwa-vs-native-app",
     title: "PWA vs Native App: Which Should Your Business Build?",
     excerpt:
-      "Comparing development, cost, performance, device access, distribution, offline support, notifications and maintenance, with a practical decision guide.",
+      "App or mobile-friendly website first? PWA vs native compared, with clear triggers for moving to an app and the store fees and testing rules the web avoids.",
     category: "Web Development",
     banner: "segmentsplit",
+    sceneKind: "mobile",
+    bannerAlt: "A split comparison of a progressive web app running in a phone browser and a native app installed from an app store",
     date: "2026-09-24",
-    updated: "2026-10-09",
-    readingTime: "12 min read",
+    updated: "2026-10-14",
+    readingTime: "11 min read",
     relatedServiceSlugs: ["mobile-app-development", "website-development"],
-    relatedIndustrySlugs: ["ecommerce", "fintech", "travel-hospitality"],
+    relatedIndustrySlugs: ["ecommerce", "fintech", "travel-hospitality", "startups"],
+    relatedSlugs: ["how-to-validate-mobile-app-idea", "ecommerce-mobile-app-vs-mobile-website", "native-vs-cross-platform-app-development"],
     faqs: [
+      { q: "Should my startup build an app or a website first?", a: "Most startups should start with a mobile-friendly website or web app, unless the core value depends on something only an app can do, such as background location, Bluetooth hardware or reliable iPhone push without a Home Screen install. The web lets you test demand without store fees, review cycles or testing gates, and a shared backend lets you add an app later." },
       { q: "Is a PWA or a native app better?", a: "Neither in general. PWAs are faster and cheaper to deliver across platforms and are discoverable through search. Native apps offer the best performance, full device access and app store distribution." },
       { q: "Is a PWA cheaper than a native app?", a: "Usually, since one web codebase serves every platform. Native apps built separately for iOS and Android cost more; cross-platform frameworks narrow the gap." },
       { q: "Can a PWA replace a native app?", a: "For many content, commerce and booking use cases, yes. For apps relying on advanced device features, background processing or heavy graphics, usually not." },
@@ -613,19 +618,87 @@ export const webDevPosts8: BlogPost[] = [
       { q: "What about cross-platform frameworks?", a: "Frameworks like React Native or Flutter build native apps for iOS and Android from shared code. They sit between PWAs and fully separate native apps on cost and capability." },
       { q: "Do PWAs work on iPhone now?", a: "Yes, with limits. Since iOS 16.4, web apps added to the Home Screen can receive web push notifications, iOS 18.4 added Declarative Web Push for those apps, and in iOS 26 Safari opens any site added to the Home Screen as a web app by default. Some capabilities available to native apps, such as many background tasks, are still not available to web apps." },
       { q: "Does a PWA need to be in the App Store or Google Play?", a: "No. A PWA is installed from the browser. Some teams also wrap a PWA for store distribution, but store policies apply to wrapped apps, and Apple's review guidelines expect apps to offer more than a repackaged website. If store presence is essential, plan for a genuine app experience." },
+      { q: "How much do the app store developer accounts cost?", a: "As checked on 14 October 2026, Apple's Developer Program is 99 USD per membership year (or local currency where available), and Google Play charges a US$25 one-time registration fee. Store commissions on digital sales are separate. A website needs neither account." },
+      { q: "What is Google Play's closed testing requirement?", a: "Google says personal developer accounts created after 13 November 2023 must run a closed test with at least 12 testers opted in continuously for at least 14 days before they can apply for production access. Plan the time and the testers before your launch date." },
       { q: "Can I start with a PWA and build native later?", a: "Yes. It's a reasonable way to validate demand. Plan the backend as a shared API so a later native app can reuse it." },
     ],
     content: [
       {
-        heading: "Quick answer",
+        heading: "PWA or native app: which should you build?",
         body: [
-          "Build a PWA when you want an installable, fast, offline-capable experience across all devices from one codebase, and your features don't depend on deep device access or app store presence. Build a native app when you need the best possible performance, full device capabilities, reliable push notifications, background processing or app store distribution. Many businesses start with a PWA to validate demand and add native apps once usage justifies the investment.",
+          "**Build a PWA (or a well-made mobile website) when you want an installable, fast, offline-capable experience across all devices from one codebase, and your features don't depend on deep device access or app store presence. Build a native app when you need the best possible performance, full device capabilities, reliable push notifications, background processing or app store distribution.** For most startups that are still testing demand, that means starting on the web and moving to an app when a specific trigger appears; the triggers are listed below.",
         ],
       },
       {
-        heading: "The Two Options",
+        heading: "Key takeaways",
+        body: [],
+        checklist: [
+          "The web is the cheaper, faster way to test whether people want the product on their phones.",
+          "Move to an app when a capability or user behaviour requires it, not because competitors have one.",
+          "On iPhone, web push works only after the user adds the web app to the Home Screen.",
+          "Store distribution brings account fees, review, testing gates and yearly SDK deadlines that the web avoids.",
+          "Design the backend as a shared API so adding an app later is an extension, not a rebuild.",
+        ],
+      },
+      {
+        heading: "The two options",
         body: [
-          "A PWA is a website with app-like capabilities, explained in the [[/blogs/progressive-web-app-development|PWA development guide]]. A native app is built for iOS or Android specifically, either separately or with a cross-platform framework, and distributed through app stores.",
+          "A PWA is a website with app-like capabilities: it can be installed to the home screen, work offline and send notifications, as explained in the [[/blogs/progressive-web-app-development|PWA development guide]]. A native app is built for iOS or Android specifically, either separately or with a cross-platform framework, and distributed through app stores.",
+        ],
+      },
+      {
+        heading: "Should a startup start with the web?",
+        body: [
+          "Usually, yes. Before product-market fit, the most expensive mistake is building the wrong thing, and the web makes changes cheap: you ship updates instantly, share a link instead of asking for a download, and measure behaviour without store review in the way. If you have not yet tested demand, work through [[/blogs/how-to-validate-mobile-app-idea|how to validate a mobile app idea]] before committing to either build.",
+          "Starting on the web is the wrong call when the product cannot deliver its core value in a browser. Use the triggers below. Each is tied to a capability or a measurable behaviour, so you can tell when it has actually fired.",
+        ],
+        table: {
+          headers: ["Trigger", "Why the web falls short", "What to do"],
+          rows: [
+            ["Core value needs **background location** (tracking a run, a delivery, a shift)", "Web apps get location only while in use; background location needs a native app with permission", "Build an app, or start with native for this feature"],
+            ["Core value needs **Bluetooth or NFC hardware**, especially on iPhone", "Some Bluetooth APIs exist in Chromium browsers; on iPhone they are generally not available to web apps", "Build an app"],
+            ["**Push is central to retention** and iPhone users will not add the site to the Home Screen", "iOS web push requires a Home Screen install first (iOS 16.4+)", "Track Home Screen installs; if few iPhone users install, move to an app"],
+            ["**Offline-first** work with large local data or long sync sessions (field inspections, remote sites)", "Service worker storage and background sync are limited, especially on iOS", "Prototype offline on the web; move to an app if limits bite"],
+            ["**Heavy graphics, real-time camera or media processing**", "Browsers can do a lot, but native APIs perform better for intensive work", "Benchmark on low-end devices; move if it falls short"],
+            ["Customers **expect to find and install you from an app store**", "The web relies on search, links and your own marketing for discovery", "Confirm with real user research, not assumption"],
+            ["You want to sell **digital goods or subscriptions through store billing**", "Store billing exists only inside store apps", "Weigh the store fees against conversion; see the cost guide"],
+            ["**Daily repeat use** from a core cohort, and users ask for an app", "Not a hard limit, but a strong signal that an app's home-screen presence and notifications will pay back", "Use the data to justify the build and scope it"],
+          ],
+        },
+        callout: {
+          type: "note",
+          text: "Not triggers on their own: a competitor has an app, an investor asked about one, or the team assumes people prefer apps. Test those assumptions first.",
+        },
+      },
+      {
+        heading: "Store costs and friction the web avoids",
+        body: [
+          "A website or PWA needs a domain and hosting. A store app adds the items below, as checked on 14 October 2026. Fees and rules change, so confirm them on the linked pages before you budget.",
+        ],
+        table: {
+          headers: ["Item", "Apple App Store", "Google Play", "Website or PWA"],
+          rows: [
+            ["Release process", "Every release goes through App Review", "Every release goes through Play review", "Deploy when ready"],
+            ["Developer account", "99 USD per membership year, or local currency where available; fee waivers for eligible nonprofits, accredited education and government ([[https://developer.apple.com/programs/whats-included/|Apple]])", "US$25 one-time registration fee ([[https://support.google.com/googleplay/android-developer/answer/6112435|Google]])", "None"],
+            ["Testing before launch", "Optional TestFlight beta", "Personal accounts created after 13 Nov 2023: closed test with at least 12 testers opted in for at least 14 days before production ([[https://support.google.com/googleplay/android-developer/answer/14151465|Google]])", "None required"],
+            ["Yearly technical deadlines", "New Xcode and SDK minimum each cycle; Xcode 26 required since 28 Apr 2026 ([[https://developer.apple.com/news/upcoming-requirements/|Apple]])", "Annual target API level; API 36 from 31 Aug 2026 ([[https://developer.android.com/google/play/requirements/target-sdk|Android]])", "Browser support changes, but no store deadline"],
+            ["Commission on digital sales", "Applies to in-app digital goods and subscriptions", "Applies to in-app digital goods and subscriptions", "Payment processor fees only"],
+          ],
+        },
+        callout: {
+          type: "tip",
+          text: "If you go to Google Play with a new personal account, recruit your 12 testers before the build is finished. The 14-day clock only starts once they are opted in.",
+        },
+      },
+      {
+        heading: "A staged path from web to app",
+        body: [
+          "A sensible default for an unvalidated product, offered as a recommendation rather than a rule:",
+        ],
+        checklist: [
+          "**Stage 1: mobile-friendly website or web app.** Prove people sign up, return and pay. Build the backend as an API.",
+          "**Stage 2: add PWA features.** Installability, offline caching for key screens, and push (reliable on Android; on iPhone after Home Screen install). Measure install and notification opt-in rates.",
+          "**Stage 3: native or cross-platform app.** Start when one of the triggers above fires. Reuse the API, and keep the web product for discovery and sign-up.",
         ],
       },
       {
@@ -648,31 +721,27 @@ export const webDevPosts8: BlogPost[] = [
         },
       },
       {
-        heading: "Cost and Development",
+        heading: "Cost and development",
         body: [
-          "A PWA reuses web skills and one codebase, which usually means lower build and maintenance cost. Native development requires platform-specific skills or a cross-platform framework, plus app store processes. For a detailed view of native builds, see ZSpace Labs' [[/services/mobile-app-development|mobile app development]] service.",
+          "A PWA reuses web skills and one codebase, which usually means lower build and maintenance cost. Native development requires platform-specific skills or a cross-platform framework, plus app store processes. For a detailed view of native builds, see ZSpace Labs' [[/services/mobile-app-development|mobile app development]] service, and for the full list of cost drivers, the [[/blogs/mobile-app-development-cost|mobile app development cost guide]].",
         ],
         visual: { variant: "grid", accent: "orange", caption: "PWAs trade some device capability for reach and lower cost; native apps trade cost for capability and store presence." },
       },
       {
-        heading: "Performance and User Experience",
+        heading: "Performance and user experience",
         body: [
           "Native apps generally feel smoother for gesture-heavy interfaces, complex animation and large local datasets. For browsing content, forms, bookings and standard commerce flows, a well-built PWA can be very close. The [[/blogs/how-to-make-a-website-mobile-friendly|mobile-friendly website guide]] covers the fundamentals any mobile web experience needs.",
         ],
-        cta: {
-          title: "Deciding between a PWA and a native app?",
-          description: "ZSpace Labs builds both websites and mobile apps, so we can recommend what your use case actually needs.",
-        },
       },
       {
-        heading: "Device Access and Notifications",
+        heading: "Device access and notifications",
         body: [
           "If your product relies on background location, Bluetooth hardware, advanced camera processing, deep OS integration or dependable push on iPhone, native is usually required. PWAs cover cameras, geolocation and notifications to a degree, with more limits on iOS.",
-          "The iOS position has improved, so check current behavior rather than older articles. Since iOS 16.4, web apps added to the Home Screen can use web push. WebKit added Declarative Web Push for Home Screen web apps in iOS and iPadOS 18.4 ([[https://webkit.org/blog/16574/webkit-features-in-safari-18-4/|WebKit]]). And from iOS 26, Safari opens every site a user adds to the Home Screen as a web app by default, with an option to turn that off ([[https://webkit.org/blog/16993/news-from-wwdc25-web-technology-coming-this-fall-in-safari-26-beta/|WebKit]]). The constraint that remains is reach: push on iPhone still requires the user to add the web app to the Home Screen first, which many users never do.",
+          "The iOS position has improved, so check current behaviour rather than older articles. Since iOS and iPadOS 16.4, web apps added to the Home Screen can use web push, with permission requested in response to a user action such as tapping a subscribe button ([[https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/|WebKit]]). WebKit added Declarative Web Push for Home Screen web apps in iOS and iPadOS 18.4 ([[https://webkit.org/blog/16574/webkit-features-in-safari-18-4/|WebKit]]). And from iOS 26, Safari opens every site a user adds to the Home Screen as a web app by default, with an option to turn that off ([[https://webkit.org/blog/16993/news-from-wwdc25-web-technology-coming-this-fall-in-safari-26-beta/|WebKit]]). The constraint that remains is reach: push on iPhone still requires the user to add the web app to the Home Screen first, which many users never do.",
         ],
       },
       {
-        heading: "Capability Check: What Each Option Can Do Today",
+        heading: "Capability check: what each option can do today",
         body: [
           "Use this as a starting point and verify each capability your product depends on against current platform documentation, because browser support changes with each release.",
         ],
@@ -690,28 +759,28 @@ export const webDevPosts8: BlogPost[] = [
         },
       },
       {
-        heading: "Total Cost of Ownership",
+        heading: "Total cost of ownership",
         body: [
           "Compare the full lifecycle, not just the first build. A PWA has one codebase, no store review cycle and instant updates, but you still need good offline handling, performance work and testing on real devices and browsers. A native or cross-platform app adds store accounts and fees, review cycles, yearly SDK and target API deadlines, and support for older app versions in the field. Store service fees on digital goods and subscriptions also apply to native apps but not to web payments, which matters for some business models.",
           "For maintenance obligations on the native side, see [[/blogs/mobile-app-maintenance|mobile app maintenance]]. Australian businesses budgeting either option can use the lifecycle model in [[/blogs/mobile-app-development-cost-australia|mobile app development cost in Australia]].",
         ],
       },
       {
-        heading: "Accessibility and User Experience",
+        heading: "Accessibility and user experience",
         body: [
           "Both options can be accessible, and both can fail. Native apps inherit platform accessibility features when built with standard components; PWAs inherit the web's accessibility model and must follow WCAG. In both cases, test with screen readers, larger text settings and keyboard or switch access, and avoid custom controls that hide meaning from assistive technology. See [[/blogs/accessible-ui-ux-design|accessible UI/UX design]].",
         ],
       },
       {
-        heading: "Distribution and Maintenance",
+        heading: "Distribution and maintenance",
         body: [
           "PWAs update instantly and are reachable by a link or search result. Native apps benefit from store visibility and user trust in store listings, but every release goes through review and depends on users updating.",
         ],
       },
       {
-        heading: "Decision Guide",
+        heading: "Decision guide",
         body: [
-          "Running a store? The ecommerce version of this comparison, covering checkout, product SEO and iOS push, is [[/blogs/ecommerce-pwa-vs-native-app|PWA vs native app for ecommerce]].",
+          "Running a store? The ecommerce versions of this comparison are [[/blogs/ecommerce-pwa-vs-native-app|PWA vs native app for ecommerce]], covering checkout, product SEO and iOS push, and [[/blogs/ecommerce-mobile-app-vs-mobile-website|ecommerce mobile app vs mobile website]], for when a store app earns its place.",
         ],
         checklist: [
           "Core features need hardware or background access: native",
@@ -723,16 +792,24 @@ export const webDevPosts8: BlogPost[] = [
           "iPhone users must get notifications without installing anything: native",
           "You sell digital goods or subscriptions and want to avoid store billing: consider web payments in a PWA, within store rules if you also have an app",
         ],
-        cta: {
-          title: "Want to scope the right mobile approach?",
-          description: "Talk to ZSpace Labs about your users, features and budget before committing to a platform.",
-        },
+      },
+      {
+        heading: "Sources",
+        body: [
+          "Platform behaviour: [[https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/|WebKit: Web Push for web apps on iOS and iPadOS]]; [[https://webkit.org/blog/16574/webkit-features-in-safari-18-4/|WebKit: features in Safari 18.4]]; [[https://webkit.org/blog/16993/news-from-wwdc25-web-technology-coming-this-fall-in-safari-26-beta/|WebKit: news from WWDC25]].",
+          "Store accounts and rules: [[https://developer.apple.com/programs/whats-included/|Apple Developer Program: what's included]]; [[https://support.google.com/googleplay/android-developer/answer/6112435|Google Play: register for a developer account]]; [[https://support.google.com/googleplay/android-developer/answer/14151465|Google Play: testing requirements for new personal developer accounts]]; [[https://developer.apple.com/news/upcoming-requirements/|Apple: upcoming requirements]]; [[https://developer.android.com/google/play/requirements/target-sdk|Android: target API level requirements]].",
+          "Accessed 14 October 2026. Store fees, testing rules and browser support change; check the current pages before deciding.",
+        ],
       },
       {
         heading: "Conclusion",
         body: [
-          "PWAs are an efficient way to deliver app-like experiences to everyone; native apps are the right tool when capability and store presence matter most. Whichever you choose, design the backend as a shared API, as described in [[/blogs/api-first-website-development|API-first development]], so you can add the other later. If native wins, the [[/blogs/native-vs-cross-platform-app-development|native vs cross-platform guide]] covers the next decision, and the [[/blogs/mobile-app-development-guide|mobile app development guide]] covers the full build.",
+          "PWAs are an efficient way to deliver app-like experiences to everyone; native apps are the right tool when capability and store presence matter most. For a startup, the web is usually the right first step, with a clear list of triggers that tell you when to build the app. Whichever you choose, design the backend as a shared API, as described in [[/blogs/api-first-website-development|API-first development]], so you can add the other later. If native wins, the [[/blogs/native-vs-cross-platform-app-development|native vs cross-platform guide]] covers the next decision, and the [[/blogs/mobile-app-development-guide|mobile app development guide]] covers the full build.",
         ],
+        cta: {
+          title: "Not sure whether you need an app yet?",
+          description: "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/mobile-app-development|mobile apps]] and [[/services/website-development|websites]], so we have no reason to push one over the other. If useful, we can talk through your users and features and whether a web build is enough for now.",
+        },
       },
     ],
   },

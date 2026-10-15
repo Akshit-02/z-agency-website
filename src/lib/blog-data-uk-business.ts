@@ -124,7 +124,7 @@ export const ukBusinessPosts: BlogPost[] = [
           rows: [
             ["**IP ownership**", "Copyright generally belongs to the author or their employer unless assigned; an assignment must be in writing and signed by the assignor ([[https://www.legislation.gov.uk/ukpga/1988/48/section/90|CDPA 1988 s.90]]). Assign custom code, list open-source and pre-existing components with their licences"],
             ["**Data protection**", "A UK GDPR Article 28 processor agreement; security measures; sub-processors; breach notification; international transfer safeguards"],
-            ["**Pricing model**", "Fixed price per phase, time and materials with a cap, or a monthly team; change control either way"],
+            ["**Pricing model**", "Fixed price per phase, time and materials with a cap, or a monthly team; change control either way. See [[/blogs/fixed-price-vs-time-and-materials|how fixed price and time and materials allocate risk]]"],
             ["**Acceptance**", "Written acceptance criteria and a testing window per release"],
             ["**Warranty and support**", "Defect fixing period, response times, hours of cover and costs after warranty"],
             ["**Handover and exit**", "Access to repositories, infrastructure accounts, documentation and credentials in your name; see [[/blogs/software-vendor-handover-checklist|software vendor handover checklist]]"],

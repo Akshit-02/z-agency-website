@@ -440,7 +440,7 @@ export const designPosts5: BlogPost[] = [
         heading: "Dashboard UX",
         body: [
           "A dashboard should answer the questions a user asks when they open the product: is anything wrong, what needs my attention, how are we doing against the goal? Show a few metrics with context such as trend, comparison or target, highlight what needs action, and link every summary to its detail.",
-          "Design for new accounts with little or no data, and for different roles, who may need different default views. A dashboard filled with every available chart looks capable and helps nobody decide anything.",
+          "Design for new accounts with little or no data, and for different roles, who may need different default views. A dashboard filled with every available chart looks capable and helps nobody decide anything. For a full method and a scorecard, see [[/blogs/saas-dashboard-design|how to design a SaaS dashboard that drives action]].",
         ],
       },
       {

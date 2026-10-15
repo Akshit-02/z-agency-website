@@ -14,11 +14,11 @@ export const commerceRewrites: BlogPost[] = [
     title: "Shopify Plus vs Shopify: Which Platform Should Your Business Choose?",
     seoTitle: "Shopify Plus vs Shopify: Which Should Your Business Choose?",
     excerpt:
-      "How Shopify Plus differs from Basic, Grow and Advanced: checkout, B2B, expansion stores, staff, locations, Hydrogen, APIs, and the signals that justify upgrading.",
+      "How Shopify Plus differs from Basic, Grow and Advanced: checkout, B2B, expansion stores, staff, locations, Oxygen environments, APIs and when to upgrade.",
     category: "Shopify & Ecommerce",
     banner: "plusvsplans",
     bannerAlt:
-      "Comparison of Shopify's Basic, Grow and Advanced plans with Shopify Plus: checkout customization, B2B catalogs, expansion stores, staff accounts, inventory locations and Hydrogen storefronts.",
+      "Comparison of Shopify's Basic, Grow and Advanced plans with Shopify Plus: checkout customization, B2B catalogs, expansion stores, staff accounts, inventory locations and public Oxygen environments for Hydrogen.",
     date: "2026-04-06",
     updated: "2026-09-29",
     readingTime: "16 min read",
@@ -31,7 +31,7 @@ export const commerceRewrites: BlogPost[] = [
       { q: "Can I customize checkout without Plus?", a: "Partly. All plans can configure checkout settings, branding and payment options, and thank-you and order status pages can be extended with apps. Customizing the information, shipping and payment steps with checkout UI extensions requires Plus." },
       { q: "What are expansion stores?", a: "Additional stores under the same Plus organization, used for regions, brands or wholesale. Shopify's Plus plan supports up to nine." },
       { q: "Does Shopify Plus make my store faster?", a: "Not by itself. Storefront speed depends mainly on the theme, apps and media. Plus helps with scale and flexibility, not front-end performance." },
-      { q: "Can I use Hydrogen without Plus?", a: "Yes. Shopify's documentation says Oxygen hosting is available on paid plans. Shopify's Plus page lists up to 25 Hydrogen storefronts for Plus." },
+      { q: "Can I use Hydrogen without Plus?", a: "Yes. Shopify's documentation says Oxygen hosting is available at no extra charge on paid plans, from Starter upward (not on Agentic plans). Plus gets 25 public Oxygen environments; other paid plans get 1." },
       { q: "Is Shopify Functions Plus-only?", a: "Public apps built with Functions work on all plans. Custom apps that use Functions are limited to Plus." },
       { q: "When should I upgrade to Shopify Plus?", a: "When you can name a specific Plus capability you need now, such as checkout step customization, more B2B catalogs, expansion stores or combined listings, and the benefit outweighs the cost." },
       { q: "Is it hard to move from Shopify to Plus?", a: "No. It's a plan upgrade on the same platform, not a migration. The work is in using the new capabilities, such as building checkout extensions or setting up expansion stores." },
@@ -40,7 +40,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "Choose standard Shopify (Basic, Grow or Advanced) unless you need a specific capability only Plus provides. According to Shopify's pricing and Plus plan pages, Plus adds full checkout customization including the information, shipping and payment steps, unlimited B2B catalogs instead of three, up to nine expansion stores, unlimited staff accounts, up to 200 inventory locations, Plus-only APIs and apps such as combined listings, and up to 25 Hydrogen storefronts. Upgrade when one of those solves a current problem worth the higher fee, not because the business has simply grown.",
+          "Choose standard Shopify (Basic, Grow or Advanced) unless you need a specific capability only Plus provides. According to Shopify's pricing and Plus plan pages, Plus adds full checkout customization including the information, shipping and payment steps, unlimited B2B catalogs instead of three, up to nine expansion stores, unlimited staff accounts, up to 200 inventory locations, Plus-only APIs and apps such as combined listings, and 25 public Oxygen environments for Hydrogen (1 on other paid plans). Upgrade when one of those solves a current problem worth the higher fee, not because the business has simply grown.",
         ],
       },
       {
@@ -65,7 +65,7 @@ export const commerceRewrites: BlogPost[] = [
             ["Inventory locations", "Up to 10", "Up to 200"],
             ["Themes in the admin", "Standard limit", "Up to 100"],
             ["Staging stores", "Not listed on standard plans", "Unlimited"],
-            ["Hydrogen storefronts", "Oxygen available on paid plans", "Up to 25 listed on the Plus page"],
+            ["Public Oxygen environments (Hydrogen hosting)", "1 on other paid plans", "25"],
             ["Custom apps using Functions", "Not available", "Available"],
             ["Plus-only APIs and apps", "Not available", "e.g. Multipass, gift card APIs, combined listings"],
           ],
@@ -75,13 +75,13 @@ export const commerceRewrites: BlogPost[] = [
         heading: "Checkout: The Most Common Reason to Upgrade",
         body: [
           "Checkout is hosted by Shopify on every plan. On standard plans you can configure payment methods, accelerated checkouts, fields, branding and policies, and extend the thank-you and order status pages with apps. On Plus, checkout UI extensions can add content and fields to the information, shipping and payment steps, and custom apps can use Shopify Functions to change logic such as discounts, delivery options and payment methods for your store alone.",
-          "If you need custom fields at checkout, delivery-date pickers inside checkout, B2B-specific checkout content, or store-specific discount logic, that's usually a Plus requirement. See [[/blogs/shopify-checkout-optimization|Shopify checkout optimization]].",
+          "If you need custom fields at checkout, delivery-date pickers inside checkout, B2B-specific checkout content, or store-specific discount logic, that's usually a Plus requirement. See [[/blogs/shopify-checkout-optimization|Shopify checkout optimization]]. For the full capability-by-plan breakdown, see [[/blogs/shopify-checkout-customisation-guide|what you can customise in Shopify checkout on each plan]].",
         ],
       },
       {
         heading: "B2B and Wholesale",
         body: [
-          "B2B features such as company accounts and catalogs are available below Plus, with up to three catalogs according to Shopify's pricing page. Plus removes that limit and supports assigning catalogs directly to company locations. If you sell wholesale to many customer groups with different price lists, the catalog limit is often the deciding factor.",
+          "B2B features such as company accounts and catalogs are available below Plus, with up to three catalogs according to Shopify's pricing page. Plus removes that limit and supports assigning catalogs directly to company locations. If you sell wholesale to many customer groups with different price lists, the catalog limit is often the deciding factor. For a fuller B2B evaluation, read [[/blogs/shopify-for-b2b-ecommerce|whether Shopify is right for your B2B business]].",
         ],
       },
       {
@@ -97,7 +97,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Development and Headless",
         body: [
-          "Plus includes Plus-only API resources and unlimited staging stores, which help larger development teams test safely. For headless builds, Oxygen hosting for Hydrogen is available on paid plans, and Shopify's Plus page lists up to 25 Hydrogen storefronts on Plus. Headless is a separate decision from Plus; see [[/blogs/headless-shopify-explained|Shopify headless commerce]] and [[/blogs/shopify-hydrogen|Shopify Hydrogen]].",
+          "Plus includes Plus-only API resources and unlimited staging stores, which help larger development teams test safely. For headless builds, Oxygen hosting for Hydrogen is available on paid plans, with 25 public Oxygen environments on Plus and 1 on other paid plans ([[https://shopify.dev/docs/storefronts/hydrogen/deploy/oxygen/environments|Shopify: Oxygen environments]]). Environments are private by default; a public one is what shoppers can reach without logging in to the store. Headless is a separate decision from Plus; see [[/blogs/headless-shopify-explained|Shopify headless commerce]] and [[/blogs/shopify-hydrogen|Shopify Hydrogen]].",
         ],
       },
       {
@@ -515,7 +515,7 @@ export const commerceRewrites: BlogPost[] = [
     slug: "headless-shopify-explained",
     title: "Shopify Headless Commerce: When Should You Go Headless?",
     excerpt:
-      "What headless Shopify is, how it compares with a theme, the real costs of owning it, when it's worth it, and how to choose between Hydrogen and other frameworks.",
+      "What headless Shopify is, how it compares with a theme, the real costs of owning it, when it's worth it, and where Hydrogen fits in your framework choice.",
     category: "Shopify & Ecommerce",
     banner: "headlessshopify",
     bannerAlt:
@@ -528,13 +528,13 @@ export const commerceRewrites: BlogPost[] = [
     faqs: [
       { q: "What is Shopify headless commerce?", a: "Using Shopify as the commerce back end (products, inventory, cart, checkout, orders) while a separate, custom front end renders the storefront and talks to Shopify through its APIs." },
       { q: "When should you go headless on Shopify?", a: "When front-end requirements go beyond what themes can deliver, such as content-heavy experiences, several storefronts sharing components, or complex product interactions, and you have the team and budget to maintain a web application." },
-      { q: "What is Shopify Hydrogen?", a: "Shopify's framework for headless storefronts, built as React Router apps with Shopify-specific components, usually hosted on Oxygen. See the Shopify Hydrogen guide." },
+      { q: "What is Shopify Hydrogen?", a: "Shopify's toolkit for headless storefronts. Since Hydrogen 2026-10 (released 14 October 2026), it is a framework-agnostic JavaScript library with starters for React Router and Next.js; the documentation for versions 2026-04 and earlier describes React Router apps. It can be hosted anywhere, including Oxygen, which Shopify says is still free. See the Shopify Hydrogen guide." },
       { q: "Is headless Shopify faster?", a: "It can be, with careful engineering. A well-optimized theme is also fast, and a poorly built headless site can be slow." },
       { q: "Does checkout change in headless?", a: "No. Shopify's hosted checkout is still used; your front end builds the cart through the Storefront API and hands off to checkout." },
       { q: "Do apps work with headless Shopify?", a: "Back-office apps generally do. Apps that add storefront features through theme app blocks need integration through their APIs, if available." },
       { q: "How do marketers edit content without a theme editor?", a: "Through a headless CMS or Shopify metaobjects, with components built to render them. This needs planning before build." },
       { q: "Is headless SEO harder?", a: "It's more work, not inherently worse. You implement metadata, sitemaps, canonicals, redirects and structured data yourself, and must render content on the server." },
-      { q: "Do I need Shopify Plus for headless?", a: "No. The Storefront API and Oxygen are available on paid plans; Plus adds more Hydrogen storefronts and other capabilities." },
+      { q: "Do I need Shopify Plus for headless?", a: "No. The Storefront API and Oxygen are available on paid plans; Plus adds more public Oxygen environments (25, against 1 on other paid plans) and other capabilities." },
       { q: "Who should not go headless?", a: "Stores whose needs a theme meets, teams without ongoing front-end development capacity, and businesses hoping headless alone will fix conversion." },
     ],
     content: [
@@ -597,7 +597,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Hydrogen or Another Framework?",
         body: [
-          "Hydrogen is Shopify's framework: React Router apps with Shopify-specific components, hosted on Oxygen, which Shopify documents as available on paid plans. It's the most direct route for commerce-first storefronts. General frameworks such as Next.js suit teams already using them or sites with large non-commerce sections. Both use the same Shopify APIs. See [[/blogs/shopify-hydrogen|Shopify Hydrogen]] and [[/blogs/nextjs-website-development|Next.js development]].",
+          "Hydrogen is Shopify's toolkit for headless storefronts. Shopify's documentation for versions 2026-04 and earlier describes Hydrogen projects as React Router apps with Shopify-specific components. Since Hydrogen 2026-10, released on 14 October 2026, it is a framework-agnostic JavaScript library with starters for React Router and Next.js, and it can be hosted anywhere, including Oxygen, which Shopify says is still free; existing Hydrogen storefronts keep working as they do now ([[https://shopify.dev/changelog/blog/hydrogen-2026-10-is-now-available|Shopify developer changelog]]). The choice is therefore less Hydrogen versus Next.js and more which framework your team knows, whether to use the Hydrogen library on top of it, and where to host. Every route uses the same Shopify APIs. See [[/blogs/shopify-hydrogen|Shopify Hydrogen]] and [[/blogs/nextjs-website-development|Next.js development]].",
         ],
         cta: {
           title: "Considering headless for your Shopify store?",
@@ -709,7 +709,7 @@ export const commerceRewrites: BlogPost[] = [
     faqs: [
       { q: "How do I migrate my store to Shopify?", a: "Inventory your data and URLs, record a baseline, import products, customers and orders with Shopify's migration app, CSV files or APIs, map every old URL to its Shopify equivalent and create redirects, rebuild the storefront, test orders and SEO output, then launch and monitor." },
       { q: "Will I lose SEO when moving to Shopify?", a: "Not if redirects, content and metadata are handled carefully. Rankings are at risk when URLs change without redirects or when content and titles are lost." },
-      { q: "Can customer passwords be migrated to Shopify?", a: "No. Shopify explains that passwords are encrypted by the previous platform and can't be imported. Import customers, then invite them to activate their accounts." },
+      { q: "Can customer passwords be migrated to Shopify?", a: "No. Shopify explains that passwords are encrypted by the previous platform and can't be imported. Since 26 February 2026, legacy customer accounts are deprecated and unavailable to new stores; the current customer accounts sign customers in with their email address and a one-time code, with no password. A customer whose profile is in your admin can sign in with that email, so mass password-reset invitations are largely unnecessary. Test the sign-in for imported customers on a development store before launch, and tell customers how the new sign-in works." },
       { q: "Can I import historical orders?", a: "Yes, using migration apps or Shopify's APIs. Decide how much history you need for customer service and reporting." },
       { q: "How do I create redirects in Shopify?", a: "In the admin, create URL redirects individually or import them in bulk from a CSV file." },
       { q: "Why do URLs change when moving to Shopify?", a: "Shopify uses fixed URL patterns such as /products/, /collections/, /pages/ and /blogs/. Old URLs that don't match need 301 redirects." },
@@ -722,7 +722,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "To move to Shopify without losing SEO, inventory every URL and record a baseline, then import data with Shopify's Store Migration app, CSV files or APIs. Shopify can't import customer passwords, so plan account invitations. Map every old URL to its Shopify equivalent and create 301 redirects, individually or by CSV import. Carry over titles, meta descriptions, content, alt text and structured data, test orders and redirects on the new store, launch at a quiet time, and monitor Search Console and sales daily against the baseline.",
+          "To move to Shopify without losing SEO, inventory every URL and record a baseline, then import data with Shopify's Store Migration app, CSV files or APIs. Shopify can't import customer passwords; on the current customer accounts, customers sign in with an email code instead, so test that sign-in for imported customers. Map every old URL to its Shopify equivalent and create 301 redirects, individually or by CSV import. Carry over titles, meta descriptions, content, alt text and structured data, test orders and redirects on the new store, launch at a quiet time, and monitor Search Console and sales daily against the baseline.",
         ],
       },
       {
@@ -786,7 +786,7 @@ export const commerceRewrites: BlogPost[] = [
         },
         callout: {
           type: "note",
-          text: "Customer passwords can't be imported, because the previous platform encrypted them. Shopify's guidance is to invite imported customers to create new passwords; bulk invitations need a third-party app.",
+          text: "Customer passwords can't be imported, because the previous platform encrypted them. Shopify deprecated legacy customer accounts on 26 February 2026; the current customer accounts use an email address and a one-time code with no password, so imported customers sign in with the email on their profile. Test this on a development store, and tell customers about the change.",
         },
       },
       {
@@ -869,11 +869,14 @@ export const commerceRewrites: BlogPost[] = [
       },
       {
         heading: "Step 7: Test",
-        body: [],
+        body: [
+          "For simulated orders, Shopify provides the [[https://help.shopify.com/en/manual/checkout-settings/test-orders/payments-test-mode|Test payment gateway]], often still called the Bogus Gateway in older guides and forum posts. You deactivate any active credit card provider first, then activate it in your payment settings. At checkout, card number 1 simulates an approved transaction, 2 a declined transaction and 3 a gateway failure; the test purchase must be worth more than the equivalent of US$1. It isn't compatible with Shopify POS or subscription products, so test subscriptions on your live gateway or with your subscription app's own tools. Customers can't place live orders while your payment providers are in test mode, so switch it off before launch, then place and refund a small real order with each payment method. [[https://help.shopify.com/en/manual/checkout-settings/test-orders|Shopify notes]] that real test orders may still incur processor fees.",
+          "Plan redirects within Shopify's [[https://help.shopify.com/en/manual/online-store/menus-and-links/url-redirect|URL redirect limits]]: a maximum of 100,000 on standard plans and 20,000,000 on Plus. Redirects only work from broken URLs: if an old URL still loads a page on the new store, the redirect won't fire, so test against URLs that return 404. Limits checked 15 October 2026 and may change.",
+        ],
         checklist: [
           "Test orders with each payment method, market and shipping method",
           "Discounts, gift cards and subscriptions",
-          "Customer account activation flow",
+          "Customer sign-in with an email code for imported customers",
           "Bulk redirect check against the full URL list",
           "Canonicals, sitemap and robots output",
           "Analytics and marketing pixels",
@@ -883,7 +886,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Shopify-Specific Constraints to Plan For",
         body: [
-          "A few Shopify characteristics shape most migrations. URLs use fixed prefixes such as /products/ and /collections/, so most old URLs need redirects. Products support up to three options and, per Shopify's documentation, up to 2,048 variants each; catalogs with more complex variation need restructuring or metafields. Customer passwords can't be migrated, so plan account activation or rely on Shopify's customer accounts sign-in. Checkout customization follows checkout extensibility, with some capabilities limited to Plus. Import products, then customers, then historical orders.",
+          "A few Shopify characteristics shape most migrations. URLs use fixed prefixes such as /products/ and /collections/, so most old URLs need redirects. Products support up to three options and, per Shopify's documentation, up to 2,048 variants each; catalogs with more complex variation need restructuring or metafields. Customer passwords can't be migrated; on Shopify's current customer accounts (legacy accounts were deprecated on 26 February 2026), customers sign in with an email code, so plan customer communication rather than password resets. Checkout customization follows checkout extensibility, with some capabilities limited to Plus. Import products, then customers, then historical orders.",
         ],
         table: {
           headers: ["Area", "Plan for"],
@@ -891,7 +894,7 @@ export const commerceRewrites: BlogPost[] = [
             ["URLs", "Redirect map to /products/, /collections/, /pages/, /blogs/"],
             ["Variants", "Up to 3 options per product; restructure if needed"],
             ["Custom data", "Metafields and metaobjects"],
-            ["Customers", "Account activation or new customer accounts"],
+            ["Customers", "Email-code sign-in on customer accounts; tell customers"],
             ["Checkout", "Checkout extensibility; Plus for info/shipping/payment extensions"],
             ["Payments", "Shopify Payments availability or third-party gateways"],
             ["Apps", "Replacement for each old plugin or custom feature"],
@@ -924,9 +927,9 @@ export const commerceRewrites: BlogPost[] = [
         },
       },
       {
-        heading: "Worked Example: WooCommerce to Shopify",
+        heading: "Moving from WooCommerce",
         body: [
-          "An illustrative scenario, not a client case: a store on WooCommerce with 1,500 products, 25,000 customers and a blog moves to Shopify. The team crawls 3,800 URLs, maps product, category, page and blog URLs to Shopify's fixed paths, imports products with custom fields mapped to metafields, then customers with marketing consent, then two years of orders through a migration app. Reviews are imported through the new reviews app. Redirects are uploaded by CSV, metadata is carried over, and customers receive an email inviting them to set a password. After launch the team monitors crawl errors and organic traffic by page type against the baseline. For the platform-agnostic view, see [[/blogs/ecommerce-platform-migration|ecommerce platform migration]].",
+          "A move from WooCommerce has its own traps: products with more than three attributes, reviews that Shopify says can't be exported from WooCommerce directly, /product/ URLs that need redirects to /products/, and plugins that each need a Shopify replacement. These are covered field by field in the [[/blogs/woocommerce-to-shopify-migration-checklist|WooCommerce to Shopify migration checklist]]. For the platform-agnostic view, see [[/blogs/ecommerce-platform-migration|ecommerce platform migration]].",
         ],
       },
       {
@@ -936,7 +939,7 @@ export const commerceRewrites: BlogPost[] = [
           "Incomplete redirect maps",
           "Redirecting everything to the homepage",
           "Losing titles, descriptions and alt text",
-          "Forgetting customer account invitations",
+          "Not telling customers how sign-in works on the new store",
           "Leaving gift cards or subscriptions until the end",
           "Redesigning everything at the same time",
           "Launching before peak season",
@@ -1225,6 +1228,7 @@ export const commerceRewrites: BlogPost[] = [
         heading: "Understanding Shopify's Conversion Rate",
         body: [
           "Shopify defines each funnel step's conversion rate as sessions reaching that step divided by total sessions, with sessions based on continued activity (Shopify Help Center). Compare rates by device and channel rather than relying on the store-wide number. See [[/blogs/ecommerce-conversion-rate|ecommerce conversion rate]].",
+          "Note that Shopify changed how it measures sessions from 21 to 23 September 2026: sessions no longer split at midnight UTC, and identified bot sessions are filtered out by default. Shopify says conversion rate can shift even when orders and sales haven't changed, and advises treating the update as a new baseline for session-based metrics ([[https://changelog.shopify.com/posts/shopify-analytics-session-measurement-improvements|Shopify changelog]]). Avoid reading a before-and-after change across those dates as a change in performance.",
         ],
       },
       {
@@ -1246,7 +1250,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Pixels and Customer Events",
         body: [
-          "Marketing and analytics pixels are managed in Shopify's Customer events settings. After theme changes, app installs or checkout changes, place a test order and confirm events fire once with correct values. Duplicate purchase events are a common cause of inflated conversion in ad platforms.",
+          "Marketing and analytics pixels are managed in Shopify's Customer events settings. After theme changes, app installs or checkout changes, place a test order and confirm events fire once with correct values. Duplicate purchase events are a common cause of inflated conversion in ad platforms. For a full test procedure, see the [[/blogs/shopify-analytics-tracking-audit|Shopify analytics and tracking audit]].",
         ],
       },
       {

@@ -246,7 +246,7 @@ export const webDevPosts3: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "API integrations are what let a website function as part of a connected business system rather than an isolated brochure — but they need to be built with real attention to authentication, error handling, rate limits and ongoing monitoring to be reliable in production, not just in an initial demo. For a reference list of the integrations businesses most often need, see [[/blogs/website-api-integrations-list|15 common website integrations]], with dedicated guides for [[/blogs/crm-website-integration|CRM]] and [[/blogs/payment-gateway-integration|payment gateway]] integration. For connecting business systems beyond the website, see [[/blogs/api-integration-uae|API integration for UAE businesses]]. For Australian systems such as Xero, MYOB, Australia Post and Peppol eInvoicing, see [[/blogs/api-integration-australia|API integration for Australian businesses]].",
-          "For related guides, see [[/blogs/ecommerce-api-integration|ecommerce API integration]].",
+          "For related guides, see [[/blogs/ecommerce-api-integration|ecommerce API integration]]. Before you commission one, [[/blogs/api-integration-development-cost|score what each integration will cost to build and run]].",
         ],
       },
     ],
@@ -404,13 +404,14 @@ export const webDevPosts3: BlogPost[] = [
   {
     slug: "website-security-checklist",
     title: "Website Security Checklist: What Every Business Website Should Have",
+    seoTitle: "Website and Web App Security Checklist (OWASP 2025)",
     excerpt:
       "A practical, defensive security checklist — HTTPS, authentication, input validation, dependency security, backups and monitoring — for any business website.",
     category: "Web Development",
     banner: "securitylock",
     date: "2026-09-24",
     updated: "2026-10-09",
-    readingTime: "11 min read",
+    readingTime: "12 min read",
     relatedServiceSlugs: ["website-development"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
     faqs: [
@@ -423,6 +424,7 @@ export const webDevPosts3: BlogPost[] = [
       { q: "How often should dependencies and software be updated?", a: "Regularly, as part of ongoing [[/blogs/website-maintenance-guide|maintenance]] — not just at launch. Security patches for known vulnerabilities lose their value the longer they go unapplied." },
       { q: "What should backups cover?", a: "Both the site's code and its data (database, uploaded content), stored securely and tested periodically — a backup that's never been tested for successful restoration isn't a reliable one." },
       { q: "Does this checklist cover penetration testing or offensive security?", a: "No — this is a defensive implementation checklist for building and maintaining a secure site. Formal security testing is a separate, specialized practice worth engaging directly for higher-risk applications." },
+      { q: "What must be true before we launch a website or web app?", a: "Production settings are locked down, admin access is restricted, one user cannot open another account's records, dependency scans show nothing critical or high left unexplained, a backup has actually been restored, alerts reach a named person, a security.txt file gives researchers a contact, and a named owner has signed off with any accepted risks written down. The sign-off table on this page lists the evidence to keep for each." },
       { q: "Which version of the OWASP Top 10 should a business website follow?", a: "Use the current edition, the OWASP Top 10:2025. It keeps broken access control as the top risk and adds software supply chain failures and mishandling of exceptional conditions. Older supplier questionnaires and policies may still refer to the 2021 list, so check which edition a document means and update internal references to the 2025 names." },
     ],
     content: [
@@ -544,6 +546,34 @@ export const webDevPosts3: BlogPost[] = [
         ],
       },
       {
+        heading: "Pre-launch security sign-off",
+        body: [
+          "The checklist above describes controls. A launch needs something slightly different: proof that each control is actually in place on the production system, a person who owns each check, and a clear rule about which gaps stop the launch. Most launch-day problems are not exotic. Debug mode is left on, test keys reach production, an admin route is open to the internet, or nobody has ever restored a backup. The table below is a sign-off sheet you can copy into a ticket or spreadsheet a week or two before go-live. It applies equally to a brochure site with a contact form and a web application with user accounts; drop the rows that do not apply and write down why.",
+          "Two rows deserve a note. The **cross-account access test** comes from OWASP's API Security Top 10, whose first item is broken object level authorisation (BOLA). OWASP says the server should check that the logged-in user \"has permissions to perform the requested action on the requested object\", and recommends writing tests for exactly that ([[https://api-security.owasp.org/editions/2023/en/0xa1-broken-object-level-authorization|OWASP API1:2023]]). In practice: sign in as user A, copy the URL or API call for one of A's records, then repeat it signed in as user B. B should get an error, not the record. The **security.txt** file follows RFC 9116, which says the file must sit under the /.well-known/ path and must include a Contact field and exactly one Expires field ([[https://www.rfc-editor.org/rfc/rfc9116|RFC 9116]]). It tells anyone who finds a vulnerability how to reach you.",
+          "The \"blocks launch?\" column is our recommendation, not a standard. Adjust it to your risk, but decide it before launch week, when there is pressure to wave things through. Where a blocker is accepted rather than fixed, record who accepted it, why and by when it will be fixed.",
+        ],
+        table: {
+          headers: ["Check", "Evidence to keep", "Owner", "Blocks launch?"],
+          rows: [
+            ["Production configuration: debug off, generic error pages, test and demo accounts and seed data removed", "Screenshot of an error page in production; list of accounts removed", "Lead developer", "Yes"],
+            ["Secrets: live keys only in a secrets manager or environment settings; no test keys in production", "Secrets inventory with location and last rotation date", "Lead developer", "Yes"],
+            ["Admin access: admin routes behind SSO or MFA, or IP-restricted; least-privilege database and cloud roles", "Access list showing who has admin and why", "Technical owner", "Yes"],
+            ["Cross-account access (BOLA) test on two accounts for every record type users can reach by ID", "Test script or recorded result for each endpoint", "Lead developer or tester", "Yes, for any app with user accounts"],
+            ["HTTPS everywhere; cookies set Secure and HttpOnly with a SameSite setting; agreed security headers present", "Header and certificate scan output", "Lead developer", "Yes for HTTPS; fix other gaps or accept in writing"],
+            ["Dependency and vulnerability scan with an agreed severity threshold", "Scan report; each open critical or high finding fixed or accepted in writing", "Lead developer", "Yes, if critical or high findings are unexplained"],
+            ["Backups running, and one restore tested to a separate environment", "Date of the restore test, what was restored and how long it took", "Hosting or DevOps owner", "Yes"],
+            ["Logging of sign-ins, permission changes and admin actions; alerts routed to a named person", "Sample log entries; alert routing settings", "Technical owner", "Yes for apps with accounts or payments"],
+            ["Disclosure: /.well-known/security.txt with Contact and Expires; an internal incident contact list", "The live file URL; the contact list and where it is kept", "Site owner", "No, but fix within the first week"],
+            ["Release safety: a rollback plan; a pen test or security review where the risk warrants it", "Rollback steps; review report or a written decision not to test", "Project lead", "Depends on risk; decide in advance"],
+            ["Named sign-off", "Name, role, date and the list of accepted risks with fix dates", "Business owner of the site", "Yes. No launch without it"],
+          ],
+        },
+        callout: {
+          type: "tip",
+          text: "If you are commissioning a pen test or security review before launch, see [[/blogs/web-application-penetration-testing-australia|how web application penetration testing works]] for what to prepare. For apps built quickly with AI coding tools, add the checks in [[/blogs/ai-generated-code-security|AI-generated code security]] to this sheet.",
+        },
+      },
+      {
         heading: "How This Checklist Maps to the OWASP Top 10:2025",
         body: [
           "The OWASP Top 10 is the most widely used reference list of web application security risks. The current edition is the **OWASP Top 10:2025** ([[https://top10.owasp.org/2025|OWASP]]). It keeps broken access control in first place and adds two categories: software supply chain failures and mishandling of exceptional conditions. If a supplier, auditor or questionnaire refers to 'the OWASP Top 10', check which edition they mean; older documents may still use the 2021 list.",
@@ -648,147 +678,182 @@ export const webDevPosts3: BlogPost[] = [
   {
     slug: "website-accessibility-guide",
     title: "Website Accessibility: A Practical Guide to Building More Accessible Websites",
-    seoTitle: "Website Accessibility: A Practical Guide for Business Websites",
+    seoTitle: "Website Accessibility Guide and Pre-Launch Audit Checklist",
     excerpt:
-      "Semantic HTML, keyboard navigation, contrast, forms and screen readers, grounded in W3C/WAI guidance, with best practice separated from legal requirements.",
+      "Build and check an accessible website: WCAG principles, a two-tier pre-launch audit checklist, what scanners miss, web app patterns and where the law applies.",
     category: "Web Development",
     banner: "a11ycheck",
+    sceneKind: "design",
+    bannerAlt: "A website accessibility checklist covering semantic HTML, keyboard access, focus, contrast, forms and screen reader testing before launch",
     date: "2026-09-24",
-    updated: "2026-10-10",
-    readingTime: "13 min read",
+    updated: "2026-10-14",
+    readingTime: "11 min read",
     relatedServiceSlugs: ["website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
+    relatedSlugs: ["accessible-ui-ux-design", "ecommerce-accessibility-checklist", "website-accessibility-australia"],
     faqs: [
-      { q: "What does web accessibility actually mean?", a: "Building a website so people with a wide range of abilities and disabilities — including visual, auditory, motor and cognitive differences — can perceive, understand, navigate and interact with it. This benefits far more users than just people using assistive technology; clear structure and good contrast help everyone." },
-      { q: "What is WCAG?", a: "The Web Content Accessibility Guidelines, published by the W3C's Web Accessibility Initiative (WAI) — the widely referenced standard for web accessibility, organized around four principles: content should be Perceivable, Operable, Understandable and Robust (POUR), with conformance levels A, AA and AAA." },
-      { q: "What level of WCAG conformance should a business website target?", a: "Level AA is the commonly referenced practical target for most business websites, balancing meaningful accessibility with achievability — though the right target can depend on your specific context and jurisdiction." },
-      { q: "Is web accessibility a legal requirement?", a: "This varies by jurisdiction and the nature of the business — some regions and sectors have specific legal accessibility requirements, others don't have the same explicit obligations. Treat this as a jurisdiction-specific legal question to verify directly, not something this guide can determine for your specific situation." },
-      { q: "Does accessibility work conflict with good design?", a: "No — accessible design and good design overlap heavily. Clear hierarchy, sufficient contrast, and predictable navigation improve the experience for every user, not just those using assistive technology." },
+      { q: "What does web accessibility actually mean?", a: "Building a website so people with a wide range of abilities and disabilities, including visual, auditory, motor and cognitive differences, can perceive, understand, navigate and interact with it. This benefits far more users than people using assistive technology; clear structure and good contrast help everyone." },
+      { q: "What is WCAG?", a: "The Web Content Accessibility Guidelines, published by the W3C's Web Accessibility Initiative (WAI). They are the widely referenced standard for web accessibility, organised around four principles (Perceivable, Operable, Understandable and Robust) with conformance levels A, AA and AAA. The current version is WCAG 2.2." },
+      { q: "What level of WCAG conformance should a business website target?", a: "Level AA is the commonly referenced practical target for most business websites, balancing meaningful accessibility with achievability, though the right target can depend on your context and jurisdiction." },
+      { q: "Is web accessibility a legal requirement?", a: "It varies by jurisdiction and by the nature of the business. Some regions and sectors have specific legal accessibility requirements; others do not have the same explicit obligations. The triage table on this page gives a one-line starting point per market, but treat it as a question to verify for your situation." },
+      { q: "Does accessibility work conflict with good design?", a: "No. Accessible design and good design overlap heavily. Clear hierarchy, sufficient contrast and predictable navigation improve the experience for every user, not just those using assistive technology." },
       { q: "What's the easiest accessibility improvement to start with?", a: "Semantic HTML and meaningful alt text for images are both foundational, relatively low-effort improvements with an outsized impact on how well assistive technology can interpret and navigate a page." },
-      { q: "Do accessibility overlays or plugins fix accessibility automatically?", a: "Not reliably — genuine accessibility requires it to be built into the site's actual markup, structure and interaction design; automated overlays are not a substitute for that underlying work." },
-      { q: "Does accessibility only matter for screen reader users?", a: "No — it also covers keyboard-only navigation, sufficient color contrast for low vision, captions for multimedia, and reduced-motion support for users sensitive to animation, among other needs." },
-      { q: "How do I test whether my website is accessible?", a: "Combine automated tools (which catch a meaningful subset of issues) with manual testing — actual keyboard navigation, and ideally testing with real screen reader software — since automated tools alone miss many real accessibility problems." },
+      { q: "Do accessibility overlays or plugins fix accessibility automatically?", a: "Not reliably. Genuine accessibility has to be built into the site's markup, structure and interaction design; automated overlays are not a substitute for that underlying work." },
+      { q: "Does accessibility only matter for screen reader users?", a: "No. It also covers keyboard-only navigation, sufficient colour contrast for low vision, captions for multimedia, and reduced-motion support for users sensitive to animation, among other needs." },
+      { q: "How do I test whether my website is accessible?", a: "Run an automated scan on your key templates, then test manually: the W3C's Easy Checks, keyboard-only navigation, zoom, and a screen reader on the main journeys. The W3C says tools \"can not determine accessibility, they can only assist\", so manual testing is not optional. For a formal audit, a specialist samples pages and journeys using a structured method such as WCAG-EM." },
+      { q: "What should an accessibility statement include?", a: "The W3C's guidance says a statement should at least include your commitment to accessibility, the standard you apply (for example WCAG 2.2 Level AA) and contact details for people who meet barriers. It is also good practice to list known limitations and when you plan to fix them. UK public sector bodies must publish one." },
     ],
     content: [
       {
         heading: "Quick answer",
         body: [
-          "Website accessibility means building a site so people with a wide range of abilities can perceive, understand, navigate and interact with it — grounded in the W3C's Web Content Accessibility Guidelines (WCAG), organized around four principles: content should be Perceivable, Operable, Understandable and Robust (POUR). Practically, this means semantic HTML, proper heading structure, meaningful alt text, full keyboard navigation, visible focus states, sufficient color contrast, accessible forms and error messages, and thoughtful handling of motion and multimedia. Whether accessibility is a legal requirement for your specific business depends on your jurisdiction and sector — verify that separately rather than assuming either way.",
+          "**Website accessibility means building a site so people with a wide range of abilities can perceive, understand, navigate and interact with it, guided by the W3C's Web Content Accessibility Guidelines (WCAG). In practice: semantic HTML, a logical heading structure, meaningful alt text, full keyboard access, visible focus, sufficient contrast, accessible forms and errors, and careful handling of motion and media. Before launch, combine an automated scan with manual checks, because tools find only part of the problems.** Whether accessibility is a legal requirement for your business depends on your market and sector; verify that separately.",
         ],
       },
       {
-        heading: "What Web Accessibility Actually Covers",
-        body: [
-          "Accessibility covers a wide range of needs, not just screen reader support: visual differences (low vision, color blindness), motor differences (difficulty using a mouse, reliance on keyboard or switch devices), auditory differences (needing captions), and cognitive differences (needing clear, predictable structure). Building for this range benefits far more users than those relying on assistive technology directly — clear structure and good contrast help everyone.",
+        heading: "Key takeaways",
+        body: [],
+        checklist: [
+          "Target WCAG 2.2 Level AA unless you have a reason to choose otherwise.",
+          "Build accessibility in from the start; retrofitting after launch costs more.",
+          "Automated scanners help, but many barriers can only be found by a person.",
+          "Web apps need extra care with dynamic content, focus and status messages.",
+          "Legal duties differ by market; check the triage table, then get advice.",
         ],
       },
       {
-        heading: "WCAG and the POUR Principles",
+        heading: "What web accessibility covers",
         body: [
-          "The Web Content Accessibility Guidelines, published by the W3C's Web Accessibility Initiative, organize accessibility around four principles: content must be Perceivable (available to the senses, through sight, sound or touch, in more than one way where needed), Operable (usable through multiple interaction methods, including keyboard-only), Understandable (predictable and clear), and Robust (compatible with current and future assistive technology). WCAG defines three conformance levels — A, AA and AAA — with AA being the commonly referenced practical target for most business websites.",
+          "Accessibility covers a wide range of needs, not just screen reader support: visual differences (low vision, colour blindness), motor differences (difficulty using a mouse, reliance on keyboard or switch devices), auditory differences (needing captions) and cognitive differences (needing clear, predictable structure).",
+          "WCAG organises this around four principles. Content must be **Perceivable** (available through sight, sound or touch, in more than one way where needed), **Operable** (usable through different input methods, including keyboard only), **Understandable** (predictable and clear) and **Robust** (compatible with current and future assistive technology). It defines three conformance levels, A, AA and AAA, with AA the common practical target for business websites.",
         ],
-        visual: { variant: "grid", accent: "blue", caption: "The four WCAG principles — Perceivable, Operable, Understandable, Robust — organize accessibility work into a coherent framework rather than an unstructured checklist." },
+        visual: { variant: "grid", accent: "blue", caption: "The four WCAG principles, Perceivable, Operable, Understandable and Robust, organise accessibility work into a coherent framework rather than an unstructured checklist." },
       },
       {
-        heading: "Semantic HTML",
+        heading: "The building blocks",
         body: [
-          "Using HTML elements for their intended purpose — real headings, real buttons, real lists — rather than generic styled elements gives assistive technology the structural information it needs to interpret and navigate a page correctly. This is foundational, and it's also one of the lowest-effort accessibility improvements available when built in from the start.",
-        ],
-      },
-      {
-        heading: "Headings and Document Structure",
-        body: [
-          "A logical, sequential heading structure (one H1, followed by properly nested H2s and H3s) lets screen reader users navigate a page by heading, similar to how a sighted user visually scans a page's structure. Skipping heading levels or using headings purely for visual styling breaks this.",
-        ],
-      },
-      {
-        heading: "Labels and Alternative Text",
-        body: [
-          "Every form field needs a properly associated label, and every meaningful image needs alt text that describes its actual content or purpose — not a generic filename or a missing attribute entirely. Purely decorative images should be marked so assistive technology skips over them rather than announcing irrelevant content.",
-        ],
-      },
-      {
-        heading: "Keyboard Navigation",
-        body: [
-          "Every interactive element — links, buttons, form fields, custom widgets — needs to be fully usable with a keyboard alone, in a logical order, for users who can't or don't use a mouse. This is one of the most consistently under-tested aspects of accessibility, since it's easy to build something that works with a mouse and forget to verify it works without one.",
+          "**Semantic HTML.** Use elements for their intended purpose: real headings, buttons, lists and landmarks rather than styled generic elements. This gives assistive technology the structure it needs and is one of the lowest-effort improvements when built in from the start.",
+          "**Headings and structure.** One H1, then properly nested H2s and H3s, so screen reader users can navigate by heading the way sighted users scan. Do not skip levels or use headings purely for styling.",
+          "**Labels and alternative text.** Every form field needs an associated label, and every meaningful image needs alt text that describes its content or purpose. Mark decorative images so assistive technology skips them.",
+          "**Keyboard navigation and focus.** Every link, button, field and custom widget must work with a keyboard alone, in a logical order, with a visible focus indicator. Removing default focus outlines without a clear replacement is a common, avoidable failure.",
+          "**Colour contrast.** Text needs sufficient contrast against its background; WCAG sets specific contrast ratios. Do not convey meaning, such as an error, through colour alone.",
+          "**Forms and errors.** Error messages should be specific, tied to the relevant field and written in text, not just a red border.",
+          "**Buttons and links.** Use descriptive text (\"Submit order\", not \"Click here\"), because screen reader users often move through a list of links or buttons out of context.",
+          "**Zoom and responsive layout.** Content should stay usable when text is enlarged or the page is zoomed, which many people with low vision rely on.",
+          "**Motion and media.** Caption video, let users pause moving content, and respect the operating system's reduced-motion setting for decorative animation.",
+          "**Navigation.** Keep navigation consistent and provide a skip link so keyboard users can jump to the main content. For the design decisions behind all of this, see [[/blogs/accessible-ui-ux-design|accessible UI/UX design]].",
         ],
       },
       {
-        heading: "Focus States",
+        heading: "Pre-launch accessibility audit checklist",
         body: [
-          "A visible focus indicator shows a keyboard user exactly where they are on the page — removing or hiding default focus outlines without providing a clear replacement is a common, easily avoidable accessibility failure.",
+          "Use two tiers. **Tier 1** is a first review that anyone on the team can do in about a day, based on the W3C's [[https://www.w3.org/WAI/test-evaluate/preliminary/|Easy Checks]] plus an automated scan of each key template. The W3C is clear that a page \"could seem to pass these checks, yet still have significant accessibility barriers\", so Tier 1 finds obvious problems; it does not prove conformance. **Tier 2** is a structured audit, usually by a specialist, of a sample of pages and complete journeys. The W3C's [[https://www.w3.org/TR/WCAG-EM/|WCAG Evaluation Methodology (WCAG-EM) 2.0]], published as a W3C Group Note on 23 July 2026, sets out five steps: define the scope, explore the product, select a representative sample, evaluate it and report the findings.",
+          "The scanner column is general guidance: \"partly\" means a tool can flag that something is missing or wrong in code, but a person has to judge whether it works.",
         ],
-        cta: {
-          title: "Want your website evaluated against real accessibility practice?",
-          description: "ZSpace Labs can review your site's structure, navigation and contrast against WCAG guidance and identify concrete, prioritized fixes.",
+        table: {
+          headers: ["Check", "Tier", "Can a scanner catch it?"],
+          rows: [
+            ["Each page has a unique, descriptive title", "1", "Partly: missing titles yes, quality no"],
+            ["Images have appropriate alt text; decorative images are hidden", "1", "Partly: missing alt yes, whether it is meaningful no"],
+            ["Headings form a logical outline", "1", "Partly"],
+            ["Text contrast meets WCAG ratios", "1", "Mostly, except text over images and gradients"],
+            ["Page language is set", "1", "Yes"],
+            ["Text resized to 200% stays readable and usable", "1", "No"],
+            ["Every control works by keyboard, in a logical order, with visible focus", "1", "No"],
+            ["Form fields have labels; errors are clear and linked to the field", "1", "Partly: missing labels yes, error quality no"],
+            ["Moving, flashing or auto-playing content can be paused", "1", "No"],
+            ["Video has accurate captions; audio has transcripts", "1", "Partly: a missing track at best, accuracy no"],
+            ["Key journeys (enquiry, sign-up, checkout, booking) work with a screen reader on desktop and mobile", "2", "No"],
+            ["Content reflows on a narrow screen and at high zoom without horizontal scrolling", "2", "No"],
+            ["Focused elements are not hidden behind sticky headers or banners (WCAG 2.2: 2.4.11)", "2", "No"],
+            ["Small or crowded tap targets meet the minimum size or spacing (2.5.8)", "2", "Partly"],
+            ["Anything done by dragging has a single-pointer alternative (2.5.7)", "2", "No"],
+            ["Help options appear in a consistent place (3.2.6)", "2", "No"],
+            ["Users are not asked to re-enter information already given in the same process (3.3.7)", "2", "No"],
+            ["Login does not depend on a memory or puzzle test without an alternative, and allows paste and password managers (3.3.8)", "2", "No"],
+            ["Third-party widgets (cookie banner, chat, payment, booking, maps) pass the same checks", "2", "Partly"],
+            ["PDFs and downloadable documents are accessible, or have an accessible alternative", "2", "Partly"],
+            ["Dynamic updates and status messages are announced (see web app patterns)", "2", "No"],
+            ["An accessibility statement is published and up to date", "2", "No"],
+          ],
+        },
+        callout: { type: "tip", text: "Log each barrier with the page, the WCAG success criterion, who it affects, severity, the fix, an owner and a date. Fix blockers in critical journeys first, then retest." },
+      },
+      {
+        heading: "What WCAG 2.2 added and why scanners are not enough",
+        body: [
+          "WCAG 2.2 added nine success criteria. Six apply at Level A or AA and appear in the checklist above: Focus Not Obscured (Minimum), Dragging Movements, Target Size (Minimum), Consistent Help, Redundant Entry and Accessible Authentication (Minimum). The other three are AAA. The old 4.1.1 Parsing criterion is \"obsolete and removed\" ([[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C: What's new in WCAG 2.2]]).",
+          "Most of the new criteria need a person to judge them, which is the wider point. The W3C states that evaluation tools \"can not determine accessibility, they can only assist in doing so\" ([[https://www.w3.org/WAI/test-evaluate/tools/selecting/|W3C: selecting evaluation tools]]). In a 2017 test by the UK Government Digital Service, a page built with 143 barriers was run through 10 automated tools: the most effective single tool found 41% (counting its prompts for manual checks), and all 10 together found about 71%, leaving 29% that no tool detected ([[https://accessibility.blog.gov.uk/2017/02/24/what-we-found-when-we-tested-tools-on-the-worlds-least-accessible-webpage/|GOV.UK accessibility blog]]). That was one deliberately broken page, not a general detection rate, and tools have changed since, but the lesson holds.",
+          "Scanners are still worth running. WebAIM's 2026 scan of the top one million home pages found detectable WCAG failures on 95.9% of them, most often low-contrast text, missing alt text, missing form labels and empty links. WebAIM adds that the \"absence of detected errors does not indicate that a page is accessible or conformant\" ([[https://webaim.org/projects/million/|WebAIM Million 2026]]).",
+        ],
+      },
+      {
+        heading: "Web app patterns: dynamic content, focus and live regions",
+        body: [
+          "Web apps update parts of the page without reloading it, which a screen reader user may not notice unless the app tells them. Check these patterns in any logged-in product, dashboard or multi-step form.",
+        ],
+        checklist: [
+          "**Status messages.** Announce results that appear without a page load, such as \"Saved\", \"3 results found\" or \"Item added to basket\", using a polite live region (WCAG 4.1.3 Status Messages). Keep announcements short and do not announce every keystroke.",
+          "**Dialogs and modals.** Move focus into the dialog when it opens, keep it there while it is open, close it with Escape, and return focus to the control that opened it.",
+          "**Route changes.** In a single-page app, update the page title and move focus to the new page's heading or main area, so the change is announced as a real page change would be.",
+          "**Form errors.** On submit, move focus to an error summary or the first invalid field, and link each message to its field.",
+          "**Loading and infinite scroll.** Tell users when content is loading and when it has arrived; offer a \"load more\" button rather than relying only on infinite scroll.",
+          "**Data tables.** Use real table markup with header cells, not a grid of styled boxes, so screen readers can announce row and column headers.",
+          "**Custom widgets.** Prefer native elements (button, select, details). If you build a custom tab set, combobox or menu, give it the correct roles, states and keyboard behaviour, and test it with a screen reader.",
+        ],
+      },
+      {
+        heading: "Which rules apply where: a quick triage",
+        body: [
+          "One line per market, as a starting point only. Legal duties depend on your sector, size and customers; take advice for your situation. Accessibility as good practice applies everywhere.",
+        ],
+        table: {
+          headers: ["Market", "What we verified"],
+          rows: [
+            ["India", "GIGW 3.0 applies to websites and apps owned by government organisations and draws on WCAG 2.1 ([[https://guidelines.india.gov.in/scope-and-objective/|GIGW]]). Duties for private websites are not covered here; take advice."],
+            ["UAE", "We did not verify a general accessibility rule for private-sector websites; check sector and emirate requirements with a local adviser."],
+            ["UK", "Service providers must make reasonable adjustments under the Equality Act 2010 (Disability Discrimination Act 1995 in Northern Ireland). Public sector bodies must meet WCAG 2.2 AA and publish an accessibility statement ([[https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps|GOV.UK]])."],
+            ["Australia", "The Disability Discrimination Act 1992 applies to goods and services, and the Australian Human Rights Commission has published guidelines on equal access to digital goods and services; see [[/blogs/website-accessibility-australia|website accessibility in Australia]]."],
+            ["EU", "The European Accessibility Act covers e-commerce services to consumers, through each country's national law. The Directive exempts micro-enterprises that provide services (Luxembourg's government toolkit says such businesses are \"not affected\"); check the national rules where you sell."],
+          ],
         },
       },
       {
-        heading: "Color Contrast",
-        body: [
-          "Text needs sufficient contrast against its background to be readable for users with low vision or color blindness — WCAG defines specific contrast ratio thresholds for this. This is also one of the easiest things to verify with automated tooling during design and development.",
+        heading: "Common mistakes before launch",
+        body: [],
+        checklist: [
+          "Treating a clean automated scan as a pass.",
+          "Testing only the home page, not the journeys that matter (forms, sign-up, checkout, booking).",
+          "Forgetting third-party widgets, which are part of your site to your users.",
+          "Relying on an overlay plugin instead of fixing the markup.",
+          "Removing focus outlines for visual reasons.",
+          "Leaving accessibility to the last week, when fixes to components are most expensive.",
         ],
       },
       {
-        heading: "Forms and Error Messages",
+        heading: "Limits of this checklist",
         body: [
-          "Forms should have clear, properly associated labels, and error messages should be specific, clearly associated with the relevant field, and not conveyed through color alone — a red border with no text explanation isn't accessible to a user who can't perceive the color difference.",
+          "This checklist is for a pre-launch review of a business website or web app. It does not replace a full conformance audit, testing with disabled users, or legal advice. For stores, the [[/blogs/ecommerce-accessibility-checklist|ecommerce accessibility checklist]] goes page by page through product, cart and checkout; for test methods and reporting in depth, see the [[/blogs/accessibility-testing-australia|accessibility testing guide]]. If your site is mostly documents or complex data visualisations, those need specialist review beyond what is listed here.",
         ],
       },
       {
-        heading: "Buttons and Links",
+        heading: "Sources",
         body: [
-          "Interactive elements need descriptive, meaningful text — \"Submit order\" rather than a generic \"Click here\" — since screen reader users often navigate by scanning a list of links or buttons out of surrounding context, where vague labels become genuinely unusable.",
-        ],
-      },
-      {
-        heading: "Screen Reader Considerations",
-        body: [
-          "Beyond semantic HTML and labels, dynamic content changes (like content that updates without a page reload) need appropriate handling so screen readers announce the change — testing with actual screen reader software, not just automated tools, is the only reliable way to verify this works in practice.",
-        ],
-      },
-      {
-        heading: "Responsive Design and Accessibility",
-        body: [
-          "Accessible design needs to hold up across screen sizes and zoom levels — content shouldn't become unusable or cut off when a user increases text size or zooms in, which some users with low vision rely on directly.",
-        ],
-      },
-      {
-        heading: "Motion and Multimedia",
-        body: [
-          "Provide captions for video content, avoid motion that can't be paused or disabled for users sensitive to it, and respect the operating system's reduced-motion preference where animation is used decoratively rather than functionally.",
-        ],
-        table: webDevFrameworkTable,
-        cta: {
-          title: "Building accessibility into a new project from the start?",
-          description: "See the [[/blogs/website-development-process|website development process guide]] for how accessibility fits alongside design and development, not as a separate audit after launch. See how we approach [[/services/website-development|website development]].",
-        },
-      },
-      {
-        heading: "Accessible Navigation",
-        body: [
-          "Navigation should be consistent across pages, keyboard-operable, and clearly structured — including a way for keyboard users to skip repeated navigation and go straight to main content, a common and genuinely useful accessibility pattern.",
-        ],
-      },
-      {
-        heading: "Best Practice vs. Legal Requirements",
-        body: [
-          "This guide covers accessibility as good practice, grounded in W3C/WAI guidance. Whether specific legal accessibility requirements apply to your business depends on your jurisdiction, sector and the nature of your website — this varies meaningfully by region, and it's worth verifying directly with appropriate legal guidance for your specific situation rather than assuming either way.",
-        ],
-      },
-      {
-        heading: "UK Requirements and Accessibility Audits",
-        body: [
-          "In England, Scotland and Wales, the Equality Act 2010 requires service providers to make reasonable adjustments, which covers websites and business software used by customers and staff; Northern Ireland has equivalent duties under the Disability Discrimination Act 1995. Public sector bodies must also meet WCAG 2.2 AA and publish an accessibility statement under the 2018 accessibility regulations, with GDS monitoring compliance and the EHRC or ECNI enforcing ([[https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps|GOV.UK]]).",
-          "A useful audit moves from barriers to a remediation plan: scope the key journeys (including staff-facing tools), combine automated scans with manual keyboard, zoom and screen reader testing and, ideally, testing with disabled users; record each barrier with the WCAG criterion, who it affects, severity, the fix, an owner and a date; fix blockers in critical journeys first; retest; and update the accessibility statement where one is required. The [[/blogs/accessibility-testing-australia|accessibility testing guide]] covers methods and reporting in more depth.",
+          "W3C: [[https://www.w3.org/WAI/test-evaluate/preliminary/|Easy Checks: a first review of web accessibility]]; [[https://www.w3.org/TR/WCAG-EM/|WCAG Evaluation Methodology (WCAG-EM) 2.0, W3C Group Note, 23 July 2026]]; [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|What's new in WCAG 2.2]]; [[https://www.w3.org/TR/WCAG22/|WCAG 2.2]]; [[https://www.w3.org/WAI/test-evaluate/tools/selecting/|Selecting web accessibility evaluation tools]]; [[https://www.w3.org/WAI/planning/statements/|Developing an accessibility statement]].",
+          "Evidence on tools: [[https://accessibility.blog.gov.uk/2017/02/24/what-we-found-when-we-tested-tools-on-the-worlds-least-accessible-webpage/|GOV.UK accessibility blog: what we found when we tested tools (24 February 2017)]]; [[https://webaim.org/projects/million/|WebAIM Million 2026 (data from February 2026)]].",
+          "Law and policy: [[https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps|GOV.UK: accessibility requirements for public sector websites and apps]]; [[https://guidelines.india.gov.in/scope-and-objective/|Guidelines for Indian Government Websites and Apps: scope]]; [[https://accessibilite-produits-services.public.lu/en/entreprises/boite-outils/tests/testderogation/testservcies/opepres/pas.html|Luxembourg government EAA toolkit: micro-enterprises providing services]].",
+          "Accessed 14 October 2026. Laws and guidance change; nothing here is legal advice.",
         ],
       },
       {
         heading: "Conclusion",
         body: [
-          "Accessibility is a practical, well-documented discipline — semantic HTML, keyboard navigation, sufficient contrast and clear forms cover most of the real-world impact, and building these in from the start is consistently cheaper than retrofitting them after launch. Treat WCAG's POUR principles as the organizing framework, and verify any legal obligations separately for your specific jurisdiction and sector. For the design decisions that come before implementation, see [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]]. For the Australian picture, including the Disability Discrimination Act and AHRC guidance, see [[/blogs/website-accessibility-australia|website accessibility in Australia]].",
-          "For related guides, see [[/blogs/ecommerce-accessibility|ecommerce accessibility]] and [[/blogs/ecommerce-accessibility-checklist|ecommerce accessibility checklist]].",
+          "Most of the real-world impact of accessibility comes from the basics: semantic HTML, keyboard access, visible focus, contrast and clear forms, built in from the start. Before launch, run the Tier 1 checks on every key template, commission a Tier 2 audit of your main journeys, fix blockers first and publish an honest accessibility statement. Then check which legal duties apply in your markets. Our [[/services/website-development|website development]] page explains how we build accessibility into delivery and pre-launch QA.",
         ],
+        cta: {
+          title: "Get a pre-launch accessibility review",
+          description: "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/website-development|website development]] and [[/services/ui-ux-design|UI/UX design]]. If useful, we can talk through your pre-launch checklist and which journeys to test first.",
+        },
       },
     ],
   },

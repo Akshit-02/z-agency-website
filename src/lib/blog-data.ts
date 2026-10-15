@@ -255,6 +255,21 @@ import { ukBusinessPosts } from "./blog-data-uk-business";
 import { buildIntegrationPosts } from "./blog-data-build-integration";
 import { ukPublicDigitalPosts } from "./blog-data-uk-public-digital";
 import { deliveryWebPosts } from "./blog-data-delivery-web";
+import { founderWebPosts } from "./blog-data-founder-web";
+import { founderProductPosts } from "./blog-data-founder-product";
+import { founderCroPosts } from "./blog-data-founder-cro";
+import { founderBuildPosts2 } from "./blog-data-founder-2-build";
+import { founderInsightPosts2 } from "./blog-data-founder-2-insight";
+import { founderCommercePosts2 } from "./blog-data-founder-2-commerce";
+import { founderCheckoutPosts2 } from "./blog-data-founder-2-checkout";
+import { founderBuildPosts3 } from "./blog-data-founder-3-build";
+import { founderGrowthPosts3 } from "./blog-data-founder-3-growth";
+import { founderOpsPosts3 } from "./blog-data-founder-3-ops";
+import { founderBuildPosts4 } from "./blog-data-founder-4-build";
+import { founderMobilePosts4 } from "./blog-data-founder-4-mobile";
+import { founderCommercePosts4 } from "./blog-data-founder-4-commerce";
+import { founderUxPosts4 } from "./blog-data-founder-4-ux";
+import { founderCroPosts4 } from "./blog-data-founder-4-cro";
 
 export type BlogSection = {
   heading: string;
@@ -759,14 +774,15 @@ export const posts: BlogPost[] = [
     slug: "design-systems-for-teams-that-move-fast",
     title: "Design Systems: What They Are and Why Products Need Them",
     excerpt:
-      "What a design system includes, from tokens and foundations to components and patterns, why growing products need one, and how to start small and keep it alive.",
+      "What a design system includes, when a startup should invest in one, and how to fix an inconsistent website with an inventory, CMS blocks and light governance.",
     category: "UI/UX",
     banner: "designsystemflow",
     date: "2025-12-15",
-    updated: "2026-10-09",
-    readingTime: "14 min read",
+    updated: "2026-10-15",
+    readingTime: "11 min read",
     relatedServiceSlugs: ["ui-ux-design", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "fintech"],
+    relatedSlugs: ["design-handoff", "ui-design-principles", "multi-brand-website-architecture"],
     faqs: [
       {
         q: "What is a design system?",
@@ -807,6 +823,18 @@ export const posts: BlogPost[] = [
           {
         q: "Do we need a design system or just a component library?",
         a: "For one product and a small team, a well-built component library with brief documentation is usually enough. A full design system with tokens, patterns, governance and versioning is justified when several products, platforms or teams must stay consistent, or when accessibility and brand requirements are strict. Start small and grow it as reuse increases.",
+      },
+      {
+        q: "Our website looks inconsistent. Do we need a redesign?",
+        a: "Not if the structure, messaging and conversion paths still work and the problem is mainly visual drift: several button styles, mismatched sections, random colours. In that case an interface inventory, a consolidation sheet and a limited set of CMS blocks usually fix it for less effort than a redesign. If the navigation, positioning or user journeys are also failing, a redesign is the better route.",
+      },
+      {
+        q: "Are design tokens a W3C standard?",
+        a: "No. The Design Tokens Community Group published the first stable version of its format specification, 2025.10, on 28 October 2025. It is a W3C Community Group report, not a W3C Recommendation, but it gives design tools and code a shared file format for tokens.",
+      },
+      {
+        q: "How do we stop editors breaking the design in the CMS?",
+        a: "Give them a library of approved blocks with limited options rather than free styling: preset colours and spacing, fixed heading levels and sensible defaults. WordPress lets theme developers lock blocks and restrict settings to presets, and Shopify themes define which settings and blocks merchants can change in each section. When editors need something new, it becomes a new block, not a one-off page.",
       },
 ],
     content: [
@@ -883,6 +911,7 @@ export const posts: BlogPost[] = [
         heading: "Design tokens",
         body: [
           "Tokens turn decisions into shared variables. Instead of a hex value repeated across dozens of files, both design and code reference the same named token. Change it once and it changes everywhere, which also makes theming and brand updates far easier. Tokens are the bridge described in [[/blogs/design-handoff|design handoff]].",
+          "There is now a common file format for tokens. The Design Tokens Community Group published version 2025.10 of its specification, its first stable version, in October 2025 ([[https://www.w3.org/community/design-tokens/2025/10/28/design-tokens-specification-reaches-first-stable-version/|W3C Design Tokens Community Group]]). It is a Community Group report rather than a W3C standard, so tool support varies; check that your design tool and build pipeline can read and write it before you depend on it.",
         ],
       },
       {
@@ -894,6 +923,50 @@ export const posts: BlogPost[] = [
           title: "Is your interface growing inconsistent?",
           description:
             "ZSpace Labs designs and documents design systems that designers and developers actually use.",
+        },
+      },
+      {
+        heading: "When should a startup invest in a design system?",
+        body: [
+          "Later than most design-system advocates suggest, and earlier than most founders think. Nielsen Norman Group notes that design systems are best \"when the company foresees years of future, replicable design work\", and that for a prototype a full design system is unlikely to pay back in the near term, because its benefit is the replication of design in the future ([[https://www.nngroup.com/articles/design-systems-101/|NN/g, Design Systems 101]]). Systems also need ongoing maintenance, so the cost does not end when the first version ships.",
+          "A practical way to read that for a startup:",
+        ],
+        table: {
+          headers: ["Stage", "What to put in place", "What to avoid"],
+          rows: [
+            ["Prototype or pre-launch", "An off-the-shelf component library and a handful of tokens for colour, type and spacing", "Building a custom system before you know which screens survive"],
+            ["Live product, one small team", "Shared components for the patterns you actually repeat, with their states documented", "Governance processes nobody has time to run"],
+            ["Several designers, developers or products", "A named owner, versioned tokens and components, documentation and a contribution route", "Letting each team fork its own copy"],
+          ],
+        },
+      },
+      {
+        heading: "Fixing an inconsistent website",
+        body: [
+          "Marketing sites drift in a particular way. A few freelancers, an agency and dozens of landing pages later, there are four button styles, several greys and hero sections that almost match. Nielsen Norman Group's description of the problem is blunt: \"Small deviations compound quickly\", and \"Teams optimize locally, not globally\" ([[https://www.nngroup.com/articles/design-system-enforcer/|NN/g]]). You rarely need a full design system to fix it. You need four steps.",
+          "**1. Run an interface inventory.** Brad Frost describes an interface inventory as \"a comprehensive collection of the bits and pieces that make up your interface\" ([[https://bradfrost.com/blog/post/interface-inventory/|Brad Frost]]). Screenshot each unique variant, not every instance, and group them: buttons, links, headings, colours, heroes, cards, forms, calls to action, testimonials and other proof, pricing tables, FAQs, footers, icons and image styles. Frost suggests 30 to 90 minutes is enough for a first pass ([[https://atomicdesign.bradfrost.com/chapter-4/|Atomic Design, chapter 4]]). The output is a count of variants per category, which is usually persuasive on its own; as Frost puts it, \"You don't need to be a designer to recognize that having 37 unique button styles probably isn't a good idea.\"",
+          "**2. Fill in a consolidation sheet.** For every variant, decide whether to keep it, merge it into another, or retire it, and map what survives to tokens. A useful starting rule, which is a heuristic rather than a standard, is one primary and one secondary button style, one type scale and a named colour palette.",
+        ],
+        table: {
+          headers: ["Category", "Variant (screenshot ref)", "Used on", "Decision", "Replaced by / token"],
+          rows: [
+            ["Button", "B1: solid blue, rounded", "Home, pricing, most landing pages", "Keep as primary", "button-primary, color-brand-600"],
+            ["Button", "B2: solid blue, square corners", "Three older landing pages", "Merge", "button-primary"],
+            ["Button", "B3: outline grey", "Blog, footer", "Keep as secondary", "button-secondary"],
+            ["Hero", "H4: video background", "One campaign page", "Retire", "Hero with image (H1)"],
+            ["Form", "F2: two-column enquiry form", "Contact, two landing pages", "Merge", "Single-column form block"],
+          ],
+        },
+      },
+      {
+        heading: "Fixing an inconsistent website: CMS blocks and governance",
+        body: [
+          "**3. Rebuild the most-used sections as a CMS block library with limited options.** Rebuild the sections your pages actually use, often somewhere around 12 to 20 (again a heuristic), as reusable blocks with preset colours, preset spacing, fixed heading levels and sensible defaults. In **WordPress**, theme.json settings, block locking and patterns let you restrict editors to approved options, for example \"only allowing specific preset colors to be used for the background of a Cover block\" ([[https://developer.wordpress.org/block-editor/how-to-guides/curating-the-editor-experience/|WordPress developer docs]]). In **Shopify**, each section's schema defines the settings and blocks merchants can change, with presets, a maximum number of blocks and the templates where it may appear ([[https://shopify.dev/docs/storefronts/themes/architecture/sections/section-schema|Shopify section schema]]). In a **headless CMS**, model each block as a content type with constrained fields and let the front end decide the styling, so editors choose content and options, not CSS.",
+          "**4. Add light governance.** Name one owner who decides what enters the library (NN/g calls this role the design-system \"enforcer\"). Set one rule: a new need becomes a new block, never a one-off page. Re-run a one-hour inventory every quarter, and log inconsistencies as UX debt, prioritised by user impact, frequency and effort ([[https://www.nngroup.com/articles/ux-debt/|NN/g on UX debt]]).",
+        ],
+        callout: {
+          type: "takeaway",
+          text: "Fix or redesign? If the site's structure, messaging and conversion paths work and the problem is visual drift, consolidate. If visitors cannot find what they need or the positioning is wrong, see [[/blogs/when-does-your-website-need-a-redesign|the signs a website needs a redesign]] instead. Either way, the block library is development work as much as design; the [[/blogs/website-development-guide|website development guide]] explains how it fits into a build.",
         },
       },
       {
@@ -955,9 +1028,17 @@ export const posts: BlogPost[] = [
         },
       },
       {
+        heading: "Sources",
+        body: [
+          "Design systems and consistency: [[https://www.nngroup.com/articles/design-systems-101/|NN/g: Design Systems 101]]; [[https://www.nngroup.com/articles/design-system-enforcer/|NN/g: the design-system enforcer (6 February 2026)]]; [[https://www.nngroup.com/articles/ux-debt/|NN/g: UX debt]]; [[https://bradfrost.com/blog/post/interface-inventory/|Brad Frost: interface inventory (2013)]]; [[https://atomicdesign.bradfrost.com/chapter-4/|Brad Frost: Atomic Design, chapter 4]].",
+          "Tokens and CMS controls: [[https://www.w3.org/community/design-tokens/2025/10/28/design-tokens-specification-reaches-first-stable-version/|Design Tokens Community Group: specification 2025.10]]; [[https://developer.wordpress.org/block-editor/how-to-guides/curating-the-editor-experience/|WordPress: curating the editor experience]]; [[https://shopify.dev/docs/storefronts/themes/architecture/sections/section-schema|Shopify: section schema]].",
+          "Accessed 15 October 2026. Platform features and specifications change; check the current documentation.",
+        ],
+      },
+      {
         heading: "Conclusion",
         body: [
-          "A design system is the product's shared language: tokens, foundations, components and patterns that make every new screen faster and more consistent. Start small with the most-used pieces, keep design and code in sync, and grow it as patterns repeat. For the wider process, see the [[/blogs/product-design-guide|product design guide]]. To theme one system across several brands, see [[/blogs/multi-brand-website-architecture|multi-brand website architecture]].",
+          "A design system is the product's shared language: tokens, foundations, components and patterns that make every new screen faster and more consistent. Start small with the most-used pieces, keep design and code in sync, and grow it as patterns repeat. If your website has already drifted, start with an inventory and a consolidation sheet before anything bigger, and hand the result to developers as specified blocks; see [[/blogs/design-handoff|what a good design handoff includes]]. For the wider process, see the [[/blogs/product-design-guide|product design guide]]. To theme one system across several brands, see [[/blogs/multi-brand-website-architecture|multi-brand website architecture]].",
         ],
       },
     ],
@@ -1233,7 +1314,7 @@ export const posts: BlogPost[] = [
       {
         heading: "Measure activation, not completion",
         body: [
-          "Define the activation event, the action that proves value, and track the funnel from first open to that event. Look at where users drop off, test changes one at a time, and follow retention of activated users. It's the same measurement discipline behind ZSpace Labs' [[/services/cro-audit|conversion optimization]] work.",
+          "Define the activation event, the action that proves value, and track the funnel from first open to that event. Look at where users drop off, test changes one at a time, and follow retention of activated users. It's the same measurement discipline behind ZSpace Labs' [[/services/cro-audit|conversion optimization]] work. Activation is only the start; [[/blogs/improve-mobile-app-retention|improving retention beyond the first week]] covers what keeps people coming back.",
         ],
         table: {
           headers: ["Metric", "What it tells you"],
@@ -1987,17 +2068,25 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "shopify-core-web-vitals-performance-guide",
-    title: "Shopify performance and Core Web Vitals, explained",
-    seoTitle: "Shopify Core Web Vitals: How to Improve LCP, INP and CLS",
+    title: "Why is my Shopify store slow? A Core Web Vitals troubleshooting guide",
+    seoTitle: "Why Is My Shopify Store Slow? A Troubleshooting Guide",
     excerpt:
-      "LCP, INP, and CLS aren't abstract scores — each one maps to a specific, fixable cause on a Shopify store. Here is what to fix, and in what order.",
+      "Find out why your Shopify store is slow: which speed number to trust, which metric fails on which template, what changed, and how to fix and re-measure it.",
     category: "Shopify & Ecommerce",
     banner: "waterfall",
+    sceneKind: "speed",
+    bannerAlt:
+      "Waterfall of page requests on a Shopify product page, showing the hero image, theme scripts and app scripts competing to load.",
     date: "2026-03-08",
-    updated: "2026-10-03",
-    readingTime: "8 min read",
+    updated: "2026-10-14",
+    readingTime: "10 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
     relatedIndustrySlugs: ["d2c-consumer", "ecommerce"],
+    relatedSlugs: [
+      "shopify-speed-cro",
+      "shopify-speed-checklist-before-you-add-another-app",
+      "why-is-my-website-slow",
+    ],
     faqs: [
       {
         q: "What are Core Web Vitals, in plain terms?",
@@ -2005,95 +2094,130 @@ export const posts: BlogPost[] = [
       },
       {
         q: "What's a reasonable target for each Core Web Vitals metric?",
-        a: "Google's thresholds for a good experience are Largest Contentful Paint of 2.5 seconds or less, Interaction to Next Paint of 200 milliseconds or less, and Cumulative Layout Shift of 0.1 or less, at the 75th percentile of page loads ([[https://web.dev/articles/vitals|web.dev]]) — measured on real visitor traffic rather than a single lab test, and weighted toward mobile since that's where most Shopify traffic and most performance problems concentrate.",
+        a: "Google's thresholds for a good experience are Largest Contentful Paint of 2.5 seconds or less, Interaction to Next Paint of 200 milliseconds or less, and Cumulative Layout Shift of 0.1 or less, at the 75th percentile of page loads, segmented by mobile and desktop ([[https://web.dev/articles/vitals|web.dev]]). Judge them on real visitor data rather than a single lab test, and look at mobile first.",
       },
       {
         q: "Why is Interaction to Next Paint the hardest metric to fix on Shopify?",
-        a: "Because it's almost always caused by JavaScript — usually from apps, sometimes from theme code — competing for the browser's attention when a visitor tries to interact with the page. Unlike an oversized image, this can't be fixed with a single settings change; it requires reducing or deferring the scripts actually causing the delay.",
+        a: "Because it's almost always caused by JavaScript, usually from apps and sometimes from theme code, competing for the browser's attention when a visitor tries to interact with the page. Unlike an oversized image, it can't be fixed with a single settings change. You have to reduce or defer the scripts actually causing the delay.",
       },
       {
         q: "Does every app installed on a Shopify store hurt performance?",
-        a: "Not equally — a well-built, lightweight app has a much smaller footprint than a poorly built one doing the same job, and how many pages an app's script loads on matters as much as how many apps you have. But in aggregate, each additional app is another script the browser has to account for, which is why an app audit is a genuine performance lever, not just a cost one.",
+        a: "Not equally. A well-built, lightweight app has a much smaller footprint than a poorly built one doing the same job, and how many pages an app's script loads on matters as much as how many apps you have. But each additional app is another script the browser has to handle, which is why an app audit is a genuine performance lever, not just a cost one.",
       },
       {
         q: "Is a custom Shopify theme automatically faster than a stock one?",
-        a: "Not automatically — a poorly built custom theme can be just as slow as a bloated stock one. What tends to help is a theme built with fewer unnecessary dependencies and features you don't use, which is more achievable with a stock theme configured minimally or a custom build scoped tightly than with a heavily loaded general-purpose theme.",
+        a: "No. A poorly built custom theme can be just as slow as a bloated stock one. What helps is a theme with fewer unnecessary dependencies and features you don't use, which is achievable with a stock theme configured minimally or a tightly scoped custom build.",
       },
       {
         q: "How do I actually check my Shopify store's Core Web Vitals?",
-        a: "Google's PageSpeed Insights and Search Console's Core Web Vitals report both show real-world, field data specific to your store, which matters more than a single lab test — lab tools like Lighthouse are useful for diagnosing why a page is slow, but field data is what reflects actual visitor experience and what search engines weigh.",
+        a: "Start with the Web performance dashboard in your Shopify admin, which uses real visitor data. PageSpeed Insights and Search Console's Core Web Vitals report also show field data when a page or site has enough traffic. Lab tools like Lighthouse are useful for diagnosing why a page is slow, but field data reflects what visitors actually experience.",
+      },
+      {
+        q: "Why does my Shopify dashboard disagree with my PageSpeed Insights score?",
+        a: "They usually measure different things. The PageSpeed Insights performance score is a single simulated lab run, while Shopify's dashboard summarises real visits over the past 30 days at the 75th percentile. A low lab score with good field data is often not urgent; poor field data is.",
+      },
+      {
+        q: "Why does my Web performance dashboard show no data?",
+        a: "Shopify says a new store, or one in private mode (password-protected), might not have metrics. You need to deactivate private mode for the dashboard to collect real user data, and data can be delayed by up to 36 hours.",
+      },
+      {
+        q: "How soon will a fix show up in the numbers?",
+        a: "A lab test on a duplicate theme shows the effect immediately. Field data takes longer: Shopify's dashboard can lag by up to 36 hours and its summary covers 30 days, so use the Over Time report and expect the summary to move gradually.",
       },
     ],
     content: [
       {
         heading: "Quick answer",
         body: [
-          "Improve Shopify Core Web Vitals in order: fix Largest Contentful Paint by sizing and compressing the hero image and removing render-blocking scripts; fix Interaction to Next Paint by auditing and deferring app and theme JavaScript; fix Cumulative Layout Shift by reserving space for images, banners and app widgets. Measure with real-user field data in PageSpeed Insights or Search Console, and re-check after every app or theme change.",
+          "A Shopify store is usually slow for one of three reasons: a large or late-loading hero image (Largest Contentful Paint), too much app and theme JavaScript (Interaction to Next Paint), or images, banners and app widgets that push content around as they load (Cumulative Layout Shift). To find which one, work through six steps: decide which number to trust, find the failing metric and template, check what changed, apply the fix for that metric, test it on a duplicate theme, then re-measure once real visitor data has caught up.",
         ],
       },
       {
-        heading: "Speed scores are a symptom, not the actual problem",
-        body: [
-          "A low Core Web Vitals score doesn't tell you what to fix — it tells you that something is causing a slow or unstable experience for real visitors. On Shopify specifically, the underlying causes are fairly predictable: heavy or unoptimized images, theme and app JavaScript competing for the browser's attention, and layout elements that shift as content loads in.",
-          "Fixing the score without understanding which of these is actually responsible usually means guessing — compressing images that were never the bottleneck, or switching themes when the real problem was an app nobody remembered installing.",
+        heading: "Key takeaways",
+        body: [],
+        checklist: [
+          "Trust real visitor (field) data over a single Lighthouse score.",
+          "Shopify's Web performance dashboard reports the 75th percentile of the past 30 days and can lag by up to 36 hours.",
+          "Good means LCP ≤ 2.5 s, INP ≤ 200 ms and CLS ≤ 0.1 at the 75th percentile.",
+          "Diagnose by template: product, collection, cart and home pages load different apps.",
+          "Most regressions follow a change, so check app installs, theme updates and new tags first.",
+          "Test every fix on a duplicate theme before publishing it.",
         ],
       },
       {
-        heading: "What each metric is actually telling you",
+        heading: "Step 1: Decide which number to trust",
         body: [
-          "Largest Contentful Paint measures how long it takes your main content — usually a hero image or headline — to appear. On Shopify, this is most often a large, unoptimized hero image or a render-blocking script delaying everything behind it. Interaction to Next Paint measures how responsive the page feels once a visitor actually tries to use it, and it's almost always a JavaScript problem — apps are the most common source. Cumulative Layout Shift measures how much the page jumps around as it loads, typically caused by images or embedded content without reserved space, or late-loading banners and app widgets pushing content down.",
+          "Speed numbers disagree because they measure different things. A lab test loads one page once, on a simulated device and connection. Field data records what real visitors experienced over weeks. Field data tells you whether there is a problem; lab tools help you find the cause.",
+          "Shopify's [[https://help.shopify.com/en/manual/online-store/web-performance/web-performance-dashboard|Web performance dashboard]] summarises real user data from the past 30 days at the 75th percentile. Shopify notes that data might be delayed by up to 36 hours, that it keeps 90 days of data, and that a new store or one in private mode (password-protected) might not have metrics at all.",
         ],
         table: {
-          headers: ["Metric", "What it measures", "Typical Shopify cause"],
+          headers: ["Source", "What it is", "Use it for"],
           rows: [
-            [
-              "LCP (Largest Contentful Paint)",
-              "Time until main content is visible",
-              "Unoptimized hero image, render-blocking scripts",
-            ],
-            [
-              "INP (Interaction to Next Paint)",
-              "Responsiveness to real interaction",
-              "App and theme JavaScript competing for the main thread",
-            ],
-            [
-              "CLS (Cumulative Layout Shift)",
-              "Visual stability while loading",
-              "Images or app widgets without reserved space",
-            ],
+            ["Shopify Web performance dashboard", "Real visitor data, past 30 days, 75th percentile", "Whether there is a problem, on which metric and page type"],
+            ["Search Console Core Web Vitals report", "Google's field data, grouped by similar URLs", "Which groups of URLs Google sees as poor"],
+            ["PageSpeed Insights, field section", "Chrome User Experience Report data where traffic is sufficient", "A second view of real visits for one URL or the whole origin"],
+            ["Lighthouse or the PageSpeed Insights lab score", "One simulated page load", "Finding causes and comparing a fix before and after, not judging the store"],
+          ],
+        },
+        callout: {
+          type: "note",
+          text: "Low-traffic stores get noisy field data. If a template has few visits, a handful of slow sessions can move the 75th percentile. Look for a trend over weeks rather than reacting to one day.",
+        },
+      },
+      {
+        heading: "Step 2: Find which metric fails, and on which template",
+        body: [
+          "Google's thresholds for a good experience are measured at the 75th percentile of page loads, segmented across mobile and desktop ([[https://web.dev/articles/vitals|web.dev]]). Shopify's dashboard uses the same \"good\" lines and adds its own moderate and poor bands.",
+          "Then open the Page Type report for the failing metric. Shopify describes it as a way to see whether certain page templates affect performance. A store whose product pages fail INP while the home page passes has a product page problem, usually an app that only loads there.",
+        ],
+        table: {
+          headers: ["Metric", "What it measures", "Good (web.dev)", "Shopify's poor band"],
+          rows: [
+            ["LCP (Largest Contentful Paint)", "Time until the main content is visible", "≤ 2.5 s", "Over 4 s"],
+            ["INP (Interaction to Next Paint)", "How quickly the page responds to taps, clicks and typing", "≤ 200 ms", "Over 500 ms"],
+            ["CLS (Cumulative Layout Shift)", "How much the layout moves while loading", "≤ 0.1", "0.25 or more"],
           ],
         },
       },
       {
-        heading: "The order that actually fixes things",
+        heading: "Step 3: Work out what changed",
         body: [
-          "Start with LCP: compress and correctly size your hero image, and make sure nothing unnecessary is blocking it from rendering first. This is usually the fastest, highest-leverage fix and often the one most stores have already partially addressed.",
-          "Then address INP, which is harder and usually the real ceiling on a Shopify store's performance: this means auditing which apps load scripts on every page versus only where needed, and removing or deferring anything not earning its cost. Our [[/blogs/shopify-speed-checklist-before-you-add-another-app|app audit checklist]] is built for exactly this step. Finally, address CLS by giving images, embeds, and dynamically injected app content explicit dimensions so the layout doesn't jump as they load.",
+          "Speed rarely drops for no reason. On the dashboard's Over Time charts, Shopify shows event annotations as numbered vertical lines; hovering over one shows changes such as app installations, theme updates and new code. Line those up against the date the metric moved.",
+          "Annotations won't catch everything, so check the usual suspects as well.",
         ],
-        visual: {
-          variant: "bars",
-          accent: "orange",
-          caption:
-            "Each additional app typically adds measurable delay to first content paint — the effect compounds.",
-        },
+        checklist: [
+          "A new app, or a new feature switched on inside an existing app",
+          "A theme update, a new theme, or a developer's code change",
+          "A new tracking tag, pixel or tag manager container",
+          "New above-the-fold content, such as a video hero or a slideshow",
+          "A new pop-up, chat widget or review carousel",
+          "Seasonal banners or announcement bars added for a campaign",
+        ],
         callout: {
           type: "tip",
-          text: "Fix LCP first, then INP, then CLS. Working in that order matches both typical impact and typical difficulty, so you see progress before hitting the harder problems.",
+          text: "Keep a simple change log: date, what changed, who changed it. It turns the next slowdown from a guessing game into a five-minute check.",
         },
       },
       {
-        heading: "How to measure on Shopify",
+        heading: "Step 4: Apply the fix for the failing metric",
         body: [
-          "Use field data first: PageSpeed Insights shows Chrome User Experience Report data for pages with enough traffic, and Search Console's Core Web Vitals report groups URLs by status. Test product, collection and home templates separately, since each loads different apps and sections. Google's Core Web Vitals overview defines the thresholds.",
-          "Lab tools such as Lighthouse help find causes, but use them on a duplicate theme and compare changes against the same templates.",
+          "**LCP.** On Shopify this is most often a large hero image or a render-blocking script delaying everything behind it. Serve the hero at the size it displays, don't lazy-load the image that is the largest element, avoid sliders and video as the main above-the-fold element where possible, and move scripts that aren't needed for first paint out of the way.",
+          "**INP.** This is almost always a JavaScript problem, and apps are the most common source. Find which apps load scripts on every page rather than only where needed, and remove or defer anything not earning its cost. Our [[/blogs/shopify-speed-checklist-before-you-add-another-app|app audit checklist]] covers this step in detail. Tag managers carrying many tags have the same effect.",
+          "**CLS.** Give images, embeds and app content explicit dimensions or reserved space so the layout doesn't jump as they load. Late-injected banners, cookie bars and review widgets are common causes.",
         ],
-      },
-      {
-        heading: "Theme and app fixes that usually help",
-        body: [],
+        table: {
+          headers: ["Symptom", "Likely cause", "First check"],
+          rows: [
+            ["LCP poor on home and collection pages", "Oversized or lazy-loaded hero image, slideshow", "Which element is the LCP element in a lab test"],
+            ["LCP poor only on product pages", "Large product media, app scripts loading first", "Product image sizes and scripts loaded before the main image"],
+            ["INP poor after installing an app", "The app's script on the main thread", "Block that script in DevTools on a duplicate theme and re-test"],
+            ["INP poor across the whole site", "Tag manager, chat widget, theme JavaScript", "Third-party scripts loading on every template"],
+            ["CLS poor on product pages", "Review stars, badges or delivery messages injected late", "Elements appearing after first paint"],
+            ["Everything worse since a theme update", "New sections or settings in the theme", "Compare the old and new theme versions on the same template"],
+          ],
+        },
         checklist: [
           "Serve hero images at the size they display, using Shopify's image URL parameters",
-          "Avoid sliders and video as the main above-the-fold element where possible",
           "Load app widgets only on templates that need them",
           "Remove leftover code from uninstalled apps",
           "Set width and height on images and reserve space for banners",
@@ -2101,15 +2225,67 @@ export const posts: BlogPost[] = [
         ],
       },
       {
-        heading: "Performance is a maintenance habit, not a one-time fix",
+        heading: "Step 5: Test the fix on a duplicate theme",
         body: [
-          "Because performance tends to degrade gradually as apps and content are added over time, a single optimization pass doesn't hold indefinitely — it needs to be part of an ongoing [[/blogs/shopify-store-maintenance-checklist|maintenance routine]], not a project you complete once and move on from. Performance matters most, and shows up most clearly, on mobile — see our [[/blogs/shopify-mobile-cro|Shopify mobile CRO guide]] for how it connects to conversion specifically on that segment.",
+          "Never test speed fixes on the live theme. Duplicate it, make one change at a time, and compare the same templates in a lab tool before and after. To see what an app costs before you uninstall it, use the request blocking feature in Chrome DevTools to block its script on the duplicate theme's preview and re-run the test.",
+          "If the slowness looks like server time rather than scripts, the [[https://shopify.dev/docs/storefronts/themes/tools/theme-inspector|Shopify Theme Inspector for Chrome]] shows Liquid render profiling as a flame graph, which helps find theme code that is slow to render. Check that apps, tracking and checkout still work on the duplicate before publishing it.",
+        ],
+      },
+      {
+        heading: "Step 6: Re-measure after the data catches up",
+        body: [
+          "Once the fix is live, give field data time. Shopify's dashboard can lag by up to 36 hours, and its summary covers the past 30 days, so the headline figure moves slowly. Use the Over Time report to see whether the line changes after your publish date, and re-check the Page Type report for the template you fixed.",
+          "Write down the date and what you changed, so the next annotation on the chart has an explanation.",
+        ],
+      },
+      {
+        heading: "Hypothetical example",
+        body: [
+          "Hypothetical example: a homeware store's dashboard shows INP moving from good to moderate on mobile. The Page Type report shows product pages are the problem; collection and home pages are fine. An annotation two weeks earlier marks an app installation: a product personalisation widget. On a duplicate theme, blocking the widget's script brings lab interaction times back down. The team limits the widget to the products that use it, publishes, and watches the Over Time chart for the following weeks.",
+        ],
+      },
+      {
+        heading: "Does the speed problem cost sales?",
+        body: [
+          "Shopify has published its own analysis: for every 100 milliseconds slower a store loads, measured by LCP, conversion tends to be about 3.5% lower. This is vendor data from Shopify, based on a 28-day window around January and February 2026, and Shopify describes it as correlation, not direct causation ([[https://www.shopify.com/enterprise/blog/store-speed-conversion|Shopify]]). Treat it as a reason to take speed seriously, not as a forecast for your store.",
+          "For how performance connects to conversion and what to prioritise for revenue, see our guide to [[/blogs/shopify-speed-cro|how site speed affects Shopify conversion rates]].",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        body: [],
+        checklist: [
+          "Chasing a Lighthouse score of 100 while field data is already good",
+          "Testing only the home page when product pages carry most traffic and most apps",
+          "Uninstalling apps without removing the code they left in the theme",
+          "Testing changes on the live theme",
+          "Judging a fix the day after publishing, before field data has caught up",
+          "Switching themes to fix a problem that was caused by one app",
+        ],
+      },
+      {
+        heading: "When this flow is not enough",
+        body: [
+          "This flow assumes an Online Store theme. Headless storefronts built with Hydrogen or another framework need the developer's own monitoring. Checkout isn't built from your theme's templates, so this flow doesn't diagnose checkout speed. If your site isn't on Shopify at all, use our [[/blogs/why-is-my-website-slow|general guide to diagnosing a slow website]] instead.",
+          "Some fixes also have business costs: removing a reviews widget or a personalisation app may speed up a page and still lose sales. Decide those with conversion data, not speed data alone.",
+        ],
+      },
+      {
+        heading: "Sources",
+        body: [
+          "[[https://web.dev/articles/vitals|web.dev: Web Vitals]]; [[https://help.shopify.com/en/manual/online-store/web-performance/web-performance-dashboard|Shopify Help Center: Web performance dashboard]]; [[https://shopify.dev/docs/storefronts/themes/tools/theme-inspector|Shopify.dev: Shopify Theme Inspector for Chrome]]; [[https://www.shopify.com/enterprise/blog/store-speed-conversion|Shopify: store speed and conversion (published 27 April 2026, vendor data)]].",
+          "Accessed 14 October 2026. Dashboard features and reporting windows can change; check Shopify's current documentation.",
+        ],
+      },
+      {
+        heading: "Keep it from slowing down again",
+        body: [
+          "Performance degrades gradually as apps and content are added, so a single optimisation pass doesn't hold. Make the six steps part of your [[/blogs/shopify-store-maintenance-checklist|regular maintenance routine]]: check the dashboard monthly, log every change, and test new apps on a duplicate theme before they go live. Performance matters most on mobile; see our [[/blogs/shopify-mobile-cro|Shopify mobile CRO guide]] for how it connects to conversion there. If fixes need theme or app work, that falls under [[/services/shopify-development|Shopify development]].",
         ],
         cta: {
-          title:
-            "Want a straight answer on what's actually slowing your store down?",
+          title: "Want a second pair of eyes on a slow store?",
           description:
-            "We run a focused performance audit against real Core Web Vitals data — not just a generic speed test score. See how we approach [[/services/shopify-development|Shopify development]].",
+            "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/shopify-development|Shopify development]] and [[/services/cro-audit|speed and conversion audits]]. If useful, we can walk through your Web performance dashboard with you and work out which metric, template and change to look at first.",
         },
       },
     ],
@@ -2388,66 +2564,158 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "shopify-business-systems-integration-guide",
-    title: "Connecting Shopify to your other business systems",
-    seoTitle: "Shopify ERP, CRM and Accounting Integration Guide",
+    title: "What to integrate with Shopify before your store starts scaling",
+    seoTitle: "Shopify Integrations: What to Connect Before You Scale",
     excerpt:
-      "ERP, CRM, accounting, shipping — most of what a growing Shopify store needs to connect to already has a well-trodden path. Here is what that project involves.",
+      "The order to connect Shopify to payments, tax, inventory, 3PL, ERP and marketing before you scale, what Shopify does natively and which plan limits matter.",
     category: "Shopify & Ecommerce",
     banner: "hub",
+    sceneKind: "orders",
+    bannerAlt:
+      "Shopify at the centre of a hub connected to payments, tax, inventory, fulfilment, ERP and accounting, and marketing systems.",
     date: "2026-04-05",
-    updated: "2026-10-03",
-    readingTime: "9 min read",
+    updated: "2026-10-14",
+    readingTime: "10 min read",
     relatedServiceSlugs: ["shopify-development", "ai-automation"],
     relatedIndustrySlugs: ["manufacturing", "saas-technology"],
+    relatedSlugs: [
+      "shopify-app-integration-guide",
+      "ecommerce-erp-integration",
+      "ecommerce-fulfilment-integration",
+    ],
     faqs: [
       {
+        q: "What should I integrate with Shopify first?",
+        a: "Payments and tax first, because errors there affect every order and are expensive to correct later. Then decide which system owns inventory, then connect fulfilment, then accounting or ERP, then marketing and customer data, and automate last with Shopify Flow.",
+      },
+      {
         q: "Can Shopify integrate with an ERP system?",
-        a: "Yes — established Shopify-ERP integrations exist for systems like Odoo, SAP Business ByDesign, and Microsoft Business Central, typically syncing orders, inventory, and customer data bidirectionally between the two systems.",
+        a: "Yes. Established Shopify-ERP integrations exist for systems like Odoo, SAP Business ByDesign and Microsoft Business Central, typically syncing orders, inventory and customer data between the two systems.",
       },
       {
         q: "Do I need a custom integration to connect Shopify with my CRM?",
-        a: "Often not — CRM platforms like HubSpot and Salesforce have established Shopify connections for common needs like syncing customer records and order history. Custom work becomes necessary when your CRM workflow requires logic those standard connections don't support.",
+        a: "Often not. CRM platforms like HubSpot and Salesforce have established Shopify connections for common needs like syncing customer records and order history. Custom work becomes necessary when your CRM workflow requires logic those standard connections don't support.",
       },
       {
         q: "How should Shopify orders sync with accounting software?",
-        a: "For most stores, syncing daily summarized journal entries rather than every individual order keeps the accounting file clean and reconciliation manageable — this is the common pattern used by established Shopify-to-accounting connectors for platforms like QuickBooks and Xero.",
+        a: "For most stores, syncing daily summarised journal entries rather than every individual order keeps the accounting file clean and reconciliation manageable. This is a common pattern among Shopify-to-accounting connectors for platforms like QuickBooks and Xero.",
+      },
+      {
+        q: "Is Shopify Flow enough, or do I need Zapier or custom code?",
+        a: "Flow covers a lot of in-Shopify automation and is free on the Basic, Grow, Advanced and Plus plans. Its Send HTTP Request action, which calls external systems, is only available on Grow, Advanced and Plus. If you need to reach systems Flow can't, or need complex error handling, a connector, middleware or a custom app is the next step.",
       },
       {
         q: "What's the difference between this and a technical integration guide?",
-        a: "This article covers what to connect and why — the systems and the project process. For the technical mechanics of how these connections are actually built, see our [[/blogs/shopify-app-integration-guide|guide to Shopify app and API integrations]], which covers the Admin API, GraphQL, and webhooks directly.",
+        a: "This article covers what to connect, in what order and why. For the technical mechanics, see our [[/blogs/shopify-app-integration-guide|guide to Shopify app and API integrations]], which covers the Admin API, GraphQL and webhooks directly.",
       },
       {
         q: "What commonly goes wrong in a Shopify integration project?",
-        a: 'Underestimating data mapping — two systems rarely define "customer" or "order status" identically, and reconciling that mapping is usually the bulk of the real work, not the API connection itself.',
+        a: 'Underestimating data mapping. Two systems rarely define "customer" or "order status" identically, and reconciling that mapping is usually the bulk of the real work, not the API connection itself.',
       },
       {
         q: "Do I need a custom integration, or does a connector app already exist?",
-        a: "Check first — accounting, ERP, and CRM integrations are well-covered categories with maintained connector apps for the most common platforms. Custom integration work is worth it when your specific systems or workflow aren't covered well by an existing connector. Our [[/blogs/shopify-custom-app-development-guide|custom app development guide]] covers that decision in more depth.",
+        a: "Check first. Accounting, ERP and CRM integrations are well-covered categories with maintained connector apps for the most common platforms. Custom integration work is worth it when your specific systems or workflow aren't covered well by an existing connector. Our [[/blogs/shopify-custom-app-development-guide|custom app development guide]] covers that decision in more depth.",
       },
       {
         q: "How long does a typical Shopify systems integration project take?",
-        a: "A well-supported connector app can be configured in days. A custom integration involving data mapping, testing, and a phased rollout more commonly takes several weeks, depending on how many systems are involved and how clean the underlying data is.",
+        a: "A well-supported connector app can be configured in days. A custom integration involving data mapping, testing and a phased rollout more commonly takes several weeks, depending on how many systems are involved and how clean the underlying data is.",
       },
     ],
     content: [
       {
         heading: "Quick answer",
         body: [
-          "Connecting Shopify to ERP, CRM, accounting, shipping or inventory systems starts with mapping: how each system defines customers, orders and stock, and which system is the source of truth for each. Then connect through an existing connector where one fits, or custom API work where it does not, test against real data including returns and partial fulfilments, and monitor closely after launch, when volume reveals issues testing missed.",
+          "Before a Shopify store scales, integrate in this order: payments and tax, then the inventory system of record, then fulfilment (including any 3PL and cash on delivery), then ERP and accounting, then marketing and customer data, and finally Shopify Flow automations on top. Each step depends on the one before it being right. Use what Shopify already does natively first, check which plan limits affect your design, and only build custom where connectors don't fit.",
         ],
       },
       {
-        heading:
-          "Integration is a business problem before it's a technical one",
-        body: [
-          "The hardest part of most Shopify integration projects isn't the API call — it's agreeing on what data means the same thing across two systems that were built independently. A CRM's definition of \"customer\" and Shopify's definition rarely match exactly, and that mismatch, not the connection itself, is usually where a project's real time goes.",
-          "This article covers what typically gets connected and why, and how a project like this actually runs. For the technical building blocks — the Admin API, GraphQL, and webhooks — see our [[/blogs/shopify-app-integration-guide|guide to Shopify app and API integrations]].",
+        heading: "Key takeaways",
+        body: [],
+        checklist: [
+          "Sequence matters: fix money and stock before automating anything.",
+          "Name one system of record for each type of data before connecting anything.",
+          "Shopify Flow is free on Basic and above, but calling external systems with it needs Grow or above.",
+          "API capacity depends on your plan, and new public apps have had to use GraphQL since 1 April 2025.",
+          "Payments and tax plumbing differ by country; Shopify Payments isn't available in India.",
         ],
+      },
+      {
+        heading: "Integration is a business problem before it's a technical one",
+        body: [
+          "The hardest part of most Shopify integration projects isn't the API call. It's agreeing on what data means the same thing across two systems that were built independently. A CRM's definition of \"customer\" and Shopify's definition rarely match exactly, and that mismatch, not the connection itself, is usually where a project's time goes.",
+          "This article covers what to connect, in what order, and how a project like this runs. For the technical building blocks, such as the Admin API, GraphQL and webhooks, see our [[/blogs/shopify-app-integration-guide|guide to how Shopify app and API integrations work]].",
+        ],
+      },
+      {
+        heading: "What to integrate first: a sequencing checklist",
+        body: [
+          "Work through these in order. A later step built on a wrong earlier one multiplies the error: automating order routing on top of inaccurate stock just oversells faster.",
+        ],
+        checklist: [
+          "**1. Payments and tax.** Confirm your payment gateways, payout reconciliation and how tax is calculated for every market you sell to. Mistakes here touch every order and are slow to unwind.",
+          "**2. Inventory system of record.** Decide which system owns stock levels (Shopify, an inventory tool, a warehouse system or the ERP) and how often the others are updated. Add a guard against overselling, such as safety stock on fast sellers.",
+          "**3. Fulfilment, 3PL and COD.** Connect orders to whoever picks and ships them, and return tracking and fulfilment status to Shopify. If you offer cash on delivery, decide where collected cash and returned parcels are reconciled.",
+          "**4. ERP and accounting.** Post sales, refunds, fees and tax to your finance system, usually as daily summaries rather than order by order. Agree how invoices are produced where local rules require them.",
+          "**5. Marketing and customer data.** Sync customers, consent and orders to your email, CRM and analytics tools, respecting the consent customers gave.",
+          "**6. Shopify Flow automations.** Once data is reliable, automate tagging, alerts and routine tasks, and add alerts for failed syncs.",
+        ],
+        table: {
+          headers: ["Step", "System of record", "Direction", "Trigger", "If it fails", "Plan dependency"],
+          rows: [
+            ["Payments and tax", "Payment provider for payouts; Shopify or a tax app for tax", "Provider to Shopify and accounting", "Event, plus a daily payout check", "Payout mismatches flagged in reconciliation", "Shopify Payments and tax service vary by country"],
+            ["Inventory", "One named system: Shopify, inventory tool, warehouse system or ERP", "Owner to Shopify", "Event, plus scheduled reconciliation", "Alert below safety stock; stop selling if sync stops", "API capacity depends on plan"],
+            ["Fulfilment, 3PL, COD", "3PL or warehouse system for shipment status", "Orders out to 3PL; tracking back to Shopify", "Event", "Alert on orders not acknowledged in time", "Check the 3PL's connector requirements"],
+            ["ERP and accounting", "ERP or accounting system for ledger and invoices", "Shopify to finance system", "Scheduled daily summary", "Failed posts queued and retried", "API capacity depends on plan"],
+            ["Marketing and customer data", "Shopify for customers and consent", "Shopify to email, CRM and analytics", "Event", "Consent mismatches reviewed", "Usually none"],
+            ["Flow automations", "Shopify", "Within Shopify; outbound calls via HTTP", "Event", "Alert on failed workflow runs", "Send HTTP Request needs Grow or above"],
+          ],
+        },
+        callout: {
+          type: "tip",
+          text: "Use the table as a worksheet. The entries are a typical starting point, not a recommendation for your store: replace each one with your own systems before you talk to vendors, and name a person who is alerted when each sync fails.",
+        },
+      },
+      {
+        heading: "What Shopify already does natively",
+        body: [
+          "Check what Shopify covers before buying a connector or commissioning custom work. Native features are maintained by Shopify and don't add another vendor to monitor.",
+        ],
+        table: {
+          headers: ["Need", "Native option", "Check before relying on it"],
+          rows: [
+            ["Workflow automation", "Shopify Flow, a free app on the Basic, Grow, Advanced and Plus plans", "Send HTTP Request needs Grow or above; tasks from custom partner apps need Plus"],
+            ["Tax calculation", "Shopify Tax (US, EU, UK, Canada) or Basic Tax (Norway, Switzerland, Australia, New Zealand, Singapore)", "Elsewhere you set rates manually or use a third-party tax app"],
+            ["Card and wallet payments", "Shopify Payments, in supported countries", "Not available in every country; India is not on the supported list"],
+            ["Selling in several countries", "Shopify Markets", "See our [[/blogs/shopify-markets|guide to Shopify Markets]] for the set-up decisions"],
+          ],
+        },
+      },
+      {
+        heading: "Plan limits that change the design",
+        body: [
+          "**Flow's external calls.** Shopify Flow is free on Basic, Grow, Advanced and Plus, but the Send HTTP Request action, which lets a workflow call another system, is only available on Grow, Advanced and Plus ([[https://help.shopify.com/en/manual/shopify-flow|Shopify Help Center]]). On Basic, an integration that needs to reach an external system has to come from an app instead.",
+          "**API capacity.** The GraphQL Admin API limits apps by query cost. Shopify lists restore rates of 100 points per second on standard plans, 200 on Advanced, 1,000 on Plus and 2,000 on Shopify for enterprise (Commerce Components), and a single query can't cost more than 1,000 points ([[https://shopify.dev/docs/apps/build/apis/graphql-admin/rate-limits|Shopify.dev]]). High-volume syncs, such as frequent full inventory updates, need to be designed around those limits with webhooks, bulk operations and incremental updates.",
+          "**GraphQL, not REST.** Shopify's REST Admin API has been legacy since 1 October 2024, and since 1 April 2025 all new public apps must be built exclusively with the GraphQL Admin API ([[https://shopify.dev/docs/api/admin-rest|Shopify.dev]]). Ask any connector vendor or developer which API their integration uses. How the APIs, webhooks and limits work in practice is covered in our [[/blogs/shopify-app-integration-guide|technical guide to Shopify APIs and webhooks]].",
+        ],
+      },
+      {
+        heading: "Market notes: payments and tax",
+        body: [],
+        checklist: [
+          "**India.** Shopify Payments is not on Shopify's list of supported countries, so card and UPI payments go through a third-party payment provider. Tax rates are set manually, because India isn't covered by Shopify Tax or Basic Tax. Plan GST invoicing and posting to your accounting system as part of step 4.",
+          "**UAE.** Shopify Payments lists the United Arab Emirates as a supported country; check the eligibility requirements for your business. Tax rates are set manually.",
+          "**UK, EU, US and Canada.** Shopify Tax is available.",
+          "**Australia and Singapore.** Basic Tax is available.",
+        ],
+        callout: {
+          type: "note",
+          text: "Sources: [[https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries|Shopify Payments supported countries]] and [[https://help.shopify.com/en/manual/taxes/tax-services|Shopify tax services by country]], checked 14 October 2026. Coverage changes, so check both pages for your markets, and take tax advice on what you must collect and invoice.",
+        },
       },
       {
         heading: "The systems Shopify stores most commonly connect to",
         body: [
-          "A handful of categories cover most integration needs: ERP systems like Odoo, SAP Business ByDesign, or Microsoft Business Central for financials and inventory at scale; CRM platforms like HubSpot or Salesforce once customer data needs to live in one place across marketing, sales, and support; accounting tools like QuickBooks or Xero, typically fed through a connector that posts summarized daily entries rather than every order; and shipping or fulfillment systems and 3PLs that need real-time inventory and tracking sync to avoid overselling.",
+          "A handful of categories cover most integration needs: ERP systems like Odoo, SAP Business ByDesign or Microsoft Business Central for financials and inventory at scale; CRM platforms like HubSpot or Salesforce once customer data needs to live in one place across marketing, sales and support; accounting tools like QuickBooks or Xero, typically fed through a connector that posts summarised daily entries rather than every order; and shipping, fulfilment systems and 3PLs that need timely inventory and tracking sync to avoid overselling. For the ERP side in more depth, see [[/blogs/ecommerce-erp-integration|how ecommerce ERP integration works]], and for warehouses and 3PLs, [[/blogs/ecommerce-fulfilment-integration|connecting your store with 3PL partners]].",
         ],
         visual: {
           variant: "grid",
@@ -2459,14 +2727,14 @@ export const posts: BlogPost[] = [
       {
         heading: "How an integration project actually runs",
         body: [
-          "A well-run integration starts with mapping — what data exists in each system, which fields correspond to which, and what happens when they conflict. From there, most projects move through a connection phase (via an existing connector or custom API work), a testing phase against real data, and a monitored rollout before fully relying on the sync.",
+          "A well-run integration starts with mapping: what data exists in each system, which fields correspond to which, and what happens when they conflict. From there, most projects move through a connection phase (via an existing connector or custom API work), a testing phase against real data, and a monitored rollout before fully relying on the sync.",
         ],
         checklist: [
-          "Map how each system defines shared concepts — customer, order, inventory item, status",
+          "Map how each system defines shared concepts: customer, order, inventory item, status",
           "Decide which system is the source of truth for each data type",
           "Connect via an existing app where one exists, or scope custom work where it doesn't",
-          "Test against real data, including edge cases like returns, partial fulfillments, and cancellations",
-          "Monitor closely for the first weeks — integration issues often surface under real volume, not in testing",
+          "Test against real data, including edge cases like returns, partial fulfilments and cancellations",
+          "Monitor closely for the first weeks, because integration issues often surface under real volume, not in testing",
         ],
       },
       {
@@ -2487,24 +2755,44 @@ export const posts: BlogPost[] = [
         heading: "Data ownership rules to agree early",
         body: [
           "Decide which system owns each data type: product information, prices, stock levels, customer records, orders and refunds. Write the rules down, including what happens when records conflict. Most integration bugs trace back to two systems both believing they own the same field.",
-          "Our [[/services/shopify-development|Shopify development services]] and [[/services/ai-automation|automation work]] cover integration projects end to end.",
+          "Hypothetical example: a growing homeware brand sells online and through two wholesale accounts. The warehouse system owns stock, Shopify owns orders and customers, and the accounting system owns invoices and refunds once posted. Because the rules are written down, a refund issued in Shopify flows one way to accounting, and nobody edits stock by hand in Shopify.",
         ],
       },
       {
         heading: "Where integrations commonly break",
         body: [
-          "Beyond data mapping, the most common failure points are authentication expiring silently, webhook events arriving out of order or more than once, and one system's edge case (a partial refund, a merged customer record) not having a clear rule in the other. A properly built integration verifies webhook signatures, handles duplicate events gracefully, and reconciles periodically rather than trusting real-time sync alone to stay accurate forever.",
-          "Heavier integration needs — several systems, high volume, or multiple linked storefronts — are also one of the more common reasons businesses evaluate [[/blogs/shopify-plus-vs-shopify|Shopify Plus]], since its higher API limits and organizational tools are built with exactly this kind of complexity in mind.",
-          "For related guides, see [[/blogs/ecommerce-erp-integration|ecommerce ERP integration]], [[/blogs/ecommerce-api-integration|ecommerce API integration]] and [[/blogs/ecommerce-inventory-management-integration|inventory integration]].",
+          "Beyond data mapping, the most common failure points are authentication expiring silently, webhook events arriving out of order or more than once, and one system's edge case (a partial refund, a merged customer record) not having a clear rule in the other. A properly built integration verifies webhook signatures, handles duplicate events gracefully, and reconciles periodically rather than trusting real-time sync alone to stay accurate.",
+          "Heavier integration needs, such as several systems, high volume or multiple linked storefronts, are also one of the more common reasons businesses evaluate [[/blogs/shopify-plus-vs-shopify|Shopify Plus]], since its API restore rate is higher than on other plans.",
+          "For related guides, see [[/blogs/ecommerce-api-integration|ecommerce API integration]] and [[/blogs/ecommerce-inventory-management-integration|inventory integration]].",
         ],
         callout: {
           type: "tip",
-          text: "Treat the first month after an integration goes live as a monitoring period, not a finished project — most real issues surface under actual volume, not in testing.",
+          text: "Treat the first month after an integration goes live as a monitoring period, not a finished project. Most real issues surface under actual volume, not in testing.",
         },
+      },
+      {
+        heading: "When not to integrate yet",
+        body: [
+          "If order volume is low and one person reconciles everything in an hour a week, a full ERP integration may cost more to run than it saves. A good spreadsheet process plus Flow alerts can be the right answer for a while. Equally, don't connect a system you're about to replace: integrate the new one once, not both.",
+          "The sequence above also assumes Shopify is your main sales channel. If most orders come from marketplaces or wholesale, the order management or ERP system may need to sit at the centre instead, with Shopify as one channel feeding it.",
+        ],
+      },
+      {
+        heading: "Sources",
+        body: [
+          "[[https://help.shopify.com/en/manual/shopify-flow|Shopify Help Center: Shopify Flow]]; [[https://shopify.dev/docs/apps/build/apis/graphql-admin/rate-limits|Shopify.dev: GraphQL Admin API rate limits]]; [[https://shopify.dev/docs/api/admin-rest|Shopify.dev: REST Admin API (legacy notice)]]; [[https://help.shopify.com/en/manual/taxes/tax-services|Shopify Help Center: tax services]]; [[https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries|Shopify Help Center: Shopify Payments supported countries]].",
+          "Accessed 14 October 2026. Plan features, API limits and country coverage change; check Shopify's current documentation before you design around them.",
+        ],
+      },
+      {
+        heading: "Conclusion",
+        body: [
+          "Integrate in the order your money and stock flow: payments and tax, inventory, fulfilment, finance, then marketing data, with automation last. Use native Shopify features where they fit, design around your plan's limits, and write down which system owns each piece of data before anything is connected. Our [[/services/shopify-development|Shopify development services]] and [[/services/ai-automation|automation work]] cover integration projects end to end.",
+        ],
         cta: {
-          title: "Need to connect Shopify with your existing business systems?",
+          title: "Planning which systems to connect first?",
           description:
-            "We scope and build Shopify integrations — from ERP and CRM connections to fully custom data syncs — starting with what your specific systems actually need.",
+            "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/shopify-development|Shopify integrations]] and [[/services/ai-automation|workflow automation]]. If useful, we can talk through your sequencing worksheet and where a connector, Flow or a custom app fits.",
         },
       },
     ],
@@ -3293,6 +3581,21 @@ posts.push(
   ...buildIntegrationPosts,
   ...ukPublicDigitalPosts,
   ...deliveryWebPosts,
+  ...founderWebPosts,
+  ...founderProductPosts,
+  ...founderCroPosts,
+  ...founderBuildPosts2,
+  ...founderInsightPosts2,
+  ...founderCommercePosts2,
+  ...founderCheckoutPosts2,
+  ...founderBuildPosts3,
+  ...founderGrowthPosts3,
+  ...founderOpsPosts3,
+  ...founderBuildPosts4,
+  ...founderMobilePosts4,
+  ...founderCommercePosts4,
+  ...founderUxPosts4,
+  ...founderCroPosts4,
 );
 
 export function getPostBySlug(slug: string) {

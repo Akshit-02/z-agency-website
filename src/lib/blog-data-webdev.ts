@@ -128,7 +128,7 @@ export const webDevPosts: BlogPost[] = [
       {
         heading: "When Businesses Need Custom Development",
         body: [
-          "Custom development tends to make sense once a site needs functionality a template or builder doesn't support well, needs to scale to meaningful traffic or complexity, needs deep integrations with other business systems, or needs performance and flexibility a general-purpose platform can't reliably deliver. A simple, low-traffic brochure site rarely needs it.",
+          "Custom development tends to make sense once a site needs functionality a template or builder doesn't support well, needs to scale to meaningful traffic or complexity, needs deep integrations with other business systems, or needs performance and flexibility a general-purpose platform can't reliably deliver. A simple, low-traffic brochure site rarely needs it. If the requirements include logins, stored customer data or workflows, you may be commissioning a web application rather than a website; [[/blogs/custom-website-vs-web-application|this website vs web application guide]] helps you tell which.",
         ],
       },
       {
@@ -274,7 +274,7 @@ export const webDevPosts: BlogPost[] = [
       {
         heading: "Authentication and Dashboards",
         body: [
-          "User accounts, login flows, role-based permissions and custom dashboards require real back-end engineering — session management, data modeling, access control — well beyond what a content-only site needs.",
+          "User accounts, login flows, role-based permissions and custom dashboards require real back-end engineering — session management, data modeling, access control — well beyond what a content-only site needs. Once a project is mostly logged-in functionality, it is a web application, and [[/blogs/custom-web-application-development-cost|estimating a custom web application]] works differently from pricing a website.",
         ],
         cta: {
           title: "Not sure what your specific project actually requires?",
@@ -614,97 +614,207 @@ export const webDevPosts: BlogPost[] = [
   {
     slug: "custom-website-vs-website-builder",
     title: "Custom Website Development vs. Website Builders: Which Should You Choose?",
-    seoTitle: "Custom Website vs Website Builder: Which Should You Choose?",
+    seoTitle: "Custom Website (Next.js) vs Website Builder: How to Choose",
     excerpt:
-      "A structured comparison of flexibility, cost, speed, scalability and ownership — and which type of business each option actually fits.",
+      "Custom build such as Next.js, or Wix, Squarespace, Webflow or Framer? Compare fit, exit terms from vendor docs, hosting and a total-cost worksheet.",
     category: "Web Development",
     banner: "fork",
+    sceneKind: "compare",
+    bannerAlt: "A fork in the road between a hosted website builder and a custom-built website, compared on flexibility, ownership, hosting and running cost",
     date: "2026-09-17",
-    readingTime: "11 min read",
+    updated: "2026-10-14",
+    readingTime: "12 min read",
     relatedServiceSlugs: ["website-development"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
+    relatedSlugs: ["nextjs-website-development", "wordpress-vs-nextjs", "custom-website-vs-web-application"],
     faqs: [
-      { q: "Is custom website development always better than a website builder?", a: "No — it depends on the project. A simple site with modest requirements can do well on a builder; a site with custom functionality, heavy integrations, or real scalability needs usually outgrows one." },
-      { q: "Are website builders bad for SEO?", a: "Not inherently, but they offer less technical control — page speed, structured data, and certain technical SEO configurations can be harder or impossible to fully control on some builder platforms." },
-      { q: "Can I start on a website builder and move to custom development later?", a: "Yes, and it's a common, reasonable path — start simple, migrate to custom development once the business outgrows the builder's limitations. Plan for the migration itself to take real effort, not be instant." },
-      { q: "Do website builders scale for high-traffic sites?", a: "Some can, within limits set by the platform. Custom development generally gives more control over scaling strategy, which matters more as traffic and complexity grow." },
-      { q: "Is a website builder cheaper than custom development?", a: "Usually cheaper upfront, yes — but total cost of ownership depends on how much the site needs to do and how it needs to grow, not just the initial build cost." },
-      { q: "Do I own my content on a website builder?", a: "Generally yes, but the site itself is often tied to that platform — migrating away can require significant rebuilding, unlike a custom site you fully control the code for." },
-      { q: "Can website builders handle custom integrations?", a: "Many support common integrations through apps or plugins, but deeply custom or unusual integrations are often easier, and sometimes only possible, with custom development." },
-      { q: "Which is better for a small business with a limited budget?", a: "It depends on the site's actual complexity, not just budget size — a simple small-business site can be well served by a builder; a small business with unusual functionality needs may still be better served by a modest custom build." },
+      { q: "Is custom website development always better than a website builder?", a: "No. It depends on the project. A simple site with modest requirements can do well on a builder; a site with custom functionality, heavy integrations or real scalability needs usually outgrows one." },
+      { q: "Are website builders bad for SEO?", a: "Not inherently. Mainstream builders publish crawlable HTML, and Google does not favour a framework. What builders limit is technical control: some structured data, redirects, rendering and performance settings can be harder or impossible to change, depending on the platform and plan." },
+      { q: "Is Next.js better for SEO than Webflow or Wix?", a: "Not automatically. Google's JavaScript SEO guidance says server-side or pre-rendering is a good idea because it makes a site faster for users and crawlers, and Next.js can pre-render pages. But a builder that serves complete HTML can be crawled perfectly well. Content quality, speed and technical hygiene matter more than the tool." },
+      { q: "Can I start on a website builder and move to custom development later?", a: "Yes, and it is a common, reasonable path. Start simple, then move once the business outgrows the builder. Plan for the migration as a rebuild: export what the platform allows, recreate the rest, and map redirects from every old URL." },
+      { q: "Can I export my Wix site and host it somewhere else?", a: "No. Wix's help centre says a Wix site needs to be hosted and operated on Wix's servers and that its architecture does not support external hosting. You can connect a domain bought elsewhere, but leaving Wix means rebuilding the site." },
+      { q: "Does Webflow's code export include my CMS content?", a: "No. Webflow's help centre says CMS, User Accounts and Ecommerce content and functionality are not included in exported code, and that site search and form handling will not work on exported sites. CMS collections can be exported separately as CSV. Code export is only available on paid Workspace plans." },
+      { q: "Do website builders scale for high-traffic sites?", a: "Many handle traffic well, within the limits of the platform and plan you pay for. Custom development gives more control over scaling strategy, which matters more as traffic and complexity grow." },
+      { q: "Is a website builder cheaper than custom development?", a: "Usually cheaper upfront. Total cost of ownership depends on plan and seat fees over time, add-on apps, staff time, hosting and maintenance for a custom site, and the cost of leaving. Use the worksheet in this article with your own quotes." },
+      { q: "Is hosting a Next.js site free?", a: "Not for a business site on Vercel's free tier: Vercel's pricing page says its Hobby plan is for personal, non-commercial use. A commercial Next.js site needs a paid plan or another host, so treat hosting as a recurring cost." },
+      { q: "Do I own my content on a website builder?", a: "You usually own the content, but how much of it you can take out, and in what form, varies by platform. Check each vendor's export documentation before you commit; the table in this article summarises it." },
+      { q: "Can website builders handle custom integrations?", a: "Many support common integrations through apps, embeds or plugins. Deeply custom or unusual integrations are often easier, and sometimes only possible, with custom development." },
+      { q: "Which is better for a small business with a limited budget?", a: "It depends on what the site has to do, not just budget size. A simple small-business site can be well served by a builder; a small business with unusual functionality needs may still be better served by a modest custom build." },
     ],
     content: [
       {
-        heading: "Quick answer",
+        heading: "Should you build a custom website or use a website builder?",
         body: [
-          "Custom website development and website builders trade off differently across flexibility, cost, speed and scalability — neither is universally better. Website builders favor speed, simplicity and lower upfront cost for straightforward sites; custom development favors flexibility, performance headroom and long-term scalability for sites with real custom functionality or growth needs. The right choice depends on your specific requirements, not company size or budget alone.",
+          "**Use a website builder (Wix, Squarespace, Webflow, Framer) when the site is mainly marketing pages and content that non-developers edit weekly, the features you need already exist on the platform, and you accept that leaving later means a rebuild. Choose a custom build, such as a Next.js site, when the site needs logic or integrations the platform cannot support, content or traffic will outgrow plan limits, or you need control over hosting, data and code.** Neither is better in general; the right answer depends on your requirements and how long you expect to keep the site.",
+          "This guide is for founders and marketing leads choosing a build route. It covers what each option is, what you can take with you if you leave (from each vendor's own help documentation), where Next.js fits, what Google actually says about JavaScript and search, and a worksheet for comparing total cost of ownership. If what you need has logins, dashboards or workflows, read [[/blogs/custom-website-vs-web-application|custom website vs web application]] first, because that is a different decision.",
         ],
       },
       {
-        heading: "What Each Option Actually Is",
-        body: [
-          "A website builder is a platform (often drag-and-drop) that handles hosting, a visual editor, and a library of templates and apps — the trade-off is working within what the platform supports. Custom development builds a site's code, structure and functionality specifically for the project, giving full control at the cost of more upfront engineering work.",
+        heading: "Key takeaways",
+        body: [],
+        checklist: [
+          "Builders are a sound choice for many marketing sites. Do not apologise for picking one.",
+          "Exit terms differ widely: Wix sites stay on Wix, Squarespace exports partial content, Webflow exports code without CMS, ecommerce or form handling.",
+          "A custom Next.js site is portable code, but hosting and maintenance are ongoing costs you own.",
+          "Google recommends server-side or pre-rendering for speed and crawlability; that does not mean one tool ranks better.",
+          "Compare total cost over several years, including staff time and the cost of leaving, not just the first invoice.",
         ],
       },
       {
-        heading: "The Comparison",
+        heading: "What each option actually is",
+        body: [
+          "A **website builder** is a hosted platform with a visual editor, templates, hosting and a library of apps or integrations. You work within what the platform supports, and the platform handles servers, updates and much of the security.",
+          "**Custom development** means the site's code, structure and functionality are written for the project. In practice most custom marketing sites today are built with a framework rather than from scratch. **Next.js** is one common choice: a React framework that can pre-render pages as HTML, run server-side logic and connect to a headless CMS so editors still get a friendly interface. The [[/blogs/nextjs-website-development|Next.js website development guide]] explains how such builds work, and if you are also weighing WordPress, see [[/blogs/wordpress-vs-nextjs|WordPress vs Next.js]].",
+          "Between the two sit hybrids: a builder for the marketing site plus a custom application on a subdomain, or a headless CMS with a custom front end. These are often the most practical answer when marketing and product needs differ.",
+        ],
+      },
+      {
+        heading: "The comparison",
         body: [],
         table: {
-          headers: ["Factor", "Website builder", "Custom development"],
+          headers: ["Factor", "Website builder", "Custom development (e.g. Next.js)"],
           rows: [
-            ["Flexibility", "Limited to what the platform and its apps support", "Effectively unlimited — built for the specific requirement"],
+            ["Flexibility", "Limited to what the platform and its apps support", "Built for the specific requirement"],
             ["Upfront cost", "Generally lower", "Generally higher"],
-            ["Speed to launch", "Faster for simple sites", "Slower, but scoped to actual complexity"],
-            ["Scalability", "Bounded by the platform's architecture", "Controlled by your own architecture decisions"],
-            ["Customization", "Constrained by templates and available apps", "Built to the exact specification"],
-            ["Integrations", "Common integrations often supported via apps", "Any integration is possible, at the cost of build time"],
-            ["Ownership", "Content is usually portable; the site itself is platform-tied", "Full ownership of code and architecture"],
-            ["Maintenance", "Platform handles core updates", "Requires an ongoing maintenance plan"],
+            ["Speed to launch", "Faster for simple sites", "Slower, scoped to actual complexity"],
+            ["Editing", "Visual editor built in", "Depends on the CMS chosen; needs set-up"],
+            ["Scalability", "Bounded by the platform's architecture and plan limits", "Controlled by your own architecture decisions"],
+            ["Integrations", "Common integrations via apps or embeds", "Any integration is possible, at the cost of build time"],
+            ["Ownership and exit", "Content portability varies by vendor (see below)", "You hold the code and choose the host"],
+            ["Hosting", "Included in the plan, on the vendor's servers", "A separate, ongoing cost and decision"],
+            ["Maintenance", "Platform handles core updates", "Needs an ongoing maintenance plan"],
             ["Performance", "Bounded by platform infrastructure", "Fully controllable, but requires deliberate work"],
-            ["SEO control", "Good for basics; limited for advanced technical SEO", "Full technical control"],
+            ["Technical SEO control", "Good for basics; some settings locked", "Full control, if someone does the work"],
             ["Security", "Platform manages core security", "Requires deliberate implementation and upkeep"],
           ],
         },
       },
       {
-        heading: "When a Website Builder Fits",
+        heading: "What can you take with you if you leave?",
         body: [
-          "A straightforward brochure or portfolio site, modest traffic expectations, a small team without dedicated technical resources, and a need to launch quickly with a limited budget — this is where builders consistently make sense, without needing to apologize for the choice.",
+          "Exit terms are the part of this decision most comparisons skip. The table summarises each vendor's own help documentation as checked on 14 October 2026. Vendors change these terms, so re-check the linked page before you commit. On Wix the answer is short: its help centre says a site \"needs to be hosted and operated on Wix's servers\" because the \"SaaS architecture does not support external hosting\" ([[https://support.wix.com/en/article/exporting-or-embedding-your-wix-site-elsewhere|Wix Help Center]]).",
         ],
-      },
-      {
-        heading: "When Custom Development Fits",
-        body: [
-          "Custom functionality the platform doesn't support well, meaningful traffic or growth expectations, deep integrations with other business systems, strict performance or security requirements, or a product (not just a marketing site) that needs to evolve significantly over time — these are the conditions where custom development's upfront cost is justified.",
-        ],
-        visual: { variant: "funnel", accent: "orange", caption: "The right choice narrows as requirements get more specific — a generic site fits a builder; a specific, growing product usually doesn't." },
-        cta: {
-          title: "Not sure which fits your project?",
-          description: "ZSpace Labs can review your requirements and give you an honest read on whether custom development is actually justified for your specific site.",
+        table: {
+          headers: ["Platform", "What you can take out", "What does not come with you", "Where the site must be hosted"],
+          rows: [
+            ["**Wix**", "No site export is described. You can connect a domain bought elsewhere.", "The site itself; leaving means a rebuild", "On Wix's servers only"],
+            ["**Squarespace**", "A WordPress-format .xml file with layout pages, one blog page with its posts, and text and image blocks", "Store, portfolio and several other page types; more than one blog; audio, product and video blocks; custom CSS; style settings; drafts ([[https://support.squarespace.com/hc/en-us/articles/206566687-Exporting-your-site|Squarespace Help Center]])", "On Squarespace; the export is content only"],
+            ["**Webflow**", "HTML, CSS, JavaScript and assets, on paid Workspace plans only (not Site plans). CMS, ecommerce collections and user accounts can be exported separately as CSV.", "CMS, User Accounts and Ecommerce content and functionality; form submission processing; site search; password protection; localised content ([[https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code|Webflow Help Center]])", "Anywhere for the exported static code; dynamic features need Webflow hosting or a replacement"],
+            ["**Framer**", "Unclear: Framer's help centre gives conflicting answers on exporting a site for self-hosting", "Confirm with Framer before relying on either answer", "Confirm with Framer"],
+            ["**Custom (e.g. Next.js)**", "The full codebase, plus content in whichever CMS or database you chose", "Anything locked into a specific host's proprietary services, if you use them", "Any host that supports your deployment option ([[https://nextjs.org/docs/app/getting-started/deploying|Next.js docs]])"],
+          ],
+        },
+        callout: {
+          type: "tip",
+          text: "Before you sign up anywhere, run a test export on a trial site with a few CMS items, a form and a blog post. Ten minutes with the export tells you more than the marketing page does.",
         },
       },
       {
-        heading: "Migrating From a Builder to Custom Development",
+        heading: "Where Next.js fits, and what hosting costs you",
         body: [
-          "This is a common, reasonable growth path — starting on a builder to validate an idea or launch quickly, then migrating to custom development once the business outgrows the platform's limitations. Plan for the migration to involve real rebuilding effort, including content migration and redirect planning to protect existing SEO.",
+          "Next.js is the \"custom\" option in this comparison, not a builder. A developer writes the site; editors usually work in a headless CMS connected to it. You own the code and can move it between hosts, which is the main difference from a builder's exit terms.",
+          "That portability has conditions. The Next.js documentation lists four ways to deploy: a Node.js server or Docker container (both support all features), a static export (limited, because features that need a server do not work), or a platform adapter, where support varies ([[https://nextjs.org/docs/app/getting-started/deploying|Next.js: Deploying]]). If your site uses server features, your host must support them.",
+          "**Hosting is an ongoing cost, not a free extra.** Vercel, the company behind Next.js, offers a free Hobby plan, but its pricing page states that \"Our Hobby plan is for personal, non-commercial use\" ([[https://vercel.com/pricing|Vercel pricing]], vendor page). A business website needs a paid plan there, or another host. Add a CMS subscription if you use a hosted one, plus monitoring, backups and someone responsible for dependency and security updates. On a builder these are mostly bundled into the plan price.",
         ],
       },
       {
-        heading: "A Practical Way to Decide",
+        heading: "What Google says about JavaScript, rendering and search",
         body: [
-          "Ask whether the site needs functionality beyond what a template and its available apps support, whether growth or traffic projections meaningfully stress the platform's limits, and whether integrations with other business systems are deep or unusual. If the honest answer to more than one of these is yes, custom development is worth strongly considering.",
+          "A common claim is that Next.js \"ranks better\" than a builder. Google's own guidance does not say that. Its JavaScript SEO basics page explains that Google processes JavaScript web apps in three phases (crawling, rendering and indexing), and that \"server-side or pre-rendering is still a great idea because it makes your website faster for users and crawlers, and not all bots can run JavaScript\" ([[https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics|Google Search Central]]).",
+          "In plain English: pages that arrive as complete HTML are easier for every crawler and quicker for people. Next.js can pre-render pages, which helps. Mainstream builders also serve HTML. So rendering is a reason to avoid a purely client-side app for public pages, not a reason to pick Next.js over Webflow. The real search differences are control over technical details (redirects, structured data, page speed work) and whether anyone uses that control.",
         ],
-        table: webDevFrameworkTable,
-        cta: {
-          title: "Want an honest assessment before you commit either way?",
-          description: "See the [[/blogs/website-development-guide|complete website development guide]] for the full picture of what custom development actually involves. Learn more about our [[/services/website-development|Next.js and React development work]].",
+      },
+      {
+        heading: "When a website builder fits",
+        body: [
+          "A brochure, portfolio or campaign site; modest traffic and content volume within the plan's limits; a small team without developers; marketers who need to edit and publish without a release process; and a need to launch quickly. Here builders consistently make sense.",
+          "A builder is also the honest answer when nobody will maintain a custom site after launch. An unmaintained custom site is worse than a well-run builder site.",
+        ],
+      },
+      {
+        heading: "When custom development fits",
+        body: [
+          "Functionality the platform does not support well; content, page or traffic volumes that will push past plan limits; deep integrations with a CRM, ERP or product database; strict performance, security or data-location requirements; or a site that is becoming part of the product. These are the conditions where custom development's upfront cost is justified.",
+          "Custom development is **not** the right call when the main motivation is that it sounds more serious, when there is no budget or owner for maintenance, or when the requirements are not yet known. In those cases, launch on a builder, learn, and decide later with evidence. If you do go custom, it helps to see what a [[/services/website-development|custom Next.js and React website build]] involves before asking for quotes.",
+        ],
+        visual: { variant: "funnel", accent: "orange", caption: "The right choice narrows as requirements get more specific: a generic site fits a builder; a specific, growing product usually does not." },
+      },
+      {
+        heading: "Total cost of ownership worksheet",
+        body: [
+          "Compare options over the period you expect to keep the site, typically three years. Fill in each line from your own quotes and the vendor's current pricing page for your region. Leave nothing blank: a zero should be a decision, not an omission.",
+        ],
+        table: {
+          headers: ["Cost line", "Website builder", "Custom build (e.g. Next.js)", "Your figure"],
+          rows: [
+            ["Initial design and build", "Template set-up or designer time", "Design and development quote", ""],
+            ["Platform or plan fees", "Site plan, per year, at the tier you will actually need", "Usually none for the framework itself", ""],
+            ["Editor seats", "Extra editor or collaborator seats, if charged", "CMS seats, if your CMS charges per user", ""],
+            ["Hosting", "Included in plan", "Paid hosting plan (commercial use)", ""],
+            ["CMS", "Included, within item and collection limits", "Headless CMS subscription or self-hosted CMS", ""],
+            ["Apps, plugins and integrations", "Monthly add-on apps and connectors", "Build time for each integration", ""],
+            ["Forms, search and email", "Often built in or add-ons", "Third-party services or custom code", ""],
+            ["Maintenance and security", "Mostly the platform's job", "Retainer or in-house time for updates", ""],
+            ["Staff time to publish changes", "Hours per month in the visual editor", "Hours per month, plus developer time for layout changes", ""],
+            ["Performance and SEO work", "Within what the platform allows", "Developer time", ""],
+            ["Cost of leaving", "Rebuild plus content migration (see export table)", "Moving hosts, if needed", ""],
+            ["**Total over your horizon**", "", "", ""],
+          ],
         },
+        callout: {
+          type: "note",
+          text: "Hypothetical example: a consultancy with 20 service pages and a blog edited weekly by two marketers fills in the worksheet. The builder wins on staff time and launch speed, and the plan limits fit. It chooses the builder, documents an exit plan, and diarises a review when it starts planning a client portal.",
+        },
+      },
+      {
+        heading: "A practical way to decide",
+        body: [
+          "Answer these five questions honestly. If two or more point to custom, a custom build is worth serious consideration; if none do, a builder is probably the better use of money.",
+        ],
+        checklist: [
+          "Do you need logged-in features, user data or business logic? If yes, look at custom, or a builder plus a separate application.",
+          "Will page, CMS item or locale counts exceed the plan you can afford? Check the vendor's current limits.",
+          "Who edits the site weekly, and do they need to work without a developer? If so, a builder or a well-chosen headless CMS.",
+          "Which integrations are essential, and does the platform support them natively?",
+          "What is your exit plan? Read the export table above for the platform you are considering.",
+        ],
+      },
+      {
+        heading: "Moving from a builder to custom development",
+        body: [
+          "This is a common growth path: start on a builder to launch quickly, then move once the business outgrows it. Treat the move as a rebuild. Export whatever the platform allows, recreate what it does not (forms, search, ecommerce, gated pages), and plan redirects from every old URL to protect search visibility. The [[/blogs/website-migration-guide|website migration guide]] covers the steps.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        body: [],
+        checklist: [
+          "Choosing on first-year cost alone and ignoring plan upgrades, seats and add-ons over time.",
+          "Assuming \"export\" means a working site elsewhere. Read what is excluded.",
+          "Launching a commercial Next.js site on a free, non-commercial hosting tier.",
+          "Building custom with no owner for updates after launch.",
+          "Picking a framework because someone said it ranks better.",
+          "Forgetting that marketers need to publish without waiting for a developer.",
+        ],
+      },
+      {
+        heading: "Sources",
+        body: [
+          "Exit terms: [[https://support.wix.com/en/article/exporting-or-embedding-your-wix-site-elsewhere|Wix: exporting or embedding your Wix site elsewhere]]; [[https://support.squarespace.com/hc/en-us/articles/206566687-Exporting-your-site|Squarespace: exporting your site]]; [[https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code|Webflow: how do I export my Webflow site code?]]; [[https://www.framer.com/help/articles/can-i-export-my-website-to-html-and-self-host-it/|Framer: can I export my website to HTML and self-host it?]] and [[https://www.framer.com/help/articles/porting-your-data-from-framer/|Framer: porting your data from Framer]] (these two Framer articles conflict).",
+          "Next.js and hosting: [[https://nextjs.org/docs/app/getting-started/deploying|Next.js documentation: Deploying]]; [[https://vercel.com/pricing|Vercel pricing]] (vendor page).",
+          "Search: [[https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics|Google Search Central: understand JavaScript SEO basics]].",
+          "Accessed 14 October 2026. Vendor plans, limits and export features change; check the current pages before deciding.",
+        ],
       },
       {
         heading: "Conclusion",
         body: [
-          "Neither option is a universal winner — a website builder is a reasonable, sensible choice for a straightforward site, and custom development is justified once real complexity, growth or integration needs outgrow what a platform can support. Match the choice to your actual requirements, not to which option sounds more impressive. For bespoke software beyond websites, see [[/blogs/custom-software-development-australia|custom software development in Australia]].",
+          "Neither option is a universal winner. A builder is a sensible choice for a straightforward marketing site that non-developers run; a custom build such as Next.js is justified once logic, integrations, scale or ownership needs outgrow what a platform supports. Before deciding, read the export terms for the platform you are considering, fill in the cost worksheet with real quotes, and decide who will maintain the site. For the wider build process, see the [[/blogs/website-development-guide|complete website development guide]].",
         ],
+        cta: {
+          title: "Want a second opinion before you commit?",
+          description: "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/website-development|website development]], including Next.js builds. If useful, we can look at your sitemap and integrations list and tell you whether a builder would do the job.",
+        },
       },
     ],
   },

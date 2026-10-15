@@ -415,8 +415,8 @@ export const commercePosts: BlogPost[] = [
       { q: "What is Shopify Hydrogen?", a: "Hydrogen is Shopify's framework for building headless storefronts. Shopify describes Hydrogen projects as React Router apps preconfigured with Shopify-specific components, utilities and patterns for working with Shopify's APIs." },
       { q: "What is Oxygen?", a: "Oxygen is Shopify's global hosting platform for Hydrogen storefronts, running at the edge with separate deployment environments so changes can be previewed before production." },
       { q: "Does Oxygen cost extra?", a: "Shopify's documentation says Oxygen is available at no extra charge on paid Shopify plans. Development, maintenance and any third-party services are still your costs." },
-      { q: "Is Hydrogen built on Remix?", a: "Hydrogen was originally built on Remix. Current documentation describes Hydrogen projects as React Router apps, following Remix's merge into React Router. Older articles may still refer to Remix." },
-      { q: "Do I need Shopify Plus to use Hydrogen?", a: "No. Oxygen is available on paid plans. Shopify's Plus plan page lists up to 25 Hydrogen storefronts for Plus; check current limits for your plan." },
+      { q: "Is Hydrogen built on Remix?", a: "Hydrogen was originally built on Remix. Documentation for Hydrogen 2026-04 and earlier describes Hydrogen projects as React Router apps, following Remix's merge into React Router. Older articles may still refer to Remix. Since Hydrogen 2026-10 (14 October 2026), Shopify describes Hydrogen as a framework-agnostic JavaScript library with starters for React Router and Next.js, and existing Hydrogen storefronts keep working as they do now ([[https://shopify.dev/changelog/blog/hydrogen-2026-10-is-now-available|Shopify changelog: Hydrogen 2026-10]])." },
+      { q: "Do I need Shopify Plus to use Hydrogen?", a: "No. Oxygen is available at no extra charge on paid plans, including Starter, but not on Agentic plans. What differs by plan is the number of public Oxygen environments: 25 on Shopify Plus and 1 on other paid plans ([[https://shopify.dev/docs/storefronts/hydrogen/deploy/oxygen/environments|Shopify: Oxygen environments]]). Environments are private by default, and limits can change." },
       { q: "Is Hydrogen faster than a Liquid theme?", a: "It can be, because you control rendering, caching and what JavaScript ships. But a well-optimized Liquid theme is fast too, and a poorly built Hydrogen site can be slow. Speed comes from the implementation, not the framework alone." },
       { q: "Do Shopify apps work with Hydrogen?", a: "Apps that manage data in the admin generally still work. Apps that inject storefront features through theme app blocks don't appear automatically; you integrate them through their APIs or SDKs, if they offer them." },
       { q: "Can my marketing team edit a Hydrogen store?", a: "Not through the theme editor. Teams usually edit content in a headless CMS or in Shopify metaobjects, with components built to render it. Plan this before building." },
@@ -585,7 +585,7 @@ export const commercePosts: BlogPost[] = [
       {
         heading: "Hydrogen and Shopify Plans",
         body: [
-          "Hydrogen and Oxygen are available beyond Plus, and Shopify's Plus plan page lists up to 25 Hydrogen storefronts on Plus. Plan choice affects checkout customization, B2B features and other capabilities more than Hydrogen itself. Decide on Hydrogen and on Plus separately. See [[/blogs/shopify-plus-development|Shopify Plus development]] and [[/blogs/shopify-plus-vs-shopify|Shopify Plus vs Shopify]].",
+          "Hydrogen and Oxygen are available beyond Plus. The plan difference is public Oxygen environments: 25 on Shopify Plus and 1 on other paid plans ([[https://shopify.dev/docs/storefronts/hydrogen/deploy/oxygen/environments|Shopify: Oxygen environments]]). Plan choice affects checkout customization, B2B features and other capabilities more than Hydrogen itself. Decide on Hydrogen and on Plus separately. See [[/blogs/shopify-plus-development|Shopify Plus development]] and [[/blogs/shopify-plus-vs-shopify|Shopify Plus vs Shopify]].",
         ],
       },
       {
@@ -610,18 +610,28 @@ export const commercePosts: BlogPost[] = [
   // ---------------------------------------------- 69 · REDESIGN VS REBUILD
   {
     slug: "shopify-redesign-vs-rebuild",
-    title: "Shopify Website Redesign vs Rebuild: Which Do You Need?",
+    title: "Shopify Redesign, Rebuild or Another App: Which Does Your Store Need?",
+    seoTitle: "Shopify Redesign vs Rebuild vs More Apps: How to Decide",
     excerpt:
-      "How to decide between redesigning your Shopify store and rebuilding it: the signals, what each changes, risks, and a decision framework.",
+      "When to add or replace an app, redesign or rebuild your Shopify store: a decision framework, an app stack table and the 2026–27 platform changes.",
     category: "Shopify & Ecommerce",
     banner: "redesignrebuild",
+    sceneKind: "shopify",
     bannerAlt:
       "Comparison of a Shopify redesign and a rebuild across theme, templates, catalog and data, apps, URLs and custom code.",
     date: "2026-09-29",
+    updated: "2026-10-14",
     readingTime: "11 min read",
     relatedServiceSlugs: ["shopify-development", "ui-ux-design", "cro-audit"],
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer"],
+    relatedSlugs: [
+      "shopify-speed-checklist-before-you-add-another-app",
+      "shopify-store-redesign-guide",
+      "shopify-core-web-vitals-performance-guide",
+    ],
     faqs: [
+      { q: "Should I install another app or redesign my Shopify store?", a: "Install or swap an app when the gap is one self-contained feature and your current pages otherwise work. Look at a redesign of the affected templates when you keep adding apps to patch the same pages, especially the product page and cart, and each one adds script, layout shift or visual clutter." },
+      { q: "Do Shopify's script tag changes affect my store?", a: "They may. Shopify's changelog says script tag creation and updates return errors from 1 October 2026, and storefront script tags stop being injected on 1 March 2027. Ask each app vendor whether their app still relies on script tags and what replaces it. Dates can change, so check the changelog." },
       { q: "What's the difference between a Shopify redesign and a rebuild?", a: "A redesign changes what shoppers see and how pages are organized while keeping most of the underlying theme, data and apps. A rebuild replaces the theme architecture, custom code, data structure or integrations because the foundation is the problem." },
       { q: "Is a new theme a redesign or a rebuild?", a: "It depends on what else changes. Moving to a new theme with the same catalog, URLs and apps is a redesign. Moving to a new theme while restructuring products, collections, metafields and integrations is closer to a rebuild." },
       { q: "When is a rebuild necessary?", a: "When years of customizations, app residue and workarounds make changes slow and risky, when the catalog model no longer fits the business, or when the theme can't support required features without being rewritten." },
@@ -638,17 +648,30 @@ export const commercePosts: BlogPost[] = [
         heading: "Quick answer",
         body: [
           "Redesign your Shopify store when the foundation is healthy but the experience is dated, confusing or not converting: you keep the catalog, URLs, most apps and possibly the theme, and change design, layout and content. Rebuild when the foundation is the problem: heavy customizations make every change slow and risky, the catalog model no longer fits, or the theme can't support what you need without being rewritten. Decide by diagnosing why the store underperforms, not by how old it looks, and check whether targeted fixes would solve it first.",
+          "Adding or replacing an app is the right answer when the gap is one self-contained feature. It stops being the right answer when you keep installing apps to patch the same templates. At that point the product page or cart needs redesigning, not another widget.",
         ],
       },
       {
-        heading: "Three Options, Not Two",
+        heading: "Key takeaways",
+        body: [],
+        checklist: [
+          "There are four options: optimize, add or replace an app, redesign, or rebuild.",
+          "An app fits a single missing feature. Several apps patching one template point to a redesign of that template.",
+          "Sort every installed app into keep, replace with native, absorb into the theme, or remove.",
+          "Shopify Scripts stopped running on 30 June 2026, and storefront script tags stop on 1 March 2027. Both force an app review anyway.",
+          "Rebuild only when the theme, catalog model or integrations block progress.",
+        ],
+      },
+      {
+        heading: "Four Options, Not Two",
         body: [
-          "Before choosing between redesign and rebuild, rule out the cheaper option: {{b:optimization}}. Many stores that feel like they need a redesign actually have a few specific problems, such as a weak product page, slow apps or confusing shipping costs, that can be fixed in place.",
+          "Before choosing between redesign and rebuild, rule out the cheaper options: {{b:optimization}}, or adding or replacing a single app. Many stores that feel like they need a redesign actually have a few specific problems, such as a weak product page, slow apps or confusing shipping costs, that can be fixed in place.",
         ],
         table: {
           headers: ["Option", "What changes", "Choose it when"],
           rows: [
             ["Optimize", "Specific pages, elements or settings", "Problems are identifiable and limited"],
+            ["Add or replace an app", "One feature, ideally delivered through an app block", "The gap is self-contained and no native feature covers it"],
             ["Redesign", "Design, layout, navigation, content; theme may change", "Experience is the problem, foundation is sound"],
             ["Rebuild", "Theme architecture, custom code, data model, integrations", "The foundation blocks progress"],
           ],
@@ -665,7 +688,7 @@ export const commercePosts: BlogPost[] = [
         body: [],
         checklist: [
           "The brand has moved on and the store no longer reflects it",
-          "Research shows usability problems in navigation, product pages or mobile",
+          "Your own user research or testing shows usability problems in navigation, product pages or mobile",
           "The theme is maintainable and can be updated",
           "The catalog structure and collections still fit how customers shop",
           "Apps are mostly the right ones",
@@ -688,13 +711,15 @@ export const commercePosts: BlogPost[] = [
       {
         heading: "A Decision Framework",
         body: [
-          "Work through these questions in order. The first “no” usually tells you the scope.",
+          "Work through these questions in order and stop at the first answer that names an action. That action is usually the scope.",
         ],
         table: {
           headers: ["Question", "If yes", "If no"],
           rows: [
             ["Do we know why the store underperforms?", "Continue", "Audit first"],
             ["Can targeted fixes solve it?", "Optimize", "Continue"],
+            ["Is the gap one self-contained feature that no native Shopify or theme feature covers?", "Add or replace an app (after auditing the apps you have)", "Continue"],
+            ["Are we patching the same templates with app after app?", "Redesign those templates", "Continue"],
             ["Is the theme maintainable and updatable?", "Continue", "Rebuild the theme"],
             ["Does the catalog model fit how we sell?", "Continue", "Restructure data (rebuild)"],
             ["Are integrations reliable and documented?", "Redesign", "Rebuild integrations"],
@@ -703,6 +728,44 @@ export const commercePosts: BlogPost[] = [
         callout: {
           type: "tip",
           text: "Start with evidence. An [[/blogs/ecommerce-cro-audit|ecommerce CRO audit]] or a [[/blogs/ux-audit|UX audit]] tells you whether the problem is the experience, the foundation or neither.",
+        },
+      },
+      {
+        heading: "When the Fix Is a Redesign, Not Another App",
+        body: [
+          "Apps are the quickest way to add a feature to a Shopify store, which is why stacks grow. Each app can be a sensible decision on its own and still leave the store worse overall: more scripts on every page, widgets that shift the layout as they load, and product pages that read like a collection of badges. Adding one more app rarely fixes that, because the problem is the accumulation.",
+          "Sort every installed app into one of the four actions in the table below: keep, replace with native, absorb into the theme, or remove. Go through them one at a time with whoever owns the theme, and record the template each app affects. Then read the results against three triggers. For the step-by-step audit, including how to check what each app loads and how to remove one safely, use our [[/blogs/shopify-speed-checklist-before-you-add-another-app|checklist for auditing installed apps before adding another]].",
+        ],
+        table: {
+          headers: ["Action", "Choose it when", "What it means in practice"],
+          rows: [
+            ["Keep", "The app is business-critical, has no native equivalent, loads only where it is needed and is added through app blocks or app embeds", "Leave it, but note it in your app register with an owner and a review date"],
+            ["Replace with native", "It duplicates something Shopify or your theme already does, such as an automation Shopify Flow can run or a section your theme already includes", "Rebuild the setting natively, test it on a duplicate theme, then uninstall the app"],
+            ["Absorb into the theme", "It renders mostly static content, such as trust badges, size-guide tabs, announcement bars or delivery messages, that a theme section or block could show from metafields", "Build the section or block once, remove the app and its script"],
+            ["Remove", "Nobody uses it, it overlaps with another app, or it was a trial that was never switched off", "Uninstall it and clean up any code it left in the theme"],
+          ],
+        },
+        checklist: [
+          "Redesign trigger: as a rule of thumb, if three or more apps on the same template (usually the product page or cart) land in “absorb into the theme”, redesign that template rather than replacing the apps one by one.",
+          "Rebuild trigger: if apps are hard to remove because their code is woven through a heavily edited theme, the theme health check below matters more than the app list.",
+          "App trigger: if the audit leaves one genuine gap that no native feature covers, adding a well-built app is the right call.",
+        ],
+        callout: {
+          type: "note",
+          text: "Apps built with theme app extensions add content through app blocks and app embeds and don't edit theme code ([[https://shopify.dev/docs/apps/build/online-store/theme-app-extensions|Shopify.dev]]). Older apps may have written code into the theme, and Shopify notes that some of it isn't removed automatically on uninstall ([[https://help.shopify.com/en/manual/apps/uninstalling-apps|Shopify Help Center]]).",
+        },
+      },
+      {
+        heading: "Platform Changes That Force an App Review in 2026–27",
+        body: [
+          "Two Shopify deprecations mean many stores have to review their app stack whether or not they planned to.",
+          "**Shopify Scripts have stopped.** Shopify's changelog says editing and publishing Scripts ended on 15 April 2026 and all Scripts stopped running on 30 June 2026, with Shopify Functions as the replacement ([[https://shopify.dev/changelog/shopify-scripts-will-be-deprecated-on-june-30-2026|Shopify changelog]]). If discount, shipping or payment logic used to live in Scripts, confirm what replaced it and that it still behaves as intended.",
+          "**Storefront script tags are ending.** According to Shopify's changelog, from 1 October 2026 apps can no longer create or update script tags, and on 1 March 2027 Shopify stops injecting script tags into storefronts on all stores. Apps are expected to move to app embed blocks, or to web pixels for analytics and conversion tracking ([[https://shopify.dev/changelog/online-store-script-tags-deprecation|Shopify changelog]]). Script tags on the Order status page already stopped running on 28 August 2025 for Plus stores and 26 August 2026 for all other stores ([[https://shopify.dev/docs/apps/build/online-store/blocking-script-tags|Shopify.dev]]).",
+          "Use the deadline as the prompt for the audit above. Ask each vendor whether their app still relies on script tags and when it will move. An app that won't be updated goes straight into replace or remove. If several affected apps sit on the same template, plan the replacement together with a redesign of that template, so you don't rebuild the same page twice.",
+        ],
+        callout: {
+          type: "tip",
+          text: "These dates come from Shopify's developer changelog, checked on 14 October 2026. Shopify can change timelines, so confirm them before you plan around them.",
         },
       },
       {
@@ -749,6 +812,7 @@ export const commercePosts: BlogPost[] = [
           "**Dated look, healthy theme.** A home-goods store's brand was refreshed, but the store still uses an older version of a maintained theme with light customization. Products use variants and metafields sensibly, and apps are few. Analytics show mobile product pages underperform. Verdict: redesign, likely on the updated theme, focusing on mobile product pages, navigation and brand.",
           "**Years of patches.** An apparel store has had several agencies. The theme is heavily modified and can't be updated, leftover scripts from removed apps still load, and colours are separate products linked by tags, so filters don't work properly. Verdict: rebuild, including a catalog restructure into proper variants or combined listings, with careful redirects.",
           "**One weak step.** A supplements brand wants a redesign because sales are flat, but the funnel shows a sharp drop between cart and checkout on mobile after a shipping change. Verdict: neither. Fix shipping-cost communication and the cart, then reassess.",
+          "**App on app.** A skincare store's product page carries a reviews app, a badge app, a delivery-date app, a size-and-ingredients tab app and a sticky add-to-cart app, and the team is considering a sixth for bundles. The audit keeps reviews, marks badges, delivery messaging and tabs as “absorb into the theme”, and finds one of the apps still uses a script tag. Verdict: redesign the product page template with those elements built in, then decide on bundles against the cleaner page. The rest of the store stays as it is.",
         ],
       },
       {
@@ -769,9 +833,16 @@ export const commercePosts: BlogPost[] = [
         },
       },
       {
+        heading: "Sources",
+        body: [
+          "[[https://shopify.dev/changelog/shopify-scripts-will-be-deprecated-on-june-30-2026|Shopify changelog: Shopify Scripts will be deprecated on June 30, 2026]]; [[https://shopify.dev/changelog/online-store-script-tags-deprecation|Shopify changelog: online store script tags deprecation]]; [[https://shopify.dev/docs/apps/build/online-store/blocking-script-tags|Shopify.dev: script tags on the Order status page]]; [[https://shopify.dev/docs/apps/build/online-store/theme-app-extensions|Shopify.dev: theme app extensions]]; [[https://help.shopify.com/en/manual/apps/uninstalling-apps|Shopify Help Center: uninstalling apps]].",
+          "Accessed 14 October 2026. Platform deadlines can change; check the changelog before planning around them.",
+        ],
+      },
+      {
         heading: "Conclusion",
         body: [
-          "Redesign when the experience is the problem and the foundation is sound. Rebuild when the foundation stops you improving the experience. Optimize when the problems are specific. Whatever you choose, start from evidence and measure against a baseline. For platform-independent guidance, see [[/blogs/ecommerce-website-redesign|ecommerce website redesign]] and [[/blogs/website-redesign-vs-rebuild|website redesign vs rebuild]].",
+          "Redesign when the experience is the problem and the foundation is sound. Rebuild when the foundation stops you improving the experience. Optimize when the problems are specific, and add or replace an app only when one self-contained feature is missing. If the app audit keeps pointing at the same templates, that is your redesign scope. Whatever you choose, start from evidence and measure against a baseline. For platform-independent guidance, see [[/blogs/ecommerce-website-redesign|ecommerce website redesign]] and [[/blogs/website-redesign-vs-rebuild|website redesign vs rebuild]].",
         ],
       },
     ],

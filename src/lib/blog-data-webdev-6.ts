@@ -158,7 +158,7 @@ export const webDevPosts6: BlogPost[] = [
       {
         heading: "Forms",
         body: [
-          "Ask only for what's genuinely needed to qualify and follow up effectively at this stage — an unnecessarily long form at the first point of contact discourages visitors who would have converted with a simpler initial ask. Additional information can often be gathered later in the relationship.",
+          "Ask only for what's genuinely needed to qualify and follow up effectively at this stage — an unnecessarily long form at the first point of contact discourages visitors who would have converted with a simpler initial ask. Additional information can often be gathered later in the relationship. For a field-by-field approach, see [[/blogs/improve-website-enquiry-form-conversions|improving enquiry forms without attracting low-quality leads]].",
         ],
         visual: { variant: "grid", accent: "orange", caption: "Every additional form field is a small, cumulative chance for a genuinely interested visitor to abandon before submitting." },
       },
@@ -219,114 +219,198 @@ export const webDevPosts6: BlogPost[] = [
   // -------------------------------------------------------- LANDING PAGES
   {
     slug: "landing-page-development",
-    title: "Landing Page Development: What Makes a High-Converting Landing Page?",
+    title: "Landing Page Development: How to Match Search Intent and Convert the Right Visitors",
+    seoTitle: "Landing Page Development: Match Intent, Convert Better",
     excerpt:
-      "The anatomy of a landing page that actually converts — above-the-fold, value proposition, proof, objections, forms and performance.",
+      "How to build a landing page that fits search intent: an intent-to-CTA matrix, message match, paid vs organic differences and the doorway page risk.",
     category: "Web Development",
     banner: "homepageanatomy",
+    sceneKind: "landing",
+    bannerAlt: "A landing page laid out from top to bottom: a headline that repeats the visitor's search, a single call to action, proof, answers to objections and a short form",
     date: "2026-09-24",
+    updated: "2026-10-14",
     readingTime: "11 min read",
     relatedServiceSlugs: ["website-development", "cro-audit", "ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "b2b-enterprise"],
+    relatedSlugs: ["shopify-landing-page-optimization", "improve-website-enquiry-form-conversions", "measure-multi-channel-website-conversions"],
     faqs: [
-      { q: "What's the difference between a landing page and a homepage?", a: "A landing page is built for one specific traffic source and one specific action — a homepage typically serves broader, more varied visitor intent and multiple possible next steps." },
-      { q: "Should a landing page have navigation?", a: "Often minimal or none — removing standard site navigation keeps focus on the single intended action, though this depends on the campaign and how much a visitor genuinely needs to explore before converting." },
-      { q: "How long should a landing page be?", a: "As long as it needs to be to address genuine questions and objections for that specific offer — a simple, low-commitment action can use a short page; a considered, higher-stakes decision often needs more content to address real hesitation." },
-      { q: "What should be above the fold on a landing page?", a: "A clear statement of what's being offered, who it's for, and the primary call to action — enough for a visitor to understand within the first screen whether this is relevant to them." },
-      { q: "Does a landing page need social proof?", a: "Genuine social proof — real reviews, testimonials or case studies — meaningfully reduces hesitation, particularly for visitors with no prior relationship to the brand. Never use fabricated proof." },
-      { q: "Should a landing page address objections directly?", a: "Yes, where genuine objections are predictable — proactively addressing them (through FAQs or dedicated content) tends to outperform ignoring them and hoping visitors convert anyway." },
-      { q: "How many form fields should a landing page have?", a: "Only what's genuinely necessary for that specific offer and stage — every additional field is a chance for a visitor to abandon, particularly on a page built around a single conversion action." },
-      { q: "Does landing page speed matter more than other pages?", a: "Often yes, since landing pages frequently receive paid traffic where every visitor represents real acquisition cost — a slow landing page wastes that spend more directly than a slow page reached through free organic traffic." },
-      { q: "Should landing pages be tested?", a: "Yes, wherever traffic allows — landing pages are often the highest-value, most testable pages on a site given their focused, single-purpose design." },
+      { q: "What's the difference between a landing page and a homepage?", a: "A landing page is built for one specific traffic source and one specific action. A homepage serves broader, more varied visitor intent and several possible next steps." },
+      { q: "Should a landing page have navigation?", a: "Often minimal or none for paid traffic with a clear, single action, because removing site navigation keeps focus on that action. Organic pages and higher-commitment offers usually need navigation, because visitors want to check who you are before they act." },
+      { q: "How long should a landing page be?", a: "As long as it needs to be to answer the real questions and objections for that offer. A simple, low-commitment action can use a short page; a considered, higher-stakes decision often needs more content." },
+      { q: "What should be above the fold on a landing page?", a: "A clear statement of what is being offered, who it is for and the primary call to action, worded to match what the visitor searched for or clicked, so they can tell within the first screen that they are in the right place." },
+      { q: "Does a landing page need social proof?", a: "Genuine social proof, such as real reviews, testimonials or case studies, reduces hesitation, particularly for visitors with no prior relationship to the brand. Never use fabricated proof." },
+      { q: "Should a landing page address objections directly?", a: "Yes, where objections are predictable. Answering them through FAQs or dedicated sections is better than ignoring them and hoping visitors convert anyway." },
+      { q: "How many form fields should a landing page have?", a: "Only what is necessary for that offer and stage. Every extra field is another reason to abandon, so collect the rest later in the sales process." },
+      { q: "Does landing page speed matter more than other pages?", a: "Often yes, because landing pages frequently receive paid traffic where every visitor has a real acquisition cost. A slow landing page wastes that spend more directly than a slow page reached through free organic traffic." },
+      { q: "Should landing pages be tested?", a: "Yes, wherever traffic allows. Landing pages are focused, single-purpose pages, which makes them some of the easiest pages on a site to test. On low traffic, rely on qualitative research and sequential changes instead." },
+      { q: "Should I build a separate landing page for every keyword or city?", a: "No. Group keywords by intent and build one page per distinct intent. Many near-identical pages that differ only by a keyword or place name risk being treated as doorway pages under Google's spam policies, and they are hard to keep accurate. Build a location page only where you have something genuinely local to say." },
+      { q: "Does Quality Score directly decide what I pay for Google Ads?", a: "Google says Quality Score is a diagnostic tool and is not an input in the ad auction. Its landing page experience rating is still a useful signal of whether Google sees your page as relevant and useful to people who click your ad." },
+      { q: "Why do visitors leave my landing page without taking action?", a: "The usual causes are a headline that does not match the ad or search behind the click, an offer that is unclear in the first screen, a CTA that asks for more commitment than the visitor is ready for, slow loading on mobile, and a form or tracking set-up that is broken, so leads are lost or never recorded. Check the cheapest explanation first: submit the form yourself and confirm the lead event fires. Then follow the step-by-step diagnosis in [[/blogs/website-gets-traffic-but-no-leads|our guide to a website that gets traffic but no leads]] before you change the page." },
     ],
     content: [
       {
-        heading: "Quick answer",
+        heading: "What makes a landing page convert the right visitors?",
         body: [
-          "A high-converting landing page is built around one specific traffic source and one specific action — a clear above-the-fold value proposition, a focused call to action, genuine proof (reviews, case studies), honest handling of predictable objections, a form asking only what's necessary, and fast, tested performance. Unlike a homepage, it deliberately narrows focus rather than serving many possible visitor intents at once.",
+          "**A landing page converts the right visitors when it matches the intent behind the click: the headline repeats what they searched for or the ad promised, the page type fits how ready they are to act, and the call to action asks for a commitment they are ready to make.** A researcher reading a guide will not book a sales call, and someone searching for a quote does not want a blog post. Get that match right first, then work on the usual elements: a clear offer, genuine proof, honest answers to objections, a short form and a fast, tested page.",
+          "This guide is for founders and marketers commissioning landing pages for Google Ads, SEO or both. It covers an intent matrix, message match, how paid and organic pages differ, the doorway page risk, page anatomy and measurement.",
         ],
       },
       {
-        heading: "What Makes a Landing Page Different",
-        body: [
-          "A landing page is purpose-built for one traffic source and one intended action — unlike a homepage, which typically serves broader, more varied visitor intent. This focus is the landing page's core advantage, and most landing page mistakes come from diluting that focus.",
+        heading: "Key takeaways",
+        body: [],
+        checklist: [
+          "Decide the visitor's intent before designing the page; it sets the page type and the size of the ask.",
+          "Keep the keyword, ad, headline and CTA saying the same thing (message match).",
+          "Paid pages can be narrow and noindexed; organic pages must be useful enough to deserve a place in search.",
+          "One page per distinct intent, not one per keyword or city.",
+          "Measure qualified leads or sales, not just form submissions.",
         ],
       },
       {
-        heading: "Above the Fold",
+        heading: "Intent, page type and CTA commitment",
         body: [
-          "The first screen needs to answer what's being offered, who it's for, and what to do next — clearly enough that a visitor understands relevance within seconds, without needing to scroll or interpret ambiguous messaging.",
+          "Search intent is what the visitor is trying to get done. It decides what kind of page they expect and how big an ask they will accept. Use this matrix to pick the page type before anyone opens a design tool.",
         ],
-      },
-      {
-        heading: "Value Proposition",
-        body: [
-          "The value proposition should connect directly to what brought the visitor to the page in the first place — a landing page that doesn't match the promise of the ad or link that led there creates an immediate, costly mismatch.",
-        ],
-        visual: { variant: "grid", accent: "blue", caption: "A landing page's above-the-fold content has to close the loop with whatever promise brought the visitor there — a mismatch here costs conversions immediately." },
-      },
-      {
-        heading: "CTA",
-        body: [
-          "One clear, focused call to action — not several competing options — matches the landing page's single-purpose design. Multiple, competing CTAs dilute the exact focus that makes a landing page effective in the first place.",
-        ],
-      },
-      {
-        heading: "Benefits and Features",
-        body: [
-          "Benefits (what the visitor gets) generally matter more for conversion than a raw feature list (what the product technically does) — though both have a place, benefits should typically lead, with features supporting them rather than the reverse.",
-        ],
-      },
-      {
-        heading: "Proof",
-        body: [
-          "Genuine social proof — real reviews, testimonials, case studies or usage evidence — meaningfully reduces hesitation, particularly for a visitor with no prior relationship to the brand. Never fabricate or exaggerate proof; this is one of the fastest ways to damage credibility if discovered.",
-        ],
-        cta: {
-          title: "Building a landing page for a specific campaign or offer?",
-          description: "ZSpace Labs builds and tests landing pages designed around a single, focused conversion action, not a diluted general-purpose page.",
+        table: {
+          headers: ["Intent", "Example search or click", "Page type", "Proof needed", "CTA commitment", "Navigation", "Primary metric"],
+          rows: [
+            ["Informational", "\"how to choose accounting software\"", "Guide or resource page", "Expertise, clear sourcing", "Low: download a checklist, subscribe, read the next guide", "Full site navigation", "Engaged visits, sign-ups, assisted conversions"],
+            ["Commercial investigation", "\"best accounting software for agencies\", \"X vs Y\"", "Comparison, use-case or pricing explainer page", "Honest comparisons, examples, pricing approach", "Medium: see pricing, start a trial, book a demo", "Light navigation", "Trials or demo requests, then qualified rate"],
+            ["Transactional", "\"accounting software free trial\", a paid ad for a specific offer", "Focused offer page", "Reviews, guarantees, what happens next", "High: one action, such as start trial, buy or request a quote", "None or minimal", "Conversion rate to the single action"],
+            ["Brand or navigational", "Your company or product name", "Homepage, product page or login, not a new landing page", "Recognition and reassurance", "Whatever the visitor came for", "Full", "Task completion"],
+            ["Local service", "\"emergency plumber\" with location context", "One strong location or service-area page", "Real local proof: address, service area, local reviews, licences", "High: call or book", "Light", "Calls and bookings by area"],
+          ],
+        },
+        callout: {
+          type: "tip",
+          text: "If the CTA asks for more commitment than the intent supports, the page may still get clicks but will produce poor leads. Lowering the ask to match the intent often improves lead quality even when the raw conversion count falls.",
         },
       },
       {
-        heading: "Objections",
+        heading: "Message match: keyword, ad, headline, CTA",
         body: [
-          "Predictable hesitations — cost, complexity, time commitment, fit — are worth addressing proactively, through FAQs or dedicated content, rather than ignoring and hoping the visitor converts despite unanswered doubts.",
+          "Message match means the page continues the conversation the visitor started. If they searched for \"payroll software for restaurants\" and clicked an ad promising a 14-day trial, the headline should talk about payroll for restaurants and the main button should start that trial. A generic \"All-in-one business platform\" headline forces them to work out whether they are in the right place, and many will not bother.",
+          "Google's own guidance points the same way: pages with better landing page experience ratings are [[https://support.google.com/google-ads/answer/1659694|well organised and have text that relates to a person's search terms]]. Use this quick worksheet for each ad group or target query:",
+        ],
+        checklist: [
+          "Write down the main keyword or query theme.",
+          "Paste the ad headline or search snippet the visitor saw.",
+          "Paste the page's H1 and first sentence.",
+          "Paste the primary CTA label.",
+          "Check: do all four describe the same offer, for the same audience, in similar words?",
+          "Check: is any promise in the ad (price, trial length, delivery time) visible above the fold?",
+          "If not, change the page, or split the ad group so each page has one clear theme.",
         ],
       },
       {
-        heading: "Forms",
+        heading: "Paid vs organic landing pages",
         body: [
-          "Ask only what's genuinely necessary for this specific offer and stage — every additional field is a real, measurable chance for a visitor to abandon on a page whose entire design is built around a single conversion action.",
+          "The same principles apply to both, but the constraints differ. A paid page only has to work for people who click a specific ad. An organic page has to earn its place in search results against every other page answering the same query.",
         ],
-      },
-      {
-        heading: "Mobile UX",
-        body: [
-          "Since landing pages frequently receive paid traffic that can skew heavily mobile depending on the channel, mobile usability deserves direct testing, not an assumption that the desktop version scales down acceptably. See the [[/blogs/how-to-make-a-website-mobile-friendly|mobile-friendly website guide]].",
-        ],
-        table: webDevFrameworkTable,
-        cta: {
-          title: "Want your landing pages reviewed for conversion friction?",
-          description: "See the [[/blogs/website-lead-generation|website lead generation guide]] for how landing pages fit into the broader lead-generation system. See how we approach [[/services/website-development|website development]].",
+        table: {
+          headers: ["", "Paid landing page", "Organic landing page"],
+          rows: [
+            ["Who arrives", "People who clicked a specific ad you wrote", "People who chose your result among many"],
+            ["Scope", "One ad group theme, one offer", "One intent, answered more fully"],
+            ["Indexing", "Often noindexed if it duplicates other pages (a common practice, not a Google rule)", "Indexed; must be uniquely useful"],
+            ["Navigation", "Minimal or none for high-intent offers", "Usually present; visitors want to explore and check credibility"],
+            ["Length", "As short as the decision allows", "Long enough to answer the query properly"],
+            ["Feedback loop", "Fast: spend, clicks and conversions within days", "Slow: weeks or months"],
+            ["Main risk", "Wasted spend on mismatched traffic", "Thin or duplicated pages that do not serve searchers"],
+          ],
+        },
+        callout: {
+          type: "note",
+          text: "Google Ads Help: [[https://support.google.com/google-ads/answer/6167118|Quality Score has three components]]: expected clickthrough rate, ad relevance and landing page experience, which Google defines as \"how relevant and useful your landing page is to people who click your ad\". Google also says Quality Score is a diagnostic tool and \"is not an input in the ad auction\". Treat a below-average landing page experience rating as a prompt to check message match and usefulness, not as a score to game.",
         },
       },
       {
-        heading: "Performance",
+        heading: "Do not clone pages for every keyword or city",
         body: [
-          "Landing pages frequently carry real acquisition cost behind every visitor, particularly from paid traffic — a slow landing page wastes that spend more directly than a slow page reached through free organic search. See the [[/blogs/why-is-my-website-slow|why is my website slow guide]] for diagnosing this specifically.",
+          "A common shortcut is to make dozens of near-identical pages, one per service and town or per keyword variant, with only the name swapped. Google's spam policies describe this as doorway abuse: [[https://developers.google.com/search/docs/essentials/spam-policies|\"sites or pages are created to rank for specific, similar search queries\"]], including pages targeted at specific regions or cities that funnel users to one page, and substantially similar pages that are closer to search results than a browsable hierarchy.",
+          "Google's [[https://developers.google.com/search/docs/fundamentals/creating-helpful-content|helpful content guidance]] asks a related question: is the content primarily made to attract visits from search engines? Cloned pages also fail visitors, because they say nothing the main page does not. Build a separate page only when the intent, offer or proof genuinely differs: a different service, a different audience, or a location where you have a real presence, local reviews and local details. For paid campaigns that need many variants, keep them out of the index and point organic effort at fewer, better pages.",
         ],
       },
       {
-        heading: "Testing",
+        heading: "Anatomy of a focused landing page",
         body: [
-          "Landing pages are often the highest-value, most testable pages on a site given their focused, single-purpose design — validate headline, CTA and offer variations with real testing wherever traffic allows, rather than relying on subjective judgment alone.",
+          "Once the intent and page type are decided, each element has one job.",
+        ],
+        table: {
+          headers: ["Element", "Its job", "Common failure"],
+          rows: [
+            ["Headline and first screen", "Confirm the visitor is in the right place: what is offered, for whom, and the main action", "A brand slogan that ignores what they searched for"],
+            ["Value proposition", "Explain why this offer suits this visitor, in benefits first and features second", "A feature list with no outcome"],
+            ["Call to action", "One clear next step at the right level of commitment", "Several competing buttons, or a sales call for a researcher"],
+            ["Proof", "Reduce risk with real reviews, case studies, credentials or usage evidence", "Generic or invented proof"],
+            ["Objections", "Answer predictable doubts about cost, time, fit and what happens next", "Leaving pricing approach and next steps unexplained"],
+            ["Form", "Collect only what is needed now", "Long forms that ask for everything a salesperson might want"],
+            ["Mobile layout", "Work on the phones your paid and social traffic uses", "A desktop layout squeezed onto a small screen"],
+            ["Speed", "Load quickly, especially for paid clicks", "Heavy hero video, tag managers and chat widgets loading first"],
+          ],
+        },
+      },
+      {
+        heading: "Forms, mobile and speed",
+        body: [
+          "Most lead-generation landing pages end in a form, and the form is where many good visitors give up. Ask only what you need to respond, explain why you need anything sensitive, show what happens after submission and make errors easy to fix. The guide to [[/blogs/improve-website-enquiry-form-conversions|improving enquiry form conversions]] covers field-by-field decisions. Test on real phones, not only a desktop browser narrowed to phone width, and check speed on a mid-range device; see [[/blogs/why-is-my-website-slow|why a website is slow]] for diagnosis.",
+        ],
+      },
+      {
+        heading: "Measure the right conversion",
+        body: [
+          "A landing page that doubles form submissions but fills the pipeline with poor leads has not improved. Track the submission itself (in GA4, for example, a [[https://developers.google.com/analytics/devguides/collection/ga4/reference/events|generate_lead event]] marked as a key event), then follow each lead into your CRM to see which pages and campaigns produce qualified leads and customers. Customers rarely convert on a single visit, so read the guide to [[/blogs/measure-multi-channel-website-conversions|measuring conversions across channels]] before judging a page on last-click numbers alone. If visitors arrive but few act, confirm the lead event actually fires and compare engagement by landing page, channel and device before redesigning anything; the [[/blogs/website-gets-traffic-but-no-leads|traffic-but-no-leads diagnosis]] walks through those checks in order.",
+          "Test headlines, offers and CTAs where traffic allows. Where it does not, use usability sessions and one change at a time; the [[/blogs/cro-strategy-low-traffic-websites|CRO strategy for low-traffic websites]] explains how.",
+        ],
+        cta: {
+          title: "Not sure your landing pages match the ads and searches behind them?",
+          description: "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/cro-audit|conversion audits]]. If useful, we can look at your top ad groups or target queries alongside the pages they land on and talk through where the message breaks.",
+        },
+      },
+      {
+        heading: "Hypothetical example: one page per intent, not per keyword",
+        body: [
+          "**This example is hypothetical.** A bookkeeping firm runs Google Ads to a single services page and has also built 30 near-identical pages, one per nearby suburb. Leads are mostly small one-off requests, and the suburb pages attract little traffic.",
+          "The team groups its keywords into three intents: people comparing bookkeeping options, people ready to request a quote, and people looking for help with one specific task. It builds a comparison-style page with a soft CTA (download a checklist of what to ask a bookkeeper), a focused quote page with no navigation for the paid quote ad group, and keeps one location page for the area where it has an office and local reviews. The suburb clones are consolidated. It then tracks qualified leads per page in the CRM rather than form fills alone. No result is claimed; the example shows the method.",
+        ],
+      },
+      {
+        heading: "When a dedicated landing page is not the answer",
+        body: [
+          "A separate landing page is not always worth building. If an existing service or product page already matches the intent, improve that page instead of creating a competing one. Brand searches should usually go to the homepage or the product people asked for. Very low-volume ad groups may not justify a bespoke page. And if the offer itself is weak or overpriced for the market, no page structure will fix it. For ecommerce, product and collection pages often work better than separate pages; see [[/blogs/shopify-landing-page-optimization|Shopify landing page optimisation]] for paid traffic to stores.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        body: [],
+        checklist: [
+          "Sending every ad group to the homepage or one generic services page.",
+          "Asking for a sales call from visitors who are still researching.",
+          "A headline that does not mention what the visitor searched for.",
+          "Dozens of cloned city or keyword pages.",
+          "Leaving paid-only duplicates indexed alongside the main page.",
+          "Judging success by form fills instead of qualified leads.",
+          "Fake urgency or invented proof.",
+        ],
+      },
+      {
+        heading: "Sources",
+        body: [
+          "Google Ads Help: [[https://support.google.com/google-ads/answer/6167118|About Quality Score]]; [[https://support.google.com/google-ads/answer/1659694|landing page experience]].",
+          "Google Search Central: [[https://developers.google.com/search/docs/essentials/spam-policies|Spam policies for Google web search (doorway abuse)]]; [[https://developers.google.com/search/docs/fundamentals/creating-helpful-content|Creating helpful, reliable, people-first content]].",
+          "Google Analytics: [[https://developers.google.com/analytics/devguides/collection/ga4/reference/events|GA4 recommended events reference]].",
+          "Accessed 14 October 2026. Google's documentation changes; check the current pages before relying on a detail.",
         ],
       },
       {
         heading: "Conclusion",
         body: [
-          "A high-converting landing page succeeds by staying deliberately narrow — one traffic source, one clear value proposition, one focused call to action, genuine proof, honest handling of real objections, and a form that respects the visitor's patience at exactly the moment intent is highest. To find what's holding an existing page back, a [[/blogs/ux-audit|UX audit]] is a good starting point. For WhatsApp CTAs, bilingual pages and UAE trust signals, see [[/blogs/landing-page-design-uae|landing page design for UAE businesses]].",
+          "A landing page works when it fits the intent behind the click. Decide the intent, choose the page type and the size of the ask from the matrix, keep the message consistent from keyword to CTA, and build one page per real intent rather than one per keyword. Then measure qualified outcomes, not just submissions. A sensible next step is to list your top five ad groups or target queries, paste each one beside the page it lands on, and run the message-match worksheet. For the wider picture, see the [[/blogs/website-lead-generation|website lead generation guide]], a [[/blogs/ux-audit|UX audit]] for an existing page, and [[/blogs/landing-page-design-uae|landing page design for UAE businesses]] for WhatsApp CTAs and bilingual pages.",
         ],
+        cta: {
+          title: "Want a second opinion on a landing page?",
+          description: "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/website-development|website development]] and [[/services/cro-audit|conversion audits]]. If useful, we can talk through your campaign, the intent behind it and the page it needs.",
+        },
       },
     ],
   },
@@ -603,7 +687,7 @@ export const webDevPosts6: BlogPost[] = [
       {
         heading: "Responsive Layouts",
         body: [
-          "Layout should adapt deliberately to smaller screens — not just shrink proportionally, which often produces cramped, hard-to-use results. Mobile layout decisions deserve their own design attention, not an assumption that the desktop version scales down acceptably.",
+          "Layout should adapt deliberately to smaller screens — not just shrink proportionally, which often produces cramped, hard-to-use results. Mobile layout decisions deserve their own design attention, not an assumption that the desktop version scales down acceptably. If you are planning a new site rather than fixing one, start with [[/blogs/responsive-ui-design|how to plan responsive design for mobile, tablet and desktop]].",
         ],
       },
       {
@@ -682,126 +766,188 @@ export const webDevPosts6: BlogPost[] = [
   // --------------------------------------------------- TRUST & CREDIBILITY
   {
     slug: "website-trust-and-credibility",
-    title: "How to Improve Website Trust and Credibility",
+    title: "How to Improve Website Trust and Credibility: Trust Signals by Page, and What Not to Fake",
+    seoTitle: "How to Improve Website Trust and Credibility",
     excerpt:
-      "A practical checklist covering positioning, design quality, contact information, genuine testimonials, security, policies and brand consistency.",
+      "Which trust signals to show on each page and buying stage, how to build credibility before you have case studies, and which proof is illegal to fake.",
     category: "Web Development",
     banner: "trustmap",
+    sceneKind: "landing",
+    bannerAlt: "A map of a website's key pages, each matched to the visitor's doubt at that point and the one to three trust signals that answer it",
     date: "2026-09-24",
-    readingTime: "11 min read",
-    relatedServiceSlugs: ["website-development", "ui-ux-design"],
-    relatedIndustrySlugs: ["b2b-enterprise", "fintech", "professional-services"],
+    updated: "2026-10-15",
+    readingTime: "13 min read",
+    relatedServiceSlugs: ["cro-audit", "website-development", "ui-ux-design"],
+    relatedIndustrySlugs: ["b2b-enterprise", "fintech", "professional-services", "startups"],
+    relatedSlugs: ["shopify-trust-optimization", "should-you-show-prices-on-your-website", "why-is-my-website-not-converting"],
     faqs: [
-      { q: "Why does website trust and credibility matter for conversion?", a: "A visitor unfamiliar with a business weighs perceived risk before committing time or information — insufficient trust signals leave real hesitation unaddressed, regardless of how good the actual offering is." },
-      { q: "What are the most important trust signals for a website?", a: "Clear positioning, professional design quality, easy-to-find contact information, genuine testimonials or case studies, visible security practice, and consistent, transparent policies — no single signal substitutes for the others." },
-      { q: "Should a website use fake reviews to appear more credible faster?", a: "No — fabricated or purchased reviews are never acceptable, both because they're dishonest and because visitors increasingly recognize the pattern, which damages trust more than having fewer, genuine ones." },
-      { q: "How does design quality affect perceived credibility?", a: "A dated, unpolished, or visibly broken design signals a lack of attention to detail that visitors reasonably extend to judgments about the business itself, even when the underlying offering is genuinely strong." },
-      { q: "Does having an About page actually matter for trust?", a: "Yes, particularly for less established brands — a genuine, specific About page gives visitors real information about who they're dealing with, which reduces the anonymity that breeds hesitation." },
-      { q: "How important are clear policies for credibility?", a: "Meaningfully — a clearly stated, fair return, refund or privacy policy signals the business has nothing to hide and reduces the perceived risk of a first transaction or inquiry." },
-      { q: "Does website security visibly affect trust?", a: "Yes — visible security indicators (HTTPS, clear data handling information) reduce hesitation right at the moments visitors are asked to share information or make a payment." },
-      { q: "Should case studies be used even for smaller or newer businesses?", a: "Yes, wherever genuine examples exist — even a small number of real, documented examples builds more trust than none, and far more than any number of fabricated ones." },
-      { q: "How does brand consistency relate to trust?", a: "Inconsistent visual identity or messaging across pages can subtly signal disorganization — a consistent, coherent brand experience reinforces the sense of a well-run, trustworthy business." },
+      { q: "Why does website trust and credibility matter for conversion?", a: "A visitor who does not know your business weighs the risk before giving you time, contact details or money. If the page leaves their doubts unanswered, many will leave, however good the service is. Trust signals reduce that perceived risk by answering specific doubts." },
+      { q: "What are the most important trust signals for a website?", a: "There is no single list, because the right signal depends on the page and the visitor's doubt at that point. Across most sites, the foundations are a clear statement of what you do and for whom, real contact details, visible people behind the business, an honest description of scope and price, and proof from outside your own site, such as independent reviews." },
+      { q: "Should a website use fake reviews to appear more credible faster?", a: "No. Beyond being dishonest, it is now unlawful in several markets. In the UK, fake consumer reviews and reviews that hide an incentive are banned practices under consumer law, with CMA guidance published on 4 April 2025. In the US, the FTC's rule on consumer reviews and testimonials took effect on 21 October 2024. Other markets have their own rules." },
+      { q: "How does design quality affect perceived credibility?", a: "Design quality is one of the four credibility factors in Nielsen Norman Group's research: a site that looks neglected, has broken links or obvious typos makes visitors doubt the business behind it. Polish does not replace substance, though. It removes a reason to distrust; it does not supply proof." },
+      { q: "Does having an About page actually matter for trust?", a: "Yes, particularly for newer or smaller businesses. Showing that a real organisation and real people stand behind the site is one of the Stanford web credibility guidelines, and an About page with named people, their experience and how the business works is the most direct way to do it." },
+      { q: "How important are clear policies for credibility?", a: "Important at the point where a visitor commits. Nielsen Norman Group's research lists upfront disclosure, including fees, what the base cost includes and links to return or refund policies, as a credibility factor. Policies that are hard to find, or only appear after payment details are requested, have the opposite effect." },
+      { q: "Does website security visibly affect trust?", a: "Basic security is expected: a site without HTTPS triggers browser warnings that will put people off. Beyond that, there is no reliable evidence that adding security badges lifts conversion. Explaining clearly how you handle the data you ask for, close to the form or payment step, is a better use of the space." },
+      { q: "Should case studies be used even for smaller or newer businesses?", a: "Only real ones. If you have even one genuine, documented project you can describe with the client's permission, use it. If you have none yet, use the other signals in the 'before you have case studies' section, and never present illustrative or invented work as client projects." },
+      { q: "How does brand consistency relate to trust?", a: "Inconsistent names, prices or claims across pages, ads and profiles make visitors wonder which version is true. Consistency matters most for facts: prices, contact details, credentials and what the service includes should match everywhere." },
+      { q: "How many trust signals should a page have?", a: "Enough to answer the doubts at that point, which is often one to three. Repeating every logo and badge on every page adds clutter and can read as over-selling. The Stanford guidelines advise restraint with promotional content for the same reason." },
     ],
     content: [
       {
-        heading: "Quick answer",
+        heading: "How do you make a website more trustworthy?",
         body: [
-          "Website trust and credibility come from a combination of genuine signals — clear positioning, professional design quality, easy-to-find contact information, real testimonials and case studies, visible security practice, transparent policies, consistent branding and honest content. No single signal substitutes for the others, and every signal used has to be genuine — fabricated reviews, invented testimonials or exaggerated claims damage trust more than having fewer, honest ones.",
+          "**Match each trust signal to the doubt a visitor has at that point on the site, keep every signal genuine and checkable, and put proof from outside your own site ahead of claims you make about yourself.** A home page needs to show who you are and that you are real. A service page needs to show you can do this specific job. A pricing or contact page needs to remove the risk of committing. Piling every logo and badge onto every page does not do this, and faking any of it is now unlawful in several markets.",
+          "This guide covers service businesses, SaaS and other lead-generation sites. For store-specific detail such as product page reviews and checkout badges, see the [[/blogs/shopify-trust-optimization|Shopify trust optimisation checklist]].",
         ],
       },
       {
-        heading: "Why Trust Is a Design Requirement, Not an Afterthought",
-        body: [
-          "A visitor unfamiliar with a business weighs perceived risk before committing time, information or money — a strong offering undermined by insufficient trust signals still loses conversions, because the hesitation was never actually addressed.",
+        heading: "Key takeaways",
+        body: [],
+        checklist: [
+          "Start from the visitor's doubt on each page, then choose one to three signals that answer it.",
+          "Independent proof (third-party reviews, press, public profiles) is trusted more than testimonials on your own site.",
+          "Showing real people and how you work is the strongest signal available before you have case studies.",
+          "Be upfront about price, scope and policies before you ask for details.",
+          "Fake reviews, hidden incentives and suppressed negatives are banned in the UK and US, and risky elsewhere.",
+          "Do not rely on security badges to lift conversion; there is no reliable evidence that they do.",
         ],
       },
       {
-        heading: "Clear Positioning",
+        heading: "What the research says about credibility",
         body: [
-          "A visitor who quickly understands what the business does and for whom trusts it more readily than one left uncertain or confused — vague, evasive positioning reads as a credibility problem even when unintentional.",
+          "Three sources are worth knowing, with different weights.",
+          "**Nielsen Norman Group's four credibility factors** (Aurora Harley, 2016) are the most useful working model. They are design quality; upfront disclosure of the information that affects the customer, such as contact details, what the base cost includes and any extra fees; content that is comprehensive, correct and current; and connection to the rest of the web. On the last point, participants trusted reviews on external sites more than testimonials on a company's own site, which they suspected showed only positive feedback ([[https://www.nngroup.com/articles/trustworthy-design/|NN/g]]).",
+          "**Google's \"Who, How and Why\" questions** come from its guidance on helpful, reliable content. Is it clear who created the content? Is it clear how it was produced? Is it clear why it exists, to help people rather than to attract search traffic? Google says that of the qualities it groups as E-E-A-T, \"trust is most important\", while noting that E-E-A-T \"itself isn't a specific ranking factor\" ([[https://developers.google.com/search/docs/fundamentals/creating-helpful-content|Google Search Central, updated 5 October 2026]]). This is search guidance, not conversion research, but the questions are a good test for any page.",
+          "**The Stanford Web Credibility guidelines** by B.J. Fogg date from 2002 and are no longer maintained, so treat them as foundational rather than current research. Their ten points still match later work: show there is a real organisation behind the site, make it easy to contact you, show that honest and trustworthy people stand behind it, use restraint with promotional content, and avoid errors of all types ([[https://credibility.stanford.edu/guidelines/index.html|Stanford Persuasive Technology Lab]]).",
         ],
       },
       {
-        heading: "Professional Design",
+        heading: "Trust-signal inventory by page type",
         body: [
-          "A dated, unpolished, or visibly broken design signals a lack of attention to detail that visitors reasonably extend to judgments about the business itself — this effect is real even when the underlying product or service is genuinely strong.",
+          "Use this inventory to plan or audit your key pages. For each page, check whether the visitor's doubt is answered, then remove signals that answer a question nobody is asking there. That is how you build credibility without overloading pages.",
         ],
-        visual: { variant: "grid", accent: "blue", caption: "Trust builds cumulatively from many individually small signals — no single element carries the whole weight of a visitor's confidence." },
-      },
-      {
-        heading: "Contact Information",
-        body: [
-          "Easy-to-find, genuine contact information — a real address, phone number or support channel — reduces the anonymity that breeds hesitation, particularly for a first-time visitor deciding whether to trust an unfamiliar business.",
-        ],
-      },
-      {
-        heading: "About Page",
-        body: [
-          "A genuine, specific About page — real information about the company, team and story — gives visitors something concrete to evaluate, especially for less established brands without wide existing recognition.",
-        ],
-      },
-      {
-        heading: "Genuine Testimonials",
-        body: [
-          "Real testimonials from real customers, presented honestly, meaningfully reduce hesitation. Fabricated or purchased testimonials are never acceptable — visitors increasingly recognize the pattern, and the damage to trust once discovered outweighs any short-term benefit.",
-        ],
-        cta: {
-          title: "Want your site's trust signals reviewed honestly?",
-          description: "ZSpace Labs can audit your site's credibility signals against what actually reduces visitor hesitation, not generic trust-badge advice.",
+        table: {
+          headers: ["Page", "The visitor's doubt", "Signals that answer it (pick 1 to 3)", "Where they go"],
+          rows: [
+            ["**Home**", "Is this a real business, and is it for someone like me?", "A specific statement of what you do and for whom; named founders or team; independent review rating or recognisable, permitted client names", "Above the fold for the statement; proof directly beneath it"],
+            ["**Service page**", "Can they do this particular job well?", "A real project or worked description of how you deliver it; credentials of the people who will do it; a scope block of what is included", "Beside the description of the service, not in a generic logo strip"],
+            ["**Pricing**", "Is this in my budget, and will there be surprises?", "A price, range or typical example with inclusions, exclusions and price drivers; how billing works; cancellation or refund terms", "Next to the price, at the same prominence"],
+            ["**Contact or enquiry form**", "What happens if I send this, and what will they do with my details?", "What happens next and when; who replies; a short note on data use with a link to the privacy notice", "Directly above or beside the submit button"],
+            ["**Checkout or booking**", "Is my payment safe, and can I get out of this if needed?", "Recognised payment options; total price before payment details; refund, cancellation or reschedule policy", "In the order summary, before payment fields"],
+            ["**About**", "Who is behind this, and are they accountable?", "Named people with photos and relevant experience; company registration details; where and how you work", "Main content; link to it from home and service pages"],
+            ["**Post-enquiry confirmation**", "Did it work, and what now?", "Confirmation, expected reply time you can actually meet, and a useful next resource", "Thank-you page and confirmation email"],
+          ],
         },
       },
       {
-        heading: "Genuine Case Studies",
+        heading: "Trust signals by buying stage",
         body: [
-          "Documented, real case studies are among the strongest trust signals available — even a small number of genuine examples builds more credibility than any number of invented ones, and the risk of fabrication being discovered is a real, lasting reputational cost.",
+          "The same visitor needs different reassurance as they move from first visit to commitment. If your analytics show people reaching pricing or contact pages and then leaving, check whether the signals at that stage answer the late-stage doubts below, not the early-stage ones.",
         ],
-      },
-      {
-        heading: "Security",
-        body: [
-          "Visible security practice — HTTPS, clear information about data handling — reduces hesitation right at the moments visitors are asked to share information or make a payment. See the [[/blogs/website-security-checklist|website security checklist]] for the underlying technical practice.",
-        ],
-      },
-      {
-        heading: "Policies",
-        body: [
-          "A clearly stated, fair return, refund or privacy policy signals the business has nothing to hide and directly reduces the perceived risk of a first transaction or inquiry — burying or omitting these has the opposite effect.",
-        ],
-        table: webDevFrameworkTable,
-        cta: {
-          title: "Ready to connect trust signals to your broader conversion strategy?",
-          description: "See the [[/blogs/why-is-my-website-not-converting|why is my website not converting guide]] for how trust fits into the fuller diagnostic picture. Explore our [[/services/website-development|website and web app development services]].",
+        table: {
+          headers: ["Stage", "Question in the visitor's mind", "Signals that help"],
+          rows: [
+            ["**First visit**", "Is this relevant and legitimate?", "Clear positioning, professional and error-free design, visible people"],
+            ["**Comparing options**", "Are they better for me than the alternatives?", "Specific scope, process explanation, independent reviews, honest statement of who you are not for"],
+            ["**Checking budget**", "Can I afford it, and what exactly do I get?", "Price format with scope block (see [[/blogs/should-you-show-prices-on-your-website|how to show prices without undervaluing]])"],
+            ["**About to enquire or buy**", "What is the risk if this goes wrong?", "Policies, guarantees you can honour, data-use note, named contact, reply time"],
+            ["**After enquiring**", "Did I make a sensible choice?", "Prompt confirmation, the reply when promised, consistency with what the site said"],
+          ],
         },
       },
       {
-        heading: "Content Quality",
+        heading: "Building trust before you have case studies",
         body: [
-          "Well-written, accurate, genuinely useful content signals competence and care — thin, generic, or error-filled content has the opposite effect, regardless of how polished the visual design looks.",
+          "New businesses often feel they have nothing to show. In practice, the most credible early signals are about transparency, not volume. Each of these is honest and available on day one.",
+        ],
+        checklist: [
+          "**Show the founders.** Names, photos, relevant past roles and qualifications. A visitor can check a named person on a professional network; they cannot check \"our expert team\".",
+          "**Explain your process in detail.** Stages, what the client receives at each, how decisions are made and how long things take. Detail signals competence.",
+          "**Publish a scope-transparency block.** What is included, what is not, what moves the price, timescales and who does the work. It shows you understand the job.",
+          "**Use real credentials.** Current certifications, professional memberships and regulator registrations, linked to the issuer's register where one exists.",
+          "**Show prior work honestly.** Work done in previous roles can be described as such, with permission and without implying it was done by the new company.",
+          "**Offer a smaller first step.** A paid discovery session, pilot or fixed-scope audit lowers the buyer's risk. Only offer guarantees you can honour in full.",
+          "**Let your content prove expertise.** Useful articles, checklists or teardown notes written by named people show how you think.",
+          "**Build external profiles early.** Company listings, professional profiles and an independent review profile you can start collecting genuine reviews on from your first client.",
+          "**Be clear who you are not for.** Saying which projects you would decline is a credible signal and improves lead fit.",
+        ],
+        callout: {
+          type: "takeaway",
+          text: "Never fill the gap with illustrative work presented as client projects, stock photos presented as your team, or counts you cannot support. A visitor who catches one of these will discount everything else on the site.",
+        },
+      },
+      {
+        heading: "What not to fake, by market",
+        body: [
+          "Several practices that used to be merely unwise are now explicitly unlawful. The table summarises the main ones. It is general information, not legal advice, and rules differ by sector.",
+          "**UK.** The Digital Markets, Competition and Consumers Act 2024 added fake reviews to the list of banned practices from April 2025. This covers submitting or commissioning fake consumer reviews, concealing that a review was incentivised, and presenting reviews in a misleading way, such as suppressing negatives or cherry-picking positives. Businesses that publish consumer reviews must take reasonable and proportionate steps to prevent and remove fake ones. The CMA published its guidance on 4 April 2025 ([[https://www.gov.uk/government/publications/fake-reviews-cma208|CMA208: fake reviews]]). Whether a testimonial on your own site counts as a \"consumer review\" depends on context, so treat it to the same standard.",
+          "**US.** The FTC announced its Trade Regulation Rule on the Use of Consumer Reviews and Testimonials on 14 August 2024. It bans fake or false reviews and testimonials, including AI-generated ones; buying reviews conditioned on positive or negative sentiment; undisclosed insider reviews; company-controlled sites presented as independent; suppressing reviews through threats or intimidation; and buying or selling fake social media indicators. The FTC can seek civil penalties against knowing violators ([[https://www.ftc.gov/news-events/news/press-releases/2024/08/federal-trade-commission-announces-final-rule-banning-fake-reviews-testimonials|FTC announcement]]). The FTC's business guidance confirms it took effect on 21 October 2024 ([[https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers|FTC Q&A]]).",
+          "**India, Australia and health services (check current rules).** India's Bureau of Indian Standards published IS 19000:2022 on online consumer reviews, reported to be a voluntary standard for organisations that publish reviews; check whether its status has changed. In Australia, consumer law prohibits false or misleading testimonials, and the ACCC has said that fake reviews and removing genuine negative ones can breach it. For regulated health services in Australia, Ahpra's rules restrict the use of testimonials in advertising. We have not verified these against the primary texts for this update, so confirm them with the regulator or an adviser.",
+        ],
+        table: {
+          headers: ["Do not fake", "Why it matters"],
+          rows: [
+            ["**Invented or AI-written reviews and testimonials**", "Banned in the UK and under the FTC rule in the US"],
+            ["**Incentivised reviews without disclosure**", "UK: concealed incentives are banned. US: buying reviews conditioned on sentiment is banned"],
+            ["**Staff, family or insider reviews without disclosure**", "Covered by the FTC rule; misleading in the UK"],
+            ["**Hiding or cherry-picking reviews**", "UK: misleading presentation is banned. US: suppression by threats or intimidation is banned"],
+            ["**Bought followers, likes or view counts**", "The FTC rule covers fake social media indicators"],
+            ["**\"As seen in\" logos without real coverage**", "A misleading claim under general consumer law in most markets"],
+            ["**Client logos without permission or a real engagement**", "Misleading, and may breach the client's trade mark or contract"],
+            ["**Lapsed or unearned certifications and memberships**", "Misleading, and often checkable on the issuer's public register"],
+            ["**Stock photos presented as your team or office**", "Misleads about who stands behind the business"],
+            ["**Unsupported numbers such as \"500+ clients\"**", "A factual claim you must be able to substantiate"],
+            ["**Fake scarcity or countdown urgency**", "Treated as a dark pattern by several regulators"],
+          ],
+        },
+      },
+      {
+        heading: "Security badges, policies and contact details",
+        body: [
+          "HTTPS is a baseline, not a selling point: browsers warn visitors about sites without it, and the [[/blogs/website-security-checklist|website security checklist]] covers the technical practice. Beyond that, there is no reliable evidence that adding security or \"trusted site\" badges increases conversion, so do not add them expecting an uplift. Where you ask for personal or payment details, a short, plain explanation of what you collect and why, next to the form, does more to answer the actual doubt.",
+          "Policies and contact details belong in the upfront-disclosure category from the NN/g research. Make refund, cancellation and privacy terms easy to find before someone commits, and give a real way to reach a person. A business address and company registration details, where you have them, let a cautious buyer check you are who you say you are.",
         ],
       },
       {
-        heading: "Reviews",
+        heading: "Hypothetical example: trimming an overloaded service page",
         body: [
-          "Genuine reviews — even a modest number — build more trust than none, and dramatically more than any number of fabricated ones. Never manipulate review presentation by selectively hiding genuine negative feedback in a misleading way.",
+          "Hypothetical example: a two-person consultancy's service page has a logo strip of tools it uses, three generic badges, a \"trusted by businesses\" line with no names, and a contact form at the bottom. An audit against the inventory above asks what a visitor doubts on this page: can these people do this job? None of the current signals answers that.",
+          "The revised page replaces the logo strip with the two founders' names, photos and relevant experience, adds a step-by-step description of how the engagement runs, a scope block next to a 'from' price, and a link to their independent review profile with its handful of genuine reviews. The badges go. The page has fewer trust elements than before, and each one answers a real question.",
         ],
       },
       {
-        heading: "Brand Consistency",
-        body: [
-          "Inconsistent visual identity or messaging across different pages can subtly signal disorganization — a consistent, coherent brand experience reinforces the sense of a well-run, trustworthy business throughout the entire visit, not just on the homepage.",
+        heading: "Common mistakes and limits",
+        body: [],
+        checklist: [
+          "Repeating the same logo strip and badges on every page instead of matching signals to each page's doubt.",
+          "Generic testimonials (\"Great service!\") with no name, role or context. They read as invented even when they are real.",
+          "Hiding price, scope and policies until after the enquiry.",
+          "Claims that differ between the website, proposals and external profiles.",
+          "Treating trust signals as a fix for a weak offer, unclear positioning or a slow site. They help a good offer get a fair hearing; they do not replace it.",
+          "Expecting a measurable uplift from one signal. Trust is cumulative, and most service sites lack the traffic to isolate the effect of a single element.",
         ],
+        callout: {
+          type: "note",
+          text: "If trust is only one of several suspected problems, start with the wider diagnosis in [[/blogs/why-is-my-website-not-converting|why a website is not converting]] before reworking signals page by page.",
+        },
       },
       {
-        heading: "Author and Company Transparency",
+        heading: "Sources",
         body: [
-          "Being clear about who wrote content, who runs the business, and how to reach real people all contribute to a sense of genuine accountability — anonymity, even unintentional, reads as a credibility gap to a cautious visitor.",
+          "Research: [[https://www.nngroup.com/articles/trustworthy-design/|Nielsen Norman Group: Trustworthiness in Web Design, 4 Credibility Factors (Aurora Harley, 2016)]]; [[https://credibility.stanford.edu/guidelines/index.html|Stanford Web Credibility guidelines (B.J. Fogg, 2002; not maintained)]]; [[https://developers.google.com/search/docs/fundamentals/creating-helpful-content|Google Search Central: creating helpful, reliable, people-first content (updated 5 October 2026)]].",
+          "Regulators: [[https://www.gov.uk/government/publications/fake-reviews-cma208|CMA208: fake reviews (published 4 April 2025)]]; [[https://www.ftc.gov/news-events/news/press-releases/2024/08/federal-trade-commission-announces-final-rule-banning-fake-reviews-testimonials|FTC: final rule banning fake reviews and testimonials (14 August 2024)]]; [[https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers|FTC: Consumer Reviews and Testimonials Rule, questions and answers]].",
+          "Accessed 15 October 2026. Consumer law and enforcement practice change; check current guidance for your markets and sector.",
         ],
       },
       {
         heading: "Conclusion",
         body: [
-          "Website trust and credibility build cumulatively from many individually modest, genuine signals — clear positioning, professional design, real contact information, honest testimonials and case studies, visible security, and consistent branding — with no shortcuts that substitute for the real thing.",
+          "Work through your five or six most important pages with the inventory above. For each, write down the visitor's doubt, keep the one to three genuine signals that answer it, and remove the rest. If you are new, lead with people, process and scope rather than borrowed or illustrative proof. Then check every review, logo, number and credential against the what-not-to-fake list. A [[/services/cro-audit|CRO audit]] can do the same review with fresh eyes if you are too close to your own site.",
         ],
+        cta: {
+          title: "Want a trust-signal review of your key pages?",
+          description: "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/cro-audit|CRO audits]], [[/services/website-development|website development]] and [[/services/ui-ux-design|UI/UX design]]. If useful, we can walk through your main pages against the inventory above and suggest what to add, move or remove.",
+        },
       },
     ],
   },

@@ -24,7 +24,7 @@ export const commercePosts68: BlogPost[] = [
     faqs: [
       { q: "What should be tested before an ecommerce migration launch?", a: "Checkout and payments, shipping and tax, discounts and gift cards, customer accounts, product and order data, integrations, redirects and SEO elements, analytics and tracking, performance, accessibility, mobile and security basics." },
       { q: "What should be tested first?", a: "The flows that make money and the integrations that fulfil orders: checkout with every payment method, shipping and tax calculation, and order flow to fulfilment and finance." },
-      { q: "Should test orders use real payments?", a: "Use test modes in staging. Before launch, place a small number of real orders with real payment methods and refund them, to confirm live configuration." },
+      { q: "Should test orders use real payments?", a: "Both, at different stages. Use your platform's test payment gateway or your payment provider's test mode for most testing; these simulate approvals, declines and failures without moving money. Switch test mode off before launch, because some platforms block live orders while it is on. Then place a small number of real orders with each live payment method and refund them, to confirm live configuration. Your payment processor may still charge fees on these orders, even after a refund." },
       { q: "How do I test migrated data?", a: "Compare counts and totals with the old system, check samples and edge cases field by field, and test journeys such as a migrated customer viewing order history." },
       { q: "How should redirects be tested?", a: "Automatically: request every old URL and check it returns one permanent redirect to the expected destination, which returns 200." },
       { q: "Who should do user acceptance testing?", a: "People who use the store daily: merchandisers, customer service, operations and finance, following scripted scenarios for their work." },
@@ -188,6 +188,48 @@ export const commercePosts68: BlogPost[] = [
             ["3", "Full regression, redirects, performance", "Production-like data"],
             ["Launch", "Smoke tests, live payments", "Final migration"],
           ],
+        },
+      },
+      {
+        heading: "72 Hours After Launch: Check and Roll Back",
+        body: [
+          "Testing doesn't stop at go-live. Many migration problems only show up with real customers, real payment methods and real volumes, so plan the first 72 hours as a watch period with named owners, set check times and agreed triggers for a hotfix or a rollback. Decide before launch who can call a rollback, and confirm that the old platform, its data and DNS settings stay available until the window closes.",
+        ],
+        table: {
+          headers: ["When", "Check", "Owner"],
+          rows: [
+            ["First 2 hours", "One live order per payment method, then refund it; orders reach the warehouse, 3PL or ERP; confirmation and shipping emails send; top redirects resolve; the purchase event fires once per order", "Project lead, operations"],
+            ["First 24 hours", "Orders, payments and fulfilment messages match across systems; failed payment and checkout error rates; 404 log for missed redirects; support tickets grouped by theme", "Operations, developer, customer service"],
+            ["24 to 72 hours", "Full redirect list re-run; spot-check taxes and shipping by market; first payout and transaction report compared with orders; integration error logs and retry queues; tracking compared with platform orders", "Developer, finance, marketing"],
+          ],
+        },
+        checklist: [
+          "Rollback or hotfix trigger: any payment method failing for real customers",
+          "Rollback or hotfix trigger: orders not reaching fulfilment, or reaching it twice",
+          "Rollback or hotfix trigger: tax or shipping charged wrongly in a market you sell to",
+          "Rollback or hotfix trigger: customers unable to sign in or reach order history at scale",
+          "Hotfix, not rollback: missed redirects, broken tracking or cosmetic issues",
+        ],
+      },
+      {
+        heading: "First 30 Days: Operational Reconciliation",
+        body: [
+          "Some problems only appear once money, stock and customers have gone through a full cycle. For the first 30 days, reconcile operations weekly with the people who own each area, and keep the issue log open until every item below has been checked at least once.",
+          "This page covers operations. For the search and traffic side of the first month, see the 30-day table in [[/blogs/migrating-to-shopify-guide|our guide to migrating to Shopify]], and for post-launch checks specific to a WooCommerce move, see the [[/blogs/woocommerce-to-shopify-migration-checklist|WooCommerce to Shopify migration checklist]].",
+        ],
+        table: {
+          headers: ["Area", "What to reconcile", "Owner"],
+          rows: [
+            ["Payouts", "Payment provider payouts against orders, refunds and fees for each payout period; any gap traced to specific orders", "Finance"],
+            ["First returns and refunds", "The first returns of each type (refund, exchange, store credit) processed end to end; refund amounts, tax and restocking correct; returned stock back in the right place", "Customer service, operations"],
+            ["Inventory drift", "Stock levels on the new platform compared with the warehouse, 3PL or ERP; variances investigated, not just corrected", "Operations"],
+            ["Subscription renewals", "The first renewal for migrated subscribers charges the right amount on the right date, and failed renewals are retried and reported", "Developer, customer service"],
+            ["Integrations", "Error logs, retry queues and duplicate records in ERP, CRM, email and marketplaces", "Developer"],
+          ],
+        },
+        callout: {
+          type: "note",
+          text: "Moving to Shopify? The Shopify-specific test mechanics (the Test payment gateway, test mode and redirect limits) are covered in Step 7 of [[/blogs/migrating-to-shopify-guide|the Shopify migration guide]], so they aren't repeated here.",
         },
       },
       {

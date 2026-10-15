@@ -737,7 +737,7 @@ export const commercePosts58: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A CRO testing roadmap turns a backlog into scheduled work: foundations first, then fixes and a steady test cadence, then bigger bets, with capacity planned from traffic, calendars respected and regular resets. Related: [[/blogs/shopify-cro-strategy|Shopify CRO strategy]] and [[/blogs/ecommerce-hypothesis-testing|hypothesis testing]].",
+          "A CRO testing roadmap turns a backlog into scheduled work: foundations first, then fixes and a steady test cadence, then bigger bets, with capacity planned from traffic, calendars respected and regular resets. Related: [[/blogs/shopify-cro-strategy|Shopify CRO strategy]] and [[/blogs/ecommerce-hypothesis-testing|hypothesis testing]]. Service and lead-generation websites usually have far fewer conversions to work with; [[/blogs/cro-strategy-low-traffic-websites|building a CRO roadmap on limited traffic]] covers that situation.",
         ],
       },
     ],

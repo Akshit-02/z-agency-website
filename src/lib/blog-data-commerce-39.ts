@@ -516,19 +516,23 @@ export const commercePosts39: BlogPost[] = [
     slug: "shopify-markets",
     title: "Shopify Markets: How to Build a Multi-Market Ecommerce Store",
     seoTitle: "Shopify Markets: Build a Multi-Market Ecommerce Store",
-    excerpt: "How to use Shopify Markets: market types, customizations, currencies and rounding, catalogs and pricing, domains and languages, SEO, duties and Hydrogen.",
+    excerpt: "How to sell in several countries with Shopify Markets: plan limits, local-currency checkout, duties, Managed Markets, a readiness checklist and SEO.",
     category: "Shopify & Ecommerce",
     banner: "shopifymarkets",
     bannerAlt: "Shopify Markets in four columns: conditions (countries and regions, B2B company locations, retail POS locations, sales channels), customizations (currency, catalogs and pricing, product availability, tax and duties, highlighted), storefront (subfolder or domain, languages, theme per market, automatic hreflang) and operations (Shopify Payments, rounding rules, shipping per market, Managed Markets), noting that submarkets inherit parent settings unless overridden.",
     date: "2026-09-29",
-    readingTime: "20 min read",
+    updated: "2026-10-14",
+    readingTime: "14 min read",
     relatedServiceSlugs: ["shopify-development", "website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer", "retail"],
     faqs: [
       { q: "What is Shopify Markets?", a: "Shopify's set of international and multi-market selling tools. Markets combine conditions (who a market applies to, such as countries and regions) with customizations (currency, catalogs and pricing, product availability, domains, languages, themes and tax and duty settings)." },
       { q: "What types of markets does Shopify support?", a: "Shopify documents four market types: country and region markets, B2B company location markets, retail (POS) location markets and sales channel markets." },
       { q: "How many markets can I create?", a: "According to Shopify, country and region markets are available on all plans with no limit on how many you create. Other market types and catalog features have plan-specific limits." },
-      { q: "Do I need Shopify Payments to sell in multiple currencies?", a: "Yes. Shopify's documentation states that selling in multiple currencies requires Shopify Payments, and currency conversion fees apply when customers pay in a currency different from your payout currency." },
+      { q: "Do I need Shopify Payments to sell in multiple currencies?", a: "You need Shopify Payments or Adyen as your payment processor to accept payment in multiple currencies. With any other processor, customers in every market pay in your store's default currency. Currency conversion fees apply when customers pay in a currency different from your payout currency." },
+      { q: "Can an India-based Shopify store take payment in local currencies?", a: "Not natively with Shopify Payments, which is not available in India. With other payment providers, customers in every market check out in the store's default currency, even if prices are displayed in their currency. Adyen is the only other processor Shopify names for multi-currency payments; check with Shopify whether it is available to your store." },
+      { q: "Who can use Shopify Managed Markets?", a: "Shopify says Managed Markets is available to businesses based in the continental United States and certain stores in Canada and the United Kingdom, on Basic or higher, with an online store and Shopify Payments. Stores based in India, the UAE or Australia are not listed as eligible." },
+      { q: "Which Shopify plan do I need for per-market checkout customization?", a: "Advanced or higher for per-market theme customization and per-market checkout and accounts customization. Per-market Checkout Blocks customization and per-market business entities need Plus. Creating country and region markets is free on all plans." },
       { q: "Can I set fixed prices per country?", a: "Yes, through catalogs and price settings per market, rather than relying only on automatic conversion. You can also use rounding rules for converted prices." },
       { q: "Which URL structures does Shopify Markets support?", a: "Subfolders (yourstore.com/fr/), subdomains (fr.yourstore.com) and top-level domains (yourstore.fr), assigned per market with languages." },
       { q: "Does Shopify add hreflang tags automatically?", a: "Shopify's documentation says hreflang tags, self-referencing canonical URLs and sitemaps with market URLs are generated automatically for configured domains and subfolders, and automatic hreflang can be turned off if you manage tags yourself." },
@@ -540,7 +544,7 @@ export const commercePosts39: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "Shopify Markets lets one Shopify store sell to many markets. Each market has conditions (countries and regions, B2B company locations, retail locations or sales channels) and customizations: currency, catalogs and pricing, product availability, domains or subfolders, languages, theme settings and tax and duty collection. Submarkets inherit settings unless overridden. Selling in multiple currencies requires Shopify Payments; rounding and fixed prices keep price points clean. Shopify generates hreflang, canonicals and sitemaps for configured market URLs. Headless builds pass country and language context to the Storefront API.",
+          "Shopify Markets lets one Shopify store sell to many markets. Each market has conditions (countries and regions, B2B company locations, retail locations or sales channels) and customizations: currency, catalogs and pricing, product availability, domains or subfolders, languages, theme settings and tax and duty collection. Submarkets inherit settings unless overridden. Taking payment in multiple currencies requires Shopify Payments or Adyen; with any other processor, customers pay in your store currency, which is the situation for stores based in India, where Shopify Payments is not available. Per-market theme and checkout customization needs the Advanced plan or higher. Rounding and fixed prices keep price points clean. Shopify generates hreflang, canonicals and sitemaps for configured market URLs. Headless builds pass country and language context to the Storefront API.",
         ],
       },
       {
@@ -566,9 +570,33 @@ export const commercePosts39: BlogPost[] = [
         },
       },
       {
+        heading: "What Each Shopify Plan Allows in Markets",
+        body: [
+          "Creating country and region markets is free on every plan, with no limit on how many you create. The differences between plans are in how far you can tailor each market. This table summarizes Shopify's Markets requirements page, the March 2026 checkout changelog and the Managed Markets requirements, checked on 14 October 2026; plan features change, so confirm before you plan work.",
+        ],
+        table: {
+          headers: ["Capability", "Basic and Grow", "Advanced", "Plus"],
+          rows: [
+            ["Country and region markets (unlimited)", "Yes", "Yes", "Yes"],
+            ["Domains, languages, currencies, duties and taxes per market", "Yes", "Yes", "Yes"],
+            ["Customers pay in local currency", "With Shopify Payments or Adyen", "With Shopify Payments or Adyen", "With Shopify Payments or Adyen"],
+            ["Per-market theme customization", "No", "Yes", "Yes"],
+            ["Per-market checkout and accounts settings and branding", "No", "Yes (since 16 Mar 2026)", "Yes"],
+            ["Per-market Checkout Blocks and business entities", "No", "No", "Yes"],
+            ["B2B catalogs across B2B markets", "Up to 3", "Up to 3", "Unlimited"],
+            ["Retail (POS) market catalog customization", "Needs POS Pro", "Needs POS Pro", "Yes"],
+            ["Managed Markets (Global-e as merchant of record)", "Eligible countries only", "Eligible countries only", "Eligible countries only"],
+          ],
+        },
+        callout: {
+          type: "note",
+          text: "Per-market checkout customization is covered in more depth, alongside every other checkout capability by plan, in our [[/blogs/shopify-checkout-customisation-guide|Shopify checkout customization guide]]. Sources: [[https://help.shopify.com/en/manual/markets/getting-started/requirements-and-considerations|Shopify Help Center: Markets requirements]]; [[https://changelog.shopify.com/posts/customize-checkout-and-customer-accounts-by-market|Shopify changelog, 16 Mar 2026]].",
+        },
+      },
+      {
         heading: "Currencies, Pricing and Rounding",
         body: [
-          "To sell in multiple currencies, Shopify requires Shopify Payments. Converted prices are calculated from your base price using the exchange rate (automatic or manual) and a currency conversion fee, then rounded if rounding is enabled; the conversion fee applies when customers pay in a currency different from your payout currency and varies by store location (Shopify Help Center). For important markets, set fixed prices through catalogs or price lists rather than relying on conversion. See [[/blogs/multi-currency-ecommerce|multi-currency ecommerce]].",
+          "Shopify's requirements page says: \"To accept payments in multiple currencies, you need to use Shopify Payments or Adyen as your payment processor.\" With any other processor, customers in all markets pay in your store's default currency ([[https://help.shopify.com/en/manual/markets/getting-started/requirements-and-considerations|Shopify Help Center: Markets requirements]]). Two other limits: fixed-amount discounts can be created only in your default currency, and post-purchase apps work only in the default currency, so post-purchase offers are not shown in markets using another currency. Converted prices are calculated from your base price using the exchange rate (automatic or manual) and a currency conversion fee, then rounded if rounding is enabled; the conversion fee applies when customers pay in a currency different from your payout currency and varies by store location (Shopify Help Center). For important markets, set fixed prices through catalogs or price lists rather than relying on conversion. See [[/blogs/multi-currency-ecommerce|multi-currency ecommerce]].",
         ],
         table: {
           headers: ["Setting", "Purpose"],
@@ -612,8 +640,45 @@ export const commercePosts39: BlogPost[] = [
       {
         heading: "Duties, Taxes and Compliance",
         body: [
-          "Markets can be configured for tax-inclusive pricing and duty collection for international orders. Shopify's documentation also notes market-specific compliance features, such as showing the lowest price in the previous 30 days when advertising reductions to customers in the EEA (Shopify Help Center). Shopify also offers Managed Markets for eligible stores, which takes on more of the cross-border work; check current eligibility, coverage and terms. Tax obligations remain country-specific; take advice.",
+          "Markets can be configured for tax-inclusive pricing and for collecting duties and import taxes at checkout. Collecting duties at checkout (sometimes called delivered duty paid, or DDP) means the customer pays everything upfront and receives the parcel without a further charge. Without it (delivered at place, or DAP), the carrier usually collects duties and taxes from the customer on delivery, which is a common cause of refused parcels and disappointed customers.",
+          "Shopify's requirements for collecting duties at checkout are practical rather than plan-based: products need Harmonized System (HS) codes, your carrier must support DDP labels if you buy labels through Shopify, and the store cannot use Shopify Fulfillment Network. Shopify charges a fee on each order where duties are calculated, even when the duty is zero. From 2 February 2025 the fee was temporarily lowered to 0.5% for all merchants; otherwise it is 0.85% with Shopify Payments as the primary gateway and 1.5% with other providers. There is no fee on domestic orders or orders between EU countries ([[https://help.shopify.com/manual/markets/duties-and-import-taxes/charging-duties|Shopify Help Center: charging duties and import taxes]]). Fees can change; check the current page. The help page does not state store-country restrictions, so confirm in your admin that the option is offered for your store.",
+          "Shopify's documentation also notes market-specific compliance features, such as showing the lowest price in the previous 30 days when advertising reductions to customers in the EEA (Shopify Help Center). Tax obligations remain country-specific; take advice. For explaining these costs to customers, see [[/blogs/ecommerce-duties-import-taxes|ecommerce duties and import taxes]].",
         ],
+      },
+      {
+        heading: "Managed Markets: Who Is Eligible",
+        body: [
+          "With Managed Markets, Global-e becomes the merchant of record for international orders. It takes on tax remittance, local payment methods and duties, so you do not need tax registrations in the countries you sell to ([[https://help.shopify.com/en/manual/international/managed-markets|Shopify Help Center: Managed Markets]]). Eligibility is narrow: Shopify says it is available to businesses based in the continental United States and to certain stores in Canada and the United Kingdom, on Basic or higher, with an online store and Shopify Payments. Fees for international orders are 3.5% on Basic, Grow and Advanced and 3.25% on Plus, plus currency conversion and Shopify Payments processing fees ([[https://help.shopify.com/en/manual/markets/markets-pro/overview|Shopify Help Center: Managed Markets requirements]]). Stores based in India, the UAE or Australia are not listed, so for them Managed Markets is not an option today and cross-border tax and duty work stays with the merchant and its advisers.",
+        ],
+      },
+      {
+        heading: "If Your Store Is Based in India",
+        body: [
+          "Shopify Payments is not available in India; it is available in the UAE, the UK, Australia and Singapore, among other countries ([[https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries|Shopify Help Center: Shopify Payments supported countries]]). That has three consequences for an India-based store selling abroad:",
+        ],
+        checklist: [
+          "**Checkout runs in your store currency.** You can still create markets, and prices can be shown in local currency, but customers pay in the store's default currency unless the store uses Adyen. Shopify names Adyen as the only alternative for multi-currency payments; check with Shopify whether it is available to your store before planning around it.",
+          "**Managed Markets is not available,** so registrations, tax collection and duty decisions are yours.",
+          "**Price clearly in the currency you charge.** If customers see converted prices but pay in your store currency, say so near the price and in the cart, and expect their bank to apply its own exchange rate. Some merchants run a separate store in another currency instead; weigh that against the extra operations it creates, covered in [[/blogs/country-specific-ecommerce-stores|country-specific ecommerce stores]].",
+        ],
+        callout: {
+          type: "note",
+          text: "Indian export-side rules, such as GST treatment of exports and courier export procedures, are not covered here. Check them with your tax adviser and logistics provider.",
+        },
+      },
+      {
+        heading: "Destination Rules for an India-First Store",
+        body: [
+          "Import rules decide whether you must charge tax at checkout, and whether customers face charges on delivery. These are the thresholds for three common first markets, as published by each government. They change; check the source before relying on them.",
+        ],
+        table: {
+          headers: ["Destination", "Rule", "What it means for your store", "Source"],
+          rows: [
+            ["United Kingdom", "For consignments of £135 or less sold to consumers, the overseas seller must charge and account for VAT at the point of sale and register for UK VAT. Above £135, normal import VAT and customs duty apply at import.", "Below £135, UK VAT belongs in your checkout price. The government has announced that the £135 customs duty relief will be removed by October 2028.", "[[https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk|GOV.UK: VAT and overseas goods]]; [[https://www.gov.uk/government/news/government-backs-high-street-with-acceleration-of-cheap-import-reforms-and-crackdown-on-dodgy-online-sellers|GOV.UK, 23 Jun 2026]]"],
+            ["Australia", "ATO guidance says non-resident businesses selling goods with a customs value of A$1,000 or less to consumers must charge GST at sale once their GST turnover connected with Australia reaches A$75,000. Consignments above A$1,000 are taxed at the border.", "Track Australian sales against the registration threshold. Marketplaces may be responsible instead when you sell through them.", "[[https://www.ato.gov.au/businesses-and-organisations/international-tax-for-business/gst-for-non-resident-businesses/gst-on-low-value-imported-goods|ATO: GST on low value imported goods]] (the page blocked automated access when checked; confirm the current wording)"],
+            ["Dubai (UAE)", "Dubai Customs Circular 16/2026 (30 Jul 2026) raised the e-commerce customs duty exemption from AED 300 to AED 1,000 of CIF value, subject to defined categories and conditions.", "Many parcels to Dubai may now be exempt from customs duty. This is a Dubai Customs rule; other emirates and import VAT were not covered.", "[[https://www.dubaicustoms.gov.ae/en/mobile/pages/newsdetails.aspx?itemid=2195|Dubai Customs news]]"],
+          ],
+        },
       },
       {
         heading: "Headless and Hydrogen",
@@ -628,15 +693,27 @@ export const commercePosts39: BlogPost[] = [
         ],
       },
       {
+        heading: "International Readiness Checklist",
+        body: [
+          "Work through these four blocks before switching on a new market. Each item is something that, if missed, tends to surface as a refused parcel, a support ticket or a margin surprise.",
+        ],
+        checklist: [
+          "**Payments and currency:** confirm whether your store can use Shopify Payments or Adyen; decide which currency each market pays in; set fixed prices for key products; check local payment methods and wallets; note that fixed-amount discounts are created in your default currency.",
+          "**Duties and tax:** add HS codes and country of origin to products; decide between collecting duties at checkout and leaving them to the customer on delivery; check each destination's low-value import rules and registration thresholds; set tax-inclusive display where customers expect it; take advice on registrations.",
+          "**Catalog and content:** remove products you cannot sell in a market; translate product, policy and checkout content; check sizes, units and claims for each country; confirm hreflang and market URLs after launch.",
+          "**Operations and returns:** configure shipping rates for every country (a market cannot be activated without them); check your carrier supports DDP labels if you collect duties; write an international returns policy, including who pays return shipping and whether duties are refunded; test notifications and refunds per market.",
+        ],
+      },
+      {
         heading: "Setup Sequence",
         body: [],
         checklist: [
           "Define markets and submarkets from demand and operations",
-          "Activate Shopify Payments and choose currencies",
+          "Confirm Shopify Payments (or Adyen) is available, then choose currencies; otherwise plan for store-currency checkout",
           "Set exchange rate approach, rounding and fixed prices where needed",
           "Configure catalogs and product availability per market",
           "Assign domains or subfolders and languages; translate content",
-          "Configure tax display and duty collection",
+          "Configure tax display and duty collection, with HS codes on products",
           "Set shipping zones, rates and delivery estimates per market",
           "Test selectors, redirection, hreflang, checkout and emails per market",
           "Monitor indexing, conversion and margin by market",
@@ -665,9 +742,17 @@ export const commercePosts39: BlogPost[] = [
         },
       },
       {
+        heading: "Sources",
+        body: [
+          "Shopify: [[https://help.shopify.com/en/manual/markets/getting-started/market-types|Market types]]; [[https://help.shopify.com/en/manual/markets/getting-started/requirements-and-considerations|Markets requirements and considerations]]; [[https://changelog.shopify.com/posts/customize-checkout-and-customer-accounts-by-market|Changelog: checkout and accounts by market (16 Mar 2026)]]; [[https://help.shopify.com/manual/markets/duties-and-import-taxes/charging-duties|Charging duties and import taxes]]; [[https://help.shopify.com/en/manual/international/managed-markets|Managed Markets]]; [[https://help.shopify.com/en/manual/markets/markets-pro/overview|Managed Markets requirements and fees]]; [[https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries|Shopify Payments supported countries]].",
+          "Destination rules: [[https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk|GOV.UK: VAT and overseas goods sold directly to customers in the UK]]; [[https://www.gov.uk/government/news/government-backs-high-street-with-acceleration-of-cheap-import-reforms-and-crackdown-on-dodgy-online-sellers|GOV.UK: acceleration of low value import reforms (23 Jun 2026)]]; [[https://www.ato.gov.au/businesses-and-organisations/international-tax-for-business/gst-for-non-resident-businesses/gst-on-low-value-imported-goods|ATO: GST on low value imported goods]]; [[https://www.dubaicustoms.gov.ae/en/mobile/pages/newsdetails.aspx?itemid=2195|Dubai Customs: e-commerce duty exemption (Circular 16/2026)]].",
+          "Accessed 14 October 2026. Shopify features, fees and government thresholds change; check the current pages and take professional tax advice.",
+        ],
+      },
+      {
         heading: "Conclusion",
         body: [
-          "Shopify Markets gives one store the tools to sell across countries: market conditions, currency and pricing controls, catalogs, domains, languages, SEO output and duty settings. Configure them deliberately, localize beyond translation and verify every market end to end. For checkout specifics, see [[/blogs/global-ecommerce-checkout|global ecommerce checkout]].",
+          "Shopify Markets gives one store the tools to sell across countries: market conditions, currency and pricing controls, catalogs, domains, languages, SEO output and duty settings. Configure them deliberately, localize beyond translation and verify every market end to end. Before you start, confirm the three things that most often change the plan: whether your store can take payment in local currencies, whether you can collect duties at checkout, and whether you need Advanced or Plus for per-market customization. For checkout specifics, see [[/blogs/global-ecommerce-checkout|global ecommerce checkout]] and the [[/blogs/shopify-checkout-customisation-guide|checkout customization guide by plan]].",
           "For related guides, see [[/blogs/multi-region-ecommerce|multi-region ecommerce]] and [[/blogs/international-ecommerce-shipping|international shipping]].",
         ],
       },

@@ -489,7 +489,7 @@ export const commercePosts33: BlogPost[] = [
       {
         heading: "The Overview: Tasks Before Charts",
         body: [
-          "Sellers open the dashboard to find out what needs doing. The overview should list actionable counts that link to filtered views: orders to ship today, shipments at risk of being late, messages waiting beyond your response target, listings with errors, products low in stock and returns awaiting action. Sales charts are useful but secondary.",
+          "Sellers open the dashboard to find out what needs doing. The overview should list actionable counts that link to filtered views: orders to ship today, shipments at risk of being late, messages waiting beyond your response target, listings with errors, products low in stock and returns awaiting action. Sales charts are useful but secondary. The same tasks-first principle applies to any product dashboard; [[/blogs/saas-dashboard-design|the SaaS dashboard guide]] turns it into a scorecard.",
         ],
         callout: {
           type: "tip",

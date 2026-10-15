@@ -278,7 +278,7 @@ And current contract prices apply, not the original prices`,
       {
         heading: "Conclusion",
         body: [
-          "Acceptance criteria and a disciplined UAT turn go-live decisions into evidence rather than opinion, and keep scope discussions fair. Agree criteria early, test with real users, separate defects from changes and record sign-off. For automated checks between releases, see [[/blogs/automated-regression-testing|automated regression testing]].",
+          "Acceptance criteria and a disciplined UAT turn go-live decisions into evidence rather than opinion, and keep scope discussions fair. Agree criteria early, test with real users, separate defects from changes and record sign-off. For automated checks between releases, see [[/blogs/automated-regression-testing|automated regression testing]]. For handling genuine changes once the build is under way, see [[/blogs/scope-creep-software-projects|how to control scope creep during delivery]].",
         ],
         cta: {
           title: "Preparing to accept a new system?",

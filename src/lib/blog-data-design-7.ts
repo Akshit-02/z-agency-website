@@ -596,7 +596,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "A Focused, Linear Flow",
         body: [
-          "Checkout should feel like one path: account choice, contact and delivery, delivery method, payment, review, confirmation. In short, think of it, with a declined card handled as a recoverable error rather than a restart. Reduce distractions such as the full site navigation, but keep the logo, a link back to the cart and help or contact information. Keep an order summary visible or one tap away throughout.",
+          "Checkout should feel like one path: account choice, contact and delivery, delivery method, payment, review, confirmation. In short, think of it, with a declined card handled as a recoverable error rather than a restart. Reduce distractions such as the full site navigation, but keep the logo, a link back to the cart and help or contact information. Keep an order summary visible or one tap away throughout. The same step-design principles apply to any long form; see [[/blogs/multi-step-form-ux-design|multi-step form UX]].",
         ],
       },
       {

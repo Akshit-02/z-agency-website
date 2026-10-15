@@ -67,7 +67,7 @@ export const mobilePosts: BlogPost[] = [
       {
         heading: "Do You Actually Need an App?",
         body: [
-          "Apps make sense when users return frequently, rely on device capabilities such as notifications, camera, location or offline use, or complete tasks where speed and convenience matter. If users visit occasionally to read information or make a one-off enquiry, a fast, [[/blogs/how-to-make-a-website-mobile-friendly|mobile-friendly website]] may serve them better. A [[/blogs/progressive-web-app-development|progressive web app]] sits in between.",
+          "Apps make sense when users return frequently, rely on device capabilities such as notifications, camera, location or offline use, or complete tasks where speed and convenience matter. If users visit occasionally to read information or make a one-off enquiry, a fast, [[/blogs/how-to-make-a-website-mobile-friendly|mobile-friendly website]] may serve them better. A [[/blogs/progressive-web-app-development|progressive web app]] sits in between. If you are unsure there is demand at all, [[/blogs/how-to-validate-mobile-app-idea|test the idea before development]] first.",
         ],
       },
       {
@@ -145,7 +145,7 @@ export const mobilePosts: BlogPost[] = [
       {
         heading: "What Drives Cost",
         body: [
-          "Cost depends on the number of platforms, feature count and complexity, design depth, backend and integrations, real-time features, admin tools, testing and ongoing maintenance. The [[/blogs/mobile-app-development-cost|mobile app cost guide]] explains each driver, and the [[/blogs/mobile-app-development-timeline|timeline guide]] covers how long each stage takes.",
+          "Cost depends on the number of platforms, feature count and complexity, design depth, backend and integrations, real-time features, admin tools, testing and ongoing maintenance. The [[/blogs/mobile-app-development-cost|mobile app cost guide]] explains each driver, and the [[/blogs/mobile-app-development-timeline|timeline guide]] covers how long each stage takes. How the app will make money shapes the build too; see [[/blogs/mobile-app-monetisation-models|how to monetise a mobile app]].",
         ],
       },
       {
@@ -171,40 +171,118 @@ export const mobilePosts: BlogPost[] = [
   {
     slug: "mobile-app-development-cost",
     title: "How Much Does Mobile App Development Cost?",
+    seoTitle: "iOS and Android App Cost: Fees, Drivers and a Worksheet",
     excerpt:
-      "The variables that actually determine what an app costs to build and run: platforms, features, design, backend, integrations, testing and maintenance.",
+      "What an iOS and Android app really costs: verified store fees and 2026 commission changes, yearly compliance work, and a worksheet for comparing quotes.",
     category: "Mobile Apps",
     banner: "tiers",
+    sceneKind: "cost",
+    bannerAlt: "Tiers of mobile app cost: the scope-driven build, fixed store fees and commissions, and recurring maintenance and compliance work",
     date: "2026-09-25",
-    readingTime: "12 min read",
+    updated: "2026-10-14",
+    readingTime: "13 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["fintech", "healthcare-healthtech", "startups"],
+    relatedSlugs: ["native-vs-cross-platform-app-development", "how-to-validate-mobile-app-idea", "mobile-app-development-cost-australia"],
     faqs: [
-      { q: "How much does it cost to build an app?", a: "There's no honest single figure. Cost depends on platforms, features, design complexity, backend, integrations, testing and where your team is located. A focused MVP costs far less than a feature-rich product with real-time features and multiple integrations." },
+      { q: "How much does it cost to build an app?", a: "There's no honest single figure. Cost depends on platforms, features, design complexity, backend, integrations, testing and where your team is located. A focused MVP costs far less than a feature-rich product with real-time features and multiple integrations. Use the worksheet in this guide to turn your scope into comparable quotes." },
       { q: "Why do app development quotes vary so much?", a: "Quotes differ in scope interpretation, team location and seniority, and what's included: discovery, design, backend, QA, store submission and post-launch support. Compare what's in each quote, not just the total." },
+      { q: "Why doesn't this guide give price ranges?", a: "Published app cost ranges rarely state their scope, team location or method, so they are a poor basis for a budget. This guide gives the fees that can be verified on official pages, plus a worksheet you fill in with real quotes or your own rates." },
+      { q: "How much are the Apple and Google developer accounts?", a: "As checked on 14 October 2026: Apple's Developer Program is 99 USD per membership year, or local currency where available, with fee waivers for eligible nonprofits, accredited educational institutions and government entities. Google Play charges a US$25 one-time registration fee." },
+      { q: "What commission does Google Play charge in 2026?", a: "It depends on the user's region. In the US, UK and EEA (from 30 June 2026) and Australia and Japan (from 30 September 2026), the service fee is 10% on the first US$1M of annual earnings and on auto-renewing subscriptions, plus a 5% billing fee when Google Play Billing is used; other transactions above that follow a new or existing install rate table. Other markets, including India, the UAE and Singapore, remain at 15% on the first US$1M, 30% above it and 15% on subscriptions until updated fees roll out; Google lists the \"Rest of World\" rollout for 30 September 2027 ([[https://support.google.com/googleplay/android-developer/answer/16954621|Play Console Help]])." },
+      { q: "What are Apple's EU App Store terms from October 2026?", a: "Apple's EU page lists, from 1 October 2026: 26% on sales through Apple In-App Purchase, 20% with alternative payment processing in the app, and 15% on sales through out-of-app link-outs, with lower rates of 15%, 10% and 10% for Small Business Program and other program participants and for subscriptions after their first year. Check the page before relying on these figures." },
       { q: "Is cross-platform development cheaper than native?", a: "Usually, because much of the code is shared between iOS and Android. Savings shrink if the app needs a lot of platform-specific work." },
       { q: "What features make an app more expensive?", a: "Real-time features like chat or live tracking, payments, complex authentication, offline sync, video, custom animations, and integrations with other business systems." },
       { q: "Do I need to pay for an admin panel?", a: "Most business apps need one so your team can manage users, content and orders. It's often overlooked in early budgets." },
-      { q: "What are the ongoing costs after launch?", a: "Hosting and backend services, third-party APIs, developer accounts, monitoring tools, bug fixes, OS and store policy updates, and new features." },
-      { q: "How can I reduce app development cost?", a: "Start with a tightly scoped MVP, use cross-platform development where it fits, rely on proven backend services instead of building everything, and invest in discovery so scope doesn't change mid-build." },
+      { q: "What are the ongoing costs after launch?", a: "Hosting and backend services, third-party APIs, developer accounts, monitoring tools, store commissions, bug fixes, the yearly Apple SDK and Google target API updates, and new features." },
+      { q: "How can I reduce app development cost?", a: "Validate the idea before building, start with a tightly scoped MVP, use cross-platform development where it fits, rely on proven backend services instead of building everything, and invest in discovery so scope doesn't change mid-build." },
       { q: "Does location affect app development cost?", a: "Significantly. Rates vary widely by region and seniority, which is why a budget benchmark from one market rarely transfers to another." },
-      { q: "Are app store fees part of development cost?", a: "Developer account fees and the stores' commission on in-app purchases and subscriptions are separate operating costs worth budgeting for." },
+      { q: "Are app store fees part of development cost?", a: "Developer account fees and the stores' commission on in-app purchases and subscriptions are separate operating costs worth budgeting for. They are listed in this guide with the date they were checked." },
     ],
     content: [
       {
-        heading: "Quick answer",
+        heading: "How much does it cost to build an iOS and Android app?",
         body: [
-          "Mobile app development cost is determined by scope, not a standard price: how many platforms you target, how many features you need and how complex they are, the depth of UX and UI work, the backend and admin tools, integrations, real-time functionality, testing effort and ongoing maintenance. Team location and seniority also shift the total considerably. The most reliable way to control cost is a focused first release defined through proper discovery.",
+          "**There is no honest single price. An iOS and Android app's cost is the sum of four parts: the build, which depends on your scope and team; fixed store costs (US$99 a year for Apple's Developer Program and a US$25 one-time fee for Google Play, as checked on 14 October 2026); store commission on digital sales, which changed in several regions in 2026; and recurring work, including the yearly Apple SDK and Google target API updates that every live app must make.** The build is the part that varies most, and only quotes against a written scope can price it.",
+          "This guide deliberately gives no price ranges or market averages, because published ranges rarely state their scope or method. Instead it lists the costs you can verify, explains what drives the rest, and gives you a worksheet to turn quotes, or your own team's rates, into a comparable budget. Budgeting in Australian dollars? See [[/blogs/mobile-app-development-cost-australia|mobile app development cost in Australia]] for GST and local context.",
         ],
       },
       {
-        heading: "Why There's No Single Price",
-        body: [
-          "A habit tracker that stores data on the device and a marketplace with payments, chat and a vendor dashboard are both \"apps\", but they differ in engineering effort by an order of magnitude. Any source quoting one price without knowing your scope is guessing. This guide explains the drivers so you can evaluate a quote against your own requirements.",
+        heading: "Key takeaways",
+        body: [],
+        checklist: [
+          "Developer accounts are small fixed costs: Apple US$99 a year, Google Play US$25 once.",
+          "Store commission on digital goods and subscriptions now depends heavily on region, and changed in 2026.",
+          "Every live app needs yearly updates to keep shipping: a new Xcode and SDK for Apple, a new target API for Google.",
+          "Admin tools, integrations, testing and first-year maintenance are the lines most often missing from budgets.",
+          "Compare quotes line by line against the same scope, using the worksheet below.",
         ],
       },
       {
-        heading: "The Main Cost Drivers",
+        heading: "Why there's no single price",
+        body: [
+          "A habit tracker that stores data on the device and a marketplace with payments, chat and a vendor dashboard are both \"apps\", but they differ in engineering effort by an order of magnitude. Any source quoting one price without knowing your scope is guessing. Before you budget at all, check that people want the product: [[/blogs/how-to-validate-mobile-app-idea|how to validate a mobile app idea]] covers cheap ways to test demand.",
+        ],
+      },
+      {
+        heading: "Fixed costs you can verify",
+        body: [
+          "These are the store-side costs that do not depend on your scope. Figures were checked on the official pages on 14 October 2026.",
+        ],
+        table: {
+          headers: ["Cost", "Apple App Store", "Google Play"],
+          rows: [
+            ["Developer account", "99 USD per membership year, or local currency where available; eligible nonprofits, accredited educational institutions and government entities can request a fee waiver", "US$25, one time"],
+            ["Reduced commission program", "Small Business Program: 15% on paid apps and in-app purchases for developers with up to 1 million USD in proceeds in the prior calendar year, and new developers; you must enrol", "Lower first-US$1M tier built into the fee structure (see below)"],
+            ["Pre-launch testing rule", "No tester minimum; each release goes through App Review", "Personal accounts created after 13 Nov 2023: closed test with at least 12 testers opted in for at least 14 days"],
+          ],
+        },
+      },
+      {
+        heading: "Store commissions by region, as at 14 October 2026",
+        body: [
+          "Commission applies to digital goods, in-app purchases and subscriptions sold through the stores, not to physical goods or services paid for on the web. Both stores changed their terms in 2026, and the rules now differ by the user's region.",
+          "**Google Play.** On 24 June 2026 Google announced a new structure that separates a service fee from a billing fee ([[https://developer.android.com/blog/posts/expanded-billing-choice-and-lower-fees-on-google-play|Android Developers Blog]]). Its service fee page sets out where it applies ([[https://support.google.com/googleplay/android-developer/answer/112622|Play Console Help]]):",
+        ],
+        table: {
+          headers: ["User's region", "From", "Auto-renewing subscriptions", "First US$1M of annual earnings", "Other transactions above the first US$1M"],
+          rows: [
+            ["United States, United Kingdom, EEA", "30 June 2026", "10% + 5% billing fee", "10% + 5% billing fee", "New installs 20% + 5%; existing installs 25% + 5%, or 20% via external web links"],
+            ["Australia, Japan", "30 September 2026", "10% + 5% billing fee", "10% + 5% billing fee", "As above"],
+            ["All other markets, including India, UAE and Singapore", "Unchanged until updated fees roll out; Google lists \"Rest of World\" for 30 September 2027 ([[https://support.google.com/googleplay/android-developer/answer/16954621|Play Console Help]])", "15%", "15% (15% tier)", "30%; 15% or lower for eligible program participants"],
+          ],
+        },
+        callout: {
+          type: "note",
+          text: "On Google Play the 5% billing fee applies only when the purchase uses Google Play Billing, and the \"new\" or \"existing\" install status depends on when the user first installed or updated the app relative to their region's rollout date. Participants in the Play Games Level Up or Apps Experience programs get lower rates. In India and South Korea, approved alternative billing is charged at the Google Play Billing rate reduced by 4%.",
+        },
+      },
+      {
+        heading: "Apple's commission: EU, US and elsewhere",
+        body: [
+          "**EU.** Apple's EU page lists new terms that take effect on 1 October 2026, set out in Attachment 14 of the Apple Developer Program License Agreement ([[https://developer.apple.com/support/apps-in-the-eu/|Apple: apps in the EU]]). For App Store apps it lists 26% on sales through Apple In-App Purchase, 20% for alternative payment processing within the app, and 15% on sales made through an out-of-app link within 7 days of the tap. Small Business Program and other program participants, and auto-renewing subscriptions after the first year, pay 15%, 10% and 10% respectively. Apps distributed outside the App Store pay a 5% Core Technology Commission. Read the page and the agreement before relying on these figures; the page itself refers to both an eliminated Store Services Fee and a store services commission.",
+          "**United States.** Apple's guidelines allow buttons and external purchase links in apps on the US storefront ([[https://developer.apple.com/app-store/review/guidelines/|App Review Guidelines]]). What commission, if any, Apple may charge on those link-out purchases is still being litigated: the Ninth Circuit sent the rate question back to the district court, and on 30 June 2026 the US Supreme Court agreed to review the contempt ruling ([[https://ipwatchdog.com/2026/06/30/high-court-grants-cert-in-apples-challenge-to-ninth-circuit-contempt-ruling-in-app-store-dispute/|IPWatchdog]], press report). We make no prediction; if link-outs matter to your model, plan for more than one outcome.",
+          "**Elsewhere.** Above the Small Business Program threshold, Apple's standard commission applies, and the rate depends on the storefront. Apple also changed its terms in Japan in December 2025 ([[https://www.apple.com/newsroom/2025/12/apple-announces-changes-to-ios-in-japan/|Apple Newsroom]]). Check the current Paid Apps agreement for every storefront you sell in.",
+        ],
+        callout: {
+          type: "takeaway",
+          text: "Fees can change. Both stores changed their terms during 2026, and the US position is before the courts. Re-check the linked pages before you set prices or sign off a business case, and plan a review whenever your model depends on store billing.",
+        },
+      },
+      {
+        heading: "Recurring compliance costs",
+        body: [
+          "Every live app has to keep up with the platforms, even if you add no features. Budget developer time each year for:",
+        ],
+        checklist: [
+          "**Apple's Xcode and SDK minimum.** Since 28 April 2026, apps uploaded to App Store Connect must be built with Xcode 26 or later using the 26 SDKs ([[https://developer.apple.com/news/upcoming-requirements/|Apple]]). Apple has raised this minimum in earlier years too (Xcode 15 from 29 April 2024), so expect a similar requirement each year.",
+          "**Google's target API level.** From 31 August 2026, new apps and updates must target Android 16 (API level 36), with an extension available to 1 November 2026 ([[https://developer.android.com/google/play/requirements/target-sdk|Android]]). The deadline moves up each year.",
+          "**Store policy declarations.** Examples from Apple's requirements page: updated age-rating answers (due 31 January 2026), EU trader status for apps on the EU App Store, and approved reasons for certain APIs (since 1 May 2024).",
+          "**Dependency and SDK updates.** Third-party SDKs (payments, analytics, maps) must be updated to match the new platform versions.",
+        ],
+      },
+      {
+        heading: "The main build cost drivers",
         body: [],
         table: {
           headers: ["Driver", "Lower cost", "Higher cost"],
@@ -229,68 +307,116 @@ export const mobilePosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Features and Complexity",
+        heading: "Features and complexity",
         body: [
           "Feature count matters, but complexity matters more. A feed, a profile and settings are straightforward. Offline sync, real-time updates, media processing and complex permissions each add backend and client work, plus testing. Listing features with their edge cases is the best way to see where effort really sits.",
         ],
         visual: { variant: "bars", accent: "orange", caption: "Real-time features, payments and integrations typically move cost more than screen count." },
       },
       {
-        heading: "UI and UX Design",
+        heading: "UI and UX design",
         body: [
           "Designs built on platform conventions are faster to build and test. Fully custom interfaces and animation add design and development time. Skipping UX research to save money usually costs more later, when the wrong flows need rebuilding. See [[/blogs/mobile-app-ux-design|mobile app UX design]].",
         ],
       },
       {
-        heading: "Backend, Authentication and Payments",
+        heading: "Backend, authentication and payments",
         body: [
           "Managed backend services reduce upfront cost for standard needs; custom backends make sense when business logic is complex or data rules are strict. Authentication and payments both carry security requirements that shouldn't be shortcut. See [[/blogs/mobile-app-backend-development|mobile app backend development]] for what each component involves.",
         ],
-        cta: {
-          title: "Want a scope-based estimate for your app?",
-          description: "ZSpace Labs can review your feature list and explain what's actually driving cost before you commit to a build.",
-        },
       },
       {
-        heading: "Admin Panels and Integrations",
+        heading: "Admin panels and integrations",
         body: [
           "Your team will need to manage users, content, orders or support. Admin tools are easy to leave out of an early budget and awkward to add later. Integrations with CRM, ERP or payment systems add effort in proportion to how many there are and how well documented they are; see [[/blogs/mobile-app-api-integration|mobile app API integration]].",
         ],
       },
       {
-        heading: "Testing and Launch",
+        heading: "Testing and launch",
         body: [
-          "Testing on real devices across OS versions, plus performance, security and accessibility checks, is essential for store approval and user retention. Store preparation, review and submission also take time. Cutting testing moves cost to after launch, usually at a higher price.",
+          "Testing on real devices across OS versions, plus performance, security and accessibility checks, is essential for store approval and user retention. Store preparation, review and submission also take time, and a new personal Google Play account must complete its 14-day closed test before production. Cutting testing moves cost to after launch, usually at a higher price.",
         ],
       },
       {
-        heading: "Ongoing and Hidden Costs",
+        heading: "Cost-estimation worksheet",
+        body: [
+          "Use this to turn a scope into a budget you can defend. Write the scope column first, then fill the cost columns in one of two ways: paste in each supplier's figure for that line, or estimate hours and multiply by your own team's rate. If a quote cannot be split into these lines, ask the supplier to split it.",
+        ],
+        table: {
+          headers: ["Line", "Define before quoting", "Quote A", "Quote B", "Own team: hours × rate"],
+          rows: [
+            ["Discovery and scope", "Goals, users, must-have flows, what is out of scope", "", "", ""],
+            ["Features", "Each feature with its edge cases and user roles", "", "", ""],
+            ["Platforms", "iOS, Android or both; native or cross-platform; minimum OS versions", "", "", ""],
+            ["UX and UI design", "Number of flows, custom versus platform components, design system", "", "", ""],
+            ["Backend and APIs", "Data model, authentication, notifications, managed or custom", "", "", ""],
+            ["Admin panel", "What staff must manage: users, content, orders, support", "", "", ""],
+            ["Integrations", "Each third-party system, and whether it has a documented API", "", "", ""],
+            ["Payments", "Store billing, web checkout or both; refunds; subscriptions", "", "", ""],
+            ["Testing", "Device list, automated tests, security and accessibility checks", "", "", ""],
+            ["Launch", "Store listings, screenshots, review, closed testing, staged rollout", "", "", ""],
+            ["Fixed store costs", "Apple US$99 a year; Google Play US$25 once", "", "", ""],
+            ["Store commission", "Expected digital sales by region × the rates above", "", "", ""],
+            ["Running costs, year one", "Hosting, managed services, third-party APIs, monitoring", "", "", ""],
+            ["First-year maintenance", "OS and SDK updates, target API, bug fixes, dependency updates", "", "", ""],
+            ["Contingency", "A share you set for unknowns; state it, do not hide it", "", "", ""],
+            ["**Total**", "", "", "", ""],
+          ],
+        },
+        callout: {
+          type: "note",
+          text: "Hypothetical example: a founder planning a booking app receives two quotes with very different totals. Laid out in the worksheet, one quote turns out to exclude the admin panel, store submission and any post-launch support. Once both cover the same lines, the gap narrows and the comparison is about quality and approach rather than headline price.",
+        },
+      },
+      {
+        heading: "Ongoing and hidden costs",
         body: [],
         checklist: [
           "Backend hosting and managed service usage that grows with users",
           "Third-party API and SDK fees",
-          "Apple and Google developer accounts",
+          "Apple's annual developer membership",
           "Store commission on in-app purchases and subscriptions",
           "Crash reporting and analytics tools",
-          "Updates for new iOS and Android versions and store policy requirements",
+          "Yearly Xcode, SDK and target API updates, plus store policy declarations",
           "Bug fixes and feature improvements after launch",
         ],
       },
       {
-        heading: "How to Control Cost",
+        heading: "How to control cost",
         body: [
-          "Define the smallest release that delivers the core value, validate it with real users, then invest in what usage shows matters. Invest in discovery so requirements don't shift mid-build, use proven services instead of building commodity features, and choose a platform approach that fits your needs rather than the most ambitious option. The [[/blogs/mobile-app-development-timeline|timeline guide]] shows how the same decisions affect schedule.",
+          "Define the smallest release that delivers the core value, validate it with real users, then invest in what usage shows matters. Invest in discovery so requirements don't shift mid-build, use proven services instead of building commodity features, and choose a platform approach that fits your needs rather than the most ambitious option. If an app is not yet essential, a mobile-friendly web product may be the cheaper first step; see [[/blogs/pwa-vs-native-app|PWA vs native app]]. The [[/blogs/mobile-app-development-timeline|timeline guide]] shows how the same decisions affect schedule, and our page on [[/services/mobile-app-development|scoped iOS and Android app builds]] explains how we approach first releases.",
         ],
-        cta: {
-          title: "Planning your app budget?",
-          description: "Talk to ZSpace Labs about scoping a first release that fits your budget without cutting what users actually need. See how we approach [[/services/mobile-app-development|mobile app development]].",
-        },
+      },
+      {
+        heading: "Common mistakes",
+        body: [],
+        checklist: [
+          "Budgeting from a published range instead of your own scope.",
+          "Comparing quote totals without checking what each includes.",
+          "Leaving out the admin panel, integrations or store submission.",
+          "Assuming store commission is a flat rate everywhere.",
+          "Treating launch as the end of spending and ignoring the yearly platform updates.",
+          "Not planning Google Play's closed-testing period into the launch date.",
+        ],
+      },
+      {
+        heading: "Sources",
+        body: [
+          "Accounts and testing: [[https://developer.apple.com/programs/whats-included/|Apple Developer Program: what's included]]; [[https://developer.apple.com/app-store/small-business-program/|Apple: App Store Small Business Program]]; [[https://support.google.com/googleplay/android-developer/answer/6112435|Google Play: register for a developer account]]; [[https://support.google.com/googleplay/android-developer/answer/14151465|Google Play: testing requirements for new personal developer accounts]].",
+          "Commissions: [[https://support.google.com/googleplay/android-developer/answer/112622|Play Console Help: service fees]]; [[https://developer.android.com/blog/posts/expanded-billing-choice-and-lower-fees-on-google-play|Android Developers Blog: expanded billing choice and lower fees on Google Play (24 June 2026)]]; [[https://support.google.com/googleplay/android-developer/answer/16954621|Play Console Help: understanding Google Play's lower service fees (rollout schedule, checked 15 October 2026)]]; [[https://developer.apple.com/support/apps-in-the-eu/|Apple: apps in the EU]]; [[https://developer.apple.com/app-store/review/guidelines/|Apple: App Review Guidelines]]; [[https://www.apple.com/newsroom/2025/12/apple-announces-changes-to-ios-in-japan/|Apple Newsroom: changes to iOS in Japan]]; [[https://ipwatchdog.com/2026/06/30/high-court-grants-cert-in-apples-challenge-to-ninth-circuit-contempt-ruling-in-app-store-dispute/|IPWatchdog: Supreme Court grants review in Apple's App Store contempt case]] (press report).",
+          "Compliance: [[https://developer.apple.com/news/upcoming-requirements/|Apple: upcoming requirements]]; [[https://developer.android.com/google/play/requirements/target-sdk|Android: target API level requirements]].",
+          "Accessed 14 October 2026. Store fees, commissions and deadlines change, and the US link-out commission is before the courts; check the current pages before budgeting.",
+        ],
       },
       {
         heading: "Conclusion",
         body: [
-          "App cost is the sum of specific decisions: platforms, features, design depth, backend, integrations, testing and maintenance. Understand those drivers and you can compare quotes honestly and plan a first release that fits. For the full picture, see the [[/blogs/mobile-app-development-guide|mobile app development guide]]. Budgeting for an Australian business? See [[/blogs/mobile-app-development-cost-australia|mobile app development cost in Australia]] for GST, store fees and a lifecycle budget model.",
+          "App cost is the sum of specific decisions: platforms, features, design depth, backend, integrations, testing and maintenance, plus store fees and commissions that now depend on where your users are. Write the scope down, fill in the worksheet with real quotes or your own rates, add the verified fixed costs and a commission estimate for each region you sell in, and budget for the yearly platform updates. For the full build process, see the [[/blogs/mobile-app-development-guide|mobile app development guide]].",
         ],
+        cta: {
+          title: "Want a second pair of eyes on your app budget?",
+          description: "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/mobile-app-development|mobile app development]]. If useful, we can go through your filled-in worksheet and explain what is driving each line.",
+        },
       },
     ],
   },
@@ -453,7 +579,7 @@ export const mobilePosts: BlogPost[] = [
       {
         heading: "1. Idea",
         body: [
-          "Write down the problem, who has it, and why an app is the right way to solve it rather than a website or an existing tool. This one-page product hypothesis is what discovery tests.",
+          "Write down the problem, who has it, and why an app is the right way to solve it rather than a website or an existing tool. This one-page product hypothesis is what discovery tests. Before committing to discovery, [[/blogs/how-to-validate-mobile-app-idea|validate the app idea with cheap tests]] so the build starts from evidence.",
         ],
       },
       {
@@ -512,7 +638,7 @@ export const mobilePosts: BlogPost[] = [
       {
         heading: "10. Launch",
         body: [
-          "Launch covers store listings, screenshots, privacy disclosures (Apple's App Privacy details and Google Play's Data safety section), review and release. Staged or phased rollouts let you release to a portion of users first and expand if crash rates and reviews stay healthy.",
+          "Launch covers store listings, screenshots, privacy disclosures (Apple's App Privacy details and Google Play's Data safety section), review and release. Staged or phased rollouts let you release to a portion of users first and expand if crash rates and reviews stay healthy. For a step-by-step list, see [[/blogs/mobile-app-launch-checklist|the first app launch checklist]].",
         ],
       },
       {

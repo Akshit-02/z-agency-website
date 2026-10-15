@@ -286,7 +286,7 @@ export const designPosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Research, define, ideate, prototype, test, build and iterate: the stages are simple, and their value comes from doing each in proportion to the risk. Keep the loop tight and evidence-driven, and the product improves with every cycle. For the full product lifecycle from problem to scale, see [[/blogs/digital-product-development-gcc|digital product development in the GCC]]. For Australian founders and product teams, see [[/blogs/digital-product-development-australia|digital product development in Australia]].",
+          "Research, define, ideate, prototype, test, build and iterate: the stages are simple, and their value comes from doing each in proportion to the risk. Keep the loop tight and evidence-driven, and the product improves with every cycle. For the full product lifecycle from problem to scale, see [[/blogs/digital-product-development-gcc|digital product development in the GCC]]. For Australian founders and product teams, see [[/blogs/digital-product-development-australia|digital product development in Australia]]. For how much of this to finish before developers start, see [[/blogs/how-much-ux-design-before-development|how much UX design a startup needs before development]].",
         ],
       },
     ],
@@ -602,7 +602,9 @@ export const designPosts: BlogPost[] = [
       },
       {
         heading: "Deliverables by Step",
-        body: [],
+        body: [
+          "What developers need at the end of the process depends on whether you are building a marketing site, a Shopify store, a SaaS app or a mobile app; our [[/blogs/design-handoff|design handoff guide]] has a deliverables matrix by project type.",
+        ],
         table: {
           headers: ["Step", "Methods", "Deliverables"],
           rows: [

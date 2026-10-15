@@ -154,6 +154,8 @@ export const auBuildDecisionPosts: BlogPost[] = [
           "[[/blogs/business-process-automation|Business process automation]] for mapping processes first.",
           "[[/blogs/workflow-digitization-australia|Workflow digitisation]] for approvals and forms.",
           "[[/blogs/legacy-software-modernization-australia|Legacy software modernisation]] for replacing older systems.",
+          "[[/blogs/custom-website-vs-web-application|Custom website vs web application]] for deciding whether you need software at all.",
+          "[[/blogs/admin-panel-build-vs-buy|Choosing an admin panel]] when the application is mostly back-office screens.",
         ],
       },
       {

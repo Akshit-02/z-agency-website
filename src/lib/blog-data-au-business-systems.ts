@@ -715,6 +715,8 @@ export const auBusinessSystemsPosts: BlogPost[] = [
           "[[/blogs/product-requirements-document|Product requirements documents]] for capturing what to build.",
           "[[/blogs/data-migration-australia|Data migration]] for assessing data early.",
           "[[/blogs/legacy-software-modernization-australia|Legacy software modernisation]] for replacing older systems.",
+          "[[/blogs/custom-web-application-development-cost|Estimating the cost of a custom web application]] for turning discovery outputs into a comparable estimate.",
+          "[[/blogs/scope-creep-software-projects|Controlling scope creep]] once the build has started.",
         ],
       },
       {
@@ -731,23 +733,24 @@ export const auBusinessSystemsPosts: BlogPost[] = [
   },
   {
     slug: "software-vendor-handover-checklist",
-    title: "Software Vendor Handover Checklist: Code, Access, Documentation and Ownership",
-    seoTitle: "Software Vendor Handover Checklist",
+    title: "Website and Software Handover Checklist: Code, Accounts, Domains and Ownership",
+    seoTitle: "Website and Software Handover Checklist",
     excerpt:
-      "A checklist for taking over software from a vendor: code and IP, infrastructure, credentials, domains, app stores, data, documentation and verification.",
+      "A handover checklist for websites and software: code, domains, DNS, analytics, Search Console, email records and licences, in a safe order of steps.",
     category: "Web Development",
     banner: "auditsteps",
     sceneKind: "security",
-    bannerAlt: "A software handover checklist moving code repositories, cloud access, credentials, domains, app store accounts, data, documentation and runbooks from one vendor to a new owner",
+    bannerAlt: "A handover checklist moving code, cloud access, domains, DNS, analytics, Search Console, email records, licences and backups from a previous vendor to the business that owns them",
     date: "2026-10-10",
-    readingTime: "4 min read",
+    updated: "2026-10-14",
+    readingTime: "11 min read",
     relatedServiceSlugs: ["website-development", "mobile-app-development"],
     relatedIndustrySlugs: ["startups", "saas-technology", "professional-services", "b2b-enterprise"],
-    relatedSlugs: ["software-maintenance-contracts-australia", "software-team-augmentation-australia", "secrets-management"],
+    relatedSlugs: ["secrets-management", "website-security-checklist", "website-migration-guide"],
     faqs: [
       {
         q: "What should a software vendor hand over?",
-        a: "Source code and full history, infrastructure and cloud account access, credentials and secrets (then rotated), domains, DNS and certificates, third-party service accounts, app store accounts, data and backups, documentation and runbooks, CI/CD pipelines, monitoring, and a list of open issues and known risks.",
+        a: "Source code and full history, infrastructure and cloud account access, credentials and secrets (then rotated), domains, DNS and certificates, third-party service accounts, app store accounts, data and backups, documentation and runbooks, CI/CD pipelines, monitoring, and a list of open issues and known risks. For a website, add the registrar, DNS or CDN account, CMS admin, analytics, tag manager, Search Console, email sending records and premium licences.",
       },
       {
         q: "Who should own the cloud and app store accounts?",
@@ -765,28 +768,53 @@ export const auBusinessSystemsPosts: BlogPost[] = [
         q: "Should we rotate all credentials after handover?",
         a: "Yes. Rotate every password, API key, token and certificate the previous vendor could access, remove their user accounts, and review audit logs. Do this after the new team has confirmed access to everything.",
       },
+      {
+        q: "How do I remove an old agency from Google Search Console?",
+        a: "First make sure you are a verified owner yourself, for example with a DNS record you control. Then remove the agency's user and delete all of their verification tokens; Google warns that a removed owner whose tokens remain can re-verify. Check whether the same token also verifies other Google services before deleting it.",
+      },
+      {
+        q: "Our developer registered the domain in their own name. What can we do?",
+        a: "Ask in writing for it to be transferred to you, and check your contract. Under ICANN's rules for generic domains, the registrar's obligations run to the registered holder, so if the developer is the holder you need their cooperation or a legal route. Dispute procedures exist for some situations; take legal advice.",
+      },
     ],
     content: [
       {
-        heading: "What should a software handover include?",
+        heading: "What should a website or software handover include?",
         body: [
-          "**A complete handover transfers source code with history, every account and credential (cloud, domains, app stores, third-party services), data and backups, build and deployment pipelines, monitoring, documentation and runbooks, and open issues, followed by knowledge transfer sessions and verification that a new team can build, deploy, restore and operate the system alone. Then rotate all credentials.** Contracts decide ownership, so involve a lawyer early.",
-          "This guide is for business owners and technical leads changing vendors, bringing work in-house or ending a contract. For ongoing support arrangements, see [[/blogs/software-maintenance-contracts-australia|software maintenance contracts]].",
+          "**A complete handover gives your business owner-level control of everything the product runs on: source code with history, cloud and hosting accounts, the domain registrar, DNS, analytics, tag manager, Search Console, email sending records, app store accounts, third-party services, licences, data and backups, pipelines, documentation and runbooks. Do it in a safe order: confirm your own owner access first, back up, then rotate credentials and remove the old vendor.** Verify the result by building, deploying and restoring without the previous team. Contracts decide ownership of code and IP, so involve a lawyer early.",
+          "This checklist is for business owners and technical leads changing vendors, bringing work in-house or ending a contract, whether the previous team is helpful or not. For ongoing support arrangements after the handover, see [[/blogs/software-maintenance-contracts-australia|software maintenance contracts]].",
         ],
       },
       {
         heading: "Key takeaways",
         body: [],
         checklist: [
-          "Own your accounts from day one where possible.",
-          "Check IP and licences in the contract before the handover.",
-          "Use a written checklist with owners and dates.",
-          "Verify by building, deploying and restoring without the old vendor.",
-          "Rotate every credential afterwards.",
+          "Own your accounts from day one where possible; give vendors user access, not ownership.",
+          "Get owner-level access yourself before removing anyone or rotating anything.",
+          "Separate access from ownership: an admin login is not the same as being the account owner.",
+          "Inventory every service that sends email as your domain before touching DNS.",
+          "Verify by building, deploying and restoring without the old vendor, then rotate every credential.",
         ],
       },
       {
-        heading: "Handover checklist",
+        heading: "The safe order of steps",
+        body: [
+          "Most handover lockouts come from doing the right things in the wrong order, such as removing the agency from an account before anyone at your company is an owner of it, or moving DNS without copying the email records. Follow this sequence.",
+        ],
+        checklist: [
+          "**1. Inventory.** List every account, service, domain, licence and integration, with who owns it today. Use the two tables below.",
+          "**2. Secure ownership.** Get your business made owner or top-level administrator on each account, using a company email address rather than one person's.",
+          "**3. Confirm access.** Log in to each account yourself and check you can manage users. Do not rely on the vendor saying it is done.",
+          "**4. Back up.** Take full backups of code, database, files and DNS records (export the zone), and test a restore.",
+          "**5. Transfer.** Move domains, licences, app store apps and billing to accounts you own.",
+          "**6. Verify by doing.** Build, deploy and restore without the vendor (see the verification list).",
+          "**7. Rotate.** Change passwords, API keys, tokens and certificates the vendor could access.",
+          "**8. Remove the vendor.** Delete their users and verification tokens, and revoke API keys and SSH keys.",
+          "**9. Monitor.** Watch uptime, form submissions, email delivery and analytics for a few weeks.",
+        ],
+      },
+      {
+        heading: "Software handover checklist",
         body: [],
         table: {
           headers: ["Area", "What to receive or confirm"],
@@ -795,7 +823,7 @@ export const auBusinessSystemsPosts: BlogPost[] = [
             ["**Intellectual property**", "IP assignment per contract; third-party and vendor component licences (legal advice)"],
             ["**Infrastructure**", "Cloud accounts or admin access, infrastructure as code, environment list"],
             ["**Credentials**", "Inventory of secrets and where they live; plan to rotate"],
-            ["**Domains and certificates**", "Registrar access, DNS, certificate renewal, email sending records"],
+            ["**Domains and certificates**", "Registrar access, DNS, certificate renewal, email sending records (see the website table)"],
             ["**Third-party services**", "Payment, email, SMS, maps, analytics, monitoring accounts and billing"],
             ["**App stores**", "Apple and Google developer accounts, signing keys and certificates"],
             ["**Data and backups**", "Database access, backup locations, a tested restore"],
@@ -804,6 +832,50 @@ export const auBusinessSystemsPosts: BlogPost[] = [
             ["**Operations**", "Monitoring, alerts, on-call contacts, incident history"],
           ],
         },
+      },
+      {
+        heading: "Website and marketing stack checklist",
+        body: [
+          "Websites add a layer of accounts that software checklists often miss, and many sit in an agency's own account by default. For each one, check ownership, not just access.",
+        ],
+        table: {
+          headers: ["Asset", "Who should own it", "How to verify", "Common trap"],
+          rows: [
+            ["Domain registrar", "Your business, in your own registrar account, with you as registrant", "Registrant details show your company; you can unlock and request the transfer code", "Domain registered in the agency's or a developer's own name"],
+            ["DNS host or CDN (for example Cloudflare)", "Your business", "You are the account owner and can edit records", "Registrar is yours, but DNS runs through the agency's CDN account"],
+            ["Hosting", "Your business, or a contract that names you", "You hold the billing and top-level login", "Site on the agency's shared server"],
+            ["CMS admins", "Your named staff; vendors as separate users", "List all admin accounts; each person has their own", "Shared admin login; old developer accounts left active"],
+            ["Google Analytics 4", "Your business, as Administrator at account level", "The account access list shows your company user as Administrator", "Property sits inside the agency's account"],
+            ["Google Tag Manager", "Your business, as account Administrator", "You can manage users on the account and publish the container", "Only container access, so you cannot manage users"],
+            ["Google Search Console", "Your business, as a verified owner", "Your own verification (for example a DNS record you control)", "You are only a delegated owner; agency tokens remain"],
+            ["Email sending domains", "Your business controls the DNS records", "SPF, DKIM and DMARC records listed and matched to each sending service", "Forms or newsletters stop delivering after a DNS move"],
+            ["Theme and plugin licences", "Licences bought in your name", "Licence keys and renewal accounts are yours", "Premium licences in the agency's account, so updates stop"],
+            ["Forms, CRM and consent tools", "Your business", "Submissions reach your inbox or CRM; you own the consent tool account", "Form notifications go to an agency address"],
+            ["Backups", "Your business holds a copy", "A recent backup restores on a test server", "Only the agency has backups"],
+          ],
+        },
+      },
+      {
+        heading: "Google accounts: the details that cause lockouts",
+        body: [
+          "**Search Console** has owners, full users and restricted users. A verified owner proved ownership with a token, such as a DNS record, HTML file or meta tag; a delegated owner was granted ownership by a verified owner. If every verified owner is removed, Google says remaining users and delegated owners \"will lose access to the property after a grace period\". So add your own verification first. When removing an agency, delete all of their verification tokens for the property, otherwise they can re-verify, and check whether a token is also used by another Google service before removing it ([[https://support.google.com/webmasters/answer/7687615|Search Console Help]]).",
+          "**Google Analytics 4** access can be granted at account level, which applies to every property in the account, or at property level. Permissions can be added lower down but not reduced below what was set higher up, and deleting users requires the Administrator role at account level ([[https://support.google.com/analytics/answer/9305788|Analytics Help]]). Your business should hold account-level Administrator. If the property sits inside an account the agency owns, agree how it will be moved to or managed from an account you control before the contract ends.",
+          "**Google Tag Manager** separates account permissions (Admin or User) from container permissions (from Read to Publish). Only an account Administrator can manage users ([[https://support.google.com/tagmanager/answer/6107011|Tag Manager Help]]).",
+        ],
+      },
+      {
+        heading: "Domains and transfer locks",
+        body: [
+          "For generic domains such as .com, ICANN's Transfer Policy sets the current rules. The registrar must give the registered holder the transfer (AuthInfo) code, and remove any transfer lock it set, within five calendar days of the holder's request if the holder cannot do this themselves, and must not refuse solely because of a payment dispute. A registrar may deny a transfer within 60 days of the domain's creation or of a previous transfer. After a change of registrant, the registrar must apply a 60-day lock on moving to another registrar, unless the holder opted out beforehand ([[https://www.icann.org/resources/pages/transfer-policy-2016-06-01-en|ICANN Transfer Policy]]).",
+          "In practice: if the domain needs both a new registrant (you) and a new registrar, plan the order with your registrar so the 60-day lock does not surprise you. Country-code domains such as .in, .ae, .co.uk or .com.au follow their own registry's rules, so check with the registrar. These rules can change; check the current policy before you start.",
+        ],
+      },
+      {
+        heading: "Email: do not break sending when DNS moves",
+        body: [
+          "Contact forms, CRMs, newsletter tools and shops often send email as your domain, authorised by SPF, DKIM and DMARC records in DNS. If DNS moves and a record is missed, those messages can be rejected or sent to spam. Gmail requires all senders to set up SPF or DKIM; senders of more than 5,000 messages a day to Gmail accounts need SPF and DKIM, a DMARC record (a policy of none is allowed), alignment and one-click unsubscribe for marketing messages ([[https://support.google.com/a/answer/81126|Gmail sender guidelines]]). Yahoo sets similar rules for all and for bulk senders ([[https://senders.yahooinc.com/best-practices/|Yahoo sender best practices]]).",
+          "Before changing DNS, export the full zone, list every service that sends as your domain, and check the new DNS host has every MX, SPF, DKIM and DMARC record. Send a test from each service afterwards.",
+        ],
       },
       {
         heading: "Knowledge transfer",
@@ -820,13 +892,34 @@ export const auBusinessSystemsPosts: BlogPost[] = [
           "Restore a database backup to a test environment.",
           "Release a small change to production.",
           "Renew or confirm automatic renewal of certificates and domains.",
+          "Submit each website form and confirm delivery to your inbox or CRM.",
+          "Send a test email from every service that sends as your domain.",
+          "Check analytics and tag manager still record visits and key events.",
           "Rotate credentials and remove the previous vendor's access; see [[/blogs/secrets-management|secrets management]].",
         ],
       },
       {
-        heading: "Hypothetical example: a booking app",
+        heading: "If the vendor won't cooperate",
         body: [
-          "**This example is hypothetical.** A tourism operator moved its booking web app and mobile apps to a new supplier. The checklist found that the app store accounts and the payment provider account were registered to the previous agency, and that there were no infrastructure scripts. The operator's lawyer confirmed IP ownership under the contract, the accounts were transferred through the stores' processes, the new team recreated infrastructure as code, restored a backup and shipped a release before the previous agency's access was removed and all keys were rotated.",
+          "Start politely and in writing: send a dated list of what you need and by when, and keep copies of every request and reply. Then separate what you can recover yourself from what needs the vendor or a lawyer.",
+        ],
+        table: {
+          headers: ["Situation", "What you can usually do yourself", "When you need more"],
+          rows: [
+            ["Search Console held by the agency", "Verify ownership yourself with a DNS record, if you control DNS, then remove their tokens", "If you do not control DNS, recover that first"],
+            ["Domain in your name at the registrar", "Ask the registrar for the transfer code; it must not be refused solely over a payment dispute", "Rarely, unless the account itself is the agency's"],
+            ["Domain registered in the developer's name", "Ask in writing; check what the contract says", "Legal advice; dispute procedures exist for some cases"],
+            ["Hosting and CMS in your accounts", "Reset admin passwords through the host; remove their users", "Rarely"],
+            ["Analytics in the agency's account", "Set up a property you own so new data is collected", "Historical data stays where it is unless they share or move it"],
+            ["Code and IP", "Check the contract's IP and handover clauses", "Legal advice before withholding payment or taking other action"],
+          ],
+        },
+        callout: { type: "note", text: "This is general information, not legal advice. Rights over code, domains and data depend on your contract and local law." },
+      },
+      {
+        heading: "Hypothetical example: a booking app and its website",
+        body: [
+          "**This example is hypothetical.** A tourism operator moved its booking web app, mobile apps and marketing website to a new supplier. The checklist found that the app store accounts and the payment provider account were registered to the previous agency, that there were no infrastructure scripts, and that the website's DNS ran through the agency's CDN account although the registrar account was the operator's. The operator's lawyer confirmed IP ownership under the contract. The operator added itself as a verified owner in Search Console and account Administrator in GA4, recreated the DNS zone in its own account, including the booking system's DKIM record, and tested email before switching nameservers. The new team rebuilt infrastructure as code, restored a backup and shipped a release before the previous agency's access was removed and all keys rotated.",
         ],
       },
       {
@@ -834,30 +927,30 @@ export const auBusinessSystemsPosts: BlogPost[] = [
         body: [],
         checklist: [
           "Accounts registered in the vendor's name.",
+          "Removing the vendor before your own owner access is confirmed.",
           "Receiving a code zip without history.",
           "Missing app signing keys.",
-          "Forgetting domains, DNS and email records.",
+          "Moving DNS without copying email authentication records.",
+          "Leaving old Search Console verification tokens in place.",
+          "Premium licences that lapse because they were in the agency's account.",
           "Not rotating credentials after the vendor leaves.",
         ],
       },
       {
-        heading: "Related guides",
-        body: [],
-        checklist: [
-          "[[/blogs/software-architecture-review|Software architecture review]] for assessing what you inherit.",
-          "[[/blogs/infrastructure-as-code|Infrastructure as code]] for reproducible environments.",
-          "[[/blogs/open-source-software-audit|Open-source software audit]] for licences.",
-          "[[/blogs/software-team-augmentation-australia|Software team augmentation]] for adding capacity after handover.",
+        heading: "Sources",
+        body: [
+          "[[https://support.google.com/webmasters/answer/7687615|Google Search Console Help: managing owners, users and permissions]]; [[https://support.google.com/analytics/answer/9305788|Google Analytics Help: access management for accounts and properties]]; [[https://support.google.com/tagmanager/answer/6107011|Google Tag Manager Help: user permissions]]; [[https://www.icann.org/resources/pages/transfer-policy-2016-06-01-en|ICANN: Transfer Policy]]; [[https://support.google.com/a/answer/81126|Gmail: email sender guidelines]]; [[https://senders.yahooinc.com/best-practices/|Yahoo: sender best practices]].",
+          "Accessed 14 October 2026. Platform rules and policies change; check the current pages before acting.",
         ],
       },
       {
         heading: "Conclusion",
         body: [
-          "A good handover leaves you able to build, deploy, restore and operate the software without the previous vendor. Own your accounts, check IP and licences, follow a checklist, verify with real tasks and rotate every credential.",
+          "A good handover leaves you able to build, deploy, restore and operate your software and website without the previous vendor. Work in order: inventory, secure ownership, confirm access, back up, transfer, verify, rotate, then remove. For what to check in the code you inherit, see [[/blogs/software-architecture-review|software architecture review]] and [[/blogs/open-source-software-audit|open-source software audit]]; for a site you are also moving, see the [[/blogs/website-migration-guide|website migration guide]]. Our [[/services/website-development|website and web app development]] page explains how we take on work built by other teams.",
         ],
         cta: {
-          title: "Taking over software from another vendor?",
-          description: "ZSpace Labs is an India-based, remote-first technology studio working with Australian and international businesses on [[/services/website-development|web applications]] and [[/services/mobile-app-development|mobile apps]], including software built by other teams. If it would help to plan a handover, we are happy to talk it through.",
+          title: "Get a handover reviewed",
+          description: "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/website-development|websites and web applications]] and [[/services/mobile-app-development|mobile apps]], including software built by other teams. If useful, we can talk through your handover list and the order to do it in.",
         },
       },
     ],

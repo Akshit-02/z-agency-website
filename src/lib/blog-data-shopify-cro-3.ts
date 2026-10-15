@@ -532,7 +532,7 @@ export const shopifyCroPosts3: BlogPost[] = [
       {
         heading: "What: Start With the Actual Number",
         body: [
-          "Before forming any opinion, open Shopify Analytics and look at the real funnel-stage data — sessions, product views, add-to-cart rate, reached-checkout rate, completed-checkout rate. A conversion problem should be traceable to a specific, measurable stage, not a vague sense that \"conversion feels low.\"",
+          "Before forming any opinion, open Shopify Analytics and look at the real funnel-stage data — sessions, add-to-cart rate, reached-checkout rate and completed-checkout rate. Shopify's conversion funnel has no product-view step, so check product engagement separately in product reports or GA4. A conversion problem should be traceable to a specific, measurable stage, not a vague sense that \"conversion feels low.\"",
         ],
       },
       {
@@ -603,7 +603,7 @@ export const shopifyCroPosts3: BlogPost[] = [
     title: "Shopify Funnel Audit: Finding the Stage That's Actually Losing You Customers",
     seoTitle: "Shopify Funnel Audit: Find the Stage Losing You Customers",
     excerpt:
-      "A funnel-level audit table across sessions, product views, add-to-cart, reached checkout and completed checkout — segmented by traffic source.",
+      "A funnel audit table for Shopify's conversion report: sessions, cart additions, reached checkout and completed checkout, segmented by traffic source.",
     category: "Shopify & Ecommerce",
     banner: "funnel",
     date: "2026-08-14",
@@ -611,8 +611,8 @@ export const shopifyCroPosts3: BlogPost[] = [
     relatedServiceSlugs: ["cro-audit", "shopify-development"],
     relatedIndustrySlugs: ["d2c-consumer", "ecommerce", "fashion-apparel"],
     faqs: [
-      { q: "What is a Shopify funnel audit?", a: "A stage-by-stage review of Shopify Analytics' conversion funnel — sessions through product views, add-to-cart, reached checkout and completed checkout — used to find exactly where visitors are dropping off, rather than looking at a single overall conversion rate." },
-      { q: "Where do I find funnel data in Shopify?", a: "Shopify Analytics includes a conversion-funnel report showing sessions moving through each stage; this is the primary data source for this audit." },
+      { q: "What is a Shopify funnel audit?", a: "A stage-by-stage review of Shopify's conversion rate breakdown (sessions, sessions with cart additions, sessions that reached checkout and sessions that completed checkout), used to find exactly where visitors are dropping off, rather than looking at a single overall conversion rate." },
+      { q: "Where do I find funnel data in Shopify?", a: "Shopify Analytics includes a conversion rate breakdown report showing sessions moving through each stage; this is the primary data source for this audit. It has no product-view step, so product page analysis needs GA4 or another product-level analytics report." },
       { q: "How do I know which funnel stage is genuinely weak?", a: "Compare each stage-to-stage drop against your own store's historical trend and, cautiously, against general ecommerce patterns — a sharp, unusual drop relative to your own baseline is a stronger signal than comparing to another store entirely." },
       { q: "Should I segment the funnel by traffic source?", a: "Yes — a funnel that looks fine in aggregate can hide a serious problem concentrated in one channel, like paid traffic landing on a slow page. Segmenting is essential, not optional." },
       { q: "What's the difference between a funnel audit and a full CRO audit?", a: "A funnel audit focuses specifically on the numeric funnel stages; the [[/blogs/shopify-cro-audit|complete CRO audit]] adds page-level and qualitative evidence gathering across the whole store." },
@@ -624,7 +624,7 @@ export const shopifyCroPosts3: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "A Shopify funnel audit reviews Shopify Analytics' conversion funnel stage by stage — sessions, product views, add-to-cart rate, reached-checkout rate, and completed-checkout rate — segmented by traffic source, to find exactly where visitors are dropping off rather than relying on a single blended conversion rate that can hide the real problem.",
+          "A Shopify funnel audit reviews Shopify's conversion rate breakdown stage by stage (sessions, sessions with cart additions, sessions that reached checkout and sessions that completed checkout), segmented by traffic source, to find exactly where visitors are dropping off rather than relying on a single blended conversion rate that can hide the real problem. Shopify's report has no product-view step, so if you need to see product page drop-off, take it from GA4 or another product-level analytics report.",
         ],
       },
       {
@@ -635,13 +635,13 @@ export const shopifyCroPosts3: BlogPost[] = [
       },
       {
         heading: "The Funnel Audit Table",
-        body: ["Fill this in using your own Shopify Analytics data, segmented by the traffic sources that matter most to your store."],
+        body: ["Fill this in using Shopify's conversion rate breakdown, segmented by the traffic sources that matter most to your store. The product page row is not part of Shopify's funnel; take it from GA4 (view_item and add_to_cart events) or another product-level analytics report."],
         table: {
           headers: ["Funnel stage", "What to measure", "Typical warning sign", "Likely cause if weak", "Where to look next"],
           rows: [
-            ["Sessions → Product views", "Product-view rate", "High sessions, low product views", "Weak navigation, homepage, or search relevance", "[[/blogs/shopify-homepage-audit|Homepage audit]], [[/blogs/shopify-search-optimization|search optimization]]"],
-            ["Product views → Add to cart", "Add-to-cart rate", "Visitors view but don't add", "Weak trust signals, unclear pricing, unanswered questions", "[[/blogs/shopify-product-page-audit|Product page audit]]"],
-            ["Add to cart → Reached checkout", "Reached-checkout rate", "Cart abandonment before checkout starts", "Shipping cost surprise, confusing cart UI", "[[/blogs/shopify-cart-audit|Cart audit]]"],
+            ["Sessions → Sessions with cart additions", "Add-to-cart rate", "High sessions, few cart additions", "Weak navigation, homepage, search relevance or product pages", "[[/blogs/shopify-homepage-audit|Homepage audit]], [[/blogs/shopify-search-optimization|search optimization]]"],
+            ["Product page engagement (not in Shopify's funnel; use GA4 or a product analytics report)", "Product-view rate and product view to add-to-cart rate", "Visitors view but don't add", "Weak trust signals, unclear pricing, unanswered questions", "[[/blogs/shopify-product-page-audit|Product page audit]]"],
+            ["Cart additions → Reached checkout", "Reached-checkout rate", "Cart abandonment before checkout starts", "Shipping cost surprise, confusing cart UI", "[[/blogs/shopify-cart-audit|Cart audit]]"],
             ["Reached checkout → Completed checkout", "Completed-checkout rate", "Checkout started but not finished", "Long form, forced account, limited payment options", "[[/blogs/shopify-checkout-audit|Checkout audit]]"],
             ["Any stage, by device", "Mobile vs. desktop rate at each stage", "Mobile consistently lower than desktop", "Mobile-specific UX or speed issue", "[[/blogs/shopify-mobile-cro-audit|Mobile CRO audit]]"],
           ],
@@ -665,7 +665,7 @@ export const shopifyCroPosts3: BlogPost[] = [
         body: ["Patterns that show up repeatedly once stores actually segment their funnel data."],
         checklist: [
           "A steep drop specifically on mobile at the checkout stage, invisible in the blended number",
-          "One paid campaign driving high sessions but very low product views, suggesting a landing-page mismatch",
+          "One paid campaign driving high sessions but very few cart additions (and, in GA4, few product views), suggesting a landing-page mismatch",
           "A healthy add-to-cart rate paired with a weak reached-checkout rate, pointing at the cart itself rather than the product page",
           "A completed-checkout rate that drops sharply for new visitors versus returning customers, suggesting a trust or unfamiliarity issue rather than a technical one",
         ],
@@ -697,129 +697,227 @@ export const shopifyCroPosts3: BlogPost[] = [
   // ------------------------------------------------------- PRODUCT PAGE AUDIT
   {
     slug: "shopify-product-page-audit",
-    title: "The Shopify Product Page Audit: 40 Things to Check",
+    title: "Shopify Product Page Checklist: 40 Things to Check (2026)",
     excerpt:
-      "A comprehensive, page-specific checklist across imagery, pricing, trust signals, descriptions, variants and mobile experience.",
+      "A 40-point Shopify product page checklist with a quick pass/fail test for each item: buy box, media, variants, delivery, reviews, specs and WCAG 2.2.",
     category: "Shopify & Ecommerce",
     banner: "pdphotspots",
+    sceneKind: "pdp",
+    bannerAlt: "A Shopify product page with numbered hotspots on the gallery, variant selector, price, delivery note, reviews and Add to cart button, each marking a checklist item",
     date: "2026-08-17",
-    readingTime: "13 min read",
+    updated: "2026-10-15",
+    readingTime: "12 min read",
     relatedServiceSlugs: ["cro-audit", "shopify-development"],
     relatedIndustrySlugs: ["d2c-consumer", "ecommerce", "fashion-apparel"],
+    relatedSlugs: ["shopify-product-page-optimization", "ecommerce-product-page-design", "shopify-mobile-cro-audit"],
     faqs: [
-      { q: "What should I check first on a Shopify product page audit?", a: "Start above the fold — the primary image, price, variant selection and Add to Cart button — since that's what every visitor sees before deciding whether to scroll further." },
-      { q: "How many product images does a product page need?", a: "Enough to answer the visitor's real questions — usually multiple angles, a scale or context shot, and any relevant detail shots. More isn't always better if the images are redundant rather than informative." },
-      { q: "Do all 40 checklist items apply to every type of product?", a: "No — a few, like a size guide, apply specifically to apparel and footwear. Skip items that genuinely don't fit your catalog rather than forcing them." },
-      { q: "How does this relate to the general CRO checklist?", a: "The [[/blogs/shopify-cro-checklist|CRO checklist]] covers the whole store briefly; this audit goes deep on the product page specifically, which is usually the highest-leverage single page type in the store." },
-      { q: "Should reviews be shown even if a product has very few?", a: "Yes, real reviews — even a small number — tend to build more trust than no reviews at all, as long as they're genuine and not fabricated or purchased." },
-      { q: "How do I measure whether product page changes actually worked?", a: "Track add-to-cart rate and product conversion rate for the specific page in Shopify Analytics before and after the change, ideally with an A/B test where traffic allows." },
-      { q: "Is a longer or shorter product description better?", a: "Neither universally — length should match how much genuine explanation the product needs. A complex product benefits from more detail; a simple, well-understood product doesn't need padding." },
-      { q: "What's the single highest-impact product page change most stores are missing?", a: "There's no universal answer — it depends on where your own evidence points. Trust-signal placement and mobile usability are common candidates, but confirm with your own data rather than assuming." },
+      { q: "What should I check first on a Shopify product page audit?", a: "Start with the buy box: the primary image, title, price, variant selection and Add to cart button. That is what every visitor sees before deciding whether to scroll further." },
+      { q: "How many product images does a product page need?", a: "Enough to answer the visitor's real questions: usually several angles, a scale or in-use shot, and any relevant detail shots. More is not always better if the images repeat each other rather than inform. Shopify allows up to 250 images, videos or 3D models per product, so the limit is rarely the constraint." },
+      { q: "Do all 40 checklist items apply to every type of product?", a: "No. A few, like size buttons, human model images and unit prices, apply only to some catalogues. Mark items that genuinely do not fit your products as not applicable rather than forcing them." },
+      { q: "How does this relate to the general CRO checklist?", a: "The [[/blogs/shopify-cro-checklist|Shopify CRO checklist]] covers the whole store briefly. This checklist goes deep on the product page specifically, which is usually the highest-leverage single page type in the store." },
+      { q: "Should reviews be shown even if a product has very few?", a: "Yes. Real reviews, even a small number, tend to build more trust than none at all, as long as they are genuine and not fabricated or purchased." },
+      { q: "How do I measure whether product page changes actually worked?", a: "Track add-to-cart rate and product conversion rate for the specific page before and after the change, ideally with an A/B test where traffic allows. Write down the date of each change so you can line it up with the data." },
+      { q: "Is a longer or shorter product description better?", a: "Neither universally. Length should match how much genuine explanation the product needs. A complex product benefits from more detail; a simple, well-understood product does not need padding." },
+      { q: "What's the single highest-impact product page change most stores are missing?", a: "There is no universal answer; it depends on where your own evidence points. Baymard's benchmark suggests delivery cost, returns and variant selection are commonly weak, but confirm with your own data rather than assuming." },
+      { q: "Can I show different colours as one product if they are separate products in Shopify?", a: "On Shopify Plus and enterprise plans, the Combined Listings app groups up to 60 separate products into one listing. On other plans, the usual routes are a swatch app or custom theme code that links the related products." },
+      { q: "Is a Shopify theme accessible by default?", a: "A well-built theme gives you a good start, but Shopify itself says following its guidelines does not guarantee a fully accessible store. Your images, colours, apps and custom sections all affect the result, so test the live page." },
     ],
     content: [
       {
-        heading: "Quick answer",
+        heading: "What a Shopify product page checklist should cover",
         body: [
-          "A Shopify product page audit checks whether the page above the fold, product imagery, pricing and variant clarity, trust signals, description content, and mobile experience all work together to move a genuinely interested visitor toward adding the product to cart. This guide breaks that into 40 specific checks across six categories — use it alongside your own add-to-cart rate data to confirm which checks matter most for your store.",
+          "A useful product page checklist tests whether a visitor can understand the product, choose the right variant, see the full cost and delivery terms, trust what they read, and add to cart on any device, including with a keyboard. The 40 checks below are grouped into eight areas, and each one has a quick pass/fail test and the Shopify feature you would use to fix it.",
+          "The bar is lower across the industry than most merchants assume. Baymard Institute's 2026 product page benchmark (updated 18 March 2026) rated 52% of desktop sites, 62% of mobile sites and 64% of apps as \"mediocre or worse\" for product page UX. Those are large US and European retailers, not Shopify stores specifically, but the common gaps it lists (size selection, delivery cost, returns information) show up in Shopify themes too.",
+          "This page is the checklist. For the method behind it (what to test first and how to run experiments), read the wider [[/blogs/shopify-product-page-optimization|Shopify product page optimisation guide]].",
         ],
       },
       {
-        heading: "Above the Fold",
-        body: ["What a visitor sees before any scrolling."],
+        heading: "Key takeaways",
+        body: [],
         checklist: [
-          "Primary image loads quickly and clearly represents the product",
-          "Price is visible without scrolling",
-          "Variant selection (size, color) is visible and easy to use",
-          "Add to Cart button is visually prominent and unambiguous",
-          "Product title clearly identifies what the product is",
-          "Stock status (in stock, low stock, out of stock) is visible",
-          "No layout shift as images and price load in",
+          "Audit three to five real products, not your best-looking one: a best-seller, a high-traffic product with a low add-to-cart rate, and your most complex variant product.",
+          "Most fixes are native: theme editor settings, variant images, metafields, metaobjects and alternate templates. Apps and custom code come second.",
+          "Baymard's benchmark data shows many sites still miss basics such as a total cost estimate near the buy section (67% do not) and a returns link on the product page (44% do not).",
+          "Accessibility belongs in the audit. WCAG 2.2 adds two checks that product pages often fail: focus hidden behind sticky Add to cart bars, and tap targets smaller than 24 by 24 CSS pixels.",
+          "Know each product's add-to-cart rate before you change anything, or you will not know what worked.",
         ],
       },
       {
-        heading: "Imagery and Media",
-        body: ["Helping a visitor picture owning the product."],
-        checklist: [
-          "Multiple angles are shown, not just one front-facing shot",
-          "At least one image shows the product in real use or context",
-          "A scale reference is provided where size is hard to judge from a photo alone",
-          "Zoom or a detail view is available for texture or material detail",
-          "Video is included where it genuinely helps demonstrate the product",
-          "Images are optimized for fast load without visible quality loss",
+        heading: "How to run the checklist",
+        body: [
+          "Open each product on a phone and on a desktop browser. Have the Shopify admin open in another tab so you can see the product's variants, media and metafields. For each item, record pass, fail or not applicable. Most tests take under five minutes; the accessibility ones need a keyboard and the browser's zoom.",
+          "Score each failure by how many visitors it affects and how close it sits to the purchase decision. A broken variant image on a best-seller matters more than a missing care guide on a slow product. Then fix in batches and measure, rather than changing everything at once.",
         ],
       },
       {
-        heading: "Pricing and Variants",
-        body: ["Removing ambiguity at the exact decision point."],
-        checklist: [
-          "Price is unambiguous, including any discount or comparison pricing shown honestly",
-          "Variant options are easy to distinguish visually, not just by label text",
-          "Selecting a variant updates price, image and availability correctly",
-          "Size or fit guidance is available for apparel and footwear",
-          "Bundle or quantity discounts, if offered, are clearly explained",
-        ],
-      },
-      {
-        heading: "Trust and Social Proof",
-        body: ["See the [[/blogs/shopify-trust-optimization|trust optimization guide]] for the full store-wide version."],
-        checklist: [
-          "Reviews or ratings are visible near the price and CTA, not only lower on the page",
-          "Reviews are genuine — never fabricated or purchased",
-          "Return and shipping policy information is accessible from the product page",
-          "Security or payment trust marks are present if relevant to the audience",
-          "Any certifications or claims (materials, sourcing) are accurate and verifiable",
-        ],
-        cta: {
-          title: "Want your product pages checked against real funnel data?",
-          description: "ZSpace Labs can audit product page performance using actual Shopify Analytics add-to-cart data, not just a visual review.",
+        heading: "1. Buy box (items 1 to 6)",
+        body: ["The title, price, options and button: what every visitor sees before they decide to scroll."],
+        table: {
+          headers: ["#", "Check", "How to check (pass/fail)", "Shopify method"],
+          rows: [
+            ["1", "Product title says what the product is", "Read the title alone. Would a new visitor know the product type and key variant?", "Product title field; keep brand slogans for the description"],
+            ["2", "Price is visible without scrolling on a phone", "Load the page on a phone. Pass if the price is on the first screen.", "Theme editor: order of blocks in the product information section"],
+            ["3", "Add to cart is the most prominent button and clearly labelled", "Squint at the page. Pass if Add to cart stands out more than Buy now, wishlist or app buttons.", "Theme editor: buy buttons block and colour settings"],
+            ["4", "Stock status is shown and accurate per variant", "Select a variant you know is out of stock. Pass if the page says so before you tap Add to cart.", "Inventory tracking on the variant; theme's inventory status setting"],
+            ["5", "Nothing jumps as the page loads", "Reload on a slow mobile connection. Fail if the button or price moves when images or review widgets appear.", "Fixed image aspect ratio in the theme; reserve space for app widgets"],
+            ["6", "Cross-sell does not compete with the main purchase", "On mobile, pass if recommendations sit below the buy box and do not repeat the Add to cart call.", "Theme editor section order; see the [[/blogs/shopify-product-recommendations|guide to product recommendations]]"],
+          ],
         },
       },
       {
-        heading: "Description and Content",
-        body: ["Answering real questions, not just listing specifications."],
-        checklist: [
-          "Description addresses genuine pre-purchase questions, not only specifications",
-          "Tone and content match how the target customer actually talks about the product",
-          "Common objections (fit, durability, care) are addressed directly where relevant",
-          "Content is scannable — not a single dense block of text",
-          "No exaggerated or unverifiable claims about results or performance",
-          "FAQ content, if present, is specific to the product, not generic boilerplate",
-        ],
+        heading: "2. Media (items 7 to 12)",
+        body: ["Photos and video do the job a shop assistant would do in person."],
+        table: {
+          headers: ["#", "Check", "How to check (pass/fail)", "Shopify method"],
+          rows: [
+            ["7", "Several angles plus close-up detail shots", "Count distinct views. Fail if the gallery is one hero shot repeated in crops.", "Product media in admin"],
+            ["8", "At least one image shows scale or real use", "Could you judge the size from the gallery alone? Baymard found 37% of sites lack \"in scale\" images.", "Add a lifestyle or in-hand image"],
+            ["9", "A human model is shown for worn products", "For apparel, jewellery and bags, pass if a model image exists. 23% of benchmarked sites miss this.", "Product media; variant image for each colour"],
+            ["10", "Zoom works on phone and desktop", "Pinch and tap on mobile; click on desktop. Fail if the zoomed image is blurry.", "Theme media settings; upload larger source files"],
+            ["11", "Image files are inside Shopify's limits and sized sensibly", "Check source files: under 20 MB and at most 5000 by 5000 px. Shopify says 2048 by 2048 px usually displays best for square images.", "Re-export oversized files before upload"],
+            ["12", "Video shows what photos cannot", "Does the video demonstrate fit, use or scale? Fail if it is a slideshow of the photos.", "Upload (up to 10 minutes, 1 GB, 4K) or embed YouTube or Vimeo"],
+          ],
+        },
+        callout: {
+          type: "note",
+          text: "Shopify's media limits (Help Center, checked 15 October 2026): up to 250 images, videos or 3D models per product, a limit Shopify says cannot be raised. Images up to 5000 by 5000 px (25 megapixels) and under 20 MB in PNG, JPEG, TIFF, BMP, GIF, SVG, HEIC or WebP. Uploaded video up to 10 minutes and 1 GB in .mp4, .mov or .webm. 3D models up to 500 MB in GLB or USDZ.",
+        },
       },
       {
-        heading: "Mobile and Technical",
-        body: ["See the [[/blogs/shopify-mobile-cro-audit|mobile CRO audit]] for the deeper store-wide version."],
-        checklist: [
-          "Variant selectors and Add to Cart are easy to tap accurately on mobile",
-          "Images load quickly on mobile connections, not just desktop broadband",
-          "No horizontal scroll or cut-off content on common mobile widths",
-          "Sticky Add to Cart bar (if used) doesn't obscure important content",
-          "Page passes Core Web Vitals thresholds specifically on mobile",
-          "Related or recommended products don't push the primary CTA below the fold on mobile",
-        ],
+        heading: "3. Variants and options (items 13 to 18)",
+        body: ["Variant selection is where many otherwise good pages lose people."],
+        table: {
+          headers: ["#", "Check", "How to check (pass/fail)", "Shopify method"],
+          rows: [
+            ["13", "Choosing a variant updates image, price, stock and URL", "Select each colour and size. Pass if the main image, price and availability change and the URL updates.", "Assign a variant image to each variant in admin"],
+            ["14", "Sizes are buttons, not a dropdown", "Pass if every size is visible at once. Baymard found 57% of sites do not use buttons for size selection.", "Theme editor: variant picker style set to buttons or pills"],
+            ["15", "Colour swatches are distinguishable and labelled", "Could someone with low colour perception tell the options apart? Pass if each swatch has a visible or announced name.", "Theme swatch settings; category metafield colour values"],
+            ["16", "Unavailable combinations are marked before selection", "Pick a size that is sold out in one colour. Fail if you only find out after tapping Add to cart.", "Theme setting for unavailable variants; inventory tracking"],
+            ["17", "Your theme and apps handle the number of variants you use", "Shopify raised the limit to 2,048 variants per product in October 2025. Open your largest product and check every option still renders and selects correctly.", "Test the theme and any variant or swatch apps against the real product"],
+            ["18", "Colours sold as separate products are linked", "On a single-colour product, can the visitor see and switch to the other colours?", "Combined Listings app (Plus and enterprise plans only), a swatch app, or custom theme code"],
+          ],
+        },
+        callout: {
+          type: "note",
+          text: "Combined listings, per Shopify's Help Center: available only on Plus and enterprise commerce plans; up to 60 products in one listing; up to 2,048 variants across the child products by default. They display on free Shopify themes from version 15.0.0; other themes may need code changes. Check the current terms before you plan around them.",
+        },
       },
       {
-        heading: "Related Products and Cross-Sell",
+        heading: "4. Price, delivery and returns (items 19 to 24)",
+        body: ["Shoppers want the full cost and the exit route before they commit."],
+        table: {
+          headers: ["#", "Check", "How to check (pass/fail)", "Shopify method"],
+          rows: [
+            ["19", "Discounts and compare-at prices are honest", "Was the product really sold at the compare-at price? Fail if the \"was\" price is invented.", "Compare-at price field, used only for real reductions"],
+            ["20", "Unit price is shown where quantity or size varies", "For multipacks, liquids or bulk goods, can a visitor compare value per unit? Baymard: 81% of sites do not show it.", "The unit price setting if available to your store, or a metafield shown in the theme"],
+            ["21", "A total cost estimate sits near the buy section", "Can you tell the shipping cost or free-shipping threshold without going to checkout? 67% of benchmarked sites do not show this.", "Text or metafield block near the buy buttons; keep it in step with shipping settings"],
+            ["22", "Delivery time is stated", "Pass if the page gives a realistic dispatch or delivery window for the visitor's region.", "Theme block, metafield or delivery-date app"],
+            ["23", "Return policy is shown or linked on the page", "Find the returns terms without leaving the page. 44% of benchmarked sites fail this.", "Collapsible tab block linked to your refund policy page"],
+            ["24", "Bundle or quantity discounts are explained", "If offered, can a visitor see the saving and the conditions next to the price?", "A bundle or discount app, with clear on-page wording"],
+          ],
+        },
+      },
+      {
+        heading: "5. Reviews and trust (items 25 to 28)",
+        body: ["The store-wide version is in the [[/blogs/shopify-trust-optimization|Shopify trust optimisation guide]]."],
+        table: {
+          headers: ["#", "Check", "How to check (pass/fail)", "Shopify method"],
+          rows: [
+            ["25", "Rating summary sits near the title or price and links to reviews", "Pass if the star rating and count are visible in the buy box and tapping them scrolls to the reviews.", "Review app block placed in the product information section"],
+            ["26", "Reviews are genuine and include critical ones", "Fail if reviews are imported from elsewhere without disclosure, incentivised without a label, or filtered to five stars only.", "Review app moderation settings"],
+            ["27", "Visitors can browse reviews with customer photos", "Is there a photo filter or gallery? Baymard found 63% of sites do not offer one.", "Review app photo display settings"],
+            ["28", "Claims about materials, sourcing or certifications are accurate", "Can you show evidence for every claim on the page? Fail if not.", "Description or specification metafields; remove what you cannot back up"],
+          ],
+        },
+      },
+      {
+        heading: "6. Content and specifications (items 29 to 32)",
         body: [
-          "Recommendations can lift average order value, but placed carelessly they compete with the primary purchase decision instead of supporting it — see the [[/blogs/shopify-product-recommendations|product recommendations guide]] for placement guidance that avoids this.",
+          "Specifications and size guides typed into each description are hard to keep consistent. Shopify's custom data tools fix that: a metafield stores one value per product (fabric, dimensions, wattage), and a metaobject stores a reusable group of fields (a size guide or a product highlight) that many products can reference. In a theme that supports dynamic sources, you connect most metafields to blocks in the theme editor with no code; vintage themes need code edits.",
+        ],
+        table: {
+          headers: ["#", "Check", "How to check (pass/fail)", "Shopify method"],
+          rows: [
+            ["29", "Description answers pre-purchase questions and is scannable", "List the three questions customer service hears most about this product. Pass if the page answers them in short sections.", "Description plus collapsible tab blocks"],
+            ["30", "Specifications are structured, not buried in prose", "Pass if dimensions, materials and compatibility appear in a consistent table or list across similar products.", "Product metafields connected as dynamic sources"],
+            ["31", "Size guides, care and FAQs are reused, not copied", "Change the size guide in one place. Pass if every relevant product updates.", "Metaobject entries referenced by a product metafield"],
+            ["32", "Different product types get layouts that suit them", "Compare a simple product and a configurable one. Fail if both use a layout that suits neither.", "Alternate product templates, assigned per product or in bulk"],
+          ],
+        },
+      },
+      {
+        heading: "7. Accessibility (items 33 to 37)",
+        body: [
+          "Shopify's own accessibility guidance covers alt text, contrast and captions, and notes that following it \"doesn't guarantee that your online store is fully accessible\". WCAG 2.2, a W3C Recommendation since October 2023, added criteria that product pages commonly fail. For legal requirements in your markets, see the [[/blogs/ecommerce-accessibility-checklist|ecommerce accessibility checklist]].",
+        ],
+        table: {
+          headers: ["#", "Check", "How to check (pass/fail)", "Shopify method"],
+          rows: [
+            ["33", "Every product image has descriptive alt text", "Inspect images or use a screen reader. Fail if alt text is empty, the file name, or the product title repeated.", "Alt text field on each media item in admin"],
+            ["34", "Text and button contrast meets 4.5:1 (3:1 for large text)", "Run the price, button text and sale badges through a contrast checker.", "Theme colour settings"],
+            ["35", "Focus is not hidden by a sticky Add to cart bar (WCAG 2.4.11)", "Tab through the page with the sticky bar visible. Fail if the focused element is ever completely hidden behind it.", "Theme code: scroll padding or hide the bar while focus is beneath it"],
+            ["36", "Swatches, size buttons and quantity controls are large enough (WCAG 2.5.8)", "Measure in developer tools. Pass if targets are at least 24 by 24 CSS pixels or have enough spacing, allowing for WCAG's exceptions.", "Theme CSS for the variant picker and quantity selector"],
+            ["37", "Gallery and 360 viewers work without dragging, and videos have captions", "Can you change images with buttons alone (WCAG 2.5.7)? Do videos have captions?", "Theme gallery settings; captions on uploaded video"],
+          ],
+        },
+      },
+      {
+        heading: "8. Performance and measurement (items 38 to 40)",
+        body: ["The deeper store-wide mobile checks are in the [[/blogs/shopify-mobile-cro-audit|Shopify mobile CRO audit]]."],
+        table: {
+          headers: ["#", "Check", "How to check (pass/fail)", "Shopify method"],
+          rows: [
+            ["38", "The mobile page is fast and fits the screen", "Check field data in PageSpeed Insights for the product URL; scroll on a narrow phone. Fail on poor Core Web Vitals or any horizontal scroll.", "Fewer apps on the product template; image sizes; see [[/blogs/shopify-speed-cro|speed and conversion]]"],
+            ["39", "You know each product's add-to-cart rate", "Can you name the rate for the products you audited, by device?", "Shopify Analytics product reports, or GA4 view_item and add_to_cart events; check the setup with a [[/blogs/shopify-analytics-tracking-audit|tracking audit]]"],
+            ["40", "Changes are logged and tested where traffic allows", "Is there a dated log of product page changes?", "A shared change log; an A/B testing app for high-traffic products"],
+          ],
+        },
+      },
+      {
+        heading: "Hypothetical example: scoring one product",
+        body: [
+          "Hypothetical example: a store selling linen shirts audits its best-seller. It passes most media and buy box checks but fails items 14 (sizes in a dropdown), 21 (shipping cost appears only at checkout), 23 (returns link in the footer only) and 35 (the sticky bar covers the focused quantity selector). Each colour is a separate product, so item 18 also fails, and the store is not on Plus.",
+          "A sensible order is the cheap, high-reach fixes first: switch the variant picker to buttons and add a delivery and returns block near the price in the theme editor. Then a developer fixes the sticky bar focus issue and adds colour links between the related products. The store records the add-to-cart rate for two to four weeks before and after each batch rather than judging the result in the first few days.",
         ],
       },
       {
-        heading: "Using This Audit Alongside Real Data",
+        heading: "Common mistakes when auditing product pages",
+        body: [],
+        checklist: [
+          "Auditing on desktop only. Check your own device split and audit on the device most of your visitors use.",
+          "Treating every failure as equal. A fail on a product with ten visits a month can wait.",
+          "Adding an app for every gap. Each app block can add scripts and layout shift; check whether the theme already does it.",
+          "Hard-coding specifications into descriptions, which makes them inconsistent and hard to update.",
+          "Copying a competitor's page without knowing whether it performs.",
+          "Changing many things at once, so nobody can tell which change moved the numbers.",
+        ],
+      },
+      {
+        heading: "When a checklist is not enough",
         body: [
-          "A visual pass through this checklist finds obvious gaps; pairing it with your actual add-to-cart rate and session recordings confirms which gaps are actually costing you conversions versus which are minor.",
+          "A checklist finds visible gaps. It does not tell you why visitors leave when the page looks fine. If a product has a healthy page but a poor add-to-cart rate, the cause may be price, the offer, the traffic source or the product itself; [[/blogs/product-page-traffic-no-sales|diagnosing traffic without sales]] covers that. Platform-neutral layout principles are in [[/blogs/ecommerce-product-page-design|ecommerce product page design]].",
+          "The checklist also has limits on its own items. Baymard's percentages describe leading US and European sites, not your store or Shopify as a whole. Native features vary by plan and theme version, so confirm against Shopify's current documentation. Low-traffic stores cannot run reliable A/B tests on most products, so use before-and-after comparisons with caution. For a full review with funnel data and session recordings, a [[/services/cro-audit|conversion rate optimisation audit]] goes further than a page checklist.",
         ],
         table: croAuditFrameworkTable,
-        cta: {
-          title: "Want the full audit process applied to your product pages?",
-          description: "See the [[/blogs/shopify-cro-audit|complete Shopify CRO audit]] for how page-level findings feed into a prioritized roadmap. See how we approach [[/services/cro-audit|conversion rate optimisation]].",
-        },
+      },
+      {
+        heading: "Sources",
+        body: [
+          "Benchmark data (industry research, not Shopify-specific): [[https://baymard.com/blog/current-state-ecommerce-product-page-ux|Baymard Institute: Product Page UX 2026 (updated 18 March 2026)]].",
+          "Shopify (official): [[https://help.shopify.com/en/manual/products/product-media/add-media|Adding media to products (250-media limit)]]; [[https://help.shopify.com/en/manual/products/product-media/product-media-types|Product media types and size requirements]]; [[https://help.shopify.com/en/manual/products/combined-listings-app|Combined Listings app]]; [[https://changelog.shopify.com/posts/we-ve-increased-the-product-variant-limit-to-2048|Changelog: variant limit increased to 2,048]]; [[https://help.shopify.com/en/manual/custom-data/metafields/connect-metafields|Connecting metafields to your theme]]; [[https://help.shopify.com/en/manual/custom-data/metaobjects|Metaobjects]]; [[https://help.shopify.com/en/manual/online-store/themes/theme-structure/templates|Theme templates]]; [[https://help.shopify.com/en/manual/online-store/themes/customizing-themes/accessibility|Accessibility best practices for themes]].",
+          "Accessibility standard: [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C: What's new in WCAG 2.2]].",
+          "Accessed 15 October 2026. Shopify plan features and limits change; check the current pages before relying on them.",
+        ],
       },
       {
         heading: "Conclusion",
         body: [
-          "The product page is usually the highest-leverage single page type in a Shopify store — a small improvement here compounds across every product in the catalog. Work through these 40 checks methodically, then confirm with real add-to-cart data which fixes are actually worth prioritizing first.",
+          "Pick three to five products, run the 40 checks, and record pass, fail or not applicable. Fix the failures that affect the most visitors closest to Add to cart, using native Shopify features before apps, and measure each batch against the product's add-to-cart rate. Then move on to the cart and checkout, where the [[/blogs/shopify-cro-audit|full Shopify CRO audit]] shows how page-level findings feed a prioritised roadmap.",
         ],
+        cta: {
+          title: "Want a second pair of eyes on your product pages?",
+          description: "ZSpace Labs is a remote-first technology studio that works with clients globally on [[/services/cro-audit|product page audits]] and [[/services/shopify-development|Shopify theme work such as metafields, templates and variant pickers]]. If useful, we can talk through what your checklist turned up and which fixes to tackle first.",
+        },
       },
     ],
   },

@@ -118,7 +118,7 @@ export const commercePosts53: BlogPost[] = [
       {
         heading: "Quality Checks That Catch Problems Early",
         body: [
-          "Compare daily purchase counts and revenue between analytics and the platform, alert on sudden changes in event volumes, validate parameters (currency, item IDs) and test tracking in staging before releases. Expect differences caused by consent and blockers; investigate changes in the gap rather than chasing perfect matches.",
+          "Compare daily purchase counts and revenue between analytics and the platform, alert on sudden changes in event volumes, validate parameters (currency, item IDs) and test tracking in staging before releases. Expect differences caused by consent and blockers; investigate changes in the gap rather than chasing perfect matches. On Shopify, [[/blogs/shopify-analytics-tracking-audit|this tracking audit]] turns these checks into step-by-step tests.",
         ],
         code: {
           label: "Daily reconciliation check (pseudocode)",
@@ -783,7 +783,7 @@ export const commercePosts53: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Ecommerce dashboard design is information architecture for decisions: questions and audiences first, then headline, drivers and diagnostics, comparisons, drill-downs, accessible visuals and shared definitions. For the metrics themselves, see [[/blogs/ecommerce-kpi-dashboard|ecommerce KPI dashboard]].",
+          "Ecommerce dashboard design is information architecture for decisions: questions and audiences first, then headline, drivers and diagnostics, comparisons, drill-downs, accessible visuals and shared definitions. For the metrics themselves, see [[/blogs/ecommerce-kpi-dashboard|ecommerce KPI dashboard]]. Designing dashboards for customers of a software product rather than your own team? See [[/blogs/saas-dashboard-design|SaaS dashboard design]].",
         ],
       },
     ],

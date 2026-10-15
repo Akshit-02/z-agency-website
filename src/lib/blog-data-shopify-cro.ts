@@ -119,7 +119,7 @@ export const shopifyCroPosts: BlogPost[] = [
         heading: "What Shopify Product Page Optimization Actually Means",
         body: [
           "A product page has one job: answer, quickly and credibly, every question a customer would ask before buying, and remove every reason to leave and think about it. Optimization here isn't about adding more — most underperforming product pages have too little of the right information, not too much clutter — it's about making sure the specific questions your customers actually have are answered where they're looking, at the moment they're deciding.",
-          "In Shopify Analytics terms, this is the stage between a product view and an add-to-cart action — captured in the conversion rate breakdown report as the share of sessions that viewed a product and went on to add it to their cart.",
+          "In Shopify Analytics terms, this is the stage between a product view and an add-to-cart action. Shopify's [[https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports|conversion rate breakdown report]] doesn't have a product view step: its steps are all sessions, sessions with cart additions, sessions that reached checkout and sessions that completed checkout. To measure how often a viewed product is added to the cart, use [[https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/analytics-fields|product-level metrics]] in a Shopify report or ShopifyQL query (such as product viewed session count and product added to cart rate), or GA4.",
         ],
       },
       {
@@ -218,19 +218,8 @@ export const shopifyCroPosts: BlogPost[] = [
       },
       {
         heading: "Shopify Product Page CRO Checklist",
-        body: ["A working checklist to audit an existing product page against."],
-        checklist: [
-          "Image gallery shows multiple angles, scale, and the product in use",
-          "Title and first line of description answer \"is this for me\" immediately",
-          "Price is unambiguous, with any discount shown as a clear before/after",
-          "Variant selection shows real-time availability, with sizing guidance inline",
-          "Shipping cost and delivery estimate are visible near the CTA, not only at checkout",
-          "Returns policy is easy to find from the product page",
-          "Star rating is visible near the title; full reviews are reachable without leaving the page",
-          "Add-to-cart CTA has clear visual priority over any secondary button",
-          "A sticky add-to-cart bar appears once the primary CTA scrolls out of view",
-          "Product recommendations are visually secondary to the primary product and CTA",
-          "Page loads and images render without layout shift, on mobile specifically",
+        body: [
+          "In short, check that the gallery answers real buying questions; that price, variants, delivery cost and returns are clear near the add-to-cart button; that reviews sit close to the decision; and that the page loads without layout shift on mobile. For the full item-by-item version, with a quick test and the Shopify method for each check, use the [[/blogs/shopify-product-page-audit|Shopify product page checklist]].",
         ],
       },
       {
@@ -268,7 +257,7 @@ export const shopifyCroPosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A product page converts better when it answers real customer questions at the moment they're deciding — clear pricing, credible trust signals, honest shipping information, and a CTA that's easy to find and act on. Start with your Shopify Analytics add-to-cart rate to confirm the product page is actually where you're losing customers, then work through the checklist against your specific store, testing changes where you have the traffic to validate them. For product page structure and design from first principles, see [[/blogs/ecommerce-product-page-design|ecommerce product page design]]. If a product page gets visitors but few sales, start with [[/blogs/product-page-traffic-no-sales|product page traffic but no sales]]; for D2C merchandising, see [[/blogs/d2c-product-page-optimization|D2C product page optimization]].",
+          "A product page converts better when it answers real customer questions at the moment they're deciding — clear pricing, credible trust signals, honest shipping information, and a CTA that's easy to find and act on. Start with your Shopify Analytics add-to-cart rate to confirm the product page is actually where you're losing customers, then work through the [[/blogs/shopify-product-page-audit|product page checklist]] against your specific store, testing changes where you have the traffic to validate them. For product page structure and design from first principles, see [[/blogs/ecommerce-product-page-design|ecommerce product page design]]. If a product page gets visitors but few sales, start with [[/blogs/product-page-traffic-no-sales|product page traffic but no sales]]; for D2C merchandising, see [[/blogs/d2c-product-page-optimization|D2C product page optimization]].",
         ],
       },
     ],
@@ -280,21 +269,21 @@ export const shopifyCroPosts: BlogPost[] = [
     title: "Shopify Checkout Optimization: How to Create a Better Checkout Experience",
     seoTitle: "Shopify Checkout Optimization: Build a Better Checkout",
     excerpt:
-      "How to optimize Shopify checkout: what each plan can customize, payment methods, accelerated checkout, shipping, taxes, discounts, errors, mobile and testing.",
+      "How to optimize Shopify checkout for more completed orders: costs, payment methods, accelerated checkout, shipping, taxes, discounts, errors and mobile.",
     category: "Shopify & Ecommerce",
     banner: "checkoutflow",
     date: "2026-05-11",
-    readingTime: "15 min read",
+    readingTime: "8 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit", "ui-ux-design"],
     relatedIndustrySlugs: ["d2c-consumer", "ecommerce"],
     faqs: [
       { q: "What is Shopify checkout optimization?", a: "Improving the steps between the cart and a completed Shopify order, including costs, payment options, forms, errors and trust, so more shoppers who start checkout finish it. It's measured through the share of sessions that reached checkout and went on to complete it." },
-      { q: "Can I customize Shopify checkout on any plan?", a: "Every plan from Basic upward can use the checkout and accounts editor for branding and settings, and apps that customize the thank you and order status pages. Apps with UI extensions for the information, shipping and payment steps, and the Checkout Branding API, are available only on Shopify Plus." },
-      { q: "What is Shopify checkout extensibility?", a: "Shopify's app-based way of customizing checkout, using checkout UI extensions, Shopify Functions, the Checkout Branding API and web pixels. It replaced editing checkout.liquid, which Shopify has deprecated." },
+      { q: "Which checkout changes need Shopify Plus?", a: "Changes inside the information, shipping and payment steps, the Checkout Branding API and custom Function apps. Branding, pixels, App Store Function apps and thank you page extensions work from Basic upward. Our [[/blogs/shopify-checkout-customisation-guide|checkout customization guide]] has the full plan breakdown." },
+      { q: "What is Shopify checkout extensibility?", a: "Shopify's app-based way of customizing checkout, using checkout UI extensions, Shopify Functions, the Checkout Branding API and web pixels. It replaced checkout.liquid, which stopped working on the checkout steps in August 2024 and on the thank you and order status pages in August 2025." },
       { q: "Is Shopify checkout one page or three pages?", a: "Shopify's help center states that the default checkout layout is one-page checkout, and you can switch between one-page and three-page checkout from the admin." },
       { q: "What are accelerated checkouts on Shopify?", a: "Express payment options such as Shop Pay, Apple Pay, Google Pay, Amazon Pay and PayPal that use saved payment and shipping details. Their buttons can appear on product pages, in the cart and at the start of checkout." },
-      { q: "Can I use Shopify Functions without Shopify Plus?", a: "Stores on any plan can use public apps from the Shopify App Store that contain functions. Custom apps containing Shopify Function APIs are limited to Shopify Plus, and Shopify notes some function capabilities are Plus-only." },
-      { q: "Can I add post-purchase upsells on Shopify?", a: "Shopify's help center lists apps built with post-purchase app extensions as available on Basic Shopify or higher. They run after payment, so they don't add friction before the order is placed." },
+      { q: "Can I use Shopify Functions without Shopify Plus?", a: "Yes, through public App Store apps that contain functions. Custom apps built only for your store need Plus. See the [[/blogs/shopify-checkout-customisation-guide|checkout customization guide]] for which requirements each covers." },
+      { q: "Can I add post-purchase upsells on Shopify?", a: "Yes, from Basic upward, though post-purchase extensions are still in beta and don't show on every order, for example wallet payments. Because they run after payment, they add no friction before the order is placed. The [[/blogs/shopify-checkout-customisation-guide|checkout customization guide]] lists the limits." },
       { q: "Does guest checkout reduce abandonment?", a: "Being required to create an account is one of the reasons shoppers give for abandoning checkout in Baymard's surveys. Keep guest checkout available and offer an account after purchase." },
       { q: "How do I recover abandoned checkouts on Shopify?", a: "Shopify can send abandoned checkout emails to shoppers who entered contact details, and marketing automation tools can add further steps. Test timing and whether to include incentives, rather than discounting every abandoned checkout by default." },
       { q: "Can I A/B test Shopify checkout?", a: "Shopify's changelog describes Rollouts, which can schedule changes and run A/B tests between theme or checkout configurations from Markets > Rollouts in the admin. Check the Shopify Help Center for current plan availability." },
@@ -310,28 +299,15 @@ export const shopifyCroPosts: BlogPost[] = [
       {
         heading: "How Shopify Checkout Is Built",
         body: [
-          "Shopify hosts checkout for every store. That's a strength, because checkout is secure, maintained and familiar to many shoppers, and a constraint, because you can't redesign it freely the way you can a theme. Customization now happens through checkout extensibility: the checkout and accounts editor, checkout UI extensions, Shopify Functions, the Checkout Branding API and web pixels. The older checkout.liquid approach has been deprecated.",
+          "Shopify hosts checkout for every store. That's a strength, because checkout is secure, maintained and familiar to many shoppers, and a constraint, because you can't redesign it freely the way you can a theme. Customization now happens through checkout extensibility: the checkout and accounts editor, checkout UI extensions, Shopify Functions, the Checkout Branding API and web pixels. The older checkout.liquid approach no longer works.",
           "Shopify's help center states that one-page checkout is the default layout, with the option to switch to three-page checkout in the admin. This guide covers Shopify's architecture and what to optimize within it. For platform-independent checkout design principles, see [[/blogs/ecommerce-checkout-ux|ecommerce checkout UX]].",
         ],
       },
       {
         heading: "What You Can Customize on Each Plan",
         body: [
-          "Plan limits decide what's realistic, so check them before planning checkout work. The table summarizes Shopify's documentation on checkout apps and Shopify Functions; plan features change, so confirm current details for your store.",
+          "Every plan from Basic upward can brand checkout in the checkout and accounts editor, set order value limits, use App Store apps built on Shopify Functions, add web pixels and extend the thank you and order status pages. Adding content or fields inside the information, shipping and payment steps, the Checkout Branding API and custom Function apps are Shopify Plus only, and per-market checkout branding and settings need Advanced or Plus. For the full capability matrix, end dates and a requirement lookup table, see our [[/blogs/shopify-checkout-customisation-guide|guide to Shopify checkout customization by plan]].",
         ],
-        table: {
-          headers: ["Capability", "Basic and higher", "Shopify Plus"],
-          rows: [
-            ["Checkout and accounts editor (branding, layout settings)", "Yes", "Yes"],
-            ["Guest checkout, accelerated checkouts, payment and delivery settings", "Yes", "Yes"],
-            ["Apps with UI extensions on the thank you and order status pages", "Yes", "Yes"],
-            ["Apps with post-purchase extensions", "Yes", "Yes"],
-            ["Public App Store apps that use Shopify Functions", "Yes", "Yes"],
-            ["Apps with UI extensions on information, shipping and payment steps", "No", "Yes"],
-            ["Checkout Branding API", "No", "Yes"],
-            ["Custom apps containing Shopify Function APIs", "No", "Yes"],
-          ],
-        },
       },
       {
         heading: "Where Shopify Checkout Loses Shoppers",
@@ -634,7 +610,7 @@ export const shopifyCroPosts: BlogPost[] = [
       },
       {
         q: "What's the best way to find where my Shopify store is losing customers?",
-        a: "Start with the Shopify Analytics conversion rate breakdown report, which shows sessions at each stage — product views, added to cart, reached checkout, converted. Find the stage with the largest proportional drop, then use heatmaps, session recordings or direct customer feedback to understand why.",
+        a: "Start with the Shopify Analytics conversion rate breakdown report, which shows sessions at each stage: all sessions, sessions with cart additions, sessions that reached checkout and sessions that completed checkout. It has no product view step, so get product-view analysis from product-level metrics in Shopify reports, ShopifyQL or GA4. Find the stage with the largest proportional drop, then use heatmaps, session recordings or direct customer feedback to understand why.",
       },
       {
         q: "Should I segment my funnel data by traffic source or device?",
@@ -680,7 +656,7 @@ export const shopifyCroPosts: BlogPost[] = [
       {
         heading: "How to Find Where Your Shopify Store Is Losing Customers",
         body: [
-          "Start with Shopify Analytics' conversion rate breakdown, which reports sessions at each major stage: product views, added to cart, reached checkout, and completed. Calculate the conversion rate between each consecutive pair of stages, not just the final overall number, and look for the single largest proportional drop — that's your highest-priority stage to investigate, ahead of anywhere else.",
+          "Start with Shopify Analytics' [[https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports|conversion rate breakdown report]], which reports sessions at four steps: all sessions, sessions with cart additions, sessions that reached checkout, and sessions that completed checkout. It has no product view step; for the move from product view to cart, use product-level metrics in Shopify reports or ShopifyQL, or GA4's ecommerce events. Calculate the conversion rate between each consecutive pair of stages, not just the final overall number, and look for the single largest proportional drop — that's your highest-priority stage to investigate, ahead of anywhere else.",
         ],
       },
       {
@@ -806,7 +782,7 @@ export const shopifyCroPosts: BlogPost[] = [
       {
         heading: "Why You Can't Just Copy Desktop Optimization to Mobile",
         body: [
-          "Desktop and mobile shoppers operate under genuinely different constraints: a mouse cursor is precise, a thumb isn't; a desktop screen shows far more at once, so hierarchy matters differently; desktop connections are typically faster and more stable. A change that improves the desktop experience can be neutral, or actively worse, on mobile — testing and reviewing the two separately, rather than assuming a responsive theme automatically handles both well, is the starting point for mobile CRO.",
+          "Desktop and mobile shoppers operate under genuinely different constraints: a mouse cursor is precise, a thumb isn't; a desktop screen shows far more at once, so hierarchy matters differently; desktop connections are typically faster and more stable. A change that improves the desktop experience can be neutral, or actively worse, on mobile — testing and reviewing the two separately, rather than assuming a responsive theme automatically handles both well, is the starting point for mobile CRO. Before choosing fixes, [[/blogs/shopify-mobile-cro-audit|diagnose where mobile shoppers drop off]] by device and funnel stage.",
         ],
       },
       {

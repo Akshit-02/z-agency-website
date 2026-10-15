@@ -23,7 +23,7 @@ export const auSaasProductPosts: BlogPost[] = [
   {
     slug: "saas-onboarding-optimization",
     title: "SaaS Onboarding Optimisation: How to Define Activation and Improve the First Session",
-    seoTitle: "SaaS Onboarding Optimisation: Activation and First Session",
+    seoTitle: "SaaS Onboarding Optimisation: Activation and Time to Value",
     excerpt:
       "How to improve SaaS onboarding: define activation for your product, design the first session, use checklists and guidance, message by lifecycle and test.",
     category: "UI/UX",
@@ -31,7 +31,8 @@ export const auSaasProductPosts: BlogPost[] = [
     sceneKind: "design",
     bannerAlt: "A new SaaS user moving from sign-up through setup and a first meaningful action to an activated state, supported by a checklist, contextual tips and lifecycle emails",
     date: "2026-10-09",
-    readingTime: "7 min read",
+    updated: "2026-10-14",
+    readingTime: "9 min read",
     relatedServiceSlugs: ["ui-ux-design", "website-development", "cro-audit"],
     relatedIndustrySlugs: ["saas-technology", "startups", "fintech", "hrtech"],
     relatedSlugs: ["saas-product-design", "ai-onboarding-ux", "product-analytics-implementation-australia"],
@@ -58,7 +59,11 @@ export const auSaasProductPosts: BlogPost[] = [
       },
       {
         q: "What lifecycle messages should support onboarding?",
-        a: "Messages triggered by behaviour work better than a fixed schedule: a welcome with one next step, a nudge if setup stalls, help when a user hits an error, and a summary of value achieved. Keep transactional and onboarding messages factual and useful; marketing messages need consent under spam laws such as Australia's Spam Act.",
+        a: "Messages triggered by behaviour work better than a fixed schedule: a welcome with one next step, a nudge if setup stalls, help when a user hits an error, and a summary of value achieved. Keep transactional and onboarding messages factual and useful; marketing messages usually need consent, and the rules differ by market and channel, so check them for each country you send to.",
+      },
+      {
+        q: "How do we improve onboarding without adding more steps?",
+        a: "Audit the existing path before adding anything. For each step between signup and activation, ask whether it is needed for first value, whether the product can do it for the user, and whether it can wait. Delete, automate or defer what you can, and replace upfront tours with help that appears when the user reaches the relevant screen. Judge the result by time to value and retention, not by checklist completion.",
       },
     ],
     content: [
@@ -104,6 +109,13 @@ export const auSaasProductPosts: BlogPost[] = [
         },
       },
       {
+        heading: "Measure time to value, not onboarding completion",
+        body: [
+          "Once activation is defined, measure how long it takes to get there. Time to value here means the time from signup to the activation event, for each user or account that reaches it. It is the metric behind \"without adding more steps\": a new tour or checklist may raise onboarding completion while making time to value longer.",
+          "Report the **median**, not the average, because a few accounts that take weeks will distort an average. Look at the distribution too, for example how many reach activation in the first session, the first day and the first week, and track the share who never activate alongside it. **Segment** by signup source, plan and customer type, since self-serve signups and sales-led accounts often follow very different paths. Then judge every onboarding change by two numbers together: did the median time to value fall, and did the activation rate hold or rise? Time to value sits alongside other experience measures covered in [[/blogs/ux-metrics-beyond-conversion-rate|UX metrics that matter beyond conversion rate]].",
+        ],
+      },
+      {
         heading: "Step 2: Map the path to activation",
         body: [
           "List every step from signup to the activation event: account creation, verification, workspace setup, integrations, data import, inviting others, first use. For each step, record drop-off from analytics and the reasons from user research. Then ask of each step: is it needed now, can it be done for the user, or can it wait until after first value?",
@@ -115,19 +127,34 @@ export const auSaasProductPosts: BlogPost[] = [
           "Make verification and permissions steps clear about why they are needed.",
           "Remove dead ends: every empty screen should suggest a next step.",
         ],
+        table: {
+          headers: ["Step", "Needed for first value?", "Can we do it for them?", "Can it wait?", "Decision"],
+          rows: [
+            ["Verify email before entering the product", "Not always", "No", "Often, until they invite others or send data out", "**Defer**"],
+            ["Enter company details and address", "No", "Partly: pre-fill from the email domain", "Yes, until invoicing or billing", "**Automate** or **defer**"],
+            ["Choose a theme and upload a logo", "No", "No", "Yes", "**Delete** from onboarding; keep in settings"],
+            ["Connect calendar integration", "Only for some users", "No", "Yes, after the first booking", "**Defer**"],
+            ["Add first service and opening hours", "Yes", "Partly: offer a template", "No", "**Keep**, with a template"],
+            ["Share the booking link", "Yes: it is the route to activation", "No", "No", "**Keep** and make it the main action"],
+          ],
+        },
+        callout: {
+          type: "tip",
+          text: "Subtract before you add. The table uses the hypothetical clinic scheduling product described later in this guide. Fill in one row per step on your own path: anything that is not needed for first value should be deleted, automated or deferred before you consider adding a tour, modal or checklist item.",
+        },
       },
       {
         heading: "Step 3: Design the first session",
         body: [
           "The first session sets expectations. A short welcome that asks one or two questions about the user's goal can tailor what comes next. Then guide towards one meaningful action, not a tour of every feature.",
-          "**Progressive disclosure** helps: show the essential controls first and reveal advanced options when users need them. **Empty states** do more teaching than tooltips, because they appear exactly when a user needs to know what to do. **Templates and sample data** let users see the product working before they invest effort.",
+          "**Progressive disclosure** helps: show the essential controls first and reveal advanced options when users need them. **Empty states** do more teaching than tooltips, because they appear exactly when a user needs to know what to do; Nielsen Norman Group describes them as a way to [[https://www.nngroup.com/articles/empty-state-interface-design/|help users learn features and give them a direct route into key tasks]]. **Templates and sample data** let users see the product working before they invest effort.",
         ],
       },
       {
         heading: "Step 4: Checklists and contextual guidance",
         body: [
           "Checklists work when they are short (often three to five items), each item moves the user towards activation, completion reflects real actions, and progress is visible. Avoid checklists that list features or reward clicks on the checklist itself.",
-          "Contextual guidance, such as a hint when a user first opens the reports screen or a prompt after an error, beats a long upfront tour. Make guidance dismissible, do not repeat it endlessly, and make help findable later. Accessibility matters here too: guidance overlays must work with keyboards and screen readers and must not trap focus. See [[/blogs/accessibility-testing-australia|accessibility testing]].",
+          "Contextual guidance, such as a hint when a user first opens the reports screen or a prompt after an error, beats a long upfront tour. Nielsen Norman Group's review of [[https://www.nngroup.com/articles/onboarding-tutorials/|onboarding tutorials vs contextual help]] (Page Laubheimer, February 2023) finds that tutorials interrupt users, do not necessarily improve task performance and are quickly forgotten, and recommends help triggered when the user would benefit from it. It treats walkthroughs as useful mainly for genuinely new interaction styles. Make guidance dismissible, do not repeat it endlessly, and make help findable later. Accessibility matters here too: guidance overlays must work with keyboards and screen readers and must not trap focus. See [[/blogs/accessibility-testing-australia|accessibility testing]].",
         ],
       },
       {
@@ -152,7 +179,7 @@ export const auSaasProductPosts: BlogPost[] = [
         },
         callout: {
           type: "note",
-          text: "Keep onboarding and service messages factual and useful. Promotional messages need consent under laws such as Australia's Spam Act, so keep marketing separate.",
+          text: "Keep onboarding and service messages factual and useful, and keep marketing separate. Consent rules for promotional email and SMS differ by country and channel, so check them for each market you send to.",
         },
       },
       {
@@ -185,6 +212,14 @@ export const auSaasProductPosts: BlogPost[] = [
         heading: "Related guides",
         body: [
           "For the wider product, see [[/blogs/saas-product-design|SaaS product design]] and [[/blogs/saas-development-australia|SaaS development in Australia]]. For conversion audits of onboarding flows, see [[/blogs/ux-audit|UX audit]]. Mobile apps have their own patterns in [[/blogs/what-a-good-mobile-app-onboarding-actually-does|mobile app onboarding]].",
+        ],
+      },
+      {
+        heading: "Sources",
+        body: [
+          "[[https://www.nngroup.com/articles/onboarding-tutorials/|Page Laubheimer, Nielsen Norman Group: Onboarding Tutorials vs. Contextual Help]] (12 February 2023).",
+          "[[https://www.nngroup.com/articles/empty-state-interface-design/|Kate Kaplan, Nielsen Norman Group: Designing Empty States in Complex Applications: 3 Guidelines]] (19 September 2021).",
+          "Accessed 14 October 2026.",
         ],
       },
       {
