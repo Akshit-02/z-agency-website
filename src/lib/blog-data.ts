@@ -270,6 +270,7 @@ import { founderMobilePosts4 } from "./blog-data-founder-4-mobile";
 import { founderCommercePosts4 } from "./blog-data-founder-4-commerce";
 import { founderUxPosts4 } from "./blog-data-founder-4-ux";
 import { founderCroPosts4 } from "./blog-data-founder-4-cro";
+import { launchGrowthPosts } from "./blog-data-launch-growth";
 
 export type BlogSection = {
   heading: string;
@@ -3596,6 +3597,7 @@ posts.push(
   ...founderCommercePosts4,
   ...founderUxPosts4,
   ...founderCroPosts4,
+  ...launchGrowthPosts,
 );
 
 export function getPostBySlug(slug: string) {

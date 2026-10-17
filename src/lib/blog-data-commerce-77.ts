@@ -635,7 +635,7 @@ export const commercePosts77: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Shoppable video works when tags use live product data, cards help without obstructing, adding to cart does not break the viewing experience and video never slows the page. Related: [[/blogs/shoppable-content|shoppable content]] and [[/blogs/creator-commerce|creator commerce]].",
+          "Shoppable video works when tags use live product data, cards help without obstructing, adding to cart does not break the viewing experience and video never slows the page. Related: [[/blogs/shoppable-content|shoppable content]], [[/blogs/creator-commerce|creator commerce]] and [[/blogs/creator-content-rights-management|managing usage rights for creator content]].",
         ],
       },
     ],

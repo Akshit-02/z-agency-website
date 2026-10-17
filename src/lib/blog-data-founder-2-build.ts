@@ -452,7 +452,7 @@ export const founderBuildPosts2: BlogPost[] = [
       {
         heading: "Conclusion: put the fixed waits on the calendar first",
         body: [
-          "A first launch is mostly a sequencing problem. Secure the accounts in the business's name, start the Play closed test as soon as a stable build exists, prepare assets and privacy declarations from the stores' current pages, give reviewers everything they need, and hold approved builds for a release you control. Then watch the first fortnight closely, because v1 goes to everyone at once.",
+          "A first launch is mostly a sequencing problem. Secure the accounts in the business's name, start the Play closed test as soon as a stable build exists, prepare assets and privacy declarations from the stores' current pages, give reviewers everything they need, and hold approved builds for a release you control. Then watch the first fortnight closely, because v1 goes to everyone at once. If creators or press need the app before release, [[/blogs/app-beta-testing-creators-early-access|pre-launch access through TestFlight and Google Play testing]] covers invites, build expiry and embargoes.",
           "If the build itself is still in progress, the launch steps above belong in the plan from the start of [[/services/mobile-app-development|mobile app development]], not in the final week.",
         ],
         cta: {

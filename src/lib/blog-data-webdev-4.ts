@@ -222,7 +222,7 @@ export const webDevPosts4: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A SaaS website has to work harder than a typical business site — explaining an often-abstract product, supporting the right conversion path for its price point, and maintaining the technical credibility its own product is selling. Get positioning, pricing clarity and the signup or demo flow right, and the rest of the site can be comparatively simple. The marketing site and the product itself are different builds; [[/blogs/custom-website-vs-web-application|this comparison of websites and web applications]] explains where one ends and the other begins.",
+          "A SaaS website has to work harder than a typical business site — explaining an often-abstract product, supporting the right conversion path for its price point, and maintaining the technical credibility its own product is selling. Get positioning, pricing clarity and the signup or demo flow right, and the rest of the site can be comparatively simple. The marketing site and the product itself are different builds; [[/blogs/custom-website-vs-web-application|this comparison of websites and web applications]] explains where one ends and the other begins. For launch week itself, see the [[/blogs/b2b-saas-launch-plan|B2B SaaS launch plan]].",
         ],
       },
     ],

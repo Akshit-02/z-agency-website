@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-const TOKEN_RE = /\*\*(.+?)\*\*|\{\{(b|o):(.+?)\}\}|\[\[(.+?)\|(.+?)\]\]/g;
+const TOKEN_RE = /\*\*(.+?)\*\*|\{\{(b|o):(.+?)\}\}|\[\[(.+?)\|(.+?)(?:\|(sponsored))?\]\]/g;
 
 /**
  * Minimal inline markup for article body copy:
@@ -10,6 +10,7 @@ const TOKEN_RE = /\*\*(.+?)\*\*|\{\{(b|o):(.+?)\}\}|\[\[(.+?)\|(.+?)\]\]/g;
  *  {{o:text}}          -> orange accent
  *  [[/href|text]]      -> internal link
  *  text -> external link, new tab
+ *  [[https://…|text|sponsored]] -> paid or partner link (rel="sponsored"); pair it with a visible disclosure
  */
 export function renderInline(text: string): ReactNode[] {
   const nodes: ReactNode[] = [];
@@ -23,7 +24,7 @@ export function renderInline(text: string): ReactNode[] {
       nodes.push(text.slice(lastIndex, match.index));
     }
 
-    const [, bold, accent, accentText, href, label] = match;
+    const [, bold, accent, accentText, href, label, sponsored] = match;
 
     if (bold !== undefined) {
       nodes.push(
@@ -43,7 +44,7 @@ export function renderInline(text: string): ReactNode[] {
           key={key++}
           href={href}
           target="_blank"
-          rel="noopener noreferrer"
+          rel={sponsored ? "sponsored noopener noreferrer" : "noopener noreferrer"}
           className="text-blue underline decoration-line-strong underline-offset-2 transition-colors hover:decoration-blue"
         >
           {label}

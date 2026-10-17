@@ -549,7 +549,7 @@ export const commercePosts87: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "Selling future stock works when the promise is clear and kept: a date before payment, a cap tied to real supply, a deliberate payment policy, fair allocation and honest updates. Related: [[/blogs/distributed-order-management|distributed order management]], [[/blogs/ecommerce-inventory-management-integration|inventory integration]] and [[/blogs/ecommerce-order-tracking|order tracking]].",
+          "Selling future stock works when the promise is clear and kept: a date before payment, a cap tied to real supply, a deliberate payment policy, fair allocation and honest updates. Related: [[/blogs/distributed-order-management|distributed order management]], [[/blogs/ecommerce-inventory-management-integration|inventory integration]] and [[/blogs/ecommerce-order-tracking|order tracking]]. For the wider plan around a new product, see the [[/blogs/d2c-product-launch-plan|D2C product launch plan]].",
         ],
       },
     ],
