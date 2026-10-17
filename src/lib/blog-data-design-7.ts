@@ -111,7 +111,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Product Video",
         body: [
-          "Video is worth producing when movement, fit, sound, texture or how something works is hard to show in stills. Keep clips short and focused, show them within the gallery with a clear play indicator, give users control, don't autoplay with sound and provide captions for any speech (WCAG 1.2.2). Load video only when requested so it doesn't slow the page for everyone.",
+          "Video is worth producing when movement, fit, sound, texture or how something works is hard to show in stills. Keep clips short and focused, show them within the gallery with a clear play indicator, give users control, don't autoplay with sound and provide captions for any speech. Load video only when requested so it doesn't slow the page for everyone.",
         ],
       },
       {
@@ -151,7 +151,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Accessibility and Captions",
         body: [
-          "Each informative image needs alt text that describes what it shows (WCAG 1.1.1): colour, view and the detail it highlights, not the product name repeated for every image. Gallery controls must be keyboard operable with visible focus and accessible names. Don't put essential text such as sizes or offers inside images. Captions help everyone when they add information the image can't, such as the model's height and size, the colour name or “shown with matching trousers”.",
+          "Each informative image needs alt text that describes what it shows: colour, view and the detail it highlights, not the product name repeated for every image. Gallery controls must be keyboard operable with visible focus and accessible names. Don't put essential text such as sizes or offers inside images. Captions help everyone when they add information the image can't, such as the model's height and size, the colour name or “shown with matching trousers”.",
         ],
       },
       {
@@ -495,7 +495,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Accessible Cart Design",
         body: [
-          "Announce cart updates, such as items added, quantities changed and items removed, as status messages (WCAG 4.1.3). Give every control an accessible name that includes the product, manage focus sensibly after an item is removed, and make sure a cart drawer traps focus while open and returns it when closed.",
+          "Announce cart updates, such as items added, quantities changed and items removed, as status messages. Give every control an accessible name that includes the product, manage focus sensibly after an item is removed, and make sure a cart drawer traps focus while open and returns it when closed.",
         ],
       },
       {
@@ -616,7 +616,7 @@ export const designPosts7: BlogPost[] = [
           "Autocomplete attributes so browsers can fill details",
           "Billing address defaults to the delivery address",
           "Field widths that hint at the expected length",
-          "No information requested twice (WCAG 3.3.7)",
+          "No information requested twice",
         ],
       },
       {
@@ -651,7 +651,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Validation and Error Handling",
         body: [
-          "Validate each field when the shopper leaves it, not while they're still typing, and confirm when a problem is fixed. Error messages should appear next to the field, say what's wrong and how to fix it in plain language (WCAG 3.3.3), and never clear what was entered. If submission fails, show a summary at the top that links to each problem field. Test server errors, timeouts and lost connections as well as typing mistakes. See [[/blogs/ux-writing|UX writing]] for message examples.",
+          "Validate each field when the shopper leaves it, not while they're still typing, and confirm when a problem is fixed. Error messages should appear next to the field, say what's wrong and how to fix it in plain language, and never clear what was entered. If submission fails, show a summary at the top that links to each problem field. Test server errors, timeouts and lost connections as well as typing mistakes. See [[/blogs/ux-writing|UX writing]] for message examples.",
         ],
       },
       {
@@ -694,7 +694,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Accessible Checkout",
         body: [
-          "Checkout must work with a keyboard and screen reader: labelled fields, errors identified in text (WCAG 3.3.1), no information requested twice, sign-in that doesn't rely on memorizing or transcribing codes where alternatives exist (3.3.8), and enough time to finish, with warnings before any session timeout. See [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]].",
+          "Checkout must work with a keyboard and screen reader: labelled fields, errors identified in text, no information requested twice, sign-in that doesn't rely on memorizing or transcribing codes where alternatives exist (3.3.8), and enough time to finish, with warnings before any session timeout. See [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]].",
         ],
       },
       {
@@ -831,7 +831,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Sticky Actions",
         body: [
-          "A sticky add-to-cart bar or checkout button keeps the main action in reach on long pages. Keep it compact, reflect the selected variant and price, and hide it when the original button is visible. Sticky headers and bars must not cover focused elements or form fields; WCAG 2.2 requires that focused elements aren't entirely hidden by author-created content (2.4.11). Stacking several sticky bars leaves little room for the page itself.",
+          "A sticky add-to-cart bar or checkout button keeps the main action in reach on long pages. Keep it compact, reflect the selected variant and price, and hide it when the original button is visible. Sticky headers and bars must not cover focused elements or form fields; WCAG 2.2 requires that focused elements aren't entirely hidden by author-created content. Stacking several sticky bars leaves little room for the page itself.",
         ],
       },
       {
@@ -874,7 +874,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Accessibility on Mobile",
         body: [
-          "Mobile users include people using screen readers, switch control, magnification and large text. Don't disable pinch zoom, support both orientations (WCAG 1.3.4), make content reflow at narrow widths without horizontal scrolling (1.4.10), give gestures a visible alternative and label every icon button. See [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]].",
+          "Mobile users include people using screen readers, switch control, magnification and large text. Don't disable pinch zoom, support both orientations, make content reflow at narrow widths without horizontal scrolling (1.4.10), give gestures a visible alternative and label every icon button. See [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]].",
         ],
       },
       {

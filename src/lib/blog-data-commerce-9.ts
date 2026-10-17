@@ -49,7 +49,7 @@ export const commercePosts9: BlogPost[] = [
       {
         heading: "Check 1: Tracking and Traffic Quality",
         body: [
-          "Shopify Analytics defines each step's conversion rate as sessions reaching that step divided by total sessions (Shopify Help Center). Before trusting a low number, check it.",
+          "Shopify Analytics defines each step's conversion rate as sessions reaching that step divided by total sessions. Before trusting a low number, check it.",
         ],
         checklist: [
           "Do orders in Shopify match what your other tools report?",

@@ -67,7 +67,7 @@ export const commercePosts60: BlogPost[] = [
       {
         heading: "Checkout Extensibility",
         body: [
-          "Checkout is customized through checkout extensibility rather than editing checkout code. The pieces are branding (colours, fonts, layout options via the checkout editor and the Checkout Branding API), checkout UI extensions (app-based components rendered at defined points in checkout), Shopify Functions (backend logic) and web pixels for tracking. Checkout UI extensions on the information, shipping and payment steps require Plus; extensions on the thank-you and order status pages are available more widely (Shopify developer docs).",
+          "Checkout is customized through checkout extensibility rather than editing checkout code. The pieces are branding (colours, fonts, layout options via the checkout editor and the Checkout Branding API), checkout UI extensions (app-based components rendered at defined points in checkout), Shopify Functions (backend logic) and web pixels for tracking. Checkout UI extensions on the information, shipping and payment steps require Plus; extensions on the thank-you and order status pages are available more widely.",
           "Extensions run in a sandbox with a defined set of components, which keeps checkout secure and upgrade-safe but limits arbitrary changes. Design within those components. Typical extensions include delivery instructions, gift messages, loyalty point displays, trust or returns messaging and B2B purchase order fields. See [[/blogs/shopify-checkout-optimization|Shopify checkout optimization]].",
         ],
         checklist: [
@@ -82,7 +82,7 @@ export const commercePosts60: BlogPost[] = [
       {
         heading: "Shopify Functions",
         body: [
-          "Functions let developers customize backend logic that runs on Shopify's infrastructure: discount logic, delivery option customization (renaming, hiding, reordering), payment method customization, cart and checkout validation, and more. They're written in languages that compile to WebAssembly, run within strict performance limits and are deployed through apps. On Plus, merchants can use Functions in custom apps built just for their store; public apps with Functions are available on all plans (Shopify developer docs).",
+          "Functions let developers customize backend logic that runs on Shopify's infrastructure: discount logic, delivery option customization (renaming, hiding, reordering), payment method customization, cart and checkout validation, and more. They're written in languages that compile to WebAssembly, run within strict performance limits and are deployed through apps. On Plus, merchants can use Functions in custom apps built just for their store; public apps with Functions are available on all plans.",
           "Because Functions affect pricing, delivery and payment for every checkout, treat them as critical code: write tests for edge cases (mixed carts, B2B customers, markets, zero-value items), roll out carefully and monitor errors.",
         ],
         table: {
@@ -501,8 +501,8 @@ export const commercePosts60: BlogPost[] = [
       {
         heading: "Standards and Legal Context",
         body: [
-          "WCAG, published by the W3C, is the most widely used technical reference. WCAG 2.2 is the current Recommendation and adds criteria for focus visibility, target size, dragging, consistent help, redundant entry and accessible authentication (W3C WCAG 2.2). Level AA is the common target in policies and regulations.",
-          "Legal obligations depend on where you operate and sell. In the EU, the European Accessibility Act covers ecommerce services and has applied since 28 June 2025, with national laws implementing it and some exemptions, such as for microenterprises providing services (European Commission). Other countries have their own laws, and case law varies. Treat WCAG as a technical guide and get legal advice on your specific obligations. See [[/blogs/ecommerce-compliance|ecommerce compliance]].",
+          "WCAG, published by the W3C, is the most widely used technical reference. WCAG 2.2 is the current Recommendation and adds criteria for focus visibility, target size, dragging, consistent help, redundant entry and accessible authentication. Level AA is the common target in policies and regulations.",
+          "Legal obligations depend on where you operate and sell. In the EU, the European Accessibility Act covers ecommerce services and has applied since 28 June 2025, with national laws implementing it and some exemptions, such as for microenterprises providing services. Other countries have their own laws, and case law varies. Treat WCAG as a technical guide and get legal advice on your specific obligations. See [[/blogs/ecommerce-compliance|ecommerce compliance]].",
         ],
       },
       {

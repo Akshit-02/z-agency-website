@@ -53,7 +53,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "What Differs, Plan by Plan",
         body: [
-          "The table below reflects Shopify's pricing and Plus plan pages as checked in September 2026 (Shopify pricing, Shopify Plus plan). Plan details change, so confirm current terms before deciding.",
+          "The table below reflects Shopify's pricing and Plus plan pages as checked in September 2026. Plan details change, so confirm current terms before deciding.",
         ],
         table: {
           headers: ["Capability", "Basic · Grow · Advanced", "Shopify Plus"],
@@ -144,7 +144,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Beyond Checkout: Other Plus Capabilities",
         body: [
-          "Checkout drives many upgrades, but Shopify's Plus plan page lists other capabilities worth weighing: Launchpad for scheduling sales and launches, advanced B2B options such as direct catalog assignment, deposits, partial payments and payment requests per fulfilment, 24/7 priority support, Shopify Functions in custom apps, and expansion stores including B2B wholesale stores (Shopify Plus plan). Plan details change, so confirm current terms. For the development side, see [[/blogs/shopify-plus-development|Shopify Plus development]].",
+          "Checkout drives many upgrades, but Shopify's Plus plan page lists other capabilities worth weighing: Launchpad for scheduling sales and launches, advanced B2B options such as direct catalog assignment, deposits, partial payments and payment requests per fulfilment, 24/7 priority support, Shopify Functions in custom apps, and expansion stores including B2B wholesale stores. Plan details change, so confirm current terms. For the development side, see [[/blogs/shopify-plus-development|Shopify Plus development]].",
         ],
       },
       {
@@ -383,7 +383,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Level 1: The Theme Editor",
         body: [
-          "Online Store 2.0 themes use JSON templates made of sections and blocks, which is what makes so much editable without code (Shopify theme architecture).",
+          "Online Store 2.0 themes use JSON templates made of sections and blocks, which is what makes so much editable without code.",
         ],
         table: {
           headers: ["You can", "Notes"],
@@ -772,7 +772,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Step 3: Import",
         body: [
-          "Shopify documents several ways to bring data across (Shopify Help Center).",
+          "Shopify documents several ways to bring data across.",
         ],
         table: {
           headers: ["Data", "Methods"],
@@ -792,7 +792,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Import Order and Tools",
         body: [
-          "Shopify's migration guidance is to import products first, then customers, then historical orders, so orders can link to the products and customers they belong to (Shopify Help Center). Shopify's first-party Store Migration app can import data from some platforms, such as products from WooCommerce and products and customers from Wix or Square, but Shopify describes it as early access and only available for certain stores; historical orders typically need third-party migration apps or the APIs. Large or complex catalogs often use CSV-based bulk tools or custom scripts against the Admin API.",
+          "Shopify's migration guidance is to import products first, then customers, then historical orders, so orders can link to the products and customers they belong to. Shopify's first-party Store Migration app can import data from some platforms, such as products from WooCommerce and products and customers from Wix or Square, but Shopify describes it as early access and only available for certain stores; historical orders typically need third-party migration apps or the APIs. Large or complex catalogs often use CSV-based bulk tools or custom scripts against the Admin API.",
         ],
         table: {
           headers: ["Order", "Data", "Why this order"],
@@ -1001,7 +1001,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "What Shopify Handles",
         body: [
-          "According to Shopify's SEO documentation, canonical tags are added automatically, sitemap.xml and robots.txt are generated automatically, themes generate title tags and include product schema markup, and SSL is on by default (Shopify Help Center). The sitemap covers products, primary product images, pages, collections and blog posts, and updates when you add content.",
+          "According to Shopify's SEO documentation, canonical tags are added automatically, sitemap.xml and robots.txt are generated automatically, themes generate title tags and include product schema markup, and SSL is on by default. The sitemap covers products, primary product images, pages, collections and blog posts, and updates when you add content.",
         ],
         table: {
           headers: ["Default robots.txt rule", "Purpose"],
@@ -1033,7 +1033,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Tags, Filters and Variant URLs",
         body: [
-          "Shopify creates several URL types that can duplicate content: single tag pages under collections, filter parameters, sort parameters and ?variant= URLs. The defaults block combined tags and sort orders. Avoid linking to tag pages, check how your theme outputs filter URLs, and create dedicated collections for filtered views worth ranking. Edit robots.txt.liquid only with expertise; Shopify warns incorrect use can lose all traffic (Shopify Help Center).",
+          "Shopify creates several URL types that can duplicate content: single tag pages under collections, filter parameters, sort parameters and ?variant= URLs. The defaults block combined tags and sort orders. Avoid linking to tag pages, check how your theme outputs filter URLs, and create dedicated collections for filtered views worth ranking. Edit robots.txt.liquid only with expertise; Shopify warns incorrect use can lose all traffic.",
         ],
       },
       {
@@ -1055,7 +1055,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "International SEO With Markets",
         body: [
-          "Shopify Markets supports subfolders, subdomains or domains per market, generates hreflang tags automatically, includes market URLs in the sitemap, and excludes search engine crawlers from automatic redirection so every version can be indexed (Shopify Help Center). Translate content properly and localize titles and descriptions.",
+          "Shopify Markets supports subfolders, subdomains or domains per market, generates hreflang tags automatically, includes market URLs in the sitemap, and excludes search engine crawlers from automatic redirection so every version can be indexed. Translate content properly and localize titles and descriptions.",
         ],
       },
       {
@@ -1079,7 +1079,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "AI Search",
         body: [
-          "Google says there are no additional requirements or special markup to appear in AI Overviews or AI Mode (Google Search Central). For Shopify stores, the same fundamentals apply: crawlable pages, accurate product data and helpful content.",
+          "Google says there are no additional requirements or special markup to appear in AI Overviews or AI Mode. For Shopify stores, the same fundamentals apply: crawlable pages, accurate product data and helpful content.",
         ],
       },
       {
@@ -1135,7 +1135,7 @@ export const commerceRewrites: BlogPost[] = [
         heading: "Shopify SEO for Australian stores",
         body: [
           "The core mechanics of Shopify SEO are the same worldwide. Collections, product pages, handles, redirects, structured data and speed work the same way for an Australian store as for any other, and the deep dives on [[/blogs/shopify-product-seo|Shopify product SEO]] and [[/blogs/shopify-collection-page-seo|Shopify collection page SEO]] apply unchanged. What changes for Australian stores is a short list of market decisions.",
-          "**Domain and markets.** A store that sells only in Australia can simply use a .com.au domain as its primary domain. If you sell to several English-speaking markets, such as Australia, New Zealand and the UK, Shopify Markets lets you give each market its own subfolder, subdomain or domain, and adds hreflang tags once a market has a language assigned (Shopify Help Center). Google's rules for hreflang still apply: each version must list itself and every other version, tags that do not point to each other are ignored, and only ISO 639-1 language codes with optional ISO 3166-1 Alpha-2 region codes are supported, so en-AU and en-NZ are valid while AU on its own is not ([[https://developers.google.com/search/docs/specialty/international/localized-versions|Google Search Central]]). Our recommendation: create separate market versions only when price, currency, delivery or range genuinely differ, because near-identical English pages depend on correct hreflang to show the right version.",
+          "**Domain and markets.** A store that sells only in Australia can simply use a .com.au domain as its primary domain. If you sell to several English-speaking markets, such as Australia, New Zealand and the UK, Shopify Markets lets you give each market its own subfolder, subdomain or domain, and adds hreflang tags once a market has a language assigned. Google's rules for hreflang still apply: each version must list itself and every other version, tags that do not point to each other are ignored, and only ISO 639-1 language codes with optional ISO 3166-1 Alpha-2 region codes are supported, so en-AU and en-NZ are valid while AU on its own is not ([[https://developers.google.com/search/docs/specialty/international/localized-versions|Google Search Central]]). Our recommendation: create separate market versions only when price, currency, delivery or range genuinely differ, because near-identical English pages depend on correct hreflang to show the right version.",
           "**Australian spelling and product terms.** Write collection names, product titles and filters in the words Australian shoppers use. Illustrative examples: 'thongs' rather than 'flip-flops', 'doona cover' rather than 'duvet cover', 'jumpers' alongside 'sweaters', and 'colour' as a filter label. Check which term carries demand in your keyword tool; where both are common, use the Australian term in the title and mention the alternative in the description.",
           "**GST-inclusive prices everywhere.** Google Merchant Center lists Australia among the countries where the product price should include GST, and asks for a price that matches the landing page and checkout ([[https://support.google.com/merchants/answer/6324371|Google Merchant Center Help]]). Keep the price in your Product structured data identical to the visible GST-inclusive price too, because Google expects markup to match the page. A mismatch usually comes from an app or feed that exports prices before tax.",
           "**Shipping and returns data.** Google's Product structured data documentation says merchant listings can show shipping details and return policies, recommends nesting store-wide shipping and return policy markup under Organization markup, and says using page markup together with a Merchant Center feed gives the best eligibility ([[https://developers.google.com/search/docs/appearance/structured-data/product|Google Search Central]]). For an Australian store, that means describing Australian delivery costs, times and your returns window consistently in markup, Merchant Center and the visible policy pages. See [[/blogs/product-structured-data-ecommerce|product structured data]] for implementation.",
@@ -1195,7 +1195,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "What Shopify Analytics Includes",
         body: [
-          "Shopify says its main analytics features are available on every plan: a customizable Analytics overview of metric cards, a reports library, and Live View for real-time activity (Shopify Help Center).",
+          "Shopify says its main analytics features are available on every plan: a customizable Analytics overview of metric cards, a reports library, and Live View for real-time activity.",
         ],
         table: {
           headers: ["Report area", "Use it for"],
@@ -1227,14 +1227,14 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Understanding Shopify's Conversion Rate",
         body: [
-          "Shopify defines each funnel step's conversion rate as sessions reaching that step divided by total sessions, with sessions based on continued activity (Shopify Help Center). Compare rates by device and channel rather than relying on the store-wide number. See [[/blogs/ecommerce-conversion-rate|ecommerce conversion rate]].",
+          "Shopify defines each funnel step's conversion rate as sessions reaching that step divided by total sessions, with sessions based on continued activity. Compare rates by device and channel rather than relying on the store-wide number. See [[/blogs/ecommerce-conversion-rate|ecommerce conversion rate]].",
           "Note that Shopify changed how it measures sessions from 21 to 23 September 2026: sessions no longer split at midnight UTC, and identified bot sessions are filtered out by default. Shopify says conversion rate can shift even when orders and sales haven't changed, and advises treating the update as a new baseline for session-based metrics ([[https://changelog.shopify.com/posts/shopify-analytics-session-measurement-improvements|Shopify changelog]]). Avoid reading a before-and-after change across those dates as a change in performance.",
         ],
       },
       {
         heading: "Customer Reports: Cohorts and RFM",
         body: [
-          "The customer cohort analysis report groups customers by first order date and can show customers, retention rate, gross sales, net sales or AOV. RFM reports group customers by recency, frequency and monetary value (Shopify Help Center). Use them to see whether newer customers return as often as older ones and which groups to target. See [[/blogs/ecommerce-cohort-analysis|ecommerce cohort analysis]].",
+          "The customer cohort analysis report groups customers by first order date and can show customers, retention rate, gross sales, net sales or AOV. RFM reports group customers by recency, frequency and monetary value. Use them to see whether newer customers return as often as older ones and which groups to target. See [[/blogs/ecommerce-cohort-analysis|ecommerce cohort analysis]].",
         ],
         cta: {
           title: "Not sure which Shopify numbers to trust?",

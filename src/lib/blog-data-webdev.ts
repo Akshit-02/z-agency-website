@@ -33,6 +33,7 @@ export const webDevPosts: BlogPost[] = [
     category: "Web Development",
     banner: "hub",
     date: "2026-09-16",
+    updated: "2026-10-17",
     readingTime: "16 min read",
     relatedServiceSlugs: ["website-development", "ui-ux-design", "cro-audit"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
@@ -52,7 +53,7 @@ export const webDevPosts: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "Website development is the process of building a website's actual functionality — front-end interface, back-end logic, content management, integrations, hosting and security — working alongside design, SEO, performance and accessibility rather than after them. A business website today typically needs a content management approach, at least a few integrations (analytics, forms, sometimes a CRM or payment system), and a technology choice suited to how much the site will grow and change. This guide is the hub for ZSpace Labs' full Website Development content cluster — cost, timeline, process, technology choices and post-launch maintenance are each covered in depth in their own linked guides below.",
+          "Website development is the process of building a website's actual functionality — front-end interface, back-end logic, content management, integrations, hosting and security — working alongside design, SEO, performance and accessibility rather than after them. A business website today typically needs a content management approach, at least a few integrations (analytics, forms, sometimes a CRM or payment system), and a technology choice suited to how much the site will grow and change. The right build depends less on company size than on how often content changes, how many systems the site must connect to, and whether visitors need to log in or transact.",
         ],
       },
       {
@@ -103,10 +104,11 @@ export const webDevPosts: BlogPost[] = [
           "These four disciplines are often treated as afterthoughts, added after a site is \"functionally done\" — which is consistently more expensive and less effective than building them in from the start.",
         ],
         checklist: [
-          "Security: HTTPS, proper authentication, input validation, current dependencies — see the [[/blogs/website-security-checklist|security checklist]]",
+          "Security: HTTPS, proper authentication, input validation, current dependencies; the [[https://owasp.org/www-project-top-ten/|OWASP Top 10]] is the usual reference list of web application risks — see the [[/blogs/website-security-checklist|security checklist]]",
           "SEO: crawlable structure, clean metadata, fast load times, indexable content — foundational to organic visibility",
-          "Performance: Core Web Vitals, image and font strategy, minimal unnecessary JavaScript — see the [[/blogs/website-performance-optimization|performance optimization guide]]",
-          "Accessibility: semantic HTML, keyboard navigation, sufficient contrast — see the [[/blogs/website-accessibility-guide|accessibility guide]]",
+          "Performance: Google's Core Web Vitals treat LCP of 2.5 seconds or less, INP of 200 milliseconds or less and CLS of 0.1 or less as good, measured at the 75th percentile of real page loads ([[https://web.dev/articles/vitals|web.dev]]); image and font strategy and minimal JavaScript get you there — see the [[/blogs/website-performance-optimization|performance optimization guide]]",
+          "Accessibility: semantic HTML, keyboard navigation, sufficient contrast, with [[https://www.w3.org/TR/WCAG22/|WCAG 2.2]] Level AA as the common benchmark — see the [[/blogs/website-accessibility-guide|accessibility guide]]",
+          "Privacy and consent: forms, analytics and cookies must follow the rules where your visitors are, such as India's DPDP Act, UK GDPR and the ICO's cookie guidance, the UAE PDPL, Australia's Privacy Act or Singapore's PDPA — summarised with sources on our [[/services/website-development|website development service page]]",
         ],
         cta: {
           title: "Planning a website project and want a second opinion on scope?",
@@ -130,6 +132,16 @@ export const webDevPosts: BlogPost[] = [
         body: [
           "Custom development tends to make sense once a site needs functionality a template or builder doesn't support well, needs to scale to meaningful traffic or complexity, needs deep integrations with other business systems, or needs performance and flexibility a general-purpose platform can't reliably deliver. A simple, low-traffic brochure site rarely needs it. If the requirements include logins, stored customer data or workflows, you may be commissioning a web application rather than a website; [[/blogs/custom-website-vs-web-application|this website vs web application guide]] helps you tell which.",
         ],
+        table: {
+          headers: ["If the site needs to…", "You are probably building", "Typical approach"],
+          rows: [
+            ["Explain the business and capture enquiries; content changes a few times a year", "A brochure or marketing site", "A good website builder or a small custom build"],
+            ["Publish often, rank for many topics and let marketers edit without developers", "A content-driven site", "Custom front end with a CMS, often headless"],
+            ["Sell products with standard checkout, shipping and tax", "An online store", "A commerce platform such as Shopify, customised"],
+            ["Let users log in, store their data or run workflows", "A web application", "Custom front end and back end with authentication and a database"],
+            ["Connect several business systems (CRM, ERP, payments) in real time", "An integration-heavy site or app", "Custom build with an API layer, monitoring and retries"],
+          ],
+        },
       },
       {
         heading: "How to Choose Technology",
@@ -310,7 +322,6 @@ export const webDevPosts: BlogPost[] = [
         body: [
           "Development cost covers building the site; hosting, security updates, content updates, monitoring and periodic improvements are ongoing, separate costs. See the [[/blogs/website-maintenance-guide|website maintenance guide]] for what that ongoing work actually includes — budgeting for it from the start avoids an unpleasant surprise later.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Want a clear, scope-based estimate for your project?",
           description: "ZSpace Labs can walk through your requirements and explain what's actually driving cost on your specific project, before you commit to anything. See how we approach [[/services/website-development|website development]].",
@@ -423,7 +434,6 @@ export const webDevPosts: BlogPost[] = [
         body: [
           "Real traffic surfaces issues internal testing doesn't catch — an unusual device, an edge case in a form, a third-party integration behaving differently under real load. A short stabilization period after launch, followed by ongoing [[/blogs/website-maintenance-guide|maintenance]], is part of a realistic project timeline, not an afterthought.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Ready to plan your project timeline in detail?",
           description: "See the [[/blogs/website-development-process|complete website development process]] for the full stage-by-stage breakdown. Explore our [[/services/website-development|website and web app development services]].",
@@ -908,7 +918,6 @@ export const webDevPosts: BlogPost[] = [
         body: [
           "Moving from WordPress to a custom build, or the reverse, is a real project in its own right — content migration, SEO preservation (redirects, metadata), and rebuilding any custom plugin functionality all take deliberate planning, not a quick swap.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Considering a move off WordPress, or onto it?",
           description: "See the [[/blogs/website-redesign-vs-rebuild|redesign vs. rebuild guide]] for how to think through a platform change on an existing site. See how we approach [[/services/website-development|website development]].",
@@ -1004,7 +1013,6 @@ export const webDevPosts: BlogPost[] = [
         body: [
           "Consider the project's actual complexity (does it genuinely need multiple specialized skills), how much continuity risk the business can tolerate, and whether ongoing support after launch matters. A simple site with a tight budget and a clear brief can be well served either way — the deciding factor is usually complexity and risk tolerance, not a universal rule.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Ready to evaluate specific options?",
           description: "See the [[/blogs/how-to-choose-website-development-company|how to choose a website development company guide]] for the questions worth asking either option before you commit. Explore our [[/services/website-development|website and web app development services]].",

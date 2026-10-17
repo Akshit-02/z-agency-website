@@ -501,10 +501,6 @@ export const services: Service[] = [
         a: "Good candidates are frequent, time-consuming, reasonably stable and tolerant of a review step. We assess volume, error cost and data availability before building, and sometimes recommend simpler non-AI automation.",
       },
       {
-        q: "Is our data safe when using AI models?",
-        a: "We use providers and settings that match your data rules, minimise what is sent to models, keep permissions enforced in your systems and avoid storing sensitive data in prompts or logs.",
-      },
-      {
         q: "How do you measure whether automation is working?",
         a: "We define success metrics before building, such as time saved, accuracy and escalation rates, test against real examples and monitor quality and cost after launch.",
       },
@@ -518,7 +514,7 @@ export const services: Service[] = [
       },
       {
         q: "Is our data safe if we use AI automation?",
-        a: "We design automations so only the data a step needs is sent to an AI model, use providers and settings that don't train on your data where available, keep access scoped and log every run. We also discuss obligations under India's data protection law with you before handling personal data.",
+        a: "We design automations so only the data a step needs is sent to an AI model, use providers and settings that don't train on your data where available, keep permissions enforced in your systems, avoid storing sensitive data in prompts or logs, and log every run. Before handling personal data we go through the data protection rules that apply to you, such as India's DPDP Act, UK GDPR or the UAE PDPL.",
       },
     ],
   },

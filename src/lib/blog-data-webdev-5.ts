@@ -1,5 +1,4 @@
 import type { BlogPost } from "./blog-data";
-import { webDevFrameworkTable } from "./blog-data-webdev";
 
 /**
  * Website Development cluster — fifth wave: the remaining
@@ -103,7 +102,6 @@ export const webDevPosts5: BlogPost[] = [
         body: [
           "Financial decisions are often more considered than typical consumer purchases — the website should support genuine evaluation (clear information, calculators, transparent terms) rather than relying on urgency or pressure tactics that can undermine the trust the rest of the site is working to build.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Planning a fintech website or product marketing site?",
           description: "See the [[/blogs/website-development-guide|complete website development guide]] for how security, clarity and conversion fit together in the planning process. Learn more about our [[/services/website-development|Next.js and React development work]].",
@@ -199,7 +197,6 @@ export const webDevPosts5: BlogPost[] = [
         body: [
           "For a technically sophisticated audience, inaccurate or vague technical claims are a fast way to lose credibility — this audience often notices sloppiness that a general business audience might not, making technical accuracy itself a meaningful conversion factor.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Want your product site reviewed for technical clarity and accuracy?",
           description: "See the [[/blogs/website-development-guide|complete website development guide]] for how technical credibility fits into the broader development process. See how we approach [[/services/website-development|website development]].",
@@ -296,7 +293,6 @@ export const webDevPosts5: BlogPost[] = [
         body: [
           "Real authority comes from specific, verifiable evidence — documented case studies, genuine credentials, substantive published thinking — not from vague superlatives. This distinction matters especially for consulting, where the entire value proposition rests on demonstrated judgment.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Want your firm's positioning and case studies reviewed for impact?",
           description: "See the [[/blogs/website-trust-and-credibility|website trust and credibility guide]] for the broader checklist this connects to. Explore our [[/services/website-development|website and web app development services]].",
@@ -623,7 +619,6 @@ export const webDevPosts5: BlogPost[] = [
         body: [
           "For any page fetching data dynamically, an inefficient database query delays the server's response regardless of how optimized the front end is — this is worth checking directly for any dynamic, data-driven page that feels slow.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Ready to fix the actual bottleneck, not just guess at one?",
           description: "See the [[/blogs/website-performance-optimization|complete website performance optimization guide]] for the full technical breakdown. See how we approach [[/services/website-development|website development]].",
@@ -755,7 +750,6 @@ export const webDevPosts5: BlogPost[] = [
         body: [
           "Start with your analytics funnel to find exactly where visitors are dropping off, then investigate that specific stage rather than reviewing the entire site broadly — this is the same structured approach behind ZSpace Labs' [[/blogs/shopify-cro-audit|CRO audit framework]].",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Want a structured audit instead of trial-and-error fixes?",
           description: "See the [[/blogs/shopify-cro-audit|complete CRO audit framework]] for the full evidence-based diagnostic and prioritization process. Explore our [[/services/website-development|website and web app development services]].",

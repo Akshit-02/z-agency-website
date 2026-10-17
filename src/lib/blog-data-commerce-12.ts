@@ -69,7 +69,7 @@ export const commercePosts12: BlogPost[] = [
       {
         heading: "Selling Through AI Assistants",
         body: [
-          "The newest change is that shoppers ask AI assistants for product advice, and those assistants show products and, on some surfaces, complete checkout. Shopify lists ChatGPT, Microsoft Copilot, AI Mode in Google Search, the Gemini app and Meta as channels for its Agentic Storefronts (Shopify). Standards such as the Universal Commerce Protocol (UCP), co-developed by Google and Shopify, and the Agentic Commerce Protocol (ACP), from OpenAI and Stripe, define how assistants and merchants exchange product, cart and checkout information. See [[/blogs/agentic-commerce|agentic commerce]] and [[/blogs/ai-shopping-agents|AI shopping agents]].",
+          "The newest change is that shoppers ask AI assistants for product advice, and those assistants show products and, on some surfaces, complete checkout. Shopify lists ChatGPT, Microsoft Copilot, AI Mode in Google Search, the Gemini app and Meta as channels for its Agentic Storefronts. Standards such as the Universal Commerce Protocol (UCP), co-developed by Google and Shopify, and the Agentic Commerce Protocol (ACP), from OpenAI and Stripe, define how assistants and merchants exchange product, cart and checkout information. See [[/blogs/agentic-commerce|agentic commerce]] and [[/blogs/ai-shopping-agents|AI shopping agents]].",
         ],
       },
       {
@@ -234,7 +234,7 @@ export const commercePosts12: BlogPost[] = [
         },
         callout: {
           type: "note",
-          text: "OpenAI launched Instant Checkout in ChatGPT with the Agentic Commerce Protocol in September 2025. In March 2026, OpenAI said Instant Checkout was moving to ChatGPT apps, with ACP remaining the infrastructure (Digital Commerce 360). Check each channel's current terms before planning around a feature.",
+          text: "OpenAI launched Instant Checkout in ChatGPT with the Agentic Commerce Protocol in September 2025. In March 2026, OpenAI said Instant Checkout was moving to ChatGPT apps, with ACP remaining the infrastructure. Check each channel's current terms before planning around a feature.",
         },
       },
       {
@@ -269,14 +269,14 @@ export const commercePosts12: BlogPost[] = [
       {
         heading: "Checkout and Payments",
         body: [
-          "When an agent completes a purchase, the checkout still runs on the merchant's systems. OpenAI's ACP documentation states that OpenAI is not the merchant of record and that checkout state and payment processing occur on the merchant's systems (OpenAI). Google's UCP-powered checkout keeps the merchant as seller of record and currently uses payment methods saved in Google Wallet (Google Merchant Center Help). Your checkout rules, taxes, shipping and fraud checks still apply.",
+          "When an agent completes a purchase, the checkout still runs on the merchant's systems. OpenAI's ACP documentation states that OpenAI is not the merchant of record and that checkout state and payment processing occur on the merchant's systems. Google's UCP-powered checkout keeps the merchant as seller of record and currently uses payment methods saved in Google Wallet. Your checkout rules, taxes, shipping and fraud checks still apply.",
           "The step-by-step flow, including idempotency and order webhooks, is in [[/blogs/agentic-checkout|agentic checkout]]; credentials, mandates and limits are in [[/blogs/ai-agent-commerce-payments|AI commerce payments]].",
         ],
       },
       {
         heading: "Trust, Authorization and Risk",
         body: [
-          "Agent purchases raise questions: did the shopper authorize this, is the request genuine, and who is accountable if something goes wrong? Google's Agent Payments Protocol (AP2), announced in September 2025, addresses this with verifiable user authorization (Google Cloud). For merchants, practical steps are clear policies, fraud screening that treats agent traffic appropriately, and service processes that work for orders placed through assistants.",
+          "Agent purchases raise questions: did the shopper authorize this, is the request genuine, and who is accountable if something goes wrong? Google's Agent Payments Protocol (AP2), announced in September 2025, addresses this with verifiable user authorization. For merchants, practical steps are clear policies, fraud screening that treats agent traffic appropriately, and service processes that work for orders placed through assistants.",
         ],
       },
       {
@@ -447,7 +447,7 @@ export const commercePosts12: BlogPost[] = [
       {
         heading: "What's Hype",
         body: [
-          "Claims that agents will soon handle most shopping autonomously, that stores need special “AI files” to be seen, or that one protocol has already won aren't supported by current evidence. Google states no special markup or files are needed for AI Overviews or AI Mode (Google Search Central). Build for what's documented and measurable.",
+          "Claims that agents will soon handle most shopping autonomously, that stores need special “AI files” to be seen, or that one protocol has already won aren't supported by current evidence. Google states no special markup or files are needed for AI Overviews or AI Mode. Build for what's documented and measurable.",
         ],
       },
       {
@@ -560,7 +560,7 @@ export const commercePosts12: BlogPost[] = [
       {
         heading: "Channels and Availability",
         body: [
-          "Shopify's documentation describes different reach per channel: ChatGPT and Copilot are available to merchants selling to US buyers regardless of where the store is based, while AI Mode and Gemini were open to US-based stores selling to US customers, with a broader rollout underway. Products reach Google's surfaces through Shopify Catalog or the Google & YouTube channel and Merchant Center (Shopify Help Center, Shopify).",
+          "Shopify's documentation describes different reach per channel: ChatGPT and Copilot are available to merchants selling to US buyers regardless of where the store is based, while AI Mode and Gemini were open to US-based stores selling to US customers, with a broader rollout underway. Products reach Google's surfaces through Shopify Catalog or the Google & YouTube channel and Merchant Center.",
         ],
       },
       {
@@ -592,7 +592,7 @@ export const commercePosts12: BlogPost[] = [
       {
         heading: "Product Data Is the Lever",
         body: [
-          "Shopify lists products in AI channels with their title, description, options, images, price, availability and other key attributes. If important information lives in metafields or metaobjects, such as materials, dimensions or compatibility, use Shopify Catalog Mapping so it reaches the Catalog (Shopify Help Center).",
+          "Shopify lists products in AI channels with their title, description, options, images, price, availability and other key attributes. If important information lives in metafields or metaobjects, such as materials, dimensions or compatibility, use Shopify Catalog Mapping so it reaches the Catalog.",
         ],
         table: {
           headers: ["Field", "Improve by"],
@@ -621,7 +621,7 @@ export const commercePosts12: BlogPost[] = [
       {
         heading: "For Developers: Building Agents on Shopify",
         body: [
-          "Shopify's developer documentation describes how agents can authenticate, search the Global Catalog or a single storefront, build carts and checkouts, hand off to the merchant for payment and monitor orders using UCP and UCP-compliant MCP servers, with trust tiers controlling capabilities; some APIs are in early access (Shopify developer docs). This matters if you're building your own shopping assistant, not for enabling Agentic Storefronts. See [[/blogs/shopify-custom-app-development-guide|Shopify custom app development]].",
+          "Shopify's developer documentation describes how agents can authenticate, search the Global Catalog or a single storefront, build carts and checkouts, hand off to the merchant for payment and monitor orders using UCP and UCP-compliant MCP servers, with trust tiers controlling capabilities; some APIs are in early access. This matters if you're building your own shopping assistant, not for enabling Agentic Storefronts. See [[/blogs/shopify-custom-app-development-guide|Shopify custom app development]].",
         ],
       },
       {

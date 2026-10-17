@@ -256,7 +256,7 @@ export const commercePosts6: BlogPost[] = [
       {
         heading: "Variant Limits and Options",
         body: [
-          "Shopify products support up to three options and, after Shopify raised the limit, up to 2,048 variants (Shopify developer changelog). Most fashion products need two options, colour and size, which leaves room for a third such as length or fit. The Combined Listings app is available on Plus and enterprise plans; each child product can have its own title, description, URL and image gallery (Shopify Help Center).",
+          "Shopify products support up to three options and, after Shopify raised the limit, up to 2,048 variants. Most fashion products need two options, colour and size, which leaves room for a third such as length or fit. The Combined Listings app is available on Plus and enterprise plans; each child product can have its own title, description, URL and image gallery.",
         ],
       },
       {
@@ -333,7 +333,7 @@ export const commercePosts6: BlogPost[] = [
       {
         heading: "Selling Internationally",
         body: [
-          "Shopify Markets manages currencies, languages, pricing and domains or subfolders per market, and generates hreflang tags automatically (Shopify Help Center). Fashion brands should also localize size systems (UK, EU, US), returns terms and delivery times per market.",
+          "Shopify Markets manages currencies, languages, pricing and domains or subfolders per market, and generates hreflang tags automatically. Fashion brands should also localize size systems (UK, EU, US), returns terms and delivery times per market.",
         ],
       },
       {
@@ -624,7 +624,7 @@ export const commercePosts6: BlogPost[] = [
       {
         heading: "Discovery: Filters, Collections and Search",
         body: [
-          "Configure Search & Discovery filters from the concern, type and ingredient metafields, alongside product type and price. Build automated collections for each concern and type so they stay current. Add search synonyms for how shoppers describe products and ingredients: SPF and sunscreen, vitamin C and ascorbic acid, moisturizer and moisturiser (Shopify Search & Discovery). See [[/blogs/shopify-search-optimization|Shopify search optimization]].",
+          "Configure Search & Discovery filters from the concern, type and ingredient metafields, alongside product type and price. Build automated collections for each concern and type so they stay current. Add search synonyms for how shoppers describe products and ingredients: SPF and sunscreen, vitamin C and ascorbic acid, moisturizer and moisturiser. See [[/blogs/shopify-search-optimization|Shopify search optimization]].",
         ],
       },
       {

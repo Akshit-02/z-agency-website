@@ -1,5 +1,4 @@
 import type { BlogPost } from "./blog-data";
-import { webDevFrameworkTable } from "./blog-data-webdev";
 
 /**
  * Website Development cluster — fourth wave: business-type and
@@ -101,7 +100,6 @@ export const webDevPosts4: BlogPost[] = [
           "Complex integrations beyond what's needed to capture leads or signups today",
           "Multi-language or multi-region support before there's a real audience need for it",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Not sure what your startup's website actually needs right now?",
           description: "See the [[/blogs/website-development-guide|complete website development guide]] for the full picture of what to prioritize and what can wait. Learn more about our [[/services/website-development|Next.js and React development work]].",
@@ -216,7 +214,6 @@ export const webDevPosts4: BlogPost[] = [
         body: [
           "A slow or technically rough marketing site undercuts the same credibility a SaaS product depends on — a technically sophisticated audience notices technical shortcomings on the site selling to them. Modern frameworks like Next.js are common for SaaS sites needing both marketing performance and product-level capability. See the [[/blogs/nextjs-website-development|Next.js website development guide]].",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Want your SaaS site's conversion flow reviewed?",
           description: "See the [[/blogs/website-development-guide|complete website development guide]] for how positioning, UX and technical foundation come together. See how we approach [[/services/website-development|website development]].",
@@ -319,7 +316,6 @@ export const webDevPosts4: BlogPost[] = [
         body: [
           "Whether to show pricing depends on the sales model — some B2B products benefit from transparent pricing that qualifies and self-selects visitors; others intentionally route pricing conversations through sales because deal complexity genuinely varies. Either can be the right call depending on the product.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Want your B2B site's lead flow reviewed end to end?",
           description: "See the [[/blogs/website-lead-generation|website lead generation guide]] for how CTA strategy, forms and CRM integration fit together. Explore our [[/services/website-development|website and web app development services]].",
@@ -424,7 +420,6 @@ export const webDevPosts4: BlogPost[] = [
         body: [
           "The path to a first conversation should be low-friction — enough context captured to route and prepare effectively, without an overly long qualification form that discourages a genuinely interested prospect from reaching out at all.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Want your inquiry flow reviewed for unnecessary friction?",
           description: "See the [[/blogs/website-lead-generation|website lead generation guide]] for how to structure a contact flow that converts without over-asking. Learn more about our [[/services/website-development|Next.js and React development work]].",
@@ -526,7 +521,6 @@ export const webDevPosts4: BlogPost[] = [
         body: [
           "For brokerages and agents relying on shared listing data, MLS integration is often a core, non-negotiable requirement — this should be scoped explicitly during planning, since it affects both technical approach and overall project cost. See the [[/blogs/website-requirements-document|requirements document guide]] for how to capture this clearly.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Planning a real estate website project?",
           description: "See the [[/blogs/website-development-cost|website development cost guide]] for the real cost drivers behind MLS integration, custom search and CRM connections. See how we approach [[/services/website-development|website development]].",
@@ -628,7 +622,6 @@ export const webDevPosts4: BlogPost[] = [
         body: [
           "Medical and health-related content should be accurate, appropriately reviewed, and should avoid making claims the organization isn't positioned to stand behind. This matters both for patient safety and for the organization's own credibility.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Planning a healthcare website project?",
           description: "See the [[/blogs/website-development-guide|complete website development guide]] for the broader planning process this connects to. Explore our [[/services/website-development|website and web app development services]].",

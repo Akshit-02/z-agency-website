@@ -29,6 +29,9 @@ export async function deliverContactMessage(payload: ContactValues): Promise<Sen
       { label: "Budget Range", value: payload.budget },
       { label: "Project Details", value: payload.details },
       { label: "Source Page", value: payload.sourcePage ?? "" },
+      { label: "Landing Page", value: payload.landingPage ?? "" },
+      { label: "Referrer", value: payload.referrer ?? "" },
+      { label: "Campaign (UTM)", value: payload.utm ?? "" },
     ],
     source: "ZSpace Labs Website - Contact Form",
   });

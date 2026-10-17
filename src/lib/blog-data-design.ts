@@ -404,6 +404,7 @@ export const designPosts: BlogPost[] = [
     category: "UI/UX",
     banner: "framework",
     date: "2026-09-25",
+    updated: "2026-10-17",
     readingTime: "15 min read",
     relatedServiceSlugs: ["ui-ux-design", "website-development", "cro-audit"],
     relatedIndustrySlugs: ["saas-technology", "d2c-consumer", "fintech"],
@@ -414,7 +415,7 @@ export const designPosts: BlogPost[] = [
       { q: "What does a UI/UX design project include?", a: "Typically research, information architecture, user flows, wireframes, prototypes, usability testing, UI design, a design system or component library, and handoff to development." },
       { q: "How much does UI/UX design cost?", a: "It depends on scope: number of flows and screens, research depth, whether a design system is needed, and platforms. Get estimates based on defined deliverables rather than page counts alone." },
       { q: "What are usability heuristics?", a: "Broad rules of thumb for interface design, the best known being Jakob Nielsen's 10 usability heuristics, such as visibility of system status, consistency and error prevention." },
-      { q: "Does UI/UX affect SEO?", a: "Indirectly. Clear structure, fast and stable pages, and content people engage with support search performance, and page experience is part of how Google evaluates pages." },
+      { q: "Does UI/UX affect SEO?", a: "Partly. Google says Core Web Vitals are used by its ranking systems, while other page experience aspects don't directly raise rankings but make a site more satisfying to use. Clear structure and content people can actually use matter more than any single score." },
       { q: "Should UI/UX design happen before development?", a: "Mostly, with overlap. Structure and key flows should be validated before build; detailed UI can progress in parallel with development using a shared component system." },
       { q: "How do you know if a design is good?", a: "Test it with representative users and measure outcomes after launch: task success, conversion, retention and support volume." },
     ],
@@ -469,7 +470,7 @@ export const designPosts: BlogPost[] = [
       {
         heading: "Responsive Design and Accessibility",
         body: [
-          "Interfaces must adapt to phones, tablets and desktops, and work for people with different abilities. Design these in from the start rather than retrofitting them. See [[/blogs/responsive-ui-design|responsive UI design]] and [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]].",
+          "Interfaces must adapt to phones, tablets and desktops, and work for people with different abilities. Design these in from the start rather than retrofitting them, using WCAG 2.2 Level AA as the usual benchmark. See [[/blogs/responsive-ui-design|responsive UI design]] and [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]].",
         ],
       },
       {
@@ -481,7 +482,7 @@ export const designPosts: BlogPost[] = [
       {
         heading: "Prototyping and Testing",
         body: [
-          "Prototypes let teams test flows before building them, and usability testing with a handful of users uncovers most serious problems. See [[/blogs/wireframing-vs-prototyping|wireframing vs prototyping]] and [[/blogs/usability-testing|usability testing]].",
+          "Prototypes let teams test flows before building them, and usability testing with a handful of users uncovers most serious problems; Nielsen Norman Group's long-standing guidance is about five users per round, repeated as the design changes. See [[/blogs/wireframing-vs-prototyping|wireframing vs prototyping]] and [[/blogs/usability-testing|usability testing]].",
         ],
       },
       {

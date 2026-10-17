@@ -129,6 +129,7 @@ export const mobilePosts2: BlogPost[] = [
     category: "Mobile Apps",
     banner: "systems",
     date: "2026-09-25",
+    updated: "2026-10-17",
     readingTime: "12 min read",
     relatedServiceSlugs: ["mobile-app-development", "website-development"],
     relatedIndustrySlugs: ["startups", "ecommerce", "saas-technology"],
@@ -153,7 +154,7 @@ export const mobilePosts2: BlogPost[] = [
       {
         heading: "How React Native Works",
         body: [
-          "Developers write components in React, just as for the web, but instead of producing HTML, React Native maps them to native views: a View becomes a native container, Text a native text element. JavaScript runs on Hermes, React Native's default engine, and the New Architecture's Fabric renderer and Turbo Native Modules handle communication with native code more directly than the older bridge.",
+          "Developers write components in React, just as for the web, but instead of producing HTML, React Native maps them to native views: a View becomes a native container, Text a native text element. JavaScript runs on Hermes, React Native's default engine, and the New Architecture's Fabric renderer and Turbo Native Modules handle communication with native code more directly than the older bridge. The New Architecture became the default in version 0.76 (October 2024) ([[https://reactnative.dev/blog/2024/10/23/release-0.76-new-architecture|React Native 0.76]]), version 0.82 (October 2025) was the first to run entirely on it ([[https://reactnative.dev/blog/2025/10/08/react-native-0.82|React Native 0.82]]), and 0.84 (February 2026) made Hermes V1 the default engine ([[https://reactnative.dev/blog/2026/02/11/react-native-0.84|React Native 0.84]]). If an older app still depends on the legacy architecture, plan that migration before adding features.",
         ],
         visual: { variant: "grid", accent: "orange", caption: "React components describe the UI; React Native renders them as real iOS and Android views." },
       },
@@ -166,7 +167,7 @@ export const mobilePosts2: BlogPost[] = [
       {
         heading: "Frameworks and Tooling",
         body: [
-          "The React Native documentation recommends starting new apps with a framework such as Expo, which provides routing, build services, over-the-air updates for JavaScript changes (within store rules), and ready-made access to device APIs. Fast refresh shows code changes almost immediately during development.",
+          "The React Native documentation recommends starting new apps with a framework such as Expo ([[https://reactnative.dev/docs/environment-setup|React Native docs]]), which provides routing, build services, over-the-air updates for JavaScript changes (within store rules; see [[https://docs.expo.dev/eas-update/introduction/|EAS Update]]), and ready-made access to device APIs. Fast refresh shows code changes almost immediately during development.",
         ],
       },
       {

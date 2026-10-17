@@ -844,7 +844,7 @@ function ProjectBoard({ on, still }: { on: boolean; still: boolean }) {
                   transition={{ duration: 1.2, delay: 0.6 }}
                 />
               </div>
-              <span className="text-[0.62rem] text-ink/50">58%</span>
+              <span className="text-[0.62rem] text-ink/50">58% done</span>
             </div>
             <div className="flex -space-x-1.5">
               {["AK", "SR", "MJ", "DV"].map((w, i) => (
@@ -916,7 +916,7 @@ function ProjectBoard({ on, still }: { on: boolean; still: boolean }) {
 
 const facts = [
   { label: "What we are", value: "An independent technology and digital product studio. One team handles design and engineering." },
-  { label: "Where we work", value: "Remote-first. We serve businesses across India and work with clients globally." },
+  { label: "Where we work", value: "Remote-first, with clients in India, the UAE, the UK, Australia and Singapore. We have no local offices." },
   { label: "What we build", value: "Websites and web apps, mobile apps, Shopify stores, UI/UX, AI automation and CRO." },
   { label: "Contact", value: "connect@zspace.in, or the project form on our contact page." },
 ];

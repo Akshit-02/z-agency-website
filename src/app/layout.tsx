@@ -5,7 +5,8 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { StructuredData } from "@/components/StructuredData";
-import { site } from "@/lib/site";
+import { FirstTouch } from "@/components/FirstTouch";
+import { site, markets } from "@/lib/site";
 import { services } from "@/lib/services-data";
 import { ORG_ID, WEBSITE_ID } from "@/lib/seo";
 
@@ -81,6 +82,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} ${newsreader.variable}`}>
       <body className="font-body antialiased">
+        <FirstTouch />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"
@@ -112,7 +114,7 @@ export default function RootLayout({
               availableLanguage: ["English"],
             },
             knowsAbout: services.map((service) => service.name),
-            areaServed: [{ "@type": "Country", name: "India" }, "Worldwide"],
+            areaServed: markets.map((m) => ({ "@type": "Country", name: m.name })),
             ...(Object.keys(site.social).length > 0 ? { sameAs: Object.values(site.social) } : {}),
           }}
         />

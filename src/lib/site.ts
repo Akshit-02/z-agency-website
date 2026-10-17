@@ -22,6 +22,41 @@ export const site = {
   social: {} as Record<string, string>,
 } as const;
 
+/**
+ * Countries where ZSpace Labs has clients (confirmed by the owner on
+ * 17 October 2026). Used for Organization.areaServed, the About page and the
+ * "outside India" section on service pages. Each note summarises the main
+ * rule a build in that market is designed around, with its primary source.
+ * Re-check the notes when the rules change; they are not legal advice.
+ */
+export const markets = [
+  {
+    name: "India",
+    note:
+      "The DPDP Act 2023 and DPDP Rules 2025 phase in from November 2025. Most duties for businesses, including notices, security safeguards, breach reporting and user rights, apply from May 2027 ([[https://www.meity.gov.in/data-protection-framework|MeitY]]).",
+  },
+  {
+    name: "United Arab Emirates",
+    note:
+      "The federal Personal Data Protection Law (Federal Decree-Law No. 45 of 2021) has applied since 2 January 2022, and the DIFC has its own Data Protection Law ([[https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws|u.ae]]). Arabic and right-to-left layouts are planned from the start when your audience needs them.",
+  },
+  {
+    name: "United Kingdom",
+    note:
+      "UK GDPR covers personal data, and the ICO's storage and access guidance, finalised on 29 April 2026, sets the rules for cookies and analytics ([[https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/|ICO]]). We use WCAG 2.2 AA as the accessibility benchmark ([[https://www.w3.org/TR/WCAG22/|W3C]]).",
+  },
+  {
+    name: "Australia",
+    note:
+      "The Privacy Act 1988 and the Australian Privacy Principles apply. From 10 December 2026, privacy policies must also describe significant decisions that software makes or substantially informs (APP 1.7 to 1.9) ([[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-1-app-1-open-and-transparent-management-of-personal-information|OAIC]]).",
+  },
+  {
+    name: "Singapore",
+    note:
+      "The Personal Data Protection Act 2012 sets consent, purpose and protection obligations for collecting and using personal data ([[https://www.pdpc.gov.sg/overview-of-pdpa/the-legislation/personal-data-protection-act|PDPC]]).",
+  },
+] as const;
+
 export type NavLink = {
   label: string;
   href: string;

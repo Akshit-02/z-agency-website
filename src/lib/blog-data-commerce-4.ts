@@ -82,7 +82,7 @@ export const commercePosts4: BlogPost[] = [
       {
         heading: "The Event Plan",
         body: [
-          "Google documents a standard set of recommended ecommerce events for GA4 (Google Analytics developer documentation). Using them, rather than inventing names, makes the built-in ecommerce reports work.",
+          "Google documents a standard set of recommended ecommerce events for GA4. Using them, rather than inventing names, makes the built-in ecommerce reports work.",
         ],
         table: {
           headers: ["Event", "When it fires"],
@@ -313,7 +313,7 @@ export const commercePosts4: BlogPost[] = [
       {
         heading: "Why Tools Disagree",
         body: [
-          "Shopify Analytics defines each step's conversion rate as sessions reaching that step divided by total sessions, with sessions based on continued activity (Shopify Help Center). GA4 counts sessions and key events its own way and can undercount where visitors decline consent or block scripts. Neither is wrong; they measure differently. Pick one tool for trend reporting and explain the gap once rather than reconciling it every week.",
+          "Shopify Analytics defines each step's conversion rate as sessions reaching that step divided by total sessions, with sessions based on continued activity. GA4 counts sessions and key events its own way and can undercount where visitors decline consent or block scripts. Neither is wrong; they measure differently. Pick one tool for trend reporting and explain the gap once rather than reconciling it every week.",
         ],
       },
       {
@@ -849,7 +849,7 @@ export const commercePosts4: BlogPost[] = [
       {
         heading: "Cohorts in Shopify",
         body: [
-          "Shopify's customer cohort analysis report groups customers by the date of their first order and lets you switch the metric between number of customers, customer retention rate, gross sales, net sales and average order value (Shopify Help Center). Shopify also offers RFM customer analysis reports. For cuts the report doesn't support, export orders and build the table in a spreadsheet or BI tool. See [[/blogs/shopify-analytics-guide|Shopify analytics]].",
+          "Shopify's customer cohort analysis report groups customers by the date of their first order and lets you switch the metric between number of customers, customer retention rate, gross sales, net sales and average order value. Shopify also offers RFM customer analysis reports. For cuts the report doesn't support, export orders and build the table in a spreadsheet or BI tool. See [[/blogs/shopify-analytics-guide|Shopify analytics]].",
         ],
       },
       {

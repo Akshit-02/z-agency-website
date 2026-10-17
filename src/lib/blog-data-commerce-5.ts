@@ -726,7 +726,7 @@ export const commercePosts5: BlogPost[] = [
       {
         heading: "Platform Notes",
         body: [
-          "Many platforms include recommendations. On Shopify, the platform generates product recommendations and the Search & Discovery app lets merchants customize related and complementary products; Shopify notes complementary products must be active and in stock to appear (Shopify Help Center). Third-party engines add personalization and more control for larger catalogs. See [[/blogs/shopify-product-recommendations|Shopify product recommendations]].",
+          "Many platforms include recommendations. On Shopify, the platform generates product recommendations and the Search & Discovery app lets merchants customize related and complementary products; Shopify notes complementary products must be active and in stock to appear. Third-party engines add personalization and more control for larger catalogs. See [[/blogs/shopify-product-recommendations|Shopify product recommendations]].",
         ],
         cta: {
           title: "Want recommendations that help shoppers find more?",

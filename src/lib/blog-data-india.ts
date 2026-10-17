@@ -1092,6 +1092,7 @@ export const indiaSupportPosts: BlogPost[] = [
     banner: "framework",
     sceneKind: "workflow",
     date: "2026-10-04",
+    updated: "2026-10-17",
     readingTime: "9 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["b2b-enterprise", "professional-services"],
@@ -1099,7 +1100,7 @@ export const indiaSupportPosts: BlogPost[] = [
     faqs: [
       { q: "What should an AI automation agency do first?", a: "Map the process. A good agency asks how the work happens today, how often, who does it and what it costs before proposing any tool or model." },
       { q: "How do I know if a process needs AI at all?", a: "If inputs are structured and rules are clear, ordinary workflow automation is usually cheaper and more reliable. AI earns its place when a step means reading emails, documents or chats, or making a judgement." },
-      { q: "What questions should I ask about data?", a: "Ask which data each step sends to which provider, whether that provider trains on it, how long it is retained, who can access logs and how the setup meets India's DPDP Act obligations." },
+      { q: "What questions should I ask about data?", a: "Ask which data each step sends to which provider, whether that provider trains on it, how long it is retained, who can access logs and how the setup meets the data protection law that applies to you, such as India's DPDP Act or UK GDPR." },
       { q: "Should automations act without a person checking?", a: "Low-risk, reversible steps can. Consequential actions such as payments, refunds, account changes or customer messages should have a human approval step, at least until the automation has a track record." },
       { q: "How should we measure success?", a: "Agree a baseline before building: time per task, volume handled, error rates or response times. Then measure the same things after launch." },
       { q: "Is a large AI company better than a small studio?", a: "For organisation-wide AI programmes, large firms bring scale and governance. For automating specific workflows across your existing tools, a smaller senior team is often faster and closer to the work." },
@@ -1125,7 +1126,7 @@ export const indiaSupportPosts: BlogPost[] = [
           "**Process discovery**: they ask how the work is done today, with volumes and time spent",
           "**AI versus plain automation**: they recommend ordinary automation where rules are clear",
           "**Human review**: approval steps for actions that move money, change records or contact customers",
-          "**Data handling**: which data goes to which provider, retention, access and DPDP Act obligations",
+          "**Data handling**: which data goes to which provider, retention, access, and the data protection law where your customers are (India's DPDP Act, UK GDPR, the UAE PDPL, Australia's Privacy Act or Singapore's PDPA)",
           "**Integration experience**: real work with your CRM, helpdesk, ERP, email and messaging tools",
           "**Monitoring**: logs, alerts and a clear owner when a run fails",
           "**Running costs**: per-use AI costs and platform fees estimated up front",
@@ -1161,7 +1162,7 @@ export const indiaSupportPosts: BlogPost[] = [
       {
         heading: "Start small, then expand",
         body: [
-          "The most reliable path is one workflow with a measurable cost, a baseline taken before building, a few weeks of monitored running with human review, and only then the next workflow. Our guide on [[/blogs/when-to-automate-a-business-process|when to automate a business process]] helps pick the first candidate.",
+          "The most reliable path is one workflow with a measurable cost, a baseline taken before building, a few weeks of monitored running with human review, and only then the next workflow. Our guide on [[/blogs/when-to-automate-a-business-process|when to automate a business process]] helps pick the first candidate, and our [[/services/ai-automation|AI automation service]] page shows how we scope that first workflow.",
         ],
         cta: { title: "Want a second opinion on what to automate?", description: "Describe the workflow and we'll tell you honestly whether AI, plain automation or neither fits. See our [[/services/ai-automation|AI automation service]]." },
       },
@@ -1177,6 +1178,7 @@ export const indiaSupportPosts: BlogPost[] = [
     banner: "framework",
     sceneKind: "design",
     date: "2026-10-04",
+    updated: "2026-10-17",
     readingTime: "9 min read",
     relatedServiceSlugs: ["ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "startups"],
@@ -1213,7 +1215,7 @@ export const indiaSupportPosts: BlogPost[] = [
           "**Clear deliverables**: flows, prototypes, final designs and a design system with specs",
           "**Developer hand-off**: how components are specified and who answers questions during build",
           "**Accessibility**: contrast, text size, keyboard use and screen readers considered from the start",
-          "**Indian users**: regional languages, low-end Android devices and patchy networks where relevant",
+          "**Your market**: for Indian users, regional languages, low-end Android devices and patchy networks; for UAE audiences, Arabic and right-to-left layouts; for UK and Australian public-facing services, WCAG 2.2 AA as the usual accessibility benchmark",
         ],
       },
       {
@@ -1240,6 +1242,22 @@ export const indiaSupportPosts: BlogPost[] = [
           "The most common failure in design projects isn't bad design; it's design that gets diluted in development. Components that weren't specified, states nobody designed and spacing that drifts all add up. Agencies that design with build constraints in mind, or build themselves, reduce that gap.",
           "For a comparison of design agencies in India, see our disclosed shortlist of [[/blogs/best-ui-ux-design-agencies-in-india|UI/UX design agencies in India]].",
         ],
+      },
+      {
+        heading: "How to compare two quotes",
+        body: [
+          "Two quotes for the same brief can differ several times over because they describe different work. Put them side by side on the same lines before comparing totals. Our [[/services/ui-ux-design|UI/UX design service]] page lists what we include, if you want a third reference point.",
+        ],
+        table: {
+          headers: ["Compare", "What to ask", "Why it changes the price"],
+          rows: [
+            ["Research", "How many interviews or usability sessions, with whom?", "Recruiting and running sessions is real time; zero sessions means guesses"],
+            ["Scope", "Which flows and how many unique screens and states?", "Each flow needs empty, loading, error and success states, not only the happy path"],
+            ["Design system", "Is a component library with specs included?", "Reusable components cost more up front and save time in every later release"],
+            ["Revisions", "How many rounds, and what counts as a change of scope?", "Unlimited revisions usually means vague scope"],
+            ["Build support", "Who answers developer questions and reviews the built product?", "Design that isn't checked during build tends to drift"],
+          ],
+        },
         cta: { title: "Product harder to use than it should be?", description: "Start with a focused UX review. See our [[/services/ui-ux-design|UI/UX design service]]." },
       },
     ],
@@ -1254,6 +1272,7 @@ export const indiaSupportPosts: BlogPost[] = [
     banner: "framework",
     sceneKind: "abtest",
     date: "2026-10-04",
+    updated: "2026-10-17",
     readingTime: "9 min read",
     relatedServiceSlugs: ["cro-audit"],
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer"],
@@ -1309,13 +1328,49 @@ export const indiaSupportPosts: BlogPost[] = [
         heading: "Low traffic changes the approach",
         body: [
           "For stores and sites without much traffic, A/B tests can run for months without a clear answer. A good agency will say so, and instead focus on high-confidence fixes from research and best practice, measured before and after. Our [[/blogs/shopify-cro-checklist|Shopify CRO checklist]] lists the common ones.",
+          "**A worked example.** Suppose 2% of visitors buy and you want to detect a 20% relative improvement (2.0% to 2.4%) with the usual settings: 95% confidence and 80% power. A standard two-proportion calculation needs about 21,100 visitors per variant, or roughly 42,000 in total. At 1,000 visitors a day, that is about six weeks for one test. To detect a 10% improvement you would need about 80,700 per variant, more than five months at the same traffic. You can check your own numbers with a free calculator such as [[https://www.evanmiller.org/ab-testing/sample-size.html|Evan Miller's sample size calculator]].",
+          "Ask any agency to run this calculation with your real traffic and conversion rate before it proposes a testing programme. If the answer is months per test, the plan should lead with research-backed fixes instead.",
         ],
+        table: {
+          headers: ["Baseline conversion", "Improvement to detect", "Visitors per variant", "Days at 1,000 visitors a day (2 variants)"],
+          rows: [
+            ["2%", "20% (to 2.4%)", "About 21,100", "About 42"],
+            ["2%", "10% (to 2.2%)", "About 80,700", "About 161"],
+            ["3%", "20% (to 3.6%)", "About 13,900", "About 28"],
+          ],
+        },
+      },
+      {
+        heading: "Red flags when hiring a CRO agency",
+        body: [],
+        checklist: [
+          "**A guaranteed lift** before anyone has looked at your data",
+          "**Test results declared after a few days**, or stopped as soon as a variant looks ahead",
+          "**Only winning tests** in case studies and reports",
+          "**A redesign as the first recommendation**, before measurement and research",
+          "**No plan for implementation**, leaving your team to build every change",
+          "**Testing tools installed without checking their effect** on page speed and consent",
+        ],
+      },
+      {
+        heading: "Common engagement models",
+        body: [
+          "CRO agencies usually work in one of three ways. Which one fits depends on your traffic and on whether your team can build changes itself.",
+        ],
+        table: {
+          headers: ["Model", "What you get", "Suits"],
+          rows: [
+            ["One-off audit", "Measurement check, funnel analysis and a prioritised list of fixes and test ideas", "Sites that need direction and can implement changes in-house"],
+            ["Audit plus implementation", "The audit, then design and development of the agreed fixes, measured before and after", "Most small and mid-sized sites, especially with low traffic"],
+            ["Ongoing testing programme", "Research, a test roadmap, test builds and analysis every month", "Sites with enough traffic to finish tests in a few weeks"],
+          ],
+        },
       },
       {
         heading: "Match the agency to your funnel",
         body: [
           "Ecommerce CRO focuses on product pages, carts and checkout; SaaS CRO on messaging, signup and trial-to-paid; lead-generation CRO on forms, trust and follow-up speed. Some agencies combine CRO with paid ads or SEO, which suits businesses wanting one marketing partner.",
-          "For a comparison of CRO agencies in India, see our disclosed shortlist of [[/blogs/best-cro-agencies-in-india|CRO agencies in India]].",
+          "For a comparison of CRO agencies in India, see our disclosed shortlist of [[/blogs/best-cro-agencies-in-india|CRO agencies in India]]. If you want to see how we run audits, our [[/services/cro-audit|CRO audit service]] explains the process and what you receive.",
         ],
         cta: { title: "Not sure where visitors drop off?", description: "Start with an audit. See our [[/services/cro-audit|CRO audit service]]." },
       },

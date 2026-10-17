@@ -17,6 +17,8 @@ import {
 } from "lucide-react";
 import { Atmosphere, Eyebrow, MaskLines, TiltCard, riseProps, serif } from "@/components/ui/Aesthetic";
 import { ServiceScene } from "@/components/services/ServiceScene";
+import { markets } from "@/lib/site";
+import { renderInline } from "@/lib/inline-content";
 import {
   CardGrid,
   DetailHero,
@@ -313,6 +315,54 @@ function IndiaSection({ data }: { data: ServiceDetailData }) {
   );
 }
 
+/** How the same service is delivered to clients outside India, and the main rule each market sets. */
+function MarketsSection() {
+  const still = !!useReducedMotion();
+  const ref = useRef<HTMLDivElement>(null);
+  const on = useInView(ref, { once: true, amount: 0.2 });
+
+  return (
+    <section className="relative overflow-hidden bg-white px-5 py-20 sm:px-8 lg:py-28">
+      <div ref={ref} className="relative mx-auto grid max-w-[1180px] gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-16">
+        <div>
+          <Eyebrow on={on} still={still}>
+            Where we work
+          </Eyebrow>
+          <h2 className="mt-6 text-balance text-[2.3rem] leading-[1.05] tracking-[-0.02em] text-ink sm:text-[3rem]" style={serif}>
+            <MaskLines on={on} still={still} lines={[accentTitle("One team, five markets", 2)]} />
+          </h2>
+          <motion.p className="mt-5 text-pretty text-[1.08rem] leading-relaxed text-ink" {...riseProps(on, still, 0.25)}>
+            We work with clients in India, the UAE, the UK, Australia and Singapore. Every project runs remotely
+            with the same team; we don&apos;t have local offices.
+          </motion.p>
+          <motion.p className="mt-5 text-pretty text-[1rem] leading-relaxed text-ink/60" {...riseProps(on, still, 0.35)}>
+            Scope, decisions and progress are written down, with video calls, a shared project board and regular
+            demos. Tell us your time zone, invoicing currency and contract requirements in your brief, and we confirm
+            them in the written scope before work starts.
+          </motion.p>
+          <motion.p className="mt-5 text-[0.85rem] leading-relaxed text-ink/45" {...riseProps(on, still, 0.45)}>
+            Summaries of the rules we design for, checked 17 October 2026. They are not legal advice.
+          </motion.p>
+        </div>
+        <ul className="grid gap-3">
+          {markets.map((m, i) => (
+            <motion.li
+              key={m.name}
+              className="rounded-2xl border border-ink/[0.08] bg-white p-5"
+              {...riseProps(on, still, 0.2 + i * 0.08)}
+            >
+              <h3 className="text-[1.2rem] leading-tight text-ink" style={serif}>
+                {m.name}
+              </h3>
+              <p className="mt-2 text-[0.9rem] leading-relaxed text-ink/60">{renderInline(m.note)}</p>
+            </motion.li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
+
 export function ServiceDetail({ data }: { data: ServiceDetailData }) {
   const contactHref = `/contact?src=${encodeURIComponent(`/services/${data.slug}`)}`;
 
@@ -368,6 +418,8 @@ export function ServiceDetail({ data }: { data: ServiceDetailData }) {
       />
 
       <IndiaSection data={data} />
+
+      <MarketsSection />
 
       <ProblemSolution
         eyebrow="Problems we solve"

@@ -104,7 +104,7 @@ export const commercePosts19: BlogPost[] = [
       {
         heading: "Platform Options",
         body: [
-          "Shopify's B2B features cover companies and locations, catalogs, quantity rules and price breaks, net terms, vaulted cards, draft orders with PO numbers, quick order lists and reorders on all plans. Market-tailored (contextual) B2B storefront and checkout need Advanced or Plus, and unlimited catalogs, direct catalog assignment, deposits and partial payments are Plus only (Shopify Help Center). For a plan-by-plan fit check, see [[/blogs/shopify-for-b2b-ecommerce|whether Shopify suits your B2B model]]. B2B-focused platforms and custom builds suit very large catalogs, complex pricing or unusual workflows.",
+          "Shopify's B2B features cover companies and locations, catalogs, quantity rules and price breaks, net terms, vaulted cards, draft orders with PO numbers, quick order lists and reorders on all plans. Market-tailored (contextual) B2B storefront and checkout need Advanced or Plus, and unlimited catalogs, direct catalog assignment, deposits and partial payments are Plus only. For a plan-by-plan fit check, see [[/blogs/shopify-for-b2b-ecommerce|whether Shopify suits your B2B model]]. B2B-focused platforms and custom builds suit very large catalogs, complex pricing or unusual workflows.",
           "For the end-to-end architecture, including punchout and EDI channels, see [[/blogs/b2b-commerce-platform-architecture|B2B commerce platform architecture]] and [[/blogs/b2b-punchout-catalogs|punchout catalogs]].",
         ],
         table: {
@@ -468,7 +468,7 @@ export const commercePosts19: BlogPost[] = [
       {
         heading: "Platform Choices",
         body: [
-          "Shopify's B2B features support companies, catalogs, quantity rules, price breaks, net terms and quick order lists on all plans, with unlimited catalogs, deposits and more customization on Plus (Shopify Help Center). Some brands run wholesale on the same store; others use a separate storefront. Apps add features such as grid ordering and line sheets. If you are weighing Shopify specifically, [[/blogs/shopify-for-b2b-ecommerce|this evaluation of Shopify for B2B]] sets out what each plan includes and where it falls short.",
+          "Shopify's B2B features support companies, catalogs, quantity rules, price breaks, net terms and quick order lists on all plans, with unlimited catalogs, deposits and more customization on Plus. Some brands run wholesale on the same store; others use a separate storefront. Apps add features such as grid ordering and line sheets. If you are weighing Shopify specifically, [[/blogs/shopify-for-b2b-ecommerce|this evaluation of Shopify for B2B]] sets out what each plan includes and where it falls short.",
         ],
       },
       {

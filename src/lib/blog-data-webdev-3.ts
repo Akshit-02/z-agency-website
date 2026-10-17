@@ -1,5 +1,4 @@
 import type { BlogPost } from "./blog-data";
-import { webDevFrameworkTable } from "./blog-data-webdev";
 
 /**
  * Website Development cluster — third and final wave: headless
@@ -110,7 +109,6 @@ export const webDevPosts3: BlogPost[] = [
         body: [
           "A business that needs to serve content to multiple channels, wants full front-end design freedom beyond what a traditional CMS template supports, or has a technically capable team ready to own the added complexity — these are the conditions where headless architecture's benefits clearly outweigh its costs.",
         ],
-        table: webDevFrameworkTable,
       },
       {
         heading: "When Headless Is Unnecessary",
@@ -230,7 +228,6 @@ export const webDevPosts3: BlogPost[] = [
         body: [
           "Integration failures are easy to miss without deliberate logging and monitoring — a broken CRM sync can silently lose leads for weeks if nothing alerts the team. This should be part of ongoing [[/blogs/website-maintenance-guide|maintenance]], not a one-time setup step.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Want your integrations built with proper error handling and monitoring?",
           description: "See the [[/blogs/website-development-guide|complete website development guide]] for how integrations fit into the broader development process.",
@@ -379,7 +376,6 @@ export const webDevPosts3: BlogPost[] = [
         body: [
           "Serving appropriately sized images for the actual viewport — rather than a single large image scaled down by the browser — matters significantly for mobile performance, where devices and connections are typically less forgiving of unoptimized assets. Mobile-specific performance testing is worth doing directly, not assumed from desktop results.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Ready to fix the technical foundation of your site's speed?",
           description: "See the [[/blogs/website-development-guide|complete website development guide]] for how performance fits alongside the rest of the development process. Explore our [[/services/website-development|website and web app development services]].",
@@ -504,7 +500,6 @@ export const webDevPosts3: BlogPost[] = [
         body: [
           "Logging access attempts, errors and unusual activity — paired with active monitoring — is what turns a security incident from something discovered weeks later into something caught and addressed quickly.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Ready to build security into your development process from the start?",
           description: "See the [[/blogs/website-development-process|website development process guide]] for how security fits alongside design, development and QA. Learn more about our [[/services/website-development|Next.js and React development work]].",
@@ -972,7 +967,6 @@ export const webDevPosts3: BlogPost[] = [
         body: [
           "Consistent uptime monitoring, with a clear escalation path when something goes down, should be a standing part of maintenance — not something set up once and never revisited as infrastructure or traffic changes.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Ready to put a real maintenance plan in place?",
           description: "See the [[/blogs/website-development-guide|complete website development guide]] for how maintenance connects to the rest of the site's lifecycle. Explore our [[/services/website-development|website and web app development services]].",

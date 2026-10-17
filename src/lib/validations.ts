@@ -46,6 +46,10 @@ export const contactSchema = z.object({
   // Populated silently from ?src= when the visitor arrived from a blog or
   // service CTA. Never shown to the visitor as a form field.
   sourcePage: z.string().trim().max(200).optional(),
+  // First-touch attribution from lib/attribution.ts, also never shown.
+  landingPage: z.string().trim().max(200).optional(),
+  referrer: z.string().trim().max(200).optional(),
+  utm: z.string().trim().max(200).optional(),
   honeypot: honeypotField,
 });
 

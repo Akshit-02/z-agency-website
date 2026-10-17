@@ -627,7 +627,7 @@ export const aiOpsPosts10: BlogPost[] = [
       {
         heading: "Fine-Tuning in Between",
         body: [
-          "Fine-tuning is training on a smaller scale. Full fine-tuning updates all parameters and needs substantial memory; parameter-efficient methods such as LoRA and QLoRA (Dettmers et al.) train small additional parameters, often on a single GPU. Fine-tuning suits consistent formats, styles or narrow tasks. It is a poor way to add frequently changing knowledge, which retrieval handles better.",
+          "Fine-tuning is training on a smaller scale. Full fine-tuning updates all parameters and needs substantial memory; parameter-efficient methods such as LoRA and QLoRA train small additional parameters, often on a single GPU. Fine-tuning suits consistent formats, styles or narrow tasks. It is a poor way to add frequently changing knowledge, which retrieval handles better.",
         ],
       },
       {

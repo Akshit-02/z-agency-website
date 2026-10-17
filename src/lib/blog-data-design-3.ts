@@ -355,7 +355,7 @@ export const designPosts3: BlogPost[] = [
       {
         heading: "What Is a Product Listing Page?",
         body: [
-          "This is the hub for listing-page UX. Deep dives cover [[/blogs/ecommerce-product-cards|product cards]], [[/blogs/ecommerce-product-sorting|sorting]], [[/blogs/ecommerce-filters|filters]], [[/blogs/ecommerce-product-comparison|comparison]], [[/blogs/ecommerce-quick-view|quick view]] and [[/blogs/ecommerce-empty-states|empty states]]. Baymard Institute's benchmark found that 58% of desktop and 78% of mobile ecommerce sites had “poor” to “mediocre” product list UX (Baymard Institute).",
+          "This is the hub for listing-page UX. Deep dives cover [[/blogs/ecommerce-product-cards|product cards]], [[/blogs/ecommerce-product-sorting|sorting]], [[/blogs/ecommerce-filters|filters]], [[/blogs/ecommerce-product-comparison|comparison]], [[/blogs/ecommerce-quick-view|quick view]] and [[/blogs/ecommerce-empty-states|empty states]]. Baymard Institute's benchmark found that 58% of desktop and 78% of mobile ecommerce sites had “poor” to “mediocre” product list UX.",
           "A product listing page (PLP) shows a set of products: a category, a collection, a brand, a sale or search results. Shoppers usually arrive with partial intent. They know the type of product, not the exact one, so the page's job is to help them compare, narrow and choose which products to open.",
           "That makes it different from the [[/blogs/ecommerce-product-page-design|product detail page]], which helps shoppers decide on one item. Baymard Institute's product listing research is a valuable reference; for auditing a live Shopify store, see the [[/blogs/shopify-collection-page-audit|Shopify collection page audit]].",
         ],

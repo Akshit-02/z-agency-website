@@ -72,7 +72,7 @@ export const commercePosts13: BlogPost[] = [
       {
         heading: "What AI Systems Read",
         body: [
-          "AI systems rely on product feeds and catalogs for structured facts (price, availability, identifiers, attributes), on crawlable pages for descriptions, specifications and reviews, and on policies for shipping and returns. Google states there are no additional requirements, special files or special schema needed to appear in AI Overviews or AI Mode (Google Search Central).",
+          "AI systems rely on product feeds and catalogs for structured facts (price, availability, identifiers, attributes), on crawlable pages for descriptions, specifications and reviews, and on policies for shipping and returns. Google states there are no additional requirements, special files or special schema needed to appear in AI Overviews or AI Mode.",
         ],
       },
       {
@@ -208,7 +208,7 @@ export const commercePosts13: BlogPost[] = [
       {
         heading: "Titles",
         body: [
-          "Titles do the heaviest lifting in feeds and search. Lead with what matters: brand, product type, then key attributes such as size, colour, material or model. Google Merchant Center allows titles up to 150 characters (Google Merchant Center Help); put the most important words first because displays truncate.",
+          "Titles do the heaviest lifting in feeds and search. Lead with what matters: brand, product type, then key attributes such as size, colour, material or model. Google Merchant Center allows titles up to 150 characters; put the most important words first because displays truncate.",
         ],
         table: {
           headers: ["Weak", "Better"],
@@ -350,7 +350,7 @@ export const commercePosts13: BlogPost[] = [
       {
         heading: "Core Attributes",
         body: [
-          "Google's product data specification is the most widely used reference (Google Merchant Center Help).",
+          "Google's product data specification is the most widely used reference.",
         ],
         table: {
           headers: ["Attribute", "Status", "Notes"],

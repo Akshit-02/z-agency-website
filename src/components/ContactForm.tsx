@@ -7,6 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowUpRight, CheckCircle2, AlertCircle } from "lucide-react";
 import { site } from "@/lib/site";
+import { readFirstTouch } from "@/lib/attribution";
 import { contactSchema, contactNeeds, contactBudgets, needByServiceSlug, type ContactValues } from "@/lib/validations";
 
 const DEFAULT_NEED: ContactValues["need"] = "Not sure yet";
@@ -72,6 +73,10 @@ export function ContactForm() {
   // Capture where the visitor came from (?src=/blogs/...) without showing it,
   // and preselect the matching service when they came from a service page.
   useEffect(() => {
+    const { landingPage, referrer, utm } = readFirstTouch();
+    if (landingPage) setValue("landingPage", landingPage);
+    if (referrer) setValue("referrer", referrer);
+    if (utm) setValue("utm", utm);
     const src = new URLSearchParams(window.location.search).get("src");
     if (!src) return;
     setValue("sourcePage", src.slice(0, 200));
@@ -98,6 +103,7 @@ export function ContactForm() {
         lead_need: values.need,
         lead_budget: values.budget,
         source_page: values.sourcePage ?? "",
+        landing_page: values.landingPage ?? "",
       });
     } catch (error) {
       setSubmitError(
@@ -151,6 +157,9 @@ export function ContactForm() {
         {...register("honeypot")}
       />
       <input type="hidden" {...register("sourcePage")} />
+      <input type="hidden" {...register("landingPage")} />
+      <input type="hidden" {...register("referrer")} />
+      <input type="hidden" {...register("utm")} />
 
       <div className="grid gap-6 sm:grid-cols-2">
         <Field label="Name" htmlFor="name" required error={errors.name?.message}>

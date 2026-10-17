@@ -93,7 +93,7 @@ export const commercePosts39: BlogPost[] = [
       {
         heading: "Domains, Subdomains and Subdirectories",
         body: [
-          "The URL choice is related but separate. Google's documentation describes country domains as giving clear geotargeting but being expensive and limited to one country, subdomains as easy to set up, subdirectories as easy to set up and low maintenance, and URL parameters as not recommended (Google Search Central). Multi-market stores often use subdirectories; separate stores often use country domains. Whatever you choose, connect versions with hreflang. See [[/blogs/international-ecommerce-seo|international ecommerce SEO]].",
+          "The URL choice is related but separate. Google's documentation describes country domains as giving clear geotargeting but being expensive and limited to one country, subdomains as easy to set up, subdirectories as easy to set up and low maintenance, and URL parameters as not recommended. Multi-market stores often use subdirectories; separate stores often use country domains. Whatever you choose, connect versions with hreflang. See [[/blogs/international-ecommerce-seo|international ecommerce SEO]].",
         ],
       },
       {
@@ -112,7 +112,7 @@ export const commercePosts39: BlogPost[] = [
       {
         heading: "Shopify Options",
         body: [
-          "On Shopify, Markets lets one store vary currency, pricing, catalogs, domains, languages and duties by market (Shopify Help Center). Shopify Plus adds expansion stores for cases where separate storefronts are needed, for example very different catalogs or operations. Many brands start with Markets and add expansion stores only when a market's differences outgrow configuration. See [[/blogs/shopify-markets|Shopify Markets]] and [[/blogs/shopify-plus-vs-shopify|Shopify Plus vs Shopify]].",
+          "On Shopify, Markets lets one store vary currency, pricing, catalogs, domains, languages and duties by market. Shopify Plus adds expansion stores for cases where separate storefronts are needed, for example very different catalogs or operations. Many brands start with Markets and add expansion stores only when a market's differences outgrow configuration. See [[/blogs/shopify-markets|Shopify Markets]] and [[/blogs/shopify-plus-vs-shopify|Shopify Plus vs Shopify]].",
         ],
       },
       {
@@ -462,7 +462,7 @@ export const commercePosts39: BlogPost[] = [
       {
         heading: "Platform Notes",
         body: [
-          "Hosted checkouts on major platforms handle much of this when markets are configured: currency, translated checkout text, country-specific address forms and, on some platforms and plans, duties and import taxes. Shopify Markets, for example, supports market-specific currency, languages and duty collection settings (Shopify Help Center). Custom checkouts need to implement each element and test it per country. See [[/blogs/shopify-markets|Shopify Markets]].",
+          "Hosted checkouts on major platforms handle much of this when markets are configured: currency, translated checkout text, country-specific address forms and, on some platforms and plans, duties and import taxes. Shopify Markets, for example, supports market-specific currency, languages and duty collection settings. Custom checkouts need to implement each element and test it per country. See [[/blogs/shopify-markets|Shopify Markets]].",
         ],
       },
       {
@@ -550,14 +550,14 @@ export const commercePosts39: BlogPost[] = [
       {
         heading: "How Markets Work",
         body: [
-          "Shopify describes markets as two components: conditions that define who the market applies to, and customizations that shape their experience (Shopify Help Center). When a visitor arrives, Shopify determines which market they belong to; visitors who match no active market fall back to a backup region, set by default to the store's home country. Submarkets inherit their parent market's customizations by default, so you can adjust a subset of countries without rebuilding everything.",
+          "Shopify describes markets as two components: conditions that define who the market applies to, and customizations that shape their experience. When a visitor arrives, Shopify determines which market they belong to; visitors who match no active market fall back to a backup region, set by default to the store's home country. Submarkets inherit their parent market's customizations by default, so you can adjust a subset of countries without rebuilding everything.",
           "In short, the approach groups the pieces into conditions, customizations, storefront and operations. For the platform-agnostic view, see [[/blogs/international-ecommerce-website-development|international ecommerce website development]].",
         ],
       },
       {
         heading: "Market Types",
         body: [
-          "Shopify's documentation describes four market types (Shopify Help Center):",
+          "Shopify's documentation describes four market types:",
         ],
         table: {
           headers: ["Market type", "Condition", "Typical use"],
@@ -596,7 +596,7 @@ export const commercePosts39: BlogPost[] = [
       {
         heading: "Currencies, Pricing and Rounding",
         body: [
-          "Shopify's requirements page says: \"To accept payments in multiple currencies, you need to use Shopify Payments or Adyen as your payment processor.\" With any other processor, customers in all markets pay in your store's default currency ([[https://help.shopify.com/en/manual/markets/getting-started/requirements-and-considerations|Shopify Help Center: Markets requirements]]). Two other limits: fixed-amount discounts can be created only in your default currency, and post-purchase apps work only in the default currency, so post-purchase offers are not shown in markets using another currency. Converted prices are calculated from your base price using the exchange rate (automatic or manual) and a currency conversion fee, then rounded if rounding is enabled; the conversion fee applies when customers pay in a currency different from your payout currency and varies by store location (Shopify Help Center). For important markets, set fixed prices through catalogs or price lists rather than relying on conversion. See [[/blogs/multi-currency-ecommerce|multi-currency ecommerce]].",
+          "Shopify's requirements page says: \"To accept payments in multiple currencies, you need to use Shopify Payments or Adyen as your payment processor.\" With any other processor, customers in all markets pay in your store's default currency ([[https://help.shopify.com/en/manual/markets/getting-started/requirements-and-considerations|Shopify Help Center: Markets requirements]]). Two other limits: fixed-amount discounts can be created only in your default currency, and post-purchase apps work only in the default currency, so post-purchase offers are not shown in markets using another currency. Converted prices are calculated from your base price using the exchange rate (automatic or manual) and a currency conversion fee, then rounded if rounding is enabled; the conversion fee applies when customers pay in a currency different from your payout currency and varies by store location. For important markets, set fixed prices through catalogs or price lists rather than relying on conversion. See [[/blogs/multi-currency-ecommerce|multi-currency ecommerce]].",
         ],
         table: {
           headers: ["Setting", "Purpose"],
@@ -618,7 +618,7 @@ export const commercePosts39: BlogPost[] = [
       {
         heading: "Domains and Languages",
         body: [
-          "Each market can use a subfolder (yourstore.com/fr/), subdomain (fr.yourstore.com) or top-level domain (yourstore.fr), with one or more languages. Shopify describes subfolders as suitable for most stores, being simple to set up with no extra domain costs (Shopify Help Center). Translate content with the Translate & Adapt app (automatic or manual translation and CSV import) or other translation apps, and adapt market-specific content where needed. See [[/blogs/multi-language-ecommerce-website|multi-language ecommerce website]].",
+          "Each market can use a subfolder (yourstore.com/fr/), subdomain (fr.yourstore.com) or top-level domain (yourstore.fr), with one or more languages. Shopify describes subfolders as suitable for most stores, being simple to set up with no extra domain costs. Translate content with the Translate & Adapt app (automatic or manual translation and CSV import) or other translation apps, and adapt market-specific content where needed. See [[/blogs/multi-language-ecommerce-website|multi-language ecommerce website]].",
         ],
         cta: {
           title: "Setting up Shopify Markets for new countries?",
@@ -628,13 +628,13 @@ export const commercePosts39: BlogPost[] = [
       {
         heading: "International SEO on Shopify",
         body: [
-          "Shopify's documentation states that for configured market domains and subfolders it automatically generates hreflang tags (including x-default), self-referencing canonical URLs and sitemaps that include market URLs, and that crawlers bypass the automatic redirection applied to customers (Shopify Help Center). Automatic hreflang can be turned off if a theme or app manages it, to avoid duplicates. Still verify the output with a crawler, localize metadata and content, and check that each market's pages are indexed. See [[/blogs/international-ecommerce-seo|international ecommerce SEO]].",
+          "Shopify's documentation states that for configured market domains and subfolders it automatically generates hreflang tags (including x-default), self-referencing canonical URLs and sitemaps that include market URLs, and that crawlers bypass the automatic redirection applied to customers. Automatic hreflang can be turned off if a theme or app manages it, to avoid duplicates. Still verify the output with a crawler, localize metadata and content, and check that each market's pages are indexed. See [[/blogs/international-ecommerce-seo|international ecommerce SEO]].",
         ],
       },
       {
         heading: "Redirection and Selectors",
         body: [
-          "Shopify documents redirecting customers to the domain and language that match their location, based on IP address and browser language, with store selectors letting them override and their choice saved (Shopify Help Center). Google's general guidance is to avoid automatically redirecting users between language versions. Keep country and language selectors prominent in the header and footer, test the redirection behaviour for your markets, and make sure travellers and people shopping for others can reach the version they want.",
+          "Shopify documents redirecting customers to the domain and language that match their location, based on IP address and browser language, with store selectors letting them override and their choice saved. Google's general guidance is to avoid automatically redirecting users between language versions. Keep country and language selectors prominent in the header and footer, test the redirection behaviour for your markets, and make sure travellers and people shopping for others can reach the version they want.",
         ],
       },
       {
@@ -642,7 +642,7 @@ export const commercePosts39: BlogPost[] = [
         body: [
           "Markets can be configured for tax-inclusive pricing and for collecting duties and import taxes at checkout. Collecting duties at checkout (sometimes called delivered duty paid, or DDP) means the customer pays everything upfront and receives the parcel without a further charge. Without it (delivered at place, or DAP), the carrier usually collects duties and taxes from the customer on delivery, which is a common cause of refused parcels and disappointed customers.",
           "Shopify's requirements for collecting duties at checkout are practical rather than plan-based: products need Harmonized System (HS) codes, your carrier must support DDP labels if you buy labels through Shopify, and the store cannot use Shopify Fulfillment Network. Shopify charges a fee on each order where duties are calculated, even when the duty is zero. From 2 February 2025 the fee was temporarily lowered to 0.5% for all merchants; otherwise it is 0.85% with Shopify Payments as the primary gateway and 1.5% with other providers. There is no fee on domestic orders or orders between EU countries ([[https://help.shopify.com/manual/markets/duties-and-import-taxes/charging-duties|Shopify Help Center: charging duties and import taxes]]). Fees can change; check the current page. The help page does not state store-country restrictions, so confirm in your admin that the option is offered for your store.",
-          "Shopify's documentation also notes market-specific compliance features, such as showing the lowest price in the previous 30 days when advertising reductions to customers in the EEA (Shopify Help Center). Tax obligations remain country-specific; take advice. For explaining these costs to customers, see [[/blogs/ecommerce-duties-import-taxes|ecommerce duties and import taxes]].",
+          "Shopify's documentation also notes market-specific compliance features, such as showing the lowest price in the previous 30 days when advertising reductions to customers in the EEA. Tax obligations remain country-specific; take advice. For explaining these costs to customers, see [[/blogs/ecommerce-duties-import-taxes|ecommerce duties and import taxes]].",
         ],
       },
       {

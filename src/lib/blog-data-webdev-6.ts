@@ -1,5 +1,4 @@
 import type { BlogPost } from "./blog-data";
-import { webDevFrameworkTable } from "./blog-data-webdev";
 
 /**
  * Website Development cluster — sixth and final wave: the remaining
@@ -92,7 +91,6 @@ export const webDevPosts6: BlogPost[] = [
         body: [
           "Navigation should be fully usable by keyboard alone, with a logical tab order and clear structure for screen readers, including a way to skip repeated navigation and go straight to main content. See the [[/blogs/website-accessibility-guide|website accessibility guide]] for the fuller practice, grounded in W3C/WAI guidance.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Ready to connect navigation improvements to the rest of UX?",
           description: "See ZSpace Labs' [[/services/ui-ux-design|UI/UX design work]] for how navigation fits into the broader user experience discipline.",
@@ -195,7 +193,6 @@ export const webDevPosts6: BlogPost[] = [
         body: [
           "Leads that aren't followed up on promptly are effectively wasted — captured leads should flow automatically into the sales or follow-up team's CRM, not require manual re-entry that introduces delay and risk of being missed. See the [[/blogs/website-api-integration|API integration guide]] for how this connection is typically built.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Ready to connect lead generation to a broader conversion strategy?",
           description: "See ZSpace Labs' [[/blogs/shopify-cro-audit|CRO audit framework]] for the structured, evidence-based approach this connects to. Learn more about our [[/services/website-development|Next.js and React development work]].",
@@ -490,7 +487,6 @@ export const webDevPosts6: BlogPost[] = [
         body: [
           "For pages genuinely designed to answer a specific question in a single visit — a quick FAQ, a contact page with a phone number, a documentation page — a single-page exit is a reasonable, even desirable outcome. Engineering these pages to reduce bounce rate can actually work against their actual purpose.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Want bounce rate reviewed as part of a broader diagnostic?",
           description: "See the [[/blogs/why-is-my-website-not-converting|why is my website not converting guide]] for the fuller diagnostic framework this connects to. Explore our [[/services/website-development|website and web app development services]].",
@@ -608,7 +604,6 @@ export const webDevPosts6: BlogPost[] = [
           "Robots configuration controls what should and shouldn't be crawled — an incorrect robots.txt can accidentally block search engines from important content, which is worth verifying directly rather than assuming default settings are correct for your specific site.",
           "Robots.txt now also decides AI search visibility. AI companies run separate bots for model training (such as GPTBot and ClaudeBot) and for search answers (such as OAI-SearchBot and Claude-SearchBot), and blocking the wrong one can remove a site from ChatGPT or Claude answers. See [[/blogs/ai-crawlers-robots-txt|AI crawlers and robots.txt]].",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Want your site's technical SEO foundation audited?",
           description: "See the [[/blogs/website-development-guide|complete website development guide]] for how SEO fits into the broader development process. Learn more about our [[/services/website-development|Next.js and React development work]].",
@@ -736,7 +731,6 @@ export const webDevPosts6: BlogPost[] = [
         body: [
           "Intrusive interstitials that cover the full screen immediately on mobile entry are specifically flagged by search engines as a poor mobile experience — use popups sparingly and thoughtfully, and avoid them blocking content immediately on arrival.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Ready to test your mobile experience against real usage?",
           description: "See the [[/blogs/website-performance-optimization|performance optimization guide]] for how mobile speed connects to the broader performance discipline. See how we approach [[/services/website-development|website development]].",

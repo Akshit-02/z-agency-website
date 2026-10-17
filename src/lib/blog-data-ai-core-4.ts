@@ -22,6 +22,7 @@ export const aiCorePosts4: BlogPost[] = [
     bannerAlt:
       "AI workflow automation in four columns: deterministic steps (triggers, lookups, calculations, system writes), AI steps (classify, extract, summarize, draft), validation highlighted (JSON schema, business rules, cross-checks, confidence) and human gates (approve, edit, escalate, sample review).",
     date: "2026-10-02",
+    updated: "2026-10-17",
     readingTime: "7 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["b2b-enterprise", "professional-services", "fintech"],
@@ -70,7 +71,7 @@ export const aiCorePosts4: BlogPost[] = [
       {
         heading: "Structured Outputs and Validation",
         body: [
-          "Use the model provider's structured output feature so AI steps return JSON that matches your schema; OpenAI and Anthropic both support schema-constrained outputs. Then validate the values: is the order number in the right format and does it exist? Does the extracted total equal the sum of line items? Is the category one you support? Failed validation can trigger one repair attempt with the error message, then a review queue.",
+          "Use the model provider's structured output feature so AI steps return JSON that matches your schema; OpenAI and Anthropic both support schema-constrained outputs. Each provider supports only part of JSON Schema (Anthropic's docs, for example, list numeric limits and string-length constraints as unsupported), so enforce patterns and ranges like the ones in the example below in your own validation code. Then validate the values: is the order number in the right format and does it exist? Does the extracted total equal the sum of line items? Is the category one you support? Failed validation can trigger one repair attempt with the error message, then a review queue.",
         ],
         diagram: {
           variant: "aiworkflowflow",
@@ -149,7 +150,7 @@ export const aiCorePosts4: BlogPost[] = [
       {
         heading: "Security and Privacy in AI Workflows",
         body: [
-          "AI steps often receive the messiest, least trusted inputs in the workflow. Treat them as data, not instructions; constrain AI steps to producing structured outputs, never to calling tools directly; and keep credentials in the deterministic steps that perform writes. Send only the fields models need, check providers' data retention and regional processing terms, and redact personal data in logs. See [[/blogs/prompt-injection-prevention|prompt injection prevention]] and [[/blogs/ecommerce-privacy-customer-data|privacy practices]].",
+          "AI steps often receive the messiest, least trusted inputs in the workflow. Treat them as data, not instructions, since prompt injection is the first risk on the OWASP Top 10 for LLM applications; constrain AI steps to producing structured outputs, never to calling tools directly; and keep credentials in the deterministic steps that perform writes. Send only the fields models need, check providers' data retention and regional processing terms, and redact personal data in logs. See [[/blogs/prompt-injection-prevention|prompt injection prevention]] and [[/blogs/ecommerce-privacy-customer-data|privacy practices]].",
         ],
       },
       {

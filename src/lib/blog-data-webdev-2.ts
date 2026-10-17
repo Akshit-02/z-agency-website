@@ -201,7 +201,6 @@ export const webDevPosts2: BlogPost[] = [
           "**Support and documentation.** Ask what post-launch support covers and costs, and whether you will receive documentation good enough for a different team to take over. See the [[/blogs/website-maintenance-guide|maintenance guide]] for what ongoing support should realistically include.",
           "**Specialist builds.** For an online store, use the [[/blogs/how-to-choose-a-shopify-development-agency|guide to choosing a Shopify agency]]; for an app, see [[/blogs/how-to-choose-a-mobile-app-development-company|how to choose a mobile app development company]].",
         ],
-        table: webDevFrameworkTable,
       },
       {
         heading: "When this scorecard is overkill",
@@ -914,7 +913,6 @@ export const webDevPosts2: BlogPost[] = [
         body: [
           "If integrations with other business systems are unreliable or have been patched together over time, that's often a technical issue — sometimes fixable without a full redesign, sometimes symptomatic of an outgrown platform. See the [[/blogs/website-api-integration|API integration guide]] for the deeper technical context.",
         ],
-        table: webDevFrameworkTable,
         cta: {
           title: "Ready to figure out whether you need a redesign or a rebuild?",
           description: "See the [[/blogs/website-redesign-vs-rebuild|redesign vs. rebuild guide]] for how to translate these symptoms into the right scope of project. See how we approach [[/services/website-development|website development]].",
@@ -944,6 +942,7 @@ export const webDevPosts2: BlogPost[] = [
     category: "Web Development",
     banner: "layers",
     date: "2026-09-22",
+    updated: "2026-10-17",
     readingTime: "12 min read",
     relatedServiceSlugs: ["website-development"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
@@ -954,7 +953,7 @@ export const webDevPosts2: BlogPost[] = [
       { q: "Is Next.js good for SEO?", a: "Yes — Next.js is built to produce fast-loading, crawlable HTML by default, which supports strong technical SEO foundations, though metadata, structured content and page speed still need to be deliberately implemented well regardless of framework." },
       { q: "Does Next.js work well for ecommerce?", a: "Yes, particularly for stores needing custom storefront experiences, strong performance, and flexibility beyond what a template-based platform offers — often paired with a headless commerce backend. See the [[/blogs/headless-website-development|headless website development guide]]." },
       { q: "Is Next.js overkill for a simple marketing site?", a: "It can be, if the site is genuinely simple and static with no growth plans — a simpler static site generator or even a website builder may be entirely sufficient. Next.js earns its complexity once a site needs real application capability alongside content." },
-      { q: "Does Next.js require a specific hosting provider?", a: "No, though different hosting platforms offer different levels of support for Next.js's full feature set — this is worth confirming with any hosting or deployment partner rather than assuming full compatibility." },
+      { q: "Does Next.js require a specific hosting provider?", a: "No. Next.js runs on any provider that supports a Node.js server or Docker container, and both support every feature. A static export works on any static host but supports only a limited feature set, and platform adapters vary, so check which features your host supports ([[https://nextjs.org/docs/app/getting-started/deploying|Next.js deploying docs]])." },
       { q: "Can Next.js scale for a SaaS product, not just a marketing site?", a: "Yes — Next.js is commonly used for SaaS marketing sites, dashboards and full product interfaces, since it can handle both content-heavy and highly interactive, data-driven pages within the same application." },
       { q: "Should a business insist on Next.js specifically?", a: "No — insist on the right fit for your requirements, not a specific technology by name. Next.js is a strong fit for many modern business websites, but the underlying requirement (performance, flexibility, scalability) matters more than the specific framework." },
     ],
@@ -980,7 +979,7 @@ export const webDevPosts2: BlogPost[] = [
       {
         heading: "How Rendering Actually Works",
         body: [
-          "Older web frameworks typically forced a route-level choice: a page is either fully prerendered at build time or fully rendered on the server per request. Modern Next.js takes a different approach — the boundary between static and dynamic content sits at the component level, not the whole route. A page can ship a static shell that loads instantly, include content cached with a defined lifetime, and stream in genuinely dynamic, request-specific content, all within a single page.",
+          "Older web frameworks typically forced a route-level choice: a page is either fully prerendered at build time or fully rendered on the server per request. With Cache Components, an opt-in setting in current Next.js (the cacheComponents option), the boundary sits at the component level instead. A page can ship a static shell that loads instantly, include content cached with a defined lifetime through the 'use cache' directive, and stream in request-specific content, all within a single page ([[https://nextjs.org/docs/app/getting-started/caching|Next.js caching docs]]). Without that setting, Next.js still prerenders or server-renders per route, which is enough for most marketing sites.",
         ],
         visual: { variant: "grid", accent: "blue", caption: "Static and dynamic content coexist within a single page — a static shell loads instantly while specific dynamic sections stream in as they resolve." },
       },
@@ -993,7 +992,7 @@ export const webDevPosts2: BlogPost[] = [
       {
         heading: "Incremental Static Regeneration",
         body: [
-          "For pages with dynamic URL parameters that aren't fully known at build time — a large product catalog, for instance — Next.js can serve a fast fallback shell instantly, then fill in and cache the specific version in the background after the first visit, so subsequent visitors get the fully resolved page immediately. This lets very large, content-heavy sites stay fast without needing every single page pre-built before launch.",
+          "For pages with dynamic URL parameters, such as a large product catalogue, you list the URLs to prerender at build time with generateStaticParams. Other URLs are generated on the first request and cached for later visitors ([[https://nextjs.org/docs/app/guides/incremental-static-regeneration|Next.js ISR guide]]). With Cache Components and Partial Prefetching enabled, a URL that wasn't prerendered gets a generic App Shell instantly and is upgraded in the background ([[https://nextjs.org/docs/app/guides/incremental-static-regeneration-cache-components|ISR with Cache Components]]). Either way, a large site doesn't need every page built before launch.",
         ],
         cta: {
           title: "Considering Next.js for an upcoming project?",
@@ -1023,7 +1022,23 @@ export const webDevPosts2: BlogPost[] = [
         body: [
           "For content-driven sites, Next.js pairs well with a headless CMS. For SaaS, it can serve both the marketing site and the authenticated product experience within one codebase. For ecommerce, it commonly pairs with a headless commerce backend — see the [[/blogs/headless-website-development|headless website development guide]] for how that architecture works.",
         ],
-        table: webDevFrameworkTable,
+        table: {
+          headers: ["Site type", "Why Next.js fits", "Watch out for"],
+          rows: [
+            ["Content and marketing site", "Pages prerender to fast HTML; a headless CMS lets marketers publish without developers", "Overkill if the site is a handful of pages that rarely change"],
+            ["SaaS product", "Marketing pages and the logged-in app share one codebase and design system", "Keep app-only code out of marketing pages so they stay light"],
+            ["Ecommerce storefront", "Static product and category pages with dynamic cart, stock and pricing sections", "A hosted platform such as Shopify may cover the need with less engineering"],
+            ["Large article or catalogue library", "Thousands of pages can be generated at build or on first request", "Build time and bundle size need watching as the library grows"],
+          ],
+        },
+      },
+      {
+        heading: "What We Learned Building This Site on Next.js",
+        body: [
+          "This website is a Next.js 16 App Router site. Its articles live as typed data files and are prerendered at build time, which produces more than 3,000 static outputs (pages, social images and route data) for about 1,000 articles. Two problems we found and fixed on our own site are worth knowing about before you build.",
+          "**A client component can pull your whole content library into the browser.** One interactive component imported a single value from the module that held every article. The bundler included the entire article set in a JavaScript chunk of about 12.8 MB, which every article page then downloaded. Keeping client-side imports type-only, or moving shared constants into a small separate module, removed it. Next.js documents the server and client boundary that causes this ([[https://nextjs.org/docs/app/getting-started/server-and-client-components|Next.js docs]]).",
+          "**Animating the main heading can delay Largest Contentful Paint.** Our hero headings started invisible and were revealed by JavaScript after hydration. Under throttled mobile testing, LCP measured between 6.8 and 29.5 seconds. Switching to a CSS-only entrance, so the text is visible from the first paint, brought lab LCP to about 2 seconds. These were lab measurements, not field data, but the lesson holds: never make your largest text wait for JavaScript.",
+        ],
       },
       {
         heading: "When Next.js May Be More Than You Need",
@@ -1136,7 +1151,6 @@ export const webDevPosts2: BlogPost[] = [
         body: [
           "Next.js includes build and deployment tooling designed around its rendering model; a bare React application requires the team to assemble equivalent tooling and hosting infrastructure themselves, which is a real, often underestimated amount of additional work.",
         ],
-        table: webDevFrameworkTable,
       },
       {
         heading: "Developer Experience",
