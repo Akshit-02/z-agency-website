@@ -263,7 +263,7 @@ export const commercePosts89: BlogPost[] = [
         heading: "Stock Reservation",
         body: [
           "Reserve the replacement when the exchange is created, not when the return arrives, or it may sell out while the original is in transit. Release the reservation if the customer abandons the return within a set time. For standard exchanges, the reservation can be held until the return is received; for instant exchanges, allocate and ship immediately.",
-          "This is something to build or get from an app. Shopify's native exchanges don't do it: [[https://help.shopify.com/en/manual/fulfillment/managing-orders/returns/creating-returns|Shopify's Help Center]] says exchange items inventory isn't reserved until you process the return. On Shopify, reserving at request time needs a returns app that supports it or a custom build connected to your inventory.",
+          "This is something to build or get from an app. Shopify's native exchanges don't do it: Shopify's Help Center says exchange items inventory isn't reserved until you process the return. On Shopify, reserving at request time needs a returns app that supports it or a custom build connected to your inventory.",
         ],
       },
       {

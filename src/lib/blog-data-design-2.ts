@@ -82,7 +82,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "IA and Navigation Are Different Things",
         body: [
-          "Nielsen Norman Group describes IA as \"the information backbone of the site\" and navigation as the \"elements in the UI that allow users to reach specific information\" ([[https://www.nngroup.com/articles/ia-vs-navigation/|NN/g: IA vs navigation]]). A menu redesign won't fix a confusing structure underneath. The [[/blogs/website-navigation-and-ux|website navigation and UX guide]] covers menus, breadcrumb design and mobile navigation; this guide covers the structure they depend on.",
+          "Nielsen Norman Group describes IA as \"the information backbone of the site\" and navigation as the \"elements in the UI that allow users to reach specific information\". A menu redesign won't fix a confusing structure underneath. The [[/blogs/website-navigation-and-ux|website navigation and UX guide]] covers menus, breadcrumb design and mobile navigation; this guide covers the structure they depend on.",
         ],
         visual: {
           variant: "grid",
@@ -129,7 +129,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Step 2: Learn How Users Group Content",
         body: [
-          "Structure should reflect users' mental models, not your org chart. Card sorting is a discovery method used to generate ideas for an IA ([[https://www.nngroup.com/articles/card-sorting-tree-testing-differences/|NN/g: card sorting vs tree testing]]). Nielsen Norman Group describes three types ([[https://www.nngroup.com/articles/card-sorting-definition/|NN/g: card sorting]]):",
+          "Structure should reflect users' mental models, not your org chart. Card sorting is a discovery method used to generate ideas for an IA. Nielsen Norman Group describes three types:",
         ],
         table: {
           headers: ["Type", "How it works", "Use it when"],
@@ -158,7 +158,7 @@ export const designPosts2: BlogPost[] = [
         heading: "Step 4: Validate With Tree Testing",
         body: [
           "A tree test evaluates a hierarchical category structure. Participants see a text-only version of the menu and are asked to find specific items (\"Where would you go to change your billing address?\"). Because there is no visual design, the results show whether the structure and labels work on their own.",
-          "Nielsen Norman Group's [[https://www.nngroup.com/articles/tree-testing/|tree testing guide]] describes the main measures. A qualitative tree test needs only a few participants; a quantitative one needs a larger sample. NN/g's guide does not give a fixed number, so size the study to the decision you need to make.",
+          "Nielsen Norman Group's tree testing guide describes the main measures. A qualitative tree test needs only a few participants; a quantitative one needs a larger sample. NN/g's guide does not give a fixed number, so size the study to the decision you need to make.",
         ],
         table: {
           headers: ["Metric", "What it tells you", "What to do if it is weak"],
@@ -190,7 +190,7 @@ export const designPosts2: BlogPost[] = [
           ],
         },
         checklist: [
-          "Mega menu guidance: [[https://www.nngroup.com/articles/mega-menus-work-well/|NN/g on mega menus]]",
+          "Mega menu guidance: NN/g on mega menus",
           "Ecommerce specifics: [[/blogs/ecommerce-navigation-design|ecommerce navigation design]] and [[/blogs/ecommerce-faceted-navigation-seo|faceted navigation and SEO]]",
           "Menu, search and mobile navigation UX: [[/blogs/website-navigation-and-ux|the navigation guide]]",
         ],
@@ -221,9 +221,9 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Step 6: URLs, Breadcrumbs and Redirects",
         body: [
-          "Google says it \"generally doesn't look at the structure of URLs to work out the structure of a site\"; it analyses the relationship between pages \"based on their linkages\", and recommends ordinary <a href> links rather than JavaScript events on other elements ([[https://developers.google.com/search/docs/specialty/ecommerce/help-google-understand-your-ecommerce-site-structure|Google: help Google understand your site structure]]). So the structure you designed has to show up in menus, hub pages and cross-links. A tidy folder path is not enough on its own.",
-          "URLs still matter for people. Google's [[https://developers.google.com/search/docs/crawling-indexing/url-structure|URL structure guidance]] recommends readable words rather than long ID numbers, hyphens rather than underscores, words in your audience's language, and trimming parameters that don't change the content. It also notes URLs are case sensitive. A practical rule: make URLs short and readable, and don't change existing ones just to mirror a new menu.",
-          "Breadcrumbs show where a page sits. Google describes a breadcrumb trail as indicating \"the page's position in the site hierarchy\" and uses breadcrumb markup to categorise information in results ([[https://developers.google.com/search/docs/appearance/structured-data/breadcrumb|Google: breadcrumb structured data]]). Its documentation lists the feature as available on desktop, and since 23 January 2025 Google no longer shows breadcrumbs in the visible URL on mobile results, only the domain ([[https://developers.google.com/search/blog/2025/01/simplifying-breadcrumbs|Google Search Central blog]]). Breadcrumbs on the page still help users on every device, so keep them for anything more than two levels deep.",
+          "Google says it \"generally doesn't look at the structure of URLs to work out the structure of a site\"; it analyses the relationship between pages \"based on their linkages\", and recommends ordinary <a href> links rather than JavaScript events on other elements. So the structure you designed has to show up in menus, hub pages and cross-links. A tidy folder path is not enough on its own.",
+          "URLs still matter for people. Google's URL structure guidance recommends readable words rather than long ID numbers, hyphens rather than underscores, words in your audience's language, and trimming parameters that don't change the content. It also notes URLs are case sensitive. A practical rule: make URLs short and readable, and don't change existing ones just to mirror a new menu.",
+          "Breadcrumbs show where a page sits. Google describes a breadcrumb trail as indicating \"the page's position in the site hierarchy\" and uses breadcrumb markup to categorise information in results. Its documentation lists the feature as available on desktop, and since 23 January 2025 Google no longer shows breadcrumbs in the visible URL on mobile results, only the domain. Breadcrumbs on the page still help users on every device, so keep them for anything more than two levels deep.",
           "Finally, every URL that changes needs a permanent redirect from the old address to its closest new equivalent, listed in a redirect map before launch. The [[/blogs/ecommerce-url-migration|URL migration guide]] covers mapping and testing redirects, and [[/blogs/seo-friendly-website-development|SEO-friendly website development]] covers the build side.",
         ],
       },
@@ -284,8 +284,8 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Research methods: [[https://www.nngroup.com/articles/ia-vs-navigation/|NN/g: The Difference Between Information Architecture and Navigation (Cardello, 2014)]]; [[https://www.nngroup.com/articles/card-sorting-definition/|NN/g: Card Sorting (Tankala and Sherwin, 2024)]]; [[https://www.nngroup.com/articles/card-sorting-tree-testing-differences/|NN/g: Card Sorting vs Tree Testing (Tankala, 2024)]]; [[https://www.nngroup.com/articles/tree-testing/|NN/g: Tree Testing (Laubheimer, 2023, reviewed 2026)]]; [[https://www.nngroup.com/articles/mega-menus-work-well/|NN/g: Mega Menus Work Well (Nielsen and Li, 2017)]].",
-          "Search: [[https://developers.google.com/search/docs/specialty/ecommerce/help-google-understand-your-ecommerce-site-structure|Google Search Central: help Google understand your site structure]]; [[https://developers.google.com/search/docs/crawling-indexing/url-structure|Google Search Central: URL structure best practices]]; [[https://developers.google.com/search/docs/appearance/structured-data/breadcrumb|Google Search Central: breadcrumb structured data]]; [[https://developers.google.com/search/blog/2025/01/simplifying-breadcrumbs|Google Search Central blog: simplifying the visible URL on mobile (23 January 2025)]].",
+          "Research methods: NN/g: The Difference Between Information Architecture and Navigation (Cardello, 2014); NN/g: Card Sorting (Tankala and Sherwin, 2024); NN/g: Card Sorting vs Tree Testing (Tankala, 2024); NN/g: Tree Testing (Laubheimer, 2023, reviewed 2026); NN/g: Mega Menus Work Well (Nielsen and Li, 2017).",
+          "Search: Google Search Central: help Google understand your site structure; Google Search Central: URL structure best practices; Google Search Central: breadcrumb structured data; Google Search Central blog: simplifying the visible URL on mobile (23 January 2025).",
           "Accessed 15 October 2026. Search engine behaviour changes; check Google's current documentation.",
         ],
       },
@@ -519,7 +519,7 @@ export const designPosts2: BlogPost[] = [
         heading: "Start Mobile-First",
         body: [
           "Designing the smallest screen first forces the key question: what matters most? Once the essential content and actions work on a phone, larger screens can add space, secondary content and richer layouts. Starting from desktop tends to produce cramped, compromised mobile layouts.",
-          "There is also a search reason. Google says it \"uses the mobile version of a site's content, crawled with the smartphone agent, for indexing and ranking\", asks that the mobile site contain the same content as the desktop site, and recommends responsive design as the easiest pattern to implement and maintain ([[https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing|Google Search Central]]).",
+          "There is also a search reason. Google says it \"uses the mobile version of a site's content, crawled with the smartphone agent, for indexing and ranking\", asks that the mobile site contain the same content as the desktop site, and recommends responsive design as the easiest pattern to implement and maintain.",
         ],
         visual: {
           variant: "phone",
@@ -566,7 +566,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Container queries and media queries",
         body: [
-          "Media queries respond to the viewport, so they suit page-level layout: when the sidebar appears, when the grid goes from two columns to three. Container queries respond to the size of the element a component sits in, so the same product card can stack in a narrow sidebar and sit side by side in a wide section without separate variants. MDN lists the @container rule as Baseline widely available, \"available across browsers since February 2023\", with a note that some parts of the feature have varying support ([[https://developer.mozilla.org/en-US/docs/Web/CSS/@container|MDN]]).",
+          "Media queries respond to the viewport, so they suit page-level layout: when the sidebar appears, when the grid goes from two columns to three. Container queries respond to the size of the element a component sits in, so the same product card can stack in a narrow sidebar and sit side by side in a wide section without separate variants. MDN lists the @container rule as Baseline widely available, \"available across browsers since February 2023\", with a note that some parts of the feature have varying support.",
           "For planning, this changes the spec. Instead of describing a card \"on tablet\", describe it by the width of its container, which is how the developer will build it.",
         ],
       },
@@ -689,8 +689,8 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://web.dev/articles/responsive-web-design-basics|web.dev: Responsive web design basics]] (last updated 12 February 2019; long-standing guidance); [[https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing|Google Search Central: mobile-first indexing best practices]] (last updated 10 December 2025); [[https://developer.mozilla.org/en-US/docs/Web/CSS/@container|MDN: @container]]; [[https://www.w3.org/WAI/WCAG22/Understanding/reflow.html|W3C: Understanding SC 1.4.10 Reflow]]; [[https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html|W3C: Understanding SC 2.5.8 Target Size (Minimum)]].",
-          "Market data: [[https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/india|StatCounter: desktop vs mobile vs tablet market share]] (India, United Arab Emirates, United Kingdom and Australia pages, September 2026) and [[https://gs.statcounter.com/screen-resolution-stats/mobile/india|StatCounter: mobile screen resolution stats, India]] (September 2026). Third-party page-view data; it changes monthly.",
+          "web.dev: Responsive web design basics (last updated 12 February 2019; long-standing guidance); Google Search Central: mobile-first indexing best practices (last updated 10 December 2025); MDN: @container; W3C: Understanding SC 1.4.10 Reflow; W3C: Understanding SC 2.5.8 Target Size (Minimum).",
+          "Market data: StatCounter: desktop vs mobile vs tablet market share (India, United Arab Emirates, United Kingdom and Australia pages, September 2026) and StatCounter: mobile screen resolution stats, India (September 2026). Third-party page-view data; it changes monthly.",
           "Accessed 15 October 2026.",
         ],
       },
@@ -1068,7 +1068,7 @@ export const designPosts2: BlogPost[] = [
         heading: "Accessibility and Performance Checks",
         body: [
           "Include a WCAG-based review, covered in [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]], and Core Web Vitals, covered in [[/blogs/website-performance-optimization|website performance optimization]]. Slow or inaccessible pages are UX problems even when the design looks fine.",
-          "Check the WCAG 2.2 criteria that most often affect key journeys: target size for buttons and links, focus that is not hidden behind sticky headers, accessible authentication on sign-in, and not asking users to re-enter information they have already provided ([[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C]]). Pair automated checks with manual keyboard and screen reader testing on the main tasks.",
+          "Check the WCAG 2.2 criteria that most often affect key journeys: target size for buttons and links, focus that is not hidden behind sticky headers, accessible authentication on sign-in, and not asking users to re-enter information they have already provided. Pair automated checks with manual keyboard and screen reader testing on the main tasks.",
         ],
       },
       {
@@ -1306,7 +1306,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Step 2: Recruit Participants",
         body: [
-          "Recruit people who match your real users' behaviours and context, not just demographics: people who have bought this kind of product online, or who do this kind of work. Use a short screener questionnaire, and recruit from your customer list, a recruiting panel or a testing platform. [[https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/|Nielsen Norman Group's guidance]] is that about five participants per round, per distinct user group, reveals most usability problems, and that several small rounds beat one large one. Avoid testing with colleagues, and offer fair incentives.",
+          "Recruit people who match your real users' behaviours and context, not just demographics: people who have bought this kind of product online, or who do this kind of work. Use a short screener questionnaire, and recruit from your customer list, a recruiting panel or a testing platform. Nielsen Norman Group's guidance is that about five participants per round, per distinct user group, reveals most usability problems, and that several small rounds beat one large one. Avoid testing with colleagues, and offer fair incentives.",
         ],
       },
       {
@@ -1376,7 +1376,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Quantitative Measurements and Sample Size",
         body: [
-          "Numbers from five participants are not statistics. Report them as observations (“3 of 5 participants didn't find the delivery options”) rather than percentages, and don't use them to claim one design is better than another. When you need reliable benchmarks, Nielsen Norman Group recommends [[https://www.nngroup.com/articles/how-many-test-users/|at least 20 users for quantitative usability studies]], and more if you need tighter confidence intervals. NN/g's article on measuring perceived usability explains when to use SEQ and SUS.",
+          "Numbers from five participants are not statistics. Report them as observations (“3 of 5 participants didn't find the delivery options”) rather than percentages, and don't use them to claim one design is better than another. When you need reliable benchmarks, Nielsen Norman Group recommends at least 20 users for quantitative usability studies, and more if you need tighter confidence intervals. NN/g's article on measuring perceived usability explains when to use SEQ and SUS.",
         ],
       },
       {
@@ -1400,7 +1400,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Usability Testing Before a Redesign",
         body: [
-          "A redesign is usually a large spend, and it is often decided on opinion: the site looks dated, a competitor has relaunched, or a new stakeholder dislikes the navigation. Testing the current site first turns that opinion into evidence. Hoa Loranger at Nielsen Norman Group puts it plainly: [[https://www.nngroup.com/articles/redesign-competitive-testing/|“Your old site is the best prototype of your new site”]]. It already has real content, real flows and real users, so watching people use it shows what the redesign must fix and, just as importantly, what it must not break.",
+          "A redesign is usually a large spend, and it is often decided on opinion: the site looks dated, a competitor has relaunched, or a new stakeholder dislikes the navigation. Testing the current site first turns that opinion into evidence. Hoa Loranger at Nielsen Norman Group puts it plainly: “Your old site is the best prototype of your new site”. It already has real content, real flows and real users, so watching people use it shows what the redesign must fix and, just as importantly, what it must not break.",
           "Before you test, decide which of three questions you are answering. They need different methods and different sample sizes, and mixing them is the most common reason pre-redesign research produces numbers nobody trusts.",
         ],
         table: {
@@ -1439,7 +1439,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "The Freeze Sheet: Keeping the Re-Test Fair",
         body: [
-          "A before-and-after comparison only means something if the only thing that changed is the design. Nielsen Norman Group's [[https://www.nngroup.com/articles/product-ux-benchmarks/|benchmarking process]] (Alita Kendrick, 2020) is to choose what to measure, decide how, collect a baseline, redesign, then collect again under the same methodology before interpreting the results. A freeze sheet is a one-page record of that methodology, filled in at the baseline and copied unchanged for the re-test.",
+          "A before-and-after comparison only means something if the only thing that changed is the design. Nielsen Norman Group's benchmarking process (Alita Kendrick, 2020) is to choose what to measure, decide how, collect a baseline, redesign, then collect again under the same methodology before interpreting the results. A freeze sheet is a one-page record of that methodology, filled in at the baseline and copied unchanged for the re-test.",
         ],
         table: {
           headers: ["Item to freeze", "What to record at the baseline"],
@@ -1464,7 +1464,7 @@ export const designPosts2: BlogPost[] = [
         heading: "When to Re-Test and How to Read the Result",
         body: [
           "Do not re-test on launch day. Kendrick notes that users often dislike change at first, so early scores from returning users can understate a good redesign. Her guidance is about 2 to 3 weeks after launch for products people use daily, and 4 to 5 weeks for products used once or twice a week. For a marketing website mostly used by first-time visitors, recruit participants who have not used either version and the wait matters less.",
-          "Keep the comparison to the 2 to 4 metrics you chose, and report them with confidence intervals rather than single numbers. For SUS, MeasuringU's Jeff Sauro reports an [[https://measuringu.com/sus/|average score of 68]] across around 500 studies, so a score above 68 is above average. That gives a rough reference point, but the comparison that matters is your old site against your new one under the same conditions. If the intervals overlap heavily, the honest conclusion is that the test did not show a difference, not that the redesign failed.",
+          "Keep the comparison to the 2 to 4 metrics you chose, and report them with confidence intervals rather than single numbers. For SUS, MeasuringU's Jeff Sauro reports an average score of 68 across around 500 studies, so a score above 68 is above average. That gives a rough reference point, but the comparison that matters is your old site against your new one under the same conditions. If the intervals overlap heavily, the honest conclusion is that the test did not show a difference, not that the redesign failed.",
           "Usability metrics show whether people can complete tasks more easily. They do not show whether the redesign paid for itself. Enquiries, sales and retention are affected by traffic, season and pricing as well as design, so treat business metrics as a separate analysis.",
           "**Hypothetical example:** a training provider plans a new website. A five-person Learn round shows that people cannot find course dates and that the existing course comparison table is well liked. The redesign brief keeps the table and fixes the dates. The team also runs a 24-person unmoderated baseline on four frozen tasks with SEQ and SUS, then repeats it five weeks after launch with new participants. No results are implied here; the example shows the sequence.",
           "This level of rigour is not always worth it. For a small site rebuilt mainly for technical reasons, a Learn round and a launch-day check of key tasks is usually enough. Whether to redesign, rebuild or improve in stages is a separate decision, covered in [[/blogs/website-redesign-vs-rebuild|website redesign vs rebuild]].",
@@ -1510,11 +1510,11 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://www.nngroup.com/articles/product-ux-benchmarks/|Alita Kendrick, Nielsen Norman Group: 7 Steps to Benchmark Your Product's UX]] (13 September 2020).",
-          "[[https://www.nngroup.com/articles/redesign-competitive-testing/|Hoa Loranger, Nielsen Norman Group: competitive usability testing before a redesign]] (7 December 2014).",
-          "[[https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/|Jakob Nielsen, Nielsen Norman Group: Why You Only Need to Test with 5 Users]].",
-          "[[https://www.nngroup.com/articles/how-many-test-users/|Jakob Nielsen, Nielsen Norman Group: How Many Test Users in a Usability Study?]] (3 June 2012).",
-          "[[https://measuringu.com/sus/|Jeff Sauro, MeasuringU: Measuring Usability with the System Usability Scale (SUS)]] (3 February 2011).",
+          "Alita Kendrick, Nielsen Norman Group: 7 Steps to Benchmark Your Product's UX (13 September 2020).",
+          "Hoa Loranger, Nielsen Norman Group: competitive usability testing before a redesign (7 December 2014).",
+          "Jakob Nielsen, Nielsen Norman Group: Why You Only Need to Test with 5 Users.",
+          "Jakob Nielsen, Nielsen Norman Group: How Many Test Users in a Usability Study? (3 June 2012).",
+          "Jeff Sauro, MeasuringU: Measuring Usability with the System Usability Scale (SUS) (3 February 2011).",
           "Accessed 14 October 2026.",
         ],
       },
@@ -1737,7 +1737,7 @@ export const designPosts2: BlogPost[] = [
         heading: "Accessibility Annotations",
         body: [
           "Annotate heading levels, landmarks, focus order, accessible names for icon buttons, alt text, error messaging and live announcements. These are design decisions, and leaving them to developers means they're often missed. See [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]] for what to annotate.",
-          "GitHub reports, from its own internal accessibility audit data, that \"nearly half of accessibility audit issues (48%) could have been prevented if design intent had been better documented\" ([[https://github.blog/enterprise-software/collaboration/level-up-design-to-code-collaboration-with-githubs-open-source-annotation-toolkit/|GitHub blog, November 2025]]). That is one company's data, not an industry figure, but it matches the logic: an unannotated design leaves accessibility to chance. GitHub has also published its annotation stamps as a free, open-source Figma library.",
+          "GitHub reports, from its own internal accessibility audit data, that \"nearly half of accessibility audit issues (48%) could have been prevented if design intent had been better documented\". That is one company's data, not an industry figure, but it matches the logic: an unannotated design leaves accessibility to chance. GitHub has also published its annotation stamps as a free, open-source Figma library.",
         ],
       },
       {
@@ -1864,7 +1864,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode|Figma Help Center: Guide to Dev Mode]] (vendor documentation; undated); [[https://github.blog/enterprise-software/collaboration/level-up-design-to-code-collaboration-with-githubs-open-source-annotation-toolkit/|GitHub blog: GitHub's open-source Annotation Toolkit (18 November 2025)]] (vendor data); [[https://scrumguides.org/scrum-guide.html|The 2020 Scrum Guide]]; [[https://www.w3.org/community/design-tokens/2025/10/28/design-tokens-specification-reaches-first-stable-version/|W3C Design Tokens Community Group: specification reaches first stable version (28 October 2025)]].",
+          "Figma Help Center: Guide to Dev Mode (vendor documentation; undated); GitHub blog: GitHub's open-source Annotation Toolkit (18 November 2025) (vendor data); The 2020 Scrum Guide; W3C Design Tokens Community Group: specification reaches first stable version (28 October 2025).",
           "Accessed 15 October 2026. Figma's plans, seats and features change; check the current pages before relying on them.",
         ],
       },

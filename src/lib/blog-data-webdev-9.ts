@@ -735,11 +735,11 @@ export const webDevPosts9: BlogPost[] = [
         table: {
           headers: ["Platform or runtime", "Status as of 15 October 2026", "Source"],
           rows: [
-            ["Drupal 7", "End of life on 5 January 2025; no further security or compatibility updates", "[[https://www.drupal.org/about/drupal-7/d7eol/partners|Drupal.org]]"],
-            ["Drupal 10", "Reaches end of life on 9 December 2026. Drupal 12 is scheduled for the week of 7 December 2026, though Drupal says release windows are not guaranteed", "[[https://www.drupal.org/about/core/policies/core-release-cycles/schedule|Drupal.org release schedule]]"],
-            ["PHP 8.2", "Security support ends 31 December 2026. PHP 8.3 has security support until 31 December 2027, 8.4 until 31 December 2028 and 8.5 until 31 December 2029", "[[https://www.php.net/supported-versions.php|PHP.net supported versions]]"],
-            ["Adobe Commerce 2.4.6", "Standard support ended 11 August 2026. 2.4.7 standard support ends 31 May 2027. The page covers Adobe Commerce; check Magento Open Source support separately", "[[https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy|Adobe Experience League]]"],
-            ["WordPress", "Only the latest version is officially supported; the security team backports some fixes to older versions as a courtesy", "[[https://wordpress.org/about/security/|WordPress.org security]]"],
+            ["Drupal 7", "End of life on 5 January 2025; no further security or compatibility updates", "Drupal.org"],
+            ["Drupal 10", "Reaches end of life on 9 December 2026. Drupal 12 is scheduled for the week of 7 December 2026, though Drupal says release windows are not guaranteed", "Drupal.org release schedule"],
+            ["PHP 8.2", "Security support ends 31 December 2026. PHP 8.3 has security support until 31 December 2027, 8.4 until 31 December 2028 and 8.5 until 31 December 2029", "PHP.net supported versions"],
+            ["Adobe Commerce 2.4.6", "Standard support ended 11 August 2026. 2.4.7 standard support ends 31 May 2027. The page covers Adobe Commerce; check Magento Open Source support separately", "Adobe Experience League"],
+            ["WordPress", "Only the latest version is officially supported; the security team backports some fixes to older versions as a courtesy", "WordPress.org security"],
             ["Magento 1", "Support ended on 30 June 2020 according to Adobe's announcements at the time. Treat any Magento 1 site as unsupported unless you pay a third party for patches", "Adobe developer community post and contemporary coverage (primary announcement not retrieved)"],
           ],
         },
@@ -764,7 +764,7 @@ export const webDevPosts9: BlogPost[] = [
       {
         heading: "Performance, security and CMS limitations",
         body: [
-          "Before blaming the platform, rule out fixable causes like heavy scripts, images or hosting, using the [[/blogs/why-is-my-website-slow|slow website guide]]. Google's \"good\" Core Web Vitals thresholds are LCP within 2.5 seconds, INP of 200 milliseconds or less and CLS of 0.1 or less, measured at the 75th percentile of page loads ([[https://web.dev/articles/vitals|web.dev]]). If problems remain rooted in the platform's architecture, security model or editing limits after those fixes, that's a genuine replatforming signal.",
+          "Before blaming the platform, rule out fixable causes like heavy scripts, images or hosting, using the [[/blogs/why-is-my-website-slow|slow website guide]]. Google's \"good\" Core Web Vitals thresholds are LCP within 2.5 seconds, INP of 200 milliseconds or less and CLS of 0.1 or less, measured at the 75th percentile of page loads. If problems remain rooted in the platform's architecture, security model or editing limits after those fixes, that's a genuine replatforming signal.",
         ],
         cta: {
           title: "Not sure whether your platform is the real problem?",
@@ -804,7 +804,7 @@ export const webDevPosts9: BlogPost[] = [
       {
         heading: "A Replatforming Cutover Checklist That Protects Search Visibility",
         body: [
-          "Replatforming differs from a redesign or a data migration: the technology changes underneath, often with new URLs, templates and integrations at the same time. Most search losses come from avoidable URL and content mistakes. Google's guidance on site moves is the reference point ([[https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes|Google Search Central]]).",
+          "Replatforming differs from a redesign or a data migration: the technology changes underneath, often with new URLs, templates and integrations at the same time. Most search losses come from avoidable URL and content mistakes. Google's guidance on site moves is the reference point.",
         ],
         checklist: [
           "**Evaluate the platform against requirements:** content model, editor experience, integrations, performance, accessibility, hosting and total cost, before falling for a demo.",
@@ -831,9 +831,9 @@ export const webDevPosts9: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Lifecycle and support: [[https://www.drupal.org/about/drupal-7/d7eol/partners|Drupal 7 end of life]]; [[https://www.drupal.org/about/core/policies/core-release-cycles/schedule|Drupal core release schedule]]; [[https://www.php.net/supported-versions.php|PHP supported versions]]; [[https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy|Adobe Commerce lifecycle policy (updated 18 September 2026)]]; [[https://wordpress.org/about/security/|WordPress security]]; [[https://community.magento.com/t5/Magento-DevBlog/How-Extension-Developers-Can-Prepare-for-M1-End-of-Life/ba-p/446216|Magento DevBlog: preparing for Magento 1 end of life]].",
-          "Performance and migration: [[https://web.dev/articles/vitals|web.dev: Web Vitals]]; [[https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes|Google Search Central: site moves with URL changes]].",
-          "Vendor support notice: [[https://www.gov.uk/government/publications/software-security-code-of-practice/software-security-code-of-practice|UK Software Security Code of Practice]].",
+          "Lifecycle and support: Drupal 7 end of life; Drupal core release schedule; PHP supported versions; Adobe Commerce lifecycle policy (updated 18 September 2026); WordPress security; Magento DevBlog: preparing for Magento 1 end of life.",
+          "Performance and migration: web.dev: Web Vitals; Google Search Central: site moves with URL changes.",
+          "Vendor support notice: UK Software Security Code of Practice.",
           "Accessed 15 October 2026. Support dates and schedules change; check the official pages before planning around them.",
         ],
       },

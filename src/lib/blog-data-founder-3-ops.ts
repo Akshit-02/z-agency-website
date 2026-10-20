@@ -93,7 +93,7 @@ export const founderOpsPosts3: BlogPost[] = [
       {
         heading: "Locations: what counts and what the limits are",
         body: [
-          "A location is any place you stock products, fulfil orders or sell in person: a warehouse, a shop, a pop-up or a supplier that ships for you. Shopify's [[https://help.shopify.com/en/manual/locations/setting-up-your-locations|location setup page]] lists these limits on active locations:",
+          "A location is any place you stock products, fulfil orders or sell in person: a warehouse, a shop, a pop-up or a supplier that ships for you. Shopify's location setup page lists these limits on active locations:",
         ],
         table: {
           headers: ["Plan", "Active locations", "Notes"],
@@ -110,13 +110,13 @@ export const founderOpsPosts3: BlogPost[] = [
         heading: "Locations: settings that change what you can sell",
         body: [
           "Three details catch most stores out. First, deactivated locations do not count toward the limit, but you cannot deactivate your default location without changing the default first. Second, apps that physically stock inventory for you, such as 3PL, dropshipping and custom fulfilment service apps, are treated as locations but do not count toward the limit. Third, each location has a setting that makes its inventory available to fulfil online orders. It is on by default for new locations. Turn it off for a shop whose stock should not be promised to web customers, and that stock stops counting toward online sales.",
-          "If you hold the same product in your own warehouse and at a 3PL, Shopify's [[https://help.shopify.com/en/manual/products/inventory/setup/multi-managed-inventory|multi-managed inventory]] page says fulfilment services are being migrated, from February 2026, to support stock for one product at your locations and the fulfilment app at the same time. Older services are updated automatically. Confirm with your 3PL app that it handles split stock before you rely on it.",
+          "If you hold the same product in your own warehouse and at a 3PL, Shopify's multi-managed inventory page says fulfilment services are being migrated, from February 2026, to support stock for one product at your locations and the fulfilment app at the same time. Older services are updated automatically. Confirm with your 3PL app that it handles split stock before you rely on it.",
         ],
       },
       {
         heading: "The five inventory states, and why stock seems to disappear",
         body: [
-          "Shopify's [[https://help.shopify.com/en/manual/products/inventory/managing-inventory-quantities/inventory-states|inventory states page]] splits each location's stock into five states:",
+          "Shopify's inventory states page splits each location's stock into five states:",
         ],
         table: {
           headers: ["State", "What it means", "Sellable?"],
@@ -156,15 +156,15 @@ export const founderOpsPosts3: BlogPost[] = [
       {
         heading: "Order routing: who ships which order",
         body: [
-          "When an online order arrives, Shopify picks the fulfilling location using [[https://help.shopify.com/en/manual/fulfillment/setup/order-routing|order routing]]. Routing needs two or more active locations. It applies rules in sequence, and the default strategy is: minimise split fulfilments by choosing locations that can fulfil every item, stay within the destination market where possible, then ship from the closest location. You can change the order of rules and add custom rules that prioritise particular warehouses or balance stock. You can also base rules on location metafields, for example a warehouse's capacity or fulfilment speed. New locations go to the bottom of the routing list, so review it every time you add one.",
-          "If the admin rules cannot express your logic, Shopify Plus stores can request access to the [[https://shopify.dev/docs/api/functions/latest/order-routing-location-rule|Order Routing Location Rule Function API]] and run their own code. The documentation states it is available only by request for Plus merchants. It does not support subscriptions (recurring orders), pre-orders or Try Before You Buy, or order edits at checkout. Admin order edits are supported only for new items, and POS only when shipping to a customer. If a large share of your revenue is subscriptions, custom routing will not cover those orders.",
+          "When an online order arrives, Shopify picks the fulfilling location using order routing. Routing needs two or more active locations. It applies rules in sequence, and the default strategy is: minimise split fulfilments by choosing locations that can fulfil every item, stay within the destination market where possible, then ship from the closest location. You can change the order of rules and add custom rules that prioritise particular warehouses or balance stock. You can also base rules on location metafields, for example a warehouse's capacity or fulfilment speed. New locations go to the bottom of the routing list, so review it every time you add one.",
+          "If the admin rules cannot express your logic, Shopify Plus stores can request access to the Order Routing Location Rule Function API and run their own code. The documentation states it is available only by request for Plus merchants. It does not support subscriptions (recurring orders), pre-orders or Try Before You Buy, or order edits at checkout. Admin order edits are supported only for new items, and POS only when shipping to a customer. If a large share of your revenue is subscriptions, custom routing will not cover those orders.",
           "In plain English: routing decides where an order should ship from. It does not create stock. If the best location is empty, routing falls back to the next rule, which may mean a split shipment or a more distant warehouse.",
         ],
       },
       {
         heading: "Local delivery and pickup: per-location limits",
         body: [
-          "Both are set up per location, so they interact with your stock data. From Shopify's [[https://help.shopify.com/en/manual/fulfillment/setup/delivery-methods/local-delivery|local delivery]] and [[https://help.shopify.com/en/manual/fulfillment/setup/delivery-methods/pickup-in-store|pickup in store]] pages:",
+          "Both are set up per location, so they interact with your stock data. From Shopify's local delivery and pickup in store pages:",
         ],
         checklist: [
           "Local delivery allows up to 10 delivery zones per location, with a radius of up to 160 km (100 miles) or postal code lists of up to 3,000 characters, and up to 3 extra price rules per zone.",
@@ -177,15 +177,15 @@ export const founderOpsPosts3: BlogPost[] = [
       {
         heading: "3PLs, and what happened to Shopify Fulfillment Network",
         body: [
-          "Shopify once ran its own fulfilment business. That changed in 2023: Flexport completed its acquisition of Shopify's logistics business, including Deliverr, on 6 June 2023, with Shopify taking an equity stake ([[https://www.freightwaves.com/news/flexport-completes-acquisition-of-shopify-logistics-business|FreightWaves report]]). Older guides that describe the network as Shopify's own warehouses are out of date.",
-          "Today the [[https://help.shopify.com/manual/shipping/sfn|Shopify Fulfillment Network app]] connects you with third-party logistics providers that store your stock and fulfil orders for you, managed from the admin. On 26 August 2025 Shopify's changelog announced five new partners: Amazon Multi-Channel Fulfillment, DHL Fulfillment Network, Bigblue, Mayple and GoBolt. Pricing, minimum volumes and countries served are set by each partner, so check them directly.",
+          "Shopify once ran its own fulfilment business. That changed in 2023: Flexport completed its acquisition of Shopify's logistics business, including Deliverr, on 6 June 2023, with Shopify taking an equity stake. Older guides that describe the network as Shopify's own warehouses are out of date.",
+          "Today the Shopify Fulfillment Network app connects you with third-party logistics providers that store your stock and fulfil orders for you, managed from the admin. On 26 August 2025 Shopify's changelog announced five new partners: Amazon Multi-Channel Fulfillment, DHL Fulfillment Network, Bigblue, Mayple and GoBolt. Pricing, minimum volumes and countries served are set by each partner, so check them directly.",
           "Whether your 3PL comes through that app or its own integration, the inventory questions are the same: which system is the source of truth for counts, how often counts sync, and what happens to orders the 3PL rejects. Our guide to [[/blogs/ecommerce-fulfilment-integration|3PL and fulfilment integration]] covers the message flows.",
         ],
       },
       {
         heading: "Transfers and purchase orders after the 2026 changes",
         body: [
-          "[[https://help.shopify.com/en/manual/products/inventory/transfers|Transfers]] move stock between your locations, or to and from external locations such as suppliers. Shipments are created automatically, and you can receive all or part of a shipment. Two changelog updates matter this year:",
+          "Transfers move stock between your locations, or to and from external locations such as suppliers. Shipments are created automatically, and you can receive all or part of a shipment. Two changelog updates matter this year:",
         ],
         checklist: [
           "6 January 2026: you can add, remove or adjust items in a shipment even after it is in transit or received; leave the origin blank to record stock arriving from outside Shopify; leave the destination blank to write stock off or send it to an untracked location.",
@@ -199,7 +199,7 @@ export const founderOpsPosts3: BlogPost[] = [
       {
         heading: "Stocky is gone: what to do now",
         body: [
-          "Shopify's [[https://help.shopify.com/en/manual/sell-in-person/shopify-pos/inventory-management/stocky|Stocky page]] says the app \"will no longer be available after August 31st, 2026\" and that merchants need to move to the inventory management features in the admin. It can no longer be installed. Shopify also advises against uninstalling it because data might not be retrievable afterwards. If you still have access, keep it installed until you have your records.",
+          "Shopify's Stocky page says the app \"will no longer be available after August 31st, 2026\" and that merchants need to move to the inventory management features in the admin. It can no longer be installed. Shopify also advises against uninstalling it because data might not be retrievable afterwards. If you still have access, keep it installed until you have your records.",
           "The replacement options fall into three groups. Native admin inventory, with purchase orders, transfers and counts, suits stores whose Stocky use was mainly POs and receiving. Inventory planning apps add forecasting, reorder suggestions and supplier management on top of Shopify. A full inventory management or ERP system suits stores that also need manufacturing, kitting, multi-entity accounting or many marketplaces. Pick based on the workflows you actually used, not on feature lists.",
         ],
         checklist: [
@@ -213,7 +213,7 @@ export const founderOpsPosts3: BlogPost[] = [
       {
         heading: "Automating alerts with Shopify Flow",
         body: [
-          "[[https://help.shopify.com/en/manual/shopify-flow|Shopify Flow]] is a free automation app on the Basic, Grow, Advanced and Plus plans. It is not on Starter. Inventory workflows are triggered when a product variant's inventory quantity changes. Typical uses are a low-stock email or chat alert, tagging items when they are restocked, or hiding a product when it reaches zero. Test each workflow on a single product first: a loose condition can hide a whole collection.",
+          "Shopify Flow is a free automation app on the Basic, Grow, Advanced and Plus plans. It is not on Starter. Inventory workflows are triggered when a product variant's inventory quantity changes. Typical uses are a low-stock email or chat alert, tagging items when they are restocked, or hiding a product when it reaches zero. Test each workflow on a single product first: a loose condition can hide a whole collection.",
         ],
       },
       {
@@ -260,7 +260,7 @@ export const founderOpsPosts3: BlogPost[] = [
       {
         heading: "A note for India-based stores",
         body: [
-          "Shopify's [[https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries|Shopify Payments country list]] does not include India, and Shopify says the [[https://help.shopify.com/en/manual/online-sales-channels/shop|Shop channel]] is available only in countries where Shopify Payments is supported. Features that depend on Shopify Payments or Shop will be limited for India-based stores. The inventory features in this guide (locations, states, routing, transfers, purchase orders) carry no country restriction on the pages we checked. The pages we checked do not say which 3PL partners serve India, so confirm with the partner.",
+          "Shopify's Shopify Payments country list does not include India, and Shopify says the Shop channel is available only in countries where Shopify Payments is supported. Features that depend on Shopify Payments or Shop will be limited for India-based stores. The inventory features in this guide (locations, states, routing, transfers, purchase orders) carry no country restriction on the pages we checked. The pages we checked do not say which 3PL partners serve India, so confirm with the partner.",
         ],
       },
       {
@@ -289,9 +289,9 @@ export const founderOpsPosts3: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Shopify Help Center: [[https://help.shopify.com/en/manual/locations/setting-up-your-locations|Setting up your locations]]; [[https://help.shopify.com/en/manual/products/inventory/managing-inventory-quantities/inventory-states|Inventory states]]; [[https://help.shopify.com/en/manual/products/inventory/setup/multi-managed-inventory|Multi-managed inventory]]; [[https://help.shopify.com/en/manual/fulfillment/setup/order-routing|Order routing]]; [[https://help.shopify.com/en/manual/fulfillment/setup/delivery-methods/local-delivery|Local delivery]]; [[https://help.shopify.com/en/manual/fulfillment/setup/delivery-methods/pickup-in-store|Pickup in store]]; [[https://help.shopify.com/en/manual/products/inventory/transfers|Transfers]]; [[https://help.shopify.com/en/manual/sell-in-person/shopify-pos/inventory-management/stocky|Stocky]]; [[https://help.shopify.com/en/manual/shopify-flow|Shopify Flow]]; [[https://help.shopify.com/manual/shipping/sfn|Shopify Fulfillment Network]]; [[https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries|Shopify Payments supported countries]]; [[https://help.shopify.com/en/manual/online-sales-channels/shop|Shop channel]].",
-          "Shopify developer docs and changelog: [[https://shopify.dev/docs/api/functions/latest/order-routing-location-rule|Order Routing Location Rule Function API]]; [[https://changelog.shopify.com/posts/greater-flexibility-for-inventory-transfers|Greater flexibility for inventory transfers (6 January 2026)]]; [[https://changelog.shopify.com/posts/purchase-orders-now-create-transfers-to-move-inventory|Purchase orders now create transfers (22 June 2026)]]; [[https://changelog.shopify.com/posts/new-partners-join-shopify-fulfillment-network|New partners join Shopify Fulfillment Network (26 August 2025)]].",
-          "Industry: [[https://www.freightwaves.com/news/flexport-completes-acquisition-of-shopify-logistics-business|FreightWaves: Flexport completes acquisition of Shopify logistics business]].",
+          "Shopify Help Center: Setting up your locations; Inventory states; Multi-managed inventory; Order routing; Local delivery; Pickup in store; Transfers; Stocky; Shopify Flow; Shopify Fulfillment Network; Shopify Payments supported countries; Shop channel.",
+          "Shopify developer docs and changelog: Order Routing Location Rule Function API; Greater flexibility for inventory transfers (6 January 2026); Purchase orders now create transfers (22 June 2026); New partners join Shopify Fulfillment Network (26 August 2025).",
+          "Industry: FreightWaves: Flexport completes acquisition of Shopify logistics business.",
           "Accessed 15 October 2026. Plan limits, features and partner lists change; check Shopify's current pages before relying on them.",
         ],
       },
@@ -365,7 +365,7 @@ export const founderOpsPosts3: BlogPost[] = [
       {
         heading: "Step 1: choose the fidelity your question needs",
         body: [
-          "NN/g defines prototype fidelity as how closely a prototype matches the final system, and notes it varies on three dimensions: interactivity, visuals, and content and commands ([[https://www.nngroup.com/articles/ux-prototype-hi-lo-fidelity/|Pernice, NN/g]]). The table below is our planning aid, based on that framing. It sets out what each level can and cannot tell you.",
+          "NN/g defines prototype fidelity as how closely a prototype matches the final system, and notes it varies on three dimensions: interactivity, visuals, and content and commands. The table below is our planning aid, based on that framing. It sets out what each level can and cannot tell you.",
         ],
         table: {
           headers: ["Prototype type", "Can test", "Cannot test", "Run it"],
@@ -386,7 +386,7 @@ export const founderOpsPosts3: BlogPost[] = [
       {
         heading: "Step 2: write tasks that a prototype can survive",
         body: [
-          "NN/g's task-writing advice applies to any usability test: make the task realistic, make it actionable, and avoid giving clues or describing the steps ([[https://www.nngroup.com/articles/task-scenarios-usability-testing/|McCloskey, NN/g]]). Prototypes add their own rules:",
+          "NN/g's task-writing advice applies to any usability test: make the task realistic, make it actionable, and avoid giving clues or describing the steps. Prototypes add their own rules:",
         ],
         checklist: [
           "Write tasks only along paths you have built. If a reasonable participant could take a different route, build that route or accept you will need to redirect them.",
@@ -414,12 +414,12 @@ export const founderOpsPosts3: BlogPost[] = [
       {
         heading: "Step 3: decide whether to moderate",
         body: [
-          "NN/g says that \"early-prototype testing is difficult without a moderator\" and that unmoderated studies work best for live sites or highly functional prototypes ([[https://www.nngroup.com/articles/unmoderated-usability-testing/|Whitenton, NN/g]]). The practical rule:",
+          "NN/g says that \"early-prototype testing is difficult without a moderator\" and that unmoderated studies work best for live sites or highly functional prototypes. The practical rule:",
         ],
         checklist: [
           "Moderate when the prototype is partial, has unbuilt areas, uses Wizard of Oz, or the question involves understanding or emotion (\"would you trust this?\").",
           "Unmoderated is reasonable when every task path is built, tasks are narrow, and the main questions are about finding and completing.",
-          "Always pilot an unmoderated test with one or two people. A Google study of experienced remote participants found that many issues traced back to platforms, study protocols and prototypes, and that participants respond by filing support tickets or simply quitting ([[https://research.google/pubs/prototypes-platforms-and-protocols-identifying-common-issues-with-remote-unmoderated-studies-and-their-impact-on-research-participants/|Schirra et al., CHI 2023]]).",
+          "Always pilot an unmoderated test with one or two people. A Google study of experienced remote participants found that many issues traced back to platforms, study protocols and prototypes, and that participants respond by filing support tickets or simply quitting.",
           "In moderated sessions, agree beforehand how the facilitator will recover a participant who reaches a dead end, so recoveries are consistent and noted.",
         ],
       },
@@ -441,8 +441,8 @@ export const founderOpsPosts3: BlogPost[] = [
       {
         heading: "AI-generated prototypes: useful, with a polish trap",
         body: [
-          "Tools that generate working prototypes from a prompt change what can be tested early. In September 2026 NN/g wrote that AI tools make it feasible to build fully interactive prototypes of complex interfaces, with realistic data, many states and free input ([[https://www.nngroup.com/articles/test-earlier-with-ai/|Chan, NN/g]]). That removes the typed-input and fake-data limits above.",
-          "The same article warns that AI-generated prototypes \"may look complete while introducing all sorts of assumptions and inaccuracies\", and that their polish \"might cause people to stop working to improve it\". An earlier NN/g piece found the tools lack the sophistication to weigh design trade-offs and are biased toward mainstream conventions ([[https://www.nngroup.com/articles/ai-prototyping/|Wang and Brown, NN/g]]). Pernice made the same point about any high-fidelity prototype: once a team has invested in a design, it is harder to give up.",
+          "Tools that generate working prototypes from a prompt change what can be tested early. In September 2026 NN/g wrote that AI tools make it feasible to build fully interactive prototypes of complex interfaces, with realistic data, many states and free input. That removes the typed-input and fake-data limits above.",
+          "The same article warns that AI-generated prototypes \"may look complete while introducing all sorts of assumptions and inaccuracies\", and that their polish \"might cause people to stop working to improve it\". An earlier NN/g piece found the tools lack the sophistication to weigh design trade-offs and are biased toward mainstream conventions. Pernice made the same point about any high-fidelity prototype: once a team has invested in a design, it is harder to give up.",
           "Before testing an AI-built prototype, walk every task path yourself, list what the tool assumed (copy, rules, defaults), and decide which of those assumptions the test is meant to challenge. Treat the output as a test material, not as the design.",
         ],
       },
@@ -492,9 +492,9 @@ export const founderOpsPosts3: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Nielsen Norman Group: [[https://www.nngroup.com/articles/ux-prototype-hi-lo-fidelity/|Kara Pernice, UX prototypes: low fidelity vs high fidelity]]; [[https://www.nngroup.com/articles/unmoderated-usability-testing/|Kathryn Whitenton, Unmoderated user tests]]; [[https://www.nngroup.com/articles/task-scenarios-usability-testing/|Marieke McCloskey, Turn user goals into task scenarios]]; [[https://www.nngroup.com/articles/test-earlier-with-ai/|Megan Chan, Test complex interactions earlier with AI prototyping]]; [[https://www.nngroup.com/articles/ai-prototyping/|Huei-Hsin Wang and Megan Brown, AI prototyping in real design contexts]]; [[https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/|Jakob Nielsen, Why you only need to test with 5 users]].",
-          "Research: [[https://research.google/pubs/prototypes-platforms-and-protocols-identifying-common-issues-with-remote-unmoderated-studies-and-their-impact-on-research-participants/|Schirra, Volkov, Narasimha and Bentley, Prototypes, platforms and protocols (CHI 2023 Extended Abstracts)]].",
-          "Vendor and community: [[https://help.figma.com/hc/en-us/articles/360040318013-Guide-to-prototyping-in-Figma|Figma: Guide to prototyping]]; [[https://help.figma.com/hc/en-us/articles/15253194385943-Use-variables-in-prototypes|Figma: Use variables in prototypes]]; [[https://forum.figma.com/t/interactive-text-inputs-in-prototype-mode/366|Figma community forum: interactive text inputs in prototype mode]] (a user request thread, not official documentation).",
+          "Nielsen Norman Group: Kara Pernice, UX prototypes: low fidelity vs high fidelity; Kathryn Whitenton, Unmoderated user tests; Marieke McCloskey, Turn user goals into task scenarios; Megan Chan, Test complex interactions earlier with AI prototyping; Huei-Hsin Wang and Megan Brown, AI prototyping in real design contexts; Jakob Nielsen, Why you only need to test with 5 users.",
+          "Research: Schirra, Volkov, Narasimha and Bentley, Prototypes, platforms and protocols (CHI 2023 Extended Abstracts).",
+          "Vendor and community: Figma: Guide to prototyping; Figma: Use variables in prototypes; Figma community forum: interactive text inputs in prototype mode (a user request thread, not official documentation).",
           "Accessed 15 October 2026. Tool features change; check current documentation.",
         ],
       },

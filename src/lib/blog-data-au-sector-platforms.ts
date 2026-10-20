@@ -242,8 +242,8 @@ export const auSectorPlatformPosts: BlogPost[] = [
       {
         heading: "Australian requirements to support",
         body: [
-          "**Incorporated associations.** Associations are incorporated under state and territory laws, which set governance requirements such as registers, meetings and financial records. In Victoria, the Associations Incorporation Reform Act 2012 includes provisions on the register of members and lets members apply to restrict access to their personal details ([[https://www.austlii.edu.au/au/legis/vic/num_act/aira201220o2012422/|AustLII]]). Registered charities also report to the ACNC, and some state reporting is streamlined through the ACNC ([[https://www.acnc.gov.au/for-charities/start-charity/you-start-charity/charity-subtypes/incorporated-associations|ACNC]]). Check your state's requirements.",
-          "**Privacy and spam.** Many small associations are exempt from the Privacy Act, but not all ([[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/small-business|OAIC]]). The Spam Act applies regardless of size: marketing emails and SMS need consent and an unsubscribe facility.",
+          "**Incorporated associations.** Associations are incorporated under state and territory laws, which set governance requirements such as registers, meetings and financial records. In Victoria, the Associations Incorporation Reform Act 2012 includes provisions on the register of members and lets members apply to restrict access to their personal details. Registered charities also report to the ACNC, and some state reporting is streamlined through the ACNC. Check your state's requirements.",
+          "**Privacy and spam.** Many small associations are exempt from the Privacy Act, but not all. The Spam Act applies regardless of size: marketing emails and SMS need consent and an unsubscribe facility.",
           "**Payments.** Card surcharges on eftpos, Visa and Mastercard ended on 1 October 2026; build fees into membership prices. See [[/blogs/payment-gateway-integration-australia|payment gateway integration]].",
         ],
       },
@@ -364,7 +364,7 @@ export const auSectorPlatformPosts: BlogPost[] = [
           "Donation forms with recurring options and receipts configured to your obligations.",
           "Supporter records with consent, communication preferences and history.",
           "Campaign and appeal tracking; gift acknowledgement workflows.",
-          "Marketing emails and SMS with consent and unsubscribe under the Spam Act ([[https://www.acma.gov.au/avoid-sending-spam|ACMA]]).",
+          "Marketing emails and SMS with consent and unsubscribe under the Spam Act.",
           "Fundraising calls: check Do Not Call Register rules and any exemptions that apply to your organisation.",
           "Payment integration without card surcharges on eftpos, Visa and Mastercard.",
         ],
@@ -378,7 +378,7 @@ export const auSectorPlatformPosts: BlogPost[] = [
       {
         heading: "Service delivery and client records",
         body: [
-          "Service delivery records, such as case notes, referrals, appointments and outcomes, are often the most sensitive data a non-profit holds. Use role-based access, record-level restrictions, audit logs and secure document storage, and collect only what the service needs. Organisations providing health services are covered by the Privacy Act regardless of turnover ([[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/small-business|OAIC]]). See [[/blogs/privacy-by-design-software-australia|privacy by design]].",
+          "Service delivery records, such as case notes, referrals, appointments and outcomes, are often the most sensitive data a non-profit holds. Use role-based access, record-level restrictions, audit logs and secure document storage, and collect only what the service needs. Organisations providing health services are covered by the Privacy Act regardless of turnover. See [[/blogs/privacy-by-design-software-australia|privacy by design]].",
         ],
       },
       {
@@ -527,7 +527,7 @@ export const auSectorPlatformPosts: BlogPost[] = [
       {
         heading: "Candidate privacy in Australia",
         body: [
-          "The OAIC explains that the employee records exemption does not cover information about prospective employees who are not subsequently employed, so the Australian Privacy Principles apply to applicant data held by covered organisations ([[https://oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/employee-records-exemption|OAIC]]). Practical steps: a collection notice on the application form, minimal collection, restricted access to sensitive information such as health details for adjustments, secure storage, retention periods, and consent for talent pools. Recruitment agencies handling many candidates' data should be particularly careful with security and breach readiness.",
+          "The OAIC explains that the employee records exemption does not cover information about prospective employees who are not subsequently employed, so the Australian Privacy Principles apply to applicant data held by covered organisations. Practical steps: a collection notice on the application form, minimal collection, restricted access to sensitive information such as health details for adjustments, secure storage, retention periods, and consent for talent pools. Recruitment agencies handling many candidates' data should be particularly careful with security and breach readiness.",
         ],
       },
       {
@@ -661,8 +661,8 @@ export const auSectorPlatformPosts: BlogPost[] = [
       {
         heading: "Australian franchising and workplace context",
         body: [
-          "**Franchising Code.** The new Franchising Code commenced on 1 April 2025 for agreements entered into, transferred, renewed or extended from that date, and the ACCC says new disclosure document obligations and changes to specific purpose funds, including marketing funds, took effect from 1 November 2025 ([[https://www.accc.gov.au/business/industry-codes/franchising-code-of-conduct/guidance-on-changes-to-the-franchising-code|ACCC]]). Software can organise disclosure documents, fund contributions, spending and statements, but obligations remain the franchisor's.",
-          "**Responsible franchisor liability.** Fair Work Act amendments in 2017 introduced provisions under which a responsible franchisor entity can be liable for certain workplace contraventions by franchisees where it knew or could reasonably have known and did not take reasonable steps to prevent them, according to law-firm summaries ([[https://www.mondaq.com/australia/franchising/629728/a-new-era-in-franchising-compliance-is-here|Mondaq]]). Rostering, timesheet and pay-check tools, compliance audits and training records can support reasonable steps. Get legal advice on what is appropriate for your network.",
+          "**Franchising Code.** The new Franchising Code commenced on 1 April 2025 for agreements entered into, transferred, renewed or extended from that date, and the ACCC says new disclosure document obligations and changes to specific purpose funds, including marketing funds, took effect from 1 November 2025. Software can organise disclosure documents, fund contributions, spending and statements, but obligations remain the franchisor's.",
+          "**Responsible franchisor liability.** Fair Work Act amendments in 2017 introduced provisions under which a responsible franchisor entity can be liable for certain workplace contraventions by franchisees where it knew or could reasonably have known and did not take reasonable steps to prevent them, according to law-firm summaries. Rostering, timesheet and pay-check tools, compliance audits and training records can support reasonable steps. Get legal advice on what is appropriate for your network.",
           "**Privacy.** Customer and staff data held by franchisees and head office needs clear ownership and access rules under the agreements and, where it applies, the Privacy Act.",
         ],
       },

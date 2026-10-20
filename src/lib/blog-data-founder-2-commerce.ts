@@ -78,7 +78,7 @@ export const founderCommercePosts2: BlogPost[] = [
       {
         heading: "What Shopify's migration tools actually cover",
         body: [
-          "Shopify's own documentation and its App Store listing describe the first-party Store Migration app differently. The [[https://help.shopify.com/en/manual/migrating-to-shopify/migrating-from-woocommerce|Shopify Help Center guide to migrating from WooCommerce]] says the app imports products from a WooCommerce product CSV, is in early access, and is only available for certain stores on desktop. The [[https://apps.shopify.com/store-migration|Store Migration app listing]] says it moves product and customer data from WooCommerce and other platforms. Plan as if only products are covered, and treat anything more as a bonus you confirm on your own store.",
+          "Shopify's own documentation and its App Store listing describe the first-party Store Migration app differently. The Shopify Help Center guide to migrating from WooCommerce says the app imports products from a WooCommerce product CSV, is in early access, and is only available for certain stores on desktop. The Store Migration app listing says it moves product and customer data from WooCommerce and other platforms. Plan as if only products are covered, and treat anything more as a bonus you confirm on your own store.",
           "Shopify's guide exports products with WooCommerce's built-in CSV export, and customers and orders with a WooCommerce export plugin. The customer CSV needs editing to match Shopify's format. For history, reviews and larger catalogs, most stores use a third-party migration app or a bulk CSV tool, and very large or unusual catalogs may need a script against Shopify's Admin API. This is the part of a [[/services/shopify-development|Shopify migration project]] where most of the planning time goes.",
         ],
         callout: {
@@ -113,14 +113,14 @@ export const founderCommercePosts2: BlogPost[] = [
       {
         heading: "Variations: the 3-option and 100-variant traps",
         body: [
-          "Shopify raised its limit from 100 to 2,048 variants per product in October 2025 ([[https://changelog.shopify.com/posts/we-ve-increased-the-product-variant-limit-to-2048|Shopify changelog]]), and [[https://help.shopify.com/en/manual/products/variants/add-variants|Shopify's variants documentation]] keeps the limit of three options per product. The same page warns that some third-party themes, theme app extensions, public apps and sales channels might not support more than 100 variants. So a product that imports cleanly can still break a product page, a feed or a reviews widget.",
+          "Shopify raised its limit from 100 to 2,048 variants per product in October 2025, and Shopify's variants documentation keeps the limit of three options per product. The same page warns that some third-party themes, theme app extensions, public apps and sales channels might not support more than 100 variants. So a product that imports cleanly can still break a product page, a feed or a reviews widget.",
           "Before import, list every variable product with more than three attributes or more than 100 variations. For each one, choose to drop an attribute that does not change stock or price, move it to a metafield or line-item property, or split the product. Then check your theme, feeds and key apps against the largest products you have.",
         ],
       },
       {
         heading: "Customer accounts after the February 2026 change",
         body: [
-          "Older migration advice says to import customers and email them an invitation to set a new password. That advice describes Shopify's legacy customer accounts. On 26 February 2026 Shopify deprecated legacy customer accounts, which are no longer available to new stores ([[https://changelog.shopify.com/posts/legacy-customer-accounts-are-now-deprecated|Shopify changelog]]). With the current customer accounts, customers enter their email address and receive a one-time code, and Shopify says a password isn't required. Customers who already have a profile in your admin can sign in with the email on that profile ([[https://help.shopify.com/en/manual/customers/customer-accounts|Shopify Help Center]]).",
+          "Older migration advice says to import customers and email them an invitation to set a new password. That advice describes Shopify's legacy customer accounts. On 26 February 2026 Shopify deprecated legacy customer accounts, which are no longer available to new stores. With the current customer accounts, customers enter their email address and receive a one-time code, and Shopify says a password isn't required. Customers who already have a profile in your admin can sign in with the email on that profile.",
           "In practice, imported customers should be able to sign in with their email and see their imported history, without a reset campaign. Do not rely on that until you have tested it: import a handful of real customer records into a development store, sign in as them, and check that addresses and any imported orders appear. Then write a short notice for the launch email and the account page explaining the new sign-in.",
         ],
       },
@@ -152,7 +152,7 @@ export const founderCommercePosts2: BlogPost[] = [
       {
         heading: "SEO and redirect plan",
         body: [
-          "WooCommerce and Shopify use different URL structures, so most product and category URLs will change. Shopify recommends setting up redirects before you transfer the domain. Shopify can redirect only from URLs that are broken on the new store, URLs with query strings might not redirect as expected, and standard plans allow up to 100,000 redirects (20,000,000 on Plus), per the [[https://help.shopify.com/en/manual/online-store/menus-and-links/url-redirect|URL redirect documentation]]. Use Shopify's sample redirect CSV as the template, so the column names match.",
+          "WooCommerce and Shopify use different URL structures, so most product and category URLs will change. Shopify recommends setting up redirects before you transfer the domain. Shopify can redirect only from URLs that are broken on the new store, URLs with query strings might not redirect as expected, and standard plans allow up to 100,000 redirects (20,000,000 on Plus), per the URL redirect documentation. Use Shopify's sample redirect CSV as the template, so the column names match.",
         ],
         table: {
           headers: ["Typical WooCommerce URL", "Shopify URL", "Note"],
@@ -236,9 +236,9 @@ export const founderCommercePosts2: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Shopify Help Center: [[https://help.shopify.com/en/manual/migrating-to-shopify/migrating-from-woocommerce|Migrating from WooCommerce]]; [[https://help.shopify.com/en/manual/migrating-to-shopify/import-store-app/woocommerce-migration|Importing WooCommerce data]]; [[https://help.shopify.com/en/manual/products/variants/add-variants|Adding variants]]; [[https://help.shopify.com/en/manual/customers/customer-accounts|Customer accounts]]; [[https://help.shopify.com/en/manual/online-store/menus-and-links/url-redirect|URL redirects]].",
-          "Shopify changelog: [[https://changelog.shopify.com/posts/we-ve-increased-the-product-variant-limit-to-2048|Product variant limit increased to 2,048]] (15 October 2025); [[https://changelog.shopify.com/posts/legacy-customer-accounts-are-now-deprecated|Legacy customer accounts are now deprecated]] (26 February 2026).",
-          "Shopify App Store: [[https://apps.shopify.com/store-migration|Store Migration]] (vendor listing).",
+          "Shopify Help Center: Migrating from WooCommerce; Importing WooCommerce data; Adding variants; Customer accounts; URL redirects.",
+          "Shopify changelog: Product variant limit increased to 2,048 (15 October 2025); Legacy customer accounts are now deprecated (26 February 2026).",
+          "Shopify App Store: Store Migration (vendor listing).",
           "Accessed 14 October 2026. Shopify's tools, limits and account features change; check the current documentation before you migrate.",
         ],
       },
@@ -320,7 +320,7 @@ export const founderCommercePosts2: BlogPost[] = [
       {
         heading: "What each Shopify plan includes for B2B",
         body: [
-          "Shopify moved its main B2B features to non-Plus plans on 2 April 2026 ([[https://changelog.shopify.com/posts/key-b2b-features-now-available-on-non-plus-plans|Shopify changelog]]). The table summarises the [[https://help.shopify.com/en/manual/b2b/getting-started/plan-features|B2B plan features in the Shopify Help Center]].",
+          "Shopify moved its main B2B features to non-Plus plans on 2 April 2026. The table summarises the B2B plan features in the Shopify Help Center.",
         ],
         table: {
           headers: ["Plan", "B2B capability"],
@@ -332,7 +332,7 @@ export const founderCommercePosts2: BlogPost[] = [
         },
         checklist: [
           "**On every plan, also:** location-level permissions (location admin or ordering only), payment reminders, draft order to invoice, checkout to draft, easy reorders, PO numbers, sales staff permissions, the Trade theme with a quick order list, and Shopify Flow with B2B objects.",
-          "**Payment terms offered:** Net 7, 15, 30, 45, 60 or 90 days, or due on fulfilment ([[https://help.shopify.com/en/manual/b2b/getting-started/features|B2B features]]).",
+          "**Payment terms offered:** Net 7, 15, 30, 45, 60 or 90 days, or due on fulfilment.",
           "**Catalog rule on non-Plus plans:** B2B catalogs require the new Shopify Markets, and they are assigned through markets rather than directly to a company.",
           "**ACH payments** are US only.",
         ],
@@ -344,11 +344,11 @@ export const founderCommercePosts2: BlogPost[] = [
       {
         heading: "What B2B on Shopify does not support",
         body: [
-          "Shopify's [[https://help.shopify.com/en/manual/b2b/getting-started/considerations|B2B considerations page]] lists features that don't work with B2B. Check this list against how your trade buyers actually order before you commit.",
+          "Shopify's B2B considerations page lists features that don't work with B2B. Check this list against how your trade buyers actually order before you commit.",
         ],
         checklist: [
           "Accelerated checkouts: Shop Pay, Apple Pay, Google Pay and Amazon Pay.",
-          "Shop Pay, Shop Cash and Shop Pay Installments as B2B payment methods ([[https://help.shopify.com/en/manual/b2b/checkout-and-orders/payment-methods|B2B payment methods]]).",
+          "Shop Pay, Shop Cash and Shop Pay Installments as B2B payment methods.",
           "Subscriptions, so repeat B2B supply can't run on subscription contracts.",
           "Local delivery, pickup points and tipping.",
           "Legacy customer accounts and checkout.liquid customisations.",
@@ -360,7 +360,7 @@ export const founderCommercePosts2: BlogPost[] = [
       {
         heading: "One store, separate store, app or another platform?",
         body: [
-          "There are four realistic routes. The first two use Shopify's native B2B features. The [[https://help.shopify.com/en/manual/b2b/getting-started/store-type|store type guidance]] is clear on the trade-off: a blended store shares inventory and apps but can't be gated to trade buyers only, while a dedicated store keeps inventory separate and can be gated, but needs apps and integrations set up and paid for again. Shopify also says the choice is not easy to change later.",
+          "There are four realistic routes. The first two use Shopify's native B2B features. The store type guidance is clear on the trade-off: a blended store shares inventory and apps but can't be gated to trade buyers only, while a dedicated store keeps inventory separate and can be gated, but needs apps and integrations set up and paid for again. Shopify also says the choice is not easy to change later.",
         ],
         table: {
           headers: ["Route", "Fits when", "Watch for"],
@@ -430,7 +430,7 @@ export const founderCommercePosts2: BlogPost[] = [
       {
         heading: "Regional note: India-based stores",
         body: [
-          "Shopify Payments is not available in India ([[https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries|supported countries]]). Shopify documents vaulted cards under its Shopify Payments section of the B2B payment methods page, so an India-based store should confirm with its payment provider which B2B payment features, such as saved cards for later charges, actually work. Payment terms settled by bank transfer are a common alternative; confirm the exact setup on a development store. ACH is US only. Shopify Payments is available in the UAE, UK, Australia and Singapore, so these limits differ there.",
+          "Shopify Payments is not available in India. Shopify documents vaulted cards under its Shopify Payments section of the B2B payment methods page, so an India-based store should confirm with its payment provider which B2B payment features, such as saved cards for later charges, actually work. Payment terms settled by bank transfer are a common alternative; confirm the exact setup on a development store. ACH is US only. Shopify Payments is available in the UAE, UK, Australia and Singapore, so these limits differ there.",
         ],
       },
       {
@@ -454,8 +454,8 @@ export const founderCommercePosts2: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Shopify changelog: [[https://changelog.shopify.com/posts/key-b2b-features-now-available-on-non-plus-plans|Key B2B features now available on non-Plus plans]] (2 April 2026).",
-          "Shopify Help Center: [[https://help.shopify.com/en/manual/b2b/getting-started/plan-features|B2B plan features]]; [[https://help.shopify.com/en/manual/b2b/getting-started/features|B2B features]]; [[https://help.shopify.com/en/manual/b2b/getting-started/considerations|B2B considerations]]; [[https://help.shopify.com/en/manual/b2b/getting-started/store-type|Choosing a store type]]; [[https://help.shopify.com/en/manual/b2b/checkout-and-orders/payment-methods|B2B payment methods]]; [[https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries|Shopify Payments supported countries]].",
+          "Shopify changelog: Key B2B features now available on non-Plus plans (2 April 2026).",
+          "Shopify Help Center: B2B plan features; B2B features; B2B considerations; Choosing a store type; B2B payment methods; Shopify Payments supported countries.",
           "Accessed 14 October 2026. Shopify changes plan features often; check the current plan features page before deciding.",
         ],
       },

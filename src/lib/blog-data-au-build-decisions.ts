@@ -446,8 +446,8 @@ export const auBuildDecisionPosts: BlogPost[] = [
       {
         heading: "UK considerations",
         body: [
-          "For UK business customers, the company register is the usual starting point. The [[https://developer.company-information.service.gov.uk/|Companies House API]] returns company status, registered office, officers and people with significant control, so onboarding can prefill details and flag dissolved companies or mismatches for review. Since 18 November 2025, directors and people with significant control have had to verify their identity with Companies House, with a 12-month transition for existing ones tied to their due dates ([[https://www.gov.uk/guidance/verify-your-identity-for-companies-house|GOV.UK]]); this improves register data but does not replace your own checks.",
-          "VAT numbers can be checked with HMRC's [[https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/vat-registered-companies-api/2.0|VAT registered companies API]]. Firms regulated under the Money Laundering Regulations 2017 must apply customer due diligence under their own policies; software can gather evidence and route cases, but the firm decides. For individuals, such as sole traders or guarantors, see [[/blogs/identity-verification-integration-uk|identity verification integration in the UK]].",
+          "For UK business customers, the company register is the usual starting point. The Companies House API returns company status, registered office, officers and people with significant control, so onboarding can prefill details and flag dissolved companies or mismatches for review. Since 18 November 2025, directors and people with significant control have had to verify their identity with Companies House, with a 12-month transition for existing ones tied to their due dates; this improves register data but does not replace your own checks.",
+          "VAT numbers can be checked with HMRC's VAT registered companies API. Firms regulated under the Money Laundering Regulations 2017 must apply customer due diligence under their own policies; software can gather evidence and route cases, but the firm decides. For individuals, such as sole traders or guarantors, see [[/blogs/identity-verification-integration-uk|identity verification integration in the UK]].",
         ],
       },
       {
@@ -522,8 +522,8 @@ export const auBuildDecisionPosts: BlogPost[] = [
         heading: "Triggers that force the issue",
         body: [],
         checklist: [
-          "**Google Play:** from 31 August 2026, new apps and updates must target Android 16 (API 36) ([[https://developer.android.com/google/play/requirements/target-sdk|Android Developers]]).",
-          "**Apple:** since 28 April 2026, uploads must be built with Xcode 26 and 26-generation SDKs ([[https://developer.apple.com/news/upcoming-requirements/|Apple Developer]]).",
+          "**Google Play:** from 31 August 2026, new apps and updates must target Android 16 (API 36).",
+          "**Apple:** since 28 April 2026, uploads must be built with Xcode 26 and 26-generation SDKs.",
           "Framework or library versions no longer supported or incompatible with current toolchains.",
           "Security findings in old dependencies.",
           "Crash and performance problems that resist fixes.",

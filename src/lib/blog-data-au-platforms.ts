@@ -93,7 +93,7 @@ export const auPlatformPosts: BlogPost[] = [
       {
         heading: "Australian context: where marketplaces already sit",
         body: [
-          "Australian shoppers already use marketplaces heavily. The Australia Post eCommerce Report 2026 found that online marketplaces were the largest category of online spend in 2025 at $18.9 billion, that pure marketplaces such as Amazon and Temu accounted for 23% of total online spending, and that 69% of shoppers used marketplace apps ([[https://auspost.com.au/business/ecommerce/ecommerce-report|Australia Post]]). Competing with general marketplaces is hard; most new marketplaces succeed by serving a niche those platforms serve poorly, such as specialist trades, local services, rentals or B2B supply.",
+          "Australian shoppers already use marketplaces heavily. The Australia Post eCommerce Report 2026 found that online marketplaces were the largest category of online spend in 2025 at $18.9 billion, that pure marketplaces such as Amazon and Temu accounted for 23% of total online spending, and that 69% of shoppers used marketplace apps. Competing with general marketplaces is hard; most new marketplaces succeed by serving a niche those platforms serve poorly, such as specialist trades, local services, rentals or B2B supply.",
         ],
       },
       {
@@ -137,7 +137,7 @@ export const auPlatformPosts: BlogPost[] = [
       {
         heading: "Payments, commission and payouts",
         body: [
-          "Most marketplaces should not build payment handling themselves. Use a payment provider's marketplace or platform product, which handles seller verification, split payments, commission and payouts; Stripe, for example, lists Australia among its supported countries ([[https://stripe.com/global|Stripe]]). Holding or moving customer funds yourself can raise financial services licensing and anti-money-laundering questions, so get specialist advice before designing anything unusual.",
+          "Most marketplaces should not build payment handling themselves. Use a payment provider's marketplace or platform product, which handles seller verification, split payments, commission and payouts; Stripe, for example, lists Australia among its supported countries. Holding or moving customer funds yourself can raise financial services licensing and anti-money-laundering questions, so get specialist advice before designing anything unusual.",
           "Design the money flow end to end: when the buyer is charged, when funds are released to sellers, how refunds and partial refunds work, and how commission appears on invoices. Card surcharges on eftpos, Visa and Mastercard were removed from 1 October 2026 under the RBA's decision, so build payment costs into your fees. Our guides to [[/blogs/marketplace-payment-architecture|marketplace payments]] and [[/blogs/marketplace-commission-system|commission models]] cover the architecture.",
         ],
         code: {
@@ -153,17 +153,17 @@ Dispute    -> hold funds; evidence from both sides`,
       {
         heading: "Australian obligations to check before launch",
         body: [
-          "**ATO platform reporting.** Under the sharing economy reporting regime, operators of electronic distribution platforms report certain transactions made through their platforms to the ATO. Taxi travel and short-term accommodation were reportable first; most other reportable transactions, such as asset hire, food delivery and services, followed from 1 July 2024. Supplies that only transfer title to goods or real property, and financial supplies, are excluded ([[https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/third-party-reporting/sharing-economy-reporting-regime|ATO]]). A services or rental marketplace is therefore more likely to report than a pure goods marketplace. Build the data capture in from the start.",
-          "**GST.** Australian GST law has rules under which an electronic distribution platform operator can be treated as the supplier, for example for certain imported services and digital products sold to Australian consumers ([[https://www.ato.gov.au/businesses-and-organisations/international-tax-for-business/gst-for-non-resident-businesses/how-australian-gst-works|ATO]]). Whether that applies depends on your model and sellers. Get advice from a registered tax agent.",
+          "**ATO platform reporting.** Under the sharing economy reporting regime, operators of electronic distribution platforms report certain transactions made through their platforms to the ATO. Taxi travel and short-term accommodation were reportable first; most other reportable transactions, such as asset hire, food delivery and services, followed from 1 July 2024. Supplies that only transfer title to goods or real property, and financial supplies, are excluded. A services or rental marketplace is therefore more likely to report than a pure goods marketplace. Build the data capture in from the start.",
+          "**GST.** Australian GST law has rules under which an electronic distribution platform operator can be treated as the supplier, for example for certain imported services and digital products sold to Australian consumers. Whether that applies depends on your model and sellers. Get advice from a registered tax agent.",
           "**Consumer law.** Sellers in trade owe consumer guarantees, and the platform must not mislead consumers about who they are buying from, prices, reviews or their rights. Since 9 November 2023, unfair terms in standard form contracts with consumers and small businesses can attract penalties, which matters for both buyer and seller terms. From 1 July 2027, the unfair trading practices regime adds drip pricing and subscription rules; see [[/blogs/subscription-ecommerce-australia|subscription ecommerce in Australia]].",
-          "**Scams.** The Scams Prevention Framework Act 2025 applies to designated sectors. The first designations in 2026 cover banks, telecommunications providers and specified digital platform services, with most obligations still to commence ([[https://www.legislation.gov.au/C2025A00015/latest/text|Federal Register of Legislation]]). Check whether your platform falls within a designation. Either way, seller verification, scam reporting and warnings about off-platform payments are good practice.",
+          "**Scams.** The Scams Prevention Framework Act 2025 applies to designated sectors. The first designations in 2026 cover banks, telecommunications providers and specified digital platform services, with most obligations still to commence. Check whether your platform falls within a designation. Either way, seller verification, scam reporting and warnings about off-platform payments are good practice.",
           "**Privacy.** If you are covered by the Privacy Act, you hold personal information for both sides of the market. Collect only what you need, secure it and plan for data breaches. See [[/blogs/secure-web-application-development-australia|building a secure customer-facing web application]].",
         ],
       },
       {
         heading: "Trust: reviews, disputes and moderation",
         body: [
-          "**Reviews.** Only verified buyers should review a transaction. The ACCC's guidance says businesses should be transparent about commercial relationships, should not post or publish misleading reviews, and that omitting or editing negative reviews can be as misleading as fake ones ([[https://www.accc.gov.au/business/advertising-and-promotions/online-product-and-service-reviews|ACCC]]). Publish your review policy and apply it consistently. See [[/blogs/ecommerce-product-reviews-ux|review design]].",
+          "**Reviews.** Only verified buyers should review a transaction. The ACCC's guidance says businesses should be transparent about commercial relationships, should not post or publish misleading reviews, and that omitting or editing negative reviews can be as misleading as fake ones. Publish your review policy and apply it consistently. See [[/blogs/ecommerce-product-reviews-ux|review design]].",
           "**Disputes.** Define what buyers and sellers can raise, the evidence you need, timeframes, and how decisions affect payouts. Keep communication on the platform so evidence exists, and escalate to a person for anything ambiguous.",
           "**Moderation.** Screen listings and messages for prohibited items, scams and off-platform payment requests. Combine automated checks with human review, and track repeat offenders. Our [[/blogs/marketplace-trust-and-safety|trust and safety guide]] covers controls in depth.",
         ],
@@ -233,9 +233,9 @@ Dispute    -> hold funds; evidence from both sides`,
       {
         heading: "Sources",
         body: [
-          "**Tax:** [[https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/third-party-reporting/sharing-economy-reporting-regime|ATO, sharing economy reporting regime]]; [[https://www.ato.gov.au/businesses-and-organisations/international-tax-for-business/gst-for-non-resident-businesses/how-australian-gst-works|ATO, how Australian GST works for non-resident businesses]].",
-          "**Consumer law and scams:** [[https://www.accc.gov.au/business/advertising-and-promotions/online-product-and-service-reviews|ACCC, online product and service reviews]]; [[https://www.legislation.gov.au/C2025A00015/latest/text|Scams Prevention Framework Act 2025]].",
-          "**Market and payments:** [[https://auspost.com.au/business/ecommerce/ecommerce-report|Australia Post eCommerce Report 2026]]; [[https://stripe.com/global|Stripe global availability]]; [[https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/executive-summary.html|RBA, surcharging conclusions]].",
+          "**Tax:** ATO, sharing economy reporting regime; ATO, how Australian GST works for non-resident businesses.",
+          "**Consumer law and scams:** ACCC, online product and service reviews; Scams Prevention Framework Act 2025.",
+          "**Market and payments:** Australia Post eCommerce Report 2026; Stripe global availability; RBA, surcharging conclusions.",
           "ATO and ACCC points, and the Scams Prevention Framework designation status, are summarised from official guidance; check the current position. The models, release plan and example are ours. Nothing here is legal, tax or financial advice or ZSpace client data.",
         ],
       },
@@ -335,17 +335,17 @@ Dispute    -> hold funds; evidence from both sides`,
       {
         heading: "Design an offer customers understand",
         body: [
-          "Show the per-delivery price, frequency, any delivery charges, the total per period, the minimum commitment if any, and how to skip, pause and cancel, before checkout. Avoid surprise charges added late in checkout: Australia's drip pricing provision, part of the unfair trading practices reforms, will set specific rules on how transaction-based charges are displayed when it commences ([[https://www.allens.com.au/insights-news/insights/2026/07/australias-new-unfair-trading-practices-regime-what-businesses-need-to-know/|Allens]]).",
+          "Show the per-delivery price, frequency, any delivery charges, the total per period, the minimum commitment if any, and how to skip, pause and cancel, before checkout. Avoid surprise charges added late in checkout: Australia's drip pricing provision, part of the unfair trading practices reforms, will set specific rules on how transaction-based charges are displayed when it commences.",
           "If you offer a free trial or an introductory price, say clearly when it ends, what the customer will be charged and when, and remind them before the first full charge. See [[/blogs/subscription-ecommerce-pricing|subscription pricing]] and [[/blogs/subscription-product-page-design|subscription product page design]].",
         ],
       },
       {
         heading: "Australian rules to design for",
         body: [
-          "**Unfair trading practices reforms.** Law firm summaries report that the Competition and Consumer Amendment (Unfair Trading Practices) legislation passed both Houses in July 2026 and commences on 1 July 2027 ([[https://www.allens.com.au/insights-news/insights/2026/07/australias-new-unfair-trading-practices-regime-what-businesses-need-to-know/|Allens]]; [[https://hwlebsworth.com.au/parliament-passes-unfair-trading-practices-reforms-preparing-for-the-new-regime|HWL Ebsworth]]). It includes a general prohibition on unfair trading practices, subscription-specific rules and a drip pricing provision. Among the subscription rules, a subscription signed up to online must be able to be cancelled online, in a way that is easy to find and straightforward. Build that now; it is good practice regardless.",
+          "**Unfair trading practices reforms.** Law firm summaries report that the Competition and Consumer Amendment (Unfair Trading Practices) legislation passed both Houses in July 2026 and commences on 1 July 2027. It includes a general prohibition on unfair trading practices, subscription-specific rules and a drip pricing provision. Among the subscription rules, a subscription signed up to online must be able to be cancelled online, in a way that is easy to find and straightforward. Build that now; it is good practice regardless.",
           "**Existing consumer law.** Consumer guarantees apply to goods sold by subscription, and unfair terms in standard form consumer contracts can attract penalties since 9 November 2023. Automatic renewals, lock-in periods and cancellation fees deserve legal review.",
-          "**Surcharging.** The Reserve Bank's decision removed surcharges on eftpos, Mastercard and Visa debit, prepaid and credit cards from 1 October 2026 ([[https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/executive-summary.html|RBA]]).",
-          "**Spam Act.** Factual account messages, such as renewal notices and payment failures, are treated differently from marketing, but must identify the sender; promotional content changes that ([[https://www.acma.gov.au/avoid-sending-spam|ACMA]]).",
+          "**Surcharging.** The Reserve Bank's decision removed surcharges on eftpos, Mastercard and Visa debit, prepaid and credit cards from 1 October 2026.",
+          "**Spam Act.** Factual account messages, such as renewal notices and payment failures, are treated differently from marketing, but must identify the sender; promotional content changes that.",
         ],
         callout: {
           type: "note",
@@ -400,7 +400,7 @@ Dispute    -> hold funds; evidence from both sides`,
       {
         heading: "Inventory, fulfilment and delivery",
         body: [
-          "Subscriptions make demand more predictable, but only if you use the data. Forecast inventory from upcoming orders, batch fulfilment where it helps, and handle substitutions with customer consent. Delivery matters to Australian shoppers: the Australia Post eCommerce Report 2026 found 73% say a good delivery experience makes them more likely to shop online ([[https://auspost.com.au/business/ecommerce/ecommerce-report|Australia Post]]). Give regional customers realistic delivery windows and send tracking with every shipment.",
+          "Subscriptions make demand more predictable, but only if you use the data. Forecast inventory from upcoming orders, batch fulfilment where it helps, and handle substitutions with customer consent. Delivery matters to Australian shoppers: the Australia Post eCommerce Report 2026 found 73% say a good delivery experience makes them more likely to shop online. Give regional customers realistic delivery windows and send tracking with every shipment.",
         ],
       },
       {
@@ -463,9 +463,9 @@ Dispute    -> hold funds; evidence from both sides`,
       {
         heading: "Sources",
         body: [
-          "**Consumer law:** [[https://www.allens.com.au/insights-news/insights/2026/07/australias-new-unfair-trading-practices-regime-what-businesses-need-to-know/|Allens, Australia's new unfair trading practices regime]]; [[https://hwlebsworth.com.au/parliament-passes-unfair-trading-practices-reforms-preparing-for-the-new-regime|HWL Ebsworth, Parliament passes unfair trading practices reforms]]; [[https://www.accc.gov.au/consumers/buying-products-and-services/contracts|ACCC, contracts]].",
-          "**Payments:** [[https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/executive-summary.html|RBA, surcharging conclusions]]; [[https://www.nppa.com.au/the-platform/payto/|NPP Australia, PayTo]].",
-          "**Messages and delivery:** [[https://www.acma.gov.au/avoid-sending-spam|ACMA, avoid sending spam]]; [[https://auspost.com.au/business/ecommerce/ecommerce-report|Australia Post eCommerce Report 2026]].",
+          "**Consumer law:** Allens, Australia's new unfair trading practices regime; HWL Ebsworth, Parliament passes unfair trading practices reforms; ACCC, contracts.",
+          "**Payments:** RBA, surcharging conclusions; NPP Australia, PayTo.",
+          "**Messages and delivery:** ACMA, avoid sending spam; Australia Post eCommerce Report 2026.",
           "Legislative status is taken from law firm summaries and should be checked against the Federal Register of Legislation and ACCC guidance. The models, tables and example are ours. Nothing here is legal advice or ZSpace client data.",
         ],
       },

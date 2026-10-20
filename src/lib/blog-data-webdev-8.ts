@@ -679,9 +679,9 @@ export const webDevPosts8: BlogPost[] = [
           headers: ["Item", "Apple App Store", "Google Play", "Website or PWA"],
           rows: [
             ["Release process", "Every release goes through App Review", "Every release goes through Play review", "Deploy when ready"],
-            ["Developer account", "99 USD per membership year, or local currency where available; fee waivers for eligible nonprofits, accredited education and government ([[https://developer.apple.com/programs/whats-included/|Apple]])", "US$25 one-time registration fee ([[https://support.google.com/googleplay/android-developer/answer/6112435|Google]])", "None"],
-            ["Testing before launch", "Optional TestFlight beta", "Personal accounts created after 13 Nov 2023: closed test with at least 12 testers opted in for at least 14 days before production ([[https://support.google.com/googleplay/android-developer/answer/14151465|Google]])", "None required"],
-            ["Yearly technical deadlines", "New Xcode and SDK minimum each cycle; Xcode 26 required since 28 Apr 2026 ([[https://developer.apple.com/news/upcoming-requirements/|Apple]])", "Annual target API level; API 36 from 31 Aug 2026 ([[https://developer.android.com/google/play/requirements/target-sdk|Android]])", "Browser support changes, but no store deadline"],
+            ["Developer account", "99 USD per membership year, or local currency where available; fee waivers for eligible nonprofits, accredited education and government", "US$25 one-time registration fee", "None"],
+            ["Testing before launch", "Optional TestFlight beta", "Personal accounts created after 13 Nov 2023: closed test with at least 12 testers opted in for at least 14 days before production", "None required"],
+            ["Yearly technical deadlines", "New Xcode and SDK minimum each cycle; Xcode 26 required since 28 Apr 2026", "Annual target API level; API 36 from 31 Aug 2026", "Browser support changes, but no store deadline"],
             ["Commission on digital sales", "Applies to in-app digital goods and subscriptions", "Applies to in-app digital goods and subscriptions", "Payment processor fees only"],
           ],
         },
@@ -737,7 +737,7 @@ export const webDevPosts8: BlogPost[] = [
         heading: "Device access and notifications",
         body: [
           "If your product relies on background location, Bluetooth hardware, advanced camera processing, deep OS integration or dependable push on iPhone, native is usually required. PWAs cover cameras, geolocation and notifications to a degree, with more limits on iOS.",
-          "The iOS position has improved, so check current behaviour rather than older articles. Since iOS and iPadOS 16.4, web apps added to the Home Screen can use web push, with permission requested in response to a user action such as tapping a subscribe button ([[https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/|WebKit]]). WebKit added Declarative Web Push for Home Screen web apps in iOS and iPadOS 18.4 ([[https://webkit.org/blog/16574/webkit-features-in-safari-18-4/|WebKit]]). And from iOS 26, Safari opens every site a user adds to the Home Screen as a web app by default, with an option to turn that off ([[https://webkit.org/blog/16993/news-from-wwdc25-web-technology-coming-this-fall-in-safari-26-beta/|WebKit]]). The constraint that remains is reach: push on iPhone still requires the user to add the web app to the Home Screen first, which many users never do.",
+          "The iOS position has improved, so check current behaviour rather than older articles. Since iOS and iPadOS 16.4, web apps added to the Home Screen can use web push, with permission requested in response to a user action such as tapping a subscribe button. WebKit added Declarative Web Push for Home Screen web apps in iOS and iPadOS 18.4. And from iOS 26, Safari opens every site a user adds to the Home Screen as a web app by default, with an option to turn that off. The constraint that remains is reach: push on iPhone still requires the user to add the web app to the Home Screen first, which many users never do.",
         ],
       },
       {
@@ -796,8 +796,8 @@ export const webDevPosts8: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Platform behaviour: [[https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/|WebKit: Web Push for web apps on iOS and iPadOS]]; [[https://webkit.org/blog/16574/webkit-features-in-safari-18-4/|WebKit: features in Safari 18.4]]; [[https://webkit.org/blog/16993/news-from-wwdc25-web-technology-coming-this-fall-in-safari-26-beta/|WebKit: news from WWDC25]].",
-          "Store accounts and rules: [[https://developer.apple.com/programs/whats-included/|Apple Developer Program: what's included]]; [[https://support.google.com/googleplay/android-developer/answer/6112435|Google Play: register for a developer account]]; [[https://support.google.com/googleplay/android-developer/answer/14151465|Google Play: testing requirements for new personal developer accounts]]; [[https://developer.apple.com/news/upcoming-requirements/|Apple: upcoming requirements]]; [[https://developer.android.com/google/play/requirements/target-sdk|Android: target API level requirements]].",
+          "Platform behaviour: WebKit: Web Push for web apps on iOS and iPadOS; WebKit: features in Safari 18.4; WebKit: news from WWDC25.",
+          "Store accounts and rules: Apple Developer Program: what's included; Google Play: register for a developer account; Google Play: testing requirements for new personal developer accounts; Apple: upcoming requirements; Android: target API level requirements.",
           "Accessed 14 October 2026. Store fees, testing rules and browser support change; check the current pages before deciding.",
         ],
       },

@@ -92,8 +92,8 @@ export const auVisibilityPosts: BlogPost[] = [
       {
         heading: "How local search works, in brief",
         body: [
-          "Google says local results are based mainly on **relevance** (how well a listing matches the search), **distance** (how far the result is from the searcher or the location in the query) and **prominence** (how well known the business is, including signals such as reviews and links) ([[https://support.google.com/business/answer/7091|Google Business Profile Help]]). You cannot change the searcher's location. You can make your business clearly relevant and build genuine prominence over time.",
-          "Google dominates search in Australia, with about 88% share across platforms in September 2026, and Bing about 9% ([[https://gs.statcounter.com/search-engine-market-share/all/australia|StatCounter]]). That is why most local SEO advice centres on Google, though accurate details on Bing Places and Apple Business Connect also help.",
+          "Google says local results are based mainly on **relevance** (how well a listing matches the search), **distance** (how far the result is from the searcher or the location in the query) and **prominence** (how well known the business is, including signals such as reviews and links). You cannot change the searcher's location. You can make your business clearly relevant and build genuine prominence over time.",
+          "Google dominates search in Australia, with about 88% share across platforms in September 2026, and Bing about 9%. That is why most local SEO advice centres on Google, though accurate details on Bing Places and Apple Business Connect also help.",
         ],
       },
       {
@@ -112,7 +112,7 @@ export const auVisibilityPosts: BlogPost[] = [
         },
         callout: {
           type: "note",
-          text: "Google's spam policies describe doorway abuse, including \"having multiple domain names or pages targeted at specific regions or cities that funnel users to one page\", and scaled content abuse, where many pages are generated mainly to manipulate rankings ([[https://developers.google.com/search/docs/essentials/spam-policies|Google Search Central]]). Fifty suburb pages that differ only by the suburb name are a risk, not a strategy.",
+          text: "Google's spam policies describe doorway abuse, including \"having multiple domain names or pages targeted at specific regions or cities that funnel users to one page\", and scaled content abuse, where many pages are generated mainly to manipulate rankings. Fifty suburb pages that differ only by the suburb name are a risk, not a strategy.",
         },
       },
       {
@@ -125,7 +125,7 @@ export const auVisibilityPosts: BlogPost[] = [
       {
         heading: "Google Business Profile: what the guidelines require",
         body: [
-          "Google Business Profile is managed separately from your website, but they should support each other. Key points from Google's guidelines ([[https://support.google.com/business/answer/3038177|Google]]):",
+          "Google Business Profile is managed separately from your website, but they should support each other. Key points from Google's guidelines:",
         ],
         checklist: [
           "A business is eligible if it has a location customers can visit, or travels to customers where they are.",
@@ -153,7 +153,7 @@ export const auVisibilityPosts: BlogPost[] = [
       {
         heading: "Reviews and truthful reputation management",
         body: [
-          "Reviews influence both customers and local prominence, and they are regulated. The ACCC's guidance says businesses should be transparent about commercial relationships, should not post or publish misleading reviews, and that removing or editing negative reviews can be as misleading as fake ones ([[https://www.accc.gov.au/business/advertising-and-promotions/online-product-and-service-reviews|ACCC]]). False or misleading testimonials are prohibited under the Australian Consumer Law, and Google's policies prohibit fake engagement.",
+          "Reviews influence both customers and local prominence, and they are regulated. The ACCC's guidance says businesses should be transparent about commercial relationships, should not post or publish misleading reviews, and that removing or editing negative reviews can be as misleading as fake ones. False or misleading testimonials are prohibited under the Australian Consumer Law, and Google's policies prohibit fake engagement.",
         ],
         checklist: [
           "Ask every genuine customer for a review, at a consistent point such as job completion.",
@@ -166,7 +166,7 @@ export const auVisibilityPosts: BlogPost[] = [
       {
         heading: "Local structured data where eligible",
         body: [
-          "LocalBusiness structured data tells Google your business name, address, phone, hours and other details. Google lists name and address as required properties, and its guidelines warn that violations can lead to a manual action ([[https://developers.google.com/search/docs/appearance/structured-data/local-business|Google Search Central]]). Mark up only what is visible on the page and true. Service-area businesses that do not serve customers at an address should think carefully before publishing one.",
+          "LocalBusiness structured data tells Google your business name, address, phone, hours and other details. Google lists name and address as required properties, and its guidelines warn that violations can lead to a manual action. Mark up only what is visible on the page and true. Service-area businesses that do not serve customers at an address should think carefully before publishing one.",
           "Do not add review or rating markup for your own business that you collect yourself; Google restricts self-serving review snippets. Structured data supports understanding; it does not guarantee rich results or rankings. Our [[/blogs/seo-friendly-website-development|SEO-friendly website guide]] covers how structured data fits with the rest of technical SEO.",
         ],
       },
@@ -226,8 +226,8 @@ export const auVisibilityPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "**Google:** [[https://support.google.com/business/answer/3038177|Google Business Profile guidelines]]; [[https://support.google.com/business/answer/7091|Google, how to improve your local ranking]]; [[https://developers.google.com/search/docs/essentials/spam-policies|Google Search spam policies]]; [[https://developers.google.com/search/docs/appearance/structured-data/local-business|Google, LocalBusiness structured data]].",
-          "**Reviews and market:** [[https://www.accc.gov.au/business/advertising-and-promotions/online-product-and-service-reviews|ACCC, online product and service reviews]]; [[https://gs.statcounter.com/search-engine-market-share/all/australia|StatCounter, search engine market share Australia]].",
+          "**Google:** Google Business Profile guidelines; Google, how to improve your local ranking; Google Search spam policies; Google, LocalBusiness structured data.",
+          "**Reviews and market:** ACCC, online product and service reviews; StatCounter, search engine market share Australia.",
           "The page types, checklists and example are ours. ACCC points are summarised from official guidance and may change; check the current position before relying on them. Nothing here is legal advice or ZSpace client data.",
         ],
       },
@@ -332,7 +332,7 @@ export const auVisibilityPosts: BlogPost[] = [
       {
         heading: "The risks to design against: OWASP Top 10:2025",
         body: [
-          "The OWASP Top 10 is a widely used awareness list of the most critical web application security risks. The 2025 edition ([[https://top10.owasp.org/2025/0x00_2025-Introduction|OWASP]]) lists:",
+          "The OWASP Top 10 is a widely used awareness list of the most critical web application security risks. The 2025 edition lists:",
         ],
         table: {
           headers: ["#", "Risk", "What it means in practice"],
@@ -361,7 +361,7 @@ export const auVisibilityPosts: BlogPost[] = [
           "Make account recovery as strong as sign-in; recovery is a common takeover route.",
           "Use secure, HTTP-only cookies with appropriate SameSite settings, and expire sessions sensibly.",
           "Notify users of new devices and changes to email, password or payment details.",
-          "Follow current OAuth guidance when integrating sign-in or APIs, such as the OAuth 2.0 security best current practice ([[https://www.rfc-editor.org/rfc/rfc9700|RFC 9700]]).",
+          "Follow current OAuth guidance when integrating sign-in or APIs, such as the OAuth 2.0 security best current practice.",
           "Keep sign-in accessible: WCAG 2.2's accessible authentication criterion discourages relying on memory or transcription tests without alternatives. See [[/blogs/website-accessibility-australia|website accessibility in Australia]].",
         ],
       },
@@ -412,14 +412,14 @@ export const auVisibilityPosts: BlogPost[] = [
           "Encrypt data at rest, and manage keys separately from data.",
           "Use your payment provider's hosted fields so card data never reaches your servers.",
           "Set retention periods and delete or de-identify data when they expire.",
-          "Know where data, backups and logs are hosted and who can access them, including overseas support (see [[/blogs/cloud-migration-australia|cloud migration for Australian businesses]] on regions and APP 8). If you are covered by the Privacy Act, APP 8 and APP 11 apply ([[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-11-app-11-security-of-personal-information|OAIC]]).",
+          "Know where data, backups and logs are hosted and who can access them, including overseas support (see [[/blogs/cloud-migration-australia|cloud migration for Australian businesses]] on regions and APP 8). If you are covered by the Privacy Act, APP 8 and APP 11 apply.",
         ],
       },
       {
         heading: "Logging, monitoring and incident response",
         body: [
           "You cannot respond to what you cannot see. Log security-relevant events (sign-ins, failures, permission changes, admin actions, data exports) without logging passwords, tokens or unnecessary personal data. Send logs somewhere attackers cannot easily alter, set alerts for suspicious patterns and review them.",
-          "Write an incident response plan before launch (the [[/blogs/website-security-australia|website security checklist]] includes an incident sequence): who decides, how to contain, how to preserve evidence and how to communicate. If your business is covered by the Privacy Act, the Notifiable Data Breaches scheme requires assessing suspected eligible breaches and notifying the OAIC and affected individuals where serious harm is likely; the OAIC received 1,205 notifications in 2025 ([[https://www.oaic.gov.au/news/media-centre/data-breach-notifications-increase-to-all-time-high-in-2025,-new-ndb-stats-show|OAIC]]). Businesses with annual turnover over A$3 million must also report ransomware or cyber extortion payments to ASD within 72 hours ([[https://www.homeaffairs.gov.au/cyber-security-subsite/files/factsheet-ransomware-payment-reporting.pdf|Home Affairs]]).",
+          "Write an incident response plan before launch (the [[/blogs/website-security-australia|website security checklist]] includes an incident sequence): who decides, how to contain, how to preserve evidence and how to communicate. If your business is covered by the Privacy Act, the Notifiable Data Breaches scheme requires assessing suspected eligible breaches and notifying the OAIC and affected individuals where serious harm is likely; the OAIC received 1,205 notifications in 2025. Businesses with annual turnover over A$3 million must also report ransomware or cyber extortion payments to ASD within 72 hours.",
         ],
       },
       {
@@ -441,8 +441,8 @@ export const auVisibilityPosts: BlogPost[] = [
       {
         heading: "Agree a security standard with your developers",
         body: [
-          "The OWASP Application Security Verification Standard (ASVS) turns these practices into testable requirements. Version 5.0 was released in 2025 and keeps three levels of increasing assurance ([[https://owasp.org/www-project-application-security-verification-standard/|OWASP ASVS]]). Many business applications aim for level 2, with level 3 for the highest-risk systems, though the right level depends on your data and threats. Agreeing a level in the contract gives both sides a shared, checkable definition of 'secure enough'.",
-          "ASD's Secure by Design guidance encourages technology manufacturers to build security in from the start and to make secure behaviour the default ([[https://www.cyber.gov.au/business-government/secure-design/secure-by-design|ASD]]). The Essential Eight remains a sound baseline for the systems around your application ([[https://www.cyber.gov.au/business-government/asds-cyber-security-frameworks/essential-eight|ASD]]).",
+          "The OWASP Application Security Verification Standard (ASVS) turns these practices into testable requirements. Version 5.0 was released in 2025 and keeps three levels of increasing assurance. Many business applications aim for level 2, with level 3 for the highest-risk systems, though the right level depends on your data and threats. Agreeing a level in the contract gives both sides a shared, checkable definition of 'secure enough'.",
+          "ASD's Secure by Design guidance encourages technology manufacturers to build security in from the start and to make secure behaviour the default. The Essential Eight remains a sound baseline for the systems around your application.",
         ],
       },
       {
@@ -485,8 +485,8 @@ export const auVisibilityPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "**Application security:** [[https://top10.owasp.org/2025/0x00_2025-Introduction|OWASP Top 10:2025]]; [[https://owasp.org/www-project-application-security-verification-standard/|OWASP ASVS]]; [[https://www.rfc-editor.org/rfc/rfc9700|RFC 9700, OAuth 2.0 security best current practice]]; [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C, what's new in WCAG 2.2]].",
-          "**Australian guidance and obligations:** [[https://www.cyber.gov.au/business-government/secure-design/secure-by-design|ASD, Secure by Design]]; [[https://www.cyber.gov.au/business-government/asds-cyber-security-frameworks/essential-eight|ASD, Essential Eight]]; [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-11-app-11-security-of-personal-information|OAIC, APP 11]]; [[https://www.oaic.gov.au/news/media-centre/data-breach-notifications-increase-to-all-time-high-in-2025,-new-ndb-stats-show|OAIC, NDB statistics 2025]]; [[https://www.homeaffairs.gov.au/cyber-security-subsite/files/factsheet-ransomware-payment-reporting.pdf|Home Affairs, ransomware payment reporting factsheet]].",
+          "**Application security:** OWASP Top 10:2025; OWASP ASVS; RFC 9700, OAuth 2.0 security best current practice; W3C, what's new in WCAG 2.2.",
+          "**Australian guidance and obligations:** ASD, Secure by Design; ASD, Essential Eight; OAIC, APP 11; OAIC, NDB statistics 2025; Home Affairs, ransomware payment reporting factsheet.",
           "ASVS 5.0 and ASD Secure by Design details are summarised from official guidance and may change; check the current position before relying on them. The checklists and example are ours. This is not a security certification, a substitute for a professional assessment, or legal advice.",
         ],
       },

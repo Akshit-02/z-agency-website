@@ -96,13 +96,13 @@ export const auFintechSecurityPosts: BlogPost[] = [
           "**Many-to-one:** one payout covering many transactions; one bank deposit covering several payouts.",
           "**Partial:** part payments and split tenders.",
           "**Timing:** settlement lags, weekends and public holidays.",
-          "Use provider payout reconciliation reports where available; for example Stripe documents how to reconcile payouts to transactions ([[https://docs.stripe.com/payouts/reconciliation|Stripe]]).",
+          "Use provider payout reconciliation reports where available; for example Stripe documents how to reconcile payouts to transactions.",
         ],
       },
       {
         heading: "Fees, refunds, chargebacks and GST",
         body: [
-          "Record sales gross and provider fees as expenses, using a clearing account for money held by the provider. Refunds reverse sales and may arrive in different payouts from the original sale. Chargebacks need their own status and evidence workflow. Apply the correct GST treatment to sales, refunds and fees, and confirm it with your accountant. In accounting software, bank reconciliation then matches the payout deposit against the clearing account ([[https://central.xero.com/s/article/Reconcile-your-bank-account|Xero]]).",
+          "Record sales gross and provider fees as expenses, using a clearing account for money held by the provider. Refunds reverse sales and may arrive in different payouts from the original sale. Chargebacks need their own status and evidence workflow. Apply the correct GST treatment to sales, refunds and fees, and confirm it with your accountant. In accounting software, bank reconciliation then matches the payout deposit against the clearing account.",
         ],
       },
       {
@@ -243,7 +243,7 @@ export const auFintechSecurityPosts: BlogPost[] = [
         heading: "Building the experience",
         body: [],
         checklist: [
-          "Consent flows that follow the Consumer Data Standards and their consumer experience guidelines ([[https://consumerdatastandardsaustralia.github.io/standards/|Consumer Data Standards]]).",
+          "Consent flows that follow the Consumer Data Standards and their consumer experience guidelines.",
           "Ask only for data you need, for a stated purpose and duration.",
           "Authentication with the data holder through the standard redirect flow; never collect bank passwords.",
           "A consumer dashboard to view and withdraw consents.",
@@ -363,7 +363,7 @@ export const auFintechSecurityPosts: BlogPost[] = [
             ["**Tenant SSO configuration**", "IdP metadata, certificates, protocol, attribute mapping, enforcement settings"],
             ["**Discovery**", "Route users to their IdP by verified domain or tenant URL"],
             ["**Protocol handling**", "SAML assertions or OIDC tokens validated by a proven library"],
-            ["**Provisioning**", "SCIM endpoints ([[https://www.rfc-editor.org/rfc/rfc7644|RFC 7644]]) or just-in-time creation"],
+            ["**Provisioning**", "SCIM endpoints or just-in-time creation"],
             ["**Role mapping**", "IdP groups or claims mapped to product roles"],
             ["**Sessions**", "Session lifetime, re-authentication for sensitive actions, logout"],
             ["**Admin tools**", "Self-service setup, test connection, audit logs, break-glass account"],
@@ -374,7 +374,7 @@ export const auFintechSecurityPosts: BlogPost[] = [
         heading: "Validation and security",
         body: [],
         checklist: [
-          "Validate SAML signatures, audience, recipient, timestamps and replay ([[https://docs.oasis-open.org/security/saml/v2.0/saml-core-2.0-os.pdf|SAML 2.0 Core]]).",
+          "Validate SAML signatures, audience, recipient, timestamps and replay.",
           "Validate OIDC ID tokens: signature, issuer, audience, expiry and nonce.",
           "Match users on a stable identifier from the IdP, not just email.",
           "Do not let a tenant claim a domain without proving ownership.",
@@ -469,7 +469,7 @@ export const auFintechSecurityPosts: BlogPost[] = [
         heading: "How do you add passkeys to an app?",
         body: [
           "**Add passkeys as a sign-in option using a maintained WebAuthn library on the server and the platform credential APIs in your apps; prompt users to create a passkey after they sign in, support autofill sign-in, let users manage several passkeys, design account recovery carefully, keep existing methods during transition, and measure adoption and sign-in success.** Passkeys reduce phishing and password reuse, but recovery and support need as much design as sign-in.",
-          "This guide is for product managers, designers and engineers. The standard is [[https://www.w3.org/TR/webauthn-3/|Web Authentication Level 3]], now a W3C Recommendation; [[https://passkeys.dev/|passkeys.dev]] collects implementation guidance.",
+          "This guide is for product managers, designers and engineers. The standard is Web Authentication Level 3, now a W3C Recommendation; passkeys.dev collects implementation guidance.",
         ],
       },
       {
@@ -618,7 +618,7 @@ export const auFintechSecurityPosts: BlogPost[] = [
       {
         heading: "The four questions",
         body: [
-          "The [[https://www.threatmodelingmanifesto.org/|Threat Modeling Manifesto]] organises the work around four questions: what are we working on, what can go wrong, what are we going to do about it, and did we do a good job? OWASP's [[https://owasp.org/www-community/Threat_Modeling|threat modelling guidance]] describes methods and tools. Keep the method simple enough that teams use it routinely.",
+          "The Threat Modeling Manifesto organises the work around four questions: what are we working on, what can go wrong, what are we going to do about it, and did we do a good job? OWASP's threat modelling guidance describes methods and tools. Keep the method simple enough that teams use it routinely.",
         ],
       },
       {
@@ -767,13 +767,13 @@ export const auFintechSecurityPosts: BlogPost[] = [
       {
         heading: "SBOMs",
         body: [
-          "Generate an SBOM automatically during each build in a standard format such as [[https://cyclonedx.org/|CycloneDX]] or [[https://spdx.dev/|SPDX]], store it with the release, and use it to answer 'are we affected?' when vulnerabilities are announced. ASD's ACSC co-authored international guidance on SBOMs, updated with 2026 minimum elements ([[https://www.ncsc.govt.nz/protect-your-organisation/2026-minimum-elements-for-a-software-bill-of-materials-sbom-published/|joint guidance via NZ NCSC]]).",
+          "Generate an SBOM automatically during each build in a standard format such as CycloneDX or SPDX, store it with the release, and use it to answer 'are we affected?' when vulnerabilities are announced. ASD's ACSC co-authored international guidance on SBOMs, updated with 2026 minimum elements.",
         ],
       },
       {
         heading: "Provenance and signing",
         body: [
-          "Provenance describes how an artefact was built: source commit, build platform, inputs and steps. [[https://slsa.dev/spec/|SLSA]] (version 1.2) defines levels of build integrity, from documented provenance to hardened build platforms. Sign release artefacts and container images, publish provenance, and verify signatures before deployment. Pair this with [[/blogs/secrets-management|secrets management]] for CI credentials.",
+          "Provenance describes how an artefact was built: source commit, build platform, inputs and steps. SLSA (version 1.2) defines levels of build integrity, from documented provenance to hardened build platforms. Sign release artefacts and container images, publish provenance, and verify signatures before deployment. Pair this with [[/blogs/secrets-management|secrets management]] for CI credentials.",
         ],
       },
       {

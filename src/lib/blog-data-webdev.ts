@@ -104,10 +104,10 @@ export const webDevPosts: BlogPost[] = [
           "These four disciplines are often treated as afterthoughts, added after a site is \"functionally done\" — which is consistently more expensive and less effective than building them in from the start.",
         ],
         checklist: [
-          "Security: HTTPS, proper authentication, input validation, current dependencies; the [[https://owasp.org/www-project-top-ten/|OWASP Top 10]] is the usual reference list of web application risks — see the [[/blogs/website-security-checklist|security checklist]]",
+          "Security: HTTPS, proper authentication, input validation, current dependencies; the OWASP Top 10 is the usual reference list of web application risks — see the [[/blogs/website-security-checklist|security checklist]]",
           "SEO: crawlable structure, clean metadata, fast load times, indexable content — foundational to organic visibility",
-          "Performance: Google's Core Web Vitals treat LCP of 2.5 seconds or less, INP of 200 milliseconds or less and CLS of 0.1 or less as good, measured at the 75th percentile of real page loads ([[https://web.dev/articles/vitals|web.dev]]); image and font strategy and minimal JavaScript get you there — see the [[/blogs/website-performance-optimization|performance optimization guide]]",
-          "Accessibility: semantic HTML, keyboard navigation, sufficient contrast, with [[https://www.w3.org/TR/WCAG22/|WCAG 2.2]] Level AA as the common benchmark — see the [[/blogs/website-accessibility-guide|accessibility guide]]",
+          "Performance: Google's Core Web Vitals treat LCP of 2.5 seconds or less, INP of 200 milliseconds or less and CLS of 0.1 or less as good, measured at the 75th percentile of real page loads; image and font strategy and minimal JavaScript get you there — see the [[/blogs/website-performance-optimization|performance optimization guide]]",
+          "Accessibility: semantic HTML, keyboard navigation, sufficient contrast, with WCAG 2.2 Level AA as the common benchmark — see the [[/blogs/website-accessibility-guide|accessibility guide]]",
           "Privacy and consent: forms, analytics and cookies must follow the rules where your visitors are, such as India's DPDP Act, UK GDPR and the ICO's cookie guidance, the UAE PDPL, Australia's Privacy Act or Singapore's PDPA — summarised with sources on our [[/services/website-development|website development service page]]",
         ],
         cta: {
@@ -702,16 +702,16 @@ export const webDevPosts: BlogPost[] = [
       {
         heading: "What can you take with you if you leave?",
         body: [
-          "Exit terms are the part of this decision most comparisons skip. The table summarises each vendor's own help documentation as checked on 14 October 2026. Vendors change these terms, so re-check the linked page before you commit. On Wix the answer is short: its help centre says a site \"needs to be hosted and operated on Wix's servers\" because the \"SaaS architecture does not support external hosting\" ([[https://support.wix.com/en/article/exporting-or-embedding-your-wix-site-elsewhere|Wix Help Center]]).",
+          "Exit terms are the part of this decision most comparisons skip. The table summarises each vendor's own help documentation as checked on 14 October 2026. Vendors change these terms, so re-check the linked page before you commit. On Wix the answer is short: its help centre says a site \"needs to be hosted and operated on Wix's servers\" because the \"SaaS architecture does not support external hosting\".",
         ],
         table: {
           headers: ["Platform", "What you can take out", "What does not come with you", "Where the site must be hosted"],
           rows: [
             ["**Wix**", "No site export is described. You can connect a domain bought elsewhere.", "The site itself; leaving means a rebuild", "On Wix's servers only"],
-            ["**Squarespace**", "A WordPress-format .xml file with layout pages, one blog page with its posts, and text and image blocks", "Store, portfolio and several other page types; more than one blog; audio, product and video blocks; custom CSS; style settings; drafts ([[https://support.squarespace.com/hc/en-us/articles/206566687-Exporting-your-site|Squarespace Help Center]])", "On Squarespace; the export is content only"],
-            ["**Webflow**", "HTML, CSS, JavaScript and assets, on paid Workspace plans only (not Site plans). CMS, ecommerce collections and user accounts can be exported separately as CSV.", "CMS, User Accounts and Ecommerce content and functionality; form submission processing; site search; password protection; localised content ([[https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code|Webflow Help Center]])", "Anywhere for the exported static code; dynamic features need Webflow hosting or a replacement"],
+            ["**Squarespace**", "A WordPress-format .xml file with layout pages, one blog page with its posts, and text and image blocks", "Store, portfolio and several other page types; more than one blog; audio, product and video blocks; custom CSS; style settings; drafts", "On Squarespace; the export is content only"],
+            ["**Webflow**", "HTML, CSS, JavaScript and assets, on paid Workspace plans only (not Site plans). CMS, ecommerce collections and user accounts can be exported separately as CSV.", "CMS, User Accounts and Ecommerce content and functionality; form submission processing; site search; password protection; localised content", "Anywhere for the exported static code; dynamic features need Webflow hosting or a replacement"],
             ["**Framer**", "Unclear: Framer's help centre gives conflicting answers on exporting a site for self-hosting", "Confirm with Framer before relying on either answer", "Confirm with Framer"],
-            ["**Custom (e.g. Next.js)**", "The full codebase, plus content in whichever CMS or database you chose", "Anything locked into a specific host's proprietary services, if you use them", "Any host that supports your deployment option ([[https://nextjs.org/docs/app/getting-started/deploying|Next.js docs]])"],
+            ["**Custom (e.g. Next.js)**", "The full codebase, plus content in whichever CMS or database you chose", "Anything locked into a specific host's proprietary services, if you use them", "Any host that supports your deployment option"],
           ],
         },
         callout: {
@@ -723,14 +723,14 @@ export const webDevPosts: BlogPost[] = [
         heading: "Where Next.js fits, and what hosting costs you",
         body: [
           "Next.js is the \"custom\" option in this comparison, not a builder. A developer writes the site; editors usually work in a headless CMS connected to it. You own the code and can move it between hosts, which is the main difference from a builder's exit terms.",
-          "That portability has conditions. The Next.js documentation lists four ways to deploy: a Node.js server or Docker container (both support all features), a static export (limited, because features that need a server do not work), or a platform adapter, where support varies ([[https://nextjs.org/docs/app/getting-started/deploying|Next.js: Deploying]]). If your site uses server features, your host must support them.",
-          "**Hosting is an ongoing cost, not a free extra.** Vercel, the company behind Next.js, offers a free Hobby plan, but its pricing page states that \"Our Hobby plan is for personal, non-commercial use\" ([[https://vercel.com/pricing|Vercel pricing]], vendor page). A business website needs a paid plan there, or another host. Add a CMS subscription if you use a hosted one, plus monitoring, backups and someone responsible for dependency and security updates. On a builder these are mostly bundled into the plan price.",
+          "That portability has conditions. The Next.js documentation lists four ways to deploy: a Node.js server or Docker container (both support all features), a static export (limited, because features that need a server do not work), or a platform adapter, where support varies. If your site uses server features, your host must support them.",
+          "**Hosting is an ongoing cost, not a free extra.** Vercel, the company behind Next.js, offers a free Hobby plan, but its pricing page states that \"Our Hobby plan is for personal, non-commercial use\" (Vercel pricing, vendor page). A business website needs a paid plan there, or another host. Add a CMS subscription if you use a hosted one, plus monitoring, backups and someone responsible for dependency and security updates. On a builder these are mostly bundled into the plan price.",
         ],
       },
       {
         heading: "What Google says about JavaScript, rendering and search",
         body: [
-          "A common claim is that Next.js \"ranks better\" than a builder. Google's own guidance does not say that. Its JavaScript SEO basics page explains that Google processes JavaScript web apps in three phases (crawling, rendering and indexing), and that \"server-side or pre-rendering is still a great idea because it makes your website faster for users and crawlers, and not all bots can run JavaScript\" ([[https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics|Google Search Central]]).",
+          "A common claim is that Next.js \"ranks better\" than a builder. Google's own guidance does not say that. Its JavaScript SEO basics page explains that Google processes JavaScript web apps in three phases (crawling, rendering and indexing), and that \"server-side or pre-rendering is still a great idea because it makes your website faster for users and crawlers, and not all bots can run JavaScript\".",
           "In plain English: pages that arrive as complete HTML are easier for every crawler and quicker for people. Next.js can pre-render pages, which helps. Mainstream builders also serve HTML. So rendering is a reason to avoid a purely client-side app for public pages, not a reason to pick Next.js over Webflow. The real search differences are control over technical details (redirects, structured data, page speed work) and whether anyone uses that control.",
         ],
       },
@@ -810,9 +810,9 @@ export const webDevPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Exit terms: [[https://support.wix.com/en/article/exporting-or-embedding-your-wix-site-elsewhere|Wix: exporting or embedding your Wix site elsewhere]]; [[https://support.squarespace.com/hc/en-us/articles/206566687-Exporting-your-site|Squarespace: exporting your site]]; [[https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code|Webflow: how do I export my Webflow site code?]]; [[https://www.framer.com/help/articles/can-i-export-my-website-to-html-and-self-host-it/|Framer: can I export my website to HTML and self-host it?]] and [[https://www.framer.com/help/articles/porting-your-data-from-framer/|Framer: porting your data from Framer]] (these two Framer articles conflict).",
-          "Next.js and hosting: [[https://nextjs.org/docs/app/getting-started/deploying|Next.js documentation: Deploying]]; [[https://vercel.com/pricing|Vercel pricing]] (vendor page).",
-          "Search: [[https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics|Google Search Central: understand JavaScript SEO basics]].",
+          "Exit terms: Wix: exporting or embedding your Wix site elsewhere; Squarespace: exporting your site; Webflow: how do I export my Webflow site code?; Framer: can I export my website to HTML and self-host it? and Framer: porting your data from Framer (these two Framer articles conflict).",
+          "Next.js and hosting: Next.js documentation: Deploying; Vercel pricing (vendor page).",
+          "Search: Google Search Central: understand JavaScript SEO basics.",
           "Accessed 14 October 2026. Vendor plans, limits and export features change; check the current pages before deciding.",
         ],
       },

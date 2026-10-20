@@ -21,7 +21,7 @@ export const growthPosts2: BlogPost[] = [
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer"],
     faqs: [
       { q: "Why do customers add to cart but not buy?", a: "Common reasons include extra costs appearing late, slow or unclear delivery, waiting for a discount, lack of trust, friction in the cart or checkout, required account creation, payment failures, mobile problems, technical errors and simply browsing or saving items for later." },
-      { q: "Is some cart abandonment normal?", a: "Yes. Many shoppers use the cart to save items, compare prices or check the total. Baymard's compilation of studies puts the documented average cart abandonment rate at around 70%, so the goal is to reduce avoidable abandonment, not eliminate it ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]])." },
+      { q: "Is some cart abandonment normal?", a: "Yes. Many shoppers use the cart to save items, compare prices or check the total. Baymard's compilation of studies puts the documented average cart abandonment rate at around 70%, so the goal is to reduce avoidable abandonment, not eliminate it." },
       { q: "What's the difference between cart and checkout abandonment?", a: "Cart abandonment is leaving after adding items but before starting checkout. Checkout abandonment is leaving after starting checkout but before paying. Measure them separately because the causes differ." },
       { q: "How do I find where shoppers drop off after adding to cart?", a: "Track each step: add to cart, view cart, begin checkout, add shipping information, add payment information and purchase. GA4's recommended ecommerce events cover these steps; Shopify's conversion breakdown shows cart additions, reached checkout and completed checkout." },
       { q: "Do free shipping thresholds help?", a: "They can, if the threshold is realistic and clearly communicated. The bigger issue is usually surprise: shoppers who only see delivery costs at checkout." },
@@ -41,7 +41,7 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "Some Abandonment Is Normal",
         body: [
-          "Shoppers use carts to save items, compare prices and check totals. Baymard Institute's compilation of 50 studies documents an average online cart abandonment rate of around 70%, and many of those shoppers weren't ready to buy ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). The aim is to find and reduce avoidable abandonment: shoppers who wanted to buy and were stopped by something you can change.",
+          "Shoppers use carts to save items, compare prices and check totals. Baymard Institute's compilation of 50 studies documents an average online cart abandonment rate of around 70%, and many of those shoppers weren't ready to buy. The aim is to find and reduce avoidable abandonment: shoppers who wanted to buy and were stopped by something you can change.",
         ],
       },
       {
@@ -70,13 +70,13 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "Shipping Costs",
         body: [
-          "In Baymard's survey of US shoppers who abandoned during checkout (excluding those just browsing), 40% said extra costs such as shipping, tax and fees were too high, and 12% said they couldn't see or calculate the total up front ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). If the biggest drop is at checkout start or after shipping details, check whether delivery costs appear before checkout: on product pages, in the cart, or through a quick postcode estimate.",
+          "In Baymard's survey of US shoppers who abandoned during checkout (excluding those just browsing), 40% said extra costs such as shipping, tax and fees were too high, and 12% said they couldn't see or calculate the total up front. If the biggest drop is at checkout start or after shipping details, check whether delivery costs appear before checkout: on product pages, in the cart, or through a quick postcode estimate.",
         ],
       },
       {
         heading: "Delivery Uncertainty",
         body: [
-          "Slow delivery was the second most common reason in Baymard's survey (20%) ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). Shoppers buying gifts or time-sensitive products need a delivery date, not just a service name. Show estimated dates in the cart and at the delivery step, and offer faster options with clear prices.",
+          "Slow delivery was the second most common reason in Baymard's survey (20%). Shoppers buying gifts or time-sensitive products need a delivery date, not just a service name. Show estimated dates in the cart and at the delivery step, and offer faster options with clear prices.",
         ],
       },
       {
@@ -104,7 +104,7 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "Checkout UX and Account Creation",
         body: [
-          "Being required to create an account (18%) and a long or complicated checkout (17%) were both common reasons in Baymard's survey ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). Offer guest checkout, ask for account creation after purchase, remove unnecessary fields and support autofill. See [[/blogs/why-customers-abandon-checkout|why customers abandon checkout]].",
+          "Being required to create an account (18%) and a long or complicated checkout (17%) were both common reasons in Baymard's survey. Offer guest checkout, ask for account creation after purchase, remove unnecessary fields and support autofill. See [[/blogs/why-customers-abandon-checkout|why customers abandon checkout]].",
         ],
       },
       {
@@ -201,7 +201,7 @@ export const growthPosts2: BlogPost[] = [
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer", "retail"],
     relatedSlugs: ["ecommerce-checkout-ux", "shopify-checkout-audit", "add-to-cart-but-no-purchase"],
     faqs: [
-      { q: "What are the top reasons shoppers leave a checkout?", a: "Baymard asked US shoppers who had abandoned during checkout why they left, setting aside people who were only browsing. Extra costs came first at 40%, followed by slow delivery (20%), distrust of the site with card details (19%), a required account (18%), and a checkout that felt too long or complicated or that threw errors (17% each) ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]])." },
+      { q: "What are the top reasons shoppers leave a checkout?", a: "Baymard asked US shoppers who had abandoned during checkout why they left, setting aside people who were only browsing. Extra costs came first at 40%, followed by slow delivery (20%), distrust of the site with card details (19%), a required account (18%), and a checkout that felt too long or complicated or that threw errors (17% each)." },
       { q: "Is a 70% abandonment rate normal?", a: "Baymard's average across 50 studies is 70.22% (page last updated 22 September 2025). It counts everyone who adds to cart and doesn't buy, including people saving items or comparing prices, so it is not a target. Track your own rate by checkout step and compare it with your own past performance." },
       { q: "What is a checkout UX audit?", a: "A structured review of every checkout step, from cart to confirmation, that looks for friction and then confirms or rules out each suspected problem with evidence: funnel data, field and payment errors, session recordings, test orders and customer feedback." },
       { q: "How is a checkout audit different from checkout UX design?", a: "The audit finds and proves the problems; design work fixes them. Run the audit first, then use a design guide such as [[/blogs/ecommerce-checkout-ux|our checkout UX design guide]] to decide how to change each step." },
@@ -233,7 +233,7 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "What the research says",
         body: [
-          "Baymard Institute keeps a running average of published cart abandonment studies. Across 50 studies it stands at 70.22%, on a page last updated on 22 September 2025; no newer figure had been published when this guide was revised ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). That number includes a large group who were never going to buy that day: in the same research, 42% of US shoppers who abandoned said they were just browsing or not ready to buy.",
+          "Baymard Institute keeps a running average of published cart abandonment studies. Across 50 studies it stands at 70.22%, on a page last updated on 22 September 2025; no newer figure had been published when this guide was revised. That number includes a large group who were never going to buy that day: in the same research, 42% of US shoppers who abandoned said they were just browsing or not ready to buy.",
           "Once those browsers are set aside, Baymard's US respondents gave these reasons for leaving during checkout (they could choose more than one):",
         ],
         table: {
@@ -264,8 +264,8 @@ export const growthPosts2: BlogPost[] = [
         heading: "The causes, grouped by what the shopper experiences",
         body: [
           "**Cost surprises.** The shopper had a price in mind, and checkout raised it. Delivery charges, taxes, duties or fees that only appear late are the classic trigger. The total should be predictable from the product page and the cart, not revealed at the payment step.",
-          "**Effort.** Every account prompt, extra field and confusing step gives the shopper a reason to stop. Baymard's benchmark of large sites counted 11.3 checkout form fields on average, against the 8 most sites actually require, and it found that the number of fields matters more than the number of steps ([[https://baymard.com/blog/checkout-flow-average-form-fields|Baymard Institute]]). Typing is harder on a phone, so effort problems tend to be worse on mobile.",
-          "**Doubt.** Shoppers hesitate when checkout looks unlike the rest of the store, when the payment options are unfamiliar, when delivery dates are vague, or when returns terms are hard to find. Unexplained requests add to it: Baymard found 39% of benchmarked sites asked for a phone number without saying why, and 14% of shoppers it surveyed said they would never give one ([[https://baymard.com/blog/explain-phone-number-field|Baymard Institute]]).",
+          "**Effort.** Every account prompt, extra field and confusing step gives the shopper a reason to stop. Baymard's benchmark of large sites counted 11.3 checkout form fields on average, against the 8 most sites actually require, and it found that the number of fields matters more than the number of steps. Typing is harder on a phone, so effort problems tend to be worse on mobile.",
+          "**Doubt.** Shoppers hesitate when checkout looks unlike the rest of the store, when the payment options are unfamiliar, when delivery dates are vague, or when returns terms are hard to find. Unexplained requests add to it: Baymard found 39% of benchmarked sites asked for a phone number without saying why, and 14% of shoppers it surveyed said they would never give one.",
           "**Failure.** Some shoppers want to buy and simply can't: a validation rule rejects a real address, a discount code breaks the page, a card is declined with no explanation, or a wallet button does nothing inside an in-app browser. These are often the cheapest problems to fix and the easiest to miss, because nobody on the team checks out the way customers do.",
         ],
       },
@@ -280,7 +280,7 @@ export const growthPosts2: BlogPost[] = [
           "**Find the biggest drop that you can influence.** Compare steps and segments with your own history, not with industry averages.",
           "**Walk the flow yourself.** Go through checkout as a first-time customer on a phone and on a desktop, and note every moment of hesitation, surprise or extra effort.",
           "**Place test orders.** Cover each payment method, a guest and a signed-in customer, a discount code, an international address if you ship abroad, and at least one in-app browser such as Instagram's.",
-          "**Watch recordings of real sessions.** Filter for sessions that reached checkout and didn't finish. Look for rage clicks, dead clicks and quick backs, as defined in tools such as [[https://learn.microsoft.com/en-us/clarity/insights/semantic-metrics|Microsoft Clarity]].",
+          "**Watch recordings of real sessions.** Filter for sessions that reached checkout and didn't finish. Look for rage clicks, dead clicks and quick backs, as defined in tools such as Microsoft Clarity.",
           "**Collect the customer's voice.** Read recent support tickets and chat logs about checkout, delivery and payment, and if volume allows, run a one-question exit survey on checkout pages.",
           "**Score and sort the findings.** Use the checklist below to record evidence for each finding, then sort them into fix now, test first or research more.",
         ],
@@ -373,8 +373,8 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute: cart abandonment rate statistics (last updated 22 September 2025)]]; [[https://baymard.com/blog/checkout-flow-average-form-fields|Baymard Institute: checkout flow average form fields]]; [[https://baymard.com/blog/explain-phone-number-field|Baymard Institute: explain the phone number field]]; [[https://baymard.com/blog/audit-checkout-flow-hidden-friction|Baymard Institute: how to audit your checkout flow for hidden friction (13 May 2026)]]. Baymard is a commercial UX research firm; its figures are industry research, mostly from US shoppers.",
-          "[[https://web.dev/articles/vitals|web.dev: Web Vitals]]; [[https://learn.microsoft.com/en-us/clarity/insights/semantic-metrics|Microsoft Clarity: semantic metrics]] (vendor documentation).",
+          "Baymard Institute: cart abandonment rate statistics (last updated 22 September 2025); Baymard Institute: checkout flow average form fields; Baymard Institute: explain the phone number field; Baymard Institute: how to audit your checkout flow for hidden friction (13 May 2026). Baymard is a commercial UX research firm; its figures are industry research, mostly from US shoppers.",
+          "web.dev: Web Vitals; Microsoft Clarity: semantic metrics (vendor documentation).",
           "Accessed 15 October 2026.",
         ],
       },
@@ -662,9 +662,9 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "Setting Up Measurement",
         body: [
-          "GA4's [[https://developers.google.com/analytics/devguides/collection/ga4/reference/events|recommended ecommerce events]] cover the journey from view_item_list to purchase and refund. Many platforms and integrations send them automatically, but check that each fires once, with the right items and values. Shopify's own [[https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports|conversion rate breakdown]] shows a four-step version: sessions, sessions with cart additions, sessions that reached checkout and sessions that completed checkout. It has no product-view step, so product page drop-off has to come from GA4 or another product-level analytics report.",
-          "In GA4, [[https://support.google.com/analytics/answer/9327974|funnel explorations]] let you build the funnel from these events, with up to 10 steps. A closed funnel counts only users who start at the first step; an open funnel lets users enter at any step, which suits stores where many shoppers land directly on product pages.",
-          "For checkout specifically, Google documents a [[https://support.google.com/analytics/answer/12216232|\"Checkout funnel performance\" exploration]], built on the funnel exploration template, with steps for begin_checkout, add_payment_info, add_shipping_info and purchase. Google recommends an open funnel when shoppers often add to cart in one session and buy in another. These checkout sub-steps are a level of detail Shopify's four-step report does not show.",
+          "GA4's recommended ecommerce events cover the journey from view_item_list to purchase and refund. Many platforms and integrations send them automatically, but check that each fires once, with the right items and values. Shopify's own conversion rate breakdown shows a four-step version: sessions, sessions with cart additions, sessions that reached checkout and sessions that completed checkout. It has no product-view step, so product page drop-off has to come from GA4 or another product-level analytics report.",
+          "In GA4, funnel explorations let you build the funnel from these events, with up to 10 steps. A closed funnel counts only users who start at the first step; an open funnel lets users enter at any step, which suits stores where many shoppers land directly on product pages.",
+          "For checkout specifically, Google documents a \"Checkout funnel performance\" exploration, built on the funnel exploration template, with steps for begin_checkout, add_payment_info, add_shipping_info and purchase. Google recommends an open funnel when shoppers often add to cart in one session and buy in another. These checkout sub-steps are a level of detail Shopify's four-step report does not show.",
         ],
       },
       {
@@ -809,8 +809,8 @@ export const growthPosts2: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Shopify Help Center: [[https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports|Behaviour reports (conversion rate breakdown)]].",
-          "Google Analytics Help: [[https://support.google.com/analytics/answer/9327974|[GA4] Funnel exploration]]; [[https://support.google.com/analytics/answer/12216232|[GA4] Ecommerce exploration solutions]]. Google for Developers: [[https://developers.google.com/analytics/devguides/collection/ga4/reference/events|GA4 recommended events]].",
+          "Shopify Help Center: Behaviour reports (conversion rate breakdown).",
+          "Google Analytics Help: [GA4] Funnel exploration; [GA4] Ecommerce exploration solutions. Google for Developers: GA4 recommended events.",
           "Accessed 14 October 2026. Report names and options change; check the current documentation.",
         ],
       },

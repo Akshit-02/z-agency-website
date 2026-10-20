@@ -98,7 +98,7 @@ export const aiInterfacePosts3: BlogPost[] = [
       {
         heading: "Privacy and accessibility",
         body: [
-          "Camera, microphone and screenshots capture more than the task needs: faces, other people's voices, other open windows. Ask for access only when needed, say what is stored and for how long, and offer to blur or crop. For accessibility, multimodal design can widen access by letting people choose, but no key task should depend on a single modality: provide captions and transcripts, text alternatives for images and a non-voice path for every voice feature, in line with [[https://www.w3.org/TR/WCAG22/|WCAG 2.2]]. See [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]].",
+          "Camera, microphone and screenshots capture more than the task needs: faces, other people's voices, other open windows. Ask for access only when needed, say what is stored and for how long, and offer to blur or crop. For accessibility, multimodal design can widen access by letting people choose, but no key task should depend on a single modality: provide captions and transcripts, text alternatives for images and a non-voice path for every voice feature, in line with WCAG 2.2. See [[/blogs/accessible-ui-ux-design|accessibility in UI/UX design]].",
         ],
       },
       {

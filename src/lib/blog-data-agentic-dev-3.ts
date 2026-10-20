@@ -83,7 +83,7 @@ export const agenticDevPosts3: BlogPost[] = [
       {
         heading: "Test planning",
         body: [
-          "Given a change (a diff, a spec or a ticket), a QA agent can propose what to test: affected flows, edge cases, regression areas and which layer suits each check. Playwright's test agents illustrate the pattern: a **planner** explores the app and writes a Markdown test plan, a **generator** turns the plan into Playwright tests and a **healer** runs failing tests and attempts repairs ([[https://playwright.dev/docs/test-agents|Playwright test agents]]). The plan is the right point for human review; it is short and shows whether the agent understood the feature.",
+          "Given a change (a diff, a spec or a ticket), a QA agent can propose what to test: affected flows, edge cases, regression areas and which layer suits each check. Playwright's test agents illustrate the pattern: a **planner** explores the app and writes a Markdown test plan, a **generator** turns the plan into Playwright tests and a **healer** runs failing tests and attempts repairs. The plan is the right point for human review; it is short and shows whether the agent understood the feature.",
         ],
       },
       {
@@ -197,7 +197,7 @@ export const agenticDevPosts3: BlogPost[] = [
       {
         heading: "This is about code, not AI workflows",
         body: [
-          "Two kinds of 'AI technical debt' are easily confused. [[/blogs/ai-automation-technical-debt|AI automation technical debt]] is the maintenance burden of AI-powered business workflows: prompts, integrations, evaluation and model dependencies. This article is about something different: the maintainability of ordinary software source code written with the help of coding assistants and agents. Machine learning systems have long been known to carry their own hidden debt ([[https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems|Sculley et al., NeurIPS]]); AI-written application code adds debt of a more familiar shape, at a faster pace.",
+          "Two kinds of 'AI technical debt' are easily confused. [[/blogs/ai-automation-technical-debt|AI automation technical debt]] is the maintenance burden of AI-powered business workflows: prompts, integrations, evaluation and model dependencies. This article is about something different: the maintainability of ordinary software source code written with the help of coding assistants and agents. Machine learning systems have long been known to carry their own hidden debt; AI-written application code adds debt of a more familiar shape, at a faster pace.",
         ],
       },
       {
@@ -219,7 +219,7 @@ export const agenticDevPosts3: BlogPost[] = [
       {
         heading: "What the evidence suggests",
         body: [
-          "Evidence is still developing and should be read carefully. GitClear's analyses of large volumes of commit data have reported rising code duplication and declining 'moved' code (a proxy for refactoring) as AI assistants spread; these are a single vendor's analyses of its customers' and open-source repositories, and they show correlation rather than cause. Google's DORA research on AI-assisted software delivery describes AI as an amplifier: teams with strong practices tend to benefit, while weaker practices are magnified ([[https://dora.dev/research/2025/dora-report/|DORA research]]).",
+          "Evidence is still developing and should be read carefully. GitClear's analyses of large volumes of commit data have reported rising code duplication and declining 'moved' code (a proxy for refactoring) as AI assistants spread; these are a single vendor's analyses of its customers' and open-source repositories, and they show correlation rather than cause. Google's DORA research on AI-assisted software delivery describes AI as an amplifier: teams with strong practices tend to benefit, while weaker practices are magnified.",
           "The practical reading is consistent with what teams report: AI does not create debt by itself, but it raises the rate at which code is added, so any gap in review, conventions or refactoring grows faster than before.",
         ],
       },

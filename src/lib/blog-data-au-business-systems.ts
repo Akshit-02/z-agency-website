@@ -91,7 +91,7 @@ export const auBusinessSystemsPosts: BlogPost[] = [
         body: [],
         checklist: [
           "Check ABNs and GST registration with ABN Lookup during onboarding.",
-          "Large entities in the Payment Times Reporting Scheme report payment times to small business suppliers ([[https://paymenttimes.gov.au/|Payment Times Reporting Regulator]]); accurate invoice and payment dates help.",
+          "Large entities in the Payment Times Reporting Scheme report payment times to small business suppliers; accurate invoice and payment dates help.",
           "Entities required to report under the Modern Slavery Act 2018 (broadly those over $100 million consolidated revenue) often collect supplier questionnaires; a portal can manage them.",
           "Accept Peppol e-invoices; see [[/blogs/accounting-software-integration-australia|accounting software integration]].",
           "Supplier contacts' personal information may be covered by the Privacy Act; collect only what you need.",
@@ -399,7 +399,7 @@ export const auBusinessSystemsPosts: BlogPost[] = [
       {
         heading: "The mandatory text",
         body: [
-          "Warranty against defects documents must include text set out in the Competition and Consumer Regulations, starting 'Our goods come with guarantees that cannot be excluded under the Australian Consumer Law', followed by statements about remedies for major and minor failures, plus the warrantor's details and how to claim. The ACCC publishes the wording and requirements ([[https://www.accc.gov.au/business/selling-products-and-services/warranties|ACCC warranties]]). Store approved templates in the system so every document uses current wording.",
+          "Warranty against defects documents must include text set out in the Competition and Consumer Regulations, starting 'Our goods come with guarantees that cannot be excluded under the Australian Consumer Law', followed by statements about remedies for major and minor failures, plus the warrantor's details and how to claim. The ACCC publishes the wording and requirements. Store approved templates in the system so every document uses current wording.",
         ],
       },
       {
@@ -533,7 +533,7 @@ export const auBusinessSystemsPosts: BlogPost[] = [
       {
         heading: "Decision tables and DMN",
         body: [
-          "Decision tables list conditions and outcomes in rows, such as customer type, order value and region leading to a discount or approval level. They are easy to review and test. Decision Model and Notation (DMN), a standard from the Object Management Group ([[https://www.omg.org/dmn/|OMG]]), defines decision tables and an expression language that several engines execute. Keep tables small and focused, and avoid encoding entire processes in rules.",
+          "Decision tables list conditions and outcomes in rows, such as customer type, order value and region leading to a discount or approval level. They are easy to review and test. Decision Model and Notation (DMN), a standard from the Object Management Group, defines decision tables and an expression language that several engines execute. Keep tables small and focused, and avoid encoding entire processes in rules.",
         ],
       },
       {
@@ -858,22 +858,22 @@ export const auBusinessSystemsPosts: BlogPost[] = [
       {
         heading: "Google accounts: the details that cause lockouts",
         body: [
-          "**Search Console** has owners, full users and restricted users. A verified owner proved ownership with a token, such as a DNS record, HTML file or meta tag; a delegated owner was granted ownership by a verified owner. If every verified owner is removed, Google says remaining users and delegated owners \"will lose access to the property after a grace period\". So add your own verification first. When removing an agency, delete all of their verification tokens for the property, otherwise they can re-verify, and check whether a token is also used by another Google service before removing it ([[https://support.google.com/webmasters/answer/7687615|Search Console Help]]).",
-          "**Google Analytics 4** access can be granted at account level, which applies to every property in the account, or at property level. Permissions can be added lower down but not reduced below what was set higher up, and deleting users requires the Administrator role at account level ([[https://support.google.com/analytics/answer/9305788|Analytics Help]]). Your business should hold account-level Administrator. If the property sits inside an account the agency owns, agree how it will be moved to or managed from an account you control before the contract ends.",
-          "**Google Tag Manager** separates account permissions (Admin or User) from container permissions (from Read to Publish). Only an account Administrator can manage users ([[https://support.google.com/tagmanager/answer/6107011|Tag Manager Help]]).",
+          "**Search Console** has owners, full users and restricted users. A verified owner proved ownership with a token, such as a DNS record, HTML file or meta tag; a delegated owner was granted ownership by a verified owner. If every verified owner is removed, Google says remaining users and delegated owners \"will lose access to the property after a grace period\". So add your own verification first. When removing an agency, delete all of their verification tokens for the property, otherwise they can re-verify, and check whether a token is also used by another Google service before removing it.",
+          "**Google Analytics 4** access can be granted at account level, which applies to every property in the account, or at property level. Permissions can be added lower down but not reduced below what was set higher up, and deleting users requires the Administrator role at account level. Your business should hold account-level Administrator. If the property sits inside an account the agency owns, agree how it will be moved to or managed from an account you control before the contract ends.",
+          "**Google Tag Manager** separates account permissions (Admin or User) from container permissions (from Read to Publish). Only an account Administrator can manage users.",
         ],
       },
       {
         heading: "Domains and transfer locks",
         body: [
-          "For generic domains such as .com, ICANN's Transfer Policy sets the current rules. The registrar must give the registered holder the transfer (AuthInfo) code, and remove any transfer lock it set, within five calendar days of the holder's request if the holder cannot do this themselves, and must not refuse solely because of a payment dispute. A registrar may deny a transfer within 60 days of the domain's creation or of a previous transfer. After a change of registrant, the registrar must apply a 60-day lock on moving to another registrar, unless the holder opted out beforehand ([[https://www.icann.org/resources/pages/transfer-policy-2016-06-01-en|ICANN Transfer Policy]]).",
+          "For generic domains such as .com, ICANN's Transfer Policy sets the current rules. The registrar must give the registered holder the transfer (AuthInfo) code, and remove any transfer lock it set, within five calendar days of the holder's request if the holder cannot do this themselves, and must not refuse solely because of a payment dispute. A registrar may deny a transfer within 60 days of the domain's creation or of a previous transfer. After a change of registrant, the registrar must apply a 60-day lock on moving to another registrar, unless the holder opted out beforehand.",
           "In practice: if the domain needs both a new registrant (you) and a new registrar, plan the order with your registrar so the 60-day lock does not surprise you. Country-code domains such as .in, .ae, .co.uk or .com.au follow their own registry's rules, so check with the registrar. These rules can change; check the current policy before you start.",
         ],
       },
       {
         heading: "Email: do not break sending when DNS moves",
         body: [
-          "Contact forms, CRMs, newsletter tools and shops often send email as your domain, authorised by SPF, DKIM and DMARC records in DNS. If DNS moves and a record is missed, those messages can be rejected or sent to spam. Gmail requires all senders to set up SPF or DKIM; senders of more than 5,000 messages a day to Gmail accounts need SPF and DKIM, a DMARC record (a policy of none is allowed), alignment and one-click unsubscribe for marketing messages ([[https://support.google.com/a/answer/81126|Gmail sender guidelines]]). Yahoo sets similar rules for all and for bulk senders ([[https://senders.yahooinc.com/best-practices/|Yahoo sender best practices]]).",
+          "Contact forms, CRMs, newsletter tools and shops often send email as your domain, authorised by SPF, DKIM and DMARC records in DNS. If DNS moves and a record is missed, those messages can be rejected or sent to spam. Gmail requires all senders to set up SPF or DKIM; senders of more than 5,000 messages a day to Gmail accounts need SPF and DKIM, a DMARC record (a policy of none is allowed), alignment and one-click unsubscribe for marketing messages. Yahoo sets similar rules for all and for bulk senders.",
           "Before changing DNS, export the full zone, list every service that sends as your domain, and check the new DNS host has every MX, SPF, DKIM and DMARC record. Send a test from each service afterwards.",
         ],
       },
@@ -939,7 +939,7 @@ export const auBusinessSystemsPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://support.google.com/webmasters/answer/7687615|Google Search Console Help: managing owners, users and permissions]]; [[https://support.google.com/analytics/answer/9305788|Google Analytics Help: access management for accounts and properties]]; [[https://support.google.com/tagmanager/answer/6107011|Google Tag Manager Help: user permissions]]; [[https://www.icann.org/resources/pages/transfer-policy-2016-06-01-en|ICANN: Transfer Policy]]; [[https://support.google.com/a/answer/81126|Gmail: email sender guidelines]]; [[https://senders.yahooinc.com/best-practices/|Yahoo: sender best practices]].",
+          "Google Search Console Help: managing owners, users and permissions; Google Analytics Help: access management for accounts and properties; Google Tag Manager Help: user permissions; ICANN: Transfer Policy; Gmail: email sender guidelines; Yahoo: sender best practices.",
           "Accessed 14 October 2026. Platform rules and policies change; check the current pages before acting.",
         ],
       },

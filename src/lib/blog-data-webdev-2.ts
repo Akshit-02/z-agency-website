@@ -63,7 +63,7 @@ export const webDevPosts2: BlogPost[] = [
       {
         heading: "Before you compare: give every agency the same brief",
         body: [
-          "Proposals only become comparable when every agency prices the same written scope. A short requirements document with goals, pages, features, integrations and acceptance criteria is enough; see [[/blogs/website-requirements-document|what a website requirements document should include]]. State outcomes and constraints, and let each agency propose the technology. The UK government's Digital, Data and Technology Playbook makes the same point for public buyers: \"Requirements should be drafted to be supplier or technology agnostic\", which reduces lock-in ([[https://www.gov.uk/government/publications/the-digital-data-and-technology-playbook/the-digital-data-and-technology-playbook-html|DDaT Playbook]]).",
+          "Proposals only become comparable when every agency prices the same written scope. A short requirements document with goals, pages, features, integrations and acceptance criteria is enough; see [[/blogs/website-requirements-document|what a website requirements document should include]]. State outcomes and constraints, and let each agency propose the technology. The UK government's Digital, Data and Technology Playbook makes the same point for public buyers: \"Requirements should be drafted to be supplier or technology agnostic\", which reduces lock-in.",
           "Decide early whether you are building a website or a web application. Logins, roles, stored customer data and multi-step workflows change which evidence matters; [[/blogs/custom-website-vs-web-application|this comparison of websites and web applications]] explains the difference. If you are still deciding between an agency and an individual, read [[/blogs/website-development-company-vs-freelancer|agency vs freelancer]] first.",
         ],
       },
@@ -131,9 +131,9 @@ export const webDevPosts2: BlogPost[] = [
           "You do not need to be a security specialist to ask good security questions. Three public frameworks give you neutral wording to borrow. Use them to ask \"show me how you do this\", not to demand a certificate that most small agencies will not have.",
         ],
         checklist: [
-          "**UK Software Security Code of Practice.** A voluntary code from the UK government and NCSC with 14 principles in four themes. Useful questions come straight from it: do you \"follow an established secure development framework\" (1.1), do you \"understand the composition of the software\" you ship (1.2), and do you \"protect the build environment against unauthorised access\" (2.1)? It is written for vendors supplying software to businesses, so treat it as a question bank for a bespoke build rather than a compliance test ([[https://www.gov.uk/government/publications/software-security-code-of-practice/software-security-code-of-practice|GOV.UK]]).",
-          "**OWASP SAMM.** The Software Assurance Maturity Model \"defines five business functions and fifteen security practices\". The most relevant to agency selection are Secure Build, Secure Deployment and Defect Management (under Implementation) and Security Testing (under Verification). Ask the agency which of these it does routinely and how ([[https://owaspsamm.org/model/|OWASP SAMM]]).",
-          "**OWASP ASVS.** The Application Security Verification Standard, currently version 5.0.0, \"provides a basis for testing web application technical security controls\". For a web application with logins or sensitive data, ask whether the agency tests against it or a similar checklist, and which requirements it treats as in scope ([[https://owasp.org/www-project-application-security-verification-standard/|OWASP ASVS]]).",
+          "**UK Software Security Code of Practice.** A voluntary code from the UK government and NCSC with 14 principles in four themes. Useful questions come straight from it: do you \"follow an established secure development framework\" (1.1), do you \"understand the composition of the software\" you ship (1.2), and do you \"protect the build environment against unauthorised access\" (2.1)? It is written for vendors supplying software to businesses, so treat it as a question bank for a bespoke build rather than a compliance test.",
+          "**OWASP SAMM.** The Software Assurance Maturity Model \"defines five business functions and fifteen security practices\". The most relevant to agency selection are Secure Build, Secure Deployment and Defect Management (under Implementation) and Security Testing (under Verification). Ask the agency which of these it does routinely and how.",
+          "**OWASP ASVS.** The Application Security Verification Standard, currently version 5.0.0, \"provides a basis for testing web application technical security controls\". For a web application with logins or sensitive data, ask whether the agency tests against it or a similar checklist, and which requirements it treats as in scope.",
         ],
         callout: {
           type: "note",
@@ -212,8 +212,8 @@ export const webDevPosts2: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "UK government: [[https://www.gov.uk/government/publications/software-security-code-of-practice/software-security-code-of-practice|Software Security Code of Practice (DSIT and NCSC, voluntary; updated 15 January 2026)]]; [[https://www.gov.uk/government/publications/the-digital-data-and-technology-playbook/the-digital-data-and-technology-playbook-html|The Digital, Data and Technology Playbook (updated 20 June 2023)]]; [[https://www.gov.uk/guidance/how-to-evaluate-digital-outcomes-and-specialists-suppliers|How to evaluate Digital Outcomes and Specialists suppliers (withdrawn 31 December 2025; cited as historical)]].",
-          "OWASP: [[https://owaspsamm.org/model/|Software Assurance Maturity Model (SAMM)]]; [[https://owasp.org/www-project-application-security-verification-standard/|Application Security Verification Standard (ASVS) 5.0.0]].",
+          "UK government: Software Security Code of Practice (DSIT and NCSC, voluntary; updated 15 January 2026); The Digital, Data and Technology Playbook (updated 20 June 2023); How to evaluate Digital Outcomes and Specialists suppliers (withdrawn 31 December 2025; cited as historical).",
+          "OWASP: Software Assurance Maturity Model (SAMM); Application Security Verification Standard (ASVS) 5.0.0.",
           "Accessed 15 October 2026. Guidance and frameworks are updated from time to time; check the current versions.",
         ],
       },
@@ -381,7 +381,7 @@ export const webDevPosts2: BlogPost[] = [
       {
         heading: "Rewriting untestable requirements",
         body: [
-          "ISO/IEC/IEEE 29148 is the international standard for requirements engineering processes and the documents they produce. Published summaries of it describe the qualities a well-formed requirement should have; among them, each requirement should be unambiguous, singular (one thing per statement), feasible and verifiable. The GOV.UK Service Manual makes the same point in plainer language: acceptance criteria are often written as a list beginning \"it's done when…\", and user stories name who the user is, what they need and why ([[https://www.gov.uk/service-manual/agile-delivery/writing-user-stories|GOV.UK: writing user stories]]).",
+          "ISO/IEC/IEEE 29148 is the international standard for requirements engineering processes and the documents they produce. Published summaries of it describe the qualities a well-formed requirement should have; among them, each requirement should be unambiguous, singular (one thing per statement), feasible and verifiable. The GOV.UK Service Manual makes the same point in plainer language: acceptance criteria are often written as a list beginning \"it's done when…\", and user stories name who the user is, what they need and why.",
           "Run your draft through this table. If a requirement could not fail a test, rewrite it.",
         ],
         table: {
@@ -474,7 +474,7 @@ export const webDevPosts2: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://www.gov.uk/service-manual/agile-delivery/writing-user-stories|GOV.UK Service Manual: writing user stories]] (last updated 23 May 2016); [[https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs|GOV.UK Service Manual: learning about users and their needs]]; [[https://www.iso.org/standard/72089.html|ISO/IEC/IEEE 29148:2018, Requirements engineering]] (catalogue page; the standard's text is paid, so it is described here only at a high level from published summaries); [[https://www.w3.org/TR/WCAG22/|W3C: Web Content Accessibility Guidelines (WCAG) 2.2]]; [[https://top10.owasp.org/2025|OWASP Top 10:2025]].",
+          "GOV.UK Service Manual: writing user stories (last updated 23 May 2016); GOV.UK Service Manual: learning about users and their needs; ISO/IEC/IEEE 29148:2018, Requirements engineering (catalogue page; the standard's text is paid, so it is described here only at a high level from published summaries); W3C: Web Content Accessibility Guidelines (WCAG) 2.2; OWASP Top 10:2025.",
           "Accessed 14 October 2026.",
         ],
       },
@@ -723,8 +723,8 @@ export const webDevPosts2: BlogPost[] = [
       {
         heading: "Modernising a legacy website in stages",
         body: [
-          "Martin Fowler's [[https://martinfowler.com/bliki/StranglerFigApplication.html|strangler fig article]] describes replacing a legacy system gradually: new components take over pieces of the old one until it can be retired. His view is that \"the reduced risk and earlier value from the gradual approach outweigh its costs\". Our [[/blogs/strangler-fig-pattern|guide to the strangler fig pattern]] covers it for software systems; the roadmap below applies it to a business website.",
-          "The key adjustment for websites comes from Google's guidance on site moves. For small and medium sites, Google recommends \"moving all URLs on your site simultaneously instead of moving one section at a time\"; larger sites can move by section ([[https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes|Google Search Central]]). So stage the back end, not the URL change: rebuild piece by piece behind the URLs you already have, and make any URL changes in one planned cutover.",
+          "Martin Fowler's strangler fig article describes replacing a legacy system gradually: new components take over pieces of the old one until it can be retired. His view is that \"the reduced risk and earlier value from the gradual approach outweigh its costs\". Our [[/blogs/strangler-fig-pattern|guide to the strangler fig pattern]] covers it for software systems; the roadmap below applies it to a business website.",
+          "The key adjustment for websites comes from Google's guidance on site moves. For small and medium sites, Google recommends \"moving all URLs on your site simultaneously instead of moving one section at a time\"; larger sites can move by section. So stage the back end, not the URL change: rebuild piece by piece behind the URLs you already have, and make any URL changes in one planned cutover.",
         ],
         table: {
           headers: ["Stage", "What happens", "Done when"],
@@ -740,8 +740,8 @@ export const webDevPosts2: BlogPost[] = [
       {
         heading: "What each stage needs to get right",
         body: [
-          "**Stabilise.** PHP 8.2 receives security fixes only until 31 December 2026; 8.3 is supported until 31 December 2027, 8.4 until 31 December 2028 and 8.5 until 31 December 2029 ([[https://www.php.net/supported-versions.php|php.net]]). WordPress recommends PHP 8.3 or greater, and says older versions it still runs on \"have reached their official End Of Life and may expose your site to security vulnerabilities\" ([[https://wordpress.org/about/requirements/|WordPress requirements]]). These dates can change, so check both pages when you plan.",
-          "**Upgrade in place.** Test on a staging copy first: older themes, plugins and custom code are the usual cause of breakage after a PHP upgrade. For a hosting move that keeps the same URLs, Google's guidance on [[https://developers.google.com/search/docs/crawling-indexing/site-move-no-url-changes|moving a site without URL changes]] advises lowering DNS TTL in advance, keeping Search Console verification working and shutting down the old host only when its traffic has dropped to zero.",
+          "**Stabilise.** PHP 8.2 receives security fixes only until 31 December 2026; 8.3 is supported until 31 December 2027, 8.4 until 31 December 2028 and 8.5 until 31 December 2029. WordPress recommends PHP 8.3 or greater, and says older versions it still runs on \"have reached their official End Of Life and may expose your site to security vulnerabilities\". These dates can change, so check both pages when you plan.",
+          "**Upgrade in place.** Test on a staging copy first: older themes, plugins and custom code are the usual cause of breakage after a PHP upgrade. For a hosting move that keeps the same URLs, Google's guidance on moving a site without URL changes advises lowering DNS TTL in advance, keeping Search Console verification working and shutting down the old host only when its traffic has dropped to zero.",
           "**Rebuild section by section.** The routing layer is the mechanism that lets two systems share one domain: requests for /blog go to the new stack, everything else to the old one. Keep a shared header, footer, cookie consent and analytics configuration so visitors and reports see one site. Start with a section that is valuable but self-contained, not checkout or login.",
           "**One URL cutover.** Google says to keep redirects \"for as long as possible, generally at least 1 year\", to \"expect temporary fluctuation in site ranking during the move\", and that a small to medium site \"can take a few weeks for most pages to move\". The [[/blogs/website-migration-guide|SEO-safe website migration guide]] covers the redirect map and launch checks in detail.",
           "**Decommission.** Old systems left running are easy to forget and hard to secure. Switch them off deliberately and record what was removed.",
@@ -785,7 +785,7 @@ export const webDevPosts2: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://martinfowler.com/bliki/StranglerFigApplication.html|Martin Fowler: Strangler Fig Application (22 August 2024)]]; [[https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes|Google Search Central: site moves with URL changes (last updated 20 August 2026)]]; [[https://developers.google.com/search/docs/crawling-indexing/site-move-no-url-changes|Google Search Central: moving a site without URL changes]]; [[https://www.php.net/supported-versions.php|PHP: supported versions]]; [[https://wordpress.org/about/requirements/|WordPress: hosting requirements]].",
+          "Martin Fowler: Strangler Fig Application (22 August 2024); Google Search Central: site moves with URL changes (last updated 20 August 2026); Google Search Central: moving a site without URL changes; PHP: supported versions; WordPress: hosting requirements.",
           "Accessed 14 October 2026. Support dates and recommendations change; check the current pages before planning.",
         ],
       },
@@ -953,7 +953,7 @@ export const webDevPosts2: BlogPost[] = [
       { q: "Is Next.js good for SEO?", a: "Yes — Next.js is built to produce fast-loading, crawlable HTML by default, which supports strong technical SEO foundations, though metadata, structured content and page speed still need to be deliberately implemented well regardless of framework." },
       { q: "Does Next.js work well for ecommerce?", a: "Yes, particularly for stores needing custom storefront experiences, strong performance, and flexibility beyond what a template-based platform offers — often paired with a headless commerce backend. See the [[/blogs/headless-website-development|headless website development guide]]." },
       { q: "Is Next.js overkill for a simple marketing site?", a: "It can be, if the site is genuinely simple and static with no growth plans — a simpler static site generator or even a website builder may be entirely sufficient. Next.js earns its complexity once a site needs real application capability alongside content." },
-      { q: "Does Next.js require a specific hosting provider?", a: "No. Next.js runs on any provider that supports a Node.js server or Docker container, and both support every feature. A static export works on any static host but supports only a limited feature set, and platform adapters vary, so check which features your host supports ([[https://nextjs.org/docs/app/getting-started/deploying|Next.js deploying docs]])." },
+      { q: "Does Next.js require a specific hosting provider?", a: "No. Next.js runs on any provider that supports a Node.js server or Docker container, and both support every feature. A static export works on any static host but supports only a limited feature set, and platform adapters vary, so check which features your host supports." },
       { q: "Can Next.js scale for a SaaS product, not just a marketing site?", a: "Yes — Next.js is commonly used for SaaS marketing sites, dashboards and full product interfaces, since it can handle both content-heavy and highly interactive, data-driven pages within the same application." },
       { q: "Should a business insist on Next.js specifically?", a: "No — insist on the right fit for your requirements, not a specific technology by name. Next.js is a strong fit for many modern business websites, but the underlying requirement (performance, flexibility, scalability) matters more than the specific framework." },
     ],
@@ -979,7 +979,7 @@ export const webDevPosts2: BlogPost[] = [
       {
         heading: "How Rendering Actually Works",
         body: [
-          "Older web frameworks typically forced a route-level choice: a page is either fully prerendered at build time or fully rendered on the server per request. With Cache Components, an opt-in setting in current Next.js (the cacheComponents option), the boundary sits at the component level instead. A page can ship a static shell that loads instantly, include content cached with a defined lifetime through the 'use cache' directive, and stream in request-specific content, all within a single page ([[https://nextjs.org/docs/app/getting-started/caching|Next.js caching docs]]). Without that setting, Next.js still prerenders or server-renders per route, which is enough for most marketing sites.",
+          "Older web frameworks typically forced a route-level choice: a page is either fully prerendered at build time or fully rendered on the server per request. With Cache Components, an opt-in setting in current Next.js (the cacheComponents option), the boundary sits at the component level instead. A page can ship a static shell that loads instantly, include content cached with a defined lifetime through the 'use cache' directive, and stream in request-specific content, all within a single page. Without that setting, Next.js still prerenders or server-renders per route, which is enough for most marketing sites.",
         ],
         visual: { variant: "grid", accent: "blue", caption: "Static and dynamic content coexist within a single page — a static shell loads instantly while specific dynamic sections stream in as they resolve." },
       },
@@ -992,7 +992,7 @@ export const webDevPosts2: BlogPost[] = [
       {
         heading: "Incremental Static Regeneration",
         body: [
-          "For pages with dynamic URL parameters, such as a large product catalogue, you list the URLs to prerender at build time with generateStaticParams. Other URLs are generated on the first request and cached for later visitors ([[https://nextjs.org/docs/app/guides/incremental-static-regeneration|Next.js ISR guide]]). With Cache Components and Partial Prefetching enabled, a URL that wasn't prerendered gets a generic App Shell instantly and is upgraded in the background ([[https://nextjs.org/docs/app/guides/incremental-static-regeneration-cache-components|ISR with Cache Components]]). Either way, a large site doesn't need every page built before launch.",
+          "For pages with dynamic URL parameters, such as a large product catalogue, you list the URLs to prerender at build time with generateStaticParams. Other URLs are generated on the first request and cached for later visitors. With Cache Components and Partial Prefetching enabled, a URL that wasn't prerendered gets a generic App Shell instantly and is upgraded in the background. Either way, a large site doesn't need every page built before launch.",
         ],
         cta: {
           title: "Considering Next.js for an upcoming project?",
@@ -1036,7 +1036,7 @@ export const webDevPosts2: BlogPost[] = [
         heading: "What We Learned Building This Site on Next.js",
         body: [
           "This website is a Next.js 16 App Router site. Its articles live as typed data files and are prerendered at build time, which produces more than 3,000 static outputs (pages, social images and route data) for about 1,000 articles. Two problems we found and fixed on our own site are worth knowing about before you build.",
-          "**A client component can pull your whole content library into the browser.** One interactive component imported a single value from the module that held every article. The bundler included the entire article set in a JavaScript chunk of about 12.8 MB, which every article page then downloaded. Keeping client-side imports type-only, or moving shared constants into a small separate module, removed it. Next.js documents the server and client boundary that causes this ([[https://nextjs.org/docs/app/getting-started/server-and-client-components|Next.js docs]]).",
+          "**A client component can pull your whole content library into the browser.** One interactive component imported a single value from the module that held every article. The bundler included the entire article set in a JavaScript chunk of about 12.8 MB, which every article page then downloaded. Keeping client-side imports type-only, or moving shared constants into a small separate module, removed it. Next.js documents the server and client boundary that causes this.",
           "**Animating the main heading can delay Largest Contentful Paint.** Our hero headings started invisible and were revealed by JavaScript after hydration. Under throttled mobile testing, LCP measured between 6.8 and 29.5 seconds. Switching to a CSS-only entrance, so the text is visible from the first paint, brought lab LCP to about 2 seconds. These were lab measurements, not field data, but the lesson holds: never make your largest text wait for JavaScript.",
         ],
       },

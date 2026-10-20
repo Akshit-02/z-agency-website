@@ -356,7 +356,7 @@ export const auOpsReliabilityPosts: BlogPost[] = [
       {
         heading: "Durable workflow engines",
         body: [
-          "Engines such as [[https://docs.temporal.io/|Temporal]] and AWS Step Functions record each step so a workflow resumes after failures. Limits differ: AWS documents a maximum execution time of one year for Standard workflows and five minutes for Express workflows ([[https://docs.aws.amazon.com/step-functions/latest/dg/service-quotas.html|AWS]]). Keep workflow code deterministic where the engine requires it, put side effects in activities or tasks, and version workflows carefully because running instances may last a long time.",
+          "Engines such as Temporal and AWS Step Functions record each step so a workflow resumes after failures. Limits differ: AWS documents a maximum execution time of one year for Standard workflows and five minutes for Express workflows. Keep workflow code deterministic where the engine requires it, put side effects in activities or tasks, and version workflows carefully because running instances may last a long time.",
         ],
       },
       {

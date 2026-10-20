@@ -206,7 +206,7 @@ Feedback ─────────────────▶ new tasks, test 
         heading: "Isolation: worktrees, containers and cloud sandboxes",
         body: [
           "Agents must not share a working directory. Two agents editing the same checkout overwrite each other's changes, run tests against each other's half-finished work and corrupt each other's context. There are three common forms of isolation.",
-          "**Git worktrees** give each agent its own directory and branch on the same machine while sharing repository history ([[https://git-scm.com/docs/git-worktree|git-worktree reference]]). Claude Code, for example, has a --worktree option that creates a worktree under .claude/worktrees on a new branch, and can run subagents in their own worktrees ([[https://code.claude.com/docs/en/worktrees|Claude Code worktree docs]]). **Containers or dev environments** add isolation of dependencies, ports and databases. **Cloud sandboxes**, used by cloud coding agents, run each task in its own remote environment and return a branch or pull request.",
+          "**Git worktrees** give each agent its own directory and branch on the same machine while sharing repository history. Claude Code, for example, has a --worktree option that creates a worktree under .claude/worktrees on a new branch, and can run subagents in their own worktrees. **Containers or dev environments** add isolation of dependencies, ports and databases. **Cloud sandboxes**, used by cloud coding agents, run each task in its own remote environment and return a branch or pull request.",
         ],
         table: {
           headers: ["Isolation", "Isolates", "Watch out for"],
@@ -368,7 +368,7 @@ git worktree list`,
       {
         heading: "More context is not better context",
         body: [
-          "Models have a limited attention budget. Anthropic's engineering guidance on context engineering makes the point that useful context is the smallest set of high-signal information that gets the job done, and that recall degrades as context grows ([[https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents|Anthropic on context engineering]]). For coding agents this means a 2,000-line instruction file is a liability: rules get ignored, contradictions creep in and the agent spends tokens on things irrelevant to the task.",
+          "Models have a limited attention budget. Anthropic's engineering guidance on context engineering makes the point that useful context is the smallest set of high-signal information that gets the job done, and that recall degrades as context grows. For coding agents this means a 2,000-line instruction file is a liability: rules get ignored, contradictions creep in and the agent spends tokens on things irrelevant to the task.",
           "Three kinds of bad context cause most problems: **generic** advice ('write clean code') that adds nothing; **stale** instructions that describe commands or patterns the code no longer uses; and **contradictory** rules across files. When an agent repeatedly does the wrong thing, check the context before blaming the model. The general principles are in our guide to [[/blogs/context-engineering-ai-agents|context engineering]].",
         ],
       },
@@ -401,8 +401,8 @@ ON DEMAND (agent fetches when relevant)
       {
         heading: "Repository documentation formats",
         body: [
-          "**AGENTS.md** is an open, plain Markdown format for agent instructions, read by many agents including OpenAI Codex, Cursor and GitHub Copilot; nested files in subdirectories can scope instructions to a package ([[https://agents.md/|agents.md]]). **CLAUDE.md** is Claude Code's equivalent; it can import or point to an existing AGENTS.md so you keep one source. **GitHub Copilot** reads repository-wide instructions from .github/copilot-instructions.md and path-specific instructions from .github/instructions/*.instructions.md files with an applyTo pattern, and also supports AGENTS.md ([[https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions|GitHub Copilot custom instructions]]). Cursor supports project rules as well.",
-          "**Skills** package procedures an agent loads only when relevant: a folder with a SKILL.md file of instructions plus optional scripts and references. Agent Skills started at Anthropic and is now published as an open format supported by several agents ([[https://agentskills.io/|agentskills.io]]). Skills suit recurring procedures ('add a database migration', 'release a mobile build') that would bloat the root file.",
+          "**AGENTS.md** is an open, plain Markdown format for agent instructions, read by many agents including OpenAI Codex, Cursor and GitHub Copilot; nested files in subdirectories can scope instructions to a package. **CLAUDE.md** is Claude Code's equivalent; it can import or point to an existing AGENTS.md so you keep one source. **GitHub Copilot** reads repository-wide instructions from .github/copilot-instructions.md and path-specific instructions from .github/instructions/*.instructions.md files with an applyTo pattern, and also supports AGENTS.md. Cursor supports project rules as well.",
+          "**Skills** package procedures an agent loads only when relevant: a folder with a SKILL.md file of instructions plus optional scripts and references. Agent Skills started at Anthropic and is now published as an open format supported by several agents. Skills suit recurring procedures ('add a database migration', 'release a mobile build') that would bloat the root file.",
         ],
         callout: {
           type: "tip",

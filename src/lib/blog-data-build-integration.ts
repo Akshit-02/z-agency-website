@@ -218,7 +218,7 @@ export const buildIntegrationPosts: BlogPost[] = [
       {
         heading: "Marketplace APIs",
         body: [
-          "Amazon's [[https://developer-docs.amazon.com/sp-api/|Selling Partner API]] provides APIs for listings, orders, inventory, reports and [[https://developer-docs.amazon.com/sp-api/docs/notifications-api|notifications]], with seller authorisation and rate limits per operation. eBay's [[https://developer.ebay.com/|developer programme]] provides Sell APIs for inventory, offers and fulfilment. Both change over time, so isolate each marketplace behind an adapter and monitor deprecations. For Amazon fulfilment (FBA), stock held in Amazon's network needs separate tracking from your own warehouse stock.",
+          "Amazon's Selling Partner API provides APIs for listings, orders, inventory, reports and notifications, with seller authorisation and rate limits per operation. eBay's developer programme provides Sell APIs for inventory, offers and fulfilment. Both change over time, so isolate each marketplace behind an adapter and monitor deprecations. For Amazon fulfilment (FBA), stock held in Amazon's network needs separate tracking from your own warehouse stock.",
         ],
       },
       {
@@ -241,7 +241,7 @@ export const buildIntegrationPosts: BlogPost[] = [
       {
         heading: "UK VAT note",
         body: [
-          "Since 1 January 2021, online marketplaces have been responsible for VAT on goods sold to UK consumers by overseas sellers where the goods are in the UK at the point of sale, and on imported consignments of £135 or less ([[https://www.gov.uk/government/publications/changes-to-vat-treatment-of-overseas-goods-sold-to-customers-from-1-january-2021/changes-to-vat-treatment-of-overseas-goods-sold-to-customers-from-1-january-2021|GOV.UK policy paper]]). Northern Ireland has different rules for some goods. UK-established sellers generally account for their own VAT. Your integration should record which party accounted for VAT on each order so accounting is correct. Confirm the treatment with your accountant.",
+          "Since 1 January 2021, online marketplaces have been responsible for VAT on goods sold to UK consumers by overseas sellers where the goods are in the UK at the point of sale, and on imported consignments of £135 or less. Northern Ireland has different rules for some goods. UK-established sellers generally account for their own VAT. Your integration should record which party accounted for VAT on each order so accounting is correct. Confirm the treatment with your accountant.",
         ],
       },
       {
@@ -264,7 +264,7 @@ export const buildIntegrationPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://developer-docs.amazon.com/sp-api/|Amazon Selling Partner API documentation]]; [[https://developer-docs.amazon.com/sp-api/docs/orders-api|SP-API Orders API]]; [[https://developer.ebay.com/|eBay Developers Program]]; [[https://www.gov.uk/government/publications/changes-to-vat-treatment-of-overseas-goods-sold-to-customers-from-1-january-2021/changes-to-vat-treatment-of-overseas-goods-sold-to-customers-from-1-january-2021|GOV.UK: VAT treatment of overseas goods sold to customers]].",
+          "Amazon Selling Partner API documentation; SP-API Orders API; eBay Developers Program; GOV.UK: VAT treatment of overseas goods sold to customers.",
           "Accessed 10 October 2026. Nothing here is tax advice.",
         ],
       },
@@ -356,7 +356,7 @@ export const buildIntegrationPosts: BlogPost[] = [
       {
         heading: "Event schema",
         body: [
-          "Use one schema for every event so customers can search and stream consistently. The [[https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html|OWASP Logging Cheat Sheet]] covers which attributes to record and what to exclude.",
+          "Use one schema for every event so customers can search and stream consistently. The OWASP Logging Cheat Sheet covers which attributes to record and what to exclude.",
         ],
         code: {
           label: "Example audit event (illustrative)",
@@ -379,7 +379,7 @@ export const buildIntegrationPosts: BlogPost[] = [
         checklist: [
           "Write audit events in the same transaction as the change, or through an outbox, so none are lost.",
           "Store append-only; restrict deletion to a retention process.",
-          "Use write-once storage such as [[https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html|S3 Object Lock]] for archives.",
+          "Use write-once storage such as S3 Object Lock for archives.",
           "Consider hash chaining per tenant to detect gaps or edits.",
           "Synchronise clocks and record times in UTC.",
           "Exclude secrets, passwords and full payment data; minimise personal data.",
@@ -413,7 +413,7 @@ export const buildIntegrationPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html|OWASP Logging Cheat Sheet]]; [[https://csrc.nist.gov/pubs/sp/800/92/final|NIST SP 800-92: Guide to Computer Security Log Management]]; [[https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html|AWS S3 Object Lock]].",
+          "OWASP Logging Cheat Sheet; NIST SP 800-92: Guide to Computer Security Log Management; AWS S3 Object Lock.",
           "Accessed 10 October 2026.",
         ],
       },

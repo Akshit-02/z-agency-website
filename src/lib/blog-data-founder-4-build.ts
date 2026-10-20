@@ -29,36 +29,7 @@ import type { BlogPost } from "./blog-data";
  * case studies and third-party breakeven figures (unsourced).
  */
 
-const VERCEL_PRICING = "https://vercel.com/pricing";
-const VERCEL_PRO = "https://vercel.com/docs/plans/pro-plan";
-const NETLIFY = "https://www.netlify.com/pricing/";
-const RAILWAY = "https://railway.com/pricing";
-const RENDER_FREE = "https://render.com/docs/free";
-const CF_WORKERS = "https://developers.cloudflare.com/workers/platform/pricing/";
-const DO_DROPLETS = "https://www.digitalocean.com/pricing/droplets";
-const DO_DB = "https://www.digitalocean.com/pricing/managed-databases";
-const AWS_FREE = "https://aws.amazon.com/free/";
-const AWS_DTO = "https://aws.amazon.com/about-aws/global-infrastructure/global-network/faqs";
-const AWS_LAMBDA = "https://aws.amazon.com/lambda/pricing/";
-const AWS_SES = "https://aws.amazon.com/ses/pricing/";
-const AWS_REGIONS = "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html";
-const GCP_FREE = "https://docs.cloud.google.com/free/docs/free-cloud-features";
-const GCP_REGIONS = "https://docs.cloud.google.com/compute/docs/regions-zones";
-const AZURE_FREE = "https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account";
-const AZURE_REGIONS = "https://learn.microsoft.com/en-us/azure/reliability/regions-list";
-const NEXT_DEPLOY = "https://nextjs.org/docs/app/getting-started/deploying";
 
-const DJANGO_ADMIN = "https://docs.djangoproject.com/en/stable/ref/contrib/admin/";
-const DJANGO_ACTIONS = "https://docs.djangoproject.com/en/stable/ref/contrib/admin/actions/";
-const FILAMENT = "https://github.com/filamentphp/filament";
-const FILAMENT_IMPORT = "https://filamentphp.com/docs/5.x/actions/import";
-const FILAMENT_EXPORT = "https://filamentphp.com/docs/5.x/actions/export";
-const NOVA = "https://nova.laravel.com/";
-const RETOOL = "https://retool.com/pricing";
-const APPSMITH = "https://www.appsmith.com/pricing";
-const APPSMITH_REPO = "https://github.com/appsmithorg/appsmith";
-const DIRECTUS = "https://github.com/directus/directus";
-const OWASP_AUTHZ = "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html";
 
 export const founderBuildPosts4: BlogPost[] = [
   {
@@ -245,15 +216,15 @@ export const founderBuildPosts4: BlogPost[] = [
         },
         callout: {
           type: "note",
-          text: "Vercel's Hobby plan is for personal, non-commercial use. If the application earns money or serves a business, budget for a paid plan from launch. Render says of its free instances: \"Do not use them for production applications.\" Sources: [[" + VERCEL_PRICING + "|Vercel pricing]] and [[" + RENDER_FREE + "|Render free instances]] (vendor pages).",
+          text: "Vercel's Hobby plan is for personal, non-commercial use. If the application earns money or serves a business, budget for a paid plan from launch. Render says of its free instances: \"Do not use them for production applications.\" Sources: Vercel pricing and Render free instances (vendor pages).",
         },
       },
       {
         heading: "Five lines that are easy to leave out",
         body: [
           "**Environments.** A serious application has production, at least one staging environment, and often a preview build for every change. On a PaaS the previews are usually built in, but persistent staging is another project, and some add-ons are priced per project. On a cloud provider or VPS, a realistic staging environment is a second copy of the stack, and the database is the part people forget to copy. Decide which environments run all month and which can be paused or scaled down.",
-          "**Egress.** Data leaving the platform for the internet is metered on most providers once the allowance is used. Images, video, file exports and chatty APIs drive it. AWS includes 100 GB a month from its Regions across services and 1 TB a month from CloudFront ([[" + AWS_DTO + "|AWS network FAQs]], vendor). Serving large files through a CDN or object storage designed for it usually changes this line more than any other choice.",
-          "**Managed databases.** A managed database is normally billed as an always-on instance plus storage, and higher tiers add replicas, more storage and longer backup retention. It is often the line that grows first once real data arrives. Free database tiers are for trying things: Render's free Postgres expires after 30 days and has no backups ([[" + RENDER_FREE + "|Render docs]], vendor).",
+          "**Egress.** Data leaving the platform for the internet is metered on most providers once the allowance is used. Images, video, file exports and chatty APIs drive it. AWS includes 100 GB a month from its Regions across services and 1 TB a month from CloudFront (AWS network FAQs, vendor). Serving large files through a CDN or object storage designed for it usually changes this line more than any other choice.",
+          "**Managed databases.** A managed database is normally billed as an always-on instance plus storage, and higher tiers add replicas, more storage and longer backup retention. It is often the line that grows first once real data arrives. Free database tiers are for trying things: Render's free Postgres expires after 30 days and has no backups (Render docs, vendor).",
           "**Backups and restore.** Check how long backups are kept, whether point-in-time restore is included, where the copies are stored and what restoring costs in time. A backup you have never restored is an assumption, not a plan. The [[/blogs/website-maintenance-guide|website maintenance guide]] covers how to schedule and test restores alongside updates.",
           "**Observability.** Error tracking, uptime checks, logs and metrics each have their own meter, usually events, GB ingested or retention days. Short retention is cheap but limits investigation after an incident. Decide how many days of logs you need, and keep debug-level logging out of production.",
         ],
@@ -279,7 +250,7 @@ export const founderBuildPosts4: BlogPost[] = [
       {
         heading: "Reading the example against the price lists",
         body: [
-          "On Vercel Pro, as listed on 15 October 2026, Stage 2 adds two deploying seats at $20/month each and password protection at $20 per protected project per month. Stage 3 adds three more deploying seats; the contractor can use a free viewer seat. The 1.4 TB of transfer goes past the 1 TB included, so the extra 0.4 TB is billed per GB at the listed rate, from $0.15/GB. SAML SSO is a $300/month add-on ([[" + VERCEL_PRO + "|Vercel Pro plan docs]], vendor).",
+          "On Vercel Pro, as listed on 15 October 2026, Stage 2 adds two deploying seats at $20/month each and password protection at $20 per protected project per month. Stage 3 adds three more deploying seats; the contractor can use a free viewer seat. The 1.4 TB of transfer goes past the 1 TB included, so the extra 0.4 TB is billed per GB at the listed rate, from $0.15/GB. SAML SSO is a $300/month add-on (Vercel Pro plan docs, vendor).",
           "On AWS, the 100 GB monthly data-transfer allowance is used up during Stage 2, and email is billed per 1,000 messages on SES. On a VPS, the instance price stays flat until the server needs resizing, but the database, backups and monitoring become either separate products or work for your team. In every architecture the database line moves at each stage, which is why it deserves its own estimate rather than a share of \"hosting\".",
           "Notice what does not change much: the base platform fee. The lines that grow are seats, transfer, the database and add-ons that customers ask for.",
         ],
@@ -317,7 +288,7 @@ export const founderBuildPosts4: BlogPost[] = [
       {
         heading: "Matching the architecture to your cost shape",
         body: [
-          "**Static or Jamstack** suits marketing sites and apps whose dynamic parts live in a separate API or backend. It is cheap to serve, but it is not suitable when most pages depend on signed-in data or server rendering. Next.js lists static export as \"Limited\" feature support, while a Node.js server or Docker container supports all features ([[" + NEXT_DEPLOY + "|Next.js deploying docs]]).",
+          "**Static or Jamstack** suits marketing sites and apps whose dynamic parts live in a separate API or backend. It is cheap to serve, but it is not suitable when most pages depend on signed-in data or server rendering. Next.js lists static export as \"Limited\" feature support, while a Node.js server or Docker container supports all features.",
           "**A managed PaaS** suits small teams that want deployments, previews and scaling handled for them. The trade-off is per-seat and per-add-on pricing that grows with the team and with enterprise customer demands. It is a poor fit when you need fine control over networking or must keep everything inside one cloud account for contractual reasons.",
           "**Cloud serverless or containers** suit teams that need specific regions, managed databases and services from one provider, or traffic that varies widely. Every service has its own meter, so the bill needs someone who reads it. It is not suitable if nobody on the team can own cloud configuration and cost alerts.",
           "**A VPS** suits steady, predictable workloads and teams willing to run servers. The instance price is flat, but patching, backups, monitoring and scaling are your job. It is a poor fit when uptime matters and nobody is on call.",
@@ -347,10 +318,10 @@ export const founderBuildPosts4: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Managed platforms (vendor pages): [[" + VERCEL_PRICING + "|Vercel pricing]]; [[" + VERCEL_PRO + "|Vercel Pro plan docs]] (last updated 15 September 2026); [[" + NETLIFY + "|Netlify pricing]]; [[" + RAILWAY + "|Railway pricing]]; [[" + RENDER_FREE + "|Render: deploy for free]]; [[" + CF_WORKERS + "|Cloudflare Workers pricing]].",
-          "VPS and databases (vendor pages): [[" + DO_DROPLETS + "|DigitalOcean Droplet pricing]]; [[" + DO_DB + "|DigitalOcean Managed Database pricing]].",
-          "Cloud providers (vendor pages and docs): [[" + AWS_FREE + "|AWS Free Tier]]; [[" + AWS_DTO + "|AWS global network FAQs]]; [[" + AWS_LAMBDA + "|AWS Lambda pricing]]; [[" + AWS_SES + "|Amazon SES pricing]]; [[" + AWS_REGIONS + "|AWS Regions]]; [[" + GCP_FREE + "|Google Cloud free features]] (last updated 13 October 2026); [[" + GCP_REGIONS + "|Google Cloud regions and zones]]; [[" + AZURE_FREE + "|Azure free account]]; [[" + AZURE_REGIONS + "|List of Azure regions]] (updated 13 October 2026).",
-          "Framework: [[" + NEXT_DEPLOY + "|Next.js: deploying]].",
+          "Managed platforms (vendor pages): Vercel pricing; Vercel Pro plan docs (last updated 15 September 2026); Netlify pricing; Railway pricing; Render: deploy for free; Cloudflare Workers pricing.",
+          "VPS and databases (vendor pages): DigitalOcean Droplet pricing; DigitalOcean Managed Database pricing.",
+          "Cloud providers (vendor pages and docs): AWS Free Tier; AWS global network FAQs; AWS Lambda pricing; Amazon SES pricing; AWS Regions; Google Cloud free features (last updated 13 October 2026); Google Cloud regions and zones; Azure free account; List of Azure regions (updated 13 October 2026).",
+          "Framework: Next.js: deploying.",
           "Accessed 15 October 2026. All prices are vendor list prices and allowances that change; check the vendor's page and calculator for your region before you commit.",
         ],
       },
@@ -431,7 +402,7 @@ export const founderBuildPosts4: BlogPost[] = [
       {
         heading: "Content management and back-office operations are different jobs",
         body: [
-          "Django's documentation draws the line clearly. It says: \"The admin's recommended use is limited to an organization's internal management tool. It's not intended for building your entire front end around.\" It adds: \"If you need to provide a more process-centric interface that abstracts away the implementation details of database tables and fields, then it's probably time to write your own views.\" ([[" + DJANGO_ADMIN + "|Django 6.1 admin docs]]). The same logic applies to every option below: tools that expose records are fine for people who understand the records, and processes need screens designed around the process.",
+          "Django's documentation draws the line clearly. It says: \"The admin's recommended use is limited to an organization's internal management tool. It's not intended for building your entire front end around.\" It adds: \"If you need to provide a more process-centric interface that abstracts away the implementation details of database tables and fields, then it's probably time to write your own views.\". The same logic applies to every option below: tools that expose records are fine for people who understand the records, and processes need screens designed around the process.",
         ],
         table: {
           headers: ["", "Content management", "Operational back office"],
@@ -447,9 +418,9 @@ export const founderBuildPosts4: BlogPost[] = [
       {
         heading: "The four options",
         body: [
-          "**A CMS, traditional or headless.** Built for publishing. Some, such as Directus, describe themselves more broadly: its repository says it can \"Turn your DB into a headless CMS, admin panels, or apps\" over SQL databases, with generated REST and GraphQL APIs. Note its licence: the repository now states the Monospace Sustainable Core License (MSCL) 1.0, source-available, free for organisations under $5M annual revenue and 50 employees ([[" + DIRECTUS + "|Directus on GitHub]], vendor). For content-only decisions, see [[/blogs/how-to-choose-a-cms|how to choose a CMS]] and [[/blogs/custom-cms-vs-wordpress|custom CMS vs WordPress]].",
-          "**A framework admin.** Django ships an admin with bulk \"actions\" on selected records and a built-in \"delete selected objects\" action, and its LogEntry model tracks additions, changes and deletions made through the admin ([[" + DJANGO_ACTIONS + "|Django admin actions]]). On Laravel, Filament is MIT-licensed and describes itself as a way to \"Build and ship apps & admin panels fast with Livewire\" ([[" + FILAMENT + "|Filament on GitHub]]); it includes actions to import rows from a CSV and export to CSV or XLSX. Laravel Nova is a paid admin package (prices below).",
-          "**An internal-tool builder.** Retool and Appsmith let you assemble screens over databases and APIs with less code. Appsmith's repository describes it as a \"Platform to build admin panels, internal tools, and dashboards\" and is Apache-2.0 licensed ([[" + APPSMITH_REPO + "|Appsmith on GitHub]]). Both offer hosted and self-hosted versions. For the wider low-code question across whole business applications, see [[/blogs/low-code-vs-custom-software|low-code vs custom software]].",
+          "**A CMS, traditional or headless.** Built for publishing. Some, such as Directus, describe themselves more broadly: its repository says it can \"Turn your DB into a headless CMS, admin panels, or apps\" over SQL databases, with generated REST and GraphQL APIs. Note its licence: the repository now states the Monospace Sustainable Core License (MSCL) 1.0, source-available, free for organisations under $5M annual revenue and 50 employees (Directus on GitHub, vendor). For content-only decisions, see [[/blogs/how-to-choose-a-cms|how to choose a CMS]] and [[/blogs/custom-cms-vs-wordpress|custom CMS vs WordPress]].",
+          "**A framework admin.** Django ships an admin with bulk \"actions\" on selected records and a built-in \"delete selected objects\" action, and its LogEntry model tracks additions, changes and deletions made through the admin. On Laravel, Filament is MIT-licensed and describes itself as a way to \"Build and ship apps & admin panels fast with Livewire\"; it includes actions to import rows from a CSV and export to CSV or XLSX. Laravel Nova is a paid admin package (prices below).",
+          "**An internal-tool builder.** Retool and Appsmith let you assemble screens over databases and APIs with less code. Appsmith's repository describes it as a \"Platform to build admin panels, internal tools, and dashboards\" and is Apache-2.0 licensed. Both offer hosted and self-hosted versions. For the wider low-code question across whole business applications, see [[/blogs/low-code-vs-custom-software|low-code vs custom software]].",
           "**A custom admin.** Screens built in your product's own codebase around specific processes, with permissions and audit designed for them. It costs the most to build and has no licence fee.",
         ],
       },
@@ -479,7 +450,7 @@ export const founderBuildPosts4: BlogPost[] = [
           "Score each candidate against these before comparing screenshots. The usability of a back office matters, but these requirements are what decide whether it is safe to use and possible to change later.",
         ],
         checklist: [
-          "**Roles and least privilege:** each role sees and changes only what it needs. OWASP's authorisation guidance says to deny by default, validate permissions on every request and enforce checks on the server ([[" + OWASP_AUTHZ + "|OWASP Authorization Cheat Sheet]]). See [[/blogs/saas-roles-and-permissions|SaaS roles and permissions]].",
+          "**Roles and least privilege:** each role sees and changes only what it needs. OWASP's authorisation guidance says to deny by default, validate permissions on every request and enforce checks on the server. See [[/blogs/saas-roles-and-permissions|SaaS roles and permissions]].",
           "**Audit log:** who did what, to which record, when, with the before and after values, kept where staff cannot edit it.",
           "**Bulk actions:** a preview of affected records, a limit on batch size, and a way to undo or reverse.",
           "**Imports:** validation before anything is written, a clear error report, and a dry-run mode.",
@@ -512,7 +483,7 @@ export const founderBuildPosts4: BlogPost[] = [
         },
         callout: {
           type: "note",
-          text: "Vendor pricing sources: [[" + NOVA + "|Laravel Nova]], [[" + RETOOL + "|Retool pricing]], [[" + APPSMITH + "|Appsmith pricing]]. Retool's page was not fully consistent about audit logging on self-hosted Business plans, so confirm with the vendor if that matters to you.",
+          text: "Vendor pricing sources: Laravel Nova, Retool pricing, Appsmith pricing. Retool's page was not fully consistent about audit logging on self-hosted Business plans, so confirm with the vendor if that matters to you.",
         },
       },
       {
@@ -536,9 +507,9 @@ export const founderBuildPosts4: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Framework documentation: [[" + DJANGO_ADMIN + "|Django 6.1: the Django admin site]]; [[" + DJANGO_ACTIONS + "|Django: admin actions]]; [[" + FILAMENT + "|Filament repository (MIT)]]; [[" + FILAMENT_IMPORT + "|Filament import action]]; [[" + FILAMENT_EXPORT + "|Filament export action]].",
-          "Vendor pages: [[" + NOVA + "|Laravel Nova]]; [[" + RETOOL + "|Retool pricing]]; [[" + APPSMITH + "|Appsmith pricing]]; [[" + APPSMITH_REPO + "|Appsmith repository]]; [[" + DIRECTUS + "|Directus repository]].",
-          "Security guidance: [[" + OWASP_AUTHZ + "|OWASP Authorization Cheat Sheet]].",
+          "Framework documentation: Django 6.1: the Django admin site; Django: admin actions; Filament repository (MIT); Filament import action; Filament export action.",
+          "Vendor pages: Laravel Nova; Retool pricing; Appsmith pricing; Appsmith repository; Directus repository.",
+          "Security guidance: OWASP Authorization Cheat Sheet.",
           "Accessed 15 October 2026. Prices, licences and plan features are vendor data and change; check the current pages before deciding.",
         ],
       },

@@ -94,7 +94,7 @@ export const deliveryWebPosts: BlogPost[] = [
       {
         heading: "Domains, markets and hreflang",
         body: [
-          "For the UK and other markets, choose between country-code domains, subdomains or subfolders, following Google's guidance on [[https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites|multi-regional sites]]. Link equivalent pages with [[https://developers.google.com/search/docs/specialty/international/localized-versions|hreflang]], including a self-reference and return links, and keep canonical tags pointing to the page itself rather than another market. Localise prices, currency, delivery, legal pages and spelling (British English for the UK). See [[/blogs/international-ecommerce-seo|international ecommerce SEO]].",
+          "For the UK and other markets, choose between country-code domains, subdomains or subfolders, following Google's guidance on multi-regional sites. Link equivalent pages with hreflang, including a self-reference and return links, and keep canonical tags pointing to the page itself rather than another market. Localise prices, currency, delivery, legal pages and spelling (British English for the UK). See [[/blogs/international-ecommerce-seo|international ecommerce SEO]].",
         ],
       },
       {
@@ -128,7 +128,7 @@ export const deliveryWebPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites|Google Search Central: managing multi-regional and multilingual sites]]; [[https://developers.google.com/search/docs/specialty/international/localized-versions|Google Search Central: localised versions (hreflang)]].",
+          "Google Search Central: managing multi-regional and multilingual sites; Google Search Central: localised versions (hreflang).",
           "Accessed 10 October 2026.",
         ],
       },
@@ -328,7 +328,7 @@ And current contract prices apply, not the original prices`,
       {
         heading: "How do you secure file uploads?",
         body: [
-          "**Allow only the file types you need, validate size, extension and actual content, rename files, store them privately outside the web root (usually object storage), upload directly with short-lived presigned URLs, quarantine and scan before use, re-encode images where practical, and serve files only after authorisation from a separate domain with safe headers. Apply retention and deletion rules, because uploads often contain personal data.** The [[https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html|OWASP File Upload Cheat Sheet]] is the standard reference.",
+          "**Allow only the file types you need, validate size, extension and actual content, rename files, store them privately outside the web root (usually object storage), upload directly with short-lived presigned URLs, quarantine and scan before use, re-encode images where practical, and serve files only after authorisation from a separate domain with safe headers. Apply retention and deletion rules, because uploads often contain personal data.** The OWASP File Upload Cheat Sheet is the standard reference.",
           "This guide is for engineering teams building portals, onboarding, claims, HR and document features.",
         ],
       },
@@ -364,7 +364,7 @@ And current contract prices apply, not the original prices`,
         heading: "Recommended upload flow",
         body: [],
         checklist: [
-          "Client requests an upload; the server checks permissions and issues a short-lived [[https://docs.aws.amazon.com/AmazonS3/latest/userguide/PresignedUrlUploadObject.html|presigned URL]] for a quarantine location with size and type constraints.",
+          "Client requests an upload; the server checks permissions and issues a short-lived presigned URL for a quarantine location with size and type constraints.",
           "Client uploads directly to storage.",
           "A storage event triggers validation (type, size, structure) and malware scanning.",
           "Clean files move to the permanent private location; failures are deleted and the user told.",
@@ -392,7 +392,7 @@ And current contract prices apply, not the original prices`,
       {
         heading: "Sources",
         body: [
-          "[[https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html|OWASP File Upload Cheat Sheet]]; [[https://docs.aws.amazon.com/AmazonS3/latest/userguide/PresignedUrlUploadObject.html|AWS S3: uploading objects with presigned URLs]].",
+          "OWASP File Upload Cheat Sheet; AWS S3: uploading objects with presigned URLs.",
           "Accessed 10 October 2026.",
         ],
       },

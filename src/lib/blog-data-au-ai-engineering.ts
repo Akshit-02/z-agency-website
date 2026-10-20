@@ -97,8 +97,8 @@ export const auAiEngineeringPosts: BlogPost[] = [
         ],
         checklist: [
           "**Microsoft Azure:** Azure OpenAI and other models are offered in Australia East, but not every model or deployment type is available there; Microsoft's model availability tables are the reference.",
-          "**AWS:** Amazon Bedrock has endpoints in Asia Pacific (Sydney) with a range of models. AWS has described some newer models as available from Sydney and Melbourne via global cross-Region inference, which routes requests to other commercial regions for processing ([[https://aws.amazon.com/blogs/machine-learning/accessing-openai-gpt-5-6-models-on-amazon-bedrock-from-australia-with-global-cross-region-inference/|AWS]]). If in-country processing is required, avoid cross-Region options.",
-          "**Google Cloud:** Vertex AI's data residency documentation lists models available for processing in Sydney (australia-southeast1); some model families are offered only in other regions ([[https://cloud.google.com/vertex-ai/generative-ai/docs/learn/data-residency|Google Cloud]]).",
+          "**AWS:** Amazon Bedrock has endpoints in Asia Pacific (Sydney) with a range of models. AWS has described some newer models as available from Sydney and Melbourne via global cross-Region inference, which routes requests to other commercial regions for processing. If in-country processing is required, avoid cross-Region options.",
+          "**Google Cloud:** Vertex AI's data residency documentation lists models available for processing in Sydney (australia-southeast1); some model families are offered only in other regions.",
         ],
         callout: {
           type: "note",
@@ -108,7 +108,7 @@ export const auAiEngineeringPosts: BlogPost[] = [
       {
         heading: "Privacy and governance",
         body: [
-          "If your organisation is covered by the Privacy Act, the OAIC says privacy obligations apply to personal information entered into AI systems and to outputs containing it, and recommends due diligence on AI products ([[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products|OAIC]]). Overseas processing raises APP 8. Private deployment helps control these flows, but you still need purpose limits, minimisation, access control, retention and transparency, including automated decision disclosures from 10 December 2026 where AI informs significant decisions. See [[/blogs/ai-governance-australia|AI governance for Australian businesses]].",
+          "If your organisation is covered by the Privacy Act, the OAIC says privacy obligations apply to personal information entered into AI systems and to outputs containing it, and recommends due diligence on AI products. Overseas processing raises APP 8. Private deployment helps control these flows, but you still need purpose limits, minimisation, access control, retention and transparency, including automated decision disclosures from 10 December 2026 where AI informs significant decisions. See [[/blogs/ai-governance-australia|AI governance for Australian businesses]].",
         ],
       },
       {
@@ -154,7 +154,7 @@ export const auAiEngineeringPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://cloud.google.com/vertex-ai/generative-ai/docs/learn/data-residency|Google Cloud, Vertex AI data residency]]; [[https://docs.aws.amazon.com/general/latest/gr/bedrock.html|AWS, Amazon Bedrock endpoints]]; [[https://aws.amazon.com/blogs/machine-learning/accessing-openai-gpt-5-6-models-on-amazon-bedrock-from-australia-with-global-cross-region-inference/|AWS, cross-Region inference from Australia]]; [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products|OAIC, AI products guidance]].",
+          "Google Cloud, Vertex AI data residency; AWS, Amazon Bedrock endpoints; AWS, cross-Region inference from Australia; OAIC, AI products guidance.",
           "Provider details were checked against provider documentation and change frequently. Tables, checklists and example are ours. Nothing here is legal advice or ZSpace client data.",
         ],
       },
@@ -241,7 +241,7 @@ export const auAiEngineeringPosts: BlogPost[] = [
       {
         heading: "Australian context: diverse, not one extra language",
         body: [
-          "The 2021 Census found about 22.3% of people spoke a language other than English at home, around 5.6 million people, with Mandarin the most common (about 2.7%) and Arabic third (about 1.4%) ([[https://www.sbs.com.au/language/chinese/en/article/mandarin-remains-as-most-spoken-language-other-than-english-in-australia-2021-census-data-shows/e3i1092hf|SBS, reporting ABS 2021 Census data]]). Language communities vary sharply by region and by service: a council in Sydney's west, a health service in regional Victoria and a national retailer will see different patterns. Use your own data first.",
+          "The 2021 Census found about 22.3% of people spoke a language other than English at home, around 5.6 million people, with Mandarin the most common (about 2.7%) and Arabic third (about 1.4%). Language communities vary sharply by region and by service: a council in Sydney's west, a health service in regional Victoria and a national retailer will see different patterns. Use your own data first.",
         ],
       },
       {
@@ -311,7 +311,7 @@ export const auAiEngineeringPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://www.sbs.com.au/language/chinese/en/article/mandarin-remains-as-most-spoken-language-other-than-english-in-australia-2021-census-data-shows/e3i1092hf|SBS, 2021 Census language data]]; [[https://www.w3.org/TR/WCAG22/|W3C, WCAG 2.2]]; [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information|OAIC, APP 8]].",
+          "SBS, 2021 Census language data; W3C, WCAG 2.2; OAIC, APP 8.",
           "Census figures are as reported by SBS from ABS data. Tables, checklists and example are ours. Nothing here is ZSpace client data.",
         ],
       },

@@ -583,22 +583,22 @@ export const mobilePosts3: BlogPost[] = [
       {
         heading: "OS and Store Requirement Updates",
         body: [
-          "When Apple and Google release major OS versions, test the app on them, adopt required changes and fix anything that breaks. Google Play requires new apps and updates to target an API level within a year of the latest major Android release. Its rule for existing apps is precise: they must target Android 15 (API level 35) or higher to remain available to new users on devices running a newer Android version, and an app targeting API 34 or lower is only available on devices running that version or lower ([[https://developer.android.com/google/play/requirements/target-sdk|Android Developers: target API level requirements]]).",
-          "Current examples: apps uploaded to App Store Connect since 28 April 2026 must be built with Xcode 26 and the 26 SDKs, and since 9 September 2026 iOS apps must target iOS 13 or later ([[https://developer.apple.com/news/upcoming-requirements/|Apple: upcoming requirements]]). From 31 August 2026, new Android apps and updates must target Android 16 (API level 36), with an extension to 1 November 2026 available on request. All of these dates may change; the calendar above lists them together.",
+          "When Apple and Google release major OS versions, test the app on them, adopt required changes and fix anything that breaks. Google Play requires new apps and updates to target an API level within a year of the latest major Android release. Its rule for existing apps is precise: they must target Android 15 (API level 35) or higher to remain available to new users on devices running a newer Android version, and an app targeting API 34 or lower is only available on devices running that version or lower.",
+          "Current examples: apps uploaded to App Store Connect since 28 April 2026 must be built with Xcode 26 and the 26 SDKs, and since 9 September 2026 iOS apps must target iOS 13 or later. From 31 August 2026, new Android apps and updates must target Android 16 (API level 36), with an extension to 1 November 2026 available on request. All of these dates may change; the calendar above lists them together.",
         ],
         visual: { variant: "pulse", accent: "orange", caption: "OS releases, store policies and dependencies change on their own schedules; maintenance keeps the app in step." },
       },
       {
         heading: "Dependencies, SDKs and Privacy Declarations",
         body: [
-          "Frameworks like React Native and Flutter, and third-party SDKs, release updates regularly. Falling far behind makes each upgrade harder and riskier. React Native commits to maintaining only the latest three minor series and ships critical fixes as patch versions of those series ([[https://reactnative.dev/releases/overview|React Native: releases overview]]). Update on a regular cadence, and apply security patches promptly.",
-          "SDKs also carry compliance duties. Apple requires privacy manifests for a listed set of commonly used SDKs (including Firebase, Flutter and OneSignal) and signatures for binary dependencies when you add them in a new app or update, and reminds developers that they are responsible for all the code an SDK includes ([[https://developer.apple.com/support/third-party-SDK-requirements/|Apple: third-party SDK requirements]]). Google's Data safety form must cover data collected by SDKs too, and Google says discrepancies can lead to blocked updates or removal ([[https://support.google.com/googleplay/android-developer/answer/10787469|Google Play Help: Data safety]]). Each time an SDK is added or upgraded, check both declarations. The [[/blogs/mobile-app-data-privacy|mobile app data privacy guide]] covers the wider obligations.",
+          "Frameworks like React Native and Flutter, and third-party SDKs, release updates regularly. Falling far behind makes each upgrade harder and riskier. React Native commits to maintaining only the latest three minor series and ships critical fixes as patch versions of those series. Update on a regular cadence, and apply security patches promptly.",
+          "SDKs also carry compliance duties. Apple requires privacy manifests for a listed set of commonly used SDKs (including Firebase, Flutter and OneSignal) and signatures for binary dependencies when you add them in a new app or update, and reminds developers that they are responsible for all the code an SDK includes. Google's Data safety form must cover data collected by SDKs too, and Google says discrepancies can lead to blocked updates or removal. Each time an SDK is added or upgraded, check both declarations. The [[/blogs/mobile-app-data-privacy|mobile app data privacy guide]] covers the wider obligations.",
         ],
       },
       {
         heading: "Monitoring and Crash Reporting",
         body: [
-          "Crash reporting and performance monitoring show what users actually experience. Google Play's Android vitals sets bad-behaviour thresholds for user-perceived crash rate (1.09% overall, 8% per phone model) and user-perceived ANR rate (0.47% overall, 8% per phone model); Google says that above them Play may reduce the visibility of the app and may show a warning on the store listing ([[https://developer.android.com/topic/performance/vitals|Android Developers: Android vitals]]). Review these numbers after every release.",
+          "Crash reporting and performance monitoring show what users actually experience. Google Play's Android vitals sets bad-behaviour thresholds for user-perceived crash rate (1.09% overall, 8% per phone model) and user-perceived ANR rate (0.47% overall, 8% per phone model); Google says that above them Play may reduce the visibility of the app and may show a warning on the store listing. Review these numbers after every release.",
           "When users report crashes or slowness, the [[/blogs/mobile-app-crash-reporting|diagnostic guide to crashes and slow apps]] maps each symptom to where to look and who owns the fix. For the engineering fixes themselves, see [[/blogs/mobile-app-performance-optimization|app performance optimisation]].",
         ],
       },
@@ -702,9 +702,9 @@ export const mobilePosts3: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Apple: [[https://developer.apple.com/news/upcoming-requirements/|Upcoming requirements]]; [[https://developer.apple.com/help/account/access/resolving-access-issues/|Apple Developer: resolving access issues (membership expiry)]]; [[https://developer.apple.com/support/third-party-SDK-requirements/|Third-party SDK requirements]].",
-          "Google: [[https://developer.android.com/google/play/requirements/target-sdk|Target API level requirements for Google Play apps (updated 1 October 2026)]]; [[https://developer.android.com/topic/performance/vitals|Android vitals]]; [[https://developer.android.com/developer-verification|Android developer verification]]; [[https://support.google.com/googleplay/android-developer/announcements/13412212|Google Play policy announcements]]; [[https://support.google.com/googleplay/android-developer/answer/10787469|Google Play Help: Data safety section]].",
-          "Frameworks: [[https://reactnative.dev/releases/overview|React Native: releases overview]]; [[https://reactnative.dev/releases/versioning-policy|React Native: versioning policy]]; [[https://docs.flutter.dev/release/compatibility-policy|Flutter: compatibility policy]].",
+          "Apple: Upcoming requirements; Apple Developer: resolving access issues (membership expiry); Third-party SDK requirements.",
+          "Google: Target API level requirements for Google Play apps (updated 1 October 2026); Android vitals; Android developer verification; Google Play policy announcements; Google Play Help: Data safety section.",
+          "Frameworks: React Native: releases overview; React Native: versioning policy; Flutter: compatibility policy.",
           "Accessed 15 October 2026. Platform deadlines, policies and support windows change; check the source pages before planning around a date.",
         ],
       },

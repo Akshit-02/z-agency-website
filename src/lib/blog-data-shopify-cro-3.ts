@@ -903,9 +903,9 @@ export const shopifyCroPosts3: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Benchmark data (industry research, not Shopify-specific): [[https://baymard.com/blog/current-state-ecommerce-product-page-ux|Baymard Institute: Product Page UX 2026 (updated 18 March 2026)]].",
-          "Shopify (official): [[https://help.shopify.com/en/manual/products/product-media/add-media|Adding media to products (250-media limit)]]; [[https://help.shopify.com/en/manual/products/product-media/product-media-types|Product media types and size requirements]]; [[https://help.shopify.com/en/manual/products/combined-listings-app|Combined Listings app]]; [[https://changelog.shopify.com/posts/we-ve-increased-the-product-variant-limit-to-2048|Changelog: variant limit increased to 2,048]]; [[https://help.shopify.com/en/manual/custom-data/metafields/connect-metafields|Connecting metafields to your theme]]; [[https://help.shopify.com/en/manual/custom-data/metaobjects|Metaobjects]]; [[https://help.shopify.com/en/manual/online-store/themes/theme-structure/templates|Theme templates]]; [[https://help.shopify.com/en/manual/online-store/themes/customizing-themes/accessibility|Accessibility best practices for themes]].",
-          "Accessibility standard: [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C: What's new in WCAG 2.2]].",
+          "Benchmark data (industry research, not Shopify-specific): Baymard Institute: Product Page UX 2026 (updated 18 March 2026).",
+          "Shopify (official): Adding media to products (250-media limit); Product media types and size requirements; Combined Listings app; Changelog: variant limit increased to 2,048; Connecting metafields to your theme; Metaobjects; Theme templates; Accessibility best practices for themes.",
+          "Accessibility standard: W3C: What's new in WCAG 2.2.",
           "Accessed 15 October 2026. Shopify plan features and limits change; check the current pages before relying on them.",
         ],
       },

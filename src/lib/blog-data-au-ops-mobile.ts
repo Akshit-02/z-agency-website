@@ -79,8 +79,8 @@ export const auOpsMobilePosts: BlogPost[] = [
         table: {
           headers: ["Layer", "Typical choices"],
           rows: [
-            ["**Spatial data store**", "PostgreSQL with [[https://postgis.net/|PostGIS]], or spatial features of your database"],
-            ["**Reference data**", "[[https://data.gov.au/data/dataset/geocoded-national-address-file-g-naf|G-NAF]] addresses, government open spatial data, your assets and customers"],
+            ["**Spatial data store**", "PostgreSQL with PostGIS, or spatial features of your database"],
+            ["**Reference data**", "G-NAF addresses, government open spatial data, your assets and customers"],
             ["**Geocoding**", "Address to coordinates, with validation and manual correction"],
             ["**APIs**", "Location queries, routing, geofence events"],
             ["**Map rendering**", "Web and mobile map libraries with vector or raster tiles"],
@@ -214,7 +214,7 @@ export const auOpsMobilePosts: BlogPost[] = [
           rows: [
             ["**Devices and sensors**", "Measure temperature, humidity, vibration, levels, power", "Calibration, battery life, enclosure"],
             ["**Connectivity**", "Cellular, LoRaWAN, Wi-Fi, satellite", "Coverage at the actual site"],
-            ["**Ingestion**", "Receive messages securely", "[[https://mqtt.org/|MQTT]] is common; authenticate each device"],
+            ["**Ingestion**", "Receive messages securely", "MQTT is common; authenticate each device"],
             ["**Storage**", "Time-series readings and metadata", "Retention and downsampling policies"],
             ["**Rules and alerts**", "Detect conditions and notify", "Durations, hysteresis, escalation, acknowledgement"],
             ["**Apps and dashboards**", "Status, history, actions", "Mobile for on-call staff"],
@@ -370,7 +370,7 @@ export const auOpsMobilePosts: BlogPost[] = [
           headers: ["Option", "Fits when"],
           rows: [
             ["**Routing SaaS**", "Standard deliveries or visits; fast start"],
-            ["**Solver library**", "Unusual constraints or objectives; embedded in your platform ([[https://developers.google.com/optimization/routing|Google OR-Tools]])"],
+            ["**Solver library**", "Unusual constraints or objectives; embedded in your platform"],
             ["**Hybrid**", "SaaS for routing, custom integration with orders, telematics and customer notifications"],
           ],
         },
@@ -378,7 +378,7 @@ export const auOpsMobilePosts: BlogPost[] = [
       {
         heading: "Australian considerations",
         body: [
-          "Long regional distances, limited coverage and remote access make travel-time data and offline driver apps important. For heavy vehicles, plan work and rest in line with fatigue rules under the Heavy Vehicle National Law ([[https://www.nhvr.gov.au/safety-accreditation-compliance/fatigue-management|NHVR]]), noting that some states have different arrangements; software supports compliance but does not ensure it. See [[/blogs/gis-application-development|GIS application development]] for address and location data.",
+          "Long regional distances, limited coverage and remote access make travel-time data and offline driver apps important. For heavy vehicles, plan work and rest in line with fatigue rules under the Heavy Vehicle National Law, noting that some states have different arrangements; software supports compliance but does not ensure it. See [[/blogs/gis-application-development|GIS application development]] for address and location data.",
         ],
       },
       {
@@ -482,8 +482,8 @@ export const auOpsMobilePosts: BlogPost[] = [
         table: {
           headers: ["Store", "How it works", "Recovery options"],
           rows: [
-            ["**App Store phased release**", "Seven days: 1, 2, 5, 10, 20, 50, 100 per cent of users with automatic updates ([[https://developer.apple.com/help/app-store-connect/update-your-app/release-a-version-update-in-phases/|Apple]])", "Pause up to 30 days in total; release all at once; submit a fix"],
-            ["**Google Play staged rollout**", "You set and increase the percentage; can target countries ([[https://support.google.com/googleplay/android-developer/answer/6346149|Google Play]])", "Halt and resume; release a fixed version"],
+            ["**App Store phased release**", "Seven days: 1, 2, 5, 10, 20, 50, 100 per cent of users with automatic updates", "Pause up to 30 days in total; release all at once; submit a fix"],
+            ["**Google Play staged rollout**", "You set and increase the percentage; can target countries", "Halt and resume; release a fixed version"],
           ],
         },
       },
@@ -631,7 +631,7 @@ export const auOpsMobilePosts: BlogPost[] = [
           rows: [
             ["**App name**", "App Store", "30 characters (minimum 2)", "Search and conversion", "Can be localised. Lead with a brand plus a plain description of what the app does."],
             ["**Subtitle**", "App Store", "30 characters", "Search and conversion", "Shown under the name everywhere on the store. Do not repeat words from the name."],
-            ["**Keywords**", "App Store", "100 characters ([[https://developer.apple.com/app-store/product-page/|product page guide]]) or 100 bytes ([[https://developer.apple.com/help/app-store-connect/reference/app-information/platform-version-information|App Store Connect]])", "Search", "Comma-separated, no spaces after commas. Avoid plurals of words already included, category names, the word \"app\", duplicates, competitor names and special characters."],
+            ["**Keywords**", "App Store", "100 characters or 100 bytes", "Search", "Comma-separated, no spaces after commas. Avoid plurals of words already included, category names, the word \"app\", duplicates, competitor names and special characters."],
             ["**Promotional text**", "App Store", "170 characters", "Conversion only", "Does not affect search ranking. Can be updated without a new app version."],
             ["**Description**", "App Store", "Check App Store Connect", "Conversion", "The first sentence matters most. Apple advises against keyword stuffing and against specific prices in the description."],
             ["**Screenshots**", "App Store", "Up to 10", "Conversion", "Lead with the outcome the user wants, not settings or login screens."],
@@ -710,10 +710,10 @@ export const auOpsMobilePosts: BlogPost[] = [
         heading: "Testing and custom pages after launch",
         body: [],
         checklist: [
-          "**Apple product page optimisation:** test up to three treatments of icon, screenshots and previews for up to 90 days, one test at a time. New metadata needs App Review, and alternate icons must be in the app binary ([[https://developer.apple.com/app-store/product-page-optimization/|Apple]]).",
-          "**Apple custom product pages:** up to 70 additional pages with different screenshots, promotional text and previews, linkable from campaigns. You can assign keywords so a page appears in search for them; each keyword combination can belong to only one page ([[https://developer.apple.com/app-store/custom-product-pages/|Apple]]).",
-          "**Google Play store listing experiments:** one default-graphics experiment or up to five localised experiments at a time, each with up to two variants against the current listing ([[https://support.google.com/googleplay/android-developer/answer/6227309|Google]]).",
-          "**Google Play custom store listings:** up to 50, targetable by country or region, pre-registration, ads traffic, search keywords, lapsed or churned users, buyer segments and custom audiences. Name, icon, descriptions and graphics can change; contact details, privacy policy and category are shared ([[https://support.google.com/googleplay/android-developer/answer/9867158|Google]]).",
+          "**Apple product page optimisation:** test up to three treatments of icon, screenshots and previews for up to 90 days, one test at a time. New metadata needs App Review, and alternate icons must be in the app binary.",
+          "**Apple custom product pages:** up to 70 additional pages with different screenshots, promotional text and previews, linkable from campaigns. You can assign keywords so a page appears in search for them; each keyword combination can belong to only one page.",
+          "**Google Play store listing experiments:** one default-graphics experiment or up to five localised experiments at a time, each with up to two variants against the current listing.",
+          "**Google Play custom store listings:** up to 50, targetable by country or region, pre-registration, ads traffic, search keywords, lapsed or churned users, buyer segments and custom audiences. Name, icon, descriptions and graphics can change; contact details, privacy policy and category are shared.",
           "Test one idea at a time and run tests long enough for reliable results.",
         ],
       },
@@ -753,8 +753,8 @@ export const auOpsMobilePosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Apple: [[https://developer.apple.com/app-store/product-page/|Creating your product page]]; [[https://developer.apple.com/help/app-store-connect/reference/app-information/app-information|App Store Connect: app information]]; [[https://developer.apple.com/help/app-store-connect/reference/app-information/platform-version-information|App Store Connect: platform version information]]; [[https://developer.apple.com/help/app-store-connect/reference/app-preview-specifications|App preview specifications]]; [[https://developer.apple.com/app-store/custom-product-pages/|Custom product pages]]; [[https://developer.apple.com/app-store/product-page-optimization/|Product page optimisation]]; [[https://developer.apple.com/documentation/storekit/requesting-app-store-reviews|Requesting App Store reviews]]; [[https://developer.apple.com/documentation/storekit/skstorereviewcontroller|SKStoreReviewController (deprecated)]]; [[https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews|Human Interface Guidelines: ratings and reviews]]; [[https://developer.apple.com/app-store/review/guidelines/|App Store Review Guidelines]].",
-          "Google: [[https://support.google.com/googleplay/android-developer/answer/9859152|Play Console: store listing]]; [[https://support.google.com/googleplay/android-developer/answer/9898842|Play metadata policy]]; [[https://support.google.com/googleplay/android-developer/answer/9866151|Preview assets]]; [[https://support.google.com/googleplay/android-developer/answer/9867158|Custom store listings]]; [[https://support.google.com/googleplay/android-developer/answer/6227309|Store listing experiments]]; [[https://developer.android.com/guide/playcore/in-app-review|In-App Review API]].",
+          "Apple: Creating your product page; App Store Connect: app information; App Store Connect: platform version information; App preview specifications; Custom product pages; Product page optimisation; Requesting App Store reviews; SKStoreReviewController (deprecated); Human Interface Guidelines: ratings and reviews; App Store Review Guidelines.",
+          "Google: Play Console: store listing; Play metadata policy; Preview assets; Custom store listings; Store listing experiments; In-App Review API.",
           "Accessed 15 October 2026. Store limits, APIs and policies change; check the current pages before you submit.",
         ],
       },

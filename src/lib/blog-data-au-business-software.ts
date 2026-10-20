@@ -145,11 +145,11 @@ export const auBusinessSoftwarePosts: BlogPost[] = [
         heading: "Australian requirements that shape a CRM",
         body: [
           "Whichever route you choose, a CRM used in Australia has to support some specific obligations. These belong in the requirements, because retrofitting them is expensive.",
-          "**Consent and unsubscribe.** Under the Spam Act 2003, commercial electronic messages such as marketing email and SMS generally need consent, must identify the sender and must include a functional unsubscribe facility; requests must be honoured within five working days ([[https://www.acma.gov.au/avoid-sending-spam|ACMA]]). There is no small business exemption. Store how and when consent was obtained, apply unsubscribes across every tool that sends messages, and keep the history. Purely factual messages, such as an appointment reminder with no promotional content, are treated differently, but the content decides that, not the template name.",
-          "**Calling.** If your team makes telemarketing calls, the Do Not Call Register rules and the industry standard set calling hours: 9am to 8pm on weekdays and 9am to 5pm on Saturdays, with no calls on Sundays or public holidays ([[https://www.donotcall.gov.au/industry/industry-overview/industry-standards|Do Not Call Register]]). A CRM that schedules calls should account for the recipient's time zone, which matters in a country with several.",
-          "**Privacy.** Businesses covered by the Privacy Act must take reasonable steps to protect personal information (APP 11), give individuals access to it on request (APP 12) and correct it (APP 13). If CRM data is stored or accessed overseas, APP 8 applies ([[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information|OAIC]]). Many businesses with turnover of A$3 million or less are exempt, but not all, so check with the [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/small-business|OAIC]].",
-          "**Business identifiers.** For business customers, store the ABN and validate it. The Australian Business Register offers ABN Lookup web services for this ([[https://abr.business.gov.au/Tools/WebServices|ABR]]). GST registration status and trading names help with invoicing and deduplication.",
-          "**Accounting sync.** Xero's accounting API and MYOB's Business API both use OAuth 2.0 ([[https://developer.xero.com/documentation/|Xero]], [[https://developer.myob.com/|MYOB]]). Decide which system owns contacts, invoices and payment status, and how corrections flow back. Our guide to [[/blogs/api-integration-australia|API integration for Australian businesses]] covers this in depth.",
+          "**Consent and unsubscribe.** Under the Spam Act 2003, commercial electronic messages such as marketing email and SMS generally need consent, must identify the sender and must include a functional unsubscribe facility; requests must be honoured within five working days. There is no small business exemption. Store how and when consent was obtained, apply unsubscribes across every tool that sends messages, and keep the history. Purely factual messages, such as an appointment reminder with no promotional content, are treated differently, but the content decides that, not the template name.",
+          "**Calling.** If your team makes telemarketing calls, the Do Not Call Register rules and the industry standard set calling hours: 9am to 8pm on weekdays and 9am to 5pm on Saturdays, with no calls on Sundays or public holidays. A CRM that schedules calls should account for the recipient's time zone, which matters in a country with several.",
+          "**Privacy.** Businesses covered by the Privacy Act must take reasonable steps to protect personal information (APP 11), give individuals access to it on request (APP 12) and correct it (APP 13). If CRM data is stored or accessed overseas, APP 8 applies. Many businesses with turnover of A$3 million or less are exempt, but not all, so check with the OAIC.",
+          "**Business identifiers.** For business customers, store the ABN and validate it. The Australian Business Register offers ABN Lookup web services for this. GST registration status and trading names help with invoicing and deduplication.",
+          "**Accounting sync.** Xero's accounting API and MYOB's Business API both use OAuth 2.0. Decide which system owns contacts, invoices and payment status, and how corrections flow back. Our guide to [[/blogs/api-integration-australia|API integration for Australian businesses]] covers this in depth.",
         ],
       },
       {
@@ -248,9 +248,9 @@ export const auBusinessSoftwarePosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "**Marketing and calling:** [[https://www.acma.gov.au/avoid-sending-spam|ACMA, avoid sending spam]]; [[https://www.donotcall.gov.au/industry/industry-overview/industry-standards|Do Not Call Register, industry standards]].",
-          "**Privacy:** [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information|OAIC, APP guidelines chapter 8]]; [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/small-business|OAIC, small business]].",
-          "**Integrations:** [[https://developer.xero.com/documentation/|Xero developer documentation]]; [[https://developer.myob.com/|MYOB developer portal]]; [[https://abr.business.gov.au/Tools/WebServices|ABR, ABN Lookup web services]].",
+          "**Marketing and calling:** ACMA, avoid sending spam; Do Not Call Register, industry standards.",
+          "**Privacy:** OAIC, APP guidelines chapter 8; OAIC, small business.",
+          "**Integrations:** Xero developer documentation; MYOB developer portal; ABR, ABN Lookup web services.",
           "The extend-or-build options, checklist and example are ours. Rules change; re-check before relying on them. Nothing here is legal advice or ZSpace client data.",
         ],
       },
@@ -355,10 +355,10 @@ export const auBusinessSoftwarePosts: BlogPost[] = [
         heading: "Australian triggers that force the issue",
         body: [
           "Some modernisation projects are planned. Others are triggered by an external change. These are common in Australia.",
-          "**Unsupported platforms.** Microsoft ended support for Windows 10 on 14 October 2025 ([[https://support.microsoft.com/en-us/windows/windows-10-support-has-ended-on-october-14-2025-2ca8b313-1946-43d3-b55c-2b95b107f281|Microsoft]]). Line-of-business software that depends on an old OS, database or runtime inherits that risk. ASD's Essential Eight treats removing unsupported internet-facing services and key applications as part of patching ([[https://www.cyber.gov.au/business-government/asds-cyber-security-frameworks/essential-eight/essential-eight-maturity-model-and-ism-mapping|ASD]]). It is guidance, not law, for most private businesses, but it is a sound baseline.",
-          "**Payroll and tax reporting.** Single Touch Payroll requires payroll software to report to the ATO each pay day, and Payday Super changes from 1 July 2026 add reporting of super-related earnings ([[https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/what-is-stp|ATO]]). Home-grown payroll or job-costing systems that feed payroll often need rework when these rules change.",
-          "**eInvoicing.** Peppol eInvoicing uses the ABN as the business identifier, and Commonwealth agencies pay Peppol invoices on shorter terms ([[https://www.ato.gov.au/businesses-and-organisations/einvoicing/about-peppol/identifying-australian-businesses-on-the-peppol-network|ATO]]). Older finance systems may need an access point integration or replacement to take part.",
-          "**Privacy and breaches.** If you are covered by the Privacy Act, you must protect personal information and notify the OAIC and individuals of eligible data breaches. The OAIC received 1,205 notifications in 2025, with malicious or criminal attacks the leading cause ([[https://www.oaic.gov.au/news/media-centre/data-breach-notifications-increase-to-all-time-high-in-2025,-new-ndb-stats-show|OAIC]]). Legacy systems without encryption, access logs or MFA make both prevention and investigation harder.",
+          "**Unsupported platforms.** Microsoft ended support for Windows 10 on 14 October 2025. Line-of-business software that depends on an old OS, database or runtime inherits that risk. ASD's Essential Eight treats removing unsupported internet-facing services and key applications as part of patching. It is guidance, not law, for most private businesses, but it is a sound baseline.",
+          "**Payroll and tax reporting.** Single Touch Payroll requires payroll software to report to the ATO each pay day, and Payday Super changes from 1 July 2026 add reporting of super-related earnings. Home-grown payroll or job-costing systems that feed payroll often need rework when these rules change.",
+          "**eInvoicing.** Peppol eInvoicing uses the ABN as the business identifier, and Commonwealth agencies pay Peppol invoices on shorter terms. Older finance systems may need an access point integration or replacement to take part.",
+          "**Privacy and breaches.** If you are covered by the Privacy Act, you must protect personal information and notify the OAIC and individuals of eligible data breaches. The OAIC received 1,205 notifications in 2025, with malicious or criminal attacks the leading cause. Legacy systems without encryption, access logs or MFA make both prevention and investigation harder.",
           "**Integration demands.** Customers and partners increasingly expect online portals, real-time status and data exchange. A system without an API becomes a bottleneck. See [[/blogs/api-integration-australia|API integration for Australian businesses]].",
         ],
       },
@@ -383,7 +383,7 @@ export const auBusinessSoftwarePosts: BlogPost[] = [
       {
         heading: "Step 2: Choose an option per system",
         body: [
-          "AWS describes seven common migration strategies, often called the 7 Rs ([[https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html|AWS]]). They are a useful vocabulary for modernisation too. Choose per system, and sometimes per component.",
+          "AWS describes seven common migration strategies, often called the 7 Rs. They are a useful vocabulary for modernisation too. Choose per system, and sometimes per component.",
         ],
         table: {
           headers: ["Option", "What it means", "Good fit when", "Limits"],
@@ -406,7 +406,7 @@ export const auBusinessSoftwarePosts: BlogPost[] = [
         heading: "Step 3: Modernise incrementally where you can",
         body: [
           "Big-bang rewrites fail in a predictable way: the old system keeps changing while the new one is built, the business rules turn out to be more complex than documented, and the switch-over carries all the risk on one day.",
-          "The alternative is incremental replacement. Martin Fowler's **strangler fig** pattern places a routing layer in front of the old system, then moves one function at a time to new code until the old system can be retired ([[https://martinfowler.com/bliki/StranglerFigApplication.html|Martin Fowler]]). Each step delivers value and can be reversed.",
+          "The alternative is incremental replacement. Martin Fowler's **strangler fig** pattern places a routing layer in front of the old system, then moves one function at a time to new code until the old system can be retired. Each step delivers value and can be reversed.",
         ],
         code: {
           label: "Incremental replacement with a routing layer",
@@ -488,9 +488,9 @@ traffic, keep rollback, then retire`,
       {
         heading: "Sources",
         body: [
-          "**Security and platforms:** [[https://www.cyber.gov.au/business-government/asds-cyber-security-frameworks/essential-eight/essential-eight-maturity-model-and-ism-mapping|ASD, Essential Eight maturity model and ISM mapping]]; [[https://support.microsoft.com/en-us/windows/windows-10-support-has-ended-on-october-14-2025-2ca8b313-1946-43d3-b55c-2b95b107f281|Microsoft, Windows 10 end of support]]; [[https://www.oaic.gov.au/news/media-centre/data-breach-notifications-increase-to-all-time-high-in-2025,-new-ndb-stats-show|OAIC, NDB statistics 2025]].",
-          "**Tax and invoicing:** [[https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/what-is-stp|ATO, Single Touch Payroll]]; [[https://www.ato.gov.au/businesses-and-organisations/einvoicing/about-peppol/identifying-australian-businesses-on-the-peppol-network|ATO, Peppol]]; [[https://business.gov.au/finance/accounting/record-keeping|business.gov.au, record keeping]].",
-          "**Methods:** [[https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html|AWS, migration strategies]]; [[https://martinfowler.com/bliki/StranglerFigApplication.html|Martin Fowler, strangler fig application]].",
+          "**Security and platforms:** ASD, Essential Eight maturity model and ISM mapping; Microsoft, Windows 10 end of support; OAIC, NDB statistics 2025.",
+          "**Tax and invoicing:** ATO, Single Touch Payroll; ATO, Peppol; business.gov.au, record keeping.",
+          "**Methods:** AWS, migration strategies; Martin Fowler, strangler fig application.",
           "The scorecard, roadmap and example are ours. Some ATO facts are summarised from official guidance and may change; check the current position before relying on them. Nothing here is ZSpace client data or tax advice.",
         ],
       },
@@ -598,16 +598,16 @@ traffic, keep rollback, then retire`,
       {
         heading: "Australian regions and data location",
         body: [
-          "All three major providers operate in Australia. **AWS** runs Asia Pacific (Sydney) and Asia Pacific (Melbourne), each with three Availability Zones; Melbourne must be enabled (opt-in) before use ([[https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html|AWS]]). **Microsoft Azure** runs Australia East (New South Wales, with availability zones) paired with Australia Southeast (Victoria), and Australia Central and Central 2 in Canberra, with access to Central 2 restricted ([[https://learn.microsoft.com/en-us/azure/reliability/regions-list|Microsoft]]). **Google Cloud** runs australia-southeast1 (Sydney) and australia-southeast2 (Melbourne) ([[https://docs.cloud.google.com/compute/docs/regions-zones|Google Cloud]]).",
+          "All three major providers operate in Australia. **AWS** runs Asia Pacific (Sydney) and Asia Pacific (Melbourne), each with three Availability Zones; Melbourne must be enabled (opt-in) before use. **Microsoft Azure** runs Australia East (New South Wales, with availability zones) paired with Australia Southeast (Victoria), and Australia Central and Central 2 in Canberra, with access to Central 2 restricted. **Google Cloud** runs australia-southeast1 (Sydney) and australia-southeast2 (Melbourne).",
           "Region choice affects latency, resilience and, for some customers, contractual requirements. If you are building a product for many customers, [[/blogs/saas-development-australia|SaaS development in Australia]] covers tenancy and data location decisions. Not every service or instance type is available in every region, so check the services you plan to use, including any AI services.",
-          "**Privacy.** If your business is covered by the Privacy Act, APP 8 requires reasonable steps before personal information is disclosed to an overseas recipient, and you remain accountable for that recipient. The OAIC's guidelines also explain when storing personal information with an overseas cloud provider may be a 'use' rather than a 'disclosure', for example where a binding contract limits the provider's handling and you retain effective control ([[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information|OAIC]]). Either way, choosing an Australian region is only one step: also map support access, backups, monitoring, email and AI services.",
-          "**Government work.** ASD's IRAP program endorses assessors who assess systems and cloud services against the Information Security Manual, and the Hosting Certification Framework applies to government hosting arrangements ([[https://www.hostingcertification.gov.au|Hosting Certification Framework]]). These matter mainly if you hold government data or sell to agencies.",
+          "**Privacy.** If your business is covered by the Privacy Act, APP 8 requires reasonable steps before personal information is disclosed to an overseas recipient, and you remain accountable for that recipient. The OAIC's guidelines also explain when storing personal information with an overseas cloud provider may be a 'use' rather than a 'disclosure', for example where a binding contract limits the provider's handling and you retain effective control. Either way, choosing an Australian region is only one step: also map support access, backups, monitoring, email and AI services.",
+          "**Government work.** ASD's IRAP program endorses assessors who assess systems and cloud services against the Information Security Manual, and the Hosting Certification Framework applies to government hosting arrangements. These matter mainly if you hold government data or sell to agencies.",
         ],
       },
       {
         heading: "Shared responsibility: what you still own",
         body: [
-          "Cloud providers secure the physical facilities, hardware and core infrastructure. You secure what you build and configure on top. The split shifts depending on the service: you patch the operating system on a virtual machine, but not on a fully managed database ([[https://aws.amazon.com/compliance/shared-responsibility-model/|AWS]]; [[https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility|Microsoft]]). ASD's ACSC publishes cloud shared responsibility guidance written for small and medium businesses ([[https://www.cyber.gov.au/business-government/protecting-devices-systems/cloud-computing/cloud-shared-responsibility-model-guidance-for-individuals-and-small-and-medium-businesses|ACSC]]).",
+          "Cloud providers secure the physical facilities, hardware and core infrastructure. You secure what you build and configure on top. The split shifts depending on the service: you patch the operating system on a virtual machine, but not on a fully managed database. ASD's ACSC publishes cloud shared responsibility guidance written for small and medium businesses.",
         ],
         table: {
           headers: ["Area", "Your responsibility in practice"],
@@ -622,13 +622,13 @@ traffic, keep rollback, then retire`,
         },
         callout: {
           type: "note",
-          text: "If your business has annual turnover over A$3 million, the Cyber Security Act 2024 requires reporting a ransomware or cyber extortion payment to ASD within 72 hours ([[https://www.homeaffairs.gov.au/cyber-security-subsite/files/factsheet-ransomware-payment-reporting.pdf|Home Affairs]]). Tested, separate backups are the best way to avoid ever facing that decision.",
+          text: "If your business has annual turnover over A$3 million, the Cyber Security Act 2024 requires reporting a ransomware or cyber extortion payment to ASD within 72 hours. Tested, separate backups are the best way to avoid ever facing that decision.",
         },
       },
       {
         heading: "Choosing a migration approach per workload",
         body: [
-          "Decide per application, not for the whole estate. The common approaches, drawn from the AWS migration strategies ([[https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html|AWS]]):",
+          "Decide per application, not for the whole estate. The common approaches, drawn from the AWS migration strategies:",
         ],
         table: {
           headers: ["Approach", "What happens", "When it fits", "Trade-off"],
@@ -687,14 +687,14 @@ Rollback -> source kept ready until sign-off`,
       {
         heading: "Performance and ongoing governance",
         body: [
-          "After migration, monitor what users experience, not just server metrics; [[/blogs/ecommerce-observability|observability]] explains logs, metrics and traces in practice, and [[/blogs/ecommerce-disaster-recovery|disaster recovery planning]] covers RPO and RTO in more depth. Set up alerts for availability, error rates and slow responses. The AWS Well-Architected Framework's pillars are a useful checklist for ongoing reviews: operational excellence, security, reliability, performance efficiency, cost optimisation and sustainability ([[https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html|AWS]]).",
+          "After migration, monitor what users experience, not just server metrics; [[/blogs/ecommerce-observability|observability]] explains logs, metrics and traces in practice, and [[/blogs/ecommerce-disaster-recovery|disaster recovery planning]] covers RPO and RTO in more depth. Set up alerts for availability, error rates and slow responses. The AWS Well-Architected Framework's pillars are a useful checklist for ongoing reviews: operational excellence, security, reliability, performance efficiency, cost optimisation and sustainability.",
           "Assign ownership. Someone must own identity, patching, backups, cost and incident response (the [[/blogs/website-security-australia|website security checklist]] has a monthly, quarterly and annual calendar), whether that is an internal person or a managed service provider with a clear contract.",
         ],
       },
       {
         heading: "Choosing help: questions for a migration partner",
         body: [
-          "ASD's ACSC suggests asking managed service providers whether they implement better-practice security such as the Essential Eight, administer systems securely, monitor activity, assess systems regularly, and can respond to incidents ([[https://www.cyber.gov.au/business-government/supplier-cyber-risk-management/managed-service-providers/questions-to-ask-managed-service-providers|ACSC]]). Add these migration-specific questions:",
+          "ASD's ACSC suggests asking managed service providers whether they implement better-practice security such as the Essential Eight, administer systems securely, monitor activity, assess systems regularly, and can respond to incidents. Add these migration-specific questions:",
         ],
         checklist: [
           "How will you run discovery, and what will it produce?",
@@ -729,10 +729,10 @@ Rollback -> source kept ready until sign-off`,
       {
         heading: "Sources",
         body: [
-          "**Regions:** [[https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html|AWS Regions]]; [[https://learn.microsoft.com/en-us/azure/reliability/regions-list|Microsoft Azure regions list]]; [[https://docs.cloud.google.com/compute/docs/regions-zones|Google Cloud regions and zones]].",
-          "**Security and responsibility:** [[https://aws.amazon.com/compliance/shared-responsibility-model/|AWS shared responsibility model]]; [[https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility|Microsoft, shared responsibility in the cloud]]; [[https://www.cyber.gov.au/business-government/protecting-devices-systems/cloud-computing/cloud-shared-responsibility-model-guidance-for-individuals-and-small-and-medium-businesses|ACSC, cloud shared responsibility guidance]]; [[https://www.cyber.gov.au/business-government/supplier-cyber-risk-management/managed-service-providers/questions-to-ask-managed-service-providers|ACSC, questions to ask managed service providers]]; [[https://www.homeaffairs.gov.au/cyber-security-subsite/files/factsheet-ransomware-payment-reporting.pdf|Home Affairs, ransomware payment reporting factsheet]].",
-          "**Privacy and government:** [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information|OAIC, APP guidelines chapter 8]]; [[https://www.cyber.gov.au/business-government/protecting-devices-systems/assessment-evaluation-programs/irap|ASD, IRAP]]; [[https://www.hostingcertification.gov.au|Hosting Certification Framework]].",
-          "**Methods:** [[https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html|AWS, migration strategies]]; [[https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html|AWS Well-Architected pillars]].",
+          "**Regions:** AWS Regions; Microsoft Azure regions list; Google Cloud regions and zones.",
+          "**Security and responsibility:** AWS shared responsibility model; Microsoft, shared responsibility in the cloud; ACSC, cloud shared responsibility guidance; ACSC, questions to ask managed service providers; Home Affairs, ransomware payment reporting factsheet.",
+          "**Privacy and government:** OAIC, APP guidelines chapter 8; ASD, IRAP; Hosting Certification Framework.",
+          "**Methods:** AWS, migration strategies; AWS Well-Architected pillars.",
           "The wave plan, checklists and example are ours. Regions and services change; check current availability. Nothing here is legal advice or ZSpace client data.",
         ],
       },

@@ -147,14 +147,14 @@ export const auSaasProductPosts: BlogPost[] = [
         heading: "Step 3: Design the first session",
         body: [
           "The first session sets expectations. A short welcome that asks one or two questions about the user's goal can tailor what comes next. Then guide towards one meaningful action, not a tour of every feature.",
-          "**Progressive disclosure** helps: show the essential controls first and reveal advanced options when users need them. **Empty states** do more teaching than tooltips, because they appear exactly when a user needs to know what to do; Nielsen Norman Group describes them as a way to [[https://www.nngroup.com/articles/empty-state-interface-design/|help users learn features and give them a direct route into key tasks]]. **Templates and sample data** let users see the product working before they invest effort.",
+          "**Progressive disclosure** helps: show the essential controls first and reveal advanced options when users need them. **Empty states** do more teaching than tooltips, because they appear exactly when a user needs to know what to do; Nielsen Norman Group describes them as a way to help users learn features and give them a direct route into key tasks. **Templates and sample data** let users see the product working before they invest effort.",
         ],
       },
       {
         heading: "Step 4: Checklists and contextual guidance",
         body: [
           "Checklists work when they are short (often three to five items), each item moves the user towards activation, completion reflects real actions, and progress is visible. Avoid checklists that list features or reward clicks on the checklist itself.",
-          "Contextual guidance, such as a hint when a user first opens the reports screen or a prompt after an error, beats a long upfront tour. Nielsen Norman Group's review of [[https://www.nngroup.com/articles/onboarding-tutorials/|onboarding tutorials vs contextual help]] (Page Laubheimer, February 2023) finds that tutorials interrupt users, do not necessarily improve task performance and are quickly forgotten, and recommends help triggered when the user would benefit from it. It treats walkthroughs as useful mainly for genuinely new interaction styles. Make guidance dismissible, do not repeat it endlessly, and make help findable later. Accessibility matters here too: guidance overlays must work with keyboards and screen readers and must not trap focus. See [[/blogs/accessibility-testing-australia|accessibility testing]].",
+          "Contextual guidance, such as a hint when a user first opens the reports screen or a prompt after an error, beats a long upfront tour. Nielsen Norman Group's review of onboarding tutorials vs contextual help (Page Laubheimer, February 2023) finds that tutorials interrupt users, do not necessarily improve task performance and are quickly forgotten, and recommends help triggered when the user would benefit from it. It treats walkthroughs as useful mainly for genuinely new interaction styles. Make guidance dismissible, do not repeat it endlessly, and make help findable later. Accessibility matters here too: guidance overlays must work with keyboards and screen readers and must not trap focus. See [[/blogs/accessibility-testing-australia|accessibility testing]].",
         ],
       },
       {
@@ -217,8 +217,8 @@ export const auSaasProductPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://www.nngroup.com/articles/onboarding-tutorials/|Page Laubheimer, Nielsen Norman Group: Onboarding Tutorials vs. Contextual Help]] (12 February 2023).",
-          "[[https://www.nngroup.com/articles/empty-state-interface-design/|Kate Kaplan, Nielsen Norman Group: Designing Empty States in Complex Applications: 3 Guidelines]] (19 September 2021).",
+          "Page Laubheimer, Nielsen Norman Group: Onboarding Tutorials vs. Contextual Help (12 February 2023).",
+          "Kate Kaplan, Nielsen Norman Group: Designing Empty States in Complex Applications: 3 Guidelines (19 September 2021).",
           "Accessed 14 October 2026.",
         ],
       },
@@ -339,7 +339,7 @@ export const auSaasProductPosts: BlogPost[] = [
         heading: "Step 4: Privacy and consent in Australia",
         body: [
           "**No specific cookie consent law, but the Privacy Act applies.** Australia does not have a dedicated cookie consent law like the EU. If your business is covered by the Privacy Act and analytics collects personal information, including identifiers that can reasonably identify someone, the Australian Privacy Principles apply: open and transparent management (APP 1), collection limits (APP 3), notification (APP 5), use and disclosure (APP 6), direct marketing (APP 7), overseas disclosure (APP 8) and security (APP 11).",
-          "**OAIC guidance on tracking pixels.** The OAIC's November 2024 guidance says the organisation deploying a tracking pixel is responsible for compliance, should do due diligence, configure tools to collect the minimum personal information necessary, generally avoid sending sensitive information to third parties (and get consent where it is collected), explain the tracking in privacy notices, and review configurations rather than 'set and forget' ([[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/tracking-pixels-and-privacy-obligations|OAIC]]).",
+          "**OAIC guidance on tracking pixels.** The OAIC's November 2024 guidance says the organisation deploying a tracking pixel is responsible for compliance, should do due diligence, configure tools to collect the minimum personal information necessary, generally avoid sending sensitive information to third parties (and get consent where it is collected), explain the tracking in privacy notices, and review configurations rather than 'set and forget'.",
           "**Practical steps.** Do not send names, emails or free-text content as analytics properties; use internal IDs. Exclude sensitive pages and fields. Know where each analytics vendor stores data. Offer an opt-out where tracking is not essential. If you serve users in the EU or UK, their consent rules may apply in addition. Reforms to Australian privacy law are being consulted on, so review this area regularly.",
         ],
       },
@@ -394,7 +394,7 @@ export const auSaasProductPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "**Privacy:** [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/tracking-pixels-and-privacy-obligations|OAIC, tracking pixels and privacy obligations]]; [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/small-business|OAIC, small business]]; [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information|OAIC, APP 8]].",
+          "**Privacy:** OAIC, tracking pixels and privacy obligations; OAIC, small business; OAIC, APP 8.",
           "The metric tables, checklists and example are ours. Nothing here is legal advice or ZSpace client data.",
         ],
       },
@@ -654,7 +654,7 @@ export const auSaasProductPosts: BlogPost[] = [
       {
         heading: "Step 1: Observability before optimisation",
         body: [
-          "You cannot scale what you cannot see. Collect structured logs, metrics and traces, with tenant and request identifiers. Define a few **service level indicators** that reflect user experience, such as the share of key requests that succeed within a latency target, and set **objectives** for them; Google's SRE guidance describes this approach ([[https://sre.google/sre-book/service-level-objectives/|Google SRE book]]).",
+          "You cannot scale what you cannot see. Collect structured logs, metrics and traces, with tenant and request identifiers. Define a few **service level indicators** that reflect user experience, such as the share of key requests that succeed within a latency target, and set **objectives** for them; Google's SRE guidance describes this approach.",
           "Use tracing to see where time goes in slow requests: database, external calls or application code. Alert on symptoms users feel, not every internal blip. Keep personal information out of telemetry. See [[/blogs/ecommerce-observability|observability in practice]].",
         ],
       },
@@ -702,7 +702,7 @@ export const auSaasProductPosts: BlogPost[] = [
       {
         heading: "Step 6: Tenant isolation as you grow",
         body: [
-          "Tenancy models range from pooled (shared infrastructure for all tenants), through bridge models, to silo (dedicated resources per tenant); AWS's SaaS Lens describes these trade-offs ([[https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/silo-pool-and-bridge-models.html|AWS SaaS Lens]]). Many products start pooled and move their largest or most regulated customers to dedicated resources later. Whatever the model, enforce tenant separation in code and data access, measure usage per tenant, and apply limits. Some customers will ask where their data is hosted; if you serve Australian customers, the major clouds run Australian regions, discussed in [[/blogs/cloud-migration-australia|cloud migration in Australia]].",
+          "Tenancy models range from pooled (shared infrastructure for all tenants), through bridge models, to silo (dedicated resources per tenant); AWS's SaaS Lens describes these trade-offs. Many products start pooled and move their largest or most regulated customers to dedicated resources later. Whatever the model, enforce tenant separation in code and data access, measure usage per tenant, and apply limits. Some customers will ask where their data is hosted; if you serve Australian customers, the major clouds run Australian regions, discussed in [[/blogs/cloud-migration-australia|cloud migration in Australia]].",
         ],
       },
       {
@@ -720,13 +720,13 @@ export const auSaasProductPosts: BlogPost[] = [
         },
         callout: {
           type: "tip",
-          text: "Our recommendation: keep a modular monolith with clear internal boundaries until a specific, measured problem forces a split. Martin Fowler's 'monolith first' argument remains sound advice for most products ([[https://martinfowler.com/bliki/MonolithFirst.html|Martin Fowler]]). See [[/blogs/ecommerce-microservices-vs-monolith|microservices vs monolith]] for the trade-offs.",
+          text: "Our recommendation: keep a modular monolith with clear internal boundaries until a specific, measured problem forces a split. Martin Fowler's 'monolith first' argument remains sound advice for most products. See [[/blogs/ecommerce-microservices-vs-monolith|microservices vs monolith]] for the trade-offs.",
         },
       },
       {
         heading: "Step 7: Watch costs as you scale",
         body: [
-          "Attribute cloud costs to services and, where you can, to tenants. Track cost per customer or per unit of value over time; costs rising faster than revenue is a scaling problem too. Right-size from real usage, switch off idle environments, set storage lifecycle rules, and review architecture that drives cost, such as chatty services or unbounded log retention. Do not cut reliability or security to save money. AWS's Well-Architected Framework covers cost optimisation alongside the other pillars ([[https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html|AWS]]).",
+          "Attribute cloud costs to services and, where you can, to tenants. Track cost per customer or per unit of value over time; costs rising faster than revenue is a scaling problem too. Right-size from real usage, switch off idle environments, set storage lifecycle rules, and review architecture that drives cost, such as chatty services or unbounded log retention. Do not cut reliability or security to save money. AWS's Well-Architected Framework covers cost optimisation alongside the other pillars.",
         ],
       },
       {
@@ -756,7 +756,7 @@ export const auSaasProductPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://sre.google/sre-book/service-level-objectives/|Google SRE book, service level objectives]]; [[https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/silo-pool-and-bridge-models.html|AWS SaaS Lens, silo, pool and bridge models]]; [[https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html|AWS Well-Architected pillars]]; [[https://martinfowler.com/bliki/MonolithFirst.html|Martin Fowler, MonolithFirst]].",
+          "Google SRE book, service level objectives; AWS SaaS Lens, silo, pool and bridge models; AWS Well-Architected pillars; Martin Fowler, MonolithFirst.",
           "The tables, checklists and example are ours. Nothing here is ZSpace client data.",
         ],
       },

@@ -85,7 +85,7 @@ export const aiContextPosts2: BlogPost[] = [
       {
         heading: "A practical AI data contract example",
         body: [
-          "The example below is illustrative and loosely follows the structure of the [[https://github.com/bitol-io/open-data-contract-standard|Open Data Contract Standard (ODCS)]], a YAML format maintained by the Bitol project under the Linux Foundation. It describes an order status dataset consumed by a customer support assistant and a refund agent.",
+          "The example below is illustrative and loosely follows the structure of the Open Data Contract Standard (ODCS), a YAML format maintained by the Bitol project under the Linux Foundation. It describes an order status dataset consumed by a customer support assistant and a refund agent.",
         ],
         code: {
           label: "Data contract for an AI-consumed dataset (illustrative)",
@@ -241,7 +241,7 @@ Published dataset (version 2.3.0)
       {
         heading: "Dataset vs data product",
         body: [
-          "The idea of treating data as a product was popularized by the data mesh approach, which asks that data products be discoverable, addressable, trustworthy and self-describing, among other qualities ([[https://martinfowler.com/articles/designing-data-products.html|Martin Fowler on designing data products]]). You do not need to adopt data mesh to use the idea. The core shift is simple: someone owns the data for its consumers, not only for the system that wrote it.",
+          "The idea of treating data as a product was popularized by the data mesh approach, which asks that data products be discoverable, addressable, trustworthy and self-describing, among other qualities. You do not need to adopt data mesh to use the idea. The core shift is simple: someone owns the data for its consumers, not only for the system that wrote it.",
         ],
         table: {
           headers: ["", "Dataset", "Data product"],
@@ -300,7 +300,7 @@ Published dataset (version 2.3.0)
       {
         heading: "Designing interfaces for agents",
         body: [
-          "Agents need less than you think, and less is safer. Instead of exposing the whole Customer 360 schema, expose a handful of tools that match tasks: get_customer_summary(customer_id), list_open_issues(customer_id), get_renewal_context(customer_id). Each returns a compact, typed result with the fields an agent needs to decide, the as-of time and source references. The [[https://modelcontextprotocol.io/|Model Context Protocol]] is a common way to expose such tools to many AI clients; our guides to [[/blogs/apis-for-ai-agents|APIs for AI agents]] and [[/blogs/ai-agent-tool-design|AI agent tool design]] cover the details.",
+          "Agents need less than you think, and less is safer. Instead of exposing the whole Customer 360 schema, expose a handful of tools that match tasks: get_customer_summary(customer_id), list_open_issues(customer_id), get_renewal_context(customer_id). Each returns a compact, typed result with the fields an agent needs to decide, the as-of time and source references. The Model Context Protocol is a common way to expose such tools to many AI clients; our guides to [[/blogs/apis-for-ai-agents|APIs for AI agents]] and [[/blogs/ai-agent-tool-design|AI agent tool design]] cover the details.",
           "Permissions must follow the agent's delegated identity, so a renewal agent acting for one account manager sees only that manager's accounts. See [[/blogs/ai-agent-access-control|AI agent access control]].",
         ],
         callout: {
@@ -423,7 +423,7 @@ GRAPH: "which customers are affected if supplier S7 stops?"
       {
         heading: "When a vector database alone is enough",
         body: [
-          "Most document-based assistants do not need a graph. If users ask questions answered by one or a few passages (policies, manuals, help articles, contracts read one at a time), vector search with good chunking, metadata filters and reranking is usually sufficient. Add keyword search for exact terms such as SKUs and error codes; see [[/blogs/hybrid-search-for-rag|hybrid search for RAG]]. Many teams can also store vectors in an existing database, such as Postgres with [[https://github.com/pgvector/pgvector|pgvector]], before adopting a dedicated system.",
+          "Most document-based assistants do not need a graph. If users ask questions answered by one or a few passages (policies, manuals, help articles, contracts read one at a time), vector search with good chunking, metadata filters and reranking is usually sufficient. Add keyword search for exact terms such as SKUs and error codes; see [[/blogs/hybrid-search-for-rag|hybrid search for RAG]]. Many teams can also store vectors in an existing database, such as Postgres with pgvector, before adopting a dedicated system.",
         ],
         checklist: [
           "Answers live inside individual documents or passages",

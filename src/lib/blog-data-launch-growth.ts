@@ -193,7 +193,7 @@ export const launchGrowthPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Google: [[https://web.dev/articles/vitals|Web Vitals and Core Web Vitals thresholds]].",
+          "Google: Web Vitals and Core Web Vitals thresholds.",
           "Accessed 17 October 2026. Platform behaviour changes; check current documentation before relying on any detail.",
         ],
       },
@@ -353,7 +353,7 @@ export const launchGrowthPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "IPTC: [[https://www.iptc.org/std/photometadata/specification/IPTC-PhotoMetadata|IPTC Photo Metadata Standard]] (version 2025.1).",
+          "IPTC: IPTC Photo Metadata Standard (version 2025.1).",
           "Accessed 17 October 2026. This guide covers systems and workflow, not legal advice on licence terms.",
         ],
       },
@@ -513,8 +513,8 @@ export const launchGrowthPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Google Search Central: [[https://developers.google.com/search/docs/specialty/international/localized-versions|Tell Google about localized versions of your page]].",
-          "Shopify Help Center: [[https://help.shopify.com/en/manual/international/languages|Languages]].",
+          "Google Search Central: Tell Google about localized versions of your page.",
+          "Shopify Help Center: Languages.",
           "Accessed 17 October 2026. Check current platform documentation before relying on any detail.",
         ],
       },
@@ -678,7 +678,7 @@ export const launchGrowthPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "LinkedIn Marketing Solutions: [[https://business.linkedin.com/marketing-solutions/native-advertising/thought-leader-ads|Thought Leader Ads]].",
+          "LinkedIn Marketing Solutions: Thought Leader Ads.",
           "Accessed 17 October 2026. Platform features change; check current documentation before relying on any detail.",
         ],
       },
@@ -824,8 +824,8 @@ export const launchGrowthPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Apple: [[https://developer.apple.com/testflight/|TestFlight]]; [[https://developer.apple.com/help/app-store-connect/test-a-beta-version/testflight-overview|TestFlight overview (App Store Connect Help)]].",
-          "Google Play Console Help: [[https://support.google.com/googleplay/android-developer/answer/9845334|Set up an open, closed or internal test]]; [[https://support.google.com/googleplay/android-developer/answer/14151465|App testing requirements for new personal developer accounts]].",
+          "Apple: TestFlight; TestFlight overview (App Store Connect Help).",
+          "Google Play Console Help: Set up an open, closed or internal test; App testing requirements for new personal developer accounts.",
           "Accessed 17 October 2026. Store policies change; check current documentation before relying on any detail.",
         ],
       },

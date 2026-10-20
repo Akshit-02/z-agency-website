@@ -120,7 +120,7 @@ Every tenant-owned table (projects, invoices, files ...) carries organisation_id
       {
         heading: "Isolation models",
         body: [
-          "AWS's SaaS Lens describes three models: silo, where \"tenants are provided dedicated resources\"; pool, where \"tenants share resources\"; and bridge, a \"mixed mode where some of the system is implemented in a silo model and some is in a pooled model\". Even a silo \"still relies on a shared identity, onboarding, and operational experience\" ([[https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/silo-pool-and-bridge-models.html|AWS SaaS Lens]]). Microsoft's Azure Architecture Center makes the commercial point directly: \"Selecting a tenancy model isn't only a technical decision. It's also a commercial decision\" ([[https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/considerations/tenancy-models|Azure Architecture Center]]).",
+          "AWS's SaaS Lens describes three models: silo, where \"tenants are provided dedicated resources\"; pool, where \"tenants share resources\"; and bridge, a \"mixed mode where some of the system is implemented in a silo model and some is in a pooled model\". Even a silo \"still relies on a shared identity, onboarding, and operational experience\". Microsoft's Azure Architecture Center makes the commercial point directly: \"Selecting a tenancy model isn't only a technical decision. It's also a commercial decision\".",
         ],
         table: {
           headers: ["Model", "How it works", "Strengths", "Costs"],
@@ -156,8 +156,8 @@ Every tenant-owned table (projects, invoices, files ...) carries organisation_id
       {
         heading: "Cross-tenant risks and how to close them",
         body: [
-          "A cross-tenant leak is an authorisation failure. OWASP's API Security Top 10 puts broken object level authorisation (BOLA) first: the server must check that the logged-in user \"has permissions to perform the requested action on the requested object\" ([[https://api-security.owasp.org/editions/2023/en/0xa1-broken-object-level-authorization|OWASP API1:2023]]). In a multi-tenant product the object check has two parts: is this record in the active organisation, and may this member act on it? The second part is permission design; the first is the tenant boundary, and it must hold even when the permission logic has a bug.",
-          "OWASP's [[https://cheatsheetseries.owasp.org/cheatsheets/Multi_Tenant_Security_Cheat_Sheet.html|Multi-Tenant Security Cheat Sheet]] is the best checklist for this layer. The table pairs its main warnings with practical controls.",
+          "A cross-tenant leak is an authorisation failure. OWASP's API Security Top 10 puts broken object level authorisation (BOLA) first: the server must check that the logged-in user \"has permissions to perform the requested action on the requested object\". In a multi-tenant product the object check has two parts: is this record in the active organisation, and may this member act on it? The second part is permission design; the first is the tenant boundary, and it must hold even when the permission logic has a bug.",
+          "OWASP's Multi-Tenant Security Cheat Sheet is the best checklist for this layer. The table pairs its main warnings with practical controls.",
         ],
         table: {
           headers: ["Risk", "What goes wrong", "Control"],
@@ -175,7 +175,7 @@ Every tenant-owned table (projects, invoices, files ...) carries organisation_id
       {
         heading: "PostgreSQL row-level security, and the connections that skip it",
         body: [
-          "Row-level security (RLS) lets the database itself filter rows by tenant. PostgreSQL's policies \"restrict, on a per-user basis, which rows can be returned by normal queries or inserted, updated, or deleted\", and if RLS is enabled with no policy, \"a default-deny policy is used\" ([[https://www.postgresql.org/docs/current/ddl-rowsecurity.html|PostgreSQL documentation]]). A common pattern sets the active organisation as a session setting at the start of each request or transaction, and a policy compares each row's organisation_id with it.",
+          "Row-level security (RLS) lets the database itself filter rows by tenant. PostgreSQL's policies \"restrict, on a per-user basis, which rows can be returned by normal queries or inserted, updated, or deleted\", and if RLS is enabled with no policy, \"a default-deny policy is used\". A common pattern sets the active organisation as a session setting at the start of each request or transaction, and a policy compares each row's organisation_id with it.",
           "The catch is who RLS applies to. PostgreSQL states that \"Superusers and roles with the BYPASSRLS attribute always bypass the row security system\", and that table owners normally bypass it too unless the table uses FORCE ROW LEVEL SECURITY. Many applications connect as the role that owns the tables, which quietly switches RLS off. Run normal traffic through a separate, non-owner role; keep migrations and admin jobs on a different role; and if you use a connection pooler, make sure the tenant setting is reset per transaction so one request cannot inherit another's tenant.",
         ],
       },
@@ -188,7 +188,7 @@ Every tenant-owned table (projects, invoices, files ...) carries organisation_id
       {
         heading: "SSO and SCIM per organisation",
         body: [
-          "Enterprise customers usually want their staff to sign in through their own identity provider using SAML 2.0 or OpenID Connect, and to have accounts created and removed automatically through SCIM, defined in [[https://www.rfc-editor.org/rfc/rfc7644|RFC 7644]]. In the data model this is one identity connection per organisation, with verified email domains used to route users to the right provider and an option to enforce SSO for that organisation's members. A user who belongs to two organisations may sign in by SSO for one and by password for the other, which is another reason to keep memberships separate from the global user. The protocol choices, domain routing and just-in-time provisioning are covered in [[/blogs/enterprise-sso-implementation|enterprise SSO implementation]].",
+          "Enterprise customers usually want their staff to sign in through their own identity provider using SAML 2.0 or OpenID Connect, and to have accounts created and removed automatically through SCIM, defined in RFC 7644. In the data model this is one identity connection per organisation, with verified email domains used to route users to the right provider and an option to enforce SSO for that organisation's members. A user who belongs to two organisations may sign in by SSO for one and by password for the other, which is another reason to keep memberships separate from the global user. The protocol choices, domain routing and just-in-time provisioning are covered in [[/blogs/enterprise-sso-implementation|enterprise SSO implementation]].",
         ],
       },
       {
@@ -199,7 +199,7 @@ Every tenant-owned table (projects, invoices, files ...) carries organisation_id
         ],
         checklist: [
           "**Every market:** write down where each tenant's data, backups and logs live, and who can access them from where. Customers' security questionnaires ask exactly this.",
-          "**Australia:** if you are covered by the Privacy Act, APP 8 applies before personal information is disclosed overseas. The OAIC says to take \"such steps as are reasonable in the circumstances to ensure that the overseas recipient does not breach the APPs\", and treats overseas cloud storage as a 'use' rather than a disclosure only where a binding contract limits the provider's handling, binds subcontractors and gives you effective control ([[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information|OAIC APP 8 guidelines]]). See [[/blogs/cloud-migration-australia|cloud migration in Australia]] for hosting choices.",
+          "**Australia:** if you are covered by the Privacy Act, APP 8 applies before personal information is disclosed overseas. The OAIC says to take \"such steps as are reasonable in the circumstances to ensure that the overseas recipient does not breach the APPs\", and treats overseas cloud storage as a 'use' rather than a disclosure only where a binding contract limits the provider's handling, binds subcontractors and gives you effective control. See [[/blogs/cloud-migration-australia|cloud migration in Australia]] for hosting choices.",
           "**India, the UAE, the UK and other markets:** cross-border and sector rules differ and change. Check current guidance for the customer's sector (health and financial data are often stricter) and take legal advice before promising a location. For UAE hosting regions, see [[/blogs/cloud-migration-uae|cloud migration in the UAE]].",
           "**Contracts:** only promise residency you can prove for every copy of the data, including backups and sub-processors.",
         ],
@@ -257,10 +257,10 @@ Every tenant-owned table (projects, invoices, files ...) carries organisation_id
       {
         heading: "Sources",
         body: [
-          "Architecture: [[https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/silo-pool-and-bridge-models.html|AWS SaaS Lens: silo, pool and bridge models]] (vendor documentation); [[https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/considerations/tenancy-models|Azure Architecture Center: tenancy models]] (vendor documentation).",
-          "Security: [[https://cheatsheetseries.owasp.org/cheatsheets/Multi_Tenant_Security_Cheat_Sheet.html|OWASP Multi-Tenant Security Cheat Sheet]]; [[https://api-security.owasp.org/editions/2023/en/0xa1-broken-object-level-authorization|OWASP API Security Top 10 2023: API1 Broken Object Level Authorization]]; [[https://www.postgresql.org/docs/current/ddl-rowsecurity.html|PostgreSQL 18 documentation: row security policies]].",
-          "Identity: [[https://www.rfc-editor.org/rfc/rfc7644|RFC 7644: SCIM protocol]]; [[https://openid.net/specs/openid-connect-core-1_0.html|OpenID Connect Core 1.0]]; [[https://docs.oasis-open.org/security/saml/v2.0/saml-core-2.0-os.pdf|OASIS SAML V2.0 core]].",
-          "Regions and data location: [[https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html|AWS regions]]; [[https://learn.microsoft.com/en-us/azure/reliability/regions-list|Azure regions list]]; [[https://docs.cloud.google.com/compute/docs/regions-zones|Google Cloud regions and zones]] (vendor documentation); [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information|OAIC: APP 8 guidelines]].",
+          "Architecture: AWS SaaS Lens: silo, pool and bridge models (vendor documentation); Azure Architecture Center: tenancy models (vendor documentation).",
+          "Security: OWASP Multi-Tenant Security Cheat Sheet; OWASP API Security Top 10 2023: API1 Broken Object Level Authorization; PostgreSQL 18 documentation: row security policies.",
+          "Identity: RFC 7644: SCIM protocol; OpenID Connect Core 1.0; OASIS SAML V2.0 core.",
+          "Regions and data location: AWS regions; Azure regions list; Google Cloud regions and zones (vendor documentation); OAIC: APP 8 guidelines.",
           "Accessed 15 October 2026. Cloud region lists and privacy rules change; check the current pages and take legal advice on data location.",
         ],
       },
@@ -326,7 +326,7 @@ Every tenant-owned table (projects, invoices, files ...) carries organisation_id
       {
         heading: "Types of flags",
         body: [
-          "Pete Hodgson's article on martinfowler.com describes categories of toggles with different lifetimes ([[https://martinfowler.com/articles/feature-toggles.html|martinfowler.com]]):",
+          "Pete Hodgson's article on martinfowler.com describes categories of toggles with different lifetimes:",
         ],
         table: {
           headers: ["Type", "Purpose", "Lifetime"],
@@ -361,7 +361,7 @@ Every tenant-owned table (projects, invoices, files ...) carries organisation_id
         checklist: [
           "Restrict who can change production flags; require approval for high-impact flags.",
           "Audit every change: who, when, what and why.",
-          "Use consistent evaluation across services; an open standard such as OpenFeature can help ([[https://openfeature.dev/|OpenFeature]]).",
+          "Use consistent evaluation across services; an open standard such as OpenFeature can help.",
           "Document each flag's purpose, owner and removal plan.",
           "Review the flag list monthly and remove stale flags.",
         ],
@@ -473,7 +473,7 @@ Every tenant-owned table (projects, invoices, files ...) carries organisation_id
         heading: "Scope and evidence",
         body: [],
         checklist: [
-          "**Architecture:** components, boundaries, data flows and integrations; a C4-style diagram helps ([[https://c4model.com/|C4 model]]).",
+          "**Architecture:** components, boundaries, data flows and integrations; a C4-style diagram helps.",
           "**Code:** structure, test coverage of critical paths, duplication, complexity hotspots.",
           "**Dependencies:** framework and library versions, unsupported components, licences.",
           "**Infrastructure:** hosting, environments, deployment process, backups.",
@@ -500,7 +500,7 @@ Every tenant-owned table (projects, invoices, files ...) carries organisation_id
         },
         callout: {
           type: "note",
-          text: "The AWS Well-Architected Framework's pillars (operational excellence, security, reliability, performance efficiency, cost optimisation and sustainability) are a useful checklist even for systems not on AWS ([[https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html|AWS]]).",
+          text: "The AWS Well-Architected Framework's pillars (operational excellence, security, reliability, performance efficiency, cost optimisation and sustainability) are a useful checklist even for systems not on AWS.",
         },
       },
       {
@@ -526,7 +526,7 @@ Every tenant-owned table (projects, invoices, files ...) carries organisation_id
       {
         heading: "Turning findings into a roadmap",
         body: [
-          "Present findings with evidence and business impact, not just technical labels. Group recommendations into quick risk reductions, enabling work (tests, upgrades, observability) and structural changes. Reserve regular capacity for debt work alongside features. Record significant decisions as architecture decision records so future teams know why choices were made ([[https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions|Michael Nygard]]).",
+          "Present findings with evidence and business impact, not just technical labels. Group recommendations into quick risk reductions, enabling work (tests, upgrades, observability) and structural changes. Reserve regular capacity for debt work alongside features. Record significant decisions as architecture decision records so future teams know why choices were made.",
         ],
       },
       {
@@ -653,7 +653,7 @@ Every tenant-owned table (projects, invoices, files ...) carries organisation_id
       {
         heading: "Step 2: Read the execution plan",
         body: [
-          "Use EXPLAIN to see the planned approach and, in PostgreSQL, EXPLAIN ANALYZE to run the query and see actual rows and timings ([[https://www.postgresql.org/docs/current/using-explain.html|PostgreSQL]]); MySQL also provides EXPLAIN and EXPLAIN ANALYZE ([[https://dev.mysql.com/doc/refman/8.4/en/explain.html|MySQL]]). Look for full scans of large tables, large differences between estimated and actual rows (often stale statistics), expensive sorts and nested loops over many rows. Run ANALYZE-type statistics updates where estimates are wrong.",
+          "Use EXPLAIN to see the planned approach and, in PostgreSQL, EXPLAIN ANALYZE to run the query and see actual rows and timings; MySQL also provides EXPLAIN and EXPLAIN ANALYZE. Look for full scans of large tables, large differences between estimated and actual rows (often stale statistics), expensive sorts and nested loops over many rows. Run ANALYZE-type statistics updates where estimates are wrong.",
         ],
       },
       {
@@ -795,7 +795,7 @@ Every tenant-owned table (projects, invoices, files ...) carries organisation_id
       {
         heading: "The test pyramid",
         body: [
-          "The practical test pyramid favours many fast, isolated unit tests, a smaller number of integration tests, and few end-to-end tests, because end-to-end tests are slower and more brittle ([[https://martinfowler.com/articles/practical-test-pyramid.html|martinfowler.com]]). Push checks to the lowest level that can catch the problem. Use end-to-end tests for journeys that only make sense as a whole, such as sign-up to first value or add-to-cart to purchase.",
+          "The practical test pyramid favours many fast, isolated unit tests, a smaller number of integration tests, and few end-to-end tests, because end-to-end tests are slower and more brittle. Push checks to the lowest level that can catch the problem. Use end-to-end tests for journeys that only make sense as a whole, such as sign-up to first value or add-to-cart to purchase.",
         ],
       },
       {

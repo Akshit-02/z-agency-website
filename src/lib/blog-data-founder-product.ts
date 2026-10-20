@@ -136,8 +136,8 @@ export const founderProductPosts: BlogPost[] = [
       {
         heading: "Rung 6: store-listing experiments, once you have a listing",
         body: [
-          "Both stores let you test how your listing performs, but only once a listing exists. On Google Play, [[https://support.google.com/googleplay/android-developer/answer/6227309|store listing experiments]] let you run one default graphics experiment or up to five localised experiments at a time, with up to two variants against your current listing. You can test the icon, feature graphic, screenshots and (in localised experiments) descriptions, and measure install clicks, open clicks or pre-registration clicks. Experiments stop automatically after six months.",
-          "On the App Store, [[https://developer.apple.com/app-store/product-page-optimization/|product page optimisation]] tests up to three treatments (alternate icons, screenshots and app previews) against your original product page or pre-order page. You can run one test at a time, for up to 90 days, and new metadata must be approved by App Review first. Alternate icons must be included in the published app's binary.",
+          "Both stores let you test how your listing performs, but only once a listing exists. On Google Play, store listing experiments let you run one default graphics experiment or up to five localised experiments at a time, with up to two variants against your current listing. You can test the icon, feature graphic, screenshots and (in localised experiments) descriptions, and measure install clicks, open clicks or pre-registration clicks. Experiments stop automatically after six months.",
+          "On the App Store, product page optimisation tests up to three treatments (alternate icons, screenshots and app previews) against your original product page or pre-order page. You can run one test at a time, for up to 90 days, and new metadata must be approved by App Review first. Alternate icons must be included in the published app's binary.",
           "These tools are useful for learning which message or visual earns installs from strangers. They do not tell you whether people keep using the app, so use them alongside retention data from your [[/blogs/mobile-app-analytics|app analytics events]], not instead of it.",
         ],
       },
@@ -203,8 +203,8 @@ export const founderProductPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Google: [[https://support.google.com/googleplay/android-developer/answer/14151465|Play Console Help: app testing requirements for new personal developer accounts]]; [[https://support.google.com/googleplay/android-developer/answer/6227309|Play Console Help: store listing experiments]]; [[https://support.google.com/googleplay/android-developer/answer/6112435|Play Console Help: registration fee]].",
-          "Apple: [[https://developer.apple.com/testflight/|TestFlight]]; [[https://developer.apple.com/app-store/product-page-optimization/|Product page optimization]]; [[https://developer.apple.com/programs/whats-included/|Apple Developer Program: what's included]].",
+          "Google: Play Console Help: app testing requirements for new personal developer accounts; Play Console Help: store listing experiments; Play Console Help: registration fee.",
+          "Apple: TestFlight; Product page optimization; Apple Developer Program: what's included.",
           "Accessed 14 October 2026. Store rules, limits and fees change; check the official pages before planning a launch.",
         ],
       },
@@ -391,7 +391,7 @@ export const founderProductPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://www.nngroup.com/articles/ux-prototype-hi-lo-fidelity/|NN/g: UX prototypes, low fidelity vs high fidelity (Kara Pernice, 18 December 2016)]]; [[https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/|NN/g: why you only need to test with 5 users (Jakob Nielsen, 18 March 2000)]]; [[https://www.nngroup.com/articles/how-many-test-users/|NN/g: how many test users in a usability study? (Jakob Nielsen, 3 June 2012)]]; [[https://www.gov.uk/service-manual/agile-delivery/how-the-alpha-phase-works|GOV.UK Service Manual: how the alpha phase works (last updated 8 May 2019)]].",
+          "NN/g: UX prototypes, low fidelity vs high fidelity (Kara Pernice, 18 December 2016); NN/g: why you only need to test with 5 users (Jakob Nielsen, 18 March 2000); NN/g: how many test users in a usability study? (Jakob Nielsen, 3 June 2012); GOV.UK Service Manual: how the alpha phase works (last updated 8 May 2019).",
           "Accessed 14 October 2026. NN/g is an independent research and training firm; its figures are heuristics based on its own studies.",
         ],
       },

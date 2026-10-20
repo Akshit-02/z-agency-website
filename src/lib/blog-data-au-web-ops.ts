@@ -109,7 +109,7 @@ export const auWebOpsPosts: BlogPost[] = [
       {
         heading: "Step 4: Merge and redirect safely",
         body: [
-          "When merging, carry over unique, accurate content, update the owner page's date and facts, and keep the stronger URL. Add a 301 redirect from the retired URL, update every internal link to point directly to the owner, remove the retired URL from the sitemap, and check for redirect chains. Google's guidance on consolidating duplicate URLs explains how redirects, canonicals and sitemaps are used as signals ([[https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls|Google Search Central]]). Avoid broad redirects to the home page.",
+          "When merging, carry over unique, accurate content, update the owner page's date and facts, and keep the stronger URL. Add a 301 redirect from the retired URL, update every internal link to point directly to the owner, remove the retired URL from the sitemap, and check for redirect chains. Google's guidance on consolidating duplicate URLs explains how redirects, canonicals and sitemaps are used as signals. Avoid broad redirects to the home page.",
         ],
         callout: {
           type: "note",
@@ -255,7 +255,7 @@ export const auWebOpsPosts: BlogPost[] = [
           "**APP 7:** direct marketing rules, including an easy way to opt out.",
           "**APP 11:** keep data secure and destroy or de-identify it when no longer needed.",
           "**Spam Act:** commercial emails and SMS need consent, sender identification and a working unsubscribe.",
-          "**Tracking pixels:** the OAIC says organisations remain responsible for data their pixels collect and disclose ([[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/tracking-pixels-and-privacy-obligations|OAIC]]).",
+          "**Tracking pixels:** the OAIC says organisations remain responsible for data their pixels collect and disclose.",
           "Privacy reforms are continuing; check current OAIC guidance and get legal advice.",
         ],
       },
@@ -408,7 +408,7 @@ export const auWebOpsPosts: BlogPost[] = [
       {
         heading: "The specification as source of truth",
         body: [
-          "For HTTP APIs, keep an OpenAPI description in version control and treat it as part of the product. The OpenAPI Initiative publishes the specification, with versions 3.1.1 and 3.2.0 available ([[https://spec.openapis.org/oas/v3.2.0.html|OpenAPI 3.2.0]]). Describe every operation, parameter, schema, response and error, with examples. Validate the description in continuous integration, check it against the running API with contract tests, and generate the reference, mocks and client libraries from it.",
+          "For HTTP APIs, keep an OpenAPI description in version control and treat it as part of the product. The OpenAPI Initiative publishes the specification, with versions 3.1.1 and 3.2.0 available. Describe every operation, parameter, schema, response and error, with examples. Validate the description in continuous integration, check it against the running API with contract tests, and generate the reference, mocks and client libraries from it.",
         ],
       },
       {
@@ -555,12 +555,12 @@ export const auWebOpsPosts: BlogPost[] = [
         heading: "Australian guidance",
         body: [],
         checklist: [
-          "ASD's [[https://www.cyber.gov.au/business-government/protecting-devices-systems/cloud-computing/cloud-computing-security-for-tenants|Cloud computing security for tenants]] covers tenant responsibilities and mitigations.",
+          "ASD's Cloud computing security for tenants covers tenant responsibilities and mitigations.",
           "The Essential Eight covers baseline mitigations such as MFA, patching, restricting admin privileges and backups.",
           "The Information Security Manual provides detailed controls, often used by government and suppliers.",
           "APRA-regulated entities should consider CPS 234 and CPS 230.",
           "Privacy Act APP 11 requires reasonable steps to secure personal information; APP 8 applies to overseas disclosure.",
-          "Provider benchmarks, such as the CIS Benchmarks ([[https://www.cisecurity.org/cis-benchmarks|CIS]]), give detailed configuration checks.",
+          "Provider benchmarks, such as the CIS Benchmarks, give detailed configuration checks.",
         ],
       },
       {

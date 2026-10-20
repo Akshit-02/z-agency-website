@@ -232,7 +232,7 @@ export const auIntegrationArchPosts: BlogPost[] = [
           rows: [
             ["**URL path**", "/v1/orders, /v2/orders", "Simple to route and understand"],
             ["**Header or media type**", "Accept: application/vnd.example.v2+json", "Stable URLs; less visible"],
-            ["**Date-based**", "A version header pinned to a date", "Fine-grained; used by Stripe ([[https://docs.stripe.com/api/versioning|Stripe docs]])"],
+            ["**Date-based**", "A version header pinned to a date", "Fine-grained; used by Stripe"],
             ["**No explicit versions**", "Additive changes only", "Requires discipline; still need a plan for breaks"],
           ],
         },
@@ -240,7 +240,7 @@ export const auIntegrationArchPosts: BlogPost[] = [
       {
         heading: "Deprecation and sunset",
         body: [
-          "Publish a deprecation policy with minimum support periods. When deprecating, announce it in the changelog and by email to known clients, add migration guides, and return the Deprecation header (RFC 9745) and, when a removal date is set, the Sunset header (RFC 8594) on affected responses ([[https://www.rfc-editor.org/rfc/rfc9745|RFC 9745]]; [[https://www.rfc-editor.org/rfc/rfc8594|RFC 8594]]). Monitor which clients still call old versions and contact them before removal. Google's API design guidance is another useful reference ([[https://cloud.google.com/apis/design/versioning|Google Cloud]]).",
+          "Publish a deprecation policy with minimum support periods. When deprecating, announce it in the changelog and by email to known clients, add migration guides, and return the Deprecation header (RFC 9745) and, when a removal date is set, the Sunset header (RFC 8594) on affected responses. Monitor which clients still call old versions and contact them before removal. Google's API design guidance is another useful reference.",
         ],
       },
       {
@@ -366,7 +366,7 @@ export const auIntegrationArchPosts: BlogPost[] = [
             ["**Main token**", "Access token (plus refresh token)", "ID token (a signed JWT), plus OAuth tokens"],
             ["**Who reads the token**", "The API (resource server)", "The client application"],
             ["**User information**", "Not standardised", "Standard claims and a UserInfo endpoint"],
-            ["**Specification**", "RFC 6749 ([[https://www.rfc-editor.org/rfc/rfc6749|IETF]])", "OpenID Connect Core 1.0 ([[https://openid.net/specs/openid-connect-core-1_0.html|OpenID Foundation]])"],
+            ["**Specification**", "RFC 6749", "OpenID Connect Core 1.0"],
           ],
         },
       },
@@ -381,14 +381,14 @@ export const auIntegrationArchPosts: BlogPost[] = [
             ["Mobile app", "Authorisation code with PKCE via the system browser"],
             ["Server-to-server", "Client credentials"],
             ["Devices without browsers", "Device authorisation grant"],
-            ["Legacy implicit or password flows", "Replace; see RFC 9700 ([[https://www.rfc-editor.org/rfc/rfc9700|IETF]])"],
+            ["Legacy implicit or password flows", "Replace; see RFC 9700"],
           ],
         },
       },
       {
         heading: "Tokens and validation",
         body: [
-          "Validate ID tokens' signature, issuer, audience, expiry and nonce before trusting them. APIs should validate access tokens and check scopes and audience. Keep access tokens short-lived, store refresh tokens securely and rotate them, and never put tokens in URLs or logs. PKCE (RFC 7636) protects the authorisation code from interception ([[https://www.rfc-editor.org/rfc/rfc7636|RFC 7636]]). OAuth 2.1, which consolidates current practice, is still an IETF draft at the time of writing.",
+          "Validate ID tokens' signature, issuer, audience, expiry and nonce before trusting them. APIs should validate access tokens and check scopes and audience. Keep access tokens short-lived, store refresh tokens securely and rotate them, and never put tokens in URLs or logs. PKCE (RFC 7636) protects the authorisation code from interception. OAuth 2.1, which consolidates current practice, is still an IETF draft at the time of writing.",
         ],
       },
       {
@@ -478,7 +478,7 @@ export const auIntegrationArchPosts: BlogPost[] = [
       {
         heading: "How does the strangler fig pattern work?",
         body: [
-          "**Place a routing layer (a proxy, API gateway or facade) in front of the legacy system; choose a first slice of capability with clear boundaries; build it in the new system, with an anti-corruption layer translating between old and new; route that slice's traffic to the new system, often gradually; resolve data ownership for the slice; repeat; and retire the legacy system when nothing depends on it.** It trades a longer period of coexistence for much lower risk than a big-bang rewrite ([[https://martinfowler.com/bliki/StranglerFigApplication.html|Martin Fowler]]).",
+          "**Place a routing layer (a proxy, API gateway or facade) in front of the legacy system; choose a first slice of capability with clear boundaries; build it in the new system, with an anti-corruption layer translating between old and new; route that slice's traffic to the new system, often gradually; resolve data ownership for the slice; repeat; and retire the legacy system when nothing depends on it.** It trades a longer period of coexistence for much lower risk than a big-bang rewrite.",
           "This guide is for CTOs and engineering leads. For the business decision of whether and how to modernise, see [[/blogs/legacy-software-modernization-australia|legacy software modernisation]].",
         ],
       },
@@ -616,7 +616,7 @@ export const auIntegrationArchPosts: BlogPost[] = [
       {
         heading: "Modular monolith or microservices?",
         body: [
-          "**Most growing products and teams are better served by a modular monolith: one deployable application with strong module boundaries, each owning its data. Move to microservices for specific parts when several teams need independent deployment, parts have very different scaling or reliability needs, and you have the operational maturity for distributed systems.** Martin Fowler's MonolithFirst and microservice prerequisites articles explain the reasoning ([[https://martinfowler.com/bliki/MonolithFirst.html|MonolithFirst]]; [[https://martinfowler.com/bliki/MicroservicePrerequisites.html|prerequisites]]).",
+          "**Most growing products and teams are better served by a modular monolith: one deployable application with strong module boundaries, each owning its data. Move to microservices for specific parts when several teams need independent deployment, parts have very different scaling or reliability needs, and you have the operational maturity for distributed systems.** Martin Fowler's MonolithFirst and microservice prerequisites articles explain the reasoning.",
           "This guide is for CTOs and technical founders of SaaS and business applications. For ecommerce platforms specifically, see [[/blogs/ecommerce-microservices-vs-monolith|ecommerce microservices vs monolith]].",
         ],
       },

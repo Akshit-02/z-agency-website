@@ -85,9 +85,9 @@ export const uaeCroPosts: BlogPost[] = [
       {
         heading: "UAE context that changes your CRO priorities",
         body: [
-          "**UAE facts.** Almost everyone is online: DataReportal reports 99% internet penetration, 11.3 million internet users and 23.0 million mobile connections, equal to 202% of the population ([[https://datareportal.com/reports/digital-2026-united-arab-emirates|Digital 2026: UAE]]). In a YouGov survey of 1,000 UAE residents commissioned by Zbooni (February 2024), 85% wanted businesses to offer WhatsApp for support, 88% saw it as the easiest route to quick answers, 87% preferred a real person over a chatbot or AI, and 65% had used WhatsApp to ask a business about a product in the past year, compared with 55% for call centres and 48% for email ([[https://communicateonline.me/news/85-percent-of-uae-residents-want-businesses-to-use-whatsapp/|Communicate]]). The survey is vendor-commissioned, so treat it as directional.",
-          "Deloitte's 2025 Digital Consumer Trends survey of 2,000 consumers in the UAE and Saudi Arabia combined found 73% had bought through social media in the past year ([[https://www.consultancy-me.com/news/11592/deloitte-consumers-in-uae-and-ksa-driving-surge-in-ai-adoption-and-social-commerce|Consultancy-ME]]). Many of your visitors arrive from Instagram, TikTok or a WhatsApp forward, on a phone, with little context.",
-          "**Arabic.** u.ae states that consumer invoices must be in Arabic and that UAE-registered ecommerce businesses must give product or service information in Arabic ([[https://u.ae/en/information-and-services/justice-safety-and-the-law/consumer-protection|u.ae consumer protection]]). We found no general legal requirement that every business website be in Arabic. For lead generation, Arabic is mostly a conversion question: does your buyer prefer it? Check obligations for your sector with the authority or an adviser.",
+          "**UAE facts.** Almost everyone is online: DataReportal reports 99% internet penetration, 11.3 million internet users and 23.0 million mobile connections, equal to 202% of the population. In a YouGov survey of 1,000 UAE residents commissioned by Zbooni (February 2024), 85% wanted businesses to offer WhatsApp for support, 88% saw it as the easiest route to quick answers, 87% preferred a real person over a chatbot or AI, and 65% had used WhatsApp to ask a business about a product in the past year, compared with 55% for call centres and 48% for email. The survey is vendor-commissioned, so treat it as directional.",
+          "Deloitte's 2025 Digital Consumer Trends survey of 2,000 consumers in the UAE and Saudi Arabia combined found 73% had bought through social media in the past year. Many of your visitors arrive from Instagram, TikTok or a WhatsApp forward, on a phone, with little context.",
+          "**Arabic.** u.ae states that consumer invoices must be in Arabic and that UAE-registered ecommerce businesses must give product or service information in Arabic. We found no general legal requirement that every business website be in Arabic. For lead generation, Arabic is mostly a conversion question: does your buyer prefer it? Check obligations for your sector with the authority or an adviser.",
           "**Our recommendation.** For UAE sites, put four things near the top of any CRO backlog: a visible, tracked WhatsApp route staffed by people; a mobile experience tested on real phones; honest trust signals that answer ‘is this company real and local enough to serve me?’; and a deliberate language decision per key page. For the regional SEO side of bilingual sites, see [[/blogs/arabic-seo-uae|Arabic SEO in the UAE]].",
         ],
       },
@@ -110,7 +110,7 @@ export const uaeCroPosts: BlogPost[] = [
         heading: "Messaging: changes 1 and 2",
         body: [
           "**The answer first:** most lost enquiries start with a visitor who cannot tell within a few seconds what you do, who it is for and where you operate. Fix that before anything cosmetic.",
-          "**Research.** Nielsen Norman Group's eye-tracking work found 57% of page-viewing time was spent above the fold and 74% in the first two screenfuls ([[https://www.nngroup.com/articles/scrolling-and-attention/|NN/g]]). People do scroll, but attention falls, so the opening screen carries the most weight.",
+          "**Research.** Nielsen Norman Group's eye-tracking work found 57% of page-viewing time was spent above the fold and 74% in the first two screenfuls. People do scroll, but attention falls, so the opening screen carries the most weight.",
         ],
         table: {
           headers: ["", "1. Answer-first hero", "2. Specific service-page scope"],
@@ -150,7 +150,7 @@ export const uaeCroPosts: BlogPost[] = [
         heading: "Forms: changes 5 and 6",
         body: [
           "**The answer first:** ask only what you need to respond well, in a single column with visible labels, and help people fix errors in place.",
-          "**Research.** NN/g advises labels close to fields, avoiding placeholder text as a label, distinguishing optional from required fields and using a single-column layout because ‘multiple columns interrupt the vertical momentum’ ([[https://www.nngroup.com/articles/web-form-design/|NN/g form design]]). It also recommends placing error messages next to the field and not showing an error until the user has finished with it ([[https://www.nngroup.com/articles/errors-forms-design-guidelines/|NN/g errors]]). Baymard's review found about 31% of sites have no inline validation at all ([[https://baymard.com/blog/inline-form-validation|Baymard]]); that figure is from ecommerce sites, but the principle carries over.",
+          "**Research.** NN/g advises labels close to fields, avoiding placeholder text as a label, distinguishing optional from required fields and using a single-column layout because ‘multiple columns interrupt the vertical momentum’. It also recommends placing error messages next to the field and not showing an error until the user has finished with it. Baymard's review found about 31% of sites have no inline validation at all; that figure is from ecommerce sites, but the principle carries over.",
         ],
         table: {
           headers: ["", "5. Fewer, clearer fields", "6. Inline validation and UAE phone handling"],
@@ -172,7 +172,7 @@ export const uaeCroPosts: BlogPost[] = [
         heading: "Trust: changes 7 and 8",
         body: [
           "**The answer first:** UAE buyers, like buyers anywhere, need to believe you are real, competent and accountable before they share a phone number. Make the evidence specific and verifiable.",
-          "**Research.** NN/g groups trust into design quality, upfront disclosure, comprehensive and current content, and connection to the rest of the web, noting that third-party reviews and external sources are trusted more than a company's own claims ([[https://www.nngroup.com/articles/trustworthy-design/|NN/g trustworthy design]]). Our generic guide to [[/blogs/website-trust-and-credibility|website trust and credibility]] covers the full set of signals.",
+          "**Research.** NN/g groups trust into design quality, upfront disclosure, comprehensive and current content, and connection to the rest of the web, noting that third-party reviews and external sources are trusted more than a company's own claims. Our generic guide to [[/blogs/website-trust-and-credibility|website trust and credibility]] covers the full set of signals.",
           "**Our recommendation for the UAE.** Show your legal entity name and trade licence number, which buyers can check through the relevant licensing authority, and say plainly which emirates you serve and from where. If your team is remote or overseas, say so; misleading location claims destroy trust when discovered.",
         ],
         table: {
@@ -191,7 +191,7 @@ export const uaeCroPosts: BlogPost[] = [
         heading: "Performance: changes 9 and 10",
         body: [
           "**The answer first:** a slow or unstable mobile page loses visitors before your message is read. Aim for Google's ‘good’ Core Web Vitals on mobile and treat every third-party script as a cost.",
-          "**Research.** web.dev defines ‘good’ as Largest Contentful Paint at or under 2.5 seconds, Interaction to Next Paint at or under 200 milliseconds and Cumulative Layout Shift at or under 0.1, measured at the 75th percentile of page loads and split by mobile and desktop ([[https://web.dev/articles/vitals|web.dev]]). Google says Core Web Vitals are used by its ranking systems but that relevance still comes first, so do not chase perfect scores for SEO alone ([[https://developers.google.com/search/docs/appearance/page-experience|Google Search Central]]). The case for speed here is conversion, explained in [[/blogs/why-page-speed-still-decides-conversion|why page speed still decides conversion]] and handled technically in [[/blogs/website-performance-optimization|website performance optimisation]].",
+          "**Research.** web.dev defines ‘good’ as Largest Contentful Paint at or under 2.5 seconds, Interaction to Next Paint at or under 200 milliseconds and Cumulative Layout Shift at or under 0.1, measured at the 75th percentile of page loads and split by mobile and desktop. Google says Core Web Vitals are used by its ranking systems but that relevance still comes first, so do not chase perfect scores for SEO alone. The case for speed here is conversion, explained in [[/blogs/why-page-speed-still-decides-conversion|why page speed still decides conversion]] and handled technically in [[/blogs/website-performance-optimization|website performance optimisation]].",
         ],
         table: {
           headers: ["", "9. Pass Core Web Vitals on mobile", "10. Cut third-party script weight"],
@@ -209,7 +209,7 @@ export const uaeCroPosts: BlogPost[] = [
         heading: "Mobile: changes 11 and 12",
         body: [
           "**The answer first:** on mobile, the contact routes must be one thumb-tap away and work first time: call, WhatsApp and a short form.",
-          "**Research.** WCAG 2.2 success criterion 2.5.8 (Level AA) requires pointer targets of at least 24 by 24 CSS pixels, with listed exceptions ([[https://www.w3.org/TR/WCAG22/|W3C WCAG 2.2]]). NN/g's mobile guidance recommends reducing typing by using device features and saving state in case people are interrupted ([[https://www.nngroup.com/articles/mobile-ux/|NN/g mobile UX]]).",
+          "**Research.** WCAG 2.2 success criterion 2.5.8 (Level AA) requires pointer targets of at least 24 by 24 CSS pixels, with listed exceptions. NN/g's mobile guidance recommends reducing typing by using device features and saving state in case people are interrupted.",
           "**WhatsApp links.** WhatsApp's click-to-chat format is wa.me followed by the full number in international format without the plus sign, zeros, brackets or dashes, for example wa.me/9715XXXXXXXX, with an optional pre-filled message. Route it to a WhatsApp Business Platform number shared by the team rather than one salesperson's phone.",
         ],
         table: {
@@ -228,7 +228,7 @@ export const uaeCroPosts: BlogPost[] = [
         heading: "CTA: changes 13 and 14",
         body: [
           "**The answer first:** a call to action should say what happens next and suit the visitor's stage. ‘Submit’ and ‘Learn more’ tell the visitor nothing.",
-          "**Research.** LinkedIn's B2B Institute, drawing on Ehrenberg-Bass research, says ‘95% of your potential buyers aren't ready to buy today’ ([[https://business.linkedin.com/advertise/resources/b2b-institute/b2b-research/trends/95-5-rule|LinkedIn B2B Institute]]). The researchers present the percentage as a heuristic, but the implication holds: most visitors need a lower-commitment step than ‘Book a call’.",
+          "**Research.** LinkedIn's B2B Institute, drawing on Ehrenberg-Bass research, says ‘95% of your potential buyers aren't ready to buy today’. The researchers present the percentage as a heuristic, but the implication holds: most visitors need a lower-commitment step than ‘Book a call’.",
         ],
         table: {
           headers: ["", "13. Specific, outcome-led CTA copy", "14. A low-commitment secondary CTA"],
@@ -250,7 +250,7 @@ export const uaeCroPosts: BlogPost[] = [
         heading: "Lead qualification: changes 15 and 16",
         body: [
           "**The answer first:** CRO for lead generation should raise the number of leads your team wants, not just the number of form fills. Light qualification and fast, routed follow-up do that.",
-          "**Research.** 6sense's 2025 Buyer Experience Report found buyers first contacted vendors at about 61% of the way through their journey, initiated 79% of first contacts and chose from their day-one shortlist 95% of the time ([[https://6sense.com/report/buyer-experience/|6sense]]). Its sample covers North America, Europe and APAC, with no Middle East breakdown. The practical point: by the time someone enquires, they have usually decided a lot, so a slow reply wastes a shortlisted position.",
+          "**Research.** 6sense's 2025 Buyer Experience Report found buyers first contacted vendors at about 61% of the way through their journey, initiated 79% of first contacts and chose from their day-one shortlist 95% of the time. Its sample covers North America, Europe and APAC, with no Middle East breakdown. The practical point: by the time someone enquires, they have usually decided a lot, so a slow reply wastes a shortlisted position.",
           "For automated scoring and routing, see [[/blogs/ai-lead-qualification-uae|AI lead qualification in the UAE]], and for B2B sites [[/blogs/b2b-lead-generation-website-uae|B2B lead generation websites in the UAE]].",
         ],
         table: {
@@ -287,7 +287,7 @@ export const uaeCroPosts: BlogPost[] = [
         heading: "Analytics: change 19",
         body: [
           "**The answer first:** if WhatsApp chats and calls are not tracked as conversions and joined to CRM outcomes, you are optimising a fraction of your leads and probably the wrong fraction.",
-          "**Our recommendation.** Treat analytics as a CRO change in its own right. Record which landing page, language and device produced each WhatsApp chat, call and form, and pass that into the CRM so you can report qualified leads and won deals by page. Handle consent properly: under the UAE PDPL (Federal Decree-Law 45 of 2021) consent is required unless an exception applies, and the DIFC regime treats analytics and advertising cookies as behavioural advertising requiring real consent ([[https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws|u.ae data protection]]). Take advice on which regime applies to you.",
+          "**Our recommendation.** Treat analytics as a CRO change in its own right. Record which landing page, language and device produced each WhatsApp chat, call and form, and pass that into the CRM so you can report qualified leads and won deals by page. Handle consent properly: under the UAE PDPL (Federal Decree-Law 45 of 2021) consent is required unless an exception applies, and the DIFC regime treats analytics and advertising cookies as behavioural advertising requiring real consent. Take advice on which regime applies to you.",
         ],
         table: {
           headers: ["", "19. Track every route to a qualified outcome"],
@@ -305,7 +305,7 @@ export const uaeCroPosts: BlogPost[] = [
         heading: "AI: change 20",
         body: [
           "**The answer first:** AI can help by answering routine pre-sales questions out of hours and triaging enquiries, but UAE buyers strongly prefer people, so design it as an assistant that hands over, not a gatekeeper.",
-          "**UAE facts.** Microsoft's AI Economy Institute estimates 70.1% of the UAE working-age population used generative AI in Q1 2026, the highest share globally ([[https://blogs.microsoft.com/on-the-issues/2026/05/07/the-state-of-global-ai-diffusion-in-2026/|Microsoft]]). Yet 87% of UAE residents in the Zbooni/YouGov survey preferred a human to a chatbot or AI. Both can be true: people use AI tools themselves but still want a person from the business.",
+          "**UAE facts.** Microsoft's AI Economy Institute estimates 70.1% of the UAE working-age population used generative AI in Q1 2026, the highest share globally. Yet 87% of UAE residents in the Zbooni/YouGov survey preferred a human to a chatbot or AI. Both can be true: people use AI tools themselves but still want a person from the business.",
         ],
         table: {
           headers: ["", "20. AI-assisted triage with human handover"],
@@ -376,10 +376,10 @@ export const uaeCroPosts: BlogPost[] = [
           "**1. Write a hypothesis.** ‘Because recordings show mobile visitors scrolling back up to find the WhatsApp button, adding a sticky contact bar will increase qualified mobile leads.’ It names the evidence, the change and the expected effect.",
           "**2. Choose one primary metric.** For lead generation, qualified leads per visitor, or form-plus-WhatsApp conversions if qualification data is too slow. Add guardrail metrics you must not harm, such as lead quality or page speed.",
           "**3. Set the minimum detectable effect (MDE).** The smallest relative change worth detecting. Smaller MDEs need much larger samples, so be realistic about what your traffic can show.",
-          "**4. Fix the sample size in advance.** Use a power calculator with your baseline rate, MDE, significance level and power. Evan Miller warns that if you run a test ‘until we see a significant difference’, ‘all the reported significance levels become meaningless’; in his example, stopping at the first p < 0.05 inflated the false-positive rate to 26.1% ([[https://www.evanmiller.org/how-not-to-run-an-ab-test.html|Evan Miller]]). His fix: ‘Decide on a sample size in advance and wait until the experiment is over.’ If you must monitor, use a sequential method designed for it.",
+          "**4. Fix the sample size in advance.** Use a power calculator with your baseline rate, MDE, significance level and power. Evan Miller warns that if you run a test ‘until we see a significant difference’, ‘all the reported significance levels become meaningless’; in his example, stopping at the first p < 0.05 inflated the false-positive rate to 26.1%. His fix: ‘Decide on a sample size in advance and wait until the experiment is over.’ If you must monitor, use a sequential method designed for it.",
           "**5. Cover full weekly cycles.** Run for whole weeks, at least one and ideally two, so weekday and weekend behaviour, campaign flights and payday patterns are represented.",
           "**6. Check the split.** If the traffic split is noticeably off the planned ratio (a sample ratio mismatch), the result is suspect. Kohavi, Tang and Xu's Trustworthy Online Controlled Experiments (Cambridge University Press, 2020) covers this and other trust checks.",
-          "**7. Pick a tool.** Google Optimize and Optimize 360 ‘are no longer available as of September 30, 2023’ ([[https://support.google.com/analytics/answer/12979939|Google Analytics Help]]). Use a third-party testing tool, feature flags or server-side testing, and check its effect on page speed and consent. Our [[/blogs/ecommerce-ab-testing-framework|A/B testing framework]] has the full per-test standard; it is written for ecommerce but applies to lead generation.",
+          "**7. Pick a tool.** Google Optimize and Optimize 360 ‘are no longer available as of September 30, 2023’. Use a third-party testing tool, feature flags or server-side testing, and check its effect on page speed and consent. Our [[/blogs/ecommerce-ab-testing-framework|A/B testing framework]] has the full per-test standard; it is written for ecommerce but applies to lead generation.",
         ],
         code: {
           label: "Test plan template (one per test)",
@@ -412,9 +412,9 @@ export const uaeCroPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "UAE data and official pages: [[https://datareportal.com/reports/digital-2026-united-arab-emirates|DataReportal, Digital 2026: UAE]]; [[https://communicateonline.me/news/85-percent-of-uae-residents-want-businesses-to-use-whatsapp/|Zbooni/YouGov WhatsApp survey (via Communicate, 2024)]]; [[https://www.consultancy-me.com/news/11592/deloitte-consumers-in-uae-and-ksa-driving-surge-in-ai-adoption-and-social-commerce|Deloitte Digital Consumer Trends 2025 (via Consultancy-ME)]]; [[https://blogs.microsoft.com/on-the-issues/2026/05/07/the-state-of-global-ai-diffusion-in-2026/|Microsoft AI Economy Institute, 2026]]; [[https://u.ae/en/information-and-services/justice-safety-and-the-law/consumer-protection|u.ae consumer protection]]; [[https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws|u.ae data protection laws]].",
-          "UX and performance research: [[https://www.nngroup.com/articles/scrolling-and-attention/|NN/g, scrolling and attention]]; [[https://www.nngroup.com/articles/web-form-design/|NN/g, web form design]]; [[https://www.nngroup.com/articles/errors-forms-design-guidelines/|NN/g, form errors]]; [[https://www.nngroup.com/articles/trustworthy-design/|NN/g, trustworthy design]]; [[https://www.nngroup.com/articles/mobile-ux/|NN/g, mobile UX]]; [[https://baymard.com/blog/inline-form-validation|Baymard, inline validation]]; [[https://web.dev/articles/vitals|web.dev, Core Web Vitals]]; [[https://developers.google.com/search/docs/appearance/page-experience|Google Search Central, page experience]]; [[https://www.w3.org/TR/WCAG22/|W3C, WCAG 2.2]].",
-          "Testing and buyer behaviour: [[https://www.evanmiller.org/how-not-to-run-an-ab-test.html|Evan Miller, How Not To Run an A/B Test]]; [[https://support.google.com/analytics/answer/12979939|Google Analytics Help, Optimize sunset]]; Kohavi, Tang and Xu, Trustworthy Online Controlled Experiments (Cambridge University Press, 2020); [[https://6sense.com/report/buyer-experience/|6sense, 2025 Buyer Experience Report]]; [[https://business.linkedin.com/advertise/resources/b2b-institute/b2b-research/trends/95-5-rule|LinkedIn B2B Institute, 95:5 rule]].",
+          "UAE data and official pages: DataReportal, Digital 2026: UAE; Zbooni/YouGov WhatsApp survey (via Communicate, 2024); Deloitte Digital Consumer Trends 2025 (via Consultancy-ME); Microsoft AI Economy Institute, 2026; u.ae consumer protection; u.ae data protection laws.",
+          "UX and performance research: NN/g, scrolling and attention; NN/g, web form design; NN/g, form errors; NN/g, trustworthy design; NN/g, mobile UX; Baymard, inline validation; web.dev, Core Web Vitals; Google Search Central, page experience; W3C, WCAG 2.2.",
+          "Testing and buyer behaviour: Evan Miller, How Not To Run an A/B Test; Google Analytics Help, Optimize sunset; Kohavi, Tang and Xu, Trustworthy Online Controlled Experiments (Cambridge University Press, 2020); 6sense, 2025 Buyer Experience Report; LinkedIn B2B Institute, 95:5 rule.",
           "Survey figures come from the named organisations; several are vendor-commissioned or not UAE-specific, as noted in the text. None is ZSpace client data. ICE scores and examples are illustrative.",
         ],
       },
@@ -493,14 +493,14 @@ export const uaeCroPosts: BlogPost[] = [
         table: {
           headers: ["Finding", "Source", "Scope and caveats"],
           rows: [
-            ["UAE ecommerce reached AED 42.2bn in 2025, about 15.7% of retail; 19% CAGR 2020–25; forecast about AED 67.2bn by 2030", "EZDubai and Euromonitor, via [[https://www.gulftoday.ae/business/2026/09/28/uae-e-commerce-market-size-reaches-dhs422-billion-in-2025|Gulf Today]]", "UAE; market estimate"],
-            ["39% of UAE online shoppers used BNPL in the past 12 months (42% in KSA)", "[[https://www.checkout.com/newsroom/checkout-com-and-tabby-partner-to-expand-bnpl-solutions-for-retailers-in-the-uae-and-saudi-arabia|Checkout.com, March 2025]]", "UAE; payments-provider data"],
-            ["About 23% of UAE consumer transactions are still cash", "[[https://ae.visamiddleeast.com/about-visa/newsroom/press-releases/prl-27012025.html|Visa, Where Cash Hides, Jan 2025]]", "All consumer transactions, not ecommerce only"],
-            ["Cash-on-delivery use down 53% in the UAE since 2020; daily online shopping rose from 5% to 21% of UAE consumers", "Checkout.com State of Digital Commerce in MENA 2025, via Consultancy-ME ([[https://www.checkout.com/guides-and-reports/digital-commerce-mena-2025|report page]])", "Decline only; no current COD share"],
+            ["UAE ecommerce reached AED 42.2bn in 2025, about 15.7% of retail; 19% CAGR 2020–25; forecast about AED 67.2bn by 2030", "EZDubai and Euromonitor, via Gulf Today", "UAE; market estimate"],
+            ["39% of UAE online shoppers used BNPL in the past 12 months (42% in KSA)", "Checkout.com, March 2025", "UAE; payments-provider data"],
+            ["About 23% of UAE consumer transactions are still cash", "Visa, Where Cash Hides, Jan 2025", "All consumer transactions, not ecommerce only"],
+            ["Cash-on-delivery use down 53% in the UAE since 2020; daily online shopping rose from 5% to 21% of UAE consumers", "Checkout.com State of Digital Commerce in MENA 2025, via Consultancy-ME", "Decline only; no current COD share"],
             ["92% of UAE shoppers prioritise fast, free delivery and easy returns; 83% would abandon a cart if their preferred delivery option was unavailable, 81% if their preferred returns option was unavailable", "DHL 2026 E-Commerce Trends Report, reported by Khaleej Times (4 Oct 2026)", "29,000 shoppers in 29 countries; UAE sample size not given"],
             ["84% receive deliveries at home, a neighbour or a safe place; 12% use parcel lockers; 73% return mainly via home collection", "DHL 2026, via Khaleej Times", "As above"],
-            ["99% internet penetration; 23.0m mobile connections (202% of population)", "[[https://datareportal.com/reports/digital-2026-united-arab-emirates|DataReportal, Digital 2026: UAE]]", "UAE"],
-            ["85% of UAE residents want businesses to offer WhatsApp for support", "[[https://communicateonline.me/news/85-percent-of-uae-residents-want-businesses-to-use-whatsapp/|Zbooni/YouGov, 2024]]", "1,000 UAE residents; vendor-commissioned"],
+            ["99% internet penetration; 23.0m mobile connections (202% of population)", "DataReportal, Digital 2026: UAE", "UAE"],
+            ["85% of UAE residents want businesses to offer WhatsApp for support", "Zbooni/YouGov, 2024", "1,000 UAE residents; vendor-commissioned"],
           ],
         },
         callout: {
@@ -511,7 +511,7 @@ export const uaeCroPosts: BlogPost[] = [
       {
         heading: "Why shoppers abandon checkout (and what the data does not tell you)",
         body: [
-          "**Research.** Baymard Institute's average of documented online cart abandonment rates is **70.22%**, across 50 studies from 2006 to 2025 ([[https://baymard.com/lists/cart-abandonment-rate|Baymard]]). That is a cross-study global average, not a UAE figure. Baymard's survey of **US** online shoppers, excluding those ‘just browsing’, lists the reasons below.",
+          "**Research.** Baymard Institute's average of documented online cart abandonment rates is **70.22%**, across 50 studies from 2006 to 2025. That is a cross-study global average, not a UAE figure. Baymard's survey of **US** online shoppers, excluding those ‘just browsing’, lists the reasons below.",
           "These are US results. We include them because the categories (cost, delivery, trust, accounts, complexity, errors, payment) are useful for structuring an audit, not because the percentages apply to UAE shoppers. For the generic picture, read [[/blogs/why-customers-abandon-checkout|why customers abandon checkout]]; this article adds the UAE layer.",
         ],
         table: {
@@ -541,15 +541,15 @@ export const uaeCroPosts: BlogPost[] = [
       {
         heading: "Guest checkout and account creation",
         body: [
-          "**Research.** Baymard found that 24% of US shoppers had abandoned a cart in the previous quarter solely because a site forced them to create an account, and that 47% of sites offering guest checkout failed to make it the most prominent option. Its advice: put ‘Guest’ in the label, show it as a button rather than a text link, place it at the top, and offer account creation on the confirmation step ([[https://baymard.com/research-articles/make-guest-checkout-prominent|Baymard]]). Again, these are US data.",
+          "**Research.** Baymard found that 24% of US shoppers had abandoned a cart in the previous quarter solely because a site forced them to create an account, and that 47% of sites offering guest checkout failed to make it the most prominent option. Its advice: put ‘Guest’ in the label, show it as a button rather than a text link, place it at the top, and offer account creation on the confirmation step. Again, these are US data.",
           "**Our recommendation.** Offer guest checkout prominently, ask for an email or mobile number up front so you can recover abandoned carts with consent, and invite account creation after payment with the details already filled. If you use one-time passcodes, follow WCAG 2.2 criterion 3.3.8: do not block paste or password managers. The [[/blogs/ecommerce-checkout-ux|checkout UX guide]] covers account flows in depth.",
         ],
       },
       {
         heading: "Payment options for UAE shoppers",
         body: [
-          "**UAE facts.** Shopify Payments is available in the UAE; its UAE payment-methods page lists Visa, Mastercard and Maestro cards, and Apple Pay, Google Pay and Shop Pay as accelerated checkouts turned on automatically. It is for online payments only, not point of sale ([[https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries|Shopify Help]]). Eligible entities are LLC, Free Zone LLC, Sole Establishment and Free Zone Sole Establishment, with an AED account at a UAE bank ([[https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries/united-arab-emirates/requirements|Shopify requirements]]). Tabby and Tamara both offer BNPL and say they are CBUAE-licensed. 39% of UAE online shoppers used BNPL in the past year (Checkout.com).",
-          "**Cash on delivery.** Checkout.com reports COD use in the UAE has fallen 53% since 2020, but we found no reliable figure for its current share. On Shopify, COD is a **manual payment method**: Shopify lists ‘cash on delivery (COD), money orders, and bank transfers’ as common manual payments, set up under Settings > Payments; orders show as unpaid until marked paid ([[https://help.shopify.com/en/manual/payments/manual-payments|Shopify manual payments]]).",
+          "**UAE facts.** Shopify Payments is available in the UAE; its UAE payment-methods page lists Visa, Mastercard and Maestro cards, and Apple Pay, Google Pay and Shop Pay as accelerated checkouts turned on automatically. It is for online payments only, not point of sale. Eligible entities are LLC, Free Zone LLC, Sole Establishment and Free Zone Sole Establishment, with an AED account at a UAE bank. Tabby and Tamara both offer BNPL and say they are CBUAE-licensed. 39% of UAE online shoppers used BNPL in the past year (Checkout.com).",
+          "**Cash on delivery.** Checkout.com reports COD use in the UAE has fallen 53% since 2020, but we found no reliable figure for its current share. On Shopify, COD is a **manual payment method**: Shopify lists ‘cash on delivery (COD), money orders, and bank transfers’ as common manual payments, set up under Settings > Payments; orders show as unpaid until marked paid.",
           "For gateway architecture, see [[/blogs/ecommerce-payment-gateway-integration|ecommerce payment gateway integration]] and [[/blogs/payment-gateway-integration|payment gateway integration]].",
         ],
         table: {
@@ -579,7 +579,7 @@ export const uaeCroPosts: BlogPost[] = [
         heading: "Shipping transparency and delivery expectations",
         body: [
           "**UAE research.** In DHL's 2026 E-Commerce Trends Report, as reported by Khaleej Times, 92% of UAE shoppers said they prioritise fast, free delivery and easy returns, 83% would abandon a cart if their preferred delivery option was unavailable and 81% if their preferred returns option was unavailable. The UAE sample size was not given.",
-          "**Research (US).** In Baymard's US survey, extra costs were the most common reason to abandon (40%), and 12% could not see or calculate the total cost up front ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]).",
+          "**Research (US).** In Baymard's US survey, extra costs were the most common reason to abandon (40%), and 12% could not see or calculate the total cost up front.",
           "**Our recommendations.** Show delivery cost and an estimated delivery date on the product page and cart, before checkout, ideally by emirate. State the free-delivery threshold and how far the shopper is from it. Offer the delivery choices your couriers support (standard, express, scheduled slot) and say what happens if nobody is home. If COD carries a fee, show it before the payment step, not at the end. Make sure the delivery promise matches what your courier actually achieves; a broken promise costs more than a modest one.",
         ],
       },
@@ -587,8 +587,8 @@ export const uaeCroPosts: BlogPost[] = [
         heading: "Address forms for UAE deliveries",
         body: [
           "**The answer first:** UAE delivery depends more on area, building, landmark and a reachable mobile number than on a postcode. Do not make a postcode field required; design the address form around how your courier actually finds people.",
-          "**UAE facts.** Abu Dhabi's Onwani addressing system works by ‘naming streets and numbering buildings and facilities in Abu Dhabi’, and the Department of Municipalities and Transport lists address parts as building number, street name, city name, area and postal code ([[https://pages.dmt.gov.ae/en/onwani|DMT Onwani]]). Dubai Municipality's Makani system, as described on its official materials, gives building entrances a 10-digit number and complements rather than replaces traditional building addresses; we could not load the Makani site directly to confirm details. We found no primary source for the common claim that ‘the UAE has no postcodes’, so we describe it as having no widely used street-level postcode for deliveries.",
-          "**Research.** Baymard found 55% of sites do not offer fully automatic address lookup, and in testing 69% of participants entered the address manually when it did not appear in suggestions, so manual fields must stay visible ([[https://baymard.com/blog/automatic-address-lookup|Baymard]]). The article does not cover UAE addresses.",
+          "**UAE facts.** Abu Dhabi's Onwani addressing system works by ‘naming streets and numbering buildings and facilities in Abu Dhabi’, and the Department of Municipalities and Transport lists address parts as building number, street name, city name, area and postal code. Dubai Municipality's Makani system, as described on its official materials, gives building entrances a 10-digit number and complements rather than replaces traditional building addresses; we could not load the Makani site directly to confirm details. We found no primary source for the common claim that ‘the UAE has no postcodes’, so we describe it as having no widely used street-level postcode for deliveries.",
+          "**Research.** Baymard found 55% of sites do not offer fully automatic address lookup, and in testing 69% of participants entered the address manually when it did not appear in suggestions, so manual fields must stay visible. The article does not cover UAE addresses.",
           "**Our recommendations.** Ask for emirate (dropdown), area or community, street, building or villa name/number, apartment or unit, and an optional landmark or delivery note. Make mobile number required and explain it is for the courier. Offer an optional map pin or ‘use my location’, and an optional Makani number field for Dubai if your courier uses it. Before launch, run test orders with your courier and compare the fields they need with the fields your checkout collects.",
         ],
         code: {
@@ -599,15 +599,15 @@ export const uaeCroPosts: BlogPost[] = [
       {
         heading: "Arabic, English and right-to-left checkout",
         body: [
-          "**UAE facts.** u.ae states that under Federal Law 15 of 2020, amended by Decree-Law 5 of 2023, the consumer invoice ‘must be in Arabic and the provider may add any other language’, and that UAE-registered ecommerce businesses must give licensing details, product or service information in Arabic, and terms of contract, payment and warranty ([[https://u.ae/en/information-and-services/justice-safety-and-the-law/consumer-protection|u.ae consumer protection]]). Confirm the precise obligations for your business with the authority or an adviser.",
+          "**UAE facts.** u.ae states that under Federal Law 15 of 2020, amended by Decree-Law 5 of 2023, the consumer invoice ‘must be in Arabic and the provider may add any other language’, and that UAE-registered ecommerce businesses must give licensing details, product or service information in Arabic, and terms of contract, payment and warranty. Confirm the precise obligations for your business with the authority or an adviser.",
           "**Our recommendations.** If you offer Arabic, the whole checkout should switch: labels, errors, delivery messages, payment pages where the provider supports Arabic, confirmation emails and WhatsApp messages. Right-to-left layout should mirror the flow, while phone numbers, card numbers and prices stay left-to-right. Allow Arabic and Latin characters in name and address fields. Keep the language choice through redirects to hosted payment pages and back. The build side is covered in [[/blogs/multilingual-website-development-uae|multilingual website development in the UAE]] and [[/blogs/ecommerce-localization|ecommerce localisation]].",
         ],
       },
       {
         heading: "Trust, returns and invoices",
         body: [
-          "**UAE facts.** Under Federal Decree-Law 14 of 2023, digital traders must provide detailed digital invoices for online purchases ([[https://u.ae/en/information-and-services/business/important-digital-services/digital-invoicing|u.ae digital invoicing]]). Consumer invoices must be in Arabic (u.ae).",
-          "**Research (US).** In Baymard's US survey, 19% abandoned because they did not trust the site with card details and 13% because the returns policy was unsatisfactory ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]).",
+          "**UAE facts.** Under Federal Decree-Law 14 of 2023, digital traders must provide detailed digital invoices for online purchases. Consumer invoices must be in Arabic (u.ae).",
+          "**Research (US).** In Baymard's US survey, 19% abandoned because they did not trust the site with card details and 13% because the returns policy was unsatisfactory.",
           "**Our recommendations.** Show a short returns summary (window, condition, who pays, how collection works) next to the pay button, with a link to the full policy in Arabic and English. Display the legal entity and trade licence details in the footer and on the policy pages. Use recognisable payment marks only for methods you actually accept. Send a detailed bilingual invoice and order confirmation immediately. Given DHL's finding that 73% of UAE shoppers return mainly via home collection, say clearly whether you offer collection.",
         ],
       },
@@ -623,7 +623,7 @@ export const uaeCroPosts: BlogPost[] = [
         heading: "Cart recovery with consent",
         body: [
           "**The answer first:** cart recovery works only for shoppers you can lawfully contact. Capture contact details early, record consent, and send a small number of useful reminders.",
-          "**Facts.** Meta states that ‘businesses are required to obtain opt-in before messaging people on WhatsApp’ ([[https://developers.facebook.com/docs/whatsapp/overview/getting-opt-in|Meta]]), and that ‘template messages are the only type of message that can be sent to WhatsApp users outside of a customer service window’; templates are categorised as authentication, marketing or utility ([[https://developers.facebook.com/docs/whatsapp/message-templates/guidelines|Meta template guidelines]]). Under the UAE PDPL, consent is required unless an exception applies, and the DIFC and ADGM regimes say pre-ticked boxes are not consent ([[https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws|u.ae]]). This is not legal advice; check which rules apply to you.",
+          "**Facts.** Meta states that ‘businesses are required to obtain opt-in before messaging people on WhatsApp’, and that ‘template messages are the only type of message that can be sent to WhatsApp users outside of a customer service window’; templates are categorised as authentication, marketing or utility. Under the UAE PDPL, consent is required unless an exception applies, and the DIFC and ADGM regimes say pre-ticked boxes are not consent. This is not legal advice; check which rules apply to you.",
           "**Our recommendations.** Add an unticked opt-in at the contact step (‘Send me order updates and reminders on WhatsApp’). Send at most two or three reminders, the first within a few hours, each with the cart contents, the total including delivery, and a link that restores the cart. Lead with service (‘Your cart is saved; questions about delivery?’) before discounts, so you do not train shoppers to abandon for a code. Make opting out one tap.",
         ],
         checklist: [
@@ -638,7 +638,7 @@ export const uaeCroPosts: BlogPost[] = [
       {
         heading: "Error handling and form validation",
         body: [
-          "**Research.** Baymard found about 31% of sites have no inline validation; it recommends validating when a field is left or reaches its correct length, removing errors live as soon as they are fixed and using positive confirmation ([[https://baymard.com/blog/inline-form-validation|Baymard]]). NN/g advises showing error messages next to the field in error ([[https://www.nngroup.com/articles/errors-forms-design-guidelines/|NN/g]]). WCAG 2.2 criterion 3.3.7 (Redundant Entry) requires that information already entered is auto-populated or selectable rather than typed again, for example ‘billing same as delivery’ ([[https://www.w3.org/TR/WCAG22/|W3C]]).",
+          "**Research.** Baymard found about 31% of sites have no inline validation; it recommends validating when a field is left or reaches its correct length, removing errors live as soon as they are fixed and using positive confirmation. NN/g advises showing error messages next to the field in error. WCAG 2.2 criterion 3.3.7 (Redundant Entry) requires that information already entered is auto-populated or selectable rather than typed again, for example ‘billing same as delivery’.",
           "**Our recommendations.** Accept UAE mobile numbers with or without +971, a leading zero or spaces, and normalise them. Never clear the form after an error. Write errors that say how to fix the problem (‘Enter the building name or number’), in the shopper's language. Log every validation error and payment error event so you can see which fields cause the most trouble.",
         ],
       },
@@ -646,7 +646,7 @@ export const uaeCroPosts: BlogPost[] = [
         heading: "Checkout speed",
         body: [
           "**The answer first:** every second of waiting after ‘Pay’ invites doubt. Keep checkout pages light and measure them like any other key page.",
-          "**Research.** web.dev's ‘good’ thresholds are LCP at or under 2.5 s, INP at or under 200 ms and CLS at or under 0.1, at the 75th percentile ([[https://web.dev/articles/vitals|web.dev]]).",
+          "**Research.** web.dev's ‘good’ thresholds are LCP at or under 2.5 s, INP at or under 200 ms and CLS at or under 0.1, at the 75th percentile.",
           "**Our recommendations.** Remove non-essential scripts from checkout, such as review widgets, pop-ups and duplicate pixels. Show a clear processing state after payment submission and disable double-submits. Monitor real-user timings for checkout steps, payment redirects and 3-D Secure returns, separately for mobile. See [[/blogs/why-page-speed-still-decides-conversion|why page speed still decides conversion]].",
         ],
       },
@@ -718,8 +718,8 @@ export const uaeCroPosts: BlogPost[] = [
       {
         heading: "Recommendations for Shopify stores",
         body: [
-          "**Facts.** Shopify announced that checkout.liquid customisations would stop working for in-checkout pages from 13 August 2024; on shopify.dev it states that ‘checkout.liquid and additional scripts were sunset for the Thank you and Order status pages on August 28, 2025’, with script tags on those pages sunset on 28 August 2025 for Plus stores and 26 August 2026 for non-Plus stores ([[https://shopify.dev/docs/storefronts/themes/architecture/layouts/checkout-liquid|shopify.dev]]). Customisation now runs through Checkout Extensibility (checkout UI extensions, Functions and apps). Tabby's Shopify docs say Shopify Scripts stopped running on 30 June 2026.",
-          "**Facts.** Tabby's Shopify payment app accepts billing addresses in the UAE and Saudi Arabia only, in AED and SAR; shoppers elsewhere see an error, so hide it for them, and add its hosted page domain to your analytics referral exclusions ([[https://docs.tabby.ai/e-commerce-platforms/shopify|Tabby docs]]). Tamara provides a Shopify payment gateway plugin ([[https://docs.tamara.co/docs/shopify|Tamara docs]]). COD is set up as a manual payment method.",
+          "**Facts.** Shopify announced that checkout.liquid customisations would stop working for in-checkout pages from 13 August 2024; on shopify.dev it states that ‘checkout.liquid and additional scripts were sunset for the Thank you and Order status pages on August 28, 2025’, with script tags on those pages sunset on 28 August 2025 for Plus stores and 26 August 2026 for non-Plus stores. Customisation now runs through Checkout Extensibility (checkout UI extensions, Functions and apps). Tabby's Shopify docs say Shopify Scripts stopped running on 30 June 2026.",
+          "**Facts.** Tabby's Shopify payment app accepts billing addresses in the UAE and Saudi Arabia only, in AED and SAR; shoppers elsewhere see an error, so hide it for them, and add its hosted page domain to your analytics referral exclusions. Tamara provides a Shopify payment gateway plugin. COD is set up as a manual payment method.",
           "**Our recommendations.** Turn on Shopify Payments if eligible so Apple Pay and Google Pay appear; check your checkout and thank-you customisations have moved to extensions; review the UAE address fields Shopify shows in a live test checkout before relying on them; add BNPL through the providers' apps and test refunds; use Shopify's checkout language settings and test Arabic end to end. Deeper guides: [[/blogs/shopify-checkout-optimization|Shopify checkout optimisation]], [[/blogs/shopify-checkout-audit|Shopify checkout audit]] and [[/blogs/shopify-store-development|Shopify store development]].",
         ],
       },
@@ -734,7 +734,7 @@ export const uaeCroPosts: BlogPost[] = [
         heading: "Recommendations for marketplace sellers (noon, Amazon.ae)",
         body: [
           "**The answer first:** on a marketplace you do not control the checkout, payment options or address form. You control what the shopper sees before checkout and whether you deliver on the promise.",
-          "**UAE facts.** Dubai's Dubai Traders initiative has supported more than 3,400 sellers (February 2026), and Dubai's SME digital trade initiative with Amazon reached more than 105,000 companies by May 2026 ([[https://www.mediaoffice.ae/en/news/2026/june/11-06/hamdan-bin-mohammed-chairs-meeting-of-the-higher-committee|Dubai Media Office]]). Check eligibility with the programme directly.",
+          "**UAE facts.** Dubai's Dubai Traders initiative has supported more than 3,400 sellers (February 2026), and Dubai's SME digital trade initiative with Amazon reached more than 105,000 companies by May 2026. Check eligibility with the programme directly.",
         ],
         table: {
           headers: ["You can control", "You cannot control"],
@@ -771,10 +771,10 @@ export const uaeCroPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "UAE market and payments: [[https://www.gulftoday.ae/business/2026/09/28/uae-e-commerce-market-size-reaches-dhs422-billion-in-2025|EZDubai and Euromonitor (via Gulf Today)]]; [[https://www.checkout.com/newsroom/checkout-com-and-tabby-partner-to-expand-bnpl-solutions-for-retailers-in-the-uae-and-saudi-arabia|Checkout.com, BNPL in the UAE and KSA]]; [[https://www.checkout.com/guides-and-reports/digital-commerce-mena-2025|Checkout.com, State of Digital Commerce in MENA 2025]] (COD figures via Consultancy-ME); [[https://ae.visamiddleeast.com/about-visa/newsroom/press-releases/prl-27012025.html|Visa, Where Cash Hides]]; DHL 2026 E-Commerce Trends Report (via Khaleej Times, 4 October 2026); [[https://datareportal.com/reports/digital-2026-united-arab-emirates|DataReportal, Digital 2026: UAE]]; [[https://communicateonline.me/news/85-percent-of-uae-residents-want-businesses-to-use-whatsapp/|Zbooni/YouGov WhatsApp survey]]; [[https://www.mediaoffice.ae/en/news/2026/june/11-06/hamdan-bin-mohammed-chairs-meeting-of-the-higher-committee|Dubai Media Office, Dubai Traders]].",
-          "UAE official pages: [[https://u.ae/en/information-and-services/justice-safety-and-the-law/consumer-protection|u.ae consumer protection]]; [[https://u.ae/en/information-and-services/business/important-digital-services/digital-invoicing|u.ae digital invoicing]]; [[https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws|u.ae data protection laws]]; [[https://pages.dmt.gov.ae/en/onwani|Abu Dhabi DMT, Onwani]].",
-          "Platforms and providers: [[https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries|Shopify Payments supported countries]]; [[https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries/united-arab-emirates/requirements|Shopify Payments UAE requirements]]; [[https://help.shopify.com/en/manual/payments/manual-payments|Shopify manual payments]]; [[https://shopify.dev/docs/storefronts/themes/architecture/layouts/checkout-liquid|shopify.dev, checkout.liquid]]; [[https://docs.tabby.ai/e-commerce-platforms/shopify|Tabby Shopify docs]]; [[https://docs.tamara.co/docs/shopify|Tamara Shopify docs]]; [[https://developers.facebook.com/docs/whatsapp/overview/getting-opt-in|Meta, WhatsApp opt-in]]; [[https://developers.facebook.com/docs/whatsapp/message-templates/guidelines|Meta, WhatsApp template guidelines]].",
-          "UX research: [[https://baymard.com/lists/cart-abandonment-rate|Baymard, cart abandonment rate]]; [[https://baymard.com/research-articles/make-guest-checkout-prominent|Baymard, guest checkout]]; [[https://baymard.com/blog/automatic-address-lookup|Baymard, address lookup]]; [[https://baymard.com/blog/inline-form-validation|Baymard, inline validation]]; [[https://www.nngroup.com/articles/errors-forms-design-guidelines/|NN/g, form errors]]; [[https://web.dev/articles/vitals|web.dev, Core Web Vitals]]; [[https://www.w3.org/TR/WCAG22/|W3C, WCAG 2.2]].",
+          "UAE market and payments: EZDubai and Euromonitor (via Gulf Today); Checkout.com, BNPL in the UAE and KSA; Checkout.com, State of Digital Commerce in MENA 2025 (COD figures via Consultancy-ME); Visa, Where Cash Hides; DHL 2026 E-Commerce Trends Report (via Khaleej Times, 4 October 2026); DataReportal, Digital 2026: UAE; Zbooni/YouGov WhatsApp survey; Dubai Media Office, Dubai Traders.",
+          "UAE official pages: u.ae consumer protection; u.ae digital invoicing; u.ae data protection laws; Abu Dhabi DMT, Onwani.",
+          "Platforms and providers: Shopify Payments supported countries; Shopify Payments UAE requirements; Shopify manual payments; shopify.dev, checkout.liquid; Tabby Shopify docs; Tamara Shopify docs; Meta, WhatsApp opt-in; Meta, WhatsApp template guidelines.",
+          "UX research: Baymard, cart abandonment rate; Baymard, guest checkout; Baymard, address lookup; Baymard, inline validation; NN/g, form errors; web.dev, Core Web Vitals; W3C, WCAG 2.2.",
           "Baymard reasons are US survey data. Survey figures come from the named organisations, several vendor-run; none is ZSpace client data. Regulations change: confirm consumer protection, invoicing and data protection obligations with the relevant authority or an adviser.",
         ],
       },

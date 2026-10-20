@@ -93,7 +93,7 @@ export const ukRegulatedPosts: BlogPost[] = [
       {
         heading: "Do you need FCA permissions?",
         body: [
-          "Under the [[https://www.legislation.gov.uk/uksi/2017/752/contents|Payment Services Regulations 2017]], account information and payment initiation are regulated payment services. There are three common operating models, and the choice shapes your architecture, contracts and timeline.",
+          "Under the Payment Services Regulations 2017, account information and payment initiation are regulated payment services. There are three common operating models, and the choice shapes your architecture, contracts and timeline.",
         ],
         table: {
           headers: ["Model", "How it works", "When it fits", "Trade-offs"],
@@ -119,7 +119,7 @@ export const ukRegulatedPosts: BlogPost[] = [
           "**Redirect:** use app-to-app redirection on mobile so customers authenticate in their banking app, with a browser fallback.",
           "**Return handling:** handle success, cancellation, timeout and bank errors with clear next steps and a retry.",
           "**Consent dashboard:** let customers see active consents, what each covers and when it expires, and revoke it.",
-          "**Reconfirmation:** for ongoing account access, prompt customers to reconfirm consent every 90 days. Since the FCA's 2021 changes ([[https://www.fca.org.uk/publications/policy-statements/ps21-19-changes-sca-rts-and-guidance-approach-document-and-perimeter-guidance-manual|PS21/19]]), banks can apply an exemption so customers reconfirm with you instead of re-authenticating with the bank. Some customers will still need to go back to their bank.",
+          "**Reconfirmation:** for ongoing account access, prompt customers to reconfirm consent every 90 days. Since the FCA's 2021 changes, banks can apply an exemption so customers reconfirm with you instead of re-authenticating with the bank. Some customers will still need to go back to their bank.",
         ],
       },
       {
@@ -188,7 +188,7 @@ export const ukRegulatedPosts: BlogPost[] = [
       {
         heading: "What is changing",
         body: [
-          "The Competition and Markets Authority confirmed in September 2024 that the original Open Banking Roadmap was complete. The FCA now leads. On 2 June 2026 it welcomed the launch of the industry-led UK Payments Initiative scheme for commercial VRPs and said it will consult on a long-term regulatory framework by the end of 2026, subject to expected legislation, and supports an independent standards body ([[https://www.fca.org.uk/news/statements/open-banking-launch-uk-payments-initiative-scheme|FCA statement]]). The FCA has also published a roadmap for open finance, and the [[https://www.legislation.gov.uk/ukpga/2025/18/contents|Data (Use and Access) Act 2025]] gives the government powers to create smart data schemes in other sectors.",
+          "The Competition and Markets Authority confirmed in September 2024 that the original Open Banking Roadmap was complete. The FCA now leads. On 2 June 2026 it welcomed the launch of the industry-led UK Payments Initiative scheme for commercial VRPs and said it will consult on a long-term regulatory framework by the end of 2026, subject to expected legislation, and supports an independent standards body. The FCA has also published a roadmap for open finance, and the Data (Use and Access) Act 2025 gives the government powers to create smart data schemes in other sectors.",
           "Treat these as moving parts: check scheme membership, bank coverage and FCA publications before committing to a cVRP-dependent product.",
         ],
       },
@@ -207,8 +207,8 @@ export const ukRegulatedPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Regulation: [[https://www.legislation.gov.uk/uksi/2017/752/contents|Payment Services Regulations 2017]]; [[https://www.fca.org.uk/publications/policy-statements/ps21-19-changes-sca-rts-and-guidance-approach-document-and-perimeter-guidance-manual|FCA PS21/19 (SCA-RTS changes, 90-day reconfirmation)]]; [[https://www.fca.org.uk/news/statements/open-banking-launch-uk-payments-initiative-scheme|FCA statement on the UK Payments Initiative, 2 June 2026]].",
-          "Standards and context: [[https://standards.openbanking.org.uk/|Open Banking Standards]]; [[https://www.openbanking.org.uk/news/cma-confirms-full-completion-of-open-banking-roadmap-unlocking-a-new-era-of-financial-innovation/|Open Banking Limited: CMA confirms roadmap completion]]; [[https://www.legislation.gov.uk/ukpga/2025/18/contents|Data (Use and Access) Act 2025]].",
+          "Regulation: Payment Services Regulations 2017; FCA PS21/19 (SCA-RTS changes, 90-day reconfirmation); FCA statement on the UK Payments Initiative, 2 June 2026.",
+          "Standards and context: Open Banking Standards; Open Banking Limited: CMA confirms roadmap completion; Data (Use and Access) Act 2025.",
           "Accessed 10 October 2026. Scheme coverage and FCA policy are changing; check current publications. Nothing here is legal or regulatory advice.",
         ],
       },
@@ -313,12 +313,12 @@ export const ukRegulatedPosts: BlogPost[] = [
       {
         heading: "What a direct HMRC API integration involves",
         body: [
-          "If you build your own MTD software, plan for these steps on the [[https://developer.service.hmrc.gov.uk/api-documentation|HMRC Developer Hub]]:",
+          "If you build your own MTD software, plan for these steps on the HMRC Developer Hub:",
         ],
         checklist: [
           "**Register and test in the sandbox** with test users and test businesses.",
           "**Implement OAuth 2.0** for user-restricted endpoints, so taxpayers or agents grant your software authority by signing in to HMRC; refresh and store tokens securely.",
-          "**Send fraud prevention header data** with every call to the MTD VAT and Income Tax APIs. HMRC treats this as a legal obligation on software suppliers; validate headers with HMRC's test tooling ([[https://developer.service.hmrc.gov.uk/guides/fraud-prevention/|fraud prevention guide]]).",
+          "**Send fraud prevention header data** with every call to the MTD VAT and Income Tax APIs. HMRC treats this as a legal obligation on software suppliers; validate headers with HMRC's test tooling.",
           "**Meet HMRC's requirements for production credentials**, including transaction monitoring requirements for Income Tax software.",
           "**Get listed** in HMRC's software choices if you want taxpayers to find your product.",
           "**Handle errors and receipts**: store each submission's payload, HMRC response and correlation identifiers.",
@@ -328,7 +328,7 @@ export const ukRegulatedPosts: BlogPost[] = [
       {
         heading: "Digital records and digital links",
         body: [
-          "MTD requires digital records and a digital chain from records to submission. For VAT, HMRC's [[https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat|VAT Notice 700/22]] explains that transfers between software must use digital links, such as API connections, linked cells or file imports and exports, and that copy and paste is not a digital link. In practice:",
+          "MTD requires digital records and a digital chain from records to submission. For VAT, HMRC's VAT Notice 700/22 explains that transfers between software must use digital links, such as API connections, linked cells or file imports and exports, and that copy and paste is not a digital link. In practice:",
         ],
         checklist: [
           "Integrate operational systems with accounting software through APIs or automated imports.",
@@ -381,8 +381,8 @@ export const ukRegulatedPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "HMRC and GOV.UK: [[https://www.gov.uk/government/news/deadline-approaches-for-first-making-tax-digital-quarterly-update|HMRC press release: first MTD quarterly update deadline (23 July 2026)]]; [[https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax|Find software compatible with MTD for Income Tax]]; [[https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat|VAT Notice 700/22]].",
-          "Developers: [[https://developer.service.hmrc.gov.uk/api-documentation|HMRC Developer Hub API documentation]]; [[https://developer.service.hmrc.gov.uk/guides/fraud-prevention/|HMRC fraud prevention headers guide]].",
+          "HMRC and GOV.UK: HMRC press release: first MTD quarterly update deadline (23 July 2026); Find software compatible with MTD for Income Tax; VAT Notice 700/22.",
+          "Developers: HMRC Developer Hub API documentation; HMRC fraud prevention headers guide.",
           "Accessed 10 October 2026. HMRC requirements and thresholds change; check GOV.UK before relying on dates. Nothing here is tax advice.",
         ],
       },
@@ -446,8 +446,8 @@ export const ukRegulatedPosts: BlogPost[] = [
       {
         heading: "What changed under the Data (Use and Access) Act 2025?",
         body: [
-          "The [[https://www.legislation.gov.uk/ukpga/2025/18/contents|Data (Use and Access) Act 2025]] received Royal Assent on 19 June 2025, and its main data protection changes came into force on 5 February 2026. For subject access, it confirmed in law that controllers need only make a reasonable and proportionate search, and that the time limit pauses while the controller waits for clarification it reasonably needs. The ICO's guidance says clarification cannot be requested as a matter of routine. Separately, from 19 June 2026 controllers must have a procedure for data protection complaints and acknowledge complaints within 30 days.",
-          "The ICO updated [[https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/subject-access-requests/a-guide-to-subject-access/|its guide to subject access]] in July 2026 to reflect these changes. Build your workflow around that guidance rather than older summaries.",
+          "The Data (Use and Access) Act 2025 received Royal Assent on 19 June 2025, and its main data protection changes came into force on 5 February 2026. For subject access, it confirmed in law that controllers need only make a reasonable and proportionate search, and that the time limit pauses while the controller waits for clarification it reasonably needs. The ICO's guidance says clarification cannot be requested as a matter of routine. Separately, from 19 June 2026 controllers must have a procedure for data protection complaints and acknowledge complaints within 30 days.",
+          "The ICO updated its guide to subject access in July 2026 to reflect these changes. Build your workflow around that guidance rather than older summaries.",
         ],
       },
       {
@@ -572,8 +572,8 @@ export const ukRegulatedPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Regulator and law: [[https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/subject-access-requests/a-guide-to-subject-access/|ICO: A guide to subject access (updated 16 July 2026)]]; [[https://www.legislation.gov.uk/ukpga/2025/18/contents|Data (Use and Access) Act 2025]].",
-          "Commencement and complaints commentary: [[https://privacymatters.dlapiper.com/2026/02/uk-commencement-of-the-data-protection-provisions-in-the-data-use-and-access-act/|DLA Piper: commencement of DUAA data protection provisions]]; [[https://www.lewissilkin.com/en/insights/2026/02/19/handling-data-protection-complaints-under-the-duaa-key-takeaways-from-ico-guidan-102miuc|Lewis Silkin: ICO guidance on data protection complaints]].",
+          "Regulator and law: ICO: A guide to subject access (updated 16 July 2026); Data (Use and Access) Act 2025.",
+          "Commencement and complaints commentary: DLA Piper: commencement of DUAA data protection provisions; Lewis Silkin: ICO guidance on data protection complaints.",
           "Accessed 10 October 2026. Some commencement details come from law-firm summaries; check the ICO and legislation.gov.uk for the final position. Nothing here is legal advice.",
         ],
       },
@@ -733,8 +733,8 @@ export const ukRegulatedPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Assurance: [[https://digital.nhs.uk/services/digital-technology-assessment-criteria-dtac|NHS England: DTAC guidance]]; [[https://innovation.nhs.uk/news/updated-nhs-england-digital-technology-assessment-criteria-dtac-form-and-guidance/|NHS Innovation Service: updated DTAC form and guidance (March 2026)]]; [[https://www.england.nhs.uk/long-read/digital-clinical-safety-assurance/|NHS England: digital clinical safety assurance]]; [[https://www.digitalregulations.innovation.nhs.uk/regulations-and-guidance-for-developers/all-developers-guidance/complying-with-nhs-digital-clinical-risk-management-standards/|AI and Digital Regulations Service: clinical risk management standards]].",
-          "Integration: [[https://service-manual.nhs.uk/standards-and-technology/technology/personal-demographics-service-PDS|NHS service manual: Personal Demographics Service]]; [[https://digital.nhs.uk/services/partner-onboarding|NHS England: partner onboarding]]; [[https://digital.nhs.uk/developer/api-catalogue/interface-mechanism-1-standards|NHS England: IM1 standards]].",
+          "Assurance: NHS England: DTAC guidance; NHS Innovation Service: updated DTAC form and guidance (March 2026); NHS England: digital clinical safety assurance; AI and Digital Regulations Service: clinical risk management standards.",
+          "Integration: NHS service manual: Personal Demographics Service; NHS England: partner onboarding; NHS England: IM1 standards.",
           "Accessed 10 October 2026. Some NHS England developer pages block automated access and some details come from summaries; confirm requirements with NHS England. Nothing here is regulatory or clinical safety advice.",
         ],
       },
@@ -906,8 +906,8 @@ export const ukRegulatedPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Safety duties: [[https://www.hse.gov.uk/gas/landlords/gassaferecord.htm|HSE: gas safety check records]]; [[https://www.gov.uk/government/publications/electrical-safety-standards-in-the-private-rented-sector-guidance-for-landlords-tenants-and-local-authorities/guide-for-landlords-electrical-safety-standards-in-the-private-rented-sector|GOV.UK: electrical safety standards, guide for landlords]]; [[https://www.gov.uk/government/publications/smoke-and-carbon-monoxide-alarms-explanatory-booklet-for-landlords|GOV.UK: smoke and carbon monoxide alarms guidance]].",
-          "Housing reforms: [[https://housinghub.campaign.gov.uk/make-things-right/new-law|GOV.UK campaign: Awaab's Law]]; [[https://www.clydeco.com/en/insights/2026/08/awaab-s-law-phase-2-the-next-compliance-challenge|Clyde & Co: Awaab's Law Phase 2]]; [[https://www.trowers.com/insights/2025/november/governmental-roadmap-for-implementation-of-the-renters-rights-act-2025-confirmed|Trowers & Hamlins: Renters' Rights Act roadmap]].",
+          "Safety duties: HSE: gas safety check records; GOV.UK: electrical safety standards, guide for landlords; GOV.UK: smoke and carbon monoxide alarms guidance.",
+          "Housing reforms: GOV.UK campaign: Awaab's Law; Clyde & Co: Awaab's Law Phase 2; Trowers & Hamlins: Renters' Rights Act roadmap.",
           "Accessed 10 October 2026. Phase 2 and PRS database dates partly rely on secondary sources; check GOV.UK. Nothing here is legal or building safety advice.",
         ],
       },

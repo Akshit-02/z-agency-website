@@ -912,7 +912,7 @@ export const posts: BlogPost[] = [
         heading: "Design tokens",
         body: [
           "Tokens turn decisions into shared variables. Instead of a hex value repeated across dozens of files, both design and code reference the same named token. Change it once and it changes everywhere, which also makes theming and brand updates far easier. Tokens are the bridge described in [[/blogs/design-handoff|design handoff]].",
-          "There is now a common file format for tokens. The Design Tokens Community Group published version 2025.10 of its specification, its first stable version, in October 2025 ([[https://www.w3.org/community/design-tokens/2025/10/28/design-tokens-specification-reaches-first-stable-version/|W3C Design Tokens Community Group]]). It is a Community Group report rather than a W3C standard, so tool support varies; check that your design tool and build pipeline can read and write it before you depend on it.",
+          "There is now a common file format for tokens. The Design Tokens Community Group published version 2025.10 of its specification, its first stable version, in October 2025. It is a Community Group report rather than a W3C standard, so tool support varies; check that your design tool and build pipeline can read and write it before you depend on it.",
         ],
       },
       {
@@ -929,7 +929,7 @@ export const posts: BlogPost[] = [
       {
         heading: "When should a startup invest in a design system?",
         body: [
-          "Later than most design-system advocates suggest, and earlier than most founders think. Nielsen Norman Group notes that design systems are best \"when the company foresees years of future, replicable design work\", and that for a prototype a full design system is unlikely to pay back in the near term, because its benefit is the replication of design in the future ([[https://www.nngroup.com/articles/design-systems-101/|NN/g, Design Systems 101]]). Systems also need ongoing maintenance, so the cost does not end when the first version ships.",
+          "Later than most design-system advocates suggest, and earlier than most founders think. Nielsen Norman Group notes that design systems are best \"when the company foresees years of future, replicable design work\", and that for a prototype a full design system is unlikely to pay back in the near term, because its benefit is the replication of design in the future. Systems also need ongoing maintenance, so the cost does not end when the first version ships.",
           "A practical way to read that for a startup:",
         ],
         table: {
@@ -944,8 +944,8 @@ export const posts: BlogPost[] = [
       {
         heading: "Fixing an inconsistent website",
         body: [
-          "Marketing sites drift in a particular way. A few freelancers, an agency and dozens of landing pages later, there are four button styles, several greys and hero sections that almost match. Nielsen Norman Group's description of the problem is blunt: \"Small deviations compound quickly\", and \"Teams optimize locally, not globally\" ([[https://www.nngroup.com/articles/design-system-enforcer/|NN/g]]). You rarely need a full design system to fix it. You need four steps.",
-          "**1. Run an interface inventory.** Brad Frost describes an interface inventory as \"a comprehensive collection of the bits and pieces that make up your interface\" ([[https://bradfrost.com/blog/post/interface-inventory/|Brad Frost]]). Screenshot each unique variant, not every instance, and group them: buttons, links, headings, colours, heroes, cards, forms, calls to action, testimonials and other proof, pricing tables, FAQs, footers, icons and image styles. Frost suggests 30 to 90 minutes is enough for a first pass ([[https://atomicdesign.bradfrost.com/chapter-4/|Atomic Design, chapter 4]]). The output is a count of variants per category, which is usually persuasive on its own; as Frost puts it, \"You don't need to be a designer to recognize that having 37 unique button styles probably isn't a good idea.\"",
+          "Marketing sites drift in a particular way. A few freelancers, an agency and dozens of landing pages later, there are four button styles, several greys and hero sections that almost match. Nielsen Norman Group's description of the problem is blunt: \"Small deviations compound quickly\", and \"Teams optimize locally, not globally\". You rarely need a full design system to fix it. You need four steps.",
+          "**1. Run an interface inventory.** Brad Frost describes an interface inventory as \"a comprehensive collection of the bits and pieces that make up your interface\". Screenshot each unique variant, not every instance, and group them: buttons, links, headings, colours, heroes, cards, forms, calls to action, testimonials and other proof, pricing tables, FAQs, footers, icons and image styles. Frost suggests 30 to 90 minutes is enough for a first pass. The output is a count of variants per category, which is usually persuasive on its own; as Frost puts it, \"You don't need to be a designer to recognize that having 37 unique button styles probably isn't a good idea.\"",
           "**2. Fill in a consolidation sheet.** For every variant, decide whether to keep it, merge it into another, or retire it, and map what survives to tokens. A useful starting rule, which is a heuristic rather than a standard, is one primary and one secondary button style, one type scale and a named colour palette.",
         ],
         table: {
@@ -962,8 +962,8 @@ export const posts: BlogPost[] = [
       {
         heading: "Fixing an inconsistent website: CMS blocks and governance",
         body: [
-          "**3. Rebuild the most-used sections as a CMS block library with limited options.** Rebuild the sections your pages actually use, often somewhere around 12 to 20 (again a heuristic), as reusable blocks with preset colours, preset spacing, fixed heading levels and sensible defaults. In **WordPress**, theme.json settings, block locking and patterns let you restrict editors to approved options, for example \"only allowing specific preset colors to be used for the background of a Cover block\" ([[https://developer.wordpress.org/block-editor/how-to-guides/curating-the-editor-experience/|WordPress developer docs]]). In **Shopify**, each section's schema defines the settings and blocks merchants can change, with presets, a maximum number of blocks and the templates where it may appear ([[https://shopify.dev/docs/storefronts/themes/architecture/sections/section-schema|Shopify section schema]]). In a **headless CMS**, model each block as a content type with constrained fields and let the front end decide the styling, so editors choose content and options, not CSS.",
-          "**4. Add light governance.** Name one owner who decides what enters the library (NN/g calls this role the design-system \"enforcer\"). Set one rule: a new need becomes a new block, never a one-off page. Re-run a one-hour inventory every quarter, and log inconsistencies as UX debt, prioritised by user impact, frequency and effort ([[https://www.nngroup.com/articles/ux-debt/|NN/g on UX debt]]).",
+          "**3. Rebuild the most-used sections as a CMS block library with limited options.** Rebuild the sections your pages actually use, often somewhere around 12 to 20 (again a heuristic), as reusable blocks with preset colours, preset spacing, fixed heading levels and sensible defaults. In **WordPress**, theme.json settings, block locking and patterns let you restrict editors to approved options, for example \"only allowing specific preset colors to be used for the background of a Cover block\". In **Shopify**, each section's schema defines the settings and blocks merchants can change, with presets, a maximum number of blocks and the templates where it may appear. In a **headless CMS**, model each block as a content type with constrained fields and let the front end decide the styling, so editors choose content and options, not CSS.",
+          "**4. Add light governance.** Name one owner who decides what enters the library (NN/g calls this role the design-system \"enforcer\"). Set one rule: a new need becomes a new block, never a one-off page. Re-run a one-hour inventory every quarter, and log inconsistencies as UX debt, prioritised by user impact, frequency and effort.",
         ],
         callout: {
           type: "takeaway",
@@ -1031,8 +1031,8 @@ export const posts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Design systems and consistency: [[https://www.nngroup.com/articles/design-systems-101/|NN/g: Design Systems 101]]; [[https://www.nngroup.com/articles/design-system-enforcer/|NN/g: the design-system enforcer (6 February 2026)]]; [[https://www.nngroup.com/articles/ux-debt/|NN/g: UX debt]]; [[https://bradfrost.com/blog/post/interface-inventory/|Brad Frost: interface inventory (2013)]]; [[https://atomicdesign.bradfrost.com/chapter-4/|Brad Frost: Atomic Design, chapter 4]].",
-          "Tokens and CMS controls: [[https://www.w3.org/community/design-tokens/2025/10/28/design-tokens-specification-reaches-first-stable-version/|Design Tokens Community Group: specification 2025.10]]; [[https://developer.wordpress.org/block-editor/how-to-guides/curating-the-editor-experience/|WordPress: curating the editor experience]]; [[https://shopify.dev/docs/storefronts/themes/architecture/sections/section-schema|Shopify: section schema]].",
+          "Design systems and consistency: NN/g: Design Systems 101; NN/g: the design-system enforcer (6 February 2026); NN/g: UX debt; Brad Frost: interface inventory (2013); Brad Frost: Atomic Design, chapter 4.",
+          "Tokens and CMS controls: Design Tokens Community Group: specification 2025.10; WordPress: curating the editor experience; Shopify: section schema.",
           "Accessed 15 October 2026. Platform features and specifications change; check the current documentation.",
         ],
       },
@@ -2095,7 +2095,7 @@ export const posts: BlogPost[] = [
       },
       {
         q: "What's a reasonable target for each Core Web Vitals metric?",
-        a: "Google's thresholds for a good experience are Largest Contentful Paint of 2.5 seconds or less, Interaction to Next Paint of 200 milliseconds or less, and Cumulative Layout Shift of 0.1 or less, at the 75th percentile of page loads, segmented by mobile and desktop ([[https://web.dev/articles/vitals|web.dev]]). Judge them on real visitor data rather than a single lab test, and look at mobile first.",
+        a: "Google's thresholds for a good experience are Largest Contentful Paint of 2.5 seconds or less, Interaction to Next Paint of 200 milliseconds or less, and Cumulative Layout Shift of 0.1 or less, at the 75th percentile of page loads, segmented by mobile and desktop. Judge them on real visitor data rather than a single lab test, and look at mobile first.",
       },
       {
         q: "Why is Interaction to Next Paint the hardest metric to fix on Shopify?",
@@ -2149,7 +2149,7 @@ export const posts: BlogPost[] = [
         heading: "Step 1: Decide which number to trust",
         body: [
           "Speed numbers disagree because they measure different things. A lab test loads one page once, on a simulated device and connection. Field data records what real visitors experienced over weeks. Field data tells you whether there is a problem; lab tools help you find the cause.",
-          "Shopify's [[https://help.shopify.com/en/manual/online-store/web-performance/web-performance-dashboard|Web performance dashboard]] summarises real user data from the past 30 days at the 75th percentile. Shopify notes that data might be delayed by up to 36 hours, that it keeps 90 days of data, and that a new store or one in private mode (password-protected) might not have metrics at all.",
+          "Shopify's Web performance dashboard summarises real user data from the past 30 days at the 75th percentile. Shopify notes that data might be delayed by up to 36 hours, that it keeps 90 days of data, and that a new store or one in private mode (password-protected) might not have metrics at all.",
         ],
         table: {
           headers: ["Source", "What it is", "Use it for"],
@@ -2168,7 +2168,7 @@ export const posts: BlogPost[] = [
       {
         heading: "Step 2: Find which metric fails, and on which template",
         body: [
-          "Google's thresholds for a good experience are measured at the 75th percentile of page loads, segmented across mobile and desktop ([[https://web.dev/articles/vitals|web.dev]]). Shopify's dashboard uses the same \"good\" lines and adds its own moderate and poor bands.",
+          "Google's thresholds for a good experience are measured at the 75th percentile of page loads, segmented across mobile and desktop. Shopify's dashboard uses the same \"good\" lines and adds its own moderate and poor bands.",
           "Then open the Page Type report for the failing metric. Shopify describes it as a way to see whether certain page templates affect performance. A store whose product pages fail INP while the home page passes has a product page problem, usually an app that only loads there.",
         ],
         table: {
@@ -2229,7 +2229,7 @@ export const posts: BlogPost[] = [
         heading: "Step 5: Test the fix on a duplicate theme",
         body: [
           "Never test speed fixes on the live theme. Duplicate it, make one change at a time, and compare the same templates in a lab tool before and after. To see what an app costs before you uninstall it, use the request blocking feature in Chrome DevTools to block its script on the duplicate theme's preview and re-run the test.",
-          "If the slowness looks like server time rather than scripts, the [[https://shopify.dev/docs/storefronts/themes/tools/theme-inspector|Shopify Theme Inspector for Chrome]] shows Liquid render profiling as a flame graph, which helps find theme code that is slow to render. Check that apps, tracking and checkout still work on the duplicate before publishing it.",
+          "If the slowness looks like server time rather than scripts, the Shopify Theme Inspector for Chrome shows Liquid render profiling as a flame graph, which helps find theme code that is slow to render. Check that apps, tracking and checkout still work on the duplicate before publishing it.",
         ],
       },
       {
@@ -2248,7 +2248,7 @@ export const posts: BlogPost[] = [
       {
         heading: "Does the speed problem cost sales?",
         body: [
-          "Shopify has published its own analysis: for every 100 milliseconds slower a store loads, measured by LCP, conversion tends to be about 3.5% lower. This is vendor data from Shopify, based on a 28-day window around January and February 2026, and Shopify describes it as correlation, not direct causation ([[https://www.shopify.com/enterprise/blog/store-speed-conversion|Shopify]]). Treat it as a reason to take speed seriously, not as a forecast for your store.",
+          "Shopify has published its own analysis: for every 100 milliseconds slower a store loads, measured by LCP, conversion tends to be about 3.5% lower. This is vendor data from Shopify, based on a 28-day window around January and February 2026, and Shopify describes it as correlation, not direct causation. Treat it as a reason to take speed seriously, not as a forecast for your store.",
           "For how performance connects to conversion and what to prioritise for revenue, see our guide to [[/blogs/shopify-speed-cro|how site speed affects Shopify conversion rates]].",
         ],
       },
@@ -2274,7 +2274,7 @@ export const posts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://web.dev/articles/vitals|web.dev: Web Vitals]]; [[https://help.shopify.com/en/manual/online-store/web-performance/web-performance-dashboard|Shopify Help Center: Web performance dashboard]]; [[https://shopify.dev/docs/storefronts/themes/tools/theme-inspector|Shopify.dev: Shopify Theme Inspector for Chrome]]; [[https://www.shopify.com/enterprise/blog/store-speed-conversion|Shopify: store speed and conversion (published 27 April 2026, vendor data)]].",
+          "web.dev: Web Vitals; Shopify Help Center: Web performance dashboard; Shopify.dev: Shopify Theme Inspector for Chrome; Shopify: store speed and conversion (published 27 April 2026, vendor data).",
           "Accessed 14 October 2026. Dashboard features and reporting windows can change; check Shopify's current documentation.",
         ],
       },
@@ -2694,9 +2694,9 @@ export const posts: BlogPost[] = [
       {
         heading: "Plan limits that change the design",
         body: [
-          "**Flow's external calls.** Shopify Flow is free on Basic, Grow, Advanced and Plus, but the Send HTTP Request action, which lets a workflow call another system, is only available on Grow, Advanced and Plus ([[https://help.shopify.com/en/manual/shopify-flow|Shopify Help Center]]). On Basic, an integration that needs to reach an external system has to come from an app instead.",
-          "**API capacity.** The GraphQL Admin API limits apps by query cost. Shopify lists restore rates of 100 points per second on standard plans, 200 on Advanced, 1,000 on Plus and 2,000 on Shopify for enterprise (Commerce Components), and a single query can't cost more than 1,000 points ([[https://shopify.dev/docs/apps/build/apis/graphql-admin/rate-limits|Shopify.dev]]). High-volume syncs, such as frequent full inventory updates, need to be designed around those limits with webhooks, bulk operations and incremental updates.",
-          "**GraphQL, not REST.** Shopify's REST Admin API has been legacy since 1 October 2024, and since 1 April 2025 all new public apps must be built exclusively with the GraphQL Admin API ([[https://shopify.dev/docs/api/admin-rest|Shopify.dev]]). Ask any connector vendor or developer which API their integration uses. How the APIs, webhooks and limits work in practice is covered in our [[/blogs/shopify-app-integration-guide|technical guide to Shopify APIs and webhooks]].",
+          "**Flow's external calls.** Shopify Flow is free on Basic, Grow, Advanced and Plus, but the Send HTTP Request action, which lets a workflow call another system, is only available on Grow, Advanced and Plus. On Basic, an integration that needs to reach an external system has to come from an app instead.",
+          "**API capacity.** The GraphQL Admin API limits apps by query cost. Shopify lists restore rates of 100 points per second on standard plans, 200 on Advanced, 1,000 on Plus and 2,000 on Shopify for enterprise (Commerce Components), and a single query can't cost more than 1,000 points. High-volume syncs, such as frequent full inventory updates, need to be designed around those limits with webhooks, bulk operations and incremental updates.",
+          "**GraphQL, not REST.** Shopify's REST Admin API has been legacy since 1 October 2024, and since 1 April 2025 all new public apps must be built exclusively with the GraphQL Admin API. Ask any connector vendor or developer which API their integration uses. How the APIs, webhooks and limits work in practice is covered in our [[/blogs/shopify-app-integration-guide|technical guide to Shopify APIs and webhooks]].",
         ],
       },
       {
@@ -2710,7 +2710,7 @@ export const posts: BlogPost[] = [
         ],
         callout: {
           type: "note",
-          text: "Sources: [[https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries|Shopify Payments supported countries]] and [[https://help.shopify.com/en/manual/taxes/tax-services|Shopify tax services by country]], checked 14 October 2026. Coverage changes, so check both pages for your markets, and take tax advice on what you must collect and invoice.",
+          text: "Sources: Shopify Payments supported countries and Shopify tax services by country, checked 14 October 2026. Coverage changes, so check both pages for your markets, and take tax advice on what you must collect and invoice.",
         },
       },
       {
@@ -2781,7 +2781,7 @@ export const posts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://help.shopify.com/en/manual/shopify-flow|Shopify Help Center: Shopify Flow]]; [[https://shopify.dev/docs/apps/build/apis/graphql-admin/rate-limits|Shopify.dev: GraphQL Admin API rate limits]]; [[https://shopify.dev/docs/api/admin-rest|Shopify.dev: REST Admin API (legacy notice)]]; [[https://help.shopify.com/en/manual/taxes/tax-services|Shopify Help Center: tax services]]; [[https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries|Shopify Help Center: Shopify Payments supported countries]].",
+          "Shopify Help Center: Shopify Flow; Shopify.dev: GraphQL Admin API rate limits; Shopify.dev: REST Admin API (legacy notice); Shopify Help Center: tax services; Shopify Help Center: Shopify Payments supported countries.",
           "Accessed 14 October 2026. Plan features, API limits and country coverage change; check Shopify's current documentation before you design around them.",
         ],
       },

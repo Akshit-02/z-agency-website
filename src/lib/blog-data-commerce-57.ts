@@ -152,7 +152,7 @@ export const commercePosts57: BlogPost[] = [
         heading: "Analysis",
         body: [
           "**Trust checks before you read the result.** Run these before you look at the primary metric. If any of them fails, the result is not ready to read, however good it looks.",
-          "**Sample ratio mismatch (SRM).** Compare the number of users assigned to each variant with the planned split using a chi-square goodness-of-fit test. Glancing at the ratio is not enough: at ecommerce volumes, a split that looks close to even can be far outside what chance allows. Microsoft's experimentation team uses a deliberately conservative threshold of p < 0.0005, and in a 2020 article reported that about 6% of its A/B tests had an SRM. Its advice is not to trust a test with an SRM until the root cause is diagnosed ([[https://www.microsoft.com/en-us/research/group/experimentation-platform-exp/articles/diagnosing-sample-ratio-mismatch-in-a-b-testing/|Microsoft Experimentation Platform: diagnosing sample ratio mismatch]]). Hypothetical example: a 50/50 test ends with 10,000 users in control and 10,600 in the variant. That is a 48.5/51.5 split, which looks harmless, but the chi-square test gives p of roughly 0.00003, well below the threshold. Something is dropping or adding users in one arm, so the conversion numbers can't be compared as they stand.",
+          "**Sample ratio mismatch (SRM).** Compare the number of users assigned to each variant with the planned split using a chi-square goodness-of-fit test. Glancing at the ratio is not enough: at ecommerce volumes, a split that looks close to even can be far outside what chance allows. Microsoft's experimentation team uses a deliberately conservative threshold of p < 0.0005, and in a 2020 article reported that about 6% of its A/B tests had an SRM. Its advice is not to trust a test with an SRM until the root cause is diagnosed. Hypothetical example: a 50/50 test ends with 10,000 users in control and 10,600 in the variant. That is a 48.5/51.5 split, which looks harmless, but the chi-square test gives p of roughly 0.00003, well below the threshold. Something is dropping or adding users in one arm, so the conversion numbers can't be compared as they stand.",
           "**Twyman's law.** Experimenters use this name for the rule of thumb that a figure which looks surprisingly interesting or different is more often the product of an error than a genuine finding. Kohavi, Tang and Xu devote a chapter of Trustworthy Online Controlled Experiments (2020) to it. In practice, when a small change shows a large lift, treat it as a likely bug until you have checked it: confirm that key events (add to cart, checkout, purchase) fire at similar rates per user in each variant, that the variant rendered as designed for every device, and that nothing else changed during the test, such as a promotion, a price change or a tracking release.",
           "**Duration and data completeness.** Confirm that the test ran for its planned full weeks and reached its planned sample, and that internal traffic and bots were excluded as the plan says. A test stopped early or short of its sample should be read as underpowered, whatever the dashboard shows.",
           "Once the trust checks pass, analyse as the plan says. Report the primary metric's estimated effect with a confidence or credible interval, not only a p-value or \"probability to beat\". Check guardrails. Look at the few segments declared in advance (such as device), and treat any other segment findings as hypotheses for new tests, not conclusions.",
@@ -266,7 +266,7 @@ export const commercePosts57: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://www.microsoft.com/en-us/research/group/experimentation-platform-exp/articles/diagnosing-sample-ratio-mismatch-in-a-b-testing/|Fabijan et al., Diagnosing Sample Ratio Mismatch in A/B Testing, Microsoft Experimentation Platform (14 September 2020)]]; Kohavi, Tang and Xu, Trustworthy Online Controlled Experiments (Cambridge University Press, 2020), chapter 3, \"Twyman's Law and Experimentation Trustworthiness\".",
+          "Fabijan et al., Diagnosing Sample Ratio Mismatch in A/B Testing, Microsoft Experimentation Platform (14 September 2020); Kohavi, Tang and Xu, Trustworthy Online Controlled Experiments (Cambridge University Press, 2020), chapter 3, \"Twyman's Law and Experimentation Trustworthiness\".",
           "Accessed 15 October 2026.",
         ],
       },
@@ -540,7 +540,7 @@ export const commercePosts57: BlogPost[] = [
         heading: "Step 1: can it finish with your traffic?",
         body: [
           "Run this check on every idea before anyone scores it. An idea that cannot reach a result is not a test, however good it sounds.",
-          "You need four numbers: the weekly sessions that reach the page or template, the current conversion rate for the metric the change affects, the smallest improvement worth detecting, and the longest you are willing to run a test (many teams use four to six weeks, to limit seasonal and promotional noise; that is a working rule, not a standard). Put the first three into a sample size calculator such as [[https://www.evanmiller.org/ab-testing/sample-size.html|Evan Miller's]], multiply the answer by the number of variants, and divide by weekly sessions.",
+          "You need four numbers: the weekly sessions that reach the page or template, the current conversion rate for the metric the change affects, the smallest improvement worth detecting, and the longest you are willing to run a test (many teams use four to six weeks, to limit seasonal and promotional noise; that is a working rule, not a standard). Put the first three into a sample size calculator such as Evan Miller's, multiply the answer by the number of variants, and divide by weekly sessions.",
           "Hypothetical example: a collection template gets 8,000 sessions a week and 3% of those sessions add to cart. Detecting a 10% relative lift (3.0% to 3.3%) at the usual 95% significance and 80% power needs roughly 53,000 sessions per variant, so about 106,000 for an A/B test. That is around 13 weeks. Under a six-week limit, the idea fails the check as written.",
         ],
         checklist: [
@@ -600,7 +600,7 @@ export const commercePosts57: BlogPost[] = [
       {
         heading: "PIE, ICE, PXL and RICE compared",
         body: [
-          "Several published frameworks turn these factors into a score. All are simplifications; their value is consistency and discussion, not precision. Two attribution points are often garbled. PIE was described by Chris Goward of WiderFunnel in 2013 as a way to rank the **pages or areas** of a site to test, not individual ideas, and his description gives no fixed scale ([[https://www.practicalecommerce.com/Use-the-PIE-Method-to-Prioritize-Ecommerce-Tests|Practical Ecommerce, 2013]]). ICE is commonly attributed to Sean Ellis, though we could not find an original source to cite.",
+          "Several published frameworks turn these factors into a score. All are simplifications; their value is consistency and discussion, not precision. Two attribution points are often garbled. PIE was described by Chris Goward of WiderFunnel in 2013 as a way to rank the **pages or areas** of a site to test, not individual ideas, and his description gives no fixed scale. ICE is commonly attributed to Sean Ellis, though we could not find an original source to cite.",
         ],
         table: {
           headers: ["Framework", "Origin", "Criteria", "Best for", "Weakness"],
@@ -701,7 +701,7 @@ export const commercePosts57: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://www.practicalecommerce.com/Use-the-PIE-Method-to-Prioritize-Ecommerce-Tests|Chris Goward, Practical Ecommerce: Use the PIE Method to Prioritize Ecommerce Tests (12 December 2013)]]; [[https://cxl.com/blog/better-way-prioritize-ab-tests/|CXL: the PXL prioritisation framework]] (the original article; check it for the current criteria and weights, which we have not reproduced); [[https://www.evanmiller.org/ab-testing/sample-size.html|Evan Miller: sample size calculator]].",
+          "Chris Goward, Practical Ecommerce: Use the PIE Method to Prioritize Ecommerce Tests (12 December 2013); CXL: the PXL prioritisation framework (the original article; check it for the current criteria and weights, which we have not reproduced); Evan Miller: sample size calculator.",
           "Accessed 15 October 2026. The sample size in the hypothetical example uses the standard two-proportion calculation at 95% significance and 80% power.",
         ],
       },

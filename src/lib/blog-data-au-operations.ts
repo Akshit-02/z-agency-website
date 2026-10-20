@@ -116,7 +116,7 @@ export const auOperationsPosts: BlogPost[] = [
           "List every system that holds the data your KPIs need, who owns it and how it can be accessed. Common sources for Australian SMEs include:",
         ],
         checklist: [
-          "**Accounting:** Xero or MYOB, both of which publish APIs ([[https://developer.xero.com/documentation/|Xero]], [[https://developer.myob.com/|MYOB]]).",
+          "**Accounting:** Xero or MYOB, both of which publish APIs.",
           "**Payroll:** payroll software that reports to the ATO through Single Touch Payroll; useful for labour cost, used carefully because it is sensitive.",
           "**CRM:** leads, opportunities and activities. See [[/blogs/custom-crm-development-australia|custom vs off-the-shelf CRM]].",
           "**Operations:** job management, booking, inventory, field service or a custom system.",
@@ -188,7 +188,7 @@ export const auOperationsPosts: BlogPost[] = [
       {
         heading: "External context: ATO small business benchmarks",
         body: [
-          "Internal trends tell you whether you are improving. External benchmarks can tell you whether a number is unusual. The ATO publishes small business benchmarks for many industries, including ratios such as cost of sales to turnover and total expenses to turnover, with ranges that vary by turnover band ([[https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/small-business-benchmarks/types-of-benchmarks|ATO]]).",
+          "Internal trends tell you whether you are improving. External benchmarks can tell you whether a number is unusual. The ATO publishes small business benchmarks for many industries, including ratios such as cost of sales to turnover and total expenses to turnover, with ranges that vary by turnover band.",
           "Use them carefully. They are calculated from tax return data, updated annually and therefore a few years old, and intended as a guide. They also follow ATO definitions, which may differ from your management accounts. Showing the benchmark range as a reference band on a margin chart can be useful context; treating it as a target is not.",
         ],
       },
@@ -250,8 +250,8 @@ export const auOperationsPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "**Data sources:** [[https://developer.xero.com/documentation/|Xero developer documentation]]; [[https://developer.myob.com/|MYOB developer portal]]; [[https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/what-is-stp|ATO, Single Touch Payroll]].",
-          "**Benchmarks and privacy:** [[https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/small-business-benchmarks/types-of-benchmarks|ATO, types of small business benchmarks]]; [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-11-app-11-security-of-personal-information|OAIC, APP 11 security of personal information]].",
+          "**Data sources:** Xero developer documentation; MYOB developer portal; ATO, Single Touch Payroll.",
+          "**Benchmarks and privacy:** ATO, types of small business benchmarks; OAIC, APP 11 security of personal information.",
           "The KPI method, architecture patterns and example are ours. ATO pages are summarised from official guidance and may change; check the current position before relying on them. Nothing here is ZSpace client data or financial advice.",
         ],
       },
@@ -392,16 +392,16 @@ export const auOperationsPosts: BlogPost[] = [
         heading: "Step 4: Design approvals, integrations and exceptions",
         body: [
           "**Approvals.** Write the approval rules explicitly: who approves what, up to which value, and what happens if they are away. Provide delegation, reminders and escalation. Record who approved, when and on what information. For purchasing and ordering patterns, see [[/blogs/b2b-approval-workflows|approval workflow design]].",
-          "**Integrations.** Decide which system owns each piece of data. For finance-related processes, that usually means posting to Xero or MYOB through their APIs rather than re-keying ([[https://developer.xero.com/documentation/|Xero]], [[https://developer.myob.com/|MYOB]]). For supplier and customer invoices, consider Peppol eInvoicing, the network for which the ATO is the Australian Peppol Authority ([[https://www.ato.gov.au/businesses-and-organisations/einvoicing/about-peppol/identifying-australian-businesses-on-the-peppol-network|ATO]]). Our guide to [[/blogs/api-integration-australia|API integration for Australian businesses]] covers retries, monitoring and data mapping.",
+          "**Integrations.** Decide which system owns each piece of data. For finance-related processes, that usually means posting to Xero or MYOB through their APIs rather than re-keying. For supplier and customer invoices, consider Peppol eInvoicing, the network for which the ATO is the Australian Peppol Authority. Our guide to [[/blogs/api-integration-australia|API integration for Australian businesses]] covers retries, monitoring and data mapping.",
           "**Exceptions and human review.** Every process has cases that do not fit. Route them to a named person with all the context, rather than letting them stall silently. Track exception volume: if it is high, the rules or the form need changing. [[/blogs/human-in-the-loop-ai|Human-in-the-loop design]] covers patterns that apply even without AI.",
         ],
       },
       {
         heading: "Australian rules to check: signatures, records and privacy",
         body: [
-          "**Electronic signatures.** The Electronic Transactions Act 1999 (Cth) and equivalent state and territory laws generally allow signature requirements to be met electronically where the method identifies the person and their intention and is reliable for the purpose ([[https://www.legislation.gov.au/C2004A00553/latest/text|Federal Register of Legislation]]). Some documents are excluded or need witnessing, such as certain deeds and wills. Check with a lawyer before replacing wet signatures on contracts, deeds or statutory forms.",
-          "**Record keeping.** Business guidance generally says most business records must be kept for five years, can be kept electronically if they are true and complete reproductions, and must be in English or readily converted and accessible when requested ([[https://business.gov.au/finance/accounting/record-keeping|business.gov.au]]). Some records must be kept longer. Design retention into the workflow, and confirm the rules for your records with your accountant before destroying paper originals.",
-          "**Privacy.** Digitised forms often collect personal information. If you are covered by the Privacy Act, collect only what the process needs, secure it, control access and know where the workflow tool stores data. See the OAIC's [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/small-business|small business guidance]].",
+          "**Electronic signatures.** The Electronic Transactions Act 1999 (Cth) and equivalent state and territory laws generally allow signature requirements to be met electronically where the method identifies the person and their intention and is reliable for the purpose. Some documents are excluded or need witnessing, such as certain deeds and wills. Check with a lawyer before replacing wet signatures on contracts, deeds or statutory forms.",
+          "**Record keeping.** Business guidance generally says most business records must be kept for five years, can be kept electronically if they are true and complete reproductions, and must be in English or readily converted and accessible when requested. Some records must be kept longer. Design retention into the workflow, and confirm the rules for your records with your accountant before destroying paper originals.",
+          "**Privacy.** Digitised forms often collect personal information. If you are covered by the Privacy Act, collect only what the process needs, secure it, control access and know where the workflow tool stores data. See the OAIC's small business guidance.",
         ],
       },
       {
@@ -480,8 +480,8 @@ Ongoing     Measure monthly; adjust rules;
       {
         heading: "Sources",
         body: [
-          "**Law and records:** [[https://www.legislation.gov.au/C2004A00553/latest/text|Electronic Transactions Act 1999 (Federal Register of Legislation)]]; [[https://business.gov.au/finance/accounting/record-keeping|business.gov.au, record keeping]]; [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/small-business|OAIC, small business]].",
-          "**Integrations:** [[https://developer.xero.com/documentation/|Xero developer documentation]]; [[https://developer.myob.com/|MYOB developer portal]]; [[https://www.ato.gov.au/businesses-and-organisations/einvoicing/about-peppol/identifying-australian-businesses-on-the-peppol-network|ATO, Peppol]].",
+          "**Law and records:** Electronic Transactions Act 1999 (Federal Register of Legislation); business.gov.au, record keeping; OAIC, small business.",
+          "**Integrations:** Xero developer documentation; MYOB developer portal; ATO, Peppol.",
           "The scoring method, plan and example are ours. Legal and tax points are general information confirmed via secondary summaries; check them for your circumstances. Nothing here is ZSpace client data.",
         ],
       },

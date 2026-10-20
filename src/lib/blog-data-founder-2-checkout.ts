@@ -59,7 +59,7 @@ export const founderCheckoutPosts2: BlogPost[] = [
         heading: "Yes, but how far depends on your plan",
         body: [
           "**You can customise Shopify checkout on every plan from Basic upward, but only within the layers Shopify provides: the checkout and accounts editor for branding and settings, App Store apps that use Shopify Functions, pixels for tracking, and app extensions on the thank you, order status and customer account pages. Adding fields or content to the information, shipping and payment steps, using the Checkout Branding API and running your own custom Function apps all need Shopify Plus.** Nobody, on any plan, can edit the checkout's code directly any more.",
-          "Shopify's help centre puts it simply: standard customisations are available on Basic or higher, and \"advanced checkout customization features are available only on the Shopify Plus plan\" ([[https://help.shopify.com/en/manual/checkout-settings/checkout-extensibility|Shopify Help Center: checkout extensibility]]). This guide sets out exactly where that line sits, what no plan can change, and how to match a specific requirement to the right approach. If your goal is more completed orders rather than a new feature, start with [[/blogs/shopify-checkout-optimization|how to optimise Shopify checkout for conversion]].",
+          "Shopify's help centre puts it simply: standard customisations are available on Basic or higher, and \"advanced checkout customization features are available only on the Shopify Plus plan\". This guide sets out exactly where that line sits, what no plan can change, and how to match a specific requirement to the right approach. If your goal is more completed orders rather than a new feature, start with [[/blogs/shopify-checkout-optimization|how to optimise Shopify checkout for conversion]].",
         ],
       },
       {
@@ -119,13 +119,13 @@ export const founderCheckoutPosts2: BlogPost[] = [
         },
         callout: {
           type: "note",
-          text: "Sources for the matrix: [[https://help.shopify.com/en/manual/checkout-settings/checkout-extensibility/checkout-apps|Shopify Help Center: checkout apps]], [[https://changelog.shopify.com/posts/checkout-blocks-order-value-limits-available-on-all-plans|Shopify changelog: order value limits on all plans (13 Apr 2026)]], [[https://changelog.shopify.com/posts/customize-checkout-and-customer-accounts-by-market|Shopify changelog: customise checkout by market (16 Mar 2026)]], [[https://help.shopify.com/en/manual/markets/getting-started/requirements-and-considerations|Shopify Help Center: Markets requirements]] and [[https://help.shopify.com/en/manual/checkout-settings/checkout-blocks|Shopify Help Center: Checkout Blocks]]. The Checkout Blocks help page had not yet been updated for order value limits when checked.",
+          text: "Sources for the matrix: Shopify Help Center: checkout apps, Shopify changelog: order value limits on all plans (13 Apr 2026), Shopify changelog: customise checkout by market (16 Mar 2026), Shopify Help Center: Markets requirements and Shopify Help Center: Checkout Blocks. The Checkout Blocks help page had not yet been updated for order value limits when checked.",
         },
       },
       {
         heading: "Public apps versus custom apps: the rule people miss",
         body: [
-          "Shopify Functions are the main way to change checkout logic, and their plan rule depends on how the app is distributed. Shopify's developer documentation says \"stores on any plan can use public apps that are distributed through the Shopify App Store and contain functions\", while \"only stores on a Shopify Plus plan can use custom apps that contain Shopify Function APIs\" ([[https://shopify.dev/docs/api/functions|shopify.dev: Shopify Functions]]).",
+          "Shopify Functions are the main way to change checkout logic, and their plan rule depends on how the app is distributed. Shopify's developer documentation says \"stores on any plan can use public apps that are distributed through the Shopify App Store and contain functions\", while \"only stores on a Shopify Plus plan can use custom apps that contain Shopify Function APIs\".",
           "In practice, if an App Store app already does what you need, such as hiding a payment method above an order value, you can usually use it on Basic. If you want logic written only for your store, built as a custom app, you need Plus. A third route is a public app built for your requirement and listed on the App Store, which is a much bigger commitment because public apps go through Shopify's App Store review.",
           "One further limit: Functions normally work only with the data Shopify passes to them. Calling your own server from a Function (network access) is, in Shopify's words, \"limited to custom apps installed on Enterprise stores\", and must be requested. If a requirement depends on live data from an ERP or pricing service at checkout, check this early.",
         ],
@@ -138,8 +138,8 @@ export const founderCheckoutPosts2: BlogPost[] = [
         checklist: [
           "**The checkout code itself.** There is no template to edit and no way to inject your own HTML, CSS or JavaScript into checkout. checkout.liquid is gone and additional scripts are view-only.",
           "**Anything outside the provided extension points.** UI extensions render in the places Shopify defines, using Shopify's components, not anywhere on the page.",
-          "**Pixels that change the page.** Pixels run in a sandbox and cannot render buttons, forms or banners. In markets that require consent, they run only when the visitor has given the permissions the pixel needs ([[https://help.shopify.com/en/manual/promoting-marketing/pixels/overview|Shopify Help Center: pixels]]).",
-          "**New background images** in the checkout header or main content area. Shopify stopped allowing these on 5 February 2026; existing images can only be removed ([[https://help.shopify.com/en/manual/checkout-settings/customize-checkout-configurations/checkout-style|Shopify Help Center: checkout style]]).",
+          "**Pixels that change the page.** Pixels run in a sandbox and cannot render buttons, forms or banners. In markets that require consent, they run only when the visitor has given the permissions the pixel needs.",
+          "**New background images** in the checkout header or main content area. Shopify stopped allowing these on 5 February 2026; existing images can only be removed.",
           "**Post-purchase pages on every order.** They are skipped for certain payment methods, channels and international orders (see the FAQ below).",
           "**Shopify Scripts and script tags.** Scripts stopped running on 30 June 2026, and storefront script tags are being retired.",
         ],
@@ -147,7 +147,7 @@ export const founderCheckoutPosts2: BlogPost[] = [
       {
         heading: "One-page or three-page checkout",
         body: [
-          "Shopify's default layout is a one-page checkout, and you can switch to three pages (information, shipping, payment) in the checkout and accounts editor. The layout switch is listed among the editor settings available on all plans, and Shopify says existing customisations keep working when you switch, although the header layout differs, so check images and logo placement ([[https://help.shopify.com/en/manual/checkout-settings/one-page-checkout|Shopify Help Center: one-page checkout]]).",
+          "Shopify's default layout is a one-page checkout, and you can switch to three pages (information, shipping, payment) in the checkout and accounts editor. The layout switch is listed among the editor settings available on all plans, and Shopify says existing customisations keep working when you switch, although the header layout differs, so check images and logo placement.",
           "The plan rule for the information, shipping and payment steps still applies on one-page checkout: those areas are part of the page on one-page checkout, but adding UI extensions to them remains Plus only. Choose a layout based on your own data, not on a general rule. If you switch, measure checkout completion before and after, by device.",
         ],
       },
@@ -159,12 +159,12 @@ export const founderCheckoutPosts2: BlogPost[] = [
         table: {
           headers: ["Date", "What changed", "Source"],
           rows: [
-            ["13 Aug 2024", "checkout.liquid stopped working on the information, shipping and payment steps", "[[https://changelog.shopify.com/posts/the-checkout-liquid-theme-file-is-being-deprecated|Shopify changelog]]"],
-            ["28 Aug 2025", "checkout.liquid and additional scripts sunset on the thank you and order status pages; script tags sunset there for Plus stores; the additional scripts box became view-only", "[[https://shopify.dev/docs/storefronts/themes/architecture/layouts/checkout-liquid|shopify.dev: checkout.liquid]]"],
-            ["15 Apr 2026", "Editing and publishing Shopify Scripts ended", "[[https://shopify.dev/changelog/shopify-scripts-will-be-deprecated-on-june-30-2026|shopify.dev changelog]]"],
+            ["13 Aug 2024", "checkout.liquid stopped working on the information, shipping and payment steps", "Shopify changelog"],
+            ["28 Aug 2025", "checkout.liquid and additional scripts sunset on the thank you and order status pages; script tags sunset there for Plus stores; the additional scripts box became view-only", "shopify.dev: checkout.liquid"],
+            ["15 Apr 2026", "Editing and publishing Shopify Scripts ended", "shopify.dev changelog"],
             ["30 Jun 2026", "All Shopify Scripts stopped running; Functions replace them", "Same"],
-            ["26 Aug 2026", "Deadline for non-Plus stores to upgrade thank you and order status pages; script tags sunset there for non-Plus stores", "[[https://help.shopify.com/en/manual/checkout-settings/checkout-extensibility/checkout-upgrade|Shopify Help Center: checkout upgrade]]"],
-            ["1 Oct 2026", "Creating or updating script tags through the API returns errors; existing tags keep running", "[[https://shopify.dev/changelog/online-store-script-tags-deprecation|shopify.dev changelog]]"],
+            ["26 Aug 2026", "Deadline for non-Plus stores to upgrade thank you and order status pages; script tags sunset there for non-Plus stores", "Shopify Help Center: checkout upgrade"],
+            ["1 Oct 2026", "Creating or updating script tags through the API returns errors; existing tags keep running", "shopify.dev changelog"],
             ["1 Mar 2027", "Shopify stops loading script tags on storefronts", "Same"],
           ],
         },
@@ -267,9 +267,9 @@ export const founderCheckoutPosts2: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Plans and capabilities: [[https://help.shopify.com/en/manual/checkout-settings/checkout-extensibility|Shopify Help Center: checkout extensibility]]; [[https://help.shopify.com/en/manual/checkout-settings/checkout-extensibility/checkout-apps|Shopify Help Center: checkout apps]]; [[https://shopify.dev/docs/api/checkout-ui-extensions|shopify.dev: checkout UI extensions (API 2026-07)]]; [[https://shopify.dev/docs/api/functions|shopify.dev: Shopify Functions]]; [[https://help.shopify.com/en/manual/checkout-settings/checkout-blocks|Shopify Help Center: Checkout Blocks]]; [[https://help.shopify.com/en/manual/markets/getting-started/requirements-and-considerations|Shopify Help Center: Markets requirements and considerations]].",
-          "Changelog: [[https://changelog.shopify.com/posts/checkout-blocks-order-value-limits-available-on-all-plans|order value limits on all plans (13 Apr 2026)]]; [[https://changelog.shopify.com/posts/customize-checkout-and-customer-accounts-by-market|checkout and accounts by market (16 Mar 2026)]]; [[https://shopify.dev/changelog/shopify-scripts-will-be-deprecated-on-june-30-2026|Shopify Scripts deprecation]]; [[https://shopify.dev/changelog/online-store-script-tags-deprecation|online store script tags deprecation]]; [[https://changelog.shopify.com/posts/the-checkout-liquid-theme-file-is-being-deprecated|checkout.liquid deprecation]].",
-          "Features and limits: [[https://shopify.dev/docs/apps/build/checkout/product-offers/post-purchase|shopify.dev: post-purchase extensions]]; [[https://help.shopify.com/en/manual/promoting-marketing/pixels/overview|Shopify Help Center: pixels]]; [[https://help.shopify.com/en/manual/checkout-settings/customize-checkout-configurations/checkout-style|Shopify Help Center: checkout style]]; [[https://help.shopify.com/en/manual/checkout-settings/one-page-checkout|Shopify Help Center: one-page checkout]]; [[https://shopify.dev/docs/storefronts/themes/architecture/layouts/checkout-liquid|shopify.dev: checkout.liquid]]; [[https://help.shopify.com/en/manual/checkout-settings/checkout-extensibility/checkout-upgrade|Shopify Help Center: checkout upgrade]].",
+          "Plans and capabilities: Shopify Help Center: checkout extensibility; Shopify Help Center: checkout apps; shopify.dev: checkout UI extensions (API 2026-07); shopify.dev: Shopify Functions; Shopify Help Center: Checkout Blocks; Shopify Help Center: Markets requirements and considerations.",
+          "Changelog: order value limits on all plans (13 Apr 2026); checkout and accounts by market (16 Mar 2026); Shopify Scripts deprecation; online store script tags deprecation; checkout.liquid deprecation.",
+          "Features and limits: shopify.dev: post-purchase extensions; Shopify Help Center: pixels; Shopify Help Center: checkout style; Shopify Help Center: one-page checkout; shopify.dev: checkout.liquid; Shopify Help Center: checkout upgrade.",
           "Accessed 14 October 2026. Shopify plan features and deadlines change; check the current documentation before planning work.",
         ],
       },

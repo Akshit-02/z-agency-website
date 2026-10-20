@@ -44,7 +44,7 @@ export const aiContextPosts1: BlogPost[] = [
         heading: "What does business context mean?",
         body: [
           "Business context is the knowledge people use to interpret data correctly that is rarely stored next to the data. An analyst who has worked in a company for two years knows that 'bookings' excludes trials, that the EMEA region moved two countries last quarter, that the fiscal year starts in April and that refunds post three days after a return is received. A model reading the warehouse knows none of that.",
-          "Context engineering, the practice of curating what a model sees for each request, has become a core discipline for AI agents; Anthropic describes it as managing the whole set of tokens a model sees, not just writing the prompt ([[https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents|Anthropic on effective context engineering]]). A business context layer is the enterprise-wide source that context engineering draws from. Our guide to [[/blogs/context-engineering-ai-agents|context engineering for AI agents]] covers the per-request side; this article covers the shared layer underneath.",
+          "Context engineering, the practice of curating what a model sees for each request, has become a core discipline for AI agents; Anthropic describes it as managing the whole set of tokens a model sees, not just writing the prompt. A business context layer is the enterprise-wide source that context engineering draws from. Our guide to [[/blogs/context-engineering-ai-agents|context engineering for AI agents]] covers the per-request side; this article covers the shared layer underneath.",
         ],
       },
       {
@@ -237,7 +237,7 @@ export const aiContextPosts1: BlogPost[] = [
         heading: "Why database tables are not enough for AI",
         body: [
           "Databases store facts in a shape that suits the applications that write them. Answering a business question usually requires knowledge that is not in the schema: which status codes count as a completed order, which table holds the reporting currency, whether refunds reduce revenue in the month of sale or the month of refund, and which of three customer tables is authoritative.",
-          "A language model given the schema will produce plausible SQL. Plausible is the problem: a query can run, return a number and still use the wrong definition. Benchmarks such as BIRD were designed around this gap between understanding a question and querying a real, messy database; on that benchmark, human experts still score clearly higher than the best automated systems ([[https://bird-bench.github.io/|BIRD benchmark]]). The fix is not only a better model; it is giving the model better-defined things to ask for. See [[/blogs/text-to-sql-for-business-data|text-to-SQL for business data]] for the query side.",
+          "A language model given the schema will produce plausible SQL. Plausible is the problem: a query can run, return a number and still use the wrong definition. Benchmarks such as BIRD were designed around this gap between understanding a question and querying a real, messy database; on that benchmark, human experts still score clearly higher than the best automated systems. The fix is not only a better model; it is giving the model better-defined things to ask for. See [[/blogs/text-to-sql-for-business-data|text-to-SQL for business data]] for the query side.",
         ],
       },
       {
@@ -343,8 +343,8 @@ synonyms: ["revenue", "net sales"]`,
       {
         heading: "Semantic layer options",
         body: [
-          "Semantic layers come in three broad forms. **Standalone or transformation-linked layers** such as the dbt Semantic Layer (built on MetricFlow) and Cube define metrics once and serve many tools. **Warehouse-native semantics** such as Snowflake semantic views and [[https://docs.databricks.com/aws/en/metric-views|Databricks Unity Catalog metric views]] store definitions as governed objects inside the platform, and both vendors position them as the basis for their natural-language analytics features. **BI-native models** such as LookML and Power BI semantic models live inside a BI tool.",
-          "Portability is improving. The Open Semantic Interchange (OSI) initiative, announced by Snowflake with Salesforce, dbt Labs, BlackRock, RelationalAI and others, is working on a vendor-neutral specification so semantic definitions can move between tools ([[https://www.getdbt.com/blog/the-osi-spec-updates|dbt Labs on the OSI specification]]). It is young; check current tool support before depending on it.",
+          "Semantic layers come in three broad forms. **Standalone or transformation-linked layers** such as the dbt Semantic Layer (built on MetricFlow) and Cube define metrics once and serve many tools. **Warehouse-native semantics** such as Snowflake semantic views and Databricks Unity Catalog metric views store definitions as governed objects inside the platform, and both vendors position them as the basis for their natural-language analytics features. **BI-native models** such as LookML and Power BI semantic models live inside a BI tool.",
+          "Portability is improving. The Open Semantic Interchange (OSI) initiative, announced by Snowflake with Salesforce, dbt Labs, BlackRock, RelationalAI and others, is working on a vendor-neutral specification so semantic definitions can move between tools. It is young; check current tool support before depending on it.",
         ],
       },
       {
@@ -443,7 +443,7 @@ synonyms: ["revenue", "net sales"]`,
         heading: "Ontology vs taxonomy",
         body: [
           "A taxonomy organizes things into categories, usually a tree: Equipment > Pumps > Centrifugal pumps. It answers 'what kind of thing is this?'. An ontology includes taxonomies but adds attributes, many relationship types and rules. It answers 'what is this, what does it have, and how does it connect to everything else?'.",
-          "Most companies already have taxonomies: product categories, industry codes, support issue types. They are a good starting point. The W3C's SKOS standard is designed for exactly these concept schemes, while OWL is designed for richer ontologies with logical constraints ([[https://www.w3.org/TR/skos-reference/|W3C SKOS]], [[https://www.w3.org/TR/owl2-overview/|W3C OWL 2]]).",
+          "Most companies already have taxonomies: product categories, industry codes, support issue types. They are a good starting point. The W3C's SKOS standard is designed for exactly these concept schemes, while OWL is designed for richer ontologies with logical constraints.",
         ],
       },
       {

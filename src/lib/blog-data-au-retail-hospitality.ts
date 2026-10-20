@@ -92,7 +92,7 @@ export const auRetailHospitalityPosts: BlogPost[] = [
         },
         callout: {
           type: "note",
-          text: "The ACCC says businesses must not rely on policies such as 'no refunds' or 'no refunds or exchanges on sale items' that deny these rights, and that a business may assess the product before providing a remedy ([[https://www.accc.gov.au/business/problem-with-a-product-or-service-you-sold/repair-replace-refund-cancel|ACCC]]). Manufacturer warranties are in addition to these rights.",
+          text: "The ACCC says businesses must not rely on policies such as 'no refunds' or 'no refunds or exchanges on sale items' that deny these rights, and that a business may assess the product before providing a remedy. Manufacturer warranties are in addition to these rights.",
         },
       },
       {
@@ -170,7 +170,7 @@ Track        -> received, inspected, refunded`,
       {
         heading: "Sources",
         body: [
-          "[[https://www.accc.gov.au/business/problem-with-a-product-or-service-you-sold/repair-replace-refund-cancel|ACCC, repair, replace, refund, cancel]]; [[https://consumerprotection.wa.gov.au/returns-refunds-repairs-and-replacements|WA Consumer Protection, returns]]; [[https://auspost.com.au/business/ecommerce/ecommerce-report|Australia Post eCommerce Report 2026]]; [[https://www.acma.gov.au/avoid-sending-spam|ACMA, avoid sending spam]].",
+          "ACCC, repair, replace, refund, cancel; WA Consumer Protection, returns; Australia Post eCommerce Report 2026; ACMA, avoid sending spam.",
           "Consumer law points were checked against ACCC and state regulator guidance. The flow, tables and checklists are ours. Nothing here is legal advice or ZSpace client data.",
         ],
       },
@@ -279,8 +279,8 @@ Track        -> received, inspected, refunded`,
       {
         heading: "Payments and pricing in Australia",
         body: [
-          "**Card surcharges.** From 1 October 2026, surcharges on eftpos, Mastercard and Visa debit, prepaid and credit cards were removed under the Reserve Bank's decision; the RBA reports that American Express and UnionPay also removed surcharging from 1 October 2026, and PayPal from 5 October 2026, by their own decision rather than RBA regulation; buy now pay later and other methods remain under review ([[https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/faqs/|RBA FAQs]]; [[https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/executive-summary.html|RBA]]). Update POS and app settings.",
-          "**Day surcharges.** Restaurants and cafes that apply a surcharge on Sundays or public holidays can show a statement of the surcharge on the menu, at least as prominently as the most prominent price, instead of a separate surcharge-inclusive price for every item ([[https://www.accc.gov.au/media-release/misleading-menus-invite-infringement-notices|ACCC]]). Apps should show the surcharge clearly before payment and apply it on the right days, including state-specific public holidays.",
+          "**Card surcharges.** From 1 October 2026, surcharges on eftpos, Mastercard and Visa debit, prepaid and credit cards were removed under the Reserve Bank's decision; the RBA reports that American Express and UnionPay also removed surcharging from 1 October 2026, and PayPal from 5 October 2026, by their own decision rather than RBA regulation; buy now pay later and other methods remain under review. Update POS and app settings.",
+          "**Day surcharges.** Restaurants and cafes that apply a surcharge on Sundays or public holidays can show a statement of the surcharge on the menu, at least as prominently as the most prominent price, instead of a separate surcharge-inclusive price for every item. Apps should show the surcharge clearly before payment and apply it on the right days, including state-specific public holidays.",
           "**Tips and splits:** optional tipping, bill splitting and pre-authorisation for tabs, handled by your payment provider. See [[/blogs/payment-gateway-integration-australia|payment gateway integration]].",
         ],
       },
@@ -299,7 +299,7 @@ Track        -> received, inspected, refunded`,
       {
         heading: "Guest data, marketing and privacy",
         body: [
-          "If your business is covered by the Privacy Act, collect only what ordering and bookings need, explain marketing uses, and protect guest data. Marketing messages need consent and an unsubscribe option under the Spam Act; order status messages are factual and treated differently. If ordering pages use advertising pixels, follow the OAIC's guidance on tracking pixels ([[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/tracking-pixels-and-privacy-obligations|OAIC]]).",
+          "If your business is covered by the Privacy Act, collect only what ordering and bookings need, explain marketing uses, and protect guest data. Marketing messages need consent and an unsubscribe option under the Spam Act; order status messages are factual and treated differently. If ordering pages use advertising pixels, follow the OAIC's guidance on tracking pixels.",
         ],
       },
       {
@@ -323,7 +323,7 @@ Track        -> received, inspected, refunded`,
       {
         heading: "Sources",
         body: [
-          "[[https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/executive-summary.html|RBA, surcharging conclusions]]; [[https://www.accc.gov.au/media-release/misleading-menus-invite-infringement-notices|ACCC, misleading menus]]; [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/tracking-pixels-and-privacy-obligations|OAIC, tracking pixels]]; [[https://data.gov.au/data/dataset/927d00f3-e64c-4331-9bae-52b4f64d2fcb|data.gov.au, ATDW API]].",
+          "RBA, surcharging conclusions; ACCC, misleading menus; OAIC, tracking pixels; data.gov.au, ATDW API.",
           "Restaurant surcharge rules were checked against ACCC guidance, including the 2013 change to single-price rules for restaurant surcharges; check current ACCC guidance. Tables and checklists are ours. Nothing here is legal advice or ZSpace client data.",
         ],
       },

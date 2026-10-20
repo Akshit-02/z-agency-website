@@ -83,7 +83,7 @@ export const identityReliabilityPosts: BlogPost[] = [
       {
         heading: "Reference architecture",
         body: [
-          "The common pattern is HR system to identity provider to applications. The identity provider (for example Microsoft Entra ID, Okta or Google Workspace) holds groups that represent roles, and pushes accounts to applications through SCIM ([[https://www.rfc-editor.org/rfc/rfc7644|RFC 7644]]) or connectors. Lifecycle features such as [[https://learn.microsoft.com/en-us/entra/id-governance/what-are-lifecycle-workflows|Microsoft Entra lifecycle workflows]] can run tasks before a start date or after a leave date. For sign-in and provisioning detail, see [[/blogs/enterprise-sso-implementation|enterprise SSO implementation]].",
+          "The common pattern is HR system to identity provider to applications. The identity provider (for example Microsoft Entra ID, Okta or Google Workspace) holds groups that represent roles, and pushes accounts to applications through SCIM or connectors. Lifecycle features such as Microsoft Entra lifecycle workflows can run tasks before a start date or after a leave date. For sign-in and provisioning detail, see [[/blogs/enterprise-sso-implementation|enterprise SSO implementation]].",
         ],
         table: {
           headers: ["Layer", "Responsibility"],
@@ -133,7 +133,7 @@ export const identityReliabilityPosts: BlogPost[] = [
       {
         heading: "Evidence for security frameworks",
         body: [
-          "Joiner, mover and leaver records help show user access control in frameworks such as the NCSC's [[https://www.ncsc.gov.uk/cyberessentials/overview|Cyber Essentials]] and ISO/IEC 27001. Keep logs of who approved what, when access was granted and removed, and review outcomes. Software produces the evidence; your policies and assessors decide what is enough.",
+          "Joiner, mover and leaver records help show user access control in frameworks such as the NCSC's Cyber Essentials and ISO/IEC 27001. Keep logs of who approved what, when access was granted and removed, and review outcomes. Software produces the evidence; your policies and assessors decide what is enough.",
         ],
       },
       {
@@ -157,7 +157,7 @@ export const identityReliabilityPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Standards and platforms: [[https://www.rfc-editor.org/rfc/rfc7643|RFC 7643 (SCIM core schema)]]; [[https://www.rfc-editor.org/rfc/rfc7644|RFC 7644 (SCIM protocol)]]; [[https://learn.microsoft.com/en-us/entra/id-governance/what-are-lifecycle-workflows|Microsoft Entra lifecycle workflows]]; [[https://www.ncsc.gov.uk/cyberessentials/overview|NCSC: Cyber Essentials]].",
+          "Standards and platforms: RFC 7643 (SCIM core schema); RFC 7644 (SCIM protocol); Microsoft Entra lifecycle workflows; NCSC: Cyber Essentials.",
           "Accessed 10 October 2026.",
         ],
       },
@@ -283,7 +283,7 @@ sum(rate(http_requests_total{route="/checkout"}[30d]))`,
       {
         heading: "Alerting on burn rate",
         body: [
-          "Alerting on every error spike wakes people for blips; alerting on SLO breaches alerts too late. The [[https://sre.google/workbook/alerting-on-slos/|Google SRE workbook]] recommends multiwindow, multi-burn-rate alerts. A common starting point for a 30-day SLO:",
+          "Alerting on every error spike wakes people for blips; alerting on SLO breaches alerts too late. The Google SRE workbook recommends multiwindow, multi-burn-rate alerts. A common starting point for a 30-day SLO:",
         ],
         table: {
           headers: ["Budget consumed", "Long window", "Short window", "Burn rate", "Response"],
@@ -301,7 +301,7 @@ sum(rate(http_requests_total{route="/checkout"}[30d]))`,
       {
         heading: "Writing an error budget policy",
         body: [
-          "The policy is what turns numbers into decisions. Agree it between engineering and product leadership in advance, so it is not negotiated during an incident. Google publishes an [[https://sre.google/workbook/error-budget-policy/|example error budget policy]].",
+          "The policy is what turns numbers into decisions. Agree it between engineering and product leadership in advance, so it is not negotiated during an incident. Google publishes an example error budget policy.",
         ],
         checklist: [
           "What happens when budget is exhausted: pause non-urgent releases, prioritise reliability fixes.",
@@ -344,7 +344,7 @@ sum(rate(http_requests_total{route="/checkout"}[30d]))`,
       {
         heading: "Sources",
         body: [
-          "[[https://sre.google/sre-book/service-level-objectives/|Google SRE book: Service Level Objectives]]; [[https://sre.google/workbook/implementing-slos/|SRE workbook: Implementing SLOs]]; [[https://sre.google/workbook/alerting-on-slos/|SRE workbook: Alerting on SLOs]]; [[https://sre.google/workbook/error-budget-policy/|SRE workbook: example error budget policy]].",
+          "Google SRE book: Service Level Objectives; SRE workbook: Implementing SLOs; SRE workbook: Alerting on SLOs; SRE workbook: example error budget policy.",
           "Accessed 10 October 2026.",
         ],
       },

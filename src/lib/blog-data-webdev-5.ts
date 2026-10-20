@@ -363,12 +363,12 @@ export const webDevPosts5: BlogPost[] = [
         heading: "Step 1: Prove the form delivers and the lead event fires",
         body: [
           "Many \"no leads\" problems are measurement or delivery problems. A form that sends to an old address, a notification email filtered as spam, or a tracking event that stopped firing after a template change will all show traffic with no leads. Spend an hour ruling this out before anything else.",
-          "Google Analytics 4 has a recommended event for this, `generate_lead`, which Google describes as measuring \"when a lead has been generated (for example, through a form)\" ([[https://developers.google.com/analytics/devguides/collection/ga4/reference/events|GA4 recommended events reference]]). To count it as a conversion in reports, mark it as a key event; Google describes key events as a way to \"measure actions that are important to your business\" ([[https://support.google.com/analytics/answer/13128484|GA4 Help: key events]]).",
+          "Google Analytics 4 has a recommended event for this, `generate_lead`, which Google describes as measuring \"when a lead has been generated (for example, through a form)\". To count it as a conversion in reports, mark it as a key event; Google describes key events as a way to \"measure actions that are important to your business\".",
         ],
         checklist: [
           "Submit a test enquiry on a phone and on a desktop. Confirm each arrives in the inbox or CRM, and check spam, shared inboxes and any auto-forwarding rules.",
           "Confirm the person who should reply actually receives the notification, not just a generic address nobody watches.",
-          "Open GA4 DebugView (via Tag Assistant or debug mode) and check that generate_lead fires once per successful submission: not on page load, not on a failed validation, and not twice ([[https://support.google.com/analytics/answer/7201382|GA4 Help: DebugView]]).",
+          "Open GA4 DebugView (via Tag Assistant or debug mode) and check that generate_lead fires once per successful submission: not on page load, not on a failed validation, and not twice.",
           "In GA4 Admin, check that generate_lead is marked as a key event. Newly marked key events can take up to 24 hours to appear in standard reports.",
           "Compare GA4 lead counts with the enquiries actually received over the same month. A large gap means the data cannot be trusted yet.",
           "If people also enquire by phone, email links or WhatsApp, track those clicks as key events too. Otherwise the site will look as if it converts less than it does.",
@@ -382,8 +382,8 @@ export const webDevPosts5: BlogPost[] = [
         heading: "Step 2: Check traffic quality by landing page and channel",
         body: [
           "Total sessions mix very different visitors. Someone reading a how-to article has different intent from someone landing on your pricing or service page from a search for your service. Judge each group separately.",
-          "In GA4, open Reports > Engagement > Landing page, which shows the first page of each session with sessions, engagement time and key events by default. Add **Session source / medium** as a secondary dimension to see which channels land on which pages ([[https://support.google.com/analytics/answer/12931766|GA4 Help: Landing page report]]). Then sort your landing pages into two groups: **informational** (blog posts, guides, glossary pages) and **commercial** (service, pricing, product, case-study and contact pages).",
-          "Read engagement with GA4's own definitions. An engaged session is one that \"lasts longer than 10 seconds\", \"has a key event\" or \"has 2 or more screen or page views\". Engagement rate is the percentage of engaged sessions, and bounce rate is \"the percentage of sessions that were not engaged\" ([[https://support.google.com/analytics/answer/12195621|GA4 Help: engagement rate and bounce rate]]). So a high bounce rate on a short article that answers a question is not necessarily a failure. A high bounce rate on a service page that paid traffic lands on deserves attention.",
+          "In GA4, open Reports > Engagement > Landing page, which shows the first page of each session with sessions, engagement time and key events by default. Add **Session source / medium** as a secondary dimension to see which channels land on which pages. Then sort your landing pages into two groups: **informational** (blog posts, guides, glossary pages) and **commercial** (service, pricing, product, case-study and contact pages).",
+          "Read engagement with GA4's own definitions. An engaged session is one that \"lasts longer than 10 seconds\", \"has a key event\" or \"has 2 or more screen or page views\". Engagement rate is the percentage of engaged sessions, and bounce rate is \"the percentage of sessions that were not engaged\". So a high bounce rate on a short article that answers a question is not necessarily a failure. A high bounce rate on a service page that paid traffic lands on deserves attention.",
         ],
         table: {
           headers: ["Pattern on the same landing page", "What it suggests"],
@@ -407,13 +407,13 @@ export const webDevPosts5: BlogPost[] = [
         heading: "Step 4: Compare landing pages by device",
         body: [
           "Take your top commercial landing pages and compare engagement rate and key-event rate on mobile against desktop. If desktop converts and mobile barely does on the same page with the same traffic sources, the cause is almost always on the page: a form that is awkward on a small screen, a call to action pushed far down, a sticky element covering content, or a slow mobile load.",
-          "For speed, use field data rather than a one-off lab test. Google's Core Web Vitals treat a page as good when Largest Contentful Paint is 2.5 seconds or less, Interaction to Next Paint is 200 milliseconds or less and Cumulative Layout Shift is 0.1 or less, measured at the 75th percentile and split by mobile and desktop ([[https://web.dev/articles/vitals|web.dev: Web Vitals]]). If mobile fails where desktop passes, see [[/blogs/why-is-my-website-slow|why a website is slow and how to find the cause]].",
+          "For speed, use field data rather than a one-off lab test. Google's Core Web Vitals treat a page as good when Largest Contentful Paint is 2.5 seconds or less, Interaction to Next Paint is 200 milliseconds or less and Cumulative Layout Shift is 0.1 or less, measured at the 75th percentile and split by mobile and desktop. If mobile fails where desktop passes, see [[/blogs/why-is-my-website-slow|why a website is slow and how to find the cause]].",
         ],
       },
       {
         heading: "Step 5: Read behaviour signals",
         body: [
-          "Analytics shows where people stop; session tools show what they were doing when they stopped. Microsoft Clarity is a free tool that flags several behaviours automatically, and its documentation defines them precisely ([[https://learn.microsoft.com/en-us/clarity/insights/semantic-metrics|Microsoft Clarity: semantic metrics]], vendor documentation for its own product). Filter recordings to your commercial landing pages and to sessions with these flags, then watch a sample rather than relying on the counts alone.",
+          "Analytics shows where people stop; session tools show what they were doing when they stopped. Microsoft Clarity is a free tool that flags several behaviours automatically, and its documentation defines them precisely (Microsoft Clarity: semantic metrics, vendor documentation for its own product). Filter recordings to your commercial landing pages and to sessions with these flags, then watch a sample rather than relying on the counts alone.",
         ],
         table: {
           headers: ["Signal", "Clarity's definition (paraphrased)", "What it often points to", "What to check"],
@@ -433,7 +433,7 @@ export const webDevPosts5: BlogPost[] = [
         heading: "Step 6: Watch five people try to enquire",
         body: [
           "Numbers tell you where; watching people tells you why. Give a small number of people who match your buyers a realistic task (\"find out whether this firm could help with X and get in touch\") and watch without helping. Ask them to think aloud.",
-          "Jakob Nielsen's well-known guidance at NN/g is that testing with five users finds about 85% of usability problems, but that figure rests on a model assuming each user uncovers about 31% of problems. The article also says it holds only \"for comparable users who will be using the site in fairly similar ways\"; with two or more distinct audiences, test three or four people from each. It recommends several small rounds with fixes in between rather than one large study ([[https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/|NN/g: why you only need to test with 5 users]]). Five-user tests are qualitative: they reveal problems, not conversion rates. For how much design and testing to do before building a new site, see [[/blogs/how-much-ux-design-before-development|how much UX design to do before development]].",
+          "Jakob Nielsen's well-known guidance at NN/g is that testing with five users finds about 85% of usability problems, but that figure rests on a model assuming each user uncovers about 31% of problems. The article also says it holds only \"for comparable users who will be using the site in fairly similar ways\"; with two or more distinct audiences, test three or four people from each. It recommends several small rounds with fixes in between rather than one large study. Five-user tests are qualitative: they reveal problems, not conversion rates. For how much design and testing to do before building a new site, see [[/blogs/how-much-ux-design-before-development|how much UX design to do before development]].",
         ],
       },
       {
@@ -506,9 +506,9 @@ export const webDevPosts5: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Google Analytics: [[https://developers.google.com/analytics/devguides/collection/ga4/reference/events|GA4 recommended events reference (generate_lead and lead-lifecycle events)]]; [[https://support.google.com/analytics/answer/13128484|GA4 Help: key events]]; [[https://support.google.com/analytics/answer/7201382|GA4 Help: DebugView]]; [[https://support.google.com/analytics/answer/12195621|GA4 Help: engagement rate and bounce rate]]; [[https://support.google.com/analytics/answer/12931766|GA4 Help: Landing page report]].",
-          "Behaviour and usability: [[https://learn.microsoft.com/en-us/clarity/insights/semantic-metrics|Microsoft Clarity documentation: semantic metrics]] (vendor documentation); [[https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/|Jakob Nielsen, NN/g: why you only need to test with 5 users (2000)]].",
-          "Performance: [[https://web.dev/articles/vitals|web.dev: Web Vitals]].",
+          "Google Analytics: GA4 recommended events reference (generate_lead and lead-lifecycle events); GA4 Help: key events; GA4 Help: DebugView; GA4 Help: engagement rate and bounce rate; GA4 Help: Landing page report.",
+          "Behaviour and usability: Microsoft Clarity documentation: semantic metrics (vendor documentation); Jakob Nielsen, NN/g: why you only need to test with 5 users (2000).",
+          "Performance: web.dev: Web Vitals.",
           "Accessed 14 October 2026. Analytics and tool interfaces change; menu names and report locations may differ from those described here.",
         ],
       },

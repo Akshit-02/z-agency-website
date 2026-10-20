@@ -101,22 +101,22 @@ export const auIndustryPosts3: BlogPost[] = [
       {
         heading: "Xero and MYOB APIs",
         body: [
-          "**Xero** offers accounting and payroll APIs using OAuth 2.0 ([[https://developer.xero.com/documentation/|Xero]]). Its developer FAQ lists limits per connected organisation of 5 concurrent calls, 60 calls per minute and 5,000 calls per day, plus an app-wide minute limit across organisations; exceeding them returns HTTP 429 ([[https://developer.xero.com/faq/limits|Xero]]). Batch where the API allows and monitor the remaining-limit headers.",
-          "**MYOB** publishes the MYOB Business API and APIs for other MYOB products on its developer portal ([[https://developer.myob.com/|MYOB]]). Confirm which MYOB product and version the business uses before designing, because capabilities differ.",
+          "**Xero** offers accounting and payroll APIs using OAuth 2.0. Its developer FAQ lists limits per connected organisation of 5 concurrent calls, 60 calls per minute and 5,000 calls per day, plus an app-wide minute limit across organisations; exceeding them returns HTTP 429. Batch where the API allows and monitor the remaining-limit headers.",
+          "**MYOB** publishes the MYOB Business API and APIs for other MYOB products on its developer portal. Confirm which MYOB product and version the business uses before designing, because capabilities differ.",
           "For both, plan token storage and refresh, handle disconnected organisations gracefully, and keep credentials in a secrets manager. See [[/blogs/api-security-best-practices|API security best practices]].",
         ],
       },
       {
         heading: "GST, tax invoices and chart of accounts",
         body: [
-          "Map each product, service, fee and shipping line to an account and tax code in the accounting system. Agree rounding (per line or per invoice) and make totals match the source system to the cent. For business customers, tax invoices need specific details, including the seller's ABN, and for sales of $1,000 or more the buyer's identity or ABN ([[https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/tax-invoices|ATO]]). Generate invoices from the accounting system where possible so the document customers see matches your books. Have your accountant approve the mapping and test with edge cases: discounts, refunds, mixed taxable and GST-free items, and overseas customers.",
+          "Map each product, service, fee and shipping line to an account and tax code in the accounting system. Agree rounding (per line or per invoice) and make totals match the source system to the cent. For business customers, tax invoices need specific details, including the seller's ABN, and for sales of $1,000 or more the buyer's identity or ABN. Generate invoices from the accounting system where possible so the document customers see matches your books. Have your accountant approve the mapping and test with edge cases: discounts, refunds, mixed taxable and GST-free items, and overseas customers.",
         ],
       },
       {
         heading: "Payroll and Peppol",
         body: [
-          "Single Touch Payroll requires payroll software to report pay and super information to the ATO each pay day ([[https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/what-is-stp|ATO]]). Keep pay calculation in payroll software and integrate approved hours in and costs out.",
-          "Peppol eInvoicing exchanges invoices as structured data, with the ABN as the identifier, through accredited access points ([[https://www.ato.gov.au/businesses-and-organisations/einvoicing/about-peppol/identifying-australian-businesses-on-the-peppol-network|ATO]]). Sending and receiving through a Peppol-capable accounting platform can remove PDF handling; see [[/blogs/ai-document-processing-australia|AI document processing]] for what remains.",
+          "Single Touch Payroll requires payroll software to report pay and super information to the ATO each pay day. Keep pay calculation in payroll software and integrate approved hours in and costs out.",
+          "Peppol eInvoicing exchanges invoices as structured data, with the ABN as the identifier, through accredited access points. Sending and receiving through a Peppol-capable accounting platform can remove PDF handling; see [[/blogs/ai-document-processing-australia|AI document processing]] for what remains.",
         ],
       },
       {
@@ -245,7 +245,7 @@ export const auIndustryPosts3: BlogPost[] = [
       {
         heading: "Livestock traceability: NLIS and eID",
         body: [
-          "The National Livestock Identification System records livestock identification and movements. For sheep and farmed goats, electronic identification became mandatory nationally for animals born from 1 January 2025, with requirements for other animals leaving a property phased in by state, generally from 1 January 2027; Victoria already required eID ([[https://www.business.qld.gov.au/industries/farms-fishing-forestry/agriculture/animal/nlis/sheep-goat-identification/about|Business Queensland]]; [[https://www.dpi.nsw.gov.au/dpi/bfs/your-role-in-biosecurity/primary-producers/nlis/eID/implementation-project|NSW DPI]]). Software that manages livestock should capture eID tag numbers from readers, link them to mobs and treatments, and support movement records and reporting. Confirm requirements with your state agriculture department; dates and exemptions differ.",
+          "The National Livestock Identification System records livestock identification and movements. For sheep and farmed goats, electronic identification became mandatory nationally for animals born from 1 January 2025, with requirements for other animals leaving a property phased in by state, generally from 1 January 2027; Victoria already required eID. Software that manages livestock should capture eID tag numbers from readers, link them to mobs and treatments, and support movement records and reporting. Confirm requirements with your state agriculture department; dates and exemptions differ.",
         ],
       },
       {
@@ -270,7 +270,7 @@ export const auIndustryPosts3: BlogPost[] = [
       {
         heading: "Data ownership: the Australian Farm Data Code",
         body: [
-          "The National Farmers' Federation's Australian Farm Data Code is a voluntary framework for businesses handling farmers' data, covering transparency, fair use, farmer control, portability and security, and some products are certified against it ([[https://nff.org.au/programs/australian-farm-data-code/|NFF]]). For product teams: write plain-language data terms, let farmers export and delete their data, explain who data is shared with, and secure it. If personal information is involved and your organisation is covered, the Privacy Act also applies.",
+          "The National Farmers' Federation's Australian Farm Data Code is a voluntary framework for businesses handling farmers' data, covering transparency, fair use, farmer control, portability and security, and some products are certified against it. For product teams: write plain-language data terms, let farmers export and delete their data, explain who data is shared with, and secure it. If personal information is involved and your organisation is covered, the Privacy Act also applies.",
         ],
       },
       {
@@ -381,7 +381,7 @@ export const auIndustryPosts3: BlogPost[] = [
       {
         heading: "Australian regulatory context",
         body: [
-          "**Licensing.** ASIC says claims handling and settling services became financial services requiring an AFS licence from 1 January 2022, covering insurers and others such as claims managers and some brokers, with obligations including acting efficiently, honestly and fairly ([[https://asic.gov.au/for-finance-professionals/afs-licensees/applying-for-and-managing-an-afs-licence/licensing-certain-service-providers/claims-handling-and-settling-how-to-comply-with-your-afs-licence-obligations/|ASIC]]).",
+          "**Licensing.** ASIC says claims handling and settling services became financial services requiring an AFS licence from 1 January 2022, covering insurers and others such as claims managers and some brokers, with obligations including acting efficiently, honestly and fairly.",
           "**Codes of practice.** Many insurers subscribe to industry codes, such as the General Insurance Code of Practice, which set standards including decision timeframes, progress updates and support for customers experiencing vulnerability. Configure the software from the current code text and your policies.",
           "**Complaints.** Internal dispute resolution should be connected to claims, and customers can take unresolved complaints to the Australian Financial Complaints Authority.",
           "**Privacy.** Claims often involve sensitive information, including health information. See [[/blogs/privacy-by-design-software-australia|privacy by design]].",
@@ -544,7 +544,7 @@ export const auIndustryPosts3: BlogPost[] = [
       {
         heading: "Australian reporting context",
         body: [
-          "**Mandatory climate-related financial disclosures.** Large entities are phasing into climate reporting under AASB S2: Group 1 for annual reporting periods starting on or after 1 January 2025, Group 2 from 1 July 2026 and Group 3 from 1 July 2027, based on size thresholds or NGER reporter status, according to accounting-firm summaries of the legislation ([[https://www.pitcher.com.au/wp-content/uploads/2025/09/SRG-mandatory-climate-reporting_Final.pdf|Pitcher Partners]]). Disclosures include scope 1, 2 and 3 emissions, with transitional provisions.",
+          "**Mandatory climate-related financial disclosures.** Large entities are phasing into climate reporting under AASB S2: Group 1 for annual reporting periods starting on or after 1 January 2025, Group 2 from 1 July 2026 and Group 3 from 1 July 2027, based on size thresholds or NGER reporter status, according to accounting-firm summaries of the legislation. Disclosures include scope 1, 2 and 3 emissions, with transitional provisions.",
           "**NGER.** The National Greenhouse and Energy Reporting scheme requires corporations above thresholds to report emissions and energy data.",
           "**Supply chains.** Even if you are not required to report, larger customers may ask you for energy and emissions data for their scope 3 reporting.",
           "Software can organise data, calculations and evidence; obligations and methods should be confirmed by qualified advisers.",

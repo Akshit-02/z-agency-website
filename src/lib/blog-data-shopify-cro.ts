@@ -119,7 +119,7 @@ export const shopifyCroPosts: BlogPost[] = [
         heading: "What Shopify Product Page Optimization Actually Means",
         body: [
           "A product page has one job: answer, quickly and credibly, every question a customer would ask before buying, and remove every reason to leave and think about it. Optimization here isn't about adding more — most underperforming product pages have too little of the right information, not too much clutter — it's about making sure the specific questions your customers actually have are answered where they're looking, at the moment they're deciding.",
-          "In Shopify Analytics terms, this is the stage between a product view and an add-to-cart action. Shopify's [[https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports|conversion rate breakdown report]] doesn't have a product view step: its steps are all sessions, sessions with cart additions, sessions that reached checkout and sessions that completed checkout. To measure how often a viewed product is added to the cart, use [[https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/analytics-fields|product-level metrics]] in a Shopify report or ShopifyQL query (such as product viewed session count and product added to cart rate), or GA4.",
+          "In Shopify Analytics terms, this is the stage between a product view and an add-to-cart action. Shopify's conversion rate breakdown report doesn't have a product view step: its steps are all sessions, sessions with cart additions, sessions that reached checkout and sessions that completed checkout. To measure how often a viewed product is added to the cart, use product-level metrics in a Shopify report or ShopifyQL query (such as product viewed session count and product added to cart rate), or GA4.",
         ],
       },
       {
@@ -312,7 +312,7 @@ export const shopifyCroPosts: BlogPost[] = [
       {
         heading: "Where Shopify Checkout Loses Shoppers",
         body: [
-          "Baymard Institute's abandonment research asked US online shoppers who abandoned during checkout why they left, excluding those just browsing ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). Extra costs being too high was the most common reason (40%), followed by slow delivery (20%), not trusting the site with card details (19%), being required to create an account (18%), a long or complicated checkout (17%) and site errors (17%). Most of these are decided before or around checkout rather than by its layout, which is why so much checkout optimization happens on the product page and in the cart.",
+          "Baymard Institute's abandonment research asked US online shoppers who abandoned during checkout why they left, excluding those just browsing. Extra costs being too high was the most common reason (40%), followed by slow delivery (20%), not trusting the site with card details (19%), being required to create an account (18%), a long or complicated checkout (17%) and site errors (17%). Most of these are decided before or around checkout rather than by its layout, which is why so much checkout optimization happens on the product page and in the cart.",
         ],
       },
       {
@@ -656,7 +656,7 @@ export const shopifyCroPosts: BlogPost[] = [
       {
         heading: "How to Find Where Your Shopify Store Is Losing Customers",
         body: [
-          "Start with Shopify Analytics' [[https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports|conversion rate breakdown report]], which reports sessions at four steps: all sessions, sessions with cart additions, sessions that reached checkout, and sessions that completed checkout. It has no product view step; for the move from product view to cart, use product-level metrics in Shopify reports or ShopifyQL, or GA4's ecommerce events. Calculate the conversion rate between each consecutive pair of stages, not just the final overall number, and look for the single largest proportional drop — that's your highest-priority stage to investigate, ahead of anywhere else.",
+          "Start with Shopify Analytics' conversion rate breakdown report, which reports sessions at four steps: all sessions, sessions with cart additions, sessions that reached checkout, and sessions that completed checkout. It has no product view step; for the move from product view to cart, use product-level metrics in Shopify reports or ShopifyQL, or GA4's ecommerce events. Calculate the conversion rate between each consecutive pair of stages, not just the final overall number, and look for the single largest proportional drop — that's your highest-priority stage to investigate, ahead of anywhere else.",
         ],
       },
       {

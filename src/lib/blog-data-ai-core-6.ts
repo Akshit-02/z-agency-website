@@ -238,7 +238,7 @@ export const aiCorePosts6: BlogPost[] = [
         ],
         checklist: [
           "**Data location:** embeddings, vector stores, model calls and logs may each run in different regions; check all of them. See [[/blogs/private-ai-development-australia|private AI development in Australia]] for model availability in Australian regions.",
-          "**Privacy Act:** if covered, privacy obligations apply to personal information in source documents, prompts and outputs ([[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products|OAIC]]); APP 8 applies to overseas processing.",
+          "**Privacy Act:** if covered, privacy obligations apply to personal information in source documents, prompts and outputs; APP 8 applies to overseas processing.",
           "**Permissions:** retrieval must respect source-document permissions so users cannot see through the AI what they cannot open directly.",
           "**Customer-facing answers:** answers are your representations under the Australian Consumer Law; ground them in reviewed content and hand off when unsure; see [[/blogs/ai-customer-service-australia|AI customer service in Australia]].",
         ],

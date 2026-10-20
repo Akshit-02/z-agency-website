@@ -186,14 +186,14 @@ export const aiInterfacePosts1: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "An **AI assistant app** is your product's functionality made available inside an AI assistant. The assistant calls your tools through the Model Context Protocol and, where the host supports it, renders interactive components you provide: a product carousel, a booking form, a map, an approval card. **MCP Apps**, an official MCP extension announced in January 2026, standardizes how a server declares these interfaces as ui:// resources and how hosts render them in sandboxed iframes ([[https://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/|MCP blog]]).",
+          "An **AI assistant app** is your product's functionality made available inside an AI assistant. The assistant calls your tools through the Model Context Protocol and, where the host supports it, renders interactive components you provide: a product carousel, a booking form, a map, an approval card. **MCP Apps**, an official MCP extension announced in January 2026, standardizes how a server declares these interfaces as ui:// resources and how hosts render them in sandboxed iframes.",
           "Designing them is different from designing a website. Your UI is a guest inside someone else's conversation. Show the smallest interface that helps the user decide or act, let the model handle explanation, and route every consequential action through your normal backend controls.",
         ],
       },
       {
         heading: "How assistant apps work",
         body: [
-          "The assistant (the host) connects to your MCP server, reads your tools and their metadata, and decides when to call them. A tool can point to a UI resource. When the tool runs, the host fetches that resource and renders it in a sandboxed iframe next to the conversation. The UI and the host exchange messages over MCP's JSON-RPC, so the UI can request further tool calls (subject to host rules and user consent) and update the model's context. OpenAI's Apps SDK, which helped shape the standard, documents display modes such as inline cards, inline carousels, fullscreen and picture-in-picture ([[https://developers.openai.com/apps-sdk/concepts/ui-guidelines|OpenAI Apps SDK UI guidelines]]).",
+          "The assistant (the host) connects to your MCP server, reads your tools and their metadata, and decides when to call them. A tool can point to a UI resource. When the tool runs, the host fetches that resource and renders it in a sandboxed iframe next to the conversation. The UI and the host exchange messages over MCP's JSON-RPC, so the UI can request further tool calls (subject to host rules and user consent) and update the model's context. OpenAI's Apps SDK, which helped shape the standard, documents display modes such as inline cards, inline carousels, fullscreen and picture-in-picture.",
         ],
         code: {
           label: "AI assistant app architecture (diagram)",

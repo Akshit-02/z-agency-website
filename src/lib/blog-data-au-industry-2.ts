@@ -113,9 +113,9 @@ export const auIndustryPosts2: BlogPost[] = [
       {
         heading: "Australian regulatory records: HVNL, EWDs and chain of responsibility",
         body: [
-          "**Where the HVNL applies.** The Heavy Vehicle National Law regulates heavy vehicles over 4.5 tonnes gross vehicle mass and is in force in Queensland, New South Wales, the ACT, Victoria, Tasmania and South Australia; Western Australia and the Northern Territory are not participating jurisdictions ([[https://www.ntc.gov.au/laws-and-regulations/heavy-vehicle-national-law|National Transport Commission]]). Operators crossing borders must follow the rules where they operate. Software that schedules heavy vehicle work should know which jurisdiction each trip is in.",
-          "**Electronic work diaries.** The National Heavy Vehicle Regulator approves electronic work diaries for recording work and rest under fatigue rules, and drivers, operators and record keepers have the same obligations using an EWD as with a written diary ([[https://www.nhvr.gov.au/safety-accreditation-compliance/fatigue-management/electronic-work-diary|NHVR]]). Most businesses integrate with an approved EWD provider rather than building one. Check the NHVR's current list of approved EWDs.",
-          "**Chain of responsibility.** Under the HVNL, responsibility for heavy vehicle safety extends beyond drivers to parties ranging, in the NHVR's words, \"from the business that employs a driver or owns a vehicle, to the business that sends or receives goods\", and each party has a primary duty to ensure, so far as is reasonably practicable, the safety of its transport activities ([[https://www.nhvr.gov.au/safety-accreditation-compliance/chain-of-responsibility|NHVR]]). Scheduling that ignores driver fatigue limits or loading data that is inaccurate is a safety issue, not just an efficiency one. Software can help by flagging schedules that conflict with rest requirements and keeping accurate load records, but it does not discharge anyone's duties. Get advice from a transport compliance specialist.",
+          "**Where the HVNL applies.** The Heavy Vehicle National Law regulates heavy vehicles over 4.5 tonnes gross vehicle mass and is in force in Queensland, New South Wales, the ACT, Victoria, Tasmania and South Australia; Western Australia and the Northern Territory are not participating jurisdictions. Operators crossing borders must follow the rules where they operate. Software that schedules heavy vehicle work should know which jurisdiction each trip is in.",
+          "**Electronic work diaries.** The National Heavy Vehicle Regulator approves electronic work diaries for recording work and rest under fatigue rules, and drivers, operators and record keepers have the same obligations using an EWD as with a written diary. Most businesses integrate with an approved EWD provider rather than building one. Check the NHVR's current list of approved EWDs.",
+          "**Chain of responsibility.** Under the HVNL, responsibility for heavy vehicle safety extends beyond drivers to parties ranging, in the NHVR's words, \"from the business that employs a driver or owns a vehicle, to the business that sends or receives goods\", and each party has a primary duty to ensure, so far as is reasonably practicable, the safety of its transport activities. Scheduling that ignores driver fatigue limits or loading data that is inaccurate is a safety issue, not just an efficiency one. Software can help by flagging schedules that conflict with rest requirements and keeping accurate load records, but it does not discharge anyone's duties. Get advice from a transport compliance specialist.",
         ],
       },
       {
@@ -147,7 +147,7 @@ Telematics/EWD -> location and fatigue data`,
       {
         heading: "Carrier integrations in Australia",
         body: [
-          "If you use carriers for some legs, integrate for labels, manifests and tracking. Australia Post's developer centre provides shipping and tracking APIs, which are available to businesses with eParcel or StarTrack contracts ([[https://developers.auspost.com.au/|Australia Post]]). Other carriers and aggregators offer their own APIs. Normalise carrier statuses into your own event model so customers see consistent tracking regardless of who carries the goods.",
+          "If you use carriers for some legs, integrate for labels, manifests and tracking. Australia Post's developer centre provides shipping and tracking APIs, which are available to businesses with eParcel or StarTrack contracts. Other carriers and aggregators offer their own APIs. Normalise carrier statuses into your own event model so customers see consistent tracking regardless of who carries the goods.",
         ],
       },
       {
@@ -221,8 +221,8 @@ Telematics/EWD -> location and fatigue data`,
       {
         heading: "Sources",
         body: [
-          "**Transport regulation:** [[https://www.ntc.gov.au/laws-and-regulations/heavy-vehicle-national-law|National Transport Commission, Heavy Vehicle National Law]]; [[https://www.nhvr.gov.au/safety-accreditation-compliance/fatigue-management/electronic-work-diary|NHVR, electronic work diary]]; [[https://www.nhvr.gov.au/safety-accreditation-compliance/chain-of-responsibility|NHVR, chain of responsibility]].",
-          "**Carriers:** [[https://developers.auspost.com.au/|Australia Post developer centre]].",
+          "**Transport regulation:** National Transport Commission, Heavy Vehicle National Law; NHVR, electronic work diary; NHVR, chain of responsibility.",
+          "**Carriers:** Australia Post developer centre.",
           "Regulatory points are summarised from official guidance; check current NHVR and state guidance. The architecture, tables and example are ours. Nothing here is legal or compliance advice or ZSpace client data.",
         ],
       },
@@ -320,7 +320,7 @@ Telematics/EWD -> location and fatigue data`,
         heading: "Jurisdiction-aware rules",
         body: [
           "Residential tenancy law is made by each state and territory, so the same action can have different rules depending on where a property is.",
-          "**Bonds.** In most states and territories, residential bonds are lodged with a government authority within a set time, for example through NSW Fair Trading's Rental Bonds Online or Victoria's Residential Tenancies Bond Authority; the Northern Territory has no central bond authority, and deadlines and caps differ ([[https://www.fairtrading.nsw.gov.au/housing-and-property/renting/rental-bonds-online|NSW Fair Trading]]; [[https://rentalbonds.vic.gov.au/|RTBA]]). Software should record which authority applies, link to its online service and track lodgement and refund status.",
+          "**Bonds.** In most states and territories, residential bonds are lodged with a government authority within a set time, for example through NSW Fair Trading's Rental Bonds Online or Victoria's Residential Tenancies Bond Authority; the Northern Territory has no central bond authority, and deadlines and caps differ. Software should record which authority applies, link to its online service and track lodgement and refund status.",
           "**Notices, entry and inspections.** Notice periods for entry and routine inspections, how often inspections can occur, and required forms differ by jurisdiction. Store the rules as configuration, not code, so they can be updated when laws change.",
           "**Trust money.** Real estate agents generally must handle rent and other client money through trust accounts under state and territory laws, with record-keeping and audit requirements. Trust accounting is specialised; most agencies use a platform built for it and integrate other software with it.",
           "Rules change regularly. Have a property lawyer or compliance adviser confirm your configuration for each jurisdiction, and review it when laws change. Software cannot make a process compliant on its own.",
@@ -365,7 +365,7 @@ Telematics/EWD -> location and fatigue data`,
       {
         heading: "Privacy, security and permissions",
         body: [
-          "Property data includes identity documents, income evidence, references and contact details, and attackers know it. If your business is covered by the Privacy Act, take reasonable steps to protect personal information and destroy or de-identify it when no longer needed ([[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-11-app-11-security-of-personal-information|OAIC]]). Collect only what each process needs; some jurisdictions limit what can be requested in rental applications.",
+          "Property data includes identity documents, income evidence, references and contact details, and attackers know it. If your business is covered by the Privacy Act, take reasonable steps to protect personal information and destroy or de-identify it when no longer needed. Collect only what each process needs; some jurisdictions limit what can be requested in rental applications.",
           "Use role-based access for staff, owners, tenants and trades; log access to documents; expire external access when a tenancy or job ends; and secure document links. See [[/blogs/secure-web-application-development-australia|building a secure customer-facing web application]].",
         ],
       },
@@ -403,8 +403,8 @@ Telematics/EWD -> location and fatigue data`,
       {
         heading: "Sources",
         body: [
-          "**Bonds:** [[https://www.fairtrading.nsw.gov.au/housing-and-property/renting/rental-bonds-online|NSW Fair Trading, Rental Bonds Online]]; [[https://rentalbonds.vic.gov.au/|Residential Tenancies Bond Authority (Victoria)]]; [[https://www.rta.qld.gov.au/|Residential Tenancies Authority (Queensland)]].",
-          "**Privacy:** [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-11-app-11-security-of-personal-information|OAIC, APP 11]].",
+          "**Bonds:** NSW Fair Trading, Rental Bonds Online; Residential Tenancies Bond Authority (Victoria); Residential Tenancies Authority (Queensland).",
+          "**Privacy:** OAIC, APP 11.",
           "State rules were summarised from authority and secondary sources via search; confirm current requirements with each authority. The data model, checklists and example are ours. Nothing here is legal or tenancy advice or ZSpace client data.",
         ],
       },

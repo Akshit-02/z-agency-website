@@ -101,7 +101,7 @@ export const auSecurityOpsPosts: BlogPost[] = [
       {
         heading: "Types of testing",
         body: [
-          "**Black box** testers start with no inside knowledge, like an external attacker. **Grey box** testers get user accounts and some documentation, which is usually the most efficient for web applications because it lets them test authorisation between roles. **White box** testing adds source code access and architecture review. Many tests also cover the APIs behind the application; see [[/blogs/api-security-best-practices|API security best practices]]. Methodologies such as the OWASP Web Security Testing Guide describe what a thorough web test covers ([[https://owasp.org/www-project-web-security-testing-guide/|OWASP WSTG]]).",
+          "**Black box** testers start with no inside knowledge, like an external attacker. **Grey box** testers get user accounts and some documentation, which is usually the most efficient for web applications because it lets them test authorisation between roles. **White box** testing adds source code access and architecture review. Many tests also cover the APIs behind the application; see [[/blogs/api-security-best-practices|API security best practices]]. Methodologies such as the OWASP Web Security Testing Guide describe what a thorough web test covers.",
         ],
       },
       {
@@ -138,7 +138,7 @@ export const auSecurityOpsPosts: BlogPost[] = [
       {
         heading: "What testers typically examine",
         body: [
-          "A web application test commonly covers authentication and session handling, authorisation between users, roles and tenants, input handling and injection, business logic (for example, changing prices or skipping approval steps), file uploads, configuration and security headers, error handling and information leakage, and dependencies with known vulnerabilities. The OWASP Top 10:2025 lists the most critical web application risk categories, with broken access control first ([[https://top10.owasp.org/2025/0x00_2025-Introduction|OWASP]]).",
+          "A web application test commonly covers authentication and session handling, authorisation between users, roles and tenants, input handling and injection, business logic (for example, changing prices or skipping approval steps), file uploads, configuration and security headers, error handling and information leakage, and dependencies with known vulnerabilities. The OWASP Top 10:2025 lists the most critical web application risk categories, with broken access control first.",
         ],
       },
       {
@@ -186,7 +186,7 @@ export const auSecurityOpsPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://owasp.org/www-project-web-security-testing-guide/|OWASP Web Security Testing Guide]]; [[https://top10.owasp.org/2025/0x00_2025-Introduction|OWASP Top 10:2025]]; [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information|OAIC, APP 8]].",
+          "OWASP Web Security Testing Guide; OWASP Top 10:2025; OAIC, APP 8.",
           "Tables and checklists are ours. Nothing here is legal advice. ZSpace Labs does not provide penetration testing services.",
         ],
       },
@@ -249,7 +249,7 @@ export const auSecurityOpsPosts: BlogPost[] = [
         body: [
           "**An incident response plan should say who leads and decides, how incidents are detected and escalated, how to contain damage while preserving evidence, how to restore from backups, how to communicate with staff, customers and partners, which reporting obligations to check, and how to learn from what happened.** In Australia, those checks typically include the Notifiable Data Breaches scheme, ransomware payment reporting for larger businesses, sector rules such as the SOCI Act, and contacting ASD's ACSC for help.",
           "This guide is for owners and managers of Australian small and medium businesses, and for the IT and software providers who support them. It covers preparation, roles, escalation, backups, communications, evidence, recovery and lessons learned. Every incident is different; use this as a planning framework and verify obligations with official sources or qualified advisers.",
-          "ASD publishes cyber incident response plan guidance and a template that this article complements ([[https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/publications/cyber-incident-response-plan|ASD's ACSC]]). For preventive controls, see [[/blogs/website-security-australia|website security for Australian small businesses]] and [[/blogs/secure-web-application-development-australia|secure web application development]].",
+          "ASD publishes cyber incident response plan guidance and a template that this article complements. For preventive controls, see [[/blogs/website-security-australia|website security for Australian small businesses]] and [[/blogs/secure-web-application-development-australia|secure web application development]].",
         ],
       },
       {
@@ -324,11 +324,11 @@ export const auSecurityOpsPosts: BlogPost[] = [
         table: {
           headers: ["Obligation", "Who it applies to", "Key requirement"],
           rows: [
-            ["**Notifiable Data Breaches**", "Organisations covered by the Privacy Act", "Assess suspected eligible breaches (generally within 30 days); notify the OAIC and affected individuals if serious harm is likely ([[https://www.oaic.gov.au/privacy/notifiable-data-breaches/about-the-notifiable-data-breaches-scheme|OAIC]])"],
-            ["**Ransomware payment reporting**", "Businesses with turnover over A$3 million; critical infrastructure entities", "Report a ransomware or extortion payment to ASD within 72 hours ([[https://www.homeaffairs.gov.au/cyber-security-subsite/files/factsheet-ransomware-payment-reporting.pdf|Home Affairs]])"],
+            ["**Notifiable Data Breaches**", "Organisations covered by the Privacy Act", "Assess suspected eligible breaches (generally within 30 days); notify the OAIC and affected individuals if serious harm is likely"],
+            ["**Ransomware payment reporting**", "Businesses with turnover over A$3 million; critical infrastructure entities", "Report a ransomware or extortion payment to ASD within 72 hours"],
             ["**SOCI Act incident reporting**", "Responsible entities for critical infrastructure assets", "Report critical incidents with a significant impact within 12 hours, and other incidents with a relevant impact within 72 hours"],
             ["**Sector and contract rules**", "For example, financial services, health, government suppliers", "Regulator notifications, customer contract notices, insurer conditions"],
-            ["**Reporting to ASD**", "Anyone", "Voluntary reporting and free advice via cyber.gov.au/report or 1300 CYBER1 ([[https://www.cyber.gov.au/about-us/about-asd-acsc/contact-us|ASD's ACSC]])"],
+            ["**Reporting to ASD**", "Anyone", "Voluntary reporting and free advice via cyber.gov.au/report or 1300 CYBER1"],
           ],
         },
         callout: {
@@ -374,8 +374,8 @@ export const auSecurityOpsPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "**ASD:** [[https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/publications/cyber-incident-response-plan|ASD's ACSC, cyber incident response plan guidance]]; [[https://www.cyber.gov.au/about-us/about-asd-acsc/contact-us|ASD's ACSC, contact and reporting]].",
-          "**Obligations:** [[https://www.oaic.gov.au/privacy/notifiable-data-breaches/about-the-notifiable-data-breaches-scheme|OAIC, about the NDB scheme]]; [[https://www.homeaffairs.gov.au/cyber-security-subsite/files/factsheet-ransomware-payment-reporting.pdf|Home Affairs, ransomware payment reporting factsheet]]; [[https://www.cisc.gov.au/|Cyber and Infrastructure Security Centre]].",
+          "**ASD:** ASD's ACSC, cyber incident response plan guidance; ASD's ACSC, contact and reporting.",
+          "**Obligations:** OAIC, about the NDB scheme; Home Affairs, ransomware payment reporting factsheet; Cyber and Infrastructure Security Centre.",
           "SOCI timeframes and some ASD details are summarised from official guidance. Tables, checklists and scenarios are ours. Nothing here is legal advice or ZSpace client data.",
         ],
       },
@@ -457,7 +457,7 @@ export const auSecurityOpsPosts: BlogPost[] = [
       {
         heading: "The OWASP API Security Top 10 (2023)",
         body: [
-          "OWASP's API Security Top 10 2023 lists the most common API risk categories ([[https://api-security.owasp.org/editions/2023/en/0x11-t10|OWASP]]):",
+          "OWASP's API Security Top 10 2023 lists the most common API risk categories:",
         ],
         table: {
           headers: ["#", "Risk", "What it looks like"],
@@ -479,7 +479,7 @@ export const auSecurityOpsPosts: BlogPost[] = [
         heading: "Authentication and tokens",
         body: [],
         checklist: [
-          "Use OAuth 2.0 and OpenID Connect through a proven identity provider for user access; follow the OAuth 2.0 security best current practice ([[https://www.rfc-editor.org/rfc/rfc9700|RFC 9700]]).",
+          "Use OAuth 2.0 and OpenID Connect through a proven identity provider for user access; follow the OAuth 2.0 security best current practice.",
           "Use the authorisation code flow with PKCE for browser and mobile clients; avoid flows that expose tokens in URLs.",
           "Keep access tokens short-lived and scoped; rotate refresh tokens and detect reuse.",
           "Validate tokens fully on every request: signature, issuer, audience, expiry and scopes.",
@@ -520,7 +520,7 @@ export const auSecurityOpsPosts: BlogPost[] = [
       {
         heading: "Secrets and dependencies",
         body: [
-          "Store API keys, database credentials and signing keys in a secrets manager, give each the minimum permissions, rotate them, and scan repositories for leaks. Keep frameworks and libraries patched, pin versions and scan dependencies in CI; software supply chain failures are now third in the OWASP Top 10:2025 for web applications ([[https://top10.owasp.org/2025/0x00_2025-Introduction|OWASP]]).",
+          "Store API keys, database credentials and signing keys in a secrets manager, give each the minimum permissions, rotate them, and scan repositories for leaks. Keep frameworks and libraries patched, pin versions and scan dependencies in CI; software supply chain failures are now third in the OWASP Top 10:2025 for web applications.",
         ],
       },
       {
@@ -568,7 +568,7 @@ export const auSecurityOpsPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://api-security.owasp.org/editions/2023/en/0x11-t10|OWASP API Security Top 10 2023]]; [[https://top10.owasp.org/2025/0x00_2025-Introduction|OWASP Top 10:2025]]; [[https://www.rfc-editor.org/rfc/rfc9700|RFC 9700, OAuth 2.0 security best current practice]]; [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-11-app-11-security-of-personal-information|OAIC, APP 11]].",
+          "OWASP API Security Top 10 2023; OWASP Top 10:2025; RFC 9700, OAuth 2.0 security best current practice; OAIC, APP 11.",
           "Checklists and tables are ours. Nothing here is a security certification or ZSpace client data.",
         ],
       },

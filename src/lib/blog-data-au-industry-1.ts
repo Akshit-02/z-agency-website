@@ -105,9 +105,9 @@ export const auIndustryPosts1: BlogPost[] = [
       {
         heading: "Australian requirements that shape the software",
         body: [
-          "**Safe work method statements.** Under the model WHS regulations, a safe work method statement (SWMS) must be prepared before high-risk construction work starts. Safe Work Australia lists 18 categories of high-risk construction work, and some jurisdictions, such as Victoria, use their own list ([[https://www.safeworkaustralia.gov.au/system/files/documents/1703/information-sheet-safe-work-method-statement.docx|Safe Work Australia]]). Software can hold templates, link SWMS to tasks, capture worker acknowledgement on site and prompt reviews when conditions change. It cannot make a SWMS adequate, and it does not shift responsibility. Check your state or territory regulator's requirements.",
-          "**Security of payment.** Each state and territory has its own security of payment Act. Law-firm comparisons describe an 'East Coast' model (NSW, Victoria, Queensland, South Australia, Tasmania and the ACT) built on payment claims and payment schedules, and a different model historically in Western Australia and the Northern Territory, with timeframes that vary, for example in how many business days a respondent has to serve a payment schedule ([[https://www.minterellison.com/articles/security-of-payment-part-ii|MinterEllison]]). Victoria reformed its Act in 2025. Software should store the governing jurisdiction for each contract, timestamp when claims are served and received, and calculate deadlines from the right rules. Get legal advice on the rules themselves.",
-          "**Accounting and GST.** Progress claims, variations and supplier invoices flow into accounting. Xero and MYOB both publish APIs ([[https://developer.xero.com/documentation/|Xero]], [[https://developer.myob.com/|MYOB]]), and integration avoids re-keying costs and claims. Show GST consistently on quotes, claims and invoices.",
+          "**Safe work method statements.** Under the model WHS regulations, a safe work method statement (SWMS) must be prepared before high-risk construction work starts. Safe Work Australia lists 18 categories of high-risk construction work, and some jurisdictions, such as Victoria, use their own list. Software can hold templates, link SWMS to tasks, capture worker acknowledgement on site and prompt reviews when conditions change. It cannot make a SWMS adequate, and it does not shift responsibility. Check your state or territory regulator's requirements.",
+          "**Security of payment.** Each state and territory has its own security of payment Act. Law-firm comparisons describe an 'East Coast' model (NSW, Victoria, Queensland, South Australia, Tasmania and the ACT) built on payment claims and payment schedules, and a different model historically in Western Australia and the Northern Territory, with timeframes that vary, for example in how many business days a respondent has to serve a payment schedule. Victoria reformed its Act in 2025. Software should store the governing jurisdiction for each contract, timestamp when claims are served and received, and calculate deadlines from the right rules. Get legal advice on the rules themselves.",
+          "**Accounting and GST.** Progress claims, variations and supplier invoices flow into accounting. Xero and MYOB both publish APIs, and integration avoids re-keying costs and claims. Show GST consistently on quotes, claims and invoices.",
           "**Privacy.** Worker records, induction details and incident reports can include personal and health information. Restrict access by role and know where data is hosted. See [[/blogs/secure-web-application-development-australia|building a secure customer-facing web application]] for the security baseline.",
         ],
       },
@@ -195,9 +195,9 @@ export const auIndustryPosts1: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "**Safety:** [[https://www.safeworkaustralia.gov.au/system/files/documents/1703/information-sheet-safe-work-method-statement.docx|Safe Work Australia, SWMS information sheet]]; [[https://worksafe.vic.gov.au/resources/safe-work-method-statements-swms|WorkSafe Victoria, SWMS]].",
-          "**Payments:** [[https://www.minterellison.com/articles/security-of-payment-part-ii|MinterEllison, overview of security of payment Acts in each jurisdiction]].",
-          "**Integrations:** [[https://developer.xero.com/documentation/|Xero developer documentation]]; [[https://developer.myob.com/|MYOB developer portal]].",
+          "**Safety:** Safe Work Australia, SWMS information sheet; WorkSafe Victoria, SWMS.",
+          "**Payments:** MinterEllison, overview of security of payment Acts in each jurisdiction.",
+          "**Integrations:** Xero developer documentation; MYOB developer portal.",
           "WHS and security of payment points are summaries of regulator and law-firm material confirmed via search; check current rules for your jurisdiction. The options table, checklist and example are ours. Nothing here is legal or WHS advice or ZSpace client data.",
         ],
       },
@@ -326,7 +326,7 @@ export const auIndustryPosts1: BlogPost[] = [
         heading: "Quotes, invoicing and accounting",
         body: [
           "Money flow is the main reason to connect field service software properly. Quotes should come from consistent price books; approved quotes should become jobs without re-entry; and completed jobs should become invoices the same day, with GST shown correctly.",
-          "Integrate with Xero or MYOB through their APIs or built-in connectors ([[https://developer.xero.com/documentation/|Xero]], [[https://developer.myob.com/|MYOB]]). Agree which system owns customers, items, prices and payment status, and how credit notes and corrections flow. For business customers, store and validate the ABN. Our guide to [[/blogs/api-integration-australia|API integration for Australian businesses]] covers mapping and error handling.",
+          "Integrate with Xero or MYOB through their APIs or built-in connectors. Agree which system owns customers, items, prices and payment status, and how credit notes and corrections flow. For business customers, store and validate the ABN. Our guide to [[/blogs/api-integration-australia|API integration for Australian businesses]] covers mapping and error handling.",
         ],
       },
       {
@@ -384,8 +384,8 @@ export const auIndustryPosts1: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "**Integrations:** [[https://developer.xero.com/documentation/|Xero developer documentation]]; [[https://developer.myob.com/|MYOB developer portal]].",
-          "**Messages:** [[https://www.acma.gov.au/avoid-sending-spam|ACMA, avoid sending spam]].",
+          "**Integrations:** Xero developer documentation; MYOB developer portal.",
+          "**Messages:** ACMA, avoid sending spam.",
           "The capability table, decision table and example are ours. Nothing here is ZSpace client data or legal advice.",
         ],
       },
@@ -501,7 +501,7 @@ export const auIndustryPosts1: BlogPost[] = [
         heading: "Barcodes and scanning",
         body: [
           "Scanning is the most reliable way to keep stock accurate, because it removes typing from receiving, picking, transfers and counts. Use rugged scanners or phone apps depending on volume and environment.",
-          "**GS1 barcodes.** GS1 Australia is the authorised source of GS1 barcode numbers in Australia, and each product variation, such as a different size or pack, generally needs its own GTIN ([[https://www.gs1au.org/get-gs1-barcodes|GS1 Australia]]). Many retailers and marketplaces require GS1 barcodes, and GS1 warns that numbers from unauthorised sources can lead to rejected products. Store GTINs on each product record, and use separate internal codes for bins, pallets and assets.",
+          "**GS1 barcodes.** GS1 Australia is the authorised source of GS1 barcode numbers in Australia, and each product variation, such as a different size or pack, generally needs its own GTIN. Many retailers and marketplaces require GS1 barcodes, and GS1 warns that numbers from unauthorised sources can lead to rejected products. Store GTINs on each product record, and use separate internal codes for bins, pallets and assets.",
         ],
       },
       {
@@ -514,7 +514,7 @@ export const auIndustryPosts1: BlogPost[] = [
       {
         heading: "Australian tax: supporting trading stock valuation",
         body: [
-          "Inventory software feeds the year-end trading stock figures in your tax return. The ATO generally expects a stocktake as close as possible to the end of the income year, and lets you value each item at **cost**, **market selling value** or **replacement value**, choosing per item; if you are entitled to GST credits, the GST component is generally excluded ([[https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/accounting-for-trading-stock/valuing-trading-stock|ATO]]). Eligible businesses can use the simplified trading stock rules and skip a formal stocktake if they reasonably estimate that the value of stock changed by $5,000 or less in the year ([[https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/in-detail/simplified-trading-stock-rules|ATO]]).",
+          "Inventory software feeds the year-end trading stock figures in your tax return. The ATO generally expects a stocktake as close as possible to the end of the income year, and lets you value each item at **cost**, **market selling value** or **replacement value**, choosing per item; if you are entitled to GST credits, the GST component is generally excluded. Eligible businesses can use the simplified trading stock rules and skip a formal stocktake if they reasonably estimate that the value of stock changed by $5,000 or less in the year.",
           "For software, that means: support a full or cycle-count stocktake near 30 June, record cost including freight and duties where your accountant includes them, keep a history of valuations, and export a valuation report your accountant can use. Confirm the method and eligibility with your accountant.",
         ],
       },
@@ -616,9 +616,9 @@ export const auIndustryPosts1: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "**Tax:** [[https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/accounting-for-trading-stock/valuing-trading-stock|ATO, valuing trading stock]]; [[https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/in-detail/simplified-trading-stock-rules|ATO, simplified trading stock rules]].",
-          "**Barcodes:** [[https://www.gs1au.org/get-gs1-barcodes|GS1 Australia, get GS1 barcodes]].",
-          "**Integrations:** [[https://developer.xero.com/documentation/|Xero developer documentation]]; [[https://developer.myob.com/|MYOB developer portal]].",
+          "**Tax:** ATO, valuing trading stock; ATO, simplified trading stock rules.",
+          "**Barcodes:** GS1 Australia, get GS1 barcodes.",
+          "**Integrations:** Xero developer documentation; MYOB developer portal.",
           "ATO points are summarised from official guidance and may change; check the current position before relying on them. The tables and example are ours. Nothing here is tax advice or ZSpace client data.",
         ],
       },

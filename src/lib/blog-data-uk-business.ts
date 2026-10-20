@@ -122,7 +122,7 @@ export const ukBusinessPosts: BlogPost[] = [
         table: {
           headers: ["Topic", "What to check"],
           rows: [
-            ["**IP ownership**", "Copyright generally belongs to the author or their employer unless assigned; an assignment must be in writing and signed by the assignor ([[https://www.legislation.gov.uk/ukpga/1988/48/section/90|CDPA 1988 s.90]]). Assign custom code, list open-source and pre-existing components with their licences"],
+            ["**IP ownership**", "Copyright generally belongs to the author or their employer unless assigned; an assignment must be in writing and signed by the assignor. Assign custom code, list open-source and pre-existing components with their licences"],
             ["**Data protection**", "A UK GDPR Article 28 processor agreement; security measures; sub-processors; breach notification; international transfer safeguards"],
             ["**Pricing model**", "Fixed price per phase, time and materials with a cap, or a monthly team; change control either way. See [[/blogs/fixed-price-vs-time-and-materials|how fixed price and time and materials allocate risk]]"],
             ["**Acceptance**", "Written acceptance criteria and a testing window per release"],
@@ -135,8 +135,8 @@ export const ukBusinessPosts: BlogPost[] = [
       {
         heading: "VAT, R&D relief and other tax points",
         body: [
-          "**VAT.** For most business-to-business services, the place of supply is where the customer belongs. A UK VAT-registered business buying services from an overseas supplier normally accounts for VAT through the reverse charge rather than paying it on the invoice ([[https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a|VAT Notice 741A]]). For a fully taxable business, this usually nets off, but it must be declared.",
-          "**R&D tax relief.** Some custom software projects involve qualifying R&D, but the rules changed. For accounting periods beginning on or after 1 April 2024, payments to subcontractors for R&D carried out outside the UK, and to externally provided workers not subject to UK PAYE, generally do not qualify. A narrow exception applies where conditions needed for the R&D are not present in the UK and it would be wholly unreasonable to replicate them; cost and availability of staff are excluded ([[https://www.gov.uk/government/publications/research-and-development-clarifying-the-scope-of-the-overseas-restriction|HMRC]]). If relief matters to your business case, take advice before choosing a delivery model.",
+          "**VAT.** For most business-to-business services, the place of supply is where the customer belongs. A UK VAT-registered business buying services from an overseas supplier normally accounts for VAT through the reverse charge rather than paying it on the invoice. For a fully taxable business, this usually nets off, but it must be declared.",
+          "**R&D tax relief.** Some custom software projects involve qualifying R&D, but the rules changed. For accounting periods beginning on or after 1 April 2024, payments to subcontractors for R&D carried out outside the UK, and to externally provided workers not subject to UK PAYE, generally do not qualify. A narrow exception applies where conditions needed for the R&D are not present in the UK and it would be wholly unreasonable to replicate them; cost and availability of staff are excluded. If relief matters to your business case, take advice before choosing a delivery model.",
         ],
         callout: {
           type: "note",
@@ -146,7 +146,7 @@ export const ukBusinessPosts: BlogPost[] = [
       {
         heading: "Data protection when part of the team is overseas",
         body: [
-          "Under UK GDPR, giving people outside the UK access to personal data, even remote access to a database, can be a restricted transfer. Where the destination has no UK adequacy regulations (we found none for India as at October 2026), organisations typically rely on the ICO's International Data Transfer Agreement or the UK Addendum to the EU standard contractual clauses, supported by a transfer risk assessment, which the Data (Use and Access) Act 2025 frames as a data protection test ([[https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/international-transfers/|ICO international transfers guidance]]).",
+          "Under UK GDPR, giving people outside the UK access to personal data, even remote access to a database, can be a restricted transfer. Where the destination has no UK adequacy regulations (we found none for India as at October 2026), organisations typically rely on the ICO's International Data Transfer Agreement or the UK Addendum to the EU standard contractual clauses, supported by a transfer risk assessment, which the Data (Use and Access) Act 2025 frames as a data protection test.",
           "The best control is minimisation: developers rarely need real personal data. Use synthetic or anonymised test data, keep production access with named UK-approved staff or tightly controlled roles, and log access. See [[/blogs/privacy-by-design-software-australia|privacy by design in software development]] for the engineering patterns.",
         ],
       },
@@ -200,8 +200,8 @@ export const ukBusinessPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Tax: [[https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a|HMRC VAT Notice 741A: place of supply of services]]; [[https://www.gov.uk/government/publications/research-and-development-clarifying-the-scope-of-the-overseas-restriction|HMRC: clarifying the scope of the R&D overseas restriction]]; [[https://www.gov.uk/government/publications/research-and-development-tax-relief-changes/research-and-development-tax-relief-reform|GOV.UK: R&D tax relief reform]].",
-          "Law and data: [[https://www.legislation.gov.uk/ukpga/1988/48/section/90|Copyright, Designs and Patents Act 1988, s.90]]; [[https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/international-transfers/|ICO: international transfers]]; [[https://www.ncsc.gov.uk/cyberessentials/overview|NCSC: Cyber Essentials]].",
+          "Tax: HMRC VAT Notice 741A: place of supply of services; HMRC: clarifying the scope of the R&D overseas restriction; GOV.UK: R&D tax relief reform.",
+          "Law and data: Copyright, Designs and Patents Act 1988, s.90; ICO: international transfers; NCSC: Cyber Essentials.",
           "Accessed 10 October 2026. Tax and data rules change; check current guidance and take professional advice.",
         ],
       },
@@ -277,7 +277,7 @@ export const ukBusinessPosts: BlogPost[] = [
       {
         heading: "What UK rules require",
         body: [
-          "In Great Britain, the traceability requirement comes from Regulation (EC) No 178/2002, which is now assimilated law: food businesses must be able to identify the businesses that supplied them and the businesses they supplied. GOV.UK guidance says: ‘you need to be able to identify your suppliers and food business customers’, and that you must immediately withdraw or recall food you believe is unsafe or fails legal requirements ([[https://www.gov.uk/guidance/food-incidents-product-withdrawals-and-recalls|GOV.UK: food incidents, withdrawals and recalls]]).",
+          "In Great Britain, the traceability requirement comes from Regulation (EC) No 178/2002, which is now assimilated law: food businesses must be able to identify the businesses that supplied them and the businesses they supplied. GOV.UK guidance says: ‘you need to be able to identify your suppliers and food business customers’, and that you must immediately withdraw or recall food you believe is unsafe or fails legal requirements.",
           "Northern Ireland follows different arrangements under the Windsor Framework for some food law, and Scotland's regulator is Food Standards Scotland. Confirm which rules and contacts apply to each site.",
         ],
       },
@@ -328,7 +328,7 @@ export const ukBusinessPosts: BlogPost[] = [
       {
         heading: "Allergens and labels",
         body: [
-          "Recipe changes and ingredient substitutions are a common cause of allergen recalls. Link each recipe version to ingredient specifications and the label artwork, flag any change that affects allergens, and require approval before production uses a new version. For prepacked for direct sale (PPDS) food, labels have had to show the name of the food and a full ingredients list with the 14 regulated allergens emphasised since 1 October 2021 across all four UK nations ([[https://www.food.gov.uk/business-guidance/introduction-to-allergen-labelling-changes-ppds|FSA: PPDS]]). PPDS covers food packed where it is sold before it is ordered; food you supply to other businesses for resale is labelled under the ordinary prepacked rules.",
+          "Recipe changes and ingredient substitutions are a common cause of allergen recalls. Link each recipe version to ingredient specifications and the label artwork, flag any change that affects allergens, and require approval before production uses a new version. For prepacked for direct sale (PPDS) food, labels have had to show the name of the food and a full ingredients list with the 14 regulated allergens emphasised since 1 October 2021 across all four UK nations. PPDS covers food packed where it is sold before it is ordered; food you supply to other businesses for resale is labelled under the ordinary prepacked rules.",
         ],
       },
       {
@@ -364,7 +364,7 @@ export const ukBusinessPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://www.gov.uk/guidance/food-incidents-product-withdrawals-and-recalls|GOV.UK: food incidents, product withdrawals and recalls (updated 20 August 2026)]]; [[https://www.food.gov.uk/business-guidance/introduction-to-allergen-labelling-changes-ppds|FSA: prepacked for direct sale allergen labelling]].",
+          "GOV.UK: food incidents, product withdrawals and recalls (updated 20 August 2026); FSA: prepacked for direct sale allergen labelling.",
           "Accessed 10 October 2026. Food law differs between Great Britain and Northern Ireland and Scotland has its own regulator; nothing here is legal or food safety advice.",
         ],
       },
@@ -443,7 +443,7 @@ export const ukBusinessPosts: BlogPost[] = [
         table: {
           headers: ["Nation or group", "Status (October 2026)"],
           rows: [
-            ["**England and Wales: permitted or licensed receiving sites**", "Mandatory from 1 October 2026 ([[https://www.gov.uk/guidance/digital-waste-tracking-check-if-you-need-to-report-the-waste-you-receive|GOV.UK]])"],
+            ["**England and Wales: permitted or licensed receiving sites**", "Mandatory from 1 October 2026"],
             ["**Scotland**", "The Environment Agency has said January 2027; confirm with SEPA"],
             ["**Northern Ireland**", "Sources differ; confirm with DAERA"],
             ["**Excluded**", "Household waste recycling centres in Wales, and in England those receiving household waste from residents; digitally excluded operators follow a written-record process"],
@@ -458,7 +458,7 @@ export const ukBusinessPosts: BlogPost[] = [
       {
         heading: "API or spreadsheet?",
         body: [
-          "Defra's Receipt of Waste service accepts records through an API connected to waste-specific software, or through its template spreadsheet, which must not be altered. GOV.UK lists software providers whose products have integrated with the API and passed production approval tests ([[https://www.gov.uk/government/publications/report-receipt-of-waste-choose-a-software-provider/report-receipt-of-waste-choose-a-software-provider|software provider list]]).",
+          "Defra's Receipt of Waste service accepts records through an API connected to waste-specific software, or through its template spreadsheet, which must not be altered. GOV.UK lists software providers whose products have integrated with the API and passed production approval tests.",
         ],
         table: {
           headers: ["Route", "Fits", "Trade-offs"],
@@ -516,7 +516,7 @@ export const ukBusinessPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://www.gov.uk/guidance/digital-waste-tracking-check-if-you-need-to-report-the-waste-you-receive|GOV.UK: check if you need to report the waste you receive (updated 25 September 2026)]]; [[https://www.gov.uk/guidance/report-receipt-of-waste|GOV.UK: report receipt of waste]]; [[https://www.gov.uk/government/publications/report-receipt-of-waste-choose-a-software-provider/report-receipt-of-waste-choose-a-software-provider|GOV.UK: choose a software provider]]; [[https://environmentagency.blog.gov.uk/2026/04/30/digital-waste-tracking-goes-live-a-major-step-forward-in-stopping-waste-crime/|Environment Agency blog: digital waste tracking goes live (30 April 2026)]].",
+          "GOV.UK: check if you need to report the waste you receive (updated 25 September 2026); GOV.UK: report receipt of waste; GOV.UK: choose a software provider; Environment Agency blog: digital waste tracking goes live (30 April 2026).",
           "Accessed 10 October 2026. Scotland, Northern Ireland and later-phase dates should be confirmed with the relevant regulator. Nothing here is regulatory advice.",
         ],
       },

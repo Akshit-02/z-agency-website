@@ -127,7 +127,7 @@ export const auDataPlatformPosts: BlogPost[] = [
       {
         heading: "Governance and privacy",
         body: [
-          "Write down definitions for key metrics (what counts as revenue, an active customer, a return) and keep them in the transformation models. Limit access to personal information in the warehouse, mask or exclude fields analysts do not need, and set retention rules. If the Privacy Act applies to you, APP 11 requires reasonable steps to protect personal information and to destroy or de-identify it when no longer needed ([[https://www.oaic.gov.au/privacy/australian-privacy-principles|OAIC]]). Choose a storage region that matches your contractual and privacy obligations.",
+          "Write down definitions for key metrics (what counts as revenue, an active customer, a return) and keep them in the transformation models. Limit access to personal information in the warehouse, mask or exclude fields analysts do not need, and set retention rules. If the Privacy Act applies to you, APP 11 requires reasonable steps to protect personal information and to destroy or de-identify it when no longer needed. Choose a storage region that matches your contractual and privacy obligations.",
         ],
       },
       {
@@ -245,7 +245,7 @@ export const auDataPlatformPosts: BlogPost[] = [
       {
         heading: "Open table formats",
         body: [
-          "Open table formats such as [[https://iceberg.apache.org/|Apache Iceberg]] and [[https://delta.io/|Delta Lake]] add transactions, schema evolution, time travel and partition management to files on object storage, so several query engines can work on the same tables. Many warehouses can now read or manage these formats too, which blurs the line between warehouse and lakehouse. The practical question is which engines and tools your team will use.",
+          "Open table formats such as Apache Iceberg and Delta Lake add transactions, schema evolution, time travel and partition management to files on object storage, so several query engines can work on the same tables. Many warehouses can now read or manage these formats too, which blurs the line between warehouse and lakehouse. The practical question is which engines and tools your team will use.",
         ],
       },
       {

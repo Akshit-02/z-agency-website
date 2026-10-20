@@ -80,8 +80,8 @@ export const agenticDevPosts2: BlogPost[] = [
       {
         heading: "Commits: identities and trailers",
         body: [
-          "**Identities.** Autonomous agents should commit under their own bot account or app identity, never a developer's personal account, so git log shows the agent as author and permissions can be scoped. GitHub's Copilot coding agent, for example, works on its own branch and opens a pull request for a person to review, and approvals from the person who asked for the work may not count toward required reviews, which keeps an independent reviewer in the loop ([[https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/review-copilot-prs|GitHub on reviewing Copilot pull requests]]).",
-          "**Trailers.** For interactive agent work under a developer's identity, add Git trailers at the end of the commit message. Co-authored-by is widely understood and displayed by GitHub ([[https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors|GitHub on co-authored commits]]); some agents add one automatically, and their settings control it. Teams that want machine-readable detail add custom trailers, which Git can parse with git interpret-trailers.",
+          "**Identities.** Autonomous agents should commit under their own bot account or app identity, never a developer's personal account, so git log shows the agent as author and permissions can be scoped. GitHub's Copilot coding agent, for example, works on its own branch and opens a pull request for a person to review, and approvals from the person who asked for the work may not count toward required reviews, which keeps an independent reviewer in the loop.",
+          "**Trailers.** For interactive agent work under a developer's identity, add Git trailers at the end of the commit message. Co-authored-by is widely understood and displayed by GitHub; some agents add one automatically, and their settings control it. Teams that want machine-readable detail add custom trailers, which Git can parse with git interpret-trailers.",
         ],
         code: {
           label: "Commit with provenance trailers (illustrative)",
@@ -112,7 +112,7 @@ Reviewed-by: A. Developer <a.dev@example.com>`,
       {
         heading: "Emerging attribution formats",
         body: [
-          "Tool vendors are starting to standardize attribution. **Agent Trace** is a draft open specification, proposed by Cursor, for recording which code ranges came from AI, humans or both, with optional model identifiers, stored alongside version control in files, Git notes or a database ([[https://agent-trace.dev/|Agent Trace]]). It is a proposal, so check adoption by the tools you use before depending on it. Separately, **build provenance** frameworks such as SLSA describe verifiable information about how an artifact was built, from which source and by which builder ([[https://slsa.dev/spec/v1.0/provenance|SLSA provenance]]). They complement each other: code provenance covers authorship; build provenance covers the path from source to artifact.",
+          "Tool vendors are starting to standardize attribution. **Agent Trace** is a draft open specification, proposed by Cursor, for recording which code ranges came from AI, humans or both, with optional model identifiers, stored alongside version control in files, Git notes or a database. It is a proposal, so check adoption by the tools you use before depending on it. Separately, **build provenance** frameworks such as SLSA describe verifiable information about how an artifact was built, from which source and by which builder. They complement each other: code provenance covers authorship; build provenance covers the path from source to artifact.",
         ],
       },
       {
@@ -271,7 +271,7 @@ Risk scorer (deterministic rules)
       {
         heading: "Automating the score",
         body: [
-          "Make the scorer deterministic and explainable, and run it in CI on every pull request. Inputs: path patterns for sensitive areas (the same patterns you use in a CODEOWNERS file, [[https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners|GitHub CODEOWNERS]]), file types (migrations, Terraform, workflow files, lockfiles), diff size, coverage on changed lines and whether dependency manifests changed. Output: a tier label, the reasons, and the required checks and reviewers. Enforce the outcome with branch protection or rulesets so the tier cannot be skipped ([[https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets|GitHub rulesets]]).",
+          "Make the scorer deterministic and explainable, and run it in CI on every pull request. Inputs: path patterns for sensitive areas (the same patterns you use in a CODEOWNERS file, GitHub CODEOWNERS), file types (migrations, Terraform, workflow files, lockfiles), diff size, coverage on changed lines and whether dependency manifests changed. Output: a tier label, the reasons, and the required checks and reviewers. Enforce the outcome with branch protection or rulesets so the tier cannot be skipped.",
           "An AI reviewer can add useful signals, such as 'this change alters an authorization check', but should only ever raise the tier, never lower it.",
         ],
         callout: {

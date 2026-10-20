@@ -71,7 +71,7 @@ export function listicle(o: ListicleInput): BlogPost {
     body: [
       ...p.paragraphs,
       p.url
-        ? `**Official website:** [[${p.url}|${p.domain}]]`
+        ? `**Official website:** ${p.domain}`
         : `**Learn more:** [[/services/${o.service}|${o.serviceLabel}]] and [[/about|about ZSpace Labs]].`,
       `**Who might consider it:** ${p.consider}`,
     ],
@@ -160,7 +160,7 @@ export function listicle(o: ListicleInput): BlogPost {
         ],
         checklist: o.profiles
           .filter((p) => p.url)
-          .map((p) => `${p.name}: [[${p.url}|${p.domain}]]`)
+          .map((p) => `${p.name}: ${p.domain}`)
           .concat([`ZSpace Labs: [[/services/${o.service}|zspace.in/services/${o.service}]]`]),
       },
     ],
@@ -1328,7 +1328,7 @@ export const indiaSupportPosts: BlogPost[] = [
         heading: "Low traffic changes the approach",
         body: [
           "For stores and sites without much traffic, A/B tests can run for months without a clear answer. A good agency will say so, and instead focus on high-confidence fixes from research and best practice, measured before and after. Our [[/blogs/shopify-cro-checklist|Shopify CRO checklist]] lists the common ones.",
-          "**A worked example.** Suppose 2% of visitors buy and you want to detect a 20% relative improvement (2.0% to 2.4%) with the usual settings: 95% confidence and 80% power. A standard two-proportion calculation needs about 21,100 visitors per variant, or roughly 42,000 in total. At 1,000 visitors a day, that is about six weeks for one test. To detect a 10% improvement you would need about 80,700 per variant, more than five months at the same traffic. You can check your own numbers with a free calculator such as [[https://www.evanmiller.org/ab-testing/sample-size.html|Evan Miller's sample size calculator]].",
+          "**A worked example.** Suppose 2% of visitors buy and you want to detect a 20% relative improvement (2.0% to 2.4%) with the usual settings: 95% confidence and 80% power. A standard two-proportion calculation needs about 21,100 visitors per variant, or roughly 42,000 in total. At 1,000 visitors a day, that is about six weeks for one test. To detect a 10% improvement you would need about 80,700 per variant, more than five months at the same traffic. You can check your own numbers with a free calculator such as Evan Miller's sample size calculator.",
           "Ask any agency to run this calculation with your real traffic and conversion rate before it proposes a testing programme. If the answer is months per test, the plan should lead with research-backed fixes instead.",
         ],
         table: {

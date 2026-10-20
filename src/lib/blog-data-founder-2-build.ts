@@ -117,13 +117,13 @@ export const founderBuildPosts2: BlogPost[] = [
         table: {
           headers: ["Vendor statement", "Driver it affects", "What it means for the budget"],
           rows: [
-            ["Shopify releases a new API version every quarter and supports each stable version for at least 12 months ([[https://shopify.dev/docs/api/usage/versioning|Shopify]])", "9. Versioning", "Plan at least one upgrade review a year for each Shopify integration"],
-            ["Shopify rate limits vary by API and by plan ([[https://shopify.dev/docs/api/usage/limits|Shopify]])", "4. Volume", "Limits that hold on one store plan may not hold on another"],
-            ["Each Meta Graph API version is guaranteed to operate for at least two years, and calls to an expired version default to the next oldest usable one ([[https://developers.facebook.com/docs/graph-api/guides/versioning|Meta]])", "9. Versioning", "Silent fallback means behaviour can change without an error; schedule upgrades"],
-            ["Stripe's sandbox has lower rate limits than live mode, and Stripe discourages load testing against the sandbox ([[https://docs.stripe.com/rate-limits|Stripe]])", "7. Sandbox, 4. Volume", "Load testing needs a mocking layer, which is extra work"],
-            ["Stripe does not guarantee webhook events arrive in order, and endpoints may receive the same event more than once; live-mode delivery is retried for up to three days ([[https://docs.stripe.com/webhooks|Stripe]])", "5. Webhooks, 6. Reconciliation", "Duplicate detection and order-independent handling must be built and tested"],
-            ["Xero moved to tiered developer pricing on 2 March 2026, with tiers based on connections and API data usage, and its terms restrict using API data to train AI models ([[https://developer.xero.com/faq/pricing-and-policy-updates|Xero]])", "8. Vendor fees", "API access itself can be a recurring cost that grows with the number of connected organisations"],
-            ["HubSpot API limits for private apps depend on the account's subscription tier; exceeding them returns a 429 error ([[https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines|HubSpot]])", "4. Volume, 8. Vendor fees", "The CRM plan you are on can decide whether a sync design works"],
+            ["Shopify releases a new API version every quarter and supports each stable version for at least 12 months", "9. Versioning", "Plan at least one upgrade review a year for each Shopify integration"],
+            ["Shopify rate limits vary by API and by plan", "4. Volume", "Limits that hold on one store plan may not hold on another"],
+            ["Each Meta Graph API version is guaranteed to operate for at least two years, and calls to an expired version default to the next oldest usable one", "9. Versioning", "Silent fallback means behaviour can change without an error; schedule upgrades"],
+            ["Stripe's sandbox has lower rate limits than live mode, and Stripe discourages load testing against the sandbox", "7. Sandbox, 4. Volume", "Load testing needs a mocking layer, which is extra work"],
+            ["Stripe does not guarantee webhook events arrive in order, and endpoints may receive the same event more than once; live-mode delivery is retried for up to three days", "5. Webhooks, 6. Reconciliation", "Duplicate detection and order-independent handling must be built and tested"],
+            ["Xero moved to tiered developer pricing on 2 March 2026, with tiers based on connections and API data usage, and its terms restrict using API data to train AI models", "8. Vendor fees", "API access itself can be a recurring cost that grows with the number of connected organisations"],
+            ["HubSpot API limits for private apps depend on the account's subscription tier; exceeding them returns a 429 error", "4. Volume, 8. Vendor fees", "The CRM plan you are on can decide whether a sync design works"],
           ],
         },
       },
@@ -222,7 +222,7 @@ export const founderBuildPosts2: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Vendor documentation: [[https://shopify.dev/docs/api/usage/versioning|Shopify: API versioning]]; [[https://shopify.dev/docs/api/usage/limits|Shopify: API rate limits]]; [[https://developers.facebook.com/docs/graph-api/guides/versioning|Meta: Graph API versioning]]; [[https://docs.stripe.com/rate-limits|Stripe: rate limits]]; [[https://docs.stripe.com/webhooks|Stripe: receive events in your webhook endpoint]]; [[https://developer.xero.com/faq/pricing-and-policy-updates|Xero: developer pricing and policy updates]]; [[https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines|HubSpot: API usage guidelines]].",
+          "Vendor documentation: Shopify: API versioning; Shopify: API rate limits; Meta: Graph API versioning; Stripe: rate limits; Stripe: receive events in your webhook endpoint; Xero: developer pricing and policy updates; HubSpot: API usage guidelines.",
           "Accessed 14 October 2026. These are vendor pages; limits, pricing tiers and version schedules change, so check the current versions before relying on them.",
         ],
       },
@@ -305,7 +305,7 @@ export const founderBuildPosts2: BlogPost[] = [
           headers: ["#", "Item", "Owner", "Start by", "Notes"],
           rows: [
             ["**Accounts and agreements**", "", "", "", ""],
-            ["1", "Enrol in the Apple Developer Program under the right legal entity", "Founder (account holder)", "6+ weeks before", "US$99 per membership year or local equivalent ([[https://developer.apple.com/programs/whats-included/|Apple]])"],
+            ["1", "Enrol in the Apple Developer Program under the right legal entity", "Founder (account holder)", "6+ weeks before", "US$99 per membership year or local equivalent"],
             ["2", "Create the Google Play developer account (personal or organisation)", "Founder", "6+ weeks before", "US$25 one-time registration fee; account type decides whether the closed-test rule applies"],
             ["3", "Accept agreements; add tax and banking details if the app sells anything", "Founder or finance", "4+ weeks before", "Needed before you can sell or receive payouts; check each console for what is outstanding"],
             ["4", "Invite the team with the least access each person needs", "Founder", "4+ weeks before", "Keep the account holder role with the business, not a contractor"],
@@ -336,8 +336,8 @@ export const founderBuildPosts2: BlogPost[] = [
       {
         heading: "Work backwards from the launch date",
         body: [
-          "The fixed waits are what make a launch slip, so put them on a calendar first. On Android, for a new personal account, the closed test runs for at least 14 consecutive days, and only then can you apply for production access; Google says that application review [[https://support.google.com/googleplay/android-developer/answer/14151465|usually takes seven days or less, but can occasionally take longer]]. Production review comes on top, and Google notes that for some accounts it can take [[https://support.google.com/googleplay/android-developer/answer/9859751|up to seven days or longer in exceptional cases]].",
-          "On iOS, Apple says it [[https://developer.apple.com/distribute/app-review/|typically reviews at least 50% of submissions in under 24 hours and 90% in under 48 hours]]. That is quick, but a rejection means fixing, resubmitting and waiting again, and the first external TestFlight build also goes through review.",
+          "The fixed waits are what make a launch slip, so put them on a calendar first. On Android, for a new personal account, the closed test runs for at least 14 consecutive days, and only then can you apply for production access; Google says that application review usually takes seven days or less, but can occasionally take longer. Production review comes on top, and Google notes that for some accounts it can take up to seven days or longer in exceptional cases.",
+          "On iOS, Apple says it typically reviews at least 50% of submissions in under 24 hours and 90% in under 48 hours. That is quick, but a rejection means fixing, resubmitting and waiting again, and the first external TestFlight build also goes through review.",
           "**Hypothetical example: planning a launch for a two-person team.** A founder and one developer want a consumer app live on both stores. They have a stable build five weeks before the target date and a new personal Play account. Week 1: listing copy, privacy declarations and internal testing on both platforms. End of week 1: the Play closed test starts with 15 recruited testers, a few more than the minimum in case some drop out, and the first external TestFlight build goes to review. Weeks 2 and 3: testers report bugs and the developer ships fixes to both tracks. Day 15 of the test: they apply for Play production access. Week 4: they submit to App Review with manual release set. Week 5: with both approvals in hand, they publish on the same morning. If any step had slipped, the plan was to launch on iOS first rather than move the date.",
         ],
         callout: {
@@ -365,15 +365,15 @@ export const founderBuildPosts2: BlogPost[] = [
       {
         heading: "Privacy declarations, briefly",
         body: [
-          "Both stores ask you to declare what data the app and its SDKs collect. Apple's [[https://developer.apple.com/app-store/app-privacy-details/|App Privacy details]] are required for new apps and include data collected by third-party partners. Google requires the [[https://support.google.com/googleplay/android-developer/answer/10787469|Data safety form]] for every app published on closed, open or production tracks, even apps that collect nothing, which is why it sits before testing in the checklist. If users can create an account, both stores require a way to delete it: Apple's [[https://developer.apple.com/app-store/review/guidelines/|guideline 5.1.1(v)]] asks for deletion inside the app, and Google requires an in-app path and a [[https://support.google.com/googleplay/android-developer/answer/13327111|web link where deletion can be requested]].",
+          "Both stores ask you to declare what data the app and its SDKs collect. Apple's App Privacy details are required for new apps and include data collected by third-party partners. Google requires the Data safety form for every app published on closed, open or production tracks, even apps that collect nothing, which is why it sits before testing in the checklist. If users can create an account, both stores require a way to delete it: Apple's guideline 5.1.1(v) asks for deletion inside the app, and Google requires an in-app path and a web link where deletion can be requested.",
           "Get an inventory of every SDK before filling in either form. The detail, including privacy manifests and regional law, is in [[/blogs/mobile-app-data-privacy|privacy and security before launch]].",
         ],
       },
       {
         heading: "Testing tracks: TestFlight and Play closed testing",
         body: [
-          "[[https://developer.apple.com/testflight/|TestFlight]] supports up to 100 internal testers from your team and up to 10,000 external testers through email invitations or public links. Internal testers must hold a role on your developer team. Before you can invite external testers, your first build must be approved by App Review for TestFlight.",
-          "On Google Play, internal testing is the quick loop for your team. Closed testing is the track that matters for launch on a new personal account: at least 12 testers opted in continuously for at least 14 days, then a production access application where you answer questions about the test and your readiness. If Google judges the testing insufficient, for example because fewer than 12 testers stayed opted in, the closed test may need to continue. When you upload a build, Play's [[https://support.google.com/googleplay/android-developer/answer/9842757|pre-launch report]] also runs automated checks on real devices for stability, compatibility, performance and accessibility, which is a free second opinion worth reading.",
+          "TestFlight supports up to 100 internal testers from your team and up to 10,000 external testers through email invitations or public links. Internal testers must hold a role on your developer team. Before you can invite external testers, your first build must be approved by App Review for TestFlight.",
+          "On Google Play, internal testing is the quick loop for your team. Closed testing is the track that matters for launch on a new personal account: at least 12 testers opted in continuously for at least 14 days, then a production access application where you answer questions about the test and your readiness. If Google judges the testing insufficient, for example because fewer than 12 testers stayed opted in, the closed test may need to continue. When you upload a build, Play's pre-launch report also runs automated checks on real devices for stability, compatibility, performance and accessibility, which is a free second opinion worth reading.",
         ],
         callout: {
           type: "note",
@@ -383,14 +383,14 @@ export const founderBuildPosts2: BlogPost[] = [
       {
         heading: "What reviewers need from you",
         body: [
-          "Apple's [[https://developer.apple.com/app-store/review/guidelines/|guideline 2.1]] asks that submissions be final, with no placeholder content, tested on-device, and with demo account details included and the back-end service switched on. Apps that crash are rejected. In practice that means four things: a reviewer login that will still work days later, review notes that explain any feature that needs hardware, a location or a paid plan to see, servers that stay up and unchanged while the review is pending, and no \"coming soon\" screens. If your app needs a custom backend, the [[/blogs/mobile-app-backend-development|mobile backend guide]] explains what has to be running for reviewers to get past sign-in.",
+          "Apple's guideline 2.1 asks that submissions be final, with no placeholder content, tested on-device, and with demo account details included and the back-end service switched on. Apps that crash are rejected. In practice that means four things: a reviewer login that will still work days later, review notes that explain any feature that needs hardware, a location or a paid plan to see, servers that stay up and unchanged while the review is pending, and no \"coming soon\" screens. If your app needs a custom backend, the [[/blogs/mobile-app-backend-development|mobile backend guide]] explains what has to be running for reviewers to get past sign-in.",
           "If Apple rejects the build, read the cited guideline, fix that issue and resubmit, and use the review notes to explain anything the reviewer may have missed. Apple also offers an expedited review for critical bug fixes or an event you are directly associated with, which is worth knowing about for a launch tied to a date.",
         ],
       },
       {
         heading: "Release choices for a first launch",
         body: [
-          "The gradual rollout tools you may have read about are update tools. Google states that [[https://support.google.com/googleplay/android-developer/answer/6346149|staged rollouts can only be used for app updates, not when publishing an app for the first time]]. Apple's [[https://developer.apple.com/help/app-store-connect/update-your-app/release-a-version-update-in-phases/|phased release]] is documented for version updates, rolling out over seven days to users with automatic updates on. So v1 reaches everyone in your chosen countries at once.",
+          "The gradual rollout tools you may have read about are update tools. Google states that staged rollouts can only be used for app updates, not when publishing an app for the first time. Apple's phased release is documented for version updates, rolling out over seven days to users with automatic updates on. So v1 reaches everyone in your chosen countries at once.",
         ],
         table: {
           headers: ["Choice", "What it does on a first release", "When to use it"],
@@ -444,8 +444,8 @@ export const founderBuildPosts2: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Apple: [[https://developer.apple.com/programs/whats-included/|Apple Developer Program]]; [[https://developer.apple.com/help/app-store-connect/reference/screenshot-specifications|Screenshot specifications]]; [[https://developer.apple.com/help/app-store-connect/reference/app-information/platform-version-information|Platform version information]]; [[https://developer.apple.com/app-store/review/guidelines/|App Review Guidelines]]; [[https://developer.apple.com/distribute/app-review/|App Review]]; [[https://developer.apple.com/testflight/|TestFlight]]; [[https://developer.apple.com/app-store/app-privacy-details/|App Privacy details]]; [[https://developer.apple.com/help/app-store-connect/update-your-app/release-a-version-update-in-phases/|Release a version update in phases]]; [[https://developer.apple.com/news/upcoming-requirements/|Upcoming requirements]].",
-          "Google: [[https://support.google.com/googleplay/android-developer/answer/14151465|Testing requirements for new personal developer accounts]]; [[https://support.google.com/googleplay/android-developer/answer/9859751|Review times and managed publishing]]; [[https://support.google.com/googleplay/android-developer/answer/9866151|Preview assets]]; [[https://support.google.com/googleplay/android-developer/answer/9842757|Pre-launch reports]]; [[https://support.google.com/googleplay/android-developer/answer/6346149|Staged rollouts]]; [[https://support.google.com/googleplay/android-developer/answer/10787469|Data safety section]]; [[https://support.google.com/googleplay/android-developer/answer/13327111|Account deletion requirements]]; [[https://developer.android.com/google/play/requirements/target-sdk|Target API level requirements]].",
+          "Apple: Apple Developer Program; Screenshot specifications; Platform version information; App Review Guidelines; App Review; TestFlight; App Privacy details; Release a version update in phases; Upcoming requirements.",
+          "Google: Testing requirements for new personal developer accounts; Review times and managed publishing; Preview assets; Pre-launch reports; Staged rollouts; Data safety section; Account deletion requirements; Target API level requirements.",
           "Accessed 14 October 2026. Store fees, asset specifications, review times and policy deadlines change; check the current pages before you submit.",
         ],
       },

@@ -135,7 +135,7 @@ export const auPortalPosts: BlogPost[] = [
           "So for half the year Brisbane and Sydney are an hour apart, and for the other half they are the same. Online services, telehealth and tours that sell interstate are especially exposed.",
         ],
         checklist: [
-          "Store each booking as a UTC timestamp plus the IANA time zone of the venue or service, such as Australia/Sydney, Australia/Brisbane, Australia/Adelaide or Australia/Perth ([[https://www.iana.org/time-zones|IANA]]).",
+          "Store each booking as a UTC timestamp plus the IANA time zone of the venue or service, such as Australia/Sydney, Australia/Brisbane, Australia/Adelaide or Australia/Perth.",
           "Display times in the venue's zone for in-person services, and in the customer's zone for online services, with the zone shown.",
           "Recalculate reminders from stored times, not from text.",
           "Test bookings that cross the daylight saving changes in April and October.",
@@ -146,7 +146,7 @@ export const auPortalPosts: BlogPost[] = [
         heading: "Confirmations, reminders and notifications",
         body: [
           "Clear communication reduces no-shows and calls. For channel and timing patterns, see [[/blogs/mobile-app-push-notifications|push notification design]]. Send a confirmation immediately, with the service, time, location or link, what to bring, the cancellation policy and how to change the booking. Send reminders at intervals that suit the service, and notify staff of new, changed and cancelled bookings.",
-          "**Spam Act.** Under the Spam Act, purely factual messages, such as a reminder of an existing appointment with no promotional content, are treated differently from commercial messages: they do not need consent or an unsubscribe facility, but must identify the sender ([[https://www.acma.gov.au/avoid-sending-spam|ACMA]]). Add a promotion to the reminder and it is likely to become a commercial message that needs consent and an unsubscribe facility. Keep reminders factual and send marketing separately to people who have agreed to it.",
+          "**Spam Act.** Under the Spam Act, purely factual messages, such as a reminder of an existing appointment with no promotional content, are treated differently from commercial messages: they do not need consent or an unsubscribe facility, but must identify the sender. Add a promotion to the reminder and it is likely to become a commercial message that needs consent and an unsubscribe facility. Keep reminders factual and send marketing separately to people who have agreed to it.",
         ],
       },
       {
@@ -164,14 +164,14 @@ export const auPortalPosts: BlogPost[] = [
         ],
         callout: {
           type: "note",
-          text: "Since 9 November 2023, unfair terms in standard form consumer and small business contracts can attract penalties, not just be declared void ([[https://www.accc.gov.au/consumers/buying-products-and-services/contracts|ACCC]]). Booking terms are usually standard form contracts. Consumer guarantees under the Australian Consumer Law also apply to services, so a cancellation policy cannot remove a customer's rights if you fail to deliver.",
+          text: "Since 9 November 2023, unfair terms in standard form consumer and small business contracts can attract penalties, not just be declared void. Booking terms are usually standard form contracts. Consumer guarantees under the Australian Consumer Law also apply to services, so a cancellation policy cannot remove a customer's rights if you fail to deliver.",
         },
       },
       {
         heading: "Payments and deposits",
         body: [
           "Not every booking needs payment up front. Deposits suit high-value or high no-show services; full prepayment suits classes, tours and events; pay-on-the-day suits many clinics and trades. Where you take money, integrate with an established payment provider so card details never touch your servers.",
-          "**Surcharging.** The Reserve Bank decided in March 2026 to remove surcharges on eftpos, Mastercard and Visa debit, prepaid and credit cards from 1 October 2026, and the RBA reports that American Express and UnionPay also removed surcharging from 1 October 2026, and PayPal from 5 October 2026, by their own decision rather than RBA regulation; buy now pay later and other methods remain under review ([[https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/faqs/|RBA FAQs]]; [[https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/executive-summary.html|RBA]]). Remove card surcharge lines for those networks and build costs into your prices.",
+          "**Surcharging.** The Reserve Bank decided in March 2026 to remove surcharges on eftpos, Mastercard and Visa debit, prepaid and credit cards from 1 October 2026, and the RBA reports that American Express and UnionPay also removed surcharging from 1 October 2026, and PayPal from 5 October 2026, by their own decision rather than RBA regulation; buy now pay later and other methods remain under review. Remove card surcharge lines for those networks and build costs into your prices.",
           "Design refunds and partial refunds into the system, and reconcile payments with bookings and with your accounting software. For payment UX and security, see [[/blogs/mobile-app-payments|designing a secure payment experience]].",
         ],
       },
@@ -198,9 +198,9 @@ export const auPortalPosts: BlogPost[] = [
       {
         heading: "Security, privacy and accessibility",
         body: [
-          "**Privacy.** Health service providers are covered by the Privacy Act regardless of turnover, and many other businesses are covered by turnover or activity ([[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/small-business|OAIC]]). Booking data can reveal sensitive information. Collect the minimum, restrict staff access by role, keep notes out of notifications, and have a breach response plan. Health service providers reported the most notifiable data breaches of any sector in 2025 ([[https://www.oaic.gov.au/news/media-centre/data-breach-notifications-increase-to-all-time-high-in-2025,-new-ndb-stats-show|OAIC]]).",
+          "**Privacy.** Health service providers are covered by the Privacy Act regardless of turnover, and many other businesses are covered by turnover or activity. Booking data can reveal sensitive information. Collect the minimum, restrict staff access by role, keep notes out of notifications, and have a breach response plan. Health service providers reported the most notifiable data breaches of any sector in 2025.",
           "**Security.** Use MFA for staff accounts, rate-limit booking and login endpoints to stop abuse, validate every input on the server and keep dependencies patched. See [[/blogs/secure-web-application-development-australia|building a secure customer-facing web application]].",
-          "**Accessibility and mobile.** Most bookings happen on phones. Make the date and time picker usable with a keyboard and screen reader, provide a list alternative to calendar grids, keep targets large enough (WCAG 2.2 adds a minimum target size criterion) and avoid time limits that rush people ([[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C]]). See [[/blogs/website-accessibility-australia|website accessibility in Australia]].",
+          "**Accessibility and mobile.** Most bookings happen on phones. Make the date and time picker usable with a keyboard and screen reader, provide a list alternative to calendar grids, keep targets large enough (WCAG 2.2 adds a minimum target size criterion) and avoid time limits that rush people. See [[/blogs/website-accessibility-australia|website accessibility in Australia]].",
         ],
       },
       {
@@ -245,7 +245,7 @@ export const auPortalPosts: BlogPost[] = [
           "**Availability and capacity:** departures, seats, minimum numbers to run, and resource limits such as guides and vehicles.",
           "**Pricing:** seasonal and group pricing, child and concession rates, packages, and clear total prices.",
           "**Cancellations and weather:** clear rules for customer cancellations and operator cancellations, consistent with consumer law.",
-          "**Distribution:** connect to channel managers and online travel agents so availability stays in sync; the Australian Tourism Data Warehouse distributes operator listings to state tourism websites and other distributors ([[https://data.gov.au/data/dataset/927d00f3-e64c-4331-9bae-52b4f64d2fcb|data.gov.au]]).",
+          "**Distribution:** connect to channel managers and online travel agents so availability stays in sync; the Australian Tourism Data Warehouse distributes operator listings to state tourism websites and other distributors.",
           "**Customer communication:** itinerary details, meeting points and changes sent in factual messages, in the customer's time zone.",
           "See also [[/blogs/hospitality-software-development-australia|hospitality software development]].",
         ],
@@ -253,9 +253,9 @@ export const auPortalPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "**Consumer law and payments:** [[https://www.accc.gov.au/media-release/businesses-urged-to-remove-unfair-contract-terms-ahead-of-law-changes|ACCC, businesses urged to remove unfair contract terms]]; [[https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/executive-summary.html|RBA, review of merchant card payment costs and surcharging: conclusions]]; [[https://www.acma.gov.au/avoid-sending-spam|ACMA, avoid sending spam]].",
-          "**Privacy and accessibility:** [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/small-business|OAIC, small business]]; [[https://www.oaic.gov.au/news/media-centre/data-breach-notifications-increase-to-all-time-high-in-2025,-new-ndb-stats-show|OAIC, NDB statistics 2025]]; [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C, what's new in WCAG 2.2]].",
-          "**Time:** [[https://www.iana.org/time-zones|IANA time zone database]].",
+          "**Consumer law and payments:** ACCC, businesses urged to remove unfair contract terms; RBA, review of merchant card payment costs and surcharging: conclusions; ACMA, avoid sending spam.",
+          "**Privacy and accessibility:** OAIC, small business; OAIC, NDB statistics 2025; W3C, what's new in WCAG 2.2.",
+          "**Time:** IANA time zone database.",
           "The scenarios, release plan and example are ours. ACCC and ACMA points are summarised from official guidance and may change; check the current position before relying on them. Nothing here is legal advice or ZSpace client data.",
         ],
       },
@@ -380,7 +380,7 @@ export const auPortalPosts: BlogPost[] = [
           "**Business customers:** single sign-on through their identity provider when they require it.",
           "**Account recovery:** as strong as sign-in. Recovery flows are a common route to account takeover.",
           "**Sessions:** sensible time-outs, sign-out everywhere, and alerts for new devices or changed details.",
-          "**Accessible authentication:** WCAG 2.2 success criterion 3.3.8 asks that sign-in not depend on a cognitive function test, such as remembering or transcribing, without an alternative; allowing password managers and paste helps ([[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C]]).",
+          "**Accessible authentication:** WCAG 2.2 success criterion 3.3.8 asks that sign-in not depend on a cognitive function test, such as remembering or transcribing, without an alternative; allowing password managers and paste helps.",
         ],
       },
       {
@@ -427,8 +427,8 @@ export const auPortalPosts: BlogPost[] = [
         heading: "Privacy and security",
         body: [
           "A portal concentrates personal and commercial information behind one sign-in, so it needs a higher security bar than a brochure website.",
-          "**Privacy rights.** If your business is covered by the Privacy Act, APP 12 requires giving individuals access to the personal information you hold about them, subject to exceptions, and APP 13 covers correction ([[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-12-app-12-access-to-personal-information|OAIC]]). A portal that shows and lets customers update their details can handle many routine requests. You still need a process for the rest.",
-          "**Data breaches.** The Notifiable Data Breaches scheme requires notifying the OAIC and affected individuals of eligible data breaches. The OAIC received 1,205 notifications in 2025 ([[https://www.oaic.gov.au/news/media-centre/data-breach-notifications-increase-to-all-time-high-in-2025,-new-ndb-stats-show|OAIC]]). Logging, alerting and an incident plan make it possible to assess a suspected breach quickly.",
+          "**Privacy rights.** If your business is covered by the Privacy Act, APP 12 requires giving individuals access to the personal information you hold about them, subject to exceptions, and APP 13 covers correction. A portal that shows and lets customers update their details can handle many routine requests. You still need a process for the rest.",
+          "**Data breaches.** The Notifiable Data Breaches scheme requires notifying the OAIC and affected individuals of eligible data breaches. The OAIC received 1,205 notifications in 2025. Logging, alerting and an incident plan make it possible to assess a suspected breach quickly.",
           "**Security baseline.** Authorisation checks on every request (the most common web application weakness is broken access control), secure file delivery, rate limiting, input validation, encryption in transit and patched dependencies. See [[/blogs/secure-web-application-development-australia|building a secure customer-facing web application]].",
         ],
       },
@@ -507,9 +507,9 @@ export const auPortalPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "**Privacy:** [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-12-app-12-access-to-personal-information|OAIC, APP guidelines chapter 12]]; [[https://www.oaic.gov.au/news/media-centre/data-breach-notifications-increase-to-all-time-high-in-2025,-new-ndb-stats-show|OAIC, NDB statistics 2025]].",
-          "**Accessibility and security:** [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C, what's new in WCAG 2.2]]; [[https://top10.owasp.org/2025/0x00_2025-Introduction|OWASP Top 10:2025]].",
-          "**Payments:** [[https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/executive-summary.html|RBA, surcharging conclusions]].",
+          "**Privacy:** OAIC, APP guidelines chapter 12; OAIC, NDB statistics 2025.",
+          "**Accessibility and security:** W3C, what's new in WCAG 2.2; OWASP Top 10:2025.",
+          "**Payments:** RBA, surcharging conclusions.",
           "The task-first method, release plan and example are ours. Nothing here is legal advice or ZSpace client data.",
         ],
       },
@@ -612,8 +612,8 @@ export const auPortalPosts: BlogPost[] = [
         heading: "GST, tax invoices and Peppol",
         body: [
           "**GST display.** Trade buyers usually expect prices excluding GST, but the basis must be obvious on product pages, in the cart and at checkout, and totals must match the tax invoice to the cent. Check how your ERP rounds GST (per line or per invoice) and make the portal match.",
-          "**Tax invoices.** The ATO's tax invoice requirements include that the document is intended to be a tax invoice, the seller's identity and ABN, the issue date, a description with quantity and price, the GST amount or a statement that the total includes GST, and the extent each sale is taxable; for sales of $1,000 or more, the buyer's identity or ABN must also be shown. If a customer asks for a tax invoice, you must provide one within 28 days, unless the sale is $82.50 or less including GST ([[https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/tax-invoices|ATO]]). Generate invoices from the ERP or accounting system so the portal shows the same document your books hold.",
-          "**Peppol eInvoicing.** Peppol uses the ABN as the business identifier in Australia, and businesses connect through an accredited access point provider ([[https://www.ato.gov.au/businesses-and-organisations/einvoicing/about-peppol/identifying-australian-businesses-on-the-peppol-network|ATO]]). Many accounting platforms support it. It is voluntary for business-to-business trade, but useful for customers who prefer it and for government customers, where Commonwealth agencies apply faster payment terms to Peppol invoices.",
+          "**Tax invoices.** The ATO's tax invoice requirements include that the document is intended to be a tax invoice, the seller's identity and ABN, the issue date, a description with quantity and price, the GST amount or a statement that the total includes GST, and the extent each sale is taxable; for sales of $1,000 or more, the buyer's identity or ABN must also be shown. If a customer asks for a tax invoice, you must provide one within 28 days, unless the sale is $82.50 or less including GST. Generate invoices from the ERP or accounting system so the portal shows the same document your books hold.",
+          "**Peppol eInvoicing.** Peppol uses the ABN as the business identifier in Australia, and businesses connect through an accredited access point provider. Many accounting platforms support it. It is voluntary for business-to-business trade, but useful for customers who prefer it and for government customers, where Commonwealth agencies apply faster payment terms to Peppol invoices.",
         ],
       },
       {
@@ -663,13 +663,13 @@ export const auPortalPosts: BlogPost[] = [
         heading: "Customer-specific terms, credit and payment",
         body: [
           "Trade customers often buy on account with payment terms and credit limits, while new or small customers may pay by card. Support both: show terms and available credit, block or flag orders over the limit, and offer card payment where appropriate. Card surcharges on eftpos, Visa and Mastercard were removed from 1 October 2026 under the RBA's decision, so build card costs into prices or terms.",
-          "**Unfair contract terms.** If trade terms are standard form and some customers are small businesses, the unfair contract terms regime applies, and since 9 November 2023 unfair terms can attract penalties ([[https://www.accc.gov.au/consumers/buying-products-and-services/contracts|ACCC]]). Review terms such as unilateral variation, broad indemnities and automatic renewals with a lawyer before customers accept them through the portal.",
+          "**Unfair contract terms.** If trade terms are standard form and some customers are small businesses, the unfair contract terms regime applies, and since 9 November 2023 unfair terms can attract penalties. Review terms such as unilateral variation, broad indemnities and automatic renewals with a lawyer before customers accept them through the portal.",
         ],
       },
       {
         heading: "Order tracking and freight across Australia",
         body: [
-          "Distance shapes B2B commerce in Australia. Show realistic delivery estimates by location, including regional and remote areas, and make freight costs clear before checkout. Integrate with your carriers for labels and tracking where you have accounts: Australia Post's shipping and tracking APIs, for example, are available to businesses with eParcel or StarTrack contracts ([[https://developers.auspost.com.au/|Australia Post]]). Offer pick-up from your warehouse where customers prefer it.",
+          "Distance shapes B2B commerce in Australia. Show realistic delivery estimates by location, including regional and remote areas, and make freight costs clear before checkout. Integrate with your carriers for labels and tracking where you have accounts: Australia Post's shipping and tracking APIs, for example, are available to businesses with eParcel or StarTrack contracts. Offer pick-up from your warehouse where customers prefer it.",
           "After the order, show status from the ERP or warehouse system, tracking links per consignment, and proof of delivery where available. See [[/blogs/ecommerce-order-tracking|order tracking]] for patterns.",
         ],
       },
@@ -746,9 +746,9 @@ export const auPortalPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "**Tax and invoicing:** [[https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/tax-invoices|ATO, tax invoices]]; [[https://www.ato.gov.au/businesses-and-organisations/einvoicing/about-peppol/identifying-australian-businesses-on-the-peppol-network|ATO, Peppol]].",
-          "**Consumer law and payments:** [[https://www.accc.gov.au/media-release/businesses-urged-to-remove-unfair-contract-terms-ahead-of-law-changes|ACCC, businesses urged to remove unfair contract terms]]; [[https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/executive-summary.html|RBA, surcharging conclusions]].",
-          "**Freight:** [[https://developers.auspost.com.au/|Australia Post developer centre]].",
+          "**Tax and invoicing:** ATO, tax invoices; ATO, Peppol.",
+          "**Consumer law and payments:** ACCC, businesses urged to remove unfair contract terms; RBA, surcharging conclusions.",
+          "**Freight:** Australia Post developer centre.",
           "ATO and ACCC points are summarised from official guidance and may change; check the current position before relying on them. The pricing exercise, release plan and example are ours. Nothing here is tax or legal advice or ZSpace client data.",
         ],
       },

@@ -101,7 +101,7 @@ export const auCloudDeliveryPosts: BlogPost[] = [
       {
         heading: "Constraints to check",
         body: [
-          "Serverless functions have time, memory and payload limits; AWS documents a 900-second (15-minute) maximum timeout and memory from 128 MB to 10,240 MB for Lambda ([[https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html|AWS]]). Cold starts affect latency-sensitive endpoints. Kubernetes needs regular version upgrades, security configuration, networking and observability skills. VMs need patching and configuration management, ideally through [[/blogs/infrastructure-as-code|infrastructure as code]]. Check that each service is available in the Australian region you need.",
+          "Serverless functions have time, memory and payload limits; AWS documents a 900-second (15-minute) maximum timeout and memory from 128 MB to 10,240 MB for Lambda. Cold starts affect latency-sensitive endpoints. Kubernetes needs regular version upgrades, security configuration, networking and observability skills. VMs need patching and configuration management, ideally through [[/blogs/infrastructure-as-code|infrastructure as code]]. Check that each service is available in the Australian region you need.",
         ],
       },
       {
@@ -228,8 +228,8 @@ export const auCloudDeliveryPosts: BlogPost[] = [
         table: {
           headers: ["Tool", "Approach", "Notes"],
           rows: [
-            ["**Terraform**", "Declarative HCL, many providers", "Widely used; licensed under the Business Source Licence since 2023 ([[https://developer.hashicorp.com/terraform/intro|HashiCorp]])"],
-            ["**OpenTofu**", "Open-source fork of Terraform", "Community-governed ([[https://opentofu.org/|OpenTofu]])"],
+            ["**Terraform**", "Declarative HCL, many providers", "Widely used; licensed under the Business Source Licence since 2023"],
+            ["**OpenTofu**", "Open-source fork of Terraform", "Community-governed"],
             ["**AWS CloudFormation / CDK**", "AWS-native templates or code", "Deep AWS integration"],
             ["**Azure Bicep**", "Azure-native declarative language", "Deep Azure integration"],
             ["**Pulumi**", "General-purpose languages", "Familiar to application developers"],
@@ -347,7 +347,7 @@ export const auCloudDeliveryPosts: BlogPost[] = [
       {
         heading: "How should software teams manage secrets?",
         body: [
-          "**Keep secrets out of code, chat and documents; store them in a dedicated secret store with access control and audit logs; prefer short-lived credentials issued through workload identity (for example OIDC from CI to the cloud) over long-lived keys; rotate what remains; scan repositories and builds for leaks; and have a tested plan for revoking a leaked key fast.** The OWASP Secrets Management Cheat Sheet is a good reference ([[https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html|OWASP]]).",
+          "**Keep secrets out of code, chat and documents; store them in a dedicated secret store with access control and audit logs; prefer short-lived credentials issued through workload identity (for example OIDC from CI to the cloud) over long-lived keys; rotate what remains; scan repositories and builds for leaks; and have a tested plan for revoking a leaked key fast.** The OWASP Secrets Management Cheat Sheet is a good reference.",
           "This guide is for developers and engineering leads. It is educational; ZSpace Labs does not provide security services. For API protection more broadly, see [[/blogs/api-security-best-practices|API security best practices]].",
         ],
       },
@@ -378,7 +378,7 @@ export const auCloudDeliveryPosts: BlogPost[] = [
       {
         heading: "Secret stores and access",
         body: [
-          "Use your cloud provider's secret manager or a dedicated vault. Separate secrets per environment, grant applications and people only what they need, log every access, and inject secrets at runtime rather than baking them into images. Configuration that is not secret can stay in environment variables, following the separation described by the Twelve-Factor App ([[https://12factor.net/config|12factor.net]]). Never ship server secrets in mobile or browser code; anything on the device should be considered public.",
+          "Use your cloud provider's secret manager or a dedicated vault. Separate secrets per environment, grant applications and people only what they need, log every access, and inject secrets at runtime rather than baking them into images. Configuration that is not secret can stay in environment variables, following the separation described by the Twelve-Factor App. Never ship server secrets in mobile or browser code; anything on the device should be considered public.",
         ],
       },
       {
@@ -398,7 +398,7 @@ export const auCloudDeliveryPosts: BlogPost[] = [
       {
         heading: "Scanning and prevention",
         body: [
-          "Turn on secret scanning in your source control platform; GitHub, for example, scans repositories for known secret formats and can block pushes containing them ([[https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning|GitHub Docs]]). Add pre-commit hooks, scan CI logs and container images, and mask secrets in logging. Review third-party integrations' access regularly.",
+          "Turn on secret scanning in your source control platform; GitHub, for example, scans repositories for known secret formats and can block pushes containing them. Add pre-commit hooks, scan CI logs and container images, and mask secrets in logging. Review third-party integrations' access regularly.",
         ],
       },
       {
@@ -525,7 +525,7 @@ export const auCloudDeliveryPosts: BlogPost[] = [
         heading: "Mechanics that make it work",
         body: [],
         checklist: [
-          "**Readiness and liveness checks** so traffic only reaches ready instances; see the Kubernetes Deployment documentation ([[https://kubernetes.io/docs/concepts/workloads/controllers/deployment/|Kubernetes]]).",
+          "**Readiness and liveness checks** so traffic only reaches ready instances; see the Kubernetes Deployment documentation.",
           "**Graceful shutdown and connection draining** so in-flight requests finish.",
           "**Stateless services** with sessions in a shared store.",
           "**Backwards-compatible APIs and message formats** during the overlap.",
@@ -542,7 +542,7 @@ export const auCloudDeliveryPosts: BlogPost[] = [
       {
         heading: "Blue-green and canary in practice",
         body: [
-          "Blue-green suits services where a quick full switch and instant rollback matter, as described by Martin Fowler ([[https://martinfowler.com/bliki/BlueGreenDeployment.html|BlueGreenDeployment]]). Canary suits risky changes with enough traffic to detect problems early ([[https://martinfowler.com/bliki/CanaryRelease.html|CanaryRelease]]). For both, compare the new version's error rate, latency and business metrics, such as checkout completion, with the old version before going further. See [[/blogs/application-monitoring-observability|monitoring and observability]].",
+          "Blue-green suits services where a quick full switch and instant rollback matter, as described by Martin Fowler. Canary suits risky changes with enough traffic to detect problems early. For both, compare the new version's error rate, latency and business metrics, such as checkout completion, with the old version before going further. See [[/blogs/application-monitoring-observability|monitoring and observability]].",
         ],
       },
       {

@@ -150,7 +150,7 @@ export const auCommercePosts2: BlogPost[] = [
         heading: "Recommendations and personalisation, without losing trust",
         body: [
           "Recommendations work when they help a shopper decide, not when they just repeat what they have already seen. Useful placements include ‘complete the set’ on product pages, replenishment prompts for consumables and size-aware suggestions in fashion. The generic depth on models, cold start and measurement is in our guides to [[/blogs/ai-product-recommendations|AI product recommendations]] and [[/blogs/ecommerce-personalization|ecommerce personalisation]].",
-          "**Privacy:** personalisation uses customer data, so Australian privacy obligations apply. We have not summarised the Privacy Act or the Australian Privacy Principles here; check the [[https://www.oaic.gov.au/|OAIC's guidance]] for your business and take advice where needed. Our general guide to [[/blogs/ecommerce-privacy-customer-data|ecommerce privacy and customer data]] covers the design side.",
+          "**Privacy:** personalisation uses customer data, so Australian privacy obligations apply. We have not summarised the Privacy Act or the Australian Privacy Principles here; check the OAIC's guidance for your business and take advice where needed. Our general guide to [[/blogs/ecommerce-privacy-customer-data|ecommerce privacy and customer data]] covers the design side.",
           "**Practical rules we apply:** collect only data you will use, record the consent basis for marketing personalisation, avoid inferring sensitive traits (health, financial hardship, pregnancy) for targeting, explain in plain language why a product is being recommended where it matters, and give customers a way to reset or change preferences. If AI is making decisions about customers, our guide to [[/blogs/ai-governance-australia|AI governance in Australia]] covers the policy and oversight side.",
           "**Merchandiser control:** keep the ability to pin, exclude and boost products. Algorithms do not know that a product is about to be discontinued, that a supplier is late or that a promotion has a margin floor.",
         ],
@@ -184,7 +184,7 @@ export const auCommercePosts2: BlogPost[] = [
         heading: "AI-written product content: faster drafts, human sign-off",
         body: [
           "Language models are good at turning structured product data into readable copy, and at producing variants for feeds, marketplaces and alt text. They are also capable of inventing a material, a certification or a performance claim that sounds plausible.",
-          "**The legal frame:** the Australian Consumer Law applies to what you publish, however it was drafted. The ACCC's guidance on online reviews says businesses should be transparent about commercial relationships, should not post misleading reviews, and should not edit or omit negative reviews in a misleading way. Section 29 of the ACL prohibits false or misleading testimonials. If you use AI to summarise reviews, the summary must represent them fairly. This is general information, not legal advice; check the [[https://www.accc.gov.au/business/advertising-and-promotions/online-product-and-service-reviews|ACCC's guidance]] and an adviser for your situation.",
+          "**The legal frame:** the Australian Consumer Law applies to what you publish, however it was drafted. The ACCC's guidance on online reviews says businesses should be transparent about commercial relationships, should not post misleading reviews, and should not edit or omit negative reviews in a misleading way. Section 29 of the ACL prohibits false or misleading testimonials. If you use AI to summarise reviews, the summary must represent them fairly. This is general information, not legal advice; check the ACCC's guidance and an adviser for your situation.",
           "**A review workflow that holds up:** generate from verified product data only (not from competitor pages), mark every factual claim for checking, keep a record of who approved each description, and write in Australian English. Our [[/blogs/ai-content-operations|AI content operations]] guide covers the workflow in more depth.",
         ],
         checklist: [
@@ -206,7 +206,7 @@ export const auCommercePosts2: BlogPost[] = [
             ["Agentic Commerce Protocol and Instant Checkout in ChatGPT", "OpenAI with Stripe", "29 Sep 2025", "Launched for US users and US Etsy sellers. Reported in March 2026 to have been scaled back towards merchants' own checkouts (secondary reports)."],
             ["Agent Payments Protocol (AP2)", "Google Cloud with payment partners", "Sep 2025", "An open protocol using signed ‘mandates’. No Australian rollout date found."],
             ["Universal Commerce Protocol (UCP)", "Shopify and Google", "11 Jan 2026", "Announced as an open standard. The Shopify announcement did not mention Australia."],
-            ["UCP-powered checkout on Google", "Google", "20 May 2026 (announced); June 2026 (Australia)", "Reported live in Australia from June 2026 for single-item purchases in Search, AI Mode and Gemini with launch retailers ([[https://www.ragtrader.com.au/news/the-iconic-kogan-test-google-s-agentic-ai-checkout|Ragtrader]]). Self-serve Merchant Center onboarding: US first, Australia 'next year' ([[https://support.google.com/merchants/answer/16992327|Google Merchant Center Help]])."],
+            ["UCP-powered checkout on Google", "Google", "20 May 2026 (announced); June 2026 (Australia)", "Reported live in Australia from June 2026 for single-item purchases in Search, AI Mode and Gemini with launch retailers. Self-serve Merchant Center onboarding: US first, Australia 'next year'."],
             ["Merchant Center AI performance insights", "Google", "20 May 2026", "Announced as rolling out in Australia ‘in the coming months’."],
           ],
         },
@@ -318,11 +318,11 @@ export const auCommercePosts2: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "**Australian shopper data:** [[https://auspost.com.au/business/ecommerce/ecommerce-report|Australia Post eCommerce Report 2026]] (released 18 March 2026); [[https://www.abs.gov.au/about/cessation-retail-business-survey-and-retail-trade-publication|ABS, cessation of the Retail Trade publication]].",
-          "**Agentic commerce:** [[https://www.shopify.com/news/ai-commerce-at-scale|Shopify, AI commerce at scale (UCP announcement, 11 January 2026)]]; [[https://blog.google/products-and-platforms/products/shopping/shopping-updates-google-marketing-live|Google, shopping updates from Google Marketing Live (20 May 2026)]].",
-          "**Structured data:** [[https://developers.google.com/search/docs/appearance/structured-data/product|Google Search Central, product structured data]].",
-          "**Consumer law and payments:** [[https://www.accc.gov.au/business/advertising-and-promotions/online-product-and-service-reviews|ACCC, online product and service reviews]]; [[https://www.allens.com.au/insights-news/insights/2026/07/australias-new-unfair-trading-practices-regime-what-businesses-need-to-know/|Allens, unfair trading practices regime (July 2026)]]; [[https://hwlebsworth.com.au/parliament-passes-unfair-trading-practices-reforms-preparing-for-the-new-regime|HWL Ebsworth, unfair trading practices reforms]]; [[https://rba.gov.au/media-releases/2026/mr-26-10.html|RBA media release 2026-10 (31 March 2026)]].",
-          "**Privacy:** [[https://www.oaic.gov.au/|Office of the Australian Information Commissioner]].",
+          "**Australian shopper data:** Australia Post eCommerce Report 2026 (released 18 March 2026); ABS, cessation of the Retail Trade publication.",
+          "**Agentic commerce:** Shopify, AI commerce at scale (UCP announcement, 11 January 2026); Google, shopping updates from Google Marketing Live (20 May 2026).",
+          "**Structured data:** Google Search Central, product structured data.",
+          "**Consumer law and payments:** ACCC, online product and service reviews; Allens, unfair trading practices regime (July 2026); HWL Ebsworth, unfair trading practices reforms; RBA media release 2026-10 (31 March 2026).",
+          "**Privacy:** Office of the Australian Information Commissioner.",
           "Dates and availability change; re-check before relying on them. Nothing here is ZSpace client data, and nothing is legal advice.",
         ],
       },
@@ -507,7 +507,7 @@ export const auCommercePosts2: BlogPost[] = [
       {
         heading: "Accessible components: dialogs, menus and carousels",
         body: [
-          "Custom components cause a large share of accessibility failures because each one has to reproduce behaviour that native elements provide. The [[https://www.w3.org/WAI/ARIA/apg/|WAI-ARIA Authoring Practices Guide]] documents expected keyboard interaction and roles for common patterns. Use it as the specification for your component library, and prefer native elements wherever they exist.",
+          "Custom components cause a large share of accessibility failures because each one has to reproduce behaviour that native elements provide. The WAI-ARIA Authoring Practices Guide documents expected keyboard interaction and roles for common patterns. Use it as the specification for your component library, and prefer native elements wherever they exist.",
         ],
         table: {
           headers: ["Component", "What good looks like", "Common failure"],
@@ -628,9 +628,9 @@ export const auCommercePosts2: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "**Standards:** [[https://www.w3.org/TR/WCAG22/|W3C, Web Content Accessibility Guidelines (WCAG) 2.2]]; [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C WAI, What's New in WCAG 2.2]]; [[https://www.w3.org/WAI/tutorials/forms/|W3C WAI, forms tutorial]]; [[https://www.w3.org/WAI/ARIA/apg/|W3C WAI-ARIA Authoring Practices Guide]].",
-          "**Australian guidance and policy:** [[https://humanrights.gov.au/our-work/disability-rights/publications/guidelines-equal-access-digital-goods-and-services|Australian Human Rights Commission, Guidelines on equal access to digital goods and services (April 2025)]]; [[https://www.digital.gov.au/policy/digital-experience/digital-service-standard/criterion-3|Digital Transformation Agency, Digital Service Standard Criterion 3]].",
-          "**Case and statistics:** [[https://www.w3.org/WAI/business-case/archive/socog-case-study|W3C WAI, SOCOG case study]]; [[https://abs.gov.au/media-centre/media-releases/55-million-australians-have-disability|ABS, 5.5 million Australians have disability (4 July 2024)]].",
+          "**Standards:** W3C, Web Content Accessibility Guidelines (WCAG) 2.2; W3C WAI, What's New in WCAG 2.2; W3C WAI, forms tutorial; W3C WAI-ARIA Authoring Practices Guide.",
+          "**Australian guidance and policy:** Australian Human Rights Commission, Guidelines on equal access to digital goods and services (April 2025); Digital Transformation Agency, Digital Service Standard Criterion 3.",
+          "**Case and statistics:** W3C WAI, SOCOG case study; ABS, 5.5 million Australians have disability (4 July 2024).",
           "Requirements and guidance change; re-check before relying on them. Nothing here is ZSpace client data, and nothing is legal advice.",
         ],
       },

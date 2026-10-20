@@ -118,9 +118,9 @@ export const auHealthEducationPosts: BlogPost[] = [
           "Registered training organisations delivering nationally recognised training have obligations that shape their systems:",
         ],
         checklist: [
-          "**Unique Student Identifier (USI):** students undertaking nationally recognised training need a USI, which RTOs must verify before issuing qualifications, and ASQA says the USI must not appear on certificates or statements of attainment ([[https://www.asqa.gov.au/|ASQA]]).",
-          "**AVETMISS reporting:** RTOs report training activity data in the AVETMISS format to NCVER, so student, enrolment and outcome data must be captured in that structure ([[https://www.ncver.edu.au/|NCVER]]).",
-          "**Standards for RTOs 2025:** the revised Standards came into full effect on 1 July 2025 for ASQA-regulated RTOs; Western Australia's Training Accreditation Council has its own timing ([[https://www.asqa.gov.au/|ASQA]]).",
+          "**Unique Student Identifier (USI):** students undertaking nationally recognised training need a USI, which RTOs must verify before issuing qualifications, and ASQA says the USI must not appear on certificates or statements of attainment.",
+          "**AVETMISS reporting:** RTOs report training activity data in the AVETMISS format to NCVER, so student, enrolment and outcome data must be captured in that structure.",
+          "**Standards for RTOs 2025:** the revised Standards came into full effect on 1 July 2025 for ASQA-regulated RTOs; Western Australia's Training Accreditation Council has its own timing.",
         ],
         callout: {
           type: "note",
@@ -130,7 +130,7 @@ export const auHealthEducationPosts: BlogPost[] = [
       {
         heading: "Accessibility",
         body: [
-          "Learning platforms must work for learners with disability, and the Disability Discrimination Act applies to education and training providers. Test the platform against WCAG 2.2 ([[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C]]) and check course content as you publish it: captions and transcripts for video, accessible PDFs or HTML alternatives, meaningful link text, assessments that work with a keyboard and screen reader, and no unnecessary time limits. See [[/blogs/accessibility-testing-australia|digital accessibility testing]] and [[/blogs/website-accessibility-australia|website accessibility in Australia]].",
+          "Learning platforms must work for learners with disability, and the Disability Discrimination Act applies to education and training providers. Test the platform against WCAG 2.2 and check course content as you publish it: captions and transcripts for video, accessible PDFs or HTML alternatives, meaningful link text, assessments that work with a keyboard and screen reader, and no unnecessary time limits. See [[/blogs/accessibility-testing-australia|digital accessibility testing]] and [[/blogs/website-accessibility-australia|website accessibility in Australia]].",
         ],
       },
       {
@@ -182,8 +182,8 @@ export const auHealthEducationPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "**VET:** [[https://www.asqa.gov.au/|ASQA]]; [[https://www.ncver.edu.au/|NCVER (AVETMISS)]]; [[https://www.usi.gov.au/|Unique Student Identifier]].",
-          "**Accessibility:** [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C, what's new in WCAG 2.2]].",
+          "**VET:** ASQA; NCVER (AVETMISS); Unique Student Identifier.",
+          "**Accessibility:** W3C, what's new in WCAG 2.2.",
           "VET points were checked against ASQA, DEWR and NCVER guidance; check current requirements. Tables, checklists and example are ours. Nothing here is regulatory advice or ZSpace client data.",
         ],
       },
@@ -290,10 +290,10 @@ export const auHealthEducationPosts: BlogPost[] = [
       {
         heading: "Australian rules that shape the design",
         body: [
-          "**Medicare telehealth.** Some telehealth services are claimable under the MBS. For many non-referred GP services, the practitioner must have an established clinical relationship with the patient unless an exemption applies, and video and phone attendances are distinguished in item rules ([[https://www.mbsonline.gov.au/|MBS Online]]). These rules affect who can book which service and how sessions are recorded. Confirm current item descriptors and exemptions before designing eligibility flows; they change.",
-          "**Therapeutic goods.** The TGA lists telehealth enabling technology among software excluded from medical device regulation, subject to conditions, and clinical decision support software has a specific exemption with obligations such as notification ([[https://www.tga.gov.au/sites/default/files/2024-07/excluded-software.pdf|TGA]]). Features that diagnose, monitor or recommend treatment may be regulated. It is the manufacturer's responsibility to determine the status of its product.",
-          "**Privacy.** Health service providers are covered by the Privacy Act regardless of turnover, and health information is sensitive information with stronger protections ([[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/health-service-providers|OAIC]]). Health service providers reported the most notifiable data breaches of any sector in 2025 ([[https://www.oaic.gov.au/news/media-centre/data-breach-notifications-increase-to-all-time-high-in-2025,-new-ndb-stats-show|OAIC]]).",
-          "**Electronic prescribing.** Prescribing and dispensing software must meet the Australian Digital Health Agency's electronic prescribing conformance requirements, and conformance with the Healthcare Identifiers Service is a prerequisite ([[https://developer.digitalhealth.gov.au/|Australian Digital Health Agency]]). If your app needs prescriptions, integrate with conformant prescribing software rather than building your own.",
+          "**Medicare telehealth.** Some telehealth services are claimable under the MBS. For many non-referred GP services, the practitioner must have an established clinical relationship with the patient unless an exemption applies, and video and phone attendances are distinguished in item rules. These rules affect who can book which service and how sessions are recorded. Confirm current item descriptors and exemptions before designing eligibility flows; they change.",
+          "**Therapeutic goods.** The TGA lists telehealth enabling technology among software excluded from medical device regulation, subject to conditions, and clinical decision support software has a specific exemption with obligations such as notification. Features that diagnose, monitor or recommend treatment may be regulated. It is the manufacturer's responsibility to determine the status of its product.",
+          "**Privacy.** Health service providers are covered by the Privacy Act regardless of turnover, and health information is sensitive information with stronger protections. Health service providers reported the most notifiable data breaches of any sector in 2025.",
+          "**Electronic prescribing.** Prescribing and dispensing software must meet the Australian Digital Health Agency's electronic prescribing conformance requirements, and conformance with the Healthcare Identifiers Service is a prerequisite. If your app needs prescriptions, integrate with conformant prescribing software rather than building your own.",
         ],
         callout: {
           type: "note",
@@ -354,9 +354,9 @@ export const auHealthEducationPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "**Funding and regulation:** [[https://www.mbsonline.gov.au/|MBS Online]]; [[https://www.tga.gov.au/sites/default/files/2024-07/excluded-software.pdf|TGA, excluded software (guidance PDF)]]; [[https://developer.digitalhealth.gov.au/|Australian Digital Health Agency, developer centre]].",
-          "**Privacy:** [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/health-service-providers|OAIC, health service providers]]; [[https://www.oaic.gov.au/news/media-centre/data-breach-notifications-increase-to-all-time-high-in-2025,-new-ndb-stats-show|OAIC, NDB statistics 2025]]; [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/tracking-pixels-and-privacy-obligations|OAIC, tracking pixels and privacy obligations]].",
-          "**Accessibility:** [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C, what's new in WCAG 2.2]].",
+          "**Funding and regulation:** MBS Online; TGA, excluded software (guidance PDF); Australian Digital Health Agency, developer centre.",
+          "**Privacy:** OAIC, health service providers; OAIC, NDB statistics 2025; OAIC, tracking pixels and privacy obligations.",
+          "**Accessibility:** W3C, what's new in WCAG 2.2.",
           "MBS, TGA and ADHA points are summarised from official guidance; check current requirements. Checklists, tables and example are ours. Nothing here is clinical, legal or regulatory advice or ZSpace client data.",
         ],
       },
@@ -455,14 +455,14 @@ export const auHealthEducationPosts: BlogPost[] = [
         heading: "Standards: HL7 v2, FHIR and AU Core",
         body: [
           "**HL7 v2** messaging remains common for pathology results, referrals and system-to-system feeds in Australian healthcare. It is mature but varies by implementation, so expect to map and test each partner's messages.",
-          "**FHIR** provides RESTful APIs and resources for modern integrations. HL7 Australia's **AU Core** implementation guide, developed through the Sparked AU FHIR Accelerator, defines the data model and RESTful API interactions that set minimum expectations for recording, updating, searching and retrieving core health and administrative information in Australia ([[https://hl7.org.au/fhir/core|HL7 Australia, AU Core]]). Confirm which version and which profiles each partner supports.",
+          "**FHIR** provides RESTful APIs and resources for modern integrations. HL7 Australia's **AU Core** implementation guide, developed through the Sparked AU FHIR Accelerator, defines the data model and RESTful API interactions that set minimum expectations for recording, updating, searching and retrieving core health and administrative information in Australia. Confirm which version and which profiles each partner supports.",
           "**Vendor APIs.** Many practice systems offer their own APIs or partner programs. These usually decide what is possible, so check them first, along with any partner agreement, costs and approval process.",
         ],
       },
       {
         heading: "Healthcare identifiers and national services",
         body: [
-          "Under the Healthcare Identifiers Act 2010, the Healthcare Identifiers (HI) Service, operated by Services Australia, issues identifiers including the **IHI** (individuals), **HPI-I** (individual providers) and **HPI-O** (organisations) ([[https://www.servicesaustralia.gov.au/healthcare-identifier-hi-service-for-software-developers|Services Australia]]). Software accesses the service through a business-to-business gateway after licensing, and the Australian Digital Health Agency sets conformance requirements that must be met, with an Implementation Conformance Statement, before access ([[https://developer.digitalhealth.gov.au/|Australian Digital Health Agency]]).",
+          "Under the Healthcare Identifiers Act 2010, the Healthcare Identifiers (HI) Service, operated by Services Australia, issues identifiers including the **IHI** (individuals), **HPI-I** (individual providers) and **HPI-O** (organisations). Software accesses the service through a business-to-business gateway after licensing, and the Australian Digital Health Agency sets conformance requirements that must be met, with an Implementation Conformance Statement, before access.",
           "Clinical information systems must meet My Health Record conformance assessment requirements before connecting to My Health Record, and HI Service conformance is a prerequisite for electronic prescribing. Many organisations rely on conformant practice systems or integration partners rather than building these connections themselves. Plan conformance time into any roadmap that touches national services.",
         ],
       },
@@ -476,7 +476,7 @@ export const auHealthEducationPosts: BlogPost[] = [
           "Audit logs of who accessed, created, changed or sent records, through which system and when.",
           "Integration message logs with correlation IDs, protected and retained for a defined period.",
           "Alerts for unusual access patterns and integration failures.",
-          "Health information is sensitive information under the Privacy Act; see the OAIC's [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/health-service-providers|guidance for health service providers]].",
+          "Health information is sensitive information under the Privacy Act; see the OAIC's guidance for health service providers.",
         ],
       },
       {
@@ -535,9 +535,9 @@ export const auHealthEducationPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "**National services:** [[https://www.servicesaustralia.gov.au/healthcare-identifier-hi-service-for-software-developers|Services Australia, HI Service for software developers]]; [[https://developer.digitalhealth.gov.au/|Australian Digital Health Agency, developer centre]].",
-          "**Standards:** [[https://hl7.org.au/fhir/core|HL7 Australia, AU Core implementation guide]].",
-          "**Privacy:** [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/health-service-providers|OAIC, health service providers]].",
+          "**National services:** Services Australia, HI Service for software developers; Australian Digital Health Agency, developer centre.",
+          "**Standards:** HL7 Australia, AU Core implementation guide.",
+          "**Privacy:** OAIC, health service providers.",
           "Points are summarised from official guidance; versions and requirements change, so check current documentation. Tables, checklists and example are ours. Nothing here is legal, clinical or regulatory advice or ZSpace client data.",
         ],
       },

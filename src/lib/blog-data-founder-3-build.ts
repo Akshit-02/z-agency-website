@@ -23,14 +23,6 @@ import type { BlogPost } from "./blog-data";
  * (no primary source).
  */
 
-const CFA =
-  "https://www.gov.uk/government/publications/the-digital-data-and-technology-playbook/contracting-for-agile-guidance-note-html";
-const DDAT =
-  "https://www.gov.uk/government/publications/the-digital-data-and-technology-playbook/the-digital-data-and-technology-playbook-html";
-const DOS = "https://www.gov.uk/guidance/how-to-pay-for-digital-outcomes-and-specialists-services";
-const PLANNING = "https://www.gov.uk/service-manual/agile-delivery/planning-agile";
-const PRIORITIES = "https://www.gov.uk/service-manual/agile-delivery/deciding-on-priorities";
-const STORIES = "https://www.gov.uk/service-manual/agile-delivery/writing-user-stories";
 
 export const founderBuildPosts3: BlogPost[] = [
   {
@@ -153,7 +145,7 @@ export const founderBuildPosts3: BlogPost[] = [
       {
         heading: "What government contracting guidance says",
         body: [
-          "The most useful public source on this question is the UK government's [[" + CFA + "|Contracting for Agile guidance note]], a companion to its Digital, Data and Technology (DDaT) Playbook, last updated on 20 June 2023. It is written for public-sector buyers, so treat it as a set of tested principles rather than rules for your own contract. The points that matter most for a private web or app build:",
+          "The most useful public source on this question is the UK government's Contracting for Agile guidance note, a companion to its Digital, Data and Technology (DDaT) Playbook, last updated on 20 June 2023. It is written for public-sector buyers, so treat it as a set of tested principles rather than rules for your own contract. The points that matter most for a private web or app build:",
         ],
         checklist: [
           "**Scope is the variable.** Agile delivery constrains time and cost, and \"the scope becomes the variable\" (para 2.5). A contract that fixes scope, time and cost all at once works against the method.",
@@ -193,7 +185,7 @@ export const founderBuildPosts3: BlogPost[] = [
       {
         heading: "Where the hard cap idea comes from",
         body: [
-          "The hard-cap meaning is the one the UK government's former buying guidance for the Digital Outcomes and Specialists framework used: if the cap is reached before the work is finished, \"the supplier has to complete the work at their own cost\", and if the work finishes early you pay only for the time taken. The same guidance said a fixed price \"works best when your requirements are well defined\" and that under T&M \"you own more of the risk\". It was [[" + DOS + "|withdrawn on 31 December 2025]], so read it as past government practice, not current rules.",
+          "The hard-cap meaning is the one the UK government's former buying guidance for the Digital Outcomes and Specialists framework used: if the cap is reached before the work is finished, \"the supplier has to complete the work at their own cost\", and if the work finishes early you pay only for the time taken. The same guidance said a fixed price \"works best when your requirements are well defined\" and that under T&M \"you own more of the risk\". It was withdrawn on 31 December 2025, so read it as past government practice, not current rules.",
           "In commercial contracts, \"cap\" is often used in the looser budget-ceiling sense. Neither is wrong. A hard cap only works when \"the work\" is defined well enough to know when it is finished, which brings back many of the scope arguments a fixed price has, and a supplier will usually price that risk into its rates or narrow the scope. A budget ceiling is easier to agree, but protects you only if you get early warning.",
         ],
       },
@@ -311,9 +303,9 @@ export const founderBuildPosts3: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[" + CFA + "|GOV.UK: Contracting for Agile guidance note]] (updated 20 June 2023); paragraph numbers as cited above.",
-          "[[" + DDAT + "|GOV.UK: The Digital, Data and Technology Playbook]], chapter 8, payment mechanism and pricing approach (updated 20 June 2023).",
-          "[[" + DOS + "|GOV.UK: How to pay for Digital Outcomes and Specialists services]] (withdrawn 31 December 2025; cited as historical practice).",
+          "GOV.UK: Contracting for Agile guidance note (updated 20 June 2023); paragraph numbers as cited above.",
+          "GOV.UK: The Digital, Data and Technology Playbook, chapter 8, payment mechanism and pricing approach (updated 20 June 2023).",
+          "GOV.UK: How to pay for Digital Outcomes and Specialists services (withdrawn 31 December 2025; cited as historical practice).",
           "Accessed 15 October 2026. Government guidance is written for public-sector buyers and may be revised. Take legal advice on your own contract.",
         ],
       },
@@ -400,7 +392,7 @@ export const founderBuildPosts3: BlogPost[] = [
         heading: "Scope creep, controlled change and clarification",
         body: [
           "**Scope creep** is change that enters the project without anyone assessing and agreeing its effect on time, cost and other work. **Controlled change** is a new, modified or removed requirement that has been assessed, approved by the right person and reflected in the plan and budget. **Clarification** (project managers sometimes call it progressive elaboration) adds detail to something already agreed, such as the wording of an error message or which fields a filter uses, without changing its intent.",
-          "The distinction matters because the cure is different. You should not try to prevent change: the GOV.UK Service Manual says plainly that \"In agile, you change your plans as you do more work and learn more about your users\" ([[" + PLANNING + "|Planning in agile]]). What you prevent is change that nobody assessed. The UK government's [[" + CFA + "|Contracting for Agile guidance note]] makes the same point from the buyer's side: the buyer keeps control of scope, including moving user stories up and down the backlog, and the contract structure \"should not allow, for example, scope creep\" (paras 6.4 and 6.5).",
+          "The distinction matters because the cure is different. You should not try to prevent change: the GOV.UK Service Manual says plainly that \"In agile, you change your plans as you do more work and learn more about your users\". What you prevent is change that nobody assessed. The UK government's Contracting for Agile guidance note makes the same point from the buyer's side: the buyer keeps control of scope, including moving user stories up and down the backlog, and the contract structure \"should not allow, for example, scope creep\" (paras 6.4 and 6.5).",
         ],
       },
       {
@@ -434,7 +426,7 @@ export const founderBuildPosts3: BlogPost[] = [
           "An out-of-scope list agreed by both sides.",
           "Assumptions written down, such as who supplies content and by what date.",
           "Client dependencies and named decision owners, with an agreed turnaround for decisions (for example, a set number of working days).",
-          "Acceptance criteria for each requirement or user story. GOV.UK describes these as \"a list of outcomes that you use as a checklist\" ([[" + STORIES + "|writing user stories]]).",
+          "Acceptance criteria for each requirement or user story. GOV.UK describes these as \"a list of outcomes that you use as a checklist\".",
           "Each integration listed with the owner of the third-party account or API.",
           "The design sign-off point, after which design changes go through change control.",
           "Who writes, supplies and loads content.",
@@ -453,7 +445,7 @@ export const founderBuildPosts3: BlogPost[] = [
           "**4. Decide.** The named approver chooses one of four options: do it now, swap it for an item of similar size, defer it to a later phase, or reject it. No work starts before a written decision.",
           "**5. Update the baseline.** Approved changes update the requirements document version, the backlog, the plan and the budget forecast.",
           "**6. Communicate.** Record the decision in the change log and tell everyone affected, including whoever raised the request.",
-          "The UK [[" + DDAT + "|DDaT Playbook]] calls \"clear and agreed reporting, change management and dispute resolution mechanisms\" a critical success factor in supplier relationships, and the GOV.UK guidance on [[" + PRIORITIES + "|deciding on priorities]] says priority decisions \"should be made regularly\". In practice, batch routine change requests into a weekly or per-sprint review and keep a fast path for urgent ones.",
+          "The UK DDaT Playbook calls \"clear and agreed reporting, change management and dispute resolution mechanisms\" a critical success factor in supplier relationships, and the GOV.UK guidance on deciding on priorities says priority decisions \"should be made regularly\". In practice, batch routine change requests into a weekly or per-sprint review and keep a fast path for urgent ones.",
         ],
       },
       {
@@ -581,9 +573,9 @@ Baseline updated to:       requirements document v__`,
       {
         heading: "Sources",
         body: [
-          "[[" + CFA + "|GOV.UK: Contracting for Agile guidance note]] (updated 20 June 2023).",
-          "[[" + DDAT + "|GOV.UK: The Digital, Data and Technology Playbook]] (updated 20 June 2023).",
-          "GOV.UK Service Manual: [[" + PLANNING + "|Planning in agile]] (updated 31 March 2026); [[" + PRIORITIES + "|Deciding on priorities]] (updated 6 December 2018); [[" + STORIES + "|Writing user stories]].",
+          "GOV.UK: Contracting for Agile guidance note (updated 20 June 2023).",
+          "GOV.UK: The Digital, Data and Technology Playbook (updated 20 June 2023).",
+          "GOV.UK Service Manual: Planning in agile (updated 31 March 2026); Deciding on priorities (updated 6 December 2018); Writing user stories.",
           "Accessed 15 October 2026. Guidance may be revised; check the current versions.",
         ],
       },

@@ -218,7 +218,7 @@ export const auCommerceIdentityPosts: BlogPost[] = [
       {
         heading: "Electronic signatures and records",
         body: [
-          "The [[https://www.legislation.gov.au/C2004A00553/latest/text|Electronic Transactions Act 1999]] supports electronic transactions for many Commonwealth law purposes, and states have equivalent laws, but some documents (such as certain deeds or documents requiring witnessing) have specific requirements that vary by jurisdiction. Configure your CLM to flag those document types for legal review. Keep signed copies, audit trails and metadata together, with retention rules.",
+          "The Electronic Transactions Act 1999 supports electronic transactions for many Commonwealth law purposes, and states have equivalent laws, but some documents (such as certain deeds or documents requiring witnessing) have specific requirements that vary by jurisdiction. Configure your CLM to flag those document types for legal review. Keep signed copies, audit trails and metadata together, with retention rules.",
         ],
       },
       {
@@ -338,7 +338,7 @@ export const auCommerceIdentityPosts: BlogPost[] = [
       {
         heading: "Ledger design",
         body: [
-          "Model each card with a unique identifier, type, issue date, expiry date and status, and record every change as an immutable transaction with amount, channel, store, user and reference. Derive balances from the ledger. Use database transactions or locks so two simultaneous redemptions cannot overspend a card. Support partial redemptions, refunds back to the card and manual adjustments with approval and reasons. See the ACCC's [[https://www.accc.gov.au/consumers/advertising-and-promotions/gift-cards-and-discount-vouchers|gift card guidance]] for the consumer-facing rules.",
+          "Model each card with a unique identifier, type, issue date, expiry date and status, and record every change as an immutable transaction with amount, channel, store, user and reference. Derive balances from the ledger. Use database transactions or locks so two simultaneous redemptions cannot overspend a card. Support partial redemptions, refunds back to the card and manual adjustments with approval and reasons. See the ACCC's gift card guidance for the consumer-facing rules.",
         ],
       },
       {
@@ -567,7 +567,7 @@ export const auCommerceIdentityPosts: BlogPost[] = [
         heading: "How do you design secure account recovery?",
         body: [
           "**Encourage users to set up strong recovery options in advance (a second passkey or device, saved recovery codes), use weaker channels such as email and SMS with extra checks, scale verification to the account's risk, notify users through existing channels when recovery starts, delay high-risk changes, invalidate lost authenticators, and give support staff a strict, logged process that resists social engineering.** Recovery should be as carefully designed as sign-in, because attackers target the weakest path.",
-          "This guide is for product, security and support teams. NIST's [[https://csrc.nist.gov/pubs/sp/800/63/b/4/final|SP 800-63B-4]] (final, July 2025) is a useful reference.",
+          "This guide is for product, security and support teams. NIST's SP 800-63B-4 (final, July 2025) is a useful reference.",
         ],
       },
       {

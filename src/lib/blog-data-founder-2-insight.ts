@@ -82,9 +82,9 @@ export const founderInsightPosts2: BlogPost[] = [
       {
         heading: "Start with what a dashboard is for",
         body: [
-          "Stephen Few's widely cited definition is still the most useful starting point: a dashboard is \"a visual display of the most important information needed to achieve one or more objectives; consolidated and arranged on a single screen so the information can be monitored at a glance\". In the same 2004 article he notes that a dashboard tells you what is happening but not why, and that it can be the starting point for drilling into the detail ([[https://www.perceptualedge.com/articles/ie/dashboard_confusion.pdf|Few, Dashboard Confusion]]).",
+          "Stephen Few's widely cited definition is still the most useful starting point: a dashboard is \"a visual display of the most important information needed to achieve one or more objectives; consolidated and arranged on a single screen so the information can be monitored at a glance\". In the same 2004 article he notes that a dashboard tells you what is happening but not why, and that it can be the starting point for drilling into the detail.",
           "Two parts of that definition do most of the work. **\"Most important information\"** means you have to leave things out. **\"Objectives\"** means the dashboard exists to serve a goal the user has, not to prove how much data the product holds.",
-          "NN/g separates two kinds of dashboard. Operational dashboards \"impart critical information quickly to users as they are engaged in time-sensitive tasks\". Analytical dashboards give at-a-glance information \"used for analysis and decision making\" ([[https://www.nngroup.com/articles/dashboards-preattentive/|NN/g, Laubheimer, 2017]]). Mixing both on one screen is a common reason a dashboard feels busy and useless at the same time.",
+          "NN/g separates two kinds of dashboard. Operational dashboards \"impart critical information quickly to users as they are engaged in time-sensitive tasks\". Analytical dashboards give at-a-glance information \"used for analysis and decision making\". Mixing both on one screen is a common reason a dashboard feels busy and useless at the same time.",
         ],
       },
       {
@@ -144,7 +144,7 @@ export const founderInsightPosts2: BlogPost[] = [
       {
         heading: "Design every state, not just the full one",
         body: [
-          "Design reviews usually show a dashboard full of tidy, realistic data. Real accounts spend a lot of time in other states, and a new customer's first view is almost always the empty one. NN/g recommends using empty states to communicate system status, to provide learning cues and to give direct pathways for key tasks ([[https://www.nngroup.com/articles/empty-state-interface-design/|NN/g, Kaplan, 2021]]).",
+          "Design reviews usually show a dashboard full of tidy, realistic data. Real accounts spend a lot of time in other states, and a new customer's first view is almost always the empty one. NN/g recommends using empty states to communicate system status, to provide learning cues and to give direct pathways for key tasks.",
         ],
         table: {
           headers: ["State", "What goes wrong", "What to design"],
@@ -179,8 +179,8 @@ export const founderInsightPosts2: BlogPost[] = [
       {
         heading: "Make charts accessible",
         body: [
-          "Two WCAG 2.2 success criteria catch most dashboard problems. **1.4.1 Use of Color (Level A)** says colour must not be \"the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element\" ([[https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html|W3C, Understanding SC 1.4.1]]). A red tile for \"overdue\" therefore also needs an icon, a label or a pattern.",
-          "**1.4.11 Non-text Contrast (Level AA)** asks for a contrast ratio of at least 3:1 against adjacent colours for user interface components and for parts of graphics required to understand the content. W3C's guidance applies this to chart lines and to pie segments that are distinguished only by their edges, and notes that labels and values can remove the need ([[https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html|W3C, Understanding SC 1.4.11]]). Text inside charts follows the normal text contrast rule.",
+          "Two WCAG 2.2 success criteria catch most dashboard problems. **1.4.1 Use of Color (Level A)** says colour must not be \"the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element\". A red tile for \"overdue\" therefore also needs an icon, a label or a pattern.",
+          "**1.4.11 Non-text Contrast (Level AA)** asks for a contrast ratio of at least 3:1 against adjacent colours for user interface components and for parts of graphics required to understand the content. W3C's guidance applies this to chart lines and to pie segments that are distinguished only by their edges, and notes that labels and values can remove the need. Text inside charts follows the normal text contrast rule.",
           "Beyond those two: make date pickers and filters usable by keyboard, give each chart a text summary or a data table, and do not rely on hover tooltips as the only way to read a value. For a wider pre-launch check, see our [[/blogs/website-accessibility-guide|website accessibility guide]]. A shared component library helps keep these rules consistent across screens; our piece on [[/blogs/design-systems-for-teams-that-move-fast|design systems for teams that move fast]] covers how to set one up.",
         ],
       },
@@ -249,9 +249,9 @@ export const founderInsightPosts2: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Dashboard definition and types: [[https://www.perceptualedge.com/articles/ie/dashboard_confusion.pdf|Stephen Few, Dashboard Confusion (Intelligent Enterprise, March 2004)]]; [[https://www.nngroup.com/articles/dashboards-preattentive/|NN/g, Dashboards: Making Charts and Graphs Easier to Understand (Laubheimer, 2017)]]; [[https://www.nngroup.com/articles/empty-state-interface-design/|NN/g, Designing Empty States in Complex Applications (Kaplan, 2021)]].",
-          "Perception research: [[https://www.jstor.org/stable/2288400|Cleveland and McGill, Graphical Perception, Journal of the American Statistical Association 79(387), 1984]] (cited at a high level).",
-          "Accessibility: [[https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html|W3C, Understanding SC 1.4.1 Use of Color]]; [[https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html|W3C, Understanding SC 1.4.11 Non-text Contrast]].",
+          "Dashboard definition and types: Stephen Few, Dashboard Confusion (Intelligent Enterprise, March 2004); NN/g, Dashboards: Making Charts and Graphs Easier to Understand (Laubheimer, 2017); NN/g, Designing Empty States in Complex Applications (Kaplan, 2021).",
+          "Perception research: Cleveland and McGill, Graphical Perception, Journal of the American Statistical Association 79(387), 1984 (cited at a high level).",
+          "Accessibility: W3C, Understanding SC 1.4.1 Use of Color; W3C, Understanding SC 1.4.11 Non-text Contrast.",
           "Accessed 14 October 2026.",
         ],
       },
@@ -329,7 +329,7 @@ export const founderInsightPosts2: BlogPost[] = [
       {
         heading: "Part 1: Capture the source of every lead",
         body: [
-          "Most attribution problems are capture problems. Google's guidance is that you should always use utm_source, utm_medium and utm_campaign, and that parameter values are case sensitive, so utm_source=google and utm_source=Google are reported separately ([[https://support.google.com/analytics/answer/10917952|Google Analytics Help, UTM parameters]]). GA4 also supports utm_id, utm_source_platform, utm_term and utm_content, among others. Write a convention, put it in a shared sheet and use it for every link you control.",
+          "Most attribution problems are capture problems. Google's guidance is that you should always use utm_source, utm_medium and utm_campaign, and that parameter values are case sensitive, so utm_source=google and utm_source=Google are reported separately. GA4 also supports utm_id, utm_source_platform, utm_term and utm_content, among others. Write a convention, put it in a shared sheet and use it for every link you control.",
         ],
         table: {
           headers: ["Parameter", "Convention (example)", "Notes"],
@@ -367,8 +367,8 @@ export const founderInsightPosts2: BlogPost[] = [
         heading: "Part 2: Connect CRM outcomes back to GA4 and Google Ads",
         body: [
           "If Google Ads only knows about form fills, its bidding optimises for form fills, including spam and poor-fit enquiries. Sending later outcomes back changes what the system learns from.",
-          "**In GA4**, Google provides recommended lead events: generate_lead for the enquiry, then qualify_lead, disqualify_lead, working_lead, close_convert_lead and close_unconvert_lead for later stages ([[https://developers.google.com/analytics/devguides/collection/ga4/reference/events|Google, GA4 recommended events]]). Marking generate_lead as a key event is the minimum; sending qualified and won stages from the CRM (usually server side) lets you see which channels produce good leads, not just many.",
-          "**In Google Ads**, enhanced conversions for leads is Google's upgraded form of offline conversion import. Your site sends hashed lead information (such as the email address) from the form through the Google tag or Tag Manager. When the lead later qualifies or closes, you upload the conversion with the same hashed data, and Google matches it. Google advises including the GCLID whenever possible, and it is required if you are not using a tag to collect user-provided data ([[https://support.google.com/google-ads/answer/15713840|Google Ads Help, enhanced conversions for leads]]).",
+          "**In GA4**, Google provides recommended lead events: generate_lead for the enquiry, then qualify_lead, disqualify_lead, working_lead, close_convert_lead and close_unconvert_lead for later stages. Marking generate_lead as a key event is the minimum; sending qualified and won stages from the CRM (usually server side) lets you see which channels produce good leads, not just many.",
+          "**In Google Ads**, enhanced conversions for leads is Google's upgraded form of offline conversion import. Your site sends hashed lead information (such as the email address) from the form through the Google tag or Tag Manager. When the lead later qualifies or closes, you upload the conversion with the same hashed data, and Google matches it. Google advises including the GCLID whenever possible, and it is required if you are not using a tag to collect user-provided data.",
           "**The 2026 change.** Google's Help page says that starting 15 June 2026, offline conversion imports and enhanced conversions for leads uploads are migrated to the Data Manager API and blocked in the Google Ads API, except for developer tokens allowlisted for legacy access. Google's listed routes now include Google Ads Data Manager (in the interface or by API) and supported integrations. If your CRM connector, agency script or custom integration was built on the Google Ads API, ask whoever maintains it to confirm it has moved. This is a recent change and Google may revise it, so check the page before building anything new. Once outcomes flow back, use them to [[/blogs/improve-website-lead-quality|diagnose and improve lead quality]].",
         ],
         callout: {
@@ -393,7 +393,7 @@ export const founderInsightPosts2: BlogPost[] = [
       {
         heading: "Part 4: Read each source for what it can and cannot say",
         body: [
-          "GA4 currently offers three attribution models: data-driven, paid and organic last click, and Google paid channels last click. First click, linear, time decay and position-based were removed in November 2023 ([[https://support.google.com/analytics/answer/10596866|Google Analytics Help, attribution models]]). For key events other than first visits, the lookback window defaults to 90 days and can be set to 30 or 60, so 90 days is the maximum ([[https://support.google.com/analytics/answer/10597962|Google Analytics Help, attribution settings]]). If your sales cycle is longer, early touchpoints simply fall outside GA4's view.",
+          "GA4 currently offers three attribution models: data-driven, paid and organic last click, and Google paid channels last click. First click, linear, time decay and position-based were removed in November 2023. For key events other than first visits, the lookback window defaults to 90 days and can be set to 30 or 60, so 90 days is the maximum. If your sales cycle is longer, early touchpoints simply fall outside GA4's view.",
         ],
         table: {
           headers: ["Source", "Good for answering", "Cannot tell you"],
@@ -412,15 +412,15 @@ export const founderInsightPosts2: BlogPost[] = [
       {
         heading: "Consent and the gaps it leaves",
         body: [
-          "Where visitors decline analytics or advertising cookies, some or all of their journey is not measured. Google's consent mode passes visitors' choices to Google tags through settings such as analytics_storage and ad_user_data; in basic mode tags do not load until consent is given, while advanced mode sends cookieless pings ([[https://developers.google.com/tag-platform/security/concepts/consent-mode|Google, consent mode overview]]). Google's EU user consent policy applies to end users in the European Economic Area, the UK and Switzerland ([[https://www.google.com/about/company/user-consent-policy/|Google EU user consent policy]]).",
-          "Modelling can estimate some of the missing data, but GA4's behavioural modelling has thresholds: at least 1,000 events a day with analytics storage denied for at least 7 days, and at least 1,000 daily users with it granted on at least 7 of the previous 28 days. Google says meeting these does not guarantee eligibility ([[https://support.google.com/analytics/answer/11161109|Google Analytics Help, behavioural modelling]]). Most small lead-generation sites will not reach them, so plan on the CRM and self-reported data carrying more weight. Consent and privacy rules differ by country; take advice for the markets you serve.",
+          "Where visitors decline analytics or advertising cookies, some or all of their journey is not measured. Google's consent mode passes visitors' choices to Google tags through settings such as analytics_storage and ad_user_data; in basic mode tags do not load until consent is given, while advanced mode sends cookieless pings. Google's EU user consent policy applies to end users in the European Economic Area, the UK and Switzerland.",
+          "Modelling can estimate some of the missing data, but GA4's behavioural modelling has thresholds: at least 1,000 events a day with analytics storage denied for at least 7 days, and at least 1,000 daily users with it granted on at least 7 of the previous 28 days. Google says meeting these does not guarantee eligibility. Most small lead-generation sites will not reach them, so plan on the CRM and self-reported data carrying more weight. Consent and privacy rules differ by country; take advice for the markets you serve.",
         ],
       },
       {
         heading: "Common leaks that send leads to Direct or the wrong source",
         body: [],
         checklist: [
-          "**Third-party booking, scheduling or payment steps.** A visitor who leaves for another domain and returns can start a new session credited to that domain. GA4's unwanted referrals setting tells Analytics not to show listed domains as traffic sources ([[https://support.google.com/analytics/answer/10327750|Google Analytics Help, unwanted referrals]]).",
+          "**Third-party booking, scheduling or payment steps.** A visitor who leaves for another domain and returns can start a new session credited to that domain. GA4's unwanted referrals setting tells Analytics not to show listed domains as traffic sources.",
           "**Untagged links** in email, PDFs, social bios and messaging apps.",
           "**UTMs on internal links**, which overwrite the original source.",
           "**Inconsistent case and spelling** (LinkedIn, linkedin, li) splitting one channel into several.",
@@ -483,8 +483,8 @@ export const founderInsightPosts2: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Google Analytics: [[https://support.google.com/analytics/answer/10596866|attribution models]]; [[https://support.google.com/analytics/answer/10597962|attribution settings and lookback windows]]; [[https://support.google.com/analytics/answer/10917952|UTM parameters]]; [[https://support.google.com/analytics/answer/10327750|identify unwanted referrals]]; [[https://support.google.com/analytics/answer/11161109|behavioural modelling for consent mode]]; [[https://developers.google.com/analytics/devguides/collection/ga4/reference/events|GA4 recommended events]].",
-          "Google Ads and consent: [[https://support.google.com/google-ads/answer/15713840|enhanced conversions for leads and the Data Manager API change]]; [[https://developers.google.com/tag-platform/security/concepts/consent-mode|consent mode overview]]; [[https://www.google.com/about/company/user-consent-policy/|EU user consent policy]].",
+          "Google Analytics: attribution models; attribution settings and lookback windows; UTM parameters; identify unwanted referrals; behavioural modelling for consent mode; GA4 recommended events.",
+          "Google Ads and consent: enhanced conversions for leads and the Data Manager API change; consent mode overview; EU user consent policy.",
           "Accessed 14 October 2026. Google changes these products and policies often; check the current pages before implementing.",
         ],
       },

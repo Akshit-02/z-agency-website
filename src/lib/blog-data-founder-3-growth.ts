@@ -125,16 +125,16 @@ export const founderGrowthPosts3: BlogPost[] = [
       {
         heading: "Getting people to value faster",
         body: [
-          "The evidence here is the strongest of the six levers. Jakob Nielsen argued in 2010 that because \"most mobile applications are used only intermittently\", they \"must be especially easy during initial use\", and advised against making registration the first step ([[https://www.nngroup.com/articles/mobile-apps-initial-use/|NN/g, low starting hurdles]]). It is an old article, but the principle has held.",
-          "A more recent study tested tutorials directly. In NN/g's 2020 study, 70 participants used four simple iPhone apps, with half reading the tutorial and half skipping it. Task success was 91% with the tutorial and 94% without, a difference that was not statistically significant. People who saw the tutorial rated the tasks as harder (4.92 against 5.49 on a seven-point ease scale, which was significant) ([[https://www.nngroup.com/articles/mobile-tutorials/|NN/g, mobile tutorials]]). The study covered only four simple apps, so it does not prove tutorials never help. It does suggest a front-loaded tour is not a reliable retention fix.",
-          "Apple's guidelines point the same way: make onboarding \"fast, fun, and optional\", teach through interactivity, postpone nonessential setup, and if someone skips a tutorial, do not show it again on later launches ([[https://developer.apple.com/design/human-interface-guidelines/onboarding|Apple HIG, onboarding]]). In practice that means asking what the smallest useful thing is that a new user can do in the first minute, and removing whatever stands in front of it. Redesigning that first-session flow is [[/services/ui-ux-design|UX design work]] that is worth testing with real users before it is built.",
+          "The evidence here is the strongest of the six levers. Jakob Nielsen argued in 2010 that because \"most mobile applications are used only intermittently\", they \"must be especially easy during initial use\", and advised against making registration the first step. It is an old article, but the principle has held.",
+          "A more recent study tested tutorials directly. In NN/g's 2020 study, 70 participants used four simple iPhone apps, with half reading the tutorial and half skipping it. Task success was 91% with the tutorial and 94% without, a difference that was not statistically significant. People who saw the tutorial rated the tasks as harder (4.92 against 5.49 on a seven-point ease scale, which was significant). The study covered only four simple apps, so it does not prove tutorials never help. It does suggest a front-loaded tour is not a reliable retention fix.",
+          "Apple's guidelines point the same way: make onboarding \"fast, fun, and optional\", teach through interactivity, postpone nonessential setup, and if someone skips a tutorial, do not show it again on later launches. In practice that means asking what the smallest useful thing is that a new user can do in the first minute, and removing whatever stands in front of it. Redesigning that first-session flow is [[/services/ui-ux-design|UX design work]] that is worth testing with real users before it is built.",
         ],
       },
       {
         heading: "A reason to come back, and somewhere to come back to",
         body: [
           "**The habit loop is inference, not established evidence.** We have not verified a primary study showing that a particular loop design improves app retention, so treat this lever as practice to test. The idea is simple: give people a prompt they chose (a reminder at the time they set, a weekly summary they opted into), an action that is quick to complete, and visible progress or new content that makes the next visit worthwhile. If the job only recurs monthly, do not try to manufacture a daily habit. Streaks and fake urgency can feel manipulative and may backfire.",
-          "Continuity matters as much as the prompt. Android's documentation notes that users expect a screen to look the same when they switch away and return, but the system may kill the app's process in the background, and \"when the user relaunches the app, the screen is unexpectedly in a clean state\". Google advises that \"most apps should implement\" saved state to handle this ([[https://developer.android.com/topic/libraries/architecture/saving-states|Android Developers, save UI states]]). Someone who returns to a half-finished form or a lost basket has a good reason not to return again. Drafts, restored screens and cached content are unglamorous engineering work that directly affects whether a return visit succeeds. For apps used with patchy connectivity, see [[/blogs/offline-first-mobile-app-development|offline-first app development]].",
+          "Continuity matters as much as the prompt. Android's documentation notes that users expect a screen to look the same when they switch away and return, but the system may kill the app's process in the background, and \"when the user relaunches the app, the screen is unexpectedly in a clean state\". Google advises that \"most apps should implement\" saved state to handle this. Someone who returns to a half-finished form or a lost basket has a good reason not to return again. Drafts, restored screens and cached content are unglamorous engineering work that directly affects whether a return visit succeeds. For apps used with patchy connectivity, see [[/blogs/offline-first-mobile-app-development|offline-first app development]].",
         ],
       },
       {
@@ -147,8 +147,8 @@ export const founderGrowthPosts3: BlogPost[] = [
       {
         heading: "Quality and monetisation: the silent levers",
         body: [
-          "Stability rarely shows up in a retention discussion, but it should. Google publishes \"bad behaviour\" thresholds for Android apps: a user-perceived crash rate of 1.09% and a user-perceived ANR rate of 0.47% overall, and 8% for either on a single phone model. Google states that if an app exceeds a bad behaviour threshold, \"Play may reduce the visibility of your title\" and may show users a warning on the store listing ([[https://developer.android.com/topic/performance/vitals|Android vitals]], page updated 9 October 2026; thresholds can change). Poor quality therefore loses users you already have and makes new ones harder to find. Look at vitals by device model, because a problem confined to popular low-memory phones can be invisible in the overall average.",
-          "Monetisation can also cause churn. Apple's guidance is to \"prefer letting people experience your app or game before prompting them for ratings or purchases\" ([[https://developer.apple.com/design/human-interface-guidelines/onboarding|Apple HIG]]). A hard paywall before the first value moment, or a rating prompt on the second launch, asks for commitment before the app has earned it. If you run a subscription, make cancelling as easy as subscribing. Retention held by friction is not retention you can build on, and it invites complaints and refund requests. For choosing a model in the first place, see [[/blogs/mobile-app-monetisation-models|how to monetise a mobile app]].",
+          "Stability rarely shows up in a retention discussion, but it should. Google publishes \"bad behaviour\" thresholds for Android apps: a user-perceived crash rate of 1.09% and a user-perceived ANR rate of 0.47% overall, and 8% for either on a single phone model. Google states that if an app exceeds a bad behaviour threshold, \"Play may reduce the visibility of your title\" and may show users a warning on the store listing (Android vitals, page updated 9 October 2026; thresholds can change). Poor quality therefore loses users you already have and makes new ones harder to find. Look at vitals by device model, because a problem confined to popular low-memory phones can be invisible in the overall average.",
+          "Monetisation can also cause churn. Apple's guidance is to \"prefer letting people experience your app or game before prompting them for ratings or purchases\". A hard paywall before the first value moment, or a rating prompt on the second launch, asks for commitment before the app has earned it. If you run a subscription, make cancelling as easy as subscribing. Retention held by friction is not retention you can build on, and it invites complaints and refund requests. For choosing a model in the first place, see [[/blogs/mobile-app-monetisation-models|how to monetise a mobile app]].",
         ],
         callout: {
           type: "takeaway",
@@ -179,8 +179,8 @@ export const founderGrowthPosts3: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Research: [[https://www.nngroup.com/articles/mobile-tutorials/|NN/g, Mobile Tutorials: Wasted Effort or Efficiency Boost? (Alita Kendrick, 2020)]]; [[https://www.nngroup.com/articles/mobile-apps-initial-use/|NN/g, iPhone Apps Need Low Starting Hurdles (Jakob Nielsen, 2010)]].",
-          "Platform guidance: [[https://developer.apple.com/design/human-interface-guidelines/onboarding|Apple Human Interface Guidelines: Onboarding]]; [[https://developer.android.com/topic/libraries/architecture/saving-states|Android Developers: Save UI states]]; [[https://developer.android.com/topic/performance/vitals|Android Developers: Android vitals]].",
+          "Research: NN/g, Mobile Tutorials: Wasted Effort or Efficiency Boost? (Alita Kendrick, 2020); NN/g, iPhone Apps Need Low Starting Hurdles (Jakob Nielsen, 2010).",
+          "Platform guidance: Apple Human Interface Guidelines: Onboarding; Android Developers: Save UI states; Android Developers: Android vitals.",
           "Accessed 15 October 2026. Platform thresholds and guidelines change; check the current pages before relying on them.",
         ],
       },
@@ -314,7 +314,7 @@ export const founderGrowthPosts3: BlogPost[] = [
       {
         heading: "Measure lead quality in GA4",
         body: [
-          "GA4 has a set of recommended events for the lead lifecycle. Sending them lets you see quality by source in standard reports instead of a spreadsheet ([[https://developers.google.com/analytics/devguides/collection/ga4/reference/events|GA4 recommended events]]):",
+          "GA4 has a set of recommended events for the lead lifecycle. Sending them lets you see quality by source in standard reports instead of a spreadsheet:",
         ],
         table: {
           headers: ["Event", "When to send it", "Useful parameter"],
@@ -331,16 +331,16 @@ export const founderGrowthPosts3: BlogPost[] = [
       {
         heading: "The two GA4 lead reports",
         body: [
-          "Once these events arrive, two reports fill in. The **Lead acquisition** report (Reports, then Acquisition, then Lead acquisition; or Business objectives, then Generate leads) shows new leads, qualified leads and converted leads, each counted as unique users with the matching event, by channel ([[https://support.google.com/analytics/answer/16376749|Google Analytics Help, Lead acquisition]]). If it is missing from the menu, an Editor or Administrator can add it back to the navigation.",
-          "The **Lead disqualification and loss** report filters for `disqualify_lead` and `close_unconvert_lead`, and gives you two dimensions: Disqualified lead reason and Lost lead reason, taken from those parameters ([[https://support.google.com/analytics/answer/16374727|Google Analytics Help, Lead disqualification and loss]]). This is where your picklist pays off. Use the same values in the CRM and in the events, for example: outside service area, wrong service, budget below minimum, job seeker or student, supplier pitch, spam, no response.",
+          "Once these events arrive, two reports fill in. The **Lead acquisition** report (Reports, then Acquisition, then Lead acquisition; or Business objectives, then Generate leads) shows new leads, qualified leads and converted leads, each counted as unique users with the matching event, by channel. If it is missing from the menu, an Editor or Administrator can add it back to the navigation.",
+          "The **Lead disqualification and loss** report filters for `disqualify_lead` and `close_unconvert_lead`, and gives you two dimensions: Disqualified lead reason and Lost lead reason, taken from those parameters. This is where your picklist pays off. Use the same values in the CRM and in the events, for example: outside service area, wrong service, budget below minimum, job seeker or student, supplier pitch, spam, no response.",
           "In plain terms, the qualification events usually happen in your CRM days after the visit, not in the browser, so they have to be sent from the CRM or a server and tied back to the original visitor. That integration is the hard part. [[/blogs/measure-multi-channel-website-conversions|Our guide to measuring conversions across channels]] covers source capture, CRM fields and offline imports.",
         ],
       },
       {
         heading: "Make Google Ads bid for outcomes, not form fills",
         body: [
-          "If your campaigns optimise towards form submissions, Smart Bidding will find more people who submit forms, including the ones sales rejects. Google Ads has two goals for later-stage outcomes. A **qualified lead** tracks Google-generated leads \"that have also been further qualified offline\", for example in a CRM, and a **converted lead** tracks leads \"that have completed a chosen step\" in your process, such as a closed deal. The lead funnel report then shows volumes from interactions through leads, qualified leads and converted leads ([[https://support.google.com/google-ads/answer/11459091|Google Ads Help, qualified and converted leads]]).",
-          "Google's best practices for optimising to high-quality leads set some practical requirements ([[https://support.google.com/google-ads/answer/13489421|Google Ads Help, high-quality leads]]):",
+          "If your campaigns optimise towards form submissions, Smart Bidding will find more people who submit forms, including the ones sales rejects. Google Ads has two goals for later-stage outcomes. A **qualified lead** tracks Google-generated leads \"that have also been further qualified offline\", for example in a CRM, and a **converted lead** tracks leads \"that have completed a chosen step\" in your process, such as a closed deal. The lead funnel report then shows volumes from interactions through leads, qualified leads and converted leads.",
+          "Google's best practices for optimising to high-quality leads set some practical requirements:",
         ],
         checklist: [
           "The conversion action should have at least 15 conversions in the last 30 days at account level.",
@@ -357,7 +357,7 @@ export const founderGrowthPosts3: BlogPost[] = [
       {
         heading: "What conversion value rules can and cannot do",
         body: [
-          "Conversion value rules let you adjust the conversion values that Google Ads reports and that Smart Bidding uses. The conditions are audiences, geographic locations and device, with a \"no condition\" option for some goals. They are used by target ROAS and Maximize conversion value, and some conditions may be unavailable for housing, employment or credit ads ([[https://support.google.com/google-ads/answer/10518330|Google Ads Help, conversion value rules]]).",
+          "Conversion value rules let you adjust the conversion values that Google Ads reports and that Smart Bidding uses. The conditions are audiences, geographic locations and device, with a \"no condition\" option for some goals. They are used by target ROAS and Maximize conversion value, and some conditions may be unavailable for housing, employment or credit ads.",
           "So they **can** say \"leads from this region, or from this customer list, are worth more to us\". They **cannot** read what someone typed in your form or score a lead by budget, service or company size, because those are not among the conditions. To give bidding that information, send different values with the qualified or converted lead itself, based on what your CRM knows.",
         ],
       },
@@ -378,9 +378,9 @@ export const founderGrowthPosts3: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Google Analytics: [[https://developers.google.com/analytics/devguides/collection/ga4/reference/events|GA4 recommended events reference]]; [[https://support.google.com/analytics/answer/16376749|Lead acquisition report]]; [[https://support.google.com/analytics/answer/16374727|Lead disqualification and loss report]].",
-          "Google Ads: [[https://support.google.com/google-ads/answer/11459091|qualified and converted lead goals]]; [[https://support.google.com/google-ads/answer/13489421|best practices for optimising to high-quality leads]]; [[https://support.google.com/google-ads/answer/10518330|conversion value rules]].",
-          "Research: [[https://hbr.org/2011/03/the-short-life-of-online-sales-leads|Oldroyd, McElheran and Elkington, The Short Life of Online Sales Leads, Harvard Business Review, March 2011]] (abstract only; full article paywalled).",
+          "Google Analytics: GA4 recommended events reference; Lead acquisition report; Lead disqualification and loss report.",
+          "Google Ads: qualified and converted lead goals; best practices for optimising to high-quality leads; conversion value rules.",
+          "Research: Oldroyd, McElheran and Elkington, The Short Life of Online Sales Leads, Harvard Business Review, March 2011 (abstract only; full article paywalled).",
           "Accessed 15 October 2026. Google changes its reports, goals and bidding guidance; check the current Help pages before configuring anything.",
         ],
       },

@@ -86,7 +86,7 @@ export const auQualityPosts: BlogPost[] = [
         table: {
           headers: ["Source", "What it is", "What it means for testing"],
           rows: [
-            ["**WCAG 2.2**", "W3C technical standard with A, AA and AAA success criteria", "The usual test basis, normally Level AA ([[https://www.w3.org/TR/WCAG22/|W3C]])"],
+            ["**WCAG 2.2**", "W3C technical standard with A, AA and AAA success criteria", "The usual test basis, normally Level AA"],
             ["**Disability Discrimination Act 1992**", "Australian law prohibiting disability discrimination", "The legal context; WCAG conformance is evidence of good practice, not a guarantee"],
             ["**AHRC guidelines**", "Commission guidelines on equal access to digital goods and services (2025), not legally binding", "Point organisations to WCAG; useful for policy"],
             ["**Digital Service Standard**", "Policy for Australian Government digital services", "Applies to Commonwealth agencies' services"],
@@ -98,7 +98,7 @@ export const auQualityPosts: BlogPost[] = [
       {
         heading: "Step 1: Scope the test",
         body: [
-          "Accessibility testing scales with scope, so define it deliberately. W3C's Website Accessibility Conformance Evaluation Methodology (WCAG-EM) describes defining scope, exploring the site, selecting a representative sample and auditing it ([[https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/|W3C WCAG-EM]]).",
+          "Accessibility testing scales with scope, so define it deliberately. W3C's Website Accessibility Conformance Evaluation Methodology (WCAG-EM) describes defining scope, exploring the site, selecting a representative sample and auditing it.",
         ],
         checklist: [
           "Key user journeys: sign-up, sign-in, search, checkout, booking, forms, account management.",
@@ -192,7 +192,7 @@ export const auQualityPosts: BlogPost[] = [
       {
         heading: "Australian procurement and government work",
         body: [
-          "If you sell digital products or services to government, accessibility requirements are often written into procurement. Standards Australia adopted AS EN 301 549 in 2016, and the 2020 edition references WCAG 2.1; Queensland and New South Wales procurement guidance refers to it ([[https://www.forgov.qld.gov.au/service-design-and-delivery/design-public-services/digital-accessibility/buy-accessible-ict-products-and-services|Queensland Government]]; [[https://www.info.buy.nsw.gov.au/resources/government-accessibility-standards-for-ict|buy.nsw]]). Australian Government agencies' services follow the Digital Service Standard. Read each tender for the exact standard, edition, level and reporting format required.",
+          "If you sell digital products or services to government, accessibility requirements are often written into procurement. Standards Australia adopted AS EN 301 549 in 2016, and the 2020 edition references WCAG 2.1; Queensland and New South Wales procurement guidance refers to it. Australian Government agencies' services follow the Digital Service Standard. Read each tender for the exact standard, edition, level and reporting format required.",
         ],
       },
       {
@@ -222,8 +222,8 @@ export const auQualityPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "**Standards:** [[https://www.w3.org/TR/WCAG22/|W3C, WCAG 2.2]]; [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C, what's new in WCAG 2.2]]; [[https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/|W3C, WCAG-EM]].",
-          "**Australia:** [[https://humanrights.gov.au/our-work/disability-rights/publications/guidelines-equal-access-digital-goods-and-services|Australian Human Rights Commission, guidelines on equal access to digital goods and services]]; [[https://www.forgov.qld.gov.au/service-design-and-delivery/design-public-services/digital-accessibility/buy-accessible-ict-products-and-services|Queensland Government, buy accessible ICT]]; [[https://www.info.buy.nsw.gov.au/resources/government-accessibility-standards-for-ict|buy.nsw, government accessibility standards for ICT]].",
+          "**Standards:** W3C, WCAG 2.2; W3C, what's new in WCAG 2.2; W3C, WCAG-EM.",
+          "**Australia:** Australian Human Rights Commission, guidelines on equal access to digital goods and services; Queensland Government, buy accessible ICT; buy.nsw, government accessibility standards for ICT.",
           "AS EN 301 549 and AHRC points are summarised from official guidance and procurement guidance. Tables, checklists and example are ours. Nothing here is legal advice or ZSpace client data.",
         ],
       },

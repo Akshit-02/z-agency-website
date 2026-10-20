@@ -571,10 +571,10 @@ export const mobilePosts4: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Apple: [[https://developer.apple.com/app-store/review/guidelines/|App Review Guidelines (5.1.1(v))]]; [[https://developer.apple.com/support/offering-account-deletion-in-your-app/|offering account deletion in your app]]; [[https://developer.apple.com/app-store/app-privacy-details/|App Privacy details]]; [[https://developer.apple.com/support/third-party-SDK-requirements/|third-party SDK requirements]]; [[https://developer.apple.com/documentation/bundleresources/describing-use-of-required-reason-api|describing use of required reason API]]; [[https://developer.apple.com/news/?id=r1henawx|Apple Developer News, 7 December 2023: privacy manifests and required reasons]].",
-          "Google: [[https://support.google.com/googleplay/android-developer/answer/13327111|Play account deletion requirements]]; [[https://support.google.com/googleplay/android-developer/answer/10787469|Data safety section]]; [[https://support.google.com/googleplay/android-developer/answer/14115180|Photo and Video Permissions policy]]; [[https://developer.android.com/training/data-storage/shared/photo-picker|Android photo picker]]; [[https://developer.android.com/develop/ui/views/notifications/notification-permission|notification runtime permission]].",
-          "Standards and industry: [[https://mas.owasp.org/news/2024/01/18/masvs-v210-release--masvs-privacy/|OWASP MASVS v2.1.0 release: MASVS-PRIVACY]]; [[https://www.donnywals.com/how-to-add-a-privacy-manifest-file-to-your-app-for-required-reason-api-usage/|Donny Wals: privacy manifests and required-reason APIs (ITMS-91053)]].",
-          "Law and regulation: [[https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws|UAE government: data protection laws]]; [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-quick-reference|OAIC: Australian Privacy Principles quick reference]]; [[https://www.pdpc.gov.sg/overview-of-pdpa/the-legislation/personal-data-protection-act/data-protection-obligations|PDPC: data protection obligations]]; [[https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/designing-products-that-protect-privacy/privacy-in-the-product-design-lifecycle/launch/|ICO: privacy in the product design lifecycle, launch]]; [[https://www.azbpartners.com/bank/indias-digital-personal-data-protection-act-phased-rollout-and-key-compliance-milestones/|AZB & Partners: DPDP Act phased roll-out (law-firm commentary)]].",
+          "Apple: App Review Guidelines (5.1.1(v)); offering account deletion in your app; App Privacy details; third-party SDK requirements; describing use of required reason API; Apple Developer News, 7 December 2023: privacy manifests and required reasons.",
+          "Google: Play account deletion requirements; Data safety section; Photo and Video Permissions policy; Android photo picker; notification runtime permission.",
+          "Standards and industry: OWASP MASVS v2.1.0 release: MASVS-PRIVACY; Donny Wals: privacy manifests and required-reason APIs (ITMS-91053).",
+          "Law and regulation: UAE government: data protection laws; OAIC: Australian Privacy Principles quick reference; PDPC: data protection obligations; ICO: privacy in the product design lifecycle, launch; AZB & Partners: DPDP Act phased roll-out (law-firm commentary).",
           "Accessed 14 October 2026. Store policies and privacy laws change, and dates may move; check the current pages. Nothing here is legal advice.",
         ],
       },
@@ -831,8 +831,8 @@ export const mobilePosts4: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Apple: [[https://developer.apple.com/app-store/review/guidelines/|App Review Guidelines (4.5.4 Push Notifications)]]; [[https://developer.apple.com/design/human-interface-guidelines/managing-notifications|Human Interface Guidelines: managing notifications]]; [[https://developer.apple.com/design/human-interface-guidelines/notifications|Human Interface Guidelines: notifications]]; [[https://developer.apple.com/documentation/usernotifications/asking-permission-to-use-notifications|asking permission to use notifications]].",
-          "Google: [[https://developer.android.com/develop/ui/views/notifications/notification-permission|notification runtime permission]]; [[https://developer.android.com/develop/ui/views/notifications/channels|create and manage notification channels]]; [[https://support.google.com/googleplay/android-developer/answer/9857753|Google Play Ads policy]].",
+          "Apple: App Review Guidelines (4.5.4 Push Notifications); Human Interface Guidelines: managing notifications; Human Interface Guidelines: notifications; asking permission to use notifications.",
+          "Google: notification runtime permission; create and manage notification channels; Google Play Ads policy.",
           "Accessed 14 October 2026. Platform rules change; check the current pages before relying on them.",
         ],
       },
@@ -874,7 +874,7 @@ export const mobilePosts4: BlogPost[] = [
         heading: "Should your app work offline?",
         body: [
           "**Your app should work offline for the specific jobs where users regularly lose signal and where waiting or losing entered data would stop their work. For everything else, good caching and clear error messages are usually enough.** Offline support is a per-job product decision, not an all-or-nothing architecture choice. A field inspection form may need full offline writing; the same app's payment screen should stay online-only.",
-          "Android's architecture guidance defines an offline-first app as one that can perform \"all, or a critical subset of its core functionality without access to the internet\" ([[https://developer.android.com/topic/architecture/data-layer/offline-first|Android Developers]]). The phrase \"a critical subset\" is the useful part: decide which subset, then build only that.",
+          "Android's architecture guidance defines an offline-first app as one that can perform \"all, or a critical subset of its core functionality without access to the internet\". The phrase \"a critical subset\" is the useful part: decide which subset, then build only that.",
           "Offline-first development makes the device's local database the app's primary data source: the UI reads and writes locally, a sync queue sends changes to the server when connected, and the app pulls server updates and resolves conflicts. That is worth the added complexity for field service, logistics, healthcare visits and construction. Many other apps only need offline-capable caching.",
         ],
       },
@@ -997,12 +997,12 @@ export const mobilePosts4: BlogPost[] = [
       {
         heading: "Local storage and databases",
         body: [
-          "SQLite underpins most mobile offline storage, through Room on Android, Core Data or SwiftData on iOS, and libraries for React Native and Flutter. Room \"provides an abstraction layer over SQLite\" ([[https://developer.android.com/training/data-storage/room|Android Developers]]). SwiftData can optionally sync across one person's devices through iCloud ([[https://developer.apple.com/documentation/swiftdata|Apple]]), which is not the same as a multi-user business backend. Managed options such as Cloud Firestore include offline persistence, enabled by default on Android and Apple platforms, with offline writes syncing on reconnect ([[https://firebase.google.com/docs/firestore/manage-data/enable-offline|Firebase documentation, vendor]]).",
+          "SQLite underpins most mobile offline storage, through Room on Android, Core Data or SwiftData on iOS, and libraries for React Native and Flutter. Room \"provides an abstraction layer over SQLite\". SwiftData can optionally sync across one person's devices through iCloud, which is not the same as a multi-user business backend. Managed options such as Cloud Firestore include offline persistence, enabled by default on Android and Apple platforms, with offline writes syncing on reconnect.",
           "Model the local schema around what users need offline, not a full copy of the server. Decide how much data to download: everything a user is assigned, or a recent window.",
         ],
         callout: {
           type: "note",
-          text: "Sync-vendor risk: MongoDB deprecated its Atlas Device SDKs and Atlas Device Sync in September 2024, and they reached end of life and were removed on 30 September 2025. Apps built on Device Sync had to move to another solution or remove sync. The on-device Realm database continues as an open source project, with community branches that remove the sync code ([[https://www.mongodb.com/docs/atlas/device-sdks/deprecation/|MongoDB]]). The lesson is not to avoid managed sync, but to keep your sync layer behind your own interface, own your server-side data model, and know how you would migrate if a vendor withdrew the service.",
+          text: "Sync-vendor risk: MongoDB deprecated its Atlas Device SDKs and Atlas Device Sync in September 2024, and they reached end of life and were removed on 30 September 2025. Apps built on Device Sync had to move to another solution or remove sync. The on-device Realm database continues as an open source project, with community branches that remove the sync code. The lesson is not to avoid managed sync, but to keep your sync layer behind your own interface, own your server-side data model, and know how you would migrate if a vendor withdrew the service.",
         },
       },
       {
@@ -1048,7 +1048,7 @@ export const mobilePosts4: BlogPost[] = [
       {
         heading: "Connectivity detection",
         body: [
-          "Platform network APIs tell you whether a network is available, not whether your server is reachable. Treat actual request success as the real signal, and don't block the UI on connectivity checks in an offline-first app. On iOS, `NWPathMonitor` reports network changes, and the path's `isExpensive` (cellular or Personal Hotspot) and `isConstrained` (Low Data Mode) properties let you postpone large syncs such as photo uploads ([[https://developer.apple.com/documentation/network/nwpath|Apple]]).",
+          "Platform network APIs tell you whether a network is available, not whether your server is reachable. Treat actual request success as the real signal, and don't block the UI on connectivity checks in an offline-first app. On iOS, `NWPathMonitor` reports network changes, and the path's `isExpensive` (cellular or Personal Hotspot) and `isConstrained` (Low Data Mode) properties let you postpone large syncs such as photo uploads.",
         ],
       },
       {
@@ -1087,8 +1087,8 @@ export const mobilePosts4: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Android: [[https://developer.android.com/topic/architecture/data-layer/offline-first|Build an offline-first app]]; [[https://developer.android.com/training/data-storage/room|Save data in a local database using Room]]. Apple: [[https://developer.apple.com/documentation/swiftdata|SwiftData]]; [[https://developer.apple.com/documentation/network/nwpathmonitor|NWPathMonitor]]; [[https://developer.apple.com/documentation/network/nwpath|NWPath]]. SQLite: [[https://www.sqlite.org/whentouse.html|Appropriate uses for SQLite]].",
-          "Vendor documentation: [[https://firebase.google.com/docs/firestore/manage-data/enable-offline|Firebase: access data offline]]; [[https://www.mongodb.com/docs/atlas/device-sdks/deprecation/|MongoDB: Atlas Device SDKs deprecation]].",
+          "Android: Build an offline-first app; Save data in a local database using Room. Apple: SwiftData; NWPathMonitor; NWPath. SQLite: Appropriate uses for SQLite.",
+          "Vendor documentation: Firebase: access data offline; MongoDB: Atlas Device SDKs deprecation.",
           "Accessed 15 October 2026. Platform APIs and vendor services change; check current documentation before choosing a sync approach.",
         ],
       },

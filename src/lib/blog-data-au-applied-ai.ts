@@ -85,7 +85,7 @@ export const auAppliedAiPosts: BlogPost[] = [
       {
         heading: "First, reduce the documents you need to read",
         body: [
-          "AI is a good answer to unstructured documents, but a structured feed is better. In Australia, Peppol eInvoicing lets businesses exchange invoices as structured data through accredited access points, with the ABN as the business identifier ([[https://www.ato.gov.au/businesses-and-organisations/einvoicing/about-peppol/identifying-australian-businesses-on-the-peppol-network|ATO]]). Many accounting platforms can send and receive them. Every supplier moved to Peppol is one less PDF to extract.",
+          "AI is a good answer to unstructured documents, but a structured feed is better. In Australia, Peppol eInvoicing lets businesses exchange invoices as structured data through accredited access points, with the ABN as the business identifier. Many accounting platforms can send and receive them. Every supplier moved to Peppol is one less PDF to extract.",
           "Similarly, replace paper forms with structured online forms where you control the process; see [[/blogs/workflow-digitization-australia|workflow digitisation]]. Use AI for what remains: supplier PDFs, scanned dockets, third-party forms and supporting evidence.",
         ],
       },
@@ -120,7 +120,7 @@ Audit     original, extracted, edits, who
           "Validation turns extraction into trustworthy data. Check what you can against independent sources:",
         ],
         checklist: [
-          "**ABN:** valid format and, for suppliers, matches the supplier record; the ABR offers ABN Lookup web services ([[https://abr.business.gov.au/Tools/WebServices|ABR]]).",
+          "**ABN:** valid format and, for suppliers, matches the supplier record; the ABR offers ABN Lookup web services.",
           "**Purchase orders and receipts:** quantities and prices match what was ordered and received.",
           "**Arithmetic and GST:** line totals, GST and invoice totals add up; GST treatment matches the supplier's registration.",
           "**Duplicates:** same supplier, invoice number and amount not already processed.",
@@ -141,7 +141,7 @@ Audit     original, extracted, edits, who
       {
         heading: "Australian privacy and automated decisions",
         body: [
-          "**Privacy.** If your business is covered by the Privacy Act, the OAIC says privacy obligations apply to personal information input into an AI system and to outputs containing personal information, and it recommends due diligence on AI products before use, including how vendors handle and retain data ([[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products|OAIC]]). Check whether the service uses your documents to train models, where it processes and stores data, and whether APP 8 overseas disclosure rules apply. AWS, Azure and Google Cloud all run Australian regions, but not every AI service is available in each one.",
+          "**Privacy.** If your business is covered by the Privacy Act, the OAIC says privacy obligations apply to personal information input into an AI system and to outputs containing personal information, and it recommends due diligence on AI products before use, including how vendors handle and retain data. Check whether the service uses your documents to train models, where it processes and stores data, and whether APP 8 overseas disclosure rules apply. AWS, Azure and Google Cloud all run Australian regions, but not every AI service is available in each one.",
           "**Automated decision-making transparency.** Under the Privacy and Other Legislation Amendment Act 2024, from 10 December 2026 privacy policies must describe the kinds of personal information used, and the kinds of decisions made, by computer programs in decisions that could significantly affect individuals' rights or interests. If extracted data feeds decisions such as approving applications, claims or credit, review whether this applies, update your policy and keep meaningful human review. Get privacy advice for your situation.",
           "**Sensitive documents.** Identity documents, health information and financial records need stricter access, shorter retention and careful vendor choice. Collect and extract only the fields you need.",
         ],
@@ -149,7 +149,7 @@ Audit     original, extracted, edits, who
       {
         heading: "Records, audit and retention",
         body: [
-          "Keep the original document, the extracted values, any corrections, who approved and when, and the system record it created. Business guidance generally expects most business records to be kept for five years, and electronic copies are acceptable when they are true and complete ([[https://business.gov.au/finance/accounting/record-keeping|business.gov.au]]). Apply retention rules deliberately: keep what you must, and delete or de-identify personal information you no longer need. Our guide to [[/blogs/ai-governance-australia|AI governance for Australian businesses]] covers logging and accountability.",
+          "Keep the original document, the extracted values, any corrections, who approved and when, and the system record it created. Business guidance generally expects most business records to be kept for five years, and electronic copies are acceptable when they are true and complete. Apply retention rules deliberately: keep what you must, and delete or de-identify personal information you no longer need. Our guide to [[/blogs/ai-governance-australia|AI governance for Australian businesses]] covers logging and accountability.",
         ],
       },
       {
@@ -195,8 +195,8 @@ Audit     original, extracted, edits, who
       {
         heading: "Sources",
         body: [
-          "**Privacy and AI:** [[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products|OAIC, guidance on privacy and the use of commercially available AI products]]; [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information|OAIC, APP 8]].",
-          "**Invoicing and records:** [[https://www.ato.gov.au/businesses-and-organisations/einvoicing/about-peppol/identifying-australian-businesses-on-the-peppol-network|ATO, Peppol]]; [[https://abr.business.gov.au/Tools/WebServices|ABR, ABN Lookup web services]]; [[https://business.gov.au/finance/accounting/record-keeping|business.gov.au, record keeping]].",
+          "**Privacy and AI:** OAIC, guidance on privacy and the use of commercially available AI products; OAIC, APP 8.",
+          "**Invoicing and records:** ATO, Peppol; ABR, ABN Lookup web services; business.gov.au, record keeping.",
           "The ADM transparency commencement date is from the Privacy and Other Legislation Amendment Act 2024 commencement provisions as researched for our Australian AI guides. The pipeline, thresholds and example are ours. Nothing here is legal advice or ZSpace client data.",
         ],
       },

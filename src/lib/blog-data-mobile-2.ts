@@ -154,7 +154,7 @@ export const mobilePosts2: BlogPost[] = [
       {
         heading: "How React Native Works",
         body: [
-          "Developers write components in React, just as for the web, but instead of producing HTML, React Native maps them to native views: a View becomes a native container, Text a native text element. JavaScript runs on Hermes, React Native's default engine, and the New Architecture's Fabric renderer and Turbo Native Modules handle communication with native code more directly than the older bridge. The New Architecture became the default in version 0.76 (October 2024) ([[https://reactnative.dev/blog/2024/10/23/release-0.76-new-architecture|React Native 0.76]]), version 0.82 (October 2025) was the first to run entirely on it ([[https://reactnative.dev/blog/2025/10/08/react-native-0.82|React Native 0.82]]), and 0.84 (February 2026) made Hermes V1 the default engine ([[https://reactnative.dev/blog/2026/02/11/react-native-0.84|React Native 0.84]]). If an older app still depends on the legacy architecture, plan that migration before adding features.",
+          "Developers write components in React, just as for the web, but instead of producing HTML, React Native maps them to native views: a View becomes a native container, Text a native text element. JavaScript runs on Hermes, React Native's default engine, and the New Architecture's Fabric renderer and Turbo Native Modules handle communication with native code more directly than the older bridge. The New Architecture became the default in version 0.76 (October 2024), version 0.82 (October 2025) was the first to run entirely on it, and 0.84 (February 2026) made Hermes V1 the default engine. If an older app still depends on the legacy architecture, plan that migration before adding features.",
         ],
         visual: { variant: "grid", accent: "orange", caption: "React components describe the UI; React Native renders them as real iOS and Android views." },
       },
@@ -167,7 +167,7 @@ export const mobilePosts2: BlogPost[] = [
       {
         heading: "Frameworks and Tooling",
         body: [
-          "The React Native documentation recommends starting new apps with a framework such as Expo ([[https://reactnative.dev/docs/environment-setup|React Native docs]]), which provides routing, build services, over-the-air updates for JavaScript changes (within store rules; see [[https://docs.expo.dev/eas-update/introduction/|EAS Update]]), and ready-made access to device APIs. Fast refresh shows code changes almost immediately during development.",
+          "The React Native documentation recommends starting new apps with a framework such as Expo, which provides routing, build services, over-the-air updates for JavaScript changes (within store rules; see EAS Update), and ready-made access to device APIs. Fast refresh shows code changes almost immediately during development.",
         ],
       },
       {
@@ -688,10 +688,10 @@ export const mobilePosts2: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Firebase (vendor documentation): [[https://firebase.google.com/docs/firestore/locations|Cloud Firestore locations]]; [[https://firebase.google.com/docs/projects/locations|Firebase project locations]]; [[https://firebase.google.com/docs/firestore/quotas|Firestore usage and limits]]; [[https://firebase.google.com/docs/firestore/manage-data/export-import|Firestore export and import]].",
-          "Supabase (vendor documentation): [[https://supabase.com/docs/guides/platform/regions|available regions]]; [[https://supabase.com/docs/guides/functions/limits|Edge Functions limits]]; [[https://supabase.com/docs/guides/platform/migrating-within-supabase/backup-restore|backup and restore using the CLI]]; [[https://supabase.com/docs/guides/self-hosting|self-hosting]].",
-          "Apple: [[https://developer.apple.com/support/offering-account-deletion-in-your-app/|offering account deletion in your app]]; [[https://developer.apple.com/app-store/review/guidelines/|App Review Guidelines (4.8 Login Services)]].",
-          "Law and regulation: [[https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws|UAE government: data protection laws]]; [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-quick-reference|OAIC: Australian Privacy Principles quick reference]]; [[https://ksandk.com/data-protection-and-data-privacy/cross-border-data-transfers-dpdp-act-india/|King Stubb & Kasiva: cross-border data transfers under the DPDP Act (law-firm commentary)]].",
+          "Firebase (vendor documentation): Cloud Firestore locations; Firebase project locations; Firestore usage and limits; Firestore export and import.",
+          "Supabase (vendor documentation): available regions; Edge Functions limits; backup and restore using the CLI; self-hosting.",
+          "Apple: offering account deletion in your app; App Review Guidelines (4.8 Login Services).",
+          "Law and regulation: UAE government: data protection laws; OAIC: Australian Privacy Principles quick reference; King Stubb & Kasiva: cross-border data transfers under the DPDP Act (law-firm commentary).",
           "Accessed 14 October 2026. Vendor regions, limits and plans change; check the current pages before deciding. Nothing here is legal advice.",
         ],
       },

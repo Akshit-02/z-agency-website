@@ -95,13 +95,13 @@ export const auDeliveryGovernancePosts: BlogPost[] = [
       {
         heading: "Knowledge transfer and ownership",
         body: [
-          "Knowledge leaves with people. Require documentation as part of the definition of done, record architecture decisions, pair internal and external engineers on important areas, and keep everything in your repositories and tools. Under Australian copyright law, an assignment of copyright has no effect unless it is in writing and signed ([[https://www6.austlii.edu.au/au/legis/cth/consol_act/ca1968133/s196.html|Copyright Act s196]]); include written IP assignment in the contract, covering the supplier and its people.",
+          "Knowledge leaves with people. Require documentation as part of the definition of done, record architecture decisions, pair internal and external engineers on important areas, and keep everything in your repositories and tools. Under Australian copyright law, an assignment of copyright has no effect unless it is in writing and signed; include written IP assignment in the contract, covering the supplier and its people.",
         ],
       },
       {
         heading: "Data access and privacy",
         body: [
-          "If you are covered by the Privacy Act and augmented staff overseas can access personal information, APP 8 applies, and you can remain accountable for how it is handled ([[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information|OAIC]]). Limit production access, use masked data in development, log access, and set security and breach-notification obligations in the contract. See [[/blogs/privacy-by-design-software-australia|privacy by design]].",
+          "If you are covered by the Privacy Act and augmented staff overseas can access personal information, APP 8 applies, and you can remain accountable for how it is handled. Limit production access, use masked data in development, log access, and set security and breach-notification obligations in the contract. See [[/blogs/privacy-by-design-software-australia|privacy by design]].",
         ],
       },
       {
@@ -192,7 +192,7 @@ export const auDeliveryGovernancePosts: BlogPost[] = [
       {
         heading: "Step 1: Inventory and SBOM",
         body: [
-          "Generate a full dependency list from lockfiles and build tooling, including indirect dependencies, container base images and front-end bundles. Produce an SBOM in a standard format such as SPDX ([[https://spdx.dev/|SPDX]]). ASD's ACSC co-sealed the September 2025 joint guidance 'A shared vision of SBOM for cybersecurity', which describes an SBOM as a formal, machine-readable record of software components ([[https://www.cyber.gov.au/business-government/supplier-cyber-risk-management/managing-cyber-supply-chains/shared-vision-of-software-bill-of-materials-for-cybersecurity|ASD]]).",
+          "Generate a full dependency list from lockfiles and build tooling, including indirect dependencies, container base images and front-end bundles. Produce an SBOM in a standard format such as SPDX. ASD's ACSC co-sealed the September 2025 joint guidance 'A shared vision of SBOM for cybersecurity', which describes an SBOM as a formal, machine-readable record of software components.",
         ],
       },
       {
@@ -216,7 +216,7 @@ export const auDeliveryGovernancePosts: BlogPost[] = [
         heading: "Step 3: Vulnerabilities and maintenance status",
         body: [],
         checklist: [
-          "Scan dependencies against vulnerability databases such as OSV ([[https://osv.dev/|OSV]]) in CI.",
+          "Scan dependencies against vulnerability databases such as OSV in CI.",
           "Prioritise by exploitability and whether the vulnerable code path is reachable in your application.",
           "Check maintenance: recent releases, responsiveness to security issues, number of maintainers.",
           "Flag abandoned or single-maintainer packages in critical paths.",
@@ -338,7 +338,7 @@ export const auDeliveryGovernancePosts: BlogPost[] = [
       {
         heading: "Step 1: Privacy impact assessment",
         body: [
-          "The OAIC's guide to privacy impact assessments sets out ten steps: threshold assessment, plan, describe the project, consult stakeholders, map information flows, analyse privacy impacts and compliance, manage risks, make recommendations, report, and respond and review ([[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/privacy-impact-assessments/guide-to-undertaking-privacy-impact-assessments|OAIC]]). Scale it to the project: a short threshold assessment for small changes, a full PIA for new products handling sensitive information.",
+          "The OAIC's guide to privacy impact assessments sets out ten steps: threshold assessment, plan, describe the project, consult stakeholders, map information flows, analyse privacy impacts and compliance, manage risks, make recommendations, report, and respond and review. Scale it to the project: a short threshold assessment for small changes, a full PIA for new products handling sensitive information.",
         ],
       },
       {
@@ -355,7 +355,7 @@ export const auDeliveryGovernancePosts: BlogPost[] = [
       {
         heading: "Step 3: Permissions and logging",
         body: [
-          "Use role-based access with record-level rules where needed, and review access regularly. Log access to sensitive records and administrative actions, without writing personal information into application logs unnecessarily. Mask data in non-production environments. These steps support APP 11's requirement to take reasonable steps to protect personal information ([[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-11-app-11-security-of-personal-information|OAIC]]).",
+          "Use role-based access with record-level rules where needed, and review access regularly. Log access to sensitive records and administrative actions, without writing personal information into application logs unnecessarily. Mask data in non-production environments. These steps support APP 11's requirement to take reasonable steps to protect personal information.",
         ],
       },
       {
@@ -376,7 +376,7 @@ export const auDeliveryGovernancePosts: BlogPost[] = [
         },
         callout: {
           type: "note",
-          text: "There is no universal retention period. Tax and business records are generally kept for five years ([[https://business.gov.au/finance/accounting/record-keeping|business.gov.au]]), other laws set their own periods, and where the Privacy Act applies, APP 11.2 requires destroying or de-identifying personal information you no longer need. Confirm periods for your records with your advisers.",
+          text: "There is no universal retention period. Tax and business records are generally kept for five years, other laws set their own periods, and where the Privacy Act applies, APP 11.2 requires destroying or de-identifying personal information you no longer need. Confirm periods for your records with your advisers.",
         },
       },
       {
@@ -517,7 +517,7 @@ export const auDeliveryGovernancePosts: BlogPost[] = [
         },
         callout: {
           type: "note",
-          text: "See W3C's summary of what's new in WCAG 2.2 ([[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|W3C]]). Automated tools catch only some issues; test with keyboard, screen readers and people with disability.",
+          text: "See W3C's summary of what's new in WCAG 2.2. Automated tools catch only some issues; test with keyboard, screen readers and people with disability.",
         },
       },
       {
@@ -535,7 +535,7 @@ export const auDeliveryGovernancePosts: BlogPost[] = [
       {
         heading: "Australian lookups and details",
         body: [
-          "Address lookups reduce errors and support delivery and service eligibility; choose a provider with Australian address data and make manual entry possible. For business customers, validate ABNs using the Australian Business Register's ABN Lookup web services ([[https://abr.business.gov.au/Tools/WebServices|ABR]]). Use Australian phone and postcode formats, show prices in AUD including GST in consumer checkouts, and do not add card surcharges for eftpos, Visa or Mastercard.",
+          "Address lookups reduce errors and support delivery and service eligibility; choose a provider with Australian address data and make manual entry possible. For business customers, validate ABNs using the Australian Business Register's ABN Lookup web services. Use Australian phone and postcode formats, show prices in AUD including GST in consumer checkouts, and do not add card surcharges for eftpos, Visa or Mastercard.",
         ],
       },
       {
@@ -553,7 +553,7 @@ export const auDeliveryGovernancePosts: BlogPost[] = [
       {
         heading: "Signatures, consent and privacy",
         body: [
-          "Electronic signatures are generally effective under the Electronic Transactions Act 1999 and state equivalents where the method identifies the person and their intention and is reliable for the purpose, but some documents are excluded ([[https://www.legislation.gov.au/C2004A00553/latest/text|Electronic Transactions Act 1999]]). Record what was signed, by whom and when. Show a collection notice explaining how personal information will be used, and keep marketing consent as an unticked, separate choice.",
+          "Electronic signatures are generally effective under the Electronic Transactions Act 1999 and state equivalents where the method identifies the person and their intention and is reliable for the purpose, but some documents are excluded. Record what was signed, by whom and when. Show a collection notice explaining how personal information will be used, and keep marketing consent as an unticked, separate choice.",
         ],
       },
       {
@@ -687,13 +687,13 @@ export const auDeliveryGovernancePosts: BlogPost[] = [
       {
         heading: "Step 5: Roles and communications",
         body: [
-          "Name who declares a continuity event, who leads recovery, who communicates with customers and who liaises with suppliers. Keep contact lists and runbooks available offline. Prepare status page and customer message templates. If an event involves a cyber incident, follow your incident response plan, including reporting obligations such as the Notifiable Data Breaches scheme and, for businesses over A$3 million turnover, ransomware payment reporting ([[https://www.homeaffairs.gov.au/cyber-security-subsite/files/factsheet-ransomware-payment-reporting.pdf|Home Affairs]]).",
+          "Name who declares a continuity event, who leads recovery, who communicates with customers and who liaises with suppliers. Keep contact lists and runbooks available offline. Prepare status page and customer message templates. If an event involves a cyber incident, follow your incident response plan, including reporting obligations such as the Notifiable Data Breaches scheme and, for businesses over A$3 million turnover, ransomware payment reporting.",
         ],
       },
       {
         heading: "APRA CPS 230 for regulated entities and their suppliers",
         body: [
-          "APRA's Prudential Standard CPS 230 Operational Risk Management commenced on 1 July 2025 for APRA-regulated entities ([[https://www.apra.gov.au/sites/default/files/2023-07/Prudential%20Standard%20CPS%20230%20Operational%20Risk%20Management%20-%20clean.pdf|APRA]]). It requires entities to identify critical operations, set tolerance levels for maximum disruption time, data loss and minimum service levels, maintain a credible business continuity plan and manage material service providers. Software suppliers to these entities should expect continuity, testing and notification requirements in contracts.",
+          "APRA's Prudential Standard CPS 230 Operational Risk Management commenced on 1 July 2025 for APRA-regulated entities. It requires entities to identify critical operations, set tolerance levels for maximum disruption time, data loss and minimum service levels, maintain a credible business continuity plan and manage material service providers. Software suppliers to these entities should expect continuity, testing and notification requirements in contracts.",
         ],
       },
       {
@@ -803,7 +803,7 @@ export const auDeliveryGovernancePosts: BlogPost[] = [
       {
         heading: "Idempotency",
         body: [
-          "Send a unique idempotency key with each request that creates or changes data, and store results keyed by it on the server side. Payment providers document this pattern; Stripe, for example, supports idempotent requests so that retrying with the same key returns the original result ([[https://docs.stripe.com/api/idempotent_requests|Stripe]]). For incoming webhooks, store processed event IDs and ignore repeats; see [[/blogs/ecommerce-webhooks|webhook design]] and [[/blogs/payment-gateway-integration-australia|payment gateway integration]].",
+          "Send a unique idempotency key with each request that creates or changes data, and store results keyed by it on the server side. Payment providers document this pattern; Stripe, for example, supports idempotent requests so that retrying with the same key returns the original result. For incoming webhooks, store processed event IDs and ignore repeats; see [[/blogs/ecommerce-webhooks|webhook design]] and [[/blogs/payment-gateway-integration-australia|payment gateway integration]].",
         ],
       },
       {
@@ -811,7 +811,7 @@ export const auDeliveryGovernancePosts: BlogPost[] = [
         body: [],
         checklist: [
           "Track each partner's rate limits and pace requests below them.",
-          "Use circuit breakers so repeated failures fail fast and trigger fallbacks ([[https://martinfowler.com/bliki/CircuitBreaker.html|martinfowler.com]]).",
+          "Use circuit breakers so repeated failures fail fast and trigger fallbacks.",
           "Put non-urgent work, such as syncing records or sending notifications, on queues.",
           "Process queue messages idempotently; they may be delivered more than once.",
           "Send repeatedly failing messages to a dead-letter queue with alerts and an owner.",

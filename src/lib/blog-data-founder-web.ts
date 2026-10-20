@@ -132,7 +132,7 @@ export const founderWebPosts: BlogPost[] = [
         heading: "What changes once you hold personal data",
         body: [
           "Any requirement tagged D, and most tagged L, means you store personal data. That changes your obligations, and they apply whether the system is a tiny module or a large application. This is a summary, not legal advice; check the regulator's guidance for each market you serve.",
-          "**Security baseline.** The [[https://top10.owasp.org/2025|OWASP Top 10:2025]] lists the most common web application risks. The first is A01:2025 Broken Access Control, which is the R tag going wrong: one user seeing another's data. A07:2025 Authentication Failures covers the L tag. Ask any supplier how they test for both.",
+          "**Security baseline.** The OWASP Top 10:2025 lists the most common web application risks. The first is A01:2025 Broken Access Control, which is the R tag going wrong: one user seeing another's data. A07:2025 Authentication Failures covers the L tag. Ask any supplier how they test for both.",
         ],
         table: {
           headers: ["Market", "What to know"],
@@ -145,14 +145,14 @@ export const founderWebPosts: BlogPost[] = [
         },
         callout: {
           type: "note",
-          text: "Primary sources: [[https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190655|PIB on the DPDP Rules 2025]] (India); [[https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/data-protection-by-design-and-by-default/|ICO data protection by design and by default]] (UK); [[https://www.oaic.gov.au/privacy/privacy-legislation/the-privacy-act/rights-and-responsibilities|OAIC Privacy Act rights and responsibilities]] (Australia); [[https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/resource-for-organisation/building-websites-v1-0-(200716).pdf|PDPC guide to building websites]] (Singapore). Data rules change; the table reflects official pages checked on 14 October 2026. For Australian product teams, [[/blogs/privacy-by-design-software-australia|privacy by design for Australian software]] goes into the practical controls.",
+          text: "Primary sources: PIB on the DPDP Rules 2025 (India); ICO data protection by design and by default (UK); OAIC Privacy Act rights and responsibilities (Australia); PDPC guide to building websites (Singapore). Data rules change; the table reflects official pages checked on 14 October 2026. For Australian product teams, [[/blogs/privacy-by-design-software-australia|privacy by design for Australian software]] goes into the practical controls.",
         },
       },
       {
         heading: "Running costs and ownership",
         body: [
           "A website can often run on a modest hosting plan with occasional updates. A web application has running costs from day one: hosting that supports server-side code, a database, backups, email or SMS for sign-in codes and notifications, error monitoring, security updates to its dependencies, and someone who can fix it when an integration changes. Budget for these as a monthly line, not a one-off.",
-          "The technical line between the two is visible in the tools. Next.js, for example, can be deployed as a [[https://nextjs.org/docs/app/guides/static-exports|static export]], which suits a content website but does not support features such as Server Actions, cookies or request-dependent route handlers; a [[https://nextjs.org/docs/app/getting-started/deploying|Node.js server or container deployment]] supports all features. Logins and stored data push you onto the second, and that changes what you pay to host.",
+          "The technical line between the two is visible in the tools. Next.js, for example, can be deployed as a static export, which suits a content website but does not support features such as Server Actions, cookies or request-dependent route handlers; a Node.js server or container deployment supports all features. Logins and stored data push you onto the second, and that changes what you pay to host.",
           "Ownership matters more for an application than a website. Before you sign, make sure the code repository, hosting account, domain, database and third-party service accounts are in your name, with your supplier given access, not the other way round. For how to estimate both the build and the running costs on your own assumptions, see [[/blogs/custom-web-application-development-cost|how to estimate the cost of a custom web application]]; for brochure sites, [[/blogs/website-development-cost|what affects website development cost]] is the better guide.",
         ],
       },
@@ -195,9 +195,9 @@ export const founderWebPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Security: [[https://top10.owasp.org/2025|OWASP Top 10:2025]].",
-          "Data protection: [[https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190655|Press Information Bureau: DPDP Rules 2025]]; [[https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/data-protection-by-design-and-by-default/|ICO: data protection by design and by default]]; [[https://www.oaic.gov.au/privacy/privacy-legislation/the-privacy-act/rights-and-responsibilities|OAIC: Privacy Act rights and responsibilities]]; [[https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/resource-for-organisation/building-websites-v1-0-(200716).pdf|PDPC: guide to building websites]].",
-          "Technical: [[https://nextjs.org/docs/app/getting-started/deploying|Next.js: deploying]]; [[https://nextjs.org/docs/app/guides/static-exports|Next.js: static exports]].",
+          "Security: OWASP Top 10:2025.",
+          "Data protection: Press Information Bureau: DPDP Rules 2025; ICO: data protection by design and by default; OAIC: Privacy Act rights and responsibilities; PDPC: guide to building websites.",
+          "Technical: Next.js: deploying; Next.js: static exports.",
           "Accessed 14 October 2026. Data protection rules and their commencement dates change; check current guidance and take legal advice for your situation.",
         ],
       },
@@ -266,8 +266,8 @@ export const founderWebPosts: BlogPost[] = [
           "Search for web application cost and you will find confident ranges with no stated method. The more careful datasets explain their limits, and the limits are the point:",
         ],
         checklist: [
-          "**Marketplace review data.** [[https://clutch.co/web-developers/pricing|Clutch's web development pricing page]] says it compiles its figures \"from first-party reviews submitted by verified web development clients\". That is useful context, but the sample is self-selected, the projects range from small sites to large builds, and the page's headline \"typical\" project figure and its average project figure are far apart and describe different things.",
-          "**Government rate cards.** The UK's Digital Outcomes and Specialists framework ([[https://www.gca.gov.uk/agreements/RM1043.9|DOS7, RM1043.9]]) publishes average day rates for digital specialists. They are averages of the maximum rates suppliers may charge under the framework, as at 28 June 2022, based on a 7.5-hour day and excluding VAT and expenses. Some rows contain what appear to be placeholder maximum values. They are not prices paid, and they are not project costs.",
+          "**Marketplace review data.** Clutch's web development pricing page says it compiles its figures \"from first-party reviews submitted by verified web development clients\". That is useful context, but the sample is self-selected, the projects range from small sites to large builds, and the page's headline \"typical\" project figure and its average project figure are far apart and describe different things.",
+          "**Government rate cards.** The UK's Digital Outcomes and Specialists framework publishes average day rates for digital specialists. They are averages of the maximum rates suppliers may charge under the framework, as at 28 June 2022, based on a 7.5-hour day and excluding VAT and expenses. Some rows contain what appear to be placeholder maximum values. They are not prices paid, and they are not project costs.",
           "**Salary surveys.** Developer salary data tells you what employment costs, not what a supplier charges or what a project needs.",
           "**Agency tier tables.** Tiers such as \"simple, medium, complex\" with price bands rarely define what goes in each tier, so you cannot place your own project in one.",
         ],
@@ -359,7 +359,7 @@ export const founderWebPosts: BlogPost[] = [
           headers: ["Running-cost line", "What to check", "Example page to check"],
           rows: [
             ["**Database and backups**", "Storage, backup retention, point-in-time restore, region", "Your hosting or database provider's pricing page"],
-            ["**Hosting and compute**", "Whether the plan allows commercial use, team seats, usage limits and overage charges", "[[https://vercel.com/pricing|Vercel pricing]] (vendor; its Hobby plan is described as for personal, non-commercial use); [[https://www.netlify.com/pricing/|Netlify pricing]] (vendor)"],
+            ["**Hosting and compute**", "Whether the plan allows commercial use, team seats, usage limits and overage charges", "Vercel pricing (vendor; its Hobby plan is described as for personal, non-commercial use); Netlify pricing (vendor)"],
             ["**Email and SMS**", "Per-message charges for sign-in codes, receipts and notifications in each country you serve", "Your email or SMS provider's pricing page"],
             ["**Third-party services**", "Payment fees, maps, search, file storage, analytics", "Each provider's pricing page and fee schedule"],
             ["**Monitoring**", "Error tracking and uptime alerts", "Your monitoring provider's pricing page"],
@@ -421,8 +421,8 @@ export const founderWebPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Rate data and its limits: [[https://clutch.co/web-developers/pricing|Clutch: web development pricing guide]] (marketplace data, updated 21 September 2026); [[https://www.gca.gov.uk/agreements/RM1043.9|GCA: Digital Outcomes and Specialists 7 (RM1043.9)]]; [[https://redirect.contractawardservice.gca.gov.uk/assets/files/RM1043.9-DOS-7-Lot-3-Average-Day-Rates-v1.2.odt|DOS7 Lot 3 average day rates file]].",
-          "Running-cost examples (vendor pages, checked but not quoted): [[https://vercel.com/pricing|Vercel pricing]]; [[https://www.netlify.com/pricing/|Netlify pricing]].",
+          "Rate data and its limits: Clutch: web development pricing guide (marketplace data, updated 21 September 2026); GCA: Digital Outcomes and Specialists 7 (RM1043.9); DOS7 Lot 3 average day rates file.",
+          "Running-cost examples (vendor pages, checked but not quoted): Vercel pricing; Netlify pricing.",
           "Accessed 14 October 2026. Vendor prices and plan terms change; check each provider's current page before budgeting.",
         ],
       },
@@ -470,7 +470,7 @@ export const founderWebPosts: BlogPost[] = [
         heading: "What a first SaaS MVP should include",
         body: [
           "**A first SaaS MVP should include the smallest set of features that lets real customers test your riskiest assumption, plus the features needed for them to trust you with their data: sign-in, access control so each customer sees only their own data, basic audit logging, and backups with a way to export data. Everything else goes on a later list, or is done manually.** The test for each feature is not \"is it useful?\" but \"do we need it to learn what we must learn, or to be trusted?\"",
-          "This follows Eric Ries's original definition. In his [[http://www.startuplessonslearned.com/2009/08/minimum-viable-product-guide.html|2009 guide to the minimum viable product]], he describes it as \"that version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort.\" The aim is learning, not a smaller version of the full product.",
+          "This follows Eric Ries's original definition. In his 2009 guide to the minimum viable product, he describes it as \"that version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort.\" The aim is learning, not a smaller version of the full product.",
         ],
       },
       {
@@ -538,7 +538,7 @@ export const founderWebPosts: BlogPost[] = [
       {
         heading: "Do not cut these",
         body: [
-          "Some ranking advice suggests skipping authentication in an MVP. For a B2B product holding customer data, that conflicts with the most widely used list of web application risks. The [[https://top10.owasp.org/2025|OWASP Top 10:2025]] puts **A01:2025 Broken Access Control** first and lists **A07:2025 Authentication Failures**. An MVP with real customers and real data is exposed to both from the first day.",
+          "Some ranking advice suggests skipping authentication in an MVP. For a B2B product holding customer data, that conflicts with the most widely used list of web application risks. The OWASP Top 10:2025 puts **A01:2025 Broken Access Control** first and lists **A07:2025 Authentication Failures**. An MVP with real customers and real data is exposed to both from the first day.",
         ],
         checklist: [
           "**Access control:** every request checks that the user may see or change that record, on the server, not only in the interface.",
@@ -611,8 +611,8 @@ export const founderWebPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Definitions and methods: [[http://www.startuplessonslearned.com/2009/08/minimum-viable-product-guide.html|Eric Ries, \"Minimum Viable Product: a guide\", Startup Lessons Learned, 3 August 2009]]; [[https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/|Sean McBride, \"RICE: Simple prioritization for product managers\", Intercom, 5 January 2018]]; Kano, Seraku, Takahashi and Tsuji, \"Attractive quality and must-be quality\", Hinshitsu (Journal of the Japanese Society for Quality Control), vol. 14, no. 2, 1984.",
-          "Security: [[https://top10.owasp.org/2025|OWASP Top 10:2025]].",
+          "Definitions and methods: Eric Ries, \"Minimum Viable Product: a guide\", Startup Lessons Learned, 3 August 2009; Sean McBride, \"RICE: Simple prioritization for product managers\", Intercom, 5 January 2018; Kano, Seraku, Takahashi and Tsuji, \"Attractive quality and must-be quality\", Hinshitsu (Journal of the Japanese Society for Quality Control), vol. 14, no. 2, 1984.",
+          "Security: OWASP Top 10:2025.",
           "Accessed 14 October 2026.",
         ],
       },

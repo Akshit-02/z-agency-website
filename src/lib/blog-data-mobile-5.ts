@@ -127,14 +127,14 @@ export const mobilePosts5: BlogPost[] = [
       {
         heading: "Quality Metrics and Google's Thresholds",
         body: [
-          "Stability and speed affect every other stage. Google Play's Android vitals is the only official source we found that publishes numeric quality bars. Its bad-behaviour thresholds are a user-perceived crash rate of 1.09% overall and 8% per phone model, and a user-perceived ANR (Application Not Responding) rate of 0.47% overall and 8% per phone model ([[https://developer.android.com/topic/performance/vitals|Android Developers: Android vitals]]). Apple publishes no equivalent threshold.",
+          "Stability and speed affect every other stage. Google Play's Android vitals is the only official source we found that publishes numeric quality bars. Its bad-behaviour thresholds are a user-perceived crash rate of 1.09% overall and 8% per phone model, and a user-perceived ANR (Application Not Responding) rate of 0.47% overall and 8% per phone model. Apple publishes no equivalent threshold.",
           "Watch these per release and per device model, and correlate releases with changes in activation and retention. For reading crash and ANR data and finding the cause, see the [[/blogs/mobile-app-crash-reporting|founder's diagnostic guide to crashes and slow apps]].",
         ],
       },
       {
         heading: "Attribution and App Tracking Transparency",
         body: [
-          "Attribution links installs and conversions to campaigns. On iOS, iPadOS and tvOS 14.5 and later, Apple requires permission through App Tracking Transparency to track users or access the device's advertising identifier. Apple defines tracking as linking user or device data from your app with other companies' data for targeted advertising or advertising measurement, or sharing it with data brokers. For measurement without that consent, Apple offers AdAttributionKit, which reports in aggregate ([[https://developer.apple.com/app-store/user-privacy-and-data-use/|Apple: user privacy and data use]]). On Android, the Play Install Referrer supplies install source information. Expect aggregated, less granular data than in the past.",
+          "Attribution links installs and conversions to campaigns. On iOS, iPadOS and tvOS 14.5 and later, Apple requires permission through App Tracking Transparency to track users or access the device's advertising identifier. Apple defines tracking as linking user or device data from your app with other companies' data for targeted advertising or advertising measurement, or sharing it with data brokers. For measurement without that consent, Apple offers AdAttributionKit, which reports in aggregate. On Android, the Play Install Referrer supplies install source information. Expect aggregated, less granular data than in the past.",
         ],
       },
       {
@@ -216,8 +216,8 @@ export const mobilePosts5: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Apple: [[https://developer.apple.com/help/app-store-connect-analytics/reference/metrics-definitions|App Store Connect Analytics: metrics definitions]]; [[https://developer.apple.com/help/app-store-connect-analytics/engagement/app-retention|App Store Connect Analytics: app retention]]; [[https://developer.apple.com/app-store/user-privacy-and-data-use/|User privacy and data use (App Tracking Transparency)]].",
-          "Google: [[https://support.google.com/analytics/answer/9355855|Google Analytics Help: Retention overview report]]; [[https://support.google.com/analytics/answer/9670133|Google Analytics Help: cohort exploration]]; [[https://developer.android.com/topic/performance/vitals|Android vitals (updated 9 October 2026)]]; [[https://support.google.com/googleplay/android-developer/answer/9844486|Play Console Help: monitor technical quality with Android vitals]]; [[https://firebase.google.com/docs/crashlytics/crash-free-metrics|Firebase Crashlytics: crash-free metrics (vendor documentation)]].",
+          "Apple: App Store Connect Analytics: metrics definitions; App Store Connect Analytics: app retention; User privacy and data use (App Tracking Transparency).",
+          "Google: Google Analytics Help: Retention overview report; Google Analytics Help: cohort exploration; Android vitals (updated 9 October 2026); Play Console Help: monitor technical quality with Android vitals; Firebase Crashlytics: crash-free metrics (vendor documentation).",
           "Accessed 15 October 2026. Tool definitions and report names change; check the current documentation before relying on a figure.",
         ],
       },
@@ -301,7 +301,7 @@ export const mobilePosts5: BlogPost[] = [
       {
         heading: "How bad is it? Google Play's thresholds",
         body: [
-          "Google is the only platform that publishes numeric quality bars. Android vitals has two core stability metrics, user-perceived crash rate and user-perceived ANR rate, each with a bad-behaviour threshold ([[https://developer.android.com/topic/performance/vitals|Android Developers: Android vitals, updated 9 October 2026]]).",
+          "Google is the only platform that publishes numeric quality bars. Android vitals has two core stability metrics, user-perceived crash rate and user-perceived ANR rate, each with a bad-behaviour threshold.",
         ],
         table: {
           headers: ["Metric", "Overall threshold", "Per phone model", "What 'user-perceived' means"],
@@ -318,25 +318,25 @@ export const mobilePosts5: BlogPost[] = [
       {
         heading: "What Android counts as an ANR",
         body: [
-          "An ANR is triggered when an app's main (UI) thread is blocked for too long. The main trigger is not responding to an input event, such as a tap, within 5 seconds. Others include a service not finishing its start-up within a few seconds and a foreground service not calling startForeground within 5 seconds ([[https://developer.android.com/topic/performance/vitals/anr|Android Developers: ANRs]]). Only the 'Input dispatching timed out' type counts towards the user-perceived ANR rate that Play uses for its threshold, although Play Console also reports the rate for all ANR types ([[https://developer.android.com/google/play/vitals/anr|Play Console: ANR rate]]).",
-          "Slowness short of an ANR also has a definition. To render at 60 frames per second each frame must take under 16 ms. Google calls frames of 16 to 700 ms slow and 700 ms to 5 seconds frozen, and says no frame should ever take longer than 700 ms ([[https://developer.android.com/topic/performance/vitals/render|Android Developers: slow rendering]]).",
+          "An ANR is triggered when an app's main (UI) thread is blocked for too long. The main trigger is not responding to an input event, such as a tap, within 5 seconds. Others include a service not finishing its start-up within a few seconds and a foreground service not calling startForeground within 5 seconds. Only the 'Input dispatching timed out' type counts towards the user-perceived ANR rate that Play uses for its threshold, although Play Console also reports the rate for all ANR types.",
+          "Slowness short of an ANR also has a definition. To render at 60 frames per second each frame must take under 16 ms. Google calls frames of 16 to 700 ms slow and 700 ms to 5 seconds frozen, and says no frame should ever take longer than 700 ms.",
         ],
       },
       {
         heading: "What iOS shows instead",
         body: [
-          "Apple does not publish thresholds or a visibility penalty for crashes or hangs, so none should be assumed. App Review guideline 2.1 does say Apple will reject binaries that crash ([[https://developer.apple.com/app-store/review/guidelines/|App Review Guidelines]]). For diagnosis, three sources matter.",
+          "Apple does not publish thresholds or a visibility penalty for crashes or hangs, so none should be assumed. App Review guideline 2.1 does say Apple will reject binaries that crash. For diagnosis, three sources matter.",
         ],
         checklist: [
-          "Watchdog terminations. iOS runs a watchdog that monitors launch time and responsiveness and ends unresponsive apps. These terminations carry the code 0x8badf00d in the crash report's termination reason. Apple does not publish one fixed time limit, so do not rely on a number ([[https://developer.apple.com/documentation/xcode/addressing-watchdog-terminations|Apple: addressing watchdog terminations]]).",
-          "Xcode Organizer. Its hang rate is the seconds per hour the app is unresponsive, counting only periods longer than 250 ms; backtraces are captured when the main thread is unresponsive for 1 second or more. Data comes only from users who consent to share it, hang reports cover iOS and iPadOS, and low-volume apps may see 'insufficient usage data' ([[https://developer.apple.com/documentation/xcode/analyzing-responsiveness-issues-in-your-shipping-app|Apple: analysing responsiveness issues]]). Launch Time shows p50 and p90 from tap to first screen.",
-          "MetricKit. Your app can receive the same data directly. Apple says metric reports about the previous 24 hours arrive at most once a day, and diagnostic reports (crashes, hangs, launch, CPU, memory and disk-write problems) arrive immediately on iOS 15 and later ([[https://developer.apple.com/documentation/metrickit|Apple: MetricKit]]).",
+          "Watchdog terminations. iOS runs a watchdog that monitors launch time and responsiveness and ends unresponsive apps. These terminations carry the code 0x8badf00d in the crash report's termination reason. Apple does not publish one fixed time limit, so do not rely on a number.",
+          "Xcode Organizer. Its hang rate is the seconds per hour the app is unresponsive, counting only periods longer than 250 ms; backtraces are captured when the main thread is unresponsive for 1 second or more. Data comes only from users who consent to share it, hang reports cover iOS and iPadOS, and low-volume apps may see 'insufficient usage data'. Launch Time shows p50 and p90 from tap to first screen.",
+          "MetricKit. Your app can receive the same data directly. Apple says metric reports about the previous 24 hours arrive at most once a day, and diagnostic reports (crashes, hangs, launch, CPU, memory and disk-write problems) arrive immediately on iOS 15 and later.",
         ],
       },
       {
         heading: "Why the numbers disagree",
         body: [
-          "Firebase Crashlytics counts crash-free users as installations of the app that did not have a fatal crash over the selected period ([[https://firebase.google.com/docs/crashlytics/crash-free-metrics|Firebase: crash-free metrics, vendor documentation]]). Google Play normalises by daily users and counts only crashes during active use. Apple's data comes only from users who agreed to share it. So 99% crash-free users in Crashlytics and a crash rate near Play's threshold can both be true. Pick one source per question, and use Play's figure when the question is 'are we at risk on the store?'.",
+          "Firebase Crashlytics counts crash-free users as installations of the app that did not have a fatal crash over the selected period. Google Play normalises by daily users and counts only crashes during active use. Apple's data comes only from users who agreed to share it. So 99% crash-free users in Crashlytics and a crash rate near Play's threshold can both be true. Pick one source per question, and use Play's figure when the question is 'are we at risk on the store?'.",
         ],
       },
       {
@@ -459,9 +459,9 @@ export const mobilePosts5: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Google: [[https://developer.android.com/topic/performance/vitals|Android vitals (updated 9 October 2026)]]; [[https://support.google.com/googleplay/android-developer/answer/9844486|Play Console Help: monitor your app's technical quality with Android vitals]]; [[https://developer.android.com/google/play/vitals/crash|Play Console: crash rate]]; [[https://developer.android.com/google/play/vitals/anr|Play Console: ANR rate]]; [[https://developer.android.com/topic/performance/vitals/anr|Android Developers: ANRs]]; [[https://developer.android.com/topic/performance/vitals/render|Android Developers: slow rendering]].",
-          "Apple: [[https://developer.apple.com/documentation/xcode/addressing-watchdog-terminations|Addressing watchdog terminations]]; [[https://developer.apple.com/documentation/xcode/analyzing-responsiveness-issues-in-your-shipping-app|Analyzing responsiveness issues in your shipping app]]; [[https://developer.apple.com/documentation/xcode/reducing-your-app-s-launch-time|Reducing your app's launch time]]; [[https://developer.apple.com/documentation/metrickit|MetricKit]]; [[https://developer.apple.com/app-store/review/guidelines/|App Review Guidelines]].",
-          "Vendor documentation: [[https://firebase.google.com/docs/crashlytics/crash-free-metrics|Firebase Crashlytics: crash-free metrics]].",
+          "Google: Android vitals (updated 9 October 2026); Play Console Help: monitor your app's technical quality with Android vitals; Play Console: crash rate; Play Console: ANR rate; Android Developers: ANRs; Android Developers: slow rendering.",
+          "Apple: Addressing watchdog terminations; Analyzing responsiveness issues in your shipping app; Reducing your app's launch time; MetricKit; App Review Guidelines.",
+          "Vendor documentation: Firebase Crashlytics: crash-free metrics.",
           "Accessed 15 October 2026. Thresholds, console reports and policies change; check the current pages before relying on a figure.",
         ],
       },
@@ -847,10 +847,10 @@ export const mobilePosts5: BlogPost[] = [
       {
         heading: "Market notes",
         body: [
-          "**India.** The Reserve Bank of India's Payment Aggregator Directions of 15 September 2025 set three categories (online, physical and cross-border), require non-bank payment aggregators to be authorised by the RBI (banks do not need authorisation), and require non-bank aggregators to hold merchant funds in an escrow account with a scheduled commercial bank. The baseline technology rules also say customer card credentials must not be stored in any database or server the merchant can access ([[https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12896|RBI]]). In practice: confirm that your provider is a bank or an authorised payment aggregator, and never store card numbers yourself.",
-          "For recurring payments, the RBI's Digital Payments E-mandate Framework, 2026 (21 April 2026) applies to cards, prepaid payment instruments and UPI. The mandate is registered with additional authentication; after that, recurring debits up to **₹15,000 per transaction** can run without it, and up to **₹1,00,000** for insurance premiums, mutual fund subscriptions and credit card bill payments. The customer must be notified at least **24 hours** before each debit, can change or withdraw the mandate at any time, and must not be charged for the facility ([[https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374|RBI]]). Digital goods in Indian apps still follow the store rules above.",
-          "**UK and EU.** Strong customer authentication applies when a payer initiates an electronic payment, unless an exemption applies; in the UK it has applied since 14 September 2019 ([[https://www.fca.org.uk/firms/strong-customer-authentication|FCA]]). EU exemptions, such as those for recurring and low-value payments, have specific conditions; rely on your provider's SDK and documentation to apply them rather than hard-coding thresholds.",
-          "**UAE and Singapore.** Payment services are licensed by the Central Bank of the UAE and the Monetary Authority of Singapore respectively. Ask any provider for its licence details and check them on the regulator's site; in Singapore, the [[https://eservices.mas.gov.sg/fid|MAS Financial Institutions Directory]] lets you look up payment institutions by licence type.",
+          "**India.** The Reserve Bank of India's Payment Aggregator Directions of 15 September 2025 set three categories (online, physical and cross-border), require non-bank payment aggregators to be authorised by the RBI (banks do not need authorisation), and require non-bank aggregators to hold merchant funds in an escrow account with a scheduled commercial bank. The baseline technology rules also say customer card credentials must not be stored in any database or server the merchant can access. In practice: confirm that your provider is a bank or an authorised payment aggregator, and never store card numbers yourself.",
+          "For recurring payments, the RBI's Digital Payments E-mandate Framework, 2026 (21 April 2026) applies to cards, prepaid payment instruments and UPI. The mandate is registered with additional authentication; after that, recurring debits up to **₹15,000 per transaction** can run without it, and up to **₹1,00,000** for insurance premiums, mutual fund subscriptions and credit card bill payments. The customer must be notified at least **24 hours** before each debit, can change or withdraw the mandate at any time, and must not be charged for the facility. Digital goods in Indian apps still follow the store rules above.",
+          "**UK and EU.** Strong customer authentication applies when a payer initiates an electronic payment, unless an exemption applies; in the UK it has applied since 14 September 2019. EU exemptions, such as those for recurring and low-value payments, have specific conditions; rely on your provider's SDK and documentation to apply them rather than hard-coding thresholds.",
+          "**UAE and Singapore.** Payment services are licensed by the Central Bank of the UAE and the Monetary Authority of Singapore respectively. Ask any provider for its licence details and check them on the regulator's site; in Singapore, the MAS Financial Institutions Directory lets you look up payment institutions by licence type.",
           "**Australia.** Surcharging, least-cost routing and PayTo are covered in [[/blogs/payment-gateway-integration-australia|payment gateway integration in Australia]].",
         ],
       },
@@ -874,7 +874,7 @@ export const mobilePosts5: BlogPost[] = [
       {
         heading: "Mobile payment architecture",
         body: [
-          "For physical goods and services, the app requests a payment from your server, which creates it with the payment provider. The provider's SDK collects card or wallet details and handles authentication. The provider notifies your server by webhook, and your server confirms the order. Stripe's iOS documentation, for example, explains that the app cannot create payment objects itself \"for security reasons\": the server creates them and returns a client secret to the app ([[https://docs.stripe.com/payments/accept-a-payment?payment-ui=mobile&platform=ios|Stripe documentation, vendor]]). For in-app purchases, the store processes the payment and your server verifies the transaction with Apple or Google.",
+          "For physical goods and services, the app requests a payment from your server, which creates it with the payment provider. The provider's SDK collects card or wallet details and handles authentication. The provider notifies your server by webhook, and your server confirms the order. Stripe's iOS documentation, for example, explains that the app cannot create payment objects itself \"for security reasons\": the server creates them and returns a client secret to the app. For in-app purchases, the store processes the payment and your server verifies the transaction with Apple or Google.",
         ],
         visual: { variant: "rows", accent: "orange", caption: "App → your server → payment provider → webhook → order confirmed; failures route to retry or recovery." },
       },
@@ -932,7 +932,7 @@ export const mobilePosts5: BlogPost[] = [
       {
         heading: "PCI considerations",
         body: [
-          "If you accept cards, PCI DSS applies to your business in some form. Stripe's security guide, for example, says businesses accepting payments must do so in a PCI-compliant manner and attest annually, and that integrations which send card data directly to the provider without it passing through your servers reduce your obligations ([[https://docs.stripe.com/security/guide|Stripe documentation, vendor]]). Keep card data within the provider's SDK or hosted fields, out of your servers and logs, and confirm your specific obligations with your provider.",
+          "If you accept cards, PCI DSS applies to your business in some form. Stripe's security guide, for example, says businesses accepting payments must do so in a PCI-compliant manner and attest annually, and that integrations which send card data directly to the provider without it passing through your servers reduce your obligations. Keep card data within the provider's SDK or hosted fields, out of your servers and logs, and confirm your specific obligations with your provider.",
         ],
       },
       {
@@ -966,9 +966,9 @@ export const mobilePosts5: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Platform rules: [[https://developer.apple.com/app-store/review/guidelines/|Apple App Store Review Guidelines, section 3.1]]; [[https://support.google.com/googleplay/android-developer/answer/9858738|Google Play Payments policy]].",
-          "Regulators: [[https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12896|RBI: Regulation of Payment Aggregators Directions, 2025]]; [[https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=61218|RBI press release, 15 September 2025]]; [[https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374|RBI: Digital Payments E-mandate Framework, 2026]]; [[https://www.fca.org.uk/firms/strong-customer-authentication|FCA: strong customer authentication]]; [[https://eservices.mas.gov.sg/fid|MAS Financial Institutions Directory]].",
-          "Vendor documentation (examples, not endorsements): [[https://stripe.com/global|Stripe global availability]]; [[https://docs.stripe.com/payments/accept-a-payment?payment-ui=mobile&platform=ios|Stripe: accept a payment on iOS]]; [[https://docs.stripe.com/security/guide|Stripe: integration security guide]]; [[https://razorpay.com/docs/payments/payment-methods/|Razorpay: payment methods]]; [[https://razorpay.com/docs/payments/international-payments/|Razorpay: international payments]].",
+          "Platform rules: Apple App Store Review Guidelines, section 3.1; Google Play Payments policy.",
+          "Regulators: RBI: Regulation of Payment Aggregators Directions, 2025; RBI press release, 15 September 2025; RBI: Digital Payments E-mandate Framework, 2026; FCA: strong customer authentication; MAS Financial Institutions Directory.",
+          "Vendor documentation (examples, not endorsements): Stripe global availability; Stripe: accept a payment on iOS; Stripe: integration security guide; Razorpay: payment methods; Razorpay: international payments.",
           "Accessed 15 October 2026. Payment regulations, store rules, provider availability and fees change; check the current pages and take professional advice.",
         ],
       },

@@ -782,7 +782,7 @@ export const aiAppsPosts7: BlogPost[] = [
         ],
         checklist: [
           "**Privacy Act:** if your business is covered, behavioral data linked to a person is personal information. Collect what the recommendations need, explain personalization in your privacy policy, and offer a way to turn it off where it is not essential.",
-          "**Tracking and pixels:** the OAIC's guidance on tracking pixels says the deploying business is responsible for compliance, should minimize what is collected and should generally not pass sensitive information to third parties ([[https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/tracking-pixels-and-privacy-obligations|OAIC]]).",
+          "**Tracking and pixels:** the OAIC's guidance on tracking pixels says the deploying business is responsible for compliance, should minimize what is collected and should generally not pass sensitive information to third parties.",
           "**Sensitive inferences:** avoid recommendations that reveal or infer health, financial hardship or other sensitive information, especially in notifications and emails others may see.",
           "**Consumer law:** recommendations and 'personalized' prices must not mislead. Be careful with labels such as 'most popular' or 'recommended for you' that imply something untrue, and with personalized pricing that customers would not expect.",
           "**Evaluation:** personalization does not always improve conversion or revenue; test against a non-personalized baseline. For stores, see [[/blogs/ai-ecommerce-australia|AI ecommerce in Australia]].",

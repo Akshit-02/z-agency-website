@@ -186,8 +186,8 @@ export const shopifyCroPosts4: BlogPost[] = [
       {
         heading: "Step 2: pull device-by-stage numbers",
         body: [
-          "**In Shopify.** The Sessions by device report \"displays the type of devices used to access your website\", which gives you the traffic split but not conversion. The Conversion rate breakdown report shows four steps: all sessions, sessions with cart additions, sessions that reached checkout, and sessions that completed checkout. It has no product-view step, and Shopify's help page describes no device split for it ([[https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports|Shopify Help Center]]). Shopify's page does suggest asking Sidekick to \"Show my conversion rate by device type for the last 30 days\"; availability may vary.",
-          "For the full cut, use ShopifyQL, which you can type into the query editor at the top of an analytics report. The sessions schema includes session_device_type (Desktop, Mobile, Tablet or Smart TV), the funnel counts, added_to_cart_rate, conversion_rate, and a session_viewed_product field that marks sessions with at least one product page view ([[https://shopify.dev/docs/api/shopifyql/latest/schemas/sessions_and_behavior/sessions.md|ShopifyQL sessions schema]]). Field names are versioned, so check them against your admin.",
+          "**In Shopify.** The Sessions by device report \"displays the type of devices used to access your website\", which gives you the traffic split but not conversion. The Conversion rate breakdown report shows four steps: all sessions, sessions with cart additions, sessions that reached checkout, and sessions that completed checkout. It has no product-view step, and Shopify's help page describes no device split for it. Shopify's page does suggest asking Sidekick to \"Show my conversion rate by device type for the last 30 days\"; availability may vary.",
+          "For the full cut, use ShopifyQL, which you can type into the query editor at the top of an analytics report. The sessions schema includes session_device_type (Desktop, Mobile, Tablet or Smart TV), the funnel counts, added_to_cart_rate, conversion_rate, and a session_viewed_product field that marks sessions with at least one product page view. Field names are versioned, so check them against your admin.",
         ],
         code: {
           label: "ShopifyQL (illustrative; check field names and syntax in your admin)",
@@ -197,7 +197,7 @@ export const shopifyCroPosts4: BlogPost[] = [
       {
         heading: "The same numbers in GA4",
         body: [
-          "In GA4, build a funnel exploration with steps for product view, add to cart, begin checkout and purchase, and set the breakdown to Device category. Google's documentation says this shows \"each step broken down by the different device categories\" ([[https://support.google.com/analytics/answer/9327974|GA4 funnel exploration help]]). Use an open funnel if many shoppers return in a later session to buy.",
+          "In GA4, build a funnel exploration with steps for product view, add to cart, begin checkout and purchase, and set the breakdown to Device category. Google's documentation says this shows \"each step broken down by the different device categories\". Use an open funnel if many shoppers return in a later session to buy.",
           "Know the caveat: in a breakdown, \"users are only attributed to the first instance of the breakdown value that applies to them\". A shopper who browses on a phone and buys on a laptop counts only under mobile. If cross-device buying is common for your products, mobile's later-stage rates in GA4 will look better than the experience deserves, and Shopify's session-based numbers are the safer comparison for those stages.",
         ],
       },
@@ -233,8 +233,8 @@ export const shopifyCroPosts4: BlogPost[] = [
       {
         heading: "Step 5: check mobile field performance",
         body: [
-          "Speed problems usually show up on mobile first. Google Search Console's Core Web Vitals report \"breaks down the data by the device used to view the URL (Mobile or Desktop)\", using real-user data from the Chrome UX Report over the last 28 days ([[https://support.google.com/webmasters/answer/9205520|Search Console Help]]). It groups similar URLs, so look for the groups that match the templates at your weak stage.",
-          "Shopify's web performance reports also cover desktop and mobile, and the Over Time, Page URL and Page Type reports for LCP, INP and CLS can be filtered by device type. They use real-user data, and Shopify notes data can be delayed by up to 36 hours ([[https://help.shopify.com/en/manual/online-store/web-performance/web-performance-dashboard|Shopify web performance dashboard]]). If the weak stage's templates are slow on mobile, the [[/blogs/shopify-speed-cro|Shopify speed guide]] is the next read.",
+          "Speed problems usually show up on mobile first. Google Search Console's Core Web Vitals report \"breaks down the data by the device used to view the URL (Mobile or Desktop)\", using real-user data from the Chrome UX Report over the last 28 days. It groups similar URLs, so look for the groups that match the templates at your weak stage.",
+          "Shopify's web performance reports also cover desktop and mobile, and the Over Time, Page URL and Page Type reports for LCP, INP and CLS can be filtered by device type. They use real-user data, and Shopify notes data can be delayed by up to 36 hours. If the weak stage's templates are slow on mobile, the [[/blogs/shopify-speed-cro|Shopify speed guide]] is the next read.",
         ],
       },
       {
@@ -258,7 +258,7 @@ export const shopifyCroPosts4: BlogPost[] = [
       {
         heading: "What the wider research says",
         body: [
-          "Mobile ecommerce usability is weak across the industry, not just on smaller stores. Baymard Institute's current mobile benchmark of 138 large US and European sites rates 62% \"mediocre\" or worse and 38% \"decent\", with none rated \"good\" overall ([[https://baymard.com/research/mcommerce-usability|Baymard Institute]]; the page is undated). That is a reason to expect problems, not a measure of your store.",
+          "Mobile ecommerce usability is weak across the industry, not just on smaller stores. Baymard Institute's current mobile benchmark of 138 large US and European sites rates 62% \"mediocre\" or worse and 38% \"decent\", with none rated \"good\" overall (Baymard Institute; the page is undated). That is a reason to expect problems, not a measure of your store.",
           "We do not quote mobile versus desktop conversion benchmarks. The figures that circulate mostly come from vendors without a published method, and stores differ too much by category, price and traffic source for an average to tell you anything. Your own device ratio by stage is the benchmark that matters.",
         ],
         callout: {
@@ -288,8 +288,8 @@ export const shopifyCroPosts4: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Shopify: [[https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports|Behaviour reports]]; [[https://shopify.dev/docs/api/shopifyql/latest/schemas/sessions_and_behavior/sessions.md|ShopifyQL sessions schema]]; [[https://changelog.shopify.com/posts/query-your-store-s-data-from-any-analytics-report|Changelog: query your store's data from any analytics report (11 June 2025)]]; [[https://help.shopify.com/en/manual/online-store/web-performance/web-performance-dashboard|Web performance dashboard]].",
-          "Google: [[https://support.google.com/analytics/answer/9327974|GA4 funnel exploration]]; [[https://support.google.com/webmasters/answer/9205520|Search Console Core Web Vitals report]]. Research: [[https://baymard.com/research/mcommerce-usability|Baymard Institute: mobile ecommerce UX benchmark]] (undated page).",
+          "Shopify: Behaviour reports; ShopifyQL sessions schema; Changelog: query your store's data from any analytics report (11 June 2025); Web performance dashboard.",
+          "Google: GA4 funnel exploration; Search Console Core Web Vitals report. Research: Baymard Institute: mobile ecommerce UX benchmark (undated page).",
           "Accessed 15 October 2026. Shopify reports and ShopifyQL fields change; check current documentation.",
         ],
       },

@@ -135,10 +135,10 @@ export const auSaasGrowthPosts: BlogPost[] = [
         table: {
           headers: ["Market", "What applies to pricing pages and subscriptions", "Status and source"],
           rows: [
-            ["India", "The Central Consumer Protection Authority's Guidelines for Prevention and Regulation of Dark Patterns, 2023 apply to platforms systematically offering goods or services in India, and to advertisers and sellers. The specified patterns include false urgency, basket sneaking, confirm shaming, subscription trap, drip pricing and SaaS billing.", "Reported as notified on 30 November 2023 ([[https://www.verdictum.in/news/central-consumer-protection-authority-dark-patterns-guidelines-notification-1507072|Verdictum]]; [[https://www.scconline.com/blog/post/2023/12/04/ccpa-notifies-guidelines-for-prevention-and-regulation-of-dark-patterns-2023-legal-news/|SCC Online]]). Summaries differ on whether 12 or 13 patterns are listed; check the official text."],
-            ["UK", "Unfair commercial practices rules under the DMCC Act: an invitation to purchase must give the full price, and falsely claiming an offer will finish soon is banned. The CMA's price transparency guidance covers mandatory fees, drip pricing and partitioned pricing. A separate subscription contracts regime will require key information upfront, reminders before renewal, easier cancellation and a 14-day cooling-off period after a free trial or a long-term renewal.", "Unfair practices rules in force since 6 April 2025 ([[https://www.gov.uk/government/publications/what-businesses-need-to-know-about-unfair-commercial-practices/what-businesses-need-to-know-about-unfair-commercial-practices|GOV.UK]]). CMA209 published 18 November 2025 ([[https://www.gov.uk/government/publications/price-transparency-cma209|GOV.UK]]). Subscription rules due January 2027, per a government release of 9 August 2026 ([[https://www.gov.uk/government/news/pm-starts-roll-out-of-everyday-fixes-on-the-cost-of-living-ending-rip-off-discounts-and-subscription-traps|GOV.UK]])."],
-            ["Australia", "A new unfair trading practices regime adds a general prohibition, drip pricing rules and subscription rules, including online cancellation where sign-up is online. Law firms report that the drip pricing rules cover consumer offers and do not apply to offers made to businesses, which matters for B2B SaaS. Separately, surcharges on eftpos, Mastercard and Visa cards were removed from 1 October 2026.", "Unfair trading practices law reported to commence 1 July 2027 ([[https://www.allens.com.au/insights-news/insights/2026/07/australias-new-unfair-trading-practices-regime-what-businesses-need-to-know/|Allens]]; bill record at [[https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/Bills_Search_Results/Result?bId=r7468|Parliament of Australia]]). Surcharging change from the [[https://www.rba.gov.au/media-releases/2026/mr-26-10.html|Reserve Bank of Australia]]."],
-            ["United States", "The FTC's amended negative option (\"click-to-cancel\") rule was vacated by the Eighth Circuit on 8 July 2025, so it is not in force. The Restore Online Shoppers' Confidence Act (ROSCA) and the FTC's general powers over unfair or deceptive practices still apply, and law firms report the FTC began a new rulemaking process in 2026. State auto-renewal laws may also apply.", "Reported by law firms, e.g. [[https://www.crowell.com/en/insights/client-alerts/clicking-all-the-right-boxes-ftc-moves-to-revive-click-to-cancel-rule-following-eighth-circuit-vacatur|Crowell]]. Check the FTC's site for the current position."],
+            ["India", "The Central Consumer Protection Authority's Guidelines for Prevention and Regulation of Dark Patterns, 2023 apply to platforms systematically offering goods or services in India, and to advertisers and sellers. The specified patterns include false urgency, basket sneaking, confirm shaming, subscription trap, drip pricing and SaaS billing.", "Reported as notified on 30 November 2023. Summaries differ on whether 12 or 13 patterns are listed; check the official text."],
+            ["UK", "Unfair commercial practices rules under the DMCC Act: an invitation to purchase must give the full price, and falsely claiming an offer will finish soon is banned. The CMA's price transparency guidance covers mandatory fees, drip pricing and partitioned pricing. A separate subscription contracts regime will require key information upfront, reminders before renewal, easier cancellation and a 14-day cooling-off period after a free trial or a long-term renewal.", "Unfair practices rules in force since 6 April 2025. CMA209 published 18 November 2025. Subscription rules due January 2027, per a government release of 9 August 2026."],
+            ["Australia", "A new unfair trading practices regime adds a general prohibition, drip pricing rules and subscription rules, including online cancellation where sign-up is online. Law firms report that the drip pricing rules cover consumer offers and do not apply to offers made to businesses, which matters for B2B SaaS. Separately, surcharges on eftpos, Mastercard and Visa cards were removed from 1 October 2026.", "Unfair trading practices law reported to commence 1 July 2027. Surcharging change from the Reserve Bank of Australia."],
+            ["United States", "The FTC's amended negative option (\"click-to-cancel\") rule was vacated by the Eighth Circuit on 8 July 2025, so it is not in force. The Restore Online Shoppers' Confidence Act (ROSCA) and the FTC's general powers over unfair or deceptive practices still apply, and law firms report the FTC began a new rulemaking process in 2026. State auto-renewal laws may also apply.", "Reported by law firms, e.g. Crowell. Check the FTC's site for the current position."],
           ],
         },
         callout: {
@@ -220,10 +220,10 @@ export const auSaasGrowthPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "UK: [[https://www.gov.uk/government/publications/what-businesses-need-to-know-about-unfair-commercial-practices/what-businesses-need-to-know-about-unfair-commercial-practices|GOV.UK: What businesses need to know about unfair commercial practices]]; [[https://www.gov.uk/government/publications/price-transparency-cma209|CMA: Price transparency (CMA209)]]; [[https://www.gov.uk/government/news/pm-starts-roll-out-of-everyday-fixes-on-the-cost-of-living-ending-rip-off-discounts-and-subscription-traps|GOV.UK press release, 9 August 2026, on subscription contract rules]].",
-          "India (law reports, not the official text): [[https://www.verdictum.in/news/central-consumer-protection-authority-dark-patterns-guidelines-notification-1507072|Verdictum on the CCPA dark patterns guidelines]]; [[https://www.scconline.com/blog/post/2023/12/04/ccpa-notifies-guidelines-for-prevention-and-regulation-of-dark-patterns-2023-legal-news/|SCC Online]].",
-          "Australia: [[https://www.allens.com.au/insights-news/insights/2026/07/australias-new-unfair-trading-practices-regime-what-businesses-need-to-know/|Allens: Australia's new unfair trading practices regime]] (law firm); [[https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/Bills_Search_Results/Result?bId=r7468|Parliament of Australia: Unfair Trading Practices Bill 2026]]; [[https://www.rba.gov.au/media-releases/2026/mr-26-10.html|Reserve Bank of Australia: Review of Merchant Card Payment Costs and Surcharging]].",
-          "United States (law firm): [[https://www.crowell.com/en/insights/client-alerts/clicking-all-the-right-boxes-ftc-moves-to-revive-click-to-cancel-rule-following-eighth-circuit-vacatur|Crowell & Moring on the vacated click-to-cancel rule]].",
+          "UK: GOV.UK: What businesses need to know about unfair commercial practices; CMA: Price transparency (CMA209); GOV.UK press release, 9 August 2026, on subscription contract rules.",
+          "India (law reports, not the official text): Verdictum on the CCPA dark patterns guidelines; SCC Online.",
+          "Australia: Allens: Australia's new unfair trading practices regime (law firm); Parliament of Australia: Unfair Trading Practices Bill 2026; Reserve Bank of Australia: Review of Merchant Card Payment Costs and Surcharging.",
+          "United States (law firm): Crowell & Moring on the vacated click-to-cancel rule.",
           "Accessed 14 October 2026. These rules are changing; check the current position before relying on any date or requirement.",
         ],
       },
@@ -479,7 +479,7 @@ export const auSaasGrowthPosts: BlogPost[] = [
         body: [],
         checklist: [
           "A versioned public API with clear deprecation policy.",
-          "OAuth 2.0 app authorisation with scopes per resource; follow RFC 9700 guidance ([[https://www.rfc-editor.org/rfc/rfc9700|RFC 9700]]).",
+          "OAuth 2.0 app authorisation with scopes per resource; follow RFC 9700 guidance.",
           "Webhooks with signatures, retries and event versioning.",
           "Rate limits per app and per customer.",
           "Sandbox accounts and test data for developers.",
@@ -648,7 +648,7 @@ export const auSaasGrowthPosts: BlogPost[] = [
       {
         heading: "Enforcement and testing",
         body: [
-          "Centralise authorisation in a shared layer or service that every endpoint uses, checking the user, tenant, role and resource for each request. Avoid scattered ad hoc checks. The OWASP Authorization Cheat Sheet recommends denying by default and validating permissions on every request ([[https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html|OWASP]]). Write automated tests for each role, including attempts to reach other tenants' data and admin functions, and run them on every change.",
+          "Centralise authorisation in a shared layer or service that every endpoint uses, checking the user, tenant, role and resource for each request. Avoid scattered ad hoc checks. The OWASP Authorization Cheat Sheet recommends denying by default and validating permissions on every request. Write automated tests for each role, including attempts to reach other tenants' data and admin functions, and run them on every change.",
         ],
       },
       {
@@ -783,7 +783,7 @@ export const auSaasGrowthPosts: BlogPost[] = [
       {
         heading: "Scoring options",
         body: [
-          "Scoring models make trade-offs visible. RICE, popularised by Intercom, scores reach, impact, confidence and effort ([[https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/|Intercom]]). Use it to compare options, not to automate decisions. Write the assumptions behind each score, lower confidence where evidence is thin, and revisit scores as you learn. Group small fixes that address the same problem.",
+          "Scoring models make trade-offs visible. RICE, popularised by Intercom, scores reach, impact, confidence and effort. Use it to compare options, not to automate decisions. Write the assumptions behind each score, lower confidence where evidence is thin, and revisit scores as you learn. Group small fixes that address the same problem.",
         ],
         callout: {
           type: "tip",

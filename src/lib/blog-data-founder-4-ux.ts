@@ -236,10 +236,10 @@ export const founderUxPosts4: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "GOV.UK Design System: [[https://design-system.service.gov.uk/patterns/question-pages/|question pages (including progress indicators)]]; [[https://design-system.service.gov.uk/patterns/check-answers/|check answers]]; [[https://design-system.service.gov.uk/patterns/complete-multiple-tasks/|complete multiple tasks]]; [[https://design-system.service.gov.uk/components/error-summary/|error summary]]. GOV.UK patterns are design guidance, not law.",
-          "Research: [[https://www.nngroup.com/articles/wizards/|NN/g, Wizards: definition and design recommendations (Raluca Budiu, 2017)]]; [[https://baymard.com/blog/checkout-flow-average-form-fields|Baymard Institute, checkout flow average form fields (Edward Scott, 2024)]].",
-          "Accessibility: [[https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html|WCAG 2.2 Understanding 3.3.7 Redundant Entry]]; [[https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html|2.4.3 Focus Order]]; [[https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable.html|2.2.1 Timing Adjustable]]; [[https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html|3.3.1 Error Identification]].",
-          "Analytics: [[https://support.google.com/analytics/answer/9216061|Google Analytics Help, enhanced measurement events]].",
+          "GOV.UK Design System: question pages (including progress indicators); check answers; complete multiple tasks; error summary. GOV.UK patterns are design guidance, not law.",
+          "Research: NN/g, Wizards: definition and design recommendations (Raluca Budiu, 2017); Baymard Institute, checkout flow average form fields (Edward Scott, 2024).",
+          "Accessibility: WCAG 2.2 Understanding 3.3.7 Redundant Entry; 2.4.3 Focus Order; 2.2.1 Timing Adjustable; 3.3.1 Error Identification.",
+          "Analytics: Google Analytics Help, enhanced measurement events.",
           "Accessed 15 October 2026. Design system guidance and analytics features change; check the current pages.",
         ],
       },
@@ -432,10 +432,10 @@ export const founderUxPosts4: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "Frameworks: [[https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/|Rodden, Hutchinson and Fu, Measuring the user experience on a large scale (CHI 2010)]]; [[https://www.nngroup.com/articles/castle-framework/|NN/g, the CASTLE framework (Page Laubheimer, 2023)]].",
-          "Task and survey metrics: [[https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/|NN/g, success rate (Nielsen and Budiu)]]; [[https://www.nngroup.com/articles/how-many-test-users/|NN/g, how many test users]]; [[https://measuringu.com/seq10/|MeasuringU, the Single Ease Question]]; [[https://measuringu.com/sus/|MeasuringU, measuring usability with SUS]]; [[https://measuringu.com/?p=352|MeasuringU, average task times in usability tests]].",
-          "NPS: [[https://www.netpromotersystem.com/about/measuring-your-net-promoter-score/|Bain, measuring your Net Promoter Score]] (vendor source; Bain owns NPS); [[https://hbr.org/2003/12/the-one-number-you-need-to-grow|Reichheld, The one number you need to grow (HBR, 2003)]]; [[https://doi.org/10.1509/jmkg.71.3.39|Keiningham et al., A longitudinal examination of Net Promoter and firm revenue growth (Journal of Marketing, 2007)]] (abstract) and [[https://measuringu.com/article-summaries/a-longitudinal-examination-of-net-promoter-and-firm-revenue-growth/|MeasuringU's summary]]; [[https://www.nngroup.com/articles/nps-ux/|NN/g, NPS and UX (Therese Fessenden, 2024)]].",
-          "Live metrics: [[https://web.dev/articles/vitals|web.dev, Web Vitals]]; [[https://support.google.com/analytics/answer/12195621|Google Analytics Help, engagement rate and bounce rate]].",
+          "Frameworks: Rodden, Hutchinson and Fu, Measuring the user experience on a large scale (CHI 2010); NN/g, the CASTLE framework (Page Laubheimer, 2023).",
+          "Task and survey metrics: NN/g, success rate (Nielsen and Budiu); NN/g, how many test users; MeasuringU, the Single Ease Question; MeasuringU, measuring usability with SUS; MeasuringU, average task times in usability tests.",
+          "NPS: Bain, measuring your Net Promoter Score (vendor source; Bain owns NPS); Reichheld, The one number you need to grow (HBR, 2003); Keiningham et al., A longitudinal examination of Net Promoter and firm revenue growth (Journal of Marketing, 2007) (abstract) and MeasuringU's summary; NN/g, NPS and UX (Therese Fessenden, 2024).",
+          "Live metrics: web.dev, Web Vitals; Google Analytics Help, engagement rate and bounce rate.",
           "Accessed 15 October 2026. Analytics definitions and thresholds can change; check the current pages.",
         ],
       },

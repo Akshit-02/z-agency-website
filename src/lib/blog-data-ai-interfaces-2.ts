@@ -88,7 +88,7 @@ export const aiInterfacePosts2: BlogPost[] = [
       {
         heading: "AI → Human: escalating without starting over",
         body: [
-          "The most visible failure in AI support is the customer who explains their problem to a bot, gets transferred, and explains it again. Prevent it by generating a handoff record (as above) and showing it to the person receiving the task before they reply. Tell the customer honestly what happens next and when. Route by reason and urgency, not just to a general queue; [[/blogs/ai-customer-support-automation|AI customer support automation]] covers routing in support teams. In commerce protocols the same idea appears as a formal escalation state: the UCP checkout specification, for example, requires the merchant to return a continue_url when a checkout needs buyer input the agent cannot provide, so the buyer can finish on the merchant's site ([[https://ucp.dev/specification/shopping/checkout/|UCP checkout]]).",
+          "The most visible failure in AI support is the customer who explains their problem to a bot, gets transferred, and explains it again. Prevent it by generating a handoff record (as above) and showing it to the person receiving the task before they reply. Tell the customer honestly what happens next and when. Route by reason and urgency, not just to a general queue; [[/blogs/ai-customer-support-automation|AI customer support automation]] covers routing in support teams. In commerce protocols the same idea appears as a formal escalation state: the UCP checkout specification, for example, requires the merchant to return a continue_url when a checkout needs buyer input the agent cannot provide, so the buyer can finish on the merchant's site.",
         ],
         checklist: [
           "Escalate on policy limits, low confidence, repeated failure, user request or sensitive situations",
@@ -325,7 +325,7 @@ Activity log + audit record for every tier`,
       {
         heading: "Trust UX vs AI transparency",
         body: [
-          "[[/blogs/ai-transparency-ux|AI transparency]] covers what an AI system can and cannot do, its sources and its uncertainty, mostly around outputs. Agent trust UX applies the same honesty to actions over time. An agent sending emails, updating records or buying things needs interfaces that let a person follow, verify and reverse its work, not just read its answers. Both build on established guidance such as Microsoft's Guidelines for Human-AI Interaction, which include making clear what the system can do, showing why it did what it did and supporting efficient correction ([[https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/|Microsoft Research]]).",
+          "[[/blogs/ai-transparency-ux|AI transparency]] covers what an AI system can and cannot do, its sources and its uncertainty, mostly around outputs. Agent trust UX applies the same honesty to actions over time. An agent sending emails, updating records or buying things needs interfaces that let a person follow, verify and reverse its work, not just read its answers. Both build on established guidance such as Microsoft's Guidelines for Human-AI Interaction, which include making clear what the system can do, showing why it did what it did and supporting efficient correction.",
         ],
       },
       {

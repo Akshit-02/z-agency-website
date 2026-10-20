@@ -138,9 +138,9 @@ export const auDataPaymentPosts: BlogPost[] = [
       {
         heading: "Privacy, consent and access control in Australia",
         body: [
-          "**Purpose.** If your business is covered by the Privacy Act, APP 6 generally limits the use and disclosure of personal information to the purpose for which it was collected, unless an exception applies, such as consent or a related secondary purpose the person would reasonably expect ([[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-6-app-6-use-or-disclosure-of-personal-information|OAIC]]). Combining support records with marketing data, for example, may be a new purpose. APP 7 sets rules for direct marketing, and APP 3 limits collection to what is reasonably necessary.",
-          "**Consent and unsubscribes.** Under the Spam Act, commercial electronic messages generally need consent, and unsubscribe requests must be honoured within five working days ([[https://www.acma.gov.au/avoid-sending-spam|ACMA]]). Store consent with its source and time, and push withdrawals to every sending system promptly.",
-          "**Security and breach scope.** Combined profiles concentrate personal information, so a breach affects more data. Restrict access by role, log access to full profiles, keep sensitive information out of marketing tools, and assess overseas data flows under APP 8. The OAIC received 1,205 data breach notifications in 2025 ([[https://www.oaic.gov.au/news/media-centre/data-breach-notifications-increase-to-all-time-high-in-2025,-new-ndb-stats-show|OAIC]]).",
+          "**Purpose.** If your business is covered by the Privacy Act, APP 6 generally limits the use and disclosure of personal information to the purpose for which it was collected, unless an exception applies, such as consent or a related secondary purpose the person would reasonably expect. Combining support records with marketing data, for example, may be a new purpose. APP 7 sets rules for direct marketing, and APP 3 limits collection to what is reasonably necessary.",
+          "**Consent and unsubscribes.** Under the Spam Act, commercial electronic messages generally need consent, and unsubscribe requests must be honoured within five working days. Store consent with its source and time, and push withdrawals to every sending system promptly.",
+          "**Security and breach scope.** Combined profiles concentrate personal information, so a breach affects more data. Restrict access by role, log access to full profiles, keep sensitive information out of marketing tools, and assess overseas data flows under APP 8. The OAIC received 1,205 data breach notifications in 2025.",
           "**Tracking data.** If behavioural data from websites or apps joins customer profiles, apply the OAIC's guidance on tracking pixels; see [[/blogs/product-analytics-implementation-australia|product analytics implementation]].",
         ],
       },
@@ -191,8 +191,8 @@ export const auDataPaymentPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "**Privacy:** [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-6-app-6-use-or-disclosure-of-personal-information|OAIC, APP 6]]; [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information|OAIC, APP 8]]; [[https://www.oaic.gov.au/news/media-centre/data-breach-notifications-increase-to-all-time-high-in-2025,-new-ndb-stats-show|OAIC, NDB statistics 2025]].",
-          "**Messages:** [[https://www.acma.gov.au/avoid-sending-spam|ACMA, avoid sending spam]].",
+          "**Privacy:** OAIC, APP 6; OAIC, APP 8; OAIC, NDB statistics 2025.",
+          "**Messages:** ACMA, avoid sending spam.",
           "Tables, checklists and example are ours. Nothing here is legal advice or ZSpace client data.",
         ],
       },
@@ -287,16 +287,16 @@ export const auDataPaymentPosts: BlogPost[] = [
         },
         callout: {
           type: "note",
-          text: "PCI DSS applies to anyone who stores, processes or transmits cardholder data. Using hosted pages or secure fields keeps most of that with the provider, but you still have responsibilities, such as protecting the page that loads the payment form. Check your obligations with your provider and the PCI Security Standards Council ([[https://www.pcisecuritystandards.org/|PCI SSC]]).",
+          text: "PCI DSS applies to anyone who stores, processes or transmits cardholder data. Using hosted pages or secure fields keeps most of that with the provider, but you still have responsibilities, such as protecting the page that loads the payment form. Check your obligations with your provider and the PCI Security Standards Council.",
         },
       },
       {
         heading: "Australian payment changes that affect your integration",
         body: [
-          "**Surcharging.** The Reserve Bank's March 2026 decision removed surcharging on eftpos, Mastercard and Visa debit, prepaid and credit cards from 1 October 2026; the RBA reports that American Express and UnionPay also removed surcharging from 1 October 2026, and PayPal from 5 October 2026, by their own decision rather than RBA regulation; buy now pay later and other methods remain under review ([[https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/faqs/|RBA FAQs]]; [[https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/executive-summary.html|RBA]]). Remove surcharge lines for those networks from checkout, invoices and receipts, and build costs into prices.",
-          "**Least-cost routing.** Around nine in ten Australian debit cards are dual-network cards that can be processed through eftpos or an international network, and least-cost routing lets merchants send transactions through the cheaper one. The RBA expects providers to offer least-cost routing, but has reported that online enablement lags in-person; it planned further consultation on online and mobile wallet routing from mid-2026 ([[https://www.rba.gov.au/payments-and-infrastructure/debit-cards/least-cost-routing/|RBA]]). Ask your provider whether it is available for your online payments and how it is enabled.",
-          "**PayTo.** PayTo, on the New Payments Platform, lets customers approve payment agreements in their banking app and manage them there, which can suit recurring and account-to-account payments ([[https://www.nppa.com.au/the-platform/payto/|NPP Australia]]). Provider support varies.",
-          "**Buy now pay later.** From 10 June 2025, buy now pay later contracts are regulated credit, and providers need an Australian credit licence ([[https://asic.gov.au/regulatory-resources/credit/buy-now-pay-later-credit-contracts-credit-licensing/|ASIC]]). Merchants integrate BNPL through providers' own checkouts or a gateway that supports them, and should display BNPL terms accurately. For marketplaces that split payments between sellers, see [[/blogs/marketplace-development-australia|marketplace development in Australia]].",
+          "**Surcharging.** The Reserve Bank's March 2026 decision removed surcharging on eftpos, Mastercard and Visa debit, prepaid and credit cards from 1 October 2026; the RBA reports that American Express and UnionPay also removed surcharging from 1 October 2026, and PayPal from 5 October 2026, by their own decision rather than RBA regulation; buy now pay later and other methods remain under review. Remove surcharge lines for those networks from checkout, invoices and receipts, and build costs into prices.",
+          "**Least-cost routing.** Around nine in ten Australian debit cards are dual-network cards that can be processed through eftpos or an international network, and least-cost routing lets merchants send transactions through the cheaper one. The RBA expects providers to offer least-cost routing, but has reported that online enablement lags in-person; it planned further consultation on online and mobile wallet routing from mid-2026. Ask your provider whether it is available for your online payments and how it is enabled.",
+          "**PayTo.** PayTo, on the New Payments Platform, lets customers approve payment agreements in their banking app and manage them there, which can suit recurring and account-to-account payments. Provider support varies.",
+          "**Buy now pay later.** From 10 June 2025, buy now pay later contracts are regulated credit, and providers need an Australian credit licence. Merchants integrate BNPL through providers' own checkouts or a gateway that supports them, and should display BNPL terms accurately. For marketplaces that split payments between sellers, see [[/blogs/marketplace-development-australia|marketplace development in Australia]].",
           "**Currency and GST.** Show prices in AUD including GST for consumers (see [[/blogs/shopify-development-australia|Shopify development in Australia]] for platform settings), make sure the amounts sent to the gateway match displayed totals, and record GST correctly in reconciliation.",
         ],
       },
@@ -391,8 +391,8 @@ Every event: store event ID, ignore repeats`,
       {
         heading: "Sources",
         body: [
-          "**Australian payments:** [[https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/executive-summary.html|RBA, surcharging conclusions]]; [[https://www.rba.gov.au/payments-and-infrastructure/debit-cards/least-cost-routing/|RBA, least-cost routing]]; [[https://www.nppa.com.au/the-platform/payto/|NPP Australia, PayTo]]; [[https://asic.gov.au/regulatory-resources/credit/buy-now-pay-later-credit-contracts-credit-licensing/|ASIC, BNPL credit licensing]].",
-          "**Security:** [[https://www.pcisecuritystandards.org/|PCI Security Standards Council]].",
+          "**Australian payments:** RBA, surcharging conclusions; RBA, least-cost routing; NPP Australia, PayTo; ASIC, BNPL credit licensing.",
+          "**Security:** PCI Security Standards Council.",
           "Least-cost routing and PayTo points are summarised from official guidance and provider documentation. Tables, checklists and example are ours. No fees are quoted. Nothing here is financial or legal advice or ZSpace client data.",
         ],
       },
@@ -542,9 +542,9 @@ Every event: store event ID, ignore repeats`,
       {
         heading: "Australian considerations",
         body: [
-          "**Retention.** Business guidance generally says most business records must be kept for five years, and electronic records are acceptable when they are true and complete reproductions ([[https://business.gov.au/finance/accounting/record-keeping|business.gov.au]]). Other laws may require longer retention for some records. Check before deciding what not to migrate or archive.",
-          "**Destruction or de-identification.** If you are covered by the Privacy Act, APP 11 requires reasonable steps to destroy or de-identify personal information you no longer need, unless a law requires you to keep it ([[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-11-app-11-security-of-personal-information|OAIC]]). A migration is a natural point to apply this, rather than moving everything forward forever.",
-          "**Overseas access.** If migration staff or tools outside Australia access personal information, APP 8 applies ([[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information|OAIC]]). Use masked data where possible and put protections in contracts.",
+          "**Retention.** Business guidance generally says most business records must be kept for five years, and electronic records are acceptable when they are true and complete reproductions. Other laws may require longer retention for some records. Check before deciding what not to migrate or archive.",
+          "**Destruction or de-identification.** If you are covered by the Privacy Act, APP 11 requires reasonable steps to destroy or de-identify personal information you no longer need, unless a law requires you to keep it. A migration is a natural point to apply this, rather than moving everything forward forever.",
+          "**Overseas access.** If migration staff or tools outside Australia access personal information, APP 8 applies. Use masked data where possible and put protections in contracts.",
           "**Breaches.** Lost extracts and misconfigured staging environments are common breach causes. If an eligible data breach occurs, the Notifiable Data Breaches scheme applies. See [[/blogs/website-security-australia|website security for Australian small businesses]] for the incident sequence.",
         ],
       },
@@ -623,7 +623,7 @@ Every event: store event ID, ignore repeats`,
       {
         heading: "Sources",
         body: [
-          "[[https://business.gov.au/finance/accounting/record-keeping|business.gov.au, record keeping]]; [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-11-app-11-security-of-personal-information|OAIC, APP 11]]; [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information|OAIC, APP 8]].",
+          "business.gov.au, record keeping; OAIC, APP 11; OAIC, APP 8.",
           "The checklist, tables and example are ours. Nothing here is legal or tax advice or ZSpace client data.",
         ],
       },

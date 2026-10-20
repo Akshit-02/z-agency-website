@@ -228,7 +228,7 @@ export const aiCorePosts11: BlogPost[] = [
           "Voice agents in Australia face a few specific rules and expectations. For the customer service context, see [[/blogs/ai-customer-service-australia|AI customer service in Australia]].",
         ],
         checklist: [
-          "**Outbound calls:** telemarketing calls must follow the Do Not Call Register rules and the industry standard's calling hours (for example 9am to 8pm on weekdays, no calls on Sundays or public holidays), based on the recipient's local time ([[https://www.donotcall.gov.au/industry/industry-overview/industry-standards|Do Not Call Register]]).",
+          "**Outbound calls:** telemarketing calls must follow the Do Not Call Register rules and the industry standard's calling hours (for example 9am to 8pm on weekdays, no calls on Sundays or public holidays), based on the recipient's local time.",
           "**Call recording:** recording and listening laws differ between states and territories; tell callers if calls are recorded and get legal advice on consent requirements.",
           "**Disclosure:** tell callers they are speaking with an automated agent, and offer a person.",
           "**SMS follow-ups:** marketing messages need consent under the Spam Act; factual service messages are treated differently.",

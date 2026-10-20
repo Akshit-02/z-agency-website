@@ -92,7 +92,7 @@ export const auEngineeringOpsPosts: BlogPost[] = [
       {
         heading: "Step 1: Get visibility",
         body: [
-          "Turn on the cost reporting your provider offers (and report it alongside the measures in [[/blogs/business-intelligence-dashboards-australia|your business dashboards]]), export detailed billing data, and enforce a tagging standard (owner, product, environment, cost centre). Allocate shared costs, such as networking and support, by a simple agreed rule. Report spend by team and product monthly, with trends. The FinOps Foundation describes this cycle as inform, optimise and operate ([[https://www.finops.org/framework/|FinOps Foundation]]).",
+          "Turn on the cost reporting your provider offers (and report it alongside the measures in [[/blogs/business-intelligence-dashboards-australia|your business dashboards]]), export detailed billing data, and enforce a tagging standard (owner, product, environment, cost centre). Allocate shared costs, such as networking and support, by a simple agreed rule. Report spend by team and product monthly, with trends. The FinOps Foundation describes this cycle as inform, optimise and operate.",
         ],
       },
       {
@@ -110,7 +110,7 @@ export const auEngineeringOpsPosts: BlogPost[] = [
       {
         heading: "Step 3: Right-size and choose the right services",
         body: [
-          "Use measured CPU, memory and I/O over a representative period to resize instances, databases and containers; many workloads run on resources sized for a peak that never came. Use autoscaling for variable load. Consider managed or serverless services where they reduce operational work (see [[/blogs/devops-for-growing-businesses|DevOps for growing businesses]] for the operational side), but compare total cost: a managed database may cost more per hour and less in staff time. AWS's Well-Architected cost optimisation pillar is a useful checklist ([[https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html|AWS]]).",
+          "Use measured CPU, memory and I/O over a representative period to resize instances, databases and containers; many workloads run on resources sized for a peak that never came. Use autoscaling for variable load. Consider managed or serverless services where they reduce operational work (see [[/blogs/devops-for-growing-businesses|DevOps for growing businesses]] for the operational side), but compare total cost: a managed database may cost more per hour and less in staff time. AWS's Well-Architected cost optimisation pillar is a useful checklist.",
         ],
       },
       {
@@ -137,7 +137,7 @@ export const auEngineeringOpsPosts: BlogPost[] = [
         heading: "Australian considerations",
         body: [
           "**Currency.** Many cloud services are priced in US dollars, so Australian costs move with the exchange rate. Report usage and AUD cost separately so you can tell whether a rise came from more resources or a weaker dollar. Ask your accountant how GST and currency appear on your cloud invoices.",
-          "**Region choice.** AWS, Microsoft Azure and Google Cloud all run Sydney and Melbourne regions. Prices and service availability differ by region. A cheaper overseas region may increase latency for Australian users and, if you handle personal information and are covered by the Privacy Act, raise APP 8 obligations ([[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information|OAIC]]). Customer contracts may also specify data location. Decide on all of these together.",
+          "**Region choice.** AWS, Microsoft Azure and Google Cloud all run Sydney and Melbourne regions. Prices and service availability differ by region. A cheaper overseas region may increase latency for Australian users and, if you handle personal information and are covered by the Privacy Act, raise APP 8 obligations. Customer contracts may also specify data location. Decide on all of these together.",
           "**Business hours.** Scheduling non-production shutdowns (and [[/blogs/data-migration-australia|data migrations]] or other maintenance windows) needs to account for several time zones and daylight saving if your team spans states or works with offshore developers.",
         ],
       },
@@ -196,7 +196,7 @@ export const auEngineeringOpsPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://www.finops.org/framework/|FinOps Foundation framework]]; [[https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html|AWS Well-Architected pillars]]; [[https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html|AWS Regions]]; [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information|OAIC, APP 8]].",
+          "FinOps Foundation framework; AWS Well-Architected pillars; AWS Regions; OAIC, APP 8.",
           "Tables, checklists and example are ours. No savings are promised. Nothing here is financial or tax advice or ZSpace client data.",
         ],
       },
@@ -344,7 +344,7 @@ Release      -> deploy to production (staged)
       {
         heading: "Measuring progress",
         body: [
-          "The DORA research programme popularised four delivery measures: deployment frequency, lead time for changes, change failure rate and time to restore service ([[https://dora.dev/|DORA]]). Track them for your team over time, alongside user-facing measures such as error rates and incidents. Use them to find bottlenecks, not to rank teams.",
+          "The DORA research programme popularised four delivery measures: deployment frequency, lead time for changes, change failure rate and time to restore service. Track them for your team over time, alongside user-facing measures such as error rates and incidents. Use them to find bottlenecks, not to rank teams.",
         ],
       },
       {
@@ -381,7 +381,7 @@ Release      -> deploy to production (staged)
       {
         heading: "Sources",
         body: [
-          "[[https://dora.dev/|DORA research programme]]; [[https://sre.google/sre-book/service-level-objectives/|Google SRE book, service level objectives]]; [[https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html|AWS Well-Architected pillars]].",
+          "DORA research programme; Google SRE book, service level objectives; AWS Well-Architected pillars.",
           "Tables, pipeline and plan are ours. No delivery outcome is promised. Nothing here is ZSpace client data.",
         ],
       },
@@ -475,14 +475,14 @@ Release      -> deploy to production (staged)
       {
         heading: "The three signals",
         body: [
-          "**Logs** record events. Use structured logs (key-value or JSON) with timestamps, severity, request ID, tenant ID where relevant, and a clear message; avoid logging secrets and personal data. **Metrics** are numbers over time: request rates, error rates, latency percentiles, queue depth, resource use. **Traces** follow a request across services, showing where time is spent and where it failed. OpenTelemetry provides a vendor-neutral way to produce all three ([[https://opentelemetry.io/docs/|OpenTelemetry]]).",
+          "**Logs** record events. Use structured logs (key-value or JSON) with timestamps, severity, request ID, tenant ID where relevant, and a clear message; avoid logging secrets and personal data. **Metrics** are numbers over time: request rates, error rates, latency percentiles, queue depth, resource use. **Traces** follow a request across services, showing where time is spent and where it failed. OpenTelemetry provides a vendor-neutral way to produce all three.",
           "Add **error tracking** to capture exceptions with stack traces and context, grouped and assigned to owners, for both server and browser code.",
         ],
       },
       {
         heading: "SLIs, SLOs and alerting",
         body: [
-          "Pick a few journeys that matter, such as sign-in, checkout, booking or report generation, and define indicators like 'share of checkout requests completing successfully within two seconds'. Set objectives for them over a period, as described in Google's SRE guidance ([[https://sre.google/sre-book/service-level-objectives/|Google SRE book]]). Alert when you are at risk of missing an objective, not on every internal blip.",
+          "Pick a few journeys that matter, such as sign-in, checkout, booking or report generation, and define indicators like 'share of checkout requests completing successfully within two seconds'. Set objectives for them over a period, as described in Google's SRE guidance. Alert when you are at risk of missing an objective, not on every internal blip.",
         ],
         checklist: [
           "Every alert has an owner and a runbook link.",
@@ -509,7 +509,7 @@ Release      -> deploy to production (staged)
           "Use internal IDs rather than emails or names in logs and traces.",
           "Configure session replay and front-end monitoring to mask inputs and text.",
           "Restrict access to logs and set retention to what operations and investigations need.",
-          "Know where your observability vendor stores data; if you are covered by the Privacy Act and telemetry includes personal information, APP 8 and APP 11 apply ([[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-11-app-11-security-of-personal-information|OAIC]]).",
+          "Know where your observability vendor stores data; if you are covered by the Privacy Act and telemetry includes personal information, APP 8 and APP 11 apply.",
         ],
       },
       {
@@ -545,7 +545,7 @@ Release      -> deploy to production (staged)
       {
         heading: "Sources",
         body: [
-          "[[https://opentelemetry.io/docs/|OpenTelemetry documentation]]; [[https://sre.google/sre-book/service-level-objectives/|Google SRE book, service level objectives]]; [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-11-app-11-security-of-personal-information|OAIC, APP 11]].",
+          "OpenTelemetry documentation; Google SRE book, service level objectives; OAIC, APP 11.",
           "Tables, checklists and example are ours. No uptime or performance outcome is promised. Nothing here is ZSpace client data.",
         ],
       },
@@ -684,8 +684,8 @@ Release      -> deploy to production (staged)
       {
         heading: "Australian legal considerations",
         body: [
-          "**Consumer guarantees.** Under the Australian Consumer Law, a business can be a 'consumer' when it acquires goods or services costing up to $100,000, a threshold that applies from 1 July 2021, subject to exclusions such as goods acquired for resupply ([[https://russellkennedy.com.au/insights-events/insights/the-100-000-question-are-you-a-consumer-for-the-purpose-of-the-australian-consumer-law|Russell Kennedy]]). Where the guarantees apply, services must be provided with due care and skill, and contract terms cannot exclude them.",
-          "**Unfair contract terms.** Since 9 November 2023, unfair terms in standard form contracts with small businesses can attract penalties, not just be void ([[https://www.accc.gov.au/media-release/businesses-urged-to-remove-unfair-contract-terms-ahead-of-law-changes|ACCC]]). Watch for one-sided variation rights, broad limitations of liability, automatic renewals and termination terms. Have a lawyer review the agreement.",
+          "**Consumer guarantees.** Under the Australian Consumer Law, a business can be a 'consumer' when it acquires goods or services costing up to $100,000, a threshold that applies from 1 July 2021, subject to exclusions such as goods acquired for resupply. Where the guarantees apply, services must be provided with due care and skill, and contract terms cannot exclude them.",
+          "**Unfair contract terms.** Since 9 November 2023, unfair terms in standard form contracts with small businesses can attract penalties, not just be void. Watch for one-sided variation rights, broad limitations of liability, automatic renewals and termination terms. Have a lawyer review the agreement.",
           "**Privacy and data.** If the provider accesses personal information, the contract should cover security, breach notification and overseas access (APP 8). See [[/blogs/cyber-incident-response-plan-australia|cyber incident response planning]].",
         ],
       },
@@ -737,7 +737,7 @@ Release      -> deploy to production (staged)
       {
         heading: "Sources",
         body: [
-          "[[https://russellkennedy.com.au/insights-events/insights/the-100-000-question-are-you-a-consumer-for-the-purpose-of-the-australian-consumer-law|Russell Kennedy, the $100,000 question]]; [[https://www.accc.gov.au/media-release/businesses-urged-to-remove-unfair-contract-terms-ahead-of-law-changes|ACCC, unfair contract terms]]; [[https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information|OAIC, APP 8]].",
+          "Russell Kennedy, the $100,000 question; ACCC, unfair contract terms; OAIC, APP 8.",
           "Legal points come from regulator and law-firm summaries; get advice for your agreement. Tables and checklists are ours. No ZSpace Labs pricing or commitments are described here.",
         ],
       },

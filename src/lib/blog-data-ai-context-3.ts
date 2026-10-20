@@ -90,7 +90,7 @@ Marketing    lead     "Jon Doe, Acme Ind."   M-40012
         heading: "How entity resolution works",
         body: [
           "Most pipelines follow the same stages. **Standardize** names, addresses, phone numbers and codes. **Block** records into candidate groups (same postcode, same email domain) so you avoid comparing everything with everything. **Compare** candidate pairs on several attributes. **Score** each pair, with rules for exact identifiers and a probabilistic or ML model for fuzzy evidence. **Decide** using thresholds: auto-link, auto-reject or send to review. **Cluster** linked pairs into entities and assign canonical IDs. **Maintain** links as new records arrive, and keep the ability to split wrong merges.",
-          "The classic statistical approach is the Fellegi-Sunter model, which weighs how much each agreeing or disagreeing attribute changes the odds of a match. The UK Ministry of Justice's open-source library Splink implements it at scale and is used to link people across courts, prisons and probation data ([[https://moj-analytical-services.github.io/splink/|Splink documentation]]).",
+          "The classic statistical approach is the Fellegi-Sunter model, which weighs how much each agreeing or disagreeing attribute changes the odds of a match. The UK Ministry of Justice's open-source library Splink implements it at scale and is used to link people across courts, prisons and probation data.",
         ],
         code: {
           label: "Entity resolution pipeline (diagram)",
@@ -251,13 +251,13 @@ Mktg ─┘                         ┌─────────────�
       {
         heading: "Source timestamps: measure age correctly",
         body: [
-          "Freshness should be measured from when a fact changed in the source, not when your pipeline loaded it. A batch that loaded at 09:00 might contain data extracted at 02:00. Carry source timestamps (status_updated_at, price_effective_from, document_modified_at) through pipelines, into retrieval metadata and into tool responses. Transformation tools can check this: dbt, for example, lets you declare warn_after and error_after thresholds on a source's loaded_at_field ([[https://docs.getdbt.com/reference/resource-properties/freshness|dbt freshness reference]]). Make freshness part of each dataset's [[/blogs/ai-data-contracts|data contract]].",
+          "Freshness should be measured from when a fact changed in the source, not when your pipeline loaded it. A batch that loaded at 09:00 might contain data extracted at 02:00. Carry source timestamps (status_updated_at, price_effective_from, document_modified_at) through pipelines, into retrieval metadata and into tool responses. Transformation tools can check this: dbt, for example, lets you declare warn_after and error_after thresholds on a source's loaded_at_field. Make freshness part of each dataset's [[/blogs/ai-data-contracts|data contract]].",
         ],
       },
       {
         heading: "TTLs and cache invalidation",
         body: [
-          "Every cache in an AI system needs a time to live that matches the data, not a single global value. Cache static content for hours or days, product data for minutes, and do not cache decision-critical facts at all. HTTP caching semantics (max-age, validation with ETags) remain a good model for tool responses ([[https://www.rfc-editor.org/rfc/rfc9111|RFC 9111]]).",
+          "Every cache in an AI system needs a time to live that matches the data, not a single global value. Cache static content for hours or days, product data for minutes, and do not cache decision-critical facts at all. HTTP caching semantics (max-age, validation with ETags) remain a good model for tool responses.",
           "TTLs alone are not enough for content that changes unpredictably. Pair them with **invalidation**: when a policy is published, a price changes or a product is withdrawn, emit an event that removes or refreshes the affected cache entries and retrieval chunks. Deletions matter as much as updates; an index that never removes withdrawn documents will keep citing them. For caching LLM responses specifically, see [[/blogs/llm-batching-and-caching|LLM batching and caching]].",
         ],
       },
@@ -374,7 +374,7 @@ Mktg ─┘                         ┌─────────────�
       {
         heading: "What a provenance record contains",
         body: [
-          "The W3C PROV model describes provenance in terms of **entities** (things, such as documents and answers), **activities** (things that happen, such as retrieval and generation) and **agents** (who or what is responsible) ([[https://www.w3.org/TR/prov-dm/|W3C PROV-DM]]). That maps well onto AI systems. A practical record for one answer includes:",
+          "The W3C PROV model describes provenance in terms of **entities** (things, such as documents and answers), **activities** (things that happen, such as retrieval and generation) and **agents** (who or what is responsible). That maps well onto AI systems. A practical record for one answer includes:",
         ],
         table: {
           headers: ["Element", "What to record"],
@@ -421,7 +421,7 @@ Shown to user         2 citations · request req-9c21`,
       {
         heading: "Citations and evidence in practice",
         body: [
-          "Several model platforms now return citation data natively. Anthropic's Claude API, for example, can return citations that point to the exact passages of supplied documents used in an answer ([[https://platform.claude.com/docs/en/build-with-claude/citations|Claude citations documentation]]); other providers' file search and grounding features return source annotations. Use these to build the claim-to-evidence map, but store your own IDs alongside them, because the model's citation refers to what it was given, and only your system knows which document version and retrieval run that was.",
+          "Several model platforms now return citation data natively. Anthropic's Claude API, for example, can return citations that point to the exact passages of supplied documents used in an answer; other providers' file search and grounding features return source annotations. Use these to build the claim-to-evidence map, but store your own IDs alongside them, because the model's citation refers to what it was given, and only your system knows which document version and retrieval run that was.",
           "For tool-based answers, the evidence is the tool output. Return structured results with IDs and timestamps from tools, and record them. 'Your order shipped yesterday' should map to a specific get_order call and its as-of time.",
         ],
       },
@@ -506,7 +506,7 @@ Shown to user         2 citations · request req-9c21`,
       {
         heading: "Why text-to-SQL is harder on real business data",
         body: [
-          "Demos use clean schemas with obvious names. Enterprise warehouses have hundreds of tables, legacy naming, several versions of the same entity, soft-deleted rows, test orders and business rules that exist only in report code. Research benchmarks reflect this: BIRD, which uses large real-world databases with dirty values and external knowledge, still shows a clear gap between the best automated systems and human experts ([[https://bird-bench.github.io/|BIRD benchmark]]).",
+          "Demos use clean schemas with obvious names. Enterprise warehouses have hundreds of tables, legacy naming, several versions of the same entity, soft-deleted rows, test orders and business rules that exist only in report code. Research benchmarks reflect this: BIRD, which uses large real-world databases with dirty values and external knowledge, still shows a clear gap between the best automated systems and human experts.",
           "The failure mode is not a crash. It is a confident, plausible, wrong number. That is why text-to-SQL needs more than a capable model.",
         ],
       },

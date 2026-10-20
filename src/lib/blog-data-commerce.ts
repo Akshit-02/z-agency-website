@@ -130,7 +130,7 @@ export const commercePosts: BlogPost[] = [
         heading: "Checkout, Payments, Shipping and Taxes",
         body: [
           "Shopify hosts checkout, which means security and core checkout behavior are handled for you. On all plans you configure payment methods, accelerated checkouts, shipping profiles and rates, taxes, and checkout branding; thank-you and order status pages can be extended with apps. Customizing the information, shipping and payment steps with checkout UI extensions requires Shopify Plus. See [[/blogs/shopify-checkout-optimization|Shopify checkout optimization]].",
-          "Shipping rules deserve real testing. Unexpected extra costs are the most common reason shoppers give for abandoning checkout in Baymard's research, cited by 40% of US adults who abandoned an order (Baymard Institute, updated September 2025) ([[https://baymard.com/lists/cart-abandonment-rate|Baymard Institute]]). Show delivery costs early and make sure the rates you configure match what the product page promises.",
+          "Shipping rules deserve real testing. Unexpected extra costs are the most common reason shoppers give for abandoning checkout in Baymard's research, cited by 40% of US adults who abandoned an order (Baymard Institute, updated September 2025). Show delivery costs early and make sure the rates you configure match what the product page promises.",
         ],
       },
       {
@@ -415,8 +415,8 @@ export const commercePosts: BlogPost[] = [
       { q: "What is Shopify Hydrogen?", a: "Hydrogen is Shopify's framework for building headless storefronts. Shopify describes Hydrogen projects as React Router apps preconfigured with Shopify-specific components, utilities and patterns for working with Shopify's APIs." },
       { q: "What is Oxygen?", a: "Oxygen is Shopify's global hosting platform for Hydrogen storefronts, running at the edge with separate deployment environments so changes can be previewed before production." },
       { q: "Does Oxygen cost extra?", a: "Shopify's documentation says Oxygen is available at no extra charge on paid Shopify plans. Development, maintenance and any third-party services are still your costs." },
-      { q: "Is Hydrogen built on Remix?", a: "Hydrogen was originally built on Remix. Documentation for Hydrogen 2026-04 and earlier describes Hydrogen projects as React Router apps, following Remix's merge into React Router. Older articles may still refer to Remix. Since Hydrogen 2026-10 (14 October 2026), Shopify describes Hydrogen as a framework-agnostic JavaScript library with starters for React Router and Next.js, and existing Hydrogen storefronts keep working as they do now ([[https://shopify.dev/changelog/blog/hydrogen-2026-10-is-now-available|Shopify changelog: Hydrogen 2026-10]])." },
-      { q: "Do I need Shopify Plus to use Hydrogen?", a: "No. Oxygen is available at no extra charge on paid plans, including Starter, but not on Agentic plans. What differs by plan is the number of public Oxygen environments: 25 on Shopify Plus and 1 on other paid plans ([[https://shopify.dev/docs/storefronts/hydrogen/deploy/oxygen/environments|Shopify: Oxygen environments]]). Environments are private by default, and limits can change." },
+      { q: "Is Hydrogen built on Remix?", a: "Hydrogen was originally built on Remix. Documentation for Hydrogen 2026-04 and earlier describes Hydrogen projects as React Router apps, following Remix's merge into React Router. Older articles may still refer to Remix. Since Hydrogen 2026-10 (14 October 2026), Shopify describes Hydrogen as a framework-agnostic JavaScript library with starters for React Router and Next.js, and existing Hydrogen storefronts keep working as they do now." },
+      { q: "Do I need Shopify Plus to use Hydrogen?", a: "No. Oxygen is available at no extra charge on paid plans, including Starter, but not on Agentic plans. What differs by plan is the number of public Oxygen environments: 25 on Shopify Plus and 1 on other paid plans. Environments are private by default, and limits can change." },
       { q: "Is Hydrogen faster than a Liquid theme?", a: "It can be, because you control rendering, caching and what JavaScript ships. But a well-optimized Liquid theme is fast too, and a poorly built Hydrogen site can be slow. Speed comes from the implementation, not the framework alone." },
       { q: "Do Shopify apps work with Hydrogen?", a: "Apps that manage data in the admin generally still work. Apps that inject storefront features through theme app blocks don't appear automatically; you integrate them through their APIs or SDKs, if they offer them." },
       { q: "Can my marketing team edit a Hydrogen store?", a: "Not through the theme editor. Teams usually edit content in a headless CMS or in Shopify metaobjects, with components built to render it. Plan this before building." },
@@ -585,7 +585,7 @@ export const commercePosts: BlogPost[] = [
       {
         heading: "Hydrogen and Shopify Plans",
         body: [
-          "Hydrogen and Oxygen are available beyond Plus. The plan difference is public Oxygen environments: 25 on Shopify Plus and 1 on other paid plans ([[https://shopify.dev/docs/storefronts/hydrogen/deploy/oxygen/environments|Shopify: Oxygen environments]]). Plan choice affects checkout customization, B2B features and other capabilities more than Hydrogen itself. Decide on Hydrogen and on Plus separately. See [[/blogs/shopify-plus-development|Shopify Plus development]] and [[/blogs/shopify-plus-vs-shopify|Shopify Plus vs Shopify]].",
+          "Hydrogen and Oxygen are available beyond Plus. The plan difference is public Oxygen environments: 25 on Shopify Plus and 1 on other paid plans. Plan choice affects checkout customization, B2B features and other capabilities more than Hydrogen itself. Decide on Hydrogen and on Plus separately. See [[/blogs/shopify-plus-development|Shopify Plus development]] and [[/blogs/shopify-plus-vs-shopify|Shopify Plus vs Shopify]].",
         ],
       },
       {
@@ -752,15 +752,15 @@ export const commercePosts: BlogPost[] = [
         ],
         callout: {
           type: "note",
-          text: "Apps built with theme app extensions add content through app blocks and app embeds and don't edit theme code ([[https://shopify.dev/docs/apps/build/online-store/theme-app-extensions|Shopify.dev]]). Older apps may have written code into the theme, and Shopify notes that some of it isn't removed automatically on uninstall ([[https://help.shopify.com/en/manual/apps/uninstalling-apps|Shopify Help Center]]).",
+          text: "Apps built with theme app extensions add content through app blocks and app embeds and don't edit theme code. Older apps may have written code into the theme, and Shopify notes that some of it isn't removed automatically on uninstall.",
         },
       },
       {
         heading: "Platform Changes That Force an App Review in 2026–27",
         body: [
           "Two Shopify deprecations mean many stores have to review their app stack whether or not they planned to.",
-          "**Shopify Scripts have stopped.** Shopify's changelog says editing and publishing Scripts ended on 15 April 2026 and all Scripts stopped running on 30 June 2026, with Shopify Functions as the replacement ([[https://shopify.dev/changelog/shopify-scripts-will-be-deprecated-on-june-30-2026|Shopify changelog]]). If discount, shipping or payment logic used to live in Scripts, confirm what replaced it and that it still behaves as intended.",
-          "**Storefront script tags are ending.** According to Shopify's changelog, from 1 October 2026 apps can no longer create or update script tags, and on 1 March 2027 Shopify stops injecting script tags into storefronts on all stores. Apps are expected to move to app embed blocks, or to web pixels for analytics and conversion tracking ([[https://shopify.dev/changelog/online-store-script-tags-deprecation|Shopify changelog]]). Script tags on the Order status page already stopped running on 28 August 2025 for Plus stores and 26 August 2026 for all other stores ([[https://shopify.dev/docs/apps/build/online-store/blocking-script-tags|Shopify.dev]]).",
+          "**Shopify Scripts have stopped.** Shopify's changelog says editing and publishing Scripts ended on 15 April 2026 and all Scripts stopped running on 30 June 2026, with Shopify Functions as the replacement. If discount, shipping or payment logic used to live in Scripts, confirm what replaced it and that it still behaves as intended.",
+          "**Storefront script tags are ending.** According to Shopify's changelog, from 1 October 2026 apps can no longer create or update script tags, and on 1 March 2027 Shopify stops injecting script tags into storefronts on all stores. Apps are expected to move to app embed blocks, or to web pixels for analytics and conversion tracking. Script tags on the Order status page already stopped running on 28 August 2025 for Plus stores and 26 August 2026 for all other stores.",
           "Use the deadline as the prompt for the audit above. Ask each vendor whether their app still relies on script tags and when it will move. An app that won't be updated goes straight into replace or remove. If several affected apps sit on the same template, plan the replacement together with a redesign of that template, so you don't rebuild the same page twice.",
         ],
         callout: {
@@ -835,7 +835,7 @@ export const commercePosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://shopify.dev/changelog/shopify-scripts-will-be-deprecated-on-june-30-2026|Shopify changelog: Shopify Scripts will be deprecated on June 30, 2026]]; [[https://shopify.dev/changelog/online-store-script-tags-deprecation|Shopify changelog: online store script tags deprecation]]; [[https://shopify.dev/docs/apps/build/online-store/blocking-script-tags|Shopify.dev: script tags on the Order status page]]; [[https://shopify.dev/docs/apps/build/online-store/theme-app-extensions|Shopify.dev: theme app extensions]]; [[https://help.shopify.com/en/manual/apps/uninstalling-apps|Shopify Help Center: uninstalling apps]].",
+          "Shopify changelog: Shopify Scripts will be deprecated on June 30, 2026; Shopify changelog: online store script tags deprecation; Shopify.dev: script tags on the Order status page; Shopify.dev: theme app extensions; Shopify Help Center: uninstalling apps.",
           "Accessed 14 October 2026. Platform deadlines can change; check the changelog before planning around them.",
         ],
       },

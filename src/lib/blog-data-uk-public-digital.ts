@@ -80,7 +80,7 @@ export const ukPublicDigitalPosts: BlogPost[] = [
         table: {
           headers: ["Area", "What it means in practice"],
           rows: [
-            ["**Most advantageous tender**", "Award against published criteria and weightings; quality and social value can outweigh price ([[https://www.gov.uk/government/publications/procurement-act-2023-guidance-documents-procure-phase/assessing-competitive-tenders-html|guidance on assessing tenders]])"],
+            ["**Most advantageous tender**", "Award against published criteria and weightings; quality and social value can outweigh price"],
             ["**Central Digital Platform**", "Suppliers register core information once and reuse it across bids"],
             ["**Transparency notices**", "More notices across the lifecycle, including pipeline, award and contract performance information"],
             ["**Exclusions and debarment**", "Grounds for excluding suppliers, including a central debarment list"],
@@ -93,9 +93,9 @@ export const ukPublicDigitalPosts: BlogPost[] = [
         heading: "Common requirements to check before bidding",
         body: [],
         checklist: [
-          "**Cyber Essentials:** [[https://www.gov.uk/government/publications/ppn-014-cyber-essentials-scheme/ppn-014-cyber-essentials-scheme-html|PPN 014]] applies to central government departments, agencies, NDPBs and NHS bodies for contracts with certain characteristics; certification must be renewed annually.",
-          "**Accessibility:** WCAG 2.2 AA and an accessibility statement under the public sector accessibility regulations ([[https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps|GOV.UK]]).",
-          "**Service Standard and Technology Code of Practice:** central government services are expected to meet them; see [[/blogs/gds-service-standard-for-product-teams|the Service Standard for product teams]] and the [[https://www.gov.uk/guidance/the-technology-code-of-practice|Technology Code of Practice]].",
+          "**Cyber Essentials:** PPN 014 applies to central government departments, agencies, NDPBs and NHS bodies for contracts with certain characteristics; certification must be renewed annually.",
+          "**Accessibility:** WCAG 2.2 AA and an accessibility statement under the public sector accessibility regulations.",
+          "**Service Standard and Technology Code of Practice:** central government services are expected to meet them; see [[/blogs/gds-service-standard-for-product-teams|the Service Standard for product teams]] and the Technology Code of Practice.",
           "**Data protection and security:** UK GDPR processor terms, security clearance for some roles, data location requirements.",
           "**Open source and ownership:** whether new code must be open and who owns IP.",
           "**Social value:** evidence for any social value criteria.",
@@ -158,7 +158,7 @@ export const ukPublicDigitalPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://www.legislation.gov.uk/ukpga/2023/54/contents|Procurement Act 2023]]; [[https://www.gov.uk/government/collections/procurement-act-2023-guidance-documents|Cabinet Office: Procurement Act 2023 guidance]]; [[https://www.gov.uk/government/publications/procurement-act-2023-guidance-documents-procure-phase/assessing-competitive-tenders-html|Guidance: assessing competitive tenders]]; [[https://www.gov.uk/government/publications/ppn-014-cyber-essentials-scheme/ppn-014-cyber-essentials-scheme-html|PPN 014: Cyber Essentials scheme]]; [[https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps|Accessibility requirements for public sector websites and apps]]; [[https://www.gov.uk/service-manual/agile-delivery|Service Manual: agile delivery]].",
+          "Procurement Act 2023; Cabinet Office: Procurement Act 2023 guidance; Guidance: assessing competitive tenders; PPN 014: Cyber Essentials scheme; Accessibility requirements for public sector websites and apps; Service Manual: agile delivery.",
           "Accessed 10 October 2026. Procurement rules differ in Scotland. Nothing here is legal or procurement advice.",
         ],
       },
@@ -222,7 +222,7 @@ export const ukPublicDigitalPosts: BlogPost[] = [
       {
         heading: "The 14 points, grouped",
         body: [
-          "The points are published in the [[https://www.gov.uk/service-manual/service-standard|GOV.UK Service Manual]]. Grouping them makes them easier to use.",
+          "The points are published in the GOV.UK Service Manual. Grouping them makes them easier to use.",
         ],
         table: {
           headers: ["Group", "Points", "Commercial equivalent"],
@@ -289,7 +289,7 @@ export const ukPublicDigitalPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://www.gov.uk/service-manual/service-standard|GOV.UK Service Manual: Service Standard]]; [[https://www.gov.uk/service-manual/agile-delivery|Service Manual: agile delivery]]; [[https://www.gov.uk/service-manual/service-assessments|Service Manual: service assessments]]; [[https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction|Making your service accessible]].",
+          "GOV.UK Service Manual: Service Standard; Service Manual: agile delivery; Service Manual: service assessments; Making your service accessible.",
           "Accessed 10 October 2026.",
         ],
       },
@@ -410,7 +410,7 @@ export const ukPublicDigitalPosts: BlogPost[] = [
       {
         heading: "User experience and inclusion",
         body: [
-          "Explain why you need the check, what the person will need (document, camera, time) and what happens to their data before they start. Support mobile hand-off from desktop, give clear guidance on photo capture, and show a route for people without suitable documents or devices. Test the flow with assistive technology. Government guidance on [[https://www.gov.uk/government/publications/identity-proofing-and-verification-of-an-individual|identity proofing and verification]] (GPG 45) explains how evidence and checks combine into levels of confidence.",
+          "Explain why you need the check, what the person will need (document, camera, time) and what happens to their data before they start. Support mobile hand-off from desktop, give clear guidance on photo capture, and show a route for people without suitable documents or devices. Test the flow with assistive technology. Government guidance on identity proofing and verification (GPG 45) explains how evidence and checks combine into levels of confidence.",
         ],
       },
       {
@@ -433,7 +433,7 @@ export const ukPublicDigitalPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://www.gov.uk/government/publications/office-for-digital-identities-and-attributes-2026-annual-report/ofdia-2026-annual-report-on-the-operation-of-part-2-of-data-use-and-access-act-2025|OfDIA 2026 annual report (14 July 2026)]]; [[https://www.gov.uk/government/organisations/office-for-digital-identities-and-attributes|Office for Digital Identities and Attributes]]; [[https://www.gov.uk/government/collections/right-to-work-checks-employer-guidance|Right to work checks: employer guidance]]; [[https://www.gov.uk/view-right-to-work|View a job applicant's right to work details]]; [[https://www.gov.uk/government/publications/identity-proofing-and-verification-of-an-individual|GPG 45: identity proofing and verification]].",
+          "OfDIA 2026 annual report (14 July 2026); Office for Digital Identities and Attributes; Right to work checks: employer guidance; View a job applicant's right to work details; GPG 45: identity proofing and verification.",
           "Accessed 10 October 2026. Right to work guidance changes; use the current employer's guide. Nothing here is legal advice.",
         ],
       },
@@ -511,9 +511,9 @@ export const ukPublicDigitalPosts: BlogPost[] = [
         table: {
           headers: ["Topic", "Position (England and Wales)"],
           rows: [
-            ["**General validity**", "Electronic signatures can execute documents if there is intention to authenticate and formalities are met ([[https://lawcom.gov.uk/project/electronic-execution-of-documents/|Law Commission, 2019]])"],
+            ["**General validity**", "Electronic signatures can execute documents if there is intention to authenticate and formalities are met"],
             ["**Legal basis**", "Electronic Communications Act 2000, UK eIDAS and case law"],
-            ["**Deeds**", "Witnessing still required where the law requires it; HM Land Registry has accepted witnessed electronic signatures since 27 July 2020 under its conditions, including the witness being physically present ([[https://hmlandregistry.blog.gov.uk/2020/07/27/electronic-signatures-in-practice/|HMLR]])"],
+            ["**Deeds**", "Witnessing still required where the law requires it; HM Land Registry has accepted witnessed electronic signatures since 27 July 2020 under its conditions, including the witness being physically present"],
             ["**Wills**", "Outside scope; Wills Act 1837 formalities apply"],
             ["**Scotland and Northern Ireland**", "Separate rules; take local advice"],
           ],
@@ -558,7 +558,7 @@ export const ukPublicDigitalPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://lawcom.gov.uk/project/electronic-execution-of-documents/|Law Commission: electronic execution of documents]]; [[https://hmlandregistry.blog.gov.uk/2020/07/27/electronic-signatures-in-practice/|HM Land Registry: electronic signatures in practice]].",
+          "Law Commission: electronic execution of documents; HM Land Registry: electronic signatures in practice.",
           "Accessed 10 October 2026. Nothing here is legal advice.",
         ],
       },
@@ -680,7 +680,7 @@ export const ukPublicDigitalPosts: BlogPost[] = [
       {
         heading: "Sources",
         body: [
-          "[[https://www.gov.uk/government/publications/guide-to-maintaining-roadworthiness/guide-to-maintaining-roadworthiness-commercial-goods-and-passenger-carrying-vehicles|DVSA: Guide to maintaining roadworthiness (updated 28 April 2025)]].",
+          "DVSA: Guide to maintaining roadworthiness (updated 28 April 2025).",
           "Accessed 10 October 2026.",
         ],
       },
