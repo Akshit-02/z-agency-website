@@ -41,6 +41,7 @@ Readable summary: [Claude Doc](https://claude.ai/code/artifact/85b98ac1-bb03-468
 | 19 | Baseline and KPI tracking specification | `19-kpi-specification.md` |
 | — | Per-URL progress ledger | `progress-ledger.csv` |
 | — | Articles stripped of links on 3 Oct (no links to be added) | `link-free-articles.txt` |
+| — | GSC-driven batch (22 Oct): analysis, URL map, change log, linking plan, technical report, summary | `gsc-2026-10-22/` |
 
 ## Owner decisions recorded (17 October 2026)
 

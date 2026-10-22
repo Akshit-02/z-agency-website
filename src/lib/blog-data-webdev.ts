@@ -464,7 +464,7 @@ export const webDevPosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "There's no honest single number for how long a website takes — but understanding the real stages, and what speeds them up or slows them down, is what lets you plan a realistic launch date instead of anchoring to a number that was never grounded in your project's actual scope.",
+          "There's no honest single number for how long a website takes — but understanding the real stages, and what speeds them up or slows them down, is what lets you plan a realistic launch date instead of anchoring to a number that was never grounded in your project's actual scope. If your project includes an iOS or Android app, see [[/blogs/mobile-app-development-timeline|how long it takes to build a mobile app]], which covers store review and testing waits that websites do not have.",
         ],
       },
     ],

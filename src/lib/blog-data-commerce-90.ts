@@ -234,7 +234,7 @@ export const commercePosts90: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "A loyalty program is built from five parts: event intake (orders, returns, reviews, sign-ups, store purchases), a rules engine that turns events into points and tier progress, an append-only points ledger from which balances are derived, redemption flows at checkout and POS, and channel integrations for the account page, emails and apps. Keep points pending until return windows close, reverse points on refunds, calculate tiers on schedule, protect redemptions from abuse and give finance the data to account for outstanding points.",
+          "A loyalty program is built from five parts: event intake (orders, returns, reviews, sign-ups, store purchases), a [[/blogs/business-rules-engine|rules engine]] that turns events into points and tier progress, an append-only points ledger from which balances are derived, redemption flows at checkout and POS, and channel integrations for the account page, emails and apps. Keep points pending until return windows close, reverse points on refunds, calculate tiers on schedule, protect redemptions from abuse and give finance the data to account for outstanding points.",
         ],
       },
       {

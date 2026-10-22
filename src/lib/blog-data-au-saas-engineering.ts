@@ -277,10 +277,11 @@ Every tenant-owned table (projects, invoices, files ...) carries organisation_id
     sceneKind: "pipeline",
     bannerAlt: "A new feature deployed behind a flag, rolled out to internal users, then a small percentage of customers, then everyone, with a kill switch and flag cleanup",
     date: "2026-10-10",
-    readingTime: "5 min read",
+    updated: "2026-10-22",
+    readingTime: "9 min read",
     relatedServiceSlugs: ["website-development", "mobile-app-development"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
-    relatedSlugs: ["devops-for-growing-businesses", "multi-tenant-saas-architecture", "ecommerce-ab-testing"],
+    relatedSlugs: ["devops-for-growing-businesses", "multi-tenant-saas-architecture", "ecommerce-ab-testing", "mobile-app-release-management"],
     faqs: [
       {
         q: "What is a feature flag?",
@@ -302,13 +303,21 @@ Every tenant-owned table (projects, invoices, files ...) carries organisation_id
         q: "Are feature flags secure for controlling access?",
         a: "Flags can gate features by plan or customer, but they are not a substitute for server-side authorisation. If a flag hides a feature in the interface, the backend must still check that the user is entitled to use it. Never evaluate security-critical flags only in client code.",
       },
+      {
+        q: "How do you implement feature flags step by step?",
+        a: "Decide where each flag is evaluated (server-side for anything sensitive), choose storage (configuration for a few flags, a flag service for targeting and rollouts), set naming and ownership rules, wrap every check in one interface with a safe default, record flag state in logs and analytics, and create the removal task at the same time as the flag.",
+      },
+      {
+        q: "What is the difference between a feature flag and an A/B test?",
+        a: "A feature flag is the mechanism that switches behaviour on or off for chosen users. An A/B test uses that mechanism to assign users to variants consistently and measure the effect on agreed metrics. Every A/B test needs a flag, but most flags are for releases and kill switches, not experiments.",
+      },
     ],
     content: [
       {
         heading: "How should teams implement feature flags?",
         body: [
           "**Use flags to separate deploying code from releasing features: deploy behind a flag, release to internal users, then a small share of customers, then everyone, with a kill switch ready. Classify flags by purpose, give each an owner and expiry, control who can change them in production, test important combinations, and remove flags once they have done their job.** Flags reduce release risk; unmanaged flags create new risk.",
-          "This guide is for engineering leads and product teams adopting or tidying up feature flags. It covers flag types, rollouts, kill switches, experimentation, governance, access control and cleanup. For release practices around flags, see [[/blogs/devops-for-growing-businesses|DevOps for growing businesses]].",
+          "This guide is for engineering leads and product teams adopting or tidying up feature flags. It covers flag types, a step-by-step implementation, percentage rollouts, kill switches, build-or-buy choices, mobile apps, experimentation, governance, access control and cleanup. For release practices around flags, see [[/blogs/devops-for-growing-businesses|DevOps for growing businesses]].",
         ],
       },
       {
@@ -339,6 +348,22 @@ Every tenant-owned table (projects, invoices, files ...) carries organisation_id
         },
       },
       {
+        heading: "How to implement feature flags, step by step",
+        body: [
+          "The mechanics are simple; the discipline around them is what keeps flags useful. This sequence works for a first flag and scales to hundreds.",
+        ],
+        checklist: [
+          "**Decide where each flag is evaluated.** Evaluate on the server for anything that affects money, data access or security. Client-side evaluation is fine for presentation-only changes.",
+          "**Choose storage and delivery.** A configuration file or database table is enough for a handful of on/off flags. Move to a flag service with SDKs when you need targeting, percentage rollouts and an audit history.",
+          "**Set a naming convention and required metadata.** Record type, owner, creation date, expiry or review date and the linked ticket for every flag.",
+          "**Wrap evaluation in one small interface.** Call sites ask \"is this enabled for this user?\" through your own function, so the provider can change without touching every call site.",
+          "**Define safe defaults.** Decide what each flag returns if the flag service is slow or unreachable. For new features, that is usually off.",
+          "**Record flag state in logs and analytics.** When investigating an incident or reading an experiment, you need to know which variant a user saw.",
+          "**Create the removal task when you create the flag.** Release and experiment flags should have a planned end.",
+        ],
+        code: { label: "A single, fail-safe flag check (illustrative TypeScript)", text: "type FlagKey = \"new-checkout\" | \"pricing-page-test\";\n\n// Every flag check in the codebase goes through this function.\nexport async function isEnabled(\n  key: FlagKey,\n  ctx: { userId: string; accountId: string; plan: string },\n): Promise<boolean> {\n  try {\n    // flagProvider wraps your config table, flag service or OpenFeature client.\n    return await flagProvider.getBoolean(key, ctx, false); // default: off\n  } catch {\n    return false; // fail safe if the provider is unavailable\n  }\n}" },
+      },
+      {
         heading: "Gradual rollouts and kill switches",
         body: [],
         checklist: [
@@ -347,6 +372,34 @@ Every tenant-owned table (projects, invoices, files ...) carries organisation_id
           "Define in advance what triggers a rollback, and who decides.",
           "Keep kill switches for risky dependencies, such as third-party APIs and AI features.",
           "Make sure flag evaluation fails safe if the flag service is unavailable.",
+        ],
+      },
+      {
+        heading: "Percentage rollouts: keep assignment consistent",
+        body: [
+          "A percentage rollout should put the same user in the same group on every request and every device. The usual approach is to hash a stable identifier, such as the user or account ID, together with the flag key, and compare the result with the rollout percentage. Random assignment on each request makes features flicker on and off and makes bug reports impossible to reproduce.",
+          "For B2B products, roll out by account rather than by user, so colleagues in the same company see the same version of a screen. Raise the percentage in planned steps, and only after checking the metrics agreed for that stage.",
+        ],
+      },
+      {
+        heading: "Build or buy a feature flag system",
+        body: [
+          "Most teams start with configuration and outgrow it. Pick the simplest option that covers the next year of needs. OpenFeature, a vendor-neutral specification hosted by the Cloud Native Computing Foundation, defines a common API for flag evaluation, which makes it easier to change provider later.",
+        ],
+        table: {
+          headers: ["Option", "Fits when", "Trade-off"],
+          rows: [
+            ["**Configuration file or environment variables**", "A few release flags; changing them through a deploy is acceptable", "No targeting or percentages; every change is a deploy"],
+            ["**Database table with an admin screen**", "Dozens of flags, mostly on/off by account or plan", "You build auditing, permissions and caching yourself"],
+            ["**Self-hosted open-source flag server**", "Targeting and percentage rollouts needed; data must stay in your infrastructure", "You run, secure and upgrade it"],
+            ["**Commercial flag service**", "Several teams and platforms, frequent experiments, audit requirements", "Subscription cost and vendor dependency; keep your own interface in front of it"],
+          ],
+        },
+      },
+      {
+        heading: "Feature flags in mobile apps",
+        body: [
+          "Mobile apps add constraints. Users run old versions for months, the app must cache flag values for offline use, and a flag cannot switch on code that is not in the installed build. Ship new code paths switched off in a release, cache flag values with sensible defaults, and keep kill switches for features that depend on your servers or third-party services. Combine flags with the app stores' staged rollouts; see [[/blogs/mobile-app-release-management|mobile app release management]] and [[/blogs/offline-first-mobile-app-development|offline-first app development]].",
         ],
       },
       {

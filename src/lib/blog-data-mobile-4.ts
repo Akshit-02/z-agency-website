@@ -843,9 +843,8 @@ export const mobilePosts4: BlogPost[] = [
   {
     slug: "offline-first-mobile-app-development",
     title: "Should Your App Work Offline? Offline-First Planning and Development Guide",
-    seoTitle: "Should Your App Work Offline? Offline-First Guide",
-    excerpt:
-      "Decide job by job whether your app needs offline support, what drives the extra effort, and how local data, sync queues and conflict rules fit together.",
+    seoTitle: "Offline Mobile App Development: An Offline-First Guide",
+    excerpt: "Offline mobile app development, job by job: which tasks need offline support, what drives the effort, and how local data, sync queues and conflicts fit.",
     category: "Mobile Apps",
     banner: "offlinesync",
     sceneKind: "mobile",

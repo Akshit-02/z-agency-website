@@ -168,18 +168,18 @@ export const auSectorPlatformPosts: BlogPost[] = [
   {
     slug: "membership-management-software-australia",
     title: "Membership Management Software in Australia: Requirements for Associations, Clubs and Professional Bodies",
-    seoTitle: "Membership Management Software in Australia",
-    excerpt:
-      "Membership software for Australian associations and clubs: records, renewals, payments, events, portals, reporting, migration, privacy and association rules.",
+    seoTitle: "Membership Software in Australia: Associations and Clubs Guide",
+    excerpt: "Choosing membership software in Australia: what associations, clubs and professional bodies need for renewals, payments, portals, events and migration.",
     category: "Web Development",
     banner: "accountmap",
     sceneKind: "crm",
     bannerAlt: "A membership system with member records, renewal reminders, online payments, event registrations and a member portal, reporting to the committee",
     date: "2026-10-10",
-    readingTime: "5 min read",
+    updated: "2026-10-22",
+    readingTime: "10 min read",
     relatedServiceSlugs: ["website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["nonprofits-civic", "professional-services", "sports-fitness", "education-edtech"],
-    relatedSlugs: ["nonprofit-software-development-australia", "customer-portal-development-australia", "custom-crm-development-australia"],
+    relatedSlugs: ["nonprofit-software-development-australia", "customer-portal-development-australia", "custom-crm-development-australia", "data-migration-australia"],
     faqs: [
       {
         q: "Should an association build custom membership software?",
@@ -200,6 +200,18 @@ export const auSectorPlatformPosts: BlogPost[] = [
       {
         q: "What is involved in migrating to new membership software?",
         a: "Cleaning duplicate and outdated records, mapping categories and statuses, moving payment and renewal history, preserving consent and communication preferences, and running test migrations before switching. Let members confirm their details after migration. Check retention rules before deleting old records.",
+      },
+      {
+        q: "What is the best membership software for clubs and associations in Australia?",
+        a: "There is no single best platform. The right choice depends on your membership model, payment needs, size and integrations. Sporting clubs may need to work alongside their governing body's registration system, professional bodies usually need CPD and accreditation features, and associations with company members need organisation-level billing. Shortlist two or three platforms, test them with your own scenarios and check how you would export your data before signing.",
+      },
+      {
+        q: "How much does membership management software cost?",
+        a: "It depends on the pricing model. Many platforms charge by member count or tier, some add transaction fees on payments, and some charge separately for modules such as events or CPD. Add setup, migration, integrations and training, and compare total cost over several years rather than the monthly subscription alone.",
+      },
+      {
+        q: "When is the best time to switch membership systems?",
+        a: "Away from your main renewal period. Go live well before renewals open, or just after the bulk of renewals are processed, so the first large renewal cycle on the new system is not also its first week. Allow time to clean data and run at least one trial migration first.",
       },
     ],
     content: [
@@ -248,6 +260,22 @@ export const auSectorPlatformPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Requirements by organisation type",
+        body: [
+          "Membership software is a broad category. The same platform can suit one organisation and frustrate another, because clubs, associations and professional bodies weight different capabilities. Start by placing yourself in the table below, then read the rest of this guide with those priorities in mind.",
+        ],
+        table: {
+          headers: ["Organisation", "Usually needs most", "Watch for"],
+          rows: [
+            ["**Sporting or social club**", "Fast online joining, family and junior memberships, season or annual renewals, event and fixture communications, volunteer roles", "Whether your state or national governing body requires registrations through its own platform, and how your system works alongside it"],
+            ["**Industry or trade association**", "Organisation memberships with several contacts, tiered fees, events, member directories and member-only content", "Company-level billing with individual logins; consent before listing anyone in a directory"],
+            ["**Professional body**", "Individual grades, CPD logging and audits, accreditation or certification, complaints and conduct records", "Evidence uploads, audit sampling, and records that must be kept after membership lapses"],
+            ["**Community or volunteer-run organisation**", "Low-cost administration, simple renewals, donations alongside membership", "Committee handovers; avoid a system only one volunteer understands"],
+            ["**Federation with state branches**", "Branch-level access, national and branch fees, consolidated reporting", "Who owns the member record, and how branch and national data stay in step"],
+          ],
+        },
+      },
+      {
         heading: "Build or buy",
         body: [],
         table: {
@@ -257,6 +285,56 @@ export const auSectorPlatformPosts: BlogPost[] = [
             ["Professional body with CPD, accreditation and audits", "Specialist platform or platform plus custom modules"],
             ["Membership tied to services, bookings or a custom product", "Custom portal integrated with a CRM or platform"],
             ["Large federation with state branches", "Platform with strong API, plus integration and reporting work"],
+          ],
+        },
+      },
+      {
+        heading: "How to choose a membership platform",
+        body: [
+          "Shortlist two or three platforms, then test them against your own scenarios rather than each vendor's standard demo. Write five to ten real scenarios first, for example \"a family membership renews and one junior moves into the adult category\" or \"a lapsed member rejoins after the grace period\", and ask each vendor to run them live.",
+          "Check each platform against these criteria:",
+        ],
+        checklist: [
+          "**Membership model:** categories, grades, organisation memberships, family links, pro-rata fees, grace periods and lapsed status, configured without custom code.",
+          "**Joining and renewal journey:** try it yourself on a phone. Count the steps, check that progress is saved and that receipts and tax invoices are correct.",
+          "**Payments:** supported gateways, recurring card or direct debit payments, instalments, refunds, and reconciliation into your accounting software such as Xero or MYOB.",
+          "**Member portal:** self-service updates, renewals, event bookings, documents and member-only content, with accessible forms.",
+          "**Communications and consent:** segmented email and SMS, consent records and unsubscribe handling.",
+          "**Reporting:** members by category, renewal and retention rates, revenue and branch views without exporting to spreadsheets.",
+          "**Data access:** a documented API or complete exports, so you can integrate now and leave later.",
+          "**Security:** multi-factor authentication for administrators, role-based access, audit logs and a clear answer on where data is stored.",
+          "**Support:** support hours that suit Australian time zones, onboarding help and how product changes are communicated.",
+        ],
+        callout: { type: "tip", text: "Ask every vendor how you would get all of your data out, including payment history and consent records, if you left. A specific answer is a good sign; a vague one is a risk." },
+      },
+      {
+        heading: "What drives the cost",
+        body: [
+          "Pricing models vary. Many platforms charge by member count or tier, some add a transaction fee on payments, and some charge separately for modules such as events, CPD or a website. We do not quote typical prices here because they change and depend on your size, so compare total cost over three years on the same basis:",
+        ],
+        checklist: [
+          "Subscription by member count, tier or module.",
+          "Platform transaction fees on top of your payment gateway's fees.",
+          "Setup, data migration and training.",
+          "Integrations with accounting, email, your website or a governing body's system.",
+          "Custom modules and their ongoing maintenance, if you add any.",
+          "Staff or volunteer time saved on manual renewals, reconciliation and reporting.",
+        ],
+      },
+      {
+        heading: "Implementation plan",
+        body: [
+          "Avoid switching systems in the weeks before your main renewal run. If renewals cluster around one date, go live well before it or just after it, so the first big renewal cycle on the new system is not also its first week.",
+        ],
+        table: {
+          headers: ["Phase", "What happens"],
+          rows: [
+            ["**Requirements**", "Document categories, fees and rules from your constitution, the renewal cycle, payment methods, the reports the committee needs and integrations; write your test scenarios"],
+            ["**Selection**", "Shortlist, scripted demos, reference calls with similar organisations and a test data export"],
+            ["**Configuration**", "Categories, fees, forms, email templates, roles and permissions; accounting and email integrations"],
+            ["**Migration**", "Clean the data, migrate consent first, run at least one trial migration and reconcile member counts and balances"],
+            ["**Launch**", "Train administrators, send members a short guide, and keep the old system read-only for reference"],
+            ["**Review**", "After the first renewal cycle, compare renewal rates, support requests and admin time with the old system"],
           ],
         },
       },
@@ -275,6 +353,12 @@ export const auSectorPlatformPosts: BlogPost[] = [
         checklist: [
           "Integrations to plan: accounting (Xero or MYOB) for payments and invoices, email platform for communications, event check-in, and the website for member-only content; see [[/blogs/api-integration-australia|API integration]].",
           "Accessibility: joining, renewing and event registration should meet WCAG 2.2; see [[/blogs/digital-forms-development-australia|digital forms development]].",
+        ],
+      },
+      {
+        heading: "Measuring success after go-live",
+        body: [
+          "Agree a few measures before go-live so the committee or board can judge the change: renewal rate by category, the share of renewals completed online without staff help, time from application to approval, admin hours spent on renewals and reconciliation, and member support requests per renewal cycle. Record the same measures from the old system first; without a baseline you cannot show an improvement.",
         ],
       },
       {

@@ -425,23 +425,26 @@ export const mobilePosts: BlogPost[] = [
   {
     slug: "mobile-app-development-timeline",
     title: "How Long Does It Take to Build a Mobile App?",
-    excerpt:
-      "A stage-by-stage view of an app project, from discovery to store launch, and the factors that realistically lengthen or shorten it.",
+    excerpt: "How long it takes to build a mobile app, stage by stage: what each phase involves, the fixed waits such as store review and Play testing, and what speeds it up.",
     category: "Mobile Apps",
     banner: "roadmap",
     date: "2026-09-25",
+    updated: "2026-10-22",
     readingTime: "11 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["startups", "fintech", "education-edtech"],
+    relatedSlugs: ["mobile-app-development-cost", "mobile-app-development-process", "mobile-app-launch-checklist"],
     faqs: [
       { q: "How long does it take to build an app?", a: "It depends on scope. A focused MVP with a few core flows and a managed backend is much faster than a product with real-time features, payments, multiple integrations and custom design. Any universal figure ignores those differences." },
       { q: "What is the longest stage of app development?", a: "Usually development itself, including backend and integrations. But discovery, design and testing are where timelines are most often underestimated." },
-      { q: "How long does App Store review take?", a: "Apple and Google both review apps before release. Review times vary and can extend if an app is rejected and needs changes, so plan buffer time before any fixed launch date." },
+      { q: "How long does App Store review take?", a: "Apple says App Review typically handles at least 50% of submissions in under 24 hours and 90% in under 48 hours, although incomplete submissions take longer or fail. Google Play also reviews apps, and some reviews take longer. A rejection means fixing and resubmitting, so leave buffer before any fixed launch date." },
       { q: "Does cross-platform development shorten the timeline?", a: "Often, since most features are built once for both platforms. Platform-specific work and testing on both platforms still take time." },
       { q: "Can we launch faster with an MVP?", a: "Yes. A tightly scoped MVP is the most reliable way to shorten time to market, as long as it still delivers the core value users need." },
       { q: "What delays app projects most?", a: "Changing scope mid-build, slow feedback and approvals, late-discovered integration complexity, and underestimated testing." },
       { q: "Should we run a beta before launch?", a: "Yes. TestFlight on iOS and Google Play's testing tracks let real users find issues before public launch." },
       { q: "Can design and development happen at the same time?", a: "Partly. Development can start on well-defined flows while design continues on others, as long as the core architecture and design system are settled." },
+      { q: "Why does my Android app need 14 days of testing before launch?", a: "Google Play requires personal developer accounts created after 13 November 2023 to run a closed test with at least 12 testers opted in for at least 14 continuous days before applying for production access. Organisation accounts are not covered by that rule, but a beta is still worth running." },
+      { q: "What should a mobile app timeline estimate include?", a: "An estimate per stage (discovery, design, development, integrations, testing and launch), the assumptions behind it, the integrations and third parties it depends on, fixed waits such as store review and Play closed testing, a beta period, and how changes to scope will affect the date." },
     ],
     content: [
       {
@@ -449,6 +452,23 @@ export const mobilePosts: BlogPost[] = [
         body: [
           "How long an app takes depends on scope. Every project passes through discovery, requirements, UX research, wireframes, UI design, architecture, app and backend development, integrations, QA, beta testing, store submission and launch. A focused MVP with a managed backend moves through these quickly; a product with payments, real-time features and several integrations takes considerably longer. Stable scope, fast decisions and early integration work shorten timelines; scope changes and late surprises extend them.",
         ],
+      },
+      {
+        heading: "Fixed waits you cannot compress",
+        body: [
+          "Most of an app timeline depends on scope, but a few steps run on someone else's clock. Put them in the plan from the start, because adding developers does not shorten them.",
+        ],
+        table: {
+          headers: ["Item", "What it means for your timeline"],
+          rows: [
+            ["**Google Play closed testing (new personal accounts)**", "Google requires personal developer accounts created after 13 November 2023 to run a closed test with at least 12 testers who stay opted in for at least 14 continuous days before applying for production access. That is at least two weeks before an Android public launch."],
+            ["**Apple App Review**", "Apple says it typically reviews at least 50% of submissions in under 24 hours and 90% in under 48 hours. Incomplete submissions take longer or are rejected, and each rejection adds another review cycle."],
+            ["**Google Play review**", "Apps are reviewed before they are published, and some reviews take longer than others. Do not plan a launch for the day you submit."],
+            ["**Developer account enrolment**", "Organisations enrolling in the Apple Developer Program need a D-U-N-S Number, and Google verifies developer identity. Start enrolment during design, not in the final week."],
+            ["**Third-party onboarding**", "Payment providers, banking, health or identity services may require their own onboarding, contracts or certification before you get production access."],
+          ],
+        },
+        callout: { type: "tip", text: "The 14-day Play testing requirement catches many first-time founders. If your company publishes through a personal Google Play account, start the closed test as soon as you have a stable build." },
       },
       {
         heading: "Why Timelines Vary So Much",
@@ -507,6 +527,37 @@ export const mobilePosts: BlogPost[] = [
         ],
       },
       {
+        heading: "MVP or full product: what changes the timeline",
+        body: [
+          "The biggest single timeline decision is how much goes into the first release. The comparison below shows where the time goes; it is a guide to scope, not a promise of duration.",
+        ],
+        table: {
+          headers: ["Dimension", "Focused MVP", "Full product"],
+          rows: [
+            ["**User journeys**", "One or two core journeys done well", "Many journeys, roles and edge cases"],
+            ["**Backend**", "Managed services for sign-in, data and notifications", "Custom backend, admin tools and reporting"],
+            ["**Integrations**", "One payment provider or none", "Payments, CRM, ERP, analytics and partner APIs"],
+            ["**Design**", "Platform components with your brand", "Custom components, motion and accessibility audits"],
+            ["**Testing**", "Core journeys on a focused device list", "Wider device matrix, load and security testing"],
+          ],
+        },
+      },
+      {
+        heading: "How to estimate your own app timeline",
+        body: [
+          "You can build a credible first estimate before speaking to any developer. Work through these steps, then ask for estimates against the same list so quotes are comparable.",
+        ],
+        checklist: [
+          "List the core user journeys, such as sign up, browse, book and pay, and mark which must be in the first release.",
+          "Count the screens and their states: empty, loading, error and success all need design and build time.",
+          "List every integration, and for each one note whether documentation, a sandbox and an owner on the other side exist.",
+          "Choose platforms and approach: iOS, Android or both, native or cross-platform; see [[/blogs/native-vs-cross-platform-app-development|native vs cross-platform]].",
+          "Mark features that usually run long: payments, real-time updates, offline sync, video and anything regulated.",
+          "Add the fixed waits above, plus a beta period and store review buffer.",
+          "Ask for an estimate per stage rather than a single figure, and agree what happens to the date when scope changes.",
+        ],
+      },
+      {
         heading: "What Shortens a Timeline",
         body: [],
         checklist: [
@@ -532,6 +583,13 @@ export const mobilePosts: BlogPost[] = [
           title: "Planning your app project?",
           description: "See the [[/blogs/mobile-app-development-process|app development process]] for how these stages fit together from idea to launch. Explore our [[/services/mobile-app-development|iOS and Android app development services]].",
         },
+      },
+      {
+        heading: "Sources",
+        body: [
+          "**Store requirements:** Apple Developer, App Review; Apple Developer Program enrolment; Google Play Console Help, app testing requirements for new personal developer accounts.",
+          "Accessed 22 October 2026. Store policies change; check the current requirements before you fix a launch date.",
+        ],
       },
       {
         heading: "Conclusion",

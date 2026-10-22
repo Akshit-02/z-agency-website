@@ -463,18 +463,18 @@ export const auBusinessSystemsPosts: BlogPost[] = [
   {
     slug: "business-rules-engine",
     title: "Business Rules Engines: When to Separate Rules from Application Code",
-    seoTitle: "Business Rules Engines: When to Use One",
-    excerpt:
-      "When a business rules engine helps and when it does not: decision tables, DMN, configuration vs code, governance, testing, audit trails and alternatives.",
+    seoTitle: "Business Rules Engine: What It Is and When to Use One",
+    excerpt: "What a business rules engine is, how it works and when to use one: decision tables, DMN, open-source and no-code options, AI, governance and testing.",
     category: "Web Development",
     banner: "approvalflow",
     sceneKind: "workflow",
     bannerAlt: "Pricing, eligibility and approval rules moved from application code into versioned decision tables managed by business owners, tested and audited before release",
     date: "2026-10-10",
-    readingTime: "4 min read",
+    updated: "2026-10-22",
+    readingTime: "9 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["insurtech", "fintech", "b2b-enterprise", "logistics-supply-chain"],
-    relatedSlugs: ["workflow-automation", "low-code-vs-custom-software", "feature-flag-implementation"],
+    relatedSlugs: ["workflow-automation", "low-code-vs-custom-software", "feature-flag-implementation", "human-in-the-loop-ai"],
     faqs: [
       {
         q: "What is a business rules engine?",
@@ -496,6 +496,14 @@ export const auBusinessSystemsPosts: BlogPost[] = [
         q: "Can business users change rules safely?",
         a: "Yes, with guardrails: versioned rules, validation, automated tests against example cases, approval before release, the ability to roll back, and an audit trail of which rule version made each decision.",
       },
+      {
+        q: "Is there an open-source business rules engine?",
+        a: "Yes. Several open-source engines exist. Drools, part of the Apache KIE project, is a long-standing Java option that supports DMN decision tables. Open-source engines avoid licence fees, but you run, secure and upgrade them yourself, and business-user editing tools may be limited.",
+      },
+      {
+        q: "Can AI replace a business rules engine?",
+        a: "Not for decisions that must be consistent, explainable and auditable. Language models can vary their answers and cannot show which rule produced an outcome. A common design uses AI to extract facts from documents or messages, a rules engine to make the decision, and a person to review uncertain or high-impact cases.",
+      },
     ],
     content: [
       {
@@ -504,6 +512,14 @@ export const auBusinessSystemsPosts: BlogPost[] = [
           "**Separate business rules from application code when they change often, are owned by business teams, vary by product or customer, or must be explained and audited; keep them in code or simple configuration when they are few, stable and developer-owned. If you separate them, manage rules like code: versioned, tested against example cases, approved before release and logged with every decision.** A rules engine is a tool for change and transparency, not a default.",
           "This guide is for CTOs, architects and product owners. For workflow tools, see [[/blogs/workflow-automation|workflow automation]].",
         ],
+      },
+      {
+        heading: "What is a business rules engine?",
+        body: [
+          "A business rules engine is software that evaluates decisions, such as pricing, eligibility, discounts, routing or approval limits, using rules stored outside the main application code. The application sends the facts of a case to the engine, the engine applies the current rules and returns a decision, often with a record of which rules fired.",
+          "A simple rule might read: if the customer is a trade account and the order is over A$5,000, apply the contract price and require a manager's approval. With a rules engine, the pricing team can change the threshold or add a new customer type through a governed change, without waiting for a software release.",
+        ],
+        code: { label: "How a rules engine fits into an application", text: "Application (quote, claim, order)\n        |  facts: customer type, order value, region\n        v\n[ Rules engine ]  <-- versioned rules / decision tables\n        |  decision: price, approval level, eligibility\n        |  trace: rule version and rules that fired\n        v\nApplication acts on the decision and stores the trace" },
       },
       {
         heading: "Key takeaways",
@@ -531,6 +547,21 @@ export const auBusinessSystemsPosts: BlogPost[] = [
         },
       },
       {
+        heading: "Types of rules engine software",
+        body: [
+          "\"Rules engine\" covers several kinds of product. Decide which kind you need before comparing vendors.",
+        ],
+        table: {
+          headers: ["Type", "What it is", "Suits"],
+          rows: [
+            ["**Embedded open-source engine**", "A library or service your developers run inside your system; Drools, part of the Apache KIE project, is a long-standing Java example that supports DMN", "Teams with developers who want full control and no licence fees, and who can run and upgrade it"],
+            ["**Commercial decision management platform**", "Rule authoring, testing, versioning, deployment and monitoring in one product, usually with business-user editors", "Organisations with many rules, several teams and audit requirements"],
+            ["**No-code or low-code rules in a platform**", "Rule builders inside CRM, workflow, ecommerce or low-code tools", "Rules that only affect that platform's own processes"],
+            ["**Custom rules module**", "A small, purpose-built rules component with decision tables stored in your database", "A focused set of rules where a full engine would be overkill"],
+          ],
+        },
+      },
+      {
         heading: "Decision tables and DMN",
         body: [
           "Decision tables list conditions and outcomes in rows, such as customer type, order value and region leading to a discount or approval level. They are easy to review and test. Decision Model and Notation (DMN), a standard from the Object Management Group, defines decision tables and an expression language that several engines execute. Keep tables small and focused, and avoid encoding entire processes in rules.",
@@ -552,6 +583,27 @@ export const auBusinessSystemsPosts: BlogPost[] = [
         heading: "Performance and explainability",
         body: [
           "Most rules evaluate quickly, but large rule sets in hot paths need profiling and caching. Explainability is a major benefit: record which rules fired so staff can explain outcomes to customers and auditors. Where decisions significantly affect individuals and are substantially automated, Australian Privacy Act transparency requirements commencing on 10 December 2026 may apply; get advice. See [[/blogs/human-in-the-loop-ai|human-in-the-loop AI]].",
+        ],
+      },
+      {
+        heading: "Rules engines and AI",
+        body: [
+          "AI does not replace a rules engine for decisions that must be consistent and explainable. A language model can give different answers to the same input and cannot point to the rule that produced an outcome. A rules engine returns the same decision for the same facts and records why.",
+          "The two work well together. A common pattern is for AI to read unstructured input, such as an email, claim form or invoice, and extract structured facts; the rules engine then makes the decision from those facts; and a person reviews low-confidence extractions or high-impact decisions. AI can also help draft or explain rules, but rule changes should still go through the same tests and approval. See [[/blogs/human-in-the-loop-ai|human-in-the-loop AI]] for review design.",
+        ],
+      },
+      {
+        heading: "How to evaluate rules engine software",
+        body: [
+        ],
+        checklist: [
+          "Can business users read and, with approval, edit rules, for example as decision tables?",
+          "Does it support DMN or another documented format, so rules are not locked into one product?",
+          "Can you run example cases automatically on every change, and compare results between rule versions?",
+          "Does every decision record the rule version, inputs and rules that fired?",
+          "Are effective dates, approvals and rollback supported?",
+          "How is it deployed: embedded library, separate service or hosted platform, and what latency does that add?",
+          "What does it cost to run and maintain over several years, including licences and the skills it needs?",
         ],
       },
       {

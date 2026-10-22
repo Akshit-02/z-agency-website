@@ -40,7 +40,7 @@ export const auBusinessSoftwarePosts: BlogPost[] = [
     readingTime: "11 min read",
     relatedServiceSlugs: ["website-development", "ai-automation", "ui-ux-design"],
     relatedIndustrySlugs: ["professional-services", "real-estate", "construction-infrastructure", "b2b-enterprise", "healthcare-healthtech"],
-    relatedSlugs: ["crm-website-integration", "crm-automation-guide", "custom-software-development-australia"],
+    relatedSlugs: ["crm-website-integration", "crm-automation-guide", "custom-software-development-australia", "membership-management-software-australia"],
     faqs: [
       {
         q: "Should a small Australian business build a custom CRM?",
@@ -269,7 +269,7 @@ export const auBusinessSoftwarePosts: BlogPost[] = [
   {
     slug: "legacy-software-modernization-australia",
     title: "Legacy Software Modernisation: How Australian Businesses Can Upgrade Old Systems",
-    seoTitle: "Legacy Software Modernisation in Australia: A Guide",
+    seoTitle: "Legacy Software Modernisation in Australia: Options and Roadmap",
     excerpt:
       "How Australian businesses can modernise legacy software: risk signs, retain, rehost, refactor or replace, data migration, phased rollouts and rollback plans.",
     category: "Web Development",
@@ -277,10 +277,11 @@ export const auBusinessSoftwarePosts: BlogPost[] = [
     sceneKind: "roadmap",
     bannerAlt: "An old business system being replaced piece by piece, with new services taking over functions while the legacy system keeps running until cutover",
     date: "2026-10-09",
-    readingTime: "10 min read",
+    updated: "2026-10-22",
+    readingTime: "12 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["manufacturing", "logistics-supply-chain", "professional-services", "b2b-enterprise", "construction-infrastructure"],
-    relatedSlugs: ["custom-software-development-australia", "ai-legacy-code-modernization", "cloud-migration-australia"],
+    relatedSlugs: ["custom-software-development-australia", "ai-legacy-code-modernization", "cloud-migration-australia", "software-vendor-handover-checklist"],
     faqs: [
       {
         q: "What is legacy software modernisation?",
@@ -310,13 +311,17 @@ export const auBusinessSoftwarePosts: BlogPost[] = [
         q: "Can AI help modernise legacy code?",
         a: "AI coding tools can help explain old code, generate tests, suggest refactors and translate between languages, which can speed up parts of a modernisation. They do not remove the need for engineers who understand the business rules, for characterisation tests that prove behaviour is preserved, or for careful review. Treat AI output as a draft to verify, not a migration plan.",
       },
+      {
+        q: "How do we take over legacy software from a previous developer?",
+        a: "Move the source code, hosting, domain and service accounts into your organisation's ownership, confirm in writing who owns the code, get the build and deployment steps documented and tested by someone else, and check that backups actually restore. Then give the new team a fixed assessment period before agreeing a modernisation plan.",
+      },
     ],
     content: [
       {
         heading: "How should an Australian business modernise legacy software?",
         body: [
           "**Modernise system by system, starting with the ones that carry the most business risk, and choose the least disruptive option that solves the problem.** That might mean keeping a system and reducing its risk, moving it to supported infrastructure, refactoring parts of it, or replacing it. Replacing everything at once is rarely necessary and is often the riskiest choice.",
-          "This guide is for owners, finance and operations leaders, and IT managers responsible for software that still runs the business but is getting harder to change, secure or connect. It covers the warning signs, Australian triggers that force the issue, how to inventory and score systems, the modernisation options, data migration, phased rollouts, rollback planning, testing and adoption.",
+          "This guide is for owners, finance and operations leaders, and IT managers responsible for software that still runs the business but is getting harder to change, secure or connect. It covers the warning signs, Australian triggers that force the issue, how to inventory and score systems, the modernisation options, data migration, phased rollouts, rollback planning, testing and adoption, plus what to secure when you take over software from a previous developer and how to choose a modernisation partner.",
           "For the related decisions, see [[/blogs/custom-software-development-australia|custom software development in Australia]] and [[/blogs/cloud-migration-australia|cloud migration for Australian businesses]]. For AI-assisted code work, see [[/blogs/ai-legacy-code-modernization|AI legacy code modernisation]].",
         ],
       },
@@ -470,6 +475,36 @@ traffic, keep rollback, then retire`,
         body: [
           "**This example is hypothetical.** An Adelaide wholesale distributor runs orders, stock and invoicing on a system built fifteen years ago on an unsupported database. One contractor maintains it. Customers want online ordering and invoices by Peppol.",
           "The scorecard ranks it highest on business value, security risk and key-person risk. The distributor first reduces immediate risk: restricted access, MFA on remote access and tested backups. It then replaces invoicing with its accounting platform, which supports Peppol, and builds a customer ordering portal on a new service that syncs with the old stock module. Stock moves last, after two rehearsal migrations and a two-week parallel run. The old system is retired, and seven years of records are archived in a searchable format.",
+        ],
+      },
+      {
+        heading: "Taking over legacy software from a previous developer",
+        body: [
+          "Many modernisation projects start with a handover: the original developer or contractor has moved on, a vendor is winding down support, or the one person who understood the system is leaving. Before changing anything, secure what you need to keep the system running and to let a new team work on it safely.",
+        ],
+        checklist: [
+          "Source code for every component, in a repository your organisation owns, with the full history where it exists.",
+          "Hosting, domain, DNS, database, app store and third-party service accounts held in your organisation's name rather than a contractor's.",
+          "Build and deployment steps that someone other than the original developer has followed successfully.",
+          "Backups that have been restored in a test, not just scheduled.",
+          "A list of integrations, scheduled jobs, licences and renewal dates.",
+          "Known issues, workarounds and business rules written down while the previous developer is still reachable.",
+          "Written confirmation of who owns the code. In Australia, copyright in code written by an independent contractor generally stays with the contractor unless the contract assigns it, so check the agreement and get legal advice if it is unclear.",
+        ],
+        callout: { type: "tip", text: "Give a new team a short, fixed assessment period before agreeing a plan: run the system locally, map dependencies and support status, and score it with the scorecard above. Our [[/blogs/software-vendor-handover-checklist|software handover checklist]] covers the handover itself in more detail." },
+      },
+      {
+        heading: "Choosing a modernisation partner",
+        body: [
+          "Whether you work with a firm in Sydney, Melbourne or elsewhere in Australia, or with a remote team, the questions that matter are the same. Be wary of anyone who recommends a full rewrite before they have read the code and seen how the business uses the system.",
+        ],
+        checklist: [
+          "Do they start with an assessment and give a written recommendation per system, including \"retain\" where it fits?",
+          "Can they show how functions would move incrementally, with a working system at every step?",
+          "How do they plan data migration, reconciliation and rollback?",
+          "How do they write characterisation tests for code that has none?",
+          "Who owns the code, documentation and accounts at the end, and how is knowledge transferred to your team?",
+          "What overlap with your working hours do they offer, and how will they report progress and risks?",
         ],
       },
       {

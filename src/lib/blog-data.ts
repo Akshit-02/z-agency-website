@@ -1362,15 +1362,15 @@ export const posts: BlogPost[] = [
     slug: "how-to-set-up-a-shopify-store",
     title: "How to set up a Shopify store: a complete walkthrough",
     seoTitle: "How to Set Up a Shopify Store: Step-by-Step Setup Order",
-    excerpt:
-      "Setting up a Shopify store is mostly sequencing, not difficulty. Here is the order that avoids the rework most first-time founders end up doing twice.",
+    excerpt: "How to set up a Shopify store step by step: plan, payments, shipping, taxes, theme, products, domain and a test order, in the order that avoids rework.",
     category: "Shopify & Ecommerce",
     banner: "storefront",
     date: "2026-03-01",
-    updated: "2026-10-03",
-    readingTime: "8 min read",
+    updated: "2026-10-22",
+    readingTime: "11 min read",
     relatedServiceSlugs: ["shopify-development", "ui-ux-design"],
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer"],
+    relatedSlugs: ["best-shopify-apps-for-new-stores", "how-much-does-a-shopify-store-cost", "shopify-store-maintenance-checklist"],
     faqs: [
       {
         q: "How long does it take to set up a Shopify store?",
@@ -1395,6 +1395,10 @@ export const posts: BlogPost[] = [
       {
         q: "Do I need a registered business before opening a Shopify store?",
         a: "This depends on your location and is a legal and tax question, not a platform one — Shopify itself doesn't require a registered business to open a store. If you're unsure what applies to you, that's worth a conversation with an accountant or business advisor before launch, not after.",
+      },
+      {
+        q: "Can I set up a Shopify store in India?",
+        a: "Yes. Shopify supports stores in India, but Shopify Payments is not available there, so you connect a third-party payment provider that supports Indian payment methods such as UPI and cards. Check your GST obligations with a chartered accountant and plan shipping and cash on delivery before launch.",
       },
     ],
     content: [
@@ -1433,6 +1437,36 @@ export const posts: BlogPost[] = [
         },
       },
       {
+        heading: "What to configure at each step",
+        body: [
+          "Shopify's admin groups most of these settings under **Settings**. Menu names change from time to time, so treat the locations below as a guide and use the admin search if something has moved.",
+        ],
+        table: {
+          headers: ["Step", "Where in the admin", "What to decide"],
+          rows: [
+            ["**Store details**", "Settings > General", "Legal business name, address, store currency and units. Set the currency before adding products."],
+            ["**Payments**", "Settings > Payments", "Your payment provider, the wallets you accept and manual methods such as cash on delivery, where offered"],
+            ["**Shipping**", "Settings > Shipping and delivery", "Shipping zones, rates by weight or price, free-shipping thresholds and local pickup or delivery"],
+            ["**Taxes**", "Settings > Taxes and duties", "The regions where you collect tax and whether prices include tax; confirm with an accountant"],
+            ["**Policies**", "Settings > Policies", "Refund, privacy, terms of service and shipping policies, written for your business"],
+            ["**Notifications**", "Settings > Notifications", "Sender email and branding for order confirmations and shipping updates"],
+            ["**Theme and navigation**", "Online Store > Themes; Content > Menus", "Theme, header and footer menus, homepage sections and core pages"],
+            ["**Products and collections**", "Products", "Titles, descriptions, images with alt text, variants, prices, inventory and collections"],
+            ["**Domain**", "Settings > Domains", "Connect or buy a domain and set it as the primary domain"],
+            ["**Go live**", "Online Store > Preferences", "Remove password protection only after a full test order"],
+          ],
+        },
+      },
+      {
+        heading: "Setting up a Shopify store in India",
+        body: [
+          "The sequence is the same in India, with a few local differences to plan for.",
+          "**Payments.** Shopify Payments is not available for stores based in India, so you choose a third-party payment provider that supports India and connect it in Settings > Payments. Compare providers on the payment methods your customers use, such as UPI, cards, net banking and wallets, as well as settlement times and fees. Decide early whether you will offer cash on delivery, because it affects your shipping, returns and fraud processes.",
+          "**Tax.** GST registration and invoicing obligations depend on what you sell, your turnover and where you sell, and selling online can bring obligations earlier than you expect. Confirm your position with a chartered accountant before launch, then configure tax settings and invoice details to match.",
+          "**Shipping.** Most Indian stores use a shipping aggregator or courier app for rates, labels and tracking. Check serviceable pin codes and cash-on-delivery limits before you promise delivery times on product pages.",
+        ],
+      },
+      {
         heading: "Where founders lose the most time",
         body: [
           "Theme customization is the single biggest time sink in store setup, and it's rarely because the theme is hard to use. It's because there's no natural stopping point — there's always one more section, spacing adjustment, or color tweak available, and without a launch date to force a decision, this stage can run indefinitely.",
@@ -1455,6 +1489,19 @@ export const posts: BlogPost[] = [
           "Navigation, search and collections tested on mobile",
           "Domain connected, SSL active and transactional emails branded",
           "Analytics and conversion tracking installed and tested",
+        ],
+      },
+      {
+        heading: "Common setup mistakes",
+        body: [
+        ],
+        checklist: [
+          "Adding the full catalogue before currency, tax and shipping settings are final, then editing products one by one.",
+          "Installing many apps during setup, each adding scripts and monthly costs, before there is any data to justify them.",
+          "Copying policy text from another store instead of writing policies that match how you actually ship and refund.",
+          "Testing checkout only on desktop, when most shoppers in many markets buy on mobile.",
+          "Leaving image alt text, product descriptions and collection descriptions empty, which hurts both accessibility and search visibility.",
+          "Launching without analytics and conversion tracking, so the first month's behaviour is lost.",
         ],
       },
       {
@@ -1973,15 +2020,15 @@ export const posts: BlogPost[] = [
     slug: "shopify-store-maintenance-checklist",
     title: "The Shopify maintenance checklist most stores skip",
     seoTitle: "Shopify Maintenance Checklist: Weekly, Monthly and Quarterly",
-    excerpt:
-      "A Shopify store isn't a one-time build. Here is the ongoing maintenance rhythm that keeps a store fast, secure, and free of quiet cost creep.",
+    excerpt: "A weekly, monthly, quarterly and annual Shopify maintenance checklist covering orders, theme and app updates, speed, security, SEO and data exports.",
     category: "Shopify & Ecommerce",
     banner: "gauge",
     date: "2026-03-07",
-    updated: "2026-10-03",
-    readingTime: "6 min read",
+    updated: "2026-10-22",
+    readingTime: "10 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
     relatedIndustrySlugs: ["ecommerce", "fashion-apparel"],
+    relatedSlugs: ["shopify-speed-checklist-before-you-add-another-app", "shopify-core-web-vitals-performance-guide", "website-maintenance-guide"],
     faqs: [
       {
         q: "How often should a Shopify store actually be maintained?",
@@ -2002,6 +2049,14 @@ export const posts: BlogPost[] = [
       {
         q: "Should maintenance include reviewing installed apps regularly?",
         a: "Yes — a quarterly review of your app stack is one of the highest-value maintenance habits, since apps are easy to install and rarely get removed once their usefulness fades. Our [[/blogs/shopify-speed-checklist-before-you-add-another-app|app audit checklist]] is designed for exactly this review.",
+      },
+      {
+        q: "Does Shopify back up my store?",
+        a: "Shopify keeps the platform running, but it does not offer a one-click way to restore your own products, content or theme to an earlier point. Keep duplicate copies of your theme before making changes, export products, customers and orders regularly, and consider a backup app if the store changes often or has many editors.",
+      },
+      {
+        q: "What should a Shopify maintenance package include?",
+        a: "A defined set of weekly, monthly and quarterly checks, response times for urgent and routine issues, included hours for small changes, a tested process for theme and app updates, a monthly report, and a clear list of what is excluded.",
       },
     ],
     content: [
@@ -2041,6 +2096,36 @@ export const posts: BlogPost[] = [
         },
       },
       {
+        heading: "The full Shopify maintenance checklist",
+        body: [
+          "Use this as a working checklist. Adjust the frequency to your order volume: a store with many orders a day should run the weekly checks more often.",
+        ],
+        table: {
+          headers: ["Frequency", "Task", "Why it matters"],
+          rows: [
+            ["**Weekly**", "Check unfulfilled, stuck or failed orders and payment errors", "Catches checkout and fulfilment problems before customers complain"],
+            ["**Weekly**", "Review inventory and integration sync errors (ERP, marketplaces, shipping apps)", "Prevents overselling and missed shipments"],
+            ["**Weekly**", "Read support tickets and reviews for recurring issues", "Customers often notice broken journeys first"],
+            ["**Monthly**", "Apply theme and app updates on a duplicate theme, then test", "Gets fixes without breaking customisations"],
+            ["**Monthly**", "Check speed and Core Web Vitals, for example in Search Console", "Performance declines gradually as apps and content grow"],
+            ["**Monthly**", "Fix broken links and add URL redirects for removed products or pages", "Protects search traffic and avoids dead ends"],
+            ["**Monthly**", "Review staff accounts, collaborator access and app permissions", "Removes access for people and apps that no longer need it"],
+            ["**Quarterly**", "Audit the app stack and remove unused apps and their leftover theme code", "Cuts monthly costs and storefront scripts"],
+            ["**Quarterly**", "Place test orders on mobile with each payment method and shipping option", "Confirms the most important journey still works end to end"],
+            ["**Quarterly**", "Review product, collection and page SEO, and policy pages", "Keeps titles, descriptions and policies accurate"],
+            ["**Quarterly**", "Export products, customers and orders", "Gives you a copy of your data if something is changed or deleted by mistake"],
+            ["**Annually**", "Review your plan against order volume, renew the domain, and check how far your theme is behind its latest version", "Avoids paying for the wrong plan and drifting too far from supported code"],
+          ],
+        },
+      },
+      {
+        heading: "Security and access",
+        body: [
+          "Most store security issues come from access that was never removed rather than from the platform itself. Ask every staff member to turn on two-step authentication, give each person only the permissions their role needs, and remove former staff, freelancers and agency collaborator accounts as soon as their work ends. When you uninstall an app, check that it no longer has access and that any scripts or snippets it added to the theme are gone.",
+          "Shopify runs the platform, but it does not give you a simple way to roll back your own product, content or theme changes to an earlier date. Keep duplicate copies of your theme before edits, export key data regularly, and consider a backup app if many people edit the store.",
+        ],
+      },
+      {
         heading: "Updating themes safely",
         body: [
           "Theme updates bring fixes and features but can overwrite customisations. Duplicate the live theme, apply the update to the copy, compare key templates and test checkout journeys before publishing. Keep a changelog of customisations so they can be re-applied if needed.",
@@ -2051,6 +2136,20 @@ export const posts: BlogPost[] = [
         body: [
           "Assign an owner, whether an internal team member or an external partner, with a written routine and access to the tools needed. Maintenance that belongs to everyone tends to be done by no one.",
           "If you would rather hand it off, our [[/services/shopify-development|Shopify development services]] include ongoing support for updates, performance and fixes.",
+        ],
+      },
+      {
+        heading: "What a Shopify maintenance package should include",
+        body: [
+          "If you hand maintenance to a partner, compare packages on what is included and how quickly issues are handled, not just the monthly fee. A useful package states:",
+        ],
+        checklist: [
+          "Which checks from the table above are done, and how often.",
+          "Response times for urgent issues, such as checkout failures, and for routine requests.",
+          "How many hours of small changes are included, and how extra work is priced.",
+          "How theme and app updates are tested before they go live.",
+          "What you receive each month: a short report of checks run, issues found and changes made.",
+          "What is excluded, such as new features, redesigns or third-party app bugs.",
         ],
       },
       {
@@ -2429,16 +2528,16 @@ export const posts: BlogPost[] = [
   {
     slug: "shopify-custom-app-development-guide",
     title: "Shopify custom app development: when a custom app makes sense",
-    seoTitle: "Shopify Custom App Development: When to Build One",
-    excerpt:
-      "A custom Shopify app is infrastructure, not a feature. Here is when building one is justified, and when a third-party app still wins.",
+    seoTitle: "Custom Shopify App Development: When and How to Build One",
+    excerpt: "Custom Shopify app development: when a custom app beats a third-party app, how a build works, the Plus limit on Functions and what maintenance involves.",
     category: "Shopify & Ecommerce",
     banner: "appblocks",
     date: "2026-04-04",
-    updated: "2026-10-03",
-    readingTime: "8 min read",
+    updated: "2026-10-22",
+    readingTime: "11 min read",
     relatedServiceSlugs: ["shopify-development", "ai-automation"],
     relatedIndustrySlugs: ["manufacturing", "saas-technology"],
+    relatedSlugs: ["when-do-you-need-custom-shopify-development", "shopify-business-systems-integration-guide", "shopify-plus-vs-shopify"],
     faqs: [
       {
         q: "What counts as a custom Shopify app, exactly?",
@@ -2463,6 +2562,14 @@ export const posts: BlogPost[] = [
       {
         q: "Who should maintain a custom Shopify app after it's built?",
         a: "Whoever built it, or a development partner with ongoing access to your Shopify setup — custom apps need to be updated as Shopify's platform and API versions evolve, which isn't automatic the way it is for a maintained third-party app.",
+      },
+      {
+        q: "Can I use a custom app on a standard Shopify plan?",
+        a: "Yes. Custom apps that use the Admin API, webhooks and embedded admin screens work on all plans. The Plus restriction applies to custom apps that contain Shopify Function APIs, which only Plus stores can use; public App Store apps with functions work on any plan.",
+      },
+      {
+        q: "Should we replace a paid Shopify app with custom code?",
+        a: "Sometimes. It can make sense when you use a small part of an expensive app, when the app slows the storefront, or when you want to own the data. Keep the paid app when it maintains complex logic for you, such as tax, payments or fraud screening. Compare multi-year subscription cost with build and maintenance cost before deciding.",
       },
     ],
     content: [
@@ -2545,8 +2652,49 @@ export const posts: BlogPost[] = [
       {
         heading: "Shopify Functions and checkout extensions",
         body: [
-          "Some customisations that once needed custom apps or theme code now use platform extension points. Shopify Functions customise backend logic such as discounts, payment and delivery options, and checkout UI extensions add content to checkout. Availability varies by plan and feature, so confirm against current documentation during scoping.",
+          "Some customisations that once needed custom apps or theme code now use platform extension points. Shopify Functions customise backend logic such as discounts, payment and delivery options, and checkout UI extensions add content to checkout. Plan limits matter here. Shopify's documentation says only stores on Shopify Plus can use custom apps that contain Shopify Function APIs, while stores on any plan can use public App Store apps that contain functions. Checkout UI extensions on the information, shipping and payment steps are also limited to Plus. Confirm the current position in Shopify's documentation during scoping.",
           "Our [[/services/shopify-development|Shopify development services]] cover custom apps, Functions and integrations.",
+        ],
+      },
+      {
+        heading: "The custom app development process, step by step",
+        body: [
+        ],
+        checklist: [
+          "**Prove the gap.** Document the workflow, the apps you evaluated and why they fall short. This becomes the requirement the app is tested against.",
+          "**Design data and access.** List the Shopify resources the app reads and writes, and request only the access scopes it needs.",
+          "**Plan the architecture.** Decide where the app is hosted, which webhooks it subscribes to, how it queues work and how it stays within Shopify's API rate limits. Make webhook handling idempotent, because the same event can arrive more than once.",
+          "**Build.** Scaffold with Shopify CLI, use the GraphQL Admin API, and add an embedded admin interface with App Bridge and Polaris only if staff need one.",
+          "**Test on a development store.** Test with realistic data volumes, failed API calls, retried webhooks and staff accounts with limited permissions.",
+          "**Install and monitor.** Install on the live store, log every external call, alert on failures and keep a runbook for the team that supports it.",
+          "**Keep it current.** Shopify releases a new API version every quarter and supports each stable version for at least 12 months, so schedule a version review at least once a year.",
+        ],
+      },
+      {
+        heading: "Replacing a paid app with a custom solution",
+        body: [
+          "A common reason to build is replacing one or more subscription apps. It can be worth it when the app does far more than you use, adds heavy scripts to the storefront, holds data you want to own, or when its subscription over several years exceeds the cost of building and maintaining a focused alternative.",
+          "It is usually not worth it when the app maintains something complex on your behalf, such as tax calculation, payment handling, fraud screening or review moderation, or when the vendor ships frequent updates you rely on.",
+        ],
+        checklist: [
+          "List everything the current app does, including settings you rarely look at and data it stores.",
+          "Export that data and decide how it will move to the new app.",
+          "Build the replacement and run both in parallel on a duplicate theme or a test store.",
+          "Uninstall the old app, then check the theme for leftover code or snippets it added, which can keep slowing the store.",
+          "Compare speed, error rates and staff time before and after.",
+        ],
+      },
+      {
+        heading: "What to look for in a Shopify app developer",
+        body: [
+          "For the wider hiring decision, see [[/blogs/shopify-developer-vs-agency-which-to-hire|Shopify developer vs agency]].",
+        ],
+        checklist: [
+          "Recent work with the GraphQL Admin API, webhooks and, if you are on Plus, Shopify Functions.",
+          "A clear approach to hosting, monitoring, logging and API version upgrades after launch.",
+          "Willingness to recommend an existing app when one fits, rather than defaulting to a build.",
+          "Code and infrastructure delivered in accounts you own, with documentation your next developer can follow.",
+          "A defined support arrangement, including who responds when an integration fails.",
         ],
       },
       {
@@ -2560,6 +2708,13 @@ export const posts: BlogPost[] = [
           description:
             "We build custom Shopify apps scoped to a specific, proven requirement — not speculative functionality.",
         },
+      },
+      {
+        heading: "Sources",
+        body: [
+          "**Shopify documentation:** Shopify Functions (plan availability for custom and public apps); API versioning (release schedule and support period); checkout UI extensions.",
+          "Accessed 22 October 2026. Shopify changes plan features and APIs regularly; confirm the current position before scoping a build.",
+        ],
       },
     ],
   },

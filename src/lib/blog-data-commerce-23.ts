@@ -40,7 +40,7 @@ export const commercePosts23: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "To build a clothing brand on Shopify, follow a launch sequence: plan the range and sizing, choose a plan and set up the store, load products with structured data (fit, fabric, care) and reusable size charts, choose a theme that handles colour swatches and many sizes, add a small set of essential apps (reviews with fit questions, returns and exchanges, back-in-stock, email), configure shipping, returns and payments, soft launch to a small audience, then launch and run drops and restocks. Measure conversion by device, returns by size and repeat purchase from the start.",
+          "To build a clothing brand on Shopify, follow a launch sequence: plan the range and sizing, choose a plan and [[/blogs/how-to-set-up-a-shopify-store|set up the store]], load products with structured data (fit, fabric, care) and reusable size charts, choose a theme that handles colour swatches and many sizes, add a small set of essential apps (reviews with fit questions, returns and exchanges, back-in-stock, email), configure shipping, returns and payments, soft launch to a small audience, then launch and run drops and restocks. Measure conversion by device, returns by size and repeat purchase from the start.",
         ],
       },
       {

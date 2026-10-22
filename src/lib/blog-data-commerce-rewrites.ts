@@ -847,7 +847,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Apps and Integrations Mapping",
         body: [
-          "List every plugin, extension and integration on the old platform and decide what replaces it on Shopify: a native feature, a Shopify app, custom app or integration, or nothing. Migrations are a good moment to remove tools nobody uses. Pay particular attention to integrations with ERP, inventory, shipping and subscriptions, which must work from day one. See [[/blogs/shopify-app-integration-guide|Shopify app integrations]] and [[/blogs/ecommerce-erp-integration|ecommerce ERP integration]].",
+          "List every plugin, extension and integration on the old platform and decide what replaces it on Shopify: a native feature, a Shopify app, [[/blogs/shopify-custom-app-development-guide|custom app]] or integration, or nothing. Migrations are a good moment to remove tools nobody uses. Pay particular attention to integrations with ERP, inventory, shipping and subscriptions, which must work from day one. See [[/blogs/shopify-app-integration-guide|Shopify app integrations]] and [[/blogs/ecommerce-erp-integration|ecommerce ERP integration]].",
         ],
         table: {
           headers: ["Old platform feature", "Shopify replacement options"],

@@ -119,7 +119,7 @@ export const founderProductPosts: BlogPost[] = [
       {
         heading: "Rung 5: beta testing on TestFlight and Google Play",
         body: [
-          "A beta build is the first point at which you can watch real behaviour over time: do people open the app on day three, finish onboarding, and do the thing the app is for? The two stores handle testing differently, and the Play requirement in particular affects your timeline.",
+          "A beta build is the first point at which you can watch real behaviour over time: do people open the app on day three, finish onboarding, and do the thing the app is for? The two stores handle testing differently, and the Play requirement in particular affects your [[/blogs/mobile-app-development-timeline|app timeline]].",
         ],
         table: {
           headers: ["Platform", "What the official documentation says (checked 14 October 2026)", "What it means for validation"],

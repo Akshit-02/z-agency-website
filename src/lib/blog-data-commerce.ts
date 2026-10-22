@@ -879,7 +879,7 @@ export const commercePosts: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "Shopify development cost is determined by scope, not by Shopify's plan fee. The main drivers are the build approach (configured theme, customized theme, custom theme, custom apps or headless), the number of templates designed, catalog size and migration, integrations with systems such as ERP or 3PL, markets and languages, custom functionality, and the depth of QA and post-launch support. Two quotes for “a Shopify store” can describe very different projects, so compare scope line by line. Reduce cost by using native features and proven apps before custom code and by phasing work after launch.",
+          "Shopify development cost is determined by scope, not by Shopify's plan fee. The main drivers are the build approach (configured theme, customized theme, custom theme, [[/blogs/shopify-custom-app-development-guide|custom apps]] or headless), the number of templates designed, catalog size and migration, integrations with systems such as ERP or 3PL, markets and languages, custom functionality, and the depth of QA and post-launch support. Two quotes for “a Shopify store” can describe very different projects, so compare scope line by line. Reduce cost by using native features and proven apps before custom code and by phasing work after launch.",
         ],
       },
       {

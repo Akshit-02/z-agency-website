@@ -670,7 +670,7 @@ export const webDevPosts6: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "A mobile-friendly business website needs responsive layouts that genuinely work on real devices, mobile-appropriate navigation, readable typography without zooming, large enough touch targets, forms designed for mobile input, properly sized images, careful handling of tables and popups, and performance tested specifically on mobile — not just a desktop layout that technically resizes. Test on real devices, since a resized desktop browser window misses real tap accuracy and load-time experience.",
+          "A mobile-friendly business website needs responsive layouts that genuinely work on real devices, mobile-appropriate navigation, readable typography without zooming, large enough touch targets, forms designed for mobile input, properly sized images, careful handling of tables and popups, and performance tested specifically on mobile — not just a desktop layout that technically resizes. Test on real devices, since a resized desktop browser window misses real tap accuracy and load-time experience. If you are building a business website from scratch rather than fixing an existing one, start with the [[/blogs/website-development-guide|website development guide]], which covers planning, platform choice and the build process.",
         ],
       },
       {

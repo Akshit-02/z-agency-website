@@ -36,3 +36,20 @@ All changes are uncommitted on `master` and **not deployed**. Every file can be 
 ## Not changed (awaiting approval or input)
 
 Listicle reframing and city redirects; article publish dates; cost-guide prices; consent banner and privacy policy; market landing pages; consolidation merges; any URL, title or redirect.
+
+## GSC batch, 22 October 2026
+
+Driven by the first Search Console export (Pages + Queries, exported 22 Oct). Full detail: `gsc-2026-10-22/` (analysis, URL map, per-element change log, linking plan, technical report, summary).
+
+| Article | Change |
+| --- | --- |
+| membership-management-software-australia | Expanded: organisation-type requirements, platform checklist, cost drivers, implementation plan, success measures, 3 FAQs; title/description broadened to "membership software" |
+| legacy-software-modernization-australia | Taking over software from a previous developer; choosing a partner; 1 FAQ; title "Options and Roadmap" |
+| business-rules-engine | Definition + diagram, software types, AI section, evaluation checklist, 2 FAQs; title/description |
+| feature-flag-implementation | Step-by-step implementation, code sample, consistent rollouts, build vs buy, mobile flags, 2 FAQs |
+| mobile-app-development-timeline | Verified fixed waits (Apple review stats, Play 12 testers/14 days, D-U-N-S), MVP vs full, estimation method, Sources, 2 FAQs, 1 FAQ corrected |
+| how-to-set-up-a-shopify-store | Admin-setting table, India section (Shopify Payments not available in India), common mistakes, 1 FAQ, description |
+| shopify-custom-app-development-guide | Precise Plus/Functions limit, build process, replacing a paid app, developer checklist, Sources, 2 FAQs, title/description |
+| shopify-store-maintenance-checklist | Full frequency checklist table, security and access, maintenance packages, 2 FAQs, description |
+| offline-first-mobile-app-development | Title and description only (no date bump) |
+| 7 other articles | One contextual internal link each (loyalty program, Shopify clothing store, Shopify development cost, migrating to Shopify, validate app idea, website timeline, mobile-friendly website); custom CRM AU got a related-article card |
