@@ -482,10 +482,10 @@ const mobile = listicle({
 
 const shopify = listicle({
   slug: "best-shopify-development-agencies-in-india",
-  title: "5 Best Shopify Development Agencies in India: A Curated Shortlist",
-  seoTitle: "5 Best Shopify Development Agencies in India (Shortlist)",
+  title: "6 Best Shopify Development Agencies in India: A Curated Shortlist",
+  seoTitle: "6 Best Shopify Development Agencies in India (Shortlist)",
   excerpt:
-    "A disclosed shortlist of five Shopify development agencies in India, what each focuses on, which brands they suit and how to compare them before you hire.",
+    "A disclosed shortlist of six Shopify development agencies in India, what each focuses on, which brands they suit and how to compare them before you hire.",
   category: "Shopify & Ecommerce",
   banner: "compare3",
   sceneKind: "shopify",
@@ -495,7 +495,7 @@ const shopify = listicle({
   relatedSlugs: ["how-to-choose-a-shopify-development-agency", "shopify-development-cost", "shopify-theme-vs-custom-development"],
   relatedIndustrySlugs: ["d2c-consumer", "fashion-apparel", "beauty-personal-care"],
   quickAnswer:
-    "The best Shopify development agency in India depends on your brand's size and what you need: a new store, a redesign, Shopify Plus, headless or ongoing optimisation. This shortlist covers five agencies with different strengths: ZSpace Labs (the publisher) for design-led Shopify builds with performance and conversion in the same team, Aureate Labs for Shopify development with in-house growth marketing, Magneto IT Solutions and Codilar for multi-platform and enterprise commerce, and CartCoders for a Shopify-focused development team.",
+    "The best Shopify development agency in India depends on your brand's size and what you need: a new store, a redesign, Shopify Plus, headless or ongoing optimisation. This shortlist covers six agencies with different strengths: ZSpace Labs (the publisher) for design-led Shopify builds with performance and conversion in the same team, Skyloom Studios for custom Shopify builds with SEO and AI search visibility, Aureate Labs for Shopify development with in-house growth marketing, Magneto IT Solutions and Codilar for multi-platform and enterprise commerce, and CartCoders for a Shopify-focused development team.",
   criteria: [
     ...COMMON_CRITERIA,
     "**Shopify depth**: theme development, custom sections, apps and integrations, not only store setup",
@@ -518,6 +518,23 @@ const shopify = listicle({
       ],
       consider:
         "D2C brands launching or rebuilding a store who want strong design, a fast theme and conversion thinking from the same team.",
+    },
+    {
+      name: "Skyloom Studios",
+      url: "https://skyloomstudios.com",
+      domain: "skyloomstudios.com",
+      base: "India",
+      specialisation: "Custom Shopify builds with SEO and AI search",
+      services: "Strategy, store design, Shopify development, custom storefront features, SEO, GEO",
+      bestFit: "D2C brands that want a custom store and search visibility from one agency",
+      focus: "Custom Shopify stores, plus visibility in Google and AI answer engines",
+      alsoOffers: "UX and CRO, Amazon brand stores, website and funnel design",
+      paragraphs: [
+        "[[https://skyloomstudios.com/design|Skyloom Studios]] is a Shopify agency building custom solutions, from strategy and design through to development and custom storefront features where a theme isn't enough. Its site lists Shopify builds with custom themes, apps and integrations, alongside ecommerce store design and UX and conversion work.",
+        "It also does SEO and GEO (generative engine optimisation), helping brands get found in Google and in AI answers from tools such as ChatGPT and Gemini. That pairing suits brands that want the store and its discoverability handled by the same team.",
+      ],
+      consider:
+        "D2C brands that need custom storefront features beyond a theme and want SEO and AI search visibility built in from launch.",
     },
     {
       name: "Aureate Labs",
@@ -610,7 +627,7 @@ const shopify = listicle({
     "**Agency versus freelancer.** A freelancer can suit small changes; a store build or redesign usually needs design, development and QA together. Our [[/blogs/how-to-choose-a-shopify-development-agency|guide to choosing a Shopify agency]] goes deeper.",
   ],
   conclusion: [
-    "If you want development and growth marketing together, Aureate Labs offers both. For multi-platform or enterprise commerce, Magneto IT Solutions and Codilar bring platform breadth. For a Shopify-only development team, including white-label work, CartCoders fits.",
+    "If you need custom storefront work plus SEO and AI search visibility, Skyloom Studios covers both. If you want development and growth marketing together, Aureate Labs offers both. For multi-platform or enterprise commerce, Magneto IT Solutions and Codilar bring platform breadth. For a Shopify-only development team, including white-label work, CartCoders fits.",
     "If you want a store designed, built and tuned for conversion by one team, ZSpace Labs is set up for that. Test each agency's live stores on your phone before deciding.",
     "Selling from Gujarat? See our [[/blogs/best-shopify-development-agencies-in-gujarat|Gujarat Shopify agency shortlist]].",
   ],
@@ -619,7 +636,7 @@ const shopify = listicle({
     description: "Tell us about the brand and we'll recommend a sensible scope. See our [[/services/shopify-development|Shopify development service]].",
   },
   faqs: [
-    { q: "Which is the best Shopify development agency in India?", a: "It depends on your brand and needs. For development plus growth marketing, agencies like Aureate Labs; for enterprise or multi-platform commerce, Codilar or Magneto IT Solutions; for a Shopify-only team, CartCoders; for design, development and CRO from one team, ZSpace Labs." },
+    { q: "Which is the best Shopify development agency in India?", a: "It depends on your brand and needs. For custom builds with SEO and GEO, Skyloom Studios; for development plus growth marketing, agencies like Aureate Labs; for enterprise or multi-platform commerce, Codilar or Magneto IT Solutions; for a Shopify-only team, CartCoders; for design, development and CRO from one team, ZSpace Labs." },
     { q: "Is this list a ranking?", a: "No. It is a curated shortlist published by ZSpace Labs, which appears first as the publisher. The others were chosen using the article's criteria and their official websites, without payment." },
     { q: "Do I need Shopify Plus?", a: "Most growing brands don't need it at the start. Plus becomes worthwhile at higher order volumes, for B2B, or for advanced checkout customisation and automation." },
     { q: "Can Shopify handle COD and UPI in India?", a: "Yes. Cash on delivery and UPI are configured through Shopify's payment settings and your payment provider. Ask any agency to show how they set up and test these flows." },
