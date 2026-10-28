@@ -102,7 +102,7 @@ export const commercePosts64: BlogPost[] = [
       {
         heading: "Notifications",
         body: [
-          "Notifications bring tracking to the customer. Common moments are confirmation, shipped, out for delivery, delivered and exceptions. Let customers choose email, SMS or app notifications where available, respect consent rules for marketing channels, and don't send too many. Each message should link to the tracking page.",
+          "Notifications bring tracking to the customer. Common moments are confirmation, shipped, out for delivery, delivered and exceptions. Let customers choose email, SMS or app notifications where available, respect consent rules for marketing channels, and don't send too many. Each message should link to the tracking page. For the full set of messages from confirmation to refund, see [[/blogs/order-status-notifications|15 order status notifications]].",
         ],
         checklist: [
           "Order confirmation with expected delivery",

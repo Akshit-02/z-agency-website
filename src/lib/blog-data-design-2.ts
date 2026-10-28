@@ -391,7 +391,7 @@ export const designPosts2: BlogPost[] = [
       {
         heading: "Choosing Fidelity",
         body: [
-          "Match fidelity to the question. Testing whether users understand a flow? Low-fidelity is enough and invites honest feedback. Testing detailed interactions, animations or visual clarity? Use high fidelity. Early, rough work is cheaper to throw away, which is the point.",
+          "Match fidelity to the question. Testing whether users understand a flow? Low-fidelity is enough and invites honest feedback. Testing detailed interactions, animations or visual clarity? Use high fidelity. Early, rough work is cheaper to throw away, which is the point. Our guide to [[/blogs/wireframing-tools|wireframing tools]] compares nine options by fidelity and who each suits.",
           "For the broader question of how much design work a product needs before development starts, see [[/blogs/how-much-ux-design-before-development|how much UX design to do before development]].",
         ],
         cta: {

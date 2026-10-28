@@ -955,7 +955,7 @@ export const mobilePosts: BlogPost[] = [
       {
         heading: "A Third Path: Shared Logic, Native UI",
         body: [
-          "Between fully native and fully shared sits a middle option. Kotlin Multiplatform lets a team share business logic, networking and data layers in Kotlin while keeping SwiftUI and Jetpack Compose interfaces, and Compose Multiplatform extends sharing to the UI; JetBrains declared Compose Multiplatform for iOS stable in May 2025. It suits teams with strong Android and Kotlin skills who want native UI on both platforms without duplicating logic. The trade-off is a smaller ecosystem than React Native or Flutter and the need for iOS skills on the team.",
+          "Between fully native and fully shared sits a middle option. Kotlin Multiplatform lets a team share business logic, networking and data layers in Kotlin while keeping SwiftUI and Jetpack Compose interfaces, and Compose Multiplatform extends sharing to the UI; JetBrains declared Compose Multiplatform for iOS stable in May 2025. It suits teams with strong Android and Kotlin skills who want native UI on both platforms without duplicating logic. The trade-off is a smaller ecosystem than React Native or Flutter and the need for iOS skills on the team. For a side-by-side look at React Native, Flutter, Kotlin Multiplatform, .NET MAUI, Capacitor and PWAs, see [[/blogs/cross-platform-mobile-app-frameworks|cross-platform mobile app frameworks compared]].",
         ],
       },
       {

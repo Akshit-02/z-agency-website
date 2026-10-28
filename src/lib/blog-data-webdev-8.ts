@@ -128,6 +128,7 @@ export const webDevPosts8: BlogPost[] = [
     category: "Web Development",
     banner: "integration",
     date: "2026-09-24",
+    updated: "2026-10-28",
     readingTime: "13 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["ecommerce", "b2b-enterprise", "saas-technology"],
@@ -212,6 +213,27 @@ export const webDevPosts8: BlogPost[] = [
         body: [
           "AI integrations follow the same API patterns, with extra considerations: cost per request, response latency, what customer data is sent to the provider, and how outputs are checked before customers see them. ZSpace Labs' [[/services/ai-automation|AI automation]] work covers these in more depth.",
         ],
+      },
+      {
+        heading: "Beyond the website: integrations that automate back-office work",
+        body: [
+          "The fifteen integrations above connect the website to other systems. Many of the biggest time savings come from connecting those systems to each other, so that a sale, signature or new hire moves through the business without re-keying. These are common system-to-system integrations in workflow automation. For tools that can build simpler versions without code, see [[/blogs/ai-tools-for-business-automation|AI tools for automating repetitive business tasks]]; for the method, see [[/blogs/workflow-automation|workflow automation]].",
+        ],
+        table: {
+          headers: ["Integration", "What it automates", "Watch for"],
+          rows: [
+            ["CRM to accounting", "A won deal creates the customer and first invoice", "Matching customer records; tax details"],
+            ["E-signature to CRM and storage", "Signed contracts update the deal and are filed", "Where the signed copy is the master"],
+            ["Payment provider to accounting", "Payouts and fees reconcile against invoices", "Fees, refunds and currency differences"],
+            ["Helpdesk and CRM", "Agents see account history; tickets appear on the customer record", "Duplicate contacts; privacy of ticket content"],
+            ["HR system to IT accounts", "Joiners get accounts; leavers lose access on time", "Timing of removals; approvals for access changes"],
+            ["Booking or calendar to CRM", "Booked meetings create or update leads and activities", "Time zones; cancellations"],
+            ["Forms to project management", "Requests become tasks with owners and due dates", "Required fields; spam"],
+            ["Ecommerce to ERP and 3PL", "Orders, stock and fulfilment stay in sync", "Which system owns stock levels"],
+            ["Business systems to reporting", "Numbers flow into a dashboard without manual exports", "Definitions that differ between systems"],
+            ["Any system to team chat", "Alerts for failures, large orders or urgent tickets", "Alert fatigue; only notify on action needed"],
+          ],
+        },
       },
       {
         heading: "Plugin or Custom Integration?",

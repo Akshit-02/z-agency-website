@@ -48,7 +48,7 @@ export const aiCorePosts6: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "Retrieval-augmented generation (RAG) answers questions using your own information. At indexing time, documents are collected, parsed, split into chunks, embedded and indexed with metadata and permissions. At question time, the system retrieves the most relevant chunks (ideally with hybrid keyword and vector search plus reranking), gives them to a language model with instructions to answer only from them and cite sources, and refuses when evidence is missing. Evaluate retrieval and answers separately, because most failures start with retrieving the wrong content.",
+          "Retrieval-augmented generation (RAG) answers questions using your own information. At indexing time, documents are collected, parsed, split into chunks, embedded and indexed with metadata and permissions. At question time, the system retrieves the most relevant chunks (ideally with hybrid keyword and vector search plus reranking), gives them to a language model with instructions to answer only from them and cite sources, and refuses when evidence is missing. Evaluate retrieval and answers separately, because most failures start with retrieving the wrong content. For where RAG pays off, with the data and permissions each use needs, see [[/blogs/rag-use-cases|10 RAG use cases for business applications]].",
         ],
       },
       {

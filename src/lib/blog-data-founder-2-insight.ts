@@ -27,6 +27,7 @@ export const founderInsightPosts2: BlogPost[] = [
     sceneKind: "analytics",
     bannerAlt: "A SaaS dashboard in which each metric tile shows a target, a change from the prior period and a button for the next action",
     date: "2026-10-14",
+    updated: "2026-10-28",
     readingTime: "12 min read",
     relatedServiceSlugs: ["ui-ux-design", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "startups", "b2b-enterprise"],
@@ -144,7 +145,7 @@ export const founderInsightPosts2: BlogPost[] = [
       {
         heading: "Design every state, not just the full one",
         body: [
-          "Design reviews usually show a dashboard full of tidy, realistic data. Real accounts spend a lot of time in other states, and a new customer's first view is almost always the empty one. NN/g recommends using empty states to communicate system status, to provide learning cues and to give direct pathways for key tasks.",
+          "Design reviews usually show a dashboard full of tidy, realistic data. Real accounts spend a lot of time in other states, and a new customer's first view is almost always the empty one. NN/g recommends using empty states to communicate system status, to provide learning cues and to give direct pathways for key tasks. Many dashboards are mostly tables; see [[/blogs/data-table-design|12 data table and filter features]] for designing those.",
         ],
         table: {
           headers: ["State", "What goes wrong", "What to design"],
@@ -175,6 +176,27 @@ export const founderInsightPosts2: BlogPost[] = [
           "Many items needing attention: a ranked list or table with status text, not a chart.",
           "Do not use 3D effects, dual axes that invite false comparisons, or colour shading to encode amounts.",
         ],
+      },
+      {
+        heading: "10 chart mistakes that make dashboards hard to read",
+        body: [
+          "The checklist above covers which chart to choose. These are the mistakes that most often make an otherwise sensible chart misleading or slow to read, with a fix for each. WCAG's Use of Color criterion (1.4.1) says colour must not be the only way information is shown, and its Non-text Contrast criterion (1.4.11) asks for a 3:1 contrast ratio for chart elements people need to understand the data.",
+        ],
+        table: {
+          headers: ["Mistake", "Why it misleads or slows", "Fix"],
+          rows: [
+            ["1. Bar chart axis not starting at zero", "Exaggerates small differences", "Start bars at zero; show change as a separate figure"],
+            ["2. Pie or donut with many slices", "Angles are hard to compare", "Sorted bar chart"],
+            ["3. Too many series on one chart", "Nothing stands out", "Highlight one or two; use small multiples"],
+            ["4. Meaning carried by colour alone", "Unreadable for colour-blind users", "Add labels or icons; meet 3:1 contrast"],
+            ["5. Dual axes", "Suggests relationships that may not exist", "Two charts aligned on the same time axis"],
+            ["6. Numbers without context", "Cannot tell good from bad", "Compare with prior period, target or forecast"],
+            ["7. Different scales on charts meant to be compared", "Invites false comparisons", "Shared scales, or say clearly they differ"],
+            ["8. 3D and decorative effects", "Distort proportions", "Remove effects; lighten gridlines"],
+            ["9. Unsorted categories", "Slow to find largest and smallest", "Sort by value unless order is natural"],
+            ["10. Missing units, periods and freshness", "Metrics are misread", "Label units and periods; show last updated time"],
+          ],
+        },
       },
       {
         heading: "Make charts accessible",
@@ -329,7 +351,7 @@ export const founderInsightPosts2: BlogPost[] = [
       {
         heading: "Part 1: Capture the source of every lead",
         body: [
-          "Most attribution problems are capture problems. Google's guidance is that you should always use utm_source, utm_medium and utm_campaign, and that parameter values are case sensitive, so utm_source=google and utm_source=Google are reported separately. GA4 also supports utm_id, utm_source_platform, utm_term and utm_content, among others. Write a convention, put it in a shared sheet and use it for every link you control.",
+          "Most attribution problems are capture problems. Google's guidance is that you should always use utm_source, utm_medium and utm_campaign, and that parameter values are case sensitive, so utm_source=google and utm_source=Google are reported separately. GA4 also supports utm_id, utm_source_platform, utm_term and utm_content, among others. Write a convention, put it in a shared sheet and use it for every link you control. For the form events to track alongside lead sources, see [[/blogs/lead-form-tracking-events|12 lead form analytics events]].",
         ],
         table: {
           headers: ["Parameter", "Convention (example)", "Notes"],

@@ -26,7 +26,7 @@ export const prodAiPosts1: BlogPost[] = [
     bannerAlt:
       "Five levels of AI agent autonomy: Suggest, Draft, Execute with approval, Execute within boundaries (highlighted), Autonomous, with a loop to raise or lower the level based on evidence.",
     date: "2026-10-08",
-    updated: "2026-10-08",
+    updated: "2026-10-28",
     readingTime: "5 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["fintech", "ecommerce", "b2b-enterprise"],
@@ -121,6 +121,32 @@ export const prodAiPosts1: BlogPost[] = [
         body: [
           "Move up one level at a time, for one case type at a time, after a defined period meeting targets. Run the higher level in shadow mode first (the agent decides, a person still acts) and compare decisions. Move down immediately when accuracy drops, inputs change, a model is updated, or a security concern appears; this should be a configuration flag, not a code change. Record each change and the evidence behind it, which also supports accountability; see [[/blogs/ai-agent-accountability|who is responsible when an AI agent makes a mistake]].",
         ],
+      },
+      {
+        heading: "15 workflow steps where AI should suggest rather than act",
+        body: [
+          "A practical way to apply these levels is to list the steps in a workflow and mark where the AI should only suggest, leaving a person to decide. These are steps where suggesting is usually the safer default because the action is costly, hard to reverse, affects someone's rights or money, or speaks for the business. Automation can execute the deterministic parts around them; the AI drafts or recommends, and a person approves. Raise autonomy for a step only when evaluation and monitoring show it is reliable for that case. See [[/blogs/human-in-the-loop-ai|human-in-the-loop AI]].",
+        ],
+        table: {
+          headers: ["Step", "Why suggest, not act"],
+          rows: [
+            ["1. Sending replies to customers on sensitive issues", "Speaks for the business; tone and promises matter"],
+            ["2. Issuing refunds or credits above a small limit", "Moves money; fraud and policy risk"],
+            ["3. Approving or rejecting job applicants", "Affects people's rights; bias and legal risk"],
+            ["4. Changing prices or discounts", "Revenue and legal pricing rules"],
+            ["5. Paying supplier invoices", "Moves money; duplicate or fraudulent invoices"],
+            ["6. Closing or escalating complaints", "Customer relationship and regulatory obligations"],
+            ["7. Deleting or archiving records", "Hard to reverse; retention rules"],
+            ["8. Granting or removing system access", "Security impact"],
+            ["9. Making credit, insurance or eligibility decisions", "Significant effect on people; regulated in many markets"],
+            ["10. Publishing content on public channels", "Brand, accuracy and legal exposure"],
+            ["11. Committing to delivery dates or contract terms", "Creates obligations"],
+            ["12. Changing customer account details", "Account takeover risk"],
+            ["13. Medical, legal or financial advice to individuals", "Professional responsibility"],
+            ["14. Bulk actions affecting many records", "Mistakes multiply"],
+            ["15. Anything the AI is uncertain about", "Low confidence should route to a person by design"],
+          ],
+        },
       },
       {
         heading: "Common mistakes",

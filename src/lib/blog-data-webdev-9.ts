@@ -492,6 +492,7 @@ export const webDevPosts9: BlogPost[] = [
     category: "Web Development",
     banner: "migrate",
     date: "2026-09-24",
+    updated: "2026-10-28",
     readingTime: "15 min read",
     relatedServiceSlugs: ["website-development"],
     relatedIndustrySlugs: ["ecommerce", "b2b-enterprise", "media-entertainment"],
@@ -597,6 +598,29 @@ export const webDevPosts9: BlogPost[] = [
           "Analytics not tracking on launch day",
           "Removing redirects too soon",
         ],
+      },
+      {
+        heading: "12 checks that prevent SEO and data loss",
+        body: [
+          "The condensed checklist below works for a quick review. For a full migration, these twelve checks are where problems most often start. Each one says what to do, why it matters and how to confirm it is done. Do not change URLs unless there is a clear reason; every changed URL needs a redirect and carries some risk. For store migrations, also see [[/blogs/ecommerce-seo-migration|ecommerce SEO migration]] and [[/blogs/ecommerce-migration-testing|migration testing]].",
+        ],
+        table: {
+          headers: ["Check", "Why it matters", "How to confirm"],
+          rows: [
+            ["1. Full backups of site, database and media", "A failed launch must be reversible", "A restore has been tested, not just a backup taken"],
+            ["2. Crawl and URL inventory of the old site", "You cannot redirect pages you do not know exist", "Crawl export plus URLs from analytics, Search Console and the sitemap"],
+            ["3. Performance baselines", "You need to know what normal looked like", "Traffic, rankings for key pages, conversions and Core Web Vitals recorded"],
+            ["4. URL map, old to new", "Keeps links, bookmarks and rankings working", "Every old URL with traffic or backlinks maps to the closest equivalent"],
+            ["5. Permanent (301) redirects", "Passes users and search signals to new URLs", "Bulk-test every mapped URL: one hop, correct destination, no chains or loops"],
+            ["6. Content and metadata parity", "Missing titles, descriptions or body copy can lose rankings", "Compare titles, descriptions, H1s and main content on key templates"],
+            ["7. Canonicals, hreflang and structured data", "Errors here can deindex or misattribute pages", "Validate on staging; canonicals point to new live URLs"],
+            ["8. Internal links updated", "Avoids internal redirect chains and broken links", "Crawl staging for links to old URLs and 404s"],
+            ["9. Data migration verified", "Orders, customers, forms and accounts must survive", "Record counts and spot checks match the old system"],
+            ["10. Analytics and conversion tracking", "Without it you cannot see the impact", "Test events fire on staging and production for forms, checkout and calls"],
+            ["11. Indexing settings at launch", "Staging blocks often leak into production", "robots.txt and meta robots allow indexing; new sitemap submitted"],
+            ["12. Post-launch monitoring", "Problems show up over days and weeks", "Daily checks of 404s, Search Console coverage, traffic and conversions for several weeks"],
+          ],
+        },
       },
       {
         heading: "Website Migration Checklist",

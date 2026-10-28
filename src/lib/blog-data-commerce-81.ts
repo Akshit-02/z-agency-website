@@ -546,7 +546,7 @@ export const commercePosts81: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "To handle ecommerce webhooks reliably, run a small endpoint that verifies the signature using the raw request body, stores or enqueues the event and responds within seconds, then process events asynchronously from a queue. Expect duplicates and out-of-order delivery: deduplicate by event ID, make processing idempotent and use timestamps or fetch current state before acting. Platforms retry failed deliveries for limited periods, so add reconciliation jobs to catch missed events, and monitor volumes, failures and lag.",
+          "To handle ecommerce webhooks reliably, run a small endpoint that verifies the signature using the raw request body, stores or enqueues the event and responds within seconds, then process events asynchronously from a queue. Expect duplicates and out-of-order delivery: deduplicate by event ID, make processing idempotent and use timestamps or fetch current state before acting. Platforms retry failed deliveries for limited periods, so add reconciliation jobs to catch missed events, and monitor volumes, failures and lag. For webhook workflows beyond ecommerce, such as payments, contracts, bookings and alerts, see [[/blogs/webhook-use-cases|12 practical webhook use cases]].",
         ],
       },
       {

@@ -514,7 +514,7 @@ export const auSecurityOpsPosts: BlogPost[] = [
       {
         heading: "Rate limiting and abuse protection",
         body: [
-          "Apply rate limits and quotas per client, user, IP and endpoint, with stricter limits on login, password reset, search, exports and costly operations, including AI calls. Protect sensitive business flows (bookings, purchases, account creation) against automation with limits, anomaly detection and, where appropriate, challenges. Limits protect cost and availability as well as security.",
+          "Apply rate limits and quotas per client, user, IP and endpoint, with stricter limits on login, password reset, search, exports and costly operations, including AI calls. Protect sensitive business flows (bookings, purchases, account creation) against automation with limits, anomaly detection and, where appropriate, challenges. Limits protect cost and availability as well as security. For algorithms and limit design in more depth, see [[/blogs/api-rate-limiting-strategies|10 API rate-limiting strategies]].",
         ],
       },
       {

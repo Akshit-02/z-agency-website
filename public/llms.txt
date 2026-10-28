@@ -1149,6 +1149,43 @@ Ecommerce, D2C and Shopify design:
 
 This cluster connects to UI/UX Design (service), CRO (UX audits and testing), Shopify Development (store design), Website Development and Mobile App Development (design handoff and platform conventions). Conversion-focused Shopify guides are in the Shopify CRO clusters above.
 
+## Practical lists (October 2026)
+
+Lists of options, features and use cases, each with selection criteria and trade-offs. Tool and platform facts were checked on vendors' own pages on 28 October 2026; no prices, ratings or paid placements:
+
+- Business website features: 15 essentials and what can wait — https://www.zspace.in/blogs/business-website-features
+- Website builders for small businesses: 6 options compared — https://www.zspace.in/blogs/website-builders-for-small-business
+- Frontend frameworks for modern web applications: 9 options and how to choose — https://www.zspace.in/blogs/frontend-frameworks-for-web-applications
+- 15 types of web applications businesses build, with examples — https://www.zspace.in/blogs/types-of-web-applications
+- 12 features a startup MVP app needs, and what to leave out — https://www.zspace.in/blogs/mobile-app-mvp-features
+- Cross-platform mobile app frameworks: 6 options compared — https://www.zspace.in/blogs/cross-platform-mobile-app-frameworks
+- Wireframing tools for website and app design: 9 options — https://www.zspace.in/blogs/wireframing-tools
+- Shopify apps that can improve conversion rates: 12 types, with examples — https://www.zspace.in/blogs/shopify-apps-for-conversion-rate
+- 15 business processes you can automate with AI, and where rules are enough — https://www.zspace.in/blogs/business-processes-to-automate-with-ai
+- Types of AI agents: 10 kinds explained, with business examples — https://www.zspace.in/blogs/types-of-ai-agents
+- AI tools for automating repetitive business tasks: 10 options by job — https://www.zspace.in/blogs/ai-tools-for-business-automation
+- 15 website elements to A/B test on lead generation and SaaS sites — https://www.zspace.in/blogs/website-ab-testing-ideas
+- 10 web application architecture patterns and when to use them — https://www.zspace.in/blogs/web-application-architecture-patterns
+- 12 website accessibility testing tools for developers and designers — https://www.zspace.in/blogs/accessibility-testing-tools
+- 15 empty state patterns for better SaaS user experiences — https://www.zspace.in/blogs/saas-empty-state-design
+- 10 retrieval-augmented generation (RAG) use cases for business applications — https://www.zspace.in/blogs/rag-use-cases
+- 12 practical webhook use cases for connecting business applications — https://www.zspace.in/blogs/webhook-use-cases
+- 15 website personalisation ideas for different visitor types — https://www.zspace.in/blogs/website-personalisation-ideas
+- 10 database design mistakes that cause problems as an application grows — https://www.zspace.in/blogs/database-design-mistakes
+- 15 mobile app permissions and when an app should request them — https://www.zspace.in/blogs/mobile-app-permissions
+- 15 product variant management best practices for large ecommerce catalogues — https://www.zspace.in/blogs/product-variant-management
+- 15 research and analytics questions to answer before redesigning a website — https://www.zspace.in/blogs/questions-before-website-redesign
+- 12 lead form analytics events to track on a B2B website — https://www.zspace.in/blogs/lead-form-tracking-events
+- 15 checkout error messages that need clearer UX and recovery guidance — https://www.zspace.in/blogs/checkout-error-messages
+- 15 data validation rules for reliable business applications — https://www.zspace.in/blogs/data-validation-rules
+- 12 mobile app battery and data usage issues developers should investigate — https://www.zspace.in/blogs/mobile-app-battery-data-usage
+- 15 ecommerce order status notifications that keep customers informed — https://www.zspace.in/blogs/order-status-notifications
+- 12 design token categories for consistent digital interfaces — https://www.zspace.in/blogs/design-token-categories
+- 15 third-party integration failure scenarios every business app should handle — https://www.zspace.in/blogs/integration-failure-scenarios
+- 10 API rate-limiting strategies for reliable web applications — https://www.zspace.in/blogs/api-rate-limiting-strategies
+- 12 data table and filter features that help users find answers faster — https://www.zspace.in/blogs/data-table-design
+- 10 notification preference patterns for apps that respect user attention — https://www.zspace.in/blogs/notification-preferences-design
+
 ## UAE and GCC guides
 
 Practical guides for UAE and GCC businesses. ZSpace Labs is an India-based, remote-first studio with clients in the UAE; it has no UAE office and is not part of any UAE government programme.

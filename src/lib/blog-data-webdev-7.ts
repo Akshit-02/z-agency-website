@@ -731,6 +731,7 @@ export const webDevPosts7: BlogPost[] = [
     category: "Web Development",
     banner: "decisiontree",
     date: "2026-09-24",
+    updated: "2026-10-28",
     readingTime: "12 min read",
     relatedServiceSlugs: ["website-development"],
     relatedIndustrySlugs: [
@@ -883,6 +884,29 @@ export const webDevPosts7: BlogPost[] = [
         body: [
           "Confirm how the CMS handles updates, access control, single sign-on and audit logs. For performance and scale, understand how content is delivered and cached. A CMS that performs well at small scale can behave differently with large content libraries.",
         ],
+      },
+      {
+        heading: "12 CMS features to evaluate before you choose",
+        body: [
+          "Feature lists on CMS websites all look similar. These twelve are the ones that most often decide whether a CMS works for your team two years later. Score each against your own requirements during a trial, using real content rather than a demo site. No CMS is right for every business; the best fit depends on who edits, how often, and what the site must connect to.",
+        ],
+        table: {
+          headers: ["Feature", "Why it matters", "How to test it in a trial"],
+          rows: [
+            ["1. Editing experience", "Editors who struggle stop updating the site", "Have a real editor build a page without help"],
+            ["2. Structured content types", "Reusable fields beat one big text box for consistency and reuse", "Model a service page and a case study as content types"],
+            ["3. Roles and permissions", "Limits who can publish or change settings", "Create author, editor and admin roles; check what each can do"],
+            ["4. Drafts, previews and scheduling", "Changes can be reviewed before going live", "Preview a draft on mobile; schedule a publish"],
+            ["5. Revision history and rollback", "Mistakes can be undone", "Restore a previous version of a page"],
+            ["6. Media management", "Images need alt text, resizing and reuse", "Upload, crop and reuse an image; add alt text"],
+            ["7. SEO controls", "Titles, descriptions, URLs, redirects, canonicals and sitemaps must be editable", "Change a URL and set up a redirect"],
+            ["8. Localisation", "Translations need workflow, not copies of pages", "Create a translated version and track what is out of date"],
+            ["9. APIs and integrations", "Content may feed apps, search or other sites; forms must reach the CRM", "Fetch content through the API; connect a form"],
+            ["10. Performance and hosting", "Affects speed, cost and who handles updates", "Check page speed and who patches the software"],
+            ["11. Security and maintenance", "Plugins and outdated versions are common weak points", "Review update process, plugin count and access controls"],
+            ["12. Exit and portability", "You may need to move one day", "Export all content and media in a usable format"],
+          ],
+        },
       },
       {
         heading: "CMS Selection Checklist",

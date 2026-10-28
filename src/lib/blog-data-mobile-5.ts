@@ -477,6 +477,7 @@ export const mobilePosts5: BlogPost[] = [
     category: "Mobile Apps",
     banner: "deeplinkflow",
     date: "2026-09-25",
+    updated: "2026-10-28",
     readingTime: "13 min read",
     relatedServiceSlugs: ["mobile-app-development", "website-development", "cro-audit"],
     relatedIndustrySlugs: ["ecommerce", "media-entertainment", "travel-hospitality"],
@@ -581,6 +582,29 @@ export const mobilePosts5: BlogPost[] = [
         body: [
           "Track link opens by source and campaign, whether users landed in the app or on the web, and what they did next. See [[/blogs/mobile-app-analytics|mobile app analytics]].",
         ],
+      },
+      {
+        heading: "12 deep linking use cases for apps and websites",
+        body: [
+          "Deep links pay off when they take someone straight to the right screen at the moment they want it. These are the common uses; each needs a sensible fallback to the website or app store when the app is not installed, and links that behave correctly when the user is signed out.",
+        ],
+        table: {
+          headers: ["Use case", "Example", "Fallback when the app is missing"],
+          rows: [
+            ["1. Push notification taps", "Order update opens the order screen", "Web order page"],
+            ["2. Transactional emails", "\"Track your delivery\" opens tracking", "Web tracking page"],
+            ["3. Password reset and magic links", "Sign-in link opens the app signed in", "Web sign-in"],
+            ["4. Product and content sharing", "Shared product opens that product", "Web product page"],
+            ["5. Marketing campaigns", "Ad or SMS opens the promoted collection", "Web landing page, or store then deferred link"],
+            ["6. Referral and invite links", "Invite opens sign-up with the referral applied", "Store install, then deferred deep link"],
+            ["7. QR codes in the real world", "Table QR opens the menu or ordering", "Web menu"],
+            ["8. Web-to-app handoff", "\"Open in app\" on a mobile web page keeps the context", "Stay on web"],
+            ["9. Support and help links", "Support reply opens the right settings screen", "Web help article"],
+            ["10. Payments and returns", "Payment provider returns the user to the order", "Web confirmation page"],
+            ["11. Calendar and booking reminders", "Reminder opens the booking to reschedule", "Web booking page"],
+            ["12. Internal and B2B workflows", "Approval email opens the approval screen", "Web app with sign-in"],
+          ],
+        },
       },
       {
         heading: "Common Problems and Testing",

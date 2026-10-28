@@ -44,7 +44,7 @@ export const commercePosts5: BlogPost[] = [
       {
         heading: "How to Use This List",
         body: [
-          "Don't run these in order. Start from your funnel and research: find the stage that loses the most shoppers and the evidence for why, then look for ideas in the matching group. The method behind testing, including sample size and analysis, is covered in [[/blogs/ecommerce-ab-testing|ecommerce A/B testing]]; how to run testing as an ongoing program is in [[/blogs/ecommerce-experimentation-framework|ecommerce experimentation framework]]. Shopify stores can also use [[/blogs/shopify-cro-testing-ideas|50 Shopify CRO testing ideas]].",
+          "Don't run these in order. Start from your funnel and research: find the stage that loses the most shoppers and the evidence for why, then look for ideas in the matching group. The method behind testing, including sample size and analysis, is covered in [[/blogs/ecommerce-ab-testing|ecommerce A/B testing]]; how to run testing as an ongoing program is in [[/blogs/ecommerce-experimentation-framework|ecommerce experimentation framework]]. Shopify stores can also use [[/blogs/shopify-cro-testing-ideas|50 Shopify CRO testing ideas]]. For lead generation and SaaS sites, where the conversion is an enquiry or trial, see [[/blogs/website-ab-testing-ideas|15 website elements to A/B test]].",
         ],
         callout: {
           type: "note",
@@ -433,7 +433,7 @@ export const commercePosts5: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "Ecommerce personalization adjusts products, content and ordering to each shopper's context and behavior. Start with simple, high-confidence rules: correct currency, delivery and payment information by country, continuity for returning visitors (recently viewed, saved carts) and landing experiences matched to campaigns. Add model-driven recommendations and ranking where catalogs are large. Use first-party data collected with consent, limit segments to what you can maintain, avoid intrusive or inconsistent experiences, and always measure against a holdout group.",
+          "Ecommerce personalization adjusts products, content and ordering to each shopper's context and behavior. Start with simple, high-confidence rules: correct currency, delivery and payment information by country, continuity for returning visitors (recently viewed, saved carts) and landing experiences matched to campaigns. Add model-driven recommendations and ranking where catalogs are large. Use first-party data collected with consent, limit segments to what you can maintain, avoid intrusive or inconsistent experiences, and always measure against a holdout group. For service, B2B and SaaS websites, where the goal is an enquiry rather than an order, see [[/blogs/website-personalisation-ideas|15 website personalisation ideas by visitor type]].",
         ],
       },
       {

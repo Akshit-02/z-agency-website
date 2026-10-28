@@ -690,7 +690,7 @@ export const aiCorePosts3: BlogPost[] = [
       {
         heading: "Security and Governance",
         body: [
-          "Workflows hold credentials to many systems, which makes them attractive targets. Use dedicated service accounts with minimal permissions, store secrets in the platform's vault or a secrets manager, restrict who can edit workflows, and review an inventory of automations with owners and connected systems at least quarterly.",
+          "Workflows hold credentials to many systems, which makes them attractive targets. Use dedicated service accounts with minimal permissions, store secrets in the platform's vault or a secrets manager, restrict who can edit workflows, and review an inventory of automations with owners and connected systems at least quarterly. Our comparison of [[/blogs/ai-tools-for-business-automation|AI tools for automating repetitive business tasks]] groups the main options by job.",
         ],
       },
       {

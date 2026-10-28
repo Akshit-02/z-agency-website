@@ -220,7 +220,7 @@ export const webDevPosts3: BlogPost[] = [
       {
         heading: "Rate Limits",
         body: [
-          "Most APIs limit how many requests can be made in a given time window. Integrations need to respect these limits and handle being throttled gracefully — this matters especially for high-traffic sites or integrations triggered frequently, like real-time inventory checks.",
+          "Most APIs limit how many requests can be made in a given time window. Integrations need to respect these limits and handle being throttled gracefully — this matters especially for high-traffic sites or integrations triggered frequently, like real-time inventory checks. Rate limits are one of many ways integrations fail; see [[/blogs/integration-failure-scenarios|15 integration failure scenarios to handle]].",
         ],
       },
       {
@@ -457,7 +457,7 @@ export const webDevPosts3: BlogPost[] = [
       {
         heading: "Input Validation",
         body: [
-          "Every piece of user-submitted data — form fields, URL parameters, uploaded files — should be validated and sanitized before it's processed or stored. This is foundational defense against a wide range of common web vulnerabilities, and it belongs on both the client and the server, since client-side validation alone can be bypassed.",
+          "Every piece of user-submitted data — form fields, URL parameters, uploaded files — should be validated and sanitized before it's processed or stored. This is foundational defense against a wide range of common web vulnerabilities, and it belongs on both the client and the server, since client-side validation alone can be bypassed. For the full set of business rules beyond security, see [[/blogs/data-validation-rules|15 data validation rules for business applications]].",
         ],
         visual: { variant: "grid", accent: "orange", caption: "Input validation at every entry point is one of the most consistently effective defenses against common web vulnerabilities." },
       },
@@ -777,7 +777,7 @@ export const webDevPosts3: BlogPost[] = [
       {
         heading: "What WCAG 2.2 added and why scanners are not enough",
         body: [
-          "WCAG 2.2 added nine success criteria. Six apply at Level A or AA and appear in the checklist above: Focus Not Obscured (Minimum), Dragging Movements, Target Size (Minimum), Consistent Help, Redundant Entry and Accessible Authentication (Minimum). The other three are AAA. The old 4.1.1 Parsing criterion is \"obsolete and removed\".",
+          "WCAG 2.2 added nine success criteria. Six apply at Level A or AA and appear in the checklist above: Focus Not Obscured (Minimum), Dragging Movements, Target Size (Minimum), Consistent Help, Redundant Entry and Accessible Authentication (Minimum). The other three are AAA. The old 4.1.1 Parsing criterion is \"obsolete and removed\". Our list of [[/blogs/accessibility-testing-tools|accessibility testing tools]] covers what each scanner, checker and screen reader is good for.",
           "Most of the new criteria need a person to judge them, which is the wider point. The W3C states that evaluation tools \"can not determine accessibility, they can only assist in doing so\". In a 2017 test by the UK Government Digital Service, a page built with 143 barriers was run through 10 automated tools: the most effective single tool found 41% (counting its prompts for manual checks), and all 10 together found about 71%, leaving 29% that no tool detected. That was one deliberately broken page, not a general detection rate, and tools have changed since, but the lesson holds.",
           "Scanners are still worth running. WebAIM's 2026 scan of the top one million home pages found detectable WCAG failures on 95.9% of them, most often low-contrast text, missing alt text, missing form labels and empty links. WebAIM adds that the \"absence of detected errors does not indicate that a page is accessible or conformant\".",
         ],

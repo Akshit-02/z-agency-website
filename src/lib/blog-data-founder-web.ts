@@ -184,7 +184,7 @@ export const founderWebPosts: BlogPost[] = [
       {
         heading: "Conclusion and next steps",
         body: [
-          "Write down what users must do, tag each line with the five questions, and let the pattern decide: no tags, a website; one tagged workflow, a website plus one module; tags across workflows, a web application. Then check whether existing software covers the tagged workflows before you commission anything custom. Turn the result into a short brief using the [[/blogs/website-requirements-document|website requirements document guide]], and ask every supplier to quote against the same list.",
+          "Write down what users must do, tag each line with the five questions, and let the pattern decide: no tags, a website; one tagged workflow, a website plus one module; tags across workflows, a web application. Then check whether existing software covers the tagged workflows before you commission anything custom. Turn the result into a short brief using the [[/blogs/website-requirements-document|website requirements document guide]], and ask every supplier to quote against the same list. If you need an application, [[/blogs/types-of-web-applications|the 15 types of web applications businesses build]] can help you name it and see what drives its cost.",
           "If you are building an application, plan the personal-data duties for your market and the running costs before you plan features. Teams that need help with the build can look at our [[/services/website-development|website and web application development]] service.",
         ],
         cta: {
@@ -601,7 +601,7 @@ export const founderWebPosts: BlogPost[] = [
       {
         heading: "Conclusion and next steps",
         body: [
-          "Write down your riskiest assumption and the evidence that would prove it wrong. Put every candidate feature through the worksheet. Keep the experiment column short, keep the trust column intact, and do as much as you can manually for the first customers. Then brief a team with the in, manual and later lists, so they quote for the right thing. If you need a team to design and build it, see our [[/services/website-development|web application development]] service.",
+          "Write down your riskiest assumption and the evidence that would prove it wrong. Put every candidate feature through the worksheet. Keep the experiment column short, keep the trust column intact, and do as much as you can manually for the first customers. Then brief a team with the in, manual and later lists, so they quote for the right thing. If you need a team to design and build it, see our [[/services/website-development|web application development]] service. Building a mobile app instead? See [[/blogs/mobile-app-mvp-features|the features a startup MVP app needs]], including store requirements such as in-app account deletion.",
         ],
         cta: {
           title: "Plan your MVP",

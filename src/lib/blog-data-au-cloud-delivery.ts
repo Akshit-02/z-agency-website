@@ -463,6 +463,7 @@ export const auCloudDeliveryPosts: BlogPost[] = [
     sceneKind: "pipeline",
     bannerAlt: "A new version released alongside the old through rolling, blue-green and canary strategies, with health checks, traffic shifting, database expand and contract steps and a rollback path",
     date: "2026-10-10",
+    updated: "2026-10-28",
     readingTime: "4 min read",
     relatedServiceSlugs: ["website-development", "mobile-app-development"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech", "travel-hospitality"],
@@ -550,6 +551,29 @@ export const auCloudDeliveryPosts: BlogPost[] = [
         body: [
           "**This example is hypothetical.** An online retailer's deployments caused short outages and occasional failed checkouts. The team added readiness checks and graceful shutdown, moved to rolling deployments for most services and canary releases for the checkout API with automatic rollback on error rate, and adopted expand and contract for schema changes. A column rename that previously needed a maintenance window was done over three releases.",
         ],
+      },
+      {
+        heading: "12 checks before updating a live web application",
+        body: [
+          "Zero-downtime techniques reduce risk; they do not remove it. Run through these checks before each production release. They will not guarantee a problem-free deployment, but they make problems easier to spot and quicker to undo. Scale the effort to the size of the change: a copy fix needs fewer checks than a schema migration.",
+        ],
+        table: {
+          headers: ["Check", "Why it matters", "How to confirm"],
+          rows: [
+            ["1. Tests pass on the exact build being deployed", "Catches regressions before users do", "CI run linked to the release"],
+            ["2. Change reviewed and scoped", "Unreviewed or bundled changes are harder to diagnose", "Approved pull request; release notes"],
+            ["3. Database migrations are backward compatible", "Old and new code run side by side during rollout", "Expand-and-contract plan; tested on production-sized data"],
+            ["4. Configuration and secrets in place", "Missing environment values break new features", "Compare environment settings with staging"],
+            ["5. Feature flags set as intended", "Lets you release code without exposing it", "Flag states documented for launch"],
+            ["6. Rollback path tested", "A rollback that has never been tried may not work", "Previous version can be redeployed; data changes reversible or compatible"],
+            ["7. Backups recent and restorable", "Last line of defence for data changes", "Recent backup; restore tested"],
+            ["8. Dependencies and third-party changes known", "Provider API or library changes can break production", "Check versions and provider changelogs"],
+            ["9. Monitoring and alerts ready", "You need to see problems within minutes", "Dashboards for errors, latency and key journeys"],
+            ["10. Timing and people available", "Releasing before a weekend or sale is riskier", "Someone who can fix or roll back is on hand"],
+            ["11. Smoke tests after deploy", "Confirms critical journeys still work", "Sign-in, checkout or lead form tested on production"],
+            ["12. Communication", "Support and users are not surprised", "Support briefed; maintenance notice if anything is visible"],
+          ],
+        },
       },
       {
         heading: "Common mistakes",

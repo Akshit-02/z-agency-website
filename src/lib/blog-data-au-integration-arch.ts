@@ -701,7 +701,7 @@ export const auIntegrationArchPosts: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A modular monolith is the sensible default for most growing teams. Invest in boundaries and data ownership, and extract microservices only where team structure, scaling or isolation needs justify the operational cost.",
+          "A modular monolith is the sensible default for most growing teams. Invest in boundaries and data ownership, and extract microservices only where team structure, scaling or isolation needs justify the operational cost. For the wider set of options, from serverless and event-driven designs to the strangler fig, see [[/blogs/web-application-architecture-patterns|10 web application architecture patterns]].",
         ],
         cta: {
           title: "Deciding on architecture for your product?",

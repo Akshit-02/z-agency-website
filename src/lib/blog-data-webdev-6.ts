@@ -116,10 +116,11 @@ export const webDevPosts6: BlogPost[] = [
     slug: "website-lead-generation",
     title: "How to Improve Website Lead Generation: A Practical Guide",
     excerpt:
-      "A practical framework covering CTA strategy, forms, landing pages, service pages, demo flows, CRM integration and attribution.",
+      "A practical guide to website lead generation: CTAs, forms, landing pages, demo flows, CRM integration and attribution, plus 12 landing page features to check.",
     category: "Web Development",
     banner: "gauge",
     date: "2026-09-24",
+    updated: "2026-10-28",
     readingTime: "12 min read",
     relatedServiceSlugs: ["website-development", "cro-audit"],
     relatedIndustrySlugs: ["b2b-enterprise", "saas-technology", "professional-services"],
@@ -196,6 +197,29 @@ export const webDevPosts6: BlogPost[] = [
         cta: {
           title: "Ready to connect lead generation to a broader conversion strategy?",
           description: "See ZSpace Labs' [[/blogs/shopify-cro-audit|CRO audit framework]] for the structured, evidence-based approach this connects to. Learn more about our [[/services/website-development|Next.js and React development work]].",
+        },
+      },
+      {
+        heading: "12 landing page features that help lead generation",
+        body: [
+          "These are the features worth checking first on a lead generation page. Each one removes a reason not to enquire. Treat the list as a checklist for an audit or a brief, not a template to copy onto every page, and test the changes that matter most where you have the traffic; see [[/blogs/website-ab-testing-ideas|15 website elements to A/B test]].",
+        ],
+        table: {
+          headers: ["Feature", "Why it helps", "How to check"],
+          rows: [
+            ["1. A headline that matches the ad or search", "Visitors see at once that they are in the right place", "Compare the headline with the ad copy or the query that brings traffic"],
+            ["2. One primary call to action", "Removes the choice of what to do next", "Count competing buttons above the fold"],
+            ["3. A specific offer and next step", "People enquire more readily when they know what happens after", "The CTA area says what they get and how soon"],
+            ["4. A short form", "Each field is another reason to leave", "Every field is used to route or qualify the lead"],
+            ["5. Genuine proof near the form", "Reassures at the moment of commitment", "Proof is real, current and visible beside the form"],
+            ["6. Answers to common objections", "Handles doubts about price, time and fit before they stop the visitor", "Ask sales for the five most common questions and check they are answered"],
+            ["7. Price signals where possible", "Starting prices or ranges set expectations and filter poor-fit leads", "Decide deliberately whether to show prices; see the test idea on pricing"],
+            ["8. Other ways to get in touch", "Some visitors prefer a call, WhatsApp or booking a time", "Each listed channel is monitored and answered quickly"],
+            ["9. Fast loading on mobile", "Slow pages lose visitors before the form appears", "Test on a mid-range phone and check Core Web Vitals"],
+            ["10. Privacy reassurance", "People share details more readily when they know how they will be used", "A short line near the form, consistent with the privacy notice"],
+            ["11. Instant confirmation and booking", "Keeps momentum when interest is highest", "After submitting, visitors see what happens next or can book a call"],
+            ["12. Tracking into the CRM", "Lets you judge pages by qualified leads, not form fills", "Each lead arrives in the CRM with its source page and campaign"],
+          ],
         },
       },
       {

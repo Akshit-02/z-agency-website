@@ -23,6 +23,7 @@ export const aiAppsPosts10: BlogPost[] = [
     bannerAlt:
       "AI data privacy in four columns: collect less (minimize, purpose, redact, pseudonymize), protect (encrypt, access control, isolation, logging), provider terms highlighted (retention, training use, region, subprocessors) and rights (notice, access, deletion, objection).",
     date: "2026-10-02",
+    updated: "2026-10-28",
     readingTime: "6 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["healthcare-healthtech", "fintech", "b2b-enterprise"],
@@ -166,6 +167,29 @@ export const aiAppsPosts10: BlogPost[] = [
           "Sub-processor list and change notifications",
           "Security certifications and audit reports",
         ],
+      },
+      {
+        heading: "12 privacy questions to answer before connecting AI to business systems",
+        body: [
+          "Answer these before an AI feature or agent gets access to CRMs, inboxes, documents or databases. They do not replace legal advice, a privacy impact assessment or the specific requirements of laws such as India's DPDP Act or the GDPR, but they surface most of the decisions that need one.",
+        ],
+        table: {
+          headers: ["Question", "Why it matters"],
+          rows: [
+            ["1. What personal data will the AI see, and is all of it needed?", "Data minimisation: send only the fields the task requires"],
+            ["2. Whose data is it, and were they told it may be processed this way?", "Transparency and lawful basis"],
+            ["3. Where is the data processed and stored, and by which providers?", "Cross-border transfer rules and contracts"],
+            ["4. Does the provider use inputs or outputs for training, and can that be turned off?", "Confidentiality of customer data"],
+            ["5. How long are prompts, outputs and logs kept, and who can read them?", "Retention limits and insider access"],
+            ["6. Does the AI respect the same permissions as the user it acts for?", "Prevents users seeing data they could not access directly"],
+            ["7. Can sensitive fields be redacted or pseudonymised before sending?", "Reduces exposure if something leaks"],
+            ["8. What actions can the AI take with personal data, and which need approval?", "Limits harm from mistakes"],
+            ["9. How will you handle access, correction and deletion requests that involve AI data?", "Data subject rights"],
+            ["10. Are children's data or special categories (health, finance) involved?", "Stricter rules usually apply"],
+            ["11. How will you detect and respond to a leak or misuse?", "Incident response obligations"],
+            ["12. Who owns the decision, and when will it be reviewed?", "Accountability as the system changes"],
+          ],
+        },
       },
       {
         heading: "Worked Example",

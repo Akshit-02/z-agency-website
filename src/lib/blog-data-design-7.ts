@@ -651,7 +651,7 @@ export const designPosts7: BlogPost[] = [
       {
         heading: "Validation and Error Handling",
         body: [
-          "Validate each field when the shopper leaves it, not while they're still typing, and confirm when a problem is fixed. Error messages should appear next to the field, say what's wrong and how to fix it in plain language, and never clear what was entered. If submission fails, show a summary at the top that links to each problem field. Test server errors, timeouts and lost connections as well as typing mistakes. See [[/blogs/ux-writing|UX writing]] for message examples.",
+          "Validate each field when the shopper leaves it, not while they're still typing, and confirm when a problem is fixed. Error messages should appear next to the field, say what's wrong and how to fix it in plain language, and never clear what was entered. If submission fails, show a summary at the top that links to each problem field. Test server errors, timeouts and lost connections as well as typing mistakes. See [[/blogs/ux-writing|UX writing]] for message examples. For wording and recovery steps for specific errors, from declined cards to expired baskets, see [[/blogs/checkout-error-messages|15 checkout error messages to rewrite]].",
         ],
       },
       {

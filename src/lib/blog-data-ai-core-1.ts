@@ -322,7 +322,7 @@ export const aiCorePosts1: BlogPost[] = [
       {
         heading: "The Spectrum From Scripted Bot to Agent",
         body: [
-          "Real systems sit on a spectrum. The useful question is not 'chatbot or agent?' but 'how much should this system be allowed to do on its own?'",
+          "Real systems sit on a spectrum. The useful question is not 'chatbot or agent?' but 'how much should this system be allowed to do on its own?' For the classic agent types and the kinds businesses build today, see [[/blogs/types-of-ai-agents|types of AI agents explained]].",
         ],
         diagram: {
           variant: "assistantspectrum",

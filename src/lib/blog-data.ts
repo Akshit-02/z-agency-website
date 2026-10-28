@@ -271,6 +271,12 @@ import { founderCommercePosts4 } from "./blog-data-founder-4-commerce";
 import { founderUxPosts4 } from "./blog-data-founder-4-ux";
 import { founderCroPosts4 } from "./blog-data-founder-4-cro";
 import { launchGrowthPosts } from "./blog-data-launch-growth";
+import { listiclePosts1 } from "./blog-data-listicles-1";
+import { listiclePosts2 } from "./blog-data-listicles-2";
+import { listiclePosts3 } from "./blog-data-listicles-3";
+import { listiclePosts4 } from "./blog-data-listicles-4";
+import { listiclePosts5 } from "./blog-data-listicles-5";
+import { listiclePosts6 } from "./blog-data-listicles-6";
 
 export type BlogSection = {
   heading: string;
@@ -911,7 +917,7 @@ export const posts: BlogPost[] = [
       {
         heading: "Design tokens",
         body: [
-          "Tokens turn decisions into shared variables. Instead of a hex value repeated across dozens of files, both design and code reference the same named token. Change it once and it changes everywhere, which also makes theming and brand updates far easier. Tokens are the bridge described in [[/blogs/design-handoff|design handoff]].",
+          "Tokens turn decisions into shared variables. Instead of a hex value repeated across dozens of files, both design and code reference the same named token. Change it once and it changes everywhere, which also makes theming and brand updates far easier. Tokens are the bridge described in [[/blogs/design-handoff|design handoff]]. For the categories most interfaces need and how to name them, see [[/blogs/design-token-categories|12 design token categories]].",
           "There is now a common file format for tokens. The Design Tokens Community Group published version 2025.10 of its specification, its first stable version, in October 2025. It is a Community Group report rather than a W3C standard, so tool support varies; check that your design tool and build pipeline can read and write it before you depend on it.",
         ],
       },
@@ -1187,10 +1193,11 @@ export const posts: BlogPost[] = [
       "Mobile App Onboarding: How to Design an Onboarding Experience That Converts",
     seoTitle: "Mobile App Onboarding: How to Design Onboarding That Converts",
     excerpt:
-      "Onboarding is not a tutorial. It's the shortest path to a new user experiencing your app's core value. How to reduce signup friction, time permission requests, personalize and measure activation.",
+      "How to design mobile app onboarding that reaches core value fast: less sign-up friction, timely permission requests, activation metrics and 15 patterns.",
     category: "Mobile Apps",
     banner: "onboarding",
     date: "2025-11-10",
+    updated: "2026-10-28",
     readingTime: "12 min read",
     relatedServiceSlugs: [
       "mobile-app-development",
@@ -1311,6 +1318,33 @@ export const posts: BlogPost[] = [
         body: [
           "Let users skip intro and education screens. Design the first screen after onboarding carefully: an empty home screen with no suggested next step is where many new users stall. See [[/blogs/mobile-app-ux-design|mobile app UX design]] for designing empty and loading states.",
         ],
+      },
+      {
+        heading: "15 onboarding patterns and when each fits",
+        body: [
+          "The principles above show up in a small set of recurring patterns. None is right for every app: pick the ones that remove the specific obstacle between a new user and the first moment of value, and test them against your activation metric. The examples are typical uses, not results.",
+          "If you are building a first version, [[/blogs/mobile-app-mvp-features|the features a startup MVP app needs]] covers what else must be in place at launch, including in-app account deletion.",
+        ],
+        table: {
+          headers: ["Pattern", "What it does", "Use it when", "Avoid it when"],
+          rows: [
+            ["1. Straight to the core action", "Opens on the main screen with no intro", "The core action is obvious, as in a camera or notes app", "Setup is genuinely required first"],
+            ["2. Guest mode", "Lets people try the app before creating an account", "Value can be shown without personal data", "The app is meaningless without an account, such as banking"],
+            ["3. One-tap sign-in", "Offers Sign in with Apple, Google sign-in, passkeys or email links", "An account is needed early", "You cannot support the extra sign-in methods properly"],
+            ["4. One goal question", "Asks what the user wants to do and changes the first screen", "Different users need different starting points", "The answer would not change anything visible"],
+            ["5. Sample data or templates", "Starts users with example content they can edit", "An empty app hides what it can do", "Sample data could be mistaken for real data, as in finance"],
+            ["6. Permission explainer", "Explains the benefit before the system prompt", "A feature needs camera, location or notifications", "You are asking on first launch for a feature not yet used"],
+            ["7. Helpful empty states", "Shows a clear first action where content will appear", "Screens start empty", "The action is already obvious"],
+            ["8. Contextual tips", "Explains a control the first time it becomes relevant", "A feature is useful but not self-explanatory", "Tips pile up and cover the interface"],
+            ["9. Setup checklist", "Lists the few steps needed to get value, with progress", "The app needs setup, such as connecting an account", "There is only one step; just take the user there"],
+            ["10. Progressive profiling", "Asks for details only when they are needed", "Long sign-up forms are causing drop-off", "The data is required to provide the service at all"],
+            ["11. Personalised first run", "Uses known context to fill the first screen", "You have consented data to tailor content", "Personalisation would feel intrusive this early"],
+            ["12. Learn by doing", "Walks users through a real first task, not a demo", "The first task has a few non-obvious steps", "A simple screen would be clearer than a guided flow"],
+            ["13. Resume where you left off", "Saves partial progress and returns users to it", "Onboarding includes verification or long forms", "Saved data would create security or privacy risk"],
+            ["14. Activation nudges", "Sends a reminder to users who have not activated", "Users opted in and the message helps them finish", "It would be the first notification they ever see"],
+            ["15. Skip and revisit", "Lets users skip intro screens and replay tips from settings", "Some users already know the product", "The step is required, such as accepting terms"],
+          ],
+        },
       },
       {
         heading: "Measure activation, not completion",
@@ -1868,7 +1902,7 @@ export const posts: BlogPost[] = [
       {
         heading: "What to add later, once you have order volume",
         body: [
-          "Subscription and membership apps, loyalty and rewards programs, and advanced upsell or bundling tools all make more sense once you have enough order volume to optimize — installing them before that point usually means configuring a feature with no real usage to learn from. The same is true for currency conversion and multi-market apps, which matter far more once international traffic is a meaningful share of your visitors than on day one.",
+          "Subscription and membership apps, loyalty and rewards programs, and advanced upsell or bundling tools all make more sense once you have enough order volume to optimize — installing them before that point usually means configuring a feature with no real usage to learn from. The same is true for currency conversion and multi-market apps, which matter far more once international traffic is a meaningful share of your visitors than on day one. When conversion becomes the focus, see [[/blogs/shopify-apps-for-conversion-rate|12 types of Shopify app that can improve conversion]].",
         ],
         callout: {
           type: "tip",
@@ -3753,6 +3787,12 @@ posts.push(
   ...founderUxPosts4,
   ...founderCroPosts4,
   ...launchGrowthPosts,
+  ...listiclePosts1,
+  ...listiclePosts2,
+  ...listiclePosts3,
+  ...listiclePosts4,
+  ...listiclePosts5,
+  ...listiclePosts6,
 );
 
 export function getPostBySlug(slug: string) {

@@ -568,6 +568,7 @@ export const auSaasGrowthPosts: BlogPost[] = [
     sceneKind: "security",
     bannerAlt: "A B2B SaaS workspace with administrators, members and guests, roles mapped to permissions, resource-level access, SSO and an audit log of permission changes",
     date: "2026-10-10",
+    updated: "2026-10-28",
     readingTime: "5 min read",
     relatedServiceSlugs: ["ui-ux-design", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "fintech", "hrtech", "healthcare-healthtech"],
@@ -650,6 +651,29 @@ export const auSaasGrowthPosts: BlogPost[] = [
         body: [
           "Centralise authorisation in a shared layer or service that every endpoint uses, checking the user, tenant, role and resource for each request. Avoid scattered ad hoc checks. The OWASP Authorization Cheat Sheet recommends denying by default and validating permissions on every request. Write automated tests for each role, including attempts to reach other tenants' data and admin functions, and run them on every change.",
         ],
+      },
+      {
+        heading: "12 role and permission models, and when each fits",
+        body: [
+          "Roles, permissions and tenant isolation are different things. A **permission** is a single allowed action (edit invoices). A **role** is a named bundle of permissions (finance manager). **Tenant isolation** keeps one customer organisation's data separate from another's, whatever roles exist inside each, and must be enforced regardless of role; see [[/blogs/multi-tenant-saas-architecture|multi-tenant SaaS architecture]]. **Administrative privileges** let someone change roles, billing or security settings and deserve the most protection. These are the models most B2B products end up combining; start with as few as your customers need.",
+        ],
+        table: {
+          headers: ["Model or role", "What it allows", "Fits when", "Watch for"],
+          rows: [
+            ["1. Owner", "Everything, including deleting the account and transferring ownership", "Every organisation needs one accountable person", "Single point of failure; allow transfer"],
+            ["2. Admin", "Manage users, roles and settings", "Most organisations", "Keep admin separate from billing where customers ask"],
+            ["3. Billing admin", "Plans, invoices and payment methods only", "Finance teams pay but do not use the product", "Avoid giving data access with it"],
+            ["4. Member", "Day-to-day use of core features", "The default for most users", "Defining what members cannot do"],
+            ["5. Viewer (read-only)", "See but not change", "Stakeholders, auditors, executives", "Exports may still leak data"],
+            ["6. Guest or external collaborator", "Limited access to specific items", "Clients, contractors, partners", "Must never see other items or the user list"],
+            ["7. Custom roles", "Customer-defined bundles of permissions", "Larger customers with their own policies", "Support burden; needs a clear permission list"],
+            ["8. Resource-level permissions", "Access per project, workspace or record", "Work split by team or client", "Complexity grows fast; test thoroughly"],
+            ["9. Group- or team-based access", "Permissions granted to groups, synced from an identity provider", "Enterprise customers with SSO", "Group sync errors grant or remove access silently"],
+            ["10. Attribute-based rules", "Access by attributes such as region or department", "Rules that roles alone cannot express", "Hard to explain to admins; document well"],
+            ["11. Approval roles", "Actions need a second person to approve", "Payments, deletions, high-value changes", "Approver unavailable; plan delegation"],
+            ["12. Support access and service accounts", "Time-limited staff access; API keys for integrations", "Troubleshooting and integrations", "Log every use; scope and rotate keys"],
+          ],
+        },
       },
       {
         heading: "Common mistakes",

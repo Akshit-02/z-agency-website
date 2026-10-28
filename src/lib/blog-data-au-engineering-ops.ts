@@ -408,6 +408,7 @@ Release      -> deploy to production (staged)
     sceneKind: "monitor",
     bannerAlt: "Logs, metrics and traces from a web application flowing into dashboards, error tracking and alerts tied to service level objectives, with personal data filtered out",
     date: "2026-10-09",
+    updated: "2026-10-28",
     readingTime: "6 min read",
     relatedServiceSlugs: ["website-development", "mobile-app-development"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech", "healthcare-healthtech"],
@@ -511,6 +512,27 @@ Release      -> deploy to production (staged)
           "Restrict access to logs and set retention to what operations and investigations need.",
           "Know where your observability vendor stores data; if you are covered by the Privacy Act and telemetry includes personal information, APP 8 and APP 11 apply.",
         ],
+      },
+      {
+        heading: "10 metrics to track after launch",
+        body: [
+          "Monitoring watches known signals, **alerting** tells a person when one needs attention, **logging** records events for investigation, and **error tracking** groups exceptions with stack traces so they can be fixed. These ten metrics cover most applications after launch. There are no universal thresholds: set targets from your users' expectations and a few weeks of normal data, and alert on symptoms users would notice rather than on every blip. See [[/blogs/slos-and-error-budgets|SLOs and error budgets]].",
+        ],
+        table: {
+          headers: ["Metric", "What it detects", "Action it informs"],
+          rows: [
+            ["1. Availability (synthetic checks on key journeys)", "The app or a journey is down", "Page the on-call person"],
+            ["2. Error rate by endpoint or screen", "New bugs, bad releases, failing dependencies", "Roll back or fix; check recent deploys"],
+            ["3. Latency (p95 and p99, not just averages)", "Slowness affecting a minority of users", "Find slow queries, calls or code paths"],
+            ["4. Throughput (requests, jobs, orders per minute)", "Traffic spikes, or drops that signal a break", "Scale up, or investigate a sudden drop"],
+            ["5. Saturation (CPU, memory, connections, disk)", "Resources about to run out", "Scale or fix leaks before failure"],
+            ["6. Queue depth and age", "Background work falling behind", "Add workers or fix stuck jobs"],
+            ["7. Background job failures", "Emails, syncs or reports silently failing", "Retry, fix, or notify affected users"],
+            ["8. External dependency errors and latency", "A provider is failing or slow", "Circuit breaker, fallback, contact provider"],
+            ["9. Real-user web vitals or app start time", "Experience on real devices and networks", "Prioritise front-end performance work"],
+            ["10. Business health signals (sign-ups, orders, logins)", "Problems that technical metrics miss", "Investigate when they fall unexpectedly"],
+          ],
+        },
       },
       {
         heading: "Choosing tools",

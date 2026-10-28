@@ -452,7 +452,7 @@ export const commercePosts73: BlogPost[] = [
       {
         heading: "SKUs and Variants",
         body: [
-          "Define variant axes per family (size, colour, capacity) and which attributes change per variant. Usually one variant maps to one SKU, but bundles, kits and made-to-order products may break that rule; model them explicitly. Keep identifiers stable: changing SKU codes or product IDs breaks integrations, analytics and history. Check platform limits; Shopify now allows up to 2,048 variants per product, and other platforms and channels have their own constraints.",
+          "Define variant axes per family (size, colour, capacity) and which attributes change per variant. Usually one variant maps to one SKU, but bundles, kits and made-to-order products may break that rule; model them explicitly. Keep identifiers stable: changing SKU codes or product IDs breaks integrations, analytics and history. Check platform limits; Shopify now allows up to 2,048 variants per product, and other platforms and channels have their own constraints. For practical rules on options, SKUs, images, inventory and when to split products, see [[/blogs/product-variant-management|product variant management best practices]].",
         ],
       },
       {

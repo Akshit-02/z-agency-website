@@ -736,7 +736,7 @@ Every tenant-owned table (projects, invoices, files ...) carries organisation_id
       {
         heading: "Step 6: Data modelling",
         body: [
-          "Some performance problems are design problems: missing foreign keys and indexes on join columns, wide tables with rarely used columns, storing structured data in unindexed text, or one table serving incompatible access patterns. Archiving old data and partitioning very large tables by time or tenant can help, at the cost of complexity. Change models incrementally with backward-compatible migrations.",
+          "Some performance problems are design problems: missing foreign keys and indexes on join columns, wide tables with rarely used columns, storing structured data in unindexed text, or one table serving incompatible access patterns. Archiving old data and partitioning very large tables by time or tenant can help, at the cost of complexity. Change models incrementally with backward-compatible migrations. For the design decisions that cause these problems in the first place, see [[/blogs/database-design-mistakes|10 database design mistakes]].",
         ],
       },
       {

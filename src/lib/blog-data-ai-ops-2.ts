@@ -562,6 +562,7 @@ export const aiOpsPosts2: BlogPost[] = [
     bannerAlt:
       "LLM failure modes and responses compared (Detect and Respond, with Respond highlighted) by outage, timeout, rate limit, bad output and weak answer.",
     date: "2026-10-02",
+    updated: "2026-10-28",
     readingTime: "8 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["saas-technology", "ecommerce", "fintech"],
@@ -689,6 +690,32 @@ export const aiOpsPosts2: BlogPost[] = [
           "Retries are safe only when repeating an operation has no extra effect. For model calls that only generate text, retrying is harmless apart from cost. For tool calls that create tickets, send emails, issue refunds or update records, a retry after a timeout can duplicate the action if the first attempt actually succeeded. Use idempotency keys that the receiving system checks, record completed actions in the agent's state before continuing, and make the agent check whether an action already happened before repeating it.",
           "Design workflows so side effects happen once, near the end, after validation and confirmation, rather than scattered through many steps. Queued workflows with explicit states (pending, confirmed, executed) make recovery after failures straightforward. Orchestration patterns are covered in [[/blogs/ai-agent-orchestration|AI agent orchestration]].",
         ],
+      },
+      {
+        heading: "15 AI workflow failure scenarios to test before automating",
+        body: [
+          "Before an AI workflow handles real work, test how it fails. It helps to separate the **source** of each failure: the model (probabilistic output), the data it is given, the workflow logic around it (deterministic code), or the integrations it calls. Fixes differ by source, and a good evaluation score on normal cases says little about these edges. For integration-specific failures, see [[/blogs/integration-failure-scenarios|integration failure scenarios]].",
+        ],
+        table: {
+          headers: ["Scenario", "Source", "How to test", "Expected handling"],
+          rows: [
+            ["1. Plausible but wrong output", "Model", "Evaluation set with known answers", "Validation checks; human review above a risk level"],
+            ["2. Output in the wrong format", "Model", "Fuzz prompts; long and odd inputs", "Schema validation; retry or route to a person"],
+            ["3. Refusal or empty answer", "Model", "Edge-case and sensitive inputs", "Detect and route; never treat as success"],
+            ["4. Ambiguous or incomplete input", "Data", "Inputs missing key fields", "Ask for clarification or hold for review"],
+            ["5. Input in another language or format", "Data", "Scans, photos, mixed languages", "Detect and route to supported path"],
+            ["6. Stale or wrong source data", "Data", "Outdated documents in retrieval", "Show sources; date checks; owner review"],
+            ["7. Prompt injection in content", "Data", "Instructions hidden in emails or files", "Treat content as data; restrict tool permissions"],
+            ["8. Tool or API timeout", "Integration", "Simulate slow and failed calls", "Timeouts, retries, fallback, queue"],
+            ["9. Duplicate action on retry", "Workflow", "Replay the same job", "Idempotency keys; check before acting"],
+            ["10. Partial completion", "Workflow", "Fail a middle step", "Step records; resume or compensate"],
+            ["11. Permission denied", "Integration", "Remove access in test", "Stop and alert; do not escalate privileges"],
+            ["12. Approver unavailable", "Workflow", "Leave an approval pending", "Timeouts, reminders, delegation"],
+            ["13. Cost or volume spike", "Workflow", "Load test; loops in agent steps", "Budgets, rate limits, kill switch"],
+            ["14. Model or prompt change", "Model", "Rerun evaluation after any change", "Release gate on regression tests"],
+            ["15. Personal data in logs or outputs", "Data", "Inputs containing personal data", "Redaction; retention limits; access controls"],
+          ],
+        },
       },
       {
         heading: "Worked Example",

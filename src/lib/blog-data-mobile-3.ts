@@ -323,7 +323,7 @@ export const mobilePosts3: BlogPost[] = [
       {
         heading: "Memory and Battery",
         body: [
-          "Release resources when screens close, watch for leaks, and avoid holding large images or data sets in memory. For battery, minimize background work and polling, batch requests, limit location updates, and use push notifications instead of frequent checks.",
+          "Release resources when screens close, watch for leaks, and avoid holding large images or data sets in memory. For battery, minimize background work and polling, batch requests, limit location updates, and use push notifications instead of frequent checks. For a deeper list of causes and how to confirm them, see [[/blogs/mobile-app-battery-data-usage|12 battery and data usage issues to investigate]].",
         ],
       },
       {

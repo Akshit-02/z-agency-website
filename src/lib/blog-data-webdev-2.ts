@@ -672,7 +672,7 @@ export const webDevPosts2: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "**A redesign changes a website's visual design and UX while generally keeping its technical foundation; a rebuild replaces that foundation, sometimes with a redesign alongside; incremental improvement makes smaller, targeted changes. For a legacy site whose platform is the problem but which still earns traffic or leads, there is a fourth option: modernise in stages. Stabilise it, upgrade in place, rebuild section by section behind the existing URLs, change URLs once if you must, then switch off the old system.** The right approach depends on whether the problems are visual, architectural or isolated, how large the site is, and whether the current platform can still be kept secure.",
+          "**A redesign changes a website's visual design and UX while generally keeping its technical foundation; a rebuild replaces that foundation, sometimes with a redesign alongside; incremental improvement makes smaller, targeted changes. For a legacy site whose platform is the problem but which still earns traffic or leads, there is a fourth option: modernise in stages. Stabilise it, upgrade in place, rebuild section by section behind the existing URLs, change URLs once if you must, then switch off the old system.** The right approach depends on whether the problems are visual, architectural or isolated, how large the site is, and whether the current platform can still be kept secure. Whichever you choose, answer [[/blogs/questions-before-website-redesign|these 15 research and analytics questions]] first.",
         ],
       },
       {
@@ -1165,7 +1165,7 @@ export const webDevPosts2: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "React and Next.js aren't rival options — they're a library and a framework built on it, and the real decision for most business websites is whether to use React with that framework's added structure or largely unassisted. For the majority of business website projects, Next.js's routing, rendering and SEO-friendly defaults are worth the framework's conventions.",
+          "React and Next.js aren't rival options — they're a library and a framework built on it, and the real decision for most business websites is whether to use React with that framework's added structure or largely unassisted. For the majority of business website projects, Next.js's routing, rendering and SEO-friendly defaults are worth the framework's conventions. For how React and Next.js compare with Vue, Angular, Svelte, Astro and others, see [[/blogs/frontend-frameworks-for-web-applications|frontend frameworks for modern web applications]].",
         ],
       },
     ],

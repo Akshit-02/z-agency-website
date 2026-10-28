@@ -101,7 +101,7 @@ export const webDevPosts: BlogPost[] = [
       {
         heading: "Security, SEO, Performance and Accessibility",
         body: [
-          "These four disciplines are often treated as afterthoughts, added after a site is \"functionally done\" — which is consistently more expensive and less effective than building them in from the start.",
+          "These four disciplines are often treated as afterthoughts, added after a site is \"functionally done\" — which is consistently more expensive and less effective than building them in from the start. For a launch checklist covering these and the other essentials, see [[/blogs/business-website-features|15 business website features]].",
         ],
         checklist: [
           "Security: HTTPS, proper authentication, input validation, current dependencies; the OWASP Top 10 is the usual reference list of web application risks — see the [[/blogs/website-security-checklist|security checklist]]",
@@ -737,7 +737,7 @@ export const webDevPosts: BlogPost[] = [
       {
         heading: "When a website builder fits",
         body: [
-          "A brochure, portfolio or campaign site; modest traffic and content volume within the plan's limits; a small team without developers; marketers who need to edit and publish without a release process; and a need to launch quickly. Here builders consistently make sense.",
+          "A brochure, portfolio or campaign site; modest traffic and content volume within the plan's limits; a small team without developers; marketers who need to edit and publish without a release process; and a need to launch quickly. Here builders consistently make sense. If a builder fits, our comparison of [[/blogs/website-builders-for-small-business|six website builders for small businesses]] helps you choose one.",
           "A builder is also the honest answer when nobody will maintain a custom site after launch. An unmaintained custom site is worse than a well-run builder site.",
         ],
       },

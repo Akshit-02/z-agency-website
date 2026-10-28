@@ -161,7 +161,7 @@ export const commercePosts11: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "Good ecommerce empty states turn a dead end into a next step. For no search results, repeat the query, suggest corrections and show related categories and products. For filters that match nothing, name the filters, offer to undo the last one and prevent the situation with result counts. For an empty cart, show recently viewed items and a route back to shopping. For empty wishlists and order histories, explain the feature and offer one clear action. Each should say what happened, why if known, and what to do next.",
+          "Good ecommerce empty states turn a dead end into a next step. For no search results, repeat the query, suggest corrections and show related categories and products. For filters that match nothing, name the filters, offer to undo the last one and prevent the situation with result counts. For an empty cart, show recently viewed items and a route back to shopping. For empty wishlists and order histories, explain the feature and offer one clear action. Each should say what happened, why if known, and what to do next. For dashboards, tables and workspaces in software products, see [[/blogs/saas-empty-state-design|15 SaaS empty state patterns]].",
         ],
       },
       {
