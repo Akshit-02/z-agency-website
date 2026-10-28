@@ -203,7 +203,7 @@ export const commercePosts39: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "Translation changes words. Localization changes the experience: currency and price conventions, payment methods, delivery and duties, sizes and units, formats, imagery, legal content and support, with translation as one part. Transcreation rewrites marketing messages so they work in another culture. Ecommerce stores need all three in different places: translation for specifications and policies, localization for the store and checkout, transcreation for campaigns and brand copy. Customers often hesitate more over unfamiliar money and delivery than over imperfect wording.",
+          "Translation changes words. Localization changes the experience: currency and price conventions, payment methods, delivery and duties, sizes and units, formats, imagery, legal content and support, with translation as one part. Transcreation rewrites marketing messages so they work in another culture. Ecommerce stores need all three in different places: translation for specifications and policies, localization for the store and checkout, transcreation for campaigns and brand copy. Customers often hesitate more over unfamiliar money and delivery than over imperfect wording. For the interface problems that appear when text changes language, see [[/blogs/localisation-layout-issues|15 layout problems to check before localising]].",
         ],
       },
       {

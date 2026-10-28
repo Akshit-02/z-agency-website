@@ -281,6 +281,7 @@ export const auOpsReliabilityPosts: BlogPost[] = [
     sceneKind: "pipeline",
     bannerAlt: "Short background jobs flowing through a queue with retries and a dead-letter queue, beside a durable workflow coordinating long-running steps, timers and compensations",
     date: "2026-10-10",
+    updated: "2026-10-28",
     readingTime: "4 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["saas-technology", "fintech", "ecommerce", "logistics-supply-chain"],
@@ -337,6 +338,29 @@ export const auOpsReliabilityPosts: BlogPost[] = [
           "**Ordering:** design for out-of-order processing unless the queue guarantees order.",
           "See [[/blogs/api-integration-reliability|API integration reliability]] for patterns with external APIs.",
         ],
+      },
+      {
+        heading: "12 background jobs to move out of a web request",
+        body: [
+          "A web request should do what the user is waiting for and little else. These are common tasks to move into a background job or queue, so pages stay fast and failures can be retried. Each job then needs retries with limits, idempotency so a retried job does not repeat side effects, a dead-letter path for jobs that keep failing, and monitoring of queue age. See [[/blogs/web-application-architecture-patterns|the web-queue-worker pattern]].",
+        ],
+        table: {
+          headers: ["Job", "Why move it out of the request", "Watch for"],
+          rows: [
+            ["1. Sending emails and SMS", "Provider calls are slow and can fail", "Duplicate sends on retry"],
+            ["2. Generating PDFs and invoices", "CPU-heavy and slow", "Notify the user when ready"],
+            ["3. Resizing images and processing uploads", "Large files, heavy processing", "Virus scanning and validation first"],
+            ["4. Processing incoming webhooks", "Providers expect a fast acknowledgement", "Deduplicate by event ID"],
+            ["5. Syncing with CRMs, ERPs and other systems", "Third-party latency and outages", "Rate limits; reconciliation"],
+            ["6. Imports from CSV or spreadsheets", "Thousands of rows take minutes", "Row-level error reports"],
+            ["7. Large exports and reports", "Long queries", "Permission checks; download links that expire"],
+            ["8. Calling AI models", "Responses can take seconds and vary", "Timeouts, cost limits, streaming where users wait"],
+            ["9. Updating search indexes", "Not needed before the response", "Eventual consistency in search results"],
+            ["10. Sending notifications to many users", "Fan-out to thousands of recipients", "Batching and preferences"],
+            ["11. Scheduled clean-up and retention tasks", "Not tied to any request", "Run idempotently; log what was removed"],
+            ["12. Payment and order follow-up steps", "Fulfilment and accounting after payment", "Ordering, retries and failure alerts"],
+          ],
+        },
       },
       {
         heading: "Comparison",

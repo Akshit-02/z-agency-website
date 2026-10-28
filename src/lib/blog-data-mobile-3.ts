@@ -434,7 +434,7 @@ export const mobilePosts3: BlogPost[] = [
       {
         heading: "Performance, Security and Accessibility",
         body: [
-          "Profile startup, scrolling and memory on representative devices; see [[/blogs/mobile-app-performance-optimization|app performance optimization]]. Check that tokens and sensitive data use secure storage, that APIs enforce authorization, and that no secrets ship in the app. Test with VoiceOver and TalkBack, large text sizes and contrast checks.",
+          "Profile startup, scrolling and memory on representative devices; see [[/blogs/mobile-app-performance-optimization|app performance optimization]]. Check that tokens and sensitive data use secure storage, that APIs enforce authorization, and that no secrets ship in the app. Test with VoiceOver and TalkBack, large text sizes and contrast checks. For the text size, dark mode and motion settings to include, see [[/blogs/mobile-app-display-settings-testing|12 text and display settings to test]].",
         ],
       },
       {

@@ -358,7 +358,7 @@ export const auSaasProductPosts: BlogPost[] = [
       {
         heading: "Step 6: Dashboards and decisions",
         body: [
-          "Build a small set of dashboards tied to recurring decisions: an onboarding dashboard reviewed weekly, a retention and adoption view reviewed monthly, and dashboards for each major initiative. Show definitions and data freshness on each. Then use them where decisions are made: product reviews, roadmap planning and experiment readouts. A dashboard that is not discussed is not used.",
+          "Build a small set of dashboards tied to recurring decisions: an onboarding dashboard reviewed weekly, a retention and adoption view reviewed monthly, and dashboards for each major initiative. Show definitions and data freshness on each. Then use them where decisions are made: product reviews, roadmap planning and experiment readouts. A dashboard that is not discussed is not used. Many data-quality problems start with identity; see [[/blogs/product-analytics-identity|12 user-identity decisions for accurate product analytics]].",
         ],
       },
       {

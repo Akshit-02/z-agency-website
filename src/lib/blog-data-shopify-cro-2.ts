@@ -583,7 +583,7 @@ export const shopifyCroPosts2: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "Shopify bundles and volume discounts increase average order value by packaging complementary products at a combined price, offering per-unit discounts for buying more, or letting customers mix and match from a defined set. The critical, often-missed consideration is that a higher AOV doesn't automatically mean higher profit — if the discount needed to drive that AOV increase cuts too deep into margin, or if you're bundling products customers already bought together at full price, revenue can rise while profit stays flat or falls. Model the real margin impact before setting bundle pricing, not just the AOV effect.",
+          "Shopify bundles and volume discounts increase average order value by packaging complementary products at a combined price, offering per-unit discounts for buying more, or letting customers mix and match from a defined set. The critical, often-missed consideration is that a higher AOV doesn't automatically mean higher profit — if the discount needed to drive that AOV increase cuts too deep into margin, or if you're bundling products customers already bought together at full price, revenue can rise while profit stays flat or falls. Model the real margin impact before setting bundle pricing, not just the AOV effect. Before combining bundles with other offers, settle the [[/blogs/ecommerce-discount-rules|discount rules for complex promotions]].",
         ],
       },
       {

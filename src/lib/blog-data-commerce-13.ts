@@ -312,7 +312,7 @@ export const commercePosts13: BlogPost[] = [
     bannerAlt:
       "Product feed process: product data, build the feed, validate, send to channels, and diagnose and fix, with a loop noting that feeds must match the page on price, stock and shipping.",
     date: "2026-09-29",
-    updated: "2026-10-09",
+    updated: "2026-10-28",
     readingTime: "14 min read",
     relatedServiceSlugs: ["website-development", "shopify-development"],
     relatedIndustrySlugs: ["ecommerce"],
@@ -422,6 +422,32 @@ export const commercePosts13: BlogPost[] = [
           "Fix errors at the source data, not with one-off feed overrides",
           "Recheck after theme, app, price or catalog changes",
         ],
+      },
+      {
+        heading: "15 feed validation rules for reliable multichannel listings",
+        body: [
+          "Validate feeds before every submission so errors are caught by your own checks rather than by a channel disapproving products. These rules are based on Google Merchant Center's product data specification, checked on 28 October 2026; other channels have similar but not identical rules, so check each one.",
+        ],
+        table: {
+          headers: ["Rule", "What to check"],
+          rows: [
+            ["1. Unique, stable IDs", "Each product or variant has an ID that never changes or repeats (Google allows up to 50 characters)"],
+            ["2. Title matches the page", "Title describes the product and matches the landing page (Google allows up to 150 characters)"],
+            ["3. Description is product-only", "No promotional text, links or unrelated content"],
+            ["4. Working landing page", "Link resolves on your verified domain, without redirects to the home page"],
+            ["5. Image meets requirements", "Shows the product accurately; no watermarks, promotional text or borders"],
+            ["6. Price matches everywhere", "Same price and currency in the feed, on the page, in structured data and at checkout"],
+            ["7. Availability matches", "in_stock, out_of_stock, preorder or backorder, as shown on the page"],
+            ["8. Brand present and real", "No placeholders such as \"Generic\" or \"N/A\""],
+            ["9. GTIN only when correct", "Valid check digit; omit it rather than guess"],
+            ["10. Variant grouping", "Variants share a group ID and carry their own colour, size and IDs"],
+            ["11. Sale price and dates", "Sale prices have valid date ranges and match the page during the sale"],
+            ["12. Shipping and tax", "Shipping costs and tax settings match checkout for each target country"],
+            ["13. Required fields per category", "Apparel needs attributes such as size, colour and gender in many countries"],
+            ["14. Freshness", "Feed updates at least as often as price and stock change"],
+            ["15. Error monitoring", "Channel diagnostics reviewed after each update; disapprovals alerted"],
+          ],
+        },
       },
       {
         heading: "Feeds for Marketplaces, Social and AI Channels",

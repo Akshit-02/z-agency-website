@@ -431,6 +431,7 @@ export const auOpsMobilePosts: BlogPost[] = [
     sceneKind: "mobile",
     bannerAlt: "A mobile app version moving through a release train, phased App Store release and staged Google Play rollout, with feature flags, monitoring gates and a hotfix path",
     date: "2026-10-10",
+    updated: "2026-10-28",
     readingTime: "4 min read",
     relatedServiceSlugs: ["mobile-app-development"],
     relatedIndustrySlugs: ["fintech", "retail", "healthcare-healthtech", "travel-hospitality", "d2c-consumer"],
@@ -516,6 +517,32 @@ export const auOpsMobilePosts: BlogPost[] = [
         body: [
           "**This example is hypothetical.** A booking app moved from ad hoc releases to a fortnightly train. A new payment flow shipped behind a flag. The update went out with phased release on iOS and a staged rollout on Android starting at a small percentage. On day two, failed payments rose on one Android device family; the team halted the Android rollout, turned off the new flow with the flag for that platform, and shipped a fix in the next release.",
         ],
+      },
+      {
+        heading: "15 signals to watch during a phased rollout",
+        body: [
+          "Both stores let you release to a percentage of users first. Decide before the rollout which signals you will watch, what counts as normal for your app, and what would make you pause. There are no universal thresholds; compare the new version with the previous one over the same period.",
+        ],
+        table: {
+          headers: ["Signal", "What it tells you", "Typical action if it worsens"],
+          rows: [
+            ["1. Crash-free users or sessions", "Stability of the new build", "Pause rollout; fix or roll back with a flag"],
+            ["2. ANRs and app hangs", "Frozen screens (Android ANRs, iOS hangs)", "Pause; profile the slow path"],
+            ["3. Startup time", "Slower launches", "Investigate before widening"],
+            ["4. API error rates by app version", "Backend incompatibility", "Fix server or client; pause"],
+            ["5. Login and sign-up success", "Broken authentication", "Pause immediately"],
+            ["6. Payment and purchase success", "Lost revenue", "Pause; disable the feature with a flag"],
+            ["7. Core journey completion", "The main task still works", "Compare with previous version"],
+            ["8. Feature adoption", "Whether the new feature is used", "Improve or reconsider the feature"],
+            ["9. Support contacts mentioning the update", "Problems users notice first", "Triage quickly"],
+            ["10. Store ratings and reviews", "Public reaction", "Respond; check for patterns"],
+            ["11. Uninstalls", "Severe dissatisfaction", "Investigate cause"],
+            ["12. Battery and data usage", "Background or network regressions", "Check vitals and profilers"],
+            ["13. Device and OS-specific failures", "Problems on particular models", "Target fixes; exclude devices if needed"],
+            ["14. Backend load and cost", "New feature traffic", "Scale or optimise"],
+            ["15. Kill-switch and flag readiness", "Ability to switch features off", "Confirm before increasing the percentage"],
+          ],
+        },
       },
       {
         heading: "Common mistakes",

@@ -87,7 +87,7 @@ export const founderMobilePosts4: BlogPost[] = [
       {
         heading: "Each model, its payment route and the rule behind it",
         body: [
-          "The table below is the core of this guide. Apple's references are to the App Review Guidelines; Google's are to the sections of the Google Play Payments policy. Fees are list rates as published by Apple and Google and checked on 15 October 2026; they change, and the regional detail is in the next section.",
+          "The table below is the core of this guide. Apple's references are to the App Review Guidelines; Google's are to the sections of the Google Play Payments policy. Fees are list rates as published by Apple and Google and checked on 15 October 2026; they change, and the regional detail is in the next section. For the details your paywall itself must get right, see [[/blogs/mobile-app-paywall-checklist|12 subscription paywall details to review before launch]].",
         ],
         table: {
           headers: ["Model", "Apple: required route and rule", "Google Play: required route and policy section", "Store fees (checked 15 Oct 2026)"],

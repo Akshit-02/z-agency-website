@@ -163,6 +163,7 @@ export const auIntegrationArchPosts: BlogPost[] = [
     sceneKind: "code",
     bannerAlt: "An API evolving through additive changes and a new version, with deprecation and sunset dates announced to clients, a changelog and compatibility tests",
     date: "2026-10-10",
+    updated: "2026-10-28",
     readingTime: "4 min read",
     relatedServiceSlugs: ["website-development", "mobile-app-development"],
     relatedIndustrySlugs: ["saas-technology", "fintech", "startups", "b2b-enterprise"],
@@ -264,6 +265,29 @@ export const auIntegrationArchPosts: BlogPost[] = [
         body: [
           "**This example is hypothetical.** A logistics platform needed to split an address field into structured parts. It added the new fields alongside the old one, documented the change, and released v2 only for clients that wanted the old field removed. v1 responses carried a Deprecation header and, six months later, a Sunset header with a date. The team tracked v1 usage by client and contacted the remaining integrators before switching it off.",
         ],
+      },
+      {
+        heading: "12 versioning decisions to make before external integrations grow",
+        body: [
+          "Versioning is cheap to decide early and expensive to retrofit once partners, mobile apps and customers depend on your API. Make these decisions explicitly and publish them, so integrators know what to expect.",
+        ],
+        table: {
+          headers: ["Decision", "Options", "Why it matters"],
+          rows: [
+            ["1. What counts as breaking", "Removed or renamed fields, new required inputs, changed meanings or errors", "Integrators need a clear promise"],
+            ["2. Where the version lives", "URL path, header, or date-based version per account", "Affects routing, caching and documentation"],
+            ["3. Versioning granularity", "Whole API or per resource", "Per-resource versions are harder to explain"],
+            ["4. Default version for new clients", "Latest, or pinned at sign-up", "Pinning protects existing clients from surprises"],
+            ["5. How many versions you support at once", "For example the current and previous version", "Each version is code and tests to maintain"],
+            ["6. Deprecation notice period", "A published minimum period", "Partners need time to plan work"],
+            ["7. How you announce changes", "Changelog, email, response headers", "Silent changes break trust"],
+            ["8. Sunset behaviour", "Error responses, redirects or brownouts before removal", "Gives late adopters a clear signal"],
+            ["9. Additive-change rules", "Clients must ignore unknown fields", "Lets you add fields without a new version"],
+            ["10. Webhook and event versioning", "Version payloads separately or with the API", "Events often outlive request APIs"],
+            ["11. Mobile app compatibility", "Minimum supported app versions; forced updates", "Old app versions stay installed for years"],
+            ["12. Testing across versions", "Contract tests per supported version", "Catches accidental breaking changes"],
+          ],
+        },
       },
       {
         heading: "Common mistakes",

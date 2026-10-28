@@ -277,6 +277,8 @@ import { listiclePosts3 } from "./blog-data-listicles-3";
 import { listiclePosts4 } from "./blog-data-listicles-4";
 import { listiclePosts5 } from "./blog-data-listicles-5";
 import { listiclePosts6 } from "./blog-data-listicles-6";
+import { listiclePosts7 } from "./blog-data-listicles-7";
+import { listiclePosts8 } from "./blog-data-listicles-8";
 
 export type BlogSection = {
   heading: string;
@@ -3793,6 +3795,8 @@ posts.push(
   ...listiclePosts4,
   ...listiclePosts5,
   ...listiclePosts6,
+  ...listiclePosts7,
+  ...listiclePosts8,
 );
 
 export function getPostBySlug(slug: string) {

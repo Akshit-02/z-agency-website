@@ -434,7 +434,7 @@ export const founderInsightPosts2: BlogPost[] = [
       {
         heading: "Consent and the gaps it leaves",
         body: [
-          "Where visitors decline analytics or advertising cookies, some or all of their journey is not measured. Google's consent mode passes visitors' choices to Google tags through settings such as analytics_storage and ad_user_data; in basic mode tags do not load until consent is given, while advanced mode sends cookieless pings. Google's EU user consent policy applies to end users in the European Economic Area, the UK and Switzerland.",
+          "Where visitors decline analytics or advertising cookies, some or all of their journey is not measured. Google's consent mode passes visitors' choices to Google tags through settings such as analytics_storage and ad_user_data; in basic mode tags do not load until consent is given, while advanced mode sends cookieless pings. Google's EU user consent policy applies to end users in the European Economic Area, the UK and Switzerland. For a step-by-step check of your consent setup, see [[/blogs/analytics-consent-checks|10 analytics checks for websites with consent requirements]].",
           "Modelling can estimate some of the missing data, but GA4's behavioural modelling has thresholds: at least 1,000 events a day with analytics storage denied for at least 7 days, and at least 1,000 daily users with it granted on at least 7 of the previous 28 days. Google says meeting these does not guarantee eligibility. Most small lead-generation sites will not reach them, so plan on the CRM and self-reported data carrying more weight. Consent and privacy rules differ by country; take advice for the markets you serve.",
         ],
       },

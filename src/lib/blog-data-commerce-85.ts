@@ -70,7 +70,7 @@ export const commercePosts85: BlogPost[] = [
       {
         heading: "Idempotency: The Foundation",
         body: [
-          "Networks fail between your server and the provider. If a request times out, the payment may or may not have gone through. Retrying without protection can charge the customer twice. Idempotency keys solve this: you generate a unique key per payment attempt and send it with the request, and the provider returns the original result for repeated requests with the same key. Stripe's documentation, for example, describes keeping keys for at least 24 hours and replaying the first result.",
+          "Networks fail between your server and the provider. If a request times out, the payment may or may not have gone through. Retrying without protection can charge the customer twice. Idempotency keys solve this: you generate a unique key per payment attempt and send it with the request, and the provider returns the original result for repeated requests with the same key. Stripe's documentation, for example, describes keeping keys for at least 24 hours and replaying the first result. For the full set of patterns beyond payments, see [[/blogs/api-idempotency-patterns|10 API idempotency patterns]].",
           "Generate the key from your own payment attempt record (for example, the order ID plus attempt number), store it before calling the provider, and reuse it for any retry of the same attempt. Use a new key only when you intend a genuinely new attempt, such as after the shopper changes card.",
         ],
         code: {

@@ -1185,6 +1185,14 @@ Lists of options, features and use cases, each with selection criteria and trade
 - 10 API rate-limiting strategies for reliable web applications — https://www.zspace.in/blogs/api-rate-limiting-strategies
 - 12 data table and filter features that help users find answers faster — https://www.zspace.in/blogs/data-table-design
 - 10 notification preference patterns for apps that respect user attention — https://www.zspace.in/blogs/notification-preferences-design
+- 12 subscription paywall details to review before launching a mobile app — https://www.zspace.in/blogs/mobile-app-paywall-checklist
+- 12 ecommerce discount rules to define before running complex promotions — https://www.zspace.in/blogs/ecommerce-discount-rules
+- 15 interface layout problems to check before localising a digital product — https://www.zspace.in/blogs/localisation-layout-issues
+- 10 analytics implementation checks for websites with consent requirements — https://www.zspace.in/blogs/analytics-consent-checks
+- 10 idempotency patterns for APIs that process payments, orders and repeated requests — https://www.zspace.in/blogs/api-idempotency-patterns
+- 12 data-residency questions to answer before expanding an application internationally — https://www.zspace.in/blogs/data-residency-questions
+- 12 text and display settings to test in mobile apps — https://www.zspace.in/blogs/mobile-app-display-settings-testing
+- 12 user-identity tracking decisions that affect product analytics accuracy — https://www.zspace.in/blogs/product-analytics-identity
 
 ## UAE and GCC guides
 

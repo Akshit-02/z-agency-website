@@ -139,6 +139,7 @@ export const agentOpsPosts2: BlogPost[] = [
     bannerAlt:
       "Structured output pipeline: Define schema, Model generates, Schema enforced (highlighted), Business validation, Use in system, Log + monitor.",
     date: "2026-10-08",
+    updated: "2026-10-28",
     readingTime: "4 min read",
     relatedServiceSlugs: ["ai-automation", "website-development"],
     relatedIndustrySlugs: ["fintech", "saas-technology", "logistics-supply-chain"],
@@ -220,6 +221,32 @@ export const agentOpsPosts2: BlogPost[] = [
         cta: {
           title: "Need AI outputs your systems can rely on?",
           description: "ZSpace Labs builds extraction, classification and agent tool layers with structured outputs, validation and monitoring. See [[/services/ai-automation|AI automation services]].",
+        },
+      },
+      {
+        heading: "15 validation checks for AI-generated structured data",
+        body: [
+          "Schema enforcement makes outputs parse; it does not make them correct. Run these checks after parsing and before the data reaches another system, and route failures to a retry, a fallback or a person. A model's output is probabilistic; the checks around it should be deterministic.",
+        ],
+        table: {
+          headers: ["Check", "Catches"],
+          rows: [
+            ["1. Parses against the schema", "Malformed or truncated output"],
+            ["2. Required fields present and not empty", "Missing values hidden as empty strings"],
+            ["3. Types and formats", "Dates, currencies, emails and IDs in the wrong format"],
+            ["4. Allowed values (enums)", "Invented categories or statuses"],
+            ["5. Ranges and limits", "Negative quantities, impossible dates, discounts over 100%"],
+            ["6. Cross-field consistency", "Totals that do not add up; end before start"],
+            ["7. Values present in the source", "Numbers or names the model invented"],
+            ["8. References exist", "IDs that do not match a real customer, product or record"],
+            ["9. Duplicates", "The same item extracted twice"],
+            ["10. Length and size", "Overlong text that will break storage or display"],
+            ["11. Units and currency stated", "Ambiguous units and mixed currencies"],
+            ["12. Unsafe content", "Scripts, links or instructions inside text fields"],
+            ["13. Personal data where not expected", "Data that should have been redacted"],
+            ["14. Confidence or evidence fields", "Answers without the supporting quote or page reference you asked for"],
+            ["15. Business rules", "Values that are valid in format but not allowed by policy"],
+          ],
         },
       },
       {
