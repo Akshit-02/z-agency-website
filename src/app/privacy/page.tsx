@@ -39,9 +39,12 @@ export default function PrivacyPage() {
           <section>
             <h2 className="mb-3 font-serif-display text-[1.7rem] leading-tight text-ink">Cookies and analytics</h2>
             <p>
-              This site may use privacy-respecting analytics to understand
-              aggregate traffic patterns and improve the site. No personally
-              identifying advertising cookies are used.
+              This site uses Google Analytics and Microsoft Clarity to
+              understand how visitors use the site and to improve it. Microsoft
+              Clarity records how pages are used, such as clicks, scrolling and
+              mouse movement, to produce heatmaps and session replays; by default it masks
+              form inputs. Both services use cookies. No personally identifying
+              advertising cookies are used.
             </p>
           </section>
 
