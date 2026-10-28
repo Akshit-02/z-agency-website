@@ -54,7 +54,9 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: site.defaultTitle,
     description: site.description,
-    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: site.name }],
+    images: [
+      { url: "/opengraph-image", width: 1200, height: 630, alt: site.name },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -81,7 +83,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} ${newsreader.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${spaceGrotesk.variable} ${newsreader.variable}`}
+    >
       <body className="font-body antialiased">
         <FirstTouch />
         <Script
@@ -113,7 +118,12 @@ export default function RootLayout({
             name: site.name,
             alternateName: "ZSpace",
             url: site.url,
-            logo: { "@type": "ImageObject", url: `${site.url}/apple-icon`, width: 180, height: 180 },
+            logo: {
+              "@type": "ImageObject",
+              url: `${site.url}/apple-icon`,
+              width: 180,
+              height: 180,
+            },
             email: site.email,
             description: site.intro,
             contactPoint: {
@@ -124,10 +134,16 @@ export default function RootLayout({
               availableLanguage: ["English"],
             },
             knowsAbout: services.map((service) => service.name),
-            areaServed: markets.map((m) => ({ "@type": "Country", name: m.name })),
-            ...(Object.keys(site.social).length > 0 ? { sameAs: Object.values(site.social) } : {}),
+            areaServed: markets.map((m) => ({
+              "@type": "Country",
+              name: m.name,
+            })),
+            ...(Object.keys(site.social).length > 0
+              ? { sameAs: Object.values(site.social) }
+              : {}),
           }}
         />
+
         <StructuredData
           data={{
             "@context": "https://schema.org",
