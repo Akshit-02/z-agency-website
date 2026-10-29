@@ -19,7 +19,10 @@ export const site = {
   // Official social profiles, used as schema.org sameAs. Only add profiles
   // that are verified to belong to ZSpace Labs: the previous entries pointed
   // to an unrelated company's LinkedIn page and a non-existent X account.
-  social: {} as Record<string, string>,
+  social: {
+    Instagram: "https://www.instagram.com/zspacelabs.in/",
+    LinkedIn: "https://www.linkedin.com/company/zspace-labs",
+  } as Record<string, string>,
 } as const;
 
 /**

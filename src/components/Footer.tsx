@@ -114,6 +114,18 @@ export function Footer() {
                   {site.email}
                 </a>
               </li>
+              {Object.entries(site.social).map(([label, href]) => (
+                <li key={href}>
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={linkClass}
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
