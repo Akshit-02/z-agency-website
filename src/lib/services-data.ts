@@ -410,8 +410,8 @@ export const services: Service[] = [
       "Automations are engineered like software, with monitoring and fallbacks, not fragile scripts.",
       "We are honest about where AI helps and where it does not.",
     ],
-    seoTitle: "AI Automation Agency in India | Workflows & AI Agents",
-    metaDescription: "AI automation agency serving businesses across India: workflow automation, AI agents, CRM automation, document processing and integrations with your tools.",
+    seoTitle: "AI Automation Services in India | AI Agents & Workflows",
+    metaDescription: "AI automation services for businesses across India: workflow automation, AI agents, CRM and document automation, built into the tools your team already uses.",
     india: {
       "eyebrow": "AI automation agency in India",
       "h1": "Less repetitive work. More room to move.",
@@ -507,6 +507,14 @@ export const services: Service[] = [
       {
         q: "Can AI automation work with our existing tools?",
         a: "Usually yes. We connect to CRMs, help desks, email, spreadsheets and internal systems through APIs, webhooks or integration platforms.",
+      },
+      {
+        q: "What affects the timeline and cost of an AI automation project?",
+        a: "Mainly the number of systems to connect, the quality and accessibility of your data, how many exceptions the process has, and how much human review is needed. We usually scope one workflow first, agree success measures, and give an estimate after reviewing real examples of the work, rather than quoting a fixed package.",
+      },
+      {
+        q: "What should we prepare before an AI automation project starts?",
+        a: "A short description of the process as it runs today, a sample of real inputs such as emails, documents or tickets, access details or documentation for the tools involved, and the person who owns the process. Knowing roughly how often the task happens and how long it takes makes it easier to judge whether automation is worth it.",
       },
       {
         q: "Do you build AI automations for businesses across India?",

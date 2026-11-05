@@ -27,7 +27,7 @@ export const auHealthEducationPosts: BlogPost[] = [
   {
     slug: "lms-development-australia",
     title: "LMS Development in Australia: Custom Learning Platforms, Training Portals and When to Build",
-    seoTitle: "LMS Development in Australia: Build, Buy or Extend",
+    seoTitle: "Custom LMS Development in Australia: Build, Buy or Extend",
     excerpt:
       "Planning an LMS in Australia: roles, courses, assessment, certificates, reporting, accessibility, USI and AVETMISS for RTOs, and build vs buy.",
     category: "Web Development",

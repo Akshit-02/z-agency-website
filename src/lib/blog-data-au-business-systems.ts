@@ -17,9 +17,9 @@ export const auBusinessSystemsPosts: BlogPost[] = [
   {
     slug: "supplier-portal-development",
     title: "Supplier Portal Development: Purchase Orders, Approvals and Supplier Onboarding",
-    seoTitle: "Supplier Portal Development: A Practical Guide",
+    seoTitle: "Supplier Portal Development: Features, Security and Build vs Buy",
     excerpt:
-      "How to plan a supplier portal: onboarding and verification, purchase orders, delivery notices, invoice matching, payment status, compliance and build vs buy.",
+      "What a supplier portal should include, from onboarding and purchase orders to invoice matching and payment status, plus fraud controls and when to build or buy.",
     category: "Web Development",
     banner: "procureflow",
     sceneKind: "workflow",

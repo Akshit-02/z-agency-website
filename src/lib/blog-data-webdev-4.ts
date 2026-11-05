@@ -124,14 +124,17 @@ export const webDevPosts4: BlogPost[] = [
   {
     slug: "saas-website-development",
     title: "Website Development for SaaS Companies: Complete Guide",
+    seoTitle: "SaaS Website Development: A Practical Guide for SaaS Companies",
     excerpt:
-      "What a SaaS website actually needs to do — clear positioning, working signup and demo flows, credible pricing, and documentation that supports the product, not just the marketing.",
+      "SaaS website development explained: the pages a SaaS site needs, signup and demo flows, pricing, how the site connects to the product, and how to plan the project.",
     category: "Web Development",
     banner: "dashboard",
     date: "2026-09-24",
-    readingTime: "13 min read",
+    updated: "2026-11-05",
+    readingTime: "16 min read",
     relatedServiceSlugs: ["website-development", "ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology"],
+    relatedSlugs: ["saas-pricing-page-optimization", "saas-onboarding-optimization", "website-development-for-startups"],
     faqs: [
       { q: "What makes SaaS website development different from a standard business website?", a: "A SaaS site typically has to do more work — explain an often-abstract product, support self-serve signup or a sales-assisted demo flow, present pricing clearly, and sometimes host documentation — beyond simply describing a service." },
       { q: "Should a SaaS website support self-serve signup, a sales demo, or both?", a: "It depends on the product's price point and complexity — lower-touch, lower-price products favor self-serve signup; more complex or expensive products often need a demo-and-sales-assisted flow, and some products need both paths." },
@@ -217,6 +220,71 @@ export const webDevPosts4: BlogPost[] = [
         cta: {
           title: "Want your SaaS site's conversion flow reviewed?",
           description: "See the [[/blogs/website-development-guide|complete website development guide]] for how positioning, UX and technical foundation come together. See how we approach [[/services/website-development|website development]].",
+        },
+      },
+      {
+        heading: "Pages a SaaS website usually needs",
+        body: [
+          "Not every SaaS site needs all of these at launch. Start with the pages that answer the questions buyers ask before they sign up or book a demo, and add the rest as the product and sales process grow.",
+        ],
+        table: {
+          headers: ["Page", "Its job", "Notes"],
+          rows: [
+            ["Home", "Say what the product does and for whom, then route visitors to signup or a demo", "Show the real product early"],
+            ["Product or feature pages", "Explain major capabilities in terms of the job they do", "One page per major capability, not per minor feature"],
+            ["Use-case or industry pages", "Show fit for a specific team or sector", "Only where you have real depth for that audience"],
+            ["Pricing", "Let visitors choose a plan or understand how pricing works", "State what is included and what triggers an upgrade; see [[/blogs/saas-pricing-page-optimization|SaaS pricing pages]]"],
+            ["Integrations", "Show which tools the product connects to", "Searchable list; a page for each important integration"],
+            ["Documentation and help", "Support evaluation and onboarding", "Often a docs tool or subdomain; link to it from the main site"],
+            ["Security and trust", "Answer procurement and IT questions", "List only the certifications and controls you actually have"],
+            ["Changelog or release notes", "Show the product is actively developed", "Useful for existing customers and evaluators"],
+            ["Comparison pages", "Help buyers comparing options", "Keep claims factual and dated"],
+            ["Signup, login and demo booking", "Convert", "Treat as product UX, not as marketing pages"],
+          ],
+        },
+      },
+      {
+        heading: "How the marketing site connects to the product",
+        body: [
+          "Most SaaS websites are separate from the application itself, but visitors experience them as one product. Decide these points early, because they are harder to change after launch:",
+        ],
+        checklist: [
+          "**Domains.** The marketing site usually lives on the main domain and the app on a subdomain such as app.example.com or a separate path. The choice affects cookies, analytics and where search engines see your content.",
+          "**Signup handoff.** Pass the chosen plan, the traffic source and any referral code into the app at signup, so you can later see which channels bring paying customers.",
+          "**One user identity.** Connect anonymous website visits to the account created at signup, so reports run from first visit to activation and payment. See [[/blogs/product-analytics-identity|user-identity tracking decisions]].",
+          "**Shared design.** Use the same design tokens and components on the site and in the product, so the product does not look different after signup. See [[/blogs/design-token-categories|design token categories]].",
+          "**Content editing.** Marketing teams change pages often. A CMS lets them do it without a developer; see [[/blogs/what-is-a-headless-cms|what a headless CMS is]].",
+        ],
+      },
+      {
+        heading: "Planning a SaaS website project",
+        body: [
+          "Whether you build in-house or with a development partner, settling these questions before design starts avoids most rework:",
+        ],
+        checklist: [
+          "Which buyer types the site serves, and the one action each should take",
+          "Self-serve signup, demo request or both, which decides the forms, booking tool and CRM integration",
+          "Which existing pages bring search traffic, and how their URLs will be kept or redirected if you are redesigning",
+          "Who edits content after launch, and in which CMS",
+          "Integrations: CRM, product analytics, billing or pricing data, chat or support, documentation tool",
+          "Performance and accessibility targets, agreed before design rather than after build",
+          "Tracking tested end to end, from first visit to signup to activation, before launch",
+        ],
+      },
+      {
+        heading: "Common SaaS website mistakes",
+        body: [],
+        checklist: [
+          "Describing features in internal language instead of the problem they solve.",
+          "Hiding pricing without explaining how pricing works, when buyers expect to see it.",
+          "Sending every visitor to the same signup or demo form regardless of fit.",
+          "Using abstract illustrations where the real product interface would be clearer.",
+          "Losing the traffic source at signup, so you cannot tell which channels bring paying customers.",
+          "Building the marketing site and the app with different styles, so the product feels like a different company after signup.",
+        ],
+        cta: {
+          title: "Planning a SaaS website or redesign?",
+          description: "ZSpace Labs designs and builds SaaS marketing sites and product interfaces with one team, including CMS, analytics and signup flows. See our [[/services/website-development|website development service]].",
         },
       },
       {

@@ -90,6 +90,7 @@ export function Eyebrow({
   tone = "light",
   delay = 0,
   className = "",
+  as: Tag = "p",
 }: {
   children: ReactNode;
   on: boolean;
@@ -97,9 +98,11 @@ export function Eyebrow({
   tone?: Tone;
   delay?: number;
   className?: string;
+  /** Render as a span when the eyebrow sits inside a heading. */
+  as?: "p" | "span";
 }) {
   return (
-    <p
+    <Tag
       className={`flex items-center gap-3 text-[0.7rem] font-medium uppercase tracking-[0.16em] ${tone === "dark" ? "text-white/70" : "text-ink"} ${className}`}
     >
       <motion.span
@@ -109,7 +112,7 @@ export function Eyebrow({
         transition={{ duration: 0.8, ease: EASE, delay }}
       />
       {children}
-    </p>
+    </Tag>
   );
 }
 

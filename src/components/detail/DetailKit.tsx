@@ -161,9 +161,16 @@ export function DetailHero({
   primary,
   secondary,
   visual,
+  eyebrowInHeading = false,
 }: {
   crumbs: Crumb[];
   eyebrow: string;
+  /**
+   * Put the eyebrow inside the h1, so a descriptive label such as "AI
+   * automation agency in India" is part of the page's main heading while the
+   * visible design stays the same.
+   */
+  eyebrowInHeading?: boolean;
   title: ReactNode;
   description?: string;
   primary: { label: string; href: string };
@@ -182,15 +189,32 @@ export function DetailHero({
         </div>
         <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_1fr] lg:gap-10">
           <div>
-            <Eyebrow on={on} still={still}>
-              {eyebrow}
-            </Eyebrow>
-            <h1
-              className="hero-rise mt-6 text-balance text-[2.9rem] leading-[1] tracking-[-0.03em] text-ink sm:text-[4rem] lg:text-[4.4rem]"
-              style={{ ...serif, animationDelay: "0.1s", ["--hero-y" as string]: "40px" }}
-            >
-              {title}
-            </h1>
+            {eyebrowInHeading ? (
+              <h1>
+                <Eyebrow as="span" on={on} still={still}>
+                  {eyebrow}
+                </Eyebrow>
+                <span className="sr-only">: </span>
+                <span
+                  className="hero-rise mt-6 block text-balance text-[2.9rem] leading-[1] tracking-[-0.03em] text-ink sm:text-[4rem] lg:text-[4.4rem]"
+                  style={{ ...serif, animationDelay: "0.1s", ["--hero-y" as string]: "40px" }}
+                >
+                  {title}
+                </span>
+              </h1>
+            ) : (
+              <>
+                <Eyebrow on={on} still={still}>
+                  {eyebrow}
+                </Eyebrow>
+                <h1
+                  className="hero-rise mt-6 text-balance text-[2.9rem] leading-[1] tracking-[-0.03em] text-ink sm:text-[4rem] lg:text-[4.4rem]"
+                  style={{ ...serif, animationDelay: "0.1s", ["--hero-y" as string]: "40px" }}
+                >
+                  {title}
+                </h1>
+              </>
+            )}
             {description && (
               <p {...heroRise(0.35, "mt-7 max-w-[34rem] text-pretty text-[1.05rem] leading-relaxed text-ink/60")}>
                 {description}

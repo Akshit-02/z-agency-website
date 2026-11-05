@@ -374,6 +374,7 @@ export function ServiceDetail({ data }: { data: ServiceDetailData }) {
           { name: data.name, href: `/services/${data.slug}` },
         ]}
         eyebrow={data.india.eyebrow}
+        eyebrowInHeading
         title={accentTitle(data.india.h1)}
         description={data.heroCopy}
         primary={{ label: "Start a Project", href: contactHref }}

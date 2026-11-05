@@ -193,7 +193,7 @@ export const commercePosts75: BlogPost[] = [
   {
     slug: "omnichannel-ecommerce-architecture",
     title: "Omnichannel Ecommerce Architecture: How Retail Systems Fit Together",
-    seoTitle: "Omnichannel Ecommerce Architecture: Systems and Data Sync",
+    seoTitle: "Omnichannel Architecture for Ecommerce: Systems and Data Sync",
     excerpt:
       "Omnichannel ecommerce architecture explained: storefront, POS, inventory, ERP, OMS, CRM, customer data, fulfilment and the APIs and events that keep them synchronized.",
     category: "Web Development",

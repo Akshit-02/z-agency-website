@@ -1403,7 +1403,8 @@ export const indiaSupportPosts: BlogPost[] = [
     banner: "fork",
     sceneKind: "design",
     date: "2026-10-04",
-    readingTime: "7 min read",
+    updated: "2026-11-05",
+    readingTime: "9 min read",
     relatedServiceSlugs: ["ui-ux-design"],
     relatedIndustrySlugs: ["saas-technology", "startups"],
     relatedSlugs: ["product-design-vs-ux-design", "ux-design-process", "how-to-choose-a-ui-ux-design-agency"],
@@ -1462,6 +1463,29 @@ export const indiaSupportPosts: BlogPost[] = [
           "The line is blurry in practice. A confusing button label is a UX problem and a UI problem. A layout that hides a key action affects both. That's why many teams hire product designers who work across both, and why a good UI designer still thinks about flows and a good UX designer still cares how things look.",
           "Product design is a broader role again, adding business goals and product strategy. See [[/blogs/product-design-vs-ux-design|product design vs UX design]].",
         ],
+      },
+      {
+        heading: "One problem, two lenses: an example",
+        body: [
+          "An illustrative case: customers of an online store keep abandoning checkout at the delivery step.",
+          "**The UX questions** are about the flow: do customers know the delivery cost before they reach checkout, is the delivery date shown, are there steps that could be removed, and does the form ask for information the business does not need? The answers come from analytics, session recordings and watching people try the task.",
+          "**The UI questions** are about the screen: is the delivery cost visible without scrolling on a phone, do the options look selectable, are error messages next to the field they refer to, and is the button that continues clearly the primary action? The answers come from layout, hierarchy, component states and contrast.",
+          "Fixing only one side often fails. A shorter flow with unclear buttons still loses people, and a polished screen that hides the delivery cost until the last step still surprises them.",
+        ],
+      },
+      {
+        heading: "How UX and UI work fit into a project",
+        body: [],
+        table: {
+          headers: ["Stage", "Mostly UX", "Mostly UI"],
+          rows: [
+            ["Discovery", "Research, analytics review, task and content inventory", "Review of brand, existing interface and components"],
+            ["Structure", "Information architecture, user flows, wireframes", "Early layout and grid decisions"],
+            ["Testing", "Prototype tests of tasks and navigation", "Tests of readability, hierarchy and states"],
+            ["Design", "Edge cases, errors and empty states in the flow", "Final screens, components, design system"],
+            ["Handoff and build", "Acceptance criteria for each flow", "Specs, tokens and component behaviour; see [[/blogs/design-handoff|design handoff]]"],
+          ],
+        },
       },
       {
         heading: "Which does your project need?",

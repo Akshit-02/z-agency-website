@@ -269,7 +269,7 @@ export const auBusinessSoftwarePosts: BlogPost[] = [
   {
     slug: "legacy-software-modernization-australia",
     title: "Legacy Software Modernisation: How Australian Businesses Can Upgrade Old Systems",
-    seoTitle: "Legacy Software Modernisation in Australia: Options and Roadmap",
+    seoTitle: "Legacy Software Modernisation in Australia, Including PHP Apps",
     excerpt:
       "How Australian businesses can modernise legacy software: risk signs, retain, rehost, refactor or replace, data migration, phased rollouts and rollback plans.",
     category: "Web Development",
@@ -277,12 +277,16 @@ export const auBusinessSoftwarePosts: BlogPost[] = [
     sceneKind: "roadmap",
     bannerAlt: "An old business system being replaced piece by piece, with new services taking over functions while the legacy system keeps running until cutover",
     date: "2026-10-09",
-    updated: "2026-10-22",
-    readingTime: "12 min read",
+    updated: "2026-11-05",
+    readingTime: "14 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["manufacturing", "logistics-supply-chain", "professional-services", "b2b-enterprise", "construction-infrastructure"],
     relatedSlugs: ["custom-software-development-australia", "ai-legacy-code-modernization", "cloud-migration-australia", "software-vendor-handover-checklist"],
     faqs: [
+      {
+        q: "Should we rewrite a legacy PHP application in another language?",
+        a: "Not by default. PHP itself is actively maintained; the problems in legacy PHP systems usually come from an unsupported PHP version, an unmaintained framework, missing tests or tangled code, and those can be fixed without changing language. Consider another language only for a specific reason, such as your team's skills or a platform you are moving to, and even then replace the system in stages rather than in one rewrite.",
+      },
       {
         q: "What is legacy software modernisation?",
         a: "Legacy software modernisation means updating or replacing business software that still works but has become risky, costly or limiting. Options range from keeping it and reducing risk, to moving it to new infrastructure, to rewriting parts of it, to replacing it with a commercial product. The right option is decided per system, and often per component, based on business value and technical risk.",
@@ -478,6 +482,26 @@ traffic, keep rollback, then retire`,
         ],
       },
       {
+        heading: "Modernising a legacy PHP application",
+        body: [
+          "Many legacy business systems are PHP applications: an older Laravel, CodeIgniter or Zend Framework app, a heavily customised WordPress or Magento installation, or custom PHP written before frameworks were common. The options in Step 2 still apply, but PHP systems raise a few specific questions.",
+          "**Check the PHP version first.** The PHP project gives each version two years of active support followed by two years of security fixes only. Its supported versions page, checked in November 2026, lists security support for PHP 8.2 until 31 December 2026, 8.3 until 31 December 2027, 8.4 until 31 December 2028 and 8.5 until 31 December 2029. Older versions, including every PHP 7 release, no longer receive security fixes from the PHP project.",
+          "**Expect breaking changes between versions.** For example, the original mysql_* database functions were removed in PHP 7.0, so code that still uses them cannot run on any supported version. Large version jumps are usually done in steps, with the application tested at each one.",
+          "**Size the job with tooling before estimating.** Static analysis (such as PHPStan) and compatibility checks (such as the PHPCompatibility rules for PHP_CodeSniffer) show how much code is affected. Automated refactoring tools such as Rector can make many routine upgrade changes, but their output still needs review and testing.",
+          "**Decide what happens to the framework.** An unmaintained framework is often a bigger risk than the PHP version itself; Zend Framework, for instance, is no longer developed under that name and continues as the Laminas Project. You can upgrade the framework, move module by module to a maintained one, or replace parts incrementally as described in Step 3 while the rest keeps running.",
+          "**Check the hosting.** Older shared or self-managed servers may not offer a supported PHP version, so a hosting move is often part of the work.",
+        ],
+        table: {
+          headers: ["Situation", "Usual approach"],
+          rows: [
+            ["Supported PHP version, maintained framework, few tests", "Add tests around critical flows, then keep upgrading on a regular schedule"],
+            ["Unsupported PHP version, code mostly sound", "Stepwise version upgrade with automated tooling and regression tests"],
+            ["Unmaintained framework or heavily customised platform", "Replace incrementally, module by module, behind the existing system"],
+            ["No tests, little documentation, frequent incidents", "Stabilise and document first, then decide between upgrading and rebuilding"],
+          ],
+        },
+      },
+      {
         heading: "Taking over legacy software from a previous developer",
         body: [
           "Many modernisation projects start with a handover: the original developer or contractor has moved on, a vendor is winding down support, or the one person who understood the system is leaving. Before changing anything, secure what you need to keep the system running and to let a new team work on it safely.",
@@ -526,6 +550,7 @@ traffic, keep rollback, then retire`,
           "**Security and platforms:** ASD, Essential Eight maturity model and ISM mapping; Microsoft, Windows 10 end of support; OAIC, NDB statistics 2025.",
           "**Tax and invoicing:** ATO, Single Touch Payroll; ATO, Peppol; business.gov.au, record keeping.",
           "**Methods:** AWS, migration strategies; Martin Fowler, strangler fig application.",
+          "**PHP:** php.net, supported versions (checked 5 November 2026); PHP manual, migration guides for PHP 7.0 and later.",
           "The scorecard, roadmap and example are ours. Some ATO facts are summarised from official guidance and may change; check the current position before relying on them. Nothing here is ZSpace client data or tax advice.",
         ],
       },
