@@ -424,7 +424,7 @@ export const mobilePosts3: BlogPost[] = [
       {
         heading: "Device and OS Testing",
         body: [
-          "Use analytics or market data to choose a device matrix covering common manufacturers, screen sizes and OS versions, including lower-end devices. Test notifications, permissions, camera, location and backgrounding on real hardware, where simulators fall short.",
+          "Use analytics or market data to choose a device matrix covering common manufacturers, screen sizes and OS versions, including lower-end devices. Test notifications, permissions, camera, location and backgrounding on real hardware, where simulators fall short. For the combinations worth including, see [[/blogs/mobile-app-device-test-matrix|how to plan a device and OS test matrix]].",
         ],
         cta: {
           title: "Preparing an app for launch?",

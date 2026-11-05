@@ -100,7 +100,7 @@ export const commercePosts57: BlogPost[] = [
       {
         heading: "The Metric Hierarchy",
         body: [
-          "Choose one primary metric that decides the test. It should be sensitive to the change and connected to business value. For a product page change, add-to-cart rate may be the primary metric, with conversion and revenue per visitor as secondary. Guardrails protect against wins that cost something elsewhere.",
+          "Choose one primary metric that decides the test. It should be sensitive to the change and connected to business value. For a product page change, add-to-cart rate may be the primary metric, with conversion and revenue per visitor as secondary. Guardrails protect against wins that cost something elsewhere; see [[/blogs/ab-test-guardrail-metrics|12 guardrail metrics and how to set their limits]].",
         ],
         table: {
           headers: ["Level", "Purpose", "Examples"],

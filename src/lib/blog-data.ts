@@ -279,6 +279,7 @@ import { listiclePosts5 } from "./blog-data-listicles-5";
 import { listiclePosts6 } from "./blog-data-listicles-6";
 import { listiclePosts7 } from "./blog-data-listicles-7";
 import { listiclePosts8 } from "./blog-data-listicles-8";
+import { listiclePosts9 } from "./blog-data-listicles-9";
 
 export type BlogSection = {
   heading: string;
@@ -999,7 +1000,7 @@ export const posts: BlogPost[] = [
       {
         heading: "Keeping it alive",
         body: [
-          "Systems decay when they're not used or not updated. Name an owner, make contributing easy, review new patterns before they multiply, and keep design and code versions in sync. A system that lives only in the design file isn't a system developers can rely on.",
+          "Systems decay when they're not used or not updated. Name an owner, make contributing easy, review new patterns before they multiply, and keep design and code versions in sync. A system that lives only in the design file isn't a system developers can rely on. For ownership, contribution, versioning and deprecation rules, see [[/blogs/design-system-governance|design-system governance for fast-moving teams]].",
         ],
       },
       {
@@ -3797,6 +3798,7 @@ posts.push(
   ...listiclePosts6,
   ...listiclePosts7,
   ...listiclePosts8,
+  ...listiclePosts9,
 );
 
 export function getPostBySlug(slug: string) {

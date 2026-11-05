@@ -111,7 +111,7 @@ export const mobilePosts4: BlogPost[] = [
       {
         heading: "Access Tokens, Refresh Tokens and Sessions",
         body: [
-          "Keep access tokens short-lived and scoped. Use refresh tokens to obtain new ones, rotate refresh tokens on use, and detect reuse of an old refresh token as a sign of theft. Handle refresh in one shared networking layer, as described in [[/blogs/mobile-app-api-integration|mobile app API integration]], so screens never deal with expired tokens directly.",
+          "Keep access tokens short-lived and scoped. Use refresh tokens to obtain new ones, rotate refresh tokens on use, and detect reuse of an old refresh token as a sign of theft. Handle refresh in one shared networking layer, as described in [[/blogs/mobile-app-api-integration|mobile app API integration]], so screens never deal with expired tokens directly. Refresh races, offline expiry and revoked sessions are covered in [[/blogs/mobile-app-session-edge-cases|10 session edge cases to handle before release]].",
         ],
       },
       {

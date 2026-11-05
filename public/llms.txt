@@ -1194,6 +1194,10 @@ Lists of options, features and use cases, each with selection criteria and trade
 - 12 data-residency questions to answer before expanding an application internationally — https://www.zspace.in/blogs/data-residency-questions
 - 12 text and display settings to test in mobile apps — https://www.zspace.in/blogs/mobile-app-display-settings-testing
 - 12 user-identity tracking decisions that affect product analytics accuracy — https://www.zspace.in/blogs/product-analytics-identity
+- 15 device and OS combinations to consider when planning mobile app testing — https://www.zspace.in/blogs/mobile-app-device-test-matrix
+- 10 mobile session-management edge cases to handle before release — https://www.zspace.in/blogs/mobile-app-session-edge-cases
+- 10 design-system governance rules for teams shipping features frequently — https://www.zspace.in/blogs/design-system-governance
+- 12 guardrail metrics to monitor alongside your primary conversion goal — https://www.zspace.in/blogs/ab-test-guardrail-metrics
 
 ## UAE and GCC guides
 

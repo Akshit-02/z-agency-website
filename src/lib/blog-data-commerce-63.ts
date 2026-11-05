@@ -20,7 +20,8 @@ export const commercePosts63: BlogPost[] = [
     bannerAlt:
       "Order management system in four columns: capture (web store, marketplaces, POS, B2B orders), orchestrate (validate and fraud, inventory check, route and split, order states, highlighted), fulfil (warehouse or 3PL, store pickup, drop-ship, carrier labels) and after (tracking, returns, refunds, customer updates), noting one order record with many systems reading and updating it.",
     date: "2026-09-30",
-    readingTime: "18 min read",
+    updated: "2026-11-05",
+    readingTime: "20 min read",
     relatedServiceSlugs: ["website-development", "shopify-development", "ai-automation"],
     relatedIndustrySlugs: ["ecommerce", "retail", "logistics-supply-chain"],
     faqs: [
@@ -200,6 +201,33 @@ export const commercePosts63: BlogPost[] = [
             ["Endless aisle", "Store staff ordering from central stock"],
             ["Return in store", "Link to online order, refund method rules, restock"],
           ],
+        },
+      },
+      {
+        heading: "12 split-order scenarios an OMS should support",
+        body: [
+          "One checkout often becomes several shipments, payments or sub-orders. Agree how each of these is handled before choosing or building an OMS, because each affects order states at line level, payment capture, customer messages and returns. Which ones matter depends on your catalogue, locations and channels; sourcing rules for split shipments are covered in [[/blogs/distributed-order-management|distributed order management]] and seller sub-orders in [[/blogs/marketplace-order-management|marketplace order management]].",
+        ],
+        table: {
+          headers: ["Scenario", "What the OMS must handle"],
+          rows: [
+            ["1. Items in stock at different locations", "Split by node, with rules for maximum shipments and when to wait instead"],
+            ["2. In-stock and pre-order or backorder items together", "Ship available lines now or hold; separate delivery promises per line"],
+            ["3. Several sellers or drop-ship suppliers", "Sub-orders per seller with their own states, tracking and payouts"],
+            ["4. Physical and digital items", "Deliver digital lines immediately; fulfil physical lines separately"],
+            ["5. Subscription and one-time items", "Separate the recurring line from the one-off shipment and future renewals"],
+            ["6. Several delivery addresses", "Split by address, with shipping costs and tax calculated per destination"],
+            ["7. Mixed delivery methods", "Store pickup for some lines and home delivery for others"],
+            ["8. Oversized or hazardous items", "Different carriers, packaging and delivery windows for some lines"],
+            ["9. Partial cancellation", "Cancel some lines before shipment; recalculate totals, discounts and tax"],
+            ["10. Payment per shipment", "Partial captures as each shipment leaves, where the payment provider supports it, and release of unused authorisations"],
+            ["11. Discounts across split lines", "Allocate order-level discounts and free shipping to lines so partial refunds are correct"],
+            ["12. Returns of part of a split order", "Link each returned line to its shipment, payment capture and refund"],
+          ],
+        },
+        callout: {
+          type: "tip",
+          text: "Tell customers about splits before they happen: show expected delivery per line at checkout where you can, and send a message with tracking for each parcel. See [[/blogs/order-status-notifications|15 order status notifications]].",
         },
       },
       {
