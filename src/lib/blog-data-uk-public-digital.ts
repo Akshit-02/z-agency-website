@@ -441,6 +441,7 @@ export const ukPublicDigitalPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "UK identity verification now sits on a statutory framework: certified services on the OfDIA register and, for right to work, Home Office prescribed checks. Integrate behind a policy engine and adapter, store minimal results, offer alternatives and handle biometrics carefully. For credential and expiry tracking, see [[/blogs/workforce-credential-management-software|workforce credential management software]].",
+          "Identity checks are one step in a lending journey; see [[/blogs/digital-lending-platform-development|digital lending platform development]].",
         ],
         cta: {
           title: "Adding identity or right to work checks to your platform?",
@@ -688,6 +689,7 @@ export const ukPublicDigitalPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Fleet maintenance software earns its keep by making the DVSA routine reliable: quick walkaround checks, defects that turn into repairs, inspections on schedule with brake data, and records an examiner can trust. Connect availability to planning so off-road vehicles are never dispatched. See [[/blogs/asset-maintenance-management-software|asset maintenance management software]] and [[/blogs/route-optimization-software|route optimisation software]].",
+          "For tracking, dispatch and driver apps alongside maintenance, see [[/blogs/fleet-management-software-development|fleet management software development]].",
         ],
         cta: {
           title: "Still running defect books on paper?",

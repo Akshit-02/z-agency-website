@@ -11,17 +11,18 @@ export const commercePosts42: BlogPost[] = [
   // -------------------------------------- 253 · PLATFORM MIGRATION
   {
     slug: "ecommerce-platform-migration",
-    title: "Ecommerce Migration Strategy: How to Plan a Store Migration",
-    seoTitle: "Ecommerce Migration Strategy: How to Plan a Platform Migration",
-    excerpt: "How to plan an ecommerce platform migration: goals and scope, data, URLs and SEO, customer data, analytics, rehearsals, cutover, rollback and workstreams.",
+    title: "Ecommerce Website Migration: A Step-by-Step Guide for Growing D2C Brands",
+    seoTitle: "Ecommerce Website Migration: A Step-by-Step Guide",
+    excerpt: "How to plan an ecommerce website migration step by step: scope, data, URLs and SEO, analytics, rehearsals, cutover, rollback and India-specific checks.",
     category: "Web Development",
     banner: "platformmigrationflow",
     bannerAlt: "Platform migration flow: inventory and baseline, map data and URLs, rehearse migration (highlighted), freeze and cutover, redirects and QA, monitor with rollback ready.",
     date: "2026-09-29",
-    updated: "2026-09-30",
-    readingTime: "17 min read",
+    updated: "2026-11-10",
+    readingTime: "18 min read",
     relatedServiceSlugs: ["website-development", "shopify-development"],
-    relatedIndustrySlugs: ["ecommerce", "retail"],
+    relatedIndustrySlugs: ["ecommerce", "retail", "d2c-consumer"],
+    relatedSlugs: ["migrating-to-shopify-guide", "ecommerce-platform-migration-checklist", "shopify-migration-cost-india"],
     faqs: [
       { q: "What is an ecommerce platform migration?", a: "Moving a store's data, URLs, content, integrations and customers from one ecommerce platform to another. It's the execution phase of a replatforming decision." },
       { q: "How do I protect SEO during a platform migration?", a: "Inventory every indexable URL, map each to its new equivalent, implement one-to-one 301 redirects, carry over titles, descriptions, headings, content, canonicals and structured data, keep internal links pointing at final URLs, submit new sitemaps and monitor crawl errors and rankings after launch." },
@@ -145,6 +146,12 @@ export const commercePosts42: BlogPost[] = [
           "Check conversion, checkout errors and payment success",
           "Verify customer sign-in, order history and subscriptions",
           "Reconcile orders between platform, ERP and payment provider",
+        ],
+      },
+      {
+        heading: "India-Specific Cutover Checks",
+        body: [
+          "For stores selling in India, add these to the cutover plan: payment gateway accounts approved and tested on the new platform for every method, including UPI; COD rules, confirmation flows and prepaid incentives rebuilt; logistics aggregator connected for serviceability, labels, tracking and non-delivery reports; GST invoice numbering continuing without gaps; and customer communication about saved cards, which stay tokenised with the old gateway setup. If the destination is Shopify, the [[/blogs/migrating-to-shopify-guide|Shopify migration checklist]] covers the platform specifics and the [[/blogs/shopify-migration-cost-india|migration cost guide]] the budget.",
         ],
       },
       {

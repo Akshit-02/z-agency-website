@@ -364,6 +364,7 @@ export const auHealthEducationPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "A telehealth app succeeds when patients can join easily, clinicians stay in their own systems, and privacy, consent and records are handled with care. In Australia, treat MBS rules, TGA status, health privacy and integration conformance as design inputs confirmed by specialists, not as features the software provides by itself. For NHS identity and assurance in England, see [[/blogs/nhs-integration-digital-health-products|NHS integration for digital health products]].",
+          "For clinic and hospital systems more broadly, including requirements outside Australia, see [[/blogs/healthcare-management-software-development|healthcare management software development]].",
         ],
         cta: {
           title: "Planning telehealth?",
@@ -375,7 +376,7 @@ export const auHealthEducationPosts: BlogPost[] = [
   {
     slug: "healthcare-software-integration-australia",
     title: "Healthcare Software Integration in Australia: Practice Systems, Identifiers and Interoperability",
-    seoTitle: "Healthcare Software Integration in Australia",
+    seoTitle: "Healthcare Software Integration in Australia: HL7 and FHIR Guide",
     excerpt:
       "Integrating healthcare software in Australia: practice systems, booking, billing, HL7 and FHIR AU Core, healthcare identifiers, conformance and audit trails.",
     category: "Web Development",
@@ -545,6 +546,7 @@ export const auHealthEducationPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Healthcare integration in Australia works when it starts from what each system supports, uses established standards, respects conformance for national services, matches patients carefully and keeps a complete audit trail. Build the integration layer with engineers, and have specialists confirm the obligations around it. For products serving the NHS in England, see [[/blogs/nhs-integration-digital-health-products|NHS integration for digital health products]].",
+          "For the wider platform (appointments, records, billing and requirements in India, the UK, UAE and US), see [[/blogs/healthcare-management-software-development|healthcare management software development]].",
         ],
         cta: {
           title: "Connecting healthcare systems?",

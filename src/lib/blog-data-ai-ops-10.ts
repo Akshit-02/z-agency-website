@@ -553,9 +553,9 @@ export const aiOpsPosts10: BlogPost[] = [
   {
     slug: "llm-inference-vs-training",
     title: "LLM Inference vs Training: What's the Difference?",
-    seoTitle: "LLM Inference vs Training: Compute, Data, Cost and Operations",
+    seoTitle: "LLM Inference vs Training: Differences, Costs and Compute",
     excerpt:
-      "How LLM inference differs from training: pretraining, fine-tuning and inference compared by compute, hardware, data, latency, cost, lifecycle and operational needs, and what each means for businesses building AI applications.",
+      "LLM inference vs training explained: how pretraining, fine-tuning and inference differ in compute, data, latency and cost, and what that means for AI apps.",
     category: "AI & Automation",
     banner: "infervstrain",
     bannerAlt:

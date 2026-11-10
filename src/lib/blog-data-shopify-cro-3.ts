@@ -697,7 +697,7 @@ export const shopifyCroPosts3: BlogPost[] = [
   // ------------------------------------------------------- PRODUCT PAGE AUDIT
   {
     slug: "shopify-product-page-audit",
-    title: "Shopify Product Page Checklist: 40 Things to Check (2026)",
+    title: "Shopify Product Page Checklist: 40 Things to Check",
     excerpt:
       "A 40-point Shopify product page checklist with a quick pass/fail test for each item: buy box, media, variants, delivery, reviews, specs and WCAG 2.2.",
     category: "Shopify & Ecommerce",

@@ -194,19 +194,20 @@ export const commercePosts14: BlogPost[] = [
   // --------------------------------------- 130 · AI PRODUCT RECOMMENDATIONS
   {
     slug: "ai-product-recommendations",
-    title: "AI Product Recommendations: How Ecommerce Stores Can Use AI",
-    seoTitle: "AI Product Recommendations: How Ecommerce Stores Can Use AI",
+    title: "AI Product Recommendations vs Rule-Based Recommendations: What Should Your Ecommerce Store Use?",
+    seoTitle: "AI vs Rule-Based Product Recommendations: Which to Use?",
     excerpt:
-      "How AI recommendation models work in ecommerce: model types, data needs, cold start, offline and online evaluation, build vs buy, LLMs and risks.",
+      "AI vs rule-based product recommendations: how each works, the data, cost and latency they need, when rules are enough, and how to prove either adds revenue.",
     category: "AI & Automation",
     banner: "airecomodels",
     bannerAlt:
       "Comparison of recommendation models: co-purchase, collaborative filtering, content similarity, embeddings, sequence models and LLM-assisted recommendations, with what each learns from, what it's good for and what to watch out for.",
     date: "2026-09-29",
-    updated: "2026-09-29",
-    readingTime: "13 min read",
+    updated: "2026-11-10",
+    readingTime: "16 min read",
     relatedServiceSlugs: ["ai-automation", "cro-audit", "website-development"],
     relatedIndustrySlugs: ["ecommerce", "fashion-apparel"],
+    relatedSlugs: ["ecommerce-recommendation-engine", "shopify-product-recommendations", "ai-shopping-assistant"],
     faqs: [
       { q: "How does AI generate product recommendations?", a: "Models learn from product data and shopper behavior, such as what's viewed and bought together, which shoppers behave alike, and which products are similar, then score products for each context." },
       { q: "What types of recommendation models are there?", a: "Co-occurrence (bought or viewed together), collaborative filtering, content-based similarity, embedding models, sequence models that predict the next item, and hybrids. LLMs are increasingly used to explain or assemble recommendations." },
@@ -230,6 +231,31 @@ export const commercePosts14: BlogPost[] = [
         heading: "Where This Fits",
         body: [
           "Recommendation types, placements and honest measurement are covered in [[/blogs/ecommerce-product-recommendations|ecommerce product recommendations]]; Shopify's tools are in [[/blogs/shopify-product-recommendations|Shopify product recommendations]]. This guide explains the models and how to judge them.",
+        ],
+      },
+      {
+        heading: "Rule-Based vs AI Recommendations",
+        body: [
+          "**Rule-based recommendations follow logic a person writes: \"show other products from this collection\", \"suggest the matching cleanser with this serum\", \"never recommend out-of-stock items\". AI recommendations learn relationships from behaviour and product data instead. Rules are predictable, cheap and work with no data; AI finds patterns nobody wrote down but needs volume, evaluation and monitoring.** Most stores that do this well use both: rules for business constraints and curated pairings, models for ranking and discovery.",
+        ],
+        table: {
+          headers: ["Approach", "How it decides", "Data it needs", "Effort and cost", "Fits"],
+          rows: [
+            ["**Manual and rule-based**", "Curated pairings, collection rules, tags, stock and margin filters", "Product data only", "Low; merchandiser time", "Small catalogues, launches, regulated or bundled products"],
+            ["**Co-purchase (bought together)**", "Products frequently ordered together", "Order history", "Low to medium; many platforms include it", "Complements, accessories, cart add-ons"],
+            ["**Collaborative filtering**", "Shoppers who behaved like you also viewed or bought", "Lots of interactions per product and shopper", "Medium; needs volume and retraining", "Larger catalogues and traffic"],
+            ["**Content-based similarity**", "Products with similar attributes, text or images", "Clean attributes, descriptions, images", "Medium; depends on data quality", "New products, long tail, \"similar items\""],
+            ["**Learned ranking and hybrids**", "A model scores candidates from several sources for this shopper and context", "Behaviour, product and context data", "High; data pipeline, evaluation, monitoring", "Large stores with a data team or a capable vendor"],
+            ["**Real-time session models**", "Recent clicks and searches in this visit", "Event stream with low latency", "High; infrastructure and latency budget", "Big catalogues where intent shifts within a visit"],
+          ],
+        },
+      },
+      {
+        heading: "Which Should Your Store Use?",
+        body: [
+          "Use rules first if you have fewer than a few hundred products, little traffic, or products that need expert pairing (skincare routines, compatible parts, regulated items). Rules also handle the constraints every system needs: hide out-of-stock items, respect margin floors, exclude products that should not be cross-sold.",
+          "Add co-purchase and similarity models when your catalogue and order history are large enough that manual curation misses useful pairings. Consider personalised, learned or real-time models only when you have enough traffic to test them properly, someone to own the data and evaluation, and a clear revenue case. On Shopify, start with built-in recommendations and the Search & Discovery app before paying for more ([[/blogs/shopify-product-recommendations|Shopify product recommendations]]).",
+          "Privacy matters at every step: personalised recommendations rely on behavioural data, so they need consent where the law requires it and should degrade gracefully to non-personalised suggestions when consent is not given.",
         ],
       },
       {

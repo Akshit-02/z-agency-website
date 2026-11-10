@@ -230,6 +230,7 @@ Telematics/EWD -> location and fatigue data`,
         heading: "Conclusion",
         body: [
           "Logistics software pays off when data is clean, drivers have a dependable app, every delivery has proof, and customers and finance see the same events. Respect Australian regulatory records where they apply, integrate approved EWDs rather than building them, and invest custom effort in the integrations and customer-facing layers that make your service different. For planning efficient runs, see [[/blogs/route-optimization-software|route optimisation software]]. For waste receipt reporting in the UK, see [[/blogs/digital-waste-tracking-software-uk|digital waste tracking software in the UK]].",
+          "For cross-system visibility and exception management, see [[/blogs/supply-chain-control-tower-software|supply chain control tower software]].",
         ],
         cta: {
           title: "Planning logistics software?",
@@ -412,6 +413,7 @@ Telematics/EWD -> location and fatigue data`,
         heading: "Conclusion",
         body: [
           "Property management software works when it is jurisdiction-aware, leaves trust accounting to specialist platforms, makes maintenance and inspections visible to everyone who needs them, and gives tenants and owners portals they actually use. Store rules as configuration, protect tenant data carefully, and have your settings reviewed by people who know each state's law. For UK safety certificates and Awaab's Law timescales, see [[/blogs/property-compliance-management-software-uk|property compliance management software in the UK]].",
+          "For the sales and lead side of property, see [[/blogs/real-estate-crm-development|real estate CRM development]].",
         ],
         cta: {
           title: "Building property technology?",

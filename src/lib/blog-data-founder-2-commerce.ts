@@ -246,7 +246,7 @@ export const founderCommercePosts2: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "A WooCommerce to Shopify migration keeps its data when every type of data has a decision before import: what moves, how, and what changes shape on the way. Start with the mapping table, fix products that exceed three options, line up apps for reviews, history and subscriptions, test customer sign-in, and build the redirect map before the domain moves. For the data-cleaning side in more depth, see [[/blogs/ecommerce-data-migration|ecommerce data migration]].",
-          "Next steps: fill in the mapping table with your record counts, list your plugins against the checklist, and run a trial import into a development store.",
+          "Next steps: fill in the mapping table with your record counts, list your plugins against the checklist, and run a trial import into a development store. For budgeting, see [[/blogs/shopify-migration-cost-india|Shopify migration cost in India]].",
         ],
         cta: {
           title: "Want a second pair of eyes on your migration plan?",

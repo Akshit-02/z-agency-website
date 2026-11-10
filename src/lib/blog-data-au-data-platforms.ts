@@ -162,6 +162,7 @@ export const auDataPlatformPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Good data engineering for a growing business is modest and reliable: a few sources loaded into a warehouse, tested models with agreed definitions, automated quality checks and clear owners. Add sources, real-time flows and tools only when the questions require them.",
+          "Forecasting is one of the most common uses of this data; see [[/blogs/ai-forecasting-software-development|AI forecasting software development]].",
         ],
         cta: {
           title: "Tired of rebuilding reports by hand?",
@@ -716,6 +717,7 @@ export const auDataPlatformPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Predictive analytics and generative AI are different tools. Match the tool to the output you need, evaluate against a baseline, combine them where it helps, and keep people responsible for decisions that affect customers and staff.",
+          "For building forecasting systems specifically, see [[/blogs/ai-forecasting-software-development|AI forecasting software development]].",
         ],
         cta: {
           title: "Not sure which kind of AI fits?",

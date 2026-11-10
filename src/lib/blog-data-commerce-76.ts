@@ -500,6 +500,7 @@ export const commercePosts76: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Inventory visibility is a promise system: collect stock quickly, calculate ATP once, show honest states, cache carefully and confirm before committing. Related: [[/blogs/retail-ecommerce-integration|retail integration]], [[/blogs/bopis-ecommerce|BOPIS]] and [[/blogs/omnichannel-ecommerce-architecture|omnichannel architecture]].",
+          "For visibility across suppliers, warehouses and shipments, see [[/blogs/supply-chain-control-tower-software|supply chain control tower software]].",
         ],
       },
     ],

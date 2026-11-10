@@ -565,6 +565,7 @@ export const aiCorePosts2: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Human-in-the-loop AI is a design discipline: put people where mistakes are costly, route with real signals, make review fast and evidence-based, and earn more automation through recorded decisions. Related: [[/blogs/ai-agent-guardrails|guardrails]], [[/blogs/ai-agent-evaluation|evaluation]] and [[/blogs/agentic-workflow-automation|agentic workflows]].",
+          "If you are still deciding what kind of system to build, see [[/blogs/ai-agent-vs-ai-chatbot|agents vs chatbots vs traditional automation]].",
         ],
       },
     ],

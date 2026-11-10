@@ -12,23 +12,30 @@ import type { BlogPost } from "./blog-data";
  * Regulations 2010; ACCC blocks automated fetch, cited from search summary);
  * Payment Times Reporting Regulator site; OMG DMN; Modern Slavery Act
  * reporting threshold (general). Not legal advice.
+ *
+ * 2026-11-10: supplier-portal-development expanded in place (international
+ * topic 353, vendor management): vendor management section, Indian
+ * considerations (GSTIN/PAN, Udyam and MSMED Act payment limits, e-invoice
+ * IRN, ERP integration), two FAQs; retitled to include vendor portal. Slug
+ * and date kept. Sources are listed in blog-data-intl-2.ts.
  */
 export const auBusinessSystemsPosts: BlogPost[] = [
   {
     slug: "supplier-portal-development",
-    title: "Supplier Portal Development: Purchase Orders, Approvals and Supplier Onboarding",
-    seoTitle: "Supplier Portal Development: Features, Security and Build vs Buy",
+    title: "Supplier Portal Development: Building a Vendor Management Portal for Onboarding, Orders and Invoices",
+    seoTitle: "Supplier and Vendor Portal Development: Features and Build vs Buy",
     excerpt:
-      "What a supplier portal should include, from onboarding and purchase orders to invoice matching and payment status, plus fraud controls and when to build or buy.",
+      "How to build a supplier or vendor portal: onboarding, purchase orders, invoices, payment status, vendor performance, India and Australia rules, build vs buy.",
     category: "Web Development",
     banner: "procureflow",
     sceneKind: "workflow",
     bannerAlt: "Suppliers using a portal to complete onboarding, acknowledge purchase orders, send delivery notices, submit invoices and check payment status, connected to the buyer's ERP",
     date: "2026-10-10",
-    readingTime: "4 min read",
+    updated: "2026-11-10",
+    readingTime: "9 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["manufacturing", "retail", "construction-infrastructure", "logistics-supply-chain", "b2b-enterprise"],
-    relatedSlugs: ["ai-procurement-automation", "b2b-portal-development-australia", "accounting-software-integration-australia"],
+    relatedSlugs: ["procurement-management-system-development", "ai-procurement-automation", "ai-invoice-processing"],
     faqs: [
       {
         q: "What does a supplier portal do?",
@@ -45,6 +52,14 @@ export const auBusinessSystemsPosts: BlogPost[] = [
       {
         q: "Do Australian payment reporting rules affect supplier portals?",
         a: "Large businesses covered by the Payment Times Reporting Scheme (broadly those with more than $100 million in consolidated revenue) report how quickly they pay small business suppliers. A portal that tracks invoice receipt and payment dates helps produce accurate data. Check your obligations with the regulator.",
+      },
+      {
+        q: "Is a vendor management portal the same as a supplier portal?",
+        a: "The terms are often used interchangeably. A supplier portal usually means the supplier-facing screens: onboarding, purchase orders, delivery notices, invoices and payment status. Vendor management adds what the buyer does with that information: performance scorecards, contracts and renewals, risk and compliance tracking, and supplier segmentation. Most businesses need both, built on the same supplier record.",
+      },
+      {
+        q: "What should an Indian supplier portal collect at onboarding?",
+        a: "Typically GSTIN (checked against the GST portal), PAN, bank details verified by penny drop or a cancelled cheque, Udyam registration for micro and small enterprises, and any category-specific licences. Udyam status matters because payments to micro and small suppliers have legal time limits and tax consequences if they are late.",
       },
       {
         q: "Can small suppliers use e-invoicing instead of the portal?",
@@ -85,6 +100,37 @@ export const auBusinessSystemsPosts: BlogPost[] = [
             ["**Compliance**", "Upload certificates, insurance, questionnaires", "Expiry alerts and audit trail"],
           ],
         },
+      },
+      {
+        heading: "From supplier portal to vendor management",
+        body: [
+          "A portal handles transactions. Vendor management uses the same data to decide which suppliers to keep, develop or replace. Once suppliers acknowledge orders, send delivery notices and invoice through the portal, you can measure them without extra effort.",
+        ],
+        table: {
+          headers: ["Capability", "What it covers", "Built from"],
+          rows: [
+            ["**Performance scorecards**", "On-time delivery, quantity and quality rejections, invoice accuracy, responsiveness", "PO acknowledgements, receipts, quality holds, invoice exceptions"],
+            ["**Contracts and price lists**", "Agreed prices, validity dates, renewal reminders", "Contract records linked to items and suppliers"],
+            ["**Risk and compliance**", "Expiring certificates and insurance, missing documents, single-source dependency", "Uploaded documents with expiry dates; spend by supplier"],
+            ["**Segmentation**", "Strategic, preferred, approved and blocked suppliers", "Spend, performance and risk data"],
+          ],
+        },
+        cta: {
+          title: "Want supplier data you can act on?",
+          description: "ZSpace Labs builds [[/services/website-development|supplier and vendor portals]] that feed scorecards, contract reminders and compliance alerts from the same records your buyers already use.",
+        },
+      },
+      {
+        heading: "Indian considerations",
+        body: [],
+        checklist: [
+          "Verify GSTIN and PAN at onboarding, and bank details by penny drop or a cancelled cheque with call-back verification.",
+          "Record Udyam registration and category. Payments to micro and small suppliers are due by the agreed date, generally not more than 45 days from acceptance (15 days where there is no agreement) under the MSMED Act, and late payment affects the buyer's tax deduction under a rule that continues in the Income-tax Act, 2025. Show due dates to both sides.",
+          "For suppliers above the GST e-invoicing threshold, check that invoices carry a valid IRN and QR code; larger suppliers must report invoices to the IRP within 30 days.",
+          "Capture e-way bill and delivery challan details with delivery notices.",
+          "Integrate with Tally, SAP Business One, Microsoft Dynamics or your ERP so approved invoices post without re-keying. For the buyer-side workflow, see [[/blogs/procurement-management-system-development|procurement management system development]].",
+          "This is general information; confirm obligations with your adviser.",
+        ],
       },
       {
         heading: "Australian considerations",
@@ -151,7 +197,7 @@ export const auBusinessSystemsPosts: BlogPost[] = [
         ],
         cta: {
           title: "Planning a supplier portal?",
-          description: "ZSpace Labs is an India-based, remote-first technology studio working with Australian and international businesses on [[/services/website-development|portals and ERP integrations]] and [[/services/ai-automation|procure-to-pay automation]]. If it would help to map your supplier workflows, we are happy to talk it through.",
+          description: "ZSpace Labs is an India-based, remote-first technology studio working with Indian, Australian and international businesses on [[/services/website-development|supplier portals and ERP integrations]] and [[/services/ai-automation|procure-to-pay automation]]. If it would help to map your supplier workflows, we are happy to talk it through.",
         },
       },
     ],
@@ -320,6 +366,8 @@ export const auBusinessSystemsPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Good asset maintenance software rests on a clean register, planned schedules, mobile work orders and reliable records. Buy a CMMS where it fits, integrate it with parts, finance and sensors, and build custom only where your operations require it. For rented housing in the UK, see [[/blogs/property-compliance-management-software-uk|property compliance management software]]. For goods and passenger vehicles, see [[/blogs/fleet-maintenance-software-uk|fleet maintenance software in the UK]].",
+          "For vehicle fleets, tracking, dispatch and driver apps are covered in [[/blogs/fleet-management-software-development|fleet management software development]].",
+          "To move from scheduled to condition-based work, see [[/blogs/predictive-maintenance-platform-development|predictive maintenance platform development]].",
         ],
         cta: {
           title: "Connecting maintenance with the rest of your operations?",
@@ -462,16 +510,16 @@ export const auBusinessSystemsPosts: BlogPost[] = [
   },
   {
     slug: "business-rules-engine",
-    title: "Business Rules Engines: When to Separate Rules from Application Code",
-    seoTitle: "Business Rules Engine: What It Is and When to Use One",
-    excerpt: "What a business rules engine is, how it works and when to use one: decision tables, DMN, open-source and no-code options, AI, governance and testing.",
+    title: "Business Rules Engines and Decision Automation: How They Work and When to Use Them",
+    seoTitle: "Business Rules Engine: How It Works, Software Options, Examples",
+    excerpt: "What a business rules engine is, how it works and when to use one: DMN decision tables, open-source engines, decision automation with AI, approvals and audit.",
     category: "Web Development",
     banner: "approvalflow",
     sceneKind: "workflow",
     bannerAlt: "Pricing, eligibility and approval rules moved from application code into versioned decision tables managed by business owners, tested and audited before release",
     date: "2026-10-10",
-    updated: "2026-10-22",
-    readingTime: "9 min read",
+    updated: "2026-11-10",
+    readingTime: "14 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["insurtech", "fintech", "b2b-enterprise", "logistics-supply-chain"],
     relatedSlugs: ["workflow-automation", "low-code-vs-custom-software", "feature-flag-implementation", "human-in-the-loop-ai"],
@@ -499,6 +547,14 @@ export const auBusinessSystemsPosts: BlogPost[] = [
       {
         q: "Is there an open-source business rules engine?",
         a: "Yes. Several open-source engines exist. Drools, part of the Apache KIE project, is a long-standing Java option that supports DMN decision tables. Open-source engines avoid licence fees, but you run, secure and upgrade them yourself, and business-user editing tools may be limited.",
+      },
+      {
+        q: "What is decision automation?",
+        a: "Using software to make or prepare operational decisions, such as approving a discount, routing a claim or setting a credit limit, by combining data, business rules, sometimes AI models, and workflow. Well-designed decision automation records how each decision was made, sends exceptions to people and lets authorised staff override with a reason.",
+      },
+      {
+        q: "Which decisions should be automated?",
+        a: "High-volume decisions with clear rules, low impact per decision and outcomes you can check, such as routing, simple eligibility and standard pricing. Decisions with significant financial, legal or personal impact, or that rely on judgement, should be prepared by the system and approved by a person.",
       },
       {
         q: "Can AI replace a business rules engine?",
@@ -565,7 +621,47 @@ export const auBusinessSystemsPosts: BlogPost[] = [
         heading: "Decision tables and DMN",
         body: [
           "Decision tables list conditions and outcomes in rows, such as customer type, order value and region leading to a discount or approval level. They are easy to review and test. Decision Model and Notation (DMN), a standard from the Object Management Group, defines decision tables and an expression language that several engines execute. Keep tables small and focused, and avoid encoding entire processes in rules.",
+          "The OMG adopted DMN 1.6 in September 2026, building on versions dating back to 2015. DMN also defines FEEL (Friendly Enough Expression Language) for writing conditions and calculations, so the same decision table can be executed by any engine that supports the standard.",
         ],
+      },
+      {
+        heading: "DMN hit policies: what happens when several rules match",
+        body: [
+          "A decision table's hit policy decides what happens when more than one row matches the facts. Choosing it deliberately avoids surprising results.",
+        ],
+        table: {
+          headers: ["Hit policy", "Behaviour", "Typical use"],
+          rows: [
+            ["**Unique (U)**", "Only one rule may match; overlaps are an error", "Clean classification tables; the default"],
+            ["**Any (A)**", "Several rules may match if they give the same output", "Tables where overlap is harmless"],
+            ["**Priority (P)**", "The match with the highest-priority output wins", "Choosing the most severe risk level"],
+            ["**First (F)**", "The first matching row in table order wins", "Ordered exceptions before general rules"],
+            ["**Collect (C)**", "All matching outputs returned, optionally summed, counted or reduced to a minimum or maximum", "Adding up surcharges or scores"],
+            ["**Rule order (R)**", "All matches in table order", "Lists of applicable conditions"],
+            ["**Output order (O)**", "All matches sorted by output priority", "Ranked recommendations"],
+          ],
+        },
+        callout: {
+          type: "note",
+          text: "Not every engine supports every hit policy. Camunda's documentation, for example, notes that it doesn't support Priority or Output order. Check support before designing tables around them.",
+        },
+      },
+      {
+        heading: "Open-source rules engines compared",
+        body: [
+          "Open-source engines avoid licence fees, but you operate, secure and upgrade them, and business-friendly editing tools are often limited. Status checked in November 2026:",
+        ],
+        table: {
+          headers: ["Engine", "Language", "Licence", "Notes"],
+          rows: [
+            ["**Drools (Apache KIE)**", "Java", "Apache 2.0", "Long-standing engine with DMN support, based on the Rete pattern-matching approach first published by Charles Forgy in 1982; the Apache KIE project is still in the Apache Incubator"],
+            ["**GoRules ZEN Engine**", "Rust core with Node.js, Python, Go and Java bindings", "MIT", "Decision tables and graphs in JSON; lightweight to embed"],
+            ["**json-rules-engine**", "JavaScript", "ISC", "Rules expressed in JSON; suits simple rules in Node.js applications"],
+            ["**Microsoft RulesEngine**", ".NET", "MIT", "JSON-defined rules for .NET applications"],
+            ["**NRules**", ".NET", "Open source", "Rete-based rules engine for .NET"],
+            ["**Camunda DMN engine**", "Java / Scala", "Varies", "Camunda 7 Community Edition reached end of life in October 2025; Camunda 8 Self-Managed needs an enterprise licence for production, though its standalone DMN engine is Apache 2.0"],
+          ],
+        },
       },
       {
         heading: "Governance and testing",
@@ -591,6 +687,29 @@ export const auBusinessSystemsPosts: BlogPost[] = [
           "AI does not replace a rules engine for decisions that must be consistent and explainable. A language model can give different answers to the same input and cannot point to the rule that produced an outcome. A rules engine returns the same decision for the same facts and records why.",
           "The two work well together. A common pattern is for AI to read unstructured input, such as an email, claim form or invoice, and extract structured facts; the rules engine then makes the decision from those facts; and a person reviews low-confidence extractions or high-impact decisions. AI can also help draft or explain rules, but rule changes should still go through the same tests and approval. See [[/blogs/human-in-the-loop-ai|human-in-the-loop AI]] for review design.",
         ],
+      },
+      {
+        heading: "From rules engine to decision automation",
+        body: [
+          "A rules engine makes a single decision. Decision automation is the wider system around it: gathering the facts, deciding, acting, handling exceptions and recording everything. A typical flow looks like this:",
+        ],
+        checklist: [
+          "**Trigger:** an event such as a new order, claim, application or invoice",
+          "**Gather facts:** data from internal systems, plus AI extraction from documents or messages where inputs are unstructured",
+          "**Decide:** the rules engine applies versioned rules, sometimes using a model score (for example, fraud risk) as one input",
+          "**Route:** clear-cut cases proceed automatically; exceptions, low-confidence inputs and high-impact decisions go to a person with the reasons shown",
+          "**Act:** the workflow updates systems and notifies people; see [[/blogs/workflow-automation|workflow automation]]",
+          "**Record:** inputs, rule version, model version, outcome, any human override and its reason",
+          "**Learn:** review overrides and outcomes to adjust rules and thresholds",
+        ],
+        table: {
+          headers: ["Decision type", "Automation level"],
+          rows: [
+            ["**High volume, clear rules, low impact** (routing, standard discounts, simple eligibility)", "Fully automated, with sampling and monitoring"],
+            ["**Moderate impact** (credit limits within policy, refunds above a threshold)", "Automated recommendation, human approval for exceptions"],
+            ["**High impact or judgement-based** (large credit decisions, claims disputes, anything significantly affecting individuals)", "System prepares the case; a person decides"],
+          ],
+        },
       },
       {
         heading: "How to evaluate rules engine software",

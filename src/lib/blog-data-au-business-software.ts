@@ -258,6 +258,7 @@ export const auBusinessSoftwarePosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "For most Australian businesses the best CRM is a standard one, configured well and extended where it matters. Custom CRM development is worth it when the workflow it supports is how you win and keep customers, and when you are ready to own it as a product. In every case, design for consent, privacy and accounting integration from day one. Connecting the CRM with ecommerce, support and billing data is covered in [[/blogs/customer-data-integration-australia|customer data integration]].",
+          "For a property-specific example with inventory, site visits and channel partners, see [[/blogs/real-estate-crm-development|real estate CRM development]].",
         ],
         cta: {
           title: "Weighing up a CRM build or extension?",
@@ -416,6 +417,7 @@ export const auBusinessSoftwarePosts: BlogPost[] = [
         body: [
           "Big-bang rewrites fail in a predictable way: the old system keeps changing while the new one is built, the business rules turn out to be more complex than documented, and the switch-over carries all the risk on one day.",
           "The alternative is incremental replacement. Martin Fowler's **strangler fig** pattern places a routing layer in front of the old system, then moves one function at a time to new code until the old system can be retired. Each step delivers value and can be reversed.",
+          "The engineering detail behind each slice (safety-net tests, seams, data ownership during the transition and rollback triggers) is covered in our [[/blogs/legacy-software-modernization-roadmap|legacy modernisation roadmap]].",
         ],
         code: {
           label: "Incremental replacement with a routing layer",

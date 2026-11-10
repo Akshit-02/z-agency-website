@@ -24,7 +24,7 @@ export const auEngineeringOpsPosts: BlogPost[] = [
   {
     slug: "cloud-cost-optimization-australia",
     title: "Cloud Cost Optimisation for Australian Businesses: Visibility, Right-Sizing and Ownership",
-    seoTitle: "Cloud Cost Optimisation for Australian Businesses",
+    seoTitle: "Cloud Cost Optimisation Strategies for Australian Businesses",
     excerpt:
       "Reducing cloud waste safely in Australia: cost visibility, tagging, right-sizing, idle resources, storage lifecycle, commitments, AUD exposure and ownership.",
     category: "Web Development",
@@ -204,6 +204,7 @@ export const auEngineeringOpsPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Cloud cost optimisation is ongoing housekeeping plus a few architectural decisions: make spend visible and owned, clean up waste, right-size from evidence, manage storage and logs, commit carefully, and keep reliability and security intact. In Australia, add AUD exposure and region choice to the picture, and judge results from your own bills.",
+          "For AI model and token costs specifically, see [[/blogs/ai-finops|AI FinOps]].",
         ],
         cta: {
           title: "Is your application costing more to run than it should?",
@@ -389,6 +390,7 @@ Release      -> deploy to production (staged)
         heading: "Conclusion",
         body: [
           "DevOps for a growing business is a handful of disciplined habits: version everything, test automatically, deploy repeatably, release small with a way back, define infrastructure in code, and watch what users experience. Adopt them in stages, measure against your own history, and expect safer releases first. For deeper guides, see [[/blogs/kubernetes-vs-serverless-vs-virtual-machines|Kubernetes vs serverless vs VMs]], [[/blogs/infrastructure-as-code|infrastructure as code]] and [[/blogs/zero-downtime-deployments|zero-downtime deployments]].",
+          "Once monitoring and deployments are solid, incident handling can be automated step by step; see [[/blogs/autonomous-it-operations-platform|autonomous IT operations]].",
         ],
         cta: {
           title: "Want releases that are routine, not risky?",
@@ -575,6 +577,7 @@ Release      -> deploy to production (staged)
         heading: "Conclusion",
         body: [
           "Monitoring tells you something is wrong; observability helps you understand why. Instrument with open standards, connect logs, metrics and traces, define SLOs for the journeys users care about, alert only on what needs action, and keep personal information out of telemetry. Then learn from every incident. To turn monitoring into reliability targets, see [[/blogs/slos-and-error-budgets|SLOs and error budgets]].",
+          "To act on what monitoring finds, see [[/blogs/autonomous-it-operations-platform|autonomous IT operations]].",
         ],
         cta: {
           title: "Can you see what your users experience?",

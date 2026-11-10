@@ -240,6 +240,7 @@ export const listiclePosts8: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Data residency is decided by many small choices: cloud regions, backups, logs, vendors, AI providers and support access. Map every copy, separate legal requirements from customer expectations, choose a deployment model you can operate, and keep evidence. Get legal advice for the specific countries and sectors you enter. For hosting cost implications, see [[/blogs/web-application-hosting-cost|web application hosting cost]].",
+          "For the wider question of cloud dependency and portability, see [[/blogs/cloud-vendor-lock-in-digital-sovereignty|cloud vendor lock-in and digital sovereignty]].",
         ],
       },
       {

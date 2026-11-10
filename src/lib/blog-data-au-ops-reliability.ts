@@ -262,6 +262,8 @@ export const auOpsReliabilityPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Quality management software helps teams find, fix and learn from problems: fast capture, linked root causes and actions, verified effectiveness, controlled documents and complete evidence. Connect it to production data and keep people accountable for the quality system itself. For batch traceability and recalls in food production, see [[/blogs/food-traceability-software-uk|food traceability software in the UK]].",
+          "On the shop floor, in-process checks and lot genealogy usually live in an MES; see [[/blogs/mes-development|MES development]].",
+          "Automated inspection results can feed non-conformances directly; see [[/blogs/ai-visual-quality-inspection|AI visual quality inspection]].",
         ],
         cta: {
           title: "Quality records still on paper?",

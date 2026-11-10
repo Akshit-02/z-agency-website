@@ -371,6 +371,7 @@ export const commercePosts88: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "A good WMS integration exchanges events, not just end states, so every pick, short pick, package and stock movement reaches the systems that need it. Agree ownership and identifiers, handle exceptions explicitly and reconcile regularly. Related: [[/blogs/ecommerce-fulfilment-integration|3PL integration]], [[/blogs/oms-vs-ims|OMS vs IMS]] and [[/blogs/distributed-order-management|distributed order management]].",
+          "To test layout, staffing or slotting changes before making them, see [[/blogs/scenario-planning-simulation-software|scenario planning and simulation software]].",
         ],
       },
     ],

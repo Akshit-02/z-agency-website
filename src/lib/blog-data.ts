@@ -280,6 +280,16 @@ import { listiclePosts6 } from "./blog-data-listicles-6";
 import { listiclePosts7 } from "./blog-data-listicles-7";
 import { listiclePosts8 } from "./blog-data-listicles-8";
 import { listiclePosts9 } from "./blog-data-listicles-9";
+import { d2cIndiaPosts1 } from "./blog-data-d2c-india-1";
+import { d2cIndiaPosts2 } from "./blog-data-d2c-india-2";
+import { d2cIndiaPosts3 } from "./blog-data-d2c-india-3";
+import { intlPosts1 } from "./blog-data-intl-1";
+import { intlPosts2 } from "./blog-data-intl-2";
+import { techPosts361 } from "./blog-data-tech-361";
+import { industryPosts381 } from "./blog-data-industry-381";
+import { techPosts401 } from "./blog-data-tech-401";
+import { techPosts421 } from "./blog-data-tech-421";
+import { techPosts441 } from "./blog-data-tech-441";
 
 export type BlogSection = {
   heading: string;
@@ -3799,6 +3809,16 @@ posts.push(
   ...listiclePosts7,
   ...listiclePosts8,
   ...listiclePosts9,
+  ...d2cIndiaPosts1,
+  ...d2cIndiaPosts2,
+  ...d2cIndiaPosts3,
+  ...intlPosts1,
+  ...intlPosts2,
+  ...techPosts361,
+  ...industryPosts381,
+  ...techPosts401,
+  ...techPosts421,
+  ...techPosts441,
 );
 
 export function getPostBySlug(slug: string) {

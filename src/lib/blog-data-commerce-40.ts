@@ -177,17 +177,19 @@ export const commercePosts40: BlogPost[] = [
   // ---------------------------------------- 244 · CUSTOMER ACCOUNT UX
   {
     slug: "ecommerce-customer-account-ux",
-    title: "Ecommerce Customer Account UX: What Should Customers Be Able to Do?",
-    seoTitle: "Ecommerce Customer Account UX: What Customers Need",
-    excerpt: "What an ecommerce account should let customers do: orders, tracking, returns, addresses, payment methods, subscriptions, wishlists, rewards and privacy.",
+    title: "Ecommerce Customer Account and Self-Service Portal: What Should Customers Be Able to Do?",
+    seoTitle: "Ecommerce Customer Portal: What to Build for Self-Service",
+    excerpt: "How to build an ecommerce customer self-service portal: orders, returns and subscriptions, India-specific modules, and Shopify build options.",
     category: "UI/UX",
     banner: "accountmap",
     bannerAlt:
       "Customer account areas in four columns: orders (order status, tracking, returns and exchanges, invoices, highlighted), profile (personal details, addresses, payment methods, privacy and consent), commerce (buy again, subscriptions, wishlists, saved carts) and loyalty (points and tier, rewards, referrals, member benefits), noting that most account visits are about an order.",
     date: "2026-09-29",
-    readingTime: "17 min read",
-    relatedServiceSlugs: ["ui-ux-design", "shopify-development", "cro-audit"],
+    updated: "2026-11-10",
+    readingTime: "20 min read",
+    relatedServiceSlugs: ["shopify-development", "ui-ux-design", "website-development"],
     relatedIndustrySlugs: ["ecommerce", "retail", "d2c-consumer"],
+    relatedSlugs: ["ecommerce-returns-management", "subscription-management-portal", "whatsapp-shopify-integration"],
     faqs: [
       { q: "What should an ecommerce customer account include?", a: "Order history with status and tracking, returns and exchanges, addresses, saved payment methods, personal details, communication preferences and privacy controls, plus subscriptions, wishlists, rewards and reordering where the store offers them." },
       { q: "What is the most important part of a customer account?", a: "Order status and tracking. Most account visits are about an existing order: where it is, changing it, returning it or getting an invoice." },
@@ -196,6 +198,7 @@ export const commercePosts40: BlogPost[] = [
       { q: "Can guests track orders without an account?", a: "They should be able to, through links in order emails or an order lookup with email and order number." },
       { q: "How should returns work in the account?", a: "Customers should select items from an order, choose a reason and resolution (refund or exchange), get a label or instructions and track the return's status." },
       { q: "What privacy controls should accounts offer?", a: "Marketing preferences, consent choices, and routes to access or delete personal data, in line with applicable privacy laws." },
+      { q: "Can we build a custom customer portal on Shopify?", a: "Yes, usually without leaving Shopify. Shopify's customer accounts can be extended with customer account UI extensions, which add blocks to order and profile pages or whole new pages, for example for loyalty, subscriptions or returns. A fully custom or headless portal using Shopify's APIs is an option when the portal must combine data from several systems or needs a very different experience." },
       { q: "How is this different from a B2B customer portal?", a: "B2B portals serve companies with users, roles, approvals, invoices and credit terms. Consumer accounts serve individuals and focus on orders, returns, reordering and personal preferences." },
       { q: "Should the account be the home for subscriptions and loyalty?", a: "Yes. Subscriptions and rewards belong in the account alongside orders, so customers have one place to manage their relationship with the store." },
       { q: "How do I measure account UX?", a: "Support contacts about orders and returns, self-service return rates, sign-in success, repeat purchase from account features, and usability test task success." },
@@ -252,10 +255,6 @@ export const commercePosts40: BlogPost[] = [
         body: [
           "Password friction keeps customers out of their accounts. Offer email one-time codes or magic links, remembered sessions on trusted devices and social or platform sign-in where appropriate. Shopify's newer customer accounts, for example, use email one-time codes rather than passwords. Keep guest checkout, offer account creation after purchase, and let guests track orders and start returns through secure links. See [[/blogs/ecommerce-checkout-ux|checkout UX]].",
         ],
-        cta: {
-          title: "Customers contacting support for things they could do themselves?",
-          description: "ZSpace Labs designs customer accounts around the post-purchase tasks that generate the most contacts.",
-        },
       },
       {
         heading: "Profile, Payment Methods and Privacy",
@@ -287,6 +286,46 @@ export const commercePosts40: BlogPost[] = [
         body: [
           "An illustrative scenario: a fashion retailer's support team receives many contacts about order status and returns. The account shows orders without tracking and returns require emailing support. The redesign adds tracking and delivery estimates to each order, deep links from shipping emails, a self-service returns and exchanges flow with status updates, and email-code sign-in. Guests get secure tracking and return links in emails. The team measures contacts per order, self-service returns and exchange share.",
         ],
+      },
+      {
+        heading: "Self-Service Modules for Indian Shoppers",
+        body: [
+          "Most of the feature map applies everywhere, but Indian D2C brands field a set of requests that a well-built portal can absorb before they reach support.",
+        ],
+        table: {
+          headers: ["Request", "Self-service feature", "What it needs behind the scenes"],
+          rows: [
+            ["\"Can I pay online instead of COD?\"", "Pay-now option on unshipped COD orders", "Payment link tied to the order; order updated when paid"],
+            ["\"Change my address or phone number\"", "Edit before dispatch, locked after", "Fulfilment status from your warehouse or shipping platform"],
+            ["\"Delivery failed, please reattempt\"", "Reattempt request or new time slot", "Non-delivery report (NDR) data from the courier or aggregator"],
+            ["\"Where is my refund?\"", "Refund status, including refunds for COD orders to bank account or UPI", "Refund records and a way to collect payout details securely"],
+            ["\"I need a GST invoice\"", "Invoice download, with GSTIN for business buyers", "Invoices generated by your billing or accounting setup"],
+            ["\"Exchange for another size\"", "Exchange-first returns with reverse pickup booking", "Returns tool and courier reverse pickup integration"],
+          ],
+        },
+        callout: {
+          type: "tip",
+          text: "Let customers sign in with a one-time code sent to their mobile number or email. Most Indian shoppers remember their phone number far better than a password.",
+        },
+      },
+      {
+        heading: "Build Options: Shopify Accounts, Extensions or a Custom Portal",
+        body: [
+          "On Shopify, start with the platform's customer accounts, which already cover sign-in with one-time codes, order history and order status. Customer account UI extensions let apps and developers add blocks to order and profile pages or add full pages, which is how most returns, subscription and loyalty apps now appear inside the account. Since Shopify removed script tags from the order status page in 2026, extensions are the supported way to customise it.",
+          "A custom or headless portal, built on Shopify's APIs, makes sense when the portal must bring together data from several systems (an OMS, courier platforms, a subscription engine, an ERP), when one portal serves several stores or brands, or when the experience needs to be substantially different from Shopify's. It costs more to build and maintain, so be clear which customer requests the native account plus extensions cannot handle before going custom.",
+        ],
+        table: {
+          headers: ["Option", "Fits", "Trade-offs"],
+          rows: [
+            ["**Shopify customer accounts + apps**", "Standard orders, returns, subscriptions and rewards", "Fastest; limited to what the apps support"],
+            ["**Accounts + custom UI extensions**", "Brand-specific modules such as COD-to-prepaid, NDR requests or invoices from your own systems", "Needs a custom app; stays inside Shopify's account experience"],
+            ["**Custom or headless portal**", "Several systems or brands, very different experiences", "Highest build and maintenance cost; you own authentication and security"],
+          ],
+        },
+        cta: {
+          title: "Scoping a customer portal?",
+          description: "ZSpace Labs can help you work out which self-service requests your store should handle, then build them as [[/services/shopify-development|Shopify customer account extensions]] or a [[/services/website-development|custom portal]] connected to your order, shipping and returns systems.",
+        },
       },
       {
         heading: "Account Information Architecture",

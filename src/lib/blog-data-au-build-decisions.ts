@@ -11,6 +11,18 @@ import type { BlogPost } from "./blog-data";
  * (Android 16 / API 36 from 31 Aug 2026); Apple upcoming requirements
  * (Xcode 26 and 26 SDKs since 28 Apr 2026); Shopify Plus pricing page
  * (checked, not quoted); OAIC APPs. No figure here is ZSpace client data.
+ *
+ * 2026-11-10: shopify-plus-vs-custom-ecommerce rewritten in place as the
+ * general "Shopify vs custom ecommerce website" guide (D2C cluster topic 242,
+ * absorbing topic 245; see seo-audit/d2c-ecommerce/). Slug and date kept.
+ * India-first with international relevance. Sources checked 2026-11-10:
+ * shopify.com/in/pricing and shopify.com/plus/pricing (Plus from ₹1,75,000;
+ * checkout customisation Limited on Advanced, Full on Plus; B2B catalogues 3
+ * vs unlimited; locations 10 vs 200); Shopify enterprise blog "Shopify Plus vs
+ * Shopify Advanced" (24 Oct 2026: only Plus can use custom apps containing
+ * Shopify Functions); Shopify changelog, variant limit raised to 2,048;
+ * shopify.dev Hydrogen fundamentals (Oxygen on paid plans) and Hydrogen
+ * 2026-10 release notes (library for any JavaScript framework).
  */
 export const auBuildDecisionPosts: BlogPost[] = [
   {
@@ -172,83 +184,125 @@ export const auBuildDecisionPosts: BlogPost[] = [
   },
   {
     slug: "shopify-plus-vs-custom-ecommerce",
-    title: "Shopify Plus vs Custom Ecommerce Development: When Does Each Make Sense?",
-    seoTitle: "Shopify Plus vs Custom Ecommerce: When Each Fits",
+    title: "Shopify vs Custom Ecommerce Website: Which Is Better for a Growing D2C Brand?",
+    seoTitle: "Shopify vs Custom Ecommerce Website: Which Fits Your Brand?",
     excerpt:
-      "Shopify Plus vs a custom ecommerce platform: launch speed, total cost, checkout control, B2B, integrations, maintenance and the headless middle ground.",
+      "Shopify, Plus, headless or a custom ecommerce website? How growing D2C brands should decide using current platform limits, total cost and upgrade signals.",
     category: "Shopify & Ecommerce",
     banner: "plusvsplans",
-    sceneKind: "shopify",
-    bannerAlt: "A Shopify Plus store and a custom ecommerce platform side by side, compared on launch time, checkout control, integrations, maintenance and total cost, with headless in between",
+    sceneKind: "compare",
+    bannerAlt: "Four ways to run a D2C store compared side by side: a Shopify theme, Shopify with custom apps and Functions, headless Shopify, and a fully custom platform, rated on launch time, control, maintenance and total cost",
     date: "2026-10-10",
-    readingTime: "5 min read",
+    updated: "2026-11-10",
+    readingTime: "13 min read",
     relatedServiceSlugs: ["shopify-development", "website-development"],
     relatedIndustrySlugs: ["ecommerce", "retail", "d2c-consumer", "b2b-enterprise"],
-    relatedSlugs: ["shopify-plus-development", "headless-ecommerce-architecture", "ecommerce-replatforming"],
+    relatedSlugs: ["when-do-you-need-custom-shopify-development", "ecommerce-website-development-cost-india", "headless-ecommerce-architecture"],
     faqs: [
       {
-        q: "Is Shopify Plus or custom ecommerce cheaper?",
-        a: "It depends on scale and requirements. Shopify Plus has a platform fee and app costs but little infrastructure or core maintenance burden. A custom platform has no platform fee but significant build, hosting, security and maintenance costs. Compare total cost over three to five years for your actual requirements, and check current Shopify Plus pricing directly because it varies by term and region.",
+        q: "Is Shopify or a custom ecommerce website better for a D2C brand?",
+        a: "For most D2C brands, Shopify is the better starting point and often the better long-term home: it launches faster, handles hosting, security and checkout, and covers standard retail well. A custom website is better when the commerce model itself is unusual, or when the workarounds needed on Shopify cost more and break more often than owning the code would. Many brands end up in between, with custom apps or a headless storefront on Shopify.",
       },
       {
-        q: "When does custom ecommerce make sense?",
-        a: "When commerce is not a standard retail flow: complex quoting or configuration, marketplace or multi-vendor models, unusual pricing or fulfilment logic, deep integration with proprietary systems, or requirements a hosted platform cannot meet. It needs a team able to run and secure the platform long term.",
+        q: "At what revenue should a D2C brand move off Shopify?",
+        a: "There is no revenue threshold. Brands with very large revenue run on Shopify, and small brands with unusual models build custom. The triggers are requirements: checkout, pricing or fulfilment logic Shopify cannot express even on Plus, integrations that apps cannot keep reliable, or app and fee costs that a custom platform would genuinely beat over three years.",
       },
       {
-        q: "Can Shopify Plus handle B2B?",
-        a: "Shopify Plus includes B2B features such as company accounts, catalogues, price lists and payment terms. Whether they are enough depends on your quoting, approval and ERP integration needs. Many B2B businesses use Shopify Plus with custom apps or integrations; some need a dedicated B2B platform or custom build.",
+        q: "Is Shopify or custom ecommerce cheaper?",
+        a: "It depends on scale and requirements. Shopify has plan fees, app costs and, in India, a third-party transaction fee on gateway payments, but little infrastructure or core maintenance burden. A custom platform has no platform fee but significant build, hosting, security and maintenance costs. Compare total cost over three to five years for your actual requirements.",
+      },
+      {
+        q: "What does Shopify Plus add over Advanced?",
+        a: "According to Shopify's Plus pricing page in November 2026: full rather than limited checkout customisation, custom apps that use Shopify Functions, more B2B catalogues, inventory locations, headless storefronts and API capacity, expansion stores and a lower third-party transaction fee. In India Plus starts at ₹1,75,000 a month against ₹22,680 for Advanced billed yearly, so the upgrade has to be justified by those capabilities.",
       },
       {
         q: "What is the headless middle ground?",
-        a: "Keep Shopify (or another commerce platform) for products, carts, checkout and orders, and build a custom storefront using its APIs. It gives more front-end control while keeping a managed commerce core, at the cost of more engineering and maintenance than a theme.",
+        a: "Keep Shopify for products, carts, checkout and orders, and build a custom storefront using its APIs. Since Hydrogen 2026-10 it works as a library with any JavaScript framework, including Next.js, and Oxygen hosting is included on paid plans from Basic upwards. It gives more front-end control while keeping a managed commerce core, at the cost of more engineering than a theme.",
       },
       {
-        q: "What about PCI DSS?",
-        a: "A hosted platform such as Shopify handles much of the payment security for its checkout. A custom platform that takes payments must keep PCI scope small, usually by using a payment provider's hosted fields or redirect, and still meet the relevant PCI DSS requirements. Get advice from your payment provider and a qualified assessor where needed.",
+        q: "What about PCI DSS on a custom build?",
+        a: "A hosted platform such as Shopify handles much of the payment security for its checkout. A custom platform that takes payments must keep PCI scope small, usually by using a payment provider's hosted checkout, fields or redirect, and still meet the relevant PCI DSS requirements. Get advice from your payment provider and a qualified assessor where needed.",
       },
     ],
     content: [
       {
-        heading: "Shopify Plus or custom ecommerce?",
+        heading: "Shopify or a custom ecommerce website?",
         body: [
-          "**Shopify Plus usually fits retail and D2C brands, and many B2B sellers, whose commerce follows standard patterns and who want a fast launch with low infrastructure burden. Custom ecommerce fits businesses whose commerce model is unusual (complex configuration or quoting, multi-vendor marketplaces, proprietary pricing or fulfilment) and who can fund a team to run it long term. Headless commerce sits between them.** The decision should rest on requirements and total cost over several years, not on preference.",
-          "This guide is for ecommerce leaders and founders comparing platforms. For what changes on Plus, see [[/blogs/shopify-plus-development|Shopify Plus development]]; for moving platforms, see [[/blogs/ecommerce-replatforming|ecommerce replatforming]].",
+          "**Choose Shopify if your products, offers and checkout follow standard retail patterns and you want a small team to launch fast and spend its effort on growth rather than infrastructure. Choose a custom ecommerce website if your commerce model is genuinely unusual (complex configuration or quoting, multi-vendor marketplaces, proprietary pricing or fulfilment logic) and you can fund engineering to run it for years. If you need more control than a theme gives but not a new platform, use the steps in between: custom apps and Shopify Functions, Shopify Plus, or a headless storefront on Shopify.** Decide on requirements and three-year total cost, not on what a bigger brand uses.",
+          "This guide is for D2C founders and ecommerce heads making that call, whether at launch or when a store starts to feel cramped. For what changes on Plus, see [[/blogs/shopify-plus-development|Shopify Plus development]]; for the mechanics of moving platforms, see [[/blogs/ecommerce-replatforming|ecommerce replatforming]].",
         ],
       },
       {
         heading: "Key takeaways",
         body: [],
         checklist: [
-          "List requirements Shopify cannot meet before considering custom.",
-          "Compare total cost over three to five years, not build cost.",
-          "Custom means you own hosting, security, PCI scope and upgrades.",
-          "Headless keeps a managed commerce core with a custom front end.",
-          "Check current Shopify Plus pricing directly; it varies by term and region.",
+          "It is rarely a choice between two options. There are at least four, and most growing brands need one of the middle two.",
+          "List requirements Shopify cannot meet, on your plan and on Plus, before considering custom.",
+          "Several commonly quoted Shopify limits are out of date: the variant limit is now 2,048 per product.",
+          "Compare total cost over three to five years, including Shopify's transaction fee on gateway payments in India.",
+          "Custom means you own hosting, security, PCI scope, upgrades and every feature Shopify used to give you.",
         ],
       },
       {
-        heading: "Comparison",
+        heading: "Four options, not two",
+        body: [
+          "Founders often frame this as \"stay on Shopify or go custom\". In practice the options form a ladder, and each step up buys control at the cost of more engineering.",
+        ],
+        table: {
+          headers: ["Option", "What you control", "What you take on", "Typical fit"],
+          rows: [
+            ["**Shopify theme (customised)**", "Design, sections, content, apps", "Theme upkeep, app sprawl", "Most D2C brands from launch to strong growth"],
+            ["**Shopify with custom apps and Functions**", "Discount, delivery and payment logic; integrations; checkout extensions", "App development and maintenance; some capabilities need Plus", "Brands with unusual offers or back-office integrations"],
+            ["**Headless Shopify**", "The entire storefront, built with Hydrogen, Next.js or another framework", "Front-end engineering, hosting choices, rebuilding theme-app features", "Content-heavy, multi-brand or performance-critical storefronts"],
+            ["**Fully custom platform**", "Everything, including catalogue, cart, checkout and orders", "Hosting, security, PCI scope, uptime and the whole roadmap", "Marketplaces, configurators, commerce inside a larger product"],
+          ],
+        },
+        diagram: {
+          variant: "customlayers",
+          alt: "A ladder from a Shopify theme to custom apps and Functions, then headless Shopify, then a fully custom platform, with control increasing and maintenance responsibility increasing at each step",
+          caption: "Each step up adds control and adds responsibility. Move up only when a real requirement forces it.",
+        },
+      },
+      {
+        heading: "Shopify vs custom: side-by-side comparison",
         body: [],
         table: {
-          headers: ["Factor", "Shopify Plus", "Custom platform"],
+          headers: ["Factor", "Shopify (including Plus)", "Custom platform"],
           rows: [
-            ["**Time to launch**", "Usually faster: themes, apps and a hosted checkout", "Slower: build commerce foundations first"],
-            ["**Cost profile**", "Platform fee, apps, agency or in-house development", "Build, hosting, security, maintenance and team"],
-            ["**Checkout**", "Shopify checkout, extended through checkout extensibility and Functions", "Full control, plus full responsibility"],
-            ["**Catalogue and pricing logic**", "Strong for standard retail; B2B price lists and catalogues", "Any model, including complex configuration"],
-            ["**Integrations**", "Apps and APIs; rate limits apply", "Direct, built to your systems"],
+            ["**Time to launch**", "Weeks to a few months: themes, apps and a hosted checkout", "Months: commerce foundations come first"],
+            ["**Cost profile**", "Plan fee, transaction fee on third-party gateways, apps, development", "Build, hosting, security, maintenance and a standing team"],
+            ["**Checkout**", "Shopify Checkout; customisation is limited below Plus and fuller on Plus", "Full control, plus full responsibility for conversion and security"],
+            ["**Catalogue and pricing logic**", "Strong for standard retail; up to 2,048 variants and three options per product; B2B on Plus", "Any model, including complex configuration"],
+            ["**URLs and SEO**", "Fixed paths such as /products/ and /collections/; strong technical basics", "Any structure; you build the SEO foundations yourself"],
+            ["**Integrations**", "Apps and APIs, within rate limits", "Direct, built to your systems"],
+            ["**Indian payments and logistics**", "Gateways, COD tools and shipping aggregators through apps", "Integrate each gateway, courier and COD rule yourself"],
             ["**Upgrades and security**", "Platform handles core updates and hosting", "Your team patches, scales and secures"],
-            ["**Lock-in**", "Platform-specific apps and logic", "Your code, but heavy maintenance commitment"],
+            ["**Lock-in**", "Platform-specific apps and logic", "Your code, but a heavy maintenance commitment"],
           ],
         },
       },
       {
-        heading: "When Shopify Plus fits",
+        heading: "Shopify's real limits in 2026",
+        body: [
+          "Many comparison articles still cite limits that Shopify has since changed. These are the ones worth checking against your requirements today, based on Shopify's own pricing pages and documentation as of November 2026.",
+        ],
+        checklist: [
+          "**Checkout customisation.** Shopify describes it as limited on Advanced and full on Plus. If your checkout needs custom steps, fields or logic, test it against what checkout extensibility allows. See [[/blogs/shopify-checkout-customisation-guide|what you can customise in Shopify checkout]].",
+          "**Shopify Functions in custom apps.** Custom discount, delivery or payment logic you build for your own store as a custom app needs Plus; public apps that use Functions work on other plans.",
+          "**Product options.** Variants per product rose to 2,048, but products still have a maximum of three options. Highly configurable products can outgrow this.",
+          "**URL structure.** Product, collection and page paths are fixed. Usually fine for SEO, occasionally a problem for migrations from platforms with very different structures.",
+          "**B2B and multi-location.** Advanced allows three B2B catalogues and 10 inventory locations; Plus raises these substantially.",
+          "**API capacity.** Plus has higher API rate limits, which matters for heavy ERP, inventory and marketplace syncs.",
+        ],
+      },
+      {
+        heading: "When Shopify fits",
         body: [],
         checklist: [
           "Your products, carts and checkout follow standard patterns.",
           "You want to launch or replatform quickly with a small team.",
-          "You sell across several stores or markets and want shared tooling.",
+          "You need Indian payment gateways, COD controls and logistics aggregators without building them.",
+          "You sell across several stores or markets and want shared tooling (Plus).",
           "B2B needs are covered by company accounts, price lists and payment terms, perhaps with custom apps.",
           "You would rather spend engineering on experience and integrations than on infrastructure.",
         ],
@@ -258,35 +312,59 @@ export const auBuildDecisionPosts: BlogPost[] = [
         body: [],
         checklist: [
           "Complex product configuration, quoting or approval flows are central to sales.",
-          "A multi-vendor marketplace with payouts and seller tooling (see [[/blogs/marketplace-development-australia|marketplace development]]).",
-          "Pricing, availability or fulfilment logic a hosted platform cannot express.",
+          "A multi-vendor marketplace with payouts and seller tooling (see [[/blogs/marketplace-website-development|marketplace development]]).",
+          "Pricing, availability or fulfilment logic a hosted platform cannot express, even with Functions on Plus.",
           "Very deep integration with proprietary systems.",
           "Commerce is part of a larger product you already run.",
           "You can fund ongoing engineering, security and operations.",
         ],
       },
       {
+        heading: "When should a D2C brand move beyond a basic Shopify store?",
+        body: [
+          "Most brands do not outgrow Shopify. They outgrow a basic setup: an off-the-shelf theme, a pile of apps and manual work in spreadsheets. Before planning a custom platform, match each pain to the smallest step that fixes it.",
+        ],
+        table: {
+          headers: ["Signal", "Try first", "Consider custom or headless if"],
+          rows: [
+            ["Theme changes need a developer every week", "A rebuilt or custom theme with flexible sections", "Content and design needs still exceed what themes can do"],
+            ["Ten or more apps, conflicting scripts, slow pages", "App audit; replace overlapping apps with one custom app", "The logic you need cannot run on Shopify at all"],
+            ["Offers and bundles that apps cannot express", "Shopify Functions (custom apps need Plus)", "Pricing depends on data or rules Shopify cannot reach"],
+            ["Stock and orders keyed in by hand across channels", "ERP, inventory or OMS integration", "Integrations break under rate limits even on Plus"],
+            ["Checkout needs custom steps or rules", "Checkout extensibility; Plus for full customisation", "The checkout itself is the product, such as configured or quoted orders"],
+            ["Fees and app costs keep rising", "Re-run the plan break-even and app costs", "A three-year comparison clearly favours owning the platform"],
+            ["Storefront is slow or content-limited at scale", "Performance work on the theme", "Headless storefront on Shopify, before any full replatform"],
+          ],
+        },
+        cta: {
+          title: "Not sure which step your store needs?",
+          description: "ZSpace Labs can map your requirements against Shopify, Shopify Plus, headless and custom options and show you the smallest change that solves the problem. Explore our [[/services/shopify-development|Shopify development]] and [[/services/website-development|custom ecommerce development]] services.",
+        },
+      },
+      {
         heading: "The headless middle ground",
         body: [
-          "Headless commerce uses the platform for catalogue, cart, checkout and orders while you build the storefront, for example with Shopify's Storefront API and Hydrogen. It suits brands needing custom experiences or content-heavy sites, but adds front-end hosting, performance and maintenance work. See [[/blogs/headless-ecommerce-architecture|headless ecommerce architecture]].",
+          "Headless commerce keeps Shopify for catalogue, cart, checkout and orders while you build the storefront yourself. Since the Hydrogen 2026-10 release, Hydrogen works as a library with any JavaScript framework, with starter templates for React Router and Next.js, and Shopify's Oxygen hosting is included at no extra charge on paid plans from Basic upwards. That lowers the barrier, but you still take on front-end engineering, and features that theme apps add for free may need rebuilding.",
+          "It suits brands with content-heavy storytelling, several brands on one stack, or demanding performance needs. See [[/blogs/headless-ecommerce-architecture|headless ecommerce architecture]] and [[/blogs/headless-shopify-explained|Shopify headless commerce]].",
         ],
       },
       {
         heading: "Total cost questions to answer",
         body: [],
         checklist: [
-          "Platform fees and transaction or payment costs at your projected revenue.",
-          "Apps and their monthly fees, versus custom features.",
-          "Hosting, monitoring, security and on-call for custom.",
+          "Plan fees, plus Shopify's third-party transaction fee on gateway payments, at your projected revenue. Indian stores cannot use Shopify Payments, so this fee applies to prepaid orders; our [[/blogs/ecommerce-website-development-cost-india|India cost guide]] shows the plan break-even points.",
+          "Apps and their monthly fees, versus building those features yourself.",
+          "Hosting, monitoring, security and on-call cover for custom.",
           "Engineering capacity needed each year to keep up and improve.",
-          "Payment security: hosted fields or redirects to limit PCI scope on custom builds.",
-          "Australian specifics: GST display, surcharge rules and local payment methods on either option; see [[/blogs/shopify-development-australia|Shopify development in Australia]].",
+          "Payment security: hosted checkout, fields or redirects to limit PCI scope on custom builds.",
+          "Migration cost: product and customer data, URLs, redirects and SEO.",
         ],
       },
       {
-        heading: "Hypothetical example: two businesses, two answers",
+        heading: "Hypothetical example: two brands, two answers",
         body: [
-          "**This example is hypothetical.** An apparel brand with standard products, several markets and a small team chose Shopify Plus and spent its budget on a fast theme, content and an ERP integration. A building-supplies company whose trade customers configure products, request quotes and buy on negotiated terms chose a custom ordering platform integrated with its ERP, keeping its existing payment provider's hosted fields to limit PCI scope. Each decision followed from the requirements list, not from a platform preference.",
+          "**This example is hypothetical.** A personal-care brand selling 60 products in India, with most orders from Instagram traffic, was frustrated by a slow store with 14 apps and bundle offers that kept breaking. It stayed on Shopify, rebuilt its theme, replaced four apps with one custom app and moved its bundle logic to an app built on Shopify Functions. Its problem was the setup, not the platform.",
+          "A home-furnishing business whose customers configure sizes, fabrics and finishes, and whose prices depend on supplier data, needed more than three options per product and quotes for trade buyers. It chose a custom ordering platform integrated with its ERP, using its payment provider's hosted checkout to limit PCI scope. Each decision followed from the requirements list, not from a platform preference.",
         ],
       },
       {
@@ -294,8 +372,9 @@ export const auBuildDecisionPosts: BlogPost[] = [
         body: [],
         checklist: [
           "Choosing custom for control without a long-term team.",
-          "Forcing an unusual model into a platform through dozens of apps.",
-          "Comparing build cost only.",
+          "Forcing an unusual model into Shopify through dozens of apps.",
+          "Rejecting Shopify because of limits that no longer exist.",
+          "Comparing build cost only, and ignoring transaction fees or maintenance.",
           "Ignoring migration effort: URLs, data, redirects and SEO.",
           "Underestimating PCI and security responsibilities on custom builds.",
         ],
@@ -304,20 +383,21 @@ export const auBuildDecisionPosts: BlogPost[] = [
         heading: "Related guides",
         body: [],
         checklist: [
-          "[[/blogs/shopify-plus-vs-shopify|Shopify Plus vs Shopify]] for plan differences.",
-          "[[/blogs/b2b-portal-development-australia|B2B portal development]] for trade ordering.",
+          "[[/blogs/shopify-plus-vs-shopify|Shopify Plus vs Shopify]] for plan-by-plan differences.",
+          "[[/blogs/when-do-you-need-custom-shopify-development|When you need custom Shopify development]] for custom work inside Shopify.",
+          "[[/blogs/website-replatforming|Website replatforming]] for a diagnostic on whether you have outgrown a platform.",
           "[[/blogs/ecommerce-erp-integration|Ecommerce ERP integration]] for orders, stock and finance.",
-          "[[/blogs/low-code-vs-custom-software|Low-code vs custom software]] for the general build decision.",
+          "[[/blogs/d2c-website-development|D2C ecommerce website development]] for the full build plan.",
         ],
       },
       {
         heading: "Conclusion",
         body: [
-          "Shopify Plus is a strong default for standard commerce that needs to move quickly; custom ecommerce earns its cost where the commerce model is genuinely unusual and you can run it long term. Headless offers a middle path. Write down requirements, test them against the platform, and compare total cost over several years.",
+          "Shopify is a strong default for D2C brands, and Shopify Plus, custom apps and headless storefronts stretch it a long way. A custom ecommerce website earns its cost where the commerce model is genuinely unusual and you can run it for years. Write down requirements, test them against current platform capabilities rather than old blog posts, and compare total cost over several years.",
         ],
         cta: {
-          title: "Comparing Shopify Plus with a custom build?",
-          description: "ZSpace Labs is an India-based, remote-first technology studio working with Australian and international businesses on [[/services/shopify-development|Shopify and Shopify Plus development]] and [[/services/website-development|custom ecommerce platforms]]. If it would help to test your requirements against both, we are happy to talk it through.",
+          title: "Weighing Shopify against a custom build?",
+          description: "ZSpace Labs is an India-based, remote-first technology studio building [[/services/shopify-development|Shopify and Shopify Plus stores]] and [[/services/website-development|custom ecommerce platforms]] for brands in India and internationally. Bring us your requirements and we will test them against both.",
         },
       },
     ],

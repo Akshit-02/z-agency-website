@@ -41,12 +41,12 @@ export const markets = [
   {
     name: "United Arab Emirates",
     note:
-      "The federal Personal Data Protection Law (Federal Decree-Law No. 45 of 2021) has applied since 2 January 2022, and the DIFC has its own Data Protection Law. Arabic and right-to-left layouts are planned from the start when your audience needs them.",
+      "The federal Personal Data Protection Law (Federal Decree-Law No. 45 of 2021) took effect on 2 January 2022, though its executive regulations had not been issued as of November 2026, and the DIFC and ADGM have their own data protection laws. Arabic and right-to-left layouts are planned from the start when your audience needs them.",
   },
   {
     name: "United Kingdom",
     note:
-      "UK GDPR covers personal data, and the ICO's storage and access guidance, finalised on 29 April 2026, sets the rules for cookies and analytics. We use WCAG 2.2 AA as the accessibility benchmark.",
+      "UK GDPR covers personal data, and the storage and access guidance finalised on 29 April 2026 by the ICO (now the Information Commission) sets the rules for cookies and analytics. We use WCAG 2.2 AA as the accessibility benchmark.",
   },
   {
     name: "Australia",

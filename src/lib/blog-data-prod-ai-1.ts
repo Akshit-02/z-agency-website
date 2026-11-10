@@ -17,9 +17,9 @@ export const prodAiPosts1: BlogPost[] = [
   {
     slug: "ai-agent-autonomy-levels",
     title: "How Much Autonomy Should You Give an AI Agent? A Five-Level Framework",
-    seoTitle: "How Much Autonomy Should an AI Agent Have? A Five-Level Framework",
+    seoTitle: "How Much Autonomy Should AI Agents Have? 5 Levels and Limits",
     excerpt:
-      "How much autonomy to give an AI agent depends on its accuracy, the cost of a mistake and whether it can be undone. Five levels and the controls each needs.",
+      "What limits how much autonomy companies give AI agents: accuracy, the cost of a mistake and reversibility. Five autonomy levels and the controls each needs.",
     category: "AI & Automation",
     banner: "autonomylevels",
     sceneKind: "agent",

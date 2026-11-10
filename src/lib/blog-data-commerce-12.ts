@@ -335,16 +335,16 @@ export const commercePosts12: BlogPost[] = [
   // ---------------------------------------------- 123 · AGENTIC COMMERCE
   {
     slug: "agentic-commerce",
-    title: "Agentic Commerce: How AI Agents Are Changing Ecommerce",
-    seoTitle: "Agentic Commerce: How AI Agents Are Changing Ecommerce",
+    title: "Agentic Commerce Explained: How D2C Brands Can Prepare Their Stores for AI Shopping Agents",
+    seoTitle: "Agentic Commerce for Ecommerce: How to Prepare Your Store",
     excerpt:
-      "What agentic commerce is, the protocols behind it (UCP, ACP, AP2, MCP), how merchants stay merchant of record, what's live vs announced, and how to prepare.",
+      "What agentic commerce is, the protocols behind it, what is live versus emerging in late 2026, what it means for Indian D2C brands and how to prepare.",
     category: "AI & Automation",
     banner: "agenticstack",
     bannerAlt:
       "Agentic commerce stack: shoppers give AI assistants such as ChatGPT, AI Mode and Gemini, Copilot and other agents a goal; protocols such as UCP, ACP, AP2 and MCP connect them to merchant systems for catalog and feeds, pricing and inventory, checkout and payments, and orders and service.",
     date: "2026-09-29",
-    updated: "2026-10-08",
+    updated: "2026-11-10",
     readingTime: "15 min read",
     relatedServiceSlugs: ["ai-automation", "website-development", "shopify-development"],
     relatedIndustrySlugs: ["ecommerce"],
@@ -382,9 +382,9 @@ export const commercePosts12: BlogPost[] = [
           "For a detailed, layer-by-layer comparison see [[/blogs/acp-vs-ucp-vs-mcp|ACP vs UCP vs MCP]], and for how protocols map onto catalog, checkout, payments and orders, [[/blogs/agentic-commerce-stack|the agentic commerce stack]].",
         ],
         table: {
-          headers: ["Protocol", "Who", "What it covers", "Status (Sept 2026)"],
+          headers: ["Protocol", "Who", "What it covers", "Status (checked Nov 2026)"],
           rows: [
-            ["UCP: Universal Commerce Protocol", "Google, Shopify", "Discovery, carts, checkout, post-purchase between agents and merchants", "Announced Jan 2026; used for checkout on AI Mode and Gemini in early access; supported by Shopify's agent tooling"],
+            ["UCP: Universal Commerce Protocol", "Google, Shopify", "Discovery, carts, checkout, post-purchase between agents and merchants", "Announced Jan 2026; latest release 2026-08-25; checkout in AI Mode and Gemini for select merchants with products eligible in the US, Canada and Australia; supported by Shopify's agent tooling"],
             ["ACP: Agentic Commerce Protocol", "OpenAI, Stripe", "Product feeds, agentic checkout, delegated payment", "Launched Sept 2025; Instant Checkout moved to ChatGPT apps in Mar 2026, ACP continues as infrastructure"],
             ["AP2: Agent Payments Protocol", "Google; standardization continuing at the FIDO Alliance", "Agent-initiated payments with signed checkout and payment mandates", "Announced Sept 2025; v0.2 released; AP2 mandates extension in UCP"],
             ["MCP: Model Context Protocol", "Open standard", "Connecting AI applications to tools and data", "Widely used; Shopify offers UCP-compliant MCP servers"],
@@ -394,6 +394,33 @@ export const commercePosts12: BlogPost[] = [
           type: "note",
           text: "Sources: Digital Commerce 360 on UCP, Google Merchant Center Help, OpenAI commerce docs, Google Cloud on AP2, Shopify agent docs.",
         },
+      },
+      {
+        heading: "What Is Live, Emerging and Speculative (November 2026)",
+        body: [
+          "Much of what is written about agentic commerce mixes things that work today with things that are announced or imagined. Sorting them helps you decide what to spend on now.",
+        ],
+        table: {
+          headers: ["Status", "Examples", "What it means for a brand"],
+          rows: [
+            ["**Established**", "AI assistants recommending products from search and merchant feeds; Shopify Catalog feeding AI channels; structured product data and Merchant Center feeds", "Worth investing in now: the same data work improves search, ads and on-site discovery"],
+            ["**Live but limited**", "Checkout inside AI Mode and Gemini through UCP for select merchants with products eligible in the US, Canada and Australia; Shopify's agentic channels, where purchasing is currently available to US buyers only", "Useful if you sell into those markets; not yet a channel for most India-only brands"],
+            ["**Emerging standards**", "UCP (latest release 2026-08-25), ACP (still labelled beta), AP2 (v0.2, now at the FIDO Alliance)", "Follow through your platform rather than building directly, unless you run a custom stack"],
+            ["**Pilots**", "Agentic UPI payments in India, piloted by NPCI and Razorpay with a small group of users from February 2026", "Watch, do not plan revenue around it yet"],
+            ["**Speculative**", "Agents buying routinely and unsupervised across many stores on a shopper's behalf", "Not a basis for investment decisions today"],
+          ],
+        },
+        callout: {
+          type: "note",
+          text: "Statuses were checked against Google's Merchant Center help, Shopify's guidance and the protocol repositories on 10 November 2026. They change monthly; recheck before acting on them.",
+        },
+      },
+      {
+        heading: "What It Means for D2C Brands Selling in India",
+        body: [
+          "For a brand selling mainly to Indian customers, the honest position in late 2026 is that agent-completed checkout is not yet a material channel. Shopify's agentic purchasing is limited to US buyers, Google's agentic checkout covers products eligible in the US, Canada and Australia for select merchants, and agentic UPI payments are in pilot. Brands that export, particularly to the US, can use the ChatGPT and Copilot routes through Shopify Catalog regardless of where the store is based.",
+          "AI-assisted discovery is a different story. Shoppers in India already ask assistants which product to buy, and those answers draw on product pages, feeds and reviews. That is where Indian brands should put effort now: complete, structured product data; accurate prices and stock in Merchant Center and marketplaces; clear delivery, COD and returns policies; and pages that state facts plainly. See [[/blogs/ecommerce-product-data-ai-search|ecommerce product data optimisation]].",
+        ],
       },
       {
         heading: "Roles: Shopper, Agent, Merchant, Payment Provider",
@@ -509,16 +536,16 @@ export const commercePosts12: BlogPost[] = [
   // ---------------------------------------- 124 · SHOPIFY AGENTIC COMMERCE
   {
     slug: "shopify-agentic-commerce",
-    title: "Shopify Agentic Commerce: How AI Shopping Can Change Product Discovery",
-    seoTitle: "Shopify Agentic Commerce: AI Shopping and Product Discovery",
+    title: "Shopify Agentic Commerce: How to Make Your Store Ready for AI-Powered Product Discovery",
+    seoTitle: "AI Product Discovery on Shopify: How to Get Your Store Ready",
     excerpt:
-      "How Shopify's Agentic Storefronts, Shopify Catalog and UCP tooling work: channels, eligibility, checkout, data mapping, exclusions, attribution and preparation.",
+      "How to get a Shopify store ready for AI product discovery: Agentic Storefronts, Shopify Catalog, eligibility by country, product data and measurement.",
     category: "Shopify & Ecommerce",
     banner: "shopifyagentic",
     bannerAlt:
       "Shopify agentic commerce flow: Shopify admin, Shopify Catalog, AI channels, product found, and checkout either directly in the channel or on the store, with orders attributed to the AI channel in the admin.",
     date: "2026-09-29",
-    updated: "2026-10-08",
+    updated: "2026-11-10",
     readingTime: "7 min read",
     relatedServiceSlugs: ["shopify-development", "ai-automation"],
     relatedIndustrySlugs: ["ecommerce", "d2c-consumer"],
@@ -560,7 +587,8 @@ export const commercePosts12: BlogPost[] = [
       {
         heading: "Channels and Availability",
         body: [
-          "Shopify's documentation describes different reach per channel: ChatGPT and Copilot are available to merchants selling to US buyers regardless of where the store is based, while AI Mode and Gemini were open to US-based stores selling to US customers, with a broader rollout underway. Products reach Google's surfaces through Shopify Catalog or the Google & YouTube channel and Merchant Center.",
+          "Shopify's guidance (June 2026) describes different reach per channel: ChatGPT and Copilot are available to any merchant in Shopify Catalog selling to US buyers, regardless of where the store is based, while AI Mode and Gemini are limited to select US-based shops selling to US buyers. Shopify says purchasing across all channels is currently available to US buyers only. Separately, Google's Merchant Center help (checked November 2026) lists agentic checkout for select merchants with products eligible in the US, Canada and Australia. Products reach Google's surfaces through Shopify Catalog or the Google & YouTube channel and Merchant Center.",
+          "For an India-based store selling to Indian customers, this means agent checkout is not yet available to your buyers. What does apply is discovery: AI assistants and Google's AI features still read your product pages, feeds and reviews when answering questions, so the data work below pays off now.",
         ],
       },
       {
@@ -607,6 +635,14 @@ export const commercePosts12: BlogPost[] = [
         },
       },
       {
+        heading: "Making Products Easy for AI to Understand",
+        body: [
+          "Assign every product a category from Shopify's Standard Product Taxonomy and fill the category metafields it unlocks, so attributes such as material, size or skin type are structured rather than buried in descriptions. Use consistent option names and values, map important metafields and metaobjects with Shopify Catalog Mapping, and keep price, stock and policies accurate.",
+          "Google's guidance on its AI search features says no special schema.org markup is needed to appear in them, and recommends keeping Merchant Center data up to date. Structured data still helps search engines understand your pages, but it is not a switch that guarantees appearing in AI answers. For the full checklist, see [[/blogs/ecommerce-product-data-ai-search|ecommerce product data optimisation]].",
+          "If you used Shopify's Knowledge Base app to answer common questions for AI channels, note that it is no longer available to install and is being replaced by the knowledge base inside Agentic Storefronts; Shopify lists the app's deprecation date as 15 January 2027.",
+        ],
+      },
+      {
         heading: "Controlling What Appears",
         body: [
           "You can switch individual AI channels on or off in Sales channels > Agentic. Setting a product to Unlisted hides it from AI channels but also from sitemaps and search engines. Products in B2B catalogs, behind customer login or on password-protected storefronts are excluded automatically. Shopify notes that opting out of a channel may not remove products surfaced through other external discovery methods.",
@@ -637,10 +673,6 @@ export const commercePosts12: BlogPost[] = [
           "Decide direct checkout per channel",
           "Track AI channel orders, returns and support",
         ],
-        cta: {
-          title: "Want Shopify's AI channels working for your store?",
-          description: "Talk to ZSpace Labs about [[/services/shopify-development|Shopify development]] and [[/services/ai-automation|AI commerce]].",
-        },
       },
       {
         heading: "Detailed Readiness Checklist",

@@ -146,6 +146,7 @@ export const auCloudDeliveryPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "There is no single best platform. Use the simplest option that meets your requirements, mix where it helps, and move to more complex platforms such as Kubernetes when service count, team size and skills justify the operational cost.",
+          "If portability between providers is a goal, see [[/blogs/cloud-vendor-lock-in-digital-sovereignty|reducing cloud vendor lock-in]].",
         ],
         cta: {
           title: "Choosing where to run your application?",
@@ -298,6 +299,7 @@ export const auCloudDeliveryPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Infrastructure as code makes environments reproducible, reviewable and recoverable. Choose one tool, protect state and secrets, review plans in CI, guard against destructive changes and watch for drift. Start with the resources you could least afford to rebuild by hand.",
+          "Infrastructure code is one part of a portability plan; see [[/blogs/cloud-vendor-lock-in-digital-sovereignty|cloud vendor lock-in and digital sovereignty]].",
         ],
         cta: {
           title: "Building infrastructure for a new product?",
@@ -444,6 +446,8 @@ export const auCloudDeliveryPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Good secrets management combines a secret store, short-lived credentials, scanning and fast revocation. Remove secrets from code and conversations, give each workload only what it needs, and practise responding to a leak before you need to.",
+          "For protecting keys and data while they are in use, see [[/blogs/confidential-computing-business-applications|confidential computing]].",
+          "To prepare keys and certificates for post-quantum algorithms, see [[/blogs/post-quantum-cryptography-readiness|post-quantum cryptography readiness]].",
         ],
         cta: {
           title: "Building software that handles sensitive keys?",

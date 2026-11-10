@@ -470,6 +470,7 @@ export const aiAgentPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "AI agents give banks and financial institutions a practical way to handle the operational and investigative load behind onboarding, compliance and fraud work, without handing financial decisions to software. The strongest results come from starting with one well-defined workflow, keeping human approval on anything consequential, and measuring the result against a metric you already track.",
+          "For building the lending platform itself, see [[/blogs/digital-lending-platform-development|digital lending platform development]].",
         ],
       },
     ],
@@ -910,6 +911,7 @@ export const aiAgentPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "AI agents give manufacturers a practical layer for turning the sensor and production data they already generate into earlier, better-informed decisions on maintenance, quality and scheduling — complementing, not replacing, the industrial automation that runs the equipment itself. Start with one line or equipment category, keep safety-critical decisions with certified control systems, and expand from a proven workflow. For the integration groundwork AI depends on, see [[/blogs/manufacturing-software-integration|manufacturing software integration]].",
+          "For the data foundation behind maintenance prediction, see [[/blogs/predictive-maintenance-platform-development|predictive maintenance platform development]].",
         ],
       },
     ],
@@ -1123,6 +1125,7 @@ export const aiAgentPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "AI agents give real estate teams a practical way to respond to every lead instantly, qualify them consistently, and keep follow-up from falling through the cracks — freeing agents to focus on the negotiation, advice and relationship work that actually needs a licensed professional. Start with first response on your busiest channel, keep contract and pricing decisions with your team, and expand from there. For developer sales teams in the UAE, including DLD advertising rules, see [[/blogs/ai-real-estate-uae|AI for UAE real estate developers]].",
+          "The CRM that agents and AI assistants work from is covered in [[/blogs/real-estate-crm-development|real estate CRM development]].",
         ],
       },
     ],
@@ -1775,6 +1778,7 @@ export const aiAgentPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "AI agents give logistics and supply chain operations a way to respond to constantly changing conditions in real time, rather than replanning on a fixed schedule and hoping nothing changes in between. Start with one lane or facility, invest in the real-time data the agent depends on, and keep safety-critical and high-cost decisions with your team. For information workflows at UAE logistics companies, see [[/blogs/ai-logistics-uae|AI for UAE logistics companies]]. For the core systems agents depend on, see [[/blogs/logistics-software-development-australia|logistics software development in Australia]].",
+          "For the visibility and exception layer agents work from, see [[/blogs/supply-chain-control-tower-software|supply chain control tower software]].",
         ],
       },
     ],

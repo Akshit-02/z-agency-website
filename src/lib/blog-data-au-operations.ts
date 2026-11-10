@@ -259,6 +259,7 @@ export const auOperationsPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Business intelligence dashboards earn their place when they replace manual compilation with trusted, timely answers to recurring decisions. Start from those decisions, connect the right Australian sources, write definitions down, design views per role, restrict access and keep each dashboard owned and reviewed. The tool matters less than the discipline around it.",
+          "To move from reporting what happened to predicting what comes next, see [[/blogs/ai-forecasting-software-development|AI forecasting software development]].",
         ],
         cta: {
           title: "Want reporting your team actually uses?",

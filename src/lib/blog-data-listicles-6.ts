@@ -132,6 +132,7 @@ export const listiclePosts6: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Good rate limiting is layered: a fair per-identity limit using a token bucket or sliding window, tighter limits on sensitive operations, weighted limits for expensive work, plan quotas where you sell access, and clear 429 responses with Retry-After. Enforce it centrally, document it, and watch the numbers. It sits alongside the other controls in [[/blogs/api-security-best-practices|API security best practices]].",
+          "For token quotas, budgets and fallbacks on AI features, see [[/blogs/ai-cost-abuse-protection|protecting AI applications from cost abuse]].",
         ],
       },
       {

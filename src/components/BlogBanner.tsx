@@ -650,6 +650,26 @@ export type BlogBannerVariant =
   | "recruitflow"
   | "contentopsflow"
   | "procureflow"
+  | "legacyroadmap"
+  | "aifinopsflow"
+  | "aipricingmap"
+  | "costguardflow"
+  | "pqcflow"
+  | "scenarioflow"
+  | "inspectionflow"
+  | "towerflow"
+  | "forecastflow"
+  | "portabilitymap"
+  | "confidentialflow"
+  | "itopsflow"
+  | "healthplatform"
+  | "recrmflow"
+  | "lendingflow"
+  | "pdmflow"
+  | "mesflow"
+  | "fleetflow"
+  | "isa95stack"
+  | "fleetarch"
   | "itsmflow"
   | "dataentryflow"
   | "expenseflow"
@@ -1187,6 +1207,22 @@ const FLOWS: Partial<Record<BlogBannerVariant, FlowSpec>> = {
   recruitflow: { steps: ["Applic-|ation", "Parse +|dedupe", "Knockout|rules", "Recruiter|review", "Schedule", "Commun-|icate"], highlight: 3, loop: "people make every selection decision" },
   contentopsflow: { steps: ["Research", "Brief", "Draft|(assisted)", "Expert|review", "Approve", "Publish|+ measure"], highlight: 3 },
   procureflow: { steps: ["Request", "Classify|+ policy", "Source|vendor", "Approve", "Create|PO", "Receive|+ match"], highlight: 1 },
+  healthplatform: { steps: ["Book", "Register|+ consent", "Consult|+ notes", "Orders +|Rx", "Bill +|insure", "Follow|up"], highlight: 2, loop: "every view and change is audited" },
+  recrmflow: { steps: ["Leads in", "Dedupe +|assign", "Follow|up", "Site|visit", "Negotiate", "Book"], highlight: 1 },
+  lendingflow: { steps: ["Apply", "KYC +|consent", "Assess|credit", "Offer|+ KFS", "Sign +|disburse", "Repay +|collect"], highlight: 2 },
+  pdmflow: { steps: ["Sensors|+ PLCs", "Clean +|store", "Score|health", "Alert", "Work|order", "Feedback"], highlight: 2, loop: "technician findings improve the models" },
+  forecastflow: { steps: ["Collect|data", "Clean +|join", "Train +|backtest", "Planner|review", "Publish|to ERP", "Track|accuracy"], highlight: 2, loop: "accuracy and bias are measured against actuals" },
+  confidentialflow: { steps: ["Encrypted|at rest", "Encrypted|in transit", "Attest|TEE", "Release|keys", "Process|in use", "Return|result"], highlight: 2 },
+  itopsflow: { steps: ["Signals", "Correlate", "Investigate", "Policy +|approve", "Act +|verify", "Review"], highlight: 3, loop: "every action is logged and reversible" },
+  scenarioflow: { steps: ["Baseline|model", "Vary|assumptions", "Simulate|runs", "Compare|scenarios", "Decide", "Track vs|actuals"], highlight: 2 },
+  inspectionflow: { steps: ["Trigger", "Capture|image", "Score|defects", "Review|uncertain", "Reject or|pass", "Record|to batch"], highlight: 2 },
+  towerflow: { steps: ["ERP, WMS,|TMS, carriers", "Normalise|events", "Detect|exceptions", "Prioritise", "Act +|write back", "Learn"], highlight: 2 },
+  aifinopsflow: { steps: ["Model|call", "Gateway|+ tags", "Price|usage", "Join cloud|+ SaaS", "Cost per|outcome", "Budgets|+ alerts"], highlight: 1 },
+  costguardflow: { steps: ["Identity", "Rate|limits", "Token|quotas", "Input|limits", "Anomaly|alerts", "Graceful|fallback"], highlight: 2 },
+  pqcflow: { steps: ["Inventory", "Prioritise", "Agile|crypto", "Hybrid|TLS", "Signatures|+ certs", "Retire|old algos"], highlight: 0, loop: "crypto agility makes the next change easier" },
+  legacyroadmap: { steps: ["Assess", "Safety-net|tests", "Create|a seam", "Move one|slice", "Sync|data", "Retire|old part"], highlight: 1, loop: "repeat slice by slice while the old system keeps running" },
+  mesflow: { steps: ["Work order|from ERP", "Release|to line", "Execute|+ record", "Quality|checks", "Track|genealogy", "Report|to ERP"], highlight: 3 },
+  fleetflow: { steps: ["Vehicle|trackers", "Ingest +|process", "Dispatch|jobs", "Driver|app", "Customer|ETAs", "Maintain|+ report"], highlight: 1 },
   itsmflow: { steps: ["Ticket", "Classify|+ priority", "Suggest|fix", "Automate|approved", "Escalate", "Learn"], highlight: 1 },
   dataentryflow: { steps: ["Source", "Extract", "Map|fields", "Validate|+ dedupe", "Write to|system", "Exceptions"], highlight: 3 },
   expenseflow: { steps: ["Receipt", "Extract", "Policy|check", "Approve", "Reimburse", "Post to|ERP"], highlight: 2, branch: { from: 2, label: "out of policy → reason + approver" } },
@@ -1514,6 +1550,22 @@ function compareSpec(headers: string[], rows: string[][], opts: { hotCol?: numbe
 }
 
 const ANATOMIES: Partial<Record<BlogBannerVariant, AnatomySpec>> = {
+  aipricingmap: compareSpec(["Seats", "Usage", "Credits", "Outcome", "Hybrid"], [["Predictable", "High", "Low", "Medium", "Medium", "High"], ["Tracks cost", "Low", "High", "High", "Medium", "High"], ["Tracks value", "Low", "Medium", "Medium", "High", "Medium"]], { hotCol: 2 }),
+  portabilitymap: columnsSpec(
+    ["Hard to move", "Medium", "Easier"],
+    [["Data + egress", "Keys", "Contracts"], ["Managed services", "Identity", "Infra code", "AI models"], ["Containers", "Postgres", "OpenTelemetry"]],
+    { hotCol: 0, note: "make the hard layers portable first" }
+  ),
+  isa95stack: columnsSpec(
+    ["L4 · ERP", "L3 · MES", "L2 · SCADA", "L1–0 · Machines"],
+    [["Orders", "Planning", "Costing"], ["Dispatch", "Record", "Quality", "Genealogy", "OEE"], ["Supervise", "Alarms", "Setpoints"], ["PLC control", "Sensors", "Actuators"]],
+    { hotCol: 1, note: "the MES turns plans into executed, recorded work" }
+  ),
+  fleetarch: columnsSpec(
+    ["Sources", "Ingestion", "Processing", "Apps"],
+    [["GPS trackers", "OBD-II / J1939", "Driver phones", "Sensors"], ["Device gateway", "Queue", "Decode + validate"], ["Trips + stops", "Geofences", "Alerts", "ETAs"], ["Dispatch console", "Driver app", "Customer ETA", "Reports"]],
+    { hotCol: 1 }
+  ),
   // D2C product page, merchandised for a first-time buyer
   d2cpdp: {
     frames: [{ x: 90, y: 30, w: 620, h: 392, kind: "browser" }],

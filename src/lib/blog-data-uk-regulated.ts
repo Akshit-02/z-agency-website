@@ -742,6 +742,7 @@ export const ukRegulatedPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "NHS integration succeeds when the use case, identity, patient matching and assurance are designed together. Use NHS login and PDS for identity, agree GP and hospital routes early, keep a living hazard log, and plan DTAC, DSPT and onboarding into the timeline. Scope Scotland, Wales and Northern Ireland separately. For general patterns, see [[/blogs/integration-architecture-patterns|integration architecture patterns]].",
+          "If you are building the clinic or patient platform itself, see [[/blogs/healthcare-management-software-development|healthcare management software development]].",
         ],
         cta: {
           title: "Planning an NHS-connected product?",

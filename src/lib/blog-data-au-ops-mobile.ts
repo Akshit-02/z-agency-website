@@ -277,6 +277,8 @@ export const auOpsMobilePosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "An IoT monitoring platform succeeds when it delivers trustworthy readings, actionable alerts and evidence-ready records, securely and through connectivity gaps. Start with the actions people need to take, then design devices, ingestion and rules around them.",
+          "In factories, machine data usually feeds a [[/blogs/mes-development|manufacturing execution system]] that ties it to work orders, quality and traceability.",
+          "For turning machine data into maintenance decisions, see [[/blogs/predictive-maintenance-platform-development|predictive maintenance platform development]].",
         ],
         cta: {
           title: "Monitoring equipment or environments?",
@@ -412,6 +414,7 @@ export const auOpsMobilePosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Route optimisation delivers when constraints are modelled honestly, inputs are accurate, drivers trust the routes and plans adjust during the day. Choose SaaS or a solver based on how unusual your constraints are, and keep comparing planned with actual. For UK waste operators, see [[/blogs/digital-waste-tracking-software-uk|digital waste tracking software]]. For vehicle defects and inspections, see [[/blogs/fleet-maintenance-software-uk|fleet maintenance software in the UK]].",
+          "Route optimisation is usually one module of a wider platform; see [[/blogs/fleet-management-software-development|fleet management software development]] for tracking, dispatch, driver apps and reporting.",
         ],
         cta: {
           title: "Planning routes by hand?",

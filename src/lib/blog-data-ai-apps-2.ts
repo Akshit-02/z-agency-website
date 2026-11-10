@@ -243,9 +243,9 @@ export const aiAppsPosts2: BlogPost[] = [
   {
     slug: "ai-debugging",
     title: "AI Debugging: How to Find and Fix Software Bugs With AI",
-    seoTitle: "AI Debugging: Logs, Stack Traces, Reproduction and Root Cause",
+    seoTitle: "AI Code Debugging: Find and Fix Bugs With AI, Step by Step",
     excerpt:
-      "How to debug software with AI: feeding logs, stack traces and traces as context, reproducing the bug, forming and testing hypotheses, fixing with a regression test, production incidents and pitfalls.",
+      "How to debug code with AI: give it logs, stack traces and context, reproduce the bug, test hypotheses, fix with a regression test, and avoid common pitfalls.",
     category: "AI & Automation",
     banner: "aidebugflow",
     bannerAlt:

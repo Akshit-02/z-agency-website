@@ -165,20 +165,20 @@ export const commercePosts13: BlogPost[] = [
   // ------------------------------------------ 126 · PRODUCT DATA AI SEARCH
   {
     slug: "ecommerce-product-data-ai-search",
-    title: "How to Optimize Ecommerce Product Data for AI Search",
-    seoTitle: "How to Optimize Ecommerce Product Data for AI Search",
+    title: "Ecommerce Product Data Optimisation: How to Make Your Catalogue Easier for AI Search to Understand",
+    seoTitle: "Ecommerce Product Data Optimisation for AI Search",
     excerpt:
-      "A practical guide to product data for AI search and assistants: titles, descriptions, attributes, variants, identifiers, offers, taxonomy, consistency and QA.",
+      "Ecommerce product data optimisation for AI search: titles, attributes, variants, identifiers and taxonomy, what bad data breaks and how to validate it.",
     category: "Shopify & Ecommerce",
     banner: "productdatamap",
     bannerAlt:
       "Product data used by shopping systems and AI assistants, in four groups: identity (title, brand, GTIN, variant grouping, category), offer (price, availability, shipping, returns, condition), attributes (size, colour, material, dimensions, compatibility, ingredients) and context (who it's for, use cases, what's in the box, reviews, comparisons).",
     date: "2026-09-29",
-    updated: "2026-10-07",
-    readingTime: "14 min read",
+    updated: "2026-11-10",
+    readingTime: "17 min read",
     relatedServiceSlugs: ["website-development", "shopify-development", "ai-automation"],
     relatedIndustrySlugs: ["ecommerce"],
-    relatedSlugs: ["ecommerce-product-feeds", "ai-search-visibility", "agentic-commerce"],
+    relatedSlugs: ["ecommerce-product-feeds", "ecommerce-product-information-management", "agentic-commerce"],
     faqs: [
       { q: "What product data matters for AI search?", a: "The same data that powers shopping search: clear titles, detailed descriptions, structured attributes, variants, identifiers such as brand and GTIN, price, availability, shipping, returns, images and genuine reviews." },
       { q: "How should product titles be written for AI search?", a: "Name the product type, brand and the key attributes that distinguish it, in plain language. Google Merchant Center allows up to 150 characters, but the important information should come first." },
@@ -204,6 +204,25 @@ export const commercePosts13: BlogPost[] = [
           "AI assistants and AI search features answer questions by matching constraints (budget, size, use, compatibility) against product facts. Products with complete, structured facts can match; products described vaguely can't. The same data also powers on-site search, filters, recommendations and shopping feeds, so the work pays off everywhere. See [[/blogs/ai-product-discovery|AI product discovery]].",
           "Google's guide to optimizing for its generative AI features (May 2026, updated July 2026) confirms the priority: no special files, chunking or schema are required, and Merchant Center feeds are named as a way to make products visible in AI responses and other results. Search Console's generative AI performance reports (June 2026) now show which product and category pages appear in AI Overviews and AI Mode. For the site-wide picture, including crawler access for ChatGPT, Claude and Perplexity, see [[/blogs/ai-search-visibility|how to make your website discoverable in AI search]].",
         ],
+      },
+      {
+        heading: "What Poor Product Data Breaks",
+        body: [
+          "Product data problems rarely show up as a single error. They show up as weak performance in several places at once, which is why they are easy to misdiagnose as a search, merchandising or ads problem.",
+        ],
+        table: {
+          headers: ["Data problem", "What it breaks"],
+          rows: [
+            ["Vague titles and descriptions", "AI answers and site search cannot match specific requests; ads and feeds underperform"],
+            ["Attributes in free text instead of fields", "Filters return incomplete results; comparisons and AI assistants miss products"],
+            ["Inconsistent units and values (\"Navy\", \"navy blue\", \"NB\")", "Filters split into duplicates; recommendations treat the same thing as different"],
+            ["Variants set up as separate products", "Reviews and sales history fragment; shopping systems see near-duplicates"],
+            ["Missing identifiers (brand, GTIN, MPN)", "Products are hard to match to the same item elsewhere"],
+            ["Wrong category", "Products are compared with the wrong alternatives and shown in the wrong filters"],
+            ["Price or stock that differs between page, schema and feed", "Feed disapprovals, wrong prices shown, lost trust"],
+            ["Missing fit, compatibility or ingredient facts", "More returns and support questions, and fewer AI recommendations"],
+          ],
+        },
       },
       {
         heading: "Titles",
@@ -255,6 +274,20 @@ export const commercePosts13: BlogPost[] = [
         ],
       },
       {
+        heading: "Using Shopify's Product Taxonomy and Metafields",
+        body: [
+          "On Shopify, assign every product a category from Shopify's Standard Product Taxonomy. The category unlocks category metafields: predefined, structured attributes such as colour, size, material or skin type with consistent values, which Shopify's filters, Search & Discovery and channel integrations can read. Use your own metafields for facts the taxonomy does not cover, defined with types and validation rather than free text.",
+          "Keep descriptions for explanation and persuasion, and put facts in fields. A fact that lives only inside a paragraph cannot drive a filter, a comparison table or a reliable answer from an AI assistant.",
+        ],
+      },
+      {
+        heading: "Indian Catalogues: Declarations and Marketplace Attributes",
+        body: [
+          "Brands selling in India have extra facts to manage. Legal Metrology rules require ecommerce listings of packaged goods to show declarations such as MRP, net quantity, manufacturer or importer details and country of origin, and a 2026 amendment requires a country-of-origin filter for imported goods. Storing these as structured fields, not as an image of the pack, keeps them consistent across your store, marketplaces and feeds.",
+          "Marketplaces such as Amazon, Flipkart, Myntra and Nykaa each have their own attribute requirements and value lists. Mapping your attributes to theirs from one source of truth is easier than maintaining separate spreadsheets per channel, and is often the point at which a [[/blogs/ecommerce-product-information-management|PIM system]] starts to pay for itself.",
+        ],
+      },
+      {
         heading: "Offer Data",
         body: [
           "Price, availability, shipping cost and speed, returns policy and condition are what shoppers ask about most after suitability. Keep them identical across your pages, structured data and feeds, and update feeds when they change. Mismatches cause disapprovals and send shoppers to a different price than they were shown.",
@@ -283,6 +316,8 @@ export const commercePosts13: BlogPost[] = [
           "Price and availability parity between page, schema and feeds",
           "Support questions and site searches mined for missing facts",
           "Variant grouping and identifiers validated",
+          "Category assigned and category metafields filled for every product (Shopify)",
+          "Mandatory declarations present as structured fields for packaged goods (India)",
         ],
         cta: {
           title: "Want product data that works in every channel?",

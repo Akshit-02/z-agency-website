@@ -231,6 +231,7 @@ export const auSaasGrowthPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "A SaaS pricing page converts better when it reduces uncertainty: clear plans, predictable metrics, honest comparisons, transparent tax and fees, real deadlines and a fair way out. Start with the review checklist above, fix anything in the dark patterns table, then check the rules for each market you sell to. Test presentation carefully, treat price changes as business decisions, and measure retention as well as sign-ups.",
+          "For pricing AI features (usage, credits and outcomes), see [[/blogs/ai-saas-pricing-models|AI SaaS pricing models]].",
         ],
         cta: {
           title: "Want a second look at your pricing page?",

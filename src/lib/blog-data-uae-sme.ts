@@ -20,10 +20,10 @@ import type { BlogPost } from "./blog-data";
 export const uaeSmePosts: BlogPost[] = [
   {
     slug: "digital-transformation-uae-smes",
-    title: "Digital Transformation for UAE SMEs: A Practical 2026 Roadmap",
-    seoTitle: "Digital Transformation for UAE SMEs: 2026 Roadmap",
+    title: "Digital Transformation for UAE SMEs: A Practical Roadmap",
+    seoTitle: "Digital Transformation for UAE SMEs: A Practical Roadmap",
     excerpt:
-      "A practical 2026 roadmap for UAE SMEs: where to start, what to automate, build vs buy, e-invoicing deadlines, a 90-day plan and how to calculate ROI in AED.",
+      "A practical roadmap for UAE SMEs: where to start, what to automate, build vs buy, e-invoicing deadlines, a 90-day plan and how to calculate ROI in AED.",
     category: "AI & Automation",
     banner: "roadmap",
     sceneKind: "roadmap",
@@ -752,10 +752,10 @@ export const uaeSmePosts: BlogPost[] = [
   // published marketing figures, reviewed Oct 2026.
   {
     slug: "web-development-abu-dhabi",
-    title: "Web Development Abu Dhabi: Complete Guide for Businesses in 2026",
-    seoTitle: "Web Development Abu Dhabi: 2026 Guide for Businesses",
+    title: "Web Development in Abu Dhabi: A Complete Guide for Businesses",
+    seoTitle: "Web Development Abu Dhabi: A Complete Guide for Businesses",
     excerpt:
-      "Web development in Abu Dhabi explained: websites vs web apps, portals, UAE PASS, ADHICS, Arabic/RTL, hosting, technology choices and checklists for 2026.",
+      "Web development in Abu Dhabi explained: websites vs web apps, portals, UAE PASS, ADHICS, Arabic/RTL, hosting, technology choices and practical checklists.",
     category: "Web Development",
     banner: "archstack",
     sceneKind: "code",
@@ -1068,7 +1068,7 @@ export const uaeSmePosts: BlogPost[] = [
   {
     slug: "agentic-ai-uae",
     title: "Agentic AI for UAE Businesses: What It Means and How Companies Can Start",
-    seoTitle: "Agentic AI for UAE Businesses: How to Start in 2026",
+    seoTitle: "Agentic AI in Dubai and the UAE: Use Cases and How to Start",
     excerpt:
       "What agentic AI means for UAE businesses, how it differs from chatbots and automation, Dubai's 2026 programme, use cases, readiness, costs and first steps.",
     category: "AI & Automation",

@@ -312,6 +312,7 @@ export const commercePosts28: BlogPost[] = [
   {
     slug: "b2b-ecommerce-website-design",
     title: "B2B Ecommerce Website Design: Features, UX and Best Practices",
+    seoTitle: "B2B Ecommerce Website Design and Development: Features and UX",
     excerpt:
       "How to design a B2B ecommerce website: account-aware pages, catalogs and specs, price display, quick order, quotes, approvals, account areas and design system.",
     category: "UI/UX",

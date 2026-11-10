@@ -162,9 +162,9 @@ export const agentOpsPosts1: BlogPost[] = [
   {
     slug: "ai-agent-rollback",
     title: "AI Agent Rollback: How to Safely Undo Autonomous Actions",
-    seoTitle: "AI Agent Rollback: How to Safely Undo Autonomous Actions",
+    seoTitle: "AI Rollback: How to Undo AI Agent Actions Safely",
     excerpt:
-      "How to reverse or compensate for AI agent actions: transactions, compensating actions, versioning, idempotency, and what to do when an action cannot be undone.",
+      "AI rollback explained: how to reverse or compensate for AI agent actions with transactions, versioning, idempotency and approvals, and what to do if you can't.",
     category: "AI & Automation",
     banner: "rollbacktree",
     sceneKind: "workflow",

@@ -393,6 +393,7 @@ export const aiAppsPosts7: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Computer vision works when the task is well chosen, data reflects reality, evaluation is per class and deployment fits the environment. Related: [[/blogs/ai-image-recognition|AI image recognition]] and [[/blogs/multimodal-ai-applications|multimodal AI]].",
+          "For defect detection on production lines specifically, see [[/blogs/ai-visual-quality-inspection|AI visual quality inspection for manufacturing]].",
         ],
       },
     ],

@@ -19,19 +19,20 @@ import type { BlogPost } from "./blog-data";
 export const auFintechSecurityPosts: BlogPost[] = [
   {
     slug: "payment-reconciliation-automation",
-    title: "Payment Reconciliation Automation: Matching Orders, Payouts, Bank Deposits and the Ledger",
-    seoTitle: "Payment Reconciliation Automation: A Practical Guide",
+    title: "Payment Reconciliation Software: Automating Matching Across Multiple Payment Gateways",
+    seoTitle: "Payment Reconciliation Software for Multiple Gateways: A Guide",
     excerpt:
-      "How to automate payment reconciliation: matching orders to provider transactions, payouts, bank deposits and the ledger, with fees, refunds and GST.",
+      "How to build payment reconciliation software for several gateways: settlement data, matching rules, fees and GST, refunds, chargebacks and exceptions.",
     category: "Web Development",
     banner: "invoicematch",
     sceneKind: "orders",
     bannerAlt: "Orders and invoices matched to payment provider transactions, grouped into payouts, matched to bank deposits and posted to the accounting ledger, with an exceptions queue",
     date: "2026-10-10",
-    readingTime: "4 min read",
+    updated: "2026-11-10",
+    readingTime: "11 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["ecommerce", "saas-technology", "retail", "professional-services", "fintech"],
-    relatedSlugs: ["accounting-software-integration-australia", "payment-gateway-integration-australia", "api-integration-reliability"],
+    relatedSlugs: ["accounting-software-integration-australia", "marketplace-payment-architecture", "digital-lending-platform-development"],
     faqs: [
       {
         q: "What is payment reconciliation?",
@@ -50,6 +51,14 @@ export const auFintechSecurityPosts: BlogPost[] = [
         a: "Partly. Xero, MYOB and others reconcile bank feeds against ledger entries and some payment providers offer integrations. Custom automation helps when you have several providers or channels, high volumes, marketplace splits or complex refunds that the standard integrations do not explain.",
       },
       {
+        q: "Why is reconciliation harder with several payment gateways?",
+        a: "Each gateway uses its own identifiers, report formats, fee structures and settlement timing. One may settle daily with a bank reference number, another in weekly payouts with its own payout ID, and a third through a daily settlement file. Reconciliation software has to normalise all of them into one model before it can match anything.",
+      },
+      {
+        q: "Should we build reconciliation software or buy it?",
+        a: "Buy when you use common gateways and your accounting is standard; many reconciliation products cover that well. Build, or extend, when you have marketplace splits, lending or wallet flows, unusual ledgers, very high volumes or gateways and banks the products don't support.",
+      },
+      {
         q: "What should happen to unmatched items?",
         a: "They go to an exceptions queue with the evidence attached and a reason code, for a person to resolve. Track how many exceptions arise and why, and fix the causes, such as missing references or timing rules.",
       },
@@ -58,7 +67,7 @@ export const auFintechSecurityPosts: BlogPost[] = [
       {
         heading: "How do you automate payment reconciliation?",
         body: [
-          "**Pull data from every source (orders or invoices, payment provider transactions and payouts, bank feeds and the ledger), match each layer with clear rules (exact references first, then amounts and dates within tolerances, including many-to-one matches), record fees, refunds, chargebacks and GST explicitly, post summarised entries to the accounting system, and route anything unmatched to an exceptions queue with evidence.** Good reconciliation explains every dollar between the sale and the bank.",
+          "**Pull data from every source (orders or invoices, payment provider transactions and payouts, bank feeds and the ledger), match each layer with clear rules (exact references first, then amounts and dates within tolerances, including many-to-one matches), record fees, refunds, chargebacks and GST explicitly, post summarised entries to the accounting system, and route anything unmatched to an exceptions queue with evidence.** Good reconciliation explains every payment between the sale and the bank, however many gateways it passed through.",
           "This guide is for finance, operations and engineering teams in ecommerce, SaaS and service businesses. For connecting accounting systems, see [[/blogs/accounting-software-integration-australia|accounting software integration]].",
         ],
       },
@@ -88,6 +97,51 @@ export const auFintechSecurityPosts: BlogPost[] = [
         },
       },
       {
+        heading: "Why several gateways make it harder",
+        body: [
+          "Many businesses add gateways over time: one for cards, another with better UPI or wallet success rates, PayPal for international buyers, a buy-now-pay-later provider, and a lending or EMI partner. Each brings its own identifiers, report formats, fee and tax lines, refund behaviour and settlement timing. Reconciling them one by one in spreadsheets stops scaling quickly.",
+          "Gateways expose settlement data differently. These examples come from each provider's documentation, checked in November 2026:",
+        ],
+        table: {
+          headers: ["Provider", "Settlement data available", "Key to the bank"],
+          rows: [
+            ["**Stripe**", "Balance transactions filterable by payout, with fee details; a payout reconciliation report; a webhook when a payout's transactions are ready", "Payout ID and amount"],
+            ["**Razorpay**", "Settlement reconciliation API listing payments, refunds, transfers and adjustments with fee and tax; settlement webhooks", "UTR (bank reference) on each settlement"],
+            ["**Cashfree**", "Settlement reconciliation API filterable by settlement ID, UTR or date, with separate vendor (split) reconciliation", "UTR"],
+            ["**PayPal**", "Daily reports by SFTP; PayPal now recommends its balance reconciliation report for most merchants, with transaction event codes for refunds and chargebacks", "Transfer to bank"],
+          ],
+        },
+      },
+      {
+        heading: "One normalised data model",
+        body: [
+          "The core of reconciliation software is a common model that every gateway's data is translated into, so matching rules are written once.",
+        ],
+        table: {
+          headers: ["Entity", "Holds"],
+          rows: [
+            ["**Expected payment**", "What should have been paid: order, invoice, subscription charge or loan instalment, with amount, currency and due date"],
+            ["**Gateway transaction**", "Each payment, refund, chargeback, fee, tax and adjustment as reported by the provider, with the provider's IDs and the raw record kept"],
+            ["**Settlement or payout**", "Each batch the provider paid out, with its reference (payout ID, settlement ID or UTR), gross, fees, tax and net"],
+            ["**Bank line**", "Each credit and debit on the bank statement, from bank feeds or statement files"],
+            ["**Match**", "Links between the records above, with the rule that matched them, who approved it and when"],
+            ["**Exception**", "Anything unmatched or mismatched, with a reason code, owner and resolution"],
+          ],
+        },
+      },
+      {
+        heading: "Architecture",
+        body: [],
+        checklist: [
+          "**Connectors per source** that pull from APIs, receive webhooks or read report files on a schedule, keep the raw data, and can safely re-run without creating duplicates",
+          "**A normalisation step** that maps each provider's fields, currencies, time zones and sign conventions into the common model",
+          "**A rules-based matching engine** that runs exact matches first, then tolerance and many-to-one matches, and records which rule produced each match",
+          "**An exceptions workspace** where finance staff see evidence side by side, resolve items and leave notes",
+          "**Ledger posting** of summarised journals (sales, fees, taxes, refunds, chargebacks) to the accounting system or ERP through clearing accounts",
+          "**Monitoring** that alerts when a source stops sending data or match rates drop, before month-end finds it",
+        ],
+      },
+      {
         heading: "Matching rules",
         body: [],
         checklist: [
@@ -103,6 +157,13 @@ export const auFintechSecurityPosts: BlogPost[] = [
         heading: "Fees, refunds, chargebacks and GST",
         body: [
           "Record sales gross and provider fees as expenses, using a clearing account for money held by the provider. Refunds reverse sales and may arrive in different payouts from the original sale. Chargebacks need their own status and evidence workflow. Apply the correct GST treatment to sales, refunds and fees, and confirm it with your accountant. In accounting software, bank reconciliation then matches the payout deposit against the clearing account.",
+        ],
+      },
+      {
+        heading: "Notes for Indian businesses",
+        body: [
+          "Indian payment gateways generally charge GST at 18% on their fees rather than on the payment amount, so fee and tax lines need separate treatment when posting to the ledger. Under the RBI's Payment Aggregator Directions (September 2025), non-bank aggregators hold merchant funds in escrow, and settlement timing to merchants follows the agreement between the aggregator and the merchant, so read your contracts rather than assuming a fixed cycle.",
+          "UPI's multiple daily settlement cycles are interbank settlements between banks, not the timing of your payout from a gateway. Reconcile against the gateway's settlement references (usually the UTR) and your bank statement, not against UPI cycle times. Businesses collecting loan repayments through eNACH and UPI AutoPay mandates have an extra layer: matching each debit to an instalment in the loan ledger; see [[/blogs/digital-lending-platform-development|digital lending platform development]].",
         ],
       },
       {
@@ -819,6 +880,7 @@ export const auFintechSecurityPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Software supply chain security combines careful dependency management, hardened builds, SBOMs and provenance. Start with lockfiles, alerts and CI least privilege, generate SBOMs on every build, then add signing and provenance.",
+          "Cryptographic libraries are part of this inventory; see [[/blogs/post-quantum-cryptography-readiness|post-quantum cryptography readiness]].",
         ],
         cta: {
           title: "Customers asking about SBOMs?",

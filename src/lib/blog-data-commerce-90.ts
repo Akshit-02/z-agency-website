@@ -196,6 +196,7 @@ export const commercePosts90: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Subscription billing is a set of small, explicit systems: catalog, states, schedules, invoices, tax, payments and events. Make each idempotent and auditable, and test with simulated time. Related: [[/blogs/ecommerce-recurring-payments|recurring payments]], [[/blogs/subscription-management-portal|subscription portal]] and [[/blogs/subscription-ecommerce-retention|subscription retention]].",
+          "For usage, credit and outcome-based pricing of AI features, see [[/blogs/ai-saas-pricing-models|AI SaaS pricing models]].",
         ],
       },
     ],

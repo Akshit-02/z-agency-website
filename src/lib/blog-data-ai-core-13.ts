@@ -211,6 +211,7 @@ export const aiCorePosts13: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Prompt injection is an architectural problem. Assume models can be manipulated, and design permissions, approvals, validation and monitoring so manipulation cannot become harm. Related: [[/blogs/ai-agent-guardrails|guardrails]], [[/blogs/mcp-security|MCP security]] and [[/blogs/ai-agent-evaluation|evaluation]].",
+          "For a related risk, attackers or bugs running up AI costs, see [[/blogs/ai-cost-abuse-protection|AI cost abuse protection]].",
         ],
       },
     ],

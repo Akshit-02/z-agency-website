@@ -931,8 +931,8 @@ export const commercePosts54: BlogPost[] = [
   {
     slug: "ecommerce-data-warehouse",
     title: "Ecommerce Data Warehouse: When Does an Online Store Need One?",
-    seoTitle: "Ecommerce Data Warehouse: When Does a Store Need One?",
-    excerpt: "A store needs a data warehouse when key questions span several tools, such as profit by channel or lifetime value. Signs you need one, when to wait, and costs.",
+    seoTitle: "When Does an Ecommerce Brand Need a Data Warehouse?",
+    excerpt: "An ecommerce brand needs a data warehouse when key questions, like profit by channel or lifetime value, span several tools. Signs, when to wait and costs.",
     category: "Web Development",
     banner: "warehousearch",
     bannerAlt:

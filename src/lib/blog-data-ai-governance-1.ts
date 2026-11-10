@@ -241,24 +241,26 @@ Incident response   Can we stop it, reverse it and learn from it?`,
   {
     slug: "ai-control-plane",
     title: "AI Control Plane: What Organizations Need to Manage Many AI Agents",
-    seoTitle: "AI Control Plane: How to Manage Many AI Agents in One Place",
+    seoTitle: "AI Agent Control Plane: Build vs Buy, Architecture, Lifecycle",
     excerpt:
-      "What an AI control plane is, how it differs from the data plane and orchestration, what it should manage, and when an organization actually needs one.",
+      "What an AI agent control plane is, how it differs from orchestration and workflow tools, the agent lifecycle, and whether to buy a platform or build your own.",
     category: "AI & Automation",
     banner: "controlplanemap",
     sceneKind: "pipeline",
     bannerAlt:
       "Control plane vs data plane: Control plane (highlighted: registry, identity, policy, cost and budgets, lifecycle) and Data plane (agents, model gateway, tool gateway, business systems); configuration flows down and telemetry flows up.",
     date: "2026-10-08",
-    readingTime: "5 min read",
+    updated: "2026-11-10",
+    readingTime: "10 min read",
     relatedServiceSlugs: ["ai-automation"],
     relatedIndustrySlugs: ["b2b-enterprise", "fintech", "saas-technology"],
-    relatedSlugs: ["ai-agent-governance", "ai-platform-engineering", "mcp-governance"],
+    relatedSlugs: ["ai-agent-governance", "ai-agent-access-control", "ai-agent-observability"],
     faqs: [
       { q: "What is an AI control plane?", a: "A management layer that provides visibility, identity, access control, policy enforcement, monitoring, cost tracking and lifecycle management across an organization's AI agents and their tools, separate from the systems that actually run the agents' work." },
       { q: "What is the difference between the control plane and the data plane?", a: "The data plane is where work happens: agents run, call models and tools, and change business systems. The control plane decides and records what is allowed: which agents exist, their identities and permissions, policies, budgets and versions, and it collects telemetry from the data plane." },
       { q: "Is an AI control plane the same as orchestration?", a: "No. Orchestration coordinates the steps of a task. A control plane governs the population of agents: inventory, identity, policy, cost and lifecycle, regardless of how each agent orchestrates its work." },
       { q: "Does every company need an AI control plane?", a: "No. With a handful of agents built by one team, a shared inventory, identity provider, gateway and logging are enough. A dedicated control plane becomes worthwhile when many agents, teams, vendors and tools make central visibility and policy hard to maintain." },
+      { q: "Should we buy an enterprise agent platform or build our own control plane?", a: "Buy the layers that are commodity or tied to an ecosystem you already use, such as agent identity in your identity provider, the governance features of your main cloud or productivity platform, and observability tooling. Build the parts that are specific to you: tools and connectors for your own systems, approval rules, evaluation suites and a registry view that spans every vendor. Compare the total cost over two to three years, including per-user or per-agent licences, usage-based charges, integration work and the people needed to run it, rather than licence prices alone." },
       { q: "Can we buy a control plane?", a: "Partly. Major platforms now offer agent registries and governance features for their ecosystems; Microsoft, for example, describes Agent 365 as a control plane for AI agents. Most organizations still combine vendor features with their identity provider, gateways and internal tooling." },
     ],
     content: [
@@ -323,10 +325,54 @@ Incident response   Can we stop it, reverse it and learn from it?`,
         ],
       },
       {
+        heading: "Control plane vs chatbot, workflow tool and orchestration framework",
+        body: [
+          "These are often confused because vendors bundle them together. The difference is what each one is responsible for.",
+        ],
+        table: {
+          headers: ["", "What it does", "Scope"],
+          rows: [
+            ["**Chatbot or assistant**", "Talks to users and answers questions, sometimes with tools", "One application"],
+            ["**Workflow automation tool**", "Runs predefined sequences of steps, sometimes with an AI step", "One process at a time"],
+            ["**Orchestration framework**", "Coordinates how an agent or group of agents plans, calls tools and passes work between them", "One agent system"],
+            ["**Control plane**", "Registers every agent, gives each an identity and permissions, enforces policy, tracks cost and behaviour, manages versions and retirement", "Every agent across teams and vendors"],
+          ],
+        },
+      },
+      {
+        heading: "The agent lifecycle a control plane manages",
+        body: [],
+        checklist: [
+          "**Register:** an owner, purpose, risk level, the data it touches and the tools it may call",
+          "**Review:** security and risk review proportionate to what the agent can do, with evaluation results attached",
+          "**Issue identity and permissions:** a distinct identity per agent, least-privilege access to tools and data, and human approval rules for high-impact actions; see [[/blogs/ai-agent-access-control|AI agent access control]]",
+          "**Deploy:** a versioned release of prompts, models, tools and policies, with the ability to roll back",
+          "**Monitor:** actions, errors, cost and quality per agent, with alerts; see [[/blogs/ai-agent-observability|AI agent observability]]",
+          "**Change:** new versions go through the same review and evaluation, proportionate to the change",
+          "**Retire:** revoke identity and credentials, archive logs, and remove the agent from the registry",
+        ],
+      },
+      {
         heading: "Build, buy or assemble",
         body: [
-          "Large platforms increasingly ship control-plane features for their own ecosystems. Microsoft describes Agent 365 as a control plane for AI agents, with a registry, access control, visualization, interoperability and security, and builds agent identities into Entra Agent ID. Developer tool vendors add central policies such as enterprise MCP allowlists. Most organizations end up assembling: vendor controls inside each ecosystem, a central identity provider, gateways for models and tools, and an internal registry and dashboards that span everything. See [[/blogs/ai-platform-engineering|AI platform engineering]] for the shared infrastructure side.",
+          "The large platforms now ship control-plane features for their own ecosystems. Examples available in 2026 include Microsoft Agent 365 with Entra Agent ID for agent identities, Amazon Bedrock AgentCore with components for agent identity, tool gateways and observability, and Google's Gemini Enterprise Agent Platform with an agent registry. Open protocols help too: the Model Context Protocol, now governed under the Linux Foundation's Agentic AI Foundation, standardises how agents connect to tools, and the Agent2Agent (A2A) protocol, also under the Linux Foundation, covers communication between agents.",
+          "Most organisations end up assembling: vendor controls inside each ecosystem, their central identity provider, gateways for models and tools, and an internal registry and dashboards that span everything. See [[/blogs/ai-platform-engineering|AI platform engineering]] for the shared infrastructure side.",
         ],
+        table: {
+          headers: ["Layer", "Usually buy or reuse", "Usually build"],
+          rows: [
+            ["**Identity**", "Your identity provider's agent identity features", "Mapping agents to owners and business roles"],
+            ["**Registry**", "The registry in your main platform", "A cross-vendor view if you use several platforms"],
+            ["**Tool access**", "Standard protocols such as MCP and vendor gateways", "Connectors and tools for your own systems"],
+            ["**Policy and approvals**", "Platform policy features where they fit", "Business-specific approval rules and thresholds"],
+            ["**Observability and cost**", "Existing observability tools", "Cost attribution to teams, products and outcomes"],
+            ["**Evaluation**", "Evaluation frameworks and platform features", "Test suites built on your own tasks and data"],
+          ],
+        },
+        callout: {
+          type: "tip",
+          text: "When comparing a platform with an in-house build, cost both over two to three years: per-user or per-agent licences, usage charges, integration and migration work, and the people needed to operate it. Ask how easily agents, logs and policies could be moved if you change platform.",
+        },
       },
       {
         heading: "When you actually need one",

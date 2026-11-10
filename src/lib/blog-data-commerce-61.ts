@@ -14,15 +14,16 @@ export const commercePosts61: BlogPost[] = [
   // ---------------------------------------- 357 · ECOMMERCE SECURITY
   {
     slug: "ecommerce-security",
-    title: "Ecommerce Security: How to Protect Your Store, Customers and Payments",
-    seoTitle: "Ecommerce Security: Protect Your Store, Customers, Payments",
-    excerpt: "Ecommerce security in layers: staff accounts, customer accounts, payments and scripts, platform and apps, data protection, monitoring, incident response and testing.",
+    title: "Ecommerce Website Security: How to Protect Customer Data, Payments and Orders",
+    seoTitle: "Ecommerce Website Security: Protect Data, Payments and Orders",
+    excerpt: "Ecommerce website security in layers: accounts, payments and scripts, platform and apps, data, monitoring and incident response, plus Indian obligations.",
     category: "Web Development",
     banner: "securityarch",
     bannerAlt:
       "Ecommerce security layers in four columns: accounts (MFA for staff, least privilege, bot protection, session security), payments (hosted checkout, no card storage, script control, fraud tools, highlighted), platform (patches and updates, app review, secrets management, security headers) and operations (backups, monitoring, incident plan, specialist testing).",
     date: "2026-09-29",
-    readingTime: "18 min read",
+    updated: "2026-11-10",
+    readingTime: "21 min read",
     relatedServiceSlugs: ["website-development", "shopify-development", "ai-automation"],
     relatedIndustrySlugs: ["ecommerce", "retail", "d2c-consumer"],
     faqs: [
@@ -136,6 +137,30 @@ export const commercePosts61: BlogPost[] = [
           "Incident response plan with named roles and contacts",
           "Legal advice identified for breach notification",
           "Post-incident review process",
+        ],
+      },
+      {
+        heading: "What the Platform Covers, and What You Still Own",
+        body: [
+          "Hosted platforms such as Shopify run and patch the infrastructure, host a PCI-compliant checkout and protect against many large-scale attacks. They do not secure your staff accounts, the apps you install, the scripts you add, the data you export or the integrations you build. No platform makes a store completely secure; the split of responsibility is what matters.",
+        ],
+        table: {
+          headers: ["Usually handled by a hosted platform", "Still your responsibility"],
+          rows: [
+            ["Servers, patching and platform availability", "Two-step sign-in and access for every staff and collaborator account"],
+            ["Hosted checkout and card data handling", "Scripts and pixels on your storefront, and what they collect"],
+            ["Core platform vulnerabilities", "Apps you install, their permissions and their removal"],
+            ["DDoS and some bot mitigation", "Custom apps, integrations, API keys and webhooks"],
+            ["Platform audit and activity logs", "Reviewing those logs, and customer data exported to spreadsheets, CRMs and ad platforms"],
+          ],
+        },
+      },
+      {
+        heading: "Security Obligations for Stores in India",
+        body: [
+          "Indian businesses have a few specific obligations alongside general good practice. CERT-In's directions of 28 April 2022 require body corporates and service providers to report specified cyber security incidents within six hours of noticing them, keep logs of their ICT systems for 180 days within India, and synchronise system clocks with the official NTP servers. From 13 May 2027, the DPDP Rules add reasonable security safeguards for personal data and breach notices to affected customers and the Data Protection Board.",
+          "On payments, RBI's tokenisation rules mean merchants must not store card numbers; saved cards live with the payment gateway or card network as tokens. That reduces what an attacker can steal from your systems, but your checkout pages and scripts still matter: PCI DSS v4.0.1 requirements on managing payment-page scripts and detecting unauthorised changes became mandatory on 31 March 2025.",
+          "On Shopify, two-step sign-in is set per user, and stores on Plus can require it for everyone. Collaborator accounts for agencies need your approval code and must use two-step sign-in, and each app's page shows its permissions and, after 30 days, any unused access, which is a good prompt to remove apps you no longer need. Privacy obligations are covered in [[/blogs/ecommerce-privacy-customer-data|ecommerce privacy and cookie consent]].",
         ],
       },
       {
@@ -425,18 +450,22 @@ export const commercePosts61: BlogPost[] = [
   // ---------------------------------------- 359 · PRIVACY AND CUSTOMER DATA
   {
     slug: "ecommerce-privacy-customer-data",
-    title: "Ecommerce Privacy: How to Handle Customer Data Responsibly",
-    seoTitle: "Ecommerce Privacy: Handling Customer Data Responsibly",
-    excerpt: "How online stores handle customer data responsibly: data mapping, purposes, consent and cookies, notices, rights requests, vendors, retention, security and AI.",
+    title: "Ecommerce Privacy and Cookie Consent: How to Handle Customer Data Responsibly, Including in India",
+    seoTitle: "Ecommerce Privacy and Cookie Consent: India and Beyond",
+    excerpt: "Ecommerce privacy and cookie consent: data mapping, consent, notices, rights and retention, plus what Indian stores should implement for the DPDP Act and Rules.",
     category: "Web Development",
     banner: "privacyflow",
     bannerAlt:
       "Customer data lifecycle flow: collect, purpose and consent (highlighted), store, use, share, and retain or delete, noting to map every data flow before deciding what the law requires of it.",
     date: "2026-09-29",
-    readingTime: "18 min read",
+    updated: "2026-11-10",
+    readingTime: "23 min read",
     relatedServiceSlugs: ["website-development", "shopify-development", "cro-audit"],
     relatedIndustrySlugs: ["ecommerce", "retail", "d2c-consumer"],
+    relatedSlugs: ["analytics-consent-checks", "ecommerce-security", "ecommerce-compliance"],
     faqs: [
+      { q: "Do Indian online stores need a cookie consent banner?", a: "India's DPDP Act and Rules do not mention cookies by name, but cookies and tags that process personal data are covered, and consent must be free, specific, informed and given with a clear affirmative action. In practice most stores using analytics, advertising or personalisation tags need a consent mechanism that blocks those tags until the visitor chooses. Shopify's cookie banner can be enabled for India. Get legal advice for your specific setup." },
+      { q: "When do the DPDP Rules apply?", a: "In stages. The consent manager provisions apply from 13 November 2026, and the main obligations, including notices, security safeguards, breach reporting, retention and children's data, from 13 May 2027." },
       { q: "What customer data do online stores typically hold?", a: "Names, emails, phone numbers, addresses, order history, payment tokens (not card numbers when using a payment provider), account data, browsing and marketing data, support conversations and sometimes sizes or preferences." },
       { q: "Which privacy laws apply to my store?", a: "It depends on where you're established, where your customers are and what you do with data. Examples include the EU GDPR, the UK GDPR, California's CCPA as amended by the CPRA, other US state laws and national laws elsewhere. Get legal advice for your situation." },
       { q: "Do I need consent for cookies?", a: "In some jurisdictions, such as the EU and UK, consent is generally required for non-essential cookies and similar tracking. Elsewhere, rules differ. Configure your consent tool to match the rules for your markets." },
@@ -502,6 +531,34 @@ export const commercePosts61: BlogPost[] = [
         cta: {
           title: "Not sure where your customer data goes?",
           description: "ZSpace Labs maps ecommerce data flows, configures consent across tools and cleans up tracking you don't need.",
+        },
+      },
+      {
+        heading: "What Indian Online Stores Should Implement",
+        body: [
+          "India's Digital Personal Data Protection Act, 2023 and the DPDP Rules, 2025 apply to the personal data an Indian online store collects. The Rules come into force in stages: the provisions on consent managers apply from 13 November 2026, and the notice, security, breach, retention and children's data provisions from 13 May 2027. This section describes technical implementation, not legal advice; confirm what applies to your business with a lawyer.",
+          "**Consent.** Where you rely on consent, the Act requires it to be free, specific, informed, unconditional and unambiguous, given with a clear affirmative action (section 6). In practice that means unticked boxes, separate choices for separate purposes (order updates are not the same as marketing), and a way to withdraw that is as easy as giving consent.",
+          "**Notice.** The consent request must be accompanied or preceded by a notice describing the personal data and the purpose, how to withdraw consent and how to complain to the Data Protection Board (section 5). Customers must be able to read it in English or any of the languages in the Eighth Schedule to the Constitution.",
+          "**Cookies.** Neither the Act nor the Rules mention cookies specifically. Cookies and similar technologies fall within the law where they process personal data, which most analytics, advertising and personalisation tags do. A banner that loads tags before the visitor chooses, or offers only \"Accept\", does not meet the consent standard above. On Shopify, the built-in cookie banner shows to UK and EEA visitors by default, but you can choose to show it in any region, including India, and the Customer Privacy API lets apps and tags respect the choice.",
+          "**Breaches.** From May 2027, a personal data breach must be reported to affected customers without delay and to the Data Protection Board, with a detailed report within 72 hours. Separately, CERT-In's 2022 directions already require cyber security incidents to be reported within six hours.",
+          "**Children.** Processing a child's data (under 18 in the Act) needs verifiable parental consent. Stores selling toys, school supplies or teen products should design account creation with this in mind.",
+          "**Retention.** The Rules set specific erasure periods for some large platforms, including e-commerce entities with at least two crore registered users in India; smaller stores still need a retention policy based on purpose. Processing logs must be kept for at least one year.",
+        ],
+        table: {
+          headers: ["What to build", "Why"],
+          rows: [
+            ["Separate, unticked consent choices at signup and checkout", "Specific, affirmative consent per purpose"],
+            ["Notice in plain language, available in English and relevant Indian languages", "Notice requirement and language option"],
+            ["Tags blocked until consent; consent state passed to analytics and ad tools", "Cookies that process personal data need valid consent"],
+            ["Self-service withdrawal and preference centre", "Withdrawal as easy as giving consent"],
+            ["Consent records with time, source and notice version", "Evidence if challenged"],
+            ["Breach runbook covering CERT-In (6 hours) and DPDP notices", "Two different reporting regimes"],
+            ["Retention schedule and deletion jobs", "Purpose limitation and Rule-based erasure"],
+          ],
+        },
+        callout: {
+          type: "note",
+          text: "Consent screens are also covered by India's consumer protection rules on dark patterns. The CCPA's 2023 guidelines list patterns such as interface interference and nagging, and the Consumer Protection (E-Commerce) (Amendment) Rules, 2026, in force from 1 January 2027, require a yearly self-audit for dark patterns and a displayed certificate of compliance. A banner that hides the reject option or keeps asking fails on both counts.",
         },
       },
       {

@@ -16,7 +16,7 @@ import { ORG_ID, WEBSITE_ID } from "@/lib/seo";
 export const metadata: Metadata = {
   title: { absolute: "About ZSpace Labs — A Technology and Digital Product Studio" },
   description:
-    "ZSpace Labs is a technology and digital product studio working with clients in India, the UAE, the UK, Australia and Singapore, with strategy, design and engineering in one team.",
+    "A technology and digital product studio for clients in India, the UAE, the UK, Australia and Singapore, with strategy, design and engineering in one team.",
   alternates: { canonical: "/about" },
 };
 

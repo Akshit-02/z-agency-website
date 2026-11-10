@@ -124,7 +124,9 @@ export const auSectorPlatformPosts: BlogPost[] = [
       },
       {
         heading: "When an MES is justified",
-        body: [],
+        body: [
+          "If the signals point to an MES, [[/blogs/mes-development|MES development]] explains the modules, architecture and a phased rollout.",
+        ],
         table: {
           headers: ["Signal", "Suggests"],
           rows: [

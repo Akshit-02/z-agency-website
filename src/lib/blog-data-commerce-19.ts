@@ -382,7 +382,7 @@ export const commercePosts19: BlogPost[] = [
   {
     slug: "wholesale-ecommerce-website",
     title: "Wholesale Ecommerce Website: How to Build a Better B2B Ordering Experience",
-    seoTitle: "Wholesale Ecommerce Website: Pricing, Minimums and Reorders",
+    seoTitle: "Wholesale Ecommerce Website Development: Pricing, MOQs, Reorders",
     excerpt:
       "How to build a wholesale ecommerce website for retailers and trade buyers: applications, wholesale pricing, case packs, minimums, pre-orders, terms and reorders.",
     category: "Shopify & Ecommerce",

@@ -290,7 +290,7 @@ export const webDevPosts4: BlogPost[] = [
       {
         heading: "Conclusion",
         body: [
-          "A SaaS website has to work harder than a typical business site — explaining an often-abstract product, supporting the right conversion path for its price point, and maintaining the technical credibility its own product is selling. Get positioning, pricing clarity and the signup or demo flow right, and the rest of the site can be comparatively simple. The marketing site and the product itself are different builds; [[/blogs/custom-website-vs-web-application|this comparison of websites and web applications]] explains where one ends and the other begins. For launch week itself, see the [[/blogs/b2b-saas-launch-plan|B2B SaaS launch plan]].",
+          "A SaaS website has to work harder than a typical business site — explaining an often-abstract product, supporting the right conversion path for its price point, and maintaining the technical credibility its own product is selling. Get positioning, pricing clarity and the signup or demo flow right, and the rest of the site can be comparatively simple. The marketing site and the product itself are different builds; [[/blogs/custom-website-vs-web-application|this comparison of websites and web applications]] explains where one ends and the other begins. For launch week itself, see the [[/blogs/b2b-saas-launch-plan|B2B SaaS launch plan]]; if your buyers are US businesses, [[/blogs/saas-product-development-usa|what a SaaS product needs for the US market]] covers SSO, SOC 2, state privacy laws and sales tax.",
         ],
       },
     ],
@@ -604,6 +604,7 @@ export const webDevPosts4: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "A real estate website succeeds by combining genuinely useful search and browsing with real, credible relationship signals — accurate listings, working filters and maps, and agent profiles that build trust, all connected to a CRM so real interest turns into a timely follow-up.",
+          "To manage the enquiries your website generates, see [[/blogs/real-estate-crm-development|real estate CRM development]].",
         ],
       },
     ],
@@ -705,6 +706,7 @@ export const webDevPosts4: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "A healthcare website succeeds by making care genuinely easy to find and access — clear services and provider information, accessible design for a broad patient audience, low-friction appointment paths, and careful, privacy-conscious handling of any personal information the site collects. For patient apps and connecting clinical systems in Australia, see [[/blogs/telehealth-app-development-australia|telehealth app development]] and [[/blogs/healthcare-software-integration-australia|healthcare software integration]].",
+          "If you need clinical and operational software rather than a marketing website, see [[/blogs/healthcare-management-software-development|healthcare management software development]].",
         ],
       },
     ],

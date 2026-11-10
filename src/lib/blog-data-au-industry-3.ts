@@ -471,16 +471,17 @@ export const auIndustryPosts3: BlogPost[] = [
   },
   {
     slug: "energy-management-software-australia",
-    title: "Energy Management Software in Australia: Monitoring, Emissions Reporting and Integration",
-    seoTitle: "Energy Management Software in Australia",
+    title: "Energy Management Software in Australia: Monitoring, Control, Reporting and Integration",
+    seoTitle: "Energy Management System Software in Australia: A Guide",
     excerpt:
-      "Energy management software in Australia: metering, monitoring, alerts, emissions data for climate reporting and NGER, data quality and build vs buy.",
+      "Energy management systems in Australia: metering, monitoring vs control, protocols, batteries, demand response, NGER and climate reporting, and build vs buy.",
     category: "Web Development",
     banner: "analyticsflow",
     sceneKind: "analytics",
     bannerAlt: "Electricity and gas meters, building systems and solar feeding an energy platform with dashboards, alerts and emissions calculations for reporting",
     date: "2026-10-10",
-    readingTime: "5 min read",
+    updated: "2026-11-10",
+    readingTime: "12 min read",
     relatedServiceSlugs: ["website-development", "ai-automation"],
     relatedIndustrySlugs: ["energy-cleantech", "manufacturing", "real-estate", "retail"],
     relatedSlugs: ["ai-automation-energy-utilities", "business-intelligence-dashboards-australia", "manufacturing-software-integration"],
@@ -500,6 +501,14 @@ export const auIndustryPosts3: BlogPost[] = [
       {
         q: "Should we build or buy energy management software?",
         a: "Buy for standard monitoring and reporting, since many platforms connect to common meters and utilities. Build custom when you need integration with your own operations data, unusual equipment, product features for your customers, or reporting that combines energy with production or occupancy in ways platforms do not support.",
+      },
+      {
+        q: "What is the difference between energy monitoring and energy control?",
+        a: "Monitoring collects and analyses data, shows where energy goes and alerts people. Control changes how equipment runs, for example shifting loads, adjusting setpoints or dispatching a battery. Control needs integration with equipment controllers, safety limits, overrides and testing, so most projects start with monitoring and add control step by step.",
+      },
+      {
+        q: "Which protocols does energy management software use?",
+        a: "Common ones include Modbus for meters and inverters, BACnet for building management systems, IEEE 2030.5 (with Australia's CSIP-AUS profile) for solar and battery inverters, OpenADR for demand response signals, and IEC 61850 in substations and larger electrical installations. Many sites also rely on retailer or metering provider data feeds.",
       },
       {
         q: "How do we get reliable energy data?",
@@ -545,7 +554,8 @@ export const auIndustryPosts3: BlogPost[] = [
         heading: "Australian reporting context",
         body: [
           "**Mandatory climate-related financial disclosures.** Large entities are phasing into climate reporting under AASB S2: Group 1 for annual reporting periods starting on or after 1 January 2025, Group 2 from 1 July 2026 and Group 3 from 1 July 2027, based on size thresholds or NGER reporter status, according to accounting-firm summaries of the legislation. Disclosures include scope 1, 2 and 3 emissions, with transitional provisions.",
-          "**NGER.** The National Greenhouse and Energy Reporting scheme requires corporations above thresholds to report emissions and energy data.",
+          "**NGER.** The National Greenhouse and Energy Reporting scheme requires reporting by facilities above 25 kt CO2-e or 100 TJ of energy, and by corporate groups above 50 kt CO2-e or 200 TJ.",
+          "**Commercial Building Disclosure.** Office space of 1,000 m² or more needs a current Building Energy Efficiency Certificate, including a NABERS Energy rating, when it is sold or leased, and the star rating must appear in advertising. NABERS ratings use at least 12 months of energy data.",
           "**Supply chains.** Even if you are not required to report, larger customers may ask you for energy and emissions data for their scope 3 reporting.",
           "Software can organise data, calculations and evidence; obligations and methods should be confirmed by qualified advisers.",
         ],
@@ -561,6 +571,68 @@ export const auIndustryPosts3: BlogPost[] = [
           "Integrate with operations data (production, occupancy) for meaningful intensity measures.",
           "See [[/blogs/manufacturing-software-integration|manufacturing software integration]] and [[/blogs/business-intelligence-dashboards-australia|business intelligence dashboards]].",
         ],
+      },
+      {
+        heading: "Monitoring vs automated control",
+        body: [
+          "Most energy software monitors. Some also controls equipment. The difference matters for design, safety and cost.",
+        ],
+        table: {
+          headers: ["Level", "What the software does", "Requirements"],
+          rows: [
+            ["**Monitoring**", "Collects meter and equipment data; dashboards and reports", "Reliable data feeds and quality checks"],
+            ["**Alerting**", "Flags spikes, after-hours use, equipment left running", "Owners for each alert and a way to act"],
+            ["**Advisory**", "Recommends actions, such as shifting loads to cheaper periods", "Tariff data, forecasts, clear explanations"],
+            ["**Supervised control**", "Sends setpoints or schedules that operators approve or can override", "Integration with controllers, permissions, audit trail"],
+            ["**Automatic control**", "Adjusts loads, HVAC or batteries within limits without approval", "Hard safety limits in the equipment, fail-safe behaviour, testing, monitoring"],
+          ],
+        },
+        callout: {
+          type: "note",
+          text: "Safety limits belong in the equipment and its controllers, not only in the software that sends them commands. The energy software should respect those limits, never override them, and fall back safely if it loses connection.",
+        },
+      },
+      {
+        heading: "Factories and multi-site businesses",
+        body: [
+          "For manufacturers and multi-site operators, site-level meters aren't enough. Sub-metering by production line, major equipment (compressors, chillers, furnaces) or building zone shows where energy actually goes. Combine it with production or occupancy data to track energy performance indicators such as kWh per unit produced, rather than raw consumption, which rises and falls with output.",
+          "ISO 50001 sets out requirements for an energy management system, and ISO 50006 describes energy performance indicators and baselines. Even if you don't seek certification, they are useful frameworks for designing what the software measures and how savings are calculated. For connecting plant systems, see [[/blogs/mes-development|MES development]].",
+        ],
+      },
+      {
+        heading: "Protocols and integration",
+        body: [],
+        table: {
+          headers: ["Protocol or source", "Typically used for"],
+          rows: [
+            ["**Modbus**", "Electricity meters, inverters, many industrial devices"],
+            ["**BACnet** (ASHRAE 135)", "Building management systems: HVAC, lighting, plant"],
+            ["**IEEE 2030.5 / CSIP-AUS** (SA TS 5573)", "Communication with solar and battery inverters for export limits and remote control"],
+            ["**OpenADR**", "Demand response signals; version 3.0 uses a REST and JSON interface"],
+            ["**IEC 61850**", "Substations and larger electrical installations"],
+            ["**Metering and retailer data**", "Interval data from metering providers and retailers, and bills for reconciliation"],
+          ],
+        },
+      },
+      {
+        heading: "Changes in the Australian market",
+        body: [],
+        checklist: [
+          "**Smart meter rollout:** the AEMC's accelerated deployment rule aims for universal smart meters by 2030, with legacy meters replaced by 1 December 2030, and a later rule requires meters installed from 30 November 2028 to be able to provide real-time data. Interval data will be available for far more sites.",
+          "**Network tariffs:** network businesses are moving more customers to time-of-use and demand tariffs, which makes the timing of consumption, not just the total, a cost driver.",
+          "**Demand response:** the Wholesale Demand Response Mechanism, operating since October 2021, lets large users be paid for reducing demand through registered demand response service providers.",
+          "**Solar and battery export control:** networks increasingly require inverters that support remote control through CSIP-AUS for flexible exports.",
+        ],
+      },
+      {
+        heading: "Batteries: energy management vs battery management",
+        body: [
+          "On sites with battery storage, two systems share the job. The battery management system (BMS), supplied with the battery, protects cells and modules: voltage, current and temperature limits, plus state-of-charge and health estimates. The energy management system decides when to charge and discharge based on tariffs, solar generation, demand charges and demand response events. The EMS works within the limits the BMS reports and must never override its protections. Installations must follow the relevant safety standards, such as AS/NZS 5139 for battery systems.",
+        ],
+        cta: {
+          title: "Planning an energy platform?",
+          description: "ZSpace Labs builds [[/services/website-development|energy data platforms]] that connect meters, building systems, inverters and batteries, with [[/services/ai-automation|forecasting and alerting]] that operations teams can act on.",
+        },
       },
       {
         heading: "Hypothetical example: a cold-storage operator",

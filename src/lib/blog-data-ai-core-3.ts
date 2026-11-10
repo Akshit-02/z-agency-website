@@ -760,6 +760,7 @@ export const aiCorePosts3: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "Good workflow automation is mostly good handling: fresh data, idempotent actions, retries, error paths, alerts and owners. Start simple, document everything and add AI only where rules run out. Related: [[/blogs/business-process-automation|business process automation]], [[/blogs/ai-workflow-automation|AI workflow automation]] and [[/blogs/workflow-automation-vs-rpa|workflow automation vs RPA]]. If you are deciding between a platform and a build, see [[/blogs/low-code-vs-custom-software|low-code vs custom software]].",
+          "When workflows depend on many business rules, see [[/blogs/business-rules-engine|business rules engines and decision automation]].",
         ],
       },
     ],

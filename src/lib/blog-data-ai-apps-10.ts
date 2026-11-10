@@ -216,6 +216,7 @@ export const aiAppsPosts10: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "AI privacy is data flow design: collect less, protect what you keep, choose providers carefully and make rights enforceable. Related: [[/blogs/ai-security-business-applications|AI security]] and [[/blogs/ai-governance-framework|AI governance]]. For handling access requests that include AI-processed data in the UK, see [[/blogs/subject-access-request-automation-uk|subject access request automation]].",
+          "For processing sensitive data in hardware-isolated environments, see [[/blogs/confidential-computing-business-applications|confidential computing for business applications]].",
         ],
       },
     ],

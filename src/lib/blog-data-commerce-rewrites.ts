@@ -295,6 +295,7 @@ export const commerceRewrites: BlogPost[] = [
         heading: "When the Answer Is Headless",
         body: [
           "Headless is justified when the front end itself must go beyond what themes can deliver: content-heavy experiences, several storefronts sharing components, or complex interactive products, with a team to maintain it. See [[/blogs/headless-shopify-explained|Shopify headless commerce]] and [[/blogs/shopify-hydrogen|Shopify Hydrogen]].",
+          "If the requirement goes beyond the storefront to the commerce model itself, compare the options in [[/blogs/shopify-plus-vs-custom-ecommerce|Shopify vs custom ecommerce]].",
         ],
       },
       {
@@ -694,20 +695,21 @@ export const commerceRewrites: BlogPost[] = [
   // ---------------------------------------------- 68 · STORE MIGRATION
   {
     slug: "migrating-to-shopify-guide",
-    title: "Shopify Migration: How to Move an Ecommerce Store to Shopify",
-    seoTitle: "Shopify Migration: How to Move an Ecommerce Store to Shopify",
-    excerpt: "How to migrate a store to Shopify: products, customers, orders, URLs and redirects, metadata, apps, integrations, analytics, QA and launch without losing SEO.",
+    title: "Shopify Migration Checklist: How to Move Your Store Without Losing SEO, Data or Orders",
+    seoTitle: "Shopify Migration Checklist: Keep Your SEO, Data and Orders",
+    excerpt: "A Shopify migration checklist: products, customers, order history, redirects, metadata, integrations, Indian payments and COD, testing and launch.",
     category: "Shopify & Ecommerce",
     banner: "shopifymigrationflow",
     bannerAlt:
       "Shopify migration process: inventory and baseline, map URLs and data, import and clean, build and redirects, test orders, launch and monitor, comparing search traffic and sales against the baseline.",
     date: "2026-03-10",
-    updated: "2026-09-30",
-    readingTime: "17 min read",
+    updated: "2026-11-10",
+    readingTime: "20 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
     relatedIndustrySlugs: ["ecommerce", "fashion-apparel"],
+    relatedSlugs: ["shopify-migration-cost-india", "woocommerce-to-shopify-migration-checklist", "ecommerce-platform-migration"],
     faqs: [
-      { q: "How do I migrate my store to Shopify?", a: "Inventory your data and URLs, record a baseline, import products, customers and orders with Shopify's migration app, CSV files or APIs, map every old URL to its Shopify equivalent and create redirects, rebuild the storefront, test orders and SEO output, then launch and monitor." },
+      { q: "How do I migrate my store to Shopify?", a: "Inventory your data and URLs, record a baseline, import products and customers with Shopify's Store Migration app or CSV files and historical orders with a migration app or the API (orders can't be imported by CSV), map every old URL to its Shopify equivalent and create redirects, rebuild the storefront, test orders and SEO output, then launch and monitor." },
       { q: "Will I lose SEO when moving to Shopify?", a: "Not if redirects, content and metadata are handled carefully. Rankings are at risk when URLs change without redirects or when content and titles are lost." },
       { q: "Can customer passwords be migrated to Shopify?", a: "No. Shopify explains that passwords are encrypted by the previous platform and can't be imported. Since 26 February 2026, legacy customer accounts are deprecated and unavailable to new stores; the current customer accounts sign customers in with their email address and a one-time code, with no password. A customer whose profile is in your admin can sign in with that email, so mass password-reset invitations are largely unnecessary. Test the sign-in for imported customers on a development store before launch, and tell customers how the new sign-in works." },
       { q: "Can I import historical orders?", a: "Yes, using migration apps or Shopify's APIs. Decide how much history you need for customer service and reporting." },
@@ -715,6 +717,7 @@ export const commerceRewrites: BlogPost[] = [
       { q: "Why do URLs change when moving to Shopify?", a: "Shopify uses fixed URL patterns such as /products/, /collections/, /pages/ and /blogs/. Old URLs that don't match need 301 redirects." },
       { q: "How long does a Shopify migration take?", a: "It depends on catalog size, data quality, integrations, content and whether you redesign at the same time. Data and integrations usually drive the timeline." },
       { q: "Should I redesign while migrating?", a: "Keep design changes limited if you can. Changing platform and design together makes problems harder to diagnose." },
+      { q: "How much does a Shopify migration cost in India?", a: "It depends on catalogue size, how much order history you move, design work and integrations. Our Shopify migration cost guide sets out indicative ranges by scope and what drives them." },
       { q: "What about subscriptions and gift cards?", a: "Plan them early. Gift card balances and subscription contracts need specific tools and, for subscriptions, cooperation from payment providers." },
       { q: "What should I monitor after launch?", a: "Search Console coverage and 404s, organic traffic and rankings, conversion by device, payment errors and customer service contacts, daily for the first weeks." },
     ],
@@ -722,7 +725,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Quick answer",
         body: [
-          "To move to Shopify without losing SEO, inventory every URL and record a baseline, then import data with Shopify's Store Migration app, CSV files or APIs. Shopify can't import customer passwords; on the current customer accounts, customers sign in with an email code instead, so test that sign-in for imported customers. Map every old URL to its Shopify equivalent and create 301 redirects, individually or by CSV import. Carry over titles, meta descriptions, content, alt text and structured data, test orders and redirects on the new store, launch at a quiet time, and monitor Search Console and sales daily against the baseline.",
+          "To move to Shopify without losing SEO, inventory every URL and record a baseline, then import products and customers with Shopify's Store Migration app or CSV files, and historical orders with a migration app or the API, since Shopify doesn't accept order CSVs. Shopify can't import customer passwords; on the current customer accounts, customers sign in with an email code instead, so test that sign-in for imported customers. Map every old URL to its Shopify equivalent and create 301 redirects, individually or by CSV import. Carry over titles, meta descriptions, content, alt text and structured data, test orders and redirects on the new store, launch at a quiet time, and monitor Search Console and sales daily against the baseline.",
         ],
       },
       {
@@ -779,7 +782,7 @@ export const commerceRewrites: BlogPost[] = [
           rows: [
             ["Products", "Store Migration app, product CSV, migration apps"],
             ["Customers", "Customer CSV, migration apps, API"],
-            ["Historical orders", "Migration apps, Order and Transaction APIs"],
+            ["Historical orders", "Migration apps, Order and Transaction APIs (not CSV)"],
             ["Pages, blogs, gift cards", "Migration apps, APIs, manual"],
             ["Redirects", "Admin, or CSV import"],
           ],
@@ -792,7 +795,7 @@ export const commerceRewrites: BlogPost[] = [
       {
         heading: "Import Order and Tools",
         body: [
-          "Shopify's migration guidance is to import products first, then customers, then historical orders, so orders can link to the products and customers they belong to. Shopify's first-party Store Migration app can import data from some platforms, such as products from WooCommerce and products and customers from Wix or Square, but Shopify describes it as early access and only available for certain stores; historical orders typically need third-party migration apps or the APIs. Large or complex catalogs often use CSV-based bulk tools or custom scripts against the Admin API.",
+          "Shopify's migration guidance is to import products first, then customers, then historical orders, so orders can link to the products and customers they belong to. Shopify's free Store Migration app imports products and customers from several platforms, including WooCommerce, Wix, Square, Etsy, Amazon and eBay (as listed in November 2026), but not orders; historical orders need third-party migration apps or the APIs, because Shopify's Help Center states orders can't be imported with a CSV file. Large or complex catalogs often use CSV-based bulk tools or custom scripts against the Admin API.",
         ],
         table: {
           headers: ["Order", "Data", "Why this order"],
@@ -925,6 +928,32 @@ export const commerceRewrites: BlogPost[] = [
             ["Day 30", "Full comparison with baseline; start the optimization backlog"],
           ],
         },
+      },
+      {
+        heading: "Shopify Migration Checklist",
+        body: [
+          "Use this as the working checklist for the project. Each line is something we have seen missed, and most of them are cheap to do early and expensive to fix after launch.",
+        ],
+        table: {
+          headers: ["Stage", "Checklist"],
+          rows: [
+            ["**Before you start**", "Export every URL with traffic, links or revenue; record a 4-week baseline of traffic, rankings, conversion and revenue; list every app, plugin and integration; decide how many years of orders to bring across"],
+            ["**Data**", "Clean products into three options per product; map custom fields to metafields; deduplicate customers and keep consent status; plan gift card balances, subscriptions and loyalty points separately"],
+            ["**Store build**", "Theme and templates; navigation; policies; tax and shipping; payment gateway and COD; notification emails; staff accounts with individual logins"],
+            ["**SEO**", "Redirect map for every old URL (CSV import, within Shopify's limit of 100,000 redirects on standard plans); titles, meta descriptions, alt text and content carried over; structured data checked; internal links updated"],
+            ["**Integrations**", "Logistics aggregator, WhatsApp or SMS, reviews, analytics and ad pixels, ERP or accounting; each tested with real orders"],
+            ["**Testing**", "Test orders on every payment method, including COD; redirects sampled; mobile layouts; emails and invoices; customer sign-in for imported customers"],
+            ["**Launch day**", "Freeze changes on the old store; final delta import of customers and orders; switch the domain; confirm redirects and sitemap; place live test orders"],
+            ["**First 30 days**", "Search Console coverage and 404s daily; conversion and payment success against baseline; fix broken redirects; answer customer sign-in and saved-card questions"],
+          ],
+        },
+      },
+      {
+        heading: "Migrating an Indian Store to Shopify",
+        body: [
+          "Indian stores have a few extra workstreams that generic migration checklists leave out. Shopify Payments isn't available in India, so plan the gateway setup (Razorpay, PayU, Cashfree or similar) and test UPI, cards, netbanking and wallets before launch. Saved cards are tokenised with the gateway under RBI's rules, so customers will usually need to save cards again; tell them before they find out at checkout.",
+          "Cash on delivery, COD confirmation and prepaid incentives usually come from apps or custom logic that must be rebuilt rather than copied. Reconnect your shipping aggregator for pincode serviceability, labels and tracking, and point WhatsApp and SMS notifications at the new store's events. Keep GST invoice numbering continuous across the switch, and capture GSTIN for business buyers. For budgeting, see [[/blogs/shopify-migration-cost-india|Shopify migration cost in India]].",
+        ],
       },
       {
         heading: "Moving from WooCommerce",

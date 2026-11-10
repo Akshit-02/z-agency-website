@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "Terms governing the use of the ZSpace Labs website.",
+  description: "Terms of service for the ZSpace Labs website: use of the site, how project engagements are agreed, intellectual property in site content, and how to contact us.",
   alternates: { canonical: "/terms" },
   robots: { index: true, follow: true },
 };

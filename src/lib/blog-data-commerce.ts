@@ -983,7 +983,7 @@ export const commercePosts: BlogPost[] = [
       },
       {
         heading: "How to Compare Quotes",
-        body: ["Put quotes side by side against the same list."],
+        body: ["Put quotes side by side against the same list. If you are budgeting in India, our guide to [[/blogs/ecommerce-website-development-cost-india|ecommerce website development cost in India]] adds INR build ranges, Shopify's India plan prices and the transaction-fee maths."],
         checklist: [
           "Discovery and requirements included?",
           "Which templates are designed, and for mobile and desktop?",

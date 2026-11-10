@@ -591,6 +591,7 @@ export const auIntegrationArchPosts: BlogPost[] = [
         heading: "Conclusion",
         body: [
           "The strangler fig pattern replaces legacy systems through many small, reversible steps: intercept, slice, build, route, move data and retire. It needs patience and commitment to finish, and it usually beats a big-bang rewrite on risk.",
+          "For a full step-by-step plan that puts this pattern alongside assessment, safety-net testing, data sync and rollback, see the [[/blogs/legacy-software-modernization-roadmap|legacy software modernisation roadmap]].",
         ],
         cta: {
           title: "Planning to replace a legacy system?",
