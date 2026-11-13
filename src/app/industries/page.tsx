@@ -11,12 +11,17 @@ import { CTASection } from "@/components/CTASection";
 import { StructuredData } from "@/components/StructuredData";
 import { industries, categoryOrder } from "@/lib/industries-data";
 import { site } from "@/lib/site";
+import { socialMetadata } from "@/lib/seo";
+
+const title = "Industries: Websites, Apps and Automation by Sector";
+const description =
+  "How ZSpace Labs builds websites, apps, Shopify stores and AI automation for real estate, D2C, fintech, healthcare, SaaS, manufacturing and more.";
 
 export const metadata: Metadata = {
-  title: "Industries: Websites, Apps and Automation by Sector",
-  description:
-    "How ZSpace Labs builds websites, apps, Shopify stores and AI automation for real estate, D2C, fintech, healthcare, SaaS, manufacturing and more.",
+  title,
+  description,
   alternates: { canonical: "/industries" },
+  ...socialMetadata({ title: `${title} — ${site.name}`, description, path: "/industries" }),
 };
 
 const featured: IndustryCardData[] = categoryOrder.flatMap((category) =>

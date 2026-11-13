@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import Link from "next/link";
-import { AnimatePresence, motion, useInView, useReducedMotion } from "motion/react";
+import { motion, useInView, useReducedMotion } from "motion/react";
 import { Plus } from "lucide-react";
 import { Atmosphere } from "@/components/ui/Aesthetic";
 import { BlogScene } from "@/components/blog/BlogScene";
@@ -81,15 +81,21 @@ function Row({
           <Plus className="h-4 w-4" />
         </span>
       </button>
-      <AnimatePresence initial={false}>
-        {open && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.4, ease: EASE }}
-            className="relative overflow-hidden"
-          >
+      {/* Answers stay in the server-rendered HTML (collapsed with CSS and
+          inert while closed) so the homepage FAQPage markup matches visible
+          content. See src/components/Faq.tsx. */}
+      <div
+        className="grid"
+        style={{
+          gridTemplateRows: open ? "1fr" : "0fr",
+          opacity: open ? 1 : 0,
+          transition: still
+            ? "none"
+            : "grid-template-rows 0.4s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1)",
+        }}
+        inert={!open}
+      >
+          <div className="relative overflow-hidden">
             <p className="max-w-[62ch] px-5 pb-6 pl-[3.1rem] text-[0.92rem] leading-relaxed text-white/65 sm:px-6 sm:pl-[3.6rem] sm:text-[0.95rem]">
               {item.a}
               {index === 0 && (
@@ -104,9 +110,8 @@ function Row({
                 </>
               )}
             </p>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          </div>
+      </div>
     </motion.div>
   );
 }

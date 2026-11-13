@@ -36,12 +36,12 @@ export const markets = [
   {
     name: "India",
     note:
-      "The DPDP Act 2023 and DPDP Rules 2025 phase in from November 2025. Most duties for businesses, including notices, security safeguards, breach reporting and user rights, apply from May 2027.",
+      "The DPDP Act 2023 and DPDP Rules 2025 phase in over 18 months from November 2025. Consent manager registration opens from November 2026, and most duties for businesses, including notices, security safeguards, breach reporting and user rights, apply from May 2027.",
   },
   {
     name: "United Arab Emirates",
     note:
-      "The federal Personal Data Protection Law (Federal Decree-Law No. 45 of 2021) took effect on 2 January 2022, though its executive regulations had not been issued as of November 2026, and the DIFC and ADGM have their own data protection laws. Arabic and right-to-left layouts are planned from the start when your audience needs them.",
+      "The federal Personal Data Protection Law (Federal Decree-Law No. 45 of 2021) took effect on 2 January 2022, though its executive regulations had not been issued at the time of writing (November 2026), and the DIFC and ADGM have their own data protection laws. Arabic and right-to-left layouts are planned from the start when your audience needs them.",
   },
   {
     name: "United Kingdom",

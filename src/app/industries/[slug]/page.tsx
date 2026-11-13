@@ -11,7 +11,7 @@ import {
 import { getServiceBySlug } from "@/lib/services-data";
 import { posts } from "@/lib/blog-data";
 import { site } from "@/lib/site";
-import { metaDescription as metaDescriptionFor } from "@/lib/seo";
+import { metaDescription as metaDescriptionFor, pageTitle, socialMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   return industriesWithDetailPages.map((industry) => ({ slug: industry.slug }));
@@ -26,6 +26,8 @@ export async function generateMetadata({
   const industry = getIndustryBySlug(slug);
   if (!industry || !industry.hasDetailPage) return {};
 
+  // The old "<Industry> — Industries" title said nothing about what is offered.
+  const title = `${industry.name}: Websites, Apps & Automation`;
   const fullDescription = `${industry.shortDescription} ZSpace Labs designs and builds the websites, apps and automation these businesses need.`;
   const metaDescription =
     fullDescription.length <= 160
@@ -33,15 +35,15 @@ export async function generateMetadata({
       : metaDescriptionFor(`${industry.shortDescription} ZSpace Labs builds websites, apps and automation for them.`);
 
   return {
-    title: `${industry.name} — Industries`,
+    title: pageTitle(title),
     description: metaDescription,
     alternates: { canonical: `/industries/${industry.slug}` },
-    openGraph: {
-      siteName: site.name,
-      title: `${industry.name} — ${site.name}`,
+    ...socialMetadata({
+      title: `${title} — ${site.name}`,
       description: metaDescription,
-      url: `${site.url}/industries/${industry.slug}`,
-    },
+      path: `/industries/${industry.slug}`,
+      image: `/industries/${industry.slug}/opengraph-image`,
+    }),
   };
 }
 

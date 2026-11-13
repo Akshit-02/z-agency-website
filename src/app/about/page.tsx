@@ -11,13 +11,17 @@ import {
 import { CTASection } from "@/components/CTASection";
 import { StructuredData } from "@/components/StructuredData";
 import { site } from "@/lib/site";
-import { ORG_ID, WEBSITE_ID } from "@/lib/seo";
+import { ORG_ID, WEBSITE_ID, socialMetadata } from "@/lib/seo";
+
+const title = "About ZSpace Labs — A Technology and Digital Product Studio";
+const description =
+  "A technology and digital product studio for clients in India, the UAE, the UK, Australia and Singapore, with strategy, design and engineering in one team.";
 
 export const metadata: Metadata = {
-  title: { absolute: "About ZSpace Labs — A Technology and Digital Product Studio" },
-  description:
-    "A technology and digital product studio for clients in India, the UAE, the UK, Australia and Singapore, with strategy, design and engineering in one team.",
+  title: { absolute: title },
+  description,
   alternates: { canonical: "/about" },
+  ...socialMetadata({ title, description, path: "/about" }),
 };
 
 export default function AboutPage() {

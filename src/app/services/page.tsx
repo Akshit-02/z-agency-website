@@ -9,12 +9,17 @@ import {
 import { StructuredData } from "@/components/StructuredData";
 import { services } from "@/lib/services-data";
 import { site } from "@/lib/site";
+import { socialMetadata } from "@/lib/seo";
+
+const title = "Services in India: Web, App, Shopify, UI/UX, AI & CRO";
+const description =
+  "Web development, mobile apps, Shopify, UI/UX design, AI automation and CRO for businesses across India, from one ZSpace Labs team for design and engineering.";
 
 export const metadata: Metadata = {
-  title: "Services in India: Web, App, Shopify, UI/UX, AI & CRO",
-  description:
-    "Web development, mobile apps, Shopify, UI/UX design, AI automation and CRO for businesses across India, from one ZSpace Labs team for design and engineering.",
+  title,
+  description,
   alternates: { canonical: "/services" },
+  ...socialMetadata({ title: `${title} — ${site.name}`, description, path: "/services" }),
 };
 
 // Display order on this page.

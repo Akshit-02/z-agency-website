@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import { Plus } from "lucide-react";
 import { renderInline } from "@/lib/inline-content";
 
@@ -49,21 +49,27 @@ export function Faq({ items }: { items: { q: string; a: string }[] }) {
                 <Plus className="h-4 w-4" />
               </span>
             </button>
-            <AnimatePresence initial={false}>
-              {isOpen && (
-                <motion.div
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "auto", opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.4, ease: EASE }}
-                  className="relative overflow-hidden"
-                >
-                  <p className="max-w-[64ch] px-5 pb-6 pl-[3.1rem] text-pretty text-[0.95rem] leading-relaxed text-white/70 sm:px-6 sm:pl-[3.6rem] [&_a]:text-white [&_a]:underline [&_a]:decoration-white/30 [&_a]:underline-offset-4">
-                    {renderInline(item.a)}
-                  </p>
-                </motion.div>
-              )}
-            </AnimatePresence>
+            {/* Every answer stays in the server-rendered HTML; closed ones are
+                collapsed with CSS and made inert. Mounting answers only while
+                open left all but the first out of the page source, so search
+                engines saw FAQPage markup whose answers were not on the page. */}
+            <div
+              className="grid"
+              style={{
+                gridTemplateRows: isOpen ? "1fr" : "0fr",
+                opacity: isOpen ? 1 : 0,
+                transition: still
+                  ? "none"
+                  : "grid-template-rows 0.4s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1)",
+              }}
+              inert={!isOpen}
+            >
+              <div className="relative overflow-hidden">
+                <p className="max-w-[64ch] px-5 pb-6 pl-[3.1rem] text-pretty text-[0.95rem] leading-relaxed text-white/70 sm:px-6 sm:pl-[3.6rem] [&_a]:text-white [&_a]:underline [&_a]:decoration-white/30 [&_a]:underline-offset-4">
+                  {renderInline(item.a)}
+                </p>
+              </div>
+            </div>
           </motion.div>
         );
       })}

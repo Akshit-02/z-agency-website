@@ -12,13 +12,17 @@ import { BuildCTA } from "@/components/home/BuildCTA";
 import { site } from "@/lib/site";
 import { homeFaqs } from "@/lib/home-faqs";
 import { StructuredData } from "@/components/StructuredData";
-import { ORG_ID, WEBSITE_ID } from "@/lib/seo";
+import { ORG_ID, WEBSITE_ID, socialMetadata } from "@/lib/seo";
+
+const title = `${site.name} | Web, App, Shopify & AI Automation Studio in India`;
+const description =
+  "ZSpace Labs is a technology and digital product studio serving businesses across India: websites, mobile apps, Shopify, UI/UX, AI automation and CRO.";
 
 export const metadata: Metadata = {
-  title: { absolute: `${site.name} | Web, App, Shopify & AI Automation Studio in India` },
-  description:
-    "ZSpace Labs is a technology and digital product studio serving businesses across India: websites, mobile apps, Shopify, UI/UX, AI automation and CRO.",
+  title: { absolute: title },
+  description,
   alternates: { canonical: "/" },
+  ...socialMetadata({ title, description, path: "/" }),
 };
 
 export default function HomePage() {

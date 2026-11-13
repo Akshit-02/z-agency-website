@@ -7,7 +7,7 @@ import { services, getServiceBySlug } from "@/lib/services-data";
 import { posts } from "@/lib/blog-data";
 import { getIndustryBySlug } from "@/lib/industries-data";
 import { site } from "@/lib/site";
-import { pageTitle, ORG_ID } from "@/lib/seo";
+import { pageTitle, socialMetadata, ORG_ID } from "@/lib/seo";
 
 export function generateStaticParams() {
   return services.map((service) => ({ slug: service.slug }));
@@ -26,13 +26,31 @@ export async function generateMetadata({
     title: pageTitle(service.seoTitle),
     description: service.metaDescription,
     alternates: { canonical: `/services/${service.slug}` },
-    openGraph: {
-      siteName: site.name,
+    ...socialMetadata({
       title: `${service.seoTitle} — ${site.name}`,
       description: service.metaDescription,
-      url: `${site.url}/services/${service.slug}`,
-    },
+      path: `/services/${service.slug}`,
+      image: `/services/${service.slug}/opengraph-image`,
+    }),
   };
+}
+
+/**
+ * Lower-cases a title-case service name for use mid-sentence while keeping
+ * acronyms and brand names intact: "AI Automation" -> "AI automation",
+ * "UI/UX Design" -> "UI/UX design", not "ai automation" / "ui/ux design".
+ */
+const KEEP_CASE = new Set(["Shopify"]);
+function inSentence(name: string) {
+  return name
+    .split(" ")
+    .map((word) =>
+      word
+        .split("-")
+        .map((part) => (/^[A-Z][a-z]+$/.test(part) && !KEEP_CASE.has(part) ? part.toLowerCase() : part))
+        .join("-"),
+    )
+    .join(" ");
 }
 
 export default async function ServiceDetailPage({
@@ -113,7 +131,7 @@ export default async function ServiceDetailPage({
 
       <CTASection
         primaryHref={`/contact?src=${encodeURIComponent(`/services/${service.slug}`)}`}
-        title={`Ready to talk about ${service.name.toLowerCase()}?`}
+        title={`Ready to talk about ${inSentence(service.name)}?`}
         description="Send a few lines about what you're building or fixing. We reply with an initial view and any questions, then a short call, then a fixed estimate for each phase."
       />
     </>

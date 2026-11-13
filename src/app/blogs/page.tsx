@@ -6,14 +6,18 @@ import { StructuredData } from "@/components/StructuredData";
 import { posts, toSummary, type BlogPost } from "@/lib/blog-data";
 import { sceneFor } from "@/lib/blog-scenes";
 import { blogCategories } from "@/lib/blog-categories";
-import { WEBSITE_ID, ORG_ID } from "@/lib/seo";
+import { WEBSITE_ID, ORG_ID, socialMetadata } from "@/lib/seo";
 import { site } from "@/lib/site";
 
+const title = "Blog: Web, App, Shopify, UX, AI and CRO Guides";
+const description =
+  "Practical writing from ZSpace Labs on website performance, mobile app development, AI automation, design systems, Shopify and conversion optimization.";
+
 export const metadata: Metadata = {
-  title: "Blog: Web, App, Shopify, UX, AI and CRO Guides",
-  description:
-    "Practical writing from ZSpace Labs on website performance, mobile app development, AI automation, design systems, Shopify and conversion optimization.",
+  title,
+  description,
   alternates: { canonical: "/blogs" },
+  ...socialMetadata({ title: `${title} — ${site.name}`, description, path: "/blogs" }),
 };
 
 const lite = (p: BlogPost): PostLite => ({

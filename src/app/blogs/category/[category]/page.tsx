@@ -9,7 +9,7 @@ import { posts, toSummary } from "@/lib/blog-data";
 import { blogCategories, getCategoryBySlug } from "@/lib/blog-categories";
 import { getServiceBySlug } from "@/lib/services-data";
 import { site } from "@/lib/site";
-import { pageTitle, ORG_ID, WEBSITE_ID } from "@/lib/seo";
+import { pageTitle, socialMetadata, ORG_ID, WEBSITE_ID } from "@/lib/seo";
 
 export function generateStaticParams() {
   return blogCategories.map((category) => ({ category: category.slug }));
@@ -28,12 +28,11 @@ export async function generateMetadata({
     title: pageTitle(category.title),
     description: category.description,
     alternates: { canonical: `/blogs/category/${category.slug}` },
-    openGraph: {
-      siteName: site.name,
+    ...socialMetadata({
       title: `${category.title} — ${site.name}`,
       description: category.description,
-      url: `${site.url}/blogs/category/${category.slug}`,
-    },
+      path: `/blogs/category/${category.slug}`,
+    }),
   };
 }
 

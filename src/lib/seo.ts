@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { site } from "./site";
 
 /**
@@ -19,6 +20,49 @@ const MAX_TITLE = 70;
  */
 export function pageTitle(title: string): string | { absolute: string } {
   return (title + BRAND_SUFFIX).length > MAX_TITLE ? { absolute: title } : title;
+}
+
+/**
+ * Open Graph and X/Twitter card tags for one page.
+ *
+ * Next.js merges metadata shallowly: a page that sets `openGraph` replaces the
+ * root layout's object entirely (dropping its image), and a page that does not
+ * set `twitter` inherits the homepage's card title and description. Every
+ * page that is not an article should spread this helper into its metadata so
+ * shared links show that page's own title, description, URL and image.
+ *
+ * `image` defaults to the site-wide card. Segments with their own
+ * `opengraph-image` route should pass that route's path: the file still wins
+ * for og:image, and the path is reused for the X/Twitter card.
+ */
+export function socialMetadata({
+  title,
+  description,
+  path,
+  image = "/opengraph-image",
+}: {
+  title: string;
+  description: string;
+  path: string;
+  image?: string;
+}): Pick<Metadata, "openGraph" | "twitter"> {
+  const url = path === "/" ? site.url : `${site.url}${path}`;
+  return {
+    openGraph: {
+      type: "website",
+      siteName: site.name,
+      url,
+      title,
+      description,
+      images: [{ url: image, width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [image],
+    },
+  };
 }
 
 /**

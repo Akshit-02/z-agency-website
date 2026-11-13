@@ -2,11 +2,16 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { Container } from "@/components/Container";
 import { site } from "@/lib/site";
+import { socialMetadata } from "@/lib/seo";
+
+const description =
+  "Terms of service for the ZSpace Labs website: use of the site, how project engagements are agreed, intellectual property in site content, and how to contact us.";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "Terms of service for the ZSpace Labs website: use of the site, how project engagements are agreed, intellectual property in site content, and how to contact us.",
+  description,
   alternates: { canonical: "/terms" },
+  ...socialMetadata({ title: `Terms of Service — ${site.name}`, description, path: "/terms" }),
   robots: { index: true, follow: true },
 };
 

@@ -2,11 +2,15 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { Container } from "@/components/Container";
 import { site } from "@/lib/site";
+import { socialMetadata } from "@/lib/seo";
+
+const description = "How ZSpace Labs collects, uses and protects information submitted through this website.";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "How ZSpace Labs collects, uses and protects information submitted through this website.",
+  description,
   alternates: { canonical: "/privacy" },
+  ...socialMetadata({ title: `Privacy Policy — ${site.name}`, description, path: "/privacy" }),
   robots: { index: true, follow: true },
 };
 

@@ -4,13 +4,17 @@ import { ProcessPanel } from "@/components/detail/DetailKit";
 import { ContactForm } from "@/components/ContactForm";
 import { StructuredData } from "@/components/StructuredData";
 import { site } from "@/lib/site";
-import { ORG_ID, WEBSITE_ID } from "@/lib/seo";
+import { ORG_ID, WEBSITE_ID, socialMetadata } from "@/lib/seo";
+
+const title = "Contact — Start a Project";
+const description =
+  "Tell ZSpace Labs about your website, app, AI automation or Shopify project. We respond with honest scoping, usually within one business day.";
 
 export const metadata: Metadata = {
-  title: "Contact — Start a Project",
-  description:
-    "Tell ZSpace Labs about your website, app, AI automation or Shopify project. We respond with honest scoping, usually within one business day.",
+  title,
+  description,
   alternates: { canonical: "/contact" },
+  ...socialMetadata({ title: `${title} — ${site.name}`, description, path: "/contact" }),
 };
 
 export default function ContactPage() {
