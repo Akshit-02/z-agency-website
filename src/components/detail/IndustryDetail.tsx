@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
+import Link from "@/components/Link";
 import { motion, useInView, useReducedMotion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import { Atmosphere, EASE, TiltCard, serif } from "@/components/ui/Aesthetic";
@@ -114,7 +114,7 @@ function OtherIndustries({ items }: { items: IndustryDetailData["others"] }) {
 
 export function IndustryDetail({ data }: { data: IndustryDetailData }) {
   const still = !!useReducedMotion();
-  const contactHref = `/contact?src=${encodeURIComponent(`/industries/${data.slug}`)}`;
+  const contactHref = `/contact#src=${encodeURIComponent(`/industries/${data.slug}`)}`;
 
   const title = data.heroTitle
     ? data.heroTitle.map((part, i) =>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import Link from "@/components/Link";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Container } from "../Container";

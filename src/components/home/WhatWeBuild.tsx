@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import Link from "next/link";
+import Link from "@/components/Link";
 import {
   motion,
   useInView,
@@ -599,7 +599,7 @@ export function WhatWeBuild() {
                   {...rise(footOn, 0.45)}
                 >
                   <Link
-                    href="/contact?src=%2F%23not-sure"
+                    href="/contact#src=%2F%23not-sure"
                     className="group inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-[0.85rem] font-medium text-ink transition-colors duration-300 hover:bg-white/90"
                   >
                     Start a Conversation
@@ -636,7 +636,7 @@ export function WhatWeBuild() {
                         }}
                       >
                         <Link
-                          href={`/contact?src=${encodeURIComponent(`/#not-sure-${p.slug}`)}`}
+                          href={`/contact#src=${encodeURIComponent(`/#not-sure-${p.slug}`)}`}
                           className="group flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3.5 transition-colors duration-300 hover:border-orange-500/60 hover:bg-white/[0.08]"
                         >
                           <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/[0.08] text-white/80 transition-colors duration-300 group-hover:bg-orange-600 group-hover:text-white">

@@ -11,6 +11,10 @@ import { getServiceBySlug } from "@/lib/services-data";
 import { site } from "@/lib/site";
 import { pageTitle, socialMetadata, ORG_ID, WEBSITE_ID } from "@/lib/seo";
 
+// Unknown slugs return the static 404 instead of rendering on demand (bots
+// probing URLs otherwise cost a function invocation and origin transfer each).
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return blogCategories.map((category) => ({ category: category.slug }));
 }
@@ -60,10 +64,10 @@ export default async function BlogCategoryPage({
   const inCategory = posts
     .filter((post) => post.category === category.name)
     .sort((a, b) => a.title.localeCompare(b.title));
-  const startHere = category.startHere
+  const startHereFull = category.startHere
     .map((s) => posts.find((post) => post.slug === s))
-    .filter((post): post is NonNullable<typeof post> => Boolean(post))
-    .map(toSummary);
+    .filter((post): post is NonNullable<typeof post> => Boolean(post));
+  const startHere = startHereFull.map(toSummary);
   const service = getServiceBySlug(category.serviceSlug);
   const url = `${site.url}/blogs/category/${category.slug}`;
 
@@ -99,12 +103,12 @@ export default async function BlogCategoryPage({
         eyebrow={`Insights / ${category.name}`}
         title={titleLines(category.title)}
         description={category.description}
-        stack={(startHere.length >= 3 ? startHere : inCategory).slice(0, 3).map((p) => ({
+        stack={(startHereFull.length >= 3 ? startHereFull : inCategory).slice(0, 3).map((p) => ({
           slug: p.slug,
           title: p.title,
           category: p.category,
           banner: p.banner,
-          scene: "scene" in p ? p.scene : sceneFor(p),
+          scene: sceneFor(p),
         }))}
         stats={[{ value: String(inCategory.length), label: "Articles in this hub" }]}
       />
@@ -136,7 +140,7 @@ export default async function BlogCategoryPage({
       </BlogSection>
 
       <CTASection
-        primaryHref={`/contact?src=${encodeURIComponent(`/blogs/category/${category.slug}`)}`}
+        primaryHref={`/contact#src=${encodeURIComponent(`/blogs/category/${category.slug}`)}`}
         title={
           <>
             Have a <span className="text-orange-bright">project</span> in mind?

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, type ReactNode } from "react";
-import Link from "next/link";
+import Link from "@/components/Link";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion, AnimatePresence } from "motion/react";
@@ -70,14 +70,19 @@ export function ContactForm() {
     defaultValues: { need: DEFAULT_NEED, budget: DEFAULT_BUDGET },
   });
 
-  // Capture where the visitor came from (?src=/blogs/...) without showing it,
+  // Capture where the visitor came from (#src=/blogs/...) without showing it,
   // and preselect the matching service when they came from a service page.
   useEffect(() => {
     const { landingPage, referrer, utm } = readFirstTouch();
     if (landingPage) setValue("landingPage", landingPage);
     if (referrer) setValue("referrer", referrer);
     if (utm) setValue("utm", utm);
-    const src = new URLSearchParams(window.location.search).get("src");
+    // CTAs pass the source page in the hash, which never reaches the server, so
+    // /contact stays one CDN cache entry instead of one per linking page.
+    // ?src= is still read for links shared before that change.
+    const src =
+      new URLSearchParams(window.location.hash.slice(1)).get("src") ??
+      new URLSearchParams(window.location.search).get("src");
     if (!src) return;
     setValue("sourcePage", src.slice(0, 200));
     const need = needByServiceSlug[src.match(/^\/services\/([a-z-]+)/)?.[1] ?? ""];

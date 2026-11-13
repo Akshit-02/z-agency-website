@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type MouseEvent } from "react";
-import Link from "next/link";
+import Link from "@/components/Link";
 import {
   motion,
   useInView,

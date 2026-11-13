@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/Link";
 import { notFound } from "next/navigation";
 import { ArrowUpRight, Check } from "lucide-react";
 import { Container } from "@/components/Container";
@@ -24,6 +24,10 @@ import { getIndustryBySlug } from "@/lib/industries-data";
 import { site } from "@/lib/site";
 import { getCategoryByName } from "@/lib/blog-categories";
 import { metaDescription, pageTitle, ORG_ID, WEBSITE_ID } from "@/lib/seo";
+
+// Unknown slugs return the static 404 instead of rendering on demand (bots
+// probing URLs otherwise cost a function invocation and origin transfer each).
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
@@ -58,6 +62,8 @@ export async function generateMetadata({
       card: "summary_large_image",
       title,
       description,
+      // Reuse the Open Graph image rather than generating a duplicate twitter-image.
+      images: [`/blogs/${post.slug}/opengraph-image`],
     },
   };
 }
@@ -275,7 +281,7 @@ export default async function BlogPostPage({
                           )}
                         </div>
                         <Link
-                          href={`/contact?src=${encodeURIComponent(`/blogs/${post.slug}`)}`}
+                          href={`/contact#src=${encodeURIComponent(`/blogs/${post.slug}`)}`}
                           className="group relative inline-flex shrink-0 items-center gap-2 rounded-full bg-white px-6 py-3.5 text-[0.9rem] font-medium text-ink transition-colors hover:bg-white/90"
                         >
                           Start a Project
@@ -319,7 +325,7 @@ export default async function BlogPostPage({
       </div>
 
       <CTASection
-        primaryHref={`/contact?src=${encodeURIComponent(`/blogs/${post.slug}`)}`}
+        primaryHref={`/contact#src=${encodeURIComponent(`/blogs/${post.slug}`)}`}
         title={
           <>
             Have a <span className="text-orange-bright">project</span> in

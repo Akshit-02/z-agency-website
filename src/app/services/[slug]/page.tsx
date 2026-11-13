@@ -9,6 +9,10 @@ import { getIndustryBySlug } from "@/lib/industries-data";
 import { site } from "@/lib/site";
 import { pageTitle, socialMetadata, ORG_ID } from "@/lib/seo";
 
+// Unknown slugs return the static 404 instead of rendering on demand (bots
+// probing URLs otherwise cost a function invocation and origin transfer each).
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return services.map((service) => ({ slug: service.slug }));
 }
@@ -130,7 +134,7 @@ export default async function ServiceDetailPage({
       />
 
       <CTASection
-        primaryHref={`/contact?src=${encodeURIComponent(`/services/${service.slug}`)}`}
+        primaryHref={`/contact#src=${encodeURIComponent(`/services/${service.slug}`)}`}
         title={`Ready to talk about ${inSentence(service.name)}?`}
         description="Send a few lines about what you're building or fixing. We reply with an initial view and any questions, then a short call, then a fixed estimate for each phase."
       />

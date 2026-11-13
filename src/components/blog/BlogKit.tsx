@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, type MouseEvent, type ReactNode } from "react";
-import Link from "next/link";
+import Link from "@/components/Link";
 import {
   motion,
   useInView,

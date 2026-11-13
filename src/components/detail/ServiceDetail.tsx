@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import Link from "next/link";
+import Link from "@/components/Link";
 import { motion, useInView, useReducedMotion } from "motion/react";
 import {
   ArrowUpRight,
@@ -364,7 +364,7 @@ function MarketsSection() {
 }
 
 export function ServiceDetail({ data }: { data: ServiceDetailData }) {
-  const contactHref = `/contact?src=${encodeURIComponent(`/services/${data.slug}`)}`;
+  const contactHref = `/contact#src=${encodeURIComponent(`/services/${data.slug}`)}`;
 
   return (
     <>

@@ -5,6 +5,10 @@ import { industriesWithDetailPages, getIndustryBySlug } from "@/lib/industries-d
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 
+// Unknown slugs return the static 404 instead of rendering on demand (bots
+// probing URLs otherwise cost a function invocation and origin transfer each).
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return industriesWithDetailPages.map((industry) => ({ slug: industry.slug }));
 }

@@ -71,7 +71,7 @@ export default function BlogsPage() {
 
       <BlogSection id="all-articles" eyebrow="All articles" title={[<>Everything</>, <span key="w" className="italic text-orange">we&rsquo;ve written.</span>]}>
         <Suspense fallback={null}>
-          <BlogExplorer posts={rest.map(toSummary)} />
+          <BlogExplorer initial={rest.slice(0, 24).map(toSummary)} total={rest.length} />
         </Suspense>
       </BlogSection>
     </>

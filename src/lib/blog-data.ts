@@ -333,38 +333,12 @@ export type BlogPost = {
  * shipping every article body to the browser. */
 export type BlogSummary = Pick<
   BlogPost,
-  | "slug"
-  | "title"
-  | "excerpt"
-  | "category"
-  | "readingTime"
-  | "banner"
-  | "bannerAlt"
-  | "date"
+  "slug" | "title" | "excerpt" | "category" | "readingTime"
 > & { scene: BlogSceneData };
 
 export function toSummary(post: BlogPost): BlogSummary {
-  const {
-    slug,
-    title,
-    excerpt,
-    category,
-    readingTime,
-    banner,
-    bannerAlt,
-    date,
-  } = post;
-  return {
-    slug,
-    title,
-    excerpt,
-    category,
-    readingTime,
-    banner,
-    bannerAlt,
-    date,
-    scene: sceneFor(post),
-  };
+  const { slug, title, excerpt, category, readingTime } = post;
+  return { slug, title, excerpt, category, readingTime, scene: sceneFor(post) };
 }
 
 // Defined in blog-categories (no article data) so client components can

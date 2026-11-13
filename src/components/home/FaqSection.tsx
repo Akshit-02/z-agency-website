@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import Link from "next/link";
+import Link from "@/components/Link";
 import { motion, useInView, useReducedMotion } from "motion/react";
 import { Plus } from "lucide-react";
 import { Atmosphere } from "@/components/ui/Aesthetic";

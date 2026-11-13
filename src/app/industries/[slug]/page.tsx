@@ -13,6 +13,10 @@ import { posts } from "@/lib/blog-data";
 import { site } from "@/lib/site";
 import { metaDescription as metaDescriptionFor, pageTitle, socialMetadata } from "@/lib/seo";
 
+// Unknown slugs return the static 404 instead of rendering on demand (bots
+// probing URLs otherwise cost a function invocation and origin transfer each).
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return industriesWithDetailPages.map((industry) => ({ slug: industry.slug }));
 }
@@ -103,7 +107,7 @@ export default async function IndustryDetailPage({
       />
 
       <CTASection
-        primaryHref={`/contact?src=${encodeURIComponent(`/industries/${industry.slug}`)}`}
+        primaryHref={`/contact#src=${encodeURIComponent(`/industries/${industry.slug}`)}`}
         title={industry.ctaTitle ?? `Talk to us about ${industry.name.toLowerCase()}`}
         description={industry.ctaDescription}
         primaryLabel="Discuss your project"

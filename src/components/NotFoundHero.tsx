@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import Link from "next/link";
+import Link from "@/components/Link";
 import { motion, useInView, useReducedMotion } from "motion/react";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Atmosphere, EASE, Eyebrow, MaskLines, riseProps, serif } from "@/components/ui/Aesthetic";

@@ -1,7 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { useEffect, useMemo, useState } from "react";
+import { usePathname, useSearchParams } from "next/navigation";
 import { Search } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { BlogCard } from "./BlogCard";
@@ -12,14 +12,42 @@ const PAGE_SIZE = 24;
 
 const EASE = [0.25, 1, 0.5, 1] as const;
 
-export function BlogExplorer({ posts }: { posts: BlogSummary[] }) {
-  const router = useRouter();
+/**
+ * `initial` is the first page of cards, rendered into the HTML. The full list
+ * (`total` entries) is fetched from the static /blogs-index.json only once the
+ * visitor searches, filters or loads more, so a plain visit stays small.
+ */
+export function BlogExplorer({ initial, total }: { initial: BlogSummary[]; total: number }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
   const [category, setCategory] = useState<string>("All");
   const [query, setQuery] = useState(searchParams.get("q") ?? "");
   const [visible, setVisible] = useState(PAGE_SIZE);
+  const [all, setAll] = useState<BlogSummary[] | null>(null);
+  const [wantAll, setWantAll] = useState(false);
+
+  const filtering = category !== "All" || query.trim() !== "";
+  const needsAll = wantAll || filtering;
+
+  useEffect(() => {
+    if (!needsAll || all) return;
+    let cancelled = false;
+    fetch("/blogs-index.json")
+      .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
+      .then((data: BlogSummary[]) => {
+        if (!cancelled) setAll(data);
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [needsAll, all]);
+
+  const posts = all ?? initial;
+  // Only blank the grid while a filter is waiting on the full list; "Load
+  // more" keeps showing the first page until the rest arrives.
+  const loading = filtering && !all;
 
   function handleQueryChange(value: string) {
     setVisible(PAGE_SIZE);
@@ -30,9 +58,9 @@ export function BlogExplorer({ posts }: { posts: BlogSummary[] }) {
     } else {
       params.delete("q");
     }
-    router.replace(params.toString() ? `${pathname}?${params.toString()}` : pathname, {
-      scroll: false,
-    });
+    // Native replaceState keeps ?q= shareable without a server round trip per
+    // keystroke (router.replace refetched /blogs?q=… — a CDN miss each time).
+    window.history.replaceState(null, "", params.toString() ? `${pathname}?${params.toString()}` : pathname);
   }
 
   const filtered = useMemo(() => {
@@ -45,6 +73,7 @@ export function BlogExplorer({ posts }: { posts: BlogSummary[] }) {
       return matchesCategory && matchesQuery;
     });
   }, [posts, category, query]);
+  const filteredTotal = all || filtering ? filtered.length : total;
 
   return (
     <div>
@@ -94,7 +123,9 @@ export function BlogExplorer({ posts }: { posts: BlogSummary[] }) {
       </div>
 
       <div className="mt-10">
-        {filtered.length > 0 ? (
+        {loading ? (
+          <p className="py-16 text-center text-[1rem] text-ink-soft">Loading articles…</p>
+        ) : filtered.length > 0 ? (
           <AnimatePresence mode="wait">
             <motion.div
               key={`${category}-${query}`}
@@ -118,21 +149,24 @@ export function BlogExplorer({ posts }: { posts: BlogSummary[] }) {
             </motion.div>
           </AnimatePresence>
         ) : null}
-        {filtered.length > visible && (
+        {!loading && filteredTotal > visible && (
           <div className="mt-14 flex flex-col items-center gap-3">
             <button
               type="button"
-              onClick={() => setVisible((v) => v + PAGE_SIZE)}
+              onClick={() => {
+                setWantAll(true);
+                setVisible((v) => v + PAGE_SIZE);
+              }}
               className="rounded-full bg-ink px-7 py-3.5 text-[0.9rem] font-medium text-white transition-colors duration-300 hover:bg-ink/85"
             >
               Load more articles
             </button>
             <p className="text-[0.85rem] text-ink-soft">
-              Showing {Math.min(visible, filtered.length)} of {filtered.length}
+              Showing {Math.min(visible, filteredTotal)} of {filteredTotal}
             </p>
           </div>
         )}
-        {filtered.length === 0 && (
+        {!loading && filtered.length === 0 && (
           <p className="rounded-2xl border border-dashed border-ink/15 py-16 text-center text-[1rem] text-ink-soft">
             No articles match that search yet.
           </p>

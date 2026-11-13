@@ -8,7 +8,7 @@ import {
   useScroll,
   useTransform,
 } from "motion/react";
-import Link from "next/link";
+import Link from "@/components/Link";
 import { ArrowUpRight } from "lucide-react";
 import { AnimatedHeroWord } from "./AnimatedHeroWord";
 import { HeroOrbit } from "./HeroOrbit";
