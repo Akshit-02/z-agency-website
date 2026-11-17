@@ -72,7 +72,7 @@ export function listicle(o: ListicleInput): BlogPost {
       ...p.paragraphs,
       p.url
         ? `**Official website:** ${p.domain}`
-        : `**Learn more:** [[/services/${o.service}|${o.serviceLabel}]] and [[/about|about ZSpace Labs]].`,
+        : `**Learn more:** [[/services/${o.service}|${o.serviceLabel}${o.where ? "" : " in India"}]] and [[/about|about ZSpace Labs]].`,
       `**Who might consider it:** ${p.consider}`,
     ],
   }));
@@ -1179,7 +1179,7 @@ export const indiaSupportPosts: BlogPost[] = [
       {
         heading: "Start small, then expand",
         body: [
-          "The most reliable path is one workflow with a measurable cost, a baseline taken before building, a few weeks of monitored running with human review, and only then the next workflow. Our guide on [[/blogs/when-to-automate-a-business-process|when to automate a business process]] helps pick the first candidate, and our [[/services/ai-automation|AI automation service]] page shows how we scope that first workflow.",
+          "The most reliable path is one workflow with a measurable cost, a baseline taken before building, a few weeks of monitored running with human review, and only then the next workflow. Our guide on [[/blogs/when-to-automate-a-business-process|when to automate a business process]] helps pick the first candidate, and our page on [[/services/ai-automation|AI automation services in India]] shows how we scope that first workflow.",
         ],
         cta: { title: "Want a second opinion on what to automate?", description: "Describe the workflow and we'll tell you honestly whether AI, plain automation or neither fits. See our [[/services/ai-automation|AI automation service]]." },
       },
@@ -1263,7 +1263,7 @@ export const indiaSupportPosts: BlogPost[] = [
       {
         heading: "How to compare two quotes",
         body: [
-          "Two quotes for the same brief can differ several times over because they describe different work. Put them side by side on the same lines before comparing totals. Our [[/services/ui-ux-design|UI/UX design service]] page lists what we include, if you want a third reference point.",
+          "Two quotes for the same brief can differ several times over because they describe different work. Put them side by side on the same lines before comparing totals. The page for our [[/services/ui-ux-design|UI/UX design agency work]] lists what we include, if you want a third reference point.",
         ],
         table: {
           headers: ["Compare", "What to ask", "Why it changes the price"],
@@ -1387,7 +1387,7 @@ export const indiaSupportPosts: BlogPost[] = [
         heading: "Match the agency to your funnel",
         body: [
           "Ecommerce CRO focuses on product pages, carts and checkout; SaaS CRO on messaging, signup and trial-to-paid; lead-generation CRO on forms, trust and follow-up speed. Some agencies combine CRO with paid ads or SEO, which suits businesses wanting one marketing partner.",
-          "For a comparison of CRO agencies in India, see our disclosed shortlist of [[/blogs/best-cro-agencies-in-india|CRO agencies in India]]. If you want to see how we run audits, our [[/services/cro-audit|CRO audit service]] explains the process and what you receive.",
+          "For a comparison of CRO agencies in India, see our disclosed shortlist of [[/blogs/best-cro-agencies-in-india|CRO agencies in India]]. If you want to see how we run audits, our [[/services/cro-audit|CRO audit and optimisation service]] explains the process and what you receive.",
         ],
         cta: { title: "Not sure where visitors drop off?", description: "Start with an audit. See our [[/services/cro-audit|CRO audit service]]." },
       },

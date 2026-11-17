@@ -25,6 +25,14 @@ export const homeFaqs: { q: string; a: string }[] = [
     a: "Yes. We can set up, design, customise and optimise Shopify stores, including custom themes, sections, functionality, third-party apps, product experiences and conversion-focused improvements.",
   },
   {
+    q: "Is ZSpace Labs only a Shopify development company?",
+    a: "No. Shopify development is a large part of our work with ecommerce and D2C brands, but the same team builds custom websites and web apps, iOS and Android apps, UI/UX design, CRO audits and AI automation. Many projects combine two or more of these, such as a Shopify build followed by a CRO audit.",
+  },
+  {
+    q: "Do you only work with businesses in India?",
+    a: "No. We are remote-first and based in India, and we also work with clients in the UAE, the UK, Australia and Singapore. Privacy rules, languages and payment methods for each market are planned in from the start rather than added later.",
+  },
+  {
     q: "Can ZSpace Labs build mobile apps for iOS and Android?",
     a: "Yes. We design and develop mobile apps for iOS and Android, including cross-platform applications where appropriate. We can help with product structure, UX/UI, development, API integrations and launch preparation.",
   },

@@ -525,7 +525,8 @@ export function WhatWeBuild() {
               className="mt-6 max-w-[28rem] text-[1.02rem] leading-relaxed text-white/60"
               {...rise(headOn, 0.4)}
             >
-              Digital products, experiences and systems that make businesses
+              Shopify stores, websites, mobile apps, UI/UX, CRO and AI
+              automation: digital products and systems that make businesses
               easier to run and customers happier to use.
             </motion.p>
           </div>

@@ -84,11 +84,21 @@ export function Hero() {
             filter: contentFilter,
           }}
         >
+          {/* The keyword line sits inside the h1 so the page's main heading
+              states the primary positioning; the serif line stays the visual
+              headline. */}
           <h1
-            aria-label="Meet ZSpace Labs, your website, app, store and automation builder."
+            aria-label="Best Shopify Development Company in India for Growing Businesses. Meet ZSpace Labs, your website, app, store and automation builder."
             className="hero-rise text-[2.35rem] leading-[1.1] tracking-[-0.03em] text-ink min-[420px]:text-[2.7rem] sm:text-[4rem] lg:text-[5rem]"
             style={{ fontFamily: "var(--font-newsreader), Georgia, serif", animationDelay: "0.5s" }}
           >
+            <span className="mb-6 flex justify-center sm:mb-8">
+              <span className="inline-flex max-w-[34rem] items-center gap-2.5 rounded-full border border-ink/10 bg-white/70 px-4 py-2 text-balance font-body text-[0.8rem] font-medium leading-snug tracking-normal text-ink/75 backdrop-blur-sm sm:text-[0.9rem]">
+                <span aria-hidden className="h-1.5 w-1.5 shrink-0 rounded-full bg-orange" />
+                Best Shopify Development Company in India for Growing Businesses
+              </span>
+            </span>
+            <span className="sr-only">. </span>
             <span className="block">Meet ZSpace Labs,</span>{" "}
             <AnimatedHeroWord phrases={phrases} paused={r} />
           </h1>
@@ -96,7 +106,7 @@ export function Hero() {
           <p {...heroRise(0.7, "mt-6 max-w-[40rem] text-pretty text-[1rem] leading-relaxed text-ink/55 sm:text-[1.12rem]")}>
             We turn good ideas into digital things people actually enjoy using.{" "}
             <br className="hidden sm:block" />
-            Websites, apps, Shopify stores and smart automations,{" "}
+            Shopify stores, websites, apps and smart automations,{" "}
             <br className="hidden sm:block" />
             all thoughtfully built around your business.
           </p>

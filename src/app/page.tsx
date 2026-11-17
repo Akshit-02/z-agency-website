@@ -14,9 +14,9 @@ import { homeFaqs } from "@/lib/home-faqs";
 import { StructuredData } from "@/components/StructuredData";
 import { ORG_ID, WEBSITE_ID, socialMetadata } from "@/lib/seo";
 
-const title = `${site.name} | Web, App, Shopify & AI Automation Studio in India`;
+const title = `Best Shopify & Web Development Company in India — ${site.name}`;
 const description =
-  "ZSpace Labs is a technology and digital product studio serving businesses across India: websites, mobile apps, Shopify, UI/UX, AI automation and CRO.";
+  "Looking for the best Shopify development company in India? ZSpace Labs builds Shopify stores, websites, apps, UI/UX, CRO and AI automation for growing brands.";
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -34,7 +34,7 @@ export default function HomePage() {
           "@type": "WebPage",
           "@id": `${site.url}/#webpage`,
           url: site.url,
-          name: `${site.name} — Website, App, Shopify & AI Automation Studio`,
+          name: title,
           description: site.description,
           isPartOf: { "@id": WEBSITE_ID },
           about: { "@id": ORG_ID },

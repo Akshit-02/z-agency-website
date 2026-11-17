@@ -46,7 +46,7 @@ export const services: Service[] = [
     summary:
       "Fast, scalable websites and web applications built on modern frameworks, not templates.",
     heroCopy:
-      "Your website is the one property you fully control. We build it to load fast, rank well, and hold up as your product and traffic grow.",
+      "ZSpace Labs is a website development company in India building fast, search-friendly websites and web applications for startups, growing businesses and companies replacing an older site. Your website is the one property you fully control, so we build it to load fast, rank well and hold up as your traffic and features grow.",
     whatWeDo: [
       "Marketing sites, product sites and web applications built with modern frameworks like Next.js and React.",
       "Custom design systems so new pages and features stay consistent as the site grows.",
@@ -86,10 +86,10 @@ export const services: Service[] = [
       "We build on frameworks used by teams shipping at scale, not locked-in page builders.",
       "Every project ships with a component system your internal team can extend later.",
     ],
-    seoTitle: "Web Development Company in India | Next.js & React",
-    metaDescription: "Web development company serving businesses across India: fast Next.js and React websites, custom web apps, ecommerce builds, redesigns and integrations.",
+    seoTitle: "Best Website Development Company in India",
+    metaDescription: "ZSpace Labs is a website development company in India building fast, SEO-ready Next.js websites and web apps around your business goals, from plan to launch.",
     india: {
-      "eyebrow": "Web development company in India",
+      "eyebrow": "Best website development company in India",
       "h1": "A web development partner for businesses ready to build better.",
       "heading": "Websites for how India actually browses and buys",
       "intro": [
@@ -196,6 +196,10 @@ export const services: Service[] = [
         q: "What does a web development company in India typically charge?",
         a: "Pricing varies widely across Indian agencies and depends on scope: number of page templates, custom features, integrations, content migration and whether a web application is involved. We give a fixed estimate per phase after a short discovery call rather than a one-size price. Our website development cost guide explains the main cost drivers.",
       },
+      {
+        q: "How do I choose the right website development company in India?",
+        a: "Look past the portfolio at how the company works: whether one team handles design and development, how scope and pricing are set, what is included for SEO, performance and content migration, who owns the code and hosting, and what happens after launch. Ask for a written scope before comparing prices. No agency is the best fit for every project, so compare two or three on the same brief.",
+      },
     ],
   },
   {
@@ -208,7 +212,7 @@ export const services: Service[] = [
     summary:
       "Polished native and cross-platform mobile applications for startups and growing businesses.",
     heroCopy:
-      "A mobile app is a commitment to your users. We design and build apps that feel fast, native and considered, from first open to daily use.",
+      "ZSpace Labs is a mobile app development company in India that designs and builds iOS, Android and cross-platform apps for startups and growing businesses, from first scope to store launch. An app is a commitment to your users, so we make it feel fast and considered from first open to daily use.",
     whatWeDo: [
       "Cross-platform apps for iOS and Android built with React Native, plus native development where it matters.",
       "App architecture planning for offline support, push notifications, payments and authentication.",
@@ -248,10 +252,10 @@ export const services: Service[] = [
       "Cross-platform expertise means one investment reaches both iOS and Android.",
       "We stay involved past launch to handle updates, OS changes and store requirements.",
     ],
-    seoTitle: "Mobile App Development Company in India | iOS & Android",
-    metaDescription: "Mobile app development company serving businesses across India: iOS and Android apps with React Native, native where needed, from scoping to store launch.",
+    seoTitle: "Best Mobile App Development Company in India",
+    metaDescription: "Looking for a mobile app development company in India? ZSpace Labs designs and builds iOS, Android and cross-platform apps, from scoping to store launch.",
     india: {
-      "eyebrow": "Mobile app development company in India",
+      "eyebrow": "Best mobile app development company in India",
       "h1": "Mobile apps built around the people who use them.",
       "heading": "Building apps for India's mobile-first users",
       "intro": [
@@ -358,6 +362,10 @@ export const services: Service[] = [
         q: "Should we build for Android first in India?",
         a: "Often, yes, because Android has most of the market. With React Native we can usually ship Android and iOS together at little extra cost. If budget is tight, launching on Android first and adding iOS later is a reasonable path we can plan for.",
       },
+      {
+        q: "How do I choose a mobile app development company in India?",
+        a: "Ask how they decide between native and cross-platform for your app, who builds the backend and admin panel, how they test on the mid-range Android phones many Indian users carry, how store submission is handled and what support looks like after launch. A short discovery phase before a fixed estimate is a good sign: it means the price is based on scope rather than a guess.",
+      },
     ],
   },
   {
@@ -370,7 +378,7 @@ export const services: Service[] = [
     summary:
       "Automate the repetitive parts of your business using AI, APIs and connected systems.",
     heroCopy:
-      "Most businesses lose hours a week to work that a system could handle. We find that work and build the automation that removes it.",
+      "ZSpace Labs is an AI automation agency in India building workflow automations, AI agents and integrations for sales, support and operations teams. Most businesses lose hours a week to work a system could handle. We find that work and build the automation that removes it.",
     whatWeDo: [
       "Map manual, repetitive processes across sales, support, operations and content.",
       "Build automations connecting your existing tools, APIs and internal data.",
@@ -410,10 +418,10 @@ export const services: Service[] = [
       "Automations are engineered like software, with monitoring and fallbacks, not fragile scripts.",
       "We are honest about where AI helps and where it does not.",
     ],
-    seoTitle: "AI Automation Services in India | AI Agents & Workflows",
+    seoTitle: "Best AI Automation Agency in India | Workflows & Agents",
     metaDescription: "AI automation services for businesses across India: workflow automation, AI agents, CRM and document automation, built into the tools your team already uses.",
     india: {
-      "eyebrow": "AI automation agency in India",
+      "eyebrow": "Best AI automation agency in India",
       "h1": "Less repetitive work. More room to move.",
       "heading": "Automation that fits how Indian teams already work",
       "intro": [
@@ -524,6 +532,10 @@ export const services: Service[] = [
         q: "Is our data safe if we use AI automation?",
         a: "We design automations so only the data a step needs is sent to an AI model, use providers and settings that don't train on your data where available, keep permissions enforced in your systems, avoid storing sensitive data in prompts or logs, and log every run. Before handling personal data we go through the data protection rules that apply to you, such as India's DPDP Act, UK GDPR or the UAE PDPL.",
       },
+      {
+        q: "How do I choose an AI automation agency in India?",
+        a: "Choose one that starts with the process, not the tool. A good agency asks what the work costs you today, proposes one measurable workflow first, explains where people stay in the loop and says plainly when simple automation, or no automation, is the better answer. Ask how your data is handled and who maintains the workflow after launch.",
+      },
     ],
   },
   {
@@ -536,7 +548,7 @@ export const services: Service[] = [
     summary:
       "Interfaces and digital experiences that are clear, considered and built to convert.",
     heroCopy:
-      "Good design is not decoration. It is the difference between a product people understand instantly and one they abandon.",
+      "ZSpace Labs is a UI/UX design agency in India for founders and product teams designing websites, mobile apps, SaaS products and online stores. Good design is not decoration. It is the difference between a product people understand instantly and one they abandon.",
     whatWeDo: [
       "Product and website UI/UX design, from early concept through final interface.",
       "User research and flow mapping to understand what the interface actually needs to do.",
@@ -576,10 +588,10 @@ export const services: Service[] = [
       "Our design decisions are grounded in usability, not just visual trend.",
       "We can carry the design directly into development under one roof.",
     ],
-    seoTitle: "UI/UX Design Agency in India | Product Design",
-    metaDescription: "UI/UX design agency serving businesses across India: user research, flows, wireframes, prototypes, interface design, design systems and UX audits.",
+    seoTitle: "Best UI/UX Design Agency in India | Web & App Design",
+    metaDescription: "UI/UX design agency in India for websites, mobile apps and SaaS products: user research, flows, wireframes, prototypes, interface design and design systems.",
     india: {
-      "eyebrow": "UI/UX design agency in India",
+      "eyebrow": "Best UI/UX design agency in India",
       "h1": "Digital products should feel as good as they work.",
       "heading": "Design for the full range of people who use your product",
       "intro": [
@@ -686,19 +698,23 @@ export const services: Service[] = [
         q: "Do you design for regional languages?",
         a: "Yes. We design layouts and components that handle longer or differently structured text, and plan content so a regional-language version can be added without redesigning screens.",
       },
+      {
+        q: "What should I look for in a UI/UX design agency in India?",
+        a: "Check that the agency shows its process and not only finished screens: research, user flows, wireframes and usability testing. Ask how designs are handed to developers, whether you receive a reusable design system and whether they design for real devices and, where relevant, regional languages. An agency that also builds can keep design decisions intact through development.",
+      },
     ],
   },
   {
     slug: "shopify-development",
     industrySlugs: ["d2c-consumer", "beauty-personal-care", "fashion-apparel", "ecommerce"],
     index: "05",
-    name: "Shopify Store Setup & Optimization",
+    name: "Shopify Development",
     short: "Shopify builds & CRO",
     accent: "blue",
     summary:
       "Build, redesign and optimize Shopify stores for better experience, speed and conversions.",
     heroCopy:
-      "A Shopify store is only as good as the experience between browsing and checkout. We build and tune stores to close that gap.",
+      "ZSpace Labs is a Shopify development company in India that builds, redesigns and optimises Shopify and Shopify Plus stores for D2C and retail brands. A store is only as good as the experience between browsing and checkout, so we build and tune every store to close that gap.",
     whatWeDo: [
       "New Shopify store builds, from theme development to checkout configuration.",
       "Redesigns of underperforming stores, focused on speed and clarity.",
@@ -738,11 +754,11 @@ export const services: Service[] = [
       "Design and development are handled together, so the store looks as good as it performs.",
       "We focus on the metrics that affect revenue, not surface-level polish alone.",
     ],
-    seoTitle: "Shopify Development Company in India | Stores & Themes",
-    metaDescription: "Shopify development company serving brands across India: store builds, custom themes and sections, redesigns, app integrations, speed and conversion work.",
+    seoTitle: "Best Shopify Development Company in India",
+    metaDescription: "Looking for a Shopify development company in India? ZSpace Labs builds custom stores, themes and integrations for D2C brands, with speed and conversion in mind.",
     india: {
-      "eyebrow": "Shopify development company in India",
-      "h1": "Shopify experiences built to make buying easier.",
+      "eyebrow": "Best Shopify development company in India",
+      "h1": "Shopify stores built for growing ecommerce brands.",
       "heading": "Shopify stores for Indian D2C and retail brands",
       "intro": [
             "A good Shopify store is more than a nice theme. It is fast on mobile, makes products easy to find and compare, answers delivery and returns questions before they become doubts, and gets out of the way at checkout. We build and improve Shopify stores for brands across India, remotely.",
@@ -848,19 +864,23 @@ export const services: Service[] = [
         q: "Can you set up COD, UPI and GST invoicing on Shopify?",
         a: "Yes. These are configured through Shopify's settings, your payment provider and invoicing apps or integrations. We set them up, test the flows end to end and document how they work for your team.",
       },
+      {
+        q: "How do I choose a Shopify development company in India?",
+        a: "Look for work on stores similar to yours and comfort with Indian commerce needs such as COD, UPI, GST invoicing and courier integrations. Ask when they would customise a theme versus build custom sections, how they keep app bloat and page speed under control, what post-launch support looks like and whether they can work with Shopify Plus if you will need it later.",
+      },
     ],
   },
   {
     slug: "cro-audit",
     industrySlugs: ["d2c-consumer", "beauty-personal-care", "ecommerce", "travel-hospitality", "real-estate"],
     index: "06",
-    name: "CRO Audit",
+    name: "CRO Audit & Optimisation",
     short: "Conversion audits",
     accent: "orange",
     summary:
       "A structured audit that identifies exactly where your website or store is losing customers.",
     heroCopy:
-      "Traffic is not the problem for most businesses. Conversion is. We find out exactly where visitors are dropping off, and why.",
+      "ZSpace Labs is a CRO audit agency in India for ecommerce brands, Shopify stores and lead-generation businesses with steady traffic but disappointing conversions. We find exactly where visitors drop off and why, then, if you want, implement and test the fixes.",
     whatWeDo: [
       "Full-funnel audit of your website or store, from landing page to conversion.",
       "Heuristic and usability review against conversion best practices.",
@@ -900,10 +920,10 @@ export const services: Service[] = [
       "We prioritize by impact, so your team knows exactly what to fix first.",
       "We can implement the recommendations directly if you want a single team handling both.",
     ],
-    seoTitle: "CRO Agency in India | Conversion Rate Optimisation",
-    metaDescription: "CRO agency serving businesses across India: conversion audits, funnel and checkout analysis, landing page and product page optimisation and A/B testing.",
+    seoTitle: "Best CRO Audit Agency in India | Conversion Optimisation",
+    metaDescription: "Find what's stopping your website or Shopify store from converting. ZSpace Labs runs CRO audits for Indian businesses, then helps fix and test what matters.",
     india: {
-      "eyebrow": "CRO agency in India",
+      "eyebrow": "Best CRO audit agency in India",
       "h1": "Make more of the traffic you already have.",
       "heading": "Conversion work grounded in your own data",
       "intro": [
@@ -987,6 +1007,10 @@ export const services: Service[] = [
         a: "Yes, implementation is available as a follow-on engagement, but the audit stands alone as a usable deliverable either way.",
       },
       {
+        q: "What is the difference between a CRO audit and ongoing CRO?",
+        a: "A CRO audit is a fixed review, usually one to two weeks, that ends with a prioritised report of issues and test ideas. Ongoing conversion rate optimisation is the follow-on work: implementing fixes, improving measurement, running A/B tests where traffic allows and reviewing results each cycle. You can buy the audit on its own; ongoing optimisation is optional.",
+      },
+      {
         q: "What is a good conversion rate?",
         a: "It varies widely by industry, traffic source, price point and device, so averages are a weak target. We focus on your own funnel: where people drop off, and how each step compares over time.",
       },
@@ -1009,6 +1033,10 @@ export const services: Service[] = [
       {
         q: "How much traffic do we need for A/B testing?",
         a: "It depends on your current conversion rate and the size of change you want to detect. Lower-traffic sites usually can't reach reliable test results in a reasonable time. For them we prioritise high-confidence fixes and measure before and after instead of running underpowered tests.",
+      },
+      {
+        q: "How do I choose a CRO agency in India?",
+        a: "Be wary of anyone who promises a percentage uplift before seeing your data. A good CRO agency checks your tracking first, explains how it prioritises fixes, sizes tests to your traffic and can show what an audit report looks like. It also helps if the same team can design and build the fixes, so recommendations don't stall.",
       },
     ],
   },
