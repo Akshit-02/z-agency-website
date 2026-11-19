@@ -4,6 +4,8 @@ export type Service = {
   slug: string;
   index: string;
   name: string;
+  /** The search phrase this page targets, written as it reads mid-sentence; used in section headings. */
+  keyword: string;
   short: string;
   accent: ServiceAccent;
   summary: string;
@@ -41,6 +43,7 @@ export const services: Service[] = [
     industrySlugs: ["real-estate", "manufacturing", "saas-technology", "fintech", "education-edtech", "travel-hospitality", "automotive-mobility"],
     index: "01",
     name: "Full-Stack Website Development",
+    keyword: "website development",
     short: "Websites and web apps",
     accent: "blue",
     summary:
@@ -157,7 +160,10 @@ export const services: Service[] = [
           "website-development-process",
           "nextjs-website-development",
           "best-web-development-agencies-in-india",
-          "how-to-choose-website-development-company"
+          "how-to-choose-website-development-company",
+          "website-development-timeline",
+          "wordpress-vs-nextjs",
+          "website-maintenance-guide"
     ],
     faq: [
       {
@@ -207,6 +213,7 @@ export const services: Service[] = [
     industrySlugs: ["fashion-apparel", "fintech", "healthcare-healthtech", "education-edtech", "travel-hospitality"],
     index: "02",
     name: "Mobile App Development",
+    keyword: "mobile app development",
     short: "iOS and Android apps",
     accent: "orange",
     summary:
@@ -323,7 +330,10 @@ export const services: Service[] = [
           "native-vs-cross-platform-app-development",
           "react-native-app-development",
           "best-mobile-app-development-companies-in-india",
-          "how-to-choose-a-mobile-app-development-company"
+          "how-to-choose-a-mobile-app-development-company",
+          "mobile-app-development-process",
+          "flutter-vs-react-native",
+          "mobile-app-development-timeline"
     ],
     faq: [
       {
@@ -373,6 +383,7 @@ export const services: Service[] = [
     industrySlugs: ["manufacturing", "saas-technology", "healthcare-healthtech", "ecommerce", "automotive-mobility", "real-estate"],
     index: "03",
     name: "AI Automation",
+    keyword: "AI automation",
     short: "Automated workflows",
     accent: "blue",
     summary:
@@ -489,7 +500,10 @@ export const services: Service[] = [
           "ai-agent-development",
           "when-to-automate-a-business-process",
           "best-ai-automation-agencies-in-india",
-          "how-to-choose-an-ai-automation-agency"
+          "how-to-choose-an-ai-automation-agency",
+          "build-vs-buy-ai-agents",
+          "ai-automation-roi",
+          "workflow-automation-vs-rpa"
     ],
     faq: [
       {
@@ -543,6 +557,7 @@ export const services: Service[] = [
     industrySlugs: ["d2c-consumer", "beauty-personal-care", "fashion-apparel", "fintech", "saas-technology", "healthcare-healthtech", "real-estate"],
     index: "04",
     name: "UI/UX Design",
+    keyword: "UI/UX design",
     short: "Product & interface design",
     accent: "orange",
     summary:
@@ -659,7 +674,10 @@ export const services: Service[] = [
           "ux-audit",
           "design-systems-for-teams-that-move-fast",
           "best-ui-ux-design-agencies-in-india",
-          "how-to-choose-a-ui-ux-design-agency"
+          "how-to-choose-a-ui-ux-design-agency",
+          "ui-design-vs-ux-design",
+          "usability-testing",
+          "user-flow-design"
     ],
     faq: [
       {
@@ -709,6 +727,7 @@ export const services: Service[] = [
     industrySlugs: ["d2c-consumer", "beauty-personal-care", "fashion-apparel", "ecommerce"],
     index: "05",
     name: "Shopify Development",
+    keyword: "Shopify development",
     short: "Shopify builds & CRO",
     accent: "blue",
     summary:
@@ -825,7 +844,10 @@ export const services: Service[] = [
           "shopify-development-cost",
           "shopify-store-redesign-guide",
           "best-shopify-development-agencies-in-india",
-          "how-to-choose-a-shopify-development-agency"
+          "how-to-choose-a-shopify-development-agency",
+          "shopify-custom-app-development-guide",
+          "shopify-plus-development",
+          "migrating-to-shopify-guide"
     ],
     faq: [
       {
@@ -875,6 +897,7 @@ export const services: Service[] = [
     industrySlugs: ["d2c-consumer", "beauty-personal-care", "ecommerce", "travel-hospitality", "real-estate"],
     index: "06",
     name: "CRO Audit & Optimisation",
+    keyword: "CRO",
     short: "Conversion audits",
     accent: "orange",
     summary:
@@ -991,7 +1014,10 @@ export const services: Service[] = [
           "shopify-cro-audit",
           "ux-audit",
           "best-cro-agencies-in-india",
-          "how-to-choose-a-cro-agency"
+          "how-to-choose-a-cro-agency",
+          "why-customers-abandon-checkout",
+          "ecommerce-ab-testing",
+          "cro-strategy-low-traffic-websites"
     ],
     faq: [
       {

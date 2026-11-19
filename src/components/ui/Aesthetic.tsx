@@ -140,6 +140,9 @@ export function MaskLines({
           >
             {line}
           </motion.span>
+          {/* Lines are separate blocks; without a space their text runs together ("Where thingsusually break.")
+              for search engines and screen readers that read the heading as one string. */}
+          {i < lines.length - 1 ? " " : null}
         </span>
       ))}
     </>

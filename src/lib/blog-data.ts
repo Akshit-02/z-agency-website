@@ -2,6 +2,7 @@ import type { BlogBannerVariant } from "@/components/BlogBanner";
 import { sceneFor, type BlogSceneData, type SceneKind } from "./blog-scenes";
 import type { IndustryVisual, IndustryAccent } from "@/lib/industries-data";
 import type { CalloutType } from "@/components/Callout";
+import { isNoindexSlug } from "./noindex";
 import { aiAgentPosts } from "./blog-data-ai-agents";
 import { aiAgentPosts2 } from "./blog-data-ai-agents-2";
 import { aiAgentPosts3 } from "./blog-data-ai-agents-3";
@@ -355,7 +356,7 @@ export const posts: BlogPost[] = [
       "Why page speed affects conversions more than most design changes, how to measure what real visitors experience, and which speed fixes to make first.",
     category: "Web Development",
     banner: "speed",
-    date: "2026-02-18",
+    date: "2026-09-15",
     updated: "2026-10-03",
     readingTime: "6 min read",
     relatedServiceSlugs: ["website-development", "cro-audit"],
@@ -497,7 +498,7 @@ export const posts: BlogPost[] = [
       "A practical framework for deciding which business processes to automate first: frequency, time cost, stability, error impact and data, with a simple scoring method.",
     category: "AI & Automation",
     banner: "automation",
-    date: "2026-01-27",
+    date: "2026-09-15",
     updated: "2026-10-03",
     readingTime: "5 min read",
     relatedServiceSlugs: ["ai-automation", "cro-audit"],
@@ -647,7 +648,7 @@ export const posts: BlogPost[] = [
       "A practical Shopify app checklist: how to evaluate a new app before installing it, audit your current app stack and remove apps safely without hurting speed or data.",
     category: "Shopify & Ecommerce",
     banner: "commerce",
-    date: "2026-01-08",
+    date: "2026-09-15",
     updated: "2026-10-03",
     readingTime: "4 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
@@ -771,7 +772,7 @@ export const posts: BlogPost[] = [
       "What a design system includes, when a startup should invest in one, and how to fix an inconsistent website with an inventory, CMS blocks and light governance.",
     category: "UI/UX",
     banner: "designsystemflow",
-    date: "2025-12-15",
+    date: "2026-09-15",
     updated: "2026-10-15",
     readingTime: "11 min read",
     relatedServiceSlugs: ["ui-ux-design", "website-development"],
@@ -1046,7 +1047,7 @@ export const posts: BlogPost[] = [
       "How to estimate what checkout friction costs your store using your own analytics, where checkout drop-off usually comes from and which fixes to prioritise.",
     category: "CRO",
     banner: "funnel",
-    date: "2025-11-30",
+    date: "2026-09-15",
     updated: "2026-10-03",
     readingTime: "6 min read",
     relatedServiceSlugs: ["cro-audit", "shopify-development"],
@@ -1183,7 +1184,7 @@ export const posts: BlogPost[] = [
       "How to design mobile app onboarding that reaches core value fast: less sign-up friction, timely permission requests, activation metrics and 15 patterns.",
     category: "Mobile Apps",
     banner: "onboarding",
-    date: "2025-11-10",
+    date: "2026-09-15",
     updated: "2026-10-28",
     readingTime: "12 min read",
     relatedServiceSlugs: [
@@ -1386,7 +1387,7 @@ export const posts: BlogPost[] = [
     excerpt: "How to set up a Shopify store step by step: plan, payments, shipping, taxes, theme, products, domain and a test order, in the order that avoids rework.",
     category: "Shopify & Ecommerce",
     banner: "storefront",
-    date: "2026-03-01",
+    date: "2026-09-15",
     updated: "2026-10-22",
     readingTime: "11 min read",
     relatedServiceSlugs: ["shopify-development", "ui-ux-design"],
@@ -1555,7 +1556,7 @@ export const posts: BlogPost[] = [
       "Shopify's plan pricing is the smallest line item in most real store budgets. Here is what the total cost actually includes, and where it goes.",
     category: "Shopify & Ecommerce",
     banner: "ledger",
-    date: "2026-03-02",
+    date: "2026-09-15",
     updated: "2026-10-03",
     readingTime: "9 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
@@ -1722,7 +1723,7 @@ export const posts: BlogPost[] = [
       "Beyond picking a theme, a proper Shopify build follows a fairly consistent set of stages. Here is what each one actually involves.",
     category: "Shopify & Ecommerce",
     banner: "roadmap",
-    date: "2026-03-03",
+    date: "2026-09-15",
     updated: "2026-10-03",
     readingTime: "7 min read",
     relatedServiceSlugs: ["shopify-development", "ui-ux-design"],
@@ -1828,7 +1829,7 @@ export const posts: BlogPost[] = [
       'Most new stores install too many apps too early. Here is how to think about the first app stack by category, not by "best of" lists.',
     category: "Shopify & Ecommerce",
     banner: "appshelf",
-    date: "2026-03-05",
+    date: "2026-09-15",
     updated: "2026-10-03",
     readingTime: "7 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
@@ -1937,7 +1938,7 @@ export const posts: BlogPost[] = [
       "Every Shopify integration is built on the same handful of building blocks. Understanding them makes it much easier to scope integration work correctly.",
     category: "Shopify & Ecommerce",
     banner: "integration",
-    date: "2026-03-06",
+    date: "2026-09-15",
     updated: "2026-10-03",
     readingTime: "8 min read",
     relatedServiceSlugs: ["shopify-development", "ai-automation"],
@@ -2044,7 +2045,7 @@ export const posts: BlogPost[] = [
     excerpt: "A weekly, monthly, quarterly and annual Shopify maintenance checklist covering orders, theme and app updates, speed, security, SEO and data exports.",
     category: "Shopify & Ecommerce",
     banner: "gauge",
-    date: "2026-03-07",
+    date: "2026-09-15",
     updated: "2026-10-22",
     readingTime: "10 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
@@ -2198,7 +2199,7 @@ export const posts: BlogPost[] = [
     sceneKind: "speed",
     bannerAlt:
       "Waterfall of page requests on a Shopify product page, showing the hero image, theme scripts and app scripts competing to load.",
-    date: "2026-03-08",
+    date: "2026-09-15",
     updated: "2026-10-14",
     readingTime: "10 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
@@ -2419,7 +2420,7 @@ export const posts: BlogPost[] = [
       "The lowest quote and the best portfolio are both misleading filters. Here is what actually predicts whether a Shopify agency will deliver.",
     category: "Shopify & Ecommerce",
     banner: "framework",
-    date: "2026-04-01",
+    date: "2026-09-15",
     updated: "2026-10-03",
     readingTime: "9 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
@@ -2553,7 +2554,7 @@ export const posts: BlogPost[] = [
     excerpt: "Custom Shopify app development: when a custom app beats a third-party app, how a build works, the Plus limit on Functions and what maintenance involves.",
     category: "Shopify & Ecommerce",
     banner: "appblocks",
-    date: "2026-04-04",
+    date: "2026-09-15",
     updated: "2026-10-22",
     readingTime: "11 min read",
     relatedServiceSlugs: ["shopify-development", "ai-automation"],
@@ -2750,7 +2751,7 @@ export const posts: BlogPost[] = [
     sceneKind: "orders",
     bannerAlt:
       "Shopify at the centre of a hub connected to payments, tax, inventory, fulfilment, ERP and accounting, and marketing systems.",
-    date: "2026-04-05",
+    date: "2026-09-15",
     updated: "2026-10-14",
     readingTime: "10 min read",
     relatedServiceSlugs: ["shopify-development", "ai-automation"],
@@ -2981,7 +2982,7 @@ export const posts: BlogPost[] = [
       "A practical Shopify CRO guide: measure the funnel, find where shoppers drop off, improve each stage from homepage to checkout, and prioritize and test changes.",
     category: "Shopify & Ecommerce",
     banner: "shopifycroflow",
-    date: "2026-04-08",
+    date: "2026-09-15",
     readingTime: "16 min read",
     relatedServiceSlugs: ["cro-audit", "shopify-development", "ui-ux-design"],
     relatedIndustrySlugs: ["d2c-consumer", "ecommerce", "fashion-apparel"],
@@ -3212,7 +3213,7 @@ export const posts: BlogPost[] = [
       "How to redesign an existing Shopify store: spot the real problems, set a baseline, choose a theme or custom build, protect SEO, launch safely and measure.",
     category: "Shopify & Ecommerce",
     banner: "shopifyredesignflow",
-    date: "2026-04-10",
+    date: "2026-09-15",
     readingTime: "16 min read",
     relatedServiceSlugs: ["shopify-development", "ui-ux-design", "cro-audit"],
     relatedIndustrySlugs: ["d2c-consumer", "ecommerce", "fashion-apparel"],
@@ -3799,6 +3800,16 @@ export function getPostBySlug(slug: string) {
   return posts.find((post) => post.slug === slug);
 }
 
+const titleWordCache = new Map<string, Set<string>>();
+function words(p: BlogPost): Set<string> {
+  let w = titleWordCache.get(p.slug);
+  if (!w) {
+    w = new Set(p.title.toLowerCase().match(/[a-z0-9]{4,}/g) ?? []);
+    titleWordCache.set(p.slug, w);
+  }
+  return w;
+}
+
 export function getRelatedPosts(post: BlogPost, count = 3): BlogPost[] {
   const pool = posts.filter((p) => p.slug !== post.slug);
 
@@ -3807,18 +3818,19 @@ export function getRelatedPosts(post: BlogPost, count = 3): BlogPost[] {
     .filter((p): p is BlogPost => Boolean(p));
   if (curated.length >= count) return curated.slice(0, count);
 
-  const sameCategory = pool.filter((p) => p.category === post.category);
-  const sharedService = pool.filter(
-    (p) =>
-      !sameCategory.includes(p) &&
-      p.relatedServiceSlugs.some((s) => post.relatedServiceSlugs.includes(s)),
-  );
-  const rest = pool.filter(
-    (p) => !sameCategory.includes(p) && !sharedService.includes(p),
-  );
+  // Automatic picks skip noindexed articles and rank by relevance (shared primary service, shared services, shared
+  // title words, same category) rather than array order, which sent every article in a category to the same few.
+  const own = words(post);
+  const score = (p: BlogPost) =>
+    (p.relatedServiceSlugs[0] === post.relatedServiceSlugs[0] ? 4 : 0) +
+    p.relatedServiceSlugs.filter((s) => post.relatedServiceSlugs.includes(s)).length * 2 +
+    [...words(p)].filter((w) => own.has(w)).length * 3 +
+    (p.category === post.category ? 2 : 0);
 
-  const automatic = [...sameCategory, ...sharedService, ...rest].filter(
-    (p) => !curated.includes(p),
-  );
+  const automatic = pool
+    .filter((p) => !curated.includes(p) && !isNoindexSlug(p.slug))
+    .map((p) => ({ p, s: score(p) }))
+    .sort((a, b) => b.s - a.s || a.p.slug.localeCompare(b.p.slug))
+    .map(({ p }) => p);
   return [...curated, ...automatic].slice(0, count);
 }

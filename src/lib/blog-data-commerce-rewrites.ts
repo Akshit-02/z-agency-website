@@ -19,7 +19,7 @@ export const commerceRewrites: BlogPost[] = [
     banner: "plusvsplans",
     bannerAlt:
       "Comparison of Shopify's Basic, Grow and Advanced plans with Shopify Plus: checkout customization, B2B catalogs, expansion stores, staff accounts, inventory locations and public Oxygen environments for Hydrogen.",
-    date: "2026-04-06",
+    date: "2026-09-15",
     updated: "2026-09-29",
     readingTime: "16 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
@@ -212,7 +212,7 @@ export const commerceRewrites: BlogPost[] = [
     banner: "customlayers",
     bannerAlt:
       "Shopify decision ladder: native feature, Shopify app, theme code, custom app or Function, then headless, stopping at the first layer that meets the requirement.",
-    date: "2026-04-03",
+    date: "2026-09-15",
     updated: "2026-09-29",
     readingTime: "13 min read",
     relatedServiceSlugs: ["shopify-development", "ai-automation"],
@@ -351,7 +351,7 @@ export const commerceRewrites: BlogPost[] = [
     banner: "themeeditable",
     bannerAlt:
       "Three columns of Shopify customization: theme editor changes without code, theme code changes in Liquid, CSS and JavaScript, and things outside the theme such as checkout steps, business logic, admin data and headless front ends.",
-    date: "2026-03-04",
+    date: "2026-09-15",
     updated: "2026-09-29",
     readingTime: "12 min read",
     relatedServiceSlugs: ["shopify-development", "ui-ux-design"],
@@ -521,7 +521,7 @@ export const commerceRewrites: BlogPost[] = [
     banner: "headlessshopify",
     bannerAlt:
       "Theme-based Shopify compared with headless Shopify: on the left Shopify renders the theme above checkout and core; on the right a custom front end with CMS, search and hosting uses the Storefront API above the same checkout and core.",
-    date: "2026-04-07",
+    date: "2026-09-15",
     updated: "2026-09-29",
     readingTime: "13 min read",
     relatedServiceSlugs: ["shopify-development", "website-development"],
@@ -702,7 +702,7 @@ export const commerceRewrites: BlogPost[] = [
     banner: "shopifymigrationflow",
     bannerAlt:
       "Shopify migration process: inventory and baseline, map URLs and data, import and clean, build and redirects, test orders, launch and monitor, comparing search traffic and sales against the baseline.",
-    date: "2026-03-10",
+    date: "2026-09-15",
     updated: "2026-11-10",
     readingTime: "20 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
@@ -997,7 +997,7 @@ export const commerceRewrites: BlogPost[] = [
     banner: "shopifyseomap",
     bannerAlt:
       "Shopify SEO responsibilities: Shopify handles canonical tags, the automatic sitemap, default robots.txt rules, hreflang for Markets, product schema in themes and SSL; you handle titles and handles, collection and product content, internal links, redirects, filter and variant URLs, apps, speed and schema gaps.",
-    date: "2026-03-09",
+    date: "2026-09-15",
     updated: "2026-10-09",
     readingTime: "18 min read",
     relatedServiceSlugs: ["shopify-development", "cro-audit"],
@@ -1191,7 +1191,7 @@ export const commerceRewrites: BlogPost[] = [
     banner: "shopifyanalyticsmap",
     bannerAlt:
       "What each tool is best for: Shopify Analytics for sales, orders, sessions, funnel, products, cohorts and marketing reports; GA4 for events, journeys, landing pages, site search and explorations; Search Console for queries, indexing, Core Web Vitals, rich results and links.",
-    date: "2026-04-09",
+    date: "2026-09-15",
     updated: "2026-09-29",
     readingTime: "13 min read",
     relatedServiceSlugs: ["cro-audit", "shopify-development"],
@@ -1363,7 +1363,7 @@ export const commerceRewrites: BlogPost[] = [
     banner: "freelanceragency",
     bannerAlt:
       "Comparison of a Shopify freelancer and an agency across team, best-fit work, start and cost, coverage, risk and continuity.",
-    date: "2026-04-02",
+    date: "2026-09-15",
     updated: "2026-09-29",
     readingTime: "11 min read",
     relatedServiceSlugs: ["shopify-development"],

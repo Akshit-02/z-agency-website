@@ -34,6 +34,8 @@ import {
 
 
 export type ServiceDetailData = {
+  /** Target search phrase as it reads mid-sentence, e.g. "Shopify development". */
+  keyword: string;
   slug: string;
   index: string;
   name: string;
@@ -191,7 +193,7 @@ function Toolkit({ data }: { data: ServiceDetailData }) {
           What you receive
         </Eyebrow>
         <h2 className="mt-6 text-[2.5rem] leading-[1.02] tracking-[-0.025em] text-ink sm:text-[3.4rem]" style={serif}>
-          <MaskLines on={on} still={still} lines={[<>Deliverables, tools</>, <span key="t" className="italic text-orange">and reasons.</span>]} />
+          <MaskLines on={on} still={still} lines={[<>{cap(data.keyword)} deliverables</>, <span key="t" className="italic text-orange">and tools.</span>]} />
         </h2>
 
         <div className="mt-14 grid gap-4 lg:grid-cols-3">
@@ -363,7 +365,11 @@ function MarketsSection() {
   );
 }
 
+const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+
 export function ServiceDetail({ data }: { data: ServiceDetailData }) {
+  const kw = data.keyword;
+  const Kw = cap(kw);
   const contactHref = `/contact#src=${encodeURIComponent(`/services/${data.slug}`)}`;
 
   return (
@@ -424,7 +430,7 @@ export function ServiceDetail({ data }: { data: ServiceDetailData }) {
 
       <ProblemSolution
         eyebrow="Problems we solve"
-        title={[<>Where things</>, <span key="b" className="italic text-orange-bright">usually break.</span>]}
+        title={[<>Where {kw}</>, <span key="b" className="italic text-orange-bright">usually goes wrong.</span>]}
         problems={data.problems}
         solutions={data.whatWeDo}
         problemLabel="Sound familiar?"
@@ -433,7 +439,7 @@ export function ServiceDetail({ data }: { data: ServiceDetailData }) {
 
       <CardGrid
         eyebrow="Who it's for"
-        title={[<>Who this</>, <span key="s" className="italic text-orange">service is for.</span>]}
+        title={[<>Who our {kw}</>, <span key="s" className="italic text-orange">services are for.</span>]}
         items={data.audience.map((a) => ({ title: a }))}
         icons={[Rocket, Building2, Store, Briefcase, Users]}
         columns={data.audience.length % 3 === 0 ? 3 : data.audience.length === 2 ? 2 : 4}
@@ -449,7 +455,7 @@ export function ServiceDetail({ data }: { data: ServiceDetailData }) {
 
       <CardGrid
         eyebrow="Use cases"
-        title={[<>What we</>, <span key="t" className="italic text-orange">typically build.</span>]}
+        title={[<>{Kw} projects</>, <span key="t" className="italic text-orange">we typically build.</span>]}
         intro="Real project shapes, from a single focused build to a longer engagement."
         items={data.useCases}
         columns={data.useCases.length % 3 === 0 ? 3 : 4}
@@ -458,17 +464,17 @@ export function ServiceDetail({ data }: { data: ServiceDetailData }) {
       <ProcessPanel
         id="process"
         eyebrow="Our approach"
-        title={[<>How we</>, <span key="w" className="italic text-orange-bright">work.</span>]}
+        title={[<>Our {kw}</>, <span key="w" className="italic text-orange-bright">process.</span>]}
         steps={data.approach}
       />
 
       <Toolkit data={data} />
 
-      <FaqBlock items={data.faq} />
+      <FaqBlock items={data.faq} title={[Kw, "FAQs."]} />
 
       <ReadingList
         eyebrow="Guides"
-        title={[<>Read before</>, <span key="y" className="italic text-orange">you build.</span>]}
+        title={[<>{Kw} guides</>, <span key="y" className="italic text-orange">to read first.</span>]}
         posts={data.guides}
       />
 

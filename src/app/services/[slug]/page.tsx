@@ -5,6 +5,7 @@ import { ServiceDetail } from "@/components/detail/ServiceDetail";
 import { StructuredData } from "@/components/StructuredData";
 import { services, getServiceBySlug } from "@/lib/services-data";
 import { posts } from "@/lib/blog-data";
+import { isNoindexSlug } from "@/lib/noindex";
 import { getIndustryBySlug } from "@/lib/industries-data";
 import { site } from "@/lib/site";
 import { pageTitle, socialMetadata, ORG_ID } from "@/lib/seo";
@@ -72,7 +73,7 @@ export default async function ServiceDetailPage({
     .filter((post): post is NonNullable<typeof post> => Boolean(post));
   const related = guidePosts.length > 0
     ? guidePosts
-    : posts.filter((post) => post.relatedServiceSlugs.includes(service.slug)).slice(0, 6);
+    : posts.filter((post) => post.relatedServiceSlugs.includes(service.slug) && !isNoindexSlug(post.slug)).slice(0, 6);
   const otherServices = services.filter((s) => s.slug !== service.slug).slice(0, 3);
   const relatedIndustries = (service.industrySlugs ?? [])
     .map(getIndustryBySlug)
@@ -113,6 +114,7 @@ export default async function ServiceDetailPage({
           slug: service.slug,
           index: service.index,
           name: service.name,
+          keyword: service.keyword,
           accent: service.accent,
           heroCopy: service.heroCopy,
           india: service.india,

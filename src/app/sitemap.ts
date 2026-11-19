@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
 import { services } from "@/lib/services-data";
 import { posts } from "@/lib/blog-data";
+import { isNoindexSlug } from "@/lib/noindex";
 import { industriesWithDetailPages } from "@/lib/industries-data";
 import { blogCategories } from "@/lib/blog-categories";
 
@@ -55,7 +56,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  const postRoutes = posts.map((post) => ({
+  // Noindexed articles stay live but leave the sitemap, which should list only pages we want indexed.
+  const postRoutes = posts.filter((post) => !isNoindexSlug(post.slug)).map((post) => ({
     url: `${site.url}/blogs/${post.slug}`,
     lastModified: new Date(postDate(post)),
     changeFrequency: "monthly" as const,

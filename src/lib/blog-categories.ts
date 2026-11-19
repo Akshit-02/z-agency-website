@@ -89,12 +89,12 @@ export const blogCategories: BlogCategoryMeta[] = [
     description:
       "AI automation guides: workflow and process automation, AI agents, RAG, MCP, document processing, LLMOps, AI security, data engineering and industry use cases.",
     intro: [
-      "These guides explain how businesses put AI and automation to work: when a process is worth automating, how AI workflows and agents are built and secured, how retrieval and integrations work, and how AI applications are evaluated and operated in production.",
+      "These guides explain how businesses put AI and automation to work: when a process is worth automating, how AI workflows and agents are built, how they connect to the tools a team already uses, and how to measure whether an automation is paying off.",
       "Industry guides show how the same techniques apply to finance, healthcare, real estate, manufacturing and other sectors.",
     ],
     serviceSlug: "ai-automation",
     serviceLabel: "AI automation services",
-    startHere: ["ai-workflow-automation", "business-process-automation", "ai-agent-development", "when-to-automate-a-business-process", "retrieval-augmented-generation", "llmops", "best-ai-automation-agencies-in-india"],
+    startHere: ["ai-workflow-automation", "business-process-automation", "ai-agent-development", "when-to-automate-a-business-process", "retrieval-augmented-generation", "ai-automation-roi", "best-ai-automation-agencies-in-india"],
   },
   {
     slug: "cro",

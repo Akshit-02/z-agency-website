@@ -6,6 +6,7 @@ import { sceneFor } from "@/lib/blog-scenes";
 import { StructuredData } from "@/components/StructuredData";
 import { CTASection } from "@/components/CTASection";
 import { posts, toSummary } from "@/lib/blog-data";
+import { isNoindexSlug } from "@/lib/noindex";
 import { blogCategories, getCategoryBySlug } from "@/lib/blog-categories";
 import { getServiceBySlug } from "@/lib/services-data";
 import { site } from "@/lib/site";
@@ -62,7 +63,8 @@ export default async function BlogCategoryPage({
   if (!category) notFound();
 
   const inCategory = posts
-    .filter((post) => post.category === category.name)
+    // Hubs list only indexable articles so their links go to pages that can rank.
+    .filter((post) => post.category === category.name && !isNoindexSlug(post.slug))
     .sort((a, b) => a.title.localeCompare(b.title));
   const startHereFull = category.startHere
     .map((s) => posts.find((post) => post.slug === s))

@@ -24,6 +24,7 @@ import { getIndustryBySlug } from "@/lib/industries-data";
 import { site } from "@/lib/site";
 import { getCategoryByName } from "@/lib/blog-categories";
 import { metaDescription, pageTitle, ORG_ID, WEBSITE_ID } from "@/lib/seo";
+import { isNoindexSlug } from "@/lib/noindex";
 
 // Unknown slugs return the static 404 instead of rendering on demand (bots
 // probing URLs otherwise cost a function invocation and origin transfer each).
@@ -49,6 +50,9 @@ export async function generateMetadata({
     title: pageTitle(title),
     description,
     alternates: { canonical: `/blogs/${post.slug}` },
+    ...(isNoindexSlug(post.slug)
+      ? { robots: { index: false, follow: true, googleBot: { index: false, follow: true } } }
+      : {}),
     openGraph: {
       siteName: site.name,
       type: "article",
